@@ -1,0 +1,27 @@
+{
+  "name": "grav-plugin-archives",
+  "type": "grav-plugin",
+  "description": "Archives plugin for Grav CMS",
+  "keywords": ["archives"],
+  "homepage": "https://github.com/getgrav/grav-plugin-archives",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Team Grav",
+      "email": "devs@getgrav.org",
+      "homepage": "http://getgrav.org",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.3"
+  },
+  "autoload": {
+    "classmap":  ["archives.php"]
+  },
+  "config": {
+    "platform": {
+      "php": "7.1.3"
+    }
+  }
+}

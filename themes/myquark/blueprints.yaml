@@ -1,0 +1,13 @@
+name: MyQuark
+version: 1
+description: My modifications for the Quark Theme
+icon:  microchip
+author:
+  name: Team Grav
+  email: devs@getgrav.org
+  url: http://getgrav.org
+homepage: https://github.com/getgrav/grav-theme-quark
+demo: https://demo.getgrav.org/onepage-skeleton
+keywords: quark, spectre, theme, core, modern, fast, responsive, html5, css3
+bugs: https://github.com/getgrav/grav-theme-quark/issues
+license: MIT

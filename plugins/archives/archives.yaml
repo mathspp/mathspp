@@ -1,0 +1,24 @@
+enabled: true
+built_in_css: true
+date_display_format: 'F Y'
+show_count: true
+limit: 12
+taxonomy_names:
+    month: archives_month
+    year: archives_year
+#Defaults
+order:
+    by: date
+    dir: desc
+filters:
+    category: blog
+filter_combinator: and
+#New Page-Specific Configurations
+page_specific_config:
+    -  route: '/blog'
+       order:
+           by: date
+           dir: desc
+       filters:
+           page@: '/blog'
+       filter_combinator: and

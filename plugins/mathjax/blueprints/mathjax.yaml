@@ -1,0 +1,22 @@
+form:
+  fields:
+    tabs:
+      fields:
+        options:
+          fields:
+            mathjax:
+              type: section
+              title: PLUGINS.MATHJAX.MATHJAX
+              underline: true
+
+              fields:
+                header.mathjax.active:
+                  type: toggle
+                  label: PLUGINS.MATHJAX.ACTIVE
+                  toggleable: true
+                  highlight: 1
+                  options:
+                    1: PLUGIN_ADMIN.YES
+                    0: PLUGIN_ADMIN.NO
+                  validate:
+                    type: bool

@@ -1,0 +1,26 @@
+enabled: true
+production-mode: true
+grid-size: grid-lg
+header-fixed: true
+header-animated: true
+header-dark: false
+header-transparent: false
+sticky-footer: true
+blog-page: /blog
+spectre:
+  exp: false
+  icons: false
+custom_logo:
+  user/themes/quark/images/logo/logo.png:
+    name: logo.png
+    type: image/png
+    size: 42722
+    path: user/themes/quark/images/logo/logo.png
+streams:
+ schemes:
+   theme:
+     type: ReadOnlyStream
+     prefixes:
+       '':
+         - user/themes/myquark
+         - user/themes/quark
