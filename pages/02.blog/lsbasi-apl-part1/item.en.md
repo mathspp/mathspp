@@ -8,6 +8,7 @@ taxonomy:
     tag: [programming, python, interpreters, lsbasi-apl]
 metadata:
     description: The first post on a series about an APL interpreter written in Python
+    'og:image': ./lsbasi-apl-part1-bg.png
 ---
 
 Let's build a simple [APL][apl-wiki] interpreter! APL is an array-oriented programming language I picked up recently. The ease with which I can write code related to mathematics, its strange built-ins (which look like `⍴`, `⍨`, `⍒` or `⍣`) and the fact that it is executed from right to left make it a fresh learning experience!
