@@ -13,7 +13,7 @@ In this post I just ramble a bit through some mathematician's definition of what
 
 In Computation Theory it is of interest to study properties about functions, and what functions satisfy said properties. We then consider the set of all functions that satisfy those properties. One of those sets is the set $R$ of recursive functions, as defined by Kleene. To define $R$, Kleene gives a series of different primitive functions that are known to be in $R$ and then defines some operations that preserve functions in $R$.
 
-For the purposes of what I will be sharing next, I will just enumerate said primitive functions and constructions, so that the reader is aware of what will be used (notice that what comes below is almost identical to what you can see [here](https://en.wikipedia.org/wiki/%CE%9C-recursive_function).
+For the purposes of what I will be sharing next, I will just enumerate said primitive functions and constructions, so that the reader is aware of what will be used (notice that what comes below is almost identical to what you can see [here](https://en.wikipedia.org/wiki/%CE%9C-recursive_function)).
 
 The primitive functions are:
 
