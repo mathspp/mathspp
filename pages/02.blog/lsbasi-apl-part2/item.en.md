@@ -35,9 +35,21 @@ Additionaly, to make the above changes easier to implement, I am also going to r
 
  > _"By the way, this might be a great moment to let you know that I make mistakes! Lots of them!"_
 
-So we are actually starting with
+So we are actually starting with refactoring the parser and the way we represent monadic/dyadic function application. I decided to make this change when I realized implementing all the APL [operators][apl-wiki-op] was going to be a real headache.
 
- 1. refactoring the grammar and the parser
+To make my changes easier to understand, we will study the AST generated for the simple expression `1 +⍨⍨ 2`. If you [test it online](repl-part1) the program will print `MOp(⍨ MOp(⍨ Dyad(+ S(1) S(2))))`, which can be drawn as:
+
+![Sketch of the AST generated for the example expression.](./old_parser_dyadic_example.png)
+
+What I don't like about this AST is that I don't know if the operator `⍨` is acting in a monadic or dyadic function until I reach the bottom of the tree, where I have my function and my two arguments. If you type the same expression `1 +⍨⍨ 2` in [this series parser][repl-part2] the output printed is a list with the single element `Dyad(MOp(⍨ MOp(⍨ F(+))) S(1) S(2))` in it; this tree can be represented as:
+
+![Sketch of the new AST generated for the example expression.](./new_parser_dyadic_example.png)
+
+With the new tree I have clearly separated the issue of finding the function I will apply from the arguments to which the function will be applied. I am also guessing this will make it easier to later implement things like [trains][apl-wiki-trains] and assigning functions to variables.
+
+I challenge you modify the AST nodes and the parser yourself to produce trees like these for dyadic function applications. Monadic function application suffers a similar change:
+
+![Comparison of old and new ASTs for a monadic function application.](./monadic_example.png)
 
 ## The code
 
@@ -46,12 +58,11 @@ So we are actually starting with
 The whole code for this project is hosted in [this][rgspl-repo] GitHub repo and the code for this specific blog post is [this subfolder][rgspl2]. You can also test today's code in your browser by hitting the "run on repl.it" button above.
 
 
-# 
-
-
 [repl-part1]: https://rgsplpart1.rojergs.repl.run/
-[repl-part2]: https://google.com
+[repl-part2]: https://RGSPLpart2.rojergs.repl.run/
 [previous]: https://mathspp.com/blog/lsbasi-apl-part1
 [apl-wiki]: https://aplwiki.com/
+[apl-wiki-op]: https://aplwiki.com/wiki/Operator
+[apl-wiki-trains]: https://aplwiki.com/wiki/Tacit_programming#Trains
 [rgspl-repo]: https://github.com/RojerGS/RGSPL
 [rgspl2]: https://github.com/RojerGS/RGSPL/blob/master/part2
