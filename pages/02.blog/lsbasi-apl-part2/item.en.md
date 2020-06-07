@@ -1,10 +1,7 @@
 ---
 title: Let's build a simple interpreter for APL - part 2
-slug: lsbasi-apl-part2
-published: false
-taxonomy:
-    category: blogpost
-    tag: [programming, python, interpreters, lsbasi-apl]
+metadata:
+    description: In the second post of the LSBASI series we go one step further in interpreting APL programs.
 ---
 
 Today is the day! Today is the day we take our [APL][apl-wiki] programs and interpret them, so that something like `÷ 1 2 3 -⍨ 1.1 2.2 3.3` can output `10 5 3.33333333`.
@@ -28,9 +25,9 @@ With that program, we can turn an expression like `5 6 -⍨ ÷1 2`
 
 Today we are going to:
 
- 2. implement the [Visitor pattern][visitor-wiki] to interpret an AST and produce the final result. You can check [Spivak's 8th post][lsbasi-part8] to see how he did it;
- 3. implement assignment of scalars/arrays;
- 4. allow for several statements split by `⋄`.
+ 1. implement the [Visitor pattern][visitor-wiki] to interpret an AST and produce the final result. You can check [Spivak's 8th post][lsbasi-part8] to see how he did it;
+ 1. implement assignment of scalars/arrays;
+ 1. allow for several statements split by `⋄`.
 
 (writing this list was easy, I just went to the previous blog post and copied the list of things we would get done for today!)
 
