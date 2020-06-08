@@ -1,7 +1,7 @@
 ---
 title: Uma roleta teimosa
 slug: stubborn-roulette
-publish_date: 08-06-2020
+published: false
 taxonomy:
     category: blogpost
     tag: [mathematics, what are the odds, pocket maths, probability]
