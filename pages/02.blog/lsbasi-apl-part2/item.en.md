@@ -25,9 +25,9 @@ With that program, we can turn an expression like `5 6 -⍨ ÷1 2`
 
 Today we are going to:
 
- 1. implement the [Visitor pattern][visitor-wiki] to interpret an AST and produce the final result. You can check [Spivak's 8th post][lsbasi-part8] to see how he did it;
  1. implement assignment of scalars/arrays;
- 1. allow for several statements split by `⋄`.
+ 1. allow for several statements split by `⋄`;
+ 1. implement the [Visitor pattern][visitor-wiki] to interpret an AST and produce the final result. You can check [Spivak's 8th post][lsbasi-part8] to see how he did it.
 
 (writing this list was easy, I just went to the previous blog post and copied the list of things we would get done for today!)
 
@@ -47,7 +47,7 @@ What I don't like about this AST is that I don't know if the operator `⍨` is a
 
 With the new tree I have clearly separated the issue of finding the function I will apply from the arguments to which the function will be applied. I am also guessing this will make it easier to later implement things like [trains][apl-wiki-trains] and assigning functions to variables.
 
-I challenge you modify the AST nodes and the parser yourself to produce trees like these for dyadic function applications. Monadic function application suffers a similar change:
+I challenge you modify the AST nodes and the parser yourself to produce trees like these for dyadic function applications. Monadic function application undergoes a similar change, exemplified in the picture below for the expression `×⍨⍨ 6`:
 
 ![Comparison of old and new ASTs for a monadic function application.](./monadic_example.png)
 
@@ -56,6 +56,14 @@ I challenge you modify the AST nodes and the parser yourself to produce trees li
 [![](https://img.shields.io/github/stars/RojerGS/RGSPL?style=social)][rgspl-repo]&nbsp;&nbsp;&nbsp;[![run it on Repl.it!](https://repl.it/badge/github/RojerGS/RGSPL)][repl-part2]
 
 The whole code for this project is hosted in [this][rgspl-repo] GitHub repo and the code for this specific blog post is [this subfolder][rgspl2]. You can also test today's code in your browser by hitting the "run on repl.it" button above.
+
+---
+
+Now that we got this out of the day, lets dive right into the changes for today.
+
+# Updated grammar
+
+Because we want to support assignments 
 
 
 [repl-part1]: https://rgsplpart1.rojergs.repl.run/
