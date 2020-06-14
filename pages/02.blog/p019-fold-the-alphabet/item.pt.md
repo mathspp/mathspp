@@ -1,5 +1,7 @@
 ---
 title: P019 - Dobrar o alfabeto
+metadata:
+    description: Neste artigo desafio-te a dobrares uma folha de papel... Soa fácil? Prometo que não vai ser ;)
 ---
 
 Pega numa folha de papel e num lápis. Agora vou pedir-te que escrevas umas letras na folha e depois vou desafiar-te a dobrar a folha... Soa fácil? Prometo que não vai ser.
