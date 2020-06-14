@@ -4,4 +4,4 @@ metadata:
     description: "Help me fold this piece of paper so that the alphabet comes in order!"
 taxonomy:
     category: blogpost
-    tags: [problem, geometry, origami, mathematics]
+    tag: [problem, geometry, origami, mathematics]
