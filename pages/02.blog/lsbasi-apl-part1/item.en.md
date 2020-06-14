@@ -1,11 +1,5 @@
 ---
 title: Let's build a simple interpreter for APL - part 1
-slug: lsbasi-apl-part1
-publish-date: 13-05-2020
-date: 13-05-2020
-taxonomy:
-    category: blogpost
-    tag: [programming, python, interpreters, lsbasi-apl]
 metadata:
     description: The first post on a series about an APL interpreter written in Python
 ---
@@ -21,11 +15,11 @@ Let's build a simple [APL][apl-wiki] interpreter! APL is an array-oriented progr
 
 First and foremost, let me give credit to Ruslan Spivak's [Let's build a simple interpreter][lsbasi] blog post series on building a Pascal interpreter. I first read the beginning of the series a couple of years ago and ended up [creating the Roj programming language][roj-blog]; this time I am going over the series again but with the purpose of building an interpreter for APL which is fairly distinct from Pascal.
 
-This blog post series is for:
-  - helping me learn APL;
-  - flexing my Python skills and improving them;
-  - documenting what I did in order to get my code to work how it is working;
-  - helping you write your own APL interpreter if you decide to do so!
+I am writing an APL interpreter and writing about it because
+  - it will help me learn APL;
+  - I get to flex my Python skills and improve them;
+  - I get to document what I did in order to get my code working;
+  - I get to help you write your own APL interpreter if you decide to do so!
 
 For those of you who know the LSBASI series, the numbering in my LSBASI series is _not_ going to match Spivak's. This is because in this interpreter I need to worry about things Spivak did not have to and vice-versa, because APL and Pascal have so distinct characteristics in some aspects. On the other hand, the beginning is fairly similar and this post will present work that matches roughly what Spivak has by halfway of his [8th blog post][lsbasi-part8].
 
@@ -128,6 +122,8 @@ class Tokenizer:
 
         self.pos -= 1
         self.current_char = None if self.pos < 0 else self.code[self.pos]
+
+    # ...
 ```
 
 We instantiate this class with the string with APL code, for example with `Tokenizer("5 + 6")`. The `error` function is used as a helper function, to raise an exception when something goes wrong with the Tokenizer.
