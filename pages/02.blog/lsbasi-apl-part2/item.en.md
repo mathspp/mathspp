@@ -27,7 +27,7 @@ Today we are going to:
 
  1. implement assignment of scalars/arrays;
  1. allow for several statements split by `⋄`;
- 1. implement the [Visitor pattern][visitor-wiki] to interpret an AST and produce the final result. You can check [Spivak's 8th post][lsbasi-part8] to see how he did it.
+ 1. implement the [Visitor pattern] to interpret an AST and produce the final result. You can check [Spivak's 8th post][ruslan-8] to see how he did it.
 
 (writing this list was easy, I just went to the previous blog post and copied the list of things we would get done for today!)
 
@@ -35,13 +35,13 @@ Additionaly, to make the above changes easier to implement, I am also going to r
 
  > _"By the way, this might be a great moment to let you know that I make mistakes! Lots of them!"_
 
-So we are actually starting with refactoring the parser and the way we represent monadic/dyadic function application. I decided to make this change when I realized implementing all the APL [operators][apl-wiki-op] was going to be a real headache.
+So we are actually starting with refactoring the parser and the way we represent monadic/dyadic function application. I decided to make this change when I realized implementing all the APL [operators][apl-wiki-op] was going to be a real headache with the format I chose before.
 
 To make my changes easier to understand, we will study the AST generated for the simple expression `1 +⍨⍨ 2`. If you [test it online](repl-part1) the program will print `MOp(⍨ MOp(⍨ Dyad(+ S(1) S(2))))`, which can be drawn as:
 
 ![Sketch of the AST generated for the example expression.](./old_parser_dyadic_example.png)
 
-What I don't like about this AST is that I don't know if the operator `⍨` is acting in a monadic or dyadic function until I reach the bottom of the tree, where I have my function and my two arguments. If you type the same expression `1 +⍨⍨ 2` in [this series parser][repl-part2] the output printed is a list with the single element `Dyad(MOp(⍨ MOp(⍨ F(+))) S(1) S(2))` in it; this tree can be represented as:
+What I don't like about this AST is that I don't know if the operator `⍨` is acting in a monadic or dyadic function until I reach the bottom of the tree, where I have my function and my two arguments. If you type the same expression `1 +⍨⍨ 2` in [the parser for this post][repl-part2], the output printed is a list with the single element `Dyad(MOp(⍨ MOp(⍨ F(+))) S(1) S(2))` in it; this tree can be represented as:
 
 ![Sketch of the new AST generated for the example expression.](./new_parser_dyadic_example.png)
 
@@ -59,7 +59,7 @@ The whole code for this project is hosted in [this][rgspl-repo] GitHub repo and 
 
 ---
 
-Now that we got this out of the day, lets dive right into the changes for today.
+Now that we got this out of the way, lets dive right into the changes for today.
 
 # Updated grammar
 
@@ -130,7 +130,7 @@ class Token:
         "⋄": DIAMOND,
     }
 
-    ID_CHARS = "_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    ID_CHARS = "_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 ```
 
 # Updating the `Tokenizer`
@@ -212,7 +212,6 @@ class ASTNode:
     def __repr__(self):
         return self.__str__()
 
-
 class S(ASTNode):
     """Node for a simple scalar like 3 or ¯4.2"""
     def __init__(self, token: Token):
@@ -222,7 +221,6 @@ class S(ASTNode):
     def __str__(self):
         return f"S({self.value})"
 
-
 class A(ASTNode):
     """Node for an array of simple scalars, like 3 ¯4 5.6"""
     def __init__(self, children: List[ASTNode]):
@@ -230,7 +228,6 @@ class A(ASTNode):
 
     def __str__(self):
         return f"A({self.children})"
-
 
 class MOp(ASTNode):
     """Node for monadic operators like ⍨"""
@@ -242,7 +239,6 @@ class MOp(ASTNode):
     def __str__(self):
         return f"MOp({self.operator} {self.child})"
 
-
 class F(ASTNode):
     """Node for built-in functions like + or ⌈"""
     def __init__(self, token: Token):
@@ -252,7 +248,6 @@ class F(ASTNode):
     def __str__(self):
         return f"F({self.function})"
 
-
 class Monad(ASTNode):
     """Node for monadic function calls."""
     def __init__(self, function: ASTNode, omega: ASTNode):
@@ -261,7 +256,6 @@ class Monad(ASTNode):
 
     def __str__(self):
         return f"Monad({self.function} {self.omega})"
-
 
 class Dyad(ASTNode):
     """Node for dyadic functions."""
@@ -273,7 +267,6 @@ class Dyad(ASTNode):
     def __str__(self):
         return f"Dyad({self.function} {self.alpha} {self.omega})"
 
-
 class Assignment(ASTNode):
     """Node for assignment expressions."""
     def __init__(self, varname: ASTNode, value: ASTNode):
@@ -283,7 +276,6 @@ class Assignment(ASTNode):
     def __str__(self):
         return f"Assignment({self.varname.token.value} ← {self.value})"
 
-
 class Var(ASTNode):
     """Node for variable references."""
     def __init__(self, token: Token):
@@ -292,7 +284,6 @@ class Var(ASTNode):
 
     def __str__(self):
         return f"Var({self.token.value})"
-
 
 class Statements(ASTNode):
     """Node to represent a series of consecutive statements."""
@@ -459,7 +450,7 @@ And now on to the moment we have all been waiting for... We will take these abst
 
 # Visitor pattern
 
-One thing I learned from reading the original [lsbasi] series was what the [Visitor pattern] is. In short, the visitor pattern allows me to modularize two different things that often come together: first I create an object with a helpful structure and then I apply an algorithm to that structure.
+One thing I learned from reading the original [lsbasi] series was what the [Visitor pattern] is. In short, the visitor pattern allows me to modularize two different things that often come together: first I create an object with a helpful structure and _then_ I apply an algorithm to that structure instead of doing both at the same time.
 
 A good thing that comes of it is that in the next post we will be able to reuse the AST we have to create nice graphic representations of the trees. If we had the AST parsing mixed with the interpreting of the programs it would be very hard and a lot of work to also generate the nice pictures we will be generating.
 
@@ -504,10 +495,10 @@ Creating an `Interpreter` instance is really simple, we just give it a parser. A
 
 Having that said, most of the `visit_*` methods are really simple. For example,
 
- - what does it mean to visit a `S` node? When we visit a `S`, we just have to return the actual value of that scalar;
- - what does it mean to visit a `A` node? When visiting an array, we just have to visit each of the array's elements and return the array;
+ - what does it mean to visit an `S` node? When we visit an `S`, we just have to return the actual value of that scalar;
+ - what does it mean to visit an `A` node? When visiting an array, we just have to visit each of the array's elements and return the array;
  - what does it mean to visit a `Var` node? When we visit a variable node we need to see if the variable is defined in our `var_lookup` dictionary and retrieve its value from there; similarly, in an `Assignment` node we need to get the result of what we want to assign and save it in our `var_lookup` dictionary;
- - what does it mean to visit a `Statements` node? A `Statements` node really is a collection of statements that needs to be executed in order, so when we visit a `Statements` node we need only visit all children of the `Statements` node.
+ - what does it mean to visit a `Statements` node? A `Statements` node really is a collection of statements that need to be interpreted in order, so when we visit a `Statements` node we need only visit all children of the `Statements` node and return the result of the last statement.
 
 Here is the code for these five `visit_*` methods:
 
@@ -540,13 +531,15 @@ class Interpreter(NodeVisitor):
         varname = assignment.varname.name
         self.var_lookup[varname] = value
         return value
+
+    # ...
 ```
 
 Now we are only left with the `visit_Monad`, `visit_Dyad`, `visit_F` and `visit_MOp` methods. For these it is also relevant to talk about what I decided to do.
 
-If you look closely, all these `visit_*` methods are also expecting some keyword arguments in the `**kwargs` argument; this is going to be used to propagate down the AST if a given function is being called monadically or dyadically, because this changes for example if `×` is being used as the sign function or as multiplication.
+If you look closely, all these `visit_*` methods are also expecting some keyword arguments in the `**kwargs` argument; this is going to be used to propagate down the AST information about whether a given function is being called monadically or dyadically. We care about this because this changes how functions behave, for example if `×` is being used as the sign function or as multiplication.
 
-Not only that, but I also define the monadic and dyadic versions of the functions separately in two dictionaries. For the glyphs we have so far, `+ - × ÷ ⌊ ⌈` we could define all of them with simple lambda expressions.
+Not only that, but I also define the monadic and dyadic versions of the functions separately in two dictionaries. For the glyphs we have so far, `+ - × ÷ ⌊ ⌈` I will define all of them with simple lambda expressions.
 
 ! I may or may not change this in the future, this was what I came up with at this point. Maybe you could experiment with different ways of defining the functions and how they change depending on their valence and then let me know how it went! Just drop a comment below ;)
 
@@ -590,7 +583,7 @@ _exceeeeeeept_ this is not _quite_ what we want. APL has something that are call
 (2 3) 5 (7 8)
 ```
 
-so I also had to define two helper functions, `monadic_permeate` and `dyadic_permeate` that do this "automatic mapping" for us. I defined these as two decorators because that is effectively what they are, functions that receive functions and returned modified versions of the input functions.
+so I also had to define two helper functions, `monadic_permeate` and `dyadic_permeate` that do this "automatic mapping" for us. I defined these as two decorators because that is effectively what they are, functions that receive functions and return modified versions of the input functions.
 
 What they effectively do is to recurse into the function arguments until there is nothing to do but to apply the actual function.
 
@@ -604,7 +597,6 @@ def monadic_permeate(func):
         else:
             return func(omega)
     return decorated
-
 
 def dyadic_permeate(func):
     """Decorates a function to permeate through the left and right arguments."""
@@ -787,6 +779,8 @@ In future posts here are some of the things that will be covered:
 
 These are some of the things I want to tackle next but having those complete doesn't mean we are close to having a full APL interpreter! APL has lots of cool features!
 
+See you next time ;)
+
 [repl-part1]: https://rgsplpart1.rojergs.repl.run/
 [repl-part2]: https://RGSPLpart2.rojergs.repl.run/
 [previous]: https://mathspp.com/blog/lsbasi-apl-part1
@@ -799,3 +793,4 @@ These are some of the things I want to tackle next but having those complete doe
 [lsbasi]: https://ruslanspivak.com/lsbasi-part1/
 [Visitor pattern]: https://en.wikipedia.org/wiki/Visitor_pattern
 [ruslan-7]: https://ruslanspivak.com/lsbasi-part7/
+[ruslan-8]: https://ruslanspivak.com/lsbasi-part8/
