@@ -57,11 +57,11 @@ For this one, all you had to do was fold the paper along the horizontal line and
 
 #### Level 2
 
-This one is much harder to explain in words so I made some more drawings and marked some positions of the sheet of paper on the side you wrote first (lets say this is side A):
+This one is much harder to explain in words so I made some more drawings and made some markings on the sheet of paper:
 
 ![Level 2 sheet of paper with some markings](lvl2-faceA-sol.png)
 
-That is the face you wrote first; now if you flip the sheet of paper (to side B) these are the relevant markings:
+Now if you flip the sheet of paper (to the back) you also need these markings:
 
 ![Level 2, side B, with some markings](lvl2-faceB-sol.png)
 
@@ -98,10 +98,12 @@ Now here's how you do it:
  3. fold horizontally so that the red triangles (in `B` and `C`) touch;
  4. fold from the right so that the blue stars (in `E` and `F`) touch;
 
-And that is it! _Almost_. Now comes the hard part... Everything is fine, except `H` is covering your `A`, so the `H` should move from the top of the stack to the bottom... And the way you go about it is by turning the fold inside out, like if you were folding a sock (similar to what happens at [minute 3:44 of this video](https://youtu.be/124L94hoBQg?t=224)...
+And that is it! _Almost_. Now comes the hard part... Everything is fine, except `H` is covering your `A`, so the `H` should move from the top of the stack to the bottom... And the way you go about it is by turning the fold inside out, like if you were folding a sock (similar to what happens at [minute 3:44 of this video](https://youtu.be/124L94hoBQg?t=224))...
 
 It took me a couple of tries to get this one right; expect your piece of paper to tear just a little bit... In fact, here's what happened on my first attempt:
 
 ![Piece of paper scrambled up and tore](lvl3-fail.jpg)
 
 As you can see, the `H` was about to be completely ripped from the sheet of paper!
+
+I heard of these from a friend and he learned about this problem by watching [this YouTube video](https://www.youtube.com/watch?v=GpClxF41ugg).
