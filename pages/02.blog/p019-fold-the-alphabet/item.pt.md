@@ -106,3 +106,5 @@ Eu precisei de um par de tentativas para conseguir fazer este; é perfeitamente 
 O `H` quase que foi completamente rasgado da folha!
 
 O amigo que me falou deste problema viu-o [neste vídeo do YouTube](https://www.youtube.com/watch?v=GpClxF41ugg).
+
+Até à próxima!

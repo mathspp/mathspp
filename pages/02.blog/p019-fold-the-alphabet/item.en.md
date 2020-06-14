@@ -107,3 +107,5 @@ It took me a couple of tries to get this one right; expect your piece of paper t
 As you can see, the `H` was about to be completely ripped from the sheet of paper!
 
 I heard of these from a friend and he learned about this problem by watching [this YouTube video](https://www.youtube.com/watch?v=GpClxF41ugg).
+
+See you next time!
