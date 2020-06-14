@@ -137,11 +137,11 @@ class Token:
 
 After defining our new tokens we need to tell the `Tokenizer` when to create them. Here comes _another_ thing I decided to do differently. Variable names can start with letters and then include numbers, e.g. `var1`, `s46sx` and `_1d` are all valid variable names... and with my tokenizer working backwards, upon reaching the `1` in `var1` I would have to peek at the following characters to decide whether to tokenize a number or a variable name. For this reason, I changed the `Tokenizer` to start at the beginning of the string and in the end just reverse the list of tokens.
 
-Because of this change there is a fair share of uninteresting changes that must be done in some `Tokenizer` methods like `__init__()`, `advance()`, `get_integer()`, `get_number_token()`, `get_wysiwyg_token()` and `tokenize()`. A nice exercise would be for you to change these methods so that the `Tokenizer` goes from the beginning of the source string to the end but then returns a reversed list of `Token`s.
+Because of this change there is a fair share of uninteresting changes that must be done in some `Tokenizer` methods like `__init__`, `advance`, `get_integer`, `get_number_token`, `get_wysiwyg_token` and `tokenize`. A nice exercise would be for you to change these methods so that the `Tokenizer` goes from the beginning of the source string to the end but then returns a reversed list of `Token`s.
 
 You can check those changes by scrolling down in [this GitHub diff](https://github.com/RojerGS/RGSPL/compare/bdd67edc9339f9e4598bcb188db66908b785f13d...cea3093f84361c57ac16d00c3a2eceb74258365e) and loading the diff for the `rgspl.py` file.
 
-Besides those changes, we have to accomodate for our new `ID` Token with a `get_id_token()` method and by adapting our `get_next_token()` method:
+Besides those changes, we have to accomodate for our new `ID` Token with a `get_id_token` method and by adapting our `get_next_token` method:
 
 ```py
 class Tokenizer:
@@ -182,7 +182,7 @@ Because we also allow for numbers in our variables, as we included the numbers `
 
 ## Utility change to `ASTNode`
 
-For the sake of brevity we define the `AST.__repr__()` method as `self.__str__()` and leave `AST.__str__()` undefined; then for each `ASTNode` subclass we only have to define the magic method `__str__()` as we get the `__repr__()` for free with inheritance.
+For the sake of brevity we define the `AST.__repr__` method as `self.__str__` and leave `AST.__str__` undefined; then for each `ASTNode` subclass we only have to define the magic method `__str__` as we get the `__repr__` for free with inheritance.
 
 ## New `ASTNode` subclasses
 
@@ -305,11 +305,497 @@ class Statements(ASTNode):
 
 Congratulations on making it this far into the post! Now we are left with checking the changes our `Parser` class underwent and then interpreting our programs! Yeah!
 
+# Parsing the new grammar
+
+On top of some small edits needed to accommodate the changes I introduced in the grammar when I changed the way `Monad`/`Dyad` nodes are created, these are the main updates we need to do in the `Parser` class:
+
+ - create a new `parse_statement_list` method to parse the `statement_list` rule; this method parses a statement and then enters a loop to try and parse as many more statements as possible; the `parse_statement_list` method will return a `Statements` AST node;
+ - in the `parse_statement` method we
+   - must identify assignments by checking for the presence of a `←` token to create an `Assignment` node;
+   - in case we don't have an assignment at hands, we must differentiate between monadic and dyadic function calls;
+ - allow the `parse_scalar` method to create `Var` nodes when we find variables;
+ - separate the monadic operator parsing into a separate method `parse_mop`;
+ - simplify the `parse_f` method because now we only care about the function itself and not its valence.
+
+All in all, the `Parser` class ends up something like this:
+
+```py
+class Parser:
+    """Implements a parser for a subset of the APL language.
+
+    The grammar parsed is available at the module-level docstring.
+    """
+
+    # ...
+
+    def parse_program(self):
+        """Parses a full program."""
+
+        self.debug(f"Parsing program from {self.tokens}")
+        statement_list = self.parse_statement_list()
+        self.eat(Token.EOF)
+        return statement_list
+
+    def parse_statement_list(self):
+        """Parses a list of statements."""
+
+        self.debug(f"Parsing a statement list from {self.tokens}")
+        root = Statements()
+        statements = [self.parse_statement()]
+        while self.token_at.type == Token.DIAMOND:
+            self.eat(Token.DIAMOND)
+            statements.append(self.parse_statement())
+
+        root.children = statements
+        return root
+
+    def parse_statement(self):
+        """Parses a statement."""
+
+        self.debug(f"Parsing statement from {self.tokens[:self.pos+1]}")
+
+        relevant_types = [Token.ASSIGNMENT] + Token.FUNCTIONS + Token.MONADIC_OPS
+        statement = self.parse_array()
+        while self.token_at.type in relevant_types:
+            if self.token_at.type == Token.ASSIGNMENT:
+                self.eat(Token.ASSIGNMENT)
+                statement = Assignment(Var(self.token_at), statement)
+                self.eat(Token.ID)
+            else:
+                function = self.parse_function()
+                if self.token_at.type in [Token.RPARENS, Token.INTEGER, Token.FLOAT, Token.ID]:
+                    array = self.parse_array()
+                    statement = Dyad(function, array, statement)
+                else:
+                    statement = Monad(function, statement)
+
+        return statement
+
+    def parse_array(self):
+        """Parses an array composed of possibly several simple scalars."""
+
+        self.debug(f"Parsing array from {self.tokens[:self.pos+1]}")
+
+        nodes = []
+        while self.token_at.type in [
+            Token.RPARENS, Token.INTEGER, Token.FLOAT, Token.ID
+        ]:
+            if self.token_at.type == Token.RPARENS:
+                self.eat(Token.RPARENS)
+                nodes.append(self.parse_statement())
+                self.eat(Token.LPARENS)
+            else:
+                nodes.append(self.parse_scalar())
+        nodes = nodes[::-1]
+        if not nodes:
+            self.error("Failed to parse scalars inside an array.")
+        elif len(nodes) == 1:
+            node = nodes[0]
+        else:
+            node = A(nodes)
+        return node
+
+    def parse_scalar(self):
+        """Parses a simple scalar."""
+
+        self.debug(f"Parsing scalar from {self.tokens[:self.pos+1]}")
+
+        if self.token_at.type == Token.ID:
+            scalar = Var(self.token_at)
+            self.eat(Token.ID)
+        elif self.token_at.type == Token.INTEGER:
+            scalar = S(self.token_at)
+            self.eat(Token.INTEGER)
+        else:
+            scalar = S(self.token_at)
+            self.eat(Token.FLOAT)
+
+        return scalar
+
+    def parse_function(self):
+        """Parses a function possibly monadically operated upon."""
+
+        self.debug(f"Parsing function from {self.tokens[:self.pos+1]}")
+
+        if self.token_at.type in Token.MONADIC_OPS:
+            function = self.parse_mop()
+            function.child = self.parse_function()
+        else:
+            function = self.parse_f()
+        return function
+
+    def parse_mop(self):
+        """Parses a monadic operator."""
+
+        self.debug(f"Parsing a mop from {self.tokens[:self.pos+1]}")
+
+        mop = MOp(self.token_at, None)
+        if (t := self.token_at.type) not in Token.MONADIC_OPS:
+            self.error(f"{t} is not a valid monadic operator.")
+        self.eat(t)
+
+        return mop
+
+    def parse_f(self):
+        """Parses a simple one-character function."""
+
+        self.debug(f"Parsing f from {self.tokens[:self.pos+1]}")
+
+        f = F(self.token_at)
+        if (t := self.token_at.type) not in Token.FUNCTIONS:
+            self.error(f"{t} is not a valid function.")
+        self.eat(t)
+
+        return f
+
+    def parse(self):
+        """Parses the whole AST."""
+        return self.parse_program()
+```
+
+Well, that was a lot of work... If you only read the code, maybe not for you... But it was a lot of work for me to write that code and especially to change my mind about so many things... Sometimes one just has to do things the wrong way in order to realize that there is a much better way of doing it!
+
+And now on to the moment we have all been waiting for... We will take these abstract syntax trees and actually interpret them!
+
+# Visitor pattern
+
+One thing I learned from reading the original [lsbasi] series was what the [Visitor pattern] is. In short, the visitor pattern allows me to modularize two different things that often come together: first I create an object with a helpful structure and then I apply an algorithm to that structure.
+
+A good thing that comes of it is that in the next post we will be able to reuse the AST we have to create nice graphic representations of the trees. If we had the AST parsing mixed with the interpreting of the programs it would be very hard and a lot of work to also generate the nice pictures we will be generating.
+
+This visitor pattern starts with this definition:
+
+```py
+class NodeVisitor:
+    """Base class for the node visitor pattern."""
+    def visit(self, node, **kwargs):
+        """Dispatches the visit call to the appropriate function."""
+        method_name = f"visit_{type(node).__name__}"
+        visitor = getattr(self, method_name, self.generic_visit)
+        return visitor(node, **kwargs)
+
+    def generic_visit(self, node, **kwargs):
+        """Default method for unknown nodes."""
+        raise Exception(f"No visit method for {type(node).__name__}")
+```
+
+This `NodeVisitor` defines a base class for any algorithm we wish to implement on top of the AST. For this blog post, the algorithm we want is going to be the interpreting of APL programs, so we will define a subclass `Interpreter(NodeVisitor)`.
+
+The point is that the `visit` method is defined in a general setting and we just have to implement a `visit_*` method for each type of node our AST can have. That way, when we are traversing our AST and reach a given node, our `Intepreter` (which is a `NodeVisitor`) will know _exactly_ how to visit that specific node. We include a default `generic_visit` to fallback to if needed.
+
+Here we create our `Interpreter`:
+
+```py
+class Interpreter(NodeVisitor):
+    """APL interpreter using the visitor pattern."""
+
+    # ...
+
+    def __init__(self, parser):
+        self.parser = parser
+        self.var_lookup = {}
+
+    # ...
+```
+
+(I will get back to those `# ...` in a jiffy)
+
+Creating an `Interpreter` instance is really simple, we just give it a parser. Also, notice how we instantiate an empty dictionary where we will be saving our variables. This is just a hack we are going to use momentarily, while our programs are simple and we don't have things like scopes.
+
+Having that said, most of the `visit_*` methods are really simple. For example,
+
+ - what does it mean to visit a `S` node? When we visit a `S`, we just have to return the actual value of that scalar;
+ - what does it mean to visit a `A` node? When visiting an array, we just have to visit each of the array's elements and return the array;
+ - what does it mean to visit a `Var` node? When we visit a variable node we need to see if the variable is defined in our `var_lookup` dictionary and retrieve its value from there; similarly, in an `Assignment` node we need to get the result of what we want to assign and save it in our `var_lookup` dictionary;
+ - what does it mean to visit a `Statements` node? A `Statements` node really is a collection of statements that needs to be executed in order, so when we visit a `Statements` node we need only visit all children of the `Statements` node.
+
+Here is the code for these five `visit_*` methods:
+
+```py
+class Interpreter(NodeVisitor):
+    """APL interpreter using the visitor pattern."""
+
+    # ...
+
+    def visit_S(self, scalar, **__):
+        """Returns the value of a scalar."""
+        return scalar.value
+
+    def visit_A(self, array, **__):
+        """Returns the value of an array."""
+        return [self.visit(child) for child in array.children]
+
+    def visit_Var(self, var, **__):
+        """Tries to fetch the value of a variable."""
+        return self.var_lookup[var.name]
+
+    def visit_Statements(self, statements, **__):
+        """Visits each statement in order."""
+        return [self.visit(child) for child in statements.children[::-1]][-1]
+
+    def visit_Assignment(self, assignment, **kwargs):
+        """Assigns a value to a variable."""
+
+        value = self.visit(assignment.value, **kwargs)
+        varname = assignment.varname.name
+        self.var_lookup[varname] = value
+        return value
+```
+
+Now we are only left with the `visit_Monad`, `visit_Dyad`, `visit_F` and `visit_MOp` methods. For these it is also relevant to talk about what I decided to do.
+
+If you look closely, all these `visit_*` methods are also expecting some keyword arguments in the `**kwargs` argument; this is going to be used to propagate down the AST if a given function is being called monadically or dyadically, because this changes for example if `×` is being used as the sign function or as multiplication.
+
+Not only that, but I also define the monadic and dyadic versions of the functions separately in two dictionaries. For the glyphs we have so far, `+ - × ÷ ⌊ ⌈` we could define all of them with simple lambda expressions.
+
+! I may or may not change this in the future, this was what I came up with at this point. Maybe you could experiment with different ways of defining the functions and how they change depending on their valence and then let me know how it went! Just drop a comment below ;)
+
+Here are the six functions for the monadic and dyadic cases:
+
+```py
+class Interpreter(NodeVisitor):
+    """APL interpreter using the visitor pattern."""
+
+    monadic_functions = {
+        "+": lambda x: x,
+        "-": lambda x: -x,
+        "×": lambda x: 0 if not x else abs(x)//x,
+        "÷": lambda x: 1/x,
+        "⌈": ceil,
+        "⌊": floor,
+    }
+
+    dyadic_functions = {
+        "+": lambda a, w: a + w,
+        "-": lambda a, w: a - w,
+        "×": lambda a, w: a * w,
+        "÷": lambda a, w: a / w,
+        "⌈": max,
+        "⌊": min,
+    }
+
+    # ...
+```
+
+_exceeeeeeept_ this is not _quite_ what we want. APL has something that are called [scalar functions][apl-wiki-scalar-functions]. You can think of these as functions that "automatically map" over arrays, so we can do things like
+
+```apl
+    1 + 1 2 3
+2 3 4
+
+    2 × 2 3 4
+4 6 8
+
+    1 2 3 + (1 2) 3 (4 5)
+(2 3) 5 (7 8)
+```
+
+so I also had to define two helper functions, `monadic_permeate` and `dyadic_permeate` that do this "automatic mapping" for us. I defined these as two decorators because that is effectively what they are, functions that receive functions and returned modified versions of the input functions.
+
+What they effectively do is to recurse into the function arguments until there is nothing to do but to apply the actual function.
+
+```py
+def monadic_permeate(func):
+    """Decorates a function to permeate into simple scalars."""
+
+    def decorated(omega):
+        if isinstance(omega, list):
+            return [decorated(elem) for elem in omega]
+        else:
+            return func(omega)
+    return decorated
+
+
+def dyadic_permeate(func):
+    """Decorates a function to permeate through the left and right arguments."""
+
+    def decorated(alpha, omega):
+        if not isinstance(alpha, list) and not isinstance(omega, list):
+            return func(alpha, omega)
+        elif isinstance(alpha, list) and isinstance(omega, list):
+            if len(alpha) != len(omega):
+                raise IndexError("Arguments have mismatching lengths.")
+            return [decorated(al, om) for al, om in zip(alpha, omega)]
+        elif isinstance(alpha, list):
+            return [decorated(al, omega) for al in alpha]
+        else:
+            return [decorated(alpha, om) for om in omega]
+    return decorated
+```
+
+With these decorators defined, we can actually fix the `monadic_functions` and `dyadic_functions` dictionaries of our `Interpreter` class:
+
+```py
+class Interpreter(NodeVisitor):
+    """APL interpreter using the visitor pattern."""
+
+    monadic_functions = {
+        "+": monadic_permeate(lambda x: x),
+        "-": monadic_permeate(lambda x: -x),
+        "×": monadic_permeate(lambda x: 0 if not x else abs(x)//x),
+        "÷": monadic_permeate(lambda x: 1/x),
+        "⌈": monadic_permeate(ceil),
+        "⌊": monadic_permeate(floor),
+    }
+
+    dyadic_functions = {
+        "+": dyadic_permeate(lambda a, w: a + w),
+        "-": dyadic_permeate(lambda a, w: a - w),
+        "×": dyadic_permeate(lambda a, w: a * w),
+        "÷": dyadic_permeate(lambda a, w: a / w),
+        "⌈": dyadic_permeate(max),
+        "⌊": dyadic_permeate(min),
+    }
+
+    # ...
+```
+
+Now that we have the functions defined properly we can implement the `visit_Monad`, `visit_Dyad`, `visit_F` and `visit_MOp` methods. We also include a simple `interpret` method that triggers the recursive `visit`ing of the tree at the root:
+
+```py
+class Interpreter(NodeVisitor):
+    """APL interpreter using the visitor pattern."""
+
+    # ...
+
+    def visit_Monad(self, monad, **kwargs):
+        """Evaluate the function on its only argument."""
+
+        kwargs["valence"] = 1
+        function = self.visit(monad.function, **kwargs)
+        omega = self.visit(monad.omega)
+        return function(omega)
+
+    def visit_Dyad(self, dyad, **kwargs):
+        """Evaluate a dyad on both its arguments."""
+
+        kwargs["valence"] = 2
+        function = self.visit(dyad.function, **kwargs)
+        omega = self.visit(dyad.omega)
+        alpha = self.visit(dyad.alpha)
+        return function(alpha, omega)
+
+    def visit_F(self, func, **kwargs):
+        """Fetch the callable function."""
+
+        if kwargs["valence"] == 1:
+            return self.monadic_functions[func.function]
+        elif kwargs["valence"] == 2:
+            return self.dyadic_functions[func.function]
+
+    def visit_MOp(self, mop, **kwargs):
+        """Fetch the operand and alter it."""
+
+        if mop.operator == "⍨":
+            func = self.visit(mop.child, **{**kwargs, **{"valence": 2}})
+            if kwargs["valence"] == 1:
+                return lambda x: func(x, x)
+            elif kwargs["valence"] == 2:
+                return lambda a, w: func(w, a)
+        else:
+            raise SyntaxError(f"Unknown monadic operator {mop.operator}.")
+
+    def interpret(self):
+        """Interpret the APL code the parser was given."""
+        tree = self.parser.parse()
+        #print(tree)
+        return self.visit(tree)
+```
+
+And that is it! Congrats on making it this far! Lets take our new interpreter for a ride.
+
+# Experimenting
+
+You can either [go try this online][repl-part2], download the code from the [github repo][rgspl2] or finish your code with this utility `if` statement (just be sure to `import argparse` in the beginning of your file):
+
+```py
+if __name__ == "__main__":
+
+    arg_parser = argparse.ArgumentParser(description="Parse and interpret an APL program.")
+    main_group = arg_parser.add_mutually_exclusive_group()
+    main_group.add_argument(
+        "--repl",
+        action="store_true",
+        help="starts a REPL session",
+    )
+    main_group.add_argument(
+        "-f",
+        "--file",
+        nargs=1,
+        metavar="filename",
+        help="filename with code to parse and interpret",
+        type=str,
+    )
+    main_group.add_argument(
+        "-c",
+        "--code",
+        nargs="+",
+        metavar="expression",
+        help="expression(s) to be interpreted",
+        type=str,
+    )
+
+    args = arg_parser.parse_args()
+
+    if args.repl:
+        print("Please notice that, from one input line to the next, variables aren't stored (yet).")
+        while inp := input(" >> "):
+            try:
+                print(Interpreter(Parser(Tokenizer(inp), debug=True)).interpret())
+            except Exception as error:
+                print(f"Caught '{error}', skipping execution.")
+
+    elif args.code:
+        for expr in args.code:
+            print(f"{expr} :")
+            print(Parser(Tokenizer(expr), debug=True).parse())
+
+    elif args.file:
+        print("Not implemented yet...")
+
+    else:
+        arg_parser.print_usage()
+```
+
+Now you can fire up your favourite interpreter and write `./rgspl.py --repl` and it will start a Read-Eval-Print-Loop (hence repl) where you can type your expressions and get their results printed back at you:
+
+```apl
+    1 2 3 + × (1 2) 3 (4 5 6)
+[[2, 2], 3, [4, 4, 4]]
+
+    r ← 1 2 4 5 + 3 4 1 2 ⋄ r2 ← 5×4×r ⋄ r2
+[80, 120, 100, 140]
+```
+
+If the verbose output annoys you, you may want to set `debug=False` :)
+
+# Exercises
+
+For the next blog post I want you to implement some more of APL's primitive built-ins. For practice, why don't you tackle primitives like `*`, `○`, `|`, the comparison functions `<≤=≥>≠` and the boolean functions `∨∧⍱⍲`? Have a go at them! Do not forget to make them scalar!
+
+I also want you to have a look at [Ruslan's 7th post][ruslan-7] and check out his code for the small utility he wrote to generate images from AST trees (search the text for _"To help you visualize ASTs"_). It is an excellent way for you to practice your visitor pattern skills: implement that utility for these APL trees we have.
+
+# Where we are heading to
+
+In future posts here are some of the things that will be covered:
+
+ - implementing many more primitives;
+ - implement strand assignment (i.e. what allows you to do things like `a b ← 1 2`);
+ - implement modified assignment;
+ - make sure our list representation of arrays is compatible with APL's array model;
+ - allow for the definition of trains and assignment of those.
+
+These are some of the things I want to tackle next but having those complete doesn't mean we are close to having a full APL interpreter! APL has lots of cool features!
+
 [repl-part1]: https://rgsplpart1.rojergs.repl.run/
 [repl-part2]: https://RGSPLpart2.rojergs.repl.run/
 [previous]: https://mathspp.com/blog/lsbasi-apl-part1
 [apl-wiki]: https://aplwiki.com/
 [apl-wiki-op]: https://aplwiki.com/wiki/Operator
 [apl-wiki-trains]: https://aplwiki.com/wiki/Tacit_programming#Trains
+[apl-wiki-scalar-functions]: https://aplwiki.com/wiki/Scalar_function
 [rgspl-repo]: https://github.com/RojerGS/RGSPL
 [rgspl2]: https://github.com/RojerGS/RGSPL/blob/master/part2
+[lsbasi]: https://ruslanspivak.com/lsbasi-part1/
+[Visitor pattern]: https://en.wikipedia.org/wiki/Visitor_pattern
+[ruslan-7]: https://ruslanspivak.com/lsbasi-part7/
