@@ -248,7 +248,6 @@ Notice how there's rules that reference each other and rules that reference rule
 
 The way we turn these rules into code to build the AST is simple; first we define types for the different nodes our AST is going to have, which for now are [scalars][apl-wiki-scalar], [arrays][apl-wiki-array], [dyadic functions][apl-wiki-dyad], [monadic functions][apl-wiki-monad] and [operators][apl-wiki-operator]:
 
-
 ```py
 class ASTNode:
     """Stub class to be inherited by the different types of AST nodes.
@@ -257,7 +256,6 @@ class ASTNode:
         Abstract Syntax Tree out of the APL programs.
     These ASTs can then be traversed to interpret an APL program.
     """
-
 
 class Scalar(ASTNode):
     """Node for a simple scalar like 3 or ¯4.2"""
@@ -271,7 +269,6 @@ class Scalar(ASTNode):
     def __repr__(self):
         return self.__str__()
 
-
 class Array(ASTNode):
     """Node for an array of simple scalars, like 3 ¯4 5.6"""
     def __init__(self, children):
@@ -282,7 +279,6 @@ class Array(ASTNode):
 
     def __repr__(self):
         return self.__str__()
-
 
 class MOp(ASTNode):
     """Node for monadic operators like ⍨"""
@@ -296,7 +292,6 @@ class MOp(ASTNode):
     def __repr__(self):
         return self.__str__()
 
-
 class Monad(ASTNode):
     """Node for monadic functions."""
     def __init__(self, token, child):
@@ -308,7 +303,6 @@ class Monad(ASTNode):
 
     def __repr__(self):
         return self.__str__()
-
 
 class Dyad(ASTNode):
     """Node for dyadic functions."""
@@ -375,7 +369,7 @@ The `peek` method is a method that allows us to see what token will come next, b
 
 For example, when looking at `+` we can only know if it is a monadic function or a dyadic function after we check if an array starts in the next token or not.
 
-After having these helper functions in place we define the `parse_X` methods for the rules of our grammar; each method returns a node with the part of the code that was parsed into an AST by its rule:
+After having these helper functions in place we define the `parse_*` methods for the rules of our grammar; each method returns a node with the part of the code that was parsed into an AST by its rule:
 
 ```py
 class Parser:
@@ -489,7 +483,7 @@ In the next blog post we will
 
 # Exercises
 
-To practice your Python skills and to make sure you really understand what is going on, I suggest you try changing the `Tokenizer` and the `Parser` classes to also handle the functions `⌈` and `⌊`.
+To practice your programming skills and to make sure you really understand what is going on, I suggest you try changing the `Tokenizer` and the `Parser` classes to also handle the functions `⌈` and `⌊`.
 
 If you are feeling brave enough you can also try and implement the changes for the next blog post on your own!
 
