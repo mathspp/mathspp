@@ -41,13 +41,13 @@ To make my changes easier to understand, we will study the AST generated for the
 
 ![Sketch of the AST generated for the example expression.](./old_parser_dyadic_example.png)
 
-What I don't like about this AST is that I don't know if the operator `⍨` is acting in a monadic or dyadic function until I reach the bottom of the tree, where I have my function and my two arguments. If you type the same expression `1 +⍨⍨ 2` in [the parser for this post][repl-part2], the output printed is a list with the single element `Dyad(MOp(⍨ MOp(⍨ F(+))) S(1) S(2))` in it; this tree can be represented as:
+What I don't like about this AST is that I don't know if the operator `⍨` is acting on a monadic or dyadic function until I reach the bottom of the tree, where I have my function and my two arguments. If you type the same expression `1 +⍨⍨ 2` in [the parser for this post][repl-part2], the output printed is a list with the single element `Dyad(MOp(⍨ MOp(⍨ F(+))) S(1) S(2))` in it; this tree can be represented as:
 
 ![Sketch of the new AST generated for the example expression.](./new_parser_dyadic_example.png)
 
 With the new tree I have clearly separated the issue of finding the function I will apply from the arguments to which the function will be applied. I am also guessing this will make it easier to later implement things like [trains][apl-wiki-trains] and assigning functions to variables.
 
-I challenge you modify the AST nodes and the parser yourself to produce trees like these for dyadic function applications. Monadic function application undergoes a similar change, exemplified in the picture below for the expression `×⍨⍨ 6`:
+I challenge you to modify the AST nodes and the parser yourself to produce trees like these for dyadic function applications. Monadic function application undergoes a similar change, exemplified in the picture below for the expression `×⍨⍨ 6`:
 
 ![Comparison of old and new ASTs for a monadic function application.](./monadic_example.png)
 
@@ -188,8 +188,8 @@ For the sake of brevity we define the `AST.__repr__` method as `self.__str__` an
 
 From the updated grammar, both from the new functionalities and the changes I had to make because I changed my mind about the old grammar, we need to modify these `ASTNode` subclasses:
 
- - `Monad` - now represents a monadic function call instead of a function called monadically (c.f. the drawings above);
- - `Dyad` - now represents a dyadic function call instead of a function called dyadically (c.f. the drawings above).
+ - `Monad` - now represents a monadic function call instead of a function called monadically (cf. the drawings above);
+ - `Dyad` - now represents a dyadic function call instead of a function called dyadically (cf. the drawings above).
 
 and create these new subclasses:
 
@@ -570,7 +570,7 @@ class Interpreter(NodeVisitor):
     # ...
 ```
 
-_exceeeeeeept_ this is not _quite_ what we want. APL has something that are called [scalar functions][apl-wiki-scalar-functions]. You can think of these as functions that "automatically map" over arrays, so we can do things like
+_exceeeeeeept_ this is not _quite_ what we want. In APL, most functions are [scalar functions][apl-wiki-scalar-functions]. You can think of these as functions that "automatically map" over arrays, so we can do things like
 
 ```apl
     1 + 1 2 3
@@ -583,13 +583,13 @@ _exceeeeeeept_ this is not _quite_ what we want. APL has something that are call
 (2 3) 5 (7 8)
 ```
 
-so I also had to define two helper functions, `monadic_permeate` and `dyadic_permeate` that do this "automatic mapping" for us. I defined these as two decorators because that is effectively what they are, functions that receive functions and return modified versions of the input functions.
+so I also had to define two helper functions, `monadic_pervade` and `dyadic_pervade` that do this "automatic mapping" for us. I defined these as two decorators because that is effectively what they are, functions that receive functions and return modified versions of the input functions.
 
 What they effectively do is to recurse into the function arguments until there is nothing to do but to apply the actual function.
 
 ```py
-def monadic_permeate(func):
-    """Decorates a function to permeate into simple scalars."""
+def monadic_pervade(func):
+    """Decorates a function to pervade into simple scalars."""
 
     def decorated(omega):
         if isinstance(omega, list):
@@ -598,8 +598,8 @@ def monadic_permeate(func):
             return func(omega)
     return decorated
 
-def dyadic_permeate(func):
-    """Decorates a function to permeate through the left and right arguments."""
+def dyadic_pervade(func):
+    """Decorates a function to pervade through the left and right arguments."""
 
     def decorated(alpha, omega):
         if not isinstance(alpha, list) and not isinstance(omega, list):
@@ -622,21 +622,21 @@ class Interpreter(NodeVisitor):
     """APL interpreter using the visitor pattern."""
 
     monadic_functions = {
-        "+": monadic_permeate(lambda x: x),
-        "-": monadic_permeate(lambda x: -x),
-        "×": monadic_permeate(lambda x: 0 if not x else abs(x)//x),
-        "÷": monadic_permeate(lambda x: 1/x),
-        "⌈": monadic_permeate(ceil),
-        "⌊": monadic_permeate(floor),
+        "+": monadic_pervade(lambda x: x),
+        "-": monadic_pervade(lambda x: -x),
+        "×": monadic_pervade(lambda x: 0 if not x else abs(x)//x),
+        "÷": monadic_pervade(lambda x: 1/x),
+        "⌈": monadic_pervade(ceil),
+        "⌊": monadic_pervade(floor),
     }
 
     dyadic_functions = {
-        "+": dyadic_permeate(lambda a, w: a + w),
-        "-": dyadic_permeate(lambda a, w: a - w),
-        "×": dyadic_permeate(lambda a, w: a * w),
-        "÷": dyadic_permeate(lambda a, w: a / w),
-        "⌈": dyadic_permeate(max),
-        "⌊": dyadic_permeate(min),
+        "+": dyadic_pervade(lambda a, w: a + w),
+        "-": dyadic_pervade(lambda a, w: a - w),
+        "×": dyadic_pervade(lambda a, w: a * w),
+        "÷": dyadic_pervade(lambda a, w: a / w),
+        "⌈": dyadic_pervade(max),
+        "⌊": dyadic_pervade(min),
     }
 
     # ...
@@ -771,8 +771,10 @@ I also want you to have a look at [Ruslan's 7th post][ruslan-7] and check out hi
 
 In future posts here are some of the things that will be covered:
 
- - implementing many more primitives;
- - implement strand assignment (i.e. what allows you to do things like `a b ← 1 2`);
+ - implementing many more primitive functions;
+ - implement more monadic operators;
+ - finally introduce dyadic operators;
+ - implement strand assignment (i.e. what allows you to do things like `(a b) ← 1 2`);
  - implement modified assignment;
  - make sure our list representation of arrays is compatible with APL's array model;
  - allow for the definition of trains and assignment of those.
