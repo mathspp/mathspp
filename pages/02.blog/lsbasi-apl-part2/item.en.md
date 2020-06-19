@@ -1,7 +1,7 @@
 ---
 title: Let's build a simple interpreter for APL - part 2
 metadata:
-    description: In the second post of the LSBASI series we go one step further in interpreting APL programs.
+    description: In this post we enhance our interpreter to handle multiple expressions and to evaluate them.
 ---
 
 Today is the day! Today is the day we take our [APL][apl-wiki] programs and interpret them, so that something like `÷ 1 2 3 -⍨ 1.1 2.2 3.3` can output `10 5 3.33333333`.
