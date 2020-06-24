@@ -783,6 +783,14 @@ These are some of the things I want to tackle next but having those complete doe
 
 See you next time ;)
 
+##### All posts in this series:
+
+<ul>
+{% for post in taxonomy.findTaxonomy({"tag": ["lsbasi-apl"]}) %}
+    <li>{{ post.title }}</li>
+{% endfor %}
+</ul>
+
 [repl-part1]: https://rgsplpart1.rojergs.repl.run/
 [repl-part2]: https://RGSPLpart2.rojergs.repl.run/
 [previous]: https://mathspp.com/blog/lsbasi-apl-part1
