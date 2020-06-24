@@ -1,5 +1,8 @@
 slug: lsbasi-apl-part2
 date: 19-06-2020
+twig_first: true
+process:
+    twig: true
 taxonomy:
     category: blogpost
     tag: [programming, python, interpreters, lsbasi-apl]
