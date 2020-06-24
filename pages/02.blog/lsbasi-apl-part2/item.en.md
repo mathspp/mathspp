@@ -787,7 +787,7 @@ See you next time ;)
 
 <ul>
 {% for post in taxonomy.findTaxonomy({"tag": ["lsbasi-apl"]}) %}
-    <li>[{{ post.title }}]({{ url(post.url) }})</li>
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
 
