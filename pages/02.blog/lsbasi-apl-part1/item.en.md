@@ -489,6 +489,14 @@ If you are feeling brave enough you can also try and implement the changes for t
 
 See you next time!
 
+##### All posts in this series:
+
+<ul>
+{% for post in taxonomy.findTaxonomy({"tag": ["lsbasi-apl"]}) %}
+    <li>[{{ post.title }}]({{ post.url }})</li>
+{% endfor %}
+</ul>
+
 
 [apl-wiki]: https://aplwiki.com/
 [apl-wiki-scalar]: https://aplwiki.com/wiki/Scalar

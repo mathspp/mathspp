@@ -489,6 +489,14 @@ Se tiveres coragem suficiente, também podes tentar implementar as alterações 
 
 Até à próxima!
 
+##### Todos os artigos desta série:
+
+<ul>
+{% for post in taxonomy.findTaxonomy({"tag": ["lsbasi-apl"]}) %}
+    <li>[{{ post.title|t }}]({{ post.url }})</li>
+{% endfor %}
+</ul>
+
 [apl-wiki]: https://aplwiki.com/
 [apl-wiki-scalar]: https://aplwiki.com/wiki/Scalar
 [apl-wiki-array]: https://aplwiki.com/wiki/Array
