@@ -493,7 +493,7 @@ Até à próxima!
 
 <ul>
 {% for post in taxonomy.findTaxonomy({"tag": ["lsbasi-apl"]}) %}
-    <li>[{{ post.title|t }}]({{ post.url }})</li>
+    <li>[{{ t(post.title) }}]({{ post.url }})</li>
 {% endfor %}
 </ul>
 
