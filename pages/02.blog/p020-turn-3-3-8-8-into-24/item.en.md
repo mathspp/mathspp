@@ -25,7 +25,11 @@ An example valid expression would be $(3+3)\times (8+8)$ except this is not the 
 
 !!! Give it some thought, maybe take out a piece of paper and a pencil.
 
-!!!! **Hint**: the intermediate steps do _not_ have to evaluate to integer numbers.
+### Hint
+
+Do _not_ read the hint if you haven't spent some time thinking about the problem yet!
+
+!!!! the intermediate steps do _not_ have to evaluate to integer numbers.
 
 
 ### Solution
