@@ -29,7 +29,7 @@ An example valid expression would be $(3+3)\times (8+8)$ except this is not the 
 
 Do _not_ read the hint if you haven't spent some time thinking about the problem yet!
 
-!!!! the intermediate steps do _not_ have to evaluate to integer numbers.
+!!!! The intermediate steps do _not_ have to evaluate to integer numbers.
 
 
 ### Solution
@@ -41,4 +41,4 @@ I heard of this from the same friend who told me about the ["Fold the alphabet"]
 See you next time!
 
 [24 Game]: https://en.wikipedia.org/wiki/24_Game
-[fold the alphabet]: ./fold-the-alphabet
+[fold the alphabet]: ../fold-the-alphabet
