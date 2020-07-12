@@ -35,7 +35,7 @@ _Não_ leias a pista se ainda não tiveres pensado pelo menos cinco minutos nest
 
 ### Solução
 
-Não vale a pena dourar a pílula, a solução é a expressão $8 \times (3 - \frac83)$. Genial, não achas?
+Não vale a pena dourar a pílula, a solução é a expressão $8 \div (3 - 8\div 3)$. Genial, não achas?
 
 Quem me falou deste problema foi o mesmo amigo que me mostrou o problema ["Dobrar o alfabeto"][fold the alphabet].
 
