@@ -12,7 +12,7 @@ Pega numa folha de papel e num lápis. Agora vou pedir-te que escrevas umas letr
 
 ### Preparação
 
-Pega numa folha de rascunho e deita-a na horizontal (em "modo paisagem", se fosse um dispositivo móvel).
+Pega numa folha de rascunho e deita-a na horizontal.
 
 Agora preciso que dobres a folha ao meio, ao longo do eixo horizontal de simetria; de seguida dobra ao meio, ao longo do eixo vertical de simetria duas vezes consecutivas.
 
