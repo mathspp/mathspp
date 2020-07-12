@@ -38,6 +38,8 @@ There really is no point in sugar coating this for you, the solution is the expr
 
 I heard of this from the same friend who told me about the ["Fold the alphabet"][fold the alphabet] problem.
 
+Were you able to solve this problem? Let me know your thoughts in the comment section down below!
+
 See you next time!
 
 [24 Game]: https://en.wikipedia.org/wiki/24_Game
