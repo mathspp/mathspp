@@ -45,7 +45,7 @@ Namespaces are one honking great idea -- let's do more of those!
 
 O _Zen of Python_ foi escrito por [Tim Peters][tim-peters], um engenheiro informático que contribuiu bastante para o Python e para a comunidade do Python.
 
-Pessoalmente acho que o _Zen of Python_ é fácil de interpretar, a menos da piada sobre pessoas holandesas* e a referência aos _namespaces_, uma particularidade do Python. Há medida que os próximos [_py-don't_][pydont]'s forem publicados, vou contrariar o _Zen of Python_ repetidamente, portanto fiquem atentos!
+Pessoalmente acho que o _Zen of Python_ é fácil de interpretar, a menos da piada sobre pessoas holandesas* e a referência aos _namespaces_, uma particularidade do Python. À medida que os próximos [_py-don't_][pydont]'s forem publicados, vou contrariar o _Zen of Python_ repetidamente, portanto fiquem atentos!
 
 Deixem um comentário se houver algum [_py-don't_][pydont] que queiram sugerir!
 
