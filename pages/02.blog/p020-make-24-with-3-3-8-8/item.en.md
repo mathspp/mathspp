@@ -34,7 +34,7 @@ Do _not_ read the hint if you haven't spent some time thinking about the problem
 
 ### Solution
 
-There really is no point in sugar coating this for you, the solution is the expression $8 \times (3 - \frac83)$. Quite ingenious, isn't it?
+There really is no point in sugar coating this for you, the solution is the expression $8 \div (3 - 8\div 3)$. Quite ingenious, isn't it?
 
 I heard of this from the same friend who told me about the ["Fold the alphabet"][fold the alphabet] problem.
 
