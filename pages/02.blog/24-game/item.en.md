@@ -45,7 +45,7 @@ As far as I know, the game is usually played by giving four distinct numbers as 
  - $\{1, 6, 7, 8\}$
  - $\{3, 4, 6, 7\}$
 
-which is "acceptable", we thought. It would be really incredible if $24$ worked for any input, but we could live with this rate of $\approx 98.4\%$.
+which is "acceptable", we thought. It would be really incredible if $24$ worked for any input, but we could live with this solvability rate of $\approx 98.4\%$.
 
 If we allow for inputs with repeated digits, then there are exactly $495$ valid inputs and $24$ works for $404$ of them, dropping its solvability rate to $\approx 81.6\%$.
 
@@ -55,9 +55,56 @@ Having seen this, with $24$ not working for _all_ the $126$ unique inputs, we th
 
 What we mean by this is: out of all the small integers, is $24$ the one that is solvable for more inputs? A quick modification of my script produced this graph:
 
-![graph showing solvability numbers for all targets from 0 to 100](unique_100.png)
+![graph showing solvability numbers for all targets from 0 to 100 and unique inputs](unique_100.png)
 
-The horizontal dotted line is at the $126$ mark, which is the total number of valid inputs. From this graph we can easily see that $24$ is _not_ the optimal target choice, as picking $2$, $3$, $4$, $6$, $10$ or $12$ would have been better. In fact, $2$, $3$, $4$ and $10$ can be solved with _any_ input, $6$ is only impossible for $\{6, 7, 8, 9\}$ and $12$ is only impossible for $\{1, 5, 7, 8\}$
+The horizontal dotted line is at the $126$ mark, which is the total number of valid inputs. From this graph we can easily see that $24$ is _not_ the optimal target choice, as picking $2$, $3$, $4$, $6$, $10$ or $12$ would have been better. In fact, $2$, $3$, $4$ and $10$ can be solved with _any_ input, $6$ is only impossible for $\{6, 7, 8, 9\}$ and $12$ is only impossible for $\{1, 5, 7, 8\}$.
+
+So we could say that $2$, $3$, $4$ and $10$ are the "perfect" targets.
+
+It can also be interesting to look at the next graph below, which is similar to the one above except now we take every integer from $0$ to $3024$ as target ($3024 = 9 \times 8 \times 7 \times 6$ is the highest we can get with four unique digits as input):
+
+![graph showing solvability numbers for all targets from 0 to 100 and unique inputs](unique_full_100.png)
+
+Having looked at the graph above, a new question arose naturally...
+
+#### Are any of the "perfect" targets still perfect if the input numbers are allowed to repeat?
+
+Turns out the answer is _no_, but $2$ is quite close to remaining perfect! From the $495$ inputs $2$ does not work for
+
+ - $\{1, 1, 1, 7 \}$
+ - $\{1, 1, 1, 8 \}$
+ - $\{1, 1, 1, 9 \}$
+
+which means $2$ has an overall solvability rate of $\approx 99.4\%$.
+
+The other perfect targets' solvability rates drop significantly when we include inputs with repeated digits, as we can see in this graph:
+
+![graph showing solvability numbers for all targets from 0 to 100 and non unique inputs](non_unique_100.png)
+
+Below I included a table with all the targets which have solvability rates higher than those of $24$ for any input type ("inputs must have unique digits" and "inputs can have repeated digits").
+
+| target | # inputs solvable with only unique digits | # inputs solvable allowing non-unique digits |
+|-:|-:|-:|
+|  0 | 116 | 485 |
+|  1 | 121 | 470 |
+|  2 | 126 | 492 |
+|  3 | 126 | 472 |
+|  4 | 126 | 464 |
+|  5 | 123 | 462 |
+|  6 | 125 | 469 |
+|  7 | 122 | 461 |
+|  8 | 120 | 455 |
+|  9 | 120 | 453 |
+| 10 | 126 | 447 |
+| 11 | 120 | 417 |
+| 12 | 125 | 444 |
+| 14 | 118 | 410 |
+| 15 | 120 | 416 |
+| 16 | 122 | 425 |
+| 18 | 120 | 405 |
+
+Notice that when we only allow unique digits, $24$ is the seventh best input but when we allow repeated digits, it is only the eighteenth best target... Interesting!
+
 
 ### The algorithm & the code
 
