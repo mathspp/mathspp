@@ -10,7 +10,7 @@ O ["jogo do 24"][24-game] é um jogo matemático que costuma ser jogado nos prim
 
 ### O jogo
 
-O "jogo do 24" é um jogo simples. Dou-te quatro números entre $1$ e $9$ (por exemplo, $\{1, 2, 3, 4\}$) e o teu objetivo é encontrar uma expressão cujo valor seja $24$ (ou seja, tens de "fazer uma conta que dê $24$). As regras que existem são simples:
+O "jogo do 24" é um jogo simples. Dou-te quatro números entre $1$ e $9$ (por exemplo, $\{1, 2, 3, 4\}$) e o teu objetivo é encontrar uma expressão cujo valor seja $24$ (ou seja, tens de "fazer uma conta que dê $24$"). As regras que existem são simples:
 
  - cada número tem de ser usado exatamente uma vez;
  - as únicas operações disponíveis são a adição, a subtração, a multiplicação e a divisão;
@@ -21,7 +21,7 @@ O "jogo do 24" é um jogo simples. Dou-te quatro números entre $1$ e $9$ (por e
 
 #### Exemplos
 
-Se os números dados forem $\{1, 2, 3, 4\}$, então uma resposta poderia ser
+Se os números dados forem $\{1, 2, 3, 4\}$ então uma resposta poderá ser
 
  - $1 \times 2 \times 3 \times 4$
 
@@ -34,7 +34,7 @@ e se os números fossem $\{2, 5, 7, 8\}$, uma resposta poderia ser
 
 Eu estava a falar com um amigo que me desafiou para o "jogo do 24" com os números $\{3, 3, 8, 8\}$ ([tenta tu também!][P020]) e quando começámos a discutir o jogo perguntámo-nos "Porque é que este jogo é o jogo do _"24"_? O $24$ é especial?".
 
-Quando estava a ter esta conversa com o meu amigo eu já tinha um programa de computador que jogava ao "jogo do 24" portanto nós decidimos que íamos usar esse programa para estudar um pouco o jogo.
+Quando estava a ter esta conversa eu já tinha um programa de computador que jogava ao "jogo do 24" portanto nós decidimos que íamos usar esse programa para estudar um pouco o jogo.
 
 !!! Para facilitar a minha vida, sempre que eu falar de _alvo_, refiro-me ao número a que estamos a tentar chegar. No jogo clássico, o _alvo_ é $24$. Sempre que eu falar de _input_ estou a referir-me aos números que estamos a usar para tentar chegar ao alvo.
 
@@ -76,7 +76,7 @@ Podem verificar isto com o código que escrevi, basta que tentem construir $24$ 
 
 Nós achámos que $24$ não ser alcançável com dois inputs era "aceitável". Teria sido incrível se conseguíssemos chegar a $24$ com qualquer input mas uma taxa de $\approx 98.4\%$ é bastante aceitável.
 
-Se permitir-mos que os números se repitam, então há $495$ inputs distintos e o $24$ é alcançável com $404$ desses $495$ inputs, o que significa que a percentagem de inputs solúveis cai para $\approx 81.6\%$.
+Se permitirmos que os números se repitam, então há $495$ inputs distintos e o $24$ é alcançável com $404$ desses $495$ inputs, o que significa que a percentagem de inputs solúveis cai para $\approx 81.6\%$.
 
 Isto pode ser verificado de forma semelhante com
 
@@ -155,7 +155,7 @@ Maximum attainable value is  6561
 
 De seguida encontram uma tabela com todos os alvos que são melhores que o $24$.
 
-| alvo | # inputs solúveis sem dígitos repetidos | # inputs solúveis se os dígitos puderem repetir |
+| Alvo | N⁰ inputs solúveis sem repetições | N⁰ inputs solúveis com repetições |
 |-:|-:|-:|
 |  0 | 116 | 485 |
 |  1 | 121 | 470 |
@@ -174,6 +174,7 @@ De seguida encontram uma tabela com todos os alvos que são melhores que o $24$.
 | 15 | 120 | 416 |
 | 16 | 122 | 425 |
 | 18 | 120 | 405 |
+
 
 Note-se que na versão mais restrita do jogo, o $24$ é o sétimo melhor alvo... Mas se jogarmos a versão mais permissiva, em que os números do input podem repetir, então o $24$ passa a ser apenas o décimo oitavo melhor alvo! Curioso!
 
@@ -227,9 +228,9 @@ O modo como o algoritmo funciona é simples e o trabalho pesado é todo feito pe
 
 No fim de tudo eu também quero obter uma expressão que me permite saber como chegar ao alvo, portanto o argumento esquerdo da função `Combine` (que é usado pelas chamadas recursivas da função) serve para guardar as representações textuais das várias operações que têm de ser feitas e da sua ordem, usando [notação polaca][PN]. Tomando o exemplo de cima, a representação `'2' '3' '4'` desdobrar-se-ia em `'+ 2 3' '4'`, `'+ 2 4' '3'` e `'+ 3 4' '2'`.
 
-O código das funções `Solve`, `Combine`, `IsEmpty`, `StudySolvability` e `Plot` encontra-se [neste link para o GitHub][gh-gist] que eu decidi incluir no fim do artigo.
+O código das funções `Solve`, `Combine`, `IsEmpty`, `StudySolvability` e `Plot` encontra-se [neste link para o GitHub][gh-gist] e no fim deste artigo.
 
-Estavam à espera que houvesse tantos alvos melhores que o $24$? Partilhem a vossa opinião na secção de comentários em baixo!
+Estavam à espera que houvesse tantos alvos melhores que o $24$? Partilhem as vossas reflexões na secção de comentários em baixo!
 
 Até à próxima.
 
