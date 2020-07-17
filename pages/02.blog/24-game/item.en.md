@@ -88,7 +88,7 @@ Having seen this, with $24$ not working for _all_ the $126$ unique inputs, we th
 
 #### Is $24$ the optimal target?
 
-What we mean by this is: out of all the small integers, is $24$ the one that is solvable for more inputs? A quick modification (the function `StudySolvability`) of my initial script (which only had the `Solve` and `Combine` functions) produced this graph:
+What we mean by this is: out of all the small integers, is $24$ the one that is solvable for more inputs? A quick modification of my initial script (which only had the `Solve` and `Combine` functions) produced this graph:
 
 ![graph showing solvability numbers for all targets from 0 to 100 and unique inputs](unique_100.png)
 
