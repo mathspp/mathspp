@@ -36,26 +36,72 @@ I had already written a computer program that solves instances of the game so we
 
 !!! To make my life easier writing this blog post, let's agree that when I talk about _input_ I mean the numbers you have to use to make $24$ and when I talk about the _target_ I mean the number you are trying to make, which is $24$ in the standard game.
 
-The first question we asked ourselves was
+### The code
+
+The questions I will be asking in this blog post were answered with the help of some programming I did in [APL]. I defined a couple of useful functions that you can find at the end of this post; throughout the blog post I will be using those functions to answer the questions I will present.
+
+The first question me and my friend asked was
 
 #### Does $24$ work for any input?
 
-As far as I know, the game is usually played by giving four distinct numbers as input, so for the usual game $\{2, 3, 4, 5\}$ is a valid input but $\{3, 3, 4, 5\}$ wouldn't be valid. Turns out that $24$ does _not_ work for any input. In fact, out of the $126$ valid inputs, $24$ only works for $124$ of them, failing for
+As far as I know, the game is usually played by giving four distinct numbers as input, so $\{2, 3, 4, 5\}$ is a valid input but $\{3, 3, 4, 5\}$ is not.
+
+Defining these types of inputs in APL is rather easy (note that I have `⎕IO ← 0`) and counting them is even easier:
+
+```apl
+      uinps ← all/⍨ {∧/2</⍵}¨ all ← 1+,⍳4⍴9  ⍝ inputs with unique digits
+      ⎕← ≢uinps 
+126
+      nuinps ← all/⍨ {∧/2≤/⍵}¨ all  ⍝ digits may repeat
+      ⎕← ≢nuinps
+495
+```
+
+Turns out that $24$ does _not_ work for any input. In fact, out of the $126$ valid inputs, $24$ only works for $124$ of them, failing for
 
  - $\{1, 6, 7, 8\}$
  - $\{3, 4, 6, 7\}$
 
-which is "acceptable", we thought. It would be really incredible if $24$ worked for any input, but we could live with this solvability rate of $\approx 98.4\%$.
+You can check this fact by trying to make $24$ with every possible input and verifying those for which it fails:
+
+```apl
+      r ← 24 IsEmpty⍤Solve¨ uinps
+      uinps/⍨r    
+┌───────┬───────┐
+│1 6 7 8│3 4 6 7│
+└───────┴───────┘
+```
+
+The fact that $24$ was not solvable for two of the inputs was "acceptable", we thought. It would be really incredible if $24$ worked for any input, but we could live with this solvability rate of $\approx 98.4\%$.
 
 If we allow for inputs with repeated digits, then there are exactly $495$ valid inputs and $24$ works for $404$ of them, dropping its solvability rate to $\approx 81.6\%$.
+
+This can be checked in a similar manner with
+
+```apl
+      r ← 24 IsEmpty⍤Solve¨ nuinps
+      +/r
+404
+```
 
 Having seen this, with $24$ not working for _all_ the $126$ unique inputs, we then asked ourselves
 
 #### Is $24$ the optimal target?
 
-What we mean by this is: out of all the small integers, is $24$ the one that is solvable for more inputs? A quick modification of my script produced this graph:
+What we mean by this is: out of all the small integers, is $24$ the one that is solvable for more inputs? A quick modification (the function `StudySolvability`) of my initial script (which only had the `Solve` and `Combine` functions) produced this graph:
 
 ![graph showing solvability numbers for all targets from 0 to 100 and unique inputs](unique_100.png)
+
+You can produce the graph yourself by first copying in the necessary functions from `'sharpplot'` and then running the `StudySolvability` and `Plot` functions yourself:
+
+```apl
+      'InitCauseway' 'View' ⎕CY 'sharpplot'
+      InitCauseway ⍬
+      counts ← 0 StudySolvability 100
+Starting the study.
+Maximum attainable value is  3024
+      126 Plot counts
+```
 
 The horizontal dotted line is at the $126$ mark, which is the total number of valid inputs. From this graph we can easily see that $24$ is _not_ the optimal target choice, as picking $2$, $3$, $4$, $6$, $10$ or $12$ would have been better. In fact, $2$, $3$, $4$ and $10$ can be solved with _any_ input, $6$ is only impossible for $\{6, 7, 8, 9\}$ and $12$ is only impossible for $\{1, 5, 7, 8\}$.
 
@@ -65,15 +111,32 @@ It can also be interesting to look at the next graph below, which is similar to 
 
 ![graph showing solvability numbers for all targets from 0 to 100 and unique inputs](unique_full_100.png)
 
+This one can be produced with
+
+```apl
+      counts ← 0 StudySolvability 3024
+      126 Plot counts
+```
+
 Having looked at the graph above, a new question arose naturally...
 
-#### Are any of the "perfect" targets still perfect if the input numbers are allowed to repeat?
+#### Are any of the "perfect" targets still perfect if the input digits are allowed to repeat?
 
-Turns out the answer is _no_, but $2$ is quite close to remaining perfect! From the $495$ inputs $2$ does not work for
+Turns out the answer is _no_, but $2$ is quite close to remaining perfect! From the $495$ available inputs, $2$ is solvable for $492$ of them! The three which don't work are
 
  - $\{1, 1, 1, 7 \}$
  - $\{1, 1, 1, 8 \}$
  - $\{1, 1, 1, 9 \}$
+
+This can be obtained by modifying slightly the code we already ran earlier:
+
+```apl
+      r ← 2 IsEmpty⍤Solve¨ nuinps
+      nuinps/⍨r
+┌───────┬───────┬───────┐
+│1 1 1 7│1 1 1 8│1 1 1 9│
+└───────┴───────┴───────┘
+```
 
 which means $2$ has an overall solvability rate of $\approx 99.4\%$.
 
@@ -81,7 +144,16 @@ The other perfect targets' solvability rates drop significantly when we include 
 
 ![graph showing solvability numbers for all targets from 0 to 100 and non unique inputs](non_unique_100.png)
 
-Below I included a table with all the targets which have solvability rates higher than those of $24$ for any input type ("inputs must have unique digits" and "inputs can have repeated digits").
+In order to study the solvability of inputs with possibly repeated digits we just set the left argument of `StudySolvability` to `1`:
+
+```apl
+      counts ← 1 StudySolvability 100
+Starting the study.
+Maximum attainable value is  6561
+      495 Plot counts
+```
+
+Below I included a table with all the targets which have solvability rates higher than those of $24$.
 
 | target | # inputs solvable with only unique digits | # inputs solvable allowing non-unique digits |
 |-:|-:|-:|
@@ -105,87 +177,63 @@ Below I included a table with all the targets which have solvability rates highe
 
 Notice that when we only allow unique digits, $24$ is the seventh best input but when we allow repeated digits, it is only the eighteenth best target... Interesting!
 
+You can produce this table yourself (in markdown notation) with:
+
+```apl
+      better ← (⍳13), 14, 15, 16, 18
+      r ← Combine∘⊂¨ nuinps
+      (reprs values) ← Unpack r
+      counts ← +⌿ values ∘.= better
+      (reprs uvalues) ← Unpack r/⍨ nuinps∊uinps
+      ucounts ← +⌿ uvalues ∘.= better
+      '|',(⍪better),'|',(⍕⍪ucounts),'|',(⍕⍪counts),'|'
+|  0 | 116 | 485 |
+|  1 | 121 | 470 |
+|  2 | 126 | 492 |
+|  3 | 126 | 472 |
+|  4 | 126 | 464 |
+|  5 | 123 | 462 |
+|  6 | 125 | 469 |
+|  7 | 122 | 461 |
+|  8 | 120 | 455 |
+|  9 | 120 | 453 |
+| 10 | 126 | 447 |
+| 11 | 120 | 417 |
+| 12 | 125 | 444 |
+| 14 | 118 | 410 |
+| 15 | 120 | 416 |
+| 16 | 122 | 425 |
+| 18 | 120 | 405 |
+```
 
 ### The algorithm & the code
 
-I wrote a simple APL program to help me answer all these questions. I present the code here, together with a brief description of the algorithm used. The algorithm was recursive and brute-force in nature.
+The algorithm used to solve an instance of the game is really simple and brute-force in nature; the good thing is that it is completely general. For example, you can find how to get to $-0.475$ with $\{2, 3, 4, 5, 6\}$ by typing
 
 ```apl
-:Namespace GameOf24
-    ⍝ Generalized solver for the "game of 24".
-
-    Solve ← {
-        ⍝ Dyadic function to find ways of building ⍺ with the numbers in ⍵
-        (reprs values) ← Combine⊂⍵ 
-        mask ← ⍺=∊values
-        (mask/reprs) (mask/values)
-    }
-
-    Combine ← {
-        ⍝ Recursive dyadic function combining the numbers ⍵ which have been obtained by the expressions ⍺
-        ⎕DIV←1
-        ⍺←⍕¨¨⍵ ⍝ default string representations of input numbers
-        1=l←≢⊃⍵: ⍺ ⍵  ⍝ if no more numbers to combine, return
-        C ← { ⍝ Combine two numbers of ⍵ with the dyadic function in ⍺
-            (r v) ← ⍵
-            (li ri) ← ↓⍉idx⌿⍨sub← ≠v[idx]
-            newv ← v[li] (⍎⍺) v[ri]
-            oldv ← v[sub⌿unused]
-            values ← ↓newv,oldv
-            reprs ← ↓r[sub⌿unused],⍨↓(↑sub/⊂⍺),(↑r[li]),' ',↑r[ri]
-            reprs values
-        }
-        idx ← (~0=(1+l)|⍳l*2) ⌿ ↑,⍳l l
-        unused ← idx ~⍨⍤1 1 ⍳l     
-        (a w) ← Unpack, '+-×÷' ∘.C ↓⍉↑⍺ ⍵
-        u←≠w
-        a ∇⍥(u∘/) w
-    }
-    
-    Unpack ← { ⍝ unpack pairs of nested results
-        ⊃{(wl wr)←⍵ ⋄ (al ar)←⍺ ⋄ (al,wl)(ar,wr)}/⍵
-    }
-    
-    IsEmpty ← ((0⍴⊂,0)≡⊃∘⌽) ⍝ Check if a return from Solve is empty
-    
-    CountSolvable ← {
-        ⍝ Given a target integer ⍵ check how many 4 unique-digit inputs are solvable
-        inps ← ({∧/2</⍵}¨inps)/inps←,1+⍳4⍴9     
-        1⊥~IsEmpty¨ ⍵ Solve¨ inps
-    }
-    
-    ∇ counts ← {allowRepeated} StudySolvability upTo
-        :If 900⌶⍬
-            allowRepeated ← 0
-        :EndIf
-        :If allowRepeated
-            filter ← {∧/2≤/⍵}
-            title ← 'Solvable inputs by target'
-        :Else
-            filter ← {∧/2</⍵}
-            title ← 'Unique solvable inputs by target'
-        :EndIf
-        ⎕← 'Starting the study.'
-        (reprs values) ← Unpack Combine∘⊂¨ inps←(filter¨inps)/inps←,1+⍳4⍴9
-        flat ← ∊values
-        ⎕← 'Maximum attainable value is ', ⌈/flat
-        counts ← 1⊥⍉ (⍳upTo+1) ∘.= flat
-        
-        'InitCauseway' 'View' ⎕CY 'sharpplot'
-        InitCauseway ⍬
-        sp ← ⎕new Causeway.SharpPlot
-        sp.Heading ← title
-        sp.XCaption ← 'Target'
-        sp.YCaption ← '# inputs solvable'                  
-        sp.LineGraphStyle ← Causeway.LineGraphStyles.XYPlot
-        sp.LineGraphStyle ← Causeway.LineGraphStyles.GridLines
-        sp.DrawLineGraph counts (xs←⍳≢counts)              
-        sp.DrawLineGraph (xs ∘.⊢ ≢inps) xs
-        View sp
-    ∇
-:EndNamespace
+      ¯0.475 GameOf24.Solve 2 3 4 5 6
+┌──────────────────────────────────────────────────┬────────┐
+│┌────────────────────────────────────────────────┐│┌──────┐│
+││┌──────────────────────────────────────────────┐│││¯0.475││
+│││÷-÷3    ×5 6 2          4                     │││└──────┘│
+││└──────────────────────────────────────────────┘││        │
+│└────────────────────────────────────────────────┘│        │
+└──────────────────────────────────────────────────┴────────┘
 ```
+
+which means $-0.475 = (3 \div (5\times 6) - 2) ÷ 4$.
+
+The way the algorithm works is simple and all the work is done by the `Combine` function: the `Combine` dfn takes a vector of integer vectors on the right and then iterates over them. For each integer vector we go over all the allowed operations and try to combine any two elements of the vector to create several derived vectors with one element less. For example, with the vector `2 3 4` and using only addition, we create the derived vectors `5 4` ($2+3$), `6 3` ($2+4$) and `7 2` ($3+4$).
+
+Because in the end we also want to know the expression that gave the given result, the left argument to `Combine` (which is used by the recursive calls) keeps track of a string representation of how we got to each number in [Polish Notation][PN]. With the example above, while we are dealing with the integer vector `2 3 4` we start with the representation `'2' '3' '4'` and then create the derived representations `'+ 2 3' '4'`, `'+ 2 4' '3'` and `'+ 3 4' '2'`.
+
+The code for the `Solve`, `Combine`, `IsEmpty`, `StudySolvability` and `Plot` functions can be found in [this GitHub gist][gh-gist] which I also include below:
+
+<script src="https://gist.github.com/RojerGS/1a6543226fdd8d51dc4c669acabf76ad.js"></script>
 
 [24-game]: https://en.wikipedia.org/wiki/24_Game
 [P020]: ../make-24-with-3-3-8-8
 [P019]: ../fold-the-alphabet
+[apl]: ../lsbasi-apl-part1
+[PN]: https://en.wikipedia.org/wiki/Polish_notation
+[gh-gist]: https://gist.github.com/RojerGS/1a6543226fdd8d51dc4c669acabf76ad
