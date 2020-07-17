@@ -223,11 +223,15 @@ The algorithm used to solve an instance of the game is really simple and brute-f
 
 which means $-0.475 = (3 \div (5\times 6) - 2) ÷ 4$.
 
-The way the algorithm works is simple and all the work is done by the `Combine` function: the `Combine` dfn takes a vector of integer vectors on the right and then iterates over them. For each integer vector we go over all the allowed operations and try to combine any two elements of the vector to create several derived vectors with one element less. For example, with the vector `2 3 4` and using only addition, we create the derived vectors `5 4` ($2+3$), `6 3` ($2+4$) and `7 2` ($3+4$).
+The way the algorithm works is simple and all the work is done by the `Combine` function: the `Combine` dfn takes a vector of number vectors on the right and then iterates over them. For each number vector we go over all the allowed operations and try to combine any two elements of the vector to create several derived vectors with one element less. For example, with the vector `2 3 4` and using only addition, we create the derived vectors `5 4` ($2+3$), `6 3` ($2+4$) and `7 2` ($3+4$).
 
 Because in the end we also want to know the expression that gave the given result, the left argument to `Combine` (which is used by the recursive calls) keeps track of a string representation of how we got to each number in [Polish Notation][PN]. With the example above, while we are dealing with the integer vector `2 3 4` we start with the representation `'2' '3' '4'` and then create the derived representations `'+ 2 3' '4'`, `'+ 2 4' '3'` and `'+ 3 4' '2'`.
 
-The code for the `Solve`, `Combine`, `IsEmpty`, `StudySolvability` and `Plot` functions can be found in [this GitHub gist][gh-gist] which I also include below:
+The code for the `Solve`, `Combine`, `IsEmpty`, `StudySolvability` and `Plot` functions can be found in [this GitHub gist][gh-gist] which I also include at the end of the blog post.
+
+Were you expecting that there were so many targets better than $24$? Let me know your thoughts in the comment section below.
+
+See you next time!
 
 <script src="https://gist.github.com/RojerGS/1a6543226fdd8d51dc4c669acabf76ad.js"></script>
 

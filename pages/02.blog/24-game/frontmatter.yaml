@@ -2,7 +2,7 @@ slug: 24-game
 date: 12-07-2020
 published: true
 metadata:
-    description: 'The "Game of 24" is a well-known maths game for kids and in this post we study it in depth.'
+    description: 'The "24 game" is a well-known maths game for kids and in this post we study it in depth.'
 taxonomy:
     category: blogpost
     tag: [mathematics, programming, apl, visualization, arithmetics]
