@@ -23,7 +23,7 @@ b = 2^{k_1} + 2^{k_2} + \cdots + 2^{k_n}
 and then having 
 
 \[
-ab = a(2^{k_1} + 2^{k_2} + \cdots + 2^{k_n}) = a2^{k_1} + a2^{k_2} + \cdots + a2^{k_n}.
+a\times b = a(2^{k_1} + 2^{k_2} + \cdots + 2^{k_n}) = a2^{k_1} + a2^{k_2} + \cdots + a2^{k_n}.
 \]
 
-If I muster the courage to do it, I might also redo the functions in the [post about Kleen recursive functions](../kleene-recursion), in Haskell...
+If I muster the courage to do it, I might also redo the functions in the [post about Kleene recursive functions](../kleene-recursion), in Haskell...
