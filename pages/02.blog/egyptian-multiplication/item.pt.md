@@ -1,5 +1,7 @@
 ---
-title: O método de multiplicação egípcio em Haskell
+title: O método egípcio de multiplicação em Haskell
+metadata:
+    description: "Um artigo curto sobre um método antigo de programação..."
 ---
 
 Inovação é algo incrível e coisas novas são sempre interessantes... mas isso não quer dizer que as coisas antigas não tenham valor!

@@ -1,0 +1,7 @@
+slug: random-walk-simulations
+date: 26-10-2017
+taxonomy:
+    category: blogpost
+    tag: [mathematics, programming, random walks, simulation, visualization, pygame, python]
+metadata:
+    description: "Check what a 2D random walk really is and how it looks like."
