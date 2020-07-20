@@ -15,19 +15,14 @@ Is there any initial number configuration and/or set of moves for which it is po
 
 !!! Give it some thought... and most important of all, try it for real! Let me know how it went in the comment section below ;)
 
-<details>
-<summary>Hint 1</summary>
-The answer is "no". Can you show why?
-</details>
+!!!! **Hint**: the answer is "no". Can you show why?
+
+!!!! **Hint**: look for an invariant of the game! That is, find a property of the game that does <b> not </b> change when Mary and John play it.
+
+### Solution
 
 <details>
-<summary>Hint 2</summary>
-Look for an invariant of the game! That is, find a property of the game that does <b> not </b> change when Mary and John play it.
-</details>
-
-<details>
-<summary>### Solution</summary>
-
+<summary>Solution spoiler!</summary>
 No, there is no initial configuration nor set of moves that allows us to reach the goal. Note how $x \equiv x^3 \mod 2$. That is, $x $ has the same parity as $x^3$. Let us assume that, at a given point, all the integers in the bag add up to $S $. We show that the parity of the sum of all integers in the bag doesn't change when we remove the cards $a,b $ and then add the card $a^3+b^3$:
 
 \[
