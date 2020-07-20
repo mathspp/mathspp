@@ -1,5 +1,5 @@
 ---
-title: P018 - chapéus num círculo
+title: "Problema #018 - chapéus num círculo"
 date: 24-05-2020
 slug: circle-of-hats
 taxonomy:

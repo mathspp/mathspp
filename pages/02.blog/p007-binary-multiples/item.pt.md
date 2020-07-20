@@ -1,5 +1,5 @@
 ---
-title: P007 - múltiplos binários
+title: "Problema #007 - múltiplos binários"
 date: 26-02-2018
 slug: binary-multiples
 taxonomy:

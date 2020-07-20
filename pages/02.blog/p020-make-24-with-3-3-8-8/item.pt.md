@@ -1,5 +1,5 @@
 ---
-title: P020 - Construir 24 com 3 3 8 8
+title: "Problema #P020 - construir 24 com 3 3 8 8"
 metadata:
     description: Como é que podes usar os números 3 3 8 8 para fazer 24..?
 ---

@@ -1,5 +1,5 @@
 ---
-title: P018 - circle of hats
+title: "Problem #018 - circle of hats"
 date: 24-05-2020
 slug: circle-of-hats
 taxonomy:
