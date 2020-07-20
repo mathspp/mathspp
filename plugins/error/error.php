@@ -58,6 +58,7 @@ class ErrorPlugin extends Plugin
             // If none provided use built in error page.
             $page = new Page;
             $page->init(new \SplFileInfo(__DIR__ . '/pages/error.md'));
+            $page->title($this->grav['language']->translate('PLUGIN_ERROR.ERROR') . ' ' . $page->header()->http_response_code);
         }
 
         $event->page = $page;

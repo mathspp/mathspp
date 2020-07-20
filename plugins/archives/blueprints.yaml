@@ -1,5 +1,7 @@
 name: Archives
-version: 2.0.0
+version: 2.0.1
+type: plugin
+slug: archives
 description: The **Archives** plugin creates links for pages grouped by month/year
 icon: university
 author:
