@@ -47,6 +47,8 @@ EOF
 
     protected function serve()
     {
+        require_once __DIR__ . '/../vendor/autoload.php';
+
         $plugin = new GitSync();
         $this->output->writeln('');
 
@@ -68,9 +70,8 @@ EOF
             throw new RuntimeException('git root and repositoryPath do not match', 50);
         }
 
-        // needed to prevent out put in logs:
+        // needed to prevent output in logs:
         $password = Helper::decrypt($plugin->getPassword() ?? '');
-
 
         $this->console_header('local git config:');
         $this->console_log(

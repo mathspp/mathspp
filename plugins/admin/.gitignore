@@ -1,0 +1,15 @@
+themes/grav/.sass-cache
+.DS_Store
+crowdin.yaml
+
+# Node Modules
+**/node_modules/**
+themes/grav/js/admin.js
+themes/grav/js/vendor.js
+themes/grav/js/*.map
+.idea
+
+tests/_output/*
+tests/_support/_generated/*
+tests/cache/*
+tests/error.log

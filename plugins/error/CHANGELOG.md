@@ -1,3 +1,11 @@
+# v1.7.0
+## 07/01/2020
+
+1. [](#new)
+    * Require Grav v1.6
+1. [](#bugfix)
+    * Added trnaslated title programmatically [#40](https://github.com/getgrav/grav-plugin-error/pull/40)
+    
 # v1.6.2
 ## 05/09/2019
 
