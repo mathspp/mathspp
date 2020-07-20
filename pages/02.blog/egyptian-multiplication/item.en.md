@@ -14,6 +14,6 @@ Very recently I watched a [Youtube video](https://www.youtube.com/watch?v=CwT9oZ
 
 (The implementation only works for non-negative integers)
 
-The method is quite simple and works because of the binary expansion of a number. Basically, if you want to calculate $a \times b$, either $b$ is even or odd. If $b$ is even, just cut $b$ in half and duplicate $a$ to compute $(2a)\times(\frac{b}2)$. If $b$ is odd, then $ab = a + (2a)\times\frac{b-1}2$.. Another way of thinking about this is by writing $b$ in the form $$b = 2^{k_1} + 2^{k_2} + \cdots + 2^{k_n}$$ and then having $$ab = a(2^{k_1} + 2^{k_2} + \cdots + 2^{k_n}) = a2^{k_1} + a2^{k_2} + \cdots + a2^{k_n}$$.
+The method is quite simple and works because of the binary expansion of a number. Basically, if you want to calculate $a \times b$, either $b$ is even or odd. If $b$ is even, just cut $b$ in half and duplicate $a$ to compute $(2a)\times(\frac{b}2)$. If $b$ is odd, then $ab = a + (2a)\times\frac{b-1}2$.. Another way of thinking about this is by writing $b$ in the form \[b = 2^{k_1} + 2^{k_2} + \cdots + 2^{k_n}\] and then having \[ab = a(2^{k_1} + 2^{k_2} + \cdots + 2^{k_n}) = a2^{k_1} + a2^{k_2} + \cdots + a2^{k_n}.\]
 
 If I muster the courage to do it, I might also redo the functions in the [post about Kleen recursive functions](../kleene-recursion), in Haskell...
