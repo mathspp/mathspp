@@ -2,7 +2,7 @@
 title: "Problem #002 - a bag full of numbers"
 ---
 
-Two friends were bored and decided to play a game... a mathematical game!
+Two friends were bored and decided to play a game... a mathematical game with a paper bag!
 
 ===
 

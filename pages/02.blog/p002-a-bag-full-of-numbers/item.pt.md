@@ -4,7 +4,7 @@ metadata:
     description: "Neste artigo tenho um problema interessantíssimo para te desafiar..."
 ---
 
-Dois amigos estavam aborrecidos e decidiram jogar um jogo! Um jogo matemático, claro.
+Dois amigos estavam aborrecidos e decidiram jogar um jogo! Um jogo matemático com um saco de papel, claro.
 
 ===
 
