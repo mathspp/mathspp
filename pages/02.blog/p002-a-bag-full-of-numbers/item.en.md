@@ -25,7 +25,8 @@ The answer is "no". Can you show why?
 Look for an invariant of the game! That is, find a property of the game that does <b> not </b> change when Mary and John play it.
 </details>
 
-### Solution
+<details>
+<summary>### Solution</summary>
 
 No, there is no initial configuration nor set of moves that allows us to reach the goal. Note how $x \equiv x^3 \mod 2$. That is, $x $ has the same parity as $x^3$. Let us assume that, at a given point, all the integers in the bag add up to $S $. We show that the parity of the sum of all integers in the bag doesn't change when we remove the cards $a,b $ and then add the card $a^3+b^3$:
 
@@ -37,3 +38,4 @@ Thus we can't end up only with $73$ in the bag, as everything in the bag should 
 
 Bonus question: find a solution that would still work for $2, 74, 308$ (and for an infinity of even numbers), even though those are even.
 Let me know what you think!
+</details>
