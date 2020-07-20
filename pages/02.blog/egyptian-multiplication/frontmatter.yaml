@@ -1,0 +1,7 @@
+slug: egyptian-multiplication
+date: 25-10-2017
+taxonomy:
+    category: blogpost
+    tag: [mathematics, algorithms, haskell, programming]
+metadata:
+    description: "A short post about an ancient multiplication method."
