@@ -37,4 +37,4 @@ Thus we can't end up only with $73$ in the bag, as everything in the bag should 
 
 Bonus question: find a solution that would still work for $2, 74, 308$ (and for an infinity of even numbers), even though those are even.
 
-Let me know what you think!
+Let me know what you think in the comment section below!
