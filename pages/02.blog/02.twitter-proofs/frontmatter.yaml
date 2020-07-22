@@ -4,5 +4,5 @@ content:
     order:
         by: date
         dir: desc
-hero-image: Twitter_Logo_Blue.png
+hero-image: twitter_bg.png
 hero_classes: parallax overlay-dark-gradient text-light
