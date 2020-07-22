@@ -30,7 +30,9 @@
         {% embed 'partials/layout.html.twig' %}
             {% block item %}
                 {% include 'partials/blog-item.html.twig' %}
-
+                {% if config.plugins.jscomments.enabled %}
+                    {{ jscomments()|raw }}
+                {% endif %}
                 {% include 'partials/comments.html.twig' with {'page': page} %}
             {% endblock %}
             {% block sidebar %}
