@@ -1,6 +1,6 @@
 ---
 title: "Problem #001 - a dancing triangle"
-date: 06-11-2017
+date: 05-11-2017
 slug: a-dancing-triangle
 taxonomy:
     category: blogpost
