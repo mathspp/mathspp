@@ -3,7 +3,7 @@ menu: Provas em tweets
 title: Provas em tweets
 ---
 
-# Provas de Twitter
+# Provas em tweets
 
 Aqui encontras todos os artigos com **provas em tweets**!
 
