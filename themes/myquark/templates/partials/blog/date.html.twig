@@ -4,6 +4,7 @@
         <i class="fa fa-calendar"></i> {{ page.date|date(system.pages.dateformat.short) }}
     </time>
     {% if show_views %}
-    &nbsp;<i class="fas fa-eye"></i> {{ viewcounts[page.route] }}
+        &nbsp;<i class="fas fa-eye"></i> {{ viewcounts[page.route] }}
     {% endif %}
+    <!-- <i class="fas fa-comment-dots"></i> {{ comments_in_page }} -->
 </span>

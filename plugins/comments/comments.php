@@ -74,7 +74,13 @@ class CommentsPlugin extends Plugin
 
     public function onTwigSiteVariables() {
         $this->grav['twig']->enable_comments_plugin = $this->enable;
-        $this->grav['twig']->comments = $this->fetchComments();
+        $comments = $this->fetchComments();
+        $this->grav['twig']->comments = $comments;
+        try {
+            $this->grav['twig']->twig_vars['comments_in_page'] = count($comments);
+        } catch (\Exception $e) {
+            $this->grav['twig']->twig_vars['comments_in_page'] = 0;
+        }
     }
 
     /**
@@ -126,7 +132,7 @@ class CommentsPlugin extends Plugin
         $uri = $this->grav['uri'];
 
         //init cache id
-        $this->comments_cache_id = md5('comments-data' . $cache->getKey() . '-' . $uri->url());
+        $this->comments_cache_id = md5('comments-data' . $cache->getKey() . '-' . $uri->url() . $this->grav['language']->getLanguage());
     }
 
     /**
