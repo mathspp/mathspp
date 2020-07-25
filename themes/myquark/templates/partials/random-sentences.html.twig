@@ -1,9 +1,7 @@
-<section id="random-sentences" class="section">
-    <div style="text-align:center;">
-        <!-- https://learn.getgrav.org/16/cookbook/twig-recipes#picking-a-random-item-from-a-translated-array -->
-        {% set langobj = grav['language'] %}
-        {% set curlang = langobj.getLanguage() %}
-        {% set sentences = langobj.getTranslation(curlang, 'RANDOM_SENTENCES', true) %}
-        <p style="font-size:80%"> {{ random(sentences) }} </p>
-    </div>
-</section>
+<div id="random-sentences" style="text-align:center; margin-bottom:-16px">
+    <!-- https://learn.getgrav.org/16/cookbook/twig-recipes#picking-a-random-item-from-a-translated-array -->
+    {% set langobj = grav['language'] %}
+    {% set curlang = langobj.getLanguage() %}
+    {% set sentences = langobj.getTranslation(curlang, 'RANDOM_SENTENCES', true) %}
+    <p style="font-size:80%"> {{ random(sentences) }} </p>
+</div>

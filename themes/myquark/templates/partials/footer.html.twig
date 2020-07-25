@@ -15,9 +15,11 @@
 }
 </style>
 
-<section id="footer" class="section bg-gray" style="padding:5px">
+<section id="footer" class="section bg-gray" style="padding:10px;">
 
-    <div class="langswitcher" style="text-align:center;">
+    {% include 'partials/random-sentences.html.twig' %}
+
+    <div class="langswitcher" style="text-align:center">
         <p>
         {% for language in langswitcher.languages %}
 
