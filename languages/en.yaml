@@ -14,3 +14,5 @@ RANDOM_SENTENCES:
  - "Russian mathematician Grigori Perelman <a href='https://en.wikipedia.org/wiki/Grigori_Perelman#Fields_Medal_and_Millennium_Prize'refused a $1,000,000 prize</a> after solving one of the seven <a href='https://en.wikipedia.org/wiki/Millennium_Prize_Problems'>Millenium Prize Problems</a>."
  - "I hypothesize that somewhere on Earth, someone is reading this sentence."
  - "Contribute with random sentences <a href='https://github.com/RojerGS/mathspp/blob/master/languages/en.yaml'>here</a>!"
+ - "<code>print(\"https://mathspp.com\")</code>"
+ - "<a href='https://tio.run/##HYpBCoBADAMfVJoXhHyk7EEFQQQPgu@v2Z3DEMLs73Y953fc3VGZypJCOSEHba@hhPxbQEQUNGjmxmoT5Gocdf8'><code>+[-->-[>>+>-----<<]<--<---]>-.>>>+.>>..+++[.>]<<<<.+++.------.<<-.>>>>+.</code></a>"
