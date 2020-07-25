@@ -1,10 +1,5 @@
 ---
 title: Py-don't abuse the walrus operator
-slug: walrus-operator
-date: 17-03-2020
-published: false
-taxonomy:
-    tag: [pydont, python, programming]
 ---
 
 Don't use the walrus operator `:=` in convoluted ways!

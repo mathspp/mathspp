@@ -1,10 +1,7 @@
 ---
 title: Py-don't uses inteiros em vez de valores lógicos
-date: 08-03-2020
-published: false
-slug: ints-as-booleans
-taxonomy:
-    tag: [pydont, programming, python]
+metadata:
+    description: "Neste py-don't vou falar do que é que 'Truthy' e 'Falsy' são em Python."
 ---
 
 Se quiseres criar um ciclo `while` infinito, não faças isto:
@@ -35,7 +32,7 @@ while (1) {
 
 ou então porque os objetos em Python podem ser tratados como valores lógicos implicitamente, o que significa que valores como números inteiros, _strings_ e listas podem ser usadas nas condições dos `if`s e `while`s.
 
-Há que relembrar que [_explícito é melhor que implícito_][zen-of-python] e não estamos a ganhar nada por estar a usar esta conversão implícita, portanto podemos perfeitamente não a usar.
+Há que relembrar que [_explícito é melhor que implícito_][zen-of-python "Explicit is better than implicit."] e não estamos a ganhar nada por estar a usar esta conversão implícita, portanto podemos perfeitamente não a usar.
 
 Esta funcionalidade que converte objetos em valores lógicos implicitamente, por vezes referida como o valor de _truthiness_ (que advém de _truth_) de um objeto, não foi criada para que possamos substituir as constantes `True` e `False`. Quando queremos escrever um valor lógico específico, devemos usar `True` ou `False`.
 

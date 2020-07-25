@@ -1,10 +1,7 @@
 ---
 title: Py-don't uses expressões condicionais para devolver valores lógicos
-slug: if-else-return-booleans
-published: false
-date: 14-03-2020
-taxonomy:
-    tag: [pydont, python, programming]
+metadata:
+    description: "Neste py-don't falo de um padrão comum que tem a ver com valores lógicos."
 ---
 
 Não uses uma expressão `if-else` para devolver `True` ou `False`, i.e. não faças algo como

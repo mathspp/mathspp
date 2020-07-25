@@ -1,10 +1,7 @@
 ---
 title: Py-don't abuses do operador `:=`
-slug: walrus-operator
-date: 17-03-2020
-published: false
-taxonomy:
-    tag: [pydont, python, programming]
+metadata:
+    description: "Neste py-don't vou falar do operador := e das suas não-utilizações."
 ---
 
 Não uses o _"operador da morsa"_ `:=` de forma retorcida!

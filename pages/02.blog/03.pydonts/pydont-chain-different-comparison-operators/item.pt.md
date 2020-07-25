@@ -1,10 +1,7 @@
 ---
 title: Py-don't faças a contração de comparações diferentes
-slug: chain-different-comparison-operators
-date: 15-03-2020
-published: false
-taxonomy:
-    tag: [pydont, python, programming]
+metadata:
+    description: "Neste py-don't vou falar um pouco sobre encadear várias comparações."
 ---
 
 Não faças a contração de comparações que não sejam iguais, i.e. evita coisas como:

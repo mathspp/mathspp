@@ -1,10 +1,5 @@
 ---
 title: Py-don't use integers as booleans
-date: 08-03-2020
-published: false
-slug: ints-as-booleans
-taxonomy:
-    tag: [pydont, programming, python]
 ---
 
 If you want to create an infinite `while` loop, don't do the following:

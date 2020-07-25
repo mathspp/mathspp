@@ -1,10 +1,5 @@
 ---
 title: Py-don't use an if-else to return two booleans
-slug: if-else-return-booleans
-date: 14-03-2020
-published: false
-taxonomy:
-    tag: [pydont, python, programming]
 ---
 
 Don't use an `if-else` statement to decide whether to return `True` or `False`, i.e. don't do something like

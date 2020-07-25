@@ -1,10 +1,5 @@
 ---
 title: Py-don't chain different comparison operators
-slug: chain-different-comparison-operators
-date: 15-03-2020
-published: false
-taxonomy:
-    tag: [pydont, python, programming]
 ---
 
 Don't chain comparisons in Python if the chained operators are not equal, i.e. avoid things like:
