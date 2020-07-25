@@ -21,6 +21,8 @@ Esta pode não ser a melhor solução para ti... Por exemplo, esta solução nem
 
 ![two wooden wheels against a wall](wheel.jpg "Photo by Jon Cartagena on Unsplash")
 
+Este artigo vai ter um pouco menos de código do que os _py-don't_ usuais e vai ter um pouco mais de palavras... Para além disso, este artigo vai ser aplicável a uma grande quantidade de linguagens de programação, e não só a Python...
+
 Eu diria que uma solução mais _pythonica_ seria:
 
 ```py
@@ -51,7 +53,7 @@ De modo semelhante, implementar um tipo de dados para matrizes numéricas com to
 
 Concordas comigo? Faz-me saber na secção de comentários em baixo.
 
-E não te esqueças de partilhar isto com todos os teus amigos que sabem/estão a aprender Python!
+E não te esqueças de partilhar isto com todos os teus amigos que sabem/estão a aprender a programar em _qualquer_ linguagem!
 
 [py3.8 docs]: https://docs.python.org/3/library/index.html
 [argparse howto]: https://docs.python.org/3/howto/argparse.html

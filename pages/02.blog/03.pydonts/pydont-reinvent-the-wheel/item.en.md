@@ -19,7 +19,9 @@ This might not be the best solution for you, it doesn't even handle Windows path
 
 ![two wooden wheels against a wall](wheel.jpg "Photo by Jon Cartagena on Unsplash")
 
-I would argue a more pythonic solution would be:
+This _py-don't_ will be slightly different from usual, with a bit less code and a bit more words; not only that, but today's _py-don't_ applies to pretty much every programming language out there...
+
+Going back to the snippet in the beginning of the post, I would argue a better solution would be:
 
 ```py
 from pathlib import Path
@@ -38,7 +40,7 @@ I have found myself reinventing the wheel left and right for all sorts of things
 
 Maybe you think importing from the standard library or from some other packages you installed separately makes your code less pure but you also need to remember that [_practicality beats purity_][zen-of-python].
 
-You already got the gist of this py-don't, but I will give a couple more examples of situations in which it is good/bad to reinvent the wheel, just to get my point across.
+You already got the gist of this _py-don't_, but I will give a couple more examples of situations in which it is good/bad to reinvent the wheel, just to get my point across.
 
 Let's talk about parsing command-line arguments. Writing a Python program to parse command-line arguments is a great exercise for you to flex your Python skills! But if you are writing a Python program that does some task X or Y and you want it to be usable from the command-line, then what do you think sounds more productive?
 
@@ -49,7 +51,7 @@ Similarly, writing a fully-functional numerical matrix data type is not somethin
 
 Do you agree with me? Let me know in the comments below.
 
-And don't forget to share this with all your friends who know/are learning Python!
+And don't forget to share this with all your friends who know/are learning _any_ programming language!
 
 [py3.8 docs]: https://docs.python.org/3/library/index.html
 [argparse howto]: https://docs.python.org/3/howto/argparse.html
