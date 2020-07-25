@@ -19,7 +19,7 @@ This might not be the best solution for you, it doesn't even handle Windows path
 
 ![two wooden wheels against a wall](wheel.jpg "Photo by Jon Cartagena on Unsplash")
 
-This _py-don't_ will be slightly different from usual, with a bit less code and a bit more words; not only that, but today's _py-don't_ applies to pretty much every programming language out there...
+This _py-don't_ will be slightly different from usual, with a bit less code and a bit more words; not only that, but today's _py-don't_ applies to pretty much every programming language out there... Today I am going to talk about solutions that are suboptimal because _we_ wrote them.
 
 Going back to the snippet in the beginning of the post, I would argue a better solution would be:
 

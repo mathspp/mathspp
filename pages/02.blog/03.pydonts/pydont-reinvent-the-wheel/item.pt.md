@@ -21,9 +21,9 @@ Esta pode não ser a melhor solução para ti... Por exemplo, esta solução nem
 
 ![two wooden wheels against a wall](wheel.jpg "Photo by Jon Cartagena on Unsplash")
 
-Este artigo vai ter um pouco menos de código do que os _py-don't_ usuais e vai ter um pouco mais de palavras... Para além disso, este artigo vai ser aplicável a uma grande quantidade de linguagens de programação, e não só a Python...
+Este artigo vai ter um pouco menos de código do que os _py-don't_ usuais e vai ter um pouco mais de palavras... Para além disso, este artigo vai ser aplicável a uma grande quantidade de linguagens de programação, e não só a Python... Hoje vou falar de soluções que são subóptimas porque foram programadas por _nós_.
 
-Eu diria que uma solução mais _pythonica_ seria:
+De facto, voltando ao exemplo inicial, eu diria que uma solução mais _pythonica_ seria:
 
 ```py
 from pathlib import Path
