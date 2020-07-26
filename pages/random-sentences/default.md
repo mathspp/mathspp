@@ -3,10 +3,12 @@
 {% set sentences = langobj.getTranslation(curlang, 'RANDOM_SENTENCES', true) %}
 
 {% if curlang == 'en' %}
-<h1>Random sentences</h1>
+{% page.title = "Random sentences" %}
 {% else %}
-<h1>Frases aleatórias</h1>
+{% page.title = "Frases aleatórias" %}
 {% endif %}
+
+<h1> {{ page.title }} </h1>
 
 <ul>
 {% for sentence in sentences %}
