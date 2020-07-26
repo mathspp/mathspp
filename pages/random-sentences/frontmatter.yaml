@@ -2,3 +2,4 @@ slug: random-sentences
 process:
     twig: true
     markdown: false
+cache_enable: false
