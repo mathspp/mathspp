@@ -7,7 +7,7 @@ title: Random sentences
 a.anchor {
     display: block;
     position: relative;
-    top: -200px;
+    top: -46px;
     visibility: hidden;
 }
 </style>
@@ -20,6 +20,6 @@ a.anchor {
 
 <ul>
 {% for sentence in sentences %}
-    <li><p id="s{{loop.index}}"> {{ sentence }} </p></li>
+    <li><a class="anchor" id="s{{loop.index}}"></a><p> {{ sentence }} </p></li>
 {% endfor %}
 </ul>
