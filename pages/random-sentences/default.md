@@ -4,3 +4,4 @@
 
 {% for sentence in sentences %}
     <p> {{ sentence }} </p>
+{% endfor %}
