@@ -10,6 +10,6 @@ title: Frases aleatórias
 
 <ul>
 {% for sentence in sentences %}
-    <li id="s{{loop.index}}"><p> {{ sentence }} </p></li>
+    <li><p id="s{{loop.index}}"> {{ sentence }} </p></li>
 {% endfor %}
 </ul>
