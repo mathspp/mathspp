@@ -10,6 +10,6 @@ title: Random sentences
 
 <ul>
 {% for sentence in sentences %}
-    <li><p> {{ sentence }} </p></li>
+    <li id="s{{loop.index}}"><p> {{ sentence }} </p></li>
 {% endfor %}
 </ul>
