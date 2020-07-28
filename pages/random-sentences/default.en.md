@@ -2,7 +2,7 @@
 title: Random sentences
 ---
 
-<link rel="stylesheet" type="text/css" href="highlighting.css">
+<link rel="stylesheet" type="text/css" href="https://mathspp.com/random-sentences/highlighting.css">
 
 <h1> {{ page.title }} </h1>
 
@@ -18,4 +18,4 @@ This page lists <i>all</i> the sentences that can randomly appear in the <a href
 {% endfor %}
 </ol>
 
-<script type="text/javascript" src="highlighting.js"></script>
+<script type="text/javascript" src="https://mathspp.com/random-sentences/highlighting.js"></script>
