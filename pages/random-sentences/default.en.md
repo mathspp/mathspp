@@ -14,7 +14,7 @@ This page lists <i>all</i> the sentences that can randomly appear in the <a href
 
 <ol>
 {% for sentence in sentences %}
-    <li><a class="anchor" id="{{loop.index}}"></a><p id="p{{loop.index}}"> {{ sentence }} </p></li>
+    <li id="li{{loop.index}}"><a class="anchor" id="{{loop.index}}"></a> {{ sentence }} </li>
 {% endfor %}
 </ol>
 
