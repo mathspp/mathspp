@@ -10,6 +10,9 @@ a.anchor {
     top: -46px;
     visibility: hidden;
 }
+
+@keyframes fade{from{background:yellow}}
+.highlight{animation:fade 3s}
 </style>
 
 <h1> {{ page.title }} </h1>
@@ -18,8 +21,20 @@ a.anchor {
 {% set curlang  = langobj.getLanguage() %}
 {% set sentences = langobj.getTranslation(curlang, 'RANDOM_SENTENCES', true) %}
 
-<ul>
+<ol>
 {% for sentence in sentences %}
-    <li><a class="anchor" id="s{{loop.index}}"></a><p> {{ sentence }} </p></li>
+    <li><a class="anchor" id="{{loop.index}}"></a><p id="p{{loop.index}}"> {{ sentence }} </p></li>
 {% endfor %}
-</ul>
+</ol>
+
+<script type="text/javascript">
+    // cf. https://chat.stackexchange.com/transcript/message/55084622#55084622
+    var highlight = function() {
+        var id = window.location.hash.split("?")[0].slice(1);
+        if (id) {
+            document.getElementById("p"+id).classList.add("highlight");
+        }
+    }
+    window.onhashchange = highlight;
+    highlight();
+</script>
