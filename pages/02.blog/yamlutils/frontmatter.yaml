@@ -1,0 +1,10 @@
+date: 28-07-2020
+metadata:
+    og:image: https://mathspp.com/blog/yamlutils/gears.jpg
+slug: yamlutils
+taxonomy:
+    category: blogpost
+    tag:
+      - programming
+      - python
+      - scripting
