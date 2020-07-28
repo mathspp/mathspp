@@ -54,8 +54,7 @@ This page lists <i>all</i> the sentences that can randomly appear in the <a href
     var highlight = function() {
         var id = window.location.hash.split("?")[0].slice(1);
         if (id) {
-            var p = document.getElementById("p"+id);
-            p.innerHTML = "<span class='highlight'>" + p.innerHTML + "</span>";
+            var p = document.getElementById("p"+id).classList.add("highlight");
         }
     }
     window.onhashchange = highlight;
