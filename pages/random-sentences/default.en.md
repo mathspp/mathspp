@@ -12,7 +12,7 @@ a.anchor {
 }
 
 @keyframes fade { from {
-  background: #ff07
+  background: #ff07;
   box-shadow: 0 0 1em yellow;
   border-radius: 1em;
 }}
