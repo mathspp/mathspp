@@ -12,24 +12,26 @@ a.anchor {
 }
 
 @keyframes fade {
-  0% {
-    background: #ff07;
-    box-shadow: 0 0 1em yellow;
-    border-radius: 1em;
-  }
-  50% {
-    background: #ff07;
-    box-shadow: 0 0 1em yellow;
-    border-radius: 1em;
-  }
+    0% {
+        background: #ff07;
+        box-shadow: 0 0 1em yellow;
+        border-radius: 1em;
+    }
+    50% {
+        background: #ff07;
+        box-shadow: 0 0 1em yellow;
+        border-radius: 1em;
+    }
 }
 
 .highlight {
-  animation: fade 2s;
-  padding-left: 2em;
-  margin-left: -2em;
-  padding-right: 2em;
-  margin-right: -2em;
+    animation: fade 2s;
+    padding-left: 2em;
+    margin-left: -2em;
+    padding-right: 2em;
+    margin-right: -2em;
+    position:relative;
+    z-index:-1;
 }
 </style>
 
