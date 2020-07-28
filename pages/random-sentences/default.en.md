@@ -11,18 +11,25 @@ a.anchor {
     visibility: hidden;
 }
 
-@keyframes fade { from {
-  background: #ff07;
-  box-shadow: 0 0 1em yellow;
-  border-radius: 1em;
-}}
+@keyframes fade {
+  0% {
+    background: #ff07;
+    box-shadow: 0 0 1em yellow;
+    border-radius: 1em;
+  }
+  50% {
+    background: #ff07;
+    box-shadow: 0 0 1em yellow;
+    border-radius: 1em;
+  }
+}
 
 .highlight {
   animation: fade 2s;
   padding-left: 2em;
   margin-left: -2em;
-  padding-right: 1em;
-  margin-right: -1em;
+  padding-right: 2em;
+  margin-right: -2em;
 }
 </style>
 
