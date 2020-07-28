@@ -1,7 +1,7 @@
 ---
-title: Py-don't abuses do operador `:=`
 metadata:
-    description: "Neste py-don't vou falar do operador := e das suas não-utilizações."
+  description: Neste py-don't vou falar do operador := e das suas não-utilizações.
+title: Py-don't abuses do operador `:=`
 ---
 
 Não uses o _"operador da morsa"_ `:=` de forma retorcida!

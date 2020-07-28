@@ -1,10 +1,6 @@
 ---
-title: "Py-don't desrespeites o Zen do Python"
-date: 06-03-2020
-slug: zen-of-python
-taxonomy:
-    category: blogpost
-    tag: [pydont, programming, python]
+taxonomy: {}
+title: Py-don't desrespeites o Zen do Python
 ---
 
 [_Py-don'ts_][pydont] são anti-dicas para escrever bom código Python. Por vezes, aprender o que é bom não chega. Há que comparar as coisas boas com as más para aprender com o contraste!

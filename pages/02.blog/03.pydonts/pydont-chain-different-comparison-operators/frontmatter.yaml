@@ -1,7 +1,11 @@
-slug: chain-different-comparison-operators
-published: false
-taxonomy:
-    category: blogpost
-    tag: [pydont, python, programming]
 metadata:
-    description: "In this py-don't I will tell you about the chaining of several comparison operators."
+  description: In this py-don't I will tell you about the chaining of several comparison
+    operators.
+published: false
+slug: chain-different-comparison-operators
+taxonomy:
+  category: blogpost
+  tag:
+  - pydont
+  - python
+  - programming
