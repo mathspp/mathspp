@@ -41,7 +41,8 @@ a.anchor {
     var highlight = function() {
         var id = window.location.hash.split("?")[0].slice(1);
         if (id) {
-            document.getElementById("p"+id).classList.add("highlight");
+            var p = document.getElementById("p"+id);
+            p.innerHTML = "<span class='highlight'>" + p.innerHTML + "</span>";
         }
     }
     window.onhashchange = highlight;
