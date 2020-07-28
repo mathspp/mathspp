@@ -1,10 +1,5 @@
 ---
 title: Fractais e o conjunto de Mandelbrot
-date: 13-10-2017
-slug: fractals-and-mandelbrot-set
-taxonomy:
-    category: blogpost
-    tag: [mathematics, programming, python, fractals, visualization, pygame]
 ---
 
 Sempre achei piada ao conceito de fractal. São objetos muito elegantes, têm uma noção de infinito embutida neles e, ainda para mais, não fazem sentido (onde é que já se ouviu falar de _auto-semelhança_?). Como é que eu poderia não os apreciar..?

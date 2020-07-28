@@ -1,10 +1,5 @@
 ---
 title: Cópia do Minesweeper
-slug: minesweeper-remake
-date: 13-10-2017
-taxonomy:
-    category: blogpost
-    tag: [programming, python, pygame, games]
 ---
 
 O jogo Minesweeper deve ser um dos mini-jogos mais famosos de todos os tempos e na minha mocidade gastei algumas manhãs de domingo a jogar Minesweeper num computador velhinho com Windows XP...

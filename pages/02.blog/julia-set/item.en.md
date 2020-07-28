@@ -1,12 +1,3 @@
----
-title: Fractals and the filled Julia set
-slug: julia-set
-date: 17-10-2017
-taxonomy:
-    category: blogpost
-    tags: [mathematics, programming, python, fractals, visualization, pygame]
----
-
 The filled Julia set is a really cool fractal that kind of resembles the [Mandelbrot set](https://mathspp.com/blog/mandelbrot)!
 
 ===

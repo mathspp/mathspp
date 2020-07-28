@@ -1,13 +1,6 @@
 ---
-title: Blogue Mathspp
 menu: Blogue
-
-content:
-    items:
-        'taxonomy@.category': blogpost
-    order:
-        by: date
-        dir: desc
+title: Blogue Mathspp
 ---
 
 # Blogue Mathspp

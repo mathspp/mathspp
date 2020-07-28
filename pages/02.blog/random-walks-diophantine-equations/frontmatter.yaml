@@ -1,7 +1,14 @@
-slug: random-walks-diophantine-equations
 date: 29-10-2017
-taxonomy:
-    category: blogpost
-    tag: [mathematics, programming, diophantine equations, matlab, simulation, visualization]
 metadata:
-    description: "In this post I try to solve some diophantine equations with random walks."
+  description: In this post I try to solve some diophantine equations with random
+    walks.
+slug: random-walks-diophantine-equations
+taxonomy:
+  category: blogpost
+  tag:
+  - mathematics
+  - programming
+  - diophantine equations
+  - matlab
+  - simulation
+  - visualization

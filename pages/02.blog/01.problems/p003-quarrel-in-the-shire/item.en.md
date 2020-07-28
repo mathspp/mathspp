@@ -1,5 +1,5 @@
 ---
-title: "Problem #003 - a quarrel in the Shire"
+title: 'Problem #003 - a quarrel in the Shire'
 ---
 
 Gandalf has some Hobbits to appease but his task seems to go on forever. Can you give him a hand..?

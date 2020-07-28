@@ -1,12 +1,3 @@
----
-title: Fractals and the filled Julia set
-slug: julia-set
-date: 17-10-2017
-taxonomy:
-    category: blogpost
-    tags: [mathematics, programming, python, fractals, visualization, pygame]
----
-
 O conjunto preenchido de Julia é um fractal bastante giro que faz lembrar o [conjunto de Mandelbrot](https://mathspp.com/pt/blog/mandelbrot)!
 
 ===

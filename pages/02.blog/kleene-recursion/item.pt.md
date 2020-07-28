@@ -1,10 +1,5 @@
 ---
 title: Funções recursivas e a definição de Kleene
-date: 17-10-2017
-slug: recursion-by-kleene
-taxonomy:
-    category: blogpost
-    tag: [mathematics, recursion, computation theory]
 ---
 
 Neste artigo eu divago um pouco sobre a maneira como um certo matemático definiu o que era uma função recursiva...
