@@ -11,8 +11,17 @@ a.anchor {
     visibility: hidden;
 }
 
-@keyframes fade{from{background:yellow}}
-.highlight{animation:fade 3s}
+@keyframes fade { from {
+  background: #ff07
+  box-shadow: 0 0 1em yellow;
+  border-radius: 1em;
+}
+
+.highlight {
+  animation: fade 2s;
+  padding-left: 2em;
+  margin-left: -2em;
+}
 </style>
 
 <h1> {{ page.title }} </h1>
