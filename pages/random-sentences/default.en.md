@@ -21,6 +21,8 @@ a.anchor {
   animation: fade 2s;
   padding-left: 2em;
   margin-left: -2em;
+  padding-right: 1em;
+  margin-right: -1em;
 }
 </style>
 
