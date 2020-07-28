@@ -1,7 +1,8 @@
 ---
-title: 'YAMLUtils: automatizar tarefas aborrecidas com Python'
 metadata:
-    description: Neste artigo vou mostrar como usei Python para automatizar parte da gestão do meu blogue.
+    description: Neste artigo vou mostrar como usei Python para automatizar parte
+        da gestão do meu blogue.
+title: 'YAMLUtils: automatizar tarefas aborrecidas com Python'
 ---
 
 Se há uma coisa de que gosto em programar em Python é que posso usá-lo para automatizar tarefas aborrecidas. Hoje usei-o para gerir o meu blogue!
@@ -20,7 +21,7 @@ Cada página no meu blogue tem dois ficheiros que lhe correspondem, um para a ve
  - `item.pt.md`
  - `frontmatter.yaml`
 
-Os ficheiros `item` são os que contém o artigo em si e as extensões `.en.md` e `.pt.md` identificam a língua em que o artigo está escrito. O ficheiro `frontmatter.yaml` tem alguns "cabeçalhos" que me ajudam a customizar o blogue e o artigo. Eu defino esses cabeçalhos com uma sintaxe especial chamada [YAML]; com ela posso definir os tags do artigo, o título do artigo, o "slug" (o sufixo do URL, para este artigo em particular é `yamlutils`), a data em que o artigo foi publicado, etc.
+Os ficheiros `item` são os que contêm o artigo em si e as extensões `.en.md` e `.pt.md` identificam a língua em que o artigo está escrito. O ficheiro `frontmatter.yaml` tem alguns "cabeçalhos" que me ajudam a customizar o blogue e o artigo. Eu defino esses cabeçalhos com uma sintaxe especial chamada [YAML]; com ela posso definir os tags do artigo, o título do artigo, o "slug" (o sufixo do URL, para este artigo em particular é `yamlutils`), a data em que o artigo foi publicado, etc.
 
 A maior parte desses cabeçalhos não depende da língua em que o site está a ser visualizado, por exemplo eu uso sempre o mesmo slug:
 
@@ -59,7 +60,7 @@ Mas especificamente, o meu script vai olhar para a pasta que indicares (e depois
  - volta a visitar os ficheiros `*.*.md`, removendo todos os cabeçalhos que já estejam específicados no ficheiro `frontmatter`.
 
 
-### Valeu a pena?
+### Valeu a pena o trabalho?
 
 Sim.
 

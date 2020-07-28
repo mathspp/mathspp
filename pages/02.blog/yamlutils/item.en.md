@@ -1,7 +1,8 @@
 ---
-title: 'YAMLUtils: automating boring stuff with Python'
 metadata:
-    description: In this blog post I talk about how I used Python to spare me from doing annoying repetitive work.
+    description: In this blog post I talk about how I used Python to spare me from
+        doing annoying repetitive work.
+title: 'YAMLUtils: automating boring stuff with Python'
 ---
 
 If there's one thing I like about Python is how I can use it to automate boring tasks for me. Today I used it to help me manage my own blog!
@@ -59,7 +60,7 @@ More specifically, my script looks at the path you specified (and recurses if yo
  - goes back to the `*.*.md` files, removing from their headers everything that was saved in the `frontmatter` file.
 
 
-### Was it worth?
+### Was it worth the trouble?
 
 Yes.
 
