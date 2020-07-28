@@ -2,7 +2,7 @@
 title: Frases aleatórias
 ---
 
-<link rel="stylesheet" type="text/css" href="highlighting.css">
+<link rel="stylesheet" type="text/css" href="https://mathspp.com/random-sentences/highlighting.css">
 
 <h1> {{ page.title }} </h1>
 
@@ -18,4 +18,4 @@ Esta página contém a lista de <i>todas</i> as frases que podem aparecer aleato
 {% endfor %}
 </ol>
 
-<script type="text/javascript" src="highlighting.js"></script>
+<script type="text/javascript" src="https://mathspp.com/random-sentences/highlighting.js"></script>
