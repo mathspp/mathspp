@@ -39,8 +39,6 @@ a.anchor {
 
 Esta página contém a lista de <i>todas</i> as frases que podem aparecer aleatoriamente no <a href='#footer'>rodapé</a> do meu blogue. Podes contribuir para esta lista adicionando mais frases aos ficheiros <a class='external-link no-image' target='_blank' href='https://github.com/rojergs/mathspp/tree/master/languages/'>desta</a> pasta no GitHub.
 
-[contribute]: https://github.com/rojergs/mathspp/tree/master/languages/
-
 {% set langobj  = grav['language'] %}
 {% set curlang  = langobj.getLanguage() %}
 {% set sentences = langobj.getTranslation(curlang, 'RANDOM_SENTENCES', true) %}
