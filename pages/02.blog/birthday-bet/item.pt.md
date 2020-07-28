@@ -1,5 +1,10 @@
 ---
 title: A aposta dos aniversários
+date: 14-06-2018
+slug: the-birthday-bet
+taxonomy:
+    category: blogpost
+    tag: [mathematics, probability, pocket maths]
 ---
 
 Quando eu estava no secundário, tinha um colega que fazia anos no mesmo dia que eu.

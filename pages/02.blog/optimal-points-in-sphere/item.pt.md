@@ -1,5 +1,10 @@
 ---
 title: Um algoritmo de descida do gradiente para distribuir pontos sobre uma esfera
+date: 12-10-2017
+slug: optimal-points-in-sphere
+taxonomy:
+    category: blogpost
+    tag: [geometry, mathematics, optimization, programming, matlab]
 ---
 
 ![Animation of the algorithm](./n6s-2.gif)

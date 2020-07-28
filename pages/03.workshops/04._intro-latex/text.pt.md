@@ -1,5 +1,6 @@
 ---
 title: Introdução ao LaTeX
+menu: Intro Latex
 ---
 
 # Introdução ao LaTeX

@@ -1,14 +1,10 @@
-date: 13-05-2020
-metadata:
-  description: The first post on a series about an APL interpreter written in Python
-process:
-  twig: true
 slug: lsbasi-apl-part1
-taxonomy:
-  category: blogpost
-  tag:
-  - programming
-  - python
-  - interpreters
-  - lsbasi-apl
+date: 13-05-2020
 twig_first: true
+process:
+    twig: true
+taxonomy:
+    category: blogpost
+    tag: [programming, python, interpreters, lsbasi-apl]
+metadata:
+    description: The first post on a series about an APL interpreter written in Python

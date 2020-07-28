@@ -1,14 +1,8 @@
-date: 20-11-2017
-metadata:
-  description: In this post I explain briefly what a regex is and show something interesting
-    I did with them.
-  og:image: https://mathspp.com/blog/regex-printer/regex.png
 slug: regex-printer
+date: 20-11-2017
 taxonomy:
-  category: blogpost
-  tag:
-  - python
-  - grammars
-  - computation theory
-  - parsers
-  - regex
+    category: blogpost
+    tag: [python, grammars, computation theory, parsers, regex]
+metadata:
+    description: "In this post I explain briefly what a regex is and show something interesting I did with them."
+    "og:image": "https://mathspp.com/blog/regex-printer/regex.png"

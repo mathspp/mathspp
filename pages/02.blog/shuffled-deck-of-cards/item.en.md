@@ -1,14 +1,10 @@
 ---
-slug: a-shuffled-deck-of-cards
-taxonomy:
-  tag:
-  - mathematics
-  - probability
-  - what-are-the-odds
-  - programming
-  - python
-  - pocket maths
 title: A shuffled deck of cards?
+slug: a-shuffled-deck-of-cards
+publish_date: 01-08-2020
+taxonomy:
+    category: blogpost
+    tag: [mathematics, probability, what-are-the-odds, programming, python, pocket maths]
 ---
 
 Go grab a deck of cards, a standard $52$ card deck, with $4$ suits and $13$ cards per suit. Just get up and go get it. Now shuffle it.

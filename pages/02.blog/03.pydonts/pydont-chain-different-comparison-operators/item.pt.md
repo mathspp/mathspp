@@ -1,7 +1,7 @@
 ---
-metadata:
-  description: Neste py-don't vou falar um pouco sobre encadear várias comparações.
 title: Py-don't faças a contração de comparações diferentes
+metadata:
+    description: "Neste py-don't vou falar um pouco sobre encadear várias comparações."
 ---
 
 Não faças a contração de comparações que não sejam iguais, i.e. evita coisas como:

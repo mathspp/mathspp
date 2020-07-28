@@ -1,5 +1,10 @@
 ---
 title: Pigeon Pooping Simulator
+date: 13-10-2017
+slug: pigeon-pooping-simulator
+taxonomy:
+    category: blogpost
+    tag: [games, programming, pygame, python]
 ---
 
 This blog post has a single purpose, which is to show you the weird game I made, inspired by Flappy Bird and my crazy English teacher.

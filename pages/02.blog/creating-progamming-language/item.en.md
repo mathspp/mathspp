@@ -1,5 +1,10 @@
 ---
 title: Creating a programming language from scratch
+slug: creating-programming-language-from-scratch
+date: 14-10-2017
+taxonomy:
+    category: blogpost
+    tag: [programming, python, interpreters]
 ---
 
 [![Run on Repl.it](https://repl.it/badge/github/RojerGS/Roj)](https://repl.it/github/RojerGS/Roj)
