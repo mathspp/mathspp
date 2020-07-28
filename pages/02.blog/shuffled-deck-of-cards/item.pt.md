@@ -1,13 +1,13 @@
 ---
 slug: um-baralho-de-cartas-baralhado
 taxonomy:
-  tag:
-  - mathematics
-  - probability
-  - what-are-the-odds
-  - programming
-  - Python
-  - pocket maths
+    tag:
+      - mathematics
+      - probability
+      - what-are-the-odds
+      - programming
+      - Python
+      - pocket maths
 title: Um baralho de cartas... baralhado?
 ---
 

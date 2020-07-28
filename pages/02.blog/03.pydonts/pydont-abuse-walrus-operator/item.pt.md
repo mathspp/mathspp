@@ -1,6 +1,6 @@
 ---
 metadata:
-  description: Neste py-don't vou falar do operador := e das suas não-utilizações.
+    description: Neste py-don't vou falar do operador := e das suas não-utilizações.
 title: Py-don't abuses do operador `:=`
 ---
 

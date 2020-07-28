@@ -1,6 +1,6 @@
 ---
 metadata:
-  description: Como é que podes usar os números 3 3 8 8 para fazer 24..?
+    description: Como é que podes usar os números 3 3 8 8 para fazer 24..?
 title: 'Problema #P020 - construir 24 com 3 3 8 8'
 ---
 

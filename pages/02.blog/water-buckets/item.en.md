@@ -1,6 +1,6 @@
 ---
 metadata:
-  description: This post goes over a well known riddle about measuring quantities.
+    description: This post goes over a well known riddle about measuring quantities.
 title: Water buckets riddle
 ---
 

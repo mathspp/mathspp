@@ -1,7 +1,7 @@
 ---
 metadata:
-  description: Neste artigo explico sucintamente o que são expressões regulares e
-    mostro algo que fiz com elas!
+    description: Neste artigo explico sucintamente o que são expressões regulares
+        e mostro algo que fiz com elas!
 title: Procurar tudo o que uma expressão regular consegue encontrar
 ---
 

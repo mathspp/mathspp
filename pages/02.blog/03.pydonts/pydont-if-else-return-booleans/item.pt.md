@@ -1,6 +1,7 @@
 ---
 metadata:
-  description: Neste py-don't falo de um padrão comum que tem a ver com valores lógicos.
+    description: Neste py-don't falo de um padrão comum que tem a ver com valores
+        lógicos.
 title: Py-don't uses expressões condicionais para devolver valores lógicos
 ---
 

@@ -1,7 +1,7 @@
 ---
 metadata:
-  description: Neste artigo vou mostrar-vos como podemos começar a escrever um interpretador
-    para a linguagem de programação APL.
+    description: Neste artigo vou mostrar-vos como podemos começar a escrever um interpretador
+        para a linguagem de programação APL.
 title: Vamos construir um interpretador para APL - parte 1
 ---
 

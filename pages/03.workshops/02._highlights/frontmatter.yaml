@@ -1,12 +1,12 @@
 class: offset-box
 features:
-- icon: fab fa-python
-  text: Intro to Python with genetic algorithms
-  url: '#intro-python-genetic-algorithms'
-- icon: fas fa-superscript
-  text: Intro to LaTeX
-  url: '#intro-latex'
-- icon: fas fa-puzzle-piece
-  text: Recreational maths
-  url: '#recreational-maths'
+  - icon: fab fa-python
+    text: Intro to Python with genetic algorithms
+    url: '#intro-python-genetic-algorithms'
+  - icon: fas fa-superscript
+    text: Intro to LaTeX
+    url: '#intro-latex'
+  - icon: fas fa-puzzle-piece
+    text: Recreational maths
+    url: '#recreational-maths'
 title: Workshop showcase

@@ -1,7 +1,7 @@
 ---
 metadata:
-  description: Neste artigo vou tentar resolver equações diofantinas com passeios
-    aleatórios.
+    description: Neste artigo vou tentar resolver equações diofantinas com passeios
+        aleatórios.
 title: Resolver equações diofantinas com passeios aleatórios
 ---
 

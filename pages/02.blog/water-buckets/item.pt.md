@@ -1,6 +1,6 @@
 ---
 metadata:
-  description: Neste artigo falo um pouco de uma charada conhecida sobre medir quantidades.
+    description: Neste artigo falo um pouco de uma charada conhecida sobre medir quantidades.
 title: Uma charada com baldes de água
 ---
 

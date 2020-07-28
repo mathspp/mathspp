@@ -1,6 +1,6 @@
 ---
 metadata:
-  description: Neste artigo tenho um problema interessantíssimo para te desafiar...
+    description: Neste artigo tenho um problema interessantíssimo para te desafiar...
 title: 'Problema #002 - um saco cheio de números'
 ---
 

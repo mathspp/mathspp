@@ -1,6 +1,6 @@
 ---
 metadata:
-  description: Neste artigo mostro com o que é que um passeio aleatório se parece.
+    description: Neste artigo mostro com o que é que um passeio aleatório se parece.
 title: Simular passeios aleatórios em 2D
 ---
 

@@ -1,13 +1,13 @@
 ---
 slug: a-shuffled-deck-of-cards
 taxonomy:
-  tag:
-  - mathematics
-  - probability
-  - what-are-the-odds
-  - programming
-  - python
-  - pocket maths
+    tag:
+      - mathematics
+      - probability
+      - what-are-the-odds
+      - programming
+      - python
+      - pocket maths
 title: A shuffled deck of cards?
 ---
 

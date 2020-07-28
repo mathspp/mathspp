@@ -1,7 +1,7 @@
 ---
 metadata:
-  description: In this post we enhance our interpreter to handle multiple expressions
-    and to evaluate them.
+    description: In this post we enhance our interpreter to handle multiple expressions
+        and to evaluate them.
 title: Let's build a simple interpreter for APL - part 2
 ---
 

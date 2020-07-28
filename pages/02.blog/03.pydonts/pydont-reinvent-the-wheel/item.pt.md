@@ -1,7 +1,7 @@
 ---
 metadata:
-  description: Neste py-don't discuto uma opção viável a teres de estar sempre a reinventar
-    a roda.
+    description: Neste py-don't discuto uma opção viável a teres de estar sempre a
+        reinventar a roda.
 title: Py-don't reinventes a roda a torto e a direito
 ---
 

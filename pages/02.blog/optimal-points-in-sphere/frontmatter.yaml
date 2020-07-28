@@ -1,10 +1,10 @@
 date: 12-10-2017
 slug: optimal-points-in-sphere
 taxonomy:
-  category: blogpost
-  tag:
-  - geometry
-  - mathematics
-  - optimization
-  - programming
-  - matlab
+    category: blogpost
+    tag:
+      - geometry
+      - mathematics
+      - optimization
+      - programming
+      - matlab

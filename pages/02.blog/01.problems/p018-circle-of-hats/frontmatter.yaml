@@ -1,9 +1,9 @@
 date: 24-05-2020
 slug: circle-of-hats
 taxonomy:
-  category: blogpost
-  tag:
-  - problem
-  - mathematics
-  - modular arithmetics
-  - apl
+    category: blogpost
+    tag:
+      - problem
+      - mathematics
+      - modular arithmetics
+      - apl

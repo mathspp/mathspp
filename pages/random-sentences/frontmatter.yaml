@@ -1,5 +1,5 @@
 cache_enable: false
 process:
-  markdown: false
-  twig: true
+    markdown: false
+    twig: true
 slug: random-sentences

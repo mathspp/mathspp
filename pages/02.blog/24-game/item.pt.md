@@ -1,7 +1,7 @@
 ---
 metadata:
-  description: Neste artigo vamos explorar o "jogo do 24", um jogo matemático para
-    crianças (e não só!)
+    description: Neste artigo vamos explorar o "jogo do 24", um jogo matemático para
+        crianças (e não só!)
 title: Estudar o "jogo do 24"
 ---
 

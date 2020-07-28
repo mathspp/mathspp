@@ -1,9 +1,9 @@
 date: 26-02-2018
 slug: binary-multiples
 taxonomy:
-  category: blogpost
-  tag:
-  - problem
-  - mathematics
-  - modular arithmetics
-  - pigeonhole principle
+    category: blogpost
+    tag:
+      - problem
+      - mathematics
+      - modular arithmetics
+      - pigeonhole principle

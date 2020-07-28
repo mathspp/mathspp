@@ -1,6 +1,6 @@
 ---
 metadata:
-  description: Um artigo curto sobre um método antigo de programação...
+    description: Um artigo curto sobre um método antigo de programação...
 title: O método egípcio de multiplicação em Haskell
 ---
 

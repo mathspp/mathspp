@@ -1,10 +1,10 @@
 metadata:
-  description: In this py-don't I'll talk about 'Truthy' and 'Falsy' values in Python.
+    description: In this py-don't I'll talk about 'Truthy' and 'Falsy' values in Python.
 published: false
 slug: ints-as-booleans
 taxonomy:
-  category: blogpost
-  tag:
-  - pydont
-  - programming
-  - python
+    category: blogpost
+    tag:
+      - pydont
+      - programming
+      - python

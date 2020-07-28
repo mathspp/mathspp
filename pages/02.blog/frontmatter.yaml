@@ -1,6 +1,6 @@
 content:
-  items:
-    taxonomy@.category: blogpost
-  order:
-    by: date
-    dir: desc
+    items:
+        taxonomy@.category: blogpost
+    order:
+        by: date
+        dir: desc
