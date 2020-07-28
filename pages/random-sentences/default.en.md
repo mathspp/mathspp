@@ -28,14 +28,18 @@ a.anchor {
     animation: fade 2s;
     padding-left: 2em;
     margin-left: -2em;
-    padding-right: 2em;
-    margin-right: -2em;
+    padding-right: 1em;
+    margin-right: -1em;
     position:relative;
     z-index:-1;
 }
 </style>
 
 <h1> {{ page.title }} </h1>
+
+This page lists _all_ the sentences that can randomly appear in the [footer](#footer) of my blog! You can contribute to this list by adding sentences to the files in [this][contribute] folder on GitHub.
+
+[contribute]: https://github.com/rojergs/mathspp/tree/master/languages/
 
 {% set langobj  = grav['language'] %}
 {% set curlang  = langobj.getLanguage() %}

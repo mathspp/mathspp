@@ -28,14 +28,18 @@ a.anchor {
     animation: fade 2s;
     padding-left: 2em;
     margin-left: -2em;
-    padding-right: 2em;
-    margin-right: -2em;
+    padding-right: 1em;
+    margin-right: -1em;
     position:relative;
     z-index:-1;
 }
 </style>
 
 <h1> {{ page.title }} </h1>
+
+Esta página contém a lista de _todas_ as frases que podem aparecer aleatoriamente no [rodapé](#footer) do meu blogue. Podes contribuir para esta lista adicionando mais frases aos ficheiros [desta][contribute] pasta no GitHub.
+
+[contribute]: https://github.com/rojergs/mathspp/tree/master/languages/
 
 {% set langobj  = grav['language'] %}
 {% set curlang  = langobj.getLanguage() %}
