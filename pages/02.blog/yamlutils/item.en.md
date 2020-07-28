@@ -50,6 +50,14 @@ Being a scripting language, Python excels at this type of tasks. I realized I co
 
 That is how my little [YAMLUtils] project was born. The [`yamlutils.py`][yamlutils.py] script takes a folder path as a command line argument (and optionally a `-r` flag to traverse the directories recursively) and then does what I just described, merging all the YAML headers it can. I used it on my blog with `python yamlutils.py pages/ -r` and you can see what it did [in this commit](https://github.com/RojerGS/mathspp/commit/7ba80b086d6987ed819c872432ef1eafc1f1b023). Imagine having to do all that by hand!
 
+More specifically, my script looks at the path you specified (and recurses if you set `-r`) and then, for each folder:
+
+ - looks for all files with a name matching the pattern `*.*.md`, which it interprets as being `name.language.md`;
+ - one by one, opens those `.md` files, extracts the YAML headers from within the `---` and computes the headers they have in common;
+ - tries to see if there already is a `frontmatter.yaml` or `frontmatter.yml` file available (with preference for the `.yaml`) and loads the YAML headers there;
+ - updates the headers that were already in a `frontmatter` file (if any) and writes the updated version in the `frontmatter` file, creating a `frontmatter.yaml` file if needed;
+ - goes back to the `*.*.md` files, removing from their headers everything that was saved in the `frontmatter` file.
+
 
 ### Was it worth?
 

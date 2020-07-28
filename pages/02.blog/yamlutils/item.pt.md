@@ -50,6 +50,14 @@ Por ser uma linguagem para escrever scripts, Python é extremamente útil neste 
 
 Foi assim que o meu pequeno project [YAMLUtils] nasceu. O script [`yamlutils.py`][yamlutils.py] aceita um caminho para uma pasta como argumento na linha de comandos (e, opcionalmente, o argumento `-r` para indicar que devemos atravessar os diretórios recursivamente) e depois faz exatamente aquilo que descrevi, juntando os cabeçalhos YAML sempre que possível. Eu usei-o no meu blogue com o comando `python yamlutils.py pages/ -r` e podem ver o que o script fez [neste commit](https://github.com/RojerGS/mathspp/commit/7ba80b086d6987ed819c872432ef1eafc1f1b023). Imaginem ter de fazer todas essas alterações à mão!
 
+Mas especificamente, o meu script vai olhar para a pasta que indicares (e depois navega recursivamente se o argumento `-r` for usado) e depois, para cada pasta:
+
+ - procura todos os ficheiros cujo nome coincida com o padrão `*.*.md`, que o script assume ser `ficheiro.lingua.md`;
+ - um a um, abre esses ficheiros `.md`, extrai os cabeçalhos YAML de entre os `---` e determina os cabeçalhos em comum entre todas as páginas;
+ - tenta abrir um ficheiro `frontmatter.yaml` ou `frontmatter.yml` nessa pasta (dando prioridade à extensão `.yaml`) e carrega os cabeçalhos YAML que lá encontre;
+ - atualiza os cabeçalhos que já estavam presentes no ficheiro `frontmatter` (se esse ficheiro existir) e depois escreve a versão atualizada no mesmo ficheiro, ou então cria um ficheiro `frontmatter.yaml` se necessário;
+ - volta a visitar os ficheiros `*.*.md`, removendo todos os cabeçalhos que já estejam específicados no ficheiro `frontmatter`.
+
 
 ### Valeu a pena?
 
