@@ -1,7 +1,7 @@
 ---
-title: Simular passeios aleatórios em 2D
 metadata:
-    description: "Neste artigo mostro com o que é que um passeio aleatório se parece."
+  description: Neste artigo mostro com o que é que um passeio aleatório se parece.
+title: Simular passeios aleatórios em 2D
 ---
 
 Imagina um bêbedo que cambaleia sem Norte, para aqui e para lá...

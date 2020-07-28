@@ -1,5 +1,5 @@
 ---
-title: "Twitter proof: irrational rationality"
+title: 'Twitter proof: irrational rationality'
 ---
 
 Let's prove that there are two irrational numbers, call them $a$ and $b$, such that $a^b$ is a rational number! And let's do it in a tweet.

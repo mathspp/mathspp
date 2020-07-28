@@ -1,7 +1,8 @@
 ---
-title: Estudar o "jogo do 24"
 metadata:
-    description: 'Neste artigo vamos explorar o "jogo do 24", um jogo matemático para crianças (e não só!)'
+  description: Neste artigo vamos explorar o "jogo do 24", um jogo matemático para
+    crianças (e não só!)
+title: Estudar o "jogo do 24"
 ---
 
 O ["jogo do 24"][24-game] é um jogo matemático que costuma ser jogado nos primeiros anos de escola para ajudar os alunos a treinarem as quatro operações aritméticas básicas. Neste artigo vamos estudar algumas particularidades deste jogo.

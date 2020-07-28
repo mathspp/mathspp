@@ -1,10 +1,5 @@
 ---
 title: The birthday bet
-date: 14-06-2018
-slug: the-birthday-bet
-taxonomy:
-    category: blogpost
-    tag: [mathematics, probability, pocket maths]
 ---
 
 In high school I had a colleague that had his birthday on the same day as I did.

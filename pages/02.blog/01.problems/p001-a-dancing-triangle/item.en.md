@@ -1,10 +1,5 @@
 ---
-title: "Problem #001 - a dancing triangle"
-date: 05-11-2017
-slug: a-dancing-triangle
-taxonomy:
-    category: blogpost
-    tag: [problem, geometry, mathematics, invariant]
+title: 'Problem #001 - a dancing triangle'
 ---
 
 This post's format will be a bit different from the usual and the first of a series of posts of this type. In this post, I will state a problem and then present my solution.

@@ -1,7 +1,11 @@
-slug: fold-the-alphabet
 date: 14-06-2020
 metadata:
-    description: "Help me fold this piece of paper so that the alphabet comes in order!"
+  description: Help me fold this piece of paper so that the alphabet comes in order!
+slug: fold-the-alphabet
 taxonomy:
-    category: blogpost
-    tag: [problem, geometry, origami, mathematics]
+  category: blogpost
+  tag:
+  - problem
+  - geometry
+  - origami
+  - mathematics

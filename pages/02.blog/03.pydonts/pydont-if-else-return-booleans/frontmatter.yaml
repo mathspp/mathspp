@@ -1,7 +1,10 @@
-slug: if-else-return-booleans
-published: false
-taxonomy:
-    category: blogpost
-    tag: [pydont, python, programming]
 metadata:
-    description: "In this py-don't I go over a commom (bad) pattern concerning boolean values."
+  description: In this py-don't I go over a commom (bad) pattern concerning boolean
+    values.
+slug: if-else-return-booleans
+taxonomy:
+  category: blogpost
+  tag:
+  - pydont
+  - python
+  - programming
