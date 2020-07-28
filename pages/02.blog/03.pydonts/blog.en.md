@@ -1,9 +1,3 @@
----
-content:
-  items: {}
-  order: {}
----
-
 # Py-don'ts
 
 ## ALL the things you _shouldn't_ do!

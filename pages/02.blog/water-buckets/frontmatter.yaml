@@ -1,7 +1,13 @@
-slug: water-buckets
 date: 21-11-2017
-taxonomy:
-    category: blogpost
-    tag: [algorithms, graphs, mathematics, programming, python, number theory]
 metadata:
-    'og:image': https://mathspp.com/blog/water-buckets/buckets.jpg
+  og:image: https://mathspp.com/blog/water-buckets/buckets.jpg
+slug: water-buckets
+taxonomy:
+  category: blogpost
+  tag:
+  - algorithms
+  - graphs
+  - mathematics
+  - programming
+  - python
+  - number theory

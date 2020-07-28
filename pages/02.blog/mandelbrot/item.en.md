@@ -1,10 +1,5 @@
 ---
 title: Fractals and the Mandelbrot set
-date: 13-10-2017
-slug: fractals-and-mandelbrot-set
-taxonomy:
-    category: blogpost
-    tag: [mathematics, programming, python, fractals, visualization, pygame]
 ---
 
 I have always liked the concept of fractal. They are very beautiful, they have a notion of infinity embedded in them, and they make no sense (seriously though, _self-similarity_?). How could they not be loved?

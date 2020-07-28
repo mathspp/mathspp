@@ -1,5 +1,5 @@
 ---
-title: "Problem #019 - fold the alphabet"
+title: 'Problem #019 - fold the alphabet'
 ---
 
 Take out a piece of paper and a pencil, I am going to ask you to write some letters in your sheet of paper and then I am going to challenge you to fold the sheet of paper... with a twist!

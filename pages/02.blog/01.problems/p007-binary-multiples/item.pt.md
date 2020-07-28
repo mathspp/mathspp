@@ -1,10 +1,5 @@
 ---
-title: "Problema #007 - múltiplos binários"
-date: 26-02-2018
-slug: binary-multiples
-taxonomy:
-    category: blogpost
-    tag: [problem, mathematics, modular arithmetics, pigeonhole principle]
+title: 'Problema #007 - múltiplos binários'
 ---
 
 Será verdade que qualquer número inteiro tem um múltiplo que pode ser escrito só com $0$s e $1$s?

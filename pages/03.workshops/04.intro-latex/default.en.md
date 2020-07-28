@@ -1,9 +1,3 @@
----
-title: Introduction to LaTeX
-slug: intro-latex
-menu: Intro LaTeX
----
-
 # Introduction to LaTeX
 
 ## Aim

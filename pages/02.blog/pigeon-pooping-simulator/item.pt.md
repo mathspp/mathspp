@@ -1,10 +1,5 @@
 ---
 title: Simulador de pombo
-date: 13-10-2017
-slug: pigeon-pooping-simulator
-taxonomy:
-    category: blogpost
-    tag: [games, programming, pygame, python]
 ---
 
 Este artigo tem um único propósito: partilhar um jogo estranho que fiz, inspirado pelo Flappy Bird e pelo meu professor (maluco) de Inglês.

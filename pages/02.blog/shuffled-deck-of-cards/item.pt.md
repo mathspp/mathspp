@@ -1,10 +1,14 @@
 ---
-title: Um baralho de cartas... baralhado?
 slug: um-baralho-de-cartas-baralhado
-publish_date: 01-08-2020
 taxonomy:
-    category: blogpost
-    tag: [mathematics, probability, what-are-the-odds, programming, Python, pocket maths]
+  tag:
+  - mathematics
+  - probability
+  - what-are-the-odds
+  - programming
+  - Python
+  - pocket maths
+title: Um baralho de cartas... baralhado?
 ---
 
 Para acompanhar este artigo, sugiro que arranjem um baralho de cartas. Um baralho normal de $52$ cartas com $4$ naipes e $13$ cartas por naipe (ou seja, sem jokers). Agora baralhem o baralho. Quando o baralho estiver muito bem baralhado, podem continuar a ler este artigo.

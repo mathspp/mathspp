@@ -1,5 +1,4 @@
 ---
-taxonomy: {}
 title: Py-don't desrespeites o Zen do Python
 ---
 

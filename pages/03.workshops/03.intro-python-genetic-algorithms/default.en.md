@@ -1,9 +1,3 @@
----
-title: Introduction to Python with evolutionary algorithms
-slug: intro-python-evolutionary-algorithms
-menu: Intro Python with GAs
----
-
 # Introduction to Python with evolutionary algorithms
 
 ## Aim

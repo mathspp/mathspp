@@ -1,8 +1,8 @@
 content:
-    items:
-        'taxonomy@.tag': "twitter proof"
-    order:
-        by: date
-        dir: desc
+  items:
+    taxonomy@.tag: twitter proof
+  order:
+    by: date
+    dir: desc
 hero-image: twitter_bg.png
 hero_classes: parallax overlay-dark-gradient text-light

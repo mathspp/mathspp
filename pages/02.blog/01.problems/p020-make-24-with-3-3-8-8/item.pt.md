@@ -1,7 +1,7 @@
 ---
-title: "Problema #P020 - construir 24 com 3 3 8 8"
 metadata:
-    description: Como é que podes usar os números 3 3 8 8 para fazer 24..?
+  description: Como é que podes usar os números 3 3 8 8 para fazer 24..?
+title: 'Problema #P020 - construir 24 com 3 3 8 8'
 ---
 
 O problema deste artigo vai ser sobre um jogo de matemática elementar, o [jogo do 24][24 Game]. É comum jogar-se ao "24" nos anos de escolaridade mais jovens porque ajuda os alunos a familiarizarem-se com as quatro operações básicas da aritmética.

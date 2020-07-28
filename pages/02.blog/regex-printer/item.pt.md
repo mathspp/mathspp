@@ -1,7 +1,8 @@
 ---
-title: Procurar tudo o que uma expressão regular consegue encontrar
 metadata:
-    description: "Neste artigo explico sucintamente o que são expressões regulares e mostro algo que fiz com elas!"
+  description: Neste artigo explico sucintamente o que são expressões regulares e
+    mostro algo que fiz com elas!
+title: Procurar tudo o que uma expressão regular consegue encontrar
 ---
 
 [Expressões regulares](https://en.wikipedia.org/wiki/Regular_expression) são uma maneira compacta de representar várias sequências de caracteres. Será que eu consigo descobrir todas as sequências de caracteres que uma expressão regular consegue encontrar?

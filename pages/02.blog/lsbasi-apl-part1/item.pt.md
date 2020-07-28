@@ -1,8 +1,8 @@
 ---
-title: Vamos construir um interpretador para APL - parte 1
-slug: lsbasi-apl-part1
 metadata:
-    description: Neste artigo vou mostrar-vos como podemos começar a escrever um interpretador para a linguagem de programação APL.
+  description: Neste artigo vou mostrar-vos como podemos começar a escrever um interpretador
+    para a linguagem de programação APL.
+title: Vamos construir um interpretador para APL - parte 1
 ---
 
 Vamos construir um interpretador simples para [APL][apl-wiki]! APL é uma linguagem orientada para vetores (multi-dimensionais). A facilidade com que se pode escrever código relacionado com matemática, as funções primitivas estranhas (por exemplo `⍴`, `⍨`, `⍒` ou `⍣`) e o facto de APL ser executado da direita para a esquerda fazem com que seja uma experiência de programação interessante!

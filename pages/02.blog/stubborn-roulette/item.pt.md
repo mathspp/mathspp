@@ -1,10 +1,5 @@
 ---
 title: Uma roleta teimosa
-slug: stubborn-roulette
-published: false
-taxonomy:
-    category: blogpost
-    tag: [mathematics, what are the odds, pocket maths, probability]
 ---
 
 No outro dia eu fui ao casino e reparei que numa das mesas de roleta tinham saído 15 vezes seguidas um número vermelho. Quando vi aquilo decidi ir para essa mesa para também apostar, mas qual é que é a aposta que eu devo fazer?
