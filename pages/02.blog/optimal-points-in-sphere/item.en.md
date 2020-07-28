@@ -1,10 +1,5 @@
 ---
 title: A gradient descent algorithm to optimally distribute points over a sphere
-date: 12-10-2017
-slug: optimal-points-in-sphere
-taxonomy:
-    category: blogpost
-    tag: [geometry, mathematics, optimization, programming, matlab]
 ---
 
 ![Animation of the algorithm](./n6s-2.gif)
