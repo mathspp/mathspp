@@ -1,5 +1,10 @@
 ---
-title: 'Problema #001 - um triângulo dançante'
+title: "Problema #001 - um triângulo dançante"
+date: 05-11-2017
+slug: a-dancing-triangle
+taxonomy:
+    category: blogpost
+    tag: [problem, geometry, mathematics, invariant]
 ---
 
 O formato deste artigo vai ser um pouco diferente do que tenho feito até agora, e vai ser a primeira de várias publicações nestes moldes: vou introduzir um pequeno problema _"de matemática"_ e depois vou partilhar uma possível solução.

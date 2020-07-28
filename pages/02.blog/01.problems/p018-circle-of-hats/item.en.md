@@ -1,5 +1,10 @@
 ---
-title: 'Problem #018 - circle of hats'
+title: "Problem #018 - circle of hats"
+date: 24-05-2020
+slug: circle-of-hats
+taxonomy:
+    category: blogpost
+    tag: [problem, mathematics, modular arithmetics, apl]
 ---
 
 $n$ mathematicians with numbered party hats gather around in a circle... It is a matter of life or death!

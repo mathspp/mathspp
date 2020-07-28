@@ -1,5 +1,10 @@
 ---
 title: Minesweeper remake
+slug: minesweeper-remake
+date: 13-10-2017
+taxonomy:
+    category: blogpost
+    tag: [programming, python, pygame, games]
 ---
 
 Minesweeper has to be one of the most well-known minigames of all time, no? I spent my fair share of Sunday mornings playing minesweeper in my Windows XP computer...

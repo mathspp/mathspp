@@ -1,6 +1,12 @@
 ---
 menu: Problemas
 title: Problemas
+content:
+    items:
+        'taxonomy@.tag': problem
+    order:
+        by: date
+        dir: desc
 ---
 
 # Problemas

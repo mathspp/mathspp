@@ -1,5 +1,10 @@
 ---
-title: 'Problem #007 - binary multiples'
+title: "Problem #007 - binary multiples"
+date: 26-02-2018
+slug: binary-multiples
+taxonomy:
+    category: blogpost
+    tag: [problem, mathematics, modular arithmetics, pigeonhole principle]
 ---
 
 Is it true that every integer you can think of has a multiple written out only with $0$s and $1$s?

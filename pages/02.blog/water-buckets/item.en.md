@@ -1,7 +1,7 @@
 ---
-metadata:
-  description: This post goes over a well known riddle about measuring quantities.
 title: Water buckets riddle
+metadata:
+    description: "This post goes over a well known riddle about measuring quantities."
 ---
 
 Can you measure exactly $2$L of water with two plain buckets with volumes of $14$L and $5$L? Of course you can!

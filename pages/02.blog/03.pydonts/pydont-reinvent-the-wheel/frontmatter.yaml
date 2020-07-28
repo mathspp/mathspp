@@ -1,11 +1,8 @@
-metadata:
-  description: In this py-don't I am going to talk about brainlessly reinventing the
-    wheel.
-  og:image: https://mathspp.com/blog/pydonts/reinvent-the-wheel/wheel.jpg
 slug: reinvent-the-wheel
+published: false
 taxonomy:
-  category: blogpost
-  tag:
-  - pydont
-  - programming
-  - python
+    category: blogpost
+    tag: [pydont, programming, python]
+metadata:
+    description: "In this py-don't I am going to talk about brainlessly reinventing the wheel."
+    'og:image': https://mathspp.com/blog/pydonts/reinvent-the-wheel/wheel.jpg

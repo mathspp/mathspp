@@ -1,10 +1,7 @@
-metadata:
-  description: In this py-don't I am going to talk about the walrus operator and its
-    non-uses.
 slug: walrus-operator
+published: false
 taxonomy:
-  category: blogpost
-  tag:
-  - pydont
-  - python
-  - programming
+    category: blogpost
+    tag: [pydont, python, programming]
+metadata:
+    description: "In this py-don't I am going to talk about the walrus operator and its non-uses."

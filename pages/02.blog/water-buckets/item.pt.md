@@ -1,7 +1,7 @@
 ---
-metadata:
-  description: Neste artigo falo um pouco de uma charada conhecida sobre medir quantidades.
 title: Uma charada com baldes de água
+metadata:
+    description: "Neste artigo falo um pouco de uma charada conhecida sobre medir quantidades."
 ---
 
 Será que és capaz de medir $2$L de água se tiveres um balde com $14$L de capacidade e outro com $5$L? Claro que sim!

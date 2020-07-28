@@ -1,5 +1,10 @@
 ---
 title: A stubborn roulette
+slug: stubborn-roulette
+published: false
+taxonomy:
+    category: blogpost
+    tag: [mathematics, what are the odds, pocket maths, probability]
 ---
 
 I was at the casino and I noticed that at a specific roulette table, the last 15 results had been red numbers. I approached the table to bet, but what was the best thing to do?

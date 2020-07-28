@@ -1,5 +1,5 @@
 ---
-title: 'Problem #020 - make 24 with 3 3 8 8'
+title: "Problem #020 - make 24 with 3 3 8 8"
 ---
 
 Today we are visiting a specific instance of a well-known _basic_ mathematics game, the [24 Game]. The "24 Game" is usually played with younger students because it helps them develop skills related to the basic arithmetic operations.

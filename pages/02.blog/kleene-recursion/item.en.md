@@ -1,5 +1,10 @@
 ---
 title: On recursive functions and Kleene's approach
+date: 17-10-2017
+slug: recursion-by-kleene
+taxonomy:
+    category: blogpost
+    tag: [mathematics, recursion, computation theory]
 ---
 
 In this post I just ramble a bit through some mathematician's definition of what a recursive function is...

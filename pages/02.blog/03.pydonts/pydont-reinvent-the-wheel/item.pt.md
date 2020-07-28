@@ -1,8 +1,7 @@
 ---
-metadata:
-  description: Neste py-don't discuto uma opção viável a teres de estar sempre a reinventar
-    a roda.
 title: Py-don't reinventes a roda a torto e a direito
+metadata:
+    description: "Neste py-don't discuto uma opção viável a teres de estar sempre a reinventar a roda."
 ---
 
 Supõe que estás a escrever um script em Python e a certa altura precisas do nome do diretório em que o próprio script está. Arranjarias uma solução como esta?

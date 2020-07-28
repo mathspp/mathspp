@@ -1,7 +1,7 @@
 ---
-metadata:
-  description: Neste py-don't vou falar do que é que 'Truthy' e 'Falsy' são em Python.
 title: Py-don't uses inteiros em vez de valores lógicos
+metadata:
+    description: "Neste py-don't vou falar do que é que 'Truthy' e 'Falsy' são em Python."
 ---
 
 Se quiseres criar um ciclo `while` infinito, não faças isto:
