@@ -61,7 +61,7 @@ Let me know in the comments below how Python has helped you automate any of your
 
 For your convenience, the contents of my script at the time of writing this blog post:
 
-<script src="http://gist-it.appspot.com/https://github.com/RojerGS/projects/blob/master/yamlutils/yamlutils.py"></script>
+<script src="http://gist-it.appspot.com/https://github.com/RojerGS/projects/raw/master/yamlutils/yamlutils.py"></script>
 
 [Grav]: https://getgrav.org/
 [YAML]: https://en.wikipedia.org/wiki/YAML
