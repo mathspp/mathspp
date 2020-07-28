@@ -20,7 +20,7 @@ The fact that I am using [Grav] to manage the contents of my website and the fac
  - `item.pt.md`
  - `frontmatter.yaml`
 
-The `item` files contain the blog post itself, and the extension `.en.md` or `.pt.md` identifies the language in which they are written. To help customize my blog I can set "headers" in my posts using a special syntax called [YAML], which I use to set the post tags, the title of the post, the slug (the URL suffix, `yamlutils` for this blog post), the date in which this was published, etc.
+The `item` files contain the blog post itself, and the extension `.en.md` or `.pt.md` identifies the language in which they are written. The `frontmatter.yaml` file has "headers" that help customize my blog. I set those headers with a special syntax called [YAML]; with it I set the post tags, the title of the post, the slug (the URL suffix, `yamlutils` for this blog post), the date in which this was published, etc.
 
 For most of it, these things do not depend on the language the user is viewing the page on, for example I keep the slug the same for the English and Portuguese versions, cf.
 
@@ -41,7 +41,7 @@ On the other hand, there are other things that _do_ depend on the language. For 
 
 You can clearly see that while the structure of the boxes is the same, their contents are in different languages.
 
-The problem is that for a long time I didn't use the `frontmatter.yaml` file to store the headers that were identical, meaning I have plenty of pages and blog posts that have duplicated headers in the `.pt.md` and `.en.md` files. I could sort this out by hand... but that would be really boring!
+The problem is that for a long time I didn't use the `frontmatter.yaml` file to store the headers that were identical, meaning I have plenty of pages and blog posts that have duplicated headers in the `.pt.md` and `.en.md` files... this is not a nice situation to be in because it makes it harder to have everything updated and synced correctly. Of course I could sort this out by hand... but that would be really boring!
 
 
 ### Python to the rescue

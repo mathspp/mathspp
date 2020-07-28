@@ -11,54 +11,53 @@ Se há uma coisa de que gosto em programar em Python é que posso usá-lo para a
 ![a close-up of three gears turning together](gears.jpg "Photo by Bill Oxford on Unsplash")
 
 Vou começar por descrever o problema que tinha e depois mostro como é que Python me ajudou.
-Let me start by describing what I needed to do and then I will go over how Python helped me do it.
 
-### The problem
+### O problema
 
-The fact that I am using [Grav] to manage the contents of my website and the fact that I have my website both in Portuguese and in English means I end up having two text files per page. For example, if you follow [this GitHub link][yamlutils-post] you can see the subfolder that holds the content for this particular blog post. In there you can find three main files, which are
+Cada página no meu blogue tem dois ficheiros que lhe correspondem, um para a versão inglesa e outro para a versão portuguesa. É assim que consigo ter um site com duas línguas com [Grav]. Por exemplo, se fores a [este link do GitHub][yamlutils-post] vais encontrar a pasta onde estão os conteúdos deste artigo. Lá dentro encontras três ficheiros principais:
 
  - `item.en.md`
  - `item.pt.md`
  - `frontmatter.yaml`
 
-The `item` files contain the blog post itself, and the extension `.en.md` or `.pt.md` identifies the language in which they are written. To help customize my blog I can set "headers" in my posts using a special syntax called [YAML], which I use to set the post tags, the title of the post, the slug (the URL suffix, `yamlutils` for this blog post), the date in which this was published, etc.
+Os ficheiros `item` são os que contém o artigo em si e as extensões `.en.md` e `.pt.md` identificam a língua em que o artigo está escrito. O ficheiro `frontmatter.yaml` tem alguns "cabeçalhos" que me ajudam a customizar o blogue e o artigo. Eu defino esses cabeçalhos com uma sintaxe especial chamada [YAML]; com ela posso definir os tags do artigo, o título do artigo, o "slug" (o sufixo do URL, para este artigo em particular é `yamlutils`), a data em que o artigo foi publicado, etc.
 
-For most of it, these things do not depend on the language the user is viewing the page on, for example I keep the slug the same for the English and Portuguese versions, cf.
+A maior parte desses cabeçalhos não depende da língua em que o site está a ser visualizado, por exemplo eu uso sempre o mesmo slug:
 
  - [https://mathspp.com/en/blog/yamlutils](https://mathspp.com/en/blog/yamlutils)
  - [https://mathspp.com/pt/blog/yamlutils](https://mathspp.com/pt/blog/yamlutils)
 
-Those headers that are the same, regardless of the language, are kept in the `frontmatter.yaml` file, which looks something like this:
+Os cabeçalhos que são independentes da língua são definidos no ficheiro `frontmatter.yaml`, que se parece com isto:
 
 <script src="https://gist.github.com/RojerGS/0ff988fb2ac54a81dc18349cc9c619f9.js"></script>
 
 
 
-On the other hand, there are other things that _do_ depend on the language. For example, the title of the page that is displayed in the beginning of the post and in the browser tab. Those are specified in the beginning of the `item` files in between two sets of `---`, which makes GitHub render them as such:
+Por outro lado, há alguns cabeçalhos que dependem da língua do utilizador. Por exemplo, o título do artigo (que está no topo da página e no separador do teu navegador) é adaptado para cada língua. Esses cabeçalhos específicos ficam no início de cada ficheiro `item`, entre `---`, que faz com que o GitHub os mostre assim:
 
 <script src="https://gist.github.com/RojerGS/1f8f2727e6358ad33bec5700be4220ed.js"></script>
 
 
 
-You can clearly see that while the structure of the boxes is the same, their contents are in different languages.
+As caixas em cima correspondem aos cabeçalhos dos dois ficheiro `item` diferentes. Provavelmente consegues ver que a estrutura das caixas é exatamente igual mas que os conteúdos das caixas estão escritos em línguas diferentes.
 
-The problem is that for a long time I didn't use the `frontmatter.yaml` file to store the headers that were identical, meaning I have plenty of pages and blog posts that have duplicated headers in the `.pt.md` and `.en.md` files. I could sort this out by hand... but that would be really boring!
-
-
-### Python to the rescue
-
-Being a scripting language, Python excels at this type of tasks. I realized I could easily write a Python script that would traverse my blog directory, looking for pairs of `.pt.md` and `.en.md` pages, finding the headers those pages have in common, and then updating the corresponding `frontmatter.yaml` (or creating a new one if needed).
-
-That is how my little [YAMLUtils] project was born. The [`yamlutils.py`][yamlutils.py] script takes a folder path as a command line argument (and optionally a `-r` flag to traverse the directories recursively) and then does what I just described, merging all the YAML headers it can. I used it on my blog with `python yamlutils.py pages/ -r` and you can see what it did [in this commit](https://github.com/RojerGS/mathspp/commit/7ba80b086d6987ed819c872432ef1eafc1f1b023). Imagine having to do all that by hand!
+O problema é que no início do site e do blogue eu não usava os ficheiros `frontmatter.yaml` para os cabeçalhos iguais, portanto tinha vários ficheiros `*.en.md` e `*.pt.md` com cabeçalhos repetidos... e ter coisas repetidas é desagradável porque faz com que seja mais difícil manter tudo igual e atualizado. Eu podia resolver este problema à mão... mas isso seria muito aborrecido!
 
 
-### Was it worth?
+### Python ao salvamento
 
-Yes.
+Por ser uma linguagem para escrever scripts, Python é extremamente útil neste tipo de tarefas. Eu percebi que podia facilmente escrever um script que atravessasse os meus diretórios, à procura de pares de ficheiros `.pt.md` e `.en.md`, que recolhesse os cabeçalhos que esses ficheiros têm em comum, e que atualizasse essa informação no ficheiro `frontmatter.yaml` respetivo (ou então que criasse o ficheiro `frontmatter.yaml` se necessário).
 
-It took me around two hours to put the script together and to test it plus ten minutes to fix a bug that I only discovered when I later applied it to the blog (cf. [this][bug-1] and [this][bug-2] buggy usages). Doing all this by hand would easily have taken me over two hours. Plus, now I have a cool new script that I can extend later (and probably will) to do some more YAML management and I programmed a bit (which is always fun!) instead of copying and pasting around YAML headers.
+Foi assim que o meu pequeno project [YAMLUtils] nasceu. O script [`yamlutils.py`][yamlutils.py] aceita um caminho para uma pasta como argumento na linha de comandos (e, opcionalmente, o argumento `-r` para indicar que devemos atravessar os diretórios recursivamente) e depois faz exatamente aquilo que descrevi, juntando os cabeçalhos YAML sempre que possível. Eu usei-o no meu blogue com o comando `python yamlutils.py pages/ -r` e podem ver o que o script fez [neste commit](https://github.com/RojerGS/mathspp/commit/7ba80b086d6987ed819c872432ef1eafc1f1b023). Imaginem ter de fazer todas essas alterações à mão!
 
-Let me know in the comments below how Python has helped you automate any of your tasks!
+
+### Valeu a pena?
+
+Sim.
+
+Demorei cerca de duas horas para programar o script todo e testá-lo, e mais uns dez minutos para corrigir um problema irritante que só descobri quando tentei aplicar o script no meu blogue (cf. [esta][bug-1] e [esta][bug-2] correções às utilizações erradas). Fazer este trabalho todo à mão teria demorado mais de duas horas de certeza. Para além disso, agora tenho um script que posso melhorar mais tarde para fazer gestão de outras coisas relacionadas com YAML e também programei um pouco (que é sempre divertido!) em vez de andar a copiar e a colar cabeçalhos YAML de um lado para o outro.
+
+Faz-me saber que tarefas é que Python já te ajudou a automatizar na secção de comentários em baixo!
 
 [Grav]: https://getgrav.org/
 [YAML]: https://en.wikipedia.org/wiki/YAML
