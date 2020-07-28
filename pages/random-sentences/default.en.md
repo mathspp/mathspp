@@ -2,38 +2,7 @@
 title: Random sentences
 ---
 
-<style type="text/css">
-/* https://stackoverflow.com/a/13184714/2828287 */
-a.anchor {
-    display: block;
-    position: relative;
-    top: -46px;
-    visibility: hidden;
-}
-
-@keyframes fade {
-    0% {
-        background: #ff07;
-        box-shadow: 0 0 1em yellow;
-        border-radius: 1em;
-    }
-    50% {
-        background: #ff07;
-        box-shadow: 0 0 1em yellow;
-        border-radius: 1em;
-    }
-}
-
-.highlight {
-    animation: fade 2s;
-    padding-left: 2em;
-    margin-left: -2em;
-    padding-right: 1em;
-    margin-right: -1em;
-    position:relative;
-    z-index:-1;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="highlighting.css">
 
 <h1> {{ page.title }} </h1>
 
@@ -49,15 +18,4 @@ This page lists <i>all</i> the sentences that can randomly appear in the <a href
 {% endfor %}
 </ol>
 
-<script type="text/javascript">
-    // cf. https://chat.stackexchange.com/transcript/message/55084622#55084622
-    var highlight = function() {
-        var id = window.location.hash.split("?")[0].slice(1);
-        if (id) {
-            var p = document.getElementById("p"+id);
-            p.innerHTML = "<span class='highlight'>" + p.innerHTML + "</span>";
-        }
-    }
-    window.onhashchange = highlight;
-    highlight();
-</script>
+<script type="text/javascript" src="highlighting.js"></script>
