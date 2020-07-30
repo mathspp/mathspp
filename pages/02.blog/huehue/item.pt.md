@@ -1,7 +1,7 @@
 ---
 metadata:
     description: Neste artigo mostro-vos um jogo sobre cores que fiz com uma amiga.
-title: "HueHue: um jogo colorido"
+title: 'HueHue: um jogo colorido'
 ---
 
 **HueHue** é um jogo bastante colorido que eu escrevi com a minha colega [@inesfmarques][ines].

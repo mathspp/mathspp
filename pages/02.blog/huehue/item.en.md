@@ -1,7 +1,8 @@
 ---
 metadata:
-    description: In this post I show you a colourful game I wrote with a friend of mine.
-title: "HueHue: a colourful game"
+    description: In this post I show you a colourful game I wrote with a friend of
+        mine.
+title: 'HueHue: a colourful game'
 ---
 
 **HueHue** is a very colourful game I wrote with my colleague [@inesfmarques][ines].
