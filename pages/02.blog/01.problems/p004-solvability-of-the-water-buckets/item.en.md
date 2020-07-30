@@ -12,13 +12,13 @@ In [this previous post][wbr post] I talked about the riddle of the water buckets
 
 ### Problem statement
 
-You have $n$ buckets, each bucket with capacity for $c_i$ litres of water, $i = 1, \hdots, n$. You want to manipulate the buckets in such a way that one of them holds exactly $t$ litres of water, knowing that the only moves you can do are:
+You have $n$ buckets, each bucket with capacity for $c_i$ litres of water, $i = 1, \cdots, n$. You want to manipulate the buckets in such a way that one of them holds exactly $t$ litres of water, knowing that the only moves you can do are:
 
  - completely fill up bucket $i$ so that it holds $c_i$ litres of water;
  - completely empty bucket $i$ so that it now holds $0$ litres of water;
  - move water from bucket $i$ to bucket $j$, until bucket $i$ becomes empty or bucket $j$ becomes full, whatever happens first.
 
-Prove that, if $t$ is not a multiple of the greatest common divisor of the $c_i$, $i = 1, \hdots, n$ then this is impossible to achieve.
+Prove that, if $t$ is not a multiple of the greatest common divisor of the $c_i$, $i = 1, \cdots, n$ then this is impossible to achieve.
 
 For example, if the buckets have capacities $4$ and $6$ and $t = 3$, then you can't perform the moves above to get exactly $3$ litres of water into one of the two buckets as the greatest commond divisor of $4$ and $6$ is $\gcd(4, 6) = 2$ and $3$ is _not_ a multiple of $2$.
 
@@ -26,9 +26,9 @@ For example, if the buckets have capacities $4$ and $6$ and $t = 3$, then you ca
 
 ### Solution
 
-A possible solution is to consider a clever invariant that applies to the amount of water that each bucket is holding at any point in time. To make this easier, let's call $d$ to the greatest common divisor of the $c_i$, $i = 1, \hdots, n$ ($d = \gcd(c_1, \cdots, c_n)$). Let's also say the amount of water in bucket $i$ is $w_i$. We will show that, regardless of the moves we make, $w_i$ is _always_ a multiple of $d$ for all $i$ (which we write $d | w_i$ for _"$d$ divides $w_i$"_).
+A possible solution is to consider a clever invariant that applies to the amount of water that each bucket is holding at any point in time. To make this easier, let's call $d$ to the greatest common divisor of the $c_i$, $i = 1, \cdots, n$ ($d = \gcd(c_1, \cdots, c_n)$). Let's also say the amount of water in bucket $i$ is $w_i$. We will show that, regardless of the moves we make, $w_i$ is _always_ a multiple of $d$ for all $i$ (which we write $d | w_i$ for _"$d$ divides $w_i$"_).
 
-At the start all buckets are empty, so $w_1 = \hdots = w_n = 0$ and $0$ is a multiple of $d$ so that is that. Now we show that the three moves above preserve this property that $d | w_i\ \forall i$.
+At the start all buckets are empty, so $w_1 = \cdots = w_n = 0$ and $0$ is a multiple of $d$ so that is that. Now we show that the three moves above preserve this property that $d | w_i\ \forall i$.
 
  - Emptying bucket $i$: this means $w_i = 0$ and $d | 0$ so everything is good;
  - Filling bucket $i$: this means $w_i = c_i$ but, by definition, $d$ is _a_ divisor of $c_i$ so certainly we have $d | c_i$;
