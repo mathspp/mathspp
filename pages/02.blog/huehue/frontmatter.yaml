@@ -1,0 +1,11 @@
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: https://mathspp.com/blog/huehue/1__start.png
+slug: huehue
+taxonomy:
+    category: blogpost
+    tag:
+      - games
+      - programming
+      - pygame
+      - python
