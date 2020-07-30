@@ -4,7 +4,7 @@ metadata:
 title: "HueHue: a colourful game"
 ---
 
-HueHue is a very colourful game I wrote with my colleague [@inesfmarques][ines].
+**HueHue** is a very colourful game I wrote with my colleague [@inesfmarques][ines].
 
 ===
 
@@ -18,7 +18,7 @@ The instructions are also quite simple: you use left and right clicks to swap ti
 
 Or you can just drag the tiles around, that is even simpler.
 
-When you finish the puzzle and rearrange the degradee, the window caption changes and you can't swap any more tiles. To change the number of tiles in the puzzle or their sizes edit the file HueHueConfig.py.
+When you finish the puzzle and rearrange the degradee, the window caption changes and you can't swap any more tiles. To change the number of tiles in the puzzle or their sizes edit the file `HueHueConfig.py`.
 
 When we had the game logic already implemented but were still testing the way we would create the degradee, I created another small script that just populates the screen with a random degradee like the one below. 
 
