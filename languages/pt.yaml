@@ -1,5 +1,8 @@
 RANDOM_SENTENCES:
- # links para o site
+ # frases cujo número precisa de ser fixo
+ - "A <a href='https://mathspp.com/pt/random-sentences#2'>frase #2</a> é falsa!"
+ - "A <a href='https://mathspp.com/pt/random-sentences#1'>frase #1</a> é verdadeira!"
+ # links dentro do site
  - "(Acho que d|D)evias ler <a href='https://mathspp.com/pt/blog/regex-printer'>este</a> artigo( incrível)?!+"
  - "Alguma vez ouviste falar de um <a href='https://mathspp.com/pt/blog/problems/quarrel-in-the-shire'>problema de matemática baseado em personagens de Senhor dos Anéis?</a>"
  - "Eu não sei dançar mas <a href='https://mathspp.com/blog/problems/a-dancing-triangle'>este</a> triângulo sabe."
@@ -11,6 +14,8 @@ RANDOM_SENTENCES:
  - "O matemático <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://pt.wikipedia.org/wiki/%C3%89variste_Galois'>Évariste Galois</a> morreu com 20 anos mas não sem antes resolver um problema que já tinha 350 anos."
  - "Há sete problemas matemáticos que são conhecidos como os <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://en.wikipedia.org/wiki/Millennium_Prize_Problems'>Problemas do Milénio</a>; cada um tem um prémio 1.000.000$."
  - "O matemático russo Grigori Perelman <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://pt.wikipedia.org/wiki/Grigori_Perelman#Conjectura_de_Poincar%C3%A9'>recusou um prémio de 1.000.000$</a> depois de ter resolvido um dos sete <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://en.wikipedia.org/wiki/Millennium_Prize_Problems'>Problemas do Milénio</a>."
+ - "O número 1 <i>não</i> é um número primo."
+ - "O número 73 é um número cheio de propriedades interessantes."
  # piadas
  - "Há 10 tipos de pessoas no Mundo, as que sabem binário e as que não sabem."
  - "Eu conjeturo que, algures, alguém está a ler esta frase."
@@ -35,6 +40,8 @@ RANDOM_SENTENCES:
  - "A matemática está em todo o lado<sup><a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://xkcd.com/285/'>[carece de fontes]</a></sup>."
 # "obrigados"
  - "Obrigado <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://github.com/abrudz'>@abrudz</a> por me ajudares a desenhar isto."
+ - "Obrigado <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://github.com/pineman'>@pineman</a> por teres gerido e mantido o meu site por tanto tempo."
+ - "Obrigado <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://www.youtube.com/channel/UC5RV_s1Jh-jQI4HfexEIb2Q'>MathGurl</a> por toda a inspiração que me dás."
  # intraduzíveis
 
 CUSTOM_NEWSLETTER: "Mantém-te informado"

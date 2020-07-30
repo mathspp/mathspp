@@ -1,5 +1,8 @@
 RANDOM_SENTENCES:
- # links to this site
+ # sentences whose # I need to be fixed
+ - "<a href='https://mathspp.com/random-sentences#2'>Sentence #2</a> is false!"
+ - "<a href='https://mathspp.com/random-sentences#1'>Sentence #1</a> is true!"
+ # intra-site links
  - "(You should c|C)heck out <a href='https://mathspp.com/blog/regex-printer'>this</a>( awesome)? blog post!+"
  - "Have you ever heard of a <a href='https://mathspp.com/blog/problems/quarrel-in-the-shire'>maths problem based on Lord of The Rings characters</a>?"
  - "I can't dance but <a href='https://mathspp.com/blog/problems/a-dancing-triangle'>this</a> triangle sure can!"
@@ -11,6 +14,8 @@ RANDOM_SENTENCES:
  - "The mathematician <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://en.wikipedia.org/wiki/Évariste_Galois'>Évariste Galois</a> died at the age of 20 but not before solving a problem that had been standing for 350 years."
  - "There are seven mathematics problems called <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://en.wikipedia.org/wiki/Millennium_Prize_Problems'>Millenium Prize Problems</a>, each with a $1,000,000 bounty."
  - "Russian mathematician Grigori Perelman <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://en.wikipedia.org/wiki/Grigori_Perelman#Fields_Medal_and_Millennium_Prize'>refused a $1,000,000 prize</a> after solving one of the seven <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://en.wikipedia.org/wiki/Millennium_Prize_Problems'>Millenium Prize Problems</a>."
+ - "The number 1 is <i>not</i> a prime number."
+ - "Number 73 is a number packed with interesting properties."
  # funny
  - "There's 10 types of people in the world, those who know binary and those who don't."
  - "I hypothesize that somewhere on Earth, someone is reading this sentence."
@@ -35,6 +40,8 @@ RANDOM_SENTENCES:
  - "Maths is everywhere<sup><a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://xkcd.com/285/'>[citation needed]</a></sup>."
 # "thank you" notes
  - "Thank you <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://github.com/abrudz'>@abrudz</a> for helping me style this."
+ - "Thank you <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://github.com/pineman'>@pineman</a> for having hosted and managed my site for so long!"
+ - "Thank you <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://www.youtube.com/channel/UC5RV_s1Jh-jQI4HfexEIb2Q'>MathGurl</a> for having inspired me so much."
 # untranslatable
  - "Are monsters good at maths? Not really, unless you Count Dracula."
  - "What do you call dudes who love maths? Algebros."
