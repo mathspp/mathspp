@@ -8,7 +8,7 @@ HueHue is a very colourful game I wrote with my colleague [@inesfmarques][ines].
 
 ===
 
-![a screenshot of an initial scrambled degradee from the game](_start.png)
+![a screenshot of an initial scrambled degradee from the game](a_start.png)
 
 We programmed a small puzzle game, based solely on colours, that we called HueHue (please mind that the idea for how the game works is not ours). The way the game works is pretty straightforward: you start with a bunch of coloured tiles all mixed up, like in the image above, and then you want to organize them to create a degradee like the one below! The only thing you can take for granted is that the four corners are already correctly placed (and you can't move them, just to prevent accidents).
 
