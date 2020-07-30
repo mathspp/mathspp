@@ -1,7 +1,8 @@
 ---
 metadata:
-    description: This blog post contains a problem related to the riddle of the water buckets and a setting in which it is impossible to solve.
-title: "Problem #004 - solvability of the water buckets"
+    description: This blog post contains a problem related to the riddle of the water
+        buckets and a setting in which it is impossible to solve.
+title: 'Problem #004 - solvability of the water buckets'
 ---
 
 In [this post][wbr post] I talked about the riddle of the water buckets. Now I challenge you to prove that in some situations it is _impossible_ to solve it!

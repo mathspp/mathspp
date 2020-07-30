@@ -1,7 +1,8 @@
 ---
 metadata:
-    description: Este artigo expõe um problema relativo à charada com baldes de água e mostra que nem sempre a charada tem solução.
-title: "Problema #004 - solubilidade da charada dos baldes"
+    description: Este artigo expõe um problema relativo à charada com baldes de água
+        e mostra que nem sempre a charada tem solução.
+title: 'Problema #004 - solubilidade da charada dos baldes'
 ---
 
 [Neste artigo][wbr post] eu falei de uma charada com baldes com água. Agora desafio-te a mostrares que há situações em que a charada é _impossível_ de resolver!
