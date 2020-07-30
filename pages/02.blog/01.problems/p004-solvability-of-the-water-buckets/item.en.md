@@ -18,7 +18,7 @@ You have $n$ buckets, each bucket with capacity for $c_i$ litres of water, $i = 
  - completely empty bucket $i$ so that it now holds $0$ litres of water;
  - move water from bucket $i$ to bucket $j$, until bucket $i$ becomes empty or bucket $j$ becomes full, whatever happens first.
 
-Prove that, if $t$ is not a multiple of the greatest common divisor of the $c_i$, $i = 1, \cdots, n$ then this is impossible to achieve.
+Prove that, if $t$ is not a multiple of the greatest common divisor of the $c_i$, $i = 1, \cdots, n$ then it is impossible for a single bucket to hold exactly $t$ litres of water.
 
 For example, if the buckets have capacities $4$ and $6$ and $t = 3$, then you can't perform the moves above to get exactly $3$ litres of water into one of the two buckets as the greatest commond divisor of $4$ and $6$ is $\gcd(4, 6) = 2$ and $3$ is _not_ a multiple of $2$.
 
