@@ -4,7 +4,7 @@ metadata:
 title: "Problema #004 - solubilidade da charada dos baldes"
 ---
 
-[Neste artigo anterior][wbr post] eu falei de uma charada com baldes com água. Agora desafio-te a mostrares que há situações em que a charada é _impossível_ de resolver!
+[Neste artigo][wbr post] eu falei de uma charada com baldes com água. Agora desafio-te a mostrares que há situações em que a charada é _impossível_ de resolver!
 
 ===
 

@@ -4,7 +4,7 @@ metadata:
 title: "Problem #004 - solvability of the water buckets"
 ---
 
-In [this previous post][wbr post] I talked about the riddle of the water buckets. Now I challenge you to prove that in some situations it is _impossible_ to solve it!
+In [this post][wbr post] I talked about the riddle of the water buckets. Now I challenge you to prove that in some situations it is _impossible_ to solve it!
 
 ===
 
