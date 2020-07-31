@@ -1,0 +1,15 @@
+date: 29-11-2017
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image:
+slug: solving-mazes-with-programming
+taxonomy:
+    category: blogpost
+    tag:
+      - dijkstra
+      - graphs
+      - image processing
+      - programming
+      - pygame
+      - python
+      - visualization
