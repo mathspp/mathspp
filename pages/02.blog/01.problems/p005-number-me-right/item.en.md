@@ -44,7 +44,9 @@ In the image above, we exemplify with $P(2)$ already filled in. Now we will show
 
 We start by filling in the $SE$ square of size $2^n$, the one to the right of the square already filled (the $4 \times 4$ on the bottom right in the image). In every row, all numbers from $0$ to $2^n - 1$ have been used, so it should be fairly easy to see that the numbering on that square is going to be exactly the same as in the square $SW$, except that we need to sum $2^n$ to each cell. We just need to check that the rule to compute the values still remains valid. Let $0 \leq i < 2^n$ and $0 \leq j < 2^n$. Then $(i, 2^n+j)$ gives valid coordinates for a cell in the bottom right square of size $2^n$ and
 
-\[i \hat{} (2^n + j) = 2^n +  (i \hat{} j) = 2^n + c(i,j)\]
+\[
+    i \hat{} (2^n + j) = 2^n +  (i \hat{} j) = 2^n + c(i,j)
+\]
 
 which is exactly the value we assigned to the cell $(i, 2^n + j)$. The reason why $i \hat{} (2^n + j) = 2^n + (i \hat{} j)$ is because $i < 2^n$. Just note that $2^n + j$ starts with a $1$ in binary, while $i$ has to start with a $0$ if we are to force the binary representations of $2^n + j$ and $i$ to have the same number of digits.
 
@@ -58,7 +60,9 @@ Symmetry gives that the $NW$ square of size $2^n$ is exactly the same as the $SE
 
 So now we are left with understanding how the $NE$ corner is filled in. Both to the left (in $NW$) and below it (in $SE$) all numbers from $2^n$ to $2^{n+1}-1$ have been used, so in each row and in each column we can still freely use any number from $0$ to $2^n - 1$. But that is exactly the same as if we were to fill the $SW$ corner of the board, hence squares $NE$ and $SW$ are the same. Now let $0 \leq i, j < 2^n$. Then $(2^n + i, 2^n + j)$ is a pair of coordinates of a cell in the $NE$ square and it is immediate that
 
-\[c(2^n+i, 2^n+j) = (2^n + i)\hat{}(2^n+j) = i\hat{}j = c(i,j)\ ,\]
+\[
+    c(2^n+i, 2^n+j) = (2^n + i)\hat{}(2^n+j) = i\hat{}j = c(i,j)\ ,
+\]
 
 which is the value in the corresponding cell in the $SW$ square, leaving us at
 
@@ -66,14 +70,18 @@ which is the value in the corresponding cell in the $SW$ square, leaving us at
 
 This concludes the inductive step, and hence the XOR rule works! To compute the value in the cell with row $1997$ and column $2018$ we just have to write $1996$ and $2017$ in binary:
 
-\[ \begin{cases}
-1996 = 1024 + 512 + 256 + 128 + 64 + 8 + 4 \\
-2017 = 1024 + 512 + 256 + 128 + 64 + 32 + 1
-\end{cases} \]
+\[
+    \begin{cases}
+        1996 = 1024 + 512 + 256 + 128 + 64 + 8 + 4 \\
+        2017 = 1024 + 512 + 256 + 128 + 64 + 32 + 1
+    \end{cases}
+\]
 
 which means $1996$ is $11111001100_2$ in binary while $2017$ is $11111100001_2$, thus
 
-\[c(1996, 2017) = 11111001100_2 \hat{} 11111100001_2 = 00000101101_2\]
+\[
+    c(1996, 2017) = 11111001100_2 \hat{} 11111100001_2 = 00000101101_2
+\]
 
 And the number we are after is exactly $1 + 4 + 8 + 32 = 45$.
 
