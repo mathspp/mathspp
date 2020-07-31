@@ -49,3 +49,8 @@ RANDOM_SENTENCES:
 
 CUSTOM_NEWSLETTER: "Stay in the loop"
 CUSTOM_SUBSCRIBE_NEWSLETTER: "Subscribe to the newsletter"
+
+THEME_QUARK:
+  SIDEBAR:
+    REMAINING_TAGS:
+      SUMMARY: "Remaining Tags"

@@ -54,6 +54,8 @@ PLUGIN_SIMPLESEARCH:
 
 THEME_QUARK:
   SIDEBAR:
+    REMAINING_TAGS:
+      SUMMARY: "Etiquetas restantes"
     POPULAR_TAGS:
       HEADLINE: "Etiquetas populares"
     ARCHIVES:
