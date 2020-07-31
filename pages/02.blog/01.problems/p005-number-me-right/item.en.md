@@ -1,6 +1,7 @@
 ---
 metadata:
-    description: This blog post concerns a really interesting problem that takes place on an infinite board!
+    description: This blog post concerns a really interesting problem that takes place
+        on an infinite board!
 title: 'Problem #005: number me right'
 ---
 
@@ -29,10 +30,16 @@ The bitwise XOR takes two bit representations and for each pair of corresponding
 
 Notice how this aligns with the two observations made:
 
- - the diagonal only has zeros; in the diagonal the row $i$ and column $j$ are the same, $i = j$ and $x \hat{} x = 0$;
- - being in row $i$ and column $j$ is the same as being in column $i$ and row $j$; $x \hat{} y = y \hat{} x$.
+ - the diagonal only has zeros; in the diagonal the row and the column have the same number and $n \hat{} n = 0$;
+ - being in row $i$ and column $j$ is the same as being in column $i$ and row $j$; $i \hat{} j = j \hat{} i$.
 
-From now on we will renumber the rows and columns so that they start at $0$ and we will let $c(i,j)$ be the value in the $i$th row, $j$th column. Let $P(n)$ be the statement "the bottom left square of the table with side $2^n$ has, in every row, every single number from $0$ to $2^n -1$ and $\forall i,j \leq 2^n-1: c(i,j) = i \hat{} j$. This final part means that the value of a specific cell is calculated with the XOR operation.
+From now on we will renumber the rows and columns so that they start at $0$ and we will let $c(i,j)$ be the value in the $i$th row, $j$th column. Let $P(n)$ be the statement "the bottom left square of the table with side $2^n$ has, in every row, every single number from $0$ to $2^n -1$ **and**
+
+\[
+    \forall i,j \leq 2^n-1: c(i,j) = i \hat{} j\ .
+\]
+
+This final part means that the value of a specific cell is calculated with the XOR operation.
 
 We will prove this by induction. The statement $P(0)$ is trivially true as the square with side $2^0 = 1$ is just the square with the number $0$ that the problem statement fills in for us, and $c(0,0) = 0 \hat{} 0 = 0$.
 
