@@ -1,6 +1,7 @@
 ---
 metadata:
-    description: In this blog post I will be showing how I wrote a program to solve mazes for me.
+    description: In this blog post I will be showing how I wrote a program to solve
+        mazes for me.
 title: Solving mazes with programming
 ---
 
