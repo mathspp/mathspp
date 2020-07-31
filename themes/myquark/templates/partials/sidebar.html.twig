@@ -32,7 +32,7 @@
 {% if config.plugins.taxonomylist.enabled %}
 <div class="sidebar-content">
     <details>
-    <summary><h4>All Tags</h4></summary>
+    <summary>All Tags</summary>
         {% include 'partials/taxonomylist_full.html.twig' with {'base_url':new_base_url, 'taxonomy':'tag', 'top_tags':top_tags} %}
     </details>
 </div>
