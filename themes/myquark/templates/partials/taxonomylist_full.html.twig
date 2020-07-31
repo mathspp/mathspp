@@ -2,9 +2,9 @@
 
 {% if taxlist %}
 <span class="tags">
-    {% for tax,value in taxlist[taxonomy]|slice(0, top_tags) %}
+    {% for tax,value in taxlist[taxonomy]|slice(top_tags) %}
         {% set label_class = uri.param(taxonomy) == tax ? 'label-primary' : 'label-secondary' %}
-        <a class="label label-rounded {{ label_class }}" href="{{ base_url }}/{{ taxonomy }}{{ config.system.param_sep }}{{ tax }}">{{ tax }} | {{ value }}</a>
+        <a class="label label-rounded {{ label_class }}" href="{{ base_url }}/{{ taxonomy }}{{ config.system.param_sep }}{{ tax }}">{{ tax }}</a>
     {% endfor %}
 </span>
 {% endif %}
