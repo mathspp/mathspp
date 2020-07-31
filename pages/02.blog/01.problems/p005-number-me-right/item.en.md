@@ -4,13 +4,15 @@ metadata:
 title: 'Problem #005: number me right'
 ---
 
-This post's problem is a really interesting problem I solved two very distinct times. The first time I solved it I failed to prove exactly how it works, and some years later I remembered the problem statement and was able to solve it properly the second time around.
+This post's problem is a really interesting problem I solved two times. The first time I solved it I failed to prove exactly how it works... then some years later I remembered the problem statement and was able to solve it properly. Let's see how you do!
 
 ===
 
 ### Problem statement
 
 Take a chessboard and extend it indefinitely upwards and to the right. In the bottom leftmost corner you put a $0$. For every other cell, you insert the smallest non-negative integer that hasn't been used neither in the same row, to the left of the cell, nor in the same column, below it. So, for example, the first row will have the numbers $0, 1, 2, 3, \cdots $. What is the number that appears in the $1997$th row, $2018$th column?
+
+!!! Give it some thought... my best advice would be for you to create a grid in your piece of paper and start filling it out as stated by the rules. Can you find a pattern?
 
 ### Solution
 
@@ -34,13 +36,17 @@ From now on we will renumber the rows and columns so that they start at $0$ and 
 
 We will prove this by induction. The statement $P(0)$ is trivially true as the square with side $2^0 = 1$ is just the square with the number $0$ that the problem statement fills in for us, and $c(0,0) = 0 \hat{} 0 = 0$.
 
-Assume $P(n)$ is true. We show this implies that $P(n+1)$.
+Assume $P(n)$ is true. We show this implies that $P(n+1)$ is also true.
 
 ![A 4 by 4 square already filled in](nmr_1.png)
 
 In the image above, we exemplify with $P(2)$ already filled in. Now we will show that we can fill the whole square in the image by following the same rule (i.e. using bitwise XOR) and we show that every row will hold the numbers $0, 1, \cdots, 6, 7$. To make things easier for everyone, let's say the big square in the image is split into four smaller squares; the $SW$ square is already filled in and on top of it is the $NW$ square. To the right of the $SW$ square is the $SE$ square and in the top right corner of the big $8 \times 8$ square is the $4 \times 4$ square we will call $NE$.
 
-We start by filling in the $SE$ square of size $2^n$, the one to the right of the square already filled (the $4 \times 4$ on the bottom right in the image). In every row, all numbers from $0$ to $2^n - 1$ have been used, so it should be fairly easy to see that the numbering on that square is going to be exactly the same as in the square $SW$, except that we need to sum $2^n$ to each cell. We just need to check that the rule to compute the values still remains valid. Let $0 \leq i < 2^n$ and $0 \leq j < 2^n$. $(i, 2^n+j)$ gives valid coordinates for a cell in the bottom right square of size $2^n$; $i \hat{} (2^n + j) = 2^n +  (i \hat{} j) = 2^n + c(i,j)$ which is exactly the value we assigned to the cell $(i, 2^n + j)$. The reason why $i \hat{} (2^n + j) = 2^n + (i \hat{} j)$ is because $i < 2^n$. Just note that $2^n + j$ starts with a $1$ in binary, while $i$ has to start with a $0$ if we are to force the binary representations of $2^n + j$ and $i$ to have the same number of digits.
+We start by filling in the $SE$ square of size $2^n$, the one to the right of the square already filled (the $4 \times 4$ on the bottom right in the image). In every row, all numbers from $0$ to $2^n - 1$ have been used, so it should be fairly easy to see that the numbering on that square is going to be exactly the same as in the square $SW$, except that we need to sum $2^n$ to each cell. We just need to check that the rule to compute the values still remains valid. Let $0 \leq i < 2^n$ and $0 \leq j < 2^n$. Then $(i, 2^n+j)$ gives valid coordinates for a cell in the bottom right square of size $2^n$ and
+
+\[i \hat{} (2^n + j) = 2^n +  (i \hat{} j) = 2^n + c(i,j)\]
+
+which is exactly the value we assigned to the cell $(i, 2^n + j)$. The reason why $i \hat{} (2^n + j) = 2^n + (i \hat{} j)$ is because $i < 2^n$. Just note that $2^n + j$ starts with a $1$ in binary, while $i$ has to start with a $0$ if we are to force the binary representations of $2^n + j$ and $i$ to have the same number of digits.
 
 This leaves us at:
 
@@ -50,20 +56,24 @@ Symmetry gives that the $NW$ square of size $2^n$ is exactly the same as the $SE
 
 ![An L shaped region filled in](nmr_3.png)
 
-So now we are left with understanding how the $NE$ corner is filled in. Both to the left (in $NW$) and below it (in $SE$) all numbers from $2^n$ to $2^{n+1}-1$ have been used, so in each row and in each column we can still freely use any number from $0$ to $2^n - 1$. But that is exactly the same as if we were to fill the $SW$ corner of the board, hence squares $NE$ and $SW$ are the same. Now let $0 \leq i, j < 2^n$. Then $(2^n + i, 2^n + j)$ is a pair of coordinates of a cell in the $NE$ square and it is immediate that $c(2^n+i, 2^n+j) = (2^n + i)\hat{}(2^n+j) = i\hat{}j = c(i,j)$, which is the value in the corresponding cell in the $SW$ square, leaving us at
+So now we are left with understanding how the $NE$ corner is filled in. Both to the left (in $NW$) and below it (in $SE$) all numbers from $2^n$ to $2^{n+1}-1$ have been used, so in each row and in each column we can still freely use any number from $0$ to $2^n - 1$. But that is exactly the same as if we were to fill the $SW$ corner of the board, hence squares $NE$ and $SW$ are the same. Now let $0 \leq i, j < 2^n$. Then $(2^n + i, 2^n + j)$ is a pair of coordinates of a cell in the $NE$ square and it is immediate that
+
+\[c(2^n+i, 2^n+j) = (2^n + i)\hat{}(2^n+j) = i\hat{}j = c(i,j)\ ,\]
+
+which is the value in the corresponding cell in the $SW$ square, leaving us at
 
 ![The 8 by 8 square filled in](nmr_4.png)
 
 This concludes the inductive step, and hence the XOR rule works! To compute the value in the cell with row $1997$ and column $2018$ we just have to write $1996$ and $2017$ in binary:
 
-$$\begin{cases}
+\[ \begin{cases}
 1996 = 1024 + 512 + 256 + 128 + 64 + 8 + 4 \\
 2017 = 1024 + 512 + 256 + 128 + 64 + 32 + 1
-\end{cases}$$
+\end{cases} \]
 
 which means $1996$ is $11111001100_2$ in binary while $2017$ is $11111100001_2$, thus
 
-$$c(1996, 2017) = 11111001100_2 \hat{} 11111100001_2 = 00000101101_2$$
+\[c(1996, 2017) = 11111001100_2 \hat{} 11111100001_2 = 00000101101_2\]
 
 And the number we are after is exactly $1 + 4 + 8 + 32 = 45$.
 
