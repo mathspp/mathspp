@@ -8,7 +8,7 @@ Let's prove that, if a set has size $n$, then that same set has exactly $2^n$ su
 
 ===
 
-![|S| = n implies that |P(S)| = 2^n](subsets.png)
+![|S| = n implies that |P(S)| = 2^n](subsets.png?resize=400,200)
 
 ### Twitter proof
 
