@@ -8,7 +8,7 @@ Vou provar que, se um conjunto tiver $n$ elements, então esse conjunto tem exat
 
 ===
 
-![|S| = n implies that |P(S)| = 2^n](subsets.png)
+![|S| = n implies that |P(S)| = 2^n](subsets.png?crop=0,50,532,200)
 
 ### Prova num tweet
 
