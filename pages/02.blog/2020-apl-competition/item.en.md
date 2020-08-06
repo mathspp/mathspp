@@ -186,6 +186,8 @@ This was, by far, my favourite problem of the competition. I wrote two solutions
 
  > "This is the most difficult problem in the competition and likely requires an iterative or recursive solution. (If you find an elegant, array-oriented solution, we'll be really impressed!)"
 
+##### Recursive
+
 <script src="https://gist.github.com/RojerGS/8845dc6a7191bc66cb9d2733e44261d5.js"></script>
 
 My recursive solution started out way bigger than what it is now, given that with more thinking I realized several parts were unnecessary. The basic idea is to parse the character matrix with the mobile into a tree-like data structure similar to the one I found in [brainf*ck's workspace][bf].
@@ -215,6 +217,8 @@ into something like
 ```
 
 Then I would traverse the tree structure and compute everything I want and need, from the total weight of the mobile, to the set of letters used by the mobile, to the weight of each particular letter. Except I don't need any of that. Even now, I could compute everything in one go instead of creating the intermediate representation I showed above, but I figured it would be slightly more elegant this way, assuming the hypothetical scenario in which you'd want to perform more operations on the mobile.
+
+##### Array-oriented
 
 When everything else was solved, I set out to solve this problem in an array-oriented way. I knew it was possible, I just had to figure out how to do it. I can say there was a week in which I did two $2$h walks and most of the time I was walking I was trying to figure out how to make this work.
 
