@@ -77,7 +77,7 @@ Problem 4 had two tasks borrowed from the [Rosalind] website, a website with pro
 
 For the first task I tried really hard to do it in an array-oriented way without using the each `¨` operator, which for me looks like a `for elem in iterable` loop in Python (and a loop I am very used to using). I still ended up using `⍤0 1` which to me looks a bit like the `¨`, but I was happy with what I had done so I let the `⍤` be.
 
-The second task was _really_ easy and I just had to implement repeated squaring so as to make `PowerMod` an efficient function. Maybe part of the challenge of this problem was in figuring out that a set of $n$ elements has $2^n$ subsets but I have studied this in my degree so I did not have to spend any time thinking about that. Heck, you can even read [this short proof][tp-sets] of this fact; it's so short it fits in a tweet! For those of you who don't know the algorithm, repeated squaring is a really efficient way of computing $b^n$ for large $n$. Let's say we want to compute $2^857$.
+The second task was _really_ easy and I just had to implement repeated squaring so as to make `PowerMod` an efficient function. Maybe part of the challenge of this problem was in figuring out that a set of $n$ elements has $2^n$ subsets but I have studied this in my degree so I did not have to spend any time thinking about that. Heck, you can even read [this short proof][tp-sets] of this fact; it's so short it fits in a tweet! For those of you who don't know the algorithm, repeated squaring is a really efficient way of computing $b^n$ for large $n$. Let's say we want to compute $2^{857}$.
 
 We just have to note that
 
@@ -149,7 +149,7 @@ The second task was particularly easy and a simple train solved it neatly (I thi
 
 <script src="https://gist.github.com/RojerGS/ddc89dbebab4fd7a812ea83f517c6042.js"></script>
 
-I didn't enjoy problem $6$ very much because I figured regular expressions would do the job fairly well and the other bit of work that we had to do was effectily offered to us in the problem statement in the problem notes. I tried making the most out of it by trying not to use `⎕nl`, which had me write something that looks like a `try ... except ...` block in Python. In the end I reverted back to the `⎕nl` solution because it looked more APLish.
+I didn't enjoy problem $6$ very much because I figured regular expressions would do the job fairly well; the other bit of work that we had to do was effectily offered to us in the problem notes. I tried to make the most out of this problem by avoiding the use of `⎕nl`, which had me write something that looks like a `try ... except ...` block in Python. In the end I reverted back to the `⎕nl` solution because it looked more APLish.
 
 #### Problem 7
 
