@@ -77,7 +77,7 @@ Problem 4 had two tasks borrowed from the [Rosalind] website, a website with pro
 
 For the first task I tried really hard to do it in an array-oriented way without using the each `¨` operator, which for me looks like a `for elem in iterable` loop in Python (and a loop I am very used to using). I still ended up using `⍤0 1` which to me looks a bit like the `¨`, but I was happy with what I had done so I let the `⍤` be.
 
-The second task was _really_ easy and I just had to implement repeated squaring so as to make `PowerMod` an efficient function. Maybe part of the challenge of this problem was in figuring out that a set of $n$ elements has $2^n$ subsets but I have studied this in my degree so I did not have to spend any time thinking about that. For those of you who don't know the algorithm, repeated squaring is a really efficient way of computing $b^n$ for large $n$. Let's say we want to compute $2^857$.
+The second task was _really_ easy and I just had to implement repeated squaring so as to make `PowerMod` an efficient function. Maybe part of the challenge of this problem was in figuring out that a set of $n$ elements has $2^n$ subsets but I have studied this in my degree so I did not have to spend any time thinking about that. Heck, you can even read [this short proof][tp-sets] of this fact; it's so short it fits in a tweet! For those of you who don't know the algorithm, repeated squaring is a really efficient way of computing $b^n$ for large $n$. Let's say we want to compute $2^857$.
 
 We just have to note that
 
@@ -176,9 +176,9 @@ The reason for which I found this problem easy was the same reason that led me t
 
  > "Understanding the nuances of the problem is the key to developing a good algorithm."
 
-I did went online and looked up literature on subset sum problems... And I found nothing to looked suitable for this problem.
+I did went online and looked up literature on subset sum problems... And I found nothing that looked suitable for this problem.
 
-The point here is that my solution is pretty much brute-force... But it is really elegant (or at least, I think it is) in the sense that it is purely array-oriented; and because the problem statement guarantees a cap on the size of the input, it works really fast... So all in all, I am very happy with this solution of mine _but_ the judges of the competition may not!
+The point here is that my solution is pretty much brute-force... But it is really elegant (or at least, I think it is) in the sense that it is purely array-oriented; and because the problem statement guarantees a cap on the size of the input, it works really fast... So all in all, I am very happy with this solution of mine _but_ the judges of the competition may not be!
 
 #### Problem 9
 
@@ -235,3 +235,4 @@ Another small thing I did that I take pride on was not assuming the end points o
 [The APL Orchard]: https://chat.stackexchange.com/rooms/52405/the-apl-orchard
 [Rosalind]: http://rosalind.info
 [bf]: https://dfns.dyalog.com/n_bf.htm
+[tp-sets]: https://mathspp.com/blog/twitter-proofs/subsets-of-a-set
