@@ -16,7 +16,7 @@ In Phase $1$ of the competition we are given $10$ simpler problems that can be u
 
 Phase $2$ of the competition is composed of a variable number of problems of varying difficulties; some are really easy and some are really hard. You can find the problem sets for all previous competitions [here][prob-sets].
 
-I started learning APL around March of 2020 with the sole purpose of competing in the 2020 edition of the student competition. The submissions were due by the 31st of July (a week ago) and I am pleased to tell you - not that you care - that I submitted solutions to all problems and I feel I did a decent job. On the other hand, I am a very young APLer & I have _no_ idea who are the students from all around the world that competed so I wouldn't be surprised if I place poorly in the final ranking.
+I started learning APL around March of 2020 with the sole purpose of competing in the 2020 edition of the student competition (ok, I also wanted to have fun and distract myself from the current world events [at around this time the coronavirus outbreak reached Portugal]). The submissions were due by the 31st of July (a week ago) and I am pleased to tell you - not that you care - that I submitted solutions to all problems and I feel I did a decent job. On the other hand, I am a very young APLer & I have _no_ idea who are the students from all around the world that competed so I wouldn't be surprised if I place poorly in the final ranking.
 
 Regardless of that, I have found APL to be really enjoyable for various reasons, from the fact that I feel it is very maths oriented to it being so "weird" with its funny-looking primitive functions (e.g. `⍋` or `⍳`). Another thing that helped a lot was me having found APL through [codegolf], which led me to [The APL Orchard], where a bunch of friendly folks taught me pretty much everything I know about APL and array-oriented programming.
 
@@ -61,7 +61,7 @@ I wrote a first solution for this problem that only worked for inputs of lengths
 
 <script src="https://gist.github.com/RojerGS/393a63a1af1b21c7edbd98491d5b3c70.js"></script>
 
-For problem 2 it looked like I would be able to write the case `⍺ < 0` in terms of the `⍺ > 0` case... And for some time I thought I had done that, but then I noticed my code was failing for one of the test cases and I fell back to writing the `⍺ < 0` case explicitly.
+For problem $2$ it looked like I would be able to write the case `⍺ < 0` in terms of the `⍺ > 0` case... And for some time I thought I had done that, but then I noticed my code was failing for one of the test cases and I fell back to writing the `⍺ < 0` case explicitly.
 
 #### Problem 3
 
@@ -73,7 +73,7 @@ This was a fairly standard problem and regexes do all the heavy lifting for me.
 
 <script src="https://gist.github.com/RojerGS/aa060988925754356166d76904823c7b.js"></script>
 
-Problem 4 had two tasks borrowed from the [Rosalind] website, a website with problems on bioinformatics. Even so, the two tasks aren't connected in any obvious way and the second task is just a simple problem in maths (althought I am not saying it doesn't matter for bioinformatics!).
+Problem $4$ had two tasks borrowed from the [Rosalind] website, a website with problems on bioinformatics. Even so, the two tasks aren't connected in any obvious way and the second task is just a simple problem in maths (althought I am not saying it doesn't matter for bioinformatics!).
 
 For the first task I tried really hard to do it in an array-oriented way without using the each `¨` operator, which for me looks like a `for elem in iterable` loop in Python (and a loop I am very used to using). I still ended up using `⍤0 1` which to me looks a bit like the `¨`, but I was happy with what I had done so I let the `⍤` be.
 
@@ -96,6 +96,9 @@ and because of the recurrence relation
 \]
 
 we only need to compute $10$ powers, all of which are squares of the previously computed power (hence the name "repeated squaring"). Writing this algorithm in APL was funny and I didn't manage to avoid the usage of `⍣` to compute the squares... Now I feel dumb, I _just_ opened the interpreter as I was writing this and I could have gone with `*⍨\`, or maybe `{⍺←1 ⋄ m|⍺*⍵}\` so as to keep the modulo operations in every intermediate step... Oh boy, I hope this doesn't cost me too much!
+
+! **Edit** (10th of August of 2020):
+! Using `⍣` allows one to save computations because `f\v` applies `f` an $O(n^2)$ amount of times, if $n$ is the length of `v`, whereas `⍣` is just $O(n)$. I can't swear but I think I took this into consideration when solving the problem. On the other hand, [this dicussion on Reddit][reddit-post] showed me I could have gone with `m∘|⍤*⍨\` instead of `{⍺←1 ⋄ m|⍺*⍵}\` if I had gone with the scan approach.
 
 #### Problem 5
 
@@ -166,7 +169,7 @@ f ← {
 }
 ```
 
-Because `ReadUPC` is supposed to accept barcodes read from left to right and from right to left, I spent some time trying to figure out how an elegant way for the function to recursively call itself if the barcode was read from right to left. In the end, because of all the input checking I was doing I thought that would just make the function inefficient and I ended up using some basic arithmetics (multiplying by $1$ and by $0$) to distinguish between the two directions the input barcode could be given in.
+Because `ReadUPC` is supposed to accept barcodes read from left to right and from right to left, I spent some time trying to figure out how an elegant way for the function to recursively call itself if the barcode was read from right to left. In the end, because of all the input checking I was doing I thought that would just make the function inefficient and I ended up using some basic arithmetics (multiplying by $1$ and by $0$ strategically) to distinguish between the two directions the input barcode could be given in.
 
 #### Problem 8
 
@@ -228,6 +231,8 @@ In the end I managed to do it and I am really pleased with the end result; for a
 
 Another small thing I did that I take pride on was not assuming the end points of the mobile are upper case letters. For me, those end points can be any character that is not a blank space or any of `┐┴┌│─` as those are used for the structure of the mobile.
 
+Did _you_ compete in the 2020 Dyalog APL competition? Share your thoughts/solutions below!
+
 [apl-comp]: https://dyalogaplcompetition.com
 [Dyalog]: https://dyalog.com
 [prob-sets]: https://www.dyalog.com/student-competition.htm
@@ -236,3 +241,4 @@ Another small thing I did that I take pride on was not assuming the end points o
 [Rosalind]: http://rosalind.info
 [bf]: https://dfns.dyalog.com/n_bf.htm
 [tp-sets]: https://mathspp.com/blog/twitter-proofs/subsets-of-a-set
+[reddit-post]: https://www.reddit.com/r/apljk/comments/i6gqxs/my_two_cents_on_the_2020_apl_problem_solving/g0xlarf?utm_source=share&utm_medium=web2x
