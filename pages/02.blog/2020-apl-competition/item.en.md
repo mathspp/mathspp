@@ -98,6 +98,7 @@ and because of the recurrence relation
 we only need to compute $10$ powers, all of which are squares of the previously computed power (hence the name "repeated squaring"). Writing this algorithm in APL was funny and I didn't manage to avoid the usage of `⍣` to compute the squares... Now I feel dumb, I _just_ opened the interpreter as I was writing this and I could have gone with `*⍨\`, or maybe `{⍺←1 ⋄ m|⍺*⍵}\` so as to keep the modulo operations in every intermediate step... Oh boy, I hope this doesn't cost me too much!
 
 ! **Edit** (10th of August of 2020):
+!
 ! Using `⍣` allows one to save computations because `f\v` applies `f` an $O(n^2)$ amount of times, if $n$ is the length of `v`, whereas `⍣` is just $O(n)$. I can't swear but I think I took this into consideration when solving the problem. On the other hand, [this dicussion on Reddit][reddit-post] showed me I could have gone with `m∘|⍤*⍨\` instead of `{⍺←1 ⋄ m|⍺*⍵}\` if I had gone with the scan approach.
 
 #### Problem 5

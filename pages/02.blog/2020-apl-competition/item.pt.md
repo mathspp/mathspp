@@ -98,6 +98,7 @@ e por causa da relação de recorrência
 basta-nos calcular as primeiros $10$ potências, que são sempre o quadrado da última potência que acabei de calcular (daí o nome "elevar ao quadrado sucessivamente"...). Escrever este algoritmo em APL foi um desafio engraçado porque não consegui evitar a utilização do operador `⍣` para calcular as potências... E agora sinto-me parvo, abri _agora mesmo_ o interpretador enquanto escrevia isto e reparei que podia ter escrito `*⍨\`, ou talvez `{⍺←1 ⋄ m|⍺*⍵}\` para manter a operação de módulo entre cada cálculo auxiliar... Ora bolas, esperemos que isto não me prejudique muito!
 
 ! **Edicão** (10 de Agosto de 2020):
+!
 ! Usar `⍣` poupa-me algumas operações porque `f\v` aplica `f` um número de vezes que é $O(n^2)$, se $n$ for o comprimento do vetor `v`, ao passo que `⍣` é linear em `v`. Não posso jurar ter pensado nisto mas tenho a vaga ideia de o ter feito. Por outro lado, [esta discussão no Reddit][reddit-post] mostrou-me que se eu tivesse optado pelo "scan" podia ter usado `m∘|⍤*⍨\` em vez de `{⍺←1 ⋄ m|⍺*⍵}\`.
 
 #### Problema 5
