@@ -4,15 +4,15 @@ metadata:
 title: The CCC of proof methods
 ---
 
-In this post we will talk about three different, all very common, ways of writing proofs: contrapositive, contradiction and construction.
+In this post we will talk about three different, all very common, ways of writing proofs: proofs by construction, by contrapositive and by contradiction.
 
 ===
 
-![a board with some mathematical squiggles](board.jpg)
+![a board with some mathematical squiggles](board.jpg "Photo by Roman Mager on Unsplash")
 
-### Construction
+### Proof by construction
 
-Proofs by construction are probably the proofs that make more sense or are more intuitive in nature. When you prove something by construction, you explicitly build the thing that you described to exist, or give an explicit way of verifying what you described. This is very important because more often than not, mathematics can prove things like _"an object $X$ satisfying this and that property exists"_, but without providing any sensible means to find such object.
+Proofs by construction are probably the proofs that make more sense or are more intuitive in nature. When you prove something by construction, you explicitly build the thing that you described to exist, or give an explicit way of verifying what you described. This is very important because more often than not, mathematics can prove things like _"an object $x$ satisfying this and that property exists"_, but without providing any sensible means to find such object.
 
 A good example of a proof by construction is the proof that every function $f: \mathbb{R}\to\mathbb{R}$ can be decomposed into a sum $f(x) = O(x) + E(x)$ where $O(x)$ is an odd function and $E(x)$ is an even function, i.e.
 
@@ -54,7 +54,7 @@ $$
     E(-x) = \frac{f(-x) + f(-(-x))}{2} = \frac{f(-x) + f(x)}{2} = \frac{f(x) + f(-x)}{2} = E(x)
 $$
 
-Proofs by construction are my favourites and whenever I can I try to follow this proof method, as I find it very rewarding to build the object(s) described by a theorem or proposition or whatnot, instead of just proving they exist.
+Proofs by construction are my favourites and whenever I can I try to follow this proof method, as I find it very rewarding to build the object(s) described by a theorem or proposition or whatnot, instead of just proving they exist. Another neat example of a proof by construction can be read in [this brief twitter proof of mine][tp-irrationals].
 
 Another example of a proof by construction is this: prove that given pairs $\{(x_1, y_1), (x_2, y_2), \cdots, (x_{n+1}, y_{n+1})\}$ where $x_i \neq x_j\ \forall i\neq j$ there exists a polynomial $p(x)$ of degree at most $n$ such that $p(x_i) = y_i\ \forall 1\leq i\leq n+1$. To prove this we will show something easier: for the same set of points, we can find a set $\{l_1, l_2,\cdots, l_{n+1}\}$ of polynomials of degrees at most $n$ such that
 
@@ -109,7 +109,7 @@ has therefore degree $n$ or less.
 The two other methods we will see are indirect methods, in the sense that they prove statements but they do not provide a direct way of building the objects described.
 
 
-### Contrapositive
+### Proving the contrapositive
 
 The first indirect method I want to describe is when you prove an implication by proving its contrapositive. You can apply this method when you want to prove that some conditions $C $ imply a result $R $. That is, you want to show that whenever all conditions in $C $ are met, then you can observe result $R $; in symbols, $C \implies R $. The contrapositive of $C \implies R $ is $\neg R \implies \neg C $. In words, if you didn't observe result $R$ then not all conditions were met.
 
@@ -131,7 +131,7 @@ which means the difference between $a $ and $b $ is also even. But if $a$, $b$ w
 As another example, we will show that if $A, B \subset \mathbb{Z}$ are finite subsets of the integers and if $A \subset B$, then $\max A \leq \max B$. To prove this, we will show that $\max A > \max B \implies A \not\subset B $. In fact, let $a = \max A > \max B = b$ and we show that $a \not \in B$. If $a \in B$, then $b \geq a$ because $b = \max B$, but we know that $a > b$ so $a \not \in B$.
 
 
-### Contradiction
+### Arriving at a contradiction
 
 When you wish to prove something by contradiction, all you have to do is assume the contrary to what you want to prove, and then build some train of thought that eventually leads you to an absurd conclusion!
 
@@ -141,9 +141,11 @@ As an example, let us prove that if you pick $11$ integers from $\{1, 2, 3, \cdo
 
 Imagine ordering the $11$ integers we picked and writing them down in this way:
 
-$$a_0, a_1, a_2, a_3, a_4, a_5, a_6, a_7, a_8, a_9, a_{10}$$
+$$
+    a_0 < a_1 < a_2 < a_3 < a_4 < a_5 < a_6 < a_7 < a_8 < a_9 < a_{10}
+$$
 
-Where $a_0$ is the smallest integer we picked and $a_{10}$ is the biggest. Now we replace each $a_i$ with $a_i - a_{i-1},\ \forall i &gt; 0$, ending up with this:
+Now we replace each $a_i$ with $a_i - a_{i-1},\ \forall i &gt; 0$, ending up with this:
 
 $$
     \begin{align}
@@ -168,4 +170,8 @@ $$
 
 From this we conclude that $2$ divides $n$, and so actually we have $\sqrt{2} = \frac{m}{n} = \frac{2m'}{2n'} = \frac{m'}{n'}$ that contradicts our hypothesis that $\frac{m}{n}$ was already in its lowest terms, hence it is false that $\sqrt{2}$ is rational.
 
+A proof by contrapositive and a proof by contradiction are quite similar, but they are not the same thing. In a proof by contrapositive you take the negation of the result and you show it implies the negation of the initial assumptions. In a proof by contradiction you take your initial assumptions and the negation of your result and then try to reach an absurd conclusion.
+
 And this concludes my post on these three proof methods. Which one if your favourite?
+
+[tp-irrationals]: https://mathspp.com/blog/twitter-proofs/irrational-rationality
