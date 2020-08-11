@@ -113,7 +113,7 @@ The two other methods we will see are indirect methods, in the sense that they p
 
 The first indirect method I want to describe is when you prove an implication by proving its contrapositive. You can apply this method when you want to prove that some conditions $C $ imply a result $R $. That is, you want to show that whenever all conditions in $C $ are met, then you can observe result $R $; in symbols, $C \implies R $. The contrapositive of $C \implies R $ is $\neg R \implies \neg C $. In words, if you didn't observe result $R$ then not all conditions were met.
 
-If you think about it for a second, it is intuitive that $C\implies R $ and $\neg R \implies \neg C $ are the same... Meeting the conditions gives you $R $ ($C \implies R $) so if you didn't get the result you surely didn't have the conditions ($\neg R \implies \neg C $)! Because if you had had them, then you would also have the result... But you don't!
+If you think about it for a second, it is intuitive that $C\implies R $ and $\neg R \implies \neg C $ are the same... Meeting the conditions gives you $R $ ($C \implies R $) so if you didn't get the result you surely didn't have the conditions ($\neg R \implies \neg C $)! Because if you had them, then you would also have the result... But you don't!
 
 Let us now prove something by proving its contrapositive instead. We will show that if $s $ is the sum of two consecutive integers, then $s $ is odd. To prove the contrapositive we need to show that if $s $ is even, $s$ can't be the sum of two consecutive integers. This statement is fairly trivial, but we will do it anyway:
 
@@ -149,8 +149,8 @@ Now we replace each $a_i$ with $a_i - a_{i-1},\ \forall i &gt; 0$, ending up wit
 
 $$
     \begin{align}
-        &a_0, a_1-a_0, a_2-a_1, a_3-a_2, a_4-a_3, a_5-a_4,\\
-        &a_6-a_5, a_7-a_6, a_8-a_7, a_9-a_8, a_{10}-a_9
+        &a_0,\ a_1-a_0,\ a_2-a_1,\ a_3-a_2,\ a_4-a_3,\ a_5-a_4,\\
+        &a_6-a_5,\ a_7-a_6,\ a_8-a_7,\ a_9-a_8,\ a_{10}-a_9
     \end{align}
 $$
 

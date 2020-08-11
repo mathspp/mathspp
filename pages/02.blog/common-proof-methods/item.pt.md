@@ -149,8 +149,8 @@ Agora substituo cada $a_i$ por $a_i - a_{i-1},\ \forall i &gt; 0$, o que me dá:
 
 $$
     \begin{align}
-        &a_0, a_1-a_0, a_2-a_1, a_3-a_2, a_4-a_3, a_5-a_4,\\
-        &a_6-a_5, a_7-a_6, a_8-a_7, a_9-a_8, a_{10}-a_9
+        &a_0,\ a_1-a_0,\ a_2-a_1,\ a_3-a_2,\ a_4-a_3,\ a_5-a_4,\\
+        &a_6-a_5,\ a_7-a_6,\ a_8-a_7,\ a_9-a_8,\ a_{10}-a_9
     \end{align}
 $$
 
