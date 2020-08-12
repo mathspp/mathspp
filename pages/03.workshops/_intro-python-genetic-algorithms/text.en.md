@@ -1,9 +1,6 @@
 ---
-title: Introduction to Python with genetic algorithms
 menu: Intro Python genetic algorithms
 ---
-
-# Introduction to Python with genetic algorithms
 
 The aim of this workshop is to introduce people to programming. Instead of introducing the concepts point-blank, we use genetic algorithms as a motivation for the concepts taught.
 
