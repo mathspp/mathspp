@@ -8,7 +8,7 @@ features:
   - icon: fas fa-hiking
     text: 'For beginners: assumes no LaTeX knowledge whatsoever'
   - icon: fas fa-gift
-    text: 'Leave with a "gift": a cheatsheet with all you'll ever need'
+    text: 'Leave with a "gift": a cheatsheet with all you will ever need'
 menu: Intro Latex
 title: Introduction to LaTeX
 ---
