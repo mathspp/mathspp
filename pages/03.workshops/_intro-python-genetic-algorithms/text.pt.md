@@ -1,5 +1,5 @@
 ---
-menu: Intro Python GAs
+menu: Intro Python algoritmos genéticos
 ---
 
 O propósito deste workshop é introduzir as pessoas à programação. No entanto, em vez de debitar os conceitos em abstrato, os conceitos são introduzidos para implementar um algoritmo genético simples.
