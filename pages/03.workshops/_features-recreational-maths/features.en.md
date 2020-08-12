@@ -6,7 +6,7 @@ features:
   - icon: fas fa-puzzle-piece
     text: Try to crack deceptively simple puzzles
   - icon: far fa-comments
-    text: Engage in active debate
+    text: Engage in active debate about the workings of these puzzles
   - icon: fas fa-dumbbell
     text: Flex your gray matter like you have never
 menu: Recreational maths
