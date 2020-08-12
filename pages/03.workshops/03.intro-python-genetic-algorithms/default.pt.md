@@ -1,3 +1,8 @@
+---
+menu: Intro Python com AGs
+title: Introdução ao Python com algoritmos genéticos
+---
+
 # Introdução ao Python com algoritmos genéticos
 
 ## Objetivo
