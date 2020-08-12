@@ -13,4 +13,4 @@ Depois disso, uso matemática para **provarmos** em conjunto que os puzzles são
 
 E a melhor parte disto tudo é que eles acabam por achar bastante mais divertido do que o que eu acabei de fazer parecer!
 
-Podes ler mais sobre este workshop [aqui](recreational-maths).
+Podes ler mais sobre este workshop [aqui](../recreational-maths).

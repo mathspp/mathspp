@@ -13,4 +13,4 @@ Then I show them how mathematics can be used to **prove** those puzzles are unso
 
 And the best thing is, it is even more fun than what I made it sound like!
 
-You can read more about the workshop and the type of puzzles I present [here](recreational-maths).
+You can read more about the workshop and the type of puzzles I present [here](../recreational-maths).
