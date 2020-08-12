@@ -9,7 +9,7 @@ features:
     text: Participa no debate sobre o funcionamento dos quebra-cabeças
   - icon: fas fa-dumbbell
     text: Exercita a tua matéria cinzenta como nunca
-menu: Matemática recreativa
+menu: Matematica recreativa
 title: Matemática recreativa
 ---
 
