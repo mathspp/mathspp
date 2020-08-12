@@ -2,8 +2,6 @@
 title: Introduction to LaTeX
 ---
 
-# Introduction to LaTeX
-
 You can think of LaTeX as Microsoft Word for mathematicians. With LaTeX we can typeset weird, complicated formulas and make them look nice.
 
 A subset of LaTeX commands can even be used in this site: $ax^2 + bx + c = 0 \iff x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$.
