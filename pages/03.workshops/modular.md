@@ -13,5 +13,6 @@ content:
             - _intro-python-genetic-algorithms
             - _features-intro-latex
             - _intro-latex
+            - _features-recreational-maths
             - _recreational-maths
 ---
