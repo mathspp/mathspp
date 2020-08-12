@@ -14,7 +14,7 @@ Esta página contém a lista de <i>todas</i> as frases que podem aparecer aleato
 
 <ol>
 {% for sentence in sentences %}
-    <li id="li{{loop.index}}"><a class="anchor" id="{{loop.index}}"></a> {{ sentence }} </li>
+    <li id="li{{loop.index}}"><a class="headeroffset" id="{{loop.index}}"></a> {{ sentence }} </li>
 {% endfor %}
 </ol>
 

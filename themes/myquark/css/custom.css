@@ -15,7 +15,7 @@ li {
 
 /* https://stackoverflow.com/a/13184714/2828287 */
 /* Compensates for the height of the website header. */
-a.anchor {
+a.headeroffset {
     display: block;
     position: relative;
     top: -64px;
