@@ -1,9 +1,6 @@
 ---
-title: Introdução ao Python com algoritmos genéticos
 menu: Intro Python GAs
 ---
-
-# Introdução ao Python com algoritmos genéticos
 
 O propósito deste workshop é introduzir as pessoas à programação. No entanto, em vez de debitar os conceitos em abstrato, os conceitos são introduzidos para implementar um algoritmo genético simples.
 
