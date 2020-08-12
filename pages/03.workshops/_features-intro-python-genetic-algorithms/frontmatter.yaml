@@ -1,0 +1,7 @@
+features:
+  - icon: fas fa-laptop
+    text: A workshop with hands-on programming
+  - icon: fab fa-python
+    text: Powered by Python, one of the most popular programming languages in the world
+title: Introduction to Python with genetic algorithms
+menu: Intro Python genetic algorithms
