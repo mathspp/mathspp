@@ -10,6 +10,7 @@ features:
   - icon: fas fa-dna
     text: Aprende com exemplos tirados da teoria da evolução
 menu: Intro Python algoritmos genéticos
+slug: intro-python-algoritmos-geneticos
 title: Introdução ao Python com algoritmos genéticos
 ---
 
