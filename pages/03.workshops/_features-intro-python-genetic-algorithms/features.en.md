@@ -8,7 +8,7 @@ features:
   - icon: fas fa-hiking
     text: Created for programming beginners
   - icon: fas fa-dna
-    text: Build an evolutionary algorithm, that is, an algorithm that improves itself
+    text: Learn with examples from the theory of evolution
 menu: Intro Python genetic algorithms
 title: Introduction to Python with genetic algorithms
 ---

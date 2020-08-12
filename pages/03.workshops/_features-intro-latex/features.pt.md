@@ -9,8 +9,8 @@ features:
     text: Pensado para novatos da programação
   - icon: fas fa-dna
     text: Aprende com exemplos tirados da teoria da evolução
-menu: Intro Python algoritmos genéticos
-title: Introdução ao Python com algoritmos genéticos
+menu: Intro Latex
+title: Introdução ao LaTeX
 ---
 
-# Introdução ao Python com algoritmos genéticos
+# Introdução ao LaTeX
