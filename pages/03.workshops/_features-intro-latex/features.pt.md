@@ -2,13 +2,13 @@
 class: small
 features:
   - icon: fas fa-laptop
-    text: Um workshop prático de programação
-  - icon: fab fa-python
-    text: Aprende Python, uma das linguagens de programação mais populares do Mundo
+    text: Usa um computador para aprender LaTeX
+  - icon: fas fa-superscript
+    text: Aprende tudo o que precisas para escrever relatórios e outros documentos matemáticos
   - icon: fas fa-hiking
-    text: Pensado para novatos da programação
-  - icon: fas fa-dna
-    text: Aprende com exemplos tirados da teoria da evolução
+    text: Feito para principiantes que não sabem nada de LaTeX
+  - icon: fas fa-gift
+    text: 'Sais do workshop com um "presente": uma cábula que te vai ajudar a refrescar a memória'
 menu: Intro Latex
 title: Introdução ao LaTeX
 ---
