@@ -1,4 +1,5 @@
 ---
+class: small
 features:
   - icon: fas fa-laptop
     text: A workshop with hands-on programming
