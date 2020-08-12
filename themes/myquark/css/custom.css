@@ -15,9 +15,12 @@ li {
 
 /* https://stackoverflow.com/a/13184714/2828287 */
 /* Compensates for the height of the website header. */
-a.headeroffset {
-    display: block;
+a.headeroffset:target {
+    /*display: block;
     position: relative;
     top: -64px;
-    visibility: hidden;
+    visibility: hidden;*/
+    display: inline-block;
+    height: 80px;
+    margin-top: -80px;
 }
