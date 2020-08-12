@@ -51,7 +51,7 @@ If $k$ is negative, we repeat the above for $-k$. If $k = 0$, then $n = 0$.
 
 **Example:**
 
-If $k = 4$ we consider $c_1 = 1$, $c_2 = 11$, $c_3 = 111$, $c_4 = 1111$ and realize none of these numbers if multiple of $4$.
+If $k = 4$ we consider $c_1 = 1$, $c_2 = 11$, $c_3 = 111$, $c_4 = 1111$ and realize none of these numbers is a multiple of $4$.
 
 Now we take the remainders:
 
