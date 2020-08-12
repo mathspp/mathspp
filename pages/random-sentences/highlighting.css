@@ -1,12 +1,3 @@
-/* https://stackoverflow.com/a/13184714/2828287*/
-a.anchor {
-    display: block;
-    position: relative;
-    top: -64px;
-    visibility: hidden;
-}
-
-
 @keyframes fade {
     0% {
         background: #ff07;
