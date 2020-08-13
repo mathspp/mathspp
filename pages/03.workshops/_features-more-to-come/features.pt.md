@@ -63,4 +63,4 @@ Gosto _mesmo_ de ensinar e de partilhar conhecimento e de falar em público! E s
 
 Se quiseres que eu fale de alguma coisa que eu ainda não saiba, é uma excelente oportunidade para eu aprender! Gosto particularmente de dar workshops a alunos do ensino básico, secundário e superior. Se calhar é porque nunca tive uma boa plateia de adultos...
 
-Aqui tens uma lista de algumas das coisas que me interessam e sobre as quais eu gosto de ler:
+Aqui tens uma lista de algumas das coisas que me interessam e sobre as quais eu gosto de ler e falar:
