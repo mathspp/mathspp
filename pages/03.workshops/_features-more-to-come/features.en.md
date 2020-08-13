@@ -63,4 +63,4 @@ I _really_ like teaching, sharing knowledge in general and public speaking! And 
 
 If you want me to talk about something I have never learned, it is an excellent opportunity for me to learn! I find it particularly enjoyable when my audience is composed of middle school, high school or college-level students. Maybe it is because I never had a nice audience composed of adults...
 
-Here are some of the things that interest me and that I like reading about:
+Here are some of the things that interest me and that I like reading and talking about:
