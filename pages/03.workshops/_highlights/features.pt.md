@@ -9,6 +9,9 @@ features:
   - icon: fas fa-puzzle-piece
     text: Matemática recreativa
     url: '#matematica-recreativa'
+  - icon: fas fa-lock
+    text: Criptografia prática
+    url: '#criptografia-pratica'
 ---
 
 # Todos os workshops

@@ -9,6 +9,9 @@ features:
   - icon: fas fa-puzzle-piece
     text: Recreational maths
     url: '#recreational-maths'
+  - icon: fas fa-lock
+    text: Hands-on cryptography
+    url: '#hands-on-cryptography'
 ---
 
 # All the workshops
