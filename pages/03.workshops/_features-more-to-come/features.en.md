@@ -35,7 +35,7 @@ features:
   - icon: fas fa-ellipsis-h
     header: I like everything...
   - icon: far fa-question-circle
-    text: [Just ask me](mailto:mathspp@mathspp.com)
+    text: '[Just ask me](mailto:mathspp@mathspp.com)'
 
 menu: What is next
 title: What is next..?

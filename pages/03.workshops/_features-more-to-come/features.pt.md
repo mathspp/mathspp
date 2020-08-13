@@ -35,7 +35,7 @@ features:
   - icon: fas fa-ellipsis-h
     header: Eu gosto de tudo...
   - icon: far fa-question-circle
-    text: [Pergunta-me](mailto:mathspp@mathspp.com)
+    text: '[Pergunta-me](mailto:mathspp@mathspp.com)'
 
 menu: O que se segue
 title: O que se segue..?
