@@ -5,10 +5,11 @@ features:
     header: Programming
     text: Programming is my favourite hobby
   - icon: fab fa-python
-    header: I picked up Python when I was 15
+    header: Python
+    text: I picked up Python when I was 15
   - icon: fab fa-dyalog
     header: Dyalog APL
-    text: APL is a programming language that amazes me
+    text: APL is a programming language that I find fascinating
   - icon: fab fa-js
     header: JavaScript
     text: The programming language of the web
@@ -37,7 +38,7 @@ features:
     text: Developing better algorithms to solve our problems
   - icon: far fa-eye
     header: Computer vision
-    text: Teaching a computer to see
+    text: Teaching a computer to see so I can look at the really important things
 
   - icon: fas fa-plus
     header: Number theory
@@ -50,7 +51,7 @@ features:
     text: Ok, not everything; just a lot of things
   - icon: far fa-question-circle
     header: Just ask me
-    text: I love learning about new topics!
+    text: I love researching about new topics!
 
 menu: What is next
 title: What is next..?
