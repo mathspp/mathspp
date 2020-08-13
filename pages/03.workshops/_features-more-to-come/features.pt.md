@@ -2,31 +2,40 @@
 class: small
 features:
   - icon: fas fa-laptop
-    text: Programação
+    header: Programação
   - icon: fab fa-python
-    text: Python
+    header: Python
   - icon: fab fa-dyalog
-    text: Dyalog APL
+    header: Dyalog APL
   - icon: fab fa-js
-    text: JavaScript
+    header: JavaScript
 
   - icon: fas fa-plus
-    text: Matemática
+    header: Matemática
   - icon: fas fa-puzzle-piece
-    text: Quebra-cabeças e matemática recreativa
+    header: Quebra-cabeças e charadas lógicas
   - icon: fas fa-calculator
-    text: Métodos numéricos
+    header: Métodos numéricos
   - icon: fas fa-project-diagram
-    text: Teoria de grafos
+    header: Teoria de grafos
 
   - icon: fab fa-android
-    text: Desenvolvimento de apps
+    header: Desenvolvimento de apps
   - icon: fas fa-gamepad
-    text: Jogos de computador
+    header: Jogos de computador
   - icon: fas fa-brain
-    text: Inteligência artificial
+    header: Inteligência artificial
+  - icon: far fa-eye
+    header: Visão por computador
+
+  - icon: fas fa-plus
+    header: Teoria de números
+  - icon: fas fa-chess-board
+    header: Teoria de jogos
   - icon: fas fa-ellipsis-h
-    text: Gosto de tudo...
+    header: Eu gosto de tudo...
+  - icon: far fa-question-circle
+    text: [Pergunta-me](mailto:mathspp@mathspp.com)
 
 menu: O que se segue
 title: O que se segue..?
