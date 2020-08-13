@@ -61,4 +61,6 @@ title: O que se segue..?
 
 Gosto _mesmo_ de ensinar e de partilhar conhecimento e de falar em público! E sou, _pelo menos_, decente a fazer essas coisas, por isso se me quiseres convidar para dar um workshop/falar um pouco de ciência (especialmente matemática e computação, que são as ciências sobre as quais eu sei alguma coisa), [convida-me](mailto:mathspp@mathspp.com)!
 
-Tenho montes de interesses e se quiseres que eu fale de alguma coisa que eu ainda não saiba, é uma excelente oportunidade para eu aprender! Gosto particularmente de dar workshops a alunos do ensino básico, secundário e superior. Se calhar é porque nunca tive uma boa plateia de adultos...
+Se quiseres que eu fale de alguma coisa que eu ainda não saiba, é uma excelente oportunidade para eu aprender! Gosto particularmente de dar workshops a alunos do ensino básico, secundário e superior. Se calhar é porque nunca tive uma boa plateia de adultos...
+
+Aqui tens uma lista de algumas das coisas que me interessam e sobre as quais eu gosto de ler:
