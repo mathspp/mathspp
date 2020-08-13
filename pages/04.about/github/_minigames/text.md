@@ -1,4 +1,5 @@
 ---
+image_align: right
 process:
     twig: true
 ---
