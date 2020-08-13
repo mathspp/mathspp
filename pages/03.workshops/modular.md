@@ -2,7 +2,7 @@
 title: Workshops
 menu: Workshops
 onpage_menu: false
-body_classes: "header-dark"
+body_classes: "header-light"
 content:
     items: '@self.modular'
     order:
