@@ -4,7 +4,7 @@ title: GitHub
 visible: false
 
 onpage_menu: false
-body_classes: "header-dark header-transparent "
+body_classes: "header-light header-transparent "
 content:
     items: '@self.modular'
     order:
