@@ -13,7 +13,7 @@ features:
     text: Criptografia prática
     url: '#criptografia-pratica'
   - icon: fas fa-question
-    text: queres um workshop diferente..?
+    text: Queres um workshop diferente..?
     url: '#o-que-se-segue'
 ---
 
