@@ -12,6 +12,9 @@ features:
   - icon: fas fa-lock
     text: Hands-on cryptography
     url: '#hands-on-cryptography'
+  - icon: fas fa-question
+    text: want a different workshop..?
+    url: '#what-is-next'
 ---
 
 # All the workshops

@@ -15,4 +15,7 @@ content:
             - _intro-latex
             - _features-recreational-maths
             - _recreational-maths
+            - _features-hands-on-cryptography
+            - _hands-on-cryptography
+            - _features-more-to-come
 ---

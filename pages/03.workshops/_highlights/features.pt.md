@@ -12,6 +12,9 @@ features:
   - icon: fas fa-lock
     text: Criptografia prática
     url: '#criptografia-pratica'
+  - icon: fas fa-question
+    text: queres um workshop diferente..?
+    url: '#o-que-se-segue'
 ---
 
 # Todos os workshops
