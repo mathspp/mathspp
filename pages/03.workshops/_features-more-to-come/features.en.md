@@ -59,6 +59,6 @@ title: What is next..?
 
 # What is next..?
 
-I _really_ like teaching and sharing knowledge and public speaking! And I have some skills on those topics, so if you want to invite me to lead a workshop/talk a little bit about science (especially mathematics and computation, as those are the sciences that I know something about), [invite me](mailto:mathspp@mathspp.com)!
+I _really_ like teaching, sharing knowledge in general and public speaking! And I am, _at least_, decent at doing those things, so if you want to invite me to lead a workshop/talk a little bit about science (especially mathematics and computation, as those are the sciences that I know something about), [invite me](mailto:mathspp@mathspp.com)!
 
-I have several interests and if you want me to talk about something I haven't learned it, it is an excellent opportunity to learn! I find it particularly enjoyable when my audience is composed of middle school, high school or college-level students. Maybe it is because I never had a nice audience composed of adults...
+I have several interests and if you want me to talk about something I have never learned, it is an excellent opportunity for me to learn! I find it particularly enjoyable when my audience is composed of middle school, high school or college-level students. Maybe it is because I never had a nice audience composed of adults...
