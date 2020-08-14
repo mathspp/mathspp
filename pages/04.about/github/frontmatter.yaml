@@ -10,4 +10,5 @@ content:
     order:
         custom:
             - _hero
+            - _personal-repositories
             - _minigames
