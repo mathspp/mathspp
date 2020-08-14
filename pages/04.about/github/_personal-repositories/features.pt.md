@@ -6,6 +6,7 @@ features:
     text: Treino os meus conhecimentos em várias ferramentas
   - icon: fas fa-cubes
     text: Construo os projetos, uma linha de código de cada vez
+title: Repositórios pessoais
 ---
 
 # Repositórios pessoais <i class="fas fa-medal"></i>
