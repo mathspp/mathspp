@@ -10,6 +10,8 @@ features:
 
 # Personal repositories <i class="fas fa-medal"></i>
 
-These projects that follow were created by me from scratch and I wrote all the code for most of them.
+These projects that follow were created by me from scratch and I wrote all the code for most of them. Don't worry, I can also [work with other people][tw]!
 
 Be sure to star your favourite repos and to follow me on GitHub!
+
+[tw]: #contributions

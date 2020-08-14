@@ -12,8 +12,11 @@ features:
       header: abrudz/aplcart
       text: Updated, fixed and created new content for APL Cart, the go-to place to find APL idioms and snippets
       url: https://github.com/abrudz/aplcart
+title: Contributions
 ---
 
 # Contributions <i class="fas fa-hands-helping"></i>
 
-The projects I will showcase here are projects for which I have contributed. I will try to order them by decreasing order of relevance of my contributions. My least relevant contributions include small bug fixes and catching typos.
+The projects I will showcase here are projects for which I have contributed.
+
+I will try to order them by decreasing order of relevance of my contributions.

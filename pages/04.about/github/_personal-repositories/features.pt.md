@@ -10,6 +10,8 @@ features:
 
 # Repositórios pessoais <i class="fas fa-medal"></i>
 
-Os projetos que vou apresentar de seguida foram criados por mim de raíz e eu escrevi o código todo na maior parte dos casos.
+Os projetos que vou apresentar de seguida foram criados por mim de raíz e eu escrevi o código todo na maior parte dos casos. Não te preocupes, [também sei trabalhar em equipa][tw]!
 
 Não te esqueças de marcar os teus repositórios preferidos com uma estrela e de me seguir no GitHub!
+
+[tw]: #contributions
