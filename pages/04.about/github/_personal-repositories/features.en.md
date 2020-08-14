@@ -10,4 +10,4 @@ features:
 
 # Personal repositories
 
-These are projects created by me from scratch and for which I wrote all the code.
+These projects that follow were created by me from scratch and I wrote all the code for most of them.
