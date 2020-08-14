@@ -1,6 +1,4 @@
 ---
-anchors:
-    active: false
 features:
   - icon: far fa-lightbulb
     text: Bringing my ideas to life

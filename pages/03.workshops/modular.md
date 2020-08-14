@@ -1,4 +1,6 @@
 ---
+anchors:
+    active: false
 title: Workshops
 menu: Workshops
 onpage_menu: false

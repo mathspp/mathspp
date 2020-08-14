@@ -1,3 +1,5 @@
+anchors:
+    active: false
 menu: GitHub
 slug: github
 title: GitHub
