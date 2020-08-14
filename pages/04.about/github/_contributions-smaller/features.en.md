@@ -17,4 +17,11 @@ features:
       header: Dyalog/dyalog-jupyter-notebooks
       text: Wrote Jupyter notebooks as tutorials for APL learners on some topics
       url: https://github.com/Dyalog/dyalog-jupyter-notebooks
+
+    - icon: fas fa-bug
+      header: Minor code fixes
+      text: '@Dyalog/dyalog-jupyter-kernel and @realpython/materials'
+    - icon: fas fa-spell-check
+      header: Fixing typos
+      text: '@abrudz/aplcart and /abrudz.github.io, @yairm210/Unciv, @rykedip/APLWorkshop, @inesfmarques/projecto, @getgrav/grav-learn...'
 ---
