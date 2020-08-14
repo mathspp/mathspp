@@ -29,4 +29,4 @@ out result;
 
 [Brainetry]: https://github.com/RojerGS/Brainetry
 [Roj]: https://github.com/RojerGS/Roj
-[roj-post]: https://mathspp.com/blog/creating-programming-language-from-scratch
+[roj-post]: ../../blog/creating-programming-language-from-scratch

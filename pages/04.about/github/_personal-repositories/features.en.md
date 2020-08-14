@@ -1,11 +1,11 @@
 ---
-features:
-  - icon: far fa-lightbulb
-    text: Bringing my ideas to life
-  - icon: fas fa-toolbox
-    text: Exercising my skills on different tools
-  - icon: fas fa-cubes
-    text: Building these projects one line of code at a time
+# features:
+#   - icon: far fa-lightbulb
+#     text: Bringing my ideas to life
+#   - icon: fas fa-toolbox
+#     text: Exercising my skills on different tools
+#   - icon: fas fa-cubes
+#     text: Building these projects one line of code at a time
 title: Personal repositories
 ---
 
