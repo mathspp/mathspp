@@ -8,7 +8,7 @@ features:
     text: Building these projects one line of code at a time
 ---
 
-# Personal repositories
+# Personal repositories <i class="fas fa-medal"></i>
 
 These projects that follow were created by me from scratch and I wrote all the code for most of them.
 

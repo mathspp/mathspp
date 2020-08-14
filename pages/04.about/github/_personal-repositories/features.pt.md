@@ -8,7 +8,7 @@ features:
     text: Construo os projetos, uma linha de código de cada vez
 ---
 
-# Repositórios pessoais
+# Repositórios pessoais <i class="fas fa-medal"></i>
 
 Os projetos que vou apresentar de seguida foram criados por mim de raíz e eu escrevi o código todo na maior parte dos casos.
 
