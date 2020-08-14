@@ -11,3 +11,5 @@ features:
 # Personal repositories
 
 These projects that follow were created by me from scratch and I wrote all the code for most of them.
+
+Be sure to star your favourite repos and to follow me on GitHub!
