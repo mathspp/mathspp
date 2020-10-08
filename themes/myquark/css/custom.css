@@ -13,6 +13,14 @@ li {
     <!-- font-weight: bold; -->
 }
 
+img .parallax {
+    filter: invert(0.9) hue-rotate(180deg);
+}
+body {
+    filter: invert(.9) hue-rotate(180deg);
+    background: rgba(0, 0, 0, 0.9);
+}
+
 /* https://stackoverflow.com/a/13184714/2828287 */
 /* Compensates for the height of the website header. */
 a.headeroffset {
