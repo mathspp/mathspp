@@ -446,7 +446,7 @@ def plus(*, alpha=None, omega):
         return alpha + omega
 ```
 
-The idea is that the `pervade` decorators takes care of handling the shapes of the two arguments and the function itself only has to worry about getting the simple data types as arguments: `int`s, `float`s and `complex` numbers.
+The idea is that the `pervade` decorator takes care of handling the shapes of the two arguments and the function itself only has to worry about getting the simple data types as arguments: `int`s, `float`s and `complex` numbers.
 
 So, how should the `pervade` decorator work?
 It should take a scalar function and "teach it" how to pervade it into the arrays it gets as arguments.
@@ -471,7 +471,7 @@ This works because either the shapes of `alpha` and `omega` are the same, or one
 If the two shapes are different then an error will be raised when trying to compute the `data`, so at this point we can assume everything is compatible.
 
 If everything is compatible and one of them is a scalar, then its shape is `[]` and the `or` returns the other shape.
-If both shapes are equal then it doesn't matter which one is returned and `alpha` is `None`, and thus doesn't have a shape, `None or omega.shape` returns `omega.shape`, whatever that is.
+If both shapes are equal then it doesn't matter which one is returned and if `alpha` is `None`, and thus doesn't have a shape, `None or omega.shape` returns `omega.shape`, whatever that is.
 
 Now we know how to compute the shape, which is the easy part.
 Calculating the data isn't complicated, but takes a bit more work.
@@ -802,6 +802,8 @@ Here is a table summarising what major cells are for some arrays:
 | a 3D array | the matrices of the array |
 | ... | |
 
+
+
 The Unique Mask checks which major cells of the argument array are repetitions of previous major cells, so the first thing we do in our implementation is to split the data of the array into its major cells.
 
 Here is a hand-crafted drawing of a 3D array with its 2 major cells circled in red:
@@ -864,6 +866,8 @@ Instead, it is easier to just show you equivalent expressions:
 | `f⍥g Y` | `f g Y` |
 | `X f∘g Y` | `X f g Y` |
 | `X f⍥g Y` | `(g X) f (g Y)` |
+
+
 
 You might wonder what these operators are good for, if the equivalent expressions are so simple...
 I would argue the main purpose of these dyadic operators is to create a derived function (in the first column) that *behaves* as the second column shows.
@@ -1017,7 +1021,7 @@ we either parse a primitive function from the long list of primitive functions a
 Finally, because we were relying on the fact that to the left of a `)` only vectors would show up, we need to go and fix our `parse_vector` function.
 Until today, it would eat all scalars and parenthesised vectors it could find and, whenever it found a `)`, it would automatically assume it was a parenthesised vector. For example, as in `(1 2 3) ¯4 0 5`.
 
-Recall that the parser goes right to left, so up until now we would parse the two integer scalars `5`, `0` and `¯4`, then look at `)` and automatically recurse to the `vector` grammar rule...
+Recall that the parser goes right to left, so up until now we would parse the three integer scalars `5`, `0` and `¯4`, then look at `)` and automatically recurse to the `vector` grammar rule...
 But now we could have an expression like `1 +∘(|∘×) ¯4 0 5`, which means that when we are parsing the vector `¯4 0 5` and reach a `)`, we have to be careful about what comes next.
 
 To deal with this, I started by defining a little helper function that we can use to peek beyond a sequence of `)`:
