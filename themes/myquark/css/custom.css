@@ -17,7 +17,7 @@ img, .parallax {
     filter: invert(1) hue-rotate(180deg);
 }
 body {
-    filter: invert(1) hue-rotate(180deg);
+    filter: invert(.9) hue-rotate(180deg);
     background: rgba(0, 0, 0, 0.9);
 }
 
