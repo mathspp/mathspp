@@ -1183,6 +1183,8 @@ I will also be completing these exercises!
 
 So without further ado, here's what you could be doing to make sure you understand everything:
 
+ - make without (`x~y`) work on the major cells of its left argument, instead of only accepting `x` that are vectors -- this is an extension to the current `x~y` implementation and shouldn't break existing code;
+ - make a distinction between `⍳5` and `⍳,5` so that `⍳,5` returns 5 1-item vectors instead of 5 scalars -- this also needs `,` to be implemented;
  - add the dyadic operator atop `⍤`, which is fairly similar to `∘` and `⍥` so it should't be a problem;
  - add more primitive functions:
    - scalar ones, like `∨`, `∧`, `⍱` and `⍲`, for example;
@@ -1201,6 +1203,8 @@ In future posts here are some of the things that will be covered:
  - have arrays print nicely to the console;
  - implement a utility tool to visualize ASTs (cf. [Ruslan's 7th post][ruslan-7])
  - allow arrays as operands to operators;
+ - implement character arrays;
+ - implement empty vector prototypes;
  - implement many more primitive functions;
  - implement more monadic and dyadic operators;
  - implement strand assignment (i.e. what allows you to do things like `(a b) ← 1 2`);
