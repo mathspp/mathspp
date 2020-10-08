@@ -1,0 +1,14 @@
+date: 19-06-2020
+process:
+    twig: true
+published: false
+slug: lsbasi-apl-part3
+taxonomy:
+    category: blogpost
+    tag:
+      - apl
+      - programming
+      - python
+      - interpreters
+      - lsbasi-apl
+twig_first: true
