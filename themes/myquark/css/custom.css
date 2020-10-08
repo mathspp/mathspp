@@ -14,10 +14,10 @@ li {
 }
 
 img, .parallax {
-    filter: invert(0.5) hue-rotate(180deg);
+    filter: invert(0.8) hue-rotate(180deg);
 }
 body {
-    filter: invert(.9) hue-rotate(180deg);
+    filter: invert(.8) hue-rotate(180deg);
     background: rgba(0, 0, 0, 0.9);
 }
 
