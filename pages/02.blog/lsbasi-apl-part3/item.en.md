@@ -40,7 +40,7 @@ The whole code for this project is hosted in [this][rgspl-repo] GitHub repo and 
 
 ---
 
-Now that we got this out of the way, lets dive right into the changes for today. You can follow [this link][changes] to see literally _every single change_ that happened since the last post.
+Now that we got this out of the way, let's dive right into the changes for today. You can follow [this link][changes] to see literally _every single change_ that happened since the last post.
 
 Let us start with simpler changes like introducing complex numbers, allowing for variable names to contain digits, a couple of helper methods in our parser and moving functions/monadic operators/dyadic operators to their own files to keep everything sort of organised.
 
@@ -253,11 +253,6 @@ In that sense, each function expects two named arguments, `omega` and `alpha`, w
 If `alpha` really is `None`, then this is a monadic function call. If `alpha` is not `None`, then we have a dyadic function call.
 Having to distinguish between monadic and dyadic function calls was the only reason I had all `visit_` methods have a `**kwargs` argument, so now we can remove it.
 
-! As I write this, I come to realise I might do something similar with operators in the near future!
-! As a matter of fact, some operators can be monadic or dyadic and I will need to be able to distinguish them...
-!
-! I will think about this and then in a future instalment of this series we'll see how I decided to deal with this ;)
-
 Finally, the code changes to evaluate monadic/dyadic function calls and to visit functions and monadic operators becomes:
 
 ```py
@@ -346,8 +341,8 @@ By now you should get the idea: we can keep stacking these things on top of each
 
 We have been building up, but now we are going to investigate the items of the arrays: the things we call _scalars_.
 In APL, _scalars_ are arrays with empty shape (i.e. with shape `[]`).
-We may refer to them loosely as arrays with "_no shape_", but please bear in mind that is technically incorrect.
-In the arrays above we have seen the numbers 1 to 16 are scalars.
+We may refer to them loosely as arrays with "_no shape_", but please bear in mind that that is technically incorrect.
+In the arrays above we have seen that the numbers 1 to 16 are scalars.
 To be introduced next, characters are also scalars.
 But anything can be made a scalar and used inside other arrays. The monadic _Enclose_ primitive (`⊂`) is used to turn its right argument into a scalar and we will see shortly how it works.
 
@@ -1073,14 +1068,14 @@ And that is it! Congratulations on adding support for dyadic operators to your A
 
 # New monadic operator
 
-Also a new addition for today's post, while not much in line with what was already done, is the monadic operator Each `¨`.
+Also a new addition for today's post, while not much in line with what was already done, is the monadic operator Each `¨` (*diaeresis* is the name of the symbol).
 `f¨` is similar to a function that maps `f` along its argument(s). For example, `⍳¨ 1 2 3` is the same as `(⍳ 1)(⍳ 2)(⍳ 3)`.
 
 But `f¨` can also be used to make `f` "map" over the left argument, or over *both* arguments at the same time. For example, `(1 2 3)(4 5 6) ~¨ 2 3` is the same as `(1 2 3 ~ 2) (4 5 6 ~ 3)`.
 
-With this in mind, adding support for `¨` (by the way, the name of the symbol is diaeresis) and implementing it shouldn't be too hard.
+With this in mind, implementing `¨` is fairly straightforward.
 Adding the tiny bits in the `Token` class for it to work shouldn't be too hard, so I leave it to you.
-As for an example implementation, I won't deprive you from it. Just don't forget to add it to `moperators.py`:
+Other than that, the only thing that is missing is its implementation in `moperators.py`:
 
 ```py
 def diaeresis(*, aalpha):
