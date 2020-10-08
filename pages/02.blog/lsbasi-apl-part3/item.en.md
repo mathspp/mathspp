@@ -1219,6 +1219,8 @@ These are some of the things I want to tackle next but having those complete doe
 
 See you next time ;)
 
+P.S.: have any questions or suggestions? Be sure to leave them in the comment section below!
+
 ##### All posts in this series:
 
 <ul>
