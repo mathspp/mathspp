@@ -1,6 +1,8 @@
 content:
     items:
         taxonomy@.category: blogpost
+    limit: 20
     order:
         by: date
         dir: desc
+    pagination: true
