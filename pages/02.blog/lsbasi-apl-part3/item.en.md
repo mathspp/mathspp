@@ -34,7 +34,7 @@ This will also mean the posts become smaller and easier to read.
 
 [![](https://img.shields.io/github/stars/RojerGS/RGSPL?style=social)][rgspl-repo]&nbsp;&nbsp;&nbsp;[![run it on Repl.it!](https://repl.it/badge/github/RojerGS/RGSPL)][repl-part3]
 
-The whole code for this project is hosted in [this][rgspl-repo] GitHub repo and the code for this specific blog post is [this subfolder][rgspl3]. You can also test today's code in your browser by hitting the "run on repl.it" button above.
+The whole code for this project is hosted in [this][rgspl-repo] GitHub repo and the code for this specific blog post is [this subfolder][rgspl3]. You can also test today's code in your browser by hitting the "run on repl.it" button above. (Beware that at that online interface, typing APL glyphs may be frustrating because of the poor support for Unicode...)
 
 [This link][changes] has the diff with all the changes that happened since the last post.
 
