@@ -800,7 +800,7 @@ See you next time ;)
 [apl-wiki-trains]: https://aplwiki.com/wiki/Tacit_programming#Trains
 [apl-wiki-scalar-functions]: https://aplwiki.com/wiki/Scalar_function
 [rgspl-repo]: https://github.com/RojerGS/RGSPL
-[rgspl2]: https://github.com/RojerGS/RGSPL/blob/master/part2
+[rgspl2]: https://github.com/RojerGS/RGSPL/releases/v0.2
 [lsbasi]: https://ruslanspivak.com/lsbasi-part1/
 [Visitor pattern]: https://en.wikipedia.org/wiki/Visitor_pattern
 [ruslan-7]: https://ruslanspivak.com/lsbasi-part7/

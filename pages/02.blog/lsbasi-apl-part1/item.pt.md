@@ -510,6 +510,6 @@ Até à próxima!
 [roj-blog]: https://mathspp.com/blog/creating-programming-language-from-scratch
 [apl-orchard]: https://chat.stackexchange.com/rooms/52405/the-apl-orchard
 [rgspl-repo]: https://github.com/RojerGS/RGSPL
-[rgspl1]: https://github.com/RojerGS/RGSPL/blob/master/part1/rgspl1.py
+[rgspl1]: https://github.com/RojerGS/RGSPL/releases/v0.1
 [bnf-wiki]: https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form
 [visitor-wiki]: https://en.wikipedia.org/wiki/Visitor_pattern
