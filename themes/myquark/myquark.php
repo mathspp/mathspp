@@ -36,7 +36,7 @@ class Myquark extends Quark
 
     public function removePt($parts) {
         $key = array_search("pt", $parts);
-        if ($key) {
+        if ($key !== false) {
             unset($parts[$key]);
         }
     }
