@@ -13,6 +13,9 @@ class Myquark extends Quark
         $this->grav['twig']->twig()->addFilter(
             new \Twig_SimpleFilter('to_problem', [$this, 'toProblem'])
         );
+        $this->grav['twig']->twig()->addFilter(
+            new \Twig_SimpleFilter('to_solution', [$this, 'toSolution'])
+        );
     }
 
     // custom function that takes the URL of a blog solution and turns it into the problem URL.
@@ -20,6 +23,14 @@ class Myquark extends Quark
         $parts = explode("/", $solution_url);
         $key = array_search("s", $parts);
         unset($parts[$key]);
+        return implode("/", $parts);
+    }
+
+    // custom function that takes the URL of a blog problem and turns it into the solution URL.
+    public function toSolution($problem_url) {
+        $parts = explode("/", $problem_url);
+        $nparts = count($parts);
+        array_splice($parts, $nparts-1, 0, array("s"));
         return implode("/", $parts);
     }
 }

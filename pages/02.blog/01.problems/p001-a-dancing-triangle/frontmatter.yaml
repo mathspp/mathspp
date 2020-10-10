@@ -1,4 +1,6 @@
 date: 05-11-2017
+process:
+    twig: true
 slug: a-dancing-triangle
 taxonomy:
     category: blogpost
@@ -7,3 +9,4 @@ taxonomy:
       - geometry
       - mathematics
       - invariant
+twig_first: true
