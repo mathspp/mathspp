@@ -17,6 +17,6 @@ Can the original triangle be transformed into a triangle where all sides where d
 
 ### Solution
 
-You can read the solution [here][sol].
+You can read the solution [here][sol] to compare with your own solution.
 
-[sol]: {{ page.url|to_solution }}
+[sol]: ../s/{{ page.slug }}

@@ -16,4 +16,4 @@ Seja $[ABC]$ um triângulo e suponhamos, sem perda de generalidade, que vamos ap
  
 E a altura $h'$ do triângulo $[ABC']$ é o comprimento do segmento de reta que passa em $C'$ e é perpendicular a $[AB]$. Mas $C$ e $C'$ estão sobre uma linha que é paralela a $[AB]$, o que faz com que $h$ e $h'$ sejam iguais; por outras palavras, a altura não mudou e portanto a área do triângulo também não mudou. QED.
 
-[prob]: {{ page.base_url|to_problem }}
+[prob]: ../../{{ page.slug }}

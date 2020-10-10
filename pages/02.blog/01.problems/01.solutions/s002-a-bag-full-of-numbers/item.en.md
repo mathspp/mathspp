@@ -26,4 +26,4 @@ Bonus question: find a solution that would still work for $2, 74, 308$ (and for 
 
 Let me know what you think in the comment section below!
 
-[prob]: {{ page.url|to_problem }}
+[prob]: ../../{{ page.slug }}

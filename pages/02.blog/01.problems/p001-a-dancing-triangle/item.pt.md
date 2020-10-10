@@ -13,10 +13,12 @@ O formato deste artigo vai ser um pouco diferente do que tenho feito até agora,
 Seja $[ABC]$ um triângulo qualquer. Vamos agora definir uma transformação que podemos aplicar ao triângulo, e que tem como efeito mover um dos vértices do triângulo e deixar os outros dois vértices fixos. Para aplicar a transformação, há que começar por escolher o vértice que se vai mover (vamos supor que queremos mover o vértice $C$). Agora consideramos a linha reta que passa por $C$ e que é paralela a $[AB]$ e escolhemos um ponto $C'$ nessa reta. O nosso triângulo passa a ser $[ABC']$. Esta transformação pode ser aplicada quantas vezes quisermos, aos vértices que quisermos.<br />
 Será que há alguma maneira de, com esta transformação, fazer com que o nosso triângulo cresça e os lados fiquem todos com o dobro do tamanho? Como/porquê?
 
-!!! Pensem um pouco...
+!!! Pensa um pouco...
+
+Se precisares de clarificar alguma coisa, não hesites em perguntar na secção de comentários em baixo.
 
 ### Solução
 
-Uma proposta de solução pode ser lida [aqui][sol], para confirmarem a vossa resposta.
+Podes encontrar a minha proposta de solução [aqui][sol], para confirmares a tua resposta.
 
-[sol]: {{ page.url|to_solution }}
+[sol]: ../s/{{ page.slug }}

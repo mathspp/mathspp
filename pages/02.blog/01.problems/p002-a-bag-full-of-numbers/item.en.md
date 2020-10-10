@@ -25,6 +25,6 @@ Is there any initial number configuration and/or set of moves for which it is po
 
 ### Solution
 
-You can find a proposed solution to this problem [here][s002].
+You can read the solution [here][sol] to compare with your own solution.
 
-[s002]: https://mathspp.com/blog/problems/s/bag-full-of-numbers
+[sol]: ../s/{{ page.slug }}
