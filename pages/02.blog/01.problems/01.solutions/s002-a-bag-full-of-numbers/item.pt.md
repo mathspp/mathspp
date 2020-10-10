@@ -8,8 +8,6 @@ Este artigo contém a minha solução proposta para o [Problema #002 - um saco c
 
 ===
 
-![a photo of a paper bag](paperbag.jpg "Photo by B S K from FreeImages")
-
 ### Solução
 
 (Se encontrares algum problema na solução, por favor faz-me saber na secção de comentários.)

@@ -6,10 +6,6 @@ This post contains my proposed solution to [Problem #002 - a bag full of numbers
 
 ===
 
-![a photo of a paper bag](paperbag.jpg "Photo by B S K from FreeImages")
-
-### Problem statement
-
 ### Solution
 
 (If you spot a mistake in my solution _please_ let me know in the comments below.)

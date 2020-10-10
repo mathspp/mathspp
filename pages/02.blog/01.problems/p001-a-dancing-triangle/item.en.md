@@ -15,6 +15,8 @@ Can the original triangle be transformed into a triangle where all sides where d
 
 !!! Give it some thought...
 
+If you need any clarification whatsoever, feel free to ask in the comment section below.
+
 ### Solution
 
 You can read the solution [here][sol] to compare with your own solution.
