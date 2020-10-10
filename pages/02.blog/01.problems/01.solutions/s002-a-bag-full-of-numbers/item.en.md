@@ -28,4 +28,4 @@ Bonus question: find a solution that would still work for $2, 74, 308$ (and for 
 
 Let me know what you think in the comment section below!
 
-[p002]: https://mathspp.com/blog/problems/bag-full-of-numbers
+[p002]: {{ page.url|to_problem }}
