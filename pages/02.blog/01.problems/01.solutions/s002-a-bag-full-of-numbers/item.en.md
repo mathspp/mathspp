@@ -4,7 +4,7 @@ title: 'Problem #002 - a bag full of numbers'
 
 This post contains my proposed solution to [Problem #002 - a bag full of numbers][p002]. Please do not read this solution before making a serious attempt [at the problem][p002].
 
-{{ page.url|to_problem }}
+{{ "https://mathspp.com/blog/problems/s/bag-full-of-numbers"|to_problem }}
 
 ===
 
