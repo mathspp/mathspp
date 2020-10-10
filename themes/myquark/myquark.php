@@ -23,7 +23,7 @@ class Myquark extends Quark
         $parts = explode("/", $solution_url);
         $key = array_search("s", $parts);
         unset($parts[$key]);
-        return implode("/", $parts);
+        return implode("/", removePt($parts));
     }
 
     // custom function that takes the URL of a blog problem and turns it into the solution URL.
@@ -31,7 +31,14 @@ class Myquark extends Quark
         $parts = explode("/", $problem_url);
         $nparts = count($parts);
         array_splice($parts, $nparts-1, 0, array("s"));
-        return implode("/", $parts);
+        return implode("/", removePt($parts));
+    }
+
+    public function removePt($parts) {
+        $key = array_search("pt", $parts);
+        if ($key) {
+            unset($parts[$key]);
+        }
     }
 }
 ?>
