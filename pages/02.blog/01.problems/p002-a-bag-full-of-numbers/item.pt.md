@@ -27,6 +27,6 @@ Será que há alguma configuração inicial/conjunto de jogadas para os quais, d
 
 ### Solução
 
-Podes encontrar a minha proposta de solução [aqui][s002].
+Podes encontrar a minha proposta de solução [aqui][sol].
 
-[s002]: https://mathspp.com/blog/problems/s/bag-full-of-numbers
+[sol]: {{ page.parent.url }}/s/{{ page.slug }}
