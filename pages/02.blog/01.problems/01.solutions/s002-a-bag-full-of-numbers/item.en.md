@@ -1,10 +1,8 @@
 ---
-title: 'Problem #002 - a bag full of numbers'
+title: 'Solution #002 - a bag full of numbers'
 ---
 
-This post contains my proposed solution to [Problem #002 - a bag full of numbers][p002]. Please do not read this solution before making a serious attempt [at the problem][p002].
-
-{{ "https://mathspp.com/blog/problems/s/bag-full-of-numbers"|to_problem }}
+This post contains my proposed solution to [Problem #002 - a bag full of numbers][prob]. Please do not read this solution before making a serious attempt [at the problem][prob].
 
 ===
 
@@ -28,4 +26,4 @@ Bonus question: find a solution that would still work for $2, 74, 308$ (and for 
 
 Let me know what you think in the comment section below!
 
-[p002]: {{ page.url|to_problem }}
+[prob]: {{ page.url|to_problem }}

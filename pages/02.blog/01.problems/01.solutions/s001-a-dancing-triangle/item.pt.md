@@ -2,10 +2,9 @@
 title: 'Problema #001 - um triângulo dançante'
 ---
 
-Este artigo contém a minha solução proposta para o [Problema #001 - um triângulo dançante][p001]. Por favor não leias esta solução se ainda não tentaste resolver [o problema][p001] a sério.
+Este artigo contém a minha solução proposta para o [Problema #001 - um triângulo dançante][prob]. Por favor não leias esta solução se ainda não tentaste resolver [o problema][prob] a sério.
 
 ===
-
 
 ### Solução
 
@@ -17,4 +16,4 @@ Seja $[ABC]$ um triângulo e suponhamos, sem perda de generalidade, que vamos ap
  
 E a altura $h'$ do triângulo $[ABC']$ é o comprimento do segmento de reta que passa em $C'$ e é perpendicular a $[AB]$. Mas $C$ e $C'$ estão sobre uma linha que é paralela a $[AB]$, o que faz com que $h$ e $h'$ sejam iguais; por outras palavras, a altura não mudou e portanto a área do triângulo também não mudou. QED.
 
-[p001]: https://mathspp.com/pt/blog/problems/a-dancing-triangle
+[prob]: {{ page.url|to_problem }}
