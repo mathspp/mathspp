@@ -26,4 +26,4 @@ Questão bónus: encontra uma solução que ainda funcione caso eu diga que quer
 
 Conseguiste resolver este problema? Achaste fácil?
 
-[prob]: ../{{ slug }}
+[prob]: ../../{{ slug }}
