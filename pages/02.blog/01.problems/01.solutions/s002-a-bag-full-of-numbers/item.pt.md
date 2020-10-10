@@ -26,4 +26,4 @@ Questão bónus: encontra uma solução que ainda funcione caso eu diga que quer
 
 Conseguiste resolver este problema? Achaste fácil?
 
-[prob]: {{ page.url|to_problem }}
+[prob]: {{ page.base_url|to_problem }}
