@@ -1,5 +1,5 @@
 ---
-title: 'Problem #001 - a dancing triangle'
+title: 'Solution #001 - a dancing triangle'
 ---
 
 This post contains my proposed solution to [Problem #001 - a dancing triangle][prob]. Please do not read this solution before making a serious attempt [at the problem][prob].

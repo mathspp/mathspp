@@ -1,5 +1,5 @@
 ---
-title: 'Problema #001 - um triângulo dançante'
+title: 'Solução #001 - um triângulo dançante'
 ---
 
 Este artigo contém a minha solução proposta para o [Problema #001 - um triângulo dançante][prob]. Por favor não leias esta solução se ainda não tentaste resolver [o problema][prob] a sério.

@@ -17,6 +17,6 @@ Será que há alguma maneira de, com esta transformação, fazer com que o nosso
 
 ### Solução
 
-Uma proposta de solução pode ser lida [aqui][p001], para confirmarem a vossa resposta.
+Uma proposta de solução pode ser lida [aqui][sol], para confirmarem a vossa resposta.
 
-[p001]: https://mathspp.com/pt/blog/problems/s/a-dancing-triangle
+[sol]: {{ page.url|to_solution }}
