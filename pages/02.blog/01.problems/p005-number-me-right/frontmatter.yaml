@@ -2,6 +2,8 @@ date: 23-01-2018
 metadata:
     author: Rodrigo Girão Serrão
     og:image: https://mathspp.com/blog/problems/number-me-right/nmr_4.png
+process:
+    twig: true
 slug: number-me-right
 taxonomy:
     category: blogpost
@@ -10,3 +12,4 @@ taxonomy:
       - induction
       - problem
       - mathematics
+twig_first: true

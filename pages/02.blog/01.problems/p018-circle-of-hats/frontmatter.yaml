@@ -3,6 +3,8 @@ metadata:
     author: Rodrigo Girão Serrão
     og:image: https://mathspp.com/blog/problems/circle-of-hats/00-hats.jpg
 slug: circle-of-hats
+process:
+    twig: true
 taxonomy:
     category: blogpost
     tag:
@@ -10,3 +12,4 @@ taxonomy:
       - mathematics
       - modular arithmetics
       - apl
+twig_first: true
