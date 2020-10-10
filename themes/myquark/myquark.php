@@ -6,8 +6,10 @@ use Grav\Common\Theme;
 class Myquark extends Quark
 {
     // cf. https://learn.getgrav.org/16/cookbook/twig-recipes#custom-twig-filter-function
-    public function onTwigInitialized(Event $e)
+    public function onTwigInitialized()
     {
+        parent::onTwigInitialized(); // cf. https://stackoverflow.com/a/3754969/2828287
+
         $this->grav['twig']->twig()->addFilter(
             new \Twig_SimpleFilter('to_problem', [$this, 'toProblem'])
         );
