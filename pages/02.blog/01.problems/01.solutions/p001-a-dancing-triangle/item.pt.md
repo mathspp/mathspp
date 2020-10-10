@@ -2,18 +2,10 @@
 title: 'Problema #001 - um triângulo dançante'
 ---
 
-O formato deste artigo vai ser um pouco diferente do que tenho feito até agora, e vai ser a primeira de várias publicações nestes moldes: vou introduzir um pequeno problema _"de matemática"_ e depois vou partilhar uma possível solução.
+Este artigo contém a minha solução proposta para o [Problema #001 - um triângulo dançante][p001]. Por favor não leias esta solução se ainda não tentaste resolver [o problema][p001] a sério.
 
 ===
 
-![Uma esquematização do processo explicado em baixo](dancing_triangle_scheme.png)
-
-### Enunciado do problema
-
-Seja $[ABC]$ um triângulo qualquer. Vamos agora definir uma transformação que podemos aplicar ao triângulo, e que tem como efeito mover um dos vértices do triângulo e deixar os outros dois vértices fixos. Para aplicar a transformação, há que começar por escolher o vértice que se vai mover (vamos supor que queremos mover o vértice $C$). Agora consideramos a linha reta que passa por $C$ e que é paralela a $[AB]$ e escolhemos um ponto $C'$ nessa reta. O nosso triângulo passa a ser $[ABC']$. Esta transformação pode ser aplicada quantas vezes quisermos, aos vértices que quisermos.<br />
-Será que há alguma maneira de, com esta transformação, fazer com que o nosso triângulo cresça e os lados fiquem todos com o dobro do tamanho? Como/porquê?
-
-!!! Pensem um pouco...
 
 ### Solução
 
@@ -24,3 +16,5 @@ Seja $[ABC]$ um triângulo e suponhamos, sem perda de generalidade, que vamos ap
  2. é perpendicular a $[AB]$
  
 E a altura $h'$ do triângulo $[ABC']$ é o comprimento do segmento de reta que passa em $C'$ e é perpendicular a $[AB]$. Mas $C$ e $C'$ estão sobre uma linha que é paralela a $[AB]$, o que faz com que $h$ e $h'$ sejam iguais; por outras palavras, a altura não mudou e portanto a área do triângulo também não mudou. QED.
+
+[p001]: https://mathspp.com/pt/blog/problems/a-dancing-triangle

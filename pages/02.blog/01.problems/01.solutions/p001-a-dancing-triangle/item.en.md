@@ -2,7 +2,7 @@
 title: 'Problem #001 - a dancing triangle'
 ---
 
-This post contains my proposed solution to [Problem #001 - a dancing triangle][p001]
+This post contains my proposed solution to [Problem #001 - a dancing triangle][p001]. Please do not read this solution before making a serious attempt [at the problem][p001].
 
 ===
 

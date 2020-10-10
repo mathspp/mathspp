@@ -17,6 +17,6 @@ Can the original triangle be transformed into a triangle where all sides where d
 
 ### Solution
 
-You can read the solution [here][p001]
+You can read the solution [here][p001].
 
-[p001]: https://mathspp.com/blog/problems/solutions/a-dancing-triangle
+[p001]: https://mathspp.com/blog/problems/s/a-dancing-triangle
