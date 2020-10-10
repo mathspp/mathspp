@@ -1,16 +1,11 @@
 date: 09-07-2020
 metadata:
     author: Rodrigo Girão Serrão
-    description: How can you use 3, 3, 8, 8 and the arithmetic operations to make
-        24?
     og:image: https://mathspp.com/blog/problems/make-24-with-3-3-8-8/24.jpg
 process:
     twig: true
 slug: make-24-with-3-3-8-8
 taxonomy:
-    category: blogpost
     tag:
-      - problem
-      - arithmetics
-      - mathematics
+      - solution
 twig_first: true

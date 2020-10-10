@@ -25,22 +25,18 @@ An example valid expression would be $(3+3)\times (8+8)$ except this is not the 
 
 !!! Give it some thought, maybe take out a piece of paper and a pencil.
 
+I heard of this from the same friend who told me about the ["Fold the alphabet"][fold the alphabet] problem.
+
 ### Hint
 
 Do _not_ read the hint if you haven't spent some time thinking about the problem yet!
 
 !!!! The intermediate steps do _not_ have to evaluate to integer numbers.
 
-
 ### Solution
 
-There really is no point in sugar coating this for you, the solution is the expression $8 \div (3 - 8\div 3)$. Quite ingenious, isn't it?
+You can read the solution [here][sol] to compare with your own solution.
 
-I heard of this from the same friend who told me about the ["Fold the alphabet"][fold the alphabet] problem.
-
-Were you able to solve this problem? Let me know your thoughts in the comment section down below!
-
-See you next time!
-
+[sol]: ../s/{{ page.slug }}
 [24 Game]: https://en.wikipedia.org/wiki/24_Game
 [fold the alphabet]: ../fold-the-alphabet

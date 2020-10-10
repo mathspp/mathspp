@@ -1,9 +1,9 @@
 ---
 metadata: This blog post contains my proposed solution to one of the problems of this blog.
-title: 'Solution #000 - '
+title: 'Solution #019 - fold the alphabet'
 ---
 
-This post contains my proposed solution to [Problem #000 - ][prob]. Please do not read this solution before making a serious attempt [at the problem][prob].
+This post contains my proposed solution to [Problem #019 - fold the alphabet][prob]. Please do not read this solution before making a serious attempt [at the problem][prob].
 
 ===
 

@@ -1,9 +1,9 @@
 ---
 metadata: Este artigo contém a minha proposta de solução para um dos problemas deste blogue.
-title: 'Solução #000 - '
+title: 'Solução #019 - dobrar o alfabeto'
 ---
 
-Este artigo contém a minha solução proposta para o [Problema #000 - ][prob]. Por favor não leias esta solução se ainda não tentaste resolver [o problema][prob] a sério.
+Este artigo contém a minha solução proposta para o [Problema #019 - dobrar o alfabeto][prob]. Por favor não leias esta solução se ainda não tentaste resolver [o problema][prob] a sério.
 
 ===
 
