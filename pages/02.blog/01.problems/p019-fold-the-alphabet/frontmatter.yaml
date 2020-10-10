@@ -1,6 +1,9 @@
 date: 14-06-2020
 metadata:
-    description: Help me fold this piece of paper so that the alphabet comes in order!
+    author: Rodrigo Girão Serrão
+    og:image: https://mathspp.com/images/b/6/2/9/c/b629ca3d9d63a8ade10b8fba2700ee974eb037da-aaa.jpeg
+process:
+    twig: true
 slug: fold-the-alphabet
 taxonomy:
     category: blogpost
@@ -9,3 +12,4 @@ taxonomy:
       - geometry
       - origami
       - mathematics
+twig_first: true

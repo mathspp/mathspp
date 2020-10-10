@@ -1,0 +1,11 @@
+date: 14-06-2020
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: https://mathspp.com/images/e/1/d/e/6/e1de639d697b19cd54c917d155bf180c73d68542-aaa.jpeg
+process:
+    twig: true
+slug: fold-the-alphabet
+taxonomy:
+    tag:
+      - solution
+twig_first: true
