@@ -2,11 +2,10 @@ date: 24-05-2020
 metadata:
     author: Rodrigo Girão Serrão
     og:image: https://mathspp.com/blog/problems/circle-of-hats/00-hats.jpg
+process:
+    twig: true
 slug: circle-of-hats
 taxonomy:
-    category: blogpost
     tag:
-      - problem
-      - mathematics
-      - modular arithmetics
-      - apl
+      - solution
+twig_first: true
