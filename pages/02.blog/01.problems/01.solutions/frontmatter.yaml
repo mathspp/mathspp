@@ -1,0 +1,7 @@
+content:
+    items:
+        taxonomy@.tag: solution
+    order:
+        by: date
+        dir: desc
+slug: s
