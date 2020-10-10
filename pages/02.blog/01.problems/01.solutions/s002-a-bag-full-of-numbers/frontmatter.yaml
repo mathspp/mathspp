@@ -2,7 +2,10 @@ date: 06-11-2017
 metadata:
     description: This post holds the solution to P#002 of this blog.
     og:image: https://mathspp.com/blog/bag-full-of-numbers/paperbag.jpg
+process:
+    twig: true
 slug: bag-full-of-numbers
 taxonomy:
     tag:
       - solution
+twig_first: true
