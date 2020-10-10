@@ -17,7 +17,7 @@ class Myquark extends Quark
 
     // custom function that takes the URL of a blog solution and turns it into the problem URL.
     public function toProblem($solution_url) {
-        $parts = explode("/", problem_url);
+        $parts = explode("/", $solution_url);
         $key = array_search("s", $parts);
         unset($parts[$key]);
         return implode("/", $parts);
