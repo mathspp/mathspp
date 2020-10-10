@@ -27,16 +27,6 @@ Será que há alguma configuração inicial/conjunto de jogadas para os quais, d
 
 ### Solução
 
-(Se encontrares algum problema na solução, por favor faz-me saber na secção de comentários.)
+Podes encontrar a minha proposta de solução [aqui][s002].
 
-Não, não há nenhuma configuração inicial nem nenhum conjunto de jogadas que nos permita terminar com o número $73$ no saco. Repara que $x \equiv x^3 \mod 2$. Isto é, $x$ tem a mesma paridade que $x^3$. Vamos assumir que, num dado momento, os números no saco têm soma $S$. Vou mostrar que a paridade da soma total não altera quando removemos dois números $a$ e $b$ e juntamos o número $a^3 + b^3$; isto é, a _invariante_ de que eu falei é a paridade da soma total dos números no saco:
-
-\[
-    x \equiv x^3 \mod 2 \implies S \equiv S - a - b + a^3 + b^3 \iff S + a + b \equiv S + a^3 + b^3 \mod 2
-\]
-
-Portanto não podemos acabar apenas com o $73$ no saco, já que a soma inicial é par e $73$ é ímpar.
-
-Questão bónus: encontra uma solução que ainda funcione caso eu diga que quero acabar com $2$, $74$ ou $308$ no saco. Repara que a minha solução já não funciona porque estes números são pares.
-
-Conseguiste resolver este problema? Achaste fácil?
+[s002]: https://mathspp.com/blog/problems/s/bag-full-of-numbers

@@ -5,15 +5,6 @@ use Grav\Common\Theme;
 
 class Myquark extends Quark
 {
-    public static function getSubscribedEvents()
-    {
-        return [
-            'onThemeInitialized'    => ['onThemeInitialized', 0],
-            'onTwigLoader'          => ['onTwigLoader', 0],
-            'onTwigInitialized'     => ['onTwigInitialized', 0],
-        ];
-    }
-
     // cf. https://learn.getgrav.org/16/cookbook/twig-recipes#custom-twig-filter-function
     public function onTwigInitialized(Event $e)
     {
