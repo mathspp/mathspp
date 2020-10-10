@@ -13,7 +13,7 @@ li {
     <!-- font-weight: bold; -->
 }
 
-img, .parallax {
+img, .parallax, .reaction-item__button img {
     filter: invert(1) hue-rotate(180deg);
 }
 body {
