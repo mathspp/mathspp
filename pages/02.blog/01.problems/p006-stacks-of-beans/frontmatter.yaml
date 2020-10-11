@@ -1,0 +1,13 @@
+date: 10-02-2018
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: https://mathspp.com/blog/problems/stacks-of-beans/beans.png
+process:
+    twig: true
+slug: stacks-of-beans
+taxonomy:
+    category: blogpost
+    tag:
+      - problem
+      - game theory
+twig_first: true
