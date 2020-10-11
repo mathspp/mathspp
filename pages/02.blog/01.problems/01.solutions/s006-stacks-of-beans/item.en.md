@@ -19,7 +19,8 @@ We can see that it is impossible to reach position $(0, 0)$ given that each move
 
 In a similar fashion we can conclude that to reach the position $(1, 1)$ we must have been at $(3, 0)$ (or $(0, 3)$ of course). At this point, we can already determine the outcome of a game played by two perfect opponents if the game starts at any of the following positions: $(0,0), (1,0), (0,1), (1,1), (2,0), (0,2), (3,0), (0,3)$. We shall keep exploring positions this way and fill a table with our conclusions. We say we have a losing position $L$ if the first player loses a game starting at that position and similarly we say we have a winning position $W$ if the first player wins a game starting at that position. As an example, $(1,0)$ is a losing position. So far, this is what we know:
 
-$$\begin{array}{|c|c|c|c|c|c|c|}
+$$
+\begin{array}{|c|c|c|c|c|c|c|}
 \hline   & 0 & 1 & 2 & 3 & 4 & 5 \\
 \hline
  0 & L & L & W & W &   &   \\
@@ -38,7 +39,8 @@ On the other hand, for a position to be a losing position it is necessary that *
 
 If we fill the table with our new findings we get:
 
-$$\begin{array}{|c|c|c|c|c|c|c|}
+$$
+\begin{array}{|c|c|c|c|c|c|c|}
 \hline   & 0 & 1 & 2 & 3 & 4 & 5 \\
 \hline
  0 & L & L & W & W & W & W \\
