@@ -19,7 +19,8 @@ Notamos que é impossível chegar à jogada $(0, 0)$, já que em cada jogada tir
 
 De modo semelhante, podemos concluir que para chegar à posição $(1, 1)$ temos de ter vindo da posição $(3, 0)$ (ou da posição $(0, 3)$, claro). Neste momento já sabemos qual é o resultado de um jogo, jogado por dois jogadores perfeitos, que comece numa das posições $(0, 0)$, $(1, 0)$, $(0, 1)$, $(2, 0)$, $(0, 2)$, $(3, 0)$ e $(0, 3)$. Vamos continuar este tipo de raciocínio e sistematizar as nossas conclusões numa tabela. Dizemos que uma posição é perdedora $P$ se, num jogo começado nessa posição, o primeiro jogador perde. De modo semelhante, dizemos que uma posição é vencedora $V$ se, num jogo começado nessa posição, o primeiro jogador vence. Por exemplo, a posição $(1, 0)$ é $P$. O que sabemos até agora é o seguinte:
 
-$$\begin{array}{|c|c|c|c|c|c|c|}
+$$
+\begin{array}{|c|c|c|c|c|c|c|}
 \hline & 0 & 1 & 2 & 3 & 4 & 5 \\
 \hline
  0 & P & P & V & V & & \\
@@ -30,7 +31,8 @@ $$\begin{array}{|c|c|c|c|c|c|c|}
 \hline 4 &  &  & & & & \\
 \hline 5 &  & & & & & \\
 \hline
-\end{array}$$
+\end{array}
+$$
 
 Continuamos a preencher a tabela, concluindo com alguma facilidade que as posições $(2, 1)$ e $(2, 2)$ são perdedoras. De seguida, podemos concluir que as posições $(3, 1)$, $(4, 0)$, $(4, 1)$, $(5, 0)$, $(6, 0)$ e $(4, 2)$ são vencedoras, porque todas elas podem chegar a $(2, 1)$ ou $(2, 2)$. Note-se que para uma posição ser vencedora basta que **uma** jogada sobre essa posição leve a uma posição perdedora. Por exemplo, na posição $(4, 0)$ podemos passar para $(2, 1)$ ou $(2, 0)$. Se passarmos para $(2, 1)$ ganhamos, porque $(2, 1)$ é uma posição $P$, mas se passarmos para $(2, 0)$ acabámos de dar a vitória ao nosso adversário.
 
@@ -38,7 +40,8 @@ Por outro lado, para uma posição ser perdedora é necessário que **todas** as
 
 Preenchendo a tabela com as nossas novas conclusões, obtemos
 
-$$\begin{array}{|c|c|c|c|c|c|c|}
+$$
+\begin{array}{|c|c|c|c|c|c|c|}
 \hline & 0 & 1 & 2 & 3 & 4 & 5 \\
 \hline
  0 & P & P & V & V & V & V \\
@@ -49,7 +52,8 @@ $$\begin{array}{|c|c|c|c|c|c|c|}
 \hline 4 & V  & V & V & & & \\
 \hline 5 & V  & & & & & \\
 \hline
-\end{array}$$
+\end{array}
+$$
 
 Neste ponto podemos começar a notar que um certo padrão parece emergir, que evidencio na tabela seguinte:
 
