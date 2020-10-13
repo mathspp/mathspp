@@ -9,6 +9,93 @@ title: Aprende APL com redes neuronais
 !
 ! Os conteúdos desta página e do workshop são providenciados sem qualquer tipo de garantia.
 
+## Objetivo
+
+O objetivo deste workshop é introduzir as pessoas a programação com [APL], sendo este primeiro contacto direcionado para a implementação de uma rede neuronal de raíz. É útil que a audiência tenha alguns conhecimentos de programação (numa linguagem de programação qualquer) e que já tenha ouvido falar de redes neuronais, mas isto não é um requisito inegociável.
+
+Há duas razões pelas quais eu uso redes neuronais para introduzir APL aos novatos que vêm ao workshop:
+
+ - por um lado, é muito melhor aprender uma linguagem quando se constrói algo com ela, ao invés de sermos bombardeados com uma lista exaustiva de todas as funcionalidades que a linguagem tem;
+ - por outro lado, redes neuronais podem ser implementadas fazendo uso de álgebra matricial e APL é excecional nesse tipo de cálculos.
+
+
+## Teor do workshop
+
+O objetivo do workshop é implementar um "namespace" de forma progressiva, para que este tenha funcionalidades suficientes para criar uma rede neuronal que possa ser treinada nos dados MNIST (`mnistdata.rar`) e que aprenda a classificar dígitos desenhados à mão.
+
+Ou seja, a rede neuronal vai receber imagens como as que se seguem e deve ser capaz de identificar o dígito presente.
+
+![exemploes de imagens dos dados MNIST](MnistExamples.png "Imagem de Josef Steppan, licença CC BY-SA 4.0)
+
+Neste sentido, segue aqui a ordem aproximada pela qual eu abordo as pequenas componentes que têm de ser implementadas (esta ordem é muito parecida com a ordem dos objetos definidos no ficheiro `NeuralNets.apln`):
+
+ 1. definir uma dfn e escrever os símbolos de APL;
+ 2. ganhar intuição sobre o funcionamento de redes neuronais simples;
+ 3. construir um tensor arbitrário com números distribuídos de forma normal (no sentido estatístico);
+ 4. construir os parâmetros aleatórios da rede:
+    - as matrizes de pesos;
+    - os vetores coluna com os "bias";
+ 5. construir uma função de ativação (e.g. leaky ReLU);
+ 6. implementar o "forward pass";
+ 7. implementar a função objetivo;
+ 8. implementar as derivadas para o algoritmo de "backpropagation":
+    - derivada da função objetivo;
+    - derivada da função de ativação;
+ 9. rever os detalhes do algoritmo de "backpropagation";
+ 10. implementar o dito algoritmo;
+ 11. verificar que as derivadas calculadas apontam na direção certa;
+ 12. ler os dados MNIST dos ficheiros;
+ 13. visualizar os dados;
+ 14. treinar a rede nos dados;
+ 15. testar a rede nos dados;
+
+O tamanho da audiência, os seus conhecimentos prévios de APL e sobre redes neuronais, bem como outros fatores semelhantes vão impactar o quanto se consegue fazer.
+
+Se tudo nesta lista for feito dentro do tempo previsto, seguem algumas possíveis direções para o workshop que têm custos de oportunidade reduzidos:
+
+ - escrever uma pequena função que mostre alguns dígitos, bem como os palpites da rede;
+ - alterar a função objetivo para algo que faça mais sentido nesta tarefa de classificação, e.g. cross-entropy;
+ - implementar um modelo aluno-professor;
+
+
+## Conclusões
+
+No fim do workshop os participantes terão uma implementação de uma rede neuronal (ou estarão perto disso) escrita numa linguagem com que nunca tinham trabalhado, APL.
+
+Os participantes terão usado pela primeira vez uma linguagem que é puramente orientada para tensores e tê-la-ão usado para implementar de raíz um modelo de aprendizagem automática que é moderno e popular.
+
+Finalmente, a sua implementação de uma rede neuronal pode ser treinada em menos de 2 minutos para reconhecer dígitos com uma precisão de 89% (tempo medido no meu portátil). Aqui está um exemplo de alguns dígitos desenhados à mão, junto dos palpites da rede treinada:
+
+```APL
+               @@                                                                                   
+              @@@                                                                                   
+             @@@                                   @@@                                              
+            @@@@                                @@@@@@@@                                            
+           @@@@       @                       @@@@@@@@@@            @@                @       @@    
+           @@@       @@@@@@@@                @@@@@@@  @@@       @@@@@@@              @@       @@    
+          @@@        @@@@@@@@@@@@@           @@@@@   @@@        @@@@@@@@            @@@      @@@    
+         @@@@         @@@@@@@@@@@@@          @@@     @@@      @@@@    @@@          @@@      @@@     
+         @@@            @@@@@@@@@@@                  @@@      @@@      @@@        @@@       @@@     
+        @@@                   @@@@                  @@@@     @@@        @@       @@@        @@      
+        @@@   @@@@           @@@@@                 @@@       @@@        @@@     @@@@       @@@      
+       @@@   @@@@@@          @@@@@                @@@@      @@@        @@@@     @@@@       @@@      
+       @@@  @@@@@@@          @@@@                 @@@@      @@@@    @@@@@@@      @@@@@    @@@       
+       @@@ @@@@  @@         @@@@@                @@@@@       @@@@@@@@@@@@@        @@@@@@@@@@        
+       @@ @@@@   @@         @@@@                @@@@@@@@      @@@@@@@@ @@@          @@@@@@@@        
+       @@@@@@   @@@        @@@@@             @@@@@@@@@@@@@      @@     @@@               @@@        
+       @@@@@@ @@@@@        @@@@@            @@@@@@@@  @@@@@@           @@                @@@        
+        @@@@@@@@@@         @@@@            @@@@@@@      @@@@          @@@                @@         
+        @@@@@@@@           @@@@           @@@@@@@         @@          @@                @@@         
+          @@@@             @@@@          @@@@@@                      @@@                @@@         
+                           @@@@          @@@@                        @@@                @@          
+                           @@@@          @@@                         @@@               @@@          
+                           @@@@                                      @@@               @@@          
+                           @@@                                       @@@               @@           
+                                                                                                    
+                                                                                                    
+guessing 6          guessing 7          guessing 2          guessing 9          guessing 4          
+```
+
 [APL]: https://aplwiki.com
 [license]: https://creativecommons.org/licenses/by-nc-sa/4.0/
 [Dyalog]: https://dyalog.com

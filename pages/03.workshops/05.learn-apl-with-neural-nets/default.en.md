@@ -14,7 +14,7 @@ The aim of this workshop is to introduce people to the [APL] programming languag
 
 There are two reasons why I use neural networks to introduce APL to newcomers in this workshop:
 
- - for one, it is better to learn a language and build something with it instead of just going through all the primitives that APL has to offer;
+ - for one, it is better to learn a language and build something with it instead of just going through all the built-ins that APL has to offer;
  - secondly, neural networks can be built on top of matrix algebra and such operations lend themselves naturally to APL.
 
 
@@ -22,18 +22,22 @@ There are two reasons why I use neural networks to introduce APL to newcomers in
 
 The objective of the workshop is to make incremental improvements to a namespace that eventually contains enough functionality to create a neural network that can be trained on the MNIST data (`mnistdata.rar`) and classify handwritten digits.
 
+That is, the neural network will receive as input images like the ones below and should be able to identify the digit in the image.
+
+![MNIST image examples](MnistExamples.png "Imagem de Josef Steppan, licença CC BY-SA 4.0)
+
 For that matter, here is the standard order in which things get done in the workshop (this lines up almost perfectly with the order in which objects appear in `NeuralNets.apln`):
 
- 1. defining a dfn and writing glyphs (the `sqrt` dfn) in APL;
+ 1. defining a dfn and writing glyphs in APL;
  2. go over the *intuitive* basics on neural networks;
  3. build an array of arbitrary shape with normally-distributed real numbers;
- 4. build the random parameters for the network;
+ 4. build the random parameters for the network:
     - build the weight matrices;
     - build the bias column vectors;
  5. build an activation function (e.g. leaky ReLU);
  6. implement the forward pass;
  7. implement loss function;
- 8. implement derivatives for backprop algorithm;
+ 8. implement derivatives for backprop algorithm:
     - for the loss function;
     - for the activation function;
  9. go over the details of the backpropagation algorithm;
@@ -59,34 +63,37 @@ By the end of the workshop, attendees will have a (close to finished) neural net
 
 Attendees will have dabbled for the first time with a purely array-oriented programming language and built a popular, modern-day machine learning model from scratch.
 
-Finally, their own implementation of a neural network can be trained in less than 2 minutes to recognise handwritten digits with 89% accuracy (timed on my laptop). Here's an example:
+Finally, their own implementation of a neural network can be trained in less than 2 minutes to recognise handwritten digits with 89% accuracy (timed on my laptop).
+Here is an example of some drawn digits and the neural network's guesses.
 
 ```APL
-                                                        
-                    ⌹⌹          ⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹            
-                ⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹              
-              ⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹                      
-            ⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹                            
-            ⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹                                  
-            ⌹⌹⌹⌹⌹⌹                                      
-            ⌹⌹⌹⌹⌹⌹                                      
-            ⌹⌹⌹⌹⌹⌹                                      
-            ⌹⌹⌹⌹⌹⌹⌹⌹      ⌹⌹⌹⌹                          
-              ⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹                  
-                ⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹                
-                                  ⌹⌹⌹⌹⌹⌹⌹⌹              
-                                    ⌹⌹⌹⌹⌹⌹⌹⌹            
-                                      ⌹⌹⌹⌹⌹⌹            
-                                      ⌹⌹⌹⌹⌹⌹            
-                                      ⌹⌹⌹⌹⌹⌹            
-                                  ⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹            
-                      ⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹              
-                        ⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹⌹                
-                            ⌹⌹                          
-                                                        
-                                                        
-                                                        
-guess is 5
+               @@                                                                                   
+              @@@                                                                                   
+             @@@                                   @@@                                              
+            @@@@                                @@@@@@@@                                            
+           @@@@       @                       @@@@@@@@@@            @@                @       @@    
+           @@@       @@@@@@@@                @@@@@@@  @@@       @@@@@@@              @@       @@    
+          @@@        @@@@@@@@@@@@@           @@@@@   @@@        @@@@@@@@            @@@      @@@    
+         @@@@         @@@@@@@@@@@@@          @@@     @@@      @@@@    @@@          @@@      @@@     
+         @@@            @@@@@@@@@@@                  @@@      @@@      @@@        @@@       @@@     
+        @@@                   @@@@                  @@@@     @@@        @@       @@@        @@      
+        @@@   @@@@           @@@@@                 @@@       @@@        @@@     @@@@       @@@      
+       @@@   @@@@@@          @@@@@                @@@@      @@@        @@@@     @@@@       @@@      
+       @@@  @@@@@@@          @@@@                 @@@@      @@@@    @@@@@@@      @@@@@    @@@       
+       @@@ @@@@  @@         @@@@@                @@@@@       @@@@@@@@@@@@@        @@@@@@@@@@        
+       @@ @@@@   @@         @@@@                @@@@@@@@      @@@@@@@@ @@@          @@@@@@@@        
+       @@@@@@   @@@        @@@@@             @@@@@@@@@@@@@      @@     @@@               @@@        
+       @@@@@@ @@@@@        @@@@@            @@@@@@@@  @@@@@@           @@                @@@        
+        @@@@@@@@@@         @@@@            @@@@@@@      @@@@          @@@                @@         
+        @@@@@@@@           @@@@           @@@@@@@         @@          @@                @@@         
+          @@@@             @@@@          @@@@@@                      @@@                @@@         
+                           @@@@          @@@@                        @@@                @@          
+                           @@@@          @@@                         @@@               @@@          
+                           @@@@                                      @@@               @@@          
+                           @@@                                       @@@               @@           
+                                                                                                    
+                                                                                                    
+guessing 6          guessing 7          guessing 2          guessing 9          guessing 4          
 ```
 
 [APL]: https://aplwiki.com
