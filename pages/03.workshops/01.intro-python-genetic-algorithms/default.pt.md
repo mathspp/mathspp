@@ -1,9 +1,9 @@
 ---
-menu: Intro Python com AGs
-title: Introdução ao Python com algoritmos genéticos
+menu: Intro Python com AEs
+title: Introdução ao Python com algoritmos evolutivos
 ---
 
-# Introdução ao Python com algoritmos genéticos
+# Introdução ao Python com algoritmos evolutivos
 
 ## Objetivo
 
