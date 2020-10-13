@@ -53,8 +53,13 @@ class ErrorPlugin extends Plugin
 
         // Try to load user error page.
         $page = $pages->dispatch($this->config->get('plugins.error.routes.404', '/error'), true);
-
-        if (!$page) {
+        if ($page) {
+            // Set default expires for error page.
+            $header = $page->header();
+            if (!isset($header->expires)) {
+                $page->expires(0);
+            }
+        } else {
             // If none provided use built in error page.
             $page = new Page;
             $page->init(new \SplFileInfo(__DIR__ . '/pages/error.md'));
