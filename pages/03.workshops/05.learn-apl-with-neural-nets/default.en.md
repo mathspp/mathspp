@@ -4,7 +4,7 @@ title: Learn APL with neural networks
 
 # Learn APL with neural networks
 
-! This workshop is based off of content owned by [Dyalog Ltd.][Dyalog] and licensed under a [CC BY-NC-SA 4.0 International][license] license (available at [https://creativecommons.org/licenses/by-nc-sa/4.0/][license]).
+! This workshop is based off of content owned by [Dyalog Ltd.][Dyalog] and licensed under a [CC BY-NC-SA 4.0 International][license] license.
 !
 ! The contents of this page and of the workshop are provided as-is and with no warranties whatsoever.
 
