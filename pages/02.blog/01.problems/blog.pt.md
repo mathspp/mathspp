@@ -11,4 +11,4 @@ Se queres receber os problemas diretamente na tua caixa de correio, então [subs
 
 O próximo problema está agendado para domingo, 18 de outubro, por volta das 20h.
 
-<sub><sup>Se reparares, faltam alguns problemas aqui... Ainda estou a migrar coisas do meu [blogue antigo](http://mathspp.blogspot.com)</sup></sub>
+<sub><sup>Se reparares, faltam alguns problemas aqui... Ainda estou a migrar artigos do meu [blogue antigo](http://mathspp.blogspot.com).</sup></sub>
