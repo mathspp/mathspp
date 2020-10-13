@@ -4,7 +4,7 @@ title: Learn APL with neural networks
 
 # Learn APL with neural networks
 
-! This workshop is based off of content owned by Dyalog Ltd. and licensed under a [CC BY-NC-SA 4.0 International][license] license (available at [https://creativecommons.org/licenses/by-nc-sa/4.0/][license]).
+! This workshop is based off of content owned by [Dyalog Ltd.][Dyalog] and licensed under a [CC BY-NC-SA 4.0 International][license] license (available at [https://creativecommons.org/licenses/by-nc-sa/4.0/][license]).
 !
 ! The contents of this page and of the workshop are provided as-is and with no warranties whatsoever.
 
@@ -12,7 +12,7 @@ title: Learn APL with neural networks
 
 The aim of this workshop is to introduce people to the [APL] programming language, with the first contact geared towards building a neural network from scratch. It helps if the audience has some programming knowledge (in no programming language in particular) and has heard of neural networks a bit, but that is not necessary.
 
-There's two reasons why I use neural networks to introduce APL to newcomers in this workshop:
+There are two reasons why I use neural networks to introduce APL to newcomers in this workshop:
 
  - for one, it is better to learn a language and build something with it instead of just going through all the primitives that APL has to offer;
  - secondly, neural networks can be built on top of matrix algebra and such operations lend themselves naturally to APL.
@@ -91,3 +91,4 @@ guess is 5
 
 [APL]: https://aplwiki.com
 [license]: https://creativecommons.org/licenses/by-nc-sa/4.0/
+[Dyalog]: https://dyalog.com

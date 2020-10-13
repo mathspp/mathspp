@@ -1,3 +1,6 @@
 menu: Learn APL w/ neural nets
+metadata:
+    author: Rodrigo Girão Serrão
+    description: This workshop teaches you both APL and how to build neural networks from scratch!
+    #og:image: 
 slug: learn-apl-with-neural-nets
-menu: False
