@@ -8,4 +8,4 @@ hero_classes: parallax overlay-dark-gradient text-light
 hero_image: python-logo-2.png
 menu: Py-don'ts
 title: Py-don'ts
-visibe: false
+visible: false
