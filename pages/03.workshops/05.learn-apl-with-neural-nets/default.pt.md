@@ -25,7 +25,7 @@ O objetivo do workshop é implementar um "namespace" de forma progressiva, para 
 
 Ou seja, a rede neuronal vai receber imagens como as que se seguem e deve ser capaz de identificar o dígito presente.
 
-![exemploes de imagens dos dados MNIST](MnistExamples.png "Imagem de Josef Steppan, licença CC BY-SA 4.0)
+![exemploes de imagens dos dados MNIST](MnistExamples.png "Imagem de Josef Steppan, licença CC BY-SA 4.0")
 
 Neste sentido, segue aqui a ordem aproximada pela qual eu abordo as pequenas componentes que têm de ser implementadas (esta ordem é muito parecida com a ordem dos objetos definidos no ficheiro `NeuralNets.apln`):
 

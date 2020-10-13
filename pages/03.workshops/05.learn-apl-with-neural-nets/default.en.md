@@ -24,7 +24,7 @@ The objective of the workshop is to make incremental improvements to a namespace
 
 That is, the neural network will receive as input images like the ones below and should be able to identify the digit in the image.
 
-![MNIST image examples](MnistExamples.png "Imagem de Josef Steppan, licença CC BY-SA 4.0)
+![MNIST image examples](MnistExamples.png "Imagem de Josef Steppan, licença CC BY-SA 4.0")
 
 For that matter, here is the standard order in which things get done in the workshop (this lines up almost perfectly with the order in which objects appear in `NeuralNets.apln`):
 
