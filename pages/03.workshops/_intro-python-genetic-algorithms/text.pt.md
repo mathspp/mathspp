@@ -14,4 +14,4 @@ Vamos começar com um robô que limpa uma sala retangular de forma aleatória, c
   
 <br />
   
-A página sobre o workshop pode ser encontrada [aqui](https://mathspp.com/workshops/intro-python-evolutionary-algorithms) e o código [aqui](https://github.com/RojerGS/workshops).
+A página sobre o workshop pode ser encontrada [aqui](https://mathspp.com/pt/workshops/intro-python-evolutionary-algorithms) e o código [aqui](https://github.com/RojerGS/workshops).
