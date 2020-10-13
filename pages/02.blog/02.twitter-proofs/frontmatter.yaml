@@ -1,3 +1,5 @@
+anchors:
+    active: false
 content:
     items:
         taxonomy@.tag: twitter proof
