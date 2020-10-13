@@ -1,3 +1,22 @@
+# v1.9.17
+## 10/07/2020
+
+1. [](#new)
+    * Support premium themes
+    * Back-ported functionality from Admin 1.10 required for upcoming WYSIWYM Nextgen Editor
+1. [](#improved)
+    * Improved some error messages for better readability
+1. [](#bugfix)
+    * Fixed issue that would force a page reload when failing to install/update a plugin or theme
+    * Fixed proxy/browser caching issues in admin pages
+
+# v1.9.16
+## 09/01/2020
+
+1. [](#bugfix)
+    * Fixed a glitch which allows user to delete entire pages directory [#1941](https://github.com/getgrav/grav-plugin-admin/issues/1941)
+    * Fixed the hidden login plugin toggle
+
 # v1.9.15
 ## 06/08/2020
 
