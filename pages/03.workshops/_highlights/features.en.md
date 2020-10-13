@@ -1,5 +1,8 @@
 ---
 features:
+  - icon: fab fa-dyalog
+    text: Learn APL with neural nets
+    url: '#learn-apl-with-neural-nets'
   - icon: fab fa-python
     text: Intro to Python with genetic algorithms
     url: '#intro-python-genetic-algorithms'
@@ -13,7 +16,7 @@ features:
     text: Hands-on cryptography
     url: '#hands-on-cryptography'
   - icon: fas fa-question
-    text: Want a different workshop..?
+    text: Interested in a different workshop..?
     url: '#what-is-next'
 ---
 

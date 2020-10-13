@@ -1,5 +1,8 @@
 ---
 features:
+  - icon: fab fa-dyalog
+    text: Aprende APL com redes neuronais
+    url: '#aprende-apl-com-redes-neuronais'
   - icon: fab fa-python
     text: Intro ao Python com algoritmos genéticos
     url: '#intro-python-algoritmos-geneticos'
