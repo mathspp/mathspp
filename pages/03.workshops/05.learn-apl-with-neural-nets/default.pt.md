@@ -1,5 +1,7 @@
 ---
 menu: Aprende APL com redes neuronais
+metadata:
+    description: Neste workshop aprendes APL e ainda aprendes a fazer uma rede neuronal de raíz!
 title: Aprende APL com redes neuronais
 ---
 
