@@ -1,5 +1,5 @@
 ---
-menu: Intro Python with GAs
+menu: Intro Python with EAs
 title: Introduction to Python with evolutionary algorithms
 ---
 
