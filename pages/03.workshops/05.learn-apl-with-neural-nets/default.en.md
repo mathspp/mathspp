@@ -22,7 +22,7 @@ There are two reasons why I use neural networks to introduce APL to newcomers in
 
 The objective of the workshop is to make incremental improvements to a namespace that eventually contains enough functionality to create a neural network that can be trained on the MNIST data (`mnistdata.rar`) and classify handwritten digits.
 
-That is, the neural network will receive as input images like the ones below and should be able to identify the digit in the image.
+That is, the neural network will receive input images like the ones below and should be able to identify the digit in the image.
 
 ![MNIST image examples](MnistExamples.png "Imagem de Josef Steppan, licença CC BY-SA 4.0")
 
@@ -96,6 +96,21 @@ Here is an example of some drawn digits and the neural network's guesses.
 guessing 6          guessing 7          guessing 2          guessing 9          guessing 4          
 ```
 
+## Additional resources
+
+Other than the code with the reference implementation (available in [this GitHub repository][workshops-gh]), here are some links that might be useful:
+
+ - A [pdf version][mdapl-pdf] of the "Mastering Dyalog APL" book, and its [online version][mdapl-online] (the online version is a work in progress);
+ - [The APL Orchard][apl-orchard] is a chat room where people from any APL level get together to talk about, teach and learn APL;
+ - The [APL Cart][aplcart] is the go-to place whenever you have a question of the form "How do I ___ in APL?";
+ - The [APL wiki][aplwiki] has articles on everything that has to do with APL.
+
 [APL]: https://aplwiki.com
 [license]: https://creativecommons.org/licenses/by-nc-sa/4.0/
 [Dyalog]: https://dyalog.com
+[workshops-gh]: https://github.com/RojerGS/workshops
+[mdapl-pdf]: https://www.dyalog.com/mastering-dyalog-apl.htm
+[mdapl-online]: https://rojergs.github.io/MDAPL
+[apl-orchard]: https://chat.stackexchange.com/rooms/52405/the-apl-orchard
+[aplcart]: aplcart.info/
+[aplwiki]: https://aplwiki.com

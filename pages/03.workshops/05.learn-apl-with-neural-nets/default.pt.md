@@ -96,6 +96,22 @@ Finalmente, a sua implementação de uma rede neuronal pode ser treinada em meno
 guessing 6          guessing 7          guessing 2          guessing 9          guessing 4          
 ```
 
+
+## Recursos adicionais
+
+Para além do código de referência, que está disponível [neste repositório do GitHub][workshops-gh], os seguintes links podem ser úteis:
+
+ - [versão pdf][mdapl-pdf] do livro "Mastering Dyalog APL" e [versão online][mdapl-online] (a versão online é um trabalho em curso);
+ - O [Pomar de APL][apl-orchard] é uma sala de chat onde pessoas de vários níveis se juntam para ensinar, aprender e discutir APL;
+ - O [APL Cart][aplcart] é um site bestial para responder a perguntas do tipo "Como é que faço ___ com APL?";
+ - A [wiki de APL][aplwiki] contém artigos interessantes sobre tudo o que diz respeito a APL.
+
 [APL]: https://aplwiki.com
 [license]: https://creativecommons.org/licenses/by-nc-sa/4.0/
 [Dyalog]: https://dyalog.com
+[workshops-gh]: https://github.com/RojerGS/workshops
+[mdapl-pdf]: https://www.dyalog.com/mastering-dyalog-apl.htm
+[mdapl-online]: https://rojergs.github.io/MDAPL
+[apl-orchard]: https://chat.stackexchange.com/rooms/52405/the-apl-orchard
+[aplcart]: aplcart.info/
+[aplwiki]: https://aplwiki.com
