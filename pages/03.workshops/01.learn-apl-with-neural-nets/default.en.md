@@ -115,5 +115,5 @@ Other than the code with the reference implementation (available in [this GitHub
 [mdapl-pdf]: https://www.dyalog.com/mastering-dyalog-apl.htm
 [mdapl-online]: https://rojergs.github.io/MDAPL
 [apl-orchard]: https://chat.stackexchange.com/rooms/52405/the-apl-orchard
-[aplcart]: aplcart.info/
+[aplcart]: https://aplcart.info/
 [aplwiki]: https://aplwiki.com
