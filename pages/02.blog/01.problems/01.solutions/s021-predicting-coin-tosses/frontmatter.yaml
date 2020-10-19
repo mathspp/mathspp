@@ -1,7 +1,7 @@
 date: 18-10-2020
 metadata:
     author: Rodrigo Girão Serrão
-    'og:image': https://mathspp.com/problems/predicting-coin-tosses/coin-in-sand.jpg
+    'og:image': 'https://mathspp.com/problems/predicting-coin-tosses/coin-in-sand.jpg'
 process:
     twig: true
 publish_date: 18-10-2020 21:00
