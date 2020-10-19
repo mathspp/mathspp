@@ -1,5 +1,6 @@
 ---
-metadata: Este artigo contém a minha proposta de solução para um dos problemas deste blogue.
+metadata:
+    description: Este artigo contém a minha proposta de solução para um dos problemas deste blogue.
 title: 'Solução #021 - prever o lançamento da moeda'
 ---
 

@@ -1,5 +1,6 @@
 ---
-metadata: This blog post contains my proposed solution to one of the problems of this blog.
+metadata:
+    description: This blog post contains my proposed solution to one of the problems of this blog.
 title: 'Solution #021 - predicting coin tosses'
 ---
 
