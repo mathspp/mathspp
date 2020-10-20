@@ -2,7 +2,7 @@ date: 17-10-2017
 slug: julia-set
 taxonomy:
     category: blogpost
-    tags:
+    tag:
       - mathematics
       - programming
       - python
