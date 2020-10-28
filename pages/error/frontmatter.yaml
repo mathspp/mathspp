@@ -3,4 +3,3 @@ anchors:
     enabled: false
 metadata:
     author: Rodrigo Girão Serrão
-routable: false
