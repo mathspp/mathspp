@@ -1,3 +1,6 @@
+anchors:
+    active: false
+    enabled: false
 metadata:
     author: Rodrigo Girão Serrão
 routable: false
