@@ -12,8 +12,9 @@ This will have you coding in a completely different mindset. You will exercise t
 
 Here's what a couple of people said about the workshop:
 
- > “*The best thing was to have this hands-on approach to learning a new programming language*”  &mdash; Carlos
+ > “*It was amazing what we did in just 2 hours [...] In the end I was tired but satisfied with, and fascinated by what I had learned and built.*”  &mdash; João Afonso
 
- > “*I really enjoyed the simple and accessible way in which it was taught*”  &mdash; Anonymous
+
+ > “*The best thing was to have this hands-on approach to learning a new programming language*”  &mdash; Carlos
 
 You can read more about the workshop [here](https://mathspp.com/workshops/learn-apl-with-neural-nets).

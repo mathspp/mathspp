@@ -98,6 +98,18 @@ Finalmente, a sua implementação de uma rede neuronal pode ser treinada em meno
 guessing 6          guessing 7          guessing 2          guessing 9          guessing 4          
 ```
 
+## Feedback
+
+Aqui tens algumas opiniões de pessoas que foram ao workshop:
+
+ > “*Acho incrível o que nós conseguimos fazer em apenas 2 horas [...] No final senti-me cansado mas satisfeito e fascinado com o que fiz e aprendi.*”  &mdash; João Afonso
+
+
+ > “*Esta* hands-on *approach de aprender uma linguagem de programação nova torna o processo de aprendizagem mais interessante do que o habitual.*”  &mdash; Carlos
+
+
+ > “*Gostei muito da maneira simples e acessível como foi explicado.*”  &mdash; Anónim@
+
 
 ## Recursos adicionais
 
