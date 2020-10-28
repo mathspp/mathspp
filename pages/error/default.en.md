@@ -1,3 +1,10 @@
-<center><h1>Error $2^2 \times 101$</h1></center>
+---
+anchors:
+    active: false
+---
+
+
+<center><h1>Error 2×2×101</h1>
 
 Woops. Looks like this page doesn't exist.
+</center>
