@@ -13,7 +13,6 @@ content:
             - _highlights
             - _features-learn-apl-with-neural-nets
             - _learn-apl-with-neural-nets
-            - _learn-apl-with-neural-nets-feedback
             - _features-intro-python-genetic-algorithms
             - _intro-python-genetic-algorithms
             - _features-intro-latex
