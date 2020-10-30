@@ -22,6 +22,6 @@ features:
       header: Minor code fixes
       text: '@Dyalog/dyalog-jupyter-kernel and @realpython/materials'
     - icon: fas fa-spell-check
-      header: Fixing typos
-      text: '@abrudz/aplcart and /abrudz.github.io, @yairm210/Unciv, @rykedip/APLWorkshop, @inesfmarques/projecto, @getgrav/grav-learn, ...'
+      header: Proofreading
+      text: '@abrudz/aplcart and /abrudz.github.io, @yairm210/Unciv, @rykedip/APLWorkshop, @inesfmarques/projecto, @getgrav/grav-learn, @ekspek/ist-thesis, ...'
 ---
