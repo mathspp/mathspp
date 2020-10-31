@@ -22,6 +22,7 @@ To make it clear why this strategy works, let us analyse the four possible outco
 | Heads | Tails |
 | Tails | Heads |
 | Tails | Tails |
+<br />
 
 Note that the fact that the coins may not be fair doesn't change the fact that there are only four possible outcomes. The breakthrough comes when you realise that the outcomes that really matter are only two, which are the relationships between the two coin tosses:
 
@@ -31,6 +32,7 @@ Note that the fact that the coins may not be fair doesn't change the fact that t
 | Heads | Tails | Different | Bob |
 | Tails | Heads | Different | Bob |
 | Tails | Tails | The same | Alice |
+<br />
 
 And that is it! No need for boring or complicated calculations.
 

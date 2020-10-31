@@ -14,7 +14,7 @@ Existe uma estratégia perfeita que permite que a Alice e o Bruno escapem da pri
 
 A estratégia perfeita é: a Alice diz um palpite igual ao lançamento em frente dela e o Bruno diz um palpite oposto ao lançamento em frente dele.
 
-Para compreendermos bem qual é a estratégia perfeita, vamos começar por analisar quais são os resultados possíveis dos lançamentos das moedas:
+Para compreendermos bem porque é que esta estratégia é perfeita, vamos começar por analisar quais são os resultados possíveis dos lançamentos das moedas:
 
 | Carlos | Duarte |
 | :-: | :-: |
@@ -22,6 +22,7 @@ Para compreendermos bem qual é a estratégia perfeita, vamos começar por anali
 | Cara | Coroa |
 | Coroa | Cara |
 | Coroa | Coroa |
+<br />
 
 Como se pode ver pela tabela em cima, existem quatro resultados possíveis. Note-se que o facto das moedas poderem não ser equilibradas não afeta de modo nenhum a tabela em cima. Mas a grande epifania necessária é perceber que os resultados que interessam são só dois, quando as moedas têm resultados iguais ou resultados diferentes:
 
@@ -31,6 +32,7 @@ Como se pode ver pela tabela em cima, existem quatro resultados possíveis. Note
 | Cara | Coroa | Diferentes | Bruno |
 | Coroa | Cara | Diferentes | Bruno |
 | Coroa | Coroa | Iguais | Alice |
+<br />
 
 É só isto! Não é preciso fazer contas chatas, basta ter uma ideia muito boa.
 
