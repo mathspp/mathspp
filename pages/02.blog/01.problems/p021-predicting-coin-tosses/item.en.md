@@ -12,7 +12,7 @@ Alice and Bob are going to be locked away separately and their faith depends on 
 
 ### Problem statement
 
-Alice and Bob are going to be incarcerated separately. Everyday at 12h, prison guard Charles meets Alice and prison guard Daniel meets Bob. Each prison guard takes his own prison guard coin out of their pocket (a coin with heads and tails, but not necessarily a fair coin) and tosses it, showing the result to the prisoner in front of him. Then, each prisoner tries to guess what the outcome of their friend's coin toss was. That is, Alice sees the outcome of Charle's coin toss and tries to guess what outcome Bob saw from Daniel's coin toss, and vice-versa. If *any* of the prisoners gets it right, both are set free.
+Alice and Bob are going to be incarcerated separately. Everyday at 12h, prison guard Charles meets Alice and prison guard Daniel meets Bob. Each prison guard takes his own prison guard coin out of their pocket (a coin with heads and tails, but not necessarily a fair coin) and tosses it, showing the result to the prisoner in front of him. Then, each prisoner tries to guess what the outcome of their friend's coin toss was. That is, Alice sees the outcome of Charles's coin toss and tries to guess what outcome Bob saw from Daniel's coin toss, and vice-versa. If *any* of the prisoners gets it right, both are set free.
 
 What is the best strategy that Alice and Bob can agree upon, so that they are released as soon as possible? According to that strategy, what is the average number of days it will take them to be released?
 
