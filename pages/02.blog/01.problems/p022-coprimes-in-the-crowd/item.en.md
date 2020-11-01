@@ -4,7 +4,7 @@ metadata:
 title: 'Problem #022 - coprimes in the crowd'
 ---
 
-This simple problem is an example of a very interesting phenomenon: if you have a large enough "universe" to consider, even randomly picked parts exhibit interesting properties.
+This simple problem is an example of a very interesting phenomenon: if you have a large enough "universe" to consider, even randomly picked parts exhibit structured properties.
 
 ===
 

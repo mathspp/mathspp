@@ -4,7 +4,7 @@ metadata:
 title: 'Problema #022 - coprimos na multidão'
 ---
 
-Este simples problema exemplifica um fenómeno interessante: quando estamos a considerar um "universo" grande o suficiente, mesmo que escolhamos partes dele de forma aleatória, encontramos alguma ordem.
+Este simples problema exemplifica um fenómeno interessante: quando estamos a considerar um "universo" grande o suficiente, mesmo que escolhamos partes dele de forma aleatória vamos conseguir encontrar estrutura.
 
 ===
 
