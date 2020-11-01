@@ -9,6 +9,6 @@ Artigos com problemas e quebra-cabeças para te pôr a pensar! Sai um problema n
 
 Se queres receber os problemas diretamente na tua caixa de correio, então [subscreve a newsletter dos Problemas](https://mathspp.com/subscribe).
 
-O próximo problema está agendado para domingo, 1 de novembro, por volta das 20h.
+O próximo problema está agendado para domingo, 15 de novembro, por volta das 20h.
 
 <sub><sup>Se reparares, faltam alguns problemas aqui... Ainda estou a migrar artigos do meu [blogue antigo](http://mathspp.blogspot.com).</sup></sub>
