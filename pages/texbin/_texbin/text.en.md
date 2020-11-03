@@ -1,19 +1,14 @@
-<button id="saveB" title="alt+s" style="font-size:1em;height:3em;width:6em" onclick="save_tex(true)"      >copy_link<br>link</button>
+<button id="saveB" title="alt+s" style="font-size:1em;height:3em;width:6em" onclick="save_tex(true)"      >copy<br>link</button>
   <button id="viewB" title="alt+v" style="font-size:1em;height:3em;width:6em" onclick="editor_mode(2)"           >typeset     </button>
   <button id="editB" title="alt+e" style="font-size:1em;height:3em;width:6em" onclick="editor_mode(0)"           >edit        </button>
-  <button id="copyB" title="alt+c" style="font-size:1em;height:3em;width:6em" onclick="copy_link(texarea.value)">copy_link<br>code</button>
-  <div style="position:absolute; top:4em; left:.5em; right:.5em; bottom:0">
+  <button id="copyB" title="alt+c" style="font-size:1em;height:3em;width:6em" onclick="copy_link(texarea.value)">copy<br>code</button>
+  <div style="top:4em; left:.5em; right:.5em; bottom:0">
     <textarea class="mainArea" id="texarea" spellcheck="false"></textarea>
     <div class="mainArea" id="genc" hidden>
     </div>
   </div>
   
   <script type="text/javascript">
-    window.MathJax = {
-    tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']]
-    }
-    };
 
     var MODE = 0; // 0-edit; 2-view
 
@@ -31,28 +26,7 @@
     function generate() {
       genc.innerText = texarea.value;
       genc.style="";
-        MathJax.typeset();
-    }
-    function colorCode(str, cols, prefix) {
-      let prev = cols[0];
-      for (let i = 1; i < cols.length; i++) {
-        let curr = cols[i];
-        if (curr) {
-          if (curr===prev) cols[i] = undefined;
-          else prev = curr;
-        }
-      }
-      let code = "";
-      for (let i = 0; i < str.length; i++) {
-        let ccol = cols[i];
-        if (ccol) {
-          if (code) code+= "</span>";
-          code+= "<span class="+prefix+ccol+">"
-        }
-        code+= html(str[i]);
-      }
-      code+= "</span>";
-      genc.innerHTML = code;
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub, "genc"]);
     }
     
     function save_tex(copyLink = false) {
