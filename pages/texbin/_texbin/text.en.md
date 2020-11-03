@@ -8,9 +8,15 @@
     </div>
 </div>
 
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script src="https://mathspp.com/user/themes/myquark/js/pako.min.js"></script>
 
   <script type="text/javascript">
+    window.MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+    };
 
     var EDITOR_MODE = 0; // 0-edit; 2-view
 
@@ -28,7 +34,7 @@
     function texify_input() {
         genc.innerText = tex_area.value;
         genc.style="";
-        MathJax.Hub.Queue(["Typeset", MathJax.Hub, "genc"]);
+        MathJax.typeset();
     }
     
     function save_tex(copyLink = false) {
