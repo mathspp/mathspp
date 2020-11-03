@@ -6,6 +6,12 @@ slug: texbin
 title: TeX Bin
 ---
 
+# TeX Bin
+
+Share beautiful LaTeX equations across the Internet.
+
+Just type your equation(s) in the text area below. Use &#36; to surround inline expressions ([here's an example][inline]) and &#36;&#36; to surround multiline expressions ([another example][multiline]). Press the "typeset" button to preview your equation and press the "copy link" button to get a link to the equation you just typed.
+
 <button id="saveB" title="alt+s" style="font-size:1em;width:6em;height:4em;vertical-align:top;" onclick="save_tex(true)"      >copy<br>link</button>
 <button id="viewB" title="alt+v" style="font-size:1em;width:6em;height:4em;vertical-align:top;" onclick="editor_mode(2)"           >typeset     </button>
 <button id="editB" title="alt+e" style="font-size:1em;width:6em;height:4em;vertical-align:top;" onclick="editor_mode(0)"           >edit        </button>
@@ -111,6 +117,8 @@ title: TeX Bin
     });*/
   </script>
 
+<br />
+<br />
 The TeX Bin is licensed under the [MIT License][mit].
 
 <details>
@@ -129,3 +137,5 @@ Based on [dzaima/paste][dzaima-paste].
 
 [mit]: https://opensource.org/licenses/MIT
 [dzaima-paste]: https://github.com/dzaima/paste
+[inline]: https://mathspp.com/texbin#0U6lQUSguLE0sSk1RyCxWKC/KLClJzVNQqYgzUtEDAA
+[multiline]: https://mathspp.com/texbin#0C8lXKM7PKUtVUEmsiDNS0FZIqgASyQq2CgYqCiWJ2alcXCoqFUBuTFpRYnK1bpJCTEGuQkxxYVFJdRJQg66CSWJybW21UWKtigoA
