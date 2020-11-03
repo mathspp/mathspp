@@ -6,12 +6,12 @@ slug: texbin
 title: TeX Bin
 ---
 
-<button id="saveB" title="alt+s" style="font-size:1em;width:8em;height:5em;" onclick="save_tex(true)"      >copy<br>link</button>
-<button id="viewB" title="alt+v" style="font-size:1em;width:8em;height:5em;" onclick="editor_mode(2)"           >typeset     </button>
-<button id="editB" title="alt+e" style="font-size:1em;width:8em;height:5em;" onclick="editor_mode(0)"           >edit        </button>
-<button id="copyB" title="alt+c" style="font-size:1em;width:8em;height:5em;" onclick="copy_link(tex_area.value)">copy<br>code</button>
+<button id="saveB" title="alt+s" style="font-size:1em;width:6em;height:4em;vertical-align:top;" onclick="save_tex(true)"      >copy<br>link</button>
+<button id="viewB" title="alt+v" style="font-size:1em;width:6em;height:4em;vertical-align:top;" onclick="editor_mode(2)"           >typeset     </button>
+<button id="editB" title="alt+e" style="font-size:1em;width:6em;height:4em;vertical-align:top;" onclick="editor_mode(0)"           >edit        </button>
+<button id="copyB" title="alt+c" style="font-size:1em;width:6em;height:4em;vertical-align:top;" onclick="copy_link(tex_area.value)">copy<br>code</button>
 <div style="top:4em; left:.5em; right:.5em; bottom:0">
-    <textarea class="mainArea" id="tex_area" spellcheck="false"></textarea>
+    <textarea class="mainArea" id="tex_area" spellcheck="false" style="width:100%;margin:10px" rows="10"></textarea>
     <div class="mainArea" id="genc">
     </div>
 </div>
@@ -116,13 +116,14 @@ The TeX Bin is licensed under the [MIT License][mit].
 <details>
 <summary>License</summary>
 Copyright 2020 Rodrigo Girão Serrão.
-
+<br />
 Permission is hereby granted, free of charge, to any person obtaining a copy_link of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy_link, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
+<br />
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
+<br />
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 </details>
+<br />
 
 Based on [dzaima/paste][dzaima-paste].
 
