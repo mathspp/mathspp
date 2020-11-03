@@ -13,5 +13,3 @@ onpage_menu: false
 slug: texbin
 title: TeX Bin
 ---
-
-<script src="https://mathspp.com/user/themes/myquark/js/pako.min.js"></script>

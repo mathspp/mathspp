@@ -7,7 +7,9 @@
     <div class="mainArea" id="genc">
     </div>
 </div>
-  
+
+<script src="https://mathspp.com/user/themes/myquark/js/pako.min.js"></script>
+
   <script type="text/javascript">
 
     var EDITOR_MODE = 0; // 0-edit; 2-view
