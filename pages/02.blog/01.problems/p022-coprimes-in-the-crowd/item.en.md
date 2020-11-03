@@ -12,15 +12,15 @@ This simple problem is an example of a very interesting phenomenon: if you have 
 
 ### Problem statement
 
-Say you have the first $2n$ positive integers,
+Let $n \geq 2$ be an integer. Then, consider the integers
 
 $$
-\{1, 2, 3, \cdots, 2n-1, 2n\}\ .
+\{3, 4, \cdots, 2n-1, 2n\}\ .
 $$
 
-Show that, if you pick $n + 1$ from those, you always have two numbers that will share no divisors whatsoever.
+Show that, if you pick $n$ from those, you always have two numbers that will share no divisors whatsoever.
 
-In other words, show that there's two of those $n+1$ numbers that are coprime.
+In other words, show that there's two of those $n$ numbers that are coprime.
 
 !!! Give it some thought...
 

@@ -12,15 +12,15 @@ Este simples problema exemplifica um fenómeno interessante: quando estamos a co
 
 ### Enunciado do problema
 
-Considera os $2n$ primeiros inteiros positivos,
+Assume que $n$ é um inteiro tal que $n \geq 2$. Agora considera os números
 
 $$
-\{1, 2, 3, \cdots, 2n-1, 2n\}\ .
+\{3, 4, \cdots, 2n-1, 2n\}\ .
 $$
 
-Mostra que, escolhendo quaisquer $n + 1$ números de entre esses, haverá sempre dois que não têm divisores em comum.
+Mostra que, escolhendo quaisquer $n$ números de entre esses, haverá sempre dois que não têm divisores em comum.
 
-Por outras palavras, mostra que há sempre dois desses $n+1$ números que são coprimos.
+Por outras palavras, mostra que há sempre dois desses $n$ números que são coprimos.
 
 !!! Pensa um pouco...
 
