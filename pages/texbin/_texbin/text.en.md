@@ -1,7 +1,7 @@
-<button id="saveB" title="alt+s" style="font-size:1em;" onclick="save_tex(true)"      >copy<br>link</button>
-<button id="viewB" title="alt+v" style="font-size:1em;" onclick="editor_mode(2)"           >typeset     </button>
-<button id="editB" title="alt+e" style="font-size:1em;" onclick="editor_mode(0)"           >edit        </button>
-<button id="copyB" title="alt+c" style="font-size:1em;" onclick="copy_link(tex_area.value)">copy<br>code</button>
+<button id="saveB" title="alt+s" style="font-size:1em;width:8em;height:3em;" onclick="save_tex(true)"      >copy<br>link</button>
+<button id="viewB" title="alt+v" style="font-size:1em;width:8em;height:3em;" onclick="editor_mode(2)"           >typeset     </button>
+<button id="editB" title="alt+e" style="font-size:1em;width:8em;height:3em;" onclick="editor_mode(0)"           >edit        </button>
+<button id="copyB" title="alt+c" style="font-size:1em;width:8em;height:3em;" onclick="copy_link(tex_area.value)">copy<br>code</button>
 <div style="top:4em; left:.5em; right:.5em; bottom:0">
     <textarea class="mainArea" id="tex_area" spellcheck="false"></textarea>
     <div class="mainArea" id="genc">
@@ -24,7 +24,7 @@
     
     
     function texify_input() {
-        genc.innerText = "<p>" + tex_area.value + "</p>";
+        genc.innerText = tex_area.value;
         genc.style="";
         MathJax.Hub.Queue(["Typeset", MathJax.Hub, "genc"]);
     }
