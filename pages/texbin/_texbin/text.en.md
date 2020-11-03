@@ -1,9 +1,9 @@
 <button id="saveB" title="alt+s" style="font-size:1em;height:3em;width:6em" onclick="save(true)"      >copy<br>link</button>
   <button id="viewB" title="alt+v" style="font-size:1em;height:3em;width:6em" onclick="md(2)"           >typeset     </button>
   <button id="editB" title="alt+e" style="font-size:1em;height:3em;width:6em" onclick="md(0)"           >edit        </button>
-  <button id="copyB" title="alt+c" style="font-size:1em;height:3em;width:6em" onclick="copy(main.value)">copy<br>code</button>
+  <button id="copyB" title="alt+c" style="font-size:1em;height:3em;width:6em" onclick="copy(texarea.value)">copy<br>code</button>
   <div style="position:absolute; top:4em; left:.5em; right:.5em; bottom:0">
-    <textarea class="mainArea" id="main" spellcheck="false"></textarea>
+    <textarea class="mainArea" id="texarea" spellcheck="false"></textarea>
     <div class="mainArea" id="genc" hidden>
     </div>
   </div>
@@ -19,17 +19,17 @@
 
     function md(mode) {
       MODE = mode;
-      main.style.display = MODE==0? 'block' : 'none';
+      texarea.style.display = MODE==0? 'block' : 'none';
       genc.style.display = MODE==2? 'block' : 'none';
       editB.disabled = MODE==0;
       viewB.disabled = MODE==2;
-      if (mode==0) main.focus();
+      if (mode==0) texarea.focus();
       if (mode==2) generate();
     }
     
     
     function generate() {
-      genc.innerText = main.value;
+      genc.innerText = texarea.value;
       genc.style="";
         MathJax.typeset();
     }
@@ -56,11 +56,11 @@
     }
     
     function save(copyLink = false) {
-      let b64 = "#0"+enc(main.value);
+      let b64 = "#0"+enc(texarea.value);
       history.pushState({}, "", b64);
       if (copyLink) copy(location.href.replace("/#", "#"));
     }
-    function enc(str = main.value) {
+    function enc(str = texarea.value) {
       let bytes = new TextEncoder("utf-8").encode(str);
       return arrToB64(deflate(bytes));
     }
@@ -95,14 +95,14 @@
       navigator.clipboard.writeText(str);
     }
     function load() {
-      main.value = "";
+      texarea.value = "";
       let hash = decodeURIComponent(location.hash.slice(1));
       let v = hash[0];
       hash = hash.slice(1); // remove version
       if (hash) {
         let parts = hash.split("#");
-        main.value = parts[0]? dec(parts[0]) : "";
-        md(main.value? 2 : 0);
+        texarea.value = parts[0]? dec(parts[0]) : "";
+        md(texarea.value? 2 : 0);
       } else md(0);
     }
     load();
@@ -114,7 +114,7 @@
       let alt = e.altKey;
       if (alt) {
         if (code == 'KeyS') { saveB.click(); e.preventDefault(); viewB.click(); }
-        if (code == 'KeyE') { editB.click(); e.preventDefault(); main.focus(); }
+        if (code == 'KeyE') { editB.click(); e.preventDefault(); texarea.focus(); }
         if (code == 'KeyV') { viewB.click(); e.preventDefault(); }
         if (code == 'KeyC') { copyB.click(); e.preventDefault(); }
       }
