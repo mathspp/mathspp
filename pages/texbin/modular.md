@@ -14,4 +14,4 @@ slug: texbin
 title: TeX Bin
 ---
 
-<script src="/user/themes/myquark/js/pako.min.js"></script>
+<script src="https://mathspp.com/user/themes/myquark/js/pako.min.js"></script>
