@@ -1,3 +1,11 @@
+---
+anchors:
+    active: false
+menu: TeX Bin
+slug: texbin
+title: TeX Bin
+---
+
 <button id="saveB" title="alt+s" style="font-size:1em;width:8em;height:5em;" onclick="save_tex(true)"      >copy<br>link</button>
 <button id="viewB" title="alt+v" style="font-size:1em;width:8em;height:5em;" onclick="editor_mode(2)"           >typeset     </button>
 <button id="editB" title="alt+e" style="font-size:1em;width:8em;height:5em;" onclick="editor_mode(0)"           >edit        </button>
