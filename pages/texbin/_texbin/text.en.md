@@ -1,7 +1,7 @@
-<button id="saveB" title="alt+s" style="font-size:1em;height:3em;width:6em" onclick="save(true)"      >copy<br>link</button>
-  <button id="viewB" title="alt+v" style="font-size:1em;height:3em;width:6em" onclick="md(2)"           >typeset     </button>
-  <button id="editB" title="alt+e" style="font-size:1em;height:3em;width:6em" onclick="md(0)"           >edit        </button>
-  <button id="copyB" title="alt+c" style="font-size:1em;height:3em;width:6em" onclick="copy(texarea.value)">copy<br>code</button>
+<button id="saveB" title="alt+s" style="font-size:1em;height:3em;width:6em" onclick="save_tex(true)"      >copy_link<br>link</button>
+  <button id="viewB" title="alt+v" style="font-size:1em;height:3em;width:6em" onclick="editor_mode(2)"           >typeset     </button>
+  <button id="editB" title="alt+e" style="font-size:1em;height:3em;width:6em" onclick="editor_mode(0)"           >edit        </button>
+  <button id="copyB" title="alt+c" style="font-size:1em;height:3em;width:6em" onclick="copy_link(texarea.value)">copy_link<br>code</button>
   <div style="position:absolute; top:4em; left:.5em; right:.5em; bottom:0">
     <textarea class="mainArea" id="texarea" spellcheck="false"></textarea>
     <div class="mainArea" id="genc" hidden>
@@ -17,7 +17,7 @@
 
     var MODE = 0; // 0-edit; 2-view
 
-    function md(mode) {
+    function editor_mode(mode) {
       MODE = mode;
       texarea.style.display = MODE==0? 'block' : 'none';
       genc.style.display = MODE==2? 'block' : 'none';
@@ -55,10 +55,10 @@
       genc.innerHTML = code;
     }
     
-    function save(copyLink = false) {
+    function save_tex(copyLink = false) {
       let b64 = "#0"+enc(texarea.value);
       history.pushState({}, "", b64);
-      if (copyLink) copy(location.href.replace("/#", "#"));
+      if (copyLink) copy_link(location.href.replace("/#", "#"));
     }
     function enc(str = texarea.value) {
       let bytes = new TextEncoder("utf-8").encode(str);
@@ -91,7 +91,7 @@
     function html(str) {
       return new Option(str).innerHTML.replace(/\n/g,'<br>');
     }
-    function copy(str) {
+    function copy_link(str) {
       navigator.clipboard.writeText(str);
     }
     function load() {
@@ -102,8 +102,8 @@
       if (hash) {
         let parts = hash.split("#");
         texarea.value = parts[0]? dec(parts[0]) : "";
-        md(texarea.value? 2 : 0);
-      } else md(0);
+        editor_mode(texarea.value? 2 : 0);
+      } else editor_mode(0);
     }
     load();
     window.onhashchange=load;
@@ -118,8 +118,8 @@
         if (code == 'KeyV') { viewB.click(); e.preventDefault(); }
         if (code == 'KeyC') { copyB.click(); e.preventDefault(); }
       }
-      if (ctrl && code == 'KeyR') save(false);
-      if (code == 'F5') save(false);
+      if (ctrl && code == 'KeyR') save_tex(false);
+      if (code == 'F5') save_tex(false);
     });
   </script>
 
@@ -129,7 +129,7 @@ The TeX Bin is licensed under the [MIT License][mit].
 <summary>License</summary>
 Copyright 2020 Rodrigo Girão Serrão.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy_link of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy_link, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
