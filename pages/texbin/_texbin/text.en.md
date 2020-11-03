@@ -4,7 +4,7 @@
 <button id="copyB" title="alt+c" style="font-size:1em;" onclick="copy_link(tex_area.value)">copy<br>code</button>
 <div style="top:4em; left:.5em; right:.5em; bottom:0">
     <textarea class="mainArea" id="tex_area" spellcheck="false"></textarea>
-    <div class="mainArea" id="genc" hidden>
+    <div class="mainArea" id="genc">
     </div>
 </div>
   
