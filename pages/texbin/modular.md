@@ -11,7 +11,7 @@ content:
 menu: TeX Bin
 onpage_menu: false
 slug: texbin
-title: TeXBin
+title: TeX Bin
 ---
 
-<script type="text/javascript" src="/user/themes/myquark/js/pako.min.js"></script>
+<script src="/user/themes/myquark/js/pako.min.js"></script>
