@@ -1,23 +1,21 @@
 ---
-anchors:
-    active: false
-menu: TeX Bin
-slug: texbin
-title: TeX Bin
+metadata:
+    description: Usa o TeX Paste para partilhar equações de matemática elegantes na Internet, para sempre.
 ---
 
-# TeX Bin
+# TeX Paste
 
-Share beautiful LaTeX equations across the Internet.
+Usa o TeX Paste para partilhar equações de matemática elegantes na Internet, para sempre.
 
-Just type your equation(s) in the text area below. Use &#36; to surround inline expressions ([here's an example][inline]) and &#36;&#36; to surround multiline expressions ([another example][multiline]). Press the "typeset" button to preview your equation and press the "copy link" button to get a link to the equation you just typed.
+Basta escreveres em LaTeX na área em baixo. Usa &#36; à volta de expressões que queiras que fiquem na mesma linha que o texto ([aqui tens um exemplo][inline]) e usa &#36;&#36; à volta de expressões de matemática que queiras nas suas próprias linhas ([outro exemplo][multiline]). Carrega em "verificar" para pré-visualizares o que escreveste e carrega em "copiar link" para obteres um link que te leva à equação que escreveste. Os links nunca vai caducar ou deixar de funcionar.
 
 ---
+<br />
 
-<button id="saveB" title="alt+s" style="font-size:1em;width:6em;height:4em;vertical-align:top;" onclick="save_tex(true)"      >copy<br>link</button>
-<button id="viewB" title="alt+v" style="font-size:1em;width:6em;height:4em;vertical-align:top;" onclick="editor_mode(2)"           >typeset     </button>
-<button id="editB" title="alt+e" style="font-size:1em;width:6em;height:4em;vertical-align:top;" onclick="editor_mode(0)"           >edit        </button>
-<button id="copyB" title="alt+c" style="font-size:1em;width:6em;height:4em;vertical-align:top;" onclick="copy_link(tex_area.value)">copy<br>code</button>
+<button id="saveB" title="alt+s" style="font-size:1em;width:6em;height:4em;vertical-align:top;" onclick="save_tex(true)"      >copiar<br>link</button>
+<button id="viewB" title="alt+v" style="font-size:1em;width:6em;height:4em;vertical-align:top;" onclick="editor_mode(2)"           >verificar     </button>
+<button id="editB" title="alt+e" style="font-size:1em;width:6em;height:4em;vertical-align:top;" onclick="editor_mode(0)"           >editar        </button>
+<button id="copyB" title="alt+c" style="font-size:1em;width:6em;height:4em;vertical-align:top;" onclick="copy_link(tex_area.value)">copiar<br>TeX</button>
 
 <br />
 
@@ -107,7 +105,7 @@ Just type your equation(s) in the text area below. Use &#36; to surround inline 
     tex_load_page();
     window.onhashchange=tex_load_page;
     
-    /*document.addEventListener("keydown", e => {
+    document.addEventListener("keydown", e => {
       let code = e.code;
       let ctrl = e.ctrlKey;
       let alt = e.altKey;
@@ -119,15 +117,15 @@ Just type your equation(s) in the text area below. Use &#36; to surround inline 
       }
       if (ctrl && code == 'KeyR') save_tex(false);
       if (code == 'F5') save_tex(false);
-    });*/
+    });
   </script>
 
 <br />
 <br />
-The TeX Bin is licensed under the [MIT License][mit].
+O TeX Paste está licenciado sob a [licença MIT][mit] e baseia-se no projeto [dzaima/paste][dzaima-paste].
 
 <details>
-<summary>License</summary>
+<summary>Licença em Inglês</summary>
 Copyright 2020 Rodrigo Girão Serrão.
 <br />
 Permission is hereby granted, free of charge, to any person obtaining a copy_link of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy_link, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -137,8 +135,6 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 </details>
 <br />
-
-Based on [dzaima/paste][dzaima-paste].
 
 [mit]: https://opensource.org/licenses/MIT
 [dzaima-paste]: https://github.com/dzaima/paste
