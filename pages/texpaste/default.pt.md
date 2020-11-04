@@ -141,5 +141,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 [mit]: https://opensource.org/licenses/MIT
 [dzaima-paste]: https://github.com/dzaima/paste
-[inline]: https://mathspp.com/pt/texpaste#0U1KpUFFIzFcoLE1MKUpMyVdSSC1OLkotS9UtTlVQqYgzUtEDAA
-[multiline]: https://mathspp.com/pt/texpaste#0C0gsSlQoSi3OzylLLVJIVEgtLE08vPzw4nwFlcSKOCMFbYWkCiCRrGCrYKCiUJKfm8jFpaJSAeTGpBUlJlfrJinEFOQqxBQXFpVUJwE16CqYJCbX1lYbJdaqqAAA
+[inline]: #0U1KpUFFIzFcoLE1MKUpMyVdSSC1OLkotS9UtTlVQqYgzUtEDAA
+[multiline]: #0C0gsSlQoSi3OzylLLVJIVEgtLE08vPzw4nwFlcSKOCMFbYWkCiCRrGCrYKCiUJKfm8jFpaJSAeTGpBUlJlfrJinEFOQqxBQXFpVUJwE16CqYJCbX1lYbJdaqqAAA
