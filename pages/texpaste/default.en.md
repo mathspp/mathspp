@@ -8,7 +8,7 @@ metadata:
 <button id="editB" title="alt+e" style="font-size:1em;width:6em;height:4em;vertical-align:top;margin-top:1em;margin-bottom:1em;" onclick="editor_mode(0)"           >edit        </button>
 <button id="copyB" title="alt+c" style="font-size:1em;width:6em;height:4em;vertical-align:top;margin-top:1em;margin-bottom:1em;" onclick="copy_link(tex_area.value)">copy<br>TeX</button>
 
-<div style="top:4em; left:.5em; right:.5em; bottom:0">
+<div style="top:4em; left:.5em; right:.5em; bottom:0; font-size:125%; color:#101010;">
     <textarea class="mainArea" id="tex_area" spellcheck="false" style="width:100%;margin:10px" rows="10"></textarea>
     <div class="mainArea" id="genc">
     </div>
