@@ -124,7 +124,7 @@ Press the "typeset" button to preview your equation and press the "copy link" bu
 The TeX Paste is licensed under the [MIT License][mit] and based on [dzaima/paste][dzaima-paste].
 
 <details>
-<summary>Licença em Inglês</summary>
+<summary>License</summary>
 Copyright 2020 Rodrigo Girão Serrão.
 <br />
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
