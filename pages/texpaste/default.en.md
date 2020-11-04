@@ -120,7 +120,7 @@ Use the TeX Paste tool to share beautiful equations across the Internet, forever
 
 ## Instructions
 
-Just type your equation(s) in the text area above. Use &#36; to surround inline expressions ([here's an example][inline]) and &#36;&#36; to surround multiline expressions ([another example][multiline]).
+Just type your equation(s) in the text area above. Use &#36; to surround inline expressions and &#36;&#36; to surround multiline expressions ([here's an example][multiline]).
 
 Press the "typeset" button to preview your equation and press the "copy link" button to get a link to the equation you just typed. The links will never expire or stop working.
 
@@ -141,5 +141,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 [mit]: https://opensource.org/licenses/MIT
 [dzaima-paste]: https://github.com/dzaima/paste
-[inline]: https://mathspp.com/texpaste#0U6lQUSguLE0sSk1RyCxWKC/KLClJzVNQqYgzUtEDAA
 [multiline]: https://mathspp.com/texpaste#0C8lXKM7PKUtVUEmsiDNS0FZIqgASyQq2CgYqCiWJ2alcXCoqFUBuTFpRYnK1bpJCTEGuQkxxYVFJdRJQg66CSWJybW21UWKtigoA

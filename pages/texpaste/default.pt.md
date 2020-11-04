@@ -120,7 +120,7 @@ Usa o TeX Paste para partilhar equações de matemática elegantes na Internet, 
 
 ## Instruções
 
-Basta escreveres em LaTeX na área em cima. Usa &#36; à volta de expressões que queiras que fiquem na mesma linha que o texto ([aqui tens um exemplo][inline]) e usa &#36;&#36; à volta de expressões de matemática que queiras nas suas próprias linhas ([outro exemplo][multiline]).
+Basta escreveres em LaTeX na área em cima. Usa &#36; à volta de expressões que queiras que fiquem na mesma linha que o texto e usa &#36;&#36; à volta de expressões de matemática que queiras nas suas próprias linhas ([aqui tens um exemplo][multiline]).
 
 Carrega em "verificar" para pré-visualizares o que escreveste e carrega em "copiar link" para obteres um link que te leva à equação que escreveste. Os links nunca vão caducar ou deixar de funcionar.
 
@@ -141,5 +141,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 [mit]: https://opensource.org/licenses/MIT
 [dzaima-paste]: https://github.com/dzaima/paste
-[inline]: https://mathspp.com/pt/texpaste#0U1KpUFFIzFcoLE1MKUpMyVdSSC1OLkotS9UtTlVQqYgzUtEDAA
 [multiline]: https://mathspp.com/pt/texpaste#0C0gsSlQoSi3OzylLLVJIVEgtLE08vPzw4nwFlcSKOCMFbYWkCiCRrGCrYKCiUJKfm8jFpaJSAeTGpBUlJlfrJinEFOQqxBQXFpVUJwE16CqYJCbX1lYbJdaqqAAA
