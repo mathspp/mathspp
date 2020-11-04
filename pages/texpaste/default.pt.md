@@ -3,12 +3,6 @@ metadata:
     description: Usa o TeX Paste para partilhar equações de matemática elegantes na Internet, para sempre.
 ---
 
-# TeX Paste
-
-Usa o TeX Paste para partilhar equações de matemática elegantes na Internet, para sempre.
-
----
-
 <button id="saveB" title="alt+s" style="font-size:1em;width:6em;height:4em;vertical-align:top;margin-top:1em;margin-bottom:1em;" onclick="save_tex(true)"      >copiar<br>link</button>
 <button id="viewB" title="alt+v" style="font-size:1em;width:6em;height:4em;vertical-align:top;margin-top:1em;margin-bottom:1em;" onclick="editor_mode(2)"           >verificar     </button>
 <button id="editB" title="alt+e" style="font-size:1em;width:6em;height:4em;vertical-align:top;margin-top:1em;margin-bottom:1em;" onclick="editor_mode(0)"           >editar        </button>
@@ -116,7 +110,12 @@ Usa o TeX Paste para partilhar equações de matemática elegantes na Internet, 
   </script>
 
 <br />
-<br />
+
+---
+
+# TeX Paste
+
+Usa o TeX Paste para partilhar equações de matemática elegantes na Internet, para sempre.
 
 ## Instruções
 

@@ -3,12 +3,6 @@ metadata:
     description: Use the TeX Paste tool to share beautiful equations across the Internet, forever.
 ---
 
-# TeX Paste
-
-Use the TeX Paste tool to share beautiful equations across the Internet, forever.
-
----
-
 <button id="saveB" title="alt+s" style="font-size:1em;width:6em;height:4em;vertical-align:top;margin-top:1em;margin-bottom:1em;" onclick="save_tex(true)"      >copy<br>link</button>
 <button id="viewB" title="alt+v" style="font-size:1em;width:6em;height:4em;vertical-align:top;margin-top:1em;margin-bottom:1em;" onclick="editor_mode(2)"           >typeset     </button>
 <button id="editB" title="alt+e" style="font-size:1em;width:6em;height:4em;vertical-align:top;margin-top:1em;margin-bottom:1em;" onclick="editor_mode(0)"           >edit        </button>
@@ -116,7 +110,12 @@ Use the TeX Paste tool to share beautiful equations across the Internet, forever
   </script>
 
 <br />
-<br />
+
+---
+
+# TeX Paste
+
+Use the TeX Paste tool to share beautiful equations across the Internet, forever.
 
 ## Instructions
 
