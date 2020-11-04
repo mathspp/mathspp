@@ -120,7 +120,7 @@ Use the TeX Paste tool to share beautiful equations across the Internet, forever
 
 ## Instructions
 
-Just type your equation(s) in the text area below. Use &#36; to surround inline expressions ([here's an example][inline]) and &#36;&#36; to surround multiline expressions ([another example][multiline]).
+Just type your equation(s) in the text area above. Use &#36; to surround inline expressions ([here's an example][inline]) and &#36;&#36; to surround multiline expressions ([another example][multiline]).
 
 Press the "typeset" button to preview your equation and press the "copy link" button to get a link to the equation you just typed. The links will never expire or stop working.
 
