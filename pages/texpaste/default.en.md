@@ -40,7 +40,7 @@ metadata:
     function texify_input() {
         genc.innerText = tex_area.value;
         genc.style="";
-        MathJax.typeset();
+        MathJax.typeset("genc");
     }
     
     function save_tex(copyLink = false) {
