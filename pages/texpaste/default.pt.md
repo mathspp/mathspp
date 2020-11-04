@@ -7,17 +7,16 @@ metadata:
 
 Usa o TeX Paste para partilhar equações de matemática elegantes na Internet, para sempre.
 
-Basta escreveres em LaTeX na área em baixo. Usa &#36; à volta de expressões que queiras que fiquem na mesma linha que o texto ([aqui tens um exemplo][inline]) e usa &#36;&#36; à volta de expressões de matemática que queiras nas suas próprias linhas ([outro exemplo][multiline]). Carrega em "verificar" para pré-visualizares o que escreveste e carrega em "copiar link" para obteres um link que te leva à equação que escreveste. Os links nunca vai caducar ou deixar de funcionar.
+Basta escreveres em LaTeX na área em baixo. Usa &#36; à volta de expressões que queiras que fiquem na mesma linha que o texto ([aqui tens um exemplo][inline]) e usa &#36;&#36; à volta de expressões de matemática que queiras nas suas próprias linhas ([outro exemplo][multiline]).
+
+Carrega em "verificar" para pré-visualizares o que escreveste e carrega em "copiar link" para obteres um link que te leva à equação que escreveste. Os links nunca vão caducar ou deixar de funcionar.
 
 ---
-<br />
 
-<button id="saveB" title="alt+s" style="font-size:1em;width:6em;height:4em;vertical-align:top;" onclick="save_tex(true)"      >copiar<br>link</button>
-<button id="viewB" title="alt+v" style="font-size:1em;width:6em;height:4em;vertical-align:top;" onclick="editor_mode(2)"           >verificar     </button>
-<button id="editB" title="alt+e" style="font-size:1em;width:6em;height:4em;vertical-align:top;" onclick="editor_mode(0)"           >editar        </button>
-<button id="copyB" title="alt+c" style="font-size:1em;width:6em;height:4em;vertical-align:top;" onclick="copy_link(tex_area.value)">copiar<br>TeX</button>
-
-<br />
+<button id="saveB" title="alt+s" style="font-size:1em;width:6em;height:4em;vertical-align:top;margin-top:1em;margin-bottom:1em;" onclick="save_tex(true)"      >copiar<br>link</button>
+<button id="viewB" title="alt+v" style="font-size:1em;width:6em;height:4em;vertical-align:top;margin-top:1em;margin-bottom:1em;" onclick="editor_mode(2)"           >verificar     </button>
+<button id="editB" title="alt+e" style="font-size:1em;width:6em;height:4em;vertical-align:top;margin-top:1em;margin-bottom:1em;" onclick="editor_mode(0)"           >editar        </button>
+<button id="copyB" title="alt+c" style="font-size:1em;width:6em;height:4em;vertical-align:top;margin-top:1em;margin-bottom:1em;" onclick="copy_link(tex_area.value)">copiar<br>TeX</button>
 
 <div style="top:4em; left:.5em; right:.5em; bottom:0">
     <textarea class="mainArea" id="tex_area" spellcheck="false" style="width:100%;margin:10px" rows="10"></textarea>
@@ -138,5 +137,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 [mit]: https://opensource.org/licenses/MIT
 [dzaima-paste]: https://github.com/dzaima/paste
-[inline]: https://mathspp.com/texbin#0U6lQUSguLE0sSk1RyCxWKC/KLClJzVNQqYgzUtEDAA
-[multiline]: https://mathspp.com/texbin#0C8lXKM7PKUtVUEmsiDNS0FZIqgASyQq2CgYqCiWJ2alcXCoqFUBuTFpRYnK1bpJCTEGuQkxxYVFJdRJQg66CSWJybW21UWKtigoA
+[inline]: https://mathspp.com/pt/texpaste#0U1KpUFFIzFcoLE1MKUpMyVdSSC1OLkotS9UtTlVQqYgzUtEDAA
+[multiline]: https://mathspp.com/pt/texpaste#0C0gsSlQoSi3OzylLLVJIVEgtLE08vPzw4nwFlcSKOCMFbYWkCiCRrGCrYKCiUJKfm8jFpaJSAeTGpBUlJlfrJinEFOQqxBQXFpVUJwE16CqYJCbX1lYbJdaqqAAA

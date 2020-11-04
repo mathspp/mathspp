@@ -7,17 +7,16 @@ metadata:
 
 Use the TeX Paste tool to share beautiful equations across the Internet, forever.
 
-Just type your equation(s) in the text area below. Use &#36; to surround inline expressions ([here's an example][inline]) and &#36;&#36; to surround multiline expressions ([another example][multiline]). Press the "typeset" button to preview your equation and press the "copy link" button to get a link to the equation you just typed. The links will never expire or stop working.
+Just type your equation(s) in the text area below. Use &#36; to surround inline expressions ([here's an example][inline]) and &#36;&#36; to surround multiline expressions ([another example][multiline]).
+
+Press the "typeset" button to preview your equation and press the "copy link" button to get a link to the equation you just typed. The links will never expire or stop working.
 
 ---
-<br />
 
-<button id="saveB" title="alt+s" style="font-size:1em;width:6em;height:4em;vertical-align:top;" onclick="save_tex(true)"      >copy<br>link</button>
-<button id="viewB" title="alt+v" style="font-size:1em;width:6em;height:4em;vertical-align:top;" onclick="editor_mode(2)"           >typeset     </button>
-<button id="editB" title="alt+e" style="font-size:1em;width:6em;height:4em;vertical-align:top;" onclick="editor_mode(0)"           >edit        </button>
-<button id="copyB" title="alt+c" style="font-size:1em;width:6em;height:4em;vertical-align:top;" onclick="copy_link(tex_area.value)">copy<br>TeX</button>
-
-<br />
+<button id="saveB" title="alt+s" style="font-size:1em;width:6em;height:4em;vertical-align:top;margin-top:1em;margin-bottom:1em;" onclick="save_tex(true)"      >copy<br>link</button>
+<button id="viewB" title="alt+v" style="font-size:1em;width:6em;height:4em;vertical-align:top;margin-top:1em;margin-bottom:1em;" onclick="editor_mode(2)"           >typeset     </button>
+<button id="editB" title="alt+e" style="font-size:1em;width:6em;height:4em;vertical-align:top;margin-top:1em;margin-bottom:1em;" onclick="editor_mode(0)"           >edit        </button>
+<button id="copyB" title="alt+c" style="font-size:1em;width:6em;height:4em;vertical-align:top;margin-top:1em;margin-bottom:1em;" onclick="copy_link(tex_area.value)">copy<br>TeX</button>
 
 <div style="top:4em; left:.5em; right:.5em; bottom:0">
     <textarea class="mainArea" id="tex_area" spellcheck="false" style="width:100%;margin:10px" rows="10"></textarea>
