@@ -7,10 +7,6 @@ metadata:
 
 Use the TeX Paste tool to share beautiful equations across the Internet, forever.
 
-Just type your equation(s) in the text area below. Use &#36; to surround inline expressions ([here's an example][inline]) and &#36;&#36; to surround multiline expressions ([another example][multiline]).
-
-Press the "typeset" button to preview your equation and press the "copy link" button to get a link to the equation you just typed. The links will never expire or stop working.
-
 ---
 
 <button id="saveB" title="alt+s" style="font-size:1em;width:6em;height:4em;vertical-align:top;margin-top:1em;margin-bottom:1em;" onclick="save_tex(true)"      >copy<br>link</button>
@@ -121,6 +117,13 @@ Press the "typeset" button to preview your equation and press the "copy link" bu
 
 <br />
 <br />
+
+## Instructions
+
+Just type your equation(s) in the text area below. Use &#36; to surround inline expressions ([here's an example][inline]) and &#36;&#36; to surround multiline expressions ([another example][multiline]).
+
+Press the "typeset" button to preview your equation and press the "copy link" button to get a link to the equation you just typed. The links will never expire or stop working.
+
 The TeX Paste is licensed under the [MIT License][mit] and based on [dzaima/paste][dzaima-paste].
 
 <details>

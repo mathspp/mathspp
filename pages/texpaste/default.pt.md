@@ -7,10 +7,6 @@ metadata:
 
 Usa o TeX Paste para partilhar equações de matemática elegantes na Internet, para sempre.
 
-Basta escreveres em LaTeX na área em baixo. Usa &#36; à volta de expressões que queiras que fiquem na mesma linha que o texto ([aqui tens um exemplo][inline]) e usa &#36;&#36; à volta de expressões de matemática que queiras nas suas próprias linhas ([outro exemplo][multiline]).
-
-Carrega em "verificar" para pré-visualizares o que escreveste e carrega em "copiar link" para obteres um link que te leva à equação que escreveste. Os links nunca vão caducar ou deixar de funcionar.
-
 ---
 
 <button id="saveB" title="alt+s" style="font-size:1em;width:6em;height:4em;vertical-align:top;margin-top:1em;margin-bottom:1em;" onclick="save_tex(true)"      >copiar<br>link</button>
@@ -121,6 +117,13 @@ Carrega em "verificar" para pré-visualizares o que escreveste e carrega em "cop
 
 <br />
 <br />
+
+## Instruções
+
+Basta escreveres em LaTeX na área em baixo. Usa &#36; à volta de expressões que queiras que fiquem na mesma linha que o texto ([aqui tens um exemplo][inline]) e usa &#36;&#36; à volta de expressões de matemática que queiras nas suas próprias linhas ([outro exemplo][multiline]).
+
+Carrega em "verificar" para pré-visualizares o que escreveste e carrega em "copiar link" para obteres um link que te leva à equação que escreveste. Os links nunca vão caducar ou deixar de funcionar.
+
 O TeX Paste está licenciado sob a [licença MIT][mit] e baseia-se no projeto [dzaima/paste][dzaima-paste].
 
 <details>
