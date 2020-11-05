@@ -13,3 +13,5 @@ This will have you coding in a completely different mindset. You will exercise t
 You can read more about the workshop [here](https://mathspp.com/workshops/learn-apl-with-neural-nets).
 
 !!! This workshop inspired [this YouTube video series][yt-series] on learning APL with neural networks. The series is available in English.
+
+[yt-series]: https://www.youtube.com/playlist?list=PLgTqamKi1MS3p-O0QAgjv5vt4NY5OgpiM

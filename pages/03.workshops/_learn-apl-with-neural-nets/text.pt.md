@@ -13,3 +13,5 @@ Isto vai fazer com que penses de maneira completamente diferente daquilo a que e
 Podes ler mais sobre o workshop [aqui](https://mathspp.com/pt/workshops/learn-apl-with-neural-nets).
 
 !!! Este workshop inspirou [esta série de vídeos no YouTube][yt-series] para aprender APL com redes neuronais. (A série é em inglês.)
+
+[yt-series]: https://www.youtube.com/playlist?list=PLgTqamKi1MS3p-O0QAgjv5vt4NY5OgpiM
