@@ -14,7 +14,7 @@ metadata:
     </div>
 </div>
 
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script src="https://mathspp.com/user/themes/myquark/js/pako.min.js"></script>
 
   <script type="text/javascript">
