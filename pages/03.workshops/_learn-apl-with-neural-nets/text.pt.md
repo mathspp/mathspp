@@ -11,3 +11,5 @@ Neste workshop vais aprender Dyalog APL, uma linguagem de programação que é c
 Isto vai fazer com que penses de maneira completamente diferente daquilo a que estás habituado quando programas. Vais treinar este novo modo de programar a construir uma rede neuronal de raíz que, quando o workshop acabar, vai conseguir olhar para imagens como as à direita e reconhecer os dígitos que contêm.
 
 Podes ler mais sobre o workshop [aqui](https://mathspp.com/pt/workshops/learn-apl-with-neural-nets).
+
+!!! Este workshop inspirou [esta série de vídeos no YouTube][yt-series] para aprender APL com redes neuronais. (A série é em inglês.)

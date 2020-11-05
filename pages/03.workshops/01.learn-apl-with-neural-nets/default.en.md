@@ -21,7 +21,9 @@ There are two reasons why I use neural networks to introduce APL to newcomers in
  - secondly, neural networks can be built on top of matrix algebra and such operations lend themselves naturally to APL.
 
 
-## Agenda
+## Content
+
+!!! This workshop inspired [this YouTube video series][yt-series] on learning APL with neural networks. The series is available in English.
 
 The objective of the workshop is to make incremental improvements to a namespace that eventually contains enough functionality to create a neural network that can be trained on the MNIST data (`mnistdata.rar`) and classify handwritten digits.
 
@@ -132,3 +134,4 @@ Other than the code with the reference implementation (available in [this GitHub
 [apl-orchard]: https://chat.stackexchange.com/rooms/52405/the-apl-orchard
 [aplcart]: https://aplcart.info/
 [aplwiki]: https://aplwiki.com
+[yt-series]: https://www.youtube.com/playlist?list=PLgTqamKi1MS3p-O0QAgjv5vt4NY5OgpiM

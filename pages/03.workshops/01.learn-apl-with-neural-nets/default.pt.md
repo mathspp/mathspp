@@ -23,6 +23,8 @@ Há duas razões pelas quais eu uso redes neuronais para introduzir APL aos nova
 
 ## Teor do workshop
 
+!!! Este workshop inspirou [esta série de vídeos no YouTube][yt-series] para aprender APL com redes neuronais. (A série é em inglês.)
+
 O objetivo do workshop é implementar um "namespace" de forma progressiva, para que este tenha funcionalidades suficientes para criar uma rede neuronal que possa ser treinada nos dados MNIST (`mnistdata.rar`) e que aprenda a classificar dígitos desenhados à mão.
 
 Ou seja, a rede neuronal vai receber imagens como as que se seguem e deve ser capaz de identificar o dígito presente.
@@ -131,3 +133,4 @@ Para além do código de referência, que está disponível [neste repositório 
 [apl-orchard]: https://chat.stackexchange.com/rooms/52405/the-apl-orchard
 [aplcart]: https://aplcart.info/
 [aplwiki]: https://aplwiki.com
+[yt-series]: https://www.youtube.com/playlist?list=PLgTqamKi1MS3p-O0QAgjv5vt4NY5OgpiM
