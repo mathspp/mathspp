@@ -6,5 +6,5 @@ content:
     order:
         by: date
         dir: desc
-menu: false
 slug: solutions
+visible: false
