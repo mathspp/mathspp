@@ -1,3 +1,0 @@
----
-redirect: './../../solutions[301]'
----
