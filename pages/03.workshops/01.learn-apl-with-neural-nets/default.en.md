@@ -11,6 +11,8 @@ title: Learn APL with neural networks
 !
 ! The contents of this page and of the workshop are provided as-is and with no warranties whatsoever.
 
+!!! This workshop inspired [this YouTube video series][yt-series] on learning APL with neural networks. The series is available in English.
+
 ## Aim
 
 The aim of this workshop is to introduce people to the [APL] programming language, with the first contact geared towards building a neural network from scratch. It helps if the audience has some programming knowledge (in no programming language in particular) and has heard of neural networks a bit, but that is not necessary.
@@ -22,8 +24,6 @@ There are two reasons why I use neural networks to introduce APL to newcomers in
 
 
 ## Content
-
-!!! This workshop inspired [this YouTube video series][yt-series] on learning APL with neural networks. The series is available in English.
 
 The objective of the workshop is to make incremental improvements to a namespace that eventually contains enough functionality to create a neural network that can be trained on the MNIST data (`mnistdata.rar`) and classify handwritten digits.
 

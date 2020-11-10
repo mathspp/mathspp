@@ -11,6 +11,8 @@ title: Aprende APL com redes neuronais
 !
 ! Os conteúdos desta página e do workshop são providenciados sem qualquer tipo de garantia.
 
+!!! Este workshop inspirou [esta série de vídeos no YouTube][yt-series] para aprender APL com redes neuronais. (A série é em inglês.)
+
 ## Objetivo
 
 O objetivo deste workshop é introduzir as pessoas a programação com [APL], sendo este primeiro contacto direcionado para a implementação de uma rede neuronal de raíz. É útil que a audiência tenha alguns conhecimentos de programação (numa linguagem de programação qualquer) e que já tenha ouvido falar de redes neuronais, mas isto não é um requisito inegociável.
@@ -22,8 +24,6 @@ Há duas razões pelas quais eu uso redes neuronais para introduzir APL aos nova
 
 
 ## Teor do workshop
-
-!!! Este workshop inspirou [esta série de vídeos no YouTube][yt-series] para aprender APL com redes neuronais. (A série é em inglês.)
 
 O objetivo do workshop é implementar um "namespace" de forma progressiva, para que este tenha funcionalidades suficientes para criar uma rede neuronal que possa ser treinada nos dados MNIST (`mnistdata.rar`) e que aprenda a classificar dígitos desenhados à mão.
 
