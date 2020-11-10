@@ -4,7 +4,8 @@ metadata:
 title: 'Solution #022 - coprimes in the crowd'
 ---
 
-This post contains my proposed solution to [Problem #022 - coprimes in the crowd][prob]. Please do not read this solution before making a serious attempt [at the problem][prob].
+This post will contain my proposed solution to [Problem #022 - coprimes in the crowd][prob] starting from the 14th of November. Please try to [solve the problem][prob]!
+<!--This post contains my proposed solution to [Problem #022 - coprimes in the crowd][prob]. Please do not read this solution before making a serious attempt [at the problem][prob].-->
 
 ===
 
