@@ -1,0 +1,11 @@
+date: 10-11-2020
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: https://mathspp.com/blog/problems/coprimes-in-the-crowd/crowd.jpg
+process:
+    twig: true
+slug: coprimes-in-the-crowd
+taxonomy:
+    tag:
+      - solution
+twig_first: true
