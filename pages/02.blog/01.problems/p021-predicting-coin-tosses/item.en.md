@@ -28,5 +28,5 @@ You can read the solution [here][sol] to compare with your own solution.
 
 If you enjoyed the problem and would like to get new problems in your inbox, be sure to [subscribe to the Problems newsletter][subscribe]
 
-[sol]: ../s/{{ page.slug }}
+[sol]: ../../solutions/{{ page.slug }}
 [subscribe]: https://mathspp.com/subscribe

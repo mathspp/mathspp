@@ -35,5 +35,5 @@ A minha proposta de solução vai ser publicada [aqui][sol] quando tiverem passa
 
 Se gostaste deste problema e se gostavas de receber novos problemas diretamente na tua caixa de correio, então [subscreve a newsletter dos Problemas][subscribe].
 
-[sol]: ../s/{{ page.slug }}
+[sol]: ../../solutions/{{ page.slug }}
 [subscribe]: https://mathspp.com/subscribe

@@ -27,4 +27,4 @@ Is there any initial number configuration and/or set of moves for which it is po
 
 You can read the solution [here][sol] to compare with your own solution.
 
-[sol]: ../s/{{ page.slug }}
+[sol]: ../../solutions/{{ page.slug }}

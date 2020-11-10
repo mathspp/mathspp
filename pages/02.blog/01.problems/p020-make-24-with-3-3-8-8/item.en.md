@@ -37,6 +37,6 @@ Do _not_ read the hint if you haven't spent some time thinking about the problem
 
 You can read the solution [here][sol] to compare with your own solution.
 
-[sol]: ../s/{{ page.slug }}
+[sol]: ../../solutions/{{ page.slug }}
 [24 Game]: https://en.wikipedia.org/wiki/24_Game
 [fold the alphabet]: ../fold-the-alphabet

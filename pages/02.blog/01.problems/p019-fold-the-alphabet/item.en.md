@@ -57,4 +57,4 @@ I heard of these from a friend and he learned about this problem by watching [th
 
 You can read the solution [here][sol] to compare with your own solution.
 
-[sol]: ../s/{{ page.slug }}
+[sol]: ../../solutions/{{ page.slug }}

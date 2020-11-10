@@ -28,5 +28,5 @@ Podes encontrar a minha proposta de solução [aqui][sol], para confirmares a tu
 
 Se gostaste deste problema e se gostavas de receber novos problemas diretamente na tua caixa de correio, então [subscreve a newsletter dos Problemas][subscribe]
 
-[sol]: ../s/{{ page.slug }}
+[sol]: ../../solutions/{{ page.slug }}
 [subscribe]: https://mathspp.com/subscribe

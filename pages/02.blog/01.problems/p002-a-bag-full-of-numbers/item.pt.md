@@ -29,4 +29,4 @@ Será que há alguma configuração inicial/conjunto de jogadas para os quais, d
 
 Podes encontrar a minha proposta de solução [aqui][sol], para confirmares a tua resposta.
 
-[sol]: ../s/{{ page.slug }}
+[sol]: ../../solutions/{{ page.slug }}

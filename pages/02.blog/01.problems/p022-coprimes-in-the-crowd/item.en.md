@@ -35,5 +35,5 @@ The solution to this problem will be posted [here][sol] after this problem has b
 
 If you enjoyed the problem and would like to get new problems directly in your inbox, be sure to [subscribe to the Problems newsletter][subscribe].
 
-[sol]: ../s/{{ page.slug }}
+[sol]: ../../solutions/{{ page.slug }}
 [subscribe]: https://mathspp.com/subscribe

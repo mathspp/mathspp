@@ -1,0 +1,10 @@
+anchors:
+    active: false
+content:
+    items:
+        taxonomy@.tag: solution
+    order:
+        by: date
+        dir: desc
+menu: false
+slug: solutions

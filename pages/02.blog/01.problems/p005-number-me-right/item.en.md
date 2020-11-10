@@ -21,4 +21,4 @@ If you need any clarification whatsoever, feel free to ask in the comment sectio
 
 You can read the solution [here][sol] to compare with your own solution.
 
-[sol]: ../s/{{ page.slug }}
+[sol]: ../../solutions/{{ page.slug }}

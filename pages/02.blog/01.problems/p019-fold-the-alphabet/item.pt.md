@@ -57,4 +57,4 @@ O amigo que me falou deste problema viu-o [neste vídeo do YouTube](https://www.
 
 Podes encontrar a minha proposta de solução [aqui][sol], para confirmares a tua resposta.
 
-[sol]: ../s/{{ page.slug }}
+[sol]: ../../solutions/{{ page.slug }}

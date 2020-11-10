@@ -22,4 +22,4 @@ Se precisares de clarificar alguma coisa, não hesites em perguntar na secção 
 
 Podes encontrar a minha proposta de solução [aqui][sol], para confirmares a tua resposta.
 
-[sol]: ../s/{{ page.slug }}
+[sol]: ../../solutions/{{ page.slug }}
