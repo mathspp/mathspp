@@ -10,6 +10,8 @@ The aim of this workshop is to introduce people to typesetting with LaTeX. LaTeX
 
 As an example, `$x^2$` gets rendered as $x^2$. In a mathematics course it turns out to be very helpful to know how to use LaTeX decently. The workshop just gives an overview of the type of things that can be done and that we, as maths students, eventually need to use.
 
+## Additional resources
+
 Besides sharing [a complete template with everything we cover in the workshop (and more!)][gh-doc], I always point the students to these _really_ helpful resources:
 
  - the [TeX Paste][texpaste] tool, that allows you to create permanent links to formulas to share easily;
