@@ -10,7 +10,7 @@ O objetivo deste workshop é introduzir a audiência ao LaTeX. O LaTeX é um sis
 
 A título de exemplo, `$x^2$` transforma-se em $x^2$. Num curso de matemática revela-se bastante útil saber usar LaTeX decentemente. O workshop limita-se a mostrar os vários tipos de coisas que dão jeito saber fazer e que um aluno de matemática precisará mais cedo ou mais tarde.
 
-Também partilho sempre os seguintes links _muito_ úteis:
+Para além de partilhar [um documento `.tex` com as coisas vistas no workshop (e mais!)][gh-doc], também partilho sempre os seguintes links _muito_ úteis:
 
  - a ferramenta [TeX Paste][texpaste], que serve para se criarem links permanentes para fórmulas, para que seja fácil partilhá-las;
  - o site [Overleaf], onde se podem criar documentos LaTeX online, inclusivamente de forma colaborativa (tipo Google Docs);
@@ -25,3 +25,4 @@ Também partilho sempre os seguintes links _muito_ úteis:
 [codecogs]: https://www.codecogs.com/latex/eqneditor.php
 [detexify]: http://detexify.kirelabs.org/classify.html
 [tables]: https://www.tablesgenerator.com/
+[gh-doc]: https://github.com/RojerGS/workshops/tree/master/intro-latex
