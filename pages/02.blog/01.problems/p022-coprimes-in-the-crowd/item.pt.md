@@ -28,8 +28,7 @@ Se precisares de clarificar alguma coisa, não hesites em perguntar na secção 
 
 ### Solução
 
-A minha proposta de solução vai ser publicada [aqui][sol] quando tiverem passado duas semanas desde a publicação deste problema. Também podes usar o link para partilhar a tua própria solução nos comentários. Por favor, **não** escrevas a tua solução nos comentários aqui em baixo.
-<!--Podes encontrar a minha proposta de solução [aqui][sol], para confirmares a tua resposta. Também podes usar o link para partilhar a tua própria solução nos comentários. Por favor, **não** escrevas a tua solução nos comentários aqui em baixo.-->
+Podes encontrar a minha proposta de solução [aqui][sol], para confirmares a tua resposta. Também podes usar o link para partilhar a tua própria solução nos comentários. Por favor, **não** escrevas a tua solução nos comentários aqui em baixo.
 
 ---
 
