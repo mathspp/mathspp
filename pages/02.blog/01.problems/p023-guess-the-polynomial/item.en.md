@@ -24,14 +24,28 @@ In this problem you have to devise a strategy to beat the computer in a "guess t
         evaluated_at = [];
         document.getElementById("polyHint").innerHTML = "";
         document.getElementById("polyAt").innerHTML = 0;
+        reset_test_coefs();
+        set_test_coefs(false);
+    }
+
+    reset_test_coefs() {
+        for (var i = 0; i <= max_degree; ++i) {
+            document.getElementById(`c${i}`).value = 0;
+        }
+    }
+
+    set_test_coefs(disabled) {
+        for (var i = 0; i <= max_degree; ++i) {
+            document.getElementById(`c${i}`).disabled = disabled;
+        }
     }
 
     var poly = new Array(max_degree + 1);
     generate_poly = function() {
-        reset_poly();
         for (var i = 0; i <= max_degree; ++i) {
             poly[i] = randint(0, max_coef);
         }
+        reset_poly();
     }
 
     evaluate_poly = function() {
@@ -55,6 +69,7 @@ In this problem you have to devise a strategy to beat the computer in a "guess t
         }
         if (right) {
             document.getElementById("polyResult").innerHTML = "Correct!";
+            set_test_coefs(true);
         } else {
             document.getElementById("polyResult").innerHTML = "Wrong!";
         }
