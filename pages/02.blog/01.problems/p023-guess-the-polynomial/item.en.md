@@ -28,13 +28,13 @@ In this problem you have to devise a strategy to beat the computer in a "guess t
         set_test_coefs(false);
     }
 
-    reset_test_coefs() {
+    reset_test_coefs = function() {
         for (var i = 0; i <= max_degree; ++i) {
             document.getElementById(`c${i}`).value = 0;
         }
     }
 
-    set_test_coefs(disabled) {
+    set_test_coefs = function(disabled) {
         for (var i = 0; i <= max_degree; ++i) {
             document.getElementById(`c${i}`).disabled = disabled;
         }
