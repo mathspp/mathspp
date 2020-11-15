@@ -25,8 +25,16 @@ In this problem you have to devise a strategy to beat the computer in a "guess t
         document.getElementById("polyHint").innerHTML = "";
         document.getElementById("polyAt").innerHTML = 0;
         reset_test_coefs();
-        set_test_coefs(false);
-        document.getElementById("newPolyBtn").disabled = true;
+        set_disables(guessing = true);
+    }
+
+    /* set the disabled status of inputs and buttons, depending on whether
+     * the user is currently guessing the poly or not. */
+    set_disables = function(guessing) {
+        document.getElementById("newPolyBtn").disabled = guessing;
+        document.getElementById("verifyPolyBtn").disabled = !guessing;
+        document.getElementById("giveUpPolyBtn").disabled = !guessing;
+        set_disabled_test_coefs(disabled = !guessing);
     }
 
     reset_test_coefs = function() {
@@ -35,7 +43,7 @@ In this problem you have to devise a strategy to beat the computer in a "guess t
         }
     }
 
-    set_test_coefs = function(disabled) {
+    set_disabled_test_coefs = function(disabled) {
         for (var i = 0; i <= max_degree; ++i) {
             document.getElementById(`c${i}`).disabled = disabled;
         }
@@ -70,15 +78,14 @@ In this problem you have to devise a strategy to beat the computer in a "guess t
         }
         if (right) {
             document.getElementById("polyResult").innerHTML = "Correct!";
-            set_test_coefs(true);
-            document.getElementById("newPolyBtn").disabled = false;
+            set_disables(guessing = false);
         } else {
             document.getElementById("polyResult").innerHTML = "Wrong!";
         }
     }
 
     give_up_poly = function() {
-        document.getElementById("newPolyBtn").disabled = false;
+        set_disables(guessing = false);
         polyResult = `The polynomial was p(n) = ${poly[0]}`
         for (var i = 1; i<= max_degree; ++i) {
             polyResult += ` + ${poly[i]}n^${i}`;
@@ -135,7 +142,7 @@ $$
     <input id="c3" type="number" step="1" min="0" max="3" size="1" value="0">
     n^3
     <br />
-    <button onclick="verify_poly()">Verify</button> <button onclick="give_up_poly()">Give up</button>
+    <button id="verifyPolyBtn" onclick="verify_poly()">Verify</button> <button id="giveUpPolyBtn" onclick="give_up_poly()">Give up</button>
     <p id="polyResult"></p>
 </div>
 
