@@ -77,30 +77,31 @@ $$
 
 ---
 
-You evaluated the current polynomial for <span id="polyTimes">0</span> different value(s).
+<div>
+    You evaluated the current polynomial for <span id="polyTimes">0</span> different value(s).
 
-<button onclick="generate_poly()">Generate a new polynomial</button>
+    <button onclick="generate_poly()">Generate a new polynomial</button>
 
-<br>
+    <br>
 
-<label>Ask the computer to evaluate the polynomial at</label> &nbsp; <input id="polyAt" type="number" step="1" min="0" size="6" value="0">. &nbsp; <button onclick="evaluate_poly()">Evaluate</button>
+    <label>Ask the computer to evaluate the polynomial at</label> &nbsp; <input id="polyAt" type="number" step="1" min="0" size="6" value="0">. &nbsp; <button onclick="evaluate_poly()">Evaluate</button>
 
-<p id="polyHint"></p>
+    <p id="polyHint"></p>
 
-<br>
+    <br>
 
-Your guess: $p(n) = $
-<input id="c0" type="number" step="1" min="0" max="3" size="1" value="0">
-$+$
-<input id="c1" type="number" step="1" min="0" max="3" size="1" value="0">
-$n + $
-<input id="c2" type="number" step="1" min="0" max="3" size="1" value="0">
-$n^2 + $
-<input id="c3" type="number" step="1" min="0" max="3" size="1" value="0">
-$n^3$
+    Your guess: $p(n) = $
+    <input id="c0" type="number" step="1" min="0" max="3" size="1" value="0">
+    $+$
+    <input id="c1" type="number" step="1" min="0" max="3" size="1" value="0">
+    $n + $
+    <input id="c2" type="number" step="1" min="0" max="3" size="1" value="0">
+    $n^2 + $
+    <input id="c3" type="number" step="1" min="0" max="3" size="1" value="0">
+    $n^3$
 
 
-
+</div>
 ---
 
 If you need any clarification whatsoever, feel free to ask in the comment section below.
