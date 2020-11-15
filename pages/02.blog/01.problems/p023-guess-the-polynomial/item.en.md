@@ -26,6 +26,7 @@ In this problem you have to devise a strategy to beat the computer in a "guess t
         document.getElementById("polyAt").innerHTML = 0;
         reset_test_coefs();
         set_test_coefs(false);
+        document.getElementById("newPolyBtn").disabled = true;
     }
 
     reset_test_coefs = function() {
@@ -70,9 +71,19 @@ In this problem you have to devise a strategy to beat the computer in a "guess t
         if (right) {
             document.getElementById("polyResult").innerHTML = "Correct!";
             set_test_coefs(true);
+            document.getElementById("newPolyBtn").disabled = false;
         } else {
             document.getElementById("polyResult").innerHTML = "Wrong!";
         }
+    }
+
+    give_up_poly = function() {
+        document.getElementById("newPolyBtn").disabled = false;
+        polyResult = `The polynomial was p(n) = ${poly[0]}`
+        for (var i = 1; i<= max_degree; ++i) {
+            polyResult += ` + ${poly[i]}n^${i}`;
+        }
+        document.getElementById("polyResult").innerHTML = polyResult;
     }
 
     window.onload = generate_poly;
@@ -108,7 +119,7 @@ $$
     <br />
     You evaluated the current polynomial for <span id="polyTimes">0</span> different value(s).
     <br />
-    <button onclick="generate_poly()">Generate a new polynomial</button>
+    <button id="newPolyBtn" onclick="generate_poly()">Generate a new polynomial</button>
     <br />
     <br />
     <label>Ask the computer to evaluate the polynomial at</label> &nbsp; <input id="polyAt" type="number" step="1" min="0" size="6" value="0">. &nbsp; <button onclick="evaluate_poly()">Evaluate</button>
@@ -124,7 +135,7 @@ $$
     <input id="c3" type="number" step="1" min="0" max="3" size="1" value="0">
     n^3
     <br />
-    <button onclick="verify_poly()">Verify</button>
+    <button onclick="verify_poly()">Verify</button> <button onclick="give_up_poly()">Give up</button>
     <p id="polyResult"></p>
 </div>
 
