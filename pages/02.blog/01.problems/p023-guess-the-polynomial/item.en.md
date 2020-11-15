@@ -64,7 +64,7 @@ In this problem you have to devise a strategy to beat the computer in a "guess t
         for (var i = 0; i <= max_degree; ++i) {
             value += poly[i]*a**i;
         }
-        document.getElementById("polyHint").innerHTML = `The polynomial is ${value} when evaluated at ${a}.`;
+        document.getElementById("polyHint").innerHTML = `p(${a}) = ${value}`;
         if (-1 === evaluated_at.indexOf(a)) {
             evaluated_at.push(a);
             ++poly_times;
