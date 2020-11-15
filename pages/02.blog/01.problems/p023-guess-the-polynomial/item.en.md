@@ -48,7 +48,9 @@ Your task is to devise a strategy that allows you to determine $c_0, \cdots, c_5
 In particular, I want you to devise the *best* strategy possible for this game.
 You can play with the computer here:
 
-<button onclick="generate_poly()">Create a new polynomial</button>
+<button onclick="generate_poly()">Generate a new polynomial</button>
+
+<label>Ask the computer to evaluate the polynomial at</label> &nbsp; <input type="number" min="1">
 
 !!! Give it a try!
 
