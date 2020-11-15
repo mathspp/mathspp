@@ -107,7 +107,7 @@ Let's say $p(n)$ is the secret polynomial the computer is thinking of.
 
 I want you to find out what $p(n)$ is, and the only thing you can do is to ask for hints in the form of values of $p(n)$ for $n \geq 0$ integer.
 For example, you can ask what $p(0)$ or $p(49)$ is, but you can't ask for the value of $p(-1)$ or $p(0.5)$.
-You have to come up with the best strategy possible, that allows you to determine $p(n)$ with the lest number of hints possible.
+You have to come up with the best strategy possible, that allows you to determine $p(n)$ with the least number of hints possible.
 
 You can test your strategy with the computer below.
 The computer will only think of polynomials with degree at most $3$
