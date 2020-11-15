@@ -11,16 +11,39 @@ In this problem you have to devise a strategy to beat the computer in a "guess t
 <script>
     var max_degree = 5;
     var max_coef = 3;
+    var poly_times = 0;
+    var evaluated_at = [];
 
     // Generate a random integer between a and b, inclusive.
     randint = function(a, b) {
         return Math.floor(Math.random()*(1+b-a)) + a;
     }
 
+    reset_poly = function() {
+        poly_times = 0;
+        evaluated_at = [];
+        document.getElementById("polyHint").value = "";
+    }
+
     var poly = new Array(max_degree + 1);
     generate_poly = function() {
+        reset_poly();
         for (var i = 0; i <= max_degree; ++i) {
             poly[i] = randint(0, max_coef);
+        }
+    }
+
+    evaluate = function() {
+        var a = parseInt(document.getElementById("polyAt").value);
+        var value = 0;
+        for (var i = 0; i <= max_degree; ++i) {
+            value += poly[i]*a**i;
+        }
+        document.getElementById("polyHint").value = `The polynomial is ${value} when evaluated at ${a}.`;
+        if (-1 === evaluated_at.indexOf(a)) {
+            evaluated_at.push(a);
+            ++poly_times;
+            document.getElementById("polyTimes").value = poly_times;
         }
     }
 
@@ -52,11 +75,17 @@ You can play with the computer below, to test your strategy.
 
 ---
 
+You evaluated the current polynomial a total of <span id="polyTimes">0</span> times.
+
 <button onclick="generate_poly()">Generate a new polynomial</button>
 
 <br />
 
-<label>Ask the computer to evaluate the polynomial at</label> &nbsp; <input type="number" step="1" min="1" size="6">
+<label>Ask the computer to evaluate the polynomial at</label> &nbsp; <input id="polyAt" type="number" step="1" min="0" size="6" value="0">. &nbsp; <button onclick="evaluate()">Evaluate</button>
+
+<p id="polyHint"></p>
+
+<br />
 
 ---
 
