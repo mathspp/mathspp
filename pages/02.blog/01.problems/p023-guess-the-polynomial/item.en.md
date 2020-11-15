@@ -10,7 +10,7 @@ In this problem you have to devise a strategy to beat the computer in a "guess t
 
 <script>
     var max_degree = 5;
-    var max_coef = 10;
+    var max_coef = 3;
 
     // Generate a random integer between a and b, inclusive.
     randint = function(a, b) {
@@ -19,7 +19,10 @@ In this problem you have to devise a strategy to beat the computer in a "guess t
 
     var poly = [];
     generate_poly = function() {
-        poly = new Array(max_degree + 1).map(_ => randint(0, max_coef - 1));
+        poly = [];
+        for (var i = 0, i <= max_degree, ++i) {
+            poly.push(randint(0, max_coef));
+        }
     }
 
     window.onload = generate_poly;
@@ -30,7 +33,7 @@ In this problem you have to devise a strategy to beat the computer in a "guess t
 ### Problem statement
 
 I want you to play a little game with the computer. The computer is going to think of a polynomial of degree at most $5$ with non-negative, integer coefficients.
-All the coefficients will be less than $10$.
+All the coefficients will be less than $4$.
 Let's say $p(n)$ is the secret polynomial the computer is thinking of.
 
 With the restrictions I imposed, we have
@@ -39,7 +42,7 @@ $$
 p(n) = c_0 + c_1n + c_2n^2 + c_3n^3 + c_4n^4 + c_5n^5
 $$
 
-with $0 \leq c_i < 10$.
+with $0 \leq c_i \leq 3$.
 
 You can ask the computer to compute $p(n)$ for any non-negative integer you'd like.
 Your task is to devise a strategy that allows you to determine $c_0, \cdots, c_5$ after a sequence of questions you ask the computer.
