@@ -46,13 +46,19 @@ with $0 \leq c_i \leq 3$.
 You can ask the computer to compute $p(n)$ for any non-negative integer you'd like.
 Your task is to devise a strategy that allows you to determine $c_0, \cdots, c_5$ after a sequence of questions you ask the computer.
 In particular, I want you to devise the *best* strategy possible for this game.
-You can play with the computer here:
+You can play with the computer below, to test your strategy.
+
+!!! Give it a try!
+
+---
 
 <button onclick="generate_poly()">Generate a new polynomial</button>
 
-<label>Ask the computer to evaluate the polynomial at</label> &nbsp; <input type="number" min="1">
+<br />
 
-!!! Give it a try!
+<label>Ask the computer to evaluate the polynomial at</label> &nbsp; <input type="number" step="1" min="1" size="6">
+
+---
 
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
