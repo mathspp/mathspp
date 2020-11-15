@@ -9,7 +9,7 @@ In this problem you have to devise a strategy to beat the computer in a "guess t
 ===
 
 <script>
-    var max_degree = 5;
+    var max_degree = 3;
     var max_coef = 3;
     var poly_times = 0;
     var evaluated_at = [];
