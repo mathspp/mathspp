@@ -20,7 +20,7 @@ In this problem you have to devise a strategy to beat the computer in a "guess t
     var poly = [];
     generate_poly = function() {
         poly = [];
-        for (var i = 0, i <= max_degree, ++i) {
+        for (var i = 0; i <= max_degree; ++i) {
             poly.push(randint(0, max_coef));
         }
     }
