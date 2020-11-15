@@ -48,6 +48,18 @@ In this problem you have to devise a strategy to beat the computer in a "guess t
         }
     }
 
+    verify_poly = function() {
+        var right = true;
+        for (var i = 0; i <= max_degree; ++i) {
+            right &= document.getElementById(`c${i}`).value === `${poly[i]}`;
+        }
+        if (right) {
+            document.getElementById("polyResult").innerHTML = "Correct!";
+        } else {
+            document.getElementById("polyResult").innerHTML = "Wrong!";
+        }
+    }
+
     window.onload = generate_poly;
 </script>
 
@@ -97,6 +109,8 @@ $$
     <input id="c3" type="number" step="1" min="0" max="3" size="1" value="0">
     n^3
     <br />
+    <button onclick="verify_poly()">Verify</button>
+    <p id="polyResult"></p>
 </div>
 
 ---
