@@ -17,11 +17,10 @@ In this problem you have to devise a strategy to beat the computer in a "guess t
         return Math.floor(Math.random()*(1+b-a)) + a;
     }
 
-    var poly = [];
+    var poly = new Array(max_degree + 1);
     generate_poly = function() {
-        poly = [];
         for (var i = 0; i <= max_degree; ++i) {
-            poly.push(randint(0, max_coef));
+            poly[i] = randint(0, max_coef);
         }
     }
 
