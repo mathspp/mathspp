@@ -1,10 +1,10 @@
 ---
 metadata:
-    description: In this problem you have to beat the computer in a guessing game.
-title: 'Problem #023 - guess the polynomial'
+    description: Neste problema vais ter de derrotar o computador num jogo.
+title: 'Problema #023 - adivinha o polinómio'
 ---
 
-In this problem you have to devise a strategy to beat the computer in a "guess the polynomial" game.
+Neste problema vais ter de encontrar uma estratégia para derrotares o computador num jogo para adivinhares um polinómio secreto.
 
 ===
 
@@ -78,16 +78,16 @@ In this problem you have to devise a strategy to beat the computer in a "guess t
             right &= document.getElementById(`c${i}`).value === `${poly[i]}`;
         }
         if (right) {
-            document.getElementById("polyResult").innerHTML = "Correct!";
+            document.getElementById("polyResult").innerHTML = "Certo!";
             set_disables(guessing = false);
         } else {
-            document.getElementById("polyResult").innerHTML = "Wrong!";
+            document.getElementById("polyResult").innerHTML = "Errado!";
         }
     }
 
     give_up_poly = function() {
         set_disables(guessing = false);
-        polyResult = `The polynomial was p(n) = ${poly[0]}`
+        polyResult = `O polinómio era p(n) = ${poly[0]}`
         for (var i = 1; i<= max_degree; ++i) {
             polyResult += ` + ${poly[i]}n^${i}`;
         }
@@ -97,44 +97,44 @@ In this problem you have to devise a strategy to beat the computer in a "guess t
     window.onload = generate_poly;
 </script>
 
-![A question mark in a neon light](question_mark.jpg "Photo by Emily Morter on Unsplash")
+![Um ponto de interrogação em néons](question_mark.jpg "Fotografia de Emily Morter do site Unsplash")
 
-### Problem statement
+### Enunciado do problema
 
-I want you to play a little game with the computer.
-The computer is going to think of a polynomial with non-negative, integer coefficients.
-Let's say $p(n)$ is the secret polynomial the computer is thinking of.
+Quero que jogues um jogo com o computador.
+O computador vai pensar num polinómio com coeficientes inteiros e não negativos.
+Suponhamos que $p(n)$ é o nome desse polinómio secreto.
 
-I want you to find out what $p(n)$ is, and the only thing you can do is to ask for hints in the form of values of $p(n)$ for $n \geq 0$ integer.
-For example, you can ask what $p(0)$ or $p(49)$ is, but you can't ask for the value of $p(-1)$ or $p(0.5)$.
-You have to come up with the best strategy possible, that allows you to determine $p(n)$ with the lest number of hints possible.
+Quero que descubras os coeficientes de $p(n)$, sendo que a única coisa que podes fazer é pedir dicas ao computador, na forma do valor $p(n)$ para $n \geq 0$ inteiro.
+Por exemplo, podes perguntar quanto é $p(0)$ ou $p(49)$, mas não $p(-1)$ ou $p(0.5)$.
+Tens de encontrar a melhor estratégia possível, para que consigas determinar $p(n)$ com o menor número de pistas possível.
 
-You can test your strategy with the computer below.
-The computer will only think of polynomials with degree at most $3$
-and the coefficients will be at most $3$ as well, but that is just to make testing your strategy easier.
-The strategy should work for higher degrees and larger coefficients.
+Podes testar a tua estratégia aqui em baixo.
+O computador só vai pensar em polinómios com grau $3$ ou menos
+e os coeficientes também vão estar entre $0$ e $3$, mas isto é só para facilitar os teus testes.
+A estratégia deverá funcionar para graus superiores e coeficientes maiores.
 
-With the restrictions for the computer test, we have
+Com as restrições do jogo interativo tens
 
 $$
 p(n) = c_0 + c_1n + c_2n^2 + c_3n^3, 0 \leq c_i \leq 3
 $$
 
-!!! Good luck!
+!!! Boa sorte!
 
 ---
 
 <div>
     <br />
-    You asked for <span id="polyTimes">0</span> hint(s).
+    Pediste <span id="polyTimes">0</span> dica(s).
     <br />
-    <button id="newPolyBtn" onclick="generate_poly()">New polynomial</button>
+    <button id="newPolyBtn" onclick="generate_poly()">Novo polinómio</button>
     <br />
     <br />
-    <label>Ask the computer to evaluate the polynomial at</label> &nbsp; <input id="polyAt" type="number" step="1" min="0" size="6" value="0">. &nbsp; <button onclick="evaluate_poly()">Evaluate</button>
+    <label>Avaliar o polinómio em</label> &nbsp; <input id="polyAt" type="number" step="1" min="0" size="6" value="0">. &nbsp; <button onclick="evaluate_poly()">Avaliar</button>
     <p id="polyHint"></p>
     <br>
-    Your guess: p(n) = 
+    O teu palpite: p(n) = 
     <input id="c0" type="number" step="1" min="0" max="3" size="1" value="0">
     &nbsp; + &nbsp;
     <input id="c1" type="number" step="1" min="0" max="3" size="1" value="0">
@@ -144,22 +144,22 @@ $$
     <input id="c3" type="number" step="1" min="0" max="3" size="1" value="0">
     n^3
     <br />
-    <button id="verifyPolyBtn" onclick="verify_poly()">Verify</button> <button id="giveUpPolyBtn" onclick="give_up_poly()">Give up</button>
+    <button id="verifyPolyBtn" onclick="verify_poly()">Verificar</button> <button id="giveUpPolyBtn" onclick="give_up_poly()">Desistir</button>
     <p id="polyResult"></p>
 </div>
 
 ---
 
-If you need any clarification whatsoever, feel free to ask in the comment section below.
+Se precisares de clarificar alguma coisa, não hesites em perguntar na secção de comentários em baixo.
 
-### Solution
+### Solução
 
-The solution to this problem will be posted [here][sol] after this problem has been live for 2 weeks. You can also use that link to post your own solution in the comments! Please **do not** post spoilers in the comments here.
-<!--You can read the solution [here][sol] to compare with your own solution. You can also use that link to post your own solution in the comments! Please **do not** post spoilers in the comments here.-->
+A minha proposta de solução vai ser publicada [aqui][sol] quando tiverem passado duas semanas desde a publicação deste problema. Também podes usar o link para partilhar a tua própria solução nos comentários. Por favor, **não** escrevas a tua solução nos comentários aqui em baixo.
+<!--Podes encontrar a minha proposta de solução [aqui][sol], para confirmares a tua resposta. Também podes usar o link para partilhar a tua própria solução nos comentários. Por favor, **não** escrevas a tua solução nos comentários aqui em baixo.-->
 
 ---
 
-If you enjoyed the problem and would like to get new problems directly in your inbox, be sure to [subscribe to the Problems newsletter][subscribe].
+Se gostaste deste problema e se gostavas de receber novos problemas diretamente na tua caixa de correio, então [subscreve a newsletter dos Problemas][subscribe].
 
 [sol]: ../../solutions/{{ page.slug }}
 [subscribe]: https://mathspp.com/subscribe
