@@ -33,7 +33,7 @@ In this problem you have to devise a strategy to beat the computer in a "guess t
         }
     }
 
-    evaluate = function() {
+    evaluate_poly = function() {
         var a = parseInt(document.getElementById("polyAt").value);
         var value = 0;
         for (var i = 0; i <= max_degree; ++i) {
@@ -81,7 +81,7 @@ You evaluated the current polynomial a total of <span id="polyTimes">0</span> ti
 
 <br />
 
-<label>Ask the computer to evaluate the polynomial at</label> &nbsp; <input id="polyAt" type="number" step="1" min="0" size="6" value="0">. &nbsp; <button onclick="evaluate()">Evaluate</button>
+<label>Ask the computer to evaluate the polynomial at</label> &nbsp; <input id="polyAt" type="number" step="1" min="0" size="6" value="0">. &nbsp; <button onclick="evaluate_poly()">Evaluate</button>
 
 <p id="polyHint"></p>
 
