@@ -87,15 +87,15 @@ $$
     <label>Ask the computer to evaluate the polynomial at</label> &nbsp; <input id="polyAt" type="number" step="1" min="0" size="6" value="0">. &nbsp; <button onclick="evaluate_poly()">Evaluate</button>
     <p id="polyHint"></p>
     <br>
-    Your guess: <p>$p(n) = $
+    Your guess: p(n) = 
     <input id="c0" type="number" step="1" min="0" max="3" size="1" value="0">
-    $+$
+    &nbsp; + &nbsp;
     <input id="c1" type="number" step="1" min="0" max="3" size="1" value="0">
-    $n + $
+    n &nbsp; + &nbsp;
     <input id="c2" type="number" step="1" min="0" max="3" size="1" value="0">
-    $n^2 + $
+    n^2 &nbsp; + &nbsp;
     <input id="c3" type="number" step="1" min="0" max="3" size="1" value="0">
-    $n^3$</p>
+    n^3
     <br />
 </div>
 
