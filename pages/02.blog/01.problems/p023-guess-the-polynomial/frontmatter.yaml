@@ -1,0 +1,15 @@
+date: 15-11-2020
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: XXX
+process:
+    twig: true
+slug: guess-the-polynomial
+# taxonomy:
+#     category: blogpost
+#     tag:
+#       - problem
+#       - mathematics
+#       - polynomials
+#       - number theory
+twig_first: true
