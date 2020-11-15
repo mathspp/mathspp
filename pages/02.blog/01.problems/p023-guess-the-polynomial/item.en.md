@@ -82,16 +82,12 @@ $$
     You evaluated the current polynomial for <span id="polyTimes">0</span> different value(s).
     <br />
     <button onclick="generate_poly()">Generate a new polynomial</button>
-
     <br />
-
+    <br />
     <label>Ask the computer to evaluate the polynomial at</label> &nbsp; <input id="polyAt" type="number" step="1" min="0" size="6" value="0">. &nbsp; <button onclick="evaluate_poly()">Evaluate</button>
-
     <p id="polyHint"></p>
-
     <br>
-
-    Your guess: $p(n) = $
+    Your guess: <p>$p(n) = $
     <input id="c0" type="number" step="1" min="0" max="3" size="1" value="0">
     $+$
     <input id="c1" type="number" step="1" min="0" max="3" size="1" value="0">
@@ -99,7 +95,7 @@ $$
     <input id="c2" type="number" step="1" min="0" max="3" size="1" value="0">
     $n^2 + $
     <input id="c3" type="number" step="1" min="0" max="3" size="1" value="0">
-    $n^3$
+    $n^3$</p>
     <br />
 </div>
 
