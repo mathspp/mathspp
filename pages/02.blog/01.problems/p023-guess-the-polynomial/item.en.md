@@ -23,7 +23,7 @@ In this problem you have to devise a strategy to beat the computer in a "guess t
         poly_times = 0;
         evaluated_at = [];
         document.getElementById("polyHint").innerHTML = "";
-        document.getElementById("polyAt").innerHTML = 0;
+        document.getElementById("polyTimes").innerHTML = 0;
         reset_test_coefs();
         set_disables(guessing = true);
     }
