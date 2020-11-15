@@ -22,7 +22,7 @@ In this problem you have to devise a strategy to beat the computer in a "guess t
     reset_poly = function() {
         poly_times = 0;
         evaluated_at = [];
-        document.getElementById("polyHint").value = "";
+        document.getElementById("polyHint").innerHTML = "";
     }
 
     var poly = new Array(max_degree + 1);
@@ -39,11 +39,11 @@ In this problem you have to devise a strategy to beat the computer in a "guess t
         for (var i = 0; i <= max_degree; ++i) {
             value += poly[i]*a**i;
         }
-        document.getElementById("polyHint").value = `The polynomial is ${value} when evaluated at ${a}.`;
+        document.getElementById("polyHint").innerHTML = `The polynomial is ${value} when evaluated at ${a}.`;
         if (-1 === evaluated_at.indexOf(a)) {
             evaluated_at.push(a);
             ++poly_times;
-            document.getElementById("polyTimes").value = poly_times;
+            document.getElementById("polyTimes").innerHTML = poly_times;
         }
     }
 
