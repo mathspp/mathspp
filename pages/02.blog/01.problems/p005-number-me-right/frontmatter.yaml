@@ -6,10 +6,9 @@ process:
     twig: true
 slug: number-me-right
 taxonomy:
-    category: blogpost
+    category: [blogpost, problem]
     tag:
       - binary
       - induction
-      - problem
       - mathematics
 twig_first: true

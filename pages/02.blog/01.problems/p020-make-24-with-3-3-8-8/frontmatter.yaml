@@ -8,9 +8,8 @@ process:
     twig: true
 slug: make-24-with-3-3-8-8
 taxonomy:
-    category: blogpost
+    category: [blogpost, problem]
     tag:
-      - problem
       - arithmetics
       - mathematics
 twig_first: true
