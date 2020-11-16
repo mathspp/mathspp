@@ -6,9 +6,8 @@ process:
     twig: true
 slug: coprimes-in-the-crowd
 taxonomy:
-    category: blogpost
+    category: [blogpost, problem]
     tag:
-      - problem
       - mathematics
       - number theory
       - primes

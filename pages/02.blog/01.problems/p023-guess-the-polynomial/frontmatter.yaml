@@ -6,9 +6,8 @@ process:
     twig: true
 slug: guess-the-polynomial
 taxonomy:
-    category: blogpost
+    category: [blogpost, problem]
     tag:
-      - problem
       - mathematics
       - polynomials
       - number theory

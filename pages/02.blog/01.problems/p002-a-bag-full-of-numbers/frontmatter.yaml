@@ -6,10 +6,9 @@ process:
     twig: true
 slug: bag-full-of-numbers
 taxonomy:
-    category: blogpost
+    category: [blogpost, problem]
     tag:
       - invariants
       - mathematics
       - number theory
-      - problem
 twig_first: true

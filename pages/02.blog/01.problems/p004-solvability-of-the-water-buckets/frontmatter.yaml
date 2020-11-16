@@ -6,10 +6,9 @@ process:
     twig: true
 slug: solvability-water-buckets
 taxonomy:
-    category: blogpost
+    category: [blogpost, problem]
     tag:
       - invariants
       - mathematics
       - modular arithmetics
-      - problem
 twig_first: true

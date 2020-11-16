@@ -6,9 +6,8 @@ process:
     twig: true
 slug: binary-multiples
 taxonomy:
-    category: blogpost
+    category: [blogpost, problem]
     tag:
-      - problem
       - mathematics
       - modular arithmetics
       - pigeonhole principle

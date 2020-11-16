@@ -6,10 +6,9 @@ process:
     twig: true
 slug: quarrel-in-the-shire
 taxonomy:
-    category: blogpost
+    category: [blogpost, problem]
     tag:
       - invariants
       - mathematics
       - graphs
-      - problem
 twig_first: true

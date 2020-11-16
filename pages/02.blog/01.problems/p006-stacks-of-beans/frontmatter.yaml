@@ -6,8 +6,7 @@ process:
     twig: true
 slug: stacks-of-beans
 taxonomy:
-    category: blogpost
+    category: [blogpost, problem]
     tag:
-      - problem
       - game theory
 twig_first: true

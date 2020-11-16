@@ -3,10 +3,9 @@ process:
     twig: true
 slug: a-dancing-triangle
 taxonomy:
-    category: blogpost
+    category: [blogpost, problem]
     tag:
-      - problem
       - geometry
-      - mathematics
       - invariant
+      - mathematics
 twig_first: true

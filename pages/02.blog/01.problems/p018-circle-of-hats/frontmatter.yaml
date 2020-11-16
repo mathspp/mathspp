@@ -6,9 +6,8 @@ slug: circle-of-hats
 process:
     twig: true
 taxonomy:
-    category: blogpost
+    category: [blogpost, problem]
     tag:
-      - problem
       - mathematics
       - modular arithmetics
       - apl

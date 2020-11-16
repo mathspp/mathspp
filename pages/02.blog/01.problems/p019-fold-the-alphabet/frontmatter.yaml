@@ -6,9 +6,8 @@ process:
     twig: true
 slug: fold-the-alphabet
 taxonomy:
-    category: blogpost
+    category: [blogpost, problem]
     tag:
-      - problem
       - geometry
       - origami
       - mathematics
