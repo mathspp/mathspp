@@ -159,7 +159,10 @@ The solution to this problem will be posted [here][sol] after this problem has b
 
 ---
 
+This problem was brought to my attention by [MathGurl].
+
 If you enjoyed the problem and would like to get new problems directly in your inbox, be sure to [subscribe to the Problems newsletter][subscribe].
 
+[MathGurl]: https://www.youtube.com/channel/UC5RV_s1Jh-jQI4HfexEIb2Q
 [sol]: ../../solutions/{{ page.slug }}
 [subscribe]: https://mathspp.com/subscribe

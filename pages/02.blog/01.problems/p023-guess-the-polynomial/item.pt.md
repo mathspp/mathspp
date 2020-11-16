@@ -159,7 +159,10 @@ A minha proposta de solução vai ser publicada [aqui][sol] quando tiverem passa
 
 ---
 
+Este problema foi-me colocado pela [MathGurl].
+
 Se gostaste deste problema e se gostavas de receber novos problemas diretamente na tua caixa de correio, então [subscreve a newsletter dos Problemas][subscribe].
 
+[MathGurl]: https://www.youtube.com/channel/UC5RV_s1Jh-jQI4HfexEIb2Q
 [sol]: ../../solutions/{{ page.slug }}
 [subscribe]: https://mathspp.com/subscribe
