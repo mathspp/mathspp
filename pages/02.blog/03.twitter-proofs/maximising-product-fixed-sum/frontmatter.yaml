@@ -3,7 +3,7 @@ metadata:
     author: Rodrigo Girão Serrão
 slug: maximising-product-fixed-sum
 taxonomy:
-    category: blogpost
+    category: [blogpost, twitter proof]
     tag:
       - mathematics
-      - twitter proof
+      - optimisation

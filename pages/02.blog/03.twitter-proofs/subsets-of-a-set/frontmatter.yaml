@@ -4,9 +4,8 @@ metadata:
     og:image: https://mathspp.com/blog/twitter-proofs/subsets-of-a-set/subsets.png
 slug: subsets-of-a-set
 taxonomy:
-    category: blogpost
+    category: [blogpost, twitter proof]
     tag:
       - binary
       - mathematics
       - set theory
-      - twitter proof

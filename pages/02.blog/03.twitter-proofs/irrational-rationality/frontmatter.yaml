@@ -6,7 +6,8 @@ metadata:
 published: true
 slug: irrational-rationality
 taxonomy:
-    category: blogpost
+    category: [blogpost, twitter proof]
     tag:
-      - twitter proof
+      - arithmetics
+      - rationals
       - mathematics

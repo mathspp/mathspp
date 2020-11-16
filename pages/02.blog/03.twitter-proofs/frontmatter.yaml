@@ -2,7 +2,7 @@ anchors:
     active: false
 content:
     items:
-        taxonomy@.tag: twitter proof
+        taxonomy@.category: twitter proof
     order:
         by: date
         dir: desc
