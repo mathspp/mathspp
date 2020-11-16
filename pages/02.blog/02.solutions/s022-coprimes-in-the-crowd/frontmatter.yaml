@@ -7,6 +7,5 @@ process:
     twig: true
 slug: coprimes-in-the-crowd
 taxonomy:
-    tag:
-      - solution
+    category: solution
 twig_first: true

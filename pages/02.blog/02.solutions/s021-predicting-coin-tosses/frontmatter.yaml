@@ -7,6 +7,5 @@ process:
 publish_date: 18-10-2020 21:00
 slug: predicting-coin-tosses
 taxonomy:
-    tag:
-      - solution
+    category: solution
 twig_first: true

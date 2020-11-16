@@ -6,6 +6,5 @@ process:
     twig: true
 slug: fold-the-alphabet
 taxonomy:
-    tag:
-      - solution
+    category: solution
 twig_first: true

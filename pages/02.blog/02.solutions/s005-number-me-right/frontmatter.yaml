@@ -6,6 +6,5 @@ process:
     twig: true
 slug: number-me-right
 taxonomy:
-    tag:
-      - solution
+    category: solution
 twig_first: true

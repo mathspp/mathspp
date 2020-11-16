@@ -3,6 +3,5 @@ process:
     twig: true
 slug: a-dancing-triangle
 taxonomy:
-    tag:
-      - solution
+    category: solution
 twig_first: true

@@ -6,6 +6,5 @@ process:
     twig: true
 slug: binary-multiples
 taxonomy:
-    tag:
-      - solution
+    category: solution
 twig_first: true

@@ -2,7 +2,7 @@ anchors:
     active: false
 content:
     items:
-        taxonomy@.tag: solution
+        taxonomy@.category: solution
     order:
         by: date
         dir: desc
