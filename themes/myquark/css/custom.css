@@ -151,6 +151,20 @@ a:visited {
     color: #e27673;
 }
 
+/*
+Magical CSS that implements a dark mode in 2 lines.
+We precede by the same code applied to the elements we want untouched.
+
+img, .parallax, .reaction-item__button img {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+body {
+    filter: invert(.9) hue-rotate(180deg);
+    background: rgba(0, 0, 0, 0.9);
+}
+*/
+
 /* https://stackoverflow.com/a/13184714/2828287 */
 /* Compensates for the height of the website header. */
 a.headeroffset {
