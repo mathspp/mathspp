@@ -270,6 +270,9 @@ Importo `io` para poder usar o objeto `StringIO`, que uso para substituir `stdin
 no caso em que queremos que o input do programa seja o dado pelo segundo argumento
 da linha de comandos, em vez de lido interativamente.
 
+Também import `os` para poder verificar se o utilizador está a tentar ler
+o código brainf\*ck de um ficheiro ou não.
+
 ## `V=argv`
 
 Defino um nome mais curto para `argv` porque sou preguiçoso.

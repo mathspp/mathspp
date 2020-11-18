@@ -264,6 +264,9 @@ We import `io` to use a `StringIO` object to replace `stdin` (standard input)
 in case the user gave the program input beforehand and doesn't want an
 interactive input session.
 
+We import `os` so we can check
+if the user is trying to read the code from a file or not.
+
 ## `V=argv`
 
 We set an alias for `argv` (the command line arguments) to save some typing.
