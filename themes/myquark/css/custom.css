@@ -16,6 +16,7 @@ h6,
 
 /* The small titles of features like the last ones in the workshop page. */
 .modular-features .feature-icon h6 {
+    scale: 1.2;
     color: #838c9f;
     background: #191919;
 }
