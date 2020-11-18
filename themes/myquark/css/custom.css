@@ -10,7 +10,7 @@ h6,
 }
 
 /* Headers in hero sections of modular pages marked with the `text-light` class. */
-.hero.text-light :is(h1, h2, h3, h4, h5, h6, i) {
+.hero.text-light :is(h1, h2, h3, h4, h5, h6, i, p) {
     color: #e2e2e2;
 }
 
