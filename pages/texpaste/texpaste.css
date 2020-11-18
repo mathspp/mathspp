@@ -45,3 +45,7 @@ textarea, button, #genc {
     color: #adb3bd;
     font-family: "Miriam Libre", sans-serif;
 }
+
+.button:focus {
+    background: none;
+}
