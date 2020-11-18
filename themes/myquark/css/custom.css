@@ -3,22 +3,151 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.hero :is(h1, h2, h3, h4, h5, h6) {
     font-family: "Chewy", cursive;
-    <!-- color: #006ea0; -->
+    color: #adb3bd;
 }
+
+/* Headers in hero sections of modular pages marked with the `text-light` class. */
+.hero.text-light :is(h1, h2, h3, h4, h5, h6, i) {
+    color: #e2e2e2;
+}
+
+/* The small titles of features like the last ones in the workshop page. */
+.modular-features .feature-icon h6 {
+    color: #838c9f;
+    background: #191919;
+}
+
+/* Little "featured" icons, like the ones in the blog. */
+.modular-features.small .feature-icon i {
+    color: #515763;
+}
+
+#sidebar,     /* Text on the sidebar of the blog. */
+#breadcrumbs, /* Text inside the breadcrumbs. */
+details,      /* `details` for the little dropdown with the tags in the blog. */
+i,            /* `i` for the FontAwesome icons. */
+time,         /* For the times at which blog posts were written. */
 p,
 li {
     font-family: "Miriam Libre", sans-serif;
-    <!-- font-weight: bold; -->
+    color: #989fb0;
 }
 
-img, .parallax, .reaction-item__button img {
-    filter: invert(1) hue-rotate(180deg);
+/* Colour of the navigation menu item's text. Use !important because so does the default theme. */
+nav a {
+    color: #a2a9b6 !important;
 }
-body {
-    filter: invert(.9) hue-rotate(180deg);
-    background: rgba(0, 0, 0, 0.9);
+
+
+#header, body,
+.modular-features.offset-box .frame-box /* This is for the main box in the Workshops page that is "closer" to the screen. */
+{
+    background: #191919;
+}
+
+/* Set the background colour of the alternating modular pages. */
+section.modular-text.bg-gray {
+    background: #1e1f1f !important;
+}
+
+blockquote {
+    border-left-color: #555555;
+}
+
+#sidebar input {
+    background: #191919;
+    border-color: #555555;
+}
+
+#sidebar input:focus {
+    border-color: #478ce0;
+}
+
+/* Background colour for button classes like the "Random Article" button or the "Subscribe the newsletter". */
+.button, .btn {
+    background: #191919;
+}
+.btn:hover, .button:hover {
+    background: #202a37;
+}
+
+/* Background colour for blog tags. */
+.tags .label {
+    background: #202a37;
+}
+
+/* Colour for the numbers in the Blog archive. */
+.label.label-primary {
+    color: #191919;
+}
+
+/* Borders for the pagination numbers at the top of the blog listings. */
+.pagination li {
+    border-color: #333333;
+}
+
+/* Set the colours for pieces of inline code. */
+code {
+    background: #282020;
+    color: #f97f87;
+}
+/* And now for multiline. */
+pre code {
+    background: #1e1d1e;
+    color: #989fb0;
+}
+
+/* Set visited links to a darker shade of blue. */
+a:visited {
+    color: #3c72b2;
+}
+
+/* Background colour and shadow for the header menu. */
+.dropmenu.animated ul li ul {
+    background: #191919;
+    box-shadow: 0 1px 4px #555555;
+}
+
+#footer {
+    background: #1e1f1f !important; /* Use !important because the footer has the class bg-gray, that sets the colour with !important as well. */
+}
+
+/* Blog post cards with correct background and shadow. */
+.blog-listing .card {
+    background: #1a1919;
+    box-shadow: 0 10px 45px -9px #333333;
+}
+
+.notices.blue {
+    border-left-color: #1a6b83;
+    background: #1d2022;
+}
+.notices.blue > * {
+    color: #288aa6;
+}
+.notices.green {
+    border-left-color: #327c32;
+    background: #1c221c;
+}
+.notices.green > * {
+    color: #5b9a5b;
+}
+.notices.yellow {
+    border-left-color: #854f03;
+    background: #221e1a;
+}
+.notices.yellow > * {
+    color: #ac6808;
+}
+.notices.red {
+    border-left-color: #d9534f;
+    background: #231e1e;
+}
+.notices.red > * {
+    color: #e27673;
 }
 
 /* https://stackoverflow.com/a/13184714/2828287 */
