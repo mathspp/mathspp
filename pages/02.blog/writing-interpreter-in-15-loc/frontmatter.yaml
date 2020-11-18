@@ -1,7 +1,7 @@
 date: 18-11-2020
 metadata:
     author: Rodrigo Girão Serrão
-    og:image: XXX
+    og:image: https://mathspp.com/blog/writing-interpreter-in-15-loc/code.png
 publish_date: 18-11-2020
 slug: writing-interpreter-in-15-loc
 taxonomy:
