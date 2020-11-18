@@ -5,15 +5,6 @@ metadata:
 
 <style>
 textarea, button {
-    font-size:1em;
-    width:6em;
-    height:4em;
-    vertical-align:top;
-    margin-top:1em;
-    margin-bottom:1em;
-    background: #191919;
-    border: none;
-    box-shadow: 0 1px 4px #555555;
     /* Apart from the colours, styling copied from the "Search" bar in the blog. */
     border-top-color: #555555;
     border-top-style: solid;
@@ -32,6 +23,18 @@ textarea, button {
     border-image-slice: 100%;
     border-image-source: none;
     border-image-width: 1;
+}
+
+button {
+    font-size:1em;
+    width:6em;
+    height:4em;
+    vertical-align:top;
+    margin-top:1em;
+    margin-bottom:1em;
+    background: #191919;
+    border: none;
+    box-shadow: 0 1px 4px #555555;
 }
 
 button:disabled {
