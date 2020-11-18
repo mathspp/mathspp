@@ -3,54 +3,7 @@ metadata:
     description: Use the TeX Paste tool to share beautiful equations across the Internet, forever.
 ---
 
-<style>
-textarea, button {
-    /* Apart from the colours, styling copied from the "Search" bar in the blog. */
-    border-top-color: #555555;
-    border-top-style: solid;
-    border-top-width: 0.05rem;
-    border-right-color: #555555;
-    border-right-style: solid;
-    border-right-width: 0.05rem;
-    border-bottom-color: #555555;
-    border-bottom-style: solid;
-    border-bottom-width: 0.05rem;
-    border-left-color: #555555;
-    border-left-style: solid;
-    border-left-width: 0.05rem;
-    border-image-outset: 0;
-    border-image-repeat: stretch;
-    border-image-slice: 100%;
-    border-image-source: none;
-    border-image-width: 1;
-}
-
-button {
-    font-size:1em;
-    width:6em;
-    height:4em;
-    vertical-align:top;
-    margin-top:1em;
-    margin-bottom:1em;
-    background: #191919;
-    border: none;
-    box-shadow: 0 1px 4px #555555;
-}
-
-button:disabled {
-    background: #333333;
-    box-shadow: none;
-}
-
-button:hover {
-    background: #202a37;
-}
-
-textarea, button, #genc {
-    color: #adb3bd;
-    font-family: "Miriam Libre", sans-serif;
-}
-</style>
+<link rel="stylesheet" href="texpaste.css">
 
 <button id="saveB" title="alt+s" class="button" onclick="save_tex(true)"           >copy<br>link</button>
 <button id="viewB" title="alt+v" class="button" onclick="editor_mode(2)"           >typeset     </button>
