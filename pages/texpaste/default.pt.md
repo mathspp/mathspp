@@ -3,7 +3,7 @@ metadata:
     description: Usa o TeX Paste para partilhar equações de matemática elegantes na Internet, para sempre.
 ---
 
-<link rel="stylesheet" href="texpaste.css">
+<link rel="stylesheet" href="/texpaste/texpaste.css">
 
 <button id="saveB" title="alt+s" class="button" onclick="save_tex(true)"           >copiar<br>link</button>
 <button id="viewB" title="alt+v" class="button" onclick="editor_mode(2)"           >verificar     </button>
