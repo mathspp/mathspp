@@ -1,14 +1,16 @@
 RANDOM_SENTENCES:
  # sentences whose # I need to be fixed
- - "<a href='https://mathspp.com/random-sentences#2'>Sentence #2</a> is false!"
- - "<a href='https://mathspp.com/random-sentences#1'>Sentence #1</a> is true!"
+ - "<a href='/random-sentences#2'>Sentence #2</a> is false!"
+ - "<a href='/random-sentences#1'>Sentence #1</a> is true!"
  # intra-site links
- - "(You should c|C)heck out <a href='https://mathspp.com/blog/regex-printer'>this</a>( awesome)? blog post!+"
- - "Have you ever heard of a <a href='https://mathspp.com/blog/problems/quarrel-in-the-shire'>maths problem based on Lord of The Rings characters</a>?"
- - "I can't dance but <a href='https://mathspp.com/blog/problems/a-dancing-triangle'>this</a> triangle sure can!"
- - "Grab a piece of paper and try to fold your way out of <a href='https://mathspp.com/blog/problems/fold-the-alphabet'>this</a> problem."
- - "I know a proof that there's irrational numbers that one to the power of the other give a rational number and this footer is <a href='https://mathspp.com/blog/twitter-proofs/irrational-rationality'>almost</a> the right size for it."
+ - "(You should c|C)heck out <a href='/blog/regex-printer'>this</a>( awesome)? blog post!+"
+ - "Have you ever heard of a <a href='/blog/problems/quarrel-in-the-shire'>maths problem based on Lord of The Rings characters</a>?"
+ - "I can't dance but <a href='/blog/problems/a-dancing-triangle'>this</a> triangle sure can!"
+ - "Grab a piece of paper and try to fold your way out of <a href='/blog/problems/fold-the-alphabet'>this</a> problem."
+ - "I know a proof that there's irrational numbers that one to the power of the other give a rational number and this footer is <a href='/blog/twitter-proofs/irrational-rationality'>almost</a> the right size for it."
  - "Contribute with random sentences <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://github.com/RojerGS/mathspp/blob/master/languages/en.yaml'>here</a>!"
+ - "You can use the <a href='/texpaste'>TeX Paste</a> tool to share LaTeX/MathJax equations across the internet."
+ - "Feel like exercising your brain? Have a go at one of the <a href='/blog/problems'>problems</a> I have for you."
  # trivia
  - "The closest thing there is to a Nobel Prize in mathematics is <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://en.wikipedia.org/wiki/Fields_Medal#:~:text=has%20been%20described%20as%20the%20mathematician's%20Nobel%20Prize'>the Fields medal</a>."
  - "The mathematician <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://en.wikipedia.org/wiki/Évariste_Galois'>Évariste Galois</a> died at the age of 20 but not before solving a problem that had been standing for 350 years."
