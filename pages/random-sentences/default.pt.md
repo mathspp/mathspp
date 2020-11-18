@@ -6,7 +6,7 @@ title: Frases aleatórias
 
 <h1> {{ page.title }} </h1>
 
-Esta página contém a lista de <i>todas</i> as frases que podem aparecer aleatoriamente no <a href='#footer'>rodapé</a> do meu blogue. Podes contribuir para esta lista adicionando mais frases aos ficheiros <a class='external-link no-image' target='_blank' href='https://github.com/rojergs/mathspp/tree/master/languages/'>desta</a> pasta no GitHub.
+<p>Esta página contém a lista de <i>todas</i> as frases que podem aparecer aleatoriamente no <a href='#footer'>rodapé</a> do meu blogue. Podes contribuir para esta lista adicionando mais frases aos ficheiros <a class='external-link no-image' target='_blank' href='https://github.com/rojergs/mathspp/tree/master/languages/'>desta</a> pasta no GitHub.</p>
 
 {% set langobj  = grav['language'] %}
 {% set curlang  = langobj.getLanguage() %}
