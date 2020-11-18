@@ -10,7 +10,7 @@ RANDOM_SENTENCES:
  - "Eu sei uma prova de que existem dois números irracionais tais que um levantado à potência do outro dá um número racional e este rodapé tem <a href='/blog/twitter-proofs/irrational-rationality'>quase</a> o tamanho certo para ela."
  - "Abre <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://github.com/RojerGS/mathspp/blob/master/languages/pt.yaml'>este</a> link para contribuires com frases aleatórias!"
  - "Podes usar a ferramenta <a href='/pt/texpaste'>TeX Paste</a> para partilhares equações LaTeX/MathJax na internet."
- - "Se quiseres exercitar o teu cérebro então tenta resolver um dos <a href='pt/blog/problems'>problemas</a> que tenho para ti."
+ - "Se quiseres exercitar o teu cérebro então tenta resolver um dos <a href='/pt/blog/problems'>problemas</a> que tenho para ti."
  # trivia
  - "A <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://pt.wikipedia.org/wiki/Medalha_Fields#:~:text=A Medalha Fields&text=têm sido muitas vezes descritos como o \"Prêmio Nobel dos matemáticos'>medalha Fields</a> é o que há de mais parecido com um prémio Nobel da matemática."
  - "O matemático <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://pt.wikipedia.org/wiki/%C3%89variste_Galois'>Évariste Galois</a> morreu com 20 anos mas não sem antes resolver um problema que já tinha 350 anos."
@@ -23,6 +23,7 @@ RANDOM_SENTENCES:
  - "Eu conjeturo que, algures, alguém está a ler esta frase."
  - "Se há 50% probabilidade de que algo corra mal, então algo vai correr mal 9 em cada 10 vezes."
  - "Pensa num número entre 1 e 10. Agora multiplica por 9 e subtrai 1. Agora fecha os olhos. Ficou escuro, não ficou?"
+ - "Há dois tipos de pessoas no Mundo. As que sabem fazer extrapolações quando falta informação."
  # misc
  - "<a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://tio.run/##K6gsycjPM/7/v6AoM69EQymjpKSg2EpfPzexJKO4oEAvOT9Xv6BESfP/fwA'><code>print(\"/pt\")</code></a>"
  - "<a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://tio.run/##HYpBCoBADAMfVJoXhHyk7EEFQQQPgu@v2Z3DEMLs73Y953fc3VGZypJCOSEHba@hhPxbQEQUNGjmxmoT5Gocdf8'><code>+[-->-[>>+>-----<<]<--<---]>-.>>>+.>>..+++[.>]<<<<.+++.------.<<-.>>>>+.</code></a>"
