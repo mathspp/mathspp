@@ -3,10 +3,56 @@ metadata:
     description: Use the TeX Paste tool to share beautiful equations across the Internet, forever.
 ---
 
-<button id="saveB" title="alt+s" style="font-size:1em;width:6em;height:4em;vertical-align:top;margin-top:1em;margin-bottom:1em;" onclick="save_tex(true)"      >copy<br>link</button>
-<button id="viewB" title="alt+v" style="font-size:1em;width:6em;height:4em;vertical-align:top;margin-top:1em;margin-bottom:1em;" onclick="editor_mode(2)"           >typeset     </button>
-<button id="editB" title="alt+e" style="font-size:1em;width:6em;height:4em;vertical-align:top;margin-top:1em;margin-bottom:1em;" onclick="editor_mode(0)"           >edit        </button>
-<button id="copyB" title="alt+c" style="font-size:1em;width:6em;height:4em;vertical-align:top;margin-top:1em;margin-bottom:1em;" onclick="copy_link(tex_area.value)">copy<br>TeX</button>
+<style>
+textarea, button {
+    font-size:1em;
+    width:6em;
+    height:4em;
+    vertical-align:top;
+    margin-top:1em;
+    margin-bottom:1em;
+    background: #191919;
+    border: none;
+    box-shadow: 0 1px 4px #555555;
+    /* Apart from the colours, styling copied from the "Search" bar in the blog. */
+    border-top-color: #555555;
+    border-top-style: solid;
+    border-top-width: 0.05rem;
+    border-right-color: #555555;
+    border-right-style: solid;
+    border-right-width: 0.05rem;
+    border-bottom-color: #555555;
+    border-bottom-style: solid;
+    border-bottom-width: 0.05rem;
+    border-left-color: #555555;
+    border-left-style: solid;
+    border-left-width: 0.05rem;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+}
+
+button:disabled {
+    background: #333333;
+    box-shadow: none;
+}
+
+button:hover {
+    background: #202a37;
+}
+
+textarea, button, #genc {
+    color: #adb3bd;
+    font-family: "Miriam Libre", sans-serif;
+}
+</style>
+
+<button id="saveB" title="alt+s" class="button" onclick="save_tex(true)"           >copy<br>link</button>
+<button id="viewB" title="alt+v" class="button" onclick="editor_mode(2)"           >typeset     </button>
+<button id="editB" title="alt+e" class="button" onclick="editor_mode(0)"           >edit        </button>
+<button id="copyB" title="alt+c" class="button" onclick="copy_link(tex_area.value)">copy<br>TeX</button>
 
 <div style="top:4em; left:.5em; right:.5em; bottom:0; font-size:125%; color:#101010;">
     <textarea class="mainArea" id="tex_area" spellcheck="false" style="width:100%;margin:10px" rows="10"></textarea>
