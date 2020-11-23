@@ -4,6 +4,6 @@
   {% set logo_file = (logo|first).name %}
   <img src="{{ url('theme://images/logo/' ~ logo_file)  }}" alt="{{ site.title }}" />
 {% else %}
-  {% include('@images/logo/logo_mobile.svg') %}
+  <img src="{{ url('theme://images/logo/logo_mobile.png') }}" alt="{{ site.title }}" />
 {% endif %}
 </a>
