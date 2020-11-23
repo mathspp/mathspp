@@ -4,13 +4,25 @@ h3,
 h4,
 h5,
 h6,
-.hero :is(h1, h2, h3, h4, h5, h6) {
+.hero h1,
+.hero h2,
+.hero h3,
+.hero h4,
+.hero h5,
+.hero h6 {
     font-family: "Chewy", cursive;
     color: #adb3bd;
 }
 
 /* Headers in hero sections of modular pages marked with the `text-light` class. */
-.hero.text-light :is(h1, h2, h3, h4, h5, h6, i, p) {
+.hero.text-light h1,
+.hero.text-light h2,
+.hero.text-light h3,
+.hero.text-light h4,
+.hero.text-light h5,
+.hero.text-light h6,
+.hero.text-light i,
+.hero.text-light p {
     color: #e2e2e2;
 }
 
