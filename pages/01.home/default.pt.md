@@ -1,6 +1,8 @@
 ---
 title: Página Principal
 menu: Página Principal
+metadata:
+    description: Neste site encontras conteúdos educativos e interessantes de matemática e programação.
 ---
 
 # Mathspp
