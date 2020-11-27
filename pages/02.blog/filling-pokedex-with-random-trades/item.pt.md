@@ -10,7 +10,7 @@ uma Pokédex se só pudéssemos fazer trocas aleatórias.
 
 ===
 
-![Uma fotografia de uma troca aleatória a acontecer no Pokémon Home](_thumbnail.jpg)
+![Uma fotografia de uma troca aleatória a acontecer no Pokémon Home](thumbnail.jpg)
 
 # Objetivo
 
@@ -48,7 +48,7 @@ Nos jogos de Pokémon existem umas criaturas (chamadas Pokémon, derivado de
 
 Aqui tens uma imagem com péssima qualidade com três desses Pokémon:
 
-![Uma imagem com má qualidade com três Pokémon](pokemons.jpg)
+![Uma imagem com má qualidade com três Pokémon](_pokemons.jpg)
 
 À data de escrita deste artigo, existem [898][wiki-pokemon-list] Pokémon diferentes.
 Nos jogos existe uma coisa chamada *Pokédex*, que é uma espécie de catálogo de todos

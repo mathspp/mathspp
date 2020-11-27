@@ -10,7 +10,7 @@ your *complete* Pokédex by only performing random trades.
 
 ===
 
-![A picture of a trade happening inside Pokémon Home](_thumbnail.jpg)
+![A picture of a trade happening inside Pokémon Home](thumbnail.jpg)
 
 # Objective
 
@@ -47,7 +47,7 @@ short for "pocket monsters") that you can capture and collect.
 
 Here's a low-quality image with three of them:
 
-![A low-quality picture of three Pokémon](pokemons.jpg)
+![A low-quality picture of three Pokémon](_pokemons.jpg)
 
 At the time of writing, there's [898][wiki-pokemon-list] different Pokémon.
 In the games, your *Pokédex* is like a catalogue of all the Pokémon you've seen
