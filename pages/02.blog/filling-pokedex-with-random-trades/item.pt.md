@@ -330,13 +330,13 @@ está a vermelho na fórmula em cima.
 Se escolhermos $g_k(p) = (1-p)^k$ vemos que
 
 $$
-g_k'(p) = -{\color{red} k(1 - p)^{k-1}} ~ ,
+g_k'(p) = -k(1 - p)^{k-1} ~ ,
 $$
 
 portanto vamos reescrever a série para que possamos inserir as funções $g_k'(p)$:
 
 $$
-\sum_{k = 1}^\infty {\color{red} k(1-p)^{k-1}}p = -p \sum_{k = 1}^\infty -{\color{red} k(1-p)^{k-1}} = -p \sum_{k = 1}^\infty g_k'(p) ~ .
+\sum_{k = 1}^\infty k(1-p)^{k-1}p = -p \sum_{k = 1}^\infty -k(1-p)^{k-1} = -p \sum_{k = 1}^\infty g_k'(p) ~ .
 $$
 
 Mas porque é que isto é relevante?
@@ -448,7 +448,7 @@ podemos fazer o seguinte:
  1. Começar por escrever
 
 $$
-\sum_{k = 1}^\infty k(1-p)^{k-1}p = -p \sum_{k = 1}^\infty {\color{red} -k(1-p)^{k-1}} = -p \sum_{k = 1}^\infty {\color{red} g_k'(p)} ~ .
+\sum_{k = 1}^\infty k(1-p)^{k-1}p = -p \sum_{k = 1}^\infty -k(1-p)^{k-1} = -p \sum_{k = 1}^\infty g_k'(p) ~ .
 $$
 
  2. "Integrar" as funções $g_k'(p)$ e escrever

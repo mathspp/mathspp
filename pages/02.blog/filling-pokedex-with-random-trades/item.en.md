@@ -320,13 +320,13 @@ vaguely similar to the red part above.
 If we pick $g_k(p) = (1-p)^k$ we see that
 
 $$
-g_k'(p) = -{\color{red} k(1 - p)^{k-1}} ~ ,
+g_k'(p) = -k(1 - p)^{k-1} ~ ,
 $$
 
 so let's rework the summation above to include the $g_k'(p)$:
 
 $$
-\sum_{k = 1}^\infty {\color{red} k(1-p)^{k-1}}p = -p \sum_{k = 1}^\infty -{\color{red} k(1-p)^{k-1}} = -p \sum_{k = 1}^\infty g_k'(p) ~ .
+\sum_{k = 1}^\infty k(1-p)^{k-1}p = -p \sum_{k = 1}^\infty -k(1-p)^{k-1} = -p \sum_{k = 1}^\infty g_k'(p) ~ .
 $$
 
 Why do we care about this?
@@ -438,7 +438,7 @@ problematic, we could've gone like this:
  1. Start by writing
 
 $$
-\sum_{k = 1}^\infty k(1-p)^{k-1}p = -p \sum_{k = 1}^\infty {\color{red} -k(1-p)^{k-1}} = -p \sum_{k = 1}^\infty {\color{red} g_k'(p)} ~ .
+\sum_{k = 1}^\infty k(1-p)^{k-1}p = -p \sum_{k = 1}^\infty -k(1-p)^{k-1} = -p \sum_{k = 1}^\infty g_k'(p) ~ .
 $$
 
  2. "Integrate" the $g_k'(p)$ and write
