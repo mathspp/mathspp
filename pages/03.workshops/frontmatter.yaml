@@ -21,6 +21,6 @@ content:
 menu: Workshops
 metadata:
     author: Rodrigo Girão Serrão
-    image: https://mathspp.com/workshops/_hero/header.jpg
+    og:image: https://mathspp.com/workshops/_hero/header.jpg
 onpage_menu: false
 title: Workshops
