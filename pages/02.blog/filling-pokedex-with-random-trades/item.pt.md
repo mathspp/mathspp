@@ -190,8 +190,8 @@ $\frac16$ de acontecer, logo o valor esperado do lançamento de um dado é
 
 $$
 \begin{gathered}
-\textcolor{red}{\frac16}\times 1 + \textcolor{red}{\frac16}\times 2 + \textcolor{red}{\frac16}\times 3 + \textcolor{red}{\frac16}\times 4 + \textcolor{red}{\frac16}\times 5 + \textcolor{red}{\frac16}\times 6 = \\
-= \textcolor{red}{\frac16}\times\left(1 + 2 + 3 + 4 + 5 + 6 \right) = \\
+{\color{red} \frac16}\times 1 + {\color{red} \frac16}\times 2 + {\color{red} \frac16}\times 3 + {\color{red} \frac16}\times 4 + {\color{red} \frac16}\times 5 + {\color{red} \frac16}\times 6 = \\
+= {\color{red} \frac16}\times\left(1 + 2 + 3 + 4 + 5 + 6 \right) = \\
 = 3.5
 \end{gathered}
 $$
@@ -322,7 +322,7 @@ com a ideia geral de como isto se faz, podes sempre ler a
 Para obter a fórmula final, começamos por olhar para
 
 $$
-\sum_{k = 1}^\infty \textcolor{red}{k(1-p)^{k-1}}p ~ .
+\sum_{k = 1}^\infty {\color{red} k(1-p)^{k-1}}p ~ .
 $$
 
 Vamos procurar uma função $g_k(p)$ cuja derivada seja vagamente semelhante ao que
@@ -330,13 +330,13 @@ está a vermelho na fórmula em cima.
 Se escolhermos $g_k(p) = (1-p)^k$ vemos que
 
 $$
-g_k'(p) = -\textcolor{red}{k(1 - p)^{k-1}} ~ ,
+g_k'(p) = -{\color{red} k(1 - p)^{k-1}} ~ ,
 $$
 
 portanto vamos reescrever a série para que possamos inserir as funções $g_k'(p)$:
 
 $$
-\sum_{k = 1}^\infty \textcolor{red}{k(1-p)^{k-1}}p = -p \sum_{k = 1}^\infty -\textcolor{red}{k(1-p)^{k-1}} = -p \sum_{k = 1}^\infty g_k'(p) ~ .
+\sum_{k = 1}^\infty {\color{red} k(1-p)^{k-1}}p = -p \sum_{k = 1}^\infty -{\color{red} k(1-p)^{k-1}} = -p \sum_{k = 1}^\infty g_k'(p) ~ .
 $$
 
 Mas porque é que isto é relevante?
@@ -448,7 +448,7 @@ podemos fazer o seguinte:
  1. Começar por escrever
 
 $$
-\sum_{k = 1}^\infty k(1-p)^{k-1}p = -p \sum_{k = 1}^\infty \textcolor{red}{-k(1-p)^{k-1}} = -p \sum_{k = 1}^\infty \textcolor{red}{g_k'(p)} ~ .
+\sum_{k = 1}^\infty k(1-p)^{k-1}p = -p \sum_{k = 1}^\infty {\color{red} -k(1-p)^{k-1}} = -p \sum_{k = 1}^\infty {\color{red} g_k'(p)} ~ .
 $$
 
  2. "Integrar" as funções $g_k'(p)$ e escrever

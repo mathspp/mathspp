@@ -184,8 +184,8 @@ of happening, so the expected value of a dice roll is
 
 $$
 \begin{gathered}
-\textcolor{red}{\frac16}\times 1 + \textcolor{red}{\frac16}\times 2 + \textcolor{red}{\frac16}\times 3 + \textcolor{red}{\frac16}\times 4 + \textcolor{red}{\frac16}\times 5 + \textcolor{red}{\frac16}\times 6 = \\
-= \textcolor{red}{\frac16}\times\left(1 + 2 + 3 + 4 + 5 + 6 \right) = \\
+{\color{red} \frac16}\times 1 + {\color{red} \frac16}\times 2 + {\color{red} \frac16}\times 3 + {\color{red} \frac16}\times 4 + {\color{red} \frac16}\times 5 + {\color{red} \frac16}\times 6 = \\
+= {\color{red} \frac16}\times\left(1 + 2 + 3 + 4 + 5 + 6 \right) = \\
 = 3.5
 \end{gathered}
 $$
@@ -312,7 +312,7 @@ just want the main idea, you can [fast-forward](#fast-forward).
 In order to do so, the first thing we do is look at
 
 $$
-\sum_{k = 1}^\infty \textcolor{red}{k(1-p)^{k-1}}p ~ .
+\sum_{k = 1}^\infty {\color{red} k(1-p)^{k-1}}p ~ .
 $$
 
 We want to look for a function $g_k(p)$ whose derivative is
@@ -320,13 +320,13 @@ vaguely similar to the red part above.
 If we pick $g_k(p) = (1-p)^k$ we see that
 
 $$
-g_k'(p) = -\textcolor{red}{k(1 - p)^{k-1}} ~ ,
+g_k'(p) = -{\color{red} k(1 - p)^{k-1}} ~ ,
 $$
 
 so let's rework the summation above to include the $g_k'(p)$:
 
 $$
-\sum_{k = 1}^\infty \textcolor{red}{k(1-p)^{k-1}}p = -p \sum_{k = 1}^\infty -\textcolor{red}{k(1-p)^{k-1}} = -p \sum_{k = 1}^\infty g_k'(p) ~ .
+\sum_{k = 1}^\infty {\color{red} k(1-p)^{k-1}}p = -p \sum_{k = 1}^\infty -{\color{red} k(1-p)^{k-1}} = -p \sum_{k = 1}^\infty g_k'(p) ~ .
 $$
 
 Why do we care about this?
@@ -438,7 +438,7 @@ problematic, we could've gone like this:
  1. Start by writing
 
 $$
-\sum_{k = 1}^\infty k(1-p)^{k-1}p = -p \sum_{k = 1}^\infty \textcolor{red}{-k(1-p)^{k-1}} = -p \sum_{k = 1}^\infty \textcolor{red}{g_k'(p)} ~ .
+\sum_{k = 1}^\infty k(1-p)^{k-1}p = -p \sum_{k = 1}^\infty {\color{red} -k(1-p)^{k-1}} = -p \sum_{k = 1}^\infty {\color{red} g_k'(p)} ~ .
 $$
 
  2. "Integrate" the $g_k'(p)$ and write
