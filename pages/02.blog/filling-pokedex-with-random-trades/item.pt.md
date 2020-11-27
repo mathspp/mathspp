@@ -192,7 +192,7 @@ $$
 \begin{gathered}
 {\color{red} \frac16}\times 1 + {\color{red} \frac16}\times 2 + {\color{red} \frac16}\times 3 + {\color{red} \frac16}\times 4 + {\color{red} \frac16}\times 5 + {\color{red} \frac16}\times 6 = \\
 = {\color{red} \frac16}\times\left(1 + 2 + 3 + 4 + 5 + 6 \right) = \\
-= 3.5
+= 3.5 ~.
 \end{gathered}
 $$
 
@@ -322,7 +322,7 @@ com a ideia geral de como isto se faz, podes sempre ler a
 Para obter a fórmula final, começamos por olhar para
 
 $$
-\sum_{k = 1}^\infty {\color{red} k(1-p)^{k-1}}p ~ .
+\sum_{k = 1}^\infty {\color{red} k(1-p)^{k-1}}p ~.
 $$
 
 Vamos procurar uma função $g_k(p)$ cuja derivada seja vagamente semelhante ao que
