@@ -34,6 +34,14 @@ they have no idea how many hats of each colour will be distributed.
 So your task is to devise the best possible strategy and to find out how many people
 that strategy saves, on average.
 
+It is important to note that:
+ - people cannot communicate with each other once they are in a line;
+ - they can try to guess the colours of their hats in any order you see fit;
+ - each person gets a single attempt;
+ - everyone hears everyone's guess, but only the people behind the person
+making a guess know if that person got it right.
+Everyone else has no idea if the guess was correct or not.
+
 !!! Give it some thought...
 
 If you need any clarification whatsoever, feel free to ask in the comment section below.
@@ -45,7 +53,10 @@ The solution to this problem will be posted [here][sol] after this problem has b
 
 ---
 
+This problem was posed to me by my friend [LeafarCoder].
+
 If you enjoyed the problem and would like to get new problems directly in your inbox, be sure to [subscribe to the Problems newsletter][subscribe].
 
 [sol]: ../../solutions/{{ page.slug }}
 [subscribe]: https://mathspp.com/subscribe
+[LeafarCoder]: https://github.com/LeafarCoder

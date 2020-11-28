@@ -36,6 +36,14 @@ Resumindo, o teu objetivo é engendrar o melhor plano possível para salvar tant
 pessoas quantas possível, e determinar quantas pessoas é que o teu plano salva,
 em média.
 
+Também é importante tomares nota do seguinte:
+ - as pessoas não podem comunicar depois de serem postas em fila;
+ - os palpites podem ser feitos pela ordem que quiseres;
+ - cada pessoa tem apenas uma tentativa;
+ - todos ouvem os palpites de toda a gente, mas só quem está atrás de
+quem faz o palpite é que tem maneira de ver se essa pessoa acertou ou erro.
+Os outros ficam sem saber se o palpite estava certo ou errado.
+
 !!! Pensa um pouco...
 
 Se precisares de clarificar alguma coisa, não hesites em perguntar na secção de comentários em baixo.
@@ -47,7 +55,10 @@ A minha proposta de solução vai ser publicada [aqui][sol] quando tiverem passa
 
 ---
 
+Este problema foi-me colocado pelo meu amigo [LeafarCoder].
+
 Se gostaste deste problema e se gostavas de receber novos problemas diretamente na tua caixa de correio, então [subscreve a newsletter dos Problemas][subscribe].
 
 [sol]: ../../solutions/{{ page.slug }}
 [subscribe]: https://mathspp.com/subscribe
+[LeafarCoder]: https://github.com/LeafarCoder
