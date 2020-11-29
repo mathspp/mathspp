@@ -1,7 +1,6 @@
 ---
 metadata:
-    description: Neste quebra-cabeças vais ter de descobrir quantas pessoas é que
-    conseguem adivinhar a cor dos seus próprios chapéus.
+    description: Neste quebra-cabeças vais ter de descobrir quantas pessoas é que conseguem adivinhar a cor dos seus próprios chapéus.
 title: 'Problema #024 - chapéus em fila'
 ---
 
