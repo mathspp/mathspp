@@ -4,7 +4,7 @@ features:
   - icon: fas fa-laptop
     text: Usa um computador para aprender LaTeX
   - icon: fas fa-superscript
-    text: Aprende tudo o que precisas para escrever relatórios e outros documentos matemáticos
+    text: Aprende tudo o que precisas para escrever relatórios e outros documentos científicos
   - icon: fas fa-hiking
     text: Feito para principiantes que não sabem nada de LaTeX
   - icon: fas fa-gift

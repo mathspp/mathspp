@@ -6,9 +6,13 @@ title: Introduction to LaTeX
 
 ## Aim
 
-The aim of this workshop is to introduce people to typesetting with LaTeX. LaTeX is a system that allows one to write some commands that are then rendered as formulas.
+The aim of this workshop is to introduce people to typesetting with LaTeX. LaTeX is a system that allows one to write complex documents in a simple manner.
 
-As an example, `$x^2$` gets rendered as $x^2$. In a mathematics course it turns out to be very helpful to know how to use LaTeX decently. The workshop just gives an overview of the type of things that can be done and that we, as maths students, eventually need to use.
+As a mathematician, I like it because it makes it very simple to write formulas. As an example, typing `$x^2$` gets rendered as $x^2$.
+In a mathematics course it turns out to be very helpful to know how to use LaTeX decently. The workshop just gives an overview of the type of things that can be done and that we, as maths students, eventually need to use.
+
+Even so, the usefulness of LaTeX goes well beyond mathematics students/mathematicians, and authors across all sciences use LaTeX to write their articles, reports and other written documents.
+LaTeX is also commonly used to write Msc. and PhD. thesis.
 
 ## Feedback
 

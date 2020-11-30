@@ -6,9 +6,12 @@ title: Introdução ao LaTeX
 
 ## Objetivo
 
-O objetivo deste workshop é introduzir a audiência ao LaTeX. O LaTeX é um sistema que permite que se escrevam pequenos comandos que depois podem ser transformados em fórmulas matemáticas.
+O objetivo deste workshop é introduzir a audiência ao LaTeX. O LaTeX é um sistema que permite produzir documentos complexos de uma forma mais simples.
 
-A título de exemplo, `$x^2$` transforma-se em $x^2$. Num curso de matemática revela-se bastante útil saber usar LaTeX decentemente. O workshop limita-se a mostrar os vários tipos de coisas que dão jeito saber fazer e que um aluno de matemática precisará mais cedo ou mais tarde.
+Como matemático, eu gosto muito de LaTeX porque é facílimo escrever fórmulas num documento LaTeX. A título de exemplo, posso escrever `$x^2$` para incluir a expressão $x^2$.
+Num curso de matemática revela-se bastante útil saber usar LaTeX decentemente. O workshop limita-se a mostrar os vários tipos de coisas que dão jeito saber fazer e que um aluno de matemática precisará mais cedo ou mais tarde.
+
+Ainda assim, o LaTeX é útil para outros que não estudantes de matemática/matemáticos. Autores de todos os ramos científicos usam LaTeX para escrever os seus artigos, relatórios e outros documentos escritos. O LaTeX também é comummente usado para redigir teses.
 
 ## Feedback
 
