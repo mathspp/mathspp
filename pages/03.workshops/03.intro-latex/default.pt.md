@@ -10,6 +10,21 @@ O objetivo deste workshop é introduzir a audiência ao LaTeX. O LaTeX é um sis
 
 A título de exemplo, `$x^2$` transforma-se em $x^2$. Num curso de matemática revela-se bastante útil saber usar LaTeX decentemente. O workshop limita-se a mostrar os vários tipos de coisas que dão jeito saber fazer e que um aluno de matemática precisará mais cedo ou mais tarde.
 
+## Feedback
+
+Aqui tens algumas opiniões de pessoas que foram ao workshop:
+
+ > “*Uma excelente introdução a LaTeX, num ambiente amigável, com tempo não só para apresentação dos fundamentos como ainda também para detalhes importantes e úteis.*”  &mdash; António Figueiras
+
+<!-- -->
+
+ > “*Explicação objetiva com dicas muito interessantes. Linguagem simples e exemplos concretos.*”  &mdash; Carolina Salvador
+
+<!-- -->
+
+ > “*A informação dada era relevante e será útil para o meu curso, foi dada de uma forma fácil de entender e deu muitas bases para o funcionamento do LaTeX.*”  &mdash; Anónimo
+
+
 ## Recursos adicionais
 
 Para além de partilhar [um documento `.tex` com as coisas vistas no workshop (e mais!)][gh-doc], também partilho sempre os seguintes links _muito_ úteis:

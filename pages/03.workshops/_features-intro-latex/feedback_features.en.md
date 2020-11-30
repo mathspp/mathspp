@@ -13,4 +13,8 @@ menu: Intro Latex
 title: Introduction to LaTeX
 ---
 
-# Introduction to LaTeX
+ > “*An excelent introduction to LaTeX, in a friendly environment, with time to introduce not only the basics but also the important and useful details.*”  &mdash; António Figueiras
+
+<!-- -->
+
+ > “*Explained objectively and with very interesting tips. Simple language and concrete examples.*”  &mdash; Carolina Salvador

@@ -10,6 +10,21 @@ The aim of this workshop is to introduce people to typesetting with LaTeX. LaTeX
 
 As an example, `$x^2$` gets rendered as $x^2$. In a mathematics course it turns out to be very helpful to know how to use LaTeX decently. The workshop just gives an overview of the type of things that can be done and that we, as maths students, eventually need to use.
 
+## Feedback
+
+Here is what some people had to say about the contents of the workshop and the way I led it:
+
+ > “*An excelent introduction to LaTeX, in a friendly environment, with time to introduce not only the basics but also the important and useful details.*”  &mdash; António Figueiras
+
+<!-- -->
+
+ > “*Explained objectively and with very interesting tips. Simple language and concrete examples.*”  &mdash; Carolina Salvador
+
+<!-- -->
+
+ > “*The information provided was relevant and will be useful for my degree, it was given in a way that was easy to understand and laid the foundations to work with LaTeX.*”  &mdash; Anonymous
+
+
 ## Additional resources
 
 Besides sharing [a complete template with everything we cover in the workshop (and more!)][gh-doc], I always point the students to these _really_ helpful resources:
