@@ -1,5 +1,7 @@
 ---
 menu: Soluções
+metadata:
+    description: Todas as soluções propostas para os problemas publicados no blogue.
 title: Soluções
 ---
 

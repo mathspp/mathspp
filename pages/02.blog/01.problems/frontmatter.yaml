@@ -6,3 +6,5 @@ content:
     order:
         by: date
         dir: desc
+metadata:
+    author: Rodrigo Girão Serrão

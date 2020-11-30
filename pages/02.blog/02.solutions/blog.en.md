@@ -1,5 +1,7 @@
 ---
 menu: Solutions
+metadata:
+    description: All my proposed solutions to the problems published on the blog.
 title: Solutions
 ---
 
