@@ -70,7 +70,7 @@ The complementary blog post will itself contain the following:
 
 Are you looking forward for this series?
 Let me know in the comments below if you are expecting any tips about any specific
-topics and leave an "emoji reaction" to show your support.
+topics and leave an "emoji response" to show your support.
 
 Also, [don't forget to subscribe to the newsletter][subscribe] so you don't miss
 a single Pydon't!
