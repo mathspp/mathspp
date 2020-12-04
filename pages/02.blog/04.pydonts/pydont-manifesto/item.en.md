@@ -76,4 +76,4 @@ Also, [don't forget to subscribe to the newsletter][subscribe] so you don't miss
 a single Pydon't.
 
 
-[subscribe]: /subscribe
+[subscribe]: https://mathspp.com/subscribe

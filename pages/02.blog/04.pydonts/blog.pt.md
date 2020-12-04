@@ -7,4 +7,4 @@
 ### Vou publicar Pydon'ts semanalmente, a começar no dia 5 de janeiro de 2021. Não te esqueças de [subscrever a newsletter][subscribe] para as receberes diretamente na tua caixa de correio.
 
 [manifesto]: ./pydont-manifesto
-[subscribe]: /subscribe
+[subscribe]: https://mathspp.com/subscribe

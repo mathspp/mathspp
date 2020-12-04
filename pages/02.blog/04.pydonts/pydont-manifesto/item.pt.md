@@ -79,4 +79,4 @@ Já agora, [não te esqueças de subscrever a newsletter][subscribe] para não p
 uma única Pydon't.
 
 
-[subscribe]: /subscribe
+[subscribe]: https://mathspp.com/subscribe
