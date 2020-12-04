@@ -73,7 +73,7 @@ Let me know in the comments below if you are expecting any tips about any specif
 topics and leave an "emoji reaction" to show your support.
 
 Also, [don't forget to subscribe to the newsletter][subscribe] so you don't miss
-a single Pydon't.
+a single Pydon't!
 
 
 [subscribe]: https://mathspp.com/subscribe

@@ -5,8 +5,8 @@ title: Proclamação das Pydon'ts
 ---
 
 "*Pydon'ts*" são dicas curtas, objetivas e úteis de programação em Python.
-Um Pydon't é algo que *não* devias fazer quando programas em Python.
-Em geral, se seguires os Pydon'ts vais acabar por escrever código mais idiomático.
+Uma Pydon't descreve algo que *não* devias fazer quando programas em Python.
+Em geral, se seguires as Pydon'ts vais acabar por escrever código mais idiomático.
 
 ===
 
@@ -76,7 +76,7 @@ algum tópico específico de Python e deixa uma reação com um emoji para mostr
 o teu apoio.
 
 Já agora, [não te esqueças de subscrever a newsletter][subscribe] para não perderes
-uma única Pydon't.
+uma única Pydon't!
 
 
 [subscribe]: https://mathspp.com/subscribe
