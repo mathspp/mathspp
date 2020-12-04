@@ -1,5 +1,13 @@
-# Py-don'ts
+# Pydon'ts
 
-## TODAS as coisas a _não_ fazer!
+## Melhora as tuas capacidades de programação em Python
 
-Artigos com todos os exemplos de mau código Python para garantir que não és um programador terrível.
+Se não sabes o que uma Pydon't é, devias mesmo
+[ler a Proclamação das Pydon'ts][manifesto].
+
+Vou publicar Pydon'ts semanalmente, a começar no dia 5 de janeiro de 2021.
+Não te esqueças de [subscrever a newsletter][subscribe] para as receberes diretamente
+na tua caixa de correio.
+
+[manifesto]: ./pydont-manifesto
+[subscribe]: /subscribe

@@ -1,5 +1,12 @@
-# Py-don'ts
+# Pydon'ts
 
-## ALL the things you _shouldn't_ do!
+## Improve your Python programming skills
 
-Blog posts with all the examples of bad Python code to get you coding the not-terrible way.
+If you don't know what a Pydon't is, you should definitely
+[read the Pydon't Manifesto][manifesto].
+
+I will be publishing Pydon'ts weekly, starting from the 5th of January, 2021.
+Be sure to [subscribe the newsletter][subscribe] to get them directly to your inbox.
+
+[manifesto]: ./pydont-manifesto
+[subscribe]: /subscribe
