@@ -1,6 +1,6 @@
 ---
 metadata:
-    description: Este artigo explica o que é que "pydon'ts" são e porque é que eles são importantes para quem se quer tornar num melhor programador Python.
+    description: Este artigo explica o que é que "Pydon'ts" são e porque é que são importantes para quem se quer tornar num melhor programador Python.
 title: Proclamação das Pydon'ts
 ---
 
