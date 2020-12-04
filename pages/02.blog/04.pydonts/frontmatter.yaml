@@ -6,7 +6,7 @@ content:
     order:
         by: date
         dir: desc
-hero_classes: parallax overlay-dark-gradient text-light
+hero_classes: "parallax overlay-dark text-light "
 hero_image: python-logo-2.png
 menu: Pydon'ts
 slug: pydonts
