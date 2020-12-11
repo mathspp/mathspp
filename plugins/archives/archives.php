@@ -17,6 +17,16 @@ class ArchivesPlugin extends Plugin
     /**
      * @var string
      */
+    protected $month_taxonomy_value;
+
+    /**
+     * @var string
+     */
+    protected $year_taxonomy_value;
+
+    /**
+     * @var string
+     */
     protected $month_taxonomy_name;
 
     /**
@@ -57,6 +67,9 @@ class ArchivesPlugin extends Plugin
             return;
         }
 
+        $this->month_taxonomy_value = $this->config->get('plugins.archives.taxonomy_values.month');
+        $this->year_taxonomy_value = $this->config->get('plugins.archives.taxonomy_values.year');
+
         $this->month_taxonomy_name = $this->config->get('plugins.archives.taxonomy_names.month');
         $this->year_taxonomy_name = $this->config->get('plugins.archives.taxonomy_names.year');
 
@@ -94,14 +107,14 @@ class ArchivesPlugin extends Plugin
 
         $taxonomy = $page->taxonomy();
 
-        // track month taxonomy in "jan_2015" format:
+        // track month taxonomy using month_taxonomy_value format:
         if (!isset($taxonomy[$this->month_taxonomy_name])) {
-            $taxonomy[$this->month_taxonomy_name] = array(strtolower(date('M_Y', $page->date())));
+            $taxonomy[$this->month_taxonomy_name] = array(strtolower(date($this->month_taxonomy_value, $page->date())));
         }
 
-        // track year taxonomy in "2015" format:
+        // track year taxonomy using year_taxonomy_value format:
         if (!isset($taxonomy[$this->year_taxonomy_name])) {
-            $taxonomy[$this->year_taxonomy_name] = array(date('Y', $page->date()));
+            $taxonomy[$this->year_taxonomy_name] = array(date($this->year_taxonomy_value, $page->date()));
         }
 
         // set the modified taxonomy back on the page object

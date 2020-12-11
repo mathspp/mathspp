@@ -1,3 +1,9 @@
+# v1.6.1
+## 12/02/2020
+
+1. [](#improved)
+    * Minor default template improvements
+
 # v1.6.0
 ## 04/22/2020
 

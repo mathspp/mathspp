@@ -1,3 +1,10 @@
+# v1.5.4
+## 12/02/2020
+
+1. [](#improved)
+    * Updated `anchors.js` to version 4.3.0
+    * Requires Grav 1.6
+
 # v1.5.3
 ## 03/30/2019
 
