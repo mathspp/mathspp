@@ -6,6 +6,9 @@ limit: 12
 taxonomy_names:
     month: archives_month
     year: archives_year
+taxonomy_values:
+    month: 'M_Y'
+    year: 'Y'
 #Defaults
 order:
     by: date

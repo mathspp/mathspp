@@ -1,3 +1,9 @@
+# v2.0.2
+## 12/02/2020
+
+1. [](#improved)
+    * Add taxonomy values date format customization [#29](https://github.com/getgrav/grav-plugin-archives/pull/29)  
+
 # v2.0.1
 ## 07/09/2020
 

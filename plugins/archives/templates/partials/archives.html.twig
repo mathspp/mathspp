@@ -2,7 +2,7 @@
 
 {% for month,items in archives_data %}
     <li>
-    	<a href="{{ archives_url ?? base_url }}/{{ config.plugins.archives.taxonomy_names.month }}{{ config.system.param_sep }}{{ month|date('M_Y')|lower|e('url') }}">
+    	<a href="{{ archives_url ?? base_url }}/{{ config.plugins.archives.taxonomy_names.month }}{{ config.system.param_sep }}{{ month|date(config.plugins.archives.taxonomy_values.month)|lower|e('url') }}">
         {% if archives_show_count %}
         <span class="label">{{ items|length }}</span>
         {% endif %}
