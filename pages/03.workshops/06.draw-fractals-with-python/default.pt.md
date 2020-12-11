@@ -1,8 +1,7 @@
 ---
 menu: Desenhar fractais com Python
 metadata:
-    description: Neste workshop vais aprender o que são fractais e como desenhar
-alguns deles em Python.
+    description: Neste workshop vais aprender o que são fractais e como desenhar alguns deles em Python.
 title: Desenhar fractais com Python
 ---
 
