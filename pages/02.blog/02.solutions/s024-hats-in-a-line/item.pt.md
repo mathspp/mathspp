@@ -68,8 +68,8 @@ para que depois todos os outros adivinhem sucessivamente os tons dos seus
 chapéus, tal como um dominó.
 
 No nosso exemplo temos que a soma (que deu $2$) é par, logo a primeira pessoa
-palpita que o seu chapéu é claro, já que essa é a cor associada com o $0$.
-(Infelizmente, neste caso a primeira pessoa não adivinha a cor do seu chapéu,
+palpita que o seu chapéu é claro, já que esse é o tom associado com o $0$.
+(Infelizmente, neste caso a primeira pessoa não adivinha o tom do seu chapéu,
 mas sacrificou-se para que todos os outros se consigam salvar!)
 Depois disso, a segunda pessoa sabe que o seu chapéu, mais os à sua frente,
 devem ter uma soma com uma paridade específica.
