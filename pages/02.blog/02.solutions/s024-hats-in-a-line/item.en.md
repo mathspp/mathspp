@@ -117,7 +117,7 @@ $0~?~1~1~0$ should add up to something even.
 ![Image illustrating the explanation](_explanation_03.png)
 
 The third person can then guess their hat is light-coloured, because
-$0 + ? + 1 + 1 + 0$ only adds up to something even if their hat (the $?$) is
+$0~+~? + 1 + 1 + 0$ only adds up to something even if their hat (the $?$) is
 $0$.
 
 Next is the fourth person, that knows the hats are like this: $?~0~0~?~1~0$ and
@@ -126,7 +126,7 @@ knows that $0~0~?~1~0$ should add up to something even.
 ![Image illustrating the explanation](_explanation_04.png)
 
 The fourth person can then guess their hat is dark-coloured, because
-$0 + 0 + ? + 1 + 0$ only adds up to something even if their hat is $1$.
+$0 + 0~+~? + 1 + 0$ only adds up to something even if their hat is $1$.
 
 Next is the fifth person, that knows the hats are like this: $?~0~0~1~?~0$ and
 knows that $0~0~1~?~0$ should add up to something even.
@@ -134,7 +134,7 @@ knows that $0~0~1~?~0$ should add up to something even.
 ![Image illustrating the explanation](_explanation_05.png)
 
 The fifth person can then guess their hat is dark-coloured, because
-$0 + 0 + 1 + ? + 0$ only adds up to something even if their hat is $1$.
+$0 + 0 + 1~+~? + 0$ only adds up to something even if their hat is $1$.
 
 Next is the sixth, and final, person, that knows the hats are like this:
 $?~0~0~1~1~?$ and knows that $0~0~1~1~?$ should add up to something even.
@@ -142,7 +142,7 @@ $?~0~0~1~1~?$ and knows that $0~0~1~1~?$ should add up to something even.
 ![Image illustrating the explanation](_explanation_06.png)
 
 The last person can then guess their hat is light-coloured, because
-$0 + 0 + 1 + 1 + ?$ only adds up to something even if their hat is $0$.
+$0 + 0 + 1 + 1~+~?$ only adds up to something even if their hat is $0$.
 
 And that is it!
 I hope my explanation was clear!
