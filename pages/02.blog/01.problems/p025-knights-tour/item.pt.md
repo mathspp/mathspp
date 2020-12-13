@@ -38,6 +38,8 @@ Será que algum dos dois consegue garantir uma vitória? Quem? Como?
 
 Se precisares de clarificar alguma coisa, não hesites em perguntar na secção de comentários em baixo.
 
+Este problema foi-me colocado por um colega do curso que gosta bastante de jogar xadrez.
+
 ### Solução
 
 A minha proposta de solução vai ser publicada [aqui][sol] quando tiverem passado duas semanas desde a publicação deste problema. Também podes usar o link para partilhar a tua própria solução nos comentários. Por favor, **não** escrevas a tua solução nos comentários aqui em baixo.
