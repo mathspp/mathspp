@@ -1,7 +1,7 @@
 ---
 metadata:
     description: This problem pits Alice against Bob in a little game that takes place in a chessboard.
-title: 'Problem #025 - knight's tour'
+title: "Problem #025 - knight's tour"
 ---
 
 Alice and Bob sit down, face to face, with a chessboard in front of them.
