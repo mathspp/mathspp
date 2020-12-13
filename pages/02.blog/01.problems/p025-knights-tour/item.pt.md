@@ -32,6 +32,8 @@ Por exemplo, na imagem em baixo o cavalo não pode ir para a casa que está uma 
 
 ![Mesmo tabuleiro de xadrez com algumas posições já visitadas](_chessboard_03.png)
 
+Por causa disso, o primeiro jogador que não conseguir mexer o cavalo perde.
+
 Será que algum dos dois consegue garantir uma vitória? Quem? Como?
 
 !!! Pensa um pouco...
