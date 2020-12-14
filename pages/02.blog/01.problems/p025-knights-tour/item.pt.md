@@ -10,7 +10,7 @@ Quem vai ganhar?
 
 ===
 
-![Um cavalo de xadrez](thumbnail.jpg)
+![Um cavalo de xadrez](thumbnail.jpg "Fotografia de Piotr Makowski no Unsplash")
 
 ### Enunciado do problema
 

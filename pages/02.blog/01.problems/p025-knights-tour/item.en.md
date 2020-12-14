@@ -10,7 +10,7 @@ Who will win?
 
 ===
 
-![A chess knight](thumbnail.jpg)
+![A chess knight](thumbnail.jpg "Photo by Piotr Makowski on Unsplash")
 
 ### Problem statement
 
