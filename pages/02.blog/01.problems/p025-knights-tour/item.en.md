@@ -32,6 +32,8 @@ In the example image below, the knight cannot be moved one row down and two colu
 
 ![Same chessboard with some squares already visited](_chessboard_03.png)
 
+Thus, the player who cannot make a valid move loses.
+
 Can any of them guarantee a win? Who? How?
 
 !!! Give it some thought...
