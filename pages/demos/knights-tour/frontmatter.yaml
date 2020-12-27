@@ -1,0 +1,9 @@
+anchors:
+    active: false
+date: 26-12-2020
+mathjax: false
+menu: Knight's Tour
+metadata:
+    author: Rodrigo Girão Serrão
+slug: knights-tour
+title: Knight's Tour
