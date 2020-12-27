@@ -1,0 +1,14 @@
+date: 27-12-2020
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: thumbnail.png
+process:
+    twig: true
+slug: counting-squares
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - combinatorics
+      - geometry
+      - mathematics
+twig_first: true

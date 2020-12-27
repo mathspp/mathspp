@@ -11,6 +11,6 @@ Artigos com problemas e quebra-cabeças para te pôr a pensar! Sai um problema n
 
 Se queres receber os problemas diretamente na tua caixa de correio, então [subscreve a newsletter dos Problemas](https://mathspp.com/subscribe).
 
-O próximo problema está agendado para domingo, 27 de dezembro.
+O próximo problema está agendado para domingo, 10 de janeiro.
 
 <sub><sup>Se reparares, faltam alguns problemas aqui... Ainda estou a migrar artigos do meu [blogue antigo](http://mathspp.blogspot.com).</sup></sub>

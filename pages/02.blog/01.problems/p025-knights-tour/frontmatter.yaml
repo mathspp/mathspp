@@ -8,7 +8,6 @@ slug: knights-tour
 taxonomy:
     category: [blogpost, problem]
     tag:
-      - problem
       - chess
       - game theory
 twig_first: true
