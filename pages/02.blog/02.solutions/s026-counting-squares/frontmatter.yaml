@@ -1,7 +1,7 @@
 date: 27-12-2020
 metadata:
     author: Rodrigo Girão Serrão
-    og:image: thumbnail.png
+    og:image: https://mathspp.com/blog/solutions/counting-squares/thumbnail.png
 process:
     twig: true
 slug: counting-squares
