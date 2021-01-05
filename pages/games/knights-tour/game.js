@@ -3,7 +3,7 @@ const LIGHT = "#adb3bd";
 const BLUE = "#3085ee";
 const DARK_BLUE = "#3c72b2";
 const YELLOW = "#e6d70b";
-const SQUARE_SIZE = 80;
+const SQUARE_SIZE = Math.min(Math.floor(window.screen.width/8), 80);
 const WIDTH = 8*SQUARE_SIZE;
 const NPC_TIME = 1000;
 
@@ -333,15 +333,15 @@ function resetGame() {
     }
 }
 
-document.getElementById("gameContainer").style.width = `${8*SQUARE_SIZE}px`;
+document.getElementById("gameContainer").style.width = `${WIDTH}px`;
 // Initialise the canvas.
 var canvas = document.getElementById("myCanvas");
-canvas.setAttribute("width", 8*SQUARE_SIZE);
-canvas.setAttribute("height", 8*SQUARE_SIZE);
+canvas.setAttribute("width", WIDTH);
+canvas.setAttribute("height", WIDTH);
 var ctx = canvas.getContext("2d");
 // Get the reference to the textarea that registers the moves.
 var movesTextarea = document.getElementById("movesTextarea");
-movesTextarea.style.width = `${8*SQUARE_SIZE-2}px`;
+movesTextarea.style.width = `${WIDTH}px`;
 // Get the reference to the paragraph that displays information.
 var alertsParagraph = document.getElementById("alertsParagraph");
 var language = alertsParagraph.getAttribute("language");
