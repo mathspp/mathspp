@@ -1,9 +1,8 @@
 anchors:
     active: false
-date: 26-12-2020
+date: 05-01-2021
 mathjax: false
-menu: Knight's Tour
 metadata:
     author: Rodrigo Girão Serrão
+    og:image: "https://mathspp.com/games/knights-tour/thumbnail.png"
 slug: knights-tour
-title: Knight's Tour
