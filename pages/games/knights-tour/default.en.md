@@ -24,7 +24,7 @@ title: "Knight's Tour"
     <p>If you cannot play this mini game, try using a modern Firefox or Chrome browser, in a computer.</p>
 </div>
 
-<script src="./game.js" type="text/javascript"></script>
+<script src="knights-tour/game.js" type="text/javascript"></script>
 
 <style>
     #gameContainer * { padding: 0; margin: 0; text-align: center }

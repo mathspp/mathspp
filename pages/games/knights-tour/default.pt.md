@@ -24,7 +24,7 @@ title: "Passeio do Cavalo"
     <p>Se estiveres a ter dificuldades com este mini jogo, tenta usar um navegador Firefox ou Chrome recente, num computador.</p>
 </div>
 
-<script src="./game.js" type="text/javascript"></script>
+<script src="knights-tour/game.js" type="text/javascript"></script>
 
 <style>
     #gameContainer * { padding: 0; margin: 0; text-align: center }
