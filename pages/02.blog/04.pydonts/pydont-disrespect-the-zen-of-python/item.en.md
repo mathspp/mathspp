@@ -92,9 +92,9 @@ a single Pydon't!
 
 # References
 
- - PEP 20 -- The Zen of Python, https://www.python.org/dev/peps/pep-0020/
- - "The Way of Python" mailing thread, https://groups.google.com/g/comp.lang.python/c/B_VxeTBClM0/m/L8W9KlsiriUJ
- - Tim Peters (software engineer), Wikipedia https://en.wikipedia.org/wiki/Tim_Peters_(software_engineer)
+ - PEP 20 -- The Zen of Python, [https://www.python.org/dev/peps/pep-0020/]
+ - "The Way of Python" mailing thread, [https://groups.google.com/g/comp.lang.python/c/B_VxeTBClM0/m/L8W9KlsiriUJ]
+ - Tim Peters (software engineer), Wikipedia [https://en.wikipedia.org/wiki/Tim_Peters_(software_engineer)]
 
 
 [subscribe]: https://mathspp.com/subscribe
