@@ -16,8 +16,8 @@ title: "Knight's Tour"
     <textarea id="movesTextarea" style="height:auto;resize:none;"></textarea>
     <br />
     <input type="checkbox" id="computerGoesFirstCheckbox" name="computerGoesFirstCheckbox" style="float:left;">
-    <label for="computerGoesFirstCheckbox" style="float:left;margin-left:2px">Computer goes first.</label>
-    <button onclick="resetGame()" style="float:right;">Restart Game</button>
+    <label for="computerGoesFirstCheckbox" style="float:left;margin-left:5px">Computer goes first.</label>
+    <button class="button" onclick="resetGame()" style="float:right;">Restart Game</button>
     <br />
     <br />
     <p>See <a href="https://mathspp.com/blog/problems/knights-tour" target="_blank">this blog post</a>.</p>
@@ -27,6 +27,6 @@ title: "Knight's Tour"
 <script src="knights-tour/game.js" type="text/javascript"></script>
 
 <style>
-    #gameContainer * { padding: 0; margin: 0; text-align: center }
+    #gameContainer * { text-align: center }
     canvas { background: #eee; display: block; margin: 0 auto; }
 </style>

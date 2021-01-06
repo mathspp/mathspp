@@ -16,8 +16,8 @@ title: "Passeio do Cavalo"
     <textarea id="movesTextarea" style="height:auto;resize:none;"></textarea>
     <br />
     <input type="checkbox" id="computerGoesFirstCheckbox" name="computerGoesFirstCheckbox" style="float:left;">
-    <label for="computerGoesFirstCheckbox" style="float:left;margin-left:2px">O computador joga primeiro.</label>
-    <button onclick="resetGame()" style="float:right;">Recomeçar jogo.</button>
+    <label for="computerGoesFirstCheckbox" style="float:left;margin-left:5px">O computador joga primeiro.</label>
+    <button class="button" onclick="resetGame()" style="float:right;">Recomeçar jogo.</button>
     <br />
     <br />
     <p>Lê <a href="https://mathspp.com/blog/problems/knights-tour" target="_blank">este artigo</a> no meu blogue.</p>
@@ -27,6 +27,6 @@ title: "Passeio do Cavalo"
 <script src="knights-tour/game.js" type="text/javascript"></script>
 
 <style>
-    #gameContainer * { padding: 0; margin: 0; text-align: center }
+    #gameContainer * { text-align: center }
     canvas { background: #eee; display: block; margin: 0 auto; }
 </style>

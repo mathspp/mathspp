@@ -44,7 +44,8 @@ details,      /* `details` for the little dropdown with the tags in the blog. */
 i,            /* `i` for the FontAwesome icons. */
 time,         /* For the times at which blog posts were written. */
 p,
-li {
+li,
+label {
     font-family: "Miriam Libre", sans-serif;
     color: #989fb0;
 }
