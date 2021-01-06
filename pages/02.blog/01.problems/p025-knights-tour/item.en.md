@@ -38,6 +38,8 @@ Can any of them guarantee a win? Who? How?
 
 !!! Give it some thought...
 
+If you want, you can try playing the game against the computer [here](https://mathspp.com/games/knights-tour).
+
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 This problem was posed to me by a university colleague that plays a lot of chess!

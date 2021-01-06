@@ -62,7 +62,7 @@ cavalo para um par de posições que ainda não foi visitado, e sempre que o Bru
 ele garante que o par de posições é completamente visitado.
 
 E é assim que a Alice perde sempre para a estratégia brilhante do Bruno.
-Em breve poderás testar esta estratégia contra o computador, jogando o jogo [aqui][knights-tour-demo].
+Se quiseres, podes testar esta estratégia jogando contra o computador [aqui][game].
 
 Se tens alguma questão sobre a minha solução, se encontraste algum erro (woops!) ou se gostavas de partilhar a *tua* solução, deixa um comentário em baixo.
 
@@ -70,5 +70,5 @@ Já agora, [não te esqueças de subscrever a newsletter][subscribe] para recebe
 um problema diretamente no teu email de quinze em quinze dias!
 
 [subscribe]: https://mathspp.com/subscribe
-[knights-tour-demo]: /demos/knights-tour
+[game]: /games/knights-tour
 [prob]: ../../problems/{{ page.slug }}

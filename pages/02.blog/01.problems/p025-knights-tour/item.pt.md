@@ -38,6 +38,8 @@ Será que algum dos dois consegue garantir uma vitória? Quem? Como?
 
 !!! Pensa um pouco...
 
+Se quiseres, [aqui](https://mathspp.com/pt/games/knights-tour) podes experimentar jogar este jogo contra o computador.
+
 Se precisares de clarificar alguma coisa, não hesites em perguntar na secção de comentários em baixo.
 
 Este problema foi-me colocado por um colega do curso que gosta bastante de jogar xadrez.

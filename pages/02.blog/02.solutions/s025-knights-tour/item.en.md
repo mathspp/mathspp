@@ -60,8 +60,7 @@ a different rectangle than the one it currently is, to a pair of positions that
 the knight hasn't visited yet!
 
 This is it, this is how you can beat Alice if you are player 2.
-Soon you will be able to test out this strategy by playing against the computer
-[here][knights-tour-demo].
+You can test out this strategy by playing against the computer [here][game].
 
 If you have any questions about my solution, found an error (woops!) or want to share
 *your* solution, please **leave a comment** below!
@@ -71,5 +70,5 @@ Also, [don't forget to subscribe to the newsletter][subscribe] to get bi-weekly
 problems sent straight to your inbox!
 
 [subscribe]: https://mathspp.com/subscribe
-[knights-tour-demo]: /demos/knights-tour
+[game]: /games/knights-tour
 [prob]: ../../problems/{{ page.slug }}
