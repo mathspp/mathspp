@@ -12,7 +12,7 @@ This post contains my proposed solution to [Problem #026 - counting squares][pro
 
 Let's count the squares in this 7 by 10 grid:
 
-![A 7 by 10 colourful grid with squares.](_thumbnail.png)
+![A 7 by 10 colourful grid with squares.](thumbnail.png)
 
 This is a type of problem that shows up often in social platforms.
 Scrolling through the comment section of those posts usually shows
@@ -95,7 +95,7 @@ $$
 
 Therefore, there are $224$ squares in the $7 \times 10$ grid I showed, and here are all of them highlighted:
 
-![GIF with the 224 squares highlighted.](thumbnail.gif)
+![GIF with the 224 squares highlighted.](_thumbnail.gif)
 
 The process we used to compute the number of squares in the grid could also be used to
 compute the total number of rectangles in the grid.

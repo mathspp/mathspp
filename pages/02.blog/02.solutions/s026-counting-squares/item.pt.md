@@ -13,7 +13,7 @@ Por favor não leias esta solução se ainda não tentaste resolver [o problema]
 
 Vamos contar o número de quadrados nesta grelha 7 por 10:
 
-![Uma grelha colorida e quadrada com 7 linhas e 10 colunas.](_thumbnail.png)
+![Uma grelha colorida e quadrada com 7 linhas e 10 colunas.](thumbnail.png)
 
 Este é um tipo de problema que me aparece frequentemente nas redes sociais.
 Quando espreito a secção dos comentários é raro encontrar duas pessoas que
@@ -94,7 +94,7 @@ $$
 Concluímos então que há $224$ quadrados numa grelha $7\times 10$, e aqui estão
 todos eles:
 
-![GIF com os 224 quadrados desenhados.](thumbnail.gif)
+![GIF com os 224 quadrados desenhados.](_thumbnail.gif)
 
 O processo que usámos para contar o número de quadrados na grelha também pode ser
 usado para contar os retângulos que cabem na grelha.
