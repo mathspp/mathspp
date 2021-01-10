@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "Neste problema vamos calcular quantos cocos é que um grupo de marinheiros conseguiu reunir, ao naufragarem numa ilha deserta."
-title: "Problema #027 - pilha de cocos"
+title: "Problema #027 - pilha de cocos 🥥"
 ---
 
 Cinco marinheiros e o macaco de estimação naufragam numa ilha deserta, e decidem

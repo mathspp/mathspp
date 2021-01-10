@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "In this problem, we calculate how many coconuts a group of sailors found in a desert island."
-title: 'Problem #027 - pile of coconuts'
+title: 'Problem #027 - pile of coconuts 🥥'
 ---
 
 Five sailors and their monkey were washed ashore on a desert island.
