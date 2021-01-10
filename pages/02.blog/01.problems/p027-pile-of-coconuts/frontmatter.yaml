@@ -1,7 +1,7 @@
 date: 10-01-2021
 metadata:
     author: Rodrigo Girão Serrão
-    og:image: "/pile-of-coconuts/thumbnail.jpg"
+    og:image: "https://mathspp.com/blog/problems/pile-of-coconuts/thumbnail.jpg"
 process:
     twig: true
 slug: "pile-of-coconuts"
