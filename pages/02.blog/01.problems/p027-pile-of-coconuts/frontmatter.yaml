@@ -1,0 +1,13 @@
+date: 10-01-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: "pile-of-coconuts/thumbnail.jpg"
+process:
+    twig: true
+slug: "pile-of-coconuts"
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - "mathematics"
+      - "modular arithmetics"
+twig_first: true
