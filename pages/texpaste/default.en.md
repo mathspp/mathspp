@@ -95,7 +95,7 @@ metadata:
       if (hash) {
         let parts = hash.split("#");
         tex_area.value = parts[0]? tex_dec(parts[0]) : "";
-        editor_mode(tex_area.value? 2 : 0);g
+        editor_mode(tex_area.value? 2 : 0);
       } else editor_mode(0);
     }
     tex_load_page();
