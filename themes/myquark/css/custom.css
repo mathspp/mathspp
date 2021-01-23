@@ -50,6 +50,11 @@ label {
     color: #989fb0;
 }
 
+/* Justify the text of blog posts. */
+.e-content {
+    text-align: justify;
+}
+
 /* Colour of the navigation menu item's text. Use !important because so does the default theme. */
 nav a {
     color: #a2a9b6 !important;
