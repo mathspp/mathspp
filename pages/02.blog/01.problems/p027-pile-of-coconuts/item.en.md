@@ -48,10 +48,8 @@ If you need any clarification whatsoever, feel free to ask in the comment sectio
 
 ### Solution
 
-The solution to this problem will be posted [here][sol] by the 23rd of January.
+You can read the solution [here][sol] to compare with your own solution.
 You can also use that link to post your own solution in the comments! Please **do not** post spoilers in the comments here.
-<!--You can read the solution [here][sol] to compare with your own solution.
-You can also use that link to post your own solution in the comments! Please **do not** post spoilers in the comments here.-->
 
 ---
 
