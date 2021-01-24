@@ -18,7 +18,8 @@ given the opportunity to escape.
 You are taken to a room that has three opaque boxes.
 The key to your cell will be put inside one of the boxes, and then a (regular)
 coin is placed on top of each box.
-You may flip a single coin, and then your friend will enter the room.
+You may pick a single coin and reverse its face up,
+and then your friend will enter the room.
 
 When your friend enters the room you are not allowed to talk, and your friend
 must open a box.
