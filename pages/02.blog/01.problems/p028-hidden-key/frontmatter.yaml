@@ -1,0 +1,14 @@
+date: 24-01-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: https://mathspp.com/blog/problems/hidden-key/thumbnail.jpg
+process:
+    twig: true
+slug: hidden-key
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - binary
+      - combinatorics
+      - mathematics
+twig_first: true
