@@ -1,7 +1,7 @@
 date: 26-01-2021
 metadata:
     author: Rodrigo Girão Serrão
-    og:image: "https://mathspp.com/blog/pydonts/pydont-abuse-the-walrus-operator/walrus_operator.png"
+    og:image: "https://mathspp.com/blog/pydonts/pydont-abuse-the-walrus-operator/_walrus_operator.png"
 slug: "pydont-abuse-the-walrus-operator"
 taxonomy:
     category: [blogpost, pydont]
