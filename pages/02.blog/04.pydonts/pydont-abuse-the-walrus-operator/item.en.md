@@ -49,7 +49,7 @@ if it saves you a couple of lines of code.
 You don't want to [disrespect the Zen of Python][pydont-zen], and the Zen of Python
 recommends writing readable code.
 
-The snippet of code above features what is, in my opinion, a fairly unreadable
+The snippet of code below features what is, in my opinion, a fairly unreadable
 usage of an assignment expression:
 
 ```py

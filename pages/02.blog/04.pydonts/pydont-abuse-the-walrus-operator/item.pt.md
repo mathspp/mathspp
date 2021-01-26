@@ -52,7 +52,7 @@ que a sua utilização permita poupar linhas de código.
 Não queres [desrespeitar o Zen do Python][pydont-zen], e o Zen do Python recomenda que
 escrevas código legível.
 
-O pedaço de código da imagem inicial é, na minha opinião, uma má utilização de uma
+O pedaço de código que se segue é, na minha opinião, uma má utilização de uma
 expressão com atribuição:
 
 ```py
