@@ -11,7 +11,7 @@ valores intermédios.
 
 ===
 
-![Código Python com uma má utilização do operador morsa.](thumbnail.png)
+![Código Python com uma má utilização do operador morsa.](_thumbnail.png)
 
 (Se és novo aqui e não sabes o que é uma Pydon't, então talvez queiras começar por
 ler a [Proclamação das Pydon'ts][manifesto].))
