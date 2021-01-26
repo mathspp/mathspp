@@ -20,7 +20,7 @@ features:
     url: '#o-que-se-segue'
 ---
 
-# Sobre o jogo
+# Syncro
 
 “Syncro é um quebra-cabeças imersivo e relaxante.
 Este jogo desafia o nosso raciocínio lógico através da matemática, apresentando um conceito da Teoria de Autómatos de forma visual.”

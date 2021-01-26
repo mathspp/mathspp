@@ -8,7 +8,7 @@ features:
     text: Soothing atmosphere
 ---
 
-# About
+# Syncro
 
 “Syncro is an immersive, soothing and brain-teasing experience.
 This game challenges logical reasoning by the use of mathematics, conveying a graphical representation of a principle in the Automata Theory.”
