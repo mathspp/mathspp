@@ -3,5 +3,6 @@ hof:
   - "Inês Guimarães"
   - "RawEgg"
 process:
+  markdown: true
   twig: true
 twig_first: true
