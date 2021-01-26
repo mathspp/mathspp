@@ -1,7 +1,3 @@
----
-menu: Aprende APL com redes neuronais
----
-
 Neste workshop vais aprender Dyalog APL, uma linguagem de programação que é completamente diferente de tudo o que já viste, tendo em conta que
 
  - APL executa o código da direita para a esquerda;

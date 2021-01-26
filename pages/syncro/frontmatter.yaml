@@ -8,7 +8,6 @@ content:
             - _hero
             - _highlights
             - _features-learn-apl-with-neural-nets
-            - _learn-apl-with-neural-nets
 metadata:
     author: Rodrigo Girão Serrão
     og:image: https://mathspp.com/syncro/_hero/header.jpg
