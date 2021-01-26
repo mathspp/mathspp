@@ -1,23 +1,11 @@
 ---
 features:
-  - icon: fab fa-dyalog
-    text: Learn APL with neural nets
-    url: '#learn-apl-with-neural-nets'
-  - icon: fab fa-python
-    text: Intro to Python with genetic algorithms
-    url: '#intro-python-genetic-algorithms'
-  - icon: fas fa-superscript
-    text: Intro to LaTeX
-    url: '#intro-latex'
-  - icon: fas fa-puzzle-piece
-    text: Recreational maths
-    url: '#recreational-maths'
-  - icon: fas fa-lock
-    text: Hands-on cryptography
-    url: '#hands-on-cryptography'
-  - icon: fas fa-question
-    text: Interested in a different workshop..?
-    url: '#what-is-next'
+  - icon: fas fa-brain
+    text: Brain teaser powered by maths
+  - icon: fas fa-user-astronaut
+    text: Immersive experience
+  - icon: fas fa-music
+    text: Soothing atmosphere
 ---
 
 # About
