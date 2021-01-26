@@ -1,0 +1,10 @@
+date: 19-01-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: "https://mathspp.com/blog/pydonts/pydont-abuse-the-walrus-operator/thumbnail.png"
+slug: "pydont-abuse-the-walrus-operator"
+taxonomy:
+    category: [blogpost, pydont]
+    tag:
+      - "programming"
+      - "python"
