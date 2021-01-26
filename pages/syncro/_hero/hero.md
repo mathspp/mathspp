@@ -1,5 +1,5 @@
 ---
 title: Syncro
-hero_classes: parallax
+hero_classes: parallax hero-large
 hero_image: header.jpg
 ---

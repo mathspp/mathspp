@@ -7,7 +7,7 @@ content:
         custom:
             - _hero
             - _highlights
-            - _features-learn-apl-with-neural-nets
+            - _hall-of-fame
 metadata:
     author: Rodrigo Girão Serrão
     og:image: https://mathspp.com/syncro/_hero/header.jpg
