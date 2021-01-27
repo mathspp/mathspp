@@ -28,7 +28,7 @@ Este jogo desafia o nosso raciocínio lógico através da matemática, apresenta
 
 
 <p>O jogo pode ser jogado <a class="external-link no-image" href="https://rawegg.itch.io/syncro">online</a> e também existe uma
-<a class="external-link no-image" href="https://play.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.RawEgg.Syncro">aplicação Android</a>.
+<a class="external-link no-image" href="https://play.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.RawEgg.Syncro">aplicação Android</a>.</p>
 
 
 
