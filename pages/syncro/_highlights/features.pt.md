@@ -29,6 +29,6 @@ O jogo pode ser jogado [online][syncro-online] e também existe uma [aplicação
 O jogo foi desenvolvido pela minha amiga [Mathgurl][mathgurl] e os [RawEgg][rawegg].
 
 [syncro-online]: https://rawegg.itch.io/syncro
-[syncro-android]: https://play.google.com/store/apps/details?id=com.RawEgg.Syncro
+[syncro-android]: "https://play.google.com/store/apps/details?id=com.RawEgg.Syncro"
 [mathgurl]: https://www.youtube.com/channel/UC5RV_s1Jh-jQI4HfexEIb2Q
 [rawegg]: https://rawegg.itch.io/
