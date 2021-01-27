@@ -13,7 +13,7 @@ features:
 “Syncro is an immersive, soothing and brain-teasing experience.
 This game challenges logical reasoning by the use of mathematics, conveying a graphical representation of a principle in the Automata Theory.”
 
-This game can be played [online][syncro-online] and is also available as an [Android app](https://play.google.com/store/apps/details?id=com.RawEgg.Syncro).
+This game can be played [online][syncro-online] and is also available as an [Android app](https://play.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.RawEgg.Syncro).
 The game was developed by my friend [Mathgurl][mathgurl] and [RawEgg][rawegg].
 
 [syncro-online]: https://rawegg.itch.io/syncro
