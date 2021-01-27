@@ -14,7 +14,7 @@ features:
 This game challenges logical reasoning by the use of mathematics, conveying a graphical representation of a principle in the Automata Theory.”
 
 <p>This game can be played <a class="external-link no-image" href="https://rawegg.itch.io/syncro">online</a> and there is also an
-<a class="external-link no-image" href="https://play.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.RawEgg.Syncro">Android app</a>.</p>
+<a class="external-link no-image" href="https://play.google.com/store/apps/details?id=com.RawEgg.Syncro">Android app</a>.</p>
 
 The game was developed by my friend [Mathgurl][mathgurl] and [RawEgg][rawegg].
 
