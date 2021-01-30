@@ -1,5 +1,8 @@
 hof:
-  - "Rodrigo Girão Serrão <i class='fas fa-star'></i>"
+  - "Rodrigo Girão Serrão, Lisboa (Portugal) <i class='fas fa-star'></i>"
+  - "Inês Guimarães, Guimarães (Portugal) <i class='fas fa-star'></i>"
+  - "Beatriz Abreu, Guimarães (Portugal)"
+  - "José Ribeiro, Guimarães (Portugal)"
 process:
   twig: true
 twig_first: true
