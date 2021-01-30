@@ -50,8 +50,8 @@ label {
     color: #989fb0;
 }
 
-/* Justify the text of paragraphs */
-p {
+/* Justify the text of paragraphs inside the body */
+body > p {
     text-align: justify;
 }
 
