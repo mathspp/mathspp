@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "In this blog post I go over all types of promotions and discounts that shops usually have and compute how much money each one actually saves you."
-title: "What all discounts actually mean"
+title: "What all promotions actually mean"
 ---
 
 Nowadays stores come up with all sorts of funky promotions to catch your eye...
