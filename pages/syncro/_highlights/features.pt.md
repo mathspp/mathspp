@@ -1,23 +1,11 @@
 ---
 features:
-  - icon: fab fa-dyalog
-    text: Aprende APL com redes neuronais
-    url: '#aprende-apl-com-redes-neuronais'
-  - icon: fab fa-python
-    text: Intro ao Python com algoritmos genéticos
-    url: '#intro-python-algoritmos-geneticos'
-  - icon: fas fa-superscript
-    text: Intro ao LaTeX
-    url: '#intro-latex'
-  - icon: fas fa-puzzle-piece
-    text: Matemática recreativa
-    url: '#matematica-recreativa'
-  - icon: fas fa-lock
-    text: Criptografia prática
-    url: '#criptografia-pratica'
-  - icon: fas fa-question
-    text: Queres um workshop diferente..?
-    url: '#o-que-se-segue'
+  - icon: fas fa-brain
+    text: Quebra-cabeças baseado na matemática
+  - icon: fas fa-user-astronaut
+    text: Experiência imersiva
+  - icon: fas fa-music
+    text: Atmosfera relaxante
 ---
 
 # Syncro
