@@ -50,8 +50,8 @@ label {
     color: #989fb0;
 }
 
-/* Justify the text of blog posts. */
-.e-content {
+/* Justify the text of paragraphs */
+p {
     text-align: justify;
 }
 
