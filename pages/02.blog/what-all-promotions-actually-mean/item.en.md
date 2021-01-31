@@ -49,7 +49,7 @@ When a tag/sign reads “X% off”, it means that for every $100$€ you are goi
 For example:
 
  - A “50% off” tag means that, for every $100$€ you were about to spend, you get to save $50$.
- - A “70% off” tag means that, for every $100$€ you were about to spend, you get to save $50$.
+ - A “70% off” tag means that, for every $100$€ you were about to spend, you get to save $70$.
 
 
 # How To Calculate How Much I Save With A Promotion
