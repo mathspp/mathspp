@@ -5,8 +5,8 @@
     <h3 style="padding:5px">Minimalistic Meme Game</h3>
     <p>
     The objective of this game is to increase your net worth.<br />
-    You can increase your worth by 💎🙌'ing (holding) GME stocks throughout the days.<br />
-    If you MUST have cash, you can go 🧻🙌 (sell) your stocks for a day.<br />
+    You can increase your worth by 💎🙌'ing (holding) GME shares throughout the days.<br />
+    If you MUST have cash, you can go 🧻🙌 (sell your shares) like a monkey.<br />
     You can click the diamond to earn more shares without spending money.
     </p>
 
@@ -15,8 +15,15 @@
     <br />
     <div class="smallBanner">
         <p style="float:left;">GME value: <span id="gme_value"></span></p>
-        <button class="button" onclick="sell()" style="float:right;">🧻🙌 (sell)</button>
-        <button class="button" onclick="hold()" style="float:right;">💎🙌 (hold)</button>
+        <button title="Skip day after selling (shortcut: S)" class="button" onclick="sell()" style="float:right;">🧻🙌 (sell)</button>
+        <button title="Skip day while holding (shortcut: H)" class="button" onclick="hold()" style="float:right;">💎🙌 (hold)</button>
+    </div>
+
+    <div class="smallBanner" id="exceptional-event-div">
+        <br class="clear">
+        <!-- Use https://stackoverflow.com/a/11837673/2828287 to animate a new event showing up/disappearing. -->
+        <p style="text-align:left;float:left;" id="exceptional-event-text"></p>
+        <button class="button" onclick="exceptional_event_buy()" style="float:right;">Buy for <span id="exceptional-event-cost"></span>.</button>
     </div>
 
     <br class="clear">
@@ -54,5 +61,14 @@
     }
     .red {
         color: #e32619;
+    }
+    #exceptional-event-div {
+        -moz-transition: height .5s;
+        -ms-transition: height .5s;
+        -o-transition: height .5s;
+        -webkit-transition: height .5s;
+        transition: height .5s;
+        height: 0;
+        overflow: hidden;
     }
 </style>
