@@ -1,21 +1,19 @@
 <style>
-.social-image {
-    width: 60px;
+.social-icon-container {
+    font-size: 32px;
     display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
     text-align: center;
     position: relative;
-/*
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-*/
+}
+
+.social-icon {
+    color: white;
 }
 </style>
 
-<section id="footer" class="section bg-gray" style="padding:10px;">
+<section id="footer" class="section bg-gray" style="padding:11px;">
 
     {% include 'partials/random-sentences.html.twig' %}
 
@@ -53,29 +51,24 @@
     </div>
 
     <div>
-        <!-- github link -->
-        <div class="social-image">
-            <a target="_blank" href="https://github.com/RojerGS/mathspp" title="Star the blog content and contribute on GitHub!"><img src="{{ url('theme://images/GitHub-Mark-64px.png') }}" style="width:24px;height:24px;"></a>
+        <!-- Footer with Font Awesome icons. -->
+        <div class="social-icon-container">
+            <a target="_blank" href="https://github.com/RojerGS/mathspp" title="Star the blog content and contribute on GitHub!"><i class="social-icon fab fa-github"></i></a>
         </div>
-        
-        <!-- facebook link -->
-        <div class="social-image">
-            <a target="_blank" href="https://www.facebook.com/mathspp/" title="Like mathspp on Facebook!"><img src="{{ url('theme://images/facebook_logo.png') }}" style="width:24px;height:24px;"></a>
+        <div class="social-icon-container">
+            <a target="_blank" href="https://www.facebook.com/mathspp/" title="Like mathspp on Facebook!"><i class="social-icon fab fa-facebook"></i></a>
         </div>
-
-        <!-- twitter link -->
-        <div class="social-image">
-            <a target="_blank" href="https://twitter.com/mathsppblog/" title="Follow @mathsppblog on Twitter!"><img src="{{ url('theme://images/twitter_circle.png') }}" style="width:24px;height:24px;"></a>
+        <div class="social-icon-container">
+            <a target="_blank" href="https://twitter.com/mathsppblog/" title="Follow @mathsppblog on Twitter!"><i class="social-icon fab fa-twitter"></i></a>
         </div>
-        
-        <!-- instagram link -->
-        <div class="social-image">
-            <a target="_blank" href="https://www.instagram.com/mathsppblog/" title="Follow @mathsppblog on Instagram!"><img src="{{ url('theme://images/instagram_glyph.png') }}" style="width:24px;height:24px">
+        <div class="social-icon-container">
+            <a target="_blank" href="https://www.instagram.com/mathsppblog/" title="Follow @mathsppblog on Instagram!"><i class="social-icon fab fa-instagram"></i></a>
         </div>
-        
-        <!-- mailing list link -->
-        <div class="social-image">
-            <a target="_blank" href="https://mathspp.com/subscribe" title="Subscribe to the blog newsletter!"><img src="{{ url('theme://images/email.png') }}" style="width:24px;height:24px">
+        <div class="social-icon-container">
+            <a target="_blank" href="https://mathspp.com/subscribe" title="Subscribe to the newsletter!"><i class="social-icon fas fa-envelope-open-text"></i></a>
+        </div>
+        <div class="social-icon-container">
+            <a target="_blank" href="mailto:mathsppblog@gmail.com" title="Email me at mathsppblog(at)gmail(dot)com!"><i class="social-icon fas fa-at"></i></a>
         </div>
     </div>
 </section>
