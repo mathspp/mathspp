@@ -3,9 +3,11 @@ const RED = "#e32619";
 const GREEN = "#33d61a";
 
 document.getElementById("gameContainer").style.width = `${WIDTH}px`;
-// Get the reference to the textarea that registers the events.
+// Get a reference to the textarea that registers the events.
 var eventsTextarea = document.getElementById("eventsTextarea");
 eventsTextarea.style.width = `${WIDTH}px`;
+// Get a reference to the div that shows exceptional events.
+var exceptionalEventDiv = document.getElementById("exceptional-event-div");
 
 var shares = 0;
 var gme_value = 300;
@@ -136,6 +138,16 @@ var formatGMEChange = function() {
     return `${last_change < 0 ? "" : "+"}${(last_change/100).toFixed(2)}%`;
 }
 
+/* Hide the div that holds exceptional events. */
+var hideExceptionalEventDiv = function() {
+    exceptionalEventDiv.style.height = "0px";
+}
+
+/* Show the div that holds the exceptional events. */
+var showExceptionalEventDiv = function() {
+    exceptionalEventDiv.style.height = `${exceptionalEventDiv.scrollHeight}px`;
+}
+
 /* Update the UI with all the most recent numbers. */
 var updateUI = function() {
     document.getElementById("cash").innerHTML = `$${cash.toFixed(2)}`;
@@ -235,5 +247,11 @@ var hold = function() {
     }
     nextDay();
 }
+
+document.addEventListener("keydown", e => {
+    var code = e.code;
+    if (code == "KeyH") { hold(); e.preventDefault(); }
+    if (code == "KeyS") { sell(); e.preventDefault(); }
+});
 
 updateUI();
