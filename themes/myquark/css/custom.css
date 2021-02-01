@@ -191,3 +191,17 @@ a.headeroffset {
     top: -64px;
     visibility: hidden;
 }
+
+/* CSS to change the social icons in the footer. */
+.social-icon-container {
+    font-size: 28px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.social-icon {
+    color: white;
+}
