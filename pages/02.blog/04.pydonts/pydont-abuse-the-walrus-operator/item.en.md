@@ -242,9 +242,6 @@ fit for a particular task.
 ---
 
 If you liked this Pydon't be sure to leave a reaction below and share this with your friends and fellow Pythonistas.
-Do you have a nice example of some EAFP code that would be terrible with LBYL?
-Or maybe the other way around?
-Share with all of us by writing it in the comments below!
 
 Also, [don't forget to subscribe to the newsletter][subscribe] so you don't miss
 a single Pydon't!

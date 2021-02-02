@@ -251,9 +251,6 @@ a ponderar usar uma expressão com atribuição no código.
 
 Não te esqueças de deixar uma reação a este artigo se gostaste desta Pydon't e
 partilha-a com amigos e outros colegas que programem em Python.
-Tens algum exemplo de uma situação em que código EAFP fica melhor que LBYL?
-Ou um caso em que EAFP não era, de todo, a melhor solução?
-Partilha connosco nos comentários!
 
 Já agora, [subscreve a newsletter][subscribe] para teres a certeza que não te escapa
 nem uma única Pydon't!
