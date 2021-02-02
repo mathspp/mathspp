@@ -12,7 +12,7 @@ quando as tuas classes implementam os métodos `__str__` e `__repr__`.
 
 ===
 
-![Código Python que mostra um esqueleto de uma classe com as assinaturas dos métodos __str__ e __repr__.](_thumbnail.png)
+![Código Python que mostra um esqueleto de uma classe com as assinaturas dos métodos __str__ e __repr__.](thumbnail.png)
 
 (Se és novo aqui e não sabes o que é uma Pydon't, então talvez queiras começar por
 ler a [Proclamação das Pydon'ts][manifesto].))
