@@ -7,7 +7,7 @@ metadata:
 
 # Mathspp
 
-### Um cantinho da Internet dedicado à matemática e à programação.
+## A construir pontes entre a matemática e a programação
 
 ![](maze.png)
 

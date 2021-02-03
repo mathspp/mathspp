@@ -5,7 +5,7 @@ menu: Home
 
 # Mathspp
 
-### A corner of the internet dedicated to maths and programming.
+## Building Bridges Between Mathematics and Programming
 
 ![](maze.png)
 
