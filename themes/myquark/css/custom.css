@@ -50,8 +50,8 @@ label {
     color: #989fb0;
 }
 
-/* Justify the text of paragraphs inside the body */
-body p {
+/* Justify the text of paragraphs inside the body, exclude the ones in the footer section. */
+body p :not(#footer p) {
     text-align: justify;
 }
 
