@@ -45,7 +45,7 @@ Feel free to drop me a line with ideas, comments, feedback, praises and criticis
 
 ### Support the Project
 
-If you are reading this, thank you so much.
+If you are reading this, thank you *so much*.
 If you would like to support the mathspp project, one of the nicest things you could do
 is write me an email to let me know you have been enjoying my work.
 I am only human, and knowing that there are people that read (and enjoy) what I write
@@ -53,8 +53,9 @@ helps me stay motivated.
 You can also share this website with your friends, colleagues, communities you
 are a part of, so that it reaches more people who want to learn mathematics and programming.
 
-Finally, if you believe this is a very important project and/or if you would like to make
-a material contribution, you can consider [supporting me on Patreon][patreon].
+Finally, if you believe in the quality and importance of this project, and/or if you would like to make
+a material contribution to help support the costs of running this project,
+you can consider [supporting me on Patreon][patreon].
 
 
 ### The Technologies Used

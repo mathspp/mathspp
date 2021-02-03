@@ -5,47 +5,108 @@ menu: Sobre
 
 # Mathspp
 
-### Um cantinho da Internet dedicado à matemática e à programação.
+## A construir pontes entre a matemática e a programação
 
-<br />
+O blogue mathspp começou por ser o modo que arranjei de partilhar os meus pequenos
+projetos com terceiros.
+Não porque achasse que haveria imensa gente interessada, mas porque eu queria ter uma
+maneira de os partilhar com quem tivesse interesse.
+Pouco depois de começar, a minha paixão por matemática e por comunicação de ciência
+levou a melhor de mim e comecei a escrever mais do que apenas sobre os pequenos
+projetos de programação que às vezes faço.
+
+Hoje em dia, tanto o site como o blogue servem para eu veicular a minha paixão por
+matemática e por programação, bem como para eu tentar exprimir a minha crença de que
+a matemática e a programação se complementam muito bem.
+
+!!! Sabias que “mathspp” é um jogo de palavras sobre os dois tópicos mais importantes
+!!! para o site?
+!!! “pp” é uma referência a C++, aludindo à programação, e o “pp” à frente de “maths”
+!!! (matemática) também pode ser interpretado como a minha tentativa de tornar a
+!!! matemática mais interessante complementando-a com programação.
 
 
-### A missão
+### O autor
 
-Eu comecei o blogue mathspp como uma espécie de portefólio dos meus pequenos projetos de programação, sendo que o objetivo era ter uma maneira estruturada de os partilhar com quem eu quisesse. Muito pouco tempo depois de começar o blogue, o meu interesse por matemática e por comunicação de ciência tomou o controlo e eu comecei a escrever sobre muito mais coisas do que só os projetos de programação que faço...
+![Uma fotografia da minha cara.](rgs.jpg?resize=150,200&classes=float-right)
 
-Agora, este site e o blogue são sobre mim a tentar partilhar a minha paixão por matemática e por programação, e são sobre mim a tentar mostrar que estas duas *disciplinas*:
+O meu nome é [Rodrigo Girão Serrão][linkedin], sou de Portugal e sou um matemágico e um
+programador.
+Estudei matemática na universidade e sempre que possível, tentei manter-me junto da
+programação: foquei os meus estudos em matemática aplicada, métodos numéricos e áreas
+similares.
 
- 1. são acessíveis às pessoas normais...
- 2. se complementam uma à outra...
- 3. e podem ser bastante engraçadas!
+Gosto de gastar o meu tempo livre com as pessoas de quem gosto, gosto de ensinar e
+partilhar conhecimento, ler livros de fantasia e livros técnicos, gosto de programar
+e também de ver filmes parvos de comédia.
 
-### O nome
 
-*mathspp* representa os dois assuntos mais tratados neste site. Por um lado, *Maths* refere-se à matemática; por outro lado, *++* é uma referência à programação. O domínio é `mathspp.com` porque o `p` vem de *plus* (*mais* em inglês); isto também é uma referência ao que acontece no mundo da programação em `C++`, já que os ficheiros de código de `C++` tem a extensão `.cpp`.
+### Contactos
 
-### As pessoas
-  
-Todo o conteúdo no site mathspp é produzido por mim, [Rodrigo Girão Serrão](https://linkedin.com/in/rodrigo-girão-serrão), a não ser que esteja explicitamente indicado o contrário. Tudo o que tem a ver com o servidor e etc. é tratado pelo meu caro amigo [Pineman], que é incrivelmente útil, generoso e paciente comigo (Obrigado!).
+Podes enviar-me um email se carregares na @ que está no fundo da página, que vai
+abrir uma janela para escreveres um email para o endereço mathsppblog (at) gmail (dot)
+com.
+Estás à vontade para me enviar as tuas ideias, comentários, sugestões, elogios e
+críticas.
 
-### As tecnologias
 
-O site assenta na plataforma [grav](https://getgrav.org) e o conteúdo é quase todo escrito em [Markdown](https://learn.getgrav.org/16/content/markdown), a menos de uns pedacitos aqui e ali que requerem uma combinação de HTML/CSS/JavaScript.
- 
+### Apoiar o projeto
+
+Se estás a ler isto, *muitíssimo* obrigado.
+Se gostavas de apoiar o projeto mathspp, uma das coisas que eu mais gostaria que
+fizesses era enviar-me um email a dizer que tens apreciado o meu trabalho.
+Saber que existem seres humanos do outro lado, que estão a ler (e a gostar de) o que
+eu escrevo, ajuda-me a manter-me motivado.
+Também podes partilhar este site com os teus amigos, colegas e comunidades de que fazes
+parte, para que mais pessoas tenham acesso a estes conteúdos sobre matemática e
+programação.
+
+Por fim, se acreditas na importância e na qualidade deste projeto, e/ou se gostavas
+de fazer uma contribuição material para ajudar a comportar os custos do projeto,
+podes considerar [subscrever o meu Patreon][patreon].
+
+
+### Tecnologias usadas
+
+O site está montado com o [grav] e o conteúdo é redigido principalmente com a sintaxe
+de Markdown.
+Também uso um pouco de HTML/CSS/JavaScript aqui e ali, para personalizar tudo a meu
+gosto.
+
+
 ### Tipografia
 
-Cabeçalhos: [Chewy](https://fonts.google.com/specimen/Chewy)
+Encontrei os tipos de letra no [Google Fonts][google-fonts]; uso o tipo de letra
+[Chewy] para os cabeçalhos e uso o tipo de letra [Miriam Libre][miriam-libre] para
+o resto do texto.
 
-Parágrafos: [Miriam Libre](https://fonts.google.com/specimen/Miriam+Libre)
 
-### Imagens
+### Imagens e ícones
 
-Imagens retiradas de [freeimages.com](https://freeimages.com) e [unsplash.com](https://unsplash.com).
+Retiro muitas imagens grátis dos sites [Unsplash] e [Free Images][free-images].
+Podes encontrar o crédito da imagem original se pousares o rato em cima das imagens.
+Se isso não mostrar o crédito da imagem original, então é porque me enganei e pus
+o crédito no texto alternativo da imagem.
+Por favor, faz-me saber se for esse o caso para que eu possa corrigir isto.
 
-Pequenas edições de imagem que faça costumam ser feitas em [lunapic.com](https://lunapic.com) e para fazer GIFs a partir de imagens uso o [ezgif.com](https://ezgif.com).
+Em vários locais do site encontras uns ícones elegantes, que são da versão
+gratuita do [Font Awesome][font-awesome].
 
-Diagramas, gráficos, esquemas, bonecos e outras cenas gráficas que eu faça são costumam ser feitos em programas de edição *avançados* como o MS Paint ou MS Power Point.
+Por vezes faço edição de imagem muito básica na ferramenta [Lunapic]
+(online e no navegador) e uso o site [ezgif] para construir GIFs.
+Para edições ainda mais simples, uso ferramentas muito avançadas como o MS Paint.
+Também crio algum conteúdo visual no [Canva].
 
-### Ícones
 
-Os ícones utilizados na [página dos workshops](https://mathspp.com/workshops) são do site [Font Awesome](https://fontawesome.com/).
+[linkedin]: https://linkedin.com/in/rodrigo-girão-serrão
+[grav]: https://getgrav.org
+[google-fonts]: https://fonts.google.com/
+[chewy]: https://fonts.google.com/specimen/Chewy
+[miriam-libre]: https://fonts.google.com/specimen/Miriam+Libre
+[Unsplash]: https://unsplash.com
+[free-images]: https://freeimages.com
+[Lunapic]: https://lunapic.com
+[ezgif]: https://ezgif.com
+[Canva]: https://canva.com
+[font-awesome]: https://fontawesome.com
+[patreon]: https://patreon.com/mathspp
