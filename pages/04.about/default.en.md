@@ -40,7 +40,7 @@ read fantasy and technical books, write code and watch silly comedy movies.
 
 You can drop me a line by clicking the @ at the bottom of the page, which opens
 a window for you to send an email to mathsppblog (at) gmail (dot) com.
-Feel free to write me with ideas, comments, feedback, praises and criticism!
+Feel free to drop me a line with ideas, comments, feedback, praises and criticism!
 
 
 ### Support the Project
@@ -52,6 +52,7 @@ I am only human, and knowing that there are people that read (and enjoy) what I 
 helps me stay motivated.
 You can also share this website with your friends, colleagues, communities you
 are a part of, so that it reaches more people who want to learn mathematics and programming.
+
 Finally, if you believe this is a very important project and/or if you would like to make
 a material contribution, you can consider [supporting me on Patreon][patreon].
 
