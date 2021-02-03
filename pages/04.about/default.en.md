@@ -16,11 +16,10 @@ and I started writing about a lot of other things other than programming project
 Nowadays this site, and the blog, are all about me trying to share my passion for mathematics
 and programming, and also show that mathematics and programming complement each other nicely.
 
-!!! Did you know that “mathspp” is a word play on the two main subjects of interest:
-!!! mathematics and programming.
+!!! Did you know that “mathspp” is a word play on the two main subjects of interest of this site?
 !!! “pp” is a reference to C++, alluding to programming, and the “pp” appended to “maths”
 !!! can also be interpreted as my attempt to make mathematics more interesting by
-!!! complementing it with mathematics.
+!!! complementing it with programming.
 
 
 ### The Author
