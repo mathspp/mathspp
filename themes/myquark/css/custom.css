@@ -51,7 +51,7 @@ label {
 }
 
 /* Justify the text of paragraphs inside the body, exclude the ones in the footer section. */
-body p :not(#footer p) {
+body p:not(#footer p) {
     text-align: justify;
 }
 
