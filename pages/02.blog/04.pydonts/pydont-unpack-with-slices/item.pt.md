@@ -8,7 +8,7 @@ Como é que devemos "desempacotar" uma lista ou um tuplo, de modo a separar o pr
 elemento do resto?
 Não desempacotes com fatias, usa antes atribuições com um asterisco.
 
----
+===
 
 ![Um exemplo de código Python que usa uma atribuição com asterisco.](thumbnail.png)
 
