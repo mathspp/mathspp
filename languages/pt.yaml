@@ -11,6 +11,14 @@ RANDOM_SENTENCES:
  - "Abre <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://github.com/RojerGS/mathspp/blob/master/languages/pt.yaml'>este</a> link para contribuires com frases aleatórias!"
  - "Podes usar a ferramenta <a href='/pt/texpaste'>TeX Paste</a> para partilhares equações LaTeX/MathJax na internet."
  - "Se quiseres exercitar o teu cérebro então tenta resolver um dos <a href='/pt/blog/problems'>problemas</a> que tenho para ti."
+ # socials
+ - "Gostas do que vês? Mostra o teu amor através do <a href='https://patreon.com/mathspp' target='_blank'>Patreon</a>!"
+ - "Se gostas do meu trabalho, considera apoiares este projeto no <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://patreon.com/mathspp'>Patreon</a>."
+ - "Se gostas deste projeto, por favor faz-me saber! Carrega na @ em baixo para me enviares um email."
+ - "Podes <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://www.facebook.com/mathspp'>apoiar a página do mathspp no Facebook</a> para não perderes uma novidade!"
+ - "Se <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://twitter.com/@mathsppblog'>seguires @mathsppblog no Twitter</a> então nunca vais perder uma novidade!"
+ - "Sempre que faço algo novo, partilho-o com os subscritores leais da minha mailing list. Tu também podes <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://mathspp.com/subscribe'>subscrever</a>!"
+ - "<a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://www.instagram.com/mathsppblog/'>Segue @mathsppblog no Instagram</a> para te manteres a par das novidades!"
  # trivia
  - "A <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://pt.wikipedia.org/wiki/Medalha_Fields#:~:text=A Medalha Fields&text=têm sido muitas vezes descritos como o \"Prêmio Nobel dos matemáticos'>medalha Fields</a> é o que há de mais parecido com um prémio Nobel da matemática."
  - "O matemático <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://pt.wikipedia.org/wiki/%C3%89variste_Galois'>Évariste Galois</a> morreu com 20 anos mas não sem antes resolver um problema que já tinha 350 anos."
