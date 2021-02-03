@@ -51,8 +51,12 @@ label {
 }
 
 /* Justify the text of paragraphs inside the body */
-body > p {
+body p {
     text-align: justify;
+}
+
+.float-right {
+    margin-left: 20px;
 }
 
 /* Colour of the navigation menu item's text. Use !important because so does the default theme. */
