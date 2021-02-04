@@ -50,8 +50,9 @@ label {
     color: #989fb0;
 }
 
-/* Justify the text of paragraphs inside the body, exclude the ones in the footer section. */
-body p:not(#footer p) {
+/* Justify the text of paragraphs inside the body,
+    exclude the ones in the footer section and in hero secions. */
+body p:not(#footer p, .hero p) {
     text-align: justify;
 }
 

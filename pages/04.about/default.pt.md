@@ -32,7 +32,7 @@ a matemática e a programação se complementam muito bem.
 
 O meu nome é [Rodrigo Girão Serrão][linkedin], sou de Portugal e sou um matemágico e um
 programador.
-Estudei matemática na universidade e sempre que possível, tentei manter-me junto da
+Estudei matemática na universidade e, sempre que possível, tentei manter-me junto da
 programação: foquei os meus estudos em matemática aplicada, métodos numéricos e áreas
 similares.
 
