@@ -10,7 +10,7 @@ This post contains my proposed solution to [Problem #028 - hidden key][prob]. Pl
 
 ### Solution
 
-There are multiple solutions to this problem, but a simple and elegant one (that I know of) is as follows:
+There are multiple solutions to this problem, but the most simple and elegant one (that I know of) is as follows:
 flip a coin, so that the box with the key is under a coin whose face
 up is different from the other two coins.
 
