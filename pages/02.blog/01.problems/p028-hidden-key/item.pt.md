@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "Três caixas, três moedas e uma chave escondida - será que a consegues encontrar?"
-title: "Problema #028 - chave escondida"
+title: "Problema #028 - chave escondida 🗝️"
 ---
 
 Há uma chave dentro de uma de três caixas, e cada caixa tem uma moeda em cima.

@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "Quatro caixas, quatro moedas e uma chave escondida - será que a consegues encontrar?"
-title: "Problema #029 - chave escondida 2"
+title: "Problema #029 - chave escondida 2 🗝️🗝️"
 ---
 
 Este problema é muito parecido com o [Problema #028 - chave escondida][p28],
