@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "Este artigo contém a minha proposta de solução para o problema #028 deste blogue."
-title: "Solução #028 - chave escondida"
+title: "Solução #028 - chave escondida 🗝️"
 ---
 
 Este artigo contém a minha solução proposta para o [Problema #028 - chave escondida][prob]. Por favor não leias esta solução se ainda não tentaste resolver [o problema][prob] a sério.

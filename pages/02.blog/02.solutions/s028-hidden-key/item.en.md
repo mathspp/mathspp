@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "This blog post contains my proposed solution to problem #028 of this blog."
-title: "Solution #028 - hidden key"
+title: "Solution #028 - hidden key 🗝️"
 ---
 
 This post contains my proposed solution to [Problem #028 - hidden key][prob]. Please do not read this solution before making a serious attempt [at the problem][prob].

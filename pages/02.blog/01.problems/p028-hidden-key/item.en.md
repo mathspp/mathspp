@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "Three boxes, three coins and a hidden key - can you find it?"
-title: "Problem #028 - hidden key"
+title: "Problem #028 - hidden key 🗝️"
 ---
 
 There is a key hidden in one of three boxes and each box has a coin on top of it.

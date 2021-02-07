@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "Four boxes, four coins and a hidden key - can you find it?"
-title: "Problem #029 - hidden key 2"
+title: "Problem #029 - hidden key 2 🗝️🗝️"
 ---
 
 This problem is a step up from [Problem #028 - hidden key][p28].
