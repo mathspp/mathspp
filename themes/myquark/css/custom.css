@@ -51,8 +51,9 @@ label {
 }
 
 /* Justify the text of paragraphs inside the body,
-    exclude the ones in the footer section and in hero secions. */
-body p:not(#footer p, .hero p) {
+    exclude the ones in the footer section, in the hero sections
+    and the "feature" texts under icons in the workshops page. */
+body p:not(#footer p, .hero p, .feature-content p) {
     text-align: justify;
 }
 
