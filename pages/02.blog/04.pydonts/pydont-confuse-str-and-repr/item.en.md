@@ -93,7 +93,7 @@ providing an expression that could be used to rebuild the object.
 ! If you are not acquainted with Python's dunder methods, you may want to [subscribe]
 ! to the Pydon't newsletter, I will write more about them later.
 ! Until then, you may want to have a look at the Python 3 Docs and what they say
-! about the [data mode](https://docs.python.org/3/reference/datamodel.html#data-model).
+! about the [data model](https://docs.python.org/3/reference/datamodel.html#data-model).
 
 When implementing custom classes, I suggest you start by implementing `__repr__`,
 as `__str__`
