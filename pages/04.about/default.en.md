@@ -55,7 +55,8 @@ are a part of, so that it reaches more people who want to learn mathematics and 
 
 Finally, if you believe in the quality and importance of this project, and/or if you would like to make
 a material contribution to help support the costs of running this project,
-you can consider [supporting me on Patreon][patreon].
+you can consider [buying me a slice of pizza][bmc], or maybe [supporting me on Patreon][patreon]
+for a recurring contribution that also awards you some benefits.
 
 
 ### The Technologies Used
@@ -97,3 +98,4 @@ I also create some graphical content with [Canva].
 [Canva]: https://canva.com
 [font-awesome]: https://fontawesome.com
 [patreon]: https://patreon.com/mathspp
+[bmc]: https://buymeacoffee.com/mathspp

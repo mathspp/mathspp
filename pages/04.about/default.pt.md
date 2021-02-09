@@ -63,7 +63,8 @@ programação.
 
 Por fim, se acreditas na importância e na qualidade deste projeto, e/ou se gostavas
 de fazer uma contribuição material para ajudar a comportar os custos do projeto,
-podes considerar [subscrever o meu Patreon][patreon].
+talvez me possas [pagar uma fatia de pizza][bmc], ou então [subscrever o meu Patreon][patreon]
+se quiseres fazer uma contribuição recorrente que também te trará benefícios adicionais.
 
 
 ### Tecnologias usadas
@@ -110,3 +111,4 @@ Também crio algum conteúdo visual no [Canva].
 [Canva]: https://canva.com
 [font-awesome]: https://fontawesome.com
 [patreon]: https://patreon.com/mathspp
+[bmc]: https://buymeacoffee.com/mathspp
