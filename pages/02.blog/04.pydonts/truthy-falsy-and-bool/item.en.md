@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "Learn what it means for Python objects to have 'Truthy' and 'Falsy' values."
-title: "Truthy, Falsy and bool - Pydon't"
+title: "Truthy, Falsy and bool | Pydon't"
 ---
 
 All Python objects can be used in expressions that should
@@ -19,7 +19,7 @@ objects if you define the `__bool__` dunder method.
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)
 
-# "Truthy" and "Falsy"
+# “Truthy” and “Falsy”
 
 Quoting the Python documentation,
 
@@ -72,7 +72,7 @@ which is what this blog post is all about:
 The reason this `if` statement is getting executed is because the list
 `[1, 2, 3]` is *Truthy*, that is, the list `[1, 2, 3]` can be interpreted
 as `True` in a Boolean context.
-How can you know this?
+How can you know if an object is “Truthy” or “Falsy”?
 The simplest way is to use the built-in `bool` function that converts any
 Python object to a Boolean:
 
@@ -85,7 +85,7 @@ The way this works is really simple!
 There are a couple of rules that specify how this works,
 but these simple rules can even be simplified further with a simpler heuristic:
 
- > “A value of a given type if Falsy when it is "empty" or "without any useful value".”
+ > “A value of a given type if Falsy when it is “empty” or “without any useful value”.”
 
 Examples of built-in types and their Falsy values include the empty list,
 empty set, empty tuple, empty dictionary, the number `0`, `None` and the empty string.
@@ -117,11 +117,8 @@ it defines a `__bool__` method that returns `False`.
 
 `__bool__` is a *dunder* method (dunder stands for double underscore)
 that you can use to tell your objects if they are Truthy or Falsy
-in Boolean contexts.
+in Boolean contexts, by implementing it in your own classes.
 (You have seen [other dunder methods][str-and-repr-pydont] already.)
-When defining your own classes, you can define the `__bool__` method
-so that your object knows when it should be Truthy and when it
-should be Falsy, otherwise it will default to always being Truthy.
 
 ! If you are not acquainted with Python's dunder methods, you may want to [subscribe]
 ! to the Pydon't newsletter, I will write more about them later.
@@ -158,7 +155,22 @@ be taken to be Falsy:
 In general, your use case may be such that your object sometimes
 is Truthy and sometimes is Falsy.
 
-# A Note About Containers With Falsy Objects
+Finally, it is very important to state the order in which the rules
+apply!
+
+! When given an arbitrary Python object that needs to be tested for
+a truth value, Python first tries to call `bool` on it, in an attempt
+to use its `__bool__` dunder method.
+! If the object does not implement a `__bool__` method, then Python
+tries to call `len` on it.
+! Finally, if that also fails, Python defaults to giving a Truthy
+value to the object.
+
+# Remarks
+
+Now a couple of remarks about the functioning of Truthy and Falsy values.
+
+## A Note About Containers With Falsy Objects
 
 We said that things like the empty list, zero,
 and the empty dictionary are Falsy.
@@ -179,7 +191,7 @@ True
 True
 ```
 
-# A Note About Checking For None
+## A Note About Checking For `None`
 
 As mentioned above, `None` is Falsy:
 
@@ -194,7 +206,7 @@ False
 This seems about right, as `None` is the go-to value to be returned
 by a function when the function does nothing.
 
-Imagine you have the following function to return the integer
+Imagine someone implemented the following function to return the integer
 square root of a number, returning `None` for negative
 inputs (because negative numbers do not have a square root
 in the usual sense):
@@ -207,10 +219,10 @@ def int_square_root(n):
     return math.floor(math.sqrt(n))
 ```
 
-Now you can use the Falsy value of `None` to check if something
-goes wrong when using the function.
-Imagine you want to see if there is a returned value,
-so you might be tempted to write something like this:
+When you use the function above you know it returns `None` if the
+computation fails, so now you might be tempted to use your newfound
+knowledge about the Falsy value of `None`, and you might write
+something like the following, to check if the computation succeeded:
 
 ```py
 n = int(input("Compute the integer square root of what? >> "))
@@ -257,13 +269,17 @@ This recommendation is to avoid problems like the one outlined above.
 
 # Examples in Code
 
+Now I will show you some examples of places where using the Truthy
+and Falsy values of Python objects allows you to write more Pythonic
+code.
+
 ## 2D Point
 
 Let us implement a simple class to represent points in a 2D plane,
 which could be an image, a plot or something else.
 Retrieving what we already had [in the article about `__str__`
 and `__repr__`][str-and-repr-pydont], we can add a `__bool__` method
-so that the origin (the point `(0, 0)`) is Falsy and all other
+so that the origin (the point `Point2D(0, 0)`) is Falsy and all other
 points are Truthy:
 
 ```py
@@ -302,7 +318,7 @@ different from `0`)!
 
 ## Handling Error Codes or Error Messages
 
-It is quite common for functions to return "error codes":
+It is quite common for functions to return “error codes”:
 integers that encode specific things that did not go quite right,
 or for such functions to return error messages as strings
 when things don't go right.
@@ -385,12 +401,13 @@ def print_file_sizes(dir):
 
 This is not necessarily the way to go about doing this, *but*
 notice the `while` statement, and then the `if: ... else: ...`
-block that either prints something, or extends the `paths_to_process` function.
+block that either prints something, or extends the `paths_to_process` list.
+
 
 # Conclusion
 
  - Python's Truthy and Falsy values allow you to rewrite common
-conditions in a way that is more readable.
+conditions in a way that is more readable and, therefore, Pythonic.
  - You can implement your own Truthy and Falsy values in custom
 classes by implementing the `__bool__` dunder method.
  - You should also be careful when checking if a given variable
@@ -417,7 +434,6 @@ Online references last consulted on the 9th of February of 2021.
 
 [subscribe]: https://mathspp.com/subscribe
 [pep8]: https://www.python.org/dev/peps/pep-0008/
-[josephus-problem]: https://en.wikipedia.org/wiki/Josephus_problem
 [manifesto]: /blog/pydonts/pydont-manifesto
 [str-and-repr-pydont]: /blog/pydonts/pydont-confuse-str-and-repr
 [walrus-pydont]: /blog/pydonts/pydont-abuse-the-walrus-operator
