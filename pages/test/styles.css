@@ -1,0 +1,29 @@
+@media screen and (max-width:840px) {
+    #scrollable-btn, #scrollable-btn * {
+        display: none;
+    }
+}
+
+@media screen and (min-width:840px) {
+    #scrollable-btn, #scrollable-btn * {
+        display: flex;
+    }
+}
+
+#scrollable-btn {
+    align-items: center;
+    justify-content: center;
+    background: #555555;
+    color: #000000;
+    position: fixed;
+    width: 64px;
+    height: 64px;
+    border-radius: 32px; 
+    left: 50px;
+    bottom: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all .2s ease;
+}
