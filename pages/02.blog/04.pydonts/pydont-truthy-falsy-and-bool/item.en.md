@@ -45,8 +45,8 @@ Hello, World!
 ```
 
 This piece of code should not surprise you, as it is very standard Python code:
-there's a couple of `if` statements that make use of explicit Boolean values.
-The next step is when you use an expression that *evaluates* to a Boolean value:
+there are a couple of `if` statements that make use of explicit Boolean values.
+The next step is using an expression that *evaluates* to a Boolean value:
 
 ```py
 >>> 5 > 3
@@ -57,7 +57,7 @@ True
 Hello, World!
 ```
 
-The *next* step is when you use an object that is **not** a Boolean value,
+The *next* step is using an object that is **not** a Boolean value,
 which is what this blog post is all about:
 
 ```py
@@ -69,7 +69,7 @@ which is what this blog post is all about:
 ```
 
 *This* is the part that could be surprising if you have never encountered it.
-The reason this `if` statement is getting is executed is because the list
+The reason this `if` statement is getting executed is because the list
 `[1, 2, 3]` is *Truthy*, that is, the list `[1, 2, 3]` can be interpreted
 as `True` in a Boolean context.
 How can you know this?
@@ -88,7 +88,7 @@ but these simple rules can even be simplified further with a simpler heuristic:
  > “A value of a given type if Falsy when it is "empty" or "without any useful value".”
 
 Examples of built-in types and their Falsy values include the empty list,
-empty set, empty tuple, empty dictionary, the number `0` and `0j`, `None` and the empty string.
+empty set, empty tuple, empty dictionary, the number `0`, `None` and the empty string.
 For example:
 
 ```py
@@ -101,7 +101,7 @@ False
 Of course, "without any useful value" definitely depends on what you intend
 to do with the value you have, so I should really specify the objective rules:
 
- - By default, a value has a Truthy value (that is, is interpreted as `True`).
+ - By default, a value is Truthy (that is, is interpreted as `True`).
  - An object has a Falsy value (that is, is interpreted as `False`)
 if calling `len` on it returns `0`.
 
@@ -163,7 +163,7 @@ is Truthy and sometimes is Falsy.
 We said that things like the empty list, zero,
 and the empty dictionary are Falsy.
 However, things like a list that only contains zeroes or a dictionary composed
-of zeroes and empty lists are not Falsy, because the objects themselves are no
+of zeroes and empty lists are not Falsy, because the containers themselves are no
 longer empty:
 
 ```py
@@ -204,8 +204,7 @@ import math
 def int_square_root(n):
     if n < 0:
         return None
-    else:
-        return math.floor(math.sqrt(n))
+    return math.floor(math.sqrt(n))
 ```
 
 Now you can use the Falsy value of `None` to check if something
@@ -231,7 +230,8 @@ Now, what happens if `n` is `0` or `0.5`?
 Negative numbers do not have an integer square root
 ```
 
-Which is clearly wrong, because `n = 0.5` is certainly positive:
+Which is clearly wrong, because `n = 0.5` is certainly positive.
+Let us inspect `int_sqrt`:
 
 ```py
 >>> int_sqrt
@@ -260,7 +260,7 @@ This recommendation is to avoid problems like the one outlined above.
 ## 2D Point
 
 Let us implement a simple class to represent points in a 2D plane,
-for example an image, a plot or something else.
+which could be an image, a plot or something else.
 Retrieving what we already had [in the article about `__str__`
 and `__repr__`][str-and-repr-pydont], we can add a `__bool__` method
 so that the origin (the point `(0, 0)`) is Falsy and all other
@@ -297,8 +297,8 @@ Notice how we defined the Truthy/Falsy value of the `Point2D`
 in terms of the Truthy/Falsy values of its components!
 We want the `Point2D` to be Falsy when `self.x` is `0` and
 `self.y` is also `0`, which means a `Point2D` is Truthy
-if any of `self.x` or `self.y` are Truthy, that is,
-different from `0`!
+if any of `self.x` or `self.y` are Truthy (that is,
+different from `0`)!
 
 ## Handling Error Codes or Error Messages
 
@@ -372,12 +372,13 @@ import pathlib
 
 def print_file_sizes(dir):
     """Print file sizes in a directory, recursing into subdirectories."""
+
     paths_to_process = [dir]
     while paths_to_process:
         path, *paths_to_process = paths_to_process
         path_obj = pathlib.Path(path)
         if path_obj.is_file():
-            print(path_obj.stat().st_size)
+            print(path, path_obj.stat().st_size)
         else:
             paths_to_process += path_obj.glob("*")
 ```
@@ -388,15 +389,13 @@ block that either prints something, or extends the `paths_to_process` function.
 
 # Conclusion
 
-Python's Truthy and Falsy values allow you to rewrite common
+ - Python's Truthy and Falsy values allow you to rewrite common
 conditions in a way that is more readable.
-You can implement your own Truthy and Falsy values in custom
+ - You can implement your own Truthy and Falsy values in custom
 classes by implementing the `__bool__` dunder method.
-You should also be careful when checking if a given variable
+ - You should also be careful when checking if a given variable
 is `None` or not, and avoid using the Falsy value of `None`
 in those particular cases.
-
---
 
 If you liked this Pydon't be sure to leave a reaction below and share this with your friends and fellow Pythonistas.
 
