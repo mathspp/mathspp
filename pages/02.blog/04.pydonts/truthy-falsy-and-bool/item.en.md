@@ -159,12 +159,12 @@ Finally, it is very important to state the order in which the rules
 apply!
 
 ! When given an arbitrary Python object that needs to be tested for
-a truth value, Python first tries to call `bool` on it, in an attempt
-to use its `__bool__` dunder method.
+! a truth value, Python first tries to call `bool` on it, in an attempt
+! to use its `__bool__` dunder method.
 ! If the object does not implement a `__bool__` method, then Python
-tries to call `len` on it.
+! tries to call `len` on it.
 ! Finally, if that also fails, Python defaults to giving a Truthy
-value to the object.
+! value to the object.
 
 # Remarks
 

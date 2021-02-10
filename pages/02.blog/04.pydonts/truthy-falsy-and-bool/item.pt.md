@@ -180,12 +180,12 @@ Finalmente, é muito importante saberes por que ordem é que Python
 aplica as suas regras para determinar se um objeto é Truthy ou Falsy!
 
 ! Dado um objeto arbitrário de Python que está a ser usado num
-contexto Booleano, Python primeiro tenta usar a função `bool` nesse
-objeto, numa tentativa de aceder ao seu método dunder `__bool__`.
+! contexto Booleano, Python primeiro tenta usar a função `bool` nesse
+! objeto, numa tentativa de aceder ao seu método dunder `__bool__`.
 ! Se `__bool__` não estiver implementado, então Python tenta usar
-a função `len` no objeto.
+! a função `len` no objeto.
 ! Se isso também falhar, então Python toma o valor como sendo Truthy
-por defeito.
+! por defeito.
 
 
 # Notas
