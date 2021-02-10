@@ -15,8 +15,6 @@
 {% endif %}
     <div class="e-content">
         {{ page.content|raw }}
-
-        <p>Did you like this article? Share it!</p>
     </div>
 
     {% if page.header.continue_link is same as(true) and config.plugins.comments.enabled %}
