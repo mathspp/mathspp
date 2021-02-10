@@ -18,7 +18,8 @@ se implementares o método dunder `__bool__`.
 ![Código Python contrastando alguns ifs.](thumbnail.png)
 
 (Se és novo aqui e não sabes o que é uma Pydon't, então talvez queiras começar por
-ler a [Proclamação das Pydon'ts][manifesto].))
+ler a [Proclamação das Pydon'ts][manifesto].)
+
 Infelizmente, ainda não traduzi este artigo :/
 Podes lê-lo em inglês [aqui](https://mathspp.com/blog/pydonts/truthy-falsy-and-bool).
 
