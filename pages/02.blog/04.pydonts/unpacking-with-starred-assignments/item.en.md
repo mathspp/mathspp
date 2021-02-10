@@ -1,10 +1,11 @@
 ---
 metadata:
     description: "When unpacking a list or tuple in Python, avoid using slices."
-title: "Pydon't unpack with slices"
+title: "Unpacking With Starred Assignments | Pydon't"
 ---
 
 How should you unpack a list or a tuple into the first element and then the rest?
+Or into the last element and everything else?
 Pydon't unpack with slices, prefer starred assignment instead.
 
 ===

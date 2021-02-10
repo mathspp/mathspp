@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "The walrus operator was introduced in Python 3.8 and in this post we cover its usages, as well as pitfalls to avoid."
-title: "Pydon't abuse the walrus operator."
+title: "Assignment Expressions and The Walrus Operator := | Pydon't"
 ---
 
 The walrus operator `:=` can be really helpful, but if you use it in convoluted
@@ -15,7 +15,7 @@ Use `:=` to flatten a sequence of nested `if`s or to reuse partial computations.
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)
 
-# Walrus Operator
+# Walrus Operator and Assignment Expressions
 
 The walrus operator is written as `:=` (a colon and an equality sign) and was first
 introduced in Python 3.8.

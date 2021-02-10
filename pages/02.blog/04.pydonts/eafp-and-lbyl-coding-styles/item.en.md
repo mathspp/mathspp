@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "There are many situations in which it is better to use a try statement to handle an error than using an if statement to prevent the error."
-title: "Pydon't ask for permission, apologise"
+title: "EAFP and LBYL Coding Styles | Pydon't"
 ---
 
 In Python, if you are doing something that may throw an error, there are many

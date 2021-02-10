@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "Ao contrário do que às vezes se pensa, há diferenças muito claras entre str e repr em Python!"
-title: "Pydon't confundas str com repr."
+title: "str e repr | Pydon't"
 ---
 
 Os métodos `str` e `repr` do Python podem ser parecidos, mas não são iguais.

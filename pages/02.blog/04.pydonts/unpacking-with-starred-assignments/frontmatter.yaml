@@ -1,0 +1,13 @@
+date: 12-01-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: "https://mathspp.com/blog/pydonts/unpacking-with-starred-assignments/thumbnail.png"
+routes:
+    aliases:
+      - "/blog/pydonts/pydont-unpack-with-indices"
+slug: "unpacking-with-starred-assignments"
+taxonomy:
+    category: [blogpost, pydont]
+    tag:
+      - "programming"
+      - "python"
