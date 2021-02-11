@@ -236,8 +236,8 @@ See you next time!
 <script src="https://gist.github.com/RojerGS/1a6543226fdd8d51dc4c669acabf76ad.js"></script>
 
 [24-game]: https://en.wikipedia.org/wiki/24_Game
-[P020]: ../make-24-with-3-3-8-8
-[P019]: ../fold-the-alphabet
-[apl]: ../lsbasi-apl-part1
+[P020]: /blog/problems/make-24-with-3-3-8-8
+[P019]: /blog/problems/fold-the-alphabet
+[apl]: /blog/lsbasi-apl-part1
 [PN]: https://en.wikipedia.org/wiki/Polish_notation
 [gh-gist]: https://gist.github.com/RojerGS/1a6543226fdd8d51dc4c669acabf76ad
