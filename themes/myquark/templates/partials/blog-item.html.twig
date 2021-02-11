@@ -31,3 +31,5 @@
         <a class="btn" href="{{ page.nextSibling.url }}">{{ 'THEME_QUARK.BLOG.ITEM.NEXT_POST'|t }} <i class="fa fa-angle-right"></i></a>
     {% endif %}
 </p>
+
+{% do assets.addJs('theme://js/share_scrollable_buttons.js', {group:'bottom'}) %}

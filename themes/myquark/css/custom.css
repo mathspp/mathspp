@@ -212,3 +212,38 @@ a.headeroffset {
 .social-icon {
     color: white;
 }
+
+/* CSS to style "share this blog post" buttons that scroll
+ * with the user.
+ * Created by mimicking the code of the "Buy me a coffee" widget. */
+/* If the screen is not wide enough, just hide the buttons. */
+@media screen and (max-width:920px) {
+    .custom-scrollable, .custom-scrollable > * {
+        display: none;
+    }
+}
+@media screen and (min-width:920px) {
+    .custom-scrollable, .custom-scrollable > * {
+        display: flex;
+    }
+}
+
+.custom-scrollable {
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.7rem;
+    border-radius: 2rem; 
+    /* Custom computation of distance to left margin of the screen
+     * to stay at a constant distance of the blog post content.
+     * For the 488 = 976/2, we found out that 976 is the maximum
+     * width that the blog content can take up (as per its CSS). */
+    left: calc(50vw - 488px - 5rem);
+    box-shadow: 0 4px 8px rgba(173, 179, 189, 0.4);
+    z-index: 9999;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all .2s ease;
+}
