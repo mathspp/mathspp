@@ -17,9 +17,8 @@ let btn_spacing = 0.5;
     let btn_div = document.createElement("div");
     btn_div.classList.add("custom-scrollable");
     btn_div.innerHTML = `<a href="${t[2]}" target="_blank" title="${t[3]}" style="text-decoration:none"><i class="${t[0]}" style="color:${t[1]}"></i></a>`;
-    // Set the top of the div.
+    // Incremental spacing from the absolute top of the window.
     btn_div.style.top = 6 + cntr*3 + (cntr-1)*btn_spacing + "rem";
     cntr++;
-
     base_div.appendChild(btn_div);
 })
