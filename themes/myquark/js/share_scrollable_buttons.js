@@ -5,7 +5,7 @@ let cntr = 0;
 let btn_spacing = 0.5;
 [
     // Used https://www.coderstool.com/share-social-link-generator to generate test links.
-    ["fas fa-envelope", "#EEEE", `mailto:%7Bmathsppblog@gmail.com%7D?subject=${title}&body=${href}`, "Email this"],
+    ["fas fa-envelope", "#EEEE", `mailto:someone@example.com?subject=${title}&body=${href}`, "Email this"],
     ["fab fa-twitter", "#1DA1F2", `https://twitter.com/intent/tweet?text=Check%20out%20this%20really%20cool%20blog%20post%20by%20%40mathsppblog%3A%20${href}`, "Tweet this"],
     ["fab fa-facebook-f", "#4267B2", `https://www.facebook.com/sharer/sharer.php?u=${href}`, "Share on Facebook"],
     // Set some transparency for the reddit orange so it isn't too bright.
