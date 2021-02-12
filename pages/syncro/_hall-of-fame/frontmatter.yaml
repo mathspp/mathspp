@@ -3,6 +3,21 @@ hof:
   - "Inês Guimarães, Guimarães (Portugal) <i class='fas fa-star'></i>"
   - "Beatriz Abreu, Guimarães (Portugal)"
   - "José Ribeiro, Guimarães (Portugal)"
+  - "Frederico Toulson, Lisboa (Portugal) <i class='fas fa-star'></i>"
+  - "Dylan Perdigão, Vendas Novas (Portugal)"
+  - "Cláudio Valdez, Sergipe (Brasil) <i class='fas fa-star'></i>"
+  - "Gabriela Mota, Tatuí (Brasil)"
+  - "Luís Velasco (Brasil)"
+  - "Carlos Ferreira, Lamego (Portugal)"
+  - "Lucas Maia (Brasil) <i class='fas fa-star'></i>"
+  - "Adrian Kaminski (Brasil)"
+  - "Luís Figueiredo"
+  - "Lucas Genova (Brasil) <i class='fas fa-star'></i>"
+  - "Marco Freitas, Amadora (Portugal) <i class='fas fa-star'></i>"
+  - "Alexandre Carvalho, Aveiro (Portugal) <i class='fas fa-star'></i>"
+  - "Miguel Camargo (Brasil)"
+  - "Marco Oliveira, Ourém (Portugal) <i class='fas fa-star'></i>"
+  - "Henrique Navas, Lisboa (Portugal) <i class='fas fa-star'></i>"
 process:
   twig: true
 twig_first: true
