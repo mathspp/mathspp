@@ -62,8 +62,11 @@ body p:not(#footer p, .hero p, .feature-content p, .text-center) {
     margin-left: 20px;
 }
 
-/* Colour of the navigation menu item's text. Use !important because so does the default theme. */
-nav a {
+/* Colour of the navigation menu item's text. Use !important because so does the default theme.
+ * Include a very specific CSS selector: when this is not included, this very same specific
+ * selector in the theme CSS overrides this and makes the text too dark, so we override it again,
+ * because we are more stubborn then the theme :P */
+nav a, .header-dark #header:not(.scrolled) .dropmenu ul ul a {
     color: #a2a9b6 !important;
 }
 
