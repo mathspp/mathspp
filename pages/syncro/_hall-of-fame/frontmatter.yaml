@@ -104,6 +104,21 @@ hof:
   - "Jônatas Alves Araújo, Goiânia (Brasil)" 
   - "Guilherme Daltro, Guanambi (Brasil)"
   - "Guilherme Lima, Paraná (Brasil) <i class='fas fa-star'></i>"
+  - "Sebastião Teixeira (Portugal) <i class='fas fa-star'></i>"
+  - "Pedro António Malta Ferreira, Chaves (Portugal) <i class='fas fa-star'></i>"
+  - "Jonathan Freitas, Rio de Janeiro (Brasil)"
+  - "João Paulo Rodrigues Rocha, Pernambuco (Brasil)"
+  - "Fábio Neto, Lisboa (Portugal) <i class='fas fa-star'></i>"
+  - "André Ferreira, Tomar (Portugal) <i class='fas fa-star'></i>"
+  - "Ericles da Silva Medrado, Petrolina (Brasil)"
+  - "Glauber Taiguara Caznoca de Oliveira, Mato Grosso (Brasil) <i class='fas fa-star'></i>"
+  - "Hudsson Davi Apolinário de Andrade, Minas Gerais (Brasil) <i class='fas fa-star'></i>"
+  - "Catarina Oliveira Cortez, Vila Nova de Gaia (Portugal)"
+  - "Pedro Coelho, Braga (Portugal) <i class='fas fa-star'></i>"
+  - "Caio Ávila Viana, João Monlevade (Brasil)"
+  - "Daniel Rodrigues de Souza, Espírito Santo (Brasil) <i class='fas fa-star'></i>" 
+  - "José Carlos Narciso, Leiria (Portugal)"
+  - "Marcelo Martim Marques (Brasil)"
 process:
   twig: true
 twig_first: true
