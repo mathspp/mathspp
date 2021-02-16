@@ -21,7 +21,7 @@ hof:
   - "Diogo Pereira, Famalicão (Portugal) <i class='fas fa-star'></i>"
   - "Gustavo Bezerra, São Paulo (Brasil)"
   - "Daniel Borges, Rio de Janeiro (Brasil)" 
-  - "Renato Diogenes <i class='fas fa-star'></i>"
+  - "Renato Diogenes, Ceará (Brasil) <i class='fas fa-star'></i>"
   - "Miguel Braga, Cascais (Portugal) <i class='fas fa-star'></i>"
   - "Martim Braga, Cascais (Portugal) <i class='fas fa-star'></i>"
   - "João Santos, Porto (Portugal)"
@@ -123,7 +123,7 @@ hof:
   - "Bianca Zaccariotto (Brasil) <i class='fas fa-star'></i>"
   - "Beatriz Lisboa, Famalicão (Portugal)"
   - "Wendrik de Oliveira Santana (Brasil) <i class='fas fa-star'></i>"
-  - "João Carlos Henrique Jorge, Camarate (Portugal)" 
+  - "João Carlos Henriques Jorge, Camarate (Portugal)" 
   - "José Vitor (Brasil) <i class='fas fa-star'></i>"
   - "Lucas Ferreira dos Santos (Brasil) <i class='fas fa-star'></i>"
   - "Lucas Renan Vieira, Conselheiro Lafaiete (Brasil) <i class='fas fa-star'></i>"
@@ -131,6 +131,11 @@ hof:
   - "Douglas Dickel (Brasil)"
   - "Patty Rocha, Rio de Janeiro (Brasil) <i class='fas fa-star'></i>"
   - "Ígor Vieira Silva, Fortaleza (Brasil) <i class='fas fa-star'></i>"
+  - "Nuno Moura Pinto, Porto (Portugal)"
+  - "Pedro Tozetti (Austrália) <i class='fas fa-star'></i>"
+  - "Gabriel Kuribara Lasso, São Paulo (Brasil) <i class='fas fa-star'></i>"
+  - "Leonardo Felix Pinheiro, Juiz de Fora (Brasil) <i class='fas fa-star'></i>"
+  - "Bryan Cruz (Brasil) <i class='fas fa-star'></i>"
 process:
   twig: true
 twig_first: true
