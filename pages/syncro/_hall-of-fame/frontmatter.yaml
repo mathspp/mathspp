@@ -119,6 +119,18 @@ hof:
   - "Daniel Rodrigues de Souza, Espírito Santo (Brasil) <i class='fas fa-star'></i>" 
   - "José Carlos Narciso, Leiria (Portugal)"
   - "Marcelo Martim Marques (Brasil)"
+  - "Nycholas Guedes Ruffini, São Paulo (Brasil) <i class='fas fa-star'></i>"
+  - "Bianca Zaccariotto (Brasil) <i class='fas fa-star'></i>"
+  - "Beatriz Lisboa, Famalicão (Portugal)"
+  - "Wendrik de Oliveira Santana (Brasil) <i class='fas fa-star'></i>"
+  - "João Carlos Henrique Jorge, Camarate (Portugal)" 
+  - "José Vitor (Brasil) <i class='fas fa-star'></i>"
+  - "Lucas Ferreira dos Santos (Brasil) <i class='fas fa-star'></i>"
+  - "Lucas Renan Vieira, Conselheiro Lafaiete (Brasil) <i class='fas fa-star'></i>"
+  - "Angela Francisca (Brasil)"
+  - "Douglas Dickel (Brasil)"
+  - "Patty Rocha, Rio de Janeiro (Brasil) <i class='fas fa-star'></i>"
+  - "Ígor Vieira Silva, Fortaleza (Brasil) <i class='fas fa-star'></i>"
 process:
   twig: true
 twig_first: true
