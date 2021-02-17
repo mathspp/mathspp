@@ -264,7 +264,7 @@ def factorial(n, partial=1):
 ```
 
 Now that we have this function written in a tail recursive way,
-we can actually remove the recursion altogether:
+we can actually remove the recursion altogether following a simple recipe:
 
 ```py
 def factorial(n):
@@ -274,8 +274,8 @@ def factorial(n):
     return partial
 ```
 
-This is a generic transformation you can do for any tail recursive function,
-I'll present more examples below.
+This is a generic transformation you can do for any tail recursive function
+and I'll present more examples below.
 
 Still on the factorial, because this is a linear recursion
 (and a fairly simple one, yes),
@@ -320,7 +320,8 @@ def sum(l):
     return l[0] + sum(l[1:])
 ```
 
-If you carry a partial sum down, you can make this tail recursive:
+If you carry a partial sum down the recursive calls,
+you can make this tail recursive:
 
 ```py
 def sum(l, partial=0):
@@ -344,7 +345,7 @@ Notice what happened:
  - You write a `while` loop whose condition is the complement of the base case condition.
  - You update your variables just like you did in the tail recursive call,
 except now you assign them explicitly.
- - Outside the `while` you return auxiliary variable.
+ - After the `while` you return the auxiliary variable.
 
 This recipe can be applied over and over again.
 
@@ -362,7 +363,7 @@ def selection_sort(l):
     return [m] + selection_sort(l[:idx]+l[idx+1:])
 ```
 
-Now the tail recursive:
+Now a tail recursive version:
 
 ```py
 def selection_sort(l, partial=None): # partial=[] is bad!
@@ -376,8 +377,9 @@ def selection_sort(l, partial=None): # partial=[] is bad!
 ```
 
 In the above we just have to be careful with something:
-the default value of `partial` is to be the empty list, but you should
-avoid mutable types in your default values, so we go with `None` and then
+the default value of `partial` is supposed to be the empty list, but you should
+avoid mutable types in your arguments' default values,
+so we go with `None` and then
 the very first thing we do is set `partial = []` in case it was `None`.
 
 Finally, applying the recipe, we can remove the recursion:
@@ -532,10 +534,9 @@ def merge_sort(l):
     while l1 and l2:
         if l1[0] < l2[0]:
             h, *l1 = l1
-            result.append(h)
         else:
             h, *l2 = l2
-            result.append(h)
+        result.append(h)
     # One of the two lists is empty.
     result.extend(l1)
     result.extend(l2)
@@ -553,10 +554,9 @@ def merge(l1, l2):
     while l1 and l2:
         if l1[0] < l2[0]:
             h, *l1 = l1
-            result.append(h)
         else:
             h, *l2 = l2
-            result.append(h)
+        result.append(h)
     # One of the two lists is empty.
     result.extend(l1)
     result.extend(l2)
