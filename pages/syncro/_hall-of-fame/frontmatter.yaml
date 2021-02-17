@@ -106,7 +106,7 @@ hof:
   - "Guilherme Lima, Paraná (Brasil) <i class='fas fa-star'></i>"
   - "Sebastião Teixeira (Portugal) <i class='fas fa-star'></i>"
   - "Pedro António Malta Ferreira, Chaves (Portugal) <i class='fas fa-star'></i>"
-  - "Jonathan Freitas, Rio de Janeiro (Brasil)"
+  - "Jonathan Freitas, Rio de Janeiro (Brasil) <i class='fas fa-star'></i>"
   - "João Paulo Rodrigues Rocha, Pernambuco (Brasil)"
   - "Fábio Neto, Lisboa (Portugal) <i class='fas fa-star'></i>"
   - "André Ferreira, Tomar (Portugal) <i class='fas fa-star'></i>"
@@ -123,7 +123,7 @@ hof:
   - "Bianca Zaccariotto (Brasil) <i class='fas fa-star'></i>"
   - "Beatriz Lisboa, Famalicão (Portugal)"
   - "Wendrik de Oliveira Santana (Brasil) <i class='fas fa-star'></i>"
-  - "João Carlos Henriques Jorge, Camarate (Portugal)" 
+  - "João Carlos Henriques Jorge, Camarate (Portugal) <i class='fas fa-star'></i>" 
   - "José Vitor (Brasil) <i class='fas fa-star'></i>"
   - "Lucas Ferreira dos Santos (Brasil) <i class='fas fa-star'></i>"
   - "Lucas Renan Vieira, Conselheiro Lafaiete (Brasil) <i class='fas fa-star'></i>"
@@ -136,6 +136,10 @@ hof:
   - "Gabriel Kuribara Lasso, São Paulo (Brasil) <i class='fas fa-star'></i>"
   - "Leonardo Felix Pinheiro, Juiz de Fora (Brasil) <i class='fas fa-star'></i>"
   - "Bryan Cruz (Brasil) <i class='fas fa-star'></i>"
+  - "Carol Tavares (Brasil) <i class='fas fa-star'></i>"
+  - "Marcelo Titonelli Pio da Cruz, Sorocaba (Brasil) <i class='fas fa-star'></i>"
+  - "Layla Melo (Brasil)"
+  - "Andy Dai (Alemanha/China) <i class='fas fa-star'></i>" 
 process:
   twig: true
 twig_first: true
