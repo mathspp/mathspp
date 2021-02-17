@@ -114,6 +114,10 @@ I never tried, but you are likely not to be interested in
 having Python run out of memory because of your obscenely large
 amount of recursive calls.
 
+Hence, if your function is such that it will be constantly trying to recurse
+more than the recursion depth allowed, you might want to consider a different
+solution to your problem.
+
 ## No Tail Recursion Elimination
 
 In some programming languages, the factorial function shown above
@@ -164,7 +168,7 @@ If your recursive function branches in its recursive calls *and* the recursive
 calls overlap, then you may be wasting plenty of time recalculating the same
 values over and over again.
 More often than not this can be fixed easily,
-but just because a problem tends to have a simple solution it doesn't mean
+but just because a problem *probably* has a simple solution, it doesn't mean
 you can outright ignore it.
 
 A classical example of recursion that leads to plenty of wasted computations
@@ -197,7 +201,7 @@ If your function is more involved, then the time you waste on recalculations
 can become unbearable.
 
 
-## Depth-First Versus Breadth-First
+## Depth-first Versus Breadth-first
 
 Something else to take into consideration when writing recursive solutions
 to your problems is that recursive solutions are inherently depth-first in nature,
@@ -218,9 +222,9 @@ actually used a `while` loop and a BFS algorithm.
 
 If you don't know what this means, the best thing to do is to google it.
 For example, visit the Wikipedia pages on
-[Depth-First Search](https://en.wikipedia.org/wiki/Depth-first_search)
+[Depth-first Search](https://en.wikipedia.org/wiki/Depth-first_search)
 and
-[Breadth-First Search](https://en.wikipedia.org/wiki/Breadth-first_search).
+[Breadth-first Search](https://en.wikipedia.org/wiki/Breadth-first_search).
 In a short and imprecise sentence,
 Depth-First Search (DFS) means that when you are traversing some structure,
 you prioritise exploring in depth, and only then you look around, whereas in
@@ -275,7 +279,7 @@ def factorial(n):
 ```
 
 This is a generic transformation you can do for any tail recursive function
-and I'll present more examples below.
+and [I'll present more examples below](#more-on-tail-recursion).
 
 Still on the factorial, because this is a linear recursion
 (and a fairly simple one, yes),
@@ -305,9 +309,8 @@ don't be afraid to try them out.
 
 Let me show you a couple of simple recursive functions,
 their tail recursive equivalents and then their non-recursive counterparts.
-Try these on your own,
-and try to come up with other recursive functions so you also rewrite them
-as tail recursive and then as imperative functions.
+I will show you the generic transformation, so that you too can rewrite any
+tail recursive function as an imperative one with ease.
 
 ### List Sum
 
@@ -341,13 +344,14 @@ def sum(l):
 ```
 
 Notice what happened:
- - The default value of the auxiliary variable becomes the first statement of the function.
- - You write a `while` loop whose condition is the complement of the base case condition.
- - You update your variables just like you did in the tail recursive call,
-except now you assign them explicitly.
- - After the `while` you return the auxiliary variable.
+ - the default value of the auxiliary variable becomes the first statement of the function;
+ - you write a `while` loop whose condition is the complement of the base case condition;
+ - you update your variables just like you did in the tail recursive call,
+except now you assign them explicitly; and
+ - after the `while` you return the auxiliary variable.
 
-This recipe can be applied over and over again.
+Of course there are simpler implementations for the `sum`, the point here is that
+this transformation is *generic* and *always works*.
 
 ### Sorting a List
 
@@ -396,7 +400,7 @@ def selection_sort(l):
 
 ## Traversing (A Directory)
 
-The Depth-First versus Breadth-First distinction is more likely to pop
+The Depth-first versus Breadth-first distinction is more likely to pop
 up when you have to *traverse* something.
 
 In this example, we will traverse a full directory, printing file names
@@ -417,7 +421,7 @@ def print_file_sizes(path):
             print_file_sizes(path)
 ```
 
-If you apply that function to a directory tree like this one:
+If you apply that function to a directory tree like this one,
 
 ```txt
  - file1.txt
@@ -429,7 +433,7 @@ If you apply that function to a directory tree like this one:
      | - deep_file.txt
 ```
 
-Then the first file you will see printed is `deep_file.txt`, because this recursive
+then the first file you will see printed is `deep_file.txt`, because this recursive
 solution traverses your file-system depth first.
 If you wanted to traverse the directory breadth-first, so that you first found
 `file1.txt`, then `file2.txt`, then `file3.txt`, and finally `deep_file.txt`, you
@@ -463,7 +467,10 @@ have to be processed, which mimics recursion without actually having to recurse.
 When your recursive function branches out a lot, and those branches overlap,
 you can save some computational effort by saving the values you computed so far.
 This can be as simple as having a dictionary inside which you check for known values
-and where you insert the base cases:
+and where you insert the base cases.
+
+! This technique is often called memoisation and will be covered in depth in
+! a later Pydon't, so [stay tuned][subscribe]!
 
 ```py
 call_count = 0
@@ -518,18 +525,7 @@ first and last halves separately, and then you merge the two sorted halves.
 Written recursively, this might look something like this:
 
 ```py
-def merge_sort(l):
-    """Sort a list recursively with the merge sort algorithm."""
-
-    # Base case.
-    if len(l) <= 1:
-        return l
-
-    # Sort first and last halves.
-    m = len(l)//2
-    l1, l2 = merge_sort(l[:m]), merge_sort(l[m:])
-
-    # Now put them together.
+def merge(l1, l2):
     result = []
     while l1 and l2:
         if l1[0] < l2[0]:
@@ -537,10 +533,22 @@ def merge_sort(l):
         else:
             h, *l2 = l2
         result.append(h)
-    # One of the two lists is empty.
+    # One of the two lists is empty, the other contains the larger elements.
     result.extend(l1)
     result.extend(l2)
     return result
+
+def merge_sort(l):
+    """Sort a list recursively with the merge sort algorithm."""
+
+    # Base case.
+    if len(l) <= 1:
+        return l
+    # Sort first and last halves.
+    m = len(l)//2
+    l1, l2 = merge_sort(l[:m]), merge_sort(l[m:])
+    # Now put them together.
+    return merge(l1, l2)
 ```
 
 If you don't want to have all this recursive branching, you can use a generic list
@@ -557,7 +565,7 @@ def merge(l1, l2):
         else:
             h, *l2 = l2
         result.append(h)
-    # One of the two lists is empty.
+    # One of the two lists is empty, the other contains the larger elements.
     result.extend(l1)
     result.extend(l2)
     return result
@@ -590,13 +598,23 @@ def merge_sort(l):
     return already_sorted[0]
 ```
 
-In this particular example, *my* translation of the merge sort to a non-recursive
-solution ended up being noticeably larger than the recursive one.
-
 ! If you don't really know what the `h, *l1 = l1`, `h, *l2 = l2`,
 ! `lst, *to_sort = to_sort` and `l1, l2, *already_sorted = already_sorted` lines
 ! are doing, you might want to have a look at
 ! [this Pydon't about unpacking with starred assignments][star-pydont].
+
+In this particular example, *my* translation of the merge sort to a non-recursive
+solution ended up being noticeably larger than the recursive one.
+This just goes to show that you need to judge all situations by yourself:
+would this be worth it?
+Is there an imperative implementation that is better than this direct translation?
+The answers to these questions will always depend on the programmer and the context
+they are in.
+
+This also shows that the way you *think* about the problem has an effect on the way
+the code looks:
+even though this last implementation is imperative, it is a direct translation of
+a recursive implementation and so it may not look as good as it could!
 
 # Conclusion
 
@@ -606,12 +624,16 @@ Here's the main takeaway of this article, for you, on a silver platter:
 
 This Pydon't showed you that:
 
- - Python has a hard limit on the number of recursive calls you can make and raises an exception if you cross that limit.
- - Python does not optimise tail recursive calls, and probably never will.
- - Recursive functions that branch can waste a lot of computation
-if no care is taken.
- - Traversing something with pure recursion tends to create depth first traversals,
-which might not be the optimal way to solve your problem.
+ - Python has a hard limit on the number of recursive calls you can make and raises a `RecursionError` if you cross that limit;
+ - Python does not optimise tail recursive calls, and probably never will;
+ - tail recursive functions can easily be transformed into imperative functions;
+ - recursive functions that branch can waste a lot of computation
+if no care is taken;
+ - traversing something with pure recursion tends to create depth first traversals,
+which might not be the optimal way to solve your problem; and
+ - direct translation of recursive functions to imperative ones and vice-versa will
+probably produce sub-optimal code, so you need to align your mindset with what you
+want to accomplish.
 
 If you liked this Pydon't be sure to leave a reaction below and share this with your friends and fellow Pythonistas.
 
