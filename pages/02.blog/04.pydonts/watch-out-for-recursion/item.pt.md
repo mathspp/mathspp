@@ -153,7 +153,7 @@ Converter uma função recursiva numa função recursiva que faz recursão de ca
 sempre é trivial e é um exercício bastante engraçado.
 No entanto, fazê-lo não garante que ganhas alguma coisa com isso.
 *Ainda assim*, é muito fácil pegar numa função recursiva de cauda e reescrevê-la sem
-recursão nenhuma, tal como te vou mostrar [na secção dos exemplos](#mais-sobre-recursao-de-cauda).
+recursão nenhuma, tal como te vou mostrar [na secção dos exemplos](#mais-recursão-de-cauda).
 
 ## Sobreposição de chamadas recursivas
 
@@ -673,6 +673,3 @@ Consultadas pela última vez a 16 de fevereiro de 2021.
 [star-pydont]: /blog/pydonts/unpacking-with-starred-assignments
 [Neopythonic]: https://neopythonic.blogspot.com
 [water-buckets]: /blog/water-buckets
-
-[subscribe]: https://mathspp.com/subscribe
-[manifesto]: /blog/pydonts/pydont-manifesto
