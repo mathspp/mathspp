@@ -6,6 +6,8 @@ title: Test
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu commodo risus. Donec id ligula id urna sollicitudin mattis non ut mi. Vivamus id arcu turpis. Nulla in lectus sit amet neque eleifend aliquet at ut risus. In hac habitasse platea dictumst. Sed interdum lorem magna, vel placerat metus vehicula a. In et magna vitae odio porta tempor ac tincidunt urna. Curabitur placerat pellentesque leo non aliquet. Aenean convallis felis dui, at hendrerit ipsum tempus non. Nullam varius, quam id faucibus egestas, diam dui placerat urna, sodales lobortis nibh purus et ex. Aliquam vitae nibh consectetur, congue sapien a, ornare tellus. Sed iaculis dictum leo eu sodales. Mauris sed pharetra augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
+![Some alt text](sign.png?classes=caption "My Image Caption")
+
 # Other heading
 
 Nam euismod libero ac leo mollis porttitor. Nam maximus finibus elit ut fringilla. In condimentum ac ante ut convallis. In vulputate ipsum quam, ac ullamcorper felis dignissim ac. Duis turpis purus, porttitor eu euismod quis, blandit at urna. Donec pulvinar, ligula in finibus placerat, urna tortor semper neque, et suscipit dolor nunc ac justo. Proin sagittis accumsan lectus, at consequat eros. Nulla at tortor luctus, posuere nulla non, ultrices tellus. Mauris aliquet, dui at dignissim eleifend, tellus nisi dapibus justo, sed condimentum mauris purus eu eros. In consectetur blandit vulputate.
