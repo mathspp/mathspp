@@ -140,6 +140,14 @@ hof:
   - "Marcelo Titonelli Pio da Cruz, Sorocaba (Brasil) <i class='fas fa-star'></i>"
   - "Layla Melo (Brasil)"
   - "Andy Dai (Alemanha/China) <i class='fas fa-star'></i>" 
+  - "Bruno Miguel Morgado das Neves, Tábua (Portugal)"
+  - "Amâncio Sassamba (Angola) <i class='fas fa-star'></i>"
+  - "Bryan Aguiar (Brasil)"
+  - "Tiago Gomes (Portugal) <i class='fas fa-star'></i>"
+  - "Matheus Carneiro, Goiás (Brasil) <i class='fas fa-star'></i>"
+  - "Gabriel Alves, Porto (Portugal) <i class='fas fa-star'></i>"
+  - "Paulo Trindade, Minas Gerais (Brasil) <i class='fas fa-star'></i>"
+  - "Leonor Tobback (Portugal)"
 process:
   twig: true
 twig_first: true
