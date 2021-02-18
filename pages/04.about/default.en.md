@@ -39,7 +39,7 @@ read fantasy and technical books, write code and watch silly comedy movies.
 ### Contacts
 
 You can drop me a line by clicking the @ at the bottom of the page, which opens
-a window for you to send an email to mathsppblog (at) gmail (dot) com.
+a window for you to send an email to rodrigo (at) mathspp (dot) com.
 Feel free to drop me a line with ideas, comments, feedback, praises and criticism!
 
 
