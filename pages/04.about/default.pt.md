@@ -44,7 +44,7 @@ e também de ver filmes parvos de comédia.
 ### Contactos
 
 Podes enviar-me um email se carregares na @ que está no fundo da página, que vai
-abrir uma janela para escreveres um email para o endereço mathsppblog (at) gmail (dot)
+abrir uma janela para escreveres um email para o endereço rodrigo (at) mathspp (dot)
 com.
 Estás à vontade para me enviar as tuas ideias, comentários, sugestões, elogios e
 críticas.
