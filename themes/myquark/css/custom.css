@@ -281,3 +281,12 @@ figure.caption-right figcaption {
     text-align: right;
 }
 /* End of the CSS for the image-captions plugin. */
+
+/* Mimic the CSS rule that keeps paragraphs "tight" in the modular pages (cf. /education),
+ * but use it for blockquotes as well.
+ */
+.modular-features .frame-box > blockquote { 
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
