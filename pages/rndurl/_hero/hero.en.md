@@ -4,7 +4,7 @@ hero_classes: "parallax text-light hero-large" # see https://demo.getgrav.org/bl
 hero_image: header.jpg
 ---
 
-## Educating about
+## Courses & Workshops on
 
 # Maths and Programming
 
