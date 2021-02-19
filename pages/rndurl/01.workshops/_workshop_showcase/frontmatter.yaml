@@ -1,0 +1,9 @@
+anchors:
+    active: false
+content:
+    items:
+        taxonomy@.category: workshop
+    limit: 4
+    order:
+        by: date
+        dir: desc
