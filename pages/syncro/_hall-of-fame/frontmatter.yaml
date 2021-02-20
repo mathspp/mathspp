@@ -152,6 +152,7 @@ hof:
   - "Ighor Gomes Rodrigues, São Paulo (Brasil) <i class='fas fa-star'></i>"
   - "Lucas Piero, Avaré (Brasil) <i class='fas fa-star'></i>"
   - "Mariana de Jesus Boscolo, Rio Preto (Brasil) <i class='fas fa-star'></i>"
+  - "Luiz Fernandes de Oliveira (Brasil) <i class='fas fa-star'></i>"
 process:
   twig: true
 twig_first: true
