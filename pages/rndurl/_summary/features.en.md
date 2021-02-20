@@ -17,9 +17,10 @@ and here is what a couple of them had to say about their experience:
 
  > “*The explanations were clear and amusing, which made it easy to follow along.*”  &mdash; Madalena Almeida <!--58-->
 
-[Email me](mailto:mathspp@mathspp.com) if you would like
-me to organise a course or workshop with you,
-or maybe check out all the [workshops] and [courses] I already have prepared!
+I am looking forward to hearing from you, so feel free to
+[email me](mailto:mathspp@mathspp.com) if you would like
+me to organise a course or workshop with you or if you would like to learn more.
+You can also browse all the [workshops] and [courses] I already have prepared!
 
 [workshops]: ../workshops
 [courses]: ../courses
