@@ -51,6 +51,13 @@ label {
     color: #989fb0;
 }
 
+/* Centre images in blog posts. */
+.blog-listing img {
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+}
+
 /* Justify the text of paragraphs inside the body,
     exclude the ones in the footer section, in the hero sections,
     the "feature" texts under icons in the workshops page,
