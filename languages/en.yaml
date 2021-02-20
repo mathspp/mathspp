@@ -66,3 +66,14 @@ THEME_QUARK:
   SIDEBAR:
     REMAINING_TAGS:
       SUMMARY: "Remaining Tags"
+
+FOOTER:
+  ICON_TITLES:
+    BMC: "Buy me a slice of pizza"
+    PATREON: Support this project on Patreon
+    GITHUB: Star the blog content and contribute on GitHub
+    FACEBOOK: Like mathspp on Facebook
+    TWITTER: Follow @mathsppblog on Twitter
+    INSTAGRAM: Follow @mathsppblog on Instagram
+    NEWSLETTER: Subscribe to the newsletter
+    EMAIL: Email me at rodrigo(at)mathspp(dot)com

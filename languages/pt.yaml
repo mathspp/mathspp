@@ -115,3 +115,14 @@ PLUGIN_COMMENTS:
   SUBMIT_COMMENT_BUTTON_TEXT: "Comentar"
   EMAIL_NEW_COMMENT_SUBJECT: "[Novo comentário] de {{ form.value.name|e }}"
   THANK_YOU_MESSAGE: "Obrigado pelo comentário!"
+
+FOOTER:
+  ICON_TITLES:
+    BMC: "Paga-me uma fatia de pizza"
+    PATREON: "Apoia o projeto no Patreon"
+    GITHUB: "Põe uma estrela no GitHub do blogue"
+    FACEBOOK: "Põe um like na página do Facebook"
+    TWITTER: "Segue @mathsppblog no Twitter"
+    INSTAGRAM: "Segue @mathsppblog no Instagram"
+    NEWSLETTER: "Subscreve a newsletter"
+    EMAIL: "Escreve-me um email para rodrigo(at)mathspp(dot)com"
