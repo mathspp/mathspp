@@ -1,4 +1,6 @@
-body_classes: "header-dark header-transparent test_class"
+anchors:
+    active: false
+body_classes: "header-dark header-transparent blog-3-col"
 content:
     items:
         taxonomy@.category: "workshop"
@@ -7,6 +9,6 @@ content:
         by: date
         dir: desc
     pagination: true
-hero_classes: "text-light hero-large"
+hero_classes: "text-light hero-large overlay-dark-gradient"
 hero_image: "heroimg.jpg"
 show_sidebar: false
