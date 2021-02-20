@@ -43,7 +43,7 @@ a window for you to send an email to rodrigo (at) mathspp (dot) com.
 Feel free to drop me a line with ideas, comments, feedback, praises and criticism!
 
 
-### Support the Project
+### <i class="fas fa-heart"></i> Show Your Appreciation
 
 If you are reading this, thank you *so much*.
 If you would like to support the mathspp project, one of the nicest things you could do

@@ -50,7 +50,7 @@ Estás à vontade para me enviar as tuas ideias, comentários, sugestões, elogi
 críticas.
 
 
-### Apoiar o projeto
+### <i class="fas fa-heart"></i> Apoiar o projeto
 
 Se estás a ler isto, *muitíssimo* obrigado.
 Se gostavas de apoiar o projeto mathspp, uma das coisas que eu mais gostaria que
