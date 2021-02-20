@@ -1,9 +1,12 @@
-body_classes: "header-dark header-transparent"
+body_classes: "header-dark header-transparent test_class"
 content:
-    items: "@self.modular"
+    items:
+        taxonomy@.category: "workshop"
+    limit: 9
     order:
-        custom:
-            - "_hero"
-            - "_highlights"
-            - "_workshop_showcase"
-onpage_menu: false
+        by: date
+        dir: desc
+    pagination: true
+hero_classes: "text-light hero-large"
+hero_image: "heroimg.jpg"
+show_sidebar: false

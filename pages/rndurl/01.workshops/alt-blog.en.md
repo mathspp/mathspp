@@ -1,0 +1,1 @@
+# Blog-type page
