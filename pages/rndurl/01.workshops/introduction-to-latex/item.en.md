@@ -1,7 +1,12 @@
-# Intro to LaTeX
+---
+title: "Introduction to LaTeX"
+---
 
-This is some crazy text about the workshop.
+A gentle introduction to the LaTeX typesetting system,
+where the participants learn all they need to start writing beautiful scientific documents.
 
 ===
 
-Some MORE text.
+# Introduction to LaTeX
+
+This is one of the more popular workshops I lead.
