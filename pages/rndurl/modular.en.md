@@ -7,8 +7,9 @@ content:
     order:
         custom:
             - "_hero"
-            - "_highlights"
-            - "_workshops_features"
+            - "_workshops_highlights"
+            - "_workshops_some"
             - "_courses_highlights"
+            - "_summary"
 onpage_menu: false
 ---

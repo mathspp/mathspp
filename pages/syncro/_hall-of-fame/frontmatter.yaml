@@ -150,6 +150,8 @@ hof:
   - "Leonor Tobback (Portugal)"
   - "Wesley José Queiroz da Silva, São Paulo (Brasil) <i class='fas fa-star'></i>"
   - "Ighor Gomes Rodrigues, São Paulo (Brasil) <i class='fas fa-star'></i>"
+  - "Lucas Piero, Avaré (Brasil) <i class='fas fa-star'></i>"
+  - "Mariana de Jesus Boscolo, Rio Preto (Brasil) <i class='fas fa-star'></i>"
 process:
   twig: true
 twig_first: true
