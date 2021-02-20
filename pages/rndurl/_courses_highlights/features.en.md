@@ -1,29 +1,26 @@
 ---
 features:
-  - icon: fab fa-dyalog
-    text: Learn APL with neural nets
-    url: '#learn-apl-with-neural-nets'
-  - icon: fab fa-python
-    text: Intro to Python with genetic algorithms
-    url: '#intro-python-genetic-algorithms'
-  - icon: fas fa-superscript
-    text: Intro to LaTeX
-    url: '#intro-latex'
-  - icon: fas fa-puzzle-piece
-    text: Recreational maths
-    url: '#recreational-maths'
-  - icon: fas fa-lock
-    text: Hands-on cryptography
-    url: '#hands-on-cryptography'
-  - icon: fas fa-question
-    text: Interested in a different workshop..?
-    url: '#what-is-next'
+    - icon: fas fa-cogs
+      text: Learn the underlying principles and inner workings of a subject
+    - icon: fas fa-cubes
+      text: Build something with your newfound knowledge to solidify it
+    - icon: fas fa-certificate
+      text: Earn a certificate to showcase your investment in your education
+title: Courses
 ---
 
-# All the workshops
+# Courses
 
-Besides learning I also love teaching and sharing knowledge.
+Be it in the span of a couple of days or spread throughout weeks
+or months, the courses I teach are aimed at getting you to *understand*
+how things work.
+We start with the basics, building the knowledge from the ground up,
+and always using it to build something: it is only when you build something,
+when you use your knowledge to do something, that you really take it in.
 
-I have given dozens of workshops to students with ages ranging from middle school to college and the materials of said workshops will be collected here.
+Feel free to [email me][email] if you would like to know more.
+You can also have a look at [the courses][courses] I already have prepared and/or given,
+in case you are curious.
 
-This is _always_ a work in progress!
+[email]: mailto:rodrigo@mathspp.com
+[courses]: ../courses
