@@ -153,6 +153,7 @@ hof:
   - "Lucas Piero, Avaré (Brasil) <i class='fas fa-star'></i>"
   - "Mariana de Jesus Boscolo, Rio Preto (Brasil) <i class='fas fa-star'></i>"
   - "Luiz Fernandes de Oliveira (Brasil) <i class='fas fa-star'></i>"
+  - "Daniel Valença (Brasil)"
   - "Robert Luter Fritz (Brasil) <i class='fas fa-star'></i>"
 process:
   twig: true
