@@ -10,7 +10,7 @@ Consegues resolvê-lo?
 
 ===
 
-![Duas chaves.](thumbnail.jpg "Fotografia original de Aneta Pawlik no site Unsplash.")
+![Duas chaves.](thumbnail.png "Fotografia original de Aneta Pawlik no site Unsplash.")
 
 ### Enunciado do problema
 
