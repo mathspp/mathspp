@@ -44,5 +44,6 @@ Também podes usar o link para partilhar a tua própria solução nos comentári
 
 Se gostaste deste problema e se gostavas de receber novos problemas diretamente na tua caixa de correio, então [subscreve a newsletter dos Problemas][subscribe].
 
+[p28]: /blog/problems/hidden-key
 [subscribe]: https://mathspp.com/subscribe
 [sol]: ../../solutions/{{ page.slug }}
