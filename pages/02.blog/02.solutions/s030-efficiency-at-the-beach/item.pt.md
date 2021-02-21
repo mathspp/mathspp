@@ -27,6 +27,6 @@ Caso contrário podes só deixar um “upvote”!-->
 [Não te esqueças de subscrever a newsletter][subscribe] para receberes
 um problema diretamente no teu email de quinze em quinze dias!
 
-[email]: mailto:rodrigo@mathspp.com?subject=Resposta%20de%20{{ page.title }}
+[email]: mailto:rodrigo@mathspp.com?subject=Resposta%20de%20{{ page.title|regex_replace(['/ /'], ['%20']) }}
 [subscribe]: https://mathspp.com/subscribe
 [prob]: ../../problems/{{ page.slug }}

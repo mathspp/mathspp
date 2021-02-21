@@ -40,7 +40,7 @@ You can also use that link to post your own solution in the comments! Please avo
 
 If you enjoyed the problem and would like to get new problems directly in your inbox, be sure to [subscribe to the Problems newsletter][subscribe].
 
-[email]: mailto:rodrigo@mathspp.com?subject=Solution%20to%20{{ page.title }}
+[email]: mailto:rodrigo@mathspp.com?subject=Solution%20to%20{{ page.title|regex_replace(['/ /'], ['%20']) }}
 [subscribe]: https://mathspp.com/subscribe
 [sol]: ../../solutions/{{ page.slug }}
 

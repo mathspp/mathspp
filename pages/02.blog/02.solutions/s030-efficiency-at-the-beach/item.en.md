@@ -26,6 +26,6 @@ Otherwise just leave an “upvote” reaction!-->
 [Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly
 problems sent straight to your inbox!
 
-[email]: mailto:rodrigo@mathspp.com?subject=Solution%20to%20{{ page.title }}
+[email]: mailto:rodrigo@mathspp.com?subject=Solution%20to%20{{ page.title|regex_replace(['/ /'], ['%20']) }}
 [subscribe]: https://mathspp.com/subscribe
 [prob]: ../../problems/{{ page.slug }}
