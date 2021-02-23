@@ -1,7 +1,7 @@
 ---
 metadata:
-    description: ""
-title: "Atribuições 'profundas' | Pydon't"
+    description: "Atribuições estruturais são uma funcionalidade de Python que não é usada muitas vezes, mas é bom saber como funciona para quando a oportunidade surge!"
+title: "Atribuições estruturais | Pydon't"
 ---
 
 Usar atribuições estruturais tem o potencial de tornar o código bastante
