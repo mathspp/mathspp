@@ -35,7 +35,7 @@ for [structural matching][pep-634], a feature to be introduced in Python 3.10.
 Before showing you how deep unpacking works,
 let's have a quick look at two other nice features about Python's assignments.
 
-## Multiple Assignment and Starred Assignment
+## Multiple Assignment
 
 In Python, multiple assignment is what allows you to write things like
 
@@ -60,6 +60,8 @@ or
 
 With multiple assignment you can assign, well, multiple variables at the same time,
 provided the right-hand side has as many items as the left-hand side expects.
+
+## Starred Assignment
 
 Starred assignment, that I covered in depth in [this Pydon't][pydont-starred-assignment],
 allows you to write things like
@@ -165,7 +167,7 @@ next to the value it is getting, it becomes very clear what values go where:
 
 ## In Loops
 
-Deep unpacking can also be used in the implicit assignments of for loops,
+Deep unpacking can also be used in the implicit assignments of `for` loops,
 it doesn't have to be in explicit assignments with an equals sign!
 The examples below will show you that.
 
@@ -180,7 +182,7 @@ Nothing better than showing you some code, so you can see for yourself.
 ## Increasing expressiveness
 
 Given the RGB values of a colour, you can apply a basic formula to convert it to greyscale,
-which weights the R, G, and B components differently.
+which weighs the R, G, and B components differently.
 We could write a function that takes the colour information like we have been using,
 and then computes its greyscale value:
 
@@ -189,8 +191,12 @@ def greyscale(colour_info):
     return 0.2126*colour_info[1][0] + 0.7152*colour_info[1][1] + 0.0722*colour_info[1][2]
 ```
 
-(This formula we are using, $0.2126R + 0.7152G + 0.0722B$ is usually the first step of a
-slightly, more involved, formula, but it will be good enough for our purposes.)
+(This formula we are using,
+$$
+0.2126R + 0.7152G + 0.0722B ~ ,
+$$,
+is usually the first step of a
+slightly more involved formula, but it will be good enough for our purposes.)
 
 Now you can use your function:
 
@@ -230,7 +236,7 @@ and sometimes there are already types and formats of data that are in use,
 and it is just simpler to adhere to whatever the standards are.
 
 Now imagine that you have a list with some colours and want to compute the greyscales.
-You can use deep unpacking in a for loop (and in a list comprehension too):
+You can use deep unpacking in a `for` loop (and in a list comprehension too):
 
 ```py
 colours = [
@@ -315,7 +321,7 @@ This Pydon't showed you that:
  - Python's assignments have plenty of interesting features;
  - deep unpacking can prevent cluttering your code with hardcoded indexing;
  - deep unpacking improves the readability of your code; and
- - some bugs related to object shape can be caught if using deep unpacking.
+ - some bugs related to iterable shape can be caught if using deep unpacking.
 
 If you liked this Pydon't be sure to leave a reaction below and share this with your friends and fellow Pythonistas.
 
