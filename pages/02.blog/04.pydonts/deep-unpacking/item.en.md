@@ -118,7 +118,7 @@ you could use deep unpacking:
 248
 ```
 
-Notice how we group the `r`, `g` and `b` variables with `()` to create a tuple,
+Notice how we group the `r`, `g`, and `b` variables with `()` to create a tuple,
 mimicking the shape of the `colour_info` variable.
 If we had simply written `name, r, g, b = colour_info` then Python would
 think we are trying to do multiple assignment, and would expect `colour_info` to
@@ -192,9 +192,11 @@ def greyscale(colour_info):
 ```
 
 (This formula we are using,
-$$
-0.2126R + 0.7152G + 0.0722B ~ ,
-$$,
+
+\[
+    0.2126R + 0.7152G + 0.0722B ~ ,
+\]
+
 is usually the first step of a
 slightly more involved formula, but it will be good enough for our purposes.)
 
