@@ -53,7 +53,7 @@ Podes inscrever-te preenchendo [este breve formulário][form].
 
 Todas as segundas-feiras às 18h.
 
-! A próxima sessão vai ser dia 1 de março às 2021.
+! A próxima sessão vai ser dia 1 de março às 18h.
 
 *Sessões passadas*:
 
