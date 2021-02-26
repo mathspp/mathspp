@@ -71,13 +71,7 @@ caso precises de refrescar a memória.
  >  - “long right scope” e “left short scope”
  >  - definir funções simples
 
-<!---->
-
- > 8 de março:
- >  - utilizar o editor, atalhos do teclado
- >  - alguns comandos úteis: `)ed`, `)save`, `)erase`, `)vars`, ...
- >  - Link
- >  - operadores básicos `⍨` `/` `¨` `⍣`
+! A próxima sessão vai ser dia 1 de março às 18h.
 
 <!---->
 

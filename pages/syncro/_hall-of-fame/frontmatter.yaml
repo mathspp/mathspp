@@ -156,6 +156,9 @@ hof:
   - "Daniel Valença (Brasil)"
   - "Robert Luter Fritz (Brasil) <i class='fas fa-star'></i>"
   - "Vítor Ramos da Costa, Almada (Portugal)"
+  - "Ricardo Takashi Yamamoto (Brasil)"
+  - "Bruno Cássio Menezes Leal, Amapá (Brasil) <i class='fas fa-star'></i>"
+  - "Christopher do Nascimento, Rio Grande (Brasil) <i class='fas fa-star'></i>"
 process:
   twig: true
 twig_first: true
