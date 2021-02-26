@@ -67,6 +67,11 @@ THEME_QUARK:
     REMAINING_TAGS:
       SUMMARY: "Remaining Tags"
 
+THEME_MY_QUARK:
+  COURSES:
+    NEXT_SESSION_DATE: "Next session"
+    LAST_SESSION_DATE: "Happened on"
+
 FOOTER:
   ICON_TITLES:
     BMC: "Buy me a slice of pizza"

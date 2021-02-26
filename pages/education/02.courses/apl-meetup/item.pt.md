@@ -10,6 +10,17 @@ Sessões semanais para aprender APL: todos são bem-vindos.
 
 ![](_apl-meetup-poster.png?cropResize=600,800 "Poster das sessões")
 
+! A próxima sessão vai ser dia 1 de março às 2021.
+
+# Inscrição
+
+Podes inscrever-te preenchendo [este breve formulário][form], mesmo que
+não tenhas vindo às primeiras sessões.
+[Aqui](#sessões-passadas) encontras um resumo do que já foi discutido
+e [aqui](#links-úteis) encontras os links de que precisas.
+Também podes [enviar-me um email][mailme] e eu ajudo-te a pôres-te a par de tudo.
+
+
 # Objetivo
 
 O meetup semanal de APL tem por objetivo levar APL a mais pessoas.
@@ -44,19 +55,49 @@ Não há qualquer tipo de pré-requisitos necessários para a participação nes
 toda a gente é bem-vinda, independentemente da sua idade, ocupação, formação, etc.
 
 
-# Inscrição
-
-Podes inscrever-te preenchendo [este breve formulário][form].
 
 
-# Sessões
+# Plano das sessões
 
-Todas as segundas-feiras às 18h.
+Aqui encontras um plano aproximado do que vai ser discutido nas próximas sessões.
+É impossível as sessões estarem planeadas ao milímetro porque o objetivo é que
+os participantes também ajudem a moldar as sessões.
+Mais em baixo encontras um sumário do que foi discutido nas sessões passadas,
+caso precises de refrescar a memória.
 
-! A próxima sessão vai ser dia 1 de março às 2021.
+ > 1 de março:
+ >  - funções básicas `+` `-` `×` `÷` `|` `*` `⍳` `=` `≠` `≢`
+ >  - tensores
+ >  - “long right scope” e “left short scope”
+ >  - definir funções simples
 
-*Sessões passadas*:
+<!---->
+
+ > 8 de março:
+ >  - utilizar o editor, atalhos do teclado
+ >  - alguns comandos úteis: `)ed`, `)save`, `)erase`, `)vars`, ...
+ >  - Link
+ >  - operadores básicos `⍨` `/` `¨` `⍣`
+
+<!---->
+
+ > 15 de março:
+ >  - tensores dentro de tensores, escalares.
+ >  - funções `⊂` `⊆` `⊃`
+ >  - ...
+
+<!---->
+
+O resto das sessões ainda está por planear.
+
+## Sessões passadas
 
  - n/a
 
+
+# Links úteis
+
+
+
 [form]: https://forms.gle/xpuTMueMxccBugUz8
+[mailme]: mailto:rodrigo@mathspp.com

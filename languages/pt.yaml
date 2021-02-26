@@ -116,6 +116,11 @@ PLUGIN_COMMENTS:
   EMAIL_NEW_COMMENT_SUBJECT: "[Novo comentário] de {{ form.value.name|e }}"
   THANK_YOU_MESSAGE: "Obrigado pelo comentário!"
 
+THEME_MY_QUARK:
+  COURSES:
+    NEXT_SESSION_DATE: "Próxima sessão"
+    LAST_SESSION_DATE: "Aconteceu a"
+
 FOOTER:
   ICON_TITLES:
     BMC: "Paga-me uma fatia de pizza"
