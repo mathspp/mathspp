@@ -8,8 +8,15 @@
     {% endif %}
     <div class="card-header">
         <div class="card-subtitle text-gray">
-            <!-- do not show the page views -->
-            {% include 'partials/blog/date.html.twig' with {show_views: false} %}
+            {% if ("now"|date("U")) < (page.date|date("U")) %} <!-- compare "now" with the header page date. -->
+                {% set text = 'THEME_MY_QUARK.COURSES.NEXT_SESSION_DATE'|t %}
+            {% else %}
+                {% set text = 'THEME_MY_QUARK.COURSES.LAST_SESSION_DATE'|t %}
+            {% endif %}
+            <time class="dt-published" datetime="{{ page.date|date("c") }}">
+                {{ text }} <i class="fa fa-calendar"></i> {{ page.date|date(system.pages.dateformat.short) }}
+            </time>
+            <!-- instead of including the blog/date partial, I pasted above the relevant line and added my own twig code to fetch the sentence. -->
         </div>
         <div class="card-title">
         {% include 'partials/blog/title.html.twig' with {title_level: 'h5'} %}

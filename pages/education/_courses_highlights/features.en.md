@@ -18,7 +18,7 @@ We start with the basics, building the knowledge from the ground up,
 and always using it to build something: it is only when you build something,
 when you use your knowledge to do something, that you really take it in.
 
-Feel free to [email me][email] if you would like to know more.
+Feel free to [email me][email] if you would like to know more or to schedule a course with me.
 You can also have a look at [the courses][courses] I already have prepared and/or given,
 in case you are curious.
 
