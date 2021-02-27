@@ -10,7 +10,7 @@ Sessões semanais para aprender APL: todos são bem-vindos.
 
 ![](_apl-meetup-poster.png?cropResize=600,800 "Poster das sessões")
 
-! A próxima sessão vai ser dia 1 de março às 2021.
+! A próxima sessão vai ser dia 1 de março às 18h.
 
 # Inscrição
 
@@ -66,29 +66,30 @@ Mais em baixo encontras um sumário do que foi discutido nas sessões passadas,
 caso precises de refrescar a memória.
 
  > 1 de março:
- >  - funções básicas `+` `-` `×` `÷` `|` `*` `⍳` `=` `≠` `≢`
+ >  - primeiras funções `+` `-` `×` `÷` `|` `*` `⍳` `=` `≠` `≢`
  >  - tensores
  >  - “long right scope” e “left short scope”
- >  - definir funções simples
+ >  - definir funções simples (dfns)
 
 <!---->
 
  > 8 de março:
- >  - utilizar o editor, atalhos do teclado
+ >  - utilizar o editor; atalhos do teclado
  >  - alguns comandos úteis: `)ed`, `)save`, `)erase`, `)vars`, ...
  >  - Link
- >  - operadores básicos `⍨` `/` `¨` `⍣`
+ >  - primeiros operadores `⍨` `/` `¨` `⍣`
 
 <!---->
 
  > 15 de março:
- >  - tensores dentro de tensores, escalares.
+ >  - tensores dentro de tensores; escalares.
  >  - funções `⊂` `⊆` `⊃`
  >  - ...
 
 <!---->
 
 O resto das sessões ainda está por planear.
+
 
 ## Sessões passadas
 
@@ -97,6 +98,13 @@ O resto das sessões ainda está por planear.
 
 # Links úteis
 
+ - Usa APL no browser – [tryapl.org](https://tryapl.org)
+ - APL Wiki – [apl.wiki](https://apl.wiki)
+ - Instala Dyalog APL – [dyalog.com/download-zone](https://www.dyalog.com/download-zone.htm)
+ - Livro “Mastering Dyalog APL” – [mastering.dyalog.com](https://mastering.dyalog.com)
+ - A sala de chat “APL Orchard” – [apl.chat](https://apl.chat)
+ - Arquivo de aulas de APL em chat – [chat.stackexchange.com/rooms/info/52405/the-apl-orchard?tab=conversations](https://chat.stackexchange.com/rooms/info/52405/the-apl-orchard?tab=conversations)
+ - APLcart, uma biblioteca de snippets de APL – [aplcart.info](https://aplcart.info)
 
 
 [form]: https://forms.gle/xpuTMueMxccBugUz8
