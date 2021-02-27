@@ -26,10 +26,15 @@ You can also [email me][mailme] and I will help you catch up.
 
 # Purpose
 
-The APL weekly meetup has the purpose of getting more people involved with APL.
+The weekly APL meetup has the purpose of creating a relaxed and informal setting
+in which people can learn about APL.
+
 APL is a programming language that started out as an alternative to the
-traditional mathematical notation we all use.
-Eventually, APL evolved into a language that can be executed by computers.
+traditional mathematical notation we all use, until it
+eventually became a language that can be executed by computers:
+this is one of the many reasons that makes learning APL such an interesting
+experience, both for seasoned programmers and for those who have never written
+a single line of code.
 
 
 # Why APL?

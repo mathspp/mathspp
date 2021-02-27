@@ -23,10 +23,14 @@ Também podes [enviar-me um email][mailme] e eu ajudo-te a pôres-te a par de tu
 
 # Objetivo
 
-O meetup semanal de APL tem por objetivo levar APL a mais pessoas.
+O meetup semanal de APL tem por objetivo criar um ambiente informal e descontraído
+onde as pessoas podem aprender APL.
+
 APL é uma linguagem de programação que começou por ser uma notação alternativa
 para a matemática, e eventualmente evoluiu para uma linguagem que pode ser
-executada por computadores.
+executada por computadores: esta é uma das muitas razões pelas quais aprender APL
+pode ser uma experiência tão interessante, tanto para quem já sabe programar
+como para quem nunca escreveu uma linha de código.
 
 
 # Porquê APL?
