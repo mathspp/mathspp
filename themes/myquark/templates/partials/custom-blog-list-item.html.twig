@@ -35,7 +35,7 @@
     {% if page.taxonomy.topic %}
     <span class="tags">
         {% for topic in page.taxonomy.topic %}
-        <a class="label label-rounded {{ label_style ?: 'label-secondary' }} p-category" href="{{ page.url|rtrim('/') }}/topic{{ config.system.param_sep }}{{ topic }}#body-wrapper">{{ topic }}</a>
+        <a class="label label-rounded {{ label_style ?: 'label-secondary' }} p-category" href="{{ blog.url|rtrim('/') }}/topic{{ config.system.param_sep }}{{ topic }}#body-wrapper">{{ topic }}</a>
         {% endfor %}
     </span>
     {% endif %}
