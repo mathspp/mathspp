@@ -122,9 +122,9 @@ blockquote {
     background: #202a37;
 }
 
-/* Colour for the numbers in the Blog archive. */
+/* Colour for the numbers in the Blog archive and for the text in the selected tag in the blog. */
 .label.label-primary {
-    color: #191919;
+    color: #e3e3e3;
 }
 
 /* Borders for the pagination numbers at the top of the blog listings. */
