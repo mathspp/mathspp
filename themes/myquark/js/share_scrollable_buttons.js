@@ -8,9 +8,9 @@ let btn_spacing = 0.5;
     ["fas fa-envelope", "#EEEE", `mailto:someone@example.com?subject=${title}&body=${href}`, "Email this"],
     ["fab fa-twitter", "#1DA1F2", `https://twitter.com/intent/tweet?text=Check%20out%20this%20really%20cool%20blog%20post%20by%20%40mathsppblog%3A%20${href}`, "Tweet this"],
     ["fab fa-facebook-f", "#4267B2", `https://www.facebook.com/sharer/sharer.php?u=${href}`, "Share on Facebook"],
+    ["fab fa-linkedin-in", "#0077B5", `https://www.linkedin.com/shareArticle?url=${href}&title=${title}`, "Share on LinkedIn"],
     // Set some transparency for the reddit orange so it isn't too bright.
     ["fab fa-reddit-alien", "#FF5700cc", `https://reddit.com/submit?url=${href}&title=${title}`, "Share on Reddit"],
-    // ["fab fa-linkedin-in", "#0077B5", `https://www.linkedin.com/shareArticle?url=${href}`, "Share on LinkedIn"],
     // ["fab fa-hacker-news-square", "#f0652f", "https://news.ycombinator.com/submitlink?u=${href}&t=${title}", "Share on Hacker News"],
     // ["fab fa-whatsapp", "#25D366", "whatsapp://send?text=${href}", "Share via Whatsapp"],
 ].forEach(t => {
