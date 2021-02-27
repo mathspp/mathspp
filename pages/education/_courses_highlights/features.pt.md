@@ -11,12 +11,13 @@ title: Cursos
 
 # Cursos
 
-Quer seja durante alguns dias, ou alo longo de várias semanas,
+Quer seja durante alguns dias, ou ao longo de várias semanas,
 os cursos que dou têm por objetivo fazer-te *perceber* o tema do curso.
 Começamos com os princípios fundamentais, para que o conhecimento
 possa ser construído de forma incremental e para que possamos sempre
-aplicar o conhecimento adquirido na construção de algo novo,
-já que só aprendemos algo realmente quando o pomos em prática.
+aplicar o conhecimento adquirido na construção de algo novo.
+Isto facilita a aquisição do conhecimento, porque só aprendes realmente
+algo quando o pões em prática.
 
 Se quiseres agendar um curso comigo ou obter mais informações, por favor
 [envia-me um email][email].

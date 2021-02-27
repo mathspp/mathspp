@@ -10,4 +10,7 @@ content:
             - "_workshops_some"
             - "_courses_highlights"
             - "_summary"
+metadata:
+    author: "Rodrigo Girão Serrão"
+    og:image: "https://mathspp.com/education/logo_education.png"
 onpage_menu: false
