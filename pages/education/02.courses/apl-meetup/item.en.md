@@ -12,7 +12,7 @@ Weekly sessions to learn APL: a programming language that is a tool of thought.
 
 ! This meetup is held in Portuguese.
 
-! The next session will be on the 1st of march at 6pm.
+! The next session will be on the 1st of March at 6pm.
 
 # Signing up
 
