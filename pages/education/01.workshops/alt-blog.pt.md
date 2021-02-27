@@ -10,7 +10,7 @@ Por favor, sente-te à vontade para [me enviares um email][email] para agendar u
 ou simplesmente para fazeres perguntas!
 Também podes espreitar os workshops que já dei em baixo.
 
-(Esta página ainda está a ser construída, portanto talvez queiras visitar antes [esta página](/workshops).)
+(Esta página ainda está a ser construída, talvez queiras visitar antes [esta página](/workshops).)
 
 [email]: mailto:rodrigo@mathspp.com
 [workshops]: ../workshops
