@@ -69,6 +69,7 @@ THEME_QUARK:
 
 THEME_MY_QUARK:
   COURSES:
+    TOPICS: "Topics"
     NEXT_SESSION_DATE: "Next session"
     LAST_SESSION_DATE: "Happened on"
 

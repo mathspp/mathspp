@@ -118,6 +118,7 @@ PLUGIN_COMMENTS:
 
 THEME_MY_QUARK:
   COURSES:
+    TOPICS: "Tópicos"
     NEXT_SESSION_DATE: "Próxima sessão"
     LAST_SESSION_DATE: "Aconteceu a"
 
