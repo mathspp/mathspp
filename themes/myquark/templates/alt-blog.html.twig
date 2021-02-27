@@ -35,15 +35,15 @@
             {% include 'partials/breadcrumbs.html.twig' %}
         {% endif %}
 
-        <h4>{{ 'THEME_MY_QUARK.COURSES.TOPICS'|t }}</h4>
+        <p>{{ 'THEME_MY_QUARK.COURSES.TOPICS'|t }}
         <!-- Custom listing of topics covered in these alt-blog pages. Built by using the sidebar and taxonomylist twig templates. Also, cf. the Grav API for the .getTaxonomyItemKeys used. -->
-        <span class="tags">
+        <span class="tags" style="font-size:125%">
         {% set tax_type = 'topic' %}
         {% for key in taxonomy.getTaxonomyItemKeys(tax_type)|sort %}
             {% set label_class = uri.param(tax_type) == key ? 'label-primary' : 'label-secondary' %}
             <a class="label label-rounded {{ label_class }}" href="{{ page.url }}/{{ tax_type }}{{ config.system.param_sep }}{{ key }}">{{ key }}</a>
         {% endfor %}
-        </span>
+        </p></span>
 
         {% embed 'partials/layout.html.twig' with {blog: page} %}
             {% block item %}
