@@ -1,3 +1,8 @@
+---
+metadata:
+    description: "Uma página dedicada aos cursos sobre matemática e programação do mathspp."
+title: "Cursos"
+---
 # Cursos
 
 Os cursos que eu dou têm como objetivo principal fazer-te *compreender*

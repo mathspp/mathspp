@@ -1,3 +1,9 @@
+---
+metadata:
+    description: "A page dedicated to mathspp's courses on mathematics and programming."
+title: "Courses"
+---
+
 # Courses
 
 The courses I teach are aimed at getting you to *understand* how things work.
