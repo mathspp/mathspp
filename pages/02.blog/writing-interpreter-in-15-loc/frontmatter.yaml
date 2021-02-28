@@ -7,7 +7,7 @@ slug: writing-interpreter-in-15-loc
 taxonomy:
     category: blogpost
     tag:
-      - programming
-      - Python
-      - interpreters
       - brainfuck
+      - interpreters
+      - programming
+      - python
