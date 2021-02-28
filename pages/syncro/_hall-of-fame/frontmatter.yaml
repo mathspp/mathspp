@@ -160,6 +160,8 @@ hof:
   - "Bruno Cássio Menezes Leal, Amapá (Brasil) <i class='fas fa-star'></i>"
   - "Christopher do Nascimento, Rio Grande (Brasil) <i class='fas fa-star'></i>"
   - "Beatriz Castro Silva, Porto (Portugal)"
+  - "Rui Tavares (Portugal)"
+  - "Sérgio Vittor Dos Santos Rodrigues, Amapá (Brasil) <i class='fas fa-star'></i>"
 process:
   twig: true
 twig_first: true
