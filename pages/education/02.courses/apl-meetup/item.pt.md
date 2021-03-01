@@ -59,8 +59,6 @@ Não há qualquer tipo de pré-requisitos necessários para a participação nes
 toda a gente é bem-vinda, independentemente da sua idade, ocupação, formação, etc.
 
 
-
-
 # Plano das sessões
 
 Aqui encontras um plano aproximado do que vai ser discutido nas próximas sessões.
@@ -69,25 +67,18 @@ os participantes também ajudem a moldar as sessões.
 Mais em baixo encontras um sumário do que foi discutido nas sessões passadas,
 caso precises de refrescar a memória.
 
- > 1 de março:
- >  - primeiras funções `+` `-` `×` `÷` `|` `*` `⍳` `=` `≠` `≢`
- >  - tensores
- >  - “long right scope” e “left short scope”
- >  - definir funções simples (dfns)
-
-<!---->
-
  > 8 de março:
  >  - utilizar o editor; atalhos do teclado
  >  - alguns comandos úteis: `)ed`, `)save`, `)erase`, `)vars`, ...
- >  - Link
  >  - primeiros operadores `⍨` `/` `¨` `⍣`
+ >  - resolução de problemas básicos com APL
 
 <!---->
 
  > 15 de março:
  >  - tensores dentro de tensores; escalares.
  >  - funções `⊂` `⊆` `⊃`
+ >  - Link
  >  - ...
 
 <!---->
@@ -97,7 +88,14 @@ O resto das sessões ainda está por planear.
 
 ## Sessões passadas
 
- - n/a
+ > 1 de março:
+ >  - primeiras funções `+` `-` `×` `÷` `*` `⍳` `=` `≢` `⍴`
+ >  - tensores
+ >  - “long right scope” e “left short scope”
+ >  - definir funções simples (dfns)
+ >  - primeiro operador `/`
+
+<!---->
 
 
 # Links úteis
@@ -105,6 +103,7 @@ O resto das sessões ainda está por planear.
  - Usa APL no browser – [tryapl.org](https://tryapl.org)
  - APL Wiki – [apl.wiki](https://apl.wiki)
  - Instala Dyalog APL – [dyalog.com/download-zone](https://www.dyalog.com/download-zone.htm)
+ - Competição de programação em APL - [dyalogaplcompetition.com](https://dyalogaplcompetition.com)
  - Livro “Mastering Dyalog APL” – [mastering.dyalog.com](https://mastering.dyalog.com)
  - A sala de chat “APL Orchard” – [apl.chat](https://apl.chat)
  - Arquivo de aulas de APL em chat – [chat.stackexchange.com/rooms/info/52405/the-apl-orchard?tab=conversations](https://chat.stackexchange.com/rooms/info/52405/the-apl-orchard?tab=conversations)

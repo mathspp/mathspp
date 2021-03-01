@@ -77,25 +77,18 @@ the point is that participants will also shape how the sessions go, what we talk
 about, what we learn, etc.
 Further below you can find a summary of each past session.
 
- > 1st of March:
- >  - basic functions `+` `-` `×` `÷` `|` `*` `⍳` `=` `≠` `≢`
- >  - arrays
- >  - “long right scope” and “left short scope”
- >  - defining simple functions (dfns)
-
-<!---->
-
  > 8th of March:
  >  - using the editor; keyboard shortcuts
  >  - some useful commands: `)ed`, `)save`, `)erase`, `)vars`, ...
- >  - Link
  >  - first operators `⍨` `/` `¨` `⍣`
+ >  - solving basic problems with APL
 
 <!---->
 
  > 15th of March:
  >  - nested arrays; scalars
  >  - functions `⊂` `⊆` `⊃`
+ >  - Link
  >  - ...
 
 The remainder of the sections is yet to be planned.
@@ -103,7 +96,14 @@ The remainder of the sections is yet to be planned.
 
 ## Past sessions
 
- - n/a
+ > 1st of March:
+ >  - basic functions `+` `-` `×` `÷` `*` `⍳` `=` `≢`
+ >  - arrays
+ >  - “long right scope” and “left short scope”
+ >  - defining simple functions (dfns)
+ >  - first operator `/`
+
+<!---->
 
 
 # Useful links
@@ -111,6 +111,7 @@ The remainder of the sections is yet to be planned.
  - Try APL online – [tryapl.org](https://tryapl.org)
  - APL Wiki – [apl.wiki](https://apl.wiki)
  - Download Dyalog APL – [dyalog.com/download-zone](https://www.dyalog.com/download-zone.htm)
+ - Dyalog APL competition - [dyalogaplcompetition.com](https://dyalogaplcompetition.com)
  - “Mastering Dyalog APL” book – [mastering.dyalog.com](https://mastering.dyalog.com)
  - The APL Orchard chatroom – [apl.chat](https://apl.chat)
  - Arquive of APL chat lessons – [chat.stackexchange.com/rooms/info/52405/the-apl-orchard?tab=conversations](https://chat.stackexchange.com/rooms/info/52405/the-apl-orchard?tab=conversations)
