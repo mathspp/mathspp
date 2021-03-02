@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "There are many situations in which it is better to use a try statement to handle an error than using an if statement to prevent the error."
-title: "EAFP and LBYL Coding Styles | Pydon't"
+title: "EAFP and LBYL coding styles | Pydon't"
 ---
 
 In Python, if you are doing something that may throw an error, there are many
@@ -70,12 +70,12 @@ Traceback (most recent call last):
 ValueError: invalid literal for int() with base 10: 'asdf'
 ```
 
-# EAFP Instead Of LBYL?
+# EAFP instead of LBYL?
 
 Writing code that follows the EAFP style can be advantageous in several situations,
 and I will present them now.
 
-## Avoid Redundancy
+## Avoid redundancy
 
 Sometimes, coding with EAFP in mind allows you to avoid redundancy in your code.
 Imagine you have a dictionary from which you want to extract a value associated
@@ -126,7 +126,7 @@ print(d.get(key, None))
 Try running the code above and type in keys that don't exist in your dictionary `d`.
 Notice that `None` gets printed in those cases.
 
-## EAFP Can Be Faster
+## EAFP can be faster
 
 If failing is expected to happen not very often, then EAFP is faster:
 you just run a piece of code (your operation) instead of two
@@ -168,7 +168,7 @@ The LBYL approach took almost twice the time.
 If you can make it so that the operation fails very rarely, then you are saving
 time by using a EAFP approach.
 
-## LBYL May Still Fail
+## LBYL may still fail
 
 When interacting with the environment, for example with the Internet or with the OS,
 in between the time it takes for you to do your safety check and then perform the
@@ -218,7 +218,7 @@ The `else` in the `try` block above ensures you only run the code that processes
 `contents` if you are able to read the file.
 (I'll write a Pydon't about this, don't worry!)
 
-## Catch Many Types of Fails
+## Catch many types of fails
 
 If you are trying to perform a complex operation that might fail in several ways,
 it might be easier to just enumerate the exceptions that might be raised instead

@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "Deep unpacking is a feature of Python's assignments that doesn't show up often, but when it does you are glad you know how to use it."
-title: "Deep Unpacking | Pydon't"
+title: "Deep unpacking | Pydon't"
 ---
 
 Deep unpacking (or nested unpacking) provides a more powerful way for you to
@@ -35,7 +35,7 @@ for [structural matching][pep-634], a feature to be introduced in Python 3.10.
 Before showing you how deep unpacking works,
 let's have a quick look at two other nice features about Python's assignments.
 
-## Multiple Assignment
+## Multiple assignment
 
 In Python, multiple assignment is what allows you to write things like
 
@@ -61,7 +61,7 @@ or
 With multiple assignment you can assign, well, multiple variables at the same time,
 provided the right-hand side has as many items as the left-hand side expects.
 
-## Starred Assignment
+## Starred assignment
 
 Starred assignment, that I covered in depth in [this Pydon't][pydont-starred-assignment],
 allows you to write things like
@@ -85,7 +85,7 @@ With starred assignment you can tell Python that you are not sure how many
 items the right-hand side will have, but all of them can be stored
 in a single place.
 
-## Deep Unpacking
+## Deep unpacking
 
 Deep unpacking, or nested unpacking, is similar to multiple assignment in a sense.
 Multiple assignment allows you to match the length of an iterable,
@@ -165,7 +165,7 @@ next to the value it is getting, it becomes very clear what values go where:
 !!! This was removed with [PEP 3113][pep-3113].
 
 
-## In Loops
+## In loops
 
 Deep unpacking can also be used in the implicit assignments of `for` loops,
 it doesn't have to be in explicit assignments with an equals sign!
@@ -177,7 +177,7 @@ and can help you test your code for some errors and bugs.
 
 Nothing better than showing you some code, so you can see for yourself.
 
-# Examples in Code
+# Examples in code
 
 ## Increasing expressiveness
 
@@ -252,7 +252,7 @@ greyscales = [
 print(greyscales)  # [246.8, 224.68, 109.45]
 ```
 
-## Catching Bugs
+## Catching bugs
 
 I said earlier that deep unpacking can also help you find bugs in your code.
 It is not hard to believe that the `colours` list of the previous example

@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "When unpacking a list or tuple in Python, avoid using slices."
-title: "Unpacking With Starred Assignments | Pydon't"
+title: "Unpacking with starred assignments | Pydon't"
 ---
 
 How should you unpack a list or a tuple into the first element and then the rest?
@@ -82,7 +82,7 @@ Traceback (most recent call last):
 ValueError: not enough values to unpack (expected at least 1, got 0)
 ```
 
-# Examples in Code
+# Examples in code
 
 Here are a couple of examples in some actual code, to give more context.
 
@@ -127,7 +127,7 @@ unpack the list into an item to be used now and the rest to be used later.
 
 Another similar example, but with the starred name in the beginning, follows.
 
-## Credit Card Check Digit
+## Credit card check digit
 
 The [Luhn Algorithm][luhn] is used to compute a check digit for things like credit
 card numbers or bank accounts.

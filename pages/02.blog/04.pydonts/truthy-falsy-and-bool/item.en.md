@@ -110,7 +110,7 @@ or sequences (types of objects for which it generally makes sense to use `len` o
 are considered Falsy when they are empty, i.e., when they have length equal to zero.
 But there is one more case that gives a Falsy value:
 
-# The `__bool__` Dunder Method
+# The `__bool__` dunder method
 
  - An object has a Falsy value (that is, is interpreted as `False`) if
 it defines a `__bool__` method that returns `False`.
@@ -170,7 +170,7 @@ apply!
 
 Now a couple of remarks about the functioning of Truthy and Falsy values.
 
-## A Note About Containers With Falsy Objects
+## A note about containers with falsy objects
 
 We said that things like the empty list, zero,
 and the empty dictionary are Falsy.
@@ -191,7 +191,7 @@ True
 True
 ```
 
-## A Note About Checking For `None`
+## A note about checking for `None`
 
 As mentioned above, `None` is Falsy:
 
@@ -267,13 +267,13 @@ if returned is not None:    # if returned:
 
 This recommendation is to avoid problems like the one outlined above.
 
-# Examples in Code
+# Examples in code
 
 Now I will show you some examples of places where using the Truthy
 and Falsy values of Python objects allows you to write more Pythonic
 code.
 
-## 2D Point
+## 2D point
 
 Let us implement a simple class to represent points in a 2D plane,
 which could be an image, a plot or something else.
@@ -316,7 +316,7 @@ We want the `Point2D` to be Falsy when `self.x` is `0` and
 if any of `self.x` or `self.y` are Truthy (that is,
 different from `0`)!
 
-## Handling Error Codes or Error Messages
+## Handling error codes or error messages
 
 It is quite common for functions to return “error codes”:
 integers that encode specific things that did not go quite right,
@@ -344,7 +344,7 @@ if error_msg:
     # Something went wrong, act accordingly.
 ```
 
-## Processing Data
+## Processing data
 
 It is also very common to use Truthy and Falsy values to measure
 if there is still data to be processed.

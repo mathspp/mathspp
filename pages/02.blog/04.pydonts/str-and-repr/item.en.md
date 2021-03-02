@@ -66,7 +66,7 @@ as you can see by looking at [PEP 3140][pep3140] and at the following session:
 True
 ```
 
-# The `__str__` and `__repr__` Dunder Methods
+# The `__str__` and `__repr__` dunder methods
 
 When you are defining your own classes in Python you will probably want to specify how
 your objects should look when printed, given that the default behaviour in Python
@@ -129,7 +129,7 @@ A
 A
 ```
 
-# Examples in Code
+# Examples in code
 
 ## `datetime`
 
@@ -165,7 +165,7 @@ Notice that from its `str` we can't even tell that we were dealing with a
 `datetime.datetime` object.
 
 
-## 2D Point
+## 2D point
 
 An example custom usage of the `__str__` and `__repr__` dunder methods could come
 into play if you were to implement a simple class that represents 2D points,
