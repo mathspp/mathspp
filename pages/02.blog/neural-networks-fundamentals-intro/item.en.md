@@ -2,9 +2,9 @@
 title: "Neural networks fundamentals with Python – intro"
 ---
 
-This first post in a series to implement a neural network from *scratch*
-concerns itself with the setup you have to do,
-both in terms of software and in terms of knowledge.
+This is the first post in a series to implement a neural network from *scratch*.
+We will set things up, in terms of software to install, knowledge we need
+and some code to serve as backbone for the remainder of the series.
 
 ===
 
