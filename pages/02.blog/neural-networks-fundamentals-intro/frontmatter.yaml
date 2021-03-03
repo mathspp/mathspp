@@ -1,0 +1,13 @@
+date: 03-03-2021
+metadata:
+    author: "Rodrigo Girão Serrão"
+    og:image: "https://mathspp.com/blog/neural-networks-fundamentals-intro/thumbnail.png"
+slug: "neural-networks-fundamentals-with-python-intro"
+taxonomy:
+    category: "blogpost"
+    tag:
+      - "machine learning"
+      - "mathematics"
+      - "numpy"
+      - "programming"
+      - "python"
