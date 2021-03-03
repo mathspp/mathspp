@@ -15,6 +15,8 @@ and some code to serve as backbone for the remainder of the series.
 
 In this short series I will be guiding you on how to implement a neural network
 from scratch, so that you really understand how they work.
+By the time we are done, your network will be able to read images
+of handwritten digits and identify them correctly, among other things.
 
 It is incredible that nowadays you can just install tensorflow or pytorch or any
 other machine learning framework, and with just a couple of lines you can train
@@ -114,22 +116,22 @@ to the network.
 Then, the states of each following layer will be computed from the states of the
 previous layer.
 In order to compute the state of a single neuron, what you do is take the states
-of all the $n$ neurons of the preceding layer:
+of all the $m$ neurons of the preceding layer:
 
 $$
-    x_1, ~ x_2, ~ x_3, ~ \cdots, ~ x_n ~~~ ,
+    x_1, ~ x_2, ~ x_3, ~ \cdots, ~ x_m ~~~ ,
 $$
 
 and then add them up, *after* weighting them:
 
 $$
-    w_1x_1 + w_2x_2 + w_3x_3 + \cdots + w_nx_n ~~~ .
+    w_1x_1 + w_2x_2 + w_3x_3 + \cdots + w_mx_m ~~~ .
 $$
 
 Think of this as a vote, in the sense that each neuron of the previous layer is casting
-their vote ($x_i$) about whether or not this neuron should be “on”,
+their vote ($x_j$) about whether or not this neuron should be “on”,
 but then you care more about what some neurons say and less about what other
-neurons say, so you give a weight ($w_i$) to each "opinion".
+neurons say, so you give a weight ($w_j$) to each "opinion".
 
 If we colour the connections depending on the weight they carry, we can have
 an image like the one below:
@@ -140,7 +142,7 @@ Then, you take into account your opinion about the vote, your own *bias* ($b$), 
 add that into the mix:
 
 $$
-    b + w_1x_1 + w_2x_2 + w_3x_3 + \cdots + w_nx_n ~~~ .
+    b + w_1x_1 + w_2x_2 + w_3x_3 + \cdots + w_mx_m ~~~ .
 $$
 
 The final step is to take the result of that vote and plug it in a function,
@@ -150,7 +152,7 @@ If we are using an activation function named $f$, then the state of this neuron
 would be
 
 $$
-    f(b + w_1x_1 + w_2x_2 + w_3x_3 + \cdots + w_nx_n) ~~~ .
+    f(b + w_1x_1 + w_2x_2 + w_3x_3 + \cdots + w_mx_m) ~~~ .
 $$
 
 This is what we will be doing, but instead of computing all of these sums
@@ -160,6 +162,34 @@ in bulk:
  - the connections between the neurons of two consecutive layers can be represented
 as a matrix; and
  - the bias of the neurons of a single layer can be represented as a column vector.
+
+In doing so, we will have a weight matrix $W$ and a bias vector $b$
+that models the connections between two consecutive sets of neurons.
+If the preceding set of neurons has $m$ neurons and the next set of
+neurons has $n$ neurons, then we can have $W$ be a $n \times m$ matrix,
+and $b$ be a column vector of length $n$, and then $W$ and $b$
+can be interpreted as follows:
+
+ - the ith element of $b$ is the bias of the ith neuron of the next set;
+ - the ith row of $W$ contains all the connections from the previous
+neurons to the ith neuron of the next set; and
+ - the jth column of $W$ contains all the connections from the jth
+neuron of the previous set to all the neurons of the next set.
+
+Then, if the preceding layer produced a vector $x$, and if $F$ is
+the activation function being used, we can compute the next set of states
+by performing the calculation
+
+$$
+    F(Wx + b) ~~~,
+$$
+
+where $Wx$ is a matrix multiplication.
+If you look at each element of the column vector $Wx$, you will
+see the multiplications and addition I showed above for a single neuron,
+except now we are doing them in bulk.
+The $+ b$ sums the bias, and then we apply the activation function $F$
+to everything at the same time.
 
 This process by which we take the states of the previous neurons and compute
 the states of the next set of neurons is often dubbed the *forward pass*.
@@ -413,6 +443,15 @@ It doesn't look like much, but on the other hand we have advanced quite a lot.
 In the next blog post we will be aggregating layers in a class for a neural network
 and we will be looking at how neural networks learn.
 
+# The series
+
+These are all the blog posts in this series:
+
+ 1. [Intro][part1]
+ 2. [Network & loss][part2]
+
+[part1]: /blog/neural-networks-fundamentals-with-python-intro
+[part2]: /blog/neural-networks-fundamentals-with-python-network-loss
 [3b1b-nn]: https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
 [3b1b-nn1]: https://www.youtube.com/watch?v=aircAruvnKk
 [numpy]: https://numpy.org
