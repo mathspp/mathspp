@@ -333,7 +333,7 @@ $$
     \frac{\delta L}{\delta x_i} = \frac2n (x_i - t_i) ~~~.
 $$
 
-Essentially, this means that computing the derivatives of the loss function boil down to
+Essentially, this means that computing the derivatives of the loss function boils down to
 the following code:
 
 ```py
