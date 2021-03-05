@@ -330,7 +330,7 @@ the same shape of $x$, and with each element representing how much $x_i$ influen
 the loss:
 
 $$
-    \frac{\delta L}{\delta x_i} = \frac2n x_i - t_i
+    \frac{\delta L}{\delta x_i} = \frac2n (x_i - t_i) ~~~.
 $$
 
 Essentially, this means that computing the derivatives of the loss function boil down to
