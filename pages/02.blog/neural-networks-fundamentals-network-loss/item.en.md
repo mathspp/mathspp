@@ -284,6 +284,7 @@ $$
 f'(x) = \begin{cases}
     1, ~ \text{if} ~ x > 0 \\
     \alpha, ~ \text{if} ~ x \leq 0
+\end{cases}
 $$
 
 Therefore, the derivative of the Leaky ReLU can be coded, for example, as
