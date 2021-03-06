@@ -222,12 +222,12 @@ get away with plain multiplication.
 ! Turns out the first two can also be written by reusing the latter:
 !
 ! $$
-! \begin{cases}\begin{aligned}
-! y_{n-1} &= x_{n-1}W_{n-1} + b_{n-1} \\
-! \frac{\partial L}{\partial b_{n-1}} &= dL(x_n, t) f_{n-1}'(y_{n-1}) \\
-! \frac{\partial L}{\partial x_{n-1}} &= \frac{\partial L}{\partial b_{n-1}} W_{n-1} \\
+! \begin{align}
+! y_{n-1} &= x_{n-1}W_{n-1} + b_{n-1} ~ ,\\
+! \frac{\partial L}{\partial b_{n-1}} &= dL(x_n, t) f_{n-1}'(y_{n-1}) ~ ,\\
+! \frac{\partial L}{\partial x_{n-1}} &= \frac{\partial L}{\partial b_{n-1}} W_{n-1} ~ ,\\
 ! \frac{\partial L}{\partial W_{n-1}} &= \frac{\partial L}{\partial b_{n-1}} x_{n-1}^T
-! \end{aligned}\end{cases}
+! \end{align}
 ! $$
 !
 ! If you got lost in the way or you don't trust me (and you shouldn't), just define $h(x, W, b) = L(f(Wx + b), t)$ and compute $\frac{\partial h}{\partial x}$, $\frac{\partial h}{\partial W}$ and $\frac{\partial h}{\partial b}$ for yourself.
@@ -266,15 +266,15 @@ dWs[n-2] = np.dot(dbs[n-2], xs[n-2].T)
 ! Just notice that $x_{n-1} \equiv x_{n-1}(x_{n-2}, W_{n-2}, b_{n-2})$ is in fact a function of the previous parameters and thus
 !
 ! $$
-! \begin{cases}\begin{aligned}
-! y_{n-2}' &= x_{n-2}W_{n-2} + b_{n-2} \\
-! \frac{\partial L}{\partial b_{n-2}} &= \frac{\partial L}{\partial x_{n-1}}\frac{\partial x_{n-1}}{\partial b_{n-2}} = f_{n-2}'(y_{n-2})\frac{\partial L}{\partial x_{n-1}} \\
+! \begin{align}
+! y_{n-2}' &= x_{n-2}W_{n-2} + b_{n-2} ~ ,\\
+! \frac{\partial L}{\partial b_{n-2}} &= \frac{\partial L}{\partial x_{n-1}}\frac{\partial x_{n-1}}{\partial b_{n-2}} = f_{n-2}'(y_{n-2})\frac{\partial L}{\partial x_{n-1}} ~ ,\\
 ! \frac{\partial L}{\partial x_{n-2}} &=
 !   \frac{\partial L}{\partial x_{n-1}}\frac{\partial x_{n-1}}{\partial x_{n-2}} =
 !   \frac{\partial L}{\partial x_{n-1}} f_{n-2}'(y_{n-2}) \frac{\partial y_{n-2}}{\partial x_{n-2}} =
-!   \frac{\partial L}{\partial b_{n-2}} W_{n-2} \\
+!   \frac{\partial L}{\partial b_{n-2}} W_{n-2} ~ ,\\
 ! \frac{\partial L}{\partial W_{n-2}} &= \frac{\partial L}{\partial x_{n-1}}\frac{\partial x_{n-1}}{\partial W_{n-2}} = \frac{\partial L}{\partial b_{n-2}} x_{n-2}^T
-! \end{aligned}\end{cases}
+! \end{align}
 ! $$
 !
 ! Once again, if you don't trust me just find the partial derivatives of $h(x, W, b) = L(f_{n-1}(W_{n-1}f_{n-2}(Wx + b) + b_{n-1}), t)$.
@@ -318,15 +318,15 @@ If you don't, I would recommend you either get access to it or implement it your
 ! In mathematical notation, the recusive definition can be written out as
 !
 ! $$
-! \begin{cases}\begin{aligned}
-! \frac{\partial L}{\partial x_n} &= dL(x_n, t) \\
-! \frac{\partial L}{\partial b_{n-i}} &= \frac{\partial L}{\partial x_{n-i+1}}f'_{n-i}(x_{n-i}W_{n-i} + b_{n-i}) \\
+! \begin{align}
+! \frac{\partial L}{\partial x_n} &= dL(x_n, t) ~ ,\\
+! \frac{\partial L}{\partial b_{n-i}} &= \frac{\partial L}{\partial x_{n-i+1}}f'_{n-i}(x_{n-i}W_{n-i} + b_{n-i}) ~ ,\\
 ! \frac{\partial L}{\partial x_{n-i}} &=
 !   \frac{\partial L}{\partial x_{n-i+1}}\frac{\partial x_{n-i+1}}{\partial x_{n-i}} =
 !   \frac{\partial L}{\partial x_{n-i+1}} f_{n-i}'(y_{n-i}) \frac{\partial y_{n-i}}{\partial x_{n-i}} =
-!   \frac{\partial L}{\partial b_{n-i}} W_{n-i} \\
+!   \frac{\partial L}{\partial b_{n-i}} W_{n-i} ~ ,\\
 ! \frac{\partial L}{\partial W_{n-i}} &= \frac{\partial L}{\partial x_{n-i+1}}\frac{\partial x_{n-i+1}}{\partial W_{n-i}} = \frac{\partial L}{\partial b_{n-i}} x_{n-i}^T
-! \end{aligned}\end{cases}
+! \end{align}
 ! $$
 
 And this is how you go about implementing backpropagation!
