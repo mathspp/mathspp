@@ -31,7 +31,7 @@ If I succeed, you will be able to grasp what is going on by reading the intuitiv
 and you will be able to check I didn't make any mistakes if you check the mathematics.
 
 ! The mathematical formalisations will be included inside these notices,
-so feel free to ignore these if you do not care about the mathematics behind everything.
+! so feel free to ignore these if you do not care about the mathematics behind everything.
 
 First things first, we need to understand _why_ we need an algorithm like backpropagation.
 
@@ -131,10 +131,10 @@ because in order to know how a layer influences the loss, you first need to know
 ! \begin{align*}
 ! L(x_n, t) &= L(f_{n-1}(W_{n-1}x_{n-1} + b_{n-1}), t) \\
 ! &= L(f_{n-1}(W_{n-1}f_{n-2}(x_{n-2}W_{n-2} + b_{n-2}) + b_{n-1})), t) \\
-! &= L(f_{n-1}(W_{n-1}f_{n-2}(W_{n-2}f_{n-3}(\cdots f_0(W_0x_0 + b_0) + \cdots) + b_{n-2}) + b_{n-1})), t)
+! &= ...
 ! \end{align*}
 ! $$
-! Taking the partial derivative of $L$ with respect to $W_0$ will involve many more chain rules than if you take the partial derivative of $L$ with respect to $W_{N-1}$.
+! Taking the partial derivative of $L$ with respect to $W_0$ will involve many more chain rules than if you take the partial derivative of $L$ with respect to $W_{n-1}$.
 
 
 # Matrix calculus
@@ -221,12 +221,14 @@ get away with plain multiplication.
 ! We start off by computing $\frac{\partial L}{\partial x_{n-1}}$, $\frac{\partial L}{\partial W_{n-1}}$ and $\frac{\partial L}{\partial b_{n-1}}$.
 ! Turns out the first two can also be written by reusing the latter:
 !
-! $$\begin{cases}\begin{aligned}
+! $$
+! \begin{cases}\begin{aligned}
 ! y_{n-1} &= x_{n-1}W_{n-1} + b_{n-1} \\
 ! \frac{\partial L}{\partial b_{n-1}} &= dL(x_n, t) f_{n-1}'(y_{n-1}) \\
-! \frac{\partial L}{\partial x_{n-1}} &= \frac{\partial L}{\partial b_{n-1}} \W_{n-1} \\
+! \frac{\partial L}{\partial x_{n-1}} &= \frac{\partial L}{\partial b_{n-1}} W_{n-1} \\
 ! \frac{\partial L}{\partial W_{n-1}} &= \frac{\partial L}{\partial b_{n-1}} x_{n-1}^T
-! \end{aligned}\end{cases}$$
+! \end{aligned}\end{cases}
+! $$
 !
 ! If you got lost in the way or you don't trust me (and you shouldn't), just define $h(x, W, b) = L(f(Wx + b), t)$ and compute $\frac{\partial h}{\partial x}$, $\frac{\partial h}{\partial W}$ and $\frac{\partial h}{\partial b}$ for yourself.
 ! Do _not_ forget that you are dealing with vectors and matrices, so you need to be careful with the shapes.
@@ -263,7 +265,8 @@ dWs[n-2] = np.dot(dbs[n-2], xs[n-2].T)
 ! Well, this is it!
 ! Just notice that $x_{n-1} \equiv x_{n-1}(x_{n-2}, W_{n-2}, b_{n-2})$ is in fact a function of the previous parameters and thus
 !
-! $$\begin{cases}\begin{aligned}
+! $$
+! \begin{cases}\begin{aligned}
 ! y_{n-2}' &= x_{n-2}W_{n-2} + b_{n-2} \\
 ! \frac{\partial L}{\partial b_{n-2}} &= \frac{\partial L}{\partial x_{n-1}}\frac{\partial x_{n-1}}{\partial b_{n-2}} = f_{n-2}'(y_{n-2})\frac{\partial L}{\partial x_{n-1}} \\
 ! \frac{\partial L}{\partial x_{n-2}} &=
@@ -271,7 +274,8 @@ dWs[n-2] = np.dot(dbs[n-2], xs[n-2].T)
 !   \frac{\partial L}{\partial x_{n-1}} f_{n-2}'(y_{n-2}) \frac{\partial y_{n-2}}{\partial x_{n-2}} =
 !   \frac{\partial L}{\partial b_{n-2}} W_{n-2} \\
 ! \frac{\partial L}{\partial W_{n-2}} &= \frac{\partial L}{\partial x_{n-1}}\frac{\partial x_{n-1}}{\partial W_{n-2}} = \frac{\partial L}{\partial b_{n-2}} x_{n-2}^T
-! \end{aligned}\end{cases}$$
+! \end{aligned}\end{cases}
+! $$
 !
 ! Once again, if you don't trust me just find the partial derivatives of $h(x, W, b) = L(f_{n-1}(W_{n-1}f_{n-2}(Wx + b) + b_{n-1}), t)$.
 
@@ -313,7 +317,8 @@ If you don't, I would recommend you either get access to it or implement it your
 
 ! In mathematical notation, the recusive definition can be written out as
 !
-! $$\begin{cases}\begin{aligned}
+! $$
+! \begin{cases}\begin{aligned}
 ! \frac{\partial L}{\partial x_n} &= dL(x_n, t) \\
 ! \frac{\partial L}{\partial b_{n-i}} &= \frac{\partial L}{\partial x_{n-i+1}}f'_{n-i}(x_{n-i}W_{n-i} + b_{n-i}) \\
 ! \frac{\partial L}{\partial x_{n-i}} &=
@@ -321,7 +326,8 @@ If you don't, I would recommend you either get access to it or implement it your
 !   \frac{\partial L}{\partial x_{n-i+1}} f_{n-i}'(y_{n-i}) \frac{\partial y_{n-i}}{\partial x_{n-i}} =
 !   \frac{\partial L}{\partial b_{n-i}} W_{n-i} \\
 ! \frac{\partial L}{\partial W_{n-i}} &= \frac{\partial L}{\partial x_{n-i+1}}\frac{\partial x_{n-i+1}}{\partial W_{n-i}} = \frac{\partial L}{\partial b_{n-i}} x_{n-i}^T
-! \end{aligned}\end{cases}$$
+! \end{aligned}\end{cases}
+! $$
 
 And this is how you go about implementing backpropagation!
 If you know calculus I challenge you to derive the formulas all by yourself.
