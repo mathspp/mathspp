@@ -1,0 +1,13 @@
+date: 06-03-2021
+metadata:
+    author: "Rodrigo Girão Serrão"
+    og:image: "https://mathspp.com/blog/neural-networks-fundamentals-with-python-backpropagation/thumbnail.png"
+slug: "neural-networks-fundamentals-with-python-backpropagation"
+taxonomy:
+    category: "blogpost"
+    tag:
+      - "machine learning"
+      - "mathematics"
+      - "numpy"
+      - "programming"
+      - "python"
