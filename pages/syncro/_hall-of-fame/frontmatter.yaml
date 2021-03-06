@@ -165,6 +165,7 @@ hof:
   - "João Fidalgo (Portugal)"
   - "José Henrique Costa e Penha Júnior, Manaus (Brasil)"
   - "Fernando Lucatelli Nunes (Países Baixos) <i class='fas fa-star'></i>"
+  - "Gustavo Giardi (Brasil)"
 process:
   twig: true
 twig_first: true
