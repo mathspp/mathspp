@@ -449,9 +449,11 @@ These are all the blog posts in this series:
 
  1. [Intro][part1]
  2. [Network & loss][part2]
+ 3. [Backpropagation][part3]
 
 [part1]: /blog/neural-networks-fundamentals-with-python-intro
 [part2]: /blog/neural-networks-fundamentals-with-python-network-loss
+[part3]: /blog/neural-networks-fundamentals-with-python-backpropagation
 [3b1b-nn]: https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
 [3b1b-nn1]: https://www.youtube.com/watch?v=aircAruvnKk
 [numpy]: https://numpy.org
