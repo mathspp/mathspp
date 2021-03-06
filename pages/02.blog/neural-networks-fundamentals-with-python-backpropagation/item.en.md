@@ -223,10 +223,10 @@ get away with plain multiplication.
 !
 ! $$
 ! \begin{align}
-! y_{n-1} &= x_{n-1}W_{n-1} + b_{n-1} ~ ,\\
-! \frac{\partial L}{\partial b_{n-1}} &= dL(x_n, t) f_{n-1}'(y_{n-1}) ~ ,\\
-! \frac{\partial L}{\partial x_{n-1}} &= \frac{\partial L}{\partial b_{n-1}} W_{n-1} ~ ,\\
-! \frac{\partial L}{\partial W_{n-1}} &= \frac{\partial L}{\partial b_{n-1}} x_{n-1}^T
+! &y_{n-1} = x_{n-1}W_{n-1} + b_{n-1} ~ ,\\
+! &\frac{\partial L}{\partial b_{n-1}} = dL(x_n, t) f_{n-1}'(y_{n-1}) ~ ,\\
+! &\frac{\partial L}{\partial x_{n-1}} = \frac{\partial L}{\partial b_{n-1}} W_{n-1} ~ ,\\
+! &\frac{\partial L}{\partial W_{n-1}} = \frac{\partial L}{\partial b_{n-1}} x_{n-1}^T
 ! \end{align}
 ! $$
 !
@@ -267,13 +267,13 @@ dWs[n-2] = np.dot(dbs[n-2], xs[n-2].T)
 !
 ! $$
 ! \begin{align}
-! y_{n-2}' &= x_{n-2}W_{n-2} + b_{n-2} ~ ,\\
-! \frac{\partial L}{\partial b_{n-2}} &= \frac{\partial L}{\partial x_{n-1}}\frac{\partial x_{n-1}}{\partial b_{n-2}} = f_{n-2}'(y_{n-2})\frac{\partial L}{\partial x_{n-1}} ~ ,\\
-! \frac{\partial L}{\partial x_{n-2}} &=
+! &y_{n-2} = x_{n-2}W_{n-2} + b_{n-2} ~ ,\\
+! &\frac{\partial L}{\partial b_{n-2}} = \frac{\partial L}{\partial x_{n-1}}\frac{\partial x_{n-1}}{\partial b_{n-2}} = f_{n-2}'(y_{n-2})\frac{\partial L}{\partial x_{n-1}} ~ ,\\
+! &\frac{\partial L}{\partial x_{n-2}} =
 !   \frac{\partial L}{\partial x_{n-1}}\frac{\partial x_{n-1}}{\partial x_{n-2}} =
 !   \frac{\partial L}{\partial x_{n-1}} f_{n-2}'(y_{n-2}) \frac{\partial y_{n-2}}{\partial x_{n-2}} =
 !   \frac{\partial L}{\partial b_{n-2}} W_{n-2} ~ ,\\
-! \frac{\partial L}{\partial W_{n-2}} &= \frac{\partial L}{\partial x_{n-1}}\frac{\partial x_{n-1}}{\partial W_{n-2}} = \frac{\partial L}{\partial b_{n-2}} x_{n-2}^T
+! &\frac{\partial L}{\partial W_{n-2}} = \frac{\partial L}{\partial x_{n-1}}\frac{\partial x_{n-1}}{\partial W_{n-2}} = \frac{\partial L}{\partial b_{n-2}} x_{n-2}^T
 ! \end{align}
 ! $$
 !
@@ -319,13 +319,13 @@ If you don't, I would recommend you either get access to it or implement it your
 !
 ! $$
 ! \begin{align}
-! \frac{\partial L}{\partial x_n} &= dL(x_n, t) ~ ,\\
-! \frac{\partial L}{\partial b_{n-i}} &= \frac{\partial L}{\partial x_{n-i+1}}f'_{n-i}(x_{n-i}W_{n-i} + b_{n-i}) ~ ,\\
-! \frac{\partial L}{\partial x_{n-i}} &=
+! &\frac{\partial L}{\partial x_n} = dL(x_n, t) ~ ,\\
+! &\frac{\partial L}{\partial b_{n-i}} = \frac{\partial L}{\partial x_{n-i+1}}f'_{n-i}(x_{n-i}W_{n-i} + b_{n-i}) ~ ,\\
+! &\frac{\partial L}{\partial x_{n-i}} =
 !   \frac{\partial L}{\partial x_{n-i+1}}\frac{\partial x_{n-i+1}}{\partial x_{n-i}} =
 !   \frac{\partial L}{\partial x_{n-i+1}} f_{n-i}'(y_{n-i}) \frac{\partial y_{n-i}}{\partial x_{n-i}} =
 !   \frac{\partial L}{\partial b_{n-i}} W_{n-i} ~ ,\\
-! \frac{\partial L}{\partial W_{n-i}} &= \frac{\partial L}{\partial x_{n-i+1}}\frac{\partial x_{n-i+1}}{\partial W_{n-i}} = \frac{\partial L}{\partial b_{n-i}} x_{n-i}^T
+! &\frac{\partial L}{\partial W_{n-i}} = \frac{\partial L}{\partial x_{n-i+1}}\frac{\partial x_{n-i+1}}{\partial W_{n-i}} = \frac{\partial L}{\partial b_{n-i}} x_{n-i}^T
 ! \end{align}
 ! $$
 
