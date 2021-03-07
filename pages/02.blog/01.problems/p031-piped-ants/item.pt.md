@@ -40,6 +40,6 @@ Também podes usar o link para partilhar a tua própria solução nos comentári
 
 Se gostaste deste problema e se gostavas de receber novos problemas diretamente na tua caixa de correio, então [subscreve a newsletter dos Problemas][subscribe].
 
-[email]: mailto:rodrigo@mathspp.com?subject=Resposta%20do%20problema
+[email]: mailto:rodrigo@mathspp.com?subject=Resposta%20para%20{{ page.title|regex_replace(['/ /'], ['%20']) }}
 [subscribe]: https://mathspp.com/subscribe
 [sol]: ../../solutions/{{ page.slug }}
