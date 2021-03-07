@@ -89,7 +89,7 @@ How we set this forward pass up is highly relevant because it will greatly impac
 # Propagation of effects
 
 After the forward pass is complete we will want to see by how much the network got the answer wrong.
-We do this by measuring the loss with `net.loss`.
+We do this by measuring the loss with `net._loss_function.loss`.
 Then, for each `layer`, we will want to update `layer._W` and `layer._b` so that, next time,
 the loss is slightly lower (i.e., the answer is slightly more correct).
 
@@ -117,7 +117,7 @@ Then, the layer in `self._layers[2]` will take it and create `xs[3]`...
 Up until the point where the layer in `self._layers[n-1]` takes `xs[n-1]` and creates `xs[n]`,
 the final network output.
 Then, that output `xs[n]` directly influences the loss, because the loss
-is `net.loss(xs[n], t)`, where `t` is the target output.
+is `net._loss_function.loss(xs[n], t)`, where `t` is the target output.
 
 The lines above should paint a picture of "closeness" to the loss,
 helping you understand that the effects of `xs[n]` on the loss are much more immediate than the effects of `xs[3]` on the loss,
@@ -157,7 +157,7 @@ The two other things we need to know are:
 
 Strictly speaking, we don't really need to _know_ what they are, we just need a way to compute them,
 and we did that in [the previous post in the series][part2].
-So we have the derivative of the loss function, with respect to the network's output, as `net.loss_function.dloss`.
+So we have the derivative of the loss function, with respect to the network's output, as `net._loss_function.dloss`.
 Similarly, for each layer, we have `layer.act_function.df` that represents that activation function's derivative.
 
 The backpropagation algorithm is a really clever algorithm because it introduces some intermediate variables that allow us to reuse many computations, speeding up what could be a _really_ slow algorithm.
@@ -230,13 +230,13 @@ get away with plain multiplication.
 ! \end{align}
 ! $$
 !
-! If you got lost in the way or you don't trust me (and you shouldn't), just define $h(x, W, b) = L(f(Wx + b), t)$ and compute $\frac{\partial h}{\partial x}$, $\frac{\partial h}{\partial W}$ and $\frac{\partial h}{\partial b}$ for yourself.
+! If you got lost along the way or you don't trust me (and you shouldn't), just define $h(x, W, b) = L(f(Wx + b), t)$ and compute $\frac{\partial h}{\partial x}$, $\frac{\partial h}{\partial W}$ and $\frac{\partial h}{\partial b}$ for yourself.
 ! Do _not_ forget that you are dealing with vectors and matrices, so you need to be careful with the shapes.
 
 
 ## Next step
 
-Now that we know how to quantify the way `xs[n-1]`, `Ws[n-1]` and `bs[n-1]` influence the loss (because we just computed `dxs[n-1]`, `dMs[n-1]` and `dbs[n-1]`), it is time to quantify how `xs[n-2]`, `Ws[n-2]` and `bs[n-2]` influence the loss.
+Now that we know how to quantify the way `xs[n-1]`, `Ws[n-1]`, and `bs[n-1]` influence the loss (because we just computed `dxs[n-1]`, `dMs[n-1]` and `dbs[n-1]`), it is time to quantify how `xs[n-2]`, `Ws[n-2]` and `bs[n-2]` influence the loss.
 
 Here is the formula for the loss again, this time showing the dependence on `xs[n-2]`, `Ws[n-2]` and `bs[n-2]`:
 
@@ -248,7 +248,7 @@ loss = L(fs[n-1](
 ) + bs[n-1]), t)
 ```
 
-You may feel it is reasonable, or maybe you don't, but the fact that the dependences on `xs[n-2]`, `Ws[n-2]` and `bs[n-2]` are hidden behind `xs[n-1]`, because `xs[n-1] = fs[n-2](dot(Ws[n-2], xs[n-2]) + bs[n-2])`, means we can compute `xs[n-2]`, `Ws[n-2]` and `bs[n-2]` at the
+You may feel it is reasonable, or maybe you don't, but the fact that the dependences on `xs[n-2]`, `Ws[n-2]` and `bs[n-2]` are hidden behind `xs[n-1]` because `xs[n-1] = fs[n-2](dot(Ws[n-2], xs[n-2]) + bs[n-2])`, means we can compute `xs[n-2]`, `Ws[n-2]` and `bs[n-2]` at the
 expense of `dxs[n-1]`.
 
 After the maths is carried out, the formulas turn out to be:
@@ -268,7 +268,7 @@ dWs[n-2] = np.dot(dbs[n-2], xs[n-2].T)
 ! $$
 ! \begin{align}
 ! &y_{n-2} = x_{n-2}W_{n-2} + b_{n-2} ~ ,\\
-! &\frac{\partial L}{\partial b_{n-2}} = \frac{\partial L}{\partial x_{n-1}}\frac{\partial x_{n-1}}{\partial b_{n-2}} = f_{n-2}'(y_{n-2})\frac{\partial L}{\partial x_{n-1}} ~ ,\\
+! &\frac{\partial L}{\partial b_{n-2}} = \frac{\partial L}{\partial x_{n-1}}\frac{\partial x_{n-1}}{\partial b_{n-2}} = \frac{\partial L}{\partial x_{n-1}}f_{n-2}'(y_{n-2}) ~ ,\\
 ! &\frac{\partial L}{\partial x_{n-2}} =
 !   \frac{\partial L}{\partial x_{n-1}}\frac{\partial x_{n-1}}{\partial x_{n-2}} =
 !   \frac{\partial L}{\partial x_{n-1}} f_{n-2}'(y_{n-2}) \frac{\partial y_{n-2}}{\partial x_{n-2}} =
@@ -351,6 +351,7 @@ a small multiple from the actual parameters:
 ```py
 class NeuralNetwork:
     # ...
+
     def train(self, x, t):
         """Train the network on input x and expected output t."""
 
@@ -420,10 +421,7 @@ Therefore, we will make this number a network parameter.
 
 Next thing we can do is restore the `forward_pass` to be the function
 that simply computes the output, and write our own loop in the `train`
-function, given that the `forward_pass` doesn't even return exactly
-what we care about: the `forward_pass` returns the output of every
-layer, while we care about the numbers that were computed right *before*
-applying the activation function.
+function.
 
 With all this in mind, we could get the following:
 
@@ -495,13 +493,13 @@ net = NeuralNetwork([
 
 def assess(net, data, ts):
     correct = 0
-    cs = []
+    # cs = []
     for i in range(data.shape[1]):
         out = net.forward_pass(col(data[:, i]))
         guess = np.argmax(np.ndarray.flatten(out))
         if ts[guess, i]:
             correct += 1
-        cs.append(guess)
+        # cs.append(guess)
     # fig = plt.figure()
     # plt.scatter(data[0, :1000], data[1, :1000], c=cs)
     # fig.show()
@@ -523,11 +521,15 @@ ones in the top-left and lower-right corners.
 The lines that are commented out are just a quick and dirty way
 of visualising the guesses that the network is making.
 If you have `matplotlib` available, you can uncomment those and
-you may get something like the figures below:
+you may get something like the figures below.
+
+The first figure shows the network trying to distinguish the points
+before training (we can see the network thinks all points are the same),
+and the next figure shows the network already distinguishes many points.
 
 ![](_quadrants_pre.png "Before training the network thinks all points are the same.")
 
-![](_quadrants_pos.png "After training the network can distinguish most of the points.")
+![](_quadrants_pos.png "After training the network can distinguish many points.")
 
 
 # Wrap-up & current code
@@ -676,13 +678,13 @@ net = NeuralNetwork([
 
 def assess(net, data, ts):
     correct = 0
-    cs = []
+    # cs = []
     for i in range(data.shape[1]):
         out = net.forward_pass(col(data[:, i]))
         guess = np.argmax(np.ndarray.flatten(out))
         if ts[guess, i]:
             correct += 1
-        cs.append(guess)
+        # cs.append(guess)
     # fig = plt.figure()
     # plt.scatter(data[0, :1000], data[1, :1000], c=cs)
     # fig.show()
