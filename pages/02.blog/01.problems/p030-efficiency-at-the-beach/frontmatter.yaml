@@ -2,6 +2,7 @@ date: 21-02-2021
 metadata:
     author: Rodrigo Girão Serrão
     og:image: https://mathspp.com/blog/problems/efficienty-at-the-beach/thumbnail.png
+never_cache_twig: false
 process:
     twig: true
 slug: efficiency-at-the-beach

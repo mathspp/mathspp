@@ -8,5 +8,6 @@ content:
         dir: desc
 metadata:
     author: Rodrigo Girão Serrão
+never_cache_twig: false
 slug: solutions
 visible: false

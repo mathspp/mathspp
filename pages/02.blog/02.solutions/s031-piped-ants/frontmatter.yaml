@@ -2,6 +2,7 @@ date: 07-03-2021
 metadata:
     author: Rodrigo Girão Serrão
     og:image: https://mathspp.com/blog/solutions/piped-ants/thumbnail.png
+never_cache_twig: false
 process:
     twig: true
 slug: piped-ants
