@@ -6,7 +6,7 @@ Explora a biologia com o poder dos computadores.
 
 ===
 
-![](thumbnail.png "Foto original do 'National Cancer Insitute' no site Unsplash")
+![](thumbnail.png?cropZoom=400,400 "Foto original do 'National Cancer Insitute' no site Unsplash")
 
 
 # Objetivo
@@ -25,7 +25,7 @@ dentro da bioinformática.
 Por exemplo, na sessão cujo poster incluí em baixo, os problemas estavam todos
 relacionados com ADN.
 
-![](_is_python_in_your_dna_09032021.jpg "Poster da sessão “Is Python in your DNA”.")
+![](_is_python_in_your_dna_09032021.jpg?cropZoom=400,400 "Poster da sessão “Is Python in your DNA”.")
 
 Na minha opinião, o workshop fica bastante interessante se a linguagem de programação
 usada for APL, mas podemos usar qualquer linguagem de programação que seja acordada.
