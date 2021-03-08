@@ -4,7 +4,7 @@ I am really passionate about sharing knowledge,
 and that is why I love leading workshops and teaching courses
 on all things related to mathematics and programming.
 
-I have taught over 540 people for over 41 hours of live teaching
+I have taught over 600 people for over 45 hours of live teaching
 (and that is excluding the hundreds of hours I spent tutoring dozens
 of students...),
 and here is what a couple of them had to say about their experience:

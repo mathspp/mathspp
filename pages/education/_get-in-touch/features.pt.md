@@ -3,7 +3,7 @@
 Partilhar conhecimento é uma das minhas grandes paixões e é por isso que adoro
 organizar cursos e workshops sobre todos os temas relacionados com matemática e programação.
 
-Já tive mais de 540 alunos ao longo de mais de 41 horas de workshops e cursos
+Já tive mais de 600 alunos ao longo de mais de 45 horas de workshops e cursos
 (excluindo algumas centenas de horas de explicações que dei a mais de 20 alunos),
 e deixo aqui o que dois deles tiveram a dizer em relação às experiências deles:
 
