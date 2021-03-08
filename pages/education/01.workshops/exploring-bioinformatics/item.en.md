@@ -6,7 +6,7 @@ Explore biology problems with the power of computers.
 
 ===
 
-![](thumbnail.png "Original photo by National Cancer Insitute on Unsplash")
+![](thumbnail.png?cropZoom=400,400 "Original photo by National Cancer Insitute on Unsplash")
 
 
 # Purpose
@@ -25,7 +25,7 @@ of bioinformatics.
 For example, for the course whose poster I include below, the problems selected
 were all related to DNA.
 
-![](_is_python_in_your_dna_09032021.jpg "“Is Python in your DNA” workshop session poster.")
+![](_is_python_in_your_dna_09032021.jpg?cropZoom=400,400 "“Is Python in your DNA” workshop session poster.")
 
 In my opinion, this workshop becomes really interesting if we use APL as the
 programming language in which we solve the problems,
