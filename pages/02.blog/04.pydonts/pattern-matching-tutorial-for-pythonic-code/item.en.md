@@ -613,7 +613,7 @@ when a custom class is used in a `case`
  - built-in Python classes can be used in `case` statements to validate types
 
 If you liked this Pydon't be sure to leave a reaction below and share this with your friends and fellow Pythonistas.
-If you found this article really valuable then you could [buy me a slice of pizza ��][pizza]!
+If you found this article really valuable then you could [buy me a slice of pizza 🍕][pizza]!
 
 Also, [don't forget to subscribe to the newsletter][subscribe] so you don't miss
 a single Pydon't!
