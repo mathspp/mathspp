@@ -23,7 +23,7 @@ Os problemas são retirados de websites como o [Rosalind][rosalind],
 e podem ser escolhidos de forma a pertencerem todos a um mesmo subtópico
 dentro da bioinformática.
 Por exemplo, na sessão cujo poster incluí em baixo, os problemas estavam todos
-relacionados com ADN.
+relacionados com ADN (os problemas [SUBS], [CONS], [PROB], [KMP] e [LCSM]).
 
 ![](_is_python_in_your_dna_09032021.jpg?cropZoom=400,400 "Poster da sessão “Is Python in your DNA”.")
 
@@ -41,6 +41,7 @@ podes [enviar-me um email][emailme].
 no âmbito da [6a Semana da Bioengenharia][bioengineering-week], um evento
 organizado por alunos da minha universidade que frequentam cursos relacionados
 com a área.
+Durante a sessão escrevemos algum código que se encontra [aqui][code-0903].
 
 
 # Links úteis
@@ -52,3 +53,9 @@ com a área.
 [bioengineering-week]: https://www.linkedin.com/company/semana-da-bioengenharia/
 [mailme]: mailto:rodrigo@mathspp.com
 [rosalind]: http://rosalind.info
+[SUBS]: http://rosalind.info/problems/subs/
+[CONS]: http://rosalind.info/problems/cons/
+[PROB]: http://rosalind.info/problems/prob/
+[KMP]: http://rosalind.info/problems/kmp/
+[LCSM]: http://rosalind.info/problems/lcsm/
+[code-0903]: https://github.com/RojerGS/workshops/tree/master/sessions/is-python-in-your-dna-090321

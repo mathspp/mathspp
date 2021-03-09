@@ -23,7 +23,7 @@ sources such as [Rosalind][rosalind].
 Problems can be picked in such a way that they fall into a more specific subset
 of bioinformatics.
 For example, for the course whose poster I include below, the problems selected
-were all related to DNA.
+were all related to DNA (problems [SUBS], [CONS], [PROB], [KMP], and [LCSM]).
 
 ![](_is_python_in_your_dna_09032021.jpg?cropZoom=400,400 "“Is Python in your DNA” workshop session poster.")
 
@@ -42,6 +42,7 @@ or [email me][mailme] if you prefer!
 on the 9th of March of 2021,
 as part of a week-long event on the subject of – you guessed it – bioengineering.
 This event was prepared by students from degrees related to bioengineering at my old university.
+The code written during the session can be found [here][code-0903].
 
 
 # Useful links
@@ -53,3 +54,9 @@ This event was prepared by students from degrees related to bioengineering at my
 [bioengineering-week]: https://www.linkedin.com/company/semana-da-bioengenharia/
 [mailme]: mailto:rodrigo@mathspp.com
 [rosalind]: http://rosalind.info
+[SUBS]: http://rosalind.info/problems/subs/
+[CONS]: http://rosalind.info/problems/cons/
+[PROB]: http://rosalind.info/problems/prob/
+[KMP]: http://rosalind.info/problems/kmp/
+[LCSM]: http://rosalind.info/problems/lcsm/
+[code-0903]: https://github.com/RojerGS/workshops/tree/master/sessions/is-python-in-your-dna-090321
