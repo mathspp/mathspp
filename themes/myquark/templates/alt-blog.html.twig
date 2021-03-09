@@ -36,10 +36,16 @@
         {% endif %}
 
         <p>{{ 'THEME_MY_QUARK.COURSES.TOPICS'|t }}
-        <!-- Custom listing of topics covered in these alt-blog pages. Built by using the sidebar and taxonomylist twig templates. Also, cf. the Grav API for the .getTaxonomyItemKeys used. -->
+        {# Custom listing of topics covered in these alt-blog pages. Built by using the sidebar and taxonomylist twig templates. Also, cf. the Grav API for the .getTaxonomyItemKeys used. #}
         <span class="tags" style="font-size:125%">
         {% set tax_type = 'topic' %}
-        {% for key in taxonomy.getTaxonomyItemKeys(tax_type)|sort %}
+        {% set taxlist = [] %}
+        {# Iterate over the children of this page, look for the taxonomy type we care about, and create a list with the unique ones. #}
+        {% for child in page.collection() %}
+            {% set sub_taxlist = child.taxonomy[tax_type]|filter(name => name not in taxlist) %}
+            {% set taxlist = taxlist|merge(sub_taxlist) %}
+        {% endfor %}
+        {% for key in taxlist|sort %}
             {% set label_class = uri.param(tax_type) == key ? 'label-primary' : 'label-secondary' %}
             <a class="label label-rounded {{ label_class }}" href="{{ page.url }}/{{ tax_type }}{{ config.system.param_sep }}{{ key }}">{{ key }}</a>
         {% endfor %}
