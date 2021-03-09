@@ -1,0 +1,10 @@
+date: 02-03-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: "https://mathspp.com/blog/pydonts/pattern-matching-tutorial-for-pythonic-code/thumbnail.png"
+slug: "pattern-matching-tutorial-for-pythonic-code"
+taxonomy:
+    category: [blogpost, pydont]
+    tag:
+      - "programming"
+      - "python"
