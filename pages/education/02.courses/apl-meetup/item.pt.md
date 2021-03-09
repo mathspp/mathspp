@@ -67,19 +67,9 @@ os participantes também ajudem a moldar as sessões.
 Mais em baixo encontras um sumário do que foi discutido nas sessões passadas,
 caso precises de refrescar a memória.
 
- > 8 de março:
- >  - utilizar o editor; atalhos do teclado
- >  - alguns comandos úteis: `)ed`, `)save`, `)erase`, `)vars`, ...
- >  - primeiros operadores `⍨` `/` `¨` `⍣`
- >  - resolução de problemas básicos com APL
-
-<!---->
-
  > 15 de março:
- >  - tensores dentro de tensores; escalares.
- >  - funções `⊂` `⊆` `⊃`
  >  - Link
- >  - ...
+ >  - resolução de problemas de [problems.tryapl.org](https://problems.tryapl.org)
 
 <!---->
 
@@ -87,6 +77,17 @@ O resto das sessões ainda está por planear.
 
 
 ## Sessões passadas
+
+ > 8 de março:
+ >  - usar o editor do Windows ou o RIDE
+ >  - comandos `)ed`, `)vars`, `)erase`, `)clear`, `)continue`, `)save`, `)load`
+ >  - operadores `⍨`, `/` e `⍣`
+ >  - funções trigonométricas `○`, recursão com `∇`, números aleatórios com `?`
+ >  - guardas em dfns
+ >  - definir dfns com o editor (função `Sqrt`, `Factorial`)
+ >  - gerar números distribuídos de forma normal com [Box-Muller](https://en.wikipedia.org/wiki/Box%E2%80%93Muller_transform)
+
+<!---->
 
  > 1 de março:
  >  - primeiras funções `+` `-` `×` `÷` `*` `⍳` `=` `≢` `⍴`

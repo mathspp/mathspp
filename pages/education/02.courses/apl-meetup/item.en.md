@@ -77,24 +77,25 @@ the point is that participants will also shape how the sessions go, what we talk
 about, what we learn, etc.
 Further below you can find a summary of each past session.
 
- > 8th of March:
- >  - using the editor; keyboard shortcuts
- >  - some useful commands: `)ed`, `)save`, `)erase`, `)vars`, ...
- >  - first operators `⍨` `/` `¨` `⍣`
- >  - solving basic problems with APL
-
-<!---->
-
  > 15th of March:
- >  - nested arrays; scalars
- >  - functions `⊂` `⊆` `⊃`
  >  - Link
- >  - ...
+ >  - solving problems from [problems.tryapl.org](https://problems.tryapl.org)
 
 The remainder of the sections is yet to be planned.
 
 
 ## Past sessions
+
+ > 8th of March:
+ >  - using the Windows interpreter or RIDE
+ >  - commands `)ed`, `)vars`, `)erase`, `)clear`, `)continue`, `)save`, `)load`
+ >  - operators `⍨`, `/`, and `⍣`
+ >  - trigonometric functions with `○`, recursion with `∇`, random numbers with `?`
+ >  - basic guards in dfns with `:`
+ >  - using the editor to define dfns (`Sqrt` and `Factorial` functions)
+ >  - generating normally distributed random numbers with [Box-Muller](https://en.wikipedia.org/wiki/Box%E2%80%93Muller_transform)
+
+<!---->
 
  > 1st of March:
  >  - basic functions `+` `-` `×` `÷` `*` `⍳` `=` `≢`
