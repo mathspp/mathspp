@@ -108,7 +108,8 @@ to match `n` against.
 Patterns can also contain alternatives, denoted by the `|`
 in `case 0 | 1`, which matches if `n` is either 0 or 1.
 The second pattern, `case _:`, is the go-to way of matching
-*anything*, so it is acting more or less like the `else` of
+*anything* (when you don't care about *what* you are matching),
+so it is acting more or less like the `else` of
 the first definition.
 
 
@@ -136,10 +137,10 @@ def normalise_colour_info(colour):
             raise ValueError("Unknown colour info.")
     return (name, (r, g, b, a))
 
-print(normalise_colour_info((240, 248, 255)))                   # ('', (240, 248, 255, 0))
-print(normalise_colour_info((240, 248, 255, 0)))                # ('', (240, 248, 255, 0))
-print(normalise_colour_info(("AliceBlue", (240, 248, 255))))    # ('AliceBlue', (240, 248, 255, 0))
-print(normalise_colour_info(("AliceBlue", (240, 248, 255, 0)))) # ('AliceBlue', (240, 248, 255, 0))
+print(normalise_colour_info((240, 248, 255)))                       # ('', (240, 248, 255, 0))
+print(normalise_colour_info((240, 248, 255, 0)))                    # ('', (240, 248, 255, 0))
+print(normalise_colour_info(("AliceBlue", (240, 248, 255))))        # ('AliceBlue', (240, 248, 255, 0))
+print(normalise_colour_info(("AliceBlue", (240, 248, 255, 0.3))))   # ('AliceBlue', (240, 248, 255, 0.3))
 ```
 
 Notice here that each `case` contains an expression like the left-hand side
@@ -316,7 +317,7 @@ print(describe_point(Point2D(1, 2)))    # The point is at (1, 2)
 
 Another cool thing you can do when matching things is to use wildcards.
 
-## `*`
+## Asterisk `*`
 
 Much like you can do things like
 
@@ -397,6 +398,8 @@ that was explicitly mentioned, and any other extra keys that the original
 dictionary has are ignored.
 This is unlike matching with lists or tuples, where the match has to be
 perfect if no wildcard is mentioned.
+
+## Double asterisk `**`
 
 However, if you want to know what the original dictionary had that was
 not specified in the match, you can use a `**` wildcard:
