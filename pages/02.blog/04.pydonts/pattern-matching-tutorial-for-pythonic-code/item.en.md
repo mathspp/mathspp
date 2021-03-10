@@ -513,7 +513,7 @@ I have seen great examples of this use-case in the references
 I included below, and will now share one of my own.
 
 Imagine you want to transform a mathematical expression into
-RPN (Reverse Polish Notation), e.g. `"3 * 4"` becomes `"* 3 4"`
+prefix notation, e.g. `"3 * 4"` becomes `"* 3 4"`
 and `1 + 2 + 3` becomes `+ 1 + 2 3` or `+ + 1 2 3` depending
 on whether `+` associates from the left or from the right.
 
@@ -522,10 +522,10 @@ You can write a little `match` to deal with this:
 ```py
 import ast
 
-def rpn(tree):
+def prefix(tree):
     match tree:
         case ast.Expression(expr):
-            return rpn(expr)
+            return prefix(expr)
         case ast.Constant(value=v):
             return str(v)
         case ast.BinOp(lhs, op, rhs):
@@ -540,19 +540,19 @@ def rpn(tree):
                     sop = "/"
                 case _:
                     raise NotImplementedError()
-            return f"{sop} {rpn(lhs)} {rpn(rhs)}"
+            return f"{sop} {prefix(lhs)} {prefix(rhs)}"
         case _:
             raise NotImplementedError()
 
-print(rpn(ast.parse("1 + 2 + 3", mode="eval")))     # + + 1 2 3
-print(rpn(ast.parse("2**3 + 6", mode="eval"))       # + * 2 3 6
-print(rpn(ast.parse("1 + 2*3 - 5/7", mode="eval"))) # - + 1 * 2 3 / 5 7
+print(prefix(ast.parse("1 + 2 + 3", mode="eval")))     # + + 1 2 3
+print(prefix(ast.parse("2**3 + 6", mode="eval"))       # + * 2 3 6
+print(prefix(ast.parse("1 + 2*3 - 5/7", mode="eval"))) # - + 1 * 2 3 / 5 7
 ```
 
 ## Careful with the hype
 
 Now, here is a word of caution: `match` isn't the best solution always.
-Looking up to the RPN example above, perhaps there are better ways to
+Looking up to the prefix notation example above, perhaps there are better ways to
 transform each possible binary operator to its string representation..?
 The current solution spends two lines for each different operator,
 and if we add support for many more binary operators, that part
@@ -573,23 +573,23 @@ def op_to_str(op):
     }
     return ops.get(op.__class__, None)
 
-def rpn(tree):
+def prefix(tree):
     match tree:
         case ast.Expression(expr):
-            return rpn(expr)
+            return prefix(expr)
         case ast.Constant(value=v):
             return str(v)
         case ast.BinOp(lhs, op, rhs):
             sop = op_to_str(op)
             if sop is None:
                 raise NotImplementedError()
-            return f"{sop} {rpn(lhs)} {rpn(rhs)}"
+            return f"{sop} {prefix(lhs)} {prefix(rhs)}"
         case _:
             raise NotImplementedError()
 
-print(rpn(ast.parse("1 + 2 + 3", mode="eval")))     # + + 1 2 3
-print(rpn(ast.parse("2*3 + 6", mode="eval"))        # + * 2 3 6
-print(rpn(ast.parse("1 + 2*3 - 5/7", mode="eval"))) # - + 1 * 2 3 / 5 7
+print(prefix(ast.parse("1 + 2 + 3", mode="eval")))     # + + 1 2 3
+print(prefix(ast.parse("2*3 + 6", mode="eval"))        # + * 2 3 6
+print(prefix(ast.parse("1 + 2*3 - 5/7", mode="eval"))) # - + 1 * 2 3 / 5 7
 ```
 
 # Conclusion
