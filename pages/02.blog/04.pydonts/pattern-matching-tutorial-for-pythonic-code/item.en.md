@@ -179,9 +179,11 @@ def normalise_colour_info(colour):
 ```
 
 I tried writing a decent, equivalent piece of code to the one using
-structural pattern matching.
-If you come up with a better alternative (that still doesn't use
-`match`), please let me know in the comments below.
+structural pattern matching, but this doesn't look that good.
+Someone else has suggested, [in the comments](http://disq.us/p/2fmg1ht),
+another alternative that also doesn't use `match`.
+That suggestion looks better than mine, but is much more complex
+and larger than the alternative with `match`.
 
 The `match` version becomes even better when we add type validation to it,
 by asking for the specific values to actually match Python's built-in types:
