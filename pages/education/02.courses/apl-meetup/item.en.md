@@ -88,7 +88,7 @@ The remainder of the sections is yet to be planned.
 
  > 8th of March:
  >  - using the Windows interpreter or RIDE
- >  - commands `)ed`, `)vars`, `)erase`, `)clear`, `)continue`, `)save`, `)load`
+ >  - commands `)ed`, `)vars`, `)erase`, `)clear`, `)continue`, `)save`, `)load` (you can find more about the commands [here](http://help.dyalog.com/latest/#Language/System%20Commands/Introduction.htm))
  >  - operators `⍨`, `/`, and `⍣`
  >  - trigonometric functions with `○`, recursion with `∇`, random numbers with `?`
  >  - basic guards in dfns with `:`

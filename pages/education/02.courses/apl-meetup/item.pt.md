@@ -80,7 +80,7 @@ O resto das sessões ainda está por planear.
 
  > 8 de março:
  >  - usar o editor do Windows ou o RIDE
- >  - comandos `)ed`, `)vars`, `)erase`, `)clear`, `)continue`, `)save`, `)load`
+ >  - comandos `)ed`, `)vars`, `)erase`, `)clear`, `)continue`, `)save`, `)load` (podem encontrar informação sobre os comandos [aqui](http://help.dyalog.com/latest/#Language/System%20Commands/Introduction.htm))
  >  - operadores `⍨`, `/` e `⍣`
  >  - funções trigonométricas `○`, recursão com `∇`, números aleatórios com `?`
  >  - guardas em dfns
