@@ -6,7 +6,7 @@ Learn how neural networks work and implement one from scratch.
 
 ===
 
-![](thumbnail.png "Photo by JJ Ying on Unsplash.")
+![](thumbnail.png?cropZoom=640,480 "Photo by JJ Ying on Unsplash.")
 
 
 # Purpose

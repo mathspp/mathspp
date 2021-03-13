@@ -6,7 +6,7 @@ Aprende como funcionam as redes neuronais e implementa uma de raíz.
 
 ===
 
-![](thumbnail.png?cropZoom= "Photo by JJ Ying on Unsplash.")
+![](thumbnail.png?cropZoom=640,480 "Photo by JJ Ying on Unsplash.")
 
 
 # Objetivo
