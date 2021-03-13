@@ -98,6 +98,7 @@ If you want me to teach this course to a group of people you represent, feel fre
    - [“Network & loss”][nnfwp-network-loss]
    - [“Backpropagation”][nnfwp-backprop]
    - [“MNIST”][nnfwp-mnist].
+ - GitHub repository with a Python reference implementation: [https://github.com/RojerGS/education/tree/master/neural-networks-fundamentals-with-python](https://github.com/RojerGS/education/tree/master/neural-networks-fundamentals-with-python)
  - 3blue1brown's amazing YouTube short series on neural networks:
 [https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
 

@@ -6,7 +6,7 @@ Aprende como funcionam as redes neuronais e implementa uma de raíz.
 
 ===
 
-![](thumbnail.png "Photo by JJ Ying on Unsplash.")
+![](thumbnail.png?cropZoom= "Photo by JJ Ying on Unsplash.")
 
 
 # Objetivo
@@ -106,6 +106,7 @@ que tu representas.
    - [“Erro”][nnfwp-network-loss]
    - [“Retroalimentação”][nnfwp-backprop]
    - [“MNIST”][nnfwp-mnist]
+ - O repositório que contém uma implementação de referência, em Python: [https://github.com/RojerGS/education/tree/master/neural-networks-fundamentals-with-python](https://github.com/RojerGS/education/tree/master/neural-networks-fundamentals-with-python)
  - Série curta (e excelente) do 3blue1brown sobre redes neuronais:
 [https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
 
