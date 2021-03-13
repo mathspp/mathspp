@@ -376,8 +376,8 @@ array([[0.],
        [0.]])
 ```
 
-! In doing this, we are actually overlooking a couple of mathematical
-! subtleties that make our setup a bit incoherent: the output of the
+! In doing this, we are actually overlooking a mathematical
+! subtlety that makes our setup a bit incoherent: the output of the
 ! network cannot be interpreted strictly as a probability because
 ! the activation function of the last layer can produce any real number,
 ! and probabilities need to lie in the range $[0, 1]$.
