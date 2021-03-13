@@ -552,6 +552,7 @@ if __name__ == "__main__":
     accuracy = test(net, test_data)
     print(f"Accuracy is {100*accuracy:.2f}%")
 ```
+
 !@
 
 
