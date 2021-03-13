@@ -1,0 +1,37 @@
+name: Markdown Collapsible
+version: 1.0.0
+description: "Adds the ability to render collapsible sections in Markdown"
+icon: asterisk
+author:
+  name: Cyril Russo
+  email: fwd.rebootisme@pho.by
+  url: https://rebootisme.com
+homepage: https://github.com/X-Ryl669/grav-plugin-markdown-collapsible
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    built_in_css:
+      type: toggle
+      label: Use built in CSS
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+
