@@ -1,0 +1,41 @@
+input.collapsible {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    left: -9999px;
+    display: block;
+}
+label.collapsible {
+    position: relative;
+    font-size: 1.24em;
+    line-height: 1.19em;
+    color: #1a1c1e;
+    clear: both;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding: 0;
+    padding-left: 0.8em;
+    margin: 6% 0 4%;
+    margin-top: -2%;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    text-rendering: optimizeLegibility;
+}
+label.collapsible::before {
+    content: '➤';
+    position: absolute;
+    width: 0.8em;
+    color: #E53539;
+    left: -.6em;
+}
+div.collapsible {
+    display: none;
+}
+input.collapsible:checked + label::before {
+    transform: rotate(90deg);
+    transition: all ease 0.4s;
+}
+input.collapsible:checked + label + div.collapsible {
+    display: block;
+}
+
