@@ -169,6 +169,7 @@ hof:
   - "Anderson Felipe Reolon, Porto Alegre (Brasil) <i class='fas fa-star'></i>"
   - "David Otero (Portugal)"
   - "Shin Yamaguchi (Brasil) <i class='fas fa-star'></i>"
+  - "Francisco Demontier (Brasil) <i class='fas fa-star'></i>"
 process:
   twig: true
 twig_first: true
