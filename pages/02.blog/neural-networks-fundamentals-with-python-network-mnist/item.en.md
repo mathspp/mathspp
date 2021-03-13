@@ -480,9 +480,19 @@ input and output sizes, the parameter of the `LeakyReLU` (we have been
 using the default value), and the learning rate of the network.
 
 
+# The series
+
+These are all the blog posts in this series:
+
+ 1. [Intro][part1]
+ 2. [Network & loss][part2]
+ 3. [Backpropagation][part3]
+ 4. [MNIST][part4] (this article)
+
+
 # `mnist.py` code
 
-!> The full code of the article.
+The full of the `mnist.py` file, as per this article:
 
 ```py
 import csv
@@ -552,18 +562,6 @@ if __name__ == "__main__":
     accuracy = test(net, test_data)
     print(f"Accuracy is {100*accuracy:.2f}%")
 ```
-
-!@
-
-
-# The series
-
-These are all the blog posts in this series:
-
- 1. [Intro][part1]
- 2. [Network & loss][part2]
- 3. [Backpropagation][part3]
- 4. [MNIST][part4]
 
 [part1]: /blog/neural-networks-fundamentals-with-python-intro
 [part2]: /blog/neural-networks-fundamentals-with-python-network-loss
