@@ -482,7 +482,7 @@ using the default value), and the learning rate of the network.
 
 # `mnist.py` code
 
-!> The full code for the `mnist.py` file, as per this article.
+!> The full code of the article.
 
 ```py
 import csv
