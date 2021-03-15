@@ -77,14 +77,22 @@ the point is that participants will also shape how the sessions go, what we talk
 about, what we learn, etc.
 Further below you can find a summary of each past session.
 
- > 15th of March:
- >  - Link
+ > 22th of March:
+ >  - discuss solutions to [“What an Odd Bunch”](https://problems.tryapl.org/psets/2017.html?goto=P1_What_an_Odd_Bunch)
  >  - solving problems from [problems.tryapl.org](https://problems.tryapl.org)
 
 The remainder of the sections is yet to be planned.
 
 
 ## Past sessions
+
+ > 15th of March:
+ >  - problems from past phase 1 competitions ([problems.tryapl.org][problems-tryapl])
+ >    - [“Let's Split!”](https://problems.tryapl.org/psets/2020.html?goto=P1_Lets_Split), problem 1 from 2020
+ >    - [“Chunky Monkey”](https://problems.tryapl.org/psets/2019.html?goto=P1_Chunky_Monkey), problem 1 from 2019
+ >    - [“What an Odd Bunch”](https://problems.tryapl.org/psets/2017.html?goto=P1_What_an_Odd_Bunch), problem 1 from 2017
+ >  - primitives `↑`, `↓`, `⊂`, `|`, `⌽`
+ >  - `]create # c:/tmp` to synchronise the session with a folder
 
  > 8th of March:
  >  - using the Windows interpreter or RIDE

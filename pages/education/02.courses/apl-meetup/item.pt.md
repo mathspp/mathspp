@@ -67,9 +67,9 @@ os participantes também ajudem a moldar as sessões.
 Mais em baixo encontras um sumário do que foi discutido nas sessões passadas,
 caso precises de refrescar a memória.
 
- > 15 de março:
- >  - Link
- >  - resolução de problemas de [problems.tryapl.org](https://problems.tryapl.org)
+ > 22 de março:
+ >  - discutir soluções do problema [“What an Odd Bunch”](https://problems.tryapl.org/psets/2017.html?goto=P1_What_an_Odd_Bunch)
+ >  - resolução de problemas de [problems.tryapl.org][problems-tryapl]
 
 <!---->
 
@@ -77,6 +77,16 @@ O resto das sessões ainda está por planear.
 
 
 ## Sessões passadas
+
+ > 15 de março:
+ >  - problemas da fase 1 de competições passadas ([problems.tryapl.org][problems-tryapl])
+ >     - [“Let's Split!”](https://problems.tryapl.org/psets/2020.html?goto=P1_Lets_Split), problema 1 de 2020
+ >     - [“Chunky Monkey”](https://problems.tryapl.org/psets/2019.html?goto=P1_Chunky_Monkey), problema 1 de 2019
+ >     - [“What an Odd Bunch”](https://problems.tryapl.org/psets/2017.html?goto=P1_What_an_Odd_Bunch), problema 1 de 2017
+ >  - primitivas `↑`, `↓`, `⊂`, `|`, `⌽`
+ >  - `]create # c:/tmp` para sincronizar a sessão com um diretório
+
+<!---->
 
  > 8 de março:
  >  - usar o editor do Windows ou o RIDE
@@ -113,3 +123,4 @@ O resto das sessões ainda está por planear.
 
 [form]: https://forms.gle/xpuTMueMxccBugUz8
 [mailme]: mailto:rodrigo@mathspp.com
+[problems-tryapl]: https://problems.tryapl.org
