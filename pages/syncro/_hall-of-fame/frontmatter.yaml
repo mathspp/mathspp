@@ -171,6 +171,7 @@ hof:
   - "Shin Yamaguchi (Brasil) <i class='fas fa-star'></i>"
   - "Francisco Demontier (Brasil) <i class='fas fa-star'></i>"
   - "Markos Oliveira, Curitiba (Brasil) <i class='fas fa-star'></i>"
+  - "Fernando Machado, Fortaleza (Brasil)"
 process:
   twig: true
 twig_first: true
