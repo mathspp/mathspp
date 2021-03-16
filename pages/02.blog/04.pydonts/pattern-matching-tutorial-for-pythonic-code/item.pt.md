@@ -13,11 +13,9 @@ escrever código elegante com a instrução `match`.
 (Se és novo aqui e não sabes o que é uma Pydon't, então talvez queiras começar por
 ler a [Proclamação das Pydon'ts][manifesto].)
 
-Infelizmente, ainda não traduzi este artigo para português...
+Infelizmente, para poupar algum tempo, ainda não traduzi este artigo para português...
 Hei de o fazer eventualmente, a sério!
-([Se me comprares uma fatia de pizza][pizza], podes pedir-me
-para eu traduzir este artigo e eu prometo que o faço logo!
-Afinal de contas, ofereceste-me uma fatia de pizza...)
+Se quiseres, deixa um comentário em baixo a pedir que eu traduza o artigo ASAP.
 
 # Referências (em inglês)
 
