@@ -299,13 +299,14 @@ Another useful mechanism that we have available is the [`getattr`][pydocs-getatt
 which is part of a trio of Python built-in functions:
 `hasattr`, `getattr` and `setattr`.
 
-I will be writing about this trio in a future Pydon't;
-be sure to [subscribe] to the Pydon't newsletter so you don't miss it!
-For now, I'll just show you briefly what `getattr` can do for you.
+! I will be writing about this trio in a future Pydon't;
+! be sure to [subscribe] to the Pydon't newsletter so you don't miss it!
+! For now, I'll just show you briefly what `getattr` can do for you.
 
 I am writing an [APL] interpreter called [RGSPL], and there is a function
-named `visit_F` where I need to map APL symbols like `+`, `-`, and `⍴` to a Python
-function that implements them, that I stored in the `functions.py` file.
+named `visit_F` where I need to map APL symbols like `+`, `-`, and `⍴` to the corresponding Python
+function that implements it.
+These Python functions, implementing the behaviour of the symbols, live in the `functions.py` file.
 If I were using a `match` statement, here is what this `visit_F` could look like:
 
 ```py
