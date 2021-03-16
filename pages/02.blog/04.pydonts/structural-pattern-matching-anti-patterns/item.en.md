@@ -41,7 +41,7 @@ As per [the Zen of Python][zp-pydont],
  > “There should be one-- and preferably only one --obvious way to do it.”
 
 The introduction of the `match` statement may seem to violate
-this sentence...
+this principle...
 However, you have to remember that the point of the `match` statement
 is _not_ to serve as a basic `switch` statement, as we already have
 plenty of alternatives for that – if `match` was supposed to be a simple
@@ -111,6 +111,13 @@ a short and sweet `if` statement is most likely the way to go.
 
 
 # Be smart(er)
+
+Sometimes you will feel like you have to list a series of cases
+and corresponding values, so that you can map one to the other.
+However, it might be the case that you could make your life _much_
+simpler by looking for an alternative algorithm or formula and
+implementing that instead.
+I'll show you an example.
 
 In case you never heard of it, [Rule 30][rule-30] is an “elementary cellular automaton”.
 You can think of it as a rule that receives three bits (three zeroes/ones) and produces
@@ -218,10 +225,10 @@ print(prefix(ast.parse("1 + 2*3 - 5/7", mode="eval"))) # - + 1 * 2 3 / 5 7
 
 Notice the inner `match` to convert the `op` inside a `BinOp`
 to a string?
-For starters, that nested `match` takes up too much horizontal space
-and distracts us from what is actually going on, which is us traversing
-the recursive structure of the tree, so we could actually refactor
-this as a utility function:
+For starters, that nested `match` takes up too much vertical space
+and distracts us from what really matters, which is the traversal of
+the recursive structure of the tree.
+This means we could actually refactor that bit as a utility function:
 
 ```py
 import ast
@@ -256,9 +263,9 @@ print(prefix(ast.parse("2**3 + 6", mode="eval"))       # + * 2 3 6
 print(prefix(ast.parse("1 + 2*3 - 5/7", mode="eval"))) # - + 1 * 2 3 / 5 7
 ```
 
-This makes it harder to read and interpret the `prefix` function,
+This makes it easier to read and interpret the `prefix` function,
 but now we have another problem that really annoys me:
-a simple, but long function, the `op_to_str` function.
+a simple but long function, the `op_to_str` function.
 For every type of operator you support, your function grows by two lines...
 If you replace the `match` with a chain of `if` and `elif` statements
 you only save one line at the top...
@@ -281,8 +288,9 @@ This usage pattern of a dictionary is quite common in Python,
 using the `get` method to compute the mapping of a value
 to another value.
 In case you are wondering, you can use the second argument of the
-`get` function to provide for a default value, in case your
-dictionary hasn't listed every single possible value.
+`get` function to provide for a default value, which might be useful
+if the dictionary hasn't listed every single possible value
+or in case you want to have a fallback value.
 
 
 ## `getattr`
