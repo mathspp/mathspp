@@ -393,7 +393,7 @@ the more specialised tools are the ones that make the most difference
 when they are brought in.
 
 Speaking of knowing your tools, the last use case in this article for which
-`match` is a bad alternative, is related to calling different functions
+`match` is a bad alternative is related to calling different functions
 when your data has different types.
 
 ## Single-dispatch generic functions
@@ -468,9 +468,21 @@ def _(arg):
         print(f"{key}: {value}")
 ```
 
+And this can then be used exactly like the original function:
+
+```py
+>>> pretty_print(3)
+3
+>>> pretty_print([2, 5])
+0 2
+1 5
+>>> pretty_print(3+4j)
+3.0 + 4.0i
+```
+
 The `pretty_print` example isn't the _best_ example because you
 spend as many lines decorating as in defining the actual subfunctions,
-but this shows you the pattern that you can now be on the look out for.
+but this shows you the pattern that you can now be on the lookout for.
 You can read more about `singledispatch` [in the docs][pydocs-singledispatch].
 
 # Conclusion
