@@ -1,0 +1,10 @@
+{% set references = header_var("references")|defined([]) %}
+{% if 0 < references|length %}
+{% markdown %}
+# References
+
+{% for ref in references %}
+  - {{ ref }}
+{% endfor %}
+{% endmarkdown %}
+{% endif %}
