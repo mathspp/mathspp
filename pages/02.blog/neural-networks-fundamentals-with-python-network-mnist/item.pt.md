@@ -2,9 +2,8 @@
 title: "Conceitos fundamentais sobre redes neuronais – MNIST"
 ---
 
-No quarto artigo desta mini série vamos criar uma classe genérica
-para a rede neuronal e vamos ver como é que medimos
-a correção da resposta de uma rede neuronal.
+No quarto artigo desta mini série vamos classificar
+imagens que contêm dígitos escritos à mão.
 
 ===
 

@@ -484,10 +484,11 @@ using the default value), and the learning rate of the network.
 
 These are all the blog posts in this series:
 
- 1. [Intro][part1]
- 2. [Network & loss][part2]
- 3. [Backpropagation][part3]
- 4. [MNIST][part4] (this article)
+<ol>
+{% for post in taxonomy.findTaxonomy({"tag": ["nnfwp"]}) %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ol>
 
 
 # `mnist.py` code

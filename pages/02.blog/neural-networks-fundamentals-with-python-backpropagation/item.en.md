@@ -707,10 +707,11 @@ Stay tuned for that.
 
 These are all the blog posts in this series:
 
- 1. [Intro][part1]
- 2. [Network & loss][part2]
- 3. [Backpropagation][part3]
- 4. [MNIST][part4]
+<ol>
+{% for post in taxonomy.findTaxonomy({"tag": ["nnfwp"]}) %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ol>
 
 [part1]: /blog/neural-networks-fundamentals-with-python-intro
 [part2]: /blog/neural-networks-fundamentals-with-python-network-loss

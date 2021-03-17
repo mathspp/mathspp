@@ -2,12 +2,16 @@ date: 03-03-2021
 metadata:
     author: "Rodrigo Girão Serrão"
     og:image: "https://mathspp.com/blog/neural-networks-fundamentals-with-python-network-loss/thumbnail.png"
+process:
+    twig: true
 slug: "neural-networks-fundamentals-with-python-network-loss"
 taxonomy:
     category: "blogpost"
     tag:
       - "machine learning"
       - "mathematics"
+      - "nnfwp"
       - "numpy"
       - "programming"
       - "python"
+twig_first: true
