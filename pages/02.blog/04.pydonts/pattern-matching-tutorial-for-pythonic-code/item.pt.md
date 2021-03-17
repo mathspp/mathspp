@@ -1,4 +1,5 @@
 ---
+show_call_to_action: false
 title: "Tutorial sobre correspondência estrutural | Pydon't"
 ---
 
@@ -17,18 +18,6 @@ Infelizmente, para poupar algum tempo, ainda não traduzi este artigo para portu
 Hei de o fazer eventualmente, a sério!
 Se quiseres, deixa um comentário em baixo a pedir que eu traduza o artigo ASAP.
 
-# Referências (em inglês)
-
- - PEP 622 -- Structural Pattern Matching, [https://www.python.org/dev/peps/pep-0622/][pep-622].
- - PEP 634 -- Structural Pattern Matching: Specification, [https://www.python.org/dev/peps/pep-0634/][pep-634].
- - PEP 635 -- Structural Pattern Matching: Motivation and Rationale, [https://www.python.org/dev/peps/pep-0635/][pep-635].
- - PEP 636 -- Structural Pattern Matching: Tutorial, [https://www.python.org/dev/peps/pep-0636/][pep-636].
- - Dynamic Pattern Matching with Python,
-[https://gvanrossum.github.io/docs/PyPatternMatching.pdf](https://gvanrossum.github.io/docs/PyPatternMatching.pdf).
- - Python 3.10 Pattern Matching in Action, YouTube video by “Big Python”, [https://www.youtube.com/watch?v=SYTVSeTgL3s](https://www.youtube.com/watch?v=SYTVSeTgL3s).
-
-
-Consultadas pela última vez a 9 de março de 2021.
 
 [pizza]: https://buymeacoffee.com/mathspp
 [subscribe]: https://mathspp.com/subscribe

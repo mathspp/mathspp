@@ -615,22 +615,9 @@ when a custom class is used in a `case`
  - built-in Python classes can be used in `case` statements to validate types
 
 If you liked this Pydon't be sure to leave a reaction below and share this with your friends and fellow Pythonistas.
-If you found this article really valuable then you could [buy me a slice of pizza 🍕][pizza]!
-
 Also, [don't forget to subscribe to the newsletter][subscribe] so you don't miss
 a single Pydon't!
 
-# References
-
- - PEP 622 -- Structural Pattern Matching, [https://www.python.org/dev/peps/pep-0622/][pep-622].
- - PEP 634 -- Structural Pattern Matching: Specification, [https://www.python.org/dev/peps/pep-0634/][pep-634].
- - PEP 635 -- Structural Pattern Matching: Motivation and Rationale, [https://www.python.org/dev/peps/pep-0635/][pep-635].
- - PEP 636 -- Structural Pattern Matching: Tutorial, [https://www.python.org/dev/peps/pep-0636/][pep-636].
- - Dynamic Pattern Matching with Python,
-[https://gvanrossum.github.io/docs/PyPatternMatching.pdf](https://gvanrossum.github.io/docs/PyPatternMatching.pdf).
- - Python 3.10 Pattern Matching in Action, YouTube video by “Big Python”, [https://www.youtube.com/watch?v=SYTVSeTgL3s](https://www.youtube.com/watch?v=SYTVSeTgL3s).
-
-Online references last consulted on the 9th of March of 2021.
 
 [pizza]: https://buymeacoffee.com/mathspp
 [subscribe]: https://mathspp.com/subscribe
