@@ -485,7 +485,7 @@ using the default value), and the learning rate of the network.
 These are all the blog posts in this series:
 
 <ol>
-{% for post in taxonomy.findTaxonomy({"tag": ["nnfwp"]}) %}
+{% for post in taxonomy.findTaxonomy({"tag": ["nnfwp"]}).order("date") %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ol>
