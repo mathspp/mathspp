@@ -14,7 +14,11 @@
     </div>
 {% endif %}
     <div class="e-content">
-        {{ page.content|raw }}
+        {{ page.summary|raw }}
+        {% include 'partials/blog/announcement.html.twig' %}
+        {{ page.content|slice(page.summary|length)|raw }}
+        {% include 'partials/blog/call-to-action.html.twig' %}
+        {% include 'partials/blog/references.html.twig' %}
     </div>
 
     {% if page.header.continue_link is same as(true) and config.plugins.comments.enabled %}
