@@ -68,6 +68,8 @@ THEME_QUARK:
       SUMMARY: "Remaining Tags"
 
 THEME_MY_QUARK:
+  BLOG:
+    REFERENCES_TITLE: "References"
   COURSES:
     TOPICS: "Topics"
     NEXT_SESSION_DATE: "Next session"

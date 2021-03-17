@@ -117,6 +117,8 @@ PLUGIN_COMMENTS:
   THANK_YOU_MESSAGE: "Obrigado pelo comentário!"
 
 THEME_MY_QUARK:
+  BLOG:
+    REFERENCES_TITLE: "Referências"
   COURSES:
     TOPICS: "Tópicos"
     NEXT_SESSION_DATE: "Próxima sessão"

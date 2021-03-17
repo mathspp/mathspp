@@ -1,7 +1,7 @@
 {% set references = header_var("references")|defined([]) %}
 {% if 0 < references|length %}
 {% markdown %}
-# References
+# {{ 'THEME_MY_QUARK.BLOG.REFERENCES_TITLE'|t }}
 
 {% for ref in references %}
   - {{ ref }}
