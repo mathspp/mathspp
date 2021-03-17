@@ -1,5 +1,5 @@
 ---
-title: "Tutorial sobre correspondência estrutural | Pydon't"
+title: "Quando não usar correspondência estrutural | Pydon't"
 ---
 
 Correspondência estrutural é uma funcionalidade que vai ser introduzida
