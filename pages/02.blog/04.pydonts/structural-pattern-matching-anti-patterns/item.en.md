@@ -505,26 +505,9 @@ different values depending on the matching key; and
 subfunctions when the input has different types.
 
 If you liked this Pydon't be sure to leave a reaction below and share this with your friends and fellow Pythonistas.
-If you found this article really valuable then you could [buy me a slice of pizza 🍕][pizza]!
-
 Also, [don't forget to subscribe to the newsletter][subscribe] so you don't miss
 a single Pydon't!
 
-# References
-
- - PEP 622 -- Structural Pattern Matching, [https://www.python.org/dev/peps/pep-0622/][pep-622];
- - PEP 634 -- Structural Pattern Matching: Specification, [https://www.python.org/dev/peps/pep-0634/][pep-634];
- - PEP 635 -- Structural Pattern Matching: Motivation and Rationale, [https://www.python.org/dev/peps/pep-0635/][pep-635];
- - PEP 636 -- Structural Pattern Matching: Tutorial, [https://www.python.org/dev/peps/pep-0636/][pep-636];
- - PEP 443 -- Single-dispatch generic functions, [https://www.python.org/dev/peps/pep-0443/](https://www.python.org/dev/peps/pep-0443/);
- - Python 3 Documentation, The Python Standard Library, `getattr`, [https://docs.python.org/3/library/functions.html#getattr][pydocs-getattr];
- - Python 3 Documentation, The Python Standard Library, `functools.singledispatch`, [https://docs.python.org/3/library/functools.html#functools.singledispatch][pydocs-singledispatch];
- - Wikipedia, “Collatz Conjecture”, [https://en.wikipedia.org/wiki/Collatz_conjecture][collatz];
- - WolframAlpha, “Rule 30”, [https://www.wolframalpha.com/input/?i=rule+30][rule-30];
- - Wikipedia, “Rule 30”, [https://en.wikipedia.org/wiki/Rule_30][rule-30-wiki];
-
-
-Online references last consulted on the 16th of March of 2021.
 
 [pizza]: https://buymeacoffee.com/mathspp
 [subscribe]: https://mathspp.com/subscribe

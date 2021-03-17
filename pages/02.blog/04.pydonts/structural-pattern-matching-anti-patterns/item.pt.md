@@ -1,4 +1,5 @@
 ---
+show_call_to_action: false
 title: "Quando não usar correspondência estrutural | Pydon't"
 ---
 
@@ -18,21 +19,6 @@ Infelizmente, para poupar algum tempo, ainda não traduzi este artigo para portu
 Hei de o fazer eventualmente, a sério!
 Se quiseres, deixa um comentário em baixo a pedir que eu traduza o artigo ASAP.
 
-# Referências (em inglês)
-
- - PEP 622 -- Structural Pattern Matching, [https://www.python.org/dev/peps/pep-0622/][pep-622];
- - PEP 634 -- Structural Pattern Matching: Specification, [https://www.python.org/dev/peps/pep-0634/][pep-634];
- - PEP 635 -- Structural Pattern Matching: Motivation and Rationale, [https://www.python.org/dev/peps/pep-0635/][pep-635];
- - PEP 636 -- Structural Pattern Matching: Tutorial, [https://www.python.org/dev/peps/pep-0636/][pep-636];
- - PEP 443 -- Single-dispatch generic functions, [https://www.python.org/dev/peps/pep-0443/](https://www.python.org/dev/peps/pep-0443/);
- - Python 3 Documentation, The Python Standard Library, `getattr`, [https://docs.python.org/3/library/functions.html#getattr][pydocs-getattr];
- - Python 3 Documentation, The Python Standard Library, `functools.singledispatch`, [https://docs.python.org/3/library/functools.html#functools.singledispatch][pydocs-singledispatch];
- - Wikipedia, “Collatz Conjecture”, [https://en.wikipedia.org/wiki/Collatz_conjecture][collatz];
- - WolframAlpha, “Rule 30”, [https://www.wolframalpha.com/input/?i=rule+30][rule-30];
- - Wikipedia, “Rule 30”, [https://en.wikipedia.org/wiki/Rule_30][rule-30-wiki];
-
-
-Consultadas pela última vez a 16 de março de 2021.
 
 [pizza]: https://buymeacoffee.com/mathspp
 [subscribe]: https://mathspp.com/subscribe
