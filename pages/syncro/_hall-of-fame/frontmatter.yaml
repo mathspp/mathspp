@@ -173,6 +173,7 @@ hof:
   - "Markos Oliveira, Curitiba (Brasil) <i class='fas fa-star'></i>"
   - "Fernando Machado, Fortaleza (Brasil)"
   - "Carlos Paulo Freitas, Madeira (Portugal)"
+  - "Renan Bueno, Rio Claro (Brasil) <i class='fas fa-star'></i>"
 process:
   twig: true
 twig_first: true
