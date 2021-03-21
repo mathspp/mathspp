@@ -9,5 +9,6 @@ taxonomy:
     category: [blogpost, problem]
     tag:
       - combinatorics
+      - invariants
       - mathematics
 twig_first: true
