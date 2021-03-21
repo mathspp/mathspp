@@ -1,0 +1,14 @@
+date: 21-03-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: https://mathspp.com/blog/problems/restaurant-roundtable/thumbnail.png
+process:
+    twig: true
+slug: restaurant-roundtable
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - combinatorics
+      - mathematics
+      - pigeonhole principle
+twig_first: true
