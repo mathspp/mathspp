@@ -77,14 +77,24 @@ the point is that participants will also shape how the sessions go, what we talk
 about, what we learn, etc.
 Further below you can find a summary of each past session.
 
- > 22th of March:
- >  - discuss solutions to [“What an Odd Bunch”](https://problems.tryapl.org/psets/2017.html?goto=P1_What_an_Odd_Bunch)
- >  - solving problems from [problems.tryapl.org](https://problems.tryapl.org)
+ > 29th of March:
+ >  - `\` operator
+ >  - discuss solutions to [“Making the Grade”](https://problems.tryapl.org/psets/2019.html?goto=P2_Making_the_Grade) and [“Oh Say Can You See”](https://problems.tryapl.org/psets/2018.html?goto=P1_Oh_Say_Can_You_See)
+ >  - `⍸` function
+ >  - problem solving
 
 The remainder of the sections is yet to be planned.
 
 
 ## Past sessions
+
+ > 22nd of March:
+ >  - recall how `)ed` and `]create` work
+ >  - discuss solutions to [“What an Odd Bunch”](https://problems.tryapl.org/psets/2017.html?goto=P1_What_an_Odd_Bunch)
+ >  - `/` as a dyadic function
+ >  - solving [“Making the Grade”](https://problems.tryapl.org/psets/2019.html?goto=P2_Making_the_Grade) and [“Oh Say Can You See”](https://problems.tryapl.org/psets/2018.html?goto=P1_Oh_Say_Can_You_See)
+
+<!---->
 
  > 15th of March:
  >  - problems from past phase 1 competitions ([problems.tryapl.org][problems-tryapl])

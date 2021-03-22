@@ -67,9 +67,11 @@ os participantes também ajudem a moldar as sessões.
 Mais em baixo encontras um sumário do que foi discutido nas sessões passadas,
 caso precises de refrescar a memória.
 
- > 22 de março:
- >  - discutir soluções do problema [“What an Odd Bunch”](https://problems.tryapl.org/psets/2017.html?goto=P1_What_an_Odd_Bunch)
- >  - resolução de problemas de [problems.tryapl.org][problems-tryapl]
+ > 29 de março:
+ >  - operador `\`
+ >  - discutir soluções dos problemas [“Making the Grade”](https://problems.tryapl.org/psets/2019.html?goto=P2_Making_the_Grade) e [“Oh Say Can You See”](https://problems.tryapl.org/psets/2018.html?goto=P1_Oh_Say_Can_You_See)
+ >  - função `⍸`
+ >  - resolução de problemas
 
 <!---->
 
@@ -77,6 +79,14 @@ O resto das sessões ainda está por planear.
 
 
 ## Sessões passadas
+
+ > 22 de março:
+ >  - recapitular `)ed` e `]create`
+ >  - discutir soluções do problema [“What an Odd Bunch”](https://problems.tryapl.org/psets/2017.html?goto=P1_What_an_Odd_Bunch)
+ >  - `/` como função diádica
+ >  - problemas [“Making the Grade”](https://problems.tryapl.org/psets/2019.html?goto=P2_Making_the_Grade) e [“Oh Say Can You See”](https://problems.tryapl.org/psets/2018.html?goto=P1_Oh_Say_Can_You_See)
+
+<!---->
 
  > 15 de março:
  >  - problemas da fase 1 de competições passadas ([problems.tryapl.org][problems-tryapl])
