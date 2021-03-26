@@ -10,8 +10,6 @@ Sessões semanais para aprender APL: todos são bem-vindos.
 
 ![](_apl-meetup-poster.png?cropResize=600,800 "Poster das sessões")
 
-! A próxima sessão vai ser dia 8 de março às 18h.
-
 # Inscrição
 
 Podes inscrever-te preenchendo [este breve formulário][form], mesmo que

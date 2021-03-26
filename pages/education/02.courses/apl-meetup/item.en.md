@@ -12,8 +12,6 @@ Weekly sessions to learn APL: a programming language that is a tool of thought.
 
 ! This meetup is held in Portuguese.
 
-! The next session will be on the 8th of March at 6pm.
-
 # Signing up
 
 If you speak Portuguese, you can sign up by filling up [this brief form][form].
@@ -103,6 +101,8 @@ The remainder of the sections is yet to be planned.
  >    - [“What an Odd Bunch”](https://problems.tryapl.org/psets/2017.html?goto=P1_What_an_Odd_Bunch), problem 1 from 2017
  >  - primitives `↑`, `↓`, `⊂`, `|`, `⌽`
  >  - `]create # c:/tmp` to synchronise the session with a folder
+
+<!---->
 
  > 8th of March:
  >  - using the Windows interpreter or RIDE

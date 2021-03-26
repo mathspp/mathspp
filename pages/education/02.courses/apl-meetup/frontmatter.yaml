@@ -6,3 +6,4 @@ taxonomy:
     topic:
       - "apl"
       - "problem solving"
+show_call_to_action: false
