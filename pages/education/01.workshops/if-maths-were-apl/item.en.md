@@ -41,6 +41,6 @@ ENEMath²¹, on the 27th of March of 2021.
  - APL Wiki – [apl.wiki](https://apl.wiki)
  - TryAPL –  [tryapl.org](https://tryapl.org)
  - TryAPL, “Your first Mandelbrot set” notebook – [https://tryapl.org/?notebook=https://github.com/RojerGS/dyalog-jupyter-notebooks/blob/master/Your%20First%20Mandelbrot%20Set.ipynb](https://tryapl.org/?notebook=https://github.com/RojerGS/dyalog-jupyter-notebooks/blob/master/Your%20First%20Mandelbrot%20Set.ipynb)
- - APL Portuguese meetup – [mathspp.com/meetup-apl]
+ - APL Portuguese meetup – [mathspp.com/meetup-apl](https://mathspp.com/meetup-apl)
 
 [mailme]: mailto:rodrigo@mathspp.com

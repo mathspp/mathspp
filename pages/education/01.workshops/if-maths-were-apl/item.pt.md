@@ -37,7 +37,7 @@ podes [enviar-me um email][emailme].
  - APL Wiki – [apl.wiki](https://apl.wiki)
  - TryAPL –  [tryapl.org](https://tryapl.org)
  - TryAPL, “Your first Mandelbrot set” notebook – [https://tryapl.org/?notebook=https://github.com/RojerGS/dyalog-jupyter-notebooks/blob/master/Your%20First%20Mandelbrot%20Set.ipynb](https://tryapl.org/?notebook=https://github.com/RojerGS/dyalog-jupyter-notebooks/blob/master/Your%20First%20Mandelbrot%20Set.ipynb)
- - Meetup de APL – [mathspp.com/meetup-apl]
+ - Meetup de APL – [mathspp.com/meetup-apl](https://mathspp.com/meetup-apl)
 
 
 [mailme]: mailto:rodrigo@mathspp.com
