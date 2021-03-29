@@ -76,6 +76,7 @@ about, what we learn, etc.
 Further below you can find a summary of each past session.
 
  > 5th of April:
+ >  - discussion of problems [“Number Splitting”](https://problems.tryapl.org/psets/2018.html?goto=P2_Number_Splitting) and [“Good Evening”](https://problems.tryapl.org/psets/2017.html?goto=P2_Good_Evening)
  >  - operators `∘` `⍤` `⍥` for function composition
  >  - tacit programming (“forks” and “atops”)
 

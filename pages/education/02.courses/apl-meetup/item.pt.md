@@ -66,6 +66,7 @@ Mais em baixo encontras um sumário do que foi discutido nas sessões passadas,
 caso precises de refrescar a memória.
 
  > 5 de abril:
+ >  - discussão dos problemas [“Number Splitting”](https://problems.tryapl.org/psets/2018.html?goto=P2_Number_Splitting) e [“Good Evening”](https://problems.tryapl.org/psets/2017.html?goto=P2_Good_Evening)
  >  - operadores `∘` `⍤` `⍥` para composição de funções
  >  - programação tácita (“forks” e “atops”)
 
