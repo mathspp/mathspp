@@ -1,0 +1,9 @@
+date: 27-03-2021
+metadata:
+    og:image: "https://mathspp.com/education/workshops/programming-with-maths/thumbnail.png"
+slug: programming-with-maths
+taxonomy:
+    category: "workshop"
+    topic:
+      - "apl"
+      - "mathematics"
