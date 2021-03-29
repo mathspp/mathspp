@@ -175,6 +175,9 @@ hof:
   - "Carlos Paulo Freitas, Madeira (Portugal)"
   - "Renan Bueno, Rio Claro (Brasil) <i class='fas fa-star'></i>"
   - "Matheus de Assis Soares, Mato Grosso (Brasil)"
+  - "Pedro Ferreira, Famalicão (Portugal)"
+  - "Vasco Cabrita, Coimbra (Portugal) <i class='fas fa-star'></i>"
+  - "Carlos Sebastião, Seixal (Portugal) <i class='fas fa-star'></i>"
 process:
   twig: true
 twig_first: true
