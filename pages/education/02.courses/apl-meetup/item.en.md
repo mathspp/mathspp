@@ -75,16 +75,23 @@ the point is that participants will also shape how the sessions go, what we talk
 about, what we learn, etc.
 Further below you can find a summary of each past session.
 
- > 29th of March:
- >  - `\` operator
- >  - discuss solutions to [“Making the Grade”](https://problems.tryapl.org/psets/2019.html?goto=P2_Making_the_Grade) and [“Oh Say Can You See”](https://problems.tryapl.org/psets/2018.html?goto=P1_Oh_Say_Can_You_See)
- >  - `⍸` function
- >  - problem solving
+ > 5th of April:
+ >  - operators `∘` `⍤` `⍥` for function composition
+ >  - tacit programming (“forks” and “atops”)
 
 The remainder of the sections is yet to be planned.
 
 
 ## Past sessions
+
+ > 29th of March:
+ >  - operators `/` `\` `⌿` `⍀`
+ >  - axis specification `[k]` with `/` `\` `⌿` `⍀`
+ >  - difference between `3` and `,3`
+ >  - `∪` and `∩`
+ >  - discuss solution to [“Oh Say Can You See”](https://problems.tryapl.org/psets/2018.html?goto=P1_Oh_Say_Can_You_See)
+
+<!---->
 
  > 22nd of March:
  >  - recall how `)ed` and `]create` work

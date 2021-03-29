@@ -65,11 +65,9 @@ os participantes também ajudem a moldar as sessões.
 Mais em baixo encontras um sumário do que foi discutido nas sessões passadas,
 caso precises de refrescar a memória.
 
- > 29 de março:
- >  - operador `\`
- >  - discutir soluções dos problemas [“Making the Grade”](https://problems.tryapl.org/psets/2019.html?goto=P2_Making_the_Grade) e [“Oh Say Can You See”](https://problems.tryapl.org/psets/2018.html?goto=P1_Oh_Say_Can_You_See)
- >  - função `⍸`
- >  - resolução de problemas
+ > 5 de abril:
+ >  - operadores `∘` `⍤` `⍥` para composição de funções
+ >  - programação tácita (“forks” e “atops”)
 
 <!---->
 
@@ -77,6 +75,15 @@ O resto das sessões ainda está por planear.
 
 
 ## Sessões passadas
+
+ > 29 de março:
+ >  - operadores `/` `\` `⌿` `⍀`
+ >  - especificação de um eixo `[k]` com `/` `\` `⌿` `⍀`
+ >  - diferença entre `3` e `,3`
+ >  - `∪` e `∩`
+ >  - discussão da solução do problema [“Oh Say Can You See”](https://problems.tryapl.org/psets/2018.html?goto=P1_Oh_Say_Can_You_See)
+
+<!---->
 
  > 22 de março:
  >  - recapitular `)ed` e `]create`
