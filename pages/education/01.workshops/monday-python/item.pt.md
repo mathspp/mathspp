@@ -38,6 +38,7 @@ concluímos projetos específicos em Python.
 
 # Links úteis
 
+ - Regista-te para sessões futuras – [sparkagency.pt/monday-python](http://sparkagency.pt/monday-python)
  - Site do Python – [python.org](https://python.org)
  - Documentação do Python – [docs.python.org/3/](https://docs.python.org/3/)
  - Replit (ambiente de desenvolvimento online) – [replit.com](https://replit.com/)
