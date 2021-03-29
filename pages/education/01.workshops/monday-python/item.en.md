@@ -2,7 +2,7 @@
 title: "“Monday Python”"
 ---
 
-A series of workshops devoted to the Python programming language.
+A series of workshops devoted to programming in Python.
 
 ===
 
