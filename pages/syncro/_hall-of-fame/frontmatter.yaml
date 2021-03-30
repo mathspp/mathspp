@@ -178,6 +178,7 @@ hof:
   - "Pedro Ferreira, Famalicão (Portugal)"
   - "Vasco Cabrita, Coimbra (Portugal) <i class='fas fa-star'></i>"
   - "Carlos Sebastião, Seixal (Portugal) <i class='fas fa-star'></i>"
+  - "Gabriel Dummer Camargo, Rio Grande do Sul (Brasil) <i class='fas fa-star'></i>"
 process:
   twig: true
 twig_first: true
