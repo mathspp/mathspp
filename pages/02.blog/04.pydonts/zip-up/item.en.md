@@ -279,14 +279,14 @@ Here is the loop he wrote before knowing about `zip`:
 
 ```py
 for i in range(len(lvlpictures)):
-            self.surface.blit(lvlpictures[i], (self.buttons[i][0]+2,self.buttons[i][1]+2))
+    self.surface.blit(lvlpictures[i], (self.buttons[i][0]+2,self.buttons[i][1]+2))
 ```
 
 And here is the loop he wrote after knowing about `zip`:
 
 ```py
 for pic, btn in zip(lvlpictures, self.buttons):
-            self.surface.blit(pic, (btn[0] + 2, btn[1] + 2))
+    self.surface.blit(pic, (btn[0] + 2, btn[1] + 2))
 ```
 
 Notice that using `zip` makes your code shorter and it also makes more
