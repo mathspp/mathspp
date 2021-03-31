@@ -72,7 +72,9 @@ and then index into the lists:
 This does the job, but a `for` loop like this only hints at the fact that you
 are probably going to access the values in `firsts`, because you wrote
 
- > `range(len(firsts))`,
+```py
+range(len(firsts))
+```
 
 but turns out you also want to access the items in `lasts`.
 This is what `zip` is for: you use it to pair up iterables that you wanted
@@ -127,11 +129,13 @@ read in plain English.
 
 For example, the loop from before was
 
- > `for first, last in zip(firsts, lasts):`
+```py
+for first, last in zip(firsts, lasts):
+```
 
 and that can be read as
 
- > “For each `first` and `last` [name] in the `firsts` and `lasts` lists...”
+ > “For each `first` and `last` [name] in the lists `firsts` and `lasts`...”
 
 
 # Zip is lazy
@@ -151,7 +155,7 @@ or when you convert the `zip` object into a `list`:
 [('Anna', 'Smith'), ('Bob', 'Doe'), ('Charles', 'Evans')]
 ```
 
-`zip` being lazy also means that `zip` isn't _that_ similar to a list by itself.
+`zip` being lazy also means that `zip` by itself isn't _that_ similar to a list.
 For example, you cannot ask what is the length of a zip object:
 
 ```py
