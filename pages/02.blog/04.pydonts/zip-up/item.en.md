@@ -149,6 +149,7 @@ or when you convert the `zip` object into a `list`:
 ```py
 >>> firsts = ["Anna", "Bob", "Charles"]
 >>> lasts = ["Smith", "Doe", "Evans", "Rivers"]
+>>> z = zip(firsts, lasts)
 >>> z
 <zip object at 0x0000019F56702680>
 >>> list(z)
@@ -448,7 +449,7 @@ This Pydon't showed you that:
  - `zip` can be used to traverse several iterables at the same time;
  - `zip` by itself returns a `zip` object which must then be iterated or converted explicitly to a `list`
 if you want the tuples it produces;
- - `zip` if the arguments to `zip` have uneven lengths, `zip` will stop as soon as one of the iterators is exhausted;
+ - if the arguments to `zip` have uneven lengths, `zip` will stop as soon as one of the iterators is exhausted;
  - starting with Python 3.10, you can use the keyword argument `strict=True` to tell `zip` to error if the
 arguments to `zip` have different lengths; and
  - `zip` can provide for a really simple way to create dictionaries.
