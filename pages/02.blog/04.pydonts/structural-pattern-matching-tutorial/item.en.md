@@ -1,5 +1,5 @@
 ---
-title: "Pattern matching tutorial for Pythonic code | Pydon't"
+title: "Structural pattern matching tutorial | Pydon't"
 ---
 
 Structural pattern matching is coming in Python 3.10 and this article

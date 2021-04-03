@@ -1,7 +1,7 @@
 date: 09-03-2021
 metadata:
     author: Rodrigo Girão Serrão
-    og:image: "https://mathspp.com/blog/pydonts/pattern-matching-tutorial-for-pythonic-code/thumbnail.png"
+    og:image: "https://mathspp.com/blog/pydonts/structural-pattern-matching-tutorial/thumbnail.png"
 references:
   - "PEP 622 -- Structural Pattern Matching, [https://www.python.org/dev/peps/pep-0622/](https://www.python.org/dev/peps/pep-0622/);"
   - "PEP 634 -- Structural Pattern Matching: Specification, [https://www.python.org/dev/peps/pep-0634/](https://www.python.org/dev/peps/pep-0634/);"
@@ -9,7 +9,9 @@ references:
   - "PEP 636 -- Structural Pattern Matching: Tutorial, [https://www.python.org/dev/peps/pep-0636/](https://www.python.org/dev/peps/pep-0636/);"
   - "Dynamic Pattern Matching with Python, [https://gvanrossum.github.io/docs/PyPatternMatching.pdf](https://gvanrossum.github.io/docs/PyPatternMatching.pdf);"
   - "Python 3.10 Pattern Matching in Action, YouTube video by “Big Python”, [https://www.youtube.com/watch?v=SYTVSeTgL3s](https://www.youtube.com/watch?v=SYTVSeTgL3s)."
-slug: "pattern-matching-tutorial-for-pythonic-code"
+routes:
+    aliases: "/blog/pydonts/pattern-matching-tutorial-for-pythonic-code"
+slug: "structural-pattern-matching-tutorial"
 taxonomy:
     category: [blogpost, pydont]
     tag:
