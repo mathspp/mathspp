@@ -1231,7 +1231,7 @@ P.S.: have any questions or suggestions? Be sure to leave them in the comment se
 
 
 [changes]: https://github.com/RojerGS/RGSPL/compare/v0.2...v0.3
-[testing]: https://github.com/RojerGS/RGSPL/blob/master/testing.py
+[testing]: https://github.com/RojerGS/RGSPL/blob/v0.3/testing.py
 
 [repl-part3]: https://RGSPLpart3.rojergs.repl.run/
 [rgspl3]: https://github.com/RojerGS/RGSPL/releases/tag/v0.3
