@@ -8,6 +8,9 @@ In this blog post we will go over some significant changes, from implementing AP
 
 ===
 
+!!! I now live stream the development of the RGSPL interpreter [here](/twitch)
+!!! and then later upload the recordings to [my YouTube channel](/youtube).
+
 # Recap
 
 In the last two blog posts we wrote a simple Python program that tokenizes basic [APL][apl-wiki] expressions, then parses and interprets them. We introduced some functions, like `+-×÷` and the operator `⍨`.

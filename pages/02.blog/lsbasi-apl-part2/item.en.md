@@ -9,6 +9,9 @@ Today is the day! Today is the day we take our [APL][apl-wiki] programs and inte
 
 ===
 
+!!! I now live stream the development of the RGSPL interpreter [here](/twitch)
+!!! and then later upload the recordings to [my YouTube channel](/youtube).
+
 ![A black and white doodle of a person in front of a computer.](./lsbasi-apl-part2-bg.png)
 
 Just to get us started, here are two ASTs, two Awfully Sketched Trees.
