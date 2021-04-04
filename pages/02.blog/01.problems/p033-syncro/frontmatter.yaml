@@ -1,0 +1,15 @@
+date: 04-04-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: https://mathspp.com/blog/problems/syncro/thumbnail.png
+process:
+    twig: true
+slug: syncro
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - automatons
+      - combinatorics
+      - graph theory
+      - mathematics
+twig_first: true
