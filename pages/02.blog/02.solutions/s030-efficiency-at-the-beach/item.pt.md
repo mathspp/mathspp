@@ -12,7 +12,7 @@ resolver [o problema][prob] a sério.
 
 ===
 
-### Solucionadores
+### Submissões
 
 Tenho de congratular as várias pessoas que me enviaram a solução correta,
 nomeadamente o “Todi Liju” que deixou um comentário
