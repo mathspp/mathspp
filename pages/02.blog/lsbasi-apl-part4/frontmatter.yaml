@@ -1,0 +1,16 @@
+date: 03-04-2021
+metadata:
+    og:image: "https://mathspp.com/blog/lsbasi-apl-part4/thumbnail.png"
+process:
+    twig: true
+published: true
+slug: lsbasi-apl-part4
+taxonomy:
+    category: blogpost
+    tag:
+      - apl
+      - interpreters
+      - lsbasi-apl
+      - programming
+      - python
+twig_first: true
