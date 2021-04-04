@@ -24,9 +24,9 @@ For those of you who know the LSBASI series, the numbering in my LSBASI series i
 
 ## The code
 
-[![](https://img.shields.io/github/stars/RojerGS/RGSPL?style=social)](https://github.com/RojerGS/RGSPL)&nbsp;&nbsp;&nbsp;[![run it on Repl.it!](https://repl.it/badge/github/RojerGS/RGSPL)](https://RGSPLpart1.rojergs.repl.run)
+[![](https://img.shields.io/github/stars/RojerGS/RGSPL?style=social)](https://github.com/RojerGS/RGSPL)
 
-The code for this project is available at [this GitHub repo][rgspl-repo] so go ahead and star it ;) The source code for this part is just the [rgspl1.py][rgspl1] file: you can download it in order to try it out or you can just try it online from your browser. All you have to do is hit the "run on repl.it" button above.
+The code for this project is available at [this GitHub repo][rgspl-repo] so go ahead and star it ;) The source code for this part is just the [rgspl1.py][rgspl1] file: you can download it in order to try it out.
 
 
 # What we are aiming for
@@ -207,7 +207,7 @@ With the code above, the expression `5 -⍨ ¯2.3` would get tokenized into `[To
 
 `5 -⍨ ¯2.3`
 
-and then paste it into the read-eval-print-loop [available here](https://RGSPLpart1.rojergs.repl.run).
+and then paste it into the read-eval-print-loop you get when you run the script.
 
 
 # Finding structure in the `Token` list
@@ -464,9 +464,7 @@ class Parser:
         return self.parse_program()
 ```
 
-With all these methods we can finally parse a very simple APL program into an AST and in the next blog post we will be able to interpret it! Give it a try right from your browser:
-
-[![run it on Repl.it!](https://repl.it/badge/github/RojerGS/RGSPL)](https://RGSPLpart1.rojergs.repl.run)
+With all these methods we can finally parse a very simple APL program into an AST and in the next blog post we will be able to interpret it!
 
 With the link above you can see the expression `×⍨ 4.5 - (4 ¯3 5.6)` getting parsed into `MOp(⍨ Monad(× Dyad(- S(4.5) A([S(4), S(-3), S(5.6)]))))`. Note that the `A`s stand for arrays and the `S`s stand for scalars.
 

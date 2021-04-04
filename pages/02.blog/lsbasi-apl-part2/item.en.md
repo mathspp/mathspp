@@ -15,7 +15,7 @@ Just to get us started, here are two ASTs, two Awfully Sketched Trees.
 
 # Recap
 
-If you recall, in the [last blog post][previous] of the series (which was also the first!) we created a simple program that took a basic [APL][apl-wiki] expression (APL is a really cool array-oriented programming language), tokenized it and then parsed it into an AST, an Abstract Syntax Tree. You can test that program online [here][repl-part1].
+If you recall, in the [last blog post][previous] of the series (which was also the first!) we created a simple program that took a basic [APL][apl-wiki] expression (APL is a really cool array-oriented programming language), tokenized it and then parsed it into an AST, an Abstract Syntax Tree.
 
 With that program, we can turn an expression like `5 6 -⍨ ÷1 2`
 
@@ -38,11 +38,12 @@ Additionaly, to make the above changes easier to implement, I am also going to r
 
 So we are actually starting with refactoring the parser and the way we represent monadic/dyadic function application. I decided to make this change when I realized implementing all the APL [operators][apl-wiki-op] was going to be a real headache with the format I chose before.
 
-To make my changes easier to understand, we will study the AST generated for the simple expression `1 +⍨⍨ 2`. If you [test it online](repl-part1) the program will print `MOp(⍨ MOp(⍨ Dyad(+ S(1) S(2))))`, which can be drawn as:
+To make my changes easier to understand, we will study the AST generated for the simple expression `1 +⍨⍨ 2`. If you test it,
+the program will print `MOp(⍨ MOp(⍨ Dyad(+ S(1) S(2))))`, which can be drawn as:
 
 ![Sketch of the AST generated for the example expression.](./old_parser_dyadic_example.png)
 
-What I don't like about this AST is that I don't know if the operator `⍨` is acting on a monadic or dyadic function until I reach the bottom of the tree, where I have my function and my two arguments. If you type the same expression `1 +⍨⍨ 2` in [the parser for this post][repl-part2], the output printed is a list with the single element `Dyad(MOp(⍨ MOp(⍨ F(+))) S(1) S(2))` in it; this tree can be represented as:
+What I don't like about this AST is that I don't know if the operator `⍨` is acting on a monadic or dyadic function until I reach the bottom of the tree, where I have my function and my two arguments. If you type the same expression `1 +⍨⍨ 2` in the new parser, the output printed is a list with the single element `Dyad(MOp(⍨ MOp(⍨ F(+))) S(1) S(2))` in it; this tree can be represented as:
 
 ![Sketch of the new AST generated for the example expression.](./new_parser_dyadic_example.png)
 
@@ -54,9 +55,9 @@ I challenge you to modify the AST nodes and the parser yourself to produce trees
 
 ## The code
 
-[![](https://img.shields.io/github/stars/RojerGS/RGSPL?style=social)][rgspl-repo]&nbsp;&nbsp;&nbsp;[![run it on Repl.it!](https://repl.it/badge/github/RojerGS/RGSPL)][repl-part2]
+[![](https://img.shields.io/github/stars/RojerGS/RGSPL?style=social)][rgspl-repo]
 
-The whole code for this project is hosted in [this][rgspl-repo] GitHub repo and the code for this specific blog post is [this subfolder][rgspl2]. You can also test today's code in your browser by hitting the "run on repl.it" button above.
+The whole code for this project is hosted in [this][rgspl-repo] GitHub repo and the code for this specific blog post is [this release][rgspl2].
 
 ---
 
@@ -699,7 +700,7 @@ And that is it! Congrats on making it this far! Lets take our new interpreter fo
 
 # Experimenting
 
-You can either [go try this online][repl-part2], download the code from the [github repo][rgspl2] or finish your code with this utility `if` statement (just be sure to `import argparse` in the beginning of your file):
+You can either download the code from the [GitHub repo][rgspl2] or finish your code with this utility `if` statement (just be sure to `import argparse` in the beginning of your file):
 
 ```py
 if __name__ == "__main__":
@@ -792,8 +793,7 @@ See you next time ;)
 {% endfor %}
 </ul>
 
-[repl-part1]: https://rgsplpart1.rojergs.repl.run/
-[repl-part2]: https://RGSPLpart2.rojergs.repl.run/
+
 [previous]: https://mathspp.com/blog/lsbasi-apl-part1
 [apl-wiki]: https://aplwiki.com/
 [apl-wiki-op]: https://aplwiki.com/wiki/Operator

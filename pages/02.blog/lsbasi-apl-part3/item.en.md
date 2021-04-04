@@ -32,9 +32,9 @@ This will also mean the posts become smaller and easier to read.
 
 ## The code
 
-[![](https://img.shields.io/github/stars/RojerGS/RGSPL?style=social)][rgspl-repo]&nbsp;&nbsp;&nbsp;[![run it on Repl.it!](https://repl.it/badge/github/RojerGS/RGSPL)][repl-part3]
+[![](https://img.shields.io/github/stars/RojerGS/RGSPL?style=social)][rgspl-repo]
 
-The whole code for this project is hosted in [this][rgspl-repo] GitHub repo and the code for this specific blog post is [this release][rgspl3]. You can also test today's code in your browser by hitting the "run on repl.it" button above. (Beware that at that online interface, typing APL glyphs may be frustrating because of the poor support for Unicode...)
+The whole code for this project is hosted in [this][rgspl-repo] GitHub repo and the code for this specific blog post is [this release][rgspl3].
 
 [This link][changes] has the diff with all the changes that happened since the last post.
 
@@ -1233,7 +1233,6 @@ P.S.: have any questions or suggestions? Be sure to leave them in the comment se
 [changes]: https://github.com/RojerGS/RGSPL/compare/v0.2...v0.3
 [testing]: https://github.com/RojerGS/RGSPL/blob/v0.3/testing.py
 
-[repl-part3]: https://RGSPLpart3.rojergs.repl.run/
 [rgspl3]: https://github.com/RojerGS/RGSPL/releases/tag/v0.3
 [previous]: ../lsbasi-apl-part2
 [rgspl-repo]: https://github.com/RojerGS/RGSPL
