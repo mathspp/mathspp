@@ -2,7 +2,8 @@
 title: Let's build a simple interpreter for APL - part 4
 ---
 
-In part 4 of this series of blog posts we take a look at pretty printing of APL arrays.
+In part 4 of this series we add some unit testing,
+improve our tokenizer and implement the primitives `⍴` and `⍤`.
 
 ===
 
