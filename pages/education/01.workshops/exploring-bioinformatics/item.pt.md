@@ -35,13 +35,21 @@ Se tiveres alguma pergunta, podes escrevê-la na zona dos comentários em baixo 
 podes [enviar-me um email][emailme].
 
 
+# Feedback
+
+Aqui encontras algumas coisas ditas por pessoas que participaram
+neste workshop:
+
+ > “*Aprender coisas novas e aplicar alguns dos conhecimentos do python na área do meu curso.*” – Marta S.
+
+<!---->
+
+ > “*Gostei muito de teres simplificado bastante os conceitos e da paciência para as dúvidas.*” – Anónim@.
+
+
 # Sessões passadas
 
- - Dei este workshop no dia 9 de março de 2021,
-no âmbito da [6a Semana da Bioengenharia][bioengineering-week], um evento
-organizado por alunos da minha universidade que frequentam cursos relacionados
-com a área.
-Durante a sessão escrevemos algum código que se encontra [aqui][code-0903].
+ - Workshop integrado na [6a Semana da Bioengenharia][bioengineering-week], a 9 de março de 2021.
 
 
 # Links úteis

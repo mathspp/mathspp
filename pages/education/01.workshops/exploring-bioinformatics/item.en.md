@@ -36,13 +36,21 @@ If you have any questions feel free to leave them below in the comments,
 or [email me][mailme] if you prefer!
 
 
+# Feedback
+
+Here is what some people said were the nice things of this workshop:
+
+ > “*Learning new things and applying Python to my area of studies.*” – Marta S.
+
+<!---->
+
+ > “*I liked a lot how you really simplified the concepts and had patience for all the questions.*” – Anonymous.
+
+
 # Previous sessions
 
- - I have given this workshop at the [6th Bioengineering Week][bioengineering-week],
-on the 9th of March of 2021,
-as part of a week-long event on the subject of – you guessed it – bioengineering.
-This event was prepared by students from degrees related to bioengineering at my old university.
-The code written during the session can be found [here][code-0903].
+ - [6th Bioengineering Week][bioengineering-week],
+on the 9th of March of 2021.
 
 
 # Useful links

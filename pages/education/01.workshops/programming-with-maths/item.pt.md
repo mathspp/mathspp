@@ -27,8 +27,19 @@ Se tiveres alguma pergunta, podes escrevê-la na zona dos comentários em baixo 
 podes [enviar-me um email][emailme].
 
 
+# Feedback
+
+Heis algumas das coisas que foram ditas sobre este workshop:
+
+ > “*Nunca tinha ouvido falar em APL e apesar de ter sido muito rápido, foi certamente bastante elucidativo. Vou, de certeza, pesquisar mais sobre a linguagem porque até pareceu intuitiva e bastante mais "simples" do que estaria à espera.*” – Inês T.
+
+<!---->
+
+ > “*Foi muito interessante e apesar de ter sido rápido, aprendeu-se muito de uma maneira divertida.*” – Anónim@
+
 # Sessões passadas
 
+ - APL Seeds '21, uma conferência sobre APL para iniciantes, a 31 de março de 2021.
  - Encontro nacional de estudantes de matemática de 2021, ENEMath²¹, a 27 de março de 2021.
 
 

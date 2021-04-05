@@ -30,9 +30,26 @@ If you have any questions feel free to leave them below in the comments,
 or [email me][mailme] if you prefer!
 
 
-# Previous sessions
+# Feedback
 
- - I ran a session of this workshop at the national (Portuguese) meetup of mathematics students,
+Here's some of the things that have been said about this workshop:
+
+ > “*I had never heard about APL and even though it was quite short,
+ > it was very enlightening.
+ > I will certainly research more about the language, especially
+ > because it looked intuitive and "simpler" than what I expected.*”
+ > – Inês T
+
+<!---->
+
+ > “*It was really interesting, and even though it was short
+ > we learned a lot in a fun way.*” – Anonymous
+
+
+# Past sessions
+
+ - [APL Seeds '21][aplseeds21], an APL user meeting aimed at beginners, on the 31st of March of 2021.
+ - National (Portuguese) meetup of mathematics students,
 ENEMath²¹, on the 27th of March of 2021.
 
 
@@ -46,3 +63,4 @@ ENEMath²¹, on the 27th of March of 2021.
  - APL competition – [dyalogaplcompetition.com](https://dyalogaplcompetition.com)
 
 [mailme]: mailto:rodrigo@mathspp.com
+[aplseeds21]: https://www.dyalog.com/apl-seeds-user-meetings/aplseeds21.htm
