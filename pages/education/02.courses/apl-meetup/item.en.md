@@ -75,15 +75,22 @@ the point is that participants will also shape how the sessions go, what we talk
 about, what we learn, etc.
 Further below you can find a summary of each past session.
 
- > 5th of April:
- >  - discussion of problems [“Number Splitting”](https://problems.tryapl.org/psets/2018.html?goto=P2_Number_Splitting) and [“Good Evening”](https://problems.tryapl.org/psets/2017.html?goto=P2_Good_Evening)
+ > 12th of April:
+ >  - examples of tacit idioms
  >  - operators `∘` `⍤` `⍥` for function composition
- >  - tacit programming (“forks” and “atops”)
 
-The remainder of the sections is yet to be planned.
+The following sessions are yet to be planned.
 
 
 ## Past sessions
+
+ > 5th of April:
+ >  - discussion of problems [“Number Splitting”](https://problems.tryapl.org/psets/2018.html?goto=P2_Number_Splitting) and [“Good Evening”](https://problems.tryapl.org/psets/2017.html?goto=P2_Good_Evening)
+ >  - operator `∘` for argument binding
+ >  - functions `⊢` and `⊣`
+ >  - tacit programming (“forks” and “atops”) (`(+,-)`, `(⌊,⊢-⌊)`, `(≠⊆⊢)`, `(⌈/-⌊/)`, ...)
+
+<!---->
 
  > 29th of March:
  >  - operators `/` `\` `⌿` `⍀`

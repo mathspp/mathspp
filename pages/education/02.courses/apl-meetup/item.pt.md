@@ -65,17 +65,24 @@ os participantes também ajudem a moldar as sessões.
 Mais em baixo encontras um sumário do que foi discutido nas sessões passadas,
 caso precises de refrescar a memória.
 
- > 5 de abril:
- >  - discussão dos problemas [“Number Splitting”](https://problems.tryapl.org/psets/2018.html?goto=P2_Number_Splitting) e [“Good Evening”](https://problems.tryapl.org/psets/2017.html?goto=P2_Good_Evening)
+ > 12 de abril:
+ >  - exemplos de idiomas tácitos
  >  - operadores `∘` `⍤` `⍥` para composição de funções
- >  - programação tácita (“forks” e “atops”)
 
 <!---->
 
-O resto das sessões ainda está por planear.
+As sessões seguintes ainda estão por planear.
 
 
 ## Sessões passadas
+
+ > 5 de abril:
+ >  - discussão dos problemas [“Number Splitting”](https://problems.tryapl.org/psets/2018.html?goto=P2_Number_Splitting) e [“Good Evening”](https://problems.tryapl.org/psets/2017.html?goto=P2_Good_Evening)
+ >  - operador `∘` para associar argumentos a funções
+ >  - funções `⊢` e `⊣`
+ >  - programação tácita (“forks” e “atops”) (`(+,-)`, `(⌊,⊢-⌊)`, `(≠⊆⊢)`, `(⌈/-⌊/)`, ...)
+
+<!---->
 
  > 29 de março:
  >  - operadores `/` `\` `⌿` `⍀`
