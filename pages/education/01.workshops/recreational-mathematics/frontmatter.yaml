@@ -1,0 +1,10 @@
+date: 01-05-2019
+metadata:
+    og:image: "https://mathspp.com/education/workshops/recreational-mathematics/thumbnail.png"
+slug: recreational-mathematics
+taxonomy:
+    category: "workshop"
+    topic:
+      - "graph theory"
+      - "problem solving"
+      - "mathematics"
