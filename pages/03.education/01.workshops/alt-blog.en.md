@@ -9,7 +9,4 @@ Feel free to [email me][email] to schedule a workshop or simply to learn more,
 I would love to hear from you.
 You can also browse all the workshops I have prepared below.
 
-(Check [here](/workshops) while I work on this page.)
-
 [email]: mailto:rodrigo@mathspp.com
-[workshops]: ../workshops

@@ -16,6 +16,4 @@ Feel free to [email me][email] to schedule a course or simply to learn more,
 I would love to hear from you.
 You can also browse all the courses I have prepared below.
 
-(This page is a work in progress.)
-
 [email]: mailto:rodrigo@mathspp.com

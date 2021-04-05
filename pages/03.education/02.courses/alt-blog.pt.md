@@ -15,6 +15,4 @@ Por favor, sente-te à vontade para [me enviares um email][email] para agendar u
 ou simplesmente para fazeres perguntas!
 Também podes espreitar os cursos que já preparei.
 
-(Esta página é um trabalho em progresso.)
-
 [email]: mailto:rodrigo@mathspp.com
