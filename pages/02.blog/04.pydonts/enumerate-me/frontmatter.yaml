@@ -1,0 +1,15 @@
+date: 06-04-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: "https://mathspp.com/blog/pydonts/enumerate-me/thumbnail.png"
+references:
+ - "Python 3 Documentation, The Python Standard Library, `enumerate`, [docs.python.org/3/library/functions.html#enumerate](https://docs.python.org/3/library/functions.html#enumerate) [last accessed 06-04-2021];"
+ - "Python 3 Documentation, The Python Standard Library, `calendar.Calendar`, [docs.python.org/3/library/calendar.html#calendar.Calendar](https://docs.python.org/3/library/calendar.html#calendar.Calendar) [last accessed 06-04-2021]."
+ - "Python 3 Documentation, The Python Standard Library, `doctest`, [docs.python.org/3/library/doctest.html](https://docs.python.org/3/library/doctest.html) [last accessed 06-04-2021]."
+ - "Python 3 Documentation, The Python Standard Library, `mailbox`, [docs.python.org/3/library/mailbox.html](https://docs.python.org/3/library/mailbox.html) [last accessed 06-04-2021]."
+slug: "enumerate-me"
+taxonomy:
+    category: [blogpost, pydont]
+    tag:
+      - "programming"
+      - "python"
