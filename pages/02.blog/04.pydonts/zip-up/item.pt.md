@@ -1,4 +1,6 @@
 ---
+metadata:
+    description: "Os ciclos `for` são importantíssimos na programação imperativa e Python tem algumas ferramentas muito boas para trabalhar com ciclos. Se queres atravessar várias estruturas paralelamente, já pensaste usar a função `zip`?"
 show_call_to_action: false
 title: "Zip up | Pydon't"
 ---
