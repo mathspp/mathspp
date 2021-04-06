@@ -1,6 +1,6 @@
 ---
 show_call_to_action: false
-title: "Zip | Pydon't"
+title: "Zip up | Pydon't"
 ---
 
 Os ciclos `for` são importantíssimos na programação imperativa
