@@ -3,8 +3,8 @@ metadata:
     author: Rodrigo Girão Serrão
     og:image: "https://mathspp.com/blog/pydonts/zip-up/thumbnail.png"
 references:
- - "Python 3 Documentation, The Python Standard Library, `zip`, [docs.python.org/3/library/functions.html#getattr](https://docs.python.org/3/library/functions.html#zip) [last accessed 30-03-2021];"
- - "Python 3.10 Documentation, The Python Standard Library, `zip`, [docs.python.org/3.10/library/functions.html#getattr](https://docs.python.org/3.10/library/functions.html#zip) [last accessed 30-03-2021];"
+ - "Python 3 Documentation, The Python Standard Library, `zip`, [docs.python.org/3/library/functions.html#zip](https://docs.python.org/3/library/functions.html#zip) [last accessed 30-03-2021];"
+ - "Python 3.10 Documentation, The Python Standard Library, `zip`, [docs.python.org/3.10/library/functions.html#zip](https://docs.python.org/3.10/library/functions.html#zip) [last accessed 30-03-2021];"
  - "Python 3 Documentation, The Python Standard Library, `csv`, [docs.python.org/3/library/csv.html](https://docs.python.org/3/library/csv.html) [last accessed 30-03-2021]."
  - "Python 3 Documentation, The Python Standard Library, `pathlib`, [docs.python.org/3/library/pathlib.html](https://docs.python.org/3/library/pathlib.html) [last accessed 30-03-2021]."
 slug: "zip-up"
