@@ -528,7 +528,7 @@ self._toc = dict(enumerate(zip(starts, stops)))
 Because `enumerate` returns 2-item tuples, `dict` can take that
 and build a dictionary.
 Curiously enough, we actually want `starts` and `stops` to be
-paired up together, so we end up with doing `enumerate` on a `zip`,
+paired up together, so we end up with calling `enumerate` on a `zip`,
 so this is what the result could look like:
 
 ```py
