@@ -1,12 +1,14 @@
 ---
+metadata:
+    description: "Se precisas de aceder aos elementos de um iterador _e_ aos seus índices, já pensaste em usar a função enumerate?"
 show_call_to_action: false
 title: "Enumerate me | Pydon't"
 ---
 
-Os ciclos `for` são importantíssimos na programação imperativa
-e Python tem algumas ferramentas muito boas para trabalhar com ciclos.
 Se precisas de aceder aos elementos de um iterador _e_ aos seus índices,
 já pensaste em usar `enumerate`?
+Neste artigo vamos falar de outra ferramenta fantástica que Python tem
+para lidar com ciclos `for`.
 
 ===
 
