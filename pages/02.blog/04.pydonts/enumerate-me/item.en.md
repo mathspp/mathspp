@@ -2,10 +2,10 @@
 title: "Enumerate me | Pydon't"
 ---
 
-`for` loops are the bread and butter of imperative programming
-and Python has some really nice tools to work with them.
 If you need to access the items of an iterable but also keep
 track of their indices, have you considered using `enumerate`?
+Let's talk about another of Python's amazing tools to work
+with `for` loops.
 
 ===
 
@@ -117,6 +117,21 @@ we might want to start counting from `1`:
 This optional argument can come in really handy as it saves you from having
 to manually offset the index.
 
+By the way, the argument has to be an integer but can be negative:
+
+```py
+>>> for i, v in enumerate("abc", start=-3243):
+...   print(i)
+...
+-3243
+-3242
+-3241
+```
+
+Can you come up with a _sensible_ situation where it would make sense
+to use `enumerate` with a negative integer as the optional argument?
+Comment down below if you come up with something nice!
+
 
 # Unpacking when iterating
 
@@ -127,7 +142,7 @@ This prevents Python from spending *a lot* of memory if you use
 
 ! This laziness of `enumerate` is something common in Python,
 ! for example `range` and `zip` are also lazy.
-! Be sure to [subscribe] so you don't miss the Pydon'ts where
+! Be sure to [subscribe] to the newsletter so you don't miss the Pydon'ts where
 ! I cover these concepts.
 
 The items that `enumerate` returns are 2-item tuples,
@@ -219,6 +234,7 @@ Now you will see some usages of `enumerate` in _real_ Python code.
 I took a look at the Python Standard Library and by and large the
 most common usage of `enumerate` is just a vanilla `enumerate(iter)`
 to access iterable values and indices at the same time.
+Let me share a textbook example with you:
 
 The [`doctest` module][doctest] allows you to write simple tests for your code
 inside the docstrings for your functions, classes, etc.
@@ -259,7 +275,8 @@ Notice how the top `for` loop uses `enumerate` to traverse the lines
 of the interactive examples.
 If, inside the loop, we encounter a line that does not have
 the extra blank space after `>>>` then we raise a `ValueError`
-where we use `i` to compute the actual line number where the error occurred.
+where we use `i` to compute the actual line number where the error occurred,
+which is the `lineno+i+1` bit in the second to last line.
 
 Want to see this in action?
 Try running this short script:
@@ -447,14 +464,15 @@ that tells you if a number is odd or not:
 ```
 
 What code do you write to figure out the _indices_ of the numbers that are odd?
-Notice that solutions making use of `l.index` in general won't work because
-the list may contain duplicates (cf. `l[0]` and `l[-1]` above).
+Notice that solutions making use of `nums.index` in general won't work because
+the list may contain duplicates (cf. `nums[0]` and `nums[-1]` above).
 
 In a helper file in the library with, and I quote, “Shared OS X support functions.”,
 I found a really elegant solution:
 
 ```py
 >>> [i for i, n in enumerate(nums) if odd(n)]
+[0, 1, 2, 7, 10]
 ```
 
 Of course the file I am talking about (`Lib\_osx_support.py`) didn't have this
