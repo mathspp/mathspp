@@ -393,7 +393,7 @@ Here is an example:
 
 The numbers on the left show the day of the month and the days on the
 right encode the day of the week, where `0` is Monday, up to `6` which is Sunday.
-The 6th of April of 2021 (the day in which this article was written) was a Tuesday,
+The 6th of April of 2021 (the day I wrote this article on) was a Tuesday,
 which is encoded by the `(6, 1)` in the output above.
 
 Here is the code that implements `itermonthdays2`:
