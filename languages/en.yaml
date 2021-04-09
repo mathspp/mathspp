@@ -77,10 +77,9 @@ THEME_MY_QUARK:
 
 FOOTER:
   ICON_TITLES:
-    BMC: "Buy me a slice of pizza"
-    PATREON: Support this project on Patreon
+    BMC: "Show the love for the mathspp project!"
     TWITCH: "Follow me on Twitch for programming streams"
-    YOUTUBE: "Subscribe to the YouTube channel so you don't miss a single video"
+    YOUTUBE: "Subscribe to the YouTube channel"
     GITHUB: Star the blog content and contribute on GitHub
     FACEBOOK: Like mathspp on Facebook
     TWITTER: Follow @mathsppblog on Twitter

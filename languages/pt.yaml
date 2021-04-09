@@ -126,8 +126,7 @@ THEME_MY_QUARK:
 
 FOOTER:
   ICON_TITLES:
-    BMC: "Paga-me uma fatia de pizza"
-    PATREON: "Apoia o projeto no Patreon"
+    BMC: "Apoia o projeto mathspp!"
     TWITCH: "Segue-me para veres streams de programação"
     YOUTUBE: "Subscreve o canal do YouTube para não perderes nenhum vídeo"
     GITHUB: "Põe uma estrela no GitHub do blogue"
