@@ -44,9 +44,9 @@ In Python, multiple assignment is what allows you to write things like
 >>> y = "hey"
 >>> x, y = y, x    # Multiple assignment to swap variables.
 >>> x
-3
->>> y
 'hey'
+>>> y
+3
 ```
 
 or

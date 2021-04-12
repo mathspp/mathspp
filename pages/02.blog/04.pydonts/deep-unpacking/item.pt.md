@@ -49,9 +49,9 @@ como
 >>> y = "hey"
 >>> x, y = y, x    # Multiple assignment to swap variables.
 >>> x
-3
->>> y
 'hey'
+>>> y
+3
 ```
 
 ou
