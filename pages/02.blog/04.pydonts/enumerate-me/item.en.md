@@ -28,6 +28,7 @@ Python allows you to write very expressive loops,
 and some of that expressiveness comes from the built-in `enumerate` function.
 
 In this article you will
+
  - see what `enumerate` does;
  - take a look at its underrated optional `start` argument;
  - learn a couple of neat use cases for `enumerate`;

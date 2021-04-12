@@ -25,6 +25,7 @@ Python allows you to write very expressive loops,
 and part of that is because of the built-in `zip` function.
 
 In this article you will
+
  - see what `zip` does;
  - get to know a new feature of `zip` that is coming in Python 3.10;
  - learn how to use `zip` to create dictionaries; and

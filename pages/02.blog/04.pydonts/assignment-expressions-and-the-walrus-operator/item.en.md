@@ -73,6 +73,7 @@ The second alternative (without `:=`) is much easier to read than the first one,
 though using `:=` saved one line of code.
 
 However, good uses of assignment expressions can
+
  - make your code faster,
  - make it more readable/expressive, and
  - make your code shorter.

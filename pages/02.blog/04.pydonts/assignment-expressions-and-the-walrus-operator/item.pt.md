@@ -76,6 +76,7 @@ A segunda alternativa (sem o `:=`) é muito mais fácil de ler do que a primeira
 apesar da utilização do `:=` ter poupado uma linha de código.
 
 No entanto, boas utilizações de expressões com atribuições podem
+
  - tornar o código mais rápido,
  - fazê-lo mais expressivo e legível, e
  - encurtar o código.

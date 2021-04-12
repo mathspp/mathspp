@@ -17,6 +17,7 @@ ler a [Proclamação das Pydon'ts][manifesto].)
 # Introdução
 
 Nesta Pydon't vamos falar do encadeamento de comparações:
+
  - como funcionam;
  - utilizações úteis;
  - casos enganadores a evitar.

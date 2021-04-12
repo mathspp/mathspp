@@ -19,6 +19,7 @@ namely those where you chain comparison operators that aren't aligned.
 # Introduction
 
 In this Pydon't we will go over the chaining of comparison operators:
+
  - how they work;
  - useful usages; and
  - weird cases to avoid.
