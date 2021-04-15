@@ -179,6 +179,7 @@ hof:
   - "Vasco Cabrita, Coimbra (Portugal) <i class='fas fa-star'></i>"
   - "Carlos Sebastião, Seixal (Portugal) <i class='fas fa-star'></i>"
   - "Gabriel Dummer Camargo, Rio Grande do Sul (Brasil) <i class='fas fa-star'></i>"
+  - "Tiago Nunes, Lisboa (Portugal) <i class='fas fa-star'></i>"
   - "Nícolas Hecker Silva, São Paulo (Brasil) <i class='fas fa-star'></i>" 
 process:
   twig: true
