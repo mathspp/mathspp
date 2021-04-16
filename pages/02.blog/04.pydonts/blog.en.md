@@ -4,8 +4,8 @@ metadata:
 ---
 # Pydon'ts
 
-## Improve your Python programming skills
+## Write beautiful Python code
 
-### Start [here][manifesto].
+### Now available as a book [on Leanpub][book]
 
-[manifesto]: ./pydont-manifesto
+[book]: https://leanpub.com/pydonts

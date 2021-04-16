@@ -5,8 +5,8 @@ metadata:
 
 # Pydon'ts
 
-## Melhora as tuas capacidades de programação em Python
+## Escreve código Python elegante
 
-### Começa [aqui][manifesto].
+### Lê os artigos aqui ou compra o livro disponível [no Leanpub][book]
 
-[manifesto]: ./pydont-manifesto
+[book]: https://leanpub.com/pydonts
