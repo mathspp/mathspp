@@ -6,11 +6,6 @@ content:
     order:
         custom:
             - "_hero"
-            - "_workshops_highlights"
-            - "_workshops_some"
-            - "_courses_highlights"
-            - "_books_highlights"
-            - "_summary"
 metadata:
     author: "Rodrigo Girão Serrão"
     og:image: "https://mathspp.com/education/logo_education.png"
