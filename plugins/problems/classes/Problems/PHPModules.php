@@ -5,6 +5,10 @@ namespace Grav\Plugin\Problems;
 use Grav\Common\Grav;
 use Grav\Plugin\Problems\Base\Problem;
 
+/**
+ * Class PHPModules
+ * @package Grav\Plugin\Problems
+ */
 class PHPModules extends Problem
 {
     public function __construct()
@@ -17,6 +21,9 @@ class PHPModules extends Problem
         $this->help = 'https://learn.getgrav.org/basics/requirements#php-requirements';
     }
 
+    /**
+     * @return $this
+     */
     public function process()
     {
         $modules_errors = [];
@@ -89,6 +96,14 @@ class PHPModules extends Problem
             $modules_success['openssl'] = sprintf($msg, 'successfully');
         } else {
             $modules_errors['openssl'] = sprintf($msg, 'required but not');
+        }
+
+        // Check for PHP XML library
+        $msg = 'PHP JSON Library is %s installed';
+        if (extension_loaded('json')) {
+            $modules_success['json'] = sprintf($msg, 'successfully');
+        } else {
+            $modules_errors['json'] = sprintf($msg, 'required but not');
         }
 
         // Check for PHP XML library

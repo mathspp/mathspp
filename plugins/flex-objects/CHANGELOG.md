@@ -1,3 +1,45 @@
+# v1.0.7
+## 04/06/2021
+
+1. [](#new)
+    * Added deny option support to `filepicker` field [#119](https://github.com/trilbymedia/grav-plugin-flex-objects/pull/119)
+1. [](#bugfix)
+    * Prevent expert editing mode from anyone else than super users [grav-plugin-admin#2094](https://github.com/getgrav/grav-plugin-admin/issues/2094)
+    * Fixed not being able to add new folder [grav#3293](https://github.com/getgrav/grav/issues/3293)
+    * Fixed Flex directories defined only in theme not showing up [grav#3292](https://github.com/getgrav/grav/issues/3292)
+
+# v1.0.6
+## 03/30/2021
+
+1. [](#bugfix)
+   * Fixed automatic git-sync in admin save and delete [#120](https://github.com/trilbymedia/grav-plugin-flex-objects/issues/120)
+   * Prevent Add Page / Add Module modals from closing if clicking on the outside overlay [grav-plugin-admin#2089](https://github.com/getgrav/grav-plugin-admin/issues/2089)
+
+# v1.0.5
+## 03/19/2021
+
+1. [](#new)
+   * Require **Grav 1.7.9**
+   * Require **Form Plugin 5.0.1**
+1. [](#improved)
+   * Catch JSON decoding issues in controllers
+1. [](#bugfix)
+   * Fixed broken media upload/picker fields with `@self/path` notations [grav#3275](https://github.com/getgrav/grav/issues/3275)
+   * Fixed `filepicker` field not including newly uploaded and excluding newly deleted files before saving the object
+   * Fixed `Flex Page` CRUD ACL when creating a new page [#115](https://github.com/trilbymedia/grav-plugin-flex-objects/issues/115)
+   * Bumped dependencies versions [#116](https://github.com/trilbymedia/grav-plugin-flex-objects/issues/116)
+   * Fixed clicking `move` button on some pages resulting in endless loading spinner [grav-plugin-admin#2095](https://github.com/getgrav/grav-plugin-admin/issues/2095) 
+
+# v1.0.4
+## 03/17/2021
+
+1. [](#improved)
+   * Added id attributes for buttons to help on acceptance testing
+1. [](#bugfix)
+   * Fixed fatal error in `/admin/flex-objects` [#114](https://github.com/trilbymedia/grav-plugin-flex-objects/issues/114)
+   * Fixed `onAdminSave` original page having empty header [grav#3259](https://github.com/getgrav/grav/issues/3259)
+   * Fixed flash issues on uploading files into a new page
+
 # v1.0.3
 ## 02/17/2021
 

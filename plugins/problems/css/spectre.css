@@ -325,8 +325,6 @@ legend { font-size: 0.9rem; font-weight: 500; margin-bottom: 0.8rem; }
 
 .form-input:focus { box-shadow: 0 0 0 0.1rem rgba(0, 116, 217, 0.2); border-color: #0074D9; }
 
-.form-input::-webkit-input-placeholder { color: #acb3c2; }
-
 .form-input:-ms-input-placeholder { color: #acb3c2; }
 
 .form-input::-ms-input-placeholder { color: #acb3c2; }

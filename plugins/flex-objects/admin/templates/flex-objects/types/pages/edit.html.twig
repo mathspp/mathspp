@@ -1,12 +1,14 @@
 {% extends 'flex-objects/types/default/edit.html.twig' %}
 
-{% set form = form ?? object.form(admin.session.expert != '0' ? 'raw') %}
+{% set form = form ?? object.form(user.authorize('admin.super') and admin.session.expert != '0' ? 'raw') %}
+
 {% set title = title ?? form.getValue('header.title') ?? object.title ?? key %}
 {% set parent = object.parent %}
-{% set can_read = can_read ?? (object.exists ? object.isAuthorized('read', 'admin', user) : parent.isAuthorized('create', 'admin', user))|bool %}
+{% set can_read = can_read ?? (object.exists ? object.isAuthorized('read', 'admin', user) : object.isAuthorized('create', 'admin', user))|bool %}
 {% set can_copy = can_copy ?? (parent.exists and parent.isAuthorized('create', 'admin', user)) %}
 {% set can_create = can_create ?? (object.exists and object.isAuthorized('create', 'admin', user)) %}
-{% set can_save = can_save ?? (object.exists ? object.isAuthorized('update', 'admin', user) : parent.isAuthorized('create', 'admin', user))|bool %}
+{% set can_save = can_save ?? (object.exists ? object.isAuthorized('update', 'admin', user) : object.isAuthorized('create', 'admin', user))|bool %}
+{% set can_move = can_move ?? can_save and form.blueprint.schema.property('route').type is same as('parents') %}
 {% set can_translate = can_translate ?? (admin.multilang and object.hasFlexFeature('page-translate') and not object.root()) %}
 
 {% macro spanToggle(input, length) %}
@@ -68,7 +70,7 @@
     {% if can_copy %}
     {% include ['flex-objects/types/' ~ target ~ '/buttons/copy.html.twig', 'flex-objects/types/pages/buttons/copy.html.twig'] %}
     {% endif %}
-    {% if can_save %}
+    {% if can_move %}
     {% include ['flex-objects/types/' ~ target ~ '/buttons/move.html.twig', 'flex-objects/types/pages/buttons/move.html.twig'] %}
     {% endif %}
     {% endif %}
@@ -151,6 +153,7 @@
         </div>
     {% endif %}
 
+    {% if user.authorize('admin.super') %}
     <form id="admin-mode-toggle">
         {% set normalText = 'PLUGIN_ADMIN.NORMAL'|tu %}
         {% set expertText = 'PLUGIN_ADMIN.EXPERT'|tu %}
@@ -166,6 +169,7 @@
             <a></a>
         </div>
     </form>
+    {% endif %}
 {% endblock topbar %}
 
 {% block edit %}
@@ -183,7 +187,7 @@
             name: object.header.child_type ?? null
         }) %}
 
-        <div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false">
+        <div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
             {% include 'partials/blueprints-new.html.twig' with { form: null, blueprints: admin.blueprints('admin/pages/new'), data: modal_data, form_id: 'new-page' } %}
         </div>
 
@@ -191,7 +195,7 @@
             {% include 'partials/blueprints-new-folder.html.twig' with { form: null, blueprints: admin.blueprints('admin/pages/new_folder'), data: modal_data, form_id: 'new-folder' } %}
         </div>
 
-        <div class="remodal" data-remodal-id="module" data-remodal-options="hashTracking: false">
+        <div class="remodal" data-remodal-id="module" data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
             {% include 'partials/blueprints-new.html.twig' with { form: null, blueprints: admin.blueprints('admin/pages/modular_new'), data: modal_data, form_id: 'new-module' } %}
         </div>
     {% endif %}
