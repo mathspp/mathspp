@@ -6,6 +6,6 @@ metadata:
 
 ## Write beautiful Python code
 
-Read the articles here or buy the book [on Leanpub][book]
+Buy the book [on Leanpub][book] or read the articles here.
 
 [book]: https://leanpub.com/pydonts

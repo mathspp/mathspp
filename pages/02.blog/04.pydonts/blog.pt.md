@@ -7,6 +7,6 @@ metadata:
 
 ## Escreve código Python elegante
 
-Lê os artigos aqui ou compra o livro disponível [no Leanpub][book]
+Compra o livro [no Leanpub][book] ou lê os artigos aqui.
 
 [book]: https://leanpub.com/pydonts
