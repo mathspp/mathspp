@@ -1,9 +1,3 @@
-{#
 {% if header_var("show_announcement")|defined(true) %}
-{% markdown %}
-!!! Estou super entusiasmado por partilhar contigo que publiquei a versão alfa do meu livro “Pydon'ts”,
-!!! que é uma compilação de todos os artigos “Pydon't” que podes ler [aqui](/blog/pydonts).
-!!! Podes obter a tua cópia (em inglês) no leanpub: [leanpub.com/pydonts](https://leanpub.com/pydonts).
-{% endmarkdown %}
+{{ "!!! Estou super entusiasmado por partilhar contigo que publiquei a versão alfa do meu livro “Pydon'ts”, que é uma compilação de todos os artigos “Pydon't” que podes ler [aqui](/blog/pydonts). Podes obter a tua cópia (em inglês) no leanpub: [leanpub.com/pydonts](https://leanpub.com/pydonts)." | markdown }}
 {% endif %}
-#}
