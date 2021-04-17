@@ -4,7 +4,7 @@
 
 <ul>
 {% for ref in references %}
-  <li>{{ ref }}</li>
+  <li>{{ ref | markdown(false) }}</li>
 {% endfor %}
 </ul>
 {% endif %}
