@@ -15,8 +15,8 @@ before making a serious attempt [at the problem][prob].
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 that submitted correct solutions:
 
- - Attila K.;
- - Filippo M.;
+ - Attila K., Hungary;
+ - Filippo M., Italy;
  - Luís S.;
  - André S..
 

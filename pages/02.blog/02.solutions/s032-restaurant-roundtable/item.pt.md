@@ -16,8 +16,8 @@ resolver [o problema][prob] a sério.
 Parabéns a todos os que conseguiram resolver o problema e,
 em particular, aos que me enviaram as suas soluções:
 
- - Attila K.;
- - Filippo M.;
+ - Attila K., Hungria;
+ - Filippo M., Itália;
  - Luís S.;
  - André S..
 

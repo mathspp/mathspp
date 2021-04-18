@@ -24,10 +24,8 @@ you are not colour-blind (sorry if you are :/).
 
 ### Solution
 
-The solution to this problem will be posted [here][sol] after this problem has been live for 2 weeks.
-Feel free to [email me][email] your solution or to comment it here if you want it featured in the [solution page][sol].
-<!--You can read the solution [here][sol] to compare with your own solution.
-You can also use that link to post your own solution in the comments! Please avoid posting spoilers in the comments here.-->
+You can read the solution [here][sol] to compare with your own solution.
+You can also use that link to post your own solution in the comments! Please avoid posting spoilers in the comments here.
 
 ---
 
