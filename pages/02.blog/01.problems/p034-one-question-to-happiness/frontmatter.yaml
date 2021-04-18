@@ -1,0 +1,13 @@
+date: 18-04-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: https://mathspp.com/blog/problems/one-question-to-happiness/thumbnail.png
+process:
+    twig: true
+slug: one-question-to-happiness
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - logic
+      - mathematics
+twig_first: true
