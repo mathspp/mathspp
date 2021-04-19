@@ -75,14 +75,24 @@ the point is that participants will also shape how the sessions go, what we talk
 about, what we learn, etc.
 Further below you can find a summary of each past session.
 
- > 12th of April:
- >  - examples of tacit idioms
- >  - operators `∘` `⍤` `⍥` for function composition
+ > 26th of April:
+ >  - solving problems from [problems.tryapl.org](https://problems.tryapl.org) and [leetcode.com](https://leetcode.com)
 
 The following sessions are yet to be planned.
 
 
 ## Past sessions
+
+ > 19th of April:
+ >  - taking a quick glance at the first elements of the language bar: `←` `+-×÷*⍟⌹○!?` `|⌈⌊⊥⊤⊣⊢` `=≠<≤≥>≡≢` `∨∧⍲⍱` `↑↓⊂⊃⊆⌷⍋⍒` `⍳⍸∊⍷∪∩~`
+
+<!---->
+
+ > 12th of April:
+ >  - examples of tacit idioms
+ >  - operators `∘` `⍤` `⍥` for function composition
+
+<!---->
 
  > 5th of April:
  >  - discussion of problems [“Number Splitting”](https://problems.tryapl.org/psets/2018.html?goto=P2_Number_Splitting) and [“Good Evening”](https://problems.tryapl.org/psets/2017.html?goto=P2_Good_Evening)

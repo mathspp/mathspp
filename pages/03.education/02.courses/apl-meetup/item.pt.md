@@ -65,16 +65,24 @@ os participantes também ajudem a moldar as sessões.
 Mais em baixo encontras um sumário do que foi discutido nas sessões passadas,
 caso precises de refrescar a memória.
 
- > 12 de abril:
- >  - exemplos de idiomas tácitos
- >  - operadores `∘` `⍤` `⍥` para composição de funções
-
-<!---->
+ > 26 de abril:
+ >  - resolver problemas dos sites [problems.tryapl.org](https://problems.tryapl.org) e [leetcode.com](https://leetcode.com)
 
 As sessões seguintes ainda estão por planear.
 
 
 ## Sessões passadas
+
+ > 19 de abril:
+ >  - revisão dos primeiros elementos da barra das primitivas: `←` `+-×÷*⍟⌹○!?` `|⌈⌊⊥⊤⊣⊢` `=≠<≤≥>≡≢` `∨∧⍲⍱` `↑↓⊂⊃⊆⌷⍋⍒` `⍳⍸∊⍷∪∩~`
+
+<!---->
+
+ > 12 de abril:
+ >  - exemplos de idiomas tácitos
+ >  - operadores `∘` `⍤` `⍥` para composição de funções
+
+<!---->
 
  > 5 de abril:
  >  - discussão dos problemas [“Number Splitting”](https://problems.tryapl.org/psets/2018.html?goto=P2_Number_Splitting) e [“Good Evening”](https://problems.tryapl.org/psets/2017.html?goto=P2_Good_Evening)
