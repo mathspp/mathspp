@@ -183,8 +183,9 @@ Things can get even more interesting when you use `enumerate`,
 for example, on a `zip`:
 
 ```py
->>> chapter_pages = [5, 17, 31, 50]     # book ends at page 50
->>> for i, (start, end) in enumerate(zip(chapter_pages, chapter_pages[1:]), start=1):
+>>> # Page where each chapter starts and the final page of the book.
+>>> pages = [5, 17, 31, 50]
+>>> for i, (start, end) in enumerate(zip(pages, pages[1:]), start=1):
 ...     print(f"'{i}: {end-start} pages long.'")
 ...
 '1: 12 pages long.'
@@ -201,8 +202,9 @@ Notice how `enumerate` returns tuples with indices and values,
 but those values are extracted from a `zip`, which itself returns tuples:
 
 ```py
->>> chapter_pages = [5, 17, 31, 50]     # book ends at page 50
->>> for tup in enumerate(zip(chapter_pages, chapter_pages[1:]), start=1):
+>>> # Page where each chapter starts and the final page of the book.
+>>> pages = [5, 17, 31, 50]
+>>> for tup in enumerate(zip(pages, pages[1:]), start=1):
 ...     print(tup)
 ...
 (1, (5, 17))
@@ -213,8 +215,9 @@ but those values are extracted from a `zip`, which itself returns tuples:
 What we do is use deep unpacking to access all these values directly:
 
 ```py
->>> chapter_pages = [5, 17, 31, 50]     # book ends at page 50
->>> for tup in enumerate(zip(chapter_pages, chapter_pages[1:]), start=1):
+>>> # Page where each chapter starts and the final page of the book.
+>>> pages = [5, 17, 31, 50]
+>>> for tup in enumerate(zip(pages, pages[1:]), start=1):
 ...     i, (start, end) = tup
 ...     print(f"'{i}: {end-start} pages long.'")
 ...

@@ -137,10 +137,14 @@ def normalise_colour_info(colour):
             raise ValueError("Unknown colour info.")
     return (name, (r, g, b, a))
 
-print(normalise_colour_info((240, 248, 255)))                       # ('', (240, 248, 255, 0))
-print(normalise_colour_info((240, 248, 255, 0)))                    # ('', (240, 248, 255, 0))
-print(normalise_colour_info(("AliceBlue", (240, 248, 255))))        # ('AliceBlue', (240, 248, 255, 0))
-print(normalise_colour_info(("AliceBlue", (240, 248, 255, 0.3))))   # ('AliceBlue', (240, 248, 255, 0.3))
+# Prints ('', (240, 248, 255, 0))
+print(normalise_colour_info((240, 248, 255)))
+# Prints ('', (240, 248, 255, 0))
+print(normalise_colour_info((240, 248, 255, 0)))
+# Prints ('AliceBlue', (240, 248, 255, 0))
+print(normalise_colour_info(("AliceBlue", (240, 248, 255))))
+# Prints ('AliceBlue', (240, 248, 255, 0.3))
+print(normalise_colour_info(("AliceBlue", (240, 248, 255, 0.3))))
 ```
 
 Notice here that each `case` contains an expression like the left-hand side
@@ -206,8 +210,10 @@ def normalise_colour_info(colour):
             raise ValueError("Unknown colour info.")
     return (name, (r, g, b, a)))
 
-print(normalise_colour_info(("AliceBlue", (240, 248, 255))))    # ('AliceBlue', (240, 248, 255, 0))
-print(normalise_colour_info2(("Red", (255, 0, "0"))))           # ValueError: Unknown colour info.
+# Prints ('AliceBlue', (240, 248, 255, 0))
+print(normalise_colour_info(("AliceBlue", (240, 248, 255))))
+# Raises # ValueError: Unknown colour info.
+print(normalise_colour_info2(("Red", (255, 0, "0"))))
 ```
 
 How do you reproduce all this validation with `if` statements..?
@@ -266,10 +272,14 @@ def describe_point(point):
 
     return "The point is " + desc
 
-print(describe_point(Point2D(0, 0)))    # The point is at the origin
-print(describe_point(Point2D(3, 0)))    # The point is in the horizontal axis, at x = 3
-print(describe_point(Point2D(3, -3)))   # The point is along the x = -y line, with x = 3 and y = -3
-print(describe_point(Point2D(1, 2)))    # The point is at (1, 2)
+# Prints "The point is at the origin"
+print(describe_point(Point2D(0, 0)))
+# Prints "The point is in the horizontal axis, at x = 3"
+print(describe_point(Point2D(3, 0)))
+# Prints "# The point is along the x = -y line, with x = 3 and y = -3"
+print(describe_point(Point2D(3, -3)))
+# Prints "# The point is at (1, 2)"
+print(describe_point(Point2D(1, 2)))
 ```
 
 
@@ -309,9 +319,12 @@ def describe_point(point):
 
     return "The point is " + desc
 
-print(describe_point(Point2D(0, 0)))    # The point is at the origin
-print(describe_point(Point2D(3, 0)))    # The point is in the horizontal axis, at x = 3
-print(describe_point(Point2D(1, 2)))    # The point is at (1, 2)
+# Prints "The point is at the origin"
+print(describe_point(Point2D(0, 0)))
+# Prints "The point is in the horizontal axis, at x = 3"
+print(describe_point(Point2D(3, 0)))
+# Prints "# The point is at (1, 2)"
+print(describe_point(Point2D(1, 2)))
 ```
 
 
@@ -548,7 +561,8 @@ def prefix(tree):
 
 print(prefix(ast.parse("1 + 2 + 3", mode="eval")))     # + + 1 2 3
 print(prefix(ast.parse("2**3 + 6", mode="eval"))       # + * 2 3 6
-print(prefix(ast.parse("1 + 2*3 - 5/7", mode="eval"))) # - + 1 * 2 3 / 5 7
+# Prints '- + 1 * 2 3 / 5 7', take a moment to digest this one.
+print(prefix(ast.parse("1 + 2*3 - 5/7", mode="eval")))
 ```
 
 ## Careful with the hype
@@ -591,7 +605,8 @@ def prefix(tree):
 
 print(prefix(ast.parse("1 + 2 + 3", mode="eval")))     # + + 1 2 3
 print(prefix(ast.parse("2*3 + 6", mode="eval"))        # + * 2 3 6
-print(prefix(ast.parse("1 + 2*3 - 5/7", mode="eval"))) # - + 1 * 2 3 / 5 7
+# Prints '- + 1 * 2 3 / 5 7', take a moment to digest this one.
+print(prefix(ast.parse("1 + 2*3 - 5/7", mode="eval")))
 ```
 
 # Conclusion

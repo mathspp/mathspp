@@ -283,7 +283,7 @@ so that the origin (the point `Point2D(0, 0)`) is Falsy and all other
 points are Truthy:
 
 ```py
-# Retrieved from https://mathspp.com/blog/pydonts/pydont-confuse-str-and-repr
+# From https://mathspp.com/blog/pydonts/pydont-confuse-str-and-repr
 class Point2D:
     """A class to represent points in a 2D space."""
 
@@ -387,7 +387,7 @@ Consider the following example:
 import pathlib
 
 def print_file_sizes(dir):
-    """Print file sizes in a directory, recursing into subdirectories."""
+    """Print file sizes in a directory, recurse into subdirs."""
 
     paths_to_process = [dir]
     while paths_to_process:

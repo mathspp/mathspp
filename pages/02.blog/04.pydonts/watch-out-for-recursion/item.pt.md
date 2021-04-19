@@ -446,7 +446,7 @@ então podias reescrever a tua função do seguinte modo:
 import pathlib
 
 def print_file_sizes(dir):
-    """Print file sizes in a directory, recursing into subdirectories."""
+    """Print file sizes in a directory, recurse into subdirs."""
 
     paths_to_process = [dir]
     while paths_to_process:
@@ -539,9 +539,9 @@ def merge(l1, l2):
         else:
             h, *l2 = l2
         result.append(h)
-    # One of the two lists is empty, the other contains the larger elements.
-    result.extend(l1)
-    result.extend(l2)
+
+    result.extend(l1)  # One of the two lists is empty,
+    result.extend(l2)  # the other contains the larger elements.
     return result
 
 def merge_sort(l):
@@ -575,9 +575,9 @@ def merge(l1, l2):
         else:
             h, *l2 = l2
         result.append(h)
-    # One of the two lists is empty, the other contains the larger elements.
-    result.extend(l1)
-    result.extend(l2)
+
+    result.extend(l1)  # One of the two lists is empty,
+    result.extend(l2)  # the other contains the larger elements.
     return result
 
 def merge_sort(l):

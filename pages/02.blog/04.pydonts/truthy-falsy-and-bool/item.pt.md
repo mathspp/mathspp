@@ -311,7 +311,7 @@ o método `__bool__` para que a origem (o ponto `Point2D(0, 0)`) seja
 Falsy e todos os outros sejam Truthy:
 
 ```py
-# Retrieved from https://mathspp.com/blog/pydonts/pydont-confuse-str-and-repr
+# From https://mathspp.com/blog/pydonts/pydont-confuse-str-and-repr
 class Point2D:
     """A class to represent points in a 2D space."""
 

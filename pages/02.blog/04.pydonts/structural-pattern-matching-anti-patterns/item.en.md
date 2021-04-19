@@ -220,7 +220,8 @@ def prefix(tree):
 
 print(prefix(ast.parse("1 + 2 + 3", mode="eval")))     # + + 1 2 3
 print(prefix(ast.parse("2**3 + 6", mode="eval"))       # + * 2 3 6
-print(prefix(ast.parse("1 + 2*3 - 5/7", mode="eval"))) # - + 1 * 2 3 / 5 7
+# Final one prints '- + 1 * 2 3 / 5 7', take a moment to grok it.
+print(prefix(ast.parse("1 + 2*3 - 5/7", mode="eval")))
 ```
 
 Notice the inner `match` to convert the `op` inside a `BinOp`
@@ -260,7 +261,8 @@ def prefix(tree):
 
 print(prefix(ast.parse("1 + 2 + 3", mode="eval")))     # + + 1 2 3
 print(prefix(ast.parse("2**3 + 6", mode="eval"))       # + * 2 3 6
-print(prefix(ast.parse("1 + 2*3 - 5/7", mode="eval"))) # - + 1 * 2 3 / 5 7
+# Final one prints '- + 1 * 2 3 / 5 7', take a moment to grok it.
+print(prefix(ast.parse("1 + 2*3 - 5/7", mode="eval")))
 ```
 
 This makes it easier to read and interpret the `prefix` function,
@@ -315,7 +317,7 @@ import functions
 def visit_F(self, func):
     """Fetch the callable function."""
 
-    name = func.token.type.lower()      # Get the name of the symbol.
+    name = func.token.type.lower()  # Get the name of the symbol.
     match name:
         case "plus":
             function = functions.plus

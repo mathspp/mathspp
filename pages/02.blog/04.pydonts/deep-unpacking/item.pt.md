@@ -58,7 +58,8 @@ ou
 
 ```py
 >>> rgb_values = (45, 124, 183)
->>> r, g, b = rgb_values    # Multiple assignment unpacks the tuple.
+>>> # Multiple assignment unpacks the tuple.
+>>> r, g, b = rgb_values
 >>> g
 124
 ```
@@ -196,7 +197,8 @@ temos visto no exemplo e que calcula o tom de cinzento:
 
 ```py
 def greyscale(colour_info):
-    return 0.2126*colour_info[1][0] + 0.7152*colour_info[1][1] + 0.0722*colour_info[1][2]
+    return 0.2126*colour_info[1][0] + 0.7152*colour_info[1][1] + \
+            0.0722*colour_info[1][2]
 ```
 
 (A fórmula que estamos a usar,
@@ -256,7 +258,8 @@ colours = [
     ("DarkCyan", (0, 139, 139)),
 ]
 greyscales = [
-    round(0.2126*r + 0.7152*g + 0.0722*b, 2) for name, (r, g, b) in colours
+    round(0.2126*r + 0.7152*g + 0.0722*b, 2)
+    for name, (r, g, b) in colours
 ]
 print(greyscales)  # [246.8, 224.68, 109.45]
 ```
@@ -286,7 +289,8 @@ heis o que aconteceria:
 
 ```py
 def greyscale(colour_info):
-    return 0.2126*colour_info[1][0] + 0.7152*colour_info[1][1] + 0.0722*colour_info[1][2]
+    return 0.2126*colour_info[1][0] + 0.7152*colour_info[1][1] + \
+            0.0722*colour_info[1][2]
 
 colours = [
     ("AliceBlue", (240, 248, 255, 127, 255, 212)),
@@ -309,7 +313,8 @@ colours = [
     ("DarkCyan", (0, 139, 139)),
 ]
 
-print(greyscale(colours[0]))  # ValueError: too many values to unpack (expected 3)
+# raises a ValueError: too many values to unpack (expected 3)
+print(greyscale(colours[0]))
 ```
 
 Atribuições estruturais só funcionam se a estrutura do objeto iterável da direita

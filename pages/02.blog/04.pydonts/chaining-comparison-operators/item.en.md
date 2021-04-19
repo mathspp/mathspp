@@ -78,9 +78,9 @@ all same
 !!! `a < b < c < d < e` checks if you have a strictly increasing sequence.
 
 
-# Pit-falls
+# Pitfalls
 
-Even though this feature looks very sensible, there are a couple of pit-falls you have to
+Even though this feature looks very sensible, there are a couple of pitfalls you have to
 look out for.
 
 
@@ -89,7 +89,7 @@ look out for.
 We saw above that we can use `a == b == c` to check if `a`, `b` and `c` are all the same.
 How would you check if they are all different?
 
-If you thought about `a != b != c`, then you just fell into the first pit-fall!
+If you thought about `a != b != c`, then you just fell into the first pitfall!
 
 Look at this code:
 
@@ -108,7 +108,8 @@ how `a` and `c` relate.
 From the mathematical point of view, `!=` isn't transitive, i.e.,
 knowing how `a` relates to `b` and knowing how `b` relates to `c` *doesn't*
 tell you how `a` relates to `c`.
-As for a transitive example, you can take `==`: if `a == b` and `b == c` then
+As for a transitive example, you can take the `==` equality operator.
+If `a == b` and `b == c` then
 it is also true that `a == c`.
 
 
@@ -156,6 +157,9 @@ when it is unfolded:
 ehh
 ```
 
+! The syntax `l[::-1]` is a “slice” that reverses a list.
+! I'll be writing about list slicing soon, so [stay tuned][subscribe] for that!
+
 Of course that `1 < f() < 0` should never be `True`, so this just shows that
 the chained comparison and the unfolded one aren't always equivalent.
 
@@ -201,10 +205,13 @@ This creates weird situations like
 Hun!?
 ```
 
-What is happening above is that `a in l == True` evaluates to the same value
-as `a in l and l == True`.
-`a in l` is `True`, but `l == True` is `False`, so
-`a in l == True` is `True and False` which is `False`.
+Here is a breakdown of what is happening in the previous example:
+
+ - `a in l == True` is equivalent to `a in l and l == True`;
+ - `a in l` is `True`, _but_
+ - `l == True` is `False`, so
+ - `a in l == True` unfolds to `True and False` which is `False`.
+
 The one who wrote `a in l == True`
 probably meant `(a in l) == True`, but that is also the same as `a in l`.
 
@@ -222,7 +229,8 @@ def ensure_within(value, bounds):
 ```
 
 or if you want to be a little bit more explicit, while
-[also ensuring `bounds` is a vector with *exactly* two items][pydont-debug-deep-unpacking],
+also ensuring `bounds` is a vector with *exactly* two items
+(take a look at the [Pydon't about deep unpacking][pydont-deep-unpacking]),
 you can also write
 
 ```py
@@ -245,8 +253,19 @@ def _is_dunder(name):
             name[-3] != '_')
 ```
 
-This function checks if a string is from a dunder method or not,
-the first thing it does is checking if the beginning and the ending
+This function checks if a string is from a “dunder” method or not.
+
+! “Dunder” comes from “double underscore” and just refers to some Python
+! methods that some classes have, and that allow them to interact
+! nicely with many of Python's built-in features.
+! These methods are called “dunder” because their names start and end with `__`.
+! You have seen the `__str__` and `__repr__` dunder methods
+! in the [“str and repr” Pydon't][pydont-str-repr] and the `__bool__`
+! dunder method in the [“Truthy, falsy, and bool” Pydon't][pydont-truthy-falsy-bool].
+! I will be writing about dunder methods in general in a later Pydon't,
+! so feel free to [subscribe] to stay tuned.
+
+The first thing the code does is check if the beginning and the ending
 of the string are the same and equal to `"__"`:
 
 ```py
@@ -259,12 +278,6 @@ False
 >>> _is_dunder("_______underscores__")
 False
 ```
-
-! You have seen the `__str__` and `__repr__` dunder methods
-! in the [“str and repr” Pydon't][pydont-str-repr] and the `__bool__`
-! dunder method in the [“Truthy, falsy, and bool” Pydon't][pydont-truthy-falsy-bool].
-! I will be writing about dunder methods in general in a later Pydon't,
-! so feel free to [subscribe] to stay tuned.
 
 # Conclusion
 
@@ -297,7 +310,7 @@ Online references last consulted on the 1st of March of 2021.
 
 [subscribe]: https://mathspp.com/subscribe
 [manifesto]: /blog/pydonts/pydont-manifesto
-[pydont-debug-deep-unpacking]: /blog/pydonts/deep-unpacking#catching-bugs
+[pydont-deep-unpacking]: /blog/pydonts/deep-unpacking
 [enum]: https://docs.python.org/3/library/enum.html
 [pydont-truthy-falsy-bool]: /blog/pydonts/truthy-falsy-and-bool
 [pydont-str-repr]: /blog/pydonts/str-and-repr

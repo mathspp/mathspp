@@ -158,6 +158,9 @@ falsa do ponto de vista matemático, com a expressão não encadeada
 ehh
 ```
 
+! O código `l[::-1]` é uma “fatia” (“slice” em inglês) que vira uma lista ao contrário.
+! Vou escrever sobre estas operações sobre listas em breve, por isso [mantém-te atento][subscribe]!
+
 Podemos ver, assim, que as versões encadeadas e as não encadeadas não têm de ser
 equivalentes.
 
@@ -204,10 +207,13 @@ Isto cria situações estranhas como a seguinte:
 Hun!?
 ```
 
-O que está a acontecer é o seguinte: `a in l == True` tem o mesmo valor que
-`a in l and l == True`.
-Ora, o lado esquerdo é `True` e o lado direito é `False`, logo
-`a in l == True` dá o mesmo que `True and False`, que dá `False`.
+Esta é a explicação do que está a acontecer neste exemplo:
+
+ - `a in l == True` é equivalente a `a in l and l == True`;
+ - `a in l` dá `True`, _mas_
+ - `l == True` dá `False`, logo
+ - `a in l == True` é o mesmo que `True and False`, que dá `False`.
+
 Quem escreveu `a in l == True` provavelmente queria dizer `(a in l) == True`,
 mas isso tem o mesmo valor que `a in l`.
 
@@ -226,7 +232,8 @@ def ensure_within(value, bounds):
 ```
 
 ou, de forma mais explícita,
-[ao mesmo tempo que garantes que `bounds` tem *exatamente* dois elementos][pydont-debug-deep-unpacking],
+ao mesmo tempo que garantes que `bounds` tem *exatamente* dois elementos
+(vai espreitar o [Pydon't sobre atribuições estruturais][pydont-deep-unpacking]),
 podes escrever
 
 ```py
@@ -250,8 +257,19 @@ def _is_dunder(name):
             name[-3] != '_')
 ```
 
-Esta função verifica se uma string é o nome de um método dunder ou não,
-e a primeira coisa que faz é verificar se o início da string é igual ao fim
+Esta função verifica se uma string é o nome de um método dunder ou não.
+
+! “Dunder” (do inglês, “double underscore”) é o nome que damos a alguns métodos
+! de classes em Python
+! e que permitem que os nossos objetos interajam com certas funcionalidades do Python.
+! Chamamos “dunder” a estes métodos porque os seus nomes começam e acabam com `__`.
+! Já viste os métodos dunder `__str__` e `__repr__` no
+! [Pydon't “str e repr”][pydont-str-repr] e já viste o método dunder
+! `__bool__` no [Pydon't “Truthy, falsy e bool”][pydont-truthy-falsy-bool].
+! Vou escrever sobre métodos dunder em geral numa Pydon't próxima, por isso
+! [subscreve][subscribe] a newsletter para te manteres a par.
+
+A primeira coisa que o código faz é verificar se o início da string é igual ao fim
 da string, e vê se esses pedaços são iguais a `"__"`:
 
 ```py
@@ -264,12 +282,6 @@ False
 >>> _is_dunder("_______underscores__")
 False
 ```
-
-! Já viste os métodos dunder `__str__` e `__repr__` no
-! [Pydon't “str e repr”][pydont-str-repr] e já viste o método dunder
-! `__bool__` no [Pydon't “Truthy, falsy e bool”][pydont-truthy-falsy-bool].
-! Vou escrever sobre métodos dunder em geral numa Pydon't próxima, por isso
-! [subscreve][subscribe] a newsletter para te manteres a par.
 
 # Conclusão
 
@@ -305,7 +317,7 @@ Consultadas pela última vez a 1 de março de 2021.
 
 [subscribe]: https://mathspp.com/subscribe
 [manifesto]: /blog/pydonts/pydont-manifesto
-[pydont-debug-deep-unpacking]: /blog/pydonts/deep-unpacking#catching-bugs
+[pydont-deep-unpacking]: /blog/pydonts/deep-unpacking
 [enum]: https://docs.python.org/3/library/enum.html
 [pydont-truthy-falsy-bool]: /blog/pydonts/truthy-falsy-and-bool
 [pydont-str-repr]: /blog/pydonts/str-and-repr

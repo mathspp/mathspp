@@ -279,16 +279,14 @@ In order to display the thumbnails in the correct positions,
 he has to call a function called `blit`, which expects the image
 and the position the image should go to.
 
-Here is the loop he wrote before knowing about `zip`:
+Here are the loops he wrote before and after knowing about `zip`.
 
 ```py
+# Before:
 for i in range(len(lvlpictures)):
     self.surface.blit(lvlpictures[i], (self.buttons[i][0]+2,self.buttons[i][1]+2))
-```
 
-And here is the loop he wrote after knowing about `zip`:
-
-```py
+# Then he learned about `zip`:
 for pic, btn in zip(lvlpictures, self.buttons):
     self.surface.blit(pic, (btn[0] + 2, btn[1] + 2))
 ```
@@ -353,8 +351,8 @@ class PurePath(object):
         """
         # code omitted for brevity
 
-        print(parts)        # added by hand to check what is going on.
-        print(pat_parts)    # same here.
+        print(parts)      # added by hand to check what is going on.
+        print(pat_parts)  # same here.
         for part, pat in zip(reversed(parts), reversed(pat_parts)):
             if not fnmatch.fnmatchcase(part, pat):
                 return False

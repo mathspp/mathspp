@@ -53,7 +53,8 @@ or
 
 ```py
 >>> rgb_values = (45, 124, 183)
->>> r, g, b = rgb_values    # Multiple assignment unpacks the tuple.
+>>> # Multiple assignment unpacks the tuple.
+>>> r, g, b = rgb_values
 >>> g
 124
 ```
@@ -159,8 +160,9 @@ next to the value it is getting, it becomes very clear what values go where:
 !!! ```py
 !!! def print_some_colour_info(name, (r, g, b)):
 !!!     print name + " has g value of " + str(g)
-!!! 
-!!! print_some_colour_info("AliceBlue", (240, 248, 255))  # prints 'AliceBlue has g value of 248'
+!!!
+!!! # Prints 'AliceBlue has g value of 248'
+!!! print_some_colour_info("AliceBlue", (240, 248, 255))
 !!! ```
 !!! This was removed with [PEP 3113][pep-3113].
 
@@ -188,7 +190,8 @@ and then computes its greyscale value:
 
 ```py
 def greyscale(colour_info):
-    return 0.2126*colour_info[1][0] + 0.7152*colour_info[1][1] + 0.0722*colour_info[1][2]
+    return 0.2126*colour_info[1][0] + 0.7152*colour_info[1][1] + \
+            0.0722*colour_info[1][2]
 ```
 
 (This formula we are using,
@@ -247,7 +250,8 @@ colours = [
     ("DarkCyan", (0, 139, 139)),
 ]
 greyscales = [
-    round(0.2126*r + 0.7152*g + 0.0722*b, 2) for name, (r, g, b) in colours
+    round(0.2126*r + 0.7152*g + 0.0722*b, 2)
+    for name, (r, g, b) in colours
 ]
 print(greyscales)  # [246.8, 224.68, 109.45]
 ```
@@ -276,7 +280,8 @@ the function would just work:
 
 ```py
 def greyscale(colour_info):
-    return 0.2126*colour_info[1][0] + 0.7152*colour_info[1][1] + 0.0722*colour_info[1][2]
+    return 0.2126*colour_info[1][0] + 0.7152*colour_info[1][1] + \
+            0.0722*colour_info[1][2]
 
 colours = [
     ("AliceBlue", (240, 248, 255, 127, 255, 212)),
@@ -299,7 +304,8 @@ colours = [
     ("DarkCyan", (0, 139, 139)),
 ]
 
-print(greyscale(colours[0]))  # ValueError: too many values to unpack (expected 3)
+# raises a ValueError: too many values to unpack (expected 3)
+print(greyscale(colours[0]))
 ```
 
 Deep unpacking expects the shapes to be correct, and so the part `(r, g, b)`
