@@ -72,7 +72,7 @@ Then, each following character is obtained by increasing the index by 1:
 Here is a figure that shows how to look at a sequence and figure out which
 index corresponds to each element:
 
-![](_indexing.png 'The string "Indexing is fun!" and corresponding indices.')
+![](_indexing.svg 'The string "Indexing is fun!" and corresponding indices.')
 
 Imagine vertical bars that separate consecutive elements,
 and then number each of those vertical bars,
