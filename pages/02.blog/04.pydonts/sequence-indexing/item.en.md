@@ -169,6 +169,12 @@ And a couple of examples:
 'x'
 >>> s[len(s)-13]
 'x'
+>>> len(s)
+17
+>>> s[-17]
+'I'
+>>> s[len(s)-17]
+'I'
 ```
 
 # Indexing idioms
