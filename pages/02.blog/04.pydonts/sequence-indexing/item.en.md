@@ -178,12 +178,12 @@ there are a couple of indices that would be helpful
 if you were able to read them immediately for what they are,
 without having to think about them:
 
-| Index operation || Interpretation |
+| Index operation | | Interpretation |
 | :- | :- | :- |
-| `s[0]` || First element of `s` |
-| `s[1]` || Second element of `s` |
-| `s[-1]` || Last element of `s` |
-| `s[-2]` || Second to last element of `s` |
+| `s[0]` | | First element of `s` |
+| `s[1]` | | Second element of `s` |
+| `s[-1]` | | Last element of `s` |
+| `s[-2]` | | Second to last element of `s` |
 
 
 # To index or not to index?
