@@ -151,11 +151,11 @@ Another way to look at negative indices is to pretend there is a `len(s)` to the
 
 | Negative index | | Corresponding positive index |
 | :- | :- | :- |
-| `-1` || `len(s) - 1` |
-| `-2` || `len(s) - 2` |
-| `-3` || `len(s) - 3` |
-| ... || ... |
-| `-len(s)` || `len(s) - len(s)` (same as `0`) |
+| `-1` | | `len(s) - 1` |
+| `-2` | | `len(s) - 2` |
+| `-3` | | `len(s) - 3` |
+| ... | | ... |
+| `-len(s)` | | `len(s) - len(s)` (same as `0`) |
 
 And a couple of examples:
 
