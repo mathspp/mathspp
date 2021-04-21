@@ -262,6 +262,9 @@ Here is what the anti-pattern would look like:
 ['I', 'n', 'd', 'e', 'x', 'i', 'g', ' ', 's', 'a', 'y', '!']
 ```
 
+! This is a naïve solution to the problem of “find unique characters”,
+! you probably want to use a Python `set` for a more efficient implementation :)
+
 The problem here is that the `for` loop
 is being done in a roundabout way:
 we have access to a sequence (the string) that we could
