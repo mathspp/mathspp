@@ -406,7 +406,7 @@ or informal greeting for a given name:
 'Hey there Mary'
 ```
 
-Something you might consider and that adds a little clarity
+Something you might consider and that adds a bit of clarity
 to your code is unpacking the `names` before you reach the `if`
 statement:
 
@@ -429,13 +429,13 @@ easy to follow because we see _immediately_ that we want to
 use the `last` name `if` we need a `formal` greeting, and otherwise
 (`else`) we use the `first` name.
 
-Furthermore, the action of unpacking like so:
+Furthermore, the action of unpacking (like so:)
 
 ```py
 first, last = names
 ```
 
-Forces your `greet` function to expect pairs as the `names` variable,
+forces your `greet` function to expect pairs as the `names` variable,
 because a list with less or more elements will raise an error:
 
 ```py
@@ -479,6 +479,10 @@ This Pydon't showed you that:
 
  - Indexing in Python is 0-based;
  - Python allows negative indices in sequences;
+ - Using indices in a `for` loop to access the elements of a sequence is an anti-pattern in Python;
+ - Using large expressions when indexing bloats your code and you are better off with a descriptive variable,
+even if that variable has a long name;
+ - If you know the exact structure of the sequence you are dealing with, unpacking might be preferable to indexing.
 
 If you liked this Pydon't be sure to leave a reaction below and share this with your friends and fellow Pythonistas.
 Also, [don't forget to subscribe to the newsletter][subscribe] so you don't miss
