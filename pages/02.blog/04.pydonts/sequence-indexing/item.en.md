@@ -149,13 +149,13 @@ We can also take a look at all the negative indices that work for our specific s
 
 Another way to look at negative indices is to pretend there is a `len(s)` to their left:
 
-| Negative index | Corresponding positive index |
-| :- | :- |
-| `-1` | `len(s) - 1` |
-| `-2` | `len(s) - 2` |
-| `-3` | `len(s) - 3` |
-| ... | ... |
-| `-len(s)` | `len(s) - len(s)` (same as `0`) |
+| Negative index | | Corresponding positive index |
+| :- | :- | :- |
+| `-1` || `len(s) - 1` |
+| `-2` || `len(s) - 2` |
+| `-3` || `len(s) - 3` |
+| ... || ... |
+| `-len(s)` || `len(s) - len(s)` (same as `0`) |
 
 And a couple of examples:
 
@@ -178,12 +178,12 @@ there are a couple of indices that would be helpful
 if you were able to read them immediately for what they are,
 without having to think about them:
 
-| Index operation | Interpretation |
-| :- | :- |
-| `s[0]` | First element of `s` |
-| `s[1]` | Second element of `s` |
-| `s[-1]` | Last element of `s` |
-| `s[-2]` | Second to last element of `s` |
+| Index operation || Interpretation |
+| :- | :- | :- |
+| `s[0]` || First element of `s` |
+| `s[1]` || Second element of `s` |
+| `s[-1]` || Last element of `s` |
+| `s[-2]` || Second to last element of `s` |
 
 
 # To index or not to index?
