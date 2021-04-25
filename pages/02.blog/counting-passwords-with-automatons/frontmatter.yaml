@@ -3,7 +3,7 @@ metadata:
     author: "Rodrigo Girão Serrão"
     og:image: https://mathspp.com/blog/counting-passwords-with-automatons/thumbnail.svg
 references:
-    - "Weisstein, Eric W. "Inclusion-Exclusion Principle." From MathWorld--A Wolfram Web Resource. [https://mathworld.wolfram.com/Inclusion-ExclusionPrinciple.html](https://mathworld.wolfram.com/Inclusion-ExclusionPrinciple.html) [25-04-2021];"
+    - "Weisstein, Eric W. “Inclusion-Exclusion Principle.” From MathWorld--A Wolfram Web Resource. [https://mathworld.wolfram.com/Inclusion-ExclusionPrinciple.html](https://mathworld.wolfram.com/Inclusion-ExclusionPrinciple.html) [25-04-2021];"
     - "Wikipedia, Inclusion-exclusion principle, [https://en.wikipedia.org/wiki/Inclusion%E2%80%93exclusion_principle](https://en.wikipedia.org/wiki/Inclusion%E2%80%93exclusion_principle) [25-4-2021];"
     - "Wikipedia, Combinatorics, [https://en.wikipedia.org/wiki/Combinatorics](https://en.wikipedia.org/wiki/Combinatorics) [25-04-2021];"
     - "Wikipedia, Finite-state machine, [https://en.wikipedia.org/wiki/Finite-state_machine](https://en.wikipedia.org/wiki/Finite-state_machine) [25-04-2021];"
