@@ -122,7 +122,7 @@ Each circle represents a state and the arrows represent the
 actions you can take to go from one state to the other.
 In our password-building example, part of our automaton could look like this:
 
-![](thumbnail.svg "Part of an automaton to build passwords.")
+![](_automaton.svg "Part of an automaton to build passwords.")
 
 Each circle represents a portion of a password we are building
 and each arrow represents the type of character we can add to that password.
