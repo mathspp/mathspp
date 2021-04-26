@@ -43,3 +43,4 @@ concluímos projetos específicos em Python.
  - Documentação do Python – [docs.python.org/3/](https://docs.python.org/3/)
  - Replit (ambiente de desenvolvimento online) – [replit.com](https://replit.com/)
  - Livros “Invent With Python” – [inventwithpython.com/](http://inventwithpython.com/)
+ - Livro “Pydon't – Write Beautiful Python Code” – [leanpub.com/pydonts](https://leanpub.com/pydonts)

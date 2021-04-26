@@ -39,3 +39,4 @@ Python concepts or guiding you in completing specific projects with Python).
  - Python documentation – [docs.python.org/3/](https://docs.python.org/3/)
  - Replit (online development environment) – [replit.com](https://replit.com/)
  - “Invent With Python” books – [inventwithpython.com/](http://inventwithpython.com/)
+ - “Pydon't – Write Beautiful Python Code” book – [leanpub.com/pydonts](https://leanpub.com/pydonts)
