@@ -65,7 +65,10 @@ os participantes também ajudem a moldar as sessões.
 Mais em baixo encontras um sumário do que foi discutido nas sessões passadas,
 caso precises de refrescar a memória.
 
- > 26 de abril:
+ > 10. 10 de maio:
+ >  - operador `∘.f`
+ >  - resoluções do problema [1512](https://leetcode.com/problems/number-of-good-pairs) de [leetcode.com](https://leetcode.com)
+ >  - resoluções do problema [1470](https://leetcode.com/problems/shuffle-the-array) de [leetcode.com](https://leetcode.com)
  >  - resolver problemas dos sites [problems.tryapl.org](https://problems.tryapl.org) e [leetcode.com](https://leetcode.com)
 
 As sessões seguintes ainda estão por planear.
@@ -73,18 +76,28 @@ As sessões seguintes ainda estão por planear.
 
 ## Sessões passadas
 
- > 19 de abril:
+ > 3 de maio: n/a
+
+<!---->
+
+ > 9. 26 de abril:
+ >  - revisão de programação tácita (“forks” e “atops”) [cf. [wiki](https://aplwiki.com/wiki/Tacit_programming)]
+ >  - resolução do problema [1431](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies) de [leetcode.com](https://leetcode.com)
+
+<!---->
+
+ > 9. 19 de abril:
  >  - revisão dos primeiros elementos da barra das primitivas: `←` `+-×÷*⍟⌹○!?` `|⌈⌊⊥⊤⊣⊢` `=≠<≤≥>≡≢` `∨∧⍲⍱` `↑↓⊂⊃⊆⌷⍋⍒` `⍳⍸∊⍷∪∩~`
 
 <!---->
 
- > 12 de abril:
+ > 7. 12 de abril:
  >  - exemplos de idiomas tácitos
  >  - operadores `∘` `⍤` `⍥` para composição de funções
 
 <!---->
 
- > 5 de abril:
+ > 6. 5 de abril:
  >  - discussão dos problemas [“Number Splitting”](https://problems.tryapl.org/psets/2018.html?goto=P2_Number_Splitting) e [“Good Evening”](https://problems.tryapl.org/psets/2017.html?goto=P2_Good_Evening)
  >  - operador `∘` para associar argumentos a funções
  >  - funções `⊢` e `⊣`
@@ -92,7 +105,7 @@ As sessões seguintes ainda estão por planear.
 
 <!---->
 
- > 29 de março:
+ > 5. 29 de março:
  >  - operadores `/` `\` `⌿` `⍀`
  >  - especificação de um eixo `[k]` com `/` `\` `⌿` `⍀`
  >  - diferença entre `3` e `,3`
@@ -101,7 +114,7 @@ As sessões seguintes ainda estão por planear.
 
 <!---->
 
- > 22 de março:
+ > 4. 22 de março:
  >  - recapitular `)ed` e `]create`
  >  - discutir soluções do problema [“What an Odd Bunch”](https://problems.tryapl.org/psets/2017.html?goto=P1_What_an_Odd_Bunch)
  >  - `/` como função diádica
@@ -109,7 +122,7 @@ As sessões seguintes ainda estão por planear.
 
 <!---->
 
- > 15 de março:
+ > 3. 15 de março:
  >  - problemas da fase 1 de competições passadas ([problems.tryapl.org][problems-tryapl])
  >     - [“Let's Split!”](https://problems.tryapl.org/psets/2020.html?goto=P1_Lets_Split), problema 1 de 2020
  >     - [“Chunky Monkey”](https://problems.tryapl.org/psets/2019.html?goto=P1_Chunky_Monkey), problema 1 de 2019
@@ -119,7 +132,7 @@ As sessões seguintes ainda estão por planear.
 
 <!---->
 
- > 8 de março:
+ > 2. 8 de março:
  >  - usar o editor do Windows ou o RIDE
  >  - comandos `)ed`, `)vars`, `)erase`, `)clear`, `)continue`, `)save`, `)load` (podem encontrar informação sobre os comandos [aqui](http://help.dyalog.com/latest/#Language/System%20Commands/Introduction.htm))
  >  - operadores `⍨`, `/` e `⍣`
@@ -130,7 +143,7 @@ As sessões seguintes ainda estão por planear.
 
 <!---->
 
- > 1 de março:
+ > 1. 1 de março:
  >  - primeiras funções `+` `-` `×` `÷` `*` `⍳` `=` `≢` `⍴`
  >  - tensores
  >  - “long right scope” e “left short scope”
