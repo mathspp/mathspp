@@ -1,3 +1,5 @@
+redirect: /education/workshops[301]
+
 anchors:
     active: false
 body_classes: "header-dark header-transparent "
