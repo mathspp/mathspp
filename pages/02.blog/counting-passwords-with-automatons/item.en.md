@@ -664,7 +664,7 @@ valid_pwd = lambda s: 8 <= sum(s) <= 10 and all(s)
 
 Recall that `sum(s)` is the length of the password
 that is being represented by that tuple 
-nd the usage of `all(s)` checks if _all_ the positions of the state
+and the usage of `all(s)` checks if _all_ the positions of the state
 tuple are at least 1:
 
 ```py
@@ -767,7 +767,7 @@ answering (with explanations) so we can look at the explanations
 and be convinced that the answers are correct.
 
 The first one was the one we covered throughout this article.
-The other one [reads more or less] as follows:
+The other one reads [more or less] as follows:
 
  > “_How many passwords are there with length between 6 and 8,
  made up of uppercase letters and digits, and that contain
