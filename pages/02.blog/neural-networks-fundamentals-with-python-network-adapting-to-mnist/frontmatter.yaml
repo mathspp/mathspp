@@ -1,0 +1,19 @@
+date: 30-04-2021
+metadata:
+    author: "Rodrigo Girão Serrão"
+    og:image: "https://mathspp.com/blog/neural-networks-fundamentals-with-python-subtleties/thumbnail.png"
+references:
+  - "PyTorch, Docs, `torch.nn`, `NLLLoss`, [https://pytorch.org/docs/stable/generated/torch.nn.NLLLoss.html#torch.nn.NLLLoss](https://pytorch.org/docs/stable/generated/torch.nn.NLLLoss.html#torch.nn.NLLLoss) [30-04-2021];"
+  - "PyTorch, Docs, `torch.nn`, `CrossEntropyLoss`, [https://pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html](https://pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html) [30-04-2021];"
+  - "Data Science Stack Exchange, answer to “Cross-entropy loss explanation”, [https://datascience.stackexchange.com/a/20301](https://datascience.stackexchange.com/a/20301);"
+  - "Machine Learning Mastery, A Gentle Introduction to Cross-Entropy for Machine Learning, [https://machinelearningmastery.com/cross-entropy-for-machine-learning/](https://machinelearningmastery.com/cross-entropy-for-machine-learning/)."
+slug: "neural-networks-fundamentals-with-python-subtleties"
+taxonomy:
+    category: "blogpost"
+    tag:
+      - "machine learning"
+      - "mathematics"
+      - "nnfwp"
+      - "numpy"
+      - "programming"
+      - "python"
