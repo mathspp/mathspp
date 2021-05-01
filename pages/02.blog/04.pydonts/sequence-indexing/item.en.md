@@ -79,7 +79,7 @@ and then number each of those vertical bars,
 starting with the leftmost bar.
 Each element gets the index associated with the bar immediately to its left:
 
-![](_indexing_arrows.png "Same string with the arrows connecting the indices to their elements.")
+![](_indexing_arrow.png "Same string with the arrows connecting the indices to their elements.")
 
 
 # Maximum legal index and index errors
