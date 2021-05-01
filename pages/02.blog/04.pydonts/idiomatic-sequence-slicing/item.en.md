@@ -67,7 +67,7 @@ Just think of an actual knife cutting through the sequence you are working with
 For example, if we were working with the string `"Slicing is easy!"`,
 which I present below.
 
-![](_slicing.svg "The string `\"Slicing is easy!\"` with its indices.")
+![](_slicing.svg "The string “Slicing is easy!” with its indices.")
 
 Together with the characters of the string,
 we have the little numbers indicating the index of each character.
@@ -79,7 +79,7 @@ if you need to jog your memory on how indexing is done in Python.)
 
 Now, we could be interested in extracting the portion `"icing"` from the string:
 
-![](_slicing_icing.svg "The substring `\"icing\"` within `\"Slicing is easy!\"`.")
+![](_slicing_icing.svg "The substring “icing” within “Slicing is easy!”.")
 
 How would we do that in Python?
 If you didn't know how slicing worked,
@@ -155,7 +155,7 @@ just for the sake of consistency.
 
 Now assume that we wanted to extract `"Slicing"` from our string.
 
-![](_slicing_slicing.svg "The substring `\"Slicing\"` within `\"Slicing is easy!\"`)
+![](_slicing_slicing.svg "The substring “Slicing” within “Slicing is easy!”)
 
 If we go back to our naïve `range` solution,
 most of us would write the following:
@@ -240,7 +240,7 @@ You would probably tell me
 “Draw the bars on positions `-14` and `-9`”,
 and that would be absolutely correct!
 
-![](_slicing_icing_negative.svg "Slicing `\"icing\"` with negative indices.")
+![](_slicing_icing_negative.svg "Slicing “icing” with negative indices.")
 
 In fact, using `-14` and `-9` would work in my naïve `range`
 solution but also – and most importantly – with the slice syntax:
@@ -292,7 +292,7 @@ Here are the four idiomatic slicing patterns I am talking about:
 Why are these “idiomatic” slicing patterns?
 These are idiomatic because, with a little practice, you stop
 looking at them as “slice `s` starting at _position blah_ and
-ending at _position blah blah”,
+ending at _position blah blah_”,
 and you will start looking at them for their semantic meaning.
 
 Open your Python interpreter, set `s = "Slicing is easy!"` and

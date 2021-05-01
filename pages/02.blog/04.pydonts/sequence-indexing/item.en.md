@@ -8,7 +8,7 @@ A short article with all you need to know about sequence indexing in Python – 
 
 ===
 
-![](thumbnail.png)
+![](thumbnail.svg)
 
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)
@@ -79,7 +79,7 @@ and then number each of those vertical bars,
 starting with the leftmost bar.
 Each element gets the index associated with the bar immediately to its left:
 
-![](_indexing_arrow.png "Same string with the arrows connecting the indices to their elements.")
+![](_indexing_arrow.svg "Same string with the arrows connecting the indices to their elements.")
 
 
 # Maximum legal index and index errors
@@ -124,12 +124,12 @@ use negative indices to count from the end of the sequence.
 In order to figure out which negative index corresponds to which element,
 think about writing the sequence to the left of itself:
 
-![](_indexing_wrapping.png "The string `s` written to the left of itself.")
+![](_indexing_wrapping.svg "The string `s` written to the left of itself.")
 
 Then you just have to continue the numbering from the right to the left,
 therefore making use of negative numbers:
 
-![](_indexing_wrapping_2.png "The string `s` written to the left of itself with some negative indices.")
+![](_indexing_wrapping_2.svg "The string `s` written to the left of itself with some negative indices.")
 
 From the figure above you can see that the index `-1` refers to the last element of the sequence,
 the index `-2` refers to the second to last, etc:
@@ -144,7 +144,7 @@ the index `-2` refers to the second to last, etc:
 
 We can also take a look at all the negative indices that work for our specific sequence:
 
-![](_negative_indexing.png "String `s` with its positive and negative indices.")
+![](_negative_indexing.svg "String `s` with its positive and negative indices.")
 
 
 Another way to look at negative indices is to pretend there is a `len(s)` to their left:
