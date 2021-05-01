@@ -25,7 +25,7 @@ I say it is more advanced just because indexing is the simplest form of accessin
 as you will see, indexing isn't that complicated either.
 
 As it turns out, much can be said about sequence slicing, so I will split
-all of the contents into two Pydon'ts, this article and the next one.
+all of the contents into two Pydon'ts, this and the next one.
 
 In this Pydon't you will:
 
@@ -47,11 +47,11 @@ In particular, you will
  - uncover the two layers of syntactic sugar surrounding list slicing; and
  - learn how to implement slicing for your custom objects.
 
-Throughout both articles we will try to keep an eye out for how slices
+Throughout both Pydon'ts we will try to keep an eye out for how slices
 are actually used in real-world Python code,
 namely in the Python Standard Library.
 
-If you don't want to miss the next article on the more advanced slicing topics,
+If you don't want to miss the next Pydon't on the more advanced slicing topics,
 you can either [subscribe] to the
 Pydon'ts newsletter or grab your copy of the [Pydon'ts book][pydonts-book]
 right now.
@@ -74,7 +74,7 @@ we have the little numbers indicating the index of each character.
 Each little number gives the index for the box right in front of it.
 This is the representation I go to in my head whenever I have to reason
 about indices in Python, especially when I am working with negative indices.
-(Just take a quick look at [this article][pydont-sequence-indexing]
+(Just take a quick look at [this Pydon't][pydont-sequence-indexing]
 if you need to jog your memory on how indexing is done in Python.)
 
 Now, we could be interested in extracting the portion `"icing"` from the string:
@@ -147,7 +147,7 @@ range(1, 3)
 >>> # etc...
 ```
 
-However, we will be using string examples for most of the article,
+However, we will be using string examples for most of the Pydon't,
 just for the sake of consistency.
 
 
@@ -222,7 +222,7 @@ length of the sequence, but that adds too much visual noise:
 
 # Slicing with negative indices
 
-If you've read my previous article,
+If you've read my previous Pydon't,
 you will have seen how indexing works with negative indices.
 Slicing can also use them, and the logic remains the same:
 we just draw the bar that selects the elements that are
@@ -460,7 +460,7 @@ def compute_top_suggestions(misspelled, k, corpus):
 
 The final loop there is to make sure you return _at most `k` results_.
 However, the person who wrote this piece of code did not read
-this article!
+this Pydon't!
 Because if they had, they would know that you can use slicing
 to extract _at most `k` elements_ from `ordered`:
 
@@ -554,10 +554,10 @@ to see if `line` starts with the `prefix` given as argument.
 Similar to the example from above, another
 common usage pattern for slices is to remove prefixes or suffixes
 from sequences, more notably from strings.
-For example, most of the code I present in these articles starts
+For example, most of the code I present in these Pydon'ts starts
 with `">>> "` because of the REPL prompt.
 How could I write a short function to strip a line of code
-from this prompt?
+of this prompt?
 I am really hyped about slicing, so obviously I'll do something like
 
 ```py
@@ -622,7 +622,7 @@ the most recent ones, those could contain the more modern approaches.
 
 # Conclusion
 
-Here's the main takeaway of this article, for you, on a silver platter:
+Here's the main takeaway of this Pydon't, for you, on a silver platter:
 
  > “*The relationship between slicing and indexing means there
  are four really nice idiomatic usages of slices that are well-worth
