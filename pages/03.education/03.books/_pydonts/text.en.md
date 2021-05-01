@@ -1,15 +1,14 @@
-The book “**Pydon'ts – Write beautiful Python code**” is all
-about taking your Python to the next level and writing
-Pythonic, elegant code.
+# Pydon'ts
 
-You can get the book [from Leanpub][leanpub-pydonts].
+## Write beautiful Python code
 
-**Testimonials**:
+The “Pydon'ts – Write beautiful Python code” book is a compilation of all the “Pydon't” articles available [here](/blog/pydonts).
+The book will guide you through the core Python language, showing you how to use every single feature to write better, more elegant Python programs.
 
- > “*[The book] seems to be extremely well put together, unlike some other books on Python I've read recently. It's a good book. I like how to the point it is.*” ― Tanner S., USA.
+Each chapter of the book guides you through a specific feature of the Python language, teaching you how to use it and then showing you good example usages of that feature with examples of real Python code: some times you even get to dive into the code that implements the Python Standard Library.
 
-<!---->
+This book is for beginners and advanced users alike, as it covers a wide range of Python features, so everyone has something to learn from the contents of this book.
 
- > “*First of all, thank you thank you and thank you again for a beautiful ebook with such amazing content. If you're a beginner or a more experienced pythonista, pydon'ts will still achieve its purpose. Beautifully designed and explained! Definitely worth the reading. I'm reading it once more in a year or so!*” ― Alonso, Mexico.
+Get the book from [leanpub.com/pydonts][leanpub-pydonts]!
 
 [leanpub-pydonts]: https://leanpub.com/pydonts
