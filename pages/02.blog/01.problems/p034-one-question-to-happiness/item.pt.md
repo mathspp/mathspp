@@ -37,10 +37,8 @@ Se precisares de clarificar alguma coisa, não hesites em perguntar na secção 
 
 ### Solução
 
-Uma proposta de solução vai ser publicada [aqui][sol] quando tiverem passado duas semanas desde a publicação deste problema.
-Podes [enviar-me um email][email] se quiseres que eu publique a tua [solução][sol].
-<!--Podes encontrar a minha proposta de solução [aqui][sol], para confirmares a tua resposta.
-Também podes usar o link para partilhar a tua própria solução nos comentários. Por favor, **não** escrevas a tua solução nos comentários aqui em baixo.-->
+Podes encontrar a minha proposta de solução [aqui][sol], para confirmares a tua resposta.
+Também podes usar o link para partilhar a tua própria solução nos comentários. Por favor, **não** escrevas a tua solução nos comentários aqui em baixo.
 
 ---
 
