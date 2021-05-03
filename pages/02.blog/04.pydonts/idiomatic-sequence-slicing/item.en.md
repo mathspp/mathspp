@@ -678,4 +678,4 @@ a single Pydon't!
 [subscribe]: https://mathspp.com/subscribe
 [manifesto]: /blog/pydonts/pydont-manifesto
 [pydont-sequence-indexing]: /blog/pydonts/sequence-indexing
-[pydonts-book]: https://leanpub.com
+[pydonts-book]: https://leanpub.com/pydonts
