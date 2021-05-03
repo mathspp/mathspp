@@ -384,6 +384,24 @@ Finally, if `n` is positive (so `1` or more), then
 ! and we should be looking at the previous idiom.
 
 
+## Summary
+
+Here is a short summary with the four slicing patterns next to each other:
+
+```py
+# Four idiomatic uses of sequence slicing in Python.
+>>> s = "Slicing is easy!"
+>>> s[4:]           # Drop the first 4 characters.
+'ing is easy!'
+>>> s[-4:]          # Take the last 4 characters.
+'asy!'
+>>> s[:4]           # Take the first 4 characters.
+'Slic'
+>>> s[:-4]          # Drop the last 4 characters.
+'Slicing is e'
+```
+
+
 # Empty slices
 
 Something worthy of note that may confuse some but not others,
