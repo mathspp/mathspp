@@ -2,7 +2,7 @@
 metadata:
     description: "Neste artigo introduzimos “fatias” em Python e apresentamos algumas utilizações idiomáticas desta funcionalidade."
 show_call_to_action: false
-title: "Enumerate me | Pydon't"
+title: "Fatias idiomáticas | Pydon't"
 ---
 
 Neste artigo introduzimos “fatias” em Python e apresentamos
