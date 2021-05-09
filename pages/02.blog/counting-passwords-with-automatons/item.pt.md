@@ -10,6 +10,8 @@ Neste artigo vamos usar autómatos finitos para contar
 
 ===
 
+ > Muito obrigado à Inês Guimarães, que [traduziu este artigo para português][traducao-gh].
+
 # Contar é fácil
 
 Algures durante a nossa aprendizagem matemática, foram-nos colocadas as mais variadas questões de contagem, do tipo
@@ -660,8 +662,6 @@ Este valor é $6 \times 10^{12}$ vezes superior à idade atual do universo. Eu n
 
 Se quiseres espreitar o código final, estás à vontade para visitar [este repositório no GitHub][gh-repo].
 
- > Este artigo foi traduzido para português pela Inês Guimarães.
-
 [wiki-iep]: https://en.wikipedia.org/wiki/Inclusion%E2%80%93exclusion_principle
 [gh-repo]: https://github.com/RojerGS/projects/tree/master/automatons
 [pydonts]: /blog/pydonts
@@ -671,3 +671,4 @@ Se quiseres espreitar o código final, estás à vontade para visitar [este repo
 [pydont-star]: /blog/pydonts/unpacking-with-starred-assignments
 [math-se]: https://math.stackexchange.com
 [math-se-q2]: https://math.stackexchange.com/q/2452401/329832
+[traducao-gh]: https://github.com/mathspp/mathspp/pull/56

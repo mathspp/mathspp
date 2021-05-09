@@ -767,7 +767,7 @@ answering (with explanations) so we can look at the explanations
 and be convinced that the answers are correct.
 
 The first one was the one we covered throughout this article.
-The other one reads [more or less] as follows:
+The other one reads [more or less][math-se-q2] as follows:
 
  > “_How many passwords are there with length between 6 and 8,
  made up of uppercase letters and digits, and that contain
