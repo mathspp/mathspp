@@ -40,7 +40,7 @@ In the next Pydon't we will continue on this train of thought
 and cover the more advanced material related to slicing.
 In particular, you will
 
- - learn about the stride parameter in slicing;
+ - learn about the step parameter in slicing;
  - learn about slice assignment;
  - see how slicing can be used to copy sequences;
  - learn some more idiomatic slicing patterns;
@@ -55,6 +55,9 @@ If you don't want to miss the next Pydon't on the more advanced slicing topics,
 you can either [subscribe] to the
 Pydon'ts newsletter or grab your copy of the [Pydon'ts book][pydonts-book]
 right now.
+
+!!! Turns out there was _so much_ to write about sequence slicing that
+!!! I had to further divide the next Pydon't in two.
 
 
 # Slicing syntax
