@@ -1,12 +1,12 @@
 ---
 metadata:
-    description: "In this Pydon't we cover advanced topics related to sequence slicing, from (negative) steps, more idiomatic sequence slicing, slice assignment, and slice deletion."
+    description: "In this Pydon't we cover advanced topics related to sequence slicing, like (negative) steps, more idiomatic sequence slicing, slice assignment, and slice deletion."
 title: Mastering sequence slicing
 ---
 
-In this Pydon't we cover the advanced topics related to
-sequence slicing, from (negative) steps to implementing
-slices for your own custom objects.
+In this Pydon't we cover advanced topics related to sequence slicing,
+like (negative) steps, more idiomatic sequence slicing,
+slice assignment, and slice deletion.
 
 ===
 
