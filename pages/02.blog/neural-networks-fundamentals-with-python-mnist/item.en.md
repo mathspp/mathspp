@@ -593,4 +593,5 @@ if __name__ == "__main__":
 [mnist-csv-data]: https://github.com/mathspp/NNFwP/blob/main/examples/mnistdata.rar
 [mnist-csv-data-download]: https://github.com/mathspp/NNFwP/blob/main/examples/mnistdata.rar?raw=true
 [gh-nnfwp]: https://github.com/mathspp/NNFwP
+[gh-nnfwp-v1_0]: https://github.com/mathspp/NNFwP/tree/v1.0
 [gh-nnfwp-v1_1]: https://github.com/mathspp/NNFwP/tree/v1.1
