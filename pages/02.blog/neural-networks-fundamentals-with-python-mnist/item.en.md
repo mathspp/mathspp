@@ -487,8 +487,8 @@ respective activation functions, loss function and learning rate).
 
 # Code & next steps
 
-You can find all the code for this series in [this GitHub repository][gh-nnfwp].
-The code that corresponds to the end of this article is available [under the tag v1.1][gh-nnfwp-v1_1].
+You can find all the code for this series in [this GitHub repository][gh-nnfwp] and
+the code that corresponds to the end of this article is available [under the tag v1.1][gh-nnfwp-v1_1].
 
 After reaching this point, the next sensible thing to do would be
 to implement a loss function that is more appropriate for this type
@@ -514,80 +514,6 @@ These are all the blog posts in this series:
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ol>
-
-
-# `mnist.py` code
-
-The full of the `mnist.py` file, as per this article:
-
-```py
-import csv
-import numpy as np
-from nn import NeuralNetwork, Layer, LeakyReLU, MSELoss
-
-def load_data(filepath, delimiter=",", dtype=float):
-    """Load a numerical numpy array from a file."""
-
-    print(f"Loading {filepath}...")
-    with open(filepath, "r") as f:
-        data_iterator = csv.reader(f, delimiter=delimiter)
-        data_list = list(data_iterator)
-    data = np.asarray(data_list, dtype=dtype)
-    print("Done.")
-    return data
-
-def to_col(x):
-    return x.reshape((x.size, 1))
-
-def test(net, test_data):
-    correct = 0
-    for i, test_row in enumerate(test_data):
-        if not i%1000:
-            print(i)
-
-        t = test_row[0]
-        x = to_col(test_row[1:])
-        out = net.forward_pass(x)
-        guess = np.argmax(out)
-        if t == guess:
-            correct += 1
-
-    return correct/test_data.shape[0]
-
-def train(net, train_data):
-    # Precompute all target vectors.
-    ts = {}
-    for t in range(10):
-        tv = np.zeros((10, 1))
-        tv[t] = 1
-        ts[t] = tv
-
-    for i, train_row in enumerate(train_data):
-        if not i%1000:
-            print(i)
-
-        t = ts[train_row[0]]
-        x = to_col(train_row[1:])
-        net.train(x, t)
-
-if __name__ == "__main__":
-    layers = [
-        Layer(784, 16, LeakyReLU()),
-        Layer(16, 16, LeakyReLU()),
-        Layer(16, 10, LeakyReLU()),
-    ]
-    net = NeuralNetwork(layers, MSELoss(), 0.001)
-
-    test_data = load_data("mnistdata/mnist_test.csv", delimiter=",", dtype=int)
-    accuracy = test(net, test_data)
-    print(f"Accuracy is {100*accuracy:.2f}%")     # Expected to be around 10%
-
-    train_data = load_data("mnistdata/mnist_train.csv", delimiter=",", dtype=int)
-    train(net, train_data)
-
-    accuracy = test(net, test_data)
-    print(f"Accuracy is {100*accuracy:.2f}%")
-```
 
 [part3]: /blog/neural-networks-fundamentals-with-python-backpropagation
 [mnist-csv-data]: https://github.com/mathspp/NNFwP/blob/main/examples/mnistdata.rar
