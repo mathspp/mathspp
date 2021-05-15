@@ -51,6 +51,9 @@ First, I will be covering what needs to be installed.
 Then we will be taking a look at some of the more basic things we can already
 implement: we will be modelling and initialising layers, the backbone of any neural network.
 
+!!! The code for this article, and for the future articles of the series,
+!!! can be found in [this GitHub repository][gh-nnfwp].
+
 
 # Software needed
 
