@@ -475,8 +475,9 @@ interesting things, so for this demo let us create a separate file.
 In a file `examples/quadrants.py` I wrote the following code:
 
 ```py
-import sys
-sys.path.append("..")   # Simple workaround to enable importing from parent folder.
+import sys, pathlib
+# (Ugly) workaround to enable importing from parent folder without too much hassle.
+sys.path.append(str(pathlib.Path(__file__).parent.parent))
 
 from nn import NeuralNetwork, Layer, LeakyReLU, MSELoss
 # import matplotlib.pyplot as plt
