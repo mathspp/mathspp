@@ -19,6 +19,10 @@ we wrote in the [previous article][part4],
 and fix a couple of little inconsistencies that are related
 to some subtleties I overlooked in the previous articles.
 
+!!! The code for this article, and for the all articles of the series,
+!!! can be found in [this GitHub repository][gh-nnfwp].
+!!! Today's article will build on [v1.1][gh-nnfwp-v1_1] of that code.
+
 
 # Interpreting outputs as probabilities
 
@@ -136,7 +140,7 @@ how well the network behaves: we give some input to the network
 and then compare its output to the target output by means
 of the loss function.
 We can then differentiate the loss function and use the
-[backpropagation][part3] algorithm to adjust the weights
+[backpropagation][part-backprop] algorithm to adjust the weights
 and biases in the network.
 
 What we didn't spend much time on is the fact that different
@@ -275,6 +279,7 @@ which translates to the following code:
 
 ```py
 class CrossEntropyLoss(LossFunction):
+    """Cross entropy loss function following the pytorch docs."""
     def loss(self, values, target_class):
         return -values[target_class, 0] + np.log(np.sum(np.exp(values)))
 
@@ -303,6 +308,51 @@ playing around with the activation and loss functions you now
 have and figuring out what type of model seems to work for the
 MNIST dataset, or for some other task you came up with.
 
+To give you a little push, why don't you try these configurations,
+and play around with them:
+
+```py
+    # First configuration we tried.
+    layers = [
+        Layer(784, 16, LeakyReLU()),
+        Layer(16, 16, LeakyReLU()),
+        Layer(16, 10, LeakyReLU()),
+    ]
+    net = NeuralNetwork(layers, MSELoss(), 0.001)
+
+    # Use a Sigmoid as the final layer (don't forget to import it!)
+    layers = [
+        Layer(784, 16, LeakyReLU()),
+        Layer(16, 16, LeakyReLU()),
+        Layer(16, 10, Sigmoid()),
+    ]
+    net = NeuralNetwork(layers, MSELoss(), 0.001)
+
+    # Use Sigmoid at the end and CrossEntropyLoss (import them!)
+    layers = [
+        Layer(784, 16, LeakyReLU()),
+        Layer(16, 16, LeakyReLU()),
+        Layer(16, 10, Sigmoid()),
+    ]
+    net = NeuralNetwork(layers, CrossEntropyLoss(), 0.001)
+
+    # Only LeakyReLU's and the CrossEntropyLoss (import the loss!)
+    layers = [
+        Layer(784, 16, LeakyReLU()),
+        Layer(16, 16, LeakyReLU()),
+        Layer(16, 10, Sigmoid()),
+    ]
+    net = NeuralNetwork(layers, CrossEntropyLoss(), 0.001)
+```
+
+Notice that I only changed the activation function of the last layer
+and the loss function being used.
+You can play around with the number of layers, their activation functions,
+the learning rate of the network, ...
+
+You can find all the code for this series in [this GitHub repository][gh-nnfwp] and
+the code that corresponds to the end of this article is available [under the tag v1.2][gh-nnfwp-v1_2].
+
 In the next article we will take a look at an interesting
 experience you can do with two neural networks,
 where we will essentially try to compress a neural network
@@ -320,9 +370,7 @@ These are all the blog posts in this series:
 </ol>
 
 
-[part1]: /blog/neural-networks-fundamentals-with-python-intro
-[part2]: /blog/neural-networks-fundamentals-with-python-network-loss
-[part3]: /blog/neural-networks-fundamentals-with-python-backpropagation
+[part-backprop]: /blog/neural-networks-fundamentals-with-python-backpropagation
 [part4]: /blog/neural-networks-fundamentals-with-python-mnist
 [sigmoid]: https://en.wikipedia.org/wiki/Sigmoid_function
 [pytorch]: https://pytorch.org/
@@ -330,3 +378,6 @@ These are all the blog posts in this series:
 [cel-se]: https://datascience.stackexchange.com/a/20301
 [cel-blogpost]: https://machinelearningmastery.com/cross-entropy-for-machine-learning/
 [pytorch-nllloss]: https://pytorch.org/docs/stable/generated/torch.nn.NLLLoss.html#torch.nn.NLLLoss
+[gh-nnfwp]: https://github.com/mathspp/NNFwP
+[gh-nnfwp-v1_1]: https://github.com/mathspp/NNFwP/tree/v1.1
+[gh-nnfwp-v1_2]: https://github.com/mathspp/NNFwP/tree/v1.2
