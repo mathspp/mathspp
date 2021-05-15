@@ -27,20 +27,28 @@ By the time you are done with this article, you will have a neural
 network that is able to recognise the digit in an image
 9 out of 10 times.
 
-If you need a refresher on what we built last time, have a quick read
-[at the previous post][part3].
-In particular, you can find the code we wrote by the end of the post.
+!!! The code for this article, and for the all articles of the series,
+!!! can be found in [this GitHub repository][gh-nnfwp].
+!!! Today's article will build on [v1.0][gh-nnfwp-v1_0] of that code.
+!!!
+!!! If you need a refresher on what we built last time, have a quick read
+!!! [at the previous post][part3].
 
 
 # Getting the data
 
 The MNIST dataset is a very well-known dataset and it is fairly
 easy to find the data online, but for your convenience I compressed
-it and made it available for download [here][mnist-csv-data].
+it and made it available for download [here][mnist-csv-data]
+([direct download link][mnist-csv-data-download]).
 
 After you decompress the data folder, you should get two files:
  - `mnist_train.csv`, a CSV file with 60.000 rows to train the network; and
  - `mnist_test.csv`, a CSV file with 10.000 rows to test the network.
+
+! If you want to follow along with me, be sure to decompress the `mnistdata`
+! folder inside the `examples` folder, so that the two files are
+! `examples/mnistdata/mnist_train.csv` and `examples/mnistdata/mnist_test.csv`.
 
 Each row of the file is composed of 785 integers:
 the first one is a number between 0 and 9, inclusive,
@@ -66,7 +74,8 @@ and build a NumPy array out of the file.
 
 In order to do that, we first use `csv` to import the data
 from the CSV file into a list with the rows of the file,
-and then use NumPy to convert that list of rows into an array:
+and then use NumPy to convert that list of rows into an array.
+Do this inside the `examples/mnist.py` file:
 
 ```py
 import csv
@@ -96,10 +105,10 @@ go to your Python REPL and take it for a spin:
 
 ```py
 >>> from mnist import load_data
->>> data = load_data("mnistdata/mnist_test.csv", ",", int)
-Loading mnistdata/mnist_test.csv...
+>>> data = load_data("examples/mnistdata/mnist_test.csv", ",", int)
+Loading examples/mnistdata/mnist_test.csv...
 Done.
->>> for row in range(28): 8):
+>>> for row in range(28):
 ...     for col in range(28):
 ...             idx = row*28 + col
 ...             print("#" if data[0, 1+idx] else " ", end="")
@@ -202,6 +211,10 @@ for our particular case, here is a network architecture that
 will work just fine:
 
 ```py
+import sys, pathlib
+# (Ugly) workaround to enable importing from parent folder without too much hassle.
+sys.path.append(str(pathlib.Path(__file__).parent.parent))
+
 from nn import NeuralNetwork, Layer, LeakyReLU, MSELoss
 
 layers = [
@@ -280,12 +293,21 @@ and so it evaluates to `True` only when `i` is a multiple of `1000`.
 # Putting everything together
 
 If we put all the bits and pieces from this article together,
+and if we use `pathlib` to make sure we create the correct
+paths to the data files,
 this is what we have so far:
 
 ```py
+import sys, pathlib
+# (Ugly) workaround to enable importing from parent folder without too much hassle.
+sys.path.append(str(pathlib.Path(__file__).parent.parent))
+
 import csv
 import numpy as np
 from nn import NeuralNetwork, Layer, LeakyReLU, MSELoss
+
+TRAIN_FILE = pathlib.Path(__file__).parent / "mnistdata/mnist_train.csv"
+TEST_FILE = pathlib.Path(__file__).parent / "mnistdata/mnist_test.csv"
 
 def load_data(filepath, delimiter=",", dtype=float):
     """Load a numerical numpy array from a file."""
@@ -323,7 +345,7 @@ layers = [
 ]
 net = NeuralNetwork(layers, MSELoss(), 0.001)
 
-test_data = load_data("mnistdata/mnist_test.csv", ",", int)
+test_data = load_data(TEST_FILE, ",", int)
 print(test(net, test_data))
 ```
 
@@ -425,11 +447,11 @@ if __name__ == "__main__":
     ]
     net = NeuralNetwork(layers, MSELoss(), 0.001)
 
-    test_data = load_data("mnistdata/mnist_test.csv", delimiter=",", dtype=int)
+    test_data = load_data(TEST_FILE, delimiter=",", dtype=int)
     accuracy = test(net, test_data)
     print(f"Accuracy is {100*accuracy:.2f}%")     # Expected to be around 10%
 
-    train_data = load_data("mnistdata/mnist_train.csv", delimiter=",", dtype=int)
+    train_data = load_data(TRAIN_FILE, delimiter=",", dtype=int)
     train(net, train_data)
 
     accuracy = test(net, test_data)
@@ -463,7 +485,10 @@ setup (number of layers, respective input and output sizes,
 respective activation functions, loss function and learning rate).
 
 
-# Next steps
+# Code & next steps
+
+You can find all the code for this series in [this GitHub repository][gh-nnfwp].
+The code that corresponds to the end of this article is available [under the tag v1.1][gh-nnfwp-v1_1].
 
 After reaching this point, the next sensible thing to do would be
 to implement a loss function that is more appropriate for this type
@@ -564,8 +589,8 @@ if __name__ == "__main__":
     print(f"Accuracy is {100*accuracy:.2f}%")
 ```
 
-[part1]: /blog/neural-networks-fundamentals-with-python-intro
-[part2]: /blog/neural-networks-fundamentals-with-python-network-loss
 [part3]: /blog/neural-networks-fundamentals-with-python-backpropagation
-[part4]: /blog/neural-networks-fundamentals-with-python-mnist
-[mnist-csv-data]: https://github.com/RojerGS/workshops/blob/master/neural-networks-fundamentals-with-python/mnistdata.rar
+[mnist-csv-data]: https://github.com/mathspp/NNFwP/blob/main/examples/mnistdata.rar
+[mnist-csv-data-download]: https://github.com/mathspp/NNFwP/blob/main/examples/mnistdata.rar?raw=true
+[gh-nnfwp]: https://github.com/mathspp/NNFwP
+[gh-nnfwp-v1_1]: https://github.com/mathspp/NNFwP/tree/v1.1
