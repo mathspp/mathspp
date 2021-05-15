@@ -19,8 +19,12 @@ how the algorithm works, and then we will implement it.
 After the algorithm is implemented, we will run a small test to verify
 empirically that it is working.
 
-If you need a refresher on what we built last time, have a quick read
-[at the previous post][part2].
+!!! The code for this article, and for the all articles of the series,
+!!! can be found in [this GitHub repository][gh-nnfwp].
+!!! Today's article will build on [v0.2][gh-nnfwp-v0_2] of that code.
+!!!
+!!! If you need a refresher on what we built last time, have a quick read
+!!! [at the previous post][part2].
 
 
 # Preamble
@@ -30,8 +34,8 @@ and at the same time I will include all the mathematics needed to formalise what
 If I succeed, you will be able to grasp what is going on by reading the intuitive explanations
 and you will be able to check I didn't make any mistakes if you check the mathematics.
 
-! The mathematical formalisations will be included inside these notices,
-! so feel free to ignore these if you do not care about the mathematics behind everything.
+!!!! The mathematical formalisations will be included inside these notices,
+!!!! so feel free to ignore these if you do not care about the mathematics behind everything.
 
 First things first, we need to understand _why_ we need an algorithm like backpropagation.
 
@@ -45,10 +49,10 @@ The whole idea of the neural network model is that
   3. you tweak the neural network just a _tiny_ bit so that this particular input produces something that is slightly closer to the actual output;
   4. you repeat this for various different inputs, in the hopes that these small improvements compound into really good improvements after a lot of iterations.
 
-! In order to know how to tweak the neural network, we will use derivatives.
-! If $L$ is your loss function and $w$ is one of the many weights of the neural network,
-! then $\frac{\partial L}{\partial w}$ quantifies how much $L$ changes when you change $w$ slightly,
-! and thus you can use that information to know how to tweak $w$.
+!!!! In order to know how to tweak the neural network, we will use derivatives.
+!!!! If $L$ is your loss function and $w$ is one of the many weights of the neural network,
+!!!! then $\frac{\partial L}{\partial w}$ quantifies how much $L$ changes when you change $w$ slightly,
+!!!! and thus you can use that information to know how to tweak $w$.
 
 The backpropagation algorithm is an algorithm you can use to make these small improvements *in an efficient way*.
 
@@ -126,15 +130,15 @@ which in turn are more immediate than the effects of `xs[0]`.
 This is why it is so much easier to update the network by starting with the last layer and working your way up to the first layer of the network:
 because in order to know how a layer influences the loss, you first need to know how the following layer influences the loss.
 
-! This becomes clearer if we unfold the recursive definition of $x_n$:
-! $$
-! \begin{align*}
-! L(x_n, t) &= L(f_{n-1}(W_{n-1}x_{n-1} + b_{n-1}), t) \\
-! &= L(f_{n-1}(W_{n-1}f_{n-2}(x_{n-2}W_{n-2} + b_{n-2}) + b_{n-1})), t) \\
-! &= ...
-! \end{align*}
-! $$
-! Taking the partial derivative of $L$ with respect to $W_0$ will involve many more chain rules than if you take the partial derivative of $L$ with respect to $W_{n-1}$.
+!!!! This becomes clearer if we unfold the recursive definition of $x_n$:
+!!!! $$
+!!!! \begin{align*}
+!!!! L(x_n, t) &= L(f_{n-1}(W_{n-1}x_{n-1} + b_{n-1}), t) \\
+!!!! &= L(f_{n-1}(W_{n-1}f_{n-2}(x_{n-2}W_{n-2} + b_{n-2}) + b_{n-1})), t) \\
+!!!! &= ...
+!!!! \end{align*}
+!!!! $$
+!!!! Taking the partial derivative of $L$ with respect to $W_0$ will involve many more chain rules than if you take the partial derivative of $L$ with respect to $W_{n-1}$.
 
 
 # Matrix calculus
@@ -144,8 +148,8 @@ One thing that is noteworthy is that everything becomes much easier if we write 
 For that matter, we will write everything in terms of matrices and vectors.
 If you, or someone else, want to know the specific equation for a specific weight, you just have to inspect the appropriate coordinate of the appropriate matrix.
 
-! This also helps if you are doing the calculations yourself.
-! Calculus becomes a little bit more subtle if you are computing derivatives of vectorial or matrix functions, but more often than not you can get away with applying the usual rules you are used to, as long as you make sure the shapes of the terms involved match.
+!!!! This also helps if you are doing the calculations yourself.
+!!!! Calculus becomes a little bit more subtle if you are computing derivatives of vectorial or matrix functions, but more often than not you can get away with applying the usual rules you are used to, as long as you make sure the shapes of the terms involved match.
 
 
 # The algorithm
@@ -162,7 +166,7 @@ Similarly, for each layer, we have `layer.act_function.df` that represents that 
 
 The backpropagation algorithm is a really clever algorithm because it introduces some intermediate variables that allow us to reuse many computations, speeding up what could be a _really_ slow algorithm.
 
-! In practice, we will just be saving the intermediate partial derivatives that we compute along the way.
+!!!! In practice, we will just be saving the intermediate partial derivatives that we compute along the way.
 
 In order to derive the actual algorithm, we will try to make more clear the recursive pattern we are dealing with.
 We will be populating three lists, `dxs`, `dWs`, and `dbs`, where:
@@ -218,20 +222,20 @@ but it is simpler to implement the derivatives of the
 activation functions like we have seen, and so we can
 get away with plain multiplication.
 
-! We start off by computing $\frac{\partial L}{\partial x_{n-1}}$, $\frac{\partial L}{\partial W_{n-1}}$ and $\frac{\partial L}{\partial b_{n-1}}$.
-! Turns out the first two can also be written by reusing the latter:
-!
-! $$
-! \begin{align}
-! &y_{n-1} = x_{n-1}W_{n-1} + b_{n-1} ~ ,\\
-! &\frac{\partial L}{\partial b_{n-1}} = dL(x_n, t) f_{n-1}'(y_{n-1}) ~ ,\\
-! &\frac{\partial L}{\partial x_{n-1}} = W_{n-1}^T \frac{\partial L}{\partial b_{n-1}} ~ ,\\
-! &\frac{\partial L}{\partial W_{n-1}} = \frac{\partial L}{\partial b_{n-1}} x_{n-1}^T
-! \end{align}
-! $$
-!
-! If you got lost along the way or you don't trust me (and you shouldn't), just define $h(x, W, b) = L(f(Wx + b), t)$ and compute $\frac{\partial h}{\partial x}$, $\frac{\partial h}{\partial W}$ and $\frac{\partial h}{\partial b}$ for yourself.
-! Do _not_ forget that you are dealing with vectors and matrices, so you need to be careful with the shapes.
+!!!! We start off by computing $\frac{\partial L}{\partial x_{n-1}}$, $\frac{\partial L}{\partial W_{n-1}}$ and $\frac{\partial L}{\partial b_{n-1}}$.
+!!!! Turns out the first two can also be written by reusing the latter:
+!!!!
+!!!! $$
+!!!! \begin{align}
+!!!! &y_{n-1} = x_{n-1}W_{n-1} + b_{n-1} ~ ,\\
+!!!! &\frac{\partial L}{\partial b_{n-1}} = dL(x_n, t) f_{n-1}'(y_{n-1}) ~ ,\\
+!!!! &\frac{\partial L}{\partial x_{n-1}} = W_{n-1}^T \frac{\partial L}{\partial b_{n-1}} ~ ,\\
+!!!! &\frac{\partial L}{\partial W_{n-1}} = \frac{\partial L}{\partial b_{n-1}} x_{n-1}^T
+!!!! \end{align}
+!!!! $$
+!!!!
+!!!! If you got lost along the way or you don't trust me (and you shouldn't), just define $h(x, W, b) = L(f(Wx + b), t)$ and compute $\frac{\partial h}{\partial x}$, $\frac{\partial h}{\partial W}$ and $\frac{\partial h}{\partial b}$ for yourself.
+!!!! Do _not_ forget that you are dealing with vectors and matrices, so you need to be careful with the shapes.
 
 
 ## Next step
@@ -260,24 +264,24 @@ dxs[n-2] = np.dot(Ws[n-2].T, dbs[n-2])
 dWs[n-2] = np.dot(dbs[n-2], xs[n-2].T)
 ```
 
-! This is simply the chain rule, trust me. Or don't.
-! Ever wondered where calculus showed up in real life?
-! Well, this is it!
-! Just notice that $x_{n-1} \equiv x_{n-1}(x_{n-2}, W_{n-2}, b_{n-2})$ is in fact a function of the previous parameters and thus
-!
-! $$
-! \begin{align}
-! &y_{n-2} = x_{n-2}W_{n-2} + b_{n-2} ~ ,\\
-! &\frac{\partial L}{\partial b_{n-2}} = \frac{\partial L}{\partial x_{n-1}}\frac{\partial x_{n-1}}{\partial b_{n-2}} = \frac{\partial L}{\partial x_{n-1}}f_{n-2}'(y_{n-2}) ~ ,\\
-! &\frac{\partial L}{\partial x_{n-2}} =
-!   \frac{\partial L}{\partial x_{n-1}}\frac{\partial x_{n-1}}{\partial x_{n-2}} =
-!   \frac{\partial L}{\partial x_{n-1}} f_{n-2}'(y_{n-2}) \frac{\partial y_{n-2}}{\partial x_{n-2}} =
-!   W_{n-2}^T \frac{\partial L}{\partial b_{n-2}} ~ ,\\
-! &\frac{\partial L}{\partial W_{n-2}} = \frac{\partial L}{\partial x_{n-1}}\frac{\partial x_{n-1}}{\partial W_{n-2}} = \frac{\partial L}{\partial b_{n-2}} x_{n-2}^T
-! \end{align}
-! $$
-!
-! Once again, if you don't trust me just find the partial derivatives of $h(x, W, b) = L(f_{n-1}(W_{n-1}f_{n-2}(Wx + b) + b_{n-1}), t)$.
+!!!! This is simply the chain rule, trust me. Or don't.
+!!!! Ever wondered where calculus showed up in real life?
+!!!! Well, this is it!
+!!!! Just notice that $x_{n-1} \equiv x_{n-1}(x_{n-2}, W_{n-2}, b_{n-2})$ is in fact a function of the previous parameters and thus
+!!!!
+!!!! $$
+!!!! \begin{align}
+!!!! &y_{n-2} = x_{n-2}W_{n-2} + b_{n-2} ~ ,\\
+!!!! &\frac{\partial L}{\partial b_{n-2}} = \frac{\partial L}{\partial x_{n-1}}\frac{\partial x_{n-1}}{\partial b_{n-2}} = \frac{\partial L}{\partial x_{n-1}}f_{n-2}'(y_{n-2}) ~ ,\\
+!!!! &\frac{\partial L}{\partial x_{n-2}} =
+!!!!   \frac{\partial L}{\partial x_{n-1}}\frac{\partial x_{n-1}}{\partial x_{n-2}} =
+!!!!   \frac{\partial L}{\partial x_{n-1}} f_{n-2}'(y_{n-2}) \frac{\partial y_{n-2}}{\partial x_{n-2}} =
+!!!!   W_{n-2}^T \frac{\partial L}{\partial b_{n-2}} ~ ,\\
+!!!! &\frac{\partial L}{\partial W_{n-2}} = \frac{\partial L}{\partial x_{n-1}}\frac{\partial x_{n-1}}{\partial W_{n-2}} = \frac{\partial L}{\partial b_{n-2}} x_{n-2}^T
+!!!! \end{align}
+!!!! $$
+!!!!
+!!!! Once again, if you don't trust me just find the partial derivatives of $h(x, W, b) = L(f_{n-1}(W_{n-1}f_{n-2}(Wx + b) + b_{n-1}), t)$.
 
 
 ## The general step
@@ -315,19 +319,19 @@ for x, W, b, f in reversed(list(zip(xs[:-1], Ws, bs, fs))):
 This shows how ridiculously simple it can be to implement backpropagation if you have access to matrix multiplication.
 If you don't, I would recommend you either get access to it or implement it yourself.
 
-! In mathematical notation, the recursive definition can be written out as
-!
-! $$
-! \begin{align}
-! &\frac{\partial L}{\partial x_n} = dL(x_n, t) ~ ,\\
-! &\frac{\partial L}{\partial b_{n-i}} = \frac{\partial L}{\partial x_{n-i+1}}f'_{n-i}(x_{n-i}W_{n-i} + b_{n-i}) ~ ,\\
-! &\frac{\partial L}{\partial x_{n-i}} =
-!   \frac{\partial L}{\partial x_{n-i+1}}\frac{\partial x_{n-i+1}}{\partial x_{n-i}} =
-!   \frac{\partial L}{\partial x_{n-i+1}} f_{n-i}'(y_{n-i}) \frac{\partial y_{n-i}}{\partial x_{n-i}} =
-!   W_{n-i}^T \frac{\partial L}{\partial b_{n-i}} ~ ,\\
-! &\frac{\partial L}{\partial W_{n-i}} = \frac{\partial L}{\partial x_{n-i+1}}\frac{\partial x_{n-i+1}}{\partial W_{n-i}} = \frac{\partial L}{\partial b_{n-i}} x_{n-i}^T
-! \end{align}
-! $$
+!!!! In mathematical notation, the recursive definition can be written out as
+!!!!
+!!!! $$
+!!!! \begin{align}
+!!!! &\frac{\partial L}{\partial x_n} = dL(x_n, t) ~ ,\\
+!!!! &\frac{\partial L}{\partial b_{n-i}} = \frac{\partial L}{\partial x_{n-i+1}}f'_{n-i}(x_{n-i}W_{n-i} + b_{n-i}) ~ ,\\
+!!!! &\frac{\partial L}{\partial x_{n-i}} =
+!!!!   \frac{\partial L}{\partial x_{n-i+1}}\frac{\partial x_{n-i+1}}{\partial x_{n-i}} =
+!!!!   \frac{\partial L}{\partial x_{n-i+1}} f_{n-i}'(y_{n-i}) \frac{\partial y_{n-i}}{\partial x_{n-i}} =
+!!!!   W_{n-i}^T \frac{\partial L}{\partial b_{n-i}} ~ ,\\
+!!!! &\frac{\partial L}{\partial W_{n-i}} = \frac{\partial L}{\partial x_{n-i+1}}\frac{\partial x_{n-i+1}}{\partial W_{n-i}} = \frac{\partial L}{\partial b_{n-i}} x_{n-i}^T
+!!!! \end{align}
+!!!! $$
 
 And this is how you go about implementing backpropagation!
 If you know calculus I challenge you to derive the formulas all by yourself.
@@ -468,9 +472,12 @@ interesting things, so for this demo let us create a separate file.
 
 # Distinguishing the quadrant of the points
 
-In a file `quadrants.py` I wrote the following code:
+In a file `examples/quadrants.py` I wrote the following code:
 
 ```py
+import sys
+sys.path.append("..")   # Simple workaround to enable importing from parent folder.
+
 from nn import NeuralNetwork, Layer, LeakyReLU, MSELoss
 # import matplotlib.pyplot as plt
 import numpy as np
@@ -534,169 +541,15 @@ and the next figure shows the network already distinguishes many points.
 
 # Wrap-up & current code
 
-At this point, your main file with the network implementation
-should have the following code:
+At this point, the implementation of the network should take up about 110
+lines of code of your main file, plus two dozen more for a small demo
+that shows your network is learning.
+Notice that, at this point, the neural network implementation is working
+and ready to be used!
+Because of that, we can now release v1.0 of our code!
 
-```py
-import numpy as np
-from abc import ABC, abstractmethod
-
-
-def create_weight_matrix(nrows, ncols):
-    """Create a weight matrix with normally distributed random elements."""
-    return np.random.normal(loc=0, scale=1/(nrows*ncols), size=(nrows, ncols))
-
-def create_bias_vector(length):
-    """Create a bias vector with normally distributed random elements."""
-    return np.random.normal(loc=0, scale=1/length, size=(length, 1))
-
-
-class ActivationFunction:
-    """Class to be inherited by activation functions."""
-    @abstractmethod
-    def f(self, x):
-        """The method that implements the function."""
-        pass
-
-    @abstractmethod
-    def df(self, x):
-        """Derivative of the function with respect to its input."""
-        pass
-
-class LeakyReLU(ActivationFunction):
-    """Leaky Rectified Linear Unit."""
-    def __init__(self, leaky_param=0.1):
-        self.alpha = leaky_param
-
-    def f(self, x):
-        return np.maximum(x, x*self.alpha)
-
-    def df(self, x):
-        return np.maximum(x > 0, self.alpha)
-
-
-class LossFunction:
-    """Class to be inherited by loss functions."""
-    @abstractmethod
-    def loss(self, values, expected):
-        """Compute the loss of the computed values with respect to the expected ones."""
-        pass
-
-    @abstractmethod
-    def dloss(self, values, expected):
-        """Derivative of the loss with respect to the computed values."""
-        pass
-
-class MSELoss(LossFunction):
-    """Mean Squared Error Loss function."""
-    def loss(self, values, expected):
-        return np.mean((values - expected)**2)
-
-    def dloss(self, values, expected):
-        return 2*(values - expected)/values.size
-
-
-class Layer:
-    """Model the connections between two sets of neurons in a network."""
-    def __init__(self, ins, outs, act_function):
-        self.ins = ins
-        self.outs = outs
-        self.act_function = act_function
-
-        self._W = create_weight_matrix(self.outs, self.ins)
-        self._b = create_bias_vector(self.outs)
-
-    def forward_pass(self, x):
-        """Compute the next set of neuron states with the given set of states."""
-        return self.act_function.f(np.dot(self._W, x) + self._b)
-
-
-class NeuralNetwork:
-    """A series of connected, compatible layers."""
-    def __init__(self, layers, loss_function, learning_rate):
-        self._layers = layers
-        self._loss_function = loss_function
-        self.lr = learning_rate
-
-        # Check layer compatibility
-        for (from_, to_) in zip(self._layers[:-1], self._layers[1:]):
-            if from_.outs != to_.ins:
-                raise ValueError("Layers should have compatible shapes.")
-
-    def forward_pass(self, x):
-        out = x
-        for layer in self._layers:
-            out = layer.forward_pass(out)
-        return out
-
-    def loss(self, values, expected):
-        return self._loss_function.loss(values, expected)
-
-    def train(self, x, t):
-        """Train the network on input x and expected output t."""
-
-        # Accumulate intermediate results during forward pass.
-        xs = [x]
-        for layer in self._layers:
-            xs.append(layer.forward_pass(xs[-1]))
-
-        dx = self._loss_function.dloss(xs.pop(), t)
-        for layer, x in zip(self._layers[::-1], xs[::-1]):
-            # Compute the derivatives
-            y = np.dot(layer._W, x) + layer._b
-            db = layer.act_function.df(y) * dx
-            dx = np.dot(layer._W.T, db)
-            dW = np.dot(db, x.T)
-            # Update parameters.
-            layer._W -= self.lr * dW
-            layer._b -= self.lr * db
-```
-
-Your `quadrants.py` file should contain the following code to
-demonstrate the network:
-
-```py
-from nn import NeuralNetwork, Layer, LeakyReLU, MSELoss
-# import matplotlib.pyplot as plt
-import numpy as np
-
-def col(a):
-    """Make sure the array is a column."""
-    return np.atleast_2d(a).T
-
-N = 100_000     # Create N points inside the square [-2,2]×[-2,2]
-data = np.random.uniform(low=-2, high=2, size=(2, N))
-
-ts = np.zeros(shape=(2, N))
-ts[0, data[0,]*data[1,]>0] = 1
-ts[1, :] = 1 - ts[0, :]
-
-net = NeuralNetwork([
-    Layer(2, 3, LeakyReLU()),
-    Layer(3, 2, LeakyReLU()),
-], MSELoss(), 0.05)
-
-def assess(net, data, ts):
-    correct = 0
-    # cs = []
-    for i in range(data.shape[1]):
-        out = net.forward_pass(col(data[:, i]))
-        guess = np.argmax(np.ndarray.flatten(out))
-        if ts[guess, i]:
-            correct += 1
-        # cs.append(guess)
-    # fig = plt.figure()
-    # plt.scatter(data[0, :1000], data[1, :1000], c=cs)
-    # fig.show()
-    # input()
-    return correct
-
-test_to = 1000
-print(assess(net, data[:, :test_to], ts[:, :test_to]))
-for i in range(test_to, N):
-    net.train(col(data[:, i]), col(ts[:, i]))
-print(assess(net, data[:, :test_to], ts[:, :test_to]))
-```
+You can find all the code for this series in [this GitHub repository][gh-nnfwp] and
+you can find v1.0 (that is, specifically what we built in this article) [under the tag v1.0][gh-nnfwp-v1_0].
 
 In the next article of this short series we will be using our network
 to recognise handwritten digits in small images!
@@ -713,9 +566,9 @@ These are all the blog posts in this series:
 {% endfor %}
 </ol>
 
-[part1]: /blog/neural-networks-fundamentals-with-python-intro
 [part2]: /blog/neural-networks-fundamentals-with-python-network-loss
-[part3]: /blog/neural-networks-fundamentals-with-python-backpropagation
-[part4]: /blog/neural-networks-fundamentals-with-python-mnist
 [3b1b-nn]: https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
 [3b1b-nn1]: https://www.youtube.com/watch?v=aircAruvnKk
+[gh-nnfwp]: https://github.com/mathspp/NNFwP
+[gh-nnfwp-v0_2]: https://github.com/mathspp/NNFwP/tree/v0.2
+[gh-nnfwp-v1_0]: https://github.com/mathspp/NNFwP/tree/v1.0
