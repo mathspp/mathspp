@@ -248,10 +248,7 @@ with ease:
 import numpy as np
 
 def create_weight_matrix(nrows, ncols):
-    return np.random.normal(loc=0, scale=1/(nrows*ncols), size=(nrows, ncols))
-
-def create_bias_vector(length):
-    return np.random.normal(loc=0, scale=1/length, size=(length, 1))
+    return np.random.default_rng().normal(loc=0, scale=1/(nrows*ncols), size=(nrows, ncols))
 ```
 
 Now let us check how a random matrix would look like:
@@ -260,6 +257,14 @@ Now let us check how a random matrix would look like:
 >>> create_weight_matrix(2, 4) 
 array([[-0.09040462, -0.00485385, -0.08010303,  0.29271109],
        [ 0.12528501, -0.08750708, -0.26472923,  0.13410931]])
+```
+
+For the bias vectors, we can be a little bit lazy and recall that a column
+vector is just a matrix with a single column:
+
+```py
+def create_bias_vector(length):
+    return create_weight_matrix(length, 1)
 ```
 
 
@@ -392,50 +397,11 @@ One of the times I ran it, I got
 Now that we have the backbone for the neural network in place,
 we can take a look at what we have coded so far and insert the docstring comments
 we forgot to add because we were in such a rush to get something working.
-My docstring-writing skills aren't very sharp, but I'll share what I wrote
-either way, perhaps it can serve as inspiration for you:
+My docstring-writing skills aren't very sharp,
+but perhaps what I wrote can serve as inspiration for you.
 
-```py
-import numpy as np
-
-def create_weight_matrix(nrows, ncols):
-    """Create a weight matrix with normally distributed random elements."""
-    return np.random.normal(loc=0, scale=1/(nrows*ncols), size=(nrows, ncols))
-
-def create_bias_vector(length):
-    """Create a bias vector with normally distributed random elements."""
-    return np.random.normal(loc=0, scale=1/length, size=(length, 1))
-
-def leaky_relu(x, leaky_param=0.1):
-    """Leaky Rectified Linear Unit with default parameter."""
-    return np.maximum(x, x*leaky_param)
-
-
-class Layer:
-    """Model the connections between two sets of neurons in a network."""
-    def __init__(self, ins, outs, act_function):
-        self.ins = ins
-        self.outs = outs
-        self.act_function = act_function
-
-        self._W = create_weight_matrix(self.outs, self.ins)
-        self._b = create_bias_vector(self.outs)
-
-    def forward_pass(self, x):
-        """Compute the next set of neuron states with the given set of states."""
-        return self.act_function(np.dot(self._W, x) + self._b)
-
-
-if __name__ == "__main__":
-    """Demo of chaining layers with compatible shapes."""
-    l1 = Layer(2, 4, leaky_relu)
-    l2 = Layer(4, 4, leaky_relu)
-    l3 = Layer(4, 1, leaky_relu)
-
-    x = np.random.uniform(size=(2, 1))
-    output = l3.forward_pass(l2.forward_pass(l1.forward_pass(x)))
-    print(output)
-```
+You can find all the code in [this GitHub repository][gh-nnfwp] and, in particular,
+the code from this specific blog post is available under the [v0.1 tag][gh-nnfwp-v0_1].
 
 Currently we have a file that spans for 39 lines.
 It doesn't look like much, but on the other hand we have advanced quite a lot.
@@ -453,11 +419,9 @@ These are all the blog posts in this series:
 {% endfor %}
 </ol>
 
-[part1]: /blog/neural-networks-fundamentals-with-python-intro
-[part2]: /blog/neural-networks-fundamentals-with-python-network-loss
-[part3]: /blog/neural-networks-fundamentals-with-python-backpropagation
-[part4]: /blog/neural-networks-fundamentals-with-python-mnist
 [3b1b-nn]: https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
 [3b1b-nn1]: https://www.youtube.com/watch?v=aircAruvnKk
 [numpy]: https://numpy.org
 [numpy-install]: https://numpy.org/install/
+[gh-nnfwp]: https://github.com/mathspp/NNFwP
+[gh-nnfwp-v0_1]: https://github.com/mathspp/NNFwP/tree/v0.1
