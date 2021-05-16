@@ -12,7 +12,7 @@ uso dessas funcionalidades: às vezes até exploramos o código da biblioteca st
 
 Este livro é útil tanto para principiantes como para programadores mais experientes, já que cobre uma vasta panóplia de tópicos diferentes.
 
-Podes obter o livro (em inglês) em [leanpub.com/pydonts][leanpub-pydonts]!
+<a class="gumroad-button" href="https://gumroad.com/l/gfKOV" target="_blank">Compra o livro!</a>
 
 ## Testemunhos
 
@@ -23,5 +23,3 @@ Podes obter o livro (em inglês) em [leanpub.com/pydonts][leanpub-pydonts]!
 <!---->
 
  > “*First of all, thank you thank you and thank you again for a beautiful ebook with such amazing content. If you're a beginner or a more experienced pythonista, pydon'ts will still achieve its purpose. Beautifully designed and explained! Definitely worth the reading. I'm reading it once more in a year or so!*” ― Alonso, Mexico.
-
-[leanpub-pydonts]: https://leanpub.com/pydonts

@@ -11,7 +11,7 @@ Each chapter of the book guides you through a specific feature of the Python lan
 
 This book is for beginners and advanced users alike, as it covers a wide range of Python features, so everyone has something to learn from the contents of this book.
 
-Get the book from [leanpub.com/pydonts][leanpub-pydonts]!
+<a class="gumroad-button" href="https://gumroad.com/l/gfKOV" target="_blank">Get the book now!</a>
 
 ## Testimonials
 
@@ -20,5 +20,3 @@ Get the book from [leanpub.com/pydonts][leanpub-pydonts]!
 <!---->
 
  > “*First of all, thank you thank you and thank you again for a beautiful ebook with such amazing content. If you're a beginner or a more experienced pythonista, pydon'ts will still achieve its purpose. Beautifully designed and explained! Definitely worth the reading. I'm reading it once more in a year or so!*” ― Alonso, Mexico.
-
-[leanpub-pydonts]: https://leanpub.com/pydonts
