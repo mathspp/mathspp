@@ -24,7 +24,7 @@ empirically that it is working.
 !!! Today's article will build on [v0.2][gh-nnfwp-v0_2] of that code.
 !!!
 !!! If you need a refresher on what we built last time, have a quick read
-!!! [at the previous post][part2].
+!!! [at the previous article][part2].
 
 
 # Preamble
@@ -68,7 +68,7 @@ Each layer `i` has a weights matrix, `net._layers[i]._W`, and a *column* vector 
 the biases.
 Each layer also has an activation function, `net._layers[i].act_function`.
 
-It is *very important* to notice that in the code above and throughout this post
+It is *very important* to notice that in the code above and throughout this article
 I will assume the vectors are *column* vectors.
 
 We have seen that our `net` has a `forward_pass` method that depends on
@@ -160,7 +160,7 @@ The two other things we need to know are:
  - the derivative of each activation function.
 
 Strictly speaking, we don't really need to _know_ what they are, we just need a way to compute them,
-and we did that in [the previous post in the series][part2].
+and we did that in [the previous article in the series][part2].
 So we have the derivative of the loss function, with respect to the network's output, as `net._loss_function.dloss`.
 Similarly, for each layer, we have `layer.act_function.df` that represents that activation function's derivative.
 
@@ -337,7 +337,7 @@ And this is how you go about implementing backpropagation!
 If you know calculus I challenge you to derive the formulas all by yourself.
 I, for one, have derived them repeatedly over the years, as I keep forgetting how everything works.
 Hopefully this was the last time I did it!
-Next time I will be checking this blog post instead of doing all the work all over again.
+Next time I will be checking this article instead of doing all the work all over again.
 
 # Training a network
 
@@ -559,11 +559,11 @@ Stay tuned for that.
 
 # The series
 
-These are all the blog posts in this series:
+These are all the articles in this series:
 
 <ol>
-{% for post in taxonomy.findTaxonomy({"tag": ["nnfwp"]}).order("date") %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% for article in taxonomy.findTaxonomy({"tag": ["nnfwp"]}).order("date") %}
+    <li><a href="{{ article.url }}">{{ article.title }}</a></li>
 {% endfor %}
 </ol>
 

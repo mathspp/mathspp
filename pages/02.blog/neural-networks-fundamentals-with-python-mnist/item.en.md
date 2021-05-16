@@ -32,7 +32,7 @@ network that is able to recognise the digit in an image
 !!! Today's article will build on [v1.0][gh-nnfwp-v1_0] of that code.
 !!!
 !!! If you need a refresher on what we built last time, have a quick read
-!!! [at the previous post][part3].
+!!! [at the previous article][part3].
 
 
 # Getting the data
@@ -507,11 +507,11 @@ using the default value), and the learning rate of the network.
 
 # The series
 
-These are all the blog posts in this series:
+These are all the articles in this series:
 
 <ol>
-{% for post in taxonomy.findTaxonomy({"tag": ["nnfwp"]}).order("date") %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% for article in taxonomy.findTaxonomy({"tag": ["nnfwp"]}).order("date") %}
+    <li><a href="{{ article.url }}">{{ article.title }}</a></li>
 {% endfor %}
 </ol>
 

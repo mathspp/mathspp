@@ -2,7 +2,7 @@
 title: "Neural networks fundamentals with Python – intro"
 ---
 
-This is the first post in a series to implement a neural network from *scratch*.
+This is the first article in a series to implement a neural network from *scratch*.
 We will set things up in terms of software to install, knowledge we need,
 and some code to serve as backbone for the remainder of the series.
 
@@ -404,21 +404,21 @@ My docstring-writing skills aren't very sharp,
 but perhaps what I wrote can serve as inspiration for you.
 
 You can find all the code in [this GitHub repository][gh-nnfwp] and, in particular,
-the code from this specific blog post is available under the [v0.1 tag][gh-nnfwp-v0_1].
+the code from this specific article is available under the [v0.1 tag][gh-nnfwp-v0_1].
 
 Currently we have a file that spans for 39 lines.
 It doesn't look like much, but on the other hand we have advanced quite a lot.
 
-In the next blog post we will be aggregating layers in a class for a neural network
+In the next article we will be aggregating layers in a class for a neural network
 and we will be looking at how neural networks learn.
 
 # The series
 
-These are all the blog posts in this series:
+These are all the articles in this series:
 
 <ol>
-{% for post in taxonomy.findTaxonomy({"tag": ["nnfwp"]}).order("date") %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% for article in taxonomy.findTaxonomy({"tag": ["nnfwp"]}).order("date") %}
+    <li><a href="{{ article.url }}">{{ article.title }}</a></li>
 {% endfor %}
 </ol>
 

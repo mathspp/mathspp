@@ -361,11 +361,11 @@ into a smaller network.
 
 # The series
 
-These are all the blog posts in this series:
+These are all the articles in this series:
 
 <ol>
-{% for post in taxonomy.findTaxonomy({"tag": ["nnfwp"]}).order("date") %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% for article in taxonomy.findTaxonomy({"tag": ["nnfwp"]}).order("date") %}
+    <li><a href="{{ article.url }}">{{ article.title }}</a></li>
 {% endfor %}
 </ol>
 

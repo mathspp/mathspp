@@ -15,10 +15,10 @@ ourselves to implement the backpropagation algorithm.
 # Purpose of this article
 
 In this article we want to create a class that represents a generic neural network,
-which will build up on the `Layer` class we created [in the first post][part1]
+which will build up on the `Layer` class we created [in the first article][part1]
 of the series: this class should provide some methods that allow to deal with a whole
 network, like feeding it some input and getting the final network output
-(just like the little demo we included in our script from the previous post).
+(just like the little demo we included in our script from the previous article).
 
 After creating such a representation, we will be dealing with the concept of loss:
 the way in which we assess how a neural network is performing, and an essential
@@ -29,12 +29,12 @@ concept we need if we want our neural network to *learn*.
 !!! Today's article will build on [v0.1][gh-nnfwp-v0_1] of that code.
 !!!
 !!! If you need a refresher on what we built last time, have a quick read
-!!! [at the previous post][part1].
+!!! [at the previous article][part1].
 
 
 # Neural network as a chain of layers
 
-In the [previous post][part1] we implemented a `Layer` class and then proceeded
+In the [previous article][part1] we implemented a `Layer` class and then proceeded
 to showing how several layer instances could be chained as long as their input
 and output dimensions matched.
 This is the main characterisation of a neural network:
@@ -91,7 +91,7 @@ class NeuralNetwork:
 ```
 
 We can now try to use this generic object to reproduce the demo
-from the last post:
+from the last article:
 
 ```py
 if __name__ == "__main__":
@@ -502,11 +502,11 @@ That will be a math-y and lengthy article, for just a few lines of code in the e
 
 # The series
 
-These are all the blog posts in this series:
+These are all the articles in this series:
 
 <ol>
-{% for post in taxonomy.findTaxonomy({"tag": ["nnfwp"]}).order("date") %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% for article in taxonomy.findTaxonomy({"tag": ["nnfwp"]}).order("date") %}
+    <li><a href="{{ article.url }}">{{ article.title }}</a></li>
 {% endfor %}
 </ol>
 
