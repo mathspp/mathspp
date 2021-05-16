@@ -6,6 +6,8 @@ content:
     order:
         custom:
             - "_hero"
+            - "_pydonts"
+            - "_nnfwp"
 metadata:
     author: "Rodrigo Girão Serrão"
     og:image: "https://mathspp.com/education/logo_education.png"
