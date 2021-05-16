@@ -14,6 +14,10 @@ Este livro é útil tanto para principiantes como para programadores mais experi
 
 <p style="clear:both"></p>
 
+<div style="display:flex; justify-content:center">
+<a class="gumroad-button" href="https://gumroad.com/l/gfKOV" target="_blank">Get the book now!</a>
+</div>
+
 ## Testemunhos
 
 (Em inglês.)
@@ -23,7 +27,3 @@ Este livro é útil tanto para principiantes como para programadores mais experi
 <!---->
 
  > “*First of all, thank you thank you and thank you again for a beautiful ebook with such amazing content. If you're a beginner or a more experienced pythonista, pydon'ts will still achieve its purpose. Beautifully designed and explained! Definitely worth the reading. I'm reading it once more in a year or so!*” ― Alonso, Mexico.
-
-<div style="display:flex; justify-content:center">
-<a class="gumroad-button" href="https://gumroad.com/l/gfKOV" target="_blank">Get the book now!</a>
-</div>

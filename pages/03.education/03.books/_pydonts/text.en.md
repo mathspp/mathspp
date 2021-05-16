@@ -13,6 +13,10 @@ This book is for beginners and advanced users alike, as it covers a wide range o
 
 <p style="clear:both"></p>
 
+<div style="display:flex; justify-content:center">
+<a class="gumroad-button" href="https://gumroad.com/l/gfKOV" target="_blank">Get the book now!</a>
+</div>
+
 ## Testimonials
 
  > “*[The book] seems to be extremely well put together, unlike some other books on Python I've read recently. It's a good book. I like how to the point it is.*” ― Tanner S., USA.
@@ -20,7 +24,3 @@ This book is for beginners and advanced users alike, as it covers a wide range o
 <!---->
 
  > “*First of all, thank you thank you and thank you again for a beautiful ebook with such amazing content. If you're a beginner or a more experienced pythonista, pydon'ts will still achieve its purpose. Beautifully designed and explained! Definitely worth the reading. I'm reading it once more in a year or so!*” ― Alonso, Mexico.
-
-<div style="display:flex; justify-content:center">
-<a class="gumroad-button" href="https://gumroad.com/l/gfKOV" target="_blank">Get the book now!</a>
-</div>
