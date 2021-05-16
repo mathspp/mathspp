@@ -1,3 +1,7 @@
+# Pydon'ts
+
+## Write beautiful Python code
+
 ![](pydonts.svg?classes=float-right)
 
 The “Pydon'ts – Write beautiful Python code” book is a compilation of all the “Pydon't” articles available [here](/blog/pydonts).
