@@ -1,7 +1,3 @@
-# Pydon'ts
-
-## Escreve código Python elegante
-
 ![](pydonts.svg?classes=float-right)
 
 O livro “Pydon'ts – Escreve código Python elegante” é uma compilação dos artigos da série “Pydon't”, que podes ler em [aqui](/blog/pydonts).
