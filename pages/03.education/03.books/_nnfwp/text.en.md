@@ -2,7 +2,7 @@
 
 ![](nnfwp.svg?classes=float-right)
 
-Ever wondered what a neural network really is, how it works or how to implement one?
+Ever wondered what a neural network really is, how it works, or how to implement one?
 Well, I did, and that is why I tried implementing one.
 And I failed.
 Some years later, I tried again, and it worked!
