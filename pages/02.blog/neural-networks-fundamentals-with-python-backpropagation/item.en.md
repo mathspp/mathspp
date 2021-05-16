@@ -132,11 +132,11 @@ because in order to know how a layer influences the loss, you first need to know
 
 !!!! This becomes clearer if we unfold the recursive definition of $x_n$:
 !!!! $$
-!!!! \begin{align*}
+!!!! \begin{aligned}
 !!!! L(x_n, t) &= L(f_{n-1}(W_{n-1}x_{n-1} + b_{n-1}), t) \\
 !!!! &= L(f_{n-1}(W_{n-1}f_{n-2}(x_{n-2}W_{n-2} + b_{n-2}) + b_{n-1})), t) \\
 !!!! &= ...
-!!!! \end{align*}
+!!!! \end{aligned}
 !!!! $$
 !!!! Taking the partial derivative of $L$ with respect to $W_0$ will involve many more chain rules than if you take the partial derivative of $L$ with respect to $W_{n-1}$.
 
@@ -226,12 +226,12 @@ get away with plain multiplication.
 !!!! Turns out the first two can also be written by reusing the latter:
 !!!!
 !!!! $$
-!!!! \begin{align}
+!!!! \begin{aligned}
 !!!! &y_{n-1} = x_{n-1}W_{n-1} + b_{n-1} ~ ,\\
 !!!! &\frac{\partial L}{\partial b_{n-1}} = dL(x_n, t) f_{n-1}'(y_{n-1}) ~ ,\\
 !!!! &\frac{\partial L}{\partial x_{n-1}} = W_{n-1}^T \frac{\partial L}{\partial b_{n-1}} ~ ,\\
 !!!! &\frac{\partial L}{\partial W_{n-1}} = \frac{\partial L}{\partial b_{n-1}} x_{n-1}^T
-!!!! \end{align}
+!!!! \end{aligned}
 !!!! $$
 !!!!
 !!!! If you got lost along the way or you don't trust me (and you shouldn't), just define $h(x, W, b) = L(f(Wx + b), t)$ and compute $\frac{\partial h}{\partial x}$, $\frac{\partial h}{\partial W}$ and $\frac{\partial h}{\partial b}$ for yourself.
@@ -270,7 +270,7 @@ dWs[n-2] = np.dot(dbs[n-2], xs[n-2].T)
 !!!! Just notice that $x_{n-1} \equiv x_{n-1}(x_{n-2}, W_{n-2}, b_{n-2})$ is in fact a function of the previous parameters and thus
 !!!!
 !!!! $$
-!!!! \begin{align}
+!!!! \begin{aligned}
 !!!! &y_{n-2} = x_{n-2}W_{n-2} + b_{n-2} ~ ,\\
 !!!! &\frac{\partial L}{\partial b_{n-2}} = \frac{\partial L}{\partial x_{n-1}}\frac{\partial x_{n-1}}{\partial b_{n-2}} = \frac{\partial L}{\partial x_{n-1}}f_{n-2}'(y_{n-2}) ~ ,\\
 !!!! &\frac{\partial L}{\partial x_{n-2}} =
@@ -278,7 +278,7 @@ dWs[n-2] = np.dot(dbs[n-2], xs[n-2].T)
 !!!!   \frac{\partial L}{\partial x_{n-1}} f_{n-2}'(y_{n-2}) \frac{\partial y_{n-2}}{\partial x_{n-2}} =
 !!!!   W_{n-2}^T \frac{\partial L}{\partial b_{n-2}} ~ ,\\
 !!!! &\frac{\partial L}{\partial W_{n-2}} = \frac{\partial L}{\partial x_{n-1}}\frac{\partial x_{n-1}}{\partial W_{n-2}} = \frac{\partial L}{\partial b_{n-2}} x_{n-2}^T
-!!!! \end{align}
+!!!! \end{aligned}
 !!!! $$
 !!!!
 !!!! Once again, if you don't trust me just find the partial derivatives of $h(x, W, b) = L(f_{n-1}(W_{n-1}f_{n-2}(Wx + b) + b_{n-1}), t)$.
@@ -322,7 +322,7 @@ If you don't, I would recommend you either get access to it or implement it your
 !!!! In mathematical notation, the recursive definition can be written out as
 !!!!
 !!!! $$
-!!!! \begin{align}
+!!!! \begin{aligned}
 !!!! &\frac{\partial L}{\partial x_n} = dL(x_n, t) ~ ,\\
 !!!! &\frac{\partial L}{\partial b_{n-i}} = \frac{\partial L}{\partial x_{n-i+1}}f'_{n-i}(x_{n-i}W_{n-i} + b_{n-i}) ~ ,\\
 !!!! &\frac{\partial L}{\partial x_{n-i}} =
@@ -330,7 +330,7 @@ If you don't, I would recommend you either get access to it or implement it your
 !!!!   \frac{\partial L}{\partial x_{n-i+1}} f_{n-i}'(y_{n-i}) \frac{\partial y_{n-i}}{\partial x_{n-i}} =
 !!!!   W_{n-i}^T \frac{\partial L}{\partial b_{n-i}} ~ ,\\
 !!!! &\frac{\partial L}{\partial W_{n-i}} = \frac{\partial L}{\partial x_{n-i+1}}\frac{\partial x_{n-i+1}}{\partial W_{n-i}} = \frac{\partial L}{\partial b_{n-i}} x_{n-i}^T
-!!!! \end{align}
+!!!! \end{aligned}
 !!!! $$
 
 And this is how you go about implementing backpropagation!
