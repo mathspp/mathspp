@@ -82,9 +82,9 @@ The sigmoid function looks like this:
 
 The formula for the sigmoid function is the following:
 
-\[
-    f(x) = \frac1{1 + e^{-x}}
-\]
+$$
+f(x) = \frac1{1 + e^{-x}}
+$$
 
 If we want to implement a `Sigmoid` activation function, all we need
 to do is figure out what its derivative is, and then implement it
@@ -93,16 +93,16 @@ as a class that inherits the `ActivationFunction` abstract class we created.
 If you do the maths you can find out that the derivative of the sigmoid function
 is 
 
-\[
-    f'(x) = \frac{e^{-x}}{\left(e^{-x} + 1\right)^2} ~~~,
-\]
+$$
+f'(x) = \frac{e^{-x}}{\left(e^{-x} + 1\right)^2} ~~~,
+$$
 
 which can feel a bit nasty, but you can also write the derivative of the
 sigmoid function in terms of the sigmoid function itself, which means that
 
-\[
-    f'(x) = f(x)(1 - f(x)) ~~~.
-\]
+$$
+f'(x) = f(x)(1 - f(x)) ~~~.
+$$
 
 Writing this as code is really simple:
 
