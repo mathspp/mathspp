@@ -2,7 +2,7 @@
 
 ## Escreve código Python elegante
 
-![](pydonts.svg?classes=float-left&resize=400,500)
+![](pydonts.svg?classes=float-right&resize=400,500)
 
 O livro “Pydon'ts – Escreve código Python elegante” é uma compilação dos artigos da série “Pydon't”, que podes ler em [aqui](/blog/pydonts).
 O livro vai mostrar-te como usar cada uma das funcionalidades da linguagem Python de forma idiomática, para que possas escrever programas Python elegantes.
@@ -12,7 +12,7 @@ uso dessas funcionalidades: às vezes até exploramos o código da biblioteca st
 
 Este livro é útil tanto para principiantes como para programadores mais experientes, já que cobre uma vasta panóplia de tópicos diferentes.
 
-<a class="gumroad-button" href="https://gumroad.com/l/gfKOV" target="_blank">Compra o livro!</a>
+<p style="clear:both"></p>
 
 ## Testemunhos
 
@@ -23,3 +23,7 @@ Este livro é útil tanto para principiantes como para programadores mais experi
 <!---->
 
  > “*First of all, thank you thank you and thank you again for a beautiful ebook with such amazing content. If you're a beginner or a more experienced pythonista, pydon'ts will still achieve its purpose. Beautifully designed and explained! Definitely worth the reading. I'm reading it once more in a year or so!*” ― Alonso, Mexico.
+
+<div style="display:flex; justify-content:center">
+<a class="gumroad-button" href="https://gumroad.com/l/gfKOV" target="_blank">Get the book now!</a>
+</div>
