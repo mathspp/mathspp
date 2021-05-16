@@ -23,6 +23,7 @@ e também te dá uma implementação de referência que [podes encontrar no GitH
 
 Quando acabares o livro, vais ter à tua disposição uma framework simples de redes neuronais
 que funciona, e vais ter usado essa framework para explorar conceitos e para fazer experiências.
+
 Finalmente, caso estejas reticente em comprar este livro, não te esqueças que podes sempre
 ler os seus capítulos online, [no meu blogue](/blog/tag:nnfwp).
 

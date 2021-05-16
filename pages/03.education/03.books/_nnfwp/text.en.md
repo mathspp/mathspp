@@ -14,7 +14,7 @@ and all those buzzwords.
 In this short book, I will take you through the journey of implementing a neural network
 from scratch, and then we will use these networks _you_ created to perform
 machine learning tasks.
-We will also play around with them and so all sorts of really interesting machine learning
+We will also play around with them and do all sorts of really interesting machine learning
 and deep learning experiments.
 
 The book explains you the things that are needed, step-by-step,
@@ -24,6 +24,7 @@ By the time you are done with the book, you will have at your disposal
 a simple neural network framework that actually works, and that you have already
 used to explore interesting concepts from the worlds of machine learning and
 deep learning.
+
 By the way, if you are unsure whether or not this book is for you,
 you can always read its chapters for free [on my blog](/blog/tag:nnfwp).
 
