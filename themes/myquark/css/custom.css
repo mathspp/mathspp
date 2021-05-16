@@ -303,3 +303,9 @@ figure.caption-right figcaption {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Add some CSS to make sure the Gumroad button doesn't look weird
+   because of interactions with the plugin that adds those icons to external links. */
+a.gumroad-button, a.external-link.no-image.gumroad-button {
+  background: none;
+}
