@@ -30,7 +30,7 @@ ler os seus capítulos online, [no meu blogue](/blog/tag:nnfwp).
 <p style="clear:both"></p>
 
 <div style="display:flex; justify-content:center">
-<a class="gumroad-button" href="https://gumroad.com/l/swTNI" target="_blank">Get the book now!</a>
+<a class="gumroad-button" href="https://gumroad.com/l/swTNl" target="_blank">Get the book now!</a>
 </div>
 
 [gh-nnfwp]: https://github.com/mathspp/nnfwp
