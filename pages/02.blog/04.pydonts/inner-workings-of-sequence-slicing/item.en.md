@@ -184,13 +184,15 @@ and intercept the `__getitem__` call:
 ...     def __getitem__(self, idx):
 ...         print("Inside __getitem__")
 ...         # Just let the built-in string handle indexing:
-...         super().__getitem__(idx)
+...         return super().__getitem__(idx)
 ...
 >>> s = S("Slicing is easy!")
 >>> s[3]
 Inside __getitem__
+'c'
 >>> s[1::2]
 Inside __getitem__
+'lcn ses!'
 ```
 
 This shows that the `__getitem__` method is the one that is responsible
@@ -210,13 +212,15 @@ to be used:
 ...     def __getitem__(self, idx):
 ...         print(f"The argument was: {idx}")
 ...         # Just let the built-in string handle indexing:
-...         super().__getitem__(idx)
+...         return super().__getitem__(idx)
 ...
 >>> s = S("Slicing is easy!")
 >>> s[3]
 The argument was: 3
+'c'
 >>> s[1::2]
 The argument was: slice(1, None, 2)
+'lcn ses!'
 ```
 
 As you can see above, we tried slicing the string with `s[1::2]`
