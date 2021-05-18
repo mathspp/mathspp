@@ -1,6 +1,6 @@
 ---
 metadata:
-    description: "In this Pydon't we cover advanced topics related to sequence slicing, like (negative) steps, more idiomatic sequence slicing, slice assignment, and slice deletion."
+    description: "This Pydon't covers the inner workings of sequence slicing, from the `slice` object to the dunder methods of the family of `__getitem__`."
 title: Inner workings of sequence slicing | Pydon't
 ---
 
