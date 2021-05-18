@@ -1,11 +1,13 @@
 ---
 metadata:
-    description: "This Pydon't covers the inner workings of sequence slicing, from the `slice` object to the dunder methods of the family of `__getitem__`."
+    description: "This Pydon't covers the inner workings of sequence slicing, from the built-in `slice` type to the dunder method `__getitem__` and its siblings."
 title: Inner workings of sequence slicing | Pydon't
 ---
 
 In this Pydon't we conclude the slicing trilogy and
-take a look at the inner workings of Python slicing.
+take a look at the inner workings of Python slicing,
+from the built-in `slice` type to the dunder method
+`__getitem__` and its siblings.
 
 ===
 
@@ -19,8 +21,8 @@ take a look at the inner workings of Python slicing.
 
 We have written two Pydon'ts already on sequence slicing:
 
- 1. [Idiomatic sequence slicing][idiomatic-sequence-slicing]; and
- 2. [Mastering sequence slicing][mastering-sequence-slicing].
+ 1. [“Idiomatic sequence slicing”][idiomatic-sequence-slicing]; and
+ 2. [“Mastering sequence slicing”][mastering-sequence-slicing].
 
 Those two Pydon'ts taught you almost everything there is to know
 about sequence slicing,

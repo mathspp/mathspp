@@ -1,12 +1,14 @@
 ---
 metadata:
-    description: "Neste artigo introduzimos “fatias” em Python e apresentamos algumas utilizações idiomáticas desta funcionalidade."
+    description: "Neste Pydon't exploramos o funcionamento interno das “fatias” em Python, desde o tipo `slice` até aos métodos dunder da família do `__getitem__`."
 show_call_to_action: false
-title: "Fatiar com mestria | Pydon't"
+title: "Funcionamento interno das fatias | Pydon't"
 ---
 
-Neste artigo vamos apresentar os tópicos mais avançados
-relacionados com fatias em Python.
+Neste Pydon't concluímos a trilogia sobre fatias
+em Python e vamos ver como estas funcionam internamente:
+vamos falar sobre o tipo `slice` e vamos ainda falar
+sobre o método `__getitem__` e os seus dois irmãos.
 
 ===
 
