@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "In this Pydon't we cover advanced topics related to sequence slicing, like (negative) steps, more idiomatic sequence slicing, slice assignment, and slice deletion."
-title: Mastering sequence slicing
+title: Inner workings of sequence slicing | Pydon't
 ---
 
 In this Pydon't we conclude the slicing trilogy and
