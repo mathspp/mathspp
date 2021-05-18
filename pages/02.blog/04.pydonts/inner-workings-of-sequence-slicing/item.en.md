@@ -34,7 +34,7 @@ but there is something that we will only take a look at today:
 If you don't really know how sequence slicing works,
 you might want to take a look at the Pydon'ts I linked above.
 In particular, the Pydon't on [mastering sequence slicing][mastering-sequence-slicing]
-can really help you take your Python skills to the next level.
+can really help you take your Python slicing skills to the next level.
 
 Without further ado, let us begin!
 
