@@ -95,8 +95,8 @@ AttributeError: readonly attribute
 
 ## Relationship with `range`
 
-Another really important thing here lies in noting that this relationship that I tried
-to make apparent, between slicing and sets of indices specified by `range`,
+Another really important thing here lies in noting that this relationship that [I tried
+to make apparent][slice-range-relationship], between slicing and sets of indices specified by `range`,
 isn't just coincidental.
 No, the documentation specifically says that `slice(start, stop, step)` represents the indices
 specified by `range(start, stop, step)`.
@@ -583,3 +583,4 @@ a single Pydon't!
 [container-emulation]: https://docs.python.org/3/reference/datamodel.html#emulating-container-types
 [geometric-prog]: https://en.wikipedia.org/wiki/Geometric_progression
 [geometric-prog-gh]: https://github.com/RojerGS/projects/blob/master/misc/geometric_progression.py
+[slice-range-relationship]: /blog/pydonts/idiomatic-sequence-slicing#slicing-and-range
