@@ -66,7 +66,7 @@ have their “heads” face up.
 Here is a summary of the situation:
 
 | Coins in group | | Heads | | Tails |
-| :-: | :-: | :-: | :-: | :-: |
+| :- | :- | :- | :- | :- |
 | $20$ | | $k$ | | $20 - k$ |
 | $n - 20$ | | $20 - k$ | | $n - 40 + k$ |
 
