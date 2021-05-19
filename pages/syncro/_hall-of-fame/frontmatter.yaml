@@ -183,6 +183,7 @@ hof:
   - "Nícolas Hecker Silva, São Paulo (Brasil) <i class='fas fa-star'></i>" 
   - "Vinicius Niquini (Brasil) <i class='fas fa-star'></i>"
   - "Allan Welerson, Goiás (Brasil) <i class='fas fa-star'></i>"
+  - "Marcel Tessare, Rio Claro (Brasil) <i class='fas fa-star'></i>"
 process:
   twig: true
 twig_first: true
