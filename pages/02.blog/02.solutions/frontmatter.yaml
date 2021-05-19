@@ -1,12 +1,1 @@
-anchors:
-    active: false
-content:
-    items:
-        taxonomy@.category: solution
-    order:
-        by: date
-        dir: desc
-metadata:
-    author: Rodrigo Girão Serrão
-slug: solutions
-visible: false
+redirect: /blog/problems[301]
