@@ -10,7 +10,8 @@ Este simples problema exemplifica um fenómeno interessante: quando estamos a co
 
 ![Uma multidão, fotografia de Rob Curran do Unsplash](./crowd.jpg)
 
-### Enunciado do problema
+
+# Enunciado do problema
 
 Assume que $n$ é um inteiro tal que $n \geq 2$. Agora considera os números
 
@@ -26,13 +27,28 @@ Por outras palavras, mostra que há sempre dois desses $n$ números que são cop
 
 Se precisares de clarificar alguma coisa, não hesites em perguntar na secção de comentários em baixo.
 
-### Solução
 
-Podes encontrar a minha proposta de solução [aqui][sol], para confirmares a tua resposta. Também podes usar o link para partilhar a tua própria solução nos comentários. Por favor, **não** escrevas a tua solução nos comentários aqui em baixo.
+# Solução
 
----
+A solução deste problema passa por uma utilização simples do princípio do Pombal.
 
-Se gostaste deste problema e se gostavas de receber novos problemas diretamente na tua caixa de correio, então [subscreve a newsletter dos Problemas][subscribe].
+!!! O *princípio do Pombal* diz que se eu tiver $k$ pombos e os quiser pôr em $n < k$ gaiolas, então terá de haver pelo menos uma gaiola com mais do que um pombo.
+
+Para algum $n \geq 2$, consideremos os $n-1$ pares de inteiros que se seguem:
+
+$$
+\{3, 4\}, \{5, 6\}, \cdots, \{2n-1, 2n\}
+$$
+
+que, juntos, formam o conjunto $\{3, 4, \cdots, 2n-1, 2n\}$.
+Se escolhermos $n$ números deste conjunto (os pombos) e se olharmos para os pares de onde eles vieram (as gaiolas) então vemos que **de certeza** que tirámos os dois inteiros de um dos pares. Esses dois números que vieram do mesmo par são números inteiros consecutivos e, por isso, são coprimos!
+
+Para veres porque é que dois inteiros consecutivos são coprimos, podes ler [esta prova num tweet][tp-coprimes].
+
+
+Não te esqueças de [subscrever a newsletter][subscribe] para receberes os problemas diretamente na tua caixa de correio,
+e deixa a tua reação a este problema em baixo.
 
 [sol]: ../../solutions/{{ page.slug }}
 [subscribe]: https://mathspp.com/subscribe
+[tp-coprimes]: /blog/twitter-proofs/consecutive-integers-are-coprime
