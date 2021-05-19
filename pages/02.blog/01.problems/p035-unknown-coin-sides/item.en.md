@@ -66,9 +66,9 @@ have their “heads” face up.
 Here is a summary of the situation:
 
 | Coins in group | | Heads | | Tails |
-| :- | :-: | :-: | :-: | :-: |
-| $20$ || $k$ || $20 - k$ |
-| $n - 20$ || $20 - k$ || $n - 40 + k$ |
+| :-: | :-: | :-: | :-: | :-: |
+| $20$ | | $k$ | | $20 - k$ |
+| $n - 20$ | | $20 - k$ | | $n - 40 + k$ |
 
 What we need, now, is to have the same number of coins with their
 “heads” face up in both groups.

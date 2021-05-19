@@ -69,8 +69,8 @@ então a tabela seguinte resume o estado em que estamos:
 
 | Moedas no grupo | | Cara | | Coroa |
 | :- | :-: | :-: | :-: | :-: |
-| $20$ || $k$ || $20 - k$ |
-| $n - 20$ || $20 - k$ || $n - 40 + k$ |
+| $20$ | | $k$ | | $20 - k$ |
+| $n - 20$ | | $20 - k$ | | $n - 40 + k$ |
 
 O que nós queríamos é que os dois números na coluna “cara” fossem iguais,
 ou seja, queríamos que os dois grupos tivessem o mesmo número de moedas
