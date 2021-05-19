@@ -3,10 +3,10 @@ metadata:
     author: Rodrigo Girão Serrão
     og:image: "https://mathspp.com/blog/pydonts/mastering-sequence-slicing/thumbnail.png"
 references:
- - "Python 3 Documentation, The Python Language Reference, Expressions – Slicings, [docs.python.org/3/reference/expressions.html#slicings](https://docs.python.org/3/reference/expressions.html#slicings) [last acessed 20-04-2021];"
- - "Python 3 Documentation, The Python Language Reference, Data Model – The Standard Type Hierarchy, [docs.python.org/3/reference/datamodel.html#the-standard-type-hierarchy](https://docs.python.org/3/reference/datamodel.html#the-standard-type-hierarchy) [last accessed 20-04-2021];"
- - "Python 3 Documentation, The Python Language Reference, Data Model – Emulating Container Types, [docs.python.org/3/reference/datamodel.html#emulating-container-types](https://docs.python.org/3/reference/datamodel.html#emulating-container-types) [last accessed 20-04-2021];"
- - "Python 3 Documentation, The Python Language Reference, Built-in Functions, `slice`, [docs.python.org/3/library/functions.html#slice](https://docs.python.org/3/library/functions.html#slice) [last accessed 20-04-2021];"
+ - "Python 3 Documentation, The Python Language Reference, Expressions – Slicings, [https://docs.python.org/3/reference/expressions.html#slicings](https://docs.python.org/3/reference/expressions.html#slicings) [last acessed 20-04-2021];"
+ - "Python 3 Documentation, The Python Language Reference, Data Model – The Standard Type Hierarchy, [https://docs.python.org/3/reference/datamodel.html#the-standard-type-hierarchy](https://docs.python.org/3/reference/datamodel.html#the-standard-type-hierarchy) [last accessed 20-04-2021];"
+ - "Python 3 Documentation, The Python Language Reference, Data Model – Emulating Container Types, [https://docs.python.org/3/reference/datamodel.html#emulating-container-types](https://docs.python.org/3/reference/datamodel.html#emulating-container-types) [last accessed 20-04-2021];"
+ - "Python 3 Documentation, The Python Language Reference, Built-in Functions, `slice`, [https://docs.python.org/3/library/functions.html#slice](https://docs.python.org/3/library/functions.html#slice) [last accessed 20-04-2021];"
  - "Python 3 Documentation, The Python Language Reference, Built-in Functions, `range`, [https://docs.python.org/3/library/functions.html#func-range](https://docs.python.org/3/library/functions.html#func-range) [last accessed 03-05-2021];"
  - "Python 3 Documentation, The Python Language Reference, Built-in Functions, `filter`, [https://docs.python.org/3/library/functions.html#filter](https://docs.python.org/3/library/functions.html#filter) [last accessed 11-05-2021];"
  - "Python 3 Documentation, The Python Language Reference, Built-in Functions, `reversed`, [https://docs.python.org/3/library/functions.html#reversed](https://docs.python.org/3/library/functions.html#reversed) [last accessed 11-05-2021];"
