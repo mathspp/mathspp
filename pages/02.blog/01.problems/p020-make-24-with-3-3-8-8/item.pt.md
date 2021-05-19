@@ -10,7 +10,8 @@ O problema deste artigo vai ser sobre um jogo de matemática elementar, o [jogo 
 
 ![A picture of a wall with a 24 in it](24.jpg "Photo by Kadir Celep on Unsplash")
 
-### Enunciado
+
+# Enunciado
 
 O "jogo do 24" costuma ser jogado com quatro números diferentes de $1$ a $9$, por exemplo escolhidos aleatoriamente de um baralho com cartas com esses números. Neste artigo podem esquecer tudo isso porque eu vou escolher quatro números específicos.
 
@@ -29,18 +30,14 @@ Um exemplo de uma expressão válida seria $(3 + 3) \times (8 + 8)$, só que est
 
 Quem me falou deste problema foi o mesmo amigo que me mostrou o problema ["Dobrar o alfabeto"][fold the alphabet].
 
-### Pista
 
-_Não_ leias a pista se ainda não tiveres pensado pelo menos cinco minutos neste problema!
+# Solução
 
-!!!! Os valores intermédios _não_ têm de ser números inteiros.
+Não vale a pena dourar a pílula, a solução é a expressão $8 \div (3 - 8\div 3)$. Genial, não achas?
 
-Se precisares de clarificar alguma coisa, não hesites em perguntar na secção de comentários em baixo.
 
-### Solução
+Não te esqueças de [subscrever a newsletter][subscribe] para receberes os problemas diretamente na tua caixa de correio,
+e deixa a tua reação a este problema em baixo.
 
-Podes encontrar a minha proposta de solução [aqui][sol], para confirmares a tua resposta.
-
-[sol]: ../../solutions/{{ page.slug }}
 [24 Game]: https://en.wikipedia.org/wiki/24_Game
 [fold the alphabet]: ../fold-the-alphabet
