@@ -1,0 +1,14 @@
+date: 30-05-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: https://mathspp.com/blog/problems/game-of-coins/thumbnail.png
+process:
+    twig: true
+slug: game-of-coins
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - game theory
+      - geometry
+      - mathematics
+twig_first: true
