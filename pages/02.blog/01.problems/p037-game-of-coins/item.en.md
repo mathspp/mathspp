@@ -1,8 +1,7 @@
 ---
 title: "Problem #037 - game of coins"
 metadata:
-    description: "Alice and Bob sit across each other, ready for their game of coins.
-Who will emerge victorious?"
+    description: "Alice and Bob sit across each other, ready for their game of coins. Who will emerge victorious?"
 ---
 
 Alice and Bob sit across each other, ready for their game of coins.
