@@ -6,6 +6,6 @@ taxonomy:
     category: [blogpost, problem]
     tag:
       - geometry
-      - invariant
+      - invariants
       - mathematics
 twig_first: true

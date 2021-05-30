@@ -9,4 +9,5 @@ taxonomy:
     category: [blogpost, problem]
     tag:
       - game theory
+      - mathematics
 twig_first: true
