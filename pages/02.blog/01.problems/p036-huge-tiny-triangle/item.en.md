@@ -10,7 +10,7 @@ Can you find a really large triangle that is also really tiny?
 
 ![](thumbnail.png)
 
-### Problem statement
+# Problem statement
 
 Does there exist a triangle that has an area larger than the Earth's surface
 (approximately 510 million km²)
@@ -22,20 +22,75 @@ I saw this problem in the Facebook page of [a group of maths students from a loc
 
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
-### Solution
 
-The solution to this problem will be posted [here][sol] after this problem has been live for 2 weeks.
-Feel free to [email me][email] your solution if you want it featured in the [solution page][sol].
-<!--
-You can read the solution [here][sol] to compare with your own solution.
-You can also use that link to post your own solution in the comments! Please avoid posting spoilers in the comments here.
--->
+# Solution
 
----
+Yes! There exists such a triangle.
 
-If you enjoyed the problem and would like to get new problems directly in your inbox, be sure to [subscribe to the Problems newsletter][subscribe].
+Let $[ABC]$ be a triangle with sides $a$, $b$, $c$,
+and let its respective heights be $h_a$, $h_b$, $h_c$.
+
+The area of this triangle is, therefore,
+
+$$
+\frac{ah_a}2 = \frac{bh_b}2 = \frac{ch_c}2 ~~~.
+$$
+
+From the equalities above we conclude
+
+$$
+\begin{cases}
+ah_a = ch_c \iff h_a = \frac{ch_c}a \\
+bh_b = ch_c \iff h_b = \frac{ch_c}b
+\end{cases} ~~~.
+$$
+
+Because we are talking about a triangle, we know that
+$c < a + b$, which means we can take a look at the equation
+above and remove $c$ from there:
+
+$$
+h_a = \frac{ch_c}a \leq \frac{(a + b)h_c}{a} ~~~.
+$$
+
+If, additionally, the triangle $[ABC]$ has two equal sides,
+$a = b$, we get
+
+$$
+h_a \leq 2h_c ~~~,
+$$
+
+and, similarly,
+
+$$
+h_b \leq 2h_c ~~~.
+$$
+
+Now, all we have to do is sum the three heights of the triangle:
+
+$$
+h_a + h_b + h_c \leq 2h_c + 2h_c + h_c = 5h_c ~~~.
+$$
+
+Therefore, in our isosceles triangle with equal sides $a$, $b$,
+we have that the sum of the three heights is less than or equal
+to $5h_c$, where $h_c$ is the height relative to the side
+that is unequal to the other two.
+With that in mind, we can make a really “long” triangle
+(that is, for which $c$ is large)
+that is short
+(that is, for which $h_c$ is small)
+so that it satisfies the restrictions in the problem statement.
+In fact, our reasoning shows that there are triangles with areas
+that can be arbitrarily large, while their three heights sum
+up to values that are arbitrarily small.
+
+Makes sense?
+
+
+[Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly
+problems sent straight to your inbox and to add your reaction below.
 
 [email]: mailto:rodrigo@mathspp.com?subject=Solution%20to%20{{ page.title|regex_replace(['/ /'], ['%20']) }}
 [subscribe]: https://mathspp.com/subscribe
-[sol]: ../../solutions/{{ page.slug }}
 [nucm-fb]: https://www.facebook.com/nucmfctnova
