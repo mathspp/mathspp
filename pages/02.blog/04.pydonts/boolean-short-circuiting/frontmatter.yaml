@@ -1,0 +1,21 @@
+date: 26-05-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: "https://mathspp.com/blog/pydonts/boolean-short-circuiting/thumbnail.png"
+references:
+ - "Python 3 Documentation, The Python Standard Library, Built-in Types, Boolean Operations – and, or, not, [https://docs.python.org/3/library/stdtypes.html#boolean-operations-and-or-not](https://docs.python.org/3/library/stdtypes.html#boolean-operations-and-or-not) [last accessed 31-05-2021];"
+ - "Python 3 Documentation, The Python Language Reference, Built-in Functions, `all`, [https://docs.python.org/3/library/functions.html#all](https://docs.python.org/3/library/functions.html#all) [last accessed 26-05-2021];"
+ - "Python 3 Documentation, The Python Language Reference, Built-in Functions, `any`, [https://docs.python.org/3/library/functions.html#any](https://docs.python.org/3/library/functions.html#any) [last accessed 26-05-2021];"
+ - "Stack Overflow, “Does Python support short-circuiting”, [https://stackoverflow.com/a/14892812/2828287](https://stackoverflow.com/a/14892812/2828287) [last accessed 31-05-2021];"
+ - "Python 3 Documentation, The Python Standard Library, `base64`, [https://docs.python.org/3/library/base64.html](https://docs.python.org/3/library/base64.html) [last accessed 01-06-2021];"
+ - "Python 3 Documentation, The Python Standard Library, `asynchat`, [https://docs.python.org/3/library/asynchat.html](https://docs.python.org/3/library/asynchat.html) [last accessed 01-06-2021];"
+ - "Python 3 Documentation, The Python Standard Library, `enum`, [https://docs.python.org/3/library/enum.html](https://docs.python.org/3/library/enum.html) [last accessed 01-06-2021];"
+ - "Python 3 Documentation, The Python Standard Library, `collections.ChainMap`, [https://docs.python.org/3/library/collections.html#collections.ChainMap](https://docs.python.org/3/library/collections.html#collections.ChainMap) [last accessed 01-06-2021];"
+ - "Python 3 Documentation, The Python Standard Library, `cgitb`, [https://docs.python.org/3/library/cgitb.html](https://docs.python.org/3/library/cgitb.html) [last accessed 01-06-2021];"
+ - "Real Python, “How to Use the Python or Operator”, [https://realpython.com/python-or-operator/](https://realpython.com/python-or-operator/) [last accessed 01-06-2021];"
+slug: "boolean-short-circuiting"
+taxonomy:
+    category: [blogpost, pydont]
+    tag:
+      - "programming"
+      - "python"
