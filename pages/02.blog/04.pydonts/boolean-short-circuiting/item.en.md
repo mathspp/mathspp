@@ -1,6 +1,6 @@
 ---
 metadata:
-    description: ""
+    description: "In this Pydon't we explore what Boolean short-circuiting for the `and` and `or` operators is, and how to use this functionality to write more expressive code."
 title: "Boolean short-circuiting | Pydon't"
 ---
 
