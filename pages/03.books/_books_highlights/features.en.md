@@ -1,9 +1,9 @@
 ---
-#features:
-#    - icon: fas fa-search
-#      text: "Explore a topic that is completely different from what you are used to"
-#    - icon: fas fa-tasks
-#      text: "Incremental tasks ensure everyone is keeping up with the group"
+features:
+    - icon: fas fa-book-reader
+      text: "+5.000 downloads"
+    - icon: fas fa-book
+      text: "2 books about programming and maths"
 #    - icon: fas fa-comments
 #      text: "Group discussion is encouraged as it sparks new insights and ideas"
 title: Books
