@@ -6,6 +6,6 @@ metadata:
 
 ## Write beautiful Python code
 
-Read the articles on the blog or buy the book [here][book]!
+Buy the book [here][book] or read the articles on the blog!
 
 [book]: https://gum.co/pydonts
