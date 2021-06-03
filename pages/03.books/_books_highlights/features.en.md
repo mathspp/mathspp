@@ -9,8 +9,7 @@
 title: Books
 ---
 
-I love writing (exhibit A, my blog) and I love sharing knowledge
-(exhibit A again, my blog), and writing books is a perfect way
+I love writing and I love sharing knowledge,
+and writing books is a perfect way
 to marry these two things!
-That is why I decided to take the knowledge I want to share and
-started publishing it as books.
+In short, that is the main reason why I started writing books!

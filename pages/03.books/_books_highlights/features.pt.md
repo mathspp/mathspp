@@ -9,9 +9,8 @@
 title: Livros
 ---
 
-Adoro escrever (o meu blogue é prova disso) e adoro
-partilhar conhecimento (de novo, o meu blogue é prova disso),
-e escrever um livro é outra maneira de casar estas duas paixões
+Adoro escrever e adoro
+partilhar conhecimento,
+e escrever um livro é uma bela maneira de casar estas duas paixões
 que tenho!
-Por este motivo, decidi pegar no conhecimento que tenho para partilhar
-e comecei a publicá-lo na forma de livros.
+Em suma, esta é a razão principal pela qual comecei a escrever livros!
