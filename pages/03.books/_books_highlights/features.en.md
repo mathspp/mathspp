@@ -9,14 +9,8 @@
 title: Books
 ---
 
-# Books
-
 I love writing (exhibit A, my blog) and I love sharing knowledge
 (exhibit A again, my blog), and writing books is a perfect way
 to marry these two things!
 That is why I decided to take the knowledge I want to share and
 started publishing it as books.
-
-You can find out all about this on the [page about the books][books].
-
-[books]: ../books
