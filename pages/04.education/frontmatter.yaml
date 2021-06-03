@@ -9,6 +9,7 @@ content:
             - "_workshops_highlights"
             - "_workshops_some"
             - "_courses_highlights"
+            - "_books_highlights"
             - "_summary"
 metadata:
     author: "Rodrigo Girão Serrão"

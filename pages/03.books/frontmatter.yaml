@@ -6,7 +6,6 @@ content:
     order:
         custom:
             - "_hero"
-            - "_books_highlights"
             - "_pydonts"
             - "_nnfwp"
 metadata:

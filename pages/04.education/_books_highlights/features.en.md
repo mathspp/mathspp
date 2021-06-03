@@ -19,4 +19,4 @@ started publishing it as books.
 
 You can find out all about this on the [page about the books][books].
 
-[books]: ../books
+[books]: /books

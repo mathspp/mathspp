@@ -20,4 +20,4 @@ e comecei a publicá-lo na forma de livros.
 
 Podes encontrar toda a informação na minha [página sobre os livros][books].
 
-[books]: ../books
+[books]: /books
