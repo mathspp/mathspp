@@ -37,7 +37,7 @@ quick reminder of how this works, go ahead and read the
 
 <!--v-->
  > You can now get your copy of the ebook “Pydon'ts – Write beautiful Python code” [on Gumroad][gumroad-pydonts]
- > to help support the series of “Pydon't” articles �.
+ > to help support the series of “Pydon't” articles 💪.
 <!--^-->
 
 # Return values of the `and` and `or` operators
