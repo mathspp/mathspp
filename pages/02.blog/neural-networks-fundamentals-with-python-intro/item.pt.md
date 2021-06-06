@@ -10,6 +10,9 @@ instalar e escrevemos algumas partes do código.
 
 ![](thumbnail.png "Fotografia de JJ Ying no site Unsplash")
 
-Infelizmente, ainda não traduzi este artigo para português...
-Se quiseres, deixa um comentário em baixo a pedir-me para eu dar prioridade
-à tradução deste artigo.
+Infelizmente, para poupar algum tempo, ainda não traduzi este artigo para português...
+Hei de o fazer eventualmente...
+Se quiseres, deixa um comentário em baixo a pedir que eu traduza o artigo ASAP ou [submete um PR][pr] com a tua tradução.
+
+
+[pr]: https://github.com/mathspp/mathspp/blob/master/pages/02.blog/neural-networks-fundamentals-with-python-intro/item.pt.md
