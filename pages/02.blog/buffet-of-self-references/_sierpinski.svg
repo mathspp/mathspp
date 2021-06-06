@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="444">
+<g id="g"><g id="f"><g id="e"><g id="d"><g id="c"><g id="b">
+<g stroke="#eee" stroke-width=".3" fill="none" id="a">
+<path d="m254 3.464h4l-0.5-0.866-0.5 0.866-0.5-0.866-0.5 0.866-0.5-0.866-0.5 0.866-0.5-0.866zm0.5-0.866h1m1 0h1l-0.5-0.866-0.5 0.866m-1 0l-0.5-0.866-0.5 0.866m0.5-0.866h2l-0.5-0.866-0.5 0.866-0.5-0.866zm0.5-0.866h1l-0.5-0.866z"/></g>
+<use xlink:href="#a" x="-2" y="3.464"/>
+<use xlink:href="#a" x="2" y="3.464"/></g>
+<use xlink:href="#b" x="-4" y="6.928"/>
+<use xlink:href="#b" x="4" y="6.928"/></g>
+<use xlink:href="#c" x="-8" y="13.846"/>
+<use xlink:href="#c" x="8" y="13.846"/></g>
+<use xlink:href="#d" x="-16" y="27.713"/>
+<use xlink:href="#d" x="16" y="27.713"/></g>
+<use xlink:href="#e" x="-32" y="55.426"/>
+<use xlink:href="#e" x="32" y="55.426"/></g>
+<use xlink:href="#f" x="-64" y="110.85"/>
+<use xlink:href="#f" x="64" y="110.85"/></g>
+<use xlink:href="#g" x="-128" y="221.7"/>
+<use xlink:href="#g" x="128" y="221.7"/>
+</svg>
