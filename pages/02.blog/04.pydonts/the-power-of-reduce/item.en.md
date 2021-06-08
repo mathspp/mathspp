@@ -465,6 +465,16 @@ Maybe they do this so that people don't have to deal with
 infinities in their programs?
 I honestly don't know!
 
+!!! **Edit**: I went online and [asked people][so-max-min],
+!!! and the answer that made the most sense to me is that
+!!! `max` and `min` can be used with any comparable objects,
+!!! and for other objects, the infinities might make
+!!! absolutely no sense.
+!!!
+!!! For example, `max("abc", "da")` returns `"da"`,
+!!! and when comparing strings it really makes no sense
+!!! to add `float("-inf")` to the mix.
+
 
 ## The identity element doesn't always exist
 
@@ -650,3 +660,4 @@ a single Pydon't!
 [operator]: https://docs.python.org/3/library/operator.html
 [built-in-functions-docs]: https://docs.python.org/3/library/functions.html
 [guido]: https://www.artima.com/weblogs/viewpost.jsp?thread=98196
+[so-max-min]: https://stackoverflow.com/q/67894680/2828287
