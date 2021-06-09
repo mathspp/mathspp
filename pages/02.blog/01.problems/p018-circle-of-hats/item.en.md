@@ -11,7 +11,7 @@ $n$ mathematicians with numbered party hats gather around in a circle... It is a
 
 # Foreword
 
-I was challenged to solve this problem by Roger Hui, who wrote about it in an article[[1]][roger-article] a couple of years ago.
+I was challenged to solve this problem by Roger Hui, who wrote about it in [an article][roger-article] a couple of years ago.
 
 
 # Problem statement

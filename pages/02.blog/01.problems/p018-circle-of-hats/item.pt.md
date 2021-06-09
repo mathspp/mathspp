@@ -11,7 +11,7 @@ $n$ matemáticos com chapéus de festa juntam-se num círculo para resolver um p
 
 # Prólogo
 
-Fui desafiado para resolver este problema pelo Roger Hui, que escreveu sobre o problema neste artigo[[1]][roger-article] há um par de anos.
+Fui desafiado para resolver este problema pelo Roger Hui, que escreveu sobre o problema [num artigo][roger-article] há um par de anos.
 
 
 # Enunciado do problema
