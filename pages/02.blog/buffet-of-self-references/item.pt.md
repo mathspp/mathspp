@@ -4,6 +4,8 @@ metadata:
 title: "Buffet de auto-referências"
 ---
 
+Neste artigo vou torcer um pouco a tua mente à medida que apresento alguns conceitos e objetos interessantes que fazem referência a si próprios.
+
 ===
 
 ![](thumbnail.png "")
