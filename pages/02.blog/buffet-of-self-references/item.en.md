@@ -23,7 +23,7 @@ when the goal was reached, so here we are.
 In this article I want to bring a couple of interesting things
 to your attention, hopefully showing you something new.
 However, I won't go into too much detail about the things
-I present here
+I present here.
 
 
 # The impossible collection
