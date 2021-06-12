@@ -1,0 +1,15 @@
+date: 13-06-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: https://mathspp.com/blog/problems/bridges-of-konigsberg/thumbnail.png
+process:
+    twig: true
+publish_date: 13-06-2021 13:00
+slug: bridges-of-konigsberg
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - graph theory
+      - mathematics
+      - topology
+twig_first: true
