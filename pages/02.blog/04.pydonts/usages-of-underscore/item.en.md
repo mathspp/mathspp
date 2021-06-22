@@ -832,7 +832,7 @@ How much is `n` below?
 >>> n = 99999999
 ```
 
-If you thought/said “99 billion, 999 million and 999”,
+If you thought/said “99 million, 999 thousand and 999”,
 you got it right.
 
 Now, how much is `n` now?
@@ -841,7 +841,7 @@ Now, how much is `n` now?
 >>> n = 100_000_000
 ```
 
-Is there any doubt that we are talking about 100 billion?
+Is there any doubt that we are talking about 100 nillion?
 Using `_` as a thousands separator really makes a difference here,
 and you shouldn't need any more convincing!
 But I'll just show you a little example from the Python Standard Library.
