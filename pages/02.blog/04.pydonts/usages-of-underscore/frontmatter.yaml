@@ -1,0 +1,18 @@
+date: 08-06-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: "https://mathspp.com/blog/pydonts/usages-of-underscore/thumbnail.png"
+references:
+  - "Python 3 Documentation, The Python Tutorial, Modules, “Importing * From a Package”, [https://docs.python.org/3/tutorial/modules.html#importing-from-a-package](https://docs.python.org/3/tutorial/modules.html#importing-from-a-package) [last accessed 14-06-2021];"
+  - "Python 3 Documentation, The Python Standard Library, `gettext`, [https://docs.python.org/3/library/gettext.html](https://docs.python.org/3/library/gettext.html) [last accessed 14-06-2021];"
+  - "Python 3 Documentation, The Python Standard Library, `random.expovariate`, [https://docs.python.org/3/library/random.html#random.expovariate](https://docs.python.org/3/library/random.html#random.expovariate) [last accessed 14-06-2021];"
+  - "Weisstein, Eric W. “Exponential Distribution.” From MathWorld – A Wolfram Web Resource. [https://mathworld.wolfram.com/ExponentialDistribution.html](https://mathworld.wolfram.com/ExponentialDistribution.html) [last accessed 14-06-2021];"
+  - "Bader, Dan “The Meaning of Underscores in Python”, [https://dbader.org/blog/meaning-of-underscores-in-python](https://dbader.org/blog/meaning-of-underscores-in-python) [last accessed 14-06-2021];"
+  - "Datacamp, “Role of Underscore(_) in Python”, [https://www.datacamp.com/community/tutorials/role-underscore-python](https://www.datacamp.com/community/tutorials/role-underscore-python) [last accessed 14-06-2021];"
+  - "Hackernoon, “Understanding the Underscore( _ ) of Python”, [https://hackernoon.com/understanding-the-underscore-of-python-309d1a029edc](https://hackernoon.com/understanding-the-underscore-of-python-309d1a029edc) [last accessed 14-06-2021];"
+slug: "usages-of-underscore"
+taxonomy:
+    category: [blogpost, pydont]
+    tag:
+      - "programming"
+      - "python"
