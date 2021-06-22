@@ -897,15 +897,15 @@ This Pydon't showed you that:
  - you can recover the last value of an expression in the Python REPL
  with `_`;
  - `_` has quite an impact on names when used as a prefix/suffix:
-   - `name_` is used when `name` is a reserved keyword;
+   - `name_` is a common choice for when `name` is a reserved keyword;
    - `_name` is a _convention_ to signal that `name` is an internal name
    and that users probably shouldn't mess with it;
      - `_name` won't be imported if someone uses a `from mymodule import *`
      wildcard import; and
      - this can be overriden if `_name` is added to the `__all__` list
      in `mymodule`.
-   - `__dunder__` refers to Python's internals and allows you to interact
-   with Python's syntax;
+   - dunder names (that start and end with double underscore)
+   refer to Python's internals and allow you to interact with Python's syntax;
    - `__name` is used inside classes to prevent name collisions, when you
    want to use an internal variable with a name that you are afraid users
    might override by mistake;
@@ -914,7 +914,7 @@ This Pydon't showed you that:
    - when iterating in a `for` loop where we don't care about the iteration number;
  - the new `match` statement uses `_` as the “match all” case and makes it
  a true sink because `_` can't be used to access the original value;
- - `_` is often used as an alias to a localisation function because of its
+ - `_` is often used as an alias for localisation functions because of its
  low visual impact;
  - numbers in different bases (decimal, binary, ...) can have their digits
  split by underscores to improve readability. For example, compare
