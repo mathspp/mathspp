@@ -928,7 +928,7 @@ a single Pydon't!
 [subscribe]: https://mathspp.com/subscribe
 [manifesto]: /blog/pydonts/pydont-manifesto
 [gumroad-pydonts]: https://gum.co/pydonts
-[pydont-chaining]: mathspp.com/blog/pydonts/chaining-comparison-operators
+[pydont-chaining]: /blog/pydonts/chaining-comparison-operators
 [pydont-str-repr]: /blog/pydonts/str-and-repr/
 [pydont-bool]: /blog/pydonts/truthy-falsy-and-bool
 [dir]: https://docs.python.org/3/library/functions.html#dir
