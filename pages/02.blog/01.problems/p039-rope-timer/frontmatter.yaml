@@ -1,0 +1,13 @@
+date: 27-06-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: https://mathspp.com/blog/problems/rope-timer/thumbnail.png
+process:
+    twig: true
+slug: rope-timer
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - logic
+      - mathematics
+twig_first: true
