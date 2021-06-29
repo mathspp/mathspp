@@ -67,6 +67,7 @@ THEME_QUARK:
     REMAINING_TAGS:
       SUMMARY: "Remaining Tags"
 
+
 THEME_MY_QUARK:
   BLOG:
     REFERENCES_TITLE: "References"
@@ -74,6 +75,9 @@ THEME_MY_QUARK:
     TOPICS: "Topics"
     NEXT_SESSION_DATE: "Next session"
     LAST_SESSION_DATE: "Happened on"
+  SIDEBAR:
+    SYNDICATE:
+      HEADLINE: "Feeds"
 
 FOOTER:
   ICON_TITLES:

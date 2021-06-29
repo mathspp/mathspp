@@ -80,8 +80,6 @@ THEME_QUARK:
       FEELING_LUCKY: "Sinto-me com sorte!"
     SOME_TEXT_WIDGET:
       HEADLINE: "Widget com algum texto"
-    SYNDICATE:
-      HEADLINE: "Sindicato"
 
     PLUGIN_SIMPLESEARCH:
         SEARCH_PLACEHOLDER: "O que você procura?"
@@ -123,6 +121,8 @@ THEME_MY_QUARK:
     TOPICS: "Tópicos"
     NEXT_SESSION_DATE: "Próxima sessão"
     LAST_SESSION_DATE: "Aconteceu a"
+  SYNDICATE:
+    HEADLINE: "Feeds"
 
 FOOTER:
   ICON_TITLES:
