@@ -1,3 +1,35 @@
+# v1.0.15
+## 06/16/2021
+
+1. [](#improved)
+   * Better checks against missing Flex Type inside tasks
+   * Better authorization checks, falls back to directory level authorization checks if objects do not support authorization
+1. [](#bugfix)
+   * Fixed missing handling of child_type in Flex Pages [getgrav/grav-plugin-admin#2087](https://github.com/getgrav/grav-plugin-admin/issues/2087)
+   * Added support for multiple `Exports` in a dropdown
+   * Admin is no longer a dependency of Flex Objects [#130](https://github.com/trilbymedia/grav-plugin-flex-objects/issues/130)
+   * Fixed authorization checks during page creation for users who have limited access to some pages [getgrav/grav#3382](https://github.com/getgrav/grav/issues/3382)
+   * Fixed permission check when moving a page [getgrav/grav#3382](https://github.com/getgrav/grav/issues/3382)
+
+# v1.0.14
+## 06/07/2021
+
+1. [](#improved)
+   * Added enhanced copy modal from Pages list [getgrav/grav-plugin-admin#2139](https://github.com/getgrav/grav-plugin-admin/issues/2139)
+
+# v1.0.13
+## 06/03/2021
+
+1. [](#bugfix)
+   * Fixed expert mode for Flex Pages
+
+# v1.0.12
+## 06/02/2021
+
+1. [](#bugfix)
+   * Fixed logic to get form blueprints and object, prevents events from being fired twice
+   * Fixed breadcrumb item in Pages list not translating HTML entities [#127](https://github.com/trilbymedia/grav-plugin-flex-objects/issues/127)
+
 # v1.0.11
 ## 05/24/2021
 
