@@ -9,7 +9,7 @@ references:
   - "Python 3 Documentation, Python HOWTOs, Logging HOWTO, Advanced Logging Tutorial, [https://docs.python.org/3/howto/logging.html#advanced-logging-tutorial](https://docs.python.org/3/howto/logging.html#advanced-logging-tutorial) [last accessed 29-06-2021];"
   - "Python 3 Documentation, The Python Standard Library, `calendar`, [https://docs.python.org/3/library/calendar.html](https://docs.python.org/3/library/calendar.html) [last accessed 29-06-2021];"
   - "Python 3 Documentation, The Python Standard Library, `enum`, [https://docs.python.org/3/library/enum.html](https://docs.python.org/3/library/enum.html) [last accessed 29-06-2021];"
-  - "Python 3 Documentation, Search results for the query “__name__”, [https://docs.python.org/3/search.html?q=__name__&check_keywords=yes&area=default](https://docs.python.org/3/search.html?q=__name__&check_keywords=yes&area=default) [last accessed 29-06-2021];"
+  - "Python 3 Documentation, Search results for the query “`__name__`”, [https://docs.python.org/3/search.html?q=__name__&check_keywords=yes&area=default](https://docs.python.org/3/search.html?q=__name__&check_keywords=yes&area=default) [last accessed 29-06-2021];"
 slug: "name-dunder-attribute"
 taxonomy:
     category: [blogpost, pydont]
