@@ -1,0 +1,18 @@
+date: 29-06-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: "https://mathspp.com/blog/pydonts/name-dunder-attribute/thumbnail.png"
+references:
+  - "Python 3 Documentation, The Python Standard Library, Built-in Types, Special Attributes, [https://docs.python.org/3/library/stdtypes.html?highlight=__name__#definition.__name__](https://docs.python.org/3/library/stdtypes.html?highlight=__name__#definition.__name__) [last accessed 29-06-2021];"
+  - "Python 3 Documentation, The Python Standard Library, Top-level script environment, [https://docs.python.org/3/library/__main__.html#module-__main__](https://docs.python.org/3/library/__main__.html#module-__main__) [last accessed 29-06-2021];"
+  - "Python 3 Documentation, The Python Language Reference, The import system, [https://docs.python.org/3/reference/import.html?highlight=__name__#__name__](https://docs.python.org/3/reference/import.html?highlight=__name__#__name__) [last accessed 29-06-2021];"
+  - "Python 3 Documentation, Python HOWTOs, Logging HOWTO, Advanced Logging Tutorial, [https://docs.python.org/3/howto/logging.html#advanced-logging-tutorial](https://docs.python.org/3/howto/logging.html#advanced-logging-tutorial) [last accessed 29-06-2021];"
+  - "Python 3 Documentation, The Python Standard Library, `calendar`, [https://docs.python.org/3/library/calendar.html](https://docs.python.org/3/library/calendar.html) [last accessed 29-06-2021];"
+  - "Python 3 Documentation, The Python Standard Library, `enum`, [https://docs.python.org/3/library/enum.html](https://docs.python.org/3/library/enum.html) [last accessed 29-06-2021];"
+  - "Python 3 Documentation, Search results for the query “__name__”, [https://docs.python.org/3/search.html?q=__name__&check_keywords=yes&area=default](https://docs.python.org/3/search.html?q=__name__&check_keywords=yes&area=default) [last accessed 29-06-2021];"
+slug: "name-dunder-attribute"
+taxonomy:
+    category: [blogpost, pydont]
+    tag:
+      - "programming"
+      - "python"
