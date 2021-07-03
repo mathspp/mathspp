@@ -35,16 +35,16 @@ If you need any clarification whatsoever, feel free to ask in the comment sectio
 
 # Solvers
 
-[Email me][email] your solution to get your name (or an alias) featured in here!
-
-<!--
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
-who sent me their correct solutions:
+who already sent me their correct solutions:
 
- - 
+ - Christ van W., The Netherlands;
+ - Attila K., Hungary; and
+ - Ashok M., India.
 
 (The list is in no particular order.)
--->
+
+[Email me][email] your solution to get your name (or an alias) featured in here!
 
 
 # Solution

@@ -35,16 +35,16 @@ Se precisares de clarificar alguma coisa, não hesites em perguntar na secção 
 
 # Submissões
 
-[Envia-me a tua solução][email] se quiseres o teu nome (ou um pseudónimo) nesta secção!
-
-<!--
 Parabéns a todos os que conseguiram resolver o problema e,
 em particular, aos que me enviaram as suas soluções:
 
- - 
+ - Christ van W., Países Baixos;
+ - Attila K., Hungria; and
+ - Ashok M., Índia.
 
 (A lista não está ordenada.)
--->
+
+[Envia-me a tua solução][email] se quiseres o teu nome (ou um pseudónimo) nesta secção!
 
 
 # Solução
