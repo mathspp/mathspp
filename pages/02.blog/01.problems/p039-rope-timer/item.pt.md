@@ -39,8 +39,9 @@ Parabéns a todos os que conseguiram resolver o problema e,
 em particular, aos que me enviaram as suas soluções:
 
  - Christ van W., Países Baixos;
- - Attila K., Hungria; and
- - Ashok M., Índia.
+ - Attila K., Hungria;
+ - Ashok M., Índia;
+ - David H., Estados Unidos;
 
 (A lista não está ordenada.)
 
