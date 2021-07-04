@@ -21,7 +21,7 @@ empirically that it is working.
 
 !!! The code for this article, and for the all articles of the series,
 !!! can be found in [this GitHub repository][gh-nnfwp].
-!!! Today's article will build on [v0.2][gh-nnfwp-v0_2] of that code.
+!!! This article will build upon [v0.2][gh-nnfwp-v0_2] of that code.
 !!!
 !!! If you need a refresher on what we built last time, have a quick read
 !!! [at the previous article][part2].
@@ -44,6 +44,7 @@ First things first, we need to understand _why_ we need an algorithm like backpr
 
 A neural network contains _many_ weights and bias which affect the output of the network when you feed it some input.
 The whole idea of the neural network model is that
+
   1. you feed some input to the network and get some output;
   2. you compare this output with what was the expected output;
   3. you tweak the neural network just a _tiny_ bit so that this particular input produces something that is slightly closer to the actual output;
@@ -156,6 +157,7 @@ If you, or someone else, want to know the specific equation for a specific weigh
 
 So now that we know that we really need to work our way backwards, we just need to find out a couple more things before we can really implement the method.
 The two other things we need to know are:
+
  - the derivative of the loss function;
  - the derivative of each activation function.
 
@@ -170,6 +172,7 @@ The backpropagation algorithm is a really clever algorithm because it introduces
 
 In order to derive the actual algorithm, we will try to make more clear the recursive pattern we are dealing with.
 We will be populating three lists, `dxs`, `dWs`, and `dbs`, where:
+
  - `dxs[i]` quantifies how much `xs[i]` influences the loss;
  - `dWs[i]` quantifies how much `net._layers[i]._W` influences the loss; and
  - `dbs[i]` quantifies how much `net._layers[i]._b` influences the loss.
@@ -472,7 +475,7 @@ interesting things, so for this demo let us create a separate file.
 
 # Distinguishing the quadrant of the points
 
-In a file `examples/quadrants.py` I wrote the following code:
+In a file [`examples/quadrants.py`][gh-quadrants] I wrote the following code:
 
 ```py
 import sys, pathlib
@@ -573,3 +576,4 @@ These are all the articles in this series:
 [gh-nnfwp]: https://github.com/mathspp/NNFwP
 [gh-nnfwp-v0_2]: https://github.com/mathspp/NNFwP/tree/v0.2
 [gh-nnfwp-v1_0]: https://github.com/mathspp/NNFwP/tree/v1.0
+[gh-quadrants]: https://github.com/mathspp/nnfwp/blob/main/examples/quadrants.py

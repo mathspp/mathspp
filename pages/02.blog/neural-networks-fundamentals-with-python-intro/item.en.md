@@ -15,8 +15,17 @@ and some code to serve as backbone for the remainder of the series.
 
 In this short series I will be guiding you on how to implement a neural network
 from scratch, so that you really understand how they work.
-By the time we are done, your network will be able to read images
-of handwritten digits and identify them correctly, among other things.
+
+ > By the time we are done, your network will be able to read images
+ > of handwritten digits and identify them correctly, among other things.
+
+Your network will receive an image like
+
+![](_digit_7.png "A digit 7.")
+
+and will output a `7`.
+
+Not only that, but we will also do a bunch of other cool things with our networks.
 
 It is incredible that nowadays you can just install tensorflow or pytorch or any
 other machine learning framework, and with just a couple of lines you can train
@@ -27,6 +36,16 @@ is by dissecting it, studying it and assembling it yourself.
 
 
 ## Knowledge pre-requisites
+
+When it comes to programming, I will assume you are comfortable with the basic
+concepts of Python.
+I will not be using features that are too advanced,
+but every now and then I might use modules from the Python Standard Library.
+If you don't know those modules, that's fine.
+Reading the description from the documentation should be enough to bring you
+up to speed!
+I also have a [series of blog articles][pydonts] to help you write better
+Python code, so take a look at that if you feel the need.
 
 Throughout the series I will be assuming you are familiar with the general idea
 of how neural networks work.
@@ -67,7 +86,17 @@ turns out it is much easier to implement a neural network if you do most of your
 operations in bulk, instead of doing everything by hand with `for` loops and whatnot.
 (Which is what I did the first time, and let me tell you it was *not* pretty...)
 
-Installing NumPy should be effortless, but check out [their instructions][numpy-install] in order to know the exact line you need.
+Installing NumPy should be effortless with
+
+```bash
+python -m pip install numpy
+```
+
+but check out [their instructions][numpy-install] if you need help with the installation.
+
+Every now and then, you might trip up on something that isn't working as intended...
+I know that can be frustrating, but don't forget that Google exists for this type
+of situation.
 
 
 # First lines of code
@@ -223,7 +252,7 @@ In the code above you can see that I created a column vector as a matrix with
 only one column.
 You could create the bias vector as a plain vector, but I did it like so in order
 to keep the implementation as close as possible to the mathematical calculations
-we will be doing later, and it help to have everything consistent.
+we will be doing later, and it helps to have everything consistent.
 
 You can go ahead and create a weight matrix:
 
@@ -237,7 +266,8 @@ This is not extremely interesting, and also not very helpful when dealing with
 neural networks.
 In general, these weight matrices and bias vectors are initialised with small,
 random values.
-You can look for scientific papers on what are the best practices for deciding
+When you are more comfortable around these topics,
+you can look for scientific papers on what are the best practices for deciding
 what type of randomness you want to use and how small the numbers should be,
 but I will be doing something that has worked well for me and is fairly sensible:
 we will sample the weights and the bias, so that they are drawn from a normal
@@ -303,7 +333,7 @@ or Leaky ReLU for short.
 Code speaks louder than words, so here's the implementation:
 
 ```py
-def leaky_relu(x, leaky_param = 0.1):
+def leaky_relu(x, leaky_param=0.1):
     return np.maximum(x, x*leaky_param)
 ```
 
@@ -428,3 +458,4 @@ These are all the articles in this series:
 [numpy-install]: https://numpy.org/install/
 [gh-nnfwp]: https://github.com/mathspp/NNFwP
 [gh-nnfwp-v0_1]: https://github.com/mathspp/NNFwP/tree/v0.1
+[pydonts]: /blog/pydonts

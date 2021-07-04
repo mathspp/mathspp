@@ -26,7 +26,7 @@ concept we need if we want our neural network to *learn*.
 
 !!! The code for this article, and for the all articles of the series,
 !!! can be found in [this GitHub repository][gh-nnfwp].
-!!! Today's article will build on [v0.1][gh-nnfwp-v0_1] of that code.
+!!! We will build upon [v0.1][gh-nnfwp-v0_1] of that code.
 !!!
 !!! If you need a refresher on what we built last time, have a quick read
 !!! [at the previous article][part1].
@@ -35,7 +35,7 @@ concept we need if we want our neural network to *learn*.
 # Neural network as a chain of layers
 
 In the [previous article][part1] we implemented a `Layer` class and then proceeded
-to showing how several layer instances could be chained as long as their input
+to show how several layer instances could be chained as long as their input
 and output dimensions matched.
 This is the main characterisation of a neural network:
 a sequence of layers that receives some information as input, processes it
@@ -151,7 +151,7 @@ neural networks need *training data*: several pairs of inputs and the
 correct outputs, so that we can feed the inputs to the network and compare
 the results to the expected outputs, through means of computing a loss.
 
-A common example of a loss function is the mean squared error function:
+A common example of a loss function is the mean squared error (MSE) function:
 it takes two vectors of numbers, computes the differences element by
 element (the errors), squares those errors and then computes their mean.
 Once again, code speaks louder than my words:

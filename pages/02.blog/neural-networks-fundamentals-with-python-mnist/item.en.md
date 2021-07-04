@@ -29,7 +29,7 @@ network that is able to recognise the digit in an image
 
 !!! The code for this article, and for the all articles of the series,
 !!! can be found in [this GitHub repository][gh-nnfwp].
-!!! Today's article will build on [v1.0][gh-nnfwp-v1_0] of that code.
+!!! This article will build upon [v1.0][gh-nnfwp-v1_0] of that code.
 !!!
 !!! If you need a refresher on what we built last time, have a quick read
 !!! [at the previous article][part3].
@@ -37,14 +37,18 @@ network that is able to recognise the digit in an image
 
 # Getting the data
 
-The MNIST dataset is a very well-known dataset and it is fairly
-easy to find the data online, but for your convenience I compressed
+In the world of machine learning, the MNIST dataset is very well-known
+and it is common to play around with this dataset when you are experimenting
+with a new machine learning model.
+Think of it as the “Hello, World!” of machine learning.
+
+For your convenience, I compressed the MNIST dataset
 it and made it available for download [here][mnist-csv-data]
 ([direct download link][mnist-csv-data-download]).
 
 After you decompress the data folder, you should get two files:
- - `mnist_train.csv`, a CSV file with 60.000 rows to train the network; and
- - `mnist_test.csv`, a CSV file with 10.000 rows to test the network.
+ - `mnist_train.csv`, a CSV file with 60 000 rows to train the network; and
+ - `mnist_test.csv`, a CSV file with 10 000 rows to test the network.
 
 ! If you want to follow along with me, be sure to decompress the `mnistdata`
 ! folder inside the `examples` folder, so that the two files are
@@ -109,17 +113,13 @@ go to your Python REPL and take it for a spin:
 Loading examples/mnistdata/mnist_test.csv...
 Done.
 >>> for row in range(28):
+...     if not sum(data[0, 28*row:28*(row + 1)]):
+...             continue
 ...     for col in range(28):
 ...             idx = row*28 + col
 ...             print("#" if data[0, 1+idx] else " ", end="")
 ...     print()
-... 
-
-
-
-
-
-
+...
 
       ######
       ################
@@ -154,7 +154,7 @@ to another integer, you will print another MNIST image.
 
 # Building the network
 
-If we want create a network that recognises handwritten digits,
+If we want to create a network that recognises handwritten digits,
 before being able to train the network we need to actually build one.
 For this, we will be using the components we built and implemented
 during the previous articles.
