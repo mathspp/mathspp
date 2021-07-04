@@ -42,6 +42,7 @@ em particular, aos que me enviaram as suas soluções:
  - Attila K., Hungria;
  - Ashok M., Índia;
  - David H., Estados Unidos;
+ - Greg K., Estados Unidos;
 
 (A lista não está ordenada.)
 

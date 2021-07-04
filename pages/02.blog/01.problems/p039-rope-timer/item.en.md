@@ -42,6 +42,7 @@ who already sent me their correct solutions:
  - Attila K., Hungary;
  - Ashok M., India;
  - David D., US;
+ - Greg K., US;
 
 (The list is in no particular order.)
 
