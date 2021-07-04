@@ -21,7 +21,7 @@ to some subtleties I overlooked in the previous articles.
 
 !!! The code for this article, and for the all articles of the series,
 !!! can be found in [this GitHub repository][gh-nnfwp].
-!!! Today's article will build on [v1.1][gh-nnfwp-v1_1] of that code.
+!!! This article will build upon [v1.1][gh-nnfwp-v1_1] of that code.
 
 
 # Interpreting outputs as probabilities
@@ -153,7 +153,7 @@ some loss functions are more suitable than others.
 
 ## Mean squared error
 
-The classification of handwritten digits is a classification task,
+Recognising handwritten digits is a classification task,
 which means that given some input, we want to find out the class
 that it falls into: in our case, we had ten classes – one for
 each digit.
