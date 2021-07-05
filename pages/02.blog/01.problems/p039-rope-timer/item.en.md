@@ -44,6 +44,7 @@ who already sent me their correct solutions:
  - David D., US;
  - Greg K., US;
  - Shivam T., US;
+ - Marco M., Italy;
 
 (The list is in no particular order.)
 
