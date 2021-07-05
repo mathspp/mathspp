@@ -43,6 +43,7 @@ em particular, aos que me enviaram as suas soluções:
  - Ashok M., Índia;
  - David H., Estados Unidos;
  - Greg K., Estados Unidos;
+ - Shivam T., Estados Unidos;
 
 (A lista não está ordenada.)
 
