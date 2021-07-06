@@ -1,0 +1,14 @@
+date: 06-07-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: "https://mathspp.com/blog/pydonts/does-elegance-matter/thumbnail.png"
+references:
+  - "Edsger W. Dijkstra (2012), “Selected Writings on Computing: A personal Perspective”, p.347, Springer Science & Business Media;"
+  - "Aaron W. Hsu (2017), “Beginner Patterns vs Anti-patterns in APL”, FnConf'17, [https://www.youtube.com/watch?v=v7Mt0GYHU9A](https://www.youtube.com/watch?v=v7Mt0GYHU9A) [last accessed 06-07-2021];"
+  - "Tim Peters (2002), Python mailing list thread, [https://mail.python.org/pipermail/python-list/2002-December/134521.html](https://mail.python.org/pipermail/python-list/2002-December/134521.html) [last accessed 06-07-2021];"
+slug: "does-elegance-matter"
+taxonomy:
+    category: [blogpost, pydont]
+    tag:
+      - "programming"
+      - "python"
