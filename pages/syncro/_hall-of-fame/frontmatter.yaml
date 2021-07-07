@@ -186,7 +186,8 @@ hof:
   - "Marcel Tessare, Rio Claro (Brasil) <i class='fas fa-star'></i>"
   - "Eduardo Castro, Sul de Minas (Brasil) <i class='fas fa-star'></i>"
   - "Thiago Papageorgiou, São Paulo (Brasil)"
-  - "Raquel Coelho (Portugal) <i class='fas fa-star'></i>"
+  - "Raquel Coelho, Caldas da Rainha (Portugal) <i class='fas fa-star'></i>"
+  - "Roselaine Morais Wolfshorndl (Brasil)"
 process:
   twig: true
 twig_first: true
