@@ -45,6 +45,7 @@ em particular, aos que me enviaram as suas soluções:
  - Greg K., Estados Unidos;
  - Shivam T., Estados Unidos;
  - Marco M., Itália;
+ - David H., Taiwan;
 
 (A lista não está ordenada.)
 
