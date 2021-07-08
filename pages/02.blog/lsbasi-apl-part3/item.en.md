@@ -8,8 +8,6 @@ In this blog post we will go over some significant changes, from implementing AP
 
 ===
 
-!!! I now live stream the development of the RGSPL interpreter [here](/twitch)
-!!! and then later upload the recordings to [my YouTube channel](/youtube).
 
 # Recap
 
@@ -1223,6 +1221,7 @@ These are some of the things I want to tackle next but having those complete doe
 See you next time ;)
 
 P.S.: have any questions or suggestions? Be sure to leave them in the comment section below!
+
 
 # The series
 

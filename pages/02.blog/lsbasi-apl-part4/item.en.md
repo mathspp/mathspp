@@ -7,8 +7,6 @@ improve our tokenizer and implement the primitives `⍴` and `⍤`.
 
 ===
 
-!!! I now live stream the development of the RGSPL interpreter [here](/twitch)
-!!! and then later upload the recordings to [my YouTube channel](/youtube).
 
 In the previous post I said I would be making less changes in between each blog post
 to make the blog posts smaller, but now I went back to check the changes I had

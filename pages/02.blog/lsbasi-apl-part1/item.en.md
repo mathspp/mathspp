@@ -6,8 +6,6 @@ Let's build a simple [APL][apl-wiki] interpreter! APL is an array-oriented progr
 
 ===
 
-!!! I now live stream the development of the RGSPL interpreter [here](/twitch)
-!!! and then later upload the recordings to [my YouTube channel](/youtube).
 
 ![A black and white doodle of a person in front of a computer.](./lsbasi-apl-part1-bg.png)
 
