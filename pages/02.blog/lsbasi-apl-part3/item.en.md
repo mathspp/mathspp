@@ -1224,7 +1224,12 @@ See you next time ;)
 
 P.S.: have any questions or suggestions? Be sure to leave them in the comment section below!
 
-##### All posts in this series:
+# The series
+
+This is a series that I am working slowly but steadily on.
+Feel free to ping me in the comments or over email
+if you'd like an estimate of when the next article is being published :)
+Until then, here is a list with all the articles in the series:
 
 <ul>
 {% for post in taxonomy.findTaxonomy({"tag": ["lsbasi-apl"]}) %}
