@@ -188,6 +188,8 @@ hof:
   - "Thiago Papageorgiou, São Paulo (Brasil)"
   - "Raquel Coelho, Caldas da Rainha (Portugal) <i class='fas fa-star'></i>"
   - "Roselaine Morais Wolfshorndl (Brasil)"
+  - "Tiago Marques, Albufeira (Portugal) <i class='fas fa-star'></i>"
+  - "José Silva, Leiria (Portugal) <i class='fas fa-star'></i>"
 process:
   twig: true
 twig_first: true
