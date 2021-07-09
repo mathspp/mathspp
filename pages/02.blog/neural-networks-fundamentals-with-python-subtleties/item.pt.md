@@ -1,5 +1,5 @@
 ---
-title: "Conceitos fundamentais sobre redes neuronais – adaptação para MNIST"
+title: "Conceitos fundamentais sobre redes neuronais – subtilezas"
 ---
 
 No quinto artigo desta mini série vamos corrigir algumas incongruências teóricas
