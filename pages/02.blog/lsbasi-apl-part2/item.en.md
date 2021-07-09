@@ -9,8 +9,6 @@ Today is the day! Today is the day we take our [APL][apl-wiki] programs and inte
 
 ===
 
-!!! I now live stream the development of the RGSPL interpreter [here](/twitch)
-!!! and then later upload the recordings to [my YouTube channel](/youtube).
 
 ![A black and white doodle of a person in front of a computer.](./lsbasi-apl-part2-bg.png)
 
@@ -788,7 +786,12 @@ These are some of the things I want to tackle next but having those complete doe
 
 See you next time ;)
 
-##### All posts in this series:
+# The series
+
+This is a series that I am working slowly but steadily on.
+Feel free to ping me in the comments or over email
+if you'd like an estimate of when the next article is being published :)
+Until then, here is a list with all the articles in the series:
 
 <ul>
 {% for post in taxonomy.findTaxonomy({"tag": ["lsbasi-apl"]}) %}

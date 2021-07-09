@@ -7,8 +7,6 @@ improve our tokenizer and implement the primitives `⍴` and `⍤`.
 
 ===
 
-!!! I now live stream the development of the RGSPL interpreter [here](/twitch)
-!!! and then later upload the recordings to [my YouTube channel](/youtube).
 
 In the previous post I said I would be making less changes in between each blog post
 to make the blog posts smaller, but now I went back to check the changes I had
@@ -364,6 +362,11 @@ def atop(*, aalpha, oomega):
 ```
 
 # The series
+
+This is a series that I am working slowly but steadily on.
+Feel free to ping me in the comments or over email
+if you'd like an estimate of when the next article is being published :)
+Until then, here is a list with all the articles in the series:
 
 <ul>
 {% for post in taxonomy.findTaxonomy({"tag": ["lsbasi-apl"]}) %}
