@@ -55,7 +55,53 @@ who already sent me their correct solutions:
 
 # Solution
 
-The solution to this problem will be posted here after this problem has been live for 2 weeks.
+I find this problem to be really interesting!
+The fact is that it looks like there is not much that we can do,
+because the first thing that pops into our minds is to cut the rope
+into portions, however, the problem statement tells us that the
+time that a piece of rope takes to burn will not be proportional to its length.
+Therefore, cutting the rope isn't an option.
+
+Our only other option is to actually light the rope(s) on fire,
+but that can't be _just_ it, because a rope takes 60 minutes to burn
+and we want to time 45 minutes.
+
+The next step is realising that 45 minutes is $3/4$ of an hour,
+and $3/4 = 1/2 + 1/4$.
+What is more, $1/4 = (1/2)\times(1/2)$, i.e.,
+three quarters of an hour is half an hour plus half of another half hour.
+The recurring theme here is halves.
+Therefore, it might be a good idea if we reframe the problem.
+Instead of trying to measure a specific amount of time with the burning
+of the ropes, can you do something to the rope so that it measures exactly
+half of the total time that the rope could burn for?
+
+In other words, if a rope takes a full $x$ minutes to burn,
+how could you work with that rope in order to measure $x/2$ minutes?
+
+Give it some thought.
+
+If you light up the rope on both ends,
+then it will burn for exactly half of the time!
+So, if you take a rope that can burn for 60 minutes and light
+both ends on fire, the rope will be consumed after 30 minutes.
+Now we just need to measure another 15 minutes,
+which would be super easy if we had a rope that would need
+30 minutes to burn completely, as we would just need to apply the same technique...
+
+Oh wait, can't you do something clever with the second rope
+to “turn it” into a 30 minute rope?
+
+When you light both ends of the first rope on fire at the same time,
+you can also set fire to one of the ends of the second rope.
+Therefore, when the first rope is done,
+the second rope will have been burning for 30 minutes,
+meaning a full 30 minutes are left.
+At that point in time, you just have to set fire to the _other_
+end of the second rope, effectively treating it as if it were
+a 30 minute rope.
+By doing this, the second rope will take another 15 minutes to burn entirely,
+allowing you to measure a total of 45 minutes!
 
 
 [Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly

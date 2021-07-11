@@ -1,0 +1,14 @@
+date: 11-07-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: https://mathspp.com/blog/problems/the-dozen-puzzle/thumbnail.png
+process:
+    twig: true
+slug: the-dozen-puzzle
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - combinatorics
+      - logic
+      - mathematics
+twig_first: true
