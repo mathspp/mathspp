@@ -289,6 +289,27 @@ class CrossEntropyLoss(LossFunction):
         return d
 ```
 
+! The `CrossEntropyLoss` function has another important difference,
+! when compared to the `MSELoss` function.
+! While the `MSELoss` expected a target vector,
+! the `CrossEntropyLoss` expects a scalar index.
+
+What that means is that, when training a network with the `CrossEntropyLoss`,
+instead of giving it the target column vector like we have,
+we just feed it the index of the correct class.
+
+In our `examples/mnist.py` file, that would mean changing the `train` function
+to the following:
+
+```py
+def train(net, train_data):
+    # We no longer need to compute the dictionary `ts`.
+    for i, train_row in enumerate(train_data):
+        t = train_row[0]            # <-- was   t = ts[train_row[0]]
+        x = to_col(train_row[1:])
+        net.train(x, t)
+```
+
 
 # Incorporating the changes
 
