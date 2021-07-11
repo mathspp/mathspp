@@ -4,8 +4,8 @@ metadata:
     description: "Three friends are assigned three different numbers that add up to a dozen. Can you figure out who thought of what?"
 ---
 
-Three friends think of three different numbers that add up to a dozen.
-Can you figure out who thought of what?
+Three friends are given three different numbers that add up to a dozen.
+Can you figure out everyone's numbers?
 
 
 ===
