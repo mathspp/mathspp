@@ -9,7 +9,7 @@ Consegues descobrir quem recebeu que número?
 
 ===
 
-![](thumbnail.svg)
+![](thumbnail.png "Fotografia de Kelly Neil no Unsplash")
 
 # Enunciado do problema
 

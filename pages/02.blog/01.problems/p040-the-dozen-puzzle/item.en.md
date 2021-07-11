@@ -10,7 +10,7 @@ Can you figure out who thought of what?
 
 ===
 
-![](thumbnail.svg)
+![](thumbnail.png "Photo by Kelly Neil on Unsplash")
 
 # Problem statement
 
