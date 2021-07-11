@@ -1,5 +1,5 @@
 name: LangSwitcher
-version: 1.4.3
+version: 1.5.0
 description: LangSwitcher is a [Grav](http://github.com/getgrav/grav) plugin that provides native language text links to switch between [multiple languages](http://learn.getgrav.org/content/multi-language) in Grav **v0.9.30** or greater.
 icon: globe
 author:
@@ -39,8 +39,19 @@ form:
       validate:
         type: bool
 
+    language_display:
+      type: select
+      size: small
+      label: PLUGIN_LANGSWITCHER.LANGUAGE_DISPLAY
+      help: PLUGIN_LANGSWITCHER.LANGUAGE_DISPLAY_HELP
+      default: long
+      options:
+        long: PLUGIN_LANGSWITCHER.LANGUAGE_DISPLAY_LONG
+        short: PLUGIN_LANGSWITCHER.LANGUAGE_DISPLAY_SHORT
+
     untranslated_pages_behavior:
       type: select
+      size: medium
       label: PLUGIN_LANGSWITCHER.UNTRANSLATED_PAGES_BEHAVIOR
       help: PLUGIN_LANGSWITCHER.UNTRANSLATED_PAGES_BEHAVIOR_HELP
       default: none
