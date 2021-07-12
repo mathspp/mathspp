@@ -34,14 +34,11 @@ Se precisares de clarificar alguma coisa, não hesites em perguntar na secção 
 
 # Submissões
 
-<!--
 Parabéns a todos os que conseguiram resolver o problema e,
 em particular, aos que me enviaram as suas soluções:
 
- - 
-
-(A lista não está ordenada.)
--->
+ - Ashok M., Índia;
+ - David H., Taiwan;
 
 Junta-te à comunidade e envia-me a tua solução por [email]!
 

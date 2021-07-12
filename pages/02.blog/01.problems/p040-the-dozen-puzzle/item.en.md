@@ -34,16 +34,13 @@ If you need any clarification whatsoever, feel free to ask in the comment sectio
 
 # Solvers
 
-<!--
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
 
- - 
+ - Ashok M., India;
+ - David H., Taiwan;
 
-(The list is in no particular order.)
--->
-
-Join the community of solvers and [email me][email] your solution!
+Join the list of solvers by [emailing me][email] your solution!
 
 
 # Solution
