@@ -383,7 +383,7 @@ so the two lines are aligned and make it harder to notice
 the `.upper()` vs `.lower()` going on.
 
 Now, if we work on factoring out that `.append()`,
-because that's independent of the value of `i % 2`,
+because that's independent of the value of `idx % 2`,
 we could get something like
 
 ```py
@@ -419,7 +419,7 @@ that are great for conditional assignment.
 Using a conditional expression, we rewrite the `if`-`else` as
 
 ```py
-capitalised = letter.upper() if i % 2 == 0 else letter.lower()
+capitalised = letter.upper() if idx % 2 == 0 else letter.lower()
 ```
 
 All in all, the intermediate variable is not needed
@@ -429,7 +429,7 @@ and we can write the whole thing as
 def alternate_casing(text):
     letters = []
     for idx, letter in enumerate(text):
-        letters.append(letter.upper() if i % 2 == 0 else letter.lower())
+        letters.append(letter.upper() if idx % 2 == 0 else letter.lower())
 
     return "".join(letters)
 ```
@@ -549,7 +549,7 @@ or
 ```py
 def alternate_casing(text):
     return "".join([
-        letter.lower() if i % 2 else letter.upper()
+        letter.lower() if idx % 2 else letter.upper()
         for idx, letter in enumerate(text)
     ])
 ```
@@ -571,7 +571,7 @@ or
 ```py
 def alternate_casing(text):
     return "".join(
-        letter.lower() if i % 2 else letter.upper()
+        letter.lower() if idx % 2 else letter.upper()
         for idx, letter in enumerate(text)
     )
 ```
@@ -616,7 +616,7 @@ and
 ```py
 def alternate_casing(text):
     return "".join(
-        letter.lower() if i % 2 else letter.upper()
+        letter.lower() if idx % 2 else letter.upper()
         for idx, letter in enumerate(text)
     )
 ```
