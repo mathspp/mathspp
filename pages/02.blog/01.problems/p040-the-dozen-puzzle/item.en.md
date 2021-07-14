@@ -39,6 +39,8 @@ who sent me their correct solutions:
 
  - Ashok M., India;
  - David H., Taiwan;
+ - Attila K., Hungary;
+ - Jason P., US;
 
 Join the list of solvers by [emailing me][email] your solution!
 
