@@ -192,6 +192,7 @@ hof:
   - "José Silva, Leiria (Portugal) <i class='fas fa-star'></i>"
   - "Diogo José, Porto (Portugal)"
   - "Leonardo Luguese (Brasil) <i class='fas fa-star'></i>"
+  - "Thiago Santos da Costa, Manaus (Brasil)"
 process:
   twig: true
 twig_first: true
