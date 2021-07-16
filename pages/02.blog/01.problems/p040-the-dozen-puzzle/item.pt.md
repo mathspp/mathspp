@@ -41,6 +41,7 @@ em particular, aos que me enviaram as suas soluções:
  - David H., Taiwan;
  - Attila K., Hungria;
  - Jason P., Estados Unidos;
+ - “Starsmer”, Estados Unidos;
 
 Junta-te à comunidade e envia-me a tua solução por [email]!
 

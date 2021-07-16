@@ -41,6 +41,7 @@ who sent me their correct solutions:
  - David H., Taiwan;
  - Attila K., Hungary;
  - Jason P., US;
+ - “Starsmer”, US;
 
 Join the list of solvers by [emailing me][email] your solution!
 
