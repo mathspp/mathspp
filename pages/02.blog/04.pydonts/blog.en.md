@@ -4,8 +4,9 @@ metadata:
 ---
 # Pydon'ts
 
-## Write beautiful Python code
+## Write elegant Python code
 
-**Buy the book [here][book] or read the articles on the blog!**
+A series of articles that teaches you how to make the best use of the core Python features.
+The Pydon'ts are available [as an e-book][book] that you can read for free below.
 
 [book]: https://gum.co/pydonts
