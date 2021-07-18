@@ -2,6 +2,7 @@ date: 01-11-2020
 metadata:
     author: Rodrigo Girão Serrão
     og:image: https://mathspp.com/blog/problems/coprimes-in-the-crowd/crowd.jpg
+    twitter:image: https://mathspp.com/blog/problems/coprimes-in-the-crowd/crowd.jpg
 process:
     twig: true
 slug: coprimes-in-the-crowd

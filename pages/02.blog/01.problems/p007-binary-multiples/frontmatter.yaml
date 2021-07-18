@@ -2,6 +2,7 @@ date: 26-02-2018
 metadata:
     author: Rodrigo Girão Serrão
     og:image: https://mathspp.com/blog/problems/binary-multiples/binary_img.jpg
+    twitter:image: https://mathspp.com/blog/problems/binary-multiples/binary_img.jpg
 process:
     twig: true
 slug: binary-multiples

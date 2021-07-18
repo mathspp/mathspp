@@ -2,6 +2,7 @@ date: 11-07-2021
 metadata:
     author: Rodrigo Girão Serrão
     og:image: https://mathspp.com/blog/problems/the-dozen-puzzle/thumbnail.png
+    twitter:image: https://mathspp.com/blog/problems/the-dozen-puzzle/thumbnail.png
 process:
     twig: true
 slug: the-dozen-puzzle

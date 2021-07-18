@@ -2,6 +2,7 @@ date: 06-11-2017
 metadata:
     description: In this blog post I will challenge you with an interesting problem...
     og:image: https://mathspp.com/blog/bag-full-of-numbers/paperbag.jpg
+    twitter:image: https://mathspp.com/blog/bag-full-of-numbers/paperbag.jpg
 process:
     twig: true
 slug: bag-full-of-numbers

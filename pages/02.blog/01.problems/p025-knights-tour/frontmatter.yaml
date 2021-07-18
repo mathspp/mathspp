@@ -2,6 +2,7 @@ date: 13-12-2020
 metadata:
     author: Rodrigo Girão Serrão
     og:image: https://mathspp.com/blog/problems/knights-tour/thumbnail.jpg
+    twitter:image: https://mathspp.com/blog/problems/knights-tour/thumbnail.jpg
 process:
     twig: true
 slug: knights-tour

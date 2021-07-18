@@ -2,6 +2,7 @@ date: 07-11-2017
 metadata:
     description: Gandalf from Lord of The Rings is the star of this brain teaser...
     og:image: https://mathspp.com/blog/bag-full-of-numbers/shire.jpg
+    twitter:image: https://mathspp.com/blog/bag-full-of-numbers/shire.jpg
 process:
     twig: true
 slug: quarrel-in-the-shire

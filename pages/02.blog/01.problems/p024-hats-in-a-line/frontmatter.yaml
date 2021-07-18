@@ -2,6 +2,7 @@ date: 29-11-2020
 metadata:
     author: Rodrigo Girão Serrão
     og:image: https://mathspp.com/blog/problems/hats-in-a-line/thumbnail.png
+    twitter:image: https://mathspp.com/blog/problems/hats-in-a-line/thumbnail.png
 process:
     twig: true
 publish_date: 29-11-2020
