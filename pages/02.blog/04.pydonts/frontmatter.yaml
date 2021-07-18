@@ -7,10 +7,10 @@ content:
         by: date
         dir: desc
 hero_classes: "parallax overlay-dark text-light "
-hero_image: python-logo-2.png
+hero_image: pydonts-thumbnail.png
 menu: Pydon'ts
 metadata:
-    og:image: "https://mathspp.com/blog/pydonts/python-logo-2.jpg"
+    og:image: "https://mathspp.com/blog/pydonts/pydonts-thumbnail.png"
 slug: pydonts
 title: Pydon'ts
 visible: true
