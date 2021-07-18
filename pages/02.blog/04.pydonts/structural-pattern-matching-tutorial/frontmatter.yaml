@@ -2,7 +2,6 @@ date: 09-03-2021
 metadata:
     author: Rodrigo Girão Serrão
     og:image: "https://mathspp.com/blog/pydonts/structural-pattern-matching-tutorial/thumbnail.png"
-    twitter:image: thumbnail.png
 references:
   - "PEP 622 -- Structural Pattern Matching, [https://www.python.org/dev/peps/pep-0622/](https://www.python.org/dev/peps/pep-0622/);"
   - "PEP 634 -- Structural Pattern Matching: Specification, [https://www.python.org/dev/peps/pep-0634/](https://www.python.org/dev/peps/pep-0634/);"
