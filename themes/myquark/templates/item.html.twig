@@ -3,6 +3,7 @@
 {% set show_breadcrumbs = header_var('show_breadcrumbs', [page, blog])|defined(true) %}
 {% set show_sidebar = header_var('show_sidebar', [page, blog])|defined(true)  %}
 {% set show_pagination = header_var('show_pagination', [page, blog])|defined(true) %}
+{% set page.header.metadata.twitter.image = page.header.metadata.og.image %}
 {% set hero_image_name = page.header.hero_image %}
 
 {% block hero %}
