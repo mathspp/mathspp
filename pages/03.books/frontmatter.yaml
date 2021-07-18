@@ -5,10 +5,11 @@ content:
     items: "@self.modular"
     order:
         custom:
-            - "_hero"
-            - "_pydonts"
-            - "_nnfwp"
+          - "_hero"
+          - "_pydonts"
+          - "_nnfwp"
 metadata:
     author: "Rodrigo Girão Serrão"
     og:image: "https://mathspp.com/education/logo_education.png"
+    twitter:image: "https://mathspp.com/education/logo_education.png"
 onpage_menu: false

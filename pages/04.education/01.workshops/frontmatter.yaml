@@ -14,5 +14,6 @@ hero_image: "heroimg.jpg"
 metadata:
     author: "Rodrigo Girão Serrão"
     og:image: "https://mathspp.com/education/logo_education.png"
+    twitter:image: "https://mathspp.com/education/logo_education.png"
 show_call_to_action: false
 show_sidebar: false

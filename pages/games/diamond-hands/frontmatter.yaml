@@ -7,5 +7,6 @@ metadata:
     author: Rodrigo Girão Serrão
     description: "In this simple game you get to experience part of what a trader's like looks like."
     og:image: "https://mathspp.com/games/diamond-hands/thumbnail.png"
+    twitter:image: "https://mathspp.com/games/diamond-hands/thumbnail.png"
 slug: diamond-hands
 title: "Diamond Hands"

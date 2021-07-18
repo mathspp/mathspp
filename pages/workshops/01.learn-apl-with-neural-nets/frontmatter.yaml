@@ -3,4 +3,5 @@ redirect: /education/workshops/learn-apl-with-neural-networks[301]
 metadata:
     author: Rodrigo Girão Serrão
     og:image: https://mathspp.com/user/pages/03.workshops/01.learn-apl-with-neural-nets/MnistExamples.png
+    twitter:image: https://mathspp.com/user/pages/03.workshops/01.learn-apl-with-neural-nets/MnistExamples.png
 slug: learn-apl-with-neural-nets

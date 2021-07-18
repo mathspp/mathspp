@@ -1,6 +1,7 @@
 date: 10-05-2021
 metadata:
     og:image: "https://mathspp.com/education/workshops/monday-python/thumbnail.png"
+    twitter:image: "https://mathspp.com/education/workshops/monday-python/thumbnail.png"
 slug: monday-python
 taxonomy:
     category: "workshop"

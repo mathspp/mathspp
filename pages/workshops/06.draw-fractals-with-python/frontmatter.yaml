@@ -3,4 +3,5 @@ redirect: /education/workshops/draw-fractals[301]
 metadata:
     author: Rodrigo Girão Serrão
     og:image: https://mathspp.com/user/pages/03.workshops/06.draw-fractals-with-python/colour_50iters.png
+    twitter:image: https://mathspp.com/user/pages/03.workshops/06.draw-fractals-with-python/colour_50iters.png
 slug: draw-fractals-with-python

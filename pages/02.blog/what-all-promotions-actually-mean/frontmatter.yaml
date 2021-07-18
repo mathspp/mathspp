@@ -1,10 +1,11 @@
 date: 30-01-2021
 metadata:
-  author: "Rodrigo Girão Serrão"
-  og:image: "https://mathspp.com/blog/what-all-promotions-actually-mean/thumbnail.png"
+    author: "Rodrigo Girão Serrão"
+    og:image: "https://mathspp.com/blog/what-all-promotions-actually-mean/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/what-all-promotions-actually-mean/thumbnail.png"
 slug: "what-all-promotions-actually-mean"
 taxonomy:
-  category: "blogpost"
-  tag:
-    - "pocket maths"
-    - "mathematics"
+    category: "blogpost"
+    tag:
+      - "pocket maths"
+      - "mathematics"

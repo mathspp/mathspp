@@ -5,12 +5,13 @@ content:
     items: '@self.modular'
     order:
         custom:
-            - _hero
-            - _highlights
-            - _hall-of-fame
+          - _hero
+          - _highlights
+          - _hall-of-fame
 metadata:
     author: Rodrigo Girão Serrão
     og:image: https://mathspp.com/syncro/_hero/header.png
+    twitter:image: https://mathspp.com/syncro/_hero/header.png
 onpage_menu: false
 slug: syncro
 title: Syncro
