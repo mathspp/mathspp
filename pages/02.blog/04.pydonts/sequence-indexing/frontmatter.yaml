@@ -2,6 +2,7 @@ date: 20-04-2021
 metadata:
     author: Rodrigo Girão Serrão
     og:image: "https://mathspp.com/blog/pydonts/sequence-indexing/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/pydonts/sequence-indexing/thumbnail.png"
 slug: "sequence-indexing"
 taxonomy:
     category: [blogpost, pydont]

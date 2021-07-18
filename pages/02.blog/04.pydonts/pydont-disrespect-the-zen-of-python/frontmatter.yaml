@@ -2,6 +2,7 @@ date: 05-01-2021
 metadata:
     author: Rodrigo Girão Serrão
     og:image: 'https://mathspp.com/blog/pydonts/pydont-disrespect-the-zen-of-python/thumbnail.png'
+    twitter:image: 'https://mathspp.com/blog/pydonts/pydont-disrespect-the-zen-of-python/thumbnail.png'
 slug: pydont-disrespect-the-zen-of-python
 taxonomy:
     category: [blogpost, pydont]

@@ -2,6 +2,7 @@ date: 13-07-2021
 metadata:
     author: Rodrigo Girão Serrão
     og:image: "https://mathspp.com/blog/pydonts/bite-sized-refactoring/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/pydonts/bite-sized-refactoring/thumbnail.png"
 references:
   - "Reddit /r/Python post “I get zero output even though there's nothing wrong with this code according to pycharm. What can be the reason? I would appreciate any help.”, [https://www.reddit.com/r/learnpython/comments/o2ko8l/i_get_zero_output_even_though_theres_nothing](https://www.reddit.com/r/learnpython/comments/o2ko8l/i_get_zero_output_even_though_theres_nothing) [last accessed 12-07-2021];"
   - "Hoekstra, Conor; “Beautiful Python Refactoring” talk at PyCon US 2020, [https://www.youtube.com/watch?v=W-lZttZhsUY](https://www.youtube.com/watch?v=W-lZttZhsUY);"

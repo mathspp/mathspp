@@ -2,6 +2,7 @@ date: 02-03-2021
 metadata:
     author: Rodrigo Girão Serrão
     og:image: "https://mathspp.com/blog/pydonts/chaining-comparison-operators/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/pydonts/chaining-comparison-operators/thumbnail.png"
 slug: "chaining-comparison-operators"
 taxonomy:
     category: [blogpost, pydont]

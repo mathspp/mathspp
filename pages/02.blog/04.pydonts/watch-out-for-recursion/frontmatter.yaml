@@ -2,6 +2,7 @@ date: 16-02-2021
 metadata:
     author: Rodrigo Girão Serrão
     og:image: "https://mathspp.com/blog/pydonts/watch-out-for-recursion/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/pydonts/watch-out-for-recursion/thumbnail.png"
 slug: "watch-out-for-recursion"
 taxonomy:
     category: [blogpost, pydont]

@@ -2,14 +2,15 @@ date: 08-06-2021
 metadata:
     author: Rodrigo Girão Serrão
     og:image: "https://mathspp.com/blog/pydonts/the-power-of-reduce/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/pydonts/the-power-of-reduce/thumbnail.png"
 references:
- - "Python 3 Documentation, The Python Standard Library, Built-in Functions, [https://docs.python.org/3/library/functions.html](https://docs.python.org/3/library/functions.html) [last accessed 07-06-2021];"
- - "Python 2 Documentation, The Python Standard Library, Built-in Functions, `reduce`, [https://docs.python.org/2.7/library/functions.html#reduce](https://docs.python.org/2.7/library/functions.html#reduce) [last accessed 06-06-2021];"
- - "Python 3 Documentation, The Python Standard Library, `functools.reduce`, [https://docs.python.org/3/library/functools.html#functools.reduce](https://docs.python.org/3/library/functools.html#functools.reduce) [last accessed 06-06-2021];"
- - "Python 3 Documentation, The Python Standard Library, `operator`, [https://docs.python.org/3/library/operator.html](https://docs.python.org/3/library/operator.html) [last accessed 07-06-2021];"
- - "Artima Weblogs, “The fate of `reduce()` in Python 3000” by Guido van Rossum, [https://www.artima.com/weblogs/viewpost.jsp?thread=98196](https://www.artima.com/weblogs/viewpost.jsp?thread=98196) [last accessed 06-06-2021];"
- - "Real Python, “Python's `reduce()`: From Functional to Pythonic Style”, [https://realpython.com/python-reduce-function/](https://realpython.com/python-reduce-function/) [last accessed 06-06-2021];"
- - "Stack Overflow, “Why don't `max` and `min` return the appropriate infinities when called with empty iterables?”, [https://stackoverflow.com/q/67894680/2828287](https://stackoverflow.com/q/67894680/2828287) [last accessed 08-06-2021];"
+  - "Python 3 Documentation, The Python Standard Library, Built-in Functions, [https://docs.python.org/3/library/functions.html](https://docs.python.org/3/library/functions.html) [last accessed 07-06-2021];"
+  - "Python 2 Documentation, The Python Standard Library, Built-in Functions, `reduce`, [https://docs.python.org/2.7/library/functions.html#reduce](https://docs.python.org/2.7/library/functions.html#reduce) [last accessed 06-06-2021];"
+  - "Python 3 Documentation, The Python Standard Library, `functools.reduce`, [https://docs.python.org/3/library/functools.html#functools.reduce](https://docs.python.org/3/library/functools.html#functools.reduce) [last accessed 06-06-2021];"
+  - "Python 3 Documentation, The Python Standard Library, `operator`, [https://docs.python.org/3/library/operator.html](https://docs.python.org/3/library/operator.html) [last accessed 07-06-2021];"
+  - "Artima Weblogs, “The fate of `reduce()` in Python 3000” by Guido van Rossum, [https://www.artima.com/weblogs/viewpost.jsp?thread=98196](https://www.artima.com/weblogs/viewpost.jsp?thread=98196) [last accessed 06-06-2021];"
+  - "Real Python, “Python's `reduce()`: From Functional to Pythonic Style”, [https://realpython.com/python-reduce-function/](https://realpython.com/python-reduce-function/) [last accessed 06-06-2021];"
+  - "Stack Overflow, “Why don't `max` and `min` return the appropriate infinities when called with empty iterables?”, [https://stackoverflow.com/q/67894680/2828287](https://stackoverflow.com/q/67894680/2828287) [last accessed 08-06-2021];"
 slug: "the-power-of-reduce"
 taxonomy:
     category: [blogpost, pydont]

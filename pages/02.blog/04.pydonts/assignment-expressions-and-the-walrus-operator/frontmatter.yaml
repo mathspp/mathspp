@@ -2,6 +2,7 @@ date: 26-01-2021
 metadata:
     author: Rodrigo Girão Serrão
     og:image: "https://mathspp.com/blog/pydonts/assignment-expressions-and-the-walrus-operator/_walrus_operator.png"
+    twitter:image: "https://mathspp.com/blog/pydonts/assignment-expressions-and-the-walrus-operator/_walrus_operator.png"
 routes:
     aliases:
       - "/blog/pydonts/pydont-abuse-the-walrus-operator"

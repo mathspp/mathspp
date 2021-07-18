@@ -2,19 +2,20 @@ date: 11-05-2021
 metadata:
     author: Rodrigo Girão Serrão
     og:image: "https://mathspp.com/blog/pydonts/mastering-sequence-slicing/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/pydonts/mastering-sequence-slicing/thumbnail.png"
 references:
- - "Python 3 Documentation, The Python Language Reference, Expressions – Slicings, [https://docs.python.org/3/reference/expressions.html#slicings](https://docs.python.org/3/reference/expressions.html#slicings) [last acessed 20-04-2021];"
- - "Python 3 Documentation, The Python Language Reference, Data Model – The Standard Type Hierarchy, [https://docs.python.org/3/reference/datamodel.html#the-standard-type-hierarchy](https://docs.python.org/3/reference/datamodel.html#the-standard-type-hierarchy) [last accessed 20-04-2021];"
- - "Python 3 Documentation, The Python Language Reference, Data Model – Emulating Container Types, [https://docs.python.org/3/reference/datamodel.html#emulating-container-types](https://docs.python.org/3/reference/datamodel.html#emulating-container-types) [last accessed 20-04-2021];"
- - "Python 3 Documentation, The Python Language Reference, Built-in Functions, `slice`, [https://docs.python.org/3/library/functions.html#slice](https://docs.python.org/3/library/functions.html#slice) [last accessed 20-04-2021];"
- - "Python 3 Documentation, The Python Language Reference, Built-in Functions, `range`, [https://docs.python.org/3/library/functions.html#func-range](https://docs.python.org/3/library/functions.html#func-range) [last accessed 03-05-2021];"
- - "Python 3 Documentation, The Python Language Reference, Built-in Functions, `filter`, [https://docs.python.org/3/library/functions.html#filter](https://docs.python.org/3/library/functions.html#filter) [last accessed 11-05-2021];"
- - "Python 3 Documentation, The Python Language Reference, Built-in Functions, `reversed`, [https://docs.python.org/3/library/functions.html#reversed](https://docs.python.org/3/library/functions.html#reversed) [last accessed 11-05-2021];"
- - "Python 3 Documentation, The Python Standard Library, `dataclasses`, [https://docs.python.org/3/library/dataclasses.html](https://docs.python.org/3/library/dataclasses.html) [11-05-2021];"
- - "Python 3 Documentation, The Python Standard Library, `itertools`, `islice`, [https://docs.python.org/3/library/itertools.html#itertools.islice](https://docs.python.org/3/library/itertools.html#itertools.islice) [11-05-2021];"
- - "Python 3 Documentation, The Python Standard Library, `urllib.parse`, `urljoin`, [https://docs.python.org/3/library/urllib.parse.html#urllib.parse.urljoin](https://docs.python.org/3/library/urllib.parse.html#urllib.parse.urljoin) [11-05-2021];"
- - "“Effective Python – 90 Specific Ways to Write Better Python”; Slatkin, Brett; ISBN 9780134853987;"
- - "Stack Overflow, “Why would I want to use itertools.islice instead of normal list slicing?”, [https://stackoverflow.com/q/32172612/2828287](https://stackoverflow.com/q/32172612/2828287) [last accessed 10-05-2021]."
+  - "Python 3 Documentation, The Python Language Reference, Expressions – Slicings, [https://docs.python.org/3/reference/expressions.html#slicings](https://docs.python.org/3/reference/expressions.html#slicings) [last acessed 20-04-2021];"
+  - "Python 3 Documentation, The Python Language Reference, Data Model – The Standard Type Hierarchy, [https://docs.python.org/3/reference/datamodel.html#the-standard-type-hierarchy](https://docs.python.org/3/reference/datamodel.html#the-standard-type-hierarchy) [last accessed 20-04-2021];"
+  - "Python 3 Documentation, The Python Language Reference, Data Model – Emulating Container Types, [https://docs.python.org/3/reference/datamodel.html#emulating-container-types](https://docs.python.org/3/reference/datamodel.html#emulating-container-types) [last accessed 20-04-2021];"
+  - "Python 3 Documentation, The Python Language Reference, Built-in Functions, `slice`, [https://docs.python.org/3/library/functions.html#slice](https://docs.python.org/3/library/functions.html#slice) [last accessed 20-04-2021];"
+  - "Python 3 Documentation, The Python Language Reference, Built-in Functions, `range`, [https://docs.python.org/3/library/functions.html#func-range](https://docs.python.org/3/library/functions.html#func-range) [last accessed 03-05-2021];"
+  - "Python 3 Documentation, The Python Language Reference, Built-in Functions, `filter`, [https://docs.python.org/3/library/functions.html#filter](https://docs.python.org/3/library/functions.html#filter) [last accessed 11-05-2021];"
+  - "Python 3 Documentation, The Python Language Reference, Built-in Functions, `reversed`, [https://docs.python.org/3/library/functions.html#reversed](https://docs.python.org/3/library/functions.html#reversed) [last accessed 11-05-2021];"
+  - "Python 3 Documentation, The Python Standard Library, `dataclasses`, [https://docs.python.org/3/library/dataclasses.html](https://docs.python.org/3/library/dataclasses.html) [11-05-2021];"
+  - "Python 3 Documentation, The Python Standard Library, `itertools`, `islice`, [https://docs.python.org/3/library/itertools.html#itertools.islice](https://docs.python.org/3/library/itertools.html#itertools.islice) [11-05-2021];"
+  - "Python 3 Documentation, The Python Standard Library, `urllib.parse`, `urljoin`, [https://docs.python.org/3/library/urllib.parse.html#urllib.parse.urljoin](https://docs.python.org/3/library/urllib.parse.html#urllib.parse.urljoin) [11-05-2021];"
+  - "“Effective Python – 90 Specific Ways to Write Better Python”; Slatkin, Brett; ISBN 9780134853987;"
+  - "Stack Overflow, “Why would I want to use itertools.islice instead of normal list slicing?”, [https://stackoverflow.com/q/32172612/2828287](https://stackoverflow.com/q/32172612/2828287) [last accessed 10-05-2021]."
 slug: "mastering-sequence-slicing"
 taxonomy:
     category: [blogpost, pydont]

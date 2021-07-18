@@ -2,6 +2,7 @@ date: 22-06-2021
 metadata:
     author: Rodrigo Girão Serrão
     og:image: "https://mathspp.com/blog/pydonts/usages-of-underscore/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/pydonts/usages-of-underscore/thumbnail.png"
 references:
   - "Python 3 Documentation, The Python Tutorial, Modules, “Importing * From a Package”, [https://docs.python.org/3/tutorial/modules.html#importing-from-a-package](https://docs.python.org/3/tutorial/modules.html#importing-from-a-package) [last accessed 14-06-2021];"
   - "Python 3 Documentation, The Python Standard Library, `gettext`, [https://docs.python.org/3/library/gettext.html](https://docs.python.org/3/library/gettext.html) [last accessed 14-06-2021];"
