@@ -1,6 +1,0 @@
-enabled: true
-jqcookie: true
-possition: top
-url: 'http://example.com/cookies'
-customcss: false
-urlcss: 'http://example.com/assets/css/style.css'
