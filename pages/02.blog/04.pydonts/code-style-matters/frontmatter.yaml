@@ -1,8 +1,8 @@
 date: 20-07-2021
 metadata:
     author: Rodrigo Girão Serrão
-    og:image: "https://mathspp.com/blog/pydonts/style-matters/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/pydonts/style-matters/thumbnail.png"
+    og:image: "https://mathspp.com/blog/pydonts/code-style-matters/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/pydonts/code-style-matters/thumbnail.png"
 references:
   - "PEP 8 -- Style Guide for Python Code, [https://www.python.org/dev/peps/pep-0008](https://www.python.org/dev/peps/pep-0008) [last accessed 20-07-2021];"
   - "`black` - The Uncompromising Code Formatter, [https://github.com/psf/black](https://github.com/psf/black) [last accessed 20-07-2021];"
@@ -10,7 +10,7 @@ references:
   - "`pydocstyle`, [http://www.pydocstyle.org/en/stable/](http://www.pydocstyle.org/en/stable/) [last accessed 20-07-2021];"
   - "`flake8`, [https://flake8.pycqa.org/en/latest/index.html](https://flake8.pycqa.org/en/latest/index.html) [last accessed 20-07-2021];"
   - "`pylint`, [https://www.pylint.org/](https://www.pylint.org/) [last accessed 20-07-2021];"
-slug: "style-matters"
+slug: "code-style-matters"
 taxonomy:
     category: [blogpost, pydont]
     tag:
