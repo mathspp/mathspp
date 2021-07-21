@@ -359,3 +359,4 @@ a single Pydon't!
 [pycodestyle]: https://pycodestyle.pycqa.org/en/latest/intro.html
 [pylint]: https://www.pylint.org/
 [europython2021]: https://ep2021.europython.eu/profiles/rodrigo-girao-serrao/
+[flake8]: https://flake8.pycqa.org/en/latest/
