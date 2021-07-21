@@ -1,1 +1,0 @@
-![](pydonts_banner.png)
