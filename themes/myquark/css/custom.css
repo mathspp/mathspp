@@ -83,6 +83,10 @@ body p:not(#footer p, .hero p, .feature-content p, .text-center) {
 nav a, .header-dark #header:not(.scrolled) .dropmenu ul ul a {
     color: #a2a9b6 !important;
 }
+/* Fix the colouring of the same navigation menu when I hover over links. */
+.header-dark #header:not(.scrolled) .dropmenu ul li a:hover {
+    color: #fff !important;
+}
 
 
 #header, body,
