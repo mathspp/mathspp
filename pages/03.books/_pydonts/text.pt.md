@@ -2,7 +2,7 @@
 
 ## Escreve código Python elegante
 
-![](pydonts.svg?classes=float-right)
+![](pydonts_cover.png?classes=float-right)
 
 O livro “Pydon'ts – Escreve código Python elegante” é uma compilação dos artigos da série “Pydon't”, que podes ler em [aqui](/blog/pydonts).
 O livro vai mostrar-te como usar cada uma das funcionalidades da linguagem Python de forma idiomática, para que possas escrever programas Python elegantes.

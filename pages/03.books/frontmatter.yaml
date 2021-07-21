@@ -6,7 +6,6 @@ content:
     order:
         custom:
           - "_hero"
-          - "_pydonts_banner"
           - "_pydonts"
           - "_nnfwp"
 metadata:
