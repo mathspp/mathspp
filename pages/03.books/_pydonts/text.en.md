@@ -1,10 +1,8 @@
 # Pydon'ts
 
-## Write beautiful Python code
+## Write elegant Python code
 
-![](pydonts.svg?classes=float-right)
-
-The “Pydon'ts – Write beautiful Python code” book is a compilation of all the “Pydon't” articles available [here](/blog/pydonts).
+The “Pydon'ts – Write elegant Python code” book is a compilation of all the “Pydon't” articles available [here](/blog/pydonts).
 The book will guide you through the core Python language, showing you how to use every single feature to write better, more elegant Python programs.
 
 Each chapter of the book guides you through a specific feature of the Python language, teaching you how to use it and then showing you good example usages of that feature with examples of real Python code: some times you even get to dive into the code that implements the Python Standard Library.
