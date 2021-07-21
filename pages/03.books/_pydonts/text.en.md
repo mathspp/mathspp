@@ -2,8 +2,6 @@
 
 ## Write elegant Python code
 
-![](pydonts_cover.svg?classes=float-right&resize=300)
-
 The “Pydon'ts – Write elegant Python code” book is a compilation of all the “Pydon't” articles available [here](/blog/pydonts).
 The book will guide you through the core Python language, showing you how to use every single feature to write better, more elegant Python programs.
 
