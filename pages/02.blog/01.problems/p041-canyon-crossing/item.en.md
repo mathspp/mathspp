@@ -36,19 +36,12 @@ If you need any clarification whatsoever, feel free to ask in the comment sectio
 
 # Solvers
 
-Know how to solve this problem?
-Be the first to join the list of solvers by [emailing me][email] your solution!
-
-<!--
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
 
- - 
-
-(The list is in no particular order.)
+ - Jairo, Brazil;
 
 Join the list of solvers by [emailing me][email] your solution!
--->
 
 
 # Solution
