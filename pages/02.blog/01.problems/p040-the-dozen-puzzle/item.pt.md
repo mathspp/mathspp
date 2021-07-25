@@ -48,7 +48,41 @@ Junta-te à comunidade e envia-me a tua solução por [email]!
 
 # Solução
 
-Uma proposta de solução vai ser publicada aqui quando tiverem passado duas semanas desde a publicação deste problema.
+Para o Bruno saber os números da Ana e do Carlos,
+o número do Bruno tem de ser grande o suficiente para que só
+haja um valor possível para o número do Carlos.
+
+Se o Bruno tivesse o número 6, então o Carlos teria de ter pelo menos
+o 7 e isso faria com que os números dos dois valessem 13,
+que já é mais que 12 – a soma total dos três números.
+No entanto, se o número do Bruno for 5, então o Bruno sabe que o Carlos
+só pode ter um 6
+(se o Carlos tivesse 7 ou mais, então o Bruno e o Carlos, juntos,
+teriam 12 ou mais)
+e portanto a Ana tem de ter o 1.
+
+Assim, concluímos que o Bruno pode adivinhar os números dos outros
+dois amigos se tiver o 5.
+
+Do ponto de vista da Ana, ter o 1 não lhe dá informação suficiente
+sobre os números do Bruno e do Carlos: eles poderiam ter um 2 e um 9,
+ou um 3 e um 8, por exemplo.
+
+Do ponto de vista do Carlos, ter o 6 também não lhe diz o suficiente
+sobre os números da Ana e do Bruno, porque eles poderiam ter um 2 e um 4,
+ou um 1 e um 5, por exemplo.
+Para não falar do facto de que o Carlos não teria maneira de saber
+qual dos outros dois é que tem o maior dos dois números.
+
+Depois do Bruno dizer que sabe os números de todos,
+então os outros dois podiam deslindar o raciocínio do Bruno
+e concluir que também sabem os números dos outros.
+
+Uma solução alternativa passaria por listar todas as combinações
+possíveis e procurar pela combinação que atribui um número único ao Bruno.
+Por outras palavras, poderíamos atravessar os números todos de 1 a 12 e perguntar
+“se o Bruno tivesse este número, de quantas maneiras diferentes
+é que poderíamos atribuir números à Alice e ao Carlos?”.
 
 
 Este problema foi retirado [desta publicação no Reddit][source],

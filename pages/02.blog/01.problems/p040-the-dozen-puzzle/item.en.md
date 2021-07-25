@@ -48,12 +48,37 @@ Join the list of solvers by [emailing me][email] your solution!
 
 # Solution
 
-The solution to this problem will be posted here after this problem has been live for 2 weeks.
+For Bob to know Alice's and Charlie's numbers,
+Bob's number must be big enough so that Charlie's number doesn't have much wiggle room.
+
+If Bob had the number 6, then Charlie would have at least 7 and their two numbers would add up to 13,
+which is already above 12.
+However, if Bob's number is 5, then Bob knows that Charlie can only have a 6
+(if Charlie had 7 or more, then Bob and Charlie alone would add up to 12 or more)
+and hence Alice has to have a 1.
+
+Thus, we conclude that Bob can guess everyone's numbers if Bob is given the 5.
+
+From Alice's point of view, holding a 1 doesn't give her enough information
+to deduce what Bob and Charlie have, because they could have 2 and 9, for example,
+or 3 and 8.
+
+From Charlie's point of view, holding a 6 doesn't give him enough information
+to deduce what Alice and Bob have, because they could have 1 and 5, or 2 and 4,
+for example, not to mention that Charlie wouldn't know who has the largest number.
+
+After Bob announces he knows everyone's numbers,
+the other two can reverse engineer this reasoning and discover the missing numbers as well.
+
+An alternative approach would be to list all possible number assignments
+and then look for the assignment that attributes a unique number to Bob.
+In other words, we can go through the numbers 1 to 12 and ask:
+“If Bob had this number, in how many different ways could I attribute
+numbers to Alice and Charlie?”.
 
 
 This problem was taken from [this Reddit post][source],
 and shared with permission.
-
 
 <!-- v -->
 [Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly
