@@ -1,0 +1,15 @@
+date: 11-07-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: https://mathspp.com/blog/problems/canyon-crossing/thumbnail.png
+    twitter:image: https://mathspp.com/blog/problems/canyon-crossing/thumbnail.png
+process:
+    twig: true
+slug: canyon-crossing
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - logic
+      - mathematics
+      - optimisation
+twig_first: true
