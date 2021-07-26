@@ -43,11 +43,11 @@ e também de ver filmes parvos de comédia.
 
 ### Contactos
 
-Podes enviar-me um email se carregares na @ que está no fundo da página, que vai
-abrir uma janela para escreveres um email para o endereço rodrigo (at) mathspp (dot)
-com.
+Podes enviar-me um email para rodrigo (at) mathspp (dot) com.
 Estás à vontade para me enviar as tuas ideias, comentários, sugestões, elogios e
 críticas.
+
+Também me podes encontrar [no Twitter][twitter] ou no [LinkedIn][linkedin].
 
 
 ### <i class="fas fa-heart"></i> Apoiar o projeto
@@ -109,5 +109,5 @@ Também crio algum conteúdo visual no [Canva].
 [ezgif]: https://ezgif.com
 [Canva]: https://canva.com
 [font-awesome]: https://fontawesome.com
-[patreon]: https://patreon.com/mathspp
 [bmc]: https://buymeacoffee.com/mathspp
+[twitter]: https://twitter.com/mathsppblog

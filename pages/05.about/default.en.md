@@ -38,9 +38,10 @@ read fantasy and technical books, write code and watch silly comedy movies.
 
 ### Contacts
 
-You can drop me a line by clicking the @ at the bottom of the page, which opens
-a window for you to send an email to rodrigo (at) mathspp (dot) com.
-Feel free to drop me a line with ideas, comments, feedback, praises and criticism!
+You can drop me a line to rodrigo (at) mathspp (dot) com.
+Feel free to send me ideas, comments, feedback, praises and criticism!
+
+You can also reach out to me [on Twitter @mathsppblog][twitter] or on [LinkedIn][linkedin].
 
 
 ### <i class="fas fa-heart"></i> Support
@@ -95,5 +96,5 @@ I also create some graphical content with [Canva].
 [ezgif]: https://ezgif.com
 [Canva]: https://canva.com
 [font-awesome]: https://fontawesome.com
-[patreon]: https://patreon.com/mathspp
 [bmc]: https://buymeacoffee.com/mathspp
+[twitter]: https://twitter.com/mathsppblog
