@@ -1,6 +1,6 @@
 ---
 features:
-  - icon: fas fa-letter
+  - icon: far fa-envelope-open
     text: Get all the content on your inbox
   - icon: fas fa-users
     text: Over 600 readers
