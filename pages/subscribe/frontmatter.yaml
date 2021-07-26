@@ -3,4 +3,8 @@ content:
     order:
         custom:
           - _subscribe
+metadata:
+    author: Rodrigo Girão Serrão
+onpage_menu: false
 slug: subscribe
+title: Subscribe
