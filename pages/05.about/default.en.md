@@ -5,7 +5,7 @@ menu: About
 
 # Mathspp
 
-## Building Bridges Between Mathematics and Programming
+## Building bridges between mathematics and programming
 
 The mathspp blog started as a way to share my side projects with people.
 Not because I thought a lot of people would care about those side projects,
@@ -22,7 +22,7 @@ and programming, and also show that mathematics and programming complement each 
 !!! complementing it with programming.
 
 
-### The Author
+### The author
 
 ![A picture of my face.](rgs.jpg?resize=150,200&classes=float-right)
 
@@ -43,7 +43,7 @@ a window for you to send an email to rodrigo (at) mathspp (dot) com.
 Feel free to drop me a line with ideas, comments, feedback, praises and criticism!
 
 
-### <i class="fas fa-heart"></i> Show Your Appreciation
+### <i class="fas fa-heart"></i> Support
 
 If you are reading this, thank you *so much*.
 If you would like to support the mathspp project, one of the nicest things you could do
@@ -59,7 +59,7 @@ you can consider [buying me a slice of pizza][bmc], or maybe [supporting me on P
 for a recurring contribution that also awards you some benefits.
 
 
-### The Technologies Used
+### The technologies used
 
 The website is powered by [grav] and the content is mostly written in Markdown syntax.
 I also use some HTML/CSS/JavaScript to further customise some behaviour.
@@ -67,11 +67,10 @@ I also use some HTML/CSS/JavaScript to further customise some behaviour.
 
 ### Typography
 
-The fonts were taken from [Google Fonts][google-fonts], the headings use the [Chewy] font family,
-and the text uses [Miriam Libre][miriam-libre].
+The headings uses the [Chewy] font and the prose uses [Atkinson Hyperlegible][atkinson].
 
 
-### Images and Icons
+### Images and icons
 
 I take many free images from the [Unsplash] and [Free Images][free-images] websites.
 You should be able to see the image credit if you hover it; if you don't, let me know:
@@ -88,7 +87,7 @@ I also create some graphical content with [Canva].
 
 [linkedin]: https://linkedin.com/in/rodrigo-girão-serrão
 [grav]: https://getgrav.org
-[google-fonts]: https://fonts.google.com/
+[atkinson]: https://brailleinstitute.org/freefont
 [chewy]: https://fonts.google.com/specimen/Chewy
 [miriam-libre]: https://fonts.google.com/specimen/Miriam+Libre
 [Unsplash]: https://unsplash.com

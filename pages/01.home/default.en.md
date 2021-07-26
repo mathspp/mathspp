@@ -5,7 +5,7 @@ menu: Home
 
 # Mathspp
 
-## Building Bridges Between Mathematics and Programming
+## Building bridges between mathematics and programming
 
 ![](maze.png)
 

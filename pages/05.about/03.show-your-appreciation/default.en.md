@@ -1,4 +1,4 @@
 ---
-redirect: /about#show-your-appreciation[301]
-menu: "Show Your Appreciation"
+redirect: /about#support
+menu: "Support"
 ---
