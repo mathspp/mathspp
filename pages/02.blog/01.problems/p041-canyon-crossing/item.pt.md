@@ -40,6 +40,8 @@ Parabéns a todos os que conseguiram resolver o problema e,
 em particular, aos que me enviaram as suas soluções:
 
  - Jairo, Brasil;
+ - Martin J., República Checa;
+ - David H., Taiwan;
 
 Junta-te à comunidade e envia-me a tua solução por [email]!
 
