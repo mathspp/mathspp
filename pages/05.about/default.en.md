@@ -54,9 +54,8 @@ You can also share this website with your friends, colleagues, communities you
 are a part of, so that it reaches more people who want to learn mathematics and programming.
 
 Finally, if you believe in the quality and importance of this project, and/or if you would like to make
-a material contribution to help support the costs of running this project,
-you can consider [buying me a slice of pizza][bmc], or maybe [supporting me on Patreon][patreon]
-for a recurring contribution that also awards you some benefits.
+a material contribution to help support the costs of running this project ad-free,
+you can consider [buying me a slice of pizza 🍕][bmc].
 
 
 ### The technologies used

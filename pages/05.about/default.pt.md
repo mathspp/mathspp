@@ -63,8 +63,7 @@ programação.
 
 Por fim, se acreditas na importância e na qualidade deste projeto, e/ou se gostavas
 de fazer uma contribuição material para ajudar a comportar os custos do projeto,
-talvez me possas [pagar uma fatia de pizza][bmc], ou então [subscrever o meu Patreon][patreon]
-se quiseres fazer uma contribuição recorrente que também te trará benefícios adicionais.
+talvez me possas [pagar uma fatia de pizza 🍕][bmc].
 
 
 ### Tecnologias usadas
