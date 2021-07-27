@@ -10,7 +10,7 @@ Neste Pydon't vou falar do estilo do código e de ferramentas que te podem ajuda
 
 ===
 
-![O logótipo do Python rodeado por três setas que aludem ao símbolo da reciclagem.](thumbnail.png)
+![](thumbnail.png)
 
 (Se és novo aqui e não sabes o que é uma Pydon't, então talvez queiras começar por
 ler a [Proclamação das Pydon'ts][manifesto].)
