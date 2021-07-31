@@ -195,6 +195,7 @@ hof:
   - "Thiago Santos da Costa, Manaus (Brasil)"
   - "Tomás Monge, Lisboa (Portugal)"
   - "João Felipe Pimentel, Niterói (Brasil) <i class='fas fa-star'></i>"
+  - "Ricardo Oliveira Públio, Minas Gerais (Brasil) <i class='fas fa-star'></i>"
 process:
   twig: true
 twig_first: true
