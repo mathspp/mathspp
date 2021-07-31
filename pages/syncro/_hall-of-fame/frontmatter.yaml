@@ -195,6 +195,9 @@ hof:
   - "Thiago Santos da Costa, Manaus (Brasil)"
   - "Tomás Monge, Lisboa (Portugal)"
   - "João Felipe Pimentel, Niterói (Brasil) <i class='fas fa-star'></i>"
+  - "Bruno Rosendo, Paredes (Portugal) <i class='fas fa-star'></i>"
+  - "Tiago Carreira, Lisboa (Portugal) <i class='fas fa-star'></i>"
+  - "Eric Lorenzo Bohlke, Santa Catarina (Brasil)"
 process:
   twig: true
 twig_first: true
