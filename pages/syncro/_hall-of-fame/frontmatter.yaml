@@ -205,6 +205,7 @@ hof:
   - "André Martinez, Rio de Janeiro (Brasil)"
   - "João Leonardo Sousa (Brasil)"
   - "Arthur Nunes Moreira (Brasil)"
+  - "Paulo Pestana (Brasil)"
 process:
   twig: true
 twig_first: true
