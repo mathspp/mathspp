@@ -55,8 +55,7 @@ Junta-te à comunidade e envia-me a tua solução por [email]!
 Uma proposta de solução vai ser publicada aqui quando tiverem passado duas semanas desde a publicação deste problema.
 
 
-Não te esqueças de [subscrever a newsletter][subscribe] para receberes os problemas diretamente na tua caixa de correio,
-e deixa a tua reação a este problema em baixo.
+Não te esqueças de [subscrever a newsletter][subscribe] para receberes os problemas diretamente na tua caixa de correio.
 
 [email]: mailto:rodrigo@mathspp.com?subject=Resposta%20para%20{{ page.title|regex_replace(['/ /'], ['%20']) }}
 [subscribe]: https://mathspp.com/subscribe
