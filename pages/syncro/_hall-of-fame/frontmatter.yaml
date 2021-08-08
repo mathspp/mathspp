@@ -195,6 +195,18 @@ hof:
   - "Thiago Santos da Costa, Manaus (Brasil)"
   - "Tomás Monge, Lisboa (Portugal)"
   - "João Felipe Pimentel, Niterói (Brasil) <i class='fas fa-star'></i>"
+  - "Gustavo Mendes, Ponta Grossa (Brasil)"
+  - "Felipe Luna, Florianópolis (Brasil)"
+  - "Kika Oliva, Gondomar (Portugal) <i class='fas fa-star'></i>"
+  - "Bruno Rosendo, Paredes (Portugal) <i class='fas fa-star'></i>"
+  - "Tiago Carreira, Lisboa (Portugal) <i class='fas fa-star'></i>"
+  - "Eric Lorenzo Bohlke, Santa Catarina (Brasil)"
+  - "Ricardo Oliveira Públio, Minas Gerais (Brasil) <i class='fas fa-star'></i>"
+  - "André Martinez, Rio de Janeiro (Brasil)"
+  - "João Leonardo Sousa (Brasil)"
+  - "Arthur Nunes Moreira (Brasil)"
+  - "Paulo Pestana (Brasil)"
+  - "Eric Bordignon, Rio de Janeiro (Brasil)"
 process:
   twig: true
 twig_first: true
