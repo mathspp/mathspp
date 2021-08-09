@@ -2,7 +2,6 @@ content:
     items: '@self.modular'
     order:
         custom:
-          - _subscribe
           - _highlights
 metadata:
     author: Rodrigo Girão Serrão
