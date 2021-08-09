@@ -8,8 +8,6 @@ features:
     text: Sê o primeiro a saber das novidades
 ---
 
-# Newsletter Mathspp
-
 Junta-te a uma comunidade de mais de 600 pessoas curiosas que gostam
 de se manter atualizadas em relação a todos os artigos que eu escrevo.
 Também partilho novidades sobre os outros materiais educativos que eu produzo,

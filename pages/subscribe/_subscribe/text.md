@@ -1,3 +1,5 @@
+Mathspp Newsletter
+
 <div id="mc_embed_signup">
 <form action="https://mathspp.us18.list-manage.com/subscribe/post?u=3452fe1e5ab6016adba929cce&amp;id=e55ac21342" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">

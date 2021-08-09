@@ -8,8 +8,6 @@ features:
     text: Be the first to know what's new
 ---
 
-# Mathspp newsletter
-
 Join a community of over 600 curious people who like to stay up-to-date
 with all the articles that I write.
 I also share news about other educational content I produce,
