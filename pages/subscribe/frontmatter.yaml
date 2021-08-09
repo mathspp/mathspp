@@ -6,6 +6,8 @@ content:
           - _subscribe
 metadata:
     author: Rodrigo Girão Serrão
+    og:image: https://mathspp.com/subscribe/thumbnail.png
+    twitter:image: https://mathspp.com/subscribe/thumbnail.png
 onpage_menu: false
 slug: subscribe
 title: Subscribe
