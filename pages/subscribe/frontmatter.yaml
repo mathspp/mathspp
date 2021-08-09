@@ -2,8 +2,8 @@ content:
     items: '@self.modular'
     order:
         custom:
-          - _highlights
           - _subscribe
+          - _highlights
 metadata:
     author: Rodrigo Girão Serrão
     description: Join the hundreds that want to stay up to date with all the programming and maths articles, and all educational content I produce.
