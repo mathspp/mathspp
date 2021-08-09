@@ -5,7 +5,6 @@ content:
           - _highlights
 metadata:
     author: Rodrigo Girão Serrão
-    description: Join the hundreds that want to stay up to date with all the programming and maths articles, and all educational content I produce.
     og:image: https://mathspp.com/subscribe/thumbnail.png
     twitter:image: https://mathspp.com/subscribe/thumbnail.png
 onpage_menu: false

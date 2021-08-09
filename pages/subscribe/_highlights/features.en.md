@@ -21,6 +21,7 @@ features:
     </div>
 </form>
 </div>
+<br />
 
 Join a community of over 600 curious people who like to stay up-to-date
 with all the articles that I write.
