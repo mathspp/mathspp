@@ -57,8 +57,8 @@ However, they are not relevant for this article.
  - CAPS_LOCK_WITH_UNDERSCORES – like the one above, but with underscores separating words;
  - lowercase – all letteres of all words are lower case and there is nothing to separate consecutive words;
  - snake_case – like the one above, but with underscores separating words;
- - CamelCase – all words are put together, but their initials are capitalised to help you know where one word ends and the other begins; and
- - pascalCase – like the one above, except the very first word starts with a lower case letter as well.
+ - PascalCase – all words are put together, but their initials are capitalised to help you know where one word ends and the other begins; and
+ - camelCase – like the one above, except the very first word starts with a lower case letter as well.
 
 On top of these naming conventions, sometimes leading
 and/or trailing underscores can be added to the mix.
@@ -86,9 +86,9 @@ Remember that being consistent is more important than
 following the PEP 8 guide.
 
 
-## CamelCase
+## PascalCase
 
-You can find the CamelCase convention often on classes.
+You can find the PascalCase convention often on classes.
 That is the most common use case for this convention.
 
 What this means is that your classes will look like:
@@ -122,11 +122,11 @@ are actually using acronyms:
 `NPC` stands for non-playable character and
 `AI` stands for artificial intelligence.
 PEP 8 recommends that you capitalise all letters of
-an acronym in a CamelCase name.
+an acronym in a PascalCase name.
 Sometimes this makes it look like we are using the
 CAPSLOCK convention.
 
-Other common use cases for the CamelCase convention
+Other common use cases for the PascalCase convention
 include exceptions – which shouldn't surprise you
 because exceptions come from classes –,
 and type variables.
@@ -777,7 +777,7 @@ This Pydon't showed you that:
  the best names;
  - [PEP 8][pep8] suggests some naming conventions for your code,
    - most notably `snake_case` for almost everything; and
-   - `CamelCase` for classes and exceptions.
+   - `PascalCase` for classes and exceptions.
  - `CAPS_WITH_UNDERSCORE` is a widely accepted convention for global constants;
  - variables should be named with nouns, Boolean variables sometimes
  with adjectives, and functions with verbs;
