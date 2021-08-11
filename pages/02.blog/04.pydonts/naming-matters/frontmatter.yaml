@@ -1,0 +1,15 @@
+date: 10-08-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: "https://mathspp.com/blog/pydonts/naming-matters/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/pydonts/naming-matters/thumbnail.png"
+references:
+  - "PEP 8 -- Style Guide for Python Code, [https://www.python.org/dev/peps/pep-0008](https://www.python.org/dev/peps/pep-0008) [last accessed 28-07-2021];"
+  - "Stack Overflow, “What's an example use case for a Python classmethod?”, [https://stackoverflow.com/q/5738470/2828287](https://stackoverflow.com/q/5738470/2828287) [last accessed 28-07-2021];"
+  - "testdriven.io, “Clean Code”, [https://testdriven.io/blog/clean-code-python/#naming-conventions](https://testdriven.io/blog/clean-code-python/#naming-conventions) [last accessed 10-08-2021]"
+slug: "naming-matters"
+taxonomy:
+    category: [blogpost, pydont]
+    tag:
+      - "programming"
+      - "python"
