@@ -207,6 +207,7 @@ hof:
   - "Arthur Nunes Moreira (Brasil)"
   - "Paulo Pestana (Brasil)"
   - "Eric Bordignon, Rio de Janeiro (Brasil)"
+  - "João Pedro Seibel Cervo (Brasil) <i class='fas fa-star'></i>"
 process:
   twig: true
 twig_first: true
