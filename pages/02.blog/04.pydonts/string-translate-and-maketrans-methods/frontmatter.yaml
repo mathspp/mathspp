@@ -1,0 +1,18 @@
+date: 17-08-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: "https://mathspp.com/blog/pydonts/string-translate-and-maketrans-methods/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/pydonts/string-translate-and-maketrans-methods/thumbnail.png"
+references:
+  - "Python 3 Documentation, The Python Standard Library, Built-in Types, `str.maketrans`, [https://docs.python.org/3/library/stdtypes.html#str.maketrans](https://docs.python.org/3/library/stdtypes.html#str.maketrans) [last accessed 16-08-2021];"
+  - "Python 3 Documentation, The Python Standard Library, Built-in Types, `str.translate`, [https://docs.python.org/3/library/stdtypes.html#str.translate](https://docs.python.org/3/library/stdtypes.html#str.translate) [last accessed 16-08-2021];"
+  - "Python 3 Documentation, The Python Standard Library, `zipfile`, [https://docs.python.org/3/library/zipfile.html](https://docs.python.org/3/library/zipfile.html) [last accessed 17-08-2021];"
+  - "Python 3 Documentation, The Python Standard Library, `textwrap`, [https://docs.python.org/3/library/textwrap.html](https://docs.python.org/3/library/textwrap.html) [last accessed 17-08-2021];"
+  - "Python 3 Documentation, The Python Standard Library, IDLE, [https://docs.python.org/3/library/idle.html](https://docs.python.org/3/library/idle.html) [last accessed 17-08-2021];"
+  - "Unicode, [https://home.unicode.org](https://home.unicode.org) [last accessed 17-08-2021];"
+slug: "string-translate-and-maketrans-methods"
+taxonomy:
+    category: [blogpost, pydont]
+    tag:
+      - "programming"
+      - "python"
