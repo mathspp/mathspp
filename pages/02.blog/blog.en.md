@@ -12,4 +12,4 @@ This blog has a really interesting assortment of articles on mathematics and pro
  - the [problems](./problems) I wrote to get your brain working;
  - some [twitter proofs](./twitter-proofs) of mathematical facts.
 
-You can also [subscribe to the blog newsletter](http://eepurl.com/hf2ioP).
+You can also [subscribe to the blog newsletter](/subscribe).

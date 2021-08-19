@@ -12,4 +12,4 @@ Neste blogue encontras uma coleção interessante de artigos sobre matemática e
  - os [problemas](./problems) que eu partilho para pores o teu cérebro a carburar;
  - as [provas em tweets](./twitter-proofs) de variados factos matemáticos.
 
-Também podes [subscrever a newsletter do blogue](http://eepurl.com/hf2ioP).
+Também podes [subscrever a newsletter do blogue](/subscribe).
