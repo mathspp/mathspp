@@ -2,8 +2,8 @@
 menu: Problemas
 metadata:
     description: Uma coleção de problemas e quebra-cabeças interessantes, com um problema novo a cada quinze dias.
-    og:image: https://mathspp.com/blog/problems/_thumbnail.pt.png
-    twitter:image: https://mathspp.com/blog/problems/_thumbnail.pt.png
+    og:image: https://mathspp.com/images/problems_thumbnail.pt.png
+    twitter:image: https://mathspp.com/images/problems_thumbnail.pt.png
 title: Problemas
 ---
 
