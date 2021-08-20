@@ -42,6 +42,7 @@ who sent me their correct solutions:
 
  - David H., Taiwan;
  - Gerard M., Ireland;
+ - Peter K., USA;
 
 Join the list of solvers by [emailing me][email] your solution!
 
