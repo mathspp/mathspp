@@ -42,13 +42,69 @@ em particular, aos que me enviaram as suas soluções:
  - David H., Taiwan;
  - Gerard M., Irlanda;
  - Peter K., Estados Unidos;
+ - Rodrigo H. M., México;
+ - Rita F., Portugal;
 
 Junta-te à comunidade e envia-me a tua solução por [email]!
 
 
 # Solução
 
-Uma proposta de solução vai ser publicada aqui quando tiverem passado duas semanas desde a publicação deste problema.
+Vamos tentar encontrar as minas, juntos.
+
+Esta é a grelha com que temos de trabalhar:
+
+![](_1.png)
+
+Vamos começar por olhar para o canto inferior esquerdo,
+onde estão o `3` e o `1`.
+
+O `3` tem quatro quadrados à sua beira:
+
+![](_2.png)
+
+Os dois quadrados que têm um círculo duplo estão juntos ao `1`,
+o que significa que não pode haver minas nesses dois quadrados.
+Consequentemente, os dois círculos do topo _têm_ de ter minas.
+
+![](_3.png)
+
+Já encontrámos duas minas!
+
+O `3` para onde estamos a olhar já tem duas minas colocadas,
+só falta encontrar uma.
+
+Independentemente da posição dessa mina
+(que será num dos dois círculos duplos),
+vai sempre ficar adjacente ao `1` de baixo, à esquerda.
+Isso significa que não pode haver _nenhuma_ mina entre os dois `1`
+da fila de baixo.
+
+![](_4.png)
+
+Ao eliminarmos essas duas posições,
+fica claro que o `1` de baixo, à direita,
+tem uma mina mesmo por cima.
+
+![](_5.png)
+
+Para o passo seguinte, vamos olhar para o `1` em cima e à direita.
+Esse `1` já tem uma mina adjacente (em baixo, à esquerda) o que
+significa que já não há outras minas adjacentes a esse `1`.
+
+![](_6.png)
+
+Ao eliminarmos essas posições,
+torna-se claro que o `3` da segunda fila, à direita,
+já só tem uma posição livre para a sua terceira mina.
+Assim, podemos colocar uma mina aí.
+
+![](_7.png)
+
+Ao colocarmos esta mina, concluímos o puzzle!
+Vê por ti próprio:
+
+![](_8.png)
 
 
 Não te esqueças de [subscrever a newsletter][subscribe] para receberes os problemas diretamente na tua caixa de correio.
