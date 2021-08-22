@@ -1,0 +1,16 @@
+date: 22-08-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: https://mathspp.com/blog/problems/rubiks-cube-scrambling/thumbnail.png
+    twitter:image: https://mathspp.com/blog/problems/rubiks-cube-scrambling/thumbnail.png
+process:
+    twig: true
+slug: rubiks-cube-scrambling
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - combinatorics
+      - group theory
+      - logic
+      - mathematics
+twig_first: true
