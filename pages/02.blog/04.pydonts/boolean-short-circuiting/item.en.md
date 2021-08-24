@@ -180,7 +180,7 @@ to look at the right operand to determine the value of the `or`.
 
 On the other hand, if the left operand to `or` is `True`,
 we do not need to take a look at `y` because we already know
-the final result is going to be `y`.
+the final result is going to be `True`.
 
 Let us create a simple function that returns its argument unchanged
 but that produces a side-effect of printing something to the screen:
