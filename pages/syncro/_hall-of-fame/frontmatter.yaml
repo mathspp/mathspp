@@ -210,6 +210,7 @@ hof:
   - "João Pedro Seibel Cervo (Brasil) <i class='fas fa-star'></i>"
   - "Leonel Afonso, Montreal (Canadá)"
   - "Jhonathan da Silva, Paraná (Brasil) <i class='fas fa-star'></i>"
+  - "Luan Vinicius (Brasil)"
 process:
   twig: true
 twig_first: true
