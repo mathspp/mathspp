@@ -329,7 +329,7 @@ If you do, however, then `_` will stop reflecting the result of the last express
 >>> 3 + 9
 12
 >>> _
-12
+0           # <- it still evaluates to 0!
 ```
 
 If you want to get back the magical behaviour of `_` holding the result of the last expression,
@@ -396,9 +396,9 @@ my_function(a, b=3, c=4)
 Now you can see that the `help` function also gives you the information
 stored in the docstring.
 
-!! I'll be writing a Pydon't about docstrings soon.
-!! Be sure to [subscribe to my newsletter][subscribe]
-!! so you don't miss it!
+! I'll be writing a Pydon't about docstrings soon.
+! Be sure to [subscribe to my newsletter][subscribe]
+! so you don't miss it!
 
 
 # Tips for quick hacks
@@ -493,9 +493,9 @@ Then, I use a semicolon to add the new piece of code I worked out:
 >>> names = ["John", "Anna", "Bill"]; ages = [20, 40, 30]; info_pairs = zip(ages, names)
 ```
 
-!! `zip` is an amazing tool in Python and is one of my favourite
-!! built-in functions.
-!! You can learn how to wield its power with [this Pydon't][pydont-zip].
+! `zip` is an amazing tool in Python and is one of my favourite
+! built-in functions.
+! You can learn how to wield its power with [this Pydon't][pydont-zip-up].
 
 Now I can move on to the next step, knowing that a mistake now won't be costly:
 I can reset everything by going up to the line with all the intermediate steps and run that single line.
