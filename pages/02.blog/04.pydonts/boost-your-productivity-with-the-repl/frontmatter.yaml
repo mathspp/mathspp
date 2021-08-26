@@ -6,6 +6,8 @@ metadata:
 references:
     - "Rich, [https://github.com/willmcgugan/rich](https://github.com/willmcgugan/rich) [last accessed 25-08-2021"
     - "IPython, [https://ipython.org/](https://ipython.org/) [last accessed 25-08-2021]"
+    - "Feedback with suggestions for improvements, Reddit comment, [https://www.reddit.com/r/Python/comments/pbkq3z/boost_your_productivity_with_the_repl_pydont/hadom13/](https://www.reddit.com/r/Python/comments/pbkq3z/boost_your_productivity_with_the_repl_pydont/hadom13/) [last accessed 26-08-2021];"
+    - "Stack Overflow question, “How to re import an updated package while in Python Interpreter?”, [https://stackoverflow.com/q/684171/2828287](https://stackoverflow.com/q/684171/2828287) [last accessed 26-08-2021];"
 slug: "boost-your-productivity-with-the-repl"
 taxonomy:
     category: [blogpost, pydont]

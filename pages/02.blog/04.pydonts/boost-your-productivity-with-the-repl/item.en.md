@@ -281,6 +281,29 @@ then you need to leave the REPL with `exit()`, start it again, and import things
 
 That's why some of the tips for quick hacks I'll share below are so helpful.
 
+!!! Edit: Another alternative – brought to my attention by a kind reader –
+!!! is to use `importlib.reload(module)` in Python 3.4+.
+!!! In our example, you could use `importlib.reload(hello)`:
+
+```py
+>>> import hello
+Being imported
+>>> import importlib            # Use `imp` from Python 3.0 to Python 3.3
+>>> importlib.reload(hello)
+Being imported
+<module 'hello' from 'C:\\tmp\\hello.py'>
+```
+
+We get that final line because `importlib.reload` returns the module
+it reloaded.
+
+You can take a look at [this StackOverflow question and answers][stackoverflow-importlib-reload]
+to learn a bit more about this approach.
+
+Be mindful that it may not work as you expect when you have multiple imports.
+Exiting the REPL and opening it again may be the cleanest way to reload your imports
+in those situations.
+
 
 ## REPL history
 
@@ -639,3 +662,4 @@ a single Pydon't!
 [pydont-zip-up]: /blog/pydonts/zip-up
 [rich-gh]: https://github.com/willmcgugan/rich
 [ipython]: https://ipython.org/
+[stackoverflow-importlib-reload]: https://stackoverflow.com/q/684171/2828287
