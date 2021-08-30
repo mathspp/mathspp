@@ -272,9 +272,9 @@ Being imported!
 ```
 
 Nothing happens!
-That's because Python already when through your file and knows what's in there,
+That's because Python already went through your file and knows what's in there,
 so it doesn't need to parse and run the file again.
-I can just give you the functions/variables you need.
+It can just give you the functions/variables you need.
 
 In short, if you modify variables, functions, code; and you need those changes to be reflected in the REPL,
 then you need to leave the REPL with `exit()`, start it again, and import things again.
