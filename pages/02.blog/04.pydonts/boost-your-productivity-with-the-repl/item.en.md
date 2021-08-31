@@ -16,7 +16,9 @@ In this Pydon't you'll learn how to make the best use possible of the Python REP
 
 # Introduction
 
-The REPL is a tool
+The REPL is an amazing tool that every Python programmer should really know and appreciate!
+Not only that, but you stand to gain a lot if you get used to using it and if you learn
+to make the most out of it 😉
 
 In this Pydon't, you will:
 
