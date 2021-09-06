@@ -1,0 +1,15 @@
+date: 06-09-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: https://mathspp.com/blog/problems/send-more-money/thumbnail.png
+    twitter:image: https://mathspp.com/blog/problems/send-more-money/thumbnail.png
+process:
+    twig: true
+slug: send-more-money
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - arithmetics
+      - logic
+      - mathematics
+twig_first: true
