@@ -1,4 +1,6 @@
 ---
+metadata:
+    description: "Structural pattern matching is coming in Python 3.10 and this article explores how to use it to write Pythonic code, showing the best use cases for the `match` statement."
 title: "Structural pattern matching tutorial | Pydon't"
 ---
 

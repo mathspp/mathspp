@@ -1,4 +1,6 @@
 ---
+metadata:
+    description: "Correspondência estrutural é uma funcionalidade que vai ser introduzida com Python 3.10, e este artigo mostra como a usar para escrever código elegante com a instrução `match`."
 show_call_to_action: false
 title: "Tutorial sobre correspondência estrutural | Pydon't"
 ---
