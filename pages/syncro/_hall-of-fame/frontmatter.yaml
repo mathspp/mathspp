@@ -212,6 +212,7 @@ hof:
   - "Jhonathan da Silva, Paraná (Brasil) <i class='fas fa-star'></i>"
   - "Filipe Valeriano, Coimbra (Portugal) <i class='fas fa-star'></i>"
   - "Luan Vinicius (Brasil)"
+  - "Miguel Rocha (Portugal)"
 process:
   twig: true
 twig_first: true
