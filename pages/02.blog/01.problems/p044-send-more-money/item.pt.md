@@ -22,7 +22,7 @@ Cada palavra representa um número com tantos dígitos quantos letras
 (não há 0s supérfluos à esquerda dos números) e
 letras diferentes representam dígitos diferentes.
 
-Consegues descobrir qual é o valor numérico desta soma?
+Consegues descobrir qual é o valor numérico de cada palavra?
 
 !!! Pensa um pouco!
 

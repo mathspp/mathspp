@@ -20,7 +20,7 @@ Each letter represents a unique digit,
 and each word represents a number with as many digits as letters
 (there are no leading 0s).
 
-Can you figure out the value of this simple addition?
+Can you figure out the numeric value of each word?
 
 !!! Give it some thought!
 
