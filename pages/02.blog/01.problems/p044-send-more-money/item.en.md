@@ -29,17 +29,14 @@ If you need any clarification whatsoever, feel free to ask in the comment sectio
 
 # Solvers
 
-Know how to solve this?
-Be the first to join the list of solvers by [emailing me][email] your solution!
-
-<!--
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
 
- - 
+ - [Giorgio N.](https://twitter.com/qJakc0), Italy;
+ - [B. Praveen R.](https://twitter.com/BPrvn_Rj), India;
+ - [Nishant M.](https://twitter.com/sci_c0), India;
 
 Join the list of solvers by [emailing me][email] your solution!
--->
 
 
 # Solution

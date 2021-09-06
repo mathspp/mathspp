@@ -31,18 +31,14 @@ Se precisares de clarificar alguma coisa, não hesites em perguntar na secção 
 
 # Submissões
 
-Sabes resolver este problema?
-Sê o primeiro na lista das pessoas que resolveram este problema
-ao enviares-me a tua solução por [email]!
-
-<!--
 Parabéns a todos os que conseguiram resolver o problema e,
 em particular, aos que me enviaram as suas soluções:
 
- - 
+ - [Giorgio N.](https://twitter.com/qJakc0), Itália;
+ - [B. Praveen R.](https://twitter.com/BPrvn_Rj), Índia;
+ - [Nishant M.](https://twitter.com/sci_c0), Índia;
 
 Junta-te à comunidade e envia-me a tua solução por [email]!
--->
 
 
 # Solução
