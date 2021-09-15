@@ -82,14 +82,18 @@ Let $M$ denote the permutation we are using to scramble the cube, as an element 
 
 For $m$ large enough, we have that in
 
-$$M^0, M^1, \cdots, M^m, ~ ,$$
+$$
+M^0, M^1, \cdots, M^m, ~ ,
+$$
 
 two permutations are going to be the same, $M^n = M^m$, with $n < m$.
 (This follows from the pigeonhole principle and the fact that
 there's a finite number of permutations of the Rubik's cube.)
 If $M^{-1}$ denotes the inverse permutation, then
 
-$$M^m = M^n \iff M^{m-n} = M^0 ~ .$$
+$$
+M^m = M^n \iff M^{m-n} = M^0 ~ .
+$$
 
 This shows that $M^{m - n}$ (where $m - n \geq 0$) is the solved cube.
 
@@ -111,11 +115,7 @@ Let's start from the beginning.
 
 A Rubik's cube has many, many, many different ways it can be shuffled.
 
-In fact, a shuffled Rubik's cube can be in any one of
-
- > 43,252,003,274,489,856,000
-
-positions.
+In fact, a shuffled Rubik's cube can be in any one of **43,252,003,274,489,856,000** positions.
 That's a lot!
 
 Quoting an article on this,
@@ -235,7 +235,9 @@ so take your time.
 
 Now we'll reason about the different cube states in these positions:
 
-$$M^0, ~ M^1, ~ M^2, ~ M^3, ~ M^4, \cdots $$
+$$
+M^0, ~ M^1, ~ M^2, ~ M^3, ~ M^4, \cdots 
+$$
 
 If we keep listing these positions,
 we will eventually find a position $M^m$ that is going
@@ -245,7 +247,9 @@ In other words, the position $M^m$ will be a repetition of position $M^n$.
 Now, we will focus solely on the positions that go from
 $M^0$ to $M^m$,
 
-$$M^0, ~ \cdots, ~ M^n, ~ \cdots, ~ M^m,$$
+$$
+M^0, ~ \cdots, ~ M^n, ~ \cdots, ~ M^m,
+$$
 
 and we know that $M^n = M^m$.
 
@@ -260,7 +264,9 @@ For example, L' undoes L, and L undoes L'.
 
 We can also think about a sequence where we keep undoing $M$:
 
-$$M^3 \rightarrow M^2 \rightarrow M^1 \rightarrow M^0 \rightarrow \cdots$$
+$$
+M^3 \rightarrow M^2 \rightarrow M^1 \rightarrow M^0 \rightarrow \cdots
+$$
 
 From left to right, we keep undoing $M$ once, until we get to the starting point,
 which we can represent with $M^0$.
@@ -268,7 +274,9 @@ However, if we are at the starting point and we undo $M$ again, where do we end 
 
 Looking at the exponents next to $M$, the next value seems to be $-1$:
 
-$$\cdots \rightarrow M^1 \rightarrow M^0 \rightarrow M^{-1} \rightarrow \cdots$$
+$$
+\cdots \rightarrow M^1 \rightarrow M^0 \rightarrow M^{-1} \rightarrow \cdots
+$$
 
 So, $M^{-1}$ represents the move that is opposite to $M$, the _inverse_ of $M$.
 Much like $M^3$ means we did $M$ three times,
@@ -284,7 +292,9 @@ So, if we apply the same set of moves to both representations, we should end up 
 So, what if we apply the moves $M^{-n}$ to both cubes?
 They look the same in the beginning, so they have to look the same in the end:
 
-$$M^n = M^m \implies M^n M^{-n} = M^m M^{-n} ~ .$$
+$$
+M^n = M^m \implies M^n M^{-n} = M^m M^{-n} ~ .
+$$
 
 What does $M^n M^{-n}$ mean?
 It means we did the move $M$ a total of $n$ times, and then we undid it $n$ times as well...
@@ -293,7 +303,9 @@ so $M^n M^{-n} = M^0$.
 
 If we replace $M^n M^{-n}$ with $M^0$ above, we get
 
-$$M^0 = M^m M^{-n} ~ .$$
+$$
+M^0 = M^m M^{-n} ~ .
+$$
 
 Now, can we simplify $M^m M^{-n}$?
 
@@ -314,7 +326,9 @@ which we can substitute back into the expression we had before.
 
 ## Eureka!
 
-$$M^0 = M^m M^{-n} \implies M^0 = M^{m - n} ~ .$$
+$$
+M^0 = M^m M^{-n} \implies M^0 = M^{m - n} ~ .
+$$
 
 But that's it!
 We are done!
@@ -323,7 +337,9 @@ $M^0$ is the original position – the solved cube – and we are saying that
 $M^{m - n}$ looks exactly like the solved cube!
 What is more, $m > n$, so the position $M^{m - n}$ shows up _somewhere_ in the list we had:
 
-$$M^0, ~ \cdots, ~ M^n, ~ \cdots, ~ M^m,$$
+$$
+M^0, ~ \cdots, ~ M^n, ~ \cdots, ~ M^m,
+$$
 
 This proves that, in doing the move $M$ repeatedly,
 we eventually cycle back to the original position!

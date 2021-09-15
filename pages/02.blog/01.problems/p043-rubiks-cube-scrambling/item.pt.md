@@ -76,13 +76,17 @@ e tomemos esta permutação como um elemento do grupo de permutações do cubo.
 
 Para $m$ suficientemente grande, temos que existem duas permutações iguais em
 
-$$M^0, M^1, \cdots, M^m, ~, $$
+$$
+M^0, M^1, \cdots, M^m, ~, 
+$$
 
 com $M^n = M^m$, $n < m$.
 (Isto decorre do princípio do pombal e do facto de existir apenas um número finito de permutações do cubo.)
 Se $M^{-1}$ for a permutação inversa de $M$, então
 
-$$M^m = M^n \iff M^{m-n} = M^0 ~ .$$
+$$
+M^m = M^n \iff M^{m-n} = M^0 ~ .
+$$
 
 Isto mostra que $M^{m - n}$ (com $m - n \geq 0$) é o cubo resolvido.
 
@@ -104,11 +108,7 @@ Vamos começar pelo início.
 
 Um cubo de Rubik tem imensas posições diferentes, a que chamamos permutações.
 
-Na verdade, um cubo de Rubik tem
-
- > 43,252,003,274,489,856,000
-
-permutações.
+Na verdade, um cubo de Rubik tem **43,252,003,274,489,856,000** permutações.
 Isto é imenso!
 
 De acordo com um artigo,
@@ -225,7 +225,9 @@ Esta notação é importante para a minha solução!
 
 Agora vamos pensar nos diferentes estados do cubo nas seguintes posições:
 
-$$M^0, ~ M^1, ~ M^2, ~ M^3, ~ M^4, \cdots $$
+$$
+M^0, ~ M^1, ~ M^2, ~ M^3, ~ M^4, \cdots 
+$$
 
 Se listarmos posições suficientes,
 vamos encontrar uma posição $M^m$ que será igual a uma outra posição
@@ -234,7 +236,9 @@ Por outras palavras, a posição $M^m$ será uma repetição de $M^n$.
 
 Agora vamos focar-nos somente nas posições que vão de $M^0$ a $M^m$,
 
-$$M^0, ~ \cdots, ~ M^n, ~ \cdots, ~ M^m,$$
+$$
+M^0, ~ \cdots, ~ M^n, ~ \cdots, ~ M^m,
+$$
 
 em que sabemos que $M^n = M^m$.
 
@@ -250,7 +254,9 @@ Por exemplo, L e L' são opostos um do outro.
 
 Também podemos pensar numa sequência de movimentos em que vamos desfazendo $M$:
 
-$$M^3 \rightarrow M^2 \rightarrow M^1 \rightarrow M^0 \rightarrow \cdots$$
+$$
+M^3 \rightarrow M^2 \rightarrow M^1 \rightarrow M^0 \rightarrow \cdots
+$$
 
 Da esquerda para a direita, vamos desfazendo $M$, até chegarmos ao ponto de partida, representado por $M^0$.
 No entanto, se estivermos com o cubo resolvido, e voltarmos a desfazer o movimento $M$,
@@ -259,7 +265,9 @@ onde é que vamos parar..?
 Se olharmos para a sequência dos expoentes de $M$,
 vemos que o próximo valor lógico será o $-1$:
 
-$$\cdots \rightarrow M^1 \rightarrow M^0 \rightarrow M^{-1} \rightarrow \cdots$$
+$$
+\cdots \rightarrow M^1 \rightarrow M^0 \rightarrow M^{-1} \rightarrow \cdots
+$$
 
 Assim, vemos que $M^{-1}$ representa o movimento oposto a $M$,
 o seu _inverso_.
@@ -279,7 +287,9 @@ O que acontece se aplicarmos o movimento $M^{-n}$ às duas representações do c
 As duas representações são a mesma antes dessa aplicação,
 por isso terão de se manter a mesma depois:
 
-$$M^n = M^m \implies M^n M^{-n} = M^m M^{-n} ~ .$$
+$$
+M^n = M^m \implies M^n M^{-n} = M^m M^{-n} ~ .
+$$
 
 O que é que $M^n M^{-n}$ significa?
 Significa que aplicámos o movimento $M$ um total de $n$ vezes,
@@ -289,7 +299,9 @@ pelo que $M^n M^{-n} = M^0$.
 
 Substituindo $M^n M^{-n}$ por $M^0$ em cima, dá
 
-$$M^0 = M^m M^{-n} ~ .$$
+$$
+M^0 = M^m M^{-n} ~ .
+$$
 
 Será que também podemos simplificar $M^m M^{-n}$?
 
@@ -312,7 +324,9 @@ que pode ser substituído na expressão anterior.
 
 ## Eureka!
 
-$$M^0 = M^m M^{-n} \implies M^0 = M^{m - n} ~ .$$
+$$
+M^0 = M^m M^{-n} \implies M^0 = M^{m - n} ~ .
+$$
 
 Já está!
 É isso!
@@ -322,7 +336,9 @@ e estamos a dizer que $M^{m - n}$ é igual ao cubo resolvido!
 Para além disso, $m > n$, portanto a posição $M^{m - n}$ aparece
 _algures_ na lista que tínhamos:
 
-$$M^0, ~ \cdots, ~ M^n, ~ \cdots, ~ M^m,$$
+$$
+M^0, ~ \cdots, ~ M^n, ~ \cdots, ~ M^m,
+$$
 
 Isto mostra que, fazendo $M$ repetidamente,
 conseguimos regressar à posição original!
