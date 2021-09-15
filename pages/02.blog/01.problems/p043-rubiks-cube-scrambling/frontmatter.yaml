@@ -5,6 +5,8 @@ metadata:
     twitter:image: https://mathspp.com/blog/problems/rubiks-cube-scrambling/thumbnail.png
 process:
     twig: true
+references:
+    - "Wikipedia, “Rubik's Cube”, [https://en.wikipedia.org/wiki/Rubik's_Cube#Permutations](https://en.wikipedia.org/wiki/Rubik's_Cube#Permutations) [last accessed 09-09-2021];"
 slug: rubiks-cube-scrambling
 taxonomy:
     category: [blogpost, problem]
