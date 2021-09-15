@@ -1,0 +1,8 @@
+anchors:
+    active: false
+content:
+    items:
+        taxonomy@.category: til
+    order:
+        by: date
+        dir: desc
