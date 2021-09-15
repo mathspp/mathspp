@@ -43,7 +43,7 @@ Junta-te à comunidade e envia-me a tua solução por [email]!
 
 # Solução
 
-Uma proposta de solução vai ser publicada aqui quando tiverem passado duas semanas desde a publicação deste problema.
+Uma proposta de solução vai ser publicada aqui quando tiverem passado ~~duas~~três semanas desde a publicação deste problema.
 
 
 Não te esqueças de [subscrever a newsletter][subscribe] para receberes os problemas diretamente na tua caixa de correio.
