@@ -39,7 +39,14 @@ Se tiveres um cubo de Rubik por perto, pega-lhe e tenta!
 
 Para tua conveniência, tens aqui um pequeno GIF de mim a baralhar
 o cubo, sempre com os mesmos passos.
-(Foram 3 minutos na vida real, o GIF está acelerado.)
+
+Primeiro, um excerto do processo, que mostra os movimentos que eu repeti.
+Se olhares com atenção, vês que há apenas dois movimentos diferentes que são alternados:
+
+![](_rubiks_scrambling_slow.gif)
+
+De seguida, uma versão acelerada desde o início até ao fim.
+(Demorei cerca de 3 minutos a conseguir voltar ao início através da repetição dos dois movimentos!)
 
 ![](_rubiks_scrambling.gif)
 
