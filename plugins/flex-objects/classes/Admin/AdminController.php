@@ -5,6 +5,7 @@ namespace Grav\Plugin\FlexObjects\Admin;
 use Exception;
 use Grav\Common\Cache;
 use Grav\Common\Config\Config;
+use Grav\Common\Data\Data;
 use Grav\Common\Debugger;
 use Grav\Common\Filesystem\Folder;
 use Grav\Common\Flex\Types\Pages\PageCollection;
@@ -147,8 +148,7 @@ class AdminController
             );
 
             try {
-                $grav = Grav::instance();
-                $grav->fireEvent('onFlexTask' . ucfirst($this->task), $event);
+                $this->grav->fireEvent('onFlexTask' . ucfirst($this->task), $event);
             } catch (Exception $e) {
                 /** @var Debugger $debugger */
                 $debugger = $this->grav['debugger'];
@@ -197,8 +197,7 @@ class AdminController
             );
 
             try {
-                $grav = Grav::instance();
-                $grav->fireEvent('onFlexAction' . ucfirst($this->action), $event);
+                $this->grav->fireEvent('onFlexAction' . ucfirst($this->action), $event);
             } catch (Exception $e) {
                 /** @var Debugger $debugger */
                 $debugger = $this->grav['debugger'];
@@ -380,8 +379,7 @@ class AdminController
 
                 $this->setRedirect($redirect);
 
-                $grav = Grav::instance();
-                $grav->fireEvent('onFlexAfterDelete', new Event(['type' => 'flex', 'object' => $object]));
+                $this->grav->fireEvent('onFlexAfterDelete', new Event(['type' => 'flex', 'object' => $object]));
             }
         } catch (RuntimeException $e) {
             $this->admin->setMessage($this->admin::translate(['PLUGIN_FLEX_OBJECTS.CONTROLLER.TASK_DELETE_FAILURE', $e->getMessage()]), 'error');
@@ -414,9 +412,9 @@ class AdminController
         $data = $this->data;
         $route = trim($data['route'] ?? '', '/');
 
-        // TODO: Folder name needs to be validated!
+        // TODO: Folder name needs to be validated! However we test against /="' as they are dangerous characters.
         $folder = mb_strtolower($data['folder'] ?? '');
-        if ($folder === '' || mb_strpos($folder, '/') !== false) {
+        if ($folder === '' || preg_match('![="\']!u', $folder) !== 0) {
             throw new RuntimeException('Creating folder failed, bad folder name', 400);
         }
 
@@ -477,10 +475,52 @@ class AdminController
             throw new RuntimeException('Not Found', 404);
         }
 
-        $collection = $directory->getIndex();
-        if (!($collection instanceof PageCollection || $collection instanceof PageIndex)) {
-            throw new RuntimeException('Task continue works only for pages', 400);
+        if ($directory->getFlexType() === 'pages') {
+            $this->continuePages($directory);
+        } else {
+            $this->continue($directory);
         }
+    }
+
+    protected function continue(FlexDirectoryInterface $directory): void
+    {
+        $config = $directory->getConfig('admin');
+        $supported = !empty($config['modals']['add']);
+        if (!$supported) {
+            throw new RuntimeException('Task continue is not supported by the type', 400);
+        }
+
+        $authorized = $directory->isAuthorized('create', 'admin', $this->user);
+        if (!$authorized) {
+            $this->setRedirect($this->referrerRoute->toString(true));
+
+            throw new RuntimeException($this->admin::translate('PLUGIN_ADMIN.INSUFFICIENT_PERMISSIONS_FOR_TASK') . ' add.', 403);
+        }
+
+        $this->object = $directory->createObject($this->data, '');
+
+        // Reset form, we are starting from scratch.
+        /** @var FlexForm $form */
+        $form = $this->object->getForm('', ['reset' => true]);
+
+        /** @var FlexFormFlash $flash */
+        $flash = $form->getFlash();
+        $flash->setUrl($this->getFlex()->adminRoute($this->object));
+        $flash->save(true);
+
+        $this->setRedirect($flash->getUrl());
+    }
+
+    /**
+     * Create a new page (from modal).
+     *
+     * TODO: Move pages specific logic
+     *
+     * @return void
+     */
+    protected function continuePages(FlexDirectoryInterface $directory): void
+    {
+        $collection = $directory->getIndex();
 
         $this->data['route'] = '/' . trim($this->data['route'] ?? '', '/');
         $route = trim($this->data['route'], '/');
@@ -810,10 +850,8 @@ class AdminController
                         403);
             }
 
-            $grav = Grav::instance();
-
             /** @var ServerRequestInterface $request */
-            $request = $grav['request'];
+            $request = $this->grav['request'];
 
             /** @var FlexForm $form */
             $form = $this->getForm($object);
@@ -923,8 +961,7 @@ class AdminController
                 $this->setRedirect($route->toString(true));
             }
 
-            $grav = Grav::instance();
-            $grav->fireEvent('onFlexAfterSave', new Event(['type' => 'flex', 'object' => $object]));
+            $this->grav->fireEvent('onFlexAfterSave', new Event(['type' => 'flex', 'object' => $object]));
         } catch (RuntimeException $e) {
             $this->admin->setMessage($this->admin::translate(['PLUGIN_FLEX_OBJECTS.CONTROLLER.TASK_SAVE_FAILURE', $e->getMessage()]), 'error');
 
@@ -933,7 +970,9 @@ class AdminController
                 if (null !== $data) {
                     $flash = $form->getFlash();
                     $flash->setObject($object);
-                    $flash->setData($data->toArray());
+                    if ($data instanceof Data) {
+                        $flash->setData($data->toArray());
+                    }
                     $flash->save();
                 }
             }
@@ -961,10 +1000,8 @@ class AdminController
                 throw new RuntimeException($this->admin::translate('PLUGIN_ADMIN.INSUFFICIENT_PERMISSIONS_FOR_TASK') . ' configure.', 403);
             }
 
-            $grav = Grav::instance();
-
             /** @var ServerRequestInterface $request */
-            $request = $grav['request'];
+            $request = $this->grav['request'];
 
             /** @var FlexForm $form */
             $form = $this->getDirectoryForm();
@@ -1202,7 +1239,7 @@ class AdminController
         self::$instance = $this;
 
         $this->grav = Grav::instance();
-        $this->admin = Grav::instance()['admin'];
+        $this->admin = $this->grav['admin'];
         $this->user = $this->admin->user;
 
         $this->active = false;
@@ -1217,7 +1254,6 @@ class AdminController
             return;
         }
         $target = \is_string($target) ? urldecode($target) : null;
-        $id = null;
 
         /** @var Uri $uri */
         $uri = $this->grav['uri'];
