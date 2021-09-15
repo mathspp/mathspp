@@ -1,0 +1,16 @@
+date: 14-09-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: "https://mathspp.com/blog/pydonts/set-and-frozenset/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/pydonts/set-and-frozenset/thumbnail.png"
+references:
+  - "Python 3 Docs, The Python Standard Library, Built-in Types, Set Types ― `set`, `frozenset`, [https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset](https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset) [last accessed 14-09-2021];"
+  - "Python 3 Docs, The Python Standard Library, Built-in Functions, `hash`, [https://docs.python.org/3/library/functions.html#hash](https://docs.python.org/3/library/functions.html#hash) [last accessed 14-09-2021];"
+  - "Python 3 Docs, The Python Language Reference, Special method names, `object.__hash__`, [https://docs.python.org/3/reference/datamodel.html#object.__hash__](https://docs.python.org/3/reference/datamodel.html#object.__hash__) [last accessed 14-09-2021];"
+  - "Python 3 Docs, The Python Standard Library, `argparse`, [https://docs.python.org/3/library/argparse.html](https://docs.python.org/3/library/argparse.html) [last accessed 14-09-2021];"
+slug: "set-and-frozenset"
+taxonomy:
+    category: [blogpost, pydont]
+    tag:
+      - "programming"
+      - "python"
