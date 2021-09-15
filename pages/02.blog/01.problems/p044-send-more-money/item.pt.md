@@ -37,6 +37,7 @@ em particular, aos que me enviaram as suas soluções:
  - [Giorgio N.](https://twitter.com/qJakc0), Itália;
  - [B. Praveen R.](https://twitter.com/BPrvn_Rj), Índia;
  - [Nishant M.](https://twitter.com/sci_c0), Índia;
+ - David H., Taiwan;
 
 Junta-te à comunidade e envia-me a tua solução por [email]!
 

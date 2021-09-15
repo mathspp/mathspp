@@ -35,6 +35,7 @@ who sent me their correct solutions:
  - [Giorgio N.](https://twitter.com/qJakc0), Italy;
  - [B. Praveen R.](https://twitter.com/BPrvn_Rj), India;
  - [Nishant M.](https://twitter.com/sci_c0), India;
+ - David H., Taiwan;
 
 Join the list of solvers by [emailing me][email] your solution!
 
