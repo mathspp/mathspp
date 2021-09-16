@@ -1,0 +1,13 @@
+date: 16-09-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: https://mathspp.com/blog/til/002/thumbnail.png
+    twitter:image: https://mathspp.com/blog/til/002/thumbnail.png
+process:
+    twig: true
+slug: "002"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - chess
+      - machine learning
