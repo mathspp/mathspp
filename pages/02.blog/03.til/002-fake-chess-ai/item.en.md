@@ -36,7 +36,19 @@ you might also be interested in googling [Stockfish] (a powerful chess engine)
 or [AlphaGo] (arguably the best Go player in the world – even better than professional humans)
 from [DeepMind].
 
+As far as my recollection goes, DeepMind has been doing some amazing
+work when it comes to building AIs that play “difficult” games.
+I don't remember their differences,
+but there's _at least_ AlphaGo, AlphaZero, and AlphaGo Zero...
 
+Thinking about this gets me all hyped up about reinforcement learning!
+I've written about it in the past (in my old blog, I have to revive those articles)...
+Maybe I should write about it again soon!
+
+[Stay tuned!][subscribe]
+
+
+[subscribe]: /subscribe
 [mech-turk]: https://en.wikipedia.org/wiki/Mechanical_Turk
 [deep-blue]: https://en.wikipedia.org/wiki/Deep_Blue_(chess_computer)
 [Stockfish]: https://stockfishchess.org/
