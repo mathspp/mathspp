@@ -1,0 +1,14 @@
+date: 19-09-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: https://mathspp.com/blog/problems/1-2-3/thumbnail.png
+    twitter:image: https://mathspp.com/blog/problems/1-2-3/thumbnail.png
+process:
+    twig: true
+slug: 1-2-3
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - logic
+      - mathematics
+twig_first: true
