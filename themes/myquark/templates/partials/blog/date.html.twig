@@ -1,10 +1,5 @@
-{% set show_views = show_views?: false %}
 <span class="blog-date">
     <time class="dt-published" datetime="{{ page.date|date("c") }}">
         <i class="fa fa-calendar"></i> {{ page.date|date(system.pages.dateformat.short) }}
     </time>
-    {% if show_views %}
-        &nbsp;<i class="fas fa-eye"></i> {{ viewcounts[page.route] }}
-    {% endif %}
-    <!-- <i class="fas fa-comment-dots"></i> {{ comments_in_page }} -->
 </span>
