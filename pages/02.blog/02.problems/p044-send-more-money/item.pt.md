@@ -38,6 +38,7 @@ em particular, aos que me enviaram as suas soluções:
  - [B. Praveen R.](https://twitter.com/BPrvn_Rj), Índia;
  - [Nishant M.](https://twitter.com/sci_c0), Índia;
  - David H., Taiwan;
+ - [Mattias W.](https://twitter.com/m2u_84), Alemanha;
 
 Junta-te à comunidade e envia-me a tua solução por [email]!
 
