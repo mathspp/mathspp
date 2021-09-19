@@ -52,7 +52,7 @@ the order in which you put the items in the shopping cart doesn't matter.
 The only thing that _actually_ matters is the items that are in the shopping cart.
 
 If you buy milk, chocolate, and cheese,
-it doesn't matter the ordered in which those items are registered.
+it doesn't matter the order in which those items are registered.
 What matters is that you bought milk, chocolate, and cheese.
 
 In that sense, you could say that the groceries you bought form a set:
@@ -366,6 +366,7 @@ To create a `frozenset`, you just call the appropriate class:
 ```py
 >>> groceries_ = frozenset(groceries)
 >>> # Can't add items:
+>>> groceries_.add("beans")
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 AttributeError: 'frozenset' object has no attribute 'add'
@@ -468,7 +469,7 @@ Quoting [directly from the docs](https://docs.python.org/3/reference/datamodel.h
 
  > “Common uses for sets are fast membership testing, removing duplicates from a sequence, and computing mathematical operations such as intersection, union, difference, and symmetric difference.”
 
-In short, sets are useful when the problems at hands would benefit
+In short, sets are useful when the problems at hand would benefit
 from the properties that are inherent to mathematical sets
 (element uniqueness and lack of order) and other benefits we inherit
 from those properties.
