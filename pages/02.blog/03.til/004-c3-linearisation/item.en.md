@@ -113,7 +113,7 @@ or we could just ask Python for the linearised hierarchy:
 This shows that we first look things up on `Z`, then on `K1`, then on `K2`, ...
 
 This linearised hierarchy is built by a straightforward algorithm called the “C3 linearisation algorithm”,
-that you can read [find on Wikipedia][wiki].
+that you can [find on Wikipedia][wiki].
 
 The algorithm isn't that complicated (the description is in the link above)
 and I might actually implement it in Python in the near future, just for fun.
