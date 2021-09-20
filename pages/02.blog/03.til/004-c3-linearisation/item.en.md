@@ -76,9 +76,9 @@ print(z)
 ```
 
 What's the output now?
-When we print `z`, we try to look for a `__str__` or `__repr__` implementation,
+When we print `z`, we try to look for a `__str__` or `__repr__` implementation
+(read [this article][str-and-repr] to understand why),
 and the class `Z` provides none.
-(Read [this article][str-and-repr] to understand why.)
 So, in order to print `z`, we need to go up the hierarchy and look for a way to print `z`.
 Next up in the inheritance hierarchy is `K1`, so the output is `K1`.
 
