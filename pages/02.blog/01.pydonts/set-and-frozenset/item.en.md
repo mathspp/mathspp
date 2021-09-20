@@ -757,6 +757,6 @@ a single Pydon't!
 [subscribe]: https://mathspp.com/subscribe
 [manifesto]: /blog/pydonts/pydont-manifesto
 [gumroad-pydonts]: https://gum.co/pydonts
-[pydont-dunder-name]: /blog/pydonts/dunder-attribute-name
+[pydont-dunder-name]: /blog/pydonts/name-dunder-attribute
 [docs-sets]: https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset
 [argparse]: https://docs.python.org/3/library/argparse.html
