@@ -13,7 +13,10 @@ Today I learned about an algorithm that Python uses to sort out inheritance.
 
 # C3 linearisation algorithm
 
-Take this piece of code:
+Take the following piece of code,
+which defines a series of classes where hierarchical dependencies
+are represented in the diagram above,
+where arrows indicate which classes inherit from which classes.
 
 ```py
 class O:
@@ -59,9 +62,6 @@ class Z(K1, K2, K3):
 z = Z()
 print(z)
 ```
-
-The hierarchical dependencies exhibited by these objects are represented in the diagram above,
-where arrows indicate which classes inherit from which classes.
 
 What's the output of the code above?
 If you guessed `"Z"`, you got it right!
