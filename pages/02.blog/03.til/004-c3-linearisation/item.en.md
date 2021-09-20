@@ -94,7 +94,9 @@ print(z)
 ```
 
 What's the output now?
+
 It should be `K2`.
+
 And we can keep going over this process of removing one `__repr__` at a time,
 and this shows the hierarchy that Python builds for us,
 when we have multiple inheritance at stake.
