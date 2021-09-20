@@ -12,7 +12,8 @@ references:
   - "Python 3 Documentation, The Python Standard Library, `enum`, [https://docs.python.org/3/library/enum.html](https://docs.python.org/3/library/enum.html) [last accessed 29-06-2021];"
   - "Python 3 Documentation, Search results for the query “`__name__`”, [https://docs.python.org/3/search.html?q=__name__&check_keywords=yes&area=default](https://docs.python.org/3/search.html?q=__name__&check_keywords=yes&area=default) [last accessed 29-06-2021];"
 routes:
-  - dunder-attribute-name
+    aliases:
+      - dunder-attribute-name
 slug: "name-dunder-attribute"
 taxonomy:
     category: [blogpost, pydont]
