@@ -13,7 +13,7 @@ references:
   - "Python 3 Documentation, Search results for the query “`__name__`”, [https://docs.python.org/3/search.html?q=__name__&check_keywords=yes&area=default](https://docs.python.org/3/search.html?q=__name__&check_keywords=yes&area=default) [last accessed 29-06-2021];"
 routes:
     aliases:
-      - dunder-attribute-name
+      - "/blog/pydonts/dunder-attribute-name"
 slug: "name-dunder-attribute"
 taxonomy:
     category: [blogpost, pydont]
