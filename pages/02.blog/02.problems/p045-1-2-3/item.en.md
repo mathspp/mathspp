@@ -36,6 +36,9 @@ who sent me their correct solutions:
 
  - Carlos C., Portugal;
  - Ventsislav K., Bulgaria;
+ - Reza K., Iran;
+ - Martin J., Czech Republic;
+ - Luke J, UK;
 
 Join the list of solvers by [emailing me][email] your solution!
 

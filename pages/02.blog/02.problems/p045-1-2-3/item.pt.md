@@ -32,6 +32,9 @@ em particular, aos que me enviaram as suas soluções:
 
  - Carlos C., Portugal;
  - Ventsislav K., Bulgária;
+ - Reza K., Irão;
+ - Martin J., República Checa;
+ - Luke J., Reino Unido;
 
 Junta-te à comunidade e envia-me a tua solução por [email]!
 
