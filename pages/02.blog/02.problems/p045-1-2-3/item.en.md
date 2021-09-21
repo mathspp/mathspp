@@ -38,6 +38,7 @@ who sent me their correct solutions:
  - Ventsislav K., Bulgaria;
  - Reza K., Iran;
  - Martin J., Czech Republic;
+ - Macdara M., Ireland;
  - Luke J, UK;
 
 Join the list of solvers by [emailing me][email] your solution!

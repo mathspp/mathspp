@@ -34,6 +34,7 @@ em particular, aos que me enviaram as suas soluções:
  - Ventsislav K., Bulgária;
  - Reza K., Irão;
  - Martin J., República Checa;
+ - Macdara M., Irlanda;
  - Luke J., Reino Unido;
 
 Junta-te à comunidade e envia-me a tua solução por [email]!
