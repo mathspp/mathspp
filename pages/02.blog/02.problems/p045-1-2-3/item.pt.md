@@ -36,6 +36,9 @@ em particular, aos que me enviaram as suas soluções:
  - Martin J., República Checa;
  - Macdara M., Irlanda;
  - Luke J., Reino Unido;
+ - Panicz G., Polónia;
+ - Santiago V., Estados Unidos;
+ - David H., Taiwan;
 
 Junta-te à comunidade e envia-me a tua solução por [email]!
 

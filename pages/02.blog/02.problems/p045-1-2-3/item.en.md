@@ -39,7 +39,10 @@ who sent me their correct solutions:
  - Reza K., Iran;
  - Martin J., Czech Republic;
  - Macdara M., Ireland;
- - Luke J, UK;
+ - Luke J., UK;
+ - Panicz G., Poland;
+ - Santiago V., USA;
+ - David H., Taiwan;
 
 Join the list of solvers by [emailing me][email] your solution!
 
