@@ -43,6 +43,8 @@ who sent me their correct solutions:
  - Panicz G., Poland;
  - Santiago V., USA;
  - David H., Taiwan;
+ - Pedro G., Portugal;
+ - Boro S., North Macedonia;
 
 Join the list of solvers by [emailing me][email] your solution!
 

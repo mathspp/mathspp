@@ -39,6 +39,8 @@ em particular, aos que me enviaram as suas soluções:
  - Panicz G., Polónia;
  - Santiago V., Estados Unidos;
  - David H., Taiwan;
+ - Pedro G., Portugal;
+ - Boro S., Macedónia do Norte;
 
 Junta-te à comunidade e envia-me a tua solução por [email]!
 
