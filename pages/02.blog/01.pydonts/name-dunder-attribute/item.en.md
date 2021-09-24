@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "This Pydon't walks you through the usages of the __name__ dunder method and how to use it effectively."
-title: "__name__ dunder attribute | Pydon't"
+title: "__name__ dunder attribute | Pydon't 🐍"
 ---
 
 This Pydon't walks you through the usages of the
