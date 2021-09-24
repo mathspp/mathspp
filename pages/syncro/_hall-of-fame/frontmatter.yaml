@@ -215,6 +215,7 @@ hof:
   - "Miguel Rocha (Portugal)"
   - "Marcos Vinícius Santos (Brasil)"
   - "Cezer Vicente, Brasília (Brasil)"
+  - "Luis Antunes Cabral, Lisboa (Portugal) <i class='fas fa-star'></i>"
 process:
   twig: true
 twig_first: true
