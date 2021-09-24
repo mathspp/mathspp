@@ -35,6 +35,9 @@ In this Pydon't, you will:
  - understand the main use-case for this feature; and
  - see good usages of list comprehensions in real code written by real people.
 
+I also summarised the contents of this article in a cheatsheet
+that you can get for free [from here][gumroad-cheatsheet].
+
 <!--v-->
  > You can now get your copy of the ebook “Pydon'ts – Write beautiful Python code” [on Gumroad][gumroad-pydonts]
  > to help support the series of “Pydon't” articles 💪.
@@ -432,6 +435,12 @@ Here's the main takeaway of this Pydon't, for you, on a silver platter:
 
  > “*List comprehensions are a powerful Python feature that is useful for building lists.*”
 
+
+This Pydon't was also summarised in [a free cheatsheet][gumroad-cheatsheet]:
+
+[![The cheatsheet about list comprehensions.](_cheatsheet.jpg)][gumroad-cheatsheet]
+
+
 This Pydon't showed you that:
 
  - a list comprehension has 4 parts, one of which is optional;
@@ -452,6 +461,7 @@ a single Pydon't!
 
 [subscribe]: https://mathspp.com/subscribe
 [manifesto]: /blog/pydonts/pydont-manifesto
+[gumroad-cheatsheet]: https://gum.co/cheatsheet_list_comps_101
 [gumroad-pydonts]: https://gum.co/pydonts
 [pydont-zip]: /blog/pydonts/zip-up
 [pydont-boolean-short-circuiting]: /blog/pydonts/boolean-short-circuiting
