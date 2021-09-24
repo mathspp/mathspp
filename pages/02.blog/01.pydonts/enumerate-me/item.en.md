@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "If you need to access the items of an iterable but also keep track of their indices, have you considered using enumerate?"
-title: "Enumerate me | Pydon't"
+title: "Enumerate me | Pydon't 🐍"
 ---
 
 If you need to access the items of an iterable but also keep

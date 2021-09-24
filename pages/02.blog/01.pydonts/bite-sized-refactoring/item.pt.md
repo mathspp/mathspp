@@ -2,7 +2,7 @@
 metadata:
     description: "Neste Pydon't, eu explico porque é que é importante tentarmos fazer pequenas melhorias incrementais ao nosso código, e dou dicas para facilitar esse processo."
 show_call_to_action: false
-title: "Melhorias incrementais | Pydon't"
+title: "Melhorias incrementais | Pydon't 🐍"
 ---
 
 Neste Pydon't, eu explico porque é que é importante tentarmos

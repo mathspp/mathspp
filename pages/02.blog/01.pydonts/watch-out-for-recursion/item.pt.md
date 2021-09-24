@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "Recursão pode ser um conceito muito poderoso, mas nesta Pydon't vamos falar sobre coisas com as quais temos de ter cuidado."
-title: "Cuidado com a recursão | Pydon't"
+title: "Cuidado com a recursão | Pydon't 🐍"
 ---
 
 Recursão é uma técnica que é útil para qualquer programador,

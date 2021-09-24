@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "O 'Zen of Python' é um conjunto de sugestões que deves ter sempre em mente quando programas em Python."
-title: "Pydon't desrespeites o Zen do Python"
+title: "Pydon't desrespeites o Zen do Python 🐍"
 ---
 
 O “[Zen of Python]” é um conjunto de sugestões que são impressas no teu ecrã se

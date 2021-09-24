@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "Aprende o que é que em Python são os valores 'Truthy' e 'Falsy'."
-title: "Truthy, Falsy e bool | Pydon't"
+title: "Truthy, Falsy e bool | Pydon't 🐍"
 ---
 
 Todos os objetos em Python podem ser usados em expressões que deviam

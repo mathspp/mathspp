@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "In this Pydon't you will learn the Python string methods `translate` and `maketrans`."
-title: "String translate and maketrans methods | Pydon't"
+title: "String translate and maketrans methods | Pydon't 🐍"
 ---
 
 In this Pydon't you will learn the Python string methods `translate` and `maketrans`.

@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "Este artigo explica o que é que \"Pydon'ts\" são e porque é que são importantes para quem se quer tornar num melhor programador Python."
-title: Proclamação das Pydon'ts
+title: "Proclamação das Pydon'ts 🐍"
 ---
 
 "*Pydon'ts*" são dicas curtas, objetivas e úteis de programação em Python.

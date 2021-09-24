@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "This Pydon't will teach you how to use the `set` and `frozenset` Python built-in types."
-title: "set and frozenset | Pydon't"
+title: "set and frozenset | Pydon't 🐍"
 ---
 
 This Pydon't will teach you how to use the `set` and `frozenset` Python built-in types.

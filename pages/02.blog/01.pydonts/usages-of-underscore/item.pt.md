@@ -2,7 +2,7 @@
 metadata:
     description: "O objetivo deste Pydon't é mostrar quais são as utilizações do underscore `_` em Python, e mostrar como o usar para escrever código mais idiomático.biblioteca `functools`."
 show_call_to_action: false
-title: "Utilizações do underscore | Pydon't"
+title: "Utilizações do underscore | Pydon't 🐍"
 ---
 
 O objetivo deste Pydon't é mostrar quais são as utilizações

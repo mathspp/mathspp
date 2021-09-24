@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "In this Pydon't we will take a look at the `reduce` function, which used to be a built-in function and is currently in the `functools` module."
-title: "The power of reduce | Pydon't"
+title: "The power of reduce | Pydon't 🐍"
 ---
 
 In this Pydon't we will take a look at the `reduce` function,

@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "This Pydon't explains the importance of refactoring your code and gives you hints on what to look for when refactoring code."
-title: "Bite-sized refactoring | Pydon't"
+title: "Bite-sized refactoring | Pydon't 🐍"
 ---
 
 In this Pydon't I show you why refactoring is important

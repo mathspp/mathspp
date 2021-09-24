@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "Expressões com atribuições foram introduzidas na versão 3.8 do Python e neste artigo mostro como as usar, bem como problemas a evitar."
-title: "Expressões com atribuições e o operador morsa := | Pydon't"
+title: "Expressões com atribuições e o operador morsa := | Pydon't 🐍"
 ---
 
 O "operador morsa" `:=` pode ser bastante útil, mas se o usares de forma

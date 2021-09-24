@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "In this Pydon't I'll tell you why I think elegance is such an important thing to take into account when writing code."
-title: "Does elegance matter? | Pydon't"
+title: "Does elegance matter? | Pydon't 🐍"
 ---
 
 Does elegance matter when writing computer programs..?

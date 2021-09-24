@@ -2,7 +2,7 @@
 metadata:
     description: "Neste artigo introduzimos “fatias” em Python e apresentamos algumas utilizações idiomáticas desta funcionalidade."
 show_call_to_action: false
-title: "Fatiar com mestria | Pydon't"
+title: "Fatiar com mestria | Pydon't 🐍"
 ---
 
 Neste artigo vamos apresentar os tópicos mais avançados

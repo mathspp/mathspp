@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "Quando estamos a desempacotar uma lista ou um tuplo em Python, é de evitar usar fatias."
-title: "Desempacotar com atribuições com asterisco | Pydon't"
+title: "Desempacotar com atribuições com asterisco | Pydon't 🐍"
 ---
 
 Como é que devemos "desempacotar" uma lista ou um tuplo, de modo a separar o primeiro

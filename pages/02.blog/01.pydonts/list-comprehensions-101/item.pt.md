@@ -2,7 +2,7 @@
 metadata:
     description: "Este Pydon't ensina-te a usar list comprehensions em Python."
 show_call_to_action: false
-title: "List comprehensions 101 | Pydon't"
+title: "List comprehensions 101 | Pydon't 🐍"
 ---
 
 Este Pydon't ensina-te a usar list comprehensions em Python.

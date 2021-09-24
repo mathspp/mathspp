@@ -2,7 +2,7 @@
 metadata:
     description: "Neste Pydon't exploramos a funcionalidade que os operadores `and` e `or` têm de avaliar só um lado da expressão. Esta funcionalidade tem algumas utilizações comuns muito expressivas."
 show_call_to_action: false
-title: "Curtos-circuitos Booleanos | Pydon't"
+title: "Curtos-circuitos Booleanos | Pydon't 🐍"
 ---
 
 Neste Pydon't exploramos a funcionalidade que os operadores

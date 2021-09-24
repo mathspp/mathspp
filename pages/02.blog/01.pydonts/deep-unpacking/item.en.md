@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "Deep unpacking is a feature of Python's assignments that doesn't show up often, but when it does you are glad you know how to use it."
-title: "Deep unpacking | Pydon't"
+title: "Deep unpacking | Pydon't 🐍"
 ---
 
 Deep unpacking (or nested unpacking) provides a more powerful way for you to

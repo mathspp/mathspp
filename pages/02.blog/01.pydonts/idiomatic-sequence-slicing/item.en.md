@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "This article covers the basics of sequence slicing in Python and teaches you some idiomatic slicing patterns to write more elegant code."
-title: "Idiomatic sequence slicing | Pydon't"
+title: "Idiomatic sequence slicing | Pydon't 🐍"
 ---
 
 This article covers the basics of sequence slicing in Python

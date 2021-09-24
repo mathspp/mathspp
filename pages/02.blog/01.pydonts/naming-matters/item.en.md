@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "In this Pydon't you'll learn the importance of using good names and I'll give some tips to help you."
-title: "Naming matters | Pydon't"
+title: "Naming matters | Pydon't 🐍"
 ---
 
 In this Pydon't you'll learn the importance of using good names and I'll give some tips to help you.

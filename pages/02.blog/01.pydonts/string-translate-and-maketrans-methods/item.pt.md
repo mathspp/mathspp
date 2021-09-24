@@ -2,7 +2,7 @@
 metadata:
     description: "Neste Pydon't vou explicar-te como é que te poderás, eventualmente, tornar um mestre do Python"
 show_call_to_action: false
-title: "Métodos translate e maketrans | Pydon't"
+title: "Métodos translate e maketrans | Pydon't 🐍"
 ---
 
 Neste Pydon't vou explicar-te como é que te poderás, eventualmente,

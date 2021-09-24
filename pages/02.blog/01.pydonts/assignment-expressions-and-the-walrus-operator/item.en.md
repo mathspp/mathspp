@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "The walrus operator was introduced in Python 3.8 and in this post we cover its usages, as well as pitfalls to avoid."
-title: "Assignment expressions and the walrus operator := | Pydon't"
+title: "Assignment expressions and the walrus operator := | Pydon't 🐍"
 ---
 
 The walrus operator `:=` can be really helpful, but if you use it in convoluted

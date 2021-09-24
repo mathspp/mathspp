@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "In this Pydon't I talk about Python style and I go over some tools you can use to help you remain within a consistent style."
-title: "Code style matters | Pydon't"
+title: "Code style matters | Pydon't 🐍"
 ---
 
 In this Pydon't I talk about Python style and I go over some tools you can use to help you remain within a consistent style.

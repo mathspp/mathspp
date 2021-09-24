@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "Recursion can be very powerful, but in this Pydon't we talk about some things to look out for."
-title: "Watch out for recursion | Pydon't"
+title: "Watch out for recursion | Pydon't 🐍"
 ---
 
 Recursion is a technique that you should have in your programming

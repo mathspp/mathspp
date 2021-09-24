@@ -1,5 +1,7 @@
 ---
-title: "Encadeamento de comparações | Pydon't"
+metadata:
+    description: "Aprende as nuances do funcionamento do encadeamento de comparações em Python."
+title: "Encadeamento de comparações | Pydon't 🐍"
 ---
 
 As comparações em Python podem ser encadeadas.

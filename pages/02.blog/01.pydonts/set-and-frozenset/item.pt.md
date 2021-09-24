@@ -2,7 +2,7 @@
 metadata:
     description: "Este Pydon't ensina-te a usar os tipos de dados `set` e `frozenset`, que servem para trabalhar com conjuntos em Python."
 show_call_to_action: false
-title: "set e frozenset | Pydon't"
+title: "set e frozenset | Pydon't 🐍"
 ---
 
 Este Pydon't ensina-te a usar os tipos de dados `set` e `frozenset`,

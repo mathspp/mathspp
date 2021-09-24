@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "This Pydon't covers the inner workings of sequence slicing, from the built-in `slice` type to the dunder method `__getitem__` and its siblings."
-title: Inner workings of sequence slicing | Pydon't
+title: "Inner workings of sequence slicing | Pydon't 🐍"
 ---
 
 In this Pydon't we conclude the slicing trilogy and

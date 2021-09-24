@@ -2,7 +2,7 @@
 metadata:
     description: "Neste Pydon't vamos aprofundar os nossos conhecimentos sobre o atributo dunder __name__."
 show_call_to_action: false
-title: "Atributo dunder __name__ | Pydon't"
+title: "Atributo dunder __name__ | Pydon't 🐍"
 ---
 
 Neste Pydon't vamos aprofundar os nossos conhecimentos sobre o atributo dunder `__name__`.

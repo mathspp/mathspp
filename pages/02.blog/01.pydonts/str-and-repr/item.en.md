@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "The str and repr built-ins may look really similar, but they have some key differences!"
-title: "str and repr | Pydon't"
+title: "str and repr | Pydon't 🐍"
 ---
 
 Python's `str` and `repr` built-in methods are similar, but not the same.

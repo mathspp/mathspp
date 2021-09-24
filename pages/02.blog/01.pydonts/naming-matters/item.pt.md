@@ -2,7 +2,7 @@
 metadata:
     description: "Neste Pydon't vou discutir as coisas que é preciso ter em conta sempre que usamos nomes em Python."
 show_call_to_action: false
-title: "Nomes importam | Pydon't"
+title: "Nomes importam | Pydon't 🐍"
 ---
 
 Neste Pydon't vou discutir as coisas que é preciso ter em conta sempre que usamos nomes em Python.

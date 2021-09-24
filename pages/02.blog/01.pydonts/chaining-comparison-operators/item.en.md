@@ -1,12 +1,10 @@
 ---
-title: "Chaining comparison operators | Pydon't"
+metadata:
+    description: "Learn the ins and outs of comparison operator chaining, and especially the cases you should avoid."
+title: "Chaining comparison operators | Pydon't 🐍"
 ---
 
-Python's comparisons operators can be chained to shorten
-common comparison expressions.
-Learn the ins and outs of comparison operator chaining
-and especially the cases you should *avoid*,
-namely those where you chain comparison operators that aren't aligned.
+Learn the ins and outs of comparison operator chaining, and especially the cases you should avoid.
 
 ===
 

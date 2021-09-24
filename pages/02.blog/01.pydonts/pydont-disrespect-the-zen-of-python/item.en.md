@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "The 'Zen of Python' is a set of guidelines you should always keep in mind when programming in Python."
-title: "Pydon't disrespect the Zen of Python"
+title: "Pydon't disrespect the Zen of Python 🐍"
 ---
 
 The "[Zen of Python]" is the set of guidelines that show up in your screen if you `import this`. If you have never read them before, read them now and again from time to time.

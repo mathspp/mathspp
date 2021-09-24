@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "`for` loops are the bread and butter of imperative programming and Python has some really nice tools to work with them. If you want to traverse several structures in parallel, have you considered using `zip`?"
-title: "Zip up | Pydon't"
+title: "Zip up | Pydon't 🐍"
 ---
 
 `for` loops are the bread and butter of imperative programming

@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "Há muitas situações em que é melhor usar um try para lidar com um erro do que usar um if para o tentar evitar."
-title: "Estilos de programação EAFP e LBYL | Pydon't"
+title: "Estilos de programação EAFP e LBYL | Pydon't 🐍"
 ---
 
 Em Python, se queres fazer uma operação que pode dar um erro, há muitas situações

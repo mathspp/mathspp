@@ -2,7 +2,7 @@
 metadata:
     description: "Neste Pydon't vou falar do estilo do código e de ferramentas que te podem ajudar a manteres o teu código com um estilo consistente"
 show_call_to_action: false
-title: "Estilo do código importa | Pydon't"
+title: "Estilo do código importa | Pydon't 🐍"
 ---
 
 Neste Pydon't vou falar do estilo do código e de ferramentas que te podem ajudar a manteres o teu código com um estilo consistente

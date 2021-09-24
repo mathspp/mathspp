@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "A short article with all you need to know about sequence indexing in Python – and a bit more."
-title: "Sequence indexing | Pydon't"
+title: "Sequence indexing | Pydon't 🐍"
 ---
 
 A short article with all you need to know about sequence indexing in Python – and a bit more.

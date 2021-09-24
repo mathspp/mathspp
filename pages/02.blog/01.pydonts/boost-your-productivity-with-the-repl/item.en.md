@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "In this Pydon't you'll learn to boost your Python productivity by making the best use possible of the Python REPL."
-title: "Boost your productivity with the REPL | Pydon't"
+title: "Boost your productivity with the REPL | Pydon't 🐍"
 ---
 
 In this Pydon't you'll learn how to make the best use possible of the Python REPL.

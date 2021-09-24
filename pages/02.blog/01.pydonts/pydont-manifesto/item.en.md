@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "The Pydon't Manifesto explains what \"Pydon'ts\" are and why they are important when you are looking to improve your Python programming skills."
-title: Pydon't Manifesto
+title: "Pydon't Manifesto 🐍"
 ---
 
 "*Pydon'ts*" are short, to-the-point, meaningful Python programming tips.

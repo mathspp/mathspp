@@ -2,7 +2,7 @@
 metadata:
     description: "Um artigo curto com tudo o que precisas de saber sobre indexar sequências em Python."
 show_call_to_action: false
-title: "Indexação de sequências | Pydon't"
+title: "Indexação de sequências | Pydon't 🐍"
 ---
 
 Um artigo curto com tudo o que precisas de saber sobre indexar sequências em Python.

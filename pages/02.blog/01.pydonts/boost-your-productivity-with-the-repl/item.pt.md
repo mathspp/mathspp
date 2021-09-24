@@ -2,7 +2,7 @@
 metadata:
     description: "Neste Pydon't vais aprender a aumentar a tua produtividade ao usar da melhor maneira possível o REPL do Python."
 show_call_to_action: false
-title: "Aumenta a tua produtividade com o REPL | Pydon't"
+title: "Aumenta a tua produtividade com o REPL | Pydon't 🐍"
 ---
 
 Neste Pydon't vais aprender a utilizar o REPL da melhor forma possível.

@@ -2,7 +2,7 @@
 metadata:
     description: "Neste artigo de opinião exponho os motivos que me levam a acreditar que a elegância é um fator importante para um programa de computador."
 show_call_to_action: false
-title: "A elegância importa? | Pydon't"
+title: "A elegância importa? | Pydon't 🐍"
 ---
 
 Será que a elegância é uma característica importante de um programa de computador..?

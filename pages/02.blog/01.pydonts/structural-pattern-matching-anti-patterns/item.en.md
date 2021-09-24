@@ -1,5 +1,7 @@
 ---
-title: "Structural pattern matching anti-patterns | Pydon't"
+metadata:
+    description: "This article explains when NOT to use structural pattern matching in Python."
+title: "Structural pattern matching anti-patterns | Pydon't 🐍"
 ---
 
 Structural pattern matching is coming in Python 3.10 and

@@ -2,7 +2,7 @@
 metadata:
     description: "Neste Pydon't debruçamo-nos sobre a função `reduce`, que já fez parte dos built-ins da linguagem e que com a versão 3 foi movido para a biblioteca `functools`."
 show_call_to_action: false
-title: " | Pydon't"
+title: "A versatilidade das reduções | Pydon't 🐍"
 ---
 
 Neste Pydon't debruçamo-nos sobre a função `reduce`,

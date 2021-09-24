@@ -1,7 +1,7 @@
 ---
 metadata:
     description: "In this Pydon't I'll show you how to use the underscore _ to write more Pythonic code."
-title: "Usages of underscore | Pydon't"
+title: "Usages of underscore | Pydon't 🐍"
 ---
 
 The purpose of this Pydon't is to show you what underscores

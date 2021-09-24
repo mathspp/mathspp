@@ -2,7 +2,7 @@
 metadata:
     description: "Se precisas de aceder aos elementos de um iterador _e_ aos seus índices, já pensaste em usar a função enumerate?"
 show_call_to_action: false
-title: "Enumerações em ciclos | Pydon't"
+title: "Enumerações em ciclos | Pydon't 🐍"
 ---
 
 Se precisas de aceder aos elementos de um iterador _e_ aos seus índices,
