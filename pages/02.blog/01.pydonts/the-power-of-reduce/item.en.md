@@ -34,7 +34,7 @@ In this Pydon't, you will:
  - learn about a neat use-case for `reduce`;
 
 <!--v-->
- > You can now get your copy of the ebook “Pydon'ts – Write beautiful Python code” [on Gumroad][gumroad-pydonts]
+ > You can now get your free copy of the ebook “Pydon'ts – Write beautiful Python code” [on Gumroad][gumroad-pydonts]
  > to help support the series of “Pydon't” articles 💪.
 <!--^-->
 
