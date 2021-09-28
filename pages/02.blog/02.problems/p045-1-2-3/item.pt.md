@@ -42,6 +42,8 @@ em particular, aos que me enviaram as suas soluções:
  - Pedro G., Portugal;
  - Boro S., Macedónia do Norte;
  - Jerry J., Estados Unidos;
+ - Lucas K., Brasil;
+ - Kees L., Países Baixos;
 
 Junta-te à comunidade e envia-me a tua solução por [email]!
 

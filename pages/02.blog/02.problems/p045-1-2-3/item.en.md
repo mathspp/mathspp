@@ -46,6 +46,8 @@ who sent me their correct solutions:
  - Pedro G., Portugal;
  - Boro S., North Macedonia;
  - Jerry J., USA;
+ - Lucas K., Brazil;
+ - Kees L., Netherlands;
 
 Join the list of solvers by [emailing me][email] your solution!
 
