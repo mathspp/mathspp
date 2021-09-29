@@ -306,7 +306,7 @@ The two sections above showed you that you can nest multiple
 Now, the only thing left for you to know is that these can be mixed
 and nested arbitrarily.
 Of course, you should not nest things too much,
-because a long list comprehension is harder to read than then equivalent
+because a long list comprehension is harder to read than the equivalent
 nested formulation.
 
 The diagram below helps you in understanding the correspondence
