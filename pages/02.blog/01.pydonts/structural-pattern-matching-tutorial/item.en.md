@@ -34,6 +34,10 @@ write beautiful code.
 ! Python 3.10 and play with it.
 
 
+I also summarised the contents of this article in a cheatsheet
+that you can get for free [from here][gumroad-cheatsheet].
+
+
 # Structural pattern matching Python could already do
 
 Structural pattern matching isn't completely new in Python.
@@ -619,6 +623,10 @@ Here's the main takeaway of this article, for you, on a silver platter:
 the readability of Python code in many cases, but it will not be the go-to solution
 in every single situation.”
 
+This Pydon't was also summarised in [a free cheatsheet][gumroad-cheatsheet]:
+
+[![The cheatsheet about the `match` statement.](_cheatsheet.jpg "A cheatsheet about `match`.")][gumroad-cheatsheet]
+
 This Pydon't showed you that:
 
  - structural pattern matching with the `match` statement greatly extends
@@ -639,6 +647,7 @@ a single Pydon't!
 [pizza]: https://buymeacoffee.com/mathspp
 [subscribe]: https://mathspp.com/subscribe
 [manifesto]: /blog/pydonts/pydont-manifesto
+[gumroad-cheatsheet]: https://gum.co/cheatsheet_match_statement
 [pep-622]: https://www.python.org/dev/peps/pep-0622/
 [pep-634]: https://www.python.org/dev/peps/pep-0634/
 [pep-635]: https://www.python.org/dev/peps/pep-0635/
