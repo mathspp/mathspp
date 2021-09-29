@@ -36,11 +36,11 @@ For the intervals below, $x$ belongs to it if...
  - $]a, b]$ → $a < x \leq b$; and
  - $]a, b[$ → $a < x < b$.
 
-So, in $]0, +\infty[$, nor 0 nor $+\infty$ are included in the interval.
-So, what's the minimum element of this interval?
+So, in $]0, +\infty[$, nor 0, nor $+\infty$ are included.
+Thus, what's the minimum element of this interval?
 Well, there isn't any!
 
-Mathematically speaking, there is no minimum in the interval $]0, +\infty[$
+Mathematically speaking, there is no minimum in the interval $]0, +\infty[$.
 Why not?
 Whatever you pick as a potential minimum $m$, $m/2$ will be smaller than $m$
 and still be greater than $0$, that is, $0 < m/2 < m < +\infty$,
