@@ -183,7 +183,7 @@ With this out of the way, ...
 
 ## Does Python have a ternary operator?
 
-Many languages have a ternary operator that looks like `condition ? expr_if_true : expr_if_true`.
+Many languages have a ternary operator that looks like `condition ? expr_if_true : expr_if_false`.
 Python does not have such a ternary operator, but conditional expressions are similar.
 
 Conditional expressions are similar in that they evaluate one of two values,
@@ -255,7 +255,7 @@ def parity(n):
 
 This function now reads as
 
- > “return `"odd"` if `n` leaves remainder when divided by `2` and `else` otherwise.”
+ > “return `"odd"` if `n` leaves remainder when divided by `2` and `"even"` otherwise.”
 
 As for the absolute value function,
 
