@@ -6,6 +6,7 @@ content:
     order:
         custom:
           - "_hero"
+          - "_highlights"
 metadata:
     author: "Rodrigo Girão Serrão"
     og:image: https://mathspp.com/subscribe/thumbnail.png
