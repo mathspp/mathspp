@@ -2,28 +2,23 @@
 title: Home
 ---
 
-<div style="font-size:150%">
+### Hi 👋, if you are interested in
 
-<p>Hi 👋, if you are interested in</p>
+#### 🐍 Python
 
-<p>🐍 Python</p>
+#### 💻 Programming
 
-<p>💻 Programming</p>
+#### 🧠 Real-life mathematics
 
-<p>🧠 Real-life mathematics</p>
+#### 🤖 Machine learning
 
-<p>🤖 Machine learning</p>
+#### Subscribe to the mathspp newsletter.
 
-<p>Subscribe to the mathspp newsletter.</p>
-
-<p>I share lots of knowledge you won't want to miss.</p>
-
-</div>
+#### I share lots of knowledge you won't want to miss.
 
 <div id="mc_embed_signup">
 <form action="https://mathspp.us18.list-manage.com/subscribe/post?u=3452fe1e5ab6016adba929cce&amp;id=e55ac21342" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
     <div id="mc_embed_signup_scroll">
-      <label for="mce-EMAIL">Stay in the loop!</label>
       <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
       <ul style="display:none;" aria-hidden="true"> <!--By default, new subscribers care about everything. -->
         <li><input type="checkbox" value="1" name="group[6034][1]" id="mce-group[6034]-6034-0" checked></li>
