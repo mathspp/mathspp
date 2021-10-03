@@ -17,7 +17,7 @@ h6,
 .hero h5,
 .hero h6 {
     font-family: "Chewy", cursive;
-    color: #adb3bd;
+    color: #f8f8f2;
 }
 
 /* Headers in hero sections of modular pages marked with the `text-light` class. */
@@ -29,7 +29,7 @@ h6,
 .hero.text-light h6,
 .hero.text-light i,
 .hero.text-light p {
-    color: #e2e2e2;
+    color: #f8f8f2;
 }
 
 /* The small titles of features like the last ones in the workshop page. */
@@ -54,7 +54,7 @@ p,
 li,
 label {
     font-family: "Atkinson Hyperlegible", sans-serif;
-    color: #989fb0;
+    color: #f8f8f2;
 }
 
 /* Centre images in blog posts. */
@@ -81,7 +81,7 @@ body p:not(#footer p, .hero p, .feature-content p, .text-center) {
  * selector in the theme CSS overrides this and makes the text too dark, so we override it again,
  * because we are more stubborn then the theme :P */
 nav a, .header-dark #header:not(.scrolled) .dropmenu ul ul a {
-    color: #a2a9b6 !important;
+    color: #f8f8f2 !important;
 }
 /* Fix the colouring of the same navigation menu when I hover over links. */
 .header-dark #header:not(.scrolled) .dropmenu ul li a:hover {
@@ -128,7 +128,7 @@ blockquote {
 
 /* Colour for the numbers in the Blog archive and for the text in the selected tag in the blog. */
 .label.label-primary {
-    color: #e3e3e3;
+    color: #f8f8f2;
 }
 
 /* Borders for the pagination numbers at the top of the blog listings. */
@@ -144,7 +144,7 @@ code {
 /* And now for multiline. */
 pre code {
     background: #1e1d1e;
-    color: #989fb0;
+    color: #f8f8f2;
 }
 
 /* Set visited links to a darker shade of blue. */
@@ -231,7 +231,7 @@ a.headeroffset {
 }
 
 .social-icon {
-    color: white;
+    color: #f8f8f2;
 }
 
 /* CSS to style "share this blog post" buttons that scroll
