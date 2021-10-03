@@ -1,11 +1,11 @@
 If you want to miss out on all the nuggets of knowledge I share,
-you can also only subscribe to the RSS feeds of the articles:
+you can also only subscribe to the RSS/atom/JSON feeds of the articles:
 
- - All blog articles – [RSS][all-rss], [Atom][all-atom], [JSON][all-json]
- - Pydon'ts – [RSS][py-rss], [Atom][py-atom], [JSON][py-json]
- - Problems – [RSS][pro-rss], [Atom][pro-atom], [JSON][pro-json]
- - TIL – [RSS][til-rss], [Atom][til-atom], [JSON][til-json]
- - Twitter proofs – [RSS][tp-rss], [Atom][tp-atom], [JSON][tp-json]
+ - All blog articles – [RSS][all-rss], [atom][all-atom], [JSON][all-json]
+ - Pydon'ts – [RSS][py-rss], [atom][py-atom], [JSON][py-json]
+ - Problems – [RSS][pro-rss], [atom][pro-atom], [JSON][pro-json]
+ - TIL – [RSS][til-rss], [atom][til-atom], [JSON][til-json]
+ - Twitter proofs – [RSS][tp-rss], [atom][tp-atom], [JSON][tp-json]
 
 
 [all-rss]: https://mathspp.com/blog.rss
