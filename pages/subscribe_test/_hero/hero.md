@@ -2,21 +2,21 @@
 title: Home
 ---
 
-# Mathspp newsletter
+# Hi 👋
 
-Hi 👋
+## If you are interested in
 
-If you are interested in
+## 🐍 Python
 
-🐍 Python
+## 💻 Programming
 
-💻 Programming
+## 🧠 Real-life mathematics
 
-🧠 Real-life mathematics
+## 🤖 Machine learning
 
-🤖 Machine learning
+## Subscribe to the mathspp newsletter.
 
-Subscribe to the mathspp newsletter. I share lots of knowledge you won't want to miss.
+## I share lots of knowledge you won't want to miss.
 
 <div id="mc_embed_signup">
 <form action="https://mathspp.us18.list-manage.com/subscribe/post?u=3452fe1e5ab6016adba929cce&amp;id=e55ac21342" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
