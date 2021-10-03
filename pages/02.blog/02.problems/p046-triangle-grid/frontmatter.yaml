@@ -1,0 +1,14 @@
+date: 03-10-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: https://mathspp.com/blog/problems/triangle-grid/thumbnail.png
+    twitter:image: https://mathspp.com/blog/problems/triangle-grid/thumbnail.png
+process:
+    twig: true
+slug: triangle-grid
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - geometry
+      - mathematics
+twig_first: true
