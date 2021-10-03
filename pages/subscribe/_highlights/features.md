@@ -10,8 +10,7 @@ features:
 
 # Mathspp Newsletter
 
-Join a community of hundreds of curious people!
-No bulls***, just raw knowledge.
+Join a community of hundreds of curious people! No bulls***, just raw knowledge.
 
 
 <div id="mc_embed_signup">
