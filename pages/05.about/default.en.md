@@ -84,6 +84,10 @@ GIFs at [ezgif].
 For editing that is even simpler, I also use powerful tools like MS Paint.
 I also create some graphical content with [Canva].
 
+#### Image credits
+
+ - [Subscribe page](/subscribe) background image by USGS on Unsplash;
+
 
 [linkedin]: https://linkedin.com/in/rodrigo-girão-serrão
 [grav]: https://getgrav.org
