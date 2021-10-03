@@ -11,7 +11,6 @@ features:
 # Mathspp Newsletter
 
 Join a community of hundreds of curious people!
-
 No bulls***, just raw knowledge.
 
 
