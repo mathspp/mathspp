@@ -4,19 +4,19 @@ title: Home
 
 <div style="font-size:150%">
 
-Hi 👋, if you are interested in
+<p>Hi 👋, if you are interested in</p>
 
-🐍 Python
+<p>🐍 Python</p>
 
-💻 Programming
+<p>💻 Programming</p>
 
-🧠 Real-life mathematics
+<p>🧠 Real-life mathematics</p>
 
-🤖 Machine learning
+<p>🤖 Machine learning</p>
 
-Subscribe to the mathspp newsletter.
+<p>Subscribe to the mathspp newsletter.</p>
 
-I share lots of knowledge you won't want to miss.
+<p>I share lots of knowledge you won't want to miss.</p>
 
 </div>
 
