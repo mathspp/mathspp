@@ -2,15 +2,16 @@
 title: Home
 ---
 
-<div style="font-size:150%!important">
-    <p>Hi 👋, if you are interested in</p>
-    <p>🐍 Python</p>
-    <p>💻 Programming</p>
-    <p>🧠 Real-life mathematics</p>
-    <p>🤖 Machine learning</p>
-    <p>Subscribe to the mathspp newsletter.</p>
-    <p>I share lots of knowledge you won't want to miss.</p>
-</div>
+# Hi 👋
+
+If you are interested in
+
+<span style="font-size:150%">🐍 Python | 💻 Programming | 🤖 Machine learning<br />
+🧠 Real-life maths | 🧩 Puzzles</span>
+
+**Subscribe** 👇 to the mathspp newsletter!
+
+I share lots of knowledge you won't want to miss 😉
 
 <div id="mc_embed_signup">
 <form action="https://mathspp.us18.list-manage.com/subscribe/post?u=3452fe1e5ab6016adba929cce&amp;id=e55ac21342" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
