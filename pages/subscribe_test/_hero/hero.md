@@ -2,11 +2,9 @@
 title: Home
 ---
 
-<span style="font-size:200%">
+<div style="font-size:150%">
 
-Hi 👋
-
-If you are interested in
+Hi 👋, if you are interested in
 
 🐍 Python
 
@@ -20,7 +18,7 @@ Subscribe to the mathspp newsletter.
 
 I share lots of knowledge you won't want to miss.
 
-</span>
+</div>
 
 <div id="mc_embed_signup">
 <form action="https://mathspp.us18.list-manage.com/subscribe/post?u=3452fe1e5ab6016adba929cce&amp;id=e55ac21342" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
