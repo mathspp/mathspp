@@ -1,14 +1,15 @@
 anchors:
     active: false
+body_classes: "header-dark header-transparent"
 content:
-    items: '@self.modular'
+    items: "@self.modular"
     order:
         custom:
-          - _highlights
+          - "_hero"
+          - "_highlights"
+          - "_feeds"
 metadata:
-    author: Rodrigo Girão Serrão
+    author: "Rodrigo Girão Serrão"
     og:image: https://mathspp.com/subscribe/thumbnail.png
     twitter:image: https://mathspp.com/subscribe/thumbnail.png
 onpage_menu: false
-slug: subscribe
-title: Subscribe
