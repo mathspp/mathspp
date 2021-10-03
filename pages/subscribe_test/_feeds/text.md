@@ -1,5 +1,3 @@
-# Feeds
-
 If you want to miss out on all the nuggets of knowledge I share,
 you can also only subscribe to the RSS feeds of the articles:
 
