@@ -54,7 +54,27 @@ Join the list of solvers by [emailing me][email] your solution!
 
 # Solution
 
-The solution to this problem will be posted here after this problem has been live for 2 weeks.
+**Lots** of people sent in their solutions and I was very pleased
+with the amount of different solutions people came up with!
+Hence, the solution I present here is not the _only one_,
+but it's one I find very elegant.
+
+The question you will ask me is
+
+ > “If I pick one of the other two numbers, is yours larger?”
+
+If I picked 3, then I know 3 is larger than any of the two other numbers (1 and 2).
+Therefore, I answer “Yes.”.
+
+If I picked 1, then I know 1 is smaller than any of the two other numbers (2 and 3).
+Therefore, I answer “No.”.
+
+If I picked 2, then I have no idea if you got 1 or 3,
+and that implies I need to reply “I don't know.”.
+
+That's a pretty elegant solution, isn't it?
+
+Feel free to share alternative solutions in the comments!
 
 [Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly
 problems sent straight to your inbox.

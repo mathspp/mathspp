@@ -50,7 +50,29 @@ Junta-te à comunidade e envia-me a tua solução por [email]!
 
 # Solução
 
-Uma proposta de solução vai ser publicada aqui quando tiverem passado duas semanas desde a publicação deste problema.
+Houve **imensa** gente que submeteu possíveis soluções,
+e adorei ver a diversidade de soluções que as pessoas propuseram!
+Note-se que a solução que eu apresento aqui não é a _única_,
+é apenas uma que eu considero bastante elegante.
+
+A pergunta que me vais fazer é
+
+ > “Se eu ficar com um dos outros números, o teu é maior que o meu?”
+
+Se eu tiver escolhido o 3, então eu sei que o 3 é necessariamente maior
+do que qualquer outro dos dois números (o 1 e o 2),
+e por isso tenho de responder “Sim.”.
+
+Se eu tiver escolhido o 1, então eu sei que o 1 é necessariamente menor
+do que qualquer outro dos dois números (o 2 e o 3),
+e por isso tenho de responder “Não.”.
+
+Se eu tiver escolhido o 2, então não sei se ficaste com o 1 ou com o 3,
+e por isso tenho de responder “Não sei.”.
+
+É uma solução elegante, não achas?
+
+Se quiseres, deixa outras alternativas nos comentários!
 
 
 Não te esqueças de [subscrever a newsletter][subscribe] para receberes os problemas diretamente na tua caixa de correio.
