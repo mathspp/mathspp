@@ -8,7 +8,7 @@ features:
     text: Be the first to know what's new
 ---
 
-# Mathspp Newsletter
+# 🐍📝 Mathspp Insider
 
 Join a community of hundreds of curious people! No bulls***, just raw knowledge.
 

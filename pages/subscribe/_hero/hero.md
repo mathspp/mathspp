@@ -9,7 +9,7 @@ If you are interested in
 <span style="font-size:150%">🐍 Python | 💻 Programming | 🤖 Machine learning<br />
 🧠 Real-life maths | 🧩 Puzzles</span>
 
-**Subscribe** 👇 to the mathspp newsletter!
+**Subscribe** 👇 to the “🐍📝 Mathspp Insider” newsletter!
 
 I share lots of knowledge you won't want to miss 😉
 
