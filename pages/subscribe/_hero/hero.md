@@ -6,7 +6,7 @@ title: Home
 
 If you are interested in
 
-<p style="font-size:150%">
+<p style="font-size:200%">
     <span style="white-space:nowrap">🐍 Python</span> |
     <span style="white-space:nowrap">💻 Programming</span> |
     <span style="white-space:nowrap">🤖 Machine learning</span> |
