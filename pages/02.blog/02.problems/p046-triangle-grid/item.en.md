@@ -33,6 +33,8 @@ Congratulations to the ones that solved this problem correctly and, in particula
 who sent me their correct solutions:
 
  - David H., Taiwan;
+ - Michael W., USA;
+ - Pedro G., Portugal;
 
 Join the list of solvers by [emailing me][email] your solution!
 
