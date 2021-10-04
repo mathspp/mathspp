@@ -6,8 +6,14 @@ title: Home
 
 If you are interested in
 
-<span style="font-size:150%">🐍 Python | 💻 Programming | 🤖 Machine learning<br />
-🧠 Real-life maths | 🧩 Puzzles</span>
+<p style="font-size:150%">
+    <span style="white-space:nowrap">🐍 Python</span> |
+    <span style="white-space:nowrap">💻 Programming</span> |
+    <span style="white-space:nowrap">🤖 Machine learning</span> |
+    <br />
+    <span style="white-space:nowrap">🧠 Real-life maths</span> |
+    <span style="white-space:nowrap">🧩 Puzzles</span>
+</p>
 
 **Subscribe** 👇 to the “🐍📝 Mathspp Insider” newsletter!
 
