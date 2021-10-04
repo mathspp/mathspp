@@ -29,17 +29,12 @@ I originally found this puzzle in the [Puzzling Stack Exchange][source] website.
 
 # Solvers
 
-Know how to solve this?
-Be the first to join the list of solvers by [emailing me][email] your solution!
-
-<!--
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
 
- - 
+ - David H., Taiwan;
 
 Join the list of solvers by [emailing me][email] your solution!
--->
 
 
 # Solution
