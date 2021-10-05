@@ -36,6 +36,10 @@ em particular, aos que me enviaram as suas soluções:
  - David H., Taiwan;
  - Michael W., Estados Unidos;
  - Pedro G., Portugal;
+ - B. Praveen R., Índia;
+ - Kees L., Países Baixos;
+ - Jerry J., Estados Unidos;
+ - Mihalis G., Grécia;
 
 Junta-te à comunidade e envia-me a tua solução por [email]!
 

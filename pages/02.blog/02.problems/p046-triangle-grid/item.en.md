@@ -35,6 +35,10 @@ who sent me their correct solutions:
  - David H., Taiwan;
  - Michael W., USA;
  - Pedro G., Portugal;
+ - B. Praveen R., India;
+ - Kees L., Netherlands;
+ - Jerry J., USA;
+ - Mihalis G., Greece;
 
 Join the list of solvers by [emailing me][email] your solution!
 
