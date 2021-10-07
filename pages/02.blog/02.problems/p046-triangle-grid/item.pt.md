@@ -8,7 +8,7 @@ Consegues desenhar 4 triângulos nesta grelha 5 por 5 e cobrir todos os pontos?
 
 ===
 
-![](thumbnail.svg)
+![](thumbnail.png)
 
 # Enunciado do problema
 
