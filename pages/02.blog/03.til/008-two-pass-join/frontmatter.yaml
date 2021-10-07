@@ -10,4 +10,5 @@ taxonomy:
     category: [blogpost, til]
     tag:
       - algorithms
+      - programming
       - python

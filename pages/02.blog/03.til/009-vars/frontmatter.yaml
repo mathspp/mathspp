@@ -9,4 +9,5 @@ slug: "009"
 taxonomy:
     category: [blogpost, til]
     tag:
+      - programming
       - python
