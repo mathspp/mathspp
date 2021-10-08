@@ -494,10 +494,10 @@ def act(command):
         case _:
             return "I can't do that..."
 
-print("Go North")       # Alright, I'm going!
-print("Go asdfasdf")    # I can't go that way...
-print("Cook breakfast") # I love breakfast.
-print("Drive")          # I can't do that...
+print(act("Go North"))       # Alright, I'm going!
+print(act("Go asdfasdf"))    # I can't go that way...
+print(act("Cook breakfast")) # I love breakfast.
+print(act("Drive"))          # I can't do that...
 ```
 
 And, not only that, we want to know where the user wants to go,
@@ -519,8 +519,8 @@ def act(command):
         case _:
             return "I can't do that..."
 
-print("Go North")       # Alright, I'm going North!
-print("Go asdfasdf")    # I can't go that way...
+print(act("Go North"))       # Alright, I'm going North!
+print(act("Go asdfasdf"))    # I can't go that way...
 ```
 
 
