@@ -39,6 +39,7 @@ who sent me their correct solutions:
  - Kees L., Netherlands;
  - Jerry J., USA;
  - Mihalis G., Greece;
+ - Alfredo E., Mexico;
 
 Join the list of solvers by [emailing me][email] your solution!
 

@@ -40,6 +40,7 @@ em particular, aos que me enviaram as suas soluções:
  - Kees L., Países Baixos;
  - Jerry J., Estados Unidos;
  - Mihalis G., Grécia;
+ - Alfredo E., México;
 
 Junta-te à comunidade e envia-me a tua solução por [email]!
 
