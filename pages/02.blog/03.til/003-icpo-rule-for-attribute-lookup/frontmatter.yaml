@@ -7,7 +7,7 @@ process:
     twig: true
 slug: "003"
 taxonomy:
-    category: [til]
+    category: [blogpost, til]
     tag:
       - programming
       - python

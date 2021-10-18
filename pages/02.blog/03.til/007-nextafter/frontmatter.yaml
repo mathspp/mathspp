@@ -7,7 +7,7 @@ process:
     twig: true
 slug: "007"
 taxonomy:
-    category: [til]
+    category: [blogpost, til]
     tag:
       - arithmetics
       - mathematics

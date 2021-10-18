@@ -7,7 +7,7 @@ process:
     twig: true
 slug: "008"
 taxonomy:
-    category: [til]
+    category: [blogpost, til]
     tag:
       - algorithms
       - programming
