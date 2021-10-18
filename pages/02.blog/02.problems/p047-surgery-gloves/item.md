@@ -34,7 +34,7 @@ of latex gloves at their disposal.
 How can Charles and Diana (respectively the stomach and heart surgeons) operate,
 knowing that
 
- - the gloves one doctor wears cannot be worn by the other doctor; and
+ - the gloves that touch one doctor's skin cannot touch the other doctor's skin; and
  - the gloves that touch one patient's blood cannot touch the other patient's blood?
 
 Sadly, washing the gloves is out of the question,
