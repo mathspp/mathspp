@@ -41,13 +41,26 @@ em particular, aos que me enviaram as suas soluções:
  - Jerry J., Estados Unidos;
  - Mihalis G., Grécia;
  - Alfredo E., México;
+ - Martin J., República Checa;
 
 Junta-te à comunidade e envia-me a tua solução por [email]!
 
 
 # Solução
 
-Uma proposta de solução vai ser publicada aqui quando tiverem passado duas semanas desde a publicação deste problema.
+Há muitas soluções diferentes para este problema.
+
+Dos Estados Unidos (Jerry), foi-me enviada a solução de que eu gostei mais:
+
+![Solução com vértices ((0, 0), (4, 4), (0, 3)), ((0, 0), (3, 0), (1, 2)), ((0, 4), (4, 0), (4, 3)), ((4, 4), (1, 4), (3, 2))](_jerry.png)
+
+Esta solução é a minha preferida por causa da simetria vertical entre os dois triângulos maiores
+e porque os dois triângulos mais pequenos são uma rotação um do outro.
+
+Para referência, incluo aqui outra solução (de entre as muitas que existem!);
+esta é do Martin, e escolhi-a aleatoriamente entre as várias que recebi.
+
+![Solução com vértices ((0, 0), (3, 0), (4, 4)), ((2, 1), (4, 0), (4, 3)), ((0, 4), (3, 1), (4, 4)), ((0, 1), (0, 3), (3, 4))](_martin.png)
 
 
 Não te esqueças de [subscrever a newsletter][subscribe] para receberes os problemas diretamente na tua caixa de correio.
