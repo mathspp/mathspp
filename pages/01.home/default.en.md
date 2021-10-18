@@ -1,6 +1,7 @@
 ---
-title: Home
 menu: Home
+title: Home
+visible: false
 ---
 
 # Mathspp
