@@ -45,6 +45,9 @@ because the hospital has no means of properly sanitising the gloves!
 
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
+My uncle told me this puzzle a _long_ time ago!
+I had a blast solving it!
+
 
 # Solvers
 
