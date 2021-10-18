@@ -12,7 +12,6 @@ taxonomy:
     category: [blogpost, problem]
     tag:
       - logic
-      - mathematics
 title: "Problem #047 – surgery gloves"
 twig_first: true
 ---
