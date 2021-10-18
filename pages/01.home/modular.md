@@ -13,4 +13,5 @@ metadata:
     og:image: "https://mathspp.com/education/logo_education.png"
     twitter:image: "https://mathspp.com/education/logo_education.png"
 onpage_menu: false
+visible: false
 ---
