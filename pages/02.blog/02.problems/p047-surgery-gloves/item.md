@@ -59,6 +59,7 @@ who sent me their correct solutions:
  - I+T, USA;
  - David H., Taiwan;
  - Chukwudi, Nigeria/UK;
+ - Oliver S., Germany;
 
 Join the list of solvers by [emailing me][email] your solution!
 
