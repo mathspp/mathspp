@@ -1,9 +1,9 @@
 ---
-title: "Neural networks fundamentals with Python – teacher-student"
+title: "Neural networks fundamentals with Python – student-teacher"
 ---
 
 In this article of the [NNFwP series][series] we'll do the
-“teacher-student” experiment with two neural networks,
+“student-teacher” experiment with two neural networks,
 where one network will learn directly from the other.
 
 ===
@@ -14,20 +14,20 @@ where one network will learn directly from the other.
 # Purpose of this article
 
 The purpose of this article is to try and perform an experiment
-that is called the “teacher-student” experiment,
+that is called the “student-teacher” experiment,
 in which we use one large neural network to train another smaller network directly,
 instead of using conventional training data.
 
 In the field of machine learning,
 this is also commonly referred to as “knowledge distillation”.
-The “teacher-student” experiment we will do in this article
+The “student-teacher” experiment we will do in this article
 will be smaller than similar experiments you might find done in the field,
 but the principles will be more or less the same;
 our experiment will only be smaller because we are dealing with a small and simple problem,
 the MNIST classification problem, and because the networks we are using are fairly small.
 
-If you want to learn more about “teacher-student” experiments/knowledge distillation,
-maybe take a look at [this survey][teacher-student-survey].
+If you want to learn more about “student-teacher” experiments/knowledge distillation,
+maybe take a look at [this survey][student-teacher-survey].
 
 !!! The code for this article, and for the all articles of the series,
 !!! can be found in [this GitHub repository][gh-nnfwp].
@@ -36,7 +36,7 @@ maybe take a look at [this survey][teacher-student-survey].
 
 # The layout of the experiment
 
-Let me explain to you how the “teacher-student” experiment works,
+Let me explain to you how the “student-teacher” experiment works,
 and why we bother doing it.
 
 As you have seen, neural networks are composed of several layers
@@ -298,7 +298,7 @@ I ran my code a couple of times and got results around 90%.
 What this means is that training a small network directly,
 for the MNIST problem, doesn't appear to be that difficult.
 In fact, this 90% accuracy is more or less on par with the accuracy of our larger model.
-As we proceed into the “teacher-student” experiment,
+As we proceed into the “student-teacher” experiment,
 let us see if we can improve this or, at least, create a student with the same level of accuracy.
 
 
@@ -308,7 +308,7 @@ let us see if we can improve this or, at least, create a student with the same l
 
 Now that we have had a go at creating a small network
 and have established the benchmark accuracy for the student network,
-we can start our “teacher-student” experiment.
+we can start our “student-teacher” experiment.
 
 Let us take the contents of `examples/mnist_small.py`
 and copy them to the `examples/teacher_student.py` file.
@@ -541,7 +541,7 @@ as later we'll introduce some improvements that will make running
 repeated experiments less painful.
 
 Finally, do not feel demotivated if you can't find a student that beats the benchmark,
-recall that the “teacher-student” experiments tends to work much better when the original
+recall that the “student-teacher” experiments tends to work much better when the original
 benchmark is much worse, and our initial benchmark was pretty good!
 Looking for a better example of where to apply this experiment will be in the final projects list!
 
@@ -577,4 +577,4 @@ These are all the articles in this series:
 [gh-nnfwp-v1_3]: https://github.com/mathspp/NNFwP/tree/v1.3
 [gh-nnfwp-mnist_small]: https://github.com/mathspp/nnfwp/blob/v1.3/examples/mnist_small.py
 [gh-nnfwp-teacher_student]: https://github.com/mathspp/nnfwp/blob/v1.3/examples/teacher_student.py
-[teacher-student-survey]: https://arxiv.org/abs/2006.05525
+[student-teacher-survey]: https://arxiv.org/abs/2006.05525

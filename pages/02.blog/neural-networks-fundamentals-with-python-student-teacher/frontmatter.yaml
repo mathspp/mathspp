@@ -1,8 +1,8 @@
 date: 26-07-2021
 metadata:
     author: "Rodrigo Girão Serrão"
-    og:image: "https://mathspp.com/blog/neural-networks-fundamentals-with-python-better-performance/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/neural-networks-fundamentals-with-python-better-performance/thumbnail.png"
+    og:image: "https://mathspp.com/blog/neural-networks-fundamentals-with-python-student-teacher/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/neural-networks-fundamentals-with-python-student-teacher/thumbnail.png"
 never_cache_twig: true
 process:
     twig: true
@@ -10,7 +10,7 @@ publish_date: 15-07-2021
 references:
   - "Gou, Jianping, Baosheng Yu, Stephen J. Maybank, and Dacheng Tao. “Knowledge distillation: A survey.” International Journal of Computer Vision 129, no. 6 (2021): 1789-1819., [https://arxiv.org/abs/2006.05525](https://arxiv.org/abs/2006.05525);"
   - "Ba, Lei Jimmy, and Rich Caruana. “Do deep nets really need to be deep?.” arXiv preprint arXiv:1312.6184 (2013)., [https://arxiv.org/abs/1312.6184](https://arxiv.org/abs/1312.6184);"
-slug: "neural-networks-fundamentals-with-python-better-performance"
+slug: "neural-networks-fundamentals-with-python-student-teacher"
 taxonomy:
     category: "blogpost"
     tag:
