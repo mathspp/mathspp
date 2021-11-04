@@ -1,4 +1,4 @@
-date: 03-11-2021
+date: 03-11-2021 17:00
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned how the rich comparison protocol and, in particular, how __eq__ works behind the scenes."
