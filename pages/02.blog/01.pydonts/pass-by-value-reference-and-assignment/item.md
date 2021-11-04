@@ -194,10 +194,99 @@ As we can see above, `id` is the built-in function you use to query the identity
 and `type` is the built-in function you use to query the type of an object.
 
 
+## (Im)mutability
+
+The (im)mutability of an object depends on its type.
+In other words, (im)mutability is a characteristic of types,
+not of specific objects!
+
+But what _exactly_ does it mean for an object to be mutable?
+Or for an object to be immutable?
+
+Recall that an object is characterised by its identity, its type, and its contents.
+A type is mutable if you can change the contents of its objects without changing its
+identity and its type.
+
+Lists are a great example of a mutable data type.
+Why?
+Because lists are _containers_: you can put things inside lists
+and you can remove stuff from inside those same lists.
+
+Below, you can see how the contents of the list `obj` change
+as we make method calls, but the identity of the list remains the same:
+
+```py
+>>> obj = []
+2287844221184
+>>> id(obj)
+2287844221184
+>>> obj.append(0); obj.extend([1, 2, 3]); obj
+[42, 0, 1, 2, 3]
+>>> id(obj)
+2287844221184
+>>> obj.pop(0); obj.pop(0); obj.pop(); obj
+42
+0
+3
+[1, 2]
+>>> id(obj)
+2287844221184
+```
+
+However, when dealing with immutable objects, it's a completely different story.
+If we check an English dictionary, this is what we get for the definition of “immutable”:
+
+ > adjective: immutable – unchanging over time or unable to be changed.
+
+Immutable objects' contents never change.
+Take a string as an example:
+
+```py
+>>> obj = "Hello, world!"
+```
+
+Strings are a good example for this discussion because, sometimes,
+they can _look_ mutable.
+But they are not!
+
+A very good indicator that an object is immutable is when all its methods return something.
+This is unlike list's `.append` method, for example!
+If you use `.append` on a list, you get no return value.
+On the other hand, whatever method you use on a string, the result is returned to you:
+
+```py
+>>> [].append(0)    # No return.
+>>> obj.upper()     # A string is returned.
+'HELLO, WORLD!"
+```
+
+Notice how `obj` wasn't updated automatically to `"HELLO, WORLD!"`.
+Instead, the new string was created and returned to you.
+
+Another great hint at the fact that strings are immutable is that you cannot
+assign to its indices:
+
+```py
+>>> obj[0]
+'H'
+>>> obj[0] = "h"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+```
+
+This shows that, when a string is created, it remains the same.
+It can be used to build _other_ strings, but the string itself always. stays.
+unchanged.
+
+As a reference,
+`int`, `float`, `str`, `tuple`, and `complex` are the most common types of immutable objects, and
+`list` and `dict` are the most common types of mutable objects.
+
+
 ## Variable names as labels
 
-Another important thing to understand is that the name `obj` in the snippet
-above has very little to do with the object itself.
+Another important thing to understand is that a variable name has very little to do with the object itself.
 
 In fact, the name `obj` was just a label that I decided to attach to the
 object that has identity 2698212637504, has the list type,
@@ -374,8 +463,7 @@ Python doesn't care that `bar`, as a nickname (as a variable name)
 had already been used.
 It is now pointing at that `3`!
 
-The most common types of immutable objects are numbers (integers and floats),
-strings, and tuples.
+
 
 
 ## Mutable arguments
@@ -403,16 +491,6 @@ your social security number does _not_ change:
 
 Do you understand what I'm trying to say?
 If not, drop a comment below and I'll try to help.
-
-The most common types of mutable objects are lists and dictionaries.
-
-As this sentence shows,
-it is the `type` of an object that determines if it is mutable or immutable.
-
-In other words, (im)mutability is a characteristic of types,
-not of specific instances.
-For example, it wouldn't make much sense to have _some_ strings be mutable
-and others be immutable.
 
 
 ## Beware when calling functions
