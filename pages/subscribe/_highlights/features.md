@@ -4,8 +4,8 @@ features:
     text: Get all the knowledge on your inbox
   - icon: fas fa-users
     text: Join hundreds of like-minded individuals
-  - icon: fas fa-exclamation
-    text: Be the first to know what's new
+  - icon: fab fa-discord
+    text: Gain access to an exclusive Discord community
 ---
 
 # 🐍📝 Mathspp Insider
