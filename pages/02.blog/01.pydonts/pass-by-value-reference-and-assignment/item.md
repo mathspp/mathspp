@@ -279,8 +279,8 @@ It can be used to build _other_ strings, but the string itself always. stays.
 unchanged.
 
 As a reference,
-`int`, `float`, `str`, `tuple`, and `complex` are the most common types of immutable objects, and
-`list` and `dict` are the most common types of mutable objects.
+`int`, `float`, `bool`, `str`, `tuple`, and `complex` are the most common types of immutable objects;
+`list`, `set`, and `dict` are the most common types of mutable objects.
 
 
 ## Variable names as labels
