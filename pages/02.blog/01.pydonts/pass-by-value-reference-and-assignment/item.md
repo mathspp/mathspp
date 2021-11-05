@@ -217,7 +217,6 @@ as we make method calls, but the identity of the list remains the same:
 
 ```py
 >>> obj = []
-2287844221184
 >>> id(obj)
 2287844221184
 >>> obj.append(0); obj.extend([1, 2, 3]); obj
