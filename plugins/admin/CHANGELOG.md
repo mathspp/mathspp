@@ -1,7 +1,46 @@
+# v1.10.24
+## 10/26/2021
+
+1. [](#new)
+   * Require **Grav 1.7.24**
+2. [](#improved)
+   * Use new `Http\Response` rather than deprecated `GPM\Response`
+3. [](#bugfix)
+   * Fixed an issue with invalid HTML throwing errors on HTML security scanning
+   * Clear cache when installing plugins
+
+# v1.10.23
+## 09/29/2021
+
+1. [](#new)
+   * Updated SCSS compiler to v1.8
+2. [](#improved)
+   * Updated with latest language strings from Crowdin.com
+3. [](#bugfix)
+   * Fixed images from plugins/themes disappearing when saving twice
+
+# v1.10.22
+## 09/16/2021
+
+1. [](#new)
+    * Updated SCSS compiler to v1.7
+
+# v1.10.21
+## 09/14/2021
+
+1. [](#new)
+    * Require **Grav 1.7.21**
+2. [](#improved)
+    * Added a note about UTC times in scheduler AT syntax help
+    * Now using a monospaced text-based scheduler AT field in scheduler for simplicity
+    * Improved `Admin:data()` and `Admin::getConfigurationData()` to be more strict
+3. [](#bugfix)
+    * Fixed configuration save location to point to existing config folder [#2176](https://github.com/getgrav/grav-plugin-admin/issues/2176)
+
 # v1.10.20
 ## 09/01/2021
 
-3. [](#bugfix)
+1. [](#bugfix)
     * Fixed regression `Argument 4 passed to Grav\Plugin\Form\TwigExtension::prepareFormField() must be of the type array` [#2177](https://github.com/getgrav/grav-plugin-admin/issues/2177)
     * Fixed `X-Frame-Options` to be `DENY` in all admin pages to prevent a clickjacking attack
 

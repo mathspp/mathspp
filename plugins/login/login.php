@@ -3,7 +3,7 @@
 /**
  * @package    Grav\Plugin\Login
  *
- * @copyright  Copyright (C) 2014 - 2020 RocketTheme, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2014 - 2021 RocketTheme, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -23,6 +23,7 @@ use Grav\Common\User\Interfaces\UserCollectionInterface;
 use Grav\Common\User\Interfaces\UserInterface;
 use Grav\Common\Utils;
 use Grav\Common\Uri;
+use Grav\Events\PluginsLoadedEvent;
 use Grav\Events\SessionStartEvent;
 use Grav\Framework\Flex\Interfaces\FlexCollectionInterface;
 use Grav\Framework\Flex\Interfaces\FlexObjectInterface;
@@ -30,6 +31,8 @@ use Grav\Framework\Form\Interfaces\FormInterface;
 use Grav\Framework\Session\SessionInterface;
 use Grav\Plugin\Form\Form;
 use Grav\Plugin\Login\Events\UserLoginEvent;
+use Grav\Plugin\Login\Invitations\Invitation;
+use Grav\Plugin\Login\Invitations\Invitations;
 use Grav\Plugin\Login\Login;
 use Grav\Plugin\Login\Controller;
 use Grav\Plugin\Login\RememberMe\RememberMe;
@@ -53,14 +56,18 @@ class LoginPlugin extends Plugin
     /** @var bool */
     protected $redirect_to_login;
 
+    /** @var Invitation|null */
+    protected $invitation;
+
     /**
      * @return array
      */
     public static function getSubscribedEvents(): array
     {
         return [
+            PluginsLoadedEvent::class   => [['onPluginsLoaded', 10]],
             SessionStartEvent::class    => ['onSessionStart', 0],
-            'onPluginsInitialized'      => [['autoload', 100000], ['initializeSession', 10000], ['initializeLogin', 1000]],
+            'onPluginsInitialized'      => [['initializeSession', 10000], ['initializeLogin', 1000]],
             'onTask.login.login'        => ['loginController', 0],
             'onTask.login.twofa'        => ['loginController', 0],
             'onTask.login.twofa_cancel' => ['loginController', 0],
@@ -68,7 +75,10 @@ class LoginPlugin extends Plugin
             'onTask.login.logout'       => ['loginController', 0],
             'onTask.login.reset'        => ['loginController', 0],
             'onTask.login.regenerate2FASecret' => ['loginController', 0],
+            'onPageTask.login.invite'    => ['loginController', 0],
             'onPagesInitialized'        => ['storeReferrerPage', 0],
+            'onDisplayErrorPage.401'    => ['onDisplayErrorPage401', -1],
+            'onDisplayErrorPage.403'    => ['onDisplayErrorPage403', -1],
             'onPageInitialized'         => [['authorizeLoginPage', 10], ['authorizePage', 0]],
             'onPageFallBackUrl'         => ['authorizeFallBackUrl', 0],
             'onTwigTemplatePaths'       => ['onTwigTemplatePaths', 0],
@@ -84,13 +94,30 @@ class LoginPlugin extends Plugin
     }
 
     /**
-     * [onPluginsInitialized:100000] Composer autoload.
+     * Composer autoload.
      *
      * @return ClassLoader
      */
     public function autoload(): ClassLoader
     {
         return require __DIR__ . '/vendor/autoload.php';
+    }
+
+    /**
+     * [onPluginsLoaded:10] Initialize login service.
+     * @throws \RuntimeException
+     */
+    public function onPluginsLoaded(): void
+    {
+        // Check to ensure sessions are enabled.
+        if (!$this->config->get('system.session.enabled') && !\constant('GRAV_CLI')) {
+            throw new \RuntimeException('The Login plugin requires "system.session" to be enabled');
+        }
+
+        // Define login service.
+        $this->grav['login'] = static function (Grav $c) {
+            return new Login($c);
+        };
     }
 
     public function onSessionStart(SessionStartEvent $event): void
@@ -147,11 +174,6 @@ class LoginPlugin extends Plugin
             throw new \RuntimeException('The Login plugin requires "system.session" to be enabled');
         }
 
-        // Define login service.
-        $this->grav['login'] = static function (Grav $c) {
-            return new Login($c);
-        };
-
         // Define current user service.
         $this->grav['user'] = static function (Grav $c) {
             $session = $c['session'];
@@ -203,7 +225,7 @@ class LoginPlugin extends Plugin
             $this->enable([
                 'onPagesInitialized' => ['addResetPage', 0],
             ]);
-        } elseif ($path === $this->login->getRoute('register')) {
+        } elseif ($path === $this->login->getRoute('register', true)) {
             $this->enable([
                 'onPagesInitialized' => ['addRegisterPage', 0],
             ]);
@@ -260,7 +282,7 @@ class LoginPlugin extends Plugin
     {
         $invalid_redirect_routes = [
             $this->login->getRoute('login') ?: '/login',
-            $this->login->getRoute('register') ?: '/register',
+            $this->login->getRoute('register', true) ?: '/register',
             $this->login->getRoute('activate') ?: '/activate_user',
             $this->login->getRoute('forgot') ?: '/forgot_password',
             $this->login->getRoute('reset') ?: '/reset_password',
@@ -491,6 +513,32 @@ class LoginPlugin extends Plugin
     }
 
     /**
+     * @param Event $event
+     */
+    public function onDisplayErrorPage401(Event $event): void
+    {
+        if ($this->isAdmin()) {
+            return;
+        }
+
+        $event['page'] = $this->login->addPage('login');
+        $event->stopPropagation();
+    }
+
+    /**
+     * @param Event $event
+     */
+    public function onDisplayErrorPage403(Event $event): void
+    {
+        if ($this->isAdmin()) {
+            return;
+        }
+
+        $event['page'] = $this->login->addPage('unauthorized');
+        $event->stopPropagation();
+    }
+
+    /**
      * [onPageInitialized]
      */
     public function authorizeLoginPage(Event $event): void
@@ -508,6 +556,18 @@ class LoginPlugin extends Plugin
         $template = $page->template();
         if (!in_array($template, ['forgot', 'login', 'profile', 'register', 'reset', 'unauthorized'])) {
             return;
+        }
+
+        /** @var Uri $uri */
+        $uri = $this->grav['uri'];
+        $token = $uri->param('');
+        if ($token && $template === 'register') {
+            // Special register page for invited users.
+            $invitation = Invitations::getInstance()->get($token);
+            if ($invitation && !$invitation->isExpired()) {
+                $this->invitation = $invitation;
+                return;
+            }
         }
 
         // Check if the login page is enabled.
@@ -568,9 +628,6 @@ class LoginPlugin extends Plugin
 
             $twig->twig_vars['form'] = new Form($login_page);
         } else {
-            /** @var Language $l */
-            $l = $this->grav['language'];
-            $this->grav['messages']->add($l->translate('PLUGIN_LOGIN.ACCESS_DENIED'), 'error');
             $twig->twig_vars['notAuthorized'] = true;
 
             $this->setUnauthorizedPage();
@@ -606,6 +663,17 @@ class LoginPlugin extends Plugin
         // add CSS for frontend if required
         if (!$this->isAdmin() && $this->config->get('plugins.login.built_in_css')) {
             $this->grav['assets']->add('plugin://login/css/login.css');
+        }
+
+        // Handle invitation during the registration.
+        if ($this->invitation) {
+            /** @var Form $form */
+            $form = $twig->twig_vars['form'];
+            /** @var Uri $uri */
+            $uri = $this->grav['uri'];
+
+            $form->action = $uri->route() . $uri->params();
+            $form->setData('email', $this->invitation->email);
         }
 
         $task = $this->grav['uri']->param('task') ?: ($_POST['task'] ?? '');
@@ -644,7 +712,7 @@ class LoginPlugin extends Plugin
             throw new \RuntimeException($language->translate('PLUGIN_LOGIN.PLUGIN_LOGIN_DISABLED'));
         }
 
-        if (!$this->config->get('plugins.login.user_registration.enabled')) {
+        if (null === $this->invitation && !$this->config->get('plugins.login.user_registration.enabled')) {
             throw new \RuntimeException($language->translate('PLUGIN_LOGIN.USER_REGISTRATION_DISABLED'));
         }
 
@@ -735,6 +803,9 @@ class LoginPlugin extends Plugin
         } else {
             $data['state'] = 'enabled';
         }
+        if ($this->invitation) {
+            $data += $this->invitation->account;
+        }
         $data_object = (object) $data;
         $this->grav->fireEvent('onUserLoginRegisterData', new Event(['data' => &$data_object]));
 
@@ -743,6 +814,14 @@ class LoginPlugin extends Plugin
         if ($user instanceof FlexObjectInterface) {
             $flash->clearFiles();
             $flash->save();
+        }
+
+        // Remove invitation after it has been used.
+        if ($this->invitation) {
+            $invitations = Invitations::getInstance();
+            $invitations->remove($this->invitation);
+            $invitations->save();
+            $this->invitation = null;
         }
 
         $this->grav->fireEvent('onUserLoginRegisteredUser', new Event(['user' => &$user]));
@@ -1141,7 +1220,10 @@ class LoginPlugin extends Plugin
     public static function defaultRedirectAfterLogin()
     {
         /** @var Login $login */
-        $login = Grav::instance()['login'];
+        $login = Grav::instance()['login'] ?? null;
+        if (null === $login) {
+            return '/';
+        }
 
         return $login->getRoute('after_login') ?? false;
     }
@@ -1153,7 +1235,10 @@ class LoginPlugin extends Plugin
     public static function defaultRedirectAfterLogout()
     {
         /** @var Login $login */
-        $login = Grav::instance()['login'];
+        $login = Grav::instance()['login'] ?? null;
+        if (null === $login) {
+            return '/';
+        }
 
         return $login->getRoute('after_logout') ?? false;
     }

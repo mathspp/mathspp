@@ -56,6 +56,7 @@ class AdminController extends AdminBaseController
     public function initialize(Grav $grav = null, $view = null, $task = null, $route = null, $post = null)
     {
         $this->grav = $grav;
+        $this->admin = $this->grav['admin'];
         $this->view = $view;
         $this->task = $task ?: 'display';
         if (isset($post['data'])) {
@@ -67,7 +68,6 @@ class AdminController extends AdminBaseController
         }
         $this->post  = $this->getPost($post);
         $this->route = $route;
-        $this->admin = $this->grav['admin'];
 
         $this->grav->fireEvent('onAdminControllerInit', new Event(['controller' => &$this]));
     }
@@ -165,7 +165,13 @@ class AdminController extends AdminBaseController
                 // Not used if Flex-Objects plugin handles users.
                 return $this->saveUser();
             default:
-                return $this->saveDefault();
+                if ($this->saveDefault()) {
+                    $route = $this->grav['uri']::getCurrentRoute();
+                    $this->setRedirect($route->withGravParam('task', null)->toString(), 302);
+                    $this->redirect();
+                }
+
+                return false;
         }
     }
 
@@ -174,11 +180,11 @@ class AdminController extends AdminBaseController
      */
     protected function saveDefault()
     {
-        // Handle standard data types.
-        $type = $this->getDataType();
-        $obj = $this->admin->getConfigurationData($type, $this->data);
-
         try {
+            // Handle standard data types.
+            $type = $this->getDataType();
+
+            $obj = $this->admin->getConfigurationData($type, $this->data);
             $obj->validate();
         } catch (\Exception $e) {
             /** @var Debugger $debugger */

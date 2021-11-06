@@ -1,5 +1,5 @@
 name: Error
-version: 1.7.1
+version: 1.8.0
 description: Displays the error page.
 type: plugin
 slug: error
@@ -13,7 +13,7 @@ keywords: error, plugin, required
 bugs: https://github.com/getgrav/grav-plugin-error/issues
 license: MIT
 dependencies:
-  - { name: grav, version: '>=1.6.0' }
+  - { name: grav, version: '>=1.7.0' }
 
 form:
   validation: strict

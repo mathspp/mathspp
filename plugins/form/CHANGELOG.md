@@ -1,3 +1,31 @@
+# v5.1.3
+## 10/26/2021
+
+1. [](#new)
+    * Require **Grav 1.7.24**
+    * Added support to disable a form, making it readonly
+    * Added `|value_and_label` Twig filter to convert options to value/label pairs
+1. [](#improved)
+    * Improved Twig function `include_form_field()` to allow the second parameter to be an array of layouts
+
+# v5.1.2
+## 09/29/2021
+
+1. [](#improved)
+    * Improved support for Twig 2/3
+
+# v5.1.1
+## 09/14/2021
+
+1. [](#new)
+    * Require **Grav 1.7.21**
+1. [](#bugfix)
+    * Fixed accidental admin plugin requirement for YAML filter in the form
+    * Fixed `GravForm.config` JS to have correct `current_url` and `current_params` settings
+    * Fixed custom file upload and remove routes
+    * Fixed bug where uploading file has no effect [#349](https://github.com/getgrav/grav-plugin-form/issues/349)
+    * Fixed field with numeric field name in `prepare_form_fields()` [#530](https://github.com/getgrav/grav-plugin-form/issues/530)
+
 # v5.1.0
 ## 08/31/2021
 

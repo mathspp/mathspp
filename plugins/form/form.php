@@ -31,7 +31,9 @@ use RocketTheme\Toolbox\File\YamlFile;
 use RocketTheme\Toolbox\File\File;
 use RocketTheme\Toolbox\Event\Event;
 use RuntimeException;
+use Twig\Environment;
 use Twig\Extension\CoreExtension;
+use Twig\Extension\EscaperExtension;
 use Twig\TwigFunction;
 use function count;
 use function function_exists;
@@ -355,10 +357,23 @@ class FormPlugin extends Plugin
             new TwigFunction('forms', [$this, 'getForm'])
         );
 
-        $this->grav['twig']->twig()->getExtension(CoreExtension::class)->setEscaper('yaml', function ($twig, $string, $charset) {
-            return Yaml::dump($string);
+        if (Environment::VERSION_ID > 20000) {
+            // Twig 2/3
+            $this->grav['twig']->twig()->getExtension(EscaperExtension::class)->setEscaper(
+                'yaml',
+                function ($twig, $string, $charset) {
+                    return Yaml::dump($string);
+                }
+            );
+        } else {
+            // Twig 1.x
+            $this->grav['twig']->twig()->getExtension(CoreExtension::class)->setEscaper(
+                'yaml',
+                function ($twig, $string, $charset) {
+                    return Yaml::dump($string);
+                }
+            );
         }
-        );
 
     }
 
@@ -919,9 +934,10 @@ class FormPlugin extends Plugin
      * Retrieve a form based on the form name
      *
      * @param string $form_name
+     * @param string $unique_id
      * @return mixed
      */
-    protected function getFormByName($form_name)
+    protected function getFormByName($form_name, $unique_id = '')
     {
         $form = $this->active_forms[$form_name] ?? null;
         if (!$form) {
@@ -931,9 +947,11 @@ class FormPlugin extends Plugin
                 return null;
             }
 
-            // Reset form to change the cached unique id and to fire onFormInitialized event.
-            $form->setUniqueId('');
-            $form->reset();
+            if ('' === $unique_id) {
+                // Reset form to change the cached unique id and to fire onFormInitialized event.
+                $form->setUniqueId('');
+                $form->reset();
+            }
 
             // Register form to the active forms to get the same instance back next time.
             $this->active_forms[$form_name] = $form;
@@ -1025,14 +1043,14 @@ class FormPlugin extends Plugin
             }
 
             // Try to find the posted form if available.
-            $form_name = $this->grav['uri']->post('__form-name__', FILTER_SANITIZE_STRING);
-            $unique_id = $this->grav['uri']->post('__unique_form_id__', FILTER_SANITIZE_STRING);
+            $form_name = $this->grav['uri']->post('__form-name__', FILTER_SANITIZE_STRING) ?? '';
+            $unique_id = $this->grav['uri']->post('__unique_form_id__', FILTER_SANITIZE_STRING) ?? '';
 
             if (!$form_name) {
                 $form_name = $page ? $page->slug() : null;
             }
 
-            $form = $this->getFormByName($form_name);
+            $form = $this->getFormByName($form_name, $unique_id);
 
             // last attempt using current page's form
             if (!$form && $page) {

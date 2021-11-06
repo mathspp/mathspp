@@ -1,3 +1,12 @@
+# v1.8.0
+## 09/07/2021
+
+1. [](#new)
+    * Require **Grav 1.7.0**
+    * Added support for `{% throw 404 'Not Found' %}` from twig template to show the error page
+1. [](#improved)
+    * Do not cache 404 error pages by default
+
 # v1.7.1
 ## 10/08/2020
 
