@@ -3,7 +3,6 @@ metadata:
     author: "Rodrigo Girão Serrão"
     og:image: "https://mathspp.com/blog/neural-networks-fundamentals-with-python-student-teacher/thumbnail.png"
     twitter:image: "https://mathspp.com/blog/neural-networks-fundamentals-with-python-student-teacher/thumbnail.png"
-never_cache_twig: true
 process:
     twig: true
 publish_date: 15-07-2021

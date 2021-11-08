@@ -3,7 +3,6 @@ metadata:
     author: "Rodrigo Girão Serrão"
     og:image: "https://mathspp.com/blog/neural-networks-fundamentals-with-python-subtleties/thumbnail.png"
     twitter:image: "https://mathspp.com/blog/neural-networks-fundamentals-with-python-subtleties/thumbnail.png"
-never_cache_twig: true
 process:
     twig: true
 references:
