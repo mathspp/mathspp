@@ -1,24 +1,3 @@
----
-date: 31-10-2021
-metadata:
-    author: Rodrigo Girão Serrão
-    description: "Can you help these kids trick or treat their entire neighbourhood in this Halloween special?"
-    og:image: https://mathspp.com/blog/problems/trick-or-treat/thumbnail.png
-    twitter:image: https://mathspp.com/blog/problems/trick-or-treat/thumbnail.png
-process:
-    twig: true
-slug: trick-or-treat
-taxonomy:
-    category: [blogpost, problem]
-    tag:
-      - combinatorics
-      - logic
-      - mathematics
-      - probability
-title: "Problem #048 – trick or treat"
-twig_first: true
----
-
 Can you help these kids trick or treat their entire neighbourhood in this Halloween special?
 
 ===
@@ -48,6 +27,12 @@ If you need any clarification whatsoever, feel free to ask in the comment sectio
 
 
 # Solvers
+
+Congratulations to the ones that solved this problem correctly and, in particular, to the ones
+who sent me their correct solutions:
+
+ - [Matthias W.](https://twitter.com/m2u_84), Germany;
+ - Kees L., Netherlands;
 
 Know how to solve this?
 

@@ -1,21 +1,3 @@
----
-date: 18-10-2021
-metadata:
-    author: Rodrigo Girão Serrão
-    description: "How can two doctors operate two patients with only two pairs of latex gloves?!"
-    og:image: https://mathspp.com/blog/problems/surgery-gloves/thumbnail.png
-    twitter:image: https://mathspp.com/blog/problems/surgery-gloves/thumbnail.png
-process:
-    twig: true
-slug: surgery-gloves
-taxonomy:
-    category: [blogpost, problem]
-    tag:
-      - logic
-title: "Problem #047 – surgery gloves"
-twig_first: true
----
-
 How can two doctors operate two patients with only two pairs of latex gloves?!
 
 ===
@@ -60,6 +42,7 @@ who sent me their correct solutions:
  - David H., Taiwan;
  - Chukwudi, Nigeria/UK;
  - Oliver S., Germany;
+ - [Matthias W.](https://twitter.com/m2u_84), Germany;
 
 Join the list of solvers by [emailing me][email] your solution!
 
