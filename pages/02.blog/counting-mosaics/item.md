@@ -488,7 +488,7 @@ It took much more time to write this sloppy blog article than this piece
 of APL code!
 
 This was fun, maybe I'll do it again in the future.
-If you find this sort of article interesting, let me know.
+If you find this sort of article interesting, let me know in the comments below!
 I tend to write mostly about Python, so this might be a bit
 different from what you are used to.
 
