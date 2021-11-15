@@ -49,7 +49,22 @@ Join the list of solvers by [emailing me][email] your solution!
 
 # Solution
 
-The solution to this problem will be posted here after this problem has been live for 2 weeks.
+The solution for this is as follows:
+
+Let the gloves be numbered 1 and 2.
+
+ - Charles wears both gloves, 2 on top of 1, to operate Alice.
+ - Charles removes gloves 2 and uses gloves 1 to operate Bob.
+
+At this point, gloves 1 touched Charles' skin and Bob's blood,
+while gloves 2 only touched Alice's blood but no one's skin.
+
+ - Diana puts gloves 2 on, and operates Alice;
+ - Diana puts gloves 1 on top of 2, and operates Bob.
+
+There you have it!
+This is the way to go.
+Not very hygienic, but works from the logic point of view, doesn't it?
 
 [Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly
 problems sent straight to your inbox.
