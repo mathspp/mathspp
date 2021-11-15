@@ -1,0 +1,16 @@
+date: 14-11-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Can you make the pyramid point the other way by moving only three coins?"
+    og:image: https://mathspp.com/blog/problems/coin-pyramid/thumbnail.png
+    twitter:image: https://mathspp.com/blog/problems/coin-pyramid/thumbnail.png
+process:
+    twig: true
+slug: coin-pyramid
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - geometry
+      - mathematics
+title: "Problem #049 – coin pyramid"
+twig_first: true
