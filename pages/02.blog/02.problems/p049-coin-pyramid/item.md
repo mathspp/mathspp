@@ -57,6 +57,14 @@ who sent me their correct solutions:
  - Arun, Canada;
  - Gabbar S., India;
  - André R., Canada;
+ - Luiz G., UK;
+ - Daniel D., Sweden;
+ - Nishant M., India;
+ - Tahoor B., India;
+ - Nelson R., India;
+ - Rex B., US;
+ - Marco M., Italy;
+ - Pedro G., Portugal;
 
 Know how to solve this?
 
