@@ -46,14 +46,16 @@ This problem was shared by a solver of a previous problem, so thank _you_!
 # Solvers
 
 
-<!--
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
 
- - [Matthias W.](https://twitter.com/m2u_84), Germany;
- - Kees L., Netherlands;
  - David H., Taiwan;
--->
+ - Zech Z., US;
+ - Diana O., Venezuela;
+ - Michael W., US;
+ - Christ van W., The Netherlands;
+ - Arun, Canada;
+ - Gabbar S., India;
 
 Know how to solve this?
 
