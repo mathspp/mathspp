@@ -65,6 +65,7 @@ who sent me their correct solutions:
  - Rex B., US;
  - Marco M., Italy;
  - Pedro G., Portugal;
+ - Vikas Z., India;
 
 Know how to solve this?
 
