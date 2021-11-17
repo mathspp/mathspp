@@ -946,6 +946,12 @@ This Pydon't showed you that:
  - you can implement `__copy__` and `__deepcopy__` if you want your own objects to be copiable.
 
 
+## See also
+
+If you prefer video content, you can check [this YouTube video][jacob-yt-video],
+which was inspired by this article.
+
+
 <!-- v -->
 If you liked this Pydon't be sure to leave a reaction below and share this with your friends and fellow Pythonistas.
 Also, [subscribe to the newsletter][subscribe] so you don't miss
@@ -960,3 +966,4 @@ a single Pydon't!
 [argparse]: https://docs.python.org/3/library/argparse.html
 [os]: https://docs.python.org/3/library/os.html
 [http-server]: https://docs.python.org/3/library/http.server.html
+[jacob-yt-video]: https://www.youtube.com/watch?v=D3IffJOwDY0
