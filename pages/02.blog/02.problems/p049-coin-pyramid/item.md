@@ -67,6 +67,8 @@ who sent me their correct solutions:
  - Pedro G., Portugal;
  - Vikas Z., India;
  - Robin B., Scotland;
+ - Michal K., Czech Republic;
+ - “Helaxious”, Brazil;
 
 Know how to solve this?
 
