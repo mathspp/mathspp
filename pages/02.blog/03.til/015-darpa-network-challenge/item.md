@@ -21,11 +21,12 @@ The challenge had an associated pecuniary prize worth $40,000.
 
 The challenge was won by an MIT team who employed a networking referral strategy:
 each of the 10 balloons was defined to be worth \$4,000 (total prize divided by total number of balloons).
+Then,
 
-The person that accurately reported the location of a balloon would be awarded \$2,000.
-The person that had referred the reporter got \$1,000.
-The person that referred the referrer got \$500.
-And so on, and so forth.
+ - the person that accurately reported the location of a balloon would be awarded $2,000;
+ - the person that had referred the reporter got $1,000;
+ - the person that referred the referrer got $500;
+ - and so on, and so forth...
 
 By consecutively dividing the prize in half, the team was able to make sure that the incentives flowed up the referral network, and this incentivised people to refer yet other people, as the new referrals would be working “for” the referrers, and not “against”.
 
