@@ -36,7 +36,7 @@ who sent me their correct solutions:
  - Michael W., USA;
  - Pedro G., Portugal;
  - B. Praveen R., India;
- - Kees L., Netherlands;
+ - Kees L., The Netherlands;
  - Jerry J., USA;
  - Mihalis G., Greece;
  - Alfredo E., Mexico;

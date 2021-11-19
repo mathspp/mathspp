@@ -53,7 +53,7 @@ who sent me their correct solutions:
  - Zech Z., US;
  - Diana O., Venezuela;
  - Michael W., US;
- - Christ van W., The Netherlands;
+ - Christ van W., Netherlands;
  - Arun, Canada;
  - Gabbar S., India;
  - André R., Canada;
@@ -69,6 +69,7 @@ who sent me their correct solutions:
  - Robin B., Scotland;
  - Michal K., Czech Republic;
  - “Helaxious”, Brazil;
+ - Kees de L., Netherlands;
 
 Know how to solve this?
 
