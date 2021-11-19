@@ -492,7 +492,7 @@ f"{name:<10}"
 f"{name} is {age} years old."
 f"{name:^{w}}"
 
-#  ❌... over `.format`
+# ❌ ... over `.format`
 "{!s} {!r}".format(name, name)
 "{:<10}".format(name)
 "{name} is {age} years old.".format(name=name, age=age)
