@@ -1,0 +1,20 @@
+date: 19-11-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This article compares the three main string formatting methods in Python and suggests which methods to use in each situation."
+    og:image: "https://mathspp.com/blog/pydonts/string-formatting-comparison/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/pydonts/string-formatting-comparison/thumbnail.png"
+references:
+  - "Python 2 Docs, String Formatting Operations, [https://docs.python.org/2/library/stdtypes.html#string-formatting](https://docs.python.org/2/library/stdtypes.html#string-formatting) [last accessed 10-11-2021]"
+  - "Python 3 Docs, The Python Tutorial, Fancier Output Formatting, [https://docs.python.org/3/tutorial/inputoutput.html](https://docs.python.org/3/tutorial/inputoutput.html) [last accessed 10-11-2021]"
+  - "Python 3 Docs, The Python Standard Library, `string`, [https://docs.python.org/3/library/string.html#string-formatting](https://docs.python.org/3/library/string.html#string-formatting) [last accessed 10-11-2021]"
+  - "PEP 3101 – Advanced String Formatting, [https://www.python.org/dev/peps/pep-3101/](https://www.python.org/dev/peps/pep-3101/) [last accessed 10-11-2021]"
+  - "PEP 498 – Literal String Interpolation, [https://www.python.org/dev/peps/pep-0498/](https://www.python.org/dev/peps/pep-0498/) [last accessed 10-11-2021]"
+  - "PyFormat, [https://pyformat.info](https://pyformat.info) [last accessed 17-11-2021]"
+slug: "string-formatting-comparison"
+taxonomy:
+    category: [blogpost, pydont]
+    tag:
+      - "programming"
+      - "python"
+title: "String formatting comparison | Pydon't 🐍"
