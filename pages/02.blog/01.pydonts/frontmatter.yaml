@@ -10,6 +10,7 @@ hero_classes: "parallax overlay-dark text-light "
 hero_image: pydonts-thumbnail.png
 menu: Pydon'ts
 metadata:
+    description: "Pydon'ts are Python tips that help you write better code."
     og:image: "https://mathspp.com/blog/pydonts/pydonts-thumbnail.png"
     twitter:image: "https://mathspp.com/blog/pydonts/pydonts-thumbnail.png"
 slug: pydonts
