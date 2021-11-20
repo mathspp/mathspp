@@ -70,6 +70,8 @@ who sent me their correct solutions:
  - Michal K., Czech Republic;
  - “Helaxious”, Brazil;
  - Kees de L., Netherlands;
+ - Reza M., Kenya;
+ - Alex van V., Netherlands;
 
 Know how to solve this?
 
