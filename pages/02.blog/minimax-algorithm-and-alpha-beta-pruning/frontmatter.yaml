@@ -1,0 +1,25 @@
+date: 21-11-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This article will teach you about the minimax algorithm and alpha-beta pruning, from a beginner's perspective."
+    og:image: https://mathspp.com/blog/minimax-algorithm-and-alpha-beta-pruning/thumbnail.png
+    twitter:image: https://mathspp.com/blog/minimax-algorithm-and-alpha-beta-pruning/thumbnail.png
+process:
+    twig: true
+references:
+  - "“Alpha-beta pruning”, Wikipedia article, [https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning](https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning) [last accessed 20-11-2021];"
+  - "“Artificial Intelligence: A Modern Approach”, Norvig, Peter; GitHub repository with code, [https://github.com/aimacode/aima-python](https://github.com/aimacode/aima-python) [last accessed 20-11-2021];"
+  - "“Step by Step: Alpha Beta Pruning”, YouTube video, [https://www.youtube.com/watch?v=xBXHtz4Gbdo](https://www.youtube.com/watch?v=xBXHtz4Gbdo) [last accessed 20-11-2021];"
+  - "“Algorithms Explained – minimax and alpha-beta pruning”, YouTube video, [https://www.youtube.com/watch?v=l-hh51ncgDI](https://www.youtube.com/watch?v=l-hh51ncgDI) [last accessed 20-11-2021];"
+slug: "minimax-algorithm-and-alpha-beta-pruning"
+taxonomy:
+    category: [blogpost]
+    tag:
+      - algorithms
+      - artificial intelligence
+      - graph theory
+      - mathematics
+      - programming
+      - python
+      - recursion
+title: "Minimax algorithm and alpha-beta pruning"
