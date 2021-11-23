@@ -59,7 +59,7 @@ Great job!
 
 Now, write a function that accepts a programming language name and its (estimated) number of users,
 and returns a string saying something along the lines of
-“<insert language> rocks! Did you know that <insert language> has around <insert number> users?”.
+“&lt;insert language&gt; rocks! Did you know that &lt;insert language&gt; has around &lt;insert number&gt; users?”.
 
 Can you do it?
 Recall that you are _not_ supposed to use any string formatting facilities, whatsoever!
