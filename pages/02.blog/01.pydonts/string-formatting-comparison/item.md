@@ -240,7 +240,7 @@ The two more modern methods do the distinction with the `!s` and `!r` flags.
 
 When we need to format many values across many lines,
 for example to display a table-like piece of output,
-we may want to align all values and pad the accordingly.
+we may want to align all values and pad them accordingly.
 This is one of the great use cases where string formatting shines.
 
 ```py
@@ -256,7 +256,7 @@ f"{lang:<10}"
 ```
 
 The C-style aligns on the right, by default, whereas `.format` and f-strings
-format on the left.
+align on the left.
 Hence, above we could have written
 
 ```py
@@ -282,7 +282,7 @@ To right align, use `>` for the modern methods, or use nothing at all
 for the C-style formatting.
 
 Remember, the modern methods use `<^>` for alignment,
-and the tip of the arrow points to the alignment direction.
+and the tip of the arrow points to the alignment direction:
 
 <!--v-->
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">📐 You can align fields when doing string formatting in Python 🐍<br><br>You can specify the width after the colon `:`, and you can use &lt;^&gt; to pick different alignment directions.<br><br>It&#39;s easy to remember: the tip of the symbol points in the same direction as the alignment itself! <a href="https://t.co/o9eNf0gXFS">pic.twitter.com/o9eNf0gXFS</a></p>&mdash; Rodrigo 🐍📝 (@mathsppblog) <a href="https://twitter.com/mathsppblog/status/1457674196167929865?ref_src=twsrc%5Etfw">November 8, 2021</a></blockquote>
