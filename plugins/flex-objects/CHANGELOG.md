@@ -1,3 +1,24 @@
+# v1.1.5
+## 11/24/2021
+
+1. [](#new)
+    * Added method `ObjectController::checkAuthorizations()` to check if one of the actions is true
+2. [](#bugfix)
+    * Fixed regression when calling flex router with a path
+
+# v1.1.4
+## 11/16/2021
+
+1. [](#new)
+    * Require **Grav 1.7.25**
+1. [](#improved)
+    * Changed flex router not to trigger `onPageNotFound` event
+    * Changed flex router to be called also with empty path
+    * If ACL check for the object fails, display unauthorized page instead of 404
+1. [](#bugfix)
+    * Fixed unescaped messages in JSON responses
+    * Fixed `Call to a member function getName() on null` when using file field [#149](https://github.com/trilbymedia/grav-plugin-flex-objects/issues/149)
+
 # v1.1.3
 ## 10/26/2021
 

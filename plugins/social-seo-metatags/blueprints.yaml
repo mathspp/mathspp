@@ -1,5 +1,5 @@
 name: Social & SEO Meta Tags
-version: 2.2.1
+version: 3.0.2
 description: Meta-tags for SEO and Social integration (Facebook Open Graph and Twitter Cards)
 icon: code
 author:
@@ -73,6 +73,17 @@ form:
                       0: PLUGINS.SOCIAL_SEO_METATAGS.NO
                     validate:
                       type: bool
+                  seo.breadcrumb:
+                    type: toggle
+                    label: PLUGINS.SOCIAL_SEO_METATAGS.GENERAL.BREADCRUMB.NAME
+                    help: PLUGINS.SOCIAL_SEO_METATAGS.GENERAL.BREADCRUMB.HELP
+                    highlight: 1
+                    default: 0
+                    options:
+                      1: PLUGINS.SOCIAL_SEO_METATAGS.YES
+                      0: PLUGINS.SOCIAL_SEO_METATAGS.NO
+                    validate:
+                      type: bool
                   seo.keywords.length:
                     type: text
                     size: x-small
@@ -89,6 +100,17 @@ form:
                     help: PLUGINS.SOCIAL_SEO_METATAGS.GENERAL.QUOTE.SIMPLE_RAW.HELP
                     highlight: 1
                     default: 1
+                    options:
+                      1: PLUGINS.SOCIAL_SEO_METATAGS.YES
+                      0: PLUGINS.SOCIAL_SEO_METATAGS.NO
+                    validate:
+                      type: bool
+                  image.use_cache:
+                    type: toggle
+                    label: PLUGINS.SOCIAL_SEO_METATAGS.GENERAL.IMAGE.USE_CACHE.NAME
+                    help: PLUGINS.SOCIAL_SEO_METATAGS.GENERAL.IMAGE.USE_CACHE.HELP
+                    highlight: 1
+                    default: 0
                     options:
                       1: PLUGINS.SOCIAL_SEO_METATAGS.YES
                       0: PLUGINS.SOCIAL_SEO_METATAGS.NO

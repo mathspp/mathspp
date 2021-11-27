@@ -26,10 +26,17 @@ en:
           LENGTH:
             NAME: 'Number of keywords'
             HELP: 'Maximum number of keywords to display in meta-tag'
+        BREACRUMB:
+          NAME: 'Implement SEO Breadcrumb (beta)'
+          HELP: 'Integrate JSON-LD breacrumb script in your page'
         QUOTE:
           SIMPLE_RAW:
             NAME: 'Convert simple quote to html entity (using code #039;)'
             HELP: 'For Twitter sharing, raw simple quote may be necessary.'
+        IMAGE:
+          USE_CACHE:
+            NAME: 'Use Images Cache'
+            HELP: 'Allow to use the cache to render images'
         DEFAULT:
           IMAGE:
             LABEL: 'Default image'
@@ -86,10 +93,17 @@ fr:
           LENGTH:
             NAME: 'Nombre de mots-clés'
             HELP: 'Nombre de mots-clés maximal à afficher dans la meta-tag'
+        BREADCRUMB:
+          NAME: 'Intégrer le fil d''ariane SEO (beta)'
+          HELP: 'Intègre le script JSON-LD du fil d''ariane dans votre page'
         QUOTE:
           SIMPLE_RAW:
             NAME: 'Convertir les guillemets simples en entité HTML (utilisant code #039;)'
             HELP: 'Pour les partages Twitter, utiliser les guillemets simple brut est nécessaire.'
+        IMAGE:
+          USE_CACHE:
+            NAME: 'Utiliser le cache pour les images'
+            HELP: 'Permet d''utiliser le cache pour afficher les images'
         DEFAULT:
           IMAGE:
             LABEL: 'Image par défaut'

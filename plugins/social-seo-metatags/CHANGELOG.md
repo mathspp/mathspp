@@ -1,3 +1,20 @@
+# v3.0.2
+## 11/09/2021
+1. [](#bugfix)
+   * Issue #28: robustness for $image initialization in getDefaultImage()
+   
+# v3.0.1
+## 11/08/2021
+1. [](#bugfix)
+   * Issue #26: fix getImage bad argument type
+   
+# v3.0.0
+## 11/07/2021
+1. [](#bugfix)
+   * Issue #25: operation of header_image_file for antimatter theme
+2. [](#new)
+   * Issue #23: implement SE breadcrumb (beta)
+   * Issue #24: implement option to use cache to render images
 
 # v2.2.1
 ## 03/19/2021

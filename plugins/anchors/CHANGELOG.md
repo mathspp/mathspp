@@ -1,3 +1,12 @@
+# v1.6.0
+## 11/24/2021
+
+1. [](#new)
+   * Added new option `copy_to_clipboard` to automatically copy the link to clipboard
+2. [](#improved)
+   * Removed reliance on `JQuery` for DOM ready check
+   * Updated `anchors.js` to version 4.3.1
+
 # v1.5.4
 ## 12/02/2020
 

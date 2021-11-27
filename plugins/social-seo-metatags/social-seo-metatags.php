@@ -105,6 +105,53 @@ class SocialSEOMetaTagsPlugin extends Plugin
 
     //Set new meta to the page
     $page->metadata($meta);
+
+    // Build breadcrumb
+    if ($this->config->get('plugins.social-seo-metatags.seo.breadcrumb')) {
+      $this->buildBreadcrumb();
+    }
+  }
+
+  /**
+   * Build JSON-LD breadcrumb
+   *
+   * @doc https://developers.google.com/search/docs/advanced/structured-data/breadcrumb
+   */
+  private function buildBreadcrumb() {
+    /** @var $page Page */
+    $page = $this->grav["page"];
+    /** @var @var $assets \Grav\Common\Assets */
+    $assets = $this->grav['assets'];
+
+    $inline = '{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [';
+
+    // Current page
+    $inline .= '{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "' . $page->title() . '",
+    "item": "'. Utils::url($page->url(), true) . '"
+  }';
+
+    // Children
+    $index = 2;
+    foreach ($page->children() as $child) {
+      $inline .= '{
+    "@type": "ListItem",
+    "position": "'. strval($index) .'",
+    "name": "' . $child->title() . '",
+    "item": "'. Utils::url($child->url(), true) . '"
+  }';
+      $index++;
+    }
+    $inline .= ']
+}';
+
+    $assets->addInlineJs($inline, null, 'bottom', 'application/ld+json');
+
   }
 
   private function getSEOMetatags($meta)
@@ -248,7 +295,7 @@ class SocialSEOMetaTagsPlugin extends Plugin
 
     // Check if Antimatter theme header_image_file field is defined
     if (isset($page->header()->header_image_file)) {
-      $antimatterFile = $page->header()->header_image_file;
+      $antimatterFile = $page->path() . '/' . $page->header()->header_image_file;
       if (is_file($antimatterFile)) {
         $image = MediumFactory::fromFile($antimatterFile);
       }
@@ -276,9 +323,23 @@ class SocialSEOMetaTagsPlugin extends Plugin
       $image = isset($images) ? array_shift($images) : null;
     }
 
-    return $image
-      ? Utils::url($image->url(), true)
-      : null;
+    return $this->getImage($image);
+  }
+
+  /**
+   * Get the image path according context
+   *
+   * @param ImageMedium|null $image
+   * @return false|string|null
+   */
+  private function getImage(?ImageMedium $image)
+  {
+    if ($image !== null) {
+      $url = $this->config->get('plugins.social-seo-metatags.image.use_cache') ? $image->cache()->url() : $image->url();
+      return Utils::url($url, true);
+    }
+
+    return null;
   }
 
   /**
@@ -292,6 +353,8 @@ class SocialSEOMetaTagsPlugin extends Plugin
       ->grav['config']
       ->get('plugins.social-seo-metatags.default.image');
 
+    $image = null;
+
     if (is_array($default)) {
       $path = array_key_first($default);
     }
@@ -300,9 +363,7 @@ class SocialSEOMetaTagsPlugin extends Plugin
       $image = MediumFactory::fromFile($path);
     }
 
-    return isset($image)
-      ? Utils::url($image->url(), true)
-      : null;
+    return $this->getImage($image);
   }
 
   private function getTwitterCardMetatags($meta)
