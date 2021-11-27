@@ -6,3 +6,4 @@ visible: hover                # Active on "hover" or "always" visible
 icon:                         # default link or a specific character like: #, ¶, ❡, and §.
 class:                        # adds the provided class to the anchor html
 truncate: 64                  # truncates the generated ID to the specified character length
+copy_to_clipboard: false      # copies the link to clipboard when clicking

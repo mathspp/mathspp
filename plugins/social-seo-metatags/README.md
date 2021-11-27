@@ -114,6 +114,7 @@ seo:
     enabled: true
   page_content:
     enabled: false
+  breadcrumb: false
 ```
 
 `robots` e.g. "Default Robots Meta-Tag" allow you to define default rules for bots. You have the following possibilities:
@@ -128,6 +129,8 @@ seo:
 `taxonomy.enabled` e.g. "Use Taxonomy Keywords" allow you to use Keywords of Taxonomy for Meta-Tags.
 
 `page_content.enabled` e.g. "Use Page Content Keywords" allow you to use Keywords of page content (`<strong>` and `<em>`) for Meta-Tags.
+
+`breadcrumb` e.g. "Use SEO Breadcrumb" allow you to integrate JSON-LD script SEO tag in your page.
 
 ## Associate Twitter account
 
@@ -208,6 +211,17 @@ With the following configuration, the plugin allows the conversion of simple quo
 ```yaml
 quote:
   convert_simple: true
+```
+
+### Images Cache
+
+This plugin can use cache to render images, instead to access directly to resource.
+
+With this option, you can hide the path to access to your resource in page source code.
+
+```yaml
+image:
+  use_cache: true
 ```
 
 ### Default image

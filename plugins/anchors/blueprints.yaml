@@ -1,7 +1,7 @@
 name: Anchors
 type: plugin
 slug: anchors
-version: 1.5.4
+version: 1.6.0
 description: "This plugin provides automatic header anchors via the [anchorjs](http://bryanbraun.github.io/anchorjs) jQuery plugin."
 icon: anchor
 author:
@@ -93,3 +93,15 @@ form:
       validate:
         type: number
         min: 0
+
+    copy_to_clipboard:
+      type: toggle
+      label: Copy to clipboard
+      highlight: 0
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+      help: Instead of scrolling to the item when clicking, you can enabled this option to copy the link to the clipboard automatically

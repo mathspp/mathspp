@@ -31,7 +31,7 @@ class AnchorsTwigExtension extends \Twig_Extension
      * @param $tag
      * @return string
      */
-    public function anchorsFunction($content, $tag = 'h2', $terms)
+    public function anchorsFunction($content, $tag = 'h2', $terms = null)
     {
 
         $configTags = array_map('trim', explode(',',$this->config));
