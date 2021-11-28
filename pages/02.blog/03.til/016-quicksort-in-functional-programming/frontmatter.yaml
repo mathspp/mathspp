@@ -4,8 +4,6 @@ metadata:
     description: "Today I learned how to write the Quicksort algorithm in a weird functional style."
     og:image: https://mathspp.com/blog/til/016/thumbnail.png
     twitter:image: https://mathspp.com/blog/til/016/thumbnail.png
-process:
-    twig: true
 slug: "016"
 taxonomy:
     category: [blogpost, til]

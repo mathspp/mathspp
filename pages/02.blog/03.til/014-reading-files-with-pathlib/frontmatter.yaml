@@ -4,8 +4,6 @@ metadata:
     description: "Today I learned you can use `pathlib` to read the contents of a file."
     og:image: https://mathspp.com/blog/til/014/thumbnail.png
     twitter:image: https://mathspp.com/blog/til/014/thumbnail.png
-process:
-    twig: true
 slug: "014"
 taxonomy:
     category: [blogpost, til]

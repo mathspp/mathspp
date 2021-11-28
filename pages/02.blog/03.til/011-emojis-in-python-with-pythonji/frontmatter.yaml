@@ -3,8 +3,6 @@ metadata:
     author: Rodrigo Girão Serrão
     og:image: https://mathspp.com/blog/til/011/thumbnail.png
     twitter:image: https://mathspp.com/blog/til/011/thumbnail.png
-process:
-    twig: true
 slug: "011"
 taxonomy:
     category: [blogpost, til]
