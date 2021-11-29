@@ -22,12 +22,13 @@ If you need any clarification whatsoever, feel free to ask in the comment sectio
 
 # Solvers
 
-<!--
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
 
- - ???, ??
--->
+ - David H., Taiwan;
+ - Kees de L., Netherlands;
+ - B. Praveen R., India;
+ - Kishan M., India;
 
 Know how to solve this?
 
