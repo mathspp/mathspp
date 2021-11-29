@@ -12,6 +12,8 @@ all positions in the same vertical, horizontal, and diagonal lines.
 Your job is to place 8 queens on a chessboard, so that no two queens attack each other.
 (In how many different ways can you do this?)
 
+Is this too easy?
+Don't worry, the next one will be a harder variant of this puzzle.
 
 !!! Give it some thought!
 
