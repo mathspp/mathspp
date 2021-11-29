@@ -277,5 +277,6 @@ a single Pydon't!
 [EuroPython]: https://ep2021.europython.eu/
 [pydonts-europython]: https://ep2021.europython.eu/talks/Bz5dtEe-pydonts/
 [dijkstra]: https://en.wikipedia.org/wiki/Edsger_W._Dijkstra
+[dijkstra-alg]: https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
 [APL]: https://apl.wiki
 [tim-peters]: https://en.wikipedia.org/wiki/Tim_Peters_(software_engineer)
