@@ -1020,13 +1020,5 @@ We were careful to try and not do too much repeated work, and we also took a loo
 
 If you have any questions, suggestions, remarks, recommendations, corrections, or anything else, you can reach out to me [on Twitter](https://twitter.com/mathsppblog) or via email to rodrigo at mathspp dot com.
 
----
-
-This analysis is part of the first day of the [Python Problem-Solving Bootcamp](https://mathspp.com/pythonbootcamp).
-Follow [this link](https://mathspp.com/pythonbootcamp) if you'd like to participate in the bootcamp:
-
- - to be a part of a community of highly-motivated individuals solving Advent of Code together; and
- - to receive notebooks like these with the analysis of the problems tackled.
-
 
 [aoc-day-1]: https://adventofcode.com/2021/day/1
