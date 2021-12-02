@@ -1,0 +1,15 @@
+date: 02-12-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This article is an in-depth analysis of Python solutions to the “Sonar Sweep” problem, which is day 1 of Advent of Code 2021."
+    og:image: https://mathspp.com/blog/advent-of-code-sonar-sweep-analysis/thumbnail.png
+    twitter:image: https://mathspp.com/blog/advent-of-code-sonar-sweep-analysis/thumbnail.png
+slug: "advent-of-code-sonar-sweep-analysis"
+taxonomy:
+    category: [blogpost]
+    tag:
+      - algorithms
+      - mathematics
+      - programming
+      - python
+title: "Advent of Code: sonar sweep analysis"
