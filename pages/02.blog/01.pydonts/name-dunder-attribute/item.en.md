@@ -31,8 +31,8 @@ In this Pydon't, you will:
  - see some code examples of the things I will be teaching.
 
 <!--v-->
-!!! > You can now get your free copy of the ebook “Pydon'ts – Write beautiful Python code” [on Gumroad][gumroad-pydonts]
-!!! > to help support the series of “Pydon't” articles 💪.
+!!! You can now get your free copy of the ebook “Pydon'ts – Write beautiful Python code” [on Gumroad][gumroad-pydonts]
+!!! to help support the series of “Pydon't” articles 💪.
 <!--^-->
 
 
