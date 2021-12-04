@@ -171,7 +171,10 @@ If you ever find yourself without knowing what to learn,
 open the documentation and navigate through it for a bit.
 You are likely to end up somewhere you've never been.
 
-In particular, here are a couple of pages I like to visit often:
+But visiting new pages in the docs isn't the only way to learn new things.
+Some pages, I keep referencing over and over and over,
+because they just have so much information!
+Here are a couple of pages I like to visit often:
 
  - [the page](https://docs.python.org/3/library/functions.html) with all the built-in functions;
  - [the page](https://docs.python.org/3/library/stdtypes.html) with all the built-in types and their methods;
