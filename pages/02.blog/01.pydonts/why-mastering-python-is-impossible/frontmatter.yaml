@@ -1,0 +1,18 @@
+date: 04-12-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Let me tell you why it is impossible to truly master Python, but also show you how to get as close to it as possible."
+    og:image: "https://mathspp.com/blog/pydonts/why-mastering-python-is-impossible/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/pydonts/why-mastering-python-is-impossible/thumbnail.png"
+references:
+  - "Python 3 Docs, The Python Standard Library, Built-in Functions, `dir`, [https://docs.python.org/3/library/functions.html#dir](https://docs.python.org/3/library/functions.html#dir) [last accessed 04-12-2021];"
+  - "Python 3 Docs, The Python Standard Library, Built-in Functions, `help`, [https://docs.python.org/3/library/functions.html#help](https://docs.python.org/3/library/functions.html#help) [last accessed 04-12-2021];"
+  - "“Galaxy Brain Programming Languages”, Conor Hoekstra, [https://codereport.github.io/Galaxy-Brain-Languages/](https://codereport.github.io/Galaxy-Brain-Languages/) [last accessed 04-12-2021];"
+  - "“Epigrams in Programming”, cs.yale.edu, [http://www.cs.yale.edu/homes/perlis-alan/quotes.html](http://www.cs.yale.edu/homes/perlis-alan/quotes.html) [last accessed 04-12-2021];"
+slug: "why-mastering-python-is-impossible"
+taxonomy:
+    category: [blogpost, pydont]
+    tag:
+      - "programming"
+      - "python"
+title: "Why mastering Python is impossible, and why that's ok | Pydon't 🐍"
