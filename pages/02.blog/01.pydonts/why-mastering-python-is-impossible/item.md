@@ -164,7 +164,7 @@ that is not simply by following these ad-hoc methods.
 ## Documentation
 
 Are you familiar with Python's documentation?
-It's at a URL that is easy to remember: https://docs.python.org.
+It's at a URL that is easy to remember: <https://docs.python.org>.
 
 The docs are a great learning resource!
 If you ever find yourself without knowing what to learn,
