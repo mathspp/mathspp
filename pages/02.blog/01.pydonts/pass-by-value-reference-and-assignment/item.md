@@ -36,7 +36,7 @@ In this Pydon't, you will:
  - learn how to use the module `copy` to do both types of object copies.
 
 <!--v-->
- > You can now get your **free** copy of the ebook “Pydon'ts – Write beautiful Python code” [on Gumroad][gumroad-pydonts].
+!!! > You can now get your **free** copy of the ebook “Pydon'ts – Write beautiful Python code” [on Gumroad][gumroad-pydonts].
 <!--^-->
 
 

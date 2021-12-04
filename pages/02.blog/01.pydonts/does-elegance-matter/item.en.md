@@ -26,8 +26,8 @@ In this Pydon't I will share with you _why_ this is important.
 
 
 <!--v-->
- > You can now get your free copy of the ebook “Pydon'ts – Write elegant Python code” [on Gumroad][gumroad-pydonts]
- > to help support the “Pydon'ts” series of articles 💪.
+!!! > You can now get your free copy of the ebook “Pydon'ts – Write elegant Python code” [on Gumroad][gumroad-pydonts]
+!!! > to help support the “Pydon'ts” series of articles 💪.
 <!--^-->
 
 # Beware, opinions ahead

@@ -30,7 +30,7 @@ In this Pydon't, you will:
  - see where each type of string formatting really shines.
 
 <!--v-->
- > You can now get your **free** copy of the ebook “Pydon'ts – Write beautiful Python code” [on Gumroad][gumroad-pydonts].
+!!! > You can now get your **free** copy of the ebook “Pydon'ts – Write beautiful Python code” [on Gumroad][gumroad-pydonts].
 <!--^-->
 
 
