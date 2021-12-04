@@ -138,9 +138,9 @@ as many features as possible.
 
 By being exposed to new/different things, your brain is likely to take a small note
 about the new things you try or play around with.
-The rationale is that, while you might not be able to name all these things you play around with
-off the top of your head, when the time comes,
-there is a chance that your brain will light up 💡 and you'll remember you've seen relevant in the past.
+You might not be able to name all these things you play around with off the top of your head, sure.
+The rationale is that, when the time comes,
+there is a chance that your brain will light up 💡 and you'll remember you've seen something relevant in the past.
 
 This situation is pretty much cut and dried:
 
