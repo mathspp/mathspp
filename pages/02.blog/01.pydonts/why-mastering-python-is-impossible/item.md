@@ -172,7 +172,7 @@ open the documentation and navigate through it for a bit.
 You are likely to end up somewhere you've never been.
 
 But visiting new pages in the docs isn't the only way to learn new things.
-Some pages, I keep referencing over and over and over,
+I keep referencing some pages over and over and over,
 because they just have so much information!
 Here are a couple of pages I like to visit often:
 
