@@ -29,6 +29,7 @@ who sent me their correct solutions:
  - Kees de L., Netherlands;
  - B. Praveen R., India;
  - Kishan M., India;
+ - Mario V., Guatemala;
 
 Know how to solve this?
 
