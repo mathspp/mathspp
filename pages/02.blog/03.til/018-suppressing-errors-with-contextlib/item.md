@@ -37,6 +37,9 @@ except SomeError:
 When we want to try to do something and want do nothing in case it fails,
 the context manager `suppress` is great because it reduces the boilerplate you have to write.
 
+
+# Code examples
+
 As an example, consider a function that deletes a key from a dictionary.
 If you try to delete a key from a dictionary that doesn't contain that key,
 you get an error:
@@ -79,6 +82,35 @@ def dictionary_key_delete(a_dict, key):
 At the same time, this makes the code very expressive,
 because we know beforehand that we will ignore that specific type of error,
 giving a hint that we really just want to _try_ to do something but we won't be bothered if it fails.
+
+Another good example is for a function that removes an element from a list.
+The built-in type `list` has a method that does almost what we want, called `.remove`.
+The only issue is that the method throws a `ValueError` if the element is not in the list.
+
+We can work around this in several ways:
+
+```py
+# (LBYL) Look before you leap:
+def remove_from_list(a_list, element):
+    if element in a_list:
+        a_list.remove(element)
+
+# (EAFP) Easier to ask forgiveness than permission:
+def remove_from_list(a_list, element):
+    try:
+        a_list.remove(element)
+    except ValueError:
+        pass
+
+# Also EAFP but more concise:
+from contextlib import suppress
+def remove_from_list(a_list, element):
+    with suppress(ValueError):
+        a_list.remove(element)
+```
+
+Both these examples leverage greatly (although implicitly, because I'm not talking about it here)
+the debate between the EAFP and LBYL coding styles, that you can read about [in this article][eafp].
 
 Thank you, [@loicteixeira][loicteixeira], for teaching me this, while discussing the [Python Problem-Solving Bootcamp][bootcamp].
 
