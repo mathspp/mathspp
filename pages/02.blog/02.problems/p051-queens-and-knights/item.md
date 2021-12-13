@@ -10,7 +10,7 @@ This is a harder variant of the [8 queens][8-queens] problem.
 As a warm-up for _this_ problem, consider solving that one first!
 
 For the “queens and knights” problem,
-you want to place as many queens and knights as possible, on a chessboard.
+you want to place as many queens and knights, as possible, on a chessboard.
 However, queens and knights must be placed in equal numbers,
 and no piece can attack any other piece.
 
