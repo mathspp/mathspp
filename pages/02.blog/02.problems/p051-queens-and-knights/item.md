@@ -35,12 +35,10 @@ so let my sharing this problem be a small tribute to him.
 
 # Solvers
 
-<!--
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
 
- - ???, ??
--->
+ - David H., Taiwan;
 
 Know how to solve this?
 

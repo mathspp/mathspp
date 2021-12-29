@@ -30,6 +30,7 @@ who sent me their correct solutions:
  - B. Praveen R., India;
  - Kishan M., India;
  - Mario V., Guatemala;
+ - Pavel D., Czech Republic;
 
 Know how to solve this?
 

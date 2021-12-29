@@ -1,0 +1,17 @@
+date: 29-12-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    description:
+    og:image: https://mathspp.com/blog/problems/chessboard-domino/thumbnail.png
+    twitter:image: https://mathspp.com/blog/problems/chessboard-domino/thumbnail.png
+process:
+    twig: true
+slug: chessboard-domino
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - chess
+      - combinatorics
+      - mathematics
+title: "Problem #052 – chessboard domino"
+twig_first: true
