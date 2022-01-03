@@ -16,12 +16,10 @@ _except_ for the top-left and bottom-right corners?
 
 # Solvers
 
-<!--
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
 
- - ???, ??
--->
+ - David H., Taiwan;
 
 Know how to solve this?
 
