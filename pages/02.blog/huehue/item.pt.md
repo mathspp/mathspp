@@ -4,7 +4,7 @@ metadata:
 title: 'HueHue: um jogo colorido'
 ---
 
-**HueHue** é um jogo bastante colorido que eu escrevi com a minha colega [@inesfmarques][ines].
+HueHue é um jogo bastante colorido que eu escrevi com a minha colega [@inesfmarques][ines].
 
 ===
 

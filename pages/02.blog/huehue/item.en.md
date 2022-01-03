@@ -5,7 +5,7 @@ metadata:
 title: 'HueHue: a colourful game'
 ---
 
-**HueHue** is a very colourful game I wrote with my colleague [@inesfmarques][ines].
+HueHue is a very colourful game I wrote with my colleague [@inesfmarques][ines].
 
 ===
 
