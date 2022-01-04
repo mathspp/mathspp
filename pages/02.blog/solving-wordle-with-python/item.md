@@ -462,6 +462,54 @@ The secret word must be 'truss'!
 ```
 
 
+# Playing Wordle online
+
+If all you want is a small program that helps you beat the [online version][wordle] of Wordle,
+then you can condense the code we have seen, and drop some of the generality,
+to create this:
+
+```py
+import collections, random
+
+with open("WORD.LST", "r") as f:
+    words = [word.strip() for word in f.readlines() if len(word.strip()) == 5]
+
+while len(words) > 1:
+    print(f"Try {(guess := random.choice(words))!r}.")
+    score = [int(char) for char in input(">>> ") if char in "012"]  # 0 for ABSENT, 1 for PRESENT, and 2 for CORRECT.
+    words_ = []
+    for word in words:
+        pool = collections.Counter(c for c, sc in zip(word, score) if sc != 2)
+        for w, g, sc in zip(word, guess, score):
+            if ((sc == 2) != (w == g)) or (sc < 2 and bool(sc) != bool(pool[g])):
+                break
+            pool[g] -= sc == 1
+        else:
+            words_.append(word)  # No `break` was hit, so store the word.
+    words = words_
+print(words[0])
+```
+
+This runs in a very similar way, except it's more compact.
+Most notably, the logic that handles the filtering has been simplified a bit.
+
+This plays out like so:
+
+```txt
+Try 'dykey'.
+>>> 00000
+Try 'banal'.
+>>> 00000
+Try 'stomp'.
+>>> 11000
+Try 'cists'.
+>>> 00112
+truss
+```
+
+You can get the condensed version from [here][gh-code-condensed].
+
+
 That's it for this article!
 You can get the code [from here][gh-code].
 If you have any questions or suggestions, leave them in the comments below!
@@ -474,3 +522,4 @@ If you have any questions or suggestions, leave them in the comments below!
 [will-nerd-snipe]: https://twitter.com/willmcgugan/status/1478043926636417026
 [unix-words]: https://en.wikipedia.org/wiki/Words_(Unix)
 [gh-code]: https://github.com/RojerGS/projects/blob/master/misc/wordle.py
+[gh-code-condensed]: https://github.com/RojerGS/projects/blob/master/misc/wordle2.py
