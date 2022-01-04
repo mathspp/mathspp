@@ -1,0 +1,15 @@
+date: 03-01-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: In this article we try to crack Wordle, a variation of mastermind played with (English) words.
+    og:image: https://mathspp.com/blog/solving-wordle-with-python/thumbnail.png
+    twitter:image: https://mathspp.com/blog/solving-wordle-with-python/thumbnail.png
+slug: solving-wordle-with-python
+taxonomy:
+    category: blogpost
+    tag:
+      - games
+      - logic
+      - programming
+      - python
+title: "Solving Wordle with Python"
