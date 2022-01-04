@@ -382,6 +382,7 @@ if __name__ == "__main__":
 
 That's it for this article!
 You can get the code [from here][gh-code].
+If you have any questions or suggestions, leave them in the comments below!
 
 
 [wordle]: https://www.powerlanguage.co.uk/wordle/
