@@ -102,7 +102,7 @@ score = [Tip.CORRECT, Tip.ABSENT, Tip.ABSENT, Tip.PRESENT, Tip.CORRECT]
 ```
 
 Now that we know how to represent the score, we need to compute it.
-That easy, right?
+That's easy, right?
 
 Here is a Python function that does that:
 
@@ -188,12 +188,12 @@ preventing characters from being double-counted as `PRESENT`:
 
 # Filtering words that match a score
 
-After we score the guess with regards to the secret word we need to update our list of possible words.
+After we score the guess with regards to the secret word, we need to update our list of possible words.
 To do that, we go through the list of words and remove all the words that:
 
  - do not have the all the `CORRECT` letters in all the correct places;
  - have any of the letters that are marked as `ABSENT`; or
- - have a `PRESENT` letter in the spot we already know isn't the correct one.
+ - have a letter equal to a corresponding letter of the guess in a position that is _not_ `CORRECT`.
 
 Now, writing a function that does this properly can be trickier than what it looks like
 _if_ you don't pay enough attention to double-counting characters.
@@ -234,8 +234,8 @@ Make sure that your `filter_words` function passes these tests:
 ['azzz', 'zazz']
 ```
 
-!!! Go ahead, try to implement this function yourself...
-!!! I can wait :)
+Go ahead, try to implement this function yourself...
+I can wait :)
 
 Alright, assuming you got this correct, or just don't care about the challenge,
 here is my implementation:
@@ -268,7 +268,7 @@ def filter_words(words, guess, score):
 ```
 
 
-# Playing the game
+# Playing the game against the computer
 
 Now that the computer can filter the list of words down, we can play the game!
 
@@ -303,6 +303,7 @@ if __name__ == "__main__":
         sc = score(secret, guess)
         print(f"\tMy guess scored {sc}...")
         words = filter_words(words, guess, sc)
+        print()
 
     if not words:
         raise RuntimeError("I don't know any words that could solve the puzzle...")
@@ -310,6 +311,47 @@ if __name__ == "__main__":
 ```
 
 That's how you can have the computer play against you.
+
+Here is an example output from the program, when given “chess” as the secret word:
+
+```txt
+Write your secret word:
+>>> chess
+I'll guess randomly from my pool of 8672 words...
+I'm considering aahed, aalii, aargh, abaca, abaci, aback, abaft, abaka, among others...
+Hmmm, I'll guess 'sling'...
+        My guess scored [<Tip.PRESENT: 1>, <Tip.ABSENT: 0>, <Tip.ABSENT: 0>, <Tip.ABSENT: 0>, <Tip.ABSENT: 0>]...
+
+I'll guess randomly from my pool of 1277 words...
+I'm considering abase, abash, abbas, abbes, abets, abuse, abuts, abyes, among others...
+Hmmm, I'll guess 'zebus'...
+        My guess scored [<Tip.ABSENT: 0>, <Tip.PRESENT: 1>, <Tip.ABSENT: 0>, <Tip.ABSENT: 0>, <Tip.CORRECT: 2>]...
+
+I'll guess randomly from my pool of 205 words...
+I'm considering aches, acmes, acres, akees, apers, apres, apses, areas, among others...
+Hmmm, I'll guess 'emyds'...
+        My guess scored [<Tip.PRESENT: 1>, <Tip.ABSENT: 0>, <Tip.ABSENT: 0>, <Tip.ABSENT: 0>, <Tip.CORRECT: 2>]...
+
+I'll guess randomly from my pool of 117 words...
+I'm considering aches, acres, akees, apers, apres, apses, areas, arses, among others...
+Hmmm, I'll guess 'cores'...
+        My guess scored [<Tip.CORRECT: 2>, <Tip.ABSENT: 0>, <Tip.ABSENT: 0>, <Tip.PRESENT: 1>, <Tip.CORRECT: 2>]...
+
+I'll guess randomly from my pool of 3 words...
+I'm considering chefs, chess, chews.
+Hmmm, I'll guess 'chefs'...
+        My guess scored [<Tip.CORRECT: 2>, <Tip.CORRECT: 2>, <Tip.CORRECT: 2>, <Tip.ABSENT: 0>, <Tip.CORRECT: 2>]...
+
+I'll guess randomly from my pool of 2 words...
+I'm considering chess, chews.
+Hmmm, I'll guess 'chess'...
+        My guess scored [<Tip.CORRECT: 2>, <Tip.CORRECT: 2>, <Tip.CORRECT: 2>, <Tip.CORRECT: 2>, <Tip.CORRECT: 2>]...
+
+The secret word must be 'chess'!
+```
+
+
+# Using the computer as help to play the game
 
 To have the computer help you, we can modify the code a bit.
 Instead of asking for the secret word, the computer will suggest a guess;
@@ -341,6 +383,7 @@ def play_against_computer(words):
         sc = score(secret, guess)
         print(f"\tMy guess scored {sc}...")
         words = filter_words(words, guess, sc)
+        print()
 
     return words
 
@@ -351,15 +394,14 @@ def play_with_computer(words):
     words = [word for word in words if len(word) == length]
 
     mapping = {"0": Tip.ABSENT, "1": Tip.PRESENT, "2": Tip.CORRECT}
-    print(f"NOTE: when typing scores, use {mapping}.")
+    print(f"\nNOTE: when typing scores, use {mapping}.\n")
     while len(words) > 1:
         guess = get_random_word(words)
         print("How did this guess score?")
         user_input = input(">>> ")
         sc = [mapping[char] for char in user_input if char in mapping]
         words = filter_words(words, guess, sc)
-
-    return words
+        print()
 
 
 if __name__ == "__main__":
@@ -379,6 +421,46 @@ if __name__ == "__main__":
         raise RuntimeError("I don't know any words that could solve the puzzle...")
     print(f"The secret word must be {words[0]!r}!")
 ```
+
+Imagine that the website I linked to has the secret word “truss”.
+If that were the case, here is how the program would help us
+(the numbers are typed by _us_, after the website gives the score
+for the guess that the computer suggests):
+
+```txt
+Do you want [h]elp, or do you want to play [a]gainst the computer?
+[h/a] >>> h
+What's the length of the secret word?
+>>> 5
+
+NOTE: when typing scores, use {'0': <Tip.ABSENT: 0>, '1': <Tip.PRESENT: 1>, '2': <Tip.CORRECT: 2>}.
+I'll guess randomly from my pool of 8672 words...
+I'm considering aahed, aalii, aargh, abaca, abaci, aback, abaft, abaka, among others...
+Hmmm, I'll guess 'brick'...
+How did this guess score?
+>>> 02000
+
+I'll guess randomly from my pool of 291 words...
+I'm considering ardor, areae, areal, areas, arena, arete, argal, argle, among others...
+Hmmm, I'll guess 'treen'...
+How did this guess score?
+>>> 22000
+
+I'll guess randomly from my pool of 26 words...
+I'm considering tramp, trams, traps, trapt, trash, trass, trawl, trays, among others...
+Hmmm, I'll guess 'tryst'...
+How did this guess score?
+>>> 22020
+
+I'll guess randomly from my pool of 3 words...
+I'm considering trash, trass, truss.
+Hmmm, I'll guess 'trass'...
+How did this guess score?
+>>> 22022
+
+The secret word must be 'truss'!
+```
+
 
 That's it for this article!
 You can get the code [from here][gh-code].
