@@ -4,7 +4,7 @@ Today I learned the basics of socket programming (in Python).
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-![A tunnel, alluding to my intuitive understanding of what a socket is.](thumbnail.png)
+![A tunnel, alluding to my intuitive understanding of what a socket is.](thumbnail.png "Photo by Tom Dahm on Unsplash")
 
 
 # Sockets
