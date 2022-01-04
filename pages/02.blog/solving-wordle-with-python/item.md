@@ -387,7 +387,7 @@ If you have any questions or suggestions, leave them in the comments below!
 
 [wordle]: https://www.powerlanguage.co.uk/wordle/
 [mastermind]: https://en.wikipedia.org/wiki/Mastermind_(board_game)
-[word-list]: willmcgugan.com/files/WORD.zip
+[word-list]: https://willmcgugan.com/files/WORD.zip
 [will-mcgugan]: https://twitter.com/willmcgugan
 [will-nerd-snipe]: https://twitter.com/willmcgugan/status/1478043926636417026
 [unix-words]: https://en.wikipedia.org/wiki/Words_(Unix)
