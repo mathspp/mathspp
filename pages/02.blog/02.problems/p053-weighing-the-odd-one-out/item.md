@@ -14,6 +14,8 @@ You can make use of a [traditional scale](https://en.wikipedia.org/wiki/Weighing
 although you have no weights at your disposal.
 Also, the scale is so rusty it will stop working soon and you can only use it three times.
 
+This problem was proposed by Attila, a fellow solver from previous problems.
+
 
 # Solvers
 
