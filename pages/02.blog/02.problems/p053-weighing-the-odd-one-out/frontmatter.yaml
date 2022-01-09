@@ -1,0 +1,17 @@
+date: 09-01-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description:
+    og:image: https://mathspp.com/blog/problems/weighing-the-odd-one-out/thumbnail.png
+    twitter:image: https://mathspp.com/blog/problems/weighing-the-odd-one-out/thumbnail.png
+process:
+    twig: true
+slug: weighing-the-odd-one-out
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - logic
+      - combinatorics
+      - mathematics
+title: "Problem #053 – weighing the odd one out"
+twig_first: true
