@@ -11,7 +11,6 @@ taxonomy:
     category: [blogpost, problem]
     tag:
       - logic
-      - combinatorics
       - mathematics
 title: "Problem #053 – weighing the odd one out"
 twig_first: true
