@@ -73,6 +73,26 @@ meaning we will get 8 correct digits.
 I'll leave it as an exercise for you, the reader,
 to implement this approximation in your favourite programming language.
 
+In APL, (and disregarding the accuracy issues) it can look something like this:
+
+```APL
+      ⍝ Computes the `c_k` coefficients:
+      Cks ← {(.5*⍨○2),((!ks-1)÷⍨¯1*ks-1)×((⍵-ks)*ks-.5)×*⍵-ks←1+⍳⍵-1}
+      ⍝ Computes the approximation of the gamma function:
+      GammaApprox ← {((⍵+⍺)*⍵+.5)×(*-⍵+⍺)×(⊢÷1,⍵+1↓⍳∘≢)Cks ⍺}
+      ⍝ Computes an upper bound for the error term:
+      Err ← {(⍵*¯.5)×(○2)*-⍵+.5}
+
+      a ← 10
+      Err a
+1.315562187E¯9  ⍝ Thus, we expect 8 decimal places to be correct.
+      z ← 100
+      a GammaApprox z
+9.332621544E157
+      !z
+9.332621544E157
+```
+
 
 That's it for now! [Stay tuned][subscribe] and I'll see you around!
 

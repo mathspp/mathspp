@@ -10,6 +10,7 @@ slug: "021"
 taxonomy:
     category: [blogpost, til]
     tag:
+      - apl
       - mathematics
       - numerical analysis
 title: "TIL #021 – Spouge's formula"
