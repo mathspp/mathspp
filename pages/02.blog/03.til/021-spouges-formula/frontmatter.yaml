@@ -1,0 +1,13 @@
+date: 10-01-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned about Spouge's formula to approximate the factorial."
+    og:image: https://mathspp.com/blog/til/021/thumbnail.png
+    twitter:image: https://mathspp.com/blog/til/021/thumbnail.png
+slug: "021"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - mathematics
+      - numerical analysis
+title: "TIL #021 – Spouge's formula"
