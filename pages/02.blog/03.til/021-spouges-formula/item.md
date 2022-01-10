@@ -73,13 +73,18 @@ meaning we will get 8 correct digits.
 I'll leave it as an exercise for you, the reader,
 to implement this approximation in your favourite programming language.
 
+
+# Spouge's formula in APL
+
 In APL, (and disregarding the accuracy issues) it can look something like this:
 
 ```APL
       ⍝ Computes the `c_k` coefficients:
       Cks ← {(.5*⍨○2),((!ks-1)÷⍨¯1*ks-1)×((⍵-ks)*ks-.5)×*⍵-ks←1+⍳⍵-1}
+
       ⍝ Computes the approximation of the gamma function:
       GammaApprox ← {((⍵+⍺)*⍵+.5)×(*-⍵+⍺)×(⊢÷1,⍵+1↓⍳∘≢)Cks ⍺}
+
       ⍝ Computes an upper bound for the error term:
       Err ← {(⍵*¯.5)×(○2)*-⍵+.5}
 
