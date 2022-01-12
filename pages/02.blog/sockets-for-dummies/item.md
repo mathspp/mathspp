@@ -1,4 +1,4 @@
-Join me as I dive into the world of socket programming with 0 (ZERO) prior experience.
+Dive into the world of socket programming with this Python tutorial that assumes 0 prior experience.
 
 ===
 
