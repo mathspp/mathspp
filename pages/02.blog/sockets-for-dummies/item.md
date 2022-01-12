@@ -4,6 +4,8 @@ Dive into the world of socket programming with this Python tutorial that assumes
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+![A picture of a phone and a laptop, showing that the phone managed to use Python to send data into the laptop through sockets, one of the experiments done in this Python tutorial that serves as an introduction to sockets and networking.](thumbnail.png "Phone and laptop communicating through sockets.")
+
 
 # Motivation and starting point
 
