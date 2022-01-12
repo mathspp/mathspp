@@ -4,8 +4,6 @@ Join me as I dive into the world of socket programming with 0 (ZERO) prior exper
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-![](thumbnail.png "")
-
 
 # Motivation and starting point
 
