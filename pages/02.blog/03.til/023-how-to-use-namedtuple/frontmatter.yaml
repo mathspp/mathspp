@@ -1,0 +1,15 @@
+date: 17-01-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to use the `namedtuple` from the module `collections`."
+    og:image: https://mathspp.com/blog/til/023/thumbnail.png
+    twitter:image: https://mathspp.com/blog/til/023/thumbnail.png
+references:
+  - "Python 3 Docs, The Python Standard Library, `collections.namedtuple`, [https://docs.python.org/3/library/collections.html#collections.namedtuple](https://docs.python.org/3/library/collections.html#collections.namedtuple) [last accessed 17-01-2022];"
+slug: "023"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - python
+title: "TIL #023 – how to use namedtuple"
