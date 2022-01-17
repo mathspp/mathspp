@@ -88,9 +88,9 @@ By using the module `csv` (to read the CSV data) and the `_make` function of the
 ...     for person in map(Person._make, reader):
 ...         print(f"{person.name} is on Twitter @{person.twitter}!")
 ...
-Rodrigo is on Twitter @ mathsppblog!
-Mike is on Twitter @ driscollis!
-Will is on Twitter @ willmcgugan!
+Rodrigo is on Twitter @mathsppblog!
+Mike is on Twitter @driscollis!
+Will is on Twitter @willmcgugan!
 ```
 
 
