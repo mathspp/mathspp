@@ -2,7 +2,7 @@ Create a simple chatroom server in Python by following along this tutorial serie
 
 ===
 
-![](thumbnail.png)
+![](thumbnail.png "Photo by Jason Leung on Unsplash.")
 
 
 # Introduction
