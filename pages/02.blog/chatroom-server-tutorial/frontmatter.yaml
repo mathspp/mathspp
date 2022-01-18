@@ -1,0 +1,25 @@
+date: 19-01-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: Create a simple chatroom server in Python by following along this tutorial series.
+    og:image: https://mathspp.com/blog/chatroom-server-tutorial/thumbnail.png
+    twitter:image: https://mathspp.com/blog/chatroom-server-tutorial/thumbnail.png
+publish_date: 19-01-2022 13:00
+references:
+  - "Python 3 Docs, “Socket Programming HOWTO”, [https://docs.python.org/3/howto/sockets.html](https://docs.python.org/3/howto/sockets.html) [last accessed 13-01-2022];"
+  - "Python 3 Docs, The Python Standard Library, `logging`, [https://docs.python.org/3/library/logging.html](https://docs.python.org/3/library/logging.html) [last accessed 13-01-2022];"
+  - "Python 3 Docs, The Python Standard Library, `select`, [https://docs.python.org/3/library/select.html](https://docs.python.org/3/library/select.html) [last accessed 13-01-2022];"
+  - "Python 3 Docs, The Python Standard Library, `selectors`, [https://docs.python.org/3/library/selectors.html](https://docs.python.org/3/library/selectors.html) [last accessed 13-01-2022];"
+  - "Python 3 Docs, The Python Standard Library, `socket`, [https://docs.python.org/3/library/socket.html](https://docs.python.org/3/library/socket.html) [last accessed 13-01-2022];"
+  - "Python 3 Docs, The Python Standard Library, `threading`, [https://docs.python.org/3/library/threading.html](https://docs.python.org/3/library/threading.html) [last accessed 13-01-2022];"
+  - "Python 3 Docs, The Python Standard Library, `typing`, [https://docs.python.org/3/library/typing.html](https://docs.python.org/3/library/typing.html) [last accessed 13-01-2022];"
+  - "`rich` documentation, [https://rich.readthedocs.io/en/latest/](https://rich.readthedocs.io/en/latest/) [last accessed 13-01-2022];"
+  - "“Close listening socket in python thread”, Stack Overflow, [https://stackoverflow.com/q/16734534/2828287](https://stackoverflow.com/q/16734534/2828287) [last accessed 13-01-2022];"
+slug: chatroom-server-tutorial
+taxonomy:
+    category: blogpost
+    tag:
+      - networking
+      - programming
+      - python
+title: "Chatroom server tutorial"
