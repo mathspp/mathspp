@@ -1,4 +1,4 @@
-Today I learned about Spouge's formula to approximate the factorial.
+Today I learned about the Python module `selectors` to manage multiple socket connections.
 
 ===
 
