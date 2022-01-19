@@ -19,12 +19,11 @@ This problem was proposed by Attila, a fellow solver from previous problems.
 
 # Solvers
 
-<!--
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
 
  - David H., Taiwan;
--->
+ - Kees de L, Netherlands;
 
 Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!

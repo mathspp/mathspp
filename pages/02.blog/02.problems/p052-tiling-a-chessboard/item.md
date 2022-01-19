@@ -20,6 +20,7 @@ Congratulations to the ones that solved this problem correctly and, in particula
 who sent me their correct solutions:
 
  - David H., Taiwan;
+ - Kees de L., Netherlands;
 
 Know how to solve this?
 
