@@ -209,6 +209,7 @@ _While_ the pasta was boiling, I managed to turn my attention to other stuff, be
 Your job was to manage me and optimise the times I was standing by and waiting for things outside of my control:
 
 👉 boiling pasta
+
 👉 heating in the microwave
 
 
@@ -216,6 +217,7 @@ That is what asyncio is for.
 To use asyncio, you need two ingredients:
 
 👉 tasks that take time but don't depend on you
+
 👉 someone, or something, to order you around while you are waiting for some things to finish
 
 Your job was VERY important, although nuanced.
@@ -457,9 +459,13 @@ I'm just being smarter about managing my time.
 Some conclusions:
 
  👉 `async def` defines coroutine functions
+
  👉 coroutine functions build coroutines
+
  👉 coroutines are better at managing time
+
  👉 with `await`, you can do something useful while waiting for something else to finish
+
  👉 `await obj` needs `obj` to be awaitable
 
 
