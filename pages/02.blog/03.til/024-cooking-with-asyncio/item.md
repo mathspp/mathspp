@@ -1,10 +1,10 @@
-Today I learned how to use the `namedtuple` from the module `collections`.
+Today I learned how to cook with `asyncio` and async code in Python.
 
 ===
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-![The Python import statement that allows us to use the Python module `selectors`.](thumbnail.png)
+![](thumbnail.png "Photo by Michael Browning on Unsplash.")
 
 
 # Async code in Python
