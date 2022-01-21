@@ -1,4 +1,4 @@
-Today I learned that the reverse of some flag emojis are other flags!
+Today I learned that the reverse of some flag emoji are other flags!
 
 ===
 
@@ -26,7 +26,7 @@ Here is the original tweet:
 
 Thankfully, for me, I am already used to getting nerd-sniped by Will and I managed to understand where this was going.
 
-I managed to show that reversing doesn't work with coloured emojis,
+I managed to show that reversing doesn't work with coloured emoji,
 because the colour is kind of defined by having the regular yellow emoji plus the colour.
 So, when we reverse it, the colour and the hand change sides, and the colouring doesn't get applied:
 
