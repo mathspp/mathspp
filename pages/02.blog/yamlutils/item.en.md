@@ -30,13 +30,13 @@ For most of it, these things do not depend on the language the user is viewing t
 
 Those headers that are the same, regardless of the language, are kept in the `frontmatter.yaml` file, which looks something like this:
 
-<script src="https://gist.github.com/RojerGS/0ff988fb2ac54a81dc18349cc9c619f9.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/0ff988fb2ac54a81dc18349cc9c619f9.js"></script>
 
 
 
 On the other hand, there are other things that _do_ depend on the language. For example, the title of the page that is displayed in the beginning of the post and in the browser tab. Those are specified in the beginning of the `item` files in between two sets of `---`, which makes GitHub render them as such:
 
-<script src="https://gist.github.com/RojerGS/1f8f2727e6358ad33bec5700be4220ed.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/1f8f2727e6358ad33bec5700be4220ed.js"></script>
 
 
 
@@ -49,7 +49,7 @@ The problem is that for a long time I didn't use the `frontmatter.yaml` file to 
 
 Being a scripting language, Python excels at this type of tasks. I realized I could easily write a Python script that would traverse my blog directory, looking for pairs of `.pt.md` and `.en.md` pages, finding the headers those pages have in common, and then updating the corresponding `frontmatter.yaml` (or creating a new one if needed).
 
-That is how my little [YAMLUtils] project was born. The [`yamlutils.py`][yamlutils.py] script takes a folder path as a command line argument (and optionally a `-r` flag to traverse the directories recursively) and then does what I just described, merging all the YAML headers it can. I used it on my blog with `python yamlutils.py pages/ -r` and you can see what it did [in this commit](https://github.com/RojerGS/mathspp/commit/7ba80b086d6987ed819c872432ef1eafc1f1b023). Imagine having to do all that by hand!
+That is how my little [YAMLUtils] project was born. The [`yamlutils.py`][yamlutils.py] script takes a folder path as a command line argument (and optionally a `-r` flag to traverse the directories recursively) and then does what I just described, merging all the YAML headers it can. I used it on my blog with `python yamlutils.py pages/ -r` and you can see what it did [in this commit](https://github.com/RodrigoGiraoSerrao/mathspp/commit/7ba80b086d6987ed819c872432ef1eafc1f1b023). Imagine having to do all that by hand!
 
 More specifically, my script looks at the path you specified (and recurses if you set `-r`) and then, for each folder:
 
@@ -70,14 +70,14 @@ Let me know in the comments below how Python has helped you automate any of your
 
 For your convenience, the contents of my script at the time of writing this blog post:
 
-<script src="https://gist.github.com/RojerGS/ed263ed6def3ef637f218b5ae7dc9a93.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/ed263ed6def3ef637f218b5ae7dc9a93.js"></script>
 
 
 [Grav]: https://getgrav.org/
 [YAML]: https://en.wikipedia.org/wiki/YAML
 [xkcd]: https://xkcd.com
-[yamlutils]: https://github.com/RojerGS/projects/tree/master/yamlutils
-[yamlutils-post]: https://github.com/RojerGS/mathspp/tree/master/pages/02.blog/yamlutils
-[yamlutils.py]: https://github.com/RojerGS/projects/tree/master/yamlutils/yamlutils.py
-[bug-1]: https://github.com/RojerGS/mathspp/commit/6ac01f412bdd099eb673201689d89ea77d0370d0
-[bug-2]: https://github.com/RojerGS/mathspp/commit/e97dbad13ffc6009d1160b78a83cab467b42f1ca
+[yamlutils]: https://github.com/RodrigoGiraoSerrao/projects/tree/master/yamlutils
+[yamlutils-post]: https://github.com/RodrigoGiraoSerrao/mathspp/tree/master/pages/02.blog/yamlutils
+[yamlutils.py]: https://github.com/RodrigoGiraoSerrao/projects/tree/master/yamlutils/yamlutils.py
+[bug-1]: https://github.com/RodrigoGiraoSerrao/mathspp/commit/6ac01f412bdd099eb673201689d89ea77d0370d0
+[bug-2]: https://github.com/RodrigoGiraoSerrao/mathspp/commit/e97dbad13ffc6009d1160b78a83cab467b42f1ca

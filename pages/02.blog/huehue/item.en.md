@@ -30,4 +30,4 @@ You can find the code for the game and for the random degradee generator in [thi
 How would you improve this game? Let me know in the comments below.
 
 [ines]: https://github.com/inesfmarques/
-[huehuegh]: https://github.com/RojerGS/minigames/tree/master/huehue
+[huehuegh]: https://github.com/RodrigoGiraoSerrao/minigames/tree/master/huehue

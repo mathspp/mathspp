@@ -26,7 +26,7 @@ No próximo ano já não vou poder competir como estudante mas estou ansioso por
 
 Tal como disse no início, a Fase $1$ é suposto ser mais fácil e estas foram as minhas submissões:
 
-<script src="https://gist.github.com/RojerGS/9ef6cd01f0f521d2b685425d69a85b0d.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/9ef6cd01f0f521d2b685425d69a85b0d.js"></script>
 
 Consegui obter troféus dourados nas minhas $10$ submissões mas, ainda assim, pelo menos uma delas não está completamente correta. De facto, o enunciado do décimo problema diz claramente que a minha submissão devia funcionar como `{⎕←⍵}¨`, que aplicado a `'ab'` dá
 
@@ -53,25 +53,25 @@ Vou agora partilhar as minhas soluções para os nove problemas e tecer pequenos
 
 #### Problema 1
 
-<script src="https://gist.github.com/RojerGS/6f8912674c5285a3d3dd98ad21680a76.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/6f8912674c5285a3d3dd98ad21680a76.js"></script>
 
 A primeira solução que escrevi para este problema só funcionava para argumentos com comprimentos $3$, $5$ ou $7$ (tal como o enunciado garante) e eu também estava a ordenar explicitamente o vetor argumento com `⍵[⍋⍵]` mas depois decidi que não o queria fazer; nenhuma das duas coisas. Esta foi a solução final que desenvolvi.
 
 #### Problema 2
 
-<script src="https://gist.github.com/RojerGS/393a63a1af1b21c7edbd98491d5b3c70.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/393a63a1af1b21c7edbd98491d5b3c70.js"></script>
 
 No problema $2$ achei que ia conseguir escrever o caso `⍺ < 0` à custa do caso `⍺ > 0`... E durante algum tempo achei que o tinha conseguido fazer, exceto que depois reparei que o meu código falhava um dos testes e portanto tive de escrever o caso `⍺ < 0` explicitamente.
 
 #### Problema 3
 
-<script src="https://gist.github.com/RojerGS/23c6da18edb0d66b9624a98f120e5225.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/23c6da18edb0d66b9624a98f120e5225.js"></script>
 
 Este problema foi standard e as expressões regulares fizeram basicamente tudo por mim.
 
 #### Problema 4
 
-<script src="https://gist.github.com/RojerGS/aa060988925754356166d76904823c7b.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/aa060988925754356166d76904823c7b.js"></script>
 
 O problema $4$ era composto por duas tarefas que vieram do website [Rosalind], um site com problemas de bioinformática. Ainda assim, as duas tarefas não estão relacionadas (pelo menos, não de maneira óbvia) e a segunda tarefa não passa de um simples problema de matemática (cuja pertinência em bioinformática me ultrapassa).
 
@@ -103,7 +103,7 @@ basta-nos calcular as primeiros $10$ potências, que são sempre o quadrado da �
 
 #### Problema 5
 
-<script src="https://gist.github.com/RojerGS/0ffe48f804f4f46c215c50a3d7fe4e44.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/0ffe48f804f4f46c215c50a3d7fe4e44.js"></script>
 
 O problema $5$ foi _super_ divertido porque tinha imenso a ver com matemática. Resolver a primeira tarefa de forma vetorizada foi mesmo um bom desafio.
 
@@ -151,13 +151,13 @@ A segunda tarefa era substancialmente mais simples e acho que a resolvi bem com 
 
 #### Problema 6
 
-<script src="https://gist.github.com/RojerGS/ddc89dbebab4fd7a812ea83f517c6042.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/ddc89dbebab4fd7a812ea83f517c6042.js"></script>
 
 Não gostei muito do problema $6$ porque as expressões regulares voltaram a fazer tudo por mim; o outro bocadinho do problema que podia ter sido engraçado também nos foi oferecido no enunciado. Tentei aproveitar o problema ao máximo evitando usar a função `⎕nl` (recomendada pelo enunciado) e acabei por escrever algo que se parece com um bloco `try ... except ...` em Python. No fim acabei por usar a função `⎕nl` porque assim a solução ficava mais ajustada ao estilo de APL.
 
 #### Problema 7
 
-<script src="https://gist.github.com/RojerGS/955db89c6ea6ddf96825fc78f3dce9a9.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/955db89c6ea6ddf96825fc78f3dce9a9.js"></script>
 
 O problema $7$ era um problema interessante com três tarefas; a primeira tarefa, escrever a função `CheckDigit`, foi praticamente oferecida. No entanto, a tarefa $3$ foi um bom desafio.
 
@@ -174,7 +174,7 @@ Como a função `ReadUPC` deve aceitar códigos de barras lidos da esquerda para
 
 #### Problema 8
 
-<script src="https://gist.github.com/RojerGS/99bbab8cd5728858608fd20502d59aba.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/99bbab8cd5728858608fd20502d59aba.js"></script>
 
 A razão pela qual achei este problema fácil é mais ou menos a mesma razão pela qual achei a tarefa `sset` fácil: ter estudado coisas semelhantes no curso. _No entanto_, não faço ideia se o que fiz corresponde aos padrões de uma boa solução. O enunciado do problema diz, mais ou menos,
 
@@ -194,7 +194,7 @@ Este foi, de longe, o meu problema preferido da competição, até implementei d
 
 ##### Solução recursiva
 
-<script src="https://gist.github.com/RojerGS/8845dc6a7191bc66cb9d2733e44261d5.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/8845dc6a7191bc66cb9d2733e44261d5.js"></script>
 
 A minha solução recursiva começou por ser bastante maior do que é agora, mas com o passar do tempo fui pensando melhor e fui concluindo que havia bastantes partes que não eram necessárias. A ideia chave é transformar a matriz de caracteres numa estrutura inspirada em árvores binárias e na estrutura que se encontra no [workspace sobre brainf*ck][bf].
 
@@ -230,7 +230,7 @@ Quando tudo o resto estava concluído decidi resolver este problema de forma vet
 
 No fim, fui capaz de o fazer e estou bastante satisfeito com o resultado final; os comentários no código explicam como é que esta solução funciona:
 
-<script src="https://gist.github.com/RojerGS/7f09c6314c3c6bdfab34e4594c728fc6.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/7f09c6314c3c6bdfab34e4594c728fc6.js"></script>
 
 Ainda fiz uma pequena alteração às duas soluções, generalizando o problema para o caso em que as extremidades não são necessariamente letras maiúsculas; nas minhas soluções, as extremidades são qualquer caracter que não seja um espaço ou algum de `┐┴┌│─`, que são caracteres usados para especificar a estrutura.
 

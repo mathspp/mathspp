@@ -25,7 +25,7 @@ For those of you who know the LSBASI series, the numbering in my LSBASI series i
 
 ## The code
 
-[![](https://img.shields.io/github/stars/RojerGS/RGSPL?style=social)](https://github.com/RojerGS/RGSPL)
+[![](https://img.shields.io/github/stars/RojerGS/RGSPL?style=social)](https://github.com/RodrigoGiraoSerrao/RGSPL)
 
 The code for this project is available at [this GitHub repo][rgspl-repo] so go ahead and star it ;) The source code for this part is just the [rgspl1.py][rgspl1] file: you can download it in order to try it out.
 
@@ -512,7 +512,7 @@ Until then, here is a list with all the articles in the series:
 [lsbasi-part7]: https://ruslanspivak.com/lsbasi-part7/
 [roj-blog]: https://mathspp.com/blog/creating-programming-language-from-scratch
 [apl-orchard]: https://chat.stackexchange.com/rooms/52405/the-apl-orchard
-[rgspl-repo]: https://github.com/RojerGS/RGSPL
-[rgspl1]: https://github.com/RojerGS/RGSPL/releases/v0.1
+[rgspl-repo]: https://github.com/RodrigoGiraoSerrao/RGSPL
+[rgspl1]: https://github.com/RodrigoGiraoSerrao/RGSPL/releases/v0.1
 [bnf-wiki]: https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form
 [visitor-wiki]: https://en.wikipedia.org/wiki/Visitor_pattern

@@ -72,6 +72,6 @@ repository][workshops-gh].
  - [Couple of blog posts][fractals-blog] that deal with fractals and
 drawing them.
 
-[workshops-gh]: https://github.com/RojerGS/workshops
+[workshops-gh]: https://github.com/RodrigoGiraoSerrao/workshops
 [Mandelbrot]: /blog/fractals-and-mandelbrot-set
 [fractals-blog]: /blog/tag:fractals

@@ -74,6 +74,6 @@ no GitHub][workshops-gh].
 Também [escrevi um par de artigos no meu blogue][fractals-blog] sobre fractais e
 sobre como desenhá-los.
 
-[workshops-gh]: https://github.com/RojerGS/workshops
+[workshops-gh]: https://github.com/RodrigoGiraoSerrao/workshops
 [Mandelbrot]: /blog/fractals-and-mandelbrot-set
 [fractals-blog]: /blog/tag:fractals

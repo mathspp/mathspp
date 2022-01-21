@@ -24,5 +24,5 @@ After we know where to start, where to end, and which colour we care about (eith
 which looks like a line I could draw with my pencil, if I managed to not overlap my line with the walls of the maze by accident. The code can be found in [this GitHub repo][gh] and a downloadable executable can be found [here][drive]. In both places you can find a `bin` folder with a couple of maze examples.
 
 [Dijkstra's algorithm]: https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
-[gh]: https://github.com/RojerGS/projects/tree/master/MazeSolver
+[gh]: https://github.com/RodrigoGiraoSerrao/projects/tree/master/MazeSolver
 [drive]: https://drive.google.com/open?id=1L7Ell-R4hUlN8Tutp10ycKyUq8kp5_c-

@@ -48,7 +48,7 @@ Heis algumas das coisas que foram ditas sobre este workshop:
  - APL Seeds – [https://www.dyalog.com/apl-seeds-user-meetings/aplseeds21.htm](https://www.dyalog.com/apl-seeds-user-meetings/aplseeds21.htm)
  - APL Wiki – [apl.wiki](https://apl.wiki)
  - TryAPL –  [tryapl.org](https://tryapl.org)
- - TryAPL, notebook “Your first Mandelbrot set” – [https://tryapl.org/?notebook=https://github.com/RojerGS/dyalog-jupyter-notebooks/blob/master/Your%20First%20Mandelbrot%20Set.ipynb](https://tryapl.org/?notebook=https://github.com/RojerGS/dyalog-jupyter-notebooks/blob/master/Your%20First%20Mandelbrot%20Set.ipynb)
+ - TryAPL, notebook “Your first Mandelbrot set” – [https://tryapl.org/?notebook=https://github.com/RodrigoGiraoSerrao/dyalog-jupyter-notebooks/blob/master/Your%20First%20Mandelbrot%20Set.ipynb](https://tryapl.org/?notebook=https://github.com/RodrigoGiraoSerrao/dyalog-jupyter-notebooks/blob/master/Your%20First%20Mandelbrot%20Set.ipynb)
  - Meetup de APL – [mathspp.com/meetup-apl](https://mathspp.com/meetup-apl)
  - Competição de APL – [dyalogaplcompetition.com](https://dyalogaplcompetition.com)
 

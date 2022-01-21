@@ -375,9 +375,9 @@ Until then, here is a list with all the articles in the series:
 </ul>
 
 
-[changes]: https://github.com/RojerGS/RGSPL/compare/v0.3...v0.4
-[rgspl4]: https://github.com/RojerGS/RGSPL/releases/tag/v0.4
+[changes]: https://github.com/RodrigoGiraoSerrao/RGSPL/compare/v0.3...v0.4
+[rgspl4]: https://github.com/RodrigoGiraoSerrao/RGSPL/releases/tag/v0.4
 [previous]: ../lsbasi-apl-part3
-[rgspl-repo]: https://github.com/RojerGS/RGSPL
+[rgspl-repo]: https://github.com/RodrigoGiraoSerrao/RGSPL
 [unittest]: https://docs.python.org/3/library/unittest.html
-[tests]: https://github.com/RojerGS/RGSPL/tree/v0.4/tests
+[tests]: https://github.com/RodrigoGiraoSerrao/RGSPL/tree/v0.4/tests

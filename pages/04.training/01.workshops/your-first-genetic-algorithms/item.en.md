@@ -37,4 +37,4 @@ to create a robot like the second one, evolving it from the first one.
 
 # Useful links
 
- - Code for the vacuum cleaning robot – [GitHub repo](https://github.com/RojerGS/education)
+ - Code for the vacuum cleaning robot – [GitHub repo](https://github.com/RodrigoGiraoSerrao/education)

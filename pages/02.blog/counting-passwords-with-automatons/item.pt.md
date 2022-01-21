@@ -663,7 +663,7 @@ Este valor é $6 \times 10^{12}$ vezes superior à idade atual do universo. Eu n
 Se quiseres espreitar o código final, estás à vontade para visitar [este repositório no GitHub][gh-repo].
 
 [wiki-iep]: https://en.wikipedia.org/wiki/Inclusion%E2%80%93exclusion_principle
-[gh-repo]: https://github.com/RojerGS/projects/tree/master/automatons
+[gh-repo]: https://github.com/RodrigoGiraoSerrao/projects/tree/master/automatons
 [pydonts]: /blog/pydonts
 [pydont-recursion]: /blog/pydonts/watch-out-for-recursion
 [pydont-recursion-branching]: https://mathspp.com/blog/pydonts/watch-out-for-recursion#branching-overlap

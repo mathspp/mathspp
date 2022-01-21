@@ -8,9 +8,9 @@ Progress is great and new things are always exciting... but that doesn't mean ol
 
 ![A picture of an abacus](abacus.jpg "Photo by Crissy Jarvis on Unsplash")
 
-Very recently I watched a [Youtube video](https://www.youtube.com/watch?v=CwT9oZtfRYw) posted by my friend [MathGurl](https://www.youtube.com/channel/UC5RV_s1Jh-jQI4HfexEIb2Q), in which she explained the ancient Egyptian multiplication method. At the same time, and for no particular reason, I remembered Haskell, so I decided to implement the method. It was not a big feat of programming, but I did enjoy relearning the basics of Haskell I once knew. You can find the file with the implementation in [this GH file](https://github.com/RojerGS/projects/blob/master/misc/egyptianMult.hs) or right here:
+Very recently I watched a [Youtube video](https://www.youtube.com/watch?v=CwT9oZtfRYw) posted by my friend [MathGurl](https://www.youtube.com/channel/UC5RV_s1Jh-jQI4HfexEIb2Q), in which she explained the ancient Egyptian multiplication method. At the same time, and for no particular reason, I remembered Haskell, so I decided to implement the method. It was not a big feat of programming, but I did enjoy relearning the basics of Haskell I once knew. You can find the file with the implementation in [this GH file](https://github.com/RodrigoGiraoSerrao/projects/blob/master/misc/egyptianMult.hs) or right here:
 
-<script src="https://gist.github.com/RojerGS/6df9bd9c9e0f16e2e6a7a4948f2020e3.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/6df9bd9c9e0f16e2e6a7a4948f2020e3.js"></script>
 
 (The implementation only works for non-negative integers)
 

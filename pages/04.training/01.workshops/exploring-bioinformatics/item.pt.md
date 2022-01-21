@@ -55,7 +55,7 @@ neste workshop:
 # Links úteis
 
  - Rosalind – [rosalind.info][rosalind]
- - Código das sessões no GitHub - [github.com/RojerGS/workshops/tree/master/exploring-bioinformatics](https://github.com/RojerGS/workshops/tree/master/exploring-bioinformatics)
+ - Código das sessões no GitHub - [github.com/RodrigoGiraoSerrao/workshops/tree/master/exploring-bioinformatics](https://github.com/RodrigoGiraoSerrao/workshops/tree/master/exploring-bioinformatics)
 
 
 [bioengineering-week]: https://www.linkedin.com/company/semana-da-bioengenharia/
@@ -66,4 +66,4 @@ neste workshop:
 [PROB]: http://rosalind.info/problems/prob/
 [KMP]: http://rosalind.info/problems/kmp/
 [LCSM]: http://rosalind.info/problems/lcsm/
-[code-0903]: https://github.com/RojerGS/workshops/tree/master/sessions/is-python-in-your-dna-090321
+[code-0903]: https://github.com/RodrigoGiraoSerrao/workshops/tree/master/sessions/is-python-in-your-dna-090321

@@ -130,7 +130,7 @@ Para além do código de referência, que está disponível [neste repositório 
 [APL]: https://aplwiki.com
 [license]: https://creativecommons.org/licenses/by-nc-sa/4.0/
 [Dyalog]: https://dyalog.com
-[workshops-gh]: https://github.com/RojerGS/workshops
+[workshops-gh]: https://github.com/RodrigoGiraoSerrao/workshops
 [mdapl-pdf]: https://www.dyalog.com/mastering-dyalog-apl.htm
 [mdapl-online]: https://rojergs.github.io/MDAPL
 [apl-orchard]: https://chat.stackexchange.com/rooms/52405/the-apl-orchard

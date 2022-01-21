@@ -26,7 +26,7 @@ Next year I won't be a student but I will be looking forward to participating ag
 
 Like I said above, Phase $1$ is supposed to be easier and these were my submissions:
 
-<script src="https://gist.github.com/RojerGS/9ef6cd01f0f521d2b685425d69a85b0d.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/9ef6cd01f0f521d2b685425d69a85b0d.js"></script>
 
 I should note that, even though I got golden trophies for all the $10$ submissions, I managed to get at least one of the solutions partially wrong! In fact, the problem statement of the tenth problem clearly states that my submission should behave like `{⎕←⍵}¨`, which applied to `'ab'` gives
 
@@ -53,25 +53,25 @@ Now I will share my solutions for the $9$ problems and comment a bit on some of 
 
 #### Problem 1
 
-<script src="https://gist.github.com/RojerGS/6f8912674c5285a3d3dd98ad21680a76.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/6f8912674c5285a3d3dd98ad21680a76.js"></script>
 
 I wrote a first solution for this problem that only worked for inputs of lengths $3$, $5$ or $7$ (like the problem statement guarantees) and I explicitly sorted the input scores with `⍵[⍋⍵]` but then I decided to try and not sort `⍵` explicitly and make it work for any odd-length input `⍵`. That is how I ended up with this solution.
 
 #### Problem 2
 
-<script src="https://gist.github.com/RojerGS/393a63a1af1b21c7edbd98491d5b3c70.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/393a63a1af1b21c7edbd98491d5b3c70.js"></script>
 
 For problem $2$ it looked like I would be able to write the case `⍺ < 0` in terms of the `⍺ > 0` case... And for some time I thought I had done that, but then I noticed my code was failing for one of the test cases and I fell back to writing the `⍺ < 0` case explicitly.
 
 #### Problem 3
 
-<script src="https://gist.github.com/RojerGS/23c6da18edb0d66b9624a98f120e5225.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/23c6da18edb0d66b9624a98f120e5225.js"></script>
 
 This was a fairly standard problem and regexes do all the heavy lifting for me.
 
 #### Problem 4
 
-<script src="https://gist.github.com/RojerGS/aa060988925754356166d76904823c7b.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/aa060988925754356166d76904823c7b.js"></script>
 
 Problem $4$ had two tasks borrowed from the [Rosalind] website, a website with problems on bioinformatics. Even so, the two tasks aren't connected in any obvious way and the second task is just a simple problem in maths (althought I am not saying it doesn't matter for bioinformatics!).
 
@@ -103,7 +103,7 @@ we only need to compute $10$ powers, all of which are squares of the previously 
 
 #### Problem 5
 
-<script src="https://gist.github.com/RojerGS/0ffe48f804f4f46c215c50a3d7fe4e44.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/0ffe48f804f4f46c215c50a3d7fe4e44.js"></script>
 
 I found problem $5$ to be _really_ enjoyable because it was so maths oriented. Solving the first task in an array-oriented way was a really fun challenge for me.
 
@@ -151,13 +151,13 @@ The second task was particularly easy and a simple train solved it neatly (I thi
 
 #### Problem 6
 
-<script src="https://gist.github.com/RojerGS/ddc89dbebab4fd7a812ea83f517c6042.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/ddc89dbebab4fd7a812ea83f517c6042.js"></script>
 
 I didn't enjoy problem $6$ very much because I figured regular expressions would do the job fairly well; the other bit of work that we had to do was effectily offered to us in the problem notes. I tried to make the most out of this problem by avoiding the use of `⎕nl`, which had me write something that looks like a `try ... except ...` block in Python. In the end I reverted back to the `⎕nl` solution because it looked more APLish.
 
 #### Problem 7
 
-<script src="https://gist.github.com/RojerGS/955db89c6ea6ddf96825fc78f3dce9a9.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/955db89c6ea6ddf96825fc78f3dce9a9.js"></script>
 
 Problem $7$ was an interesting problem with three tasks; the first task, to write `CheckDigit`, was pretty much given to us in the problem statement. However, task $3$ really caught my attention.
 
@@ -174,7 +174,7 @@ Because `ReadUPC` is supposed to accept barcodes read from left to right and fro
 
 #### Problem 8
 
-<script src="https://gist.github.com/RojerGS/99bbab8cd5728858608fd20502d59aba.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/99bbab8cd5728858608fd20502d59aba.js"></script>
 
 The reason for which I found this problem easy was the same reason that led me to solve the `sset` with ease, because I have studied related topics in my maths degree. _However_, I have no idea if I did what was expected of a good solution. The problem statements says, and I quote,
 
@@ -192,7 +192,7 @@ This was, by far, my favourite problem of the competition. I wrote two solutions
 
 ##### Recursive
 
-<script src="https://gist.github.com/RojerGS/8845dc6a7191bc66cb9d2733e44261d5.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/8845dc6a7191bc66cb9d2733e44261d5.js"></script>
 
 My recursive solution started out way bigger than what it is now, given that with more thinking I realized several parts were unnecessary. The basic idea is to parse the character matrix with the mobile into a tree-like data structure similar to the one I found in [brainf*ck's workspace][bf].
 
@@ -228,7 +228,7 @@ When everything else was solved, I set out to solve this problem in an array-ori
 
 In the end I managed to do it and I am really pleased with the end result; for an explanation of how it works, you can read the comments above the code:
 
-<script src="https://gist.github.com/RojerGS/7f09c6314c3c6bdfab34e4594c728fc6.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/7f09c6314c3c6bdfab34e4594c728fc6.js"></script>
 
 Another small thing I did that I take pride on was not assuming the end points of the mobile are upper case letters. For me, those end points can be any character that is not a blank space or any of `┐┴┌│─` as those are used for the structure of the mobile.
 

@@ -42,4 +42,4 @@ robots para limparem salas.
 
 # Useful links
 
- - Código de referência para o robot que limpa a sala – [GitHub](https://github.com/RojerGS/education)
+ - Código de referência para o robot que limpa a sala – [GitHub](https://github.com/RodrigoGiraoSerrao/education)

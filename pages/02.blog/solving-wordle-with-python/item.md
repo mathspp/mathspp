@@ -521,5 +521,5 @@ If you have any questions or suggestions, leave them in the comments below!
 [will-mcgugan]: https://twitter.com/willmcgugan
 [will-nerd-snipe]: https://twitter.com/willmcgugan/status/1478043926636417026
 [unix-words]: https://en.wikipedia.org/wiki/Words_(Unix)
-[gh-code]: https://github.com/RojerGS/projects/blob/master/misc/wordle.py
-[gh-code-condensed]: https://github.com/RojerGS/projects/blob/master/misc/wordle2.py
+[gh-code]: https://github.com/RodrigoGiraoSerrao/projects/blob/master/misc/wordle.py
+[gh-code-condensed]: https://github.com/RodrigoGiraoSerrao/projects/blob/master/misc/wordle2.py

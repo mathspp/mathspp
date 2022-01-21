@@ -26,5 +26,5 @@ Aqui podem ver o caminho que o meu programa encontrou para o labirinto do iníci
 O código pode ser encontrado [nesta pasta do GitHub][gh]; também podem encontrar um executável Windows [no Google Drive][drive]. Nos dois sítios há também uma pasta chamada `bin` onde estão alguns exemplos de labirintos que podem usar para testar o programa.
 
 [Dijkstra's algorithm]: https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
-[gh]: https://github.com/RojerGS/projects/tree/master/MazeSolver
+[gh]: https://github.com/RodrigoGiraoSerrao/projects/tree/master/MazeSolver
 [drive]: https://drive.google.com/open?id=1L7Ell-R4hUlN8Tutp10ycKyUq8kp5_c-

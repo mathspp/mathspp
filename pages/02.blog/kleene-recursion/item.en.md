@@ -24,7 +24,7 @@ After that, some constructions are considered, such that functions from $R$ are 
  - Recursion: if the arity of $g$ is $n + 2$ and the arity of $f$ is $n$, then $h = rec(f, g)$ is defined in such a way that $h(X, 0) = f(X), h(X, k+1) = g(X, k, h(X, k))$ (if $X$ is a 'vector' of $n$ arguments);
  - Minimization: $h = \min(f)$, with $f$ having arity $n+1$, is a function of arity $n$ such that $h(X) = i \iff f(X, i) = 0$ and if for all $k < i$, $f(X, k) \neq 0$.
 
-When I learned this I was prompted to define some usual functions in terms of this, for example the addition, the predecessor, multiplication, the factorial, etc. I decided to implement these constructs in Python and then build the non-primitive functions in terms of those. The basic constructs can be found [here](https://github.com/RojerGS/projects/blob/master/kleeneRecursion/basicFunctions.py) and the other definitions can be found implemented [here](https://github.com/RojerGS/projects/blob/master/kleeneRecursion/arithmetics.py).
+When I learned this I was prompted to define some usual functions in terms of this, for example the addition, the predecessor, multiplication, the factorial, etc. I decided to implement these constructs in Python and then build the non-primitive functions in terms of those. The basic constructs can be found [here](https://github.com/RodrigoGiraoSerrao/projects/blob/master/kleeneRecursion/basicFunctions.py) and the other definitions can be found implemented [here](https://github.com/RodrigoGiraoSerrao/projects/blob/master/kleeneRecursion/arithmetics.py).
 
 For the more interested reader, I suggest trying to build some of the non-primitive functions before checking the code. Here is a complete list of the functions I implemented:
 

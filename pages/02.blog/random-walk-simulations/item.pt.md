@@ -12,7 +12,7 @@ Imagina um bêbedo que cambaleia sem Norte, para aqui e para lá...
 
 Passeios aleatórios são isso mesmo! Mais ou menos. Se pensarmos que, para além de estar bêbedo, uma das suas pernas é mais curta que a outra e que ele tende a cambalear mais para um dos lados, então o passeio aleatório já é diferente. Se, ainda para mais, pensarmos que de vez em quando o bêbado se pode teletransportar para uma outra posição perto, temos (algo parecido com) aquilo a que se chama um "Lèvy flight".
 
-Todos estes passeios aleatórios foram implementados por mim em Python, e as implementações podem ser encontradas [aqui](https://github.com/RojerGS/projects/tree/master/randomWalks). A imagem de cima é um screenshot da execução do `trailWalk` que é um passeio aleatório que vai deixando um rasto colorido.
+Todos estes passeios aleatórios foram implementados por mim em Python, e as implementações podem ser encontradas [aqui](https://github.com/RodrigoGiraoSerrao/projects/tree/master/randomWalks). A imagem de cima é um screenshot da execução do `trailWalk` que é um passeio aleatório que vai deixando um rasto colorido.
 
 Na altura em que fiz isto, fiz também uma animação que vai "salpicando" o ecrã com bolas de várias cores e tamanhos:
 

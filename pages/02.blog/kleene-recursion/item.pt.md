@@ -24,7 +24,7 @@ Posto isto, as operações consideradas (que enviam funções de $R$ para outras
  - Recursão: se a aridade de $g$ é $n + 2$ e a aridade de $f$ é $n$, então $h = rec(f, g)$ está definida de tal forma que $h(X, 0) = f(X), h(X, k+1) = g(X, k, h(X, k))$ (onde $X$ representa os primeiros $n$ argumentos);
  - Minimização: $h = \min(f)$, onde $f$ é uma função com aridade $n + 1$, é uma função com aridade $n$ tal que $h(X) = i \iff f(X, i) = 0$ e se para qualquer $k < i$, $f(X, k) \neq 0$.
 
-Quando aprendi isto, decidi tentar definir algumas funções em termos das funções primitivas e das operações listadas. Decidi implementar essas construções em Python e depois construí algumas funções não primitivas. As operações entre funções podem ser encontradas [aqui](https://github.com/RojerGS/projects/blob/master/kleeneRecursion/basicFunctions.py) e as implementações das funções a partir dessas operações estão [aqui](https://github.com/RojerGS/projects/blob/master/kleeneRecursion/arithmetics.py)
+Quando aprendi isto, decidi tentar definir algumas funções em termos das funções primitivas e das operações listadas. Decidi implementar essas construções em Python e depois construí algumas funções não primitivas. As operações entre funções podem ser encontradas [aqui](https://github.com/RodrigoGiraoSerrao/projects/blob/master/kleeneRecursion/basicFunctions.py) e as implementações das funções a partir dessas operações estão [aqui](https://github.com/RodrigoGiraoSerrao/projects/blob/master/kleeneRecursion/arithmetics.py)
 
 Para o leitor mais interessado, sugiro que tentem construir as seguintes funções não primitivas antes de verem o código. Esta é uma lista completa de todas as funções que implementei:
 

@@ -582,5 +582,5 @@ a single Pydon't!
 [itertools]: https://docs.python.org/3/library/itertools.html#itertools.islice
 [container-emulation]: https://docs.python.org/3/reference/datamodel.html#emulating-container-types
 [geometric-prog]: https://en.wikipedia.org/wiki/Geometric_progression
-[geometric-prog-gh]: https://github.com/RojerGS/projects/blob/master/misc/geometric_progression.py
+[geometric-prog-gh]: https://github.com/RodrigoGiraoSerrao/projects/blob/master/misc/geometric_progression.py
 [slice-range-relationship]: /blog/pydonts/idiomatic-sequence-slicing#slicing-and-range

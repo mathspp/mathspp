@@ -56,7 +56,7 @@ on the 9th of March of 2021.
 # Useful links
 
  - Rosalind – [rosalind.info][rosalind]
- - Code related to the sessions on GitHub - [github.com/RojerGS/workshops/tree/master/exploring-bioinformatics](https://github.com/RojerGS/workshops/tree/master/exploring-bioinformatics)
+ - Code related to the sessions on GitHub - [github.com/RodrigoGiraoSerrao/workshops/tree/master/exploring-bioinformatics](https://github.com/RodrigoGiraoSerrao/workshops/tree/master/exploring-bioinformatics)
 
 
 [bioengineering-week]: https://www.linkedin.com/company/semana-da-bioengenharia/
@@ -67,4 +67,4 @@ on the 9th of March of 2021.
 [PROB]: http://rosalind.info/problems/prob/
 [KMP]: http://rosalind.info/problems/kmp/
 [LCSM]: http://rosalind.info/problems/lcsm/
-[code-0903]: https://github.com/RojerGS/workshops/tree/master/sessions/is-python-in-your-dna-090321
+[code-0903]: https://github.com/RodrigoGiraoSerrao/workshops/tree/master/sessions/is-python-in-your-dna-090321

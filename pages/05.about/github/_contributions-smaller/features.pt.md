@@ -4,7 +4,7 @@ features:
     - icon: fas fa-dna
       header: RojerGS/CS4205Python
       text: O projeto final de uma cadeira sobre algoritmos genéticos
-      url: https://github.com/RojerGS/CS4205Python
+      url: https://github.com/RodrigoGiraoSerrao/CS4205Python
     - icon: fas fa-gamepad
       header: inesfmarques/minigames/huehue
       text: O HueHue é um mini jogo de cor fantástico

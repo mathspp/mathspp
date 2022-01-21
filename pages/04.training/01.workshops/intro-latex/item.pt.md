@@ -56,4 +56,4 @@ Para além de partilhar [um documento `.tex` com as coisas vistas no workshop (e
 [codecogs]: https://www.codecogs.com/latex/eqneditor.php
 [detexify]: http://detexify.kirelabs.org/classify.html
 [tables]: https://www.tablesgenerator.com/
-[gh-doc]: https://github.com/RojerGS/workshops/tree/master/intro-latex
+[gh-doc]: https://github.com/RodrigoGiraoSerrao/workshops/tree/master/intro-latex

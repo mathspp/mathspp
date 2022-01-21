@@ -27,7 +27,7 @@ O que vou escrever hoje corresponde sensivelmente a tudo o que a série original
 
 ## O código
 
-[![](https://img.shields.io/github/stars/RojerGS/RGSPL?style=social)](https://github.com/RojerGS/RGSPL)&nbsp;&nbsp;&nbsp;[![run it on Repl.it!](https://repl.it/badge/github/RojerGS/RGSPL)](https://RGSPLpart1.rojergs.repl.run)
+[![](https://img.shields.io/github/stars/RojerGS/RGSPL?style=social)](https://github.com/RodrigoGiraoSerrao/RGSPL)&nbsp;&nbsp;&nbsp;[![run it on Repl.it!](https://repl.it/badge/github/RojerGS/RGSPL)](https://RGSPLpart1.rojergs.repl.run)
 
 O código deste projeto está disponível [neste repositório do GitHub][rgspl-repo], estás à vontade para seguir o repositório. O código que diz respeito a este primeiro artigo da série é o ficheiro [`rgspl1.py`][rgspl1], faz o download do ficheiro para poderes testar o código no teu computador. Também podes testar o código online no teu navegador, basta carregares no botão "run on repl.it" aqui em cima.
 
@@ -509,7 +509,7 @@ Até à próxima!
 [lsbasi-part7]: https://ruslanspivak.com/lsbasi-part7/
 [roj-blog]: https://mathspp.com/blog/creating-programming-language-from-scratch
 [apl-orchard]: https://chat.stackexchange.com/rooms/52405/the-apl-orchard
-[rgspl-repo]: https://github.com/RojerGS/RGSPL
-[rgspl1]: https://github.com/RojerGS/RGSPL/releases/v0.1
+[rgspl-repo]: https://github.com/RodrigoGiraoSerrao/RGSPL
+[rgspl1]: https://github.com/RodrigoGiraoSerrao/RGSPL/releases/v0.1
 [bnf-wiki]: https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form
 [visitor-wiki]: https://en.wikipedia.org/wiki/Visitor_pattern

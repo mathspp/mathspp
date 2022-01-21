@@ -30,13 +30,13 @@ A maior parte desses cabeçalhos não depende da língua em que o site está a s
 
 Os cabeçalhos que são independentes da língua são definidos no ficheiro `frontmatter.yaml`, que se parece com isto:
 
-<script src="https://gist.github.com/RojerGS/0ff988fb2ac54a81dc18349cc9c619f9.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/0ff988fb2ac54a81dc18349cc9c619f9.js"></script>
 
 
 
 Por outro lado, há alguns cabeçalhos que dependem da língua do utilizador. Por exemplo, o título do artigo (que está no topo da página e no separador do teu navegador) é adaptado para cada língua. Esses cabeçalhos específicos ficam no início de cada ficheiro `item`, entre `---`, que faz com que o GitHub os mostre assim:
 
-<script src="https://gist.github.com/RojerGS/1f8f2727e6358ad33bec5700be4220ed.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/1f8f2727e6358ad33bec5700be4220ed.js"></script>
 
 
 
@@ -49,7 +49,7 @@ O problema é que no início do site e do blogue eu não usava os ficheiros `fro
 
 Por ser uma linguagem para escrever scripts, Python é extremamente útil neste tipo de tarefas. Eu percebi que podia facilmente escrever um script que atravessasse os meus diretórios, à procura de pares de ficheiros `.pt.md` e `.en.md`, que recolhesse os cabeçalhos que esses ficheiros têm em comum, e que atualizasse essa informação no ficheiro `frontmatter.yaml` respetivo (ou então que criasse o ficheiro `frontmatter.yaml` se necessário).
 
-Foi assim que o meu pequeno project [YAMLUtils] nasceu. O script [`yamlutils.py`][yamlutils.py] aceita um caminho para uma pasta como argumento na linha de comandos (e, opcionalmente, o argumento `-r` para indicar que devemos atravessar os diretórios recursivamente) e depois faz exatamente aquilo que descrevi, juntando os cabeçalhos YAML sempre que possível. Eu usei-o no meu blogue com o comando `python yamlutils.py pages/ -r` e podem ver o que o script fez [neste commit](https://github.com/RojerGS/mathspp/commit/7ba80b086d6987ed819c872432ef1eafc1f1b023). Imaginem ter de fazer todas essas alterações à mão!
+Foi assim que o meu pequeno project [YAMLUtils] nasceu. O script [`yamlutils.py`][yamlutils.py] aceita um caminho para uma pasta como argumento na linha de comandos (e, opcionalmente, o argumento `-r` para indicar que devemos atravessar os diretórios recursivamente) e depois faz exatamente aquilo que descrevi, juntando os cabeçalhos YAML sempre que possível. Eu usei-o no meu blogue com o comando `python yamlutils.py pages/ -r` e podem ver o que o script fez [neste commit](https://github.com/RodrigoGiraoSerrao/mathspp/commit/7ba80b086d6987ed819c872432ef1eafc1f1b023). Imaginem ter de fazer todas essas alterações à mão!
 
 Mas especificamente, o meu script vai olhar para a pasta que indicares (e depois navega recursivamente se o argumento `-r` for usado) e depois, para cada pasta:
 
@@ -71,8 +71,8 @@ Faz-me saber que tarefas é que Python já te ajudou a automatizar na secção d
 [Grav]: https://getgrav.org/
 [YAML]: https://en.wikipedia.org/wiki/YAML
 [xkcd]: https://xkcd.com
-[yamlutils]: https://github.com/RojerGS/projects/tree/master/yamlutils
-[yamlutils-post]: https://github.com/RojerGS/mathspp/tree/master/pages/02.blog/yamlutils
-[yamlutils.py]: https://github.com/RojerGS/projects/tree/master/yamlutils/yamlutils.py
-[bug-1]: https://github.com/RojerGS/mathspp/commit/6ac01f412bdd099eb673201689d89ea77d0370d0
-[bug-2]: https://github.com/RojerGS/mathspp/commit/e97dbad13ffc6009d1160b78a83cab467b42f1ca
+[yamlutils]: https://github.com/RodrigoGiraoSerrao/projects/tree/master/yamlutils
+[yamlutils-post]: https://github.com/RodrigoGiraoSerrao/mathspp/tree/master/pages/02.blog/yamlutils
+[yamlutils.py]: https://github.com/RodrigoGiraoSerrao/projects/tree/master/yamlutils/yamlutils.py
+[bug-1]: https://github.com/RodrigoGiraoSerrao/mathspp/commit/6ac01f412bdd099eb673201689d89ea77d0370d0
+[bug-2]: https://github.com/RodrigoGiraoSerrao/mathspp/commit/e97dbad13ffc6009d1160b78a83cab467b42f1ca

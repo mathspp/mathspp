@@ -142,7 +142,7 @@ After defining our new tokens we need to tell the `Tokenizer` when to create the
 
 Because of this change there is a fair share of uninteresting changes that must be done in some `Tokenizer` methods like `__init__`, `advance`, `get_integer`, `get_number_token`, `get_wysiwyg_token` and `tokenize`. A nice exercise would be for you to change these methods so that the `Tokenizer` goes from the beginning of the source string to the end but then returns a reversed list of `Token`s.
 
-You can check those changes by scrolling down in [this GitHub diff](https://github.com/RojerGS/RGSPL/compare/bdd67edc9339f9e4598bcb188db66908b785f13d...cea3093f84361c57ac16d00c3a2eceb74258365e) and loading the diff for the `rgspl.py` file.
+You can check those changes by scrolling down in [this GitHub diff](https://github.com/RodrigoGiraoSerrao/RGSPL/compare/bdd67edc9339f9e4598bcb188db66908b785f13d...cea3093f84361c57ac16d00c3a2eceb74258365e) and loading the diff for the `rgspl.py` file.
 
 Besides those changes, we have to accomodate for our new `ID` Token with a `get_id_token` method and by adapting our `get_next_token` method:
 
@@ -805,8 +805,8 @@ Until then, here is a list with all the articles in the series:
 [apl-wiki-op]: https://aplwiki.com/wiki/Operator
 [apl-wiki-trains]: https://aplwiki.com/wiki/Tacit_programming#Trains
 [apl-wiki-scalar-functions]: https://aplwiki.com/wiki/Scalar_function
-[rgspl-repo]: https://github.com/RojerGS/RGSPL
-[rgspl2]: https://github.com/RojerGS/RGSPL/releases/v0.2
+[rgspl-repo]: https://github.com/RodrigoGiraoSerrao/RGSPL
+[rgspl2]: https://github.com/RodrigoGiraoSerrao/RGSPL/releases/v0.2
 [lsbasi]: https://ruslanspivak.com/lsbasi-part1/
 [Visitor pattern]: https://en.wikipedia.org/wiki/Visitor_pattern
 [ruslan-7]: https://ruslanspivak.com/lsbasi-part7/

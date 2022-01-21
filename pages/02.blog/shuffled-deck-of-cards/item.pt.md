@@ -44,5 +44,5 @@ No final de contas, há uma probabilidade de cerca de $12\%$ de encontrarmos tr�
 
 ---
 
-[1] Escrevi [um script Python](https://github.com/RojerGS/projects/blob/master/whatAreTheOdds/shuffled_card_deck.py) para estimar estas probabilidades, uma vez que fazer as contas com papel e caneta... bem, nem quero pensar no assunto.
+[1] Escrevi [um script Python](https://github.com/RodrigoGiraoSerrao/projects/blob/master/whatAreTheOdds/shuffled_card_deck.py) para estimar estas probabilidades, uma vez que fazer as contas com papel e caneta... bem, nem quero pensar no assunto.
 O código estimou a probabilidade de haver duas cartas iguais de seguida em $\approx 95.5\%$, o que significa que a probabilidade de estar tudo muito bem separado é $\approx 4.5\%$.

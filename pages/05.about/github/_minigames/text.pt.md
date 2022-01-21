@@ -14,5 +14,5 @@ Também costumo escrever sobre os jogos que faço [no meu blogue][games-blog].
 [pigeon simulator]: ../../blog/pigeon-pooping-simulator
 [HueHue]: ../../blog/huehue
 [Minesweeper]: ../../blog/minesweeper-remake
-[minigames]: https://github.com/RojerGS/minigames
+[minigames]: https://github.com/RodrigoGiraoSerrao/minigames
 [games-blog]: https://mathspp.com/blog/tag:games

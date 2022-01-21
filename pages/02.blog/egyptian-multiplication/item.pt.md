@@ -10,9 +10,9 @@ Inovação é algo incrível e coisas novas são sempre interessantes... mas iss
 
 ![A picture of an abacus](abacus.jpg "Photo by Crissy Jarvis on Unsplash")
 
-Recentemente vi um [vídeo no Youtube](https://www.youtube.com/watch?v=CwT9oZtfRYw) de uma amiga minha, a [MathGurl](https://www.youtube.com/channel/UC5RV_s1Jh-jQI4HfexEIb2Q), no qual ela explica o método antigo que os egípcios usavam para fazer multiplicações. Por razão nenhuma, mais ou menos ao mesmo tempo que via o vídeo lembrei-me de Haskell e decidi implementar o método de multiplicação em Haskell. Não foi um feito particularmente incrível, mas podem encontrar a implementação [neste ficheiro no GH](https://github.com/RojerGS/projects/blob/master/misc/egyptianMult.hs) ou já aqui em baixo:
+Recentemente vi um [vídeo no Youtube](https://www.youtube.com/watch?v=CwT9oZtfRYw) de uma amiga minha, a [MathGurl](https://www.youtube.com/channel/UC5RV_s1Jh-jQI4HfexEIb2Q), no qual ela explica o método antigo que os egípcios usavam para fazer multiplicações. Por razão nenhuma, mais ou menos ao mesmo tempo que via o vídeo lembrei-me de Haskell e decidi implementar o método de multiplicação em Haskell. Não foi um feito particularmente incrível, mas podem encontrar a implementação [neste ficheiro no GH](https://github.com/RodrigoGiraoSerrao/projects/blob/master/misc/egyptianMult.hs) ou já aqui em baixo:
 
-<script src="https://gist.github.com/RojerGS/6df9bd9c9e0f16e2e6a7a4948f2020e3.js"></script>
+<script src="https://gist.github.com/RodrigoGiraoSerrao/6df9bd9c9e0f16e2e6a7a4948f2020e3.js"></script>
 
 (A implementação só funciona para inteiros não negativos.)
 

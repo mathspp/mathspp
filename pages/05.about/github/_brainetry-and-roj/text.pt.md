@@ -27,6 +27,6 @@ end;
 out result;
 ```
 
-[Brainetry]: https://github.com/RojerGS/Brainetry
-[Roj]: https://github.com/RojerGS/Roj
+[Brainetry]: https://github.com/RodrigoGiraoSerrao/Brainetry
+[Roj]: https://github.com/RodrigoGiraoSerrao/Roj
 [roj-post]: ../../blog/creating-programming-language-from-scratch

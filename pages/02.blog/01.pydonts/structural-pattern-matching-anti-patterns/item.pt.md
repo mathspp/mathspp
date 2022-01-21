@@ -42,4 +42,4 @@ Se quiseres, deixa um comentário em baixo a pedir que eu traduza o artigo ASAP 
 [rule-30]: https://www.wolframalpha.com/input/?i=rule+30
 [rule-30-wiki]: https://en.wikipedia.org/wiki/Rule_30
 [APL]: https://apl.wiki
-[RGSPL]: https://github.com/RojerGS/RGSPL
+[RGSPL]: https://github.com/RodrigoGiraoSerrao/RGSPL

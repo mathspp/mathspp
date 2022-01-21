@@ -46,6 +46,6 @@ On the other hand, you only get four equal cards in a row in less than $0.25\%$ 
 
 ---
 
-[1] I wrote [a Python script](https://github.com/RojerGS/projects/blob/master/whatAreTheOdds/shuffled_card_deck.py) to estimate this probability,
+[1] I wrote [a Python script](https://github.com/RodrigoGiraoSerrao/projects/blob/master/whatAreTheOdds/shuffled_card_deck.py) to estimate this probability,
 as the thought of doing this with pen and paper didn't seem very inviting. The script estimates the probability of getting at least two equal in a row as $\approx 95.5\%$ 
 and the probability of having everything thoroughly separated as $\approx 4.5\%$.

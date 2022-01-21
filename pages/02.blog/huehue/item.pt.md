@@ -29,4 +29,4 @@ O código do jogo e do gerador aleatório de degradees pode ser obtido [nesta pa
 O que é que farias para melhorar este jogo? Faz-me saber nos comentários aqui em baixo.
 
 [ines]: https://github.com/inesfmarques/
-[huehuegh]: https://github.com/RojerGS/minigames/tree/master/huehue
+[huehuegh]: https://github.com/RodrigoGiraoSerrao/minigames/tree/master/huehue

@@ -17,5 +17,5 @@ start the game, you can use the **+** and **-** keys to change the difficulty (w
 The goal is to hit as many people as possible, knowing that you can't poop _constantly_. There is a little - intentional - delay. After flying and pooping for 60 seconds
 you are greeted by a screen with some stats, namely the percentage of people you managed to hit and the percentage of poops that hit / missed people.
 
-The code was written Python 3 and pygame and the code + images can be found in [this GitHub repo](https://github.com/RojerGS/minigames/tree/master/pigeon-simulator). A windows executable can also be
+The code was written Python 3 and pygame and the code + images can be found in [this GitHub repo](https://github.com/RodrigoGiraoSerrao/minigames/tree/master/pigeon-simulator). A windows executable can also be
 found inside [this Drive folder](https://drive.google.com/open?id=0ByBeLS6ciLYVWElhc2dZdFc1Ykk). In order to be able to run the executable, the folder must be left as-is.

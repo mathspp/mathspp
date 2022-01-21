@@ -10,7 +10,7 @@ O jogo Minesweeper deve ser um dos mini-jogos mais famosos de todos os tempos e 
 
 A imagem em cima é uma captura de ecrã da minha implementação do jogo do Minesweeper que fiz quando estava a treinar os meus conhecimentos de Python.
 
-O código do jogo está disponível [neste repositório do GitHub](https://github.com/RojerGS/minigames/tree/master/minesweeper), onde também podem encontrar um executável Windows.
+O código do jogo está disponível [neste repositório do GitHub](https://github.com/RodrigoGiraoSerrao/minigames/tree/master/minesweeper), onde também podem encontrar um executável Windows.
 
 O jogo é relativamente fácil de jogar:
 

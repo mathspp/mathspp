@@ -888,7 +888,7 @@ If you want to take a look at the final code,
 then go ahead and check [the GitHub repository][gh-repo].
 
 [wiki-iep]: https://en.wikipedia.org/wiki/Inclusion%E2%80%93exclusion_principle
-[gh-repo]: https://github.com/RojerGS/projects/tree/master/automatons
+[gh-repo]: https://github.com/RodrigoGiraoSerrao/projects/tree/master/automatons
 [pydonts]: /blog/pydonts
 [pydont-recursion]: /blog/pydonts/watch-out-for-recursion
 [pydont-recursion-branching]: https://mathspp.com/blog/pydonts/watch-out-for-recursion#branching-overlap

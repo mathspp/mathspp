@@ -19,6 +19,6 @@ duas tentativas de arruinar a vida às pessoas por baixo do pombo. Depois de and
 percentagem dos cocós que acertaram em pessoas e qual a percentagem de pessoas a quem conseguimos arruinar o dia.
 
 
-O jogo foi escrito em Python 3 com pygame e podem encontrar [neste respositório do GitHub](https://github.com/RojerGS/minigames/tree/master/pigeon-simulator) o código e as imagens.
+O jogo foi escrito em Python 3 com pygame e podem encontrar [neste respositório do GitHub](https://github.com/RodrigoGiraoSerrao/minigames/tree/master/pigeon-simulator) o código e as imagens.
 Um executável Windows pode ser encontrado [nesta pasta do Drive](https://drive.google.com/open?id=0ByBeLS6ciLYVWElhc2dZdFc1Ykk).
 Para se poder correr o jogo, é necessário deixar a pasta tal e qual como está.

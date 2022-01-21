@@ -10,7 +10,7 @@ Minesweeper has to be one of the most well-known minigames of all time, no? I sp
 
 I made a remake of Minesweeper when I was trying to sharpen my Python skills and you can see above a screenshot of my version of the game.
 
-You can find the code in [this GitHub repo](https://github.com/RojerGS/minigames/tree/master/minesweeper) GitHub repo, where you can also find a Windows executable.
+You can find the code in [this GitHub repo](https://github.com/RodrigoGiraoSerrao/minigames/tree/master/minesweeper) GitHub repo, where you can also find a Windows executable.
 
 The game is fairly easy to play:
 

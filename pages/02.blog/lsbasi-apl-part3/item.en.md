@@ -1237,12 +1237,12 @@ Until then, here is a list with all the articles in the series:
 </ul>
 
 
-[changes]: https://github.com/RojerGS/RGSPL/compare/v0.2...v0.3
-[testing]: https://github.com/RojerGS/RGSPL/blob/v0.3/testing.py
+[changes]: https://github.com/RodrigoGiraoSerrao/RGSPL/compare/v0.2...v0.3
+[testing]: https://github.com/RodrigoGiraoSerrao/RGSPL/blob/v0.3/testing.py
 
-[rgspl3]: https://github.com/RojerGS/RGSPL/releases/tag/v0.3
+[rgspl3]: https://github.com/RodrigoGiraoSerrao/RGSPL/releases/tag/v0.3
 [previous]: ../lsbasi-apl-part2
-[rgspl-repo]: https://github.com/RojerGS/RGSPL
+[rgspl-repo]: https://github.com/RodrigoGiraoSerrao/RGSPL
 [lsbasi]: https://ruslanspivak.com/lsbasi-part1/
 
 [ruslan-7]: https://ruslanspivak.com/lsbasi-part7/

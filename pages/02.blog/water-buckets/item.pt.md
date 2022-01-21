@@ -38,7 +38,7 @@ _Será que existe um caminho no grafo descrito que comece em $(0, \cdots, 0)$ e 
 
 Para resolver o problema, implementei o [algoritmo de procura em largura](https://pt.wikipedia.org/wiki/Busca_em_largura) e vou construindo apenas as partes do grafo de que vou precisando. Isto também garante que a resposta que o script encontra é a mais curta possível.
 
-A implementação está [neste script](https://github.com/RojerGS/projects/blob/master/misc/bucketSolver.py) que pode ser encontrado no GitHub. Alternativamente, podem experimentar correr o script no widget disponível em baixo, embora eu recomende que o façam [diretamente no repl.it](https://repl.it/@RojerGS/PoisedRepentantIndianjackal). No topo do script há duas variáveis, `T` e `buckets`, que contêm respetivamente o valor alvo e as capacidades dos baldes. Estas variáveis podem ser alteradas para resolver problemas com outras configurações.
+A implementação está [neste script](https://github.com/RodrigoGiraoSerrao/projects/blob/master/misc/bucketSolver.py) que pode ser encontrado no GitHub. Alternativamente, podem experimentar correr o script no widget disponível em baixo, embora eu recomende que o façam [diretamente no repl.it](https://repl.it/@RojerGS/PoisedRepentantIndianjackal). No topo do script há duas variáveis, `T` e `buckets`, que contêm respetivamente o valor alvo e as capacidades dos baldes. Estas variáveis podem ser alteradas para resolver problemas com outras configurações.
 
 <iframe allowfullscreen="true" allowtransparency="true" frameborder="no" height="400px" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" scrolling="no" src="https://repl.it/@RojerGS/WaterBuckets?lite=true" width="100%"></iframe>
 
