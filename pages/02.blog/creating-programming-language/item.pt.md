@@ -16,7 +16,7 @@ Num outro momento da minha vida, ganhei algum interesse por compiladores e por i
 
 Na altura só havia 5 ou 6 artigos nessa série e eu consegui atingir esse ponto com alguma facilidade. Também reparei que o intervalo de tempo entre artigos era considerável e decidi deixar de seguir a série, ponto em que inventei um pouco e criei a linguagem de programação a que chamei **Roj**.
 
-O produto final foi uma linguagem de programação simples com os elementos habituais, tais como os ciclos ``while`` e as expressões ``if-else``. O código fonte do interpretador e alguns programas pequenos escritos em Roj podem ser encontrados [neste](https://github.com/RojerGS/Roj) repositório do GitHub. Aí também se pode encontrar a minha tentativa de formalizar a gramática do Roj com [_notação BNF_](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form).
+O produto final foi uma linguagem de programação simples com os elementos habituais, tais como os ciclos ``while`` e as expressões ``if-else``. O código fonte do interpretador e alguns programas pequenos escritos em Roj podem ser encontrados [neste](https://github.com/RodrigoGiraoSerrao/Roj) repositório do GitHub. Aí também se pode encontrar a minha tentativa de formalizar a gramática do Roj com [_notação BNF_](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form).
 
 Para se conseguir correr os programas escritos em Roj, há que correr o ficheiro ``RojInterpreter.py``, que começa um ciclo REPL (Read-Evaluate-Print-Loop). Podem escrever código Roj numa linha ou escrever _execute ficheiro_, onde _ficheiro_ é o nome do ficheiro com o programa que querem executar:
 
