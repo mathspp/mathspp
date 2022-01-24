@@ -5,9 +5,9 @@ Today I learned that you can build web apps with Python using streamlit.
 ![](thumbnail.png "The streamlit logo")
 
 
-# `streamlit`
+# Streamlit
 
-[`streamlit`][streamlit] is, according to their website,
+[Streamlit][streamlit] is, according to their website,
 “the fastest way to build and share data apps”.
 
 I don't know if it is the _fastest_,
