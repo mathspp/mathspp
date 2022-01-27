@@ -1,0 +1,15 @@
+date: 29-09-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    description: Create a simple chatroom server in Python by following along this tutorial series.
+    og:image: https://mathspp.com/blog/twitter-threads/thumbnail.png
+    twitter:image: https://mathspp.com/blog/twitter-threads/thumbnail.png
+publish_date: 26-01-2022
+slug: sign-challenge-review
+taxonomy:
+    category: twitter thread
+    tag:
+      - code review
+      - programming
+      - python
+title: "Chatroom server tutorial"
