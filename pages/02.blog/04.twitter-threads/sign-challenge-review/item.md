@@ -1,3 +1,29 @@
+---
+date: 29-09-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    description: A comparison of many possible Python implementations of the sign function.
+    og:image: https://mathspp.com/blog/twitter-threads/thumbnail.png
+    twitter:image: https://mathspp.com/blog/twitter-threads/thumbnail.png
+publish_date: 26-01-2022
+slug: sign-challenge-review
+taxonomy:
+    category: twitter thread
+    tag:
+      - code review
+      - programming
+      - python
+title: "Chatroom server tutorial"
+---
+
+A comparison of many possible Python implementations of the sign function.
+
+===
+
+! This article is an **unedited** reproduction of a piece of content
+! I posted on Twitter here:
+! <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I challenged you 🏆...<br><br>You delivered 💪!<br><br>I asked you to implement the sign function in Python 🐍.<br><br>Now I&#39;ll go over some alternatives and tell you what I like ✅ and dislike ❌ about them.<br><br>I&#39;ll also tell you which one I think is the best, most Pythonic ✨ one.<br><br>👇🧵 <a href="https://t.co/JORiBUWEgi">pic.twitter.com/JORiBUWEgi</a></p>&mdash; Rodrigo 🐍📝 (@mathsppblog) <a href="https://twitter.com/mathsppblog/status/1443138696220487681?ref_src=twsrc%5Etfw">September 29, 2021</a></blockquote>
+
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I challenged you 🏆...
