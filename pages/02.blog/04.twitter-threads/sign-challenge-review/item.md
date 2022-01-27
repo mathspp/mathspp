@@ -317,7 +317,7 @@ Then, maybe you could try the new pattern matching features from Python 3.10!
 
 In case you need to learn it:
 
-<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">Hmmm, &#39;kay.<br><br>That&#39;s all nice and fine.<br><br>What if I don&#39;t want to use `if`s, but also no weird Boolean computations?<br><br>Then, maybe you could try new pattern matching feature from Python 3.10!<br><br>In case you need to learn it: <a href="https://t.co/XnyqBE68kO">https://t.co/XnyqBE68kO</a></p>&mdash; Rodrigo 🐍📝 (@mathsppblog) <a href="https://twitter.com/mathsppblog/status/1443149705664507905?ref_src=twsrc%5Etfw">September 29, 2021</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Have you heard that Python 🐍 3.10 will be released soon?<br><br>Are you ready for when it drops 💣🔥?<br><br>Python 3.10 will ship with the new ✨ match statement, and I created a cheatsheet just for that.<br><br>This is also a thread 👇🧵 that breaks it down and explains everything:</p>&mdash; Rodrigo 🐍📝 (@mathsppblog) <a href="https://twitter.com/mathsppblog/status/1442264814865326080?ref_src=twsrc%5Etfw">September 26, 2021</a></blockquote>
 
 
 Can we use `match` to solve this?
