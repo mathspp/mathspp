@@ -317,7 +317,7 @@ Then, maybe you could try the new pattern matching features from Python 3.10!
 
 In case you need to learn it:
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hmmm, &#39;kay.<br><br>That&#39;s all nice and fine.<br><br>What if I don&#39;t want to use `if`s, but also no weird Boolean computations?<br><br>Then, maybe you could try new pattern matching feature from Python 3.10!<br><br>In case you need to learn it: <a href="https://t.co/XnyqBE68kO">https://t.co/XnyqBE68kO</a></p>&mdash; Rodrigo 🐍📝 (@mathsppblog) <a href="https://twitter.com/mathsppblog/status/1443149705664507905?ref_src=twsrc%5Etfw">September 29, 2021</a></blockquote>
+<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">Hmmm, &#39;kay.<br><br>That&#39;s all nice and fine.<br><br>What if I don&#39;t want to use `if`s, but also no weird Boolean computations?<br><br>Then, maybe you could try new pattern matching feature from Python 3.10!<br><br>In case you need to learn it: <a href="https://t.co/XnyqBE68kO">https://t.co/XnyqBE68kO</a></p>&mdash; Rodrigo 🐍📝 (@mathsppblog) <a href="https://twitter.com/mathsppblog/status/1443149705664507905?ref_src=twsrc%5Etfw">September 29, 2021</a></blockquote>
 
 
 Can we use `match` to solve this?
@@ -388,8 +388,7 @@ Well, *personally*, I love weird snippets of code 😂 But I don't write them in
 
 So, that means I end up with a split preference, between 👇
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I think the conditional expression wasn&#39;t that bad, right?<br><br>Maybe we could improve on it?<br><br>Well, we can try!<br><br>What if we nest two conditional expressions to handle the three cases?<br><br>Again, just a quick remark about this one: <a href="https://t.co/zl3wFvKKeR">pic.twitter.com/zl3wFvKKeR</a></p>&mdash; Rodrigo 🐍📝 (@mathsppblog) <a href="https://twitter.com/mathsppblog/status/1443144847460868098?ref_src=twsrc%5Etfw">September 29, 2021</a></blockquote>
-
+<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">I think the conditional expression wasn&#39;t that bad, right?<br><br>Maybe we could improve on it?<br><br>Well, we can try!<br><br>What if we nest two conditional expressions to handle the three cases?<br><br>Again, just a quick remark about this one: <a href="https://t.co/zl3wFvKKeR">pic.twitter.com/zl3wFvKKeR</a></p>&mdash; Rodrigo 🐍📝 (@mathsppblog) <a href="https://twitter.com/mathsppblog/status/1443144847460868098?ref_src=twsrc%5Etfw">September 29, 2021</a></blockquote>
 
 and the slightly condensed `if: ... elif: ... else: ...` block 👇
 
@@ -397,7 +396,7 @@ I don't know why, but it *really* bothers me that such a simple function takes 6
 
 (Does anyone else feel like that?)
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Absolutely, and you end up with this 👇<br><br>Equivalent to the `if` from the beginning, but condensed.<br><br>Canned `if`-blocks, everyone!<br><br>Ok!<br><br>So, we used `match` and ended up getting away from it?<br><br>Unacceptable!<br><br>One more try: <a href="https://t.co/kj4EIIn7AE">pic.twitter.com/kj4EIIn7AE</a></p>&mdash; Rodrigo 🐍📝 (@mathsppblog) <a href="https://twitter.com/mathsppblog/status/1443149714749276160?ref_src=twsrc%5Etfw">September 29, 2021</a></blockquote>
+<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">Absolutely, and you end up with this 👇<br><br>Equivalent to the `if` from the beginning, but condensed.<br><br>Canned `if`-blocks, everyone!<br><br>Ok!<br><br>So, we used `match` and ended up getting away from it?<br><br>Unacceptable!<br><br>One more try: <a href="https://t.co/kj4EIIn7AE">pic.twitter.com/kj4EIIn7AE</a></p>&mdash; Rodrigo 🐍📝 (@mathsppblog) <a href="https://twitter.com/mathsppblog/status/1443149714749276160?ref_src=twsrc%5Etfw">September 29, 2021</a></blockquote>
 
 
 Thanks for making it so far!
