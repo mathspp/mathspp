@@ -1,4 +1,4 @@
-Join me as I create a simulation that tries to test an ELO-based rating system for quizzes.
+Join me as I create a simulation that tries to test an Elo-based rating system for quizzes.
 
 ===
 
@@ -8,7 +8,7 @@ Join me as I create a simulation that tries to test an ELO-based rating system f
 # Introduction
 
 In this article, I will tell you about a simulation that I built.
-This simulation is built around a rating system that is based off of the [ELO rating system][ELO],
+This simulation is built around a rating system that is based off of the [Elo rating system][Elo],
 and I will use [Streamlit][streamlit-til] to build the app that will control the simulation.
 This will also make it easier to share the simulation with others.
 
@@ -19,7 +19,7 @@ to host the Streamlit web app that you can play with live, [here][streamlit-app]
 The screenshot above also refers to the same Streamlit web app.
 
 
-# ELO-based rating system for quizzes
+# Elo-based rating system for quizzes
 
 What I'm trying to do is design a decent rating system for a quiz app.
 The idea is that the quiz questions will have a rating,
@@ -32,11 +32,11 @@ If the player answers incorrectly, the ratings change the other way around.
 
 So, how can we build such a system?
 
-The [ELO rating system][ELO] is a system that attributes a numeric rating to players,
+The [Elo rating system][Elo] is a system that attributes a numeric rating to players,
 in order to determine the relative skill of the players.
-The ELO rating is probably best known for being the rating used in chess.
+The Elo rating is probably best known for being the rating used in chess.
 
-I have seen the website chess.com use an ELO-like system for their chess problems:
+I have seen the website chess.com use an Elo-like system for their chess problems:
 you play the problem and, if you get it right, your problem-solving rating increases;
 at the same time, the rating of the problem decreases.
 If you get it wrong, vice-versa.
@@ -57,13 +57,13 @@ If we scroll the Wikipedia article to the section that mentions the mathematical
 we get what we need.
 
 Suppose that players $A$ and $B$ have ratings $R_A$ and $R_B$, respectively.
-The ELO rating system determines how well it _thinks_ each player should perform,
+The Elo rating system determines how well it _thinks_ each player should perform,
 when compared to the other player.
 In other words, the ratings $R_A$ and $R_B$ don't really say how good – or how bad –
 each player is; the ratings only say how much better – or how much worse –
 player $A$ is when compared to player $B$.
 
-So, when $A$'s rating is higher than $B$, the ELO rating system expects $A$ to do well against $B$.
+So, when $A$'s rating is higher than $B$, the Elo rating system expects $A$ to do well against $B$.
 How is this translated into maths?
 
 Well, let's assume that the match between $A$ and $B$ has a score between $0$ and $1$.
@@ -136,7 +136,7 @@ SCALE_FACTOR = 400
 
 
 class RatedEntity:
-    """Represents an entity that has an ELO-like numerical rating."""
+    """Represents an entity that has an Elo-like numerical rating."""
 
     def __init__(self, rating: float, K: int):
         self.rating = rating
@@ -203,7 +203,7 @@ class RatedEntity:
 
 
 class Question(RatedEntity):
-    """Represents a question with an ELO rating.
+    """Represents a question with an Elo rating.
 
     A question is a rated entity that defines a strategy to handle the evolution
     of the K factor.
@@ -223,7 +223,7 @@ class Question(RatedEntity):
 
 
 class Player(RatedEntity, ABC):
-    """Represents a player with an ELO rating.
+    """Represents a player with an Elo rating.
 
     A player is a rated entity that provides a (possibly random) function
     that determines the score the player would get when answering a question.
@@ -312,7 +312,7 @@ import streamlit as st
 from player import Question, AlwaysRight
 
 
-st.title("ELO-based rating system for quizzes")
+st.title("Elo-based rating system for quizzes")
 
 with st.expander("Rating settings:"):
     st.text("Define the initial ratings for questions and players.")
@@ -367,7 +367,7 @@ First, here is the method I mentioned for the players:
 # ...
 
 class Player(RatedEntity, ABC):
-    """Represents a player with an ELO rating.
+    """Represents a player with an Elo rating.
 
     A player is a rated entity that provides a (possibly random) function
     that determines the score the player would get when answering a question.
@@ -442,10 +442,10 @@ all_players = players[::]
 
 plot = st.line_chart(
     {
-        "Min question ELO": [],
-        "Max question ELO": [],
-        "Min player ELO": [],
-        "Max player ELO": [],
+        "Min question Elo": [],
+        "Max question Elo": [],
+        "Min player Elo": [],
+        "Max player Elo": [],
     }
 )
 
@@ -460,10 +460,10 @@ while players:
     if not c:
         plot.add_rows(
             {
-                "Min question ELO": [min(q.rating for q in questions)],
-                "Max question ELO": [max(q.rating for q in questions)],
-                "Min player ELO": [min(p.rating for p in all_players)],
-                "Max player ELO": [max(p.rating for p in all_players)],
+                "Min question Elo": [min(q.rating for q in questions)],
+                "Max question Elo": [max(q.rating for q in questions)],
+                "Min player Elo": [min(p.rating for p in all_players)],
+                "Max player Elo": [max(p.rating for p in all_players)],
             }
         )
 ```
@@ -471,7 +471,7 @@ while players:
 After running the simulation and playing around with the sliders,
 this is what I got:
 
-![A screenshot of a Python web app built with streamlit, containing a simulation of an ELO-based rating system.](_simulation_demo_v2.png "Screenshot of the Streamlit app.")
+![A screenshot of a Python web app built with streamlit, containing a simulation of an Elo-based rating system.](_simulation_demo_v2.png "Screenshot of the Streamlit app.")
 
 
 # Finer control over player archetypes
@@ -520,10 +520,10 @@ all_players = players[::]
 
 plot = st.line_chart(
     {
-        "Min question ELO": [],
-        "Max question ELO": [],
-        "Min player ELO": [],
-        "Max player ELO": [],
+        "Min question Elo": [],
+        "Max question Elo": [],
+        "Min player Elo": [],
+        "Max player Elo": [],
     }
 )
 
@@ -538,10 +538,10 @@ while players:
     if not c:
         plot.add_rows(
             {
-                "Min question ELO": [min(q.rating for q in questions)],
-                "Max question ELO": [max(q.rating for q in questions)],
-                "Min player ELO": [min(p.rating for p in all_players)],
-                "Max player ELO": [max(p.rating for p in all_players)],
+                "Min question Elo": [min(q.rating for q in questions)],
+                "Max question Elo": [max(q.rating for q in questions)],
+                "Min player Elo": [min(p.rating for p in all_players)],
+                "Max player Elo": [max(p.rating for p in all_players)],
             }
         )
 ```
@@ -561,7 +561,7 @@ breaking it up into a couple of functions.
 
 Here is an animated GIF of the final simulation app:
 
-![Animated GIF of the Streamlit web app built with Python that simulates the ELO rating variations within players and questions.](_simulation_demo_v3.gif)
+![Animated GIF of the Streamlit web app built with Python that simulates the Elo rating variations within players and questions.](_simulation_demo_v3.gif)
 
 !!! I commited all the code to [this GitHub repository][gh-repo],
 !!! and you can play around with the simulation, online, [here][streamlit-app].
@@ -628,10 +628,10 @@ def run_simulation():
         if not c:
             plot.add_rows(
                 {
-                    "Min question ELO": [min(q.rating for q in questions)],
-                    "Max question ELO": [max(q.rating for q in questions)],
-                    "Min player ELO": [min(p.rating for p in all_players)],
-                    "Max player ELO": [max(p.rating for p in all_players)],
+                    "Min question Elo": [min(q.rating for q in questions)],
+                    "Max question Elo": [max(q.rating for q in questions)],
+                    "Min player Elo": [min(p.rating for p in all_players)],
+                    "Max player Elo": [max(p.rating for p in all_players)],
                 }
             )
         c = (c + 1) % (total_questions // len(questions))
@@ -640,7 +640,7 @@ def run_simulation():
 def main():
     """Run the Streamlit app."""
 
-    st.title("ELO-based rating system for quizzes simulation")
+    st.title("Elo-based rating system for quizzes simulation")
     set_ratings_expander()
     set_questions_sliders()
     set_player_archetype_expander()
@@ -679,6 +679,6 @@ hosted by Streamlit Cloud _for free_.
 
 
 [streamlit-til]: /blog/til/026
-[ELO]: https://en.wikipedia.org/wiki/Elo_rating_system
+[Elo]: https://en.wikipedia.org/wiki/Elo_rating_system
 [gh-repo]: https://github.com/mathspp/elo-simulation
 [streamlit-app]: https://share.streamlit.io/mathspp/elo-simulation/main/simulation.py
