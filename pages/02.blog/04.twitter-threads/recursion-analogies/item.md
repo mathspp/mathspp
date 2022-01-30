@@ -15,8 +15,11 @@ taxonomy:
       - recursion
 title: "Recursion analogies"
 ---
+
 A couple of analogies I use when thinking about recursion.
+
 ===
+
 I remember it took me a couple of years to really _understand_ recursion.
 When I first started learning computer programming, it just didn't click!
 Now, recursion feels natural to me.
