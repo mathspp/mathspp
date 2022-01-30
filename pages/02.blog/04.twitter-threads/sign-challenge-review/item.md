@@ -13,7 +13,7 @@ taxonomy:
       - code review
       - programming
       - python
-title: "Chatroom server tutorial"
+title: "`sign` challenge review."
 ---
 
 A comparison of many possible Python implementations of the sign function.
