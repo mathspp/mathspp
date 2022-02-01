@@ -326,7 +326,7 @@ print(count)
     1292
     
 
-Of course, now we have another issue of repeated work: first, we go over the whole file to read the lines with `.readliens`, and then we go over the file contents to convert everything into an integer.
+Of course, now we have another issue of repeated work: first, we go over the whole file to read the lines with `.readlines`, and then we go over the file contents to convert everything into an integer.
 We can do everything at once, if we convert the lines to integers _while_ we read them:
 
 
