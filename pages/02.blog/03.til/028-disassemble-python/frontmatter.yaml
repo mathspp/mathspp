@@ -1,0 +1,17 @@
+date: 03-02-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to disassemble Python code with the module `dis`."
+    og:image: https://mathspp.com/blog/til/028/thumbnail.png
+    twitter:image: https://mathspp.com/blog/til/028/thumbnail.png
+references:
+  - "Python 3 Documentation, The Python Standard Library, `dis`, [https://docs.python.org/3/library/dis](https://docs.python.org/3/library/dis) [last accessed 03-02-2022];"
+  - "Constant folding, Wikipedia, [https://en.wikipedia.org/wiki/Constant_folding](https://en.wikipedia.org/wiki/Constant_folding) [last accessed 03-02-2022];"
+slug: "028"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - interpreters
+      - programming
+      - python
+title: "TIL #028 – disassemble Python."
