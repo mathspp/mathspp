@@ -1,0 +1,16 @@
+date: 06-02-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "The Zen of Python says “there should be one -- and preferably only one -- obvious way to do it”, but what if there are a dozen obvious ways to do it?"
+    og:image: https://mathspp.com/blog/50-shades-of-sign/thumbnail.png
+    twitter:image: https://mathspp.com/blog/50-shades-of-sign/thumbnail.png
+publish_date: 06-02-2022 18:00
+slug: 50-shades-of-sign
+taxonomy:
+    category: blogpost
+    tag:
+      - code review
+      - mathematics
+      - programming
+      - python
+title: "50 shades of sign"
