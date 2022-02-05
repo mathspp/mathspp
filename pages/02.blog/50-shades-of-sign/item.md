@@ -102,9 +102,9 @@ I mean, the solution looks shorter,
 but the essence is still pretty much the same,
 I'm not really making use of any nice Python features...
 
-Maybe if I made use of the fact that Python has [Truthy and Falsy values][truthy-falsy]?
-I mean, that just means I'd have to reorder some things around,
-to explicitly check for equality with `0`:
+When I'm stuck, I just shuffle things around,
+to promote creativity.
+Let me try to reorder the cases:
 
 ```py
 def sign(x):
@@ -116,8 +116,8 @@ I guess this sacrifices the symmetry we had:
  - `x > 0` returned `1`.
  - `x < 0` return `-1`.
 
-But now, we can replace the equality check `x == 0` by something more Pythonic, right?
-In fact, `0` is considered Falsy and any other number will be considered Truthy:
+But now, the `x == 0` reminds of the fact that Python has [Truthy and Falsy values][truthy-falsy]!
+In fact, `0` is considered Falsy and any other number is considered Truthy:
 
 ```py
 >>> bool(73)
@@ -128,7 +128,7 @@ False
 True
 ```
 
-So we can just replace `x == 0` with `not x`:
+What this shows is that we can replace the equality `x == 0` with `not x`:
 
 ```py
 def sign(x):
@@ -139,15 +139,11 @@ That's much better!
 
 Probably..?
 
-Probably not, I'm getting a bit too carried away.
-I don't want to get fired by writing illegible in the most readable language of all times!
+Maybe not..?
 
 Two conditional expressions chained and making use of the Falsy value of `0` might be a bit too much...
-And I even sacrificed the symmetry of the solution!
-The symmetry was nice because our brain apprehends patterns faster than just random bits of information...
 
-Alright, but I know how to not get fired!
-Let's treat the function `sign` as if really the case `x == 0` is the edge case that we need to take care of immediately:
+Let's handle `x == 0` as an edge case, and then separate the positive inputs from the negative inputs:
 
 ```py
 def sign(x):
@@ -161,9 +157,11 @@ Ah, that sounds like a great idea!
 
 But wait, if `x == 0` really is to be treated like an edge case,
 then it doesn't make sense to have the `else` in there.
-
 I mean, edge cases don't generally happen, so the `else` statement is just a bit redundant...
 I should probably get rid of it!
+
+This minor thing is just a pedantic point on semantics,
+but let's go through with it:
 
 ```py
 def sign(x):
@@ -182,16 +180,11 @@ Perfect, this should settle it...
 
 Except...
 
-What if...
-What if, instead of using conditionals to pick the correct result,
-I used a bit of maths to _compute_ the result?
-That will impress my managers, right?
-If I use maths I'll show them I know what I'm doing!
+Seeing the code written out like this reminded me of something I found on the [wiki page about `sign`][sign-wiki],
+that says that the `sign` can be _computed_ except when `x == 0`...
+But `x == 0` is already being treated as an edge case!
 
-I can definitely do this, because the [wiki page on the function][sign-wiki] says that, when `x` is not equal to `0`,
-we can compute it from the value itself and its absolute value...
-And guess what?
-The function “absolute value” is built-in:
+We just need to make use of the absolute value function `abs`, which is a built-in:
 
 ```py
 >>> abs(73)
@@ -202,7 +195,22 @@ The function “absolute value” is built-in:
 42.42
 ```
 
-Now, all I have to do is replace the conditional expression with the correct quotient:
+Notice how the absolute value is never negative,
+and so we can compare the absolute value with the original number to compute the sign.
+
+This can be done in multiple different ways, but we'll go with a division:
+
+```py
+>>> abs(73) / 73
+1
+>>> abs(0)
+0
+>>> abs(-42.42) / -42.42
+-1.0
+```
+
+Now, we just have to plug this into the previous code,
+keeping `x == 0` as the edge case that is handled first:
 
 ```py
 def sign(x):
@@ -212,8 +220,20 @@ def sign(x):
     return int(abs(x) // x)
 ```
 
+And there we have it, a computation!
+I find there is a certain appeal to computing things _unconditionally_,
+instead of using conditionals (be it statements or expressions)
+to pick the correct result out of a series of results.
+
+By removing the other conditional expression,
+we made this even flatter,
+going even more in line with the [Zen of Python][zen-of-python] and the fact that
+“flat is better than nested”.
+
 This is amazing, because it _computes_ two of the outputs I'd like to produce!
-However, the division there really is begging for floating point issues to arise...
+It's a shame there is not single computation that handles the three cases.
+
+And yet, the division there really is begging for floating point issues to arise...
 
 Oh, wait a second!
 Objects have Truthy and Falsy values, right?
@@ -227,40 +247,55 @@ That's right:
 0
 ```
 
-With this, I can produce two of the three different outputs that the function `sign` is supposed to return!
-Now, I only have to special-case the negative inputs:
+Remember that the function `sign` needs to return the numbers `-1`, `0`, and `1`.
+The function `int`, when receiving Booleans, can return the numbers `0` and `1`.
+So, we need
+
+ - to special-case negative inputs, instead, to have them return `-1`; and
+ - to figure out a condition that evaluates to `True` when the input is positive and that evaluates to `False` when the input is `0`.
+
+But we don't even need a condition at all, because positive numbers are Truthy and zero is Falsy!
 
 ```py
 def sign(x):
-    return -1 if x < 0 else int(bool(x))
+    if x < 0:
+        return -1
+
+    return int(bool(x))
 ```
 
-I was about to submit my code for code review,
-when a co-worker of mine noticed my code.
+Stepping back and looking at what I had, I wasn't _veeery_ happy.
+The computation I wrote there takes numbers, converts them to Booleans,
+and then to numbers again..!
 
-They suggested I didn't do that,
-because no one likes annoying coders who act like they are smarter than anyone else.
-
-I thought my co-worker was right, and so I started thinking about other ways in which I could map positive numbers to `1` and negative numbers to `-1`...
+It has a redundant feel to it, doesn't it..?
+Isn't there a different way of mapping the inputs to the three outputs I need..?
+In particular, in a way that makes it more obvious how the `int(bool(x))` does the mapping..?
 
 And then, 💡!
 
 It's all about _mapping_, so I should definitely try to use a dictionary to map the correct values to the correct places.
 For example, I can take care of the case `x == 0` as an edge case,
-and then use a mapping to distinguish the positive and the negative numbers:
+and then use a mapping to distinguish the positive and the negative numbers,
+restoring some symmetry:
 
 ```py
 def sign(x):
-    return 0 if x == 0 else {True: 1, False: -1}[x > 0]
+    return (
+        0 if x == 0
+        else {False: -1, True: 1}[x > 0]
+    )
 ```
-
 
 Hehe, this is amusing, but I'll make it even more amusing!
 
-What I can do with the fact that Booleans can also be seen as zeroes and ones is that a 2-item list can be used as a sort of `if` statement...
+Notice how `False` shows up first, and `True` shows up second;
+in Python, the first index is `0`, and the second index is `1`;
+and, in case you haven't gotten it yet, `False` and `0` are related,
+and so are `True` and `1`!
 
-So, instead of using a dictionary to create the explicit mapping,
-I can use the integer value of Booleans and a list to create the implicit mapping through indexing!
+Instead of using the dictionary, which is quite verbose,
+we can distil it down to a list.
 
 All it takes is using `x > 0` to index into the two results that I care about, which are `-1` and `1`:
 
@@ -289,14 +324,12 @@ def sign(x):
  - If `x` is zero, only the first condition is satisfied and adding the two conditions produces the index `1`.
  - If `x` is negative, neither condition is satisfied and their addition produces the index `0`.
 
-At this point I thought I had reached the peak of my career as a programmer
-(likely because no one was ever going to let me write code again, not because I had written the best Python code ever seen)...
-And yet again, enlightenment struck me!
+Oh, this is interesting!
+This looks like the shorter solution so far...
+Which begs the question: is there a shorter one?
 
-I'm doing this all wrong!
-I already have everything I need from the conditions,
-I don't need to index into a list...
-I just have to use the correct mathematical operation:
+Hmmm, focusing on the fact that there are two conditions doing all the work,
+I realised that combining them in the correct way renders the list useless:
 
 ```py
 def sign(x):
@@ -308,25 +341,25 @@ It's a work of art, it's a huge emoji!
 The minus `-` looks like the nose and the two sets of parenthesis represent the eyes.
 
 This works because the minus `-` forces the two Boolean results to evaluate to an integer.
-Then, you can only have one of the two conditions be `True` at a time:
+Then, you can only have one of the two conditions be `True` at a time,
+and it all boils down to the value of these two expressions:
+
+```py
+x > 0, x < 0
+```
+
+In fact,
 
  - if `x > 0` is `True`, then its the left condition that is `True` and we get `True - False == 1 - 0 == 1`;
  - if `x < 0` is `True`, then its the right condition that is `True` and we get `False - True == 0 - 1 == -1`; and
  - if `x == 0`, neither condition is `True` and we get `False - False == 0 - 0 == 0`.
 
-Sitting in awe, looking at my computer,
-I found it interesting how the result I wanted could be derived from the two conditions I used:
+In other words, the three things we can get are:
 
 ```py
-[x > 0, x < 0]
-```
-
-In particular, everything worked because that list can only have three values:
-
-```py
-[True, False]   # when x > 0
-[False, True]   # when x < 0
-[False, False]  # when x == 0
+True, False   # when x > 0
+False, True   # when x < 0
+False, False  # when x == 0
 ```
 
 The three results I wanted to compute depended solely on the Boolean pattern of that 2-item list...
@@ -375,7 +408,8 @@ def sign(x):
     return 0
 ```
 
-It's _the same thing_ as what I had in the beginning!
+It's _the same thing_ as what I had in the beginning, it's just a bit compressed!
+Other than that, it's really the same thing.
 Heck, it even _has the same bytecode_!
 
 In other words, even though it looks _different_:
@@ -437,7 +471,7 @@ Here is the disassemble of the shorter version that I wrote in the end:
 The only difference comes from the line numbers,
 because the bytecode is otherwise _identical_.
 
-So, now that I have taken a look at 16 different implementations of the function `sign`,
+So, now that I have taken a look at 15 different implementations of the function `sign`,
 which one do I go for?
 I'm trying to avoid getting fired for writing basic code,
 so I hope at least one of these is fast enough to make it worth having!
