@@ -11,6 +11,7 @@ taxonomy:
     category: [blogpost, problem]
     tag:
       - combinatorics
+      - induction
       - mathematics
       - pigeonhole principle
 title: "Problem #054 – imperfect compression"

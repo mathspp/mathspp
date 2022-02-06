@@ -50,7 +50,35 @@ Join the list of solvers by [emailing me][email] your solution!
 
 # Solution
 
-The solution to this problem will be posted here after it has been live for 2 weeks.
+Let's assume that there _is_ a perfect compression algorithm.
+For the empty sequence, what does this algorithm do?
+It has to compress the empty sequence into the empty sequence,
+because there is no shorter sequence to compress the sequence into.
+
+Now, let's think about sequences of length 1.
+None of those can be compressed into the only sequence of length 0,
+because there is already a sequence compressed into that (itself).
+Thus, all sequences of length 1 must map to other sequences of length 1.
+Of course they don't map to sequences of length 2 or greater,
+otherwise the _compression_ would actually make the sequences larger.
+
+Therefore, the sequences of length 1 all map to each other,
+and no two sequences can map to the same one,
+so the compression algorithm really only works as a shuffling of the sequences...
+
+Now, we can just repeat this train of thought indefinitely:
+for the sequences of length 2,
+none of them can map to sequences of length 0 or 1,
+because those are all taken already.
+Thus, all sequences of length 2 must map to each other.
+
+By using induction, we can show that this happens for all lengths:
+all sequences of length $n$ are mapped within each other,
+because all shorter sequences are already taken up.
+
+In practice, this shows that the compression algorithm is not useful,
+because it doesn't really _compress_ any sequence at all!
+Therefore, there can't be a perfect compression algorithm that is also useful.
 
 
 [Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly
