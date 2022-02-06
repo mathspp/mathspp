@@ -1,0 +1,16 @@
+date: 06-02-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: 25 horses racing, and you have to find out the fastest ones!
+    og:image: https://mathspp.com/blog/problems/horse-racing/thumbnail.png
+    twitter:image: https://mathspp.com/blog/problems/horse-racing/thumbnail.png
+process:
+    twig: true
+slug: horse-racing
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - logic
+      - mathematics
+title: "Problem #055 – horse racing"
+twig_first: true
