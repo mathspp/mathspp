@@ -35,6 +35,42 @@ much like `False` and `0` are equal:
 
 Isn't that interesting?
 
+In hindsight, I shouldn't be so surprised...
+After all, Booleans can be converted to integers:
+
+```py
+>>> int(True)
+1
+>>> int(False)
+0
+```
+
+and the [Truthy and Falsy][pydont-truthy-falsy-bool] value of integers
+means that integers can also be converted to Booleans:
+
+```py
+>>> bool(1)
+True
+>>> bool(0)
+False
+# And other integers (and floats) can be converted to `True`:
+>>> bool(73)
+True
+>>> bool(0.5)
+True
+```
+
+So, these two conversions, plus the fact that `bool` is a subclass of `int`
+makes this fact a bit more understandable...
+But still!
+
+```py
+>>> True == 1
+True
+>>> False == 0
+True
+```
+
 As to whether `True` and `False` being interpretable as integers is useful or not: it is.
 
 
@@ -57,6 +93,7 @@ sum(not num % 4 for num in nums)
 
 
 [yt-counting-with-booleans]: https://www.youtube.com/watch?v=u6_6oJNqzEY
+[pydont-truthy-falsy-bool]: /blog/pydonts/truthy-falsy-and-bool
 
 
 That's it for now! [Stay tuned][subscribe] and I'll see you around!
