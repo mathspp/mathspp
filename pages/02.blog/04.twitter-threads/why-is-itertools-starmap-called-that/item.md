@@ -15,6 +15,10 @@ taxonomy:
 title: "Why is itertools.starmap called that?"
 ---
 
+An introductory example to `itertools.starmap` and an explanation of why it is called “starmap”.
+
+===
+
 Imagine you have a series of tuples with arguments for a Python 🐍 function.
 
 For example, tuples of base and exponent:
