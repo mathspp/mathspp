@@ -9,7 +9,6 @@ slug: why-is-itertools-starmap-called-that
 taxonomy:
     category: twitter thread
     tag:
-      - code review
       - programming
       - python
 title: "Why is itertools.starmap called that?"
