@@ -64,10 +64,10 @@ built_in_css: true
 By default the plugin will load some basic css. See below for details
 
 ```yaml
-scope: img.caption
+scope: :not(figure) > img.caption
 ```
 
-You can define the scope in which plugin will operate. This typically should be something to define the specific images, for example the default is to find all `<img>` tags with class `caption`.  You could find all images without a class by simply setting this to `img`.
+You can define the scope in which plugin will operate. This typically should be something to define the specific images, for example the default is to find all `<img>` tags with class `caption` that are not already inside a `<figure>` tag.  You could find all images without a class by simply setting this to `img`.
 
 ```yaml
 entire_page: false

@@ -1,6 +1,7 @@
 enabled: true
 built_in_css: true
 entire_page: false
-scope: img.caption
+source: title
+scope: :not(figure) > img.caption
 figure_class: image-caption
 figcaption_class:

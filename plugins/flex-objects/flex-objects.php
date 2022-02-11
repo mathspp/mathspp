@@ -9,6 +9,7 @@ use Grav\Common\Page\Pages;
 use Grav\Common\Page\Types;
 use Grav\Common\Plugin;
 use Grav\Common\User\Interfaces\UserInterface;
+use Grav\Common\Utils;
 use Grav\Events\FlexRegisterEvent;
 use Grav\Events\PermissionsRegisterEvent;
 use Grav\Events\PluginsLoadedEvent;
@@ -242,7 +243,6 @@ class FlexObjectsPlugin extends Plugin
         $types = (array)$this->config->get('plugins.flex-objects.directories', []);
         $this->registerDirectories($flex, $types, true);
 
-        /** @var AdminController controller */
         $this->controller = new AdminController();
 
         /** @var Debugger $debugger */
@@ -277,11 +277,15 @@ class FlexObjectsPlugin extends Plugin
      */
     public function onPagesInitialized(Event $event): void
     {
+        /** @var Route|null $route */
+        $route = $event['route'] ?? null;
+        if (null === $route) {
+            // Stop if in CLI.
+            return;
+        }
+
         /** @var PageInterface|null $page */
         $page = $this->grav['page'] ?? null;
-
-        /** @var Route $route */
-        $route = $event['route'];
 
         $base = '';
         $path = [];
@@ -356,6 +360,7 @@ class FlexObjectsPlugin extends Plugin
         }
 
         // Make sure the page contains flex.
+        /** @var array $config <- phpstan 1 workaround */
         $config = $header->flex ?? [];
         if (!$config && !$form) {
             return;
@@ -475,7 +480,7 @@ class FlexObjectsPlugin extends Plugin
         foreach ($types as $blueprint) {
             // Backwards compatibility to v1.0.0-rc.3
             $blueprint = $map[$blueprint] ?? $blueprint;
-            $type = basename((string)$blueprint, '.yaml');
+            $type = Utils::basename((string)$blueprint, '.yaml');
             if (!$type) {
                 continue;
             }

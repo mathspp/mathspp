@@ -3,7 +3,7 @@
 /**
  * @package    Grav\Plugin\Admin
  *
- * @copyright  Copyright (c) 2015 - 2021 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (c) 2015 - 2022 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -15,6 +15,7 @@ use Grav\Common\Page\Pages;
 use Grav\Common\Uri;
 use Grav\Common\User\Interfaces\UserCollectionInterface;
 use Grav\Common\User\Interfaces\UserInterface;
+use Grav\Common\Utils;
 use Grav\Framework\RequestHandler\Exception\PageExpiredException;
 use Grav\Framework\RequestHandler\Exception\RequestException;
 use Grav\Plugin\Admin\Admin;
@@ -111,7 +112,7 @@ class LoginController extends AdminController
     {
         $uri = (string)$this->getRequest()->getUri();
 
-        $ext = pathinfo($uri, PATHINFO_EXTENSION);
+        $ext = Utils::pathinfo($uri, PATHINFO_EXTENSION);
         $accept = $this->getAccept(['application/json', 'text/html']);
         if ($ext === 'json' || $accept === 'application/json') {
             return $this->createErrorResponse(new RequestException($this->getRequest(), $this->translate('PLUGIN_ADMIN.LOGGED_OUT'), 401));
@@ -275,11 +276,17 @@ class LoginController extends AdminController
             $twoFa = null;
         }
 
-        $code = $data['2fa_code'] ?? null;
-        $secret = $user->twofa_secret ?? null;
+        $code = $data['2fa_code'] ?? '';
+        $secret = $user->twofa_secret ?? '';
+        $twofa_valid = $twoFa->verifyCode($secret, $code);
+
+        $yubikey_otp = $data['yubikey_otp'] ?? '';
+        $yubikey_id = $user->yubikey_id ?? '';
+        $yubikey_valid = $twoFa->verifyYubikeyOTP($yubikey_id, $yubikey_otp);
+
         $redirect = (string)$this->getRequest()->getUri();
 
-        if (null === $twoFa || !$user->authenticated || !$code || !$secret || !$twoFa->verifyCode($secret, $code)) {
+        if (null === $twoFa || !$user->authenticated || (!$twofa_valid && !$yubikey_valid) ) {
             Admin::DEBUG && Admin::addDebugMessage('Admin login: 2FA check failed, log out!');
 
             // Failed 2FA auth, logout and redirect to the current page.

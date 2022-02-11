@@ -41,6 +41,13 @@ class Document
     protected $encoding;
 
     /**
+     * @var array
+     */
+    protected $namespaces = [
+        'php' => 'http://php.net/xpath'
+    ];
+
+    /**
      * @param string|null $string An HTML or XML string or a file path
      * @param bool $isFile Indicates that the first parameter is a path to a file
      * @param string $encoding The document encoding
@@ -410,7 +417,7 @@ class Document
     }
 
     /**
-     * Searches for an node in the DOM tree for a given XPath expression or a CSS selector.
+     * Searches for a node in the DOM tree for a given XPath expression or CSS selector.
      *
      * @param string $expression XPath expression or a CSS selector
      * @param string $type The type of the expression
@@ -458,7 +465,7 @@ class Document
     }
 
     /**
-     * Searches for an node in the DOM tree and returns first element or null.
+     * Searches for a node in the DOM tree and returns first element or null.
      *
      * @param string $expression XPath expression or a CSS selector
      * @param string $type The type of the expression
@@ -528,7 +535,7 @@ class Document
     }
 
     /**
-     * Counts nodes for a given XPath expression or a CSS selector.
+     * Counts nodes for a given XPath expression or CSS selector.
      *
      * @param string $expression XPath expression or CSS selector
      * @param string $type The type of the expression
@@ -552,10 +559,32 @@ class Document
     {
         $xpath = new DOMXPath($this->document);
 
-        $xpath->registerNamespace('php', 'http://php.net/xpath');
+        foreach ($this->namespaces as $prefix => $namespace) {
+            $xpath->registerNamespace($prefix, $namespace);
+        }
+
         $xpath->registerPhpFunctions();
 
         return $xpath;
+    }
+
+    /**
+     * Register a namespace.
+     *
+     * @param string $prefix
+     * @param string $namespace
+     */
+    public function registerNamespace($prefix, $namespace)
+    {
+        if ( ! is_string($prefix)) {
+            throw new InvalidArgumentException(sprintf('%s expects parameter 2 to be string, %s given', __METHOD__, (is_object($prefix) ? get_class($prefix) : gettype($prefix))));
+        }
+
+        if ( ! is_string($namespace)) {
+            throw new InvalidArgumentException(sprintf('%s expects parameter 2 to be string, %s given', __METHOD__, (is_object($namespace) ? get_class($namespace) : gettype($namespace))));
+        }
+
+        $this->namespaces[$prefix] = $namespace;
     }
 
     /**
@@ -647,7 +676,7 @@ class Document
     }
 
     /**
-     * Returns the encoding of the document (XML or HTML).
+     * Returns the encoding of the document.
      *
      * @return string
      */
@@ -695,7 +724,7 @@ class Document
     }
 
     /**
-     * Searches for an node in the DOM tree for a given XPath expression or a CSS selector.
+     * Searches for a node in the DOM tree for a given XPath expression or CSS selector.
      *
      * @param string $expression XPath expression or a CSS selector
      * @param string $type The type of the expression

@@ -1,5 +1,5 @@
 name: Image Captions
-version: 2.0.2
+version: 2.0.3
 type: plugin
 slug: image-captions
 description: "Looks for images with defined title attribute and converts them to fig-captions."
@@ -47,6 +47,16 @@ form:
         0: PLUGIN_ADMIN.DISABLED
       validate:
         type: bool
+
+    source:
+      type: select
+      label: Source
+      size: small
+      default: title
+      help: Defines which attribute will use as the caption source - title or alt
+      options:
+        title: Title
+        alt: Alt
 
     scope:
       type: text

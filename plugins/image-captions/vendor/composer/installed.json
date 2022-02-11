@@ -2,17 +2,17 @@
     "packages": [
         {
             "name": "imangazaliev/didom",
-            "version": "1.16.1",
-            "version_normalized": "1.16.1.0",
+            "version": "1.18",
+            "version_normalized": "1.18.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Imangazaliev/DiDOM.git",
-                "reference": "c88f5a562868d92b86d0b6aa8dfb30aa7f99977f"
+                "reference": "346db1ea94a0f6ead225c2358af770bf33659cf7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Imangazaliev/DiDOM/zipball/c88f5a562868d92b86d0b6aa8dfb30aa7f99977f",
-                "reference": "c88f5a562868d92b86d0b6aa8dfb30aa7f99977f",
+                "url": "https://api.github.com/repos/Imangazaliev/DiDOM/zipball/346db1ea94a0f6ead225c2358af770bf33659cf7",
+                "reference": "346db1ea94a0f6ead225c2358af770bf33659cf7",
                 "shasum": ""
             },
             "require": {
@@ -23,7 +23,7 @@
             "require-dev": {
                 "phpunit/phpunit": "^4.8"
             },
-            "time": "2020-11-16T10:57:57+00:00",
+            "time": "2021-07-27T18:50:53+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -51,7 +51,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Imangazaliev/DiDOM/issues",
-                "source": "https://github.com/Imangazaliev/DiDOM/tree/1.16.1"
+                "source": "https://github.com/Imangazaliev/DiDOM/tree/1.18"
             },
             "install-path": "../imangazaliev/didom"
         }

@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "imangazaliev/didom",
-            "version": "1.16.1",
+            "version": "1.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Imangazaliev/DiDOM.git",
-                "reference": "c88f5a562868d92b86d0b6aa8dfb30aa7f99977f"
+                "reference": "346db1ea94a0f6ead225c2358af770bf33659cf7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Imangazaliev/DiDOM/zipball/c88f5a562868d92b86d0b6aa8dfb30aa7f99977f",
-                "reference": "c88f5a562868d92b86d0b6aa8dfb30aa7f99977f",
+                "url": "https://api.github.com/repos/Imangazaliev/DiDOM/zipball/346db1ea94a0f6ead225c2358af770bf33659cf7",
+                "reference": "346db1ea94a0f6ead225c2358af770bf33659cf7",
                 "shasum": ""
             },
             "require": {
@@ -54,9 +54,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Imangazaliev/DiDOM/issues",
-                "source": "https://github.com/Imangazaliev/DiDOM/tree/1.16.1"
+                "source": "https://github.com/Imangazaliev/DiDOM/tree/1.18"
             },
-            "time": "2020-11-16T10:57:57+00:00"
+            "time": "2021-07-27T18:50:53+00:00"
         }
     ],
     "packages-dev": [],
@@ -67,5 +67,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }

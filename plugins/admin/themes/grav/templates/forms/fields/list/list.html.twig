@@ -87,7 +87,7 @@
                                     {% elseif child.name == 'value' %}
                                         {# Special handling for the value field #}
                                         {% set child = child|merge({ name: item_name }) %}
-                                        {% set child_value = value %}
+                                        {% set child_value = val %}
                                     {% else %}
                                         {% set child_value = form ? form.value(child.name) : data.value(child.name) %}
                                     {% endif %}
@@ -109,7 +109,11 @@
                                     <i class="fa fa-chevron-circle-{{ field.collapsed ? 'right' : 'down' }}" data-action="{{ field.collapsed ? 'expand' : 'collapse' }}"></i>
                                     <br />
                                 {% endif %}
-                                <i class="fa fa-trash-o" data-action="delete"></i>
+                                <i class="fa fa-trash-o" data-action="confirm"></i>
+                                <div class="list-confirm-deletion button danger hidden"  data-action="delete">
+                                  <i class="fa fa-fw text-primary fa-check"></i>
+                                  <span>{{ 'PLUGIN_ADMIN.DELETE'|t }}</span>
+                                </div>
                             </div>
                         </li>
                     {% endfor %}
@@ -163,7 +167,11 @@
                                 <i class="fa fa-chevron-circle-down" data-action="collapse"></i>
                                 <br />
                             {% endif %}
-                            <i class="fa fa-trash-o" data-action="delete"></i>
+                            <i class="fa fa-trash-o" data-action="confirm"></i>
+                            <div class="list-confirm-deletion button danger hidden"  data-action="delete">
+                              <i class="fa fa-fw text-primary fa-check"></i>
+                              <span>{{ 'PLUGIN_ADMIN.DELETE'|t }}</span>
+                            </div>
                         </div>
                     {%- endif -%}
                 </li>
