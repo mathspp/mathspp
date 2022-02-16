@@ -10,7 +10,8 @@ The Zen of Python says “there should be one -- and preferably only one -- obvi
 This article is the written version of my talk entitled “50 shades of `sign`”
 that I gave for the 2022 edition of the [PyCascades][pycascades] conference.
 
-The slide deck can be found in [this GitHub repository][talk-gh].
+The slide deck can be found in [this GitHub repository][talk-gh]
+and the recording can be watched [on YouTube][talk-yt].
 
 
 # 50 shades of `sign`
@@ -568,3 +569,4 @@ I guess that would be a whole other talk!
 [sign-wiki]: https://en.wikipedia.org/wiki/Sign_function
 [original-tweet]: https://twitter.com/mathsppblog/status/1442042804398665732
 [talk-gh]: https://github.com/mathspp/talks
+[talk-yt]: https://www.youtube.com/watch?v=FkE-HrxSFCM
