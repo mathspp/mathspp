@@ -1404,6 +1404,19 @@ textarea.frontmatter {
 .form-list-wrapper [data-collection-nosort] .collection-sort {
   display: none; }
 
+.form-list-wrapper .list-confirm-deletion {
+  cursor: pointer;
+  display: flex;
+  position: absolute !important;
+  z-index: 10010;
+  padding: .5rem;
+  top: 13px;
+  right: 20px; }
+  .form-list-wrapper .list-confirm-deletion > i, .form-list-wrapper .list-confirm-deletion span {
+    text-align: center;
+    display: inline-flex;
+    align-items: center; }
+
 .form-label.block {
   position: relative; }
   .form-label.block:hover {
@@ -1912,6 +1925,12 @@ table.noflex {
     display: none; }
   #admin-login .form-data {
     padding-right: 0; }
+  #admin-login .form-description {
+    display: block;
+    margin-top: -15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 110%; }
   #admin-login .wrapper-spacer {
     width: 100% !important;
     display: block !important;
@@ -4095,6 +4114,19 @@ html.remodal-is-locked {
   padding-left: 20px; }
 
 /* The MIT License */
+.pagemedia-field .form-label {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1.5rem;
+  align-items: center; }
+  .pagemedia-field .form-label label {
+    cursor: pointer;
+    flex: 1; }
+
+.pagemedia-field input[type="range"]::-webkit-slider-runnable-track {
+  background: inherit !important;
+  border: none !important; }
+
 .dropzone {
   position: relative;
   border-radius: 4px;
@@ -4143,7 +4175,7 @@ html.remodal-is-locked {
       content: '\f12a'; }
     .dropzone .dz-preview .dz-progress {
       position: absolute;
-      top: 150px;
+      bottom: auto;
       left: 0px;
       right: 0px;
       height: 4px;

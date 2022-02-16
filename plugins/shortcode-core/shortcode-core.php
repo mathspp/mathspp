@@ -9,6 +9,7 @@ use Grav\Common\Utils;
 use Grav\Plugin\ShortcodeCore\ShortcodeManager;
 use Grav\Plugin\ShortcodeCore\ShortcodeTwigVar;
 use RocketTheme\Toolbox\Event\Event;
+use Twig\TwigFilter;
 
 
 class ShortcodeCorePlugin extends Plugin
@@ -62,7 +63,8 @@ class ShortcodeCorePlugin extends Plugin
             'onPageContentRaw'          => ['onPageContentRaw', 0],
             'onPageContentProcessed'    => ['onPageContentProcessed', -10],
             'onPageContent'             => ['onPageContent', 0],
-            'onTwigInitialized'         => ['onTwigInitialized', 0]
+            'onTwigInitialized'         => ['onTwigInitialized', 0],
+            'onTwigTemplatePaths'       => ['onTwigTemplatePaths', 0],
         ]);
 
         $this->grav['shortcode'] = $this->shortcodes = new ShortcodeManager();
@@ -230,8 +232,13 @@ class ShortcodeCorePlugin extends Plugin
      */
     public function onTwigInitialized()
     {
-        $this->grav['twig']->twig()->addFilter(new \Twig_SimpleFilter('shortcodes', [$this->shortcodes, 'processShortcodes']));
+        $this->grav['twig']->twig()->addFilter(new TwigFilter('shortcodes', [$this->shortcodes, 'processShortcodes']));
         $this->grav['twig']->twig_vars['shortcode'] = new ShortcodeTwigVar();
+    }
+
+    public function onTwigTemplatePaths()
+    {
+        $this->grav['twig']->twig_paths[] = __DIR__ . '/templates';
     }
 
     public function registerNextGenEditorPlugin($event) {

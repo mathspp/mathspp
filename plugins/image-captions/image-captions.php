@@ -112,15 +112,22 @@ class ImageCaptionsPlugin extends Plugin
         $scope = trim($this->grav['config']->get('plugins.image-captions.scope'));
         $figure_class = $this->grav['config']->get('plugins.image-captions.figure_class');
         $figcaption_class = $this->grav['config']->get('plugins.image-captions.figcaption_class');
+        $source = $this->grav['config']->get('plugins.image-captions.source');
 
         if (count($images = $document->find($scope)) > 0) {
             foreach ($images as $image) {
-                $caption = $image->getAttribute('title');
+                if ($source == 'alt') {
+                    $caption = $image->getAttribute('alt');
+                } else {
+                    $caption = $image->getAttribute('title');
+                }
+
                 if ($caption) {
                     $figure_classes = [$figure_class];
 
                     // If there are any `caption-*` classes on the image, add them to the figure
-                    foreach (explode(' ', $image->getAttribute('class')) as $class) {
+                    $image_classes = explode(' ', $image->getAttribute('class'));
+                    foreach ($image_classes as $class) {
                         if (preg_match('/^(caption-|figure-).*/', $class)) {
                             $figure_classes[] = $class;
                         }
