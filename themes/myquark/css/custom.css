@@ -329,3 +329,7 @@ thead {
 table th, table td {
     padding: 0 0.5em;  /* Prevent columns from getting crowded. */
 }
+
+tbody tr:nth-child(odd) {
+    background: #282a36  /* Different background shade for every other row. */
+}
