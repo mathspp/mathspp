@@ -197,20 +197,6 @@ a:visited {
     color: #e27673;
 }
 
-/*
-Magical CSS that implements a dark mode in 2 lines.
-We precede by the same code applied to the elements we want untouched.
-
-img, .parallax, .reaction-item__button img {
-    filter: invert(1) hue-rotate(180deg);
-}
-
-body {
-    filter: invert(.9) hue-rotate(180deg);
-    background: rgba(0, 0, 0, 0.9);
-}
-*/
-
 /* https://stackoverflow.com/a/13184714/2828287 */
 /* Compensates for the height of the website header. */
 a.headeroffset {
@@ -323,3 +309,21 @@ a.gumroad-button, a.external-link.no-image.gumroad-button {
 /* Have the links with the same colour as the text and in a smaller font. */
 #revue-embed a {text-decoration: underline; color: #f8f8f2;}
 div.revue-form-footer *{font-size: small;}
+
+/* Customise tables. */
+table {
+    margin-bottom: 24px;
+    border-collapse: collapse;
+    border-top: medium solid #44475a;
+    border-bottom: medium solid #44475a;
+    color: #f8f8f2;
+}
+
+thead {
+    color: #ffb86c;
+    border-bottom: thin solid #44475a;
+}
+
+table th, table td {
+    padding: 0 0.5em;  /* Prevent columns from getting crowded. */
+}
