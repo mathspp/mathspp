@@ -312,16 +312,18 @@ div.revue-form-footer *{font-size: small;}
 
 /* Customise tables. */
 table {
-    margin-bottom: 24px;
+    margin-bottom: 24px;  /* Separate from remainder of text. */
+    margin-left: auto;  /* Centre the table in the page. */
+    margin-right: auto;
     border-collapse: collapse;
-    border-top: medium solid #44475a;
+    border-top: medium solid #44475a;  /* Horizontal lines above and below the table. */
     border-bottom: medium solid #44475a;
     color: #f8f8f2;
 }
 
 thead {
     color: #ffb86c;
-    border-bottom: thin solid #44475a;
+    border-bottom: thin solid #44475a;  /* Horizontal line under the header. */
 }
 
 table th, table td {
