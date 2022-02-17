@@ -316,14 +316,12 @@ table {
     margin-left: auto;  /* Centre the table in the page. */
     margin-right: auto;
     border-collapse: collapse;
-    border-top: medium solid #44475a;  /* Horizontal lines above and below the table. */
-    border-bottom: medium solid #44475a;
     color: #f8f8f2;
 }
 
 thead {
     color: #ffb86c;
-    border-bottom: thin solid #44475a;  /* Horizontal line under the header. */
+    border-bottom: thin solid #f8f8f2;  /* Horizontal line under the header. */
 }
 
 table th, table td {
@@ -332,4 +330,8 @@ table th, table td {
 
 tbody tr:nth-child(odd) {
     background: #282a36  /* Different background shade for every other row. */
+}
+
+tbody tr:nth-child(even) {
+    background: #44475a
 }
