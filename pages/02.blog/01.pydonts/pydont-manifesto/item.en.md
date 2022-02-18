@@ -5,75 +5,63 @@ title: "Pydon't Manifesto 🐍"
 ---
 
 "*Pydon'ts*" are short, to-the-point, meaningful Python programming tips.
-A Pydon't is something you should *not* do when programming in Python.
-In general, following a Pydon't will make you write more Pythonic code.
+Pydon'ts will help you write more Pythonic code.
 
 ===
 
 ![The Python logo with some construction work barriers in front of it.](thumbnail.png)
 
 
-# Aim
+# Purpose
 
 The aim of this "*Pydon't*" series is to provide a series of programming tips
-for Python programmers that will take their Python programming to the next level.
-This goal will be achieved by showing "bad" Python code and then comparing it
-to the better, more Pythonic alternative.
+for Python programmers that will help them take their Python programming to the next level.
+This goal will be achieved by showing “bad” Python code,
+and then comparing it to better, more Pythonic, alternatives.
 
 
 # Who for
 
-Pydon'ts are more useful for Python programmers that are looking to improve
-their Python skills or for programmers that have experience in other programming
-languages and are looking to expand their arsenal by learning Python.
-These people are the ones that might get more bang for their buck by reading
-these Pydon'ts.
+Pydon'ts are useful to Python programmers that are looking to improve their Python skills.
+Above all, they are aimed at developers who are willing to put in the effort to improve.
+I can't do all the hard work for you, because improving your skills is hard work...
+But I can make the hard work easier for you!
 
-Beginners will also benefit from reading these, obviously, but some of these
-tips might be about topics you haven't learned yet as a beginner -- making it
-the perfect opportunity to do learn said topic!
+The Pydon'ts are aimed especially at beginners and intermediate users,
+and also at programmers who are fluent with some _other_ programming language
+and just want to get up to speed with the Python way of doing things.
 
-If you fit into one of these categories, be sure to
-[subscribe to the Pydon't newsletter][subscribe] so you get the Pydon'ts directly
-to your inbox.
+If you are committed to learning Python and improving your skills,
+be sure to [subscribe to my newsletter][subscribe],
+so that you get access to all the Python knowledge I put out there.
 
 
-# How many
+# How many Pydon'ts will there be?
 
-At the time of writing, there's 28 Pydon'ts scheduled that can't wait to [reach
-your inbox][subscribe].
-I'll send you one Pydon't per week, every Tuesday,
-starting on the 5th of January of 2021,
-so you can kick off the new year learning something new and improving yourself!
+As of the beginning of 2022, there are over 25 Pydon'ts that have been published,
+and at least a dozen more are still to come,
+covering topics such as iterables, generators, decorators, OOP, and dunder methods.
 
 
 # Format
 
-Throughout this weekly series of Pydon'ts,
-I'll (*almost*) always follow the same structure:
+All the Pydon'ts follow roughly the same structure:
 
- 1. I'll email all the newsletter subscribers with the Pydon't directly to their inboxes.
- (You can [subscribe to the newsletter][subscribe] to make sure you also get them!)
- 2. The email will include the Pydon't
- and a link to a complementary blog post in case you want to learn more.
+ 1. A readable explanation of the topic at hands, illustrated with clear examples.
+ 2. Real code examples you can try and play around with, often taken from the Python Standard Library.
+ 3. "Bad" vs "good" code comparisons, so you can better understand what not to do and what to do.
+ 4. Exercises to help you practise your new skill.
+ 5. Links to references and resources for further reading.
 
-The complementary blog post will itself contain the following:
+Are you looking forward to this series?
 
- 1. The Pydon't - a short, to-the-point, meaningful Python programming tip.
- 2. Code examples you can try and play around with.
- 3. "Bad" and "good" code examples, so you can compare the various alternatives
- and decide for yourself if you think the Pydon't is useful or not.
- 4. It may also include links for more resources for you to read up on.
-
-
----
-
-Are you looking forward for this series?
+<!-- v -->
 Let me know in the comments below if you are expecting any tips about any specific
 topics and leave an "emoji response" to show your support.
 
 Also, [don't forget to subscribe to the newsletter][subscribe] so you don't miss
 a single Pydon't!
+<!-- ^ -->
 
 
 [subscribe]: https://mathspp.com/subscribe
