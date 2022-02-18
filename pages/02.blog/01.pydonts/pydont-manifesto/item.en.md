@@ -53,9 +53,16 @@ All the Pydon'ts follow roughly the same structure:
  4. Exercises to help you practise your new skill.
  5. Links to references and resources for further reading.
 
-Are you looking forward to this series?
+
+# Book
+
+The Pydon'ts have been compiled into a free ebook that you can get online,
+[here][pydonts-book].
+
 
 <!-- v -->
+Are you looking forward to this series?
+
 Let me know in the comments below if you are expecting any tips about any specific
 topics and leave an "emoji response" to show your support.
 
@@ -65,3 +72,4 @@ a single Pydon't!
 
 
 [subscribe]: https://mathspp.com/subscribe
+[pydonts-book]: /books
