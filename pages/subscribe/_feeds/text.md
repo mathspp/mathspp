@@ -7,7 +7,7 @@ If that's all you want, you can just subscribe to the feeds of my blog articles:
  - Pydon'ts series – [RSS][py-rss], [atom][py-atom], [JSON][py-json]
  - Bi-weekly Problems – [RSS][pro-rss], [atom][pro-atom], [JSON][pro-json]
  - TIL series – [RSS][til-rss], [atom][til-atom], [JSON][til-json]
- - Twitter proofs series – [RSS][tp-rss], [atom][tp-atom], [JSON][tp-json]
+ - Twitter threads – [RSS][tt-rss], [atom][tt-atom], [JSON][tt-json] (or, well, [follow me on Twitter][twitter]!)
 
 
 [all-rss]: https://mathspp.com/blog.rss
@@ -22,6 +22,7 @@ If that's all you want, you can just subscribe to the feeds of my blog articles:
 [til-rss]: https://mathspp.com/blog/til.rss
 [til-atom]: https://mathspp.com/blog/til.atom
 [til-json]: https://mathspp.com/blog/til.json
-[tp-rss]: https://mathspp.com/blog/twitter-proofs.rss
-[tp-atom]: https://mathspp.com/blog/twitter-proofs.atom
-[tp-json]: https://mathspp.com/blog/twitter-proofs.json
+[tt-rss]: https://mathspp.com/blog/twitter-threads.rss
+[tt-atom]: https://mathspp.com/blog/twitter-threads.atom
+[tt-json]: https://mathspp.com/blog/twitter-threads.json
+[twitter]: https://twitter.com/mathsppblog
