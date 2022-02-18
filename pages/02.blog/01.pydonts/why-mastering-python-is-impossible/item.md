@@ -315,7 +315,7 @@ or you can opt for studying a module that is more general purpose.
 Either way, you will certainly learn a lot from doing that!
 
 If you've got no ideas of modules to look at,
-you can always [search PyPI][pypi-browse] or [explore GitHub][gh-explore-python].
+you can always [search PyPI][pypi-search] or [explore GitHub][gh-explore-python].
 
 
 ## Learn OTHER languages
