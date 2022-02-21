@@ -36,7 +36,7 @@ Join the list of solvers by [emailing me][email] your solution!
 
 # Solution
 
-The solution to this problem will be posted here after it has been live for 2 weeks.
+The solution to this problem will be posted here soon.
 
 
 [Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly
