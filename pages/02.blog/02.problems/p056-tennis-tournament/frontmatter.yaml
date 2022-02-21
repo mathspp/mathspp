@@ -1,0 +1,16 @@
+date: 20-02-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: How many matches does it take to find the winner of a tennis tournament?
+    og:image: https://mathspp.com/blog/problems/tennis-tournament/thumbnail.png
+    twitter:image: https://mathspp.com/blog/problems/tennis-tournament/thumbnail.png
+process:
+    twig: true
+slug: tennis-tournament
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - combinatorics
+      - mathematics
+title: "Problem #056 – tennis tournament"
+twig_first: true
