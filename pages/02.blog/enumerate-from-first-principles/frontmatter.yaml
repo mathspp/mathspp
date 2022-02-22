@@ -6,9 +6,9 @@ metadata:
     twitter:image: "https://mathspp.com/blog/pydonts/enumerate-from-first-principles/thumbnail.png"
 references:
   - "Twitter thread on `enumerate`, [https://twitter.com/mathsppblog/status/1455444589603557378](https://twitter.com/mathsppblog/status/1455444589603557378) [last accessed 19-02-2022];"
-slug: "enumerate-case-study"
+slug: "enumerate-from-first-principles"
 taxonomy:
-    category: [blogpost, pydont]
+    category: [blogpost]
     tag:
       - "code review"
       - "programming"
