@@ -26,7 +26,7 @@ After you work through this article, you will:
  - have a full reimplementation of `enumerate` in Python.
 
 
-!!! This Pydon't is also the written version of a talk I gave at [PyCon Sri Lanka 2022][pycon-srilanka].
+!!! This article is also the written version of a talk I gave at [PyCon Sri Lanka 2022][pycon-srilanka].
 !!! The talk slides are available [here][gh-talks].
 
 
