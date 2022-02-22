@@ -961,7 +961,7 @@ Yeah, we absolutely can, but that would be a topic for a whole other article/tal
 We've gone through half a dozen dummy reimplementations of the built-in `enumerate`,
 which allowed us to take a look at
 
- - idioms for `for` loops;
+ - idioms for `for` loops (using direct iteration, `zip`, `enumerate`, etc);
  - the concept of “iterable”;
  - what generators are and how to define one with `yield`;
  - the purpose of `zip`;
