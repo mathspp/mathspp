@@ -1,0 +1,16 @@
+date: 19-02-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "In this article we reimplement the built-in `enumerate` in the best way possible."
+    og:image: "https://mathspp.com/blog/pydonts/enumerate-from-first-principles/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/pydonts/enumerate-from-first-principles/thumbnail.png"
+references:
+  - "Twitter thread on `enumerate`, [https://twitter.com/mathsppblog/status/1455444589603557378](https://twitter.com/mathsppblog/status/1455444589603557378) [last accessed 19-02-2022];"
+slug: "enumerate-case-study"
+taxonomy:
+    category: [blogpost, pydont]
+    tag:
+      - "code review"
+      - "programming"
+      - "python"
+title: "Enumerate from first principles"
