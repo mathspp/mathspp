@@ -218,6 +218,45 @@ Hooray!
 Seems like we got it right!
 
 
+# Another multi-channel transposed convolution in APL
+
+Working with Aaron Hsu on this,
+he sent me an implementation of upsampling through these transposed convolutions,
+and I was supposed to check [his code][up-commit] made sense.
+
+Here is the version he sent me:
+
+```APL
+      UP ← {((2×¯1↓⍴⍵),¯1↑⍴⍺)⍴0 2 1 3 4⍉⍵+.×⍺}
+```
+
+`⍵` is supposed to be the input,
+whose shape is `w h ic`, where `ic` is the number of input channels;
+and `⍺` is supposed to be the kernel,
+with shape `ic k k oc`,
+where `k` is the kernel size (we are using square kernels) and `oc` is the number of output channels.
+
+Through a similar experiment as the one I did above,
+I checked his code made sense:
+
+```APL
+      ker ← ?3 2 2 5⍴0    ⍝ 3 input channels, 5 output channels
+      inp ← ?13 17 3⍴0
+      UP ← {((2×¯1↓⍴⍵),¯1↑⍴⍺)⍴0 2 1 3 4⍉⍵+.×⍺}
+      out ← ker UP inp
+
+      channel ← out[;;0]  ⍝ first output channel
+      (inp1 inp2 inp3) ← (inp[;;0]) (inp[;;1]) (inp[;;2])  ⍝ split input channels
+      (k1 k2 k3) ← ⊂⍤2⊢ker[;;;0]  ⍝ split kernel layers
+      channel ≡ (k3 TC inp3)+(k2 TC inp2)+(k1 TC inp1)  ⍝ compute by hand
+1  ⍝ Success!
+```
+
+Hooray!
+Seems like he got it right!
+
+
 [subscribe]: /subscribe
 
 [til-033]: /blog/til/033
+[up-commit]: https://github.com/Co-dfns/Co-dfns_Research/commit/0059ac1d6aa0239b8058460f893e9fc5d89b3a96
