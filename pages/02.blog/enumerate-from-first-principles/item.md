@@ -27,7 +27,7 @@ After you work through this article, you will:
 
 
 !!! This article is also the written version of a talk I gave at [PyCon Sri Lanka 2022][pycon-srilanka].
-!!! The talk slides are available [here][gh-talks].
+!!! The talk slides are available [here][gh-talks] and the YouTube recording is [here][yt-talk].
 
 
 # Introduction
@@ -990,3 +990,4 @@ we only ever aimed for repeated improvements!
 
 [pycon-srilanka]: https://pycon.lk/#speakers
 [gh-talks]: https://github.com/mathspp/talks
+[yt-talk]: https://youtu.be/Bdunek7Q8Ss?t=90
