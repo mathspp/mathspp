@@ -5,6 +5,9 @@ metadata:
     og:image: "https://mathspp.com/blog/pydonts/enumerate-from-first-principles/thumbnail.png"
     twitter:image: "https://mathspp.com/blog/pydonts/enumerate-from-first-principles/thumbnail.png"
 references:
+  - "“Zip-up” Pydon't, [https://mathspp.com/blog/pydonts/zip-up](/blog/pydonts/zip-up) [last accessed 19-02-2022];"
+  - "“Bite-sized refactoring” Pydon't, [https://mathspp.com/blog/pydonts/bite-sized-refactoring](/blog/pydonts/bite-sized-refactoring) [last accessed 19-02-2022];"
+  - "“Why mastering Python is impossible, and why that's ok” Pydon't, [https://mathspp.com/blog/pydonts/why-mastering-python-is-impossible](https://mathspp.com/blog/pydonts/why-mastering-python-is-impossible) [last accessed 19-02-2022];"
   - "Twitter thread on `enumerate`, [https://twitter.com/mathsppblog/status/1455444589603557378](https://twitter.com/mathsppblog/status/1455444589603557378) [last accessed 19-02-2022];"
 slug: "enumerate-from-first-principles"
 taxonomy:
