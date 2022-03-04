@@ -33,6 +33,8 @@ who sent me their correct solutions:
  - Thierry Z., Burkina Faso;
  - Kishan M., India;
  - Ioan E., Ukraine;
+ - Soliu, Nigeria;
+ - Francisco M., Mexico;
 
 Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
