@@ -11,6 +11,6 @@ taxonomy:
     tag:
       - automatons
       - combinatorics
-      - graph theory
+      - graphs
       - mathematics
 twig_first: true

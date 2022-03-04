@@ -9,7 +9,7 @@ slug: bridges-of-konigsberg
 taxonomy:
     category: [blogpost, problem]
     tag:
-      - graph theory
+      - graphs
       - mathematics
       - topology
 twig_first: true
