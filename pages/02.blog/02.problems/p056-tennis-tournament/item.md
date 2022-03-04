@@ -28,6 +28,11 @@ Congratulations to the ones that solved this problem correctly and, in particula
 who sent me their correct solutions:
 
  - David H., Taiwan;
+ - Umberto M., Italy;
+ - Christ van W., The Netherlands;
+ - Thierry Z., Burkina Faso;
+ - Kishan M., India;
+ - Ioan E., Ukraine;
 
 Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
