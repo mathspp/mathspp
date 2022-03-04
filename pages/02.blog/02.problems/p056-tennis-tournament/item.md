@@ -35,6 +35,7 @@ who sent me their correct solutions:
  - Ioan E., Ukraine;
  - Soliu, Nigeria;
  - Francisco M., Mexico;
+ - Han A., Malaysia;
 
 Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
