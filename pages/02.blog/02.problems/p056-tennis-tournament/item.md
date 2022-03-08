@@ -37,6 +37,7 @@ who sent me their correct solutions:
  - Francisco M., Mexico;
  - Han A., Malaysia;
  - Pavan J., India;
+ - David F., United States;
 
 Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
@@ -44,7 +45,13 @@ Join the list of solvers by [emailing me][email] your solution!
 
 # Solution
 
-The solution to this problem will be posted here after it has been live for 2 weeks.
+There is a nice intuitive solution to this problem that means you don't need to do any calculations whatsoever!
+
+Each time two players face each other, one player leaves the tournament and the other player remains.
+On top of that, determining the winner is the same as saying that all players have left the tournament,
+except for one.
+Thus, if there are $n$ players, we want to eliminate a total of $n - 1$ players,
+which means we need to play $n - 1$ matches.
 
 
 [Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly
