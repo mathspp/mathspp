@@ -14,5 +14,5 @@ taxonomy:
     tag:
       - programming
       - python
-title: "TIL #013 – __eq__"
+title: "TIL #013 – dunder method __eq__"
 visible: false
