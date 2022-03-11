@@ -256,6 +256,8 @@ Hooray!
 Seems like he got it right!
 
 
+That's it for now! [Stay tuned][subscribe] and I'll see you around!
+
 [subscribe]: /subscribe
 
 [til-033]: /blog/til/033
