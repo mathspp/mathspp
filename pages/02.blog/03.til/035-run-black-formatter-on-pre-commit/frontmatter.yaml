@@ -1,0 +1,15 @@
+date: 11-03-2022 10:30
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to run the black Python code formatter as a pre-commit hook on git."
+    og:image: https://mathspp.com/blog/til/035/thumbnail.png
+    twitter:image: https://mathspp.com/blog/til/035/thumbnail.png
+references:
+  - "Customizing Git - Git Hooks, [https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) [last accessed 11-03-2022];"
+slug: "035"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - python
+title: "TIL #035 – run black formatter on pre-commit"
