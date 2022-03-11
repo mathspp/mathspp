@@ -15,3 +15,4 @@ taxonomy:
       - mathematics
       - programming
 title: "TIL #034 – multi-channel transposed convolution"
+visible: false

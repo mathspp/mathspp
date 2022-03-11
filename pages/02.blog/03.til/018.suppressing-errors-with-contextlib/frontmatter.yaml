@@ -1,0 +1,14 @@
+date: 12-12-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned that the module `contextlib` provides with a context manager to suppress specified errors."
+    og:image: https://mathspp.com/blog/til/018/thumbnail.png
+    twitter:image: https://mathspp.com/blog/til/018/thumbnail.png
+slug: "018"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - python
+title: "TIL #018 – suppressing errors with contextlib"
+visible: false

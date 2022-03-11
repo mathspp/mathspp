@@ -1,0 +1,15 @@
+date: 05-01-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned you can read from stdin with `open(0)`."
+    og:image: https://mathspp.com/blog/til/020/thumbnail.png
+    twitter:image: https://mathspp.com/blog/til/020/thumbnail.png
+publish_date: 05-01-2022 15:00
+slug: "020"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - python
+title: "TIL #020 – open(0)"
+visible: false

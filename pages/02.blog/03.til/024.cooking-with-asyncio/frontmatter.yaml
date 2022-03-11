@@ -1,0 +1,18 @@
+date: 20-01-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to cook with `asyncio` and async code in Python."
+    og:image: https://mathspp.com/blog/til/024/thumbnail.png
+    twitter:image: https://mathspp.com/blog/til/024/thumbnail.png
+references:
+  - "Python 3 Docs, The Python Standard Library, `asyncio`, [https://docs.python.org/3/library/asyncio.html](https://docs.python.org/3/library/asyncio.html) [last accessed 20-01-2022];"
+  - "Python 3 Docs, The Python Standard Library, Coroutines and Tasks, [https://docs.python.org/3/library/asyncio-task.html](https://docs.python.org/3/library/asyncio-task.html) [last accessed 20-01-2022];"
+slug: "024"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - concurrency
+      - programming
+      - python
+title: "TIL #024 – cooking with asyncio"
+visible: false

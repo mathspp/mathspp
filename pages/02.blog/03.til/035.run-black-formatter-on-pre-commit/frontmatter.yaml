@@ -13,3 +13,4 @@ taxonomy:
       - programming
       - python
 title: "TIL #035 – run black formatter on pre-commit"
+visible: false

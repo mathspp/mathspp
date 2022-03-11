@@ -1,0 +1,14 @@
+date: 08-02-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned that `True` is equal to 1 and `False` is equal to 0."
+    og:image: https://mathspp.com/blog/til/029/thumbnail.png
+    twitter:image: https://mathspp.com/blog/til/029/thumbnail.png
+slug: "029"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - python
+title: "TIL #029 – True is equal to 1"
+visible: false

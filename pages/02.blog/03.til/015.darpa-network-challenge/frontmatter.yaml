@@ -1,0 +1,14 @@
+date: 18-11-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned about the DARPA network challenge and the power of referral systems."
+    og:image: https://mathspp.com/blog/til/015/thumbnail.png
+    twitter:image: https://mathspp.com/blog/til/015/thumbnail.png
+slug: "015"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - mathematics
+      - networks
+title: "TIL #015 – DARPA network challenge"
+visible: false

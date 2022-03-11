@@ -1,0 +1,12 @@
+date: 09-10-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    og:image: https://mathspp.com/blog/til/010/thumbnail.png
+    twitter:image: https://mathspp.com/blog/til/010/thumbnail.png
+slug: "010"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - python
+visible: false
