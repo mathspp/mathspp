@@ -191,7 +191,7 @@ As it stands, the attribute `viewBox` on this SVG is setting it to only show the
 and the value `x` of the attribute `viewBox` can be changed in multiples of 10 to show other letters.
 For example, `viewBox="250 0 10 9"` shows “Z”:
 
-![The browser rendering an SVG with the letter “Z”, in a monospaced font, in black on a white background](_D_big.png "`alphabet.svg` showing a monospaced “Z”.")
+![The browser rendering an SVG with the letter “Z”, in a monospaced font, in black on a white background](_Z_big.png "`alphabet.svg` showing a monospaced “Z”.")
 
 
 That's it for now! [Stay tuned][subscribe] and I'll see you around!
