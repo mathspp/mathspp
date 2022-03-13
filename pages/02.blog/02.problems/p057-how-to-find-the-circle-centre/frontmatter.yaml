@@ -1,0 +1,16 @@
+date: 13-03-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Can you find the centre of the circle with just 5 lines?"
+    og:image: https://mathspp.com/blog/problems/how-to-find-the-circle-centre/thumbnail.png
+    twitter:image: https://mathspp.com/blog/problems/how-to-find-the-circle-centre/thumbnail.png
+process:
+    twig: true
+slug: how-to-find-the-circle-centre
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - geometry
+      - mathematics
+title: "Problem #057 – how to find the circle centre"
+twig_first: true
