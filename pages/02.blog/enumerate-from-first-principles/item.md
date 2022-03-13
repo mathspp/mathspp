@@ -2,7 +2,7 @@ In this article we reimplement the built-in `enumerate` in the best way possible
 
 ===
 
-![A Python code snippet showing the built-in `enumerate` applied to the string "rod" and with the optional argument `start`.](thumbnail.png)
+!["A Python code snippet showing the built-in `enumerate` applied to the string 'rod' and with the optional argument `start`."](thumbnail.png)
 
 
 # Preamble
