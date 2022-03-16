@@ -79,8 +79,13 @@ improved upon.
 
 # What does the Zen of Python mean?
 
-The Zen of Python is open to interpretation,
-so it's not about splitting hairs and making sure we come up with an objective metric that we can use to rank Python code.
+Sometimes, saying what something _is not_ is as important,
+or even more important,
+than saying what something _is_.
+The Zen of Python is not splitting hairs and making sure we come up with an objective metric that we can use to rank Python code.
+
+The Zen of Python is a text that is open to interpretation and you should keep that in mind when reading it,
+thinking about it, and discussing it with others.
 
 Having said that, I would like to share my interpretation of some of the guidelines outlined in the Zen of Python.
 My interpretations will reflect _my_ personal experience, my thoughts, my opinions, etc.
