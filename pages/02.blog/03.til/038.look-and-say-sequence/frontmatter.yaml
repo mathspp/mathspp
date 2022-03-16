@@ -1,0 +1,17 @@
+date: 15-03-2022 23:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned that the length of the terms of the “look and say” sequence has a well-defined growth rate."
+    og:image: https://mathspp.com/blog/til/038/thumbnail.png
+    twitter:image: https://mathspp.com/blog/til/038/thumbnail.png
+references:
+  - "Look-and-Say Numbers (feat John Conway) - Numberphile, YouTube, [https://www.youtube.com/watch?v=ea7lJkEhytA](https://www.youtube.com/watch?v=ea7lJkEhytA) [last accessed 15-03-2022];"
+slug: "038"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - logic
+      - mathematics
+      - sequences
+title: "TIL #038 – look-and-say sequence"
+visible: false
