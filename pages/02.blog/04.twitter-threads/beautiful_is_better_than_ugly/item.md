@@ -57,3 +57,9 @@ So, aesthetics matter in fashion, design, marketing, etc...
 But they also matter in mathematics and programming, and don't let anyone tell you otherwise!
 
 Do you feel the same? 👇🗨️
+
+---
+
+This thread ties in nicely with the [Pydon't about the Zen of Python][pydont-zen], where I go over the point of the Zen of Python as a whole.
+
+[pydont-zen]: /blog/pydonts/pydont-disrespect-the-zen-of-python

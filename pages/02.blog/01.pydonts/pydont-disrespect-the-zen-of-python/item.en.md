@@ -76,6 +76,60 @@ reworking whole sections.
 Writing code is the same: chances are, the first thing you write can be greatly
 improved upon.
 
+
+# What does the Zen of Python mean?
+
+The Zen of Python is open to interpretation,
+so it's not about splitting hairs and making sure we come up with an objective metric that we can use to rank Python code.
+
+Having said that, I would like to share my interpretation of some of the guidelines outlined in the Zen of Python.
+My interpretations will reflect _my_ personal experience, my thoughts, my opinions, etc.
+If you disagree with me, that doesn't mean one of us is wrong!
+It just means we see things differently.
+
+If you would like to engage in thoughtful discussion about the Zen of Python, or about any particular guideline, just scroll down to the bottom of the page and leave a comment there!
+
+
+## Beautiful is better than ugly
+
+[Adapted from my Twitter thread.][tt-beautiful]
+
+The Zen of Python 🐍 says
+“Beautiful is better than ugly.”.
+
+I take this to mean that aesthetics _do_ matter,
+as they matter in everything else.
+So, if your code is elegant, it is more likely to be good code.
+
+Striving to write elegant code might seem weird, but it's not!
+A similar thing is done in maths:
+
+There are many theorems that can be proven in many different ways,
+but mathematicians always try to find the most elegant proof.
+One mathematician even took that to an extreme.
+
+Paul Erdös, a prolific mathematician of the 20th century, often talked about “The Book”:
+a book where the most elegant proofs for mathematical theorems had been written by a divinity.
+When he'd find a beautiful proof, he would say “This one is from The Book!”.
+
+So, aesthetics matter in fashion, design, marketing, etc...
+But they also matter in mathematics and programming, and don't let anyone tell you otherwise!
+
+You might counter by saying that what is aesthetically pleasing is subjective...
+And you are right!
+Aesthetics are subjective in code, in maths, in fashion, in design, in art, ...
+And yet, people seem to gravitate towards a consensus!
+
+So, I claim this guideline is about getting familiar with that consensus.
+The more code you read and the more people you work with,
+the more exposed you will be to code from the real world,
+and the more equipped you will be to understand what's elegant code.
+
+Ultimately, your sense for elegant code or your ability to judge your code by its aesthetics develops when you write code but, most importantly, when you read code.
+
+
+# Conclusion
+
 This Pydon't was more of a “meta” Pydon't, with subjective advice on how to code.
 This might seem useless to you at first, but the more you dwell on it the more
 helpful it will become.
@@ -97,8 +151,9 @@ a single Pydon't!
  - Tim Peters (software engineer), Wikipedia [https://en.wikipedia.org/wiki/Tim_Peters_(software_engineer)](https://en.wikipedia.org/wiki/Tim_Peters_(software_engineer))
 
 
-[subscribe]: https://mathspp.com/subscribe
+[subscribe]: /subscribe
 [manifesto]: /blog/pydonts/pydont-manifesto
+[tt-beautiful]: /blog/twitter-threads/beautiful-is-better-than-ugly
 [pep8]: https://www.python.org/dev/peps/pep-0008/
 [Zen of Python]: https://www.python.org/dev/peps/pep-0020/
 [Kung Fu Panda]: https://en.wikipedia.org/wiki/Kung_Fu_Panda#Kung_Fu_Panda_(2008)
