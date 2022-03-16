@@ -31,6 +31,10 @@ who sent me their correct solutions:
  - Dmitry R., USA;
  - Martin J., Czech Republic;
  - David H., Taiwan;
+ - Mario R., Ecuador;
+ - Paul M., USA;
+ - Luis C., Peru;
+ - Pietro P., Italy;
 
 Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
