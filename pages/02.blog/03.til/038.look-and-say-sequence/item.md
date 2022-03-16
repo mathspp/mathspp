@@ -30,7 +30,7 @@ And the next:
 So, the next term would be `13112221`.
 
 
-# Growth rate
+# Conway's Constant
 
 What I just learned is that the length of the next term is, on average,
 $1.303577269\cdots$ times larger than the length of the previous term.
