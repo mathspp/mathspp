@@ -133,6 +133,51 @@ and the more equipped you will be to understand what's elegant code.
 Ultimately, your sense for elegant code or your ability to judge your code by its aesthetics develops when you write code but, most importantly, when you read code.
 
 
+## Explicit is better than implicit
+
+The Zen of Python 🐍 says
+“Explicit is better than implicit.”
+
+This means what it says on the tin, but “explicit” might not mean what you expect.
+Explicit code isn't code that spells out every single step.
+
+For example, suppose you want to sum a list of numbers.
+Which of the two snippets below do you prefer?
+
+```py
+# Using `sum`.
+my_list = [...]
+list_sum = sum(my_list)
+
+# Using a `for` loop.
+my_list = [...]
+list_sum = 0
+for number in my_list:
+    list_sum += number
+```
+
+The `for` loop is more explicit, right?
+So, should we prefer the `for` loop instead of the built-in `sum`?
+Hell no!
+
+We want to be explicit about the semantics of our code and not about the irrelevant details.
+When you see the built-in `sum` being used you know _immediately_ that we are summing a list.
+On the other hand, when you see a `for` loop, you have to interpret it.
+You have to analyse it and figure out what it's doing.
+This is taxing for your brain, no matter how easy it ends up being.
+Thus, making use of the built-in `sum` is _more explicit_ than the `for` loop.
+
+In general, if there are functions and/or modules that do what you need or want, use them!
+Of course, it all depends on the context you are in and the people who work with your code...
+But remember, a programmer's responsibility is to use the _best_ tool for the job...
+
+Therefore, if there's a function/module that really does what you need,
+should you reinvent the wheel, or should you use it?
+You should probably use it!
+Even if others around you don't know it...
+In fact, if others don't know it, _now_ is probably a good time to learn about it!
+
+
 # Conclusion
 
 This Pydon't was more of a “meta” Pydon't, with subjective advice on how to code.
