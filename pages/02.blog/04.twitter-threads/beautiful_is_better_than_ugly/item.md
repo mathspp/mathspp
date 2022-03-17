@@ -11,7 +11,7 @@ taxonomy:
     tag:
       - programming
       - python
-title: "Beautiful is better than ugly."
+title: "Beautiful is better than ugly"
 ---
 
 What does the Zen of Python 🐍 mean by “Beautiful is better than ugly”?
