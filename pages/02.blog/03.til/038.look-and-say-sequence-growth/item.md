@@ -63,8 +63,10 @@ this sequence does exhibit some nice behaviour that maths can explain!
 
 Isn't that cool?!
 
-[cc]: https://mathworld.wolfram.com/ConwaysConstant.html
+You can read a bit more about this sequence and variations in [this article][look-and-say].
 
+[cc]: https://mathworld.wolfram.com/ConwaysConstant.html
+[look-and-say]: /blog/look-and-say-sequence
 
 That's it for now! [Stay tuned][subscribe] and I'll see you around!
 
