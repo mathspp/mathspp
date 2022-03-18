@@ -1,5 +1,5 @@
 ---
-date: 17-03-2022
+date: 17-03-2022 17:00
 metadata:
     author: Rodrigo Girão Serrão
     description: "Learn how to format dates/times with f-strings and %-format specifiers."

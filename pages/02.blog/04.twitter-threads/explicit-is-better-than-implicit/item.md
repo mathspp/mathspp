@@ -1,5 +1,5 @@
 ---
-date: 17-03-2022
+date: 17-03-2022 09:00
 metadata:
     author: Rodrigo Girão Serrão
     description: "What does the Zen of Python 🐍 mean by “Explicit is better than implicit.”?"
