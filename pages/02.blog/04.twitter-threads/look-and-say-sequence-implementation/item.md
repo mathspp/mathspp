@@ -215,3 +215,10 @@ def look_and_say(digits):
         (len(list(g)), k) for k, g in groupby(digits)
     ))
 ```
+
+---
+
+If you want to read more about the look-and-say sequence,
+you can go through [this article][look-and-say].
+
+[look-and-say]: /blog/look-and-say-sequence
