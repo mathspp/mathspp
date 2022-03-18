@@ -2,8 +2,8 @@ date: 18-03-2022
 metadata:
     author: Rodrigo Girão Serrão
     description: "We discuss the look-and-say sequence, its behaviour, variations of it, and a Python implementation."
-    og:image: "https://mathspp.com/blog/pydonts/look-and-say-sequence/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/pydonts/look-and-say-sequence/thumbnail.png"
+    og:image: "https://mathspp.com/blog/look-and-say-sequence/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/look-and-say-sequence/thumbnail.png"
 references:
   - "Look-and-Say Numbers (feat John Conway) - Numberphile, YouTube, [https://www.youtube.com/watch?v=ea7lJkEhytA](https://www.youtube.com/watch?v=ea7lJkEhytA) [last accessed 15-03-2022];"
   - "Weisstein, Eric W. “Conway's Constant.” From MathWorld--A Wolfram Web Resource. [https://mathworld.wolfram.com/ConwaysConstant.html](https://mathworld.wolfram.com/ConwaysConstant.html) [last accessed 18-03-2022];"
