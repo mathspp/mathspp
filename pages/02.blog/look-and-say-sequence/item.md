@@ -7,7 +7,7 @@ We discuss the look-and-say sequence, its behaviour, variations of it, and a Pyt
 
 # What is the look-and-say sequence?
 
-The look-and-say sequence is a numerical sequence that typically starts with these elements:
+The look-and-say sequence is a numerical sequence that typically starts with 1 and then has the following terms:
 
  - 1
  - 11
@@ -43,7 +43,7 @@ but the rule makes sense in other contexts as well.
 # Conway's constant
 
 A couple of days ago [I learned][til-look-and-say-growth] that [John Conway][jc] was able to determine by how much all these sequences grow!
-As you go progress through the sequence, the length of the previous term is supposed to be $\approx 30\%$ greater than the length of the previous term.
+As you progress through the sequence, the length of the previous term is supposed to be $\approx 30\%$ greater than the length of the previous term.
 To be more precise, the length of the previous term tends to be $1.303577269\cdots$ times the length of the previous one.
 This is the value of Conway's constant, and it's [the only positive real root of a polynomial of degree 71][til-conway-constant].
 
@@ -53,8 +53,8 @@ Almost!
 There is _just one_ seed for which this doesn't hold true.
 Can you figure out which one?
 
-! Think about it.
-! You can find the answer below.
+!!! Think about it.
+!!! You can find the answer below.
 
 
 # Python implementation
