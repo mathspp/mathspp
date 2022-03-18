@@ -5,7 +5,7 @@ metadata:
     description: "This thread goes over a possible Python implementation for the look-and-say sequence."
     og:image: https://mathspp.com/blog/twitter-threads/thumbnail.png
     twitter:image: https://mathspp.com/blog/twitter-threads/thumbnail.png
-slug: datetime-objects-and-f-strings
+slug: look-and-say-sequence-implementation
 taxonomy:
     category: twitter thread
     tag:
