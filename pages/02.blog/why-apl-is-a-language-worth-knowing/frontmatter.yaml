@@ -1,0 +1,17 @@
+date: 24-03-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Let me show you characteristics of APL that will influence your understanding of programming concepts and the way you use other languages."
+    og:image: https://mathspp.com/blog/why-apl-is-a-language-worth-knowing/thumbnail.png"
+    twitter:image: https://mathspp.com/blog/why-apl-is-a-language-worth-knowing/thumbnail.png
+references:
+  - "Perlis, A.J., 1982. Special feature: Epigrams on programming. ACM Sigplan Notices, 17(9), pp.7-13."
+slug: why-apl-is-a-language-worth-knowing
+taxonomy:
+    category: blogpost
+    tag:
+      - apl
+      - haskell
+      - programming
+      - python
+title: "Why APL is a language worth knowing"
