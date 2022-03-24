@@ -244,25 +244,28 @@ And the function _residue_ `|` which is typically represented by `%`, `mod`, etc
 ## List comprehensions express data transformations
 
 List comprehensions are a syntactical construct of some programming languages whose objective is to make it easier for you to create new lists (or similar structures) out of existing lists (or similar structures).
-Typically, this syntax is more concise than the traditional 3-step alternative:
 
- 1. create an empty list;
- 2. iterate over the existing list with a loop; and
- 3. add the modified element to the new list.
+To work with an example, suppose we want to square the integers from 0 to 9.
+How would we do that?
 
-As a trivial example, consider we have a list of the numbers 0 through 9 and we wish to create another list with the squares of those numbers.
-
-In Python, the traditional way to create such a list would be something like
+The typical Python solution would look like this:
 
 ```pycon
 >>> squares = []
 >>> for num in range(10):
->>>     squares.append(num ** 2)
+...     squares.append(num ** 2)
 >>> squares
 [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 ```
 
-Using a list comprehension in Python, it becomes
+The structure of the code we just wrote is very clear:
+
+ 1. we create an empty result list;
+ 2. we go over an existing list (in this case, a `range`); and
+ 3. we add the modified value to the result list.
+
+The objective of list comprehensions is to take this pattern and simplify it.
+For our specific example, here is the equivalent list comprehension:
 
 ```pycon
 >>> squares = [num ** 2 for num in range(10)]
