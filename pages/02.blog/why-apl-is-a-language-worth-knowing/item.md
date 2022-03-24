@@ -254,7 +254,7 @@ As a trivial example, consider we have a list of the numbers 0 through 9 and we 
 
 In Python, the traditional way to create such a list would be something like
 
-```py
+```pycon
 >>> squares = []
 >>> for num in range(10):
 >>>     squares.append(num ** 2)
@@ -264,7 +264,7 @@ In Python, the traditional way to create such a list would be something like
 
 Using a list comprehension in Python, it becomes
 
-```py
+```pycon
 >>> squares = [num ** 2 for num in range(10)]
 >>> squares
 [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
@@ -291,7 +291,7 @@ Let's use list comprehensions to determine the units digit of some numbers.
 
  - in Python:
 
-```py
+```pycon
 >>> 42 % 10  # We use ... % 10 to get the number modulo 10.
 2
 >>> numbers = [42, 73, 0, 16, 10]
@@ -660,7 +660,7 @@ What if we want to build a new list but only make use of _some_ of the data avai
 
 We already wrote a list comprehension that squares several numbers:
 
-```py
+```pycon
 >>> numbers = [42, 73, 0, 16, 10]
 >>> [num ** 2 for num in numbers]
 [1764, 5329, 0, 256, 100]
@@ -687,7 +687,7 @@ for num in numbers:
 List comprehensions (in Python and other languages) provide mechanisms to do this sort of filtering as well.
 In Python, the filtering comes after the `for ... in ...` and is signalled by an `if`:
 
-```py
+```pycon
 >>> [num ** 2 for num in numbers if (num % 2) == 0]
 [1764, 0, 256, 100]
 ```
@@ -746,7 +746,7 @@ Here is how you can do it in APL:
 
 Writing code like this made it easier for me to come to terms with Python expressions such as the following:
 
-```py
+```pycon
 >>> flows = [-6629, 2908, 2944, -4316, -4109, 3155]
 >>> flows_in = sum(cash_flow for cash_flow in flows if cash_flow > 0)
 >>> flows_in
