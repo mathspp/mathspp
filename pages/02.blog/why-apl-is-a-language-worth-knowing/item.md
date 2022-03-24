@@ -295,37 +295,49 @@ Let's use list comprehensions to determine the units digit of some numbers.
  - in Python:
 
 ```pycon
->>> 42 % 10  # We use ... % 10 to get the number modulo 10.
+>>> num = 42
+>>> num % 10  # We use num % 10 to get the number modulo 10.
 2
 >>> numbers = [42, 73, 0, 16, 10]
->>> digits = [num % 10 for num in numbers]
->>> digits
+>>> [num % 10 for num in numbers]
 [2, 3, 0, 6, 0]
 ```
+
+To go from working on one number to working on the whole list of numbers we took the base expression, the `num % 10`, and wrapped it in the list comprehension syntax with the brackets `[]` and the `for ...`.
 
  - in APL:
 
 ```APL
-      10|42  ⍝ We use 10|... to get the number modulo 10.
+      number ← 42
+      10|number  ⍝ We use 10|... to get the number modulo 10.
+2
       numbers ← 42 73 0 16 10
-      digits ← 10|numbers
-      digits
+      10|numbers
 2 3 0 6 0
 ```
 
 The key characteristic of the APL code is that the code we needed to write to get the units digit of one number was exactly the same as the code we needed to write to get the units digits of the whole vector of numbers.
 In other words, APL makes it extremely convenient to process chunks of data because having just a single number or a bunch of numbers is the “same” thing.
+This is very liberating and ends up influencing the way you look for solutions to problems,
+even in other languages!
 
-This seems obvious to me now, but I took a long time to understand it and to connect the dots.
-After all, I had known that APL was array-oriented.
-_You_ also knew that APL was array-oriented!
-(I told it to you in the beginning of this article.)
-But knowing a fact is not the same thing as _understanding_ it,
-and that's why I took some time to realise the connections here.
+In the case of list comprehensions, I got used to writing list comprehensions by focusing on the data transformation I wanted,
+akin to how APL does it by simply writing down the expressions we care about.
+Then, I just fill up the remainder of the syntax that I need for Python to understand what I mean.
 
-The first sign that APL was influencing my list comprehensions came in the form of a piece of Python code that we will discuss a bit later.
-Then, I had this generalised feeling of being more at ease with list comprehensions.
-And then, came the realisation of what I feel is the most compelling argument for why someone should use list comprehensions:
+By comparing the four expressions from above,
+
+ - how Python does it for a single number;
+ - how Python does it for multiple numbers;
+ - how APL does it for a single number; and
+ - how APL does it for multiple numbers,
+
+it becomes clear that list comprehensions are Python's best attempt so far at letting you manipulate many values at the same time.
+In hindsight, all of this feels very obvious, but I only arrived at these conclusions after
+
+ - writing an interesting piece of Python code we will discuss later;
+ - having a generalised feeling that I was more at ease with list comprehensions; and
+ - coming to the realisation of what I feel is the most compelling argument in favour of list comprehensions:
 
  > “List comprehensions highlight the transformation of the data and relegate the syntax needed to do that.”
 
@@ -339,7 +351,7 @@ the data transformations that you are doing are surrounded by clutter.
 Of course, this “clutter” is the code needed to actually build the list of results,
 but the “building the list of results” should not be the most important part of your code in those cases.
 
-In hindsight, this argument in favour of list comprehensions is really trivial,
+Once more, in hindsight, this argument in favour of list comprehensions is really trivial,
 but the truth of the matter is that I have been involved in many discussions about the usage of list comprehensions
 and I had never seen/heard anyone advocate for list comprehensions by presenting this argument.
 At least, not in these simple terms.
@@ -446,8 +458,9 @@ An APL user is likely to give you an answer along these lines:
       price ← (40×days)+200+300×age≤24
 ```
 
-The excerpt `40×days` is very much the same, but the `200+300×age≤25` is much different from all the other things that we have seen.
-So, where does that come from?
+The excerpt `40×days` is very much the same and computes the base price, so the `200+300×age≤25` must be computing the extra fees.
+But how?
+Where does that come from?
 
 If you have a Boolean value `b`, how can you write a mathematical expression that evaluates to `x` if `b` is `1` and that evaluates to `y` if `b` is `0`?
 One such expression would be `(x×b)+x×1-b`:
@@ -647,7 +660,6 @@ for a, d in zip(age, days):
     base = 40 * d
     fees = 200 + 300 * (a <= 24)  # $300 surcharge when 24 or younger.
     netted += base + fees
-total = sum(prices)
 ```
 
 This is just an example of how APL reshaped the way I think about Python.
@@ -723,6 +735,8 @@ and on the left you give it a Boolean vector where a `1` means you want to keep 
       (0=2|numbers)/numbers
 42 0 16 10
 ```
+
+The vector on the left of the function _compress_ is like a series of switches that are ON or OFF and that tell you whether to keep each item or not.
 
 Thus, if you have a vector of numbers and you only want the squares of the even ones,
 in APL you can start by _compressing_ the original vector and then squaring the numbers you care about:
