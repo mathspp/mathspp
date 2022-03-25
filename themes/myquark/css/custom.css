@@ -13,6 +13,7 @@ and then read about the correct CSS here: https://stackoverflow.com/a/28571625
          url('/user/themes/myquark/fonts/atkinsonhyperlegible-bold-webfont.svg#atkinson_hyperlegiblebold') format('svg');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Atkinson Hyperlegible';
@@ -24,6 +25,7 @@ and then read about the correct CSS here: https://stackoverflow.com/a/28571625
          url('/user/themes/myquark/fonts/atkinsonhyperlegible-bolditalic-webfont.svg#atkinson_hyperlegibleBdIt') format('svg');
     font-weight: bold;
     font-style: italic;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Atkinson Hyperlegible';
@@ -35,6 +37,7 @@ and then read about the correct CSS here: https://stackoverflow.com/a/28571625
          url('/user/themes/myquark/fonts/atkinsonhyperlegible-italic-webfont.svg#atkinson_hyperlegibleitalic') format('svg');
     font-weight: normal;
     font-style: italic;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Atkinson Hyperlegible';
@@ -46,6 +49,46 @@ and then read about the correct CSS here: https://stackoverflow.com/a/28571625
          url('/user/themes/myquark/fonts/atkinsonhyperlegible-regular-webfont.svg#atkinson_hyperlegibleregular') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'APL385 Unicode';
+    src: url('/user/themes/myquark/fonts/APL385.eot');
+    src: local('APL385 Unicode'), local('APL385'),
+        url('/user/themes/myquark/fonts/APL385.eot?#iefix') format('embedded-opentype'),
+        url('/user/themes/myquark/fonts/APL385.woff2') format('woff2'),
+        url('/user/themes/myquark/fonts/APL385.woff') format('woff'),
+        url('/user/themes/myquark/fonts/APL385.ttf') format('truetype'),
+        url('/user/themes/myquark/fonts/APL385.svg#APL385') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraCode Nerd Font Mono';
+    src: url('/user/themes/myquark/fonts/FiraCodeNerdFontCompleteM-Bold.eot');
+    src: local('Fira Code Bold Nerd Font Complete Mono'), local('FiraCode Nerd Font Mono'), local('FiraCodeNerdFontCompleteM-Bold'),
+        url('/user/themes/myquark/fonts/FiraCodeNerdFontCompleteM-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/user/themes/myquark/fonts/FiraCodeNerdFontCompleteM-Bold.woff2') format('woff2'),
+        url('/user/themes/myquark/fonts/FiraCodeNerdFontCompleteM-Bold.woff') format('woff'),
+        url('/user/themes/myquark/fonts/FiraCodeNerdFontCompleteM-Bold.ttf') format('truetype'),
+        url('/user/themes/myquark/fonts/FiraCodeNerdFontCompleteM-Bold.svg#FiraCodeNerdFontCompleteM-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraCode Nerd Font Mono';
+    src: url('/user/themes/myquark/fonts/FiraCodeNerdFontCompleteM-Regular.eot');
+    src: local('Fira Code Regular Nerd Font Complete Mono'), local('FiraCode Nerd Font Mono'), local('FiraCodeNerdFontCompleteM-Regular'),
+        url('/user/themes/myquark/fonts/FiraCodeNerdFontCompleteM-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/user/themes/myquark/fonts/FiraCodeNerdFontCompleteM-Regular.woff2') format('woff2'),
+        url('/user/themes/myquark/fonts/FiraCodeNerdFontCompleteM-Regular.woff') format('woff'),
+        url('/user/themes/myquark/fonts/FiraCodeNerdFontCompleteM-Regular.ttf') format('truetype'),
+        url('/user/themes/myquark/fonts/FiraCodeNerdFontCompleteM-Regular.svg#FiraCodeNerdFontCompleteM-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 
@@ -106,6 +149,14 @@ li,
 label {
     font-family: "Atkinson Hyperlegible", sans-serif;
     color: #f8f8f2;
+}
+
+code {
+    font-family: "FiraCode Nerd Font Mono";
+}
+
+code .language-APL {
+    font-family: "APL 385";
 }
 
 /* Centre images in blog posts. */
