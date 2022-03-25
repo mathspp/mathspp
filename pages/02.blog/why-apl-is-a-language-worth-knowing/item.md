@@ -90,7 +90,7 @@ like so:
 1
 ```
 
-APL is infamous for its Unicode symbols, which make up for the set of its built-ins.
+APL is infamous for its Unicode symbols, which are actually the set of its built-ins.
 For example, many languages have a built-in that lets you create a series of consecutive integers.
 In Python, that would be `range`.
 In APL, we have the built-in function _index generator_, represented by the symbol iota `⍳`:
@@ -226,7 +226,7 @@ Then, we do the division `24 ÷ 8 4`:
 ! 2 3 ¯6 12
 ! ```
 
-A couple of other useful scalar functions include the function _power_ `*` typically represented by `**`, `pow`, `power`, etc:
+A couple of other useful scalar functions include the function _power_ `*`, which other languages often represent by `**`, `pow`, `power`, etc:
 
 ```APL
       1 2 3*2
@@ -235,7 +235,7 @@ A couple of other useful scalar functions include the function _power_ `*` typic
 1 2 4 8 16 32 64 128 256 512 1024
 ```
 
-And the function _residue_ `|` which is typically represented by `%`, `mod`, etc:
+And the function _residue_ `|`, which other languages represent by `%`, `mod`, etc:
 
 ```APL
       2|⍳5
@@ -243,6 +243,10 @@ And the function _residue_ `|` which is typically represented by `%`, `mod`, etc
       10|1 12 123 1234
 1 2 3 4
 ```
+
+! In APL, the modulus goes on the left of the _residue_ function,
+! which is the opposite of many other languages do (including Python).
+! Python's `n % m` is equivalent to APL's `m|n`.
 
 
 ## List comprehensions express data transformations
@@ -538,8 +542,7 @@ On top of that, we also have the most recent list of items that are going to get
       sale_items ← 'tshirt' 'blouse' 'jacket' 'banana' 'apple'
 ```
 
-We can easily check which articles will be on sale through the dyadic function _membership_ `∊` that,
-well, checks if the left argument's scalars are in the right argument's scalars:
+We can easily check which articles will be on sale through the dyadic function _membership_ `∊` that checks if the left argument's scalars are in the right argument's scalars:
 
 ```APL
       articles ∊ sale_items
@@ -665,6 +668,12 @@ for a, d in zip(age, days):
     fees = 200 + 300 * (a <= 24)  # $300 surcharge when 24 or younger.
     netted += base + fees
 ```
+
+In the code above we can see the multiplication `300 * (a <= 24)`.
+At first, it may be surprising that this works.
+After all, `(a <= 24)` is a Boolean value and `300` is an integer.
+However, Python can interpret the Boolean values `True` and `False` as `1` and `0`,
+respectively, in contexts where numbers are expected.
 
 This is just an example of how APL reshaped the way I think about Python.
 This might not be the best example as far as motivation for why you would do this goes,
