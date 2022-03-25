@@ -93,7 +93,7 @@ like so:
 APL is infamous for its Unicode symbols, which are actually the set of its built-ins.
 For example, many languages have a built-in that lets you create a series of consecutive integers.
 In Python, that would be `range`.
-In APL, we have the built-in function _index generator_, represented by the symbol iota `⍳`:
+In APL, we have the built-in function _index generator_, represented by the symbol iota <span class="APL">`⍳`</span>:
 
 ```APL
       ⍳6
