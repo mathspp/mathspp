@@ -11,7 +11,6 @@ taxonomy:
     category: blogpost
     tag:
       - apl
-      - haskell
       - programming
       - python
 title: "Why APL is a language worth knowing"

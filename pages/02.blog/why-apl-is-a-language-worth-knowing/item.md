@@ -17,6 +17,10 @@ Inspired by this statement, this article focuses on showing you how _a language 
 In particular, I will be drawing from my own experiences with APL and Python to give empirical evidence that supports my statement.
 
 
+!!! This article is also the written version of a talk I gave at [FnConf 2022][fnconf-talk].
+!!! The talk slides are available [here][gh-talks] and I'll link to the YouTube recording ASAP.
+
+
 ## Background
 
 I started writing Python code in 2012 and that is the programming language I am most fluent in.
@@ -864,3 +868,6 @@ and it also tried to show you how the APL way of doing things helped me become m
 [alan-perlis]: https://en.wikipedia.org/wiki/Alan_Perlis
 [turing-award]: https://en.wikipedia.org/wiki/Turing_Award
 [apl]: https://apl.wiki
+
+[fnconf-talk]: https://confengine.com/conferences/functional-conf-2022/proposal/16278/why-apl-is-a-language-worth-knowing
+[gh-talks]: https://github.com/mathspp/talks
