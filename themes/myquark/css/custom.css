@@ -232,7 +232,13 @@ blockquote {
 }
 
 /* Set the colours for pieces of code. */
-code {
+code, pre code {
+    font-family: "FiraCode Nerd Font Mono";
+    background: #282a36;
+    color: #f8f8f2;
+    font-variant-ligatures: none;
+}
+pre code { /* Repeat for multiline code. */
     font-family: "FiraCode Nerd Font Mono";
     background: #282a36;
     color: #f8f8f2;
