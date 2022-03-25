@@ -1,6 +1,7 @@
 /* Add the Atkinson fonts.
 Got help from https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website,
 then generated the WebFont kit with Font Squirrel (https://www.fontsquirrel.com)
+(I also used https://transfonter.org/)
 and then read about the correct CSS here: https://stackoverflow.com/a/28571625
 */
 @font-face {
@@ -155,7 +156,8 @@ code {
     font-family: "FiraCode Nerd Font Mono";
 }
 
-code.language-APL {
+code.language-APL, code.language-apl, .apl code, .APL code {
+    /* Multiline APL code blocks and inline code with a "APL" span. */
     font-family: "APL385 Unicode";
 }
 
@@ -247,6 +249,7 @@ code {
 pre code {
     background: #1e1d1e;
     color: #f8f8f2;
+    border-radius: 10px;
 }
 
 /* Set visited links to a darker shade of blue. */
@@ -270,6 +273,9 @@ a:visited {
     box-shadow: 0 10px 45px -9px #333333;
 }
 
+.notices {
+    border-radius: 10px;
+}
 .notices.blue {
     border-left-color: #1a6b83;
     background: #1d2022;
