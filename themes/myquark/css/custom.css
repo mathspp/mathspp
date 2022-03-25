@@ -152,15 +152,6 @@ label {
     color: #f8f8f2;
 }
 
-code {
-    font-family: "FiraCode Nerd Font Mono";
-}
-
-code.language-APL, code.language-apl, .apl code, .APL code {
-    /* Multiline APL code blocks and inline code with a "APL" span. */
-    font-family: "APL385 Unicode";
-}
-
 /* Centre images in blog posts. */
 .blog-listing img {
     margin-left: auto;
@@ -240,16 +231,17 @@ blockquote {
     border-color: #333333;
 }
 
-/* Set the colours for pieces of inline code. */
+/* Set the colours for pieces of code. */
 code {
-    background: #282020;
-    color: #f97f87;
-}
-/* And now for multiline. */
-pre code {
-    background: #1e1d1e;
+    font-family: "FiraCode Nerd Font Mono";
+    background: #282a36;
     color: #f8f8f2;
-    border-radius: 10px;
+    font-variant-ligatures: none;
+}
+/* Style APL code with the correct font. */
+code.language-APL, code.language-apl, .apl code, .APL code {
+    /* Multiline APL code blocks and inline code with a "APL" span. */
+    font-family: "APL385 Unicode";
 }
 
 /* Set visited links to a darker shade of blue. */
@@ -273,9 +265,6 @@ a:visited {
     box-shadow: 0 10px 45px -9px #333333;
 }
 
-.notices {
-    border-radius: 10px;
-}
 .notices.blue {
     border-left-color: #1a6b83;
     background: #1d2022;
