@@ -478,7 +478,7 @@ so the only thing that there is left is to make sure that the words have _enough
 For example, if the word `'aback'` scored `1 0 1 0 0`,
 the word `'taste'` wouldn't do because we know the secret word has two `'a'`s,
 and the word `'taste'` only has one.
-In other words, we can't just use _membership_ because that doesn't take into care about how many times each letter is accounted for,
+In other words, we can't just use _membership_ because that doesn't care about how many times each letter is accounted for,
 but we can use _progressive membership_ once more:
 
 ```APL
@@ -522,7 +522,7 @@ What we need to filter out is words that contain _too_ many letters in common wi
 
 Let's suppose that our guess was `'praam'` and that the score was `0 0 1 0 2`.
 This means that the secret word contains a single `'a'` and none of the letters `'pr'`.
-So, if we take a word that has passed all the previous criteria,
+So, if we take a word that satisfies all the previous criteria,
 we only need to check that the number of its letters contained in `'apr'` is 1:
 
 ```APL
@@ -582,9 +582,20 @@ All you need to do is clone the repo into `path/to/WordleAPL` and then you can l
 Linked: # ←→ path/to/Wordle
 ```
 
-!!! As an exercise, try modifying the function `Filter` by deleting any one of the four functions that it uses.
-!!! By doing so and then running the function `Filter` with some inputs,
-!!! you will be able to spot the kinds of mistakes that the function does when it skips one step.
+As an exercise, try modifying the function `Filter` by deleting any one of the four functions that it uses.
+By doing so and then running the function `Filter` with some inputs,
+you will be able to spot the kinds of mistakes that the function does when it skips one step.
+
+
+# Conclusion
+
+This article showed you how you can use APL to help you solve Wordle,
+making use of the fact that APL is array-oriented to make it easier to handle the matrix with all the possible words.
+
+In implementing a function to filter the candidate words,
+we broke up the criteria we had into four smaller predicates that make it easier to reason about what we are doing and that make it easier to implement.
+
+The code we wrote showcased the array-oriented paradigm of APL, a couple of non-trivial use cases for _inner product_, and _progressive membership_, a variation of the built-in function _membership_ `∊`.
 
 
 [wordle-python]: /blog/solving-wordle-with-python
