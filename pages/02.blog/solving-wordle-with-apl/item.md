@@ -605,7 +605,7 @@ Finally, in the code written, a couple of things worth highlighting include the 
 
 [wordle]: https://www.powerlanguage.co.uk/wordle/
 [mastermind]: https://en.wikipedia.org/wiki/Mastermind_(board_game)
-[word-list]: https://raw.githubusercontent.com/RodrigoGiraoSerrao/projects/master/misc/WORD.LST
+[word-list]: https://raw.githubusercontent.com/rodrigogiraoserrao/WordleAPL/main/WORD.LST
 [unix-words]: https://en.wikipedia.org/wiki/Words_(Unix)
 [APL]: https://apl.wiki
 [aplcart]: https://aplcart.info
