@@ -589,13 +589,16 @@ you will be able to spot the kinds of mistakes that the function does when it sk
 
 # Conclusion
 
-This article showed you how you can use APL to help you solve Wordle,
-making use of the fact that APL is array-oriented to make it easier to handle the matrix with all the possible words.
+This article showed you how you can use APL to help you solve Wordle.
+I suspected APL was a great language for this task because APL is array-oriented,
+and as we have seen,
+representing all possible words in a tidy matrix made my life significantly easier.
 
 In implementing a function to filter the candidate words,
 we broke up the criteria we had into four smaller predicates that make it easier to reason about what we are doing and that make it easier to implement.
+This showed that it really is important to break down problems into more manageable chunks.
 
-The code we wrote showcased the array-oriented paradigm of APL, a couple of non-trivial use cases for _inner product_, and _progressive membership_, a variation of the built-in function _membership_ `∊`.
+Finally, in the code written, a couple of things worth highlighting include the non-trivial uses of _inner product_ and the usage of _progressive membership_, a variation of the built-in function _membership_ `∊`.
 
 
 [wordle-python]: /blog/solving-wordle-with-python
