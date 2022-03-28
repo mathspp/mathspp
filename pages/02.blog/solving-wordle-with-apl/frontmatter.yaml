@@ -1,0 +1,15 @@
+date: 28-03-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: Join me in solving the word game Wordle in (Dyalog) APL.
+    og:image: https://mathspp.com/blog/solving-wordle-with-apl/thumbnail.png
+    twitter:image: https://mathspp.com/blog/solving-wordle-with-apl/thumbnail.png
+slug: solving-wordle-with-apl
+taxonomy:
+    category: blogpost
+    tag:
+      - apl
+      - game
+      - logic
+      - programming
+title: "Solving Wordle with APL"
