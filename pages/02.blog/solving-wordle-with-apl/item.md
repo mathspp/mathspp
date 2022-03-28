@@ -286,8 +286,8 @@ Thus, the function `Score` becomes:
 The next function we want to implement is the function `Filter`.
 This function will take three pieces of information:
 
- - on the left, it accepts a matrix containing all the words that could be the secret word; and
- - on the right, it takes a 2-item vector:
+ - on the right, it accepts a matrix containing all the words that could be the secret word; and
+ - on the left, it takes a 2-item vector:
    - the first item is the most recent guess; and
    - the second item is the score for that guess.
 
