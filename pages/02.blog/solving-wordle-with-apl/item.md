@@ -127,14 +127,13 @@ Putting this all together,
 we can write a short dfn that loads the data from the given file:
 
 ```APL
-      Load ← {↑w⌿⍨⍵=≢¨ w←⊃⎕NGET ⍺ 1}
-      words ← 'C:\Users\rodri\Documents\Programming\projects\misc\WORD.LST' Load 5
-      5↑words
+      Load ← {⍺ ← 'WORD.LST' ⋄ ↑w⌿⍨⍵=≢¨ w←⊃⎕NGET ⍺ 1}
+      words ← Load 5
+      4↑words
 aahed
 aalii
 aargh
 abaca
-abaci
 ```
 
 
