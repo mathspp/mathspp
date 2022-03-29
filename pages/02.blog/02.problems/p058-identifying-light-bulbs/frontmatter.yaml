@@ -1,0 +1,17 @@
+date: 28-03-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Please help me identify these 100 light bulbs by turning ON and OFF their switches."
+    og:image: https://mathspp.com/blog/problems/identifying-light-bulbs/thumbnail.png
+    twitter:image: https://mathspp.com/blog/problems/identifying-light-bulbs/thumbnail.png
+process:
+    twig: true
+slug: identifying-light-bulbs
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - binary
+      - logic
+      - mathematics
+title: "Problem #058 – identifying light bulbs"
+twig_first: true
