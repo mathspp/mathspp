@@ -250,6 +250,10 @@ code.language-APL, code.language-apl, .apl code, .APL code {
     font-family: "APL385 Unicode";
 }
 
+code.language-APL, code.language-apl {
+    line-height: 1.25;
+}
+
 /* Set visited links to a darker shade of blue. */
 a:visited {
     color: #3c72b2;
