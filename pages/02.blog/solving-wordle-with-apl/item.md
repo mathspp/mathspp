@@ -211,11 +211,50 @@ while _membership_ doesn't do that.
 
 The fix?
 We can use something like _progressive membership_,
-a version of _membership_ that takes into account repetitions:
+a version of _membership_ that takes into account repetitions.
+We can go to [APL cart][aplcart] and look for a definition of _progressive membership_,
+but we can also come up with our own.
+
+If what we need is for the total number of elements available to also be considered,
+we can start by pairing up each element with its unique id.
+For example, to go from `'swiss'` to `('s' 1)('w' 1)('i' 1)('s' 2)('s' 3)`.
+
+To do that, we start by creating a Boolean mask that compare the input with the unique set of its elements:
 
 ```APL
-      ⍝ Progressive membership, https://aplcart.info/?q=progressive%20membership
-      PM ← {((≢⍺)⍴⍋⍋⍺⍳⍺⍪⍵)∊(≢⍵)⍴⍋⍋⍺⍳⍵⍪⍺}
+      {⍵∘.=⍨∪⍵} 'swiss'
+1 0 0 1 1
+0 1 0 0 0
+0 0 1 0 0
+```
+
+Each row of the output corresponds to a unique character in `'swiss'` and each row tells me where, in the word, that specific character occurs.
+For example, the first row tells me that there is an `'s'` in the first, fourth, and fifth positions of the argument.
+
+Then, by using a _plus-scan_ and masking it off with the same Boolean matrix,
+we get those positions tagged by unique count of each element:
+
+```APL
+      {b×+\b ← ⍵∘.=⍨∪⍵} 'swiss'
+1 0 0 2 3
+0 1 0 0 0
+0 0 1 0 0
+```
+
+Finally, we can use a _max-reduce_ down the columns and a _catenate-each_ to pair up each letter with its tag:
+
+```APL
+      T ← {⍵,¨⌈⌿b×+\b ← ⍵∘.=⍨∪⍵}
+      T 'swiss'
+┌───┬───┬───┬───┬───┐
+│s 1│w 1│i 1│s 2│s 3│
+└───┴───┴───┴───┴───┘
+```
+
+After we know how to tag elements, _progressive membership_ boils down to _membership over tagging_:
+
+```APL
+      PM ← {⍺∊⍥T ⍵}
       'sss' PM 'chess'
 1 1 0  ⍝ The third 's' is not in 'chess' because 'chess' only has 2 's'.
 ```
@@ -491,13 +530,12 @@ but we can use _progressive membership_ once more:
 ```
 
 So, in order to check the words that have the correct letters in other places,
-we take the letters that we must find in the words and then
-we apply _progressive membership_ to those letters and all the other words:
+we take the letters that we must find in the words and then apply _progressive membership_:
 
 ```APL
       guess ← 'rxxaa' ⋄ score ← 1 0 0 1 1
       pos ← score=1
-      sub⌿⍨∧/(pos⌿guess)PM⍤1⊢sub
+      sub⌿⍨∧/(pos⌿guess)PM⍤1⊢sub/⍨2≠score
 aargh
 acari
 ```
@@ -517,27 +555,48 @@ we can only filter out the words where `'a'` shows up twice or more.
 
 How can we do this?
 
-At this point, we only have candidate words that contain the letters needed in enough number.
-What we need to filter out is words that contain _too_ many letters in common with our guess.
+We can take the pool of letters of the candidate word and remove, from it,
+the letters we know that the secret word uses.
+However, we can't juse use _without_ because that won't take into account the amount of letters we remove.
+We need to use _progressive without_.
 
-Let's suppose that our guess was `'praam'` and that the score was `0 0 1 0 2`.
-This means that the secret word contains a single `'a'` and none of the letters `'pr'`.
-So, if we take a word that satisfies all the previous criteria,
-we only need to check that the number of its letters contained in `'apr'` is 1:
+By using the tagging function from before,
+implementing _progressive without_ is straightforward:
+
+```APL
+      'swiss' ~ 'ss'
+wi
+      PW ← {⊃¨⍺~⍥T ⍵}
+      'swiss' PW 'ss'
+wis
+```
+
+After we remove the letters we know we need to use,
+we check if there is overlap between what remains and the letters that were scored with a `0` in the guess word.
+
+For the example that follows, suppose the guess was `'praam'` and the score was `0 0 1 0 2`.
+This shows that the secret word has an `'a'`, but not two or more.
+Thus, we'll filter out words with the letters `'pr'`, but also those with two or more `'a'`s:
 
 ```APL
       guess ← 'praam' ⋄ score ← 0 0 1 0 2
-      pos ← 2≠score
-      count ← +⌿pos⌿score
-      sub⌿⍨count=+/(pos/sub)∊pos⌿guess
+      pos ← 2≠score   ⍝ positions for the pool of letters
+      need ← 1=score  ⍝ positions for the letters needed
+      illegal ← guess⌿⍨0=score       ⍝ letters that can't be in the candidate word
+      wo ← (pos/sub)PW⍤1⊢need⌿guess  ⍝ candidate word pools without letters needed
+      sub⌿⍨0=illegal≢⍤∩⍤1⊢wo         ⍝ intersection between pools of letters and illegal letters should be empty
+abuzz
+abyes
+abysm
+abyss
+      ⍝ Full expression:
+      pos ← 2≠score ⋄ need ← 1=score
+      sub⌿⍨0=(guess⌿⍨0=score)≢⍤∩⍤1⊢(pos/sub)PW⍤1⊢need⌿guess
 abuzz
 abyes
 abysm
 abyss
 ```
-
-In isolation, this check isn't enough.
-However, when we do all the checks in succession, it works.
 
 
 ## Final function
@@ -546,16 +605,16 @@ If we put everything together, here is the function `Filter`:
 
 ```APL
       Filter ← {
-         (gss scr) ← ⍺
-         wrds ← ⍵
-         pos ← 2=scr
-         wrds ⌿⍨← (pos/wrds)∧.=pos⌿gss
-         pos ← 1=scr
-         wrds ⌿⍨← (pos/wrds)∧.≠pos⌿gss
-         wrds ⌿⍨← ∧/(pos⌿gss)PM⍤1⊢wrds
-         pos ← 2≠scr ⋄ cnt ← +⌿pos⌿scr
-         wrds ⌿⍨← cnt=+/(pos/wrds)∊pos⌿gss
-         wrds
+          (gss scr) ← ⍺
+          wrds ← ⍵
+          pos ← 2=scr
+          wrds ⌿⍨← (pos/wrds)∧.=pos⌿gss
+          pos ← 1=scr
+          wrds ⌿⍨← (pos/wrds)∧.≠pos⌿gss
+          wrds ⌿⍨← ∧/(pos⌿gss)PM⍤1⊢wrds/⍨2≠scr
+          pos ← 2≠scr ⋄ need ← 1=scr
+          wrds⌿⍨0=(gss⌿⍨0=scr)≢⍤∩⍤1⊢(pos/wrds)PW⍤1⊢need⌿gss
+          wrds
       }
       'aback' (2 0 2 1 0) Filter words
 acari
@@ -569,8 +628,8 @@ An alternative is to rewrite the code as a chain of the four steps that we just 
 ```APL
       CL ← {⍵⌿⍨(p/⍵)∧.=g⌿⍨p ← s=2⊣(g s) ← ⍺}
       IP ← {⍵⌿⍨(p/⍵)∧.≠g⌿⍨p ← 1=s⊣(g s) ← ⍺}
-      OP ← {⍵⌿⍨∧/⍵ PM⍤1⍨g⌿⍨p ← 1=s⊣(g s) ← ⍺}
-      IL ← {⍵⌿⍨(+⌿p⌿s)=+/(p/⍵)∊g⌿⍨p ← 2≠s⊣(g s) ← ⍺}
+      OP ← {⍵⌿⍨∧/(⍵/⍨2≠s)PM⍤1⍨g⌿⍨1=s⊣(g s) ← ⍺}
+      IL ← {⍵⌿⍨0=(g⌿⍨0=s)≢⍤∩⍤1⊢(⍵/⍨2≠s)PW⍤1⊢g⌿⍨1=s⊣(g s)←⍺}
       Filter ← {⍺ IL ⍺ OP ⍺ IP ⍺ CL ⍵}
 ```
 
