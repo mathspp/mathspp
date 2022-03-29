@@ -32,14 +32,10 @@ This problem was adapted from [here][source] and is licensed under [CC BY-SA 3.0
 
 # Solvers
 
-<!--
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
 
- - Dmitry R., USA;
- - Martin J., Czech Republic;
  - David H., Taiwan;
--->
 
 Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
