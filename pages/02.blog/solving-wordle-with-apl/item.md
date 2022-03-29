@@ -266,7 +266,7 @@ or to move those to the beginning of the words for _progressive membership_:
 
 ```APL
       PM ← {⍺∊⍥T ⍵}
-      I ← {⍺⊃¨ ⊂⍵}
+      I ← {⍺⊃¨⊂⍵}
       'chess' {p ← ⍒⍺=⍵ ⋄ ⍵ ((⍋p)I PM⍥(p I⊢)) ⍺}'caves'
 1 0 0 1 1
 ```
