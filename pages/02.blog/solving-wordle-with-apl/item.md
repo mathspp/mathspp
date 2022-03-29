@@ -167,11 +167,11 @@ This can also be reformulated tacitly:
 
 ```APL
       ⍝ secret ←→ guess
-      'chess'(2∘×⍤=)'caves'
+      'chess'(2×=)'caves'
 2 0 0 0 2
-      'chess'(2∘×⍤=)'swiss'
+      'chess'(2×=)'swiss'
 0 0 0 2 2
-      'talon'(2∘×⍤=)'fault'
+      'talon'(2×=)'fault'
 0 2 0 0 0
 ```
 
