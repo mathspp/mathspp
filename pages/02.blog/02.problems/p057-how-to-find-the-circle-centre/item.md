@@ -76,7 +76,7 @@ The final step comes from realising that we don't need 4 separate circles!
 The two bisector lines of the implied chords can be drawn with just 3 circles if we pick the points well enough!
 
 After drawing the first two auxiliary circles, pick one of the circles.
-That circle will intersect the original circle at a point that you haven't used yet.
+That circle will intersect the original circle at a point that you haven't used yet (H in the figure below).
 Use that point as the centre of the third circle, which you can draw with a radius equal to the other two auxiliary circles:
 
 ![Third circle drawn with centre equal to one of the intersections of the second auxiliary circle with the original circle.](_three_circles.png)
