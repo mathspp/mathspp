@@ -39,6 +39,7 @@ who sent me their correct solutions:
  - Shubham S., India;
  - Dan, USA;
  - Jeena K., India;
+ - Frank X., China;
 
 Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
