@@ -19,7 +19,7 @@ so I also installed 100 independent switches:
 Of course I was completely silly, so I installed the switches in a room that is far from the room with the light bulbs **and** I completely forgot which light switch controls which light bulb.
 How can I identify which switch controls which light bulb in the _least amount of trips_ possible?
 
-For example, I could a switch ON and then go verify which light bulb turned ON,
+For example, I could flip ON a switch and then go verify which light bulb turned ON,
 and I could do this for the 100 light bulbs...
 But that would take me 100 trips.
 
