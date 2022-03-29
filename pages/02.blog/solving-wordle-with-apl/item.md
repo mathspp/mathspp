@@ -564,11 +564,11 @@ By using the tagging function from before,
 implementing _progressive without_ is straightforward:
 
 ```APL
-      'swiss' ~ 'ss'
-wi
+      'aargh' ~ 'a'
+rgh
       PW ← {⊃¨⍺~⍥T ⍵}
-      'swiss' PW 'ss'
-wis
+      'aargh' PW 'a'
+argh
 ```
 
 After we remove the letters we know we need to use,
