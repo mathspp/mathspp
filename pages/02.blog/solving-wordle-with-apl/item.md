@@ -265,8 +265,8 @@ However, we need to be careful to either remove the letters that are already cor
 or to move those to the beginning of the words for _progressive membership_:
 
 ```APL
-      PM ← {((≢⍺)⍴⍋⍋⍺⍳⍺⍪⍵)∊(≢⍵)⍴⍋⍋⍺⍳⍵⍪⍺}
-      I ← ⊃¨ ∘⊂
+      PM ← {⍺∊⍥T ⍵}
+      I ← {⍺⊃¨ ⊂⍵}
       'chess' {p ← ⍒⍺=⍵ ⋄ ⍵ ((⍋p)I PM⍥(p I⊢)) ⍺}'caves'
 1 0 0 1 1
 ```
