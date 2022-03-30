@@ -40,6 +40,8 @@ who sent me their correct solutions:
  - Dan, USA;
  - Jeena K., India;
  - Frank X., Shenzhen, China;
+ - Wolfgang, Germany;
+ - Naveen K., India;
 
 Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
