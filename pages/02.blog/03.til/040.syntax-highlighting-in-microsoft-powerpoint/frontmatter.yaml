@@ -9,5 +9,5 @@ taxonomy:
     category: [blogpost, til]
     tag:
       - programming
-title: "TIL #040 – syntax highlighting on Microsoft PowerPoint"
+title: "TIL #040 – code syntax highlighting in Microsoft PowerPoint"
 visible: false
