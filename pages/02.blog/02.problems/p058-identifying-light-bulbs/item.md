@@ -43,6 +43,7 @@ who sent me their correct solutions:
  - Wolfgang, Germany;
  - Naveen K., India;
  - Pedro G., Portugal;
+ - Dylan S., USA;
 
 Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
