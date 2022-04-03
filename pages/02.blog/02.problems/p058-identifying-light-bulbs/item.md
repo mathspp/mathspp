@@ -45,6 +45,7 @@ who sent me their correct solutions:
  - Pedro G., Portugal;
  - Dylan S., USA;
  - Vladimir L., USA;
+ - Sean L., USA;
 
 Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
