@@ -14,6 +14,8 @@ taxonomy:
 title: "Full slice [:]"
 ---
 
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 This thread talks about slicing syntax and the full slice `[:]` for copying.
 
 ===
@@ -125,4 +127,6 @@ my_str[:]
 ```
 
 
-!!!! This thread was originally published [here](https://twitter.com/mathsppblog/status/1510980579340308483).
+!!!! This article was generated automatically from the [Twitter thread](https://twitter.com/mathsppblog/status/1510980579340308483) linked below:
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">Do you know about slicing in Python 🐍?<br><br>It&#39;s that thing that _looks_ like indexing but has colons : in it.<br><br>For example, `my_list[2:6]` is list slicing!<br><br>When you do list slicing, did you know `[:]` gets the whole thing?<br><br>But what&#39;s the point in that..?<br><br>I&#39;ll explain 🚀 <a href="https://t.co/FVQmjvKnrw">pic.twitter.com/FVQmjvKnrw</a></p>&mdash; Rodrigo 🐍📝 (@mathsppblog) <a href="https://twitter.com/mathsppblog/status/1510980579340308483?ref_src=twsrc%5Etfw">April 4, 2022</a></blockquote>
