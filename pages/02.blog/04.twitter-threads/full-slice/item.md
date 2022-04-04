@@ -114,7 +114,7 @@ For example, you can use `[:]` on a list if you are going to modify it and want 
 
 Did this make any sense?
 
-If you want to learn more about slicing, you can always check this Pydon't: https://mathspp.com/blog/pydonts/idiomatic-sequence-slicing
+If you want to learn more about slicing, you can always check this Pydon't: <https://mathspp.com/blog/pydonts/idiomatic-sequence-slicing>
 
 To check if you understood, I have a challenge for you 💪
 
