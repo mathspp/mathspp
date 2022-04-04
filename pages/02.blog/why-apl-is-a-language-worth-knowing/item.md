@@ -852,7 +852,7 @@ print(count)  # 2
 This gives rise to a very interesting pattern to count how many elements of a list satisfy a given predicate function `pred` (a predicate function is a function that returns a Boolean value):
 
 ```py
-count = [pred(value) for value in my_list]
+count = sum(pred(value) for value in my_list)
 ```
 
 
