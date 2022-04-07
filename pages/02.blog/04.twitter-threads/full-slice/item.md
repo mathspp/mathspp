@@ -14,8 +14,6 @@ taxonomy:
 title: "Full slice [:]"
 ---
 
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 This thread talks about slicing syntax and the full slice `[:]` for copying.
 
 ===
