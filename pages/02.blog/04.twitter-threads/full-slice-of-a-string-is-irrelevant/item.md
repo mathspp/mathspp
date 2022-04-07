@@ -1,5 +1,5 @@
 ---
-date: 07-04-2022
+date: 06-04-2022
 metadata:
     author: Rodrigo Girão Serrão
     description: "Let me tell you why it is always 100% unnecessary to use a full slice `[:]` with a string in Python."
