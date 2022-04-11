@@ -11,7 +11,7 @@ taxonomy:
     tag:
       - programming
       - python
-title: "Function composition through operator overload."
+title: "Function composition through operator overload"
 ---
 
 Let me show you how to do function composition through operator overloading, and other cool tricks!
