@@ -1,0 +1,16 @@
+date: 17-04-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "How can you swap the coloured pegs if they can only march forward?"
+    og:image: https://mathspp.com/blog/problems/marching-pegs/thumbnail.png
+    twitter:image: https://mathspp.com/blog/problems/marching-pegs/thumbnail.png
+process:
+    twig: true
+slug: marching-pegs
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - logic
+      - mathematics
+title: "Problem #059 – marching pegs"
+twig_first: true
