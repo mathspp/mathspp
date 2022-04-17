@@ -13,7 +13,7 @@ Imagine seven round slots:
 O O O O O O O
 ```
 
-In the three left slots, you have Green pegs:
+In the three left slots, you have Yellow pegs:
 
 ```txt
 Y Y Y O O O O
