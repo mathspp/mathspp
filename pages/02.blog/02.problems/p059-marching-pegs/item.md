@@ -66,6 +66,8 @@ Congratulations to the ones that solved this problem correctly and, in particula
 who sent me their correct solutions:
 
  - David H., Taiwan;
+ - Michael W., US;
+ - Zech Z., US;
 
 Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
