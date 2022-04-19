@@ -59,12 +59,10 @@ which you can play at [Icon Park's Museum of Illusions][museum-illusions].
 
 # Solvers
 
-<!--
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
 
  - David H., Taiwan;
--->
 
 Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
