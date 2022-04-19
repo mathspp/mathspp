@@ -50,6 +50,9 @@ With these restrictions, can you swap all pegs?
 That is, can you move the pegs so that all green pegs end up on the left and all yellow pegs end up on the right?
 
 !!! Give it some thought!
+!!!
+!!! You can try playing this out yourself: grab 6 coins and lay them in a straight line on a table.
+!!! 3 coins on the left with the tails face up and the other 3 coins on the right with the other face up.
 
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
