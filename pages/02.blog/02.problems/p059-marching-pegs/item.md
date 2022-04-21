@@ -69,6 +69,7 @@ who sent me their correct solutions:
  - Michael W., US;
  - Zech Z., US;
  - Michael H., US;
+ - Tanishk S., India;
 
 Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
