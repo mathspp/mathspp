@@ -3,9 +3,9 @@ This is an account of my contribution to solving issue 2073 of the Python open s
 ===
 
 
-!!! This is an account of a contribution I made to an open source library.
-!!! However, this contribution is still **ongoing**.
-!!! Watch this space for updates.
+!!!! This is an account of a contribution **I am still making** to an open source library.
+!!!! In other words, this contribution is still **ongoing**.
+!!!! Watch this space for updates.
 
 
 # Preamble
