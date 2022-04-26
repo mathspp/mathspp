@@ -1,0 +1,16 @@
+date: 26-04-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Here is how you can commit only part of a file with git."
+    og:image: https://mathspp.com/blog/til/041/thumbnail.png
+    twitter:image: https://mathspp.com/blog/til/041/thumbnail.png
+references:
+  - "“Commit only part of a file in Git”, Stack Overflow, [https://stackoverflow.com/a/1085191/2828287](https://stackoverflow.com/a/1085191/2828287) [last accessed 26-04-2022];"
+  - "Git Documentation, Interactive Staging, [https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging](https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging) [last accessed 26-04-2022];"
+slug: "041"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+title: "TIL #041 – how to commit part of a file with git"
+visible: false
