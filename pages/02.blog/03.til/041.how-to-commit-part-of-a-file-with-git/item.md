@@ -7,8 +7,8 @@ Here is how you can commit only part of a file with git.
 
 If you are using git, you are probably aware that the command `git add` takes a file name argument and then stages that file for committing.
 If you use the command option `--patch`, then you can add only some of your changes for staging.
-If you use the option `--patch` (or `-p`), git will go through all of your changes for that file and will try to split them into portions, called “hunks”.
 
+When you use the option `--patch` (or `-p`), git will go through all of your changes for that file and will try to split them into portions, called “hunks”.
 Then, git starts an interactive session where it goes through each “hunk” and asks you if you want to commit said hunk or not.
 It prompts you with this message:
 
