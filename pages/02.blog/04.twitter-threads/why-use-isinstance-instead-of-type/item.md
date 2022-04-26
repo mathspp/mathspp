@@ -34,9 +34,9 @@ Sounds reasonable!
 >>> if type(x) == int:  # Seems like a reasonable check, right?
 ...     print("'Tis an int!")
 ... else:
-...     print("It's a float.")
+...     print("'Tis a float.")
 ...
-'Tis an int!
+'Tis a float.
 ```
 
 But here's why you should use `isinstance`: “Python is a dynamically typed language.”
