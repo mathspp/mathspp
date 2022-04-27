@@ -58,8 +58,16 @@ If I run this script, here is the output I get:
 
 ![A terminal window with some beautiful coloured text on it. The text is clearly divided in four columns, although there are no explicit separators. On the leftmost column we can see timestamps. The second column contains the level of the logging, like “INFO”, “DEBUG”, or “ERROR”, in different colours. The third column contains the error messages](_example.png "Screenshot of some `rich` logging.")
 
-Your exact colours might be different, but the essence of your output will be just like mine.
-(I wrote an article on [how I set up my terminal to use a nice colour scheme][til-starship].)
+Your exact colours might be different, but the essence of your output will be just like mine
+(I wrote an article on [how I set up my terminal to use a nice colour scheme][til-starship]):
+
+ - on the left, a the timestamp of the message;
+ - colour-code level messages (these come from `logging`, but `rich` colours them);
+ - the actual log message; and
+ - the line/file where the log message came from.
+
+All of this at the distance of a copy & paste operation!
+Isn't this amazing?
 
 This is a very simple example of what you can do with `logging` + `rich`.
 You might want to check their documentations (links in the references) to learn more!
