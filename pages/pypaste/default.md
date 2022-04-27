@@ -113,7 +113,7 @@ Use the Py Paste tool to share Python code across the Internet, forever.
 
 ---
 
-The TeX Paste is licensed under the [MIT License][mit] and based on [dzaima/paste][dzaima-paste].
+The Py Paste is licensed under the [MIT License][mit] and based on [dzaima/paste][dzaima-paste].
 
 <details>
 <summary>License</summary>
