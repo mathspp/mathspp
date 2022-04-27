@@ -12,8 +12,8 @@ metadata:
 
 <div style="top:4em; left:.5em; right:.5em; bottom:0; font-size:125%; color:#101010;">
     <textarea class="mainArea" id="py_area" spellcheck="false" style="width:100%;margin:10px" rows="10"></textarea>
-    <div class="mainArea" id="genc">
-    </div>
+    <pre><code class="mainArea python" id="genc">
+    </code></pre>
 </div>
 
 <script src="https://mathspp.com/user/themes/myquark/js/pako.min.js"></script>
@@ -23,7 +23,7 @@ metadata:
 
     function editor_mode(mode) {
       EDITOR_MODE = mode;
-      tex_area.style.display = EDITOR_MODE==0? 'block' : 'none';
+      py_area.style.display = EDITOR_MODE==0? 'block' : 'none';
       genc.style.display = EDITOR_MODE==2? 'block' : 'none';
       editB.disabled = EDITOR_MODE==0;
       viewB.disabled = EDITOR_MODE==2;
@@ -33,9 +33,8 @@ metadata:
     
     
     function highlight_code() {
-        genc.innerText = py_area.value;
-        genc.style="";
-        hljs.highlightAll();
+        genc.innerHTML = py_area.value;
+        hljs.highlightBlock(genc);
     }
     
     function save_py(copyLink = false) {
@@ -87,7 +86,7 @@ metadata:
       } else editor_mode(0);
     }
     py_load_page();
-    window.onhashchange=tex_load_page;
+    window.onhashchange=py_load_page;
     
     document.addEventListener("keydown", e => {
       let code = e.code;
