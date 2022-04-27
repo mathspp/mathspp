@@ -23,7 +23,7 @@ metadata:
 
     function editor_mode(mode) {
       EDITOR_MODE = mode;
-      tex_area.style.display = EDITOR_MODE==0? 'block' : 'none';
+      py_area.style.display = EDITOR_MODE==0? 'block' : 'none';
       genc.style.display = EDITOR_MODE==2? 'block' : 'none';
       editB.disabled = EDITOR_MODE==0;
       viewB.disabled = EDITOR_MODE==2;
@@ -33,9 +33,8 @@ metadata:
     
     
     function highlight_code() {
-        genc.innerText = py_area.value;
-        genc.style="";
-        hljs.highlightAll();
+        genc.innerHTML = py_area.value;
+        hljs.highlightBlock(genc);
     }
     
     function save_py(copyLink = false) {
@@ -114,7 +113,7 @@ Use the Py Paste tool to share Python code across the Internet, forever.
 
 ---
 
-The TeX Paste is licensed under the [MIT License][mit] and based on [dzaima/paste][dzaima-paste].
+The Py Paste is licensed under the [MIT License][mit] and based on [dzaima/paste][dzaima-paste].
 
 <details>
 <summary>License</summary>
