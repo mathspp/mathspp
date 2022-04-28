@@ -107,9 +107,7 @@ Probably, you never even heard about some of them:
 This just speaks to my point.
 Strings have 47 methods, many of them with a couple arguments.
 
-Lists and dictionaries have 11 methods and sets have 17.
-
-Python (3.9) has 69 built-in functions.
+Python (3.10) has 71 built-in functions.
 Do you know all of them?
 Do you think you could _know_ all of them?
 
@@ -118,6 +116,8 @@ Programming is about building things, solving problems,
 and having memorised the names of all the functions won't help you very much...
 
 However, being vaguely aware of them, will!
+
+(Just for the fun of it, you can read my short article on [how big Python is][big-python].)
 
 
 # How to get as close to mastering Python as possible
@@ -262,7 +262,7 @@ and where there are learners, there are opportunities to teach.
 Here are a couple of examples:
 
  - [StackOverflow](https://stackoverflow.com);
- - [Reddit's /r/Python](https://reddit/r/python); and
+ - [Reddit's /r/Python](https://reddit.com/r/python); and
  - [Reddit's /r/learnpython](https://reddit.com/r/learnpython/);
 
 
@@ -287,7 +287,7 @@ Go [take a look][cpython-gh].
 ## Get acquainted with the Standard Library
 
 Again, being a programmer is all about using the right tools for the job.
-The Python Standard Library has more than 249 modules?
+Did you know the Python Standard Library has more than 249 modules?
 
 I know, because I wrote a huge Twitter thread listing them all:
 
@@ -431,6 +431,7 @@ a single Pydon't!
 [manifesto]: /blog/pydonts/pydont-manifesto
 [gumroad-pydonts]: https://gum.co/pydonts
 [pydont-repl]: /blog/pydonts/boost-your-productivity-with-the-repl
+[big-python]: /blog/twitter-threads/python-is-a-big-language
 
 [twitter-thread-psl]: https://twitter.com/mathsppblog/status/1430108219872002048
 

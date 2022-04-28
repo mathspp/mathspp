@@ -45,7 +45,7 @@ But also `compile` or `__import__`.
 
 Python 3.10 has many built-in types and they come with many methods:
 
- - floats have 7 methods and integers have 10;
+ - integers have 10 methods, floats have 7, and complex numbers have 3;
  - lists have 11 methods (and tuples have 2);
  - dictionaries also have 11 methods;
  - sets have 17 methods (but frozensets only 8);
@@ -65,7 +65,7 @@ So, learning all of this will take you some time!
 
 There is also the standard library, which is also huge!
 The Python Standard Library has almost 250 modules!
-But definitely over 200 modules! That's why they say Python has “batteries included”...
+That's why they say Python has “batteries included”...
 Those are some big batteries! 🤣
 
 
