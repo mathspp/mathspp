@@ -56,7 +56,7 @@ division(5, 0)
 
 If I run this script, here is the output I get:
 
-![A terminal window with some beautiful coloured text on it. The text is clearly divided in four columns, although there are no explicit separators. On the leftmost column we can see timestamps. The second column contains the level of the logging, like “INFO”, “DEBUG”, or “ERROR”, in different colours. The third column contains the error messages](_example.png "Screenshot of some `rich` logging.")
+![A terminal window with some beautiful coloured text on it. The text is clearly divided in four columns, although there are no explicit separators. On the leftmost column we can see timestamps. The second column contains the level of the logging, like “INFO”, “DEBUG”, or “ERROR”, in different colours. The third column contains the error messages and the fourth column contains filename/line information about where that logging comes from.](_example.png "Screenshot of some `rich` logging.")
 
 Your exact colours might be different, but the essence of your output will be just like mine
 (I wrote an article on [how I set up my terminal to use a nice colour scheme][til-starship]):
