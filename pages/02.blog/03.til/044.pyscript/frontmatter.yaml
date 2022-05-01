@@ -1,0 +1,14 @@
+date: 30-04-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned about PyScript, a tool that lets you run Python in your HTML!"
+    og:image: https://mathspp.com/blog/til/044/thumbnail.png
+    twitter:image: https://mathspp.com/blog/til/044/thumbnail.png
+slug: "044"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - python
+title: "TIL #044 – PyScript"
+visible: false
