@@ -10,5 +10,6 @@ taxonomy:
     tag:
       - programming
       - python
+      - web development
 title: "TIL #044 – PyScript"
 visible: false
