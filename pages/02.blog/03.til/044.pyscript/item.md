@@ -9,7 +9,7 @@ Today I learned about PyScript, a tool that lets you run Python in your HTML!
 import datetime
 
 output = Element("py-script-target")
-now = format(datetime.datetime.now(), "%D %M %Y")
+now = format(datetime.datetime.now(), "%H:%M, %A, %d %B %Y")
 output.write(now)
 </py-script>
 
