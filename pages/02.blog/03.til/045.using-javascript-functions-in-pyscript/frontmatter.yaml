@@ -1,0 +1,16 @@
+date: 01-05-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to use JavaScript functions in PyScript."
+    og:image: https://mathspp.com/blog/til/045/thumbnail.png
+    twitter:image: https://mathspp.com/blog/til/045/thumbnail.png
+slug: "045"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - javascript
+      - programming
+      - python
+      - web development
+title: "TIL #045 – using JavaScript functions in PyScript"
+visible: false
