@@ -38,10 +38,14 @@ I just had to write some code in the HTML of this page:
 import datetime
 
 output = Element("py-script-target")
-now = format(datetime.datetime.now(), "%D %M %Y")
+now = format(datetime.datetime.now(), "%H:%M, %A, %d %B %Y.")
 output.write(now)
 </py-script>
 ```
+
+The `output = Element("py-script-target")` assigns a `<span>` tag I have in the source of the page to the variable `output`.
+Then, I use standard Python to format the current date (`datetime.datetime.now()`) into a format I like.
+Finally, I write that string to the `<span>` element from before!
 
 I am very excited to see what people build with this tool!
 Just bear in mind that it is still in its early stages of development.
