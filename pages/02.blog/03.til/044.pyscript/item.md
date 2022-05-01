@@ -9,7 +9,7 @@ Today I learned about PyScript, a tool that lets you run Python in your HTML!
 import datetime
 
 output = Element("py-script-target")
-now = format(datetime.datetime.now(), "%H:%M, %A, %d %B %Y")
+now = format(datetime.datetime.now(), "%H:%M, %A, %d %B %Y.")
 output.write(now)
 </py-script>
 
@@ -24,9 +24,10 @@ I got so excited when I found out about this tool
 (which was presented to the world today, if I am not mistaken!)
 that I had to give it a try right away!
 
-For example, you opened this page, it loaded, and then it inserted a timestamp here:
+For example, you opened this page, it loaded, and then it inserted a timestamp here: <span id="py-script-target"></span>
 
-<p id="py-script-target"></p>
+(If the timestamp doesn't show right away, wait a couple of seconds.
+If it still doesn't show, take into account that the PyScript version I am using here has only been tested on Chrome.)
 
 This timestamp, which corresponds roughly to when the page finished loading,
 was put there by Python.
