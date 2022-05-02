@@ -276,5 +276,102 @@ Now the output looks less awkward, but the `repr` for `MR(3)` is still misaligne
 So, what would we want the output to look like in these cases?
 
 
+# Expected behaviour
+
+If you identify a bug, that's because the program you are running didn't run the way you expected...
+So, that always begs the question: what **did** you expect?
+
+Sometimes, the answer is pretty obvious.
+For example, if I am writing a calculator, I expect `2 + 2` to be `4` and nothing else.
+
+In other situations, you might be able to tell that something is off,
+but it may be difficult to actually describe how something should be.
+Thankfully, this is not one of those cases.
+
+I went back to the GitHub issue and [described my findings][gh-first-findings],
+and then I asked what type of output we were looking for.
+I reiterated the two options that had been posted in the original issue:
+
+```py
+{
+│   'foo': 'bar',
+│   'zeros': array([[0., 0., 0., 0.],
+│                   [0., 0., 0., 0.],
+│                   [0., 0., 0., 0.],
+│                   [0., 0., 0., 0.]])
+}
+{
+│   'foo': 'bar',
+│   'mr': X   | line 0
+│             | line 1
+│             | line 2
+}
+```
+
+and
+
+```py
+{
+│   'foo': 'bar',
+│   'zeros': 
+│   │   array([[0., 0., 0., 0.],
+│   │          [0., 0., 0., 0.],
+│   │          [0., 0., 0., 0.],
+│   │          [0., 0., 0., 0.]])
+}
+{
+│   'foo': 'bar',
+│   'mr': 
+│   │    X   | line 0
+│   │        | line 1
+│   │        | line 2
+}
+```
+
+The answer Will gave is, in hindsight, pretty obvious.
+Remember that the dunder method `__repr__` is supposed to give you a faithful representation of your object,
+ideally one that you could use to rebuild the object itself.
+In other words, it is good when your `__repr__` prints code that you could use to rebuild the object.
+
+So, assuming your object with a multi-line representation prints code that you can use to rebuild that same object
+(like is the case with NumPy arrays),
+we want Rich's representations to preserve that property.
+In the case of dictionaries, that means we want to go with the first option:
+
+```py
+{
+│   'foo': 'bar',
+│   'zeros': array([[0., 0., 0., 0.],
+│                   [0., 0., 0., 0.],
+│                   [0., 0., 0., 0.],
+│                   [0., 0., 0., 0.]])
+}
+```
+
+After all, going with the option where the multi-line representation object is by itself might look easier to implement,
+but isn't valid Python code.
+
+There was also a question of whether or not there should be guidelines added to the objects with multi-line representations.
+After all, right now, Rich adds guides to those objects:
+
+```py
+>>> pprint(np.zeros((4, 4)))
+array([[0., 0., 0., 0.],
+│      [0., 0., 0., 0.],
+│      [0., 0., 0., 0.],
+│      [0., 0., 0., 0.]])
+```
+
+and
+
+```py
+>>> pprint(MR(3))
+X   | line 0
+│   | line 1
+│   | line 2
+```
+
+
 [will]: https://twitter.com/willmcgugan
 [gh-2073]: https://github.com/Textualize/rich/issues/2073
+[gh-first-findings]: https://github.com/textualize/rich/issues/2073#issuecomment-1105123499

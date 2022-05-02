@@ -4,7 +4,6 @@ Today I learned how to use JavaScript functions in PyScript.
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script defer src="/user/themes/myquark/js/pyscript_alpha.min.js"></script>
-
 <py-script>
 import datetime
 
@@ -17,12 +16,11 @@ def update_timestamp(elem):
     )
 
 elem = Element("timestamp_updater")
-setInterval(
+_ = setInterval(
     to_js(lambda: update_timestamp(elem)),
     1000  # Update every 1000 ms
 )
 </py-script>
-
 
 # What is PyScript?
 
@@ -82,7 +80,7 @@ def update_timestamp(elem):
     )
 
 elem = Element("timestamp_updater")
-setInterval(
+_ = setInterval(
     to_js(lambda: update_timestamp(elem)),
     1000  # Update every 1000 ms
 )
