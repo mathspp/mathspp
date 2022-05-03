@@ -19,11 +19,11 @@ The button above has id `"btn1"` and the button below has id `"btn2"`.
 
 <div>
     <py-repl id="my-repl">
-    div_pre = Element("pre-repl")
-    div_pre.write("This is a div!")
-    div_post = Element("post-repl")
-    div_post.write("Hey!")
-    div_post.write("How you doin'?", appending=True)
+div_pre = Element("pre-repl")
+div_pre.write("This is a div!")
+div_post = Element("post-repl")
+div_post.write("Hey!")
+div_post.write("How you doin'?", appending=True)
     </py-repl>
 </div>
 
