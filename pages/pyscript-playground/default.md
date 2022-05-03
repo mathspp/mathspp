@@ -23,7 +23,7 @@ div_pre = Element("pre-repl")
 div_pre.write("This is a div!")
 div_post = Element("post-repl")
 div_post.write("Hey!")
-div_post.write("How you doin'?", appending=True)
+div_post.write("How you doin'?", append=True)
     </py-repl>
 </div>
 
