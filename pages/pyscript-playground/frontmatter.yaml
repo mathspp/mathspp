@@ -1,0 +1,10 @@
+anchors:
+    active: false
+date: 02-05-2022
+menu: PyScript Playground
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Try PyScript online."
+    og:image: https://mathspp.com/pyscript-playground/thumbnail.png
+    twitter:image: https://mathspp.com/pyscript-playground/thumbnail.png
+title: PyScript Playground
