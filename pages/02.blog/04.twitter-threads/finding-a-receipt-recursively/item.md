@@ -11,7 +11,8 @@ taxonomy:
     tag:
       - programming
       - python
-title: "Python is a big language"
+      - recursion
+title: "Finding a receipt recursively"
 ---
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
