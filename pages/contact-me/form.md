@@ -53,7 +53,6 @@ form:
                 body: "Thanks for reaching out to me, I'll get back to you ASAP! <br />Your message:<blockquote>“{{ form.value.message }}”</blockquote>"
                 to: "{{ form.value.email }}"
         display: thank-you
-        reset: true
 ---
 
 # Contact me
