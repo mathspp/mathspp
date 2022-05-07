@@ -1,0 +1,9 @@
+anchors:
+    active: false
+date: 27-04-2022
+mathjax: false
+menu: Python Pastebin
+metadata:
+    description: Use the Python Pastebin to share links to Python code that work forever. No logins.
+    author: Rodrigo Girão Serrão
+title: Python Pastebin

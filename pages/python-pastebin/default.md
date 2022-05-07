@@ -1,9 +1,11 @@
----
-metadata:
-    description: Use the Py Paste tool to share Python code across the Internet, forever.
+<link rel="stylesheet" href="/pypaste/pypaste.css">
+
 ---
 
-<link rel="stylesheet" href="/pypaste/pypaste.css">
+# Python Pastebin
+
+Use the Python Pastebin to share links to Python code that work forever. No logins.
+
 
 <button id="saveB" title="alt+s" class="button" onclick="save_py(true)"           >copy<br>link</button>
 <button id="viewB" title="alt+v" class="button" onclick="editor_mode(2)"           >view        </button>
@@ -107,13 +109,7 @@ metadata:
 
 ---
 
-# Py Paste
-
-Use the Py Paste tool to share Python code across the Internet, forever.
-
----
-
-The Py Paste is licensed under the [MIT License][mit] and based on [dzaima/paste][dzaima-paste].
+The Python Pastebin is licensed under the [MIT License][mit] and is based on [dzaima/paste][dzaima-paste].
 
 <details>
 <summary>License</summary>
