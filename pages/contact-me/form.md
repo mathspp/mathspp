@@ -42,19 +42,21 @@ form:
 
     process:
         captcha: true
-        save:
-            fileprefix: contact-
-            dateformat: Ymd-His-u
-            extension: txt
-            body: "{% include 'forms/data.txt.twig' %}"
+        timestamp: label: timestamp
         email:
-            from: "{{ config.plugins.email.from }}"
-            subject: "[Site Contact Form] {{ form.value.name|e }}"
-            body: "{% include 'forms/data.html.twig' %}"
-        message: Thank you for getting in touch!
+            -
+                reply_to: "{{ form.value.email }}"
+                from_name: "{{ form.value.name|e }}"
+                subject: "[Contact Form] {{ form.value.name|e }} {{ form.value.timestamp }}"
+                body: "{{ form.value.message }}"
+            -
+                subject: "Contact confirmation from mathspp.com"
+                body: "Thanks for reaching out to me, I'll get back to you ASAP! <br />Your message:<blockquote>“{{ form.value.message }}”</blockquote>"
+                to: "{{ form.value.email }}"
         display: thank-you
+        reset: true
 ---
 
-# Contact form
+# Contact me
 
-Reach out to me!
+Use the form below to write me a message. This goes straight to my inbox 📩
