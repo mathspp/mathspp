@@ -48,9 +48,15 @@ form:
             extension: txt
             body: "{% include 'forms/data.txt.twig' %}"
         email:
-            from: "{{ config.plugins.email.from }}"
-            subject: "[Site Contact Form] {{ form.value.name|e }}"
-            body: "{% include 'forms/data.html.twig' %}"
+            -
+                reply_to: "{{ form.value.email }}"
+                from_name: "{{ form.value.name|e }}"
+                subject: "[Site Contact Form] {{ form.value.name|e }}"
+                body: "{{ form.value.message }}"
+            -
+                subject: "mathspp contact confirmation"
+                body: "{{ form.value.message }}"
+                to: "{{ form.value.email }}"
         message: Thank you for getting in touch!
         display: thank-you
 ---
