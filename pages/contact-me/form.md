@@ -42,12 +42,11 @@ form:
 
     process:
         captcha: true
-        timestamp: label: timestamp
         email:
             -
                 reply_to: "{{ form.value.email }}"
                 from_name: "{{ form.value.name|e }}"
-                subject: "[Contact Form] {{ form.value.name|e }} {{ form.value.timestamp }}"
+                subject: "[Contact Form] {{ form.value.name|e }}"
                 body: "{{ form.value.message }}"
             -
                 subject: "Contact confirmation from mathspp.com"
