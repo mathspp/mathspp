@@ -20,9 +20,18 @@ form:
           validate:
             required: true
 
+        subject:
+          default: Reaching out
+          label: Subject
+          placeholder: Contact subject
+          type: text
+          validate:
+            required: true
+
         message:
           label: Message
           placeholder: Enter your message
+          rows: 5
           type: textarea
           validate:
             required: true
