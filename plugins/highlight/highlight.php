@@ -45,7 +45,7 @@ class HighlightPlugin extends Plugin
      */
     public function onTwigSiteVariables()
     {
-        $init = "hljs.initHighlightingOnLoad();\n";
+        $init = "hljs.highlightAll();\n";
         if ($this->config->get('plugins.highlight.lines')) {
             $init .= "hljs.initLineNumbersOnLoad();\n";
         }
