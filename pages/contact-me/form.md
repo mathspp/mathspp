@@ -47,22 +47,12 @@ form:
             -
                 reply_to: "{{ form.value.email }}"
                 from_name: "{{ form.value.name|e }}"
-<<<<<<< HEAD
                 subject: "[Contact Form] {{ form.value.name|e }} {{ form.value.timestamp }}"
                 body: "{{ form.value.message }}"
             -
                 subject: "Contact confirmation from mathspp.com"
                 body: "Thanks for reaching out to me, I'll get back to you ASAP! <br />Your message:<blockquote>“{{ form.value.message }}”</blockquote>"
                 to: "{{ form.value.email }}"
-=======
-                subject: "[Site Contact Form] {{ form.value.name|e }}"
-                body: "{{ form.value.message }}"
-            -
-                subject: "mathspp contact confirmation"
-                body: "{{ form.value.message }}"
-                to: "{{ form.value.email }}"
-        message: Thank you for getting in touch!
->>>>>>> 7c004ef10a650c1417467a74a2ffe435f66e957c
         display: thank-you
         reset: true
 ---
