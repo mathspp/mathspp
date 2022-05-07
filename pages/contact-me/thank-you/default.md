@@ -5,6 +5,7 @@ process:
     twig: true
 ---
 
-## Email sent!
+## Email sent! 📨
 
-!!! Thanks for reaching out! I'll get back to you soon 😃
+!!!! Thanks for reaching out to me! I'll get back to you as soon as possible.
+!!!! You should have received an email confirming your contact.
