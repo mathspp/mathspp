@@ -33,7 +33,7 @@ Use the Python Pastebin to share links to Python code that work forever. No logi
     
     
     function highlight_code() {
-        genc.innerHTML = py_area.value;
+        genc.innerText = py_area.value;
         hljs.highlightBlock(genc);
     }
     
