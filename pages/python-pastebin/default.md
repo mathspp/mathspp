@@ -1,7 +1,5 @@
 <link rel="stylesheet" href="/pypaste/pypaste.css">
 
----
-
 # Python Pastebin
 
 Use the Python Pastebin to share links to Python code that work forever. No logins.
