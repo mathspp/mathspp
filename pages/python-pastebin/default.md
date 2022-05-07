@@ -4,16 +4,6 @@
 
 Use the Python Pastebin to share links to Python code that work forever. No logins.
 
-<details>
-<summary>Keyboard shortcuts</summary>
-<ul>
- <li><kbd>Alt</kbd> + <kbd>L</kbd>: copies the link to the code</li>
- <li><kbd>Alt</kbd> + <kbd>H</kbd>: highlight the code</li>
- <li><kbd>Alt</kbd> + <kbd>E</kbd>: edit the code</li>
- <li><kbd>Alt</kbd> + <kbd>C</kbd>: copy the code</li>
-</ul>
-</details>
-
 
 <button id="saveB" title="Alt + L" class="button" onclick="save_py(true)"           >Copy<br>link</button>
 <button id="viewB" title="Alt + H" class="button" onclick="editor_mode(2)"           >Highlight   </button>
@@ -116,6 +106,16 @@ Use the Python Pastebin to share links to Python code that work forever. No logi
   </script>
 
 <br />
+
+<details>
+<summary>Keyboard shortcuts</summary>
+<ul>
+ <li><kbd>Alt</kbd> + <kbd>L</kbd>: copies the link to the code</li>
+ <li><kbd>Alt</kbd> + <kbd>H</kbd>: highlight the code</li>
+ <li><kbd>Alt</kbd> + <kbd>E</kbd>: edit the code</li>
+ <li><kbd>Alt</kbd> + <kbd>C</kbd>: copy the code</li>
+</ul>
+</details>
 
 ---
 
