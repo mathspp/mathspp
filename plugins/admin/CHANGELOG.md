@@ -1,7 +1,45 @@
+# v1.10.33.1
+## 04/25/2022
+
+1. [](#bugfix)
+   * Reverted [PR#2265](https://github.com/getgrav/grav-plugin-admin/pull/2265) as it broke sections output.
+
+# v1.10.33
+## 04/25/2022
+
+1. [](#new)
+  * Require **Form 6.0.1**
+2. [](#improved)
+   * Added support for a single `field:` vs `fields:` in element form field to store a single value to the option field
+   * Allow new media collapser logic to configure different cookie storage name location via `data-storage-location`
+1. [](#bugfix)
+   * Fixed nested element form fields
+   * Fixed `columns` and `column` fields with `.dotted` variables inside to ignore columns and column names
+   * Fixed initial elements state not being restored
+
+# v1.10.32
+## 03/28/2022
+
+1. [](#new)
+   * Require **Grav 1.7.32**, **Form 6.0.0**, **Login 3.7.0**, **Email 3.1.6** and **Flex Objects 1.2.0**
+2. [](#improved)
+   * List field: Support for default values other than key/value [#2255](https://github.com/getgrav/grav-plugin-admin/issues/2255)
+   * Added question icon to admin fields with help text [#2261](https://github.com/getgrav/grav-plugin-admin/issues/2261)
+3. [](#bugfix)
+   * Fix nested `toggleable`: originalValue now checks with `??` instead of `is defined`
+
+# v1.10.31
+## 03/14/2022
+
+1. [](#new)
+   * Added new local Multiavatar (local generation). **This will be default in Grav 1.8**
+2. [](#bugfix)
+   * Patch `collection.js` [#2235](https://github.com/getgrav/grav-plugin-admin/issues/2235)
+
 # v1.10.30.2
 ## 02/09/2022
 
-1. [](#bugfix)
+2. [](#bugfix)
    * Fixed regression preventing new `elements` field from saving its state
 
 # v1.10.30.1
