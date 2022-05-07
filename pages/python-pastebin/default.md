@@ -33,7 +33,8 @@ Use the Python Pastebin to share links to Python code that work forever. No logi
     
     
     function highlight_code() {
-        genc.innerText = py_area.value;
+        var text = document.createTextNode(py_area.value)
+        genc.childNodes = [text];
         hljs.highlightBlock(genc);
     }
     
