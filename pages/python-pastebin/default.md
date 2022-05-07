@@ -34,6 +34,7 @@ Use the Python Pastebin to share links to Python code that work forever. No logi
     
     function highlight_code() {
         var text = document.createTextNode(py_area.value)
+        while (genc.firstChild) { genc.removeChild(genc.firstChild); }
         genc.appendChild(text);
         hljs.highlightElement(genc);
     }
