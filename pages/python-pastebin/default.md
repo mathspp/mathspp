@@ -34,8 +34,8 @@ Use the Python Pastebin to share links to Python code that work forever. No logi
     
     function highlight_code() {
         var text = document.createTextNode(py_area.value)
-        genc.childNodes = [text];
-        hljs.highlightBlock(genc);
+        genc.appendChild(text);
+        hljs.highlightElement(genc);
     }
     
     function save_py(copyLink = false) {
