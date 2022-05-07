@@ -43,15 +43,21 @@ form:
     process:
         captcha: true
         email:
-            -
-                reply_to: "{{ form.value.email }}"
-                from_name: "{{ form.value.name|e }}"
-                subject: "[Contact Form] {{ form.value.name|e }}"
-                body: "{{ form.value.message }}"
-            -
-                subject: "Contact confirmation from mathspp.com"
-                body: "Thanks for reaching out to me, I'll get back to you ASAP! <br />Your message:<blockquote>“{{ form.value.message }}”</blockquote>"
-                to: "{{ form.value.email }}"
+          -
+            reply_to: "{{ form.value.email }}"
+            from_name: "{{ form.value.name|e }}"
+            subject: "[Contact Form] {{ form.value.name|e }}"
+            body: "{{ form.value.message }}"
+          -
+            subject: "Contact confirmation from mathspp.com"
+            to: "{{ form.value.email }}"
+            body:
+              -
+                content_type: "text/html"
+                body: "Thanks for reaching out to me, I'll get back to you ASAP! <br />Your message:<blockquote>“{{ form.value.message }}”</blockquote><br />It is safe to delete this confirmation email. Thanks!"
+              -
+                content_type: "text/plain"
+                body: "Thanks for reaching out to me, I'll get back to you ASAP!\n\nYour message: “{{ form.value.message }}”\nIt is safe to delete this confirmation email. Thanks!"
         display: thank-you
 ---
 
