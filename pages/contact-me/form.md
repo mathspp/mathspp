@@ -55,10 +55,10 @@ form:
           -
             reply_to: "{{ form.value.email }}"
             from_name: "{{ form.value.name|e }}"
-            subject: "[Contact Form] {{ form.value.name|e }}"
+            subject: "{{ form.value.subject }}"
             body: "{{ form.value.message }}"
           -
-            subject: "Contact confirmation from mathspp.com"
+            subject: "Contact confirmation from mathspp.com ({{ form.value.subject }})"
             to: "{{ form.value.email }}"
             body:
               -
