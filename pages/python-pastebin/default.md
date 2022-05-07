@@ -4,11 +4,19 @@
 
 Use the Python Pastebin to share links to Python code that work forever. No logins.
 
+<details>
+<summary>Keyboard shortcuts</summary>
+ - <kbd>Alt</kbd> + <kbd>L</kbd>: copies the link to the code
+ - <kbd>Alt</kbd> + <kbd>H</kbd>: highlight the code
+ - <kbd>Alt</kbd> + <kbd>E</kbd>: edit the code
+ - <kbd>Alt</kbd> + <kbd>C</kbd>: copy the code
+</details>
 
-<button id="saveB" title="alt+s" class="button" onclick="save_py(true)"           >copy<br>link</button>
-<button id="viewB" title="alt+v" class="button" onclick="editor_mode(2)"           >view        </button>
-<button id="editB" title="alt+e" class="button" onclick="editor_mode(0)"           >edit        </button>
-<button id="copyB" title="alt+c" class="button" onclick="copy_link(py_area.value)">copy<br>code</button>
+
+<button id="saveB" title="Alt + L" class="button" onclick="save_py(true)"           >Copy<br>link</button>
+<button id="viewB" title="Alt + H" class="button" onclick="editor_mode(2)"           >Highlight   </button>
+<button id="editB" title="Alt + E" class="button" onclick="editor_mode(0)"           >Edit        </button>
+<button id="copyB" title="Alt + C" class="button" onclick="copy_link(py_area.value)">Copy<br>code</button>
 
 <div style="top:4em; left:.5em; right:.5em; bottom:0; font-size:125%; color:#101010;">
     <textarea class="mainArea" id="py_area" spellcheck="false" style="width:100%;margin:10px" rows="10"></textarea>
@@ -95,9 +103,9 @@ Use the Python Pastebin to share links to Python code that work forever. No logi
       let ctrl = e.ctrlKey;
       let alt = e.altKey;
       if (alt) {
-        if (code == 'KeyS') { saveB.click(); e.preventDefault(); viewB.click(); }
+        if (code == 'KeyL') { saveB.click(); e.preventDefault(); viewB.click(); }
         if (code == 'KeyE') { editB.click(); e.preventDefault(); py_area.focus(); }
-        if (code == 'KeyV') { viewB.click(); e.preventDefault(); }
+        if (code == 'KeyH') { viewB.click(); e.preventDefault(); }
         if (code == 'KeyC') { copyB.click(); e.preventDefault(); }
       }
       if (ctrl && code == 'KeyR') save_py(false);
