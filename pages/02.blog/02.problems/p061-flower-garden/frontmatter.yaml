@@ -1,0 +1,17 @@
+date: 22-05-2022
+publish_date: 22-05-2022 13:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Three mathematicians discuss a beautiful flower garden and the coloured flowers within."
+    og:image: https://mathspp.com/blog/problems/flower-garden/thumbnail.png
+    twitter:image: https://mathspp.com/blog/problems/flower-garden/thumbnail.png
+process:
+    twig: true
+slug: flower-garden
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - logic
+      - mathematics
+title: "Problem #061 – flower garden"
+twig_first: true
