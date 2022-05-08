@@ -96,37 +96,37 @@ But first, let me show you a video shared on Twitter where one of you solved thi
 For your convenience, here is the sequence of steps taken in the video:
 
 ```txt
-Y Y Y O G G G
+Y Y Y O G G G  <- starting position
 
-Y Y O Y G G G
+Y Y O Y G G G  <- Y moves right
 
-Y Y G Y O G G
+Y Y G Y O G G  <- G hops over
 
-Y Y G Y G O G
+Y Y G Y G O G  <- G moves left
 
-Y Y G O G Y G
+Y Y G O G Y G  <- Y hops over
 
-Y O G Y G Y G
+Y O G Y G Y G  <- Y hops over
 
-O Y G Y G Y G
+O Y G Y G Y G  <- Y moves right
 
-G Y O Y G Y G
+G Y O Y G Y G  <- G hops over
 
-G Y G Y O Y G
+G Y G Y O Y G  <- G hops over
 
-G Y G Y G Y O
+G Y G Y G Y O  <- G hops over
 
-G Y G Y G O Y
+G Y G Y G O Y  <- Y moves right
 
-G Y G O G Y Y
+G Y G O G Y Y  <- Y hops over
 
-G O G Y G Y Y
+G O G Y G Y Y  <- Y hops over
 
-G G O Y G Y Y
+G G O Y G Y Y  <- G moves left
 
-G G G Y O Y Y
+G G G Y O Y Y  <- G hops over
 
-G G G O Y Y Y
+G G G O Y Y Y  <- Y moves right
 ```
 
 And that's it!
