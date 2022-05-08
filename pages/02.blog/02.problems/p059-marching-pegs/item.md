@@ -2,6 +2,9 @@ How can you swap the coloured pegs if they can only march forward?
 
 ===
 
+ <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+
 ![](thumbnail.png "Photo of the game that inspired this post.")
 
 
@@ -77,8 +80,56 @@ Join the list of solvers by [emailing me][email] your solution!
 
 # Solution
 
-I'll post the solution here once this problem has been live for 2 weeks,
-which will be in early May.
+To solve this problem, my best suggestion is to go one move at a time,
+and to try and think ahead 2 or 3 moves each time you are about to do something.
+You don't need to look ahead too much to be able to tell if a move is a bad idea or not.
+
+With that said, that can be easier for some and harder for others!
+
+I will share one possible solution below.
+Each line represents the positions of the pegs after one single move.
+But first, let me show you a video shared on Twitter where one of you solved this problem with candy:
+
+<blockquote class="twitter-tweet" data-conversation="none" data-theme="dark"><p lang="en" dir="ltr">G1 forward, Y1 hop, Y2 forward, G1 hop, G2 hop, G3 forward, Y1 hop, Y2 hop, Y3 hop, G1 forward, G2 hop, G3 hop, Y2 forward, Y3 hop, G3 forward, done.<br><br>And here it is with KitKats and Reeses lol <a href="https://t.co/eGAi3QQuMx">pic.twitter.com/eGAi3QQuMx</a></p>&mdash; Zech (@ZechCodes) <a href="https://twitter.com/ZechCodes/status/1516486703720144911?ref_src=twsrc%5Etfw">April 19, 2022</a></blockquote>
+
+
+For your convenience, here is the sequence of steps taken in the video:
+
+```txt
+Y Y Y O G G G
+
+Y Y O Y G G G
+
+Y Y G Y O G G
+
+Y Y G Y G O G
+
+Y Y G O G Y G
+
+Y O G Y G Y G
+
+O Y G Y G Y G
+
+G Y O Y G Y G
+
+G Y G Y O Y G
+
+G Y G Y G Y O
+
+G Y G Y G O Y
+
+G Y G O G Y Y
+
+G O G Y G Y Y
+
+G G O Y G Y Y
+
+G G G Y O Y Y
+
+G G G O Y Y Y
+```
+
+And that's it!
 
 
 [Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly
