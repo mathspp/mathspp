@@ -1,0 +1,16 @@
+date: 08-05-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Two realtors discuss who's netting the award for most commissions, but it isn't clear who the winner is..."
+    og:image: https://mathspp.com/blog/problems/realtor-commissions/thumbnail.png
+    twitter:image: https://mathspp.com/blog/problems/realtor-commissions/thumbnail.png
+process:
+    twig: true
+slug: realtor-commissions
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - logic
+      - mathematics
+title: "Problem #060 – realtor commissions"
+twig_first: true
