@@ -602,7 +602,8 @@ and a tuple with a couple of multi-line `repr` objects in the middle.
 
 Printing the strings we are comparing against, we see this:
 
-```py
+```pycon
+>>> print("{\n    73: None,\n    True: X v\n            ^\n}")
 {
     73: None,
     True: X v
