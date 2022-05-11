@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/pypaste/pypaste.css">
+<link rel="stylesheet" href="/python-pastebin/pypaste.css">
 
 # Python Pastebin
 
