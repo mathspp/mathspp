@@ -630,6 +630,46 @@ Printing the strings we are comparing against, we see this:
 )
 ```
 
+Finally, we create a test for nested containers:
+
+```py
+def test_multiline_repr_nested():
+    """Test multi-line representations in nested containers."""
+
+    test_container = (
+        L2(),
+        {
+            73: Stair(),
+            "oi": False,
+            None: [
+                L2(),
+                L2(),
+            ],
+        },
+    )
+    result = pretty_repr(test_container)
+    expected = """
+(
+    X v
+      ^,
+    {
+        73: A
+             B
+              C
+               D,
+        'oi': False,
+        None: [
+            X v
+              ^,
+            X v
+              ^
+        ]
+    }
+)
+""".strip()
+    assert result == expected
+```
+
 We have some tests set up.
 Now, we can run them:
 
@@ -648,9 +688,595 @@ First, I want to discover where those vertical guidelines get added.
 
 Now, we can either do that, or we can start fixing `pretty_repr` to return the appropriate pretty representations.
 
-I'll tackle that soon!
+
+# Tracing through the code
+
+Having written some tests that `pretty_repr` is supposed to pass,
+now I need to go and find how the function `pretty_repr` works.
+
+First, I open the file `pretty.py` and do a search for “`pretty_repr`”.
+I get a couple of hits, and easily find the definition,
+which is really short:
+
+```py
+def pretty_repr(...) -> str:
+    """Prettify repr string by expanding on to new lines to fit within a given width.
+    ...
+    """
+
+    if _safe_isinstance(_object, Node):
+        node = _object
+    else:
+        node = traverse(
+            _object, max_length=max_length, max_string=max_string, max_depth=max_depth
+        )
+    repr_str: str = node.render(
+        max_width=max_width, indent_size=indent_size, expand_all=expand_all
+    )
+    return repr_str
+```
+
+Even not being aware of what `_safe_isinstance` or `traverse` are supposed to do,
+we can see that the second to last line defines a variable `repr_str` that is then returned from the function.
+Therefore, the line `repr_str: str = node.render(...)` seems to be the line responsible for creating the string `repr`.
+Thus, we need to dive into `node.render`.
+
+From what can be seen a couple of lines above,
+it seems like the variable `node` is of type `Node`,
+so then I look for the definition of `Node` and check its method `render`:
+
+```py
+@dataclass
+class Node:
+    # ...
+    def render(self, ...) -> str:
+        """Render the node to a pretty repr.
+        ...
+        """
+        lines = [_Line(node=self, is_root=True)]
+        line_no = 0
+        while line_no < len(lines):
+            line = lines[line_no]
+            if line.expandable and not line.expanded:
+                if expand_all or not line.check_length(max_width):
+                    lines[line_no : line_no + 1] = line.expand(indent_size)
+            line_no += 1
+
+        repr_str = "\n".join(str(line) for line in lines)
+        return repr_str
+```
+
+Again, it's not a very long definition and it is surprisingly easy to read,
+even for someone who doesn't really know what's happening.
+
+By reading the code a couple of times in a row, you get to understand a bit more each time you read:
+
+ 1. First, there is a list called `lines` that is initialised with a single instance of `_Line`, whatever that is.
+ Then, there is a `while` loop that seems to fiddle with that list,
+ and in the end we build `repr_str` by doing a `"\n".join(...)` on what's inside the list `lines`.
+
+So, it seems like the list `lines` will be holding the lines that we want to print out in the pretty representation.
+
+ 2. Next, we see that the `while` loop is controlled by a variable `line_no` that is checked against the length of `lines`.
+ Also, the first statement of the `while` loop is the assignment `line = lines[line_no]`.
+ This really makes it clear that the list `lines` is going to grow in size during the loop,
+ otherwise the final `"\n".join()` wouldn't be very interesting.
+
+ 3. Afterwards, you see two consecutive conditional statements.
+ They all pair nicely with what is being done to the variable `line`:
+
+```py
+# ...
+if line.expandable and not line.expanded:
+    if expand_all or not line.check_length(max_width):
+        ... = line.expand(indent_size)
+```
+
+Inside the two `if` statements, we do a `line.expand`, whatever “expand” means...
+But recall that we are building a string representation of a potentially complex object.
+This initial line feels like it may be just a very condensed representation of such an object,
+and we would like to see if we can use some more space (some more lines) to print more information about the object.
+This conjecture is supported by the fact that we check if:
+
+ - the line can be expanded into something more useful (`line.expandable`); and
+ - the line hasn't been expanded already (`and not line.expanded`).
+
+Then, we check if:
+
+ - we specified that everything should be expanded (`if expand_all`); or
+ - if the current line is too long for what was specified (`not line.check_length(max_width)`).
+
+If the two conditional statements pass,
+then we call `.expand` on the current line and assign it to the current list of lines:
+
+```py
+lines[line_no : line_no + 1] = line.expand(indent_size)
+```
+
+The expression `lines[i : i + 1]` returns a (slice) list that only contains the current line being looked at.
+When we assign to it, we get to replace that single line with a larger list of lines.
+Here is an example with integers:
+
+```py
+>>> l = [1, 0, 5]
+>>> l[1:2]
+[0]
+>>> l[1:2] = [2, 3, 4]
+>>> l
+[1, 2, 3, 4, 5]
+```
+
+Now, we need to understand what the method `expand` does on objects of the type `_Line`.
+Reading the docstring for the method `_Line.expand`, we find this:
+
+ > “Expand this line by adding children on their own line.”
+
+What I understand by this is that if I have something like a dictionary in a single line,
+the method `.expand` is likely to take my key, value pairs and put them on their own lines.
+From what I can gather, the class `_Line` is representing the new line in which the output of a single node (and its children) goes,
+so maybe this isn't where I want the modifications to go.
+
+By the end of the method `Node.render`, we have these two final lines:
+
+```py
+repr_str = "\n".join(str(line) for line in lines)
+return repr_str
+```
+
+The way I read this is:
+
+ > “Convert all instances of `_Line` to actual strings, join them by newlines, and return that.”
+
+So, it might be that I need to change the way instances of `_Line` are converted to strings.
+
+Next up? Messing with the code.
 
 
+# Messing with the code
+
+The first thing I did was to go to the end of the code,
+where you can find the conditional statement `if __name__ == "__main__":`,
+and replace the code underneath.
+
+I got rid of all of it, and wrote this instead:
+
+```py
+if __name__ == "__main__":
+
+    class Stair():
+        def __repr__(self):
+            return "A\n B\n  C\n   D"
+
+    s = Stair()
+    d = {73: 42, "carlota": s}
+    f = {True: False, 0: d}
+    print(pretty_repr(s))
+    print(pretty_repr(d))
+    print(pretty_repr(f))
+```
+
+! If you are unsure about what `if __name__ == "__main__":` does,
+! [I wrote about the dunder attribute `__name__` and the behaviour of `if __name__ == "__main__":`][pydont-main] in a previous article.
+
+By replacing the code under `if __name__ == "__main__":` I can run the command
+
+```bash
+python -m rich.pretty
+```
+
+to play around with my changes quickly.
+
+
+## Indentation
+
+Let's see if we can fix the indentation of the successive lines,
+and we'll handle whatever issues pop up along the way.
+
+The first thing I tried to do was, inside `_Line.__str__`,
+check if the instance contained a node that had a multiline string representation:
+
+```py
+def __str__(self) -> str:
+    if "\n" in str(self.node):
+        print(f"Found something {self.node = }")
+    if self.last:
+        return f"{self.whitespace}{self.text}{self.node or ''}"
+    else:
+        return (
+            f"{self.whitespace}{self.text}{self.node or ''}{self.suffix.rstrip()}"
+        )
+```
+
+Running the module (with `python -m rich.pretty`),
+I got some output that showed that I “found something”, once for each example I wrote down.
+That means that, at this point, I can know if an instance of `_Line` will span multiple lines
+because it contains the character `"\n"`.
+
+Then, I thought that if I can know that a node will span over multiple lines,
+I can try to fix the indentation issue at this point.
+These thoughts were also motivated by the fact that the method `_Line.__str__` makes use of attributes like `self.whitespace` and `self.suffix`,
+which seem to be things that can go before/after the actual node representation.
+So, if I want to fix the indentation issue, I will have to split the multiline node and add enough indentation before each line that is not the first one.
+This was my attempt:
+
+```py
+def __str__(self) -> str:
+    node_str = str(self.node or "")
+    if "\n" in node_str:
+        print(f"Found something {self.node = }")
+        spaces = len(self.whitespace) + len(self.text)
+        node_str = ("\n" + " " * spaces).join(node_str.split("\n"))
+    if self.last:
+        return f"{self.whitespace}{self.text}{node_str}"
+    else:
+        return (
+            f"{self.whitespace}{self.text}{node_str}{self.suffix.rstrip()}"
+        )
+```
+
+By first converting the node to a string with `str(self.node or "")`,
+I handle the general case together with the case when `self.node` is `None`.
+Then, I count the length of `self.whitespace` and `self.text` because that is likely to be the length of the extra indentation I need.
+I'm assuming this because the method `_Line.__str__` currently puts `self.whitespace` and `self.text` behind the node.
+So, if the node spans over multiple lines, the first line is indentend by the length of `self.whitespace` and `self.text`,
+whereas the other lines currently are not.
+We can fix this.
+
+By splitting the string representation of the node over the character newline `"\n"` and then joining with a newline _and_ as many indentation spaces as needed,
+we achieve the net effect of indenting all lines except the first one.
+The first line is indented naturally in the f-string that was already there.
+
+Let's run the code and see if we get any indentation!
+But we don't...
+
+I scratched my head for a bit and then conjectured that nothing was happening because the dictionaries were not being expanded.
+To test this conjecture, I simply added `expand_all=True` to one of the calls to `pretty_repr`:
+
+```py
+print(pretty_repr(d, expand_all=True))
+```
+
+With the boolean flag `expand_all=True`,
+we got an output that was slightly more interesting:
+
+```txt
+{
+    73: 42,
+    'carlota': A
+     B
+      C
+       D
+}
+```
+
+Hooray 🎉!
+Progress!
+
+But we can see that the indentation isn't being correctly calculated yet.
+In this case, we also have to account for the length we need to represent the key:
+
+```py
+def __str__(self) -> str:
+    node_str = str(self.node or "")
+    if "\n" in node_str:
+        print(f"Found something {self.node = }")
+        spaces = len(self.whitespace) + len(self.text) + len(self.node.key_repr)
+        # ...
+```
+
+But then, MyPy complains that `self.node` might be `None`,
+and thus may not have the attribute `self.node.key_repr`.
+Fair.
+However, if we are inside the branch `if "\n" in node_str`,
+we are 100% sure that `self.node` was not `None`,
+so we can safely assert that `self.node is not None` and MyPy will stop complaining:
+
+```py
+def __str__(self) -> str:
+    node_str = str(self.node or "")
+    if "\n" in node_str:
+        assert self.node is not None
+        print(f"Found something {self.node = }")
+        spaces = len(self.whitespace) + len(self.text) + len(self.node.key_repr)
+```
+
+Running the corrected version, we get the wrong output again:
+
+```py
+{
+    73: 42,
+    'carlota': A
+              B
+               C
+                D
+}
+```
+
+We missed by less, but it's still wrong.
+The issue was a silly oversight:
+if there is a key,
+there is also the `": "` that we have to account for.
+
+Looking at the definition of the class `Node`,
+we see a series of attributes that we may or may not need to account for:
+
+```py
+@dataclass
+class Node:
+    """A node in a repr tree. May be atomic or a container."""
+
+    key_repr: str = ""
+    value_repr: str = ""
+    open_brace: str = ""
+    close_brace: str = ""
+    empty: str = ""
+    last: bool = False
+    is_tuple: bool = False
+    is_namedtuple: bool = False
+    children: Optional[List["Node"]] = None
+    key_separator = ": "
+    separator: str = ", "
+
+    # ...
+```
+
+After taking a look at these attributes and checking both `Node.__str__` and `Node.iter_tokens`
+(on which `Node.__str__` relies heavily),
+I concluded that I only need to worry about `self.key_repr` and `self.key_separator`.
+(But I might be wrong!)
+
+Thus, I ended up modifying `_Line.__str__` again,
+and it ended up looking like this:
+
+```py
+def __str__(self) -> str:
+    node_str = str(self.node or "")
+    if "\n" in node_str:
+        assert self.node is not None
+        print(f"Found something {self.node = }")
+        spaces = len(self.whitespace) + len(self.text)
+        if self.node.key_repr:
+            spaces += len(self.node.key_repr) + len(self.node.key_separator)
+        node_str = ("\n" + " " * spaces).join(node_str.split("\n"))
+    if self.last:
+        return f"{self.whitespace}{self.text}{node_str}"
+    else:
+        return (
+            f"{self.whitespace}{self.text}{node_str}{self.suffix.rstrip()}"
+        )
+```
+
+If we run the code again,
+we get the correct output:
+
+```py
+{
+    73: 42,
+    'carlota': A
+                B
+                 C
+                  D
+}
+```
+
+
+## Automatic expansion
+
+It seems like the indentation is fixed,
+but I only got the indentation right because I forced `pretty_repr` to expand everything.
+The next step needs to address one of the things I said I wanted:
+
+ > “Containers that contain objects with multi-line representations should automatically display one element per line.”
+
+This probably means I need to change the method `Node.render`,
+because it's where we could find references to “expansion” and “expanding things”.
+Here is the current method:
+
+```py
+def render(
+    self, max_width: int = 80, indent_size: int = 4, expand_all: bool = False
+) -> str:
+    """Render the node to a pretty repr.
+    # ...
+    """
+    lines = [_Line(node=self, is_root=True)]
+    line_no = 0
+    while line_no < len(lines):
+        line = lines[line_no]
+        if line.expandable and not line.expanded:
+            if expand_all or not line.check_length(max_width):
+                lines[line_no : line_no + 1] = line.expand(indent_size)
+        line_no += 1
+
+    repr_str = "\n".join(str(line) for line in lines)
+    return repr_str
+```
+
+It feels like the appropriate place to ensure that things get expanded is the second `if` statement.
+The first one checks if the line can be expanded and if it hasn't been expanded yet.
+_Then_, we check if we have to `expand_all` (which I manually set to `True` previously)
+or if the current line doesn't fit within the maximum width `max_width` set.
+
+Much like we have a method `_Line.check_length` to make sure that the given length fits the maximum width,
+it feels like I could add a method `_Line.check_multiline` that checks if the instance of `_Line` has a representation that spans multiple lines.
+
+Let's add that next to `_Line.check_length`,
+because it was `_Line.check_length` that informed my implementation of `_Line.check_multiline`:
+
+```py
+    def check_length(self, max_length: int) -> bool:
+        """Check this line fits within a given number of cells."""
+        start_length = (
+            len(self.whitespace) + cell_len(self.text) + cell_len(self.suffix)
+        )
+        assert self.node is not None
+        return self.node.check_length(start_length, max_length)
+
+    def check_multiline(self) -> bool:
+        """Check if the line actually contains multiline text."""
+        assert self.node is not None
+        return "\n" in self.text or self.node.check_multiline()
+```
+
+Now, obviously I have to implement the method `Node.check_multiline`,
+but there is also a method `Node.check_length` that can inform my implementation:
+
+```py
+def check_length(self, start_length: int, max_length: int) -> bool:
+    """Check the length fits within a limit.
+
+    Args:
+        start_length (int): Starting length of the line (indent, prefix, suffix).
+        max_length (int): Maximum length.
+
+    Returns:
+        bool: True if the node can be rendered within max length, otherwise False.
+    """
+    total_length = start_length
+    for token in self.iter_tokens():
+        total_length += cell_len(token)
+        if total_length > max_length:
+            return False
+    return True
+
+def check_multiline(self) -> bool:
+    """Check if the node spans multiple lines.
+
+    Returns:
+        bool: True if the node spans two or more lines, otherwise False.
+    """
+    return any("\n" in token for token in self.iter_tokens())
+```
+
+After implementing these checks, we need to add them to the method `Node.render`:
+
+```py
+    def render(
+        self, max_width: int = 80, indent_size: int = 4, expand_all: bool = False
+    ) -> str:
+        """Render the node to a pretty repr.
+        # ...
+        """
+        lines = [_Line(node=self, is_root=True)]
+        line_no = 0
+        while line_no < len(lines):
+            line = lines[line_no]
+            if line.expandable and not line.expanded:
+                if (
+                    expand_all
+                    or not line.check_length(max_width)
+                    or line.check_multiline()
+                ):
+                    lines[line_no : line_no + 1] = line.expand(indent_size)
+            line_no += 1
+
+        repr_str = "\n".join(str(line) for line in lines)
+        return repr_str
+```
+
+After deleting the statement `print` and running the code,
+we get some good looking output:
+
+```py
+A
+ B
+  C
+   D
+{
+    73: 42,
+    'carlota': A
+                B
+                 C
+                  D
+}
+{
+    True: False,
+    0: {
+        73: 42,
+        'carlota': A
+                    B
+                     C
+                      D
+    }
+}
+```
+
+This looks pretty promising!
+Let's run the tests:
+
+```bash
+λ pytest tests/test_pretty.py
+========================================= test session starts ==========================================
+platform win32 -- Python 3.9.7, pytest-7.0.1, pluggy-1.0.0
+rootdir: C:\Users\rodri\Documents\Programming\rich\tests, configfile: pytest.ini
+plugins: cov-3.0.0
+collected 44 items
+
+tests\test_pretty.py ........................................s...                                 [100%]
+
+==================================== 43 passed, 1 skipped in 0.56s ===================================== 
+```
+
+Great success!
+All tests passed, including the ones I wrote earlier!
+This is a decent indication that I _didn't_ break anything and that I made progress!
+
+At this point, I [drafted a pull request][pr] and asked a couple of questions that will help me.
+After all, there are three objectives for these changes, and I haven't achieved one of them:
+
+ > “Multi-line representations should have no vertical guidelines added to it.”
+
+I will wait for the reply to my comment on the [PR][pr] and then I'll keep on writing about my adventure.
+
+See you soon!
+
+
+<!--
+This is relevant when we use the function `pprint` to pretty print an object with a multiline representation.
+For example, if we go to the bottom of our script at `pretty.py` and change the three prints `print(pretty_repr(...))` to `pprint`:
+
+```py
+if __name__ == "__main__":
+    # ...
+    pprint(s)
+    pprint(d)
+    pprint(f)
+```
+
+We can run the code and verify that a bunch of vertical guidelines get added:
+
+```py
+A
+ B
+  C
+   D
+{
+│   73: 42,
+│   'carlota': A
+│   │   │   │   B
+│   │   │   │    C
+│   │   │   │     D
+}
+{
+│   True: False,
+│   0: {
+│   │   73: 42,
+│   │   'carlota': A
+│   │   │   │   │   B
+│   │   │   │   │    C
+│   │   │   │   │     D
+│   }
+}
+```
+
+The only print that doesn't get vertical guidelines is the first one,
+probably just because the multiline representation didn't happen to have much indentation.
+So, I have to dig into the code and find where the guidelines get added.
+-->
+
+
+[pydont-main]: /blog/pydonts/name-dunder-attribute#the-module-attribute-__name__
 [will]: https://twitter.com/willmcgugan
 [gh-2073]: https://github.com/Textualize/rich/issues/2073
 [gh-first-findings]: https://github.com/textualize/rich/issues/2073#issuecomment-1105123499
+[pr]: https://github.com/Textualize/rich/pull/2267#issuecomment-1126747409
