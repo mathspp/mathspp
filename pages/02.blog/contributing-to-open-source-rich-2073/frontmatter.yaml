@@ -1,7 +1,7 @@
 date: 21-04-2022
 metadata:
     author: Rodrigo Girão Serrão
-    description: "This is an account of my contribution to solving issue 2073 of the Python open source library `rich`."
+    description: "This is the story of how I started contributing to Open Source and, in particular, how I tackled issue #2073 of the well-known Python library `rich`, by Will McGugan."
     og:image: https://mathspp.com/blog/contributing-to-open-source-rich-2073/thumbnail.png
     twitter:image: https://mathspp.com/blog/contributing-to-open-source-rich-2073/thumbnail.png
 slug: contributing-to-open-source-rich-2073
