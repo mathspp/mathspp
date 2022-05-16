@@ -3,11 +3,6 @@ This is an account of my contribution to solving issue 2073 of the Python open s
 ===
 
 
-!!!! This is an account of a contribution **I am still making** to an open source library.
-!!!! In other words, this contribution is still **ongoing**.
-!!!! Watch this space for updates.
-
-
 # Preamble
 
 I am trying to get my feet wet in the world of open source.
@@ -873,7 +868,7 @@ Let's see if we can fix the indentation of the successive lines,
 and we'll handle whatever issues pop up along the way.
 
 The first thing I tried to do was, inside `_Line.__str__`,
-check if the instance contained a node that had a multiline string representation:
+check if the instance contained a node that had a multi-line string representation:
 
 ```py
 def __str__(self) -> str:
@@ -896,7 +891,7 @@ Then, I thought that if I can know that a node will span over multiple lines,
 I can try to fix the indentation issue at this point.
 These thoughts were also motivated by the fact that the method `_Line.__str__` makes use of attributes like `self.whitespace` and `self.suffix`,
 which seem to be things that can go before/after the actual node representation.
-So, if I want to fix the indentation issue, I will have to split the multiline node and add enough indentation before each line that is not the first one.
+So, if I want to fix the indentation issue, I will have to split the multi-line node and add enough indentation before each line that is not the first one.
 This was my attempt:
 
 ```py
@@ -1229,50 +1224,6 @@ After all, there are three objectives for these changes, and I haven't achieved 
 I will wait for the reply to my comment on the [PR][pr] and then I'll keep on writing about my adventure.
 
 See you soon!
-
-
-<!--
-This is relevant when we use the function `pprint` to pretty print an object with a multiline representation.
-For example, if we go to the bottom of our script at `pretty.py` and change the three prints `print(pretty_repr(...))` to `pprint`:
-
-```py
-if __name__ == "__main__":
-    # ...
-    pprint(s)
-    pprint(d)
-    pprint(f)
-```
-
-We can run the code and verify that a bunch of vertical guidelines get added:
-
-```py
-A
- B
-  C
-   D
-{
-│   73: 42,
-│   'carlota': A
-│   │   │   │   B
-│   │   │   │    C
-│   │   │   │     D
-}
-{
-│   True: False,
-│   0: {
-│   │   73: 42,
-│   │   'carlota': A
-│   │   │   │   │   B
-│   │   │   │   │    C
-│   │   │   │   │     D
-│   }
-}
-```
-
-The only print that doesn't get vertical guidelines is the first one,
-probably just because the multiline representation didn't happen to have much indentation.
-So, I have to dig into the code and find where the guidelines get added.
--->
 
 
 [pydont-main]: /blog/pydonts/name-dunder-attribute#the-module-attribute-__name__
