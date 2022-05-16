@@ -1,4 +1,4 @@
-This is the story of how I started contributing to Open Source and, in particular, how I tackled issue #2073 of the well-known Python library `rich`, by Will McGugan.
+This is the story of how I started contributing to open source and, in particular, how I tackled issue #2073 of the well-known Python library `rich`, by Will McGugan.
 
 ===
 
