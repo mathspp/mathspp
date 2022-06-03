@@ -19,14 +19,14 @@ data = {
     "other_key": [
         True,
         False,
-        18,
+        None,
     ]
 }
 
 print(json.dumps(data))
 ```
 ```txt
-{"one_key": 73, "other_key": [true, false, 18]}
+{"one_key": 73, "other_key": [true, false, null]}
 ```
 
 The method `json.dump` is useful when you have a file you want to write the JSON to.
