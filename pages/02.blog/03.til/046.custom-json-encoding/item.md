@@ -25,7 +25,7 @@ data = {
 
 print(json.dumps(data))
 ```
-```
+```txt
 {"one_key": 73, "other_key": [true, false, 18]}
 ```
 
