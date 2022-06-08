@@ -20,8 +20,8 @@ Let me explain why list comprehensions are good and useful.
 
 ===
 
-Why are list comprehensions good?
-Why are list comprehensions useful?
+Why are [list comprehensions][list-comps-101] good?
+Why are [list comprehensions][list-comps-101] useful?
 
 Let me pick a very simple example.
 I have a list of numbers and I want to create another list with the squares.
@@ -125,6 +125,9 @@ And that, in my opinion, is the best argument in favour of list comprehensions.
 
 I hope you enjoyed this write-up.
 Feel free to leave your thoughts below!
+
+
+[list-comps-101]: /blog/pydonts/list-comprehensions-101
 
 
 !!!! This article was generated automatically from [this thread](https://twitter.com/mathsppblog/status/1534182962303991810) I published on Twitter [@mathsppblog][mathsppblog].
