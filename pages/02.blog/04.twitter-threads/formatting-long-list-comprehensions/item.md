@@ -5,13 +5,13 @@ metadata:
     description: "How do you format list comprehensions that are too long and go beyond the line width?"
     og:image: https://mathspp.com/blog/twitter-threads/thumbnail.png
     twitter:image: https://mathspp.com/blog/twitter-threads/thumbnail.png
-slug: why-are-list-comprehensions-useful
+slug: formatting-long-list-comprehensions
 taxonomy:
     category: twitter thread
     tag:
       - programming
       - python
-title: "Why are list comprehensions useful?"
+title: "Formatting long list comprehensions"
 ---
 
 How do you format list comprehensions that are too long and go beyond the line width?
