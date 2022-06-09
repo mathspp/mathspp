@@ -91,7 +91,7 @@ Feel free to leave your thoughts below!
 [list-comp-cheatsheet]: https://mathspp.gumroad.com/l/cheatsheet_list_comps_101
 
 
-!!!! This article was generated automatically from [this thread](https://twitter.com/mathsppblog/status/1534182962303991810) I published on Twitter [@mathsppblog][mathsppblog].
+!!!! This article was generated automatically from [this thread](https://twitter.com/mathsppblog/status/1534679211302178816) I published on Twitter [@mathsppblog][mathsppblog].
 !!!! Then it was edited lightly.
 
 [mathsppblog]: https://twitter.com/mathsppblog
