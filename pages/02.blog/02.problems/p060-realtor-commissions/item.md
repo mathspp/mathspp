@@ -38,12 +38,11 @@ Or is there a scenario in which Alice gets the prize?
 
 # Solvers
 
-<!--
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
 
  - David H., Taiwan;
--->
+ - Michael W., US;
 
 Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
@@ -54,7 +53,6 @@ Join the list of solvers by [emailing me][email] your solution!
 The solution to this problem will be shared when this problem has been live for approximately two weeks,
 which should be in late May.
 
-<!--
 Bob is wrong because there is a scenario in which Alice can win the award...
 Even though Bob had the highest average commission both in 2020 and 2021.
 Does this seem counterintuitive?
@@ -104,7 +102,6 @@ if you are interested in learning more!
 
 [simpsons-paradox]: /blog/til/simpsons-paradox
 [simpsons-paradox-reallife] /blog/til/simpsons-paradox#example-of-simpsons-paradox
--->
 
 
 [Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly
