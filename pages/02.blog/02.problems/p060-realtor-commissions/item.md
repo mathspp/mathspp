@@ -50,9 +50,6 @@ Join the list of solvers by [emailing me][email] your solution!
 
 # Solution
 
-The solution to this problem will be shared when this problem has been live for approximately two weeks,
-which should be in late May.
-
 Bob is wrong because there is a scenario in which Alice can win the award...
 Even though Bob had the highest average commission both in 2020 and 2021.
 Does this seem counterintuitive?

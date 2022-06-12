@@ -51,9 +51,6 @@ Join the list of solvers by [emailing me][email] your solution!
 
 # Solution
 
-The solution to this problem will be shared when this problem has been live for approximately two weeks,
-which should be in early June.
-
 The third mathematician is right.
 
 The first sentence of each mathematician establishes that all flowers in the garden are one of three colours (red, yellow, blue) and that all colours are represented; that is, there is _at least_ one red flower, _at least_ one yellow flower, and _at least_ one blue flower.
