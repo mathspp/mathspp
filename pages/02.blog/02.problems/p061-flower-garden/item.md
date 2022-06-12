@@ -42,6 +42,8 @@ who sent me their correct solutions:
 
  - David H., Taiwan;
  - Christ van W., The Netherlands;
+ - David R., Mexico;
+ - Michał D., Poland;
 
 Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
@@ -52,7 +54,6 @@ Join the list of solvers by [emailing me][email] your solution!
 The solution to this problem will be shared when this problem has been live for approximately two weeks,
 which should be in early June.
 
-<!--
 The third mathematician is right.
 
 The first sentence of each mathematician establishes that all flowers in the garden are one of three colours (red, yellow, blue) and that all colours are represented; that is, there is _at least_ one red flower, _at least_ one yellow flower, and _at least_ one blue flower.
@@ -78,7 +79,6 @@ we get that the garden has three flowers only:
 
 Therefore, the third mathematician is also right:
 whatever three flowers you pick, one is bound to be blue.
--->
 
 
 [Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly
