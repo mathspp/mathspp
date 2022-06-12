@@ -3,7 +3,7 @@ Can you align all of the coins on the right edge of the board?
 ===
 
 
-![](thumbnail.png "Diagram of the coin positions for the problem.")
+![](_setup.png "Diagram of the coin positions for the problem.")
 
 
 # Problem statement
@@ -33,7 +33,7 @@ and add another coin in the top left corner?
 
 !!! Give it some thought!
 
-This is an adaptation of a problem from the [book “Algorithmic Puzzles”][algorithmic-puzzles-amazon][^1] by Anany Levitin and Maria Levitin.
+This is an adaptation of a problem from the [book “Algorithmic Puzzles”][algorithmic-puzzles-amazon] by Anany Levitin and Maria Levitin.[^1]
 
 
 # Solvers
