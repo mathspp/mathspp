@@ -55,9 +55,9 @@ Join the list of solvers by [emailing me][email] your solution!
 The solution to this problem will be shared when this problem has been live for approximately two weeks,
 which should be in late June.
 
+[^1]: This is an Amazon Affiliate link and I may earn a commission if you purchase the book. This comes at no extra cost to you.
 
 [algorithmic-puzzles-amazon]: https://amzn.to/3NJUn5D
-[^1]: I may earn a commission if you purchase the book from that link. This comes at no extra cost to you.
 
 
 [Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly

@@ -32,7 +32,7 @@ Is the third mathematician right? Or wrong? Why?
 
 !!! Give it some thought!
 
-This problem is from the amazing book “To Mock a Mockingbird” by the mathematician Raymond Smullyan.
+This problem is from the amazing [book “To Mock a Mockingbird”][mock-mockingbird] by the mathematician Raymond Smullyan.[^1]
 
 
 # Solvers
@@ -77,6 +77,9 @@ we get that the garden has three flowers only:
 Therefore, the third mathematician is also right:
 whatever three flowers you pick, one is bound to be blue.
 
+[^1]: This is an Amazon Affiliate link and I may earn a commission if you purchase the book. This comes at no extra cost to you.
+
+[mock-mockingbird-amazon]: https://amzn.to/3zzViS2
 
 [Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly
 problems sent straight to your inbox.
