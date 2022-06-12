@@ -37,12 +37,11 @@ This problem is from the amazing book “To Mock a Mockingbird” by the mathema
 
 # Solvers
 
-<!--
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
 
  - David H., Taiwan;
--->
+ - Christ van W., The Netherlands;
 
 Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
