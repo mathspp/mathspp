@@ -22,6 +22,7 @@ Thus, this is a legal move:
 But moving a single coin, such as in the diagram below, is not allowed:
 
 !["The diagram showing an example of an illegal move."](_illegal_move.png "An illegal move that slides only one coin to the right.")
+
 Your objective is to reach this position:
 
 !["The same 3 by 4 grid containing a coin per row, with all coins on the rightmost column."](_objective.png "Target position.")
