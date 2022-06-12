@@ -60,3 +60,4 @@ That's it for now! [Stay tuned][subscribe] and I'll see you around!
 [subscribe]: /subscribe
 [til-005]: /blog/til/005
 [dabeaz]: https://twitter.com/dabeaz
+[csv]: https://docs.python.org/3/library/csv
