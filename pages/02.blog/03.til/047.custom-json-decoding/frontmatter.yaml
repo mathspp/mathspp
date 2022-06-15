@@ -1,4 +1,4 @@
-date: 03-06-2022
+date: 04-06-2022
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned how to do custom JSON decoding in Python with the module `json`."
