@@ -7,7 +7,7 @@ metadata:
 publish_date: 03-06-2022 13:00
 references:
     - "Python 3 Documentation, The Python Standard Library, `json.JSONDecoder` [https://docs.python.org/3/library/json.html#json.JSONEncoder](https://docs.python.org/3/library/json.html#json.JSONDecoder) [last accessed 03-06-2022];"
-slug: "046"
+slug: "047"
 taxonomy:
     category: [blogpost, til]
     tag:
