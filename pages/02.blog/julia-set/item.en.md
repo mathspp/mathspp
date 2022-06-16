@@ -16,4 +16,4 @@ The screenshot above shows the filled Julia set for some $z_0$ I picked. The poi
 
 ![A different filled Julia set done in Python](juliaset.png)
 
-from a [small Python 3 program](https://github.com/RodrigoGiraoSerrao/projects/tree/master/fractals) I wrote with pygame. You press any point in the complex plane and the program builds its corresponding filled Julia set. You can use the left and right arrows to navigate the sets you already created. Pressing the space bar cleans the fractal you are viewing. You can also download a Windows executable from [here](https://github.com/RodrigoGiraoSerrao/projects/blob/master/fractals/juliaSet.rar).
+from a [small Python 3 program](https://github.com/rodrigogiraoserrao/fractals/blob/master/juliaSet.py) I wrote with pygame. You press any point in the complex plane and the program builds its corresponding filled Julia set. You can use the left and right arrows to navigate the sets you already created. Pressing the space bar cleans the fractal you are viewing. You can also download a Windows executable from [here](https://github.com/rodrigogiraoserrao/fractals/blob/master/juliaSet.rar).

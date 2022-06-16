@@ -11,8 +11,8 @@ Some of my favourite ones include my [pigeon simulator], [HueHue] and [Minesweep
 
 I usually write about the minigames I create in [my blog][games-blog].
 
-[pigeon simulator]: ../../blog/pigeon-pooping-simulator
-[HueHue]: ../../blog/huehue
-[Minesweeper]: ../../blog/minesweeper-remake
+[pigeon simulator]: /blog/pigeon-pooping-simulator
+[HueHue]: /blog/huehue
+[Minesweeper]: /blog/minesweeper-remake
 [minigames]: https://github.com/RodrigoGiraoSerrao/minigames
 [games-blog]: https://mathspp.com/blog/tag:games

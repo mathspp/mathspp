@@ -562,7 +562,7 @@ I guess that would be a whole other talk!
 
 [conditional-expressions]: /blog/pydonts/conditional-expressions
 [truthy-falsy]: /blog/pydonts/truthy-falsy-and-bool
-[zen-of-python]: /blog/pydonts/pydont-disrespect-zen-of-python
+[zen-of-python]: /blog/pydonts/pydont-disrespect-the-zen-of-python
 [til-dis]: /blog/til/028
 
 [pycascades]: https://2022.pycascades.com/

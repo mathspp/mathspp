@@ -349,6 +349,6 @@ Online references last consulted on the 23rd of February of 2021.
 
 [subscribe]: https://mathspp.com/subscribe
 [manifesto]: /blog/pydonts/pydont-manifesto
-[pydont-starred-assignment]: /blog/pydonts/unpacking-with-starred-assignment
+[pydont-starred-assignment]: /blog/pydonts/unpacking-with-starred-assignments
 [pep-634]: https://www.python.org/dev/peps/pep-0634/
 [pep-3113]: https://www.python.org/dev/peps/pep-3113/

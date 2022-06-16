@@ -241,5 +241,5 @@ Did _you_ compete in the 2020 Dyalog APL competition? Share your thoughts/soluti
 [The APL Orchard]: https://chat.stackexchange.com/rooms/52405/the-apl-orchard
 [Rosalind]: http://rosalind.info
 [bf]: https://dfns.dyalog.com/n_bf.htm
-[tp-sets]: https://mathspp.com/blog/twitter-proofs/subsets-of-a-set
+[tp-sets]: /blog/subsets-of-a-set
 [reddit-post]: https://www.reddit.com/r/apljk/comments/i6gqxs/my_two_cents_on_the_2020_apl_problem_solving/g0xlarf?utm_source=share&utm_medium=web2x

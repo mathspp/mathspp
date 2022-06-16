@@ -129,9 +129,9 @@ Other than the code with the reference implementation (available in [this GitHub
 [APL]: https://aplwiki.com
 [license]: https://creativecommons.org/licenses/by-nc-sa/4.0/
 [Dyalog]: https://dyalog.com
-[workshops-gh]: https://github.com/RodrigoGiraoSerrao/workshops
+[workshops-gh]: https://github.com/mathspp/training/
 [mdapl-pdf]: https://www.dyalog.com/mastering-dyalog-apl.htm
-[mdapl-online]: https://rojergs.github.io/MDAPL
+[mdapl-online]: https://mastering.dyalog.com
 [apl-orchard]: https://chat.stackexchange.com/rooms/52405/the-apl-orchard
 [aplcart]: https://aplcart.info/
 [aplwiki]: https://aplwiki.com

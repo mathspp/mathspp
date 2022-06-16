@@ -146,7 +146,7 @@ print(count)
     1292
     
 
-Trying to keep the indentation level as low as possible (trying to keep your code flat, instead of nested) is something that is advocated for in the [“Zen of Python”](mathspp.com/blog/pydonts/pydont-disrespect-the-zen-of-python).
+Trying to keep the indentation level as low as possible (trying to keep your code flat, instead of nested) is something that is advocated for in the [“Zen of Python”](/blog/pydonts/pydont-disrespect-the-zen-of-python).
 You can watch a clip of a talk of mine where I talk about this, and explain it, [here](https://youtu.be/s6dJab2qwkg?t=1031) (it's at minute 17:11 of the linked video).
 
 ### The range of the length
@@ -154,7 +154,7 @@ You can watch a clip of a talk of mine where I talk about this, and explain it, 
 Another frequent anti-pattern in Python is the excerpt `for i in range(len(...))`.
 _Most of the times_, that `for` loop isn't what you really wanted to use.
 Python has very powerful `for` loops, and the `for i in range(len(...))` is a pattern that we inherited from languages like C.
-In Python, we tend to use built-ins like [`enumerate`](https://mathspp.com/blog/pydonts/enumerate-me) and [`zip`](https://mathspp.com/blog/pydonts/zip-up).
+In Python, we tend to use built-ins like [`enumerate`](/blog/pydonts/enumerate-me) and [`zip`](/blog/pydonts/zip-up).
 
 Another hint at the fact that the loop we care about is not the `range(len(...))`, is that we don't really care about the indices.
 Notice how `range(len(something))` gives you all the legal indices associated with `something`, but what we really care about are the elements.
@@ -181,7 +181,7 @@ print(count)
     
 
 In order to make this work, we are using a slice to ignore the last element from `depths`.
-After all, the slice `[:-n]` means [“drop the last `n` elements”](https://mathspp.com/blog/pydonts/idiomatic-sequence-slicing#s-n-3).
+After all, the slice `[:-n]` means [“drop the last `n` elements”](/blog/pydonts/idiomatic-sequence-slicing#s-n-3).
 
 Another interesting thought would be to try and simplify the `i + 1` part.
 The built-in `enumerate` accepts a `start` argument that specifies where the argument starts counting:
@@ -345,7 +345,7 @@ print(count)
     1292
     
 
-In case you didn't know, [you can iterate over a file](https://mathspp.com/blog/til/006), which allows you to iterate over the lines.
+In case you didn't know, [you can iterate over a file](/blog/til/006), which allows you to iterate over the lines.
 That's what allowed us to convert into integers all the lines.
 
 On top of that, you might be interested in knowing that [`int` is forgiving](https://twitter.com/mathsppblog/status/1466190674030698499), in that it allows the integers to be surrounded by whitespace:

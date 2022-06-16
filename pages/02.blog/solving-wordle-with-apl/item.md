@@ -662,7 +662,7 @@ Finally, in the code written, a couple of things worth highlighting include the 
 
 [wordle-python]: /blog/solving-wordle-with-python
 
-[wordle]: https://www.powerlanguage.co.uk/wordle/
+[wordle]: https://www.nytimes.com/games/wordle/index.html
 [mastermind]: https://en.wikipedia.org/wiki/Mastermind_(board_game)
 [word-list]: https://raw.githubusercontent.com/rodrigogiraoserrao/WordleAPL/main/WORD.LST
 [unix-words]: https://en.wikipedia.org/wiki/Words_(Unix)

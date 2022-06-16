@@ -515,7 +515,7 @@ You can get the code [from here][gh-code].
 If you have any questions or suggestions, leave them in the comments below!
 
 
-[wordle]: https://www.powerlanguage.co.uk/wordle/
+[wordle]: https://www.nytimes.com/games/wordle/index.html
 [mastermind]: https://en.wikipedia.org/wiki/Mastermind_(board_game)
 [word-list]: https://willmcgugan.com/files/WORD.zip
 [will-mcgugan]: https://twitter.com/willmcgugan

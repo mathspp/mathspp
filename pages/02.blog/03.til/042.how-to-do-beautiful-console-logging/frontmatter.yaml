@@ -6,7 +6,7 @@ metadata:
     twitter:image: https://mathspp.com/blog/til/042/thumbnail.png
 references:
   - "`rich` documentation, [https://rich.readthedocs.io/en/latest/logging.html](https://rich.readthedocs.io/en/latest/logging.html) [last accessed 27-04-2022];"
-  - "Python 3 Documentation, `logging`, [docs.python.org/3/library/logging.html](docs.python.org/3/library/logging.html) [last accessed 27-04-2022];"
+  - "Python 3 Documentation, `logging`, [https://docs.python.org/3/library/logging.html](https://docs.python.org/3/library/logging.html) [last accessed 27-04-2022];"
 slug: "042"
 taxonomy:
     category: [blogpost, til]

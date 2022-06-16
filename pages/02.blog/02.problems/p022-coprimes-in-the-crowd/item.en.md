@@ -50,4 +50,4 @@ To see that two consecutive integers are coprime, you can [read this twitter pro
 problems sent straight to your inbox and to add your reaction below.
 
 [subscribe]: https://mathspp.com/subscribe
-[tp-coprimes]: /blog/twitter-proofs/consecutive-integers-are-coprime
+[tp-coprimes]: /blog/consecutive-integers-are-coprime

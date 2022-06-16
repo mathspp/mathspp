@@ -267,7 +267,7 @@ If you run that, after 50 terms you will see that we already have around 3 corre
 Try changing the initial values and see how many decimal places you can get correct!
 
 
-[til-look-and-say-growth]: /blog/til/38
+[til-look-and-say-growth]: /blog/til/038
 [til-conway-constant]: /blog/til/038#conways-constant
 [jc]: https://en.wikipedia.org/wiki/John_Horton_Conway
 [twitter-seq]: https://twitter.com/mathsppblog/status/1503823606899519489

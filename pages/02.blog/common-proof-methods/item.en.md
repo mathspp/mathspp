@@ -174,4 +174,4 @@ A proof by contrapositive and a proof by contradiction are quite similar, but th
 
 And this concludes my post on these three proof methods. Which one if your favourite?
 
-[tp-irrationals]: https://mathspp.com/blog/twitter-proofs/irrational-rationality
+[tp-irrationals]: /blog/irrational-rationality

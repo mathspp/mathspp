@@ -505,7 +505,7 @@ to find an amazing collection of brainf\*ck programs by Daniel B. Cristofani.
 [epl]: https://en.wikipedia.org/wiki/Esoteric_programming_language
 [ascii]: http://www.asciitable.com/
 [code]: https://github.com/RodrigoGiraoSerrao/languages/blob/master/brainfck/brainfck_terse_terse.py
-[cg]: codegolf.stackexchange.com
+[cg]: https://codegolf.stackexchange.com
 [bf-golf-1]: https://codegolf.stackexchange.com/a/187127/75323
 [bf-golf-2]: https://codegolf.stackexchange.com/a/3085/75323
 [bf-tutorial]: https://gist.github.com/roachhd/dce54bec8ba55fb17d3a
