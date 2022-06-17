@@ -152,8 +152,8 @@ implementing a custom function `object_hook` is the easiest way to do custom dec
 Of course, this specific approach assumes your arbitrary Python objects are represented as dictionaries in their JSON form.
 
 
-[til-json-encode]: /blog/til/custom-json-encoding
-[til-json-encode-example]: /blog/til/046#custom-json-encoding-of-python-objects
+[til-json-encode]: /blog/til/custom-json-encoder
+[til-json-encode-example]: #custom-json-encoding-of-python-objects
 [pydont-lbyl-eafp]: /blog/pydonts/eafp-and-lbyl-coding-styles
 [json]: https://docs.python.org/3/library/json.html
 [json-load]: https://docs.python.org/3/library/json.html#json.load
