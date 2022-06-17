@@ -60,7 +60,7 @@ anything that is not on the right column,
 you need to **implement a custom JSON decoder**.
 
 
-# Custom JSON decoding
+# Custom JSON decoding into Python objects
 
 We have two mechanisms that let us do custom JSON decoding.
 By taking a look at the [`json.load` documentation][json-decoder],
