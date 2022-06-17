@@ -1,0 +1,21 @@
+date: 04-06-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to use a custom JSON decoder in Python with the module `json`."
+    og:image: https://mathspp.com/blog/til/047/thumbnail.png
+    twitter:image: https://mathspp.com/blog/til/047/thumbnail.png
+publish_date: 03-06-2022 13:00
+references:
+    - "Python 3 Documentation, The Python Standard Library, `json.JSONDecoder` [https://docs.python.org/3/library/json.html#json.JSONEncoder](https://docs.python.org/3/library/json.html#json.JSONDecoder) [last accessed 03-06-2022];"
+routes:
+    aliases:
+        - "/blog/til/047"
+        - "/blog/til/custom-json-decoding"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - json
+      - programming
+      - python
+title: "TIL #047 – custom JSON decoder"
+visible: false
