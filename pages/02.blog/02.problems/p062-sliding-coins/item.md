@@ -29,8 +29,8 @@ Your objective is to reach this position:
 
 Can you do it?
 
-What if you extend the board one column to the left and one row up,
-and add another coin in the top left corner?
+What if you extend the board two columns to the left and two rows up,
+and add another two coins along the diagonal?
 
 !!! Give it some thought!
 
@@ -39,12 +39,10 @@ This is an adaptation of a problem from the [book “Algorithmic Puzzles”][alg
 
 # Solvers
 
-<!--
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
 
  - David H., Taiwan;
--->
 
 Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
