@@ -63,7 +63,7 @@ you need to **implement a custom JSON decoder**.
 # Custom JSON decoding into arbitrary Python objects
 
 We have two mechanisms that let us do custom JSON decoding.
-By taking a look at the [`json.load` documentation][json-decoder],
+By taking a look at the [`json.load` documentation][json-load],
 we see that we care about the keyword-arguments `object_hook` and `object_pairs_hook`.
 Let us play with `object_hook` a bit.
 
