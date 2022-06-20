@@ -1,4 +1,4 @@
-date: 17-06-2022
+date: 20-06-2022
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I finished learning how to use a custom JSON decoder to convert JSON to arbitrary Python objects."
