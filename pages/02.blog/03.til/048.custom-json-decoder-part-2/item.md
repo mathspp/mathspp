@@ -117,11 +117,14 @@ The easiest way is to implement an object hook that takes JSON dictionaries and 
 If you want a solution that is more symmetric with respect to how custom JSON encoding is done,
 you can subclass `json.JSONDecoder` and plug the object hook as a default argument.
 
+!!! You can read a follow-up article where I implement a system that allows you to [extend JSON through custom encoders and decoders][extend-json].
+
 
 [til-json-encoder]: /blog/til/custom-json-encoder
 [til-json-custom-encoder]: /blog/til/custom-json-encoder#custom-json-encoding-of-python-objects
 [til-json-decoder]: /blog/til/custom-json-decoder
 [til-json-custom-decoding]: /blog/til/custom-json-decoder#custom-json-decoding-into-arbitrary-python-objects
+[extend-json]: /blog/custom-json-encoder-and-decoder
 
 [json]: https://docs.python.org/3/library/json.html
 [json-JSONDecoder]: https://docs.python.org/3/library/json.html#json.JSONDecoder

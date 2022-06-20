@@ -114,9 +114,16 @@ so that they can use this custom encoder we defined:
 
 As we can see, the complex number `c` was properly converted to JSON.
 
+!!! I wrote a more complete article about defining [custom JSON encoders and decoders][json-encoder-decoder].
+!!! You can also read the short articles I wrote prior to that,
+!!! on [decoding JSON][til-decoding] and on [defining a custom JSON decoder][til-custom-decoder].
+
 
 [json]: https://docs.python.org/3/library/json.html
 [json-encoder-default]: https://docs.python.org/3/library/json.html#json.JSONEncoder.default
+[json-encoder-decoder]: /blog/custom-json-encoder-and-decoder
+[til-decoding]: /blog/til/custom-json-decoder
+[til-custom-decoder]: /blog/til/custom-json-decoder-part-2
 
 That's it for now! [Stay tuned][subscribe] and I'll see you around!
 

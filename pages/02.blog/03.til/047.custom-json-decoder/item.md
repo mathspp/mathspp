@@ -151,10 +151,15 @@ Therefore,
 implementing a custom function `object_hook` is the easiest way to do custom decoding of JSON into arbitrary Python objects.
 Of course, this specific approach assumes your arbitrary Python objects are represented as dictionaries in their JSON form.
 
+!!! Read the follow-up article on [defining a custom JSON decoder class][til-json-decoder]
+!!! or read up on how to implement a system that lets you [extend JSON][extend-json].
+
 
 [til-json-encode]: /blog/til/custom-json-encoder
 [til-json-encode-example]: /blog/til/custom-json-encoder#custom-json-encoding-of-python-objects
 [pydont-lbyl-eafp]: /blog/pydonts/eafp-and-lbyl-coding-styles
+[extend-json]: /blog/custom-json-encoder-and-decoder
+[til-json-decoder]: /blog/til/custom-json-decoder-part-2
 [json]: https://docs.python.org/3/library/json.html
 [json-load]: https://docs.python.org/3/library/json.html#json.load
 
