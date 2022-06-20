@@ -2,6 +2,8 @@ Today I learned how to do custom JSON encoding in Python with the module `json`.
 
 ===
 
+![A solid background with an arrow going from the Python logo to a JSON logo.](thumbnail.png)
+
 # How to encode Python objects as JSON
 
 In Python, we use the module `json` whenever we need to work with JSON data.

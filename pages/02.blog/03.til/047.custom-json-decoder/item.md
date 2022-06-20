@@ -2,6 +2,8 @@ Today I learned how to do custom JSON decoding in Python with the module `json`.
 
 ===
 
+![A solid background with an arrow going from a JSON logo into the Python logo.](thumbnail.png)
+
 # How to decode Python objects as JSON
 
 The module `json` is your go-to tool whenever you need to work with JSON data in Python.
