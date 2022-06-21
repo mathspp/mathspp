@@ -222,7 +222,7 @@ class ExtendedDecoder(json.JSONDecoder):
         try:
             name = obj["__extended_json_type__"]
             decoder = getattr(self, f"decode_{name}")
-        except KeyError, AttributeError:
+        except (KeyError, AttributeError):
             return obj
         else:
             return decoder(obj)
