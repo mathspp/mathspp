@@ -92,7 +92,7 @@ print(list_comp)
 [list-comps-101]: /blog/pydonts/list-comprehensions-101
 
 
-!!!! This article was generated automatically from [this thread]([https://twitter.com/mathsppblog/status/1535375291291471875](https://twitter.com/mathsppblog/status/1538206477726404609)) I published on Twitter [@mathsppblog][mathsppblog].
+!!!! This article was generated automatically from [this thread](https://twitter.com/mathsppblog/status/1538206477726404609) I published on Twitter [@mathsppblog][mathsppblog].
 !!!! Then it was edited lightly.
 
 [mathsppblog]: https://twitter.com/mathsppblog
