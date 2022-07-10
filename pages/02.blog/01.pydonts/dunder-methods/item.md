@@ -259,22 +259,22 @@ nor does it imply a level of difficulty in understanding the methods.
 
 # Exploring a dunder method
 
-Whenever I first learn about a new dunder method,
+Whenever I learn about a new dunder method,
 the first thing I do is to play around with it.
-In particular, I try to write some code that triggers that dunder method implicitly.
 
-Below, I share with you my reasoning when I'm exploring a new dunder method.
-For me, that exploration comes in a couple of steps:
+Below, I share with you the three steps I follow when I'm exploring a new dunder method:
 
  1. try to understand _when_ the dunder method is called;
  2. implement a stub for that method and trigger it with code; and
  3. use the dunder method in a useful situation.
 
-I will walk you through these steps for the dunder method `__missing__`.
+I will show you how I follow these steps with a practical example,
+the dunder method `__missing__`.
 
 
-## What is the dunder method `__missing__` for?
+## What is the dunder method for?
 
+What is the dunder method `__missing__` for?
 The [documentation for the dunder method `__missing__` reads](https://docs.python.org/3/reference/datamodel.html#object.__missing__):
 
  > “Called by `dict.__getitem__()` to implement `self[key]` for `dict` subclasses when `key` is not in the dictionary.”
@@ -283,7 +283,9 @@ In other words, the dunder method `__missing__` is only relevant for subclasses 
 and it is called whenever we cannot find a given key in the dictionary.
 
 
-## How to trigger `__missing__`
+## How to trigger the dunder method?
+
+In what situations, that I can recreate, does the dunder method `__missing__` get called?
 
 From the documentation text, it looks like we might need a dictionary subclass,
 and then we need to access a key that does not exist in that dictionary.
@@ -320,7 +322,7 @@ my_dict[1]  # Prints: Missing key = 1
 ```
 
 
-## Reimplementing `defaultdict` with `__missing__`
+## Using the dunder method in a useful situation
 
 Now that we have a clearer picture of when `__missing__` comes into play,
 we can use it for something useful.
@@ -342,7 +344,7 @@ print(olympic_medals["Phelps"])  # 28
 print(olympic_medals["me"])  # 0
 ```
 
-So, to reimplement `defaultdict`, we need to accept a factory,
+So, to reimplement `defaultdict`, we need to accept a factory function,
 we need to save that factory,
 and we need to use it inside `__missing__`.
 
