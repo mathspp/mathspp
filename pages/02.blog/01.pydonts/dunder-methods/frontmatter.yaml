@@ -1,7 +1,7 @@
 date: 09-07-2022
 metadata:
     author: Rodrigo Girão Serrão
-    description: "This is a comprehensive introduction to dunder methods in Python, covering most dunder methods."
+    description: "This is an introduction to dunder methods in Python, to help you understand what they are and what they are for."
     og:image: "https://mathspp.com/blog/pydonts/dunder-methods/thumbnail.png"
     twitter:image: "https://mathspp.com/blog/pydonts/dunder-methods/thumbnail.png"
 references:

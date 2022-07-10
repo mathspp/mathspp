@@ -1,4 +1,5 @@
-This is a comprehensive introduction to dunder methods in Python, covering most dunder methods.
+This is an introduction to dunder methods in Python,
+to help you understand what they are and what they are for.
 
 ===
 
@@ -216,20 +217,22 @@ nor does it imply a level of difficulty in understanding the methods.
 | `__iter__` | `iter(obj)` / `for ... in obj` (iterating over) | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__iter__) |
 | `__reversed__` | `reverse(obj)` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__reversed__) |
 | `__contains__` | `... in obj` (membership test) | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__contains__) |
-| `__add__` / `__radd__` / `__iadd__` | `obj + ...` / `... + obj` / `obj += ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__add__) |
-| `__sub__` / `__rsub__` / `__isub__` | `obj - ...` / `... - obj` / `obj -= ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__sub__) |
-| `__mul__` / `__rmul__` / `__imul__` | `obj * ...` / `... * obj` / `obj *= ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__mul__) |
-| `__matmul__` / `__rmatmul__` / `__imatmul__` | `obj @ ...` / `... @ obj` / `obj @= ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__matmul__) |
-| `__truediv__` / `__rtruediv__` / `__itruediv__` | `obj / ...` / `... / obj` / `obj /= ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__div__) |
-| `__floordiv__` / `__rfloordiv__` / `__ifloordiv__` | `obj // ...` / `... // obj` / `obj //= ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__floordiv__) |
-| `__mod__` / `__rmod__` / `__imod__` | `obj % ...` / `... % obj` / `obj %= ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__mod__) |
-| `__divmod__` / `__rdivmod__` | `divmod(obj, ...)` / `divmod(..., obj)` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__divmod__) |
-| `__pow__` / `__rpow__` / `__ipow__` | `obj ** ...` / `... ** obj` / `obj **= ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__pow__) |
-| `__lshift__` / `__rlshift__` / `__ilshift__` | `obj << ...` / `... << obj` / `obj <<= ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__lshift__) |
-| `__rshift__` / `__rrshift__` / `__irshift__` | `obj >> ...` / `... >> obj` / `obj >>= ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__rshift__) |
-| `__and__` / `__rand__` / `__iand__` | `obj & ...` / `... & obj` / `obj &= ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__and__) |
-| `__xor__` / `__rxor__` / `__ixor__` | `obj ^ ...` / `... ^ obj` / `obj ^= ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__xor__) |
-| `__or__` / `__ror__` / `__ior__` | `obj | ...` / `... | obj` / `obj |= ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__or__) |
+| `__add__` | `obj + ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__add__) |
+| `__radd__` | `... + obj` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__radd__) |
+| `__iadd__` | `obj += ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__iadd__) |
+| `__sub__` [^2] [^3] | `obj - ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__sub__) |
+| `__mul__` [^2] [^3] | `obj * ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__mul__) |
+| `__matmul__` [^2] [^3] | `obj @ ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__matmul__) |
+| `__truediv__` [^2] [^3] | `obj / ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__div__) |
+| `__floordiv__` [^2] [^3] | `obj // ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__floordiv__) |
+| `__mod__` [^2] [^3] | `obj % ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__mod__) |
+| `__divmod__` [^2] | `divmod(obj, ...)` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__divmod__) |
+| `__pow__` [^2] [^3] | `obj ** ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__pow__) |
+| `__lshift__` [^2] [^3] | `obj << ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__lshift__) |
+| `__rshift__` [^2] [^3] | `obj >> ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__rshift__) |
+| `__and__` [^2] [^3] | `obj & ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__and__) |
+| `__xor__` [^2] [^3] | `obj ^ ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__xor__) |
+| `__or__` [^2] [^3] | `obj | ...` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__or__) |
 | `__neg__` | `-obj` (unary) | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__neg__) |
 | `__pos__` | `+obj` (unary) | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__pos__) |
 | `__abs__` | `abs(obj)` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__abs__) |
@@ -249,6 +252,9 @@ nor does it imply a level of difficulty in understanding the methods.
 | `__anext__` | `anext(obj)` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__anext__) |
 | `__aenter__` | `async with obj` (enter async context manager) | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__aenter__) |
 | `__aexit__` | `async with obj` (exit async context manager) | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__aexit__) |
+
+[^2]: this dunder method also has a “right” version, with the same name but prefixed by an `"r"`, and that is called when the object is on the right-hand side of the operation and the object on the left-hand side doesn't implement the behaviour. See `__radd__` above.
+[^3]: this dunder method also has a “in-place” version, with the same name but prefixed by an `"i"`, and that is called for augmented assignment with the given operator. See `__iadd__` above.
 
 
 # Exploring a dunder method
