@@ -10,6 +10,7 @@ slug: "dunder-methods"
 taxonomy:
     category: [blogpost, pydont]
     tag:
+      - "dunder methods"
       - "programming"
       - "python"
 title: "Dunder methods | Pydon't 🐍"
