@@ -8,7 +8,7 @@ references:
     - "Python 3 Documentation, Data model, [https://docs.python.org/3/reference/datamodel.html](https://docs.python.org/3/reference/datamodel.html) [last accessed 10-07-2022];"
 slug: "object-initialisation-with-__init__"
 taxonomy:
-    category: [blogpost, pydont]
+    category: [blogpost]
     tag:
       - "dunder methods"
       - "programming"
