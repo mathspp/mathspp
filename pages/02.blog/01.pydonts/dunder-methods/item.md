@@ -355,12 +355,12 @@ but also assigns it to the key that wasn't there before:
 >>> olympic_medals = defaultdict(lambda: 0)  # Produce 0 by default
 >>> olympic_medals
 defaultdict(<function <lambda> at 0x000001F15404F1F0>, {})
-# Notice the underlying dictionary is empty -----------^^
+>>> # Notice the underlying dictionary is empty -------^^
 >>> olympic_medals["me"]
 0
 >>> olympic_medals
 defaultdict(<function <lambda> at 0x000001F15404F1F0>, {'me': 0})
-# It's not empty any more -----------------------------^^^^^^^^^
+>>> # It's not empty anymore --------------------------^^^^^^^^^
 ```
 
 Given all of this, here is a possible reimplementation of `defaultdict`:
