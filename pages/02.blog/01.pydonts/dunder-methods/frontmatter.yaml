@@ -1,0 +1,15 @@
+date: 09-07-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This is a comprehensive introduction to dunder methods in Python, covering most dunder methods."
+    og:image: "https://mathspp.com/blog/pydonts/dunder-methods/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/pydonts/dunder-methods/thumbnail.png"
+references:
+    - "Python 3 Documentation, Data model, [https://docs.python.org/3/reference/datamodel.html](https://docs.python.org/3/reference/datamodel.html) [last accessed 09-07-2022];"
+slug: "dunder-methods"
+taxonomy:
+    category: [blogpost, pydont]
+    tag:
+      - "programming"
+      - "python"
+title: "Dunder methods | Pydon't 🐍"
