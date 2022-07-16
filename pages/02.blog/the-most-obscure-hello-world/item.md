@@ -23,7 +23,7 @@ def __() -> f"{_:Hello, world!}": ...
 _._
 ```
 
-If you run this program, the output is `"Hello, world!"`.
+If you run this program with Python 3.10+, the output is `"Hello, world!"`.
 But how does that work?
 
 I will walk you through what is going on.
@@ -275,6 +275,17 @@ Python can remember the value of `fmt`,
 which was `"Hello, world!"`, so that is what is printed.
 
 And that is how the most obfuscated “Hello, world!” program works!
+
+
+# The short explanation
+
+For someone who understands all of the pieces of the puzzle involved,
+a much shorter explanation can be given.
+
+In fact, this program works because the function definition forces the evaluation of the function annotation,
+which implicitly invokes the dunder method `__format__`.
+This ends up creating a property that prints the original format specification (`"Hello, world!"`) when accessed.
+Finally, the program concludes by accessing that same property, triggering the call.
 
 
 # Source
