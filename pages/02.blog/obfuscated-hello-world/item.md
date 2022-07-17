@@ -1,4 +1,4 @@
-In this article we go over the most obscure “Hello, world!” Python program I have ever seen.
+This is the most obfuscated “Hello, world!” program I have ever seen!
 
 ===
 
