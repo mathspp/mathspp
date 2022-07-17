@@ -1,0 +1,13 @@
+date: 17-07-2022 12:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This is the most obfuscated “Hello, world!” program I have ever seen!"
+    og:image: "https://mathspp.com/blog/obfuscated-hello-world/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/obfuscated-hello-world/thumbnail.png"
+slug: "obfuscated-hello-world"
+taxonomy:
+    category: [blogpost]
+    tag:
+      - "programming"
+      - "python"
+title: "Obfuscated "Hello, world!"
