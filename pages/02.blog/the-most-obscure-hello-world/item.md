@@ -23,7 +23,7 @@ def __() -> f"{_:Hello, world!}": ...
 _._
 ```
 
-If you run this program with Python 3.10+, the output is `"Hello, world!"`.
+If you run this program with Python 3.9+, the output is `"Hello, world!"`.
 But how does that work?
 
 I will walk you through what is going on.
