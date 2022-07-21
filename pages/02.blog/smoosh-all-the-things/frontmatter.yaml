@@ -1,0 +1,13 @@
+date: 21-07-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This is the written version of my EuroPython 2022 lightning talk “Smoosh all the things”."
+    og:image: "https://mathspp.com/blog/smoosh-all-the-things/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/smoosh-all-the-things/thumbnail.png"
+slug: "smoosh-all-the-things"
+taxonomy:
+    category: [blogpost]
+    tag:
+      - "programming"
+      - "python"
+title: "Smoosh all the things"
