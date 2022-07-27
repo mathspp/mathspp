@@ -1,0 +1,26 @@
+date: 27-07-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "How do you create a Python package? How do you set up automated testing and code coverage? How do you publish the package? That's what this article teaches you."
+    og:image: https://mathspp.com/blog/how-to-create-a-python-package-in-2022/thumbnail.png
+    twitter:image: https://mathspp.com/blog/how-to-create-a-python-package-in-2022/thumbnail.png
+references:
+    - "Poetry documentation, [https://python-poetry.org/docs/](https://python-poetry.org/docs/) [last accessed 21-06-2022];"
+    - "Poetry documentation, Configuring credentials, [https://python-poetry.org/docs/repositories/#configuring-credentials](https://python-poetry.org/docs/repositories/#configuring-credentials) [last accessed 21-06-2022];"
+    - "“How to make an awesome Python package”, [https://antonz.org/python-packaging/](https://antonz.org/python-packaging/) [last accessed 27-07-2022];"
+    - "Pre-commit, [https://pre-commit.com/](https://pre-commit.com/) [last accessed 21-06-2022];"
+    - "tox, `pyproject.toml` tox legacy ini, [https://tox.wiki/en/latest/example/basic.html#pyproject-toml-tox-legacy-ini](https://tox.wiki/en/latest/example/basic.html#pyproject-toml-tox-legacy-ini) [last accessed 25-06-2022];"
+    - "tox, Packaging, [https://tox.wiki/en/latest/example/package.html](https://tox.wiki/en/latest/example/package.html) [last accessed 25-06-2022];"
+    - "mccabe, McCabe complexity checker for Python, [https://pypi.org/project/mccabe/](https://pypi.org/project/mccabe/) [last accessed 28-06-2022];"
+    - "Coverage.py documentation, [https://coverage.readthedocs.io/en/6.4.1/index.html](https://coverage.readthedocs.io/en/6.4.1/index.html) [last accessed 28-06-2022];"
+    - "pytest documentation, [https://docs.pytest.org/en/7.1.x/](https://docs.pytest.org/en/7.1.x/) [last accessed 28-06-2022];"
+    - "GitHub Actions documentation, [https://docs.github.com/en/actions](https://docs.github.com/en/actions) [last accessed 25-07-2022];"
+    - "Pylint documentation, [https://pylint.pycqa.org/en/latest](https://pylint.pycqa.org/en/latest) [last accessed 25-07-2022];"
+    - "Codecov, [https://about.codecov.io/](https://about.codecov.io/) [last accessed 25-07-2022];"
+    - "“Python in GitHub Actions”, Hynek Schlawack, [https://hynek.me/articles/python-github-actions](https://hynek.me/articles/python-github-actions) [last accessed 25-07-2022];"
+taxonomy:
+    category: blogpost
+    tag:
+      - programming
+      - python
+title: "How to create a Python package in 2022"
