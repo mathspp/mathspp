@@ -20,8 +20,14 @@ Nowadays, you can also set up a variety of other things to make your life easier
  - ...
 
 This article will guide you through all of these steps.
+I want to create a Python package with all the bells and whistles,
+so I need to figure out how that is done.
 However, be mindful that this article is my account of my findings as I try to figure out how to set everything up myself.
 If you notice I am doing something wrong, _do_ let me know!
+
+! Again, this article contains **more than what is needed** to create and publish a Python package.
+! If you want the bare minimums (and depending on what you define as “the bare minimums”),
+! it should be enough to read up until the section “[Write tests](#Write-tests)”.
 
 
 # What is the package for?
