@@ -27,7 +27,7 @@ If you notice I am doing something wrong, _do_ let me know!
 
 ! Again, this article contains **more than what is needed** to create and publish a Python package.
 ! If you want the bare minimums (and depending on what you define as “the bare minimums”),
-! it should be enough to read up until the section “[Write tests](#Write-tests)”.
+! it should be enough to read up until the section “[Write tests](#write-tests)”.
 
 
 # What is the package for?
