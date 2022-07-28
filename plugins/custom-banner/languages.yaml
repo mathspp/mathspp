@@ -1,0 +1,26 @@
+en:
+  PLUGIN_CUSTOM_BANNER:
+    CONTENT: Banner content
+    CONTENT_HELP: Banner content must be valid HTML
+    BG_COLOUR: Banner (background) colour
+    BG_COLOUR_HELP: The colour of the banner background
+    FG_COLOUR: Text (foreground) colour
+    FG_COLOUR_HELP: The colour of the banner text
+    BOX_SHADOW: Show box shadow
+    BOX_SHADOW_HELP: Display a box shadow beneath the banner
+    BUTTON_TEXT: Button text
+    BUTTON_TEXT_HELP: Button text must be valid HTML
+    BUTTON_URL: Button URL
+    BUTTON_URL_HELP: The location that the button links to
+    DISMISS_TEXT: Dismiss button text
+    DISMISS_TEXT_HELP: Dismiss text must be valid HTML
+    DISMISS_BUTTON: Show dismiss button
+    DISMISS_BUTTON_HELP: Show a dismiss button to hide the banner for 30 mins
+    CDN_FIX: Cloudflare/CDN Fix
+    CDN_FIX_HELP: Use client-side JS to hide banner, avoiding CDN cacheing issues
+    EXCLUDE_PAGES: Excluded pages
+    EXCLUDE_PAGES_HELP: Choose any pages you don't want the banner to appear on
+    APPEARANCE: Appearance
+    BEHAVIOUR: Behaviour
+    POSITION: Banner position
+    POSITION_HELP: Choose where the banner should appear
