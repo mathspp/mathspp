@@ -25,8 +25,8 @@ so I need to figure out how that is done.
 However, be mindful that this article is my account of my findings as I try to figure out how to set everything up myself.
 If you notice I am doing something wrong, _do_ let me know!
 
-! Again, this article contains **more than what is needed** to create and publish a Python package.
-! If you want the bare minimums (and depending on what you define as “the bare minimums”),
+! This article contains **more than what is needed** to create and publish a Python package.
+! If you want the bare minimums (which also depends on what you define as “the bare minimums”),
 ! it should be enough to read up until the section “[Write tests](#write-tests)”.
 
 
@@ -809,6 +809,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           python -m pip install tox tox-gh-actions
+
       - name: Run tox
         run: tox
 ```
@@ -1127,6 +1128,202 @@ If you go to [shields.io][shields] you can find _hundreds_ of different badges t
 Just have fun selecting all the appropriate badges you want to add!
 
 
+# Tidying up
+
+At this point, I published this article and it got some attention on Twitter,
+which meant I got **lots** of good suggestions for improvements!
+
+Here are the implementations of some of those suggestions.
+
+
+## Modifying the code layout to use `src`
+
+As it turns out, it is a good idea to have your source code one level deeper,
+inside a folder `src`.
+[This helps you out when testing your code][use-src-layout] because it helps you catch import issues with submodules.
+You can read the article I linked for more information, but fixing this is easy:
+
+ 1. Add a folder `src` in the root directory, inside which we move the folder `extendedjson` with the source code of the package.
+ 2. Fix other paths, like the Scriv configuration.
+
+Fixing Scriv's configuration is a piece of cake.
+Just go to the file `pyproject.toml` and change this setting:
+
+```toml
+[tool.scriv]
+# ...
+version = "literal: src/extendedjson/__init__.py: __version__"
+```
+
+
+## Running linting in tox through pre-commit
+
+Another thing that was suggested to me was deduplicating some effort.
+As of now, pre-commit runs some linting and then tox reruns all the linting for all the Python environments.
+This has some drawbacks:
+
+ - linting is run in triplicate;
+ - tox and pre-commit may run different versions of the linters; and
+ - I can commit something that passes the pre-commit but then makes CI fail.
+
+This can be fixed if we choose to run linting through pre-commit.
+First, I need to set up pre-commit to use all the linters I care about:
+
+```yaml
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: check-toml
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+
+  - repo: https://github.com/psf/black
+    rev: 22.3.0
+    hooks:
+      - id: black
+        args: ["--check"]
+
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.10.1
+    hooks:
+      - id: isort
+        args: ["--check", "--profile", "black"]
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 4.0.1
+    hooks:
+    - id: flake8
+      additional_dependencies: [mccabe]
+      args: ["--max-line-length", "88", "--max-complexity", "10"]
+
+  - repo: https://github.com/PyCQA/pylint/
+    rev: v2.14.5
+    hooks:
+    - id: pylint
+      exclude: tests/  # Prevent files in tests/ to be passed in to pylint.
+```
+
+This is just an extension to what was already here.
+Then, I need to configure tox to have an environment specific for linting.
+By creating a separate environment, I manage to speed up some of the CI checks.
+
+Here is the new tox configuration:
+
+```ini
+[tox]
+isolated_build = True
+envlist =
+    py38,
+    py39,
+    py310,
+    linting,
+
+[testenv]
+deps =
+    coverage
+    pytest
+changedir = {envtmpdir}
+commands =
+    pytest {toxinidir}
+    coverage run --source=extendedjson --branch -m pytest {toxinidir}
+    coverage report -m --fail-under 100
+    coverage xml
+
+[testenv:linting]
+deps = pre-commit
+commands = pre-commit run --all-files --show-diff-on-failure
+
+[gh-actions]
+python =
+    3.8: py38
+    3.9: py39
+    3.10: py310, linting
+```
+
+We created a new environment `linting` which uses pre-commit to run linting on all files.
+As simple as that.
+Then, we tell tox to run the environment `linting` when GitHub actions runs Python 3.10.
+(We need to add `linting` to _some_ Python version, otherwise linting doesn't run.)
+
+
+## Check coverage only once
+
+Now that we went through all the effort of not triplicating the linting,
+might as well not triplicate the code coverage reports as well.
+
+In order to do this, we also create a new tox environment just for coverage:
+
+```ini
+[testenv:coverage]
+deps =
+    pytest
+    coverage
+commands =
+    coverage run --source=extendedjson --branch -m pytest {toxinidir}
+    coverage report -m --fail-under 100
+    coverage xml
+```
+
+Now, recall that we changed directories and are running testing and coverage from a different place.
+So, the coverage report also gets written to a different path,
+which means that Codecov can't find it by default.
+We need to fix this, for example, by changing the `coverage xml` command so that the report is written to a path where Codecov can find it:
+
+```ini
+[testenv:coverage]
+# ...
+commands =
+    # ...
+    coverage xml -o {toxinidir}/coverage.xml
+```
+
+Then, once again, we need to configure the section `[gh-actions]` to add the environment `coverage`
+(which needs to be listed at the top as well, in `envlist`) to a Python version.
+Finally, we need to modify our build YAML file so that CI only tries to upload the coverage report for the correct Python version(s).
+
+So, here are the other changes to the file `tox.ini`:
+
+```ini
+[tox]
+isolated_build = True
+envlist =
+    # ...
+    coverage
+
+# ...
+
+[gh-actions]
+python =
+    3.8: py38
+    3.9: py39, coverage
+    3.10: py310, linting
+```
+
+Finally, we add a condition to the file `build.yaml` in the step that uploads code coverage reports:
+
+```yaml
+name: extendedjson CI
+# ...
+
+jobs:
+  build:
+    # ...
+    steps:
+      # ...
+      - name: Upload coverage to Codecov
+        # We only generate the coverage report in Python 3.9
+        if: "matrix.python-version == '3.9'"
+        uses: codecov/codecov-action@v2
+        with:
+          fail_ci_if_error: true
+
+```
+
+
 # Wrap up
 
 That is it for now.
@@ -1173,6 +1370,7 @@ feel free to leave a comment below!
 [Codecov]: https://about.codecov.io/
 [hynek-codecov]: https://hynek.me/articles/python-github-actions/#coverage
 [shields]: https://shields.io/
+[use-src-layout]: https://blog.ganssle.io/articles/2019/08/test-as-installed.html
 
 
 That's it for now! [Stay tuned][subscribe] and I'll see you around!

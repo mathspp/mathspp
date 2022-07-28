@@ -18,6 +18,7 @@ references:
     - "Pylint documentation, [https://pylint.pycqa.org/en/latest](https://pylint.pycqa.org/en/latest) [last accessed 25-07-2022];"
     - "Codecov, [https://about.codecov.io/](https://about.codecov.io/) [last accessed 25-07-2022];"
     - "“Python in GitHub Actions”, Hynek Schlawack, [https://hynek.me/articles/python-github-actions](https://hynek.me/articles/python-github-actions) [last accessed 25-07-2022];"
+    - "“Testing your python package as installed”, Paul Ganssle, [https://blog.ganssle.io/articles/2019/08/test-as-installed.html](https://blog.ganssle.io/articles/2019/08/test-as-installed.html) [last accessed 28-07-2022];"
 taxonomy:
     category: blogpost
     tag:
