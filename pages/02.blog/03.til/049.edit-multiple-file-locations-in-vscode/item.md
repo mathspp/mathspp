@@ -2,7 +2,7 @@ Today I learned how to edit multiple lines in the VS Code code editor.
 
 ===
 
-![A GIF animation showing multiple cursos being put in a VS Code editor window and then some changes being typed into all locations at once.](_editing_multiple_locations_in_vscode.gif)
+![A GIF animation showing multiple cursors being put in a VS Code editor window and then some changes being typed into all locations at once.](_editing_multiple_locations_in_vscode.gif)
 
 # How to edit multiple file locations in VS Code?
 
