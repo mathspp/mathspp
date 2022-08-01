@@ -38,7 +38,7 @@ There are going to be three levels, corresponding to three different letter layo
 
 ## Level 1
 
-![Left to right, top to bottom the letters are ADEG / BCFH](lvl1.png "ADEG / BCFH")
+![Left to right, top to bottom the letters are ADEH / BCFG](lvl1.png "ADEH / BCFG")
 
 
 ## Level 2
