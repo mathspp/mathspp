@@ -57,10 +57,9 @@ Just use the method `insort`:
 ```
 
 The module `bisect` has four more methods: `bisect_left`, `bisect_right`, `insort_left`, and `insort_right`...
+The `_left` and `_right` tell you where to place ties (elements that are equal).
 
-The `_left` and `_right` where to place ties (elements that are equal).
-
-The methods `bisect` and `insort` match their `_right` variants.
+The methods `bisect` and `insort`, shown above, match their `_right` variants.
 
 
 !!!! This article was generated automatically from [this thread](https://twitter.com/mathsppblog/status/1557367701252734976) I published on Twitter [@mathsppblog][mathsppblog].
