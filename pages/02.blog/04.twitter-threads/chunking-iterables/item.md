@@ -5,15 +5,13 @@ metadata:
     description: "This short article shows how to chunk iterables into pieces of a fixed length."
     og:image: https://mathspp.com/blog/twitter-threads/thumbnail.png
     twitter:image: https://mathspp.com/blog/twitter-threads/thumbnail.png
-references:
-  - "Python 3 docs, The Python Standard Library, `bisect`, [https://docs.python.org/3/library/bisect.html](https://docs.python.org/3/library/bisect.html) [last accessed 10-08-2022];"
-slug: bisect-module
+slug: chunking-iterables
 taxonomy:
     category: twitter thread
     tag:
       - programming
       - python
-title: "bisect module"
+title: "Chunking iterables"
 ---
 
 This short article shows how to chunk iterables into pieces of a fixed length.
