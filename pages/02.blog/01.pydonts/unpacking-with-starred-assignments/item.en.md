@@ -82,6 +82,27 @@ Traceback (most recent call last):
 ValueError: not enough values to unpack (expected at least 1, got 0)
 ```
 
+Here is a simple example that hints at the practical use cases of this feature.
+The string method `.split` accepts a second argument called `maxsplit` that specifies the maximum number of splits that we want:
+
+```py
+>>> sentence = "This is a sentence with many words."
+>>> sentence.split(" ")
+['This', 'is', 'a', 'sentence', 'with', 'many', 'words.']
+>>> sentence.split(" ", maxsplit=3)
+['This', 'is', 'a', 'sentence with many words.']
+```
+
+By making use of starred assignment, we can easily get the first three words of a sentence:
+
+```py
+>>> *first_three, rest = sentence.split(" ", 3)
+>>> first_three
+['This', 'is', 'a']
+>>> rest
+'sentence with many words.'
+```
+
 # Examples in code
 
 Here are a couple of examples in some actual code, to give more context.
