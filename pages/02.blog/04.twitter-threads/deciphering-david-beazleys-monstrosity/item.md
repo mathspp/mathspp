@@ -90,7 +90,7 @@ def fact(n, c):
             eqv(n, 1, lambda r1:  # Is n equal to 1?
             bnz(r1, lambda: c(r0), lambda:  # If it is, call c(r0) and end, if not...
             mul(n, r0, lambda r2:  # multiply n with r0 and call it r2, then
-            sub(n, 1, lambda r3:  # compute n - 1 and call it r2, and
+            sub(n, 1, lambda r3:  # compute n - 1 and call it r3, and
             loop(r3, r2)))))))\   # go to the top, with the new values for n and r0.
     (n, 1)
 ```
