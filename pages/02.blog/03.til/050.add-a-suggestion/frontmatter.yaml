@@ -1,0 +1,15 @@
+date: 25-08-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned that you can add suggestions directly when reviewing pull requests on GitHub."
+    og:image: https://mathspp.com/blog/til/050/thumbnail.png
+    twitter:image: https://mathspp.com/blog/til/050/thumbnail.png
+routes:
+    aliases:
+        - "/blog/til/050"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - github
+title: "TIL #050 – add a suggestion"
+visible: false
