@@ -102,7 +102,7 @@ I use it when recording videos and demoing things.
 ```
 
 
-!!!! This article was generated automatically from a thread I published on Twitter [@mathsppblog][mathsppblog].
+!!!! This article was generated automatically from [this thread](https://twitter.com/mathsppblog/status/1566777236035870720) I published on Twitter [@mathsppblog][mathsppblog].
 !!!! Then it was edited lightly.
 
 [mathsppblog]: https://twitter.com/mathsppblog
