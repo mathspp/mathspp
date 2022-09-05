@@ -1,0 +1,16 @@
+date: 05-09-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I (re)learned Heron's formula to compute the area of a triangle from its three sides."
+    og:image: https://mathspp.com/blog/til/051/thumbnail.png
+    twitter:image: https://mathspp.com/blog/til/051/thumbnail.png
+routes:
+    aliases:
+        - "/blog/til/051"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - geometry
+      - mathematics
+title: "TIL #051 – Heron's formula"
+visible: false
