@@ -8,7 +8,7 @@ Today I (re)learned how to delete a file in Python with the module pathlib.
 
 The module `pathlib` is one of the modules I use the most,
 but I keep forgetting how to delete files with it.
-I always expect a method `remove` or `rm` to exist,
+I always expect a method `remove`, `rmfile`, or `rm` to exist,
 especially because the method `rmdir` is the method that removes directories.
 
 Alas, the `pathlib.Path` method to remove a file is `unlink`!
