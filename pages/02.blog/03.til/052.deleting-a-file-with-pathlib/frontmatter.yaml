@@ -1,0 +1,16 @@
+date: 07-09-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I (re)learned how to delete a file in Python with the module pathlib."
+    og:image: https://mathspp.com/blog/til/052/thumbnail.png
+    twitter:image: https://mathspp.com/blog/til/052/thumbnail.png
+routes:
+    aliases:
+        - "/blog/til/052"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - python
+title: "TIL #052 – deleting a file with pathlib"
+visible: false
