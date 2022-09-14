@@ -12,7 +12,7 @@ Of those:
  - 11 are for the exponent; and
  - 52 are for the fraction.
 
-[!["A diagram representing the 64 bits of doubles."](_float_diagram_light.svg "A diagram representing the 64 bits of doubles.")][^1]
+!["A diagram representing the 64 bits of doubles."](_float_diagram_light.svg "A diagram representing the 64 bits of doubles. Original by Codekaizen on Wikipedia, licensed under CC BY-SA 4.0.")]
 
 We can verify experimentally that Python floats use 52 bits to store the fraction.
 The number `1 << 53` is an exact integer:
@@ -87,8 +87,6 @@ The fact that `n`, `n + 2`, `n + 4`, ... give the correct results,
 and `n + 1`, `n + 3`, `n + 5`, ... don't,
 together with the fact that this phenomenon started at `n = 1 << 53`
 and not `n = 1 << 52` shows that Python floats use 52 bits to store the fraction of a number.
-
-[^1]: Original by Codekaizen on Wikipedia. Licensed under CC BY-SA 4.0.
 
 
 That's it for now! [Stay tuned][subscribe] and I'll see you around!
