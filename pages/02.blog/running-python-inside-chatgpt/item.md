@@ -111,6 +111,7 @@ But at least it showed signs of _understanding_ what I wanted, taking into accou
 Alright, so ChatGPT seems to understand the basic function `print` and it knows the difference between the REPL prompt (`>>>`) and the results that do not have the prompt.
 
 !!!! x = 3
+!!!! 
 !!!! y = 15
 
 ! ```py
@@ -123,7 +124,9 @@ Great!
 Now, things start to get interesting:
 
 !!!! x + y
+!!!! 
 !!!! y ** x
+!!!! 
 !!!! list(range(y))
 
 ! ```py
