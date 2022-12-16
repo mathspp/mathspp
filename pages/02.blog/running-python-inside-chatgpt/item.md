@@ -103,16 +103,20 @@ But at least it showed signs of _understanding_ what I wanted, taking into accou
 
 !!!! print("Hello, world!")
 
+! ```py
 ! >>> print("Hello, world!")
 ! Hello, world!
+! ```
 
 Alright, so ChatGPT seems to understand the basic function `print` and it knows the difference between the REPL prompt (`>>>`) and the results that do not have the prompt.
 
 !!!! x = 3
 !!!! y = 15
 
+! ```py
 ! >>> x = 3
 ! >>> y = 15
+! ```
 
 ChatGPT also knows that assignments are statements that do not produce results!
 Great!
@@ -122,12 +126,14 @@ Now, things start to get interesting:
 !!!! y ** x
 !!!! list(range(y))
 
+! ```py
 ! >>> x + y
 ! 18
 ! >>> y ** x
 ! 3375
 ! >>> list(range(y))
 ! [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+! ```
 
 Here, ChatGPT shows it **remembers** the values that we assigned to the previous variables and is able to use them!
 
@@ -135,10 +141,12 @@ Here, ChatGPT shows it **remembers** the values that we assigned to the previous
 !!!!     if n <= 1: return 1
 !!!!     return fib(n - 1) + fib(n - 2)
 
+! ```py
 ! >>> def fib(n):
 ! ...     if n <= 1: return 1
 ! ...     return fib(n - 1) + fib(n - 2)
 ! ...
+! ```
 
 Once more, ChatGPT shows it knows the Python REPL, because multiline blocks (like function definitions) start with the `>>>` prefix but subsequent lines get the prefix `...`.
 
