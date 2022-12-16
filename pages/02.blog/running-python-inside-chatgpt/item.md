@@ -250,7 +250,9 @@ ChatGPT got it right but it keeps giving unsolicited explanations:
 > my_dict = {"one": 1, "two": 2, "three": 3}
 > ```
 
+! ```py
 ! >>> my_dict = {"one": 1, "two": 2, "three": 3}
+! ```
 ! 
 ! This code creates a dictionary with three key-value pairs: "one" is mapped to 1, "two" is mapped to 2, and "three" is mapped to 3. Dictionaries in Python are unordered collections of key-value pairs, and are often used to store data that needs to be quickly retrieved using a unique key. The keys in a dictionary must be unique, and the values can be of any type. You can access the values in a dictionary using their corresponding keys, or you can use the items(), keys(), and values() methods to iterate over the key-value pairs, keys, or values in a dictionary, respectively.
 
@@ -344,10 +346,12 @@ I restarted the conversation and tried a new prompt.
 
 Let us step it up a notch by importing a non-trivial tool from the standard library, a loop with two looping variables, and using a less common parameter of the function `print`.
 
+! ```py
 ! >>> from itertools import pairwise
 ! >>> for a, b in pairwise(range(10)):
 ! ...     print(a + b, end = ", ")
 ! 1, 3, 5, 7, 9,
+! ```
 ! The pairwise function is a generator that returns successive pairs of elements from an iterable. In this case, we are iterating over the pairs of elements returned by pairwise and printing the sum of each pair. The output will be a sequence of integers starting at 1 and incrementing by 2 until the end of the range.
 ! 
 ! For example, the first pair of elements returned by pairwise is (0, 1), and the sum of these elements is 1. The second pair is (1, 2), and the sum of these elements is 3, and so on.
@@ -355,8 +359,8 @@ Let us step it up a notch by importing a non-trivial tool from the standard libr
 ChatGPT managed to understand _exactly_ what we were computing.
 Sadly, it didn't give the correct result.
 
-> #! You did not reply with the correct, full result.
-> #! Also, I told you to only explain lines with #?. If a line does not have a #?, you cannot explain it.
+> \#! You did not reply with the correct, full result.
+> \#! Also, I told you to only explain lines with #?. If a line does not have a #?, you cannot explain it.
 > ```
 > for a, b in pairwise(range(3, 12)):
 >     print(a + b, end=", ")
@@ -431,7 +435,7 @@ I tried making it simpler by removing the instructions regarding `#?`.
 ! Hello, world!
 ! ```
 
-> #! Import the module that contains information about the current Python version
+> \#! Import the module that contains information about the current Python version
 
 ! ```py
 ! >>> import sys
@@ -517,7 +521,7 @@ When I got this output back, I almost fell from the chair.
 Notice that `itertools.tee` isn't a trivial tool and ChatGPT knew how to use it to implement `triplewise`, a generalisation of `pairwise`.
 Then, it succeeded in using it to compute the sums of the first triples of numbers and this time the result is absolutely correct!
 
-> #! Write a function called `fib` that returns the nth fibonacci number
+> \#! Write a function called `fib` that returns the nth fibonacci number
 
 ! ```py
 ! >>> def fib(n):
@@ -602,8 +606,8 @@ But it is very far from the correct result, which starts with 12233... and has a
 ChatGPT understands dunder methods!
 It knows `__init__` is used to initialise objects and it knows `__add__` is used to add objects together!
 
-> #! Remember that you are not supposed to write code explanations.
-> #! Please, do not write code explanations.
+> \#! Remember that you are not supposed to write code explanations.
+> \#! Please, do not write code explanations.
 > 
 > ```
 > MyInt(5) + 14.5
@@ -659,7 +663,7 @@ AttributeError: 'float' object has no attribute 'value'
 
 Now, I tried telling ChatGPT to not explain code and it just decided to create a random piece of code:
 
-> #! Do not explain my code, even if it has errors.
+> \#! Do not explain my code, even if it has errors.
 
 ! ```py
 ! >>> def foo(x):
@@ -697,13 +701,13 @@ At this point, my next request timed out so I had to start a new conversation.
 **Finally!**
 ChatGPT didn't write an explanation, even after an exception was raised!
 
-> #! import the module that lets me generate random numbers
+> \#! import the module that lets me generate random numbers
 
 ! ```py
 ! >>> import random
 ! ```
 
-> #! write a list comprehension that generates three random integers between 0 and 255, inclusive
+> \#! write a list comprehension that generates three random integers between 0 and 255, inclusive
 
 ! ```py
 ! >>> [random.randint(0, 255) for _ in range(3)]
@@ -872,7 +876,7 @@ The three labels A, B, and C are printed in the correct order!
 
 Looks like we are on a winning streak, so let us see if ChatGPT can handle large numbers properly.
 
-> #! Write an efficient implementation of the fibonacci function
+> \#! Write an efficient implementation of the fibonacci function
 
 ! ```py
 ! >>> def fibonacci(n: int) -> int:
