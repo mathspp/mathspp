@@ -1,0 +1,15 @@
+date: 16-12-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Running Python inside ChatGPT shows some amazing capabilities that ChatGPT has to understand Python code and evaluate it for you."
+    og:image: https://mathspp.com/blog/running-python-inside-chatgpt/thumbnail.png
+    twitter:image: https://mathspp.com/blog/running-python-inside-chatgpt/thumbnail.png
+
+taxonomy:
+    category: blogpost
+    tag:
+      - chatgpt
+      - machine learning
+      - programming
+      - python
+title: "Running Python inside ChatGPT"
