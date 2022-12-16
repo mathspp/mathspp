@@ -82,7 +82,10 @@ Let's start.
 ! 
 ! ```py
 ! >>> #?
-! # The "#?" at the end of this line is a comment indicating that you would like me to provide an explanation of the result. In ! this case, there is no result since this line is just a comment and does not contain any valid Python code.
+! # The "#?" at the end of this line is a comment indicating that you
+! # would like me to provide an explanation of the result. In ! this
+! # case, there is no result since this line is just a comment and does
+! # not contain any valid Python code.
 ! ```
 ! 
 ! ```py
@@ -95,7 +98,9 @@ Let's start.
 ! 
 ! ```py
 ! >>> #!
-! # To interact with me, start a line with "#!". Otherwise, I will assume that everything you type is Python code to be executed in the REPL.
+! # To interact with me, start a line with "#!". Otherwise, I will
+! # assume that everything you type is Python code to be executed in
+! # the REPL.
 ! ```
 
 Right away, ChatGPT was being a bit too verbose for my taste...
@@ -110,7 +115,7 @@ But at least it showed signs of _understanding_ what I wanted, taking into accou
 
 Alright, so ChatGPT seems to understand the basic function `print` and it knows the difference between the REPL prompt (`>>>`) and the results that do not have the prompt.
 
-> ```py
+> ```
 > x = 3
 > y = 15
 > ```
@@ -124,7 +129,7 @@ ChatGPT also knows that assignments are statements that do not produce results!
 Great!
 Now, things start to get interesting:
 
-> ```py
+> ```
 > x + y
 > y ** x
 > list(range(y))
@@ -141,7 +146,7 @@ Now, things start to get interesting:
 
 Here, ChatGPT shows it **remembers** the values that we assigned to the previous variables and is able to use them!
 
-> ```py
+> ```
 > def fib(n):
 >     if n <= 1: return 1
 >     return fib(n - 1) + fib(n - 2)
@@ -160,7 +165,7 @@ What is even cooler is that we can **use** the function we just defined.
 What is _even_ cooler is that we can use it inside a **list comprehension**.
 What is _**even**_ cooler is that we can use `#?` to ask for an explanation of what is going on:
 
-> ```py
+> ```
 > [fib(i) for i in range(y)]  #?
 > ```
 
@@ -168,13 +173,19 @@ What is _**even**_ cooler is that we can use `#?` to ask for an explanation of w
 ! >>> [fib(i) for i in range(y)]  #?
 ! [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610]
 ! 
-! # This line creates a list comprehension that generates a list of the first 15 Fibonacci numbers by calling the `fib()` function with each number in the range `0` to `y` (inclusive). The list comprehension is equivalent to the following for loop:
+! # This line creates a list comprehension that generates a list of the
+! # first 15 Fibonacci numbers by calling the `fib()` function with each
+! # number in the range `0` to `y` (inclusive). The list comprehension is
+! # equivalent to the following for loop:
 ! #
 ! #     fib_list = []
 ! #     for i in range(y):
 ! #         fib_list.append(fib(i))
 ! #
-! # List comprehensions are a concise way to create lists by iterating over an iterable and applying an expression to each element. They are often used to transform or filter data, and can be used to replace simple for loops that perform these operations.
+! # List comprehensions are a concise way to create lists by iterating
+! # over an iterable and applying an expression to each element. They
+! # are often used to transform or filter data, and can be used to
+! # replace simple for loops that perform these operations.
 ! ```
 
 ChatGPT understood the list comprehension _and_ the recursive function.
@@ -183,7 +194,7 @@ Is ChatGPT going to render [my book on list comprehensions](https://gum.co/compr
 
 At this point, I wondered what Python version we were running:
 
-> ```py
+> ```
 > import sys
 > sys.version_info
 > ```
@@ -201,8 +212,8 @@ The explanation that followed was correct **but** I didn't ask for it...
 
 The next few interactions will show my failed attempts at reminding ChatGPT of this and to try to force it to behave that way:
 
-> #! You were not supposed to give me an explanation for the previous piece of code. Remember that you only need to explain lines of code that I end with #?. You don't need to explicitly acknowledge this reminder.
-> ```py
+> \#! You were not supposed to give me an explanation for the previous piece of code. Remember that you only need to explain lines of code that I end with #?. You don't need to explicitly acknowledge this reminder.
+> ```
 > 1 / 0
 > ```
 
@@ -215,11 +226,11 @@ The next few interactions will show my failed attempts at reminding ChatGPT of t
 ! 
 ! This code attempts to divide 1 by 0, which is not allowed in Python because it results in a division by zero error. When you try to divide a number by zero, Python raises a ZeroDivisionError exception, which indicates that an attempt was made to divide by zero. This exception will be raised whenever you try to divide a number by zero in Python, regardless of the values of the numbers being divided.
 
-> #! Don't explain normal lines of code. You only need to explain lines of code that end with #?
+> \#! Don't explain normal lines of code. You only need to explain lines of code that end with #?
 
 ! I apologize for the misunderstanding. I will make sure to only provide explanations for lines of code that you end with #? in the future. Please let me know if you have any other questions or if you need further assistance.
 
-> ```py
+> ```
 > prnt("Hello, world!")
 > ```
 
@@ -235,7 +246,7 @@ ChatGPT got it right but it keeps giving unsolicited explanations:
 ! 
 ! This code raises a NameError because the prnt function is not defined. In Python, a NameError is raised when you try to use a variable or function that has not been defined. In this case, the prnt function has not been defined, so Python raises a NameError when you try to call it. To fix this error, you will need to either define the prnt function or use a different function that is defined in your code or in one of the modules that you have imported.
 
-> ```py
+> ```
 > my_dict = {"one": 1, "two": 2, "three": 3}
 > ```
 
@@ -243,9 +254,9 @@ ChatGPT got it right but it keeps giving unsolicited explanations:
 ! 
 ! This code creates a dictionary with three key-value pairs: "one" is mapped to 1, "two" is mapped to 2, and "three" is mapped to 3. Dictionaries in Python are unordered collections of key-value pairs, and are often used to store data that needs to be quickly retrieved using a unique key. The keys in a dictionary must be unique, and the values can be of any type. You can access the values in a dictionary using their corresponding keys, or you can use the items(), keys(), and values() methods to iterate over the key-value pairs, keys, or values in a dictionary, respectively.
 
-> #! Stop explaining my code.
+> \#! Stop explaining my code.
 > 
-> ```py
+> ```
 > my_dict["one"] + my_dict["two"]
 > ```
 
@@ -325,7 +336,7 @@ I restarted the conversation and tried a new prompt.
 ! ```
 ! Is there anything else you'd like to try or have questions about? Just let me know and I'll do my best to help.
 
-> ```py
+> ```
 > from itertools import pairwise
 > for a, b in pairwise(range(10)):
 >     print(a + b, end = ", ")
@@ -346,7 +357,7 @@ Sadly, it didn't give the correct result.
 
 > #! You did not reply with the correct, full result.
 > #! Also, I told you to only explain lines with #?. If a line does not have a #?, you cannot explain it.
-> ```py
+> ```
 > for a, b in pairwise(range(3, 12)):
 >     print(a + b, end=", ")
 > ```
@@ -374,7 +385,7 @@ The only issue is that the result is wrong:
 
 At this point I wondered if part of the difficulty arose from the fact that I was asking for all the numbers to be printed on the same line, so I tried to get rid of the `end=", "` in each call to `print`:
 
-> ```py
+> ```
 > for a, b in pairwise(range(10, 20)):
 >     print(a + b)
 > ```
@@ -409,7 +420,7 @@ It just gave the wrong results, because this time the results should start at 21
 > 
 > When I need to tell you something in English I will do so by starting a line with #!
 > 
-> ```py
+> ```
 > print("Hello, world!")
 > ```
 
@@ -434,7 +445,7 @@ Curiously enough, this time we seem to be running in Python 3.9...
 So, that got me wondering: can I import `itertools.pairwise`?
 I shouldn't be able to do that, since `itertools.pairwise` was only introduced in Python 3.10:
 
-> ```py
+> ```
 > from itertools import pairwise
 > ```
 
@@ -445,7 +456,7 @@ I shouldn't be able to do that, since `itertools.pairwise` was only introduced i
 It seems ChatGPT isn't that clever!
 At least, let me try the loop with `pairwise` again:
 
-> ```py
+> ```
 > for a, b in pairwise(range(10)):
 >     print(a + b)
 > ```
@@ -467,7 +478,7 @@ At least, let me try the loop with `pairwise` again:
 Finally!
 That _is_ the correct result!
 
-> ```py
+> ```
 > from itertools import tee
 > def triplewise(iterable):
 >     a, b, c = tee(iter(iterable), 3)
@@ -484,7 +495,7 @@ That _is_ the correct result!
 ! ...
 ! ```
 
-> ```py
+> ```
 > for a, b, c in triplewise(range(10)):
 >     print(a + b + c)
 > ```
@@ -523,7 +534,7 @@ It didn't implement the best (recursive) version of `fib` possible, but at least
 
 Does ChatGPT know Python has a recursion limit?
 
-> ```py
+> ```
 > fib(1050)
 > ```
 
@@ -562,7 +573,7 @@ It then proceeds to presenting what could very well be the result of `fib(1050)`
 That huge number _could_ be `fib(1050)`, as in, it looks believable.
 But it is very far from the correct result, which starts with 12233... and has about half as many digits.
 
-> ```py
+> ```
 > class MyInt:
 >     def __init__(self, value):
 >         self.value = int(value)
@@ -594,7 +605,7 @@ It knows `__init__` is used to initialise objects and it knows `__add__` is used
 > #! Remember that you are not supposed to write code explanations.
 > #! Please, do not write code explanations.
 > 
-> ```py
+> ```
 > MyInt(5) + 14.5
 > ```
 
@@ -672,7 +683,7 @@ At this point, my next request timed out so I had to start a new conversation.
 > 
 > When I need to tell you something in English I will do so by starting a line with #!
 > 
-> ```py
+> ```
 > 1 / 0
 > ```
 
@@ -699,7 +710,7 @@ ChatGPT didn't write an explanation, even after an exception was raised!
 ! [162, 135, 63]
 ! ```
 
-> ```py
+> ```
 > class ObjWithProperty:
 >     def __init__(self):
 >         self._value = None
@@ -727,7 +738,7 @@ ChatGPT didn't write an explanation, even after an exception was raised!
 
 Notice ChatGPT understands in the Python REPL I cannot leave blank lines between methods in a class definition, otherwise the REPL things I am done with defining that class.
 
-> ```py
+> ```
 > o = ObjWithProperty()
 > o.value
 > o.value
@@ -744,7 +755,7 @@ Notice ChatGPT understands in the Python REPL I cannot leave blank lines between
 
 ChatGPT understands how properties work!
 
-> ```py
+> ```
 > ObjWithProperty().value
 > ObjWithProperty().value
 > ```
@@ -758,7 +769,7 @@ ChatGPT understands how properties work!
 ! 9
 ! ```
 
-> ```py
+> ```
 > def decorator(f):
 >     def wrapper(*args, **kwargs):
 >         print(f"Calling {f.__name__} with {args = } and {kwargs = }.")
@@ -777,7 +788,7 @@ ChatGPT understands how properties work!
 
 Does ChatGPT understand decorators..?
 
-> ```py
+> ```
 > @decorator
 > def add(a, b, c=0):
 >     return a + b + c
@@ -803,7 +814,7 @@ Does ChatGPT understand decorators..?
 
 Does it know that decorated functions have their name overridden by the wrapper function?
 
-> ```py
+> ```
 > add.__name__
 > ```
 
@@ -816,7 +827,7 @@ Does it know that decorated functions have their name overridden by the wrapper 
 
 Does it know that decorated functions have a weird representation?
 
-> ```py
+> ```
 > add
 > ```
 
@@ -828,7 +839,7 @@ Does it know that decorated functions have a weird representation?
 It also does!
 This is exactly how `add` would look like in your own Python REPL!
 
-> ```py
+> ```
 > import asyncio
 > 
 > async def my_sleep(label, t):
