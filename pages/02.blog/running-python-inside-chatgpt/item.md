@@ -101,8 +101,8 @@ Let's start.
 Right away, ChatGPT was being a bit too verbose for my taste...
 But at least it showed signs of _understanding_ what I wanted, taking into account the examples it gave and the things it said about `#!` and `#?`.
 
-!!!! print("Hello, world!")
-
+! > print("Hello, world!")
+! 
 ! ```py
 ! >>> print("Hello, world!")
 ! Hello, world!
