@@ -460,6 +460,7 @@ Finally, the method `str.casefold` can power many interesting applications and y
 
 
 [^1]: Feel free to leave a comment with your thoughts, drop me an email, or tweet at me @mathsppblog.
+
 [caseless-dict]: #how-to-implement-a-case-insensitive-dictionary-in-python
 [caseless-set]: #how-to-implement-a-case-insensitive-set-in-python
 [dunder-methods]: /blog/pydonts/dunder-methods
