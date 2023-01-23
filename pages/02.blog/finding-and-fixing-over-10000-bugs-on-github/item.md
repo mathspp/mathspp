@@ -1,4 +1,4 @@
-Learn how I found over +10,000 bugs in Python code all over GitHub and how all those bugs could have been fixed by importing the Python module string and using the built-in variables string.ascii_lowercase, string.ascii_uppercase, and string.digits.
+Learn how I found over +10,000 bugs in Python code all over GitHub and how all those bugs could have been fixed by importing the Python module string and using the constants `ascii_lowercase` and `ascii_uppercase`.
 
 ===
 
