@@ -1,0 +1,16 @@
+date: 23-01-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Learn how I found over +10,000 bugs in Python code all over GitHub and how all those bugs could have been fixed by importing the Python module string and using the built-in variables string.ascii_lowercase, string.ascii_uppercase, and string.digits."
+    og:image: "https://mathspp.com/blog/finding-and-fixing-over-10000-bugs-on-github/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/finding-and-fixing-over-10000-bugs-on-github/thumbnail.png"
+references:
+    - Python 3 Docs, `string` [https://docs.python.org/3/library/string.html](https://docs.python.org/3/library/string.html) [last accessed 23-01-2023];
+slug: "finding-and-fixing-over-10000-bugs-on-github"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - programming
+        - python
+title: Finding and fixing over 10,000 bugs on GitHub
