@@ -71,9 +71,7 @@ class CaseInsensitiveDict(dict):
 
     def __init__(self, seed=None, **kwargs):
         super().__init__()
-
-        if seed is None:
-            seed = {}
+        # Defer work to the method .update.
         self.update(seed)
         self.update(kwargs)
 
