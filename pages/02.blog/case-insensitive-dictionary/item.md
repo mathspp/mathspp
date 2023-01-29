@@ -51,6 +51,7 @@ Such an implementation is included below for reference:
 <details>
 <summary>Complete implementation of <code>CaseInsensitiveDict</code> if inheriting directly from <code>dict</code>.</summary>
 
+
 ```py
 _no_default = object()
 
@@ -123,6 +124,7 @@ class CaseInsensitiveDict(dict):
         for key, value in kwargs.items():
             self[key] = value
 ```
+
 
 </summary>
 
