@@ -126,7 +126,7 @@ class CaseInsensitiveDict(dict):
 ```
 
 
-</summary>
+</details>
 
 Stay tuned for the remainder of the article!
 
