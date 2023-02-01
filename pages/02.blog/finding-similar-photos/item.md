@@ -461,7 +461,14 @@ I hope you enjoyed this article and if you are keen to improve your program to m
 
 # Challenges 🚀
 
-<script async data-uid="567a561f23" src="https://mathspp.ck.page/567a561f23/index.js"></script>
+Get follow-up challenges:
+ - improve your photo similarity detection;
+ - optimise your program;
+ - make the program output beautiful with rich;
+ - and more!
+
+
+<script async data-uid="9d3297ef34" src="https://mathspp.ck.page/9d3297ef34/index.js"></script>
 
 
 [pillow]: https://pillow.readthedocs.io/en/stable/
