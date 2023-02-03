@@ -41,7 +41,8 @@ class FeedPlugin extends Plugin
                 ['autoload', 100000],
                 ['onPluginsInitialized', 0],
             ],
-            'onBlueprintCreated' => ['onBlueprintCreated', 0]
+            'onBlueprintCreated' => ['onBlueprintCreated', 0],
+            'onPageHeaders' => ['onPageHeaders', 0]
         ];
     }
 
@@ -157,6 +158,21 @@ class FeedPlugin extends Plugin
             $extends = $blueprints->get('feed');
             $blueprint->extend($extends, true);
             $inEvent = false;
+        }
+    }
+
+    /**
+     * Force UTF-8 char-set encoding via `Content-Type` header
+     *
+     * @param Event $e
+     * @return void
+     */
+    public function onPageHeaders(Event $e)
+    {
+        $headers = $e['headers'];
+        $content_type = $headers->{'Content-Type'} ?? null;
+        if ($content_type) {
+            $headers->{'Content-Type'} = "$content_type; charset=utf-8";
         }
     }
 }

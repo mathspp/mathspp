@@ -1,7 +1,7 @@
 name: Breadcrumbs
 type: plugin
 slug: breadcrumbs
-version: 1.6.1
+version: 1.6.2
 description: The **Breadcrumbs** plugin provides a simple method to display the depth of your content/navigation structure.
 icon: caret-square-o-right
 author:

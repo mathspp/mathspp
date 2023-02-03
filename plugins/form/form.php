@@ -21,9 +21,11 @@ use Grav\Common\Yaml;
 use Grav\Framework\Form\Interfaces\FormInterface;
 use Grav\Framework\Psr7\Response;
 use Grav\Framework\Route\Route;
+use Grav\Plugin\Form\BasicCaptcha;
 use Grav\Plugin\Form\Form;
 use Grav\Plugin\Form\Forms;
 use Grav\Plugin\Form\TwigExtension;
+use Grav\Common\HTTP\Client;
 use ReCaptcha\ReCaptcha;
 use ReCaptcha\RequestMethod\CurlPost;
 use RecursiveArrayIterator;
@@ -33,6 +35,7 @@ use RocketTheme\Toolbox\File\YamlFile;
 use RocketTheme\Toolbox\File\File;
 use RocketTheme\Toolbox\Event\Event;
 use RuntimeException;
+use Symfony\Contracts\HttpClient\Exception\TransportExceptionInterface;
 use Twig\Environment;
 use Twig\Extension\CoreExtension;
 use Twig\Extension\EscaperExtension;
@@ -134,6 +137,8 @@ class FormPlugin extends Plugin
 
             $this->grav->close($response);
         }
+
+        $this->processBasicCaptchaImage($uri);
 
         $this->enable([
             'onPageProcessed' => ['onPageProcessed', 0],
@@ -437,6 +442,7 @@ class FormPlugin extends Plugin
      * @param Event $event
      * @return void
      * @throws Exception
+     * @throws TransportExceptionInterface
      */
     public function onFormProcessed(Event $event): void
     {
@@ -509,6 +515,55 @@ class FormPlugin extends Plugin
                     return;
                 }
                 break;
+            case 'basic-captcha':
+                $captcha = new BasicCaptcha();
+                $captcha_value = trim($form->value('basic-captcha'));
+                if (!$captcha->validateCaptcha($captcha_value)) {
+                    $message = $params['message'] ?? $this->grav['language']->translate('PLUGIN_FORM.ERROR_BASIC_CAPTCHA');
+
+                    $this->grav->fireEvent('onFormValidationError', new Event([
+                        'form' => $form,
+                        'message' => $message
+                    ]));
+
+                    $event->stopPropagation();
+                    return;
+                }
+                break;
+            case 'turnstile':
+                /** @var Uri $uri */
+                $uri = $this->grav['uri'];
+
+                $turnstile_config = $this->config->get('plugins.form.turnstile');
+                $secret = $turnstile_config['secret_key'] ?? null;
+                $token = $form->getValue('cf-turnstile-response') ?? null;
+                $ip = Uri::ip();
+
+                $client = Client::getClient();
+                $response = $client->request('POST', 'https://challenges.cloudflare.com/turnstile/v0/siteverify', [
+                    'body' => [
+                        'secret' => $secret,
+                        'response' => $token,
+                        'remoteip' => $ip
+                    ]
+                ]);
+
+                $content = $response->toArray();
+
+                if (!$content['success']) {
+                    $message = $params['message'] ?? $this->grav['language']->translate('PLUGIN_FORM.ERROR_BASIC_CAPTCHA');
+
+                    $this->grav->fireEvent('onFormValidationError', new Event([
+                        'form' => $form,
+                        'message' => $message
+                    ]));
+
+                    $this->grav['log']->addWarning('Form Turnstile invalid: [' . $uri->route() . '] ' . json_encode($content));
+                    $event->stopPropagation();
+                    return;
+                }
+
+                break;
             case 'timestamp':
                 $label = $params['label'] ?? 'Timestamp';
                 $format = $params['format'] ?? 'Y-m-d H:i:s';
@@ -553,8 +608,7 @@ class FormPlugin extends Plugin
                     $this->grav['messages']->add($form->message, 'success');
                 }
 
-                $event['redirect'] = $url;
-                $event->stopPropagation();
+                $this->grav->redirect($url);
                 break;
             case 'reset':
                 if (Utils::isPositive($params)) {
@@ -780,7 +834,7 @@ class FormPlugin extends Plugin
      */
     public function addFormDefinition(PageInterface $page, string $name, array $form): void
     {
-        $route = $page->home() ? '/' : $page->route();
+        $route = ($page->home() ? '/' : $page->route()) ?? '/';
 
         if (!isset($this->forms[$route][$name])) {
             $form['_page_routable'] = !$page->isModule();
@@ -1257,5 +1311,16 @@ class FormPlugin extends Plugin
         $milliseconds = round(($utimestamp - $timestamp) * 1000000);
 
         return date(preg_replace('`(?<!\\\\)u`', sprintf('%06d', $milliseconds), $format), $timestamp);
+    }
+
+    protected function processBasicCaptchaImage(Uri $uri)
+    {
+        if ($uri->path() === '/forms-basic-captcha-image.jpg') {
+            $captcha = new BasicCaptcha();
+            $code = $captcha->getCaptchaCode();
+            $image = $captcha->createCaptchaImage($code);
+            $captcha->renderCaptchaImage($image);
+            exit;
+        }
     }
 }
