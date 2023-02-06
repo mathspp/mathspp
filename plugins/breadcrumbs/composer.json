@@ -1,5 +1,5 @@
 {
-  "name": "grav-plugin-breadcrumbs",
+  "name": "getgrav/breadcrumbs","name": "getgrav/breadcrumbs",
   "type": "grav-plugin",
   "description": "Breadcrumbs plugin for Grav CMS",
   "keywords": ["breadcrumbs"],

@@ -1,3 +1,11 @@
+# v1.6.2
+## 07/25/2022
+
+1. [](#improved)
+   * RTL Fixes [#37](https://github.com/getgrav/grav-plugin-breadcrumbs/pull/37)
+2. [](#bugfix)
+   * Composer name invalid format [#38](https://github.com/getgrav/grav-plugin-breadcrumbs/issues/38) 
+
 # v1.6.1
 ## 12/02/2020
 
@@ -8,9 +16,9 @@
 ## 04/22/2020
 
 1. [](#new)
-    * Added `schema.org/BreadcrumbList` [#29]
-    * Added per-page option to control breadcrumbs [#20]
-    * Added various translations [#17][#18][#19]
+    * Added `schema.org/BreadcrumbList` [#29](https://github.com/getgrav/grav-plugin-breadcrumbs/issues/29)
+    * Added per-page option to control breadcrumbs [#20](https://github.com/getgrav/grav-plugin-breadcrumbs/issues/20)
+    * Added various translations
     * Pass phpstan level 1 tests
     * Require Grav v1.6
 
@@ -18,7 +26,7 @@
 ## 10/24/2017
 
 1. [](#improved)
-    * Add option to ignore current page [#11]
+    * Add option to ignore current page [#11](https://github.com/getgrav/grav-plugin-breadcrumbs/issues/11)
     * Removed Grav trait in favor of `Grav::instance()`
 
 # v1.5.0

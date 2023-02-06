@@ -2,6 +2,7 @@ en:
   PLUGIN_CUSTOM_BANNER:
     CONTENT: Banner content
     CONTENT_HELP: Banner content must be valid HTML
+    CONTENT_DEFAULT: Custom Text added by the <b>Custom Banner</b> plugin (disable plugin to remove)
     BG_COLOUR: Banner (background) colour
     BG_COLOUR_HELP: The colour of the banner background
     FG_COLOUR: Text (foreground) colour
@@ -10,17 +11,61 @@ en:
     BOX_SHADOW_HELP: Display a box shadow beneath the banner
     BUTTON_TEXT: Button text
     BUTTON_TEXT_HELP: Button text must be valid HTML
+    BUTTON_TEXT_DEFAULT: Click me...
+    BUTTON: Show action button
+    BUTTON_HELP: Show an action button that points to a URL
     BUTTON_URL: Button URL
     BUTTON_URL_HELP: The location that the button links to
     DISMISS_TEXT: Dismiss button text
     DISMISS_TEXT_HELP: Dismiss text must be valid HTML
+    DISMISS_TEXT_DEFAULT: Dismiss
     DISMISS_BUTTON: Show dismiss button
     DISMISS_BUTTON_HELP: Show a dismiss button to hide the banner for 30 mins
     CDN_FIX: Cloudflare/CDN Fix
-    CDN_FIX_HELP: Use client-side JS to hide banner, avoiding CDN cacheing issues
-    EXCLUDE_PAGES: Excluded pages
-    EXCLUDE_PAGES_HELP: Choose any pages you don't want the banner to appear on
+    CDN_FIX_HELP: Use client-side JS to show/hide banner, avoiding CDN cacheing issues
+    SHOW_ON_PAGES: Only show on
+    SHOW_ON_PAGES_HELP: Only show the banner on the selected pages. Leave blank to show on all pages except excluded.
+    HIDE_ON_PAGES: Excluded pages
+    HIDE_ON_PAGES_HELP: Hide the banner from selected pages (even if included in show-on pages)
     APPEARANCE: Appearance
     BEHAVIOUR: Behaviour
     POSITION: Banner position
+    POSITION_BOTTOM: Bottom
+    POSITION_TOP: Top
     POSITION_HELP: Choose where the banner should appear
+
+de:
+  PLUGIN_CUSTOM_BANNER:
+    CONTENT: Banner Inhalt
+    CONTENT_HELP: Banner Inhalt muss korrekter HTML-Code sein
+    CONTENT_DEFAULT: Eigener Text, der durch das <b>Custom Banner</b> Plugin hinzugefügt wird (Plugin deaktivieren um ihn zu entfernen)
+    BG_COLOUR: Banner-Farbe
+    BG_COLOUR_HELP: Die Hintergrundfarbe des Banners
+    FG_COLOUR: Text-Farbe
+    FG_COLOUR_HELP: Die Farbe für den Banner-Text
+    BOX_SHADOW: Zeige Banner-Schatten
+    BOX_SHADOW_HELP: Zeigt einen Schatten unterhalb des Banners
+    BUTTON_TEXT: Button Text
+    BUTTON_TEXT_HELP: Button Text muss korrekter HTML-Code sein
+    BUTTON_TEXT_DEFAULT: Klick mich...
+    BUTTON: Show Aktion-Button
+    BUTTON_HELP: Zeigt einen Aktion-Button, der auf eine URL zeigt
+    BUTTON_URL: Button URL
+    BUTTON_URL_HELP: Die Adresse, auf die der Button zeigen soll
+    DISMISS_TEXT: Verbergen Button Text
+    DISMISS_TEXT_HELP: Verbergen Text muss korrekter HTML-Code sein
+    DISMISS_TEXT_DEFAULT: Verbergen
+    DISMISS_BUTTON: Zeige Verbergen Button
+    DISMISS_BUTTON_HELP: Zeigt einen Verbergen Button um das Banner für 30 Minuten zu verbergen
+    CDN_FIX: Cloudflare/CDN Fix
+    CDN_FIX_HELP: Benutzt Clientseitiges JavaScript um das Banner zu zeigen/verbergen, um CDN Caching Probleme zu vermeiden
+    SHOW_ON_PAGES: Zeige nur auf
+    SHOW_ON_PAGES_HELP: Zeige das Banner nur auf den ausgewählten Seiten. Leer lassen, um das Banner auf allen Seiten außer ausgenommenen anzuzeigen.
+    HIDE_ON_PAGES: Ausgenommene Seiten
+    HIDE_ON_PAGES_HELP: Verberge das Banner auf den ausgewählten Seiten (Selbst wenn diese auf der Liste der eingeschlossenen Seiten stehen)
+    APPEARANCE: Aussehen
+    BEHAVIOUR: Verhalten
+    POSITION: Banner Position
+    POSITION_BOTTOM: Unten
+    POSITION_TOP: Oben
+    POSITION_HELP: Wähle, wo das Banner erscheinen soll

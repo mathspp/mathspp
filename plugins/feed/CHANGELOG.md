@@ -1,3 +1,9 @@
+# v1.9.0
+## 10/05/2022
+
+1. [](#new)
+   * Utilize the new `onPageHeaders()` event in Grav `1.7.37` to force UTF-8 encoding
+
 # v1.8.5
 ## 06/09/2021
 
