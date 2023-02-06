@@ -16,7 +16,7 @@ You and I will play a game.
 I will think of a positive integer $k$.
 Now, your job is to come up with another positive integer $n_0$ such that,
 if I pick a number $n$ greater than $n_0$,
-you can always find an interval of size $n$ that contains $k$ integers.
+you can always find an interval of size $n$ that contains $k$ primes.
 
 For example, if I thought of $k = 5$, you _could not_ pick $n_0 = 4$.
 Why not?
