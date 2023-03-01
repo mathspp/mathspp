@@ -6,28 +6,27 @@ In this introductory tutorial, you will build a recurrent neural network (RNN) w
 # Introduction
 
 This tutorial will introduce you to [PyTorch][pytorch] and recurrent neural networks (RNNs).
-In this tutorial, you will use the module PyTorch to implement a recurrent neural network that will accept a name, character by character, and the output will be the language of that name.
+In this tutorial, you will use the module PyTorch to implement a recurrent neural network that will accept a name, character by character, and will output the language of that name.
 
 Some of the things you will learn include:
 
  - how to convert names (strings) into tensors that can be fed into your network;
  - how to create a recurrent neural network (RNN) layer by layer;
- - how RNNs accept and process their input bit by bit;
+ - how RNNs accept and process their input sequentially;
  - how PyTorch tracks gradients and updates network parameters; and
  - how to build a confusion matrix to see how well your model is doing.
 
 The tutorial you are reading is an adaptation of [this brilliant PyTorch tutorial][pytorch-tutorial].
-My changes and adaptations include some minor tweaks to the structure of the tutorial and, most notably, updating the source code to a more idiomatic and version of Python.
+My changes and adaptations include some minor tweaks to the structure of the tutorial and, most notably, updating the source code to a more idiomatic and modern version of Python.
 
 
-# Why are we using a recurrent neural network?
+# Why recurrent neural networks?
 
 Recurrent neural networks are a type of neural network that is suitable for processing streams of information, like the successive characters of a name.
-RNNs are relevant because of that exact capability;
-other networks like fully-connected networks or convolutional neural networks expect an input of a fixed size whereas RNNs can process their input bit by bit.
+Other networks like fully-connected networks or convolutional neural networks expect an input of a fixed size, which may be hard to come by when dealing with things that have variable lengths.
 
 The example we are tackling is that of reading a name, like "John" or "Rodrigo", and guessing what language that name comes from.
-Different names have different lengths, so it would be harder to solve this task with a neural network that accepts input of a fixed size.
+Different names have different lengths, so it would be harder to solve this task with a neural network that accepts inputs of a fixed size.
 It _could_ be done, but recurrent neural networks are a much more natural fit for this type of problem.
 
 
@@ -48,7 +47,8 @@ Then, extract it to the folder `names` in your local folder, or upload the extra
 
 # Reading the data in
 
-The data contain some names with accented letters and, for the sake of simplicity, we want to get rid of them, so we will use a function `unicode_to_ascii` that will convert a name string into a simple string that only contains ASCII characters.
+The data contain some names with accented letters and, for the sake of simplicity, we want to get rid of them.
+To that end, we will use a function `unicode_to_ascii` that will convert a name string into a simple string that only contains ASCII characters.
 This means, in particular, that the function `unicode_to_ascii` will remove accents of letters.
 
 Here are two examples:
@@ -70,8 +70,11 @@ import string
 valid_chars = string.ascii_letters + " .,;'"
 n_chars = len(valid_chars)  # Useful later.
 
-# Convert a Unicode string to plain ASCII, thanks to https://stackoverflow.com/a/518232/2828287.
 def unicode_to_ascii(string):
+    """Convert a Unicode string to use plain ASCII letters.
+
+    Based on https://stackoverflow.com/a/518232/2828287.
+    """
     return "".join(
         c for c in unicodedata.normalize("NFD", string)
         if unicodedata.category(c) != "Mn"
@@ -172,20 +175,20 @@ print(char_to_tensor("f"))
 
 """
 #       a   b   c   d   e   f...
-tensor([1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0.])
+tensor([1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0.])
 #       a   b   c   d   e   f...
-tensor([0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0.])
+tensor([0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0.])
 #       a   b   c   d   e   f...
-tensor([0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0.])
+tensor([0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0.])
 """
 ```
 
@@ -213,7 +216,7 @@ The architecture of the RNN will match this diagram:
 
 In orange, the rectangles `input`, `hidden`, `combined`, and `output`, represent tensors.
 
- - the tensor `input` represents a single character we are feeding into the network;
+ - the tensor `input` represents a single character that we are feeding into the network;
  - the tensor `hidden` represents some network hidden state;
  - the tensor `combined` is a concatenation of the tensors `input` and `hidden` and is what feeds the layers of the network; and
  - the tensor `output` is the final network output.
@@ -252,12 +255,14 @@ class RNN(nn.Module):
         return torch.zeros(self.hidden_size)
 ```
 
+## The hidden state
+
 The key to understanding how recurrent neural networks handle sequences lies in understanding the usefulness of the tensor `hidden`.
 The tensor `hidden` represents some hidden state that the recurrent neural network will update as we feed it successive characters from the same name.
 We do not control or influence the hidden state directly and that is exactly the point!
 The tensor `hidden` provides some freedom for the network to “save information” about the characters it has seen and is what allows the network to do its magic.
 
-If we did not have any hidden state, then the consecutive characters of a name would be unrelated in the eyes of the network, and the network would have no way of relating them to one another.
+If we did not have any hidden state, then the consecutive characters of a name would be unrelated in the eyes of the network, and the network would have to classify a name based solely on its last character, which does not make much sense.
 
 Finally, because the hidden state always concerns a given sequence, we initialise the hidden state whenever we want to feed a new name to the network.
 
@@ -267,8 +272,8 @@ To demonstrate this, we can exemplify how names are fed into the network:
 rnn = RNN(n_chars, 128, n_languages)  # 128 is an arbitrary value.
 
 hidden = rnn.init_hidden()
-for char_row in name_to_tensor("Rodrigo"):
-    output, hidden = rnn.forward(char_row, hidden)
+for char_tensor in name_to_tensor("Rodrigo"):
+    output, hidden = rnn.forward(char_tensor, hidden)
 print(output)
 
 """
@@ -287,10 +292,23 @@ However, we do not care about the final value of `hidden`, because we have no us
 Conversely, we do not care about the intermediate values of `output`; we only care about the final value because that is the final prediction of the network.
 
 
+## The logarithmic softmax layer
+
+The final logarithmic softmax layer is used to facilitate the interpretation of the network results.
+After going through a log softmax layer, the values in our output tensor will be negative integers.
+The closer a given value is to 0, the surer the network is about its prediction.
+In other words, given an output value, the best guess of the network corresponds to the position that has a negative value that is closer to 0.
+
+If for a given name the network was **absolutely** sure of the correct language, one position of the tensor `output` would have a number like `-0.00001`, which is very close to 0.
+
+
 # Preparing for training
 
 Now that we have the data and the network, it is time to train the network.
 To do that, we need a couple of utility functions.
+
+
+## Interpreting the output
 
 The first one is `language_from_output`, which we use to interpret the output of the network.
 As we have seen in the example before, the network produces an output vector with 18 negative values.
@@ -306,6 +324,9 @@ def language_from_output(output):
 
 print(language_from_output(output))  # ('Scottish', 14)
 ```
+
+
+## Testing and training data
 
 The other thing we need to do before training the network is split the data into
 
@@ -352,6 +373,9 @@ language = 'German', name = 'Rosenberger'
 """
 ```
 
+
+## Single training pass
+
 The final utility function we will implement is the function `train`, which accepts the network, the name tensor, and the expected output, and trains the network on that example.
 The function `train` will make use of two global variables:
 
@@ -361,13 +385,14 @@ criterion = nn.NLLLoss()  # Suitable loss function.
 ```
 
 The learning rate is a parameter that one has to experiment with and adjust, to find a value that works.
+
 For the loss function, we use the `NLLLoss` (negative log likelihood), not only because it is appropriate for classification problems like ours but also because it is a sensible loss function to use when the output comes from a final log softmax layer, like ours.
 
 ```py
 def train(rnn, name_tensor, lang_tensor):
     hidden = rnn.init_hidden()
 
-    rnn.zero_grad()
+    rnn.zero_grad()  # Reset gradient computations.
 
     for char_tensor in name_tensor:
         output, hidden = rnn(char_tensor, hidden)
@@ -381,6 +406,10 @@ def train(rnn, name_tensor, lang_tensor):
 
     return output, loss.item()
 ```
+
+Unlike the [“Neural Networks Fundamentals With Python” series][nnfwp], we do not have to compute gradients by hand to implement backpropagation.
+PyTorch keeps track of the internal calculations that happened in the successive forward passes and then is able to automatically calculate the gradients for all of the network parameters.
+Then, we go through the parameters of the network and tweak them ever so slightly, as in the standard gradient descent algorithm.
 
 # Training the network
 
@@ -454,7 +483,7 @@ Running this code, I get the following (truncated) output:
 100.0% (1m 22.52s) 1.4594
 ```
 
-As you can see, this training session ran quite quickly, in under one and a half minutes.
+As you can see, this training session ran quite quickly, in under one minute and a half.
 (This was running in Google Colaboratory.)
 
 Now that our network is trained, we can plot the loss:
@@ -476,13 +505,12 @@ The loss plot (shown above) looks good, but how does the network perform on comp
 # Evaluating the network
 
 To evaluate the network, we will create a confusion matrix.
-We can do this by going through all of the available testing examples and making note of what the network thinks is the language of that given name:
+We can do this by going through all of the available testing examples and making note of what the network thinks is the language of that given name.
+
+We make use of an auxiliary function that also showcases another great feature that PyTorch has:
 
 ```py
-# Empty confusion matrix:
-confusion = torch.zeros(n_languages, n_languages)
-
-def evaluate(rnn, name_tensor):
+def evaluate_test(rnn, name_tensor):
     """Auxiliary function to get the output from the network without training."""
     hidden = rnn.init_hidden()
 
@@ -491,6 +519,17 @@ def evaluate(rnn, name_tensor):
             output, hidden = rnn(char_tensor, hidden)
 
     return output
+```
+
+The context manager `torch.no_grad` can be used to disable the automatic tracking of gradients that PyTorch does.
+When testing the network, we do not need to keep track of the gradients because those are only needed for training.
+So, we disable gradient tracking inside `evaluate_test`.
+
+After defining that function, we can build our confusion matrix:
+
+```py
+# Empty confusion matrix:
+confusion = torch.zeros(n_languages, n_languages)
 
 # Go through all examples and see how the network does.
 correct = 0
@@ -501,7 +540,7 @@ for language, names in testing.items():
         lang_tensor = torch.tensor(languages.index(language), dtype=torch.long)
         name_tensor = name_to_tensor(name)
         # Get the output.
-        output = evaluate(rnn, name_tensor)
+        output = evaluate_test(rnn, name_tensor)
         # Interpret the output.
         _, guess_idx = language_from_output(output)
         # Mark the output in the confusion matrix.
@@ -521,10 +560,9 @@ Remember that we are talking about names that the network has _never_ seen befor
 After populating the confusion matrix, we can plot it:
 
 ```py
-
-# Normalize by dividing every row by its sum.
-for i in range(n_languages):
-    confusion[i] = confusion[i] / confusion[i].sum()
+# Normalise by dividing every row by its sum.
+for row in confusion:
+    row /= row.sum()
 
 # Set up plot.
 with plt.xkcd():
@@ -546,6 +584,14 @@ with plt.xkcd():
 
 ![Confusion matrix from training a recurrent neural network to recognise languages from names.](_confusion_matrix.png "Confusion matrix.")
 
+From the confusion matrix, we can see that the network seems to be more confident in recognising Greek, Japanese, and Arabic names.
+These are the languages that the network reckons to have the most distinctive names, especially taking into consideration that these three languages are not the languages with the largest data files.
+
+For example, Russian was the language with the largest dataset and it is only the fourth or fifth best recognised language.
+
+The confusion matrix also allows one to see the type of mistakes that the network makes.
+For example, looking at the Portuguese row, we can see that off of the main diagonal, the brighter squares are in the Italian and Spanish columns, which means that the network thought some Portuguese names were Spanish or Italian.
+This is the type of mistake that a Human could make, given that Portuguese, Spanish, and Italian, share the same roots in Latin.
 
 # Running the network on user input
 
@@ -600,3 +646,4 @@ See you there!
 [pytorch]: https://pytorch.org
 [pytorch-tutorial]: https://pytorch.org/tutorials/intermediate/char_rnn_classification_tutorial.html
 [so-name-normalisation]: https://stackoverflow.com/a/518232/2828287
+[nnfwp]: https://mathspp.com/blog/tag:nnfwp
