@@ -36,9 +36,10 @@ If you find something for which the style does not work, add a comment below so 
 
 Here you can find some more plots in the style of xkcd, followed by the accompanying code that was taken almost verbatim from the references.
 
-![](_wave_superposition.png "Two waves in the style of xkcd.")
+![A matplotlib plot in the style of xkcd that shows two waves in 3D.](_wave_superposition.png "Two waves in the style of xkcd.")
 
 ```py
+# Two waves in the style of xkcd.
 import matplotlib.pyplot as plt
 from numpy import cos, linspace, sin
 
@@ -54,9 +55,10 @@ with plt.xkcd():
     plt.show()
 ```
 
-![](_many_waves.png "Superposition of multiple waves in the style of xkcd.")
+![A matplotlib plot in the style of xkcd that shows the superposition of multiple waves in 3D.](_many_waves.png "Superposition of multiple waves in the style of xkcd.")
 
 ```py
+# Superposition of multiple waves in the style of xkcd.
 from matplotlib.collections import PolyCollection
 import matplotlib.pyplot as plt
 import numpy as np
@@ -84,9 +86,10 @@ ax.set_zlim3d(0, 1)
 plt.show()
 ```
 
-![](_surface.png "Surface plot in the style of xkcd.")
+![A 3D surface plot in the style of xkcd using matplotlib.](_surface.png "Surface plot in the style of xkcd.")
 
 ```py
+# Surface plot in the style of xkcd.
 from matplotlib import cbook
 from matplotlib import cm
 from matplotlib.colors import LightSource
