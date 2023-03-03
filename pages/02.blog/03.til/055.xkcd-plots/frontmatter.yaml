@@ -1,0 +1,20 @@
+date: 03-03-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to create xkcd-style plots in Python with matplotlib."
+    og:image: https://mathspp.com/blog/til/xkcd-style-plots/thumbnail.png
+    twitter:image: https://mathspp.com/blog/til/xkcd-style-plots/thumbnail.png
+references:
+  - "Pythonic Perambulations, [http://jakevdp.github.io/blog/2013/07/10/XKCD-plots-in-matplotlib/](http://jakevdp.github.io/blog/2013/07/10/XKCD-plots-in-matplotlib/) [last accessed 03-03-2023];"
+  - "Matplotlib docs, `matplotlib.pyplot.xkcd`, [https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xkcd.html](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xkcd.html) [last accessed 03-03-2023];"
+  - "Matplotlib 3D plotting gallery, [https://matplotlib.org/stable/gallery/mplot3d/index.html](https://matplotlib.org/stable/gallery/mplot3d/index.html) [last accessed 03-03-2023];"
+routes:
+    aliases:
+        - "/blog/til/055"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - python
+title: "TIL #055 – type hint Any"
+visible: false
