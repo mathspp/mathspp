@@ -444,7 +444,7 @@ done that with the method `str.upper`.)
 
 ## The third argument
 
-Finally, the third argument to `str.translate` is simply
+Finally, the third argument to `str.maketrans` is simply
 a string of all the characters that should be mapped to `None` or,
 in other words, that should be removed altogether from the string.
 

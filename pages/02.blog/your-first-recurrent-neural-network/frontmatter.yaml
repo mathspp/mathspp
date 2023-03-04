@@ -1,0 +1,18 @@
+date: 28-02-2023
+description: 
+metadata:
+    author: "Rodrigo Girão Serrão"
+    description: "In this introductory tutorial, you will build a recurrent neural network (RNN) with PyTorch. The RNN will accept names as input and will try to classify them into their correct language."
+    og:image: "https://mathspp.com/blog/your-first-recurrent-neural-network/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/your-first-recurrent-neural-network/thumbnail.png"
+references:
+    - "PyTorch Tutorials, “NLP From Scratch: Classifying Names with a Character-Level RNN”, [https://pytorch.org/tutorials/intermediate/char_rnn_classification_tutorial.html](https://pytorch.org/tutorials/intermediate/char_rnn_classification_tutorial.html) [last accessed 28-02-2023];"
+slug: "your-first-recurrent-neural-network"
+taxonomy:
+    category: "blogpost"
+    tag:
+      - "machine learning"
+      - "mathematics"
+      - "programming"
+      - "python"
+title: Your first recurrent neural network (RNN)
