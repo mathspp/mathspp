@@ -1,0 +1,15 @@
+date: 04-03-2023
+description: 
+metadata:
+    author: "Rodrigo Girão Serrão"
+    description: "Learn how I used Python in my daily life to convert 5,000 RAW images into the JPEG format."
+    og:image: "https://mathspp.com/blog/your-first-recurrent-neural-network/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/your-first-recurrent-neural-network/thumbnail.png"
+slug: "converting-raw-images-into-jpeg"
+taxonomy:
+    category: "blogpost"
+    tag:
+      - "programming"
+      - "python"
+      - "scripting"
+title: Converting RAW images into JPEG
