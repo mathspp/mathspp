@@ -490,7 +490,6 @@ Now that our network is trained, we can plot the loss:
 
 ```py
 import matplotlib.pyplot as plt
-import matplotlib.ticker as ticker
 
 with plt.xkcd():
     plt.figure()
