@@ -1,0 +1,20 @@
+date: 06-03-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned you can have invisible variables in Python."
+    og:image: https://mathspp.com/blog/til/invisible-variables/thumbnail.png
+    twitter:image: https://mathspp.com/blog/til/invisible-variables/thumbnail.png
+references:
+  - "Python 3 Docs, Lexical analysis, Identifiers and keywords, [https://docs.python.org/3/reference/lexical_analysis.html#identifiers](https://docs.python.org/3/reference/lexical_analysis.html#identifiers) [last accessed 06-03-2023];"
+  - "[https://web.archive.org/web/20191226044556/https://www.dcl.hpi.uni-potsdam.de/home/loewis/table-3131.html](https://web.archive.org/web/20191226044556/https://www.dcl.hpi.uni-potsdam.de/home/loewis/table-3131.html) [last accessed 06-03-2023];"
+  - "Unicode Standard Annex 31, [https://unicode.org/reports/tr31/#Table_Permitted_Changes_in_Future_Versions](https://unicode.org/reports/tr31/#Table_Permitted_Changes_in_Future_Versions) [last accessed 06-03-2023];"
+routes:
+    aliases:
+        - "/blog/til/056"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - python
+title: "TIL #056 – invisible variables"
+visible: false
