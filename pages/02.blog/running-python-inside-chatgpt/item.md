@@ -6,7 +6,7 @@ Running Python inside ChatGPT shows some amazing capabilities that ChatGPT has t
 
 # Simulating the Python REPL inside ChatGPT
 
-Lately, I have been reading some interesting articles about [ChatGPT][https://chat.openai.com].
+Lately, I have been reading some interesting articles about [ChatGPT](https://chat.openai.com).
 In one, [someone invented a new language and had ChatGPT speak it](https://maximumeffort.substack.com/p/i-taught-chatgpt-to-invent-a-language).
 In another, [someone ran a virtual machine inside ChatGPT](https://www.engraved.blog/building-a-virtual-machine-inside/).
 The latter inspired me to ask this question:
