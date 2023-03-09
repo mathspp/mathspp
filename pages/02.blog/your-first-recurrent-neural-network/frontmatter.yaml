@@ -1,5 +1,4 @@
 date: 28-02-2023
-description: 
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "In this introductory tutorial, you will build a recurrent neural network (RNN) with PyTorch. The RNN will accept names as input and will try to classify them into their correct language."
