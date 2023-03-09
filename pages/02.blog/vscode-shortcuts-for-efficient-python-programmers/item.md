@@ -21,8 +21,10 @@ If you forget a specific shortcut, you can open the command palette (which also 
 
 To open the command palette, use:
 
- - <key>Cmd</key> + <key>Shift</key> + <key>P</key> on Mac;
- - <key>Ctrl</key> + <key>Shift</key> + <key>P</key> elsewhere.
+<ul>
+ <li><key>Cmd</key> + <key>Shift</key> + <key>P</key> on Mac;</li>
+ <li><key>Ctrl</key> + <key>Shift</key> + <key>P</key> elsewhere.</li>
+</ul>
 
 
 # Edit multiple occurrences of the same word
