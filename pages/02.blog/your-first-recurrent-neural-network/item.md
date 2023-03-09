@@ -358,11 +358,11 @@ Then, we need an auxiliary function to retrieve a random example to feed into th
 ```py
 def random_example(source):
     """Retrieve a random example from a source dictionary."""
-    lang = random.choice(list(source.keys()))  # Pick random language.
-    name = random.choice(source[lang])         # Pick random name from said language.
-    lang_tensor = torch.tensor(languages.index(lang), dtype=torch.long)
+    language = random.choice(list(source.keys()))  # Pick random language.
+    name = random.choice(source[language])         # Pick random name from said language.
+    lang_tensor = torch.tensor(languages.index(language), dtype=torch.long)
     name_tensor = name_to_tensor(name)
-    return lang, name, lang_tensor, name_tensor
+    return language, name, lang_tensor, name_tensor
 
 for _ in range(3):
     language, name, lang_tensor, name_tensor = random_example(training)
