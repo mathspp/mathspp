@@ -163,6 +163,8 @@ We fill that vector with zeroes, except for the position that matches the charac
 Here is an example:
 
 ```py
+import torch
+
 def char_to_tensor(char):
     """Convert a character into a one-hot encoded vector."""
     tensor = torch.zeros(n_chars)
@@ -559,6 +561,8 @@ Remember that we are talking about names that the network has _never_ seen befor
 After populating the confusion matrix, we can plot it:
 
 ```py
+from matplotlib import ticker
+
 # Normalise by dividing every row by its sum.
 for row in confusion:
     row /= row.sum()
@@ -604,7 +608,7 @@ print("An empty name will quit.")
 while name := input(" >> "):
     normalised_name = unicode_to_ascii(name.strip())
     name_tensor = name_to_tensor(normalised_name)
-    output = evaluate(rnn, name_tensor)
+    output = evaluate_test(rnn, name_tensor)
     language = language_from_output(output)
     print(language)
 ```
