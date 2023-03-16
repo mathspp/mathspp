@@ -36,6 +36,8 @@ Quoting the [Textual] website, some of the advantages of using Textual to build 
 The code for this app can be found in the [textual-todo GitHub repository][textual-todo].
 Feel free to star the repository and fork it to play around with the code.
 
+You can also just install the app with `python -m pip install textual-todo` and run it with `todo`!
+
 
 ## Getting up to speed
 
