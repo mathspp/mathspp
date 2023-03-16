@@ -1,0 +1,14 @@
+date: 16-03-2023
+metadata:
+    author: "Rodrigo Girão Serrão"
+    description: "Learn how to build a simple TODO app in Python with this step-by-step Textual tutorial."
+    og:image: "https://mathspp.com/blog/textual-tutorial-build-a-todo-app-in-python/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/textual-tutorial-build-a-todo-app-in-python/thumbnail.png"
+slug: "textual-tutorial-build-a-todo-app-in-python"
+taxonomy:
+    category: "blogpost"
+    tag:
+      - "programming"
+      - "python"
+      - "textual"
+title: Textual tutorial – build a TODO app in Python
