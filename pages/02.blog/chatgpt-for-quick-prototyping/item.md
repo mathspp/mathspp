@@ -69,6 +69,7 @@ Learn how to use ChatGPT to quickly test and prototype programs.
 
     // Event listeners
     document.addEventListener('mouseup', onSelection);
+    document.addEventListener('touchend', onSelection);
     document.addEventListener('mousedown', () => {
         if (popupTimer) {
             clearTimeout(popupTimer);
