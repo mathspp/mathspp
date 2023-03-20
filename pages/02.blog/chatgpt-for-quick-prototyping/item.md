@@ -11,7 +11,7 @@ Learn how to use ChatGPT to quickly test and prototype programs.
     const popupDelay = 300;
     const shareButtonsHTML = `
     <div id="text-selection-sharer">
-        <button class="share-button" data-platform="twitter"><i class="fa fa-twitter"></i> Tweet</button>
+        <button class="share-button" data-platform="twitter"><i class="fa fa-twitter"></i> Tweet this</button>
     </div>`;
     
     document.body.insertAdjacentHTML('beforeend', shareButtonsHTML);
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
     position: fixed;
     display: none;
     padding: 5px;
-    background-color: #bd93f9;
+    background-color: #1DA1F2;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
