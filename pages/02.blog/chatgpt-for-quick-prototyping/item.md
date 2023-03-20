@@ -29,7 +29,7 @@ Learn how to use ChatGPT to quickly test and prototype programs.
     function positionPopup(selection) {
         const rect = selection.getRangeAt(0).getBoundingClientRect();
         sharePopup.style.left = `${rect.left}px`;
-        sharePopup.style.bottom = `${rect.top}px`;
+        sharePopup.style.top = `${rect.top}px`;
     }
     
     function showPopup() {
