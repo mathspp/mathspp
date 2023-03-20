@@ -81,6 +81,49 @@ Learn how to use ChatGPT to quickly test and prototype programs.
 })(window, document);
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const codeBlocks = document.querySelectorAll("pre > code");
+
+  // Loop over all code blocks
+  codeBlocks.forEach((codeBlock) => {
+    // Wrap the code block in a container div
+    const container = document.createElement("div");
+    container.classList.add("code-block-container");
+
+    // Add a clipboard icon to the container
+    const clipboard = document.createElement("i");
+    clipboard.classList.add("clipboard-icon", "far", "fa-clipboard");
+    clipboard.title = "Copy to clipboard";
+    container.appendChild(clipboard);
+
+    // Move the code block inside the container
+    container.appendChild(codeBlock.cloneNode(true));
+    codeBlock.parentElement.replaceChild(container, codeBlock);
+
+    // Copy the code to the clipboard when user clicks the icon
+    clipboard.addEventListener("click", () => {
+      const range = document.createRange();
+      range.selectNodeContents(codeBlock);
+
+      const sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+
+      document.execCommand("copy");
+      sel.removeAllRanges();
+      clipboard.title = "Copied!";
+    });
+
+    // Reset the tooltip on icon mouse leave
+    clipboard.addEventListener("mouseleave", () => {
+      clipboard.title = "Copy to clipboard";
+    });
+  });
+});
+</script>
+
+
 <style>
 #text-selection-sharer {
     position: absolute;
@@ -106,14 +149,51 @@ Learn how to use ChatGPT to quickly test and prototype programs.
 .share-button:hover {
     background-color: #f9f9f9;
 }
+
+/* Clipboard code blocks styling. */
+.code-block-container {
+  position: relative;
+}
+
+.clipboard-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  opacity: 0.7;
+}
+
+.clipboard-icon:hover {
+  opacity: 1;
+}
 </style>
 
 
 # Creating quick prototypes
 
+## Share on selection
+
 [ChatGPT] is a large language model developed by OpenAI that has taken the world by storm.
 I have been playing around with ChatGPT a lot and I can say, confidently, that it has made me much more productive.
 
 As an example, go ahead and select that previous sentence.
+You should see a pop-up that invites you to share your selection over some social media platforms.
+That pop-up is powered by some JavaScript code that ChatGPT prototyped for me!
+Here is a screenshot of me using TypingMind to interact with ChatGPT-4:
+
+![Screenshot of using the TypingMind interface to interact with ChatGPT-4. The screenshot shows an initial prompt asking for ChatGPT to write a JavaScript plugin for my blog.](_share_plugin.png "Initial ChatGPT-4 prompt asking for a JS plugin to share selected text.")
+
+Now, bear in mind that the code wasn't perfect and I needed to tweak it, but I have enough experience programming that the prototype I was given by ChatGPT was all I needed to get started.
+Things that I needed to change included the way we compute the location of the pop-up and the colours used to style it.
+
+
+## Copy code in code blocks
+
+Another feature I have wanted to add to my blog for a while is adding an icon to code blocks that allow copying and pasting the code inside them.
+
+Again, a quick ChatGPT-4 interaction over TypingMind was all I needed to get me going:
+
+![Screenshot of using the TypingMind interface to interact with ChatGPT-4. The screenshot shows an initial prompt asking for ChatGPT to write the JavaScript and CSS code needed to allow copying the contents of code blocks on my blog."](_copy_code_blocks.png "Initial ChatGPT-4 prompt to enable copying contents of code blocks.")
 
 [ChatGPT]: https://chat.openai.com
