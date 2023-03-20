@@ -168,6 +168,11 @@ I have been playing around with ChatGPT a lot and I can say, confidently, that i
 The examples that follow will show two features that I prototyped quickly for my blog by interacting with ChatGPT-4.
 I will share screenshots of my initial interactions with ChatGPT-4 over the [TypingMind](https://typingmind.com) interface.
 
+The features can be tested out in this article but they will have issues!
+As I said, these are just prototypes created with the help of ChatGPT!
+If you find any issues with these features, feel free to reach out to me or to comment below.
+Your help is much appreciated!
+
 
 ## Share on selection
 
@@ -179,12 +184,15 @@ Here is a screenshot of me using TypingMind to interact with ChatGPT-4:
 ![Screenshot of using the TypingMind interface to interact with ChatGPT-4. The screenshot shows an initial prompt asking for ChatGPT to write a JavaScript plugin for my blog.](_share_plugin.png "Initial ChatGPT-4 prompt asking for a JS plugin to share selected text.")
 
 Now, bear in mind that the code wasn't perfect and I needed to tweak it, but I have enough experience programming that the prototype I was given by ChatGPT was all I needed to get started.
+
 Things that I needed to change included the way we compute the location of the pop-up and the colours used to style it.
+
+The pop-up is still far from perfect, but I really appreciate the fact that now I have something that I can play with.
 
 
 ## Copy code in code blocks
 
-Another feature I have wanted to add to my blog for a while is adding an icon to code blocks that allow copying and pasting the code inside them.
+Another feature I have wanted to add to my blog for a while is an icon in code blocks that allow copying and pasting the code inside them.
 
 Again, a quick ChatGPT-4 interaction over TypingMind was all I needed to get me going:
 
@@ -202,6 +210,23 @@ def fibonacci(n):
     else:
         return fibonacci(n - 1) + fibonacci(n - 2)
 ```
+
+This one is closer to the final state I would like, but I would still like to add some form of visual confirmation that the code was successfully copied.
+
+
+# Tips for working with ChatGPT
+
+I would like to share some brief tips on working with ChatGPT for prototyping:
+
+ - Be specific about your needs: I found that I get better results when I ask for specific and concrete things.
+ So, feel free to have a chat where you ask for ideas, but create a new chat when you want to build something specific.
+ - Take it step-by-step: I have found greater success when I ask for ChatGPT to build something incrementally.
+ This varies from prototype to prototype, but what seemed to work best for me was asking for ChatGPT to do a series of consecutive subtasks and then putting them all together.
+ - Doubt everything it gives you: ChatGPT replies always with the same confidence, regardless of whether the information/code is right or wrong.
+ Test everything out, read the output it gives you, and be prepared to fix things.
+
+These are three simple tips that I hold in my mind whenever I am playing with ChatGPT.
+If you have any more, feel free to let me know by commenting below!
 
 [ChatGPT]: https://chat.openai.com
 
