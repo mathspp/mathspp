@@ -196,4 +196,17 @@ Again, a quick ChatGPT-4 interaction over TypingMind was all I needed to get me 
 
 ![Screenshot of using the TypingMind interface to interact with ChatGPT-4. The screenshot shows an initial prompt asking for ChatGPT to write the JavaScript and CSS code needed to allow copying the contents of code blocks on my blog."](_copy_code_blocks.png "Initial ChatGPT-4 prompt to enable copying contents of code blocks.")
 
+To try this out, just try to copy the code in this code block:
+
+```py
+from functools import cache
+
+@cache
+def fibonacci(n):
+    if n <= 1:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+```
+
 [ChatGPT]: https://chat.openai.com
