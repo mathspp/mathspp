@@ -124,8 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
     position: fixed;
     display: none;
     padding: 5px;
-    background-color: #f1f1f1;
-    border: 1px solid #c1c1c1;
+    background-color: #bd93f9;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
