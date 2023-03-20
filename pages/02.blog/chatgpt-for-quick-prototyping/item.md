@@ -29,7 +29,7 @@ Learn how to use ChatGPT to quickly test and prototype programs.
     function positionPopup(selection) {
         const rect = selection.getRangeAt(0).getBoundingClientRect();
         sharePopup.style.left = `${rect.left}px`;
-        sharePopup.style.top = `${rect.top + 20}px`;
+        sharePopup.style.top = `${rect.top - 20}px`;
     }
     
     function showPopup() {
@@ -167,12 +167,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 # Creating quick prototypes
 
-## Share on selection
-
 [ChatGPT] is a large language model developed by OpenAI that has taken the world by storm.
 I have been playing around with ChatGPT a lot and I can say, confidently, that it has made me much more productive.
 
-As an example, go ahead and select that previous sentence.
+The examples that follow will show two features that I prototyped quickly for my blog by interacting with ChatGPT-4.
+I will share screenshots of my initial interactions with ChatGPT-4 over the [TypingMind](https://typingmind.com) interface.
+
+
+## Share on selection
+
+As an example, go ahead and select a sentence in this article.
 You should see a pop-up that invites you to share your selection over some social media platforms.
 That pop-up is powered by some JavaScript code that ChatGPT prototyped for me!
 Here is a screenshot of me using TypingMind to interact with ChatGPT-4:
