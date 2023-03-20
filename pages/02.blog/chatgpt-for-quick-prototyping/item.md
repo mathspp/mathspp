@@ -27,7 +27,7 @@ Learn how to use ChatGPT to quickly test and prototype programs.
     };
     
     function positionPopup(selection) {
-        const rect = selection.getBoundingClientRect();
+        const rect = selection.getRangeAt(0).getBoundingClientRect();
         sharePopup.style.left = `${rect.left}px`;
         sharePopup.style.bottom = `${rect.top}px`;
     }
