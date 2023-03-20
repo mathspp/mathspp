@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <style>
 #text-selection-sharer {
-    position: absolute;
+    position: fixed;
     display: none;
     padding: 5px;
     background-color: #f1f1f1;
