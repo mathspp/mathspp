@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const range = document.createRange();
       range.selectNodeContents(codeBlock);
 
-      navigator.clipboard.writeText(codeBlock.text);
+      navigator.clipboard.writeText(codeBlock.textContent);
       clipboard.title = "Copied!";
     });
 
@@ -205,3 +205,4 @@ def fibonacci(n):
 ```
 
 [ChatGPT]: https://chat.openai.com
+
