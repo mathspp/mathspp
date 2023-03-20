@@ -106,12 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const range = document.createRange();
       range.selectNodeContents(codeBlock);
 
-      const sel = window.getSelection();
-      sel.removeAllRanges();
-      sel.addRange(range);
-
-      document.execCommand("copy");
-      sel.removeAllRanges();
+      navigator.clipboard.writeText(codeBlock.text);
       clipboard.title = "Copied!";
     });
 
