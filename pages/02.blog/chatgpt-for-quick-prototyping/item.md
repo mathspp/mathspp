@@ -12,8 +12,6 @@ Learn how to use ChatGPT to quickly test and prototype programs.
     const shareButtonsHTML = `
     <div id="text-selection-sharer">
         <button class="share-button" data-platform="twitter"><i class="fa fa-twitter"></i> Tweet</button>
-        <button class="share-button" data-platform="facebook"><i class="fa fa-facebook"></i> Share on Facebook</button>
-        <button class="share-button" data-platform="linkedin"><i class="fa fa-linkedin"></i> Share on LinkedIn</button>
     </div>`;
     
     document.body.insertAdjacentHTML('beforeend', shareButtonsHTML);
@@ -22,8 +20,6 @@ Learn how to use ChatGPT to quickly test and prototype programs.
     
     const shareUrls = {
         twitter: (url, text) => `https://twitter.com/share?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`,
-        facebook: (url) => `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
-        linkedin: (url) => `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(url)}`
     };
     
     function positionPopup(selection) {
