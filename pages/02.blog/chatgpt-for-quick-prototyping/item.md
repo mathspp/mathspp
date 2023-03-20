@@ -26,9 +26,10 @@ Learn how to use ChatGPT to quickly test and prototype programs.
         linkedin: (url) => `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(url)}`
     };
     
-    function positionPopup(x, y) {
-        sharePopup.style.left = `${x}px`;
-        sharePopup.style.top = `${y}px`;
+    function positionPopup(selection) {
+        const rect = selection.getBoundingClientRect();
+        sharePopup.style.left = `${rect.left}px`;
+        sharePopup.style.bottom = `${rect.top}px`;
     }
     
     function showPopup() {
@@ -44,12 +45,12 @@ Learn how to use ChatGPT to quickly test and prototype programs.
     }
     
     function onSelection(e) {
-        const selection = window.getSelection().toString().trim();
-        if (selection.length > 0) {
-            const {clientX, clientY} = e;
-            positionPopup(clientX, clientY);
+        const selection = window.getSelection();
+        const selection_text = selection.toString().trim();
+        if (selection_text.length > 0) {
+            positionPopup(selection);
             showPopup();
-            setTextToBeShared(selection);
+            setTextToBeShared(selection_text);
         } else {
             if (!popupTimer) {
                 popupTimer = setTimeout(hidePopup, popupDelay);
