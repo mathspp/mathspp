@@ -2,6 +2,8 @@ This short reference article shows how to stream data from a Flask web app to HT
 
 ===
 
+![](thumbnail.png)
+
 # Introduction
 
 I have been trying to create a web app with [Flask] and [HTMX] that updates the page periodically with data streamed from the Flask backend.
