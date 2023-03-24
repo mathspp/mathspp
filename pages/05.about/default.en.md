@@ -59,15 +59,6 @@ a material contribution to help support the costs of running this project ad-fre
 you can consider [buying me a slice of pizza 🍕][bmc].
 
 
-### Wall of love
-
-
-<script type="text/javascript" src="https://testimonial.to/js/iframeResizer.min.js"></script>
-<iframe id="testimonialto-mathspp-insider-newsletter-light" src="https://embed-v2.testimonial.to/w/mathspp-insider-newsletter?theme=light&card=small&loadMore=on&initialCount=20" frameborder="0" scrolling="no" width="100%"></iframe>
-<script type="text/javascript">iFrameResize({log: false, checkOrigin: false}, "#testimonialto-mathspp-insider-newsletter-light");</script>
-
-
-
 ### The technologies used
 
 The website is powered by [grav] and the content is mostly written in Markdown syntax.
