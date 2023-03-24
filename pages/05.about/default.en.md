@@ -63,7 +63,7 @@ you can consider [buying me a slice of pizza 🍕][bmc].
 
 
 <script type="text/javascript" src="https://testimonial.to/js/iframeResizer.min.js"></script>
-<iframe id="testimonialto-mathspp-insider-newsletter-light" src="https://embed-v2.testimonial.to/w/mathspp-insider-newsletter?theme=light&card=base&loadMore=on&initialCount=20" frameborder="0" scrolling="no" width="100%"></iframe>
+<iframe id="testimonialto-mathspp-insider-newsletter-light" src="https://embed-v2.testimonial.to/w/mathspp-insider-newsletter?theme=light&card=small&loadMore=on&initialCount=20" frameborder="0" scrolling="no" width="100%"></iframe>
 <script type="text/javascript">iFrameResize({log: false, checkOrigin: false}, "#testimonialto-mathspp-insider-newsletter-light");</script>
 
 
