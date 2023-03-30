@@ -3,7 +3,9 @@ metadata:
     author: Rodrigo Girão Serrão
     description: "This reference article teaches you the things you'll need to write your thesis or report with LaTeX."
     og:image: "https://mathspp.com/blog/pydonts/write-your-thesis-in-latex/thumbnail.png"
+    og:title: "Write your thesis in LaTeX"
     twitter:image: "https://mathspp.com/blog/pydonts/write-your-thesis-in-latex/thumbnail.png"
+    twitter:title: "Write your thesis in LaTeX"
 references:
     - "Overleaf Documentation, [https://www.overleaf.com/learn](https://www.overleaf.com/learn) [last accessed 22-03-2023];"
 slug: "write-your-thesis-in-latex"
