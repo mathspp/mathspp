@@ -36,6 +36,21 @@ I like to spend my time with the people I love, I like to teach and share knowle
 read fantasy and technical books, write code and watch silly comedy movies.
 
 
+### Wall of love
+
+Here are some nice things people have to say about my content, my teaching, my newsletter, and my books:
+
+<script type="text/javascript" src="https://testimonial.to/js/iframeResizer.min.js"></script>
+<iframe id="testimonialto-carousel-all-mathspp-insider-newsletter-dark" src="https://embed-v2.testimonial.to/carousel/all/mathspp-insider-newsletter?theme=dark&autoplay=off&showmore=on&one-row=on&same-height=off" frameborder="0" scrolling="no" width="100%"></iframe>
+<script type="text/javascript">iFrameResize({log: false, checkOrigin: false}, "#testimonialto-carousel-all-mathspp-insider-newsletter-dark");</script>
+
+
+If you want to add your testimonial to the wall of love, you can:
+
+ - tweet your testimonial and tag me ([@mathsppblog][twitter]); or
+ - add your text/video testimonial in [this page][collect-testimonials].
+
+
 ### Contacts
 
 You can drop me a line to rodrigo (at) mathspp (dot) com.
@@ -102,3 +117,4 @@ I also create some graphical content with [Canva].
 [font-awesome]: https://fontawesome.com
 [bmc]: https://buymeacoffee.com/mathspp
 [twitter]: https://twitter.com/mathsppblog
+[collect-testimonials]: https://testimonial.to/mathspp
