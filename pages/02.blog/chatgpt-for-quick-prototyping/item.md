@@ -77,6 +77,7 @@ Learn how to use ChatGPT to quickly test and prototype programs.
 })(window, document);
 </script>
 
+<!--
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const codeBlocks = document.querySelectorAll("pre > code");
@@ -112,6 +113,52 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+</script>
+-->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+const codeBlocks = document.querySelectorAll("pre code");
+const copyIcon = `<i class="fas fa-copy" style="position:absolute; top:0; right:0; cursor:pointer"></i>`;
+
+codeBlocks.forEach((block) => {
+    const wrapper = document.createElement("div");
+    wrapper.style.position = "relative";
+    block.parentNode.insertBefore(wrapper, block);
+    wrapper.appendChild(block);
+    wrapper.insertAdjacentHTML("beforeend", copyIcon);
+    const icon = wrapper.querySelector(".fa-copy");
+
+    icon.addEventListener("click", () => {
+    const tempText = document.createElement("textarea");
+    document.body.appendChild(tempText);
+    tempText.value = block.textContent;
+    tempText.select();
+    document.execCommand("copy");
+    tempText.remove();
+
+    icon.classList.replace("fa-copy", "fa-check");
+    setTimeout(() => {
+        icon.classList.replace("fa-check", "fa-copy");
+    }, 2000);
+    });
+
+    icon.addEventListener("mouseover", () => {
+    const tooltip = document.createElement("span");
+    tooltip.textContent = "Copy to clipboard";
+    tooltip.style.position = "absolute";
+    tooltip.style.top = "20px";
+    tooltip.style.right = "0";
+    tooltip.style.backgroundColor = "#ffffff";
+    tooltip.style.padding = "5px";
+    tooltip.style.border = "1px solid #ddd";
+    wrapper.appendChild(tooltip);
+
+    icon.addEventListener("mouseout", () => {
+        tooltip.remove();
+    });
+    });
+});
+}
 </script>
 
 
