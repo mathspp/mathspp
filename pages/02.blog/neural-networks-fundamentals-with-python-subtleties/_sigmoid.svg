@@ -1,59 +1,22 @@
-<?xml version="1.0" encoding="utf-8"  standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
-    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="600" height="400" viewBox="0 0 600 400"
-    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  >
-  <title>Graph of Logistics Curve</title>
-  <desc>Originally Produced by GNUPLOT 4.2 patchlevel 2, hand compressed  </desc>
-
-  <g style="fill:none; stroke-width:1.00; stroke-linecap:butt">
-    <g stroke="#ccc">
-      <path d='M38.5,346.8 H 561.5 ' />
-      <path d='M38.5,185.5 H 561.5 ' />
-      <path d='M38.5, 24.2 H 561.5 ' />
-      <path d='M 38.5,346.0 V 25.0 ' />
-      <path d='M125.7,346.0 V 25.0 ' />
-      <path d='M212.8,346.0 V 25.0 ' />
-      <path d='M300.0,346.0 V 25.0 ' />
-      <path d='M387.2,346.0 V 25.0 ' />
-      <path d='M474.3,346.0 V 25.0 ' />
-      <path d='M561.5,346.0 V 25.0 ' />
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <g fill="none" stroke="#ccc">
+    <path d="M38.5 346.8h523m-523-161.3h523M38.5 24.2h523M38.5 346V25m87.2 321V25m87.1 321V25M300 346V25m87.2 321V25m87.1 321V25m87.2 321V25"/>
+    <path stroke-width="2" d="M300 346.8h-12m12-161.3h-12m12-161.3h-12M38.5 346v-14m87.2 14v-14m87.1 14v-14m87.2 14v-14m87.2 14v-14m87.1 14v-14m87.2 14v-14M300 346V25M38.5 346h523"/>
+  </g>
+  <g fill="#ccc" stroke="none" font-family="Deja Vu Sans,Lucida Sans" font-size="24">
+    <g text-anchor="end">
+      <text y="192.2" transform="translate(287)">0.5</text>
+      <text y="30.9" transform="translate(287)">1</text>
     </g>
-    <g stroke="#ccc" stroke-width="2" >
-      <path d='M300.0,346.8 h-12 M300.0,185.5 h-12 M300.0, 24.2 h-12' />
-      <path d='M 38.5,346.0 v-14 M125.7,346.0 v-14 M212.8,346.0 v-14
-          M300.0,346.0 v-14 M387.2,346.0 v-14 M474.3,346.0 v-14 M561.5,346.0 v-14' />
-      <path d='M300.0,346.0 V 25.0 M38.5, 346.0 H 561.5' />
+    <g text-anchor="middle">
+      <text x="38.5" transform="translate(0 379.7)">−6</text>
+      <text x="125.7" transform="translate(0 379.7)">−4</text>
+      <text x="212.8" transform="translate(0 379.7)">−2</text>
+      <text x="300" transform="translate(0 379.7)"> 0</text>
+      <text x="387.2" transform="translate(0 379.7)"> 2</text>
+      <text x="474.3" transform="translate(0 379.7)"> 4</text>
+      <text x="561.5" transform="translate(0 379.7)"> 6</text>
     </g>
   </g>
-  <g style="stroke:none; fill:#ccc; font-family:Deja Vu Sans,Lucida Sans; font-size:18.00pt">
-    <g text-anchor="end" transform="translate(287,0)" >
-      <text y="192.2">0.5</text>
-      <text y="30.9">1</text>
-    </g>
-    <g text-anchor="middle" transform="translate(0,379.7)" >
-      <text x="38.5" >−6</text>
-      <text x="125.7" >−4</text>
-      <text x="212.8" >−2</text>
-      <text x="300.0" > 0</text>
-      <text x="387.2" > 2</text>
-      <text x="474.3" > 4</text>
-      <text x="561.5" > 6</text>
-    </g>
-  </g>
-  <g fill="none" stroke-width="2.0"  transform="translate(168.6,249.5)scale(.995,1.038)" >
-    <path stroke="#3085ee" d="M-132.0,93.0 L-107.8,92.4 L-94.6,92.0 L-81.4,91.3 L-68.2,90.5
-      L-55.0,89.4 L-41.8,87.9 L-28.6,85.9 L-15.4,83.2 L-2.2,79.7 L11.0,75.0 L24.2,69.0
-      C28.7,66.7 33.1,64.1 37.4,61.3 C41.9,58.3 46.3,55.0 50.6,51.5
-      C55.1,47.7 59.5,43.6 63.8,39.3 C68.3,34.6 72.7,29.7 77.0,24.4
-      C81.5,18.9 85.9,13.0 90.2,6.9
-      L103.4,-13.0 L116.6,-34.9 L129.8,-58.0 L138.6,-73.5
-      L151.8,-96.3 L165.0,-117.6 L178.2,-136.8
-      C182.5,-142.6 186.9,-148.2 191.4,-153.4 C195.7,-158.4 200.1,-163.0 204.6,-167.4
-      C208.9,-171.5 213.3,-175.3 217.8,-178.7 C222.1,-182.1 226.5,-185.1 231.0,-187.8
-      C235.3,-190.5 239.8,-192.8 244.2,-195.0
-      L257.4,-200.5 L270.6,-204.7 L283.8,-207.9 L297.0,-210.3 L310.2,-212.2 L323.4,-213.5
-      L336.6,-214.6 L349.8,-215.3 L363.0,-215.9 L374.0,-216.2 L393.8,-216.7" />
-  </g>
+  <path fill="none" stroke="#3085ee" stroke-width="2" d="m-132 93 24.2-.6 13.2-.4 13.2-.7 13.2-.8 13.2-1.1 13.2-1.5 13.2-2 13.2-2.7 13.2-3.5L11 75l13.2-6c4.5-2.3 8.9-4.9 13.2-7.7 4.5-3 8.9-6.3 13.2-9.8 4.5-3.8 8.9-7.9 13.2-12.2 4.5-4.7 8.9-9.6 13.2-14.9 4.5-5.5 8.9-11.4 13.2-17.5L103.4-13l13.2-21.9L129.8-58l8.8-15.5 13.2-22.8 13.2-21.3 13.2-19.2c4.3-5.8 8.7-11.4 13.2-16.6 4.3-5 8.7-9.6 13.2-14 4.3-4.1 8.7-7.9 13.2-11.3 4.3-3.4 8.7-6.4 13.2-9.1 4.3-2.7 8.8-5 13.2-7.2l13.2-5.5 13.2-4.2 13.2-3.2 13.2-2.4 13.2-1.9 13.2-1.3 13.2-1.1 13.2-.7 13.2-.6 11-.3 19.8-.5" transform="matrix(.995 0 0 1.038 168.6 249.5)"/>
 </svg>
-
