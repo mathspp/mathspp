@@ -148,7 +148,6 @@ codeBlocks.forEach((block) => {
     tooltip.style.position = "absolute";
     tooltip.style.top = "20px";
     tooltip.style.right = "0";
-    tooltip.style.backgroundColor = "#ffffff";
     tooltip.style.padding = "5px";
     tooltip.style.border = "1px solid #ddd";
     wrapper.appendChild(tooltip);
