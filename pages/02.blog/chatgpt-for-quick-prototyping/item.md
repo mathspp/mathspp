@@ -143,7 +143,7 @@ codeBlocks.forEach((block) => {
     });
 
     icon.addEventListener("mouseover", () => {
-    const tooltip = document.createElement("span");
+    const tooltip = document.createElement("p");
     tooltip.textContent = "Copy to clipboard";
     tooltip.style.position = "absolute";
     tooltip.style.top = "20px";
