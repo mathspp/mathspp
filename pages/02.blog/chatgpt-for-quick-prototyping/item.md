@@ -129,32 +129,36 @@ codeBlocks.forEach((block) => {
     const icon = wrapper.querySelector(".fa-copy");
 
     icon.addEventListener("click", () => {
-    const tempText = document.createElement("textarea");
-    document.body.appendChild(tempText);
-    tempText.value = block.textContent;
-    tempText.select();
-    document.execCommand("copy");
-    tempText.remove();
+        const tempText = document.createElement("textarea");
+        document.body.appendChild(tempText);
+        tempText.value = block.textContent;
+        tempText.select();
+        document.execCommand("copy");
+        tempText.remove();
 
-    icon.classList.replace("fa-copy", "fa-check");
-    setTimeout(() => {
-        icon.classList.replace("fa-check", "fa-copy");
-    }, 2000);
+        icon.classList.replace("fa-copy", "fa-check");
+        setTimeout(() => {
+            icon.classList.replace("fa-check", "fa-copy");
+        }, 2000);
     });
 
     icon.addEventListener("mouseover", () => {
-    const tooltip = document.createElement("p");
-    tooltip.textContent = "Copy to clipboard";
-    tooltip.style.position = "absolute";
-    tooltip.style.top = "30px";
-    tooltip.style.right = "0";
-    tooltip.style.padding = "5px";
-    tooltip.style.border = "1px solid #ddd";
-    wrapper.appendChild(tooltip);
+        const tooltip = document.createElement("p");
+        tooltip.textContent = "Copy to clipboard";
+        tooltip.style.position = "absolute";
+        tooltip.style.top = "30px";
+        tooltip.style.right = "0";
+        tooltip.style.padding = "5px";
+        tooltip.style.border = "1px solid #ddd";
+        wrapper.appendChild(tooltip);
 
-    icon.addEventListener("mouseout", () => {
-        tooltip.remove();
-    });
+        icon.addEventListener("mouseout", () => {
+            tooltip.remove();
+        });
+
+        icon.addEventListener("click", () => {
+            tooltip.textContent = "Copied!";
+        });
     });
 });
 });
