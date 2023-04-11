@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <script>
 document.addEventListener("DOMContentLoaded", function() {
 const codeBlocks = document.querySelectorAll("pre code");
-const copyIcon = `<i class="fas fa-copy fa-lg" style="position:absolute; top:5px; right:5px; cursor:pointer"></i>`;
+const copyIcon = `<i class="fas fa-copy fa-lg" style="position:absolute; top:10px; right:5px; cursor:pointer"></i>`;
 
 codeBlocks.forEach((block) => {
     const wrapper = document.createElement("div");
@@ -146,7 +146,7 @@ codeBlocks.forEach((block) => {
     const tooltip = document.createElement("p");
     tooltip.textContent = "Copy to clipboard";
     tooltip.style.position = "absolute";
-    tooltip.style.top = "20px";
+    tooltip.style.top = "30px";
     tooltip.style.right = "0";
     tooltip.style.padding = "5px";
     tooltip.style.border = "1px solid #ddd";
