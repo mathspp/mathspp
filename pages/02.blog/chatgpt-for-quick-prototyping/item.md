@@ -158,7 +158,7 @@ codeBlocks.forEach((block) => {
     });
     });
 });
-}
+});
 </script>
 
 
