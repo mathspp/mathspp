@@ -158,6 +158,9 @@ codeBlocks.forEach((block) => {
 
         icon.addEventListener("click", () => {
             tooltip.textContent = "Copied!";
+            setTimeOut(() => {
+                tooltip.textContent = "Copy to clipboard";
+            }, 2000);
         });
     });
 });
