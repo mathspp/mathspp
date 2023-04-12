@@ -8,7 +8,7 @@ In this Pydon't you'll learn the importance of using good names and I'll give so
 
 ===
 
-![A sneak peak of what Python would look like if all names were bad names.](thumbnail.png)
+![A sneak peak of what Python would look like if all names were bad names.](thumbnail.webp)
 
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)

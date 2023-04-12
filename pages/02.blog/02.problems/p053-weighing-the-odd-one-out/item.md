@@ -2,7 +2,7 @@ Can you find the fake ball by weighing it?
 
 ===
 
-![](thumbnail.png "Photo by AlSimonov on Getty Images.")
+![](thumbnail.webp "Photo by AlSimonov on Getty Images.")
 
 # Problem statement
 

@@ -2,7 +2,7 @@ This is a short article on how I quickly used APL to verify my combinatorics cal
 
 ===
 
-![An image of two 3 by 3 grids with coloured cells](thumbnail.png)
+![An image of two 3 by 3 grids with coloured cells](thumbnail.webp)
 
 
 # Preamble

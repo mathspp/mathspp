@@ -142,7 +142,7 @@ which means $2$ has an overall solvability rate of $\approx 99.4\%$.
 
 The other perfect targets' solvability rates drop significantly when we include inputs with repeated digits, as we can see in this graph:
 
-![graph showing solvability numbers for all targets from 0 to 100 and non unique inputs](non_unique_100.png)
+![graph showing solvability numbers for all targets from 0 to 100 and non unique inputs](non_unique_100.webp)
 
 In order to study the solvability of inputs with possibly repeated digits we just set the left argument of `StudySolvability` to `1`:
 

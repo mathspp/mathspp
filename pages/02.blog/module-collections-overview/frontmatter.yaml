@@ -2,8 +2,8 @@ date: 23-02-2023
 metadata:
     author: Rodrigo Girão Serrão
     description: "The Python module collections contains many useful tools like deque, namedtuple, Counter, defaultdict, ChainMap, OrderedDict, and others. This article provides an overview of and a short tutorial for all those tools and how to use them."
-    og:image: "https://mathspp.com/blog/module-collections-overview/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/module-collections-overview/thumbnail.png"
+    og:image: "https://mathspp.com/blog/module-collections-overview/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/module-collections-overview/thumbnail.webp"
 slug: "module-collections-overview"
 taxonomy:
     category:

@@ -2,8 +2,8 @@ date: 20-06-2022 10:00
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I finished learning how to use a custom JSON decoder to convert JSON to arbitrary Python objects."
-    og:image: https://mathspp.com/blog/til/048/thumbnail.png
-    twitter:image: https://mathspp.com/blog/til/048/thumbnail.png
+    og:image: https://mathspp.com/blog/til/048/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/048/thumbnail.webp
 references:
     - "Python 3 Documentation, The Python Standard Library, `json.JSONDecoder` [https://docs.python.org/3/library/json.html#json.JSONEncoder](https://docs.python.org/3/library/json.html#json.JSONDecoder) [last accessed 17-06-2022];"
     - "“TIL #047 – Custom JSON decoder”, [https://mathspp.com/blog/til/custom-json-decoder](/blog/til/custom-json-decoder) [last accessed [17-06-2022];"

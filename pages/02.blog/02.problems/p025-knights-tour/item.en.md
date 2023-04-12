@@ -58,7 +58,7 @@ for longer than $64$ moves), then Alice is sure to lose.
 The first thing we do is consider a division of the chessboard
 into rectangles $8$ with dimensions $4 \times 2$, like the figure below shows.
 
-![A chessboard divided into $8$ rectangles of dimensions $4 \times 2$.](_sol_chessboard_01.png)
+![A chessboard divided into $8$ rectangles of dimensions $4 \times 2$.](_sol_chessboard_01.webp)
 
 Notice that all squares of the chessboard lie inside one of those rectangles and,
 *most importantly*, notice that each square is such that the knight only has a legal move that starts and ends in the same $4 \times 2$ rectangle.

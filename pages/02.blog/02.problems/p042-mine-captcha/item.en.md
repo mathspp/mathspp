@@ -98,7 +98,7 @@ we realise that the `3` on the second row, to the right,
 only has one position left for its third mine.
 Therefore, we can place a mine there.
 
-![](_7.png)
+![](_7.webp)
 
 As we place that mine, the puzzle is complete!
 Take a look for yourself:

@@ -179,7 +179,7 @@ you will master list comprehensions.
 A list comprehension is equivalent to a `for` loop that consecutively
 calls the `.append` method of an (initially) empty list:
 
-![Diagram establishing equivalence between list comprehensions and `for` loops.](_anatomy_comparison.png)
+![Diagram establishing equivalence between list comprehensions and `for` loops.](_anatomy_comparison.webp)
 
 This is, in fact,
 one of the most common patterns that list comprehensions are useful for.

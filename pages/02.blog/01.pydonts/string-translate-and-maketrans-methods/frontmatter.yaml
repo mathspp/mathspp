@@ -1,8 +1,8 @@
 date: 17-08-2021
 metadata:
     author: Rodrigo Girão Serrão
-    og:image: "https://mathspp.com/blog/pydonts/string-translate-and-maketrans-methods/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/pydonts/string-translate-and-maketrans-methods/thumbnail.png"
+    og:image: "https://mathspp.com/blog/pydonts/string-translate-and-maketrans-methods/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/pydonts/string-translate-and-maketrans-methods/thumbnail.webp"
 references:
   - "Python 3 Documentation, The Python Standard Library, Built-in Types, `str.maketrans`, [https://docs.python.org/3/library/stdtypes.html#str.maketrans](https://docs.python.org/3/library/stdtypes.html#str.maketrans) [last accessed 16-08-2021];"
   - "Python 3 Documentation, The Python Standard Library, Built-in Types, `str.translate`, [https://docs.python.org/3/library/stdtypes.html#str.translate](https://docs.python.org/3/library/stdtypes.html#str.translate) [last accessed 16-08-2021];"

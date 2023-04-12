@@ -8,7 +8,7 @@ Today I learned that you can use emojis as variable names in Python if you use `
 
 ===
 
-![Snippet of Python code written with emojis.](thumbnail.png)
+![Snippet of Python code written with emojis.](thumbnail.webp)
 
 
 # Can you use emojis in Python?

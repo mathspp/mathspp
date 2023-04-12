@@ -2,7 +2,7 @@ Today I finished learning how to use a custom JSON decoder to convert JSON to ar
 
 ===
 
-![A solid background with an arrow pointing to some faded gears behind the words “JSON Decoder”, which then have an arrow pointing to the Python logo.](thumbnail.png)
+![A solid background with an arrow pointing to some faded gears behind the words “JSON Decoder”, which then have an arrow pointing to the Python logo.](thumbnail.webp)
 
 # Asymmetry suggests other alternatives
 

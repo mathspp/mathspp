@@ -4,7 +4,7 @@ This is the most obfuscated “Hello, world!” program I have ever seen!
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-![A really weird code snippet that contains code that is supposed to print “Hello, world!”.](thumbnail.png "A weird code snippet that allegedly prints “Hello, world!”.")
+![A really weird code snippet that contains code that is supposed to print “Hello, world!”.](thumbnail.webp "A weird code snippet that allegedly prints “Hello, world!”.")
 
 
 # The code

@@ -75,7 +75,7 @@ $$
 
 At this point we could start to notice a pattern that I try to make more explicit in the following figure:
 
-![Table with the pattern outlined](pattern.png)
+![Table with the pattern outlined](pattern.webp)
 
 Hopefully the red lines are hinting at a possible conjecture: the losing positions are positions of the form $(x, x+1), (x,x)$ and $(x+1, x)$.
 

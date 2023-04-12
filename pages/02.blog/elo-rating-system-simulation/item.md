@@ -2,7 +2,7 @@ Join me as I create a simulation that tries to test an Elo-based rating system f
 
 ===
 
-![Screenshot of a Python Streamlit web app.](thumbnail.png "Screenshot of the simulation web app.")
+![Screenshot of a Python Streamlit web app.](thumbnail.webp "Screenshot of the simulation web app.")
 
 
 # Introduction

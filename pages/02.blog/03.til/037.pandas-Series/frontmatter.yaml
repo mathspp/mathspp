@@ -2,8 +2,8 @@ date: 14-03-2022 15:30
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned about the fundamental pandas data type `Series`."
-    og:image: https://mathspp.com/blog/til/037/thumbnail.png
-    twitter:image: https://mathspp.com/blog/til/037/thumbnail.png
+    og:image: https://mathspp.com/blog/til/037/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/037/thumbnail.webp
 slug: "037"
 taxonomy:
     category: [blogpost, til]

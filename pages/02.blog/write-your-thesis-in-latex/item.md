@@ -2,7 +2,7 @@ This reference article teaches you the things you'll need to write your thesis o
 
 ===
 
-!["The thumbnail image of a blog article that provides a working introduction to LaTeX, as well as a reference to common things you may want to do with LaTeX when writing a report, an article, a masters thesis, or a PhD thesis."](thumbnail.png)
+!["The thumbnail image of a blog article that provides a working introduction to LaTeX, as well as a reference to common things you may want to do with LaTeX when writing a report, an article, a masters thesis, or a PhD thesis."](thumbnail.webp)
 
 # Introduction
 
@@ -1067,10 +1067,10 @@ The first thing you need to do if you want to insert an image into your LaTeX do
 This means you need to upload the image into Overleaf.
 
 On the left, Overleaf has an “Upload” button that you can use.
-If you don't have a picture you would like to upload, you can go ahead and use [the thumbnail](./thumbnail.png) from this article.
+If you don't have a picture you would like to upload, you can go ahead and use [the thumbnail](./thumbnail.webp) from this article.
 
 !!! When uploading images, I recommend uploading them into a folder specifically for images.
-!!! For example, I uploaded my `thumbnail.png` into a new folder called `images`.
+!!! For example, I uploaded my `thumbnail.webp` into a new folder called `images`.
 !!! This will make it easier to organise everything in your project.
 
 
@@ -1136,7 +1136,7 @@ The argument to the command is the path to the figure, which is the folder the p
 % ...
 
 \begin{figure}
-    \includegraphics{images/thumbnail.png}
+    \includegraphics{images/thumbnail.webp}
 \end{figure}
 
 % ...
@@ -1164,7 +1164,7 @@ For example, this code would insert the image with 10% the size:
 % ...
 
 \begin{figure}
-    \includegraphics[scale=0.1]{images/thumbnail.png}
+    \includegraphics[scale=0.1]{images/thumbnail.webp}
 \end{figure}
 
 % ...
@@ -1183,7 +1183,7 @@ Thus, the code below inserts the image and rescales it so that its width becomes
 % ...
 
 \begin{figure}
-    \includegraphics[width=0.5\linewidth]{images/thumbnail.png}
+    \includegraphics[width=0.5\linewidth]{images/thumbnail.webp}
 \end{figure}
 
 % ...
@@ -1201,7 +1201,7 @@ After rescaling your image, you can centre it with the command `\centering`:
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.5\linewidth]{images/thumbnail.png}
+    \includegraphics[width=0.5\linewidth]{images/thumbnail.webp}
 \end{figure}
 
 % ...
@@ -1220,7 +1220,7 @@ Here is a simple caption:
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.5\linewidth]{images/thumbnail.png}
+    \includegraphics[width=0.5\linewidth]{images/thumbnail.webp}
     \caption{Thumbnail image of a blog post.}
 \end{figure}
 
@@ -1239,7 +1239,7 @@ After adding a caption you can add a label that _must_ come _after_ the caption:
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.5\linewidth]{images/thumbnail.png}
+    \includegraphics[width=0.5\linewidth]{images/thumbnail.webp}
     \caption{Thumbnail image of a blog post.}
     \label{fig:thumbnail}
 \end{figure}
@@ -1289,7 +1289,7 @@ This option goes after the command `\begin{figure}[H]`:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\linewidth]{images/thumbnail.png}
+    \includegraphics[width=0.5\linewidth]{images/thumbnail.webp}
     \caption{Thumbnail image of a blog post.}
     \label{fig:thumbnail}
 \end{figure}

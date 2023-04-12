@@ -7,7 +7,7 @@ They're passed by assignment.
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-![Python snippet containing the code `x is y`.](thumbnail.png)
+![Python snippet containing the code `x is y`.](thumbnail.webp)
 
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)

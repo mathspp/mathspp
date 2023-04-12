@@ -2,7 +2,7 @@ This article shows how to communicate between Python and Dyalog APL through the 
 
 ===
 
-![](thumbnail.png)
+![](thumbnail.webp)
 
 # Introduction
 

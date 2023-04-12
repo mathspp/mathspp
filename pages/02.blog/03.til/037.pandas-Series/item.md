@@ -2,7 +2,7 @@ Today I learned about the fundamental pandas data type `Series`.
 
 ===
 
-![A picture of panda (the mammal) with the words "pandas" and "Series" written.](thumbnail.png "Background photo by Elena Loshina on Unsplash.")
+![A picture of panda (the mammal) with the words "pandas" and "Series" written.](thumbnail.webp "Background photo by Elena Loshina on Unsplash.")
 
 
 # What is a pandas `Series`?

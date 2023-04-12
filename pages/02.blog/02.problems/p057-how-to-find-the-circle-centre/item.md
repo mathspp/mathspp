@@ -79,7 +79,7 @@ After drawing the first two auxiliary circles, pick one of the circles.
 That circle will intersect the original circle at a point that you haven't used yet (H in the figure below).
 Use that point as the centre of the third circle, which you can draw with a radius equal to the other two auxiliary circles:
 
-![Third circle drawn with centre equal to one of the intersections of the second auxiliary circle with the original circle.](_three_circles.png)
+![Third circle drawn with centre equal to one of the intersections of the second auxiliary circle with the original circle.](_three_circles.webp)
 
 By making use of those 3 circles we can draw 2 bisectors which intersect at the centre of the circle.
 That makes up for a total of 5 lines.

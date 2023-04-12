@@ -10,7 +10,7 @@ Today I learned about the `math.nextafter` method.
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-![Code snippet showing the `nextafter` method.](thumbnail.png)
+![Code snippet showing the `nextafter` method.](thumbnail.webp)
 
 
 # `math.nextafter`

@@ -49,7 +49,7 @@ who sent me their correct solutions:
 
 The easiest way to formulate the solution is as follows:
 
-![](_solution.png "Find the line that connects one umbrella to the reflection of the other.")
+![](_solution.webp "Find the line that connects one umbrella to the reflection of the other.")
 
 
 You just have to reflect one of the umbrellas to the other side of the shoreline,

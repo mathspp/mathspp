@@ -7,7 +7,7 @@ Let's build a simple [APL][apl-wiki] interpreter! APL is an array-oriented progr
 ===
 
 
-![A black and white doodle of a person in front of a computer.](./lsbasi-apl-part1-bg.png)
+![A black and white doodle of a person in front of a computer.](./lsbasi-apl-part1-bg.webp)
 
 
 # Foreword

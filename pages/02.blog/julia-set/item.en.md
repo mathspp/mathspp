@@ -2,7 +2,7 @@ The filled Julia set is a really cool fractal that kind of resembles the [Mandel
 
 ===
 
-![A screenshot of a filled Julia set done in Python](juliaset2.png)
+![A screenshot of a filled Julia set done in Python](juliaset2.webp)
 
 (You may want to read [my post](https://mathspp.com/blog/mandelbrot) on the Mandelbrot set as it is closely related to this one!)
 

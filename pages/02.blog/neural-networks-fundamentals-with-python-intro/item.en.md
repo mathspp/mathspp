@@ -168,7 +168,7 @@ neurons say, so you give a weight ($w_j$) to each "opinion".
 If we colour the connections depending on the weight they carry, we can have
 an image like the one below:
 
-[![](_3b1b_neural_net_coloured.png "Connections coloured according to their weights, from 3blue1brown's video.")][3b1b-nn1]
+[![](_3b1b_neural_net_coloured.webp "Connections coloured according to their weights, from 3blue1brown's video.")][3b1b-nn1]
 
 Then, you take into account your opinion about the vote, your own *bias* ($b$), and
 add that into the mix:

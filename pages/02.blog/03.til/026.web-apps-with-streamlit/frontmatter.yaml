@@ -2,8 +2,8 @@ date: 24-01-2022 21:40
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned that you can build web apps with Python using streamlit."
-    og:image: https://mathspp.com/blog/til/026/thumbnail.png
-    twitter:image: https://mathspp.com/blog/til/026/thumbnail.png
+    og:image: https://mathspp.com/blog/til/026/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/026/thumbnail.webp
 slug: "026"
 taxonomy:
     category: [blogpost, til]

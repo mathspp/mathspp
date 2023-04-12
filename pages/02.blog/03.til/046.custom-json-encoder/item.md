@@ -2,7 +2,7 @@ Today I learned how to do custom JSON encoding in Python with the module `json`.
 
 ===
 
-![A solid background with an arrow going from the Python logo to a JSON logo.](thumbnail.png)
+![A solid background with an arrow going from the Python logo to a JSON logo.](thumbnail.webp)
 
 # How to encode Python objects as JSON
 

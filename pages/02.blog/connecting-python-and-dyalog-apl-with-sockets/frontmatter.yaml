@@ -2,8 +2,8 @@ date: 21-01-2023
 metadata:
     author: Rodrigo Girão Serrão
     description: "This article shows how to communicate between Python and Dyalog APL through the use of sockets. We will use the module `socket` from Python and the Conga workspace from Dyalog."
-    og:image: "https://mathspp.com/blog/connecting-python-and-dyalog-apl-with-sockets/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/connecting-python-and-dyalog-apl-with-sockets/thumbnail.png"
+    og:image: "https://mathspp.com/blog/connecting-python-and-dyalog-apl-with-sockets/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/connecting-python-and-dyalog-apl-with-sockets/thumbnail.webp"
 references:
     - Dyalog Documentation Centre, Tools Documentation, Conga User Guide [https://www.dyalog.com/documentation_180.htm](https://www.dyalog.com/documentation_180.htm) [last accessed 21-01-2023]
 slug: "connecting-python-and-dyalog-apl-with-sockets"

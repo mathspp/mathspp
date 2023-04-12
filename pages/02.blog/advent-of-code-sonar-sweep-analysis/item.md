@@ -2,7 +2,7 @@ This article is an in-depth analysis of Python solutions to the â€œSonar Sweepâ€
 
 ===
 
-![](thumbnail.png "Advent of Code submarine sticker.")
+![](thumbnail.webp "Advent of Code submarine sticker.")
 
 # Sonar Sweep
 

@@ -2,8 +2,8 @@ date: 27-11-2021
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned how to write the Quicksort algorithm in a weird functional style."
-    og:image: https://mathspp.com/blog/til/016/thumbnail.png
-    twitter:image: https://mathspp.com/blog/til/016/thumbnail.png
+    og:image: https://mathspp.com/blog/til/016/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/016/thumbnail.webp
 slug: "016"
 taxonomy:
     category: [blogpost, til]

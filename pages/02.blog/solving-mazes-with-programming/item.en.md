@@ -19,7 +19,7 @@ I wanted to make my program fairly general, in terms of the mazes that could be 
 
 After we know where to start, where to end, and which colour we care about (either black or white) I apply Dijkstra's algorithm on the graph of the vertices of that colour, where two vertices are connected if the two corresponding pixels are adjacent. Of course I didn't have to explicitly build the graph, as it was given by the pixels in the picture. After a path is found, a red line is drawn. The first version of the script would draw the absolute shortest path, and so it would mainly be adjacent to walls and I found it aesthetically unpleasing. To try and counter that I added a slight element of randomness when drawing the red path. Using my script to solve the maze above we get this drawing:
 
-![the maze above but solved with a red line showing the path](maze2_solved.png)
+![the maze above but solved with a red line showing the path](maze2_solved.webp)
 
 which looks like a line I could draw with my pencil, if I managed to not overlap my line with the walls of the maze by accident. The code can be found in [this GitHub repo][gh] and a downloadable executable can be found [here][drive]. In both places you can find a `bin` folder with a couple of maze examples.
 

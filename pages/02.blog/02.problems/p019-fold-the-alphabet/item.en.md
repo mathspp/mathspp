@@ -98,7 +98,7 @@ In my opinion this one is easier to understand how it is going to work but it is
 
 Here is the front side with some markings:
 
-![Level 3 sheet with some markings](lvl3-faceA-sol.png)
+![Level 3 sheet with some markings](lvl3-faceA-sol.webp)
 
 And the back:
 

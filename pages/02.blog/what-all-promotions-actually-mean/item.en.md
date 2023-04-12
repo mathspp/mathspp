@@ -176,7 +176,7 @@ of what was already offered.
 However, the $2$ free yogurts only represent $25\%$ of the total number of yogurts you are getting.
 To make this even clearer, look at the picture below.
 
-![A picture that shows that comparing the free part to the whole is different from comparing it to the paid part.](_three_plus_one_free.png)
+![A picture that shows that comparing the free part to the whole is different from comparing it to the paid part.](_three_plus_one_free.webp)
 
 The original, small blue package used to have $3$ gray packs and it now says “Plus one for free”,
 the gray pack to the left.

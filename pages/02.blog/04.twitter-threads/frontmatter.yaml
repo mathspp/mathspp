@@ -6,5 +6,5 @@ content:
     order:
         by: date
         dir: desc
-hero-image: twitter_bg.png
+hero-image: twitter_bg.webp
 hero_classes: parallax overlay-dark-gradient text-light

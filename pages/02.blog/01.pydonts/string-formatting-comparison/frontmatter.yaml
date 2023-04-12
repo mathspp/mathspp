@@ -2,8 +2,8 @@ date: 19-11-2021
 metadata:
     author: Rodrigo Girão Serrão
     description: "This article compares the three main string formatting methods in Python and suggests which methods to use in each situation."
-    og:image: "https://mathspp.com/blog/pydonts/string-formatting-comparison/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/pydonts/string-formatting-comparison/thumbnail.png"
+    og:image: "https://mathspp.com/blog/pydonts/string-formatting-comparison/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/pydonts/string-formatting-comparison/thumbnail.webp"
 references:
   - "Python 2 Docs, String Formatting Operations, [https://docs.python.org/2/library/stdtypes.html#string-formatting](https://docs.python.org/2/library/stdtypes.html#string-formatting) [last accessed 10-11-2021]"
   - "Python 3 Docs, The Python Tutorial, Fancier Output Formatting, [https://docs.python.org/3/tutorial/inputoutput.html](https://docs.python.org/3/tutorial/inputoutput.html) [last accessed 10-11-2021]"

@@ -64,7 +64,7 @@ so he just places his coin somewhere:
 What Alice does is to figure out what is the play that is diametrically
 opposite to Bob's:
 
-![](_alice_first_reply.png)
+![](_alice_first_reply.webp)
 
 After she replies, you can think of it as if their coins now also drilled
 holes in the table:

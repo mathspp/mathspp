@@ -75,7 +75,7 @@ The diagram below depicts this:
 the blank cube goes into `__init__`, just like the string `name` and the string `email`.
 It is the dunder method `__init__` that actually puts the three together.
 
-![A blank cube, representing an instance of `Person`, is passed to the dunder method `__init__`, which is then responsible for initialising the instance with the information provided by the other arguments.](__init__.png "Diagram representing the arguments to `__init__`.")
+![A blank cube, representing an instance of `Person`, is passed to the dunder method `__init__`, which is then responsible for initialising the instance with the information provided by the other arguments.](__init__.webp "Diagram representing the arguments to `__init__`.")
 
 Notice that I called the blank `Person` argument `self`, and that is just a [Python naming convention][naming-matters#self].
 (It is a deeply ingrained convention,

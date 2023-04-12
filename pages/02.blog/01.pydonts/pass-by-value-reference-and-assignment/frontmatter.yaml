@@ -2,8 +2,8 @@ date: 03-11-2021 23:00
 metadata:
     author: Rodrigo Girão Serrão
     description: "This article explains why Python doesn't use a pass-by-value system, nor a pass-by-reference."
-    og:image: "https://mathspp.com/blog/pydonts/pass-by-value-reference-and-assignment/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/pydonts/pass-by-value-reference-and-assignment/thumbnail.png"
+    og:image: "https://mathspp.com/blog/pydonts/pass-by-value-reference-and-assignment/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/pydonts/pass-by-value-reference-and-assignment/thumbnail.webp"
 references:
   - "Python 3 Docs, Programming FAQ, “How do I write a function with output parameters (call by reference)?”, [https://docs.python.org/3/faq/programming.html#how-do-i-write-a-function-with-output-parameters-call-by-reference](https://docs.python.org/3/faq/programming.html#how-do-i-write-a-function-with-output-parameters-call-by-reference) [last accessed 04-10-2021];"
   - "Python 3 Docs, The Python Standard Library, `copy`, [https://docs.python.org/3/library/copy.html](https://docs.python.org/3/library/copy.html) [last accessed 05-10-2021];"

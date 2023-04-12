@@ -2,7 +2,7 @@ Today I learned how to write the Quicksort algorithm in a weird functional style
 
 ===
 
-![](thumbnail.png "")
+![](thumbnail.webp "")
 
 # Functional programming (sort of)
 

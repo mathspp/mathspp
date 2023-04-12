@@ -37,7 +37,7 @@ So, when we reverse it, the colour and the hand change sides, and the colouring 
 
 This may not display properly, so here is a screenshot of [this online Python REPL](https://tio.run/##K6gsycjPM/7/v6AoM69EQ0lJLys/M0@jKLUstag4NUVD6cP8ib0Q3L9PSVNT8/9/AA):
 
-![](_tio_hands.png)
+![](_tio_hands.webp)
 
 Another way to show what is happening is by surrounding a coloured hand with two yellow ones.
 Notice how the colour moves out of the middle hand:

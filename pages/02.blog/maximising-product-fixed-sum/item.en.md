@@ -10,7 +10,7 @@ Let's prove that if you want to maximise $ab$ with $a + b$ equal to a constant v
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-![maximising ab with a+b=k is achieved with a=b=k/2](max.png)
+![maximising ab with a+b=k is achieved with a=b=k/2](max.webp)
 
 # Twitter proof
 

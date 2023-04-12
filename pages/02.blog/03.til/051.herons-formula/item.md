@@ -2,7 +2,7 @@ Today I (re)learned Heron's formula to compute the area of a triangle from its t
 
 ===
 
-![A blurred image of two triangles with many arbitrary mathematical formulas floating in front of them, and the words “Heron's formula” in big white letters in the centre.](thumbnail.png)
+![A blurred image of two triangles with many arbitrary mathematical formulas floating in front of them, and the words “Heron's formula” in big white letters in the centre.](thumbnail.webp)
 
 # Heron's formula
 

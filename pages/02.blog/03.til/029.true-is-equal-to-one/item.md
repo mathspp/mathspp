@@ -4,7 +4,7 @@ Today I learned that `True` is equal to 1 and `False` is equal to 0.
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-![A Python REPL showing that `True` is equal to 1 and that `False` is equal to 0.](thumbnail.png)
+![A Python REPL showing that `True` is equal to 1 and that `False` is equal to 0.](thumbnail.webp)
 
 
 # Booleans are a subclass of `int`

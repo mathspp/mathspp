@@ -2,8 +2,8 @@ date: 27-04-2022
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned how you can do beautiful console logging by using the module `rich`."
-    og:image: https://mathspp.com/blog/til/042/thumbnail.png
-    twitter:image: https://mathspp.com/blog/til/042/thumbnail.png
+    og:image: https://mathspp.com/blog/til/042/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/042/thumbnail.webp
 references:
   - "`rich` documentation, [https://rich.readthedocs.io/en/latest/logging.html](https://rich.readthedocs.io/en/latest/logging.html) [last accessed 27-04-2022];"
   - "Python 3 Documentation, `logging`, [https://docs.python.org/3/library/logging.html](https://docs.python.org/3/library/logging.html) [last accessed 27-04-2022];"

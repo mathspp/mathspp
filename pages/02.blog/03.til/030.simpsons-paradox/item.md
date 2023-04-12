@@ -2,7 +2,7 @@ Today I learned about Simpson's paradox in statistics.
 
 ===
 
-![The Simpson's chalkboard gag with Bart Simpson writing “The Simpson's paradox isn't mine” repeatedly on a chalkboard.](thumbnail.png "The Simpson's chalkboard gag reading “The Simpson's paradox isn't mine”.")
+![The Simpson's chalkboard gag with Bart Simpson writing “The Simpson's paradox isn't mine” repeatedly on a chalkboard.](thumbnail.webp "The Simpson's chalkboard gag reading “The Simpson's paradox isn't mine”.")
 
 
 # What is the Simpson's paradox?

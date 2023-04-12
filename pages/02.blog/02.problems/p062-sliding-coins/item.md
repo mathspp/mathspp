@@ -17,7 +17,7 @@ Also, you always have to move two coins at a time.
 
 Thus, this is a legal move:
 
-!["The diagram showing an example of a legal move with some arrows."](_legal_move.png "A legal move sliding the top two coins one slot to the right.")
+!["The diagram showing an example of a legal move with some arrows."](_legal_move.webp "A legal move sliding the top two coins one slot to the right.")
 
 But moving a single coin, such as in the diagram below, is not allowed:
 

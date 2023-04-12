@@ -2,8 +2,8 @@ date: 20-06-2022 17:00
 metadata:
     author: Rodrigo Girão Serrão
     description: "This article explains how to extend the JSON format by using a custom encoder and a custom decoder to turn arbitrary Python objects into JSON and back."
-    og:image: https://mathspp.com/blog/custom-json-encoder-and-decoder/thumbnail.png
-    twitter:image: https://mathspp.com/blog/custom-json-encoder-and-decoder/thumbnail.png
+    og:image: https://mathspp.com/blog/custom-json-encoder-and-decoder/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/custom-json-encoder-and-decoder/thumbnail.webp
 taxonomy:
     category: blogpost
     tag:

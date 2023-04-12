@@ -40,7 +40,7 @@ You can save this to a text file and call it, say, `A.svg`.
 After you do that,
 you should be able to open it with your browser and see the letter “A”:
 
-![The browser rendering an SVG of the letter “A” in black on a white background](_A.png "`A.svg` rendered by Mozilla Firefox.")
+![The browser rendering an SVG of the letter “A” in black on a white background](_A.webp "`A.svg` rendered by Mozilla Firefox.")
 
 I thought of creating one such SVG per letter of the alphabet,
 but that would be a pain.

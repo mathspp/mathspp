@@ -1018,7 +1018,7 @@ commands =
 
 After this was fixed, Codecov worked perfectly and commented my PR saying my coverage is 100%:
 
-![A screenshot of my GitHub pull request with an automatic comment by Codecov with a simple coverage report stating I have 100% code coverage.](_codecov_comment.png "Codecov automatically comments with a coverage report.")
+![A screenshot of my GitHub pull request with an automatic comment by Codecov with a simple coverage report stating I have 100% code coverage.](_codecov_comment.webp "Codecov automatically comments with a coverage report.")
 
 
 ## Publishing to PyPI automatically

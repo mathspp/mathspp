@@ -1,8 +1,8 @@
 date: 08-06-2021
 metadata:
     author: Rodrigo Girão Serrão
-    og:image: "https://mathspp.com/blog/pydonts/the-power-of-reduce/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/pydonts/the-power-of-reduce/thumbnail.png"
+    og:image: "https://mathspp.com/blog/pydonts/the-power-of-reduce/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/pydonts/the-power-of-reduce/thumbnail.webp"
 references:
   - "Python 3 Documentation, The Python Standard Library, Built-in Functions, [https://docs.python.org/3/library/functions.html](https://docs.python.org/3/library/functions.html) [last accessed 07-06-2021];"
   - "Python 2 Documentation, The Python Standard Library, Built-in Functions, `reduce`, [https://docs.python.org/2.7/library/functions.html#reduce](https://docs.python.org/2.7/library/functions.html#reduce) [last accessed 06-06-2021];"

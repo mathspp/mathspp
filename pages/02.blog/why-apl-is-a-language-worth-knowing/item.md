@@ -2,7 +2,7 @@ Let me show you characteristics of APL that will influence your understanding of
 
 ===
 
-![A quote by Alan J. Perlis that reads “A language that doesn't affect the way you think about programming, is not worth knowing.” on a light background, with a quote symbol at the top and Alan Perlis's signature at the bottom right.](thumbnail.png "“A language that doesn't affect the way you think about programming, is not worth knowing.”, by Alan J. Perlis.")
+![A quote by Alan J. Perlis that reads “A language that doesn't affect the way you think about programming, is not worth knowing.” on a light background, with a quote symbol at the top and Alan Perlis's signature at the bottom right.](thumbnail.webp "“A language that doesn't affect the way you think about programming, is not worth knowing.”, by Alan J. Perlis.")
 
 
 # Why APL is a language worth knowing

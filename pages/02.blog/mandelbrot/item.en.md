@@ -6,7 +6,7 @@ I have always liked the concept of fractal. They are very beautiful, they have a
 
 ===
 
-![A rendering of the Mandelbrot set](./mandelbrot.png)
+![A rendering of the Mandelbrot set](./mandelbrot.webp)
 
 Despite being fond of fractals, I had never understood them because I didn't know how to mathematically define one. I knew how to draw some, for example the [snowflake](https://en.wikipedia.org/wiki/Koch_snowflake) or the [Sierpinski triangle](https://en.wikipedia.org/wiki/Sierpinski_triangle), but drawing a fractal and mathematically defining it aren't quite the same thing...
 

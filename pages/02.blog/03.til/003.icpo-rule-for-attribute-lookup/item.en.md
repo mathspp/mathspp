@@ -10,7 +10,7 @@ Today I learned about the ICPO rule for attribute lookup in Python.
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-![](thumbnail.png)
+![](thumbnail.webp)
 
 
 # ICPO rule for attribute lookup

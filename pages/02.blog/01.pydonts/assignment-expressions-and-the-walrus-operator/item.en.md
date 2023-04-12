@@ -10,7 +10,7 @@ Use `:=` to flatten a sequence of nested `if`s or to reuse partial computations.
 
 ===
 
-![A Python code snippet with a bad usage of the walrus operator.](_thumbnail.png)
+![A Python code snippet with a bad usage of the walrus operator.](_thumbnail.webp)
 
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)

@@ -2,8 +2,8 @@ date: 29-01-2023
 metadata:
     author: Rodrigo Girão Serrão
     description: "Can you prove that there are arbitrarily many primes in arbitrarily big intervals? In this mathematical problem, which is just a logic challenge, the solution is surprisingly uncomplicated."
-    og:image: https://mathspp.com/blog/problems/arbitrarily-many-primes-in-arbitrarily-big-intervals/thumbnail.png
-    twitter:image: https://mathspp.com/blog/problems/arbitrarily-many-primes-in-arbitrarily-big-intervals/thumbnail.png
+    og:image: https://mathspp.com/blog/problems/arbitrarily-many-primes-in-arbitrarily-big-intervals/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/problems/arbitrarily-many-primes-in-arbitrarily-big-intervals/thumbnail.webp
 process:
     twig: true
 slug: arbitrarily-many-primes-in-arbitrarily-big-intervals

@@ -423,7 +423,7 @@ in which that month fell.
 
 For example, look at my desktop calendar for the month of April of 2021:
 
-![](_calendar.png "Month of April in a calendar, occupying 5 weeks together with the end of March and start of May.")
+![](_calendar.webp "Month of April in a calendar, occupying 5 weeks together with the end of March and start of May.")
 
 If I tell the `Calendar` class to start counting weeks on Sundays (day `6`),
 like my desktop calendar does, here is what `itermonthdays` produces:

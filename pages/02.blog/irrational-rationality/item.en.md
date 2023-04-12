@@ -8,7 +8,7 @@ Let's prove that there are two irrational numbers, call them $a$ and $b$, such t
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-![the variable a raised to the power of b](atotheb.png)
+![the variable a raised to the power of b](atotheb.webp)
 
 # Twitter proof
 

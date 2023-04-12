@@ -10,7 +10,7 @@ This Pydon't will teach you how to use Python's conditional expressions.
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-![The anatomy of a conditional expression.](thumbnail.png)
+![The anatomy of a conditional expression.](thumbnail.webp)
 
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)

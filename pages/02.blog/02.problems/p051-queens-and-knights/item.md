@@ -22,7 +22,7 @@ For reference, here is a picture showing what squares a queen attacks:
 
 Similarly, here is a picture showing what squares a knight attacks:
 
-![Chessboard with a knight and the squares under attack.](_knight_attack.png "Squares under attack by a knight.")
+![Chessboard with a knight and the squares under attack.](_knight_attack.webp "Squares under attack by a knight.")
 
 
 !!! Give it some thought!

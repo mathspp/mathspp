@@ -2,7 +2,7 @@ Today I learned how to use the `namedtuple` from the module `collections`.
 
 ===
 
-![The Python import statement that allows us to use the Python module `selectors`.](thumbnail.png)
+![The Python import statement that allows us to use the Python module `selectors`.](thumbnail.webp)
 
 
 # `namedtuple`

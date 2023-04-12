@@ -2,7 +2,7 @@ Today I learned about the Python module `selectors` to manage multiple socket co
 
 ===
 
-![The Python import statement that allows us to use the Python module `selectors`.](thumbnail.png)
+![The Python import statement that allows us to use the Python module `selectors`.](thumbnail.webp)
 
 
 # `selectors`

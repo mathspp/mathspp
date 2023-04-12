@@ -2,7 +2,7 @@ This article explains how to extend the JSON format by using a custom encoder an
 
 ===
 
-![There is a blurry background that looks like a tunnel, but in front of that you can find the JSON and the Python logos, with two arrows pointing in each direction, giving a sense of interchangeability.](thumbnail.png)
+![There is a blurry background that looks like a tunnel, but in front of that you can find the JSON and the Python logos, with two arrows pointing in each direction, giving a sense of interchangeability.](thumbnail.webp)
 
 # Custom JSON encoder and decoder
 

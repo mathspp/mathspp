@@ -10,7 +10,7 @@ A [regular expression](https://en.wikipedia.org/wiki/Regular_expression), withou
 
 One common use of regular expressions is to look for strings that have a certain structure in a bigger string (say a text). As an example, the regular expression `abc(d|e)` can be used to look for the strings "abcd" and "abce", where the character `|` denotes we have to make a choice (see image above). Thus `cat|dog` would match the strings "cat" and "dog". There are other special symbols that have meanings and purposes.
 
-![two screenshots of my program](regex.png)
+![two screenshots of my program](regex.webp)
 
 One very interesting question that arises is: given a regular expression, what are the strings matched by it? To answer that question I wrote a small Python program, that I called `regexPrinter`, that prints all strings matched by a given regular expression! In order to manage that task, I chose a subset of the regex syntax that I wanted to be able to print and also decided that whenever a piece of a pattern was infinite, at a given point the program would just print "..." to denote that infinity. This way, for any regex given, the program always stops.
 

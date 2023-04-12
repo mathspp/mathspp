@@ -8,7 +8,7 @@ In this Pydon't I talk about Python style and I go over some tools you can use t
 
 ===
 
-![A badly formatted Python function](thumbnail.png)
+![A badly formatted Python function](thumbnail.webp)
 
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)

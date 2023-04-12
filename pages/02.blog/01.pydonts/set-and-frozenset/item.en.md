@@ -10,7 +10,7 @@ This Pydon't will teach you how to use the `set` and `frozenset` Python built-in
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-![An example usage of the `set` built-in.](thumbnail.png)
+![An example usage of the `set` built-in.](thumbnail.webp)
 
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)

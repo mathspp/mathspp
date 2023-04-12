@@ -9,7 +9,7 @@ If you are looking to write Pythonic code, write code that abides by the Zen of 
 
 ===
 
-![A Python code snippet importing the module `this`.](thumbnail.png)
+![A Python code snippet importing the module `this`.](thumbnail.webp)
 
 To kick-off the [Pydon't series][manifesto] we start with a set of guidelines
 that all Pythonistas should be aware of: the [Zen of Python].

@@ -4,7 +4,7 @@ This article compares the three main string formatting methods in Python and sug
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-![Python snippet showing the three main ways of doing string formatting in Python.](thumbnail.png)
+![Python snippet showing the three main ways of doing string formatting in Python.](thumbnail.webp)
 
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)

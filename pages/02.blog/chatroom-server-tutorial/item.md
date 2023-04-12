@@ -196,7 +196,7 @@ Go ahead and, in a separate REPL, connect to the server a couple of times by han
 If you go back to the place where you ran the server,
 you will find the message `Connection accepted.` as many times as sockets you connected by hand:
 
-![Screenshot of the socket server accepting connections from sockets created by hand in Python.](_create_server_class_demo.png "Socket server accepting multiple connections.")
+![Screenshot of the socket server accepting connections from sockets created by hand in Python.](_create_server_class_demo.webp "Socket server accepting multiple connections.")
 
 That's it, our very first step is done!
 

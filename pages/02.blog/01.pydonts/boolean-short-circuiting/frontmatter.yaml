@@ -1,8 +1,8 @@
 date: 01-06-2021
 metadata:
     author: Rodrigo Girão Serrão
-    og:image: "https://mathspp.com/blog/pydonts/boolean-short-circuiting/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/pydonts/boolean-short-circuiting/thumbnail.png"
+    og:image: "https://mathspp.com/blog/pydonts/boolean-short-circuiting/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/pydonts/boolean-short-circuiting/thumbnail.webp"
 references:
   - "Python 3 Documentation, The Python Standard Library, Built-in Types, Boolean Operations – and, or, not, [https://docs.python.org/3/library/stdtypes.html#boolean-operations-and-or-not](https://docs.python.org/3/library/stdtypes.html#boolean-operations-and-or-not) [last accessed 31-05-2021];"
   - "Python 3 Documentation, The Python Language Reference, Built-in Functions, `all`, [https://docs.python.org/3/library/functions.html#all](https://docs.python.org/3/library/functions.html#all) [last accessed 26-05-2021];"

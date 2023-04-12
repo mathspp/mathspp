@@ -1,8 +1,8 @@
 date: 20-04-2021
 metadata:
     author: Rodrigo Girão Serrão
-    og:image: "https://mathspp.com/blog/pydonts/sequence-indexing/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/pydonts/sequence-indexing/thumbnail.png"
+    og:image: "https://mathspp.com/blog/pydonts/sequence-indexing/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/pydonts/sequence-indexing/thumbnail.webp"
 slug: "sequence-indexing"
 taxonomy:
     category: [blogpost, pydont]

@@ -2,8 +2,8 @@ date: 14-09-2022
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned what precision Python floats have."
-    og:image: https://mathspp.com/blog/til/053/thumbnail.png
-    twitter:image: https://mathspp.com/blog/til/053/thumbnail.png
+    og:image: https://mathspp.com/blog/til/053/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/053/thumbnail.webp
 references:
   - "“Double-precision floating-point format”, Wikipedia, [https://en.wikipedia.org/wiki/Double-precision_floating-point_format](https://en.wikipedia.org/wiki/Double-precision_floating-point_format) [last visited 14-09-2022];"
 routes:

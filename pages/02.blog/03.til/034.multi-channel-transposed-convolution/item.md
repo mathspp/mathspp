@@ -20,7 +20,7 @@ On the left, we have the input composed of two channels and,
 on the right, we have the output composed of three channels.
 The black arrows represent part of the work being done by the transposed convolution.
 
-![Paint diagram representing part of the work done by a multi-channel transposed convolution, where we have a 2-channel input image on the left, a 3-channel output image on the right, and the representation done by part of the kernel to produce a corner of the output of the first of the output channels.](thumbnail.png "Diagram representing part of the work done by a multi-channel transposed convolution.")
+![Paint diagram representing part of the work done by a multi-channel transposed convolution, where we have a 2-channel input image on the left, a 3-channel output image on the right, and the representation done by part of the kernel to produce a corner of the output of the first of the output channels.](thumbnail.webp "Diagram representing part of the work done by a multi-channel transposed convolution.")
 
 The first thing I suspected was that what I really needed was to understand how things worked for multiple input channels.
 My reasoning was that, whatever happens when the input has $n$ channels and the output has 1 channel,

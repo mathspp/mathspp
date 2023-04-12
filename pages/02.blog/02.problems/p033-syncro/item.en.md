@@ -8,7 +8,7 @@ In how many moves can you do it?
 
 ===
 
-![](thumbnail.png)
+![](thumbnail.webp)
 
 
 # Problem statement
@@ -64,7 +64,7 @@ who sent me their correct solutions:
 This problem is really hard to solve without a visual representation of what is going on,
 so let me remind you of what the problem looks like:
 
-![](thumbnail.png "Initial configuration.")
+![](thumbnail.webp "Initial configuration.")
 
 We want to figure out what is the shortest sequence of circles and squares sends the four white triangles
 in the four petals into a single flower.

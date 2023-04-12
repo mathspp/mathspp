@@ -101,7 +101,7 @@ which in turn is faster than $E4$.
 
 This path of arrows is highlighted in the diagram below:
 
-![The same diagram as before, but the arrows C1 to D1, D1 to E1, E1 to E2, E2 to E3, and E3 to E4, are in an accent colour.](_six_races_fast_path.png "The path of arrows proving that $C1$ is faster than $E4$.")
+![The same diagram as before, but the arrows C1 to D1, D1 to E1, E1 to E2, E2 to E3, and E3 to E4, are in an accent colour.](_six_races_fast_path.webp "The path of arrows proving that $C1$ is faster than $E4$.")
 
 Now, is $C2$ faster than $E4$..?
 Well, we don't know!

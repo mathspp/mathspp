@@ -82,7 +82,7 @@ I included a screenshot here:
 
 However, by setting `rich_tracebacks=True`, the exception that is logged is also rendered beautifully:
 
-![A terminal window with some beautiful coloured logging, plus a beautiful traceback included in the logging, by virtue of setting `rich_traceback=True` when creating the instance of the `RichHandler`.](_logging_exceptions.png "Screenshot of exception logging with rich tracebacks.")
+![A terminal window with some beautiful coloured logging, plus a beautiful traceback included in the logging, by virtue of setting `rich_traceback=True` when creating the instance of the `RichHandler`.](_logging_exceptions.webp "Screenshot of exception logging with rich tracebacks.")
 
 `rich` is the gift that just keeps on giving...
 I wonder what I'll learn tomorrow!

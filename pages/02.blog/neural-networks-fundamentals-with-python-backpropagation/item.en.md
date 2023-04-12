@@ -540,7 +540,7 @@ and the next figure shows the network already distinguishes many points.
 
 ![](_quadrants_pre.png "Before training the network thinks all points are the same.")
 
-![](_quadrants_pos.png "After training the network can distinguish many points.")
+![](_quadrants_pos.webp "After training the network can distinguish many points.")
 
 
 # Wrap-up & current code

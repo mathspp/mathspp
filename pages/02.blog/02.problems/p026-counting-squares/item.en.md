@@ -27,7 +27,7 @@ tracing the squares with one's finger and whispering the count as you go, of cou
 You can start with something simpler to warm up.
 How many squares are there in this smaller $3 \times 3$ grid?
 
-![A $3\times 3$ grid with small, coloured squares.](_easier.png)
+![A $3\times 3$ grid with small, coloured squares.](_easier.webp)
 
 !!! Give it some thought...
 

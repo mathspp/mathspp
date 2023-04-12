@@ -2,8 +2,8 @@ date: 16-03-2022 01:00
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned how to install the starship cross-shell prompt on Windows for the PowerShell."
-    og:image: https://mathspp.com/blog/til/039/thumbnail.png
-    twitter:image: https://mathspp.com/blog/til/039/thumbnail.png
+    og:image: https://mathspp.com/blog/til/039/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/039/thumbnail.webp
 slug: "039"
 taxonomy:
     category: [blogpost, til]

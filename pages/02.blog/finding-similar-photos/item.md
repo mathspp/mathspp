@@ -12,7 +12,7 @@ Going through batches of photos and looking for near-duplicates is boring, so I 
 
 For example, I would like my program to determine that the first two photos in the collage below are pretty much the same, while also saying that the third one is different from the other two.
 
-![A collage of three photos of the same seagull. This collag was used in this Python project to see if we can find similar images (or near duplicates) with Python.](_seagulls.png "Three photos of the same seagull.")
+![A collage of three photos of the same seagull. This collag was used in this Python project to see if we can find similar images (or near duplicates) with Python.](_seagulls.webp "Three photos of the same seagull.")
 
 This short tutorial will go through the (surprisingly little) code I wrote as an experiment.
 

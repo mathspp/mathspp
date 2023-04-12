@@ -1,8 +1,8 @@
 date: 29-06-2021
 metadata:
     author: Rodrigo Girão Serrão
-    og:image: "https://mathspp.com/blog/pydonts/name-dunder-attribute/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/pydonts/name-dunder-attribute/thumbnail.png"
+    og:image: "https://mathspp.com/blog/pydonts/name-dunder-attribute/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/pydonts/name-dunder-attribute/thumbnail.webp"
 references:
   - "Python 3 Documentation, The Python Standard Library, Built-in Types, Special Attributes, [https://docs.python.org/3/library/stdtypes.html?highlight=__name__#definition.__name__](https://docs.python.org/3/library/stdtypes.html?highlight=__name__#definition.__name__) [last accessed 29-06-2021];"
   - "Python 3 Documentation, The Python Standard Library, Top-level script environment, [https://docs.python.org/3/library/__main__.html#module-__main__](https://docs.python.org/3/library/__main__.html#module-__main__) [last accessed 29-06-2021];"

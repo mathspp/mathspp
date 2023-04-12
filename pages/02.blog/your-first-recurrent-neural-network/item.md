@@ -498,7 +498,7 @@ with plt.xkcd():
     plt.plot(all_losses)
 ```
 
-![The loss plot after training a recurrent neural network to classify the language of names.](_loss_plot.png "Loss plot after training.")
+![The loss plot after training a recurrent neural network to classify the language of names.](_loss_plot.webp "Loss plot after training.")
 
 The loss plot (shown above) looks good, but how does the network perform on completely new data?
 

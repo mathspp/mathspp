@@ -1,8 +1,8 @@
 date: 03-03-2021
 metadata:
     author: "Rodrigo Girão Serrão"
-    og:image: "https://mathspp.com/blog/neural-networks-fundamentals-with-python-network-loss/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/neural-networks-fundamentals-with-python-network-loss/thumbnail.png"
+    og:image: "https://mathspp.com/blog/neural-networks-fundamentals-with-python-network-loss/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/neural-networks-fundamentals-with-python-network-loss/thumbnail.webp"
 process:
     twig: true
 slug: "neural-networks-fundamentals-with-python-network-loss"

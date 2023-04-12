@@ -2,7 +2,7 @@ We discuss the look-and-say sequence, its behaviour, variations of it, and a Pyt
 
 ===
 
-![A screenshot of a Numberphile video on the look-and-say sequence displaying the first terms of the look-and-say sequence.](thumbnail.png "The first few terms of the look-and-say sequence.")
+![A screenshot of a Numberphile video on the look-and-say sequence displaying the first terms of the look-and-say sequence.](thumbnail.webp "The first few terms of the look-and-say sequence.")
 
 
 # What is the look-and-say sequence?

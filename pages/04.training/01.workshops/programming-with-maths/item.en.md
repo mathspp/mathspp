@@ -6,7 +6,7 @@ What if you could program with maths..?
 
 ===
 
-![](thumbnail.png "An APL expression to compute the golden ratio")
+![](thumbnail.webp "An APL expression to compute the golden ratio")
 
 
 # Purpose

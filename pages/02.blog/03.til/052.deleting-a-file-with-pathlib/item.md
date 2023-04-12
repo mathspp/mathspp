@@ -2,7 +2,7 @@ Today I (re)learned how to delete a file in Python with the module pathlib.
 
 ===
 
-![A colourful background with the word “unlink” big and centre](thumbnail.png)
+![A colourful background with the word “unlink” big and centre](thumbnail.webp)
 
 # Module `pathlib`
 

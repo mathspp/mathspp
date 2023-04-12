@@ -14,7 +14,7 @@ The image above is a screenshot of the execution of the random walk that leaves 
 
 I also implemented an animation where the screen gets progressively filled with circles of different colours, as if being splattered with paint. Not sure why... But it looks interesting:
 
-![A black background with several randomly-coloured circles](splatter.png)
+![A black background with several randomly-coloured circles](splatter.webp)
 
 The implementation is in the same directory as the walks.
 

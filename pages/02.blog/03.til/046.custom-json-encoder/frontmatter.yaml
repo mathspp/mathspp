@@ -2,8 +2,8 @@ date: 03-06-2022
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned how to use a custom JSON encoder in Python with the module `json`."
-    og:image: https://mathspp.com/blog/til/046/thumbnail.png
-    twitter:image: https://mathspp.com/blog/til/046/thumbnail.png
+    og:image: https://mathspp.com/blog/til/046/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/046/thumbnail.webp
 references:
     - "Python 3 Documentation, The Python Standard Library, `json.JSONEncoder` [https://docs.python.org/3/library/json.html#json.JSONEncoder](https://docs.python.org/3/library/json.html#json.JSONEncoder) [last accessed 03-06-2022];"
 routes:

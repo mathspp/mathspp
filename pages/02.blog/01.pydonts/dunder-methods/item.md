@@ -3,7 +3,7 @@ to help you understand what they are and what they are for.
 
 ===
 
-![A code snippet with the definition of a Python class and a method called “__dunder_method__” with no code whatsoever.](thumbnail.png)
+![A code snippet with the definition of a Python class and a method called “__dunder_method__” with no code whatsoever.](thumbnail.webp)
 
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)

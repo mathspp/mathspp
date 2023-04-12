@@ -1,8 +1,8 @@
 date: 25-08-2021
 metadata:
     author: Rodrigo Girão Serrão
-    og:image: "https://mathspp.com/blog/pydonts/boost-your-productivity-with-the-repl/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/pydonts/boost-your-productivity-with-the-repl/thumbnail.png"
+    og:image: "https://mathspp.com/blog/pydonts/boost-your-productivity-with-the-repl/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/pydonts/boost-your-productivity-with-the-repl/thumbnail.webp"
 references:
     - "Rich, [https://github.com/willmcgugan/rich](https://github.com/willmcgugan/rich) [last accessed 25-08-2021"
     - "IPython, [https://ipython.org/](https://ipython.org/) [last accessed 25-08-2021]"

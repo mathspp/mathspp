@@ -10,7 +10,7 @@ Today I learned that files can _also_ be unpacked in Python.
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-![Code snippet showing how to unpack strings.](thumbnail.png)
+![Code snippet showing how to unpack strings.](thumbnail.webp)
 
 
 # File unpacking

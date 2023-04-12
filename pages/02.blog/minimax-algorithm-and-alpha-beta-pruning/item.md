@@ -140,7 +140,7 @@ Because if we do go to that position in the second row, I know you will pick wha
 
 This means that the second row of the diagram ends up looking like this:
 
-![](_tic_tac_toe_tree_2_results.png "Value of the game positions in the second row.")
+![](_tic_tac_toe_tree_2_results.webp "Value of the game positions in the second row.")
 
 Finally, this diagram brings some clarity!
 Now I understand that:

@@ -10,7 +10,7 @@ Pydon't unpack with slices, prefer starred assignment instead.
 
 ===
 
-![A Python code snippet unpacking a list with starred assignment.](thumbnail.png)
+![A Python code snippet unpacking a list with starred assignment.](thumbnail.webp)
 
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)

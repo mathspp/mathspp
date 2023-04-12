@@ -2,8 +2,8 @@ date: 15-11-2021
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "This is a short article on how I quickly used APL to verify my combinatorics calculations."
-    og:image: "https://mathspp.com/blog/counting-mosaics-with-apl/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/counting-mosaics-with-apl/thumbnail.png"
+    og:image: "https://mathspp.com/blog/counting-mosaics-with-apl/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/counting-mosaics-with-apl/thumbnail.webp"
 slug: "counting-mosaics-with-apl"
 taxonomy:
     category: "blogpost"

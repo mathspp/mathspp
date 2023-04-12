@@ -186,7 +186,7 @@ the 12 different moves that exist:
 
 | | X | X' |
 | :- | | |
-| L (left) | ![](_L.png) | ![](_Lp.png) |
+| L (left) | ![](_L.webp) | ![](_Lp.png) |
 | R (right) | ![](_R.png) | ![](_Rp.png) |
 | F (front) | ![](_F.png) | ![](_Fp.png) |
 | B (back) | ![](_B.png) | ![](_Bp.png) |

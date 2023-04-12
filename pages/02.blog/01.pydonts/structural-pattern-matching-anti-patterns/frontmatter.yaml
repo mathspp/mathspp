@@ -1,8 +1,8 @@
 date: 16-03-2021
 metadata:
     author: Rodrigo Girão Serrão
-    og:image: "https://mathspp.com/blog/pydonts/structural-pattern-matching-anti-patterns/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/pydonts/structural-pattern-matching-anti-patterns/thumbnail.png"
+    og:image: "https://mathspp.com/blog/pydonts/structural-pattern-matching-anti-patterns/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/pydonts/structural-pattern-matching-anti-patterns/thumbnail.webp"
 references:
   - "PEP 622 -- Structural Pattern Matching, [https://www.python.org/dev/peps/pep-0622/](https://www.python.org/dev/peps/pep-0622/);"
   - "PEP 634 -- Structural Pattern Matching: Specification, [https://www.python.org/dev/peps/pep-0634/](https://www.python.org/dev/peps/pep-0634/);"

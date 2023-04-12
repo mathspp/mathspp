@@ -8,7 +8,7 @@ In this Pydon't you'll learn how to make the best use possible of the Python REP
 
 ===
 
-![A representation of a Python REPL that was just fired up](thumbnail.png)
+![A representation of a Python REPL that was just fired up](thumbnail.webp)
 
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)

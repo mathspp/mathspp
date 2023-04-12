@@ -2,7 +2,7 @@ Today I learned how to install the starship cross-shell prompt on Windows for th
 
 ===
 
-![A screenshot of my PowerShell starship prompt after I learned how to install the starship cross-shell prompt on my Windows machine.](thumbnail.png "A screenshot of my PowerShell starship prompt.")
+![A screenshot of my PowerShell starship prompt after I learned how to install the starship cross-shell prompt on my Windows machine.](thumbnail.webp "A screenshot of my PowerShell starship prompt.")
 
 
 # What is starship?

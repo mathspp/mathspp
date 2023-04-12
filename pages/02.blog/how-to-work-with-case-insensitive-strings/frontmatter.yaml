@@ -2,8 +2,8 @@ date: 21-01-2023
 metadata:
     author: Rodrigo Girão Serrão
     description: "Short and practical tutorial that guides you on how to work with case-insensitive strings in Python and teaches how to use the str.lower, str.upper, and str.casefold methods."
-    og:image: "https://mathspp.com/blog/how-to-work-with-case-insensitive-strings/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/how-to-work-with-case-insensitive-strings/thumbnail.png"
+    og:image: "https://mathspp.com/blog/how-to-work-with-case-insensitive-strings/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/how-to-work-with-case-insensitive-strings/thumbnail.webp"
 references:
     - "Python 3 Docs, Built-in Types, String Methods, [`str.casefold`](https://docs.python.org/3/library/stdtypes.html#str.casefold) [last accessed 21-01-2023]"
     - "YouTube, anthonywritescode [“you're probably doing case-insensitive wrong (intermediate) anthony explains #517”](https://www.youtube.com/watch?v=U-Zq8bURfKc) [last accessed 20-01-2023]"

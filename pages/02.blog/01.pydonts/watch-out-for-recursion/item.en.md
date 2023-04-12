@@ -13,7 +13,7 @@ altogether.
 
 ===
 
-![A Python code snippet with a recursive function.](thumbnail.png)
+![A Python code snippet with a recursive function.](thumbnail.webp)
 
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)

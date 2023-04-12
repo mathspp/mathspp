@@ -7,7 +7,7 @@ Can you turn the table to get two or more orders right?
 
 ===
 
-![](thumbnail.png "A scheme of a possible configuration of the wrong orders.")
+![](thumbnail.webp "A scheme of a possible configuration of the wrong orders.")
 
 
 # Problem statement
@@ -51,7 +51,7 @@ plates until its own plate.
 
 For example, if we consider this placement:
 
-![](thumbnail.png)
+![](thumbnail.webp)
 
 Then the corresponding numbers would be the following:
 

@@ -4,7 +4,7 @@ Today I learned how the rich comparison protocol and, in particular, how __eq__ 
 
 <!--<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
 
-![](thumbnail.png "Photo by Михаил Секацкий on Unsplash")
+![](thumbnail.webp "Photo by Михаил Секацкий on Unsplash")
 
 
 # Rich comparison

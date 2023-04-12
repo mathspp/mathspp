@@ -2,8 +2,8 @@ date: 11-03-2022 15:30
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned how to use the function `pandas.show_versions` to get system diagnostic information."
-    og:image: https://mathspp.com/blog/til/036/thumbnail.png
-    twitter:image: https://mathspp.com/blog/til/036/thumbnail.png
+    og:image: https://mathspp.com/blog/til/036/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/036/thumbnail.webp
 slug: "036"
 taxonomy:
     category: [blogpost, til]

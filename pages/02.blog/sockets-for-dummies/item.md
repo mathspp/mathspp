@@ -389,7 +389,7 @@ Content-Type: text/html
 
 When I did this, Firefox changed from that grey state to a fully white page:
 
-![Firefox tab completely white.](_browser_http_headers_failed.png)
+![Firefox tab completely white.](_browser_http_headers_failed.webp)
 
 This seems like a better indication that we are making progress,
 but we don't see our “Hello, world!” title.

@@ -4,7 +4,7 @@ Today I learned about the symmetry in indexing from the beginning and end of a l
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-![The text “~i” inside a pair of square brackets in front of a highly geometrical building.](thumbnail.png)
+![The text “~i” inside a pair of square brackets in front of a highly geometrical building.](thumbnail.webp)
 
 
 # Negative indexing

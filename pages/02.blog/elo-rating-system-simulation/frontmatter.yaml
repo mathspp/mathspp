@@ -2,8 +2,8 @@ date: 25-01-2022
 metadata:
     author: Rodrigo Girão Serrão
     description: Join me as I create a simulation that tries to test an Elo-based rating system for quizzes.
-    og:image: https://mathspp.com/blog/elo-rating-system-simulation/thumbnail.png
-    twitter:image: https://mathspp.com/blog/elo-rating-system-simulation/thumbnail.png
+    og:image: https://mathspp.com/blog/elo-rating-system-simulation/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/elo-rating-system-simulation/thumbnail.webp
 references:
   - "Streamlit API Reference, [https://docs.streamlit.io/library/api-reference](https://docs.streamlit.io/library/api-reference) [last accessed 25-01-2022];"
   - "Elo rating system, Wikipedia, [https://en.wikipedia.org/wiki/Elo_rating_system](https://en.wikipedia.org/wiki/Elo_rating_system) [last accessed 25-01-2022];"

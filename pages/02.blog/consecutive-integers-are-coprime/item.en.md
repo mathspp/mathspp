@@ -10,7 +10,7 @@ Let's prove that if $k$ is an integer, then $\gcd(k, k+1) = 1$. That is, any two
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-![Two consecutive integers are coprime](consecutive-coprime.png)
+![Two consecutive integers are coprime](consecutive-coprime.webp)
 
 # Twitter proof
 

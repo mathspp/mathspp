@@ -2,8 +2,8 @@ date: 23-02-2022
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned about multi-channel transposed convolutions."
-    og:image: https://mathspp.com/blog/til/034/thumbnail.png
-    twitter:image: https://mathspp.com/blog/til/034/thumbnail.png
+    og:image: https://mathspp.com/blog/til/034/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/034/thumbnail.webp
 references:
   - "“TIL #033 – transposed convolution”, [https://mathspp.com/blog/til/033](/blog/til/033) [last accessed 23-02-2022];"
 slug: "034"

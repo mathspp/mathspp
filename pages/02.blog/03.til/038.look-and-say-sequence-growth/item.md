@@ -2,7 +2,7 @@ Today I learned that the length of the terms of the “look-and-say” sequence 
 
 ===
 
-![Graphical representation of the constant that determines the growth rate of the length of the terms of the look-and-say sequence, Conway's Constant.](thumbnail.png "Graphical representation of Conway's Constant.")
+![Graphical representation of the constant that determines the growth rate of the length of the terms of the look-and-say sequence, Conway's Constant.](thumbnail.webp "Graphical representation of Conway's Constant.")
 
 
 # What is the look-and-say sequence?

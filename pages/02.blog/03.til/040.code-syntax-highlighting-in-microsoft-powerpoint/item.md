@@ -20,7 +20,7 @@ At the bottom of the page you'll also find an animated GIF showing you how I do 
 
  1. Write some code in Visual Studio Code using the theme you already want:
 
-![Some Python code that has syntax highlighting in Visual Studio Code.](_code.png "Some code in Visual Studio Code.")
+![Some Python code that has syntax highlighting in Visual Studio Code.](_code.webp "Some code in Visual Studio Code.")
 
  2. Select the code and copy it:
 

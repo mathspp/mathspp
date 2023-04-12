@@ -10,7 +10,7 @@ so that it doesn't become too overwhelming.
 
 ===
 
-![An abstract background with the Python logo and three arrows in a circle, alluding to the 'recycle' symbol.](_thumbnail.png)
+![An abstract background with the Python logo and three arrows in a circle, alluding to the 'recycle' symbol.](_thumbnail.webp)
 
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)

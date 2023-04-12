@@ -8,7 +8,7 @@ In this Pydon't you will learn the Python string methods `translate` and `maketr
 
 ===
 
-![An implementation of the Caesar cipher making use of the string `maketrans` and `translate` methods.](thumbnail.png)
+![An implementation of the Caesar cipher making use of the string `maketrans` and `translate` methods.](thumbnail.webp)
 
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)

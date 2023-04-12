@@ -8,7 +8,7 @@ Can you find a really large triangle that is also really tiny?
 
 ===
 
-![](thumbnail.png)
+![](thumbnail.webp)
 
 # Problem statement
 

@@ -16,7 +16,7 @@ I added a loop to go over all the images, I added a [Rich] progress bar to see m
 
 Here is a screenshot of the code showing the progress bar, so I know it is still doing work:
 
-![Screenshot of a Python script that used a rich progress bar while converting RAW images into JPEGs.](_working.png "The progress bar during the execution of the script.")
+![Screenshot of a Python script that used a rich progress bar while converting RAW images into JPEGs.](_working.webp "The progress bar during the execution of the script.")
 
 The full code for this script can be found below.
 Now, I wonder...

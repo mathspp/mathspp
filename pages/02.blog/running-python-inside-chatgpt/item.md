@@ -2,7 +2,7 @@ Running Python inside ChatGPT shows some amazing capabilities that ChatGPT has t
 
 ===
 
-![Blurred screenshot of my conversation with ChatGPT where ChatGPT simulates an interactive Python REPL.](thumbnail.png)
+![Blurred screenshot of my conversation with ChatGPT where ChatGPT simulates an interactive Python REPL.](thumbnail.webp)
 
 # Simulating the Python REPL inside ChatGPT
 
@@ -38,9 +38,9 @@ In this article, I will go through excerpts of my conversations with ChatGPT to 
 
 If you just want to go ahead and start playing with ChatGPT yourself, here are two simple prompts that you can try to use:
 
-![A short transcript of a conversation with ChatGPT where ChatGPT is prompted to simulate a Python REPL.](_preview.png)
+![A short transcript of a conversation with ChatGPT where ChatGPT is prompted to simulate a Python REPL.](_preview.webp)
 
-![A short transcript of a conversation with ChatGPT where ChatGPT is prompted to simulate a Python REPL and also reply to English prompts.](_preview2.png)
+![A short transcript of a conversation with ChatGPT where ChatGPT is prompted to simulate a Python REPL and also reply to English prompts.](_preview2.webp)
 
 
 # Transcripts

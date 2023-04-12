@@ -2,7 +2,7 @@ Today I learned how to use the function `pandas.show_versions` to get system dia
 
 ===
 
-![A picture of panda (the mammal) with the words "pandas" and "show_versions()" written.](thumbnail.png "Background photo by Elena Loshina on Unsplash.")
+![A picture of panda (the mammal) with the words "pandas" and "show_versions()" written.](thumbnail.webp "Background photo by Elena Loshina on Unsplash.")
 
 
 # What is the pandas function `show_versions` for?

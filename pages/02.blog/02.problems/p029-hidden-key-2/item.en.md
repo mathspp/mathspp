@@ -60,7 +60,7 @@ so that the top left box is in position $(0, 0)$, the top right box is in positi
 $(0, 1)$, the bottom left box is in position $(1, 0)$ and the bottom right box
 is in position $(1, 1)$:
 
-![](_boxes_3.png)
+![](_boxes_3.webp)
 
 In the example image above, the key is currently in box $(1, 0)$.
 

@@ -21,7 +21,7 @@ how would you use a 2 by 2 convolution to downsample an image into half its size
 Well, if you set your 2 by 2 convolution to have no padding and a stride of 2,
 then downsampling is exactly what you get:
 
-![Paint diagram representing a 2x2 kernel acting on a 4x6 image producing a 2x3 downsample.](thumbnail.png "Representation of a 2x2 kernel acting on a 4x6 image producing a 2x3 downsample.")
+![Paint diagram representing a 2x2 kernel acting on a 4x6 image producing a 2x3 downsample.](thumbnail.webp "Representation of a 2x2 kernel acting on a 4x6 image producing a 2x3 downsample.")
 
 In the figure above, the top rectangle represents the input image and the bottom rectangle represents the output (downsampled) image.
 The black squares on the top-left and bottom-right corners of the input image represent the kernel.

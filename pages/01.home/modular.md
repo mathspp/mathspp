@@ -10,8 +10,8 @@ content:
           - "_blog"
 metadata:
     author: "Rodrigo Girão Serrão"
-    og:image: "https://mathspp.com/thumbnail.png"
-    twitter:image: "https://mathspp.com/thumbnail.png"
+    og:image: "https://mathspp.com/thumbnail.webp"
+    twitter:image: "https://mathspp.com/thumbnail.webp"
 onpage_menu: false
 visible: false
 ---

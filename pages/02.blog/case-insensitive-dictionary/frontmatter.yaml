@@ -2,8 +2,8 @@ date: 29-01-2023
 metadata:
     author: Rodrigo Girão Serrão
     description: "How do you implement a case-insensitive (or caseless) dictionary? In this article we explore solutions where we inherit from the built-in dict, the abstract base class MutableMapping from the standard module collections.abc, and the UserDict in the standard module collections."
-    og:image: "https://mathspp.com/blog/case-insensitive-dictionary/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/case-insensitive-dictionary/thumbnail.png"
+    og:image: "https://mathspp.com/blog/case-insensitive-dictionary/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/case-insensitive-dictionary/thumbnail.webp"
 references:
     - Python 3 Docs, `collections.abc.MutableMapping` [https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableMapping](https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableMapping) [last accessed 29-01-2023];
     - Python 3 Docs, `collections.UserDict` [https://docs.python.org/3/library/collections.html#userdict-objects](https://docs.python.org/3/library/collections.html#userdict-objects) [last accessed 29-01-2023];

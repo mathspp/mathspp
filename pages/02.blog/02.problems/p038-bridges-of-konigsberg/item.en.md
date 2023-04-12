@@ -66,7 +66,7 @@ in total in order to visit all seven bridges.
 
 In order to show that is the case, consider the following figure:
 
-![](_bridges_lands.png "Numbered pieces of land connected to the bridges.")
+![](_bridges_lands.webp "Numbered pieces of land connected to the bridges.")
 
 In the figure above we can see that I numbered the four pieces
 of land to which the bridges are connected.

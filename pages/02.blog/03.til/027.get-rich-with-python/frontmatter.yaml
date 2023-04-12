@@ -2,8 +2,8 @@ date: 01-02-2022
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned how to use the package `rich` by Will McGugan."
-    og:image: https://mathspp.com/blog/til/027/thumbnail.png
-    twitter:image: https://mathspp.com/blog/til/027/thumbnail.png
+    og:image: https://mathspp.com/blog/til/027/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/027/thumbnail.webp
 slug: "027"
 taxonomy:
     category: [blogpost, til]

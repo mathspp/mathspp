@@ -2,7 +2,7 @@ Can you tile a chessboard with two missing squares?
 
 ===
 
-![](thumbnail.png "A chessboard with two domino tiles on top of it.")
+![](thumbnail.webp "A chessboard with two domino tiles on top of it.")
 
 # Problem statement
 

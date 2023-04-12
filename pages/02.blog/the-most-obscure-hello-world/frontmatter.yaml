@@ -2,8 +2,8 @@ date: 16-07-2022 15:00
 metadata:
     author: Rodrigo Girão Serrão
     description: "In this article we go over the most obscure “Hello, world!” Python program I have ever seen."
-    og:image: "https://mathspp.com/blog/the-most-obscure-hello-world-program/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/the-most-obscure-hello-world-program/thumbnail.png"
+    og:image: "https://mathspp.com/blog/the-most-obscure-hello-world-program/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/the-most-obscure-hello-world-program/thumbnail.webp"
 references:
     - "Python 3 documentation, Built-in Functions, `property`, [https://docs.python.org/3/library/functions.html#property](https://docs.python.org/3/library/functions.html#property) [last accessed 11-07-2022];"
 slug: "the-most-obscure-hello-world-program"

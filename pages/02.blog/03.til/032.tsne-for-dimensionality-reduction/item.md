@@ -27,7 +27,7 @@ and the results I got looked really great, to be honest.
 Below, you can see the result I got with minimal effort,
 and you can even see that it does a pretty decent job of separating the two groups of data:
 
-![A 2D visualisation of the data that t-SNE projects in the lower dimensional space.](thumbnail.png "2D projection of a 24D space.")
+![A 2D visualisation of the data that t-SNE projects in the lower dimensional space.](thumbnail.webp "2D projection of a 24D space.")
 
 I was really impressed by the results,
 and I was also very curious about how hard it would be to implement this method.

@@ -10,7 +10,7 @@ Today I learned that the `.join` method in Python is a two-pass algorithm, and t
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-![Code showing that joining list comprehensions is faster than joining generator expressions.](thumbnail.png)
+![Code showing that joining list comprehensions is faster than joining generator expressions.](thumbnail.webp)
 
 
 # Context

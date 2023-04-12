@@ -2,7 +2,7 @@ Today I learned that you can build web apps with Python using streamlit.
 
 ===
 
-![](thumbnail.png "The streamlit logo")
+![](thumbnail.webp "The streamlit logo")
 
 
 # Streamlit

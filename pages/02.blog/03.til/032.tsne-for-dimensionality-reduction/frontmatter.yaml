@@ -2,8 +2,8 @@ date: 19-02-2022
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned about t-SNE for dimensionality reduction."
-    og:image: https://mathspp.com/blog/til/032/thumbnail.png
-    twitter:image: https://mathspp.com/blog/til/032/thumbnail.png
+    og:image: https://mathspp.com/blog/til/032/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/032/thumbnail.webp
 references:
   - "Van der Maaten, L. and Hinton, G., 2008. Visualizing data using t-SNE. Journal of machine learning research, 9(11)."
   - "t-SNE, Wikipedia, [https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding](https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding) [last accessed 19-02-2022];"

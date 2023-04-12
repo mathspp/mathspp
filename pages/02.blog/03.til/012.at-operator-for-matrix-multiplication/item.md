@@ -10,7 +10,7 @@ Today I learned that Python 3.5+ supports the operator `@` for matrix multiplica
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-![Snippet of Python code using `@` with `numpy`.](thumbnail.png)
+![Snippet of Python code using `@` with `numpy`.](thumbnail.webp)
 
 
 # At operator `@`

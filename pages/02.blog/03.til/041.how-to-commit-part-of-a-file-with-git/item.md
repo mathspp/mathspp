@@ -22,7 +22,7 @@ You can reply with `y` for “yes” or with `n` for “no”, but you have plen
 In the screenshot below, you can see an example of the interactive prompt and me replying with “no”,
 because I didn't want to add that specific hunk at that point in time.
 
-!["Screenshot of a terminal where it shows a small git diff in the terminal, with a basic code change, and then the interactive question from `git add -p` asking if I want to stage the current hunk. In front of the interactive question there is a single character 'n', that I typed, because I didn't want to add that hunk."](_example-hunk.png "Screenshot of the interactive prompt for `git add -p`.")
+!["Screenshot of a terminal where it shows a small git diff in the terminal, with a basic code change, and then the interactive question from `git add -p` asking if I want to stage the current hunk. In front of the interactive question there is a single character 'n', that I typed, because I didn't want to add that hunk."](_example-hunk.webp "Screenshot of the interactive prompt for `git add -p`.")
 
 The options I use the most are:
 

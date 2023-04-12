@@ -20,7 +20,7 @@ The end product of that is a programming language with some common constructs, s
 
 To run one of the snippets, run the `RojInterpreter.py` file, which starts a REPL. You can type Roj programs in one line or you can type _execute filename_ where _filename_ is the path to the file you want to execute:
 
-![A screenshot of a basic REPL session in the Roj interpreter](roj_repl_session_screenshot.png)
+![A screenshot of a basic REPL session in the Roj interpreter](roj_repl_session_screenshot.webp)
 
 Please bear in mind that the REPL does **not** save variables and whatnot from the previous lines. If you want to type a Roj program directly into the REPL, it will have to be a one-liner.
 

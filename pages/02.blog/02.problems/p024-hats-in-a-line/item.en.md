@@ -156,7 +156,7 @@ I will now complete the example we had been going over.
 The third person knows the hats are like this: $?~0~?~1~1~0$ and knows that
 $0~?~1~1~0$ should add up to something even.
 
-![Image illustrating the explanation](_explanation_03.png)
+![Image illustrating the explanation](_explanation_03.webp)
 
 The third person can then guess their hat is light-coloured, because
 $0~+~? + 1 + 1 + 0$ only adds up to something even if their hat (the $?$) is

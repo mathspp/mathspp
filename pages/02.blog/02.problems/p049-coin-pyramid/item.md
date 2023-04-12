@@ -2,7 +2,7 @@ Can you make the pyramid point the other way by moving only three coins?
 
 ===
 
-![10 coins laid in a pyramid, with the tip to the right.](thumbnail.png "10 coin pyramid.")
+![10 coins laid in a pyramid, with the tip to the right.](thumbnail.webp "10 coin pyramid.")
 
 # Problem statement
 

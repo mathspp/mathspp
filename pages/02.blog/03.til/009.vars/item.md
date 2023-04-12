@@ -8,7 +8,7 @@ Today I learned about the built-in function `vars` in Python.
 
 ===
 
-![Example usage of `vars` in the Python REPL.](thumbnail.png)
+![Example usage of `vars` in the Python REPL.](thumbnail.webp)
 
 
 # `vars`

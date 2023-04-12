@@ -2,7 +2,7 @@ Join me in solving the word game Wordle in (Dyalog) APL.
 
 ===
 
-![](thumbnail.png "A screenshot of a session of Wordle I played.")
+![](thumbnail.webp "A screenshot of a session of Wordle I played.")
 
 
 # Introduction

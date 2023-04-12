@@ -7,7 +7,7 @@ and uncover the mathematical elegance behind the solutions.
 
 ===
 
-![](thumbnail.png "An abstraction of the problem of the seven bridges of Königsberg.")
+![](thumbnail.webp "An abstraction of the problem of the seven bridges of Königsberg.")
 
 
 # Purpose

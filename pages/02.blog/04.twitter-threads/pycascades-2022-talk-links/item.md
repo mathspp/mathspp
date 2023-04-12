@@ -27,7 +27,7 @@ I had a blast 🥳
 
 Here are the links to the talk slides, the written version of the talk, and more!
 
-![A collage of funny reactions and nice feedback from my talk.](pycascades2022_reactions.png "Some feedback and live reactions I got.")
+![A collage of funny reactions and nice feedback from my talk.](pycascades2022_reactions.webp "Some feedback and live reactions I got.")
 
 Huge shout-out to the @pycascades organisers for creating such a wonderful and inclusive conf for everyone!
 

@@ -95,7 +95,7 @@ if __name__ == "__main__":
 
 If you run your Flask app and open it in your browser, you should see something like this:
 
-![Screenshot of a simple web page that uses HTMX to fetch data from Flask and that uses server-side events (SSE) to stream data back from Flask.](_demo_screenshot.png "HTMX web page that updates with real-time data from Flask.")
+![Screenshot of a simple web page that uses HTMX to fetch data from Flask and that uses server-side events (SSE) to stream data back from Flask.](_demo_screenshot.webp "HTMX web page that updates with real-time data from Flask.")
 
 The second paragraph should update every second with an increasing counter.
 

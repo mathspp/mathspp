@@ -10,7 +10,7 @@ Today I learned that Python generators can return a value.
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-![Code showing a generator that returns a value.](thumbnail.png)
+![Code showing a generator that returns a value.](thumbnail.webp)
 
 
 # Generators

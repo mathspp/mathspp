@@ -1,8 +1,8 @@
 date: 31-03-2021
 metadata:
     author: Rodrigo Girão Serrão
-    og:image: "https://mathspp.com/blog/pydonts/zip-up/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/pydonts/zip-up/thumbnail.png"
+    og:image: "https://mathspp.com/blog/pydonts/zip-up/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/pydonts/zip-up/thumbnail.webp"
 references:
   - "Python 3 Documentation, The Python Standard Library, `zip`, [docs.python.org/3/library/functions.html#zip](https://docs.python.org/3/library/functions.html#zip) [last accessed 30-03-2021];"
   - "Python 3.10 Documentation, The Python Standard Library, `zip`, [docs.python.org/3.10/library/functions.html#zip](https://docs.python.org/3.10/library/functions.html#zip) [last accessed 30-03-2021];"

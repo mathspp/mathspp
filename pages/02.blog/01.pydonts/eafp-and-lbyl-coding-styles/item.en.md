@@ -11,7 +11,7 @@ instead of an `if` statement to prevent the error.
 
 ===
 
-![A Python code snippet, using a `try` statement instead of an `if`.](thumbnail.png)
+![A Python code snippet, using a `try` statement instead of an `if`.](thumbnail.webp)
 
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)

@@ -1,8 +1,8 @@
 date: 21-03-2021
 metadata:
     author: Rodrigo Girão Serrão
-    og:image: https://mathspp.com/blog/problems/restaurant-roundtable/thumbnail.png
-    twitter:image: https://mathspp.com/blog/problems/restaurant-roundtable/thumbnail.png
+    og:image: https://mathspp.com/blog/problems/restaurant-roundtable/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/problems/restaurant-roundtable/thumbnail.webp
 process:
     twig: true
 slug: restaurant-roundtable

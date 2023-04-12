@@ -2,7 +2,7 @@ Today I learned that you can add suggestions directly when reviewing pull reques
 
 ===
 
-![A blurred GitHub pull request review on the background and the icon of the “add a suggestion” feature focused in the foreground.](thumbnail.png)
+![A blurred GitHub pull request review on the background and the icon of the “add a suggestion” feature focused in the foreground.](thumbnail.webp)
 
 # Add a suggestion in a GitHub pull request review
 

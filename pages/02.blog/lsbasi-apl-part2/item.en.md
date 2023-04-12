@@ -10,7 +10,7 @@ Today is the day! Today is the day we take our [APL][apl-wiki] programs and inte
 ===
 
 
-![A black and white doodle of a person in front of a computer.](./lsbasi-apl-part2-bg.png)
+![A black and white doodle of a person in front of a computer.](./lsbasi-apl-part2-bg.webp)
 
 Just to get us started, here are two ASTs, two Awfully Sketched Trees.
 

@@ -12,7 +12,7 @@ dunder methods with these two use cases in mind.
 
 ===
 
-![A Python code snippet with a custom class and stubs for the dunder methods `str` and `repr`.](thumbnail.png)
+![A Python code snippet with a custom class and stubs for the dunder methods `str` and `repr`.](thumbnail.webp)
 
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)

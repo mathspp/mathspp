@@ -8,7 +8,7 @@ Learn the ins and outs of comparison operator chaining, and especially the cases
 
 ===
 
-![A Python code snippet showing comparison operator chaining.](thumbnail.png)
+![A Python code snippet showing comparison operator chaining.](thumbnail.webp)
 
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)

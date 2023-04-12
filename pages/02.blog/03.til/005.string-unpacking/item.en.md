@@ -10,7 +10,7 @@ Today I learned strings can also be unpacked in Python.
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-![Code snippet showing how to unpack strings.](thumbnail.png)
+![Code snippet showing how to unpack strings.](thumbnail.webp)
 
 
 # String unpacking

@@ -2,8 +2,8 @@ date: 14-01-2022
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned about the Python module `selectors` to manage multiple socket connections."
-    og:image: https://mathspp.com/blog/til/022/thumbnail.png
-    twitter:image: https://mathspp.com/blog/til/022/thumbnail.png
+    og:image: https://mathspp.com/blog/til/022/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/022/thumbnail.webp
 references:
   - "Python 3 Docs, The Python Standard Library, `selectors`, [https://docs.python.org/3/library/selectors.html](https://docs.python.org/3/library/selectors.html) [last accessed 13-01-2022];"
 slug: "022"

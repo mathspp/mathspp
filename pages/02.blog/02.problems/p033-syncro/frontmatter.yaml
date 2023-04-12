@@ -1,8 +1,8 @@
 date: 04-04-2021
 metadata:
     author: Rodrigo Girão Serrão
-    og:image: https://mathspp.com/blog/problems/syncro/thumbnail.png
-    twitter:image: https://mathspp.com/blog/problems/syncro/thumbnail.png
+    og:image: https://mathspp.com/blog/problems/syncro/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/problems/syncro/thumbnail.webp
 process:
     twig: true
 slug: syncro

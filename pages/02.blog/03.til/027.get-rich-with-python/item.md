@@ -2,7 +2,7 @@ Today I learned how to use the package `rich` by Will McGugan.
 
 ===
 
-![](thumbnail.png)
+![](thumbnail.webp)
 
 
 # `rich`

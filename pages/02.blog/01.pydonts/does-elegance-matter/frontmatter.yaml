@@ -1,8 +1,8 @@
 date: 06-07-2021
 metadata:
     author: Rodrigo Girão Serrão
-    og:image: "https://mathspp.com/blog/pydonts/does-elegance-matter/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/pydonts/does-elegance-matter/thumbnail.png"
+    og:image: "https://mathspp.com/blog/pydonts/does-elegance-matter/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/pydonts/does-elegance-matter/thumbnail.webp"
 references:
   - "Edsger W. Dijkstra (2012), “Selected Writings on Computing: A personal Perspective”, p.347, Springer Science & Business Media;"
   - "Aaron W. Hsu (2017), “Beginner Patterns vs Anti-patterns in APL”, FnConf'17, [https://www.youtube.com/watch?v=v7Mt0GYHU9A](https://www.youtube.com/watch?v=v7Mt0GYHU9A) [last accessed 06-07-2021];"

@@ -6,7 +6,7 @@ Minesweeper has to be one of the most well-known minigames of all time, no? I sp
 
 ===
 
-![A screenshot of my implementation of Minesweeper](minesweeper-screenshot.png)
+![A screenshot of my implementation of Minesweeper](minesweeper-screenshot.webp)
 
 I made a remake of Minesweeper when I was trying to sharpen my Python skills and you can see above a screenshot of my version of the game.
 

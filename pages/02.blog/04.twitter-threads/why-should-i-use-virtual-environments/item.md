@@ -65,7 +65,7 @@ So, I picked the theme Dracula and ran it:
 
 Sadly, it didn't work:
 
-![](dracula_not_working.png)
+![](dracula_not_working.webp)
 
 
 That white background and those bright colours are not the Dracula theme.

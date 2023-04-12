@@ -9,7 +9,7 @@ as we go over some interesting self-referential concepts and objects.
 
 ===
 
-![](thumbnail.png "")
+![](thumbnail.webp "")
 
 
 # Introduction

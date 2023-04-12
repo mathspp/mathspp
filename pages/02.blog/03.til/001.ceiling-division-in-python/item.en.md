@@ -10,7 +10,7 @@ Today I learned how to do ceiling division in Python just with `//`.
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-![](thumbnail.png)
+![](thumbnail.webp)
 
 
 # Floor division `//`

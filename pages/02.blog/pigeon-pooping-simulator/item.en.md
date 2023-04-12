@@ -6,7 +6,7 @@ This blog post has a single purpose, which is to show you the weird game I made,
 
 ===
 
-![Gameplay screenshot](simulator_screenshot.png)
+![Gameplay screenshot](simulator_screenshot.webp)
 
 The inspiration for this game came after an English class in which my English teacher jokingly talked about a pigeon simulator game. Of course I took it seriously and a couple
 of lessons later I had this game working: a game where you just fly up and down, hitting SPACE to try and poop on the heads of the people you fly past.

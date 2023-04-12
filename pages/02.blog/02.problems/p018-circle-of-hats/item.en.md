@@ -64,7 +64,7 @@ Now we pretend we are the mathematician number $0$, and so we see the numbers $0
 
 To recap, mathematician $0$ guessed $1$ because the other mathematicians' hats added up to $4$ and $4 + 1 \equiv 0$ modulo $5$. Unfortunately, the mathematician got it wrong because its hat had a $3$ on it...
 
-![hat-0.png](./hat-0.png)
+![hat-0.webp](./hat-0.webp)
 
 Mathematician $1$ sees $3$, $0$, $1$ and $3$, which add up to $3 + 0 + 1 + 3 \equiv 2$ mudulo $5$ and to get to $1$ we must add $4$, so mathematician $1$ guesses $4$, which is also wrong...
 

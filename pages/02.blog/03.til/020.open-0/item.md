@@ -2,7 +2,7 @@ Today I learned you can read from stdin with `open(0)`.
 
 ===
 
-![The code `open(0)  # ?!` in a good-looking thumbnail.](thumbnail.png)
+![The code `open(0)  # ?!` in a good-looking thumbnail.](thumbnail.webp)
 
 
 # Opening a file

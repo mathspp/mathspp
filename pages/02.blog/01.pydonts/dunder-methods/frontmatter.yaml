@@ -2,8 +2,8 @@ date: 09-07-2022
 metadata:
     author: Rodrigo Girão Serrão
     description: "This is an introduction to dunder methods in Python, to help you understand what they are and what they are for."
-    og:image: "https://mathspp.com/blog/pydonts/dunder-methods/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/pydonts/dunder-methods/thumbnail.png"
+    og:image: "https://mathspp.com/blog/pydonts/dunder-methods/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/pydonts/dunder-methods/thumbnail.webp"
 references:
     - "Python 3 Documentation, Data model, [https://docs.python.org/3/reference/datamodel.html](https://docs.python.org/3/reference/datamodel.html) [last accessed 09-07-2022];"
 slug: "dunder-methods"

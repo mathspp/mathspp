@@ -30,7 +30,7 @@ different renderings of the Mandelbrot set:
 
 ![](_bw_15iters.png "A black and white, low resolution image of a fractal.")
 
-![](_gray_50iters.png "A gray scale, medium resolution image of a fractal.")
+![](_gray_50iters.webp "A gray scale, medium resolution image of a fractal.")
 
 ![](thumbnail.png "A coloured image of a fractal.")
 

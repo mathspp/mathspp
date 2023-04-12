@@ -1,8 +1,8 @@
 date: 19-01-2021
 metadata:
     author: Rodrigo Girão Serrão
-    og:image: "https://mathspp.com/blog/pydonts/eafp-and-lbyl-coding-styles/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/pydonts/eafp-and-lbyl-coding-styles/thumbnail.png"
+    og:image: "https://mathspp.com/blog/pydonts/eafp-and-lbyl-coding-styles/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/pydonts/eafp-and-lbyl-coding-styles/thumbnail.webp"
 routes:
     aliases:
       - "/blog/pydonts/pydont-ask-for-permission-apologise"

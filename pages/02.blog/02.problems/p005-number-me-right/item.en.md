@@ -49,7 +49,7 @@ We will prove this by induction. The statement $P(0)$ is trivially true as the s
 
 Assume $P(n)$ is true. We show this implies that $P(n+1)$ is also true.
 
-![A 4 by 4 square already filled in](nmr_1.png)
+![A 4 by 4 square already filled in](nmr_1.webp)
 
 In the image above, we exemplify with $P(2)$ already filled in. Now we will show that we can fill the whole square in the image by following the same rule (i.e. using bitwise XOR) and we show that every row will hold the numbers $0, 1, \cdots, 6, 7$. To make things easier for everyone, let's say the big square in the image is split into four smaller squares; the $SW$ square is already filled in and on top of it is the $NW$ square. To the right of the $SW$ square is the $SE$ square and in the top right corner of the big $8 \times 8$ square is the $4 \times 4$ square we will call $NE$.
 

@@ -1,8 +1,8 @@
 date: 09-02-2021
 metadata:
     author: Rodrigo Girão Serrão
-    og:image: "https://mathspp.com/blog/pydonts/truthy-falsy-and-bool/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/pydonts/truthy-falsy-and-bool/thumbnail.png"
+    og:image: "https://mathspp.com/blog/pydonts/truthy-falsy-and-bool/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/pydonts/truthy-falsy-and-bool/thumbnail.webp"
 slug: "truthy-falsy-and-bool"
 taxonomy:
     category: [blogpost, pydont]

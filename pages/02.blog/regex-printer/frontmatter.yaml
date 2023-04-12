@@ -1,8 +1,8 @@
 date: 20-11-2017
 metadata:
     description: In this post I explain briefly what a regex is and show something interesting I did with them.
-    og:image: https://mathspp.com/blog/regex-printer/regex.png
-    twitter:image: https://mathspp.com/blog/regex-printer/regex.png
+    og:image: https://mathspp.com/blog/regex-printer/regex.webp
+    twitter:image: https://mathspp.com/blog/regex-printer/regex.webp
 slug: regex-printer
 taxonomy:
     category: blogpost

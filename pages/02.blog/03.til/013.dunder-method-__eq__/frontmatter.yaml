@@ -2,8 +2,8 @@ date: 03-11-2021 17:00
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned how the rich comparison protocol and, in particular, how __eq__ works behind the scenes."
-    og:image: https://mathspp.com/blog/til/013/thumbnail.png
-    twitter:image: https://mathspp.com/blog/til/013/thumbnail.png
+    og:image: https://mathspp.com/blog/til/013/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/013/thumbnail.webp
 references:
     - "CPython source code on GitHub, [https://github.com/python/cpython](https://github.com/python/cpython) [last accessed 03-11-2021];"
     - "Python 3 Docs, The Python Language Reference, Data model, rich comparisons [https://docs.python.org/3/reference/datamodel.html#object.__lt__](https://docs.python.org/3/reference/datamodel.html#object.__lt__) [last accessed 03-11-2021];"

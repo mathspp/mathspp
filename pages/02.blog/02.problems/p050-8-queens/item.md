@@ -77,7 +77,7 @@ here is an image that shows how, along one diagonal,
 the sum of the two coordinates is always 10 and, along another diagonal,
 the difference of the two coordinates is always -2:
 
-![A chessboard with two highlighted diagonals showing their invariants.](_diagonals.png "Two diagonals, and their invariants, highlighted.")
+![A chessboard with two highlighted diagonals showing their invariants.](_diagonals.webp "Two diagonals, and their invariants, highlighted.")
 
 Therefore, we can just check if all the invariants are different because,
 if they are, that's because the queens are not attacking each other diagonally.

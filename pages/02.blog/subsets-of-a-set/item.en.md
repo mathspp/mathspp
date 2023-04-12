@@ -10,7 +10,7 @@ Let's prove that, if a set has size $n$, then that same set has exactly $2^n$ su
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-![|S| = n implies that |P(S)| = 2^n](subsets.png?crop=0,60,532,120)
+![|S| = n implies that |P(S)| = 2^n](subsets.webp?crop=0,60,532,120)
 
 # Twitter proof
 

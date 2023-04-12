@@ -2,7 +2,7 @@ In this article we try to crack Wordle, a variation of mastermind played with (E
 
 ===
 
-![](thumbnail.png "A screenshot of a session of Wordle I played.")
+![](thumbnail.webp "A screenshot of a session of Wordle I played.")
 
 
 # Introduction

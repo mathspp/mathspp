@@ -51,7 +51,7 @@ There are many different solutions to this problem.
 
 Jerry, from the USA, submitted the solution that I am most fond of:
 
-![Solution with vertices ((0, 0), (4, 4), (0, 3)), ((0, 0), (3, 0), (1, 2)), ((0, 4), (4, 0), (4, 3)), ((4, 4), (1, 4), (3, 2))](_jerry.png)
+![Solution with vertices ((0, 0), (4, 4), (0, 3)), ((0, 0), (3, 0), (1, 2)), ((0, 4), (4, 0), (4, 3)), ((4, 4), (1, 4), (3, 2))](_jerry.webp)
 
 This solution is my favourite because of the vertical symmetry between the two larger triangles
 and because the two smaller triangles are rotations of the other.

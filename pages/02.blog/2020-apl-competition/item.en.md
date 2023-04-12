@@ -8,7 +8,7 @@ The 2020 APL programming competition was tough! In this post I share a couple of
 
 ===
 
-![An edited screenshot of part of my submitted code](screenshot.png)
+![An edited screenshot of part of my submitted code](screenshot.webp)
 
 The [Dyalog APL competition][apl-comp] is an annual competition held by [Dyalog] for students from around the world to test their APL skills on two sets of problems.
 

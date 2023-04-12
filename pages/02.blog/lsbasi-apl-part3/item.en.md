@@ -319,7 +319,7 @@ This is easier to understand starting from vectors (akin to lists or vectors in 
 
 Here is an example of a vector with 3 elements:
 
-![a vector with the numbers 3, 7 and 8](vector.png)
+![a vector with the numbers 3, 7 and 8](vector.webp)
 
 A vector is a linear container, in which items come one after the other.
 A vector only has one dimension and its value equals the number of elements of the vector, so this vector has shape `[3]`.

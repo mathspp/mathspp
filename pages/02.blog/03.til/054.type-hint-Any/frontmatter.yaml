@@ -2,8 +2,8 @@ date: 04-11-2022
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned about the type hint `Any` and its bidirectional compatibility with all other types."
-    og:image: https://mathspp.com/blog/til/054/thumbnail.png
-    twitter:image: https://mathspp.com/blog/til/054/thumbnail.png
+    og:image: https://mathspp.com/blog/til/054/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/054/thumbnail.webp
 references:
   - "Python 3 Documentation, `typing`, “The `Any` type”, [https://docs.python.org/3/library/typing.html#the-any-type](https://docs.python.org/3/library/typing.html#the-any-type) [last accessed 4-11-2022];"
 routes:

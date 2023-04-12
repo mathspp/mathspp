@@ -10,7 +10,7 @@ Then, all of a sudden, I thought “No... It can't be... Can it?”...
 Immediately, I opened the [GitHub search](https://github.com/search) and typed a search query...
 And immediately got 1,059 search results back, which means approximately 1,000 bugs.
 
-![](_1059_results.png)
+![](_1059_results.webp)
 
 And this was just one query.
 25 search queries later, I had found over 10,000 bugs in Python code all over GitHub.

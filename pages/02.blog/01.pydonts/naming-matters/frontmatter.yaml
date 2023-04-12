@@ -1,8 +1,8 @@
 date: 10-08-2021
 metadata:
     author: Rodrigo Girão Serrão
-    og:image: "https://mathspp.com/blog/pydonts/naming-matters/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/pydonts/naming-matters/thumbnail.png"
+    og:image: "https://mathspp.com/blog/pydonts/naming-matters/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/pydonts/naming-matters/thumbnail.webp"
 references:
   - "PEP 8 -- Style Guide for Python Code, [https://www.python.org/dev/peps/pep-0008](https://www.python.org/dev/peps/pep-0008) [last accessed 28-07-2021];"
   - "Stack Overflow, “What's an example use case for a Python classmethod?”, [https://stackoverflow.com/q/5738470/2828287](https://stackoverflow.com/q/5738470/2828287) [last accessed 28-07-2021];"

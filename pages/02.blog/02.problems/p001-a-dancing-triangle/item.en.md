@@ -6,7 +6,7 @@ This post's format will be a bit different from the usual and the first of a ser
 
 ===
 
-![A scheme of what is explained below](dancing_triangle_scheme.png)
+![A scheme of what is explained below](dancing_triangle_scheme.webp)
 
 
 # Problem statement
