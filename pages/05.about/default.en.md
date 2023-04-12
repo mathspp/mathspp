@@ -24,7 +24,7 @@ and programming, and also show that mathematics and programming complement each 
 
 ### The author
 
-![A picture of my face.](rgs.jpg?resize=150,200&classes=float-right)
+![A picture of my face.](rgs?resize=150,200&classes=float-right)
 
 My name is [Rodrigo Girão Serrão][linkedin], I am from [Portugal](https://en.wikipedia.org/wiki/Portugal)
 and I am a mathemagician and a programmer.
