@@ -9,7 +9,7 @@ ourselves to implement the backpropagation algorithm.
 
 ===
 
-![A nice image with blue and purple lights.](_thumbnail.webp "Original photo by JJ Ying on Unsplash.")
+![A nice image with blue and purple lights.](_thumbnail.png "Original photo by JJ Ying on Unsplash.")
 
 
 # Purpose of this article
