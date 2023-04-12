@@ -9,7 +9,7 @@ It was skipping some images...
 
 That is when I realised I was caching some generators and I shouldn't!
 
-Here is a simplified version of what I was doing:
+Here is a simplified demonstration of the issue:
 
 ```py
 from functools import lru_cache
