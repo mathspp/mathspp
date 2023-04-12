@@ -1,0 +1,17 @@
+date: 06-03-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to optimise my website images for the web and I automated that process."
+    og:image: https://mathspp.com/blog/til/optimising-images-for-the-web/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/optimising-images-for-the-web/thumbnail.webp
+routes:
+    aliases:
+        - "/blog/til/057"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - python
+      - scripting
+title: "TIL #057 – optimising images for the web"
+visible: false
