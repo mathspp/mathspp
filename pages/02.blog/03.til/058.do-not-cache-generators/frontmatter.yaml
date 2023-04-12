@@ -1,0 +1,17 @@
+date: 12-04-2023 10:30
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned not to cache generators."
+    og:image: https://mathspp.com/blog/til/do-not-cache-generators/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/do-not-cache-generators/thumbnail.webp
+routes:
+    aliases:
+        - "/blog/til/058"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - optimisation
+      - programming
+      - python
+title: "TIL #058 – do not cache generators"
+visible: false
