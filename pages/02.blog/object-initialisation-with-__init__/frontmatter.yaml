@@ -2,8 +2,8 @@ date: 10-07-2022
 metadata:
     author: Rodrigo Girão Serrão
     description: "Learn about the dunder method `__init__`, responsible for initialising class instances."
-    og:image: "https://mathspp.com/blog/object-initialisation-with-__init__/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/object-initialisation-with-__init__/thumbnail.png"
+    og:image: "https://mathspp.com/blog/object-initialisation-with-__init__/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/object-initialisation-with-__init__/thumbnail.webp"
 references:
     - "Python 3 Documentation, Data model, [https://docs.python.org/3/reference/datamodel.html](https://docs.python.org/3/reference/datamodel.html) [last accessed 10-07-2022];"
 slug: "object-initialisation-with-__init__"

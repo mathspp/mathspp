@@ -28,11 +28,11 @@ something that a computer program can compute.
 We will be working on our program incrementally, so you'll go through many
 different renderings of the Mandelbrot set:
 
-![](_bw_15iters.png "A black and white, low resolution image of a fractal.")
+![](_bw_15iters.webp "A black and white, low resolution image of a fractal.")
 
 ![](_gray_50iters.webp "A gray scale, medium resolution image of a fractal.")
 
-![](thumbnail.png "A coloured image of a fractal.")
+![](thumbnail.webp "A coloured image of a fractal.")
 
 
 # Takeaways

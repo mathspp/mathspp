@@ -3,7 +3,7 @@ Can you align all of the coins on the right edge of the board?
 ===
 
 
-![](_setup.png "Diagram of the coin positions for the problem.")
+![](_setup.webp "Diagram of the coin positions for the problem.")
 
 
 # Problem statement
@@ -21,11 +21,11 @@ Thus, this is a legal move:
 
 But moving a single coin, such as in the diagram below, is not allowed:
 
-!["The diagram showing an example of an illegal move."](_illegal_move.png "An illegal move that slides only one coin to the right.")
+!["The diagram showing an example of an illegal move."](_illegal_move.webp "An illegal move that slides only one coin to the right.")
 
 Your objective is to reach this position:
 
-!["The same 3 by 4 grid containing a coin per row, with all coins on the rightmost column."](_objective.png "Target position.")
+!["The same 3 by 4 grid containing a coin per row, with all coins on the rightmost column."](_objective.webp "Target position.")
 
 Can you do it?
 

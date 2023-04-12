@@ -11,7 +11,7 @@ Let's settle this once and for all!
 
 ===
 
-![A $7 \times 10$ grid with small, coloured squares.](thumbnail.png)
+![A $7 \times 10$ grid with small, coloured squares.](thumbnail.webp)
 
 
 # Problem statement
@@ -38,7 +38,7 @@ If you need any clarification whatsoever, feel free to ask in the comment sectio
 
 Let's count the squares in this 7 by 10 grid:
 
-![A 7 by 10 colourful grid with squares.](thumbnail.png)
+![A 7 by 10 colourful grid with squares.](thumbnail.webp)
 
 This is a type of problem that shows up often in social platforms.
 Scrolling through the comment section of those posts usually shows
@@ -54,7 +54,7 @@ how big the squares can get.
 The grid is 7 by 10, so the largest squares it can contain are 7 by 7, like the
 one in the figure below:
 
-![A 7 by 7 square in the 7 by 10 grid.](_frame_7_0.png)
+![A 7 by 7 square in the 7 by 10 grid.](_frame_7_0.webp)
 
 Then, we just have to figure out how many squares of each size the grid contains.
 This is a train of thought similar to the one outlined in [this blog post about
@@ -71,7 +71,7 @@ For example, in a smaller 3 by 3 grid, there are 9 possible positions for the
 top left corner of a 1 by 1 square, shown in the figure below.
 One of the 9 possible corners is shown with its corresponding 1 by 1 square.
 
-![A 3 by 3 grid with 9 corners highlighted.](_easier_9_corners.png)
+![A 3 by 3 grid with 9 corners highlighted.](_easier_9_corners.webp)
 
 If we consider, instead, 2 by 2 squares, how many corners can still be the top
 left corner of the square?
@@ -81,7 +81,7 @@ a $2\times 2$ square.
 We are left with 4 useful corners,
 like the image below shows:
 
-![A 3 by 3 grid with 4 corners highlighted.](_easier_4_corners.png)
+![A 3 by 3 grid with 4 corners highlighted.](_easier_4_corners.webp)
 
 All that matters for this process is the calculation of how many corners are useful.
 In a $n \times m$ grid, how many corners are useful as the top left corner of a
@@ -121,7 +121,7 @@ $$
 
 Therefore, there are $224$ squares in the $7 \times 10$ grid I showed, and here are all of them highlighted:
 
-![GIF with the 224 squares highlighted.](_thumbnail.gif)
+![GIF with the 224 squares highlighted.](_thumbnail.webp)
 
 The process we used to compute the number of squares in the grid could also be used to
 compute the total number of rectangles in the grid.

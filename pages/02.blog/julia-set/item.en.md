@@ -14,6 +14,6 @@ The Mandelbrot set is just one, and is built in the complex plane. The filled Ju
 
 The screenshot above shows the filled Julia set for some $z_0$ I picked. The points in black belong in the set and the coloured points do not (the colouring was done as explained in the [article](https://mathspp.com/blog/mandelbrot) about the Mandelbrot set). I took another screenshot, here:
 
-![A different filled Julia set done in Python](juliaset.png)
+![A different filled Julia set done in Python](juliaset.webp)
 
 from a [small Python 3 program](https://github.com/rodrigogiraoserrao/fractals/blob/master/juliaSet.py) I wrote with pygame. You press any point in the complex plane and the program builds its corresponding filled Julia set. You can use the left and right arrows to navigate the sets you already created. Pressing the space bar cleans the fractal you are viewing. You can also download a Windows executable from [here](https://github.com/rodrigogiraoserrao/fractals/blob/master/juliaSet.rar).

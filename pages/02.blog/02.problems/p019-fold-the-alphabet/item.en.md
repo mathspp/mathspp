@@ -19,7 +19,7 @@ Now I need you to crease your sheet of paper in half, along a horizontal line; t
 
 In the end, you should have your piece of paper creased like this:
 
-![The creases marked in a piece of paper](frame.png)
+![The creases marked in a piece of paper](frame.webp)
 
 Except that your creases should be nicely centered, unlike the drawing I made... Oh well!
 
@@ -38,17 +38,17 @@ There are going to be three levels, corresponding to three different letter layo
 
 ## Level 1
 
-![Left to right, top to bottom the letters are ADEH / BCFG](lvl1.png "ADEH / BCFG")
+![Left to right, top to bottom the letters are ADEH / BCFG](lvl1.webp "ADEH / BCFG")
 
 
 ## Level 2
 
-![Left to right, top to bottom the letters are AHGD / BCFE](lvl2.png "AHGD / BCFE")
+![Left to right, top to bottom the letters are AHGD / BCFE](lvl2.webp "AHGD / BCFE")
 
 
 ## Level 3
 
-![Left to right, top to bottom the letters are AHBG / DECF](lvl3.png "AHBG / DECF")
+![Left to right, top to bottom the letters are AHBG / DECF](lvl3.webp "AHBG / DECF")
 
 !!! Give it some thought... and most important of all, try it for real with an actual piece of paper! Let me know how it went in the comment section below ;)
 
@@ -71,11 +71,11 @@ For this one, all you had to do was fold the paper along the horizontal line and
 
 This one is much harder to explain in words so I made some more drawings and made some markings on the sheet of paper:
 
-![Level 2 sheet of paper with some markings](lvl2-faceA-sol.png)
+![Level 2 sheet of paper with some markings](lvl2-faceA-sol.webp)
 
 Now if you flip the sheet of paper (to the back) you also need these markings:
 
-![Level 2, side B, with some markings](lvl2-faceB-sol.png)
+![Level 2, side B, with some markings](lvl2-faceB-sol.webp)
 
 Now this is how you go about it:
 
@@ -102,7 +102,7 @@ Here is the front side with some markings:
 
 And the back:
 
-![Level 3, side B, with some markings](lvl3-faceB-sol.png)
+![Level 3, side B, with some markings](lvl3-faceB-sol.webp)
 
 Now here's how you do it:
 

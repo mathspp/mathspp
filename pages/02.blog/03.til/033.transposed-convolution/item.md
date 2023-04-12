@@ -31,7 +31,7 @@ In order to go the other way around,
 we see that each pixel from the bottom image should be able to generate a 2 by 2 region of the image above,
 as represented in the next figure:
 
-![Paint diagram representing the transposed convolution.](_transposed.png "Each pixel of the bottom image generates 4 of the top image.")
+![Paint diagram representing the transposed convolution.](_transposed.webp "Each pixel of the bottom image generates 4 of the top image.")
 
 This pixel-becomes-2-by-2-region must involve the 2 by 2 kernel,
 so the only sensible thing to do is to multiply each pixel of the bottom image by the kernel!

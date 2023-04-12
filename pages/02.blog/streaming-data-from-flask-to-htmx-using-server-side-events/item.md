@@ -2,7 +2,7 @@ This short reference article shows how to stream data from a Flask web app to HT
 
 ===
 
-![](thumbnail.png)
+![](thumbnail.webp)
 
 # Introduction
 

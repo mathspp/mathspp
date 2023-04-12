@@ -2,8 +2,8 @@ date: 23-03-2023
 metadata:
     author: Rodrigo Girão Serrão
     description: "This short reference article shows how to stream data from a Flask web app to HTMX."
-    og:image: "https://mathspp.com/blog/pydonts/streaming-data-from-flask-to-htmx-using-server-side-events/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/pydonts/streaming-data-from-flask-to-htmx-using-server-side-events/thumbnail.png"
+    og:image: "https://mathspp.com/blog/pydonts/streaming-data-from-flask-to-htmx-using-server-side-events/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/pydonts/streaming-data-from-flask-to-htmx-using-server-side-events/thumbnail.webp"
 references:
     - "HTMX `server-sent-events` extension documentation, [https://htmx.org/extensions/server-sent-events/](https://htmx.org/extensions/server-sent-events/) [last accessed 23-03-2023]"
     - "`flask-sse` documentation, [https://flask-sse.readthedocs.io/en/latest/quickstart.html](https://flask-sse.readthedocs.io/en/latest/quickstart.html) [last accessed 23-03-2023]"

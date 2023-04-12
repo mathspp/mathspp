@@ -21,7 +21,7 @@ network to be able to recognise them.
 
 The images we will be working with are like the ones below:
 
-![](_mnist_examples.png "Some example images from the MNIST dataset.")
+![](_mnist_examples.webp "Some example images from the MNIST dataset.")
 
 By the time you are done with this article, you will have a neural
 network that is able to recognise the digit in an image

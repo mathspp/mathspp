@@ -26,7 +26,7 @@ The `regexPrinter` supports:
 
 Please bear in mind that any character with no special meaning is interpreted literally, except inside the grouping operator `[]`, where every character is interpreted literally. That is, `[ab*]` matches "a", "b" and "*", while `b&='` will match the string "b&='".
 
-![another screenshot of my program](regex2.png)
+![another screenshot of my program](regex2.webp)
 
 The code for the program can be found [here](https://github.com/RodrigoGiraoSerrao/projects/blob/master/misc/regexPrinter.py) on GitHub and all it takes is vanilla Python 3 to run. Just run the script and you will be prompted to insert regular expressions. The techniques I used were very, very similar to the ones I used to create [my toy programming language](https://mathspp.com/blog/creating-programming-language-from-scratch), as I saw in [this](https://ruslanspivak.com/lsbasi-part1/) blog series. The way I went about writing this program was by implementing a parser for a subset of the grammar used by regular expressions, generating a tree representation for the regex and then visiting all nodes of the tree, where each node knows how to print itself.
 

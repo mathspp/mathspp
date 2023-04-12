@@ -7,12 +7,12 @@ content:
         by: date
         dir: desc
 hero_classes: "parallax overlay-dark text-light "
-hero_image: pydonts-thumbnail.png
+hero_image: pydonts-thumbnail.webp
 menu: Pydon'ts
 metadata:
     description: "Pydon'ts are Python tips that help you write better code."
-    og:image: "https://mathspp.com/blog/pydonts/pydonts-thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/pydonts/pydonts-thumbnail.png"
+    og:image: "https://mathspp.com/blog/pydonts/pydonts-thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/pydonts/pydonts-thumbnail.webp"
 slug: pydonts
 title: Pydon'ts
 visible: true

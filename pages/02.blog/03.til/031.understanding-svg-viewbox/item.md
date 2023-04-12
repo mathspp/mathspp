@@ -2,7 +2,7 @@ Today I understood how the `viewBox` of SVGs really works.
 
 ===
 
-![](thumbnail.png)
+![](thumbnail.webp)
 
 
 # SVG
@@ -102,7 +102,7 @@ This helps write the following SVG:
 
 You can save this to `alphabet.svg` and open it with your browser:
 
-![An SVG of the whole alphabet rendered in the browser.](_alphabet.png "`alphabet.svg` rendered by Mozilla Firefox.")
+![An SVG of the whole alphabet rendered in the browser.](_alphabet.webp "`alphabet.svg` rendered by Mozilla Firefox.")
 
 Now, what we want to do
 is define the attribute `viewBox` so that we can only see one letter at a time when we open it.
@@ -134,13 +134,13 @@ but this time it takes up the whole window.
 When I resize the browser window to be square(-ish),
 this is what I see:
 
-![The browser rendering an SVG with the letter “A” in black on a white background](_A_big.png "`alphabet.svg` rendered by Mozilla Firefox.")
+![The browser rendering an SVG with the letter “A” in black on a white background](_A_big.webp "`alphabet.svg` rendered by Mozilla Firefox.")
 
 If I tweak the attribute `viewBox`,
 and change the minimum value of `x` to 36, for example,
 now what I see is a “D”:
 
-![The browser rendering an SVG with the letter “D” in black on a white background](_D_big.png "`alphabet.svg` rendered by Mozilla Firefox after adjusting the attribute `viewBox`.")
+![The browser rendering an SVG with the letter “D” in black on a white background](_D_big.webp "`alphabet.svg` rendered by Mozilla Firefox after adjusting the attribute `viewBox`.")
 
 Thus, by fiddling with the `viewBox`,
 I can have the SVG display the letter I want.
@@ -191,7 +191,7 @@ As it stands, the attribute `viewBox` on this SVG is setting it to only show the
 and the value `x` of the attribute `viewBox` can be changed in multiples of 10 to show other letters.
 For example, `viewBox="250 0 10 9"` shows “Z”:
 
-![The browser rendering an SVG with the letter “Z”, in a monospaced font, in black on a white background](_Z_big.png "`alphabet.svg` showing a monospaced “Z”.")
+![The browser rendering an SVG with the letter “Z”, in a monospaced font, in black on a white background](_Z_big.webp "`alphabet.svg` showing a monospaced “Z”.")
 
 
 That's it for now! [Stay tuned][subscribe] and I'll see you around!

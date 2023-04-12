@@ -62,11 +62,11 @@ to minimise my score.
 Suppose that you and me are playing Tic Tac Toe, I'm the crosses (`X`),
 it's my turn to play, and the game looks like this:
 
-![](_tic_tac_toe.png "A game of Tic Tac Toe")
+![](_tic_tac_toe.webp "A game of Tic Tac Toe")
 
 I have to pick a move and, for that, I analyse all of my possibilities:
 
-![](_tic_tac_toe_tree.png "My three possible moves.")
+![](_tic_tac_toe_tree.webp "My three possible moves.")
 
 So, I play out these three moves inside my head, and I see that none of the moves gives me a win.
 Therefore, there is no obvious choice that I should make.
@@ -75,18 +75,18 @@ What does this mean?
 It means I need to keep playing out the moves inside my head,
 and I need to predict what you would do in each situation:
 
-![](_tic_tac_toe_tree_2.png "My three possible moves together with the two possible replies for each.")
+![](_tic_tac_toe_tree_2.webp "My three possible moves together with the two possible replies for each.")
 
 Now, this reveals something interesting!
 If we look at the third and fifth games of the bottom row, we see that you could win the game:
 
-![](_tic_tac_toe_tree_2_win.png "Your winning positions are highlighted.")
+![](_tic_tac_toe_tree_2_win.webp "Your winning positions are highlighted.")
 
 This shows that we probably don't want to go down those paths!
 But you and me are humans, and we are taking a look at the whole drawing all at once.
 Let's just play out the rest of the other alternative games to see what could happen:
 
-![](_tic_tac_toe_tree_2_end.png "The whole game played out.")
+![](_tic_tac_toe_tree_2_end.webp "The whole game played out.")
 
 Now that we played out the _whole_ game in our heads, we need to see what choices each
 player will make.
@@ -98,7 +98,7 @@ This is straightforward:
 So, in order to evaluate all these alternatives, I have to start at the bottom.
 If I manage to reach any of the games in the fourth row, we will end in a draw:
 
-![](_tic_tac_toe_tree_4_results.png "We draw if we get to the fourth row.")
+![](_tic_tac_toe_tree_4_results.webp "We draw if we get to the fourth row.")
 
 Now, I need to evaluate the game positions in the third row.
 In other words, I need to look at the third row,
@@ -108,7 +108,7 @@ It depends on how well I can do _after_ we reach that position.
 
 What we see is that some games in the third row will result in a draw and some in a loss for me:
 
-![](_tic_tac_toe_tree_3_results.png "In the third row, some games will result in a draw and some in a loss.")
+![](_tic_tac_toe_tree_3_results.webp "In the third row, some games will result in a draw and some in a loss.")
 
 Now, I need to go up one level and examine the games in the second row.
 Remember, all I am doing is trying to figure out what move I should make.
@@ -124,7 +124,7 @@ but _you_ are the one who picks where to go next!
 
 For example, if I decide to make the middle move, what would you do in response?
 
-![](_tic_tac_toe_tree_hypothetical_move.png "Hypothetical scenario in which I play the middle move.")
+![](_tic_tac_toe_tree_hypothetical_move.webp "Hypothetical scenario in which I play the middle move.")
 
 If I decide to make the middle move, then we can ignore the left and right parts of the sketch,
 and you can focus on only two positions from the third row.
@@ -164,7 +164,7 @@ and instead will focus on the tree structure of the sketch I showed above.
 
 Let me take the sketch above and refactor it:
 
-![](_tic_tac_toe_tree_tree.png)
+![](_tic_tac_toe_tree_tree.webp)
 
 I replaced all the specific drawings by circles.
 When it is my turn, the circle has an arrow pointing up:
@@ -228,7 +228,7 @@ tree = Choice(
 
 This corresponds to the following tree:
 
-![](_python_basic_tree.png "A sketch of the `tree` variable.")
+![](_python_basic_tree.webp "A sketch of the `tree` variable.")
 
 Now we implement our minimax algorithm.
 The algorithm needs to accept the tree root node of the tree structure
@@ -272,13 +272,13 @@ If we start by saying that `maximising_player = True`,
 that means that the top of the tree has an arrow pointing up.
 In that case, the result should be `5`:
 
-![](_python_basic_tree_max.png "Diagram showing the final score if the first player tries to maximise.")
+![](_python_basic_tree_max.webp "Diagram showing the final score if the first player tries to maximise.")
 
 If we call `minimax` with `maximising_player = False`,
 that means that the top of the tree has an arrow pointing down.
 In that case, the result should be `-2`:
 
-![](_python_basic_tree_min.png "Diagram showing the final score if the first player tries to minimise.")
+![](_python_basic_tree_min.webp "Diagram showing the final score if the first player tries to minimise.")
 
 To check this, add the two calls to your script and run it:
 
@@ -397,7 +397,7 @@ tree = Tree([
 
 which corresponds to this tree:
 
-![](_minimax_generic_tree.png "A heterogeneous tree.")
+![](_minimax_generic_tree.webp "A heterogeneous tree.")
 
 Now, take your time to walk through this tree and figure out what
 should be the result of applying the `minimax` algorithm
@@ -441,19 +441,19 @@ But how could we ever realise that a certain part of the tree is irrelevant..?
 Let's look at the heterogeneous tree from before,
 from the point of view of the maximising player:
 
-![](_ab_pruning_tree.png "Previous tree, from the point of view of the maximiser.")
+![](_ab_pruning_tree.webp "Previous tree, from the point of view of the maximiser.")
 
 And now that we are looking at the tree, let's try to evaluate the tree.
 We will start at the bottom left, where there is a node that is maximising,
 and gets to choose between a `3` and a `4`.
 Obviously, that node picks the `4`:
 
-![](_ab_pruning_tree_1.png "The value `4` is picked.")
+![](_ab_pruning_tree_1.webp "The value `4` is picked.")
 
 Now it's time to evaluate the node to the right of that one,
 which I highlighted here:
 
-![](_ab_pruning_tree_2.png "The next node to be evaluated is highlighted.")
+![](_ab_pruning_tree_2.webp "The next node to be evaluated is highlighted.")
 
 Not only did I highlight the next node, but I also drew a little arrow
 from the terminal value `8` to that highlighted node.
@@ -467,7 +467,7 @@ to `8` _or higher_.
 
 However, the node immediately above is a minimising node:
 
-![](_ab_pruning_tree_3.png "The highlighted node evaluates to `8` or more, and is under a minimising node.")
+![](_ab_pruning_tree_3.webp "The highlighted node evaluates to `8` or more, and is under a minimising node.")
 
 What can we tell, then?
 We already know that the minimising node will pick the path on the left!
@@ -481,7 +481,7 @@ If you want to keep the score as low as possible, what alternative do you pick?
 The first one, of course!
 And, in doing this, you managed to completely ignore a portion of the tree:
 
-![](_ab_pruning_tree_4.png "A part of the tree was left unvisited/unevaluated.")
+![](_ab_pruning_tree_4.webp "A part of the tree was left unvisited/unevaluated.")
 
 _This_ is the essence of alpha-beta pruning!
 
@@ -503,7 +503,7 @@ Slow down and re-read the paragraph above, please.
 
 To make sure you understand, here is a small tree:
 
-![](_ab_pruning_exercise.png "An incomplete tree from the maximiser's perspective.")
+![](_ab_pruning_exercise.webp "An incomplete tree from the maximiser's perspective.")
 
 The root node is seen from the maximiser's perspective,
 there is a terminal node on the left (represented by the question mark) and there is a subtree to the right.
@@ -520,7 +520,7 @@ I'll help you out.
 The minimiser node sees a 5, so what do we know?
 We know that the minimiser node will evaluate to 5 _or less_:
 
-![](_ab_pruning_exercise_1.png "The minimiser node evaluates to 5 or less.")
+![](_ab_pruning_exercise_1.webp "The minimiser node evaluates to 5 or less.")
 
 Immediately above it, is a maximiser node, who already visited the `?` node.
 The maximiser node has two options:
@@ -533,7 +533,7 @@ then we can ignore the “...” subtree and just go with the option on the left
 
 In other words, `?` can be any value larger than 5:
 
-![](_ab_pruning_exercise_2.png "If `?` is greater than 5, the “...” subtree can be ignored.")
+![](_ab_pruning_exercise_2.webp "If `?` is greater than 5, the “...” subtree can be ignored.")
 
 Was this easy?
 If not, re-read it carefully, grab a pen and a piece of paper,
@@ -541,7 +541,7 @@ and make the drawings, the arrows, etc.
 
 Let's try another one (bear with me, these two exercises are handy!):
 
-![](_ab_pruning_exercise2.png "An incomplete tree from the minimiser's perspective.")
+![](_ab_pruning_exercise2.webp "An incomplete tree from the minimiser's perspective.")
 
 In this new exercise, the root node is seen from the minimiser's perspective, and contains two children.
 On the left, a terminal node with an unknown value.
@@ -563,7 +563,7 @@ two restrictions apply:
 Let's work this out.
 When we first reach the terminal 5, we know that the maximiser node will evaluate to 5 or more:
 
-![](_ab_pruning_exercise2_1.png "At first, we know that the maximiser node will evaluate to 5 or more.")
+![](_ab_pruning_exercise2_1.webp "At first, we know that the maximiser node will evaluate to 5 or more.")
 
 The maximiser node is 5 or more, but we don't want the algorithm to stop.
 The algorithm would be able to stop if 5 were already too large
@@ -571,7 +571,7 @@ when compared to `?` because, in that case,
 the minimiser node would know that going left is always better.
 Therefore, `?` has to be greater than 5:
 
-![](_ab_pruning_exercise2_2.png "The left terminal has to be greater than 5.")
+![](_ab_pruning_exercise2_2.webp "The left terminal has to be greater than 5.")
 
 If you can't see why, imagine that the terminal node is less than 5.
 For example, imagine it's 4.
@@ -583,7 +583,7 @@ doesn't stop and then looks at the 7.
 When it does, it realises that the maximiser node will evaluate
 to 7 _or more_:
 
-![](_ab_pruning_exercise2_3.png "The terminal 7 increases the value of the maximiser node.")
+![](_ab_pruning_exercise2_3.webp "The terminal 7 increases the value of the maximiser node.")
 
 But, at this point, we wanted our algorithm to be able to stop.
 Therefore, the terminal node on the far left can't be _that_ high.
@@ -595,7 +595,7 @@ Therefore, if the left terminal has a value between 5 (exclusive) and 7 (inclusi
 For example, if the left terminal had a value of 6,
 then the restrictions of the problem statement would be satisfied:
 
-![](_ab_pruning_exercise2_4.png "The left terminal containing a hypothetical value of 6.")
+![](_ab_pruning_exercise2_4.webp "The left terminal containing a hypothetical value of 6.")
 
 
 # Alpha and beta
@@ -790,7 +790,7 @@ def pruning(tree, maximising_player, alpha=float("-inf"), beta=float("+inf")):
 
 Remember that, in the maximising case, we could avoid visiting a subtree:
 
-![](_ab_pruning_tree_4.png "A subtree that can be ignored.")
+![](_ab_pruning_tree_4.webp "A subtree that can be ignored.")
 
 For example, the terminal with value 10 should never be visited.
 Let's run the algorithm as the maximising player,

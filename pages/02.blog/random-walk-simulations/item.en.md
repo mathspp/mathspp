@@ -6,7 +6,7 @@ Think of a drunk man that continuously tumbles left and right, back and forth, w
 
 ===
 
-![A blue 2D random walk on a green background](2d_random_walk.png)
+![A blue 2D random walk on a green background](2d_random_walk.webp)
 
 This drunk man walking around can be thought of as a [random walk](https://en.wikipedia.org/wiki/Random_walk) on the plane... Now imagine that the drunk man has a shorter leg and tumbles more to one of the sides: that is a biased random walk. Now imagine the drunk man can teleport to a nearby location. That is (kind of) a [Lèvy flight](https://en.wikipedia.org/wiki/L%C3%A9vy_flight)! All those are quite interesting to observe in motion and I implemented them in Python. (the code can be found [here](https://github.com/RodrigoGiraoSerrao/projects/tree/master/randomWalks)). From those, only the tilted walks and the one with the trail are such that the particle's movement wraps around the borders (leaving the green area makes the particle appear in the opposite side, just like the snake from the game Snake).
 

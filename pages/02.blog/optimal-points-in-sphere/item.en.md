@@ -2,7 +2,7 @@
 title: A gradient descent algorithm to optimally distribute points over a sphere
 ---
 
-![Animation of the algorithm](./n6s-2.gif)
+![Animation of the algorithm](./n6s-2.webp)
 
 ===
 

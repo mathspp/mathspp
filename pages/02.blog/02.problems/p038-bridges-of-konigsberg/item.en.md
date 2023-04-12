@@ -10,7 +10,7 @@ How will you do that?
 
 ===
 
-![](thumbnail.png "Satellite view of Kaliningrad, Russia.")
+![](thumbnail.webp "Satellite view of Kaliningrad, Russia.")
 
 # Problem statement
 
@@ -25,7 +25,7 @@ know the more classic version.
 Take a look at this satellite view from Kaliningrad, Russia,
 where I have highlighted seven bridges:
 
-![](_bridges.png "Seven highlighted bridges in Kaliningrad, Russia.")
+![](_bridges.webp "Seven highlighted bridges in Kaliningrad, Russia.")
 
 Your task is to figure out what route to take if what you want to do
 is cross all of the highlighted bridges at least once but,
@@ -110,7 +110,7 @@ and only repeats one of them?
 
 Here is an example of such a path:
 
-![](_shortest_path.png "An example of a shortest path to visit all seven bridges at least once.")
+![](_shortest_path.webp "An example of a shortest path to visit all seven bridges at least once.")
 
 This is actually one of the problems I solve with the participants
 in my [workshop on recreational maths][ws-recreational-maths]

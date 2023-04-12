@@ -8,7 +8,7 @@ Weekly sessions to learn APL: a programming language that is a tool of thought.
 
 ===
 
-![](_apl-meetup-poster.png?cropResize=600,800 "Session poster in Portuguese")
+![](_apl-meetup-poster.webp?cropResize=600,800 "Session poster in Portuguese")
 
 ! This meetup is held in Portuguese.
 

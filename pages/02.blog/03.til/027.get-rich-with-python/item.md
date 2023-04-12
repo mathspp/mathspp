@@ -56,7 +56,7 @@ Before seeing the result, can you _guess_ what the result will be?
 
 Here is a screenshot for you:
 
-![The message "Hello world!" output three times, once in red and green, the second time underlined, and the third time with black text on a white background.](_rich_print.png "Terminal output of styled print statements.")
+![The message "Hello world!" output three times, once in red and green, the second time underlined, and the third time with black text on a white background.](_rich_print.webp "Terminal output of styled print statements.")
 
 
 ## Pretty printing Python objects
@@ -64,7 +64,7 @@ Here is a screenshot for you:
 The `print` function from `rich` also does pretty-printing of your Python objects, by default.
 For example, here is the example output from printing `locals()`:
 
-![The `locals()` built-in pretty-printed, with all keys left-aligned in green and the different values printed with different colours.](_rich_pretty_print.png)
+![The `locals()` built-in pretty-printed, with all keys left-aligned in green and the different values printed with different colours.](_rich_pretty_print.webp)
 
 This does syntax highlighting for your Python objects, which is great,
 because the colours encode information, making it easier for your brain to extract the information it needs.
@@ -96,7 +96,7 @@ len(foo())
 
 Here is a screenshot of the REPL output:
 
-![The session output before and after running `pretty.install()`; the first output is all white on black and the second output has syntax highlighting.](_rich_pretty_install.png)
+![The session output before and after running `pretty.install()`; the first output is all white on black and the second output has syntax highlighting.](_rich_pretty_install.webp)
 
 
 # `rich.inspect`
@@ -119,16 +119,16 @@ from rich import inspect
 
 Now, I often forget how to use `inspect`, so I always start by inspecting `inspect` itself:
 
-![The result of calling `inspect` on `inspect`.](_rich_inspect.png "Result of inspecting `inspect`.")
+![The result of calling `inspect` on `inspect`.](_rich_inspect.webp "Result of inspecting `inspect`.")
 
 But `inspect` is really great for anything.
 For example, setting `help=True` is useful to inspect built-ins:
 
-![Inspecting the built-in `zip` and displaying its help text.](_rich_inspect_zip.png "Result of inspecting the built-in `zip` and displaying its help.")
+![Inspecting the built-in `zip` and displaying its help text.](_rich_inspect_zip.webp "Result of inspecting the built-in `zip` and displaying its help.")
 
 It is also great to inspect instances of custom classes, for example:
 
-![Inspecting an instance of a custom "Person" class that only contains a "name" attribute.](_rich_inspect_person.png "Result of inspecting an instance of a (custom) class.")
+![Inspecting an instance of a custom "Person" class that only contains a "name" attribute.](_rich_inspect_person.webp "Result of inspecting an instance of a (custom) class.")
 
 
 That's it for now! [Stay tuned][subscribe] and I'll see you around!

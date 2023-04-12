@@ -234,7 +234,7 @@ You should see a pop-up that invites you to share your selection over some socia
 That pop-up is powered by some JavaScript code that ChatGPT prototyped for me!
 Here is a screenshot of me using TypingMind to interact with ChatGPT-4:
 
-![Screenshot of using the TypingMind interface to interact with ChatGPT-4. The screenshot shows an initial prompt asking for ChatGPT to write a JavaScript plugin for my blog.](_share_plugin.png "Initial ChatGPT-4 prompt asking for a JS plugin to share selected text.")
+![Screenshot of using the TypingMind interface to interact with ChatGPT-4. The screenshot shows an initial prompt asking for ChatGPT to write a JavaScript plugin for my blog.](_share_plugin.webp "Initial ChatGPT-4 prompt asking for a JS plugin to share selected text.")
 
 Now, bear in mind that the code wasn't perfect and I needed to tweak it, but I have enough experience programming that the prototype I was given by ChatGPT was all I needed to get started.
 
@@ -249,7 +249,7 @@ Another feature I have wanted to add to my blog for a while is an icon in code b
 
 Again, a quick ChatGPT-4 interaction over TypingMind was all I needed to get me going:
 
-![Screenshot of using the TypingMind interface to interact with ChatGPT-4. The screenshot shows an initial prompt asking for ChatGPT to write the JavaScript and CSS code needed to allow copying the contents of code blocks on my blog."](_copy_code_blocks.png "Initial ChatGPT-4 prompt to enable copying contents of code blocks.")
+![Screenshot of using the TypingMind interface to interact with ChatGPT-4. The screenshot shows an initial prompt asking for ChatGPT to write the JavaScript and CSS code needed to allow copying the contents of code blocks on my blog."](_copy_code_blocks.webp "Initial ChatGPT-4 prompt to enable copying contents of code blocks.")
 
 To try this out, just try to copy the code in this code block:
 

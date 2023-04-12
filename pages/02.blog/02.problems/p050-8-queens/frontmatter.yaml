@@ -2,8 +2,8 @@ date: 28-11-2021
 metadata:
     author: Rodrigo Girão Serrão
     description: "In how many ways can you place 8 queens on a chessboard?"
-    og:image: https://mathspp.com/blog/problems/8-queens/thumbnail.png
-    twitter:image: https://mathspp.com/blog/problems/8-queens/thumbnail.png
+    og:image: https://mathspp.com/blog/problems/8-queens/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/problems/8-queens/thumbnail.webp
 process:
     twig: true
 slug: 8-queens

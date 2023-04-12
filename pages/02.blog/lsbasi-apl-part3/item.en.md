@@ -327,14 +327,14 @@ Because it only has one dimension, it is said that a vector has rank 1.
 
 The next step is to stack vectors on top of each other, by which means we create matrices like the one below:
 
-![a matrix with 2 rows and 3 columns](matrix.png)
+![a matrix with 2 rows and 3 columns](matrix.webp)
 
 This matrix has 2 vectors of length 3, or equivalently, this matrix has 2 rows and 3 columns, hence its shape is `[2, 3]`.
 Because it has two dimensions, it is said that a matrix has rank 2.
 
 If now we stack matrices on top of each other we get an array of rank 3:
 
-![an array of rank 3 with 2 matrices of 2 rows and 4 columns](cube.png)
+![an array of rank 3 with 2 matrices of 2 rows and 4 columns](cube.webp)
 
 Notice that we didn't collate the two matrices vertically because otherwise it would look like a matrix with 4 rows, instead of a 3D array with 2 matrices, each with 2 rows and 4 columns.
 This 3D array has rank 3 (which is why we call it a _3D array_) and its shape is `[2, 2, 4]`.
@@ -809,7 +809,7 @@ The Unique Mask checks which major cells of the argument array are repetitions o
 
 Here is a hand-crafted drawing of a 3D array with its 2 major cells circled in red:
 
-![a 3D array with 2 major cells](major_cells.png)
+![a 3D array with 2 major cells](major_cells.webp)
 
 Remember that, according to our new array model, this array is an `APLArray` with shape `[2, 3, 8]` and data `[1, 2, 3, ..., 46, 47, 48]`.
 How can we split the data in the major cells?

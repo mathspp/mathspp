@@ -58,7 +58,7 @@ For this chatroom server, we need two things:
 
 Because I want to use sockets for this purpose, I thought of this diagram:
 
-![A diagram that summarises the main architecture of the chatroom server written in Python, where a client socket sends messages to the server, which then broadcasts them to the other client sockets.](_server_client.png "A client sends a message to the server, which then broadcasts it to the other clients.")
+![A diagram that summarises the main architecture of the chatroom server written in Python, where a client socket sends messages to the server, which then broadcasts them to the other client sockets.](_server_client.webp "A client sends a message to the server, which then broadcasts it to the other clients.")
 
 This is the basic way in which I imagine the chatroom server will function:
 whenever a user types a message, its client socket will send the message to the server.

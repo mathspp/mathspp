@@ -6,7 +6,7 @@ Today I learned how to create xkcd-style plots in Python with matplotlib.
 
 A friend of mine showed me how to create [xkcd]-style plots in Python with matplotlib, and they look great:
 
-![A matplotlib plot created with the style of xkcd.](_sin.png "A sinusoidal wave in the style of xkcd.")
+![A matplotlib plot created with the style of xkcd.](_sin.webp "A sinusoidal wave in the style of xkcd.")
 
 
 # How to create an xkcd plot in Python?
@@ -36,7 +36,7 @@ If you find something for which the style does not work, add a comment below so 
 
 Here you can find some more plots in the style of xkcd, followed by the accompanying code that was taken almost verbatim from the references.
 
-![A matplotlib plot in the style of xkcd that shows two waves in 3D.](_wave_superposition.png "Two waves in the style of xkcd.")
+![A matplotlib plot in the style of xkcd that shows two waves in 3D.](_wave_superposition.webp "Two waves in the style of xkcd.")
 
 ```py
 # Two waves in the style of xkcd.
@@ -55,7 +55,7 @@ with plt.xkcd():
     plt.show()
 ```
 
-![A matplotlib plot in the style of xkcd that shows the superposition of multiple waves in 3D.](_many_waves.png "Superposition of multiple waves in the style of xkcd.")
+![A matplotlib plot in the style of xkcd that shows the superposition of multiple waves in 3D.](_many_waves.webp "Superposition of multiple waves in the style of xkcd.")
 
 ```py
 # Superposition of multiple waves in the style of xkcd.
@@ -86,7 +86,7 @@ ax.set_zlim3d(0, 1)
 plt.show()
 ```
 
-![A 3D surface plot in the style of xkcd using matplotlib.](_surface.png "Surface plot in the style of xkcd.")
+![A 3D surface plot in the style of xkcd using matplotlib.](_surface.webp "Surface plot in the style of xkcd.")
 
 ```py
 # Surface plot in the style of xkcd.

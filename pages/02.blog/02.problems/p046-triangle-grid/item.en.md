@@ -59,7 +59,7 @@ and because the two smaller triangles are rotations of the other.
 Just for reference, here is another possible solution (among the many that exist!);
 this one was from Martin, picked randomly among the others.
 
-![Solution with vertices ((0, 0), (3, 0), (4, 4)), ((2, 1), (4, 0), (4, 3)), ((0, 4), (3, 1), (4, 4)), ((0, 1), (0, 3), (3, 4))](_martin.png)
+![Solution with vertices ((0, 0), (3, 0), (4, 4)), ((2, 1), (4, 0), (4, 3)), ((0, 4), (3, 1), (4, 4)), ((0, 1), (0, 3), (3, 4))](_martin.webp)
 
 
 [Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly

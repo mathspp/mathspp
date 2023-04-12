@@ -2,7 +2,7 @@ Go through the complete code for a Python project that consists in finding simil
 
 ===
 
-![](thumbnail.png)
+![](thumbnail.webp)
 
 
 # Introduction
@@ -99,7 +99,7 @@ The idea is that we consider small sections that are likely to represent the sam
 
 As an example, take a look at the seagull photograph below that was split into a 4 by 4 grid:
 
-![A photo of a seagull split in a 4 by 4 grid illustrating the first step of our algorithm to detect similar, or near-duplicate photos, with Python.](_split_seagull.png "A seagull photograph split in a 4 by 4 grid")
+![A photo of a seagull split in a 4 by 4 grid illustrating the first step of our algorithm to detect similar, or near-duplicate photos, with Python.](_split_seagull.webp "A seagull photograph split in a 4 by 4 grid")
 
 The four sections at the top all contain the sky, so if we summarise each section into a single pixel, that pixel will be blue.
 On the other hand, the bottom sections all point to the stone on which the seagull was standing, so if we summarise each of those sections into a single pixel, those would all be the same colour as the stone.
@@ -109,7 +109,7 @@ In a similar photo, the beak of the seagull should be in the same section, and t
 
 For reference, here is what this same seagull image looks like after being summarised into a 16 by 16 image.
 
-![The 16 by 16 grid represents a summarised photo as the result of the first step in detecting similar images with Python.](_reduced_seagull.png "The seagull photo after being summarised into a 16 by 16 grid.")
+![The 16 by 16 grid represents a summarised photo as the result of the first step in detecting similar images with Python.](_reduced_seagull.webp "The seagull photo after being summarised into a 16 by 16 grid.")
 
 
 Notice how the top squares are all blue, the bottom squares are all brownish, the centre squares are off-white, and the surrounding squares are green!

@@ -27,7 +27,7 @@ For example, assume that the secret word is “chess”, and you guess “caves�
 
 Here is how the game would represent this information:
 
-![The word “caves” where the “c” and the “s” are highlighted in green, the “e” is in yellow, and the “a” and the “v” are shaded in grey.](_caves.png "The visual representation of the letter information.")
+![The word “caves” where the “c” and the “s” are highlighted in green, the “e” is in yellow, and the “a” and the “v” are shaded in grey.](_caves.webp "The visual representation of the letter information.")
 
 Again, recall that:
 

@@ -184,7 +184,7 @@ the definition of the set itself is not recursive.
 If you stare at this GIF long enough you will see that,
 from time to time, the original structure reveals itself:
 
-![](_mandelbrot_zoom.gif "By 'Simpsons contributor', via Wikimedia Commons.")
+![](_mandelbrot_zoom.webp "By 'Simpsons contributor', via Wikimedia Commons.")
 
 
 # Quines
@@ -205,7 +205,7 @@ print(f"s = {s!r}\n{s}")
 Of course, this can be taken to a very extreme level.
 For example, someone decided to create a 128-language relay quine:
 
-![](_quine_relay.png "128-language uroboros quine.")
+![](_quine_relay.webp "128-language uroboros quine.")
 
 You can find this quine [on this GitHub repository][uroboros-quine].
 This quine is a program written in Ruby that outputs a program in Rust.

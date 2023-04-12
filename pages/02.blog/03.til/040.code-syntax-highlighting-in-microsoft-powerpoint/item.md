@@ -24,19 +24,19 @@ At the bottom of the page you'll also find an animated GIF showing you how I do 
 
  2. Select the code and copy it:
 
-![Menu showing the “copy” option to copy the selected code.](_copy.png "Copying the selected code.")
+![Menu showing the “copy” option to copy the selected code.](_copy.webp "Copying the selected code.")
 
  3. Open PowerPoint (or the presentation you are working on):
 
-![Windows search showing Microsoft PowerPoint as the first result.](_powerpoint.png "Opening PowerPoint.")
+![Windows search showing Microsoft PowerPoint as the first result.](_powerpoint.webp "Opening PowerPoint.")
 
  4. Paste the code into PowerPoint with the “Paste” menu button or with a keyboard shortcut:
 
-![PowerPoint menu showing the “paste” button.](_paste.png "Pasting the code.")
+![PowerPoint menu showing the “paste” button.](_paste.webp "Pasting the code.")
 
  5. Your code should have syntax highlighting! Don't forget to change the font family, font size, among other things, if you need:
 
-![Code with syntax highlighting in Microsoft PowerPoint.](_end_result.png "End result after pasting and resizing.")
+![Code with syntax highlighting in Microsoft PowerPoint.](_end_result.webp "End result after pasting and resizing.")
 
 
 Pretty simple and saves you a LOT of trouble if you try to do syntax highlighting by hand...

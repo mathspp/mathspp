@@ -63,11 +63,11 @@ which is exactly the value we assigned to the cell $(i, 2^n + j)$. The reason wh
 
 This leaves us at:
 
-![A 4 by 8 rectangle filled in](nmr_2.png)
+![A 4 by 8 rectangle filled in](nmr_2.webp)
 
 Symmetry gives that the $NW$ square of size $2^n$ is exactly the same as the $SE$ square we just created and showing that the XOR rule still works is completely analogous to what we just did, which will leave us at
 
-![An L shaped region filled in](nmr_3.png)
+![An L shaped region filled in](nmr_3.webp)
 
 So now we are left with understanding how the $NE$ corner is filled in. Both to the left (in $NW$) and below it (in $SE$) all numbers from $2^n$ to $2^{n+1}-1$ have been used, so in each row and in each column we can still freely use any number from $0$ to $2^n - 1$. But that is exactly the same as if we were to fill the $SW$ corner of the board, hence squares $NE$ and $SW$ are the same. Now let $0 \leq i, j < 2^n$. Then $(2^n + i, 2^n + j)$ is a pair of coordinates of a cell in the $NE$ square and it is immediate that
 
@@ -77,7 +77,7 @@ So now we are left with understanding how the $NE$ corner is filled in. Both to 
 
 which is the value in the corresponding cell in the $SW$ square, leaving us at
 
-![The 8 by 8 square filled in](nmr_4.png)
+![The 8 by 8 square filled in](nmr_4.webp)
 
 This concludes the inductive step, and hence the XOR rule works! To compute the value in the cell with row $1997$ and column $2018$ we just have to write $1996$ and $2017$ in binary:
 

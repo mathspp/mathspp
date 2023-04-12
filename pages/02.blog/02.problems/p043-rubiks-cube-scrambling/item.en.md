@@ -162,7 +162,7 @@ left, right, up, down, front, and back.
 Here is an image of a solved Rubik's cube where the front face is white,
 the up face is orange, and the right face is blue:
 
-!["A solved Rubik's cube as described above."](_solved_cube.png)
+!["A solved Rubik's cube as described above."](_solved_cube.webp)
 
 The notation allows us to refer to clockwise rotations of the faces
 by employing the first letter of the name of the face.
@@ -170,7 +170,7 @@ by employing the first letter of the name of the face.
 That is, the move U refers to a clockwise turn of the up face,
 putting the cube in this position:
 
-!["Up face of the Rubik's cube rotated 90⁰ clockwise."](_solved_cube_U_move.png)
+!["Up face of the Rubik's cube rotated 90⁰ clockwise."](_solved_cube_U_move.webp)
 
 By rotating the up face once (or 90⁰), we can tell that the colour
 of the back face is actually yellow!
@@ -186,12 +186,12 @@ the 12 different moves that exist:
 
 | | X | X' |
 | :- | | |
-| L (left) | ![](_L.webp) | ![](_Lp.png) |
-| R (right) | ![](_R.png) | ![](_Rp.png) |
-| F (front) | ![](_F.png) | ![](_Fp.png) |
-| B (back) | ![](_B.png) | ![](_Bp.png) |
-| U (up) | ![](_U.png) | ![](_Up.png) |
-| D (down) | ![](_D.png) | ![](_Dp.png) |
+| L (left) | ![](_L.webp) | ![](_Lp.webp) |
+| R (right) | ![](_R.webp) | ![](_Rp.webp) |
+| F (front) | ![](_F.webp) | ![](_Fp.webp) |
+| B (back) | ![](_B.webp) | ![](_Bp.webp) |
+| U (up) | ![](_U.webp) | ![](_Up.webp) |
+| D (down) | ![](_D.webp) | ![](_Dp.webp) |
 
 I don't need you to become a master of this notation,
 I just want you to be comfortable enough to refer to cube movements

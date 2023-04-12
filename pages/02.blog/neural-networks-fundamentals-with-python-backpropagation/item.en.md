@@ -8,7 +8,7 @@ of algorithm used to enable a neural network to learn.
 
 ===
 
-![A nice image with blue and purple lights.](_thumbnail.png "Original photo by JJ Ying on Unsplash.")
+![A nice image with blue and purple lights.](_thumbnail.webp "Original photo by JJ Ying on Unsplash.")
 
 
 # Purpose of this article
@@ -538,7 +538,7 @@ The first figure shows the network trying to distinguish the points
 before training (we can see the network thinks all points are the same),
 and the next figure shows the network already distinguishes many points.
 
-![](_quadrants_pre.png "Before training the network thinks all points are the same.")
+![](_quadrants_pre.webp "Before training the network thinks all points are the same.")
 
 ![](_quadrants_pos.webp "After training the network can distinguish many points.")
 

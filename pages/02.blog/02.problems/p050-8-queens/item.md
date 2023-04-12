@@ -2,7 +2,7 @@ In how many ways can you place 8 queens on a chessboard?
 
 ===
 
-![A chessboard seen from above with a queen in the centre and lines showing the positions under attack.](thumbnail.png "Chess queen and attacked positions on a photo by Nick Fewings on Unsplash.")
+![A chessboard seen from above with a queen in the centre and lines showing the positions under attack.](thumbnail.webp "Chess queen and attacked positions on a photo by Nick Fewings on Unsplash.")
 
 # Problem statement
 
@@ -41,7 +41,7 @@ Join the list of solvers by [emailing me][email] your solution!
 
 Here is an example placement of 8 queens on a chessboard:
 
-![Queens in positions h7, g5, f3, e1, d6, c8, b2, a4.](_solution.png "Eight, non-attacking queens.")
+![Queens in positions h7, g5, f3, e1, d6, c8, b2, a4.](_solution.webp "Eight, non-attacking queens.")
 
 This is a neat little puzzle, but I can't offer a better solution other than “do it by trial and error”.
 

@@ -2,8 +2,8 @@ date: 01-02-2023
 metadata:
     author: Rodrigo Girão Serrão
     description: "Go through the complete code for a Python project that consists in finding similar photographs in a folder. This tutorial will make use of classical techniques and is suitable for beginners."
-    og:image: "https://mathspp.com/blog/finding-similar-photos/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/finding-similar-photos/thumbnail.png"
+    og:image: "https://mathspp.com/blog/finding-similar-photos/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/finding-similar-photos/thumbnail.webp"
 slug: "finding-similar-photos"
 taxonomy:
     category:

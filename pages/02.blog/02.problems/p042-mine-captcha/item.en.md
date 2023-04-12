@@ -8,7 +8,7 @@ Can you solve this little minesweeper puzzle?
 
 ===
 
-![4 by 4 minesweeper grid containing, from left to right, top to bottom: 2, gray, 1, gray, gray, gray, 3, gray, 3, gray, gray, gray, gray, 1, gray, 1](thumbnail.png)
+![4 by 4 minesweeper grid containing, from left to right, top to bottom: 2, gray, 1, gray, gray, gray, 3, gray, 3, gray, gray, gray, gray, 1, gray, 1](thumbnail.webp)
 
 # Problem statement
 
@@ -55,19 +55,19 @@ Let's look for the mines together!
 
 This is the mine field we have to work with:
 
-![](_1.png)
+![](_1.webp)
 
 Let's look at the lower-left corner, at the `3` and the `1`.
 
 The `3` has four neighbouring cells:
 
-![](_2.png)
+![](_2.webp)
 
 The two cells that have a double circle are next to the `1`,
 and therefore we can't have mines in both of those cells.
 Therefore, the two top circles _must_ contain mines.
 
-![](_3.png)
+![](_3.webp)
 
 Two mines have been found!
 
@@ -79,19 +79,19 @@ it is always going to be next to the bottom-left `1`.
 This means that there can be _no_ mines between the two `1`s
 on the bottom row.
 
-![](_4.png)
+![](_4.webp)
 
 By crossing out those two locations, we know that the bottom-right
 `1` has a mine right above it.
 
-![](_5.png)
+![](_5.webp)
 
 For the next step, we can look at the top-right `1`.
 The top-right `1` already has a neighbouring mine
 (to the left, and down) which means all other neighbouring
 cells must be empty.
 
-![](_6.png)
+![](_6.webp)
 
 In crossing out those positions,
 we realise that the `3` on the second row, to the right,
@@ -103,7 +103,7 @@ Therefore, we can place a mine there.
 As we place that mine, the puzzle is complete!
 Take a look for yourself:
 
-![](_8.png)
+![](_8.webp)
 
 
 [Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly

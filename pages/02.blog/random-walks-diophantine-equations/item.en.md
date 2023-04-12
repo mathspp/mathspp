@@ -12,4 +12,4 @@ Random walks (check my older post [here](../random-walk-simulations)) and [Dioph
 
 In the image above, the blue line represents a path taken by the random walk and in orange/red the nodes tell us how far we are from a solution (the smaller the node, the closer we are). Note that this notion of proximity isn't given by actually computing the distance to a known solution, but just by looking at how similar the two sides of the equation are. The image below shows the evolution of three independent random walks trying to find an example solution of $\frac{4}n = \frac1x + \frac1y + \frac1z$ with $n = 25$ (that expression is the expression of the [Erdös-Straus conjecture](https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Straus_conjecture)).
 
-![Three random walks in 3D](erdos25Pos.png)
+![Three random walks in 3D](erdos25Pos.webp)

@@ -585,7 +585,7 @@ with plt.xkcd():
     plt.show()
 ```
 
-![Confusion matrix from training a recurrent neural network to recognise languages from names.](_confusion_matrix.png "Confusion matrix.")
+![Confusion matrix from training a recurrent neural network to recognise languages from names.](_confusion_matrix.webp "Confusion matrix.")
 
 From the confusion matrix, we can see that the network seems to be more confident in recognising Greek, Japanese, and Arabic names.
 These are the languages that the network reckons to have the most distinctive names, especially taking into consideration that these three languages are not the languages with the largest data files.

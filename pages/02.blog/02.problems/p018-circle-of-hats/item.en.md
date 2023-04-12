@@ -55,7 +55,7 @@ hence the $k$th mathematician will guess correctly.
 
 Let us take $n = 5$ and number the mathematicians from $0$ to $4$, starting from the top and going in the clockwise direction. The numbers inside the circles represent the numbers in the hats, that I distributed [randomly][xkcd-random].
 
-![hat-configuration.png](./hat-configuration.png)
+![hat-configuration.webp](./hat-configuration.webp)
 
 Now we pretend we are the mathematician number $0$, and so we see the numbers $0$, $3$, $0$ and $1$, which give $4$ when added up. Now, we are the mathematician $0$ so our guess $g_0$ is how much is left to go from $4$ to $0$ which is... $1$, so that is our guess.
 
@@ -68,15 +68,15 @@ To recap, mathematician $0$ guessed $1$ because the other mathematicians' hats a
 
 Mathematician $1$ sees $3$, $0$, $1$ and $3$, which add up to $3 + 0 + 1 + 3 \equiv 2$ mudulo $5$ and to get to $1$ we must add $4$, so mathematician $1$ guesses $4$, which is also wrong...
 
-![hat-1.png](./hat-1.png)
+![hat-1.webp](./hat-1.webp)
 
 Then came mathematician $2$ who sees $0$, $1$, $3$ and $0$, adding up to $4$. Now, to get from $4$ to $2$ modulo $5$ we need to add $3$, which is what our mathematician guesses... and it is correct!
 
-![hat-2.png](./hat-2.png)
+![hat-2.webp](./hat-2.webp)
 
 Just for the sake of completeness, can you tell what mathematicians $3$ and $4$ will write down as their guesses..? Hint: none of them will get it right.
 
-![all-hats.png](./all-hats.png)
+![all-hats.webp](./all-hats.webp)
 
 
 ## A piece of code for you to play with

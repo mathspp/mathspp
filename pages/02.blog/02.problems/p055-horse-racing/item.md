@@ -85,7 +85,7 @@ This is the sixth race. Suppose these are the results:
 After these six races, we can write down the names of the 25 horses and draw arrows that represent the relative speeds of the several horses.
 Take a look at the diagram below:
 
-![A rectangular canvas with 5 columns and 5 rows with the labels A1 through E5, the letters A to E change with the columns and the numbers 1 to 5 change with the rows. Downward pointing arrows join all elements of each column and the first row has right pointing arrows from A1 to B1, to C1, to D1, and to E1.](_six_races.png "Diagram representing horse relative speeds.")
+![A rectangular canvas with 5 columns and 5 rows with the labels A1 through E5, the letters A to E change with the columns and the numbers 1 to 5 change with the rows. Downward pointing arrows join all elements of each column and the first row has right pointing arrows from A1 to B1, to C1, to D1, and to E1.](_six_races.webp "Diagram representing horse relative speeds.")
 
 The diagram above shows the 25 horses, and a blue arrow means that the start horse is faster than the end horse.
 For example, the top left arrow means that horse $A1$ is faster than horse $B1$,

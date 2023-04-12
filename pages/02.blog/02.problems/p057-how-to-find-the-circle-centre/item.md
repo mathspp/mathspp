@@ -2,7 +2,7 @@ Can you find the centre of the circle with just five lines?
 
 ===
 
-![](thumbnail.png "Photo by Luis Eusebio on Unsplash.")
+![](thumbnail.webp "Photo by Luis Eusebio on Unsplash.")
 
 
 # Problem statement
@@ -12,7 +12,7 @@ At your disposal, you have a compass, a straightedge
 (like a ruler, but without length ticks),
 and a pencil.
 
-![A black circle on a white background.](_circle.png "A circle.")
+![A black circle on a white background.](_circle.webp "A circle.")
 
 Can you find the centre of the circle with just five lines?
 (Every time you use the compass counts as one line,
@@ -51,7 +51,7 @@ However, doing that with just 5 lines is the challenge.
 Recall that the centre of the circle is the point that is at the same distance of all the points in the circumference.
 So, if you draw _any_ chord and then draw its bisector, you know that bisector will go through the centre of the circle (point A in the figure):
 
-![A circle with an arbitrary chord with endpoints D and E. Auxiliary circles were drawn from D to E and from E to D, and their intersections defined the bisector of the chord. The bisector goes through the centre of the original circle.](_chord_bisector.png "The bisector of a chord goes through the circle centre.")
+![A circle with an arbitrary chord with endpoints D and E. Auxiliary circles were drawn from D to E and from E to D, and their intersections defined the bisector of the chord. The bisector goes through the centre of the original circle.](_chord_bisector.webp "The bisector of a chord goes through the circle centre.")
 
 In the figure above, I picked two arbitrary points D and E and drew the chord [DE].
 Then, I used D and E two draw to circles:
@@ -62,7 +62,7 @@ Then, I used D and E two draw to circles:
 Then, the line defined by the two intersections of those two circles goes through the centre (A).
 If we do that once more, the intersections of those two bisectors give you the centre:
 
-![Same process repeated on a second chord, whose bisector intersected with the first one at the centre of the original circle.](_two_chord_bisectors.png "The intersection of the two chords defines the centre.")
+![Same process repeated on a second chord, whose bisector intersected with the first one at the centre of the original circle.](_two_chord_bisectors.webp "The intersection of the two chords defines the centre.")
 
 However, this uses a total of 8 lines.
 We want to do this in just 5...
@@ -70,7 +70,7 @@ And yet, going down to 6 lines is easy:
 we just need to realise we don't really care about the chords, only their endpoints...
 And picking arbitrary points on the circumference doesn't cost any “lines”:
 
-![Same drawing, but with the chords erased.](_six_moves.png "4 circles and 2 lines make up a total of 6 lines.")
+![Same drawing, but with the chords erased.](_six_moves.webp "4 circles and 2 lines make up a total of 6 lines.")
 
 The final step comes from realising that we don't need 4 separate circles!
 The two bisector lines of the implied chords can be drawn with just 3 circles if we pick the points well enough!

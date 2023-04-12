@@ -44,11 +44,11 @@ def g():
 Notice how calling `f` will always raise an error.
 Without having `traceback` installed, the error looks like this:
 
-![Screenshot of a plain `ZeroDivisionError` in a Python REPL, composed of 5 dense lines of mono-colour output that is difficult to read.](_traceback_not_installed.png "Screenshot of a plain `ZeroDivisionError`.")
+![Screenshot of a plain `ZeroDivisionError` in a Python REPL, composed of 5 dense lines of mono-colour output that is difficult to read.](_traceback_not_installed.webp "Screenshot of a plain `ZeroDivisionError`.")
 
 If you install `traceback` in your console, the output is now much more beautiful and, above all, easier to read:
 
-![Screenshot of the same `ZeroDivisionError`, but this time the screenshot has helpful syntax colouring that makes it easier to read. The syntax colouring was done by `rich.traceback`.](_traceback_installed.png "Screenshot of a `ZeroDivisionError` handled by `rich.traceback`.")
+![Screenshot of the same `ZeroDivisionError`, but this time the screenshot has helpful syntax colouring that makes it easier to read. The syntax colouring was done by `rich.traceback`.](_traceback_installed.webp "Screenshot of a `ZeroDivisionError` handled by `rich.traceback`.")
 
 
 # How to use `rich` for logging exceptions
@@ -78,7 +78,7 @@ logging.basicConfig(
 Before the modification, running the program would generate logging output that contains a pretty plain Python exception.
 I included a screenshot here:
 
-![A terminal window with some beautiful coloured logging on it. The final logging message contains a plain Python traceback, with plenty of lines that look dull and are dense/hard to read because everything is in the same colour.](_logging.png "Screenshot of exception logging without rich tracebacks.")
+![A terminal window with some beautiful coloured logging on it. The final logging message contains a plain Python traceback, with plenty of lines that look dull and are dense/hard to read because everything is in the same colour.](_logging.webp "Screenshot of exception logging without rich tracebacks.")
 
 However, by setting `rich_tracebacks=True`, the exception that is logged is also rendered beautifully:
 

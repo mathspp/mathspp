@@ -169,7 +169,7 @@ at the address `localhost:7342`.
 (Between you and me, we know there is no web page at that address, but the browser doesn't know that!)
 This is what my browser (Mozilla Firefox) looks like:
 
-![Firefox trying to connect to the localhost.](_browser_connecting_to_localhost.png)
+![Firefox trying to connect to the localhost.](_browser_connecting_to_localhost.webp)
 
 
 So, you might be wondering: can we send information to the browser?
@@ -208,7 +208,7 @@ At the same time, the look of the browser changes.
 Now, the bottom-left tooltip says that we are _transferring data_,
 and the page preview is now in a tone of grey:
 
-![Firefox transferring data from the localhost.](_browser_transferring_data_from_localhost.png)
+![Firefox transferring data from the localhost.](_browser_transferring_data_from_localhost.webp)
 
 Now it's the browser's turn to be left hanging...
 Why?
@@ -223,13 +223,13 @@ We can try calling the method `.close` on our `client_socket`:
 However, when we do that, Firefox doesn't like it,
 and it presents a message saying that the connection was reset:
 
-![Firefox complaining the connection was reset.](_browser_connection_reset.png)
+![Firefox complaining the connection was reset.](_browser_connection_reset.webp)
 
 I also tried this out on Chrome, and turns out that it complains sooner in the process.
 When you try sending the binary string `b"Hello, world!"`, it says that the page isn't working,
 and that the localhost sent an invalid response:
 
-![Google Chrome complains the page isn't working.](_chrome_page_isnt_working.png)
+![Google Chrome complains the page isn't working.](_chrome_page_isnt_working.webp)
 
 What is more, the error message says that the localhost sent an invalid response,
 which is something interesting!
@@ -350,7 +350,7 @@ Now that we read all this data, let's ignore it and send our own data back:
 
 If we do that through Firefox, then the browser displays our data:
 
-![Firefox displays the string “Hello, world!”.](_browser_hello_world_sent.png)
+![Firefox displays the string “Hello, world!”.](_browser_hello_world_sent.webp)
 
 Quite interesting!
 However, if we try to send some HTML, the browser doesn't display it properly.
@@ -424,7 +424,7 @@ Lo and behold, it worked!
 As it turns out, we _did_ need the empty line between the headers and data,
 and now we have our basic webpage:
 
-![A Firefox tab showing a white background and the title “Hello, world!” in black.](_browser_http_headers.png)
+![A Firefox tab showing a white background and the title “Hello, world!” in black.](_browser_http_headers.webp)
 
 This also seems to be working on Chrome (for me, at least),
 so let's call this the first major win of this article!
@@ -750,7 +750,7 @@ I need to make sure that my computer _is_ discoverable on the network.
 On Windows, that's a matter of going to the Wi-Fi settings.
 For other operating systems, you'll have to look it up...
 
-![Windows Wi-Fi settings showing that the laptop is discoverable on the network, a necessary step to enable the experiment for this tutorial of socket programming for beginners.](_laptop_discoverable.png)
+![Windows Wi-Fi settings showing that the laptop is discoverable on the network, a necessary step to enable the experiment for this tutorial of socket programming for beginners.](_laptop_discoverable.webp)
 
 Now that that's done, I grabbed my second device, opened Python, and created a client server:
 

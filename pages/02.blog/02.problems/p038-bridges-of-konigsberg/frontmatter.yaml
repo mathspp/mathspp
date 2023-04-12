@@ -1,8 +1,8 @@
 date: 13-06-2021
 metadata:
     author: Rodrigo Girão Serrão
-    og:image: https://mathspp.com/blog/problems/bridges-of-konigsberg/thumbnail.png
-    twitter:image: https://mathspp.com/blog/problems/bridges-of-konigsberg/thumbnail.png
+    og:image: https://mathspp.com/blog/problems/bridges-of-konigsberg/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/problems/bridges-of-konigsberg/thumbnail.webp
 process:
     twig: true
 slug: bridges-of-konigsberg

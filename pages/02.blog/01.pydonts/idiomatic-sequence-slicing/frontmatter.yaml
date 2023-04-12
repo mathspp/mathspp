@@ -1,8 +1,8 @@
 date: 27-04-2021
 metadata:
     author: Rodrigo Girão Serrão
-    og:image: "https://mathspp.com/blog/pydonts/idiomatic-sequence-slicing/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/pydonts/idiomatic-sequence-slicing/thumbnail.png"
+    og:image: "https://mathspp.com/blog/pydonts/idiomatic-sequence-slicing/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/pydonts/idiomatic-sequence-slicing/thumbnail.webp"
 references:
   - "Python 3 Documentation, The Python Language Reference, Expressions – Slicings, [https://docs.python.org/3/reference/expressions.html#slicings](https://docs.python.org/3/reference/expressions.html#slicings) [last acessed 20-04-2021];"
   - "Python 3 Documentation, The Python Language Reference, Data Model – The Standard Type Hierarchy, [https://docs.python.org/3/reference/datamodel.html#the-standard-type-hierarchy](https://docs.python.org/3/reference/datamodel.html#the-standard-type-hierarchy) [last accessed 20-04-2021];"

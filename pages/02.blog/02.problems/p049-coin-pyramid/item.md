@@ -83,7 +83,7 @@ Join the list of solvers by [emailing me][email] your solution!
 It is easier to _show_ you the solution than it is to explain it to you,
 but what you want to do is take the three corner coins and “move them to the opposite side”:
 
-![](_solution.png "A depiction of the coin pyramid pointing to the other side.")
+![](_solution.webp "A depiction of the coin pyramid pointing to the other side.")
 
 
 [Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly

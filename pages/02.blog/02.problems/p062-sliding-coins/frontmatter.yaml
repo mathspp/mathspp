@@ -2,8 +2,8 @@ date: 12-06-2022
 metadata:
     author: Rodrigo Girão Serrão
     description: "Can you align all of the coins on the right edge of the board?"
-    og:image: https://mathspp.com/blog/problems/sliding-coins/thumbnail.png
-    twitter:image: https://mathspp.com/blog/problems/sliding-coins/thumbnail.png
+    og:image: https://mathspp.com/blog/problems/sliding-coins/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/problems/sliding-coins/thumbnail.webp
 process:
     twig: true
 slug: sliding-coins

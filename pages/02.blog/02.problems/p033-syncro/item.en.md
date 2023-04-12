@@ -24,7 +24,7 @@ For example, the square makes all coloured petals rotate once
 in the clockwise direction, or if you take the image above
 and do “circle + square” then the coloured petals end up like this:
 
-![](_syncro.png "Petal distribution after doing the sequence “circle + square”.")
+![](_syncro.webp "Petal distribution after doing the sequence “circle + square”.")
 
 Your objective is to find a sequence of circles and squares that
 put all coloured petals in a single flower, in the smallest

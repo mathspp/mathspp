@@ -4,7 +4,7 @@ Today I learned that the reverse of some flag emoji are other flags!
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-![](thumbnail.png "The reverse of some emoji flags.")
+![](thumbnail.webp "The reverse of some emoji flags.")
 
 
 # Reversing emoji

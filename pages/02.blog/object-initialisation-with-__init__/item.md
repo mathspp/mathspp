@@ -2,7 +2,7 @@ Learn about the dunder method `__init__`, responsible for initialising class ins
 
 ===
 
-![A blank cube being passed to the dunder method `__init__` and coming out fully initialised, represented by a scrambled Rubik's cube.](thumbnail.png "Background photo by Олександр К on Unsplash")
+![A blank cube being passed to the dunder method `__init__` and coming out fully initialised, represented by a scrambled Rubik's cube.](thumbnail.webp "Background photo by Олександр К on Unsplash")
 
 
 # Introduction

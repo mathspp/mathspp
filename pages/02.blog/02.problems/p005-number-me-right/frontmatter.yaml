@@ -1,8 +1,8 @@
 date: 23-01-2018
 metadata:
     author: Rodrigo Girão Serrão
-    og:image: https://mathspp.com/blog/problems/number-me-right/nmr_4.png
-    twitter:image: https://mathspp.com/blog/problems/number-me-right/nmr_4.png
+    og:image: https://mathspp.com/blog/problems/number-me-right/nmr_4.webp
+    twitter:image: https://mathspp.com/blog/problems/number-me-right/nmr_4.webp
 process:
     twig: true
 slug: number-me-right

@@ -20,11 +20,11 @@ and the example can be simpler or more complex.
 
 In a simpler session, what we do is take silly cleaning robots like this one:
 
-![](initial_robot.gif "A randomly generated robot trying to clean the room.")
+![](initial_robot.webp "A randomly generated robot trying to clean the room.")
 
 And then borrow ideas from Darwin's theory of evolution to create better cleaning robots, like this one:
 
-![](better_robot.gif "A better robot that is able to clean more squares.")
+![](better_robot.webp "A better robot that is able to clean more squares.")
 
 By the end of the workshop, the participant has finished a basic genetic algorithm that is able
 to create a robot like the second one, evolving it from the first one.

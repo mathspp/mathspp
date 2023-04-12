@@ -8,7 +8,7 @@ I find the problem in this post rather fun to think about because it is a proble
 
 ===
 
-![A picture showing a possible game move](beans.png)
+![A picture showing a possible game move](beans.webp)
 
 
 # Problem statement
@@ -34,7 +34,7 @@ Let us represent the sizes of the stacks by a pair $(x, y)$. The first thing to 
 
 We can see that it is impossible to reach position $(0, 0)$ given that each move consists of removing some beans from one stack and then adding some beans to the other stack; let us focus on $(1, 0)$. How can one get there? It is fairly easy to see that we can only reach $(1, 0)$ from $(0, 2)$ by making the (obvious) play in the figure:
 
-![An example move](move_basic.png)
+![An example move](move_basic.webp)
 
 In a similar fashion we can conclude that to reach the position $(1, 1)$ we must have been at $(3, 0)$ (or $(0, 3)$ of course). At this point, we can already determine the outcome of a game played by two perfect opponents if the game starts at any of the following positions: $(0,0), (1,0), (0,1), (1,1), (2,0), (0,2), (3,0), (0,3)$. We shall keep exploring positions this way and fill a table with our conclusions. We say we have a losing position $L$ if the first player loses a game starting at that position and similarly we say we have a winning position $W$ if the first player wins a game starting at that position. As an example, $(1,0)$ is a losing position. So far, this is what we know:
 
@@ -83,7 +83,7 @@ Before we try to prove our conjecture we will check positions $(3,2), (3,3), (2,
 
 If we are at $(3,2)$ we can only go to $(4,0)$ or $(1,3)$ which are both $W$ positions, hence $(3,2)$ (and therefore $(2,3)$ as well) is a losing position. We can also verify that $(3,3)$ is an $L$ position:
 
-![Table with the same pattern, but more obvious](pattern2.png)
+![Table with the same pattern, but more obvious](pattern2.webp)
 
 We could keep on going and fill the whole table, but at this point I thought it would be worth it to try and prove the conjecture. If it turns out that the conjecture is false, then maybe we might get some more insight into what other positions are also losing positions.
 

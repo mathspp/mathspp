@@ -1,8 +1,8 @@
 date: 06-04-2021
 metadata:
     author: Rodrigo Girão Serrão
-    og:image: "https://mathspp.com/blog/pydonts/enumerate-me/thumbnail.png"
-    twitter:image: "https://mathspp.com/blog/pydonts/enumerate-me/thumbnail.png"
+    og:image: "https://mathspp.com/blog/pydonts/enumerate-me/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/pydonts/enumerate-me/thumbnail.webp"
 references:
   - "Python 3 Documentation, The Python Standard Library, `enumerate`, [docs.python.org/3/library/functions.html#enumerate](https://docs.python.org/3/library/functions.html#enumerate) [last accessed 06-04-2021];"
   - "Python 3 Documentation, The Python Standard Library, `calendar.Calendar`, [docs.python.org/3/library/calendar.html#calendar.Calendar](https://docs.python.org/3/library/calendar.html#calendar.Calendar) [last accessed 06-04-2021]."

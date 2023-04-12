@@ -55,7 +55,7 @@ For example, if we consider this placement:
 
 Then the corresponding numbers would be the following:
 
-![](_roundtable_counts.png)
+![](_roundtable_counts.webp)
 
 If there are $n$ people sitting at the table, that number is an integer
 between $1$ and $n - 1$, inclusive.

@@ -85,7 +85,7 @@ After updating, I ran the same command:
 
 And it worked!
 
-![](dracula_working.png)
+![](dracula_working.webp)
 
 
 So...

@@ -1,8 +1,8 @@
 date: 10-02-2018
 metadata:
     author: Rodrigo Girão Serrão
-    og:image: https://mathspp.com/blog/problems/stacks-of-beans/beans.png
-    twitter:image: https://mathspp.com/blog/problems/stacks-of-beans/beans.png
+    og:image: https://mathspp.com/blog/problems/stacks-of-beans/beans.webp
+    twitter:image: https://mathspp.com/blog/problems/stacks-of-beans/beans.webp
 process:
     twig: true
 slug: stacks-of-beans

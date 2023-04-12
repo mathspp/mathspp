@@ -9,7 +9,7 @@ Can you tackle this one?
 
 ===
 
-![Two keys.](thumbnail.png "Original photograph from Aneta Pawlik on Unsplash.")
+![Two keys.](thumbnail.webp "Original photograph from Aneta Pawlik on Unsplash.")
 
 
 # Problem statement
@@ -44,14 +44,14 @@ online when I shared this puzzle on reddit.
 
 What we are going to do is imagine the four boxes are laid out in a two by two square:
 
-![](_boxes_1.png)
+![](_boxes_1.webp)
 
 The next thing we do is interpret the sides of the coins as zeroes and ones,
 because it is easier to do maths with binary numbers.
 So a random configuration of the coins (of the zeroes and ones) and the
 (hidden) key could be:
 
-![](_boxes_2.png)
+![](_boxes_2.webp)
 
 The next thing we do is agree that each box can be represented by its coordinates,
 in the sense that we can identify each box by the row and column it is in.
@@ -82,13 +82,13 @@ column, and if the first column sums to an odd number, then the key is in the se
 In our example, the first row sums to $0$ and the first column sums to $1$,
 which indicates that the key should be in box $(0, 1)$, which is wrong:
 
-![](_boxes_4.png)
+![](_boxes_4.webp)
 
 To solve our example, what we would have to do is flip the top left coin
 (i.e., make it a $1$) so that both the first row and the first column
 now got the correct sum:
 
-![](_boxes_5.png)
+![](_boxes_5.webp)
 
 We can see that this strategy always works:
 

@@ -2,8 +2,8 @@ date: 28-04-2022
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned how to use `rich` for beautiful tracebacks in the REPL and how to use it to log prettier exceptions."
-    og:image: https://mathspp.com/blog/til/043/thumbnail.png
-    twitter:image: https://mathspp.com/blog/til/043/thumbnail.png
+    og:image: https://mathspp.com/blog/til/043/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/043/thumbnail.webp
 references:
   - "`rich.logging` documentation, [https://rich.readthedocs.io/en/latest/logging.html](https://rich.readthedocs.io/en/latest/logging.html) [last accessed 28-04-2022];"
   - "`rich.traceback` documentation, [https://rich.readthedocs.io/en/latest/reference/traceback.html](https://rich.readthedocs.io/en/latest/reference/traceback.html) [last accessed 28-04-2022];"

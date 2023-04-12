@@ -8,7 +8,7 @@ In this blog post I'll show you how you can write a full interpreter for the [br
 
 ===
 
-![A slightly edited photo of the code in question](code.png)
+![A slightly edited photo of the code in question](code.webp)
 
 # Preview
 

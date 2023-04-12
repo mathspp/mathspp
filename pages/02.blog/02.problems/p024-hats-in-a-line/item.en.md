@@ -9,7 +9,7 @@ colours. How many people can guess their colour correctly?
 
 ===
 
-![A picture with a couple of people in a line, with different-coloured hats](thumbnail.png)
+![A picture with a couple of people in a line, with different-coloured hats](thumbnail.webp)
 
 
 # Problem statement
@@ -97,7 +97,7 @@ everyone) has the black hat represented by the first $1$ from before.
 The first person thus knows that the hats are distributed like this
 $?~0~0~1~1~0$, with the only unknown being their own hat.
 
-![Image illustrating the explanation](_explanation_01.png)
+![Image illustrating the explanation](_explanation_01.webp)
 
 The first person will then sum the value of every hat in front of them, which
 would be $2$ in this case, and check the parity of that number (i.e. answer the
@@ -114,7 +114,7 @@ but their sacrifice saved everyone else!)
 After that, the second person in line knows that their hat, plus the others in
 front of them, have a specific parity.
 
-![Image illustrating the explanation](_explanation_02.png)
+![Image illustrating the explanation](_explanation_02.webp)
 
 The second person can see $n - 2$ hats and knows their parity.
 On top of that, the second person knows what is the parity of the $n - 1$ hats,
@@ -165,7 +165,7 @@ $0$.
 Next is the fourth person, that knows the hats are like this: $?~0~0~?~1~0$ and
 knows that $0~0~?~1~0$ should add up to something even.
 
-![Image illustrating the explanation](_explanation_04.png)
+![Image illustrating the explanation](_explanation_04.webp)
 
 The fourth person can then guess their hat is dark-coloured, because
 $0 + 0~+~? + 1 + 0$ only adds up to something even if their hat is $1$.
@@ -173,7 +173,7 @@ $0 + 0~+~? + 1 + 0$ only adds up to something even if their hat is $1$.
 Next is the fifth person, that knows the hats are like this: $?~0~0~1~?~0$ and
 knows that $0~0~1~?~0$ should add up to something even.
 
-![Image illustrating the explanation](_explanation_05.png)
+![Image illustrating the explanation](_explanation_05.webp)
 
 The fifth person can then guess their hat is dark-coloured, because
 $0 + 0 + 1~+~? + 0$ only adds up to something even if their hat is $1$.
@@ -181,7 +181,7 @@ $0 + 0 + 1~+~? + 0$ only adds up to something even if their hat is $1$.
 Next is the sixth, and final, person, that knows the hats are like this:
 $?~0~0~1~1~?$ and knows that $0~0~1~1~?$ should add up to something even.
 
-![Image illustrating the explanation](_explanation_06.png)
+![Image illustrating the explanation](_explanation_06.webp)
 
 The last person can then guess their hat is light-coloured, because
 $0 + 0 + 1 + 1~+~?$ only adds up to something even if their hat is $0$.

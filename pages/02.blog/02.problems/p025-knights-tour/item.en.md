@@ -18,11 +18,11 @@ Who will win?
 Alice and Bob will play a special game of “chess”.
 Alice will take the knight and place it in some square of the chessboard, any square she likes.
 
-![Chessboard with a knight](_chessboard_01.png)
+![Chessboard with a knight](_chessboard_01.webp)
 
 Then, Bob will take the knight and move it (according to chess rules) to a square of his choosing.
 
-![Chessboard after another move](_chessboard_02.png)
+![Chessboard after another move](_chessboard_02.webp)
 
 Then it's Alice's turn to do the same, and they will alternate moving the knight.
 There is only a catch:
@@ -31,7 +31,7 @@ There is only a catch:
 
 In the example image below, the knight cannot be moved one row down and two columns right, as that is the place the knight started at.
 
-![Same chessboard with some squares already visited](_chessboard_03.png)
+![Same chessboard with some squares already visited](_chessboard_03.webp)
 
 Thus, the player who cannot make a valid move loses.
 
@@ -71,7 +71,7 @@ This is shown in the next figure, with the slightly transparent knights represen
 possible moves and with a different frame colour for the rectangle that holds the
 initial knight position and the only move that lands in that same rectangle.
 
-![A chessboard with a knight in position d5 and the legal knight moves highlighted.](_sol_chessboard_02.png)
+![A chessboard with a knight in position d5 and the legal knight moves highlighted.](_sol_chessboard_02.webp)
 
 This can be seen as a very well established pattern, as each rectangle is the same.
 In the next figure we schematise the pairs of squares, within a rectangle, that
@@ -82,7 +82,7 @@ If the knight had been standing in one of the positions marked with a filled cir
 it could only have jumped to the other filled circle (if the knight wanted to remain
 inside the rectangle).
 
-![A chessboard with some pairs of positions highlighted.](_sol_chessboard_03.png)
+![A chessboard with some pairs of positions highlighted.](_sol_chessboard_03.webp)
 
 Let this sink in for a bit.
 

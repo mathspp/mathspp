@@ -8,7 +8,7 @@ This Pydon't will teach you how the basics of list comprehensions in Python.
 
 ===
 
-![The anatomy of a list comprehension.](thumbnail.png)
+![The anatomy of a list comprehension.](thumbnail.webp)
 
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)
@@ -71,7 +71,7 @@ you will probably start off by using a `range` to create a series of consecutive
 A list comprehension has four parts, one of which is optional.
 Here is a diagram representing those four parts:
 
-![Diagram pointing at the four different parts of a list comprehension.](_anatomy.png)
+![Diagram pointing at the four different parts of a list comprehension.](_anatomy.webp)
 
 The first part is a set of opening and closing brackets,
 that delimit the list comprehension.
@@ -244,7 +244,7 @@ for word in words:
 Much like in standard `for` loops,
 list comprehensions can also have nested loops:
 
-![Showing nested loops in list comprehensions.](_nested_loops.png)
+![Showing nested loops in list comprehensions.](_nested_loops.webp)
 
 A prime usage example of this is to flatten a list of lists:
 
@@ -259,7 +259,7 @@ it can iterate over another iterable, to create another variable.
 When you do so, all the temporary variables that are going through
 iterables become available to be used on the left.
 
-![Showing nested independent loops in list comprehensions.](_nested_independent_loops.png)
+![Showing nested independent loops in list comprehensions.](_nested_independent_loops.webp)
 
 This pattern arises naturally when you want to _combine_ information
 from two or more data sources:
@@ -295,7 +295,7 @@ makes sure that later conditions only get evaluated if the earlier ones evaluate
 This means there is a series of equivalences when we think about
 list comprehensions with nested `if` statements:
 
-![Equivalences in using nested `if` statements in list comprehensions.](_nested_ifs.png)
+![Equivalences in using nested `if` statements in list comprehensions.](_nested_ifs.webp)
 
 
 # Arbitrary nesting
@@ -316,7 +316,7 @@ left-to-right ordering of things in the list comprehension.
 The further you are to the right in a list comprehension,
 the deeper you are in the equivalent nested formulation:
 
-![Diagram showing the relationship between nesting depth and distance to the beginning of the list comprehension.](_full_nesting.png)
+![Diagram showing the relationship between nesting depth and distance to the beginning of the list comprehension.](_full_nesting.webp)
 
 
 # List comprehensions instead of `map` and `filter`
@@ -327,11 +327,11 @@ for calls to the built-in functions `map` and `filter`.
 `map` takes a function and applies it to all elements of an iterable,
 and that's straightforward to do with a list comprehension:
 
-![Diagram showing equivalence between `map` and a list comprehension.](_map.png)
+![Diagram showing equivalence between `map` and a list comprehension.](_map.webp)
 
 Similarly, the built-in `filter` can often be replaced with a more Pythonic list comprehension.
 
-![Diagram showing equivalence between `filter` and a list comprehension.](_filter.png)
+![Diagram showing equivalence between `filter` and a list comprehension.](_filter.webp)
 
 Please, bear in mind that the list comprehension versions
 of `map` and `filter` are **not** equivalent to using

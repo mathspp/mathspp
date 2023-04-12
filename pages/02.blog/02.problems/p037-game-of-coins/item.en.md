@@ -59,7 +59,7 @@ so that no coin can go there any more.
 Now, it is Bob's turn to play, and he has to play a coin in a place with no holes,
 so he just places his coin somewhere:
 
-![](_bob_first_move.png)
+![](_bob_first_move.webp)
 
 What Alice does is to figure out what is the play that is diametrically
 opposite to Bob's:
@@ -69,7 +69,7 @@ opposite to Bob's:
 After she replies, you can think of it as if their coins now also drilled
 holes in the table:
 
-![](_restored.png)
+![](_restored.webp)
 
 Now, at this point, there are three holes in the table, instead of the single
 hole that Alice “drilled” in the beginning, but one thing remains true:
@@ -78,11 +78,11 @@ fit in the same location, but diametrically opposite to the centre.
 
 So, Bob might play some coin somewhere:
 
-![](_bob_snd_move.png)
+![](_bob_snd_move.webp)
 
 Then, what Alice does is the same, she finds the diametrically opposite play:
 
-![](_alice_snd_reply.png)
+![](_alice_snd_reply.webp)
 
 And they do this back and forth, until Bob runs out of space to place a new coin.
 It's never Alice who runs out of space because she is always replying

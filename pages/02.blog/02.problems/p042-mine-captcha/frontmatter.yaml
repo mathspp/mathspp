@@ -1,8 +1,8 @@
 date: 08-08-2021
 metadata:
     author: Rodrigo Girão Serrão
-    og:image: https://mathspp.com/blog/problems/mine-captcha/thumbnail.png
-    twitter:image: https://mathspp.com/blog/problems/mine-captcha/thumbnail.png
+    og:image: https://mathspp.com/blog/problems/mine-captcha/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/problems/mine-captcha/thumbnail.webp
 process:
     twig: true
 slug: mine-captcha

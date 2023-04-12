@@ -21,7 +21,7 @@ from scratch, so that you really understand how they work.
 
 Your network will receive an image like
 
-![](_digit_7.png "A digit 7.")
+![](_digit_7.webp "A digit 7.")
 
 and will output a `7`.
 
@@ -128,7 +128,7 @@ the neurons all mixed up, we will line them up neatly in what we call *layers*.
 In the figure below we show four layers, and the neurons of consecutive layers
 are connected by thin lines:
 
-[![](_3b1b_neural_net.png "Example neural network from 3blue1brown's video.")][3b1b-nn1]
+[![](_3b1b_neural_net.webp "Example neural network from 3blue1brown's video.")][3b1b-nn1]
 
 We will also determine that a neuron can only be connected to the neurons
 of the next layer and to the neurons of the previous layer, instead of allowing

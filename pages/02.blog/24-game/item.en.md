@@ -90,7 +90,7 @@ Having seen this, with $24$ not working for _all_ the $126$ unique inputs, we th
 
 What we mean by this is: out of all the small integers, is $24$ the one that is solvable for more inputs? A quick modification of my initial script (which only had the `Solve` and `Combine` functions) produced this graph:
 
-![graph showing solvability numbers for all targets from 0 to 100 and unique inputs](unique_100.png)
+![graph showing solvability numbers for all targets from 0 to 100 and unique inputs](unique_100.webp)
 
 You can produce the graph yourself by first copying in the necessary functions from `'sharpplot'` and then running the `StudySolvability` and `Plot` functions yourself:
 
@@ -109,7 +109,7 @@ So we could say that $2$, $3$, $4$ and $10$ are the "perfect" targets.
 
 It can also be interesting to look at the next graph below, which is similar to the one above except now we take every integer from $0$ to $3024$ as target ($3024 = 9 \times 8 \times 7 \times 6$ is the highest we can get with four unique digits as input):
 
-![graph showing solvability numbers for all targets from 0 to 100 and unique inputs](unique_full_100.png)
+![graph showing solvability numbers for all targets from 0 to 100 and unique inputs](unique_full_100.webp)
 
 This one can be produced with
 

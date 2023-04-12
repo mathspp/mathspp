@@ -18,7 +18,7 @@ While you are at it, can you do it in multiple ways?
 
 For reference, here is a picture showing what squares a queen attacks:
 
-![Chessboard with a queen and the squares under attack.](_queen_attack.png "Squares under attack by a queen.")
+![Chessboard with a queen and the squares under attack.](_queen_attack.webp "Squares under attack by a queen.")
 
 Similarly, here is a picture showing what squares a knight attacks:
 

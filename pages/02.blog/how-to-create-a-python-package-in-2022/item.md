@@ -266,7 +266,7 @@ poetry publish -r testpypi
 Once you have done that, and assuming all goes well,
 your package should be [live on TestPyPI](https://test.pypi.org/project/extendedjson/).
 
-![Screenshot of TestPyPI where it is visible that a stub for `extendedjson` was successfully uploaded.](_testpypi.png "Screenshot of `extendedjson` uploaded to TestPyPI.")
+![Screenshot of TestPyPI where it is visible that a stub for `extendedjson` was successfully uploaded.](_testpypi.webp "Screenshot of `extendedjson` uploaded to TestPyPI.")
 
 
 ## Ignore the build products
@@ -362,7 +362,7 @@ poetry publish --build
 There it goes!
 Now you can [get `extendedjson` from PyPI][extendedjson-pypi]!
 
-!["A screenshot of the `extendedjson` page on PyPI, showing it was successfully uploaded."](_pypi.png "A screenshot of the `extendedjson` page on PyPI.")
+!["A screenshot of the `extendedjson` page on PyPI, showing it was successfully uploaded."](_pypi.webp "A screenshot of the `extendedjson` page on PyPI.")
 
 
 ## Do a victory lap
@@ -395,7 +395,7 @@ Proceed (Y/n)? y
 λ # Victory lap completed.
 ```
 
-!["A screenshot of a terminal window showing `extendedjson` being used inside a Python REPL."](_extendedjson_repl.png "`extendedjson` being used in the REPL.")
+!["A screenshot of a terminal window showing `extendedjson` being used inside a Python REPL."](_extendedjson_repl.webp "`extendedjson` being used in the REPL.")
 
 
 # Publish a release
@@ -671,7 +671,7 @@ I hope this is easy enough...
 I started by going to the [coverage.py documentation][coverage-docs] and followed the steps indicated.
 Two minutes later, I already had my first coverage report:
 
-![A screenshot of a simple, dark webpage containing the coverage.py coverage report of my package. It shows a couple of highlighted red lines which correspond to code that has not been covered.](_coverage_report.png "Screenshot of my first coverage report.")
+![A screenshot of a simple, dark webpage containing the coverage.py coverage report of my package. It shows a couple of highlighted red lines which correspond to code that has not been covered.](_coverage_report.webp "Screenshot of my first coverage report.")
 
 To build this report, all I did was
 
@@ -727,7 +727,7 @@ because those are the cases that I haven't covered yet.
 
 This is not terribly difficult to do, which means I eventually got to 100% code coverage:
 
-![A screenshot of the code coverage report header, with a bright arrow pointing to the 100% code coverage value.](_coverage_100.png "Screenshot of the 100% code coverage report.")
+![A screenshot of the code coverage report header, with a bright arrow pointing to the 100% code coverage value.](_coverage_100.webp "Screenshot of the 100% code coverage report.")
 
 Having done that, now is a good time to make a new minor release (0.1.2) that contains full code coverage.
 
@@ -821,14 +821,14 @@ Because of the newly added GitHub Action, a couple of things started happening w
 After a couple of seconds, I got a green checkmark next to the commit and GitHub told me that “All checks have passed”,
 next to the button that lets me merge the pull request:
 
-![A screenshot of the GitHub pull request interface, where I can see a lot of reassuring green checks and messages, saying my GitHub Action has run successfully.](_all_checks_passed.png "GitHub Actions ran three successful checks.")
+![A screenshot of the GitHub pull request interface, where I can see a lot of reassuring green checks and messages, saying my GitHub Action has run successfully.](_all_checks_passed.webp "GitHub Actions ran three successful checks.")
 
 By clicking the link “show all checks” or by navigating to the tab “Actions”,
 which is right next to the tab “Pull requests”, you can see more information regarding the run.
 When we open that interface, we get an overview of all the workflows we have and the latest runs.
 On the left, we can find the workflows identified by the `name` information we defined at the top of the YAML file.
 
-![A screenshot of the GitHub Actions tab where we can see the workflow we just set up, identified by its name.](_workflow_name.png "The workflow name, as defined in the YAML file.")
+![A screenshot of the GitHub Actions tab where we can see the workflow we just set up, identified by its name.](_workflow_name.webp "The workflow name, as defined in the YAML file.")
 
 I am getting too carried away, explaining how all of this works, so let me cut to the chase:
 while I was taking a look around, I noticed that running tox had taken **zero** seconds.
@@ -1040,7 +1040,7 @@ We cannot write the token explicitly in the YAML file, so we need to create a Gi
 
 I went to PyPI, created a new token, and added it to the repository on GitHub:
 
-![A screenshot of the GitHub repository settings in the “secrets” tab, where we can see the name of a new secret called “PYPI_TOKEN”.](_gh_secrets.png "The secret “PYPI_TOKEN” on GitHub.")
+![A screenshot of the GitHub repository settings in the “secrets” tab, where we can see the name of a new secret called “PYPI_TOKEN”.](_gh_secrets.webp "The secret “PYPI_TOKEN” on GitHub.")
 
 This makes it usable from within actions.
 Here is the new action file `.github/workflows/publish.yaml`:
@@ -1092,7 +1092,7 @@ Which it did!
 To conclude this endeavour, let us finish up by adding nice badges to the README file!
 This is what we are adding:
 
-![A screenshot of the README file where we can see five neat-looking badges that give relevant information regarding the status of the project.](_readme_badges.png "Some neat README badges.")
+![A screenshot of the README file where we can see five neat-looking badges that give relevant information regarding the status of the project.](_readme_badges.webp "Some neat README badges.")
 
 To add these badges, all we need to do is add links to some images that are automatically generated for us.
 Here is the change to the README file:

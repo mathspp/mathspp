@@ -221,7 +221,7 @@ In order to know _how_ to build the AST I started by coming up with a [_grammar_
 
 After banging my head against the wall so much it started to crack,
 
-![A black and white doodle of a head against a fissured wall](./lsbasi-apl-part1-cracked-wall.png)
+![A black and white doodle of a head against a fissured wall](./lsbasi-apl-part1-cracked-wall.webp)
 
 after a lot of thought, a lot of drafting and after some help from a friendly bunch at the [APL Orchard][apl-orchard], I wrote down this grammar that is supposed to be read from right to left:
 

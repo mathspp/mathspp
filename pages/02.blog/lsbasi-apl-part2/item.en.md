@@ -42,17 +42,17 @@ So we are actually starting with refactoring the parser and the way we represent
 To make my changes easier to understand, we will study the AST generated for the simple expression `1 +⍨⍨ 2`. If you test it,
 the program will print `MOp(⍨ MOp(⍨ Dyad(+ S(1) S(2))))`, which can be drawn as:
 
-![Sketch of the AST generated for the example expression.](./old_parser_dyadic_example.png)
+![Sketch of the AST generated for the example expression.](./old_parser_dyadic_example.webp)
 
 What I don't like about this AST is that I don't know if the operator `⍨` is acting on a monadic or dyadic function until I reach the bottom of the tree, where I have my function and my two arguments. If you type the same expression `1 +⍨⍨ 2` in the new parser, the output printed is a list with the single element `Dyad(MOp(⍨ MOp(⍨ F(+))) S(1) S(2))` in it; this tree can be represented as:
 
-![Sketch of the new AST generated for the example expression.](./new_parser_dyadic_example.png)
+![Sketch of the new AST generated for the example expression.](./new_parser_dyadic_example.webp)
 
 With the new tree I have clearly separated the issue of finding the function I will apply from the arguments to which the function will be applied. I am also guessing this will make it easier to later implement things like [trains][apl-wiki-trains] and assigning functions to variables.
 
 I challenge you to modify the AST nodes and the parser yourself to produce trees like these for dyadic function applications. Monadic function application undergoes a similar change, exemplified in the picture below for the expression `×⍨⍨ 6`:
 
-![Comparison of old and new ASTs for a monadic function application.](./monadic_example.png)
+![Comparison of old and new ASTs for a monadic function application.](./monadic_example.webp)
 
 ## The code
 

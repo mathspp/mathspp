@@ -339,7 +339,7 @@ for q in questions:
 
 Running the simulation with the default values set in that code should produce a plot similar to this one:
 
-![Screenshot of the plot from the streamlit simulation demo.](_simulation_demo.png "Plot showing question rating.")
+![Screenshot of the plot from the streamlit simulation demo.](_simulation_demo.webp "Plot showing question rating.")
 
 The plot that we can see above contains the final rating of each one of the questions.
 As we can see, later questions have a slightly higher rating.
@@ -471,7 +471,7 @@ while players:
 After running the simulation and playing around with the sliders,
 this is what I got:
 
-![A screenshot of a Python web app built with streamlit, containing a simulation of an Elo-based rating system.](_simulation_demo_v2.png "Screenshot of the Streamlit app.")
+![A screenshot of a Python web app built with streamlit, containing a simulation of an Elo-based rating system.](_simulation_demo_v2.webp "Screenshot of the Streamlit app.")
 
 
 # Finer control over player archetypes
