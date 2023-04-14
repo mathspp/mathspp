@@ -202,7 +202,7 @@ codeBlocks.forEach((block) => {
 
 /* Clipboard code blocks styling. */
 .clipboard-icon {
-  color: #ff00ff;
+  color: #f8f8f2;
   position: absolute;
   top: 10px;
   right: 5px;
