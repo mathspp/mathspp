@@ -155,6 +155,7 @@ codeBlocks.forEach((block) => {
         tooltip.style.right = "0";
         tooltip.style.padding = "5px";
         tooltip.style.border = "1px solid #ddd";
+        tooltip.style.border_radius = "5px";
         wrapper.appendChild(tooltip);
 
         icon.addEventListener("mouseout", () => {
