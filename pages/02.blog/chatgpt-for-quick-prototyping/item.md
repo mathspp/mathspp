@@ -129,12 +129,17 @@ codeBlocks.forEach((block) => {
     const icon = wrapper.querySelector(".fa-copy");
 
     icon.addEventListener("click", () => {
+        const range = document.createRange();
+        range.selectNodeContents(block);
+        navigator.clipboard.writeText(block.textContent);
+        /*
         const tempText = document.createElement("textarea");
         document.body.appendChild(tempText);
         tempText.value = block.textContent;
         tempText.select();
         document.execCommand("copy");
         tempText.remove();
+        */
 
         icon.classList.replace("fa-copy", "fa-check");
         setTimeout(() => {
