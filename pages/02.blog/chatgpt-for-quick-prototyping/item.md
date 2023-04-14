@@ -154,8 +154,8 @@ codeBlocks.forEach((block) => {
         tooltip.style.top = "30px";
         tooltip.style.right = "0";
         tooltip.style.padding = "5px";
-        tooltip.style.border = "1px solid #ddd";
-        tooltip.style.border_radius = "5px";
+        tooltip.style.border = "1px solid #f8f8f2";
+        tooltip.style.borderRadius = "6px";
         wrapper.appendChild(tooltip);
 
         icon.addEventListener("mouseout", () => {
