@@ -201,16 +201,11 @@ codeBlocks.forEach((block) => {
 }
 
 /* Clipboard code blocks styling. */
-.code-block-container {
-  position: relative;
-}
-
 .clipboard-icon {
   position: absolute;
   top: 10px;
   right: 5px;
   cursor: pointer;
-  font-size: 20px;
   opacity: 0;
 }
 
