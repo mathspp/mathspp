@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <script>
 document.addEventListener("DOMContentLoaded", function() {
 const codeBlocks = document.querySelectorAll("pre code");
-const copyIcon = `<i class="fas fa-copy fa-lg" style="position:absolute; top:10px; right:5px; cursor:pointer"></i>`;
+const copyIcon = `<i class="far fa-copy fa-lg" style="position:absolute; top:10px; right:5px; cursor:pointer"></i>`;
 
 codeBlocks.forEach((block) => {
     const wrapper = document.createElement("div");
