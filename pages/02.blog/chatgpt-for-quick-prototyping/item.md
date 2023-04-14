@@ -213,7 +213,7 @@ codeBlocks.forEach((block) => {
   opacity: 0.3;
 }
 
-pre > div > i.clipboard-icon {
+pre:hover > div > i.clipboard-icon {
   opacity: 1;
 }
 </style>
