@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <script>
 document.addEventListener("DOMContentLoaded", function() {
 const codeBlocks = document.querySelectorAll("pre code");
-const copyIcon = `<i class="far fa-copy fa-lg" style="position:absolute; top:10px; right:5px; cursor:pointer"></i>`;
+const copyIcon = `<i class="far fa-copy fa-lg clipboard-icon"></i>`;
 
 codeBlocks.forEach((block) => {
     const wrapper = document.createElement("div");
@@ -206,11 +206,15 @@ codeBlocks.forEach((block) => {
 
 .clipboard-icon {
   position: absolute;
-  top: 5px;
+  top: 10px;
   right: 5px;
   cursor: pointer;
   font-size: 20px;
-  opacity: 0.7;
+  opacity: 0.3;
+}
+
+pre code > .clipboard-icon {
+  opacity: 1;
 }
 
 .clipboard-icon:hover {
