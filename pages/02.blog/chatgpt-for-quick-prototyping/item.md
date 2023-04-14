@@ -210,7 +210,7 @@ codeBlocks.forEach((block) => {
   right: 5px;
   cursor: pointer;
   font-size: 20px;
-  opacity: 0.3;
+  opacity: 0;
 }
 
 pre:hover > div > i.clipboard-icon {
