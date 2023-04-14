@@ -141,9 +141,9 @@ codeBlocks.forEach((block) => {
         tempText.remove();
         */
 
-        icon.classList.replace("fa-copy", "fa-check-square");
+        icon.classList.replace("fa-copy", "fa-check");
         setTimeout(() => {
-            icon.classList.replace("fa-check-square", "fa-copy");
+            icon.classList.replace("fa-check", "fa-copy");
         }, 2000);
     });
 
