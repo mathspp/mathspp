@@ -438,3 +438,17 @@ table th, table td {
 tbody tr:nth-child(even) {
     background: #1e1f1f; /* Same colour as footer. */
 }
+
+/* Customise the icons to copy the code blocks to the clipboard. */
+.clipboard-icon {
+    color: #f8f8f2;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+pre:hover > div > i.clipboard-icon {
+    opacity: 1;
+}
