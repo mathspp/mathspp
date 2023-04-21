@@ -29,17 +29,17 @@
   <text xml:space="preserve" x="295.078" y="1038.512" font-family="Arial" font-size="16" font-weight="400" style="text-align:start;line-height:100%" transform="translate(35.5 -937.862)"><tspan x="295.078" y="1038.512">8</tspan></text>
   <text xml:space="preserve" x="335.07" y="1038.512" font-family="Arial" font-size="16" font-weight="400" style="text-align:start;line-height:100%" transform="translate(35.5 -937.862)"><tspan x="335.07" y="1038.512">9</tspan></text>
   <text xml:space="preserve" x="370.109" y="1038.512" font-family="Arial" font-size="16" font-weight="400" style="text-align:start;line-height:100%" transform="translate(35.5 -937.862)"><tspan x="370.109" y="1038.512">10</tspan></text>
-  <g fill-rule="evenodd">
+  <g>
     <path d="M55.031 74.513v1H84v-1H55.031z"/>
     <path stroke="#f8f8f2" color="#f8f8f2" stroke-width=".4pt" d="M57.005 74.998a2 2 0 1 1-4.001-.002 2 2 0 0 1 4.001.002z"/>
     <path d="m73.31 70.56 12.018 4.42-12.019 4.42c1.92-2.61 1.91-6.18 0-8.84z" font-size="12"/>
   </g>
-  <g fill-rule="evenodd">
+  <g>
     <path d="M55 54.513v1h70v-1H55z"/>
     <path stroke="#f8f8f2" color="#f8f8f2" stroke-width=".4pt" d="M56.96 54.998a2 2 0 1 1-4.001-.002 2 2 0 0 1 4.001.002z"/>
     <path d="m114.31 50.56 12.018 4.42-12.018 4.42c1.92-2.61 1.909-6.18 0-8.84z" font-size="12"/>
   </g>
-  <g fill-rule="evenodd">
+  <g>
     <path d="M55 34.513v1h110v-1H55z"/>
     <path stroke="#f8f8f2" color="#f8f8f2" stroke-width=".4pt" d="M56.96 34.998a2 2 0 1 1-4.001-.002 2 2 0 0 1 4.001.002z"/>
     <path d="m154.31 30.56 12.018 4.42-12.018 4.42c1.92-2.61 1.909-6.18 0-8.84z" font-size="12"/>
