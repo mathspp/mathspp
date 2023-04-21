@@ -1,0 +1,20 @@
+date: 21-04-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned about the skip list data structure."
+    og:image: https://mathspp.com/blog/til/skip-list-data-structure/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/skip-list-data-structure/thumbnail.webp
+references:
+    - Wikipedia, Skip list [https://en.wikipedia.org/wiki/Skip_list](https://en.wikipedia.org/wiki/Skip_list) [last accessed 21-04-2023];"
+routes:
+    aliases:
+        - "/blog/til/059"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - algorithms
+      - data structures
+      - programming
+      - python
+title: "TIL #059 – skip list data structure"
+visible: false
