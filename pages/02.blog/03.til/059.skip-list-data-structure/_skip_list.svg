@@ -126,7 +126,7 @@
     <path stroke="#f8f8f2" color="#f8f8f2" fill="#f8f8f2" d="m434.31 30.563 12.018 4.42-12.018 4.419c1.92-2.61 1.909-6.18 0-8.84z" font-size="12"/>
   </g>
   <path fill="#282a36" stroke="#f8f8f2" color="#f8f8f2" d="M-30.5 942.862h20v20h-20zm0 20h20v20h-20zm0 20h20v20h-20zm0 20h20v20h-20z" overflow="visible" style="marker:none" transform="translate(35.5 -937.862)"/>
-  <text fill="#f8f8f2" stroke="#f8f8f2" xml:space="preserve" x="-32.708" y="1036.735" font-family="Arial" font-size="15" font-weight="400" style="text-align:start;line-height:100%" transform="translate(35.5 -937.862)"><tspan x="-32.708" y="1036.735">head</tspan></text>
+  <text fill="#f8f8f2" stroke="#f8f8f2" xml:space="preserve" x="-32.708" y="1036.735" font-family="Arial" font-size="18" font-weight="400" style="text-align:start;line-height:100%" transform="translate(35.5 -937.862)"><tspan x="-32.708" y="1036.735">H</tspan></text>
   <text fill="#f8f8f2" stroke="#f8f8f2" xml:space="preserve" x="411.517" y="956.441" font-family="Arial" font-size="10" font-weight="400" style="text-align:start;line-height:100%" transform="translate(35.5 -937.862)"><tspan x="411.517" y="956.441">NIL</tspan></text>
   <path fill="#282a36" stroke="#f8f8f2" color="#f8f8f2" d="M409.5 962.862h20v20h-20z" overflow="visible" style="marker:none" transform="translate(35.5 -937.862)"/>
   <text fill="#f8f8f2" stroke="#f8f8f2" xml:space="preserve" x="411.517" y="976.441" font-family="Arial" font-size="10" font-weight="400" style="text-align:start;line-height:100%" transform="translate(35.5 -937.862)"><tspan x="411.517" y="976.441">NIL</tspan></text>
