@@ -104,7 +104,7 @@
     <path stroke="#f8f8f2" color="#f8f8f2" stroke-width=".4pt" d="M176.96 34.998a2 2 0 1 1-4.001-.002 2 2 0 0 1 4.001.002z"/>
     <path d="m234.31 30.56 12.018 4.42-12.018 4.42c1.92-2.61 1.909-6.18 0-8.84z" font-size="12"/>
   </g>
-  <path fill="#282a36" stroke="#f8f8f2" color="#f8f8f2" d="M409.5 942.862h20v20h-20z" color="#f8f8f2" overflow="visible" style="marker:none" transform="translate(35.5 -937.862)"/>
+  <path fill="#282a36" stroke="#f8f8f2" color="#f8f8f2" d="M409.5 942.862h20v20h-20z" overflow="visible" style="marker:none" transform="translate(35.5 -937.862)"/>
   <g fill-rule="evenodd">
     <path d="M375 54.5v1h70v-1h-70z"/>
     <path stroke="#f8f8f2" color="#f8f8f2" stroke-width=".4pt" d="M376.96 55a2 2 0 1 1-4.001-.001 2 2 0 0 1 4.001.001z"/>
