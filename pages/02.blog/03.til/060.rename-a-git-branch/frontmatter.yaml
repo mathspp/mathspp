@@ -1,0 +1,16 @@
+date: 21-04-2023 16:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to rename a git branch from the CLI."
+    og:image: https://mathspp.com/blog/til/rename-a-git-branch/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/rename-a-git-branch/thumbnail.webp
+routes:
+    aliases:
+        - "/blog/til/060"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - github
+      - programming
+title: "TIL #060 – how to rename a git branch"
+visible: false
