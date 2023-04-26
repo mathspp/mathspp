@@ -1,4 +1,5 @@
-date: 
+published: false
+date: 31-12-2023
 metadata:
     author: Rodrigo Girão Serrão
     description: "Learn how to use exception handling in Python effectively with the `try` block and the statements `except`, `else`, and `finally`."
