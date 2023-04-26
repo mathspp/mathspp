@@ -2,8 +2,8 @@ date: 31-07-2022
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned how to edit multiple lines in the VS Code code editor."
-    og:image: https://mathspp.com/blog/til/049/thumbnail.webp
-    twitter:image: https://mathspp.com/blog/til/049/thumbnail.webp
+    og:image: https://mathspp.com/blog/til/edit-multiple-file-locations-in-vscode/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/edit-multiple-file-locations-in-vscode/thumbnail.webp
 routes:
     aliases:
         - "/blog/til/049"
@@ -13,5 +13,6 @@ taxonomy:
       - json
       - programming
       - python
+      - vscode
 title: "TIL #049 – edit multiple file locations in VS Code"
 visible: false
