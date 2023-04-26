@@ -1,0 +1,17 @@
+date: 26-04-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to use the VS Code debugger in code from “other” modules."
+    og:image: https://mathspp.com/blog/til/debugging-other-modules-in-vs-code/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/debugging-other-modules-in-vs-code/thumbnail.webp
+routes:
+    aliases:
+        - "/blog/til/061"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - vs code
+      - programming
+      - python
+title: "TIL #061 – debugging other modules in VS Code"
+visible: false
