@@ -2,7 +2,7 @@
 title: Home
 ---
 
-![](theme://images/logo/logo.webp)
+![](theme://images/logo/logo.webp?scale=0.3)
 
 # Mathspp
 
