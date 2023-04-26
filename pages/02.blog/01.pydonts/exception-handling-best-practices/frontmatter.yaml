@@ -1,0 +1,16 @@
+date: 
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Learn how to use exception handling in Python effectively with the `try` block and the statements `except`, `else`, and `finally`."
+    og:image: "https://mathspp.com/blog/pydonts/exception-handling-best-practices/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/pydonts/exception-handling-best-practices/thumbnail.png"
+references:
+    - "Python 3 Documentation, The Python Tutorial, Errors and Exceptions, [https://docs.python.org/3/tutorial/errors.html](https://docs.python.org/3/tutorial/errors.html) [last accessed 14-3-2023];"
+    - "Gui Commits, Handling exceptions in Python like a Pro 🐍💣, [https://guicommits.com/handling-exceptions-in-python-like-a-pro/](https://guicommits.com/handling-exceptions-in-python-like-a-pro/) [last accessed 14-3-2023];"
+slug: "exception-handling-best-practices"
+taxonomy:
+    category: [blogpost, pydont]
+    tag:
+      - "programming"
+      - "python"
+title: "Exception handling best practices | Pydon't 🐍"

@@ -1,0 +1,14 @@
+date: XXX
+metadata:
+    author: "Rodrigo Girão Serrão"
+    description: "XXX"
+    og:image: "https://mathspp.com/blog/chatgpt-for-python-programmers/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/chatgpt-for-python-programmers/thumbnail.png"
+slug: "chatgpt-for-python-programmers"
+taxonomy:
+    category: "blogpost"
+    tag:
+      - "chatgpt"
+      - "programming"
+      - "python"
+title: Your first recurrent neural network (RNN)
