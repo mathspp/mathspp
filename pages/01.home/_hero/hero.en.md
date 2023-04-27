@@ -2,8 +2,6 @@
 title: Home
 ---
 
-![](./home_hero.svg)
-
 # Mathspp
 
-## Empowering you through technology
+## Take your Python 🐍 skills to the next level 🚀
