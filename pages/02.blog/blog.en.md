@@ -1,4 +1,5 @@
 ---
+hero: hero.webp
 menu: Blog
 title: Mathspp Blog
 ---
