@@ -2,6 +2,6 @@
 title: Home
 ---
 
-# Mathspp
+![](logo_home.svg)
 
-## Take your Python 🐍 skills to the next level 🚀
+# Take your Python 🐍 skills to the next level 🚀
