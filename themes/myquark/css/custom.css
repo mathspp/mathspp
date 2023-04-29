@@ -452,3 +452,7 @@ tbody tr:nth-child(even) {
 pre:hover > div > i.clipboard-icon {
     opacity: 1;
 }
+
+.home-logo {
+    max-height: 30vh;
+}
