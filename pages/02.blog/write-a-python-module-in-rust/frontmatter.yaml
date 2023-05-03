@@ -1,0 +1,20 @@
+date: 03-05-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Learn how to write your first Python module in Rust."
+    og:image: "https://mathspp.com/blog/write-a-python-module-in-rust/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/write-a-python-module-in-rust/thumbnail.webp"
+references:
+    - "Rust documentation, [https://www.rust-lang.org/learn](https://www.rust-lang.org/learn) [last accessed 03-05-2023];"
+    - "“The Rust Programming Language”, Data Types, [https://doc.rust-lang.org/book/ch03-02-data-types.html](https://doc.rust-lang.org/book/ch03-02-data-types.html) [last accessed 03-05-2023];"
+    - "PyO3, [https://github.com/PyO3/pyo3#using-rust-from-python](https://github.com/PyO3/pyo3#using-rust-from-python) [last accessed 03-05-2023];"
+    - "PyO3 documentation, Mapping of Rust types to Python types, [https://pyo3.rs/v0.18.0/conversions/tables](https://pyo3.rs/v0.18.0/conversions/tables) [last accessed 03-05-2023];"
+    - "“How to write Python extensions in Rust with PyO3, [https://www.infoworld.com/article/3687744/how-to-write-python-extensions-in-rust-with-pyo3.html](https://www.infoworld.com/article/3687744/how-to-write-python-extensions-in-rust-with-pyo3.html) [last accessed 03-05-2023];"
+slug: "write-a-python-module-in-rust"
+taxonomy:
+    category: [blogpost]
+    tag:
+      - "programming"
+      - "python"
+      - "rust"
+title: "Write a Python module in Rust"
