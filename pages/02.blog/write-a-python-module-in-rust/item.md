@@ -134,7 +134,7 @@ fn rust_factorial(_py: Python, m: &PyModule) -> PyResult<()> {
 }
 ```
 
-Now, running `maturin` develop should enable you to use this factorial function:
+Now, running `maturin develop` should enable you to use this factorial function:
 
 ```bash
 $ maturin develop
