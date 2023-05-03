@@ -10,7 +10,7 @@ references:
     - "Overleaf Documentation, [https://www.overleaf.com/learn](https://www.overleaf.com/learn) [last accessed 22-03-2023];"
 slug: "write-your-thesis-in-latex"
 taxonomy:
-    category: [blogpost, pydont]
+    category: [blogpost]
     tag:
       - "productivity"
 title: "Write your thesis in LaTeX"

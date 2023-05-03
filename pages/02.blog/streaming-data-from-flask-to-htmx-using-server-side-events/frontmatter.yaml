@@ -10,7 +10,7 @@ references:
     - "“Server-sent events in Flask without extra dependencies”, [https://maxhalford.github.io/blog/flask-sse-no-deps/](https://maxhalford.github.io/blog/flask-sse-no-deps/) [last accessed 23-03-2023]"
 slug: "streaming-data-from-flask-to-htmx-using-server-side-events"
 taxonomy:
-    category: [blogpost, pydont]
+    category: [blogpost]
     tag:
       - "flask"
       - "programming"
