@@ -77,7 +77,7 @@ For your convenience, the contents of my script at the time of writing this blog
 [YAML]: https://en.wikipedia.org/wiki/YAML
 [xkcd]: https://xkcd.com
 [yamlutils]: https://github.com/RodrigoGiraoSerrao/projects/tree/master/yamlutils
-[yamlutils-post]: https://github.com/RodrigoGiraoSerrao/mathspp/tree/master/pages/02.blog/yamlutils
+[yamlutils-post]: https://github.com/mathspp/mathspp/tree/master/pages/02.blog/yamlutils
 [yamlutils.py]: https://github.com/RodrigoGiraoSerrao/projects/tree/master/yamlutils/yamlutils.py
 [bug-1]: https://github.com/mathspp/mathspp/commit/6ac01f412bdd099eb673201689d89ea77d0370d0
 [bug-2]: https://github.com/mathspp/mathspp/commit/e97dbad13ffc6009d1160b78a83cab467b42f1ca
