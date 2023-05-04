@@ -1363,8 +1363,8 @@ feel free to leave a comment below!
 [pre-commit]: https://pre-commit.com/
 [scriv]: https://pypi.org/project/scriv/
 [tox]: https://tox.wiki/en/latest/
-[tox-pyproject]: https://tox.wiki/en/latest/example/basic.html#pyproject-toml-tox-legacy-ini
-[tox-packaging]: https://tox.wiki/en/latest/example/package.html
+[tox-pyproject]: https://tox.wiki/en/3.26.0/example/basic.html#pyproject-toml-tox-legacy-ini
+[tox-packaging]: https://tox.wiki/en/3.26.0/example/package.html
 [coverage-docs]: https://coverage.readthedocs.io/en/6.4.1/index.html
 [gh-actions-docs]: https://docs.github.com/en/actions
 [Codecov]: https://about.codecov.io/
