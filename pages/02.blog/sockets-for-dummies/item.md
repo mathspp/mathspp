@@ -554,23 +554,23 @@ Now we get the error “301 Moved Permanently”, along with the information `Lo
 so it must be related to the fact that the official Python website uses HTTPS only.
 Alright, let's try looking for a website that still allows HTTP, then...
 
-After a bit of googling, I found the website [http://ptsv2.com/](http://ptsv2.com/),
+After a bit of googling, I found the website [http://httpforever.com](http://httpforever.com),
 that looks like a website that won't force you to use HTTPS anytime soon.
 
 ! This is true at the time of writing.
 ! If you are reading this in the future (you are!) and the website no longer exists/
 ! accepts HTTP, feel free to leave a comment with a suggestion of another website,
-! or just replace all occurrences of “http://ptsv2.com/” below with another website you pick.
+! or just replace all occurrences of “http://httpforever.com” below with another website you pick.
 
 So, what we need to do now is update the variable `msg` and try again.
 
 ```py
 >>> msg = b"""GET / HTTP/1.1
-... Host: ptsv2.com
+... Host: httpforever.com
 ...
 ... """
 >>> client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
->>> client.connect(("ptsv2.com", 80))
+>>> client.connect(("httpforever.com", 80))
 >>> client.send(msg)
 32
 >>> data = client.recv(999_999)
@@ -580,18 +580,15 @@ So, what we need to do now is update the variable `msg` and try again.
 ```
 ```txt
 HTTP/1.1 200 OK
-Content-Type: text/html; charset=utf-8
-Vary: Accept-Encoding
-X-Cloud-Trace-Context: 6f4d016104760832fda81a9edc07f832
-Date: Tue, 04 Jan 2022 19:51:02 GMT
-Server: Google Frontend
-Content-Length: 4602
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-
+Server: nginx/1.18.0 (Ubuntu)
+Date: Thu, 04 May 2023 21:40:05 GMT
+Content-Type: text/html
+Content-Length: 5124
+Last-Modified: Wed, 22 Mar 2023 14:54:48 GMT
+Connection: keep-alive
+ETag: "641b16b8-1404"
+Referrer-Policy: strict-origin-when-cross-origin
+X-Content-Type-Options: n
 ```
 
 This does look like a valid response, and that's because it is!
