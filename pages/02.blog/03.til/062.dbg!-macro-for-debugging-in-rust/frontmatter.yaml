@@ -1,7 +1,7 @@
 date: 05-05-2023
 metadata:
     author: Rodrigo Girão Serrão
-    description: "Today I learned how to use the `dbg!` macro and the `Debug` trait in Rust."
+    description: "Today I learned why I should use the `dbg!` macro instead of the `println!` macro for debugging in Rust."
     og:image: https://mathspp.com/blog/til/dbg!-macro-for-debugging-in-rust/thumbnail.webp
     twitter:image: https://mathspp.com/blog/til/dbg!-macro-for-debugging-in-rust/thumbnail.webp
 routes:

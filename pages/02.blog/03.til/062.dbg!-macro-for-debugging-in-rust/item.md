@@ -1,4 +1,4 @@
-Today I learned how to use the `dbg!` macro and the `Debug` trait in Rust.
+Today I learned why I should use the `dbg!` macro instead of the `println!` macro for debugging in Rust.
 
 ===
 
