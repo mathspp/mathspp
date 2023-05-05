@@ -1,0 +1,17 @@
+date: 05-05-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to use the `dbg!` macro and the `Debug` trait in Rust."
+    og:image: https://mathspp.com/blog/til/dbg!-macro-for-debugging-in-rust/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/dbg!-macro-for-debugging-in-rust/thumbnail.webp
+routes:
+    aliases:
+        - "/blog/til/062"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - python
+      - rust
+title: "TIL #062 – dbg! macro for debugging in Rust"
+visible: false
