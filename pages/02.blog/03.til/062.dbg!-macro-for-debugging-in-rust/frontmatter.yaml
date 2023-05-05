@@ -11,7 +11,6 @@ taxonomy:
     category: [blogpost, til]
     tag:
       - programming
-      - python
       - rust
 title: "TIL #062 – dbg! macro for debugging in Rust"
 visible: false
