@@ -1,0 +1,16 @@
+date: 16-03-2023
+metadata:
+    author: "Rodrigo Girão Serrão"
+    description: "This is a short tutorial on how to use modal screens with Textual."
+    og:image: "https://mathspp.com/blog/how-to-use-modal-screens-in-textual/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/how-to-use-modal-screens-in-textual/thumbnail.webp"
+references:
+  - "Textual Screen API, [https://textual.textualize.io/api/screen/](https://textual.textualize.io/api/screen/) [last accessed 10-05-2023];"
+slug: "how-to-use-modal-screens-in-textual"
+taxonomy:
+    category: "blogpost"
+    tag:
+      - "programming"
+      - "python"
+      - "textual"
+title: "How to use modal screens in Textual"
