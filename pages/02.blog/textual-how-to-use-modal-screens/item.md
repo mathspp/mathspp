@@ -136,7 +136,9 @@ We will style the screen next.
 ### Make it look like a modal
 
 The first thing we will do is make the modal screen _look_ like a modal screen.
-To do this, we will wrap all the children of the modal screen in a container so that we can align them in the middle of the modal screen:
+To do this, we will wrap all the children of the modal screen in a container so that we can align them in the middle of the modal screen.
+
+By making the container have auto dimensions, we will leave “empty” space in the modal's background that will then get the default transparency style to show the screen that is “under” the modal:
 
 ```py
 ...
