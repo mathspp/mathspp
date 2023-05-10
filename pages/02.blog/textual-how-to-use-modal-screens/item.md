@@ -13,7 +13,7 @@ A modal screen is a screen that is typically used for a quick interaction with t
 
 As a quick example, here is [my TODO app][todo-blog] showing a modal to confirm exiting the app:
 
-![](./_todo_with_modal.png)
+![](./_todo_with_modal.webp)
 
 
 # Building a modal screen
@@ -74,7 +74,7 @@ if __name__ == "__main__":
 
 This already runs, although it doesn't do much:
 
-![](./_modal_demo_1.png)
+![](./_modal_demo_1.webp)
 
 
 ## Wiring up the modal
@@ -126,7 +126,7 @@ class ExitScreen(ModalScreen):
 
 Now, our modal screen works _although_ it does _not_ look like a modal screen:
 
-![](./_modal_demo_2.png)
+![](./_modal_demo_2.webp)
 
 We will style the screen next.
 
@@ -168,7 +168,7 @@ class ExitScreen(ModalScreen):
 
 This is enough to allow us to see the background screen through the modal:
 
-![](_modal_demo_3.png)
+![](_modal_demo_3.webp)
 
 Now, with a horizontal container and some CSS, we can tidy up the modal screen a bit more:
 
@@ -220,7 +220,7 @@ class ExitScreen(ModalScreen):
 
 This creates a modal screen that looks like this:
 
-![](./_modal_demo_4.png)
+![](./_modal_demo_4.webp)
 
 This already looks quite good!
 
@@ -364,7 +364,7 @@ class DummyApp(App[None]):
 If you open your app, open the modal, write something, and then press <kbd>Enter</kbd>, what you wrote should end up in the text log!
 You can do this as many times as you want:
 
-![](./_modal_result_demo.png)
+![](./_modal_result_demo.webp)
 
 
 # Conclusion
