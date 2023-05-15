@@ -1,4 +1,4 @@
-Learn how to use properties to add dynamic attribute to your attributes.
+Learn how to use properties to add dynamic behaviour to your attributes.
 
 ===
 

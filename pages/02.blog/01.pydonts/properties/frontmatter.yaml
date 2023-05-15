@@ -1,7 +1,7 @@
 date: 14-05-2023
 metadata:
     author: Rodrigo Girão Serrão
-    description: "Learn how to use properties to add dynamic attribute to your attributes."
+    description: "Learn how to use properties to add dynamic behaviour to your attributes."
     og:image: "https://mathspp.com/blog/pydonts/properties/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/pydonts/properties/thumbnail.webp"
 references:
