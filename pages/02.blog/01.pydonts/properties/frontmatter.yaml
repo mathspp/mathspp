@@ -6,7 +6,7 @@ metadata:
     twitter:image: "https://mathspp.com/blog/pydonts/properties/thumbnail.webp"
 references:
     - "Python 3 Documentation, Built-in Functions, `property`, [https://docs.python.org/3/library/functions.html#property](https://docs.python.org/3/library/functions.html#property) [last accessed 14-05-2023];"
-    - "Implementing `@property`, `@staticmethod` and `@classmethod` from scratch, [https://tushar.lol/post/descriptors/](https://tushar.lol/post/descriptors/) [last accessed 11-03-2023];"
+    - "Implementing `@property`, `@staticmethod` and `@classmethod` from scratch, [https://tushar.lol/post/descriptors/](https://tushar.lol/post/descriptors/) [last accessed 11-05-2023];"
 slug: "properties"
 taxonomy:
     category: [blogpost, pydont]
