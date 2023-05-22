@@ -230,7 +230,7 @@ class Person:
         current_year = today.year
         # Will the person still celebrate their birthday this current year?
         will_celebrate = self.birthdate.replace(year=current_year) > today
-        self.age = current_year - self.birthdate.year - will_celebrate
+        return current_year - self.birthdate.year - will_celebrate
 
     @property
     def name(self):
