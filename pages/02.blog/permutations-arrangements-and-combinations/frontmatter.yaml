@@ -1,0 +1,12 @@
+date: 06-06-2021
+metadata:
+    author: "Rodrigo Girão Serrão"
+    og:image: "https://mathspp.com/blog/permutations-arrangements-and-combinations/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/permutations-arrangements-and-combinations/thumbnail.png"
+never_cache_twig: true
+slug: "permutations-arrangements-and-combinations"
+taxonomy:
+    category: "blogpost"
+    tag:
+      - "combinatorics"
+      - "mathematics"
