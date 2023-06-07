@@ -1,0 +1,16 @@
+date: 03-02-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to disassemble Python code with the module `dis`."
+    og:image: https://mathspp.com/blog/til/030/thumbnail.png
+    twitter:image: https://mathspp.com/blog/til/030/thumbnail.png
+references:
+  - "Python 3 Documentation, The Python Standard Library, `dis`, [https://docs.python.org/3/library/dis](https://docs.python.org/3/library/dis) [last accessed 03-02-2022];"
+  - "“How should I understand the output of dis.dis?”, Stack Overflow, [https://stackoverflow.com/a/12673195/2828287](https://stackoverflow.com/a/12673195/2828287) [last accessed 03-02-2022];"
+slug: "030"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - python
+title: "TIL #030 – disassemble Python."
