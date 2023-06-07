@@ -1,0 +1,889 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     36463,        879]
+NotebookOptionsPosition[     34482,        840]
+NotebookOutlinePosition[     34885,        856]
+CellTagsIndexPosition[     34842,        853]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"3", " ", "+", " ", "3"}]], "Input",
+ CellChangeTimes->{{3.845051775306944*^9, 3.8450517756427717`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"f4934d21-3c8e-4ede-b968-ff5bb1d74883"],
+
+Cell[BoxData["6"], "Output",
+ CellChangeTimes->{3.8450517763425984`*^9, 3.8450518888118954`*^9, 
+  3.845051945694507*^9, 3.845052196648831*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"a4e0c7e2-2269-4cb2-816d-ed688161f6fb"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "Integrate"}]], "Input",
+ CellChangeTimes->{{3.8450517792560816`*^9, 3.8450517827550583`*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"1b5e868c-6f37-4dee-9b2d-5122a5f848e9"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   FrameBox[
+    DynamicModuleBox[{System`InformationDump`open$$ = False, 
+     System`InformationDump`mouseOver$$ = False}, 
+     PaneSelectorBox[{True->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False,
+             BaseStyle -> None],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"]], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"]]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/Integrate",
+              ButtonNote->"paclet:ref/Integrate"],
+             "\"paclet:ref/Integrate\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"Integrate\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"f\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"x\\\", \
+\\\"TI\\\"]}], \\\"]\\\"}]\\) gives the indefinite integral \\!\\(\\*RowBox[{\
+\\\"\[Integral]\\\", RowBox[{\\\"f\\\", \\\" \\\", \\\"d\\\", \\\"\
+\[InvisibleSpace]\\\", \\\"x\\\"}]}]\\). \
+\\n\\!\\(\\*RowBox[{\\\"Integrate\\\", \\\"[\\\", RowBox[{StyleBox[\\\"f\\\", \
+\\\"TI\\\"], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{StyleBox[\\\"x\\\", \\\"TI\
+\\\"], \\\",\\\", SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], \
+StyleBox[\\\"min\\\", \\\"TI\\\"]], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], StyleBox[\\\"max\\\", \
+\\\"TI\\\"]]}], \\\"}\\\"}]}], \\\"]\\\"}]\\) gives the definite integral \\!\
+\\(\\*RowBox[{SubsuperscriptBox[\\\"\[Integral]\\\", SubscriptBox[\\\"x\\\", \
+StyleBox[\\\"min\\\", \\\"TI\\\"]], SubscriptBox[\\\"x\\\", \
+StyleBox[\\\"max\\\", \\\"TI\\\"]]], \\\" \\\", RowBox[{\\\"f\\\", \\\" \\\", \
+\\\"d\\\", \\\"\[InvisibleSpace]\\\", \\\"x\\\"}]}]\\). \
+\\n\\!\\(\\*RowBox[{\\\"Integrate\\\", \\\"[\\\", RowBox[{StyleBox[\\\"f\\\", \
+\\\"TI\\\"], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{StyleBox[\\\"x\\\", \\\"TI\
+\\\"], \\\",\\\", SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], \
+StyleBox[\\\"min\\\", \\\"TI\\\"]], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], StyleBox[\\\"max\\\", \
+\\\"TI\\\"]]}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{StyleBox[\\\"y\\\", \\\"TI\\\"], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"y\\\", \\\"TI\\\"], StyleBox[\\\"min\\\", \
+\\\"TI\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"y\\\", \\\"TI\\\"], \
+StyleBox[\\\"max\\\", \\\"TI\\\"]]}], \\\"}\\\"}], \\\",\\\", StyleBox[\\\"\
+\[Ellipsis]\\\", \\\"TR\\\"]}], \\\"]\\\"}]\\) gives the multiple integral \
+\\!\\(\\*RowBox[{SubsuperscriptBox[\\\"\[Integral]\\\", \
+SubscriptBox[\\\"x\\\", StyleBox[\\\"min\\\", \\\"TI\\\"]], \
+SubscriptBox[\\\"x\\\", StyleBox[\\\"max\\\", \\\"TI\\\"]]], \
+RowBox[{\\\"d\\\", \\\"\[InvisibleSpace]\\\", \\\"x\\\", \
+RowBox[{SubsuperscriptBox[\\\"\[Integral]\\\", SubscriptBox[\\\"y\\\", \
+StyleBox[\\\"min\\\", \\\"TI\\\"]], SubscriptBox[\\\"y\\\", \
+StyleBox[\\\"max\\\", \\\"TI\\\"]]], RowBox[{\\\"d\\\", \\\"\[InvisibleSpace]\
+\\\", \\\"y\\\", \\\" \\\", \\\"\[Ellipsis]\\\", \\\" \\\", \\\"f\\\"}]}]}]}]\
+\\). \\n\\!\\(\\*RowBox[{\\\"Integrate\\\", \\\"[\\\", RowBox[{StyleBox[\\\"f\
+\\\", \\\"TI\\\"], \\\",\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{StyleBox[\\\"x\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"y\\\", \
+\\\"TI\\\"], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \\\"TR\\\"]}], \
+\\\"}\\\"}], \\\"\[Element]\\\", StyleBox[\\\"reg\\\", \\\"TI\\\"]}]}], \\\"]\
+\\\"}]\\) integrates over the geometric region \\!\\(\\*StyleBox[\\\"reg\\\", \
+\\\"TI\\\"]\\).\"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          PaneBox[GridBox[{
+             {
+              
+              DynamicModuleBox[{System`InformationDump`open$$ = {
+               False, False, False, False, False, False}}, 
+               StyleBox[GridBox[{
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Documentation\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Documentation\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Documentation", "Tooltip"]& ], 
+                   TemplateBox[{
+                    
+                    TemplateBox[{
+                    "\"Local \[RightGuillemet]\"", "paclet:ref/Integrate", 
+                    "paclet:ref/Integrate", "Link", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"], "\"  \"", 
+                    StyleBox[
+                    "\"|\"", "InformationRowLabel", StripOnInput -> False], 
+                    "\"  \"", 
+                    TemplateBox[{"\"Web \[RightGuillemet]\"", {
+                    URL[
+                    "http://reference.wolfram.com/language/ref/Integrate.\
+html"], None}, "http://reference.wolfram.com/language/ref/Integrate.html", 
+                    "Hyperlink", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"]},
+                    "RowDefault"]},
+                  {
+                   PaneSelectorBox[{True->
+                    ButtonBox[
+                    PaneSelectorBox[{False->
+                    TemplateBox[{"\[ThickSpace]", "\"\[ThickSpace]\"", 
+                    StyleBox[
+                    "\"Options\"", "InformationRowLabel", StripOnInput -> 
+                    False], 
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "DownPointerOpener"]]},
+                    "RowWithSeparators"], True->
+                    TemplateBox[{"\[ThickSpace]", "\"\[ThickSpace]\"", 
+                    StyleBox[
+                    "\"Options\"", "InformationRowLabel", StripOnInput -> 
+                    False], 
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "DownPointerOpenerHot"]]},
+                    "RowWithSeparators"]}, Dynamic[
+                    CurrentValue["MouseOver"]],
+                    FrameMargins->0,
+                    ImageSize->Automatic],
+                    Appearance->None,
+                    BaseStyle->None,
+                    
+                    ButtonFunction:>(Part[System`InformationDump`open$$, 3] = 
+                    False),
+                    Evaluator->Automatic,
+                    FrameMargins->0,
+                    ImageMargins->0,
+                    Method->"Preemptive"], False->
+                    ButtonBox[
+                    PaneSelectorBox[{False->
+                    TemplateBox[{"\[ThickSpace]", "\"\[ThickSpace]\"", 
+                    StyleBox[
+                    "\"Options\"", "InformationRowLabel", StripOnInput -> 
+                    False], 
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "RightPointerOpener"]]},
+                    "RowWithSeparators"], True->
+                    TemplateBox[{"\[ThickSpace]", "\"\[ThickSpace]\"", 
+                    StyleBox[
+                    "\"Options\"", "InformationRowLabel", StripOnInput -> 
+                    False], 
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "RightPointerOpenerHot"]]},
+                    "RowWithSeparators"]}, Dynamic[
+                    CurrentValue["MouseOver"]],
+                    FrameMargins->0,
+                    ImageSize->Automatic],
+                    Appearance->None,
+                    BaseStyle->None,
+                    
+                    ButtonFunction:>(Part[System`InformationDump`open$$, 3] = 
+                    True),
+                    Evaluator->Automatic,
+                    FrameMargins->0,
+                    ImageMargins->0,
+                    Method->"Preemptive"]}, Dynamic[
+                    FEPrivate`Part[System`InformationDump`open$$, 3]]], 
+                   PaneSelectorBox[{True->GridBox[{
+                    {
+                    RowBox[{"Assumptions", "\[RuleDelayed]", "$Assumptions"}]},
+                    {
+                    RowBox[{"GenerateConditions", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"GeneratedParameters", "\[Rule]", "None"}]},
+                    {
+                    RowBox[{"PrincipalValue", "\[Rule]", "False"}]},
+                    {
+                    StyleBox[
+                    
+                    TemplateBox[{
+                    "\"(\"", "\"\[InvisibleSpace]\"", "4", "\" total)\""},
+                    "RowDefault"], "InformationRowOpener",
+                    StripOnInput->False]}
+                    },
+                    BaselinePosition->{Baseline, {1, 1}},
+                    DefaultBaseStyle->"Column",
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{1.}}}], False->
+                    RowBox[{
+                    RowBox[{"Assumptions", "\[RuleDelayed]", "$Assumptions"}],
+                     "\[ThinSpace]", 
+                    StyleBox["\<\"\[Ellipsis]\"\>", "InformationRowOpener",
+                    StripOnInput->False], "\[ThinSpace]", 
+                    StyleBox[
+                    
+                    TemplateBox[{
+                    "\"(\"", "\"\[InvisibleSpace]\"", "4", "\" total)\""},
+                    "RowDefault"], "InformationRowOpener",
+                    StripOnInput->False]}]}, Dynamic[
+                    FEPrivate`Part[System`InformationDump`open$$, 3]],
+                    BaselinePosition->Baseline,
+                    ImageSize->Automatic]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Attributes\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Attributes\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Attributes", "Tooltip"]& ], 
+                   RowBox[{"{", 
+                    RowBox[{"Protected", ",", "ReadProtected"}], "}"}]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Full Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"FullName\"",
+                    TooltipStyle->"TextStyling"],
+                    
+                    Annotation[#, "FullName", 
+                    "Tooltip"]& ], "\<\"System`Integrate\"\>"}
+                 },
+                 AutoDelete->False,
+                 GridBoxAlignment->{"Columns" -> {Right, Left}},
+                 GridBoxDividers->None,
+                 GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+                 GridBoxSpacings->{"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.8]}, 
+                    Offset[0.2]}}], "DialogStyle",
+                StripOnInput->False],
+               DynamicModuleValues:>{}]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], {
+                 Offset[0.5599999999999999]}, 
+                Offset[0.27999999999999997`]}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[3.6]}, 
+                Offset[0.2]}}],
+           FrameMargins->{{6, 6}, {6, 3}}], ""},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpener"]], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpenerHot"]]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, False],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"], False->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"],
+                ImageSizeCache->{13., {4., 9.}}], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"],
+                ImageSizeCache->{13., {4., 9.}}]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/Integrate",
+              ButtonNote->"paclet:ref/Integrate"],
+             "\"paclet:ref/Integrate\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"Integrate\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"f\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"x\\\", \
+\\\"TI\\\"]}], \\\"]\\\"}]\\) gives the indefinite integral \\!\\(\\*RowBox[{\
+\\\"\[Integral]\\\", RowBox[{\\\"f\\\", \\\" \\\", \\\"d\\\", \\\"\
+\[InvisibleSpace]\\\", \\\"x\\\"}]}]\\). \
+\\n\\!\\(\\*RowBox[{\\\"Integrate\\\", \\\"[\\\", RowBox[{StyleBox[\\\"f\\\", \
+\\\"TI\\\"], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{StyleBox[\\\"x\\\", \\\"TI\
+\\\"], \\\",\\\", SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], \
+StyleBox[\\\"min\\\", \\\"TI\\\"]], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], StyleBox[\\\"max\\\", \
+\\\"TI\\\"]]}], \\\"}\\\"}]}], \\\"]\\\"}]\\) gives the definite integral \\!\
+\\(\\*RowBox[{SubsuperscriptBox[\\\"\[Integral]\\\", SubscriptBox[\\\"x\\\", \
+StyleBox[\\\"min\\\", \\\"TI\\\"]], SubscriptBox[\\\"x\\\", \
+StyleBox[\\\"max\\\", \\\"TI\\\"]]], \\\" \\\", RowBox[{\\\"f\\\", \\\" \\\", \
+\\\"d\\\", \\\"\[InvisibleSpace]\\\", \\\"x\\\"}]}]\\). \
+\\n\\!\\(\\*RowBox[{\\\"Integrate\\\", \\\"[\\\", RowBox[{StyleBox[\\\"f\\\", \
+\\\"TI\\\"], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{StyleBox[\\\"x\\\", \\\"TI\
+\\\"], \\\",\\\", SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], \
+StyleBox[\\\"min\\\", \\\"TI\\\"]], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], StyleBox[\\\"max\\\", \
+\\\"TI\\\"]]}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{StyleBox[\\\"y\\\", \\\"TI\\\"], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"y\\\", \\\"TI\\\"], StyleBox[\\\"min\\\", \
+\\\"TI\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"y\\\", \\\"TI\\\"], \
+StyleBox[\\\"max\\\", \\\"TI\\\"]]}], \\\"}\\\"}], \\\",\\\", StyleBox[\\\"\
+\[Ellipsis]\\\", \\\"TR\\\"]}], \\\"]\\\"}]\\) gives the multiple integral \
+\\!\\(\\*RowBox[{SubsuperscriptBox[\\\"\[Integral]\\\", \
+SubscriptBox[\\\"x\\\", StyleBox[\\\"min\\\", \\\"TI\\\"]], \
+SubscriptBox[\\\"x\\\", StyleBox[\\\"max\\\", \\\"TI\\\"]]], \
+RowBox[{\\\"d\\\", \\\"\[InvisibleSpace]\\\", \\\"x\\\", \
+RowBox[{SubsuperscriptBox[\\\"\[Integral]\\\", SubscriptBox[\\\"y\\\", \
+StyleBox[\\\"min\\\", \\\"TI\\\"]], SubscriptBox[\\\"y\\\", \
+StyleBox[\\\"max\\\", \\\"TI\\\"]]], RowBox[{\\\"d\\\", \\\"\[InvisibleSpace]\
+\\\", \\\"y\\\", \\\" \\\", \\\"\[Ellipsis]\\\", \\\" \\\", \\\"f\\\"}]}]}]}]\
+\\). \\n\\!\\(\\*RowBox[{\\\"Integrate\\\", \\\"[\\\", RowBox[{StyleBox[\\\"f\
+\\\", \\\"TI\\\"], \\\",\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{StyleBox[\\\"x\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"y\\\", \
+\\\"TI\\\"], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \\\"TR\\\"]}], \
+\\\"}\\\"}], \\\"\[Element]\\\", StyleBox[\\\"reg\\\", \\\"TI\\\"]}]}], \\\"]\
+\\\"}]\\) integrates over the geometric region \\!\\(\\*StyleBox[\\\"reg\\\", \
+\\\"TI\\\"]\\).\"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"],
+               ImageSizeCache->{10., {2., 8.}}], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpenerHot"],
+               ImageSizeCache->{10., {2., 8.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, True],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]}, Dynamic[System`InformationDump`open$$],
+      BaselinePosition->Baseline,
+      FrameMargins->0,
+      ImageSize->Automatic],
+     DynamicModuleValues:>{}],
+    BaseStyle->"InformationGridFrame",
+    StripOnInput->False], "InformationGridPlain",
+   StripOnInput->False],
+  InformationData[
+   Association[
+   "ObjectType" -> "Symbol", "Usage" -> 
+    "\!\(\*RowBox[{\"Integrate\", \"[\", RowBox[{StyleBox[\"f\", \"TI\"], \",\
+\", StyleBox[\"x\", \"TI\"]}], \"]\"}]\) gives the indefinite integral \
+\!\(\*RowBox[{\"\[Integral]\", RowBox[{\"f\", \" \", \"d\", \"\
+\[InvisibleSpace]\", \"x\"}]}]\). \n\!\(\*RowBox[{\"Integrate\", \"[\", \
+RowBox[{StyleBox[\"f\", \"TI\"], \",\", RowBox[{\"{\", \
+RowBox[{StyleBox[\"x\", \"TI\"], \",\", SubscriptBox[StyleBox[\"x\", \"TI\"], \
+StyleBox[\"min\", \"TI\"]], \",\", SubscriptBox[StyleBox[\"x\", \"TI\"], \
+StyleBox[\"max\", \"TI\"]]}], \"}\"}]}], \"]\"}]\) gives the definite \
+integral \!\(\*RowBox[{SubsuperscriptBox[\"\[Integral]\", SubscriptBox[\"x\", \
+StyleBox[\"min\", \"TI\"]], SubscriptBox[\"x\", StyleBox[\"max\", \"TI\"]]], \
+\" \", RowBox[{\"f\", \" \", \"d\", \"\[InvisibleSpace]\", \"x\"}]}]\). \n\
+\!\(\*RowBox[{\"Integrate\", \"[\", RowBox[{StyleBox[\"f\", \"TI\"], \",\", \
+RowBox[{\"{\", RowBox[{StyleBox[\"x\", \"TI\"], \",\", SubscriptBox[StyleBox[\
+\"x\", \"TI\"], StyleBox[\"min\", \"TI\"]], \",\", \
+SubscriptBox[StyleBox[\"x\", \"TI\"], StyleBox[\"max\", \"TI\"]]}], \"}\"}], \
+\",\", RowBox[{\"{\", RowBox[{StyleBox[\"y\", \"TI\"], \",\", \
+SubscriptBox[StyleBox[\"y\", \"TI\"], StyleBox[\"min\", \"TI\"]], \",\", \
+SubscriptBox[StyleBox[\"y\", \"TI\"], StyleBox[\"max\", \"TI\"]]}], \"}\"}], \
+\",\", StyleBox[\"\[Ellipsis]\", \"TR\"]}], \"]\"}]\) gives the multiple \
+integral \!\(\*RowBox[{SubsuperscriptBox[\"\[Integral]\", SubscriptBox[\"x\", \
+StyleBox[\"min\", \"TI\"]], SubscriptBox[\"x\", StyleBox[\"max\", \"TI\"]]], \
+RowBox[{\"d\", \"\[InvisibleSpace]\", \"x\", RowBox[{SubsuperscriptBox[\"\
+\[Integral]\", SubscriptBox[\"y\", StyleBox[\"min\", \"TI\"]], \
+SubscriptBox[\"y\", StyleBox[\"max\", \"TI\"]]], RowBox[{\"d\", \"\
+\[InvisibleSpace]\", \"y\", \" \", \"\[Ellipsis]\", \" \", \"f\"}]}]}]}]\). \n\
+\!\(\*RowBox[{\"Integrate\", \"[\", RowBox[{StyleBox[\"f\", \"TI\"], \",\", \
+RowBox[{RowBox[{\"{\", RowBox[{StyleBox[\"x\", \"TI\"], \",\", \
+StyleBox[\"y\", \"TI\"], \",\", StyleBox[\"\[Ellipsis]\", \"TR\"]}], \"}\"}], \
+\"\[Element]\", StyleBox[\"reg\", \"TI\"]}]}], \"]\"}]\) integrates over the \
+geometric region \!\(\*StyleBox[\"reg\", \"TI\"]\).", "Documentation" -> 
+    Association[
+     "Local" -> "paclet:ref/Integrate", "Web" -> 
+      "http://reference.wolfram.com/language/ref/Integrate.html"], 
+    "OwnValues" -> None, "UpValues" -> None, "DownValues" -> None, 
+    "SubValues" -> None, "DefaultValues" -> None, "NValues" -> None, 
+    "FormatValues" -> None, 
+    "Options" -> {
+     Assumptions :> $Assumptions, GenerateConditions -> Automatic, 
+      GeneratedParameters -> None, PrincipalValue -> False}, 
+    "Attributes" -> {Protected, ReadProtected}, "FullName" -> 
+    "System`Integrate"], False]]], "Output",
+ CellChangeTimes->{3.845051783340433*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"e67c2612-2218-4eab-9e3b-33beecfd8942"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{"Sqrt", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"x", "^", "2"}], "/", "4"}], " ", "+", " ", 
+     RowBox[{"4", 
+      RowBox[{
+       RowBox[{"y", "^", "2"}], "/", "81"}]}], " ", "+", " ", "1"}], "]"}], 
+   ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", " ", 
+     RowBox[{"-", 
+      RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+     RowBox[{"Sqrt", "[", "2", "]"}]}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", " ", 
+     RowBox[{"-", 
+      RowBox[{"Sqrt", "[", 
+       RowBox[{"4", "-", 
+        RowBox[{"2", 
+         RowBox[{"x", "^", "2"}]}]}], "]"}]}], ",", " ", 
+     RowBox[{"Sqrt", "[", 
+      RowBox[{"4", "-", 
+       RowBox[{"2", 
+        RowBox[{"x", "^", "2"}]}]}], "]"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8450517864181414`*^9, 3.8450518757526827`*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"e98a32d0-9337-47f3-be44-9047dd59c08b"],
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{"Sqrt", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"x", "^", "2"}], "/", "4"}], " ", "+", " ", 
+     RowBox[{"4", 
+      RowBox[{
+       RowBox[{"y", "^", "2"}], "/", "81"}]}], " ", "+", " ", "1"}], "]"}], 
+   ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", " ", 
+     RowBox[{"-", 
+      RowBox[{"Sqrt", "[", 
+       RowBox[{"4", "-", 
+        RowBox[{"2", 
+         RowBox[{"x", "^", "2"}]}]}], "]"}]}], ",", " ", 
+     RowBox[{"Sqrt", "[", 
+      RowBox[{"4", "-", 
+       RowBox[{"2", 
+        RowBox[{"x", "^", "2"}]}]}], "]"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.845051937621172*^9, 3.845051960558625*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"8be29dcf-f166-429a-8ea6-aee66c0a8c65"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{
+     RowBox[{
+       FractionBox["1", "18"], " ", 
+       SqrtBox[
+        RowBox[{"4", "-", 
+          RowBox[{"2", " ", 
+            SuperscriptBox["x", "2"]}]}]], " ", 
+       SqrtBox[
+        RowBox[{"388", "+", 
+          RowBox[{"49", " ", 
+            SuperscriptBox["x", "2"]}]}]]}], "-", 
+     RowBox[{
+       FractionBox["9", "16"], " ", 
+       RowBox[{"(", 
+         RowBox[{"4", "+", 
+           SuperscriptBox["x", "2"]}], ")"}], " ", 
+       RowBox[{"Log", "[", 
+         RowBox[{
+           RowBox[{
+             RowBox[{"-", "4"}], " ", 
+             SqrtBox[
+              RowBox[{"4", "-", 
+                RowBox[{"2", " ", 
+                  SuperscriptBox["x", "2"]}]}]]}], "+", 
+           SqrtBox[
+            RowBox[{"388", "+", 
+              RowBox[{"49", " ", 
+                SuperscriptBox["x", "2"]}]}]]}], "]"}]}], "+", 
+     RowBox[{
+       FractionBox["9", "16"], " ", 
+       RowBox[{"(", 
+         RowBox[{"4", "+", 
+           SuperscriptBox["x", "2"]}], ")"}], " ", 
+       RowBox[{"Log", "[", 
+         RowBox[{
+           RowBox[{"4", " ", 
+             SqrtBox[
+              RowBox[{"4", "-", 
+                RowBox[{"2", " ", 
+                  SuperscriptBox["x", "2"]}]}]]}], "+", 
+           SqrtBox[
+            RowBox[{"388", "+", 
+              RowBox[{"49", " ", 
+                SuperscriptBox["x", "2"]}]}]]}], "]"}]}]}], 
+   RowBox[{
+     RowBox[{
+       RowBox[{"9", " ", 
+         RowBox[{"Re", "[", 
+           FractionBox[
+            SqrtBox[
+             RowBox[{
+               RowBox[{"-", "4"}], "-", 
+               SuperscriptBox["x", "2"]}]], 
+            SqrtBox[
+             RowBox[{"4", "-", 
+               RowBox[{"2", " ", 
+                 SuperscriptBox["x", "2"]}]}]]], "]"}]}], ">", "4"}], "||", 
+     RowBox[{
+       RowBox[{"Re", "[", 
+         FractionBox[
+          SqrtBox[
+           RowBox[{
+             RowBox[{"-", "4"}], "-", 
+             SuperscriptBox["x", "2"]}]], 
+          SqrtBox[
+           RowBox[{"4", "-", 
+             RowBox[{"2", " ", 
+               SuperscriptBox["x", "2"]}]}]]], "]"}], "<", 
+       RowBox[{"-", 
+         FractionBox["4", "9"]}]}], "||", 
+     RowBox[{
+       SqrtBox[
+        FractionBox[
+         RowBox[{"4", "+", 
+           SuperscriptBox["x", "2"]}], 
+         RowBox[{
+           RowBox[{"-", "2"}], "+", 
+           SuperscriptBox["x", "2"]}]]], "\[NotElement]", 
+       TemplateBox[{}, "Reals"]}]}]},
+  "ConditionalExpression"]], "Input",
+ CellChangeTimes->{{3.845052062819806*^9, 
+  3.8450520629842453`*^9}},ExpressionUUID->"ce57e886-4ef4-4ccc-892b-\
+7fed43175774"],
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     FractionBox["1", "18"], " ", 
+     SqrtBox[
+      RowBox[{"4", "-", 
+       RowBox[{"2", " ", 
+        SuperscriptBox["x", "2"]}]}]], " ", 
+     SqrtBox[
+      RowBox[{"388", "+", 
+       RowBox[{"49", " ", 
+        SuperscriptBox["x", "2"]}]}]]}], "-", 
+    RowBox[{
+     FractionBox["9", "16"], " ", 
+     RowBox[{"(", 
+      RowBox[{"4", "+", 
+       SuperscriptBox["x", "2"]}], ")"}], " ", 
+     RowBox[{"Log", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "4"}], " ", 
+        SqrtBox[
+         RowBox[{"4", "-", 
+          RowBox[{"2", " ", 
+           SuperscriptBox["x", "2"]}]}]]}], "+", 
+       SqrtBox[
+        RowBox[{"388", "+", 
+         RowBox[{"49", " ", 
+          SuperscriptBox["x", "2"]}]}]]}], "]"}]}], "+", 
+    RowBox[{
+     FractionBox["9", "16"], " ", 
+     RowBox[{"(", 
+      RowBox[{"4", "+", 
+       SuperscriptBox["x", "2"]}], ")"}], " ", 
+     RowBox[{"Log", "[", 
+      RowBox[{
+       RowBox[{"4", " ", 
+        SqrtBox[
+         RowBox[{"4", "-", 
+          RowBox[{"2", " ", 
+           SuperscriptBox["x", "2"]}]}]]}], "+", 
+       SqrtBox[
+        RowBox[{"388", "+", 
+         RowBox[{"49", " ", 
+          SuperscriptBox["x", "2"]}]}]]}], "]"}]}]}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", " ", 
+     RowBox[{"-", 
+      RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", 
+     RowBox[{"Sqrt", "[", "2", "]"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.845052113850278*^9, 3.845052122161487*^9}, {
+  3.8450521819445877`*^9, 3.845052183516446*^9}, {3.8450522778841486`*^9, 
+  3.8450522806893415`*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"9c90ef19-c012-46c1-878a-c245a287793a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   FractionBox["8", "27"], " ", 
+   SqrtBox[
+    FractionBox["2", "97"]], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"97", " ", 
+      RowBox[{"EllipticE", "[", 
+       RowBox[{"-", 
+        FractionBox["49", "194"]}], "]"}]}], "+", 
+     RowBox[{"243", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"EllipticK", "[", 
+         RowBox[{"-", 
+          FractionBox["49", "194"]}], "]"}], "-", 
+        RowBox[{"EllipticPi", "[", 
+         RowBox[{
+          RowBox[{"-", 
+           FractionBox["1", "2"]}], ",", 
+          RowBox[{"-", 
+           FractionBox["49", "194"]}]}], "]"}]}], ")"}]}]}], ")"}]}], "//", 
+  "N"}]], "Input",
+ CellChangeTimes->{{3.845052512392562*^9, 3.845052512781408*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"3876b255-57a4-40f3-829e-6307223067c1"],
+
+Cell[BoxData["9.6175159773261`"], "Output",
+ CellChangeTimes->{3.8450525132593217`*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"d264d2ea-e17c-404c-bcaa-348bf6b8da1c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"(", "9", ")"}], "*", 
+   RowBox[{"(", 
+    RowBox[{"2", 
+     RowBox[{"Pi", "/", "3"}], 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"2", "^", 
+        RowBox[{"(", 
+         RowBox[{"3", "/", "2"}], ")"}]}], " ", "-", " ", "1"}], ")"}]}], 
+    ")"}]}], "//", "N"}]], "Input",
+ CellChangeTimes->{{3.845056852817672*^9, 3.8450569156226606`*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"a1c955ff-18a3-4364-8c25-4914a9414737"],
+
+Cell[BoxData["34.46503933636164`"], "Output",
+ CellChangeTimes->{{3.8450568615959253`*^9, 3.8450568782686143`*^9}, 
+   3.8450569159768667`*^9, 3.8450572349344373`*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"045f5829-b1d8-465e-a59c-002bcc16ee23"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"2", 
+  RowBox[{"Pi", "/", "3"}], 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"2", "^", 
+     RowBox[{"(", 
+      RowBox[{"3", "/", "2"}], ")"}]}], " ", "-", " ", "1"}], 
+   ")"}]}]], "Input",
+ CellChangeTimes->{3.845057284486126*^9},
+ CellLabel->"In[9]:=",ExpressionUUID->"44e8ca3a-210f-4f43-9e9b-208007567377"],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["18", "3"], " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"-", "1"}], "+", 
+    RowBox[{"2", " ", 
+     SqrtBox["2"]}]}], ")"}], " ", "\[Pi]"}]], "Input",
+ CellChangeTimes->{{3.8450583699421873`*^9, 3.845058370305483*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"18850dcb-c735-471f-a60d-5bce32cac93a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"6", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"-", "1"}], "+", 
+     RowBox[{"2", " ", 
+      SqrtBox["2"]}]}], ")"}], " ", "\[Pi]"}], " ", "//", " ", "N"}]], "Input",
+ CellChangeTimes->{{3.845058373478568*^9, 3.8450583744162683`*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"0a718eda-6892-40a7-b9d9-de5b81e129c0"],
+
+Cell[BoxData["34.46503933636164`"], "Output",
+ CellChangeTimes->{3.8450583746945553`*^9},
+ CellLabel->"Out[11]=",ExpressionUUID->"9a92b40e-b2ce-4aed-8944-ab0e5921d5ab"]
+}, Open  ]]
+},
+WindowSize->{759, 813},
+WindowMargins->{{117, Automatic}, {Automatic, 59}},
+FrontEndVersion->"12.2 for Microsoft Windows (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"ea70a72a-32a7-4848-8618-67a2d30b7ce0"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 205, 3, 28, "Input",ExpressionUUID->"f4934d21-3c8e-4ede-b968-ff5bb1d74883"],
+Cell[788, 27, 221, 3, 32, "Output",ExpressionUUID->"a4e0c7e2-2269-4cb2-816d-ed688161f6fb"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1046, 35, 200, 3, 28, "Input",ExpressionUUID->"1b5e868c-6f37-4dee-9b2d-5122a5f848e9"],
+Cell[1249, 40, 24079, 499, 187, "Output",ExpressionUUID->"e67c2612-2218-4eab-9e3b-33beecfd8942"]
+}, Open  ]],
+Cell[25343, 542, 953, 28, 48, "Input",ExpressionUUID->"e98a32d0-9337-47f3-be44-9047dd59c08b"],
+Cell[26299, 572, 775, 23, 28, "Input",ExpressionUUID->"8be29dcf-f166-429a-8ea6-aee66c0a8c65"],
+Cell[27077, 597, 2640, 84, 145, InheritFromParent,ExpressionUUID->"ce57e886-4ef4-4ccc-892b-7fed43175774"],
+Cell[29720, 683, 1724, 55, 81, "Input",ExpressionUUID->"9c90ef19-c012-46c1-878a-c245a287793a"],
+Cell[CellGroupData[{
+Cell[31469, 742, 829, 26, 74, InheritFromParent,ExpressionUUID->"3876b255-57a4-40f3-829e-6307223067c1"],
+Cell[32301, 770, 165, 2, 32, "Output",ExpressionUUID->"d264d2ea-e17c-404c-bcaa-348bf6b8da1c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[32503, 777, 474, 14, 28, "Input",ExpressionUUID->"a1c955ff-18a3-4364-8c25-4914a9414737"],
+Cell[32980, 793, 245, 3, 32, "Output",ExpressionUUID->"045f5829-b1d8-465e-a59c-002bcc16ee23"]
+}, Open  ]],
+Cell[33240, 799, 332, 10, 28, "Input",ExpressionUUID->"44e8ca3a-210f-4f43-9e9b-208007567377"],
+Cell[33575, 811, 339, 9, 45, InheritFromParent,ExpressionUUID->"18850dcb-c735-471f-a60d-5bce32cac93a"],
+Cell[CellGroupData[{
+Cell[33939, 824, 356, 9, 34, InheritFromParent,ExpressionUUID->"0a718eda-6892-40a7-b9d9-de5b81e129c0"],
+Cell[34298, 835, 168, 2, 53, "Output",ExpressionUUID->"9a92b40e-b2ce-4aed-8944-ab0e5921d5ab"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

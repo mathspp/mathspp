@@ -1,0 +1,19 @@
+date: 04-11-2021
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "In this article I compute the total surface area of a pringle."
+    og:image: https://mathspp.com/blog/surface-area-of-a-pringle/thumbnail.png
+    twitter:image: https://mathspp.com/blog/surface-area-of-a-pringle/thumbnail.png
+process:
+    twig: true
+references:
+  - "“Creating a Pringle in GeoGebra 3D”, YouTube video, [https://www.youtube.com/watch?v=N2rUOV65bY0](https://www.youtube.com/watch?v=N2rUOV65bY0) [last accessed 04-11-2021];"
+  - "“Paul's Online Notes”, Calculus III, Multiple Integrals, Surface Area, [https://tutorial.math.lamar.edu/classes/calciii/SurfaceArea.aspx](https://tutorial.math.lamar.edu/classes/calciii/SurfaceArea.aspx) [last accessed 04-11-2021];"
+  - "“Paul's Online Notes”, Calculus III, Multiple Integrals, Change of Variables, [https://tutorial.math.lamar.edu/Classes/CalcIII/ChangeOfVariables.aspx](https://tutorial.math.lamar.edu/Classes/CalcIII/ChangeOfVariables.aspx) [last accessed 04-11-2021];"
+slug: "surface-area-of-a-pringle"
+taxonomy:
+    category: [blogpost]
+    tag:
+      - geometry
+      - mathematics
+title: "Surface area of a pringle"
