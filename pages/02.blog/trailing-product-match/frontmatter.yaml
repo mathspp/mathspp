@@ -1,0 +1,18 @@
+date: 15-01-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Learn about integers that have infinitely many digits and that are equal to their own square."
+    og:image: "https://mathspp.com/blog/trailing-product-match/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/trailing-product-match/thumbnail.png"
+slug: "trailing-product-match"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - infinity
+        - integers
+        - mathematics
+        - modular arithmetics
+        - pocket maths
+        - python
+title: Trailing product match
