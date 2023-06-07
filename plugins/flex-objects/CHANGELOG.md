@@ -1,3 +1,15 @@
+# v1.3.5
+## 05/09/2023
+
+1. [](#improved)
+   * Various deprecation fixes for PHP 8.2+
+   
+# v1.3.4
+## 02/19/2023
+
+1. [](#improved)
+   * Support saving via admin in current language if not translated
+
 # v1.3.3
 ## 01/04/2023
 

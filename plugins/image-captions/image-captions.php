@@ -110,8 +110,8 @@ class ImageCaptionsPlugin extends Plugin
         $document = new Document($content);
 
         $scope = trim($this->grav['config']->get('plugins.image-captions.scope'));
-        $figure_class = $this->grav['config']->get('plugins.image-captions.figure_class');
-        $figcaption_class = $this->grav['config']->get('plugins.image-captions.figcaption_class');
+        $figure_class = $this->grav['config']->get('plugins.image-captions.figure_class', '');
+        $figcaption_class = $this->grav['config']->get('plugins.image-captions.figcaption_class', '');
         $source = $this->grav['config']->get('plugins.image-captions.source');
 
         if (count($images = $document->find($scope)) > 0) {

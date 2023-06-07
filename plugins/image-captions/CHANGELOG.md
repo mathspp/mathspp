@@ -1,3 +1,9 @@
+# v2.1.0
+## 05/08/2023
+
+1. [](#improved)
+   * Upgraded to latest `v2.0.1` of DiDOM library to support PHP 8.0
+
 # v2.0.3
 ## 12/03/2021
 

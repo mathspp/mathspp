@@ -102,6 +102,9 @@ class Admin
     /** @var array */
     public $languages_enabled = [];
     /** @var Uri $uri */
+
+    /** @var array */
+    public $routes = [];
     protected $uri;
     /** @var array */
     protected $pages = [];
@@ -1435,9 +1438,15 @@ class Admin
      */
     public function lastBackup()
     {
-        $file    = JsonFile::instance($this->grav['locator']->findResource('log://backup.log'));
-        $content = $file->content();
-        if (empty($content)) {
+        $backup_file = $this->grav['locator']->findResource('log://backup.log');
+        $content = null;
+
+        if ($backup_file) {
+            $file    = JsonFile::instance((string) $backup_file);
+            $content = $file->content() ?? null;
+        }
+
+        if (!file_exists($backup_file) || is_null($content) || !isset($content['time'])) {
             return [
                 'days'        => '&infin;',
                 'chart_fill'  => 100,
@@ -1448,10 +1457,8 @@ class Admin
         $backup = new \DateTime();
         $backup->setTimestamp($content['time']);
         $diff = $backup->diff(new \DateTime());
-
-        $days       = $diff->days;
+        $days = $diff->days;
         $chart_fill = $days > 30 ? 100 : round($days / 30 * 100);
-
         return [
             'days'        => $days,
             'chart_fill'  => $chart_fill,
