@@ -1,0 +1,14 @@
+date: 17-07-2022 16:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This article is a gentle introduction to property-based testing with the Python library Hypothesis."
+    og:image: "https://mathspp.com/blog/property-based-testing-with-hypothesis/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/property-based-testing-with-hypothesis/thumbnail.png"
+slug: "property-based-testing-with-hypothesis"
+taxonomy:
+    category: [blogpost]
+    tag:
+      - "programming"
+      - "python"
+      - "testing"
+title: "Property-based testing with Hypothesis"
