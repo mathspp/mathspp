@@ -1,0 +1,19 @@
+date: 05-11-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned the difference between using `Any` and `object` in Python type hints."
+    og:image: https://mathspp.com/blog/til/055/thumbnail.png
+    twitter:image: https://mathspp.com/blog/til/055/thumbnail.png
+references:
+  - "Python 3 Documentation, `typing`, “The `Any` type”, [https://docs.python.org/3/library/typing.html#the-any-type](https://docs.python.org/3/library/typing.html#the-any-type) [last accessed 5-11-2022];"
+routes:
+    aliases:
+        - "/blog/til/055"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - python
+      - type hints
+title: "TIL #055 – difference between Any and object in Python type hints"
+visible: false
