@@ -1,0 +1,14 @@
+date: 16-07-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This is the second part of my account of my contribution to solving issue 2073 of the Python open source library `rich`."
+    og:image: https://mathspp.com/blog/contributing-to-open-source-rich-2073-part-2/thumbnail.png
+    twitter:image: https://mathspp.com/blog/contributing-to-open-source-rich-2073-part-2/thumbnail.png
+slug: contributing-to-open-source-rich-2073-part-2
+taxonomy:
+    category: blogpost
+    tag:
+      - open source
+      - programming
+      - python
+title: "Contributing to open source: rich 2073, part 2"
