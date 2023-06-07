@@ -1,0 +1,16 @@
+date: 09-02-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This article explains what the Levenshtein distance is and shows a recursive implementation, an iterative implementation, and a dynamic programming implementation of this algorithm.""
+    og:image: "https://mathspp.com/blog/levenshtein-distance/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/levenshtein-distance/thumbnail.png"
+slug: "levenshtein-distance"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - programming
+        - python
+        - recursion
+        - strings
+title: Levenshtein distance
