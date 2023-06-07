@@ -1,0 +1,17 @@
+date: 23-07-2021
+metadata:
+    author: "Rodrigo Girão Serrão"
+    og:image: "https://mathspp.com/blog/neural-networks-fundamentals-with-python-qol-improvements/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/neural-networks-fundamentals-with-python-qol-improvements/thumbnail.png"
+process:
+    twig: true
+slug: "neural-networks-fundamentals-with-python-qol-improvements"
+taxonomy:
+    category: "blogpost"
+    tag:
+      - "machine learning"
+      - "nnfwp"
+      - "numpy"
+      - "programming"
+      - "python"
+twig_first: true
