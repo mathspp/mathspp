@@ -1,0 +1,13 @@
+date: 21-07-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This article teaches you more advanced patterns and use cases for list comprehensions."
+    og:image: "https://mathspp.com/blog/pydonts/list-comprehensions-102/thumbnail.png"
+    twitter:image: "https://mathspp.com/blog/pydonts/list-comprehensions-102/thumbnail.png"
+slug: "list-comprehensions-102"
+taxonomy:
+    category: [blogpost, pydont]
+    tag:
+      - "programming"
+      - "python"
+title: "List comprehensions 102 | Pydon't 🐍"
