@@ -1,0 +1,18 @@
+date: 03-02-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This article documents my journey through learning how to write a custom Sphinx extension."
+    og:image: https://mathspp.com/blog/writing-sphinx-extensions/thumbnail.png
+    twitter:image: https://mathspp.com/blog/writing-sphinx-extensions/thumbnail.png
+references:
+  - "Developing extensions for Sphinx, [https://www.sphinx-doc.org/en/master/extdev/index.html#dev-extensions](https://www.sphinx-doc.org/en/master/extdev/index.html#dev-extensions) [last accessed 03-02-2022];"
+  - "Developing a 'Hello world' extension, [https://www.sphinx-doc.org/en/master/development/tutorials/helloworld.html](https://www.sphinx-doc.org/en/master/development/tutorials/helloworld.html) [last accessed 03-02-2022];"
+  - "Developing a 'TODO' extension, [https://www.sphinx-doc.org/en/master/development/tutorials/todo.html](https://www.sphinx-doc.org/en/master/development/tutorials/todo.html) [last accessed 03-02-2022];"
+slug: writing-sphinx-extensions
+taxonomy:
+    category: blogpost
+    tag:
+      - programming
+      - python
+      - scripting
+title: "Writing Sphinx extensions"
