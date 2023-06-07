@@ -1,0 +1,18 @@
+date: 12-01-2022
+metadata:
+    author: Rodrigo Girão Serrão
+    description: Dive into the world of socket programming with this Python tutorial that assumes 0 prior experience.
+    og:image: https://mathspp.com/blog/sockets-for-dummies/thumbnail.png
+    twitter:image: https://mathspp.com/blog/sockets-for-dummies/thumbnail.png
+references:
+  - "Python 3 Docs, “Socket Programming HOWTO”, [https://docs.python.org/3/howto/sockets.html](https://docs.python.org/3/howto/sockets.html) [last accessed 04-01-2022];"
+  - "Python 3 Docs, The Python Standard Library, `socket`, [https://docs.python.org/3/library/socket.html](https://docs.python.org/3/library/socket.html) [last accessed 04-01-2022];"
+  - "Server Fault, “What is the mandatory information a HTTP Request Header must contain?”, [https://serverfault.com/a/163655](https://serverfault.com/a/163655) [last accessed 04-01-2022];"
+slug: sockets-for-dummies
+taxonomy:
+    category: blogpost
+    tag:
+      - networking
+      - programming
+      - python
+title: "Sockets for dummies"
