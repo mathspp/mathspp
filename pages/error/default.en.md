@@ -4,7 +4,11 @@ anchors:
 ---
 
 <script>plausible("404",{ props: { path: document.location.pathname } });</script>
-
+<style>
+h1 {
+    background: transparent;
+}
+</style>
 
 # `print("Error 404")`
 
