@@ -1,5 +1,6 @@
 ---
-title: Error
+anchors:
+    active: false
 ---
 
 <script>plausible("404",{ props: { path: document.location.pathname } });</script>
