@@ -1,11 +1,6 @@
----
-anchors:
-    active: false
----
-
 <script>plausible("404",{ props: { path: document.location.pathname } });</script>
 <style>
-h1 {
+#print-error-404 {
     background: transparent;
 }
 </style>

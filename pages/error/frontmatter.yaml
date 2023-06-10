@@ -1,3 +1,6 @@
+anchors:
+    active: false
+    enabled: false
 http_response_code: 404
 metadata:
     author: Rodrigo Girão Serrão
