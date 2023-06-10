@@ -6,7 +6,6 @@ anchors:
 <script>plausible("404",{ props: { path: document.location.pathname } });</script>
 
 
-<center><h1><code>print("Error 404")</code></h1>
+# `print("Error 404")`
 
 Woops. Looks like this page doesn't exist.
-</center>
