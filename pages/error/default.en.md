@@ -2,7 +2,10 @@
 title: Error
 ---
 
-<center><h1>Error 2×2×101</h1>
+<script>plausible("404",{ props: { path: document.location.pathname } });</script>
+
+
+<center><h1><code>print("Error 404")</code></h1>
 
 Woops. Looks like this page doesn't exist.
 </center>
