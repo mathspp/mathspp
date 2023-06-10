@@ -2,21 +2,17 @@ enabled: true               # Global enable/disable the entire plugin
 trackingId: ""              # GA Tracking ID `REQUIRED`
 
 position: "head"            # Code Position in the HTML document
-objectName: "ga"            # Name for the global (ga) object
-forceSsl: true              # Enable/Disable SSL
-async: false                # Enable/Disable Asynchronously Tracking
-anonymizeIp: true           # Enable/Disable IP Anonymization
+objectName: "gtag"          # Name for the global (gtag) object
 blockedIps: []              # Array of blocked IP addresses
 blockedIpRanges: ["private", "loopback", "link-local"] # Array of blocked IP address ranges
 blockingCookie: "blockGA"   # Name of a cookie blocking GA tracking
 
 cookieConfig: false         # Use custom cookie configuration
-cookieName: "_ga"           # Cookie name
+cookiePrefix: ""            # Cookie name prefix
 cookieDomain: ""            # Cookie domain
 cookieExpires: 63072000     # Expiration time in seconds (Default: 2 years)
 
 optOutEnabled: false        # enable opt out function
 optOutMessage: ""           # confirmation message on opt out
 
-debugStatus: false          # Enable/disable Debugging
-debugTrace: false           # Enable/Disable Trace Debugging
+debugMode: false            # Enable/disable Debugging

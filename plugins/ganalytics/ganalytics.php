@@ -14,11 +14,11 @@ class GanalyticsPlugin extends Plugin
      * @return array
      *
      * The getSubscribedEvents() gives the core a list of events
-     *     that the plugin wants to listen to. The key of each
-     *     array section is the event that the plugin listens to
-     *     and the value (in the form of an array) contains the
-     *     callable (or function) as well as the priority. The
-     *     higher the number the higher the priority.
+     * that the plugin wants to listen to. The key of each
+     * array section is the event that the plugin listens to
+     * and the value (in the form of an array) contains the
+     * callable (or function) as well as the priority. The
+     * higher the number the higher the priority.
      */
     public static function getSubscribedEvents()
     {
@@ -30,22 +30,22 @@ class GanalyticsPlugin extends Plugin
 
     /**
      * Returns the Google Analytics cookie configuration.
-     * @return string
+     * @return array
      */
     private function getCookieConfiguration(){
         $cookie_config = $this->config->get('plugins.ganalytics.cookieConfig', false);
-        if (!$cookie_config) return "'auto'";
+        if (!$cookie_config) return [];
 
         $cookie_config = [
-          'cookieName'    => $this->config->get('plugins.ganalytics.cookieName', '_ga'),
-          'cookieExpires' => $this->config->get('plugins.ganalytics.cookieExpires', 63072000),
+          'cookie_prefix'    => $this->config->get('plugins.ganalytics.cookiePrefix', ''),
+          'cookie_expires' => $this->config->get('plugins.ganalytics.cookieExpires', 63072000),
         ];
 
         // cookie domain
         $cookie_domain = trim($this->config->get('plugins.ganalytics.cookieDomain'));
-        if (!empty($cookie_domain)) $cookie_config['cookieDomain'] = $cookie_domain;
+        if (!empty($cookie_domain)) $cookie_config['cookie_domain'] = $cookie_domain;
 
-        return json_encode($cookie_config);
+        return $cookie_config;
     }
 
     /**
@@ -66,26 +66,17 @@ class GanalyticsPlugin extends Plugin
 
     /**
      * Return the Google Analytics Tracking Code
-     * @param string $scriptName Name of the GA script library
      * @param string $objectName Global variable name for the GA object
-     * @param bool $async Determine if the GA script should be loaded and executed asynchronously
      * @return string
      */
-    private function getTrackingCode($scriptName, $objectName, $async=false)
+    private function getTrackingCode($objectName)
     {
-        if ($async) {
-            $code =
-              "window.GoogleAnalyticsObject = '{$objectName}';\n".
-              "window.{$objectName}=window.{$objectName}||function(){({$objectName}.q={$objectName}.q||[]).push(arguments)};{$objectName}.l=+new Date;\n"
-            ;
-        } else {
-            $code =
-                "(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\n".
-                "(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n".
-                "m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n".
-                "})(window,document,'script','https://www.google-analytics.com/{$scriptName}.js','{$objectName}');\n"
-            ;
-        }
+        $code =
+            "window.dataLayer = window.dataLayer || [];\n".
+            "function {$objectName}(){dataLayer.push(arguments);}\n".
+            "{$objectName}('js', new Date());\n"
+        ;
+
         return $code;
     }
 
@@ -98,16 +89,15 @@ class GanalyticsPlugin extends Plugin
     private function getOptOutCode($trackingId, $config)
     {
         $code = <<<JSCODE
-
-            var disableStr = 'ga-disable-$trackingId'; 
-            if (document.cookie.indexOf(disableStr + '=true') > -1) { 
-                window[disableStr] = true;
-            } 
-            function gaOptout() { 
-                document.cookie = disableStr + '=true; expires={$config['cookieExpires']}; path=/'; 
-                window[disableStr] = true; 
-                alert('{$config['optoutMessage']}'); 
-            } 
+var disableStr = 'ga-disable-$trackingId';
+if (document.cookie.indexOf(disableStr + '=true') > -1) {
+    window[disableStr] = true;
+}
+function gaOptout() {
+    document.cookie = disableStr + '=true; expires={$config['cookieExpires']}; path=/';
+    window[disableStr] = true;
+    alert('{$config['optoutMessage']}');
+}
 
 JSCODE;
         return $code;
@@ -117,29 +107,36 @@ JSCODE;
      * Return all personalized GA settings
      * @param string $trackingId Google Analytics Tracking ID
      * @param string $objectName Global variable name for the GA object
-     * @return array
+     * @return string
      */
     private function getTrackingSettings($trackingId, $objectName)
     {
-        $cookie_config = $this->getCookieConfiguration();
+        if ($this->config->get('plugins.ganalytics.debugMode', false)) {
+            $settings['debug_mode'] = true;
+        } else {
+            $settings = [];
+        }
 
-        $settings = [
-          'trace-debug' =>  "window.ga_debug = {trace: true};",
-          'create'      => "{$objectName}('create', '{$trackingId}', {$cookie_config});",
-          'anonymize'   => "{$objectName}('set', 'anonymizeIp', true);",
-          'force-ssl'   => "{$objectName}('set', 'forceSSL', true);",
-          'send'        => "{$objectName}('send', 'pageview');"
-        ];
+        $settings = array_merge($settings, $this->getCookieConfiguration());
+        if (!empty($settings)) {
+            try {
+                $settings = json_encode($settings, JSON_THROW_ON_ERROR);
+                return "{$objectName}('config', '{$trackingId}', {$settings});";
+            } catch (\JsonException $e) {
+                $this->grav['log']->error("plugin.{$this->name}: Invalid cookie settings - {$e->getMessage()}");
+            }
+        }
 
-        if (!$this->config->get('plugins.ganalytics.debugTrace', false)) unset ($settings['trace-debug']);
-        if (!$this->config->get('plugins.ganalytics.anonymizeIp', false)) unset ($settings['anonymize']);
-        if (!$this->config->get('plugins.ganalytics.forceSsl', false)) unset ($settings['force-ssl']);
-
-        return $settings;
+        return "{$objectName}('config', '{$trackingId}');";
     }
 
     /**
      * Do something with deprecated settings
+     *
+     * Due to https://github.com/getgrav/grav/issues/3697
+     * this method doesn't store modified settings back to
+     * YAML file. One needs to migrate deprecated configuration
+     * options manually.
      */
     private function processDeprecatedSettings()
     {
@@ -151,7 +148,35 @@ JSCODE;
             $settings['objectName'] = $renameGa;
             unset($settings['renameGa']);
             $this->config->set('plugins.ganalytics', $settings);
-            Plugin::saveConfig('ganalytics');
+//            Plugin::saveConfig('ganalytics');
+        }
+
+        // 1.x => 2.0
+        // Remove unused fields
+        $fields = ['async', 'anonymizeIp', 'forceSsl', 'cookieName', 'debugTrace'];
+        $settings = $this->config();
+        if (array_intersect_key(array_flip($fields), $settings)) {
+            unset(
+              $settings['async'], $settings['anonymizeIp'], $settings['forceSsl'],
+              $settings['cookieName'], $settings['debugTrace']
+            );
+            $this->config->set('plugins.ganalytics', $settings);
+//            $this->saveConfig('ganalytics');
+        }
+        // Rename default "objectName" value from "ga" to "gtag"
+        $objectName = $this->config->get('plugins.ganalytics.objectName');
+        if ($objectName == 'ga') {
+            $this->config->set('plugins.ganalytics.objectName', 'gtag');
+//            Plugin::saveConfig('ganalytics');
+        }
+        // Rename "debugStatus" field to "debugMode"
+        $debugStatus = $this->config->get('plugins.ganalytics.debugStatus');
+        if (!is_null($debugStatus)) {
+            $settings = $this->config->get('plugins.ganalytics', []);
+            $settings['debugMode'] = $debugStatus;
+            unset($settings['debugStatus']);
+            $this->config->set('plugins.ganalytics', $settings);
+//            Plugin::saveConfig('ganalytics');
         }
     }
 
@@ -267,9 +292,7 @@ JSCODE;
         }
 
         // Parameters
-        $scriptName = $this->config->get('plugins.ganalytics.debugStatus', false) ? 'analytics_debug' : 'analytics';
-        $objectName = trim($this->config->get('plugins.ganalytics.objectName', 'ga'));
-        $async      = $this->config->get('plugins.ganalytics.async', false);
+        $objectName = trim($this->config->get('plugins.ganalytics.objectName', 'gtag'));
         $position   = trim($this->config->get('plugins.ganalytics.position', 'head'));
 
         // Opt Out and Tracking Code and settings
@@ -279,13 +302,13 @@ JSCODE;
             $code .= $this->getOptOutCode($trackingId, $optout_config);
         }
         $settings = $this->getTrackingSettings($trackingId, $objectName);
-        $code .= $this->getTrackingCode($scriptName, $objectName, $async);
-        $code.= join(PHP_EOL, $settings);
+        $code .= $this->getTrackingCode($objectName);
+        $code .= $settings;
 
         // Embed Google Analytics script
         $group = ($position == 'body') ? 'bottom' : null;
 
+        $this->grav['assets']->addJs("https://www.googletagmanager.com/gtag/js?id={$trackingId}", 9, true, 'async', $group);
         $this->grav['assets']->addInlineJs($code, null, $group);
-        if ($async) $this->grav['assets']->addJs("//www.google-analytics.com/{$scriptName}.js", 9 , true /*pipeline*/, 'async', $group);
     }
 }
