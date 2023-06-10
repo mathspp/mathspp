@@ -2,6 +2,6 @@
 title: Home
 ---
 
-![](logo_home.svg?classes=home-logo)
+<!-- ![](logo_home.svg?classes=home-logo) -->
 
 # Take your Python 🐍 skills to the next level 🚀
