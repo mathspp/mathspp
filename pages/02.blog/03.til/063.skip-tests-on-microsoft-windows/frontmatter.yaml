@@ -1,0 +1,18 @@
+date: 12-06-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to skip tests on Microsoft Windows in `pytest`."
+    og:image: https://mathspp.com/blog/til/skip-tests-on-microsoft-windows/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/skip-tests-on-microsoft-windows/thumbnail.webp
+references:
+  - "Pytest documentation, Skipping, [https://docs.pytest.org/en/7.3.x/how-to/skipping.html](https://docs.pytest.org/en/7.3.x/how-to/skipping.html) [last accessed 12-06-2023];"
+routes:
+    aliases:
+        - "/blog/til/063"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - python
+title: "TIL #063 – skip tests on Microsoft Windows"
+visible: false
