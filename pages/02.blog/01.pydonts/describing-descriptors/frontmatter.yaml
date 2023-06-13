@@ -1,0 +1,19 @@
+date: 13-06-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Descriptors are not black magic and this article will show you that."
+    og:image: "https://mathspp.com/blog/pydonts/describing-descriptors/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/pydonts/describing-descriptors/thumbnail.webp"
+references:
+    - "Python 3 Documentation, Built-in Functions, `property`, [https://docs.python.org/3/library/functions.html#property](https://docs.python.org/3/library/functions.html#property) [last accessed 14-05-2023];"
+    - "Implementing `@property`, `@staticmethod` and `@classmethod` from scratch, [https://tushar.lol/post/descriptors/](https://tushar.lol/post/descriptors/) [last accessed 19-05-2023];"
+    - "Python 3 Documentation, Descriptor HowTo Guide, [https://docs.python.org/3/howto/descriptor.html](https://docs.python.org/3/howto/descriptor.html) [last accessed 19-05-2023];"
+    - "Pypy source code on GitHub, [https://github.com/mozillazg/pypy](https://github.com/mozillazg/pypy) [last accessed 13-06-2023, commit [6fcba0c](https://github.com/mozillazg/pypy/commit/6fcba0cd24d7f978b7a6368f518284f2a12efcae)]"
+slug: "describing-descriptors"
+taxonomy:
+    category: [blogpost, pydont]
+    tag:
+      - "oop"
+      - "programming"
+      - "python"
+title: "Describing Descriptors | Pydon't 🐍"
