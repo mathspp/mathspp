@@ -13,6 +13,7 @@ slug: "describing-descriptors"
 taxonomy:
     category: [blogpost, pydont]
     tag:
+      - "dunder methods"
       - "oop"
       - "programming"
       - "python"
