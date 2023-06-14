@@ -98,6 +98,9 @@ Descriptors, like properties, let you customise attribute lookup.
 However, descriptors give you _more_ freedom because you implement a descriptor as a class.
 This is different from properties that are usually implemented via their getter, setter, and deleter methods.
 
+Later, you will understand that descriptors give you more freedom because properties _are_ a specific descriptor.
+In a way, properties provide a type of descriptor blueprint for you to fill in, saving you some work.
+
 By using a class, we can write a single descriptor that we can use for the attributes `r`, `g`, and `b` of the class `Colour`.
 Let us see how.
 
@@ -187,6 +190,9 @@ class Colour:
     ...
 ```
 
+Now, I can talk about “the descriptor `ColourComponent`” because `ColourComponent` implements the dunder method `__get__`.
+It is because of that method that `ColourComponent` is a descriptor.
+
 Later, whenever I access the attribute `r` in a colour instance, Python will see that `r` is a `ColourComponent` descriptor with the method `__get__` and it will call that method `__get__` to fetch the actual value.
 This call to `__get__` happens under the hood, automatically.
 
@@ -232,6 +238,10 @@ To do that, usually, the descriptor needs to know what was the original object t
 To solve this issue, Python calls the dunder method `__get__` with two arguments:
  - `obj` is the original object that had one of its attributes accessed; and
  - `cls` is the type of the object passed in.
+
+In other places, you may find `__get__` defined as `__get__(self, obj, objtype)` or `__get__(self, instance, owner)`, or other variations of these.
+That is fine.
+You can pick whatever names you want for your parameters; the name of the parameter will not change _what_ Python puts there for you.
 
 Most of the time, you will use `obj` directly, for example to access other attributes on the object.
 (In our example, we need `obj` to find the original hexadecimal representation of the colour we are working with.)
@@ -365,6 +375,45 @@ Inside __get__ and going to access _last.
 
 As you can see, the dunder method `__set_name__` is responsible for much of the flexibility that descriptors enjoy.
 It is common for a descriptor to have a dunder method `__set_name__` that stores the original `name` argument and also computes one or more auxiliary names for related attributes that the original owner also contains.
+
+
+### The built-ins `getattr`, `setattr`, and `delattr`
+
+When using `__set_name__`, you will likely have to use the built-ins `getattr` (seen above), `setattr`, and `delattr`.
+In the example above, we already used `getattr`.
+So, what do these three functions do?
+
+The three built-ins `getattr`, `setattr`, and `delattr`, allow you to dynamically get, set, and delete, – respectively – attributes on an object.
+
+Let me show you:
+
+```pycon
+>>> class C:
+...     value = 73
+...
+>>> my_object = C()
+
+>>> getattr(my_object, "value")
+73
+
+>>> setattr(my_object, "other_value", 42)
+>>> my_object.other_value
+42
+>>> getattr(my_object, "other_value")
+42
+
+>>> delattr(my_object, "value")
+>>> vars(my_object)
+{'other_value': 42}
+>>> my_object.value
+AttributeError: ...
+```
+
+So, in essence, these methods are used for the usual attribute operations, but they come in handy when you have the name of the attribute as a _string_!
+
+ - `getattr(obj, "attr")` is the same as `obj.attr`;
+ - `setattr(obj, "attr", value)` is the same as `obj.attr = value`; and
+ - `delattr(obj, "attr")` is the same as `del obj.attr`.
 
 
 ### `__set_name__` and descriptors created after class initialisation
@@ -580,12 +629,12 @@ class ColourComponent:
     ...
 
     def __set__(self, obj, value):
-        component_hex = hex(value)[2:].zfill(2)
+        component_hex = f"{value:02X}"
         obj.hex = obj.hex[: self.start] + component_hex + obj.hex[self.end :]
 ```
 
-We use `hex(value)[2:]` to convert the integer to hexadecimal and then skip the initial `"0x"`.
-The call to `zfill` is to make sure we have two digits when we need a leading zero.
+We use `f"{value:02X}"` to convert the integer value into a hexadecimal number (with the format specifier `X`).
+Furthermore, that hexadecimal value is aligned inside a field of length `2` with leading zeroes `0`.
 
 
 ## `__set__` and `__set_name__`
@@ -794,6 +843,9 @@ In __get__ with None and <class '__main__.MyClass'>
 Notice that both `c.x` and `MyClass.x` triggered the dunder method `__get__`.
 So, how do you get hold of the actual descriptor object?
 
+
+## `vars`
+
 In order to be able to access the descriptor itself, without Python trying to call `__get__` automatically, you have to access the `__dict__` attribute of the class.
 A user-friendly way of doing this is via [the built-in `vars`][til-vars]:
 
@@ -818,6 +870,40 @@ print(my_class_descriptor.value)  # 8
 
 Now you know!
 If you need to do dynamic things with your descriptor object, you can access it with the built-in `vars`.
+
+
+## Escape route inside `__get__`
+
+Another alternative to using `vars`, that you might see often, is to short-circuit the implementation of `__get__` to return the descriptor object when it is accessed from the class.
+
+So, instead of implementing the class `Descriptor` as you saw above, you could add an `if` statement inside `__get__` that checks if `obj` is `None` and return `self` in that case:
+
+```py
+import random
+
+class Descriptor:
+    def __init__(self):
+        self.value = random.randint(1, 10)
+
+    def __get__(self, obj, cls):
+        print(f"In __get__ with {obj} and {cls}")
+        if obj is None:
+            return self
+        return self.value
+```
+
+This makes it more practical to access the descriptor object itself:
+
+```py
+class MyClass:
+    x = Descriptor()
+
+print(MyClass.x)
+# In __get__ with None and <class '__main__.MyClass'>
+# <__main__.Descriptor object at 0x1044eb850>
+```
+
+This shortcut with `if obj is None` isn't always possible, though.
 
 
 # Built-in descriptors
