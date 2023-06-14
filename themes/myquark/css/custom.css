@@ -53,6 +53,34 @@ and then read about the correct CSS here: https://stackoverflow.com/a/28571625
     font-display: swap;
 }
 @font-face {
+    font-family: 'Roboto Serif';
+    src: url('/user/themes/myquark/fonts/RobotoSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto Serif';
+    src: url('/user/themes/myquark/fonts/RobotoSerif-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto Serif';
+    src: url('/user/themes/myquark/fonts/RobotoSerif-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto Serif';
+    src: url('/user/themes/myquark/fonts/RobotoSerif-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
     font-family: 'APL385 Unicode';
     src: url('/user/themes/myquark/fonts/APL385.eot');
     src: local('APL385 Unicode'), local('APL385'),
