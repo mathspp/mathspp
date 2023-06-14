@@ -1446,6 +1446,28 @@ Yes, we can!
 Notice how the object `my_object` was passed in as an argument to `f`.
 That was done by the dunder method `f.__get__`, showing how the fact that functions are descriptors enables Python to pass in the first argument `self`, to turn a function into a method!
 
+A more direct way of showing how this all works together is by realising that if a function `f` is an instance of a descriptor, then we can assign it to a class variable like we did with all other descriptors.
+So, we can repeat our experiments and see that a function becomes a method _because_ it is a descriptor:
+
+```py
+def f(*args, **kwargs):
+    print(args, kwargs)
+
+class MyClass:
+    method = f
+
+print(MyClass.method)
+# <function f at 0x10534ff60>
+my_object = MyClass()
+print(my_object.method)
+# <bound method f of <__main__.MyClass object at 0x1053496d0>>
+
+MyClass.method(73, 42)
+# (73, 42) {}
+my_object.method(73, 42)
+# (<__main__.MyClass object at 0x1053496d0>, 73, 42) {}
+```
+
 
 # Data and non-data descriptors
 
