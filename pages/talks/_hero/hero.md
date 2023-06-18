@@ -1,3 +1,3 @@
 # Talks
 
-## My conference and meetup talks and tutorials
+## Conference and meetup appearances
