@@ -7,6 +7,7 @@ content:
     order:
         custom:
           - "_hero"
+          - "_invite-me"
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "Overview of all the talks I have given and other public speaking appearances."
