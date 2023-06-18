@@ -13,6 +13,7 @@ content:
           - "_20220924-pydonts-v4"
           - "_20220730-comprehending-comprehensions"
           - "_20220714-smoosh-all-the-things"
+          - "_20220712-python-objects-under-the-hood"
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "Overview of all the talks I have given and other public speaking appearances."
