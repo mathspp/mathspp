@@ -511,3 +511,7 @@ pre:hover > div > i.clipboard-icon {
 .home-logo {
     max-height: 30vh;
 }
+
+:root {
+    scroll-padding-top: 4rem;
+}
