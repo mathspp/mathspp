@@ -36,21 +36,6 @@ I like to spend my time with the people I love, I like to teach and share knowle
 read fantasy and technical books, write code and watch silly comedy movies.
 
 
-### Wall of love
-
-Here are some nice things people have to say about my content, my teaching, my newsletter, and my books:
-
-<script type="text/javascript" src="https://testimonial.to/js/iframeResizer.min.js"></script>
-<iframe id="testimonialto-carousel-all-mathspp-insider-newsletter-tag-all-dark" src="https://embed-v2.testimonial.to/carousel/all/mathspp-insider-newsletter?theme=dark&autoplay=off&showmore=on&one-row=on&same-height=on&tag=all" frameborder="0" scrolling="no" width="100%"></iframe>
-<script type="text/javascript">iFrameResize({log: false, checkOrigin: false}, "#testimonialto-carousel-all-mathspp-insider-newsletter-tag-all-dark");</script>
-
-
-If you want to add your testimonial to the wall of love, you can:
-
- - tweet your testimonial and tag me ([@mathsppblog][twitter]); or
- - add your text/video testimonial in [this page][collect-testimonials].
-
-
 ### Contacts
 
 You can drop me a line to rodrigo (at) mathspp (dot) com.
@@ -72,6 +57,21 @@ are a part of, so that it reaches more people who want to learn mathematics and 
 Finally, if you believe in the quality and importance of this project, and/or if you would like to make
 a material contribution to help support the costs of running this project ad-free,
 you can consider [buying me a slice of pizza 🍕][bmc].
+
+
+### Wall of love
+
+Here are some nice things people have to say about my content, my teaching, my newsletter, and my books:
+
+<script type="text/javascript" src="https://testimonial.to/js/iframeResizer.min.js"></script>
+<iframe id="testimonialto-carousel-all-mathspp-insider-newsletter-tag-all-dark" src="https://embed-v2.testimonial.to/carousel/all/mathspp-insider-newsletter?theme=dark&autoplay=off&showmore=on&one-row=on&same-height=on&tag=all" frameborder="0" scrolling="no" width="100%"></iframe>
+<script type="text/javascript">iFrameResize({log: false, checkOrigin: false}, "#testimonialto-carousel-all-mathspp-insider-newsletter-tag-all-dark");</script>
+
+
+If you want to add your testimonial to the wall of love, you can:
+
+ - tweet your testimonial and tag me ([@mathsppblog][twitter]); or
+ - add your text/video testimonial in [this page][collect-testimonials].
 
 
 ### The technologies used
