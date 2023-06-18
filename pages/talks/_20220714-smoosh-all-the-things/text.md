@@ -4,7 +4,7 @@
 
 In this lightning talk, I show how `functools.reduce` is such an important function that we use implicitly when we call built-ins like `sum` and `all`.
 
- - Where: [EuroPython 2022](http://ep2022.europython.eu) 2022, in-person
+ - Where: [EuroPython 2022](http://ep2022.europython.eu), in-person
  - When: 14th of July, 2022
  - Written version of the talk: [blog article](/blog/smoosh-all-the-things)
  - Video recording: [view on YouTube](https://youtu.be/YeH7CwruEUs) or below
