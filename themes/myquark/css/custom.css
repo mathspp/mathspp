@@ -512,6 +512,7 @@ pre:hover > div > i.clipboard-icon {
     max-height: 30vh;
 }
 
+/* Add top scroll padding so that the header doesn't cover it. */
 :root {
     scroll-padding-top: 4rem;
 }
