@@ -41,8 +41,8 @@ read fantasy and technical books, write code and watch silly comedy movies.
 Here are some nice things people have to say about my content, my teaching, my newsletter, and my books:
 
 <script type="text/javascript" src="https://testimonial.to/js/iframeResizer.min.js"></script>
-<iframe id="testimonialto-carousel-all-mathspp-insider-newsletter-dark" src="https://embed-v2.testimonial.to/carousel/all/mathspp-insider-newsletter?theme=dark&autoplay=off&showmore=on&one-row=on&same-height=off" frameborder="0" scrolling="no" width="100%"></iframe>
-<script type="text/javascript">iFrameResize({log: false, checkOrigin: false}, "#testimonialto-carousel-all-mathspp-insider-newsletter-dark");</script>
+<iframe id="testimonialto-carousel-all-mathspp-insider-newsletter-tag-all-dark" src="https://embed-v2.testimonial.to/carousel/all/mathspp-insider-newsletter?theme=dark&autoplay=off&showmore=on&one-row=on&same-height=on&tag=all" frameborder="0" scrolling="no" width="100%"></iframe>
+<script type="text/javascript">iFrameResize({log: false, checkOrigin: false}, "#testimonialto-carousel-all-mathspp-insider-newsletter-tag-all-dark");</script>
 
 
 If you want to add your testimonial to the wall of love, you can:
