@@ -245,11 +245,6 @@ nav a, .header-dark #header:not(.scrolled) .dropmenu ul ul a {
     background: #191919;
 }
 
-/* Set the background colour of the alternating modular pages. */
-section.modular-text.bg-gray {
-    background: #1e1f1f !important;
-}
-
 blockquote {
     border-left-color: #555555;
 }
