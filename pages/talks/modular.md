@@ -1,3 +1,4 @@
+---
 anchors:
     active: false
 body_classes: "header-dark header-transparent"
@@ -12,3 +13,4 @@ metadata:
     og:image: "https://mathspp.com/talks/thumbnail.png"
     twitter:image: "https://mathspp.com/talks/thumbnail.png"
 onpage_menu: false
+---
