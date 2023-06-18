@@ -1,7 +1,3 @@
----
-image_align: right
----
-
 # Describing Descriptors
 
 ## PyCon Sri Lanka 2023
