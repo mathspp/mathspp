@@ -1,4 +1,4 @@
-# Smoosh all the things ⚡️
+# Python objects under the hood
 
 ## EuroPython 2022
 
