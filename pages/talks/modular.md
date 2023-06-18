@@ -8,6 +8,8 @@ content:
         custom:
           - "_hero"
           - "_invite-me"
+          - "_20230525-describing-descriptors"
+          - "_20220924-pydonts-v4"
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "Overview of all the talks I have given and other public speaking appearances."
