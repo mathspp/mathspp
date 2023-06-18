@@ -1,3 +1,8 @@
+---
+class: offset-box
+---
+
+
 # I'll talk at your event 🎙️
 
 Sharing knowledge is a passion of mine and public speaking is an excellent outlet for that.
