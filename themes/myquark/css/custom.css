@@ -511,3 +511,8 @@ pre:hover > div > i.clipboard-icon {
 :root {
     scroll-padding-top: 4rem;
 }
+
+.modular-text {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
