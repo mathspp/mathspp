@@ -110,7 +110,8 @@ class Interpreter2(Interpreter1):
                 return super().interpret(expr, env)
 ```
 
-The key here is that `Interpreter2.interpret` will call `Interpreter1.interpret` via the `super().interpreter` call and inside that call, the `self.interpret` will refer to `Interpreter2.interpret`, which will allow us to go back and forth between the two implementations of `interpret`.
+The key here is that `Interpreter2.interpret` will call `Interpreter1.interpret` via the `super().interpreter` call.
+In turn, inside that call, the `self.interpret` will refer to `Interpreter2.interpret`, which will allow us to go back and forth between the two implementations of `interpret`.
 
 Here is an example, after adding `print` statements at the top of each `interpret` method:
 
