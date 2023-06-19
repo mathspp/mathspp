@@ -1,0 +1,20 @@
+date: 19-06-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned what open recursion is and how to leverage it."
+    og:image: https://mathspp.com/blog/til/open-recursion/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/open-recursion/thumbnail.webp
+references:
+  - "“Essentials of Compilation, An Incremental Approach in Python”, Jeremy G. Siek, 2023 [https://github.com/IUCompilerCourse/Essentials-of-Compilation](https://github.com/IUCompilerCourse/Essentials-of-Compilation) [last accessed 19-06-2023];"
+  - "Classes, Open Recursion, [https://dev.realworldocaml.org/classes.html#open-recursion](https://dev.realworldocaml.org/classes.html#open-recursion) [last accessed 19-06-2023];"
+routes:
+    aliases:
+        - "/blog/til/064"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - python
+      - recursion
+title: "TIL #064 – open recursion"
+visible: false
