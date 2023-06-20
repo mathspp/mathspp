@@ -136,9 +136,6 @@ Interpreter1.interpret
 Quite cool, huh?
 
 
-If you are curious, [this is the link to the PR](https://github.com/Textualize/textual/pull/2758) where I introduced that change.
-
-
 That's it for now! [Stay tuned][subscribe] and I'll see you around!
 
 [subscribe]: /subscribe
