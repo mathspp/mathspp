@@ -8,6 +8,7 @@ In this Python talk, I continuously refactored a piece of code by using Python f
 
  - Where: [EuroPython 2021](https://ep2021.europython.eu/talks/Bz5dtEe-pydonts/), virtual
  - When: 28th of July, 2021
+ - Video recording: [view on YouTube](https://youtu.be/Vjq89-spPOk) or below
  - Slide deck: [link](https://github.com/mathspp/talks/blob/main/20210728_europython_pydonts/slide_deck.pdf)
 
 <div style="text-align:center">

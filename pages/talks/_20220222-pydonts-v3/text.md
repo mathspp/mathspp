@@ -7,6 +7,7 @@ In this Python talk, I continuously refactored a piece of code by using Python f
  - Where: [PyCon Sri Lanka 2022](https://pycon.lk/2022/), virtual
  - When: 22nd of February, 2022
  - Written version of the talk: [blog article](/blog/enumerate-from-first-principles)
+ - Video recording: [view on YouTube](https://youtu.be/Bdunek7Q8Ss) or below
  - Slide deck: [link](https://github.com/mathspp/talks/blob/main/20220222_pycon_srilanka_pydonts_3/slide_deck.pdf)
 
 <div style="text-align:center">

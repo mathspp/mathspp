@@ -6,6 +6,7 @@ In this Python talk, I continuously refactored a piece of code by using Python f
 
  - Where: [DjangoCon US 2021](https://2021.djangocon.us/talks/pydon-ts-write-elegant-python-code-v1-1/), virtual
  - When: 23rd of October, 2021
+ - Video recording: [view on YouTube](https://youtu.be/s6dJab2qwkg) or below
  - Slide deck: [link](https://github.com/mathspp/talks/blob/main/20211023_djangoconus_pydonts/slide_deck.pdf)
  - Support material: [talk notebook](https://github.com/mathspp/talks/blob/main/20211023_djangoconus_pydonts/talk_notebook.ipynb)
 
