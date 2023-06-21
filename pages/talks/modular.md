@@ -21,6 +21,7 @@ content:
           - "_20211215-new-zealand-pug"
           - "_20211204-pydonts-v2"
           - "_20211023-pydonts-v1-1"
+          - "_20210728-pydonts-v1"
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "Overview of all the talks I have given and other public speaking appearances."
