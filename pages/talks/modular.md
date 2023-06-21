@@ -17,6 +17,7 @@ content:
           - "_20220429-why-mastering-python-is-impossible"
           - "_20220325-why-apl-is-a-language-worth-knowing"
           - "_20220222-pydonts-v3"
+          - "_20220206-fifty-shades-of-sign"
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "Overview of all the talks I have given and other public speaking appearances."
