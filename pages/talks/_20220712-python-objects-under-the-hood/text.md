@@ -9,4 +9,6 @@ In this Python tutorial, I show how Python uses [dunder methods][dunder-article]
  - Written version of the talk: [blog article][dunder-article]
  - Slide deck: [link](https://github.com/mathspp/talks/blob/main/20220712_python_objects_under_the_hood/slide_deck.pdf)
 
+---
+
 [dunder-article]: /blog/pydonts/dunder-methods
