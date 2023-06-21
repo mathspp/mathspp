@@ -5,7 +5,7 @@
 In this talk I show how learning APL influenced the way I write Python code.
 For example, I show how APL helped me understand how list comprehensions work.
 
- - Where: [FnConf 2022](https://confengine.com/conferences/functional-conf-2022/proposal/16278/why-apl-is-a-language-worth-knowing), in-person
+ - Where: [FnConf 2022](https://confengine.com/conferences/functional-conf-2022/proposal/16278/why-apl-is-a-language-worth-knowing), virtual
  - When: 25th of March, 2022
  - Written version of the talk: [blog article](/blog/why-apl-is-a-language-worth-knowing)
  - Slide deck: [link](https://github.com/mathspp/talks/blob/main/20220325_fnconf_why_apl_is_a_language_worth_knowing/slide_deck.pdf)
