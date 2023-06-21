@@ -1,4 +1,4 @@
-# Pydon'ts v3
+# Pydon'ts – Write elegant Python code v3
 
 ## PyCon Sri Lanka 2022
 

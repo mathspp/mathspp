@@ -1,4 +1,4 @@
-# Pydon'ts v4
+# Pydon'ts – Write elegant Python code v4
 
 ## PyCon Portugal 2022
 
