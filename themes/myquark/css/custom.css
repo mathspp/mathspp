@@ -513,8 +513,8 @@ pre:hover > div > i.clipboard-icon {
 }
 
 .modular-text {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
 }
 
 .modular-features.offset-box .frame-box { /* Offset box in modular pages. */
