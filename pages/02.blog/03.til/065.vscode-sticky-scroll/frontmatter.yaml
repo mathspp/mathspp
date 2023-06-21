@@ -1,0 +1,19 @@
+date: 21-06-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to use VS Code's sticky scroll feature."
+    og:image: https://mathspp.com/blog/til/vscode-sticky-scroll/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/vscode-sticky-scroll/thumbnail.webp
+references:
+  - "VS Code 1.70 release notes, [https://code.visualstudio.com/updates/v1_70#_editor-sticky-scroll](https://code.visualstudio.com/updates/v1_70#_editor-sticky-scroll) [last accessed 21-06-2023];"
+routes:
+    aliases:
+        - "/blog/til/065"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - productivity
+      - programming
+      - vscode
+title: "TIL #065 – VS Code sticky scroll"
+visible: false
