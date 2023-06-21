@@ -3,6 +3,7 @@
 ## EuroPython 2021
 
 This was my very first conference talk and what I consider a great milestone in my career.
+
 In this Python talk, I continuously refactored a piece of code by using Python features elegantly.
 
  - Where: [EuroPython 2021](https://ep2021.europython.eu/talks/Bz5dtEe-pydonts/), virtual
