@@ -15,5 +15,3 @@ For example, I show how APL helped me understand how list comprehensions work.
 </div>
 
 ---
-
-[dunder-article]: /blog/pydonts/dunder-methods

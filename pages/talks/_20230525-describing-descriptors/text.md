@@ -4,7 +4,7 @@
 
 In this Python talk, I introduce descriptors and show they are not black magic.
 
- - Where: [PyCon Sri Lanka](http://pycon.lk) 2023, virtual
+ - Where: [PyCon Sri Lanka 2023](http://pycon.lk), virtual
  - When: 25th of May, 2023
  - Written version of the talk: [blog article][article]
  - Video recording: TBA

@@ -4,7 +4,7 @@
 
 In this Python talk, I teach the key ideas necessary for you to finally understand list, dict, and set comprehensions, and generator expressions.
 
- - Where: [PyOhio 2022](https://www.pyohio.org/2022/program/talks/comprehending-comprehensions) 2022, virtual
+ - Where: [PyOhio 2022](https://www.pyohio.org/2022/program/talks/comprehending-comprehensions), virtual
  - When: 30th of July, 2022
  - Written version of the talk: [book](https://gum.co/comprehending-comprehensions)
  - Video recording: [view on YouTube](https://youtu.be/ScsElLE_Pak) or below

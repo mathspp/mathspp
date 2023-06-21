@@ -14,7 +14,9 @@ content:
           - "_20220730-comprehending-comprehensions"
           - "_20220714-smoosh-all-the-things"
           - "_20220712-python-objects-under-the-hood"
+          - "_20220429-why-mastering-python-is-impossible"
           - "_20220325-why-apl-is-a-language-worth-knowing"
+          - "_20220222-pydonts-v3"
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "Overview of all the talks I have given and other public speaking appearances."
