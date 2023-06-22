@@ -1,4 +1,4 @@
-# Why mastering Python is impossible and that's OK
+# Why mastering Python is impossible and why that's OK
 
 ## University College London meetup
 

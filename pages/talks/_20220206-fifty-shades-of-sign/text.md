@@ -1,4 +1,4 @@
-# Fifty Shades of `sign`
+# Fifty shades of sign
 
 ## PyCascades 2022
 
