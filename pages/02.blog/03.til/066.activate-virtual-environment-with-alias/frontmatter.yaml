@@ -1,7 +1,7 @@
 date: 05-07-2023
 metadata:
     author: Rodrigo Girão Serrão
-    description: "Today I learned how to create an alias to activate my Python virtual environments with a single word."
+    description: "Today I learned how to create an alias to activate my Python virtual environments with a single-word command."
     og:image: https://mathspp.com/blog/til/activate-virtual-environment-with-alias/thumbnail.webp
     twitter:image: https://mathspp.com/blog/til/activate-virtual-environment-with-alias/thumbnail.webp
 routes:

@@ -1,4 +1,4 @@
-Today I learned how to create an alias to activate my Python virtual environments with a single word.
+Today I learned how to create an alias to activate my Python virtual environments with a single-word command.
 
 ===
 
