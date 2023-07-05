@@ -4,7 +4,7 @@ Today I learned how to create an alias to activate my Python virtual environment
 
 # Shell aliases
 
-[All][^1] shells allow you to create aliases, which essentially act as shortcuts for commands you type often.
+All[^1] shells allow you to create aliases, which essentially act as shortcuts for commands you type often.
 How you create an alias differs from shell to shell, but it is common to have a configuration file in which you type something like:
 
 ```zsh
