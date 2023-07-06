@@ -1,0 +1,20 @@
+date: 06-07-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to create a VS Code extension to do custom syntax highlighting."
+    og:image: https://mathspp.com/blog/til/vscode-extension-for-custom-syntax-highlighting/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/vscode-extension-for-custom-syntax-highlighting/thumbnail.webp
+references:
+    - "Visual Studio Code, Your First Extension Guide, [https://code.visualstudio.com/api/get-started/your-first-extension](https://code.visualstudio.com/api/get-started/your-first-extension) [last accessed 06-07-2023];"
+    - "Visual Studio Code, Syntax Highlighting Guide, [https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide) [last accessed 06-07-2023];"
+    - "“Writing a TextMate Grammar”, [https://www.apeth.com/nonblog/stories/textmatebundle.html](https://www.apeth.com/nonblog/stories/textmatebundle.html) [last accessed 06-07-2023];"
+routes:
+    aliases:
+        - "/blog/til/067"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - textual
+      - vscode
+title: "TIL #067 – VS Code extension for custom syntax highlighting"
+visible: false
