@@ -7,7 +7,7 @@ Today I learned how to create a VS Code extension to do custom syntax highlighti
 At my day job, developing [Textual], I have been [tasked with writing a VS Code extension that does proper syntax colouring of Textual CSS][gh-issue].
 
 That's because Textual CSS looks a lot like regular CSS but the syntax highlighting of regular CSS doesn't look great.
-For example, notice how the Textual CSS below looks uneven:
+For example, most editors will highlight the code below in an uneven way:
 
 ```css
 ModalScreen, #input, .some-class {
@@ -15,6 +15,8 @@ ModalScreen, #input, .some-class {
     tint: $primary 30%;
 }
 ```
+
+(Try copying & pasting into your code editor of choice.)
 
 For example, the selectors `#input` and `.some-class` are highlighted but the selector `ModalScreen` isn't.
 Furthermore, Textual CSS has rules that regular CSS doesn't, and that is why `border` is a different colour than `tint`.
