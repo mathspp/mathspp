@@ -22,12 +22,21 @@ Suppose that you have two repositories, `parent` and `child`, and you want to ne
 Here is how you could do this:
 
 ```bash
-~:$ cd parent  # Open the `parent` folder.
-~/parent:$ git clone https://github.com/xxx/child  # Clone the `child` inside the parent
+# Open the `parent` folder.
+~:$ cd parent
+
+# Clone the `child` inside the parent.
 # This will create a folder `child` inside `parent`.
+# (The child sub-repo can be inside a folder with a different name.)
+~/parent:$ git clone https://github.com/xxx/child
+
+# Add that folder as a submodule linked to a repo at a given URL.
+# (This creates a new file `.gitmodules`.)
 ~/parent:$ git submodule add https://github.com/xxx/child child
 #             repository URL ^    local path for the repo ^^^^^
-~/parent:$ git commit -m "Add child submodule."  # Commit the submodule.
+
+# Commit & push the submodule.
+~/parent:$ git commit -m "Add child submodule."
 ~/parent:$ git push
 ```
 
