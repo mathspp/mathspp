@@ -2062,7 +2062,7 @@ class TodoItem(Widget):
 
     def compose(self):
         with Horizontal():
-            yield Button("✅", classes="emoji-button", id="done")
+            yield Button("✅", classes="emoji-button", id="delete")
             yield Button("📝", classes="emoji-button", id="edit")
             yield self.description_label
             yield self.date_label
