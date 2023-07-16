@@ -73,7 +73,6 @@ An application, in Textual, is a class that inherits from `textual.app.App`.
 Then, to _run_ your app, you need to instantiate it and call its method `run`:
 
 ```py
-# your_first_app.py
 from textual.app import App
 
 
@@ -127,7 +126,6 @@ We do this via the `App.compose` method, which must return an iterable of widget
 For ease of use, it is recommended that you yield your widgets one at a time:
 
 ```py
-# widgets.py
 from textual.app import App
 from textual.widgets import Button, Header
 
@@ -152,7 +150,6 @@ Many widgets can be customised when they are instantiated.
 For example, the header can be set to show a clock with the current time and a button can have a non-default text:
 
 ```py
-# widgets.py
 from textual.app import App
 from textual.widgets import Button, Header
 
