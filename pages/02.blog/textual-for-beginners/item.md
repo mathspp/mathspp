@@ -2,6 +2,8 @@ This tutorial will introduce beginners to the many features that Textual offers 
 
 ===
 
+![Two screenshots of a TODO app built with Textual, which is the end result you get if you follow along this Textual tutorial for beginners.](_shots.webp "A TODO app in Textual.")
+
 
 # Introduction
 
