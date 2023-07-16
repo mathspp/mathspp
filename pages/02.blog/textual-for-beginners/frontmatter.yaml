@@ -1,0 +1,14 @@
+date: 17-07-2023
+metadata:
+    author: "Rodrigo Girão Serrão"
+    description: "This tutorial will introduce beginners to the many features that Textual offers to build elegant and lightweight TUIs."
+    og:image: "https://mathspp.com/blog/textual-for-beginners/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/textual-for-beginners/thumbnail.webp"
+slug: "textual-for-beginners"
+taxonomy:
+    category: "blogpost"
+    tag:
+      - "programming"
+      - "python"
+      - "textual"
+title: Textual for beginners
