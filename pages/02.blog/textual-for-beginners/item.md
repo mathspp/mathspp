@@ -1985,9 +1985,9 @@ Now, I'd like you to use this knowledge to polish your TODO app:
 
 In case you are not very imaginative, you _can_ try to make your app look like mine, which I show below.
 
-![A Textual modal screen customised with some CSS.](_todo_app_modal.webp "The modal screen of my app.")
-
 ![A Textual app showing a couple of TODO items with a clean and polished look.](_todo_app_items.webp "Some TODO items.")
+
+![A Textual modal screen customised with some CSS.](_todo_app_modal.webp "The modal screen of my app.")
 
 !!! To make such short buttons, you will want to look at the style `min-width`.
 !!! `Button` sets a default value of `16`, so you'll want to overwrite that with a smaller value.
