@@ -1383,7 +1383,7 @@ Over the past sections, you learned about:
  - getting values from a screen by using a screen callback.
 
 
-## Challenge
+## Second challenge
 
 Now, I want you to take the things you just learned, and use them to improve the prototype you have from the first challenge.
 Bear in mind that the features I will ask you to add to the app do not require many lines of code but they will also not be trivial to implement if you are just starting out with Textual!
