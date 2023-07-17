@@ -1,0 +1,16 @@
+date: 17-07-2023 22:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned that generators support membership testing with the operator `in`."
+    og:image: https://mathspp.com/blog/til/generator-membership-testing/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/generator-membership-testing/thumbnail.webp
+routes:
+    aliases:
+        - "/blog/til/069"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - python
+title: "TIL #069 – generator membership testing"
+visible: false
