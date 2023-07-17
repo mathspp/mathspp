@@ -58,8 +58,7 @@ But now, think about it.
 How can Python tell that 999 is not inside the generator `gen`?
 It had to iterate over it, which means it had to go through all the `yield` expressions already!
 In turn, this means that the generator was already exhausted.
-
-In other words, the generator is empty:
+It is already empty:
 
 ```pycon
 >>> next(gen)
@@ -68,7 +67,9 @@ Traceback (most recent call last):
 StopIteration
 ```
 
-What this also means is that if you asked for values that look like they are there, you will get `False` when you expected `True`:
+In practice, if a generator reports that a given value is _not_ in the generator, then it is probably because of this issue; because you had already iterated _past_ the value that you were looking for.
+
+Let me show you another example of this:
 
 ```pycon
 >>> def generator():
@@ -84,6 +85,22 @@ False
 >>> 2 in gen
 False
 >>> 3 in gen
+False
+```
+
+This example might look obvious to you because I am using a non-existing value to exhaust the generator.
+However, this issue can also arise after successful membership tests:
+
+```pycon
+>>> def generator():
+...     yield 1
+...     yield 2
+...     yield 3
+...
+>>> gen = generator()
+>>> 2 in gen
+True
+>>> 1 in gen
 False
 ```
 
