@@ -1377,7 +1377,7 @@ Over the past sections, you learned about:
  - message posting via the method `post_message`;
  - dynamic widget removal via the method `remove`;
  - reactive attributes and watcher methods (`watch_`);
- - the decorator `on` to handle methods;
+ - the decorator `on` to handle messages;
  - using identifiers to distinguish widgets and their events;
  - modal screens and how to create them; and
  - getting values from a screen by using a screen callback.
