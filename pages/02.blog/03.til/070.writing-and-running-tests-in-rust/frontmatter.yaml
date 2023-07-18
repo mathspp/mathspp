@@ -1,0 +1,16 @@
+date: 18-07-2023 12:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to write and run tests in the Rust programming language."
+    og:image: https://mathspp.com/blog/til/writing-and-running-tests-in-rust/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/writing-and-running-tests-in-rust/thumbnail.webp
+routes:
+    aliases:
+        - "/blog/til/070"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - rust
+title: "TIL #070 – writing and running tests in Rust"
+visible: false

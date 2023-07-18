@@ -122,4 +122,6 @@ Other than that small challenge, that's it for now! [Stay tuned][subscribe] and 
 # ???
 ```
 
+That's it for now! [Stay tuned][subscribe] and I'll see you around!
+
 [subscribe]: /subscribe
