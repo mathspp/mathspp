@@ -43,7 +43,9 @@ fn is_adult_is_false_for_kids() {
 ```
 
 The macro `assert!` expects a Boolean value and it will fail if the Boolean is `false`.
-There is, _at least_, one other assertion macro, `assert_eq!`, that takes two values and compares them; if they differ, the test fails.
+
+I know that there is, _at least_, one other assertion macro in Rust.
+`assert_eq!` takes two values, compares them, and if they differ, the test fails.
 
 Your whole file could look like this:
 
