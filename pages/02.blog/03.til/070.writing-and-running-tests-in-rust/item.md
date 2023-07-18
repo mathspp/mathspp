@@ -73,7 +73,7 @@ fn is_adult_is_false_for_kids() {
 ```
 
 
-# How to run a Rust test
+# How to run your Rust tests
 
 To run your Rust tests, you just use the command `cargo test`.
 That's it!
