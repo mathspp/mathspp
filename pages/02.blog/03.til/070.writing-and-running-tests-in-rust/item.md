@@ -7,7 +7,8 @@ Today I learned how to write and run tests in the Rust programming language.
 I'm attending [a Rust tutorial at EuroPython 2023](https://ep2023.europython.eu/session/write-your-first-web-api-with-rust) and I just learned how to write and run tests in Rust.
 Turns out it is quite straightforward!
 
-! I'm a Rust beginner, so I don't know if there are other, more advanced and flexible ways of writing tests.
+! I'm a Rust beginner!
+! I don't know if there are other ways of writing tests, possibly more advanced and/or more flexible.
 ! What I'm showing is just a simple way of creating tests.
 
 Suppose you have a function that determines whether or not a given age corresponds to an adult age in Europe (or, at least, most European countries):
