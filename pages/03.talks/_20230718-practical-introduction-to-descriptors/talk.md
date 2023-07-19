@@ -12,7 +12,6 @@ In this impromptu Python tutorial, I gave a practical introduction to descriptor
 
 This tutorial had not been scheduled in advance.
 The day before, I noticed there was an empty slot in the schedule.
-
 After talking to the organisers, we concluded it was OK for me to use that slot and so I whipped up a short, practical tutorial for descriptors.
 
 
