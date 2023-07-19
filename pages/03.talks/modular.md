@@ -9,6 +9,7 @@ content:
         custom:
           - "_hero"
           - "_invite-me"
+          - "_20230717-textual-todo-tutorial"
           - "_20230525-describing-descriptors"
           - "_20220924-pydonts-v4"
           - "_20220730-comprehending-comprehensions"
