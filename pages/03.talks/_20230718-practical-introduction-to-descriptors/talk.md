@@ -13,7 +13,15 @@ In this impromptu Python tutorial, I gave a practical introduction to descriptor
 
 This tutorial had not been scheduled in advance.
 The day before, I noticed there was an empty slot in the schedule.
-After talking to the organisers, we concluded it was OK for me to use that slot and so I whipped up a short, practical tutorial for descriptors.
+After talking to the organisers, we concluded it was OK for me to use that slot and so I whipped up a short, practical tutorial for descriptors!
+
+I got incredible feedback!
+A participant, Sofia, wrote:
+
+ > “Fantastic workshop about descriptors!
+ > I came out of it having learnt a lot about what goes on in the background.
+ > Really loved the friendly approach and the practical exercises with solutions so that everyone can follow.
+ > Keep going 🚀”
 
 
 [article]: /blog/pydonts/describing-descriptors
