@@ -9,8 +9,8 @@
         <div class="columns {{ page.header.image_align|default('align-right') }}">
             {% if image %}
             <div class="column col-6 col-md-12">
-                {% if page.header.event %}
-                <h2>{{ page.header.event }}</h2>
+                {% if page.header.event_name %}
+                <h2>{{ page.header.event_name }}</h2>
                 {% endif %}
                 {{ content|raw }}
             </div>
@@ -19,8 +19,8 @@
             </div>
             {% else %}
             <div class="column col-12">
-                {% if page.header.event %}
-                <h2>{{ page.header.event }}</h2>
+                {% if page.header.event_name %}
+                <h2>{{ page.header.event_name }}</h2>
                 {% endif %}
                 {{ content|raw }}
             </div>
