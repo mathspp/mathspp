@@ -18,10 +18,10 @@ After talking to the organisers, we concluded it was OK for me to use that slot 
 I got incredible feedback!
 A participant, Sofia, wrote:
 
- > “Fantastic workshop about descriptors!
- > I came out of it having learnt a lot about what goes on in the background.
- > Really loved the friendly approach and the practical exercises with solutions so that everyone can follow.
- > Keep going 🚀”
+“Fantastic workshop about descriptors!
+I came out of it having learnt a lot about what goes on in the background.
+Really loved the friendly approach and the practical exercises with solutions so that everyone can follow.
+Keep going 🚀”
 
 
 [article]: /blog/pydonts/describing-descriptors
