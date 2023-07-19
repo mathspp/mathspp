@@ -1,6 +1,7 @@
 ---
 title: Practical introduction to descriptors
 event: "EuroPython 2023"
+image_align: left
 ---
 
 In this impromptu Python tutorial, I gave a practical introduction to descriptors.
