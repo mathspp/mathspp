@@ -1,6 +1,7 @@
-# Build a terminal TODO application with Textual
-
-## EuroPython 2023
+---
+title: Build a terminal TODO application with Textual
+event: EuroPython 2023
+---
 
 In this Python tutorial, I introduce people to [Textual](https://github.com/textualize/textual) by building a TODO that runs in a terminal.
 
