@@ -11,6 +11,4 @@ In this Python tutorial, I introduce people to [Textual](https://github.com/text
  - Slide deck: [link](https://github.com/Textualize/TODO-tutorial)
 
 
----
-
 [article]: https://mathspp.com/blog/textual-for-beginners
