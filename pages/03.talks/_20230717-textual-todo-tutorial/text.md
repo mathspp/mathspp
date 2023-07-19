@@ -1,6 +1,4 @@
----
-title: Build a terminal TODO application with Textual
----
+# Build a terminal TODO application with Textual
 
 ## EuroPython 2023
 
