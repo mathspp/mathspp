@@ -211,7 +211,7 @@ nor does it imply a level of difficulty in understanding the methods.
 | `__len__` | `len(obj)` | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__len__) |
 | `__length_hint__` | Estimate length for optimisation purposes | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__length_hint__) |
 | `__getitem__` | Access `obj[key]` | [🗒️](/blog/pydonts/inner-workings-of-sequence-slicing#getting-items-from-sequences) [🔗](https://docs.python.org/3/reference/datamodel.html#object.__getitem__) |
-| `__setitem__` | `obj[key] = ...` or `obj[] | [🗒️](/blog/pydonts/inner-workings-of-sequence-slicing#setting-items-deleting-items-and-container-emulation) [🔗](https://docs.python.org/3/reference/datamodel.html#object.__setitem__) |
+| `__setitem__` | `obj[key] = ...` or `obj[]` | [🗒️](/blog/pydonts/inner-workings-of-sequence-slicing#setting-items-deleting-items-and-container-emulation) [🔗](https://docs.python.org/3/reference/datamodel.html#object.__setitem__) |
 | `__delitem__` | `del obj[key]` | [🗒️](/blog/pydonts/inner-workings-of-sequence-slicing#setting-items-deleting-items-and-container-emulation) [🔗](https://docs.python.org/3/reference/datamodel.html#object.__delitem__) |
 | `__missing__` | Handle missing keys in `dict` subclasses | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__missing__) |
 | `__iter__` | `iter(obj)` / `for ... in obj` (iterating over) | [🔗](https://docs.python.org/3/reference/datamodel.html#object.__iter__) |
