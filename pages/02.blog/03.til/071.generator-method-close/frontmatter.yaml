@@ -1,7 +1,7 @@
 date: 21-07-2023 23:00
 metadata:
     author: Rodrigo Girão Serrão
-    description: "Today I learned about the generator `close` method."
+    description: "Today I learned about the generator method `close`."
     og:image: https://mathspp.com/blog/til/generator-close-method/thumbnail.webp
     twitter:image: https://mathspp.com/blog/til/generator-close-method/thumbnail.webp
 routes:
@@ -13,5 +13,5 @@ taxonomy:
       - generators
       - programming
       - python
-title: "TIL #071 – generator `close` method"
+title: "TIL #071 – generator method close"
 visible: false

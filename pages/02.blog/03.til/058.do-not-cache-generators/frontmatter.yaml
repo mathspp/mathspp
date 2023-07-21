@@ -10,6 +10,7 @@ routes:
 taxonomy:
     category: [blogpost, til]
     tag:
+      - generators
       - optimisation
       - programming
       - python

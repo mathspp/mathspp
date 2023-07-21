@@ -7,6 +7,7 @@ slug: "010"
 taxonomy:
     category: [blogpost, til]
     tag:
+      - generators
       - programming
       - python
 visible: false
