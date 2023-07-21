@@ -10,6 +10,7 @@ routes:
 taxonomy:
     category: [blogpost, til]
     tag:
+      - generators
       - programming
       - python
 title: "TIL #069 – generator membership testing"
