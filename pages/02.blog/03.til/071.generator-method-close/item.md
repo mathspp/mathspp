@@ -5,7 +5,7 @@ Today I learned about the generator method `close`.
 # The generator method `close`
 
 Python generators have a method called `close` that “closes” the generator.
-Closing the descriptor means that if you call `next` on it again, it will raise `StopIteration`, which is essentially the same as if the generator had been exhausted completely.
+Closing the generator means that if you call `next` on it again, it will raise `StopIteration`, which is essentially the same as if the generator had been exhausted completely.
 
 Here is a trivial example that shows this method in use:
 
@@ -59,6 +59,9 @@ Loop `for` has been cancelled.
 
 If I understood correctly, Maxim claimed that there was a common pattern with some infinite loops implemented in terms of `while True:`.
 In certain situations, those loops can get messy because of the logic used inside the loop to determine when to use the keyword `break`!
+
+This is relevant because calling `close` on the generator that we are iterating over will _prevent the next iteration_ but it will finish running the code of the current iteration.
+On the other hand, the keyword `break` will exit the loop altogether as soon as it is encountered, skipping the remainder of the code in the loop.
 
 This was a very specific use case for `close`, but `close` can be used with any generator; it doesn't have to be an infinite one.
 
