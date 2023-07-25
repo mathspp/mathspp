@@ -1,0 +1,19 @@
+date: 25-07-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to read the bytecode from a file of compiled Python bytecode (.pyc)."
+    og:image: https://mathspp.com/blog/til/read-bytecode-from-a-pyc-file/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/read-bytecode-from-a-pyc-file/thumbnail.webp
+references:
+  - "pycDcode, [https://github.com/BarakAharoni/pycDcode](https://github.com/BarakAharoni/pycDcode) [last accessed 25-07-2023];"
+routes:
+    aliases:
+        - "/blog/til/072"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - compilers
+      - programming
+      - python
+title: "TIL #072 – read bytecode from a .pyc file"
+visible: false
