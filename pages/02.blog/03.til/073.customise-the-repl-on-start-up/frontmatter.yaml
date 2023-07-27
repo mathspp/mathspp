@@ -1,0 +1,21 @@
+date: 27-07-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to customise the Python REPL on start-up."
+    og:image: https://mathspp.com/blog/til/customise-the-repl-on-start-up/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/customise-the-repl-on-start-up/thumbnail.webp
+references:
+  - "[“Boost Your Git DX”](https://gumroad.com/a/817193683/wlrcr), by Adam Johnson;"
+  - "Python 3 Docs, The Interactive Startup File, [https://docs.python.org/3/tutorial/appendix.html#the-interactive-startup-file](https://docs.python.org/3/tutorial/appendix.html#the-interactive-startup-file) [last accessed 27-07-2023];"
+routes:
+    aliases:
+        - "/blog/til/073"
+        - "/blog/til/customise-the-repl-on-startup"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - productivity
+      - programming
+      - python
+title: "TIL #073 – customise the REPL on start-up"
+visible: false
