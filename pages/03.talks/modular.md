@@ -10,6 +10,7 @@ content:
           - "_hero"
           - "_invite-me"
           - "_20230720-you-dont-know-comprehensions"
+          - "_20230720-how-dunder-methods-rule-python-under-the-hood"
           - "_20230718-practical-introduction-to-descriptors"
           - "_20230717-textual-todo-tutorial"
           - "_20230525-describing-descriptors"
