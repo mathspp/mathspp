@@ -1,0 +1,14 @@
+date: 29-07-2023 23:00
+metadata:
+    author: "Rodrigo Girão Serrão"
+    description: "ALL Python functions return something and this article explains how and why."
+    og:image: "https://mathspp.com/blog/all-functions-return-something/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/all-functions-return-something/thumbnail.webp"
+slug: "all-functions-return-something"
+taxonomy:
+    category: "blogpost"
+    tag:
+      - "compilers"
+      - "programming"
+      - "python"
+title: All functions return something
