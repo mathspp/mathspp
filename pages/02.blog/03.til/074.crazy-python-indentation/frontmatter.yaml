@@ -1,0 +1,16 @@
+date: 29-07-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned that indentation in Python can be quite crazy."
+    og:image: https://mathspp.com/blog/til/crazy-python-indentation/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/crazy-python-indentation/thumbnail.webp
+routes:
+    aliases:
+        - "/blog/til/074"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - python
+title: "TIL #074 – crazy Python indentation"
+visible: false
