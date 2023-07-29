@@ -79,7 +79,7 @@ The truth of the matter is that _**ALL**_ functions return _something_.
 And the ones that look like they don't?
 That's because they return `None`.
 
-For example, here is me assigning the return value of calling `print` to a variable and then printing the value of that variable:
+For example, here I'm assigning the return value of calling `print` to a variable and then printing the value of that variable:
 
 ```pycon
 >>> print_return = print("Hello, world!")
@@ -88,9 +88,9 @@ Hello, world!
 None
 ```
 
-As another example, the method `.append` of Python lists also look like they don't return anything.
+As another example, the method `.append` of Python lists also looks like it doesn't return anything.
 Wrong!
-They return `None`:
+It returns `None`:
 
 ```pycon
 >>> my_list = [73, 42]
@@ -99,7 +99,7 @@ They return `None`:
 None
 ```
 
-If `print` or `append` didn't return a thing, we wouldn't be able to assign their calls to variables.
+If `print` or `append` didn't return a thing, we wouldn't be able to assign the results of calling them to variables.
 But we can.
 And we can print those values.
 So, we know that those functions always return something.
@@ -118,7 +118,7 @@ def empty():
     pass
 ```
 
-If you use the module `dis` to dissect that function, you will see the instructions that Python runs under the hood when you call the function.
+If you use [the module `dis`][module-dis] to dissect that function, you will see the instructions that Python runs under the hood when you call the function.
 For such a simple function, the result of dissecting it tells a lot about how Python works:
 
 ```pycon
@@ -137,8 +137,8 @@ For such a simple function, the result of dissecting it tells a lot about how Py
 
 Notice the three words `RESUME`, `LOAD_CONST`, and `RETURN_VALUE`?
 Those are the three instructions that Python runs when going over the function `empty`.
-The `RESUME` does some set-up for when you enter the function.
 
+The `RESUME` does some set-up for when you enter the function.
 But the `LOAD_CONST` and `RETURN_VALUE` came out of nowhere!
 See the `(None)` in front of `LOAD_CONST`?
 What that tells us is that Python will return the value `None` from the function.
@@ -172,14 +172,14 @@ So, the instructions for `empty` resemble the instructions of a function whose o
 To really drive the point home, let us compare the dissect of `empty` with the result of dissecting a function that only contains the statement `return None`:
 
 ```pycon
->>> def return_none():                     | >>> def empty():
-...     return None                        | ...     pass
-...                                        | ...
->>> dis.dis(return_none)                   | >>> dis.dis(empty)
-  1      0 RESUME               0          |   1      0 RESUME               0           
-                                           |
-  2      2 LOAD_CONST           0 (None)   |   2      2 LOAD_CONST           0 (None)    
-         4 RETURN_VALUE                    |          4 RETURN_VALUE                     
+>>> def return_none():                  | >>> def empty():
+...     return None                     | ...     pass
+...                                     | ...
+>>> dis.dis(return_none)                | >>> dis.dis(empty)
+  1      0 RESUME            0          |   1      0 RESUME            0
+                                        |
+  2      2 LOAD_CONST        0 (None)   |   2      2 LOAD_CONST        0 (None)
+         4 RETURN_VALUE                 |          4 RETURN_VALUE
 ```
 
 This shows that Python essentially injected the `return None` in your empty function, but Python will do it in other cases too.
@@ -188,7 +188,8 @@ Whenever Python detects that your function doesn't return anything explicitly, P
 As a challenge, write a function that does something but without returning a value.
 Use the module `dis` to dissect it and find the `return None` that Python inserted in the bytecode.
 
-Here is an example of such a function:
+Below is an example of such a function.
+Take a look at the very end of the list of instructions to find the `return None`!
 
 ```pycon
 >>> def greet(name):
@@ -268,3 +269,4 @@ Having few(er) special cases means the language is easier to learn and, ultimate
 
 
 [zen-of-python]: /blog/pydonts/pydont-disrespect-the-zen-of-python
+[module-dis]: https://docs.python.org/3/library/dis.html
