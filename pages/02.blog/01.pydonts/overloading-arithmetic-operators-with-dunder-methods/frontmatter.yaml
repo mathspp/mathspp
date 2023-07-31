@@ -1,0 +1,17 @@
+date: 31-07-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This article shows you how to overload the arithmetic operators in Python with dunder methods."
+    og:image: "https://mathspp.com/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods/thumbnail.webp"
+references:
+    - "Python 3 Docs, Data Model, [https://docs.python.org/3/reference/datamodel.html](https://docs.python.org/3/reference/datamodel.html) [last accessed 27-03-2023];"
+slug: "overloading-arithmetic-operators-with-dunder-methods"
+taxonomy:
+    category: [blogpost]
+    tag:
+      - "arithmetics"
+      - "dunder methods"
+      - "programming"
+      - "python"
+title: "Overloading arithmetic operators with dunder methods | Pydon't 🐍"

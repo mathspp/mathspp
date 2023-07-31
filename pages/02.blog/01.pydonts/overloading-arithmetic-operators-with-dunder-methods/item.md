@@ -2,14 +2,14 @@ This article shows you how to overload the arithmetic operators in Python with d
 
 ===
 
-![](thumbnail.png)
+![](thumbnail.webp)
 
 # Introduction
 
 Python lets you override the arithmetic operators like `+` for addition or `*` for multiplication through [dunder methods][dunder-methods].
 [Dunder methods][dunder-methods] are special methods whose name starts and ends with a double underscore (hence, “dunder”), and some [dunder methods][dunder-methods] are specific to arithmetic operations.
 
-In this article, you will learn:
+In this Pydon't, you will learn:
 
  - how to implement unary arithmetic operators:
    - negation (`-p`);
@@ -40,6 +40,12 @@ We will start by explaining how dunder methods work and we will give a couple of
 Then, we introduce the mechanics behind the binary arithmetic operators, basing the examples on the binary operator `+`.
 
 After we introduce all the concepts and mechanics that Python uses to handle binary arithmetic operators, we will provide an example of a class that implements all the arithmetic dunder methods that have been mentioned above.
+
+
+<!--v-->
+!!! You can now get your free copy of the ebook “Pydon'ts – Write beautiful Python code” [on Gumroad][gumroad-pydonts]
+!!! to help support the series of “Pydon't” articles 💪.
+<!--^-->
 
 
 # The example we will be using
@@ -2299,6 +2305,37 @@ if __name__ == "__main__":
  In order to be able to divide two vectors together, the two vectors need to have the same length and then you'll divide corresponding coordinates.
  4. Write down a paragraph explaining why it is that we don't need to implement methods like `__ror__` and `__rmatmul__`.
  5. Experiment with implementing `__imatmul__` and `__ior__` and see if the fact that those two methods return numbers instead of vectors breaks expressions like `v1 |= v2` and `v1 @= v2`.
+
+
+# Conclusion
+
+Here's the main takeaway of this Pydon't, for you, on a silver platter:
+
+ > “*The behaviour of arithmetic operators in Python is implemented via their respective dunder methods (and the reversed and in-place variants) and the singleton value `NotImplemented`.*”
+
+This Pydon't showed you that:
+
+ - the arithmetic operators are implemented through special methods called dunder methods;
+ - the arithmetic dunder methods are called automatically by Python behind the scenes;
+ - custom objects can interact with the standard arithmetic operators via those same dunder methods;
+ - binary arithmetic operators correspond to dunder methods with two parameters;
+ - the singleton value `NotImplemented` is used behind the scenes to flag operator/argument(s) combinations that cannot be handled;
+ - you need to use `NotImplemented` so that Python knows what methods to call;
+ - the singleton value `NotImplemented` is distinct from the exception `NotImplementedError`;
+ - binary arithmetic operators have a reflected variant, with an `r` prepended to the name;
+ - the reflected variants are called when
+   - the original call wasn't handled by the left operand of the operator (that is, it returned `NotImplemented`); or
+   - when the right operand is from a subclass of the left operand.
+ - binary arithmetic operators have an in-place variant, with an `i` prepended to the name;
+ - the in-place variants are called by the augmented assignment operators, like `+=` and `-=`; and
+ - if the in-place variants are not available, Python unfolds the augmented assignment naturally.
+
+Additionally, we also provided a custom class that implements virtually every single arithmetic dunder method (reversed and in-place variants included) and we provided a couple of exercises for you to practise.
+
+<!-- v -->
+If you liked this Pydon't be sure to leave a reaction below and share this with your friends and fellow Pythonistas.
+Also, [don't forget to subscribe to the newsletter][subscribe] so you don't miss a single Pydon't!
+<!-- ^ -->
 
 
 [dunder-methods]: /blog/pydonts/dunder-methods
