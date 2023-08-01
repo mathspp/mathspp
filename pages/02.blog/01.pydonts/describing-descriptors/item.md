@@ -969,7 +969,7 @@ Let us put this pattern into practice.
 ### What does `staticmethod` do?
 
 Before trying to implement `staticmethod`, we need to know what it does.
-If you don't know what `staticmethod` does yet, you can [check the docs][statimethod-docs] or you can check the code example below for a quick reminder.
+If you don't know what `staticmethod` does yet, you can [check the docs][staticmethod-docs] or you can check the code example below for a quick reminder.
 
 `staticmethod` is used as a decorator that creates a function that looks like a method but does not receive `self` as its first argument.
 
