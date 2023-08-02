@@ -179,10 +179,10 @@ nor does it imply a level of difficulty in understanding the methods.
 | `__init__` | Initialise object | [docs](https://docs.python.org/3/reference/datamodel.html#object.__init__) |
 | `__new__` | Create object | [docs](https://docs.python.org/3/reference/datamodel.html#object.__new__) |
 | `__del__` | Destroy object | [docs](https://docs.python.org/3/reference/datamodel.html#object.__del__) |
-| `__repr__` | Compute “official” string representation / `repr(obj)` | [blog](/blog/pydonts/str-and-repr) [docs](https://docs.python.org/3/reference/datamodel.html#object.__repr__) |
-| `__str__` | Pretty print object / `str(obj)` / `print(obj)` | [blog](/blog/pydonts/str-and-repr) [docs](https://docs.python.org/3/reference/datamodel.html#object.__str__) |
+| `__repr__` | Compute “official” string representation / `repr(obj)` | [blog](/blog/pydonts/str-and-repr); [docs](https://docs.python.org/3/reference/datamodel.html#object.__repr__) |
+| `__str__` | Pretty print object / `str(obj)` / `print(obj)` | [blog](/blog/pydonts/str-and-repr); [docs](https://docs.python.org/3/reference/datamodel.html#object.__str__) |
 | `__bytes__` | `bytes(obj)` | [docs](https://docs.python.org/3/reference/datamodel.html#object.__bytes__) |
-| `__format__` | Custom string formatting | [blog](/blog/pydonts/string-formatting-comparison#custom-formatting) [docs](https://docs.python.org/3/reference/datamodel.html#object.__format__) |
+| `__format__` | Custom string formatting | [blog](/blog/pydonts/string-formatting-comparison#custom-formatting); [docs](https://docs.python.org/3/reference/datamodel.html#object.__format__) |
 | `__lt__` | `obj < ...` | [docs](https://docs.python.org/3/reference/datamodel.html#object.__lt__) |
 | `__le__` | `obj <= ...` | [docs](https://docs.python.org/3/reference/datamodel.html#object.__le__) |
 | `__eq__` | `obj == ...` | [docs](https://docs.python.org/3/reference/datamodel.html#object.__eq__) |
@@ -190,7 +190,7 @@ nor does it imply a level of difficulty in understanding the methods.
 | `__gt__` | `obj > ...` | [docs](https://docs.python.org/3/reference/datamodel.html#object.__gt__) |
 | `__ge__` | `obj >= ...` | [docs](https://docs.python.org/3/reference/datamodel.html#object.__ge__) |
 | `__hash__` | `hash(obj)` / object as dictionary key | [docs](https://docs.python.org/3/reference/datamodel.html#object.__hash__) |
-| `__bool__` | `bool(obj)` / define Truthy/Falsy value of object | [blog](/blog/pydonts/truthy-falsy-and-bool) [docs](https://docs.python.org/3/reference/datamodel.html#object.__bool__) |
+| `__bool__` | `bool(obj)` / define Truthy/Falsy value of object | [blog](/blog/pydonts/truthy-falsy-and-bool); [docs](https://docs.python.org/3/reference/datamodel.html#object.__bool__) |
 | `__getattr__` | Fallback for attribute access | [docs](https://docs.python.org/3/reference/datamodel.html#object.__getattr__) |
 | `__getattribute__` | Implement attribute access: `obj.name` | [docs](https://docs.python.org/3/reference/datamodel.html#object.__getattribute__) |
 | `__setattr__` | Set attribute values: `obj.name = value` | [docs](https://docs.python.org/3/reference/datamodel.html#object.__setattr__) |
@@ -207,33 +207,33 @@ nor does it imply a level of difficulty in understanding the methods.
 | `__call__` | Emulate callables / `obj(*args, **kwargs)` | [docs](https://docs.python.org/3/reference/datamodel.html#object.__call__) |
 | `__len__` | `len(obj)` | [docs](https://docs.python.org/3/reference/datamodel.html#object.__len__) |
 | `__length_hint__` | Estimate length for optimisation purposes | [docs](https://docs.python.org/3/reference/datamodel.html#object.__length_hint__) |
-| `__getitem__` | Access `obj[key]` | [blog](/blog/pydonts/inner-workings-of-sequence-slicing#getting-items-from-sequences) [docs](https://docs.python.org/3/reference/datamodel.html#object.__getitem__) |
-| `__setitem__` | `obj[key] = ...` or `obj[]` | [blog](/blog/pydonts/inner-workings-of-sequence-slicing#setting-items-deleting-items-and-container-emulation) [docs](https://docs.python.org/3/reference/datamodel.html#object.__setitem__) |
-| `__delitem__` | `del obj[key]` | [blog](/blog/pydonts/inner-workings-of-sequence-slicing#setting-items-deleting-items-and-container-emulation) [docs](https://docs.python.org/3/reference/datamodel.html#object.__delitem__) |
+| `__getitem__` | Access `obj[key]` | [blog](/blog/pydonts/inner-workings-of-sequence-slicing#getting-items-from-sequences); [docs](https://docs.python.org/3/reference/datamodel.html#object.__getitem__) |
+| `__setitem__` | `obj[key] = ...` or `obj[]` | [blog](/blog/pydonts/inner-workings-of-sequence-slicing#setting-items-deleting-items-and-container-emulation); [docs](https://docs.python.org/3/reference/datamodel.html#object.__setitem__) |
+| `__delitem__` | `del obj[key]` | [blog](/blog/pydonts/inner-workings-of-sequence-slicing#setting-items-deleting-items-and-container-emulation); [docs](https://docs.python.org/3/reference/datamodel.html#object.__delitem__) |
 | `__missing__` | Handle missing keys in `dict` subclasses | [docs](https://docs.python.org/3/reference/datamodel.html#object.__missing__) |
 | `__iter__` | `iter(obj)` / `for ... in obj` (iterating over) | [docs](https://docs.python.org/3/reference/datamodel.html#object.__iter__) |
 | `__reversed__` | `reverse(obj)` | [docs](https://docs.python.org/3/reference/datamodel.html#object.__reversed__) |
 | `__contains__` | `... in obj` (membership test) | [docs](https://docs.python.org/3/reference/datamodel.html#object.__contains__) |
-| `__add__` | `obj + ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations) [docs](https://docs.python.org/3/reference/datamodel.html#object.__add__) |
-| `__radd__` | `... + obj` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#reflected-dunder-methods) [docs](https://docs.python.org/3/reference/datamodel.html#object.__radd__) |
-| `__iadd__` | `obj += ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#augmented-arithmetic-assignment) [docs](https://docs.python.org/3/reference/datamodel.html#object.__iadd__) |
-| `__sub__` [^2] [^3] | `obj - ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations) [docs](https://docs.python.org/3/reference/datamodel.html#object.__sub__) |
-| `__mul__` [^2] [^3] | `obj * ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations) [docs](https://docs.python.org/3/reference/datamodel.html#object.__mul__) |
-| `__matmul__` [^2] [^3] | `obj @ ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations) [docs](https://docs.python.org/3/reference/datamodel.html#object.__matmul__) |
-| `__truediv__` [^2] [^3] | `obj / ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations) [docs](https://docs.python.org/3/reference/datamodel.html#object.__div__) |
-| `__floordiv__` [^2] [^3] | `obj // ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations) [docs](https://docs.python.org/3/reference/datamodel.html#object.__floordiv__) |
-| `__mod__` [^2] [^3] | `obj % ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations) [docs](https://docs.python.org/3/reference/datamodel.html#object.__mod__) |
-| `__divmod__` [^2] | `divmod(obj, ...)` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations) [docs](https://docs.python.org/3/reference/datamodel.html#object.__divmod__) |
-| `__pow__` [^2] [^3] | `obj ** ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations) [docs](https://docs.python.org/3/reference/datamodel.html#object.__pow__) |
-| `__lshift__` [^2] [^3] | `obj << ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations) [docs](https://docs.python.org/3/reference/datamodel.html#object.__lshift__) |
-| `__rshift__` [^2] [^3] | `obj >> ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations) [docs](https://docs.python.org/3/reference/datamodel.html#object.__rshift__) |
-| `__and__` [^2] [^3] | `obj & ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations) [docs](https://docs.python.org/3/reference/datamodel.html#object.__and__) |
-| `__xor__` [^2] [^3] | `obj ^ ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations) [docs](https://docs.python.org/3/reference/datamodel.html#object.__xor__) |
-| `__or__` [^2] [^3] | `obj | ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations) [docs](https://docs.python.org/3/reference/datamodel.html#object.__or__) |
-| `__neg__` | `-obj` (unary) | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-the-unary-arithmetic-operations) [docs](https://docs.python.org/3/reference/datamodel.html#object.__neg__) |
-| `__pos__` | `+obj` (unary) | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-the-unary-arithmetic-operations) [docs](https://docs.python.org/3/reference/datamodel.html#object.__pos__) |
-| `__abs__` | `abs(obj)` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-the-unary-arithmetic-operations) [docs](https://docs.python.org/3/reference/datamodel.html#object.__abs__) |
-| `__invert__` | `~obj` (unary) | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-the-unary-arithmetic-operations) [docs](https://docs.python.org/3/reference/datamodel.html#object.__invert__) |
+| `__add__` | `obj + ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations); [docs](https://docs.python.org/3/reference/datamodel.html#object.__add__) |
+| `__radd__` | `... + obj` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#reflected-dunder-methods); [docs](https://docs.python.org/3/reference/datamodel.html#object.__radd__) |
+| `__iadd__` | `obj += ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#augmented-arithmetic-assignment); [docs](https://docs.python.org/3/reference/datamodel.html#object.__iadd__) |
+| `__sub__` [^2] [^3] | `obj - ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations); [docs](https://docs.python.org/3/reference/datamodel.html#object.__sub__) |
+| `__mul__` [^2] [^3] | `obj * ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations); [docs](https://docs.python.org/3/reference/datamodel.html#object.__mul__) |
+| `__matmul__` [^2] [^3] | `obj @ ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations); [docs](https://docs.python.org/3/reference/datamodel.html#object.__matmul__) |
+| `__truediv__` [^2] [^3] | `obj / ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations); [docs](https://docs.python.org/3/reference/datamodel.html#object.__div__) |
+| `__floordiv__` [^2] [^3] | `obj // ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations); [docs](https://docs.python.org/3/reference/datamodel.html#object.__floordiv__) |
+| `__mod__` [^2] [^3] | `obj % ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations); [docs](https://docs.python.org/3/reference/datamodel.html#object.__mod__) |
+| `__divmod__` [^2] | `divmod(obj, ...)` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations); [docs](https://docs.python.org/3/reference/datamodel.html#object.__divmod__) |
+| `__pow__` [^2] [^3] | `obj ** ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations); [docs](https://docs.python.org/3/reference/datamodel.html#object.__pow__) |
+| `__lshift__` [^2] [^3] | `obj << ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations); [docs](https://docs.python.org/3/reference/datamodel.html#object.__lshift__) |
+| `__rshift__` [^2] [^3] | `obj >> ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations); [docs](https://docs.python.org/3/reference/datamodel.html#object.__rshift__) |
+| `__and__` [^2] [^3] | `obj & ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations); [docs](https://docs.python.org/3/reference/datamodel.html#object.__and__) |
+| `__xor__` [^2] [^3] | `obj ^ ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations); [docs](https://docs.python.org/3/reference/datamodel.html#object.__xor__) |
+| `__or__` [^2] [^3] | `obj | ...` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-binary-arithmetic-operations); [docs](https://docs.python.org/3/reference/datamodel.html#object.__or__) |
+| `__neg__` | `-obj` (unary) | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-the-unary-arithmetic-operations); [docs](https://docs.python.org/3/reference/datamodel.html#object.__neg__) |
+| `__pos__` | `+obj` (unary) | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-the-unary-arithmetic-operations); [docs](https://docs.python.org/3/reference/datamodel.html#object.__pos__) |
+| `__abs__` | `abs(obj)` | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-the-unary-arithmetic-operations); [docs](https://docs.python.org/3/reference/datamodel.html#object.__abs__) |
+| `__invert__` | `~obj` (unary) | [blog](/blog/pydonts/overloading-arithmetic-operators-with-dunder-methods#the-dunder-methods-for-the-unary-arithmetic-operations); [docs](https://docs.python.org/3/reference/datamodel.html#object.__invert__) |
 | `__complex__` | `complex(obj)` | [docs](https://docs.python.org/3/reference/datamodel.html#object.__complex__) |
 | `__int__` | `int(obj)` | [docs](https://docs.python.org/3/reference/datamodel.html#object.__int__) |
 | `__float__` | `float(obj)` | [docs](https://docs.python.org/3/reference/datamodel.html#object.__float__) |
