@@ -145,7 +145,7 @@ Done.
 
 In the REPL session above, we used our new function to load the test
 data into an array called `data`, and then we used a double
-`for` loop and some indexing arithmetics (`idx = row*28 + col`)
+`for` loop and some indexing arithmetic (`idx = row*28 + col`)
 to print the original 28 by 28 image, which is represented
 by 784 integers in a row inside `data`.
 We printed the very first row, if you change the `0` in `data[0, 1+idx]`

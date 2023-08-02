@@ -20,7 +20,7 @@ Using the four numbers $3$, $3$, $8$ and $8$ and the four arithmetic operations 
  - the precedence of operations can be changed by the use of $()$;
  - numbers cannot be used by positioning them in a special way, e.g. you can't make $33$ by joining the two $3$s and you can't make $27$ by writing $3^3$.
 
-I am not giving you a puzzle with a cheap trick involved. This is pure arithmetics.
+I am not giving you a puzzle with a cheap trick involved. This is pure arithmetic.
 
 An example valid expression would be $(3+3)\times (8+8)$ except this is not the solution because it gives $96$ instead of $24$.
 

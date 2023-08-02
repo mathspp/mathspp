@@ -170,7 +170,7 @@ f ← {
 }
 ```
 
-Because `ReadUPC` is supposed to accept barcodes read from left to right and from right to left, I spent some time trying to figure out how an elegant way for the function to recursively call itself if the barcode was read from right to left. In the end, because of all the input checking I was doing I thought that would just make the function inefficient and I ended up using some basic arithmetics (multiplying by $1$ and by $0$ strategically) to distinguish between the two directions the input barcode could be given in.
+Because `ReadUPC` is supposed to accept barcodes read from left to right and from right to left, I spent some time trying to figure out how an elegant way for the function to recursively call itself if the barcode was read from right to left. In the end, because of all the input checking I was doing I thought that would just make the function inefficient and I ended up using some basic arithmetic (multiplying by $1$ and by $0$ strategically) to distinguish between the two directions the input barcode could be given in.
 
 #### Problem 8
 

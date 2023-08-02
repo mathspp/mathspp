@@ -10,5 +10,5 @@ taxonomy:
     category: [blogpost, problem]
     tag:
       - "mathematics"
-      - "modular arithmetics"
+      - "modular arithmetic"
 twig_first: true

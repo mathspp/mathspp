@@ -9,7 +9,7 @@ slug: send-more-money
 taxonomy:
     category: [blogpost, problem]
     tag:
-      - arithmetics
+      - arithmetic
       - logic
       - mathematics
 twig_first: true

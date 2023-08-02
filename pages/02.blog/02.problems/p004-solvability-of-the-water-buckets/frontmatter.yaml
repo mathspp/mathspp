@@ -11,5 +11,5 @@ taxonomy:
     tag:
       - invariants
       - mathematics
-      - modular arithmetics
+      - modular arithmetic
 twig_first: true

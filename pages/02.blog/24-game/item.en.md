@@ -14,7 +14,7 @@ The "24 Game" is a simple game. You are given four numbers between $1$ and $9$ (
  - the only operations available are addition, subtraction, multiplication and division;
  - operations may be used repeatedly or not at all;
  - operation precedence can be manipulated by the use of parentheses;
- - no "clever tricks" should be used, only simple arithmetics.
+ - no "clever tricks" should be used, only simple arithmetic.
 
 
 #### Examples

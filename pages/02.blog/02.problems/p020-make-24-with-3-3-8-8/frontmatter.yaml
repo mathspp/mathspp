@@ -10,6 +10,6 @@ slug: make-24-with-3-3-8-8
 taxonomy:
     category: [blogpost, problem]
     tag:
-      - arithmetics
+      - arithmetic
       - mathematics
 twig_first: true

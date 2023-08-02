@@ -59,7 +59,7 @@ Let us take $n = 5$ and number the mathematicians from $0$ to $4$, starting from
 
 Now we pretend we are the mathematician number $0$, and so we see the numbers $0$, $3$, $0$ and $1$, which give $4$ when added up. Now, we are the mathematician $0$ so our guess $g_0$ is how much is left to go from $4$ to $0$ which is... $1$, so that is our guess.
 
- > In case you are not familiar with modular arithmetics, adding and subtracting is just like you are used to, but numbers wrap around the _modulus_ that in this case is $5$. This is like the hours in a day wrapping around $24$!
+ > In case you are not familiar with modular arithmetic, adding and subtracting is just like you are used to, but numbers wrap around the _modulus_ that in this case is $5$. This is like the hours in a day wrapping around $24$!
  > To do additions and subtractions modulo $5$, just look at the small numbers next to the mathematicians and count clockwise when adding, counter-clockwise when subtracting. For example, $3 + 3$ is $1$ because if you start at mathematician $3$ and you count $3$ mathematicians starting from that one, you end up at mathematician $1$.
 
 To recap, mathematician $0$ guessed $1$ because the other mathematicians' hats added up to $4$ and $4 + 1 \equiv 0$ modulo $5$. Unfortunately, the mathematician got it wrong because its hat had a $3$ on it...

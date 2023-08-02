@@ -51,7 +51,7 @@ If you need any clarification whatsoever, feel free to ask in the comment sectio
 # Solution
 
 The problem of determining the amount of coconuts that the sailors gathered
-can be tackled with a bit of modular arithmetics.
+can be tackled with a bit of modular arithmetic.
 
 Let us say that after all sailors fiddled with the pile, there were $x$ coconuts left.
 We will use $x$ to write an expression for the number of coconuts originally available,

@@ -11,7 +11,7 @@ slug: "overloading-arithmetic-operators-with-dunder-methods"
 taxonomy:
     category: [blogpost]
     tag:
-      - "arithmetics"
+      - "arithmetic"
       - "dunder methods"
       - "programming"
       - "python"
