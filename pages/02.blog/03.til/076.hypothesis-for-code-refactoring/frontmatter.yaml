@@ -1,0 +1,18 @@
+date: 08-08-2023 18:10
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to use Hypothesis to do confident code refactoring."
+    og:image: https://mathspp.com/blog/til/hypothesis-for-code-refactoring/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/hypothesis-for-code-refactoring/thumbnail.webp
+routes:
+    aliases:
+        - "/blog/til/076"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - hypothesis
+      - programming
+      - python
+      - testing
+title: "TIL #076 – Hypothesis for code refactoring"
+visible: false
