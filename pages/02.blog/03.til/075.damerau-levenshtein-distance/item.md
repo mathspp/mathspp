@@ -1,4 +1,4 @@
-Today I learned about the Damerau-Levenshtein distance.
+Today I learned about the Damerau-Levenshtein distance used on strings in the field of genetics.
 
 ===
 

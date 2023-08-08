@@ -1,7 +1,7 @@
 date: 08-08-2023 17:50
 metadata:
     author: Rodrigo Girão Serrão
-    description: "Today I learned about the Damerau-Levenshtein distance."
+    description: "Today I learned about the Damerau-Levenshtein distance used on strings in the field of genetics."
     og:image: https://mathspp.com/blog/til/damerau-levenshtein-distance/thumbnail.webp
     twitter:image: https://mathspp.com/blog/til/damerau-levenshtein-distance/thumbnail.webp
 references:
