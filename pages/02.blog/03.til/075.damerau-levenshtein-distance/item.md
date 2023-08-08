@@ -96,6 +96,8 @@ def dl(a, b):
 This code replaces each branch of the mathematical definition with an `if` statement, and we use `edit_distances` to collect all the possible (recursive) values to consider.
 Finally, we compute the minimum value and return it!
 
+You can find a different implementation that is more elegant [in this article](/blog/til/hypothesis-for-code-refactoring#code-refactoring).
+
 
 That's it for now! [Stay tuned][subscribe] and I'll see you around!
 
