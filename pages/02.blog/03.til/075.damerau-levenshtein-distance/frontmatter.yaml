@@ -1,0 +1,19 @@
+date: 08-08-2023 17:50
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned about the Damerau-Levenshtein distance."
+    og:image: https://mathspp.com/blog/til/damerau-levenshtein-distance/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/damerau-levenshtein-distance/thumbnail.webp
+references:
+  - "Damerau-Levenshtein distance, Wikipedia, [https://en.wikipedia.org/wiki/Damerau–Levenshtein_distance](https://en.wikipedia.org/wiki/Damerau–Levenshtein_distance) [last accessed 08-08-2023];"
+routes:
+    aliases:
+        - "/blog/til/075"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - algorithms
+      - programming
+      - python
+title: "TIL #075 – Damerau-Levenshtein distance"
+visible: false
