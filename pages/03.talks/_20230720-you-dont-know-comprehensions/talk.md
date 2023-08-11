@@ -1,6 +1,7 @@
 ---
 title: You DON'T know comprehensions 🤷
 event: "EuroPython 2023"
+image_align: left
 ---
 
 In this poster session, I make the claim that the vast majority of people don't know comprehensions well enough!
