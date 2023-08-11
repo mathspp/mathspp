@@ -1,6 +1,7 @@
 ---
 title: "How dunder methods rule Python under the hood"
 event: "EuroPython 2023"
+image_align: right
 ---
 
 In this impromptu talk, I gave an introduction to dunder methods for a beginner audience.
