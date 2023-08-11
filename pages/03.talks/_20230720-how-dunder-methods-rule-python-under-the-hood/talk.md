@@ -14,3 +14,5 @@ In this impromptu talk, I gave an introduction to dunder methods for a beginner 
 
 This talk had not been scheduled in advance!
 There was a last-minute cancellation and the organisation reached out to me to fill in the slot.
+
+Original photo by brauliolaraph.com.
