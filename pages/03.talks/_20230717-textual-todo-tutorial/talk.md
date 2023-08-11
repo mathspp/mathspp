@@ -12,5 +12,6 @@ In this Python tutorial, I introduce people to [Textual](https://github.com/text
 
 Alexander attended my tutorial and he wrote “Rodrigo did a really good job with the tutorial. I hope he starts teaching more regularly because his tutorial was fun and I learned a lot.”
 
+Original photo by [Braulio Lara](https://brauliolaraph.com).
 
 [article]: /blog/textual-for-beginners
