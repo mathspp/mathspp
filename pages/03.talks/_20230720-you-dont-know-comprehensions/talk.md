@@ -12,6 +12,10 @@ Thankfully, this is very easy to fix!
  - Written version of the poster: [book][book]
  - Download the poster for yourself: [poster][poster]
 
+Dozens approached me during my poster presentation – which I repeated tirelessly from noon until 3 pm because people just kept showing up – and I am very proud to say that my poster (presentation) got a lot of praise.
+
+But, most importantly, I got feedback from people that learned new things about list comprehensions thanks to my poster.
+
 
 [book]: /comprehending-comprehensions
 [poster]: /comprehending-comprehensions-poster
