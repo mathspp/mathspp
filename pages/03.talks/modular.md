@@ -9,6 +9,8 @@ content:
         custom:
           - "_hero"
           - "_invite-me"
+          - "_20230815-how-apl-made-me-a-better-python-developer"
+          - "_20230720-what-apl-taught-me-about-python"
           - "_20230720-you-dont-know-comprehensions"
           - "_20230720-how-dunder-methods-rule-python-under-the-hood"
           - "_20230718-practical-introduction-to-descriptors"
