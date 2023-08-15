@@ -1,6 +1,6 @@
 ---
 title: How APL made me a better Python developer
-event: "EuroPython 2023"
+event: "Func Prog Sweden meetup"
 ---
 
 This talk is a personal account of the things that I do differently in Python after having learned APL, a language that seemingly had nothing to do with Python and nothing to offer with respect to my Python code.
