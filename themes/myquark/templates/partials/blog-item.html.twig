@@ -10,17 +10,6 @@
         {% include 'partials/blog/taxonomy.html.twig' %}
     </div>
 {% endif %}
-
-    {% if active or toc_config_var('active') %}  <!-- Table of contents. -->
-    <div class="page-toc">
-        {% set table_of_contents = toc(page.content) %}
-        {% if table_of_contents is not empty %}
-        <h4>{{ 'PLUGIN_PAGE_TOC.TABLE_OF_CONTENTS'|t }}</h4>
-        {{ table_of_contents|raw }}
-        {% endif %}
-    </div>
-    {% endif %}
-
     <div class="e-content">
         {{ page.summary|raw }}
         {% include 'partials/blog/announcement.html.twig' %}
