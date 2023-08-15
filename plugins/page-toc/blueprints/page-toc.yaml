@@ -1,0 +1,142 @@
+form:
+  fields:
+    tabs:
+      fields:
+        advanced:
+          type: tab
+
+          fields:
+            header.page-toc-section:
+              type: section
+              title: Page Table-of-Contents
+              underline: true
+
+              fields:
+                header.page-toc.active:
+                  toggleable: true
+                  type: toggle
+                  label: PLUGIN_PAGE_TOC.ACTIVE_BY_DEFAULT_PAGE
+                  help: PLUGIN_PAGE_TOC.ACTIVE_BY_DEFAULT_PAGE_HELP
+                  data-default@: ['\Grav\Plugin\PageTOCPlugin::configVar', 'active']
+                  options:
+                    1: PLUGIN_ADMIN.YES
+                    0: PLUGIN_ADMIN.NO
+                  validate:
+                    type: bool
+
+                header.page-toc.start:
+                  toggleable: true
+                  type: select
+                  size: x-small
+                  label: PLUGIN_PAGE_TOC.START_TOC_HEADERS
+                  help: PLUGIN_PAGE_TOC.START_TOC_HEADERS_HELP
+                  data-default@: ['\Grav\Plugin\PageTOCPlugin::configVar', 'start']
+                  options:
+                    1: H1
+                    2: H2
+                    3: H3
+                    4: H4
+                    5: H5
+                    6: H6
+                  validate:
+                    type: number
+                header.page-toc.depth:
+                  toggleable: true
+                  type: range
+                  label: PLUGIN_PAGE_TOC.DEPTH_TOC_HEADERS
+                  help: PLUGIN_PAGE_TOC.DEPTH_TOC_HEADERS_HELP
+                  data-default@: ['\Grav\Plugin\PageTOCPlugin::configVar', 'depth']
+                  validate:
+                    min: 1
+                    max: 6
+                header.page-toc.hclass:
+                  toggleable: true
+                  type: text
+                  label: PLUGIN_PAGE_TOC.HEADER_CSS_CLASSES
+                  help: PLUGIN_PAGE_TOC.HEADER_CSS_CLASSES_HELP
+                  data-default@: ['\Grav\Plugin\PageTOCPlugin::configVar', 'hclass']
+
+            header.page-toc-anchors-section:
+              type: section
+              title: PLUGIN_PAGE_TOC.PAGE_ANCHORS_SECTION
+              underline: true
+
+              fields:
+                header.page-toc.anchors.start:
+                  toggleable: true
+                  type: select
+                  label: PLUGIN_PAGE_TOC.START_ANCHOR_HEADERS
+                  size: x-small
+                  classes: fancy
+                  data-default@: ['\Grav\Plugin\PageTOCPlugin::configVar', 'anchors.start']
+                  options:
+                    1: H1
+                    2: H2
+                    3: H3
+                    4: H4
+                    5: H5
+                    6: H6
+                  validate:
+                    type: number
+                header.page-toc.anchors.depth:
+                  toggleable: true
+                  type: range
+                  label: PLUGIN_PAGE_TOC.DEPTH_ANCHOR_HEADERS
+                  classes: fancy
+                  data-default@: ['\Grav\Plugin\PageTOCPlugin::configVar', 'anchors.depth']
+                  validate:
+                    min: 1
+                    max: 6
+                header.page-toc.anchors.link:
+                  toggleable: true
+                  type: toggle
+                  label: PLUGIN_PAGE_TOC.LINK_ANCHOR_HEADERS
+                  highlight: 1
+                  data-default@: ['\Grav\Plugin\PageTOCPlugin::configVar', 'anchors.link']
+                  options:
+                    1: Enabled
+                    0: Disabled
+                  validate:
+                    type: bool
+                header.page-toc.anchors.aria:
+                  toggleable: true
+                  type: text
+                  label: PLUGIN_PAGE_TOC.ARIA_LABEL
+                  data-default@: ['\Grav\Plugin\PageTOCPlugin::configVar', 'anchors.aria']
+                header.page-toc.anchors.class:
+                  toggleable: true
+                  type: text
+                  label: PLUGIN_PAGE_TOC.ANCHORS_CLASS
+                  help: PLUGIN_PAGE_TOC.ANCHORS_CLASS_HELP
+                  data-default@: ['\Grav\Plugin\PageTOCPlugin::configVar', 'anchors.class']
+                header.page-toc.anchors.icon:
+                  toggleable: true
+                  type: text
+                  label: PLUGIN_PAGE_TOC.ANCHORS_ICON
+                  help: PLUGIN_PAGE_TOC.ANCHORS_ICON_HELP
+                  data-default@: ['\Grav\Plugin\PageTOCPlugin::configVar', 'anchors.icon']
+                  size: x-small
+                header.page-toc.anchors.position:
+                  toggleable: true
+                  type: select
+                  label: PLUGIN_PAGE_TOC.ANCHORS_POSITION
+                  help: PLUGIN_PAGE_TOC.ANCHORS_POSITION_HELP
+                  size: small
+                  data-default@: ['\Grav\Plugin\PageTOCPlugin::configVar', 'anchors.position']
+                  options:
+                    before: PLUGIN_PAGE_TOC.BEFORE_TEXT
+                    after: PLUGIN_PAGE_TOC.AFTER_TEXT
+                header.page-toc.anchors.slug_maxlen:
+                  toggleable: true
+                  type: number
+                  label: PLUGIN_PAGE_TOC.SLUG_MAXLEN
+                  help: PLUGIN_PAGE_TOC.SLUG_MAXLEN_HELP
+                  size: x-small
+                  data-default@: ['\Grav\Plugin\PageTOCPlugin::configVar', 'anchors.slug_maxlen']
+                  append: 'chars'
+                header.page-toc.anchors.slug_prefix:
+                  toggleable: true
+                  type: text
+                  label: PLUGIN_PAGE_TOC.SLUG_PREFIX
+                  help: PLUGIN_PAGE_TOC.SLUG_PREFIX_HELP
+                  data-default@: ['\Grav\Plugin\PageTOCPlugin::configVar', 'anchors.slug_prefix']
