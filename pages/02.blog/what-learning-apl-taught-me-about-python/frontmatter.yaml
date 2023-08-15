@@ -1,0 +1,14 @@
+date: 15-08-2023
+metadata:
+    author: "Rodrigo Girão Serrão"
+    description: "Learning programming in APL taught me many new things about Python and this article is an account of that."
+    og:image: "https://mathspp.com/blog/what-learning-apl-taught-me-about-python/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/what-learning-apl-taught-me-about-python/thumbnail.webp"
+slug: "what-learning-apl-taught-me-about-python"
+taxonomy:
+    category: "blogpost"
+    tag:
+      - "apl"
+      - "programming"
+      - "python"
+title: What learning APL taught me about Python
