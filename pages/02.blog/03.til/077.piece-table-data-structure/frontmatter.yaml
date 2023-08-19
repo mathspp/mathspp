@@ -1,0 +1,22 @@
+date: 19-08-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned about the piece table data structure."
+    og:image: https://mathspp.com/blog/til/piece-table-data-structure/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/piece-table-data-structure/thumbnail.webp
+references:
+  - "“Piece Table”, Wikipedia, [https://en.wikipedia.org/wiki/Piece_table](https://en.wikipedia.org/wiki/Piece_table) [last accessed 18-08-2023]"
+  - "“How to write a text editor”, [https://rentafounder.com/how-to-write-a-text-editor/](https://rentafounder.com/how-to-write-a-text-editor/) [last accessed 18-08-2023]"
+  - "“Piece Chains”, [https://www.catch22.net/tuts/neatpad/piece-chains/](https://www.catch22.net/tuts/neatpad/piece-chains/) [last accessed 18-08-2023]"
+routes:
+    aliases:
+        - "/blog/til/077"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - algorithms
+      - data structures
+      - programming
+      - python
+title: "TIL #077 – piece table data structure"
+visible: false
