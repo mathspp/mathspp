@@ -22,7 +22,7 @@ Then, whenever the user adds or removes text, we add or remove corresponding spa
 According to the sources I found, text editors may typically use other bits and bobs together with this data structure to handle the text and user input.
 Here, I provide a minimal toy implementation that modifies the piece table through insertions, deletions, and replacements, of arbitrary text.
 
-My class `PieceTable` is supposed to work like the examples below show, by providing three methods:
+My class `PieceTable` implements three methods:
 
  1. `insert(idx, text)` – inserts the string `text` at index `idx`, so that the first character of `text` ends up at the index `idx`;
  2. `delete(begin, end)` – deletes the substring from indices `begin` up to `end`, including the beginning and excluding the end (like a slice `obj[begin:end]`); and
@@ -46,11 +46,14 @@ pt.replace(1, 5, "n existing")  # "An existing word: herald"
 ## Python implementation of a piece table
 
 I provide a toy implementation below.
-To reduce the amount of work I have had to do, I decided to implement `insert` and `delete` at the expense of `replace`.
+To reduce the amount of work I had to do, I decided to implement `insert` and `delete` at the expense of `replace`.
 All I needed to do was realise that
 
  - `insert(idx, text) == replace(idx, idx, text)`; and
  - `delete(begin, end) == replace(begin, end, "")`.
+
+Additionally, to make the code a bit simpler, I added a “sentinel node” that is always present at the beginning of the piece table and that holds no data whatsoever.
+This made it simpler to insert text at the beginning.
 
 So, here is the code:
 
