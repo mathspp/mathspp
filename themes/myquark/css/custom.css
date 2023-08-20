@@ -405,7 +405,7 @@ a.headeroffset {
      * For the 488 = 976/2, we found out that 976 is the maximum
      * width that the blog content can take up (as per its CSS). */
     left: calc(50vw - 488px - 5rem);
-    box-shadow: 0 4px 8px #f8f8f244;
+    box-shadow: 0 4px 8px #f8f8f220;
     z-index: 9999;
     cursor: pointer;
     font-weight: 600;
