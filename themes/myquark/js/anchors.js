@@ -4,8 +4,6 @@ const headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
 // Loop through each header and process them
 headers.forEach(header => {
   // Create an ID from the header text
-  if (header.id !== undefined) { return; }
-
   const id = header.textContent
     .toLowerCase()
     .replace(/\s+/g, '-')
