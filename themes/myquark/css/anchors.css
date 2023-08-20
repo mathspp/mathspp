@@ -1,0 +1,15 @@
+.anchor-link {
+    transition: opacity 0.5s ease;
+    position: absolute;
+    opacity: 0;
+    margin-left: 5px;
+    padding-right: 8px;
+}
+
+.anchor-link:after {
+    content: attr(data-anchor-icon);
+}
+
+.anchor-link:hover, .anchor-link:focus {
+    opacity: 0.5;
+}
