@@ -72,7 +72,7 @@ class PageTOCPlugin extends Plugin
             'onTwigInitialized'         => ['onTwigInitialized', 0],
             'onTwigTemplatePaths'       => ['onTwigTemplatePaths', 0],
             'onTwigSiteVariables'       => ['onTwigSiteVariables', 0],
-            'onPageContentProcessed'    => ['onPageContentProcessed', -20],
+            'onPageContentProcessed'    => ['onPageContentProcessed', -1000],
         ]);
     }
 
