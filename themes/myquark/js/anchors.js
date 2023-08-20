@@ -2,17 +2,13 @@ document.addEventListener("DOMContentLoaded", function() {
     // Find all h tags in the page
     const headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
 
-    // Loop through each header and process them
+    // Iterate through each header
     headers.forEach(header => {
-    // Create an ID from the header text
+    // Generate the ID from the header text
     const id = header.textContent
         .toLowerCase()
-        .replace(/\s+/g, '-')
-        .replace(/[^\w-]/g, '');
-
-    // Add the ID to the header and set the data attribute
-    header.id = id;
-    header.setAttribute('data-anchor-processed', 'true');
+        .replace(/\W+/g, '-')
+        .replace(/^-+|-+$/g, '');
 
     // Create a link tag
     const link = document.createElement('a');
@@ -20,8 +16,11 @@ document.addEventListener("DOMContentLoaded", function() {
     link.href = `#${id}`;
     link.className = 'anchor-link';
 
-    // Add the link tag immediately after the header
-    header.parentNode.insertBefore(link, header.nextSibling);
+    // Set the data-anchor-processed attribute on the header
+    header.setAttribute('data-anchor-processed', 'true');
+
+    // Append the link as a child of the header
+    header.appendChild(link);
     });
 });
 
