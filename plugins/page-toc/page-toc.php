@@ -95,6 +95,14 @@ class PageTOCPlugin extends Plugin
             $this->registerTwigFunctions();
             $markup_fixer = new MarkupFixer();
             $content = $markup_fixer->fix($content, $this->getAnchorOptions($page));
+
+            if ($page->modular()) {
+                foreach ($page->modular() as $module) {
+                    $modularContent = $module->content();
+                    $module->setRawContent($markup_fixer->fix($modularContent, $this->getAnchorOptions($page)));
+                }
+            }
+
             $page->setRawContent($content);
         }
 
