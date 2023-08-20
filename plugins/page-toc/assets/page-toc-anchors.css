@@ -1,0 +1,22 @@
+.toc-anchor {
+    transition: hover 0.5s ease;
+    position: absolute;
+    opacity: 0;
+}
+
+.toc-anchor.after {
+    margin-left: 5px;
+}
+
+.toc-anchor.before {
+    margin-left: -22px;
+    padding-right: 8px;
+}
+
+.toc-anchor:after {
+    content: attr(data-anchor-icon);
+}
+
+:hover > .toc-anchor, .toc-anchor:focus {
+    opacity: .5;
+}
