@@ -88,7 +88,7 @@ class PageTOCPlugin extends Plugin
 
         $content = $page->content();
         $shortcode_exists = preg_match($this->toc_regex, $content);
-        $active = $this->configVar('active', $page, false);
+        $active = $this->configVar('active', $page, true);
 
         // Set ID anchors if needed
         if ($active || $shortcode_exists) {
