@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Iterate through each header
     headers.forEach(header => {
-        if (header.id !== undefined) { return; }
+        if (header.id !== "") { return; }
 
         // Generate the ID from the header text
         const id = header.textContent
