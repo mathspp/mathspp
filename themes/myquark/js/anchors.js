@@ -4,23 +4,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Iterate through each header
     headers.forEach(header => {
-    // Generate the ID from the header text
-    const id = header.textContent
-        .toLowerCase()
-        .replace(/\W+/g, '-')
-        .replace(/^-+|-+$/g, '');
+        if (header.id !== undefined) { return; }
 
-    // Create a link tag
-    const link = document.createElement('a');
-    link.setAttribute('data-anchor-icon', '#');
-    link.href = `#${id}`;
-    link.className = 'anchor-link';
+        // Generate the ID from the header text
+        const id = header.textContent
+            .toLowerCase()
+            .replace(/\W+/g, '-')
+            .replace(/^-+|-+$/g, '');
+        header.id = id;
 
-    // Set the data-anchor-processed attribute on the header
-    header.setAttribute('data-anchor-processed', 'true');
+        // Create a link tag
+        const link = document.createElement('a');
+        link.setAttribute('data-anchor-icon', '#');
+        link.href = `#${id}`;
+        link.className = 'anchor-link';
 
-    // Append the link as a child of the header
-    header.appendChild(link);
+        // Set the data-anchor-processed attribute on the header
+        header.setAttribute('data-anchor-processed', 'true');
+
+        // Append the link as a child of the header
+        header.appendChild(link);
     });
 });
 
