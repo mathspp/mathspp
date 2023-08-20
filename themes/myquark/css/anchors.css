@@ -10,6 +10,6 @@
     content: attr(data-anchor-icon);
 }
 
-.anchor-link:hover, .anchor-link:focus {
+:hover > .anchor-link, .anchor-link:focus {
     opacity: 0.5;
 }
