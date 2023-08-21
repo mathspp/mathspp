@@ -10,8 +10,8 @@ author:
   url: https://mathspp.com
 homepage: https://mathspp.com
 keywords: grav, plugin, anchors
-bugs: 
-docs: 
+bugs: ""
+docs: ""
 license: MIT
 
 dependencies:
@@ -32,7 +32,7 @@ form:
         type: bool
     include_css:
       type: toggle
-      label: "Include anchors CSS."
+      label: "Include anchors CSS"
       highlight: 1
       default: 1
       options:
@@ -42,7 +42,7 @@ form:
         type: bool
     active:
       type: toggle
-      label: "Active by default."
+      label: "Activate plugin"
       highlight: 1
       default: 1
       options:
