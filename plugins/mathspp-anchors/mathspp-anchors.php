@@ -47,11 +47,11 @@ class MathsppAnchorsPlugin extends Plugin
 
         // Enable the main event we are interested in
         $this->enable([
-            'onPageContentProcessed'    => ['onPageContentProcessed', -20],
+            'onPageInitialized' => ['onPageInitialized', 0],
         ]);
     }
 
-    public function onPageContentProcessed(Event $event)
+    public function onPageInitialized(Event $event)
     {
         /** @var PageInterface $page */
         $page = $event['page'];
