@@ -1,4 +1,2 @@
 hero_classes: "parallax overlay-dark-gradient text-light hero-fullscreen" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 hero_image: hero.webp
-mathspp-anchors:
-    active: false
