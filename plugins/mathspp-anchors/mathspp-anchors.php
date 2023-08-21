@@ -1,6 +1,7 @@
 <?php
 namespace Grav\Plugin;
 
+use Grav\Common\Assets;
 use Grav\Common\Data;
 use Grav\Common\Grav;
 use Grav\Common\Page\Interfaces\PageInterface;
