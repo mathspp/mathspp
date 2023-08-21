@@ -1,0 +1,52 @@
+name: Mathspp Anchors
+type: plugin
+slug: mathspp-anchors
+version: 0.0.1
+description: Add anchors to headers in a page
+icon: list
+author:
+  name: Rodrigo Girão Serrão
+  email: rodrigo@mathspp.com
+  url: https://mathspp.com
+homepage: https://mathspp.com
+keywords: grav, plugin, anchors
+bugs: 
+docs: 
+license: MIT
+
+dependencies:
+    - { name: grav, version: '>=1.7.26' }
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    include_css:
+      type: toggle
+      label: "Include anchors CSS."
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    active:
+      type: toggle
+      label: "Active by default."
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool

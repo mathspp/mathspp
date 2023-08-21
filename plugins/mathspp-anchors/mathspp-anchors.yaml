@@ -1,0 +1,3 @@
+enabled: true               # Plugin enabled
+include_css: true           # Include CSS
+active: true                # Anchor IDs processed and generated for all pages
