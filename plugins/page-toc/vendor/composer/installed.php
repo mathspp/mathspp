@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'pretty_version' => 'dev-develop',
+        'version' => 'dev-develop',
+        'type' => 'grav-plugin',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'reference' => '435d66f673904945450ba0f04add1a4b765abe7b',
+        'name' => 'trilbymedia/page-toc',
+        'dev' => true,
+    ),
+    'versions' => array(
+        'cocur/slugify' => array(
+            'pretty_version' => 'v4.0.0',
+            'version' => '4.0.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../cocur/slugify',
+            'aliases' => array(),
+            'reference' => '3f1ffc300f164f23abe8b64ffb3f92d35cec8307',
+            'dev_requirement' => false,
+        ),
+        'knplabs/knp-menu' => array(
+            'pretty_version' => 'v3.3.0',
+            'version' => '3.3.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../knplabs/knp-menu',
+            'aliases' => array(),
+            'reference' => '8bd3dc2afa22c65617c563c5e25e62d6e23e98c7',
+            'dev_requirement' => false,
+        ),
+        'trilbymedia/page-toc' => array(
+            'pretty_version' => 'dev-develop',
+            'version' => 'dev-develop',
+            'type' => 'grav-plugin',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'reference' => '435d66f673904945450ba0f04add1a4b765abe7b',
+            'dev_requirement' => false,
+        ),
+    ),
+);
