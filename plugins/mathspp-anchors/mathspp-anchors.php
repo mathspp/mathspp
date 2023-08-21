@@ -1,12 +1,12 @@
 <?php
 namespace Grav\Plugin;
 
-use Grav\Common\Assets;
 use Grav\Common\Data;
 use Grav\Common\Grav;
 use Grav\Common\Page\Interfaces\PageInterface;
 use Grav\Common\Plugin;
 use Grav\Common\Utils;
+use RocketTheme\Toolbox\Event\Event;
 
 
 /**
