@@ -1,16 +1,11 @@
 <?php
 namespace Grav\Plugin;
 
-use Composer\Autoload\ClassLoader;
 use Grav\Common\Data;
 use Grav\Common\Grav;
 use Grav\Common\Page\Interfaces\PageInterface;
 use Grav\Common\Plugin;
 use Grav\Common\Utils;
-use Grav\Plugin\PageToc\MarkupFixer;
-use Grav\Plugin\PageToc\TocGenerator;
-use RocketTheme\Toolbox\Event\Event;
-use Twig\TwigFunction;
 
 
 /**
