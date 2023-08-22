@@ -4,10 +4,6 @@ event: "EuroPython 2023"
 image_align: right
 ---
 
-# What APL taught me about Python ⚡️
-
-## EuroPython 2023
-
 In this lightning talk I wanted to share my personal story of how learning how to program in APL ended up teaching me things about Python.
 
  - Where: [EuroPython 2023](http://ep2023.europython.eu/)

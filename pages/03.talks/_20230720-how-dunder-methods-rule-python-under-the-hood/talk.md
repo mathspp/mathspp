@@ -4,10 +4,6 @@ event: "EuroPython 2023"
 image_align: right
 ---
 
-# How dunder methods rule Python under the hood
-
-## EuroPython 2023
-
 In this impromptu talk, I gave an introduction to dunder methods for a beginner audience.
 
  - Where: [EuroPython 2023](https://ep2023.europython.eu/session/how-dunder-methods-rule-python-under-the-hood)

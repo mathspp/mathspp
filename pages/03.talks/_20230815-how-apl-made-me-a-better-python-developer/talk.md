@@ -3,11 +3,6 @@ title: How APL made me a better Python developer
 event: "Func Prog Sweden meetup"
 ---
 
-# How APL made me a better Python developer
-
-## Func Prog Sweden meetup
-
-
 This talk is a personal account of the things that I do differently in Python after having learned APL, a language that seemingly had nothing to do with Python and nothing to offer with respect to my Python code.
 
  - Where: [Func Prog Sweden meetup](https://www.meetup.com/func-prog-sweden/events/294451071/), remote

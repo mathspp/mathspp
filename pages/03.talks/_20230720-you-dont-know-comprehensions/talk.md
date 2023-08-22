@@ -4,10 +4,6 @@ event: "EuroPython 2023"
 image_align: left
 ---
 
-# You DON'T know comprehensions 🤷
-
-## EuroPython 2023
-
 In this poster session, I make the claim that the vast majority of people don't know comprehensions well enough!
 Thankfully, this is very easy to fix!
 
