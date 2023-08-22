@@ -4,6 +4,10 @@ event: "EuroPython 2023"
 image_align: left
 ---
 
+# Practical introduction to descriptors
+
+## EuroPython 2023
+
 In this impromptu Python tutorial, I gave a practical introduction to descriptors.
 
  - Where: [EuroPython 2023](http://ep2023.europython.eu/session/practical-introduction-to-descriptors)
