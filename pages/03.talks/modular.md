@@ -1,6 +1,4 @@
 ---
-anchors:
-    active: false
 body_classes: "header-dark header-transparent"
 content:
     items: "@self.modular"
@@ -37,4 +35,7 @@ metadata:
     title: Talks
     twitter:image: "https://mathspp.com/talks/thumbnail.png"
 onpage_menu: false
+page-toc:
+    anchors:
+        depth: 1
 ---
