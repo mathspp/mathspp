@@ -1,0 +1,17 @@
+date: 22-08-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Learn some of the most common and useful features of the pathlib module, that allows you to manipulate files and directories."
+    og:image: "https://mathspp.com/blog/module-pathlib-overview/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/module-pathlib-overview/thumbnail.webp"
+references:
+  - "Python 3 docs, `pathlib`, [http://docs.python.org/3/library/pathlib](http://docs.python.org/3/library/pathlib) [last accessed 22-08-2023];"
+slug: "module-pathlib-overview"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - modules
+        - programming
+        - python
+title: Module pathlib overview
