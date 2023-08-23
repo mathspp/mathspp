@@ -1,6 +1,8 @@
 ---
 title: How APL made me a better Python developer
 event: "Func Prog Sweden meetup"
+process:
+    twig: true
 ---
 
 {% block headers %}
