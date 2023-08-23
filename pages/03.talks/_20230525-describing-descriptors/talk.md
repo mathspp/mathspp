@@ -15,6 +15,4 @@ In this Python talk, I introduce descriptors and show they are not black magic.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zCtyQS-c4dg?start=114" title="Describing descriptors" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
----
-
 [article]: https://mathspp.com/blog/pydonts/describing-descriptors
