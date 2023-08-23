@@ -4,10 +4,10 @@
 <section class="section modular-text {{ page.header.class}}">
     <section class="container {{ grid_size }}">
         {% if page.title %}
-            {{ add_anchors("<h1>" ~ page.title ~ "</h1>") }}
+            {{ add_anchors("<h2>" ~ page.title ~ "</h2>") }}
         {% endif %}
         {% if page.header.event %}
-        <h2>{{ page.header.event }}</h2>
+            {{ add_anchors("<h3>" ~ page.event ~ "</h3>")}}
         {% endif %}
         <div class="columns {{ page.header.image_align|default('align-right') }}">
             {% if image %}
