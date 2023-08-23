@@ -1,6 +1,7 @@
-# Pydon'ts – Write elegant Python code
-
-## EuroPython 2021
+---
+title: "Pydon'ts – Write elegant Python code"
+event: "EuroPython 2021"
+---
 
 This was my very first conference talk and what I consider a great milestone in my career.
 

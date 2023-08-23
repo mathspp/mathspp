@@ -1,6 +1,7 @@
-# Comprehending Comprehensions
-
-## PyOhio 2022
+---
+title: "Comprehending Comprehensions"
+event: "PyOhio 2022"
+---
 
 In this Python talk, I teach the key ideas necessary for you to finally understand list, dict, and set comprehensions, and generator expressions.
 
@@ -13,5 +14,3 @@ In this Python talk, I teach the key ideas necessary for you to finally understa
 <div style="text-align:center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ScsElLE_Pak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
-
----

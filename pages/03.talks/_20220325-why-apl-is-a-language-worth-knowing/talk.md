@@ -1,6 +1,7 @@
-# Why APL is a language worth knowing
-
-## FnConf 2022
+---
+title: "Why APL is a language worth knowing"
+event: "FnConf 2022"
+---
 
 In this talk I show how learning APL influenced the way I write Python code.
 For example, I show how APL helped me understand how list comprehensions work.
@@ -14,5 +15,3 @@ For example, I show how APL helped me understand how list comprehensions work.
 <div style="text-align:center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/j-qlYcIl61o?start=14" title="Why APL is a language worth knowing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
-
----

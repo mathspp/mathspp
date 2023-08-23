@@ -1,6 +1,7 @@
-# Fifty shades of sign
-
-## PyCascades 2022
+---
+title: "Fifty shades of sign"
+event: "PyCascades 2022"
+---
 
 In this Python talk, I went over +10 implementations of a very simple function while exploring elegance, simplicity, and some intricate Python subtleties.
 
@@ -13,5 +14,3 @@ In this Python talk, I went over +10 implementations of a very simple function w
 <div style="text-align:center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FkE-HrxSFCM?start=99" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
-
----

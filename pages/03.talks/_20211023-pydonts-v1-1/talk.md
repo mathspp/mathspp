@@ -1,6 +1,7 @@
-# Pydon'ts – Write elegant Python code v1.1
-
-## DjangoCon US 2021
+---
+title: "Pydon'ts – Write elegant Python code v1.1"
+event: "DjangoCon US 2021"
+---
 
 In this Python talk, I continuously refactored a piece of code by using Python features elegantly.
 
@@ -13,5 +14,3 @@ In this Python talk, I continuously refactored a piece of code by using Python f
 <div style="text-align:center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/s6dJab2qwkg?start=30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
-
----

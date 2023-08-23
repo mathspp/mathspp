@@ -1,6 +1,7 @@
-# Pydon'ts – Write elegant Python code v4
-
-## PyCon Portugal 2022
+---
+title: "Pydon'ts – Write elegant Python code v4"
+event: "PyCon Portugal 2022"
+---
 
 I was scheduled to give this talk in person but I had a family emergency and couldn't attend.
 Later, I recorded the talk at home and made it unofficially available online.
@@ -15,5 +16,3 @@ In this Python talk, I continuously refactored a piece of code by using Python f
 <div style="text-align:center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ETg64K32Okc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
-
----
