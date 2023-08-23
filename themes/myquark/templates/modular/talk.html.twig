@@ -11,7 +11,7 @@
             <h2>{{ page.header.event }}</h2>
             {% endif %}
         {% endblock %}
-        {{ add_anchors(block("headers")) }}
+        {{ add_anchors(block("headers"), 1, 2) }}
         <div class="columns {{ page.header.image_align|default('align-right') }}">
             {% if image %}
             <div class="column col-6 col-md-12">
