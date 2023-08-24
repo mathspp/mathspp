@@ -58,7 +58,7 @@ But the truth of the matter is, before I stated these things to myself, they had
 Or, put another way, it was when I stated these things out loud and wrote about them that everything finally made sense.
 After all, just because something is obvious, it doesn't mean it is worthless saying it out loud!
 
-A prime example of something obvious that we can benefit from by saying it out loud and even giving it a name is the pigeonhole principle.
+A prime example of something obvious that we can benefit from by saying it out loud – and even giving it a name – is the pigeonhole principle.
 It is like a mathematical theorem, but excruciatingly obvious.
 And yet, it allows you to prove non-obvious things, like the fact that there cannot be a perfect compression algorithm.
 (If you're intrigued by that, take a stab at [this problem about imperfect compression](/blog/problems/imperfect-compression).)
@@ -140,7 +140,7 @@ What the built-in `sum` does is sum all those Boolean values up, interpreting th
 But this seeming interchangeability – [because `1` and `0` can also be used as `True` and `False`](/blog/pydonts/truthy-falsy-and-bool) – unlocked even more things for me.
 Using Booleans as integers helps you write data-driven conditionals.
 
-I've also written about [data-driven conditionals before](/blog/why-apl-is-a-language-worth-knowing#data-driven-conditionals), but I can also show you an example.
+I've also written about [data-driven conditionals before](/blog/why-apl-is-a-language-worth-knowing#data-driven-conditionals), but I can also show you an example here.
 Consider this standard Python code:
 
 ```py
@@ -153,6 +153,8 @@ for age in ages:
 This code uses an `if` statement to determine whether or not to add `1` to the variable `count`.
 So, depending on the value of the condition `age > 17`, we perform an addition or not.
 
+In other words, we use an `if` to determine _whether_ we do an addition or not.
+
 The code above is equivalent to this more symmetric version, even though it may be more verbose:
 
 ```py
@@ -164,7 +166,7 @@ for age in ages:
         count += 0
 ```
 
-Rewriting the code in this way exposes a pattern in both branches: we always want to add something to `count` but the condition `age > 17` changes the value we want to add.
+Rewriting the code in this way exposes a pattern: we always want to add something to `count`, in both branches, but the condition `age > 17` changes the value we want to add.
 This is even more obvious if we use a [conditional expression](/blog/pydonts/conditional-expressions):
 
 ```py
@@ -173,18 +175,24 @@ for age in ages:
     count += 1 if age > 17 else 0
 ```
 
+In this code, we used a conditional expression to determine _what_ value to add, as opposed to determining _whether_ we wanted to do an addition or not.
+That's the main idea behind data-driven conditionals!
+Instead of trying to decide whether to take an action or not, we just take that action and instead compute the appropriate parameters.
+In this example, that was picking between `1` and `0`.
+
 So, a conditional expression is kind of similar to a data-driven conditional.
 But there are differences:
 
  - a conditional expression is a syntactical construct, it is part of the written language, and it changes the value you want to use with an `if`;
  - a data-driven conditional uses the data itself to _compute_ the value that we want to use and it isn't a syntactical construct, it is a concept that you may or may not use.
 
-In our simple case, we can go from `count += 1 if age > 17 else 0` to `count += age > 17`, but in APL we use data-driven conditionals commonly.
+In our simple case, we can go from `count += 1 if age > 17 else 0` to `count += age > 17`, which would be a “purer” data-driven conditional.
+This type of code in Python will likely be frowned upon, but in APL we use data-driven conditionals commonly.
 You can read another [example of a data-driven conditional here](/blog/why-apl-is-a-language-worth-knowing#data-driven-conditionals).
 
 And while data-driven conditionals don't always translate directly into idiomatic Python code, the _concept_ of a data-driven conditional helped me appreciate the situations in which I can write my code in a more symmetric way.
 We saw this above.
-I had an `if` statement and I made it more symmetric by including the `else` branch that was implicit and also a bit redundant.
+I had an `if` statement and I made it more symmetric by including the `else` branch that was implicit (and also a bit redundant).
 And what happens often, at least for me, is that adding the redundant branch(es) that are missing helps me spot patterns and rewrite the whole `if` statement in a cleaner way.
 This, in turn, reduces nesting in my Python code, which is a good thing.
 
@@ -195,14 +203,17 @@ If you are interested, go ahead and learn more about [APL and Boolean values](/b
 # Scalar functions and list comprehensions
 
 In case you haven't noticed, I am partially obsessed with list comprehensions.
-I even [wrote a book with +200 exercises about list comprehensions](/comprehending-comprehensions) and related concepts, like set/dict comprehensions and generator expressions.
+I even [wrote a book with +200 exercises about list comprehensions](/comprehending-comprehensions) and related concepts, like set/dictionay comprehensions and generator expressions.
 And the reason I am so obsessed with list comprehensions is that I am convinced that there is a big portion of the Python community that doesn't give list comprehensions their due credit.
 
 List comprehensions are insanely useful and most people are unaware of what the main advantage of list comprehensions is.
 It is not speed, nor is it the fact that they are shorter to type than the corresponding `for` loop.
 The true advantage of list comprehensions is something that I can only justify after having learned about how APL handles scalar functions – more on that in a second!
 
-The main advantage of list comprehensions is that they tend to be more readable than their `for` loop counterparts because they highlight the data transformation.
+The main advantage of list comprehensions is that they tend to be more readable than their `for` loop counterparts.
+That's something many people will tout.
+But _why_ are they “more readable”..?
+I claim it is because **they highlight the data transformation**.
 What does this mean..?
 Again, let us look at two pieces of code to compare.
 First, take a look at this `for` loop:
@@ -222,7 +233,7 @@ is_adult = [age > 17 for age in ages]
 ```
 
 Notice that the expression that matters, `age > 17`, is now much closer to the top left, which is where we start reading the code.
-The loop itself, the `for age in ages`, was moved to _after_ the expression, because the loop itself matters less than the expression!
+The loop itself, the `for age in ages`, was moved to _after_ the expression because the loop itself matters less than the expression!
 And this is what makes list comprehensions typically more readable than the explicit loops!
 
 Now, if you haven't learned list comprehensions yet, you may say that list comprehensions are more complicated.
@@ -235,7 +246,14 @@ Loosely speaking, this means that handling one single value or multiple values i
 In APL, `age>17` determines whether the value `age` is greater than `17`.
 If `ages` is a list of ages, like `18 15 42 73 5 6`, then `ages>17` just works!
 
-It would be equivalent to this:
+Take a look at the example below, where I set `age` to `40`.
+
+```apl
+      18 15 42 73 5 6 > 17
+1 0 1 1 0 0
+```
+
+That second comparison would be roughly equivalent to this Python code, _if_ it worked:
 
 ```pycon
 >>> ages = [18, 15, 42, 73, 5, 6]
@@ -251,13 +269,15 @@ So, you can't write only `ages > 17`, but you can write `[age > 17 ...]` to get 
 
 If you are curious about APL's scalar functions and how they relate to list comprehensions, you can learn more by [reading this](/blog/why-apl-is-a-language-worth-knowing#apl-and-list-comprehensions).
 
+In practice, I talked about scalar functions and list comprehensions, but the rationale applies equally to set and dictionary comprehensions, as well as generator expressions, which is what we'll be using in the next section.
+
 
 # An idiom to put everything together
 
 So, I realised that APL led me to understand that `sum` and many other built-ins are just specialised reductions.
 This let me establish connections between functions and algorithms that I didn't know were connected.
 APL also taught me about data-driven conditionals and how to look for ways to make my code more symmetric.
-Finally, list comprehensions started making much more sense to me after I realised that the point of list comprehensions is to highlight the data transformation.
+Finally, comprehensions started making much more sense to me after I realised that the point of all comprehensions is to highlight the data transformation.
 
 When everything converged at the same time, I wrote this:
 
@@ -266,10 +286,10 @@ sum(age > 17 for age in ages)
 ```
 
 In hindsight, this is a translation of the APL code that does the same thing, which is just `+/ages>17`.
-The `+/` in APL is equivalent to `sum` in Python and we've seen that `ages>17` in APL needs to be written as a list comprehension in Python.
+The `+/` in APL is equivalent to `sum` in Python and we've seen that `ages>17` in APL needs to be written as a comprehension in Python.
 
 I dissected this Python code and studied each of its parts.
-Again, the reductions, the Booleans/data-driven conditionals, and the scalar functions/list comprehensions.
+Again, the reductions, the Booleans/data-driven conditionals, and the scalar functions/comprehensions.
 And when I took all of those things and put them together, I learned one other thing!
 
 The code I've written exhibits this pattern:
