@@ -246,14 +246,16 @@ Loosely speaking, this means that handling one single value or multiple values i
 In APL, `age>17` determines whether the value `age` is greater than `17`.
 If `ages` is a list of ages, like `18 15 42 73 5 6`, then `ages>17` just works!
 
-Take a look at the example below, where I set `age` to `40`.
+This is what APL would return as a result:
 
 ```apl
       18 15 42 73 5 6 > 17
 1 0 1 1 0 0
 ```
 
-That second comparison would be roughly equivalent to this Python code, _if_ it worked:
+Notice how each number in the list `1 0 1 1 0 0` corresponds to a single comparison.
+For example, the last `0` is the result of computing `6 > 17`.
+The APL code would be roughly equivalent to this Python code, _if_ it worked:
 
 ```pycon
 >>> ages = [18, 15, 42, 73, 5, 6]
