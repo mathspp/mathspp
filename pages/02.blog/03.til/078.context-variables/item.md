@@ -34,7 +34,8 @@ name.set("Rodrigo")
 print(name.get())  # Rodrigo
 ```
 
-As per the documentation, context variables should be declared at the top level of your module, and never inside methods or functions.
+As per the documentation, context variables should be declared at the top level of your module, and never inside closures.
+In practice, this means you should be careful and never _create_ context variables inside methods or functions.
 
 
 ### Default value
@@ -48,6 +49,8 @@ from contextvars import ContextVar
 name = ContextVar("name", default="Rodrigo")
 print(name.get())  # Rodrigo
 ```
+
+This value is used if you try to get a variable before setting it first.
 
 
 ### Default value for `.get`
@@ -68,6 +71,26 @@ When you call `.get`, if the context variable hasn't been set explicitly, three 
  2. you get the default value from the context variable; or
  3. an exception `LookupError` is raised.
 
+The example above shows 1.
+It is also useful to note that the value you get doesn't change if you _also_ provide a default value for the context variable:
+
+```py
+from contextvars import ContextVar
+
+
+name = ContextVar("name", default="Rodrigo")
+print(name.get("no name set"))  # no name set
+```
+
+We've already seen an example of 2. in the previous subsection, so all there is left to see is the `LookupError`:
+
+```py
+from contextvars import ContextVar
+
+
+name = ContextVar("name")
+print(name.get())  # LookupError
+```
 
 ## Context variables are available across function calls
 
@@ -110,6 +133,7 @@ import asyncio
 from contextvars import ContextVar
 
 
+# Create a context variable.
 number = ContextVar("number", default=0)
 
 
@@ -126,13 +150,19 @@ async def changes_number_to(new_number):
 
 async def main():
     number.set(1)
+    # The variable should be 1 at this point.
     print_number("Inside main")
 
     await changes_number_to(73)
+    # The variable is 73 at this point because the call above
+    # didn't create a new context.
     print_number("Inside main")
 
+    # By creating this task we create a new context.
+    # The variable will be changed to 42 in that OTHER context.
     task = asyncio.create_task(changes_number_to(42))
     await task
+    # The variable is still 73 in THIS context.
     print_number("Inside main")
 
 
@@ -164,7 +194,7 @@ I guess that it does, but I wanted to be sure, so I ran a couple of experiments.
 
 ### Mutable values in a single context
 
-The first experiment that I ran is in a single context.
+The first experiment that I ran contained a single context.
 If I have a mutable value (a list) and I get it, and then mutate it (by appending to it), does the change reflect in the context variable?
 
 The code below shows that it does, as the value of `names` gets updated even without calling `.set`.
@@ -207,9 +237,9 @@ def print_number(label):
 
 
 async def appends_number(new_number):
-    print(f"Changing number to {new_number}")
+    print(f"Appending number {new_number}")
     number.get().append(new_number)
-    print_number("Just changed number to")
+    print_number("Just appended")
 
 
 async def main():
@@ -231,11 +261,11 @@ If you run this code, this is the output that you get:
 
 ```
 Inside main: [1]
-Changing number to 73
-Just changed number to: [1, 73]
+Appending number 73
+Just appended: [1, 73]
 Inside main: [1, 73]
-Changing number to 42
-Just changed number to: [1, 73, 42]
+Appending number 42
+Just appended: [1, 73, 42]
 Inside main: [1, 73, 42]
 ```
 
