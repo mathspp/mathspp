@@ -15,7 +15,7 @@ as we go over some interesting self-referential concepts and objects.
 # Introduction
 
 This article was brought to life by all of the readers that
-supported this project on [Buy Me a Coffee][bmc],
+[sponsored my work][sponsor].
 as we reached the goal that was set for the page.
 I said I would write an article about self-referential objects
 when the goal was reached, so here we are.
@@ -226,7 +226,7 @@ concept or object that also contains self-references!
 
 
 [blog-fractals]: /blog/tag:fractals
-[bmc]: https://buymeacoffe.com/mathspp
+[sponsor]: https://github.com/sponsors/rodrigogiraoserrao
 [liar-paradox]: https://en.wikipedia.org/wiki/Liar_paradox
 [russels-paradox]: https://en.wikipedia.org/wiki/Russell%27s_paradox
 [sierpinski-triangle]: https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle

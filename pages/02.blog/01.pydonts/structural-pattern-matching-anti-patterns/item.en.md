@@ -513,7 +513,6 @@ Also, [don't forget to subscribe to the newsletter][subscribe] so you don't miss
 a single Pydon't!
 
 
-[pizza]: https://buymeacoffee.com/mathspp
 [subscribe]: https://mathspp.com/subscribe
 [manifesto]: /blog/pydonts/pydont-manifesto
 [pm-tutorial-pydont]: /blog/pydonts/pattern-matching-tutorial-for-pythonic-code

@@ -644,7 +644,6 @@ Also, [don't forget to subscribe to the newsletter][subscribe] so you don't miss
 a single Pydon't!
 
 
-[pizza]: https://buymeacoffee.com/mathspp
 [subscribe]: https://mathspp.com/subscribe
 [manifesto]: /blog/pydonts/pydont-manifesto
 [gumroad-cheatsheet]: https://gum.co/cheatsheet_match_statement

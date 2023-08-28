@@ -379,7 +379,7 @@ a.headeroffset {
 
 /* CSS to style "share this blog post" buttons that scroll
  * with the user.
- * Created by mimicking the code of the "Buy me a coffee" widget. */
+ */
 /* If the screen is not wide enough, just hide the buttons. */
 @media screen and (max-width:920px) {
     .custom-scrollable, .custom-scrollable > * {

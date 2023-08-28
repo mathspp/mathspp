@@ -54,9 +54,7 @@ helps me stay motivated.
 You can also share this website with your friends, colleagues, communities you
 are a part of, so that it reaches more people who want to learn mathematics and programming.
 
-Finally, if you believe in the quality and importance of this project, and/or if you would like to make
-a material contribution to help support the costs of running this project ad-free,
-you can consider [buying me a slice of pizza 🍕][bmc].
+If you have the financial freedom to do so, you can also [sponsor my work][sponsor] to help cover the operational costs of running this project.
 
 
 ### Wall of love
@@ -115,6 +113,6 @@ I also create some graphical content with [Canva].
 [ezgif]: https://ezgif.com
 [Canva]: https://canva.com
 [font-awesome]: https://fontawesome.com
-[bmc]: https://buymeacoffee.com/mathspp
+[sponsor]: https://github.com/sponsors/rodrigogiraoserrao
 [twitter]: https://twitter.com/mathsppblog
 [collect-testimonials]: https://testimonial.to/mathspp

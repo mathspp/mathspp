@@ -80,7 +80,7 @@ THEME_MY_QUARK:
 
 FOOTER:
   ICON_TITLES:
-    BMC: "Show the love for the mathspp project!"
+    SPONSOR: "Sponsor this project"
     TWITCH: "Follow me on Twitch for programming streams"
     YOUTUBE: "Subscribe to the YouTube channel"
     DISCORD: "Join the community Discord!"
