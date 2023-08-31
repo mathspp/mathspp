@@ -1,0 +1,19 @@
+date: 31-08-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to create app notifications in Textual."
+    og:image: https://mathspp.com/blog/til/textual-app-notifications/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/textual-app-notifications/thumbnail.webp
+references:
+  - "Textual API Documentation, `App.notify`, [https://textual.textualize.io/api/app/#textual.app.App.notify](https://textual.textualize.io/api/app/#textual.app.App.notify) [last accessed 31-08-2023];"
+routes:
+    aliases:
+        - "/blog/til/079"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - python
+      - textual
+title: "TIL #079 – Textual app notifications"
+visible: false
