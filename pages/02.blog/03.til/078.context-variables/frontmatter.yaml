@@ -2,8 +2,8 @@ date: 24-08-2023
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned about context variables from the module contextvars and how to use them."
-    og:image: https://mathspp.com/blog/til/piece-table-data-structure/thumbnail.webp
-    twitter:image: https://mathspp.com/blog/til/piece-table-data-structure/thumbnail.webp
+    og:image: https://mathspp.com/blog/til/context-variables/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/context-variables/thumbnail.webp
 references:
   - "PEP 567 – Context Variables, [https://peps.python.org/pep-0567/](https://peps.python.org/pep-0567/) [last accessed 24-08-2023];"
   - "Python 3 Docs, `contextvars`, [https://docs.python.org/3/library/contextvars.html](https://docs.python.org/3/library/contextvars.html) [last accessed 24-08-2023];"
