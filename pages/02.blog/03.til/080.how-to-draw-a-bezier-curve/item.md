@@ -24,6 +24,8 @@ p(t) = p_1(t) + (p_2(t) - p_1(t)) \times t
 \end{cases}
 $$
 
+This formula is the application of the De Casteljau's algorithm to quadratic Bézier curves.
+
 What the code does, inside the function `draw_curve`, is use a `for` loop to sample multiple values of `t` to approximate the curve by drawing a bunch of points.
 
 The code below ran on Python 3.11 and pygame 2.5.1.
