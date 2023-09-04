@@ -18,9 +18,9 @@ For a given $t \in [0, 1]$, if $s$, $e$, and $c$ and the start, end, and control
 
 $$
 \begin{cases}
-p_1(t) = s + (c - s) * t \\
-p_2(t) = c + (e - c) * t \\
-p(t) = p_1(t) + (p_2(t) - p_1(t)) * t
+p_1(t) = s + (c - s) \times t \\
+p_2(t) = c + (e - c) \times t \\
+p(t) = p_1(t) + (p_2(t) - p_1(t)) \times t
 \end{cases}
 $$
 
