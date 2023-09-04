@@ -1,0 +1,21 @@
+date: 04-09-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to draw a Bézier curve with the De Casteljau's algorithm."
+    og:image: https://mathspp.com/blog/til/how-to-draw-a-bezier-curve/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/how-to-draw-a-bezier-curve/thumbnail.webp
+references:
+  - "[https://blog.richardekwonye.com/bezier-curves](https://blog.richardekwonye.com/bezier-curves) [last accessed 04-09-2023]"
+routes:
+    aliases:
+        - "/blog/til/080"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - mathematics
+      - programming
+      - pygame
+      - python
+      - visualisation
+title: "TIL #080 – how to draw a Bézier curve"
+visible: false
