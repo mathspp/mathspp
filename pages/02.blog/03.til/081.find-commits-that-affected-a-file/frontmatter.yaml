@@ -1,0 +1,17 @@
+date: 06-09-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to find the commits that affected a specific file with git log."
+    og:image: https://mathspp.com/blog/til/find-commits-that-affected-a-file/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/find-commits-that-affected-a-file/thumbnail.webp
+routes:
+    aliases:
+        - "/blog/til/081"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - git
+      - productivity
+      - programming
+title: "TIL #081 – find commits that affected a file"
+visible: false
