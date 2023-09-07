@@ -24,7 +24,7 @@ Hello from the pygame community. https://www.pygame.org/contribute.html
 
 I have no idea if you can go through this in 5 minutes.
 You surely can't if these ideas are new to you and you're typing the code yourself.
-However, I did present this material in 5 minutes in [a lightning talk at PyCon Portugal](/talks).
+However, I did present most of this material in 5 minutes in [a lightning talk at PyCon Portugal](/talks).
 
 I'll share the video here as soon as it is uploaded to YouTube.
 
@@ -328,3 +328,84 @@ while frame <= FRAMES:
 Running this program should look like this:
 
 ![](_morph.mp4 "Animation of morphing a circle and a figure eight.")
+
+
+## Adding colour
+
+When you are drawing/animating your figures, you have two parameters to play with:
+
+ 1. `progress` determines how far along the figure you are (it keeps track of the "progress" of the "pen" that is drawing the figure); and
+ 2. `alpha` determines how far along the morphing you are.
+
+You can use these two parameters to add colour to your animation, either by creating a gradient along the drawing or along the morphing.
+
+For example, we can use the function `colour` below to use the parameter `progress` to add some colour along the figure:
+
+```py
+def colour(progress):
+    return (
+        int(201 + 50 * sin(2 * pi * progress)),
+        int(51 - 50 * cos(2 * pi * progress)),
+        int(51 - 50 * sin(2 * pi * progress)),
+    )
+```
+
+Then, you modify your call to `pygame.draw.circle` so that it uses the function `colour` instead of using the pre-determined `WHITE`:
+
+```py
+while frame <= FRAMES:
+    # ...
+
+    for i in range(1000):
+        progress = i / 1000
+        pygame.draw.circle(
+            screen,
+            colour(progress),  # <<< Use `colour` here.
+            morph(circle, eight, progress, alpha),
+            radius=1,
+        )
+
+    # ...
+```
+
+This should create this animation:
+
+![](_colour_morph.mp4 "Animating morphing of two coloured figures.")
+
+Similarly, you can make the colour change _along_ the morphing by replacing `colour(progress)` with `colour(alpha)`, which creates this animation:
+
+![](_colour_morph_2.mp4 "Animating morphing of two figures with changing colour.")
+
+
+## Creating a video
+
+Creating a video with your animation is simpler than you might imagine.
+There are only two steps to it:
+
+ 1. save each frame as an image; and
+ 2. use a tool (like ffmpeg) to put the images together into a video.
+
+After all, a video is just a sequence of images that are shown in quick succession, so that you don't realise they're images!
+
+To save your frames as images, use the function `pygame.image.save`:
+
+```py
+while frame <= FRAMES:
+    # ...
+
+    pygame.image.save(screen, f"some_folder/frame{frame:03}.png")
+    frame += 1
+    pygame.display.flip()
+```
+
+Just make sure to create the folder `some_folder` before trying to save frames there because `pygame` will not create it for you.
+
+Then, [after you install ffmpeg](https://ffmpeg.org), you can use some magic incantations to turn the animations into a video.
+
+I used this magic incantation:
+
+```bash
+ffmpeg -framerate 60 -pattern_type glob -i 'some_folder/frame*.png' -c:v libx264 -pix_fmt yuv420p animation.mp4
+```
+
+There are parts of that command that I don't understand, so use it at your own risk! 😝
