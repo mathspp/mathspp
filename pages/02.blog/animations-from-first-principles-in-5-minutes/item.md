@@ -1,4 +1,4 @@
-...
+Create animations from first principles and morph between different figures with Python. In 5 minutes. Kind of.
 
 ===
 
