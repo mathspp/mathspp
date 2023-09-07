@@ -1,0 +1,18 @@
+date: 07-09-2023 11:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned that the largest file ever published to PyPI has 20 MILLION lines of code."
+    og:image: https://mathspp.com/blog/til/20-million-lines-of-python-code/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/20-million-lines-of-python-code/thumbnail.webp
+references:
+  - "PyPI EvenOrOdd project, [https://pypi.org/project/EvenOrOdd/](https://pypi.org/project/EvenOrOdd/) [last accessed 07-09-2023];"
+routes:
+    aliases:
+        - "/blog/til/082"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - python
+title: "TIL #082 – 20 million lines of Python code"
+visible: false
