@@ -74,9 +74,10 @@ Using the module `timeit`, I tried checking how fast I could compute `isEven(0)`
 ```pycon
 >>> from timeit import timeit
 
->>> timeit("isEven(0)", setup="from EvenOrOdd.EvenOrOdd import isEven", number=1000)
+>>> setup = "from EvenOrOdd.EvenOrOdd import isEven"
+>>> timeit("isEven(0)", setup=setup, number=1000)
 2.8417000066838227e-05
->>> timeit("isEven(1048575)", setup="from EvenOrOdd.EvenOrOdd import isEven", number=1000)
+>>> timeit("isEven(1048575)", setup=setup, number=1000)
 6.486064583999905
 >>> _ / 1000
 0.0064860645839999054
@@ -87,7 +88,7 @@ The timings above might be different on your machine, but the relative compariso
 We can take this further:
 
 ```pycon
->>> timeit("isEven(0)", setup="from EvenOrOdd.EvenOrOdd import isEven", number=100000)  # Changed `number=...`
+>>> timeit("isEven(0)", setup=setup, number=100000)  # Changed `number=...`
 0.002839708999999857
 ```
 
