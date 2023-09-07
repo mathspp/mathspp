@@ -94,7 +94,7 @@ We can take this further:
 
 This new timing shows that we can call `isEven(0)` about 100,000 times and be done _before_ `isEven(1048575)` finishes computing...
 
-What is more, I was able to write this blog post and the timing experiments while the testing of the function `isEven` is still running (the `for` loop I shared above), so I'll interrupt that loop:
+What is more, I was able to write this blog post and the testing of the function `isEven` is still running (the `for` loop I shared above), so I'll interrupt that loop:
 
 ```pycon
 >>> for i in range(2 ** 20):
