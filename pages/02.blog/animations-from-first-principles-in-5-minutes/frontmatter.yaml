@@ -1,0 +1,18 @@
+date: 07-09-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Learn how to create animations from first principles with Python and pygame."
+    og:image: "https://mathspp.com/blog/animations-from-first-principles-in-5-minutes/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/animations-from-first-principles-in-5-minutes/thumbnail.webp"
+slug: "animations-from-first-principles-in-5-minutes"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - geometry
+        - mathematics
+        - programming
+        - pygame
+        - python
+        - visualisation
+title: Animations from first principles
