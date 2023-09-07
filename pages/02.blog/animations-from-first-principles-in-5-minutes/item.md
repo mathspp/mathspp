@@ -2,7 +2,7 @@ Create animations from first principles and morph between different figures with
 
 ===
 
-![A video animation of a colourful circle morphing into a figure eight and back, animated with a Python and pygame script.](_eight.mp4 "Animated circle morphing into a figure eight.")
+![A video animation of a colourful circle morphing into a figure eight and back, animated with a Python and pygame script.](_eight.mp4?resize=400,400 "Animated circle morphing into a figure eight.")
 
 
 # Animations from first principles (in 5 minutes)
