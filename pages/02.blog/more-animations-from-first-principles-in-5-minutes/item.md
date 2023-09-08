@@ -2,7 +2,7 @@ Create a zooming animation from first principles in Python. In 5 minutes. Kind o
 
 ===
 
-![A video animation of a recursive triangular structure, zooming in and rotating, animated with a Python and pygame script.](_triangle.mp4 "Animated recursive trangular triangle.")
+![A video animation of a recursive triangular structure, zooming in and rotating, animated with a Python and pygame script.](_zoom_triangle.mp4?autoplay=1 "Zooming and rotating recursive triangular structure.")
 
 
 # (More) Animations from first principles (in 5 minutes)
