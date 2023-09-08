@@ -1,0 +1,20 @@
+date: 08-09-2023 12:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Create a zooming animation from first principles in Python. In 5 minutes. Kind of."
+    og:image: "https://mathspp.com/blog/more-animations-from-first-principles-in-5-minutes/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/more-animations-from-first-principles-in-5-minutes/thumbnail.webp"
+slug: "more-animations-from-first-principles-in-5-minutes"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - fractals
+        - geometry
+        - mathematics
+        - programming
+        - pygame
+        - python
+        - recursion
+        - visualisation
+title: (More) Animations from first principles
