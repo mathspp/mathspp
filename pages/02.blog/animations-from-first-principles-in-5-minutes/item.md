@@ -16,8 +16,8 @@ pygame 2.5.1 (SDL 2.28.2, Python 3.11.4)
 Hello from the pygame community. https://www.pygame.org/contribute.html
 ```
 
-! The code in this article was written with Python 3.11 and `pygame` 2.5.1.
-! However, it should run well on older versions of Python/`pygame` because we're only using fundamental features.
+The code in this article was written with Python 3.11 and `pygame` 2.5.1.
+However, it should run well on older versions of Python/`pygame` because we're only using fundamental features that have been around for a while and that are unlikely to go anywhere.
 
 
 ## In 5 minutes?
@@ -25,8 +25,6 @@ Hello from the pygame community. https://www.pygame.org/contribute.html
 I have no idea if you can go through this in 5 minutes.
 You surely can't if these ideas are new to you and you're typing the code yourself.
 However, I did present most of this material in 5 minutes in [a lightning talk at PyCon Portugal](/talks).
-
-I'll share the video here as soon as it is uploaded to YouTube.
 
 
 ## Creating the canvas to draw on
