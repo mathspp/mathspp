@@ -208,7 +208,7 @@ label {
 }
 
 /* Centre images in blog posts. */
-.blog-listing img {
+.blog-listing img, .blog-listing video {
     margin-left: auto;
     margin-right: auto;
     display: flex;
