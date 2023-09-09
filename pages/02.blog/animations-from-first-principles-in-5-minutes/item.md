@@ -407,3 +407,12 @@ ffmpeg -framerate 60 -pattern_type glob -i 'some_folder/frame*.png' -c:v libx264
 ```
 
 There are parts of that command that I don't understand, so use it at your own risk! 😝
+
+
+## Even more animations
+
+If you want to create more animations, I have [a follow-up article][more-animations] where you'll create an animation of a recursive triangular structure that zooms in and rotates, like this:
+
+![](/blog/more-animations-from-first-principles-in-5-minutes/_zoom_triangle.mp4?link)
+
+[more-animations]: /blog/more-animations-from-first-principles-in-5-minutes
