@@ -314,6 +314,11 @@ while True:
 
 The new animation looks like this:
 
+<video width="400" height="400" poster="_zoom_triangle.mp4.thumb.png" controls>
+  <source src="_zoom_triangle.mp4" type="video/mp4">
+  You can't watch this video in your browser...
+</video>
+
 ![](_zoom_triangle.mp4?link "Zooming and rotating recursive triangular structure.")
 
 

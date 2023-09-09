@@ -415,7 +415,7 @@ If you want to create more animations, I have [a follow-up article][more-animati
 
 <video width="400" height="400" poster="/blog/more-animations-from-first-principles-in-5-minutes/_zoom_triangle.mp4.thumb.png" controls>
   <source src="/blog/more-animations-from-first-principles-in-5-minutes/_zoom_triangle.mp4" type="video/mp4">
-  You can't watch this video in your browser. :(
+  You can't watch this video in your browser...
 </video>
 
 [more-animations]: /blog/more-animations-from-first-principles-in-5-minutes
