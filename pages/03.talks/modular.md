@@ -7,6 +7,10 @@ content:
         custom:
           - "_hero"
           - "_invite-me"
+          - "_20230909-mastering-comprehensions"
+          - "_20230908-more-animations-from-first-principles"
+          - "_20230908-comprehending-comprehensions"
+          - "_20230907-animations-from-first-principles"
           - "_20230815-how-apl-made-me-a-better-python-developer"
           - "_20230720-what-apl-taught-me-about-python"
           - "_20230720-you-dont-know-comprehensions"
