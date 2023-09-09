@@ -1,5 +1,5 @@
 ---
-title: (More) Animations from first principles ⚡️
+title: (More) Animations from first principles in 5 minutes ⚡️
 event: "PyCon Portugal 2023"
 ---
 
