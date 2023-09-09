@@ -319,9 +319,6 @@ The new animation looks like this:
   You can't watch this video in your browser...
 </video>
 
-![](_zoom_triangle.mp4?link "Zooming and rotating recursive triangular structure.")
-
-
 ## Follow-up challenges
 
 In the previous article I showed [how to create an animation video](/blog/animations-from-first-principles-in-5-minutes#creating-a-video), so go ahead and do that!
