@@ -32,7 +32,7 @@ In this Pydon't, you will:
 
 
 <!--v-->
-!!! You can now get your free copy of the ebook “Pydon'ts – Write beautiful Python code” [on Gumroad][gumroad-pydonts]
+!!! You can now get your free copy of the ebook “Pydon'ts – Write elegant Python code” [on Gumroad][gumroad-pydonts]
 !!! to help support the series of “Pydon't” articles 💪.
 <!--^-->
 

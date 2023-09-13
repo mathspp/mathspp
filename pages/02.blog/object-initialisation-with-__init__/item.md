@@ -16,7 +16,7 @@ But that is not true!
 In what follows, I will try to demystify what `__init__` does and how it works.
 
 <!--v-->
-!!! You can now get your free ✨ copy of the ebook “Pydon'ts – Write beautiful Python code” [on Gumroad][gumroad-pydonts]
+!!! You can now get your free ✨ copy of the ebook “Pydon'ts – Write elegant Python code” [on Gumroad][gumroad-pydonts]
 !!! to help support my Python 🐍 content.
 <!--^-->
 

@@ -43,7 +43,7 @@ After we introduce all the concepts and mechanics that Python uses to handle bin
 
 
 <!--v-->
-!!! You can now get your free copy of the ebook “Pydon'ts – Write beautiful Python code” [on Gumroad][gumroad-pydonts]
+!!! You can now get your free copy of the ebook “Pydon'ts – Write elegant Python code” [on Gumroad][gumroad-pydonts]
 !!! to help support the series of “Pydon't” articles 💪.
 <!--^-->
 

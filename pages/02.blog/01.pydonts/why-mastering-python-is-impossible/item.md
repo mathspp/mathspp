@@ -24,7 +24,7 @@ I'll share a little anecdote from my own personal experience with Python,
 to support my claims.
 
 <!--v-->
-!!! You can now get your free copy of the ebook “Pydon'ts – Write beautiful Python code” [on Gumroad][gumroad-pydonts]
+!!! You can now get your free copy of the ebook “Pydon'ts – Write elegant Python code” [on Gumroad][gumroad-pydonts]
 !!! to help support the series of “Pydon't” articles 💪.
 <!--^-->
 
