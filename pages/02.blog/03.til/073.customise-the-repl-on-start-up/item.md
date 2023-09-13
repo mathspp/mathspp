@@ -22,16 +22,22 @@ My `.pythonrc` file is very simple and looks like this:
 
 ```py
 from functools import partial
-from rich import inspect, pretty, print
 
-help = partial(inspect, help=True)
-pretty.install()
+try:
+    from rich import inspect, pretty, print, traceback
+
+    help = partial(inspect, help=True)
+    pretty.install()
+    traceback.install()
+    print("rich setup concluded.")
+except ImportError:
+    pass
 ```
 
 It uses [the module `rich`](https://rich.readthedocs.io) to override the built-ins `help` and `print` with two versions that are even more helpful and colourful: `rich.inspect` and `rich.print`.
 That way, whenever I use `help` or `print` in the REPL (which happens A LOT), I automatically use the version from the library `rich`, which I am really fond of.
 
-Additionally, it uses `rich.pretty` to install automatic pretty-printing in the REPL.
+Additionally, it uses `rich.pretty` to install automatic pretty-printing in the REPL and `rich.traceback` to pretty print exception tracebacks.
 
 If you want to have the same `.pythonrc` file, just be sure to install `rich` with `python -m pip install rich`.
 
