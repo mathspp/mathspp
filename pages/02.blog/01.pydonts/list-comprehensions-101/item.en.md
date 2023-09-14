@@ -31,7 +31,7 @@ In this Pydon't, you will:
    - learn how to create list comprehensions; and
    - understand the building blocks of list comprehensions;
  - see the parallel that exists between some `for` loops and list comprehensions;
- - establish a correspondence between `map` and `filter`, and list comprehensions;
+ - read about the four main advantages of list comprehensions;
  - understand the main use-case for this feature; and
  - see good usages of list comprehensions in real code written by real people.
 
@@ -97,8 +97,11 @@ understand that the list comprehension is exactly like the loop, except things a
 
 The animation below should help put this point across:
 
-<div style="overflow:hidden;margin-left:auto;margin-right:auto;border-radius:10px;width:100%;max-width:1280px;position:relative"><div style="width:100%;padding-bottom:31.25%"></div><iframe width="1280" height="400" title="Short animation that shows how to turn a Python for loop into a list comprehension, by Rodrigo Girão Serrão. See https://mathspp.com/blog/pydonts/list-comprehensions-101 for more details." src="https://snappify.com/embed/8f4e27cc-bdda-42d5-a818-38673dab5ce6?responsive=1" allow="clipboard-write" allowfullscreen="" style="background:#eee;position:absolute;left:0;top:0;width:100%" frameborder="0"></iframe></div>
-
+<video width="400" height="400" poster="/blog/pydonts/list-comprehensions-101/_list_comps_animation.mp4.thumb.webp" controls>
+  <source src="/blog/pydonts/list-comprehensions-101/_list_comps_animation.mp4" type="video/mp4">
+  Short animation that shows how to turn a Python for loop into a list comprehension, by Rodrigo Girão Serrão. See https://mathspp.com/blog/pydonts/list-comprehensions-101 for more details.
+  You can see it at this URL: https://snappify.com/embed/8f4e27cc-bdda-42d5-a818-38673dab5ce6.
+</video>
 
 ## Example loops to rewrite as list comprehensions
 
@@ -183,7 +186,11 @@ What is more, the multi-line representation makes the list comprehension more am
 
 The animation below should help you see how to go from a `for` loop and an `if` statement to a list comprehension.
 
-<div style="overflow:hidden;margin-left:auto;margin-right:auto;border-radius:10px;width:100%;max-width:1050px;position:relative"><div style="width:100%;padding-bottom:42.857142857142854%"></div><iframe width="1050" height="450" title="Short animation that shows how to turn a Python for loop with a conditional statement into a list comprehension, by Rodrigo Girão Serrão. See https://mathspp.com/blog/pydonts/list-comprehensions-101 for more details." src="https://snappify.com/embed/3376594d-9b43-4f6e-907a-bead21af4443?responsive=1" allow="clipboard-write" allowfullscreen="" style="background:#eee;position:absolute;left:0;top:0;width:100%" frameborder="0"></iframe></div>
+<video width="400" height="400" poster="/blog/pydonts/list-comprehensions-101/_list_comps_if_animation.mp4.thumb.webp" controls>
+  <source src="/blog/pydonts/list-comprehensions-101/_list_comps_if_animation.mp4" type="video/mp4">
+  Short animation that shows how to turn a Python for loop with a conditional statement into a list comprehension, by Rodrigo Girão Serrão. See https://mathspp.com/blog/pydonts/list-comprehensions-101 for more details.
+  You can see it at this URL: https://snappify.com/embed/3376594d-9b43-4f6e-907a-bead21af4443.
+</video>
 
 
 ## More example loops to rewrite as list comprehensions
@@ -636,8 +643,7 @@ This Pydon't showed you that:
  - each list comprehension is equivalent to a `for` loop that successively calls `.append` on a list that is initialised empty;
  - list comprehensions can nest arbitrarily many `for` loops;
  - list comprehensions can nest arbitrarily many `if` statements;
- - nesting `if` statements is equivalent to combining conditions with `and`;
- - `map` and `filter` can often be replaced with list comprehensions;
+ - list comprehensions are typically faster, shorter, purer, and more readable than their loop counterparts; and
  - simple loops whose only job is to append to a `list` can often be replaced with list comprehensions.
 
 
