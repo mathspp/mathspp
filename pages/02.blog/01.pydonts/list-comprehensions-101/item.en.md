@@ -97,7 +97,7 @@ understand that the list comprehension is exactly like the loop, except things a
 
 The animation below should help put this point across:
 
-<video width="400" height="400" poster="/blog/pydonts/list-comprehensions-101/_list_comps_animation.mp4.thumb.webp" controls>
+<video width="640" height="200" poster="/blog/pydonts/list-comprehensions-101/_list_comps_animation.mp4.thumb.webp" controls>
   <source src="/blog/pydonts/list-comprehensions-101/_list_comps_animation.mp4" type="video/mp4">
   Short animation that shows how to turn a Python for loop into a list comprehension, by Rodrigo Girão Serrão. See https://mathspp.com/blog/pydonts/list-comprehensions-101 for more details.
   You can see it at this URL: https://snappify.com/embed/8f4e27cc-bdda-42d5-a818-38673dab5ce6.
@@ -186,7 +186,7 @@ What is more, the multi-line representation makes the list comprehension more am
 
 The animation below should help you see how to go from a `for` loop and an `if` statement to a list comprehension.
 
-<video width="400" height="400" poster="/blog/pydonts/list-comprehensions-101/_list_comps_if_animation.mp4.thumb.webp" controls>
+<video width="525" height="225" poster="/blog/pydonts/list-comprehensions-101/_list_comps_if_animation.mp4.thumb.webp" controls>
   <source src="/blog/pydonts/list-comprehensions-101/_list_comps_if_animation.mp4" type="video/mp4">
   Short animation that shows how to turn a Python for loop with a conditional statement into a list comprehension, by Rodrigo Girão Serrão. See https://mathspp.com/blog/pydonts/list-comprehensions-101 for more details.
   You can see it at this URL: https://snappify.com/embed/3376594d-9b43-4f6e-907a-bead21af4443.
