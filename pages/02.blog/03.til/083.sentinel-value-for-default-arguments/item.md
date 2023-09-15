@@ -38,7 +38,7 @@ By calling `update`, you can change the total “size” of the progress bar (`t
 
 For example, if you create a progress bar `pb` and then call `pb.update(total=100, progress=30, advance=7)`, your progress bar ends up at 37% completion and it would look something like this:
 
-![A screenshot of a progress bar in a Textual application that is at 37%.](_progress_bar_37.svg)
+![A screenshot of a progress bar in a Textual application that is at 37%.](_progress_bar_37.webp)
 
 What's the problem, then?
 
