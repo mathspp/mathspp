@@ -8,3 +8,5 @@ content:
         by: date
         dir: desc
     pagination: true
+menu: TIL
+title: "TIL (Today I Learned)"

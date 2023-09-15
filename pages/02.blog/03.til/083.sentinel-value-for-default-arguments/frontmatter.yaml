@@ -1,0 +1,17 @@
+date: 15-09-2023 21:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to create a sentinel value to use as a default argument in a way that respects Python typing."
+    og:image: https://mathspp.com/blog/til/sentinel-value-for-default-arguments/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/sentinel-value-for-default-arguments/thumbnail.webp
+routes:
+    aliases:
+        - "/blog/til/083"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - python
+      - typing
+title: "TIL #083 – sentinel value for default arguments"
+visible: false
