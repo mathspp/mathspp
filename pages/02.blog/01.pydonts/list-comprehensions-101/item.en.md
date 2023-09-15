@@ -4,7 +4,7 @@ metadata:
 title: "List comprehensions 101 | Pydon't 🐍"
 ---
 
-This Pydon't will teach you how the basics of list comprehensions in Python.
+This Pydon't will teach you the basics of list comprehensions in Python.
 
 ===
 
