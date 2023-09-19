@@ -1613,7 +1613,7 @@ To try this out, run the app from before and change the background colours to `b
 
 The GIF below shows some of these changes.
 
-![A GIF showing that changes in the external CSS file get reflected in the app immediately because of the hot reloading feature of `textual run --dev`.](_css_live.gif "Demo of the CSS hot reloading.)
+![A GIF showing that changes in the external CSS file get reflected in the app immediately because of the hot reloading feature of `textual run --dev`.](_css_live.gif "Demo of the CSS hot reloading.")
 
 
 ## Basic selectors

@@ -47,14 +47,13 @@ that you can get for free [from here][gumroad-cheatsheet].
 # What is a list comprehension?
 
 A list comprehension is a Python expression that builds a list.
-
-List comprehensions are great because they provide
-a very convenient syntax to _create lists_.
 That's it, really.
 
-For people who already know Python, list comprehensions are best understood when compared to a `for` loop.
+In other words, list comprehensions are great because they provide
+a very convenient syntax to _create lists_.
+
 If you come from a functional language, have a strong mathematical background, or if you are just very comfortable with maths notation, you may have an easier time learning about [list comprehensions from first principles](#list-comprehensions-from-first-principles).
-I think list comprehensions are best understood when compared to a `for` loop, so let me show you that.
+For people who already know Python, list comprehensions are best understood when compared to a `for` loop, so let me show you that.
 
 
 # A loop that builds a list
@@ -69,9 +68,9 @@ for num in range(10):
 ```
 
 This loop exhibits a very common pattern:
-the pattern of going over an iterable (in this case, `range(10)`) to do something with its data and to append it to a new list (in this case, `squares`).
+given an iterable (in this case, `range(10)`), do something with each of its elements, one by one, and append the result to a new list (in this case, `squares`).
 
-The key idea behind list comprehensions is that many lists can be built out of other, simpler iterables (lists, tuples, strings, `range`, ...) by _transforming_ the data that comes out of those iterables.
+The key idea behind list comprehensions is that many lists can be built out of other, simpler iterables (lists, tuples, strings, `range`, ...) by _transforming_ the data that we get from those iterables.
 In those cases, we want to focus on the _data transformation_ that we are doing.
 
 So, in the case of the loop above, the equivalent list comprehension would look like like this:
@@ -82,20 +81,16 @@ squares = [num ** 2 for num in range(10)]
 
 What we can see, by comparing the two, is that the list comprehension extracts the most important bits out of the loop and then drops the fluff:
 
+![A diagram with the two previous snippets of code above on top of each other. The parts of the code that exist in both snippets are surrounded by boxes and connected by arrows. This shows that the list comprehension has less code than the equivalent `for` loop.](_loop_comp_comparison.webp)
+
+In short, the version with the list comprehension drops:
+
  - the initialisation of the list (`squares = []`); and
  - the call to `append` (`squares.append(...)`).
 
-The diagram below puts this point across visually:
+I want you to understand that the list comprehension is exactly like the loop, except things are reordered to move what's inside `append` to the beginning.
 
-![A diagram with the two previous snippets of code above on top of each other. The parts of the code that exist in both snippets are surrounded by boxes and connected by arrows. This shows that the list comprehension has less code than the equivalent `for` loop.](_loop_comp_comparison.webp)
-
-
-## Transforming a loop into a list comprehension
-
-If you are comfortable with `for` loops that build lists by calling `append` consecutively, this should be a good way to learn about list comprehensions:
-understand that the list comprehension is exactly like the loop, except things are reordered to move what's inside `append` to the beginning.
-
-The animation below should help put this point across:
+The animation below shows how this process works in the general case:
 
 <video width="100%" aspect-ratio="auto" poster="/blog/pydonts/list-comprehensions-101/_list_comps_animation.mp4.thumb.webp" controls>
   <source src="/blog/pydonts/list-comprehensions-101/_list_comps_animation.mp4" type="video/mp4">
@@ -103,12 +98,15 @@ The animation below should help put this point across:
   You can see it at this URL: https://snappify.com/embed/8f4e27cc-bdda-42d5-a818-38673dab5ce6.
 </video>
 
-## Example loops to rewrite as list comprehensions
+## Exercises: practice rewriting `for` loops as list comprehensions
 
-I believe this idea of transforming a loop into a list comprehension is really powerful, so I have a couple of loops for you to practice on.
+Practice makes perfect, so I have a couple of loops for you to practice on.
 Go ahead and convert the loops below into list comprehensions.
 
- 1. First square numbers:
+We'll start off with an easy one.
+Can you redo the example I showed earlier?
+
+ 1. Computing the first square numbers:
 
 ```py
 squares = []
@@ -119,30 +117,30 @@ for n in range(10):
  2. Uppercasing a series of words:
 
 ```py
-words = "This is Sparta!".split()
+fruits = "banana pear peach strawberry tomato".split()
 upper_words = []
-for word in words:
-    upper_words.append(word.upper())
+for fruit in fruits:
+    upper_words.append(fruit.upper())
 ```
 
  3. Find the length of each word in a sentence:
 
 ```py
-words = "To be or not to be, that is the question.".split()
+words = "the quick brown fox jumps over the lazy dog".split()
 lengths = []
 for word in words:
     lengths.append(len(word))
 ```
 
-If you want +250 exercises on list comprehensions and all related concepts, you may want to check out my book “[Comprehending Comprehensions][comps-book]”.
+If you want +250 exercises on list comprehensions and all related concepts, check out my book “[Comprehending Comprehensions][comps-book]”.
 
 
 # Filtering data in a list comprehension
 
-The list comprehensions we saw above let you build a new list by transforming data from another source iterable.
-However, list comprehensions also allow you to filter data, so that the new list only transforms _some_ of the data that comes from the source iterable.
+The list comprehensions we have covered so far let you build a new list by transforming data from a source iterable.
+However, list comprehensions also allow you to filter data so that the new list only transforms _some_ of the data that comes from the source iterable.
 
-This can be understood if we look at a modification of the previous loop that built a list of squares.
+For example, let's modify the previous loop that built a list of squares.
 This time, we'll square only the odd numbers:
 
 ```py
@@ -154,20 +152,20 @@ for num in range(10):
 
 (For educational purposes, we're ignoring the fact that we could've just used `range(1, 10, 2)`.)
 
-Again, this is a common pattern that can readily be converted into a list comprehension.
+Again, this is a common pattern that can easily be converted into a list comprehension.
 Because the `if` statement is optional (we built a list comprehension before without it), it goes in the _end_ of the list comprehension:
 
 ```py
 odd_squares = [num ** 2 for num in range(10) if num % 2]
 ```
 
-Notice that the order of the three components of the list comprehension is:
+Notice the order of the three components of the list comprehension:
 
  1. data transformation (`num ** 2`);
  2. sourcing the data (`for num in range(10)`); and
  3. filtering the data (`num % 2`).
 
-A list comprehension is often written across multiple lines, so as to occupy less horizontal space.
+A list comprehension may be written across multiple lines to improve its readability.
 For example, the comprehension above could've been written as seen below:
 
 ```py
@@ -179,12 +177,13 @@ odd_squares = [
 ```
 
 When splitting a list comprehension across multiple lines, I am a personal fan of having the three components on _separate_ lines.
+(It may or may not be related to the fact that code formatting tools like black do the same thing!)
 It is OK for list comprehensions to span across multiple lines; they _don't_ have to be written in a single line.
 What is more, the multi-line representation makes the list comprehension more amenable to a direct comparison with the explicit `for` loop with a conditional expression, as the diagram below shows:
 
 ![A diagram with the two previous snippets of code above shown next to each other. The similarities between the two snippets are pointed to by bidirectional arrows. This shows that the list comprehension has less code than the equivalent `for` loop with the `if`. This also shows that the loop and the conditional preserve their ordering but the transformation that is inside the call to `append` moves to the beginning of the list comprehension.](_loop_comp_if_comparison.webp)
 
-The animation below should help you see how to go from a `for` loop and an `if` statement to a list comprehension.
+To recap, here’s how you transform a `for` loop with an `if` statement into a list comprehension:
 
 <video width="100%" aspect-ratio="auto" poster="/blog/pydonts/list-comprehensions-101/_list_comps_if_animation.mp4.thumb.webp" controls>
   <source src="/blog/pydonts/list-comprehensions-101/_list_comps_if_animation.mp4" type="video/mp4">
@@ -193,7 +192,7 @@ The animation below should help you see how to go from a `for` loop and an `if` 
 </video>
 
 
-## More example loops to rewrite as list comprehensions
+## More exercises
 
 Go ahead and convert the loops below into list comprehensions to practice.
 
@@ -209,24 +208,24 @@ for n in range(10):
  2. Upper casing words:
 
 ```py
-words = "This is Sparta!".split()
+fruits = "Banana pear PEACH strawberry tomato".split()
 upper_cased = []
 for word in words:
-    if word == word.lower():
+    if word.islower():
         upper_cased.append(word.upper())
 ```
 
  3. Finding length of words:
 
 ```py
-words = "To be or not to be, that is the question.".split()
+words = "the quick brown fox jumps over the lazy dog".split()
 lengths = []
 for word in words:
-    if word.isalpha():
+    if "o" in word:
         lengths.append(len(word))
 ```
 
-If you want +250 exercises on list comprehensions and all related concepts, you may want to check out my book “[Comprehending Comprehensions][comps-book]”.
+If you want +250 exercises on list comprehensions and related concepts, check out my book “[Comprehending Comprehensions][comps-book]”.
 
 
 # List comprehensions from first principles
