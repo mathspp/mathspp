@@ -11,7 +11,7 @@
         {% endif %}
         <div class="columns {{ page.header.image_align|default('align-right') }}">
             <div class="column col-6 col-md-12">
-                {{ "yeah" }}
+                {{ page.content | raw }}
                 {{ page.content.split("===")[0] }}
             </div>
             <div class="column col-6 col-md-12">
