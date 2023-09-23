@@ -9,4 +9,3 @@ content:
         by: date
         dir: desc
     pagination: true
-last_modified: true
