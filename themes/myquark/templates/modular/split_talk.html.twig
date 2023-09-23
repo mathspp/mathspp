@@ -1,5 +1,6 @@
 {% set grid_size = theme_var('grid-size') %}
 {% set image = page.media.images|first %}
+{% set splits = content | split("===") %}
 
 <section class="section modular-text {{ page.header.class}}">
     <section class="container {{ grid_size }}">
@@ -11,12 +12,10 @@
         {% endif %}
         <div class="columns {{ page.header.image_align|default('align-right') }}">
             <div class="column col-6 col-md-12">
-                {{ content|split("===")[0] | raw }}
-                {{ 1 }}
-                {{ page.content.split("===")[0] }}
+                {{ splits[0] }}
             </div>
             <div class="column col-6 col-md-12">
-                {{ page.content|slice(page.summary|length)|raw }}
+                {{ splits[1] }}
             </div>
         </div>
     <hr>
