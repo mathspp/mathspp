@@ -14,4 +14,6 @@ taxonomy:
       - "programming"
       - "python"
 
-process: twig: true
+process:
+    twig: true
+twig_first: true
