@@ -25,15 +25,16 @@ List comprehensions being one of those.
 
 This article (the first in a short series) will cover the basics of list comprehensions.
 
-In this Pydon't, you will:
+This Pydon't will teach you the following:
 
- - learn the anatomy of a list comprehension;
-   - learn how to create list comprehensions; and
-   - understand the building blocks of list comprehensions;
- - see the parallel that exists between some `for` loops and list comprehensions;
- - read about the four main advantages of list comprehensions;
- - understand the main use-case for this feature; and
- - see good usages of list comprehensions in real code written by real people.
+ - the anatomy of a list comprehension (what parts compose a list comprehension);
+ - how to create list comprehensions;
+ - the parallel that exists between some `for` loops and list comprehensions;
+ - how to understand list comprehensions if you have a strong mathematical background;
+ - the four main advantages of list comprehensions;
+ - the main use case for list comprehensions;
+ - what are good use cases for list comprehensions; and
+ - what are bad use cases for list comprehensions.
 
 I also summarised the contents of this article in a cheatsheet
 that you can get for free [from here][gumroad-cheatsheet].
@@ -141,22 +142,27 @@ The list comprehensions we have covered so far let you build a new list by trans
 However, list comprehensions also allow you to filter data so that the new list only transforms _some_ of the data that comes from the source iterable.
 
 For example, let's modify the previous loop that built a list of squares.
-This time, we'll square only the odd numbers:
+This time, we'll square only numbers that are divisible by 3 or 5.
+Kind of like a twist on the “Fizz-Buzz” problem.
 
 ```py
-odd_squares = []
+fizz_buzz_squares = []
 for num in range(10):
-    if num % 2:
-        odd_squares.append(num ** 2)
+    if (num % 3 == 0) or (num % 5 == 0):
+        fizz_buzz_squares.append(num ** 2)
 ```
 
 (For educational purposes, we're ignoring the fact that we could've just used `range(1, 10, 2)`.)
 
 Again, this is a common pattern that can easily be converted into a list comprehension.
-Because the `if` statement is optional (we built a list comprehension before without it), it goes in the _end_ of the list comprehension:
+Because the data filter is optional (we built a list comprehension before without it), it goes in the _end_ of the list comprehension:
 
 ```py
-odd_squares = [num ** 2 for num in range(10) if num % 2]
+fizz_buzz_squares = [
+    num ** 2                             # Data transformation
+    for num in range(10)                 # Data source
+    if (num % 3 == 0) or (num % 5 == 0)  # Data filter
+]
 ```
 
 Notice the order of the three components of the list comprehension:
@@ -165,21 +171,17 @@ Notice the order of the three components of the list comprehension:
  2. sourcing the data (`for num in range(10)`); and
  3. filtering the data (`num % 2`).
 
-A list comprehension may be written across multiple lines to improve its readability.
-For example, the comprehension above could've been written as seen below:
-
-```py
-odd_squares = [
-    num ** 2
-    for num in range(10)
-    if num % 2
-]
-```
+A list comprehension may be written across multiple lines to improve its readability, as you saw above.
+If I didn't split the list comprehension across multiple lines, it would end up being too long, harming its readability.
 
 When splitting a list comprehension across multiple lines, I am a personal fan of having the three components on _separate_ lines.
 (It may or may not be related to the fact that code formatting tools like black do the same thing!)
-It is OK for list comprehensions to span across multiple lines; they _don't_ have to be written in a single line.
-What is more, the multi-line representation makes the list comprehension more amenable to a direct comparison with the explicit `for` loop with a conditional expression, as the diagram below shows:
+I'll say it again to make sure you get this: it is OK for list comprehensions to span across multiple lines.
+They _don't_ have to be written in a single line.
+
+In particular, if you are writing your first list comprehensions, the multi-line representation makes the list comprehension look more like the explicit `for` loop with a conditional expression.
+This should make the list comprehension easier to read.
+The diagram below shows this relationship:
 
 ![A diagram with the two previous snippets of code above shown next to each other. The similarities between the two snippets are pointed to by bidirectional arrows. This shows that the list comprehension has less code than the equivalent `for` loop with the `if`. This also shows that the loop and the conditional preserve their ordering but the transformation that is inside the call to `append` moves to the beginning of the list comprehension.](_loop_comp_if_comparison.webp)
 
@@ -199,10 +201,10 @@ Go ahead and convert the loops below into list comprehensions to practice.
  1. Squaring:
 
 ```py
-even_squares = []
+fizz_buzz_squares = []
 for n in range(10):
-    if n % 2 == 0:
-        even_squares.append(n ** 2)
+    if (num % 3 == 0) or (num % 5 == 0):
+        fizz_buzz_squares.append(n ** 2)
 ```
 
  2. Upper casing words:
@@ -230,7 +232,10 @@ If you want +250 exercises on list comprehensions and related concepts, check ou
 
 # List comprehensions from first principles
 
-If you are mathematically inclined or come from a functional language, then list comprehensions may make more sense as a construct that has merit on its own rather than something derived from a common `for` loop pattern.
+In this section, I present list comprehensions as a construct that has merit on its own rather than something derived from a common `for` loop pattern.
+To present list comprehensions “from first principles”, I will draw comparisons from standard mathematical notation.
+I find that this relationship between list comprehensions and mathematics is very englightening, but I can also sympathise with the fact that _not everyone cares_.
+If that's the case, you can [skip ahead to read about the full anatomy of a list comprehension](#full-anatomy-of-a-list-comprehension).
 
 The idea of a list comprehension is to provide a syntactical construct that lets you build lists, much like literal list notation.
 However, when writing out a list literal you need to write down _every single element_ you want in your list:
@@ -238,6 +243,12 @@ However, when writing out a list literal you need to write down _every single el
 ```py
 squares = [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 ```
+
+In the case above, you had to write down ten elements explicitly.
+A bit annoying, but manageable.
+What if, instead of ten, you wanted your list `squares` to contain 500 square numbers?
+In that case, it would be infeasible to write every square by hand.
+Instead, we use a list comprehension to _describe_ what elements we want in our list `squares`.
 
 A list comprehension, akin to the mathematical set notation, is a way to define a list by _comprehensively describing_ which elements you want in the list without having to write down all of them.
 For example, we can use mathematical notation to define something similar to the list `squares` above:
@@ -248,11 +259,24 @@ $$
 
 The $n^2$ is the description of what we want: the squares.
 The $n = {0, ~ \dots, ~ 9}$ complements the description by saying where we get the values of $n$ from.
-The two, together, give me enough information to determine what are the contents of the object I'm building.
+The two, together, give us enough information to determine what are the contents of the object we're building.
 
-In Python, we do a similar thing.
-The description of what we want can be any expression whatsoever (for example, a function call, a method call, or a mathematical computation).
-Then, the way we specify where we get the values from is via what looks like a `for` loop, by specifying an iterable from where we get the values:
+I can change the second part so that now I have 500 squares:
+
+$$
+\{n^2| ~ n = 0, ~ \dots, ~ 499\}
+$$
+
+I can also change the first part so that now I have 500 cubes:
+
+$$
+\{n^3| ~ n = 0, ~ \dots, ~ 499\}
+$$
+
+This notation provides a shortcut to define arbitrarily big sets in mathematics.
+In Python, we can do a similar thing.
+The description of what we want can be any Python expression whatsoever (for example, a function call, a method call, or a mathematical computation).
+Then, the Python equivalent to the mathematical bit $n = 0, ~ \dots, ~ 499$ is a `for` loop specifying an iterable from where we get our values.
 
 ```py
 squares = [n ** 2 for n in range(10)]
@@ -260,20 +284,21 @@ squares = [n ** 2 for n in range(10)]
 #          ^^^^^^ This describes what we want (squares).
 ```
 
-In addition to specifying where the data comes from, we can specify further restrictions, or filters, on the data we use.
+In addition to specifying where the data comes from, we can specify further restrictions – or filters – on the data we use.
 For example, we can expand our example to compute more squares, but only if $n$ is divisible by 3 or 5:
 
 $$
-\{n^2| ~ n = {0, ~ \dots, ~ 99}, 3 | n \vee 5 | n \}
+\{n^2| ~ n = {0, ~ \dots, ~ 999}, 3 | n \vee 5 | n \}
 $$
 
-We can do a similar thing in list comprehensions by using an `if` to filter:
+(The $3 | n$ in mathematics is similar to a `n % 3 == 0` in Python.)
+Here's how that looks as a list comprehension, where we use an `if` statement to do the data filtering:
 
 ```py
-squares = [n ** 2 for n in range(100) if (n % 3 == 0) or (n % 5 == 0)]
+squares = [n ** 2 for n in range(1000) if (n % 3 == 0) or (n % 5 == 0)]
 ```
 
-Then, in Python, you may prefer to split the components of the list comprehension over multiple lines:
+For readability, you may prefer to split the components of the list comprehension over multiple lines:
 
 ```py
 squares = [
@@ -283,8 +308,8 @@ squares = [
 ]
 ```
 
-This is optional, but useful if your list comprehension becomes long.
-(Some linters will do it for you.)
+This is useful if your list comprehension becomes long.
+In fact, this is so useful that many linters will do it for you.
 
 
 # Full anatomy of a list comprehension
@@ -297,10 +322,10 @@ As you've seen, the anatomy of a list comprehension is dictated by three compone
 
 This is summarised in the diagram below:
 
-![A diagram of a generic multi-line list comprehension where we identify the data transformation, the data source, and the data filter.](_list_comp_arbitrary_nesting.webp)
+![A diagram of a generic multi-line list comprehension where we identify the data transformation, the data source, and the data filter.](_list_comp_full_anatomy.webp)
 
 
-However, list comprehensions do not have restrictions as to how many data sources or data filters you can provide, much like you can nest `for` loops and `if` statements arbitrarily.
+Note that Python does not impose any restrictions on the number of data sources or data filters in a list comprehension, much like you can nest `for` loops and `if` statements arbitrarily.
 For example, the nested structure below, which contains 12 statements, could be converted into a list comprehension:
 
 ```py
@@ -323,7 +348,7 @@ for it2 in it1:
 In fact, converting the nested structure above into a list comprehension is as difficult as it is to convert a structure with a single loop and a single condition.
 That's because the mechanics of the transformation are always the same:
 
- 1. what's inside the call to `append` goes to the beginning of the list comprehension; and
+ 1. what's inside the call to `append` moves to the beginning of the list comprehension; and
  2. everything else stays exactly in the same place.
 
 Give it a go yourself.
@@ -350,7 +375,7 @@ my_list = [
 
 Putting both side-by-side highlights the fact that the ordering of the nested statements was preserved:
 
-![Diagram that shows the nested structure and the huge list comprehension side by side. This shows that list comprehensions can have arbitrary nesting of data sources and data filters and that the ordering is preserved with respect to the nested structure.](_list_comp_arbitrary_nesting.webp)
+![Diagram that shows the nested structure and the huge list comprehension side by side. This shows that list comprehensions can have arbitrary nesting of data sources and data filters and that the ordering is preserved with respect to the nested structure.](_list_comps_nested.webp)
 
 However, bear in mind that just because it is _possible_, it doesn't mean you _should_ do it.
 List comprehensions should be kept simple and with a relatively small number of data sources and data filters.
@@ -366,14 +391,14 @@ The main advantages of using list comprehensions over the equivalent nested stru
  - purity; and
  - readability.
 
-I'll write a paragraph or two about each, in particular to show you that **the main advantage of a list comprehension is its readability**, and not any of the other three advantages listed above.
+Let’s briefly explore all the advantages listed above but keep in mind that **the main advantage of a list comprehension is its readability**.
 
 
 ## Speed
 
 List comprehensions are faster than the equivalent loops when we're not dealing with trivial cases because of the internals of CPython.
 When we have a loop, Python needs to keep going back and forth between C and Python itself to do the looping and computing the elements to append to the new list.
-In a list comprehension, we don't need to do this and because there's less back-and-forth, list comprehensions are slightly faster than the equivalent loop structures.
+List comprehensions are implemented in such a way that we don't need to do this, and because there's less back-and-forth, list comprehensions are slightly faster than the equivalent loop structures.
 
 
 ## Conciseness
@@ -381,8 +406,9 @@ In a list comprehension, we don't need to do this and because there's less back-
 The animations above have shown that, quite literally, you have to delete code from a loop to turn it into a list comprehension.
 Thus, a list comprehension is objectively shorter than the equivalent loop.
 
-Be careful, though, because some people think that list comprehensions _must fit into one line_.
-List comprehensions _can_ be made to span across multiple lines and often that improves its readability at _no_ cost.
+Note that there is no requirement that list comprehensions _fit into one line_.
+This goes against the beliefs of some, who will proudly show their lengthy list comprehension one-liners.
+If you find such a person, it becomes your job to teach them that list comprehensions _can_ be made to span across multiple lines and that that often improves its readability at _no_ cost.
 
 
 ## Purity
@@ -390,9 +416,7 @@ List comprehensions _can_ be made to span across multiple lines and often that i
 “Purity” here is meant in the functional programming sense, or in the mathematical sense.
 When a `for` loop runs, it has a side-effect:
 it will create (or modify) the auxiliary variable that is used to loop.
-This is not the case in Python, as the variable(s) used in the loop(s) inside a list comprehension are not available outside of the list comprehension.
-
-These two snippets should exemplify this:
+In the example below, we are able to access the variable `num`, even after the loop is done:
 
 ```py
 squares = []
@@ -402,13 +426,16 @@ for num in range(10):
 print(num)  # 9, the last value of the loop.
 ```
 
+This is not the case in a list comprehension, as the variable(s) used in the loop(s) inside a list comprehension are not available outside of the list comprehension.
+The example below shows that trying to access `num` outside of the list comprehension leads to a `NameError`, because the variable `num` isn't defined:
+
 ```py
 squares = [num ** 2 for num in range(10)]
 
 print(num)  # NameError, the variable `num` doesn't exist.
 ```
 
-Because the construct of a list comprehension does not have side-effects by nature, if you need to use a loop to create side-effects, you should _not_ use a list comprehension.
+Because the construct of a list comprehension does not have side effects by nature, there is a convention that you shouldn't use code that creates side effects inside a list comprehension.
 List comprehensions should be used solely for the purpose of creating new lists by transforming data from other iterables.
 
 
@@ -424,25 +451,25 @@ Your list comprehensions/loop will be inside a function, or a method, or in the 
 For example, consider this incomplete piece of code:
 
 ```py
-with open("my_file.txt", "r") as f:
+with open("my_file.txt", "r") as my_file:
     lines = [...
 ```
 
-The context manager gives you context that's very relevant for the variable `lines`, which is going to be a list.
-When you read the context manager and when you see that there is a variable called `lines`, you can guess with certainty that I'm about to iterate over the lines of `f`.
-**The context of the code already tells you what the data source is**.
-What you don't know is _what_ I will do to each line!
+The context manager (the line that goes `with open(...)` and opens the file) gives you information that is very relevant for the variable `lines`, which is going to be a list.
+When you read the context manager and when you see that there is a variable called `lines`, you can guess with certainty that the code will iterate over the lines of `my_file`.
+**The surrounding code already tells you what the data source is**.
+What you don't know is _what_ will happen to each line!
 
-In a list comprehension, the data transformation is the _first_ thing you read:
+Remember, in a list comprehension, the data transformation is the _first_ thing you read:
 
 ```py
-with open("my_file.txt", "r") as f:
+with open("my_file.txt", "r") as my_file:
     lines = [line.strip() ...
 ```
 
-After you've read that part of the code, you can pretty much guess what comes next, which is `for line in f`.
+After you've read that part of the code, you can pretty much guess what comes next, which is `for line in my_file`.
 
-So, list comprehensions reorder things so that the most important bit comes first.
+As we've seen, list comprehensions reorder things so that the most important bit comes first.
 That's it.
 This, together with the fact that list comprehensions have less code than the equivalent loop, is the reason that many people feel that list comprehensions are readable.
 
@@ -452,10 +479,10 @@ This, together with the fact that list comprehensions have less code than the eq
 List comprehensions are _not_ a drop-in replacement for every single loop.
 List comprehensions are useful when you are building a list out of an existing iterable.
 
-I have a few examples below that show good and bad list comprehension use-cases from real-world code.
-If you want more examples and +250 exercises, you should check my book “[Comprehending Comprehensions][comps-book]”!
+I have a few examples below that show good and bad list comprehension use cases from real-world code.
+If you want more examples and +250 exercises, check my book “[Comprehending Comprehensions][comps-book]”!
 
-## Good use-cases
+## Good use cases
 
 ### Simple list comprehension
 
@@ -472,12 +499,12 @@ This is a textbook example of a good list comprehension:
  - we're getting the values directly from a simple iterable, `range(256)`.
 
 You may or may not need a second to process the string formatting `'=%02X' % c`, which uses [ancient formatting syntax][pydont-string-formatting], but you'll need that second regardless of whether we have a list comprehension or a loop.
-So, might as well just see that upfront, so you can spend your brain power on what really matters (understanding the formatting).
+Might as well just see that upfront, so you can spend your brain power on what really matters (understanding the formatting).
 
 
 ### Flattening a list of lists
 
-It is reasonable to use list comprehensions with two loops and a great example of such a list comprehension is this:
+It is perfectly acceptable to use list comprehensions with two loops, and a great example of such a list comprehension is this:
 
 ```py
 # Lib/asyncio/base_events.py in Python 3.11
@@ -487,17 +514,17 @@ It is reasonable to use list comprehensions with two loops and a great example o
 What this list comprehension does is flatten a list of lists.
 That's it.
 This is a very common pattern!
-Just bear in mind that there is another alternative in the standard library that may or may not be more well-suited for your use-case: [`itertools.chain`](http://docs.python.org/3/library/itertools.html#itertools.chain).
+Just bear in mind that there is another tool in the standard library that does a similar thing and that may be better, depending on your use case: [`itertools.chain`](http://docs.python.org/3/library/itertools.html#itertools.chain).
 
 
-### Filtering one iterable based on another one
+### Filtering one iterable with another one
 
 ```py
 # Lib/_pydecimal.py in Python 3.11
 [sig for sig, v in self.flags.items() if v]
 ```
 
-This list comprehension shows another pattern that is quite common, in which we are filtering elements of one iterable based on a second iterable.
+This list comprehension shows another pattern that is quite common, in which we are filtering elements of one iterable based on the values of a second iterable.
 In this case, we are actually getting keys and values from a dictionary, but this is also commonly done by putting together two iterables with [the built-in `zip`][pydont-zip].
 
 
@@ -520,13 +547,13 @@ from random import randint
 colour = [randint(0, 255) for _ in range(3)]
 ```
 
-The key here is the `_` inside the loop, which is an [idiom that shows we don't care about the current iteration][pydont-underscores], because we are doing the same thing over and over again.
+The key here is the `_` inside the loop, which is an [idiom that shows we don't care about the value of the current iteration][pydont-underscores], because we are doing the same thing over and over again.
 
 
 ### A simple loop and a simple filter
 
-This one has a bit more context and it came from an interaction I had on Twitter.
-While browsing Twitter, I found someone writing a little Python script to interact with Amazon Web Services to get IP prefixes for different services. (Whatever that means.)
+This one has a bit more context, and it came from an interaction I had on Twitter.
+While scrolling through Twitter, I found someone writing a little Python script to interact with Amazon Web Services to get IP prefixes for different services. (Whatever that means.)
 
 At some point, they had a simple `for` loop that was iterating through a bunch of prefixes and storing them in a list, provided that that prefix had to do with a specific Amazon service.
 
@@ -548,8 +575,7 @@ def get_service_prefixes(amazon_service):
 ```
 
 Looking at the code above, we can see that the list `service_prefixes` is being created and then appended to in the `for` loop; also, that's the _only_ purpose of that `for` loop.
-
-!!! This is the generic pattern that indicates a list comprehension might be useful!
+This is the generic pattern that indicates a list comprehension might be useful!
 
 Therefore, we can replace the loop with a list comprehension.
 The variable `count` is superfluous because it keeps track of the length of the resulting list, something we can find out easily with the function `len`.
@@ -566,9 +592,13 @@ def get_service_prefixes(amazon_service):
     # ...
 ```
 
-## Bad use-cases
+Now, if you were paying attention, you'll notice that I broke my own personal preference in the code above!
+The list comprehension above was split across two different lines instead of three.
+That's because my personal preferences and my knowledge evolved with time!
 
-Let me also show you some examples of bad list comprehensions, because list comprehensions aren't something that can replace all of your loops.
+## Bad use cases
+
+Let me also show you some examples of bad list comprehensions because list comprehensions aren't something that can replace all of your loops.
 
 
 ### Initialising another list
@@ -584,10 +614,10 @@ What's happening above?
 We're creating an empty list `squares` and we're appending to it from inside _another_ list...
 Which is totally not the point of list comprehensions!
 
-The issue here is that our list comprehension has side-effects (it changes the contents of _another_ list) and list comprehensions are not supposed to have side-effects.
+The issue here is that our list comprehension has side effects (it changes the contents of _another_ list), and list comprehensions are not supposed to have side effects.
 
 Another indication that this list comprehension is flawed – and this is an indicator that you can use yourself – is that the final result of the code does _not_ depend on whether or not we assigned the list comprehension to another variable.
-In fact, the snippet of code above has a list comprehension that is _not_ assigned to a variable, which means we are creating a list (that's what the list comprehension does) and we're wasting it.
+In fact, the snippet of code above has a list comprehension that is _not_ assigned to a variable, which means we are creating a list (that's what the list comprehension does), and we're wasting it.
 
 If we were to assign the list comprehension above, this is what the result would look like:
 
@@ -597,10 +627,11 @@ some_list = [squares.append(num ** 2) for num in range(10)]
 print(some_list)  # [None, None, None, None, None, None, None, None, None, None]
 ```
 
+The reason we get a bunch of `None` values inside `some_list` is because that's the return value of the method `append`.
 
-### Side-effects
+### Side effects
 
-The case above was a very specific version of the bad example I'm showing, which is when the list comprehension has side-effects.
+The case above was a very specific version of the bad example I'm showing, which is when the list comprehension has side effects.
 In the example below, that's a call to the `print` function:
 
 ```py
@@ -609,11 +640,20 @@ In the example below, that's a call to the `print` function:
 
 Again, how could you know that this is a bad list comprehension?
 Because it does things even if you don't assign it to a variable!
+This is exactly what a good ol' `for` loop is for:
+
+```py
+for value in iterable:
+    print(value)
+```
+
+List comprehensions can't replace every single `for` loop!
+They're just meant as a tool to build lists.
 
 
 ### Replacing built-ins
 
-Another bad use-case for list comprehensions is when we're trying to replace some built-in.
+Another bad use case for list comprehensions is when we're trying to replace some built-in.
 A common one is this:
 
 ```py
@@ -621,8 +661,13 @@ lst = [value for value in iterable]
 ```
 
 This looks like a perfect list comprehension: short and simple!
-However, the code above is just `lst = list(iterable)`.
-Another built-in you may end up reiventing is `reversed`.
+However, the code above is equivalent to
+
+```py
+lst = list(iterable)
+```
+
+Another built-in you may end up reinventing is `reversed`.
 
 There is also a lot to be said about the built-ins `map` and `filter`, but I will leave that for a follow-up article on the more advanced bits of list comprehensions.
 
@@ -631,7 +676,7 @@ There is also a lot to be said about the built-ins `map` and `filter`, but I wil
 
 Here's the main takeaway of this Pydon't, for you, on a silver platter:
 
- > “*List comprehensions are a powerful Python feature that lets you build lists in a short and readable way.*”
+ > *List comprehensions are a powerful Python feature that lets you build lists in a short and readable way.*
 
 
 This Pydon't showed you that:
@@ -646,7 +691,7 @@ This Pydon't showed you that:
  - simple loops whose only job is to append to a `list` can often be replaced with list comprehensions.
 
 
-This Pydon't was also summarised in [a free cheatsheet][gumroad-cheatsheet] and this is just a small part of what I cover in my book “[Comprehending Comprehensions][comps-book]”, which covers advanced list comprehensions, set and dictionary comprehensions, generator expressions, and has over 250 exercises with solutions.
+This Pydon't was also summarised in [a free cheatsheet][gumroad-cheatsheet], and this is just a small part of what I cover in my book “[Comprehending Comprehensions][comps-book]”, which covers advanced list comprehensions, set and dictionary comprehensions, generator expressions, and has over 250 exercises with solutions.
 
 <!-- v -->
 If you liked this Pydon't be sure to leave a reaction below and share this with your friends and fellow Pythonistas.
