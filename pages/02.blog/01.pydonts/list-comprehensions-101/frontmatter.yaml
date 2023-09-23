@@ -14,4 +14,4 @@ taxonomy:
       - "programming"
       - "python"
 
-last_modified: true
+process: twig: true

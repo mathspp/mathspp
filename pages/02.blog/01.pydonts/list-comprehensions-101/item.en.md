@@ -699,6 +699,8 @@ Also, [subscribe to the newsletter][subscribe] so you don't miss
 a single Pydon't!
 <!-- ^ -->
 
+{{ page.header.modified_date }}
+
 [subscribe]: https://mathspp.com/subscribe
 [manifesto]: /blog/pydonts/pydont-manifesto
 [gumroad-cheatsheet]: https://gum.co/cheatsheet_list_comps_101
