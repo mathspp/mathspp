@@ -12,11 +12,12 @@
         {% endif %}
         <div class="columns {{ page.header.image_align|default('align-right') }}">
             <div class="column col-6 col-md-12">
-                {{ splits[0]|raw }}
+                {{ page.summary|raw }}
             </div>
             <div class="column col-6 col-md-12">
-                {{ splits[1]|raw }}
+                {{ page.content|slice(page.summary|length)|raw }}
             </div>
         </div>
+    <hr>
     </section>
 </section>
