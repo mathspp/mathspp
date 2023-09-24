@@ -41,5 +41,5 @@ metadata:
 onpage_menu: false
 page-toc:
     anchors:
-        depth: 1
+        depth: 3
 ---
