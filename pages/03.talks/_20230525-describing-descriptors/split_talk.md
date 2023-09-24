@@ -1,6 +1,7 @@
 ---
 title: "Describing descriptors"
 event: "PyCon Sri Lanka 2023"
+image_align: left
 ---
 
 In this Python talk, I introduce descriptors and show they are not black magic.
@@ -11,7 +12,7 @@ In this Python talk, I introduce descriptors and show they are not black magic.
  - Video recording: [YouTube](https://www.youtube.com/watch?v=zCtyQS-c4dg)
  - Slide deck: [link](https://github.com/mathspp/talks/blob/main/20230525_pycon_srilanka_describing_descriptors/slide_deck.pdf)
 
-<div style="text-align:center">
+===<div style="text-align:center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zCtyQS-c4dg?start=114" title="Describing descriptors" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
