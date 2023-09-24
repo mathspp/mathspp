@@ -1,6 +1,6 @@
 {% set grid_size = theme_var('grid-size') %}
 {% set image = page.media.images|first %}
-{% set splits = content | split("Split here") %}
+{% set splits = content | split("===") %}
 {% set align = page.header.image_align|default('right') %}
 
 <section class="section modular-text {{ page.header.class}}">
@@ -17,10 +17,10 @@
                     {{ add_anchors("<h3>" ~ page.header.event ~ "</h3>")}}
                 {% endif %}
                 {{ splits[0] }}
-                Teste 9
+                Teste 10
             </div>
             <div class="column col-6 col-md-12">
-                {{ splits[1] | spaceless | regex_replace(["/<p><\\/p>/"], [""]) }}
+                {{ splits[1] }}
             </div>
         </div>
     <hr>
