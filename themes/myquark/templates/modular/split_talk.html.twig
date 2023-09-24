@@ -17,13 +17,10 @@
                     {{ add_anchors("<h3>" ~ page.header.event ~ "</h3>")}}
                 {% endif %}
                 {{ splits[0] }}
-                Teste 6
+                Teste 7
             </div>
             <div class="column col-6 col-md-12">
-                {{ splits[1] | spaceless | replace({"<p></p>": "" }) }}
-            </div>
-            <div>
-                <pre><code>{{ splits[1] }}</code></pre>
+                {{ splits[1] | html_to_markdowm | trim | markdown_to_html }}
             </div>
         </div>
     <hr>
