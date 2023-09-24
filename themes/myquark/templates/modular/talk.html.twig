@@ -7,7 +7,7 @@
             {{ add_anchors("<h2>" ~ page.header.title ~ "</h2>", 2, 1) }}
         {% endif %}
         {% if page.header.event %}
-            {{ add_anchors("<h3>" ~ page.header.event ~ "</h3>")}}
+            {{ add_anchors("<h3>" ~ page.header.event ~ "</h3>", 3, 1)}}
         {% endif %}
         <div class="columns {{ page.header.image_align|default('align-right') }}">
             {% if image %}
