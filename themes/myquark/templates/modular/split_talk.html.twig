@@ -5,16 +5,19 @@
 
 <section class="section modular-text {{ page.header.class}}">
     <section class="container {{ grid_size }}">
+        {# The title is outside the next div that gets the alignment class because,
+           otherwise, when the align is left the heading would be aligned on the right.
+        #}
+        {% if page.header.title %}
+            {{ add_anchors("<h2>" ~ page.header.title ~ "</h2>") }}
+        {% endif %}
         <div class="columns {{ align }}">
-            {% if page.header.title %}
-                {{ add_anchors("<h2>" ~ page.header.title ~ "</h2>") }}
-            {% endif %}
             <div class="column col-6 col-md-12">
                 {% if page.header.event %}
                     {{ add_anchors("<h3>" ~ page.header.event ~ "</h3>")}}
                 {% endif %}
                 {{ splits[0] }}
-                Teste 5
+                Teste 6
             </div>
             <div class="column col-6 col-md-12">
                 {{ splits[1] | spaceless | replace({"<p></p>": "" }) }}
