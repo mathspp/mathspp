@@ -4,7 +4,7 @@
 <section class="section modular-text {{ page.header.class}}">
     <section class="container {{ grid_size }}">
         {% if page.header.title %}
-            {{ add_anchors("<h2>" ~ page.header.title ~ "</h2>") }}
+            {{ add_anchors("<h2>" ~ page.header.title ~ "</h2>", 2, 1) }}
         {% endif %}
         {% if page.header.event %}
             {{ add_anchors("<h3>" ~ page.header.event ~ "</h3>")}}
