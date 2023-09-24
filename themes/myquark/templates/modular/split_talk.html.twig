@@ -9,10 +9,10 @@
            otherwise, when the align is left the heading would be aligned on the right.
         #}
         {% if page.header.title %}
-            {{ add_anchors("<h2>" ~ page.header.title ~ "</h2>", 2, 1) }}
+            {{ "<h2>" ~ page.header.title ~ "</h2>" }}
         {% endif %}
         {% if page.header.event %}
-            {{ add_anchors("<h3>" ~ page.header.event ~ "</h3>", 3, 1)}}
+            {{ "<h3>" ~ page.header.event ~ "</h3>" }}
         {% endif %}
         <div class="columns {{ align }}">
             <div class="column col-6 col-md-12">
