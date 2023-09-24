@@ -39,7 +39,4 @@ metadata:
     title: Talks
     twitter:image: "https://mathspp.com/talks/thumbnail.png"
 onpage_menu: false
-page-toc:
-    anchors:
-        depth: 3
 ---
