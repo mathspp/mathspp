@@ -13,6 +13,4 @@ In this Python talk, I continuously refactored a piece of code by using Python f
  - Unofficial video recording: [view on YouTube](https://youtu.be/ETg64K32Okc) or below
  - Slide deck: [link](https://github.com/mathspp/talks/blob/main/20220924_pycon_portugal_pydonts_4/slide_deck.pdf)
 
-<div style="text-align:center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ETg64K32Okc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+===<iframe width="100%" style="aspect-ratio: 560/315" src="https://www.youtube.com/embed/ETg64K32Okc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
