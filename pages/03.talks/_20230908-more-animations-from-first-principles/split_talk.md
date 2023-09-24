@@ -13,4 +13,3 @@ After my first lightning talk was so well-received, I came back to show a differ
 ===<video width="400" height="400" poster="/blog/more-animations-from-first-principles-in-5-minutes/_zoom_triangle.mp4.thumb.png" controls>
     <source src="/blog/more-animations-from-first-principles-in-5-minutes/_zoom_triangle.mp4" type="video/mp4">
   </video>
-</div>
