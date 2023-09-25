@@ -14,3 +14,14 @@ In this lightning talk I wanted to share my personal story of how learning how t
 
 [pdf-slides]: https://github.com/mathspp/talks/blob/main/20230720-what-apl-taught-me-about-python/slides.pdf
 [snappify-slides]: https://snappify.com/view/d46df910-a3bf-4851-9047-24dfa87a4f56
+
+===
+
+<iframe width="100%" style="aspect-ratio: 560/315" src="https://www.youtube.com/embed/vCMoWPTPdXo" title="What APL taught me about Python ⚡️ – lightning talk by Rodrigo Girão Serrão at EuroPython 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+
+
+
+
