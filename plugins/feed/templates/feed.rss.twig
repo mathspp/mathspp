@@ -4,7 +4,7 @@
 {% for page in collection %}
     {%- set lastBuildDate = max(lastBuildDate, page.date) %}
     {%- if collection.params.show_last_modified %}
-        {%- set lastBuildDate = max(feed_updated, page.modified) %}
+        {%- set lastBuildDate = max(lastBuildDate, page.modified) %}
     {%- endif %}
 {% endfor %}
 <?xml version="1.0" encoding="utf-8"?>

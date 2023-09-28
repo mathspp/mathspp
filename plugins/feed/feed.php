@@ -78,7 +78,6 @@ class FeedPlugin extends Plugin
         $this->type = $uri->extension();
 
         if ($this->type && in_array($this->type, $this->valid_types)) {
-
             $this->enable([
                 'onPageInitialized' => ['onPageInitialized', 0],
                 'onTwigTemplatePaths' => ['onTwigTemplatePaths', 0],
@@ -95,19 +94,27 @@ class FeedPlugin extends Plugin
 
         // Overwrite regular content with feed config, so you can influence the collection processing with feed config
         if (property_exists($page->header(), 'content')) {
+            // Set default template.
+            $template = "feed";
+
             if (isset($page->header()->feed)) {
                 $this->feed_config = array_merge($this->feed_config, $page->header()->feed);
+
+                // Look for feed type override,
+                if (isset($this->feed_config['template']) && isset($this->feed_config['template'][$this->type])) {
+                    $template = $this->feed_config['template'][$this->type];
+                }
             }
 
             $page->header()->content = array_merge($page->header()->content, $this->feed_config);
 
-            $this->grav['twig']->template = 'feed.' . $this->type . '.twig';
+            // Set page template.
+            $this->grav['twig']->template = $template . "." . $this->type . '.twig';
 
             $this->enable([
                 'onCollectionProcessed' => ['onCollectionProcessed', 0],
             ]);
         }
-
     }
 
     /**
