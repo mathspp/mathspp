@@ -13,6 +13,6 @@ title: Mathspp Blog
 
 
 <style>
-table { font-size: 5vmin; margin-bottom:; }
+table { font-size: 4vmin; margin-bottom: 0; }
 thead { color: #f8f8f2; }
 </style>
