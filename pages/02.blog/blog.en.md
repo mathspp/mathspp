@@ -10,3 +10,9 @@ title: Mathspp Blog
 | 292 | 25,292 | 327,386 |
 | :-: | :-: | :-: |
 | articles | lines of code | words |
+
+
+<style>
+table { font-size: 5vmin; margin-bottom:; }
+thead { color: #f8f8f2; }
+</style>
