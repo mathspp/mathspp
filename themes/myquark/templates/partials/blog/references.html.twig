@@ -1,6 +1,6 @@
 {% set references = header_var("references")|defined([]) %}
 {% if 0 < references|length %}
-<h2>{{ add_anchors('THEME_MY_QUARK.BLOG.REFERENCES_TITLE'|t) }}</h2>
+{{ add_anchors('<h2>' ~ 'THEME_MY_QUARK.BLOG.REFERENCES_TITLE'|t ~ '</h2>') }}
 
 <ul>
 {% for ref in references %}
