@@ -1,0 +1,14 @@
+date: 03-10-2023 07:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This explains how I added stats to my blog page."
+    og:image: "https://mathspp.com/blog/adding-stats-to-my-blog/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/adding-stats-to-my-blog/thumbnail.webp"
+slug: "adding-stats-to-my-blog"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - programming
+        - python
+title: Adding stats to my blog

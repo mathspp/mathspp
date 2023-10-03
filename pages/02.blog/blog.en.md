@@ -7,7 +7,7 @@ title: Mathspp Blog
 
 # Mathspp Blog
 
-| 292 | 25,292 | 327,386 |
+| 293 | 25,353 | 328,293 |
 | :-: | :-: | :-: |
 | articles | lines of code | words |
 
