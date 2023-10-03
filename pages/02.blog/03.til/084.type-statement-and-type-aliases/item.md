@@ -6,7 +6,7 @@ Today I learned about the Python 3.12 type statement you can use to create type 
 # `type` statement and type aliases
 
 Python 3.12 introduced the soft keyword `type`, which is used in the `type` statement to create type aliases.
-Thus, the `type` statement offers a more convenient way of creating type aliases that doesn't require importing `TypeAlias` from the module `typing`.
+The `type` statement offers a more convenient [and powerful](#forward-references) way of creating type aliases and it supersedes `typing.TypeAlias`.
 
 In its simplest form, the `type` statement is composed of the `type` keyword, the name of the type alias you are creating, and the type you are aliasing.
 The example below shows how to create a type alias called `Point` that is the same as a pair with two floats:
@@ -70,7 +70,7 @@ D: TypeAlias = list[str]
 ## Generic type aliases
 
 Type aliases can also be made generic.
-For example, the linked list could be a type list of any kind of value we want, not just integers.
+For example, the linked list could be a linked list of any kind of value we want, not just integers.
 
 We could type the linked list like so:
 

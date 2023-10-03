@@ -5,9 +5,9 @@ metadata:
     og:image: https://mathspp.com/blog/til/type-statement-and-type-aliases/thumbnail.webp
     twitter:image: https://mathspp.com/blog/til/type-statement-and-type-aliases/thumbnail.webp
 references:
-    "Python 3 Docs, What's new in Python 3.12, [https://docs.python.org/3.12/whatsnew/3.12.html#pep-695-type-parameter-syntax](https://docs.python.org/3.12/whatsnew/3.12.html#pep-695-type-parameter-syntax) [last accessed 03-10-2023];"
-    "Python 3 Docs, The Python Language Reference, [https://docs.python.org/3.12/reference/simple_stmts.html#the-type-statement](https://docs.python.org/3.12/reference/simple_stmts.html#the-type-statement) [last accessed 03-10-2023];"
-    "Python 3 Docs, typing Module, Type Aliases, [https://docs.python.org/3.12/library/typing.html#type-aliases](https://docs.python.org/3.12/library/typing.html#type-aliases) [last accessed 03-10-2023];"
+    - "Python 3 Docs, What's new in Python 3.12, [https://docs.python.org/3.12/whatsnew/3.12.html#pep-695-type-parameter-syntax](https://docs.python.org/3.12/whatsnew/3.12.html#pep-695-type-parameter-syntax) [last accessed 03-10-2023];"
+    - "Python 3 Docs, The Python Language Reference, [https://docs.python.org/3.12/reference/simple_stmts.html#the-type-statement](https://docs.python.org/3.12/reference/simple_stmts.html#the-type-statement) [last accessed 03-10-2023];"
+    - "Python 3 Docs, typing Module, Type Aliases, [https://docs.python.org/3.12/library/typing.html#type-aliases](https://docs.python.org/3.12/library/typing.html#type-aliases) [last accessed 03-10-2023];"
 routes:
     aliases:
         - "/blog/til/083"
