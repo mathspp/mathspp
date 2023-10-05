@@ -11,8 +11,6 @@ title: Mathspp Blog
 | :-: | :-: | :-: |
 | articles | words | lines of code |
 
-Learn more about these statistics in [this article](/blog/adding-stats-to-my-blog)
-
 
 <style>
 table { font-size: 4vmin; }
