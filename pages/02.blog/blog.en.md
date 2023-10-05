@@ -11,7 +11,7 @@ title: Mathspp Blog
 | :-: | :-: | :-: |
 | articles | words | [lines of code][^1] |
 
-[1]: Learn more about these statistics in [this article](/blog/adding-stats-to-my-blog)
+[^1]: Learn more about these statistics in [this article](/blog/adding-stats-to-my-blog)
 
 
 <style>
