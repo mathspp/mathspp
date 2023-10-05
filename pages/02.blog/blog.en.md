@@ -9,7 +9,7 @@ title: Mathspp Blog
 
 | 294 | 328,683 | 25,373 |
 | :-: | :-: | :-: |
-| articles | words | [LoC]("Lines of Code") in examples |
+| articles | words | [LoC](. "Lines of Code") in examples |
 
 
 <style>
