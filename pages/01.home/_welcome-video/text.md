@@ -1,5 +1,5 @@
-<video width="100%" style="aspect-ratio: 1920/1080" poster="/website_welcome.mp4.thumb.png" controls>
-  <source src="/website_welcome.mp4" type="video/mp4">
+<video width="100%" style="aspect-ratio: 1920/1080" poster="./website_welcome.mp4.thumb.png" controls>
+  <source src="./website_welcome.mp4" type="video/mp4">
   A welcome video.
 </video>
 
