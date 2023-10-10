@@ -12,6 +12,7 @@ routes:
 taxonomy:
     category: [blogpost, til]
     tag:
+      - floats
       - mathematics
       - numerical analysis
       - programming

@@ -1,0 +1,18 @@
+date: 11-10-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned that Python and other programming languages have negative zero, -0.0."
+    og:image: https://mathspp.com/blog/til/negative-zero/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/negative-zero/thumbnail.webp
+routes:
+    aliases:
+        - "/blog/til/085"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - floats
+      - mathematics
+      - programming
+      - python
+title: "TIL #085 – negative zero -0.0"
+visible: false
