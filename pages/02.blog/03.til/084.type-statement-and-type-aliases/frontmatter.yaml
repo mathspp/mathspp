@@ -10,7 +10,7 @@ references:
     - "Python 3 Docs, typing Module, Type Aliases, [https://docs.python.org/3.12/library/typing.html#type-aliases](https://docs.python.org/3.12/library/typing.html#type-aliases) [last accessed 03-10-2023];"
 routes:
     aliases:
-        - "/blog/til/083"
+        - "/blog/til/084"
 taxonomy:
     category: [blogpost, til]
     tag:
