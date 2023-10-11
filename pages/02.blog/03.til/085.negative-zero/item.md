@@ -105,7 +105,7 @@ If you know of another practical use case for negative zero, comment below and I
 
 ## Distinguish `0.0` from `-0.0`
 
-Because `0.0 == -0.0`, the only way I could think of to distinguish negative zero from “regular” zero is by converting it to a string and comparing the signs of the number.
+Because `0.0 == -0.0`, one way I could think of to distinguish negative zero from “regular” zero is by converting it to a string and comparing the signs of the number.
 
 The function `is_negative_zero` below computes this:
 
@@ -115,6 +115,33 @@ def is_negative_zero(number):
 
 print(is_negative_zero(0.0))   # False
 print(is_negative_zero(-0.0))  # True
+```
+
+Then, Adam Johnson on Twitter reminded me of the function `math.copysign`, which copies the sign of the second argument into the first:
+
+```pycon
+>>> from math import copysign
+
+>>> copysign(10, 1)
+10.0
+>>> copysign(10, -1)
+-10.0
+>>> copysign(10, -1234134.1235143)
+-10.0
+
+>>> copysign(10, 0)
+10.0
+>>> copysign(10, -0.0)
+-10.0
+```
+
+So you can also use it to identify negative zero:
+
+```py
+from math import copysign
+
+def is_negative_zero(number):
+    return number == 0 and copysign(1, number) == -1
 ```
 
 If you come up with a different way to identify negative zero, comment below and I'll add it here!
