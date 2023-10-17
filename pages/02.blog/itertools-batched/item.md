@@ -195,11 +195,9 @@ class Pager:
     def next_page(self):
         """Gets the next page of results or None."""
         # Get the next page, possibly from the navigation cache.
-        if self.next_pages:
-            next_page = self.next_pages.pop()
-        else:
-            next_page = next(self.pages, None)
-
+        next_page = (
+            self.next_pages.pop() if self.next_pages else next(self.pages, None)
+        )
         if next_page is not None:
             self.prev_pages.append(next_page)
 

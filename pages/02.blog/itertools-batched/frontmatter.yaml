@@ -4,6 +4,9 @@ metadata:
     description: "Learn how batched from the module itertools works, example use cases, and how to implement it."
     og:image: "https://mathspp.com/blog/itertools-batched/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/itertools-batched/thumbnail.webp"
+references:
+    - "Python 3 Documentation, The Python Standard Library, `itertools.batched`, [https://docs.python.org/3/library/itertools.html#itertools.batched](https://docs.python.org/3/library/itertools.html#itertools.batched) [last accessed 17-10-2023];"
+    - "Python 3 Documentation, The Python Standard Library, Built-in Types, Iterator Types [https://docs.python.org/3/library/stdtypes.html#iterator-types](https://docs.python.org/3/library/stdtypes.html#iterator-types) [last accessed 17-10-2023]"
 slug: "itertools-batched"
 taxonomy:
     category:
