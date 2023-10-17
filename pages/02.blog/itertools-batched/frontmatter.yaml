@@ -1,0 +1,17 @@
+date: 17-10-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Learn how batched from the module itertools works, example use cases, and how to implement it."
+    og:image: "https://mathspp.com/blog/itertools-batched/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/itertools-batched/thumbnail.webp"
+slug: "itertools-batched"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - dunder methods
+        - generators
+        - modules
+        - programming
+        - python
+title: itertools.batched
