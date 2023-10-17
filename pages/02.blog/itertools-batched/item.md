@@ -256,7 +256,22 @@ def batched_docs(iterable, n):
         yield batch
 ```
 
-The generator function above takes care producing the batches of the correct size on demand.
+This interesting piece of code makes use of [the walrus operator `:=` in an assignment expression](/blog/pydonts/assignment-expressions-and-the-walrus-operator) inside the loop and `itertools.islice`.
+`islice` is akin to the [slice syntax `[:]`](/blog/pydonts/idiomatic-sequence-slicing), but it works for arbitrary iterables instead of just sequences.
+
+For example, `islice` works with generators:
+
+```pycon
+>>> g = (num ** 2 for num in range(10))
+>>> g[:3]
+TypeError: 'generator' object is not subscriptable
+
+>>> from itertools import islice
+>>> tuple(islice(g, 3))
+(0, 1, 4)
+```
+
+So, the generator function above takes care of producing the batches of the correct size on demand.
 However, `batched` is a class while the implementation `batched_docs` is a generator:
 
 ```pycon
