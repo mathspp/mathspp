@@ -627,22 +627,6 @@ Throughout this tutorial, you:
  - created an interface for the user to interact with the RNN.
 
 Pat yourself in the back and go for a walk.
-When you come back, I have some additional challenges for you!
-
-
-# Challenges
-
-You just learned a lot about recurrent neural networks...
-But reading a tutorial on my blog is not enough!
-If you are serious about taking your Python 🐍 and machine learning skills to the next level, you need to practise! 🚀
-
-Drop your email below and I will send you some challenges for you to practise what you just learned!
-Drop your email below, and you will join a community of over 16,000 developers that want to take their Python 🐍 skills to the next level. 🚀
-
-See you there!
-
-<script async data-uid="b56530daea" src="https://mathspp.ck.page/b56530daea/index.js"></script>
-
 
 
 [data]: https://github.com/mathspp/training/blob/master/your-first-recurrent-neural-network/names.zip

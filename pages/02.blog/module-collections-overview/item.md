@@ -227,18 +227,3 @@ Hopefully, this article gave you an overview of some of the useful tools that th
  - `defaultdict`;
 
 Familiarise yourself with these tools and be sure to use them if the opportunity arises in your code!
-If you need a little push, I have some challenges for you in the next section.
-
-
-# Challenges 🚀
-
-You just learned a lot about many different tools from the module `collections`.
-But reading an article on my blog is not enough!
-If you are serious about taking your Python 🐍 skills to the next level, you need to practise! 🚀
-
-Drop your email below and I will send you some challenges for you to practise what you just learned!
-Drop your email below, and you will join a community of over 16,000 developers that want to take their Python 🐍 skills to the next level. 🚀
-
-See you there!
-
-<script async data-uid="7c0dd0366c" src="https://mathspp.ck.page/7c0dd0366c/index.js"></script>
