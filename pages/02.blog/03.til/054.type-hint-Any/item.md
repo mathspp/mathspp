@@ -80,10 +80,10 @@ After all, we have that:
 ## What is `Any` used for?
 
 So, why is `Any` useful if it gives you total freedom and doesn't seem to do anything for you?
-As pointed out in the comment section below, “`Any` is useful for gradually adding types to an untyped codebase.”.
-
+`Any` is useful for gradually adding types to an untyped codebase.
 So, if you have some code that you'd like to typecheck, you can start by inserting `Any` everywhere, and the code will typecheck.
 Then, you can gradually start replacing `Any` with more specific types.
+(Thanks to the reader who pointed this out in the comments section below!)
 
 If you are a practical type of person, instead of a purist, there is another situation where `Any` might come in handy.
 If you have a piece of code that is very dynamic you might say that a given variable is typed as `Any`, either because the actual type is completely arbitrary during runtime or because the actual type is unwieldy to write.
