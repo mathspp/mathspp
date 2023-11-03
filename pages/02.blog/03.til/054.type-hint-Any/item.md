@@ -76,7 +76,17 @@ After all, we have that:
  - the function `g` is correctly typed because the return value `x` is of type `Any`, and `Any` is compatible with `int`; and
  - the function call `g("Hello, world!")` is also ok because the argument is of type `str` and the function `g` expects an argument of type `Any`. The type `str` is compatible with `Any`, so this function call is ok.
 
-I still have to figure out why this bidirectional compatibility is useful, but at least now I understand what it means for all types to be compatible with `Any` and for `Any` to be compatible with all types.
+
+## What is `Any` used for?
+
+So, why is `Any` useful if it gives you total freedom and doesn't seem to do anything for you?
+As pointed out in the comment section below, “`Any` is useful for gradually adding types to an untyped codebase.”.
+
+So, if you have some code that you'd like to typecheck, you can start by inserting `Any` everywhere, and the code will typecheck.
+Then, you can gradually start replacing `Any` with more specific types.
+
+If you are a practical type of person, instead of a purist, there is another situation where `Any` might come in handy.
+If you have a piece of code that is very dynamic you might say that a given variable is typed as `Any`, either because the actual type is completely arbitrary during runtime or because the actual type is unwieldy to write.
 
 
 That's it for now! [Stay tuned][subscribe] and I'll see you around!
