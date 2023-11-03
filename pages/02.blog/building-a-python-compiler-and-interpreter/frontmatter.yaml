@@ -1,0 +1,16 @@
+date: 03-11-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "In this tutorial series we will build a Python compiler and interpreter from scratch. We start with simple arithmetic expressions."
+    og:image: "https://mathspp.com/blog/building-a-python-compiler-and-interpreter/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/building-a-python-compiler-and-interpreter/thumbnail.webp"
+slug: "building-a-python-compiler-and-interpreter"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - compilers
+        - interpreters
+        - programming
+        - python
+title: Building a Python compiler and interpreter
