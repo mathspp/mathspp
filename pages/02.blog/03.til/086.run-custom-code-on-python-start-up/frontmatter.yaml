@@ -1,0 +1,17 @@
+date: 04-11-2023 15:30
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned that you can run custom Python code when Python starts-up, before running other scripts or programs."
+    og:image: https://mathspp.com/blog/til/run-custom-code-on-python-start-up/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/run-custom-code-on-python-start-up/thumbnail.webp
+routes:
+    aliases:
+        - "/blog/til/086"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - productivity
+      - programming
+      - python
+title: "TIL #086 – run custom code on Python start-up"
+visible: false
