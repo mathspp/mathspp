@@ -1358,6 +1358,8 @@ To do so, you needed to create four main components:
    - traverses the bytecode and performs the operation that each one represents;
    - uses a stack to help with the computations.
 
+You can get the code for this article at [tag v0.1.0 of this GitHub repository](https://github.com/mathspp/building-a-python-compiler-and-interpreter/tree/v0.1.0).
+
 
 ## Next steps
 
