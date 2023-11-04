@@ -2,7 +2,7 @@ In this tutorial series we will build a Python compiler and interpreter from scr
 
 ===
 
-# Implementing Python in Python
+# Building a Python compiler and interpreter
 
 In this series of articles we will be implementing the Python programming language, from scratch, in Python.
 
@@ -10,7 +10,7 @@ The end goal of this series is to explore and play around with the concepts and 
 To that end, we will create a programming language with a subset of the features that Python has and, along the way, we will play with tokenizers, parsers, compilers, and interpreters!
 
 An important disclaimer is due: my role in this series is to take you with me in this exploratory journey as I dig into the workings of programming languages.
-I am not an expert in these matters!
+It'll be an opportunity for both of us to learn some new things.
 
 
 ## Setup
