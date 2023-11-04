@@ -70,6 +70,11 @@ Then, you just create a symlink from the typical location `~/.pythonrc` to the v
 This way, when you change computers, you have all your configurations ready to be cloned from the repo and they're easier to setup on your new machine.
 
 
+## Customise Python on start-up
+
+If you want to customise Python on start-up, and not just the REPL, you can read my short article on [running custom code on Python start-up](/blog/til/run-custom-code-on-python-start-up).
+
+
 [boost-git-dx]: https://gumroad.com/a/817193683/wlrcr
 [^1]: If you buy this book, I may get an affiliate commission because I referred you to it, but this comes at no extra cost to you.
 
