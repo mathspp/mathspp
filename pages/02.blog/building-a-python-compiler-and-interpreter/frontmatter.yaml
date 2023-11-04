@@ -9,6 +9,7 @@ taxonomy:
     category:
         - blogpost
     tag:
+        - bpci
         - compilers
         - interpreters
         - programming

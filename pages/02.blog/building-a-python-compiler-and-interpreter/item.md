@@ -1373,4 +1373,8 @@ That's a bit too restrictive, isn't it?
 ## Exercises
 
  - Implement `__repr__` methods in `TokenType` and `BytecodeType` so that printing tokens and bytecodes is slightly shorter.
- - Write a function to print trees with indentation.
+ - Write a function to pretty print ASTs, so that they are more readable (for example, one node per line and with indentation).
+ - Try to modify the tokenizer to accept integers with more than one digit.
+ - Try to modify our program to also accept floats (this means changing more than just the tokenizer!).
+
+I'll solve the exercises in the next article of this series!
