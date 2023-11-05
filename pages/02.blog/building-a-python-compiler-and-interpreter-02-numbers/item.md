@@ -624,6 +624,8 @@ On top of those quality-of-life improvements, we also extended the features we s
 Adding support for longer integers and for floats may not seem like much, but it lay the essential groundwork that will make extending the parser _much_ easier from now on.
 We'll see this as soon as the next article in this series.
 
+You can get the code for this article at [tag v0.2.0 of this GitHub repository](https://github.com/mathspp/building-a-python-compiler-and-interpreter/tree/v0.2.0).
+
 
 ## Next steps
 
