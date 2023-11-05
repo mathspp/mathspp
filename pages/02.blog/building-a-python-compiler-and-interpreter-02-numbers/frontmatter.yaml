@@ -10,8 +10,6 @@ taxonomy:
         - blogpost
     tag:
         - bpci
-        - compilers
-        - interpreters
         - programming
         - python
 title: Building a Python compiler and interpreter – 02 arithmetic

@@ -1366,8 +1366,8 @@ You can get the code for this article at [tag v0.1.0 of this GitHub repository](
 Throughout the remainder of this series we will be working on the four components that you worked on in this article.
 By improving and modifying these four components, we will be able to accomodate many more features.
 
-For example, right now you can _only_ perform a single addition or subtraction, and both operands must be single digit integers...
-That's a bit too restrictive, isn't it?
+This first article was a big one because we had to do _everything_ before seeing some results.
+The next articles will focus on smaller changes and so will be easier to digest.
 
 [The exercises below](#exercises) will challenge you to try and implement a couple of features that we will implement next, so go ahead and take a look at those.
 
