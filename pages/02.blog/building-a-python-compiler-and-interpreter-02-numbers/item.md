@@ -517,7 +517,9 @@ class Parser:
 
     def parse(self) -> BinOp:
         """Parses the program."""
-        return self.parse_computation()
+        computation = self.parse_computation()
+        self.eat(TokenType.EOF)
+        return computation
 ```
 
 After making these modifications, we run the tests with `pytest .`.
