@@ -2,9 +2,9 @@ date: 04-11-2023 23:00
 metadata:
     author: Rodrigo Girão Serrão
     description: "In the second part of this series of building a Python compiler and interpreter we will improve the support of numbers."
-    og:image: "https://mathspp.com/blog/building-a-python-compiler-and-interpreter/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/building-a-python-compiler-and-interpreter/thumbnail.webp"
-slug: "building-a-python-compiler-and-interpreter"
+    og:image: "https://mathspp.com/blog/building-a-python-compiler-and-interpreter-02-numbers/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/building-a-python-compiler-and-interpreter-02-numbers/thumbnail.webp"
+slug: "building-a-python-compiler-and-interpreter-02-numbers"
 taxonomy:
     category:
         - blogpost
@@ -12,4 +12,4 @@ taxonomy:
         - bpci
         - programming
         - python
-title: Building a Python compiler and interpreter – 02 arithmetic
+title: Building a Python compiler and interpreter – 02 numbers

@@ -640,9 +640,10 @@ We will do these things because these operations are conceptually simple while a
 
 ## Exercises
 
- - Can you add support for binary, octal, and hexadecimal numbers? (I won't be showing the solution in the next article.)
+ - Can you add support for binary, octal, and hexadecimal numbers? (I won't be showing the solution in the next article but it's a good exercise for you.)
  - Can you add support for multiple additions and subtractions in a row? For example, can you make your program work with the code `"1 + 2 - 3"`?
- - Can you add support for unary minus?
+ - Can you add support for unary minus and unary addition?
+ - What about parenthesised expressions?
 
 
 [series-link]: /blog/tag:bpci
