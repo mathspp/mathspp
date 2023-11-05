@@ -1,0 +1,17 @@
+date: 05-11-2023 19:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "In the third part of building a Python compiler and interpreter we will make our parser, compiler, and interpreter, much more flexible with the visitor pattern."
+    og:image: "https://mathspp.com/blog/building-a-python-compiler-and-interpreter-03-visitor-pattern/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/building-a-python-compiler-and-interpreter-03-visitor-pattern/thumbnail.webp"
+slug: "building-a-python-compiler-and-interpreter-03-visitor-pattern"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - bpci
+        - compilers
+        - interpreters
+        - programming
+        - python
+title: Building a Python compiler and interpreter – 03 visitor pattern
