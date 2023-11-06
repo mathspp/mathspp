@@ -3,7 +3,7 @@ In the third part of [this series][series-link] of building a Python compiler an
 ===
 
 
-# Building a Python compiler and interpreter – 03 arithmetic
+# Building a Python compiler and interpreter – 03 visitor pattern
 
 This is the third article of the [“Building a Python compiler and interpreter” series][series-link], so make sure you've gone through the first two articles before tackling this one!
 
