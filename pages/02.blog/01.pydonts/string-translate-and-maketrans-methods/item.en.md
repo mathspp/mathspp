@@ -729,7 +729,7 @@ is there to explicitly map many common characters to "x",
 which is supposed to speed up the translation process itself.
 
 Then, the three lines that follow update the translation table
-in such a way that the parenthesis, brackets, and braces,
+in such a way that the parentheses, brackets, and braces,
 are mapped like I said they would.
 
 In the end, the translation behaves like this:

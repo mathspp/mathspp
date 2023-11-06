@@ -133,10 +133,10 @@ Traceback (most recent call last):
 ValueError: not enough values to unpack (expected 4, got 2)
 ```
 
-Our use of parenthesis in `(r, g, b)` tells Python we actually want to go into
+Our use of parentheses in `(r, g, b)` tells Python we actually want to go into
 the nested structure of `colour_info`.
 
-This might be clearer if we actually include the outer set of parenthesis that
+This might be clearer if we actually include the outer set of parentheses that
 is usually omitted:
 
 ```py

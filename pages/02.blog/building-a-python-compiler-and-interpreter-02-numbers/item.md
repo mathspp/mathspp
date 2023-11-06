@@ -634,7 +634,7 @@ You can get the code for this article at [tag v0.2.0 of this GitHub repository](
 Up next we will be working on some features that will let us parse more interesting programs and create more complex trees.
 This will entail looking at something called a "language grammar", a concept I'll explain in the next article.
 
-With this language grammar, we will be able to add grouping with parenthesis, unary minus and plus, and more operations like multiplication, division, integer division, modulo, exponentiation, and more.
+With this language grammar, we will be able to add grouping with parentheses, unary minus and plus, and more operations like multiplication, division, integer division, modulo, exponentiation, and more.
 We will do these things because these operations are conceptually simple while also letting me show you the definite way in which we will be structuring our parser from now on.
 
 [The exercises below](#exercises) will challenge you to try and implement a couple of features that we will implement next, so go ahead and take a look at those.

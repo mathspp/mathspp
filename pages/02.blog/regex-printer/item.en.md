@@ -22,7 +22,7 @@ The `regexPrinter` supports:
  - the `{a:b}` operator that matches no less than $a$ and no more than $b$ repetitions of the preceding pattern. As an example, `su{1:3}re` matches the strings "sure", "suure" and "suuure";
  - the `|` operator that denotes a choice. `cat|kat` matches "cat" and "kat" and `thank(s| you)` matches "thanks" and "thank you";
  - the `[]` denote that only one pattern from the ones given are to be matched. For example `[abc]` matches "a", "b" and "c";
- - the parenthesis `()` that are used to group things. One thing to note is that the quantifiers `*+?{:}` all have higher precedence than string concatenation e.g., `ab?` is interpreted as `a(b?)` and _not_ `(ab)?`.
+ - the parentheses `()` that are used to group things. One thing to note is that the quantifiers `*+?{:}` all have higher precedence than string concatenation e.g., `ab?` is interpreted as `a(b?)` and _not_ `(ab)?`.
 
 Please bear in mind that any character with no special meaning is interpreted literally, except inside the grouping operator `[]`, where every character is interpreted literally. That is, `[ab*]` matches "a", "b" and "*", while `b&='` will match the string "b&='".
 

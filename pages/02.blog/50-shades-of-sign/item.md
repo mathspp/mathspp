@@ -339,7 +339,7 @@ def sign(x):
 
 Look at the code above!
 It's a work of art, it's a huge emoji!
-The minus `-` looks like the nose and the two sets of parenthesis represent the eyes.
+The minus `-` looks like the nose and the two sets of parentheses represent the eyes.
 
 This works because the minus `-` forces the two Boolean results to evaluate to an integer.
 Then, you can only have one of the two conditions be `True` at a time,

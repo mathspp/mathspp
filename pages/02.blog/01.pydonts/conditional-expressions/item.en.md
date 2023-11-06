@@ -452,7 +452,7 @@ def sign(x):
 ```
 
 This shows that conditional expressions can be nested, naturally.
-Now it is just a matter of checking whether the parenthesis are needed or not.
+Now it is just a matter of checking whether the parentheses are needed or not.
 
 In other words, if we write
 
