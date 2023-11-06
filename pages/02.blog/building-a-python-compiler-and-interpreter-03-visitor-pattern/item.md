@@ -172,9 +172,9 @@ class Parser:
 You don't know it yet, because you haven't finished this article, but the grammar will rule everything.
 The parser mimics the grammar, and the compiler and interpreter will be built around the parser, so the grammar is the one thing that will influence everything else.
 
-So, in a sense, knowing how to modify the grammar to add new features to the language will be key.
-The more we work with the grammar, the better you'll become at this.
-For now, I'll try to give you a tip.
+So, in a sense, knowing how to modify the grammar to add new features to the language will be _the key thing_ to understand.
+The more we work with the grammar, the better you'll get at this.
+For now, I'll leave you with some thoughts.
 
 We could've written the previous grammar as such:
 
@@ -189,6 +189,10 @@ This would make it easier, for example, to add complex numbers, or fractions, or
 
 In general, we will try to keep our grammar rules as simple as possible and the hierarchy of the rules can have repercussions in the priority of operations.
 Thus, going forward, we'll want to keep this in mind.
+
+For example, notice how the `EOF` is mentioned at the topmost rule (the rule `program`) and, at the same time, the token `EOF` is the _last_ one to be eaten when parsing the tokens.
+Conversely, the rule for `number` is "at the bottom" of the nesting of rules, and a number is the first thing we parse in our program.
+So, rules that are "deep" within the grammar correspond to things that tend to be parsed "first", which means depth can be used to control priority of operations, for example.
 
 This may be a bit abstract for now, but it'll become clearer by the end of this article and over the next few articles.
 
