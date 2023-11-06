@@ -265,12 +265,8 @@ class Parser:
         result = self.parse_number()
 
         while (next_token := self.peek()) in {TokenType.PLUS, TokenType.MINUS}:
-            if next_token == TokenType.PLUS:
-                op = "+"
-                self.eat(TokenType.PLUS)
-            else:
-                op = "-"
-                self.eat(TokenType.MINUS)
+            op = "+" if next_token_type == TokenType.PLUS else "-"
+            self.eat(next_token_type)
             right = self.parse_number()
             result = BinOp(op, result, right)
 
@@ -328,12 +324,8 @@ class Parser:
         result = self.parse_number()
 
         while (next_token := self.peek()) in {TokenType.PLUS, TokenType.MINUS}:
-            if next_token == TokenType.PLUS:
-                op = "+"
-                self.eat(TokenType.PLUS)
-            else:
-                op = "-"
-                self.eat(TokenType.MINUS)
+            op = "+" if next_token_type == TokenType.PLUS else "-"
+            self.eat(next_token_type)
             right = self.parse_number()
             result = BinOp(op, result, right)
 
