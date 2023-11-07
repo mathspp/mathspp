@@ -1,0 +1,134 @@
+name: Custom Banner
+slug: custom-banner
+type: plugin
+version: 1.0.16
+description: Add a custom banner to your Grav site
+icon: bookmark
+author:
+  name: Ari Cooper-Davis
+  email: grav@cooper-davis.net
+homepage: https://github.com/aricooperdavis/grav-plugin-custom-banner
+keywords: grav, plugin, etc
+bugs: https://github.com/aricooperdavis/grav-plugin-custom-banner/issues
+docs: https://github.com/aricooperdavis/grav-plugin-custom-banner/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    appearance:
+      type: section
+      title: PLUGIN_CUSTOM_BANNER.APPEARANCE
+      underline: true
+      fields:
+        content:
+          type: text
+          label: PLUGIN_CUSTOM_BANNER.CONTENT
+          help: PLUGIN_CUSTOM_BANNER.CONTENT_HELP
+          default: PLUGIN_CUSTOM_BANNER.CONTENT_DEFAULT
+        position:
+          type: select
+          default: 'bottom'
+          label: PLUGIN_CUSTOM_BANNER.POSITION
+          help: PLUGIN_CUSTOM_BANNER.POSITION_HELP
+          options:
+            bottom: PLUGIN_CUSTOM_BANNER.POSITION_BOTTOM
+            top: PLUGIN_CUSTOM_BANNER.POSITION_TOP
+        button-text:
+          type: text
+          label: PLUGIN_CUSTOM_BANNER.BUTTON_TEXT
+          help: PLUGIN_CUSTOM_BANNER.BUTTON_TEXT_HELP
+          default: PLUGIN_CUSTOM_BANNER.BUTTON_TEXT_DEFAULT
+        dismiss-text:
+          type: text
+          label: PLUGIN_CUSTOM_BANNER.DISMISS_TEXT
+          help: PLUGIN_CUSTOM_BANNER.DISMISS_TEXT_HELP
+          default: PLUGIN_CUSTOM_BANNER.DISMISS_TEXT_DEFAULT
+        bg-colour:
+          type: colorpicker
+          default: '#EC565C'
+          label: PLUGIN_CUSTOM_BANNER.BG_COLOUR
+          help: PLUGIN_CUSTOM_BANNER.BG_COLOUR_HELP
+        fg-colour:
+          type: colorpicker
+          default: 'rgba(255, 255, 255, 0.80)'
+          label: PLUGIN_CUSTOM_BANNER.FG_COLOUR
+          help: PLUGIN_CUSTOM_BANNER.FG_COLOUR_HELP
+        box-shadow:
+          type: toggle
+          label: PLUGIN_CUSTOM_BANNER.BOX_SHADOW
+          highlight: 1
+          default: 1
+          options:
+            1: PLUGIN_ADMIN.ENABLED
+            0: PLUGIN_ADMIN.DISABLED
+    behaviour:
+      type: section
+      title: PLUGIN_CUSTOM_BANNER.BEHAVIOUR
+      underline: true
+      fields:
+        button-url:
+          type: text
+          default: https://example.com/
+          label: PLUGIN_CUSTOM_BANNER.BUTTON_URL
+          help: PLUGIN_CUSTOM_BANNER.BUTTON_URL_HELP
+        show-on-pages:
+          type: pages
+          label: PLUGIN_CUSTOM_BANNER.SHOW_ON_PAGES
+          help: PLUGIN_CUSTOM_BANNER.SHOW_ON_PAGES_HELP
+          multiple: true
+          validate:
+            type: array
+          show_all: false
+          show_modular: false
+          show_root: false
+        hide-on-pages:
+          type: pages
+          label: PLUGIN_CUSTOM_BANNER.HIDE_ON_PAGES
+          help: PLUGIN_CUSTOM_BANNER.HIDE_ON_PAGES_HELP
+          multiple: true
+          validate:
+            type: array
+          show_all: false
+          show_modular: false
+          show_root: false
+        button:
+          type: toggle
+          label: PLUGIN_CUSTOM_BANNER.BUTTON
+          help: PLUGIN_CUSTOM_BANNER.BUTTON_HELP
+          highlight: 1
+          default: 1
+          options:
+            1: PLUGIN_ADMIN.ENABLED
+            0: PLUGIN_ADMIN.DISABLED
+        dismiss-button:
+          type: toggle
+          label: PLUGIN_CUSTOM_BANNER.DISMISS_BUTTON
+          help: PLUGIN_CUSTOM_BANNER.DISMISS_BUTTON_HELP
+          highlight: 1
+          default: 1
+          options:
+            1: PLUGIN_ADMIN.ENABLED
+            0: PLUGIN_ADMIN.DISABLED
+        cdn-fix:
+          type: toggle
+          label: PLUGIN_CUSTOM_BANNER.CDN_FIX
+          help: PLUGIN_CUSTOM_BANNER.CDN_FIX_HELP
+          highlight: 1
+          default: 0
+          options:
+            1: PLUGIN_ADMIN.ENABLED
+            0: PLUGIN_ADMIN.DISABLED

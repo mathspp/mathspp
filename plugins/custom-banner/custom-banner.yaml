@@ -1,0 +1,15 @@
+enabled: true
+content: Custom Text added by the <b>Custom Banner</b> plugin (disable plugin to remove)
+position: bottom
+button-text: Click me...
+button: true
+button-url: https://example.com/
+dismiss-text: Dismiss
+dismiss-button: true
+cdn-fix: false
+bg-colour: '#A1C3B2'
+fg-colour: 'rgba(0, 20, 10, 0.90)'
+box-shadow: true
+show-on-pages:
+hide-on-pages:
+  - /route-to-page/you-want-to/exclude
