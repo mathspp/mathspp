@@ -1,0 +1,17 @@
+date: 06-11-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "In the fourth part of building a Python compiler and interpreter we will add support for more arithmetic operations and parenthesised expressions."
+    og:image: "https://mathspp.com/blog/building-a-python-compiler-and-interpreter-04-arithmetic/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/building-a-python-compiler-and-interpreter-04-arithmetic/thumbnail.webp"
+slug: "building-a-python-compiler-and-interpreter-04-arithmetic"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - bpci
+        - compilers
+        - interpreters
+        - programming
+        - python
+title: Building a Python compiler and interpreter – 04 arithmetic
