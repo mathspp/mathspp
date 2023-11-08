@@ -1191,7 +1191,7 @@ The next steps, for the next few articles, will revolve around statements (makin
  - Change the grammar so that a program is not a single computation, but rather an arbitrary number of them separated by newlines.
  - Change the tokenizer to start recognising words as variables.
  - Change the grammar so that a program is made up of computations and variable assignments and update the parser accordingly.
- - Change the grammar so that a “number” is actually a number of a variable reference and update the parser accordingly.
+ - Change the grammar so that a “number” is actually a number or a variable reference and update the parser accordingly.
 
 
 [series-link]: /blog/tag:bpci
