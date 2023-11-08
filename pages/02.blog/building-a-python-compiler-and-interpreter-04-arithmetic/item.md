@@ -1,11 +1,11 @@
-In the fourth part of [this series][series-link] of building a Python compiler and interpreter we will add support for more arithmetic operations and parenthesised expressions.
+In the 4th part of [this series][series-link] of building a Python compiler and interpreter we will add support for more arithmetic operations and parenthesised expressions.
 
 ===
 
 
 # Building a Python compiler and interpreter – 04 arithmetic
 
-This is the fourth article of the [“Building a Python compiler and interpreter” series][series-link], so make sure you've gone through the first three articles before tackling this one!
+This is the 4th article of the [“Building a Python compiler and interpreter” series][series-link], so make sure you've gone through the first three articles before tackling this one!
 
 The code that serves as a starting point for this article is [the tag v0.3.0 of the code in this GitHub repository](https://github.com/mathspp/building-a-python-compiler-and-interpreter/tree/v0.3.0).
 
@@ -1185,8 +1185,6 @@ The next steps, for the next few articles, will revolve around statements (makin
 
 
 ## Exercises
-
-Exercises
 
  - Add a dynamic test that finds all (relevant!) subclasses of `TreeNode` and makes sure the class `Compiler` has a method to compile that subclass of `TreeNode`.
  (I won't be solving this exercise in the next articles.)
