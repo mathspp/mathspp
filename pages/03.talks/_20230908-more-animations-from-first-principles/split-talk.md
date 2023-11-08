@@ -1,7 +1,7 @@
 ---
 title: (More) Animations from first principles in 5 minutes ⚡️
 event: "PyCon Portugal 2023"
-image_align: left
+image_align: right
 ---
 
 After my first lightning talk was so well-received, I came back to show a different type of animation where we make a recursive drawing that zooms in infinitely.
