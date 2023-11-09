@@ -1,4 +1,4 @@
-In the sixth part of [this series][series-link] of building a Python compiler and interpreter we will add support for variables.
+In the 6th part of [this series][series-link] of building a Python compiler and interpreter we will add support for variables, simple assignments, and chained assignments.
 
 ===
 
