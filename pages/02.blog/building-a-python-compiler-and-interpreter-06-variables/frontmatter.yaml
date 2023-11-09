@@ -1,0 +1,17 @@
+date: 09-11-2023 10:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "In the 6th part of building a Python compiler and interpreter we will add support for variables!"
+    og:image: "https://mathspp.com/blog/building-a-python-compiler-and-interpreter-06-variables/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/building-a-python-compiler-and-interpreter-06-variables/thumbnail.webp"
+slug: "building-a-python-compiler-and-interpreter-06-variables"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - bpci
+        - compilers
+        - interpreters
+        - programming
+        - python
+title: Building a Python compiler and interpreter – 06 variables
