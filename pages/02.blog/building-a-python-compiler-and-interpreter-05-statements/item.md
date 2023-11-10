@@ -35,7 +35,7 @@ Thus, we start by introducing that token type:
 ```py
 class TokenType(StrEnum):
     # ...
-    SEP = auto()  # statement separator
+    NEWLINE = auto()  # statement separator
 ```
 
 Now, we might want to add the newline character `"\n"` to the mapping `CHARS_AS_TOKENS`.
