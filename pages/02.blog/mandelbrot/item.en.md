@@ -109,7 +109,7 @@ for i in range(MAX_ITER + 1):
 
 This palette produces the much more colourful version you can find below:
 
-![A colourful rendering of the Mandelbrot set, a well-known fractal, rendered with Python and pygame.](_colours.webp "A grayscale rendering of the Mandelbrot set.")
+![A colourful rendering of the Mandelbrot set, a well-known fractal, rendered with Python and pygame.](_colours.webp "A colourful rendering of the Mandelbrot set.")
 
 Here is the full code, with the dimensions used to generate the thumbnail for this article:
 
