@@ -5,9 +5,12 @@ metadata:
     og:image: "https://mathspp.com/blog/fractals-and-the-mandelbrot-set/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/fractals-and-the-mandelbrot-set/thumbnail.webp"
 routes:
-    - "mandelbrot-set"
-    - "fractals-and-the-mandelbrot-set"
-slug: fractals-and-mandelbrot-set
+    default: "mandelbrot-set"
+    canonical: "mandelbrot-set"
+    aliases:
+        - "fractals-and-mandelbrot-set"
+        - "fractals-and-the-mandelbrot-set"
+slug: mandelbrot-set
 taxonomy:
     category: blogpost
     tag:
