@@ -4,6 +4,9 @@ metadata:
     description: "In this article we explore how we can write a simple Python script to render the Mandelbrot set, a well-known fractal."
     og:image: "https://mathspp.com/blog/fractals-and-the-mandelbrot-set/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/fractals-and-the-mandelbrot-set/thumbnail.webp"
+routes:
+    - "mandelbrot-set"
+    - "fractals-and-the-mandelbrot-set"
 slug: fractals-and-mandelbrot-set
 taxonomy:
     category: blogpost
