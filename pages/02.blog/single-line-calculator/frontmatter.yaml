@@ -1,0 +1,14 @@
+date: 11-11-2023 16:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Let us implement a calculator in ONE line of code."
+    og:image: "https://mathspp.com/blog/single-line-calculator/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/single-line-calculator/thumbnail.webp"
+slug: "single-line-calculator"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - programming
+        - python
+title: Single-line calculator
