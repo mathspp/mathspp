@@ -1,4 +1,9 @@
 date: 13-10-2017
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "In this article we explore how we can write a simple Python script to render the Mandelbrot set, a well-known fractal."
+    og:image: "https://mathspp.com/blog/fractals-and-the-mandelbrot-set/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/fractals-and-the-mandelbrot-set/thumbnail.webp"
 slug: fractals-and-mandelbrot-set
 taxonomy:
     category: blogpost
@@ -9,3 +14,4 @@ taxonomy:
       - fractals
       - visualisation
       - pygame
+title: Fractals and the Mandelbrot set
