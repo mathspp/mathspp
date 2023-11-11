@@ -8,8 +8,8 @@ routes:
     default: "mandelbrot-set"
     canonical: "mandelbrot-set"
     aliases:
-        - "fractals-and-mandelbrot-set"
-        - "fractals-and-the-mandelbrot-set"
+        - "/blog/fractals-and-mandelbrot-set"
+        - "/blog/fractals-and-the-mandelbrot-set"
 slug: mandelbrot-set
 taxonomy:
     category: blogpost
