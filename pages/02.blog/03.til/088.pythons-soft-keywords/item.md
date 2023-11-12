@@ -27,6 +27,14 @@ On the other hand, a keyword like `match` is a soft keyword because you can use 
 
 ## How to determine all of Python's soft keywords?
 
+!!!! EDIT: After sharing my original method and posting this article on X, Pablo Galindo Salgado – a Python core dev – [pointed out I could've simply done the following](https://x.com/pyblogsal/status/1723690831318577591):
+!!!! 
+!!!! ```pycon
+!!!! >>> import keyword
+!!!! >>> keyword.softkwlist
+!!!! ['_', 'case', 'match', 'type']
+!!!! ```
+
 In order to determine Python's soft keywords, I started by opening the Python grammar (at the time of writing, [this file](https://github.com/python/cpython/blob/12a30bc1aa0586308bf3fe12c915bcc5e54a032f/Grammar/python.gram) was the most recent grammar version).
 
  - I opened the Python REPL;
