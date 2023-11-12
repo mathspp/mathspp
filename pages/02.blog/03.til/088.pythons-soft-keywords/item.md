@@ -69,6 +69,7 @@ We have 222 possible keywords to go through:
 However, if we get rid of all of the ones that contain whitespace, only 105 matches are left:
 
 ```pycon
+>>> matches = {match for match in matches if " " not in match}
 >>> len(matches)
 105
 ```
