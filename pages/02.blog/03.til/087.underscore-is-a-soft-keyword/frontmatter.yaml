@@ -1,0 +1,17 @@
+date: 12-11-2023 08:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned that the underscore `_` is a soft keyword in Python."
+    og:image: https://mathspp.com/blog/til/underscore-is-a-soft-keyword/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/underscore-is-a-soft-keyword/thumbnail.webp
+routes:
+    aliases:
+        - "/blog/til/087"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - parsers
+      - programming
+      - python
+title: "TIL #087 – underscore is a soft keyword"
+visible: false
