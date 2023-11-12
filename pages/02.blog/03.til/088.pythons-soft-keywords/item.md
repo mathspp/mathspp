@@ -76,7 +76,7 @@ However, if we get rid of all of the ones that contain whitespace, only 105 matc
 
 After this, I painstakingly went through all 105 matches and checked manually whether they were soft keywords or not.
 I took none for granted.
-I event went through the trouble of checking `if` and `for`, for example, so that I could be 100% certain I wouldn't miss a single soft keyword.
+I even went through the trouble of checking `if` and `for`, for example, so that I could be 100% certain I wouldn't miss a single soft keyword.
 
 Then, I was doing some research on structural pattern matching and I was reading [PEP 634](https://peps.python.org/pep-0634/) that introduces it, when I read this sentence referring to the Python grammar:
 
