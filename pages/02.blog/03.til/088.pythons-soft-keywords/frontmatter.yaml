@@ -1,0 +1,17 @@
+date: 12-11-2023 09:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how many soft keywords Python has and what they are."
+    og:image: https://mathspp.com/blog/til/pythons-soft-keywords/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/pythons-soft-keywords/thumbnail.webp
+routes:
+    aliases:
+        - "/blog/til/088"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - parsers
+      - programming
+      - python
+title: "TIL #088 – Python's soft keywords"
+visible: false
