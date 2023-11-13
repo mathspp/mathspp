@@ -1,0 +1,17 @@
+date: 13-11-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "In the 8th part of building a Python compiler and interpreter we will add support for Boolean literals and Boolean operators."
+    og:image: "https://mathspp.com/blog/building-a-python-compiler-and-interpreter-08-booleans/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/building-a-python-compiler-and-interpreter-08-booleans/thumbnail.webp"
+slug: "building-a-python-compiler-and-interpreter-08-booleans"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - bpci
+        - compilers
+        - interpreters
+        - programming
+        - python
+title: Building a Python compiler and interpreter – 08 Booleans
