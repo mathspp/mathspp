@@ -7,7 +7,7 @@ Today I learned how many soft keywords Python has and what they are.
 
 Python 3.12 has 4 soft keywords:
 
- 1. `match` – became a soft keyword in Python 3.10 when [structural pattern matching](/blog/pydonts/structural-pattern-matching) was introduced;
+ 1. `match` – became a soft keyword in Python 3.10 when [structural pattern matching](/blog/pydonts/structural-pattern-matching-tutorial) was introduced;
  2. `case` – see above;
  3. `_` – surprisingly, `_` was also turned into a soft keyword because of structural pattern matching ([this short read](/blog/til/underscore-is-a-soft-keyword) will give you a bit more context); and
  4. `type` – with the introduction of [`type` statements in Python 3.12](/blog/til/type-statement-and-type-aliases), `type` became a soft keyword (it is also a built-in!)

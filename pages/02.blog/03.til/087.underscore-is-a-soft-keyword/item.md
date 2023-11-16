@@ -23,7 +23,7 @@ _ *= 2
 print(_)  # 6
 ```
 
-However, in [Python's 3.10 `match` statement](/blog/structural-pattern-matching), the underscore `_` was turned into a soft keyword.
+However, in [Python's 3.10 `match` statement](/blog/pydonts/structural-pattern-matching-tutorial), the underscore `_` was turned into a soft keyword.
 This means that when you write a `match` statement containing a `case` statement that looks like `case _:`, Python actually parses the underscore `_` as a keyword!
 
 So, if `_` can be used as a regular variable name and if `_` can be parsed as a keyword, depending on the context, that makes it a soft keyword!
