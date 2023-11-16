@@ -5,8 +5,8 @@ metadata:
     og:image: "https://mathspp.com/blog/fractals-and-the-mandelbrot-set/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/fractals-and-the-mandelbrot-set/thumbnail.webp"
 routes:
-    default: "mandelbrot-set"
-    canonical: "mandelbrot-set"
+    default: "/blog/mandelbrot-set"
+    canonical: "/blog/mandelbrot-set"
     aliases:
         - "/blog/fractals-and-mandelbrot-set"
         - "/blog/fractals-and-the-mandelbrot-set"
