@@ -635,7 +635,7 @@ It may also receive lists of nodes or any other thing, really.
 It will do its best to print whatever it receives in the best way possible (see the first and second branches) but if it can't, it will just print whatever it received.
 
 The first case is the generic case where we're printing a tree node, which we can do by traversing all of its attributes and printing them recursively.
-We use [the built-in `vars`](/til/vars) to access all of the attributes and we use the attribute name as a prefix to make the output easier to read.
+We use [the built-in `vars`](/blog/til/vars) to access all of the attributes and we use the attribute name as a prefix to make the output easier to read.
 
 The second case covers lists of tree nodes, where we want to print one tree node per line.
 
