@@ -156,7 +156,7 @@ def bt_press(key):
     update(arg)
 ```
 
-So, this pattern is something we can "easily" do with nested [conditional expressions](/blog/conditional-expressions).
+So, this pattern is something we can "easily" do with nested [conditional expressions](/blog/pydonts/conditional-expressions).
 This way, we can change `bt_press` so that it only uses a single expression:
 
 ```py
@@ -232,7 +232,7 @@ def bt_draw(key, col, lin):
 ```
 
 The problem here is that the function `bt_draw` has two lines and `lambda` functions only accept a single expression...
-You can fix this problem in a couple of different ways but my favourite one uses [Boolean short-circuiting](/blog/pydonts/boolean-short-circuiting) together with the fact that all Python objects have a [Truthy or Falsy](/blog/truthy-falsy-and-bool) value.
+You can fix this problem in a couple of different ways but my favourite one uses [Boolean short-circuiting](/blog/pydonts/boolean-short-circuiting) together with the fact that all Python objects have a [Truthy or Falsy](/blog/pydonts/truthy-falsy-and-bool) value.
 
 The gist of it is that if you have two expressions `expr1` and `expr2`, then you can put them together with `and` or `or` and you get both to run.
 You use either `and` or `or` depending on the value of `expr1`:
