@@ -2,6 +2,7 @@ This article lists the best 2023 Black Friday deals for Python developers.
 
 ===
 
+![](thumbnail.webp)
 
 # Python Black Friday 2023
 
@@ -39,6 +40,13 @@ You can learn more about the Python Problem-Solving Bootcamp [here](/pythonbootc
  - [Teach Me Python](https://teachmepython.com) membership (by Mike Driscoll) is 33% off with code `black23` from the 20th of November until the 27th.
 
  - [The Python Coding Place](https://thepythoncodingplace.com) lifetime membership (by Stephen Gruppeta) is 70% off, no code needed.
+
+ - [Python Morsels](https://www.pythonmorsels.com/lifetime-access-sale/) lifetime access for the price of a 2-year subscription, no code needed.
+
+
+## Miscellanious
+
+ - [snappify] is the tool that I use to share snippets of code online and to create slides for my talks and it is 30% for your first year with the code `BLACKFRIDAY_2023`.
 
 
 <!--
