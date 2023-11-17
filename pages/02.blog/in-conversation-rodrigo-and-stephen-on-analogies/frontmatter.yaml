@@ -1,0 +1,16 @@
+date: 21-11-2023 10:00
+metadata:
+    author: "Rodrigo Girão Serrão"
+    description: "A conversation between Rodrigo Girão Serrão and Stephen Gruppetta on analogies in programming."
+    og:image: "https://mathspp.com/blog/in-conversation-rodrigo-and-stephen-on-analogies/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/in-conversation-rodrigo-and-stephen-on-analogies/thumbnail.webp"
+publish_date: 21-11-2023 10:00
+routes:
+    canonical: https://thepythoncodingstack.substack.com/p/in-conversation-rodrigo-and-stephen-on-analogies
+slug: "in-conversation-rodrigo-and-stephen-on-analogies"
+taxonomy:
+    category: "blogpost"
+    tag:
+      - "programming"
+      - "python"
+title: "In conversation: Rodrigo and Stephen discuss analogies when learning to code"
