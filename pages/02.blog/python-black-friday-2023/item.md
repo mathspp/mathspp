@@ -29,6 +29,10 @@ You can learn more about the Python Problem-Solving Bootcamp [here](/pythonbootc
 
  - [Boost Your Django DX](https://gumroad.com/a/817193683/epPif) and [Speed Up Your Django Tests](https://gumroad.com/a/817193683/gLNvJ) by Adam Johnson are 50% off, no code needed.
 
+- [All Books Bundle](https://learnbyexample.gumroad.com/l/all-books/FestiveOffer) by Sundeep Agarwal is a bundle with 13 programming books and is 69% off until the end of November, no code needed.
+
+- The bundle [Learn Python by Example](https://learnbyexample.gumroad.com/l/python-bundle/FestiveOffer) by Sundeep Agarwal is 70% off and the book [Understanding Python re(gex)?](https://learnbyexample.gumroad.com/l/py_regex/FestiveOffer) is free, both until the end of November, no code needed.
+
 
 ## Courses
 

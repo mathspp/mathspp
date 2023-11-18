@@ -285,6 +285,43 @@ If you're not sure how, you can aggregate the expressions one by one, but this i
 (tk := __import__("tkinter")) and (bt_draw := lambda key, col, lin: (bt := tk.Button(window, text=key, command=lambda: bt_press(key))) and bt.grid(column=col + 1, row=lin + 1)) and (update := lambda t: disp.config(text=t)) and (bt_press := lambda key: update("" if key == "C" else disp["text"][:-1] if key == "<" else str(round(eval(disp["text"]), 6)) if key == "=" else disp["text"] + key)) and (window := tk.Tk()) and window.title("TKalc") or (disp := tk.Label(window, text="")) and disp.grid(column=0, row=0, columnspan=5) or (bt_list := [bt_draw(k, n % 4 + 1, n // 4 + 1) for n, k in enumerate("()C<789/456*123-.0=+")]) and window.mainloop()
 ```
 
+And this is the same code as reformatted by black:
+
+```py
+(tk := __import__("tkinter")) and (
+    bt_draw := lambda key, col, lin: (
+        bt := tk.Button(
+            window,
+            text=key,
+            command=lambda: bt_press(key),
+        )
+    )
+    and bt.grid(column=col + 1, row=lin + 1)
+) and (update := lambda t: disp.config(text=t)) and (
+    bt_press := lambda key: update(
+        ""
+        if key == "C"
+        else disp["text"][:-1]
+        if key == "<"
+        else str(round(eval(disp["text"]), 6))
+        if key == "="
+        else disp["text"] + key
+    )
+) and (
+    window := tk.Tk()
+) and window.title(
+    "TKalc"
+) or (
+    disp := tk.Label(window, text="")
+) and disp.grid(
+    column=0, row=0, columnspan=5
+) or (
+    bt_list := [
+        bt_draw(k, n % 4 + 1, n // 4 + 1) for n, k in enumerate("()C<789/456*123-.0=+")
+    ]
+) and window.mainloop()
+```
+
 We've done it!
 
 Here's all of your code:
