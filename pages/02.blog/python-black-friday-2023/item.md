@@ -50,13 +50,15 @@ You can learn more about the Python Problem-Solving Bootcamp [here](/pythonbootc
 
 ## Miscellanious
 
- - [snappify] is the tool that I use to share snippets of code online and to create slides for my talks and it is 30% for your first year with the code `BLACKFRIDAY_2023`.
+ - [snappify](https://snappify.com) is the tool that I use to share snippets of code online and to create slides for my talks and it is 30% for your first year with the code `BLACKFRIDAY_2023`.
 
 
 ## More deals
 
  - You can find [more Django-related deals here](https://adamj.eu/tech/2023/11/20/django-black-friday-deals-2023/).
+
  - [BlackFridayDeals.dev](https://blackfridaydeals.dev) is listing developer-related Black Friday deals.
+
  - [This GitHub repository](https://github.com/trungdq88/Awesome-Black-Friday-Cyber-Monday) also hosts a bunch of Black Friday deals.
 
 
