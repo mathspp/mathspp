@@ -36,7 +36,7 @@ You can learn more about the Python Problem-Solving Bootcamp [here](/pythonbootc
 
 ## Courses
 
- - [Python Essentials for Data Scientists](https://courses.dataschool.io/python-essentials-for-data-scientists) and [all other Data School courses](https://courses.dataschool.io/black-friday) will be 40% off between the 24th and 27th of November.
+ - [Python Essentials for Data Scientists](https://courses.dataschool.io/python-essentials-for-data-scientists/l5wfy) and [all other Data School courses](https://courses.dataschool.io/a/l5wfy) will be 40% off between the 24th and 27th of November. (You might also be interested in their [complete bundle](https://courses.dataschool.io/black-friday-2023-bundle/l5wfy) for a discount of 55%!)
 
 
 ## Memberships
