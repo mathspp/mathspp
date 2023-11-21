@@ -2,7 +2,7 @@ A conversation between Rodrigo Girão Serrão and Stephen Gruppetta on analogies
 
 ===
 
-!!! This article was a collaboration between [Stephen Gruppetta](https://x.com/s_gruppetta_ct) from [The Python Coding Place](https://thepythoncodingplace.com).
+!!! This article was a collaboration with [Stephen Gruppetta](https://x.com/s_gruppetta_ct) from [The Python Coding Place](https://thepythoncodingplace.com).
 !!! You can also read this article on [Stephen's substack](https://thepythoncodingstack.substack.com/p/in-conversation-rodrigo-and-stephen-on-analogies).
 
 
@@ -145,5 +145,5 @@ I'm not sure if we're interested in going down that road but I touched on that a
 How about our readers? What's your favourite programming analogy?
 
 
-!!! This article was a collaboration between [Stephen Gruppetta](https://x.com/s_gruppetta_ct) from [The Python Coding Place](https://thepythoncodingplace.com).
+!!! This article was a collaboration with [Stephen Gruppetta](https://x.com/s_gruppetta_ct) from [The Python Coding Place](https://thepythoncodingplace.com).
 !!! You can also read this article on [Stephen's substack](https://thepythoncodingstack.substack.com/p/in-conversation-rodrigo-and-stephen-on-analogies).
