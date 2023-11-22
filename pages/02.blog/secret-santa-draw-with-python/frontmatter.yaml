@@ -1,0 +1,15 @@
+date: 22-11-2023
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This article shows how I made a secret Santa draw with Python."
+    og:image: "https://mathspp.com/blog/secret-santa-draw-with-python/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/secret-santa-draw-with-python/thumbnail.webp"
+slug: "secret-santa-draw-with-python"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - programming
+        - python
+        - slice of life
+title: Secret Santa draw with Python
