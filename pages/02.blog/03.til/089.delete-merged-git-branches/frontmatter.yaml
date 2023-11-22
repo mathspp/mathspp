@@ -1,0 +1,20 @@
+date: 22-11-2023 18:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to automatically delete local git branches that have been merged already."
+    og:image: https://mathspp.com/blog/til/delete-merged-git-branches/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/delete-merged-git-branches/thumbnail.webp
+references:
+    - "Adam Johnson's blog, <https://adamj.eu/tech/2022/10/30/git-how-to-clean-up-squash-merged-branches/> [last visited 22-11-2023];"
+    - "My tweet on the subject, <https://twitter.com/mathsppblog/status/1727283644493095309> [last visited 22-11-2023];"
+routes:
+    aliases:
+        - "/blog/til/089"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - productivity
+      - programming
+      - python
+title: "TIL #089 – delete merged git branches"
+visible: false
