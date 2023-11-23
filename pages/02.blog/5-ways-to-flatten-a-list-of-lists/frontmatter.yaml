@@ -1,0 +1,14 @@
+date: 23-11-2023 11:00
+metadata:
+    author: "Rodrigo Girão Serrão"
+    description: "This article shows 5 ways of flattening a list of lists, ranked from worst to best."
+    og:image: "https://mathspp.com/blog/5-ways-to-flatten-a-list-of-lists/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/5-ways-to-flatten-a-list-of-lists/thumbnail.webp"
+slug: "5-ways-to-flatten-a-list-of-lists"
+taxonomy:
+    category: "blogpost"
+    tag:
+      - code review
+      - programming
+      - python
+title: 5 ways to flatten a list of lists
