@@ -21,7 +21,7 @@ list_of_lists = [
 Let's start.
 
 
-## 5th Using `functools.reduce`
+## 5th – using `functools.reduce`
 
 ```pycon
 >>> from functools import reduce
@@ -40,7 +40,7 @@ In other words, `sum` is the specialised version of `reduce` that adds things, s
 So, this leads clearly to the next version.
 
 
-## 4th Using `sum`
+## 4th – using `sum`
 
 ```pycon
 >>> flat_list = sum(list_of_lists, [])
@@ -60,7 +60,7 @@ Every time we add two lists (the accumulated one and one from `list_of_lists`), 
 So, using `sum` is a neat party trick, and it shows you understand the underlying way in which `sum` works, but it isn't practical.
 
 
-## 3rd Two nested loops
+## 3rd – two nested loops
 
 This is the KISS solution.
 It's pretty straightforward and it's a great solution!
@@ -80,7 +80,7 @@ This is a brilliant solution!
 The reason it's placed in 3rd is not because it's bad, but because you can do even better!
 
 
-## 2nd Using a list comprehension
+## 2nd – using a list comprehension
 
 ```pycon
 >>> flat_list = [
@@ -102,7 +102,7 @@ So, that's why it comes after the two loops.
 But the next solution is only better than the list comprehension in some cases.
 
 
-## 1st using `itertools.chain`:
+## 1st – using `itertools.chain`:
 
 ```pycon
 >>> from itertools import chain
