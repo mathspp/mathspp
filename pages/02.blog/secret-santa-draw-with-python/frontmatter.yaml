@@ -11,5 +11,6 @@ taxonomy:
     tag:
         - programming
         - python
+        - scripting
         - slice of life
 title: Secret Santa draw with Python

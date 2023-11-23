@@ -10,7 +10,7 @@ routes:
 taxonomy:
     category: [blogpost, til]
     tag:
-      - github
+      - git
       - productivity
 title: "TIL #068 – nested git repositories"
 visible: false

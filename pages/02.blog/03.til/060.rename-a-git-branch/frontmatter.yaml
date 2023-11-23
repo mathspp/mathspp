@@ -10,7 +10,7 @@ routes:
 taxonomy:
     category: [blogpost, til]
     tag:
-      - github
-      - programming
+      - git
+      - productivity
 title: "TIL #060 – how to rename a git branch"
 visible: false

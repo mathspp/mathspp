@@ -13,8 +13,7 @@ routes:
 taxonomy:
     category: [blogpost, til]
     tag:
+      - git
       - productivity
-      - programming
-      - python
 title: "TIL #089 – delete merged git branches"
 visible: false
