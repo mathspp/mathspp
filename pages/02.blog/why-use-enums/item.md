@@ -18,7 +18,7 @@ def greet(user, greeting_type):
     elif greeting_type == "warm":
         return f"My dear friend, {user}, how are you doing?"
     elif greeting_type == "casual":
-    return f"What's up, {user}?"
+        return f"What's up, {user}?"
 
 print(greet("Rodrigo", "casual"))
 # "What's up, Rodrigo?"
