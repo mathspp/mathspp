@@ -67,7 +67,14 @@ In fact, in the beginning I thought about using `BinOp` for the Boolean operator
 However, having a list of values is very helpful when we have three or more values:
 
 ```py
-BoolOp(op=And(), values=[Name(id='a', ...), Name(id='b', ...), Name(id='c', ...)])
+BoolOp(
+    op=And(),
+    values=[
+        Name(id='a', ...),
+        Name(id='b', ...),
+        Name(id='c', ...)
+    ]
+)
 ```
 
 For now, it's not yet obvious why this will be so useful, but as soon as you are done implementing Boolean short-circuiting you will understand why.
