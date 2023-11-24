@@ -125,6 +125,74 @@ In that case, the `chain` might be better.
 So, this solution is only better than the list comprehension in some cases, but what's good about me showing it to you is that it teaches you about `chain`, which is quite useful.
 
 
-## Did I miss something?
+## Bonus – flatten a list with heterogeneous depth
+
+The five options above flatten a list of lists, assuming the depth is constant and is always 2.
+What if you get something that is heterogeneous in depth?
+
+For example, how would you flatten something like the list shown below?
+
+```py
+crazy_list = [[[1, 2], [3], [[4, [5, [6, 7, 8]]]], 9], [10, 11], 12]
+```
+
+I propose the following recursive generator function:
+
+```py
+def flatten(obj):
+    if isinstance(obj, list):
+        for item in obj:
+            yield from flatten(item)
+    else:
+        yield obj
+
+print(list(flatten(crazy_list)))
+# [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+```
+
+
+## Bonus alternatives
 
 If you think I should include another way of flattening a list of lists, even if it's not better than all of the five I already shared, feel free to comment below!
+Some of you already suggested some other alternatives:
+
+ - using unpacking instead of `from_iterable` and `list`:
+
+```pycon
+>>> from itertools import chain
+>>> flat_list = [*chain(*list_of_lists)]
+>>> flat_list
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+
+ - using `yield from` on each sublist:
+
+```pycon
+>>> def flatten(list_of_lists):
+...     for sublist in list_of_lists:
+...         yield from sublist
+... 
+>>> flat_list = list(flatten(list_of_lists))
+>>> flat_list
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+
+ - using `more_itertools.flatten` (this requires installing the package `more_itertools`!).
+ If you look closely, though, you'll see that `more_itertools.flatten` uses `itertools.chain`:
+
+```pycon
+>>> from more_itertools import flatten
+>>> list_of_lists = [
+...     [1, 2, 3],
+...     [4, 5],
+...     [6],
+...     [7, 8, 9],
+... ]
+>>> list(flatten(list_of_lists))
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# more_itertools.flatten uses itertools.chain:
+>>> flatten(list_of_lists)
+<itertools.chain object at 0x100238fd0>
+```
+
