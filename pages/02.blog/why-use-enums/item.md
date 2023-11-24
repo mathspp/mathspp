@@ -69,11 +69,11 @@ class GreetingType(Enum):
     CASUAL = auto()
 
 def greet(user, greeting_type):
-    if greeting_type == GreetingType.PLAIN:
+    if greeting_type is GreetingType.PLAIN:
         return f"Hello, {user}."
-    elif greeting_type == GreetingType.WARM:
+    elif greeting_type is GreetingType.WARM:
         return f"My dear friend, {user}, how are you doing?"
-    elif greeting_type == GreetingType.CASUAL:
+    elif greeting_type is GreetingType.CASUAL:
         return f"What's up, {user}?"
 
 print(greet("Rodrigo", GreetingType.WARM))
