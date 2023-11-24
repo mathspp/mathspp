@@ -4,6 +4,8 @@ metadata:
     description: "This article explains why a user would need to use enums in their code and shows how to do it with a simple example."
     og:image: "https://mathspp.com/blog/why-use-enums/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/why-use-enums/thumbnail.webp"
+references:
+  - "Python Docs, Enum HOWTO <https://docs.python.org/3/howto/enum.html#enum-howto> [last accessed 24-11-2023];"
 slug: "why-use-enums"
 taxonomy:
     category: "blogpost"
