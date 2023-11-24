@@ -29,14 +29,20 @@ You can learn more about the Python Problem-Solving Bootcamp [here](/pythonbootc
 
  - [Boost Your Django DX](https://gumroad.com/a/817193683/epPif) and [Speed Up Your Django Tests](https://gumroad.com/a/817193683/gLNvJ) by Adam Johnson are 50% off, no code needed.
 
-- [All Books Bundle](https://learnbyexample.gumroad.com/l/all-books/FestiveOffer) by Sundeep Agarwal is a bundle with 13 programming books and is 69% off until the end of November, no code needed.
+ - [All Books Bundle](https://learnbyexample.gumroad.com/l/all-books/FestiveOffer) by Sundeep Agarwal is a bundle with 13 programming books and is 69% off until the end of November, no code needed.
 
-- The bundle [Learn Python by Example](https://learnbyexample.gumroad.com/l/python-bundle/FestiveOffer) by Sundeep Agarwal is 70% off and the book [Understanding Python re(gex)?](https://learnbyexample.gumroad.com/l/py_regex/FestiveOffer) is free, both until the end of November, no code needed.
+ - The bundle [Learn Python by Example](https://learnbyexample.gumroad.com/l/python-bundle/FestiveOffer) by Sundeep Agarwal is 70% off and the book [Understanding Python re(gex)?](https://learnbyexample.gumroad.com/l/py_regex/FestiveOffer) is free, both until the end of November, no code needed.
+
+ - [Matt Harrison's books on Python, pandas, and XGBoost are 20% off](https://store.metasnake.com), the code is applied automatically.
 
 
 ## Courses
 
  - [Python Essentials for Data Scientists](https://courses.dataschool.io/python-essentials-for-data-scientists/l5wfy) and [all other Data School courses](https://courses.dataschool.io/a/l5wfy) will be 40% off between the 24th and 27th of November. (You might also be interested in their [complete bundle](https://courses.dataschool.io/black-friday-2023-bundle/l5wfy) for a discount of 55%!)
+
+ - All of [Matt Harrison's courses are 20% off](https://store.metasnake.com), most notably his pandas courses; no code needed.
+
+ - All of [Reuven Lerner's courses and bundles are 40% off](https://lernerpython.com/bfcm-2023/), including Intro Python & Advanced Python, pandas and NumPy courses, and more.
 
 
 ## Memberships
@@ -46,6 +52,8 @@ You can learn more about the Python Problem-Solving Bootcamp [here](/pythonbootc
  - [The Python Coding Place](https://thepythoncodingplace.com) lifetime membership (by Stephen Gruppeta) is 70% off, no code needed.
 
  - [Python Morsels](https://www.pythonmorsels.com/lifetime-access-sale/) (by Trey Hunner) lifetime access for the price of a 2-year subscription, no code needed.
+
+ - Reuven Lerner's [new membership offer is 25% off](https://lernerpython.com/bfcm-2023/) for the first 100 members.
 
 
 ## Miscellanious
