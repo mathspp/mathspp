@@ -1,0 +1,14 @@
+date: 24-11-2023 12:00
+metadata:
+    author: "Rodrigo Girão Serrão"
+    description: "This article explains why a user would need to use enums in their code and shows how to do it with a simple example."
+    og:image: "https://mathspp.com/blog/why-use-enums/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/why-use-enums/thumbnail.webp"
+slug: "why-use-enums"
+taxonomy:
+    category: "blogpost"
+    tag:
+      - code review
+      - programming
+      - python
+title: Why use enums?
