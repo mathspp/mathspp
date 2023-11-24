@@ -38,7 +38,20 @@ I started off by taking a look at how Python parses a simple conjunction with th
 ```pycon
 >>> import ast
 >>> ast.dump(ast.parse("a and b"))
-"Module(body=[Expr(value=BoolOp(op=And(), values=[Name(id='a', ctx=Load()), Name(id='b', ctx=Load())]))], type_ignores=[])"
+"Module(
+    body=[
+        Expr(
+            value=BoolOp(
+                op=And(),
+                values=[
+                    Name(id='a', ctx=Load()),
+                    Name(id='b', ctx=Load())
+                ]
+            )
+        )
+    ],
+    type_ignores=[]
+)"
 ```
 
 That's a lot, but we can “zoom in” on the part that matters:
