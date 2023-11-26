@@ -380,14 +380,14 @@ an instance of a class, e.g.,
 
 ```py
 class Foo:
-    def __ini__(self, a, b):
+    def __init__(self, a, b):
         self.a = a
         self.b = b
 
 foo = Foo(3, 4)
 print(getattr(foo, "a"))    # prints 3
 bar = Foo(10, ";")
-print(getattr(bar, ";"))    # prints ';'
+print(getattr(bar, "b"))    # prints ';'
 ```
 
 This goes to show that it is always nice to know the tools you have
