@@ -1,0 +1,15 @@
+date: 26-11-2023 13:00
+metadata:
+    author: "Rodrigo Girão Serrão"
+    description: "This article explains what *args means in Python and how to use it in your own functions."
+    og:image: "https://mathspp.com/blog/what-is-args-and-how-do-you-use-it/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/what-is-args-and-how-do-you-use-it/thumbnail.webp"
+references:
+  - "Python 3 Docs, Arbitrary Argument Lists <https://docs.python.org/3/tutorial/controlflow.html#arbitrary-argument-lists> [last accessed 26-11-2023];"
+slug: "what-is-args-and-how-do-you-use-it"
+taxonomy:
+    category: "blogpost"
+    tag:
+      - programming
+      - python
+title: What is *args and how do you use it?
