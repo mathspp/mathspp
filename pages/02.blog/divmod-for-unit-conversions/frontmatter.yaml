@@ -1,0 +1,17 @@
+date: 27-11-2023 19:00
+metadata:
+    author: "Rodrigo Girão Serrão"
+    description: "This article shows how to use the Python built-in divmod for unit conversions."
+    og:image: "https://mathspp.com/blog/divmod-for-unit-conversions/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/divmod-for-unit-conversions/thumbnail.webp"
+references:
+  - "Python Docs, Built-in Functions <https://docs.python.org/3/library/functions.html#divmod> [last accessed 27-11-2023];"
+slug: "divmod-for-unit-conversions"
+taxonomy:
+    category: "blogpost"
+    tag:
+      - arithmetic
+      - mathematics
+      - programming
+      - python
+title: divmod for unit conversions
