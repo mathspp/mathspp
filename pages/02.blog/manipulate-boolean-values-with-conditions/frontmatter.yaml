@@ -1,0 +1,14 @@
+date: 28-11-2023 10:00
+metadata:
+    author: "Rodrigo Girão Serrão"
+    description: "In this article I explore a common code smell related to conditionals and Boolean values and show how to fix it."
+    og:image: "https://mathspp.com/blog/manipulate-boolean-values-with-conditions/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/manipulate-boolean-values-with-conditions/thumbnail.webp"
+slug: "manipulate-boolean-values-with-conditions"
+taxonomy:
+    category: "blogpost"
+    tag:
+      - code review
+      - programming
+      - python
+title: Manipulate Boolean values with conditions
