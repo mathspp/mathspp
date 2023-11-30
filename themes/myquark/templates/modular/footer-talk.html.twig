@@ -22,8 +22,8 @@
                 {{ splits[1] }}
             </div>
         </div>
-        {% if page.header.myfooter %}
-            {% markdown %}{{ page.header.myfooter }}{% endmarkdown %}
+        {% if splits|length == 3 %}
+            {% markdown %}{{ splits[2] }}{% endmarkdown %}
         {% endif %}
     <hr>
     </section>

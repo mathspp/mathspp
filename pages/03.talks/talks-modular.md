@@ -40,5 +40,4 @@ metadata:
     title: Talks
     twitter:image: "https://mathspp.com/talks/thumbnail.png"
 onpage_menu: false
-twig_first: true
 ---
