@@ -17,7 +17,7 @@ Coming into the talk, I wasn't sure if I should present it as a live-coding demo
 
 ===
 
-[PyCon Ireland 2023](http://pycon.ie/pycon-2023/schedule/), 12-11-2023 • [Main reference](/blog/pydonts/describing-descriptors) • [Backup talk slides][pdf-slides] (low res PDF) • [Online slides][snappify-slides] [Source code from live demo][source]
+[PyCon Ireland 2023](http://pycon.ie/pycon-2023/schedule/), 12-11-2023 • [Main reference](/blog/pydonts/describing-descriptors) • [Backup talk slides][pdf-slides] (low res PDF) • [Online slides][snappify-slides] • [Source code from live demo][source]
 
 
 [pdf-slides]: https://github.com/mathspp/talks/blob/main/20231112_pycon_ireland_describing_descriptors/slides.pdf
