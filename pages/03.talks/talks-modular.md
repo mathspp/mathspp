@@ -7,6 +7,7 @@ content:
         custom:
           - "_hero"
           - "_invite-me"
+          - "_20231112-describing-descriptors"
           - "_20231111-elegant-line-of-code"
           - "_20231111-mandelbrot-set"
           - "_20231111-implement-python"
