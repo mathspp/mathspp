@@ -18,11 +18,6 @@ I aimed for an interesting and fun workshop and the feedback I received tells me
 
 Where: [PyCon Ireland 2023](http://pycon.ie/pycon-2023/schedule/), 11-11-2023 • Main reference: [“Building a Python compiler and interpreter”](/blog/tag:bpci) blog series • Workshop materials: [source code][gh-repo] • Slides for the tutorial: [static PDF][pdf-slides] (low res) • [Online slides][snappify-slides]
 
-<!--
-<div style="text-align:center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tDy-to9fgaw?start=140" title="How APL made me a better Python developer talk by Rodrigo Girão Serrão" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
--->
 
 [pdf-slides]: https://github.com/mathspp/talks/blob/main/20231111_pycon_ireland_implement_python/slides.pdf
 [snappify-slides]: https://snappify.com/view/38542fa0-f3e3-41b7-8465-bf36e564d21e
