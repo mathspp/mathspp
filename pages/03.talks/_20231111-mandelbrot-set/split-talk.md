@@ -15,7 +15,7 @@ def f(z, c):
 
 ===
 
-![](_colours.webp "A depiction of the Mandelbrot set.")
+![](_colours.webp)
 
 ===
 
