@@ -12,7 +12,7 @@ I aimed for an interesting and fun workshop and the feedback I received tells me
 
 ===
 
-![_sample_slide.webp]
+![](_sample_slide.webp)
 
 ===
 
