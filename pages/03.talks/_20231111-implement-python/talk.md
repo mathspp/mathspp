@@ -6,11 +6,6 @@ image_align: left
 
 In this hands-on tutorial we went through the four main components that let you implement a programming language like Python from scratch.
 
- - 
- - The workshop was based on my blog series 
- - 
- - 
-
 I aimed for an interesting and fun workshop and the feedback I received tells me I delivered it:
 
  > “I liked that we quickly got a very simple compiler and interpreter up and running, we did all of the fun stuff without too much of the boring repetitive parts.” — Samir
