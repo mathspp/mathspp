@@ -16,7 +16,7 @@ I aimed for an interesting and fun workshop and the feedback I received tells me
 
 ===
 
-Where: [PyCon Ireland 2023](http://pycon.ie/pycon-2023/schedule/), 11-11-2023 • Main reference: [“Building a Python compiler and interpreter”](/blog/tag:bpci) blog series • Workshop materials: [source code][gh-repo] • Slides for the tutorial: [static PDF][pdf-slides] (low res) • [Online slides][snappify-slides]
+[PyCon Ireland 2023](http://pycon.ie/pycon-2023/schedule/), 11-11-2023 • [Main reference](/blog/tag:bpci) (blog series) • [Workshop materials][gh-repo] •[Talk slides][pdf-slides] (low res PDF) • [Online slides][snappify-slides]
 
 
 [pdf-slides]: https://github.com/mathspp/talks/blob/main/20231111_pycon_ireland_implement_python/slides.pdf

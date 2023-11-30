@@ -15,7 +15,7 @@ I was very happy with my performance and so was James, who dubbed it a [“kille
 
 ===
 
-Where: [PyCon Ireland 2023](http://pycon.ie/pycon-2023/schedule/), 11-11-2023 • Main reference: [blog article](/blog/single-line-calculator) • Slides for the talk: [static PDF][pdf-slides] (low res) • [Online slides][snappify-slides]
+[PyCon Ireland 2023](http://pycon.ie/pycon-2023/schedule/), 11-11-2023 • [Main reference](/blog/single-line-calculator) • [Talk slides][pdf-slides] (low res PDF) • [Online slides][snappify-slides]
 
 
 [pdf-slides]: https://github.com/mathspp/talks/blob/main/20231111_pycon_ireland_elegant_loc/slides.pdf
