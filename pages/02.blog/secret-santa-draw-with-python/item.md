@@ -200,6 +200,7 @@ names = [
 ]
 
 from itertools import chain
+
 flat_names = list(chain.from_iterable(names))
 
 # Turn `group` into a set for faster membership checking.
@@ -222,13 +223,12 @@ for _ in range(1000):
 else:
     print("Failed")
 
-
 # Email generation stays the same.
 import pyperclip
+
 email_template = "Hey! You'll be giving {secret} a present!"
 
-for giver in flat_names:
-    receiver = flat_names[(flat_names.index(giver) + 1) % len(flat_names)]
+for giver, receiver in zip(flat_names, shuffled):
     contents = pyperclip.copy(email_template.format(secret=receiver))
     print(f"Copied email for {giver}.")
     input()
