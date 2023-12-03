@@ -185,9 +185,8 @@ I felt very happy about all of this when I was done.
 After writing the code, running it, generating the draw, and sending the results to my family, I came up with a couple of improvements I could have made to the code.
 The most obvious one would be to implement the draw in a way that's smarter than just brute-force, but I settled for simpler improvements:
 
- - use sets in the dictionary `exclusions` for faster membership checking;
- - keep the flat list of names unchanged and instead shuffle a second copy; and
- - use `itertools.pairwise` to pair givers and receivers.
+ - use sets in the dictionary `exclusions` for faster membership checking; and
+ - keep the flat list of names unchanged and instead shuffle a second copy.
 
 Here is the code with those changes implemented:
 
@@ -209,12 +208,11 @@ exclusions = {name: set(group) for group in names for name in group}
 # Let flat_names be a fixed reference and instead shuffle a copy.
 shuffled = flat_names[:]
 import random
-from itertools import pairwise  # <-- New here (and in Python 3.10)
 
 for _ in range(1000):
     random.shuffle(shuffled)
     # Traverse givers & receivers with `itertools.pairwise`.
-    for giver, receiver in pairwise(flat_names, shuffled):
+    for giver, receiver in zip(flat_names, shuffled):
         if receiver in exclusions[giver]:
             break
     else:
