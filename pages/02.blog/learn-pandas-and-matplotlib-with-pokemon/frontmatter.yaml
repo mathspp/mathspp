@@ -1,0 +1,16 @@
+date: 17-12-2023
+metadata:
+    author: "Rodrigo Girão Serrão"
+    description: "This tutorial uses Pokémon to introduce readers to data science with pandas and matplotlib."
+    og:image: "https://mathspp.com/blog/learn-pandas-and-matplotlib-with-pokemon/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/learn-pandas-and-matplotlib-with-pokemon/thumbnail.webp"
+slug: "learn-pandas-and-matplotlib-with-pokemon"
+taxonomy:
+    category: "blogpost"
+    tag:
+      - data science
+      - matplotlib
+      - pandas
+      - programming
+      - python
+title: Learn pandas and matplotlib with Pokémon
