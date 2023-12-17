@@ -551,6 +551,12 @@ pokemon[stats].head()
 
 <div>
 <style scoped>
+    .dataframe {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -628,6 +634,12 @@ However, the principles of broadcasting apply just the same:
 
 <div>
 <style scoped>
+    .dataframe {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -812,6 +824,12 @@ pokemon[
 
 <div>
 <style scoped>
+    .dataframe {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -961,6 +979,12 @@ pokemon.head()
 
 <div>
 <style scoped>
+    .dataframe {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -1098,6 +1122,12 @@ pokemon.assign(
 
 <div>
 <style scoped>
+    .dataframe {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -1237,6 +1267,12 @@ pokemon.head()
 
 <div>
 <style scoped>
+    .dataframe {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -1392,6 +1428,12 @@ pokemon.head()
 
 <div>
 <style scoped>
+    .dataframe {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -1568,6 +1610,12 @@ all_stats = ["hp", "attack", "defense", "sp_attack", "sp_defense", "speed"]
 
 <div>
 <style scoped>
+    .dataframe {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -1777,6 +1825,12 @@ pokemon.head()
 
 <div>
 <style scoped>
+    .dataframe {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -2071,6 +2125,12 @@ pokemon.assign(
 
 <div>
 <style scoped>
+    .dataframe {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -2428,6 +2488,12 @@ pokemon.head()
 
 <div>
 <style scoped>
+    .dataframe {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -2653,6 +2719,12 @@ pokemon[pokemon["is_mythical"]]
 
 <div>
 <style scoped>
+    .dataframe {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -3237,6 +3309,12 @@ legendary_status_columns[pokemon["total"] > 600]
 
 <div>
 <style scoped>
+    .dataframe {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -3423,7 +3501,7 @@ pokemon["is_sublegendary"] or pokemon["is_legendary"] or pokemon["is_mythical"]
 
     /var/folders/29/cpfnqrmx0ll8m1vp9f9fmnx00000gn/T/ipykernel_35397/2688240718.py in ?()
     ----> 1 pokemon["is_sublegendary"] or pokemon["is_legendary"] or pokemon["is_mythical"]
-    
+
 
     ~/Documents/pokemon-analysis/.venv/lib/python3.12/site-packages/pandas/core/generic.py in ?(self)
        1517     @final
@@ -3451,6 +3529,12 @@ pokemon[pokemon["is_legendary"] & pokemon["is_sublegendary"]]
 
 <div>
 <style scoped>
+    .dataframe {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -3504,6 +3588,12 @@ pokemon[pokemon["is_legendary"] | pokemon["is_sublegendary"]]
 
 <div>
 <style scoped>
+    .dataframe {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -3822,6 +3912,12 @@ pokemon[legendary]
 
 <div>
 <style scoped>
+    .dataframe {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -4139,6 +4235,12 @@ pokemon[(pokemon["total"] > 600) & (~legendary)]
 
 <div>
 <style scoped>
+    .dataframe {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -4291,6 +4393,12 @@ pokemon.head()
 
 <div>
 <style scoped>
+    .dataframe {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -4504,6 +4612,12 @@ pokemon[only_primary_type]
 
 <div>
 <style scoped>
+    .dataframe {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -4931,6 +5045,12 @@ pokemon.head()
 
 <div>
 <style scoped>
+    .dataframe {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -5342,6 +5462,12 @@ pokemon.head()
 
 <div>
 <style scoped>
+    .dataframe {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -5530,9 +5656,9 @@ Now, to create a plot you'll always start by using the method `plt.subplots` to 
 fig, ax = plt.subplots()
 ```
 
-    
+
 ![webp](plots/output_157_0.webp)
-    
+
 
 As you can see, matplotlib will automatically display your figure and your axes on it.
 
@@ -5558,9 +5684,9 @@ ax.plot(pokemon["gen"].value_counts(sort=False))
 
     [<matplotlib.lines.Line2D at 0x13064e000>]
 
-    
+
 ![webp](plots/output_161_1.webp)
-    
+
 
 Notice how we set `sort=False` so that the value counts show up in the order of the category, otherwise they would be in descending order and the plot wouldn't make sense:
 
@@ -5572,9 +5698,9 @@ ax.plot(pokemon["gen"].value_counts())
 
     [<matplotlib.lines.Line2D at 0x167fe0230>]
 
-    
+
 ![webp](plots/output_163_1.webp)
-    
+
 
 One other touch up we can add, and that we'll be using throughout our plotting, is some basic configuration for the plot figure:
 
@@ -5590,9 +5716,9 @@ ax.plot(pokemon["gen"].value_counts())
 
     [<matplotlib.lines.Line2D at 0x167530800>]
 
-    
+
 ![webp](plots/output_165_1.webp)
-    
+
 
 Here is a brief explanation of what each parameter does:
 
@@ -5621,9 +5747,9 @@ ax.plot(pokemon["gen"].value_counts(sort=False) + 20, marker="d")
 
     [<matplotlib.lines.Line2D at 0x16828a7b0>]
 
-    
+
 ![webp](plots/output_168_1.webp)
-    
+
 
 ## Complete plots
 
@@ -5650,9 +5776,9 @@ ax.set_ylabel("Count")
 
     Text(0, 0.5, 'Count')
 
-    
+
 ![webp](plots/output_170_1.webp)
-    
+
 
 ## Bar plots
 
@@ -5677,9 +5803,9 @@ ax.bar(range(1, 10), pokemon["gen"].value_counts(sort=False))
 
     <BarContainer object of 9 artists>
 
-    
+
 ![webp](plots/output_172_1.webp)
-    
+
 
 The plot above shows the number of Pokémon introduced with each new generation, from generation 1 to generation 9.
 However, it is difficult to understand that we are supposedly showing an empty bar for generation 9, as there is no bar there _and_ there is no tick.
@@ -5701,9 +5827,9 @@ ax.set_ylabel("Count")
 
     Text(0, 0.5, 'Count')
 
-    
+
 ![webp](plots/output_174_1.webp)
-    
+
 
 ### Plotting the Pokémon per primary type
 
@@ -5723,9 +5849,9 @@ ax.bar(range(primary_type.nunique()), primary_type.value_counts())
 
     <BarContainer object of 18 artists>
 
-    
+
 ![webp](plots/output_176_1.webp)
-    
+
 
 This shows the correct plot but we need proper labels in the horizontal axis so we know what label refers to what:
 
@@ -5742,9 +5868,9 @@ ax.bar(range(primary_type.nunique()), primary_type.value_counts(), tick_label=pr
 
     <BarContainer object of 18 artists>
 
-    
+
 ![webp](plots/output_178_1.webp)
-    
+
 
 These are unreadable because they overlap greatly.
 To fix this, we want to rotate each label, so we'll use the method `set_xticks` to set the positions, text, and rotation of the tick labels:
@@ -5766,9 +5892,9 @@ _ = ax.set_xticks(
 )
 ```
 
-    
+
 ![webp](plots/output_180_0.webp)
-    
+
 
 Now, a very interesting thing that's happening here is that the plot is wrong!
 That's because the order of the data and the labels are different:
@@ -5831,9 +5957,9 @@ _ = ax.set_xticks(
 )
 ```
 
-    
+
 ![webp](plots/output_185_0.webp)
-    
+
 
 Now, no plot is complete without a title and axes labels:
 
@@ -5860,9 +5986,9 @@ ax.set_ylabel("Count")
 
     Text(0, 0.5, 'Count')
 
-    
+
 ![webp](plots/output_187_1.webp)
-    
+
 
 The colour of the bars can also be customised (along a gazillion other things).
 Now, we will set the colour of each bar to match the colour of the primary type in the Pokémon franchise.
@@ -5918,9 +6044,9 @@ ax.set_ylabel("Count")
 
     Text(0, 0.5, 'Count')
 
-    
+
 ![webp](plots/output_191_1.webp)
-    
+
 
 If you use `barh` instead of `bar`, the bars can be made horizontal.
 Then, you just need to remove the rotation of the axis labels and substitute references to “x” with “y” and vice-versa:
@@ -5948,9 +6074,9 @@ ax.set_xlabel("Count")
 
     Text(0.5, 0, 'Count')
 
-    
+
 ![webp](plots/output_193_1.webp)
-    
+
 
 We can also flip the order of the bars:
 
@@ -5977,9 +6103,9 @@ ax.set_xlabel("Count")
 
     Text(0.5, 0, 'Count')
 
-    
+
 ![webp](plots/output_195_1.webp)
-    
+
 
 ## Scatter plots
 
@@ -6002,9 +6128,9 @@ ax.set_ylabel("Base special attack")
 
     Text(0, 0.5, 'Base special attack')
 
-    
+
 ![webp](plots/output_197_1.webp)
-    
+
 
 We can see that there seems to be a pretty consistent and uniform blob, which seems to imply there is no huge correlation between the two, other than the apparent faint diagonal line you can see in the plot.
 Pandas confirms this by saying that the correlation between the two stats is 0.32:
@@ -6015,6 +6141,12 @@ pokemon[["attack", "sp_attack"]].corr()
 
 <div>
 <style scoped>
+    .dataframe {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -6066,11 +6198,8 @@ ax.set_xlabel("Base attack")
 ax.set_ylabel("Base special attack")
 ```
 
-    Text(0, 0.5, 'Base special attack')
-
-    
 ![webp](plots/output_201_1.webp)
-    
+
 
 When we have 2 or more colours representing different categories, it is good to add a legend to the colour, so that we know what colour is what.
 To do this, we can use the method `scatter` for each individual group of points, specify a `label`, and then use `legend` to show the legend:
@@ -6106,11 +6235,8 @@ ax.set_ylabel("Base special attack")
 ax.legend(loc="upper left")
 ```
 
-    <matplotlib.legend.Legend at 0x166317350>
-
-    
 ![webp](plots/output_203_1.webp)
-    
+
 
 To create the plot above, we started by creating a dictionary that maps the names of the categories/groups of Pokémon to the corresponding Boolean masks.
 Then, for each mask, we create a scatter plot with the appropriate data.
@@ -6144,11 +6270,8 @@ ax.set_ylabel("Total base stats")
 ax.set_title("Comparison of total base stats.")
 ```
 
-    Text(0.5, 1.0, 'Comparison of total base stats.')
-
-    
 ![webp](plots/output_206_1.webp)
-    
+
 
 The plot above shows two blobs, one for each rarity level: legendary and non-legendary.
 The three horizontal bars show the min, mean, and max value of the variable being plotted.
@@ -6180,11 +6303,8 @@ ax.set_ylabel("Base speed")
 ax.set_title("Comparison of base speed")
 ```
 
-    Text(0.5, 1.0, 'Comparison of base speed')
-
-    
 ![webp](plots/output_208_1.webp)
-    
+
 
 What if we want to investigate flying Pokémon as well?
 
@@ -6209,11 +6329,8 @@ ax.set_ylabel("Base speed")
 ax.set_title("Comparison of base speed")
 ```
 
-    Text(0.5, 1.0, 'Comparison of base speed')
-
-    
 ![webp](plots/output_210_1.webp)
-    
+
 
 That's it for this Pandas and matplotlib tutorial introduction!
 
