@@ -39,6 +39,12 @@ pokemon.head()
 
 <div>
 <style scoped>
+    .dataframe {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -60,7 +66,20 @@ pokemon.head()
       <th>english_name</th>
       <th>japanese_name</th>
       <th>primary_type</th>
+      <th>secondary_type</th>
+      <th>classification</th>
+      <th>percent_male</th>
+      <th>percent_female</th>
+      <th>height_m</th>
       <th>...</th>
+      <th>evochain_1</th>
+      <th>evochain_2</th>
+      <th>evochain_3</th>
+      <th>evochain_4</th>
+      <th>evochain_5</th>
+      <th>evochain_6</th>
+      <th>gigantamax</th>
+      <th>mega_evolution</th>
       <th>mega_evolution_alt</th>
       <th>description</th>
     </tr>
@@ -73,7 +92,20 @@ pokemon.head()
       <td>Bulbasaur</td>
       <td>Fushigidane</td>
       <td>grass</td>
+      <td>poison</td>
+      <td>Seed Pokémon</td>
+      <td>88.14</td>
+      <td>11.86</td>
+      <td>0.7</td>
       <td>...</td>
+      <td>Level</td>
+      <td>Ivysaur</td>
+      <td>Level</td>
+      <td>Venusaur</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>There is a plant seed on its back right from t...</td>
     </tr>
@@ -84,7 +116,20 @@ pokemon.head()
       <td>Ivysaur</td>
       <td>Fushigisou</td>
       <td>grass</td>
+      <td>poison</td>
+      <td>Seed Pokémon</td>
+      <td>88.14</td>
+      <td>11.86</td>
+      <td>1.0</td>
       <td>...</td>
+      <td>Level</td>
+      <td>Ivysaur</td>
+      <td>Level</td>
+      <td>Venusaur</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>When the bulb on its back grows large, it appe...</td>
     </tr>
@@ -95,7 +140,20 @@ pokemon.head()
       <td>Venusaur</td>
       <td>Fushigibana</td>
       <td>grass</td>
+      <td>poison</td>
+      <td>Seed Pokémon</td>
+      <td>88.14</td>
+      <td>11.86</td>
+      <td>2.0</td>
       <td>...</td>
+      <td>Level</td>
+      <td>Ivysaur</td>
+      <td>Level</td>
+      <td>Venusaur</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Gigantamax Venusaur</td>
+      <td>Mega Venusaur</td>
       <td>NaN</td>
       <td>Its plant blooms when it is absorbing solar en...</td>
     </tr>
@@ -106,7 +164,20 @@ pokemon.head()
       <td>Charmander</td>
       <td>Hitokage</td>
       <td>fire</td>
+      <td>NaN</td>
+      <td>Lizard Pokémon</td>
+      <td>88.14</td>
+      <td>11.86</td>
+      <td>0.6</td>
       <td>...</td>
+      <td>Level</td>
+      <td>Charmeleon</td>
+      <td>Level</td>
+      <td>Charizard</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>It has a preference for hot things. When it ra...</td>
     </tr>
@@ -117,7 +188,20 @@ pokemon.head()
       <td>Charmeleon</td>
       <td>Lizardo</td>
       <td>fire</td>
+      <td>NaN</td>
+      <td>Flame Pokémon</td>
+      <td>88.14</td>
+      <td>11.86</td>
+      <td>1.1</td>
       <td>...</td>
+      <td>Level</td>
+      <td>Charmeleon</td>
+      <td>Level</td>
+      <td>Charizard</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>It has a barbaric nature. In battle, it whips ...</td>
     </tr>
