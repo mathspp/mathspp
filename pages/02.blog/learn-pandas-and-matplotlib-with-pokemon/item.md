@@ -11,6 +11,18 @@ We'll also use matplotlib to learn about line and bar plots, scatter plots, and 
 
 By the time you're done with this tutorial, you'll know enough to get started with pandas on your own data science projects, you'll be able to use matplotlib to create publication-ready plots, and as a byproduct you will have learned a bit more about Pokémon.
 
+## Objectives
+
+In this tutorial, you will learn the basics of pandas and matplotlib.
+You'll learn:
+
+ - how to load data into pandas and get a first feel for what the data is;
+ - how pandas handles data types and how those differ from the built-in Python types;
+ - what a pandas series is;
+ - what a pandas dataframe is;
+ - how to manipulate columns of a dataframe;
+ - how broadcasting works and
+
 ## Setup
 
 Pandas is a library that is the de facto standard to do data analysis in Python, and we'll be using it here.
@@ -5957,7 +5969,6 @@ _ = ax.set_xticks(
 )
 ```
 
-
 ![webp](plots/output_185_0.webp)
 
 
@@ -5983,9 +5994,6 @@ ax.set_title("Distribution of Pokémon per primary type")
 ax.set_xlabel("Primary type")
 ax.set_ylabel("Count")
 ```
-
-    Text(0, 0.5, 'Count')
-
 
 ![webp](plots/output_187_1.webp)
 
@@ -6042,9 +6050,6 @@ ax.set_xlabel("Primary type")
 ax.set_ylabel("Count")
 ```
 
-    Text(0, 0.5, 'Count')
-
-
 ![webp](plots/output_191_1.webp)
 
 
@@ -6072,9 +6077,6 @@ ax.set_ylabel("Primary type")
 ax.set_xlabel("Count")
 ```
 
-    Text(0.5, 0, 'Count')
-
-
 ![webp](plots/output_193_1.webp)
 
 
@@ -6101,9 +6103,6 @@ ax.set_ylabel("Primary type")
 ax.set_xlabel("Count")
 ```
 
-    Text(0.5, 0, 'Count')
-
-
 ![webp](plots/output_195_1.webp)
 
 
@@ -6125,9 +6124,6 @@ ax.set_title("Attack vs Sp. Attack")
 ax.set_xlabel("Base attack")
 ax.set_ylabel("Base special attack")
 ```
-
-    Text(0, 0.5, 'Base special attack')
-
 
 ![webp](plots/output_197_1.webp)
 
