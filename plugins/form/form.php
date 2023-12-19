@@ -518,7 +518,7 @@ class FormPlugin extends Plugin
                 $captcha_value = trim($form->value('basic-captcha'));
                 if (!$captcha->validateCaptcha($captcha_value)) {
                     $message = $params['message'] ?? $this->grav['language']->translate('PLUGIN_FORM.ERROR_BASIC_CAPTCHA');
-
+                    $form->setData('basic-captcha', '');
                     $this->grav->fireEvent('onFormValidationError', new Event([
                         'form' => $form,
                         'message' => $message
@@ -665,6 +665,11 @@ class FormPlugin extends Plugin
                     }
 
                     $filename = $prefix . $this->udate($format, $raw_format) . $postfix . $ext;
+                }
+
+                // Handle bad filenames.
+                if (!Utils::checkFilename($filename)) {
+                    throw new RuntimeException(sprintf('Form save: File with extension not allowed: %s', $filename));
                 }
 
                 /** @var Twig $twig */
@@ -1128,6 +1133,10 @@ class FormPlugin extends Plugin
             // Make sure form is something we recognize.
             if (!$form instanceof Form) {
                 return false;
+            }
+
+            if (isset($form->xhr_submit) && $form->xhr_submit) {
+                $form->set('template', $form->template ?? 'form-xhr');
             }
 
             // Set page template if passed by form

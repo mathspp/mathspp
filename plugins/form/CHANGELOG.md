@@ -1,3 +1,18 @@
+# v7.3.0
+## 12/14/2023
+
+1. [](#new)
+   * Added XHR/Ajax form submission as an option in the form blueprint. See [Learn Forms](https://learn.getgrav.org/17/forms/forms/how-to-ajax-submission) for details.
+
+# v7.2.2
+## 12/13/2023
+
+1. [](#improved)
+   * Add _inline errors_ for `file` field.  Useful in combination with `form: no-validate: true` form setting.
+   * Validate filename against `uploads_dangerous_extensions` when using the `save:` action
+1. [](#bugfix)
+   * Cleared 'basic captcha' value when invalid
+
 # v7.2.1
 ## 06/27/2023
 
