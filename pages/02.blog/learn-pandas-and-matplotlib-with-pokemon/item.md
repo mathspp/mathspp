@@ -11,7 +11,7 @@ We'll also use matplotlib to learn about line and bar plots, scatter plots, and 
 
 By the time you're done with this tutorial, you'll know enough to get started with pandas on your own data science projects, you'll be able to use matplotlib to create publication-ready plots, and as a byproduct you will have learned a bit more about Pokémon.
 
-You can also [download the notebook](analysis.ipynb) if you want to have an easier time testing the code I'm showing.
+You can also [download the notebook](analysis.ipynb?download) if you want to have an easier time testing the code I'm showing.
 
 ## Objectives
 
