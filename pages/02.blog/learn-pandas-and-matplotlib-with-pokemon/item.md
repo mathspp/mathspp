@@ -5263,69 +5263,7 @@ pokemon.loc[0, "primary_type"] = "bananas"
     Cell In[336], line 1
     ----> 1 pokemon.loc[0, "primary_type"] = "bananas"
 
-    File ~/Documents/pokemon-analysis/.venv/lib/python3.12/site-packages/pandas/core/indexing.py:885, in _LocationIndexer.__setitem__(self, key, value)
-        882 self._has_valid_setitem_indexer(key)
-        884 iloc = self if self.name == "iloc" else self.obj.iloc
-    --> 885 iloc._setitem_with_indexer(indexer, value, self.name)
-
-    File ~/Documents/pokemon-analysis/.venv/lib/python3.12/site-packages/pandas/core/indexing.py:1893, in _iLocIndexer._setitem_with_indexer(self, indexer, value, name)
-       1890 # align and set the values
-       1891 if take_split_path:
-       1892     # We have to operate column-wise
-    -> 1893     self._setitem_with_indexer_split_path(indexer, value, name)
-       1894 else:
-       1895     self._setitem_single_block(indexer, value, name)
-
-    File ~/Documents/pokemon-analysis/.venv/lib/python3.12/site-packages/pandas/core/indexing.py:1986, in _iLocIndexer._setitem_with_indexer_split_path(self, indexer, value, name)
-       1983 else:
-       1984     # scalar value
-       1985     for loc in ilocs:
-    -> 1986         self._setitem_single_column(loc, value, pi)
-
-    File ~/Documents/pokemon-analysis/.venv/lib/python3.12/site-packages/pandas/core/indexing.py:2095, in _iLocIndexer._setitem_single_column(self, loc, value, plane_indexer)
-       2091         self.obj.isetitem(loc, value)
-       2092 else:
-       2093     # set value into the column (first attempting to operate inplace, then
-       2094     #  falling back to casting if necessary)
-    -> 2095     self.obj._mgr.column_setitem(loc, plane_indexer, value)
-       2097 self.obj._clear_item_cache()
-
-    File ~/Documents/pokemon-analysis/.venv/lib/python3.12/site-packages/pandas/core/internals/managers.py:1308, in BlockManager.column_setitem(self, loc, idx, value, inplace_only)
-       1306     col_mgr.setitem_inplace(idx, value)
-       1307 else:
-    -> 1308     new_mgr = col_mgr.setitem((idx,), value)
-       1309     self.iset(loc, new_mgr._block.values, inplace=True)
-
-    File ~/Documents/pokemon-analysis/.venv/lib/python3.12/site-packages/pandas/core/internals/managers.py:399, in BaseBlockManager.setitem(self, indexer, value)
-        395     # No need to split if we either set all columns or on a single block
-        396     # manager
-        397     self = self.copy()
-    --> 399 return self.apply("setitem", indexer=indexer, value=value)
-
-    File ~/Documents/pokemon-analysis/.venv/lib/python3.12/site-packages/pandas/core/internals/managers.py:354, in BaseBlockManager.apply(self, f, align_keys, **kwargs)
-        352         applied = b.apply(f, **kwargs)
-        353     else:
-    --> 354         applied = getattr(b, f)(**kwargs)
-        355     result_blocks = extend_blocks(applied, result_blocks)
-        357 out = type(self).from_blocks(result_blocks, self.axes)
-
-    File ~/Documents/pokemon-analysis/.venv/lib/python3.12/site-packages/pandas/core/internals/blocks.py:1758, in EABackedBlock.setitem(self, indexer, value, using_cow)
-       1755 check_setitem_lengths(indexer, value, values)
-       1757 try:
-    -> 1758     values[indexer] = value
-       1759 except (ValueError, TypeError) as err:
-       1760     _catch_deprecated_value_error(err)
-
-    File ~/Documents/pokemon-analysis/.venv/lib/python3.12/site-packages/pandas/core/arrays/_mixins.py:253, in NDArrayBackedExtensionArray.__setitem__(self, key, value)
-        251 def __setitem__(self, key, value) -> None:
-        252     key = check_array_indexer(self, key)
-    --> 253     value = self._validate_setitem_value(value)
-        254     self._ndarray[key] = value
-
-    File ~/Documents/pokemon-analysis/.venv/lib/python3.12/site-packages/pandas/core/arrays/categorical.py:1562, in Categorical._validate_setitem_value(self, value)
-       1560     return self._validate_listlike(value)
-       1561 else:
-    -> 1562     return self._validate_scalar(value)
+    # ...
 
     File ~/Documents/pokemon-analysis/.venv/lib/python3.12/site-packages/pandas/core/arrays/categorical.py:1587, in Categorical._validate_scalar(self, fill_value)
        1585     fill_value = self._unbox_scalar(fill_value)
@@ -5392,7 +5330,7 @@ As another example, the attribute `str` contains functionality to deal with stri
 
 ```python
 pokemon["english_name"].head().str.upper()
-##                             ^^^^^^^^^^^^
+#                             ^^^^^^^^^^^^
 ```
 
     0     BULBASAUR
@@ -5402,28 +5340,6 @@ pokemon["english_name"].head().str.upper()
     4    CHARMELEON
     Name: english_name, dtype: object
 
-## Questions
-
- - What's the weakest legendary Pokémon?
- - How many legendary Pokémon are there and what percentage does that represent?
- - How many legendary Pokémon are dual type and how many have a single type?
- - How do the base stats of legendary Pokémon stack up against the base stats of non-legendary Pokémon?
- - What's the highest HP value a Pokémon can have?
- - Are Electric Pokémon faster?
- - Are Dragon Pokémon stronger?
- - Do Fighting Pokémon have better Attack?
- - Do Psychic Pokémon have better Sp. Attack?
- - Do Rock Pokémon have better Defense?
- - Do Steel Pokémon have better Defense?
- - Are Normal Pokémon more balanced than others?
- - How many Pokémon have better Attack than Sp. Attack?
- - Are Pokémon with high Attack/Sp. Attack faster?
- - How many Normal Pokémon are there?
- - What's the first generation with Pokémon of the type Fairy?
- - How many Pokémon are there of each type?
- - How many Pokémon are there of each generation?
-
-Note: when talking about “legendary” Pokémon here, we mean the global column we computed, and not just the original column `is_legendary`.
 
 ## Summary
 
@@ -6333,6 +6249,30 @@ ax.set_title("Comparison of base speed")
 That's it for this Pandas and matplotlib tutorial introduction!
 
 We've gone through many new concepts like series, dataframes, broadcasting, categories, figures and axes, many different types of plots, and more!
-Take a break and then go back to the [questions](#Questions) I shared above.
-Can you answer them with Pandas/some plots?
+Stretch your legs and then try to answer the questions I'm sharing below.
+Can you answer them with some data analysis/plots?
 Share your nicest plots in the comments!
+
+
+## Questions
+
+ - What's the weakest legendary Pokémon?
+ - How many legendary Pokémon are there and what percentage does that represent?
+ - How many legendary Pokémon are dual type and how many have a single type?
+ - How do the base stats of legendary Pokémon stack up against the base stats of non-legendary Pokémon?
+ - What's the highest HP value a Pokémon can have?
+ - Are Electric Pokémon faster?
+ - Are Dragon Pokémon stronger?
+ - Do Fighting Pokémon have better Attack?
+ - Do Psychic Pokémon have better Sp. Attack?
+ - Do Rock Pokémon have better Defense?
+ - Do Steel Pokémon have better Defense?
+ - Are Normal Pokémon more balanced than others?
+ - How many Pokémon have better Attack than Sp. Attack?
+ - Are Pokémon with high Attack/Sp. Attack faster?
+ - How many Normal Pokémon are there?
+ - What's the first generation with Pokémon of the type Fairy?
+ - How many Pokémon are there of each type?
+ - How many Pokémon are there of each generation?
+
+Note: when talking about “legendary” Pokémon here, we mean the global column we computed, and not just the original column `is_legendary`.
