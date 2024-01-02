@@ -2,7 +2,7 @@ How many queens and knights can you place on a chessboard?
 
 ===
 
-![A white chess queen and black chess knight's silhouettes against the sun.](thumbnail.png "Photo by ᴊᴀᴄʜʏᴍ ᴍɪᴄʜᴀʟ on Unsplash.")
+![A white chess queen and black chess knight's silhouettes against the sun.](thumbnail.webp "Photo by ᴊᴀᴄʜʏᴍ ᴍɪᴄʜᴀʟ on Unsplash.")
 
 # Problem statement
 
