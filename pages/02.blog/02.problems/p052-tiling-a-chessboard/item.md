@@ -9,9 +9,7 @@ Can you tile a chessboard with two missing squares?
 If you remove two opposite corners of a chessboard,
 can you still tile it with 2 x 1 rectangles?
 
-In other words, looking at the image above,
-can you cover the whole chessboard with 2 x 1 domino tiles,
-_except_ for the top-left and bottom-right corners?
+In other words, can you cover a whole chessboard with 2 x 1 domino tiles while leaving two opposite corners uncovered and without overlapping domino tiles?
 
 
 # Solvers
@@ -29,7 +27,14 @@ Join the list of solvers by [emailing me][email] your solution!
 
 # Solution
 
-I'll share the solution to this problem after it has been live for 2 weeks.
+It is _impossible_ to do this and the proof follows.
+
+We start by realising that whenever we place a 2x1 domino tile on a chessboard, we always cover two squares of opposite colours, regardless of where we place the domino tile and regardless of its orientation.
+
+Now, consider the colours of the squares of a chessboard with two opposite corners removed.
+Opposite corners are of the same colour, so if we remove two white corners, the chessboard remains with 30 white squares and 32 black squares.
+Whenever we place a domino tile on the board, each of the two quantities decreases by 1.
+So, after we place 30 domino tiles, there will be 0 white squares left to cover and 2 black squares, which cannot be covered by a single domino tile.
 
 
 [Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly
