@@ -1,0 +1,17 @@
+date: 02-01-2024
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "How can an infinite number of mathematicians figure out their own hat colours?"
+    og:image: https://mathspp.com/blog/problems/infinite-mathematicians-with-hats/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/problems/infinite-mathematicians-with-hats/thumbnail.webp
+process:
+    twig: true
+slug: infinite-mathematicians-with-hats
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - logic
+      - mathematics
+      - sequences
+title: "Problem #064 – infinite mathematicians with hats"
+twig_first: true
