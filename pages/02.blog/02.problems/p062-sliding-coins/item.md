@@ -50,8 +50,56 @@ Join the list of solvers by [emailing me][email] your solution!
 
 # Solution
 
-The solution to this problem will be shared when this problem has been live for approximately two weeks,
-which should be in late June.
+You can move all coins to the right in 3 moves:
+
+ 1. move the top and bottom coins (this aligns the top and middle coins while placing the bottom coin in the rightmost column);
+ 2. move the top and middle coins; and
+ 3. move the top and middle coins again.
+
+This diagram shows the evolution of the grid:
+
+```
+X . . .  start
+. X . .
+. . X .
+
+. X . . >
+. X . .
+. . . X >
+
+. . X . >
+. . X . >
+. . . X
+
+. . . X >
+. . . X >
+. . . X
+```
+
+If we extend the board up and left, we'd have this starting configuration:
+
+```
+X . . . . .
+. X . . . .
+. . X . . .
+. . . X . .
+. . . . X .
+```
+
+Now, consider the total number of spaces to the right of the coins:
+
+```
+X 1 2 3 4 5
+. X 6 7 8 9
+. . X 0 1 2
+. . . X 3 4
+. . . . X 5
+```
+
+We see that there are 15 spaces on the grid to the right of coins.
+We also know that each time we move two coins, the number of spaces to the right of the coins decreases by 2.
+Now, if we were to align all coins on the rightmost column, the number of spaces to the right of the coins would be 0.
+However, we can't go from 15 to 0 in decrements of 2, so with the extended setup it is impossible to solve the puzzle.
 
 [^1]: This is an Amazon Affiliate link and I may earn a commission if you purchase the book. This comes at no extra cost to you.
 
