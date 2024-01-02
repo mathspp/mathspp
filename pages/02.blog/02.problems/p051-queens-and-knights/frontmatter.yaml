@@ -2,8 +2,8 @@ date: 12-12-2021
 metadata:
     author: Rodrigo Girão Serrão
     description: "How many queens and knights can you place on a chessboard?"
-    og:image: https://mathspp.com/blog/problems/queens-and-knights/thumbnail.png
-    twitter:image: https://mathspp.com/blog/problems/queens-and-knights/thumbnail.png
+    og:image: https://mathspp.com/blog/problems/queens-and-knights/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/problems/queens-and-knights/thumbnail.webp
 process:
     twig: true
 slug: queens-and-knights

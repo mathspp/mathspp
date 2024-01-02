@@ -47,7 +47,16 @@ Join the list of solvers by [emailing me][email] your solution!
 
 # Solution
 
-I'll share the solution to this problem after it has been live for 2 weeks.
+We can start by showing that it is impossible to have 6 queens and 6 knights on the board.
+
+To place 6 queens on a board, they have to be in 6 different rows and 6 different columns, which means they leave a maximum of 4 squares (2 rows times 2 columns) free.
+We cannot fit 6 knights into 4 squares.
+
+By finding a configuration with 5 queens and 5 knights, we prove that the maximum is 5, which is what the figure shows:
+
+![](_solution.webp)
+
+In chess notation, we could place 5 queens at g1, b2, f3, c4, and a5, and the knights at h6, h7, e7, d7, and e8.
 
 
 [Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly
