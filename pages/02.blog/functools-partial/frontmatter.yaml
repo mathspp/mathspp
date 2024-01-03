@@ -1,0 +1,17 @@
+date: 03-01-2024
+metadata:
+    author: "Rodrigo Girão Serrão"
+    description: "This article teaches you how to use `functools.partial` and gives over 10 examples of how to use it."
+    og:image: "https://mathspp.com/blog/functools-partial/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/functools-partial/thumbnail.webp"
+references:
+  - "Python 3 Docs, `functools.partial`, [https://docs.python.org/3/library/functools.html#functools.partial](https://docs.python.org/3/library/functools.html#functools.partial) [last accessed 03-01-2024];"
+  - "Python 3 Docs, `partial` objects", [https://docs.python.org/3/library/functools.html#partial-objects](https://docs.python.org/3/library/functools.html#partial-objects) [last accessed 03-01-2024];"
+slug: "functools-partial"
+taxonomy:
+    category: "blogpost"
+    tag:
+      - modules
+      - programming
+      - python
+title: functools.partial
