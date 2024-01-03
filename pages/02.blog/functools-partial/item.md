@@ -1,4 +1,4 @@
-This article teaches you how to use `functools.partial` and gives over 10 examples of how to use it.
+This article teaches you how to use `functools.partial`, how it works, and when to use it, with clear examples.
 
 ===
 

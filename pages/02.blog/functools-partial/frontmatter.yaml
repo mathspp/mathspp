@@ -1,7 +1,7 @@
 date: 03-01-2024
 metadata:
     author: "Rodrigo Girão Serrão"
-    description: "This article teaches you how to use `functools.partial` and gives over 10 examples of how to use it."
+    description: "This article teaches you how to use `functools.partial`, how it works, and when to use it, with clear examples."
     og:image: "https://mathspp.com/blog/functools-partial/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/functools-partial/thumbnail.webp"
 references:
