@@ -359,12 +359,19 @@ As an exercise, use each one of these `partial` objects.
 | `min` | `partial(min, default=float("inf"))` | Mathematically correct `min` |
 | `round` | `partial(round, ndigits=2)` | Round to 2 decimal places |
 | `round` | `partial(round, ndigits=-3)` | Round to nearest thousand |
-| `reduce` | `partial(reduce, function=operator.add)` | `sum` built-in |
-| `reduce` | `partial(reduce, function=operator.mul)` | `prod` from the module `math` |
-| `reduce` | `partial(reduce, function=opertator.and_)` | `all` built-in |
-| `reduce` | `partial(reduce, function=operator.or_)` | `any` built-in |
+| `reduce` | `partial(reduce, operator.add)` | `sum` built-in[^1] |
+| `reduce` | `partial(reduce, operator.mul)` | `prod` from the module `math`[^2] |
+| `reduce` | `partial(reduce, opertator.and_)` | `all` built-in[^3] |
+| `reduce` | `partial(reduce, operator.or_)` | `any` built-in[^4] |
 | `range` | `partial(range, 1)` | Natural counting |
 | `enumerate` | `partial(enumerate, start=1)` | Natural enumeration |
 
 
 If you come up with other interesting examples of `partial`, feel free to comment them below or to email me and I might add them here!
+
+[^1]: The `partial` application is not equivalent to `sum` because `sum([])` gives `0` and the `partial` application will error.
+[^2]: The `partial` application is not equivalent to `prod` because `prod([])` gives `1` and the `partial` application will error.
+[^3]: The `partial` application is not equivalent to `all` because `all([])` gives `True` and the `partial` application will error. Furthermore, `all` will [short-circuit] and the `partial` application won't.
+[^4]: The `partial` application is not equivalent to `any` because `any([])` gives `False` and the `partial` application will error. Furthermore, `any` will [short-circuit] and the `partial` application won't.
+
+[short-circuit]: /blog/pydonts/boolean-short-circuiting
