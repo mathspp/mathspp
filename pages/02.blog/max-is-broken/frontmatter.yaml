@@ -1,0 +1,17 @@
+date: 04-01-2024
+metadata:
+    author: "Rodrigo Girão Serrão"
+    description: "The built-in function max in Python is broken and this article explains why, drawing parallels with other programming and mathematics concepts."
+    og:image: "https://mathspp.com/blog/max-is-broken/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/max-is-broken/thumbnail.webp"
+references:
+    - "“The power of `reduce`”, [https://mathspp.com/blog/pydonts/the-power-of-reduce](https://mathspp.com/blog/pydonts/the-power-of-reduce) [last accessed 04-01-2024];"
+    - "Twitter/X post and discussion therein, [https://twitter.com/mathsppblog/status/1742918859383079192](https://twitter.com/mathsppblog/status/1742918859383079192) [last accessed 04-01-2024];"
+slug: "max-is-broken"
+taxonomy:
+    category: "blogpost"
+    tag:
+      - mathematics
+      - programming
+      - python
+title: max is broken
