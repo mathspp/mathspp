@@ -15,7 +15,7 @@ Before diving right into the tools that Python gives you to work with different 
 
 For example, many people around the world have three meals per day: breakfast, lunch, and dinner.
 It doesn't matter whether I write “three” in English, “três” in Portuguese, “3” in the decimal number base, or “11” in the binary number base.
-We're always talking about the same number.
+We're always talking about the same number of meals: breakfast, lunch, and dinner.
 
 This is very important!
 
