@@ -1,0 +1,18 @@
+date: 07-01-2024 10:00
+metadata:
+    author: "Rodrigo Girão Serrão"
+    description: "This article shows how to do base conversions in Python with the built-in int, how to write integer literals in other bases, and how to do base conversions in general."
+    og:image: "https://mathspp.com/blog/base-conversion-in-python/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/base-conversion-in-python/thumbnail.webp"
+references:
+  - "Python 3 Docs, `int`, [https://docs.python.org/3/library/functions.html#int](https://docs.python.org/3/library/functions.html#int) [last accessed 04-01-2024];"
+slug: "base-conversion-in-python"
+taxonomy:
+    category: "blogpost"
+    tag:
+      - binary
+      - mathematics
+      - modular arithmetic
+      - programming
+      - python
+title: Base conversion in Python
