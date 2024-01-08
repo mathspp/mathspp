@@ -56,7 +56,7 @@ If Bob can *always* play something, and if the game is always a finite game
 for longer than $64$ moves), then Alice is sure to lose.
 
 The first thing we do is consider a division of the chessboard
-into rectangles $8$ with dimensions $4 \times 2$, like the figure below shows.
+into $8$ rectangles with dimensions $4 \times 2$, like the figure below shows.
 
 ![A chessboard divided into $8$ rectangles of dimensions $4 \times 2$.](_sol_chessboard_01.webp)
 
@@ -65,7 +65,7 @@ Notice that all squares of the chessboard lie inside one of those rectangles and
 
 As an example, take a knight that is as central in the chessboard as possible,
 in the fourth row from the top and the fourth column from the left.
-Such a night has $8$ possible moves, but only one lands in the same rectangle as the
+Such a knight has $8$ possible moves, but only one lands in the same rectangle as the
 one the knight is standing one.
 This is shown in the next figure, with the slightly transparent knights representing
 possible moves and with a different frame colour for the rectangle that holds the
