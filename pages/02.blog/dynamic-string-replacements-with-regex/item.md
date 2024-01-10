@@ -76,6 +76,8 @@ We can see this in action if we use `re.findall` and a dummy string:
 
 The flag `re.MULTILINE` was used so that the anchors `^` and `$` matche the beginning and end of each line, respectively, instead of the beginning and end of the string.
 
+(Go to [regex101](https://regex101.com) (an online regex playground), paste the regular expression `^## (.*)$` in the top, middle bar, and copy and paste the first version of the `# Problems` markdown in the big, central text area.)
+
 The next thing I wanted was to be able to replace each title with a number followed by `–` and then itself!
 By using group references, adding the `–` before the title is easy:
 
