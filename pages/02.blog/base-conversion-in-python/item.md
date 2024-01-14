@@ -43,7 +43,7 @@ This is summarised in the table below:
 
 Thus, all four assignments below create the same integer literal:
 
-```{.py #variable_assignment}
+```py {#variable_assignment}
 svty_three = 73
 svty_three_bin = 0b1001001
 svty_three_oct = 0o111
