@@ -50,6 +50,8 @@ svty_three_oct = 0o111
 svty_three_hex = 0x49
 ```
 
+<codapi-snippet sandbox="python" editor="basic" id="variable_assignment.py"></codapi-snippet>
+
 Because [the base changes the representation but not the number](#bases-change-the-representation-not-the-number), printing any of the four variables will print `73`:
 
 ```py
@@ -58,6 +60,8 @@ print(svty_three_bin)  # 73
 print(svty_three_oct)  # 73
 print(svty_three_hex)  # 73
 ```
+
+<codapi-snippet sandbox="python" editor="basic" depends-on="variable_assignment.py"></codapi-snippet>
 
 In any of these bases, you can [use the underscore `_` to group digits to make the literals more readable](/blog/pydonts/usages-of-underscore).
 For example, in the decimal base you can use the underscore `_` as the thousands separator:
