@@ -53,7 +53,7 @@ def foo():
     print("Foo")
 ```
 
-<codapi-snippet sandbox="python" editor="none" id="variable_assignment" actions="Foo:foo"></codapi-snippet>
+<codapi-snippet sandbox="python" editor="none" id="variable_assignment" actions="Foo:bench"></codapi-snippet>
 
 Because [the base changes the representation but not the number](#bases-change-the-representation-not-the-number), printing any of the four variables will print `73`:
 
