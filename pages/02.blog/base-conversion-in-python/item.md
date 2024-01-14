@@ -2,6 +2,9 @@ This article shows how to do base conversions in Python with the built-in int, h
 
 ===
 
+<link rel="stylesheet" href="https://unpkg.com/@antonz/codapi@0.12.2/dist/snippet.css"/>
+<script src="https://unpkg.com/@antonz/codapi@0.12.2/dist/snippet.js"></script>
+
 
 # Base conversion in Python
 
@@ -81,6 +84,9 @@ print(bin(73))  # 0b1001001
 print(oct(73))  # 0o111
 print(hex(73))  # 0x49
 ```
+
+<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
+
 
 Notice that these converting functions include the base prefix in the converted representation!
 
