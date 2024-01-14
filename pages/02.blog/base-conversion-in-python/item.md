@@ -50,7 +50,7 @@ svty_three_oct = 0o111
 svty_three_hex = 0x49
 ```
 
-<codapi-snippet editor="none"></codapi-snippet>
+<codapi-snippet editor="none" id="variable_assignment"></codapi-snippet>
 
 Because [the base changes the representation but not the number](#bases-change-the-representation-not-the-number), printing any of the four variables will print `73`:
 
