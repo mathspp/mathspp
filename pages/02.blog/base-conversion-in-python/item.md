@@ -43,14 +43,12 @@ This is summarised in the table below:
 
 Thus, all four assignments below create the same integer literal:
 
-```py
+```{.py #variable_assignment}
 svty_three = 73
 svty_three_bin = 0b1001001
 svty_three_oct = 0o111
 svty_three_hex = 0x49
 ```
-
-<codapi-snippet sandbox="python" editor="basic" id="variable_assignment.py"></codapi-snippet>
 
 Because [the base changes the representation but not the number](#bases-change-the-representation-not-the-number), printing any of the four variables will print `73`:
 
