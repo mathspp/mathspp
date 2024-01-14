@@ -59,7 +59,7 @@ print(svty_three_oct)  # 73
 print(svty_three_hex)  # 73
 ```
 
-<codapi-snippet sandbox="python" editor="basic" depends-on="variable_assignment.py"></codapi-snippet>
+<codapi-snippet sandbox="python" editor="basic" depends-on="variable_assignment"></codapi-snippet>
 
 In any of these bases, you can [use the underscore `_` to group digits to make the literals more readable](/blog/pydonts/usages-of-underscore).
 For example, in the decimal base you can use the underscore `_` as the thousands separator:
