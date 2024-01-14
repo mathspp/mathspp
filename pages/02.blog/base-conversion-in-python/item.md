@@ -48,12 +48,9 @@ svty_three = 73
 svty_three_bin = 0b1001001
 svty_three_oct = 0o111
 svty_three_hex = 0x49
-
-def foo():
-    print("Foo")
 ```
 
-<codapi-snippet sandbox="python" editor="none" id="variable_assignment" actions="Foo:bench"></codapi-snippet>
+<codapi-snippet sandbox="python" editor="none" id="variable_assignment"></codapi-snippet>
 
 Because [the base changes the representation but not the number](#bases-change-the-representation-not-the-number), printing any of the four variables will print `73`:
 
