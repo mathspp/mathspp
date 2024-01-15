@@ -9,6 +9,7 @@ content:
         dir: desc
     pagination: true
 hero: hero.webp
+hero_classes: "parallax text-light overlay-dark-gradient"
 menu: Problems
 metadata:
     author: Rodrigo Girão Serrão
