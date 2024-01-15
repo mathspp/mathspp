@@ -1,0 +1,15 @@
+date: 15-01-2024
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "When will these two clocks synchronise again?"
+    og:image: https://mathspp.com/blog/problems/clock-synchronisation/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/problems/clock-synchronisation/thumbnail.webp
+process:
+    twig: true
+slug: clock-synchronisation
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - mathematics
+title: "Problem #065 – clock synchronisation"
+twig_first: true
