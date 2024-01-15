@@ -1,0 +1,16 @@
+anchors:
+    active: false
+content:
+    items:
+        taxonomy@.category: problem
+    limit: 20
+    order:
+        by: date
+        dir: desc
+menu: Problems
+metadata:
+    author: Rodrigo Girão Serrão
+    description: A collection of interesting problems and riddles, with a new problem being published every fortnight.
+    og:image: https://mathspp.com/images/problems_thumbnail.png
+    twitter:image: https://mathspp.com/images/problems_thumbnail.png
+title: Problems

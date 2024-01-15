@@ -1,25 +1,5 @@
----
-anchors:
-    active: false
-content:
-    items:
-        taxonomy@.category: problem
-    order:
-        by: date
-        dir: desc
-menu: Problems
-metadata:
-    author: Rodrigo Girão Serrão
-    description: A collection of interesting problems and riddles, with a new problem being published every fortnight.
-    og:image: https://mathspp.com/images/problems_thumbnail.png
-    twitter:image: https://mathspp.com/images/problems_thumbnail.png
-title: Problems
----
-
 # Problems
 
-Blog posts with problems to get your brain going! You get a new problem every fortnight and the solutions are published later.
+Logic puzzles, riddles, algorithmical challenges, maths problems, and other things to get your brain going!
 
-If you want the problems delivered to your inbox be sure to [subscribe to the newsletter](https://mathspp.com/subscribe).
-
-<sub><sup>You may notice some problems are missing... I'm still migrating articles from my [old blog](http://mathspp.blogspot.com).</sup></sub>
+You can also [buy the “Puzzles, riddles, & problems” ebook here](/problems).
