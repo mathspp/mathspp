@@ -1,5 +1,5 @@
 # Problems
 
-### Logic puzzles, riddles, algorithmical challenges, maths problems, & more
+### Logic puzzles, riddles, & maths problems
 
 [Buy the book](/problems?classes=btn)
