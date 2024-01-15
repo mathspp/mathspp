@@ -8,10 +8,11 @@ content:
         by: date
         dir: desc
     pagination: true
+hero: hero.webp
 menu: Problems
 metadata:
     author: Rodrigo Girão Serrão
     description: A collection of interesting problems and riddles, with a new problem being published every fortnight.
-    og:image: https://mathspp.com/images/problems_thumbnail.png
-    twitter:image: https://mathspp.com/images/problems_thumbnail.png
+    og:image: https://mathspp.com/blog/problems/hero.webp
+    twitter:image: https://mathspp.com/blog/problems/hero.webp
 title: Problems
