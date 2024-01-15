@@ -4,11 +4,15 @@ title: 'Problem #003 - a quarrel in the Shire'
 
 Gandalf has some Hobbits to appease but his task seems to go on forever. Can you give him a hand..?
 
+<!-- v -->
+
 ===
 
 ![A picture of the Shire](shire.jpg)
 
 Once again I bring you a problem alongside my proposed solution. If you find any mistakes or come up with a different solution, please let me know!
+
+<!-- ^ -->
 
 
 # Problem statement
@@ -41,7 +45,15 @@ It should be fairly easy to see that we have $R_{t+1} \leq R_t$. This is true be
 
 Either way, we can see that another complete round of visits by Gandalf would change nothing, and thus Gandalf can now rest.
 
-Bonus question: is there a value of $N > 1$ and a colour configuration such that the second bullet point happens? That is, Gandalf's visits become irrelevant at some point but not all Hobbits are friends with each other? Share your findings in the comment section below ;)
+
+# Bonus question
+
+Is there a value of $N > 1$ and a colour configuration such that the second bullet point happens?
+That is, Gandalf's visits become irrelevant at some point but not all Hobbits are friends with each other?
+
+<!-- v -->
+
+Share your findings in the comment section below!
 
 
 [Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly
@@ -49,3 +61,5 @@ problems sent straight to your inbox and to add your reaction below.
 
 [email]: mailto:rodrigo@mathspp.com?subject=Solution%20to%20{{ page.title|regex_replace(['/ /'], ['%20']) }}
 [subscribe]: https://mathspp.com/subscribe
+
+<!-- ^ -->

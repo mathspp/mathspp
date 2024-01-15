@@ -76,8 +76,8 @@ Here is a table summarising the average commission each one of them made for eac
 
 | | 2020 | 2021 |
 | -: | -: | -: |
-| Alice | \frac{1 \times 10000}{1} = 10000 | \frac{1000 \times 20000}{1000} = 20000 |
-| Bob | \frac{1 \times 10005}{1} = 10005 | \frac{1 \times 20005}{1} = 20005 |
+| Alice | $\frac{1 \times 10000}{1} = 10000$ | $\frac{1000 \times 20000}{1000} = 20000$ |
+| Bob | $\frac{1 \times 10005}{1} = 10005$ | $\frac{1 \times 20005}{1} = 20005$ |
 
 As we can see, Bob has a higher average commission in 2020...
 But also in 2021!
@@ -87,12 +87,13 @@ everything becomes clear:
 
 | | 2020 | 2021 | 2020 + 2021 |
 | -: | -: | -: | -: |
-| Alice | \frac{1 \times 10000}{1} = 10000 | \frac{1000 \times 20000}{1000} = 20000 | \frac{1 \times 10000 + 1000 \times 20000}{1001} \approx 19990 |
-| Bob | \frac{1 \times 10005}{1} = 10005 | \frac{1 \times 20005}{1} = 20005 | \frac{1 \times 10000 + 1 \times 20000}{2} = 15000 |
+| Alice | $\frac{1 \times 10000}{1} = 10000$ | $\frac{1000 \times 20000}{1000} = 20000$ | $\frac{1 \times 10000 + 1000 \times 20000}{1001} \approx 19990$ |
+| Bob | $\frac{1 \times 10005}{1} = 10005$ | $\frac{1 \times 20005}{1} = 20005$ | $\frac{1 \times 10000 + 1 \times 20000}{2} = 15000$ |
 
 The numbers don't lie!
 Alice has a higher average commission if the time period being considered is 2020 and 2021.
 
+<!-- v -->
 Like I said, this was a very skewed scenario that I came up with to **explain the Simpson's Paradox**.
 I have also written about a [real-life example of the Simpson's Paradox][simpsons-paradox-reallife],
 if you are interested in learning more!
@@ -106,3 +107,4 @@ problems sent straight to your inbox.
 
 [email]: mailto:rodrigo@mathspp.com?subject=Solution%20to%20{{ page.title|regex_replace(['/ /'], ['%20']) }}
 [subscribe]: /subscribe
+<!-- ^ -->

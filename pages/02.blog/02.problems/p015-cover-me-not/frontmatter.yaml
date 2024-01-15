@@ -1,0 +1,15 @@
+date: 28-03-2019
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Can you cover all of the rational numbers in [0, 1] with tiny intervals?"
+    og:image: https://mathspp.com/blog/problems/cover-me-not/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/problems/cover-me-not/thumbnail.webp
+process:
+    twig: true
+slug: cover-me-not
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - mathematics
+title: "Problem #015 – cover me not"
+twig_first: true

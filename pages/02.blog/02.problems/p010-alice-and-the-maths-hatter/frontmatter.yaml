@@ -1,0 +1,17 @@
+date: 22-04-2018
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "How can 4 friends guess their own hat colours?"
+    og:image: https://mathspp.com/blog/problems/alice-and-the-maths-hatter/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/problems/alice-and-the-maths-hatter/thumbnail.webp
+process:
+    twig: true
+slug: alice-and-the-maths-hatter
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - logic
+      - mathematics
+      - sequences
+title: "Problem #010 – Alice and the Maths Hatter"
+twig_first: true

@@ -1,0 +1,17 @@
+date: 22-07-2018
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "How can 2018 monks find eternal peace?"
+    og:image: https://mathspp.com/blog/problems/salvation-of-the-monks/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/problems/salvation-of-the-monks/thumbnail.webp
+process:
+    twig: true
+slug: salvation-of-the-monks
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - induction
+      - logic
+      - mathematics
+title: "Problem #011 – salvation of the monks"
+twig_first: true

@@ -8,7 +8,7 @@ This simple problem is an example of a very interesting phenomenon: if you have 
 
 ===
 
-![A crowd of people, photo by Rob Curran on Unsplash](./crowd.jpg)
+![A crowd of people, photo by Rob Curran on Unsplash](crowd.jpg)
 
 
 # Problem statement

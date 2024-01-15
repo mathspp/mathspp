@@ -1,0 +1,17 @@
+date: 07-06-2019
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "There's 100 drawers and 100 shuffled balls. Can you find the one I choose?"
+    og:image: https://mathspp.com/blog/problems/shuffle-me-around/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/problems/shuffle-me-around/thumbnail.webp
+process:
+    twig: true
+slug: shuffle-me-around
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - combinatorics
+      - logic
+      - mathematics
+title: "Problem #017 – shuffle me around"
+twig_first: true

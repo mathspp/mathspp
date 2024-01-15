@@ -1,0 +1,18 @@
+date: 04-04-2018
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "How can a greedy pirate captain keep his treasure to himself?"
+    og:image: https://mathspp.com/blog/problems/greedy-pirates/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/problems/greedy-pirates/thumbnail.webp
+process:
+    twig: true
+slug: greedy-pirates
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - game theory
+      - induction
+      - logic
+      - mathematics
+title: "Problem #009 – greedy pirates"
+twig_first: true

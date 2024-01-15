@@ -6,7 +6,7 @@ $n$ mathematicians with numbered party hats gather around in a circle... It is a
 
 ===
 
-![00-hats.jpg](./00-hats.jpg)
+![00-hats.jpg](00-hats.jpg)
 
 
 # Foreword
@@ -55,7 +55,7 @@ hence the $k$th mathematician will guess correctly.
 
 Let us take $n = 5$ and number the mathematicians from $0$ to $4$, starting from the top and going in the clockwise direction. The numbers inside the circles represent the numbers in the hats, that I distributed [randomly][xkcd-random].
 
-![hat-configuration.webp](./hat-configuration.webp)
+![hat-configuration.webp](hat-configuration.webp)
 
 Now we pretend we are the mathematician number $0$, and so we see the numbers $0$, $3$, $0$ and $1$, which give $4$ when added up. Now, we are the mathematician $0$ so our guess $g_0$ is how much is left to go from $4$ to $0$ which is... $1$, so that is our guess.
 
@@ -64,19 +64,19 @@ Now we pretend we are the mathematician number $0$, and so we see the numbers $0
 
 To recap, mathematician $0$ guessed $1$ because the other mathematicians' hats added up to $4$ and $4 + 1 \equiv 0$ modulo $5$. Unfortunately, the mathematician got it wrong because its hat had a $3$ on it...
 
-![hat-0.webp](./hat-0.webp)
+![hat-0.webp](hat-0.webp)
 
 Mathematician $1$ sees $3$, $0$, $1$ and $3$, which add up to $3 + 0 + 1 + 3 \equiv 2$ mudulo $5$ and to get to $1$ we must add $4$, so mathematician $1$ guesses $4$, which is also wrong...
 
-![hat-1.webp](./hat-1.webp)
+![hat-1.webp](hat-1.webp)
 
 Then came mathematician $2$ who sees $0$, $1$, $3$ and $0$, adding up to $4$. Now, to get from $4$ to $2$ modulo $5$ we need to add $3$, which is what our mathematician guesses... and it is correct!
 
-![hat-2.webp](./hat-2.webp)
+![hat-2.webp](hat-2.webp)
 
 Just for the sake of completeness, can you tell what mathematicians $3$ and $4$ will write down as their guesses..? Hint: none of them will get it right.
 
-![all-hats.webp](./all-hats.webp)
+![all-hats.webp](all-hats.webp)
 
 
 ## A piece of code for you to play with
@@ -96,11 +96,6 @@ HatSolver ← {
 
 I included the example from this blog post in the code, the `3 0 3 0 1` you can see above. The numbers that get printed show a $0$ for every mathematician that fails and shows a $1$ for the mathematician that guesses correctly.
 
-
-[Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly
-problems sent straight to your inbox and to add your reaction below.
-
 [email]: mailto:rodrigo@mathspp.com?subject=Solution%20to%20{{ page.title|regex_replace(['/ /'], ['%20']) }}
-[subscribe]: https://mathspp.com/subscribe
 [xkcd-random]: https://xkcd.com/221/
 [tio]: https://tio.run/##SyzI0U2pTMzJT///3yOxJDg/pyy1SOFR2wSFai7OR31TPf3BHAMFhUe9cxWAvJTUnNS8lESF1OISLgUoyAOredS56FHvVi7OYgivd6uCLpBcoaCtDxYGCdgq5NUoFCvogoQf9W7O46rl4gJaAlKPsNwYaBsIG/7/DwA

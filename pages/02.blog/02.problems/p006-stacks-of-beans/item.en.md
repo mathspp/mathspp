@@ -13,13 +13,26 @@ I find the problem in this post rather fun to think about because it is a proble
 
 # Problem statement
 
-Suppose you have two stacks of beans, one with $19$ and another with $20$. John and Mary are to play a game with those beans: each turn, one of them take  $2n$ beans from one of the stacks and puts $n$ beans on the other stack, where $n$ is at least $1$. For example, in the first turn Mary could pick $10$ beans from the stack with $19$ (leaving it with $9$ beans) and then put $5$ beans in the stack that had $20$ (leaving it with $25$ beans). Mary plays first and the first player that cannot make a move loses. Does any of the players have a winning strategy?
+Suppose you have two stacks of beans, one with $19$ and another with $20$.
+John and Mary are going to play a game with those beans: each turn, one of them takes $2n$ beans from one of the stacks and puts $n$ beans on the other stack, where $n$ is at least $1$.
 
-!!! Give it some thought... My suggestion would be to try and figure out in what positions you can know for sure whether you won or lost.
+For example, in the first turn Mary could pick $10$ beans from the stack with $19$ (leaving it with $9$ beans) and then put $5$ beans back in the stack that had $20$ (leaving it with $25$ beans).
+Mary plays first and the first player that cannot make a move loses.
+Does any of the players have a winning strategy?
 
-This game is really simple and it is worth playing it against someone just to get a better feel for the rules. You don't have to use beans, you can use coins or cards or whatever you have at hands. Below you can find a Python script so that you can play the game against a computer. The computer is rather dumb so you shouldn't lose too often.
+!!! Give it some thought...
+!!! My suggestion would be to try and figure out in what positions you can know for sure whether you won or lost.
 
-Just hit the green triangle to play and write your plays down in the terminal. Those plays you write are the new sizes of the stacks. For example, if you make the example play of the problem statement you would write `9, 25`. The computer goes second by default but you can change that by writing a `1` in place of the `0` in `GOES_FIRST = 0`.
+This game is really simple and it is worth playing it against someone just to get a better feel for the rules.
+You don't have to use beans, you can use coins or cards or whatever you have at hands.
+
+Below you can find a Python script so that you can play the game against a computer.
+The computer is rather dumb so you shouldn't lose too often.
+Just hit the green triangle to play and write your plays down in the terminal.
+Those plays you write are the new sizes of the stacks.
+
+For example, if you make the example play of the problem statement you would write `9, 25`.
+The computer goes second by default but you can change that by writing a `1` in place of the `0` in `GOES_FIRST = 0`.
 
 <iframe allowfullscreen="true" allowtransparency="true" frameborder="no" height="400px" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" scrolling="no" src="https://repl.it/@RojerGS/StackedBeans?lite=true" width="100%"></iframe>
 
@@ -28,7 +41,8 @@ If you need any clarification whatsoever, feel free to ask in the comment sectio
 
 # Solution
 
-we will show that John has a winning strategy. Instead of just proving it, I will try to recreate the train of thought it took me to get there.
+We will show that John has a winning strategy.
+Instead of just proving it, I will try to recreate the train of thought it took me to get there.
 
 Let us represent the sizes of the stacks by a pair $(x, y)$. The first thing to note is that the plays you can make while at $(x, y)$ are the same plays you can make while at $(y, x)$, which means everything we conclude about position $(x, y)$ can also be concluded about position $(y, x)$. Now we follow the first hint and note that if our turn starts and we are at either of $(0,0), (1,0), (0,1)$ or $(1,1)$, we lose, because we cannot remove any beans from either stack. This means that we want to play in such a way that, at a given point, we are at position $(x, y)$ and make a move such that the game state becomes any of those 4 positions, making our opponent lose. From what positions can we make that decisive play?
 
@@ -75,7 +89,7 @@ $$
 
 At this point we could start to notice a pattern that I try to make more explicit in the following figure:
 
-![Table with the pattern outlined](pattern.webp)
+![Table with the pattern outlined.](pattern.webp)
 
 Hopefully the red lines are hinting at a possible conjecture: the losing positions are positions of the form $(x, x+1), (x,x)$ and $(x+1, x)$.
 
@@ -104,10 +118,3 @@ We conclude the proof of our conjecture and we see that the position in the prob
 In the terminal below you can try playing against a computer that will follow the winning strategy. To play, press the triangle "play" button to execute it. Making a play corresponds to writing the sizes of the stacks after moving the beans according to the rules.
 
 <iframe allowfullscreen="true" allowtransparency="true" frameborder="no" height="400px" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" scrolling="no" src="https://repl.it/@RojerGS/PerfectStackedBeans?lite=true" width="100%"></iframe>
-
-
-[Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly
-problems sent straight to your inbox and to add your reaction below.
-
-[email]: mailto:rodrigo@mathspp.com?subject=Solution%20to%20{{ page.title|regex_replace(['/ /'], ['%20']) }}
-[subscribe]: https://mathspp.com/subscribe

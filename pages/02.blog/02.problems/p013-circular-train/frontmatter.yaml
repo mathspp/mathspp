@@ -1,0 +1,17 @@
+date: 15-01-2019
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Can you find out how many carriages this circular train has?"
+    og:image: https://mathspp.com/blog/problems/circular-train/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/problems/circular-train/thumbnail.webp
+process:
+    twig: true
+slug: circular-train
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - algorithms
+      - logic
+      - mathematics
+title: "Problem #013 – circular train"
+twig_first: true

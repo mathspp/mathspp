@@ -1,0 +1,17 @@
+date: 02-05-2019
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "I mixed up my hamburgers while cooking. Can you help me out?"
+    og:image: https://mathspp.com/blog/problems/hamburger-dilemma/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/problems/hamburger-dilemma/thumbnail.webp
+process:
+    twig: true
+slug: hamburger-dilemma
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - logic
+      - mathematics
+      - slice of life
+title: "Problem #016 – hamburger dilemma"
+twig_first: true

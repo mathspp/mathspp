@@ -1,0 +1,18 @@
+date: 18-03-2018
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Given some paper squares, can you slice them and then glue them back together to form a single square?"
+    og:image: https://mathspp.com/blog/problems/cutting-squares/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/problems/cutting-squares/thumbnail.webp
+process:
+    twig: true
+slug: cutting-squares
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - geometry
+      - induction
+      - logic
+      - mathematics
+title: "Problem #008 – cutting squares"
+twig_first: true

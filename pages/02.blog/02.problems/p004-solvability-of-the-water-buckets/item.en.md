@@ -5,12 +5,14 @@ metadata:
 title: 'Problem #004 - solvability of the water buckets'
 ---
 
-In [this post][wbr post] I talked about the riddle of the water buckets. Now I challenge you to prove that in some situations it is _impossible_ to solve it!
+<!-- v -->
+In [this post](/blog/water-buckets) I talked about the riddle of the water buckets. Now I challenge you to prove that in some situations it is _impossible_ to solve it!
 
 ===
 
 ![A grayscale image with 3 buckets](buckets.jpg "Photo by Nils Schirmer on Unsplash")
 
+<!-- ^ -->
 
 # Problem statement
 
@@ -42,11 +44,3 @@ At the start all buckets are empty, so $w_1 = \cdots = w_n = 0$ and $0$ is a mul
    - if bucket $j$ got full, then $w_j = c_j$ and $d | c_j$, so this is ok; we just need to check if the amount of water left in bucket $i$ is a multiple of $d$ or not. Well, bucket $j$ had $k_j d$ water and now has $c_j$, so bucket $i$ gave $c_j - k_j d$ water to bucket $j$. If bucket $i$ _had_ $k_i d$ water it now has $w_i = k_i d - (c_j - k_j d)$. But this is still a multiple of $d$ because $c_j$ was! We can write $c_j = k d$ with $k$ integer, showing that $w_i = k_i d - (c_j - k_j d) = d(k_i - k + k_j)$ _is_ a multiple of $d$!
 
 We showed that no matter what we do, the amount of water in a bucket is always a multiple of $d$, so if $t$ is _not_ a multiple of $d$ this means we can never have a single bucket holding $t$ litres of water...
-
-
-[Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly
-problems sent straight to your inbox and to add your reaction below.
-
-[email]: mailto:rodrigo@mathspp.com?subject=Solution%20to%20{{ page.title|regex_replace(['/ /'], ['%20']) }}
-[subscribe]: https://mathspp.com/subscribe
-[wbr post]: /blog/water-buckets

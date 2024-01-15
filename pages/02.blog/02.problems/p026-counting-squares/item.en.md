@@ -119,7 +119,7 @@ $$
 S(7, 10) = (7\times 10) + (6\times 9) + (5\times 8) + (4\times 7) + (3\times 6) + (2\times 5) + (1\times 4) = 224 ~ .
 $$
 
-Therefore, there are $224$ squares in the $7 \times 10$ grid I showed, and here are all of them highlighted:
+Therefore, there are $224$ squares in the $7 \times 10$ grid I showed, and here is an animation showing all of them highlighted:
 
 ![GIF with the 224 squares highlighted.](_thumbnail.webp)
 

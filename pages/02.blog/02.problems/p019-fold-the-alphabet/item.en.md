@@ -118,10 +118,3 @@ It took me a couple of tries to get this one right; expect your piece of paper t
 ![Piece of paper scrambled up and tore](lvl3-fail.jpg)
 
 As you can see, the `H` was about to be completely ripped from the sheet of paper!
-
-
-[Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly
-problems sent straight to your inbox and to add your reaction below.
-
-[email]: mailto:rodrigo@mathspp.com?subject=Solution%20to%20{{ page.title|regex_replace(['/ /'], ['%20']) }}
-[subscribe]: https://mathspp.com/subscribe

@@ -1,0 +1,17 @@
+date: 12-02-2019
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Split the numbers 0, 1, ..., 15 into two sets with sum interesting properties!"
+    og:image: https://mathspp.com/blog/problems/the-sum-of-the-parts/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/problems/the-sum-of-the-parts/thumbnail.webp
+process:
+    twig: true
+slug: the-sum-of-the-parts
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - combinatorics
+      - mathematics
+      - number theory
+title: "Problem #014 – the sum of the parts"
+twig_first: true

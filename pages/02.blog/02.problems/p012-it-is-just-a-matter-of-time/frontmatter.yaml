@@ -1,0 +1,17 @@
+date: 22-07-2018
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "How often do the hands of a clock overlap?"
+    og:image: https://mathspp.com/blog/problems/it-is-just-a-matter-of-time/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/problems/it-is-just-a-matter-of-time/thumbnail.webp
+process:
+    twig: true
+slug: it-is-just-a-matter-of-time
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - logic
+      - mathematics
+      - slice of life
+title: "Problem #012 – it is just a matter of time"
+twig_first: true

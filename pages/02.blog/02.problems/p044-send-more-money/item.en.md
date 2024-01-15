@@ -116,6 +116,10 @@ From this, we also conclude that N = 6 and Y = 2:
 1 0 6 5 2
 ```
 
+That's pretty neat, isn't it?
+When I first looked at this puzzle I had no reason to believe it would have a unique solution!
+(In other words, I thought there were multiple numbers that solved this puzzle.)
+
 
 
 [Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly

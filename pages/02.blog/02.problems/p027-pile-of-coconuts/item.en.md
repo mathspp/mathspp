@@ -171,8 +171,27 @@ Do you prefer problems with more or with less calculations?
 Let me know in the comment section below.
 
 
-[Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly
-problems sent straight to your inbox and to add your reaction below.
+## Code
+
+I also ran some basic Python code in a REPL session to double-check my solution.
+Here's the session code:
+
+```pycon
+>>> def f(x):
+...     return 4 * (x - 1) / 5
+...
+>>> def g(x):
+...     return f(f(f(f(f(x)))))
+...
+>>> from itertools import count
+>>> for x in count(1):
+...     if int(g(x)) == g(x):
+...         print(x); break
+...
+3121
+>>> g(3121)
+1020.0
+```
 
 [subscribe]: https://mathspp.com/subscribe
 [sol]: ../../solutions/{{ page.slug }}
