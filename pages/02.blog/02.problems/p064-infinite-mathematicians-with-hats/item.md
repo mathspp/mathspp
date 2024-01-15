@@ -10,6 +10,8 @@ After that happens, the mathematicians will try to guess their own hat colour (t
 
 What's the strategy that the mathematicians must agree on, before hand, so that only a _finite_ number of mathematicians guesses wrong?
 
+!!! Give it some thought!
+
 
 # Solution
 
