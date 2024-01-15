@@ -9,7 +9,7 @@ content:
         dir: desc
     pagination: true
 hero: hero.webp
-hero_classes: "parallax text-light overlay-dark-gradient"
+hero_classes: "text-light overlay-dark-gradient"  # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 menu: Problems
 metadata:
     author: Rodrigo Girão Serrão
