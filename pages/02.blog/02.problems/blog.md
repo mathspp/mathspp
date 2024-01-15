@@ -1,5 +1,5 @@
 # Problems
 
-Logic puzzles, riddles, algorithmical challenges, maths problems, and other things to get your brain going!
+## Logic puzzles, riddles, algorithmical challenges, maths problems, and other things to get your brain going!
 
-You can also [buy the book](/problems?classes=btn).
+[BUY THE BOOK](/problems?classes=btn).
