@@ -3,7 +3,7 @@ This tutorial shows how to work with the Python data structure `collections.dequ
 ===
 
 <link rel="stylesheet" href="https://unpkg.com/@antonz/codapi@0.12.2/dist/snippet.css"/>
-<script async src="https://unpkg.com/@antonz/codapi@0.12.2/dist/snippet.js"></script>
+<script src="https://unpkg.com/@antonz/codapi@0.12.2/dist/snippet.js"></script>
 
 <!--
 <codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
@@ -37,7 +37,6 @@ popped_from_deque = my_deque.pop()  # Pop an element from the end.
 print(my_list, popped_from_list)  # [1, 2, 3] 4
 print(my_deque, popped_from_deque)  # deque([1, 2, 3]) 4
 ```
-
 <codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
 
 
