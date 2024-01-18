@@ -216,7 +216,7 @@ A negative argument does the opposite.
 ## `deque` examples
 
 A `deque` can do _so many things_!
-Leave your favourite examples below and I'll add them here.
+Let me know what your favourite use cases for `deque` are in the comments below and I'll add them here.
 
 
 [deque-documentation]: https://docs.python.org/3/library/collections.html#collections.deque
