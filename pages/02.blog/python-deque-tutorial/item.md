@@ -58,6 +58,7 @@ from collections import deque
 my_deque = deque()
 print(my_deque)  # deque([])
 ```
+<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
 
 A `deque` can also be seeded with elements from any other iterable:
 
@@ -73,6 +74,7 @@ print(deque_with_ints)  # deque([0, 1, 2, 3, 4])
 deque_with_things = deque([True, None, {}, set()])
 print(deque_with_things)  # deque([True, None, {}, set()])
 ```
+<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
 
 When you instantiate a `deque`, you can also specify the parameter `maxlen`.
 The `deque` parameter `maxlen` will restrict the maximum length that your `deque` can have.
@@ -88,6 +90,7 @@ deque_size_2.append(3)  # This forces an element to pop from the left.
 # Now, we'll see that the `1` is gone:
 print(deque_size_2)  # deque([2, 3])
 ```
+<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
 
 The parameter `maxlen` is what allows you to use Python's `deque` for a number of [interesting examples](#deque-examples) that I'll show below.
 
@@ -121,6 +124,7 @@ my_deque.appendleft(0)
 my_deque.appendleft(-1)
 print(my_deque)  # deque([-1, 0, 1, 2])
 ```
+<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
 
 If you have another iterable `it` and you want to add all of the elements inside `it` to a `deque`, you can use the methods `extend` and `extendleft`:
 
@@ -136,6 +140,7 @@ another_deque = deque()
 another_deque.extendleft(range(5))
 print(another_deque)  # deque([4, 3, 2, 1, 0])
 ```
+<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
 
 Note that when you use the method `extendleft`, the elements in the `deque` will be in reversed order when compared to the original iterable.
 
@@ -169,6 +174,7 @@ print(my_deque)  # deque([2, 3, 4, 5, 6, 7])
 my_deque.clear()  # Clear everything.
 print(my_deque)  # deque()
 ```
+<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
 
 
 ### Other `deque` methods
@@ -200,6 +206,7 @@ print(my_deque)  # deque([2, 3, 4, 0, 1])
 my_deque.rotate(-3)  # Undo the previous two rotations.
 print(my_deque)  # deque([0, 1, 2, 3, 4])
 ```
+<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
 
 When the argument is positive, `rotate(n)` means “push the elements of the `deque` a total of `n` positions forward”, which has the consequence of bringing the last `n` items of the `deque` to the beginning.
 A negative argument does the opposite.
