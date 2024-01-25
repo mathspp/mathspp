@@ -6,6 +6,7 @@ metadata:
     twitter:image: https://mathspp.com/blog/til/patching-module-globals-with-pytest/thumbnail.webp
 references:
     - "Pytest docs, “How to monkeypatch/mock modules and environments”, [https://docs.pytest.org/en/latest/how-to/monkeypatch.html](https://docs.pytest.org/en/latest/how-to/monkeypatch.html) [last accessed 25-01-2024];"
+    - "Textual PR 4062, [https://github.com/Textualize/textual/pull/4062](https://github.com/Textualize/textual/pull/4062) [at commit 136da2f];"
 routes:
     aliases:
         - "/blog/til/090"

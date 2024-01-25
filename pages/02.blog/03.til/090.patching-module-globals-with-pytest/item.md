@@ -74,5 +74,11 @@ def add(a, b):
 
 Now, if you run your test it will pass and the mocking of the variable will have succeeded!
 
+The reason this works is that now we're accessing `APRIL_FOOLS` via the `constants` namespace, so when we patch the value of `APRIL_FOOLS` in `constants`, that patched value will be visible when the constant is used elsewhere.
+
+You could also patch `APRIL_FOOLS` directly in the module `useful_code`, but if you have a constant that is used in many different modules, it is much easier (and better) to patch it _once_ where it is defined versus patching it many times wherever it is imported.
+
 I'm not claiming this is _the best solution_ to this problem but it's certainly _a solution that works_.
 If you have better ideas that have more or less the same complexity, let me know!
+
+For reference, this is a simplification of a “real” issue I had when trying to add tests to [this Textual PR of mine](https://github.com/Textualize/textual/pull/4062).
