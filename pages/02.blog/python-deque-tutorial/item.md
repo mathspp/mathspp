@@ -3,7 +3,7 @@ This tutorial shows how to work with the Python data structure `collections.dequ
 ===
 
 <link rel="stylesheet" href="https://unpkg.com/@antonz/codapi@0.12.2/dist/snippet.css"/>
-<script src="https://unpkg.com/@antonz/codapi@0.12.2/dist/snippet.js"></script>
+<script async src="https://unpkg.com/@antonz/codapi@0.12.2/dist/snippet.js"></script>
 
 <!--
 <codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
@@ -172,7 +172,7 @@ my_deque.popleft()  # Pops the 1.
 print(my_deque)  # deque([2, 3, 4, 5, 6, 7])
 
 my_deque.clear()  # Clear everything.
-print(my_deque)  # deque()
+print(my_deque)  # deque([])
 ```
 <codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
 
