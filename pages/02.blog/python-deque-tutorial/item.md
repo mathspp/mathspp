@@ -3,7 +3,7 @@ This tutorial shows how to work with the Python data structure `collections.dequ
 ===
 
 <link rel="stylesheet" href="https://unpkg.com/@antonz/codapi@0.12.2/dist/snippet.css"/>
-<script async src="https://unpkg.com/@antonz/codapi@0.12.2/dist/snippet.js"></script>
+<script src="https://unpkg.com/@antonz/codapi@0.12.2/dist/snippet.js"></script>
 
 <!--
 <codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
