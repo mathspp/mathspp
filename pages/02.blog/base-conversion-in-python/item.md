@@ -3,7 +3,7 @@ This article shows how to do base conversions in Python with the built-in int, h
 ===
 
 <link rel="stylesheet" href="https://unpkg.com/@antonz/codapi@0.12.2/dist/snippet.css"/>
-<script src="https://unpkg.com/@antonz/codapi@0.12.2/dist/snippet.js"></script>
+<script async src="https://unpkg.com/@antonz/codapi@0.12.2/dist/snippet.js"></script>
 
 
 # Base conversion in Python
