@@ -1,0 +1,19 @@
+date: 09-02-2024
+metadata:
+    author: "Rodrigo Girão Serrão"
+    description: "This article shows how to solve the N queens problem in 20 lines of code."
+    og:image: "https://mathspp.com/blog/n-queens-problem/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/n-queens-problem/thumbnail.webp"
+references:
+  - "Wikipedia, “Eight queens puzzle” [https://en.wikipedia.org/wiki/Eight_queens_puzzle](https://en.wikipedia.org/wiki/Eight_queens_puzzle) [last accessed 09-02-2024];"
+slug: "n-queens-problem"
+taxonomy:
+    category: "blogpost"
+    tag:
+      - algorithms
+      - combinatorics
+      - logic
+      - programming
+      - python
+      - recursion
+title: N queens problem
