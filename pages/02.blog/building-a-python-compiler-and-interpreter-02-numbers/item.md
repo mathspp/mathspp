@@ -396,6 +396,7 @@ The final modifications we need to make are to the parser.
 First, we need a tree node for floats:
 
 ```py
+@dataclass
 class Float(TreeNode):
     value: float
 ```
