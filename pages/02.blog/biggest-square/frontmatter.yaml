@@ -1,0 +1,15 @@
+date: 22-02-2024
+metadata:
+    author: "Rodrigo Girão Serrão"
+    description: "How can you find the biggest free square in a 2D map with obstacles?"
+    og:image: "https://mathspp.com/blog/biggest-square/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/biggest-square/thumbnail.webp"
+slug: "biggest-square"
+taxonomy:
+    category: "blogpost"
+    tag:
+      - algorithms
+      - combinatorics
+      - programming
+      - python
+title: Biggest square
