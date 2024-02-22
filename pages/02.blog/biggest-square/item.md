@@ -6,9 +6,9 @@ How can you find the biggest free square in a 2D map with obstacles?
 
 ## Problem statement
 
-I just got a call from a government I cannot name.
-They recently mapped out a sea to the Southeast of their coast.
-They want to build a sea platform to study the ecosystems of that sea.
+I just got a call from the President of Portugal.
+Portugal recently mapped out the Atlantic Ocean to the West of our coast.
+They want to build a sea platform to study the ecosystems of the Ocean.
 They need my help to figure out where to build that platform.
 
 To show you what I'm working with, here is a portion of the map they created:
@@ -36,21 +36,31 @@ They also told me that if there are two or more square regions of the same size,
 So, if the mapped out region were
 
 ```
-ooo..
-..o..
-..ooo
-..o..
-..o..
+ooo.....
+..o..o..
+..ooo...
+..o.....
+..o.....
+```
+
+There would be plenty of possible locations:
+
+```
+oooxx.xx
+xxoxxoxx
+xxooo...
+..oxx.xx
+..oxx.xx
 ```
 
 They'd prefer to build their platform here:
 
 ```
-oooxx
-..oxx
-..ooo
-..o..
-..o..
+oooxx...
+..oxxo..
+..ooo...
+..o.....
+..o.....
 ```
 
 
