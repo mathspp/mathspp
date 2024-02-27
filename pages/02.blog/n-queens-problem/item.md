@@ -69,8 +69,8 @@ I paused for a bit.
 Then I wrote this function:
 
 ```py
-def diagonally_safe(col, row, placements):
-    for qcol, qrow in enumerate(placements):
+def diagonally_safe(row, col, placements):
+    for qrow, qcol in enumerate(placements):
         if row - col == qrow - qcol or row + col == qrow + qcol:
             return False
     return True
