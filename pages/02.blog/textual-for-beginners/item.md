@@ -637,18 +637,22 @@ class TodoItem(Widget):
     """
 
     def compose(self):
-        yield Label("Label:")
-        yield Input(placeholder="label")
+        yield Label("I should get this done!")
+        yield Label("dd/mm/yyyy")
 
 
-class MyApp(App):
+class TodoApp(App):
+    BINDINGS = [("n", "new_item", "New")]
+
     def compose(self):
         yield Header(show_clock=True)
-        yield LabelledInput()
-        yield Button("Click me!")
+        yield Footer()
+
+    def action_new_item(self):
+        self.mount(TodoItem())
 
 
-MyApp().run()
+TodoApp().run()
 ```
 
 
