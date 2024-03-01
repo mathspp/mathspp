@@ -2,14 +2,6 @@ This tutorial shows how to work with the Python data structure `collections.dequ
 
 ===
 
-<link rel="stylesheet" href="https://unpkg.com/@antonz/codapi@0.16.0/dist/snippet.css" />
-<script src="https://unpkg.com/@antonz/codapi@0.16.0/dist/snippet.js"></script>
-
-<!--
-<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
--->
-
-
 # Python `deque` tutorial
 
 ## What is a `deque`?
@@ -37,8 +29,6 @@ popped_from_deque = my_deque.pop()  # Pop an element from the end.
 print(my_list, popped_from_list)  # [1, 2, 3] 4
 print(my_deque, popped_from_deque)  # deque([1, 2, 3]) 4
 ```
-<codapi-snippet sandbox="python" editor="external"></codapi-snippet>
-
 
 There are two main differences between `deque`s and lists:
 
@@ -58,7 +48,6 @@ from collections import deque
 my_deque = deque()
 print(my_deque)  # deque([])
 ```
-<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
 
 A `deque` can also be seeded with elements from any other iterable:
 
@@ -74,7 +63,6 @@ print(deque_with_ints)  # deque([0, 1, 2, 3, 4])
 deque_with_things = deque([True, None, {}, set()])
 print(deque_with_things)  # deque([True, None, {}, set()])
 ```
-<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
 
 When you instantiate a `deque`, you can also specify the parameter `maxlen`.
 The `deque` parameter `maxlen` will restrict the maximum length that your `deque` can have.
@@ -90,7 +78,6 @@ deque_size_2.append(3)  # This forces an element to pop from the left.
 # Now, we'll see that the `1` is gone:
 print(deque_size_2)  # deque([2, 3])
 ```
-<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
 
 The parameter `maxlen` is what allows you to use Python's `deque` for a number of [interesting examples](#deque-examples) that I'll show below.
 
@@ -124,7 +111,6 @@ my_deque.appendleft(0)
 my_deque.appendleft(-1)
 print(my_deque)  # deque([-1, 0, 1, 2])
 ```
-<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
 
 If you have another iterable `it` and you want to add all of the elements inside `it` to a `deque`, you can use the methods `extend` and `extendleft`:
 
@@ -140,7 +126,6 @@ another_deque = deque()
 another_deque.extendleft(range(5))
 print(another_deque)  # deque([4, 3, 2, 1, 0])
 ```
-<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
 
 Note that when you use the method `extendleft`, the elements in the `deque` will be in reversed order when compared to the original iterable.
 
@@ -174,7 +159,6 @@ print(my_deque)  # deque([2, 3, 4, 5, 6, 7])
 my_deque.clear()  # Clear everything.
 print(my_deque)  # deque([])
 ```
-<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
 
 
 ### Other `deque` methods
@@ -206,7 +190,6 @@ print(my_deque)  # deque([2, 3, 4, 0, 1])
 my_deque.rotate(-3)  # Undo the previous two rotations.
 print(my_deque)  # deque([0, 1, 2, 3, 4])
 ```
-<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
 
 When the argument is positive, `rotate(n)` means “push the elements of the `deque` a total of `n` positions forward”, which has the consequence of bringing the last `n` items of the `deque` to the beginning.
 A negative argument does the opposite.
@@ -243,7 +226,6 @@ print(my_list[-5:])  # [True, False, None, 1, 2]
 my_string = "mathspp.com"
 print(my_string[-5:])  # p.com
 ```
-<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
 
 However, there are iterables that do not support slicing.
 Files, for example, cannot be sliced!
@@ -279,7 +261,6 @@ print(deque(my_numbers, maxlen=1))  # deque([99])
 my_list = [42, False, dict(), ..., True]
 print(deque(my_list, maxlen=1))  # deque([True])
 ```
-<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
 
 If you combine this with a generator expression and a predicate function, you have an idiom that is very space efficient and that finds the last element of an iterable that satisfies the given predicate.
 
@@ -299,7 +280,7 @@ try:
 except IndexError:
     print("No vowels found.")
 ```
-<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
+
 
 The fact that you are using a generator expression and a `deque` that can only hold one element at a time means that you are being as space efficient as possible and this space efficiency can be quite handy if you're going over the lines of a huge file in disk, for example.
 
@@ -323,7 +304,7 @@ class last:
             else:
                 return default
 ```
-<codapi-snippet sandbox="python" editor="basic" id="python.deque.last"></codapi-snippet>
+
 
 This allows you to use `last` as a function that accepts an iterable and finds the last value of that iterable.
 Then, you use the method `item` to materialise the item.
@@ -338,7 +319,7 @@ print(last(range(10)).item())  # 9
 print(last([]).item(default=42))  # 42
 print(last([]).item())  # ValueError
 ```
-<codapi-snippet sandbox="python" editor="basic" depends-on="python.deque.last"></codapi-snippet>
+
 
 
 ### Fully consume an iterator
@@ -353,7 +334,7 @@ Creating the generator expression isn't enough to trigger the error:
 ```py
 gen_expr = (1 / num for num in range(10, -1, -1))
 ```
-<codapi-snippet sandbox="python" editor="basic" id="python.gen-expr"></codapi-snippet>
+
 
 You can also advance the generator a couple of steps and it won't trigger the error:
 
@@ -362,7 +343,7 @@ print(next(gen_expr))  # 0.1
 print(next(gen_expr))  # 0.1111111111111111
 print(next(gen_expr))  # 0.125
 ```
-<codapi-snippet sandbox="python" editor="basic" id="python.gen-expr.next" depends-on="python.gen-expr"></codapi-snippet>
+
 
 But it's only when you exhaust the generator with the help of `deque` that you get the error:
 
@@ -376,7 +357,7 @@ next(gen_expr)
 
 deque(gen_expr, maxlen=0)  # ZeroDivisionError
 ```
-<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
+
 
 This idiom can be helpful when you want to make sure a given iterable can be exhausted without erroring out but at the same time you're not interested in the contents of the iterable.
 
@@ -422,7 +403,7 @@ def moving_averages(data, window_size):
         values.append(sum(window) / len(window))
     return values
 ```
-<codapi-snippet sandbox="python" editor="basic" id="python.moving-avg"></codapi-snippet>
+
 
 Applying this to the previous example list `[0, 1, 2, 3, 4]` shows that our implementation computes some initial values that didn't include a full window:
 
@@ -430,7 +411,7 @@ Applying this to the previous example list `[0, 1, 2, 3, 4]` shows that our impl
 averages = moving_averages([0, 1, 2, 3, 4], 3)
 print(averages)  # [0.0, 0.5, 1.0, 2.0, 3.0]
 ```
-<codapi-snippet sandbox="python" editor="basic" depends-on="python.moving-avg"></codapi-snippet>
+
 
 Depending on the context, these “incomplete” averages may or may not be relevant.
 If the first values are not relevant, you can use `itertools.islice` to fill the window before starting to compute averages:
@@ -452,7 +433,7 @@ def moving_averages(data, window_size):
 averages = moving_averages([0, 1, 2, 3, 4], 3)
 print(averages)  # [1.0, 2.0, 3.0]
 ```
-<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
+
 
 
 ### Implement `itertools.pairwise`
@@ -475,7 +456,7 @@ Output:
 0 10
 """
 ```
-<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
+
 
 If you don't have access to `pairwise`, or if you need to implement a more general version of `pairwise`, you can adapt the implement of `moving_averages` above.
 Instead of summing the values inside the “window” and then dividing by the length of the “window”, you return a tuple with the elements:
@@ -491,7 +472,7 @@ def pairwise_(data):
         window.append(value)
         yield tuple(window)
 ```
-<codapi-snippet sandbox="python" editor="basic" id="python.pairwise"></codapi-snippet>
+
 
 This produces the same result if we apply our implementation of `pairwise_` to our previous list:
 
@@ -508,7 +489,7 @@ Output:
 0 10
 """
 ```
-<codapi-snippet sandbox="python" editor="basic" depends-on="python.pairwise"></codapi-snippet>
+
 
 If we need a more general version of `pairwise`, to produce tuples of length `n`, we can adapt the previous implementation:
 
@@ -524,7 +505,7 @@ def n_tuples(data, n):
         window.append(value)
         yield tuple(window)
 ```
-<codapi-snippet sandbox="python" editor="basic" id="python.n_tuples"></codapi-snippet>
+
 
 This works in the same way:
 
@@ -540,7 +521,7 @@ Output:
 16 0 10
 """
 ```
-<codapi-snippet sandbox="python" editor="basic" depends-on="python.n_tuples"></codapi-snippet>
+
 
 Notice how this is remarkably similar to the function `moving_averages` from the section on [computing moving averages](#compute-moving-average) with `deque`.
 
