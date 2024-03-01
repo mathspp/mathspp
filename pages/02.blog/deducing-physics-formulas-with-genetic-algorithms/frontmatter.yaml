@@ -1,0 +1,16 @@
+date: 01-03-2024
+metadata:
+    author: "Rodrigo Girão Serrão"
+    description: "This tutorial shows how to use a simple genetic algorithm to deduce physics formulas."
+    og:image: "https://mathspp.com/blog/deducing-physics-formulas-with-genetic-algorithms/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/deducing-physics-formulas-with-genetic-algorithms/thumbnail.webp"
+slug: "deducing-physics-formulas-with-genetic-algorithms"
+taxonomy:
+    category: "blogpost"
+    tag:
+      - algorithms
+      - optimisation
+      - programming
+      - python
+      - simulation
+title: Deducing physics formulas with genetic algorithms
