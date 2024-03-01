@@ -37,7 +37,6 @@ popped_from_deque = my_deque.pop()  # Pop an element from the end.
 print(my_list, popped_from_list)  # [1, 2, 3] 4
 print(my_deque, popped_from_deque)  # deque([1, 2, 3]) 4
 ```
-
 <codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
 
 
@@ -218,16 +217,18 @@ A negative argument does the opposite.
 The characteristics of a `deque` let you use it for a variety of interesting things.
 These will typically make use of the fact that a `deque` can be easily modified on both ends and/or that a `deque` lets you cap its size with the parameter `maxlen`.
 
-In this section we'll go through some examples of use cases for the `deque` data structure.
-We'll present some concrete examples that highlight the capabilities of the `deque`.
-You are more than welcome to use a `deque` for other things and, if you have a nice use case, feel free to comment below so I can add it here:
+In this section we'll go through some examples of use cases for the `deque` data structure that highlight its capabilities:
 
  - how to [get the last 5 lines of a file](#get-last-5-lines-of-a-file);
  - how to [get the last item that satisfies a predicate](#get-last-item-that-satisfies-a-predicate);
  - how to [fully consume an iterator](#fully-consume-an-iterator);
- - how to [compute a windowed average](#compute-windowed-average);
- - how to [implement `itertools.pairwise`](#implement-itertoolspairwise); and
- - how to [save a sized action history](#save-action-history).
+ - how to [compute a moving average](#compute-moving-average);
+ - how to [implement `itertools.pairwise`](#implement-itertoolspairwise);
+ - how to [save a sized action history](#save-undoredo-history); and
+ - how to [buffer intermediate results inside an iterator-like object](#buffer-for-iterator-like-intermediate-results).
+
+These are just _some_ examples.
+If you know of a good use case of `deque` feel free to comment below and I might add it here.
 
 
 ### Get last 5 lines of a file
@@ -244,22 +245,360 @@ print(my_string[-5:])  # p.com
 ```
 <codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
 
-However, there are iterables that do not support slicing because you don't know their size.
+However, there are iterables that do not support slicing.
+Files, for example, cannot be sliced!
+So, if you want the last five lines of a file, your best bet is using a `deque`:
+
+```py
+from collections import deque
+
+with open(filepath, "r") as file:
+    last_5_lines = deque(file, maxlen=5)
+
+# last_5_lines contains the last 5 lines of the file.
+print(last_5_lines)
+```
+
+The pattern of using a `deque` to get the last few items of an iterable can take many useful forms.
+If you change the context, you can create another great use case for a `deque` with a fixed maximum size, as I'll show you in the next section.
 
 
 ### Get last item that satisfies a predicate
 
+If you set a `deque` to have a maximum size of `1`, you can use it to fetch the last element of any iterable:
+
+```py
+from collections import deque
+
+my_string = "Python"
+print(deque(my_string, maxlen=1))  # deque(['n'])
+
+my_numbers = range(100)
+print(deque(my_numbers, maxlen=1))  # deque([99])
+
+my_list = [42, False, dict(), ..., True]
+print(deque(my_list, maxlen=1))  # deque([True])
+```
+<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
+
+If you combine this with a generator expression and a predicate function, you have an idiom that is very space efficient and that finds the last element of an iterable that satisfies the given predicate.
+
+As a small example, the snippet below shows how to find the last vowel in a sentence:
+
+```py
+from collections import deque
+
+sentence = "The quick brown fox jumps over the last dog!"
+# The last vowel is an 'o' --------------------------^
+
+vowels = set("aeiouAEIOU")
+
+last_vowel = deque((char for char in sentence if char in vowels), maxlen=1)
+try:
+    print(last_vowel.pop())  # o
+except IndexError:
+    print("No vowels found.")
+```
+<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
+
+The fact that you are using a generator expression and a `deque` that can only hold one element at a time means that you are being as space efficient as possible and this space efficiency can be quite handy if you're going over the lines of a huge file in disk, for example.
+
+You can even wrap this functionality in a class that looks like a function:
+
+```py
+from collections import deque
+
+_SENTINEL = object()
+
+class last:
+    def __init__(self, iterable):
+        self.maybe_value = deque(iterable, maxlen=1)
+
+    def item(self, *, default=_SENTINEL):
+        try:
+            return self.maybe_value.pop()
+        except IndexError:
+            if default is _SENTINEL:
+                raise ValueError("Empty iterable has no last element.") from None
+            else:
+                return default
+```
+<codapi-snippet sandbox="python" editor="basic" id="python.deque.last"></codapi-snippet>
+
+This allows you to use `last` as a function that accepts an iterable and finds the last value of that iterable.
+Then, you use the method `item` to materialise the item.
+If the iterable was empty, then `item` will either raise an `ValueError` or return the default value you provide as a keyword argument.
+
+Here are some example applications:
+
+```py
+print(last("Rodrigo").item())  # o
+print(last(range(10)).item())  # 9
+
+print(last([]).item(default=42))  # 42
+print(last([]).item())  # ValueError
+```
+<codapi-snippet sandbox="python" editor="basic" depends-on="python.deque.last"></codapi-snippet>
+
 
 ### Fully consume an iterator
 
+Another clever usage of the parameter `maxlen` of a `deque` lets you create an idiom to exhaust any iterator.
+If `it` is an iterator, then `deque(it, maxlen=0)` will exhaust the iterator fully.
+This is example is more exotic than the other two but there are cases where you want to reach the end of an iterator without necessarily wanting to do anything with the items you find along the way.
 
-### Compute windowed average
+To show that `deque(..., maxlen=0)` does exhaust an iterator, the snippet below uses a generator expression whose last item is given by the expression `1 / 0`, which will raise a `ZeroDivisionError` when that item is computed.
+Creating the generator expression isn't enough to trigger the error:
+
+```py
+gen_expr = (1 / num for num in range(10, -1, -1))
+```
+<codapi-snippet sandbox="python" editor="basic" id="python.gen-expr"></codapi-snippet>
+
+You can also advance the generator a couple of steps and it won't trigger the error:
+
+```py
+print(next(gen_expr))  # 0.1
+print(next(gen_expr))  # 0.1111111111111111
+print(next(gen_expr))  # 0.125
+```
+<codapi-snippet sandbox="python" editor="basic" id="python.gen-expr.next" depends-on="python.gen-expr"></codapi-snippet>
+
+But it's only when you exhaust the generator with the help of `deque` that you get the error:
+
+```py
+from collections import deque
+
+deque(gen_expr, maxlen=0)  # ZeroDivisionError
+```
+<codapi-snippet sandbox="python" editor="basic" depends-on="python.gen-expr.next"></codapi-snippet>
+
+This idiom can be helpful when you want to make sure a given iterable can be exhausted without erroring out but at the same time you're not interested in the contents of the iterable.
+
+You can also wrap this idiom in a short function:
+
+```py
+from collections import deque
+
+def exhaust(iterable):
+    deque(iterable, maxlen=0)
+```
+
+
+### Compute moving average
+
+A moving average is an average computed over an iterable where you only consider a subset of all of the values you have.
+For example, the average of the list `[0, 1, 2, 3, 4]` is 2.
+However, if you compute the moving average over that list with a window of size 3, you get a succession of increasing values:
+
+```
+[0, 1, 2, 3, 4]
+ ^^^^^^^ average of 1
+    ^^^^^^^ average of 2
+       ^^^^^^^ average of 3
+```
+
+Moving averages have many applications in the world of finance, for example.
+At the time of writing, the qutebrowser project (a browser written in Python) uses a `deque` to compute a moving average to [estimate how much time a download will take to complete](https://github.com/qutebrowser/qutebrowser/blob/a9f6ad9731c59c8fdcff25959b1e7ae67b0513fc/qutebrowser/browser/downloads.py#L343).
+
+To compute a moving average with a `deque`, we make use of the parameter `maxlen` once more, which we set to be the size of the window in the moving average.
+This means that, when the `deque` is full, appending a new element to the `deque` creates the next window whose average we can compute.
+
+The snippet below implements a function `moving_averages` that accepts an iterable and computes all of the moving averages of a given size on that iterable:
+
+```py
+from collections import deque
+
+def moving_averages(data, window_size):
+    values = []
+    window = deque(maxlen=window_size)
+    for element in data:
+        window.append(element)
+        values.append(sum(window) / len(window))
+    return values
+```
+<codapi-snippet sandbox="python" editor="basic" id="python.moving-avg"></codapi-snippet>
+
+Applying this to the previous example list `[0, 1, 2, 3, 4]` shows that our implementation computes some initial values that didn't include a full window:
+
+```py
+averages = moving_averages([0, 1, 2, 3, 4], 3)
+print(averages)  # [0.0, 0.5, 1.0, 2.0, 3.0]
+```
+<codapi-snippet sandbox="python" editor="basic" depends-on="python.moving-avg"></codapi-snippet>
+
+Depending on the context, these “incomplete” averages may or may not be relevant.
+If the first values are not relevant, you can use `itertools.islice` to fill the window before starting to compute averages:
+
+```py
+from collections import deque
+from itertools import islice
+
+def moving_averages(data, window_size):
+    data = iter(data)
+    values = []
+    window = deque(islice(data, window_size-1), maxlen=window_size)
+    for element in data:
+        window.append(element)
+        values.append(sum(window) / len(window))
+
+    return values
+
+averages = moving_averages([0, 1, 2, 3, 4], 3)
+print(averages)  # [1.0, 2.0, 3.0]
+```
+<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
 
 
 ### Implement `itertools.pairwise`
 
+Speaking of `itertools`, a `deque` is a simple way of implementing `itertools.pairwise`, which is only available in Python 3.10 or later.
+`pairwise` accepts an iterable and produces the (overlapping) pairs of consecutive elements:
 
-### Save action history
+```py
+from itertools import pairwise
+
+my_list = [42, 73, 16, 0, 10]
+for a, b in pairwise(my_list):
+    print(a, b)
+
+"""
+Output:
+42 73
+73 16
+16 0
+0 10
+"""
+```
+<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
+
+If you don't have access to `pairwise`, or if you need to implement a more general version of `pairwise`, you can adapt the implement of `moving_averages` above.
+Instead of summing the values inside the “window” and then dividing by the length of the “window”, you return a tuple with the elements:
+
+```py
+from collections import deque
+from itertools import islice
+
+def pairwise_(data):
+    data = iter(data)
+    window = deque(islice(data, 1), maxlen=2)
+    for value in data:
+        window.append(value)
+        yield tuple(window)
+```
+<codapi-snippet sandbox="python" editor="basic" id="python.pairwise"></codapi-snippet>
+
+This produces the same result if we apply our implementation of `pairwise_` to our previous list:
+
+```py
+my_list = [42, 73, 16, 0, 10]
+for a, b in pairwise_(my_list):
+    print(a, b)
+
+"""
+Output:
+42 73
+73 16
+16 0
+0 10
+"""
+```
+<codapi-snippet sandbox="python" editor="basic" depends-on="python.pairwise"></codapi-snippet>
+
+If we need a more general version of `pairwise`, to produce tuples of length `n`, we can adapt the previous implementation:
+
+```py
+from collections import deque
+from itertools import islice
+
+def n_tuples(data, n):
+    """Produces consecutive overlapping tuples of size `n`."""
+    data = iter(data)
+    window = deque(islice(data, n - 1), maxlen=n)
+    for value in data:
+        window.append(value)
+        yield tuple(window)
+```
+<codapi-snippet sandbox="python" editor="basic" id="python.n_tuples"></codapi-snippet>
+
+This works in the same way:
+
+```py
+my_list = [42, 73, 16, 0, 10]
+for a, b, c in n_tuples(my_list, 3):
+    print(a, b, c)
+
+"""
+Output:
+42 73 16
+73 16 0
+16 0 10
+"""
+```
+<codapi-snippet sandbox="python" editor="basic" depends-on="python.n_tuples"></codapi-snippet>
+
+Notice how this is remarkably similar to the function `moving_averages` from the section on [computing moving averages](#compute-moving-average) with `deque`.
+
+
+### Save undo/redo history
+
+[Textual](https://github.com/Textualize/textual), a framework that lets you create TUIs in Python (and the framework I work on, at the time of writing), uses a `deque` to create the stack of undo/redo actions that are allowed in its text area.
+
+Most (if not all!) text editors let you undo your recent changes, in case you want to go back to a previous version of what you had written.
+For this to be possible, the text editor keeps a stack of your changes.
+Each time you press “undo”, the editor pops an item off that stack and undoes that change.
+
+Theoretically, this stack of changes could be infinite and you could undo _all_ of the changes you _ever_ made on a given document.
+In practice, the stack size is capped.
+That's because you don't want your computer to grind to a halt because your text editor is using up all of the RAM to keep a huge stack of changes you might want to undo later.
+
+In Python, a list is an excellent data structure for a stack because of its methods `.pop` and `.append`.
+If you want the size of the stack to be capped, then a `deque` is the natural candidate for that.
+Appending on and popping from the right preserves the stack semantics and the parameter `maxlen` makes sure your stack doesn't grow too much.
+
+By using a `deque` with a maximum size specified by `maxlen`, the undo/redo stack can be used without having to worry about its size:
+
+ - when the user makes a change, an “undo action” is appended to the stack; and
+ - when the user uses the shortcut to undo a change, we pop the “undo action” from the stack and apply it.
+
+Making sure the stack doesn't go over a certain size is managed automatically by the `deque`.
+
+
+### Buffer for iterator-like intermediate results
+
+I've also found that a `deque` can be quite helpful when a method is producing intermediate results and it needs to buffer them.
+For example, in my [“Building a Python Compiler and Interpreter” blog series](/blog/tag:bpci), I implement a tokenizer for Python source code.
+This tokenizer has a method `next_token` that computes and emits the next token:
+
+```py
+class Tokenizer:
+    # ...
+
+    def next_token(self) -> Token:
+        # ...
+```
+
+The tokenizer has a token buffer implemented with a `deque`.
+If the buffer has any tokens when `Tokenizer.next_token` is called, we pop a token from the left of the buffer instead of computing the next one:
+
+```py
+from collections import deque
+
+class Tokenizer:
+    def __init__(self, code: str) -> None:
+        # ...
+        self.next_tokens: deque[Token] = deque()
+
+    def next_token(self) -> Token:
+        if self.next_tokens:
+            return self.next_tokens.popleft()
+
+        # ...
+```
+
+This is helpful because there are certain moments when the tokenizer is trying to produce only _one_ token but ends up producing many tokens at the same time.
+When that is the case, we return only one token and we save the other tokens in the buffer.
+You can see this, in context, in the [“Building a Python Compiler and Interpreter” article where we add the `if` statement](/blog/building-a-python-compiler-and-interpreter-07-if#track-changes-in-indentation).
 
 
 [deque-documentation]: https://docs.python.org/3/library/collections.html#collections.deque
