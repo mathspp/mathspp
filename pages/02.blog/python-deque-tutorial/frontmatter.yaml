@@ -1,7 +1,7 @@
 date: 18-01-2024 19:00
 metadata:
     author: "Rodrigo Girão Serrão"
-    description: "This tutorial shows how to work with the Python data structure `collections.deque`, with interactive examples."
+    description: "This tutorial teaches how to work with the Python data structure `collections.deque` and provides 7 example use cases."
     og:image: "https://mathspp.com/blog/python-deque-tutorial/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/python-deque-tutorial/thumbnail.webp"
 references:
