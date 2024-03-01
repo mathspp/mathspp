@@ -319,7 +319,7 @@ class last:
             return self.maybe_value.pop()
         except IndexError:
             if default is _SENTINEL:
-                raise ValueError("Empty iterable has no last element.") from None
+                raise ValueError("No last element.") from None
             else:
                 return default
 ```
@@ -369,9 +369,14 @@ But it's only when you exhaust the generator with the help of `deque` that you g
 ```py
 from collections import deque
 
+gen_expr = (1 / num for num in range(10, -1, -1))
+next(gen_expr)
+next(gen_expr)
+next(gen_expr)
+
 deque(gen_expr, maxlen=0)  # ZeroDivisionError
 ```
-<codapi-snippet sandbox="python" editor="basic" depends-on="python.gen-expr.next"></codapi-snippet>
+<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
 
 This idiom can be helpful when you want to make sure a given iterable can be exhausted without erroring out but at the same time you're not interested in the contents of the iterable.
 
@@ -391,7 +396,7 @@ A moving average is an average computed over an iterable where you only consider
 For example, the average of the list `[0, 1, 2, 3, 4]` is 2.
 However, if you compute the moving average over that list with a window of size 3, you get a succession of increasing values:
 
-```
+```txt
 [0, 1, 2, 3, 4]
  ^^^^^^^ average of 1
     ^^^^^^^ average of 2
