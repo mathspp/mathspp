@@ -243,8 +243,11 @@ with open(filepath, "r") as file:
 print(last_5_lines)
 ```
 
+!!! This idiom traverses the whole file.
+!!! If efficiency is **critical**, consider taking a look at the module [`mmap`](https://docs.python.org/3/library/mmap.html) from the standard library.
+
 The pattern of using a `deque` to get the last few items of an iterable can take many useful forms.
-If you change the context, you can create another great use case for a `deque` with a fixed maximum size, as I'll show you in the next section.
+The next section shows a “completely different use case” for a `deque` with a fixed maximum size that ends up being exactly the same thing, except in a different context.
 
 
 ### Get last item that satisfies a predicate
