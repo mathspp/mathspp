@@ -2,8 +2,8 @@ This tutorial shows how to work with the Python data structure `collections.dequ
 
 ===
 
-<link rel="stylesheet" href="https://unpkg.com/@antonz/codapi@0.12.2/dist/snippet.css"/>
-<script src="https://unpkg.com/@antonz/codapi@0.12.2/dist/snippet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/@antonz/codapi@0.16.0/dist/snippet.css" />
+<script src="https://unpkg.com/@antonz/codapi@0.16.0/dist/snippet.js"></script>
 
 <!--
 <codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
@@ -215,8 +215,51 @@ A negative argument does the opposite.
 
 ## `deque` examples
 
-A `deque` can do _so many things_!
-Let me know what your favourite use cases for `deque` are in the comments below and I'll add them here.
+The characteristics of a `deque` let you use it for a variety of interesting things.
+These will typically make use of the fact that a `deque` can be easily modified on both ends and/or that a `deque` lets you cap its size with the parameter `maxlen`.
+
+In this section we'll go through some examples of use cases for the `deque` data structure.
+We'll present some concrete examples that highlight the capabilities of the `deque`.
+You are more than welcome to use a `deque` for other things and, if you have a nice use case, feel free to comment below so I can add it here:
+
+ - how to [get the last 5 lines of a file](#get-last-5-lines-of-a-file);
+ - how to [get the last item that satisfies a predicate](#get-last-item-that-satisfies-a-predicate);
+ - how to [fully consume an iterator](#fully-consume-an-iterator);
+ - how to [compute a windowed average](#compute-windowed-average);
+ - how to [implement `itertools.pairwise`](#implement-itertoolspairwise); and
+ - how to [save a sized action history](#save-action-history).
+
+
+### Get last 5 lines of a file
+
+Given the fact that `deque`s have the parameter `maxlen`, they are particularly suitable for when you want to access the last elements of iterables that you can't slice.
+When you want the last 5 items of a list or the last 5 characters of a string, you'd use [a negative slice](/blog/pydonts/idiomatic-sequence-slicing#s-n-1):
+
+```py
+my_list = [10, 20, 30, 40, 50, 60, True, False, None, 1, 2]
+print(my_list[-5:])  # [True, False, None, 1, 2]
+
+my_string = "mathspp.com"
+print(my_string[-5:])  # p.com
+```
+<codapi-snippet sandbox="python" editor="basic"></codapi-snippet>
+
+However, there are iterables that do not support slicing because you don't know their size.
+
+
+### Get last item that satisfies a predicate
+
+
+### Fully consume an iterator
+
+
+### Compute windowed average
+
+
+### Implement `itertools.pairwise`
+
+
+### Save action history
 
 
 [deque-documentation]: https://docs.python.org/3/library/collections.html#collections.deque

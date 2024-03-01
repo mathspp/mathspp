@@ -6,6 +6,8 @@ metadata:
     twitter:image: "https://mathspp.com/blog/python-deque-tutorial/thumbnail.webp"
 references:
   - "Python 3 Docs, `collections.deque`, [https://docs.python.org/3/library/collections.html#collections.deque](https://docs.python.org/3/library/collections.html#collections.deque) [last accessed 18-01-2024];"
+  - "“What do you use `collections.deque` for?” Twitter post, [https://twitter.com/mathsppblog/status/1747904120130855312](https://twitter.com/mathsppblog/status/1747904120130855312) [last accessed 20-01-2024];"
+  - "qutebrowser v3.1.0 code base, [https://github.com/qutebrowser/qutebrowser/tree/v3.1.0](https://github.com/qutebrowser/qutebrowser/tree/v3.1.0) [last accessed 20-01-2024];"
 slug: "python-deque-tutorial"
 taxonomy:
     category: "blogpost"
