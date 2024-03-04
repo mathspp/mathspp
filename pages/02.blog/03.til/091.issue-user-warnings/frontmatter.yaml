@@ -1,0 +1,18 @@
+date: 04-03-2024 14:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to issue user warnings like DeprecationWarnings or SyntaxWarnings."
+    og:image: https://mathspp.com/blog/til/issue-user-warnings/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/issue-user-warnings/thumbnail.webp
+references:
+    - "Python 3 Docs, `warnings`, [https://docs.python.org/3/library/warnings.html](https://docs.python.org/3/library/warnings.html) [last accessed 04-03-2024];"
+routes:
+    aliases:
+        - "/blog/til/091"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+        - programming
+        - python
+title: "TIL #091 – issue user warnings"
+visible: false
