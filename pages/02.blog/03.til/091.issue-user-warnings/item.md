@@ -3,7 +3,7 @@ Today I learned how to issue user warnings like DeprecationWarnings or SyntaxWar
 ===
 
 
-# Issuing user warnings
+# Issue user warnings
 
 Every once in a while I see a `DeprecationWarning` when I'm doing some coding.
 Last time I saw it, I think it was in some `pandas` code in my [pandas and matplotlib tutorial with Pokémon](/blog/learn-pandas-and-matplotlib-with-pokemon).
