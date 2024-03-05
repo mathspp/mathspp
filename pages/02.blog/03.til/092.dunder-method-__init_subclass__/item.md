@@ -23,6 +23,7 @@ class B(A):
 Output:
 Subclass <class '__main__.A'> was created.
 Subclass <class '__main__.B'> was created.
+"""
 ```
 
 The code above shows that when subclasses are created (even if they are not direct subclasses, like the case of `B`) the class method `Parent.__init_subclass__` is called.

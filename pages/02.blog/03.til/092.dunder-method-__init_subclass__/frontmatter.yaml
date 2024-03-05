@@ -9,6 +9,7 @@ references:
 routes:
     aliases:
         - "/blog/til/092"
+        - "/blog/til/__init_subclass__"
 taxonomy:
     category: [blogpost, til]
     tag:
@@ -16,5 +17,5 @@ taxonomy:
         - metaprogramming
         - programming
         - python
-title: "TIL #092 – __init_subclass__"
+title: "TIL #092 – dunder method __init_subclass__"
 visible: false
