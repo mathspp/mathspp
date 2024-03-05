@@ -9,6 +9,7 @@ references:
 routes:
     aliases:
         - "/blog/til/092"
+slug: "__init_subclass__"
 taxonomy:
     category: [blogpost, til]
     tag:
