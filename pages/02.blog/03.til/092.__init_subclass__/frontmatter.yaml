@@ -1,0 +1,20 @@
+date: 05-03-2024 22:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to use the dunder method __init_subclass__ to be notified when a class is subclassed."
+    og:image: https://mathspp.com/blog/til/__init_subclass__/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/__init_subclass__/thumbnail.webp
+references:
+    - "Python 3 Docs, Data model, Customizing class creation [https://docs.python.org/3/reference/datamodel.html#customizing-class-creation](https://docs.python.org/3/reference/datamodel.html#customizing-class-creation) [last accessed 05-03-2024];"
+routes:
+    aliases:
+        - "/blog/til/092"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+        - dunder methods
+        - metaprogramming
+        - programming
+        - python
+title: "TIL #092 – __init_subclass__"
+visible: false
