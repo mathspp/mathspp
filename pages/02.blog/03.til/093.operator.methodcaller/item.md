@@ -81,4 +81,27 @@ For example, functions like `min`, `max`, and `sorted`, accept an optional argum
 ]
 ```
 
+`methodcaller` also plays really nicely with `itertools.groupby`.
+As another silly example, the snippet below takes a list of strings and groups them by their casing:
+
+```pycon
+>>> from itertools import groupby
+>>> from operator import methodcaller
+
+>>> strings = [
+...     "AHAHA",
+...     "lowercase...",
+...     "again...",
+...     "UPPER",
+...     "SCREAM",
+... ]
+
+>>> for _, group in groupby(strings, key=methodcaller("isupper")):
+...     print(list(group))
+...
+['AHAHA']                     # all upper case
+['lowercase...', 'again...']  # all lower case
+['UPPER', 'SCREAM']           # all upper case
+```
+
 If you know of, or come up with, other cool use cases for `operator.methodcaller`, please comment below!
