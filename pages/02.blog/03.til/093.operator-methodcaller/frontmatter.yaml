@@ -1,0 +1,19 @@
+date: 06-03-2024 19:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to use the function operator.methodcaller."
+    og:image: https://mathspp.com/blog/til/operator.methodcaller/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/operator.methodcaller/thumbnail.webp
+references:
+    - "Python 3 Docs, `operator`, [https://docs.python.org/3/library/operator.html#operator.methodcaller](https://docs.python.org/3/library/operator.html#operator.methodcaller) [last accessed 06-03-2024];"
+routes:
+    aliases:
+        - "/blog/til/093"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+        - modules
+        - programming
+        - python
+title: "TIL #093 – operator.methodcaller"
+visible: false
