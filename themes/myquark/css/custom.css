@@ -8,50 +8,54 @@ and then read about the correct CSS here: https://stackoverflow.com/a/28571625
     font-family: 'Atkinson Hyperlegible';
     src: url('/user/themes/myquark/fonts/atkinsonhyperlegible-bold-webfont.eot');
     src: url('/user/themes/myquark/fonts/atkinsonhyperlegible-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/user/themes/myquark/fonts/atkinsonhyperlegible-bold-webfont.woff2') format('woff2'),
-         url('/user/themes/myquark/fonts/atkinsonhyperlegible-bold-webfont.woff') format('woff'),
-         url('/user/themes/myquark/fonts/atkinsonhyperlegible-bold-webfont.ttf') format('truetype'),
-         url('/user/themes/myquark/fonts/atkinsonhyperlegible-bold-webfont.svg#atkinson_hyperlegiblebold') format('svg');
+        url('/user/themes/myquark/fonts/atkinsonhyperlegible-bold-webfont.woff2') format('woff2'),
+        url('/user/themes/myquark/fonts/atkinsonhyperlegible-bold-webfont.woff') format('woff'),
+        url('/user/themes/myquark/fonts/atkinsonhyperlegible-bold-webfont.ttf') format('truetype'),
+        url('/user/themes/myquark/fonts/atkinsonhyperlegible-bold-webfont.svg#atkinson_hyperlegiblebold') format('svg');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Atkinson Hyperlegible';
     src: url('/user/themes/myquark/fonts/atkinsonhyperlegible-bolditalic-webfont.eot');
     src: url('/user/themes/myquark/fonts/atkinsonhyperlegible-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/user/themes/myquark/fonts/atkinsonhyperlegible-bolditalic-webfont.woff2') format('woff2'),
-         url('/user/themes/myquark/fonts/atkinsonhyperlegible-bolditalic-webfont.woff') format('woff'),
-         url('/user/themes/myquark/fonts/atkinsonhyperlegible-bolditalic-webfont.ttf') format('truetype'),
-         url('/user/themes/myquark/fonts/atkinsonhyperlegible-bolditalic-webfont.svg#atkinson_hyperlegibleBdIt') format('svg');
+        url('/user/themes/myquark/fonts/atkinsonhyperlegible-bolditalic-webfont.woff2') format('woff2'),
+        url('/user/themes/myquark/fonts/atkinsonhyperlegible-bolditalic-webfont.woff') format('woff'),
+        url('/user/themes/myquark/fonts/atkinsonhyperlegible-bolditalic-webfont.ttf') format('truetype'),
+        url('/user/themes/myquark/fonts/atkinsonhyperlegible-bolditalic-webfont.svg#atkinson_hyperlegibleBdIt') format('svg');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Atkinson Hyperlegible';
     src: url('/user/themes/myquark/fonts/atkinsonhyperlegible-italic-webfont.eot');
     src: url('/user/themes/myquark/fonts/atkinsonhyperlegible-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/user/themes/myquark/fonts/atkinsonhyperlegible-italic-webfont.woff2') format('woff2'),
-         url('/user/themes/myquark/fonts/atkinsonhyperlegible-italic-webfont.woff') format('woff'),
-         url('/user/themes/myquark/fonts/atkinsonhyperlegible-italic-webfont.ttf') format('truetype'),
-         url('/user/themes/myquark/fonts/atkinsonhyperlegible-italic-webfont.svg#atkinson_hyperlegibleitalic') format('svg');
+        url('/user/themes/myquark/fonts/atkinsonhyperlegible-italic-webfont.woff2') format('woff2'),
+        url('/user/themes/myquark/fonts/atkinsonhyperlegible-italic-webfont.woff') format('woff'),
+        url('/user/themes/myquark/fonts/atkinsonhyperlegible-italic-webfont.ttf') format('truetype'),
+        url('/user/themes/myquark/fonts/atkinsonhyperlegible-italic-webfont.svg#atkinson_hyperlegibleitalic') format('svg');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Atkinson Hyperlegible';
     src: url('/user/themes/myquark/fonts/atkinsonhyperlegible-regular-webfont.eot');
     src: url('/user/themes/myquark/fonts/atkinsonhyperlegible-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/user/themes/myquark/fonts/atkinsonhyperlegible-regular-webfont.woff2') format('woff2'),
-         url('/user/themes/myquark/fonts/atkinsonhyperlegible-regular-webfont.woff') format('woff'),
-         url('/user/themes/myquark/fonts/atkinsonhyperlegible-regular-webfont.ttf') format('truetype'),
-         url('/user/themes/myquark/fonts/atkinsonhyperlegible-regular-webfont.svg#atkinson_hyperlegibleregular') format('svg');
+        url('/user/themes/myquark/fonts/atkinsonhyperlegible-regular-webfont.woff2') format('woff2'),
+        url('/user/themes/myquark/fonts/atkinsonhyperlegible-regular-webfont.woff') format('woff'),
+        url('/user/themes/myquark/fonts/atkinsonhyperlegible-regular-webfont.ttf') format('truetype'),
+        url('/user/themes/myquark/fonts/atkinsonhyperlegible-regular-webfont.svg#atkinson_hyperlegibleregular') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Roboto Serif';
     src: url('/user/themes/myquark/fonts/RobotoSerif-BoldItalic.eot');
@@ -107,6 +111,7 @@ and then read about the correct CSS here: https://stackoverflow.com/a/28571625
     font-style: italic;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'APL385 Unicode';
     src: url('/user/themes/myquark/fonts/APL385.eot');
@@ -120,6 +125,7 @@ and then read about the correct CSS here: https://stackoverflow.com/a/28571625
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'FiraCode Nerd Font Mono';
     src: url('/user/themes/myquark/fonts/FiraCodeNerdFontCompleteM-Bold.eot');
@@ -133,6 +139,7 @@ and then read about the correct CSS here: https://stackoverflow.com/a/28571625
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'FiraCode Nerd Font Mono';
     src: url('/user/themes/myquark/fonts/FiraCodeNerdFontCompleteM-Regular.eot');
@@ -194,12 +201,18 @@ h6,
     color: #515763;
 }
 
-#sidebar,     /* Text on the sidebar of the blog. */
-#breadcrumbs, /* Text inside the breadcrumbs. */
-details,      /* `details` for the little dropdown with the tags in the blog. */
-i,            /* `i` for the FontAwesome icons. */
-time,         /* For the times at which blog posts were written. */
-figcaption,   /* For the image captions. */
+#sidebar,
+/* Text on the sidebar of the blog. */
+#breadcrumbs,
+/* Text inside the breadcrumbs. */
+details,
+/* `details` for the little dropdown with the tags in the blog. */
+i,
+/* `i` for the FontAwesome icons. */
+time,
+/* For the times at which blog posts were written. */
+figcaption,
+/* For the image captions. */
 p,
 li,
 label {
@@ -208,7 +221,8 @@ label {
 }
 
 /* Centre images in blog posts. */
-.blog-listing img, .blog-listing video {
+.blog-listing img,
+.blog-listing video {
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -230,18 +244,23 @@ body p:not(#footer p, .hero p, .feature-content p, .text-center) {
  * Include a very specific CSS selector: when this is not included, this very same specific
  * selector in the theme CSS overrides this and makes the text too dark, so we override it again,
  * because we are more stubborn then the theme :P */
-nav a, .header-dark #header:not(.scrolled) .dropmenu ul ul a {
+nav a,
+.header-dark #header:not(.scrolled) .dropmenu ul ul a {
     color: #f8f8f2 !important;
 }
+
 /* Fix the colouring of the same navigation menu when I hover over links. */
 .header-dark #header:not(.scrolled) .dropmenu ul li a:hover {
     color: #fff !important;
 }
 
 
-#header, body,
-.modular-features.offset-box .frame-box /* This is for the main box in the Workshops page that is "closer" to the screen. */
-{
+#header,
+body,
+.modular-features.offset-box .frame-box
+
+/* This is for the main box in the Workshops page that is "closer" to the screen. */
+    {
     background: #191919;
 }
 
@@ -259,10 +278,13 @@ blockquote {
 }
 
 /* Background colour for button classes like the "Random Article" button or the "Subscribe the newsletter". */
-.button, .btn {
+.button,
+.btn {
     background: #191919;
 }
-.btn:hover, .button:hover {
+
+.btn:hover,
+.button:hover {
     background: #202a37;
 }
 
@@ -282,25 +304,33 @@ blockquote {
 }
 
 /* Set the colours for pieces of code. */
-code, pre code {
+code,
+pre code {
     font-family: "FiraCode Nerd Font Mono";
     background: #282a36;
     color: #f8f8f2;
     font-variant-ligatures: none;
 }
-pre code { /* Repeat for multiline code. */
+
+pre code {
+    /* Repeat for multiline code. */
     font-family: "FiraCode Nerd Font Mono";
     background: #282a36;
     color: #f8f8f2;
     font-variant-ligatures: none;
 }
+
 /* Style APL code with the correct font. */
-code.language-APL, code.language-apl, .apl code, .APL code {
+code.language-APL,
+code.language-apl,
+.apl code,
+.APL code {
     /* Multiline APL code blocks and inline code with a "APL" span. */
     font-family: "APL385 Unicode";
 }
 
-code.language-APL, code.language-apl {
+code.language-APL,
+code.language-apl {
     line-height: 1.25;
 }
 
@@ -316,7 +346,8 @@ a:visited {
 }
 
 #footer {
-    background: #1e1f1f !important; /* Use !important because the footer has the class bg-gray, that sets the colour with !important as well. */
+    background: #1e1f1f !important;
+    /* Use !important because the footer has the class bg-gray, that sets the colour with !important as well. */
 }
 
 /* Blog post cards with correct background and shadow. */
@@ -329,28 +360,35 @@ a:visited {
     border-left-color: #1a6b83;
     background: #1d2022;
 }
-.notices.blue > * {
+
+.notices.blue>* {
     color: #288aa6;
 }
+
 .notices.green {
     border-left-color: #327c32;
     background: #1c221c;
 }
-.notices.green > * {
+
+.notices.green>* {
     color: #5b9a5b;
 }
+
 .notices.yellow {
     border-left-color: #854f03;
     background: #221e1a;
 }
-.notices.yellow > * {
+
+.notices.yellow>* {
     color: #ac6808;
 }
+
 .notices.red {
     border-left-color: #d9534f;
     background: #231e1e;
 }
-.notices.red > * {
+
+.notices.red>* {
     color: #e27673;
 }
 
@@ -382,12 +420,17 @@ a.headeroffset {
  */
 /* If the screen is not wide enough, just hide the buttons. */
 @media screen and (max-width:920px) {
-    .custom-scrollable, .custom-scrollable > * {
+
+    .custom-scrollable,
+    .custom-scrollable>* {
         display: none;
     }
 }
+
 @media screen and (min-width:920px) {
-    .custom-scrollable, .custom-scrollable > * {
+
+    .custom-scrollable,
+    .custom-scrollable>* {
         display: flex;
     }
 }
@@ -399,7 +442,7 @@ a.headeroffset {
     width: 2.5rem;
     height: 2.5rem;
     font-size: 1.7rem;
-    border-radius: 2rem; 
+    border-radius: 2rem;
     /* Custom computation of distance to left margin of the screen
      * to stay at a constant distance of the blog post content.
      * For the 488 = 976/2, we found out that 976 is the maximum
@@ -417,30 +460,36 @@ figure.image-caption {
     text-align: center;
     margin: 1rem;
 }
+
 figure.image-caption figcaption {
     opacity: 0.7;
     font-size: 90%;
 }
+
 figure.figure-right {
     float: right;
     margin-right: 0;
 }
+
 figure.figure-left {
     float: left;
     margin-left: 0;
 }
+
 figure.caption-left figcaption {
     text-align: left;
 }
+
 figure.caption-right figcaption {
     text-align: right;
 }
+
 /* End of the CSS for the image-captions plugin. */
 
 /* Mimic the CSS rule that keeps paragraphs "tight" in the modular pages (cf. /education),
  * but use it for blockquotes as well.
  */
-.modular-features .frame-box > blockquote { 
+.modular-features .frame-box>blockquote {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -448,14 +497,18 @@ figure.caption-right figcaption {
 
 /* Add some CSS to make sure the Gumroad button doesn't look weird
    because of interactions with the plugin that adds those icons to external links. */
-a.gumroad-button, a.external-link.no-image.gumroad-button {
-  background: none;
+a.gumroad-button,
+a.external-link.no-image.gumroad-button {
+    background: #f8f8f2;
+    color: initial;
 }
 
 /* Customise tables. */
 table {
-    margin-bottom: 24px;  /* Separate from remainder of text. */
-    margin-left: auto;  /* Centre the table in the page. */
+    margin-bottom: 24px;
+    /* Separate from remainder of text. */
+    margin-left: auto;
+    /* Centre the table in the page. */
     margin-right: auto;
     border-collapse: collapse;
     color: #f8f8f2;
@@ -463,15 +516,19 @@ table {
 
 thead {
     color: #ffb86c;
-    border-bottom: thin solid #f8f8f2;  /* Horizontal line under the header. */
+    border-bottom: thin solid #f8f8f2;
+    /* Horizontal line under the header. */
 }
 
-table th, table td {
-    padding: 0 0.5em;  /* Prevent columns from getting crowded. */
+table th,
+table td {
+    padding: 0 0.5em;
+    /* Prevent columns from getting crowded. */
 }
 
 tbody tr:nth-child(even) {
-    background: #1e1f1f; /* Same colour as footer. */
+    background: #1e1f1f;
+    /* Same colour as footer. */
 }
 
 /* Customise the icons to copy the code blocks to the clipboard. */
@@ -484,7 +541,7 @@ tbody tr:nth-child(even) {
     opacity: 0;
 }
 
-pre:hover > div > i.clipboard-icon {
+pre:hover>div>i.clipboard-icon {
     opacity: 1;
 }
 
@@ -502,8 +559,9 @@ pre:hover > div > i.clipboard-icon {
     padding-bottom: 0rem;
 }
 
-.modular-features.offset-box .frame-box { /* Offset box in modular pages. */
-    box-shadow: 0 0 30px 0 rgba(69,77,93,.3);
+.modular-features.offset-box .frame-box {
+    /* Offset box in modular pages. */
+    box-shadow: 0 0 30px 0 rgba(69, 77, 93, .3);
 }
 
 .modular-text h3 {
