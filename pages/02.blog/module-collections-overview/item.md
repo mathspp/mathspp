@@ -86,6 +86,8 @@ deque([5, 4, 3, 0, 1])
 deque([4, 3, 0, 1])
 ```
 
+You can learn how to use the data structure `deque` by reading [this tutorial](/blog/python-deque-tutorial), which includes 7 usage examples.
+
 
 # `ChainMap`
 
