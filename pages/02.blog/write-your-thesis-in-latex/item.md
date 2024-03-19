@@ -116,11 +116,11 @@ Thus, the line `\begin{document}` is a LaTeX command (`begin`) with the argument
 
 # The anatomy of a LaTeX document
 
-## Body
+## Document body
 
 The document body, which is the region delimited by `\begin{document}` and `\end{document}`, is the region where you write your content and it is where you work most of the time.
 
-## Header
+## Document header
 
 The header of a LaTeX document is everything that comes between the `\documentclass` and the body.
 The command `\documentclass` must at the very start of the document, and you can give additional instructions to LaTeX by writing more commands before the body begins.
