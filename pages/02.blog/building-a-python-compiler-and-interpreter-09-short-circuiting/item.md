@@ -3,7 +3,7 @@ In the 9th part of [this series][series-link] of building a Python compiler and 
 ===
 
 
-# Building a Python compiler and interpreter – 09 Boolean operators
+# Building a Python compiler and interpreter – 09 short-circuiting
 
 This is the 9th article of the [“Building a Python compiler and interpreter” series][series-link], so make sure you've gone through the first eight articles before tackling this one!
 
