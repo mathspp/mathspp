@@ -1,0 +1,90 @@
+en:
+  THEME_QUARK:
+    BLOG:
+      ITEM:
+        CONTINUE_READING: Continue reading...
+        NEXT_POST: Next Post
+        PREV_POST: Previous Post
+    SIDEBAR:
+      SIMPLE_SEARCH:
+        HEADLINE: Search
+      RELATED_POSTS:
+        HEADLINE: Related Posts
+      RANDOM_ARTICLE:
+        HEADLINE: Random Article
+        FEELING_LUCKY: I'm Feeling Lucky!
+      SOME_TEXT_WIDGET:
+        HEADLINE: Some Text Widget
+      POPULAR_TAGS:
+        HEADLINE: Popular Tags
+      ARCHIVES:
+        HEADLINE: Archives
+      SYNDICATE:
+        HEADLINE: Syndicate
+        
+  PLUGIN_COMMENTS:
+    ADD_COMMENT: Add a comment
+    COMMENTS: Comments
+    EMAIL_NOT_CONFIGURED: Email not configured
+    NEW_COMMENT_EMAIL_SUBJECT: 'New comment on %1$s'
+    NEW_COMMENT_EMAIL_BODY: '<p>A new comment was made on %1$s by %3$s (%4$s).</p><p>Page: %2$s</p><p>Text: %5$s</p>'
+    EMAIL_FOOTER: ''
+    NAME: Name:
+    EMAIL: Email:
+    WRITTEN_ON: Written on
+    BY: by
+    NAME_LABEL: "Name"
+    NAME_PLACEHOLDER: "Enter your name"
+    EMAIL_LABEL: "Email"
+    EMAIL_PLACEHOLDER: "Enter your email address"
+    MESSAGE_LABEL: "Comment"
+    MESSAGE_PLACEHOLDER: "Enter your comment"
+    SUBMIT_COMMENT_BUTTON_TEXT: "Submit"
+    EMAIL_NEW_COMMENT_SUBJECT: "[New Comment] from {{ form.value.name|e }}"
+    THANK_YOU_MESSAGE: "Thank you for writing your comment!"
+
+    
+pt:
+  THEME_QUARK:
+    BLOG:
+      ITEM:
+        CONTINUE_READING: Ver mais...
+        NEXT_POST: Próximo artigo
+        PREV_POST: Artigo anterior
+    SIDEBAR:
+      SIMPLE_SEARCH:
+        HEADLINE: Pesquisar
+      RELATED_POSTS:
+        HEADLINE: Artigos relacionados
+      RANDOM_ARTICLE:
+        HEADLINE: Artigo aleatório
+        FEELING_LUCKY: Sinto-me com sorte!
+      SOME_TEXT_WIDGET:
+        HEADLINE: Widget com algum texto
+      POPULAR_TAGS:
+        HEADLINE: Etiquetas populares
+      ARCHIVES:
+        HEADLINE: Arquivos
+      SYNDICATE:
+        HEADLINE: Sindicato
+        
+  PLUGIN_COMMENTS:
+    ADD_COMMENT: Escreva um comentário
+    COMMENTS: Comentários
+    EMAIL_NOT_CONFIGURED: E-mail não configurado
+    NEW_COMMENT_EMAIL_SUBJECT: 'Novo comentário em %1$s'
+    NEW_COMMENT_EMAIL_BODY: '<p>Um novo comentário foi feito em %1$s por %3$s (%4$s).</p><p>Página: %2$s</p><p>Texto: %5$s</p>'
+    EMAIL_FOOTER: ''
+    NAME: Nome:
+    EMAIL: Email:
+    WRITTEN_ON: Publicado em
+    BY: por
+    NAME_LABEL: "Nome"
+    NAME_PLACEHOLDER: "Escreve o teu nome"
+    EMAIL_LABEL: "E-mail"
+    EMAIL_PLACEHOLDER: "Escreve o teu e-mail."
+    MESSAGE_LABEL: "Comentário"
+    MESSAGE_PLACEHOLDER: "Escreve o teu comentário"
+    SUBMIT_COMMENT_BUTTON_TEXT: "Submeter"
+    EMAIL_NEW_COMMENT_SUBJECT: "[Novo comentário] de {{ form.value.name|e }}"
+    THANK_YOU_MESSAGE: "Obrigado pelo teu comentário!"

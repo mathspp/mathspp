@@ -1,0 +1,40 @@
+title: Mathspp
+default_lang: en
+author:
+  name: 'Rodrigo Girão Serrão'
+  email: mathspp@mathspp.com
+taxonomies:
+  - category
+  - tag
+  - topic
+metadata:
+  description: 'The mathspp website is home to some very interesting content about mathematics and programming.'
+  author: 'Rodrigo Girão Serrão'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+redirects:
+  /utils: 'https://localhost:8888'
+  '/workshops/(.*)': '/training[301]'
+  '/education/(.*)': '/training/$1[301]'
+  /education: '/training[301]'
+  '/blog/solutions/(.*)': '/blog/problems/$1#solution[301]'
+  '/pt/blog/solutions/(.*)': '/pt/blog/problems/$1#solução[301]'
+  /github: 'https://github.com/mathspp'
+  /twitch: 'https://twitch.tv/mathsppblog'
+  /pt/twitch: 'https://mathspp.com/twitch'
+  /youtube: 'https://www.youtube.com/channel/UCmJ59I1u8uUl9u3MkEry30w'
+  /pt/youtube: 'https://www.youtube.com/channel/UCmJ59I1u8uUl9u3MkEry30w'
+  /twitter: 'https://twitter.com/mathsppblog'
+  /meetup-apl: 'https://mathspp.com/pt/education/courses/apl-meetup'
+  /pt/meetup-apl: 'https://mathspp.com/pt/education/courses/apl-meetup'
+  /discord: 'https://discord.gg/QKAmVYq868'
+  /pt/discord: 'https://discord.gg/QKAmVYq868'
+routes: null
+blog:
+  route: /blog
+footer-random:
+  - '[google](https://google.com)'
+  - '[twitter](https://twitter.com)'

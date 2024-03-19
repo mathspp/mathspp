@@ -1,0 +1,30 @@
+enabled: true
+seo:
+  robots: without
+  length: 20
+  taxonomy:
+    enabled: true
+  page_content:
+    enabled: false
+  keywords:
+    taxonomy:
+      enabled: true
+    page_content:
+      enabled: false
+    length: 20
+quote:
+  convert_simple: true
+social_pages:
+  pages:
+    twitter:
+      enabled: true
+      type: summary_large_image
+      username: '@mathsppblog'
+    facebook:
+      opengraph:
+        enabled: true
+      insights:
+        enabled: false
+        appid: '1234567890'
+default:
+  image: {  }

@@ -1,0 +1,63 @@
+enabled: true
+active: true
+provider: disqus
+providers:
+  discourse:
+    host: null
+  disqus:
+    shortname: mathspp
+    show_count: true
+    language: null
+  facebook:
+    app_id: null
+    num_posts: 5
+    colorscheme: light
+    order_by: social
+    language: null
+    width: 100%
+  googleplus:
+    show_count: false
+    language: null
+    width: 100%
+  intensedebate:
+    account_number: null
+  isso:
+    host: null
+    builtin_css: true
+    language: null
+    reply_to_self: false
+    require:
+      author: true
+      email: true
+    comments:
+      number: 10
+      nested_number: 5
+      reveal: 5
+    avatar:
+      enabled: true
+      background: null
+      foreground: null
+    vote:
+      enabled: true
+      levels: '-5,5'
+  muut:
+    forum: null
+    channel: General
+    widget: false
+    show_online: false
+    show_title: false
+    upload: false
+    share: true
+    language: null
+  hypercomments:
+    widget_id: null
+    social:
+      - vk
+      - odnoklassniki
+      - yandex
+      - mailru
+      - google
+      - livejournal
+      - facebook
+      - twitter
+      - tumblr

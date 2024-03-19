@@ -1,0 +1,29 @@
+enabled: true
+from: grav@pineman.win
+from_name: null
+to: joao.castropinheiro@gmail.com
+to_name: null
+queue:
+  enabled: false
+  flush_frequency: '* * * * *'
+  flush_msg_limit: 10
+  flush_time_limit: 100
+mailer:
+  engine: none
+  smtp:
+    server: localhost
+    port: 25
+    encryption: none
+    user: rodrigo
+    password: KI!ko1997grav
+  sendmail:
+    bin: '/usr/sbin/sendmail -bs'
+content_type: text/html
+debug: true
+charset: null
+cc: null
+cc_name: null
+bcc: null
+reply_to: null
+reply_to_name: null
+body: null

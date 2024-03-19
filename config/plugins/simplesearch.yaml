@@ -1,0 +1,27 @@
+enabled: true
+built_in_css: true
+built_in_js: true
+display_button: false
+min_query_length: 3
+route: /search
+search_content: raw
+template: simplesearch_results
+filters:
+  category: null
+filter_combinator: and
+ignore_accented_characters: true
+order:
+  by: date
+  dir: desc
+searchable_types:
+  title: true
+  content: true
+  taxonomy: true
+  header: false
+header_keys_ignored:
+  - title
+  - taxonomy
+  - content
+  - form
+  - forms
+  - media_order

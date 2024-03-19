@@ -1,0 +1,34 @@
+enabled: true
+folders:
+  - pages
+  - themes
+  - plugins
+  - languages
+sync:
+  on_save: true
+  on_delete: true
+  on_media: true
+  cron_enable: false
+  cron_at: '0 12,23 * * *'
+local_repository: null
+repository: 'https://github.com/mathspp/mathspp.git'
+user: rodrigogiraoserrao
+password: gitsync-def50200e68f660b3a0aa82c6c0a5fb96b39dff80479bd6f3a60723d01d881f8bbc27e93d8f08b367949a1764c0ddf992d1a63ffbd9bda1aa9d3c5b55ca6d4bc6b3f2b840b70a004c8c2145c710ef3cf5ea83f7fb3c0e9c6a953adc2e3e5f2c76ed0ccd3b555d44823bea02f1c5446fae5d3beb781c1205456ef0138
+webhook: /_git-sync-be888e1d27d4
+webhook_enabled: '1'
+webhook_secret: c9c521cf624b3d6a58e097be8ae8b745881db2f065066e94
+branch: master
+remote:
+  name: origin
+  branch: master
+git:
+  author: gituser
+  message: '(Grav GitSync) Automatic Commit'
+  name: GitSync
+  email: git-sync@trilby.media
+  bin: git
+  ignore: null
+  private_key: null
+logging: false
+no_user: '0'
+SyncNotice: null

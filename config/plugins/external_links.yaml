@@ -1,0 +1,29 @@
+enabled: true
+built_in_css: true
+weight: 0
+exclude:
+  classes:
+    - exclude
+  domains: null
+links:
+  www: false
+  redirects: false
+  schemes:
+    - http
+    - https
+    - ftp
+    - irc
+    - mailto
+    - news
+    - nntp
+    - rtsp
+    - sftp
+    - ssh
+    - tel
+    - telnet
+    - webcal
+process: true
+title: false
+no_follow: true
+target: _blank
+mode: active

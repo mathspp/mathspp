@@ -1,0 +1,6 @@
+enabled: true
+built_in_css: false
+entire_page: false
+scope: img
+figure_class: image-caption
+figcaption_class: null

@@ -1,0 +1,7 @@
+enabled: true
+limit: 10
+title: 'mathspp.com feed'
+description: 'Stay up-to-date with the articles on mathematics and programming that get published to mathspp.com.'
+length: 500
+enable_json_feed: true
+show_last_modified: true
