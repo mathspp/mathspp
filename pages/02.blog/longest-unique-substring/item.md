@@ -11,7 +11,7 @@ Then, I'll analyse different approaches to solving this problem, talking about t
 ## Problem statement
 
 !!! Given a string, find the longest substring that contains only unique characters.
-!!! In case of a tie, return the first one.
+!!! In case of a length tie, return the first one.
 
 Here are some examples to test your code with:
 
@@ -22,11 +22,11 @@ def longest_unique_substring(string):
 lus = longest_unique_substring
 
 assert lus("") == ""
-assert lus("abc") == "abc"
-assert lus("abca") == "abc"
+assert lus("abc") == "abc"  # The whole string is a substring.
+assert lus("abca") == "abc"  # And not "bca"
 assert lus("abcad") == "bcad"
 assert lus("ababababcda") == "abcd"
-assert lus("aaaaaa") == "a"
+assert lus("aaaaaa") == "a"  # A substring of length 1 is a substring.
 ```
 
 
@@ -75,7 +75,7 @@ So, we don't need to inspect the last 5 characters of the string.
 
 Another small change comes from reversing the inner loop.
 For a given value of `start`, instead of starting with the smallest substring and going up until the end of the input string, we can start with the longest possible substring starting at `start`.
-This is better because as soon as we find one unique substring starting at `start` we don't need to look for others, as they will be shorter (because `end` is decreasing):
+This is better because as soon as we find one unique substring starting at `start` we don't need to look for others, as they will be shorter (because `stop` is decreasing):
 
 ```py
 def longest_unique_substring(string):
@@ -93,7 +93,7 @@ def longest_unique_substring(string):
     return longest
 ```
 
-_Finally_, we can also say that we don't need to consider values of `end` that are too close to `start`, as those will produce substrings that are shorter than what the currently longest unique substring is.
+_Finally_, we can also say that we don't need to consider values of `stop` that are too close to `start`, as those will produce substrings that are shorter than what the currently longest unique substring is.
 Hence, we can make yet another change to the second loop:
 
 ```py
@@ -146,9 +146,12 @@ a     k           b
 In the string above, the slice `string[a:b]` only contains unique characters (the letters from A to Q).
 If we look at `string[a:b+1]`, the characters are no longer all unique because the F at the right end of the string is a repetition of the character at position `k`.
 This means that we know for a fact that the longest substring will not start at any of the positions marked with `^`.
+
+Can you see why?
 Give it some thought...
 
-The reason the longest substring won't start at any of the positions marked with a `^` is because such a substring will only be unique up to the point `b`, and because it is starting after the point `a`, it will be shorter than the substring that goes from `a` to `b`.
+The reason the longest substring won't start at any of the positions marked with a `^` is because such a substring will only be unique up to the point `b`, when the two repeated Fs show up again.
+Because it is starting after the point `a`, it will be shorter than the substring that goes from `a` to `b`.
 This means that it is only worth to keep looking after the point `k`.
 
 By using this observation, we can implement a solution that looks like this:
@@ -173,7 +176,7 @@ When we find a character that's inside that substring, we give up on that substr
 
 From an algorithmic point of view, I think this solution is absolutely brilliant.
 
-Before concluding, we'll just consider a slight improvement to this function that is related to the `.find` and the `substring[k + 1:]` operations.
+Now we'll consider a slight improvement to this function that is related to the `.find` and the `substring[k + 1:]` operations.
 Slicing is considered an expensive operation because it creates a copy of what's being sliced.
 For that matter, we'll try to get rid of the slicing.
 Along the way, we'll make a couple of adjustments that will also make the code a bit faster.
@@ -253,6 +256,28 @@ def longest_unique_substring(string):
         longest = "".join(substring)   # <--
     return longest
 ```
+
+Personally, I'm not a fan of this final form of the solution.
+I don't like the fact that I have two equal `if` statements that updated `longest`, so I actually preferred the previous version with many calls to `"".join(substring)`.
+
+Python is usually written in a practical context where you want to be efficient, but you don't need to squeeze your code for every last drop of performance, so my personal favourite for this problem is actually the string slicing version:
+
+```py
+def longest_unique_substring(string):
+    longest = ""  # Longest substring found so far.
+    substring = ""  # Current substring we're building.
+    for char in string:
+        if char in substring:
+            k = substring.find(char)
+            substring = substring[k + 1:]
+        substring += char
+        if len(substring) > len(longest):
+            longest = substring
+    return longest
+```
+
+Even though the version with `deque` and sets is faster on paper, I prefer the one I pasted above because it has less bookkeeping.
+In this piece of code we only need to update the variables `longest` and `substring`, whereas the `deque` + set version requires that we also update the variable `characters`, which in turn feels a bit redundant because that contains the same characters as the `deque` itself.
 
 This wraps it up!
 At the time of writing, this is the best solution I'm aware of.
