@@ -1,0 +1,15 @@
+date: 22-03-2024
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "How can you find the longest substring that contains only unique characters?"
+    og:image: "https://mathspp.com/blog/longest-unique-substring/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/longest-unique-substring/thumbnail.webp"
+slug: "longest-unique-substring"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - algorithms
+        - programming
+        - python
+title: "Longest unique substring"
