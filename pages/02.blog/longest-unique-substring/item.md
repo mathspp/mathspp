@@ -10,8 +10,8 @@ Then, I'll analyse different approaches to solving this problem, talking about t
 
 ## Problem statement
 
-!! Given a string, find the longest substring that contains only unique characters.
-!! In case of a tie, return the first one.
+!!! Given a string, find the longest substring that contains only unique characters.
+!!! In case of a tie, return the first one.
 
 Here are some examples to test your code with:
 
