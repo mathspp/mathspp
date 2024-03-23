@@ -4,6 +4,8 @@ metadata:
     description: "How can you find the longest substring that contains only unique characters?"
     og:image: "https://mathspp.com/blog/longest-unique-substring/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/longest-unique-substring/thumbnail.webp"
+references:
+    - "X / Twitter by @mathsppblog post and replies, [https://twitter.com/mathsppblog/status/1771140279426314350](https://twitter.com/mathsppblog/status/1771140279426314350) [last accessed 22-03-2024]"
 slug: "longest-unique-substring"
 taxonomy:
     category:
