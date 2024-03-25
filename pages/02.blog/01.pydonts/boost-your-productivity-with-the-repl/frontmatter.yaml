@@ -12,5 +12,6 @@ slug: "boost-your-productivity-with-the-repl"
 taxonomy:
     category: [blogpost, pydont]
     tag:
+      - "productivity"
       - "programming"
       - "python"
