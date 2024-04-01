@@ -8,7 +8,7 @@ From the 14th of November of 2022 to the 31st of March of 2024 I worked full-tim
 This article is an account of some of the things that I learned during those 503 days.
 
 !!! I have much more time to devote to _**you**_ now that I don't have this full-time position.
-!!! If you're looking for Python training, [reach out to me][email] or [browse for yourself][training].
+!!! If you're looking for Python training, [reach out to me][email].
 !!! I'll also be investing my time in this blog and in [my books][books].
 
 I joined Textualize, the company behind the popular FOSS Python packages [Rich] and [Textual], on the 14th of November of 2022.
@@ -21,11 +21,11 @@ This means that my technical knowledge improved substantially over the course of
  - testing / `pytest`; and
  - software engineering best practices in general.
 
-However, this article will focus on four non-technical lessons I learned during this 503-day experience:
+However, this article will focus on the non-technical lessons I learned during this 503-day experience, that fall under these four broad categories:
 
- 1. how my online presence led to a job offer;
- 2. criticism must be embranced instead of letting it hurt my ego;
- 3. interacting with users & contributors; and
+ 1. how an online presence can lead to a job offer;
+ 2. how your ego shouldn't be in the way of your work;
+ 3. how to interact with users & contributors; and
  4. how to work on a huge codebase you don't know 100%.
 
 Let's dive right in.
@@ -72,13 +72,13 @@ I wanted to work with people who I looked up to for their technical skills and I
 
 I joined Textualize and I immediately understood that code reviews would be moments where I could learn a lot.
 If you think about it, when you're writing code, it's not only about whether the code does what it's supposed to (fix a bug, implement a feature, etc.).
-The actual code you wrote is also relevant and code reviews are when your coworkers get to comment on that.
+The actual code you write is also relevant and code reviews are when your coworkers get to comment on that.
 
 
 ### Ask ALL the questions
 
 One thing I did and that I can recommend is that you use code reviews to ask questions.
-It happened regularly that I would read someone's code and think “interesting, why didn't they do it with X, Y, and Z?”.
+It happened regularly that I would read someone's code and think “interesting, why didn't they do this with X, Y, and Z?”.
 Whenever that was the case, I left a comment _asking_ that same question, even if the question sounded a bit basic.
 Often, they would reply explaining their reasoning, and I would get to learn something new.
 Some other times, it would turn out that they hadn't thought of the alternative I was considering and they took my suggestion.
@@ -138,8 +138,7 @@ After all, I implemented the feature in question and the bug wasn't about an obs
 It was just a blunder of mine...
 
 Thankfully, my team reacted differently and they said “we don't play the blame game” when reacting to my feeling responsible.
-We could argue that it was everyone's fault because the pull request did pass the review process, but as the author I still felt like I should've been able to predict that bug myself.
-But I guess it all comes down to the age-old adage that I already wrote above:
+I guess it all comes down to the age-old adage that I already wrote above:
 
  > “Everyone makes mistakes.”
 
@@ -178,9 +177,12 @@ One thing that really helps is setting up an issue template for bug reports, whi
 As of writing this, our bug report template issue looks like this:
 
 ````
-Have you checked closed issues? https://github.com/Textualize/textual/issues?q=is%3Aissue+is%3Aclosed
+Have you checked closed issues?
+https://github.com/Textualize/textual/issues?q=is%3Aissue+is%3Aclosed
 
-Please give a brief but clear explanation of the issue. If you can, include a complete working example that demonstrates the bug. **Check it can run without modifications.**
+Please give a brief but clear explanation of the issue.
+If you can, include a complete working example that demonstrates the bug.
+**Check it can run without modifications.**
 
 It will be helpful if you run the following command and paste the results:
 
@@ -188,7 +190,8 @@ It will be helpful if you run the following command and paste the results:
 textual diagnose
 ```
 
-Feel free to add screenshots and / or videos. These can be very helpful!
+Feel free to add screenshots and / or videos.
+These can be very helpful!
 ````
 
 Something we should probably change is to ask for a _**minimum reproducible example**_ instead of asking for a “complete working example”.
@@ -357,6 +360,10 @@ Whenever I thought “this change is so trivial I don't need to run the tests”
 Whenever I made a PR, I always started by making it a draft PR and then I would review my own code.
 For some reason, reviewing my own code on GitHub helped me catch things that sometimes I would miss when working locally.
 I would only request someone else's review after reviewing my own code and making sure the tests were passing on CI.
+
+One thing that may or may not be obvious from this, and that is a bit of a technical comment, is that tests helped me _a lot_ and gave me the confidence I needed to work on the Textual codebase.
+There was so much code that it was very easy for me to make a change somewhere, thinking I was doing everything right, and then breaking the tests in some other (seemingly) unrelated part of the code.
+Without tests, my work would have been so much harder...
 
 
 ## Conclusion
