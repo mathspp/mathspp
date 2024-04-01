@@ -362,14 +362,14 @@ For some reason, reviewing my own code on GitHub helped me catch things that som
 I would only request someone else's review after reviewing my own code and making sure the tests were passing on CI.
 
 One thing that may or may not be obvious from this, and that is a bit of a technical comment, is that tests helped me _a lot_ and gave me the confidence I needed to work on the Textual codebase.
-There was so much code that it was very easy for me to make a change somewhere, thinking I was doing everything right, and then breaking the tests in some other (seemingly) unrelated part of the code.
+There was so much code that it was very easy for me to make a change somewhere, thinking I was doing everything right, and then break the tests in some other (seemingly) unrelated part of the code.
 Without tests, my work would have been so much harder...
 
 
 ## Conclusion
 
 I learned a lot over the course of these 503 days working on Textual.
-I'm sad to being let go, especially because of what it likely means for Textual, but I don't regret having joined this project.
+I'm sad I'm being let go, especially because of what it likely means for Textual, but I don't regret leaving my previous position to join this project.
 I learned a lot about Python, software engineering, and a lot about working on open-source projects.
 These are the lessons I take from this 503 experience:
 
