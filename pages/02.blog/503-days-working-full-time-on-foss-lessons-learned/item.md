@@ -7,9 +7,9 @@ This article shares some of the lessons I learned from working full-time on a FO
 From the 14th of November of 2022 to the 31st of March of 2024 I worked full-time on a FOSS project.
 This article is an account of some of the things that I learned during those 503 days.
 
-! I have much more time to devote to _**you**_ now that I don't have this full-time position.
-! If you're looking for Python training, [reach out to me][email] or [browse for yourself][training].
-! I'll also be investing my time in this blog and in [my books][books].
+!!! I have much more time to devote to _**you**_ now that I don't have this full-time position.
+!!! If you're looking for Python training, [reach out to me][email] or [browse for yourself][training].
+!!! I'll also be investing my time in this blog and in [my books][books].
 
 I joined Textualize, the company behind the popular FOSS Python packages [Rich] and [Textual], on the 14th of November of 2022.
 When I joined to work remotely from sunny Portugal, I joined [Will](https://github.com/willmcgugan) (the creator of Rich & Textual, and my boss), [Darren](https://github.com/darrenburns), and [Dave](https://github.com/davep), all of whom worked together in Scotland.
@@ -170,7 +170,7 @@ A contributing guide will also have your back in some situations.
 More on that later!
 
 
-### Simplify bug reporting as much as possible
+### Give clear instructions to bug reporters
 
 One of the things I learned is that you have to hold the hand of your users if you want decent bug reports.
 One thing that really helps is setting up an issue template for bug reports, which is an excellent feature that GitHub has.
@@ -244,7 +244,7 @@ If you're just very busy (which is fine and can definitely be the case) just set
 I am very busy at the moment and I will get back to you as soon as possible.”
 
 
-### Handle external pull requests
+### How to handle external pull requests
 
 Another challenge I faced and that I didn't expect was managing external pull requests.
 
@@ -329,7 +329,7 @@ In hindsight, they are obvious to me, too.
 But it definitely helped me writing them down.
 
 
-### Taking notes
+### Take notes
 
 Another thing that helped me was writing down notes about bigger issues I was tackling.
 Whenever I was trying to fix a difficult bug, I'd jot down some notes about things I tried.
@@ -363,6 +363,21 @@ I would only request someone else's review after reviewing my own code and makin
 
 I learned a lot over the course of these 503 days working on Textual.
 I'm sad to being let go, especially because of what it likely means for Textual, but I don't regret having joined this project.
+I learned a lot about Python, software engineering, and a lot about working on open-source projects.
+These are the lessons I take from this 503 experience:
+
+ - [Everything you do online works as a banner for you](#everything-you-do-online-works-as-a-banner).
+ - [Ask ALL the questions](#ask-all-the-questions).
+ - [Embrace (code review) feedback](#embrace-code-review-feedback).
+ - [Everyone makes mistakes](#everyone-makes-mistakes).
+ - [Create a contributing guide](#create-a-contributing-guide).
+ - [Give clear instructions to bug reporters](#give-clear-instructions-to-bug-reporters).
+ - [Be so kind it's annoying](#be-so-kind-its-annoying).
+ - [Give a first reply quickly](#give-a-first-reply-quickly).
+ - [How to handle external pull requests](#how-to-handle-external-pull-requests).
+ - [4 commandments for my work](#4-commandments-for-my-work).
+ - [Take notes](#take-notes).
+ - [Personal pull request checklist](#personal-pull-request-checklist).
 
 Now, I will use my time to help _**you**_, your colleagues, and your team.
 If you're looking for Python training, [reach out to me][email].
