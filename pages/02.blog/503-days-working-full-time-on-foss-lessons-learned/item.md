@@ -221,7 +221,7 @@ Point them to the appropriate link(s) and ask whether something there was unclea
 
 This can be pretty tiring but I find it definitely worth the effort.
 Interactions that start off seemingly unpleasant can turn out great if you don't escalate the situation.
-That happened to me more more than once!
+That happened to me more than once!
 
 
 ### Give a first reply quickly
@@ -236,9 +236,9 @@ When a user interacts with your project, it's likely that _you_ have something t
 This is obviously true for bug reports and pull requests.
 So, I believe we shouldn't let the user go for days or weeks without a simple reply.
 
-I'm not saying bug reports have to be fixed or pull requests need to be reviewed in 24 hours.
+I'm not saying bug reports have to be fixed immediately or pull requests need to be reviewed immediately.
 I'm saying we should strive to _say something_ to the user soon.
-I came to this realisation after thinking about how I feel when I open an issue on another project and I go months without a reply!
+I came to this realisation after thinking about how I feel when I open an issue on another project and months go by without a reply!
 
 If you're just very busy (which is fine and can definitely be the case) just set up an action that replies automatically with something friendly.
 “I appreciate your pull request / bug report.
@@ -252,7 +252,7 @@ Another challenge I faced and that I didn't expect was managing external pull re
 Much like with bug reports, I found invaluable to have a pull request template with a checklist for external users (and often, for myself as well).
 Mentioning things like runnnig tests and formatting the code with the appropriate formatter(s) can save everyone a lot of time.
 
-Another thing I realised is helpful is to make sure that each pull request is associated to an issue.
+Another thing I realised is helpful is to make sure that each pull request is associated with an issue.
 Sometimes users will open pull requests that implement features without those features ever being discussed.
 Chances are the user is trying to be helpful, but sometimes those features need a bit of discussion.
 I find that those are the cases where an associated issue will be the most helpful.
@@ -281,8 +281,8 @@ These changes came “out of the blue” in the sense that there was not a previ
 
 The changes were non-trivial and involved changing the order of some things, duplicating some information, and rewriting sentences.
 We are sure the user was well-intentioned.
-In particular, we had already interacted with that particular user.
-And that well-intentioned pull request had some objectively great suggestions, but it also had other changes that were subjective.
+In fact, we had already interacted with that particular user.
+And that well-intentioned pull request had some objectively great suggestions, but it also had other changes that were of subjective quality.
 
 In the end, I opened a second pull request where I committed the best parts of the original pull request.
 I made sure to include the author of the first pull request as a co-author.
@@ -301,11 +301,11 @@ I've made drive-by contributions to _larger_ projects, but a one-time contributi
 
 When a codebase reaches a certain size, it becomes virtually impossible to fit all of it in your head at once.
 For me, Textual was at this point.
-With time, I grew more and more familiar with the codebase and the number of dark corners was getting smaller by the day, but there are still things I don't know exactly how they work and there are parts of the codebase that I never touched.
+With time, I grew more and more familiar with the codebase but there are still things I don't know exactly how they work and there are parts of the codebase that I never touched.
 
 To make it easier for me to work on such a huge project, I developed three systems:
 
- 1. a set of commandments or mantras that I kept in mind while working on larger features or bug fixes;
+ 1. a set of commandments that I kept in mind while working on larger features or bug fixes;
  2. a note-taking system for big tasks, difficult issues, and eventful situations; and
  3. a personal pull request checklist I went through before making a pull request.
 
@@ -315,7 +315,7 @@ Let me walk you through these three systems.
 ### 4 commandments for my work
 
 I remember making a couple of bigger pull requests that didn't go very well on the first try.
-I asked around for suggestions on how to handle these situations (when you're implementing a bigger feature or fixing a very difficult bug) and I ended up with four commandments considerations that I should always keep in mind when writing code.
+I asked around for suggestions on how to handle these situations (when you're implementing a bigger feature or fixing a very difficult bug) and I ended up with four commandments that I should always keep in mind when writing code.
 
  1. What's best for the developer? – When making design decisions, I should always think about what the people using my code will want and that's what should drive my decisions.
 
@@ -339,6 +339,8 @@ Attempts at fixing said bug.
 
 Personally, the act of taking notes helped commit to memory some of the things I was learning along the way.
 Strategies that did or did not work when trying to solve certain issues.
+
+It's unlikely that note-taking will benefit everyone in the same way, but I'm sure there are variants of this that are likely to benefit you.
 
 
 ### Personal pull request checklist
