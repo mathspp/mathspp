@@ -186,9 +186,7 @@ If you can, include a complete working example that demonstrates the bug.
 
 It will be helpful if you run the following command and paste the results:
 
-```
-textual diagnose
-```
+    textual diagnose
 
 Feel free to add screenshots and / or videos.
 These can be very helpful!
