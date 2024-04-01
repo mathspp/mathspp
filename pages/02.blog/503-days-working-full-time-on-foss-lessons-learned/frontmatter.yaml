@@ -1,0 +1,13 @@
+date: 01-04-2024
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This article shares some of the lessons I learned from working full-time on a FOSS project for 503 days."
+    og:image: "https://mathspp.com/blog/503-days-working-full-time-on-foss-lessons-learned/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/503-days-working-full-time-on-foss-lessons-learned/thumbnail.webp"
+slug: "503-days-working-full-time-on-foss-lessons-learned"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - python
+title: "503 days working full-time on FOSS: lessons learned"
