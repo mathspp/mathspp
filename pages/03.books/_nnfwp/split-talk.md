@@ -1,6 +1,7 @@
-# Neural Networks Fundamentals with Python
-
-![](nnfwp.svg?classes=float-right)
+---
+title: Neural Networks Fundamentals with Python
+image_align: left
+---
 
 Ever wondered what a neural network really is, how it works, or how to implement one?
 Well, I did, and that is why I tried implementing one.
@@ -28,10 +29,11 @@ deep learning.
 By the way, if you are unsure whether or not this book is for you,
 you can always read its chapters for free [on my blog](/blog/tag:nnfwp).
 
-<p style="clear:both"></p>
-
-<div style="display:flex; justify-content:center">
-<a class="gumroad-button" href="https://gumroad.com/l/swTNl" target="_blank">Get the book now!</a>
+<div style="display:flex; justify-content:center;">
+<a href="https://gumroad.com/l/swTNl?wanted=true" target="_blank" class="btn" style="margin-right: 1em;">Buy for $9</a>
 </div>
 
 [gh-nnfwp]: https://github.com/mathspp/nnfwp
+
+===
+![](_book.webp)

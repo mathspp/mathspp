@@ -1,15 +1,20 @@
-anchors:
-    active: false
+---
 body_classes: "header-dark header-transparent"
 content:
     items: "@self.modular"
     order:
         custom:
           - "_hero"
+          - "_intro"
           - "_pydonts"
+          - "_comprehensions"
+          - "_bootcamp-book"
           - "_nnfwp"
+          - "_problems"
 metadata:
     author: "Rodrigo Girão Serrão"
-    og:image: "https://mathspp.com/education/logo_education.png"
-    twitter:image: "https://mathspp.com/education/logo_education.png"
+    description: "Books I have written about Python and other topics."
+    og:title: "Books"
+    title: Books
 onpage_menu: false
+---
