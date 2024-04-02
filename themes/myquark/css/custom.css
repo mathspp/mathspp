@@ -554,6 +554,7 @@ pre:hover>div>i.clipboard-icon {
     scroll-padding-top: 4rem;
 }
 
+
 .modular-text {
     padding-top: 0rem;
     padding-bottom: 0rem;
@@ -570,4 +571,10 @@ pre:hover>div>i.clipboard-icon {
 
 .modular-text h2 {
     margin-top: 0.5rem;
+}
+
+.feature-icon:hover {
+    transform: scale(1.1);
+    animation-duration: 2s;
+    animation-timing-function: linear;
 }
