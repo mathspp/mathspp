@@ -4,9 +4,10 @@ event: "PyCon Lithuania 2024"
 image_align: left
 ---
 
-In this talk I use an example from the Django framework to motivate the need for descriptors in the Python language.
-
+In this talk, I use an example from the Django framework to motivate the need for descriptors in the Python language.
 Then, I proceed to explain the descriptor protocol, tying it to the original motivating example, through a live-coded demonstration.
+
+The objective of the talk is to make sure the audience understands that frameworks (like Django) rely heavily on Python features (like descriptors) to operate their machinery.
 
 ===
 
