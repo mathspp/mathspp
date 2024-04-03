@@ -1,1 +1,1 @@
-# Talks, workshops, and tutorials
+# Talks & tutorials

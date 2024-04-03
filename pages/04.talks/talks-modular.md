@@ -7,6 +7,7 @@ content:
         custom:
           - "_hero"
           - "_invite-me"
+          - "_20240403-hold-my-parentheses"
           - "_20240403-what-are-descriptors-and-why-does-django-need-them"
           - "_20231112-describing-descriptors"
           - "_20231111-elegant-line-of-code"
