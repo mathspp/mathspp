@@ -1,0 +1,16 @@
+date: 03-04-2024
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Explore unusual Python features to solve the problem of determining whether an expression is properly parenthesised."
+    og:image: "https://mathspp.com/blog/hold-my-parentheses/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/hold-my-parentheses/thumbnail.webp"
+slug: "hold-my-parentheses"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - algorithms
+        - apl
+        - programming
+        - python
+title: "Hold my parentheses"
