@@ -9,6 +9,10 @@ given a string representing an expression, how can I determine whether the paren
 
 In the end, we'll end up with two fun lines of code that use features of the Python language that are typically frowned upon!
 
+Dave enjoyed himself and told me:
+
+ > “That was a great lightning talk! Clever, entertaining, thought-provoking, and brief.”
+
 ===
 
 ![](_slide.webp)
