@@ -143,6 +143,30 @@ Thus, looking for a `-1` tells you if the nesting is invalid:
 True
 ```
 
+For the sake of completeness, here is an example where we check the nesting depth of a valid expression:
+
+```pycon
+>>> expression = "(3*(x+y*(z+w)))"
+>>> list(zip(expression, accumulate((c=="(") - (c == ")") for c in expression)))
+[
+    ('(', 1),
+    ('3', 1),
+    ('*', 1),
+    ('(', 2),
+    ('x', 2),
+    ('+', 2),
+    ('y', 2),
+    ('*', 2),
+    ('(', 3),
+    ('z', 3),
+    ('+', 3),
+    ('w', 3),
+    (')', 2),
+    (')', 1),
+    (')', 0)
+]
+```
+
 Putting both checks together, you have to be careful not to try and consume the same generator twice, so we could do something like:
 
 ```py
