@@ -11,7 +11,7 @@ The objective of the talk is to make sure the audience understands that framewor
 
 ===
 
-![](_slide.webp)
+![](_talk.webp)
 
 ===
 
