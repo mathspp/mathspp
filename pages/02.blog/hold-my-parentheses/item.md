@@ -143,7 +143,8 @@ Thus, looking for a `-1` tells you if the nesting is invalid:
 True
 ```
 
-For the sake of completeness, here is an example where we check the nesting depth of a valid expression:
+For the sake of completeness, below is an example where we check the nesting depth of a valid expression.
+Notice how the number increases whenever we find an opening parenthesis and how it decreases whenever we find a closing parenthesis:
 
 ```pycon
 >>> expression = "(3*(x+y*(z+w)))"
