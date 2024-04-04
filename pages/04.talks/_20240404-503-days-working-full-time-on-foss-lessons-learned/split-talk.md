@@ -1,6 +1,6 @@
 ---
 title: "503 days working full-time on FOSS: lessons learned"
-event: "PyCon Ireland 2023"
+event: "PyCon Lithuania 2024"
 image_align: left
 ---
 
