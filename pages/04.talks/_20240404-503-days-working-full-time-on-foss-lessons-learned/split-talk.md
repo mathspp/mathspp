@@ -6,6 +6,13 @@ image_align: left
 
 In this talk I share my experience working on a FOSS project full-time for 503, sharing some of the non-technical lessons I learned along the way.
 
+These lessons fall into 4 broad categories:
+
+ 1. how to get a tech job;
+ 2. how to manage your ego;
+ 3. how to interact with users; and
+ 4. how to work with a big codebase.
+
 ===
 
 ![](_slide.webp)
