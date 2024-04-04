@@ -1,0 +1,15 @@
+date: 04-04-2024
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Explore what Python could look like if we got rid of all of its synthatic sugar."
+    og:image: "https://mathspp.com/blog/hold-my-parentheses-light-now-with-zero-sugar/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/hold-my-parentheses-light-now-with-zero-sugar/thumbnail.webp"
+slug: "hold-my-parentheses-light-now-with-zero-sugar"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - dunder methods
+        - programming
+        - python
+title: "Hold my parentheses light: now with zero sugar"
