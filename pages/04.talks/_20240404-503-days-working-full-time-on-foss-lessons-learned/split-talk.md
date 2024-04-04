@@ -1,25 +1,20 @@
 ---
-title: Describing descriptors
+title: "503 days working full-time on FOSS: lessons learned"
 event: "PyCon Ireland 2023"
-image_align: right
+image_align: left
 ---
 
-In this live-coding talk I wanted to explain how descriptors work by establishing a parallel with properties.
-Although properties _are_ descriptors, this approach is how descriptors clicked for me and I was hoping it would help descriptors click for others as well.
-
-Coming into the talk, I wasn't sure if I should present it as a live-coding demo, but Barry's feedback tells me I made the right choice:
-
- > “Used descriptors before but this [talk] clarified a lot. Live coding is hard to do, but makes it a better experience. Thanks for that.”
+In this talk I share my experience working on a FOSS project full-time for 503, sharing some of the non-technical lessons I learned along the way.
 
 ===
 
-![](_descriptors.webp)
+![](_slide.webp)
 
 ===
 
-[PyCon Ireland 2023](http://pycon.ie/pycon-2023/schedule/), 12-11-2023 • [Main reference](/blog/pydonts/describing-descriptors) • [Backup talk slides][pdf-slides] (low res PDF) • [Online slides][snappify-slides] • [Source code from live demo][source]
+[PyCon Lithuania 2024](https://pycon.lt/2024/schedule/), 04-04-2024 • [Main reference](/blog/503-days-working-full-time-on-foss-lessons-learned) • [Talk slides][pdf-slides] (low res PDF) • [Online slides][snappify-slides]
 
 
-[pdf-slides]: https://github.com/mathspp/talks/blob/main/20231112_pycon_ireland_describing_descriptors/slides.pdf
-[snappify-slides]: https://snappify.com/view/5f6a9340-b95a-4df0-8d3e-4941bceefb38
+[pdf-slides]: https://github.com/mathspp/talks/blob/main/20240404_pycon_lithuania_503_working_on_foss_lessons_learned/slides.pdf
+[snappify-slides]: https://snappify.com/view/dfbc01f5-771f-4ac5-8c03-75131f579e1a
 [source]: https://github.com/mathspp/talks/tree/main/20231112_pycon_ireland_describing_descriptors/descriptors

@@ -7,6 +7,7 @@ content:
         custom:
           - "_hero"
           - "_invite-me"
+          - "_20240404-503-days-working-full-time-on-foss-lessons-learned"
           - "_20240403-hold-my-parentheses"
           - "_20240403-what-are-descriptors-and-why-does-django-need-them"
           - "_20231112-describing-descriptors"

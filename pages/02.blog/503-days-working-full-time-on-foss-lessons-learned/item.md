@@ -85,10 +85,10 @@ Some other times, it would turn out that they hadn't thought of the alternative 
 
 I think the key points here are that
 
- 1. you should ask the question(s) with the assumption that the person whose code your reviewing has a good reason for having done things differently from what you expected; and
+ 1. you should ask the question(s) with the assumption that the person whose code you're reviewing has a good reason for having done things differently from what you expected; and
  2. you shouldn't refrain from asking questions, regardless of how silly or basic they may seem.
 
-Point 1. is important because you don't want the other person to be on the defensive and because you should understand the reasoning behind the author's decisions.
+Point 1. is important because you don't want the other person to feel they're being attacked and because you should understand the reasoning behind the author's decisions.
 Point 2. is important because you want to learn as much as possible... And because some times people just forget about simpler alternatives (even senior developers).
 
 I'm happy to report that I've fully embraced the mindset of asking questions, even when they may sound silly, so exposing my lack of knowledge in certain areas didn't hurt my ego too much...
@@ -319,7 +319,7 @@ I asked around for suggestions on how to handle these situations (when you're im
 
  1. What's best for the developer? – When making design decisions, I should always think about what the people using my code will want and that's what should drive my decisions.
 
- 2. Do due diligence. – Does the code do everything it _should_, or am I just addressing the things that are explicitly mentioned in the issue I'm solving? Following the _spirit_ of the issue, is there anything else I should do?
+ 2. What's the spirit of the issue? – Does the code do everything it _should_, or am I just addressing the things that are explicitly mentioned in the issue I'm solving? Following the _spirit_ of the issue, is there anything else I should do?
 
  3. I take the hit so that the dev doesn't. – I am the one who needs to handle all annoying or difficult edge cases and write the boring code so that the user doesn't have to.
 
