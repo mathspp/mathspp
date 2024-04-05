@@ -27,19 +27,21 @@ For your tutorial to be a tutorial, the audience _must_ participate actively thr
  - solving problems; or
  - something similar to this!
 
-If the audience can sit through your presentation with their arms crossed, you're not presenting a tutorial.
+If the audience can sit through your presentation with their arms crossed, you're not giving a tutorial.
 You're presenting a (long) talk.
 Please, don't do this.
 
-If you're giving a tutorial, it's fine to show a couple of slides.
+If you're giving a tutorial, it's fine to show a couple of slides to get everyone up to speed.
 But the point of a tutorial is to give hands-on experience to the audience.
 
 ## FAQ
 
  1. Q: But my tutorial covers very advanced material that the audience won't be able to keep up with...
- A: Make it less complex. No one said giving a good tutorial is easy!
+
+A: Make it less complex. No one said giving a good tutorial is easy!
 
  2. Q: But I don't have a lot of time.
- A: Make it shorter. No one said giving a good tutorial is easy!
+
+A: Make it shorter. No one said giving a good tutorial is easy!
 
 If you have any more questions, feel free to drop them below and I'll add them to this FAQ.
