@@ -15,7 +15,8 @@ I've seen it all.
 Why do talk speakers sometimes ask questions to the audience?
 Why do talk speakers sometimes make jokes during their talks?
 Because they don't want their talk to be boring and they want to engage with the audience.
-And this is in a talk.
+
+In tutorials, the levels of engagement have to be greater than this.
 
 If you're giving a tutorial, you're not supposed to spend all of your time talking, showing slides, or shuffling code around.
 It's also _not enough_ to do live coding.
