@@ -1,0 +1,13 @@
+date: 05-04-2024
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "In this opinion piece the author expresses his views on what makes a good (Python) tutorial and how that differs from a long talk."
+    og:image: "https://mathspp.com/blog/a-tutorial-is-not-a-long-talk/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/a-tutorial-is-not-a-long-talk/thumbnail.webp"
+slug: "a-tutorial-is-not-a-long-talk"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - opinion
+title: "A tutorial is not a long talk"

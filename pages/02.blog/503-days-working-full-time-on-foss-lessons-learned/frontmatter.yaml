@@ -9,5 +9,7 @@ taxonomy:
     category:
         - blogpost
     tag:
+        - open source
+        - opinion
         - python
 title: "503 days working full-time on FOSS: lessons learned"
