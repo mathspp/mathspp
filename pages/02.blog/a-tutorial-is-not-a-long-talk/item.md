@@ -36,12 +36,8 @@ But the point of a tutorial is to give hands-on experience to the audience.
 
 ## FAQ
 
- 1. Q: But my tutorial covers very advanced material that the audience won't be able to keep up with...
+ 1. Q: But my tutorial covers very advanced material that the audience won't be able to keep up with... A: Make it less complex. No one said giving a good tutorial is easy!
 
-A: Make it less complex. No one said giving a good tutorial is easy!
-
- 2. Q: But I don't have a lot of time.
-
-A: Make it shorter. No one said giving a good tutorial is easy!
+ 2. Q: But I don't have a lot of time. A: Make it shorter. No one said giving a good tutorial is easy!
 
 If you have any more questions, feel free to drop them below and I'll add them to this FAQ.
