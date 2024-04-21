@@ -14,5 +14,6 @@ metadata:
     description: "Colophon for the mathspp website."
     og:title: "About"
     title: About
+onpage_menu: false
 title: About
 ---
