@@ -1,9 +1,8 @@
 ---
-title: Education
+title: Training
+hero_classes: "parallax text-light hero-large overlay-dark-gradient" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
+hero_image: hero.webp
 ---
 
-## Sharing knowledge on
+# Training
 
-# mathematics & programming
-
-## + <i class="far fa-user"></i> 1200 &nbsp;&nbsp; + <i class="far fa-clock"></i> 70h
