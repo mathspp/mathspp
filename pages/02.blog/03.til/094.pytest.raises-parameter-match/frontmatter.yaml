@@ -1,0 +1,20 @@
+date: 22-04-2024 16:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned about the parameter `match` used in `pytest.raises`."
+    og:image: https://mathspp.com/blog/til/pytest.raises-parameter-match/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/pytest.raises-parameter-match/thumbnail.webp
+references:
+    - "pytest docs, [https://docs.pytest.org/en/8.0.x/reference/reference.html#pytest.raises](https://docs.pytest.org/en/8.0.x/reference/reference.html#pytest.raises) [last accessed 22-04-2024];"
+routes:
+    aliases:
+        - "/blog/til/094"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+        - modules
+        - programming
+        - pytest
+        - python
+title: "TIL #094 – pytest.raises: parameter match"
+visible: false
