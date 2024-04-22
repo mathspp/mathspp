@@ -2,8 +2,8 @@ date: 22-04-2024 17:00
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned how to use named tuples to improve readability and flexibility of test parametrisations in pytest."
-    og:image: https://mathspp.com/blog/til/pytest.raises-parameter-match/thumbnail.webp
-    twitter:image: https://mathspp.com/blog/til/pytest.raises-parameter-match/thumbnail.webp
+    og:image: https://mathspp.com/blog/til/better-test-parametrisation-in-pytest/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/better-test-parametrisation-in-pytest/thumbnail.webp
 references:
     - "“pytest tips and tricks for a better testsuite” PyCon DE 2024 tutorial, [https://github.com/The-Compiler/pytest-tips-and-tricks](https://github.com/The-Compiler/pytest-tips-and-tricks) [last accessed 22-04-2024];"
 routes:
