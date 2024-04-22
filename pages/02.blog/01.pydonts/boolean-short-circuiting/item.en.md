@@ -412,7 +412,7 @@ def create_txt_file(filename):
 ```
 
 This means that, whenever `filename` does not respect the `.txt`
-format, the function can exist right away and doesn't even
+format, the function can exit right away and doesn't even
 need to bother the operating system with asking if the file
 exists or not.
 

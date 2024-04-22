@@ -125,7 +125,7 @@ All three functions above behave in the same way.
 
 ## C-style formatting
 
-The C-style formatting, which is the one that has been around the longer,
+The C-style formatting, which is the one that has been around the longest,
 is characterised by a series of percent signs (`"%"`) that show up in the template strings.
 
 (By “template strings”, I mean the strings in which we want to fill in the gaps.)
