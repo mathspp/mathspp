@@ -1,22 +1,22 @@
-date: 22-04-2024 16:00
+date: 22-04-2024 17:00
 metadata:
     author: Rodrigo Girão Serrão
-    description: "Today I learned about the parameter `match` used in `pytest.raises`."
+    description: "Today I learned how to use named tuples to improve readability and flexibility of test parametrisations in pytest."
     og:image: https://mathspp.com/blog/til/pytest.raises-parameter-match/thumbnail.webp
     twitter:image: https://mathspp.com/blog/til/pytest.raises-parameter-match/thumbnail.webp
 references:
-    - "pytest docs, [https://docs.pytest.org/en/8.0.x/reference/reference.html#pytest.raises](https://docs.pytest.org/en/8.0.x/reference/reference.html#pytest.raises) [last accessed 22-04-2024];"
     - "“pytest tips and tricks for a better testsuite” PyCon DE 2024 tutorial, [https://github.com/The-Compiler/pytest-tips-and-tricks](https://github.com/The-Compiler/pytest-tips-and-tricks) [last accessed 22-04-2024];"
 routes:
     aliases:
-        - "/blog/til/094"
+        - "/blog/til/095"
 taxonomy:
     category: [blogpost, til]
     tag:
         - modules
+        - productivity
         - programming
         - pytest
         - python
         - testing
-title: "TIL #094 – pytest.raises: parameter match"
+title: "TIL #095 – better test parametrisation in pytest"
 visible: false

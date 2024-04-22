@@ -5,7 +5,7 @@ Today I learned about the parameter `match` used in `pytest.raises`.
 
 # `pytest.raises`: parameter `match`
 
-Today I attended a [`pytest` tutorial](https://pretalx.com/pyconde-pydata-2024/talk/DSFWRC/) at [PyCon DE 2024](https://2024.pycon.de) and very early in the tutorial I learned about the parameter `match` that you can use with `pytest.raises`.
+Today I attended a [pytest tutorial](https://pretalx.com/pyconde-pydata-2024/talk/DSFWRC/) at [PyCon DE 2024](https://2024.pycon.de) and very early in the tutorial I learned about the parameter `match` that you can use with `pytest.raises`.
 
 The parameter `match` accepts a regex pattern that is tested against the error message and your test only passes if the error message matches the regex.
 
