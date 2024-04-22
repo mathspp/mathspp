@@ -83,7 +83,7 @@ class TestCaseParam(NamedTuple):
     flag2: bool = False
 
 @pytest.mark.parametrize(
-    ["a", "b", "op", "result", "flag1", "flag2"],
+    ["tc"],
     [
         TestCaseParam(10, 15, "+", 25),
         TestCaseParam(10, 15, "-", -5),
