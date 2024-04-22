@@ -19,7 +19,7 @@ def has_balanced_parens(expression):
         elif char == ")":
             depth -= 1
             if depth < 0:
-                return 0
+                return False
     return depth == 0
 ```
 
@@ -37,7 +37,7 @@ def has_balanced_parens(expression):
         elif char == ")":
             depth = int.__sub__(depth, 1)
             if depth < 0:
-                return 0
+                return False
     return depth == 0
 ```
 
@@ -56,7 +56,7 @@ def has_balanced_parens(expression):
         if str.__eq__(char, ")"):
             depth = int.__sub__(depth, 1)
             if int.__lt__(depth, 0):
-                return 0
+                return False
     return int.__eq__(depth, 0)
 ```
 
@@ -71,12 +71,13 @@ def has_balanced_parens(expression):
         depth = int.__add__(depth, str.__eq__(char, "("))
         depth = int.__sub__(depth, str.__eq__(char, ")"))
         if int.__lt__(depth, 0):
-            return 0
+            return False
     return int.__eq__(depth, 0)
 ```
 
 `if` statements are not really syntactic sugar in Python, but we could definitely get rid of those two.
-To conclude, we can get rid of the `for` loop because that's just a `while` loop with extra steps:
+To conclude, we can get rid of the `for` loop because that's just a `while` loop with extra steps.
+And while we're at it, let us replace Booleans with the actual integers they represent:
 
 ```py
 def has_balanced_parens(expression):
