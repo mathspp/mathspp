@@ -12,7 +12,9 @@ routes:
 taxonomy:
     category: [blogpost, til]
     tag:
+      - modules
       - programming
+      - pytest
       - python
 title: "TIL #063 – skip tests on Microsoft Windows"
 visible: false
