@@ -13,6 +13,11 @@ These lessons fall into 4 broad categories:
  3. how to interact with users; and
  4. how to work with a big codebase.
 
+Attendees were fond of the stories I shared and my openness.
+In fact, Oleh said that
+
+ > “[I particularly enjoyed the] Direct and open speech.”
+
 ===
 
 ![](_slide.webp)
