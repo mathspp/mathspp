@@ -4,7 +4,7 @@ event: "PyCon Lithuania 2024"
 image_align: left
 ---
 
-In this talk I share my experience working on a FOSS project full-time for 503, sharing some of the non-technical lessons I learned along the way.
+In this talk I share my experience working on a FOSS project full-time for 503 days, sharing some of the non-technical lessons I learned along the way.
 
 These lessons fall into 4 broad categories:
 
