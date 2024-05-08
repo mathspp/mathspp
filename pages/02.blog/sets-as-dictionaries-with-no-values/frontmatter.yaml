@@ -1,0 +1,15 @@
+date: 08-05-2024
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This article shows how to implement the set built-in at the expense of a dictionary."
+    og:image: "https://mathspp.com/blog/sets-as-dictionaries-with-no-values/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/sets-as-dictionaries-with-no-values/thumbnail.webp"
+slug: "sets-as-dictionaries-with-no-values"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - dunder methods
+        - programming
+        - python
+title: Sets as dictionaries with no values
