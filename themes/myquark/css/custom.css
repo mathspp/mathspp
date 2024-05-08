@@ -231,8 +231,9 @@ label {
 /* Justify the text of paragraphs inside the body,
     exclude the ones in the footer section, in the hero sections,
     the "feature" texts under icons in the workshops page,
-    and elements specifically aligned to the centre. */
-body p:not(#footer p, .hero p, .feature-content p, .text-center) {
+    elements specifically aligned to the centre,
+    and paragraphs inside divs where we specifically want centre alignment. */
+body p:not(#footer p, .hero p, .feature-content p, .text-center, div.text-center p) {
     text-align: justify;
 }
 
