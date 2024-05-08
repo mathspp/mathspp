@@ -11,7 +11,7 @@ The objective of the talk is to make sure the audience understands that framewor
 
 ===
 
-![](_talk.webp)
+<iframe width="100%" style="aspect-ratio: 560/315" src="https://www.youtube.com/embed/peJsoZ19sZw" title="What are descriptors and why does Django need them by Rodrigo Girão Serrão at PyCon Lithuania 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ===
 

@@ -20,7 +20,7 @@ In fact, Oleh said that
 
 ===
 
-![](_slide.webp)
+<iframe width="100%" style="aspect-ratio: 560/315" src="https://www.youtube.com/embed/B3SZ9DJvSOc" title="503 days working full-time on FOSS: lessons learned by Rodrigo Girão Serrão at PyCon Lithuania 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ===
 
