@@ -36,7 +36,7 @@ import pandas as pd
 
 Importing pandas as `pd` is a common abbreviation, since you'll be using pandas a lot.
 
-Then, the best way to start is to grab some data ([the file `pokemon.csv`](pokemon.csv){download=pokemon.csv}) and load it in with the function `read_csv`:
+Then, the best way to start is to grab some data ([the file `pokemon.csv`](pokemon.csv?download=pokemon.csv)) and load it in with the function `read_csv`:
 
 ```python
 pokemon = pd.read_csv("pokemon.csv")
