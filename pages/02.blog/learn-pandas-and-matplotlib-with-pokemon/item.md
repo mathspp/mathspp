@@ -11,7 +11,7 @@ We'll also use matplotlib to learn about line and bar plots, scatter plots, and 
 
 By the time you're done with this tutorial, you'll know enough to get started with pandas on your own data science projects, you'll be able to use matplotlib to create publication-ready plots, and as a byproduct you will have learned a bit more about Pokémon.
 
-You can also [download the notebook](analysis.ipynb) if you want to have an easier time testing the code I'm showing and [be sure to download the data we'll be using](pokemon.csv?download=pokemon.csv)!
+You can also [download the notebook](analysis.ipynb) if you want to have an easier time testing the code I'm showing and [be sure to download the data we'll be using](https://github.com/mathspp/mathspp/blob/master/pages/02.blog/learn-pandas-and-matplotlib-with-pokemon/pokemon.csv?download=pokemon.csv)!
 
 ## Objectives
 
@@ -22,8 +22,8 @@ You'll learn:
  - how pandas handles data types and how those differ from the built-in Python types;
  - what a pandas series is;
  - what a pandas dataframe is;
- - how to manipulate columns of a dataframe;
- - how broadcasting works and
+ - how to manipulate columns of a dataframe; and
+ - what broadcasting is and how it works.
 
 ## Setup
 
@@ -6027,7 +6027,7 @@ ax.set_xlabel("Count")
 ## Scatter plots
 
 We can also create scatter plots, which let you distribute all of your data on a 2D referential.
-You'll typicall use scatter plots with two continuous variables.
+You'll typically use scatter plots with two continuous variables.
 For example, in the plot below we'll investigate if there seems to be a relationship between the stats “attack” and “special attack” of Pokémon:
 
 ```python
