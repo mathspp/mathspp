@@ -11,7 +11,7 @@ We'll also use matplotlib to learn about line and bar plots, scatter plots, and 
 
 By the time you're done with this tutorial, you'll know enough to get started with pandas on your own data science projects, you'll be able to use matplotlib to create publication-ready plots, and as a byproduct you will have learned a bit more about Pokémon.
 
-You can also [download the notebook](analysis.ipynb) if you want to have an easier time testing the code I'm showing and [be sure to download the data we'll be using](https://raw.githubusercontent.com/mathspp/mathspp/master/pages/02.blog/learn-pandas-and-matplotlib-with-pokemon/pokemon.csv?download=pokemon.csv)!
+You can also [download the notebook](analysis.ipynb) if you want to have an easier time testing the code I'm showing and [be sure to download the data we'll be using](https://github.com/mathspp/mathspp/blob/master/pages/02.blog/learn-pandas-and-matplotlib-with-pokemon/pokemon.csv)!
 
 ## Objectives
 
@@ -36,7 +36,7 @@ import pandas as pd
 
 Importing pandas as `pd` is a common abbreviation, since you'll be using pandas a lot.
 
-Then, the best way to start is to grab some data ([the file `pokemon.csv`](pokemon.csv?download=pokemon.csv)) and load it in with the function `read_csv`:
+Then, the best way to start is to grab some data ([the file `pokemon.csv`](https://github.com/mathspp/mathspp/blob/master/pages/02.blog/learn-pandas-and-matplotlib-with-pokemon/pokemon.csv)) and load it in with the function `read_csv`:
 
 ```python
 pokemon = pd.read_csv("pokemon.csv")
