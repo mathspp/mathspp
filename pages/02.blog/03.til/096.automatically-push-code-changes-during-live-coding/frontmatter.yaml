@@ -1,0 +1,20 @@
+date: 12-05-2024
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to automatically push code changes while I'm doing live coding, for example while teaching."
+    og:image: https://mathspp.com/blog/til/automatically-push-code-changes-during-live-coding/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/automatically-push-code-changes-during-live-coding/thumbnail.webp
+references:
+    - "GitPython documentation, [https://gitpython.readthedocs.io/en/stable/](https://gitpython.readthedocs.io/en/stable/) [last accessed 10-05-2024];"
+routes:
+    aliases:
+        - "/blog/til/096"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+        - git
+        - modules
+        - productivity
+        - programming
+title: "TIL #096 – automatically push code changes during live coding"
+visible: false
