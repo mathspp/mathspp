@@ -1,4 +1,5 @@
-import string, time
+import string
+import time
 
 
 class Automaton:

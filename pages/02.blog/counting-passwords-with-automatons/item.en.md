@@ -692,7 +692,8 @@ passwords that have length between 8 and 10, that contain at least
 one lowercase letter, one uppercase letter, and one digit:
 
 ```py
-import string, time
+import string
+import time
 
 
 class Automaton:
