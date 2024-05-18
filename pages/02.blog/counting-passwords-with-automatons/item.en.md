@@ -203,7 +203,7 @@ to the state $(2, 1, 1)$ in our automaton?
 
 The answer corresponds to walking two different paths in our automaton:
 
-![](_walking_automaton.svg "Highlighting of the paths between $(2, 0, 0)$ and $(2, 1, 1)$.")
+![](_walking_automaton.svg "Highlighting of the paths between (2, 0, 0) and (2, 1, 1).")
 
 To go from $(2, 0, 0)$ to $(2, 1, 1)$ we can do one of two things:
 
@@ -330,7 +330,7 @@ For the generic automaton, here is what we need:
 
 Recall the first figure we showed with triples as states?
 
-![](_triples_automaton.svg "The states $(2, 0, 0)$, $(3, 0, 0)$, $(2, 1, 0)$ and $(2, 0, 1)$, connected with three arrows.")
+![](_triples_automaton.svg "The states (2, 0, 0), (3, 0, 0), (2, 1, 0) and (2, 0, 1), connected with three arrows.")
 
 As an example, here is the dictionary holding the state transitions,
 as we just described, in Python:
@@ -424,13 +424,10 @@ class Automaton:
 ## Branching recursion
 
 However, we should be careful!
-If you have been reading my [Pydon'ts (Python coding tips)][pydonts]
-then you should know you have to [watch out for recursion][pydont-recursion].
-In particular, because we have many arrows that can end up in the same place,
-we have a case of [branching recursion][pydont-recursion-branching]
-at hands
-(think of the recursion that happens when you compute the Fibonacci
-sequence: you end up recomputing many values).
+This problem lends itself to recursion but we should aways [watch out for recursion][pydont-recursion].
+Because we have many arrows that can end up in the same place,
+we have a case of [overlapping branching recursion][pydont-recursion-branching]
+at hands.
 Because we want our code to be efficient, what we can do is cache
 the results as we go along.
 This will be the difference between the code running instantaneously
@@ -497,6 +494,8 @@ to create an `Automaton` instance and then call the function
 that does the heavy lifting for us:
 
 ```py
+# ...
+
 if __name__ == "__main__":
     transitions = {
         0: [("ab", 1)],
@@ -619,13 +618,13 @@ Here is an example usage, building the basic transitions
 for the really short passwords with only "ab" as characters:
 
 ```py
->>> generate_state_transitions(["ab"], 3)                      
+>>> generate_state_transitions(["ab"], 3)
 {(0,): [('ab', (1,))], (1,): [('ab', (2,))], (2,): [('ab', (3,))], (3,): []}
 ```
 
 If you reformat that dictionary, you get
 
-```py              
+```py
 {
     (0,): [('ab', (1,))],
     (1,): [('ab', (2,))],
@@ -694,10 +693,39 @@ one lowercase letter, one uppercase letter, and one digit:
 
 ```py
 import string, time
-from automaton import Automaton
+
+
+class Automaton:
+    """Class that represents a finite state automaton."""
+
+    def __init__(self, state_transitions, terminal_states):
+        """Initialises a finite state automaton.
+
+        `state_transitions` is a dictionary representing the state transitions
+        and `terminal_states` is a container that holds all the terminal states.
+        """
+
+        self._state_transitions = state_transitions
+        self._terminal_states = terminal_states
+        self._count_terminal_paths_cache = {}
+
+    def is_terminal(self, state):
+        """Returns whether `state` is a terminal state for the automaton or not."""
+        return state in self._terminal_states
+
+    def count_terminal_paths(self, state):
+        """Counts how many paths go from `state` to any terminal state."""
+        if state not in self._count_terminal_paths_cache:
+            acc = int(self.is_terminal(state))
+            for actions, next_state in self._state_transitions.get(state, []):
+                acc += len(actions) * self.count_terminal_paths(next_state)
+            self._count_terminal_paths_cache[state] = acc
+        return self._count_terminal_paths_cache[state]
+
 
 def generate_next_pwd_states(s):
-    return [s[:i] + (num+1,) + s[i+1:] for i, num in enumerate(s)]
+    return [s[:i] + (num + 1,) + s[i + 1 :] for i, num in enumerate(s)]
+
 
 def generate_state_transitions(classes, max_length):
     queue = [(0,) * len(classes)]
@@ -715,6 +743,7 @@ def generate_state_transitions(classes, max_length):
                 queue.append(state_)
 
     return state_transitions
+
 
 def gather_terminal_states(state_transitions, is_valid_pwd):
     return [s for s in state_transitions if is_valid_pwd(s)]
@@ -735,10 +764,10 @@ if __name__ == "__main__":
     terminal_states = gather_terminal_states(state_transitions, is_valid_pwd)
 
     automaton = Automaton(state_transitions, terminal_states)
-    start = time.time()
+    start = time.perf_counter()
     print(automaton.count_terminal_paths((0,) * len(classes)))
-    elapsed = time.time() - start
-    print(f"Counted in {round(elapsed, 3)}s.")
+    elapsed = time.perf_counter() - start
+    print(f"Counted in {elapsed:.6f}s.")
 ```
 
 This script produces the following output for me:
@@ -746,12 +775,12 @@ This script produces the following output for me:
 ```
  > python .\count_passwords.py
 698438863898480640
-Counted in 0.004s.
+Counted in 0.000436s.
 ```
 
 Pretty impressive, hun?
-From 22 years down to 0.004 seconds.
-That is a speed-up by a factor of more or less a 173.4 **billion**!
+From 22 years down to 0.0004 seconds.
+That is a speed-up by a factor of more or less a 1.7 **trillion**!
 
 ## Checking the correctness
 
@@ -804,13 +833,13 @@ if __name__ == "__main__":
     terminal_states = gather_terminal_states(state_transitions, is_valid_pwd)
 
     automaton = Automaton(state_transitions, terminal_states)
-    start = time.time()
+    start = time.perf_counter()
     print(automaton.count_terminal_paths((0,) * len(classes)))
-    elapsed = time.time() - start
-    print(f"Counted in {round(elapsed, 4)}s.")
+    elapsed = time.perf_counter() - start
+    print(f"Counted in {elapsed:.6f}s.")
 ```
 
-Notice that I have know broken up the `is_valid_pwd`
+Notice that I have now broken up the `is_valid_pwd`
 function into a series of smaller predicates,
 so that it becomes even easier to count
 different types of passwords.
@@ -825,7 +854,7 @@ Running this gives
 ```
  > python .\count_passwords.py 
 2684483063360
-Counted in 0.0013s.
+Counted in 0.000040s.
 ```
 
 With these two checks I am fairly confident that the code is
