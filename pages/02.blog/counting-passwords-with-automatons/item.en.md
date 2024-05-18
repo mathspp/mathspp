@@ -67,7 +67,7 @@ You can ask the computer to generate all possible combinations of letters/digits
 and then only count the ones that are valid passwords.
 This would work, right?
 Yeah, it would work, but it would take you
-[a little over 27 years](https://www.wolframalpha.com/input/?i=%2862%5E8+%2B+62%5E9+%2B+62%5E10%29%2F%281000000000%29+seconds+to+years)
+[a little over 27 years](https://www.wolframalpha.com/input?i=%2862%5E8%20%2B%2062%5E9%20%2B%2062%5E10%29%2F%281000000000%29%20seconds%20to%20years)
 _IF_ your computer could list 1 billion such combinations per second,
 which is faster than most home computers (if not all!).
 This shows that the simpler methods will not work, and we need to be smarter about it.
@@ -76,7 +76,7 @@ The next step in your thinking process might be the same as mine:
 ok, instead of generating _all_ possible combinations, let's just
 generate _all_ the passwords.
 Ok, that is indeed much less, and now it would take
-[only 22 years](https://www.wolframalpha.com/input/?i=698438863898480640%2F1000000000+seconds+to+years),
+[only 22 years](https://www.wolframalpha.com/input/?i=698438863898480640%2F1000000000%20seconds%20to%20years),
 which means we just saved 5 years!
 Good job!
 Although, I should mention that in order to save these 5 years you would
