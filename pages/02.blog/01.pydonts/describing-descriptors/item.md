@@ -655,7 +655,15 @@ With our descriptor, we will be able to get and set the value of our attribute, 
 This is what it will look like:
 
 ```pycon
-demo
+c = C()
+c.x = 1
+c.x = 2
+c.x = 73
+print(c.x.value)    # 73
+print(c.x.history)  # [1, 2]
+c.x.undo()
+print(c.x.value)    # 2
+print(c.x.history)  # [1]
 ```
 
 First, we determine that for an attribute `x`, we are going to store the current value in the attribute `_x` and the history of that value in the attribute `_x_history`.
