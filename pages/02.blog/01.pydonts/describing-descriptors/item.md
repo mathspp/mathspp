@@ -654,7 +654,7 @@ With our descriptor, we will be able to get and set the value of our attribute, 
 
 This is what it will look like:
 
-```pycon
+```py
 c = C()
 c.x = 1
 c.x = 2
