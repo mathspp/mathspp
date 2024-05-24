@@ -1,0 +1,18 @@
+date: 24-05-2024 12:30
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Using ASCII characters we can create a simple rain animation in the terminal."
+    og:image: "https://mathspp.com/blog/ascii-rain-scroll-art/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/ascii-rain-scroll-art/thumbnail.webp"
+references:
+    - "The Scroll Art Museum, [https://scrollart.org](https://scrollart.org)"
+slug: "ascii-rain-scroll-art"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - programming
+        - python
+        - scroll art
+        - visualisation
+title: ASCII rain scroll art
