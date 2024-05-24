@@ -1,0 +1,19 @@
+date: 24-05-2024 12:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to get the size of the terminal your code is running on."
+    og:image: https://mathspp.com/blog/til/get-terminal-size/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/get-terminal-size/thumbnail.webp
+references:
+    - "Python 3 Docs, `shutil` module, [https://docs.python.org/3/library/shutil.html#shutil.get_terminal_size](https://docs.python.org/3/library/shutil.html#shutil.get_terminal_size) [last accessed 24-05-2024]"
+    - "Python 3 Docs, `os` module, [https://docs.python.org/3/library/os.html#os.get_terminal_size](https://docs.python.org/3/library/os.html#os.get_terminal_size) [last accessed 24-05-2024]"
+routes:
+    aliases:
+        - "/blog/til/097"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+        - programming
+        - python
+title: "TIL #097 – get terminal size"
+visible: false
