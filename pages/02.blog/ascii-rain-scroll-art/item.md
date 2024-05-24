@@ -7,7 +7,7 @@ Using ASCII characters we can create a simple rain animation in the terminal.
 “Scroll art” is a term I've heard used to refer to images or animations made out of ASCII characters.
 In this short article we'll go over the code necessary to create this raining animation:
 
-[An animation of random characters falling from the screen.](_ascii_scroll_art_rain.gif "Rain scroll art animation.")
+![An animation of random characters falling from the screen.](_ascii_scroll_art_rain.gif "Rain scroll art animation.")
 
 This animation runs on the terminal and only requires using the built-in `print`.
 
