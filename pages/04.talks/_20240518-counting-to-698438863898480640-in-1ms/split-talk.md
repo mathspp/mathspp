@@ -1,5 +1,5 @@
 ---
-title: "Counting to 698,438,863,898,480,640 in <1ms ⚡️"
+title: "Counting to 698,438,863,898,480,640 in &lt;1ms ⚡️"
 event: "PyCon US 2024"
 image_align: right
 ---
