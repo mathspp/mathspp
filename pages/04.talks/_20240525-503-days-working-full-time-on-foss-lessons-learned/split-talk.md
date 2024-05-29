@@ -10,7 +10,7 @@ Because the talk slot was longer than the two previous iterations, I managed to 
 
 ===
 
-!()[_talk.webp]
+![](_talk.webp)
 
 ===
 
