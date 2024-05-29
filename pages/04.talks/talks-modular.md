@@ -7,6 +7,7 @@ content:
         custom:
           - "_hero"
           - "_invite-me"
+          - "_20240518-counting-to-698438863898480640-in-1ms"
           - "_20240515-the-pokemon-trainers-guide-to-pandas-and-matplotlib"
           - "_20240424-525-days-working-full-time-on-foss-lessons-learned"
           - "_20240404-503-days-working-full-time-on-foss-lessons-learned"
