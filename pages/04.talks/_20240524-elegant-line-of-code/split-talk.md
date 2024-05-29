@@ -5,6 +5,7 @@ image_align: right
 ---
 
 In this lighthearted lightning talk I showed how to refactor a perfectly reasonable piece of code into an absolute masterpiece.
+
 In this reprise of the lightning talk I first presented at PyCon Ireland 2023, I had to wear a special pair of glasses and present if I were a thug.
 I failed miserably but everyone got a good laugh out of it, so it ended up being a success!
 
