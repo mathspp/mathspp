@@ -16,4 +16,4 @@ The enthusiastic nods while I was presenting and the feedback afterwards lead me
 
 ===
 
-PyCon Italy 2024, 23-05-2024 • [Main reference](https://mathspp.com/books/pydonts)
+[PyCon Italy 2024](https://2024.pycon.it/en/event/descriptors-made-easy), 23-05-2024 • [Main reference](https://mathspp.com/books/pydonts)

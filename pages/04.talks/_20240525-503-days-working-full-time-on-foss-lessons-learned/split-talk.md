@@ -14,7 +14,7 @@ Because the talk slot was longer than the two previous iterations, I managed to 
 
 ===
 
-PyCon Italy 2024, 25-05-2024 • [Main reference](https://mathspp.com/blog/503-days-working-full-time-on-foss-lessons-learned) • [Talk slides][pdf-slides] (low res PDF) • [Online slides][snappify-slides]
+[PyCon Italy 2024](https://2024.pycon.it/en/event/503-days-working-full-time-on-foss-lessons-learned), 25-05-2024 • [Main reference](https://mathspp.com/blog/503-days-working-full-time-on-foss-lessons-learned) • [Talk slides][pdf-slides] (low res PDF) • [Online slides][snappify-slides]
 
 
 [pdf-slides]: https://github.com/mathspp/talks/blob/main/20240525_pycon-italy-503-days-working-full-time-on-foss-lessons-learned/slides.pdf
