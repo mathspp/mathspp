@@ -1,6 +1,6 @@
 ---
 title: "Elegant (line of) code ⚡️"
-event: "PyCon US 2024"
+event: "PyCon Italy 2024"
 image_align: right
 ---
 
