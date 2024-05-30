@@ -9,7 +9,9 @@ In this article we use (finite state) automatons to count
 
 ===
 
-# Counting is easy
+# Counting passwords with automatons
+
+## Counting is easy
 
 At one point or another in your maths education you were asked all
 sorts of “how many are there” questions, like
@@ -56,7 +58,7 @@ like
  and one digit?_”
 
 
-# Counting is hard
+## Counting is hard
 
 Well, everyone knows the answer to the previous question is 698,438,863,898,480,640,
 but how do you tell a computer to count those up?
@@ -84,7 +86,7 @@ have to write a computer program that is more complex,
 because now we wouldn't want to blindly list all combinations of characters.
 
 
-# Inclusion-exclusion principle
+## Inclusion-exclusion principle
 
 If you actually had to solve this specific problem, or a similar one,
 with pen and paper, you would probably resort to the [inclusion-exclusion principle][wiki-iep],
@@ -102,7 +104,7 @@ Either way, the inclusion-exclusion principle becomes very ugly very fast,
 and I believe it would result in a less elegant program, or a less flexible one.
 
 
-# Finite-state machines
+## Finite-state machines
 
 If we are not going to implement the inclusion-exclusion principle, then what are we doing?
 Automatons to the rescue!
@@ -133,7 +135,7 @@ with labels "uppercase", "digit", and "lowercase", respectively,
 indicating the type of character we just added to our password.
 
 
-## Generalising the states
+### Generalising the states
 
 This is similar to what we want to build,
 except we do not want the circles to reflect the exact characters we have
@@ -176,7 +178,7 @@ assuming you start in the state that is on the lower-left corner of the figure.
 Slightly greyed out are other states that would come up in later stages.
 
 
-## Length of the password
+### Length of the password
 
 It is important to note that in this new representation
 of the states, in order to figure out the length of the password
@@ -186,7 +188,7 @@ $2 + 3 + 4 = 9$, that contain 2 lowercase letters,
 3 uppercase letters, and 4 digits.
 
 
-## Counting paths
+### Counting paths
 
 If the states represent the structure of our passwords, if the arrows
 represent the action of "adding a character", and if what we want is to
@@ -215,7 +217,7 @@ we can then use a simple algorithm to walk the automaton and figure out how many
 there are to build a password.
 
 
-## Path multipliers
+### Path multipliers
 
 Now, walking the automaton only tells you in how many ways you can add different
 types of characters to your password.
@@ -257,7 +259,7 @@ instead of having to collect all the structural information to
 perform the calculations later.
 
 
-## Terminal states
+### Terminal states
 
 There is just one final thing we need to go over before
 being able to actually implement this algorithm,
@@ -286,7 +288,7 @@ but is easier to work with in our case,
 so we aren't cheating _that_ much.
 
 
-# Implementation
+## Implementation
 
 !!! All the code is available [in this GitHub repository][gh-repo].
 
@@ -300,7 +302,7 @@ If something wasn't clear, feel free to ask for clarifications
 in the comments below.
 
 
-## Separation of concerns
+### Separation of concerns
 
 If you want an extra push, I'll leave an overview of the code
 we will be writing.
@@ -313,7 +315,7 @@ We will divide things into two separate programs:
  restrictions of the passwords we want to count.
 
 
-## Automaton
+### Automaton
 
 For the generic automaton, here is what we need:
 
@@ -388,7 +390,7 @@ class Automaton:
         pass
 ```
 
-## Counting paths
+### Counting paths
 
 In order to count paths, all we need to do is traverse the automaton.
 If you paid enough attention and are familiarised with graph algorithms,
@@ -421,7 +423,7 @@ class Automaton:
 ```
 
 
-## Branching recursion
+### Branching recursion
 
 However, we should be careful!
 This problem lends itself to recursion but we should aways [watch out for recursion][pydont-recursion].
@@ -458,7 +460,7 @@ class Automaton:
 ```
 
 
-## Testing the automaton
+### Testing the automaton
 
 We can take this function for a very simple test-drive.
 Let us use this class to count the number of passwords of length
@@ -520,7 +522,7 @@ thousands of states).
 Let's go ahead and create an empty script that will import
 our `Automaton` class and count passwords.
 
-## Next possible states
+### Next possible states
 
 Given the state $(2, 0, 0)$, what are the next possible states
 for our password?
@@ -547,7 +549,7 @@ In other words, how do we build the dictionary that represents
 the states and how to move between them?
 
 
-## Building the state transitions
+### Building the state transitions
 
 The answer: write a function!
 
@@ -642,7 +644,7 @@ identifying the terminal states before we can instantiate
 our `Automaton` class.
 
 
-## Identifying terminal states
+### Identifying terminal states
 
 What we have to do now is traverse the dictionary that tells
 us how the state transitions work and collect all
@@ -684,7 +686,7 @@ def gather_terminal_states(state_transitions, is_valid_pwd):
 ```
 
 
-# Counting passwords
+## Counting passwords
 
 With all the code that we have written (which isn't that much,
 to be honest) we can now count all the 698,438,863,898,480,640
@@ -783,7 +785,7 @@ Pretty impressive, hun?
 From 22 years down to 0.0004 seconds.
 That is a speed-up by a factor of more or less a 1.7 **trillion**!
 
-## Checking the correctness
+### Checking the correctness
 
 This is pretty impressive, but at this point
 I wouldn't be able to tell if my program was counting correctly
@@ -862,7 +864,7 @@ With these two checks I am fairly confident that the code is
 good to go.
 
 
-# Load test
+## Load test
 
 For our final load test, we want to see how many different
 passwords there are with lengths between 8 and 20,
@@ -901,21 +903,17 @@ and that produces
 Counted in 1.2325s.
 ```
 
-I can't read that number, but [I'm told](https://www.wolframalpha.com/input/?i=2613279260982103214130338931095048847360+in+words)
+I can't read that number, but [I'm told](https://www.wolframalpha.com/input/?i=2613279260982103214130338931095048847360%20in%20words)
 that it's read as
 
  > “2 duodecillion 613 undecillion 279 decillion 260 nonillion 982 octillion 103 septillion 214 sextillion 130 quintillion 338 quadrillion 931 trillion 95 billion 48 million 847 thousand 360”
 
 If we were to list all those passwords, at the rate of 1 billion
-per second, [we would need $8.287 \times 10^{22}$ years](https://www.wolframalpha.com/input/?i=2613279260982103214130338931095048847360%2F1000000000+seconds+in+years).
+per second, [we would need $8.287 \times 10^{22}$ years](https://www.wolframalpha.com/input/?i=2613279260982103214130338931095048847360%2F1000000000%20seconds%20in%20years).
 That's $6 \times 10^{12}$ longer than the current age of the universe.
 I can't fathom these numbers...
 Let's just agree they are _LARGE_.
 
-# Final code
-
-If you want to take a look at the final code,
-then go ahead and check [the GitHub repository][gh-repo].
 
 [wiki-iep]: https://en.wikipedia.org/wiki/Inclusion%E2%80%93exclusion_principle
 [gh-repo]: https://github.com/RodrigoGiraoSerrao/projects/tree/master/automatons
