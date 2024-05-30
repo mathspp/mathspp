@@ -5,7 +5,7 @@ metadata:
     og:image: https://mathspp.com/blog/til/git-alias-for-quick-commit-and-push/thumbnail.webp
     twitter:image: https://mathspp.com/blog/til/git-alias-for-quick-commit-and-push/thumbnail.webp
 references:
-    - "“[Boost Your Git DX](https://gumroad.com/a/817193683/wlrcr), Adam Johnson"
+    - "“[Boost Your Git DX](https://gumroad.com/a/817193683/wlrcr)”, Adam Johnson"
 routes:
     aliases:
         - "/blog/til/098"
