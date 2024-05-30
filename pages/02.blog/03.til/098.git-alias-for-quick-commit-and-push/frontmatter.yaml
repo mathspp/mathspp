@@ -1,0 +1,18 @@
+date: 30-05-2024 22:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to create git aliases in my .gitconfig file."
+    og:image: https://mathspp.com/blog/til/git-alias-for-quick-commit-and-push/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/git-alias-for-quick-commit-and-push/thumbnail.webp
+references:
+    - "“[Boost Your Git DX](https://gumroad.com/a/817193683/wlrcr), Adam Johnson"
+routes:
+    aliases:
+        - "/blog/til/098"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+        - git
+        - productivity
+title: "TIL #098 – Git alias for quick commit & push"
+visible: false
