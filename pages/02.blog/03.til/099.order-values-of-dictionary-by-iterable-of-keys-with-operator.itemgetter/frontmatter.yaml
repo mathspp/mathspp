@@ -1,0 +1,16 @@
+date: 31-05-2024 13:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to order the values of a dictionary according to an iterable of keys."
+    og:image: https://mathspp.com/blog/til/order-values-of-dictionary-by-iterable-of-keys-with-operator.itemgetter/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/til/order-values-of-dictionary-by-iterable-of-keys-with-operator.itemgetter/thumbnail.webp
+routes:
+    aliases:
+        - "/blog/til/099"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+        - programming
+        - python
+title: "TIL #099 – order values of dictionary by iterable of keys with operator.itemgetter"
+visible: false
