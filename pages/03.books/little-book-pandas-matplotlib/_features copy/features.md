@@ -1,6 +1,6 @@
 ---
 features:
-    - text: "Easy to follow: Short, easy-to-read chapters designed for quick learning."
+    - text: "**Easy to follow**: short, easy-to-read chapters designed for quick learning."
       icon: fas fa-book-open
     - text: "Practical examples: Hands-on examples to practice and solidify your skills."
       icon: fas fa-code
