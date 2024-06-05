@@ -7,6 +7,7 @@ content:
           - "_hero"
           - "_intro"
           - "_pydonts"
+          - "_pandas-and-matplotlib"
           - "_comprehensions"
           - "_bootcamp-book"
           - "_nnfwp"

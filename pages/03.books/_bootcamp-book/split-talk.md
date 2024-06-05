@@ -1,6 +1,6 @@
 ---
 title: Python Problem-Solving
-image_align: right
+image_align: left
 ---
 
 This book contains 50 coding challenges and an analysis of multiple solutions to those challenges.
