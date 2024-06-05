@@ -6,10 +6,6 @@ features:
       icon: fas fa-code
     - text: "Beginner-friendly: perfect for beginners with no pandas / matplotlib experience."
       icon: fas fa-hand-holding-heart
-    - text: "Visual learning: learn to create clear and informative plots to visualise data insights."
-      icon: fas fa-chart-line
-    - text: "Comprehensive: covers a wide range of concepts in pandas & matplotlib."
-      icon: fas fa-book
     - text: "Time-saving: learn key concepts quickly and efficiently."
       icon: fas fa-clock
     - text: "Professional skills: build professional data science skills."
