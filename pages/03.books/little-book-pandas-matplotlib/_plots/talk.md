@@ -1,17 +1,3 @@
----
-gallery:
-    items:
-        - title: "Code"
-          image: _pandas_code.png
-          desc: "Cenas"
-        - title: "Scatter plot"
-          image: _18_scatter_defense_vs_sp_defense_legendary_legend.png
-          desc: "Cenas 2"
-        - title: "Horizontal bar plot"
-          image: _13_barh_type_coloured.png
-          desc: "Cenas 3"
----
-
 ## Examples of what you'll be learning
 
 You will learn how to write pandas code that is readable, easy to maintain, and extendable.
