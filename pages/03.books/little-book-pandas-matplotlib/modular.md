@@ -13,6 +13,7 @@ metadata:
     og:title: "The little book of pandas & matplotlib"
     title: "The little book of pandas & matplotlib"
 onpage_menu: false
+title: "The little book of pandas & matplotlib"
 ---
 
 # The little book of pandas & matplotlib

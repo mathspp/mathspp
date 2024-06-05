@@ -1,5 +1,5 @@
 ---
-title: The LITTLE book of pandas & matplotlib
+title: The little book of pandas & matplotlib
 event: A practical guide on getting started
 image_align: left
 ---

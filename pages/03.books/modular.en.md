@@ -18,4 +18,5 @@ metadata:
     og:title: "Books"
     title: Books
 onpage_menu: false
+title: Books
 ---
