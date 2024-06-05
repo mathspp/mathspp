@@ -1,17 +1,22 @@
 ---
 title: The LITTLE book of pandas & matplotlib
+event: A practical guide on getting started
 image_align: left
 ---
 
-This book guides you through the core Python language, showing you how to use the language features to write better, more elegant Python code.
+Get started with data science in Python quickly with the little book of pandas & matplotlib.
 
-Each chapter of the book guides you through a specific feature of the Python language, explaining the theory and showing concrete examples of that feature in the real world.
+The short chapters introduce you to the key concepts that you need to
 
-This book is for best suited for people who already have some Python experience or for experienced programmers in other languages who want a crash course on the “Pythonic way” of doing things.
+ 1. manipulate and transform your data;
+ 2. query it to get answers to the questions you have; and
+ 3. create plots that convey your findings in a clear way.
+
+This book is perfect for you if you want to get an overview of the multiple tools, ideas, and concepts, that pandas and matplotlib have to offer and that you can learn and master.
 
 <div style="display:flex; justify-content:center;">
-<a href="https://gumroad.com/l/pydonts?variant=Free%20for%20ever%20%F0%9F%92%B8&wanted=true" target="_blank" class="btn plausible-event-name=pydonts+cta" style="margin-right: 1em;">Get the book!</a>
-<a href="/books/pydonts" class="btn" style="margin-left: 1em;">Learn more</a>
+<a href="https://mathspp.gumroad.com/l/little-book-pandas-matplotlib/?wanted=true" target="_blank" class="btn" style="margin-right: 1em;">Get the book!</a>
+<a href="/books/little-book-pandas-matplotlib" class="btn" style="margin-left: 1em;">Learn more</a>
 </div>
 
 <!--
