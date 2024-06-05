@@ -1,4 +1,4 @@
-## Examples of what you'll be learning
+## Examples of what you will be learning
 
 You will learn how to write pandas code that is readable, easy to maintain, and extendable.
 Notice how the code below flows from top to bottom.
