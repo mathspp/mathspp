@@ -1,4 +1,5 @@
 ---
+class: small
 features:
     - text: "Easy to follow: short, easy-to-read chapters designed for quick learning."
       icon: fas fa-book-open
