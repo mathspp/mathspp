@@ -2,10 +2,10 @@
 image_align: left
 ---
 
-## Create clear plots
+## Create lean plots
 
-Present the insights you get from your data in a digestible way.
+Learn how to create lean plots that present the insights you get from your data in a clear way.
 
-You will learn useful customisation options so that even a simple bar plot can stand out.
+You will also learn to customise your publication-ready plots with styling options that make your data and its relationships stand out.
 
 <br>
