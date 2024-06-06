@@ -4,5 +4,8 @@ image_align: left
 
 ## Create clear plots
 
-Create clear plots that present the insights you got from your data.
-Learn customisation options so that even a simple bar plot stands out.
+Present the insights you get from your data in a digestible way.
+
+You will learn useful customisation options so that even a simple bar plot can stand out.
+
+<br>
