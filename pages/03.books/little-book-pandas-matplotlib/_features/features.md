@@ -8,7 +8,7 @@ features:
       icon: fas fa-hand-holding-heart
     - text: "Time-saving: learn key concepts quickly and efficiently."
       icon: fas fa-clock
-    - text: "Professional skills: build professional data science skills."
+    - text: "Employable skills: build professional data science skills."
       icon: fas fa-briefcase
     - text: "Updates & fixes: the book is always being revised, updated, and improved."
       icon: fa fa-wrench
