@@ -7,7 +7,6 @@ content:
           - "_hero"
           - "_details"
           - "_pandas-code"
-          - "_bar-plot"
           - "_scatter-plot"
           - "_features"
           - "_final-cta"
