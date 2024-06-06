@@ -6,6 +6,7 @@ content:
         custom:
           - "_hero"
           - "_details"
+          - "_cta"
           - "_pandas-code"
           - "_scatter-plot"
           - "_cta"
