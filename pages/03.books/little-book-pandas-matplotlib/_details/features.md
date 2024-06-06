@@ -1,6 +1,3 @@
----
-class: offset-box
----
 
 ## Get started with data science in Python
 
