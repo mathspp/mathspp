@@ -8,3 +8,5 @@ You will learn how to write pandas code that is readable, easy to maintain, and 
 Notice how the code shown flows from top to bottom.
 
 This style of pandas code makes your data transformation pipeline easy to understand, maintain, modify, and extend.
+
+<br>
