@@ -1,3 +1,7 @@
+---
+class: offset-box
+---
+
 ## Get started with data science in Python
 
 Get started with data science in Python quickly with the little book of pandas & matplotlib.
