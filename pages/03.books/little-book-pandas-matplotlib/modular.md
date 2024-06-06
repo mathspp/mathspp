@@ -8,8 +8,9 @@ content:
           - "_details"
           - "_pandas-code"
           - "_scatter-plot"
+          - "_cta"
           - "_features"
-          - "_final-cta"
+          - "_cta"
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "“The little book of pandas & matplotlib” is a short book that provides a practical guide to getting started with pandas and matplotlib."
