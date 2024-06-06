@@ -13,3 +13,7 @@ features:
     - text: "Updates & fixes: the book is always being revised, updated, and improved."
       icon: fa fa-wrench
 ---
+
+<div style="display:flex; justify-content:center;">
+<a href="https://mathspp.gumroad.com/l/little-book-pandas-matplotlib/?wanted=true" target="_blank" class="btn" style="margin-right: 1em;">Get started with pandas & matplotlib</a>
+</div>
