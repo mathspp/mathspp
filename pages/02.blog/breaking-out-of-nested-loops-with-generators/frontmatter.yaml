@@ -1,0 +1,14 @@
+date: 26-06-2024
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "You can use generators to simplify nested loops and make it easier to break out of them."
+    og:image: "https://mathspp.com/blog/breaking-out-of-nested-loops-with-generators/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/breaking-out-of-nested-loops-with-generators/thumbnail.webp"
+slug: "breaking-out-of-nested-loops-with-generators"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - programming
+        - python
+title: Breaking out of nested loops with generators
