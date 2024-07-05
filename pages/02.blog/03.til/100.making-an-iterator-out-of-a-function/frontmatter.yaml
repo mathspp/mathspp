@@ -1,0 +1,19 @@
+date: 05-07-2024
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "You can use the Python built-in function `iter` with two arguments to create an iterator from a function."
+    og:image: "https://mathspp.com/blog/making-an-iterator-out-of-a-function/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/making-an-iterator-out-of-a-function/thumbnail.webp"
+references:
+  - "Python 3 Docs, Built-in Functions, https://docs.python.org/3/library/functions.html [last accessed 05-07-2024];"
+routes:
+    aliases:
+        - "/blog/til/100"
+slug: "making-an-iterator-out-of-a-function"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+        - programming
+        - python
+title: "TIL #100 – Making an iterator out of a function"
+visible: false
