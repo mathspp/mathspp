@@ -1,4 +1,4 @@
-date: 26-06-2024
+date: 10-07-2024
 metadata:
     author: Rodrigo Girão Serrão
     description: "With a couple of loops and a bit of maths you can create a rotating spiral."
@@ -9,6 +9,10 @@ taxonomy:
     category:
         - blogpost
     tag:
+        - geometry
+        - mathematics
         - programming
+        - pygame
         - python
+        - visualisation
 title: Animating a rotating spiral
