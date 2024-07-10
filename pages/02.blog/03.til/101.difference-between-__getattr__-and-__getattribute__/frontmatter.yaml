@@ -15,5 +15,5 @@ taxonomy:
     tag:
         - programming
         - python
-title: "TIL #101 – __getattr__ vs __getattribute__"
+title: "TIL #101 – difference between __getattr__ and __getattribute__"
 visible: false
