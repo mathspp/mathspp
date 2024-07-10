@@ -1,0 +1,14 @@
+date: 26-06-2024
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "With a couple of loops and a bit of maths you can create a rotating spiral."
+    og:image: "https://mathspp.com/blog/animating-a-rotating-spiral/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/animating-a-rotating-spiral/thumbnail.webp"
+slug: "animating-a-rotating-spiral"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - programming
+        - python
+title: Animating a rotating spiral
