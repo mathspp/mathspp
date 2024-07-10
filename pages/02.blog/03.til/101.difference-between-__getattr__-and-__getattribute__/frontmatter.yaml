@@ -2,14 +2,14 @@ date: 09-07-2024
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned the difference between `__getattr__` and `__getattribute__`."
-    og:image: "https://mathspp.com/blog/__getattr__-vs-__getattribute__/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/__getattr__-vs-__getattribute__/thumbnail.webp"
+    og:image: "https://mathspp.com/blog/difference-between-__getattr__-and-__getattribute__/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/difference-between-__getattr__-and-__getattribute__/thumbnail.webp"
 references:
   - "Unravelling attribute access in Python, [https://snarky.ca/unravelling-attribute-access-in-python/](https://snarky.ca/unravelling-attribute-access-in-python/) [last accessed 09-07-2024];"
 routes:
     aliases:
         - "/blog/til/101"
-slug: "__getattr__-vs-__getattribute__"
+slug: "difference-between-__getattr__-and-__getattribute__"
 taxonomy:
     category: [blogpost, til]
     tag:
