@@ -1,0 +1,18 @@
+date: 13-07-2024 19:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to debug the new Python REPL with `_pyrepl.trace` and the environment variable `PYREPL_TRACE`."
+    og:image: "https://mathspp.com/blog/debugging-the-new-python-repl-with-trace-and-pyrepl-trace/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/debugging-the-new-python-repl-with-trace-and-pyrepl-trace/thumbnail.webp"
+routes:
+    aliases:
+        - "/blog/til/103"
+slug: "debugging-the-new-python-repl-with-trace-and-pyrepl-trace"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+        - programming
+        - python
+        - repl
+title: "TIL #103 – debugging the new Python REPL with `trace` and `PYREPL_TRACE."
+visible: false
