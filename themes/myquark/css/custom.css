@@ -579,3 +579,7 @@ pre:hover>div>i.clipboard-icon {
     animation-duration: 2s;
     animation-timing-function: linear;
 }
+
+kbd {
+    font-size: 70%;
+}
