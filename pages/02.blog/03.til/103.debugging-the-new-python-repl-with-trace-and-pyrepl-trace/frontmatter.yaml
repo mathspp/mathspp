@@ -14,5 +14,5 @@ taxonomy:
         - programming
         - python
         - repl
-title: "TIL #103 – debugging the new Python REPL with `trace` and `PYREPL_TRACE."
+title: "TIL #103 – debugging the new Python REPL with trace and PYREPL_TRACE."
 visible: false
