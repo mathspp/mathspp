@@ -1,19 +1,18 @@
-date: 09-07-2024
+date: 13-07-2024
 metadata:
     author: Rodrigo Girão Serrão
-    description: "Today I learned the difference between `__getattr__` and `__getattribute__`."
-    og:image: "https://mathspp.com/blog/difference-between-__getattr__-and-__getattribute__/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/difference-between-__getattr__-and-__getattribute__/thumbnail.webp"
-references:
-  - "Unravelling attribute access in Python, [https://snarky.ca/unravelling-attribute-access-in-python/](https://snarky.ca/unravelling-attribute-access-in-python/) [last accessed 09-07-2024];"
+    description: "Today I learned how to fix an issue with Ctrl+left and Ctrl+right not working in the new Python REPL on MacOS."
+    og:image: "https://mathspp.com/blog/ctrl-left-and-ctrl-right-not-working-in-the-python-repl-on-macos/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/ctrl-left-and-ctrl-right-not-working-in-the-python-repl-on-macos/thumbnail.webp"
 routes:
     aliases:
-        - "/blog/til/101"
-slug: "difference-between-__getattr__-and-__getattribute__"
+        - "/blog/til/102"
+slug: "ctrl-left-and-ctrl-right-not-working-in-the-python-repl-on-macos"
 taxonomy:
     category: [blogpost, til]
     tag:
         - programming
         - python
-title: "TIL #101 – difference between __getattr__ and __getattribute__"
+        - repl
+title: "TIL #102 – ctrl+left and ctrl+right not working in the Python REPL on MacOS"
 visible: false
