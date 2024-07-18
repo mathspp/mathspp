@@ -7,6 +7,9 @@ content:
         custom:
           - "_hero"
           - "_invite-me"
+          - "_20240712-who-wants-to-be-a-millionaire"
+          - "_20240710-animations-from-first-principles"
+          - "_20240708-reinventing-the-itertools-wheel-for-fun-and-profit"
           - "_20240525-503-days-working-full-time-on-foss-lessons-learned"
           - "_20240524-elegant-line-of-code"
           - "_20240523-descriptors-made-easy"
