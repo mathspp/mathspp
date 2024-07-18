@@ -11,7 +11,7 @@ After an attempt at suspense, I show 6 lines of code and arrive at the answer of
 
 ===
 
-<iframe width="100%" style="aspect-ratio: 560/315" src="https://www.youtube.com/embed/bFYdlcM6XPc" title="Counting to 698,438,863,898,480,640 in 0.4ms ⚡️ – lightning talk by Rodrigo Girão Serrão at PyCon US" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+![](_talk.webp)
 
 ===
 

@@ -11,7 +11,7 @@ I failed miserably but everyone got a good laugh out of it, so it ended up being
 
 ===
 
-![](_talk.webp)
+<iframe width="100%" style="aspect-ratio: 560/315" src="https://www.youtube.com/embed/nI8I4NiXyaQ" title="Elegant (line of) code ⚡️ – lightning talk by Rodrigo Girão Serrão at PyCon Italy 2024S" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ===
 
