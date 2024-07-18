@@ -1,5 +1,5 @@
 ---
-title: "Reinventing the `itertools` wheel for fun and profit"
+title: "Reinventing the itertools wheel for fun and profit"
 event: "EuroPython 2024"
 image_align: right
 ---
@@ -15,4 +15,4 @@ The tutorial was highly praised for the practical component, given that I [prepa
 
 ===
 
-[EuroPython 2024](https://ep2024.europython.eu/session/reinventing-the-itertools-wheel-for-fun-and-profit), 08-07-2024 • [Main reference](https://mathspp.com/books/the-little-book-of-itertools)
+[EuroPython 2024](https://ep2024.europython.eu/session/reinventing-the-itertools-wheel-for-fun-and-profit), 08-07-2024 • [Main reference](https://mathspp.com/books/the-little-book-of-itertools) • [Live-coded notebook](https://github.com/mathspp/talks/blob/main/20240708_europython-reinventing-the-itertools-wheel-for-fun-and-profit/tutorial.ipynb)

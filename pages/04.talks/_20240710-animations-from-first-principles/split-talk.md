@@ -19,4 +19,4 @@ An attendee wrote “The talk was really dynamic and the idea of programming whi
 
 ===
 
-[EuroPython 2024](https://ep2024.europython.eu/session/animations-from-first-principles), 10-07-2024 • [Main reference](https://mathspp.com/blog/animations-from-first-principles-in-5-minutes)
+[EuroPython 2024](https://ep2024.europython.eu/session/animations-from-first-principles), 10-07-2024 • [Main reference](/blog/animations-from-first-principles-in-5-minutes) • Secondary references [here](/blog/more-animations-from-first-principles-in-5-minutes) and [here](/blog/animating-a-rotating-spiral) • [Live-coded script](https://github.com/mathspp/talks/blob/main/20240710_europython-animations-from-first-principles/talk.py)

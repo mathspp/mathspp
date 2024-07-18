@@ -17,5 +17,5 @@ In the fast-paced game I hosted, 4 volunteers tried to answer 4 impossible multi
 [EuroPython 2024](https://ep2024.europython.eu/session/lightning-talks-friday), 12-07-2024 • [Main reference](https://mathspp.com/books/the-little-book-of-itertools) • [Talk slides][pdf-slides] (low res PDF) • [Online slides][snappify-slides]
 
 
-[pdf-slides]: https://github.com/mathspp/talks/blob/main/20240525_pycon-italy-503-days-working-full-time-on-foss-lessons-learned/slides.pdf
+[pdf-slides]: https://github.com/mathspp/talks/blob/main/20240712_europython-who-wants-to-be-a-millionaire/_slides.pdf
 [snappify-slides]: https://snappify.com/view/3b1185c6-d764-43d5-81a5-64a29f2927a8
