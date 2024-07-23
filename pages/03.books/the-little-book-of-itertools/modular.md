@@ -6,6 +6,7 @@ content:
         custom:
           - "_hero"
           - "_details"
+          - "_info"
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "“The little book of itertools” is a short book that teaches you advanced iteration techniques and challenges you to reimplement the module itertools in pure Python."
