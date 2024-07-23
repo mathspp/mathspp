@@ -20,5 +20,5 @@ Whether you're a seasoned coder looking to refine your skills or a curious learn
 Dive in, get your hands dirty, and transform the way you think about loops and iterations in Python.
 
 <div style="display:flex; justify-content:center;">
-    <a href="https://mathspp.gumroad.com/l/little-book-itertools/?wanted=true" target="_blank" class="btn" style="margin-right: 1em;">Learn more about `itertools`</a>
+    <a href="https://mathspp.gumroad.com/l/little-book-itertools/?wanted=true" target="_blank" class="btn" style="margin-right: 1em;">Become an `itertools` and Python iteration master</a>
 </div>

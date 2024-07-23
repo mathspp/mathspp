@@ -8,3 +8,7 @@ Unlock the power of advanced iteration with this concise, actionable guide to Py
 Perfect for curious programmers who love diving deep into the intricacies of the standard library, this book offers a hands-on approach to mastering one of Python's most versatile libraries in a short, fluff-free format.
 
 [![](_mockup.webp)](https://mathspp.gumroad.com/l/little-book-itertools/?wanted=true)
+
+<div style="display:flex; justify-content:center;">
+    <a href="https://mathspp.gumroad.com/l/little-book-itertools/?wanted=true" target="_blank" class="btn" style="margin-right: 1em;">Become an `itertools` and Python iteration master</a>
+</div>
