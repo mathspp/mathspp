@@ -10,5 +10,5 @@ Perfect for curious programmers who love diving deep into the intricacies of the
 [![](_mockup.webp)](https://mathspp.gumroad.com/l/little-book-itertools/?wanted=true)
 
 <div style="display:flex; justify-content:center;">
-    <a href="https://mathspp.gumroad.com/l/little-book-itertools/?wanted=true" target="_blank" class="btn" style="margin-right: 1em;">Become an `itertools` and Python iteration master</a>
+    <a href="https://mathspp.gumroad.com/l/little-book-itertools/?wanted=true" target="_blank" class="btn" style="margin-right: 1em;">Become an itertools and Python iteration master</a>
 </div>
