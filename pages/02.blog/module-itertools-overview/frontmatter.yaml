@@ -1,0 +1,17 @@
+date: 23-07-2024
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This article briefly describes the iterators available in the Python module itertools and how to use them."
+    og:image: "https://mathspp.com/blog/module-itertools-overview/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/module-itertools-overview/thumbnail.webp"
+references:
+    - "Python 3 Documentation, Standard Library, module `itertools`, [https://docs.python.org/3/library/itertools.html](https://docs.python.org/3/library/itertools.html) [last accessed 23-07-2024];"
+slug: "module-itertools-overview"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - modules
+        - programming
+        - python
+title: Module itertools overview
