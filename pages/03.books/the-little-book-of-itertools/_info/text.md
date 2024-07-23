@@ -3,7 +3,7 @@ Inside this book, you'll discover:
  - Advanced iteration techniques: move beyond basic loops and learn how to handle complex iteration scenarios with ease.
  - Generators and lazy iteration: understand the power of generators and how lazy evaluation can optimize your code.
  - Iterables vs. iterators: clear up the confusion between these foundational concepts and see how they play a crucial role in Python's iteration protocol.
- - In-depth `itertools` exploration: from count to zip_longest, get to know each function in the `itertools` module with detailed explanations and practical examples.
+ - In-depth `itertools` exploration: from `accumulate` to `zip_longest`, get to know each function in the `itertools` module with detailed explanations and practical examples.
 
 This book isn't just about passive learning.
 Each chapter contains exercises designed to challenge you to reimplement everything from the `itertools` module.
