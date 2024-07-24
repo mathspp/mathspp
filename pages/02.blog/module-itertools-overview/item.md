@@ -444,6 +444,59 @@ You can find a simple example for each one of them after the table.
 | `cycle(iterable)` | [Docs](https://docs.python.org/3/library/itertools.html#itertools.cycle) | Iterates endlessly over the items in the given iterable. |
 | `repeat(object[, times])` | [Docs](https://docs.python.org/3/library/itertools.html#itertools.repeat) | Creates an iterator that repeats the object given endlessly, or the specified number of times. |
 
+### `count`
+
+```py
+# Unique ID generator.
+
+from itertools import count
+
+ID_GENERATOR = count()
+
+class Sandwich:
+    def __init__(self):
+        self.sandwich_id = next(ID_GENERATOR)
+
+print(Sandwich().sandwich_id)  # 0
+print(Sandwich().sandwich_id)  # 1
+```
+
+### `cycle`
+
+```py
+# Create a layered sandwich.
+
+from itertools import cycle
+
+ingredients = cycle(["tomato", "cheese", "chicken"])
+layers = 5
+
+print("<bread", end=" ")
+for _, ingredient in zip(range(layers), ingredients):
+    print(ingredient, end=" ")
+print("bread>")
+# <bread tomato cheese chicken tomato cheese bread>
+```
+
+### `repeat`
+
+```py
+# Repeatedly produce the same object.
+
+from itertools import repeat
+
+bread_dispenser = repeat("bread")
+people = ["Harry", "Anne", "George"]
+for person, bread in zip(people, bread_dispenser):
+    print(f"{person}, here's some {bread}, make yourself a sandwich.")
+
+"""Output:
+Harry, here's some bread, make yourself a sandwich.
+Anne, here's some bread, make yourself a sandwich.
+George, here's some bread, make yourself a sandwich.
+"""
+```
+
 
 ## Iterators that complement other tools
 
@@ -456,6 +509,82 @@ You can find a simple example for each one of them after the table.
 | `starmap(function, iterable)` | `map` | [Docs](https://docs.python.org/3/library/itertools.html#itertools.starmap) | Like `map(lambda args: function(args), iterable)`. |
 | `zip_longest(*iterables, fillvalue=None)` | `zip` | [Docs](https://docs.python.org/3/library/itertools.html#itertools.zip_longest) | Like `zip`, but stops on the longest iterable instead of the shortest one, filling empty positions with the value specified. |
 
+
+### `accumulate`
+
+The iterator `accumulate` works in a similar way to [`functools.reduce`](/blog/pydonts/the-power-of-reduce).
+While `reduce` only produces the final value of the reduction, the iterator `accumulate` provides the intermediate values as well.
+
+```py
+# Partial products to see investment growth over time.
+
+from functools import reduce
+from itertools import accumulate
+from operator import mul
+
+interest_rates = [1.005, 1.005, 1.008, 1.01, 1.01, 1.02]
+initial_investment = 1000
+
+# Same as `math.prod`:
+print(reduce(mul, interest_rates, initial_investment))  # ~1059.34
+print(list(
+    accumulate(
+        interest_rates,
+        mul,
+        initial=initial_investment,
+    )
+))  # ~ [1000, 1005, 1010.02, 1018.11, 1028.29, 1038.57, 1059.34]
+```
+
+### `starmap`
+
+```py
+# Useful when arguments are packed but function expects different arguments.
+
+from itertools import starmap
+
+to_compute = [
+    (2, 3),  # 8
+    (2, 4),  # 16
+    (2, 5),  # 32
+    (3, 2),  # 9
+    (3, 3),  # 27
+]
+
+print(list(
+    starmap(pow, to_compute)  # [8, 16, 32, 9, 27]
+))
+
+# Compare to:
+bases = [2, 2, 2, 3, 3]
+exponents = [3, 4, 5, 2, 3]
+print(list(
+    map(pow, bases, exponents)  # [8, 16, 32, 9, 27]
+))
+```
+
+### `zip_longest`
+
+```py
+# Go over multiple iterables until all are exhausted.
+
+from itertools import repeat, zip_longest
+
+# Available ingredients:
+bread = repeat("bread", 4)
+mayo = repeat("mayo", 2)
+chicken = repeat("chicken", 4)
+
+for ingredients in zip_longest(bread, mayo, chicken, fillvalue=""):
+    print(f"Here's a sandwich with {' '.join(ingredients)}.")
+
+"""Output:
+Here's a sandwich with bread mayo chicken.
+Here's a sandwich with bread mayo chicken.
+Here's a sandwich with bread  chicken.
+Here's a sandwich with bread  chicken.
+"""
+```
 
 ## The function `tee`
 
