@@ -144,11 +144,6 @@ print(x.value)  # 73
 
 (You can see [the exact line of code that does this for `pathlib` in Python 3.14 on GitHub](https://github.com/python/cpython/blob/e9681211b9ad11d1c1f471c43bc57cac46814779/Lib/pathlib/_local.py#L522-L525).)
 
-As a slightly less silly exercise for yourself, implement two classes: `Rectangle` and `Square`.
-`Square` should be a subclass of `Rectangle`.
-A rectangle is instantiated with a width and a height and a square with a side length.
-Here's the twist: if `Rectangle` is instantiated with a width equal to its height, we want to get a `Square` instead.
-
 
 ## Using `__new__` to subclass immutable types
 
