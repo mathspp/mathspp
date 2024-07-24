@@ -1,0 +1,16 @@
+date: 24-07-2024 12:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This article shows how you can create a case-insensitive string class using some basic meta programming with the dunder method __new__."
+    og:image: "https://mathspp.com/blog/case-insensitive-string-class/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/case-insensitive-string-class/thumbnail.webp"
+slug: "case-insensitive-string-class"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - dunder methods
+        - oop
+        - programming
+        - python
+title: Case-insensitive string class
