@@ -12,5 +12,6 @@ content:
 metadata:
     author: Rodrigo Girão Serrão
     description: "The mathspp blog contains articles about Python, programming in general, and mathematics."
+    og:description: "The mathspp blog contains articles about Python, programming in general, and mathematics."
     og:image: "https://mathspp.com/blog/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/thumbnail.webp"
