@@ -1,0 +1,19 @@
+date: 24-07-2024 16:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "The dunder method __new__ is used to customise object creation and is a core stepping stone in understanding metaprogramming in Python."
+    og:image: "https://mathspp.com/blog/customising-object-creation-with-__new__/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/customising-object-creation-with-__new__/thumbnail.webp"
+references:
+    - "Python 3 Docs, Data model, [https://docs.python.org/3/reference/datamodel.html#object.__new__](https://docs.python.org/3/reference/datamodel.html#object.__new__) [last accessed 24-07-2024];"
+slug: "customising-object-creation-with-__new__"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - dunder methods
+        - metaprogramming
+        - oop
+        - programming
+        - python
+title: "Customising object creation with __new__"
