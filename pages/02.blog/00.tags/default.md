@@ -8,7 +8,7 @@ visible: false
 # Blog tags
 
 
-{% set taxlist = taxonomy.findTaxonomy("tag") %}
+{% set taxlist = taxonomy.getTaxonomyItemKeys("tag") %}
 
 {% if true %}
 <p>Bye</p>
