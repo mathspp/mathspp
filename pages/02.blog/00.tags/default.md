@@ -10,6 +10,10 @@ visible: false
 
 {% set taxlist = taxonomylist.get() %}
 
+{% if true %}
+<p>Bye</p>
+{% endif %}
+
 {% if taxlist %}
 <p>Oi</p>
     {% for tax, value in taxlist["tag"] %}
