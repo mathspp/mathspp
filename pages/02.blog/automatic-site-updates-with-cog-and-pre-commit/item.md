@@ -81,3 +81,10 @@ repos:
 
 This simple hook looks for changes in Markdown files under my blog folder.
 If there are any, we run cog on my blog main page and then add that page so that it gets committed with the other changes.
+
+The screenshot below shows how the hook ran when I committed this exact article:
+
+![Screenshot showing the pre-commit hook updating the blog stats that got rewritten by cog.](_screenshot.webp "Screenshot of the hook running.")
+
+Given that ChatGPT and other LLMs have been around for “a while”, I wonder how it took me so long to realise that I could use it to help me out with this task...
+And for the future I expect to use it more for these small tasks!
