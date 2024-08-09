@@ -1,0 +1,19 @@
+date: 09-08-2023 19:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This article outlines how I use a pre-commit hook and cog to keep my blog stats updated automatically."
+    og:image: "https://mathspp.com/blog/automatic-site-updates-with-cog-and-pre-commit/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/automatic-site-updates-with-cog-and-pre-commit/thumbnail.webp"
+slug: "automatic-site-updates-with-cog-and-pre-commit"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - chatgpt
+        - git
+        - productivity
+        - programming
+        - python
+        - scripting
+        - slice of life
+title: Automatic site updates with cog and pre-commit
