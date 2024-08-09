@@ -6,6 +6,4 @@ repos:
         entry: bash -c 'cog -r pages/02.blog/blog.md && git add pages/02.blog/blog.md'
         language: system
         files: '^pages/02\.blog/.*\.md$'
-        types: [markdown]
-        always_run: true
         stages: [pre-commit]
