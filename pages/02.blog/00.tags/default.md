@@ -14,6 +14,10 @@ visible: false
 <p>Bye</p>
 {% endif %}
 
+<p>{{ taxlist }}</p>
+<p>{{ dump(taxlist) }}</p>
+<p>{{ dumps(taxlist) }}</p>
+
 {% if taxlist %}
 <p>Oi</p>
     {% for tax in taxlist %}
