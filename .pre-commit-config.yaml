@@ -5,5 +5,6 @@ repos:
         name: Update blog stats
         entry: bash -c 'cog -r pages/02.blog/blog.md && git add pages/02.blog/blog.md'
         language: system
-        files: '^pages/02\.blog/.*\.md$'
+        files: '^pages/02\.blog/'
+        types: [markdown]
         stages: [pre-commit]
