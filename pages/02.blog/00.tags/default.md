@@ -16,7 +16,7 @@ visible: false
 
 {% if taxlist %}
 <p>Oi</p>
-    {% for tax, value in taxlist["tag"] %}
+    {% for tax in taxlist %}
         <a class="label label-rounded">{{ tax }} | {{ value }}</a>
     {% endfor %}
 {% endif %}
