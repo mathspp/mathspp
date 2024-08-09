@@ -7,4 +7,3 @@ repos:
         language: system
         files: ^pages/02.blog/.*\.md$
         always_run: true
-        stages: [commit-msg, pre-commit]
