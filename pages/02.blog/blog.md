@@ -7,7 +7,14 @@ title: Mathspp Blog
 
 # Mathspp Blog
 
-| 364 | 401,576 | 33,251 |
+<!--
+[[[cog
+import cog, subprocess
+result = subprocess.run(["python", "pages/02.blog/stats.py"], text=True, capture_output=True)
+cog.outl(result.stdout)
+]]]-->
+| 364 | 401,577 | 33,251 |
+<!--[[[end]]]--->
 | :-: | :-: | :-: |
 | articles | words | lines of code |
 
