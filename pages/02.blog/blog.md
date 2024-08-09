@@ -14,9 +14,9 @@ result = subprocess.run(["python", "pages/02.blog/stats.py"], text=True, capture
 cog.outl(result.stdout)
 ]]]-->
 | 364 | 401,577 | 33,251 |
-<!--[[[end]]]--->
 | :-: | :-: | :-: |
 | articles | words | lines of code |
+<!--[[[end]]]--->
 
 
 <style>
