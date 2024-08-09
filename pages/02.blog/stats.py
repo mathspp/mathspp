@@ -35,8 +35,9 @@ def main():
         loc += sum(len(snippet.splitlines()) for snippet in code) - 2 * len(code)
         words += len(text.split())
 
-    print(f"{articles = }, {words = }")
-    print(f"{code_snippets = }, {loc = }")
+    print(f"| {articles:,} | {words:,} | {loc:,} |")
+    print("| :-: | :-: | :-: |")
+    print("| articles | words | lines of code |", end="")
 
 
 if __name__ == "__main__":
