@@ -1,6 +1,7 @@
 ---
 process:
     twig: true
+twig_first: true
 ---
 
 # Blog tags
