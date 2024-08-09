@@ -7,7 +7,7 @@ twig_first: true
 # Blog tags
 
 
-{% set taxlist = children_only is defined ? taxonomylist.getChildPagesTags() : taxonomylist.get() %}
+{% set taxlist = taxonomylist.get() %}
 
 {% if taxlist %}
 <p>Oi</p>
