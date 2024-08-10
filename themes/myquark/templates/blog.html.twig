@@ -19,7 +19,7 @@
 
 
 {% block hero %}
-    {% include 'partials/hero.html.twig' with {id: 'blog-hero', content: page.content, hero_image: blog_image} %}
+    {% include 'partials/hero_with_tag.html.twig' with {id: 'blog-hero', content: page.content, hero_image: blog_image} %}
 {% endblock %}
 
 {% block body %}
@@ -28,11 +28,6 @@
 
         {% if show_breadcrumbs and config.plugins.breadcrumbs.enabled %}
             {% include 'partials/breadcrumbs.html.twig' %}
-        {% endif %}
-
-        <!--Teste-->
-        {% if uri.param("tag") == "python" %}
-        <h3>Python</h3>
         {% endif %}
 
         {% embed 'partials/layout.html.twig' with {blog: page} %}

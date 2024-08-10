@@ -90,3 +90,6 @@ FOOTER:
     INSTAGRAM: Follow @mathsppblog on Instagram
     NEWSLETTER: Subscribe to the newsletter
     EMAIL: Email me at rodrigo(at)mathspp(dot)com
+
+TAG_DESCRIPTIONS:
+  python: "Posts about the Python programming language or that include Python code."
