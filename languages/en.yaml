@@ -92,5 +92,15 @@ FOOTER:
     EMAIL: Email me at rodrigo(at)mathspp(dot)com
 
 TAG_DESCRIPTIONS:
-  python: "articles about the Python programming language or that include Python code."
-  programming: "articles that include code in some form."
+  python: "articles about the Python programming language or that include Python code"
+  programming: "articles that include code in some form"
+  mathematics: "articles about mathematics"
+  logic: "articles about logic, including logical puzzles or challenges"
+  combinatorics: "articles about the branch of mathematics dedicated to counting and arranging things"
+  algorithms: "articles about a specific algorithm or that feature a specific algorithm proeminently"
+  productivity: "articles about using Python, coding, and tools, to increase your productivity"
+  apl: "articles about the APL programming language"
+  geometry: "articles about the mathematical branch that deals with shapes and their properties"
+  interpreters: "articles about working with, or implementing, interpreters"
+  visualisation: "articles that feature visualisations of algorithms, simulations, and others"
+  "dunder methods": "articles about the dunder methods in Python"
