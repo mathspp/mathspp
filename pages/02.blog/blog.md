@@ -6,20 +6,3 @@ title: Mathspp Blog
 ---
 
 # Mathspp Blog
-
-<!--
-[[[cog
-import cog, subprocess
-result = subprocess.run(["python", "pages/02.blog/stats.py"], text=True, capture_output=True)
-cog.outl(result.stdout)
-]]]-->
-| 365 | 402,142 | 33,282 |
-| :-: | :-: | :-: |
-| articles | words | lines of code |
-<!--[[[end]]]--->
-
-
-<style>
-table { font-size: 4vmin; }
-thead { color: #f8f8f2; border-bottom: 0; }
-</style>
