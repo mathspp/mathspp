@@ -6,6 +6,7 @@ content:
         by: custom
         custom:
           - "_hero"
+          - "_stats"
           - "_tags-list"
 metadata:
     author: "Rodrigo Girão Serrão"
