@@ -5,14 +5,14 @@
 
         {% set tag = uri.param("tag") %}
         {% if tag != "" %}
-        <h2>
+        <h4>
         <span class="tags">
             <a class="label label-rounded" href="/blog/tag{{ config.system.param_sep }}{{ tag }}">{{ tag }}</a>
         </span>
             {% if ('TAG_DESCRIPTIONS.'~tag)|t != "" %}
             : {{ ('TAG_DESCRIPTIONS.'~tag)|t }}
             {% endif %}
-        </h2>
+        </h4>
         {% else %}
         {% include "partials/blog/stats.html.twig" %}
         {% endif %}
