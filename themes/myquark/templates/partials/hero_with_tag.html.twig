@@ -9,8 +9,8 @@
         <span class="tags">
             <a class="label label-rounded" href="/blog/tag{{ config.system.param_sep }}{{ tag }}">{{ tag }}</a>
         </span>
-            {% if 'TAG_DESCRIPTIONS[tag]' != "" %}
-            : {{ 'TAG_DESCRIPTIONS[tag]' }}
+            {% if ('TAG_DESCRIPTIONS.'~tag)|t != "" %}
+            : {{ ('TAG_DESCRIPTIONS.'~tag)|t }}
             {% endif %}
         </h2>
         {% else %}
