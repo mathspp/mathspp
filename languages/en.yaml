@@ -104,3 +104,6 @@ TAG_DESCRIPTIONS:
   interpreters: "articles about working with, or implementing, interpreters"
   visualisation: "articles that feature visualisations of algorithms, simulations, and others"
   "dunder methods": "articles about the dunder methods in Python"
+  pygame: "articles that use the Python module pygame to create games, visualisations, and more"
+  "machine learning": "articles about machine learning algorithms, experiments, and more"
+  modules: "articles specifically about a Python module"
