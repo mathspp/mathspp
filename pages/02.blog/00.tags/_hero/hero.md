@@ -3,9 +3,9 @@
 {% set taxlist = taxonomy.taxonomy()["tag"]|sort|reverse %}
 
 {% if taxlist %}
-<span class="tags">
+<span class="tags" style="line-height:150%">
 {% for tax, pages in taxlist|slice(0, 15) %}
-    <a class="label label-rounded" style="color:#3085ee;font-size:120%" href="/blog/tag{{ config.system.param_sep }}{{ tax }}">{{ tax }} | {{ pages|length }}</a>
+    <a class="label label-rounded" style="color:#3085ee;font-size:110%" href="/blog/tag{{ config.system.param_sep }}{{ tax }}">{{ tax }} | {{ pages|length }}</a>
 {% endfor %}
 </span>
 {% endif %}
