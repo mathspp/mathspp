@@ -11,10 +11,10 @@ visible: false
 {% set taxlist = taxonomy.getTaxonomyItemKeys("tag") %}
 
 {% if taxlist %}
-<ul>
+<span class="tags">
 {% for tax in taxlist|sort %}
-<li>{{ tax }}</li>
+    <a class="label label-rounded" href="/blog/tag{{ config.system.param_sep }}{{ tax }}">{{ tax }}</a>
 {% endfor %}
-</ul>
+</span>
 {% endif %}
 
