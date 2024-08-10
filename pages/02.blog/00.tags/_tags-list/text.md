@@ -1,6 +1,4 @@
-<h2>Listing of all blog tags</h2>
-
-<h3>Including tag descriptions</h3>
+<h2>Listing of all blog tags with descriptions</h2>
 
 <p>Click any tag to see all of the articles under that tag.</p>
 

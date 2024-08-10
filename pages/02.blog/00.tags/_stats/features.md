@@ -5,6 +5,6 @@ process:
 twig_first: true
 ---
 
-I use tags to help me categorise all of the articles in my blog:
+<p>I use tags to help me categorise all of the articles in my blog:</p>
 
 {% include "partials/blog/stats.html.twig" %}
