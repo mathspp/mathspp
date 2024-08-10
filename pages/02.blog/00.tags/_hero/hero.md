@@ -1,11 +1,18 @@
 <h1>Blog tags</h1>
 
-{% set taxlist = taxonomy.taxonomy()["tag"] %}
+{% set taxlist = taxonomy.taxonomy()["tag"]|sort|reverse %}
 
 {% if taxlist %}
 <span class="tags">
-{% for tax, pages in taxlist|sort|reverse %}
-    <a class="label label-rounded" style="color:#3085ee" href="/blog/tag{{ config.system.param_sep }}{{ tax }}">{{ tax }} | {{ pages|length }}</a>
+{% for tax, pages in taxlist|slice(0, 15) %}
+    <a class="label label-rounded" style="color:#3085ee;font-size:120%" href="/blog/tag{{ config.system.param_sep }}{{ tax }}">{{ tax }} | {{ pages|length }}</a>
+{% endfor %}
+</span>
+{% endif %}
+{% if taxlist %}
+<span class="tags">
+{% for tax, pages in taxlist|slice(15) %}
+    <a class="label label-rounded" style="color:#3085ee;" href="/blog/tag{{ config.system.param_sep }}{{ tax }}">{{ tax }} | {{ pages|length }}</a>
 {% endfor %}
 </span>
 {% endif %}
