@@ -1,8 +1,3 @@
----
-process: twig: true
-twig_first: true
----
-
 {% set taxlist = taxonomy.getTaxonomyItemKeys("tag")|sort %}
 
 {% if taxlist %}
