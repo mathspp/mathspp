@@ -30,6 +30,11 @@
             {% include 'partials/breadcrumbs.html.twig' %}
         {% endif %}
 
+        <!--Teste-->
+        {% if uri.param("tag") == "python" %}
+        <h3>Python</h3>
+        {% endif %}
+
         {% embed 'partials/layout.html.twig' with {blog: page} %}
             {% block item %}
 
