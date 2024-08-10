@@ -4,7 +4,7 @@
 
 {% if taxlist %}
 <span class="tags">
-{% for tax in taxlist|sort %}
+{% for tax in taxlist %}
     <a class="label label-rounded" href="/blog/tag{{ config.system.param_sep }}{{ tax }}">{{ tax }}</a>
 {% endfor %}
 </span>
