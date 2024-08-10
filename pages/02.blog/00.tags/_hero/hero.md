@@ -1,11 +1,3 @@
----
-process:
-    markdown: false
-    twig: true
-twig_first: true
-visible: false
----
-
 <h1>Blog tags</h1>
 
 {% set taxlist = taxonomy.getTaxonomyItemKeys("tag") %}
@@ -17,4 +9,3 @@ visible: false
 {% endfor %}
 </span>
 {% endif %}
-

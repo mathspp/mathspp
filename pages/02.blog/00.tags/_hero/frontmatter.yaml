@@ -1,0 +1,8 @@
+hero_classes: "parallax text-light hero-fullscreen overlay-dark-gradient" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
+hero_image: conf.webp
+title: Talks
+
+process:
+    markdown: false
+    twig: true
+twig_first: true
