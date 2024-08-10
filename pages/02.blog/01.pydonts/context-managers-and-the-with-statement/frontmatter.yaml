@@ -1,0 +1,17 @@
+date: 25-03-2024
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This article explores the syntax and use cases of context managers and the with statement."
+    og:image: "https://mathspp.com/blog/pydonts/context-managers-and-the-with-statement/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/pydonts/context-managers-and-the-with-statement/thumbnail.webp"
+references:
+  - "Python 3 Docs, The Python Standard Library, `contextlib`, [https://docs.python.org/3/library/contextlib.html](https://docs.python.org/3/library/contextlib.html) [last accessed 25-03-2024];"
+  - "Python 3 Docs, Data Model, With Statement Context Managers, [https://docs.python.org/3/reference/datamodel.html#with-statement-context-managers](https://docs.python.org/3/reference/datamodel.html#with-statement-context-managers) [last accessed 25-03-2024];"
+slug: "context-managers-and-the-with-statement"
+taxonomy:
+    category: [blogpost, pydont]
+    tag:
+      - "dunder methods"
+      - "programming"
+      - "python"
+title: "Context managers and the with statement | Pydon't 🐍"
