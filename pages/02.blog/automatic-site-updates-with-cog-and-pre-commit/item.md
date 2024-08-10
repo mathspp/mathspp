@@ -77,6 +77,7 @@ repos:
         files: '^pages/02\.blog/'
         types: [markdown]
         stages: [pre-commit]
+        pass_filenames: false
 ```
 
 This simple hook looks for changes in Markdown files under my blog folder.
