@@ -6,6 +6,7 @@ content:
         by: custom
         custom:
           - "_hero"
+          - "_tags-list"
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "Blog tag listing."
