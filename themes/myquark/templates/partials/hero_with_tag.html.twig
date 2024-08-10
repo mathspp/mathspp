@@ -9,7 +9,9 @@
         <span class="tags">
             <a class="label label-rounded" href="/blog/tag{{ config.system.param_sep }}{{ tag }}">{{ tag }}</a>
         </span>
-
+            {% if 'TAG_DESCRIPTIONS'[tag] != "" %}
+            : {{ 'TAG_DESCRIPTIONS'[tag] }}
+            {% endif %}
         </h2>
         {% else %}
         {% include "partials/blog/stats.html.twig" %}
