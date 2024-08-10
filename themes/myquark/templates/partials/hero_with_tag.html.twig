@@ -5,7 +5,12 @@
 
         {% set tag = uri.param("tag") %}
         {% if tag != "" %}
-        <a class="label label-rounded" href="/blog/tag{{ config.system.param_sep }}{{ tag }}">{{ tag }}</a>
+        <h2>
+        <span class="tags">
+            <a class="label label-rounded" href="/blog/tag{{ config.system.param_sep }}{{ tag }}">{{ tag }}</a>
+        </span>
+
+        </h2>
         {% else %}
         {% include "partials/blog/stats.html.twig" %}
         {% endif %}
