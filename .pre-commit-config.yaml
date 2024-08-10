@@ -9,3 +9,4 @@ repos:
         files: '^pages/02\.blog/.*item.*$'
         types: [markdown]
         stages: [pre-commit]
+        pass_filenames: false
