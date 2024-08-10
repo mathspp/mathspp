@@ -12,7 +12,7 @@
 {% if taxlist %}
 <span class="tags">
 {% for tax, pages in taxlist|slice(15) %}
-    <a class="label label-rounded" style="color:#3085ee;" href="/blog/tag{{ config.system.param_sep }}{{ tax }}">{{ tax }} | {{ pages|length }}</a>
+    <a class="label label-rounded" style="color:#3085ee;" href="/blog/tag{{ config.system.param_sep }}{{ tax }}">{{ tax }}</a>
 {% endfor %}
 </span>
 {% endif %}
