@@ -1,4 +1,6 @@
-<h1>Blog tags</h1>
+---
+process: twig: true
+---
 
 {% set taxlist = taxonomy.getTaxonomyItemKeys("tag")|sort %}
 
