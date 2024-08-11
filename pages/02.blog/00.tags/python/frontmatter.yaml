@@ -3,8 +3,7 @@ anchors:
 body_classes: "header-dark header-transparent"
 content:
     items:
-        taxonomy@.category: blogpost
-        taxonomy@.tag: python
+        "@taxonomy": {"category": "blogpost", "tag": "python"}
     limit: 20
     order:
         by: date
