@@ -18,10 +18,15 @@ metadata:
     og:description: "All of the mathspp blog articles about programming."
     og:image: "https://mathspp.com/blog/tags/programming/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/tags/programming/thumbnail.webp"
+title: "programming blog articles"
 ---
 
 # Programming articles
 
+<span class="stats-table">
+
 | 266 | 328310 | 31924 |
 | :-: | :-: | :-: |
 | articles | words | lines of code |
+
+</span>

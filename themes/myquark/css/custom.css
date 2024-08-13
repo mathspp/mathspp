@@ -583,3 +583,13 @@ pre:hover>div>i.clipboard-icon {
 kbd {
     font-size: 70%;
 }
+
+
+.stats-table table {
+    font-size: 4vmin;
+}
+
+.stats-table thead {
+    color: #f8f8f2;
+    border-bottom: 0;
+}

@@ -18,10 +18,15 @@ metadata:
     og:description: "All of the mathspp blog articles about interpreters."
     og:image: "https://mathspp.com/blog/tags/interpreters/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/tags/interpreters/thumbnail.webp"
+title: "interpreters blog articles"
 ---
 
 # Interpreters articles
 
+<span class="stats-table">
+
 | 15 | 34229 | 5813 |
 | :-: | :-: | :-: |
 | articles | words | lines of code |
+
+</span>

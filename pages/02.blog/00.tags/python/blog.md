@@ -18,10 +18,15 @@ metadata:
     og:description: "All of the mathspp blog articles about python."
     og:image: "https://mathspp.com/blog/tags/python/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/tags/python/thumbnail.webp"
+title: "python blog articles"
 ---
 
 # Python articles
 
+<span class="stats-table">
+
 | 251 | 320483 | 31220 |
 | :-: | :-: | :-: |
 | articles | words | lines of code |
+
+</span>

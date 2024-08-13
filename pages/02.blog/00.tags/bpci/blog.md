@@ -18,10 +18,15 @@ metadata:
     og:description: "All of the mathspp blog articles about bpci."
     og:image: "https://mathspp.com/blog/tags/bpci/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/tags/bpci/thumbnail.webp"
+title: "bpci blog articles"
 ---
 
 # Bpci articles
 
+<span class="stats-table">
+
 | 9 | 21754 | 4367 |
 | :-: | :-: | :-: |
 | articles | words | lines of code |
+
+</span>

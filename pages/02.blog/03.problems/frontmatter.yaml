@@ -8,7 +8,7 @@ content:
         by: date
         dir: desc
     pagination: true
-hero: hero.webp
+hero_image: hero.webp
 hero_classes: "text-light overlay-dark-gradient"  # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 menu: Problems
 metadata:
