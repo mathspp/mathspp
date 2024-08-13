@@ -585,12 +585,11 @@ kbd {
 }
 
 
-.stats-table table,
 table.stats-table {
     font-size: 4vmin;
 }
 
-.stats-table thead {
+table.stats-table thead {
     color: #f8f8f2;
     border-bottom: 0;
 }
