@@ -18,7 +18,7 @@ metadata:
     og:description: "All of the mathspp blog articles about programming."
     og:image: "https://mathspp.com/blog/tags/programming/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/tags/programming/thumbnail.webp"
-title: "programming blog articles"
+title: "Programming blog articles"
 ---
 
 # Programming articles

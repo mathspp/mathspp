@@ -18,7 +18,7 @@ metadata:
     og:description: "All of the mathspp blog articles about python."
     og:image: "https://mathspp.com/blog/tags/python/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/tags/python/thumbnail.webp"
-title: "python blog articles"
+title: "Python blog articles"
 ---
 
 # Python articles

@@ -18,7 +18,7 @@ metadata:
     og:description: "All of the mathspp blog articles about mathematics."
     og:image: "https://mathspp.com/blog/tags/mathematics/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/tags/mathematics/thumbnail.webp"
-title: "mathematics blog articles"
+title: "Mathematics blog articles"
 ---
 
 # Mathematics articles

@@ -18,7 +18,7 @@ metadata:
     og:description: "All of the mathspp blog articles about interpreters."
     og:image: "https://mathspp.com/blog/tags/interpreters/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/tags/interpreters/thumbnail.webp"
-title: "interpreters blog articles"
+title: "Interpreters blog articles"
 ---
 
 # Interpreters articles

@@ -18,7 +18,7 @@ metadata:
     og:description: "All of the mathspp blog articles about compilers."
     og:image: "https://mathspp.com/blog/tags/compilers/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/tags/compilers/thumbnail.webp"
-title: "compilers blog articles"
+title: "Compilers blog articles"
 ---
 
 # Compilers articles

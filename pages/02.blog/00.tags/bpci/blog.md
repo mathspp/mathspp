@@ -18,7 +18,7 @@ metadata:
     og:description: "All of the mathspp blog articles about bpci."
     og:image: "https://mathspp.com/blog/tags/bpci/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/tags/bpci/thumbnail.webp"
-title: "bpci blog articles"
+title: "Bpci blog articles"
 ---
 
 # Bpci articles
