@@ -10,7 +10,7 @@ content:
         by: date
         dir: desc
     pagination: true
-hero_image: /user/theme/myquark/images/common_hero.webp
+hero_image: /user/themes/myquark/images/common_hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 metadata:
     author: Rodrigo Girão Serrão
