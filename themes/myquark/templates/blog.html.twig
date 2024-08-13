@@ -1,4 +1,5 @@
 {% extends 'partials/base.html.twig' %}
+{% set hero_image_url = header_var("hero_image_url", [page])|defined("") %}
 {% set blog_image = page.media.images[page.header.hero_image] ?: page.media.images|first %}
 {% set collection = page.collection() %}
 {% set blog = page.find(header_var('blog_url')|defined(theme_var('blog-page'))) %}
@@ -19,7 +20,7 @@
 
 
 {% block hero %}
-    {% include 'partials/hero.html.twig' with {id: 'blog-hero', content: page.content, hero_image: blog_image} %}
+    {% include 'partials/hero.html.twig' with {id: 'blog-hero', content: page.content, hero_image_url: hero_image_url, hero_image: blog_image} %}
 {% endblock %}
 
 {% block body %}
