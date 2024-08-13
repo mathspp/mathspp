@@ -25,7 +25,9 @@ title: "python blog articles"
 
 
 <span class="stats-table">
+
 | 251 | 320483 | 31220 |
 | :-: | :-: | :-: |
 | articles | words | lines of code |
+
 </span>

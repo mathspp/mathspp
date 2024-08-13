@@ -25,7 +25,9 @@ title: "mathematics blog articles"
 
 
 <span class="stats-table">
+
 | 118 | 104728 | 4073 |
 | :-: | :-: | :-: |
 | articles | words | lines of code |
+
 </span>
