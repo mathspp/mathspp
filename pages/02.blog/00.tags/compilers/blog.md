@@ -24,8 +24,7 @@ title: "compilers blog articles"
 # Compilers articles
 
 
-<span class="stats-table">
-<table>
+<span class="stats-table"><table>
     <thead>
         <tr>
             <th style="text-align: center;">10</th>
@@ -40,5 +39,4 @@ title: "compilers blog articles"
             <td style="text-align: center;">lines of code</td>
         </tr>
     </tbody>
-</table>
-</span>
+</table></span>

@@ -24,8 +24,7 @@ title: "python blog articles"
 # Python articles
 
 
-<span class="stats-table">
-<table>
+<span class="stats-table"><table>
     <thead>
         <tr>
             <th style="text-align: center;">251</th>
@@ -40,5 +39,4 @@ title: "python blog articles"
             <td style="text-align: center;">lines of code</td>
         </tr>
     </tbody>
-</table>
-</span>
+</table></span>
