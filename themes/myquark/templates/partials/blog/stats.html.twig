@@ -3,12 +3,26 @@
 <!--
 [[[cog
 import cog, subprocess
-result = subprocess.run(["python", "pages/02.blog/stats.py"], text=True, capture_output=True)
+result = subprocess.run(["python", "tools/stats.py"], text=True, capture_output=True)
 cog.outl(result.stdout)
 ]]]-->
-| 362 | 400,054 | 32,892 |
-| :-: | :-: | :-: |
-| articles | words | lines of code |
+<table class="stats-table">
+    <thead>
+        <tr>
+            <th style="text-align: center;">362</th>
+            <th style="text-align: center;">400,054</th>
+            <th style="text-align: center;">32892</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: center;">articles</td>
+            <td style="text-align: center;">words</td>
+            <td style="text-align: center;">lines of code</td>
+        </tr>
+    </tbody>
+</table>
+
 <!--[[[end]]]--->
 {% endmarkdown %}
 </span>
