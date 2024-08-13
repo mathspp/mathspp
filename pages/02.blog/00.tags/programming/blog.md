@@ -24,7 +24,7 @@ title: "programming blog articles"
 # Programming articles
 
 
-<span class="stats-table"><table>
+<table class="stats-table">
     <thead>
         <tr>
             <th style="text-align: center;">266</th>
@@ -39,4 +39,4 @@ title: "programming blog articles"
             <td style="text-align: center;">lines of code</td>
         </tr>
     </tbody>
-</table></span>
+</table>

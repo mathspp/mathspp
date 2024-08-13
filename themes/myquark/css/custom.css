@@ -585,7 +585,8 @@ kbd {
 }
 
 
-.stats-table table {
+.stats-table table,
+table.stats-table {
     font-size: 4vmin;
 }
 
