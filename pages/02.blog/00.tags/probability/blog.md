@@ -27,8 +27,8 @@ title: "Probability blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">6</th>
-            <th style="text-align: center;">5,868</th>
+            <th style="text-align: center;">4</th>
+            <th style="text-align: center;">5,090</th>
             
         </tr>
     </thead>

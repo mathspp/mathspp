@@ -27,8 +27,8 @@ title: "Pocket maths blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">4</th>
-            <th style="text-align: center;">3,785</th>
+            <th style="text-align: center;">2</th>
+            <th style="text-align: center;">3,007</th>
             
         </tr>
     </thead>
