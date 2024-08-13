@@ -4,7 +4,7 @@ taxonomy:
     tag:
       - mathematics
       - probability
-      - what-are-the-odds
+      - what are the odds
       - programming
       - python
       - pocket maths
