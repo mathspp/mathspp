@@ -25,9 +25,20 @@ title: "mathematics blog articles"
 
 
 <span class="stats-table">
-
-| 118 | 104728 | 4073 |
-| :-: | :-: | :-: |
-| articles | words | lines of code |
-
+<table>
+    <thead>
+        <tr>
+            <th style="text-align: center;">118</th>
+            <th style="text-align: center;">104728</th>
+            <th style="text-align: center;">4073</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: center;">articles</td>
+            <td style="text-align: center;">words</td>
+            <td style="text-align: center;">lines of code</td>
+        </tr>
+    </tbody>
+</table>
 </span>

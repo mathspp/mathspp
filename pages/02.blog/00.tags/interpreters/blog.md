@@ -25,9 +25,20 @@ title: "interpreters blog articles"
 
 
 <span class="stats-table">
-
-| 15 | 34229 | 5813 |
-| :-: | :-: | :-: |
-| articles | words | lines of code |
-
+<table>
+    <thead>
+        <tr>
+            <th style="text-align: center;">15</th>
+            <th style="text-align: center;">34229</th>
+            <th style="text-align: center;">5813</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: center;">articles</td>
+            <td style="text-align: center;">words</td>
+            <td style="text-align: center;">lines of code</td>
+        </tr>
+    </tbody>
+</table>
 </span>

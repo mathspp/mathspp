@@ -25,9 +25,20 @@ title: "programming blog articles"
 
 
 <span class="stats-table">
-
-| 266 | 328310 | 31924 |
-| :-: | :-: | :-: |
-| articles | words | lines of code |
-
+<table>
+    <thead>
+        <tr>
+            <th style="text-align: center;">266</th>
+            <th style="text-align: center;">328310</th>
+            <th style="text-align: center;">31924</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: center;">articles</td>
+            <td style="text-align: center;">words</td>
+            <td style="text-align: center;">lines of code</td>
+        </tr>
+    </tbody>
+</table>
 </span>

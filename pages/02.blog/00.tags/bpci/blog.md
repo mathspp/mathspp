@@ -25,9 +25,20 @@ title: "bpci blog articles"
 
 
 <span class="stats-table">
-
-| 9 | 21754 | 4367 |
-| :-: | :-: | :-: |
-| articles | words | lines of code |
-
+<table>
+    <thead>
+        <tr>
+            <th style="text-align: center;">9</th>
+            <th style="text-align: center;">21754</th>
+            <th style="text-align: center;">4367</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: center;">articles</td>
+            <td style="text-align: center;">words</td>
+            <td style="text-align: center;">lines of code</td>
+        </tr>
+    </tbody>
+</table>
 </span>

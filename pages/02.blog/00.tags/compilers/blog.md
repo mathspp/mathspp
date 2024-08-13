@@ -25,9 +25,20 @@ title: "compilers blog articles"
 
 
 <span class="stats-table">
-
-| 10 | 21206 | 4180 |
-| :-: | :-: | :-: |
-| articles | words | lines of code |
-
+<table>
+    <thead>
+        <tr>
+            <th style="text-align: center;">10</th>
+            <th style="text-align: center;">21206</th>
+            <th style="text-align: center;">4180</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: center;">articles</td>
+            <td style="text-align: center;">words</td>
+            <td style="text-align: center;">lines of code</td>
+        </tr>
+    </tbody>
+</table>
 </span>

@@ -25,9 +25,20 @@ title: "python blog articles"
 
 
 <span class="stats-table">
-
-| 251 | 320483 | 31220 |
-| :-: | :-: | :-: |
-| articles | words | lines of code |
-
+<table>
+    <thead>
+        <tr>
+            <th style="text-align: center;">251</th>
+            <th style="text-align: center;">320483</th>
+            <th style="text-align: center;">31220</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: center;">articles</td>
+            <td style="text-align: center;">words</td>
+            <td style="text-align: center;">lines of code</td>
+        </tr>
+    </tbody>
+</table>
 </span>
