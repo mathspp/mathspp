@@ -23,10 +23,9 @@ title: "interpreters blog articles"
 
 # Interpreters articles
 
-<span class="stats-table">
 
+<span class="stats-table">
 | 15 | 34229 | 5813 |
 | :-: | :-: | :-: |
 | articles | words | lines of code |
-
 </span>

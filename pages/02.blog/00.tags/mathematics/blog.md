@@ -23,10 +23,9 @@ title: "mathematics blog articles"
 
 # Mathematics articles
 
-<span class="stats-table">
 
+<span class="stats-table">
 | 118 | 104728 | 4073 |
 | :-: | :-: | :-: |
 | articles | words | lines of code |
-
 </span>

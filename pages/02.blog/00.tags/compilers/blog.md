@@ -23,10 +23,9 @@ title: "compilers blog articles"
 
 # Compilers articles
 
-<span class="stats-table">
 
+<span class="stats-table">
 | 10 | 21206 | 4180 |
 | :-: | :-: | :-: |
 | articles | words | lines of code |
-
 </span>

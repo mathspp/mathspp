@@ -23,10 +23,9 @@ title: "bpci blog articles"
 
 # Bpci articles
 
-<span class="stats-table">
 
+<span class="stats-table">
 | 9 | 21754 | 4367 |
 | :-: | :-: | :-: |
 | articles | words | lines of code |
-
 </span>

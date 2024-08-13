@@ -23,10 +23,9 @@ title: "programming blog articles"
 
 # Programming articles
 
-<span class="stats-table">
 
+<span class="stats-table">
 | 266 | 328310 | 31924 |
 | :-: | :-: | :-: |
 | articles | words | lines of code |
-
 </span>
