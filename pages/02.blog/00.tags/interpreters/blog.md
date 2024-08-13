@@ -28,8 +28,8 @@ title: "interpreters blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">15</th>
-            <th style="text-align: center;">34229</th>
-            <th style="text-align: center;">5813</th>
+            <th style="text-align: center;">34,229</th>
+            <th style="text-align: center;">5,813</th>
         </tr>
     </thead>
     <tbody>

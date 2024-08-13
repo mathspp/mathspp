@@ -28,8 +28,8 @@ title: "compilers blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">10</th>
-            <th style="text-align: center;">21206</th>
-            <th style="text-align: center;">4180</th>
+            <th style="text-align: center;">21,206</th>
+            <th style="text-align: center;">4,180</th>
         </tr>
     </thead>
     <tbody>

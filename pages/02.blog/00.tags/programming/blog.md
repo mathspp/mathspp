@@ -28,8 +28,8 @@ title: "programming blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">266</th>
-            <th style="text-align: center;">328310</th>
-            <th style="text-align: center;">31924</th>
+            <th style="text-align: center;">328,310</th>
+            <th style="text-align: center;">31,924</th>
         </tr>
     </thead>
     <tbody>

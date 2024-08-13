@@ -28,8 +28,8 @@ title: "mathematics blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">118</th>
-            <th style="text-align: center;">104728</th>
-            <th style="text-align: center;">4073</th>
+            <th style="text-align: center;">104,728</th>
+            <th style="text-align: center;">4,073</th>
         </tr>
     </thead>
     <tbody>
