@@ -290,6 +290,9 @@ blockquote {
 }
 
 /* Background colour for blog tags. */
+.label,
+.label.label-secondary,
+.label.label-primary,
 .tags .label {
     background: #202a37;
 }
@@ -301,6 +304,8 @@ blockquote {
 
 .label.label-primary.tag-title {
     font-size: 4rem;
+    border-radius: 1rem;
+    background: #202a37;
 }
 
 /* Borders for the pagination numbers at the top of the blog listings. */
