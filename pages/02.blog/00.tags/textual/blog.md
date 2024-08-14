@@ -21,11 +21,8 @@ metadata:
 title: "Textual blog articles"
 ---
 
-# “TEXTUAL” tag
 
-
-## Articles about the Python module Textual to create terminal user interfaces
-
+# The Python module Textual to create terminal user interfaces
 
 
 <table class="stats-table">

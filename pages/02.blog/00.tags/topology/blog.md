@@ -21,11 +21,8 @@ metadata:
 title: "Topology blog articles"
 ---
 
-# “TOPOLOGY” tag
 
-
-## Articles about the mathematical field of topology
-
+# The mathematical field of topology
 
 
 <table class="stats-table">

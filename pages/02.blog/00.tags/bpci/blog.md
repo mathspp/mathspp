@@ -21,11 +21,8 @@ metadata:
 title: "Bpci blog articles"
 ---
 
-# “BPCI” tag
 
-
-## The article series “Building a Python Compiler and Interpreter”
-
+# Article series “Building a Python Compiler and Interpreter”
 
 
 <table class="stats-table">

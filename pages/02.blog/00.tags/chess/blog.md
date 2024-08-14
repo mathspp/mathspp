@@ -21,11 +21,8 @@ metadata:
 title: "Chess blog articles"
 ---
 
-# “CHESS” tag
 
-
-## Articles about the game of chess
-
+# The game of chess
 
 
 <table class="stats-table">

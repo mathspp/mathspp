@@ -21,11 +21,8 @@ metadata:
 title: "Pigeonhole principle blog articles"
 ---
 
-# “PIGEONHOLE PRINCIPLE” tag
 
-
-## Articles about the pigeonhole principle and its applications
-
+# The pigeonhole principle and its applications
 
 
 <table class="stats-table">

@@ -21,11 +21,8 @@ metadata:
 title: "Opinion blog articles"
 ---
 
-# “OPINION” tag
 
-
-## Opinion pieces and rants
-
+# Opinion pieces and rants
 
 
 <table class="stats-table">

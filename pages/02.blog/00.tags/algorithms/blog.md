@@ -21,11 +21,8 @@ metadata:
 title: "Algorithms blog articles"
 ---
 
-# “ALGORITHMS” tag
 
-
-## Articles about a specific algorithm or that feature a specific algorithm proeminently
-
+# Implementation and use cases for computer science algorithms
 
 
 <table class="stats-table">

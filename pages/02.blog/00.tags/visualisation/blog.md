@@ -21,11 +21,8 @@ metadata:
 title: "Visualisation blog articles"
 ---
 
-# “VISUALISATION” tag
 
-
-## Articles that feature visualisations of algorithms, simulations, and others
-
+# Articles that feature visualisations of algorithms, simulations, and others
 
 
 <table class="stats-table">

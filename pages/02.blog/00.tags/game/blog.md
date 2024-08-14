@@ -21,11 +21,8 @@ metadata:
 title: "Game blog articles"
 ---
 
-# “GAME” tag
 
-
-## Articles about (the implementation of) games
-
+# Articles about (the implementation of) games
 
 
 <table class="stats-table">

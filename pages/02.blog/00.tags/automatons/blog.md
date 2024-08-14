@@ -21,11 +21,8 @@ metadata:
 title: "Automatons blog articles"
 ---
 
-# “AUTOMATONS” tag
 
-
-## Articles about applications of automatons
-
+# Applications of automatons
 
 
 <table class="stats-table">

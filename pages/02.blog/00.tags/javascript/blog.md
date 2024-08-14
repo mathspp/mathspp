@@ -21,11 +21,8 @@ metadata:
 title: "Javascript blog articles"
 ---
 
-# “JAVASCRIPT” tag
 
-
-## Articles about the programming language JavaScript
-
+# The programming language JavaScript
 
 
 <table class="stats-table">

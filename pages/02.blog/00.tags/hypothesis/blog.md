@@ -21,11 +21,8 @@ metadata:
 title: "Hypothesis blog articles"
 ---
 
-# “HYPOTHESIS” tag
 
-
-## Articles about the property-based testing framework Hypothesis
-
+# The property-based testing framework Hypothesis
 
 
 <table class="stats-table">

@@ -21,11 +21,8 @@ metadata:
 title: "Floats blog articles"
 ---
 
-# “FLOATS” tag
 
-
-## Articles about the quirks of, and the theory behind, floats
-
+# The quirks of, and the theory behind, floats
 
 
 <table class="stats-table">

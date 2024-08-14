@@ -21,11 +21,8 @@ metadata:
 title: "Random walks blog articles"
 ---
 
-# “RANDOM WALKS” tag
 
-
-## Articles about the generation, and applications, of random walks
-
+# The generation, and applications, of random walks
 
 
 <table class="stats-table">

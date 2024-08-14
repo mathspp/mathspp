@@ -21,11 +21,8 @@ metadata:
 title: "Geometry blog articles"
 ---
 
-# “GEOMETRY” tag
 
-
-## Articles about the mathematical branch that deals with shapes and their properties
-
+# The mathematical branch that deals with shapes and their properties
 
 
 <table class="stats-table">

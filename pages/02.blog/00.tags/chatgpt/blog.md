@@ -21,11 +21,8 @@ metadata:
 title: "Chatgpt blog articles"
 ---
 
-# “CHATGPT” tag
 
-
-## Articles about usages of ChatGPT and other LLMs
-
+# Usages of ChatGPT and other LLMs
 
 
 <table class="stats-table">

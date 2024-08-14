@@ -21,11 +21,8 @@ metadata:
 title: "Networking blog articles"
 ---
 
-# “NETWORKING” tag
 
-
-## Articles and tutorials on networking and its applications
-
+# Articles and tutorials on networking and its applications
 
 
 <table class="stats-table">

@@ -21,11 +21,8 @@ metadata:
 title: "Scroll art blog articles"
 ---
 
-# “SCROLL ART” tag
 
-
-## Articles about the generation of patterns of ASCII characters in the terminal
-
+# The generation of patterns of ASCII characters in the terminal
 
 
 <table class="stats-table">

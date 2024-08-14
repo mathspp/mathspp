@@ -21,11 +21,8 @@ metadata:
 title: "Compilers blog articles"
 ---
 
-# “COMPILERS” tag
 
-
-## Articles about implementing or using (parts of) compilers
-
+# Implementing or using (parts of) compilers
 
 
 <table class="stats-table">

@@ -21,12 +21,11 @@ metadata:
 title: "{{ tag.capitalize() }} blog articles"
 ---
 
-# “{{ tag.upper() }}” tag
-
 {% if description %}
-## {{ description }}
+# {{ description }}
+{% else %}
+# “{{ tag.upper() }}” tag
 {% endif %}
-
 
 <table class="stats-table">
     <thead>

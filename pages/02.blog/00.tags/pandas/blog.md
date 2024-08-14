@@ -21,11 +21,8 @@ metadata:
 title: "Pandas blog articles"
 ---
 
-# “PANDAS” tag
 
-
-## Articles about the Python module for data manipulation Pandas
-
+# The Python module for data manipulation Pandas
 
 
 <table class="stats-table">

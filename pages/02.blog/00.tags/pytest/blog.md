@@ -21,11 +21,8 @@ metadata:
 title: "Pytest blog articles"
 ---
 
-# “PYTEST” tag
 
-
-## Articles about the Python testing module Pytest
-
+# The Python testing module Pytest
 
 
 <table class="stats-table">

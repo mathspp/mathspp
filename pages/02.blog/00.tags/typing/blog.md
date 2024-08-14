@@ -21,11 +21,8 @@ metadata:
 title: "Typing blog articles"
 ---
 
-# “TYPING” tag
 
-
-## Articles about typed languages, usage tutorials, and typing in Python
-
+# Typed languages, usage tutorials, and typing in Python
 
 
 <table class="stats-table">

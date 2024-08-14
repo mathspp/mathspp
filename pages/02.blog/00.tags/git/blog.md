@@ -21,11 +21,8 @@ metadata:
 title: "Git blog articles"
 ---
 
-# “GIT” tag
 
-
-## Articles about the revision control system git
-
+# The revision control system git
 
 
 <table class="stats-table">

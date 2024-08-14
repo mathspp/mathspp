@@ -21,11 +21,8 @@ metadata:
 title: "Github blog articles"
 ---
 
-# “GITHUB” tag
 
-
-## Articles about the service
-
+# GitHub
 
 
 <table class="stats-table">

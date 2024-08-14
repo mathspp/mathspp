@@ -21,11 +21,8 @@ metadata:
 title: "Open source blog articles"
 ---
 
-# “OPEN SOURCE” tag
 
-
-## Articles about the open source movement
-
+# The open source movement
 
 
 <table class="stats-table">

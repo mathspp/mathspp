@@ -21,11 +21,8 @@ metadata:
 title: "Optimisation blog articles"
 ---
 
-# “OPTIMISATION” tag
 
-
-## Articles about the mathematical concept and computer science algorithms
-
+# The mathematical concept and computer science algorithms
 
 
 <table class="stats-table">

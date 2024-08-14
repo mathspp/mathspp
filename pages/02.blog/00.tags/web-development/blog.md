@@ -21,11 +21,8 @@ metadata:
 title: "Web development blog articles"
 ---
 
-# “WEB DEVELOPMENT” tag
 
-
-## Articles about web development
-
+# Web development
 
 
 <table class="stats-table">

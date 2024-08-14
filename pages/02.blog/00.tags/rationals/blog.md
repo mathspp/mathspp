@@ -21,11 +21,8 @@ metadata:
 title: "Rationals blog articles"
 ---
 
-# “RATIONALS” tag
 
-
-## Articles about the set of rational numbers
-
+# The set of rational numbers
 
 
 <table class="stats-table">

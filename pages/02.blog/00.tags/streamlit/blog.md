@@ -21,11 +21,8 @@ metadata:
 title: "Streamlit blog articles"
 ---
 
-# “STREAMLIT” tag
 
-
-## Articles about the Python module to create dashboards Streamlit
-
+# The Python module to create dashboards Streamlit
 
 
 <table class="stats-table">

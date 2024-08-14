@@ -21,11 +21,8 @@ metadata:
 title: "Dunder methods blog articles"
 ---
 
-# “DUNDER METHODS” tag
 
-
-## Articles about the dunder methods in Python
-
+# The dunder methods in Python
 
 
 <table class="stats-table">

@@ -21,11 +21,8 @@ metadata:
 title: "Concurrency blog articles"
 ---
 
-# “CONCURRENCY” tag
 
-
-## Articles about the subject of concurrency
-
+# The subject of concurrency
 
 
 <table class="stats-table">

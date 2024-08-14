@@ -21,11 +21,8 @@ metadata:
 title: "Data structures blog articles"
 ---
 
-# “DATA STRUCTURES” tag
 
-
-## Articles that focus on the implementation or use cases of specific data structures
-
+# Articles that focus on the implementation or use cases of specific data structures
 
 
 <table class="stats-table">

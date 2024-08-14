@@ -21,11 +21,8 @@ metadata:
 title: "Rust blog articles"
 ---
 
-# “RUST” tag
 
-
-## Articles about the programming language Rust
-
+# The programming language Rust
 
 
 <table class="stats-table">

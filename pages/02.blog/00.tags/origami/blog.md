@@ -21,11 +21,8 @@ metadata:
 title: "Origami blog articles"
 ---
 
-# “ORIGAMI” tag
 
-
-## Articles about the folding practice
-
+# The folding practice of origami
 
 
 <table class="stats-table">

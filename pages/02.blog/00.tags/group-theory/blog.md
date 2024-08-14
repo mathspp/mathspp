@@ -21,11 +21,8 @@ metadata:
 title: "Group theory blog articles"
 ---
 
-# “GROUP THEORY” tag
 
-
-## Articles about the mathematical field of group theory and its applications
-
+# The mathematical field of group theory and its applications
 
 
 <table class="stats-table">

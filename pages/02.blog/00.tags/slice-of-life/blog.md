@@ -21,11 +21,8 @@ metadata:
 title: "Slice of life blog articles"
 ---
 
-# “SLICE OF LIFE” tag
 
-
-## Articles about the practical application of mathematics and/or programming to the day-to-day life
-
+# The practical application of mathematics and/or programming to the day-to-day life
 
 
 <table class="stats-table">

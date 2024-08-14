@@ -21,11 +21,8 @@ metadata:
 title: "Vscode blog articles"
 ---
 
-# “VSCODE” tag
 
-
-## Articles about the usage of Visual Studio Code
-
+# The usage of Visual Studio Code
 
 
 <table class="stats-table">

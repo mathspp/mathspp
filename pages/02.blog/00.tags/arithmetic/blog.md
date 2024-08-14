@@ -21,11 +21,8 @@ metadata:
 title: "Arithmetic blog articles"
 ---
 
-# “ARITHMETIC” tag
 
-
-## Articles about the basic operations
-
+# The four basic mathematical operations
 
 
 <table class="stats-table">

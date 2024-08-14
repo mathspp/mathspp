@@ -21,11 +21,8 @@ metadata:
 title: "Game theory blog articles"
 ---
 
-# “GAME THEORY” tag
 
-
-## Articles about the mathematical field of game theory and its applications
-
+# The mathematical field of game theory and its applications
 
 
 <table class="stats-table">

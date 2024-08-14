@@ -21,11 +21,8 @@ metadata:
 title: "Grammars blog articles"
 ---
 
-# “GRAMMARS” tag
 
-
-## Articles about the computer science concept of a grammar
-
+# The computer science concept of a grammar
 
 
 <table class="stats-table">

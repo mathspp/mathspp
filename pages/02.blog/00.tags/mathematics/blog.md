@@ -21,11 +21,8 @@ metadata:
 title: "Mathematics blog articles"
 ---
 
-# “MATHEMATICS” tag
 
-
-## Articles about mathematics
-
+# Mathematics
 
 
 <table class="stats-table">

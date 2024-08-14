@@ -21,11 +21,8 @@ metadata:
 title: "Pygame blog articles"
 ---
 
-# “PYGAME” tag
 
-
-## Articles that use the Python module pygame to create games, visualisations, and more
-
+# Articles that use the Python module pygame to create games, visualisations, and more
 
 
 <table class="stats-table">

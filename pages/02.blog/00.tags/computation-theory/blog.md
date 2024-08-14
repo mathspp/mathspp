@@ -21,11 +21,8 @@ metadata:
 title: "Computation theory blog articles"
 ---
 
-# “COMPUTATION THEORY” tag
 
-
-## Articles about the field of computation theory
-
+# The field of computation theory
 
 
 <table class="stats-table">

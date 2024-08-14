@@ -21,11 +21,8 @@ metadata:
 title: "Parsers blog articles"
 ---
 
-# “PARSERS” tag
 
-
-## Articles about the implementation of parsers
-
+# The implementation of parsers
 
 
 <table class="stats-table">

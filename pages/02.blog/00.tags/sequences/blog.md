@@ -21,11 +21,8 @@ metadata:
 title: "Sequences blog articles"
 ---
 
-# “SEQUENCES” tag
 
-
-## Articles about the mathematical concept of sequences and their applications
-
+# The mathematical concept of sequences and their applications
 
 
 <table class="stats-table">

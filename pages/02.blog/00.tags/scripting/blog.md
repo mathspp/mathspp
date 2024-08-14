@@ -21,11 +21,8 @@ metadata:
 title: "Scripting blog articles"
 ---
 
-# “SCRIPTING” tag
 
-
-## Articles about the practice of creating small practical scripts to automate tasks
-
+# The practice of creating small practical scripts to automate tasks
 
 
 <table class="stats-table">

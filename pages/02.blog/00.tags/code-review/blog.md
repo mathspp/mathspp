@@ -21,11 +21,8 @@ metadata:
 title: "Code review blog articles"
 ---
 
-# “CODE REVIEW” tag
 
-
-## Articles where we explore the elegance of a piece of code
-
+# Articles where we explore the elegance of a piece of code
 
 
 <table class="stats-table">

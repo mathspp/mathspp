@@ -21,11 +21,8 @@ metadata:
 title: "Image processing blog articles"
 ---
 
-# “IMAGE PROCESSING” tag
 
-
-## Articles about the computer science field of image processing
-
+# The computer science field of image processing
 
 
 <table class="stats-table">

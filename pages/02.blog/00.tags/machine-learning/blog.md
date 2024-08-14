@@ -21,11 +21,8 @@ metadata:
 title: "Machine learning blog articles"
 ---
 
-# “MACHINE LEARNING” tag
 
-
-## Articles about machine learning algorithms, experiments, and more
-
+# Machine learning algorithms, experiments, and more
 
 
 <table class="stats-table">

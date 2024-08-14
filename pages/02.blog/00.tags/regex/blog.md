@@ -21,11 +21,8 @@ metadata:
 title: "Regex blog articles"
 ---
 
-# “REGEX” tag
 
-
-## Articles about regular expressions and their applications
-
+# Regular expressions and their applications
 
 
 <table class="stats-table">

@@ -21,11 +21,8 @@ metadata:
 title: "Simulation blog articles"
 ---
 
-# “SIMULATION” tag
 
-
-## Articles about the implementation of simulations of various sorts
-
+# The implementation of simulations of various sorts
 
 
 <table class="stats-table">

@@ -21,11 +21,8 @@ metadata:
 title: "Haskell blog articles"
 ---
 
-# “HASKELL” tag
 
-
-## Articles about the programming language Haskell
-
+# The programming language Haskell
 
 
 <table class="stats-table">

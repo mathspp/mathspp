@@ -21,11 +21,8 @@ metadata:
 title: "Statistics blog articles"
 ---
 
-# “STATISTICS” tag
 
-
-## Articles about the mathematical field of statistics and its applications
-
+# The mathematical field of statistics and its applications
 
 
 <table class="stats-table">

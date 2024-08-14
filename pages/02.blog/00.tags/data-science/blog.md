@@ -21,11 +21,8 @@ metadata:
 title: "Data science blog articles"
 ---
 
-# “DATA SCIENCE” tag
 
-
-## Articles about the field, including example applications and algorithm implementations
-
+# The field of data science, including example applications and algorithm implementations
 
 
 <table class="stats-table">

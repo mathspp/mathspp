@@ -21,11 +21,8 @@ metadata:
 title: "Recursion blog articles"
 ---
 
-# “RECURSION” tag
 
-
-## Articles about the mathematical and computer science concept of recursion
-
+# The mathematical and computer science concept of recursion
 
 
 <table class="stats-table">

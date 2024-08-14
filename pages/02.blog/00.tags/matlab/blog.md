@@ -21,11 +21,8 @@ metadata:
 title: "Matlab blog articles"
 ---
 
-# “MATLAB” tag
 
-
-## Articles about the programming language MATLAB
-
+# The programming language MATLAB
 
 
 <table class="stats-table">

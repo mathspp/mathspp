@@ -21,11 +21,8 @@ metadata:
 title: "Metaprogramming blog articles"
 ---
 
-# “METAPROGRAMMING” tag
 
-
-## Articles and tutorials on the concept of metaprogramming
-
+# Articles and tutorials on the concept of metaprogramming
 
 
 <table class="stats-table">

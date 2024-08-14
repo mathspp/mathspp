@@ -21,11 +21,8 @@ metadata:
 title: "Modules blog articles"
 ---
 
-# “MODULES” tag
 
-
-## Articles specifically about a Python module
-
+# Deep dives on Python modules
 
 
 <table class="stats-table">

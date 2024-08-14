@@ -21,11 +21,8 @@ metadata:
 title: "Binary blog articles"
 ---
 
-# “BINARY” tag
 
-
-## Articles about binary expansion and its applications
-
+# Binary expansion and its applications
 
 
 <table class="stats-table">

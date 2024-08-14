@@ -21,11 +21,8 @@ metadata:
 title: "Number theory blog articles"
 ---
 
-# “NUMBER THEORY” tag
 
-
-## Articles about the mathematical field of number theory and its applications
-
+# The mathematical field of number theory and its applications
 
 
 <table class="stats-table">

@@ -21,11 +21,8 @@ metadata:
 title: "Matplotlib blog articles"
 ---
 
-# “MATPLOTLIB” tag
 
-
-## Articles about the Python plotting module matplotlib
-
+# The Python plotting module matplotlib
 
 
 <table class="stats-table">

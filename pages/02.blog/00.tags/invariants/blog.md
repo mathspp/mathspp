@@ -21,11 +21,8 @@ metadata:
 title: "Invariants blog articles"
 ---
 
-# “INVARIANTS” tag
 
-
-## Articles about the mathematical concept of invariants
-
+# The mathematical concept of invariants
 
 
 <table class="stats-table">

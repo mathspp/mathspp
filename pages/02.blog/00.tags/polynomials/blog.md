@@ -21,11 +21,8 @@ metadata:
 title: "Polynomials blog articles"
 ---
 
-# “POLYNOMIALS” tag
 
-
-## Articles about polynomial functions and their properties
-
+# Polynomial functions and their properties
 
 
 <table class="stats-table">

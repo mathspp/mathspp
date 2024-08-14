@@ -21,11 +21,8 @@ metadata:
 title: "Apl blog articles"
 ---
 
-# “APL” tag
 
-
-## Articles about the APL programming language
-
+# The APL programming language
 
 
 <table class="stats-table">

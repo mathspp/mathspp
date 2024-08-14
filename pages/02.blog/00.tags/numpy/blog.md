@@ -21,11 +21,8 @@ metadata:
 title: "Numpy blog articles"
 ---
 
-# “NUMPY” tag
 
-
-## Articles about the Python module for numerical computing NumPy
-
+# The Python module for numerical computing NumPy
 
 
 <table class="stats-table">

@@ -21,11 +21,8 @@ metadata:
 title: "Programming blog articles"
 ---
 
-# “PROGRAMMING” tag
 
-
-## Articles that include code in some form
-
+# Articles that include code in some form
 
 
 <table class="stats-table">

@@ -21,11 +21,8 @@ metadata:
 title: "Primes blog articles"
 ---
 
-# “PRIMES” tag
 
-
-## Articles about the prime numbers and their properties
-
+# The prime numbers and their properties
 
 
 <table class="stats-table">

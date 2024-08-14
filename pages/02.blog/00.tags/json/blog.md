@@ -21,11 +21,8 @@ metadata:
 title: "Json blog articles"
 ---
 
-# “JSON” tag
 
-
-## Articles about the data format JSON
-
+# The data format JSON
 
 
 <table class="stats-table">

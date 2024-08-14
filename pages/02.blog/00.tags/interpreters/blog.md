@@ -21,11 +21,8 @@ metadata:
 title: "Interpreters blog articles"
 ---
 
-# “INTERPRETERS” tag
 
-
-## Articles about working with, or implementing, interpreters
-
+# Implementing and playing with interpreters
 
 
 <table class="stats-table">

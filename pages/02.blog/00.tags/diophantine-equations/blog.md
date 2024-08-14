@@ -21,11 +21,8 @@ metadata:
 title: "Diophantine equations blog articles"
 ---
 
-# “DIOPHANTINE EQUATIONS” tag
 
-
-## Articles about this type of equation
-
+# This type of equation
 
 
 <table class="stats-table">

@@ -21,11 +21,8 @@ metadata:
 title: "Combinatorics blog articles"
 ---
 
-# “COMBINATORICS” tag
 
-
-## Articles about the branch of mathematics dedicated to counting and arranging things
-
+# The branch of mathematics dedicated to counting and arranging things
 
 
 <table class="stats-table">

@@ -21,11 +21,8 @@ metadata:
 title: "Testing blog articles"
 ---
 
-# “TESTING” tag
 
-
-## Articles about the practice of writing tests for your programs
-
+# The practice of writing tests for your programs
 
 
 <table class="stats-table">

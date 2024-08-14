@@ -21,11 +21,8 @@ metadata:
 title: "Logic blog articles"
 ---
 
-# “LOGIC” tag
 
-
-## Articles about logic, including logical puzzles or challenges
-
+# Logical puzzles and challenges
 
 
 <table class="stats-table">

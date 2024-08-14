@@ -21,11 +21,8 @@ metadata:
 title: "Repl blog articles"
 ---
 
-# “REPL” tag
 
-
-## Articles about the Python REPL
-
+# The Python REPL
 
 
 <table class="stats-table">

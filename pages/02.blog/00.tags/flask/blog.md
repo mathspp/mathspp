@@ -21,11 +21,8 @@ metadata:
 title: "Flask blog articles"
 ---
 
-# “FLASK” tag
 
-
-## Articles about the Flask web framework
-
+# The Flask web framework
 
 
 <table class="stats-table">

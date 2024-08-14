@@ -21,11 +21,8 @@ metadata:
 title: "Brainfuck blog articles"
 ---
 
-# “BRAINFUCK” tag
 
-
-## Articles about the esoteric programming language called brainfuck
-
+# The brainfuck esoteric programming language
 
 
 <table class="stats-table">

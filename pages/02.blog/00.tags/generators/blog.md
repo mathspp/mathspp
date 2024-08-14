@@ -21,11 +21,8 @@ metadata:
 title: "Generators blog articles"
 ---
 
-# “GENERATORS” tag
 
-
-## Articles about the Python concept of generators
-
+# Python generators
 
 
 <table class="stats-table">

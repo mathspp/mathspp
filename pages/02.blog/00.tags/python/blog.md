@@ -21,11 +21,8 @@ metadata:
 title: "Python blog articles"
 ---
 
-# “PYTHON” tag
 
-
-## Articles about the Python programming language or that include Python code
-
+# The Python programming language, tutorials, and more
 
 
 <table class="stats-table">
