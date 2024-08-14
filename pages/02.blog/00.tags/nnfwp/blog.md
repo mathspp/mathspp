@@ -21,7 +21,11 @@ metadata:
 title: "Nnfwp blog articles"
 ---
 
-# Nnfwp articles
+# <a href="/blog/tags/nnfwp" class="label label-primary tag-title">nnfwp</a>
+
+
+## The article series “neural networks fundamentals with python”
+
 
 
 <table class="stats-table">

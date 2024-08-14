@@ -21,7 +21,11 @@ metadata:
 title: "Textual blog articles"
 ---
 
-# Textual articles
+# <a href="/blog/tags/textual" class="label label-primary tag-title">textual</a>
+
+
+## Articles about the python module textual to create terminal user interfaces
+
 
 
 <table class="stats-table">

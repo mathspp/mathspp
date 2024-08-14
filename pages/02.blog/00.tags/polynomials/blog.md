@@ -21,7 +21,11 @@ metadata:
 title: "Polynomials blog articles"
 ---
 
-# Polynomials articles
+# <a href="/blog/tags/polynomials" class="label label-primary tag-title">polynomials</a>
+
+
+## Articles about polynomial functions and their properties
+
 
 
 <table class="stats-table">

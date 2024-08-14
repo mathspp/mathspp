@@ -21,22 +21,26 @@ metadata:
 title: "Invariants blog articles"
 ---
 
-# Invariants articles
+# <a href="/blog/tags/invariants" class="label label-primary tag-title">invariants</a>
+
+
+## Articles about the mathematical concept of invariants
+
 
 
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">6</th>
-            <th style="text-align: center;">3,110</th>
-            
+            <th style="text-align: center;">7</th>
+            <th style="text-align: center;">3,616</th>
+            <th style="text-align: center;">25</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td style="text-align: center;">articles</td>
             <td style="text-align: center;">words</td>
-            
+            <td style="text-align: center;">lines of code</td>
         </tr>
     </tbody>
 </table>

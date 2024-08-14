@@ -21,7 +21,11 @@ metadata:
 title: "Pandas blog articles"
 ---
 
-# Pandas articles
+# <a href="/blog/tags/pandas" class="label label-primary tag-title">pandas</a>
+
+
+## Articles about the python module for data manipulation pandas
+
 
 
 <table class="stats-table">

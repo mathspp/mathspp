@@ -21,15 +21,19 @@ metadata:
 title: "Typing blog articles"
 ---
 
-# Typing articles
+# <a href="/blog/tags/typing" class="label label-primary tag-title">typing</a>
+
+
+## Articles about typed languages, usage tutorials, and typing in python
+
 
 
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">2</th>
-            <th style="text-align: center;">930</th>
-            <th style="text-align: center;">101</th>
+            <th style="text-align: center;">3</th>
+            <th style="text-align: center;">1,469</th>
+            <th style="text-align: center;">123</th>
         </tr>
     </thead>
     <tbody>

@@ -1,12 +1,12 @@
 from collections import Counter, defaultdict
 from pathlib import Path
 import re
-import shutil
 
 from ruamel.yaml import YAML
 from jinja2 import Environment, FileSystemLoader
 from PIL import Image, ImageDraw, ImageFont
 
+TAG_DESCRIPTIONS_FILE = (Path(__file__).parent.parent / "languages/en.yaml").resolve()
 BLOG_TEMPLATE_FILE = "blog.md.template"
 JINJA_TEMPLATE_DIR = Path(__file__).parent
 JINJA_ENV = Environment(loader=FileSystemLoader(JINJA_TEMPLATE_DIR))
@@ -74,8 +74,8 @@ def get_stats(contents: str):
     }
 
 
-def build_blog_for_tag(folder, template, tag, context):
-    text = template.render(context, tag=tag, capitalized_tag=tag.capitalize())
+def build_blog_for_tag(folder, template, tag, context, description):
+    text = template.render(context, tag=tag, description=description)
     (folder / "blog.md").write_text(text)
 
 
@@ -197,10 +197,14 @@ def main():
 
     del aggregated_stats["__all"]
 
+    tag_descriptions = YAML_LOADER.load(TAG_DESCRIPTIONS_FILE.read_text())[
+        "TAG_DESCRIPTIONS"
+    ]
+
     for tag, stats in aggregated_stats.items():
         folder = TAGS_FOLDER / tag.replace(" ", "-")
         folder.mkdir(exist_ok=True)
-        build_blog_for_tag(folder, BLOG_TEMPLATE, tag, stats)
+        build_blog_for_tag(folder, BLOG_TEMPLATE, tag, stats, tag_descriptions.get(tag))
         build_thumbnail_for_tag(folder, tag, stats)
 
 

@@ -21,14 +21,18 @@ metadata:
 title: "Algorithms blog articles"
 ---
 
-# Algorithms articles
+# <a href="/blog/tags/algorithms" class="label label-primary tag-title">algorithms</a>
+
+
+## Articles about a specific algorithm or that feature a specific algorithm proeminently
+
 
 
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">16</th>
-            <th style="text-align: center;">18,280</th>
+            <th style="text-align: center;">17</th>
+            <th style="text-align: center;">18,815</th>
             <th style="text-align: center;">1,822</th>
         </tr>
     </thead>

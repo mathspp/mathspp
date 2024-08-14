@@ -21,7 +21,11 @@ metadata:
 title: "Numpy blog articles"
 ---
 
-# Numpy articles
+# <a href="/blog/tags/numpy" class="label label-primary tag-title">numpy</a>
+
+
+## Articles about the python module for numerical computing numpy
+
 
 
 <table class="stats-table">

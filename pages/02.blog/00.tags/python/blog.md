@@ -21,7 +21,11 @@ metadata:
 title: "Python blog articles"
 ---
 
-# Python articles
+# <a href="/blog/tags/python" class="label label-primary tag-title">python</a>
+
+
+## Articles about the python programming language or that include python code
+
 
 
 <table class="stats-table">

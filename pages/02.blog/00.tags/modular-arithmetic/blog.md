@@ -21,7 +21,11 @@ metadata:
 title: "Modular arithmetic blog articles"
 ---
 
-# Modular arithmetic articles
+# <a href="/blog/tags/modular arithmetic" class="label label-primary tag-title">modular arithmetic</a>
+
+
+## Articles about the mathematical field of modular arithmetic
+
 
 
 <table class="stats-table">

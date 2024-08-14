@@ -21,7 +21,11 @@ metadata:
 title: "Generators blog articles"
 ---
 
-# Generators articles
+# <a href="/blog/tags/generators" class="label label-primary tag-title">generators</a>
+
+
+## Articles about the python concept of generators
+
 
 
 <table class="stats-table">

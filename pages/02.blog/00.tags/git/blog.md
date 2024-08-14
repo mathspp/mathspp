@@ -21,7 +21,11 @@ metadata:
 title: "Git blog articles"
 ---
 
-# Git articles
+# <a href="/blog/tags/git" class="label label-primary tag-title">git</a>
+
+
+## Articles about the revision control system git
+
 
 
 <table class="stats-table">

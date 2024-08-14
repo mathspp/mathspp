@@ -21,7 +21,11 @@ metadata:
 title: "Apl blog articles"
 ---
 
-# Apl articles
+# <a href="/blog/tags/apl" class="label label-primary tag-title">apl</a>
+
+
+## Articles about the apl programming language
+
 
 
 <table class="stats-table">

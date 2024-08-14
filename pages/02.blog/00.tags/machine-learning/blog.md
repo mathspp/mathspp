@@ -21,7 +21,11 @@ metadata:
 title: "Machine learning blog articles"
 ---
 
-# Machine learning articles
+# <a href="/blog/tags/machine learning" class="label label-primary tag-title">machine learning</a>
+
+
+## Articles about machine learning algorithms, experiments, and more
+
 
 
 <table class="stats-table">

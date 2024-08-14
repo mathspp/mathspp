@@ -21,7 +21,11 @@ metadata:
 title: "Code review blog articles"
 ---
 
-# Code review articles
+# <a href="/blog/tags/code review" class="label label-primary tag-title">code review</a>
+
+
+## Articles where we explore the elegance of a piece of code
+
 
 
 <table class="stats-table">

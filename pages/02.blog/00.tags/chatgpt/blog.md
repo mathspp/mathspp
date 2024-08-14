@@ -21,7 +21,11 @@ metadata:
 title: "Chatgpt blog articles"
 ---
 
-# Chatgpt articles
+# <a href="/blog/tags/chatgpt" class="label label-primary tag-title">chatgpt</a>
+
+
+## Articles about usages of chatgpt and other llms
+
 
 
 <table class="stats-table">

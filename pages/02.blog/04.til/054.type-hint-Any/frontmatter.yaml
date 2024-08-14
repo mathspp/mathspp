@@ -14,6 +14,6 @@ taxonomy:
     tag:
       - programming
       - python
-      - type hints
+      - typing
 title: "TIL #054 – type hint Any"
 visible: false

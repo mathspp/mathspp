@@ -21,7 +21,11 @@ metadata:
 title: "Brainfuck blog articles"
 ---
 
-# Brainfuck articles
+# <a href="/blog/tags/brainfuck" class="label label-primary tag-title">brainfuck</a>
+
+
+## Articles about the esoteric programming language called brainfuck
+
 
 
 <table class="stats-table">

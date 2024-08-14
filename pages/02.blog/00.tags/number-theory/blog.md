@@ -21,7 +21,11 @@ metadata:
 title: "Number theory blog articles"
 ---
 
-# Number theory articles
+# <a href="/blog/tags/number theory" class="label label-primary tag-title">number theory</a>
+
+
+## Articles about the mathematical field of number theory and its applications
+
 
 
 <table class="stats-table">

@@ -21,7 +21,11 @@ metadata:
 title: "Dunder methods blog articles"
 ---
 
-# Dunder methods articles
+# <a href="/blog/tags/dunder methods" class="label label-primary tag-title">dunder methods</a>
+
+
+## Articles about the dunder methods in python
+
 
 
 <table class="stats-table">

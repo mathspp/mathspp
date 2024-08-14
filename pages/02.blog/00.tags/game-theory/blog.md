@@ -21,7 +21,11 @@ metadata:
 title: "Game theory blog articles"
 ---
 
-# Game theory articles
+# <a href="/blog/tags/game theory" class="label label-primary tag-title">game theory</a>
+
+
+## Articles about the mathematical field of game theory and its applications
+
 
 
 <table class="stats-table">

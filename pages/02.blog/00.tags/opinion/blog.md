@@ -21,7 +21,11 @@ metadata:
 title: "Opinion blog articles"
 ---
 
-# Opinion articles
+# <a href="/blog/tags/opinion" class="label label-primary tag-title">opinion</a>
+
+
+## Opinion pieces
+
 
 
 <table class="stats-table">

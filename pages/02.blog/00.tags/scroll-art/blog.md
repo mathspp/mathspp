@@ -21,7 +21,11 @@ metadata:
 title: "Scroll art blog articles"
 ---
 
-# Scroll art articles
+# <a href="/blog/tags/scroll art" class="label label-primary tag-title">scroll art</a>
+
+
+## Articles about the generation of patterns of ascii characters in the terminal
+
 
 
 <table class="stats-table">

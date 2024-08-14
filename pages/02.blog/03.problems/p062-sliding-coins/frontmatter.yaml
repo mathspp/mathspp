@@ -10,7 +10,7 @@ slug: sliding-coins
 taxonomy:
     category: [blogpost, problem]
     tag:
-      - invariant
+      - invariants
       - logic
       - mathematics
 title: "Problem #062 – sliding coins"

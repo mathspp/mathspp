@@ -21,7 +21,11 @@ metadata:
 title: "Combinatorics blog articles"
 ---
 
-# Combinatorics articles
+# <a href="/blog/tags/combinatorics" class="label label-primary tag-title">combinatorics</a>
+
+
+## Articles about the branch of mathematics dedicated to counting and arranging things
+
 
 
 <table class="stats-table">

@@ -21,7 +21,11 @@ metadata:
 title: "Arithmetic blog articles"
 ---
 
-# Arithmetic articles
+# <a href="/blog/tags/arithmetic" class="label label-primary tag-title">arithmetic</a>
+
+
+## Articles about the basic operations
+
 
 
 <table class="stats-table">

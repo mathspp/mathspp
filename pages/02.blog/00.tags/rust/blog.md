@@ -21,7 +21,11 @@ metadata:
 title: "Rust blog articles"
 ---
 
-# Rust articles
+# <a href="/blog/tags/rust" class="label label-primary tag-title">rust</a>
+
+
+## Articles about the programming language rust
+
 
 
 <table class="stats-table">

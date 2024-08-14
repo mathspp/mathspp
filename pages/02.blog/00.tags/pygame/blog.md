@@ -21,7 +21,11 @@ metadata:
 title: "Pygame blog articles"
 ---
 
-# Pygame articles
+# <a href="/blog/tags/pygame" class="label label-primary tag-title">pygame</a>
+
+
+## Articles that use the python module pygame to create games, visualisations, and more
+
 
 
 <table class="stats-table">

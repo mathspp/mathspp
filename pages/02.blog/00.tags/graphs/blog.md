@@ -21,14 +21,18 @@ metadata:
 title: "Graphs blog articles"
 ---
 
-# Graphs articles
+# <a href="/blog/tags/graphs" class="label label-primary tag-title">graphs</a>
+
+
+## Articles about the mathematical concept of a graph and its computer science applications
+
 
 
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">6</th>
-            <th style="text-align: center;">8,109</th>
+            <th style="text-align: center;">7</th>
+            <th style="text-align: center;">8,470</th>
             <th style="text-align: center;">213</th>
         </tr>
     </thead>

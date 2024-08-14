@@ -8,7 +8,7 @@ slug: "015"
 taxonomy:
     category: [blogpost, til]
     tag:
+      - graphs
       - mathematics
-      - networks
 title: "TIL #015 – DARPA network challenge"
 visible: false

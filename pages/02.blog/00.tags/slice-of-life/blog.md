@@ -21,14 +21,18 @@ metadata:
 title: "Slice of life blog articles"
 ---
 
-# Slice of life articles
+# <a href="/blog/tags/slice of life" class="label label-primary tag-title">slice of life</a>
+
+
+## Articles about the practical application of mathematics and/or programming to the day-to-day life
+
 
 
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">9</th>
-            <th style="text-align: center;">8,299</th>
+            <th style="text-align: center;">10</th>
+            <th style="text-align: center;">9,085</th>
             <th style="text-align: center;">453</th>
         </tr>
     </thead>

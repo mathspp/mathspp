@@ -21,7 +21,11 @@ metadata:
 title: "Probability blog articles"
 ---
 
-# Probability articles
+# <a href="/blog/tags/probability" class="label label-primary tag-title">probability</a>
+
+
+## Articles about the mathematical field of probability and its applications
+
 
 
 <table class="stats-table">

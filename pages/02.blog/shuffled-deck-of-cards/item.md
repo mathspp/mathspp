@@ -7,7 +7,7 @@ taxonomy:
       - what are the odds
       - programming
       - python
-      - pocket maths
+      - slice of life
 title: A shuffled deck of cards?
 ---
 

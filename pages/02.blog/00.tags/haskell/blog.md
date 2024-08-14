@@ -21,7 +21,11 @@ metadata:
 title: "Haskell blog articles"
 ---
 
-# Haskell articles
+# <a href="/blog/tags/haskell" class="label label-primary tag-title">haskell</a>
+
+
+## Articles about the programming language haskell
+
 
 
 <table class="stats-table">

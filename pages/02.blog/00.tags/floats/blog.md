@@ -21,7 +21,11 @@ metadata:
 title: "Floats blog articles"
 ---
 
-# Floats articles
+# <a href="/blog/tags/floats" class="label label-primary tag-title">floats</a>
+
+
+## Articles about the quirks of, and the theory behind, floats
+
 
 
 <table class="stats-table">

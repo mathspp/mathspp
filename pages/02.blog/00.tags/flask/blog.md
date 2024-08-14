@@ -21,7 +21,11 @@ metadata:
 title: "Flask blog articles"
 ---
 
-# Flask articles
+# <a href="/blog/tags/flask" class="label label-primary tag-title">flask</a>
+
+
+## Articles about the flask web framework
+
 
 
 <table class="stats-table">

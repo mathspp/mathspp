@@ -21,7 +21,11 @@ metadata:
 title: "Topology blog articles"
 ---
 
-# Topology articles
+# <a href="/blog/tags/topology" class="label label-primary tag-title">topology</a>
+
+
+## Articles about the mathematical field of topology
+
 
 
 <table class="stats-table">

@@ -21,7 +21,11 @@ metadata:
 title: "Primes blog articles"
 ---
 
-# Primes articles
+# <a href="/blog/tags/primes" class="label label-primary tag-title">primes</a>
+
+
+## Articles about the prime numbers and their properties
+
 
 
 <table class="stats-table">

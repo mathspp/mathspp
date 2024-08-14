@@ -21,7 +21,11 @@ metadata:
 title: "Sequences blog articles"
 ---
 
-# Sequences articles
+# <a href="/blog/tags/sequences" class="label label-primary tag-title">sequences</a>
+
+
+## Articles about the mathematical concept of sequences and their applications
+
 
 
 <table class="stats-table">

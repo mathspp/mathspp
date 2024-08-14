@@ -21,7 +21,11 @@ metadata:
 title: "Programming blog articles"
 ---
 
-# Programming articles
+# <a href="/blog/tags/programming" class="label label-primary tag-title">programming</a>
+
+
+## Articles that include code in some form
+
 
 
 <table class="stats-table">

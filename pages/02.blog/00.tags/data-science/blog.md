@@ -21,7 +21,11 @@ metadata:
 title: "Data science blog articles"
 ---
 
-# Data science articles
+# <a href="/blog/tags/data science" class="label label-primary tag-title">data science</a>
+
+
+## Articles about the field, including example applications and algorithm implementations
+
 
 
 <table class="stats-table">

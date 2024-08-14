@@ -21,7 +21,11 @@ metadata:
 title: "Data structures blog articles"
 ---
 
-# Data structures articles
+# <a href="/blog/tags/data structures" class="label label-primary tag-title">data structures</a>
+
+
+## Articles that focus on the implementation or use cases of specific data structures
+
 
 
 <table class="stats-table">

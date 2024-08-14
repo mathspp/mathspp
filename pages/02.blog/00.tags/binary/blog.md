@@ -21,7 +21,11 @@ metadata:
 title: "Binary blog articles"
 ---
 
-# Binary articles
+# <a href="/blog/tags/binary" class="label label-primary tag-title">binary</a>
+
+
+## Articles about binary expansion and its applications
+
 
 
 <table class="stats-table">

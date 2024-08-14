@@ -21,7 +21,11 @@ metadata:
 title: "Diophantine equations blog articles"
 ---
 
-# Diophantine equations articles
+# <a href="/blog/tags/diophantine equations" class="label label-primary tag-title">diophantine equations</a>
+
+
+## Articles about this type of equation
+
 
 
 <table class="stats-table">

@@ -21,7 +21,11 @@ metadata:
 title: "Chess blog articles"
 ---
 
-# Chess articles
+# <a href="/blog/tags/chess" class="label label-primary tag-title">chess</a>
+
+
+## Articles about the game of chess
+
 
 
 <table class="stats-table">

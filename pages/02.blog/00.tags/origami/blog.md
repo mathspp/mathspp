@@ -21,7 +21,11 @@ metadata:
 title: "Origami blog articles"
 ---
 
-# Origami articles
+# <a href="/blog/tags/origami" class="label label-primary tag-title">origami</a>
+
+
+## Articles about the folding practice
+
 
 
 <table class="stats-table">
