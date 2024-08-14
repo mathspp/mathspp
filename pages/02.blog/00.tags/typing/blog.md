@@ -21,10 +21,10 @@ metadata:
 title: "Typing blog articles"
 ---
 
-# “typing” tag
+# “TYPING” tag
 
 
-## articles about typed languages, usage tutorials, and typing in Python
+## Articles about typed languages, usage tutorials, and typing in Python
 
 
 

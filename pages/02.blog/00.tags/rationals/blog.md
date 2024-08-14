@@ -21,10 +21,10 @@ metadata:
 title: "Rationals blog articles"
 ---
 
-# “rationals” tag
+# “RATIONALS” tag
 
 
-## articles about the set of rational numbers
+## Articles about the set of rational numbers
 
 
 

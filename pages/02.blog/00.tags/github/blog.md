@@ -21,10 +21,10 @@ metadata:
 title: "Github blog articles"
 ---
 
-# “github” tag
+# “GITHUB” tag
 
 
-## articles about the service
+## Articles about the service
 
 
 

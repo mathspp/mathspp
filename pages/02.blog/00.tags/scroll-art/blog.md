@@ -21,10 +21,10 @@ metadata:
 title: "Scroll art blog articles"
 ---
 
-# “scroll art” tag
+# “SCROLL ART” tag
 
 
-## articles about the generation of patterns of ASCII characters in the terminal
+## Articles about the generation of patterns of ASCII characters in the terminal
 
 
 

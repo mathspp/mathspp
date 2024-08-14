@@ -21,10 +21,10 @@ metadata:
 title: "Chess blog articles"
 ---
 
-# “chess” tag
+# “CHESS” tag
 
 
-## articles about the game of chess
+## Articles about the game of chess
 
 
 

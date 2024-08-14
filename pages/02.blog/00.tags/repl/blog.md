@@ -21,10 +21,10 @@ metadata:
 title: "Repl blog articles"
 ---
 
-# “repl” tag
+# “REPL” tag
 
 
-## articles about the Python REPL
+## Articles about the Python REPL
 
 
 

@@ -21,10 +21,10 @@ metadata:
 title: "Data structures blog articles"
 ---
 
-# “data structures” tag
+# “DATA STRUCTURES” tag
 
 
-## articles that focus on the implementation or use cases of specific data structures
+## Articles that focus on the implementation or use cases of specific data structures
 
 
 

@@ -21,10 +21,10 @@ metadata:
 title: "Recursion blog articles"
 ---
 
-# “recursion” tag
+# “RECURSION” tag
 
 
-## articles about the mathematical and computer science concept of recursion
+## Articles about the mathematical and computer science concept of recursion
 
 
 

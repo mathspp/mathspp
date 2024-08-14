@@ -21,10 +21,10 @@ metadata:
 title: "Javascript blog articles"
 ---
 
-# “javascript” tag
+# “JAVASCRIPT” tag
 
 
-## articles about the programming language JavaScript
+## Articles about the programming language JavaScript
 
 
 

@@ -21,10 +21,10 @@ metadata:
 title: "Flask blog articles"
 ---
 
-# “flask” tag
+# “FLASK” tag
 
 
-## articles about the Flask web framework
+## Articles about the Flask web framework
 
 
 

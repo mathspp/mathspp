@@ -21,10 +21,10 @@ metadata:
 title: "Grammars blog articles"
 ---
 
-# “grammars” tag
+# “GRAMMARS” tag
 
 
-## articles about the computer science concept of a grammar
+## Articles about the computer science concept of a grammar
 
 
 

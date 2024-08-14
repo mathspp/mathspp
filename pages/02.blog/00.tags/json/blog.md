@@ -21,10 +21,10 @@ metadata:
 title: "Json blog articles"
 ---
 
-# “json” tag
+# “JSON” tag
 
 
-## articles about the data format JSON
+## Articles about the data format JSON
 
 
 

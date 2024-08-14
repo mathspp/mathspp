@@ -21,10 +21,10 @@ metadata:
 title: "Productivity blog articles"
 ---
 
-# “productivity” tag
+# “PRODUCTIVITY” tag
 
 
-## articles about using Python, coding, and tools, to increase your productivity
+## Articles about using Python, coding, and tools, to increase your productivity
 
 
 

@@ -21,10 +21,10 @@ metadata:
 title: "Concurrency blog articles"
 ---
 
-# “concurrency” tag
+# “CONCURRENCY” tag
 
 
-## articles about the subject of concurrency
+## Articles about the subject of concurrency
 
 
 

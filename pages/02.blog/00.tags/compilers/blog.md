@@ -21,10 +21,10 @@ metadata:
 title: "Compilers blog articles"
 ---
 
-# “compilers” tag
+# “COMPILERS” tag
 
 
-## articles about implementing or using (parts of) compilers
+## Articles about implementing or using (parts of) compilers
 
 
 

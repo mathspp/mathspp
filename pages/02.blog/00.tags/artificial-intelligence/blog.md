@@ -21,10 +21,10 @@ metadata:
 title: "Artificial intelligence blog articles"
 ---
 
-# “artificial intelligence” tag
+# “ARTIFICIAL INTELLIGENCE” tag
 
 
-## articles about the field of AI, its algorithms, and applications
+## Articles about the field of AI, its algorithms, and applications
 
 
 

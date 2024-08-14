@@ -21,10 +21,10 @@ metadata:
 title: "Topology blog articles"
 ---
 
-# “topology” tag
+# “TOPOLOGY” tag
 
 
-## articles about the mathematical field of topology
+## Articles about the mathematical field of topology
 
 
 

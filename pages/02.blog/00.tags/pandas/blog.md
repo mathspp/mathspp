@@ -21,10 +21,10 @@ metadata:
 title: "Pandas blog articles"
 ---
 
-# “pandas” tag
+# “PANDAS” tag
 
 
-## articles about the Python module for data manipulation Pandas
+## Articles about the Python module for data manipulation Pandas
 
 
 

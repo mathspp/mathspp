@@ -21,10 +21,10 @@ metadata:
 title: "Metaprogramming blog articles"
 ---
 
-# “metaprogramming” tag
+# “METAPROGRAMMING” tag
 
 
-## articles and tutorials on the concept of metaprogramming
+## Articles and tutorials on the concept of metaprogramming
 
 
 

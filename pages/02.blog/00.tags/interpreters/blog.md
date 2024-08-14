@@ -21,10 +21,10 @@ metadata:
 title: "Interpreters blog articles"
 ---
 
-# “interpreters” tag
+# “INTERPRETERS” tag
 
 
-## articles about working with, or implementing, interpreters
+## Articles about working with, or implementing, interpreters
 
 
 

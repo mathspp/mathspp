@@ -21,10 +21,10 @@ metadata:
 title: "Statistics blog articles"
 ---
 
-# “statistics” tag
+# “STATISTICS” tag
 
 
-## articles about the mathematical field of statistics and its applications
+## Articles about the mathematical field of statistics and its applications
 
 
 

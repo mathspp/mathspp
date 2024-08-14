@@ -21,10 +21,10 @@ metadata:
 title: "Pytest blog articles"
 ---
 
-# “pytest” tag
+# “PYTEST” tag
 
 
-## articles about the Python testing module Pytest
+## Articles about the Python testing module Pytest
 
 
 

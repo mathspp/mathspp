@@ -21,7 +21,7 @@ metadata:
 title: "{{ tag.capitalize() }} blog articles"
 ---
 
-# “{{ tag }}” tag
+# “{{ tag.upper() }}” tag
 
 {% if description %}
 ## {{ description }}

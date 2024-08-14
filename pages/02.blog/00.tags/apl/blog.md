@@ -21,10 +21,10 @@ metadata:
 title: "Apl blog articles"
 ---
 
-# “apl” tag
+# “APL” tag
 
 
-## articles about the APL programming language
+## Articles about the APL programming language
 
 
 

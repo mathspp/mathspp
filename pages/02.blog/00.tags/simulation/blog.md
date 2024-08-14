@@ -21,10 +21,10 @@ metadata:
 title: "Simulation blog articles"
 ---
 
-# “simulation” tag
+# “SIMULATION” tag
 
 
-## articles about the implementation of simulations of various sorts
+## Articles about the implementation of simulations of various sorts
 
 
 

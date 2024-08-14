@@ -21,10 +21,10 @@ metadata:
 title: "Open source blog articles"
 ---
 
-# “open source” tag
+# “OPEN SOURCE” tag
 
 
-## articles about the open source movement
+## Articles about the open source movement
 
 
 

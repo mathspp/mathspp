@@ -21,10 +21,10 @@ metadata:
 title: "Number theory blog articles"
 ---
 
-# “number theory” tag
+# “NUMBER THEORY” tag
 
 
-## articles about the mathematical field of number theory and its applications
+## Articles about the mathematical field of number theory and its applications
 
 
 

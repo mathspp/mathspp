@@ -21,10 +21,10 @@ metadata:
 title: "Networking blog articles"
 ---
 
-# “networking” tag
+# “NETWORKING” tag
 
 
-## articles and tutorials on networking and its applications
+## Articles and tutorials on networking and its applications
 
 
 

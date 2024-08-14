@@ -21,10 +21,10 @@ metadata:
 title: "Nnfwp blog articles"
 ---
 
-# “nnfwp” tag
+# “NNFWP” tag
 
 
-## the article series “Neural Networks Fundamentals With Python”
+## The article series “Neural Networks Fundamentals With Python”
 
 
 

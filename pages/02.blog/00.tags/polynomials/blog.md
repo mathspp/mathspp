@@ -21,10 +21,10 @@ metadata:
 title: "Polynomials blog articles"
 ---
 
-# “polynomials” tag
+# “POLYNOMIALS” tag
 
 
-## articles about polynomial functions and their properties
+## Articles about polynomial functions and their properties
 
 
 

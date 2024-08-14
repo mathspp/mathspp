@@ -21,10 +21,10 @@ metadata:
 title: "Matlab blog articles"
 ---
 
-# “matlab” tag
+# “MATLAB” tag
 
 
-## articles about the programming language MATLAB
+## Articles about the programming language MATLAB
 
 
 

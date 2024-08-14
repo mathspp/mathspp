@@ -21,10 +21,10 @@ metadata:
 title: "Logic blog articles"
 ---
 
-# “logic” tag
+# “LOGIC” tag
 
 
-## articles about logic, including logical puzzles or challenges
+## Articles about logic, including logical puzzles or challenges
 
 
 

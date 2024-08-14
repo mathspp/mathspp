@@ -21,10 +21,10 @@ metadata:
 title: "Game blog articles"
 ---
 
-# “game” tag
+# “GAME” tag
 
 
-## articles about (the implementation of) games
+## Articles about (the implementation of) games
 
 
 

@@ -21,10 +21,10 @@ metadata:
 title: "Lsbasi-apl blog articles"
 ---
 
-# “lsbasi-apl” tag
+# “LSBASI-APL” tag
 
 
-## the article series “Let's Build a Simple Interpreter – APL”
+## The article series “Let's Build a Simple Interpreter – APL”
 
 
 

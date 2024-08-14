@@ -21,10 +21,10 @@ metadata:
 title: "Scripting blog articles"
 ---
 
-# “scripting” tag
+# “SCRIPTING” tag
 
 
-## articles about the practice of creating small practical scripts to automate tasks
+## Articles about the practice of creating small practical scripts to automate tasks
 
 
 

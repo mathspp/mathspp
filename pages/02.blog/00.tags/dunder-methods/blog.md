@@ -21,10 +21,10 @@ metadata:
 title: "Dunder methods blog articles"
 ---
 
-# “dunder methods” tag
+# “DUNDER METHODS” tag
 
 
-## articles about the dunder methods in Python
+## Articles about the dunder methods in Python
 
 
 

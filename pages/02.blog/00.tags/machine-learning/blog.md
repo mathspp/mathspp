@@ -21,10 +21,10 @@ metadata:
 title: "Machine learning blog articles"
 ---
 
-# “machine learning” tag
+# “MACHINE LEARNING” tag
 
 
-## articles about machine learning algorithms, experiments, and more
+## Articles about machine learning algorithms, experiments, and more
 
 
 

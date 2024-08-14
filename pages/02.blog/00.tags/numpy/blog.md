@@ -21,10 +21,10 @@ metadata:
 title: "Numpy blog articles"
 ---
 
-# “numpy” tag
+# “NUMPY” tag
 
 
-## articles about the Python module for numerical computing NumPy
+## Articles about the Python module for numerical computing NumPy
 
 
 

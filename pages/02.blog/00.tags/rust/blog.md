@@ -21,10 +21,10 @@ metadata:
 title: "Rust blog articles"
 ---
 
-# “rust” tag
+# “RUST” tag
 
 
-## articles about the programming language Rust
+## Articles about the programming language Rust
 
 
 

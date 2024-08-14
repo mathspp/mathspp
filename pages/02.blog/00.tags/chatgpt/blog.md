@@ -21,10 +21,10 @@ metadata:
 title: "Chatgpt blog articles"
 ---
 
-# “chatgpt” tag
+# “CHATGPT” tag
 
 
-## articles about usages of ChatGPT and other LLMs
+## Articles about usages of ChatGPT and other LLMs
 
 
 

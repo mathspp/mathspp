@@ -21,10 +21,10 @@ metadata:
 title: "Vscode blog articles"
 ---
 
-# “vscode” tag
+# “VSCODE” tag
 
 
-## articles about the usage of Visual Studio Code
+## Articles about the usage of Visual Studio Code
 
 
 

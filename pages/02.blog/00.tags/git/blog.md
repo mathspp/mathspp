@@ -21,10 +21,10 @@ metadata:
 title: "Git blog articles"
 ---
 
-# “git” tag
+# “GIT” tag
 
 
-## articles about the revision control system git
+## Articles about the revision control system git
 
 
 

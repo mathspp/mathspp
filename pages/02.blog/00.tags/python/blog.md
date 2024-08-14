@@ -21,10 +21,10 @@ metadata:
 title: "Python blog articles"
 ---
 
-# “python” tag
+# “PYTHON” tag
 
 
-## articles about the Python programming language or that include Python code
+## Articles about the Python programming language or that include Python code
 
 
 

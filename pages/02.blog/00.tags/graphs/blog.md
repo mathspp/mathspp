@@ -21,10 +21,10 @@ metadata:
 title: "Graphs blog articles"
 ---
 
-# “graphs” tag
+# “GRAPHS” tag
 
 
-## articles about the mathematical concept of a graph and its computer science applications
+## Articles about the mathematical concept of a graph and its computer science applications
 
 
 

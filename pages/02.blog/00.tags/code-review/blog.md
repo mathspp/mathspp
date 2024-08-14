@@ -21,10 +21,10 @@ metadata:
 title: "Code review blog articles"
 ---
 
-# “code review” tag
+# “CODE REVIEW” tag
 
 
-## articles where we explore the elegance of a piece of code
+## Articles where we explore the elegance of a piece of code
 
 
 

@@ -21,10 +21,10 @@ metadata:
 title: "Induction blog articles"
 ---
 
-# “induction” tag
+# “INDUCTION” tag
 
 
-## articles about the mathematical concept of induction
+## Articles about the mathematical concept of induction
 
 
 

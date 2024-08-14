@@ -21,10 +21,10 @@ metadata:
 title: "Modular arithmetic blog articles"
 ---
 
-# “modular arithmetic” tag
+# “MODULAR ARITHMETIC” tag
 
 
-## articles about the mathematical field of modular arithmetic
+## Articles about the mathematical field of modular arithmetic
 
 
 

@@ -21,10 +21,10 @@ metadata:
 title: "Programming blog articles"
 ---
 
-# “programming” tag
+# “PROGRAMMING” tag
 
 
-## articles that include code in some form
+## Articles that include code in some form
 
 
 

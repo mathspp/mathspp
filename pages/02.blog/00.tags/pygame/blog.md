@@ -21,10 +21,10 @@ metadata:
 title: "Pygame blog articles"
 ---
 
-# “pygame” tag
+# “PYGAME” tag
 
 
-## articles that use the Python module pygame to create games, visualisations, and more
+## Articles that use the Python module pygame to create games, visualisations, and more
 
 
 

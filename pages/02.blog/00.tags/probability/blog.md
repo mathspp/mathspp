@@ -21,10 +21,10 @@ metadata:
 title: "Probability blog articles"
 ---
 
-# “probability” tag
+# “PROBABILITY” tag
 
 
-## articles about the mathematical field of probability and its applications
+## Articles about the mathematical field of probability and its applications
 
 
 

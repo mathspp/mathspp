@@ -21,10 +21,10 @@ metadata:
 title: "Testing blog articles"
 ---
 
-# “testing” tag
+# “TESTING” tag
 
 
-## articles about the practice of writing tests for your programs
+## Articles about the practice of writing tests for your programs
 
 
 

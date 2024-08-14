@@ -21,10 +21,10 @@ metadata:
 title: "Fractals blog articles"
 ---
 
-# “fractals” tag
+# “FRACTALS” tag
 
 
-## articles about the theory of fractals, visualising them, and more
+## Articles about the theory of fractals, visualising them, and more
 
 
 

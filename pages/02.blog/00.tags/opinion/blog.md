@@ -21,10 +21,10 @@ metadata:
 title: "Opinion blog articles"
 ---
 
-# “opinion” tag
+# “OPINION” tag
 
 
-## opinion pieces
+## Opinion pieces and rants
 
 
 

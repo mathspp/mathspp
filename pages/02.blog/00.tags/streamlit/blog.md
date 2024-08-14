@@ -21,10 +21,10 @@ metadata:
 title: "Streamlit blog articles"
 ---
 
-# “streamlit” tag
+# “STREAMLIT” tag
 
 
-## articles about the Python module to create dashboards Streamlit
+## Articles about the Python module to create dashboards Streamlit
 
 
 

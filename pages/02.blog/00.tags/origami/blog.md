@@ -21,10 +21,10 @@ metadata:
 title: "Origami blog articles"
 ---
 
-# “origami” tag
+# “ORIGAMI” tag
 
 
-## articles about the folding practice
+## Articles about the folding practice
 
 
 

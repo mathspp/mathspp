@@ -21,10 +21,10 @@ metadata:
 title: "Data science blog articles"
 ---
 
-# “data science” tag
+# “DATA SCIENCE” tag
 
 
-## articles about the field, including example applications and algorithm implementations
+## Articles about the field, including example applications and algorithm implementations
 
 
 

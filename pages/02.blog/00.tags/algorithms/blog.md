@@ -21,10 +21,10 @@ metadata:
 title: "Algorithms blog articles"
 ---
 
-# “algorithms” tag
+# “ALGORITHMS” tag
 
 
-## articles about a specific algorithm or that feature a specific algorithm proeminently
+## Articles about a specific algorithm or that feature a specific algorithm proeminently
 
 
 

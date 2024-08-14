@@ -21,10 +21,10 @@ metadata:
 title: "Haskell blog articles"
 ---
 
-# “haskell” tag
+# “HASKELL” tag
 
 
-## articles about the programming language Haskell
+## Articles about the programming language Haskell
 
 
 

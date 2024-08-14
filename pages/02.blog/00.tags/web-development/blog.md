@@ -21,10 +21,10 @@ metadata:
 title: "Web development blog articles"
 ---
 
-# “web development” tag
+# “WEB DEVELOPMENT” tag
 
 
-## articles about web development
+## Articles about web development
 
 
 

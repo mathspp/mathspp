@@ -21,10 +21,10 @@ metadata:
 title: "Modules blog articles"
 ---
 
-# “modules” tag
+# “MODULES” tag
 
 
-## articles specifically about a Python module
+## Articles specifically about a Python module
 
 
 

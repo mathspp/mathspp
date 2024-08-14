@@ -21,10 +21,10 @@ metadata:
 title: "Image processing blog articles"
 ---
 
-# “image processing” tag
+# “IMAGE PROCESSING” tag
 
 
-## articles about the computer science field of image processing
+## Articles about the computer science field of image processing
 
 
 

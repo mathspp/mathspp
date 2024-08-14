@@ -21,10 +21,10 @@ metadata:
 title: "Regex blog articles"
 ---
 
-# “regex” tag
+# “REGEX” tag
 
 
-## articles about regular expressions and their applications
+## Articles about regular expressions and their applications
 
 
 

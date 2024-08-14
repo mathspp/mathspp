@@ -21,10 +21,10 @@ metadata:
 title: "Arithmetic blog articles"
 ---
 
-# “arithmetic” tag
+# “ARITHMETIC” tag
 
 
-## articles about the basic operations
+## Articles about the basic operations
 
 
 

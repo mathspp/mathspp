@@ -21,10 +21,10 @@ metadata:
 title: "Diophantine equations blog articles"
 ---
 
-# “diophantine equations” tag
+# “DIOPHANTINE EQUATIONS” tag
 
 
-## articles about this type of equation
+## Articles about this type of equation
 
 
 

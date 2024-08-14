@@ -21,10 +21,10 @@ metadata:
 title: "Automatons blog articles"
 ---
 
-# “automatons” tag
+# “AUTOMATONS” tag
 
 
-## articles about applications of automatons
+## Articles about applications of automatons
 
 
 

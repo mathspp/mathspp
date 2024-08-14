@@ -21,10 +21,10 @@ metadata:
 title: "Textual blog articles"
 ---
 
-# “textual” tag
+# “TEXTUAL” tag
 
 
-## articles about the Python module Textual to create terminal user interfaces
+## Articles about the Python module Textual to create terminal user interfaces
 
 
 

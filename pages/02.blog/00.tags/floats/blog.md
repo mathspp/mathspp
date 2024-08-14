@@ -21,10 +21,10 @@ metadata:
 title: "Floats blog articles"
 ---
 
-# “floats” tag
+# “FLOATS” tag
 
 
-## articles about the quirks of, and the theory behind, floats
+## Articles about the quirks of, and the theory behind, floats
 
 
 

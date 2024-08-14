@@ -21,10 +21,10 @@ metadata:
 title: "Parsers blog articles"
 ---
 
-# “parsers” tag
+# “PARSERS” tag
 
 
-## articles about the implementation of parsers
+## Articles about the implementation of parsers
 
 
 

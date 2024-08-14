@@ -21,10 +21,10 @@ metadata:
 title: "Random walks blog articles"
 ---
 
-# “random walks” tag
+# “RANDOM WALKS” tag
 
 
-## articles about the generation, and applications, of random walks
+## Articles about the generation, and applications, of random walks
 
 
 

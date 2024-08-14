@@ -21,10 +21,10 @@ metadata:
 title: "Oop blog articles"
 ---
 
-# “oop” tag
+# “OOP” tag
 
 
-## articles about Object Oriented Programming, including concepts and use cases
+## Articles about Object Oriented Programming, including concepts and use cases
 
 
 

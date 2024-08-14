@@ -21,10 +21,10 @@ metadata:
 title: "Mathematics blog articles"
 ---
 
-# “mathematics” tag
+# “MATHEMATICS” tag
 
 
-## articles about mathematics
+## Articles about mathematics
 
 
 

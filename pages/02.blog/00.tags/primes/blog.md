@@ -21,10 +21,10 @@ metadata:
 title: "Primes blog articles"
 ---
 
-# “primes” tag
+# “PRIMES” tag
 
 
-## articles about the prime numbers and their properties
+## Articles about the prime numbers and their properties
 
 
 

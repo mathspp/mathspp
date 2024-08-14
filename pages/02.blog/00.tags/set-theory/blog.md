@@ -21,10 +21,10 @@ metadata:
 title: "Set theory blog articles"
 ---
 
-# “set theory” tag
+# “SET THEORY” tag
 
 
-## articles about the mathematical field of set theory and its applications
+## Articles about the mathematical field of set theory and its applications
 
 
 

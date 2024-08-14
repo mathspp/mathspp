@@ -21,10 +21,10 @@ metadata:
 title: "Generators blog articles"
 ---
 
-# “generators” tag
+# “GENERATORS” tag
 
 
-## articles about the Python concept of generators
+## Articles about the Python concept of generators
 
 
 

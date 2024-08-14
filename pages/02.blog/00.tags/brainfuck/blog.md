@@ -21,10 +21,10 @@ metadata:
 title: "Brainfuck blog articles"
 ---
 
-# “brainfuck” tag
+# “BRAINFUCK” tag
 
 
-## articles about the esoteric programming language called brainfuck
+## Articles about the esoteric programming language called brainfuck
 
 
 

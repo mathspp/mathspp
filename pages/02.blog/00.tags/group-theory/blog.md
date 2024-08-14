@@ -21,10 +21,10 @@ metadata:
 title: "Group theory blog articles"
 ---
 
-# “group theory” tag
+# “GROUP THEORY” tag
 
 
-## articles about the mathematical field of group theory and its applications
+## Articles about the mathematical field of group theory and its applications
 
 
 
