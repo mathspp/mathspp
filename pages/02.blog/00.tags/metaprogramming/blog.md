@@ -21,10 +21,10 @@ metadata:
 title: "Metaprogramming blog articles"
 ---
 
-# <a href="/blog/tags/metaprogramming" class="label label-primary tag-title">metaprogramming</a>
+# “metaprogramming” tag
 
 
-## Articles and tutorials on the concept of metaprogramming
+## articles and tutorials on the concept of metaprogramming
 
 
 

@@ -21,10 +21,10 @@ metadata:
 title: "Artificial intelligence blog articles"
 ---
 
-# <a href="/blog/tags/artificial intelligence" class="label label-primary tag-title">artificial intelligence</a>
+# “artificial intelligence” tag
 
 
-## Articles about the field of ai, its algorithms, and applications
+## articles about the field of AI, its algorithms, and applications
 
 
 

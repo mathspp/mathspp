@@ -21,10 +21,10 @@ metadata:
 title: "Web development blog articles"
 ---
 
-# <a href="/blog/tags/web development" class="label label-primary tag-title">web development</a>
+# “web development” tag
 
 
-## Articles about web development
+## articles about web development
 
 
 

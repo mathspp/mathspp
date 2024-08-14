@@ -21,10 +21,10 @@ metadata:
 title: "Algorithms blog articles"
 ---
 
-# <a href="/blog/tags/algorithms" class="label label-primary tag-title">algorithms</a>
+# “algorithms” tag
 
 
-## Articles about a specific algorithm or that feature a specific algorithm proeminently
+## articles about a specific algorithm or that feature a specific algorithm proeminently
 
 
 

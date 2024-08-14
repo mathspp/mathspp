@@ -21,10 +21,10 @@ metadata:
 title: "Visualisation blog articles"
 ---
 
-# <a href="/blog/tags/visualisation" class="label label-primary tag-title">visualisation</a>
+# “visualisation” tag
 
 
-## Articles that feature visualisations of algorithms, simulations, and others
+## articles that feature visualisations of algorithms, simulations, and others
 
 
 

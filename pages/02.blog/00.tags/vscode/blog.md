@@ -21,10 +21,10 @@ metadata:
 title: "Vscode blog articles"
 ---
 
-# <a href="/blog/tags/vscode" class="label label-primary tag-title">vscode</a>
+# “vscode” tag
 
 
-## Articles about the usage of visual studio code
+## articles about the usage of Visual Studio Code
 
 
 

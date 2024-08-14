@@ -21,10 +21,10 @@ metadata:
 title: "Git blog articles"
 ---
 
-# <a href="/blog/tags/git" class="label label-primary tag-title">git</a>
+# “git” tag
 
 
-## Articles about the revision control system git
+## articles about the revision control system git
 
 
 

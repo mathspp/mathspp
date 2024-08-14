@@ -21,10 +21,10 @@ metadata:
 title: "Slice of life blog articles"
 ---
 
-# <a href="/blog/tags/slice of life" class="label label-primary tag-title">slice of life</a>
+# “slice of life” tag
 
 
-## Articles about the practical application of mathematics and/or programming to the day-to-day life
+## articles about the practical application of mathematics and/or programming to the day-to-day life
 
 
 

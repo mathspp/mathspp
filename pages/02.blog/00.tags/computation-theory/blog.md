@@ -21,10 +21,10 @@ metadata:
 title: "Computation theory blog articles"
 ---
 
-# <a href="/blog/tags/computation theory" class="label label-primary tag-title">computation theory</a>
+# “computation theory” tag
 
 
-## Articles about the field of computation theory
+## articles about the field of computation theory
 
 
 

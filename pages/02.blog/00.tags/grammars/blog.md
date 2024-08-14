@@ -21,10 +21,10 @@ metadata:
 title: "Grammars blog articles"
 ---
 
-# <a href="/blog/tags/grammars" class="label label-primary tag-title">grammars</a>
+# “grammars” tag
 
 
-## Articles about the computer science concept of a grammar
+## articles about the computer science concept of a grammar
 
 
 

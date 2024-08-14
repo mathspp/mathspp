@@ -21,10 +21,10 @@ metadata:
 title: "Geometry blog articles"
 ---
 
-# <a href="/blog/tags/geometry" class="label label-primary tag-title">geometry</a>
+# “geometry” tag
 
 
-## Articles about the mathematical branch that deals with shapes and their properties
+## articles about the mathematical branch that deals with shapes and their properties
 
 
 

@@ -21,10 +21,10 @@ metadata:
 title: "Recursion blog articles"
 ---
 
-# <a href="/blog/tags/recursion" class="label label-primary tag-title">recursion</a>
+# “recursion” tag
 
 
-## Articles about the mathematical and computer science concept of recursion
+## articles about the mathematical and computer science concept of recursion
 
 
 

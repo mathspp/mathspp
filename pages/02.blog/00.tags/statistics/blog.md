@@ -21,10 +21,10 @@ metadata:
 title: "Statistics blog articles"
 ---
 
-# <a href="/blog/tags/statistics" class="label label-primary tag-title">statistics</a>
+# “statistics” tag
 
 
-## Articles about the mathematical field of statistics and its applications
+## articles about the mathematical field of statistics and its applications
 
 
 

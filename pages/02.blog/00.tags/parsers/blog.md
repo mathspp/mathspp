@@ -21,10 +21,10 @@ metadata:
 title: "Parsers blog articles"
 ---
 
-# <a href="/blog/tags/parsers" class="label label-primary tag-title">parsers</a>
+# “parsers” tag
 
 
-## Articles about the implementation of parsers
+## articles about the implementation of parsers
 
 
 

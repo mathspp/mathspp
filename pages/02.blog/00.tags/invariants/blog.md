@@ -21,10 +21,10 @@ metadata:
 title: "Invariants blog articles"
 ---
 
-# <a href="/blog/tags/invariants" class="label label-primary tag-title">invariants</a>
+# “invariants” tag
 
 
-## Articles about the mathematical concept of invariants
+## articles about the mathematical concept of invariants
 
 
 

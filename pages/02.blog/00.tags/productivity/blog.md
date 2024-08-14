@@ -21,10 +21,10 @@ metadata:
 title: "Productivity blog articles"
 ---
 
-# <a href="/blog/tags/productivity" class="label label-primary tag-title">productivity</a>
+# “productivity” tag
 
 
-## Articles about using python, coding, and tools, to increase your productivity
+## articles about using Python, coding, and tools, to increase your productivity
 
 
 

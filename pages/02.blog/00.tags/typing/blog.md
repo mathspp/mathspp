@@ -21,10 +21,10 @@ metadata:
 title: "Typing blog articles"
 ---
 
-# <a href="/blog/tags/typing" class="label label-primary tag-title">typing</a>
+# “typing” tag
 
 
-## Articles about typed languages, usage tutorials, and typing in python
+## articles about typed languages, usage tutorials, and typing in Python
 
 
 

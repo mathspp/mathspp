@@ -21,10 +21,10 @@ metadata:
 title: "Oop blog articles"
 ---
 
-# <a href="/blog/tags/oop" class="label label-primary tag-title">oop</a>
+# “oop” tag
 
 
-## Articles about object oriented programming, including concepts and use cases
+## articles about Object Oriented Programming, including concepts and use cases
 
 
 

@@ -21,10 +21,10 @@ metadata:
 title: "Regex blog articles"
 ---
 
-# <a href="/blog/tags/regex" class="label label-primary tag-title">regex</a>
+# “regex” tag
 
 
-## Articles about regular expressions and their applications
+## articles about regular expressions and their applications
 
 
 

@@ -21,10 +21,10 @@ metadata:
 title: "Numerical analysis blog articles"
 ---
 
-# <a href="/blog/tags/numerical analysis" class="label label-primary tag-title">numerical analysis</a>
+# “numerical analysis” tag
 
 
-## Articles about the mathematical field of numerical analysis and its applications
+## articles about the mathematical field of numerical analysis and its applications
 
 
 

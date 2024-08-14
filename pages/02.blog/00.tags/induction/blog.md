@@ -21,10 +21,10 @@ metadata:
 title: "Induction blog articles"
 ---
 
-# <a href="/blog/tags/induction" class="label label-primary tag-title">induction</a>
+# “induction” tag
 
 
-## Articles about the mathematical concept of induction
+## articles about the mathematical concept of induction
 
 
 

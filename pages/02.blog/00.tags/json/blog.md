@@ -21,10 +21,10 @@ metadata:
 title: "Json blog articles"
 ---
 
-# <a href="/blog/tags/json" class="label label-primary tag-title">json</a>
+# “json” tag
 
 
-## Articles about the data format json
+## articles about the data format JSON
 
 
 

@@ -21,10 +21,10 @@ metadata:
 title: "Optimisation blog articles"
 ---
 
-# <a href="/blog/tags/optimisation" class="label label-primary tag-title">optimisation</a>
+# “optimisation” tag
 
 
-## Articles about the mathematical concept and computer science algorithms
+## articles about the mathematical concept and computer science algorithms
 
 
 

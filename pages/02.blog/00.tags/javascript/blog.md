@@ -21,10 +21,10 @@ metadata:
 title: "Javascript blog articles"
 ---
 
-# <a href="/blog/tags/javascript" class="label label-primary tag-title">javascript</a>
+# “javascript” tag
 
 
-## Articles about the programming language javascript
+## articles about the programming language JavaScript
 
 
 

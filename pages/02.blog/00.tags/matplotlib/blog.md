@@ -21,10 +21,10 @@ metadata:
 title: "Matplotlib blog articles"
 ---
 
-# <a href="/blog/tags/matplotlib" class="label label-primary tag-title">matplotlib</a>
+# “matplotlib” tag
 
 
-## Articles about the python plotting module matplotlib
+## articles about the Python plotting module matplotlib
 
 
 

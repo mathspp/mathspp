@@ -21,10 +21,10 @@ metadata:
 title: "Automatons blog articles"
 ---
 
-# <a href="/blog/tags/automatons" class="label label-primary tag-title">automatons</a>
+# “automatons” tag
 
 
-## Articles about applications of automatons
+## articles about applications of automatons
 
 
 

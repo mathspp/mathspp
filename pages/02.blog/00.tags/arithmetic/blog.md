@@ -21,10 +21,10 @@ metadata:
 title: "Arithmetic blog articles"
 ---
 
-# <a href="/blog/tags/arithmetic" class="label label-primary tag-title">arithmetic</a>
+# “arithmetic” tag
 
 
-## Articles about the basic operations
+## articles about the basic operations
 
 
 

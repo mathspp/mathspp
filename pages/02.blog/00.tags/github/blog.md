@@ -21,10 +21,10 @@ metadata:
 title: "Github blog articles"
 ---
 
-# <a href="/blog/tags/github" class="label label-primary tag-title">github</a>
+# “github” tag
 
 
-## Articles about the service
+## articles about the service
 
 
 

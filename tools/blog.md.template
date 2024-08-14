@@ -21,10 +21,10 @@ metadata:
 title: "{{ tag.capitalize() }} blog articles"
 ---
 
-# <a href="/blog/tags/{{tag}}" class="label label-primary tag-title">{{ tag }}</a>
+# “{{ tag }}” tag
 
 {% if description %}
-## {{ description.capitalize() }}
+## {{ description }}
 {% endif %}
 
 

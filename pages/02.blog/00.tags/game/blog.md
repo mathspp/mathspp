@@ -21,10 +21,10 @@ metadata:
 title: "Game blog articles"
 ---
 
-# <a href="/blog/tags/game" class="label label-primary tag-title">game</a>
+# “game” tag
 
 
-## Articles about (the implementation of) games
+## articles about (the implementation of) games
 
 
 

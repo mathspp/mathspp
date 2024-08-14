@@ -21,10 +21,10 @@ metadata:
 title: "Mathematics blog articles"
 ---
 
-# <a href="/blog/tags/mathematics" class="label label-primary tag-title">mathematics</a>
+# “mathematics” tag
 
 
-## Articles about mathematics
+## articles about mathematics
 
 
 

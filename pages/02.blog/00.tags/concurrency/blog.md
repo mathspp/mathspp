@@ -21,10 +21,10 @@ metadata:
 title: "Concurrency blog articles"
 ---
 
-# <a href="/blog/tags/concurrency" class="label label-primary tag-title">concurrency</a>
+# “concurrency” tag
 
 
-## Articles about the subject of concurrency
+## articles about the subject of concurrency
 
 
 

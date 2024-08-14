@@ -21,10 +21,10 @@ metadata:
 title: "Modules blog articles"
 ---
 
-# <a href="/blog/tags/modules" class="label label-primary tag-title">modules</a>
+# “modules” tag
 
 
-## Articles specifically about a python module
+## articles specifically about a Python module
 
 
 

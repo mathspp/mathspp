@@ -21,10 +21,10 @@ metadata:
 title: "Matlab blog articles"
 ---
 
-# <a href="/blog/tags/matlab" class="label label-primary tag-title">matlab</a>
+# “matlab” tag
 
 
-## Articles about the programming language matlab
+## articles about the programming language MATLAB
 
 
 

@@ -21,10 +21,10 @@ metadata:
 title: "Textual blog articles"
 ---
 
-# <a href="/blog/tags/textual" class="label label-primary tag-title">textual</a>
+# “textual” tag
 
 
-## Articles about the python module textual to create terminal user interfaces
+## articles about the Python module Textual to create terminal user interfaces
 
 
 

@@ -21,10 +21,10 @@ metadata:
 title: "Pytest blog articles"
 ---
 
-# <a href="/blog/tags/pytest" class="label label-primary tag-title">pytest</a>
+# “pytest” tag
 
 
-## Articles about the python testing module pytest
+## articles about the Python testing module Pytest
 
 
 

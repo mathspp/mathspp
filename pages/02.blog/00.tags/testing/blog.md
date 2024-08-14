@@ -21,10 +21,10 @@ metadata:
 title: "Testing blog articles"
 ---
 
-# <a href="/blog/tags/testing" class="label label-primary tag-title">testing</a>
+# “testing” tag
 
 
-## Articles about the practice of writing tests for your programs
+## articles about the practice of writing tests for your programs
 
 
 

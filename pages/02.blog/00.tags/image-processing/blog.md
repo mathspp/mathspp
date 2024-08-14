@@ -21,10 +21,10 @@ metadata:
 title: "Image processing blog articles"
 ---
 
-# <a href="/blog/tags/image processing" class="label label-primary tag-title">image processing</a>
+# “image processing” tag
 
 
-## Articles about the computer science field of image processing
+## articles about the computer science field of image processing
 
 
 

@@ -21,10 +21,10 @@ metadata:
 title: "Rationals blog articles"
 ---
 
-# <a href="/blog/tags/rationals" class="label label-primary tag-title">rationals</a>
+# “rationals” tag
 
 
-## Articles about the set of rational numbers
+## articles about the set of rational numbers
 
 
 

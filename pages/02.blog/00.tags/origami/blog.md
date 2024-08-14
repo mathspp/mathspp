@@ -21,10 +21,10 @@ metadata:
 title: "Origami blog articles"
 ---
 
-# <a href="/blog/tags/origami" class="label label-primary tag-title">origami</a>
+# “origami” tag
 
 
-## Articles about the folding practice
+## articles about the folding practice
 
 
 

@@ -21,10 +21,10 @@ metadata:
 title: "Bpci blog articles"
 ---
 
-# <a href="/blog/tags/bpci" class="label label-primary tag-title">bpci</a>
+# “bpci” tag
 
 
-## The article series “building a python compiler and interpreter”
+## the article series “Building a Python Compiler and Interpreter”
 
 
 

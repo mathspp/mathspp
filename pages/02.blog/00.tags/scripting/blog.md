@@ -21,10 +21,10 @@ metadata:
 title: "Scripting blog articles"
 ---
 
-# <a href="/blog/tags/scripting" class="label label-primary tag-title">scripting</a>
+# “scripting” tag
 
 
-## Articles about the practice of creating small practical scripts to automate tasks
+## articles about the practice of creating small practical scripts to automate tasks
 
 
 

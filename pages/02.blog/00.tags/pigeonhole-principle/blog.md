@@ -21,10 +21,10 @@ metadata:
 title: "Pigeonhole principle blog articles"
 ---
 
-# <a href="/blog/tags/pigeonhole principle" class="label label-primary tag-title">pigeonhole principle</a>
+# “pigeonhole principle” tag
 
 
-## Articles about the pigeonhole principle and its applications
+## articles about the pigeonhole principle and its applications
 
 
 

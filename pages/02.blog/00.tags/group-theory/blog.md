@@ -21,10 +21,10 @@ metadata:
 title: "Group theory blog articles"
 ---
 
-# <a href="/blog/tags/group theory" class="label label-primary tag-title">group theory</a>
+# “group theory” tag
 
 
-## Articles about the mathematical field of group theory and its applications
+## articles about the mathematical field of group theory and its applications
 
 
 

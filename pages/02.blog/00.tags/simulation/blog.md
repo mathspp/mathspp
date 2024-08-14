@@ -21,10 +21,10 @@ metadata:
 title: "Simulation blog articles"
 ---
 
-# <a href="/blog/tags/simulation" class="label label-primary tag-title">simulation</a>
+# “simulation” tag
 
 
-## Articles about the implementation of simulations of various sorts
+## articles about the implementation of simulations of various sorts
 
 
 

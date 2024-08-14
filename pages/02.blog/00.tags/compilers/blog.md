@@ -21,10 +21,10 @@ metadata:
 title: "Compilers blog articles"
 ---
 
-# <a href="/blog/tags/compilers" class="label label-primary tag-title">compilers</a>
+# “compilers” tag
 
 
-## Articles about implementing or using (parts of) compilers
+## articles about implementing or using (parts of) compilers
 
 
 

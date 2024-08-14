@@ -21,10 +21,10 @@ metadata:
 title: "Networking blog articles"
 ---
 
-# <a href="/blog/tags/networking" class="label label-primary tag-title">networking</a>
+# “networking” tag
 
 
-## Articles and tutorials on networking and its applications
+## articles and tutorials on networking and its applications
 
 
 

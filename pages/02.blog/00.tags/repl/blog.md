@@ -21,10 +21,10 @@ metadata:
 title: "Repl blog articles"
 ---
 
-# <a href="/blog/tags/repl" class="label label-primary tag-title">repl</a>
+# “repl” tag
 
 
-## Articles about the python repl
+## articles about the Python REPL
 
 
 

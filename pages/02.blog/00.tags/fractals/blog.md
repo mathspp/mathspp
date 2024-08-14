@@ -21,10 +21,10 @@ metadata:
 title: "Fractals blog articles"
 ---
 
-# <a href="/blog/tags/fractals" class="label label-primary tag-title">fractals</a>
+# “fractals” tag
 
 
-## Articles about the theory of fractals, visualising them, and more
+## articles about the theory of fractals, visualising them, and more
 
 
 

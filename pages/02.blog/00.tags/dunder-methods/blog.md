@@ -21,10 +21,10 @@ metadata:
 title: "Dunder methods blog articles"
 ---
 
-# <a href="/blog/tags/dunder methods" class="label label-primary tag-title">dunder methods</a>
+# “dunder methods” tag
 
 
-## Articles about the dunder methods in python
+## articles about the dunder methods in Python
 
 
 

@@ -21,10 +21,10 @@ metadata:
 title: "Hypothesis blog articles"
 ---
 
-# <a href="/blog/tags/hypothesis" class="label label-primary tag-title">hypothesis</a>
+# “hypothesis” tag
 
 
-## Articles about the property-based testing framework hypothesis
+## articles about the property-based testing framework Hypothesis
 
 
 

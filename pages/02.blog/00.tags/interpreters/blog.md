@@ -21,10 +21,10 @@ metadata:
 title: "Interpreters blog articles"
 ---
 
-# <a href="/blog/tags/interpreters" class="label label-primary tag-title">interpreters</a>
+# “interpreters” tag
 
 
-## Articles about working with, or implementing, interpreters
+## articles about working with, or implementing, interpreters
 
 
 

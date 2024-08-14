@@ -21,10 +21,10 @@ metadata:
 title: "Nnfwp blog articles"
 ---
 
-# <a href="/blog/tags/nnfwp" class="label label-primary tag-title">nnfwp</a>
+# “nnfwp” tag
 
 
-## The article series “neural networks fundamentals with python”
+## the article series “Neural Networks Fundamentals With Python”
 
 
 

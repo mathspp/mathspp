@@ -21,10 +21,10 @@ metadata:
 title: "Streamlit blog articles"
 ---
 
-# <a href="/blog/tags/streamlit" class="label label-primary tag-title">streamlit</a>
+# “streamlit” tag
 
 
-## Articles about the python module to create dashboards streamlit
+## articles about the Python module to create dashboards Streamlit
 
 
 

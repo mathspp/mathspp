@@ -21,10 +21,10 @@ metadata:
 title: "Logic blog articles"
 ---
 
-# <a href="/blog/tags/logic" class="label label-primary tag-title">logic</a>
+# “logic” tag
 
 
-## Articles about logic, including logical puzzles or challenges
+## articles about logic, including logical puzzles or challenges
 
 
 

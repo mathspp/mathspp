@@ -21,10 +21,10 @@ metadata:
 title: "Pandas blog articles"
 ---
 
-# <a href="/blog/tags/pandas" class="label label-primary tag-title">pandas</a>
+# “pandas” tag
 
 
-## Articles about the python module for data manipulation pandas
+## articles about the Python module for data manipulation Pandas
 
 
 

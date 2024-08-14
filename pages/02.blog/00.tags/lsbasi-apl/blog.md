@@ -21,10 +21,10 @@ metadata:
 title: "Lsbasi-apl blog articles"
 ---
 
-# <a href="/blog/tags/lsbasi-apl" class="label label-primary tag-title">lsbasi-apl</a>
+# “lsbasi-apl” tag
 
 
-## The article series “let's build a simple interpreter – apl”
+## the article series “Let's Build a Simple Interpreter – APL”
 
 
 

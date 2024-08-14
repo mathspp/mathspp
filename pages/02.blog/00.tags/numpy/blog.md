@@ -21,10 +21,10 @@ metadata:
 title: "Numpy blog articles"
 ---
 
-# <a href="/blog/tags/numpy" class="label label-primary tag-title">numpy</a>
+# “numpy” tag
 
 
-## Articles about the python module for numerical computing numpy
+## articles about the Python module for numerical computing NumPy
 
 
 

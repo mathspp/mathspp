@@ -21,10 +21,10 @@ metadata:
 title: "Open source blog articles"
 ---
 
-# <a href="/blog/tags/open source" class="label label-primary tag-title">open source</a>
+# “open source” tag
 
 
-## Articles about the open source movement
+## articles about the open source movement
 
 
 

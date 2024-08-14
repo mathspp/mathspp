@@ -21,10 +21,10 @@ metadata:
 title: "Random walks blog articles"
 ---
 
-# <a href="/blog/tags/random walks" class="label label-primary tag-title">random walks</a>
+# “random walks” tag
 
 
-## Articles about the generation, and applications, of random walks
+## articles about the generation, and applications, of random walks
 
 
 
