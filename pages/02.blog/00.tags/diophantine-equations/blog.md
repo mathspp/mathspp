@@ -22,7 +22,7 @@ title: "Diophantine equations blog articles"
 ---
 
 
-# This type of equation
+# Diophantine equations
 
 
 <table class="stats-table">

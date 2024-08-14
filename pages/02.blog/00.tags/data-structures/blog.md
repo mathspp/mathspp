@@ -22,7 +22,7 @@ title: "Data structures blog articles"
 ---
 
 
-# Articles that focus on the implementation or use cases of specific data structures
+# Implementation and use cases of data structures
 
 
 <table class="stats-table">
