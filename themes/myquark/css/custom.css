@@ -301,11 +301,6 @@ blockquote {
     color: #f8f8f2;
 }
 
-.label.label-primary.tag-title {
-    font-size: 4rem;
-    border-radius: 1rem;
-}
-
 /* Borders for the pagination numbers at the top of the blog listings. */
 .pagination li {
     border-color: #333333;
@@ -593,7 +588,7 @@ kbd {
 
 
 table.stats-table {
-    font-size: 4vmin;
+    font-size: 2rem;
 }
 
 table.stats-table thead {
