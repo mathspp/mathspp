@@ -4,7 +4,6 @@ metadata:
     twitter:image: "https://mathspp.com/blog/lsbasi-apl-part4/thumbnail.webp"
 process:
     twig: true
-published: true
 slug: lsbasi-apl-part4
 taxonomy:
     category: blogpost
