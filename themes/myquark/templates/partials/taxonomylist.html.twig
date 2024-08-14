@@ -3,7 +3,7 @@
 {% if taxlist %}
 <span class="tags">
     {% for tax,value in taxlist[taxonomy]|slice(0, top_tags) %}
-        {% set label_class = page.url.rtrim('/') ends with ('/' ~ (key|replace({' ': '-'}))) ? 'label-primary' : 'label-secondary' %}
+        {% set label_class = (uri.paths|last) == (key|replace({' ': '-'})) ? 'label-primary' : 'label-secondary' %}
         <a class="label label-rounded {{ label_class }}" href="/blog/tags/{{ tax }}">{{ tax }} | {{ value }}</a>
     {% endfor %}
 </span>

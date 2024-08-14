@@ -46,7 +46,7 @@
             {% set taxlist = taxlist|merge([key]) %}
         {% endfor %}
         {% for key in taxlist|sort %}
-            {% set label_class = page.url.rtrim('/') ends with ('/' ~ (key|replace({' ': '-'}))) ? 'label-primary' : 'label-secondary' %}
+            {% set label_class = (uri.paths|last) == (key|replace({' ': '-'})) ? 'label-primary' : 'label-secondary' %}
             <a class="label label-rounded {{ label_class }}" href="/blog/tags/{{ key }}>{{ key }}</a>
         {% endfor %}
         </p></span>
