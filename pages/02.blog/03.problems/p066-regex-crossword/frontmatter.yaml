@@ -1,0 +1,13 @@
+date: 27-08-2024
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Can you solve this crossword where all hints are regular expressions?"
+    og:image: https://mathspp.com/blog/problems/regex-crossword/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/problems/regex-crossword/thumbnail.webp
+slug: regex-crossword
+taxonomy:
+    category: [blogpost, problem]
+    tag:
+      - mathematics
+      - regex
+title: "Problem #066 – regex crossword"
