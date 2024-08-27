@@ -1,0 +1,15 @@
+date: 27-08-2024 18:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "The function `random.shuffle` relies on the mutability of the argument and mutability is a pain in the arse, so we propose an alternative."
+    og:image: "https://mathspp.com/blog/mutability-and-random-shuffle/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/mutability-and-random-shuffle/thumbnail.webp"
+slug: "mutability-and-random-shuffle"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - code review
+        - programming
+        - python
+title: mutability and random.shuffle
