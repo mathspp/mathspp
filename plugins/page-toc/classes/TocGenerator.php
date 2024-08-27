@@ -56,7 +56,7 @@ class TocGenerator
      * @param int     $depth     Depth (1 through 6)
      * @return ItemInterface     KNP Menu
      */
-    public function getMenu(string $markup, int $topLevel = 1, int $depth = 6): ItemInterface
+    public function getMenu(string $markup, int $topLevel = 1, int $depth = 6, array $allowedTags = []): ItemInterface
     {
         $menu = $this->menuFactory->createItem(static::DEFAULT_NAME);
 
@@ -97,7 +97,8 @@ class TocGenerator
             $lastElem = $parent->addChild(
                 $node->getAttribute('id'),
                 [
-                    'label' => $node->getAttribute('title') ?: $node->textContent,
+                    'label' => $node->getAttribute('title') ?:
+                        ($allowedTags ? $this->filteredInnerHTML($node, $allowedTags) : $node->textContent) ,
                     'uri' => '#' . $node->getAttribute('id')
                 ]
             );

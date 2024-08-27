@@ -1,3 +1,11 @@
+# v5.1.0
+## 06/17/24
+
+1. [](#new)
+   * Added page-level `lastmod` options [#113](https://github.com/getgrav/grav-plugin-sitemap/pull/113)
+1. [](#improved)
+   * Updated README.md with page override options.
+   
 # v5.0.0
 ## 10/05/2023
 

@@ -76,6 +76,17 @@ sitemap:
     ignore: true
 ```
 
+## Overrides
+
+You can override several elements of the sitemap entry for the page in the page's header. For example, as well as `ignore` mentioned above, these are available:
+
+```yaml
+sitemap:
+  lastmod:      # e.g. '2024-04-17'
+  changefreq:   # always| hourly | daily:  | weekly | monthly | yearly | never
+  priority:     # 0.1 -> 1.0
+```
+
 ## Multi-Language Support
 
 The latest Sitemap `v3.0` includes all new multi-language support utilizing the latest [Google Search SEO Recomendations](https://developers.google.com/search/docs/advanced/crawling/localized-versions?hl=en&visit_id=637468720624267418-280936473&rd=2) which creates bi-directional `hreflang` entries for each language available.
@@ -97,6 +108,7 @@ https://yoursite.com/blog/sitemap-news.xml
 ```
 
 You can change the "News Path" to be something other than `sitemap-news.xml` if you wish.
+
 
 ## Images
 

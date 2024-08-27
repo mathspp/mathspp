@@ -55,6 +55,14 @@ form:
                   label: PLUGIN_PAGE_TOC.HEADER_CSS_CLASSES
                   help: PLUGIN_PAGE_TOC.HEADER_CSS_CLASSES_HELP
                   data-default@: ['\Grav\Plugin\PageTOCPlugin::configVar', 'hclass']
+                header.page-toc.tags:
+                  toggleable: true
+                  type: selectize
+                  label: PLUGIN_PAGE_TOC.ALLOWED_HTML_TAGS
+                  help: PLUGIN_PAGE_TOC.ALLOWED_HTML_TAGS_HELP
+                  data-default@: ['\Grav\Plugin\PageTOCPlugin::configVar', 'tags']
+                  validate:
+                    type: commalist
 
             header.page-toc-anchors-section:
               type: section

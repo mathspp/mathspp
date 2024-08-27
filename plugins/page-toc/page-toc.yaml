@@ -1,6 +1,7 @@
 enabled: true               # Plugin enabled
 include_css: true           # Include CSS
 active: true                # Anchor IDs processed and generated for all pages
+templates:                  # Templates for which anchors should be generated if default is disabled
 start: 1                    # Start header tag level (1 = h1) for TOC
 depth: 6                    # Depth from start (2 = 2 levels deep) for TOC
 hclass:                     # Custom Header TOC styling classes

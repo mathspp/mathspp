@@ -1,3 +1,16 @@
+# v2.0.3.1
+## 05/16/2024
+
+1. [](#improved)
+   * Added missing `Y` date format option from blueprints (admin plugin)
+
+
+# v2.0.3
+## 05/15/2024
+
+1. [](#new)
+   * Added a new `partials/archives-year.html.twig` example and instructions on how to display a year-only format.
+
 # v2.0.2
 ## 12/02/2020
 

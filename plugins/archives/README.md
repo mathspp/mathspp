@@ -118,6 +118,35 @@ Copy the template file [templates/partials/archives.html.twig](templates/partial
 
 You can now edit the override and tweak it however you prefer.
 
+# Archives by Year example
+
+The default `archives_data` object will contain pages broken out into groupings based on the `date_display_format` which by default is `F Y`, for example (`May 2024`).  If you want to display the archives by the "Year" only, rather than "Month Year", you need to modify the `data_display_format` in the `archives.yaml` configuration file:
+
+```yaml
+date_display_format: 'Y'
+```
+Now the data will be grouped by year only. 
+
+Next, you will need to override and modify the `partials/archives.html.twig` file, or alternatively point to the new example `partials/archives-year.html.twig` file.  This is modified to use the following syntax:
+
+```twig
+<ul class="archives">
+
+{% for year,items in archives_data %}
+    <li>
+    	<a href="{{ archives_url ?? base_url }}/{{ config.plugins.archives.taxonomy_names.year }}{{ config.system.param_sep }}{{ year|date(config.plugins.archives.taxonomy_values.year)|lower|e('url') }}">
+        {% if archives_show_count %}
+        <span class="label">{{ items|length }}</span>
+        {% endif %}
+        <span class="archive_date">{{ year }} </span>
+        </a>
+    </li>
+{% endfor %}
+</ul>
+```
+
+This is very similar to the default `partials/archives.html.twig` with `month` changed to `year`.
+
 # Updating
 
 As development for Archives continues, new versions may become available that add additional features and functionality, improve compatibility with newer Grav releases, and generally provide a better user experience. Updating Archives is easy, and can be done through Grav's GPM system, as well as manually.

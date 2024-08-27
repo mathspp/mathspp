@@ -36,6 +36,7 @@ Here is the default configuration and an explanation of available options:
 enabled: true               # Plugin enabled
 include_css: true           # Include CSS
 active: true                # Anchor IDs processed and generated for all pages
+templates:                  # Templates for which anchors should be generated if default is disabled
 start: 1                    # Start header tag level (1 = h1) for TOC
 depth: 6                    # Depth from start (2 = 2 levels deep) for TOC
 hclass:                     # Custom Header TOC styling classes
@@ -60,6 +61,8 @@ By default, The plugin is `active` and will add header id attributes anchors for
 page-toc:
   active: true
 ```
+
+Alternatively, you can activate anchor generation on all pages using a given set of `templates`.
 
 You can also configure which header tags to start and depth on when building the id attribute anchors by changing the `start` and `depth` values. This can also be done on a per-page basis.
 
@@ -104,7 +107,7 @@ If an `id` is found in one of the header tags that page-toc is configured to use
 ### Anchor Shortcode
 
 Page TOC now includes a `anchor` shortcode that allows you to manually add linkable fragments in your content.  
-The shortcode will automatically generate the link if no options are provided. Alternatively you can use the bbode syntax of `anchor="some-custom-id"` or you can explicity set it.  You can also set a `prefix` and let the shortcode autogenerate the rest.
+The shortcode will automatically generate the link if no options are provided. Alternatively you can use the BBCode syntax of `anchor="some-custom-id"` or you can explicity set it.  You can also set a `prefix` and let the shortcode autogenerate the rest.
 
 For example:
 

@@ -1,3 +1,21 @@
+# v3.2.4
+## 05/16/2024
+
+1. [](#improved)
+   * Updated Spanish translation [#40](https://github.com/trilbymedia/grav-plugin-page-toc/pulls/40) 
+1. [](#bugfix)
+   * Reverted to use `mb_encode_nuericentity()` instead of `htmlspecialchars` / `iconv` approach to fix breaking UTF-8 characters
+
+# v3.2.3
+## 05/06/2024
+
+1. [](#new)
+   * Added french translation [#28](https://github.com/trilbymedia/grav-plugin-page-toc/pulls/28) 
+   * Added option to whitelist HTML tags in TOC [#36](https://github.com/trilbymedia/grav-plugin-page-toc/pulls/36)
+   * Added option to set user templates in which anchors are generated [#37](https://github.com/trilbymedia/grav-plugin-page-toc/pulls/37)
+1. [](#bugfix)
+   * Revert Twig macro to use `_self` as it was breaking the recursion.  Deprecated message remains but can't be helped. [#38](https://github.com/trilbymedia/grav-plugin-page-toc/issues/38)
+
 # v3.2.2
 ## 05/10/2023
 

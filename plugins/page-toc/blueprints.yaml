@@ -1,7 +1,7 @@
 name: Page Toc
 type: plugin
 slug: page-toc
-version: 3.2.2
+version: 3.2.4
 description: Generate a table of contents and anchors from a page
 icon: list
 author:
@@ -50,6 +50,12 @@ form:
         0: PLUGIN_ADMIN.DISABLED
       validate:
         type: bool
+    templates:
+      type: selectize
+      label: PLUGIN_PAGE_TOC.ACTIVE_FOR_TEMPLATES
+      help: PLUGIN_PAGE_TOC.ACTIVE_FOR_TEMPLATES_HELP
+      validate:
+        type: commalist
 
     toc_section:
       type: section
@@ -84,6 +90,12 @@ form:
           type: text
           label: PLUGIN_PAGE_TOC.HEADER_CSS_CLASSES
           help: PLUGIN_PAGE_TOC.HEADER_CSS_CLASSES_HELP
+        tags:
+          type: selectize
+          label: PLUGIN_PAGE_TOC.ALLOWED_HTML_TAGS
+          help: PLUGIN_PAGE_TOC.ALLOWED_HTML_TAGS_HELP
+          validate:
+            type: commalist
 
     anchors_section:
       type: section

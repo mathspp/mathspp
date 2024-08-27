@@ -1,5 +1,5 @@
 name: Archives
-version: 2.0.2
+version: 2.0.3.1
 type: plugin
 slug: archives
 description: The **Archives** plugin creates links for pages grouped by month/year
@@ -47,12 +47,13 @@ form:
       label: Date Format
       default: 'jS M Y'
       options:
-        'F jS Y': "January 1st 2014"
+        'F jS Y': "January 1st 2024"
         'l jS of F': "Monday 1st of January"
-        'D, m M Y': "Mon, 01 Jan 2014"
-        'd-m-y': "01-01-14"
-        'jS M Y': "10th Feb 2014"
-        'F Y': "Jan 2015"
+        'D, m M Y': "Mon, 01 Jan 2024"
+        'd-m-y': "01-01-24"
+        'jS M Y': "10th Feb 2024"
+        'F Y': "Jan 2024"
+        'Y': "2024"
 
     show_count:
       type: toggle
