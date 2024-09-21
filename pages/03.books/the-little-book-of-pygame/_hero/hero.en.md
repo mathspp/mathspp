@@ -1,5 +1,5 @@
 ---
-title: "The little book of pygame"
+title: "The little book of Pygame"
 ---
 
-# The little book of `pygame`
+# The little book of Pygame
