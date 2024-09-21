@@ -10,7 +10,7 @@ content:
           - "_swimmy-fish"
           - "_bubble-pop"
           - "_memory-tiles"
-          - "_maze_navigator"
+          - "_maze-navigator"
           - "_cta"
 metadata:
     author: "Rodrigo Girão Serrão"
