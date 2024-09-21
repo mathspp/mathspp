@@ -10,6 +10,7 @@ content:
           - "_itertools"
           - "_pandas-and-matplotlib"
           - "_comprehensions"
+          - "_pygame"
           - "_bootcamp-book"
           - "_nnfwp"
           - "_problems"

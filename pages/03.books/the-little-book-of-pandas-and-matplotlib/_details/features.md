@@ -11,5 +11,5 @@ The short chapters introduce you to the key concepts that you need to manipulate
 This book is perfect for you if you want to get an overview of the multiple tools, ideas, and concepts, that pandas and matplotlib have to offer and that you can learn and master.
 
 <div style="display:flex; justify-content:center;">
-<a href="https://mathspp.gumroad.com/l/little-book-pandas-matplotlib/?wanted=true" target="_blank" class="btn" style="margin-right: 1em;">Get started with pandas & matplotlib</a>
+<a href="https://mathspp.gumroad.com/l/the-little-book-of-pandas-and-matplotlib/?wanted=true" target="_blank" class="btn" style="margin-right: 1em;">Get started with pandas & matplotlib</a>
 </div>

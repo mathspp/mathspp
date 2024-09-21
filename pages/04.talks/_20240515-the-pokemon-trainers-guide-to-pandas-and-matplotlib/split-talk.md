@@ -17,4 +17,4 @@ The overall consensus of the participants was that the tutorial was well worth t
 
 ===
 
-[PyCon US 2024](https://us.pycon.org/2024/schedule/presentation/102/), 15-05-2024 • [Main reference](https://mathspp.gumroad.com/l/little-book-pandas-matplotlib) • [Attend this tutorial online](https://mathspp.gumroad.com/l/webinar-pandas-matplotlib)
+[PyCon US 2024](https://us.pycon.org/2024/schedule/presentation/102/), 15-05-2024 • [Main reference](https://mathspp.gumroad.com/l/the-little-book-of-pandas-and-matplotlib) • [Attend this tutorial online](https://mathspp.gumroad.com/l/webinar-pandas-matplotlib)

@@ -1,5 +1,6 @@
 ---
 title: The little book of itertools
+event: Mastering itertools and iteration in Python
 image_align: left
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Puzzles, Riddles, & Problems
-image_align: right
+image_align: left
 ---
 
 This book compiles the [puzzles, riddles, and problems I've published on my blog](/blog/problems).

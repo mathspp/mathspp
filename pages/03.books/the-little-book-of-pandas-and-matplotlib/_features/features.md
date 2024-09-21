@@ -16,5 +16,5 @@ features:
 ---
 
 <div style="display:flex; justify-content:center;">
-<a href="https://mathspp.gumroad.com/l/little-book-pandas-matplotlib/?wanted=true" target="_blank" class="btn" style="margin-right: 1em;">Get started with pandas & matplotlib</a>
+<a href="https://mathspp.gumroad.com/l/the-little-book-of-pandas-and-matplotlib/?wanted=true" target="_blank" class="btn" style="margin-right: 1em;">Get started with pandas & matplotlib</a>
 </div>
