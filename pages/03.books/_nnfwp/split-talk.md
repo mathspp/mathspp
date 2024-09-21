@@ -1,6 +1,6 @@
 ---
 title: Neural Networks Fundamentals with Python
-image_align: right
+image_align: left
 ---
 
 Ever wondered what a neural network really is, how it works, or how to implement one?

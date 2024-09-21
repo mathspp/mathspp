@@ -2,9 +2,9 @@
 class: offset-box
 ---
 
-Over the past few years I've written and published 5 books independently.
+Over the past few years I've written and published 8 books independently.
 
-These books add up to roughly 1600 pages and they condense my knowledge of Python and Computer Science (and some mathematics too).
+These books condense the knowledge of Python, Computer Science, and sometimes maths, that I spent thousands of hours learning for myself.
 
 ![](_books.webp)
 

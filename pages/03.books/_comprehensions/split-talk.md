@@ -1,6 +1,6 @@
 ---
 title: Comprehending Comprehensions
-image_align: right
+image_align: left
 ---
 
 I devoted an entire book with over 200 exercises to list comprehensions, dictionary and set comprehensions, and generator expressions.
