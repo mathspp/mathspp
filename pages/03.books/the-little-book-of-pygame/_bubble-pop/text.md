@@ -4,7 +4,9 @@ image_align: left
 
 ## Bubble Pop
 
-In this book, readers will gain hands-on experience building four unique mini-games, each teaching essential game development concepts and practical features of Pygame. By the end of each game, readers will have expanded their skill set and developed a foundation to bring their creative ideas to life. Here’s what you’ll learn with each project:
+In this reaction and precision game players have to click as many shrinking bubbles as possible within the time limit.
+
+Here are some things you'll learn:
 
 - **Interactive Object Management**: You’ll learn how to manage and animate interactive objects, such as bubbles that appear, shrink, and disappear based on player input.
 This is crucial for creating dynamic and engaging game environments.
