@@ -11,7 +11,7 @@ Whether you’re a hobbyist looking to explore something new or a developer want
 
 No fluff – just practical steps to making your own games from scratch.
 
-[![](_mockup.webp)](https://mathspp.gumroad.com/l/the-little-book-of-pygame/?wanted=true)
+[![](_game_thumbnails.webp)](https://mathspp.gumroad.com/l/the-little-book-of-pygame/?wanted=true)
 
 <div style="display:flex; justify-content:center;">
     <a href="https://mathspp.gumroad.com/l/the-little-book-of-pygame/?wanted=true" target="_blank" class="btn" style="margin-right: 1em;">Start creating your own computer minigames!</a>
