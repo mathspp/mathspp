@@ -1,5 +1,5 @@
 ---
-title: The little book of Pygame
+title: The little book of pygame
 event: Create your own computer minigames
 image_align: right
 ---
