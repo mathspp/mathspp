@@ -6,7 +6,7 @@ Today I learned how to call a makefile from within another makefile.
 # Nested makefiles
 
 I like to use [make](https://www.gnu.org/software/make/manual/make.html) and makefiles on my projects and today I needed to call a makefile from within another makefile...
-I was pretty sure there was a “proper” way to do it and I was right.
+I was pretty sure there was a “proper” way to do it, so I went ahead and looked it up.
 
 A quick search revealed I should use `$(MAKE)` instead of typing `make` and that I could also use the option `-C` to change the directory from where I'm reading my makefile.
 
@@ -14,9 +14,9 @@ As a simple example, consider the following directory structure:
 
 ```
 - root
-|- Makefile
-|- subfolder
- |- Makefile
+  |- Makefile
+  |- subfolder
+     |- Makefile
 ```
 
 Paste the following in `root/Makefile`:
