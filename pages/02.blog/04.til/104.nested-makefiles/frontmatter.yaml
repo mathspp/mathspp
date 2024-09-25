@@ -1,0 +1,20 @@
+date: 25-09-2024
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to call a makefile from within another makefile."
+    og:image: "https://mathspp.com/blog/nested-makefiles/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/nested-makefiles/thumbnail.webp"
+references:
+  - "GNU make manual, Recursive Use of make, [https://www.gnu.org/software/make/manual/make.html#Recursion](https://www.gnu.org/software/make/manual/make.html#Recursion) [last accessed 25-09-2024]"
+  - "GNU make manual, Options Summary, [https://www.gnu.org/software/make/manual/make.html#Options-Summary](https://www.gnu.org/software/make/manual/make.html#Options-Summary) [last accessed 25-09-2024]"
+routes:
+    aliases:
+        - "/blog/til/104"
+slug: "nested-makefiles"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+        - productivity
+        - programming
+title: "TIL #104 – nested makefiles"
+visible: false
