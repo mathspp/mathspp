@@ -1,4 +1,4 @@
-This article outlines the steps I follow to prepare my technical talks, including notes on slide design, how to handle engagement, and how to prepare the delivery.
+This article outlines the steps I follow to prepare my technical talks, including notes on slide design, engaging with the audience, how to prepare the delivery, and how to manage the Q&A.
 
 ===
 
