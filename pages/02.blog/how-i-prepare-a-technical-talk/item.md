@@ -139,4 +139,4 @@ I know good speakers who follow similar guidelines and I know good speakers who 
 You can experiment and draw inspiration from the workflows of others, but in the end you have to find what works for you.
 
 I appreciate you taking the time to go through this article.
-I'd be interested in hearing about your personal experience as a speaker, so please leave a comment below or [drop me a line](/contact-me) to share your own recommendations and your workflow.
+I'd be interested in hearing about your personal experience as a speaker, so please leave a comment below or [reach out to me](/contact-me) to share your own recommendations and your workflow.

@@ -6,7 +6,22 @@ import cog, subprocess
 result = subprocess.run(["python", "tools/stats.py"], text=True, capture_output=True)
 cog.outl(result.stdout)
 ]]]-->
-🔍 Google this error | 📚 Python docs
+<table class="stats-table">
+    <thead>
+        <tr>
+            <th style="text-align: center;">363</th>
+            <th style="text-align: center;">401,421</th>
+            <th style="text-align: center;">32,965</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: center;">articles</td>
+            <td style="text-align: center;">words</td>
+            <td style="text-align: center;">lines of code</td>
+        </tr>
+    </tbody>
+</table>
 
 <!--[[[end]]]--->
 {% endmarkdown %}
