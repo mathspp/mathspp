@@ -34,6 +34,11 @@ When creating my slide deck I try to follow these guidelines:
  - If it's in my slide, they will read it: or try to.
  Everything that shows up on my slides will distract my audience. If it's in a small font, I'll lose time while the audience tries really hard to read what I included in a small font size.
  - No animations: or only very simple ones. If things move a lot, I'll distract my audience and if I distract them it will be hard to get their attention back.
+ - Code samples: if you are showing code samples,
+     - simplify the code as much as possible. It is ok to ellide surrounding code if it is not absolutely essential to have that piece of code on the screen.
+     - increase the font size. The font size should be especially large for code samples.
+     - use high-contrast highlighting and preferably a light theme. I'm a dark mode person but code samples should ideally be in a light theme. This is because in many settings the projector/screen/room lighting is just not good enough for code in a dark theme.
+     - take the points above extra seriously if you are live coding.
 
 
 ## Audience engagement
