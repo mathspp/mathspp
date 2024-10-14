@@ -373,7 +373,7 @@ If we run this code, we get the correct answer pretty much immediately:
 
 ## Conclusion
 
-I had 45 minutes for my section of the lesson and I ended up talking for 60 minutes.
+My part of the lesson was supposed to last 45 minutes and I ended up talking for 60 minutes.
 Even so, this was a lot of information for someone who had never written any code and while I hope I managed to show that with a couple of keywords and syntactic constructs we can already do something interesting, like solving a Sudoku, I also hope I did not give the students the impression that this was supposed to be trivial.
 
 All in all, I had a blast teaching roughly 1750 students (the official record only recognises 1668 because some were disqualified) and some students told me afterwards that they enjoyed my lesson.

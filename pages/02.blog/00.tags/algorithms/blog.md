@@ -28,9 +28,9 @@ title: "Algorithms blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">17</th>
-            <th style="text-align: center;">18,815</th>
-            <th style="text-align: center;">1,822</th>
+            <th style="text-align: center;">18</th>
+            <th style="text-align: center;">21,005</th>
+            <th style="text-align: center;">1,941</th>
         </tr>
     </thead>
     <tbody>

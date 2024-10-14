@@ -28,8 +28,8 @@ title: "Repl blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">2</th>
-            <th style="text-align: center;">417</th>
+            <th style="text-align: center;">3</th>
+            <th style="text-align: center;">768</th>
             
         </tr>
     </thead>
