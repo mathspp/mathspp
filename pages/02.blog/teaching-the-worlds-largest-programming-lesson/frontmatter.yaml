@@ -1,0 +1,17 @@
+date: 14-10-2024 18:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This article goes over the content I taught at the world's largest programming lesson that broke a Guinness World Record with 1668 students."
+    og:image: "https://mathspp.com/blog/teaching-the-worlds-largest-programming-lesson/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/teaching-the-worlds-largest-programming-lesson/thumbnail.webp"
+references:
+  - "Portuguese school sets world record for largest programming lesson, [https://www.reuters.com/world/europe/portuguese-school-sets-world-record-largest-programming-lesson-2024-10-12/](https://www.reuters.com/world/europe/portuguese-school-sets-world-record-largest-programming-lesson-2024-10-12/) [last accessed 14-10-2024];"
+slug: "teaching-the-worlds-largest-programming-lesson"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - algorithms
+        - programming
+        - python
+title: Teaching the world's largest programming lesson
