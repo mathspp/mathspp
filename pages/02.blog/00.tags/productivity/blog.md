@@ -28,9 +28,9 @@ title: "Productivity blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">18</th>
-            <th style="text-align: center;">13,761</th>
-            <th style="text-align: center;">1,018</th>
+            <th style="text-align: center;">19</th>
+            <th style="text-align: center;">14,449</th>
+            <th style="text-align: center;">1,090</th>
         </tr>
     </thead>
     <tbody>

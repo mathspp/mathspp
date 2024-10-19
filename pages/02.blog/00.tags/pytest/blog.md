@@ -28,9 +28,9 @@ title: "Pytest blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">4</th>
-            <th style="text-align: center;">1,311</th>
-            <th style="text-align: center;">144</th>
+            <th style="text-align: center;">5</th>
+            <th style="text-align: center;">1,999</th>
+            <th style="text-align: center;">216</th>
         </tr>
     </thead>
     <tbody>
