@@ -11,7 +11,7 @@ Use the Python Pastebin to share links to Python code that work forever. No logi
 <button id="copyB" title="Alt + C" class="button" onclick="copy_link(py_area.value)">Copy<br>code</button>
 
 <div style="top:4em; left:.5em; right:.5em; bottom:0; font-size:125%; color:#101010;">
-    <textarea class="mainArea" id="py_area" spellcheck="false" style="width:100%;margin:10px" rows="10"></textarea>
+    <textarea class="mainArea" id="py_area" spellcheck="false" style="width:100%;margin:10px;font-family:'FiraCode Nerd Font Mono'" rows="10"></textarea>
     <pre><code class="mainArea python" id="genc">
     </code></pre>
 </div>
