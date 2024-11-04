@@ -28,9 +28,9 @@ title: "Concurrency blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">2</th>
-            <th style="text-align: center;">2,550</th>
-            <th style="text-align: center;">246</th>
+            <th style="text-align: center;">3</th>
+            <th style="text-align: center;">2,623</th>
+            <th style="text-align: center;">264</th>
         </tr>
     </thead>
     <tbody>
