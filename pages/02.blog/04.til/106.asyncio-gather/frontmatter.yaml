@@ -13,5 +13,8 @@ slug: "asyncio-gather"
 taxonomy:
     category: [blogpost, til]
     tag:
+        - concurrency
+        - programming
+        - python
 title: "TIL #106 – asyncio.gather"
 visible: false
