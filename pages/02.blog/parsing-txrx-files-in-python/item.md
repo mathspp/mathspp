@@ -17,9 +17,7 @@ My friend sent me [one sample TXRX file](sample.txrx) for me to play around with
 <details>
 <summary>Sample TXRX file contents</summary>
 
-<pre>
-<code class="language-txrx">
-begin_<points> BS
+<pre><code class="language-txrx">begin_&lt;points&gt; BS
 project_id 1
 active
 vertical_line no
@@ -32,46 +30,46 @@ AutoPatternScale
 ShowDescription yes
 CVsVisible no
 CVsThickness 3
-begin_<location> 
-begin_<reference> 
+begin_&lt;location&gt; 
+begin_&lt;reference&gt; 
 cartesian
 longitude -0.000000000000000
 latitude 0.000000000000000
 visible no
 terrain
-end_<reference>
+end_&lt;reference&gt;
 nVertices 1
 -33.000000000000000 11.000000000000000 32.000000000000000
-end_<location>
+end_&lt;location&gt;
 pattern_show_arrow no
 pattern_show_as_sphere no
 generate_p2p yes
 use_apg_acceleration no
 is_transmitter yes
 is_receiver yes
-begin_<transmitter> 
-begin_<pattern> 
+begin_&lt;transmitter&gt; 
+begin_&lt;pattern&gt; 
 antenna 1
 waveform 1
 rotation_x 0.00000
 rotation_y 0.00000
 rotation_z 0.00000
-end_<pattern>
+end_&lt;pattern&gt;
 power 0.00000
-end_<transmitter>
-begin_<receiver> 
-begin_<pattern> 
+end_&lt;transmitter&gt;
+begin_&lt;receiver&gt; 
+begin_&lt;pattern&gt; 
 antenna 1
 waveform 1
 rotation_x 0.00000
 rotation_y 0.00000
 rotation_z 0.00000
-end_<pattern>
+end_&lt;pattern&gt;
 NoiseFigure 3.00000
-end_<receiver>
+end_&lt;receiver&gt;
 powerDistribution Uniform 10.00000 10.00000 inactive nosampling 10
-end_<points>
-begin_<grid> ue_grid
+end_&lt;points&gt;
+begin_&lt;grid&gt; ue_grid
 project_id 2
 active
 vertical_line no
@@ -83,38 +81,38 @@ AutoPatternScale
 ShowDescription yes
 CVsVisible no
 CVsThickness 3
-begin_<location> 
-begin_<reference> 
+begin_&lt;location&gt; 
+begin_&lt;reference&gt; 
 cartesian
 longitude -0.000000000000000
 latitude -0.000000000000000
 visible no
 terrain
-end_<reference>
+end_&lt;reference&gt;
 side1 180.00000
 side2 120.00000
 spacing 2.00000
 nVertices 1
 -90.000000000000000 -60.000000000000000 1.500000000000000
-end_<location>
+end_&lt;location&gt;
 pattern_show_arrow no
 pattern_show_as_sphere no
 generate_p2p no
 use_apg_acceleration yes
 is_transmitter no
 is_receiver yes
-begin_<receiver> 
-begin_<pattern> 
+begin_&lt;receiver&gt; 
+begin_&lt;pattern&gt; 
 antenna 1
 waveform 1
 rotation_x 0.00000
 rotation_y 0.00000
 rotation_z 0.00000
-end_<pattern>
+end_&lt;pattern&gt;
 NoiseFigure 3.00000
-end_<receiver>
+end_&lt;receiver&gt;
 powerDistribution Uniform 10.00000 10.00000 inactive nosampling 10
-end_<grid>
+end_&lt;grid&gt;
 </code>
 </pre>
 </details>
@@ -597,8 +595,7 @@ For your convenience, you can find the full code below.
 <details>
 <summary>File <code>parser.py</code></summary>
 
-```py
-"""Parses a TXRX file into a Python object that can be easily queried.
+<pre><code class="language-py">"""Parses a TXRX file into a Python object that can be easily queried.
 
 The pseudo-grammar for a TXRX file looks like this:
 
@@ -613,8 +610,8 @@ import re
 
 RE_BOOL_TRUE = re.compile(r"yes")
 RE_BOOL_FALSE = re.compile(r"no")
-RE_BEGIN_NODE = re.compile(r"begin_<(?P<node_name>\S*)>")
-RE_END_NODE = re.compile(r"end_<(?P<node_name>\S*)>")
+RE_BEGIN_NODE = re.compile(r"begin_&lt;(?P&lt;node_name&gt;\S*)&gt;")
+RE_END_NODE = re.compile(r"end_&lt;(?P&lt;node_name&gt;\S*)&gt;")
 RE_INT = re.compile(r"-?\d+")
 RE_FLOAT = re.compile(r"-?\d+[.]\d+")
 RE_LABEL = re.compile(r"\S+")
@@ -669,11 +666,11 @@ class peekable:
 
 @dataclass
 class Node:
-    """Node to represent a section delimited by begin_<...> / end_<...>.
+    """Node to represent a section delimited by begin_&lt;...&gt; / end_&lt;...&gt;.
 
     Provides the attributes name, values, labels, and data.
 
-    - name is the optional name in front of the tag begin_<...>;
+    - name is the optional name in front of the tag begin_&lt;...&gt;;
     - values is a dictionary mapping labels to values;
     - labels is a list of labels; and
     - data is a list of tuples with unlabeled data.
@@ -725,7 +722,7 @@ def parse_document(tokens):
 
 
 def parse_node(tokens):
-    """Parse a begin_<...> / end_<...> node.
+    """Parse a begin_&lt;...&gt; / end_&lt;...&gt; node.
 
     Returns the node name and the node.
     """
@@ -754,7 +751,7 @@ def parse_node(tokens):
                 node.data.append(value)
 
     # Parse the closing tag and newline.
-    eat(tokens, f"end_<{node_name}>")
+    eat(tokens, f"end_&lt;{node_name}&gt;")
     eat(tokens, NL_TOKEN)
 
     return node_name, node
@@ -806,6 +803,6 @@ def parse_line_value(tokens):
 if __name__ == "__main__":
     tokens = peekable(tokenize_file("sample.txrx"))
     document = parse_document(tokens)
-```
+</code></pre>
 
 </details>

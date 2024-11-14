@@ -29,8 +29,8 @@ title: "Parsers blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">4</th>
-            <th style="text-align: center;">2,562</th>
-            <th style="text-align: center;">571</th>
+            <th style="text-align: center;">3,211</th>
+            <th style="text-align: center;">363</th>
         </tr>
     </thead>
     <tbody>
