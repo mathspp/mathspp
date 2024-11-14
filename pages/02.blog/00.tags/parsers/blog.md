@@ -28,9 +28,9 @@ title: "Parsers blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">3</th>
-            <th style="text-align: center;">1,338</th>
-            <th style="text-align: center;">45</th>
+            <th style="text-align: center;">4</th>
+            <th style="text-align: center;">2,383</th>
+            <th style="text-align: center;">667</th>
         </tr>
     </thead>
     <tbody>

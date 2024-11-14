@@ -1,0 +1,15 @@
+date: 14-11-2024 10:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "In this article I show how I wrote a parser to parse TXRX files into a more manageable object in Python."
+    og:image: "https://mathspp.com/blog/parsing-txrx-files-in-python/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/parsing-txrx-files-in-python/thumbnail.webp"
+slug: "parsing-txrx-files-in-python"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - parsers
+        - programming
+        - python
+title: Parsing TXRX files in Python
