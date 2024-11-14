@@ -17,8 +17,8 @@ My friend sent me [one sample TXRX file](sample.txrx) for me to play around with
 <details>
 <summary>Sample TXRX file contents</summary>
 
-
-```txrx
+<pre>
+<code class="language-txrx">
 begin_<points> BS
 project_id 1
 active
@@ -115,10 +115,10 @@ NoiseFigure 3.00000
 end_<receiver>
 powerDistribution Uniform 10.00000 10.00000 inactive nosampling 10
 end_<grid>
-```
-
-
+</code>
+</pre>
 </details>
+
 
 The most important thing that I noticed is that there seem to be opening and closings tags that look like `begin_<...>` / `end_<...>` and in between those you get lines of values, and possibly more nested tags.
 
