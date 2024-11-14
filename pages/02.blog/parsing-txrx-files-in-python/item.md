@@ -801,7 +801,7 @@ def parse_line_value(tokens):
 
 
 if __name__ == "__main__":
-    tokens = peekable(tokenize_file("sample.txrx"))
+    tokens = tokenize_file("sample.txrx")
     document = parse_document(tokens)
 </code></pre>
 
