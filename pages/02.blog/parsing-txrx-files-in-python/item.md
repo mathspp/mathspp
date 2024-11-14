@@ -17,6 +17,7 @@ My friend sent me [one sample TXRX file](sample.txrx) for me to play around with
 <details>
 <summary>Sample TXRX file contents</summary>
 
+
 ```txrx
 begin_<points> BS
 project_id 1
@@ -115,6 +116,7 @@ end_<receiver>
 powerDistribution Uniform 10.00000 10.00000 inactive nosampling 10
 end_<grid>
 ```
+
 
 </details>
 
