@@ -8,7 +8,7 @@ Today I learned how to use shell scripting to activate my virtual environment au
 Since I can remember, whenever I `cd` into a directory that contains a virtual environment folder `.venv`, I always want to activate that virtual environment.
 I typed `source .venv/bin/activate` so often that I even created an alias so that typing `activate` was enough.
 
-Today, I wondered if there wasn't a way in which I could automatically run my command `activate` whenever I `cd` into a directory that contains a directory `.venv`.
+Today, I wondered if there wasn't a way in which I could automatically run the command `activate` whenever I `cd` into a directory that contains a directory `.venv`.
 I was sure there was, so I opened ChatGPT and typed my question:
 
  > “In iterm2, how can I run the command `activate` automatically whenever I `cd` into a directory that contains a folder `.venv`?”

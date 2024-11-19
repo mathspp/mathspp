@@ -28,9 +28,9 @@ title: "Chatgpt blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">3</th>
-            <th style="text-align: center;">5,428</th>
-            <th style="text-align: center;">445</th>
+            <th style="text-align: center;">4</th>
+            <th style="text-align: center;">5,626</th>
+            <th style="text-align: center;">459</th>
         </tr>
     </thead>
     <tbody>
