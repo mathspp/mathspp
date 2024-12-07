@@ -51,10 +51,10 @@ valid_operators = [
 
 def is_valid(target, operands):
     operator_sequences = product(valid_operators, repeat=len(operands) - 1)
-    start, *tail = operands
+    start, *head = operands
     for operators in operator_sequences:
         total = start
-        for operator, operand in zip(operators, tail):
+        for operator, operand in zip(operators, head):
             total = operator(total, operand)
         if total == target:
             return True
@@ -99,17 +99,17 @@ def is_valid(target, operands):
         return False
 
     last_op = operands[-1]
-    tail = operands[:-1]
+    head = operands[:-1]
 
-    if is_valid(target - last_op, tail):  # addition
+    if is_valid(target - last_op, head):  # addition
         return True
 
     if target % last_op == 0:  # multiplication
-        if is_valid(target // last_op, tail):
+        if is_valid(target // last_op, head):
             return True
 
     if str(target).endswith(str(last_op)):  # concatenation
-        if is_valid(target // pow(10, len(str(last_op))), tail):
+        if is_valid(target // pow(10, len(str(last_op))), head):
             return True
 
     return False
@@ -136,17 +136,17 @@ def is_valid(target, operands):
         return False
 
     last_op = operands[-1]
-    tail = operands[:-1]
+    head = operands[:-1]
 
     if str(target).endswith(str(last_op)):  # concatenation
-        if is_valid(target // pow(10, len(str(last_op))), tail):
+        if is_valid(target // pow(10, len(str(last_op))), head):
             return True
 
     if target % last_op == 0:  # multiplication
-        if is_valid(target // last_op, tail):
+        if is_valid(target // last_op, head):
             return True
 
-    if is_valid(target - last_op, tail):  # addition
+    if is_valid(target - last_op, head):  # addition
         return True
 
     return False
@@ -164,18 +164,18 @@ def is_valid(target, operands):
         return False
 
     last_op = operands[-1]
-    tail = operands[:-1]
+    head = operands[:-1]
 
     if str(target).endswith(str(last_op)):  # concatenation
-        if is_valid(target // pow(10, len(str(last_op))), tail):
+        if is_valid(target // pow(10, len(str(last_op))), head):
             return True
 
     if target % last_op == 0:  # multiplication
-        if is_valid(target // last_op, tail):
+        if is_valid(target // last_op, head):
             return True
 
     if target > last_op:  # <-- added
-        if is_valid(target - last_op, tail):  # addition
+        if is_valid(target - last_op, head):  # addition
             return True
 
     return False
