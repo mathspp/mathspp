@@ -3,15 +3,15 @@
 <!--
 [[[cog
 import cog, subprocess
-result = subprocess.run(["python", "tools/stats.py"], text=True, capture_output=True)
+result = subprocess.run(["uv", "run", "tools/stats.py"], text=True, capture_output=True)
 cog.outl(result.stdout)
 ]]]-->
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">370</th>
-            <th style="text-align: center;">407,913</th>
-            <th style="text-align: center;">33,622</th>
+            <th style="text-align: center;">371</th>
+            <th style="text-align: center;">409,542</th>
+            <th style="text-align: center;">33,759</th>
         </tr>
     </thead>
     <tbody>

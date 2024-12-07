@@ -1,0 +1,17 @@
+date: 7-12-2024 19:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Solving “Bridge Repair”, from day 7 of Advent of Code 2024, in 4ms with Python."
+    og:image: "https://mathspp.com/blog/solving-bridge-repair-in-4ms-with-python/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/solving-bridge-repair-in-4ms-with-python/thumbnail.webp"
+slug: "solving-bridge-repair-in-4ms-with-python"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - algorithms
+        - mathematics
+        - programming
+        - python
+        - recursion
+title: Solving “Bridge Repair” in 4ms with Python

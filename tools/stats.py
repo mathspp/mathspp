@@ -1,3 +1,11 @@
+# /// script
+# requires-python = ">=3.13"
+# dependencies = [
+#     "jinja2",
+#     "pillow",
+#     "ruamel-yaml",
+# ]
+# ///
 from collections import Counter, defaultdict
 from pathlib import Path
 import re
@@ -97,6 +105,9 @@ def build_thumbnail_for_tag(folder, tag, stats):
         table_text[1].append("lines of code" if loc != 1 else "line of code")
 
     # Define the title text
+    tag = tag.capitalize()
+    if tag == "Apl":
+        tag = "APL"
     title_text = f"{tag} articles".capitalize()
 
     # Calculate the size of the title
