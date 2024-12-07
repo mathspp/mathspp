@@ -1,4 +1,4 @@
-Solving “Bridge Repair”, from day 7 of Advent of Code 2024, in 4ms with Python.
+Solving “Bridge Repair”, from day 7 of Advent of Code 2024, in 4ms with Python with a simple deductive algorithm.
 
 ===
 
