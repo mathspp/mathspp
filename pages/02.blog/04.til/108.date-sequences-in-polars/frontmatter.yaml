@@ -1,0 +1,20 @@
+date: 10-12-2024 17:52
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to use the Polars function `pl.date_range` to create date sequences with calendar-aware intervals between dates."
+    og:image: "https://mathspp.com/blog/date-sequences-in-polars/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/date-sequences-in-polars/thumbnail.webp"
+references:
+    - "Polars Python API reference, `date_range`, [https://docs.pola.rs/api/python/stable/reference/expressions/api/polars.date_range.html](https://docs.pola.rs/api/python/stable/reference/expressions/api/polars.date_range.html) [last accessed 10-12-2024];"
+routes:
+    aliases:
+        - "/blog/til/108"
+slug: "date-sequences-in-polars"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - polars
+      - programming
+      - python
+title: "TIL #108 – Date sequences in Polars"
+visible: false
