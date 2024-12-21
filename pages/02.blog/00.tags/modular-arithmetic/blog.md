@@ -28,9 +28,9 @@ title: "Modular arithmetic blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">5</th>
-            <th style="text-align: center;">4,227</th>
-            <th style="text-align: center;">117</th>
+            <th style="text-align: center;">6</th>
+            <th style="text-align: center;">6,765</th>
+            <th style="text-align: center;">242</th>
         </tr>
     </thead>
     <tbody>

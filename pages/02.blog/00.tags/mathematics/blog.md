@@ -28,9 +28,9 @@ title: "Mathematics blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">118</th>
-            <th style="text-align: center;">105,123</th>
-            <th style="text-align: center;">4,166</th>
+            <th style="text-align: center;">119</th>
+            <th style="text-align: center;">107,661</th>
+            <th style="text-align: center;">4,291</th>
         </tr>
     </thead>
     <tbody>

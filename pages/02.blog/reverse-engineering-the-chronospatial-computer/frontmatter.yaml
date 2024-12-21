@@ -1,0 +1,18 @@
+date: 21-12-2024 9:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Reverse-engineering the program from “Chronospatial Computer”, day 17 of Advent of Code 2024."
+    og:image: "https://mathspp.com/blog/reverse-engineering-the-chronospatial-computer/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/reverse-engineering-chronospatial-computer/thumbnail.webp"
+slug: "reverse-engineering-the-chronospatial-computer"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - algorithms
+        - mathematics
+        - modular arithmetic
+        - programming
+        - python
+        - recursion
+title: Reverse-engineering the “Chronospatial Computer”
