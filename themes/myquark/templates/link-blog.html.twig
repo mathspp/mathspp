@@ -18,7 +18,8 @@
         {% embed 'partials/layout.html.twig' with {blog: page} %}
             {% block item %}
 
-                <div class="snippets">
+                <div class="links">
+                    Showing {% page.collection|len %} results.
                     {% for link_item in page.collection %}
                         {% include 'partials/blog/link-item.html.twig' with { link_item: link_item } %}
                     {% endfor %}
