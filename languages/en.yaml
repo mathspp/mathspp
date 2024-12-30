@@ -154,6 +154,7 @@ TAG_DESCRIPTIONS:
   pandas: "The Python module for data manipulation Pandas"
   parsers: "The implementation of parsers"
   pigeonhole principle: "The pigeonhole principle and its applications"
+  polars: "The dataframe library Polars"
   polynomials: "Polynomial functions and their properties"
   primes: "The prime numbers and their properties"
   probability: "The mathematical field of probability and its applications"
