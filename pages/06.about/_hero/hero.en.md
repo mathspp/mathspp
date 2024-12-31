@@ -1,9 +1,11 @@
 ---
+anchors:
+    active: false
 title: About
 hero_classes: "parallax text-light hero-large overlay-dark-gradient" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 hero_image: hero.webp
 ---
 
-# About
+# Hi, I'm Rodrigo
 
-<script src="https://gumroad.com/js/gumroad.js"></script>
+## My superpower is simplifying complex Python topics
