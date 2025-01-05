@@ -22,7 +22,7 @@ title: "Polars blog articles"
 ---
 
 
-# “POLARS” tag
+# The dataframe library Polars
 
 
 <table class="stats-table">

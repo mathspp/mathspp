@@ -30,6 +30,7 @@ name_bits = {
 print(foo(**name_bits))  # Harry James Potter
 ```
 
+
 If you want to be able to use the syntax `**` to unpack your own classes into keyword value pairs, your class must implement the method `keys` and [the dunder method `__getitem__`](/blog/pydonts/dunder-methods).
 
 The method `keys` must return an iterable with the keys your object is aware of and the dunder method `__getitem__` must be able to return the values associated with the given keys:

@@ -13,5 +13,8 @@ slug: "unpacking-kwargs-with-custom-objects"
 taxonomy:
     category: [blogpost, til]
     tag:
+        - dunder methods
+        - python
+        - programming
 title: "TIL #109 – Unpacking kwargs with custom objects"
 visible: false
