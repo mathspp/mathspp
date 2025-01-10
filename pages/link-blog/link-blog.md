@@ -8,6 +8,7 @@ content:
         dir: desc
     pagination: true
     limit: 50
+body_classes: "header-dark header-transparent"
 hero_image: hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 archives:
