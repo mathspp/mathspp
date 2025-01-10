@@ -11,20 +11,20 @@ It can also include arbitrary Markdown content.
 
 <div class="link-item">
     <div class="link-header">
-        <p><a class="link-title" href="{{ link-item.header.link }}" target="_blank">{{ link-item.title }}</a>
-        {% if link-item.header.via %}
-            <a class="link-via" href="{{ link-item.header.via }}" target="_blank">(via)</a>
+        <p><a class="link-title" href="{{ link_item.header.link }}" target="_blank">{{ link_item.title }}</a>
+        {% if link_item.header.via %}
+            <a class="link-via" href="{{ link_item.header.via }}" target="_blank">(via)</a>
         {% endif %}
-        {% if link-item.header.author %}
-            by {{ link-item.header.author }}
+        {% if link_item.header.author %}
+            by {{ link_item.header.author }}
         {% endif %}
         on
         <span class="link-date">
-            {{ link-item.date|date("d-m-Y H:i") }}
+            {{ link_item.date|date("d-m-Y H:i") }}
         </span></p>
     </div>
     <div class="link-content">
-        {{ link-item.content|raw }}
+        {{ link_item.content|raw }}
     </div>
     <hr />
 </div>
