@@ -9,9 +9,13 @@ content:
         by: date
         dir: desc
     pagination: true
+hero_image: hero.webp
+hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
+menu: Blog
 metadata:
     author: Rodrigo Girão Serrão
     description: "The mathspp blog contains articles about Python, programming in general, and mathematics."
     og:description: "The mathspp blog contains articles about Python, programming in general, and mathematics."
     og:image: "https://mathspp.com/blog/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/thumbnail.webp"
+title: Mathspp Blog
