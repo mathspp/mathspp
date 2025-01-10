@@ -15,6 +15,9 @@ It can also include arbitrary Markdown content.
         {% if link_item.header.via %}
             <a class="link-via" href="{{ link_item.header.via }}" target="_blank">(via)</a>
         {% endif %}
+        {% if link_item.header.author %}
+            by {{ link_item.header.author }}
+        {% endif %}
         on
         <span class="link-date">
             {{ link_item.date|date("d-m-Y H:i") }}
