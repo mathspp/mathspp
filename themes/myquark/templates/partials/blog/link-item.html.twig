@@ -23,8 +23,10 @@ It can also include arbitrary Markdown content.
             {{ link_item.date|date("d-m-Y H:i") }}
         </span></p>
     </div>
-    <div class="link-content">
-        {{ link_item.content|raw }}
-    </div>
+    {% if not collapsed %}
+        <div class="link-content">
+            {{ link_item.content|raw }}
+        </div>
+    {% endif %}
     <hr />
 </div>
