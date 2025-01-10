@@ -1,7 +1,7 @@
 ---
 title: "Reflecting on 2024: My Year in Books"
 link: https://clytaemnestra.github.io/tech-blog/reading-list
-by: "Mia Bajić"
+author: "Mia Bajić"
 date: 10-01-2025 11:12
 ---
 
