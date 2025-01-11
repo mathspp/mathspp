@@ -1,0 +1,45 @@
+{#
+Custom standalone template for individual link items.
+Includes breadcrumbs and navigation arrows.
+#}
+
+{% set link_item = page %}
+<div class="link-item-standalone">
+
+    {# Breadcrumbs Section #}
+    <nav class="breadcrumbs">
+        <a href="/link-blog">Back to Link Blog</a>
+    </nav>
+
+    {# Link Item Content #}
+    <div class="link-header">
+        <p>
+            <a class="link-title" href="{{ link_item.header.link }}" target="_blank">{{ link_item.title }}</a>
+            {% if link_item.header.via %}
+                <a class="link-via" href="{{ link_item.header.via }}" target="_blank">(via)</a>
+            {% endif %}
+            {% if link_item.header.author %}
+                by {{ link_item.header.author }}
+            {% endif %}
+            on
+            <span class="link-date">
+                {{ link_item.date|date("d-m-Y H:i") }}
+            </span>
+        </p>
+    </div>
+
+    <div class="link-content">
+        {{ link_item.content|raw }}
+    </div>
+
+    {# Navigation Arrows #}
+    <div class="link-navigation">
+        {% if page.prevSibling %}
+            <a class="nav-prev" href="{{ page.prevSibling.url }}">&larr; Previous</a>
+        {% endif %}
+        {% if page.nextSibling %}
+            <a class="nav-next" href="{{ page.nextSibling.url }}">Next &rarr;</a>
+        {% endif %}
+    </div>
+    
+</div>
