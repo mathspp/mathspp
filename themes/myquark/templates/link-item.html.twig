@@ -3,43 +3,51 @@ Custom standalone template for individual link items.
 Includes breadcrumbs and navigation arrows.
 #}
 
-{% set link_item = page %}
-<div class="link-item-standalone">
+{% extends 'partials/base.html.twig' %}
 
-    {# Breadcrumbs Section #}
-    <nav class="breadcrumbs">
-        <a href="/link-blog">Back to Link Blog</a>
-    </nav>
+{% block body %}
 
-    {# Link Item Content #}
-    <div class="link-header">
-        <p>
-            <a class="link-title" href="{{ link_item.header.link }}" target="_blank">{{ link_item.title }}</a>
-            {% if link_item.header.via %}
-                <a class="link-via" href="{{ link_item.header.via }}" target="_blank">(via)</a>
-            {% endif %}
-            {% if link_item.header.author %}
-                by {{ link_item.header.author }}
-            {% endif %}
-            on
-            <span class="link-date">
-                {{ link_item.date|date("d-m-Y H:i") }}
-            </span>
-        </p>
-    </div>
+<section id="body-wrapper" class="section blog-listing">
+    <section class="container {{ grid_size }}">
+        <div class="link-item-standalone">
 
-    <div class="link-content">
-        {{ link_item.content|raw }}
-    </div>
+            {% include 'partials/breadcrumbs.html.twig' %}
 
-    {# Navigation Arrows #}
-    <div class="link-navigation">
-        {% if page.prevSibling %}
-            <a class="nav-prev" href="{{ page.prevSibling.url }}">&larr; Previous</a>
-        {% endif %}
-        {% if page.nextSibling %}
-            <a class="nav-next" href="{{ page.nextSibling.url }}">Next &rarr;</a>
-        {% endif %}
-    </div>
-    
-</div>
+            {# Link Item Content #}
+            <div class="link-header">
+                <p>
+                    <a class="link-title" href="{{ page.header.link }}" target="_blank">{{ page.title }}</a>
+                    {% if page.header.via %}
+                        <a class="link-via" href="{{ page.header.via }}" target="_blank">(via)</a>
+                    {% endif %}
+                    {% if page.header.author %}
+                        by {{ page.header.author }}
+                    {% endif %}
+                    on
+                    <span class="link-date">
+                        {{ page.date|date("d-m-Y H:i") }}
+                    </span>
+                </p>
+            </div>
+
+            <div class="link-content">
+                {{ page.content|raw }}
+            </div>
+
+            {# Navigation Arrows #}
+            <div class="link-navigation">
+                {% if page.prevSibling %}
+                    <a class="nav-prev" href="{{ page.prevSibling.url }}">&larr; Previous</a>
+                {% endif %}
+                {% if page.nextSibling %}
+                    <a class="nav-next" href="{{ page.nextSibling.url }}">Next &rarr;</a>
+                {% endif %}
+            </div>
+            
+        </div>
+
+
+    </section>
+</section>
+
+{% endblock %}
