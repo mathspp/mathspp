@@ -15,8 +15,10 @@ Includes breadcrumbs and navigation arrows.
 
             {# Link Item Content #}
             <div class="link-header">
-                <p>
+                <h1>
                     <a class="link-title" href="{{ page.header.link }}" target="_blank">{{ page.title }}</a>
+                </h1>
+                <h2>
                     {% if page.header.via %}
                         <a class="link-via" href="{{ page.header.via }}" target="_blank">(via)</a>
                     {% endif %}
@@ -27,7 +29,7 @@ Includes breadcrumbs and navigation arrows.
                     <span class="link-date">
                         {{ page.date|date("d-m-Y H:i") }}
                     </span>
-                </p>
+                </h2>
             </div>
 
             <div class="link-content">
