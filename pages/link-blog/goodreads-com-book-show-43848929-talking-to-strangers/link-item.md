@@ -2,6 +2,8 @@
 title: “Talking to Strangers” book on Goodreads
 link: https://www.goodreads.com/book/show/43848929-talking-to-strangers
 date: 07-01-2025 15:58
+taxonomy:
+    category: link
 ---
 
 I picked this book up randomly in a Canadian bookstore thinking it was about the act of starting to interact with random strangers on the street or how to maintain conversations with people you barely know.

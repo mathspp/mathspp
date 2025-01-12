@@ -3,6 +3,8 @@ title: Duck Typing in Python
 link: https://www.pythonmorsels.com/duck-typing/
 via: https://bsky.app/profile/dataschool.io/post/3leu3htuaxs2j
 date: 03-01-2025 17:35
+taxonomy:
+    category: link
 ---
 
 I was preparing a webinar on typing (for the [Python Mastery Guild](https://skool.com/python-mastery)) and I was thinking about duck typing and how to explain it.

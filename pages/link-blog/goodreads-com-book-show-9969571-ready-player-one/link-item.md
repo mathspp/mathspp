@@ -2,6 +2,8 @@
 title: Ready Player One book on Goodreads
 link: https://www.goodreads.com/book/show/9969571-ready-player-one
 date: 06-01-2025 23:50
+taxonomy:
+    category: link
 ---
 
 [“Ready Player One” came out as a movie directed by Steven Spielberg in 2018](https://www.imdb.com/title/tt1677720/) and ignorant me thought it was just a movie.

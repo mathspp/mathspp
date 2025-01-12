@@ -3,6 +3,8 @@ title: "Never Split The Difference | Chris Voss | TEDxUniversityofNevada - YouTu
 link: https://www.youtube.com/watch?v=MjhDkNmtjy0
 via: https://clytaemnestra.github.io/tech-blog/reading-list
 date: 10-01-2025 11:16
+taxonomy:
+    category: link
 ---
 
 This short TED talk by Chris Voss, author of “Never Split the Difference”, renewed my interest in his book.

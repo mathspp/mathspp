@@ -4,6 +4,8 @@ link: https://nicholas.carlini.com/writing/2025/regex-chess.html
 author: Nicholas Carlini
 via: https://learnbyexample.gumroad.com/l/learnbyexample-weekly
 date: 10-01-2025 15:25
+taxonomy:
+    category: link
 ---
 
 At the top of this article you are presented with a very basic rendering of a chess board and an input field where you're supposed to type chess moves:

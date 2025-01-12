@@ -2,6 +2,8 @@
 title: Squared triangular number
 link: https://en.wikipedia.org/wiki/Squared_triangular_number
 date: 31-12-2024 19:05
+taxonomy:
+    category: link
 ---
 
 With 2025 almost starting, I've seen a number of people talking about the fact that $2025 = 45^2$, and since $45$ is a [triangular number](https://en.wikipedia.org/wiki/Triangular_number), that gives rise to two fun formulas to compute $2025$.

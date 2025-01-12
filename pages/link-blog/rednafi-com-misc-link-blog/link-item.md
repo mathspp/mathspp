@@ -3,6 +3,8 @@ title: Link blog in a static site
 link: https://rednafi.com/misc/link_blog/
 via: https://bsky.app/profile/rednafi.com/post/3lf622ugkoc2w
 date: 07-01-2025 17:02
+taxonomy:
+    category: link
 ---
 
 One more “meta link” in this link blog, Redowan shares his approach to link blogging.

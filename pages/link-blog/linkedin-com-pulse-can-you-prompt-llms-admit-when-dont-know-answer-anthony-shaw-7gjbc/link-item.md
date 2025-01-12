@@ -3,6 +3,8 @@ title: Can you prompt LLMs to admit when they don't know the answer?
 link: https://www.linkedin.com/pulse/can-you-prompt-llms-admit-when-dont-know-answer-anthony-shaw-7gjbc/
 via: https://bsky.app/profile/anthonypjshaw.bsky.social/post/3lf2hg4v6tk2q
 date: 06-01-2025 09:11
+taxonomy:
+    category: link
 ---
 
 In this piece, Anthony Shaw talks about his attempts to make LLMs recognise their inability to answer certain questions and how, by default, LLMs will output a response that might look helpful even if it is complete gargabe.

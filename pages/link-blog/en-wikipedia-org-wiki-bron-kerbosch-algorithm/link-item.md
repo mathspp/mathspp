@@ -3,6 +3,8 @@ title: Bron-Kerbosch algorithm
 link: https://en.wikipedia.org/wiki/Bron–Kerbosch_algorithm
 date: 24-12-2024 17:39
 via: https://bsky.app/profile/bbelderbos.bsky.social/post/3ldxlssm5j22h
+taxonomy:
+    category: link
 ---
 
 This year I've been solving [Advent of Code](https://adventofcode.com) consistently and for day 23 I had to implement a small algorithm that finds clicks in a graph.

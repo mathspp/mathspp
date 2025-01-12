@@ -3,6 +3,8 @@ title: Write your Own Virtual Machine
 link: https://www.jmeiners.com/lc3-vm/
 via: https://learnbyexample.gumroad.com/l/learnbyexample-weekly
 date: 03-01-2025 17:29
+taxonomy:
+    category: link
 ---
 
 I have come to understand that I really enjoy learning about parses, compilers, VMs, and other things along these lines.

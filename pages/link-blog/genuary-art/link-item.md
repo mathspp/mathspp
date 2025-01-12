@@ -3,6 +3,8 @@ title: Genuary 2025
 link: https://genuary.art
 via: https://bsky.app/profile/lukasz.langa.pl/post/3ler4dbg75c2w
 date: 02-01-2025 13:56
+taxonomy:
+    category: link
 ---
 
 The TL;DR is that this is a friendly challenge to get you to write computer programs that create generative art.
