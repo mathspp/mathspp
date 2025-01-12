@@ -24,7 +24,7 @@
             {% block item %}
 
                 <div class="links">
-                    <p>Showing {{ page.collection|length }} links. See a <a href="feed">condensed link blog feed</a>.</p>
+                    <p>Showing {{ page.collection|length }} links. See a <a href="/link-blog/feed">condensed link blog feed</a>.</p>
 
                     {% for link_item in page.collection %}
                         {% include 'partials/blog/link-item-snippet.html.twig' with { link_item: link_item } %}
