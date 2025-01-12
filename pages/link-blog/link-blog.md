@@ -2,7 +2,7 @@
 title: Link blog
 content:
     items:
-        - '@self.children'
+        taxonomy@.category: link
     order:
         by: date
         dir: desc

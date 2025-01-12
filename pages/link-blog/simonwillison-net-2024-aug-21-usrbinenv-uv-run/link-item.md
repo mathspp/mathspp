@@ -4,6 +4,7 @@ link: https://simonwillison.net/2024/Aug/21/usrbinenv-uv-run/
 author: Simon Willison
 via: https://bsky.app/profile/andrew-jones.com/post/3lfcjfwm3os2j
 date: 10-01-2025 15:43
+category: link
 ---
 
 I started using uv recently and I keep getting impressed by everything I can do in such a convenient way with uv.
