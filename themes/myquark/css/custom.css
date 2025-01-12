@@ -595,9 +595,3 @@ table.stats-table thead {
     color: #f8f8f2;
     border-bottom: 0;
 }
-
-/* Targets the header of link blog items. */
-.link-header p {
-    margin-bottom: 0;
-    font-size: 110%;
-}

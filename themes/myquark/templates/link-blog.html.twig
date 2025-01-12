@@ -6,6 +6,11 @@
 {% set show_breadcrumbs = header_var('show_breadcrumbs', [page, blog])|defined(true) %}
 {% set show_sidebar = true %}
 
+{% block stylesheets %}
+    {% do assets.addCss('theme://css/link-blog-custom.css') %}
+    {{ parent() }}
+{% endblock %}
+
 {% block hero %}
     {% include 'partials/hero.html.twig' with {id: 'blog-hero', content: page.content, hero_image: blog_image} %}
 {% endblock %}
