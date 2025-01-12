@@ -25,9 +25,11 @@
 
                 <div class="links">
                     <p>Showing {{ page.collection|length }} links.</p>
+                    <ol reversed>
                     {% for link_item in page.collection %}
                         {% include 'partials/blog/link-item-header.html.twig' with { link_item: link_item } %}
                     {% endfor %}
+                    </ol>
                 </div>
 
             {% endblock %}
