@@ -10,7 +10,7 @@ It can also include arbitrary Markdown content.
 #}
 
 <li>
-    <p><a class="link-title" href="{{ link_item.header.link }}" target="_blank">{{ link_item.title }}</a>
+    <a class="link-title" href="{{ link_item.header.link }}" target="_blank">{{ link_item.title }}</a>
     {% if link_item.header.via %}
         <a class="link-via" href="{{ link_item.header.via }}" target="_blank">(via)</a>
     {% endif %}
@@ -22,5 +22,4 @@ It can also include arbitrary Markdown content.
         {{ link_item.date|date("d-m-Y H:i") }}
     </span>
     <a href="{{ link_item.url }}"><i class="fas fa-link" title="View the link as a standalone page."></i></a>
-    </p>
 </li>
