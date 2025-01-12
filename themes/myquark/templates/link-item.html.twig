@@ -35,14 +35,15 @@ Includes breadcrumbs and navigation arrows.
             </div>
 
             {# Navigation Arrows #}
-            <div class="link-navigation">
-                {% if page.prevSibling %}
-                    <a class="nav-prev" href="{{ page.prevSibling.url }}">&larr; Previous</a>
+            <p class="prev-next text-center">
+                {% if not page.isLast %}
+                    <a class="btn" href="{{ page.prevSibling.url }}"><i class="fa fa-angle-left"></i> {{ 'THEME_QUARK.BLOG.ITEM.PREV_LINK'|t }}</a>
                 {% endif %}
-                {% if page.nextSibling %}
-                    <a class="nav-next" href="{{ page.nextSibling.url }}">Next &rarr;</a>
+
+                {% if not page.isFirst %}
+                    <a class="btn" href="{{ page.nextSibling.url }}">{{ 'THEME_QUARK.BLOG.ITEM.NEXT_LINK'|t }} <i class="fa fa-angle-right"></i></a>
                 {% endif %}
-            </div>
+            </p>
             
         </div>
 
