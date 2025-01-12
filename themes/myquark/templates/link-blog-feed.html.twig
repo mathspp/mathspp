@@ -1,0 +1,41 @@
+{# Custom template created for the link blog section of my website. #}
+
+{% extends 'partials/base.html.twig' %}
+{% set blog_image = page.media.images[page.header.hero_image] ?: page.media.images|first %}
+{% set collection = page.collection() %}
+{% set show_breadcrumbs = header_var('show_breadcrumbs', [page, blog])|defined(true) %}
+{% set show_sidebar = true %}
+
+{% block stylesheets %}
+    {% do assets.addCss('theme://css/link-blog-custom.css') %}
+    {{ parent() }}
+{% endblock %}
+
+{% block hero %}
+    {% include 'partials/hero.html.twig' with {id: 'blog-hero', content: page.content, hero_image: blog_image} %}
+{% endblock %}
+
+{% block body %}
+    <section id="body-wrapper" class="section blog-listing">
+        <section class="container {{ grid_size }}">
+
+
+        {% embed 'partials/layout.html.twig' with {blog: page} %}
+            {% block item %}
+
+                <div class="links">
+                    <p>Showing {{ page.collection|length }} links.</p>
+                    {% for link_item in page.collection %}
+                        {% include 'partials/blog/link-item-header.html.twig' with { link_item: link_item } %}
+                    {% endfor %}
+                </div>
+
+            {% endblock %}
+
+            {% block sidebar %}
+                {% include 'partials/sidebar.html.twig' %}
+            {% endblock %}
+        {% endembed %}
+        </section>
+    </section>
+{% endblock %}
