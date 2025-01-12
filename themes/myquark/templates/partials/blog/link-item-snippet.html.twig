@@ -21,8 +21,9 @@ It can also include arbitrary Markdown content.
         on
         <span class="link-date">
             {{ link_item.date|date("d-m-Y H:i") }}
-        </span></p>
+        </span>
         <a href="{{ link_item.url }}"><i class="fas fa-link"></i></a>
+        </p>
     </div>
     <div class="link-content">
         {{ link_item.content|raw }}
