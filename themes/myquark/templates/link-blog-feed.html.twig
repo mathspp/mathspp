@@ -19,10 +19,10 @@
     <section id="body-wrapper" class="section blog-listing">
         <section class="container {{ grid_size }}">
 
+        {% include 'partials/breadcrumbs.html.twig' %}
 
         {% embed 'partials/layout.html.twig' with {blog: page} %}
             {% block item %}
-
                 <div class="links">
                     <p>Showing {{ page.collection|length }} links.</p>
                     <ol reversed>
