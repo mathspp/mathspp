@@ -1,0 +1,19 @@
+date: 12-01-2025 19:10
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This article walks through the code used to animate a tree fractal."
+    og:image: "https://mathspp.com/blog/animating-a-tree-fractal/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/animating-a-tree-fractal/thumbnail.webp"
+slug: "animating-a-tree-fractal"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - fractals
+        - mathematics
+        - programming
+        - pygame
+        - python
+        - recursion
+        - visualisation
+title: Animating a tree fractal
