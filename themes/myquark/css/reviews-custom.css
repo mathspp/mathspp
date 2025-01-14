@@ -11,104 +11,6 @@
     }
 }
 
-< !-- reviews.html.twig --> {
-    % extends 'partials/base.html.twig' %
-}
-
-    {
-    % block content %
-}
-
-<link rel="stylesheet" href="/user/themes/yourtheme/css/reviews.css"><div class="reviews-container"> {
-    % set reviews=pages.children | filter(page=> 'review' in page.taxonomy['category']) %
-}
-
-    {
-    % for review in reviews %
-}
-
-    {
-    % include 'review-card.html.twig' with {
-        'review': review
-    }
-
-    %
-}
-
-    {
-    % endfor %
-}
-
-</div> {
-    % endblock %
-}
-
-< !-- review-card.html.twig --><div class="review-card"> {
-    % if review.media.images|length>0 %
-}
-
-<img class="reviewer-photo" src="{{ review.media.images|first.url }}" alt="{{ review.title }}"> {
-    % endif %
-}
-
-<div class="review-content"><p class="review-text"> {
-        {
-        review.header
-    }
-}
-
-</p></div><div class="review-meta"><span class="reviewer-name"> {
-        {
-        review.metadata.name
-    }
-}
-
-</span> {
-    % if review.metadata.company %
-}
-
-<span class="reviewer-company">,
-{
-    {
-    review.metadata.company
-}
-}
-
-</span> {
-    % endif %
-}
-
-    {
-    % if review.metadata.role %
-}
-
-<span class="reviewer-role">({
-        {
-        review.metadata.role
-    }
-
-})</span> {
-    % endif %
-}
-
-    {
-    % if review.metadata.link %
-}
-
-<a class="review-link" href="{{ review.metadata.link }}" target="_blank"><i class="fa fa-external-link"></i></a> {
-    % endif %
-}
-
-</div></div>
-
-/* reviews.css */
-.reviews-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
 .review-card {
     background-color: #282a36;
     color: #f8f8f2;
@@ -122,8 +24,8 @@
 
 .reviewer-photo {
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     object-fit: cover;
     float: left;
     margin-right: 15px;
