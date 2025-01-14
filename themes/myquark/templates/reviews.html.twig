@@ -2,6 +2,12 @@
 
 {% extends 'partials/base.html.twig' %}
 
+{% block javascripts %}
+    {{ parent() }}
+    {% do assets.add('theme://js/bricklayer.min.js') %}
+    {% do assets.add('theme://js/scopedQuerySelectorShim.min.js') %}
+{% endblock %}
+
 {% block stylesheets %}
     {% do assets.addCss('theme://css/reviews-custom.css') %}
     {{ parent() }}
@@ -14,4 +20,9 @@
             {% include 'partials/review-card.html.twig' with { 'review': review } %}
         {% endfor %}
     </div>
+
+    <script>
+        //Bricklayer
+        var bricklayer = new Bricklayer(document.querySelector('.reviews-container'))
+    </script>
 {% endblock %}
