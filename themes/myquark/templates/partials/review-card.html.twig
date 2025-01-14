@@ -9,7 +9,7 @@
         <p>
         <span class="reviewer-name">{{ review.header.name }}</span>
         {% if review.header.company %}
-            <span class="reviewer-company">, {{ review.header.company }}</span>
+            <span class="reviewer-company">– {{ review.header.company }}</span>
         {% endif %}
         {% if review.header.role %}
             <span class="reviewer-role"> ({{ review.header.role }})</span>
