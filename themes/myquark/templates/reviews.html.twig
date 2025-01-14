@@ -1,0 +1,21 @@
+{# Custom template for the reviews page. #}
+
+{% extends 'partials/base.html.twig' %}
+
+{% block stylesheets %}
+    {% do assets.addCss('theme://css/reviews-custom.css') %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+
+    <div class="reviews-container">
+        {% for review in page.collection|batch(3) %}
+            <div class="reviews-row">
+                {% for item in review %}
+                    {% include 'review-card.html.twig' with { 'review': item } %}
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

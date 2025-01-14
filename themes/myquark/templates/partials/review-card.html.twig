@@ -1,0 +1,21 @@
+<div class="review-card">
+    {% if review.media.images|length > 0 %}
+        <img class="reviewer-photo" src="{{ review.media.images|first.url }}" alt="{{ review.title }}">
+    {% endif %}
+    <div class="review-content">
+        <p class="review-text">{{ review.content }}</p>
+        <p class="review-meta">
+            <strong>{{ review.header.name }}</strong>
+            {% if review.header.company %}
+                , {{ review.header.company }}
+            {% endif %}
+            {% if review.header.role %}
+                ({{ review.header.role }})
+            {% endif %}
+        </p>
+        <p class="review-date">{{ review.header.date|date('F j, Y') }}</p>
+        {% if review.header.link %}
+            <a class="review-link" href="{{ review.header.link }}" target="_blank">Read original</a>
+        {% endif %}
+    </div>
+</div>
