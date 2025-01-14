@@ -20,6 +20,7 @@
     display: block;
     break-inside: avoid;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 
 .reviewer-photo {
