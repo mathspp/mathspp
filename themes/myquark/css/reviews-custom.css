@@ -133,9 +133,6 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-}
-
-.review-text {
     font-style: italic;
     margin-top: 0;
     text-align: justify;
@@ -162,7 +159,7 @@
     color: #50fa7b;
 }
 
-.review-text span {
+.review-content span {
     background-color: #44475a;
     color: #f1fa8c;
     padding: 2px 4px;
