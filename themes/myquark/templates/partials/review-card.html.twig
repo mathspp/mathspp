@@ -1,9 +1,9 @@
 <div class="review-card">
     <div class="review-content">
-        {{ review.content }}
         {% if review.media.images|length > 0 %}
             <img class="reviewer-photo" src="{{ review.media.images|first.url }}" alt="{{ review.title }}">
         {% endif %}
+        {{ review.content }}
     </div>
     <div class="review-meta">
         <p>
