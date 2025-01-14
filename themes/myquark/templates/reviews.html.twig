@@ -15,7 +15,7 @@
 
 {% block content %}
 
-    <div class="reviews-container">
+    <div class="bricklayer">
         {% for review in page.collection %}
             {% include 'partials/review-card.html.twig' with { 'review': review } %}
         {% endfor %}
@@ -23,6 +23,6 @@
 
     <script>
         //Bricklayer
-        var bricklayer = new Bricklayer(document.querySelector('.reviews-container'))
+        var bricklayer = new Bricklayer(document.querySelector('.bricklayer'))
     </script>
 {% endblock %}
