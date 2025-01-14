@@ -3,7 +3,7 @@
         <img class="reviewer-photo" src="{{ review.media.images|first.url }}" alt="{{ review.title }}">
     {% endif %}
     <div class="review-content">
-        <p class="review-text">{{ review.content }}</p>
+        {{ review.content }}
     </div>
     <div class="review-meta">
         <p>
