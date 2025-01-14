@@ -130,9 +130,6 @@
 }
 
 .review-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
     font-style: italic;
     margin-top: 0;
     text-align: justify;
