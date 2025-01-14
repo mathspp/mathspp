@@ -10,12 +10,8 @@
 {% block content %}
 
     <div class="reviews-container">
-        {% for review in page.collection|batch(3) %}
-            <div class="reviews-row">
-                {% for item in review %}
-                    {% include 'partials/review-card.html.twig' with { 'review': item } %}
-                {% endfor %}
-            </div>
+        {% for review in page.collection %}
+            {% include 'partials/review-card.html.twig' with { 'review': review } %}
         {% endfor %}
     </div>
 {% endblock %}
