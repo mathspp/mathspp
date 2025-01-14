@@ -1,0 +1,19 @@
+date: 15-01-2025 00:02
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned that the hash of an integer is the integer itself, except for -21. The hash of -1 is -2."
+    og:image: "https://mathspp.com/blog/hash-of-1-is-2/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/hash-of-1-is-2/thumbnail.webp"
+references: []
+routes:
+    aliases:
+        - "/blog/til/110"
+slug: "hash-of-1-is-2"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - algorithms
+      - python
+      - programming
+title: "TIL #110 – Hash of -1 is -2"
+visible: false

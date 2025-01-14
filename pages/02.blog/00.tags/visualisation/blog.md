@@ -28,9 +28,9 @@ title: "Visualisation blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">13</th>
-            <th style="text-align: center;">7,562</th>
-            <th style="text-align: center;">765</th>
+            <th style="text-align: center;">14</th>
+            <th style="text-align: center;">8,238</th>
+            <th style="text-align: center;">915</th>
         </tr>
     </thead>
     <tbody>

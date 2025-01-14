@@ -28,9 +28,9 @@ title: "Pygame blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">11</th>
-            <th style="text-align: center;">5,603</th>
-            <th style="text-align: center;">647</th>
+            <th style="text-align: center;">12</th>
+            <th style="text-align: center;">6,279</th>
+            <th style="text-align: center;">797</th>
         </tr>
     </thead>
     <tbody>

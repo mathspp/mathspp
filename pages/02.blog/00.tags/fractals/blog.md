@@ -28,9 +28,9 @@ title: "Fractals blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">4</th>
-            <th style="text-align: center;">3,232</th>
-            <th style="text-align: center;">257</th>
+            <th style="text-align: center;">5</th>
+            <th style="text-align: center;">3,908</th>
+            <th style="text-align: center;">407</th>
         </tr>
     </thead>
     <tbody>
