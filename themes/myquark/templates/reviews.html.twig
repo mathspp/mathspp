@@ -9,6 +9,7 @@
 {% endblock %}
 
 {% block stylesheets %}
+    {% do assets.addCss('theme://css/bricklayer.css') %}
     {% do assets.addCss('theme://css/reviews-custom.css') %}
     {{ parent() }}
 {% endblock %}

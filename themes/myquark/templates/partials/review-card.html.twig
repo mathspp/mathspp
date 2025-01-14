@@ -4,18 +4,17 @@
     {% endif %}
     <div class="review-content">
         <p class="review-text">{{ review.content }}</p>
-        <p class="review-meta">
-            <strong>{{ review.header.name }}</strong>
-            {% if review.header.company %}
-                , {{ review.header.company }}
-            {% endif %}
-            {% if review.header.role %}
-                ({{ review.header.role }})
-            {% endif %}
-        </p>
-        <p class="review-date">{{ review.header.date|date('F j, Y') }}</p>
+    </div>
+    <div class="review-meta">
+        <span class="reviewer-name">{{ review.header.name }}</span>
+        {% if review.header.company %}
+            <span class="reviewer-company">, {{ review.header.company }}</span>
+        {% endif %}
+        {% if review.header.role %}
+            <span class="reviewer-role"> ({{ review.header.role }})</span>
+        {% endif %}
         {% if review.header.link %}
-            <a class="review-link" href="{{ review.header.link }}" target="_blank">Read original</a>
+            <a class="review-link" href="{{ review.header.link }}" target="_blank"><i class="fa fa-external-link"></i></a>
         {% endif %}
     </div>
 </div>
