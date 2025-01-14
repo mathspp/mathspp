@@ -13,7 +13,7 @@
         {% for review in page.collection|batch(3) %}
             <div class="reviews-row">
                 {% for item in review %}
-                    {% include 'review-card.html.twig' with { 'review': item } %}
+                    {% include 'partials/review-card.html.twig' with { 'review': item } %}
                 {% endfor %}
             </div>
         {% endfor %}
