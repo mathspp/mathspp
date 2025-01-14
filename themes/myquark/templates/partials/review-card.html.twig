@@ -6,6 +6,7 @@
         <p class="review-text">{{ review.content }}</p>
     </div>
     <div class="review-meta">
+        <p>
         <span class="reviewer-name">{{ review.header.name }}</span>
         {% if review.header.company %}
             <span class="reviewer-company">, {{ review.header.company }}</span>
@@ -16,5 +17,6 @@
         {% if review.header.link %}
             <a class="review-link" href="{{ review.header.link }}" target="_blank"><i class="fa fa-external-link"></i></a>
         {% endif %}
+        </p>
     </div>
 </div>
