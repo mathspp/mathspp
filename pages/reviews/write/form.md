@@ -15,6 +15,7 @@ form:
 
         headshot:
           label: Your photo
+          type: file
           help: "Think of this as your profile picture from social media. I'll use it next to the testimonial to make it more personal."
           multiple: false
           destination: "self@"
