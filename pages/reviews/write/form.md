@@ -19,7 +19,7 @@ form:
           type: file
           help: "Makes testimonial more personal."
           multiple: false
-          destination: "user://data/testimonial"
+          destination: "user/data/testimonial"
           accept:
             - image/*
 
