@@ -51,23 +51,32 @@ class ReviewSaverPlugin extends Plugin
         $file = "{$path}/default.md";
         file_put_contents($file, $content);
 
-        // Check for an uploaded image and move it there as well.
-        if (isset($_FILES['data']['name']['image']) && $_FILES['data']['tmp_name']['image']) {
-            $tmpName = $_FILES['data']['tmp_name']['image'];
-            $originalName = $_FILES['data']['name']['image'];
-    
-            // Sanitize file name
-            $safeName = preg_replace('/[^a-zA-Z0-9-_\.]/', '_', $originalName);
-            $destination = "{$path}/{$safeName}";
-    
-            // Move the file to the new directory
-            if (move_uploaded_file($tmpName, $destination)) {
-                $this->grav['log']->info("Image uploaded successfully: {$destination}");
+        // Handle file uploads
+        $files = $form->files()->get('data');
+        if (!empty($files) && isset($files['image'])) {
+            $uploadedFile = $files['image'];
+
+            // Move the uploaded file to the page directory
+            if (is_array($uploadedFile)) {
+                foreach ($uploadedFile as $file) {
+                    $this->moveUploadedFile($file, $path);
+                }
             } else {
-                $this->grav['log']->error("Failed to move uploaded image: {$tmpName}");
+                $this->moveUploadedFile($uploadedFile, $path);
             }
         }
 
         $this->grav['log']->info("New review page created: {$directory}");
+    }
+}
+
+private function moveUploadedFile($file, $destination): void
+{
+    // Ensure the file exists and can be moved
+    if ($file->file()->exists()) {
+        $filename = $file->getClientFilename(); // Original filename
+        $filepath = "{$destination}/{$filename}";
+        $file->file()->moveTo($filepath);
+        $this->grav['log']->info("File moved to: {$filepath}");
     }
 }
