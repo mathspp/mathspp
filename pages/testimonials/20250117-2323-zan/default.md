@@ -1,0 +1,14 @@
+---
+company: Zero One Labs
+date: "2025-01-17 23:23"
+name: Zan
+role: 
+# link:
+taxonomy:
+    category: review
+    tag:
+      - blog
+published: false
+---
+
+I've been following Rodrigo on Twitter for over a year and have enjoyed his articles. He has an excellent grasp on Python, its core principles, and advanced techniques!
