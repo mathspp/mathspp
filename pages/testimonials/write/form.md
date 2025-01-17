@@ -6,7 +6,7 @@ form:
 
     fields:
         object:
-          default: books
+          default: book-pydonts
           label: What is your testimonial about?
           type: select
           options:
