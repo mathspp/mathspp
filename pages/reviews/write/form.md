@@ -91,11 +91,10 @@ form:
                 content_type: "text/plain"
                 body: "Thank you for writing a testimonial. I will review it as soon as possible and add it to the testimonials page. If you didn't include your picture in the review you submitted, feel free to reply to this email and attach your picture there. Having a picture, even if it does not look professional, makes the testimonial much more personal – and therefore, valuable."
         save:
-          -
-            fileprefix: review-
-            dateformat: Ymd-His-u
+            fileprefix: "review-"
+            dateformat: "Ymd-His"
             extension: md
-            body: "{% include 'theme://templates/forms/review.html.twig' %}"
+            body: "{% include 'forms/review.md.twig' %}"
             operation: create
         display: thank-you
 ---
