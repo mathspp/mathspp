@@ -17,7 +17,7 @@ form:
           avoid_overwriting: true
           label: Your photo
           type: file
-          help: "Think of this as your profile picture from social media. I'll use it next to the testimonial to make it more personal."
+          help: "Makes testimonial more personal."
           multiple: false
           destination: "self@"
           accept:
@@ -26,7 +26,7 @@ form:
         email:
           label: Email
           placeholder: Enter your email address
-          help: "This will not be displayed with your testimonial, it is just to email you a confirmation."
+          help: "For the confirmation email, only."
           type: email
           validate:
             required: true
@@ -78,7 +78,10 @@ form:
 
         testimonial:
           label: Testimonial
-          placeholder: "Please, write your testimonial here. Include the thing you're reviewing (a book? the newsletter? the blog?) and what you liked about it."
+          placeholder: |
+            Write your testimonial here.
+            What thing(s) did you enjoy? How did they help? How is your code / life better now?
+            Keep it simple and honest :)
           rows: 5
           type: textarea
           validate:
