@@ -27,7 +27,7 @@ class ReviewSaverPlugin extends Plugin
         $object = $data['object'] ?? 'other';
         $testimonial = $data['testimonial'] ?? '';
 
-        // Generate the slug (e.g., 20250117-1213-rodrigo-serrao)
+        // Generate the slug (e.g., 20250117-1213-rodrigo-serr-o)
         $date = (new \DateTime())->format('Ymd-Hi');
         $slug = preg_replace('/[^a-z0-9]+/', '-', strtolower($name));
         $directory = "reviews/{$date}-{$slug}";
