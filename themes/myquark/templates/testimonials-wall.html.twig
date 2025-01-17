@@ -10,8 +10,8 @@
 
 {% block stylesheets %}
     {% do assets.addCss('theme://css/bricklayer.css') %}
-    {{ parent() }}
     {% do assets.addCss('theme://css/reviews-custom.css') %}
+    {{ parent() }}
 {% endblock %}
 
 {% block content %}
