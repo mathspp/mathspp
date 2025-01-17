@@ -9,3 +9,5 @@ process:
 
 !!!! Thank you so much for writing a testimonial for my work.
 !!!! I will review it and add it to the testimonials page as soon as possible.
+
+[Write another testimonial](/testimonials/write?classes=button)
