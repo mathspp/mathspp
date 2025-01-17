@@ -51,6 +51,27 @@ class ReviewSaverPlugin extends Plugin
         $file = "{$path}/default.md";
         file_put_contents($file, $content);
 
+        // Check for an uploaded image and move it there as well.
+        $files = $form->files();
+        if (isset($files['image']) && is_array($files['image'])) {
+            $uploadedFile = $files['image'];
+            $tmpName = $uploadedFile['tmp_name'] ?? null;
+            $originalName = $uploadedFile['name'] ?? null;
+    
+            if ($tmpName && $originalName) {
+                // Sanitize file name
+                $safeName = preg_replace('/[^a-zA-Z0-9-_\.]/', '_', $originalName);
+                $destination = "{$path}/{$safeName}";
+    
+                // Move the file to the new directory
+                if (move_uploaded_file($tmpName, $destination)) {
+                    $this->grav['log']->info("Image uploaded successfully: {$destination}");
+                } else {
+                    $this->grav['log']->error("Failed to move uploaded image: {$tmpName}");
+                }
+            }
+        }
+
         $this->grav['log']->info("New review page created: {$directory}");
     }
 }
