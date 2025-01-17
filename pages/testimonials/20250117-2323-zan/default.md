@@ -8,7 +8,7 @@ taxonomy:
     category: review
     tag:
       - blog
-published: false
+published: true
 ---
 
 I've been following Rodrigo on Twitter for over a year and have enjoyed his articles. He has an excellent grasp on Python, its core principles, and advanced techniques!
