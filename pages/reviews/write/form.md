@@ -46,22 +46,22 @@ form:
           type: select_optgroup
           options:
             - Books:
-              book-pydonts: "book “Pydon'ts”"
-              book-list-comps: "book “Comprehending Comprehensions”"
-              book-little-itertools: "book “The little book of itertools”"
-              book-little-pygame: "book “The little book of pygame”"
-              book-little-pandas-and-matplotlib: "book “The little book of pandas & matplotlib”"
-              book-nnfwp: "book “Neural Networks Fundamentals with Python”"
-              book-puzzles: "book “Puzzles, Riddles & Problems"
+              - book-pydonts: "book “Pydon'ts”"
+              - book-list-comps: "book “Comprehending Comprehensions”"
+              - book-little-itertools: "book “The little book of itertools”"
+              - book-little-pygame: "book “The little book of pygame”"
+              - book-little-pandas-and-matplotlib: "book “The little book of pandas & matplotlib”"
+              - book-nnfwp: "book “Neural Networks Fundamentals with Python”"
+              - book-puzzles: "book “Puzzles, Riddles & Problems"
             - Conferences:
-              conference-talk: "talk"
-              conference-tutorial: "tutorial/workshop"
-              conference-lt: "lightning talk"
+              - conference-talk: "talk"
+              - conference-tutorial: "tutorial/workshop"
+              - conference-lt: "lightning talk"
             - Misc:
-              blog: "blog article"
-              newsletter: "newsletter"
-              social-media: "social media post(s)"
-              other: "something else / nothing in particular"
+              - blog: "blog article"
+              - newsletter: "newsletter"
+              - social-media: "social media post(s)"
+              - other: "something else / nothing in particular"
           validate:
             required: true
 
