@@ -42,32 +42,37 @@ form:
           type: text
 
         object:
+          default: book-pydonts
           label: What is your testimonial about
           type: select
           options:
+            # Books section
             books:
-              value: "Books"
+              value: Books
               disabled: true
-            book-pydonts: "book “Pydon'ts”"
-            book-list-comps: "book “Comprehending Comprehensions”"
-            book-little-itertools: "book “The little book of itertools”"
-            book-little-pygame: "book “The little book of pygame”"
-            book-little-pandas-and-matplotlib: "book “The little book of pandas & matplotlib”"
-            book-nnfwp: "book “Neural Networks Fundamentals with Python”"
-            book-puzzles: "book “Puzzles, Riddles & Problems"
+            book-pydonts: "– “Pydon'ts”"
+            book-list-comps: "– “Comprehending Comprehensions”"
+            book-little-itertools: "– “The little book of itertools”"
+            book-little-pygame: "– “The little book of pygame”"
+            book-little-pandas-and-matplotlib: "– “The little book of pandas & matplotlib”"
+            book-nnfwp: "– “Neural Networks Fundamentals with Python”"
+            book-puzzles: "– “Puzzles, Riddles & Problems"
+            # Conference section
             conferences:
-              value: "Conferences"
+              value: Conferences
               disabled: true
-            conference-talk: "talk"
-            conference-tutorial: "tutorial/workshop"
-            conference-lt: "lightning talk"
+            conference-talk: "– talk"
+            conference-tutorial: "– tutorial/workshop"
+            conference-lt: "– lightning talk"
+            # Misc section
             misc:
               value: Misc
               disabled: true
-            blog: "blog article"
-            newsletter: "newsletter"
-            social-media: "social media post(s)"
-            other: "something else / nothing in particular"
+            webinar: "– webinar"
+            blog: "– blog article"
+            newsletter: "– newsletter"
+            social-media: "– social media post(s)"
+            other: "– something else / nothing in particular"
           validate:
             required: true
 
