@@ -30,7 +30,7 @@ class ReviewSaverPlugin extends Plugin
         // Generate the slug (e.g., 20250117-1213-rodrigo-serr-o)
         $date = (new \DateTime())->format('Ymd-Hi');
         $slug = preg_replace('/[^a-z0-9]+/', '-', strtolower($name));
-        $directory = "reviews/{$date}-{$slug}";
+        $directory = "testimonials/{$date}-{$slug}";
 
         // Render the template
         $twig = $this->grav['twig'];
