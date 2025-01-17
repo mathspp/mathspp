@@ -5,46 +5,9 @@ form:
     name: testimonial
 
     fields:
-        name:
-          label: Name
-          placeholder: Enter your name
-          autocomplete: on
-          type: text
-          validate:
-            required: true
-
-        headshot:
-          avoid_overwriting: true
-          label: Your photo
-          type: file
-          help: "Makes testimonial more personal."
-          multiple: false
-          destination: "user/data/testimonial"
-          accept:
-            - image/*
-
-        email:
-          label: Email
-          autocomplete: true
-          placeholder: Enter your email address
-          help: "For the confirmation email, only."
-          type: email
-          validate:
-            required: true
-
-        company:
-          label: Company
-          placeholder: Your company
-          type: text
-
-        role:
-          label: Role
-          placeholder: Your role at your company
-          type: text
-
         object:
           default: books
-          label: What is your testimonial about
+          label: What is your testimonial about?
           type: select
           options:
             # Books section
@@ -89,6 +52,43 @@ form:
           type: textarea
           validate:
             required: true
+
+        name:
+          label: Your name
+          autocomplete: on
+          type: text
+          validate:
+            required: true
+
+        email:
+          label: Your email (won't be shared publicly)
+          autocomplete: true
+          help: "For the confirmation email, only."
+          type: email
+          validate:
+            required: true
+
+        social:
+          label: Your social link (e.g., LinkedIn)
+          type: url
+
+        company:
+          label: Company
+          type: text
+
+        role:
+          label: Role
+          type: text
+
+        headshot:
+          avoid_overwriting: true
+          label: Your photo
+          type: file
+          help: "Makes testimonial more personal."
+          multiple: false
+          destination: "user/data/testimonial"
+          accept:
+            - image/*
 
         g-recaptcha-response:
           label: Captcha
