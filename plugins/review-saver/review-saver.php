@@ -1,59 +1,52 @@
 <?php
 namespace Grav\Plugin;
 
-use Composer\Autoload\ClassLoader;
 use Grav\Common\Plugin;
+use RocketTheme\Toolbox\Event\Event;
+use Grav\Common\Page\Page;
 
-/**
- * Class ReviewSaverPlugin
- * @package Grav\Plugin
- */
 class ReviewSaverPlugin extends Plugin
 {
-    /**
-     * @return array
-     *
-     * The getSubscribedEvents() gives the core a list of events
-     *     that the plugin wants to listen to. The key of each
-     *     array section is the event that the plugin listens to
-     *     and the value (in the form of an array) contains the
-     *     callable (or function) as well as the priority. The
-     *     higher the number the higher the priority.
-     */
     public static function getSubscribedEvents(): array
     {
         return [
-            'onPluginsInitialized' => [
-                // Uncomment following line when plugin requires Grav < 1.7
-                // ['autoload', 100000],
-                ['onPluginsInitialized', 0]
-            ]
+            'onFormProcessed' => ['onFormProcessed', 0],
         ];
     }
 
-    /**
-     * Composer autoload
-     *
-     * @return ClassLoader
-     */
-    public function autoload(): ClassLoader
+    public function onFormProcessed(Event $event): void
     {
-        return require __DIR__ . '/vendor/autoload.php';
-    }
+        // Get form data
+        $form = $event['form'];
+        $data = $form->value();
 
-    /**
-     * Initialize the plugin
-     */
-    public function onPluginsInitialized(): void
-    {
-        // Don't proceed if we are in the admin plugin
-        if ($this->isAdmin()) {
-            return;
+        // Extract fields
+        $name = $data['name'] ?? 'anonymous';
+        $role = $data['role'] ?? '';
+        $company = $data['company'] ?? '';
+
+        // Generate the slug (e.g., 20250117-1213-rodrigo-serrao)
+        $date = (new \DateTime())->format('Ymd-Hi');
+        $slug = strtolower(preg_replace('/[^a-z0-9]+/', '-', $name));
+        $directory = "reviews/{$date}-{$slug}";
+
+        // Render the template
+        $twig = $this->grav['twig'];
+        $content = $twig->processTemplate('forms/review.md.twig', [
+            'name' => $name,
+            'role' => $role,
+            'company' => $company,
+        ]);
+
+        // Create the new page
+        $path = USER_DIR . "pages/{$directory}";
+        if (!file_exists($path)) {
+            mkdir($path, 0755, true);
         }
 
-        // Enable the main events we are interested in
-        $this->enable([
-            // Put your main events here
-        ]);
+        $file = "{$path}/default.md";
+        file_put_contents($file, $content);
+
+        $this->grav['log']->info("New review page created: {$directory}");
     }
 }
