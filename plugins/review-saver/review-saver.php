@@ -24,12 +24,12 @@ class ReviewSaverPlugin extends Plugin
         $name = $data['name'] ?? 'anonymous';
         $role = $data['role'] ?? '';
         $company = $data['company'] ?? '';
-        $company = $data['object'] ?? 'other';
-        $company = $data['testimonial'] ?? '';
+        $object = $data['object'] ?? 'other';
+        $testimonial = $data['testimonial'] ?? '';
 
         // Generate the slug (e.g., 20250117-1213-rodrigo-serrao)
         $date = (new \DateTime())->format('Ymd-Hi');
-        $slug = strtolower(preg_replace('/[^a-z0-9]+/', '-', $name));
+        $slug = preg_replace('/[^a-z0-9]+/', '-', strtolower($name));
         $directory = "reviews/{$date}-{$slug}";
 
         // Render the template
@@ -38,6 +38,8 @@ class ReviewSaverPlugin extends Plugin
             'name' => $name,
             'role' => $role,
             'company' => $company,
+            'object' => $object,
+            'testimonial' => $testimonial,
         ]);
 
         // Create the new page
