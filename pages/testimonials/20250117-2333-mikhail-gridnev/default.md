@@ -4,6 +4,7 @@ date: "2025-01-17 23:33"
 name: Mikhail Gridnev
 role: 
 # link:
+social: https://linkedin.com/in/mikhail-gridnev-ab76b486
 taxonomy:
     category: review
     tag:
