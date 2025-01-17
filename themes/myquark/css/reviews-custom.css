@@ -41,11 +41,14 @@
 .review-meta {
     display: flex;
     justify-content: flex-end;
-    text-align: right;
     align-items: center;
     gap: 10px;
     font-size: 0.9em;
     margin-top: 15px;
+}
+
+.review-meta p {
+    text-align: right;
 }
 
 .review-link {
