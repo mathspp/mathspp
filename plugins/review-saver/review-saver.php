@@ -51,7 +51,7 @@ class ReviewSaverPlugin extends Plugin
         $file = "{$path}/default.md";
         file_put_contents($file, $content);
 
-        // Handle file uploads
+        // Handle the headshot upload
         $this->moveUploadedFiles($form, $path);
 
         $this->grav['log']->info("New review page created: {$directory}");

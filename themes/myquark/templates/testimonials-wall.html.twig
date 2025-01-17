@@ -16,6 +16,8 @@
 
 {% block content %}
 
+    {{ page.content|raw }}
+
     <div class="bricklayer">
         {% for review in page.collection %}
             {% include 'partials/review-card.html.twig' with { 'review': review } %}
