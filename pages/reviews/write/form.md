@@ -26,7 +26,7 @@ form:
         email:
           label: Email
           placeholder: Enter your email address
-          help: "This won't be displayed with your testimonial, it's just to email you a confirmation."
+          help: "This will not be displayed with your testimonial, it is just to email you a confirmation."
           type: email
           validate:
             required: true
