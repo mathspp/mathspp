@@ -59,26 +59,10 @@ class ReviewSaverPlugin extends Plugin
 
         private function moveUploadedFiles($form, $destination): void
         {
-            // Access uploaded files
-            $files = $form->filesByElement;
-        
-            if (isset($files['data.image'])) {
-                foreach ($files['data.image'] as $file) {
-                    $uploadedFile = $file['file'];
-                    $filename = $uploadedFile['name'];
-                    $tempPath = $uploadedFile['tmp_name'];
-        
-                    // Move the file to the destination directory
-                    $destinationPath = "{$destination}/{$filename}";
-                    if (move_uploaded_file($tempPath, $destinationPath)) {
-                        $this->grav['log']->info("File moved to: {$destinationPath}");
-                    } else {
-                        $this->grav['log']->error("Failed to move file: {$filename}");
-                    }
-                }
-            } else {
-                $this->grav['log']->info("No images found...");
-            }
+            // Debug: Log form files and values
+            $this->grav['log']->info("Form values: " . json_encode($form->value()));
+            $this->grav['log']->info("Form filesByElement: " . json_encode($form->filesByElement));
+            $this->grav['log']->info("Global FILES: " . json_encode($_FILES));
         }
 }
 
