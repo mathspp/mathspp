@@ -59,10 +59,10 @@ class ReviewSaverPlugin extends Plugin
             // Move the uploaded file to the page directory
             if (is_array($uploadedFile)) {
                 foreach ($uploadedFile as $file) {
-                    $this->moveUploadedFile($file, $path);
+                    $this->my_moveUploadedFile($file, $path);
                 }
             } else {
-                $this->moveUploadedFile($uploadedFile, $path);
+                $this->my_moveUploadedFile($uploadedFile, $path);
             }
         }
 
@@ -70,7 +70,7 @@ class ReviewSaverPlugin extends Plugin
     }
 }
 
-private function moveUploadedFile($file, $destination): void
+private function my_moveUploadedFile($file, $destination): void
 {
     // Ensure the file exists and can be moved
     if ($file->file()->exists()) {
