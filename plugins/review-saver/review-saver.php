@@ -57,13 +57,34 @@ class ReviewSaverPlugin extends Plugin
         $this->grav['log']->info("New review page created: {$directory}");
     }
 
-        private function moveUploadedFiles($form, $destination): void
-        {
-            // Debug: Log form files and values
-            $this->grav['log']->info("Form values: " . json_encode($form->value()));
-            $this->grav['log']->info("Form filesByElement: " . json_encode($form->filesByElement));
-            $this->grav['log']->info("Global FILES: " . json_encode($_FILES));
+    private function moveUploadedFiles($form, $destination): void
+    {
+        // Access the uploaded file data from form values
+        $headshotData = $form->value()['headshot'] ?? null;
+    
+        if ($headshotData && is_array($headshotData)) {
+            foreach ($headshotData as $fileInfo) {
+                $sourcePath = $fileInfo['path'] ?? null;
+                $fileName = $fileInfo['name'] ?? null;
+    
+                if ($sourcePath && $fileName && file_exists($sourcePath)) {
+                    $destinationPath = "{$destination}/{$fileName}";
+    
+                    // Move the file
+                    if (rename($sourcePath, $destinationPath)) {
+                        $this->grav['log']->info("File moved to: {$destinationPath}");
+                    } else {
+                        $this->grav['log']->error("Failed to move file from {$sourcePath} to {$destinationPath}");
+                    }
+                } else {
+                    $this->grav['log']->error("Invalid file data or file does not exist: " . json_encode($fileInfo));
+                }
+            }
+        } else {
+            $this->grav['log']->error("No headshot files found in form values.");
         }
+    }
+    
 }
 
 
