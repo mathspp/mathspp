@@ -24,6 +24,8 @@ class ReviewSaverPlugin extends Plugin
         $name = $data['name'] ?? 'anonymous';
         $role = $data['role'] ?? '';
         $company = $data['company'] ?? '';
+        $company = $data['object'] ?? 'other';
+        $company = $data['testimonial'] ?? '';
 
         // Generate the slug (e.g., 20250117-1213-rodrigo-serrao)
         $date = (new \DateTime())->format('Ymd-Hi');
