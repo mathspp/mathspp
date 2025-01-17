@@ -70,6 +70,7 @@ form:
               value: Misc
               disabled: true
             webinar: "webinar"
+            bootcamp: "problem-solving bootcamp"
             blog: "blog article"
             newsletter: "newsletter"
             social-media: "social media post(s)"
