@@ -76,6 +76,8 @@ class ReviewSaverPlugin extends Plugin
                         $this->grav['log']->error("Failed to move file: {$filename}");
                     }
                 }
+            } else {
+                $this->grav['log']->info("No images found...");
             }
         }
 }
