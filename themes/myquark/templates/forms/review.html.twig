@@ -1,13 +1,13 @@
 ---
-company: {{ company }}
-date: {{ date }}
-name: {{ name }}
-role: {{ role }}
+company: {{ form.value.company }}
+date: {{ form.value.date }}
+name: {{ form.value.name }}
+role: {{ form.value.role }}
 # link:
 taxonomy:
     category: review
     tag:
-      - {{ object }}
+      - {{ form.value.object }}
 ---
 
-{{ testimonial }}
+{{ form.value.testimonial }}
