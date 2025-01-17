@@ -25,6 +25,7 @@ form:
 
         email:
           label: Email
+          autocomplete: true
           placeholder: Enter your email address
           help: "For the confirmation email, only."
           type: email
