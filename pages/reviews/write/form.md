@@ -95,7 +95,7 @@ form:
             fileprefix: review-
             dateformat: Ymd-His-u
             extension: md
-            body: "{% include "forms/review.html.twig" %}"
+            body: "{% include 'forms/review.html.twig' %}"
             operation: create
         display: thank-you
 ---
