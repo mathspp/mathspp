@@ -151,7 +151,7 @@ log:
   syslog:
     facility: local6
 debugger:
-  enabled: false
+  enabled: true
   provider: clockwork
   censored: false
   shutdown:
