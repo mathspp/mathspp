@@ -72,23 +72,25 @@ form:
           label: Your social link (e.g., LinkedIn)
           type: url
 
-        company:
-          label: Company
-          type: text
-
-        role:
-          label: Role
+        company_and_title:
+          label: Your company and title
           type: text
 
         headshot:
           avoid_overwriting: true
           label: Your photo
           type: file
-          help: "Makes testimonial more personal."
+          help: "Makes the testimonial more personal."
           multiple: false
           destination: "user/data/testimonial"
           accept:
             - image/*
+
+        permission:
+          type: checkbox
+          label: "My testimonial can be shared online freely."
+          validate:
+            required: true
 
         g-recaptcha-response:
           label: Captcha
