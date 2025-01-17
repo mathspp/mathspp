@@ -43,14 +43,25 @@ form:
 
         object:
           label: What is your testimonial about
-          type: select
+          type: select_optgroup
           options:
-            book-pydonts: "Book “Pydon'ts”"
-            book-list-comps: "Book “Comprehending Comprehensions”"
-            book-little-itertools: "Book “The little book of itertools”"
-            book-little-pygame: "Book “The little book of pygame”"
-            book-little-pandas-and-matplotlib: "Book “The little book of pandas & matplotlib”"
-            other: "Something else"
+            - Books:
+              book-pydonts: "book “Pydon'ts”"
+              book-list-comps: "book “Comprehending Comprehensions”"
+              book-little-itertools: "book “The little book of itertools”"
+              book-little-pygame: "book “The little book of pygame”"
+              book-little-pandas-and-matplotlib: "book “The little book of pandas & matplotlib”"
+              book-nnfwp: "book “Neural Networks Fundamentals with Python”"
+              book-puzzles: "book “Puzzles, Riddles & Problems"
+            - Conferences:
+              conference-talk: "talk"
+              conference-tutorial: "tutorial/workshop"
+              conference-lt: "lightning talk"
+            - Misc:
+              blog: "blog article"
+              newsletter: "newsletter"
+              social-media: "social media post(s)"
+              other: "something else / nothing in particular"
           validate:
             required: true
 
