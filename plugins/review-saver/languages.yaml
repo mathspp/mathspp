@@ -1,0 +1,4 @@
+en:
+  PLUGIN_REVIEW_SAVER:
+    TEXT_VARIABLE: Text Variable
+    TEXT_VARIABLE_HELP: Text to add to the top of a page
