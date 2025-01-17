@@ -59,24 +59,26 @@ class ReviewSaverPlugin extends Plugin
             // Move the uploaded file to the page directory
             if (is_array($uploadedFile)) {
                 foreach ($uploadedFile as $file) {
-                    $this->my_moveUploadedFile($file, $path);
+                    $this->moveUploadedFile($file, $path);
                 }
             } else {
-                $this->my_moveUploadedFile($uploadedFile, $path);
+                $this->moveUploadedFile($uploadedFile, $path);
             }
         }
 
         $this->grav['log']->info("New review page created: {$directory}");
     }
-}
 
-private function my_moveUploadedFile($file, $destination): void
-{
-    // Ensure the file exists and can be moved
-    if ($file->file()->exists()) {
-        $filename = $file->getClientFilename(); // Original filename
-        $filepath = "{$destination}/{$filename}";
-        $file->file()->moveTo($filepath);
-        $this->grav['log']->info("File moved to: {$filepath}");
+    private function moveUploadedFile($file, $destination): void
+    {
+        // Ensure the file exists and can be moved
+        if ($file->file()->exists()) {
+            $filename = $file->getClientFilename(); // Original filename
+            $filepath = "{$destination}/{$filename}";
+            $file->file()->moveTo($filepath);
+            $this->grav['log']->info("File moved to: {$filepath}");
+        }
     }
 }
+
+
