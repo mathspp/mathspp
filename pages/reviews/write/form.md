@@ -50,29 +50,29 @@ form:
             books:
               value: Books
               disabled: true
-            book-pydonts: "– “Pydon'ts”"
-            book-list-comps: "– “Comprehending Comprehensions”"
-            book-little-itertools: "– “The little book of itertools”"
-            book-little-pygame: "– “The little book of pygame”"
-            book-little-pandas-and-matplotlib: "– “The little book of pandas & matplotlib”"
-            book-nnfwp: "– “Neural Networks Fundamentals with Python”"
-            book-puzzles: "– “Puzzles, Riddles & Problems"
+            book-pydonts: "Pydon'ts"
+            book-list-comps: "Comprehending Comprehensions"
+            book-little-itertools: "The little book of itertools"
+            book-little-pygame: "The little book of pygame"
+            book-little-pandas-and-matplotlib: "The little book of pandas & matplotlib"
+            book-nnfwp: "Neural Networks Fundamentals with Python"
+            book-puzzles: "Puzzles, Riddles & Problems"
             # Conference section
             conferences:
               value: Conferences
               disabled: true
-            conference-talk: "– talk"
-            conference-tutorial: "– tutorial/workshop"
-            conference-lt: "– lightning talk"
+            conference-talk: "talk"
+            conference-tutorial: "tutorial/workshop"
+            conference-lt: "lightning talk"
             # Misc section
             misc:
               value: Misc
               disabled: true
-            webinar: "– webinar"
-            blog: "– blog article"
-            newsletter: "– newsletter"
-            social-media: "– social media post(s)"
-            other: "– something else / nothing in particular"
+            webinar: "webinar"
+            blog: "blog article"
+            newsletter: "newsletter"
+            social-media: "social media post(s)"
+            other: "something else / nothing in particular"
           validate:
             required: true
 
