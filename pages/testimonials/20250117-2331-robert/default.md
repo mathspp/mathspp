@@ -1,8 +1,7 @@
 ---
-company: 
+company_and_title: 
 date: "2025-01-17 23:31"
 name: Robert
-role: 
 # link:
 taxonomy:
     category: review

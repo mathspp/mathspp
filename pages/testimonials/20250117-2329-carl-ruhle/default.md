@@ -1,8 +1,7 @@
 ---
-company: 
+company_and_title: 
 date: "2025-01-17 23:29"
 name: Carl Ruhle
-role: 
 # link:
 taxonomy:
     category: review

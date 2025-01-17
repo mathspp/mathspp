@@ -1,8 +1,7 @@
 ---
-company: 
+company_and_title: 
 date: "2025-01-17 23:28"
 name: Nicolas Benavides
-role: 
 # link:
 social: https://www.linkedin.com/in/nicolas-bs/
 taxonomy:

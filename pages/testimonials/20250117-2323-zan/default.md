@@ -1,8 +1,7 @@
 ---
-company: Zero One Labs
+company_and_title: Zero One Labs
 date: "2025-01-17 23:23"
 name: Zan
-role: 
 # link:
 taxonomy:
     category: review

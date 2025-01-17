@@ -1,8 +1,7 @@
 ---
-company: 
+company_and_title: Data and Python enthusiast
 date: "2025-01-17 23:32"
 name: Grégory Martin
-role: Data and Python enthusiast
 # link:
 social: https://www.linkedin.com/in/gregmartindata/
 taxonomy:

@@ -12,11 +12,8 @@
         {% else %}
         — <span class="reviewer-name">{{ review.header.name }}</span>
         {% endif %}
-        {% if review.header.company %}
-            <span class="reviewer-company">– {{ review.header.company }}</span>
-        {% endif %}
-        {% if review.header.role %}
-            <span class="reviewer-role"> ({{ review.header.role }})</span>
+        {% if review.header.company_and_title %}
+            <span class="reviewer-company">– {{ review.header.company_and_title }}</span>
         {% endif %}
         {% if review.header.link %}
             <a class="review-link" href="{{ review.header.link }}" target="_blank"><i class="fa fa-external-link"></i></a>

@@ -1,8 +1,7 @@
 ---
-company: 
+company_and_title: 
 date: "2025-01-17 23:49"
 name: Cecil McGregor
-role: 
 # link:
 taxonomy:
     category: review

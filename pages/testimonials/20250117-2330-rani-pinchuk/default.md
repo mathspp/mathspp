@@ -1,8 +1,7 @@
 ---
-company: 
+company_and_title: 
 date: "2025-01-17 23:30"
 name: Rani Pinchuk
-role: 
 # link:
 social: https://www.linkedin.com/in/first/
 taxonomy:

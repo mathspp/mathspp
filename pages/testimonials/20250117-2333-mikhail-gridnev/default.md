@@ -1,8 +1,7 @@
 ---
-company: 
+company_and_title: 
 date: "2025-01-17 23:33"
 name: Mikhail Gridnev
-role: 
 # link:
 social: https://linkedin.com/in/mikhail-gridnev-ab76b486
 taxonomy:

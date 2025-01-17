@@ -88,7 +88,7 @@ form:
 
         permission:
           type: checkbox
-          label: "My testimonial can be shared online freely."
+          label: "My testimonial can be shared online without restrictions."
           validate:
             required: true
 
