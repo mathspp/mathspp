@@ -52,33 +52,32 @@ class ReviewSaverPlugin extends Plugin
         file_put_contents($file, $content);
 
         // Handle file uploads
-        $files = $form->files()->get('data');
-        if (!empty($files) && isset($files['image'])) {
-            $uploadedFile = $files['image'];
-
-            // Move the uploaded file to the page directory
-            if (is_array($uploadedFile)) {
-                foreach ($uploadedFile as $file) {
-                    $this->moveUploadedFile($file, $path);
-                }
-            } else {
-                $this->moveUploadedFile($uploadedFile, $path);
-            }
-        }
+        $this->moveUploadedFiles($form, $path);
 
         $this->grav['log']->info("New review page created: {$directory}");
     }
 
-    private function moveUploadedFile($file, $destination): void
-    {
-        // Ensure the file exists and can be moved
-        if ($file->file()->exists()) {
-            $filename = $file->getClientFilename(); // Original filename
-            $filepath = "{$destination}/{$filename}";
-            $file->file()->moveTo($filepath);
-            $this->grav['log']->info("File moved to: {$filepath}");
+        private function moveUploadedFiles($form, $destination): void
+        {
+            // Access uploaded files
+            $files = $form->filesByElement;
+        
+            if (isset($files['data.image'])) {
+                foreach ($files['data.image'] as $file) {
+                    $uploadedFile = $file['file'];
+                    $filename = $uploadedFile['name'];
+                    $tempPath = $uploadedFile['tmp_name'];
+        
+                    // Move the file to the destination directory
+                    $destinationPath = "{$destination}/{$filename}";
+                    if (move_uploaded_file($tempPath, $destinationPath)) {
+                        $this->grav['log']->info("File moved to: {$destinationPath}");
+                    } else {
+                        $this->grav['log']->error("Failed to move file: {$filename}");
+                    }
+                }
+            }
         }
-    }
 }
 
 
