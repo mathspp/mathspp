@@ -82,6 +82,7 @@ form:
             Write your testimonial here.
             What thing(s) did you enjoy? How did they help? How is your code / life better now?
             Keep it simple and honest :)
+            Thanks!
           rows: 5
           type: textarea
           validate:
