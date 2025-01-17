@@ -52,7 +52,7 @@ class ReviewSaverPlugin extends Plugin
         file_put_contents($file, $content);
 
         // Check for an uploaded image and move it there as well.
-        if (isset($_FILES['data']['name']['image']) && $_FILES['data']['tmp_name']['image']) {
+        /* if (isset($_FILES['data']['name']['image']) && $_FILES['data']['tmp_name']['image']) {
             $tmpName = $_FILES['data']['tmp_name']['image'];
             $originalName = $_FILES['data']['name']['image'];
     
@@ -66,7 +66,7 @@ class ReviewSaverPlugin extends Plugin
             } else {
                 $this->grav['log']->error("Failed to move uploaded image: {$tmpName}");
             }
-        }
+        } */
 
         $this->grav['log']->info("New review page created: {$directory}");
     }
