@@ -43,7 +43,7 @@ form:
           type: text
 
         object:
-          default: book-pydonts
+          default: books
           label: What is your testimonial about
           type: select
           options:
@@ -71,7 +71,7 @@ form:
               disabled: true
             webinar: "webinar"
             bootcamp: "problem-solving bootcamp"
-            blog: "blog article"
+            blog: "blog"
             newsletter: "newsletter"
             social-media: "social media post(s)"
             other: "something else / nothing in particular"
