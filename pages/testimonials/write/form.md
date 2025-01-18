@@ -60,6 +60,10 @@ form:
           validate:
             required: true
 
+        honeypot:
+          label: Honeypot
+          type: honeypot
+
         email:
           label: Your email (won't be shared publicly)
           autocomplete: true
