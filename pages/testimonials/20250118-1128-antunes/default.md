@@ -1,6 +1,6 @@
 ---
 company_and_title: 
-date: "2025-01-18 11:29"
+date: "2025-01-18 11:28"
 name: Antunes
 # link:
 social: https://x.com/antunes73
