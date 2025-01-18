@@ -4,6 +4,7 @@ date: "2025-01-18 10:20"
 name: Adan O.
 role: 
 # link:
+social: https://x.com/ordonez_adan
 taxonomy:
     category: review
     tag:

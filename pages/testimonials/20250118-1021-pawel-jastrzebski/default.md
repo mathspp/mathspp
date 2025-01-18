@@ -4,6 +4,7 @@ date: "2025-01-18 10:21"
 name: Pawel Jastrzebski
 role: 
 # link:
+social: https://x.com/pawjast
 taxonomy:
     category: review
     tag:
