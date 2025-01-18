@@ -1,0 +1,20 @@
+date: 18-01-2025 00:01
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned that if you suppress the exception `KeyboardInterrupt` then your program is still interrupted but it doesn't display a traceback."
+    og:image: "https://mathspp.com/blog/interrupting-scripts-without-tracebacks/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/interrupting-scripts-without-tracebacks/thumbnail.webp"
+references:
+  - "Python 3 Docs, Python Standard Library, `contextlib.suppress` [https://docs.python.org/3/library/contextlib.html#contextlib.suppress](https://docs.python.org/3/library/contextlib.html#contextlib.suppress) [last visited 18-01-2025];"
+routes:
+    aliases:
+        - "/blog/til/111"
+slug: "interrupting-scripts-without-tracebacks"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - python
+      - scripting
+title: "TIL #111 – Interrupting scripts without tracebacks"
+visible: false
