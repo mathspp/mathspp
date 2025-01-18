@@ -1,15 +1,14 @@
 ---
-company: 
+company_and_title:
 date: "2025-01-18 11:35"
 name: Tushar Sadhwani
-role: 
 # link:
 social: 
 taxonomy:
     category: review
     tag:
       - newsletter
-published: false
+published: true
 ---
 
 Rodrigo's Insider newsletter has some really well-written content for learning/keeping up with Python. Would recommend.

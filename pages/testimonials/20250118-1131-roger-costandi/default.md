@@ -1,15 +1,14 @@
 ---
-company: 
+company_and_title: 
 date: "2025-01-18 11:31"
 name: Roger Costandi
-role: 
 # link:
 social: https://x.com/nicrocosta
 taxonomy:
     category: review
     tag:
       - book-nnfwp
-published: false
+published: true
 ---
 
 Just finished Neural Networks Fundamentals With Python Rodrigo and I much appreciated it.

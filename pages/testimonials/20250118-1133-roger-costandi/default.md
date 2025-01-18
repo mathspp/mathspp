@@ -1,15 +1,14 @@
 ---
-company: 
+company_and_title: 
 date: "2025-01-18 11:33"
 name: Roger Costandi
-role: 
 # link:
 social: https://x.com/nicrocosta
 taxonomy:
     category: review
     tag:
       - book-list-comps
-published: false
+published: true
 ---
 
 I just finished “Comprehending Comprehensions” from Rodrigo.

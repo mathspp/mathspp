@@ -22,7 +22,7 @@ class ReviewSaverPlugin extends Plugin
 
         // Extract fields
         $name = $data['name'] ?? 'anonymous';
-        $company = $data['company_and_title'] ?? '';
+        $company_and_title = $data['company_and_title'] ?? '';
         $object = $data['object'] ?? 'other';
         $testimonial = $data['testimonial'] ?? '';
         $social = $data['social'] ?? '';
@@ -36,7 +36,7 @@ class ReviewSaverPlugin extends Plugin
         $twig = $this->grav['twig'];
         $content = $twig->processTemplate('forms/review.md.twig', [
             'name' => $name,
-            'company_and_title' => $company,
+            'company_and_title' => $company_and_title,
             'object' => $object,
             'testimonial' => $testimonial,
             'social' => $social,

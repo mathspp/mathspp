@@ -1,15 +1,14 @@
 ---
-company: 
+company_and_title: Data Engineer at Dealroom
 date: "2025-01-18 11:39"
 name: Matteo Renoldi
-role: 
-# link:
+link: https://www.linkedin.com/posts/matteorenoldi_pythonprogramming-pythondeveloper-activity-7058716953070161920-fN3o
 social: https://www.linkedin.com/in/matteorenoldi/
 taxonomy:
     category: review
     tag:
       - newsletter
-published: false
+published: true
 ---
 
 Really enjoy Rodrigo Girão Serrão's newsletter and blog. It is an enjoyable resource for learning more about Python Dos & Don'ts.
