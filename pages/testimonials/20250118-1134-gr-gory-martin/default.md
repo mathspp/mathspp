@@ -1,6 +1,6 @@
 ---
 company_and_title: Data and Python enthusiast
-date: "2025-01-17 23:32"
+date: "2025-01-18 11:34:00"
 name: Grégory Martin
 # link:
 social: https://www.linkedin.com/in/gregmartindata/
