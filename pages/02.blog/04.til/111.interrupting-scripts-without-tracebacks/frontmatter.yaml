@@ -6,6 +6,7 @@ metadata:
     twitter:image: "https://mathspp.com/blog/interrupting-scripts-without-tracebacks/thumbnail.webp"
 references:
   - "Python 3 Docs, Python Standard Library, `contextlib.suppress` [https://docs.python.org/3/library/contextlib.html#contextlib.suppress](https://docs.python.org/3/library/contextlib.html#contextlib.suppress) [last visited 18-01-2025];"
+  - "Trey Hunner on BlueSky, [https://bsky.app/profile/trey.io/post/3lft2s3tvit2q](https://bsky.app/profile/trey.io/post/3lft2s3tvit2q) [last accessed 18-01-2025];"
 routes:
     aliases:
         - "/blog/til/111"
