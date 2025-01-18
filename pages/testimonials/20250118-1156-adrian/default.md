@@ -8,7 +8,7 @@ taxonomy:
     category: review
     tag:
       - conference-talk
-published: false
+published: true
 ---
 
 I really like this talk by Rodrigo on why APL made him a better Python developer. youtube.com/watch?v=tDy-to9fgaw
