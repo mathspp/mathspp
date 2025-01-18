@@ -15,5 +15,6 @@ slug: "the-power-of-reduce"
 taxonomy:
     category: [blogpost, pydont]
     tag:
+      - "fp"
       - "programming"
       - "python"

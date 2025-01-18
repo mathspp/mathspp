@@ -1,0 +1,22 @@
+date: 23-11-2024 23:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This article serves as a complete reference for all the non-trivial things you should know about Python functions."
+    og:image: "https://mathspp.com/blog/pydonts/functions-a-complete-reference/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/pydonts/functions-a-complete-reference/thumbnail.webp"
+references:
+    - "Python Enhancement Proposals, PEP 3107, <https://peps.python.org/pep-3107/> [last accessed 22-11-2024];"
+    - "Python Enhancement Proposals, PEP 362, <https://peps.python.org/pep-0362/> [last accessed 04-01-2025];"
+    - "Python Enhancement Proposals, PEP 483, <https://peps.python.org/pep-0483/> [last accessed 23-11-2024];"
+    - "Python 3 Documentation, The Python Standard Library, `inspect`, <https://docs.python.org/3/library/inspect.html> [last accessed 23-11-2024];"
+    - "GitHub, `typeshed` repository, <https://github.com/python/typeshed> [last accessed 21-11-2024];"
+    - "Twitter/X question by @mathsppblog, <https://x.com/mathsppblog/status/1857489411514175859> [last accessed 17-11-2024];"
+    - "Twitter/X post by @mathsppblog, <https://x.com/mathsppblog/status/1857750997759586408> [last accessed 16-11-2024];"
+slug: "functions-a-complete-reference"
+taxonomy:
+    category: [pydont, blogpost]
+    tag:
+      - "fp"
+      - "programming"
+      - "python"
+title: "Functions: a complete reference | Pydon't 🐍"

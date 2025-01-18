@@ -1,0 +1,15 @@
+date: 1-10-2024 18:30
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This article lists all of the new keyboard shortcuts that you can use in the new Python 3.13 improved REPL."
+    og:image: "https://mathspp.com/blog/new-keyboard-shortcuts-in-the-python-3-13-repl/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/new-keyboard-shortcuts-in-the-python-3-13-repl/thumbnail.webp"
+slug: "new-keyboard-shortcuts-in-the-python-3-13-repl"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - productivity
+        - python
+        - repl
+title: New keyboard shortcuts in the Python 3.13 REPL

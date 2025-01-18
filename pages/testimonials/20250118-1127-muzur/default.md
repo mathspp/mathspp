@@ -3,7 +3,7 @@ company_and_title:
 date: "2025-01-18 11:27"
 name: Muzur
 # link:
-social: https://x.com/muzurvelet
+social: "https://x.com/muzurvelet"
 taxonomy:
     category: review
     tag:

@@ -1,0 +1,15 @@
+date: 15-01-2025 14:06
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This article teaches the decorator pattern in Python, why it exists, how to use it, and when to use it to write efficient and idiomatic Python code."
+    og:image: "https://mathspp.com/blog/pydonts/decorators/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/pydonts/decorators/thumbnail.webp"
+references: []
+slug: "decorators"
+taxonomy:
+    category: [pydont, blogpost]
+    tag:
+      - "fp"
+      - "programming"
+      - "python"
+title: "Decorators | Pydon't 🐍"
