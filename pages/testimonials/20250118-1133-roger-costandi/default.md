@@ -1,0 +1,16 @@
+---
+company: 
+date: "2025-01-18 11:33"
+name: Roger Costandi
+role: 
+# link:
+social: https://x.com/nicrocosta
+taxonomy:
+    category: review
+    tag:
+      - book-list-comps
+published: false
+---
+
+I just finished “Comprehending Comprehensions” from Rodrigo.
+Yes, all 155 pages, and I did all of the 213 realistic exercises! Very useful, full of practical tips, I liked it very much. Thank you, Rodrigo!

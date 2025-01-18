@@ -1,0 +1,16 @@
+---
+company: 
+date: "2025-01-18 11:39"
+name: Matteo Renoldi
+role: 
+# link:
+social: https://www.linkedin.com/in/matteorenoldi/
+taxonomy:
+    category: review
+    tag:
+      - newsletter
+published: false
+---
+
+Really enjoy Rodrigo Girão Serrão's newsletter and blog. It is an enjoyable resource for learning more about Python Dos & Don'ts.
+He is an experienced developer working on Textualize.io and Rich and together with ArjanCodes and Sebastián Ramírez Montaño a great programmer to learn from!
