@@ -25,6 +25,7 @@ class ReviewSaverPlugin extends Plugin
         $company = $data['company_and_title'] ?? '';
         $object = $data['object'] ?? 'other';
         $testimonial = $data['testimonial'] ?? '';
+        $social = $data['social'] ?? '';
 
         // Generate the slug (e.g., 20250117-1213-rodrigo-serr-o)
         $date = (new \DateTime())->format('Ymd-Hi');
@@ -38,6 +39,7 @@ class ReviewSaverPlugin extends Plugin
             'company_and_title' => $company,
             'object' => $object,
             'testimonial' => $testimonial,
+            'social' => $social,
         ]);
 
         // Create the new page
