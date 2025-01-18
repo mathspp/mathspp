@@ -1,6 +1,6 @@
 ---
 company_and_title: 
-date: "2025-01-17 23:30"
+date: "2025-01-18 11:43"
 name: Rani Pinchuk
 # link:
 social: https://www.linkedin.com/in/first/

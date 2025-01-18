@@ -1,6 +1,6 @@
 ---
 company_and_title: 
-date: "2025-01-17 23:19"
+date: "2025-01-18 12:07"
 name: Michael
 # link:
 social: 

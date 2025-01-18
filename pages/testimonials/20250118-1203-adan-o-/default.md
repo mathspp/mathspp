@@ -1,6 +1,6 @@
 ---
 company_and_title: 
-date: "2025-01-18 10:20"
+date: "2025-01-18 12:03"
 name: Adan O.
 # link:
 social: https://x.com/ordonez_adan

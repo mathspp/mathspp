@@ -1,6 +1,6 @@
 ---
 company_and_title:
-date: "2025-01-18 10:19"
+date: "2025-01-18 12:04"
 name: SRTapisi
 # link:
 taxonomy:

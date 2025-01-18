@@ -1,6 +1,6 @@
 ---
 company_and_title: 
-date: "2025-01-18 10:22"
+date: "2025-01-18 12:01"
 name: Edward Wright
 # link:
 social: "https://x.com/fasteddy_tws"

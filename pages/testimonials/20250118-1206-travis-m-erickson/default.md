@@ -1,6 +1,6 @@
 ---
 company_and_title: 
-date: "2025-01-17 23:23"
+date: "2025-01-18 12:06"
 name: Travis M. Erickson
 # link:
 taxonomy:

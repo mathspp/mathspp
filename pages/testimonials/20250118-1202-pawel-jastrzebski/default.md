@@ -1,6 +1,6 @@
 ---
 company_and_title:
-date: "2025-01-18 10:21"
+date: "2025-01-18 12:02"
 name: Pawel Jastrzebski
 # link:
 social: https://x.com/pawjast

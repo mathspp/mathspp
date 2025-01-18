@@ -1,6 +1,6 @@
 ---
 company_and_title: 
-date: "2025-01-17 23:28"
+date: "2025-01-18 12:00"
 name: Nicolas Benavides
 # link:
 social: https://www.linkedin.com/in/nicolas-bs/
