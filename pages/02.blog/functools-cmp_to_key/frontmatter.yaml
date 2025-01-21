@@ -1,0 +1,18 @@
+date: 21-01-2025 21:05
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "In this article I explore `functools.cmp_to_key` and propose a possible implementation."
+    og:image: "https://mathspp.com/blog/functools-cmp_to_key/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/functools-cmp_to_key/thumbnail.webp"
+references:
+    - Python 3 Documentation, The Python Standard Library, `functools.cmp_to_key` [https://docs.python.org/3/library/functools.html#functools.cmp_to_key](https://docs.python.org/3/library/functools.html#functools.cmp_to_key) [last accessed 21-01-2025];"
+    - GitHub, Python 3.13 source code, `Lib/functools.py`, [https://github.com/python/cpython/blob/3.13/Lib/functools.py](https://github.com/python/cpython/blob/3.13/Lib/functools.py) [last accessed 21-01-2025];"
+slug: "functools-cmp_to_key"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - algorithms
+        - programming
+        - python
+title: "functools.cmp_to_key"
