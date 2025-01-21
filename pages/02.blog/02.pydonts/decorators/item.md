@@ -714,10 +714,7 @@ def cache(cache_size):  # Level 1 expects the cache size.
 
 If it helps, you can look at this outer function as a factory of decorators, since the code that is inside looks pretty much like the decorator `cache` from before.
 
-<video width="100%" aspect-ratio="auto" poster="/blog/pydonts/decorators/_decorators_with_args_animation.mp4.thumb.webp" controls>
-  <source src="/blog/pydonts/decorators/_decorators_with_args_animation.mp4" type="video/mp4">
-  Short animation that shows the transformation of a function into an equivalent decorator, by Rodrigo Girão Serrão. See https://mathspp.com/blog/pydonts/decorators for more details.
-</video>
+![Short animation that shows the transformation of a function into an equivalent decorator.](_decorators_with_args_animation.gif "Morphing into a decorator with arguments.")
 
 Is this completely bonkers?
 It is a bit mind-bending in the beginning, but this is a useful pattern.
