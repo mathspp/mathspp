@@ -29,7 +29,7 @@ title: "Dunder methods blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">13</th>
-            <th style="text-align: center;">21,850</th>
+            <th style="text-align: center;">21,852</th>
             <th style="text-align: center;">3,596</th>
         </tr>
     </thead>

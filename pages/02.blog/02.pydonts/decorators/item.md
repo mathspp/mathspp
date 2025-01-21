@@ -1196,3 +1196,5 @@ This Pydon't showed you that:
 If you liked this Pydon't be sure to leave a reaction below and share this with your friends and fellow Pythonistas.
 Also, [don't forget to subscribe to the newsletter][subscribe] so you don't miss a single Pydon't!
 <!-- ^ -->
+
+[subscribe]: https://mathspp.com/subscribe

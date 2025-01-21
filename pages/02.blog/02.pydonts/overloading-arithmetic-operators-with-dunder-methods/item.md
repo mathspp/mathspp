@@ -2336,7 +2336,7 @@ If you liked this Pydon't be sure to leave a reaction below and share this with 
 Also, [don't forget to subscribe to the newsletter][subscribe] so you don't miss a single Pydon't!
 <!-- ^ -->
 
-
+[subscribe]: https://mathspp.com/subscribe
 [dunder-methods]: /blog/pydonts/dunder-methods
 [dunder-init]: /blog/object-initialisation-with-__init__
 [dunder-repr]: /blog/pydonts/str-and-repr
