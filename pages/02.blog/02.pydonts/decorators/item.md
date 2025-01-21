@@ -714,7 +714,7 @@ def cache(cache_size):  # Level 1 expects the cache size.
 
 If it helps, you can look at this outer function as a factory of decorators, since the code that is inside looks pretty much like the decorator `cache` from before.
 
-![Diagram that shows the transformation of a function into an equivalent decorator.](_decorator_with_args_.webp "Transforming into a decorator with arguments.")
+![Diagram that shows the transformation of a function into an equivalent decorator.](_decorator_with_args.webp "Transforming into a decorator with arguments.")
 
 Is this completely bonkers?
 It is a bit mind-bending in the beginning, but this is a useful pattern.
