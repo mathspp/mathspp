@@ -1,10 +1,13 @@
-date: 15-01-2025 14:06
+date: 21-01-2025 18:11
 metadata:
     author: Rodrigo Girão Serrão
     description: "This article teaches the decorator pattern in Python, why it exists, how to use it, and when to use it to write efficient and idiomatic Python code."
     og:image: "https://mathspp.com/blog/pydonts/decorators/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/pydonts/decorators/thumbnail.webp"
-references: []
+references:
+  - "Python 3 Docs, The Python Standard Library, `functools.cache`, [https://docs.python.org/3/library/functools.html#functools.cache](https://docs.python.org/3/library/functools.html#functools.cache) [last accessed 18-01-2025];"
+  - "Python 3 Docs, The Python Standard Library, `functools.lru_cache`, [https://docs.python.org/3/library/functools.html#functools.lru_cache](https://docs.python.org/3/library/functools.html#functools.lru_cache) [last accessed 18-01-2025];"
+  - "Python 3 Docs, The Python Standard Library, `functools.wraps`, [https://docs.python.org/3/library/functools.html#functools.wraps](https://docs.python.org/3/library/functools.html#functools.wraps) [last accessed 18-01-2025];"
 slug: "decorators"
 taxonomy:
     category: [pydont, blogpost]
@@ -13,4 +16,3 @@ taxonomy:
       - "programming"
       - "python"
 title: "Decorators | Pydon't 🐍"
-published: false

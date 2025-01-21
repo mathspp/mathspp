@@ -10,9 +10,18 @@ The decorator pattern is a functional pattern that Python developers leverage to
 In this Pydon't, you will learn exactly why the decorator pattern matters, how to use it, and when to use it.
 You will also learn how to implement your custom decorators and more advanced use cases of decorators.
 
-In this Pydon't, you will learn:
+In this Pydon't, you will:
 
- - bla bla bla
+ - learn to recognise when a decorator must be used;
+ - learn to identify the functionality that should be extracted into a decorator;
+ - use an analogy to understand what a decorator is;
+ - implement two simple decorators as initial examples;
+ - learn the full anatomy of a general decorator;
+ - understand why `functools.wraps` should be used when defining decorators;
+ - add arguments to your decorators to make them more useful;
+ - handle the multiple usage patterns that decorators need to handle, inspired by the way the standard library does it;
+ - see that, sometimes, classes can also be used as decorators; and
+ - learn that classes can also be decorated.
 
 <!--v-->
 !!! You can get all the Pydon'ts as a [free ebook with over +400 pages and hundreds of tips](/books/pydonts). [Download the ebook “Pydon'ts – write elegant Python code” here](/books/pydonts).
@@ -401,11 +410,11 @@ At this point you already have a pretty solid understanding of the anatomy of a 
 Here is a quick recap:
 
 ```py
-def decorator(function_argument):  # 1
+def decorator(function_to_decorate):  # 1
     # 2                # 3
     def inner_function(*args, **kwargs):
         ...  # 4
-        result = function_argument(*args, **kwargs)  # 5
+        result = function_to_decorate(*args, **kwargs)  # 5
         ...  # 6
         return result  # 7
 
@@ -416,19 +425,19 @@ def decorator(function_argument):  # 1
  2. Inside the body of a decorator we typically define an inner function to wrap the function argument.
  3. The inner function accepts `*args` and `**kwargs` so it's general and works with any type of function argument provided.
  4. The inner function can run arbitrary code before the original function has to run.
- 5. The inner function calls the original function, typically with its original arguments.
+ 5. The inner function calls the original function, either with the original arguments or with modified versions.
  6. The inner function can run arbitrary code after the original function runs.
  7. The inner function returns its result, typically the result that the original function produced.
  8. The decorator returns the inner function that it built, so that the inner function can be used in place of the original one.
 
-TODO: DIAGRAM HERE
+![Diagram showing the anatomy of a decorator, namely that it's an outer function accepting a function to decorate as an argument. Inside it, we define an inner function that accepts arbitrary args and kwargs, runs arbitrary code before running the original function, runs the original function, runs arbitrary code after the original function, and then returns the result. The outer function then returns the inner function defined.](_decorator_blueprint.webp "A decorator blueprint.")
 
 What is important for you to realise is that this represents a generic recipe.
-None of the bullet points above are rules that are set in stone and you can come up with situations and contexts where you'll need decorators that break those bullet points.
-And you also don't need all bullet points.
-Some decorators will do work before calling the original function but not after, and some decorators do the opposite, for example.
+It's like a blueprint for you to implement your own decorators.
+None of the bullet points above are rules that are set in stone and you can come up with situations and contexts where you'll need decorators that go against those bullet points.
+Some decorators will do work before calling the original function but not after (skipping point 6), and some decorators do the opposite (skipping point 4), for example.
 
-My suggestion is that you go through the decorators `cache` and `timed` that you implemented above and try to fit their code into the bullet points from above.
+My suggestion is that you go through the decorators `cache` and `timed` that you implemented above and see how well they fit the blueprint above.
 (Notice how the decorator `timed` breaks the guideline 7., since it doesn't just return the output of the inner function, but also the timing information.)
 
 This picture of the anatomy of a decorator is almost complete.
@@ -520,11 +529,11 @@ For now, let me update the general anatomy of a decorator:
 from functools import wraps
 
 
-def decorator(function_argument):
-    @wraps(function_argument)  # <--
+def decorator(function_to_decorate):
+    @wraps(function_to_decorate)  # <--
     def inner_function(*args, **kwargs):
         ...  # Set-up work.
-        result = function_argument(*args, **kwargs)
+        result = function_to_decorate(*args, **kwargs)
         ...  # Finalise whatever you need.
         return result
 
@@ -628,9 +637,10 @@ def cache(f, cache_size):
     @wraps(f)
     def cached(*args):
         if args not in cache:
+            result = f(*args)
             if len(cache) >= cache_size:
                 cache.popitem()  # Pops an item from the dictionary.
-            cache[args] = f(*args)
+            cache[args] = result
 
         return cache[args]
 
@@ -690,20 +700,24 @@ def cache(cache_size):  # Level 1 expects the cache size.
         @wraps(f)
         def cached(*args):
             if args not in cache:
+                result = f(*args)
                 if len(cache) >= cache_size:
                     cache.popitem()  # Pops an item from the dictionary.
-                cache[args] = f(*args)
+                cache[args] = result
 
             return cache[args]
 
         return cached
 
-    return cache_with_fixe_size  # Level 1 must return level 2.
+    return cache_with_fixed_size  # Level 1 must return level 2.
 ```
 
 If it helps, you can look at this outer function as a factory of decorators, since the code that is inside looks pretty much like the decorator `cache` from before.
 
-TODO: DIAGRAM HERE
+<video width="100%" aspect-ratio="auto" poster="/blog/pydonts/decorators/_decorators_with_args_animation.mp4.thumb.webp" controls>
+  <source src="/blog/pydonts/decorators/_decorators_with_args_animation.mp4" type="video/mp4">
+  Short animation that shows the transformation of a function into an equivalent decorator, by Rodrigo Girão Serrão. See https://mathspp.com/blog/pydonts/decorators for more details.
+</video>
 
 Is this completely bonkers?
 It is a bit mind-bending in the beginning, but this is a useful pattern.
@@ -712,6 +726,61 @@ Many decorators accept arguments.
 As a few worthy examples, `functools.lru_cache` is the cache decorator from the standard library that does what we were trying to do (a cache with a maximum size) in the proper way.
 When you work with web frameworks like Flask, Django, or FastAPI, you use decorators to determine what URLs map to what functions.
 And more.
+
+
+## To parens or not to parens?
+
+As a disclaimer, you may sometimes find decorators with _optional_ arguments.
+For example, the decorator `functools.lru_cache` accepts a maximum cache size but that is an optional argument.
+Therefore, the decorator `lru_cache` supports all these usage patterns:
+
+```py
+@lru_cache        # 1
+def f(...): ...
+
+@lru_cache()      # 2
+def f(...): ...
+
+@lru_cache(1024)  # 3
+def f(...): ...
+```
+
+If you think about it for a second, this can look a bit confusing because the same thing, `lru_cache`, can be used as a decorator (see usage 1) or as a factory of decorators (see usages 2 and 3).
+This may look puzzling the first time you encounter it, but this flexibility can be implemented with a single conditional statement.
+I will present _one_ possible way to achieve this result, based off of the last implementation of `cache` that you have above and a simplification of the [actual pattern implemented in Python 3.13 for `functools.lru_cache`](https://github.com/python/cpython/blob/430ccbc009aa7a2da92b85d7aeadd39e1666e875/Lib/functools.py#L530-L534).
+
+In essence, the implementation of `cache` shown above needs two modifications:
+
+ 1. the parameter `cache_size` must have a default value so that `cache` can be used with zero arguments; and
+ 2. the outer function `cache` needs to check the type of the argument that it received. In case it receives a callable, it's because the user used the outer function directly on the function to be decorated and we need to skip a level:
+
+```py
+from functools import wraps
+
+def cache(cache_size=1024):
+    def cache_with_fixed_size(f):
+        cache = {}
+
+        @wraps(f)
+        def cached(*args):
+            if args not in cache:
+                result = f(*args)
+                if len(cache) >= cache_size:
+                    cache.popitem()
+                cache[args] = result
+
+            return cache[args]
+
+        return cached
+
+    # Was the decorator applied directly on the function?
+    if callable(cache_size):
+        # Restore the default cache size.
+        f, cache_size = cache_size, 1024
+        return cache_with_fixed_size(f)
+    else:
+        return cache_with_fixed_size
+```
 
 
 ## Anything can be a decorator
@@ -762,24 +831,369 @@ def foo():
 print(type(foo))
 ```
 
-As another fun example, let me go back to the sized cache decorator I wrote
+Let me show you an example that is also fun but a bit more useful.
+Remember the sized cache decorator from earlier?
+Now I want to add more features to it, like the ability to count how many times the cache is used, how many times we miss the cache, and the ability to clear the cache.
+
+If you give it some thought, you might end up writing something like this:
+
+```py
+from functools import wraps
+
+def cache(cache_size):
+    def cache_with_fixed_size(f):
+        cache = {}
+
+        @wraps(f)
+        def cached(*args):
+            if args not in cache:
+                cached.misses += 1  # <--
+                result = f(*args)
+                if len(cache) >= cache_size:
+                    cache.popitem()
+                cache[args] = result
+            else:                 # <--
+                cached.hits += 1  # <--
+
+            return cache[args]
+
+        cached.hits = 0                   # <--
+        cached.misses = 0                 # <--
+        cached.clear_cache = cache.clear  # <--
+
+        return cached
+
+    return cache_with_fixed_size
+```
+
+Functions are objects, so you can add attributes and functions to it.
+Let me show you this abomination in action:
+
+```py
+@cache(1024)
+def fib(n):
+    if n < 2:
+        return n
+    return fib(n - 1) + fib(n - 2)
+
+fib(1)
+print(fib.hits, fib.misses)  # 0 1 – 1 miss
+fib(1)
+print(fib.hits, fib.misses)  # 1 1 – 1 hit
+
+fib.clear_cache()
+fib(1)
+print(fib.hits, fib.misses)  # 1 2 – another miss
+```
+
+This works but the code is a bit of a mess.
+Adding attributes and methods to functions is not a common practice for a reason...
 
 
-DECORATE CLASSES
+## Classes as decorators
 
-CLASSES AS DECORATORS
+When things reach this level and you want to add functionality to the functions you are decorating, you might be better off using a class as the decorator.
+Since classes are also callable, you can define decorators with them.
+If `C` is a class name, then `C()` produces an instance of the class `C`, so if you use the class `C` as a decorator, then Python will call `C(f)` with some function `f`, and the resulting instance is supposed to be able to replace the function `f`.
+
+To make this easier to understand, I will take a step back and go back to when you implemented a cache decorator without a maximum size.
+To do this with a class, the class `Cache` will accept a function.
+You can start implementing this decorator as such:
+
+```py
+class Cache:
+    def __init__(self, f):
+        self.f = f
+        self.cache = {}
+```
+
+This is enough to use the class `Cache` as a decorator:
+
+```py
+@Cache
+def fib(n):
+    ...
+```
+
+If you print `fib`, you will see it is a `Cache` object:
+
+```py
+print(fib)  # <__main__.Cache object at 0x100ef8ad0>
+```
+
+`fib` is supposed to be a function, so you must be able to call `fib` but currently you can't:
+
+```py
+fib(2)
+"""
+Traceback (most recent call last):
+  File "<python-input-11>", line 1, in <module>
+    fib(2)
+    ~~~^^^
+TypeError: 'Cache' object is not callable
+"""
+```
+
+The class `Cache` is callable but the instances of `Cache` are not.
+If you want a class instance to be callable, you need to implement [the dunder method `__call__`](/blog/pydonts/dunder-methods):
+
+```py
+class Cache:
+    def __init__(self, f):
+        self.f = f
+        self.cache = {}
+
+    def __call__(self, *args):
+        if args not in self.cache:
+            self.cache[args] = self.f(*args)
+
+        return self.cache[args]
+```
+
+Now that `Cache.__call__` is defined, you can call instances of the class `Cache`:
+
+```py
+@Cache
+def fib(n):
+    if n < 2:
+        return n
+    return fib(n - 1) + fib(n - 2)
+
+print(fib(6))  # 8
+```
+
+Since `Cache` is a class and `fib` is an instance of the class `Cache`, you have access to the original function and to the cache:
+
+```py
+print(fib.f)  # <function fib at 0x101072ca0>
+print(fib.cache)
+# {(1,): 1, (0,): 0, (2,): 1, (3,): 2, (4,): 3, (5,): 5, (6,): 8}
+```
+
+Again, since `Cache` is a class, adding attributes or methods to it becomes more intuitive.
+This time, maybe you also want to clear the cache info when clearing the cache:
+
+```py
+class Cache:
+    def __init__(self, f):
+        self.f = f
+        self.cache = {}
+        self.hits = 0
+        self.misses = 0
+
+    def __call__(self, *args):
+        if args not in self.cache:
+            self.misses += 1
+            self.cache[args] = self.f(*args)
+        else:
+            self.hits += 1
+
+        return self.cache[args]
+
+    def clear_cache(self):
+        self.cache.clear()
+        self.hits = 0
+        self.misses = 0
+```
+
+You have a cache decorator implemented as a class that provides helpful attributes and methods.
+Now, how do you take the decorator `Class` and modify it so that it also accepts a maximum cache size?
+Try to do it before you keep reading.
+
+## Classes as decorators with arguments
+
+If your decorator is a class, I think the cleanest way to add parameters to the decorator starts by adding the parameters to the class decorator:
+
+```py
+class CacheWithSize:
+    def __init__(self, f, maxsize):
+        self.f = f      # ^^^^^^^
+        self.cache = {}
+        self.hits = 0
+        self.misses = 0
+        self.maxsize = maxsize  # <--
+
+    def __call__(self, *args):
+        if args not in self.cache:
+            self.misses += 1
+            result = self.f(*args)
+            if len(self.cache) >= self.maxsize:  # <--
+                self.cache.popitem()             # <--
+            self.cache[args] = result
+        else:
+            self.hits += 1
+
+        return self.cache[args]
+
+    def clear_cache(self):
+        ...
+```
+
+Then, to create the outer decorator – the one that accepts the maximum cache size as the argument – you create a function outside the class:
+
+```py
+from functools import partial
+
+class CacheWithSize:
+    ...
+
+def cache(maxsize):
+    return partial(CacheWithSize, maxsize=maxsize)
+```
+
+This implementation uses [`functools.partial` to fix the argument for the cache maximum size](/blog/functools-partial) while “leaving space” for you to specify the function that the cache will apply to:
+
+```py
+@cache(1024)
+def fib(n):
+    if n < 2:
+        return n
+    return fib(n - 1) + fib(n - 2)
+```
+
+The pattern I just showed you of having two separate objects can be more readable than the double nesting of functions, and even though the total nesting decreases, you can still look at `cache` as a factory of decorators!
+
+This pattern also works for decorators with arguments implemented as functions.
+For example, when I first introduced [decorators with arguments](#decorators-with-arguments), I showed you a function `cache(f, cache_size)` that almost implemented a cache decorator with a maximum size.
+Now, you can take that function of two arguments and write a decorator around it:
+
+```py
+from functools import partial, wraps
+
+# Was `def cache(f, cache_size)` in a previous section.
+def cache_with_size(f, cache_size):
+    cache = {}
+
+    @wraps(f)
+    def cached(*args):
+        if args not in cache:
+            result = f(*args)
+            if len(cache) >= cache_size:
+                cache.popitem()
+            cache[args] = result
+
+        return cache[args]
+
+    return cached
+
+def cache(maxsize):
+    return partial(cache_with_size, cache_size=maxsize)
+```
+
+If you take a look at the decorators `cache` and `lru_cache` from the module `functools`, you will see that they are implemented as functions that wrap classes.
+This shows that this pattern is useful.
+
+Before covering the final major topic of this Pydon't, I suggest you try to implement the profiling decorator `timed` as a class.
+This will improve your understanding of the material covered here.
 
 
+## Classes can be decorated
+
+Much like you can use a decorator with the `@` syntax above a `def` statement, you can also use a decorator with the `@` syntax above a `class` statement, and this lets you decorate a class.
+The reasons that would take you to decorate a class are the same reasons that would take you to decorate a function: you want to add functionality to your class and the functionality you want to add is something orthogonal to your class, so it can be abstracted away in a decorator so it's reused.
+
+In case you are wondering, decorating classes isn't a particularly advanced pattern.
+Maybe you won't have to write your own class decorators very often, but decorators like `@dataclass` from the module `dataclasses` and `@total_ordering` from the module `functools` show reasonable use cases for decorators targeted at classes.
+
+As a simpler motivating example, consider the following definition of the class `Person`:
+
+```py
+class Person:
+    def __init__(self, first, last):
+        self.first = first
+        self.last = last
+
+    def __repr__(self):
+        return f"Person(first={self.first!r}, last={self.last!r})"
+
+rodrigo = Person("Rodrigo", "Girão Serrão")
+print(rodrigo)  # Person(first='Rodrigo', last='Girão Serrão')
+```
+
+[The dunder method `__repr__` is what implements the pretty-printing of `Person` instances](/blog/pydonts/str-and-repr), but it's logic is not particularly tied to the class `Person`.
+If I implemented a class `Point3D`, to represent a point in a 3 dimensional space, I'd implement a very similar method `__repr__`:
+
+```py
+class Point3D:
+    def __init__(self, x, y, z):
+        self.x = x
+        self.y = y
+        self.z = z
+
+    def __repr__(self):
+        return f"Point3D(x={self.x}, y={self.y}, z={self.z})"
+
+p = Point3D(1, 0, -2)
+print(p)  # Point3D(x=1, y=0, z=-2)
+```
+
+As I implement more and more classes and get tired of reimplementing the same logic for `__repr__`, I can create a decorator that adds the method `__repr__` automatically.
+To do this, I start by defining a function that implements the logic I have been repeating:
+
+```py
+def _general_repr(self):
+    class_name = self.__class__.__name__
+    attrs = ", ".join(f"{name}={value!r}" for name, value in vars(self).items())
+    return f"{class_name}({attrs})"
+```
+
+(The attribute access `.__class__.__name__` gives me a readable string for the class name, like `Person` or `Point3D`, and the built-in `vars` gives me a dictionary with all the attributes defined on the object passed in as an argument. You can read more about [the built-in `vars`](/blog/til/vars) and [the dunder attribute `__name__`](/blog/pydonts/name-dunder-attribute).)
+
+After defining this function, I can write a decorator that accepts a class and plugs the function `_general_repr` into the class:
+
+```py
+def _general_repr(self): ...
+
+def add_repr(cls):
+    cls.__repr__ = _general_repr
+    return cls
+```
+
+Note how we do not _need_ to define a completely new class in order for `add_repr` to be a valid decorator.
+This already works:
+
+```py
+@add_repr
+class Person:
+    def __init__(self, first, last):
+        self.first = first
+        self.last = last
+
+rodrigo = Person("Rodrigo", "Girão Serrão")
+print(rodrigo)  # Person(first='Rodrigo', last='Girão Serrão')
+
+@add_repr
+class Point3D:
+    def __init__(self, x, y, z):
+        self.x = x
+        self.y = y
+        self.z = z
+
+p = Point3D(1, 0, -2)
+print(p)  # Point3D(x=1, y=0, z=-2)
+```
+
+As an important disclaimer, note that the decorator `add_repr` I created is not perfect!
+It served only as an example decorator.
+As an exercise, try to reimplement a (simplified) version of [the decorator `functools.total_ordering`](https://docs.python.org/3/library/functools.html#functools.total_ordering).
 
 ## Conclusion
 
 Here's the main takeaway of this Pydon't, for you, on a silver platter:
 
- > “*bla bla*”
+ > “Do not overcrowd functions with behaviour that is orthogonal to the original objective of the function. Instead, refactor that functionality into a decorator.”
 
 This Pydon't showed you that:
 
- - bla bla bla
+ - decorators are a flexible way to add more functionality to your functions, for example automatic caching and profiling;
+ - a decorator is nothing more than a factory of functions;
+ - the standard library provides commonly-used decorators like `functools.cache`, `functools.lru_cache`, and `functools.wraps`;
+ - the decorator `functools.wraps` is useful when you write your own decorators;
+ - most decorators follow a standard pattern, or blueprint;
+ - decorators can accept arguments that further customise the behaviour of the decorator and of the resulting function;
+ - decorators that accept arguments might be used in three different ways and you can handle those with an `if` statement and the built-in `callable`;
+ - you can use a class to implement a decorator and in some cases that's a good idea; and
+ - decorators can also be used on classes for the same reasons you'd use decorators on functions.
 
 <!-- v -->
 If you liked this Pydon't be sure to leave a reaction below and share this with your friends and fellow Pythonistas.
