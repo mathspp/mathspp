@@ -4,7 +4,7 @@ anchors:
 body_classes: "header-dark header-transparent"
 content:
     items:
-        "@taxonomy": {"category": "blogpost", "tag": "programming"}
+        "@taxonomy": {"category": "blogpost", "tag": "llm"}
     limit: 20
     order:
         by: date
@@ -14,28 +14,28 @@ hero_image_url: /user/themes/myquark/images/common_hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 metadata:
     author: Rodrigo Girão Serrão
-    description: "All of the mathspp blog articles about programming."
-    og:description: "All of the mathspp blog articles about programming."
-    og:image: "https://mathspp.com/blog/tags/programming/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/programming/thumbnail.webp"
-title: "Programming blog articles"
+    description: "All of the mathspp blog articles about llm."
+    og:description: "All of the mathspp blog articles about llm."
+    og:image: "https://mathspp.com/blog/tags/llm/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/llm/thumbnail.webp"
+title: "Llm blog articles"
 ---
 
 
-# Articles that include code in some form
+# “LLM” tag
 
 
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">281</th>
-            <th style="text-align: center;">344,318</th>
-            <th style="text-align: center;">34,048</th>
+            <th style="text-align: center;">1</th>
+            <th style="text-align: center;">1,142</th>
+            <th style="text-align: center;">350</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td style="text-align: center;">articles</td>
+            <td style="text-align: center;">article</td>
             <td style="text-align: center;">words</td>
             <td style="text-align: center;">lines of code</td>
         </tr>

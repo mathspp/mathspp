@@ -1,0 +1,16 @@
+date: 22-01-2025 19:50
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "I used an LLM to write a countdown timer and I have mixed feelings about the result."
+    og:image: "https://mathspp.com/blog/using-an-llm-to-write-a-countdown-timer/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/using-an-llm-to-write-a-countdown-timer/thumbnail.webp"
+slug: "using-an-llm-to-write-a-countdown-timer"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - llm
+        - programming
+        - pygame
+        - python
+title: Using an LLM to write a countdown timer
