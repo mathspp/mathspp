@@ -14,7 +14,7 @@ I'm blogging about this because the section “Markdown Inside HTML Blocks” sh
 This is particularly useful because sometimes I like to include code blocks inside the HTML tag `<details>`.
 The link shows that I have to add the attribute `markdown="1"` to the HTML tag that will contain nested Markdown and the parser takes care of the rest (and removes the attribute).
 
-Here's a tag `<details>` that uses the attribute in the source code:
+Here's a tag `<details>` that [uses the attribute in the source code](https://github.com/mathspp/mathspp/blob/edcd02e0585759195d3365ca9f83562d38393c04/pages/link-blog/michelf-ca-projects-php-markdown-extra--markdown-attr/link-item.md?plain=1#L19):
 
 <details markdown="1">
 <summary>Attribute was used.</summary>
@@ -27,7 +27,7 @@ print("Hello, world!")
 Here's what the same HTML + Markdown combo will look like without the correct Markdown Extra attribute:
 
 <details>
-<summary>Attribute was used.</summary>
+<summary>Attribute was not used.</summary>
 
 ```py
 print("Hello, world!")
