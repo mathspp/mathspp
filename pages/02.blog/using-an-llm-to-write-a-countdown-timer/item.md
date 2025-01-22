@@ -244,10 +244,9 @@ Then, predicting an issue that I hadn't checked for yet, I added another two sen
 I got a new version of the code.
 
 <details>
-<summary>Full code of the iteration with fixed timekeeping.</summary>\
-\
+<summary>Full code of the iteration with fixed timekeeping.</summary>
 
-```py
+<pre><code class="language-py language-python">
 import sys
 import pygame
 import time
@@ -330,11 +329,10 @@ while running:
 
 # Quit pygame
 pygame.quit()
-```
-\
+</code></pre>
 
-</details>\
-
+</details>
+  
 In a nutshell, the changes included importing the module `time`, computing the timestamp when the timer should stop, and at each frame checking if we had reached that timestamp or not.
 And yet, the code still looked awkward.
 

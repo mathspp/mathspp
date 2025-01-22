@@ -29,8 +29,8 @@ title: "Pygame blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">13</th>
-            <th style="text-align: center;">7,423</th>
-            <th style="text-align: center;">1,147</th>
+            <th style="text-align: center;">7,694</th>
+            <th style="text-align: center;">1,065</th>
         </tr>
     </thead>
     <tbody>
