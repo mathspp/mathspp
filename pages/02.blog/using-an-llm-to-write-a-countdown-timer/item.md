@@ -333,7 +333,7 @@ pygame.quit()
 ```
 \
 
-</details>
+</details>\
 
 In a nutshell, the changes included importing the module `time`, computing the timestamp when the timer should stop, and at each frame checking if we had reached that timestamp or not.
 And yet, the code still looked awkward.
