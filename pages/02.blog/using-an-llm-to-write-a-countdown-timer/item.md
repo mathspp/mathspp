@@ -26,10 +26,9 @@ To get the first iteration of the code, here the prompt I gave to GPT-4o:
  > “Write a pygame script that accepts a number of minutes using sys.argv and creates a basic countdown timer displaying the time as 10:00, 09:59, etc, all the way to 00:00.
  > The background should be white and the numbers should be black. Use basic event handling to allow quitting the countdown and pressing space should add another minute to the timer.”
 
-<details>
-<summary>Full code of the first iteration.</summary>  
-  
-  
+<details markdown="1">
+<summary>Full code of the first iteration.</summary>
+
 ```py
 import sys
 import pygame
@@ -93,8 +92,7 @@ while running:
 
 # Quit pygame
 pygame.quit()
-```  
-  
+```
 
 </details>
 
