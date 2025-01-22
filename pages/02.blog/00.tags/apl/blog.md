@@ -4,7 +4,7 @@ anchors:
 body_classes: "header-dark header-transparent"
 content:
     items:
-        "@taxonomy": {"category": "blogpost", "tag": "APL"}
+        "@taxonomy": {"category": "blogpost", "tag": "apl"}
     limit: 20
     order:
         by: date
