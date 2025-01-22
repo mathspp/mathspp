@@ -4,7 +4,7 @@ anchors:
 body_classes: "header-dark header-transparent"
 content:
     items:
-        "@taxonomy": {"category": "blogpost", "tag": "apl"}
+        "@taxonomy": {"category": "blogpost", "tag": "APL"}
     limit: 20
     order:
         by: date
@@ -14,10 +14,10 @@ hero_image_url: /user/themes/myquark/images/common_hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 metadata:
     author: Rodrigo Girão Serrão
-    description: "All of the mathspp blog articles about apl."
-    og:description: "All of the mathspp blog articles about apl."
-    og:image: "https://mathspp.com/blog/tags/apl/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/apl/thumbnail.webp"
+    description: "All of the mathspp blog articles about APL."
+    og:description: "All of the mathspp blog articles about APL."
+    og:image: "https://mathspp.com/blog/tags/APL/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/APL/thumbnail.webp"
 title: "Apl blog articles"
 ---
 
