@@ -14,8 +14,8 @@ hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.get
 menu: Blog
 metadata:
     author: Rodrigo Girão Serrão
-    description: "The mathspp blog contains articles about Python, programming in general, and mathematics."
-    og:description: "The mathspp blog contains articles about Python, programming in general, and mathematics."
+    description: "All of the mathspp blog articles about Python, programming, and mathematics."
+    og:description: "All of the mathspp blog articles about Python, programming, and mathematics."
     og:image: "https://mathspp.com/blog/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/thumbnail.webp"
-title: Mathspp Blog
+title: mathspp blog
