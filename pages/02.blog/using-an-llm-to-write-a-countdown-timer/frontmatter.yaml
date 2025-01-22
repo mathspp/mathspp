@@ -10,7 +10,10 @@ taxonomy:
         - blogpost
     tag:
         - llm
+        - opinion
+        - productivity
         - programming
         - pygame
         - python
+        - scripting
 title: Using an LLM to write a countdown timer

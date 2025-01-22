@@ -182,6 +182,7 @@ TAG_DESCRIPTIONS:
   textual: "The Python module Textual to create terminal user interfaces"
   topology: "The mathematical field of topology"
   typing: "Typed languages, usage tutorials, and typing in Python"
+  uv: "The package manager uv"
   visualisation: "Articles that feature visualisations of algorithms, simulations, and others"
   vscode: "The usage of Visual Studio Code"
   web development: "Web development"

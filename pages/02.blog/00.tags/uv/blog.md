@@ -4,7 +4,7 @@ anchors:
 body_classes: "header-dark header-transparent"
 content:
     items:
-        "@taxonomy": {"category": "blogpost", "tag": "python"}
+        "@taxonomy": {"category": "blogpost", "tag": "uv"}
     limit: 20
     order:
         by: date
@@ -14,28 +14,28 @@ hero_image_url: /user/themes/myquark/images/common_hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 metadata:
     author: Rodrigo Girão Serrão
-    description: "All of the mathspp blog articles about python."
-    og:description: "All of the mathspp blog articles about python."
-    og:image: "https://mathspp.com/blog/tags/python/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/python/thumbnail.webp"
-title: "Python blog articles"
+    description: "All of the mathspp blog articles about uv."
+    og:description: "All of the mathspp blog articles about uv."
+    og:image: "https://mathspp.com/blog/tags/uv/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/uv/thumbnail.webp"
+title: "Uv blog articles"
 ---
 
 
-# The Python programming language, tutorials, and more
+# The package manager uv
 
 
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">267</th>
-            <th style="text-align: center;">336,912</th>
-            <th style="text-align: center;">33,355</th>
+            <th style="text-align: center;">1</th>
+            <th style="text-align: center;">394</th>
+            <th style="text-align: center;">19</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td style="text-align: center;">articles</td>
+            <td style="text-align: center;">article</td>
             <td style="text-align: center;">words</td>
             <td style="text-align: center;">lines of code</td>
         </tr>
