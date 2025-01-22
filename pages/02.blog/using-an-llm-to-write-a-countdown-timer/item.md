@@ -110,10 +110,11 @@ This is what I typed:
 
 GPT-4o promptly replied with some edited code.
 
-<details>
+<details markdown="1">
 <summary>Full code of the second iteration.</summary>
 
-<pre><code class="language-py language-python">import sys
+```py
+import sys
 import pygame
 from pygame.locals import QUIT, KEYDOWN, K_SPACE
 
@@ -192,7 +193,7 @@ while running:
 
 # Quit pygame
 pygame.quit()
-</code></pre>
+```
 
 </details>
 
@@ -242,10 +243,11 @@ Then, predicting an issue that I hadn't checked for yet, I added another two sen
 
 I got a new version of the code.
 
-<details>
+<details markdown="1">
 <summary>Full code of the iteration with fixed timekeeping.</summary>
 
-<pre><code class="language-py language-python">import sys
+```py
+import sys
 import pygame
 import time
 from pygame.locals import QUIT, KEYDOWN, K_SPACE
@@ -327,7 +329,7 @@ while running:
 
 # Quit pygame
 pygame.quit()
-</code></pre>
+```
 
 </details>
 
@@ -416,10 +418,11 @@ I also had to fix an edge case where I pressed <kbd>SPACE</kbd> after the timer 
 In case you're curious, I included the final code for the countdown timer below.
 You can also [get the code from here](./cd.py).
 
-<details>
+<details markdown="1">
 <summary>Full code of the final countdown timer.</summary>
 
-<pre><code class="language-py language-python">import sys
+```py
+import sys
 import pygame
 import time
 from pygame.locals import QUIT, KEYDOWN, K_SPACE
@@ -499,7 +502,7 @@ while running:
 
 # Quit pygame
 pygame.quit()
-</code></pre>
+```
 
 </details>
 
