@@ -1,14 +1,14 @@
 date: 22-01-2025 20:44
 metadata:
     author: Rodrigo Girão Serrão
-    description: "Today I learned how to create standalone Python scripts with uv."
-    og:image: "https://mathspp.com/blog/standalone-python-scripts-with-uv/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/standalone-python-scripts-with-uv/thumbnail.webp"
+    description: "Today I learned how to create standalone executable Python scripts with uv."
+    og:image: "https://mathspp.com/blog/standalone-executable-python-scripts-with-uv/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/standalone-executable-python-scripts-with-uv/thumbnail.webp"
 references: []
 routes:
     aliases:
         - "/blog/til/113"
-slug: "standalone-python-scripts-with-uv"
+slug: "standalone-executable-python-scripts-with-uv"
 taxonomy:
     category: [blogpost, til]
     tag:
@@ -16,5 +16,5 @@ taxonomy:
       - python
       - scripting
       - uv
-title: "TIL #113 – Standalone Python scripts with uv"
+title: "TIL #113 – Standalone executable Python scripts with uv"
 visible: false
