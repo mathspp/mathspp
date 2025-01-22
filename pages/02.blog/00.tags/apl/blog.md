@@ -18,7 +18,7 @@ metadata:
     og:description: "All of the mathspp blog articles about APL."
     og:image: "https://mathspp.com/blog/tags/APL/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/tags/APL/thumbnail.webp"
-title: "Apl blog articles"
+title: "APL blog articles"
 ---
 
 

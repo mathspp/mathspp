@@ -18,7 +18,7 @@ metadata:
     og:description: "All of the mathspp blog articles about uv."
     og:image: "https://mathspp.com/blog/tags/uv/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/tags/uv/thumbnail.webp"
-title: "Uv blog articles"
+title: "uv blog articles"
 ---
 
 
