@@ -27,7 +27,8 @@ To get the first iteration of the code, here the prompt I gave to GPT-4o:
  > The background should be white and the numbers should be black. Use basic event handling to allow quitting the countdown and pressing space should add another minute to the timer.”
 
 <details>
-<summary>Full code of the first iteration.</summary>
+<summary>Full code of the first iteration.</summary>\
+\
 
 ```py
 import sys
@@ -93,9 +94,10 @@ while running:
 # Quit pygame
 pygame.quit()
 ```
+\
 
 </details>
-
+  
 I know a bit of pygame so I glanced through the code and it look promising enough, so I ran it with `python cd.py 3` and the countdown started.
 I pressed <kbd>SPACE</kbd> and the countdown increased by 1 minute.
 Everything looked fine.
@@ -246,8 +248,7 @@ I got a new version of the code.
 <details>
 <summary>Full code of the iteration with fixed timekeeping.</summary>
 
-<pre><code class="language-py language-python">
-import sys
+<pre><code class="language-py language-python">import sys
 import pygame
 import time
 from pygame.locals import QUIT, KEYDOWN, K_SPACE
@@ -331,8 +332,8 @@ while running:
 pygame.quit()
 </code></pre>
 
-</details>
-  
+</details>\
+
 In a nutshell, the changes included importing the module `time`, computing the timestamp when the timer should stop, and at each frame checking if we had reached that timestamp or not.
 And yet, the code still looked awkward.
 
