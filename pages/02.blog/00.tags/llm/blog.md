@@ -29,8 +29,8 @@ title: "Llm blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">1</th>
-            <th style="text-align: center;">1,416</th>
-            <th style="text-align: center;">268</th>
+            <th style="text-align: center;">1,956</th>
+            <th style="text-align: center;">109</th>
         </tr>
     </thead>
     <tbody>

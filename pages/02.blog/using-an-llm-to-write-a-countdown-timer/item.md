@@ -27,9 +27,9 @@ To get the first iteration of the code, here the prompt I gave to GPT-4o:
  > The background should be white and the numbers should be black. Use basic event handling to allow quitting the countdown and pressing space should add another minute to the timer.”
 
 <details>
-<summary>Full code of the first iteration.</summary>\
-\
-
+<summary>Full code of the first iteration.</summary>  
+  
+  
 ```py
 import sys
 import pygame
@@ -93,11 +93,11 @@ while running:
 
 # Quit pygame
 pygame.quit()
-```
-\
+```  
+  
 
 </details>
-  
+
 I know a bit of pygame so I glanced through the code and it look promising enough, so I ran it with `python cd.py 3` and the countdown started.
 I pressed <kbd>SPACE</kbd> and the countdown increased by 1 minute.
 Everything looked fine.
@@ -115,8 +115,7 @@ GPT-4o promptly replied with some edited code.
 <details>
 <summary>Full code of the second iteration.</summary>
 
-```py
-import sys
+<pre><code class="language-py language-python">import sys
 import pygame
 from pygame.locals import QUIT, KEYDOWN, K_SPACE
 
@@ -195,7 +194,7 @@ while running:
 
 # Quit pygame
 pygame.quit()
-```
+</code></pre>
 
 </details>
 
@@ -332,7 +331,7 @@ while running:
 pygame.quit()
 </code></pre>
 
-</details>\
+</details>
 
 In a nutshell, the changes included importing the module `time`, computing the timestamp when the timer should stop, and at each frame checking if we had reached that timestamp or not.
 And yet, the code still looked awkward.
@@ -418,10 +417,11 @@ I also had to fix an edge case where I pressed <kbd>SPACE</kbd> after the timer 
 
 In case you're curious, I included the final code for the countdown timer below.
 You can also [get the code from here](./cd.py).
-In case you don't care, you can [skip to the conclusion](#conclusion).
 
-```py
-import sys
+<details>
+<summary>Full code of the final countdown timer.</summary>
+
+<pre><code class="language-py language-python">import sys
 import pygame
 import time
 from pygame.locals import QUIT, KEYDOWN, K_SPACE
@@ -501,7 +501,9 @@ while running:
 
 # Quit pygame
 pygame.quit()
-```
+</code></pre>
+
+</details>
 
 
 ## Conclusion
