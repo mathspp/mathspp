@@ -13,7 +13,7 @@ repos:
       - id: render-thumbnails
         name: Render thumbnails
         description: "Renders the thumbnails for all tag pages and for the main blog page."
-        entry: uv run tools/render_thumbnails.py && git add pages/02.blog/**/*.webp
+        entry: uv run tools/render_thumbnails.py && git add pages/02.blog/**/*.webp tools/*.json
         language: system
         files: '^pages/02\.blog/.*item.*$|^pages/02\.blog/.*frontmatter.*$'
         stages: [pre-commit]
