@@ -1,0 +1,7 @@
+---
+class: offset-box
+---
+
+<p>I use tags to help me categorise all of the articles in my blog:</p>
+
+{% include "stats-table.partial" %}

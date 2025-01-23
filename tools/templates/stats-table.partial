@@ -1,0 +1,16 @@
+<table class="stats-table">
+    <thead>
+        <tr>
+            <th style="text-align: center;">{{ "{:,}".format(articles) }}</th>
+            <th style="text-align: center;">{{ "{:,}".format(words) }}</th>
+            {% if loc > 0 %}<th style="text-align: center;">{{ "{:,}".format(loc) }}</th>{% endif %}
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: center;">{{ "articles" if articles > 1 else "article" }}</td>
+            <td style="text-align: center;">words</td>
+            {% if loc > 0 %}<td style="text-align: center;">lines of code</td>{% endif %}
+        </tr>
+    </tbody>
+</table>

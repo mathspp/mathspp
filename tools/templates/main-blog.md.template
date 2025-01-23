@@ -1,0 +1,3 @@
+# mathspp blog
+
+{% include "stats-table.partial" %}

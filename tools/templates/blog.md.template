@@ -4,7 +4,7 @@ anchors:
 body_classes: "header-dark header-transparent"
 content:
     items:
-        "@taxonomy": {"category": "blogpost", "tag": "{{ tag }}"}
+        "@taxonomy": {"category": "blogpost", "tag": "{{ tag.lower() }}"}
     limit: 20
     order:
         by: date
@@ -18,7 +18,7 @@ metadata:
     og:description: "All of the mathspp blog articles about {{ tag }}."
     og:image: "https://mathspp.com/blog/tags/{{ tag.replace(" ", "-") }}/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/tags/{{ tag.replace(" ", "-") }}/thumbnail.webp"
-title: "{{ tag.capitalize() }} blog articles"
+title: "{{ title }}"
 ---
 
 {% if description %}
@@ -27,19 +27,4 @@ title: "{{ tag.capitalize() }} blog articles"
 # “{{ tag.upper() }}” tag
 {% endif %}
 
-<table class="stats-table">
-    <thead>
-        <tr>
-            <th style="text-align: center;">{{ "{:,}".format(articles) }}</th>
-            <th style="text-align: center;">{{ "{:,}".format(words) }}</th>
-            {% if loc > 0 %}<th style="text-align: center;">{{ "{:,}".format(loc) }}</th>{% endif %}
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td style="text-align: center;">{{ "articles" if articles > 1 else "article" }}</td>
-            <td style="text-align: center;">words</td>
-            {% if loc > 0 %}<td style="text-align: center;">lines of code</td>{% endif %}
-        </tr>
-    </tbody>
-</table>
+{% include "stats-table.partial" %}

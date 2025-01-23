@@ -1,0 +1,578 @@
+{
+  "__all": {
+    "articles": 380,
+    "code_snippets": 3665,
+    "loc": 35049,
+    "words": 418662
+  },
+  "bpci": {
+    "articles": 9,
+    "code_snippets": 334,
+    "loc": 4367,
+    "words": 21754
+  },
+  "compilers": {
+    "articles": 10,
+    "code_snippets": 321,
+    "loc": 4180,
+    "words": 21206
+  },
+  "interpreters": {
+    "articles": 15,
+    "code_snippets": 393,
+    "loc": 5813,
+    "words": 34229
+  },
+  "programming": {
+    "articles": 282,
+    "code_snippets": 3551,
+    "loc": 34067,
+    "words": 344714
+  },
+  "python": {
+    "articles": 267,
+    "code_snippets": 3455,
+    "loc": 33355,
+    "words": 336912
+  },
+  "algorithms": {
+    "articles": 22,
+    "code_snippets": 215,
+    "loc": 2268,
+    "words": 25565
+  },
+  "chatgpt": {
+    "articles": 4,
+    "code_snippets": 100,
+    "loc": 459,
+    "words": 5626
+  },
+  "machine learning": {
+    "articles": 11,
+    "code_snippets": 223,
+    "loc": 1682,
+    "words": 22069
+  },
+  "game": {
+    "articles": 7,
+    "code_snippets": 49,
+    "loc": 491,
+    "words": 6700
+  },
+  "pygame": {
+    "articles": 13,
+    "code_snippets": 51,
+    "loc": 1147,
+    "words": 7423
+  },
+  "scripting": {
+    "articles": 8,
+    "code_snippets": 38,
+    "loc": 592,
+    "words": 4881
+  },
+  "mathematics": {
+    "articles": 120,
+    "code_snippets": 447,
+    "loc": 4441,
+    "words": 108337
+  },
+  "number theory": {
+    "articles": 8,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 4408
+  },
+  "primes": {
+    "articles": 3,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 1411
+  },
+  "dunder methods": {
+    "articles": 13,
+    "code_snippets": 283,
+    "loc": 3596,
+    "words": 21852
+  },
+  "oop": {
+    "articles": 5,
+    "code_snippets": 147,
+    "loc": 1497,
+    "words": 10562
+  },
+  "textual": {
+    "articles": 5,
+    "code_snippets": 115,
+    "loc": 2600,
+    "words": 13722
+  },
+  "chess": {
+    "articles": 6,
+    "code_snippets": 12,
+    "loc": 355,
+    "words": 4495
+  },
+  "simulation": {
+    "articles": 4,
+    "code_snippets": 40,
+    "loc": 700,
+    "words": 5317
+  },
+  "streamlit": {
+    "articles": 1,
+    "code_snippets": 11,
+    "loc": 345,
+    "words": 2257
+  },
+  "apl": {
+    "articles": 16,
+    "code_snippets": 254,
+    "loc": 2672,
+    "words": 31110
+  },
+  "networking": {
+    "articles": 5,
+    "code_snippets": 106,
+    "loc": 763,
+    "words": 11484
+  },
+  "graphs": {
+    "articles": 7,
+    "code_snippets": 22,
+    "loc": 213,
+    "words": 8470
+  },
+  "image processing": {
+    "articles": 2,
+    "code_snippets": 18,
+    "loc": 172,
+    "words": 2579
+  },
+  "visualisation": {
+    "articles": 14,
+    "code_snippets": 58,
+    "loc": 915,
+    "words": 8238
+  },
+  "data science": {
+    "articles": 1,
+    "code_snippets": 104,
+    "loc": 488,
+    "words": 11287
+  },
+  "matplotlib": {
+    "articles": 1,
+    "code_snippets": 104,
+    "loc": 488,
+    "words": 11287
+  },
+  "pandas": {
+    "articles": 3,
+    "code_snippets": 113,
+    "loc": 587,
+    "words": 11831
+  },
+  "code review": {
+    "articles": 9,
+    "code_snippets": 135,
+    "loc": 666,
+    "words": 10340
+  },
+  "slice of life": {
+    "articles": 10,
+    "code_snippets": 48,
+    "loc": 453,
+    "words": 9085
+  },
+  "productivity": {
+    "articles": 20,
+    "code_snippets": 142,
+    "loc": 1454,
+    "words": 15440
+  },
+  "logic": {
+    "articles": 33,
+    "code_snippets": 89,
+    "loc": 739,
+    "words": 27655
+  },
+  "sequences": {
+    "articles": 5,
+    "code_snippets": 18,
+    "loc": 127,
+    "words": 2630
+  },
+  "opinion": {
+    "articles": 4,
+    "code_snippets": 10,
+    "loc": 363,
+    "words": 7678
+  },
+  "geometry": {
+    "articles": 15,
+    "code_snippets": 34,
+    "loc": 427,
+    "words": 9131
+  },
+  "binary": {
+    "articles": 8,
+    "code_snippets": 19,
+    "loc": 135,
+    "words": 6169
+  },
+  "modular arithmetic": {
+    "articles": 6,
+    "code_snippets": 31,
+    "loc": 242,
+    "words": 6765
+  },
+  "recursion": {
+    "articles": 10,
+    "code_snippets": 81,
+    "loc": 944,
+    "words": 13596
+  },
+  "nnfwp": {
+    "articles": 6,
+    "code_snippets": 87,
+    "loc": 863,
+    "words": 13828
+  },
+  "numpy": {
+    "articles": 7,
+    "code_snippets": 91,
+    "loc": 898,
+    "words": 14109
+  },
+  "metaprogramming": {
+    "articles": 2,
+    "code_snippets": 16,
+    "loc": 170,
+    "words": 1356
+  },
+  "computation theory": {
+    "articles": 2,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 1228
+  },
+  "flask": {
+    "articles": 1,
+    "code_snippets": 5,
+    "loc": 111,
+    "words": 433
+  },
+  "web development": {
+    "articles": 3,
+    "code_snippets": 8,
+    "loc": 140,
+    "words": 1102
+  },
+  "automatons": {
+    "articles": 2,
+    "code_snippets": 22,
+    "loc": 258,
+    "words": 4836
+  },
+  "combinatorics": {
+    "articles": 21,
+    "code_snippets": 68,
+    "loc": 637,
+    "words": 19319
+  },
+  "arithmetic": {
+    "articles": 8,
+    "code_snippets": 123,
+    "loc": 1487,
+    "words": 9672
+  },
+  "rationals": {
+    "articles": 1,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 104
+  },
+  "fractals": {
+    "articles": 5,
+    "code_snippets": 22,
+    "loc": 407,
+    "words": 3908
+  },
+  "optimisation": {
+    "articles": 6,
+    "code_snippets": 33,
+    "loc": 392,
+    "words": 4444
+  },
+  "set theory": {
+    "articles": 1,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 107
+  },
+  "rust": {
+    "articles": 3,
+    "code_snippets": 16,
+    "loc": 131,
+    "words": 928
+  },
+  "lsbasi-apl": {
+    "articles": 4,
+    "code_snippets": 71,
+    "loc": 1651,
+    "words": 10889
+  },
+  "modules": {
+    "articles": 11,
+    "code_snippets": 131,
+    "loc": 1249,
+    "words": 9825
+  },
+  "probability": {
+    "articles": 4,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 5090
+  },
+  "diophantine equations": {
+    "articles": 1,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 232
+  },
+  "matlab": {
+    "articles": 2,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 426
+  },
+  "parsers": {
+    "articles": 4,
+    "code_snippets": 24,
+    "loc": 363,
+    "words": 3211
+  },
+  "generators": {
+    "articles": 5,
+    "code_snippets": 34,
+    "loc": 350,
+    "words": 1957
+  },
+  "open source": {
+    "articles": 2,
+    "code_snippets": 65,
+    "loc": 574,
+    "words": 7878
+  },
+  "regex": {
+    "articles": 4,
+    "code_snippets": 10,
+    "loc": 95,
+    "words": 1471
+  },
+  "random walks": {
+    "articles": 1,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 237
+  },
+  "scroll art": {
+    "articles": 1,
+    "code_snippets": 7,
+    "loc": 55,
+    "words": 462
+  },
+  "artificial intelligence": {
+    "articles": 1,
+    "code_snippets": 22,
+    "loc": 213,
+    "words": 4507
+  },
+  "grammars": {
+    "articles": 1,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 625
+  },
+  "git": {
+    "articles": 7,
+    "code_snippets": 17,
+    "loc": 118,
+    "words": 2161
+  },
+  "brainfuck": {
+    "articles": 1,
+    "code_snippets": 13,
+    "loc": 61,
+    "words": 2443
+  },
+  "llm": {
+    "articles": 1,
+    "code_snippets": 9,
+    "loc": 350,
+    "words": 1144
+  },
+  "json": {
+    "articles": 5,
+    "code_snippets": 28,
+    "loc": 228,
+    "words": 3315
+  },
+  "vscode": {
+    "articles": 5,
+    "code_snippets": 5,
+    "loc": 40,
+    "words": 1759
+  },
+  "fp": {
+    "articles": 3,
+    "code_snippets": 108,
+    "loc": 821,
+    "words": 9363
+  },
+  "haskell": {
+    "articles": 1,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 240
+  },
+  "origami": {
+    "articles": 1,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 984
+  },
+  "pigeonhole principle": {
+    "articles": 3,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 1495
+  },
+  "game theory": {
+    "articles": 6,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 5937
+  },
+  "induction": {
+    "articles": 5,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 4461
+  },
+  "invariants": {
+    "articles": 7,
+    "code_snippets": 3,
+    "loc": 25,
+    "words": 3616
+  },
+  "group theory": {
+    "articles": 1,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 2078
+  },
+  "polynomials": {
+    "articles": 1,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 1203
+  },
+  "topology": {
+    "articles": 1,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 786
+  },
+  "numerical analysis": {
+    "articles": 2,
+    "code_snippets": 5,
+    "loc": 34,
+    "words": 764
+  },
+  "floats": {
+    "articles": 2,
+    "code_snippets": 12,
+    "loc": 92,
+    "words": 726
+  },
+  "pytest": {
+    "articles": 5,
+    "code_snippets": 30,
+    "loc": 216,
+    "words": 1999
+  },
+  "testing": {
+    "articles": 4,
+    "code_snippets": 15,
+    "loc": 163,
+    "words": 1293
+  },
+  "concurrency": {
+    "articles": 3,
+    "code_snippets": 21,
+    "loc": 264,
+    "words": 2623
+  },
+  "github": {
+    "articles": 1,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 259
+  },
+  "repl": {
+    "articles": 2,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 417
+  },
+  "hypothesis": {
+    "articles": 1,
+    "code_snippets": 3,
+    "loc": 63,
+    "words": 421
+  },
+  "typing": {
+    "articles": 3,
+    "code_snippets": 20,
+    "loc": 123,
+    "words": 1469
+  },
+  "data structures": {
+    "articles": 2,
+    "code_snippets": 4,
+    "loc": 368,
+    "words": 757
+  },
+  "statistics": {
+    "articles": 1,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 388
+  },
+  "uv": {
+    "articles": 1,
+    "code_snippets": 7,
+    "loc": 19,
+    "words": 394
+  },
+  "javascript": {
+    "articles": 1,
+    "code_snippets": 2,
+    "loc": 22,
+    "words": 371
+  },
+  "shell": {
+    "articles": 1,
+    "code_snippets": 1,
+    "loc": 14,
+    "words": 198
+  },
+  "polars": {
+    "articles": 1,
+    "code_snippets": 4,
+    "loc": 40,
+    "words": 222
+  }
+}
