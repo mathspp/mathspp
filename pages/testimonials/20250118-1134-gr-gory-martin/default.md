@@ -6,7 +6,7 @@ name: Grégory Martin
 social: https://www.linkedin.com/in/gregmartindata/
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - social-media
 published: true
 ---

@@ -6,7 +6,7 @@ name: Tushar Sadhwani
 social: 
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - newsletter
 published: true
 ---

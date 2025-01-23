@@ -5,7 +5,7 @@ name: Carl Ruhle
 # link:
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - newsletter
 published: true
 ---

@@ -5,7 +5,7 @@ name: SRTapisi
 # link:
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - social-media
 published: true
 ---

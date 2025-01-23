@@ -6,7 +6,7 @@ name: Handika Wisnu
 social: https://x.com/handikawisnu
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - blog
 published: true
 ---

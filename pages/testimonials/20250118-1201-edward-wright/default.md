@@ -6,7 +6,7 @@ name: Edward Wright
 social: "https://x.com/fasteddy_tws"
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - newsletter
 published: true
 ---

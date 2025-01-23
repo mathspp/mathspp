@@ -6,7 +6,7 @@ name: Antunes
 social: https://x.com/antunes73
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - social-media
 published: true
 ---

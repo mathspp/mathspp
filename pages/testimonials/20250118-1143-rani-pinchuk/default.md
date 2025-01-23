@@ -6,7 +6,7 @@ name: Rani Pinchuk
 social: https://www.linkedin.com/in/first/
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - conference-talk
 published: true
 ---

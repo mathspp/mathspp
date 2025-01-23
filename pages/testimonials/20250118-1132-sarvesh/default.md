@@ -6,7 +6,7 @@ name: Sarvesh
 social: https://x.com/Sarvesh0925
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - book-pydonts
 published: true
 ---

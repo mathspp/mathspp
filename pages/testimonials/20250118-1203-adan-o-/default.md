@@ -6,7 +6,7 @@ name: Adan O.
 social: https://x.com/ordonez_adan
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - bootcamp
 published: true
 ---

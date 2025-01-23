@@ -6,7 +6,7 @@ name: Roger Costandi
 social: https://x.com/nicrocosta
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - book-nnfwp
 published: true
 ---

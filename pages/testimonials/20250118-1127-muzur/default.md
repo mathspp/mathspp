@@ -6,7 +6,7 @@ name: Muzur
 social: "https://x.com/muzurvelet"
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - social-media
 published: true
 ---

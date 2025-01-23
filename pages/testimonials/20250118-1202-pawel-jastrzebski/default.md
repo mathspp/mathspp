@@ -6,7 +6,7 @@ name: Pawel Jastrzebski
 social: https://x.com/pawjast
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - social-media
 published: true
 ---

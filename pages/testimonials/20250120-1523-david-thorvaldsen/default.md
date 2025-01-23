@@ -6,7 +6,7 @@ name: David Thorvaldsen
 social: https://www.linkedin.com/in/david-thorvaldsen/
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - webinar
 published: true
 ---

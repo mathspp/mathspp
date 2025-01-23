@@ -5,7 +5,7 @@ name: Travis M. Erickson
 # link:
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - bootcamp
 published: true
 ---

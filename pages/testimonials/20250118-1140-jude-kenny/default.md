@@ -6,7 +6,7 @@ name: Jude Kenny
 social: https://x.com/JudeKennywise
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - newsletter
 published: true
 ---

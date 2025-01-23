@@ -6,7 +6,7 @@ name: Mikhail Gridnev
 social: https://linkedin.com/in/mikhail-gridnev-ab76b486
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - newsletter
 published: true
 ---

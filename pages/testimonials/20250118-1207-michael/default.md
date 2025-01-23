@@ -6,7 +6,7 @@ name: Michael
 social: 
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - bootcamp
 published: true
 ---

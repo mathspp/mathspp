@@ -5,7 +5,7 @@ name: Zan
 # link:
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - blog
 published: true
 ---

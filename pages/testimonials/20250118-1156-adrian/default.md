@@ -6,7 +6,7 @@ name: Adrian
 social: https://x.com/6lr61
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - conference-talk
 published: true
 ---

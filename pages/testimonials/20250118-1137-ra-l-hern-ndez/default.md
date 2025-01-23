@@ -6,7 +6,7 @@ name: Raúl Hernández
 social: https://x.com/JRaul_7
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - book-pydonts
 published: true
 ---

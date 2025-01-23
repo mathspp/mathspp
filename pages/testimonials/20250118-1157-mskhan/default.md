@@ -6,7 +6,7 @@ name: mskhan
 social: https://x.com/iamuddassir
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - newsletter
 published: true
 ---

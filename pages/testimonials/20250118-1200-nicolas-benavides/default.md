@@ -6,7 +6,7 @@ name: Nicolas Benavides
 social: https://www.linkedin.com/in/nicolas-bs/
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - book-list-comps
 published: true
 ---

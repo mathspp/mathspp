@@ -5,7 +5,7 @@ name: Robert
 # link:
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - book-list-comps
 published: true
 ---

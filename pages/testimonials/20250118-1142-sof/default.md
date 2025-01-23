@@ -6,7 +6,7 @@ name: Sof
 social: https://x.com/at_sofdog
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - conference-tutorial
 published: true
 ---

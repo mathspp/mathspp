@@ -6,7 +6,7 @@ link: https://www.linkedin.com/posts/matteorenoldi_pythonprogramming-pythondevel
 social: https://www.linkedin.com/in/matteorenoldi/
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - newsletter
 published: true
 ---

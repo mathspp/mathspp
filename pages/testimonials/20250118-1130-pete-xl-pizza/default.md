@@ -6,7 +6,7 @@ name: Pete XL Pizza
 social: https://x.com/peteXLarge
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - conference-talk
 published: true
 ---
