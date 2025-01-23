@@ -6,7 +6,7 @@ repos:
       - id: compute-blog-stats
         name: Compute blog stats
         description: "Computes summary statistics across blog posts and tags."
-        entry: uv run tools/compute_stats.py && git add tools/*.json
+        entry: bash -c "uv run tools/compute_stats.py && git add -u"
         language: system
         files: '^pages/02\.blog/.*item.*$|^pages/02\.blog/.*frontmatter.*$'
         stages: [pre-commit]
@@ -15,7 +15,7 @@ repos:
       - id: render-thumbnails
         name: Render thumbnails
         description: "Renders the thumbnails for all tag pages and for the main blog page."
-        entry: uv run tools/render_thumbnails.py && git add pages/02.blog/**/*.webp tools/*.json
+        entry: bash -c "uv run tools/render_thumbnails.py && git add -u"
         language: system
         files: '^pages/02\.blog/.*item.*$|^pages/02\.blog/.*frontmatter.*$'
         stages: [pre-commit]
@@ -24,7 +24,7 @@ repos:
       - id: update-main-stats
         name: Update main blog stats
         description: "Updates the stats shown in the main blog page and in the main tags page."
-        entry: uv run tools/update_main_stats.py && git add pages/02.blog/blog.md pages/02.blog/00.tags/_stats/features.md
+        entry: bash -c "uv run tools/update_main_stats.py && git add -u"
         language: system
         files: '^pages/02\.blog/.*item.*$|^pages/02\.blog/.*frontmatter.*$'
         stages: [pre-commit]
