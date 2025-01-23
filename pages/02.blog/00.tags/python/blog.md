@@ -14,10 +14,10 @@ hero_image_url: /user/themes/myquark/images/common_hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 metadata:
     author: Rodrigo Girão Serrão
-    description: "All of the mathspp blog articles about python."
-    og:description: "All of the mathspp blog articles about python."
-    og:image: "https://mathspp.com/blog/tags/python/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/python/thumbnail.webp"
+    description: "All of the mathspp blog articles about Python."
+    og:description: "All of the mathspp blog articles about Python."
+    og:image: "https://mathspp.com/blog/tags/Python/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/Python/thumbnail.webp"
 title: "Python blog articles"
 ---
 
@@ -28,9 +28,9 @@ title: "Python blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">267</th>
-            <th style="text-align: center;">336,912</th>
-            <th style="text-align: center;">33,355</th>
+            <th style="text-align: center;">268</th>
+            <th style="text-align: center;">337,120</th>
+            <th style="text-align: center;">33,392</th>
         </tr>
     </thead>
     <tbody>

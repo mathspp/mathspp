@@ -5347,5 +5347,19 @@
       "loc": 19,
       "words": 394
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/114.implicit-casting-in-dataframe-concatenation": {
+    "timestamp": 1737659627.4824367,
+    "tags": [
+      "polars",
+      "programming",
+      "python"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 6,
+      "loc": 37,
+      "words": 208
+    }
   }
 }

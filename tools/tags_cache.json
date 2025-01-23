@@ -1,9 +1,9 @@
 {
   "__all": {
-    "articles": 380,
-    "code_snippets": 3665,
-    "loc": 35049,
-    "words": 418662
+    "articles": 381,
+    "code_snippets": 3671,
+    "loc": 35086,
+    "words": 418870
   },
   "bpci": {
     "articles": 9,
@@ -24,16 +24,16 @@
     "words": 34229
   },
   "programming": {
-    "articles": 282,
-    "code_snippets": 3551,
-    "loc": 34067,
-    "words": 344714
+    "articles": 283,
+    "code_snippets": 3557,
+    "loc": 34104,
+    "words": 344922
   },
   "python": {
-    "articles": 267,
-    "code_snippets": 3455,
-    "loc": 33355,
-    "words": 336912
+    "articles": 268,
+    "code_snippets": 3461,
+    "loc": 33392,
+    "words": 337120
   },
   "algorithms": {
     "articles": 22,
@@ -509,6 +509,12 @@
     "loc": 163,
     "words": 1293
   },
+  "polars": {
+    "articles": 2,
+    "code_snippets": 10,
+    "loc": 77,
+    "words": 430
+  },
   "concurrency": {
     "articles": 3,
     "code_snippets": 21,
@@ -568,11 +574,5 @@
     "code_snippets": 1,
     "loc": 14,
     "words": 198
-  },
-  "polars": {
-    "articles": 1,
-    "code_snippets": 4,
-    "loc": 40,
-    "words": 222
   }
 }
