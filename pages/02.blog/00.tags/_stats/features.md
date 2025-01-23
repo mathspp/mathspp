@@ -1,10 +1,22 @@
 ---
 class: offset-box
-process:
-    twig: true
-twig_first: true
 ---
 
 <p>I use tags to help me categorise all of the articles in my blog:</p>
 
-{% include "partials/blog/stats.html.twig" %}
+<table class="stats-table">
+    <thead>
+        <tr>
+            <th style="text-align: center;">380</th>
+            <th style="text-align: center;">418,662</th>
+            <th style="text-align: center;">35,049</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: center;">articles</td>
+            <td style="text-align: center;">words</td>
+            <td style="text-align: center;">lines of code</td>
+        </tr>
+    </tbody>
+</table>
