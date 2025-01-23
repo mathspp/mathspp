@@ -11,6 +11,7 @@ slug: "functools-partial"
 taxonomy:
     category: "blogpost"
     tag:
+      - fp
       - modules
       - programming
       - python
