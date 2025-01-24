@@ -595,3 +595,20 @@ table.stats-table thead {
     color: #f8f8f2;
     border-bottom: 0;
 }
+
+a.glossary::after {
+    content: "\f02d";
+    /* Unicode for the Font Awesome book icon */
+    font-family: "Font Awesome 5 Free";
+    /* Ensure you're using the correct Font Awesome font */
+    font-weight: 900;
+    /* Font Awesome requires this for solid icons */
+    margin-left: 0.5em;
+    /* Space between text and icon */
+    font-size: 0.8em;
+    /* Adjust icon size if needed */
+    color: #0077cc;
+    /* Optional: set the icon color */
+    vertical-align: middle;
+    /* Align the icon with the text */
+}

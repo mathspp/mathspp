@@ -3,7 +3,7 @@
 ## Index
 
 - A
-  - [annotation](#annotation)
+  - [annotation](#annotation){.glossary}
   - [anonymous function](#anonymous-function)
   - [attribute](#attribute)
 - B
