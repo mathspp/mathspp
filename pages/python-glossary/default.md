@@ -1,4 +1,4 @@
-# Python Glossary
+# Python glossary
 
 ## Index
 
