@@ -65,5 +65,5 @@ global (variable)
 
 ## L
 
-literal
+literal  {#literal}
 : a piece of code that spells out a value of a built-in type. For example, `"Hello, world!"` is a string literal, `12.34` is a float literal, and `[True, {}]` is a list literal with two other literals inside.
