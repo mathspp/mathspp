@@ -1,9 +1,9 @@
 {
   "__all": {
-    "articles": 381,
-    "code_snippets": 3671,
-    "loc": 35086,
-    "words": 418870
+    "articles": 382,
+    "code_snippets": 3672,
+    "loc": 35102,
+    "words": 419096
   },
   "bpci": {
     "articles": 9,
@@ -27,13 +27,13 @@
     "articles": 283,
     "code_snippets": 3557,
     "loc": 34104,
-    "words": 344922
+    "words": 344923
   },
   "python": {
-    "articles": 268,
-    "code_snippets": 3461,
-    "loc": 33392,
-    "words": 337120
+    "articles": 269,
+    "code_snippets": 3462,
+    "loc": 33408,
+    "words": 337346
   },
   "algorithms": {
     "articles": 22,
@@ -63,13 +63,13 @@
     "articles": 13,
     "code_snippets": 51,
     "loc": 1147,
-    "words": 7423
+    "words": 7424
   },
   "scripting": {
     "articles": 8,
     "code_snippets": 38,
     "loc": 592,
-    "words": 4881
+    "words": 4882
   },
   "mathematics": {
     "articles": 120,
@@ -189,7 +189,7 @@
     "articles": 20,
     "code_snippets": 142,
     "loc": 1454,
-    "words": 15440
+    "words": 15441
   },
   "logic": {
     "articles": 33,
@@ -207,7 +207,7 @@
     "articles": 4,
     "code_snippets": 10,
     "loc": 363,
-    "words": 7678
+    "words": 7679
   },
   "geometry": {
     "articles": 15,
@@ -411,7 +411,7 @@
     "articles": 1,
     "code_snippets": 9,
     "loc": 350,
-    "words": 1144
+    "words": 1145
   },
   "json": {
     "articles": 5,

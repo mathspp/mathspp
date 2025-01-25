@@ -5302,7 +5302,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/using-an-llm-to-write-a-countdown-timer": {
-    "timestamp": 1737579300.638072,
+    "timestamp": 1737828358.5943131,
     "tags": [
       "llm",
       "opinion",
@@ -5316,7 +5316,7 @@
       "articles": 1,
       "code_snippets": 9,
       "loc": 350,
-      "words": 1144
+      "words": 1145
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/112.re-match-groupdict": {
@@ -5360,6 +5360,18 @@
       "code_snippets": 6,
       "loc": 37,
       "words": 208
+    }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/115.nested-easter-eggs": {
+    "timestamp": 1737830390.9086876,
+    "tags": [
+      "python"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 1,
+      "loc": 16,
+      "words": 225
     }
   }
 }
