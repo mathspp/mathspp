@@ -1,0 +1,18 @@
+date: 25-01-2025 18:31
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned that Python has nested Easter eggs in the standard library."
+    og:image: "https://mathspp.com/blog/nested-easter-eggs/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/nested-easter-eggs/thumbnail.webp"
+references:
+  - "The History of Python, “import antigravity”, [http://python-history.blogspot.com/2010/06/import-antigravity.html](http://python-history.blogspot.com/2010/06/import-antigravity.html) [last accessed 25-01-2025];"
+routes:
+    aliases:
+        - "/blog/til/115"
+slug: "nested-easter-eggs"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - python
+title: "TIL #115 – Nested Easter eggs"
+visible: false
