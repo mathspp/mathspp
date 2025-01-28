@@ -18,10 +18,10 @@
     "words": 34229
   },
   "programming": {
-    "articles": 283,
-    "code_snippets": 3557,
-    "loc": 34104,
-    "words": 344923
+    "articles": 284,
+    "code_snippets": 3559,
+    "loc": 34134,
+    "words": 345103
   },
   "python": {
     "articles": 269,
@@ -180,10 +180,10 @@
     "words": 9085
   },
   "productivity": {
-    "articles": 20,
-    "code_snippets": 142,
-    "loc": 1454,
-    "words": 15441
+    "articles": 21,
+    "code_snippets": 144,
+    "loc": 1484,
+    "words": 15621
   },
   "logic": {
     "articles": 33,
@@ -564,10 +564,10 @@
     "words": 430
   },
   "__all": {
-    "articles": 382,
-    "code_snippets": 3672,
-    "loc": 35102,
-    "words": 419096
+    "articles": 383,
+    "code_snippets": 3674,
+    "loc": 35132,
+    "words": 419276
   },
   "fp": {
     "articles": 3,
