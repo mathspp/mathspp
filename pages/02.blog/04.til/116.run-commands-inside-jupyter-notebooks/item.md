@@ -51,3 +51,6 @@ from itertools import count
 for number in range(100):
     print(number)
 ```
+
+EDIT: someone on social media explained that these are called "magic commands". You can run arbitrary shell commands with `!` instead of `%` and you can get the output back into a Python variable.
+For example, `contents = !cat writer.py` will store the output of the shell command `cat writer.py` in the variable `contents`.
