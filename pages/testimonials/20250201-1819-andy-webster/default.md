@@ -8,7 +8,7 @@ taxonomy:
     category: review
     tag:
       - newsletter
-published: false
+published: true
 ---
 
-The newsletter is a small, digestible, quality bite of python learning.   It is a great way to quickly learn something new.
+The newsletter is a small, digestible, quality bite of python learning. It is a great way to quickly learn something new.

@@ -7,8 +7,8 @@ social:
 taxonomy:
     category: review
     tag:
-      - book-pydonts
-published: false
+      - blog
+published: true
 ---
 
-I love the deep dive articles on various Python topics, helps me level up my skills as a Junior developer. 
+I love the deep dive articles on various Python topics, <span>helps me level up my skills</span> as a Junior developer. 

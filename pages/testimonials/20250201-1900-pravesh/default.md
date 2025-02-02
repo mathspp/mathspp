@@ -7,8 +7,8 @@ social:
 taxonomy:
     category: review
     tag:
-      - book-pydonts
-published: false
+      - newsletter
+published: true
 ---
 
-I really enjoy your newsletter and it at least helps me to code a little Python every other week.  I feel fresh.
+I really enjoy your newsletter and it at least helps me to code a little Python every other week. I feel fresh.
