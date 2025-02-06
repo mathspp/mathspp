@@ -9,9 +9,6 @@ title: "Dynamic table highlighting with CSS :has"
 ---
 
 In this BlueSky post the user shows some crazy CSS that allows for dynamic table highlighting.
-Using the CSS shown, plus other bits that I inferred were missing, I styled the table below to show this off.
-If you're on a desktop, hover your mouse around the table.
-
 The CSS included in that post was this:
 
 ```css
@@ -23,7 +20,9 @@ td:nth-of-type(3) {
 }
 ```
 
-After removing the `:not(:first-of-type)` because I have proper table headers, the CSS seems to do the highlighting well for any row but only works for the 3rd column, as the example table below shows:
+This CSS should highlight a row up to the cell that is hovered and it should also highlight a column up to the cell that is hovered.
+After removing the `:not(:first-of-type)` because I have proper table headers, the CSS seems to do the highlighting well for any row but only works for the 3rd column, as the example table below shows.
+I'm not sure yet if there's a way to _not_ hardcode the 3 in the CSS to work for any column independently or if I'd have to write selectors explicitly for all columns.
 
 <style>
     :root {
