@@ -70,9 +70,9 @@ td:nth-of-type(3) {
     }
 
     td:has(~ td:hover), /* previous sibling cells */
-    table:has(td:nth-of-type(n):hover) /* column cells */
+    table:has(td:nth-of-type(3):hover) /* column cells */
     tr:not(:first-of-type):has(~ tr:hover)
-    td:nth-of-type(n) {
+    td:nth-of-type(3) {
         background: var(--yellow);
     }
 
@@ -82,11 +82,11 @@ td:nth-of-type(3) {
         color: var(--bg);
     }
 
-    /* Highlight the corresponding column header */
+    /* Highlight the corresponding column header
     table:has(td:hover) th:nth-child(n) {
         background-color: var(--pink);
         color: var(--fg);
-    }
+    } */
 </style>
 
 <table>
