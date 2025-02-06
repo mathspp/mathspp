@@ -12,6 +12,17 @@ In this BlueSky post the user shows some crazy CSS that allows for dynamic table
 Using the CSS shown, plus other bits that I inferred were missing, I styled the table below to show this off.
 If you're on a desktop, hover your mouse around the table.
 
+The CSS included in that post was this:
+
+```CSS
+td:has(~ td:hover), /* previous sibling cells */
+table:has(td:nth-of-type(3):hover) /* column cells */
+tr:not(:first-of-type):has(~ tr:hover)
+td:nth-of-type(3) {
+  background: var(--highlighted);
+}
+```
+
 <style>
     /* Dracula Theme Colors */
     :root {
@@ -65,6 +76,13 @@ If you're on a desktop, hover your mouse around the table.
     td {
         cursor: pointer;
         transition: background-color 0.3s;
+    }
+
+    td:has(~ td:hover), /* previous sibling cells */
+    table:has(td:nth-of-type(3):hover) /* column cells */
+    tr:not(:first-of-type):has(~ tr:hover)
+    td:nth-of-type(3) {
+        background: var(--yellow);
     }
 
     /* Highlight hovered cell */
