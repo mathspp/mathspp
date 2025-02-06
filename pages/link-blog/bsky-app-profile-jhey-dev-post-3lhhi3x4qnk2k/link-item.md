@@ -1,0 +1,110 @@
+---
+# author:
+date: 06-02-2025 17:42
+link: https://bsky.app/profile/jhey.dev/post/3lhhi3x4qnk2k
+taxonomy:
+    category: link
+title: "Dynamic table highlighting with CSS :has"
+# via:
+---
+
+In this BlueSky post the user shows some crazy CSS that allows for dynamic table highlighting.
+Using the CSS shown, plus other bits that I inferred were missing, I styled the table below to show this off.
+If you're on a desktop, hover your mouse around the table.
+
+<style>
+    /* Dracula Theme Colors */
+    :root {
+        --bg: #282a36;
+        --fg: #f8f8f2;
+        --comment: #6272a4;
+        --cyan: #8be9fd;
+        --green: #50fa7b;
+        --orange: #ffb86c;
+        --pink: #ff79c6;
+        --purple: #bd93f9;
+        --red: #ff5555;
+        --yellow: #f1fa8c;
+    }
+
+    body {
+        background-color: var(--bg);
+        color: var(--fg);
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+    }
+
+    table {
+        width: 60%;
+        margin: 0 auto;
+        border-collapse: collapse;
+        box-shadow: 0 0 10px var(--comment);
+    }
+
+    th, td {
+        padding: 10px;
+        border: 1px solid var(--comment);
+        text-align: center;
+    }
+
+    th {
+        background-color: var(--purple);
+        color: var(--bg);
+        font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+        background-color: var(--comment);
+    }
+
+    tr:nth-child(odd) {
+        background-color: var(--bg);
+    }
+
+    td {
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Highlight hovered cell */
+    td:hover {
+        background-color: var(--yellow);
+        color: var(--bg);
+    }
+
+    /* Highlight the corresponding column header */
+    table:has(td:hover) th:nth-child(n) {
+        background-color: var(--pink);
+        color: var(--fg);
+    }
+</style>
+
+<table>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>English</th>
+            <th>Portuguese</th>
+            <th>French</th>
+            <th>German</th>
+            <th>Italian</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td><td>January</td><td>Janeiro</td><td>Janvier</td><td>Januar</td><td>Gennaio</td></tr>
+        <tr><td>2</td><td>February</td><td>Fevereiro</td><td>Février</td><td>Februar</td><td>Febbraio</td></tr>
+        <tr><td>3</td><td>March</td><td>Março</td><td>Mars</td><td>März</td><td>Marzo</td></tr>
+        <tr><td>4</td><td>April</td><td>Abril</td><td>Avril</td><td>April</td><td>Aprile</td></tr>
+        <tr><td>5</td><td>May</td><td>Maio</td><td>Mai</td><td>Mai</td><td>Maggio</td></tr>
+        <tr><td>6</td><td>June</td><td>Junho</td><td>Juin</td><td>Juni</td><td>Giugno</td></tr>
+        <tr><td>7</td><td>July</td><td>Julho</td><td>Juillet</td><td>Juli</td><td>Luglio</td></tr>
+        <tr><td>8</td><td>August</td><td>Agosto</td><td>Août</td><td>August</td><td>Agosto</td></tr>
+        <tr><td>9</td><td>September</td><td>Setembro</td><td>Septembre</td><td>September</td><td>Settembre</td></tr>
+        <tr><td>10</td><td>October</td><td>Outubro</td><td>Octobre</td><td>Oktober</td><td>Ottobre</td></tr>
+        <tr><td>11</td><td>November</td><td>Novembro</td><td>Novembre</td><td>November</td><td>Novembre</td></tr>
+        <tr><td>12</td><td>December</td><td>Dezembro</td><td>Décembre</td><td>Dezember</td><td>Dicembre</td></tr>
+    </tbody>
+</table>
+
+
