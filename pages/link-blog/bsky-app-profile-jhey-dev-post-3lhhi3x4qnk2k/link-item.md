@@ -25,76 +25,11 @@ td:nth-of-type(3) {
 
 <style>
     /* Dracula Theme Colors */
-    :root {
-        --bg: #282a36;
-        --fg: #f8f8f2;
-        --comment: #6272a4;
-        --cyan: #8be9fd;
-        --green: #50fa7b;
-        --orange: #ffb86c;
-        --pink: #ff79c6;
-        --purple: #bd93f9;
-        --red: #ff5555;
-        --yellow: #f1fa8c;
-    }
-
-    table {
-        width: 60%;
-        margin: 0 auto;
-        border-collapse: collapse;
-        box-shadow: 0 0 10px var(--comment);
-    }
-
-    th, td {
-        padding: 10px;
-        border: 1px solid var(--comment);
-        text-align: center;
-    }
-
-    th {
-        background-color: var(--purple);
-        color: var(--bg);
-        font-weight: bold;
-    }
-
-    tr:nth-child(even) {
-        background-color: var(--comment);
-    }
-
-    tr:nth-child(odd) {
-        background-color: var(--bg);
-    }
-
-    td {
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
-
-    /* Highlight the entire row when a cell is hovered */
-    tr:has(td:hover) td {
-        background-color: var(--yellow);
-    }
-
-    /* Highlight the entire column when a cell is hovered */
-    table:has(td:hover) td:nth-child(1),
-    table:has(td:hover) td:nth-child(2),
-    table:has(td:hover) td:nth-child(3),
-    table:has(td:hover) td:nth-child(4),
-    table:has(td:hover) td:nth-child(5),
-    table:has(td:hover) td:nth-child(6) {
-        background-color: var(--yellow);
-    }
-
-    /* Ensure the hovered cell is distinctly visible */
-    td:hover {
-        background-color: var(--red);
-        color: var(--bg);
-    }
-
-    /* Highlight the corresponding column header */
-    table:has(td:hover) th:nth-child(n) {
-        background-color: var(--pink);
-        color: var(--fg);
+    td:has(~ td:hover), /* previous sibling cells */
+    table:has(td:nth-of-type(3):hover) /* column cells */
+    tr:not(:first-of-type):has(~ tr:hover)
+    td:nth-of-type(3) {
+        background: var(--highlighted);
     }
 </style>
 
