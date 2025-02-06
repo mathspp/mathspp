@@ -30,12 +30,12 @@ td:nth-of-type(3) {
 
     /* Dracula Theme Colors */
     td:has(~ td:hover), /* previous sibling cells */
-    table:has(td:nth-of-type(3):hover) /* column cells */
+    table:has(td:nth-of-type(1):hover) /* column cells */
     tr:has(~ tr:hover)
-    td:nth-of-type(3), /* previous sibling cells */
-    table:has(td:nth-of-type(3):hover) /* column cells */
+    td:nth-of-type(1), /* previous sibling cells */
+    table:has(td:nth-of-type(2):hover) /* column cells */
     tr:has(~ tr:hover)
-    td:nth-of-type(3), /* previous sibling cells */
+    td:nth-of-type(2), /* previous sibling cells */
     table:has(td:nth-of-type(3):hover) /* column cells */
     tr:has(~ tr:hover)
     td:nth-of-type(3) {
