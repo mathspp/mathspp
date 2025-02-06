@@ -70,9 +70,9 @@ td:nth-of-type(3) {
     }
 
     td:has(~ td:hover), /* previous sibling cells */
-    table:has(td:nth-of-type(3):hover) /* column cells */
+    table:has(td:nth-of-type(n):hover) /* column cells */
     tr:not(:first-of-type):has(~ tr:hover)
-    td:nth-of-type(3) {
+    td:nth-of-type(n) {
         background: var(--yellow);
     }
 
