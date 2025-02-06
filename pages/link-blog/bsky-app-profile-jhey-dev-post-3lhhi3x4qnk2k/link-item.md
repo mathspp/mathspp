@@ -38,14 +38,6 @@ td:nth-of-type(3) {
         --yellow: #f1fa8c;
     }
 
-    body {
-        background-color: var(--bg);
-        color: var(--fg);
-        font-family: Arial, sans-serif;
-        text-align: center;
-        padding: 20px;
-    }
-
     table {
         width: 60%;
         margin: 0 auto;
