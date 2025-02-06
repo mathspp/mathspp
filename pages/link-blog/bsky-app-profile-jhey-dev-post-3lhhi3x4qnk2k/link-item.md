@@ -23,19 +23,14 @@ td:nth-of-type(3) {
 }
 ```
 
+After removing the `:not(:first-of-type)` because I have proper table headers, the CSS seems to do the highlighting well for any row but only works for the 3rd column, as the example table below shows:
+
 <style>
     :root {
-        --highlighted: #f8f8f2;
+        --highlighted: yellow;
     }
 
-    /* Dracula Theme Colors */
     td:has(~ td:hover), /* previous sibling cells */
-    table:has(td:nth-of-type(1):hover) /* column cells */
-    tr:has(~ tr:hover)
-    td:nth-of-type(1), /* previous sibling cells */
-    table:has(td:nth-of-type(2):hover) /* column cells */
-    tr:has(~ tr:hover)
-    td:nth-of-type(2), /* previous sibling cells */
     table:has(td:nth-of-type(3):hover) /* column cells */
     tr:has(~ tr:hover)
     td:nth-of-type(3) {
