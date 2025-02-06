@@ -14,12 +14,12 @@ If you're on a desktop, hover your mouse around the table.
 
 The CSS included in that post was this:
 
-```CSS
+```css
 td:has(~ td:hover), /* previous sibling cells */
 table:has(td:nth-of-type(3):hover) /* column cells */
 tr:not(:first-of-type):has(~ tr:hover)
 td:nth-of-type(3) {
-  background: var(--highlighted);
+    background: var(--highlighted);
 }
 ```
 
@@ -38,19 +38,10 @@ td:nth-of-type(3) {
         --yellow: #f1fa8c;
     }
 
-    body {
-        background-color: var(--bg);
-        color: var(--fg);
-        font-family: Arial, sans-serif;
-        text-align: center;
-        padding: 20px;
-    }
-
     table {
         width: 60%;
         margin: 0 auto;
         border-collapse: collapse;
-        box-shadow: 0 0 10px var(--comment);
     }
 
     th, td {
