@@ -69,24 +69,35 @@ td:nth-of-type(3) {
         transition: background-color 0.3s;
     }
 
-    td:has(~ td:hover), /* previous sibling cells */
-    table:has(td:nth-of-type(3):hover) /* column cells */
-    tr:not(:first-of-type):has(~ tr:hover)
-    td:nth-of-type(3) {
-        background: var(--yellow);
+    /* Highlight the entire column when a cell is hovered */
+    table:has(td:hover) td:nth-child(n),
+    table:has(td:hover) th:nth-child(n) {
+        background-color: var(--yellow);
     }
 
-    /* Highlight hovered cell */
+    /* Ensure the hovered cell is distinctly visible */
     td:hover {
         background-color: var(--yellow);
         color: var(--bg);
     }
 
-    /* Highlight the corresponding column header
+    /* Highlight the entire row */
+    tr:has(td:hover) td {
+        background-color: var(--yellow);
+    }
+
+    /* Ensure the column is highlighted when hovering over a cell */
+    table:has(td:hover) td:nth-child(odd),
+    table:has(td:hover) td:nth-child(even) {
+        background-color: var(--yellow);
+    }
+
+    /* Highlight the corresponding column header */
     table:has(td:hover) th:nth-child(n) {
         background-color: var(--pink);
         color: var(--fg);
-    } */
+    }
+
 </style>
 
 <table>
