@@ -24,6 +24,10 @@ td:nth-of-type(3) {
 ```
 
 <style>
+    :root {
+        --highlighted: #f8f8f2;
+    }
+
     /* Dracula Theme Colors */
     td:has(~ td:hover), /* previous sibling cells */
     table:has(td:nth-of-type(3):hover) /* column cells */
