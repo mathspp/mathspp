@@ -8,8 +8,8 @@ taxonomy:
     category: review
     tag:
       - newsletter
-published: false
+published: true
 ---
 
-I always look forward to your newsletters which are very interesting and informative.
-Your style of writing is also a delight to read
+I always look forward to <span>your newsletters which are very interesting and informative</span>.
+Your style of writing is also a delight to read.

@@ -8,7 +8,7 @@ taxonomy:
     category: review
     tag:
       - newsletter
-published: false
+published: true
 ---
 
-I really enjoy Mathspp newsletter, have gone through many of the blogs as well, they're very insightful and informative. Pydon't is on my reading list next, and I already know it'll gonna be amazing.
+I really enjoy the Mathspp newsletter, have gone through many of the blogs as well, <span>they're very insightful and informative</span>. Pydon'ts is on my reading list next, and I already know it'll be amazing.
