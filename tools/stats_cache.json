@@ -5386,5 +5386,18 @@
       "loc": 30,
       "words": 234
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/ignoring-exceptions-with-contextlib-suppress": {
+    "timestamp": 1739203084.47877,
+    "tags": [
+      "programming",
+      "python"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 5,
+      "loc": 26,
+      "words": 616
+    }
   }
 }

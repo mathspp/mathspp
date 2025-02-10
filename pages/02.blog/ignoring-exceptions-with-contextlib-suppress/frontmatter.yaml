@@ -1,0 +1,16 @@
+date: 10-02-2025 16:46
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "You can ignore exceptions with `contextlib.suppress` and in this article I show why this is preferred over `try: ... except: pass`."
+    og:image: "https://mathspp.com/blog/ignoring-exceptions-with-contextlib-suppress/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/ignoring-exceptions-with-contextlib-suppress/thumbnail.webp"
+references:
+  - "Python 3.13 Documentation, The Python Standard Library, `contextlib.suppress` [http://docs.python.org/3/library/contextlib.html#contextlib.suppress](http://docs.python.org/3/library/contextlib.html#contextlib.suppress) [last accessed 10-02-2025];"
+slug: "ignoring-exceptions-with-contextlib-suppress"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - programming
+        - python
+title: Ignoring exceptions with `contextlib.suppress`
