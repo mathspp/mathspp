@@ -18,16 +18,16 @@
     "words": 34229
   },
   "programming": {
-    "articles": 284,
-    "code_snippets": 3559,
-    "loc": 34134,
-    "words": 345157
+    "articles": 285,
+    "code_snippets": 3564,
+    "loc": 34160,
+    "words": 345773
   },
   "python": {
-    "articles": 269,
-    "code_snippets": 3462,
-    "loc": 33408,
-    "words": 337346
+    "articles": 270,
+    "code_snippets": 3467,
+    "loc": 33434,
+    "words": 337962
   },
   "algorithms": {
     "articles": 22,
@@ -564,10 +564,10 @@
     "words": 430
   },
   "__all": {
-    "articles": 383,
-    "code_snippets": 3674,
-    "loc": 35132,
-    "words": 419330
+    "articles": 384,
+    "code_snippets": 3679,
+    "loc": 35158,
+    "words": 419946
   },
   "fp": {
     "articles": 3,
