@@ -5399,5 +5399,20 @@
       "loc": 26,
       "words": 616
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/using-uv-to-build-and-install-python-cli-apps": {
+    "timestamp": 1739301757.5294442,
+    "tags": [
+      "programming",
+      "python",
+      "scripting",
+      "uv"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 16,
+      "loc": 71,
+      "words": 1602
+    }
   }
 }

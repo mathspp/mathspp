@@ -18,16 +18,16 @@
     "words": 34229
   },
   "programming": {
-    "articles": 285,
-    "code_snippets": 3564,
-    "loc": 34160,
-    "words": 345773
+    "articles": 286,
+    "code_snippets": 3580,
+    "loc": 34231,
+    "words": 347375
   },
   "python": {
-    "articles": 270,
-    "code_snippets": 3467,
-    "loc": 33434,
-    "words": 337962
+    "articles": 271,
+    "code_snippets": 3483,
+    "loc": 33505,
+    "words": 339564
   },
   "algorithms": {
     "articles": 22,
@@ -60,10 +60,10 @@
     "words": 7424
   },
   "scripting": {
-    "articles": 8,
-    "code_snippets": 38,
-    "loc": 592,
-    "words": 4882
+    "articles": 9,
+    "code_snippets": 54,
+    "loc": 663,
+    "words": 6484
   },
   "mathematics": {
     "articles": 120,
@@ -540,10 +540,10 @@
     "words": 388
   },
   "uv": {
-    "articles": 1,
-    "code_snippets": 7,
-    "loc": 19,
-    "words": 394
+    "articles": 2,
+    "code_snippets": 23,
+    "loc": 90,
+    "words": 1996
   },
   "javascript": {
     "articles": 1,
@@ -564,10 +564,10 @@
     "words": 430
   },
   "__all": {
-    "articles": 384,
-    "code_snippets": 3679,
-    "loc": 35158,
-    "words": 419946
+    "articles": 385,
+    "code_snippets": 3695,
+    "loc": 35229,
+    "words": 421548
   },
   "fp": {
     "articles": 3,

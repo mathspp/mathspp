@@ -1,0 +1,18 @@
+date: 11-02-2025 16:27
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This practical tutorial shows how to use uv to build and install custom Python CLI applications globally on your system."
+    og:image: "https://mathspp.com/blog/using-uv-to-build-and-install-python-cli-apps/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/using-uv-to-build-and-install-python-cli-apps/thumbnail.webp"
+references:
+  - "uv documentation, [https://docs.astral.sh/uv/getting-started/](https://docs.astral.sh/uv/getting-started/) [last accessed 11-02-2025];"
+slug: "using-uv-to-build-and-install-python-cli-apps"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - programming
+        - python
+        - scripting
+        - uv
+title: Using uv to build and install Python CLI apps
