@@ -13,4 +13,4 @@ taxonomy:
     tag:
         - programming
         - python
-title: Ignoring exceptions with `contextlib.suppress`
+title: Ignoring exceptions with contextlib.suppress
