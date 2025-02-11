@@ -6,7 +6,7 @@ name: Goran
 social: 
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - book-pydonts
 published: true
 ---

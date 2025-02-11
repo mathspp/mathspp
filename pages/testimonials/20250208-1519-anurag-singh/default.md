@@ -6,7 +6,7 @@ name: Anurag Singh
 social: https://linkedin.com/in/ashleymavericks/
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - newsletter
 published: true
 ---
