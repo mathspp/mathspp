@@ -41,11 +41,11 @@
     "loc": 2268,
     "words": 25565
   },
-  "chatgpt": {
-    "articles": 4,
-    "code_snippets": 100,
-    "loc": 459,
-    "words": 5626
+  "llm": {
+    "articles": 5,
+    "code_snippets": 109,
+    "loc": 809,
+    "words": 6771
   },
   "machine learning": {
     "articles": 11,
@@ -406,12 +406,6 @@
     "code_snippets": 13,
     "loc": 61,
     "words": 2443
-  },
-  "llm": {
-    "articles": 1,
-    "code_snippets": 9,
-    "loc": 350,
-    "words": 1145
   },
   "json": {
     "articles": 5,

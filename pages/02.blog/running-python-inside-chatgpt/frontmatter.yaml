@@ -8,7 +8,7 @@ metadata:
 taxonomy:
     category: blogpost
     tag:
-      - chatgpt
+      - llm
       - machine learning
       - programming
       - python

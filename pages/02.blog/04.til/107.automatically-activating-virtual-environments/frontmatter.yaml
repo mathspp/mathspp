@@ -12,7 +12,7 @@ slug: "automatically-activating-virtual-environments"
 taxonomy:
     category: [blogpost, til]
     tag:
-      - chatgpt
+      - llm
       - productivity
       - python
       - shell

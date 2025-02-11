@@ -9,8 +9,8 @@ taxonomy:
     category:
         - blogpost
     tag:
-        - chatgpt
         - git
+        - llm
         - productivity
         - programming
         - python

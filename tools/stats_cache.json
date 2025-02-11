@@ -43,9 +43,9 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/running-python-inside-chatgpt": {
-    "timestamp": 1681290754.4252267,
+    "timestamp": 1739273859.0390482,
     "tags": [
-      "chatgpt",
+      "llm",
       "machine learning",
       "programming",
       "python"
@@ -297,9 +297,9 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/chatgpt-for-quick-prototyping": {
-    "timestamp": 1681545260.212732,
+    "timestamp": 1739273843.33532,
     "tags": [
-      "chatgpt",
+      "llm",
       "productivity"
     ],
     "stats": {
@@ -1437,10 +1437,10 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/automatic-site-updates-with-cog-and-pre-commit": {
-    "timestamp": 1723315932.2235131,
+    "timestamp": 1739273871.950256,
     "tags": [
-      "chatgpt",
       "git",
+      "llm",
       "productivity",
       "programming",
       "python",
@@ -4952,9 +4952,9 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/107.automatically-activating-virtual-environments": {
-    "timestamp": 1732041132.0016136,
+    "timestamp": 1739273876.4595094,
     "tags": [
-      "chatgpt",
+      "llm",
       "productivity",
       "python",
       "shell"
