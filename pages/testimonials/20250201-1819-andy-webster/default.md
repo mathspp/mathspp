@@ -6,7 +6,7 @@ name: Andy Webster
 social: https://x.com/awframpton
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - newsletter
 published: true
 ---

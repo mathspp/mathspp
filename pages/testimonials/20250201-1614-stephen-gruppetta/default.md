@@ -6,7 +6,7 @@ name: Stephen Gruppetta
 social: https://stephengruppetta.com
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - newsletter
 published: true
 ---

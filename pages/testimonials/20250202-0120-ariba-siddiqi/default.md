@@ -6,7 +6,7 @@ name: Ariba Siddiqi
 social: 
 taxonomy:
     category: review
-    tag:
+    review-tag:
       - blog
 published: true
 ---
