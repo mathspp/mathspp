@@ -38,8 +38,7 @@
 }
 
 .review-content {
-    margin-top: 0;
-    text-align: justify;
+    text-align: left;
     overflow: hidden;
 }
 
@@ -47,9 +46,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 10px;
     font-size: 0.9em;
-    margin-top: 15px;
 }
 
 .review-meta p {
