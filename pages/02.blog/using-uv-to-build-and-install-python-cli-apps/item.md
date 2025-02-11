@@ -276,4 +276,4 @@ Here is an example I ran from a random directory in my system:
 This short workflow will make it easy for you to take your Python scripts and tools and make them available to you in a structured way, without you having to cram everything into a single folder called `my_tools` or something of the sort.
 
 As I learn more about uv, I'll keep sharing tips and tricks!
-You can [look for blog articles tagged with “uv”](/blog/tag:uv) to learn more.
+You can [look for blog articles tagged with “uv”](/blog/tags/uv) to learn more.
