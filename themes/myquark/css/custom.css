@@ -318,6 +318,7 @@ blockquote {
 /* Background colour for button classes like the "Random Article" button or the "Subscribe the newsletter". */
 .button,
 .btn {
+    color: var(--accent);
     background: var(--bg);
     border: .05rem solid var(--accent);
 }
@@ -325,6 +326,12 @@ blockquote {
 .btn:hover,
 .button:hover {
     background: var(--bg-2);
+}
+
+.btn:focus,
+.button:focus {
+    color: var(--bg);
+    background: var(--tx);
 }
 
 /* Background colour for blog tags. */
