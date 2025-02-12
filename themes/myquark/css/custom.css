@@ -708,11 +708,15 @@ details {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: .7rem;
     color: var(--fg);
     transition: color 0.3s;
 }
 
 #theme-toggle:hover {
     opacity: 0.8;
+}
+
+.dropmenu ul li a::before {
+    font-family: "Font Awesome 5 Free";
 }
