@@ -1,4 +1,4 @@
-:root {
+[data-theme="light"] {
     /* Flexoki colours https://stephango.com/flexoki */
     --bg: #FFFCF0;
     --bg-2: #F2F0E5;
@@ -28,7 +28,7 @@
     --accent-2: var(--pu);
 }
 
-[data-theme="dark"] {
+:root {
     /* Flexoki colours https://stephango.com/flexoki */
     --bg: #100F0F;
     --bg-2: #1C1B1A;
