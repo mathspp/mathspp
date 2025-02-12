@@ -1,5 +1,35 @@
 :root {
     /* Flexoki colours https://stephango.com/flexoki */
+    --bg: #FFFCF0;
+    --bg-2: #F2F0E5;
+    --ui: #E6E4D9;
+    --ui-2: #DAD8CE;
+    --ui-3: #CECDC3;
+    --tx-3: #B7B5AC;
+    --tx-2: #6F6E69;
+    --tx: #100F0F;
+    --re-2: #D14D41;
+    --or-2: #DA702C;
+    --ye-2: #D0A215;
+    --gr-2: #879A39;
+    --cy-2: #3AA99F;
+    --bl-2: #4385BE;
+    --pu-2: #8B7EC8;
+    --ma-2: #CE5D97;
+    --re: #AF3029;
+    --or: #BC5215;
+    --ye: #AD8301;
+    --gr: #66800B;
+    --cy: #24837B;
+    --bl: #205EA6;
+    --pu: #5E409D;
+    --ma: #A02F6F;
+    --accent: var(--ma);
+    --accent-2: var(--pu);
+}
+
+[data-theme="dark"] {
+    /* Flexoki colours https://stephango.com/flexoki */
     --bg: #100F0F;
     --bg-2: #1C1B1A;
     --ui: #282726;
@@ -672,4 +702,17 @@ a.glossary::after {
 
 details {
     margin-bottom: 1.2rem;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--fg);
+    transition: color 0.3s;
+}
+
+#theme-toggle:hover {
+    opacity: 0.8;
 }
