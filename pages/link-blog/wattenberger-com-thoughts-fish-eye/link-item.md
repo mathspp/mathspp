@@ -15,7 +15,7 @@ The story clearly has 10 paragraphs, as indicated by vertical bars on the left o
 As you move the mouse across those bars, the paragraph you're hovering expands into the full text.
 The paragraphs immediately before and after fold into a single-sentence summary, and the group of all paragraphs before that one, and the group of all paragraphs after that one, are also summarised together into a single-sentence summary.
 
-<details>
+<details markdown="1">
 <summary>Screenshot of the story accordion.</summary>
 
 ![A screenshot of the story accordion posted by Amelia Wattenberger.](accordion.webp)
