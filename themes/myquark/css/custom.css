@@ -1,3 +1,33 @@
+:root {
+    /* Flexoki colours https://stephango.com/flexoki */
+    --bg: #100F0F;
+    --bg-2: #1C1B1A;
+    --ui: #282726;
+    --ui-2: #343331;
+    --ui-3: #403E3C;
+    --tx-3: #575653;
+    --tx-2: #878580;
+    --tx: #CECDC3;
+    --re-2: #AF3029;
+    --or-2: #BC5215;
+    --ye-2: #AD8301;
+    --gr-2: #66800B;
+    --cy-2: #24837B;
+    --bl-2: #24837B;
+    --pu-2: #5E409D;
+    --ma-2: #A02F6F;
+    --re: #D14D41;
+    --or: #DA702C;
+    --ye: #D0A215;
+    --gr: #879A39;
+    --cy: #3AA99F;
+    --bl: #4385BE;
+    --pu: #8B7EC8;
+    --ma: #CE5D97;
+    --accent: var(--ma);
+    --accent-2: var(--pu);
+}
+
 /* Add the Atkinson fonts.
 Got help from https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website,
 then generated the WebFont kit with Font Squirrel (https://www.fontsquirrel.com)
@@ -174,7 +204,7 @@ h6,
 .hero h5,
 .hero h6 {
     font-family: "Roboto Serif", serif;
-    color: #f8f8f2;
+    color: var(--tx);
 }
 
 /* Headers in hero sections of modular pages marked with the `text-light` class. */
@@ -186,19 +216,19 @@ h6,
 .hero.text-light h6,
 .hero.text-light i,
 .hero.text-light p {
-    color: #f8f8f2;
+    color: var(--tx);
 }
 
 /* The small titles of features like the last ones in the workshop page. */
 .modular-features .feature-icon h6 {
     scale: 1.2;
-    color: #f8f8f2;
-    background: #191919;
+    color: var(--tx);
+    background: var(--bg);
 }
 
 /* Little "featured" icons, like the ones in the blog. */
 .modular-features.small .feature-icon i {
-    color: #f8f8f2;
+    color: var(--tx);
 }
 
 #sidebar,
@@ -217,7 +247,7 @@ p,
 li,
 label {
     font-family: "Atkinson Hyperlegible", sans-serif;
-    color: #f8f8f2;
+    color: var(--tx);
 }
 
 /* Centre images in blog posts. */
@@ -247,7 +277,13 @@ body p:not(#footer p, .hero p, .feature-content p, .text-center, div.text-center
  * because we are more stubborn then the theme :P */
 nav a,
 .header-dark #header:not(.scrolled) .dropmenu ul ul a {
-    color: #f8f8f2 !important;
+    color: var(--tx) !important;
+}
+
+.dropmenu ul li a.active,
+.dropmenu ul li a:focus,
+.dropmenu ul li a:hover {
+    color: var(--accent-2) !important;
 }
 
 /* Fix the colouring of the same navigation menu when I hover over links. */
@@ -262,64 +298,67 @@ body,
 
 /* This is for the main box in the Workshops page that is "closer" to the screen. */
     {
-    background: #191919;
+    background: var(--bg);
 }
 
 blockquote {
-    border-left-color: #555555;
+    border-left-color: var(--ui);
+    border-left-width: 5px;
 }
 
 #sidebar input {
-    background: #191919;
-    border-color: #555555;
+    background: var(--bg);
+    border-color: var(--bg-2);
 }
 
 #sidebar input:focus {
-    border-color: #478ce0;
+    border-color: var(--accent);
 }
 
 /* Background colour for button classes like the "Random Article" button or the "Subscribe the newsletter". */
 .button,
 .btn {
-    background: #191919;
+    background: var(--bg);
+    border: .05rem solid var(--accent);
 }
 
 .btn:hover,
 .button:hover {
-    background: #202a37;
+    background: var(--bg-2);
 }
 
 /* Background colour for blog tags. */
 .label.label-secondary,
 .label.label-primary,
 .tags .label {
-    background: #202a37;
+    background: var(--ui);
+    color: var(--accent);
 }
 
 /* Colour for the numbers in the Blog archive and for the text in the selected tag in the blog. */
 .label.label-primary {
-    color: #f8f8f2;
+    color: var(--tx);
 }
 
 /* Borders for the pagination numbers at the top of the blog listings. */
 .pagination li {
-    border-color: #333333;
+    border-color: var(--ui);
 }
 
 /* Set the colours for pieces of code. */
 code,
 pre code {
     font-family: "FiraCode Nerd Font Mono";
-    background: #282a36;
-    color: #f8f8f2;
+    background: var(--ui);
+    color: var(--tx);
     font-variant-ligatures: none;
 }
 
 pre code {
     /* Repeat for multiline code. */
     font-family: "FiraCode Nerd Font Mono";
-    background: #282a36;
-    color: #f8f8f2;
+    background: var(--ui);
+    color: var(--tx);
     font-variant-ligatures: none;
 }
 
@@ -337,35 +376,46 @@ code.language-apl {
     line-height: 1.25;
 }
 
-/* Set visited links to a darker shade of blue. */
+a,
 a:visited {
-    color: #3c72b2;
+    color: var(--accent);
+}
+
+a:hover {
+    color: var(--accent-2);
+}
+
+.btn:focus,
+.btn:hover,
+.button:focus,
+.button:hover {
+    border-color: var(--accent-2);
 }
 
 /* Background colour and shadow for the header menu. */
 .dropmenu.animated ul li ul {
-    background: #191919;
-    box-shadow: 0 1px 4px #555555;
+    background: var(--bg);
+    box-shadow: 0 1px 4px var(--bg-2);
 }
 
 #footer {
-    background: #1e1f1f !important;
+    background: var(--bg-2) !important;
     /* Use !important because the footer has the class bg-gray, that sets the colour with !important as well. */
 }
 
 /* Blog post cards with correct background and shadow. */
 .blog-listing .card {
-    background: #1a1919;
-    box-shadow: 0 10px 45px -9px #333333;
+    background: var(--bg-2);
+    box-shadow: 0 10px 45px -9px var(--ui);
 }
 
 .notices.blue {
-    border-left-color: #1a6b83;
-    background: #1d2022;
+    border-left-color: var(--bl);
+    background: var(--bg-2);
 }
 
 .notices.blue>* {
-    color: #288aa6;
+    color: var(--bl);
 }
 
 .notices.green {
@@ -415,7 +465,7 @@ a.headeroffset {
 }
 
 .social-icon {
-    color: #f8f8f2;
+    color: var(--tx);
 }
 
 /* CSS to style "share this blog post" buttons that scroll
@@ -451,7 +501,7 @@ a.headeroffset {
      * For the 488 = 976/2, we found out that 976 is the maximum
      * width that the blog content can take up (as per its CSS). */
     left: calc(50vw - 488px - 5rem);
-    box-shadow: 0 4px 8px #f8f8f220;
+    box-shadow: 0 4px 8px var(--bg-2);
     z-index: 9999;
     cursor: pointer;
     font-weight: 600;
@@ -502,7 +552,7 @@ figure.caption-right figcaption {
    because of interactions with the plugin that adds those icons to external links. */
 a.gumroad-button,
 a.external-link.no-image.gumroad-button {
-    background: #f8f8f2;
+    background: var(--tx);
     color: initial;
 }
 
@@ -514,12 +564,12 @@ table {
     /* Centre the table in the page. */
     margin-right: auto;
     border-collapse: collapse;
-    color: #f8f8f2;
+    color: var(--tx);
 }
 
 thead {
-    color: #ffb86c;
-    border-bottom: thin solid #f8f8f2;
+    color: var(--accent);
+    border-bottom: thin solid var(--tx);
     /* Horizontal line under the header. */
 }
 
@@ -530,13 +580,13 @@ table td {
 }
 
 tbody tr:nth-child(even) {
-    background: #1e1f1f;
+    background: var(--bg-2);
     /* Same colour as footer. */
 }
 
 /* Customise the icons to copy the code blocks to the clipboard. */
 .clipboard-icon {
-    color: #f8f8f2;
+    color: var(--tx);
     position: absolute;
     top: 10px;
     right: 5px;
@@ -565,7 +615,7 @@ pre:hover>div>i.clipboard-icon {
 
 .modular-features.offset-box .frame-box {
     /* Offset box in modular pages. */
-    box-shadow: 0 0 30px 0 rgba(69, 77, 93, .3);
+    box-shadow: 0 0 30px 0 var(--ui);
 }
 
 .modular-text h3 {
@@ -592,7 +642,7 @@ table.stats-table {
 }
 
 table.stats-table thead {
-    color: #f8f8f2;
+    color: var(--tx);
     border-bottom: 0;
 }
 
@@ -607,8 +657,12 @@ a.glossary::after {
     /* Space between text and icon */
     font-size: 0.8em;
     /* Adjust icon size if needed */
-    color: #0077cc;
+    color: var(--bl);
     /* Optional: set the icon color */
     vertical-align: middle;
     /* Align the icon with the text */
+}
+
+details {
+    margin-bottom: 1.2rem;
 }

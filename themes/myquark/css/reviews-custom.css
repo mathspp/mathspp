@@ -17,7 +17,7 @@
 }
 
 .review-card {
-    background-color: #282a36;
+    background-color: var(--ui);
     border-radius: 8px;
     box-shadow: 0 4px 6px rgb(0.1, 0.1, 0.1);
     padding: 20px;
@@ -53,19 +53,13 @@
 }
 
 .review-link {
-    color: #8be9fd;
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s;
 }
 
-.review-link:hover {
-    color: #50fa7b;
-}
-
 .review-content span {
-    background-color: #44475a;
-    color: #f1fa8c;
+    background-color: var(--pu);
     padding: 2px 4px;
     border-radius: 4px;
 }
