@@ -22,7 +22,6 @@
     {% if theme_var('spectre.exp') %}{% do assets.addCss('theme://css-compiled/spectre-exp'~compress)  %}{% endif %}
     {% if theme_var('spectre.icons') %}{%  do assets.addCss('theme://css-compiled/spectre-icons'~compress) %}{% endif %}
     {% do assets.addCss('theme://css-compiled/theme'~compress) %}
-    {% do assets.addCss('theme://css/line-awesome.min.css') %}
     {% do assets.addCss('theme://css/all.min.css', 100) %} {# used this https://discourse.getgrav.org/t/font-awesome-issues/7072/2 to be able to use Font Awesome Brand icons #}
     {# {% do assets.addCss('theme://css/anchors.css') %} custom CSS for link anchors #}
     {% do assets.addCss('theme://css/custom.css') %}
@@ -31,6 +30,7 @@
 
 {% block javascripts %}
     {% do assets.addJs('jquery', 101) %}
+    {% do assets.addJs('theme://js/theme_switcher.js') %}
     {% do assets.addJs('theme://js/jquery.treemenu.js', {group:'bottom'}) %}
     {% do assets.addJs('theme://js/site.js', {group:'bottom'}) %}
     {# {% do assets.addJs('theme://js/anchors.js', {group:'bottom'}) %} #}
@@ -65,6 +65,10 @@
                             {% include 'partials/navigation.html.twig' %}
                         {% endblock %}
                         </nav>
+
+                        <button id="theme-toggle" aria-label="Toggle theme">
+                            <i id="theme-icon" class="fas fa-moon"></i>
+                        </button>
 
                         {% if config.plugins.login.enabled and grav.user.username %}
                             <span class="login-status-wrapper"><i class="fa fa-user"></i> {% include 'partials/login-status.html.twig' %}</span>
