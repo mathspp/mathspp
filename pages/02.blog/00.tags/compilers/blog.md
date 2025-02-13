@@ -14,10 +14,10 @@ hero_image_url: /user/themes/myquark/images/common_hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 metadata:
     author: Rodrigo Girão Serrão
-    description: "All of the mathspp blog articles about compilers."
-    og:description: "All of the mathspp blog articles about compilers."
-    og:image: "https://mathspp.com/blog/tags/compilers/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/compilers/thumbnail.webp"
+    description: "All of the mathspp blog articles about Compilers."
+    og:description: "All of the mathspp blog articles about Compilers."
+    og:image: "https://mathspp.com/blog/tags/Compilers/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/Compilers/thumbnail.webp"
 title: "Compilers blog articles"
 ---
 
@@ -28,9 +28,9 @@ title: "Compilers blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">10</th>
-            <th style="text-align: center;">21,206</th>
-            <th style="text-align: center;">4,180</th>
+            <th style="text-align: center;">11</th>
+            <th style="text-align: center;">22,279</th>
+            <th style="text-align: center;">4,353</th>
         </tr>
     </thead>
     <tbody>

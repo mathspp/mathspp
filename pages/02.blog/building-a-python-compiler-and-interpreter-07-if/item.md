@@ -1066,4 +1066,4 @@ In the next articles we will be looking at adding support for `else` and `elif` 
  - Try to add support for the `while` loop. (You can go crazy and also try to add the keywords `break` and `continue`.)
 
 
-[series-link]: /blog/tag:bpci
+[series-link]: /blog/tags/bpci

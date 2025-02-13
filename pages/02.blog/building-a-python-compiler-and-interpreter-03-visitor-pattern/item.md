@@ -775,4 +775,4 @@ However, given your new knowledge and the new structure of the parser, compiler,
 As a hint, you may want to re-read the small section about how [the grammar rules everything](#the-grammar-rules-everything).
 
 
-[series-link]: /blog/tag:bpci
+[series-link]: /blog/tags/bpci

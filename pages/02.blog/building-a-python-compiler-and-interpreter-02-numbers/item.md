@@ -649,4 +649,4 @@ We will do these things because these operations are conceptually simple while a
  - What about parenthesised expressions?
 
 
-[series-link]: /blog/tag:bpci
+[series-link]: /blog/tags/bpci

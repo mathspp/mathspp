@@ -1194,4 +1194,4 @@ The next steps, for the next few articles, will revolve around statements (makin
  - Change the grammar so that a “number” is actually a number or a variable reference and update the parser accordingly.
 
 
-[series-link]: /blog/tag:bpci
+[series-link]: /blog/tags/bpci
