@@ -311,20 +311,20 @@ nav a,
 .dropmenu ul li a.active,
 .dropmenu ul li a:focus,
 .dropmenu ul li a:hover,
-.treemenu ul li a.active,
-.treemenu ul li a:focus,
-.treemenu ul li a:hover,
+ul.treemenu li a.active,
+ul.treemenu li a:focus,
+ul.treemenu li a:hover,
 #header:not(.scrolled) .dropmenu ul li a:hover,
 #header:not(.scrolled) .dropmenu ul li a.active {
     color: var(--accent-2) !important;
 }
 
-#header,
-body,
-.modular-features.offset-box .frame-box
+#toggle span {
+    background: var(--accent);
+}
 
-/* This is for the main box in the Workshops page that is "closer" to the screen. */
-    {
+#header,
+body {
     background: var(--bg);
 }
 
