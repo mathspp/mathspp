@@ -62,4 +62,9 @@
     background-color: var(--pu);
     padding: 2px 4px;
     border-radius: 4px;
+
+    /* Ensure text inside the highlight is always readable. */
+    p & {
+        color: var(--flexoki-white);
+    }
 }
