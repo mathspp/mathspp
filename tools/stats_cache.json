@@ -1,6 +1,6 @@
 {
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/building-a-python-compiler-and-interpreter-04-arithmetic": {
-    "timestamp": 1699486254.853148,
+    "timestamp": 1739482926.9426806,
     "tags": [
       "bpci",
       "compilers",
@@ -192,7 +192,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/building-a-python-compiler-and-interpreter-08-booleans": {
-    "timestamp": 1699891654.2567627,
+    "timestamp": 1739482926.93818,
     "tags": [
       "bpci",
       "compilers",
@@ -281,7 +281,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/building-a-python-compiler-and-interpreter-03-visitor-pattern": {
-    "timestamp": 1699265431.9792674,
+    "timestamp": 1739482926.9242916,
     "tags": [
       "bpci",
       "compilers",
@@ -471,7 +471,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/building-a-python-compiler-and-interpreter-02-numbers": {
-    "timestamp": 1708075209.370553,
+    "timestamp": 1739482926.9242194,
     "tags": [
       "bpci",
       "programming",
@@ -588,7 +588,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/building-a-python-compiler-and-interpreter-07-if": {
-    "timestamp": 1700176631.7137673,
+    "timestamp": 1739482926.9243143,
     "tags": [
       "bpci",
       "compilers",
@@ -960,7 +960,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/building-a-python-compiler-and-interpreter-05-statements": {
-    "timestamp": 1699634722.8801491,
+    "timestamp": 1739482926.9241748,
     "tags": [
       "bpci",
       "compilers",
@@ -1219,7 +1219,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/building-a-python-compiler-and-interpreter-09-short-circuiting": {
-    "timestamp": 1710849380.730779,
+    "timestamp": 1739482926.924232,
     "tags": [
       "bpci",
       "compilers",
@@ -1360,7 +1360,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/building-a-python-compiler-and-interpreter-06-variables": {
-    "timestamp": 1699556745.06783,
+    "timestamp": 1739482926.9242074,
     "tags": [
       "bpci",
       "compilers",
@@ -5413,6 +5413,36 @@
       "code_snippets": 16,
       "loc": 71,
       "words": 1602
+    }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/building-a-python-compiler-and-interpreter-10-elif-and-else": {
+    "timestamp": 1739483463.9659066,
+    "tags": [
+      "bpci",
+      "compilers",
+      "interpreters",
+      "programming",
+      "python"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 15,
+      "loc": 173,
+      "words": 1073
+    }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/context-managers-with-contextlib-contextmanager": {
+    "timestamp": 1739385466.5775075,
+    "tags": [
+      "dunder methods",
+      "programming",
+      "python"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 4,
+      "loc": 19,
+      "words": 298
     }
   }
 }

@@ -14,10 +14,10 @@ hero_image_url: /user/themes/myquark/images/common_hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 metadata:
     author: Rodrigo Girão Serrão
-    description: "All of the mathspp blog articles about bpci."
-    og:description: "All of the mathspp blog articles about bpci."
-    og:image: "https://mathspp.com/blog/tags/bpci/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/bpci/thumbnail.webp"
+    description: "All of the mathspp blog articles about Bpci."
+    og:description: "All of the mathspp blog articles about Bpci."
+    og:image: "https://mathspp.com/blog/tags/Bpci/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/Bpci/thumbnail.webp"
 title: "Bpci blog articles"
 ---
 
@@ -28,9 +28,9 @@ title: "Bpci blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">9</th>
-            <th style="text-align: center;">21,754</th>
-            <th style="text-align: center;">4,367</th>
+            <th style="text-align: center;">10</th>
+            <th style="text-align: center;">22,827</th>
+            <th style="text-align: center;">4,540</th>
         </tr>
     </thead>
     <tbody>

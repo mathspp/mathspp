@@ -14,10 +14,10 @@ hero_image_url: /user/themes/myquark/images/common_hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 metadata:
     author: Rodrigo Girão Serrão
-    description: "All of the mathspp blog articles about dunder methods."
-    og:description: "All of the mathspp blog articles about dunder methods."
-    og:image: "https://mathspp.com/blog/tags/dunder-methods/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/dunder-methods/thumbnail.webp"
+    description: "All of the mathspp blog articles about Dunder methods."
+    og:description: "All of the mathspp blog articles about Dunder methods."
+    og:image: "https://mathspp.com/blog/tags/Dunder-methods/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/Dunder-methods/thumbnail.webp"
 title: "Dunder methods blog articles"
 ---
 
@@ -28,9 +28,9 @@ title: "Dunder methods blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">13</th>
-            <th style="text-align: center;">21,852</th>
-            <th style="text-align: center;">3,596</th>
+            <th style="text-align: center;">14</th>
+            <th style="text-align: center;">22,150</th>
+            <th style="text-align: center;">3,615</th>
         </tr>
     </thead>
     <tbody>

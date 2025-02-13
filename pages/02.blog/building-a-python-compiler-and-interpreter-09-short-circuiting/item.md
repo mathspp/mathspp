@@ -646,4 +646,4 @@ I still don't really know how I'll do that, so it's something you can look forwa
  - Try to add support for the `while` loop. (You can go crazy and also try to add the keywords `break` and `continue`.)
 
 
-[series-link]: /blog/tag:bpci
+[series-link]: /blog/tags/bpci

@@ -586,4 +586,4 @@ Then, we'll start looking at `if` statements and `while` loops!
  - Change the grammar so that a “number” is actually a number or a variable reference and update the parser accordingly.
 
 
-[series-link]: /blog/tag:bpci
+[series-link]: /blog/tags/bpci

@@ -1,0 +1,17 @@
+date: 13-02-2025 21:44
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "The 10th article of this series adds support for elif and else statements."
+    og:image: "https://mathspp.com/blog/building-a-python-compiler-and-interpreter-10-elif-and-else/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/building-a-python-compiler-and-interpreter-10-elif-and-else/thumbnail.webp"
+slug: "building-a-python-compiler-and-interpreter-10-elif-and-else"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - bpci
+        - compilers
+        - interpreters
+        - programming
+        - python
+title: Building a Python compiler and interpreter – 10 elif and else

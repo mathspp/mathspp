@@ -1,33 +1,33 @@
 {
   "bpci": {
-    "articles": 9,
-    "code_snippets": 334,
-    "loc": 4367,
-    "words": 21754
+    "articles": 10,
+    "code_snippets": 349,
+    "loc": 4540,
+    "words": 22827
   },
   "compilers": {
-    "articles": 10,
-    "code_snippets": 321,
-    "loc": 4180,
-    "words": 21206
+    "articles": 11,
+    "code_snippets": 336,
+    "loc": 4353,
+    "words": 22279
   },
   "interpreters": {
-    "articles": 15,
-    "code_snippets": 393,
-    "loc": 5813,
-    "words": 34229
+    "articles": 16,
+    "code_snippets": 408,
+    "loc": 5986,
+    "words": 35302
   },
   "programming": {
-    "articles": 286,
-    "code_snippets": 3580,
-    "loc": 34231,
-    "words": 347375
+    "articles": 288,
+    "code_snippets": 3599,
+    "loc": 34423,
+    "words": 348746
   },
   "python": {
-    "articles": 271,
-    "code_snippets": 3483,
-    "loc": 33505,
-    "words": 339564
+    "articles": 273,
+    "code_snippets": 3502,
+    "loc": 33697,
+    "words": 340935
   },
   "algorithms": {
     "articles": 22,
@@ -84,10 +84,10 @@
     "words": 1411
   },
   "dunder methods": {
-    "articles": 13,
-    "code_snippets": 283,
-    "loc": 3596,
-    "words": 21852
+    "articles": 14,
+    "code_snippets": 287,
+    "loc": 3615,
+    "words": 22150
   },
   "oop": {
     "articles": 5,
@@ -564,10 +564,10 @@
     "words": 430
   },
   "__all": {
-    "articles": 385,
-    "code_snippets": 3695,
-    "loc": 35229,
-    "words": 421548
+    "articles": 387,
+    "code_snippets": 3714,
+    "loc": 35421,
+    "words": 422919
   },
   "fp": {
     "articles": 3,

@@ -1057,4 +1057,4 @@ In the next articles we will be looking at more interesting statements like `if`
  - How would you go about adding an `if` statement to the language? The body of the `if` statement starts immediately after the `:` and the newline, but where does it end?
 
 
-[series-link]: /blog/tag:bpci
+[series-link]: /blog/tags/bpci

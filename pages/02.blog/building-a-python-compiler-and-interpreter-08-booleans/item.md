@@ -592,4 +592,4 @@ We'll also look at comparison operators and [their chaining](/blog/pydonts/chain
  - Try to add support for the `while` loop. (You can go crazy and also try to add the keywords `break` and `continue`.)
 
 
-[series-link]: /blog/tag:bpci
+[series-link]: /blog/tags/bpci
