@@ -7,14 +7,17 @@ document.addEventListener("DOMContentLoaded", () => {
     document.documentElement.setAttribute("data-theme", currentTheme);
     updateIcon(currentTheme);
 
-    themeToggleBtn.addEventListener("click", () => {
+    const toggleTheme = () => {
         let newTheme = document.documentElement.getAttribute("data-theme") === "light" ? "dark" : "light";
 
         document.documentElement.setAttribute("data-theme", newTheme);
         localStorage.setItem("theme", newTheme);
 
         updateIcon(newTheme);
-    });
+    }
+
+    themeToggleBtn.addEventListener("click", toggleTheme);
+    themeToggleBtn.addEventListener("touchend", toggleTheme);
 
     function updateIcon(theme) {
         if (theme === "dark") {
