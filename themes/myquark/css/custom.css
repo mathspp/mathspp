@@ -247,7 +247,8 @@ h6,
 .hero.text-light h5,
 .hero.text-light h6,
 .hero.text-light i,
-.hero.text-light p {
+.hero.text-light p,
+.hero.text-light * {
     color: var(--flexoki-white);
 }
 
@@ -631,7 +632,6 @@ table.stats-table {
 }
 
 table.stats-table thead {
-    color: var(--tx);
     border-bottom: 0;
 }
 
