@@ -49,7 +49,7 @@
 .hljs-comment,
 .hljs-quote,
 .hljs-deletion {
-    color: var(--pu);
+    color: var(--tx-2);
 }
 
 .hljs-keyword,
