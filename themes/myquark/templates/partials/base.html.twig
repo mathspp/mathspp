@@ -7,8 +7,9 @@
 <head>
 <script>
   (function () {
-    const savedTheme = localStorage.getItem("theme") || "dark";
-    document.documentElement.setAttribute("data-theme", savedTheme);
+    const savedTheme = localStorage.getItem("theme");
+    const systemPreference = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", savedTheme || systemPreference);
   })();
 </script>
 
