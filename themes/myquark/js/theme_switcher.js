@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
     themeToggleBtn.addEventListener("click", toggleTheme);
     if (mobileThemeToggleBtn) {
         mobileThemeToggleBtn.addEventListener("click", toggleTheme);
-        mobileThemeToggleBtn.addEventListener("touchend", toggleTheme);
     }
 
     function updateIcon(theme) {
