@@ -1,13 +1,15 @@
 :root {
     /* Flexoki colours https://stephango.com/flexoki */
-    --bg: #FFFCF0;
+    --flexoki-white: #FFFCF0;
+    --flexoki-black: #100F0F;
+    --bg: var(--flexoki-white);
     --bg-2: #F2F0E5;
     --ui: #E6E4D9;
     --ui-2: #DAD8CE;
     --ui-3: #CECDC3;
     --tx-3: #B7B5AC;
     --tx-2: #6F6E69;
-    --tx: #100F0F;
+    --tx: var(--flexoki-black);
     --re-2: #D14D41;
     --or-2: #DA702C;
     --ye-2: #D0A215;
@@ -246,19 +248,13 @@ h6,
 .hero.text-light h6,
 .hero.text-light i,
 .hero.text-light p {
-    color: var(--tx);
+    color: var(--flexoki-white);
 }
 
-/* The small titles of features like the last ones in the workshop page. */
+/* The small titles of feature icons in modular pages. */
 .modular-features .feature-icon h6 {
-    scale: 1.2;
     color: var(--tx);
     background: var(--bg);
-}
-
-/* Little "featured" icons, like the ones in the blog. */
-.modular-features.small .feature-icon i {
-    color: var(--tx);
 }
 
 #sidebar,
@@ -304,7 +300,7 @@ body p:not(#footer p, .hero p, .feature-content p, .text-center, div.text-center
 /* Colour of the navigation menu item's text. Use !important because so does the default theme.
  * Include a very specific CSS selector: when this is not included, this very same specific
  * selector in the theme CSS overrides this and makes the text too dark, so we override it again,
- * because we are more stubborn then the theme :P */
+ * because we are more stubborn than the theme :P */
 nav a,
 .header-dark #header:not(.scrolled) .dropmenu ul ul a {
     color: var(--tx) !important;
@@ -312,15 +308,11 @@ nav a,
 
 .dropmenu ul li a.active,
 .dropmenu ul li a:focus,
-.dropmenu ul li a:hover {
+.dropmenu ul li a:hover,
+#header:not(.scrolled) .dropmenu ul li a:hover,
+#header:not(.scrolled) .dropmenu ul li a.active {
     color: var(--accent-2) !important;
 }
-
-/* Fix the colouring of the same navigation menu when I hover over links. */
-.header-dark #header:not(.scrolled) .dropmenu ul li a:hover {
-    color: #fff !important;
-}
-
 
 #header,
 body,
