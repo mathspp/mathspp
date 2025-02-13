@@ -319,8 +319,14 @@ ul.treemenu li a:hover,
     color: var(--accent-2) !important;
 }
 
+/* Colour of the menu item on mobile. */
 #toggle span {
     background: var(--accent);
+}
+
+/* Overlay of the mobile menu. */
+.overlay {
+    background: var(--bg);
 }
 
 #header,
