@@ -311,6 +311,9 @@ nav a,
 .dropmenu ul li a.active,
 .dropmenu ul li a:focus,
 .dropmenu ul li a:hover,
+.treemenu ul li a.active,
+.treemenu ul li a:focus,
+.treemenu ul li a:hover,
 #header:not(.scrolled) .dropmenu ul li a:hover,
 #header:not(.scrolled) .dropmenu ul li a.active {
     color: var(--accent-2) !important;
