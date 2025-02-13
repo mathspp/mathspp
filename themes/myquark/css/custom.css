@@ -248,7 +248,8 @@ h6,
 .hero.text-light h6,
 .hero.text-light i,
 .hero.text-light p,
-.hero.text-light * {
+.hero.text-light thead,
+.hero.text-light tr {
     color: var(--flexoki-white);
 }
 
