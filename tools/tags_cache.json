@@ -180,10 +180,10 @@
     "words": 10340
   },
   "slice of life": {
-    "articles": 10,
+    "articles": 11,
     "code_snippets": 48,
     "loc": 453,
-    "words": 9085
+    "words": 9603
   },
   "productivity": {
     "articles": 21,
@@ -382,12 +382,6 @@
     "code_snippets": 10,
     "loc": 95,
     "words": 1471
-  },
-  "pocket maths": {
-    "articles": 1,
-    "code_snippets": 0,
-    "loc": 0,
-    "words": 518
   },
   "random walks": {
     "articles": 1,

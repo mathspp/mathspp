@@ -14,10 +14,10 @@ hero_image_url: /user/themes/myquark/images/common_hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 metadata:
     author: Rodrigo Girão Serrão
-    description: "All of the mathspp blog articles about slice of life."
-    og:description: "All of the mathspp blog articles about slice of life."
-    og:image: "https://mathspp.com/blog/tags/slice-of-life/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/slice-of-life/thumbnail.webp"
+    description: "All of the mathspp blog articles about Slice of life."
+    og:description: "All of the mathspp blog articles about Slice of life."
+    og:image: "https://mathspp.com/blog/tags/Slice-of-life/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/Slice-of-life/thumbnail.webp"
 title: "Slice of life blog articles"
 ---
 
@@ -28,8 +28,8 @@ title: "Slice of life blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">10</th>
-            <th style="text-align: center;">9,085</th>
+            <th style="text-align: center;">11</th>
+            <th style="text-align: center;">9,603</th>
             <th style="text-align: center;">453</th>
         </tr>
     </thead>
