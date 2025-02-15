@@ -1,0 +1,17 @@
+date: 02-04-2019 22:50
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This post shows how fractals occur naturally in broccoli, one of my favourite vegetables."
+    og:image: "https://mathspp.com/blog/mathy-broccoli/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/mathy-broccoli/thumbnail.webp"
+references: []
+slug: "mathy-broccoli"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+      - fractals
+      - geometry
+      - pocket maths
+      - visualisation
+title: Mathy broccoli

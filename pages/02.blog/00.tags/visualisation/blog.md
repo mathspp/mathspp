@@ -14,10 +14,10 @@ hero_image_url: /user/themes/myquark/images/common_hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 metadata:
     author: Rodrigo Girão Serrão
-    description: "All of the mathspp blog articles about visualisation."
-    og:description: "All of the mathspp blog articles about visualisation."
-    og:image: "https://mathspp.com/blog/tags/visualisation/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/visualisation/thumbnail.webp"
+    description: "All of the mathspp blog articles about Visualisation."
+    og:description: "All of the mathspp blog articles about Visualisation."
+    og:image: "https://mathspp.com/blog/tags/Visualisation/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/Visualisation/thumbnail.webp"
 title: "Visualisation blog articles"
 ---
 
@@ -28,8 +28,8 @@ title: "Visualisation blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">14</th>
-            <th style="text-align: center;">8,238</th>
+            <th style="text-align: center;">16</th>
+            <th style="text-align: center;">9,409</th>
             <th style="text-align: center;">915</th>
         </tr>
     </thead>

@@ -14,10 +14,10 @@ hero_image_url: /user/themes/myquark/images/common_hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 metadata:
     author: Rodrigo Girão Serrão
-    description: "All of the mathspp blog articles about modular arithmetic."
-    og:description: "All of the mathspp blog articles about modular arithmetic."
-    og:image: "https://mathspp.com/blog/tags/modular-arithmetic/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/modular-arithmetic/thumbnail.webp"
+    description: "All of the mathspp blog articles about Modular arithmetic."
+    og:description: "All of the mathspp blog articles about Modular arithmetic."
+    og:image: "https://mathspp.com/blog/tags/Modular-arithmetic/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/Modular-arithmetic/thumbnail.webp"
 title: "Modular arithmetic blog articles"
 ---
 
@@ -28,8 +28,8 @@ title: "Modular arithmetic blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">6</th>
-            <th style="text-align: center;">6,765</th>
+            <th style="text-align: center;">7</th>
+            <th style="text-align: center;">7,418</th>
             <th style="text-align: center;">242</th>
         </tr>
     </thead>

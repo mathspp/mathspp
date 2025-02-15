@@ -144,10 +144,10 @@
     "words": 2579
   },
   "visualisation": {
-    "articles": 14,
+    "articles": 16,
     "code_snippets": 58,
     "loc": 915,
-    "words": 8238
+    "words": 9409
   },
   "data science": {
     "articles": 1,
@@ -204,10 +204,10 @@
     "words": 7679
   },
   "geometry": {
-    "articles": 15,
+    "articles": 16,
     "code_snippets": 34,
     "loc": 427,
-    "words": 9131
+    "words": 9649
   },
   "binary": {
     "articles": 9,
@@ -216,10 +216,10 @@
     "words": 6822
   },
   "modular arithmetic": {
-    "articles": 6,
+    "articles": 7,
     "code_snippets": 31,
     "loc": 242,
-    "words": 6765
+    "words": 7418
   },
   "recursion": {
     "articles": 11,
@@ -288,10 +288,10 @@
     "words": 104
   },
   "fractals": {
-    "articles": 5,
+    "articles": 6,
     "code_snippets": 22,
     "loc": 407,
-    "words": 3908
+    "words": 4426
   },
   "optimisation": {
     "articles": 6,
@@ -564,10 +564,10 @@
     "words": 430
   },
   "__all": {
-    "articles": 389,
+    "articles": 390,
     "code_snippets": 3714,
     "loc": 35421,
-    "words": 424204
+    "words": 424722
   },
   "fp": {
     "articles": 3,
@@ -586,5 +586,11 @@
     "code_snippets": 0,
     "loc": 0,
     "words": 653
+  },
+  "pocket maths": {
+    "articles": 1,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 518
   }
 }

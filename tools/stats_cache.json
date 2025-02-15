@@ -5460,22 +5460,37 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/the-formula-that-plots-itself": {
-    "timestamp": 1739634421.2926128,
+    "timestamp": 1739635890.4329312,
     "tags": [
       "binary",
       "mathematics",
-      "modular arithmetics",
+      "modular arithmetic",
       "programming",
       "pygame",
       "python",
       "recursion",
-      "visualization"
+      "visualisation"
     ],
     "stats": {
       "articles": 1,
       "code_snippets": 0,
       "loc": 0,
       "words": 653
+    }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/mathy-broccoli": {
+    "timestamp": 1739635830.330501,
+    "tags": [
+      "fractals",
+      "geometry",
+      "pocket maths",
+      "visualisation"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 0,
+      "loc": 0,
+      "words": 518
     }
   }
 }

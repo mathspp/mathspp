@@ -14,10 +14,10 @@ hero_image_url: /user/themes/myquark/images/common_hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 metadata:
     author: Rodrigo Girão Serrão
-    description: "All of the mathspp blog articles about fractals."
-    og:description: "All of the mathspp blog articles about fractals."
-    og:image: "https://mathspp.com/blog/tags/fractals/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/fractals/thumbnail.webp"
+    description: "All of the mathspp blog articles about Fractals."
+    og:description: "All of the mathspp blog articles about Fractals."
+    og:image: "https://mathspp.com/blog/tags/Fractals/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/Fractals/thumbnail.webp"
 title: "Fractals blog articles"
 ---
 
@@ -28,8 +28,8 @@ title: "Fractals blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">5</th>
-            <th style="text-align: center;">3,908</th>
+            <th style="text-align: center;">6</th>
+            <th style="text-align: center;">4,426</th>
             <th style="text-align: center;">407</th>
         </tr>
     </thead>
