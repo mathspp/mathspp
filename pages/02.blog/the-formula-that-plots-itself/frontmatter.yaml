@@ -1,0 +1,21 @@
+date: 15-02-2025 15:32
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This post gives you the code to mess around with “Tupper's self-referential formula”, a formula that plots itself."
+    og:image: "https://mathspp.com/blog/the-formula-that-plots-itself/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/the-formula-that-plots-itself/thumbnail.webp"
+references: []
+slug: "the-formula-that-plots-itself"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+      - binary
+      - mathematics
+      - modular arithmetics
+      - programming
+      - pygame
+      - python
+      - recursion
+      - visualization
+title: The formula that plots itself

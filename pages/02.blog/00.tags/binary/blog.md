@@ -14,10 +14,10 @@ hero_image_url: /user/themes/myquark/images/common_hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 metadata:
     author: Rodrigo Girão Serrão
-    description: "All of the mathspp blog articles about binary."
-    og:description: "All of the mathspp blog articles about binary."
-    og:image: "https://mathspp.com/blog/tags/binary/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/binary/thumbnail.webp"
+    description: "All of the mathspp blog articles about Binary."
+    og:description: "All of the mathspp blog articles about Binary."
+    og:image: "https://mathspp.com/blog/tags/Binary/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/Binary/thumbnail.webp"
 title: "Binary blog articles"
 ---
 
@@ -28,8 +28,8 @@ title: "Binary blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">8</th>
-            <th style="text-align: center;">6,169</th>
+            <th style="text-align: center;">9</th>
+            <th style="text-align: center;">6,822</th>
             <th style="text-align: center;">135</th>
         </tr>
     </thead>

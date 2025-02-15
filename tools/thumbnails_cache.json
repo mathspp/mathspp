@@ -18,16 +18,16 @@
     "words": 35302
   },
   "programming": {
-    "articles": 289,
+    "articles": 290,
     "code_snippets": 3599,
     "loc": 34423,
-    "words": 349378
+    "words": 350031
   },
   "python": {
-    "articles": 273,
+    "articles": 274,
     "code_snippets": 3502,
     "loc": 33697,
-    "words": 340935
+    "words": 341588
   },
   "algorithms": {
     "articles": 22,
@@ -54,10 +54,10 @@
     "words": 6700
   },
   "pygame": {
-    "articles": 13,
+    "articles": 14,
     "code_snippets": 51,
     "loc": 1147,
-    "words": 7424
+    "words": 8077
   },
   "scripting": {
     "articles": 9,
@@ -66,10 +66,10 @@
     "words": 6484
   },
   "mathematics": {
-    "articles": 120,
+    "articles": 121,
     "code_snippets": 447,
     "loc": 4441,
-    "words": 108337
+    "words": 108990
   },
   "number theory": {
     "articles": 8,
@@ -210,10 +210,10 @@
     "words": 9131
   },
   "binary": {
-    "articles": 8,
+    "articles": 9,
     "code_snippets": 19,
     "loc": 135,
-    "words": 6169
+    "words": 6822
   },
   "modular arithmetic": {
     "articles": 6,
@@ -222,10 +222,10 @@
     "words": 6765
   },
   "recursion": {
-    "articles": 10,
+    "articles": 11,
     "code_snippets": 81,
     "loc": 944,
-    "words": 13596
+    "words": 14249
   },
   "nnfwp": {
     "articles": 6,
@@ -564,15 +564,27 @@
     "words": 430
   },
   "__all": {
-    "articles": 388,
+    "articles": 389,
     "code_snippets": 3714,
     "loc": 35421,
-    "words": 423551
+    "words": 424204
   },
   "fp": {
     "articles": 3,
     "code_snippets": 108,
     "loc": 821,
     "words": 9363
+  },
+  "modular arithmetics": {
+    "articles": 1,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 653
+  },
+  "visualization": {
+    "articles": 1,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 653
   }
 }
