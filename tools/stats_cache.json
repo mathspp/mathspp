@@ -5446,7 +5446,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/verifying-tautologies-with-haskell": {
-    "timestamp": 1739632917.9417024,
+    "timestamp": 1739633130.3741617,
     "tags": [
       "haskell",
       "logic",
@@ -5456,7 +5456,7 @@
       "articles": 1,
       "code_snippets": 0,
       "loc": 0,
-      "words": 630
+      "words": 632
     }
   }
 }

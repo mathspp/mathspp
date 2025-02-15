@@ -29,7 +29,7 @@ title: "Haskell blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">2</th>
-            <th style="text-align: center;">870</th>
+            <th style="text-align: center;">872</th>
             
         </tr>
     </thead>

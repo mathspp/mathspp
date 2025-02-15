@@ -7,7 +7,9 @@ This post gives the source code for a small Haskell program that finds if a form
 
 A [tautology](https://en.wikipedia.org/wiki/Tautology_(logic)) is a formula that is true regardless of the logical value we attribute to the variables it contains. For example, the propositional formula $P \vee \neg P$ is **always** true, regardless of $P$ being true or false. But not every tautology is as simple as the one I just showed. For example, showing that
 
-$$(P \implies Q) \implies [(Q \implies R) \implies (P \implies R)]$$
+$$
+(P \implies Q) \implies [(Q \implies R) \implies (P \implies R)]
+$$
 
 is a tautology requires a bit more thought. But thinking is too tiring, so let us write a Haskell program that takes a formula and decides if the formula is a tautology or not! (By the way, said program is available [in my GitHub](https://github.com/rodrigogiraoserrao/projects/blob/master/misc/tautologies.hs)...) First, we need to be able to represent a proposition, and we will create a data type just for that. We will call our type "Prop," from proposition, from propositional logic.
 
