@@ -1,0 +1,16 @@
+date: 14-06-2019
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This post gives the source code for a small Haskell program that finds if a formula is a tautology."
+    og:image: "https://mathspp.com/blog/verifying-tautologies-with-haskell/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/verifying-tautologies-with-haskell/thumbnail.webp"
+references: []
+slug: "verifying-tautologies-with-haskell"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+      - haskell
+      - logic
+      - programming
+title: Verifying tautologies with Haskell

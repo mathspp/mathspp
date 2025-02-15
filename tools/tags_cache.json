@@ -1,9 +1,9 @@
 {
   "__all": {
-    "articles": 387,
+    "articles": 388,
     "code_snippets": 3714,
     "loc": 35421,
-    "words": 422919
+    "words": 423549
   },
   "bpci": {
     "articles": 10,
@@ -24,10 +24,10 @@
     "words": 35302
   },
   "programming": {
-    "articles": 288,
+    "articles": 289,
     "code_snippets": 3599,
     "loc": 34423,
-    "words": 348746
+    "words": 349376
   },
   "python": {
     "articles": 273,
@@ -192,10 +192,10 @@
     "words": 15675
   },
   "logic": {
-    "articles": 33,
+    "articles": 34,
     "code_snippets": 89,
     "loc": 739,
-    "words": 27655
+    "words": 28285
   },
   "sequences": {
     "articles": 5,
@@ -220,6 +220,12 @@
     "code_snippets": 34,
     "loc": 427,
     "words": 9131
+  },
+  "haskell": {
+    "articles": 2,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 870
   },
   "binary": {
     "articles": 8,
@@ -430,12 +436,6 @@
     "code_snippets": 108,
     "loc": 821,
     "words": 9363
-  },
-  "haskell": {
-    "articles": 1,
-    "code_snippets": 0,
-    "loc": 0,
-    "words": 240
   },
   "origami": {
     "articles": 1,
