@@ -14,7 +14,7 @@ The idea is simple: create a basic script that essentially just prompts the user
 Here's an example for the task of creating [a testimonial on my website](/testimonials) based on what someone writes on social media:
 
 <details markdown="1">
-<summary><code>do-nothing-testimonial.py</code></details>
+<summary><code>do-nothing-testimonial.py</code></summary>
 
 ```py
 def wait():
