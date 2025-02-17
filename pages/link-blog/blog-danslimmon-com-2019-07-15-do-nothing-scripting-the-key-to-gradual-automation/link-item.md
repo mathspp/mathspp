@@ -23,7 +23,13 @@ def wait():
 print("Copy an existing testimonial as the boilerplate.")
 wait()
 
-print("Copy the text of the testimonial into the page.")
+print("Delete details of the copied testimonial.")
+wait()
+
+print("Copy the text of the online testimonial into the new page.")
+wait()
+
+print("Fill in details of the online testimonial.")
 wait()
 
 print("Does the review have an associated profile with a picture?")
