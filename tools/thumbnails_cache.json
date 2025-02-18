@@ -20,14 +20,14 @@
   "programming": {
     "articles": 290,
     "code_snippets": 3599,
-    "loc": 34423,
-    "words": 350031
+    "loc": 34418,
+    "words": 350036
   },
   "python": {
     "articles": 274,
     "code_snippets": 3502,
-    "loc": 33697,
-    "words": 341588
+    "loc": 33692,
+    "words": 341593
   },
   "algorithms": {
     "articles": 22,
@@ -62,7 +62,7 @@
   "scripting": {
     "articles": 9,
     "code_snippets": 54,
-    "loc": 663,
+    "loc": 658,
     "words": 6484
   },
   "mathematics": {
@@ -87,7 +87,7 @@
     "articles": 14,
     "code_snippets": 287,
     "loc": 3615,
-    "words": 22150
+    "words": 22155
   },
   "oop": {
     "articles": 5,
@@ -542,7 +542,7 @@
   "uv": {
     "articles": 2,
     "code_snippets": 23,
-    "loc": 90,
+    "loc": 85,
     "words": 1996
   },
   "javascript": {
@@ -566,8 +566,8 @@
   "__all": {
     "articles": 390,
     "code_snippets": 3714,
-    "loc": 35421,
-    "words": 424722
+    "loc": 35416,
+    "words": 424727
   },
   "fp": {
     "articles": 3,
