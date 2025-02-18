@@ -30,7 +30,7 @@ title: "Scripting blog articles"
         <tr>
             <th style="text-align: center;">9</th>
             <th style="text-align: center;">6,484</th>
-            <th style="text-align: center;">663</th>
+            <th style="text-align: center;">658</th>
         </tr>
     </thead>
     <tbody>

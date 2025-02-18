@@ -151,18 +151,13 @@ def wc(filepath: Path, show_bytes: bool, show_words: bool, show_lines: bool) -> 
 
 @click.command()
 @click.argument("filepath", type=Path)
-@click.option("-c", default=None, type=bool, help="Show byte count.")
-@click.option("-w", default=None, type=bool, help="Show word count.")
-@click.option("-l", default=None, type=bool, help="Show line count.")
+@click.option("-c", is_flag=True, help="Show byte count.")
+@click.option("-w", is_flag=True, help="Show word count.")
+@click.option("-l", is_flag=True, help="Show line count.")
 def main(filepath: Path, c: bool | None, w: bool | None, l: bool | None) -> None:
     # If none of the options was explicitly set, they're all `True`.
-    if {c, w, l} == {None}:
+    if {c, w, l} == {False}:
         c, w, l = True, True, True
-    else:
-        # Convert all `None` to `False`.
-        c = c or False
-        w = w or False
-        l = l or False
     wc(filepath, c, w, l)
 ```
 

@@ -5401,7 +5401,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/using-uv-to-build-and-install-python-cli-apps": {
-    "timestamp": 1739301904.789243,
+    "timestamp": 1739897565.2818723,
     "tags": [
       "programming",
       "python",
@@ -5411,7 +5411,7 @@
     "stats": {
       "articles": 1,
       "code_snippets": 16,
-      "loc": 71,
+      "loc": 66,
       "words": 1602
     }
   },
@@ -5432,7 +5432,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/context-managers-with-contextlib-contextmanager": {
-    "timestamp": 1739385466.5775075,
+    "timestamp": 1739636676.326136,
     "tags": [
       "dunder methods",
       "programming",
@@ -5442,7 +5442,7 @@
       "articles": 1,
       "code_snippets": 4,
       "loc": 19,
-      "words": 298
+      "words": 303
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/verifying-tautologies-with-haskell": {
@@ -5479,7 +5479,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/mathy-broccoli": {
-    "timestamp": 1739636294.6069396,
+    "timestamp": 1739636363.3289404,
     "tags": [
       "fractals",
       "geometry",

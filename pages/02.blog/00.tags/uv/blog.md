@@ -30,7 +30,7 @@ title: "uv blog articles"
         <tr>
             <th style="text-align: center;">2</th>
             <th style="text-align: center;">1,996</th>
-            <th style="text-align: center;">90</th>
+            <th style="text-align: center;">85</th>
         </tr>
     </thead>
     <tbody>
