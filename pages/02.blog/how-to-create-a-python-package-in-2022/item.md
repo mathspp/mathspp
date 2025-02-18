@@ -196,7 +196,7 @@ After this, we install the hooks and then we run them once, just for good measur
 
 ```bash
 pre-commit install
-pre-commit run all-files
+pre-commit run --all-files
 ```
 
 ! Make sure your Poetry virtual environment is active!
