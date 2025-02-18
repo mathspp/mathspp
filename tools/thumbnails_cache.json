@@ -20,19 +20,19 @@
   "programming": {
     "articles": 290,
     "code_snippets": 3599,
-    "loc": 34418,
+    "loc": 34416,
     "words": 350036
   },
   "python": {
     "articles": 274,
     "code_snippets": 3502,
-    "loc": 33692,
+    "loc": 33690,
     "words": 341593
   },
   "algorithms": {
     "articles": 22,
     "code_snippets": 215,
-    "loc": 2268,
+    "loc": 2266,
     "words": 25565
   },
   "chatgpt": {
@@ -188,7 +188,7 @@
   "logic": {
     "articles": 34,
     "code_snippets": 89,
-    "loc": 739,
+    "loc": 737,
     "words": 28287
   },
   "sequences": {
@@ -224,7 +224,7 @@
   "recursion": {
     "articles": 11,
     "code_snippets": 81,
-    "loc": 944,
+    "loc": 942,
     "words": 14249
   },
   "nnfwp": {
@@ -272,7 +272,7 @@
   "combinatorics": {
     "articles": 21,
     "code_snippets": 68,
-    "loc": 637,
+    "loc": 635,
     "words": 19319
   },
   "arithmetic": {
@@ -566,7 +566,7 @@
   "__all": {
     "articles": 390,
     "code_snippets": 3714,
-    "loc": 35416,
+    "loc": 35414,
     "words": 424727
   },
   "fp": {

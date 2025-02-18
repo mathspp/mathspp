@@ -56,6 +56,7 @@ You can start now.”
 
 I walked up to the computer and started working on the problem.
 
+
 ## The solution
 
 I was thinking aloud while I was typing.
@@ -79,13 +80,13 @@ def diagonally_safe(row, col, placements):
 I proceeded to explain:
 
 “I'll store a tuple called `placements` with the positions of some of you.
-The index is the column you're in and the value itself represents the row.
-For example, if `placements` is `(5, 0, 4)` that means that the column `0` has a queen in position `5`, the column `1` has a queen in position `0`, and the column `3` has a queen in position `4`.”
+The index is the row you're in and the value itself represents the column.
+For example, if `placements` is `(5, 0, 4)` that means that the row `0` has a queen in column `5`, the row `1` has a queen in column `0`, and the row `3` has a queen in column `4`.”
 
 The queens seemed to be following along.
 
-“Now, suppose I want to place a queen in column `3` and in row `r`.
-I can call the function `diagonally_safe(r, 3, (5, 0, 4))` and it will tell me if placing a queen in column `3`, row `r` will clash with the other three queens.
+“Now, suppose I want to place a queen in row `3` and in column `6`.
+I can call the function `diagonally_safe(3, 6, (5, 0, 4))` and it will tell me if placing a queen in column `3`, row `6` will clash with the other three queens.
 This can be done with just a little bit of maths.”
 
 Queen #9 wasn't pleased: “Ugh.
@@ -94,11 +95,11 @@ I hate maths.”
 “It's basic arithmetic, really.
 Pick a square on the board.
 Any square.
-Suppose it is in column `c` and row `r`.
+Suppose it is in row `r` and column `c`.
 There are two diagonals going over that square.
 
 Pick any other square in the diagonal that goes up and to the right.
-Suppose it's in column `c_` and row `r_`.
+Suppose it's in row `r_` and column `c_`.
 You'll see that `r + c == r_ + c_`, and that's how you can see if two squares are in the same diagonal that goes up and to the right.
 
 Similarly, in the diagonal that goes up and to the left you check if `r - c == r_ - c_`.”
@@ -123,7 +124,7 @@ Queen #5 looked like she was struggling, so I printed a table with some Python c
   9 10 11 12 13 14 15 16 17 18
 ```
 
-I added “Each number is the same of its coordinates.
+I added “Each number is the sum of its coordinates.
 Notice how a number creates a diagonal going up and right.
 If you subtract them, you'll get diagonals going up and left.”
 
@@ -133,23 +134,23 @@ All queens looked happy, so I kept thinking.
 I can do this with a loop and a recursive call:
 
 ```py
-def solve(n, col, placements):
-    if col == n:
+def solve(n, row, placements):
+    if row == n:
         return 1
 
     count = 0
-    for row in range(n):
-        if row not in placements and _diagonally_safe(col, row, placements):
-            count += solve(n, col + 1, placements + (row,))
+    for col in range(n):
+        if col not in placements and _diagonally_safe(row, col, placements):
+            count += solve(n, row + 1, placements + (col,))
 
     return count
 ```
 
 This was easy to explain to the queens.
 
-“`n` is the total number of queens I need to place and `col` represents the index of the column I am going to place a queen on.
-If `col == n`, that's because I already placed all queens and I found a single (`1`) placement.
-Otherwise, I'll go over all possible rows and tentatively place a queen on rows that haven't been occupied nor that clash diagonally with the queens that are already there.
+“`n` is the total number of queens I need to place and `row` represents the index of the row I am going to place a queen on.
+If `row == n`, that's because I already placed all queens and I found a single (`1`) placement.
+Otherwise, I'll go over all possible columns and tentatively place a queen on column that haven't been occupied nor that clash diagonally with the queens that are already there.
 If I find such a placement, I try to place all the other queens with some recursion.
 
 The queens looked puzzled for a bit.
@@ -159,8 +160,6 @@ One after the other, they started nodding.
 This meant I could show my final lines of code to tie everything together:
 
 ```py
-
-
 def queens(n):
     print(solve(n, 0, tuple()))
 
@@ -179,14 +178,14 @@ def diagonally_safe(row, col, placements):
             return False
     return True
 
-def solve(n, col, placements):
-    if col == n:
+def solve(n, row, placements):
+    if row == n:
         return 1
 
     count = 0
-    for row in range(n):
-        if row not in placements and _diagonally_safe(col, row, placements):
-            count += solve(n, col + 1, placements + (row,))
+    for col in range(n):
+        if col not in placements and _diagonally_safe(row, col, placements):
+            count += solve(n, row + 1, placements + (col,))
 
     return count
 

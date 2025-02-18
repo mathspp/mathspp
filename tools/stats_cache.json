@@ -620,7 +620,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/n-queens-problem": {
-    "timestamp": 1709030891.6122904,
+    "timestamp": 1739899219.1642878,
     "tags": [
       "algorithms",
       "combinatorics",
@@ -632,7 +632,7 @@
     "stats": {
       "articles": 1,
       "code_snippets": 6,
-      "loc": 60,
+      "loc": 58,
       "words": 895
     }
   },

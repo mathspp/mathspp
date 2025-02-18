@@ -30,7 +30,7 @@ title: "Logic blog articles"
         <tr>
             <th style="text-align: center;">34</th>
             <th style="text-align: center;">28,287</th>
-            <th style="text-align: center;">739</th>
+            <th style="text-align: center;">737</th>
         </tr>
     </thead>
     <tbody>
