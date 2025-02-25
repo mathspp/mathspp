@@ -28,9 +28,9 @@ title: "Slice of life blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">11</th>
-            <th style="text-align: center;">9,603</th>
-            <th style="text-align: center;">453</th>
+            <th style="text-align: center;">12</th>
+            <th style="text-align: center;">11,574</th>
+            <th style="text-align: center;">1,032</th>
         </tr>
     </thead>
     <tbody>

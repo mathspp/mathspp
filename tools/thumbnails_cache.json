@@ -18,22 +18,22 @@
     "words": 35302
   },
   "programming": {
-    "articles": 290,
-    "code_snippets": 3599,
-    "loc": 34416,
-    "words": 350036
+    "articles": 291,
+    "code_snippets": 3624,
+    "loc": 34995,
+    "words": 352007
   },
   "python": {
-    "articles": 274,
-    "code_snippets": 3502,
-    "loc": 33690,
-    "words": 341593
+    "articles": 275,
+    "code_snippets": 3527,
+    "loc": 34269,
+    "words": 343564
   },
   "algorithms": {
-    "articles": 22,
-    "code_snippets": 215,
-    "loc": 2266,
-    "words": 25565
+    "articles": 23,
+    "code_snippets": 240,
+    "loc": 2845,
+    "words": 27536
   },
   "chatgpt": {
     "articles": 4,
@@ -138,10 +138,10 @@
     "words": 8470
   },
   "image processing": {
-    "articles": 2,
-    "code_snippets": 18,
-    "loc": 172,
-    "words": 2579
+    "articles": 3,
+    "code_snippets": 43,
+    "loc": 751,
+    "words": 4550
   },
   "visualisation": {
     "articles": 16,
@@ -174,10 +174,10 @@
     "words": 10340
   },
   "slice of life": {
-    "articles": 11,
-    "code_snippets": 48,
-    "loc": 453,
-    "words": 9603
+    "articles": 12,
+    "code_snippets": 73,
+    "loc": 1032,
+    "words": 11574
   },
   "productivity": {
     "articles": 21,
@@ -222,10 +222,10 @@
     "words": 7418
   },
   "recursion": {
-    "articles": 11,
-    "code_snippets": 81,
-    "loc": 942,
-    "words": 14249
+    "articles": 12,
+    "code_snippets": 106,
+    "loc": 1521,
+    "words": 16220
   },
   "nnfwp": {
     "articles": 6,
@@ -564,10 +564,10 @@
     "words": 430
   },
   "__all": {
-    "articles": 390,
-    "code_snippets": 3714,
-    "loc": 35414,
-    "words": 424727
+    "articles": 391,
+    "code_snippets": 3739,
+    "loc": 35993,
+    "words": 426698
   },
   "fp": {
     "articles": 3,
