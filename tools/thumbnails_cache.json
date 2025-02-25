@@ -21,19 +21,19 @@
     "articles": 291,
     "code_snippets": 3624,
     "loc": 34995,
-    "words": 352007
+    "words": 352006
   },
   "python": {
     "articles": 275,
     "code_snippets": 3527,
     "loc": 34269,
-    "words": 343564
+    "words": 343563
   },
   "algorithms": {
     "articles": 23,
     "code_snippets": 240,
     "loc": 2845,
-    "words": 27536
+    "words": 27535
   },
   "chatgpt": {
     "articles": 4,
@@ -141,7 +141,7 @@
     "articles": 3,
     "code_snippets": 43,
     "loc": 751,
-    "words": 4550
+    "words": 4549
   },
   "visualisation": {
     "articles": 16,
@@ -177,7 +177,7 @@
     "articles": 12,
     "code_snippets": 73,
     "loc": 1032,
-    "words": 11574
+    "words": 11573
   },
   "productivity": {
     "articles": 21,
@@ -225,7 +225,7 @@
     "articles": 12,
     "code_snippets": 106,
     "loc": 1521,
-    "words": 16220
+    "words": 16219
   },
   "nnfwp": {
     "articles": 6,
@@ -567,7 +567,7 @@
     "articles": 391,
     "code_snippets": 3739,
     "loc": 35993,
-    "words": 426698
+    "words": 426697
   },
   "fp": {
     "articles": 3,

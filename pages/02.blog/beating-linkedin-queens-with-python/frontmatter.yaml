@@ -1,7 +1,7 @@
 date: 25-02-2025 18:40
 metadata:
     author: Rodrigo Girão Serrão
-    description: "This is a short account of how I wrote a program that solves all LQueens puzzles from LinkedIn automatically with Python."
+    description: "This is a short account of how I wrote a program that solves all Queens puzzles from LinkedIn automatically with Python."
     og:image: "https://mathspp.com/blog/beating-linkedin-queens-with-python/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/beating-linkedin-queens-with-python/thumbnail.webp"
 references: []

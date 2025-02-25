@@ -72,7 +72,7 @@ If that happens, a bunch of positions become illegal for new queens:
 
  - positions in the same column;
  - positions in the same row; and
- - positions touching the queen diagonally.
+ - positions touching the queen.
 
 This means we need to update the positions of the coloured groups to exclude those invalid positions.
 That's why we compute new coloured group sets:
@@ -112,7 +112,7 @@ That's why we add a filter:
                 if (
                     x != tx  # Can't be in the same column.
                     and y != ty  # Can't be in the same row.
-                    and abs(x - tx) + abs(y - ty) > 2  # Can't touch diagonally.
+                    and abs(x - tx) + abs(y - ty) > 2  # Can't touch.
                 )
             }
             for gs in group_sets[1:]
@@ -135,7 +135,7 @@ If not, we can ignore the queen at `(tx, ty)` and attempt a different position f
 
 If all coloured groups are still valid, then all is well and we try to place queens in the following groups.
 How do we do this?
-We do this by calling the function `_solve` recursively:
+We do this by calling the function `solve` recursively:
 
 ```py
     for tx, ty in group_sets[0]:
@@ -161,7 +161,7 @@ If we're in the second case, it means we found a solution and the tentative posi
         if not all(new_group_sets):  # 1+ empty group sets, skip this attempt.
             continue
 
-        result = _solve(new_group_sets)
+        result = solve(new_group_sets)
         if result is not None:
             return [(tx, ty)] + result
 ```
@@ -194,7 +194,7 @@ def solve(group_sets):
                 if (
                     x != tx  # Can't be in the same column.
                     and y != ty  # Can't be in the same row.
-                    and abs(x - tx) + abs(y - ty) > 2  # Can't touch diagonally.
+                    and abs(x - tx) + abs(y - ty) > 2  # Can't touch.
                 )
             }
             for gs in group_sets[1:]
@@ -273,7 +273,7 @@ So, `expanding_grid` starts by producing positions close to the top-left corner 
 The code for the auxiliary functions `expanding_range`, `is_black`, `expand_grid`, and `check_grid_size`, can be seen below.
 
 <details markdown=1>
-<summary>Source code for <code>expanding_range</code>
+<summary>Source code for <code>expanding_range</code></summary>
 
 ```py
 def expanding_range(max_size):
@@ -302,7 +302,7 @@ def expanding_range(max_size):
 
 
 <details markdown=1>
-<summary>Source code for <code>is_black</code>
+<summary>Source code for <code>is_black</code></summary>
 
 ```py
 def is_black(c):
@@ -320,7 +320,7 @@ def is_black(c):
 </details>
 
 <details markdown=1>
-<summary>Source code for <code>expand_grid</code>
+<summary>Source code for <code>expand_grid</code></summary>
 
 ```py
 def expand_grid(img, tl):
@@ -363,7 +363,7 @@ def expand_grid(img, tl):
 </details>
 
 <details markdown=1>
-<summary>Source code for <code>check_grid_size</code>
+<summary>Source code for <code>check_grid_size</code></summary>
 
 ```py
 def check_grid_size(tl, br):
@@ -448,7 +448,7 @@ cell_locations = compute_cell_locations(tl, br, n)
 ```
 
 <details markdown=1>
-<summary>Source code for the function <code>compute_cell_locations</code>
+<summary>Source code for the function <code>compute_cell_locations</code></summary>
 
 ```py
 from itertools import product
