@@ -413,8 +413,8 @@ def compute_grid_n(img, tl, br):
         if not is_black(img.getpixel((x1 + delta, y1 + delta))):
             break
         delta += 1
-    else:  # If we left the grid without finding a non-black pixel, grid n is 0.
-        return 0
+    else:  # If we left the grid without finding a non-black pixel, error.
+        raise RuntimeError("Can't find a non-black pixel in the grid!")
 
     # To count the number of cells along each direction we slice the image, determine
     # whether each pixel in the slice is black or not, and then use `groupby` to group
@@ -719,8 +719,8 @@ def compute_grid_n(img, tl, br):
         if not is_black(img.getpixel((x1 + delta, y1 + delta))):
             break
         delta += 1
-    else:  # If we left the grid without finding a non-black pixel, grid n is 0.
-        return 0
+    else:  # If we left the grid without finding a non-black pixel, error.
+        raise RuntimeError("Can't find a non-black pixel in the grid!")
 
     # To count the number of cells along each direction we slice the image, determine
     # whether each pixel in the slice is black or not, and then use `groupby` to group
