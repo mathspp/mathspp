@@ -36,3 +36,7 @@ If `puzzle.png` is an image with a LinkedIn Queens-like puzzle, just run
 ```sh
 uvx --from li_queens queens puzzle.png
 ```
+
+
+! This was done with uv 0.6.1.
+! Make sure to use an updated version of uv and check the [uv documentation on publishing packages](https://docs.astral.sh/uv/guides/package/#building-your-package) for the most current instructions and notes on caveats to be aware of.

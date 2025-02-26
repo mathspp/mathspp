@@ -29,7 +29,7 @@ title: "uv blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">3</th>
-            <th style="text-align: center;">2,229</th>
+            <th style="text-align: center;">2,267</th>
             <th style="text-align: center;">88</th>
         </tr>
     </thead>
