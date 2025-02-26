@@ -1,0 +1,21 @@
+date: 26-02-2025 18:42
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to publish a Python package to PyPI with uv."
+    og:image: "https://mathspp.com/blog/publishing-a-python-package-with-uv/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/publishing-a-python-package-with-uv/thumbnail.webp"
+references:
+  - "uv documentation, Publishing packages, <https://docs.astral.sh/uv/guides/package/#publishing-your-package> [last accessed 26-02-2025];"
+routes:
+    aliases:
+        - "/blog/til/117"
+slug: "publishing-a-python-package-with-uv"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - productivity
+      - programming
+      - python
+      - uv
+title: "TIL #117 – Publishing a Python package with uv"
+visible: false

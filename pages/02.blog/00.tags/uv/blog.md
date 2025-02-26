@@ -28,9 +28,9 @@ title: "uv blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">2</th>
-            <th style="text-align: center;">1,996</th>
-            <th style="text-align: center;">85</th>
+            <th style="text-align: center;">3</th>
+            <th style="text-align: center;">2,229</th>
+            <th style="text-align: center;">88</th>
         </tr>
     </thead>
     <tbody>
