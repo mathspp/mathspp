@@ -1,9 +1,9 @@
 {
   "__all": {
-    "articles": 392,
+    "articles": 393,
     "code_snippets": 3742,
     "loc": 35996,
-    "words": 427030
+    "words": 427195
   },
   "bpci": {
     "articles": 10,
@@ -192,10 +192,10 @@
     "words": 10340
   },
   "productivity": {
-    "articles": 22,
+    "articles": 23,
     "code_snippets": 147,
     "loc": 1487,
-    "words": 15946
+    "words": 16111
   },
   "logic": {
     "articles": 34,
@@ -408,10 +408,10 @@
     "words": 625
   },
   "git": {
-    "articles": 7,
+    "articles": 8,
     "code_snippets": 17,
     "loc": 118,
-    "words": 2161
+    "words": 2326
   },
   "brainfuck": {
     "articles": 1,

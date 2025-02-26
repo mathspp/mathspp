@@ -1,0 +1,18 @@
+date: 26-02-2025 19:01
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to quickly switch back and forth between two different git branches."
+    og:image: "https://mathspp.com/blog/git-checkout/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/git-checkout/thumbnail.webp"
+references: []
+routes:
+    aliases:
+        - "/blog/til/118"
+slug: "git-checkout"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - git
+      - productivity
+title: "TIL #118 – git checkout -"
+visible: false
