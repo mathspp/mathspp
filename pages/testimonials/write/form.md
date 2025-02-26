@@ -52,6 +52,7 @@ form:
           type: textarea
           validate:
             required: true
+            pattern: "\S+"
 
         name:
           label: Your name
