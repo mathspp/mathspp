@@ -3,9 +3,9 @@
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">391</th>
-            <th style="text-align: center;">426,697</th>
-            <th style="text-align: center;">35,993</th>
+            <th style="text-align: center;">392</th>
+            <th style="text-align: center;">426,930</th>
+            <th style="text-align: center;">35,996</th>
         </tr>
     </thead>
     <tbody>
