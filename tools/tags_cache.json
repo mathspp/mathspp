@@ -3,7 +3,7 @@
     "articles": 392,
     "code_snippets": 3742,
     "loc": 35996,
-    "words": 426930
+    "words": 426992
   },
   "bpci": {
     "articles": 10,
@@ -27,19 +27,19 @@
     "articles": 292,
     "code_snippets": 3627,
     "loc": 34998,
-    "words": 352239
+    "words": 352301
   },
   "python": {
     "articles": 276,
     "code_snippets": 3530,
     "loc": 34272,
-    "words": 343796
+    "words": 343858
   },
   "algorithms": {
     "articles": 23,
     "code_snippets": 240,
     "loc": 2845,
-    "words": 27535
+    "words": 27597
   },
   "llm": {
     "articles": 5,
@@ -141,19 +141,19 @@
     "articles": 3,
     "code_snippets": 43,
     "loc": 751,
-    "words": 4549
+    "words": 4611
   },
   "recursion": {
     "articles": 12,
     "code_snippets": 106,
     "loc": 1521,
-    "words": 16219
+    "words": 16281
   },
   "slice of life": {
     "articles": 12,
     "code_snippets": 73,
     "loc": 1032,
-    "words": 11573
+    "words": 11635
   },
   "graphs": {
     "articles": 7,

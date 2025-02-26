@@ -604,6 +604,13 @@ if __name__ == "__main__":
 ```
 
 
+## Publishing the CLI as a package
+
+The final step for me was to publish this as a package on PyPI, so that others can easily use this tool.
+I setup a project using `uv` and then [published the CLI to PyPI](/blog/til/publishing-a-python-package-with-uv).
+Now, the CLI lives in [the PyPI project `li_queens`](https://pypi.org/project/li_queens/) and you can run it with `uvx --from li_queens queens puzzle.png`.
+
+
 ## Final code
 
 The full code for the program that solves a Queens puzzle given by an image can be found below.
