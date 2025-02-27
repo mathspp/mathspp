@@ -27,6 +27,11 @@ class ReviewSaverPlugin extends Plugin
         $testimonial = $data['testimonial'] ?? '';
         $social = $data['social'] ?? '';
 
+        if (trim($testimonial) === '') {
+            $this->grav['log']->info("Skipping review creation for {$name}");
+            return;
+        }
+
         // Generate the slug (e.g., 20250117-1213-rodrigo-serr-o)
         $date = (new \DateTime())->format('Ymd-Hi');
         $slug = preg_replace('/[^a-z0-9]+/', '-', strtolower($name));
