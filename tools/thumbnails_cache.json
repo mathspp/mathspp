@@ -504,10 +504,10 @@
     "words": 2623
   },
   "github": {
-    "articles": 1,
-    "code_snippets": 0,
-    "loc": 0,
-    "words": 259
+    "articles": 2,
+    "code_snippets": 2,
+    "loc": 6,
+    "words": 543
   },
   "repl": {
     "articles": 2,
@@ -564,10 +564,10 @@
     "words": 430
   },
   "__all": {
-    "articles": 393,
-    "code_snippets": 3742,
-    "loc": 35996,
-    "words": 427195
+    "articles": 394,
+    "code_snippets": 3744,
+    "loc": 36002,
+    "words": 427479
   },
   "fp": {
     "articles": 3,

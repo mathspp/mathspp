@@ -5432,7 +5432,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/context-managers-with-contextlib-contextmanager": {
-    "timestamp": 1739636676.326136,
+    "timestamp": 1740672326.0200388,
     "tags": [
       "dunder methods",
       "programming",
@@ -5536,6 +5536,18 @@
       "code_snippets": 0,
       "loc": 0,
       "words": 165
+    }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/119.coauthored-commits": {
+    "timestamp": 1740676710.0622392,
+    "tags": [
+      "github"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 2,
+      "loc": 6,
+      "words": 284
     }
   }
 }

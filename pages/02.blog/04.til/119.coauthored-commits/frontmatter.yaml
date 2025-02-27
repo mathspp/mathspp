@@ -1,0 +1,18 @@
+date: 27-02-2025 17:06
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to create co-authored commits on GitHub."
+    og:image: "https://mathspp.com/blog/coauthored-commits/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/coauthored-commits/thumbnail.webp"
+references:
+  - "GitHub Docs, Creating a commit with multiple authors <https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors> [last accessed 27-02-2025];"
+routes:
+    aliases:
+        - "/blog/til/119"
+slug: "coauthored-commits"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - github
+title: "TIL #119 – Co-authored commits"
+visible: false
