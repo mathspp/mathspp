@@ -127,4 +127,43 @@ That should make the canvas visible:
 
 ![The same white page showing a light blue rectangle under the title.](_canvas.webp "A light blue canvas.")
 
+
+## Interacting with the canvas with JavaScript
+
+Now you will use some JavaScript to interact with the game canvas.
+Remember the little demo where you used the function `document.getElementById` to access a part of the Wikipedia page and then delete it?
+You'll use a similar mechanism to access the canvas, so you need to give the canvas a unique ID.
+Then, you can create a `script` tag that contains JavaScript code to interact with your canvas:
+
+```html
+<html>
+
+<body>
+    <h1>Best game ever</h1>
+
+    <canvas id="gameCanvas" style="background: lightblue"></canvas>
+
+    <script>
+        const canvas = document.getElementById("gameCanvas");
+
+        canvas.width = 600;
+        canvas.height = 300;
+    </script>
+</body>
+</html>
+```
+
+This should create a larger canvas.
+Save your code and reload the page, and you should see a larger canvas on the screen.
+
+
+## Live demos
+
+The beauty of writing your game in the file `game.html` is that it acts as a standalone web page (that you can view offline) and that you can easily share with others.
+Additionally, I can embed it on this article or link you to it, so you can see an example of exactly what you should be seeing, so I'll start doing that from now on.
+At each step, I will embed the state of the game for you to take a look at and I will link to the standalone page for you to check your progress.
+
+The only difference will be that I will require you to click the demo once for it to start, otherwise all demos will run without you actually seeing them.
+I will also get rid of the title “Best game ever” because it's in the way.
+
 <iframe width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game04.html"></iframe>

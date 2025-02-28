@@ -1,13 +1,26 @@
 <html>
 
 <body>
-    <h1>Best game ever</h1>
-
     <canvas id="gameCanvas" style="background: lightblue"></canvas>
 
     <script>
-        document.getElementById("gameCanvas").width = 600;
-        document.getElementById("gameCanvas").height = 300;
+        const canvas = document.getElementById("gameCanvas");
+
+        canvas.width = 600;
+        canvas.height = 300;
+
+        const ctx = canvas.getContext("2d");
+        ctx.fillStyle = "lightgray";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = "black";
+        ctx.font = "60px Arial";
+        ctx.fillText("Click to start", canvas.width / 2 - 170, canvas.height / 2 + 15);
+
+        function demo() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+        document.addEventListener("click", (event) => demo());
     </script>
 </body>
 
