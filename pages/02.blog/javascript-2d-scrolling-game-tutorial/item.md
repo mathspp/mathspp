@@ -168,7 +168,7 @@ I will also get rid of the title “Best game ever” because it's in the way.
 
 Here's [the first demo I'm linking to](/blog/javascript-2d-scrolling-game-tutorial/game04.html), which shows the larger canvas:
 
-<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game04.html"></iframe>
+<iframe style="border: 0;" width="100%" height="330" src="/blog/javascript-2d-scrolling-game-tutorial/game04.html"></iframe>
 
 
 ## Drawing the player
@@ -236,7 +236,7 @@ Save the code and reload the page.
 You should see a red circle near the top-left corner of the canvas.
 [Demo of the player drawn near the top-left corner of the canvas](/blog/javascript-2d-scrolling-game-tutorial/game05.html).
 
-<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game05.html"></iframe>
+<iframe style="border: 0;" width="100%" height="330" src="/blog/javascript-2d-scrolling-game-tutorial/game05.html"></iframe>
 
 
 ## Game loop
@@ -297,7 +297,7 @@ gameLoop();
 Note that the code that drew the player now has been moved into the function `draw`.
 If you run your game now, [everything should look the same](/blog/javascript-2d-scrolling-game-tutorial/game06.html):
 
-<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game06.html"></iframe>
+<iframe style="border: 0;" width="100%" height="330" src="/blog/javascript-2d-scrolling-game-tutorial/game06.html"></iframe>
 
 However, you can see that something changed.
 To see that, go ahead and add a call to `console.log` inside the function `gameLoop`.
@@ -349,7 +349,7 @@ If you reload the game at this point, you'll see that gravity works...
 But drawing seems to have been broken!
 [Demo with gravity and broken drawing](/blog/javascript-2d-scrolling-game-tutorial/game07.html).
 
-<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game07.html"></iframe>
+<iframe style="border: 0;" width="100%" height="330" src="/blog/javascript-2d-scrolling-game-tutorial/game07.html"></iframe>
 
 
 ## Clearing the screen before redrawing
@@ -372,7 +372,7 @@ function draw() {  // Draw the current game state.
 This should do the trick.
 [See the demo with drawing fixed here](/blog/javascript-2d-scrolling-game-tutorial/game08.html).
 
-<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game08.html"></iframe>
+<iframe style="border: 0;" width="100%" height="330" src="/blog/javascript-2d-scrolling-game-tutorial/game08.html"></iframe>
 
 But now we see another problem, and that is that the ball is falling too slowly.
 Gravity isn't linear like that.
@@ -412,7 +412,7 @@ Since the vertical velocity keeps increasing, each frame the ball drops further 
 [Link for the demo with proper gravity](/blog/javascript-2d-scrolling-game-tutorial/game09.html).
 Except, now, you have another issue...
 
-<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game09.html"></iframe>
+<iframe style="border: 0;" width="100%" height="330" src="/blog/javascript-2d-scrolling-game-tutorial/game09.html"></iframe>
 
 
 ## Hitting the ground
@@ -466,7 +466,7 @@ Inside it, I also check if the bottom of the player is past the ground level, at
 
 With this logic in place, [you can see the ball stops when it hits the ground](/blog/javascript-2d-scrolling-game-tutorial/game10.html).
 
-<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game10.html"></iframe>
+<iframe style="border: 0;" width="100%" height="330" src="/blog/javascript-2d-scrolling-game-tutorial/game10.html"></iframe>
 
 
 ## Jumping
@@ -504,7 +504,7 @@ document.addEventListener(
 The function `addEventListener` accepts the name of the type of event you care about (key presses, mouse clicks, scrolling the page, etc) and the function you want to run when that event happens. 
 Go ahead and [check that pressing <kbd>SPACE</kbd> makes the player ball jump](/blog/javascript-2d-scrolling-game-tutorial/game11.html):
 
-<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game11.html"></iframe>
+<iframe style="border: 0;" width="100%" height="330" src="/blog/javascript-2d-scrolling-game-tutorial/game11.html"></iframe>
 
 Incidentally, you will also see that every single key makes the ball jump, which is not what you wanted.
 This is because the event `"keydown"` is used for every single key, but you can figure out which key was pressed and only jump if it was the correct key.
@@ -530,7 +530,7 @@ In this concrete instance, it's unlikely that using `==` would be a problem, but
 
 With this modified event handler, [the ball only jumps when the user presses <kbd>SPACE</kbd>](/blog/javascript-2d-scrolling-game-tutorial/game12.html):
 
-<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game12.html"></iframe>
+<iframe style="border: 0;" width="100%" height="330" src="/blog/javascript-2d-scrolling-game-tutorial/game12.html"></iframe>
 
 The next issue to fix is the fact that the ball essentially starts flying if you press <kbd>SPACE</kbd> repeatedly, which shouldn't happen.
 The idea is that the ball can only jump if it's on the ground, so that's a check you need to add before making the ball jump.
@@ -547,7 +547,7 @@ function jump() {
 
 With this extra check, [the player ball only jumps once when it's on the ground](/blog/javascript-2d-scrolling-game-tutorial/game13.html):
 
-<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game13.html"></iframe>
+<iframe style="border: 0;" width="100%" height="330" src="/blog/javascript-2d-scrolling-game-tutorial/game13.html"></iframe>
 
 
 ## Adding the first obstacle
@@ -597,7 +597,7 @@ function draw() {  // Draw the current game state.
 
 Reload your game and [see how a black obstacle comes toward the player ball](/blog/javascript-2d-scrolling-game-tutorial/game14.html):
 
-<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game14.html"></iframe>
+<iframe style="border: 0;" width="100%" height="330" src="/blog/javascript-2d-scrolling-game-tutorial/game14.html"></iframe>
 
 
 ## Preparing for multiple obstacles
@@ -640,7 +640,7 @@ obstacles.forEach((obstacle) => {
 If you do this, [your game should remain functionally the same as before](/blog/javascript-2d-scrolling-game-tutorial/game15.html).
 However, you are now ready to handle an arbitrary number of obstacles.
 
-<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game15.html"></iframe>
+<iframe style="border: 0;" width="100%" height="330" src="/blog/javascript-2d-scrolling-game-tutorial/game15.html"></iframe>
 
 
 ## Adding randomly-spaced obstacles
@@ -673,7 +673,7 @@ The operator `||` corresponds to the Boolean operator OR and `Math.random()` gen
 Reload your game.
 You should see [obstacles coming at the player non-stop](/blog/javascript-2d-scrolling-game-tutorial/game16.html):
 
-<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game16.html"></iframe>
+<iframe style="border: 0;" width="100%" height="330" src="/blog/javascript-2d-scrolling-game-tutorial/game16.html"></iframe>
 
 
 ## Removing passed obstacles
@@ -712,7 +712,7 @@ let nextObstacleGap = 0;
 If you add a `console.log(obstacles.length)` inside the function `update` you will see that the value logged stays between 2 and 4 instead of growing indefinitely.
 This [new version of your game should look the same as the previous one](/blog/javascript-2d-scrolling-game-tutorial/game17.html), but now it won't crash your computer if you let the game running during the night:
 
-<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game17.html"></iframe>
+<iframe style="border: 0;" width="100%" height="330" src="/blog/javascript-2d-scrolling-game-tutorial/game17.html"></iframe>
 
 
 ## Detecting collisions with the obstacles
@@ -764,7 +764,7 @@ By using the JavaScript function `alert` you get a cheap way of letting the user
 
 Reload your game and [try to avoid the obstacles for as long as you can](/blog/javascript-2d-scrolling-game-tutorial/game18.html):
 
-<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game18.html"></iframe>
+<iframe style="border: 0;" width="100%" height="330" src="/blog/javascript-2d-scrolling-game-tutorial/game18.html"></iframe>
 
 There's just one issue with your game...
 When you lose and close the alert saying that you lost...
@@ -828,7 +828,7 @@ if (!gameOver) {
 
 Reload the game and [check that the game stops for real when you lose](/blog/javascript-2d-scrolling-game-tutorial/game19.html):
 
-<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game19.html"></iframe>
+<iframe style="border: 0;" width="100%" height="330" src="/blog/javascript-2d-scrolling-game-tutorial/game19.html"></iframe>
 
 
 ## Creating a “Game over” screen
@@ -855,7 +855,7 @@ It took a bit of trial and error to kind of centre the text on the canvas, since
 Go ahead, play the game, and lose.
 You should [see the message “Game over” across the screen after you lose](/blog/javascript-2d-scrolling-game-tutorial/game20.html):
 
-<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game20.html"></iframe>
+<iframe style="border: 0;" width="100%" height="330" src="/blog/javascript-2d-scrolling-game-tutorial/game20.html"></iframe>
 
 
 ## Keeping track of score
@@ -888,7 +888,7 @@ function draw() {
 
 Reload your game and appreciate the fact that now [your game has a scoring system](/blog/javascript-2d-scrolling-game-tutorial/game21.html)!
 
-<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game21.html"></iframe>
+<iframe style="border: 0;" width="100%" height="330" src="/blog/javascript-2d-scrolling-game-tutorial/game21.html"></iframe>
 
 
 ## Wrap up
