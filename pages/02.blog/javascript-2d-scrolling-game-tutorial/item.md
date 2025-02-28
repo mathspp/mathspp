@@ -762,14 +762,14 @@ The operator `&&` is the Boolean operator AND, and it's what you're using to com
 
 By using the JavaScript function `console.log` you get a cheap way of letting the user know they lost.
 But they'll have to check the console, which isn't ideal...
+And if they don't, they won't even know they lost!
 
 Reload your game and [try to avoid the obstacles for as long as you can](/blog/javascript-2d-scrolling-game-tutorial/game18.html):
 
 <iframe style="border: 0;" width="100%" height="330" src="/blog/javascript-2d-scrolling-game-tutorial/game18.html"></iframe>
 
 There's just one issue with your game...
-When you lose, you don't really see that you lost.
-You can even walk through obstacles and the game will keep going.
+You can walk through obstacles and the game will keep going.
 This happens because you are not stopping the game loop once the player loses.
 You'll fix this next.
 
