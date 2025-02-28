@@ -166,4 +166,74 @@ At each step, I will embed the state of the game for you to take a look at and I
 The only difference will be that I will require you to click the demo once for it to start, otherwise all demos will run without you actually seeing them.
 I will also get rid of the title “Best game ever” because it's in the way.
 
+Here's [the first demo I'm linking to](/blog/javascript-2d-scrolling-game-tutorial/game04.html), which shows the larger canvas:
+
 <iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game04.html"></iframe>
+
+
+## Drawing the player
+
+The first thing you'll do is draw the player on the canvas.
+The player will be a red ball, so we need to create a data structure to hold information about the player position and then we need to somehow draw the player on the screen.
+
+To hold player info we will create a JavaScript object, which looks a bit like a Python dictionary but allows accessing information with the dot syntax we are used to.
+This is the code to create the player object:
+
+```js
+const canvas = document.getElementById("gameCanvas");
+
+canvas.width = 600;
+canvas.height = 300;
+
+const player = {  // Create an object with values for x, y, and radius.
+    x: 50,
+    y: 50,
+    radius: 15,
+}
+```
+
+(From now on I am only showing the content that should go inside the tag `script`, since we don't need to change anything else.)
+
+The keyword `const` is used by JavaScript to declare a constant variable.
+You used it to create a constant reference to the canvas, and now a reference to the player object.
+You will also use it to create a reference to the drawing context, an object that lets you draw on the canvas:
+
+
+```js
+// ...
+
+const drawing_ctx = canvas.getContext("2d");
+```
+
+By using this `drawing_ctx`, you can draw things on the canvas.
+For now, we want to draw a red circle.
+First, you tell the drawing context that what you'll be drawing is red.
+Then, you tell the drawing context that you want to start drawing.
+After, you use the function `arc` to draw a complete arc.
+Finally, you tell the drawing context to fill the line you drew.
+That's a lot...
+Here's the corresponding code:
+
+```js
+// ...
+
+const drawing_ctx = canvas.getContext("2d");
+
+// You want to draw in red.
+drawing_ctx.fillStyle = "red";
+// Tell the drawing context you want to start drawing.
+drawing_ctx.beginPath();
+// Draw an arc centred at the coordinates given by `player.x` and `player.y`,
+// with the radius given by `player.radius`.
+// Since you're drawing an arc, you need to specify the starting and ending angle.
+// Starting at `0` and ending at `2 * Math.PI` creates a full circle.
+drawing_ctx.arc(player.x, player.y, player.radius, 0, 2 * Math.PI);
+// Tell the drawing context to fill the line you drew.
+drawing_ctx.fill();
+```
+
+Save the code and reload the page.
+You should see a red circle near the top-left corner of the canvas.
+[Demo of the player drawn near the top-left corner of the canvas](/blog/javascript-2d-scrolling-game-tutorial/game05.html).
+
+<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game05.html"></iframe>

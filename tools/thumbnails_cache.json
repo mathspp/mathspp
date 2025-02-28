@@ -19,9 +19,9 @@
   },
   "programming": {
     "articles": 293,
-    "code_snippets": 3631,
-    "loc": 35035,
-    "words": 353635
+    "code_snippets": 3634,
+    "loc": 35063,
+    "words": 353926
   },
   "python": {
     "articles": 276,
@@ -49,9 +49,9 @@
   },
   "game": {
     "articles": 8,
-    "code_snippets": 53,
-    "loc": 528,
-    "words": 7996
+    "code_snippets": 56,
+    "loc": 556,
+    "words": 8287
   },
   "pygame": {
     "articles": 14,
@@ -547,9 +547,9 @@
   },
   "javascript": {
     "articles": 2,
-    "code_snippets": 6,
-    "loc": 59,
-    "words": 1667
+    "code_snippets": 9,
+    "loc": 87,
+    "words": 1958
   },
   "shell": {
     "articles": 1,
@@ -565,9 +565,9 @@
   },
   "__all": {
     "articles": 395,
-    "code_snippets": 3748,
-    "loc": 36039,
-    "words": 428775
+    "code_snippets": 3751,
+    "loc": 36067,
+    "words": 429066
   },
   "fp": {
     "articles": 3,

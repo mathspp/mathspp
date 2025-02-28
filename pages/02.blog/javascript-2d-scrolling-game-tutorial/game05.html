@@ -28,6 +28,19 @@
             canvas.width = 600;
             canvas.height = 300;
 
+            const player = {
+                x: 50,
+                y: 50,
+                radius: 15,
+            }
+
+            const drawing_ctx = canvas.getContext("2d");
+
+            drawing_ctx.fillStyle = "red";
+            drawing_ctx.beginPath();
+            drawing_ctx.arc(player.x, player.y, player.radius, 0, 2 * Math.PI);
+            drawing_ctx.fill();
+
             // This is the end of the tutorial code.
         }
 
