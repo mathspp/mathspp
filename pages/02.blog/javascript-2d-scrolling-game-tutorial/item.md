@@ -907,7 +907,7 @@ If you're having fun with your game, here are a few challenges you can try:
 
 You can find the full code for your game here:
 
-<details markdown=1>
+<details markdown="1">
 <summary><code>game.html</code></summary>
 
 ```html
