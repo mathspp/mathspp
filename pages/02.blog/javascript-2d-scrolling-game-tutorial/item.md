@@ -237,3 +237,64 @@ You should see a red circle near the top-left corner of the canvas.
 [Demo of the player drawn near the top-left corner of the canvas](/blog/javascript-2d-scrolling-game-tutorial/game05.html).
 
 <iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game05.html"></iframe>
+
+
+## Game loop
+
+The next thing to do is add gravity to the game, so that the ball falls to the ground.
+To do this, we need to update the position of the player ball over time to change its vertical position little by little.
+This requires the concept of a game loop.
+
+In games, movement is created by drawing the screen repeatedly over time, a couple of dozen times per second, so that the sequence of images shown in quick succession create the idea of movement.
+This is something you'll know if you've read my book [“The little book of pygame”](/books/the-little-book-of-pygame), where you create your own minigames with Python and pygame.
+It's the same idea in JavaScript, but you use a slightly different mechanism because you're using different tools.
+
+To animate the game and to create movement you will do two actions in sequence and repeatedly:
+
+ 1. update the entities of the game (move them around, etc); and
+ 2. draw the canvas based on the current information about the entities of the game.
+
+And this needs to happen repeatedly.
+Updating the entities of the game will be done in a function `update` and the drawing will happen in a function `draw`.
+Then, a central function `gameLoop` will call those two functions and will use the mechanism that JavaScript provides to allow this to happen multiple times per second.
+
+For now, you will reorganise your code slightly:
+
+```js
+const canvas = document.getElementById("gameCanvas");
+
+canvas.width = 600;
+canvas.height = 300;
+
+const player = {
+    x: 50,
+    y: 50,
+    radius: 15,
+}
+
+const drawing_ctx = canvas.getContext("2d");
+
+function update() {  // Update the game entities.
+}
+
+function draw() {  // Draw the current game state.
+    // Draw the player:
+    drawing_ctx.fillStyle = "red";
+    drawing_ctx.beginPath();
+    drawing_ctx.arc(player.x, player.y, player.radius, 0, 2 * Math.PI);
+    drawing_ctx.fill();
+}
+
+function gameLoop() {
+    update();
+    draw();
+    requestAnimationFrame(gameLoop);
+}
+
+gameLoop();
+```
+
+Note that the code that drew the player now has been moved into the function `draw`.
+If you run your game now, [everything should look the same](/blog/javascript-2d-scrolling-game-tutorial/game06.html):
+
+<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game06.html"></iframe>

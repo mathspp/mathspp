@@ -5551,7 +5551,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/javascript-2d-scrolling-game-tutorial": {
-    "timestamp": 1740755077.835171,
+    "timestamp": 1740755886.003688,
     "tags": [
       "game",
       "javascript",
@@ -5559,9 +5559,9 @@
     ],
     "stats": {
       "articles": 1,
-      "code_snippets": 7,
-      "loc": 65,
-      "words": 1587
+      "code_snippets": 8,
+      "loc": 96,
+      "words": 1857
     }
   }
 }
