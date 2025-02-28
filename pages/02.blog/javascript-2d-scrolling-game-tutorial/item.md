@@ -911,7 +911,7 @@ You can find the full code for your game here:
 <summary><code>game.html</code></summary>
 
 ```html
-<html>
+&lt;html>
 
 <body>
     <canvas id="gameCanvas" style="background: lightblue; display: block; margin: auto;"></canvas>
