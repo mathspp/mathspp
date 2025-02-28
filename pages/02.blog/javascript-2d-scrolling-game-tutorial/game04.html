@@ -4,23 +4,23 @@
     <canvas id="gameCanvas" style="background: lightblue; display: block; margin: auto;"></canvas>
 
     <script>
-        const canvas = document.getElementById("gameCanvas");
+        const demo_canvas = document.getElementById("gameCanvas");
 
-        canvas.width = 600;
-        canvas.height = 300;
+        demo_canvas.width = 600;
+        demo_canvas.height = 300;
 
         // Extra code I needed to put here so demos work.
         // The code for the tutorial is all inside the function "demo",
         // although YOU won't have the function "demo".
-        const demo_ctx = canvas.getContext("2d");
+        const demo_ctx = demo_canvas.getContext("2d");
         demo_ctx.fillStyle = "lightgray";
-        demo_ctx.fillRect(0, 0, canvas.width, canvas.height);
+        demo_ctx.fillRect(0, 0, demo_canvas.width, demo_canvas.height);
         demo_ctx.fillStyle = "black";
         demo_ctx.font = "60px Arial";
-        demo_ctx.fillText("Click to start", canvas.width / 2 - 170, canvas.height / 2 + 15);
+        demo_ctx.fillText("Click to start", demo_canvas.width / 2 - 170, demo_canvas.height / 2 + 15);
 
         function demo() {
-            demo_ctx.clearRect(0, 0, canvas.width, canvas.height);
+            demo_ctx.clearRect(0, 0, demo_canvas.width, demo_canvas.height);
 
             // This is the start of the tutorial code:
             const canvas = document.getElementById("gameCanvas");
