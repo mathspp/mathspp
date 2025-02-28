@@ -410,5 +410,60 @@ function update() {  // Update the game entities.
 
 Since the vertical velocity keeps increasing, each frame the ball drops further than in the previous frame, making the ball accelerate downward.
 [Link for the demo with proper gravity](/blog/javascript-2d-scrolling-game-tutorial/game09.html).
+Except, now, you have another issue...
 
 <iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game09.html"></iframe>
+
+
+## Hitting the ground
+
+As of now, the ball will fall past the bottom of the canvas and into the void.
+That's because your function `update` updates the vertical position of the player at every frame, regardless of where the player is.
+We need to modify the function so that gravity only pulls the player when the player is in the air.
+
+To do this, I will add an attribute `jumping` to the player, so that you can easily check if the player is currently jumping or not.
+If the player is in the air, you let gravity do its thing.
+Then, if the player hits the ground, you set `jumping` to `false`.
+If the player is not jumping, you do nothing.
+
+But how do you check if the player has hit the ground?
+To do that, you need to use the vertical position of the centre of the player ball and its radius.
+The value `player.y + player.radius` will be the vertical position of the bottom of the player ball and if that value matches the height of the canvas, then the ball just hit the ground:
+
+![Diagram showing how the velocity of the ball might try to move the ball past the ground, explaining why we can't check for a pixel-perfect collision between the bottom of the ball and the ground, instead checking if the bottom of the ball is past the ground level.](_ball_ground.webp "Checking for a collision with the ground.")
+
+The diagram above shows an issue we might have.
+The position of the player depends on the value of its vertical velocity and when the player is close to the ground you can't know if the value of the velocity will be aligned exactly with the ground level or if it's too large, in which case the bottom of the player ball is pushed bast the ground level.
+That's why, instead of checking if the bottom of the ball is touching the ground, you'll check if it's _past_ the ground level:
+
+```js
+const player = {
+    x: 50,
+    y: 50,
+    vy: 0,
+    radius: 15,
+    jumping: true,  // <-- NEW
+}
+const gravity = 0.4;
+
+function update() {  // Update the game entities.
+    if (player.jumping) {
+        player.vy += gravity;
+        player.y += player.vy;
+
+        // Is the bottom of the player ball past the ground?
+        if (player.y + player.radius >= canvas.height) {
+            player.jumping = false;
+            player.y = canvas.height - player.radius;
+        }
+    }
+}
+```
+
+You can see that I enclosed the code that updates the vertical position of the player in a conditional that checks if the player is jumping.
+Inside it, I also check if the bottom of the player is past the ground level, at which point I set `player.jumping = false` and adjust the vertical position of the player to ensure the player ball is touching the ground instead of being partially buried.
+(Try removing that line to see what happens.)
+
+With this logic in place, [you can see the ball stops when it hits the ground](/blog/javascript-2d-scrolling-game-tutorial/game10.html).
+
+<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game10.html"></iframe>
