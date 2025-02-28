@@ -1,0 +1,16 @@
+date: 28-02-2025 12:08
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This tutorial walks you through implementing a 2D scrolling game in JavaScript."
+    og:image: "https://mathspp.com/blog/javascript-2d-scrolling-game-tutorial/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/javascript-2d-scrolling-game-tutorial/thumbnail.webp"
+references: []
+slug: "javascript-2d-scrolling-game-tutorial"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+      - game
+      - javascript
+      - programming
+title: JavaScript 2D scrolling game tutorial

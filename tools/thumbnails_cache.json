@@ -18,10 +18,10 @@
     "words": 35302
   },
   "programming": {
-    "articles": 292,
-    "code_snippets": 3627,
-    "loc": 34998,
-    "words": 352339
+    "articles": 293,
+    "code_snippets": 3630,
+    "loc": 35020,
+    "words": 353386
   },
   "python": {
     "articles": 276,
@@ -48,10 +48,10 @@
     "words": 22069
   },
   "game": {
-    "articles": 7,
-    "code_snippets": 49,
-    "loc": 491,
-    "words": 6700
+    "articles": 8,
+    "code_snippets": 52,
+    "loc": 513,
+    "words": 7747
   },
   "pygame": {
     "articles": 14,
@@ -546,10 +546,10 @@
     "words": 2267
   },
   "javascript": {
-    "articles": 1,
-    "code_snippets": 2,
-    "loc": 22,
-    "words": 371
+    "articles": 2,
+    "code_snippets": 5,
+    "loc": 44,
+    "words": 1418
   },
   "shell": {
     "articles": 1,
@@ -564,10 +564,10 @@
     "words": 430
   },
   "__all": {
-    "articles": 394,
-    "code_snippets": 3744,
-    "loc": 36002,
-    "words": 427479
+    "articles": 395,
+    "code_snippets": 3747,
+    "loc": 36024,
+    "words": 428526
   },
   "fp": {
     "articles": 3,
