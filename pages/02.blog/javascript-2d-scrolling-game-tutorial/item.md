@@ -166,4 +166,4 @@ At each step, I will embed the state of the game for you to take a look at and I
 The only difference will be that I will require you to click the demo once for it to start, otherwise all demos will run without you actually seeing them.
 I will also get rid of the title “Best game ever” because it's in the way.
 
-<iframe width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game04.html"></iframe>
+<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game04.html"></iframe>

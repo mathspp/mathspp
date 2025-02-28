@@ -21,7 +21,7 @@
     "articles": 293,
     "code_snippets": 3631,
     "loc": 35035,
-    "words": 353633
+    "words": 353635
   },
   "python": {
     "articles": 276,
@@ -51,7 +51,7 @@
     "articles": 8,
     "code_snippets": 53,
     "loc": 528,
-    "words": 7994
+    "words": 7996
   },
   "pygame": {
     "articles": 14,
@@ -549,7 +549,7 @@
     "articles": 2,
     "code_snippets": 6,
     "loc": 59,
-    "words": 1665
+    "words": 1667
   },
   "shell": {
     "articles": 1,
@@ -567,7 +567,7 @@
     "articles": 395,
     "code_snippets": 3748,
     "loc": 36039,
-    "words": 428773
+    "words": 428775
   },
   "fp": {
     "articles": 3,
