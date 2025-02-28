@@ -127,4 +127,4 @@ That should make the canvas visible:
 
 ![The same white page showing a light blue rectangle under the title.](_canvas.webp "A light blue canvas.")
 
-<iframe src="/blog/javascript-2d-scrolling-game-tutorial/game04.html"></iframe>
+<iframe width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game04.html"></iframe>

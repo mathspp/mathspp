@@ -29,7 +29,7 @@ title: "Javascript blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">2</th>
-            <th style="text-align: center;">1,418</th>
+            <th style="text-align: center;">1,420</th>
             <th style="text-align: center;">44</th>
         </tr>
     </thead>
