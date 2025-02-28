@@ -749,7 +749,7 @@ function update() {  // Update the game entities.
         && player.x + player.radius >= obst.x
         && player.x - player.radius <= obst.x + obstacleWidth
     ) {
-        alert("You lost!");
+        console.log("You lost!");
     }
 }
 ```
@@ -760,20 +760,20 @@ The operator `&&` is the Boolean operator AND, and it's what you're using to com
  2. the right end of the player ball must be past the left edge of the obstacle; and
  3. the left end of the player ball must come before the right edge of the obstacle.
 
-By using the JavaScript function `alert` you get a cheap way of letting the user know they lost.
+By using the JavaScript function `console.log` you get a cheap way of letting the user know they lost.
+But they'll have to check the console, which isn't ideal...
 
 Reload your game and [try to avoid the obstacles for as long as you can](/blog/javascript-2d-scrolling-game-tutorial/game18.html):
 
 <iframe style="border: 0;" width="100%" height="330" src="/blog/javascript-2d-scrolling-game-tutorial/game18.html"></iframe>
 
 There's just one issue with your game...
-When you lose and close the alert saying that you lost...
-You get another alert!
-This happens because you are not stopping the game loop once the player loses; instead, you're just pausing it while the alert is shown.
-Once the alert is closed, the game loop resumes and immediately after the game realises you're still colliding with the obstacle.
+When you lose, you don't really see that you lost.
+You can even walk through obstacles and the game will keep going.
+This happens because you are not stopping the game loop once the player loses.
 You'll fix this next.
 
-Ah, but I lied.
+Oh, and I lied.
 There's also another issue.
 Your collision detection isn't perfect.
 In fact, it's far from perfect.

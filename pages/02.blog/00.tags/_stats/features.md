@@ -8,7 +8,7 @@ class: offset-box
     <thead>
         <tr>
             <th style="text-align: center;">395</th>
-            <th style="text-align: center;">432,729</th>
+            <th style="text-align: center;">432,715</th>
             <th style="text-align: center;">36,425</th>
         </tr>
     </thead>
