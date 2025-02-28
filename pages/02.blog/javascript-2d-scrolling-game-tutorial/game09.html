@@ -31,15 +31,21 @@
             const player = {
                 x: 50,
                 y: 50,
+                vy: 0,
                 radius: 15,
             }
+            const gravity = 0.4;
 
             function update() {  // Update the game entities.
+                player.vy += gravity;
+                player.y += player.vy;
             }
 
             const drawing_ctx = canvas.getContext("2d");
 
             function draw() {  // Draw the current game state.
+                // Clear previous frame.
+                drawing_ctx.clearRect(0, 0, canvas.width, canvas.height);
                 // Draw the player:
                 drawing_ctx.fillStyle = "red";
                 drawing_ctx.beginPath();

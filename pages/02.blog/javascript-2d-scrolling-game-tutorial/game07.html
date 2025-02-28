@@ -33,8 +33,10 @@
                 y: 50,
                 radius: 15,
             }
+            const gravity = 0.4;
 
             function update() {  // Update the game entities.
+                player.y += gravity;
             }
 
             const drawing_ctx = canvas.getContext("2d");

@@ -272,10 +272,10 @@ const player = {
     radius: 15,
 }
 
-const drawing_ctx = canvas.getContext("2d");
-
 function update() {  // Update the game entities.
 }
+
+const drawing_ctx = canvas.getContext("2d");
 
 function draw() {  // Draw the current game state.
     // Draw the player:
@@ -298,3 +298,117 @@ Note that the code that drew the player now has been moved into the function `dr
 If you run your game now, [everything should look the same](/blog/javascript-2d-scrolling-game-tutorial/game06.html):
 
 <iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game06.html"></iframe>
+
+However, you can see that something changed.
+To see that, go ahead and add a call to `console.log` inside the function `gameLoop`.
+For example, `console.log("Running the game loop once.");`.
+Do that, rerun your game, and open the JavaScript console.
+You should be flooded by copies of the same message over and over again!
+
+Your console might be clever and fold the repeated messages into a single notification, but they'll be there.
+The screenshot below shows how I logged the same message over 1,400 times in a short amount of time:
+
+![Screenshot of the JavaScript console showing that the message 'Running the game loop once' was logged over 1,400 times.](_flooding.webp "A message logged over 1,400 times.")
+
+When you run your code, you call the function `gameLoop` at the bottom, which will call the functions `update` and `draw`.
+Then, the function `gameLoop` calls the JavaScript function with `requestAnimationFrame(gameLoop)`.
+This function call is what ensures the function `gameLoop` runs again, a bit later, to create the next frame of our animation.
+Since the function calls itself with `requestAnimationFrame` as an intermediary, you create an infinite loop that runs your game.
+
+With the game loop in place, we can implement gravity!
+
+
+## Gravity
+
+To implement gravity, the vertical position of the player must go down at every frame.
+Since we want to _update_ the position of the player, we do that inside the function `update`:
+
+```js
+// ...
+
+const player = {
+    x: 50,
+    y: 50,
+    radius: 15,
+}
+const gravity = 0.4;
+
+function update() {
+    // Update the game entities.
+    player.y += gravity;
+}
+
+// ...
+```
+
+We add the value of `gravity` with the augmented assignment `+=`, which is equivalent to doing `player.y = player.y + gravity`, which effectively increases the value of `player.y` by the value stored in `gravity`.
+The reason we _add_ to make the player go down is because, in computers, the value of the coordinate `y` increases as you go down.
+That's why the player at position `y = 50` is near the top of the canvas.
+
+If you reload the game at this point, you'll see that gravity works...
+But drawing seems to have been broken!
+[Demo with gravity and broken drawing](/blog/javascript-2d-scrolling-game-tutorial/game07.html).
+
+<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game07.html"></iframe>
+
+
+## Clearing the screen before redrawing
+
+The issue is that you are drawing a red circle on the canvas without erasing what was drawn on the canvas before, which makes it look like the red ball is smearing the screen instead of falling due to gravity.
+To fix this issue, the function `draw` must start by clearing the previous frame:
+
+```js
+function draw() {  // Draw the current game state.
+    // Clear previous frame.
+    drawing_ctx.clearRect(0, 0, canvas.width, canvas.height);
+    // Draw the player:
+    drawing_ctx.fillStyle = "red";
+    drawing_ctx.beginPath();
+    drawing_ctx.arc(player.x, player.y, player.radius, 0, 2 * Math.PI);
+    drawing_ctx.fill();
+}
+```
+
+This should do the trick.
+[See the demo with drawing fixed here](/blog/javascript-2d-scrolling-game-tutorial/game08.html).
+
+<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game08.html"></iframe>
+
+But now we see another problem, and that is that the ball is falling too slowly.
+Gravity isn't linear like that.
+When a body is falling, it accelerates down!
+
+
+## Gravity and acceleration
+
+Fixing this requires a little bit of maths.
+Or code.
+But the code implements the maths.
+
+I won't bother you with the maths because I don't want to force you to digest it.
+It's something really worth understanding, really!
+Especially if you'll be creating other games!
+But I'll spare you for now.
+
+Instead of keeping track of the coordinate `y` and always incrementing that by the value of `gravity`, we create another player attribute for its vertical velocity.
+Each frame, we increment the vertical velocity by the value of the gravity and we increment the vertical position by the value of the vertical velocity:
+
+```js
+const player = {
+    x: 50,
+    y: 50,
+    vy: 0,  // <-- NEW
+    radius: 15,
+}
+const gravity = 0.4;
+
+function update() {  // Update the game entities.
+    player.vy += gravity;
+    player.y += player.vy;
+}
+```
+
+Since the vertical velocity keeps increasing, each frame the ball drops further than in the previous frame, making the ball accelerate downward.
+[Link for the demo with proper gravity](/blog/javascript-2d-scrolling-game-tutorial/game09.html).
+
+<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game09.html"></iframe>
