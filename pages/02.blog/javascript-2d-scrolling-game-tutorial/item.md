@@ -548,3 +548,485 @@ function jump() {
 With this extra check, [the player ball only jumps once when it's on the ground](/blog/javascript-2d-scrolling-game-tutorial/game13.html):
 
 <iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game13.html"></iframe>
+
+
+## Adding the first obstacle
+
+The next thing you'll do is add an obstacle that comes towards the player.
+I think we can go for rectangular obstacles because those are easy to manage.
+Start by creating a couple of relevant constants, holding information about the scrolling speed and the dimensions of the obstacles, and then create a list with a single obstacle object inside it:
+
+```js
+const speed = 3;
+const obstacleWidth = 20;
+const obstacleHeight = 50;
+const obstacles = [{ x: canvas.width, y: canvas.height - obstacleHeight }];
+
+function update() {  // Update the game entities.
+    // ...
+}
+```
+
+The values for `x` and `y` are the top-left corner of the rectangle, so if you set `x` to `canvas.width`, the obstacle is invisible and flush with the canvas right border.
+You need to update the value of `x` inside the function `update` to make the obstacle scroll toward the player:
+
+```js
+const speed = 3;
+const obstacleWidth = 20;
+const obstacleHeight = 50;
+const obstacles = [{ x: canvas.width, y: canvas.height - obstacleHeight }];
+
+function update() {  // Update the game entities.
+    // ...
+
+    obstacles[0].x -= speed;
+}
+```
+
+Finally, you need to draw the obstacle, otherwise you won't see it:
+
+```js
+function draw() {  // Draw the current game state.
+    // ...
+
+    // Draw the obstacle:
+    drawing_ctx.fillStyle = "black";
+    drawing_ctx.fillRect(obstacles[0].x, obstacles[0].y, obstacleWidth, obstacleHeight);
+}
+```
+
+Reload your game and [see how a black obstacle comes toward the player ball](/blog/javascript-2d-scrolling-game-tutorial/game14.html):
+
+<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game14.html"></iframe>
+
+
+## Preparing for multiple obstacles
+
+I know, I know, you don't lose if you hit the obstacle.
+I'll help you take care of that in a second.
+First, I want you to add the ability to generate randomly-spaced obstacles.
+The sooner you do this, the fewer lines of code you'll have to change afterwards!
+
+The list `obstacles` will always hold all of the obstacles on the screen, so whatever you did to this single obstacle, you'll want to do to all obstacles in the list instead.
+Lists have a method `forEach` that lets you apply a function to each element of the list in-place, so updating the position of the obstacles can go from
+
+```js
+obstacles[0].x -= speed;
+```
+
+to
+
+```js
+obstacles.forEach((obstacle) => { obstacle.x -= speed; });
+```
+
+Note that I'm using an anonymous function again, instead of creating a function `updateObstacleX` elsewhere and calling it here.
+Similarly, you can draw all obstacles by going from
+
+```js
+drawing_ctx.fillStyle = "black";
+drawing_ctx.fillRect(obstacles[0].x, obstacles[0].y, obstacleWidth, obstacleHeight);
+```
+
+to
+
+```js
+drawing_ctx.fillStyle = "black";
+obstacles.forEach((obstacle) => {
+    drawing_ctx.fillRect(obstacle.x, obstacle.y, obstacleWidth, obstacleHeight);
+});
+```
+
+If you do this, [your game should remain functionally the same as before](/blog/javascript-2d-scrolling-game-tutorial/game15.html).
+However, you are now ready to handle an arbitrary number of obstacles.
+
+<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game15.html"></iframe>
+
+
+## Adding randomly-spaced obstacles
+
+The list `obstacles` has a method `push` that lets you put new obstacles inside that list and that's what you will use.
+Inside the function `update`, you will check if there are any obstacles at all and if the last obstacle is far away enough.
+If it is, you create a new obstacle at the right edge of the canvas:
+
+```js
+// ...
+const obstacles = [];  // <-- Starts empty.
+let nextObstacleGap = 0;  // <-- NEW.
+
+function update() {  // Update the game entities.
+    // ...
+
+    let len = obstacles.length;
+    // Is there enough space between the last obstacle and the right edge of the canvas?
+    if (len === 0 || canvas.width - obstacles[len - 1].x >= nextObstacleGap) {
+        obstacles.push({ x: canvas.width, y: canvas.height - obstacleHeight });
+        nextObstacleGap = canvas.width / 4 + Math.random() * 100;
+    }
+
+    obstacles.forEach((obstacle) => { obstacle.x -= speed; });
+}
+```
+
+The operator `||` corresponds to the Boolean operator OR and `Math.random()` generates a pseudo-random number between 0 and 1, so multiplying it by 100 makes it so that you're generating a random number between 0 and 100 and this spaces the obstacles randomly.
+
+Reload your game.
+You should see [obstacles coming at the player non-stop](/blog/javascript-2d-scrolling-game-tutorial/game16.html):
+
+<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game16.html"></iframe>
+
+
+## Removing passed obstacles
+
+At this point, you are creating new obstacles a couple of times per minute.
+In your code, use `console.log` to log the length of the list `obstacles` every time you create a new obstacle.
+You should see that your list keeps growing indefinitely, even though there are never more than 3 or 4 obstacles on the screen at the same time.
+If you wait for long enough, you'll crash your browser because you have a humongous list of obstacles that are _way_ past the left edge of the canvas.
+
+To combat this, and to make sure that your game keeps running smoothly, you'll want to remove obstacles that are to the left of the canvas.
+You can do this by using the method `filter`, which accepts a predicate function that picks what values to keep.
+`forEach` modified the values in-place but `filter` produces a new list, so you'll want to reassign `obstacles` to the result of this filtering operation, which does a computation similar to the one used to check if the player ball is past the ground level:
+
+```js
+function update() {  // Update the game entities.
+    // ...
+
+    obstacles.forEach((obstacle) => { obstacle.x -= speed; });
+    obstacles = obstacles.filter((obstacle) => { return obstacle.x + obstacleWidth >= 0; });
+}
+```
+
+Note that you're reassigning to `obstacles`, so you have to go back to where you first declared `obstacles` and stop using the keyword `const`.
+Instead, you'll use the keyword `let` which creates a variable that you are free to reassign to:
+
+```js
+// ...
+const speed = 3;
+const obstacleWidth = 20;
+const obstacleHeight = 50;
+// const obstacles = [];
+let obstacles = [];
+let nextObstacleGap = 0;
+```
+
+If you add a `console.log(obstacles.length)` inside the function `update` you will see that the value logged stays between 2 and 4 instead of growing indefinitely.
+This [new version of your game should look the same as the previous one](/blog/javascript-2d-scrolling-game-tutorial/game17.html), but now it won't crash your computer if you let the game running during the night:
+
+<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game17.html"></iframe>
+
+
+## Detecting collisions with the obstacles
+
+It's time!
+It's time to modify the game so that you can actually lose by colliding with an obstacle.
+
+To do this, I will show you a quick and dirty way of checking if the player ball is colliding with the obstacle.
+This method won't be exact, but it will be quite simple to compute (and fast), so that's what I recommend I use in your game.
+
+To check if the player ball is hitting an obstacle, you'll want to check if the right edge of the ball is to the right of the left border of the obstacle _and_ the bottom of the ball is below the top edge of the obstacle:
+
+![Diagram showing how to approximately detect if the player ball collided with an obstacle, by checking if the right edge ](_ball_obstacle_right.webp "The ball is past the obstacle's left edge.")
+
+Now, think about what happens when the player ball jumps over the obstacle and starts landing on the ground...
+The two conditions I mentioned will also be true: the right edge of the ball will be to the right of the left border of the obstacle _and_ the bottom of the ball will be below the top edge of the obstacle:
+
+![Diagram showing how a ball that cleared an obstacle is evidently to its right and with the top edge of the obstacle above the bottom edge of the ball.](_ball_obstacle_right_past.webp "The ball is past the obstacle.")
+
+This shows that you need to check another condition: you need to check that the ball hasn't cleared the obstacle yet, and you do that by making sure that the left edge of the ball isn't past the right edge of the obstacle:
+
+![Diagram showing how to check that the player ball hasn't cleared the obstacle yet.](_ball_obstacle_left.webp "The ball isn't past the obstacle yet.")
+
+It's by checking these three conditions, together, that you can detect (approximately!) that the player ball hit an obstacle.
+The ball will ever only hit the first obstacle in the list, so that's the one we check against in the function `update`:
+
+```js
+function update() {  // Update the game entities.
+    // ...
+
+    let obst = obstacles[0];
+    if (
+        player.y + player.radius >= obst.y
+        && player.x + player.radius >= obst.x
+        && player.x - player.radius <= obst.x + obstacleWidth
+    ) {
+        alert("You lost!");
+    }
+}
+```
+
+The operator `&&` is the Boolean operator AND, and it's what you're using to combine the three conditions that we mentioned above, respectively:
+
+ 1. the bottom of the player ball must be below the top edge of the obstacle;
+ 2. the right end of the player ball must be past the left edge of the obstacle; and
+ 3. the left end of the player ball must come before the right edge of the obstacle.
+
+By using the JavaScript function `alert` you get a cheap way of letting the user know they lost.
+
+Reload your game and [try to avoid the obstacles for as long as you can](/blog/javascript-2d-scrolling-game-tutorial/game18.html):
+
+<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game18.html"></iframe>
+
+There's just one issue with your game...
+When you lose and close the alert saying that you lost...
+You get another alert!
+This happens because you are not stopping the game loop once the player loses; instead, you're just pausing it while the alert is shown.
+Once the alert is closed, the game loop resumes and immediately after the game realises you're still colliding with the obstacle.
+You'll fix this next.
+
+Ah, but I lied.
+There's also another issue.
+Your collision detection isn't perfect.
+In fact, it's far from perfect.
+There are situations when the player ball won't be touching the obstacle and yet the code you wrote will end the game:
+
+![Diagram showing a situation where the ball isn't touch an obstacle and yet the conditions for the collision are verified.](_ball_obstacle_no_touch.webp "Fake collision.")
+
+This is the price to pay for a simple collision check.
+Feel free to draw some diagrams yourself, to see if you can come up with a better way of handling collisions.
+
+
+## Stopping the game after losing
+
+The easiest way to fix this is by adding a Boolean flag that keeps track of whether the player is playing or not.
+When the player loses, the game stops:
+
+```js
+let gameOver = false;
+
+function update() {  // Update the game entities.
+    // ...
+
+    let obst = obstacles[0];
+    if (
+        player.y + player.radius >= obst.y
+        && player.x + player.radius >= obst.x
+        && player.x - player.radius <= obst.x + obstacleWidth
+    ) {
+        gameOver = true;
+    }
+}
+
+// ...
+
+function gameLoop() {
+    update();
+    draw();
+    if (!gameOver) requestAnimationFrame(gameLoop);
+}
+```
+
+The modified line of code inside the function `gameLoop` shows that you don't need to use the braces when the code inside an `if` is a single statement:
+
+```js
+if (!gameOver) requestAnimationFrame(gameLoop);
+/* Equivalent to:
+if (!gameOver) {
+    requestAnimationFrame(gameLoop);
+}
+*/
+```
+
+Reload the game and [check that the game stops for real when you lose](/blog/javascript-2d-scrolling-game-tutorial/game19.html):
+
+<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game19.html"></iframe>
+
+
+## Creating a “Game over” screen
+
+Another nice touch is to add a “Game over” screen when the player loses.
+You can keep it simple by just writing “Game over” in the canvas when the game is over.
+You can write text by using the method `fillText` that the drawing context of the canvas provides:
+
+```js
+function draw() {  // Draw the current game state.
+    // ...
+
+    if (gameOver) {
+        drawing_ctx.fillStyle = "black";
+        drawing_ctx.font = "60px Arial";
+        drawing_ctx.fillText("Game over", canvas.width / 2 - 160, canvas.height / 2 + 15);
+    }
+}
+```
+
+The arguments for the function `fillText` are the text you want to write, and the `x` and `y` coordinates to position the text.
+It took a bit of trial and error to kind of centre the text on the canvas, since I'm not showing you any tools to figure out how much space the text would occupy, which would allow you to compute the exact coordinates that would centre the text on the canvas.
+
+Go ahead, play the game, and lose.
+You should [see the message “Game over” across the screen after you lose](/blog/javascript-2d-scrolling-game-tutorial/game20.html):
+
+<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game20.html"></iframe>
+
+
+## Keeping track of score
+
+To finalise this tutorial, you'll add a score to the game.
+You can definitely do something different, if you want, but I'll show you how to add a simple score that increases with the total playing time:
+
+```js
+// ...
+let gameOver = false;
+let score = 0;
+
+function update() {  // Update the game entities.
+    ++score;
+
+    // ...
+}
+
+function draw() {
+    // ...
+    // Draw the score:
+    drawing_ctx.fillStyle = "black";
+    drawing_ctx.font = "20px Arial";
+    drawing_ctx.fillText("Score: " + score, 20, 30);
+
+    // Draw the “Game over” screen:
+    // ...
+}
+```
+
+Reload your game and appreciate the fact that now [your game has a scoring system](/blog/javascript-2d-scrolling-game-tutorial/game21.html)!
+
+<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game21.html"></iframe>
+
+
+## Wrap up
+
+Congratulations, you did it!
+You wrote a minigame in JavaScript.
+If you're having fun with your game, here are a few challenges you can try:
+
+ - Modify the scoring system so that increases by 1 each time you jump over an obstacle.
+ - Modify the game mechanics so that the speed increases gradually over time.
+ - If you try the above, tweak obstacle creation to space obstacles more when the game is scrolling faster.
+ - Modify obstacle creation so that obstacle height and width are random (careful to ensure you can still jump over them).
+
+
+## Full code
+
+You can find the full code for your game here:
+
+<details markdown=1>
+<summary><code>game.html</code></summary>
+
+```html
+<html>
+
+<body>
+    <canvas id="gameCanvas" style="background: lightblue; display: block; margin: auto;"></canvas>
+
+    <script>
+        const canvas = document.getElementById("gameCanvas");
+
+        canvas.width = 600;
+        canvas.height = 300;
+
+        const player = {
+            x: 50,
+            y: 50,
+            vy: 0,
+            radius: 15,
+            jumping: true,
+        }
+        const gravity = 0.4;
+
+        function jump() {
+            if (!player.jumping) {
+                player.vy = -8;
+                player.jumping = true;
+            }
+        }
+
+        document.addEventListener(
+            "keydown",
+            (event) => { if (event.code === "Space") jump() },
+        );
+
+        const speed = 3;
+        const obstacleWidth = 20;
+        const obstacleHeight = 50;
+        let obstacles = [];
+        let nextObstacleGap = 0;
+
+        let gameOver = false;
+        let score = 0;
+
+        function update() {  // Update the game entities.
+            ++score;
+
+            if (player.jumping) {
+                player.vy += gravity;
+                player.y += player.vy;
+
+                // Is the bottom of the player ball past the ground?
+                if (player.y + player.radius >= canvas.height) {
+                    player.jumping = false;
+                    player.y = canvas.height - player.radius;
+                }
+            }
+
+            let len = obstacles.length;
+            if (len === 0 || canvas.width - obstacles[len - 1].x >= nextObstacleGap) {
+                obstacles.push({ x: canvas.width, y: canvas.height - obstacleHeight });
+                nextObstacleGap = canvas.width / 4 + Math.random() * 100;
+            }
+
+            obstacles.forEach((obstacle) => { obstacle.x -= speed; });
+            obstacles = obstacles.filter((obstacle) => { return obstacle.x + obstacleWidth >= 0; });
+
+            let obst = obstacles[0];
+            if (
+                player.y + player.radius >= obst.y
+                && player.x + player.radius >= obst.x
+                && player.x - player.radius <= obst.x + obstacleWidth
+            ) {
+                gameOver = true;
+            }
+        }
+
+        const drawing_ctx = canvas.getContext("2d");
+
+        function draw() {  // Draw the current game state.
+            // Clear previous frame.
+            drawing_ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw the player:
+            drawing_ctx.fillStyle = "red";
+            drawing_ctx.beginPath();
+            drawing_ctx.arc(player.x, player.y, player.radius, 0, 2 * Math.PI);
+            drawing_ctx.fill();
+
+            // Draw the obstacle:
+            drawing_ctx.fillStyle = "black";
+            obstacles.forEach((obstacle) => {
+                drawing_ctx.fillRect(obstacle.x, obstacle.y, obstacleWidth, obstacleHeight);
+            });
+
+            // Draw the score:
+            drawing_ctx.fillStyle = "black";
+            drawing_ctx.font = "20px Arial";
+            drawing_ctx.fillText("Score: " + score, 20, 30);
+
+            // Draw the “Game over” screen:
+            if (gameOver) {
+                drawing_ctx.fillStyle = "black";
+                drawing_ctx.font = "60px Arial";
+                drawing_ctx.fillText("Game over", canvas.width / 2 - 160, canvas.height / 2 + 15);
+            }
+        }
+
+        function gameLoop() {
+            update();
+            draw();
+            if (!gameOver) requestAnimationFrame(gameLoop);
+        }
+
+        gameLoop();
+    </script>
+</body>
+
+</html>
+```
+
+</details>

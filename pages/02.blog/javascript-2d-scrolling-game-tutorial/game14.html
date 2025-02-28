@@ -1,0 +1,104 @@
+<html>
+
+<body>
+    <canvas id="gameCanvas" style="background: lightblue; display: block; margin: auto;"></canvas>
+
+    <script>
+        const demo_canvas = document.getElementById("gameCanvas");
+
+        demo_canvas.width = 600;
+        demo_canvas.height = 300;
+
+        // Extra code I needed to put here so demos work.
+        // The code for the tutorial is all inside the function "demo",
+        // although YOU won't have the function "demo".
+        const demo_ctx = demo_canvas.getContext("2d");
+        demo_ctx.fillStyle = "lightgray";
+        demo_ctx.fillRect(0, 0, demo_canvas.width, demo_canvas.height);
+        demo_ctx.fillStyle = "black";
+        demo_ctx.font = "60px Arial";
+        demo_ctx.fillText("Click to start", demo_canvas.width / 2 - 170, demo_canvas.height / 2 + 15);
+
+        function demo() {
+            demo_ctx.clearRect(0, 0, demo_canvas.width, demo_canvas.height);
+
+            // This is the start of the tutorial code:
+            const canvas = document.getElementById("gameCanvas");
+
+            canvas.width = 600;
+            canvas.height = 300;
+
+            const player = {
+                x: 50,
+                y: 50,
+                vy: 0,
+                radius: 15,
+                jumping: true,
+            }
+            const gravity = 0.4;
+
+            function jump() {
+                if (!player.jumping) {
+                    player.vy = -8;
+                    player.jumping = true;
+                }
+            }
+
+            document.addEventListener(
+                "keydown",
+                (event) => { if (event.code === "Space") jump() },
+            );
+
+            const speed = 3;
+            const obstacleWidth = 20;
+            const obstacleHeight = 50;
+            const obstacles = [{ x: canvas.width, y: canvas.height - obstacleHeight }];
+
+            function update() {  // Update the game entities.
+                if (player.jumping) {
+                    player.vy += gravity;
+                    player.y += player.vy;
+
+                    // Is the bottom of the player ball past the ground?
+                    if (player.y + player.radius >= canvas.height) {
+                        player.jumping = false;
+                        player.y = canvas.height - player.radius;
+                    }
+                }
+
+                obstacles[0].x -= speed;
+            }
+
+            const drawing_ctx = canvas.getContext("2d");
+
+            function draw() {  // Draw the current game state.
+                // Clear previous frame.
+                drawing_ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                // Draw the player:
+                drawing_ctx.fillStyle = "red";
+                drawing_ctx.beginPath();
+                drawing_ctx.arc(player.x, player.y, player.radius, 0, 2 * Math.PI);
+                drawing_ctx.fill();
+
+                // Draw the obstacle:
+                drawing_ctx.fillStyle = "black";
+                drawing_ctx.fillRect(obstacles[0].x, obstacles[0].y, obstacleWidth, obstacleHeight);
+            }
+
+            function gameLoop() {
+                update();
+                draw();
+                requestAnimationFrame(gameLoop);
+            }
+
+            gameLoop();
+
+            // This is the end of the tutorial code.
+        }
+
+        document.addEventListener("click", (event) => demo());
+    </script>
+</body>
+
+</html>
