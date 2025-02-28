@@ -467,3 +467,84 @@ Inside it, I also check if the bottom of the player is past the ground level, at
 With this logic in place, [you can see the ball stops when it hits the ground](/blog/javascript-2d-scrolling-game-tutorial/game10.html).
 
 <iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game10.html"></iframe>
+
+
+## Jumping
+
+The next thing you'll do is add functionality to make the ball jump when the player hits the spacebar.
+To do this, you will need to implement an “event handler”.
+When a person interacts with a web page, scrolling up and down, clicking menu buttons, following links, and pressing keys, JavaScript gets “notifications” of these interactions in the form of events.
+When you receive these notifications, you are free to ignore them (the default) or you can react to them.
+For example, now you'll want to react to a <kbd>SPACE</kbd> key press by making the player ball jump.
+
+The first step to create an event handler is to write a function that performs the action you want.
+To make the ball jump, you need to set its vertical velocity to a negative value and set `player.jumping` to `true`:
+
+```js
+function jump() {
+    player.vy = -8;
+    player.jumping = true;
+}
+```
+
+After that, you tell JavaScript that you want to run this function when the user presses the <kbd>SPACE</kbd> key:
+
+```js
+function jump() {
+    player.vy = -8;
+    player.jumping = true;
+}
+
+document.addEventListener(
+    "keydown",
+    jump,
+);
+```
+
+The function `addEventListener` accepts the name of the type of event you care about (key presses, mouse clicks, scrolling the page, etc) and the function you want to run when that event happens. 
+Go ahead and [check that pressing <kbd>SPACE</kbd> makes the player ball jump](/blog/javascript-2d-scrolling-game-tutorial/game11.html):
+
+<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game11.html"></iframe>
+
+Incidentally, you will also see that every single key makes the ball jump, which is not what you wanted.
+This is because the event `"keydown"` is used for every single key, but you can figure out which key was pressed and only jump if it was the correct key.
+To do this, you will create an anonymous function that only calls `jump` if the key pressed was the correct one:
+
+```js
+document.addEventListener(
+    "keydown",
+    (event) => { if (event.code === "Space") jump() },
+);
+```
+
+The notation `(...) => {...}` creates an anonymous function in JavaScript.
+Inside the parentheses `()` you write the list of arguments you expect.
+In this case, we expect an object with information about the event, so we call it `event`.
+Inside the curly braces `{}` you can write arbitrary JavaScript statements.
+In this case, you just want to look at `event.code`, which holds information about the key pressed, and check if it's `"Space"`.
+
+The reason you are checking for equality with a triple equals sign `===` instead of a double equals sign `==` is because `==` is a looser type of equality that often catches people off guard.
+JavaScript's `===` is typically the same as standard equality comparison in most other languages.
+For example, `2 == "2"` evaluates to `true` in JavaScript but `2 === "2"` evaluates to `false`.
+In this concrete instance, it's unlikely that using `==` would be a problem, but it's best to use `===` by default and only use `==` when you know that's exactly what you want instead of using `==` by default and having to decide, every single time, if that's going to be dangerous or not.
+
+With this modified event handler, [the ball only jumps when the user presses <kbd>SPACE</kbd>](/blog/javascript-2d-scrolling-game-tutorial/game12.html):
+
+<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game12.html"></iframe>
+
+The next issue to fix is the fact that the ball essentially starts flying if you press <kbd>SPACE</kbd> repeatedly, which shouldn't happen.
+The idea is that the ball can only jump if it's on the ground, so that's a check you need to add before making the ball jump.
+To check if the player is _not_ jumping, you'll need the Boolean operator NOT, which is an exclamation mark in JavaScript:
+
+```js
+function jump() {
+    if (!player.jumping) {
+        player.vy = -8;
+        player.jumping = true;
+    }
+}
+```
+
+With this extra check, [the player ball only jumps once when it's on the ground](/blog/javascript-2d-scrolling-game-tutorial/game13.html):
+
+<iframe style="border: 0;" width="100%" height="400" src="/blog/javascript-2d-scrolling-game-tutorial/game13.html"></iframe>

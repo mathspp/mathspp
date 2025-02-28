@@ -37,6 +37,16 @@
             }
             const gravity = 0.4;
 
+            function jump() {
+                player.vy = -8;
+                player.jumping = true;
+            }
+
+            document.addEventListener(
+                "keydown",
+                (event) => { if (event.code === "Space") jump() },
+            );
+
             function update() {  // Update the game entities.
                 if (player.jumping) {
                     player.vy += gravity;
