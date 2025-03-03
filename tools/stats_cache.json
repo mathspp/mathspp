@@ -5563,5 +5563,20 @@
       "loc": 425,
       "words": 5306
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/binary-search-as-a-bidirectional-generator": {
+    "timestamp": 1741015055.9690895,
+    "tags": [
+      "algorithms",
+      "generators",
+      "programming",
+      "python"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 6,
+      "loc": 136,
+      "words": 783
+    }
   }
 }

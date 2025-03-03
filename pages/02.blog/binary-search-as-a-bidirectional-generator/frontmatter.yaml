@@ -1,0 +1,17 @@
+date: 03-03-2025 14:20
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This article proposes an implementation of an ergonomic binary search algorithm implemented as a bidirectional generator."
+    og:image: "https://mathspp.com/blog/binary-search-as-a-bidirectional-generator/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/binary-search-as-a-bidirectional-generator/thumbnail.webp"
+references: []
+slug: "binary-search-as-a-bidirectional-generator"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+      - algorithms
+      - generators
+      - programming
+      - python
+title: Binary search as a bidirectional generator
