@@ -128,7 +128,7 @@ The rationale behind the values `1` and `-1` is that they indicate the direction
 The value `1` means that the guess needs to move in the positive direction, which means the guess is too low.
 This is as valid as imagining that the `1` and `-1` should indicate the result of the comparison between the guess and the value we are looking for, in which case `1` should be used to indicate that the guess is too high.
 
-To avoid this issue, the feedback values can be turned into values of an enumeration, forcing the user to be more verbose and infinitely clearer:
+To avoid this ambiguity and so that users don't have the temptation to guess which is which, the feedback values can be turned into values of an enumeration, forcing the user to be more verbose and infinitely clearer:
 
 ```py
 from collections.abc import Generator
