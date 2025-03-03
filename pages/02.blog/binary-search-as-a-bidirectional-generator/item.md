@@ -204,6 +204,14 @@ def unbounded_binary_search(left: int) -> Generator[int, FeedbackType, None]:
     """Generates guesses for an unbounded binary search in [left, inf).
 
     Send values from the enum FeedbackType to direct the search.
+
+    Example:
+    >>> sn = round(random.expovariate(1e-16))
+    >>> for guess in searcher:
+    ...     feedback = 1 if guess < sn else -1 if guess > sn else 0
+    ...     searcher.send(feedback)
+    ...
+    >>> print(f"Secret number was {guess}.")
     """
     # Search for an upper bound.
     delta = 1

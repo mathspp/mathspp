@@ -2,7 +2,7 @@
   "__all": {
     "articles": 396,
     "code_snippets": 3783,
-    "loc": 36563,
+    "loc": 36571,
     "words": 433628
   },
   "bpci": {
@@ -26,19 +26,19 @@
   "programming": {
     "articles": 294,
     "code_snippets": 3666,
-    "loc": 35559,
+    "loc": 35567,
     "words": 358488
   },
   "python": {
     "articles": 277,
     "code_snippets": 3536,
-    "loc": 34408,
+    "loc": 34416,
     "words": 344739
   },
   "algorithms": {
     "articles": 24,
     "code_snippets": 246,
-    "loc": 2981,
+    "loc": 2989,
     "words": 28440
   },
   "llm": {
@@ -374,7 +374,7 @@
   "generators": {
     "articles": 6,
     "code_snippets": 40,
-    "loc": 486,
+    "loc": 494,
     "words": 2800
   },
   "open source": {
