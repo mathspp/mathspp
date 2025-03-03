@@ -70,6 +70,10 @@ print(f"Secret number was {guess}.")
 # Secret number was 42.
 ```
 
+The highlight is that using the binary search amounts to looping over the searcher with `for guess in searcher`.
+Then, using the method `send` you can inform the searcher of whether it should go higher or lower.
+When you pass in the `0`, the searcher ends automatically and you exit the loop without having to break out of it explicitly.
+
 
 ## Implementation
 
