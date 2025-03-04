@@ -377,7 +377,7 @@ def check_grid_size(tl, br):
     x2, y2 = br
     width = abs(x1 - x2)
     height = abs(y1 - y2)
-    return width >= 50 and height >= 50 and width * 0.95 <= height <= width * 1.05
+    return width &gt;= 50 and height >= 50 and width * 0.95 <= height <= width * 1.05
 ```
 
 </details>
