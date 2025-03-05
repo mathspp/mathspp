@@ -16,6 +16,7 @@ TAGS_CACHE_FILE = Path(__file__).parent / "tags_cache.json"
 
 YAML_LOADER = YAML()
 
+
 def load_cache(file_path: Path):
     with open(file_path, "r") as f:
         return json.load(f)
@@ -53,6 +54,12 @@ def split_code_and_text(contents: str) -> tuple[str, str]:
         return ""
 
     contents = re.sub("```.*?```", regex_replacer, contents, flags=re.DOTALL)
+    contents = re.sub(
+        r'<pre><code( class=".*?")?>.*?</code></pre>',
+        regex_replacer,
+        contents,
+        flags=re.DOTALL,
+    )
     return contents, code_snippets
 
 
@@ -72,7 +79,8 @@ def get_file_stats_and_tags(cache: dict, filepath: Path) -> dict:
     cached_values = cache.get(str(folder), {})
     cached_timestamp = cached_values.get("timestamp", 0)
     last_timestamp = max(
-        file_path.stat().st_mtime for file_path in get_files_that_invalidate_cache(folder)
+        file_path.stat().st_mtime
+        for file_path in get_files_that_invalidate_cache(folder)
     )
     if last_timestamp > cached_timestamp:
         contents, metadata = get_contents_and_metadata(filepath)
@@ -113,6 +121,7 @@ def main():
 
     save_cache(cache, STATS_CACHE_FILE)
     save_cache(aggregated_stats, TAGS_CACHE_FILE)
+
 
 if __name__ == "__main__":
     main()
