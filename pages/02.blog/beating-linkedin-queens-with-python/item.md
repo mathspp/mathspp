@@ -272,11 +272,10 @@ So, `expanding_grid` starts by producing positions close to the top-left corner 
 
 The code for the auxiliary functions `expanding_range`, `is_black`, `expand_grid`, and `check_grid_size`, can be seen below.
 
-<details markdown=1>
+<details>
 <summary>Source code for <code>expanding_range</code></summary>
 
-```py
-def expanding_range(max_size):
+<pre><code class="language-py">def expanding_range(max_size):
     """Produces all x, y values in a square of the given size ordered by Chebyshev
     distance to the point (0, 0).
 
@@ -296,16 +295,15 @@ def expanding_range(max_size):
             yield (size, y)
         for x in range(size):
             yield (x, size)
-```
+</code></pre>
 
 </details>
 
 
-<details markdown=1>
+<details>
 <summary>Source code for <code>is_black</code></summary>
 
-```py
-def is_black(c):
+<pre><code class="language-py">def is_black(c):
     """Is this colour essentially black?"""
     if c is None:
         return False
@@ -315,15 +313,14 @@ def is_black(c):
         return c <= 15
     # Ignore the alpha channel.
     return all(channel <= 15 for channel in c[:3])
-```
+</code></pre>
 
 </details>
 
-<details markdown=1>
+<details>
 <summary>Source code for <code>expand_grid</code></summary>
 
-```py
-def expand_grid(img, tl):
+<pre><code class="language-py">def expand_grid(img, tl):
     """Expand the grid in the image with the given top-left corner.
 
     Returns the 4 corners of the grid found, starting at the top-left and going
@@ -358,16 +355,15 @@ def expand_grid(img, tl):
         (nx, ny),  # bottom-right
         (x, ny),  # bottom-left
     )
-```
+</code></pre>
 
 </details>
 
-<details markdown="block">
+<details>
 <summary>Source code for <code>check_grid_size</code></summary>
 
 
-<pre><code class="language-py">
-def check_grid_size(tl, br):
+<pre><code class="language-py">def check_grid_size(tl, br):
     """Does the grid look approximately square of a large enough size?
 
     We don't check for an exact square because the border of the puzzle has some width
@@ -621,8 +617,7 @@ The program depends on `click` (for the basic CLI) and `pillow` (to manipulate i
 <details markdown=1>
 <summary>Full source code</summary>
 
-```py
-from itertools import groupby, product
+<pre><code class="language-py">from itertools import groupby, product
 from pathlib import Path
 
 import click
@@ -878,6 +873,6 @@ def main(puzzle_path) -> None:
 
 if __name__ == "__main__":
     main()
-```
+</code></pre>
 
 </details>
