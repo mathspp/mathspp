@@ -54,6 +54,7 @@ def split_code_and_text(contents: str) -> tuple[str, str]:
         return ""
 
     contents = re.sub("```.*?```", regex_replacer, contents, flags=re.DOTALL)
+    # When using `details` tags, sometimes I need to include the code in pure HTML
     contents = re.sub(
         r'<pre><code( class=".*?")?>.*?</code></pre>',
         regex_replacer,

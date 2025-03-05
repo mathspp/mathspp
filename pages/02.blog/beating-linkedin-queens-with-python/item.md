@@ -874,5 +874,4 @@ def main(puzzle_path) -> None:
 if __name__ == "__main__":
     main()
 </code></pre>
-
 </details>
