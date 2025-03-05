@@ -366,7 +366,7 @@ def expand_grid(img, tl):
 <summary>Source code for <code>check_grid_size</code></summary>
 
 
-```py
+<pre><code class="language-py">
 def check_grid_size(tl, br):
     """Does the grid look approximately square of a large enough size?
 
@@ -379,7 +379,7 @@ def check_grid_size(tl, br):
     width = abs(x1 - x2)
     height = abs(y1 - y2)
     return width >= 50 and height >= 50 and width * 0.95 <= height <= width * 1.05
-```
+</code></pre>
 
 
 </details>

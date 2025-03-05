@@ -29,8 +29,8 @@ title: "Image processing blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">3</th>
-            <th style="text-align: center;">4,611</th>
-            <th style="text-align: center;">751</th>
+            <th style="text-align: center;">4,703</th>
+            <th style="text-align: center;">739</th>
         </tr>
     </thead>
     <tbody>

@@ -1,9 +1,9 @@
 {
   "__all": {
     "articles": 396,
-    "code_snippets": 3783,
-    "loc": 36571,
-    "words": 433641
+    "code_snippets": 3782,
+    "loc": 36559,
+    "words": 433733
   },
   "bpci": {
     "articles": 10,
@@ -25,21 +25,21 @@
   },
   "programming": {
     "articles": 294,
-    "code_snippets": 3666,
-    "loc": 35567,
-    "words": 358501
+    "code_snippets": 3665,
+    "loc": 35555,
+    "words": 358593
   },
   "python": {
     "articles": 277,
-    "code_snippets": 3536,
-    "loc": 34416,
-    "words": 344752
+    "code_snippets": 3535,
+    "loc": 34404,
+    "words": 344844
   },
   "algorithms": {
     "articles": 24,
-    "code_snippets": 246,
-    "loc": 2989,
-    "words": 28453
+    "code_snippets": 245,
+    "loc": 2977,
+    "words": 28545
   },
   "llm": {
     "articles": 5,
@@ -139,21 +139,21 @@
   },
   "image processing": {
     "articles": 3,
-    "code_snippets": 43,
-    "loc": 751,
-    "words": 4611
+    "code_snippets": 42,
+    "loc": 739,
+    "words": 4703
   },
   "recursion": {
     "articles": 12,
-    "code_snippets": 106,
-    "loc": 1521,
-    "words": 16281
+    "code_snippets": 105,
+    "loc": 1509,
+    "words": 16373
   },
   "slice of life": {
     "articles": 12,
-    "code_snippets": 73,
-    "loc": 1032,
-    "words": 11635
+    "code_snippets": 72,
+    "loc": 1020,
+    "words": 11727
   },
   "graphs": {
     "articles": 7,

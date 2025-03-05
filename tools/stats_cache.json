@@ -5494,7 +5494,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/beating-linkedin-queens-with-python": {
-    "timestamp": 1741099876.407361,
+    "timestamp": 1741180460.2797413,
     "tags": [
       "algorithms",
       "image processing",
@@ -5505,9 +5505,9 @@
     ],
     "stats": {
       "articles": 1,
-      "code_snippets": 25,
-      "loc": 579,
-      "words": 2032
+      "code_snippets": 24,
+      "loc": 567,
+      "words": 2124
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/117.publishing-a-python-package-with-uv": {
