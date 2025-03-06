@@ -24,6 +24,7 @@ Today I sat down to think about it for a second and figured out how to implement
     var style = window.getComputedStyle(document.body);
     const RED = style.getPropertyValue("--re");
     const ORANGE = style.getPropertyValue("--or");
+    const CIRCLE_COLOUR = style.getPropertyValue("--tx");
 
     const radius = 25;
 
@@ -40,7 +41,7 @@ Today I sat down to think about it for a second and figured out how to implement
         ctx.fillRect(WIDTH / 4, HEIGHT / 4, WIDTH / 2, HEIGHT / 2);
 
         // Draw the circle.
-        ctx.fillStyle = "var(--bg)";
+        ctx.fillStyle = CIRCLE_COLOUR;
         ctx.beginPath();
         ctx.arc(x, y, radius, 0, 2 * Math.PI);
         ctx.fill();
