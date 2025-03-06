@@ -13,6 +13,7 @@ taxonomy:
     category: [blogpost, til]
     tag:
       - geometry
+      - javascript
       - programming
 title: "TIL #120 – Circle vs rectangle collision detection"
 visible: false

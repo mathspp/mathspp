@@ -5580,16 +5580,17 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/120.circle-vs-rectangle-collision-detection": {
-    "timestamp": 1741305177.6884828,
+    "timestamp": 1741305263.332213,
     "tags": [
       "geometry",
+      "javascript",
       "programming"
     ],
     "stats": {
       "articles": 1,
       "code_snippets": 0,
       "loc": 0,
-      "words": 331
+      "words": 332
     }
   }
 }

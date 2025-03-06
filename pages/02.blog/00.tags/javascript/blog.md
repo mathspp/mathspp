@@ -28,8 +28,8 @@ title: "Javascript blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">2</th>
-            <th style="text-align: center;">5,677</th>
+            <th style="text-align: center;">3</th>
+            <th style="text-align: center;">6,009</th>
             <th style="text-align: center;">447</th>
         </tr>
     </thead>
