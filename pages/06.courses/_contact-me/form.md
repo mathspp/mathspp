@@ -72,6 +72,10 @@ form:
         display: thank-you
 ---
 
-# Contact me
+# Questions?
 
-Use the form below to write me a message. This goes straight to my inbox 📩
+Do you have any questions regarding any of the courses?
+Are you unsure whether a course is suitable for you?
+Use the form below to reach out to me, this goes straight to my inbox 📩.
+
+Alternatively, write me an email directly to [rodrigo@mathspp.com](mailto:rodrigo@mathspp.com) or find me on social media.
