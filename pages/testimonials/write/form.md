@@ -52,7 +52,6 @@ form:
           type: textarea
           validate:
             required: true
-            pattern: "(?!^\s*$)"
 
         name:
           label: Your name
