@@ -1,0 +1,16 @@
+date: 06-03-2025 23:45
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to detect collisions between circles and rectangles with 100% accuracy."
+    og:image: "https://mathspp.com/blog/circle-vs-rectangle-collision-detection/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/circle-vs-rectangle-collision-detection/thumbnail.webp"
+references: []
+routes:
+    aliases:
+        - "/blog/til/120"
+slug: "circle-vs-rectangle-collision-detection"
+taxonomy:
+    category: [blogpost, til]
+    tag: []
+title: "TIL #120 – Circle vs rectangle collision detection"
+visible: false
