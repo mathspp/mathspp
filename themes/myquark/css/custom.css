@@ -616,7 +616,7 @@ pre:hover>div>i.clipboard-icon {
 .modular-features.offset-box .frame-box {
     /* Offset box in modular pages. */
     background: var(--bg-2);
-    box-shadow: 0 0 30px 0 var(--ui);
+    box-shadow: 0 0 30px 0 var(--flexoki-black);
 }
 
 .modular-text h3 {
