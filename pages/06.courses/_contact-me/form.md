@@ -1,4 +1,5 @@
 ---
+class: container grid-lg
 title: Contact Form
 
 form:
