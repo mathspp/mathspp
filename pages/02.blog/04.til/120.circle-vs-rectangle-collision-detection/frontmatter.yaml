@@ -11,6 +11,8 @@ routes:
 slug: "circle-vs-rectangle-collision-detection"
 taxonomy:
     category: [blogpost, til]
-    tag: []
+    tag:
+      - geometry
+      - programming
 title: "TIL #120 – Circle vs rectangle collision detection"
 visible: false

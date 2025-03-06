@@ -24,10 +24,10 @@
     "words": 35302
   },
   "programming": {
-    "articles": 294,
+    "articles": 295,
     "code_snippets": 3666,
     "loc": 35562,
-    "words": 358497
+    "words": 358828
   },
   "python": {
     "articles": 277,
@@ -228,10 +228,10 @@
     "words": 7679
   },
   "geometry": {
-    "articles": 16,
+    "articles": 17,
     "code_snippets": 34,
     "loc": 427,
-    "words": 9649
+    "words": 9980
   },
   "haskell": {
     "articles": 2,
