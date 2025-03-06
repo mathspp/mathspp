@@ -21,7 +21,7 @@
     "articles": 295,
     "code_snippets": 3666,
     "loc": 35562,
-    "words": 358829
+    "words": 358833
   },
   "python": {
     "articles": 277,
@@ -207,7 +207,7 @@
     "articles": 17,
     "code_snippets": 34,
     "loc": 427,
-    "words": 9981
+    "words": 9985
   },
   "binary": {
     "articles": 9,
@@ -549,7 +549,7 @@
     "articles": 3,
     "code_snippets": 35,
     "loc": 447,
-    "words": 6009
+    "words": 6013
   },
   "shell": {
     "articles": 1,
@@ -567,7 +567,7 @@
     "articles": 397,
     "code_snippets": 3783,
     "loc": 36566,
-    "words": 433969
+    "words": 433973
   },
   "fp": {
     "articles": 3,

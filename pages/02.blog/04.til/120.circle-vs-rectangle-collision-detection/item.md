@@ -10,7 +10,7 @@ This meant that the collision detection sucked if the circle was close to the co
 
 Today I sat down to think about it for a second and figured out how to implement pixel-perfect collision detection between a rectangle and a circle, as the demo below demonstrates:
 
-<canvas id="mainCanvas1" style="background:var(--ui);"></canvas>
+<canvas id="mainCanvas1" style="background:var(--ui); margin: auto; display: block;"></canvas>
 
 <script>
     const canvas = document.getElementById("mainCanvas1");
@@ -32,11 +32,11 @@ Today I sat down to think about it for a second and figured out how to implement
         var y = evt.clientY - rect.top;
 
         // Draw the rectangle.
-        ctx.fillStyle = collision(x, y) ? "red" : "orange";
+        ctx.fillStyle = collision(x, y) ? "var(--re)" : "var(--or)";
         ctx.fillRect(WIDTH / 4, HEIGHT / 4, WIDTH / 2, HEIGHT / 2);
 
         // Draw the circle.
-        ctx.fillStyle = "black";
+        ctx.fillStyle = "var(--bg)";
         ctx.beginPath();
         ctx.arc(x, y, radius, 0, 2 * Math.PI);
         ctx.fill();
