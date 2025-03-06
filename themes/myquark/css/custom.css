@@ -684,10 +684,13 @@ details {
     font-family: "Font Awesome 5 Free";
 }
 
+/* Override some theme/spectre CSS for the forms in the testimonials page & contact forms. */
 .form-input,
 .search-input,
 [data-grav-field=array] input,
-[data-grav-field=array] textarea {
+[data-grav-field=array] textarea,
+.form-select,
+.form-select:not([multiple]):not([size]) {
     color: var(--tx);
     background: var(--bg-2);
 
@@ -698,6 +701,14 @@ details {
     &:focus,
     &:active {
         border: .05rem solid var(--accent);
+    }
+
+    &:not(:placeholder-shown):invalid {
+        border-color: var(--re);
+
+        &:focus {
+            background: var(--bg-2);
+        }
     }
 }
 
