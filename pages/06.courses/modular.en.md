@@ -6,6 +6,7 @@ content:
         custom:
           - "_hero"
           - "_intro"
+          - "_intermediate-python"
           - "_stay-updated"
           - "_contact-me"
 metadata:
