@@ -683,3 +683,24 @@ details {
 .dropmenu ul li a::before {
     font-family: "Font Awesome 5 Free";
 }
+
+.form-input,
+.search-input,
+[data-grav-field=array] input,
+[data-grav-field=array] textarea {
+    color: var(--tx);
+    background: var(--bg-2);
+
+    &::placeholder {
+        color: var(--tx-2);
+    }
+
+    &:focus,
+    &:active {
+        border: .05rem solid var(--accent);
+    }
+}
+
+form span.required {
+    color: var(--re);
+}
