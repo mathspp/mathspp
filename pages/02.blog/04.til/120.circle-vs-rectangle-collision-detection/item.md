@@ -23,7 +23,7 @@ Today I sat down to think about it for a second and figured out how to implement
 
     var style = window.getComputedStyle(document.body);
     const RED = style.getPropertyValue("--re");
-    const ORANGE = style.getPropertyValue("--or");
+    const GREEN = style.getPropertyValue("--gr");
     const CIRCLE_COLOUR = style.getPropertyValue("--tx");
 
     const radius = 25;
@@ -37,7 +37,7 @@ Today I sat down to think about it for a second and figured out how to implement
         var y = evt.clientY - rect.top;
 
         // Draw the rectangle.
-        ctx.fillStyle = collision(x, y) ? RED : ORANGE;
+        ctx.fillStyle = collision(x, y) ? RED : GREEN;
         ctx.fillRect(WIDTH / 4, HEIGHT / 4, WIDTH / 2, HEIGHT / 2);
 
         // Draw the circle.
