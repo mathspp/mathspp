@@ -21,6 +21,10 @@ Today I sat down to think about it for a second and figured out how to implement
     canvas.width = WIDTH;
     canvas.height = HEIGHT;
 
+    var style = window.getComputedStyle(document.body);
+    const RED = style.getPropertyValue("--re");
+    const ORANGE = style.getPropertyValue("--or");
+
     const radius = 25;
 
     function draw(evt) {
@@ -32,7 +36,7 @@ Today I sat down to think about it for a second and figured out how to implement
         var y = evt.clientY - rect.top;
 
         // Draw the rectangle.
-        ctx.fillStyle = collision(x, y) ? "var(--re)" : "var(--or)";
+        ctx.fillStyle = collision(x, y) ? RED : ORANGE;
         ctx.fillRect(WIDTH / 4, HEIGHT / 4, WIDTH / 2, HEIGHT / 2);
 
         // Draw the circle.
