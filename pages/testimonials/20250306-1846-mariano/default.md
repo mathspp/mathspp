@@ -8,7 +8,7 @@ taxonomy:
     category: review
     review-tag:
       - blog
-published: false
+published: true
 ---
 
 I discovered your blog a couple of months ago and little by little, day by day, I read all the posts you put up. I'm up to date now.
