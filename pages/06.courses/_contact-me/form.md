@@ -23,9 +23,9 @@ form:
             required: true
 
         subject:
-          default: Reaching out
+          default: Inquiry about your Python courses
           label: Subject
-          placeholder: Contact subject
+          placeholder: E-mail subject
           type: text
           validate:
             required: true
