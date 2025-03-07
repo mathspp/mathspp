@@ -14,7 +14,7 @@
 
 <div class="bricklayer">
     {% for review in collection %}
-        {% include 'review-card.html.twig' with { 'review': review } %}
+        {% include 'partials/review-card.html.twig' with { 'review': review } %}
     {% endfor %}
 </div>
 
