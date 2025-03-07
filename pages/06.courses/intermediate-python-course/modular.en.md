@@ -6,6 +6,7 @@ content:
         custom:
           - "_hero"
           - "_intro"
+          - "_why-this-course"
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "Intermediate Python course."
