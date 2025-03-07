@@ -1,5 +1,9 @@
 # Intermediate Python course
 
+- **Next dates**: 31st March – 4th April
+- **Price**: $490
+- **Sign up now!**
+
 This is an intermediate Python course that's perfect for you if you already have some experience in Python.
 This course will focus on equipping you with all the tools that a fluent Python developer uses, from syntactic features that the languagtte provides to tools and workflows that make you a better and more productive developer.
 
@@ -11,5 +15,3 @@ This course lasts 5 business days, with 4 hours of live sessions per day (in two
 The live sessions are live-coded and very hands-on because you learn when you practice, not when you listen to others/read.
 
 The course includes access to a discussion forum to get help with the exercises outside of the live sessions.
-
-**Next dates**: 31st March – 4th April
