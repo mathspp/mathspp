@@ -1,14 +1,10 @@
 {% set collection = page.collection() %}
 
-{% block javascripts %}
-    {% do assets.add('theme://js/bricklayer.min.js') %}
-    {% do assets.add('theme://js/scopedQuerySelectorShim.min.js') %}
-{% endblock %}
+{% do assets.add('theme://js/bricklayer.min.js') %}
+{% do assets.add('theme://js/scopedQuerySelectorShim.min.js') %}
 
-{% block stylesheets %}
-    {% do assets.addCss('theme://css/bricklayer.css') %}
-    {% do assets.addCss('theme://css/reviews-custom.css') %}
-{% endblock %}
+{% do assets.addCss('theme://css/bricklayer.css') %}
+{% do assets.addCss('theme://css/reviews-custom.css') %}
 
 <section class="section modular-text {{ page.header.class}}">
     <section class="container {{ grid_size }}">
