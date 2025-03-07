@@ -10,17 +10,22 @@
     {% do assets.addCss('theme://css/reviews-custom.css') %}
 {% endblock %}
 
-{{ page.content|raw }}
+<section class="section modular-text {{ page.header.class}}">
+    <section class="container {{ grid_size }}">
 
-<div class="bricklayer">
-    {% for review in collection %}
-        {% include 'partials/review-card.html.twig' with { 'review': review } %}
-    {% endfor %}
-</div>
+        {{ page.content|raw }}
 
-<div style="display:flex;justify-content:center">
-    <p><a href="/testimonials/write" class="button">Add your testimonial</a></p>
-</div>
+        <div class="bricklayer">
+            {% for review in collection %}
+                {% include 'partials/review-card.html.twig' with { 'review': review } %}
+            {% endfor %}
+        </div>
+
+        <div style="display:flex;justify-content:center">
+            <p><a href="/testimonials/write" class="button">Add your testimonial</a></p>
+        </div>
+    </section>
+</section>
 
 <script>
     //Bricklayer
