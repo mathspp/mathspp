@@ -16,7 +16,7 @@ Today I sat down to think about it for a second and figured out how to implement
     const canvas = document.getElementById("mainCanvas1");
     const ctx = canvas.getContext("2d");
 
-    const WIDTH = Math.min(600, document.documentElement.clientWidth);
+    const WIDTH = Math.min(600, 0.95 * document.documentElement.clientWidth);
     const HEIGHT = 400;
     canvas.width = WIDTH;
     canvas.height = HEIGHT;
