@@ -17,6 +17,7 @@
         {% else %}
             {% set collection = taxonomy.findTaxonomy({"category": "review"}) %}
         {% endif %}
+        {% set collection = taxonomy.findTaxonomy({"category": "review"}) | filter(page => page.taxonomy()["review-tag"] > 1) %}
 
         <div class="bricklayer">
             {% for review in collection %}
