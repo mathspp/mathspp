@@ -7,6 +7,7 @@
 This course is for all developers who can write small functions, programs, and scripts, but struggle to create larger or more complex projects.
 This course will focus on equipping you with all the tools that a fluent Python developer uses, from syntactic features that the language provides to tools and workflows that make you a better and more productive developer.
 
+<!--
 You will learn skills to help you
 
  - write code that is more time and memory efficient;
@@ -24,6 +25,7 @@ This course lasts 5 business days, with 4 hours of live sessions per day (in two
 The live sessions are live-coded and very hands-on because you learn when you practice, not when you listen to others/read.
 
 The course includes access to a discussion forum to get help with the exercises outside of the live sessions.
+-->
 
 <div style="display:flex; justify-content:center;">
 <a href="https://mathspp.gumroad.com/l/intermediate-python-course?wanted=true" target="_blank" class="btn" style="margin-right: 1em;">Secure your spot!</a>
