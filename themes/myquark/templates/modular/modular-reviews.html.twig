@@ -13,8 +13,7 @@
         
         {% set tags_to_filter = header_var("review-tags") | defined([]) %}
         <hr>
-        {{ dump(tags_to_filter) }}
-        {{ dump(grid_size) }}
+        {{ tags_to_filter }}
         <hr>
         {% set collection = taxonomy.findTaxonomy({"category": "review"}) %}
 
