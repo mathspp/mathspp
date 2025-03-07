@@ -13,13 +13,13 @@ Today I sat down to think about it for a second and figured out how to implement
 <canvas id="mainCanvas1" style="background:var(--ui); margin: auto; display: block;"></canvas>
 
 <script>
-    const canvas = document.getElementById("mainCanvas1");
-    const ctx = canvas.getContext("2d");
+    const canvas1 = document.getElementById("mainCanvas1");
+    const ctx1 = canvas1.getContext("2d");
 
     const WIDTH = Math.min(600, 0.95 * document.documentElement.clientWidth);
     const HEIGHT = 400;
-    canvas.width = WIDTH;
-    canvas.height = HEIGHT;
+    canvas1.width = WIDTH;
+    canvas1.height = HEIGHT;
 
     var style = window.getComputedStyle(document.body);
     const RED = style.getPropertyValue("--re");
@@ -29,22 +29,22 @@ Today I sat down to think about it for a second and figured out how to implement
     const radius = 25;
 
     function draw1(evt) {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx1.clearRect(0, 0, canvas1.width, canvas1.height);
 
         // Get mouse position.
-        var rect = canvas.getBoundingClientRect();
+        var rect = canvas1.getBoundingClientRect();
         var x = evt.clientX - rect.left;
         var y = evt.clientY - rect.top;
 
         // Draw the rectangle.
-        ctx.fillStyle = collision(x, y) ? RED : GREEN;
-        ctx.fillRect(WIDTH / 4, HEIGHT / 4, WIDTH / 2, HEIGHT / 2);
+        ctx1.fillStyle = collision(x, y) ? RED : GREEN;
+        ctx1.fillRect(WIDTH / 4, HEIGHT / 4, WIDTH / 2, HEIGHT / 2);
 
         // Draw the circle.
-        ctx.fillStyle = CIRCLE_COLOUR;
-        ctx.beginPath();
-        ctx.arc(x, y, radius, 0, 2 * Math.PI);
-        ctx.fill();
+        ctx1.fillStyle = CIRCLE_COLOUR;
+        ctx1.beginPath();
+        ctx1.arc(x, y, radius, 0, 2 * Math.PI);
+        ctx1.fill();
     }
 
     function collision(x, y) {
@@ -83,13 +83,13 @@ In the demo below, try getting the circle close to the corners of the rectangle:
 <canvas id="mainCanvas2" style="background:var(--ui); margin: auto; display: block;"></canvas>
 
 <script>
-    const canvas = document.getElementById("mainCanvas2");
-    const ctx = canvas.getContext("2d");
+    const canvas2 = document.getElementById("mainCanvas2");
+    const ctx2 = canvas2.getContext("2d");
 
     const WIDTH = Math.min(600, 0.95 * document.documentElement.clientWidth);
     const HEIGHT = 400;
-    canvas.width = WIDTH;
-    canvas.height = HEIGHT;
+    canvas2.width = WIDTH;
+    canvas2.height = HEIGHT;
 
     var style = window.getComputedStyle(document.body);
     const RED = style.getPropertyValue("--re");
@@ -99,22 +99,22 @@ In the demo below, try getting the circle close to the corners of the rectangle:
     const radius = 25;
 
     function draw2(evt) {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx2.clearRect(0, 0, canvas2.width, canvas2.height);
 
         // Get mouse position.
-        var rect = canvas.getBoundingClientRect();
+        var rect = canvas2.getBoundingClientRect();
         var x = evt.clientX - rect.left;
         var y = evt.clientY - rect.top;
 
         // Draw the rectangle.
-        ctx.fillStyle = collision(x, y) ? RED : GREEN;
-        ctx.fillRect(WIDTH / 4, HEIGHT / 4, WIDTH / 2, HEIGHT / 2);
+        ctx2.fillStyle = collision(x, y) ? RED : GREEN;
+        ctx2.fillRect(WIDTH / 4, HEIGHT / 4, WIDTH / 2, HEIGHT / 2);
 
         // Draw the circle.
-        ctx.fillStyle = CIRCLE_COLOUR;
-        ctx.beginPath();
-        ctx.arc(x, y, radius, 0, 2 * Math.PI);
-        ctx.fill();
+        ctx2.fillStyle = CIRCLE_COLOUR;
+        ctx2.beginPath();
+        ctx2.arc(x, y, radius, 0, 2 * Math.PI);
+        ctx2.fill();
     }
 
     function collision(x, y) {
