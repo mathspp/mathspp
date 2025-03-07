@@ -1,0 +1,10 @@
+## What you will learn
+
+ - Write code that is more time- and memory-efficient.
+ - Code idiomatically by leveraging the most useful tools from the standard library.
+ - Write modular and reusable code.
+ - Structure your functions, classes, files, and projects, in a way that is easy to manage.
+ - Detect bugs even before running your code.
+ - Package your code to share privately across your own projects or publically with every single Python users.
+
+This course goes beyond theory – you’ll apply what you learn immediately through **live coding, hands-on assignments, and real-world projects**.
