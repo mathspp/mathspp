@@ -1,10 +1,10 @@
 {% set collection = page.collection() %}
 
-{% do assets.add('theme://js/bricklayer.min.js') %}
-{% do assets.add('theme://js/scopedQuerySelectorShim.min.js') %}
+<script src="theme://js/bricklayer.min.js"></script>
+<script src="theme://js/scopedQuerySelectorShim.min.js"></script>
 
-{% do assets.addCss('theme://css/bricklayer.css') %}
-{% do assets.addCss('theme://css/reviews-custom.css') %}
+<link src="theme://css/bricklayer.css" type="text/css" rel="stylesheet"></link>
+<link src="theme://css/reviews-custom.css" type="text/css" rel="stylesheet"></link>
 
 <section class="section modular-text {{ page.header.class}}">
     <section class="container {{ grid_size }}">
