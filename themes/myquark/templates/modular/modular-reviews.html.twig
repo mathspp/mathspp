@@ -1,7 +1,6 @@
 {% set collection = page.collection() %}
 
 {% block javascripts %}
-    {{ parent() }}
     {% do assets.add('theme://js/bricklayer.min.js') %}
     {% do assets.add('theme://js/scopedQuerySelectorShim.min.js') %}
 {% endblock %}
@@ -9,7 +8,6 @@
 {% block stylesheets %}
     {% do assets.addCss('theme://css/bricklayer.css') %}
     {% do assets.addCss('theme://css/reviews-custom.css') %}
-    {{ parent() }}
 {% endblock %}
 
 {{ page.content|raw }}
