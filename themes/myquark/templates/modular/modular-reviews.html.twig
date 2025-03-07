@@ -9,6 +9,8 @@
 <section class="section modular-text {{ page.header.class}}">
     <section class="container {{ grid_size }}">
 
+        {{ page.content | raw }}
+
         <div class="bricklayer">
             {% for review in collection %}
                 {% include 'partials/review-card.html.twig' with { 'review': review } %}
