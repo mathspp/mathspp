@@ -21,6 +21,7 @@
 
         <div class="bricklayer">
             {% for review in collection %}
+                {{ review.taxonomy()["review-tag"]|join(", ") }}
                 {% include 'partials/review-card.html.twig' with { 'review': review } %}
             {% endfor %}
         </div>
