@@ -1,5 +1,7 @@
 ---
-review-tags: [newsletter, blog]
+review-tags:
+  - newsletter
+  - blog
 ---
 
 
