@@ -12,11 +12,9 @@
 
         
         {% set tags_to_filter = header_var("review-tags") | defined([]) %}
-        {% if tags_to_filter|length > 0 %}
-            {% set collection = taxonomy.findTaxonomy({"category": "review"}) | filter(page => page.taxonomy("review-tag")|intersect(tags_to_filter)|length > 0) %}
-        {% else %}
-            {% set collection = taxonomy.findTaxonomy({"category": "review"}) %}
-        {% endif %}
+        {{ dump tags_to_filter }}
+        {% set collection = taxonomy.findTaxonomy({"category": "review"}) %}
+
         <div class="bricklayer">
             {% for review in collection %}
                 {% include 'partials/review-card.html.twig' with { 'review': review } %}
