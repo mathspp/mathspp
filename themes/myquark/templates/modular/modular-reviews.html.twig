@@ -12,10 +12,11 @@
 
         
         {% set tags_to_filter = header_var("review-tags") | defined([]) %}
-        <hr>
-        {{ tags_to_filter }}
-        <hr>
-        {% set collection = taxonomy.findTaxonomy({"category": "review"}) %}
+        {% if tags_to_filter|length > 0 %}
+            {% set collection = taxonomy.findTaxonomy({"category": "review"}) | filter(page => page.taxonomy("review-tag")|intersect(tags_to_filter)|length > 0) %}
+        {% else %}
+            {% set collection = taxonomy.findTaxonomy({"category": "review"}) %}
+        {% endif %}
 
         <div class="bricklayer">
             {% for review in collection %}
