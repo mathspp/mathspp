@@ -6,7 +6,3 @@ As supporting material, you will have access to the recordings of the sessions, 
 - **Next cohort**: 31st March – 4th April
 - **Price**: $490 – includes access to the live sessions and lifelong access to the session recordings, assignments, and discussion forum
 - **Spots available**: 15 participants – this allows me to give personalised attention to everyone
-
-<div style="display:flex; justify-content:center;">
-<a href="https://mathspp.gumroad.com/l/intermediate-python-course?wanted=true" target="_blank" class="btn" style="margin-right: 1em;">Secure your spot!</a>
-</div>
