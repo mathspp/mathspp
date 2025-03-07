@@ -9,6 +9,7 @@ content:
           - "_course-format"
           - "_why-this-course"
           - "_what-you-will-learn"
+          - "_who-should-take-this-course"
           - "_praise"
 metadata:
     author: "Rodrigo Girão Serrão"
