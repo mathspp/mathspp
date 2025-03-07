@@ -13,7 +13,7 @@
         
         {% set tags_to_filter = header_var("review-tags") | defined([]) %}
         {% if tags_to_filter|length > 0 %}
-            {% set collection = taxonomy.findTaxonomy({"category": "review"}) | filter(page => page.taxonomy("review-tag") > 1) %}
+            {% set collection = taxonomy.findTaxonomy({"category": "review"}) | filter(page => page.taxonomy()["review-tag"] > 1) %}
         {% else %}
             {% set collection = taxonomy.findTaxonomy({"category": "review"}) %}
         {% endif %}
