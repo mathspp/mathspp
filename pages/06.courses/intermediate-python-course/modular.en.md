@@ -11,6 +11,7 @@ content:
           - "_what-you-will-learn"
           - "_who-should-take-this-course"
           - "_praise"
+          - "_sign-up"
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "Intermediate Python course."
