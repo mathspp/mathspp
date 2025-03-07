@@ -29,7 +29,7 @@ title: "Programming blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">295</th>
-            <th style="text-align: center;">358,851</th>
+            <th style="text-align: center;">359,277</th>
             <th style="text-align: center;">35,562</th>
         </tr>
     </thead>
