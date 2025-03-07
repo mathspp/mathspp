@@ -1,12 +1,8 @@
 ## Course format
 
-- 5 business days of immersive learning
-- 4 hours of live sessions per day (two 2-hour sessions per day)
-- Live sessions are recorded
-- Assignments & exercises to practice concepts learned
-- Live coding & hands-on approach
-- Access to a private discussion forum for help outside sessions
-- Small class size for personalised attention
+- 5 business days of immersive learning with 4 hours of live sessions per day (two 2-hour sessions per day) plus assignments to practice concepts learned.
+- Access to a private discussion forum to discuss assignments and get help from me and other students.
+- Small class size for personalised attention.
 
 - **Next session**: 31st March – 4th April
 - **Price**: $490
