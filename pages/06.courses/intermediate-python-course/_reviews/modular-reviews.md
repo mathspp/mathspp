@@ -1,7 +1,6 @@
 ---
 review-tags:
-  - newsletter
-  - blog
+  - favourite
 ---
 
 

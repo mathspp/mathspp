@@ -7,7 +7,7 @@ social:
 taxonomy:
     category: review
     review-tag:
-      - other
+      - favourite
 published: true
 ---
 
