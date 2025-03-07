@@ -12,19 +12,19 @@
 
 <section class="section modular-text {{ page.header.class}}">
     <section class="container {{ grid_size }}">
-        {{ page.content|raw }}
+
+        <div class="bricklayer">
+            {% for review in collection %}
+                {% include 'partials/review-card.html.twig' with { 'review': review } %}
+            {% endfor %}
+        </div>
+
+        <div style="display:flex;justify-content:center">
+            <p><a href="/testimonials/write" class="button">Add your testimonial</a></p>
+        </div>
+
     </section>
 </section>
-
-<div class="bricklayer section modular-text">
-    {% for review in collection %}
-        {% include 'partials/review-card.html.twig' with { 'review': review } %}
-    {% endfor %}
-</div>
-
-<div style="display:flex;justify-content:center">
-    <p><a href="/testimonials/write" class="button">Add your testimonial</a></p>
-</div>
 
 <script>
     //Bricklayer
