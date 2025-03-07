@@ -86,17 +86,8 @@ In the demo below, try getting the circle close to the corners of the rectangle:
     const canvas2 = document.getElementById("mainCanvas2");
     const ctx2 = canvas2.getContext("2d");
 
-    const WIDTH = Math.min(600, 0.95 * document.documentElement.clientWidth);
-    const HEIGHT = 400;
     canvas2.width = WIDTH;
     canvas2.height = HEIGHT;
-
-    var style = window.getComputedStyle(document.body);
-    const RED = style.getPropertyValue("--re");
-    const GREEN = style.getPropertyValue("--gr");
-    const CIRCLE_COLOUR = style.getPropertyValue("--tx");
-
-    const radius = 25;
 
     function draw2(evt) {
         ctx2.clearRect(0, 0, canvas2.width, canvas2.height);
