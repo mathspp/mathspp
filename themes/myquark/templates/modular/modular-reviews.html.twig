@@ -12,7 +12,7 @@
 
         
         {% set tags_to_filter = header_var("review-tags") | defined([]) %}
-        {{ dump tags_to_filter }}
+        {{ dump(tags_to_filter) }}
         {% set collection = taxonomy.findTaxonomy({"category": "review"}) %}
 
         <div class="bricklayer">
