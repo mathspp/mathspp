@@ -8,7 +8,7 @@ taxonomy:
     category: review
     review-tag:
       - other
-published: false
+published: true
 ---
 
 Rodrigo is a great teacher who excels at showing how different approaches to the same code work.

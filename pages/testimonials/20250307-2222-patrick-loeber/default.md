@@ -8,7 +8,7 @@ taxonomy:
     category: review
     review-tag:
       - bootcamp
-published: false
+published: true
 ---
 
 Rodrigo's ability to provide in-depth explanations for difficult problems is truly unique.

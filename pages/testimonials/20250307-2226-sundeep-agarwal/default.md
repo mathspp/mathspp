@@ -8,7 +8,7 @@ taxonomy:
     category: review
     review-tag:
       - bootcamp
-published: false
+published: true
 ---
 
 Python Problem-Solving Bootcamp has a wonderful combination.

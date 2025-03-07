@@ -8,7 +8,7 @@ taxonomy:
     category: review
     review-tag:
       - other
-published: false
+published: true
 ---
 
 Rodrigo is an excellent communicator of Python technical content. You can rely on him to thoroughly analyze code and algorithms, yet express his findings in a way that is digestible for beginner and experienced developers alike.
