@@ -8,6 +8,7 @@ content:
           - "_intro"
           - "_why-this-course"
           - "_what-you-will-learn"
+          - "_reviews"
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "Intermediate Python course."

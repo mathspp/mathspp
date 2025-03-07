@@ -1,0 +1,30 @@
+{% set collection = page.collection() %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {% do assets.add('theme://js/bricklayer.min.js') %}
+    {% do assets.add('theme://js/scopedQuerySelectorShim.min.js') %}
+{% endblock %}
+
+{% block stylesheets %}
+    {% do assets.addCss('theme://css/bricklayer.css') %}
+    {% do assets.addCss('theme://css/reviews-custom.css') %}
+    {{ parent() }}
+{% endblock %}
+
+{{ page.content|raw }}
+
+<div class="bricklayer">
+    {% for review in collection %}
+        {% include 'review-card.html.twig' with { 'review': review } %}
+    {% endfor %}
+</div>
+
+<div style="display:flex;justify-content:center">
+    <p><a href="/testimonials/write" class="button">Add your testimonial</a></p>
+</div>
+
+<script>
+    //Bricklayer
+    var bricklayer = new Bricklayer(document.querySelector('.bricklayer'))
+</script>
