@@ -10,9 +10,13 @@
     {% do assets.addCss('theme://css/reviews-custom.css') %}
 {% endblock %}
 
-{{ page.content|raw }}
+<section class="section modular-text {{ page.header.class}}">
+    <section class="container {{ grid_size }}">
+        {{ page.content|raw }}
+    </section>
+</section>
 
-<div class="bricklayer">
+<div class="bricklayer section modular-text">
     {% for review in collection %}
         {% include 'partials/review-card.html.twig' with { 'review': review } %}
     {% endfor %}
