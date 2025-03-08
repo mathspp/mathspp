@@ -11,6 +11,7 @@ content:
           - "_what-you-will-learn"
           - "_who-should-take-this-course"
           - "_praise"
+          - "_about-the-instructor"
           - "_sign-up"
           - "_faq"
           - "_contact-me"
