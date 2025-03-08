@@ -1,3 +1,7 @@
+---
+image_align: left
+---
+
 ## What you will learn
 
  - Write code that is more time- and memory-efficient by leveraging generators and better looping techniques.
