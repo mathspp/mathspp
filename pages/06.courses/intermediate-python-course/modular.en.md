@@ -12,8 +12,8 @@ content:
           - "_who-should-take-this-course"
           - "_praise"
           - "_about-the-instructor"
-          - "_sign-up"
           - "_faq"
+          - "_sign-up"
           - "_contact-me"
 metadata:
     author: "Rodrigo Girão Serrão"
