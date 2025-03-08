@@ -25,3 +25,5 @@ This means the course will take most of your week and I know that's a big time c
 After the week ends, you will still have access to the live session recordings, the assignments, and the discussion forum...
 But!
 If you don't set aside time to learn you will never make visible progress.
+
+So, expect a challenging but fun and rewarding week.
