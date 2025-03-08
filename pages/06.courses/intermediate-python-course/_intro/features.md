@@ -2,7 +2,7 @@
 class: offset-box
 ---
 
-## Take your Python skills to the next level
+## Overcome plateaus to keep growing your skills
 
 You’ve mastered the basics – now it’s time to go further.
 If you can write small functions, scripts, and simple programs but struggle with larger, more complex projects, this 5-day hands-on course is for you.
