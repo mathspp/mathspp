@@ -1,7 +1,3 @@
----
-image_align: left
----
-
 ## What you will learn
 
 When you finish the course you will be able to
