@@ -22,5 +22,6 @@ The type of people who will benefit the most from this course include people who
 
 You will make the most of this course if you have time to attend the live sessions and work on the assignments between live sessions.
 This means the course will take most of your week and I know that's a big time commitment...
+After the week ends, you will still have access to the live session recordings, the assignments, and the discussion forum...
 But!
 If you don't set aside time to learn you will never make visible progress.
