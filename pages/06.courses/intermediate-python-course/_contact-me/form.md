@@ -72,7 +72,7 @@ form:
         display: thank-you
 ---
 
-# Questions?
+## Questions?
 
 Do you have any questions regarding this course?
 Use the form below to reach out to me, this goes straight to my inbox 📩.
