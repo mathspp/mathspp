@@ -1,6 +1,7 @@
 ## About the instructor
 
 Hi, I'm Rodrigo Girão Serrão from sunny Portugal 🇵🇹.
+
 I've been using Python for 10 or 11 years now and writing about it for 7 or 8 [on my blog](/blog).
 I also [self-published 8+ books](/books) and [given multiple talks](/talks) at the largest Python conferences of the world.
 
