@@ -4,7 +4,7 @@ image_align: left
 
 ## What you will learn
 
-When you finish the course and the assignments you will be able to
+When you finish the course you will be able to
 
  - write code that is more time- and memory-efficient by leveraging generators and better looping techniques;
  - code idiomatically by leveraging the most useful tools from the standard library;
