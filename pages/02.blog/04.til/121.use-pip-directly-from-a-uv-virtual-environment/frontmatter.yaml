@@ -1,0 +1,19 @@
+date: 12-03-2025 15:16
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to use uv to escape uv and go back to venv and pip for a given project."
+    og:image: "https://mathspp.com/blog/use-pip-directly-from-a-uv-virtual-environment/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/use-pip-directly-from-a-uv-virtual-environment/thumbnail.webp"
+references: []
+routes:
+    aliases:
+        - "/blog/til/121"
+slug: "use-pip-directly-from-a-uv-virtual-environment"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - productivity
+      - python
+      - uv
+title: "TIL #121 – uv escape hatch"
+visible: false

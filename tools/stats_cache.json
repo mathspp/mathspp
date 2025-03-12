@@ -5592,5 +5592,19 @@
       "loc": 0,
       "words": 749
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/121.use-pip-directly-from-a-uv-virtual-environment": {
+    "timestamp": 1741793709.660472,
+    "tags": [
+      "productivity",
+      "python",
+      "uv"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 0,
+      "loc": 0,
+      "words": 197
+    }
   }
 }
