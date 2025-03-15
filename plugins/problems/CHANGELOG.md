@@ -1,3 +1,9 @@
+# v2.1.2
+## 10/22/2024
+
+1. [](#improved)
+    * Improved `gd` module check [#36](https://github.com/getgrav/grav-plugin-problems/pull/36)
+
 # v2.1.1
 ## 04/14/2021
 

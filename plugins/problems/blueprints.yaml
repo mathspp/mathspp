@@ -1,7 +1,7 @@
 name: Problems
 slug: problems
 type: plugin
-version: 2.1.1
+version: 2.1.2
 description: Detects and reports problems found in the site.
 icon: exclamation-circle
 author:

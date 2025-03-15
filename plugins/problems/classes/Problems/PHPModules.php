@@ -57,19 +57,21 @@ class PHPModules extends Problem
         $msg = 'PHP GD (Image Manipulation Library) is %s installed';
         if (defined('GD_VERSION') && function_exists('gd_info')) {
 
-            $msg = $modules_success['gd'] = sprintf($msg, 'successfully');
+            $msg = sprintf($msg, 'successfully');
 
             // Extra checks for Image support
             $ginfo = gd_info();
-            $gda = array('PNG Support', 'JPEG Support', 'FreeType Support', 'GIF Read Support');
+            $gda = array('PNG Support', 'JPEG Support', 'FreeType Support', 'GIF Read Support', 'WebP Support', 'AVIF Support');
             $gda_msg = '';
             $problems_found = false;
 
             foreach ($gda as $image_type) {
-                if (!$ginfo[$image_type]) {
+                if (!array_key_exists($image_type, $ginfo)) {
                     $problems_found = true;
-                    $gda_msg = "missing $image_type, but is ";
-                    break;
+                    if($gda_msg !== '') {
+                        $gda_msg .= ', ';
+                    }
+                    $gda_msg .= $image_type;
                 }
             }
 
