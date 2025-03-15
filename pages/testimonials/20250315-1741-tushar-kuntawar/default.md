@@ -8,7 +8,8 @@ taxonomy:
     category: review
     review-tag:
       - newsletter
-published: false
+published: true
 ---
 
-Bi-directional generators!! Now that is the exact reason I signed up to your mailing list!
+Bi-directional generators?!
+Now that is the exact reason I signed up to your mailing list!
