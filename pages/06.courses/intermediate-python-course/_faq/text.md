@@ -7,7 +7,7 @@ The live sessions will take place from [3pm to 5pm](https://www.worldtimebuddy.c
 
 ### Where will the course take place?
 
-The live sessions will take place on Zoom (the link for the meeting will be provided later).
+The live sessions will take place on Zoom (the link for the meeting will be provided after you sign-up).
 The assignments will be hosted in a private GitHub repository and the discussion forum will be the associated GitHub Discussions page.
 
 
