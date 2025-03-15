@@ -2,7 +2,7 @@
 
 ### At what time will the live sessions take place?
 
-The live sessions will take place from 12pm to 2pm and 2pm to 4pm, UTC+01.
+The live sessions will take place from [3pm to 5pm](https://www.worldtimebuddy.com/event?lid=100&h=100&sts=29056320&sln=15-17&a=preview) and [7pm to 9pm](https://www.worldtimebuddy.com/event?lid=100&h=100&sts=29056320&sln=19-21&a=preview), UTC time.
 
 
 ### Where will the course take place?
