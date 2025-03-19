@@ -1,5 +1,14 @@
 ## Frequently asked questions (FAQ)
 
+### What's the difference between the intensive and paced versions?
+
+The content of the course is exactly the same.
+What changes is the time span over which the live sessions take place.
+The intensive course takes place in a single week, with 4 hours of live sessions per day.
+The paced course spans over 3 weeks (Friday of week 1, Tuesday + Friday of week 2, and Tuesday + Friday of week 3) with 4 hours of live sessions for each of the mentioned days.
+Regardless of the version you choose, when the course is over you keep access to the course resources, like live session recordings and exercises.
+
+
 ### At what time will the live sessions take place?
 
 The live sessions will take place from [3pm to 5pm](https://www.worldtimebuddy.com/event?lid=100&h=100&sts=29056320&sln=15-17&a=preview "Follow the link to check the time in your own time zone.") and [7pm to 9pm](https://www.worldtimebuddy.com/event?lid=100&h=100&sts=29056320&sln=19-21&a=preview "Follow the link to check the time in your own time zone."), UTC time.
@@ -21,9 +30,5 @@ The type of people who will benefit the most from this course include people who
 ### What time commitment is expected of me?
 
 You will make the most of this course if you have time to attend the live sessions and work on the assignments between live sessions.
-This means the course will take most of your week and I know that's a big time commitment...
-After the week ends, you will still have access to the live session recordings, the assignments, and the discussion forum...
-But!
 If you don't set aside time to learn you will never make visible progress.
-
-So, expect a challenging but fun and rewarding week.
+So, expect a challenging but fun couple of days.
