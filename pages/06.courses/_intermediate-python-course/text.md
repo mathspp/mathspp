@@ -11,6 +11,6 @@ This course will focus on equipping you with all the tools that a fluent Python 
 
 
 <div style="display:flex; justify-content:center;">
-<a href="https://mathspp.gumroad.com/l/intermediate-python-course?wanted=true" target="_blank" class="btn" style="margin-right: 1em;">Secure your spot!</a>
+<a href="/courses/intermediate-python-course#sign-up" class="btn" style="margin-right: 1em;">Secure your spot!</a>
 <a href="/courses/intermediate-python-course" class="btn" style="margin-left: 1em;">Learn more</a>
 </div>
