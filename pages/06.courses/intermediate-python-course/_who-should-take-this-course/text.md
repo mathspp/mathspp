@@ -10,5 +10,5 @@ This course is perfect for:
 If this is you, sign-up for the next cohort and prepare to evolve your skills:
 
 <div style="display:flex; justify-content:center;">
-<a href="#sign-up" target="_blank" class="btn" style="margin-right: 1em;">Secure your spot!</a>
+<a href="#sign-up" class="btn" style="margin-right: 1em;">Secure your spot!</a>
 </div>

@@ -12,5 +12,5 @@ This course bridges that gap by giving you the skills and confidence to build la
 If you want these benefits for yourself, sign-up now and grab your spot in the upcoming cohort:
 
 <div style="display:flex; justify-content:center;">
-<a href="#sign-up" target="_blank" class="btn" style="margin-right: 1em;">Secure your spot!</a>
+<a href="#sign-up" class="btn" style="margin-right: 1em;">Secure your spot!</a>
 </div>

@@ -14,5 +14,5 @@ You'll learn how to code like a fluent Python developer by leveraging powerful t
 **Next paced cohort**: 6th – 20th June.
 
 <div style="display:flex; justify-content:center;">
-<a href="#sign-up" target="_blank" class="btn" style="margin-right: 1em;">Secure your spot!</a>
+<a href="#sign-up" class="btn" style="margin-right: 1em;">Secure your spot!</a>
 </div>
