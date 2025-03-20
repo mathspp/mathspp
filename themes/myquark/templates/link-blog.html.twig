@@ -3,6 +3,7 @@
 {% extends 'partials/base.html.twig' %}
 {% set blog_image = page.media.images[page.header.hero_image] ?: page.media.images|first %}
 {% set collection = page.collection() %}
+{% set total_links = page.collection({ items: { "@taxonomy.category": "link" } })|length %}
 {% set show_breadcrumbs = header_var('show_breadcrumbs', [page, blog])|defined(true) %}
 {% set show_sidebar = true %}
 
@@ -24,7 +25,7 @@
             {% block item %}
 
                 <div class="links">
-                    <p>Showing {{ page.collection|length }} links. See a <a href="/link-blog/feed">condensed link blog feed</a>.</p>
+                    <p>Showing {{ page.collection|length }} out of {{ total_links }} links. See a <a href="/link-blog/feed">condensed link blog feed</a>.</p>
 
                     {% for link_item in page.collection %}
                         {% include 'partials/blog/link-item-snippet.html.twig' with { link_item: link_item } %}
