@@ -32,3 +32,11 @@ The type of people who will benefit the most from this course include people who
 You will make the most of this course if you have time to attend the live sessions and work on the assignments between live sessions.
 If you don't set aside time to learn you will never make visible progress.
 So, expect a challenging but fun couple of days.
+
+
+### Are there any discounts?
+
+The course has purchasing parity pricing (PPP) enabled, so you might get a discount based on the cost of living and local currency of where you are located.
+(This requires you to use a payment method from the same country you're located in, to prevent fraud.)
+
+If you are a student or are unemployed, you are eligible for an additional discount; just [email me](mailto:rodrigo@mathspp.com) with proof of your unemployment/student status and I will send you a discount code.
