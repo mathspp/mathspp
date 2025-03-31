@@ -1,7 +1,6 @@
 # Intermediate Python course
 
 - **Next dates**:
-   - 31st March – 4th April (intensive)
    - 6th – 20th June (paced)
 - **Price**: $490
 - **Limited spots available**
