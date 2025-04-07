@@ -715,3 +715,11 @@ details {
 form span.required {
     color: var(--re);
 }
+
+[data-theme="light"] .newsletter-iframe-wrapper .newsletter-dark-iframe {
+    display: none;
+}
+
+[data-theme="dark"] .newsletter-iframe-wrapper .newsletter-light-iframe {
+    display: none;
+}
