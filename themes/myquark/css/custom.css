@@ -716,10 +716,10 @@ form span.required {
     color: var(--re);
 }
 
-[data-theme="light"] .newsletter-iframe-wrapper .newsletter-dark-iframe {
+[data-theme="light"] .dark-theme-only {
     display: none;
 }
 
-[data-theme="dark"] .newsletter-iframe-wrapper .newsletter-light-iframe {
+[data-theme="dark"] .light-theme-only {
     display: none;
 }
