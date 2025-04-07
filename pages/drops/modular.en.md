@@ -7,6 +7,7 @@ content:
           - "_hero"
           - "_intro"
           - "_tips"
+          - "_description"
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "Python drops 🐍💧 newsletter."
