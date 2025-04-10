@@ -386,8 +386,7 @@ blockquote {
 }
 
 /* Set the colours for pieces of code. */
-code,
-pre code {
+code {
     font-family: "FiraCode Nerd Font Mono";
     background: var(--ui);
     color: var(--tx);
@@ -400,6 +399,8 @@ pre code {
     background: var(--ui);
     color: var(--tx);
     font-variant-ligatures: none;
+    white-space: pre-wrap;
+    word-break: break-word;
 }
 
 /* Style APL code with the correct font. */

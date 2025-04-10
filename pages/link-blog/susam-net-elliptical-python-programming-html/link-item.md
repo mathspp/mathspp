@@ -25,7 +25,15 @@ print(
 )  # 3
 ```
 
-Finally, by using `exec` and string formatting with the format `%c`, the author can write arbitrary strings which can then be executed.
+The author also points out that the leading `--` can be ommitted:
+
+```py
+print(
+    (...==...)--(...==...)--(...==...)
+)  # 3
+```
+
+Finally, by using `exec` and string formatting with the format specifier `%c`, the author can write arbitrary strings which can then be executed.
 The author presents this code:
 
 ```py
@@ -36,7 +44,9 @@ The beginning sets up the string that will represent the code to be executed:
 
 ```py
 exec(
-    '%c'*((...==...)--(...==...)--(...==...))*((...==...)--(...==...)--(...==...)--(...==...)--(...==...)--(...==...)--(...==...))
+    '%c'
+    * ((...==...)--(...==...)--(...==...))
+    * ((...==...)--(...==...)--(...==...)--(...==...)--(...==...)--(...==...)--(...==...))
     % (...)
 )
 ```
@@ -45,19 +55,34 @@ This is equivalent to
 
 ```py
 exec(
-    '%c' * 3 * 7
+    '%c'
+    * 3
+    * 7
     % (...)
 )
 ```
 
+The part `'%c' * 3 * 7` creates a string with length 21: `'%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c'`.
+The part `% (...)` creates a tuple with 21 integers that will be formatted onto that string.
+
+For example, the character `"a"` corresponds to the Unicode code point 97, so `"%c" % 97` gives `"a"`:
+
+```py
+>>> ord("a")
+97
+>>> "%c" % 97
+'a'
+```
+
 This means the author wants to run a Python program that is 21 characters in length.
-The `% (...)` sets up the string formatting which will convert integers into characters with the specifier `%c`.
 
 The 21 integers that fill up the source code are all presented linearly inside the given tuple, except for a small section of the code that looks like this:
 
 ```py
 exec(
-    '%c'*((...==...)--(...==...)--(...==...))*((...==...)--(...==...)--(...==...)--(...==...)--(...==...)--(...==...)--(...==...))
+    '%c'
+    * ((...==...)--(...==...)--(...==...))
+    * ((...==...)--(...==...)--(...==...)--(...==...)--(...==...)--(...==...)--(...==...))
     % (
         ...,
         ...,
@@ -69,7 +94,9 @@ exec(
         ...,
         ...,
         ,*(
-            ((...==...)--(...==...)--(...==...)--(...==...))*((...==...)--(...==...)--(...==...))**((...==...)--(...==...)--(...==...)),
+            ((...==...)--(...==...)--(...==...)--(...==...))
+            * ((...==...)--(...==...)--(...==...))
+            ** ((...==...)--(...==...)--(...==...)),
         )
         * ((...==...)--(...==...)),
         ...,
