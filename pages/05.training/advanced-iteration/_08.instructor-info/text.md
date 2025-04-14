@@ -1,5 +1,5 @@
 ---
-image: theme://images/rodrigo.webp
+image: user://themes/myquark/images/rodrigo.webp
 ---
 
 ## About the instructor
