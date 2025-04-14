@@ -26,8 +26,6 @@ redirects:
   /pt/twitch: 'https://mathspp.com/twitch'
   /youtube: 'https://www.youtube.com/channel/UCmJ59I1u8uUl9u3MkEry30w'
   /twitter: 'https://twitter.com/mathsppblog'
-  /discord: 'https://discord.gg/QKAmVYq868'
-  /pt/discord: 'https://discord.gg/QKAmVYq868'
 routes: null
 blog:
   route: /blog
