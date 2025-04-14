@@ -22,7 +22,7 @@ form:
           validate:
             required: true
 
-        email:
+        company:
           label: Company
           placeholder: Enter your company
           type: text
@@ -63,7 +63,7 @@ form:
         email:
           -
             reply_to: "{{ form.value.email }}"
-            from_name: "{{ form.value.name|e }}"
+            from_name: "{{ form.value.name|e }} ({{ form.value.company|e }})"
             subject: "{{ form.value.subject }}"
             body: "{{ form.value.message }}"
           -
