@@ -1,4 +1,5 @@
 ## About the instructor
 
-[page-inject path="/modules/_formal-bio" /]
+[content-inject path="/modules/_formal-bio" /]
 
+![](theme://images/rodrigo.webp)
