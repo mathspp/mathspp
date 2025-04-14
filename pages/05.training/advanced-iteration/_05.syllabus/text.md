@@ -11,7 +11,7 @@
    - Reshaping iterables: `batched`, `chain`, `groupby`, and more.
    - Filtering iterables: `compress`, `dropwhile`, `filterfalse`, and `takewhile`.
    - Other iterables: `accumulate`, `cycle`, `starmap`, and more.
- - Type hints for generators, custom iterabgles, and custom iterators.
+ - Type hints for generators, custom iterables, and custom iterators.
 
 If you would like to tweak the course syllabus to your needs, reach out to me and we will work something out.
 For example, some teams ask me to omit the section on type hints since they do not use type hints in their projects.
