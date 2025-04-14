@@ -2,8 +2,6 @@
 class: offset-box
 ---
 
-## Become an iteration master
-
 Unlock the full potential of Python by diving deep into the world of iteration.
 
 In this hands-on, exercise-driven 4-day course, you'll learn how to wield generators, iterators, and the module `itertools`, to write code that is clearer, faster, and more expressive.
