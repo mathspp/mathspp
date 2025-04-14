@@ -677,10 +677,6 @@ details {
     transition: color 0.3s;
 }
 
-#theme-icon {
-    color: var(--flexoki-white);
-}
-
 #theme-toggle:hover {
     opacity: 0.8;
 }
