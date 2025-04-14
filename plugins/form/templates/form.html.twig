@@ -1,5 +1,10 @@
 {% extends 'partials/base.html.twig' %}
 
+{% block javascripts %}
+    {{ parent() }}
+    {% do assets.addJs('theme://js/form_auto_fill.js', {group:'bottom'}) %}
+{% endblock %}
+
 {% block content %}
 
     {{ content|raw }}
