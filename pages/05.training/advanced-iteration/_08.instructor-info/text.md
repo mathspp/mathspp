@@ -1,4 +1,4 @@
 ## About the instructor
 
-[content-inject path="/modules/_formal-bio" /]
+[page-inject path="/modules/_formal-bio" /]
 
