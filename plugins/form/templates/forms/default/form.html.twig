@@ -38,6 +38,8 @@
     {% do assets.addJs('plugin://form/assets/form.min.js', { 'group': 'bottom', 'loading': 'defer' }) %}
 {% endif %}
 
+{% do assets.addJs('theme://js/form_auto_fill.js', {group:'bottom'}) %}
+
 {% do assets.addInlineJs("
     window.GravForm = window.GravForm || {};
     window.GravForm.config = {
