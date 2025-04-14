@@ -79,7 +79,7 @@ form:
         display: thank-you
 ---
 
-## Schedule this course
+## Contact me
 
 If you want to schedule this course for your team, or if you have any questions you'd like me to answer, just [drop me a line to rodrigo@mathspp.com](mailto:rodrigo@mathspp.com?subject=Corporate%20training%20inquiry).
 Alternatively, fill in the contact form below:
