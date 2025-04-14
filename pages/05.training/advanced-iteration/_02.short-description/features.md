@@ -2,7 +2,7 @@
 class: offset-box
 ---
 
-## Master Python's most powerful tool: iteration
+## Become an iteration master
 
 Unlock the full potential of Python by diving deep into the world of iteration.
 
