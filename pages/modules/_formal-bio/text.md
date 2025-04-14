@@ -1,3 +1,7 @@
+---
+image: user://themes/myquark/images/rodrigo.webp
+---
+
 Hi, I'm Rodrigo Girão Serrão from sunny Portugal 🇵🇹.
 
 I'm a prolific Python author and speaker, with [multiple books published independently](/books) and [dozens of talks and tutorials](/talks) given at the largest Python conferences in the world.
