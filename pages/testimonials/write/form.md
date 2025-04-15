@@ -111,5 +111,4 @@ form:
 
 Use the form below to write a testimonial for my work.
 This is very appreciated.
-
-[Check the testimonial wall](/testimonials).
+(Or [check the testimonial wall](/testimonials).)
