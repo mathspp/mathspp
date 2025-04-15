@@ -1,5 +1,5 @@
 ---
-company_and_title: Python drops subscriber
+company_and_title: <a href="/drops">Python drops</a> subscriber
 date: "2025-04-13 02:43"
 name: Roberto
 # link:
