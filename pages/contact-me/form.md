@@ -13,6 +13,13 @@ form:
           validate:
             required: true
 
+        company:
+          label: Company
+          placeholder: Enter your company
+          type: text
+          validate:
+            required: true
+
         email:
           label: Email
           placeholder: Enter your email address
@@ -54,7 +61,7 @@ form:
         email:
           -
             reply_to: "{{ form.value.email }}"
-            from_name: "{{ form.value.name|e }}"
+            from_name: "{{ form.value.name|e }} ({{ form.value.company|e }})"
             subject: "{{ form.value.subject }}"
             body: "{{ form.value.message }}"
           -
