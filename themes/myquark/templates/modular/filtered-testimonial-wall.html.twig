@@ -17,10 +17,10 @@
                     page => page.taxonomy()["review-tag"]
                     | filter(tag => tag in tags_to_filter)|length > 0
                 ) 
-                | sort_by_key("slug")
+                | sort
             %}
         {% else %}
-            {% set collection = taxonomy.findTaxonomy({"category": "review"}) | sort_by_key("slug") %}
+            {% set collection = taxonomy.findTaxonomy({"category": "review"}) | sort %}
         {% endif %}
 
         <div class="bricklayer">
