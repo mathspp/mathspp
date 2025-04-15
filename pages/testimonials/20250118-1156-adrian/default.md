@@ -7,7 +7,8 @@ social: https://x.com/6lr61
 taxonomy:
     category: review
     review-tag:
-      - conference-talk
+      - talk
+      - conference
 published: true
 ---
 

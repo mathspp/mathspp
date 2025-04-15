@@ -8,7 +8,8 @@ taxonomy:
     category: review
     review-tag:
       - newsletter
-published: false
+      - newsletter-drops
+published: true
 ---
 
-"Very interesting, looks like every time I read your posts I learn something new!”
+Very interesting, looks like every time I read your posts I learn something new!

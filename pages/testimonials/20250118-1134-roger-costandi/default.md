@@ -7,7 +7,8 @@ social: https://x.com/nicrocosta
 taxonomy:
     category: review
     review-tag:
-      - book-list-comps
+      - book
+      - book-comprehending-comprehensions
 published: true
 ---
 

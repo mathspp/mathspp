@@ -7,7 +7,8 @@ social: "https://x.com/muzurvelet"
 taxonomy:
     category: review
     review-tag:
-      - social-media
+      - other
+      - tips
 published: true
 ---
 

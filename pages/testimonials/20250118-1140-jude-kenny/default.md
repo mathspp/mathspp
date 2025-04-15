@@ -8,6 +8,7 @@ taxonomy:
     category: review
     review-tag:
       - newsletter
+      - newsletter-insider
 published: true
 ---
 

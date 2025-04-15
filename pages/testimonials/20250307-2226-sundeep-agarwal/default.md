@@ -7,7 +7,9 @@ social:
 taxonomy:
     category: review
     review-tag:
-      - bootcamp
+      - pedagogy
+      - course
+      - problem-solving-bootcamp
 published: true
 ---
 

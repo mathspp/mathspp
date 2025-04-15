@@ -7,7 +7,8 @@ social: https://x.com/antunes73
 taxonomy:
     category: review
     review-tag:
-      - social-media
+      - other
+      - tips
 published: true
 ---
 

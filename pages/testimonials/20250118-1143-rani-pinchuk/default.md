@@ -7,7 +7,8 @@ social: https://www.linkedin.com/in/first/
 taxonomy:
     category: review
     review-tag:
-      - conference-talk
+      - talk
+      - conference
 published: true
 ---
 

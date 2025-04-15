@@ -7,6 +7,7 @@ social:
 taxonomy:
     category: review
     review-tag:
+      - pedagogy
       - favourite
 published: true
 ---

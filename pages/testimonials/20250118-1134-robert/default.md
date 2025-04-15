@@ -6,7 +6,8 @@ name: Robert
 taxonomy:
     category: review
     review-tag:
-      - book-list-comps
+      - book
+      - book-comprehending-comprehensions
 published: true
 ---
 

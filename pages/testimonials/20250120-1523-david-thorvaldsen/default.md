@@ -7,7 +7,7 @@ social: https://www.linkedin.com/in/david-thorvaldsen/
 taxonomy:
     category: review
     review-tag:
-      - webinar
+      - course
 published: true
 ---
 

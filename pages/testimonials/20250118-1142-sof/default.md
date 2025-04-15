@@ -7,7 +7,8 @@ social: https://x.com/at_sofdog
 taxonomy:
     category: review
     review-tag:
-      - conference-tutorial
+      - course
+      - conference
 published: true
 ---
 

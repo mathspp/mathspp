@@ -7,7 +7,8 @@ social: https://x.com/ordonez_adan
 taxonomy:
     category: review
     review-tag:
-      - bootcamp
+      - course
+      - problem-solving-bootcamp
 published: true
 ---
 

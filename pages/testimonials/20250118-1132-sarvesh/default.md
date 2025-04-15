@@ -7,6 +7,7 @@ social: https://x.com/Sarvesh0925
 taxonomy:
     category: review
     review-tag:
+      - book
       - book-pydonts
 published: true
 ---

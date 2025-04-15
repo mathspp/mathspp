@@ -7,6 +7,7 @@ social: https://x.com/nicrocosta
 taxonomy:
     category: review
     review-tag:
+      - book
       - book-nnfwp
 published: true
 ---

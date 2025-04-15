@@ -6,7 +6,8 @@ name: SRTapisi
 taxonomy:
     category: review
     review-tag:
-      - social-media
+      - other
+      - tips
 published: true
 ---
 

@@ -7,7 +7,8 @@ social: https://www.linkedin.com/in/nicolas-bs/
 taxonomy:
     category: review
     review-tag:
-      - book-list-comps
+      - book
+      - book-comprehending-comprehensions
 published: true
 ---
 

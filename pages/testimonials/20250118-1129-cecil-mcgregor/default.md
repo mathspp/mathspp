@@ -6,6 +6,7 @@ name: Cecil McGregor
 taxonomy:
     category: review
     review-tag:
+      - book
       - book-pydonts
 published: true
 ---

@@ -7,7 +7,8 @@ social: https://x.com/peteXLarge
 taxonomy:
     category: review
     review-tag:
-      - conference-talk
+      - talk
+      - conference
 published: true
 ---
 
