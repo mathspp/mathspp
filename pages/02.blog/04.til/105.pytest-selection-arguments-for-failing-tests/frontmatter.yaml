@@ -7,6 +7,7 @@ metadata:
 references:
     - "Florian Bruhin's talk “Property based testing with Hypothesis”, <https://github.com/The-Compiler/hypothesis-talk> [last accessed 19-10-2024];"
     - "Florian Bruhin on Twitter / X, <https://x.com/the_compiler/status/1846266160607908276> [last accessed 19-10-2024];"
+    - "Florian Bruhin on BlueSky, <https://bsky.app/profile/the-compiler.org/post/3lmubvfzcx22x> [last accessed 15-04-2025];"
 routes:
     aliases:
         - "/blog/til/105"
