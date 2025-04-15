@@ -20,7 +20,7 @@
                 | sort_by("slug")
             %}
         {% else %}
-            {% set collection = taxonomy.findTaxonomy({"category": "review"}) %}
+            {% set collection = taxonomy.findTaxonomy({"category": "review"}) | sort_by("slug") %}
         {% endif %}
 
         <div class="bricklayer">
