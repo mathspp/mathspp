@@ -80,3 +80,13 @@ form:
 # Contact me
 
 Use the form below to write me a message. This goes straight to my inbox 📩
+
+
+## Where to find me
+
+ - E-mail: [rodrigo@mathspp.com](mailto:rodrigo@mathspp.com)
+ - [GitHub @rodrigogiraoserrao](https://github.com/rodrigogiraoserrao)
+ - [LinkedIn](https://linkedin.com/in/rodrigo-girão-serrão)
+ - [BlueSky](https://bsky.app/profile/mathspp.com)
+ - [YouTube](https://youtube.com/@mathsppblog)
+ - [X/Twitter](https://x.com/mathsppblog)
