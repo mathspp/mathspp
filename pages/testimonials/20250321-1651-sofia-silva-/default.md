@@ -1,5 +1,5 @@
 ---
-company_and_title: 
+company_and_title: Intro to Python course student
 date: "2025-03-21 16:51"
 name: Sofia Silva 
 # link:
