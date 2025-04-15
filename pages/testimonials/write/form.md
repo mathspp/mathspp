@@ -15,7 +15,7 @@ form:
             talk: "Talk"
             newsletter: "Newsletter"
             blog: "Blog post"
-            other: "Something else / nothing in particular.
+            other: "Something else / nothing in particular."
           validate:
             required: true
 
