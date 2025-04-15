@@ -7,7 +7,7 @@ content:
           - "_hero"
           - "_welcome-video"
           - "_how_can_i_help"
-          - "_wall_of_love"
+          - "_testimonials"
 metadata:
     author: "Rodrigo Girão Serrão"
     og:image: "https://mathspp.com/thumbnail.webp"
