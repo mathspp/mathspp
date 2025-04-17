@@ -75,11 +75,17 @@ form:
                 content_type: "text/plain"
                 body: "Thanks for reaching out to me, I'll get back to you ASAP!\n\nYour message: “{{ form.value.message }}”\nIt is safe to delete this confirmation email. Thanks!"
         display: thank-you
+
+process:
+    twig: true
+cache_enable: false
 ---
 
 # Contact me
 
 Use the form below to write me a message. This goes straight to my inbox 📩
+
+{% include "forms/form.html.twig" with { form: forms("contact") } %}
 
 
 ## Where to find me
