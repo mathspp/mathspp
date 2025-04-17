@@ -1,13 +1,5 @@
 ## Frequently asked questions (FAQ)
 
-### What's the difference between the intensive and paced versions?
-
-The content of the course is exactly the same.
-What changes is the time span over which the live sessions take place.
-The intensive course takes place in a single week, with 4 hours of live sessions per day.
-The paced course spans over 3 weeks (Friday of week 1, Tuesday + Friday of week 2, and Tuesday + Friday of week 3) with 4 hours of live sessions for each of the mentioned days.
-Regardless of the version you choose, when the course is over you keep access to the course resources, like live session recordings and exercises.
-
 
 ### At what time will the live sessions take place?
 
@@ -39,4 +31,4 @@ So, expect a challenging but fun couple of days.
 The course has purchasing parity pricing (PPP) enabled, so you might get a discount based on the cost of living and local currency of where you are located.
 (This requires you to use a payment method from the same country you're located in, to prevent fraud.)
 
-If you are a student or are unemployed, you are eligible for an additional discount; just [email me](mailto:rodrigo@mathspp.com) with proof of your unemployment/student status and I will send you a discount code.
+If you are a student or are unemployed, you are eligible for an additional discount; just [contact me](/contact-me?subject=Unemployment/student%20discount%20for%20the%20intermediate%20Python%20course) and we'll sort you out.
