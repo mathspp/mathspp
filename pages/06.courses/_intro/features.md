@@ -10,5 +10,4 @@ Upcoming dates:
 
 | Course | Dates |
 | :- | :- |
-| [Intermediate Python course](#intermediate-python-course), intensive | 31st March – 4th April |
-| [Intermediate Python course](#intermediate-python-course), paced | 6th – 20th June |
+| [Intermediate Python course](#intermediate-python-course) | 8th – 12th September |

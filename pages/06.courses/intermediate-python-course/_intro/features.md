@@ -9,9 +9,7 @@ If you can write small functions, scripts, and simple programs but struggle with
 
 You'll learn how to code like a fluent Python developer by leveraging powerful tools, best practices, and workflows, that boost developer productivity and code efficiency and readability.
 
-**Next intensive cohort**: TBA.
-
-**Next paced cohort**: 6th – 20th June.
+**Next cohort**: 8th – 12th September.
 
 <div style="display:flex; justify-content:center;">
 <a href="#sign-up" class="btn" style="margin-right: 1em;">Secure your spot!</a>
