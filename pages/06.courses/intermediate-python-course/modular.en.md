@@ -3,18 +3,8 @@ body_classes: "header-dark header-transparent"
 content:
     items: "@self.modular"
     order:
-        custom:
-          - "_hero"
-          - "_intro"
-          - "_course-format"
-          - "_why-this-course"
-          - "_what-you-will-learn"
-          - "_who-should-take-this-course"
-          - "_praise"
-          - "_about-the-instructor"
-          - "_faq"
-          - "_sign-up"
-          - "_contact-me"
+        by: default
+        dir: asc
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "Intermediate Python course."
