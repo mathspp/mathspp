@@ -37,7 +37,7 @@ Today I sat down to think about it for a second and figured out how to implement
         var y = evt.clientY - rect.top;
 
         // Draw the rectangle.
-        ctx1.fillStyle = collision(x, y) ? RED : GREEN;
+        ctx1.fillStyle = collision1(x, y) ? RED : GREEN;
         ctx1.fillRect(WIDTH / 4, HEIGHT / 4, WIDTH / 2, HEIGHT / 2);
 
         // Draw the circle.
@@ -47,7 +47,7 @@ Today I sat down to think about it for a second and figured out how to implement
         ctx1.fill();
     }
 
-    function collision(x, y) {
+    function collision1(x, y) {
         var left = WIDTH / 4, right = 3 * WIDTH / 4;
         var top = HEIGHT / 4, bottom = 3 * HEIGHT / 4;
         var corners = [
@@ -98,7 +98,7 @@ In the demo below, try getting the circle close to the corners of the rectangle:
         var y = evt.clientY - rect.top;
 
         // Draw the rectangle.
-        ctx2.fillStyle = collision(x, y) ? RED : GREEN;
+        ctx2.fillStyle = collision2(x, y) ? RED : GREEN;
         ctx2.fillRect(WIDTH / 4, HEIGHT / 4, WIDTH / 2, HEIGHT / 2);
 
         // Draw the circle.
@@ -108,7 +108,7 @@ In the demo below, try getting the circle close to the corners of the rectangle:
         ctx2.fill();
     }
 
-    function collision(x, y) {
+    function collision2(x, y) {
         var left = WIDTH / 4, right = 3 * WIDTH / 4;
         var top = HEIGHT / 4, bottom = 3 * HEIGHT / 4;
         var corners = [
