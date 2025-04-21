@@ -8,7 +8,8 @@ taxonomy:
     category: review
     review-tag:
       - course
-published: false
+      - conference
+published: true
 ---
 
 I recently watched your [PyCon US 2024 tutorial on pandas and matplotlib on YouTube](https://www.youtube.com/watch?v=M4CGalfUj0E), and I absolutely loved it! Your explanations were clear, concise, and enriched with great examples.
