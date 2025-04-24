@@ -1,5 +1,5 @@
 ---
-company_and_title: Author of The Bit Plumber
+company_and_title: Author of The Bit Plumber, [Python drops](/drops) subscriber
 date: "2025-04-22 18:11"
 name: Robert Lucente
 # link:
