@@ -6,6 +6,7 @@ content:
         custom:
           - "_hero"
           - "_intro"
+          - "_testimonials"
           - "_tips"
           - "_refer"
           - "_book"
