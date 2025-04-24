@@ -411,12 +411,41 @@ BLACK = Colour(0)
 WHITE = Colour.RED | Colour.GREEN | Colour.BLUE  # or Colour(7)
 ```
 
-<!-- (TODO) Explain COLOUR(0) is no flag at all. -->
+In the snippet above, the instantiation `Colour(0)` is the alias for “no flags set”, which is what you'd get if you intersected two disjoin sets of flags, for example:
+
+```py
+print(Colour.RED & Colour.GREEN)  # Colour(0)
+```
+
+The alias `WHITE` has the numeric value `7`, because it's what you get if you combine the values `1`, `2`, and `4`, respectively from the members `RED`, `GREEN`, and `BLUE`:
+
+```py
+print(WHITE.value)  # 7
+```
+
+If you're going to be using these two aliases a lot, it may make sense to define them within the enumeration:
+
+```py { #colour-enum }
+class Colour(Flag):
+    BLACK = 0
+    RED = 1
+    GREEN = 2
+    BLUE = 4
+    WHITE = 7
+```
+
+This makes it so that the aliases are used automatically when certain operations with your flag members result in values that match those aliases.
+Here are two examples:
+
+```py
+print(Colour.RED & Colour.GREEN)  # Colour.BLACK
+print(Colour.RED | Colour.GREEN  | Colour.BLUE)  # Colour.WHITE
+```
 
 
 ## Convenience tools
 
-This section covers some convenience tools that the module `enum` provides to make it more convenient to work with enumerations.
+This section covers some convenience tools that the module `enum` provides to make it more ergonomic to work with enumerations.
 
 
 ### Check value uniqueness
@@ -448,7 +477,7 @@ As seen in the example above, the exception will let you know what are the alias
 ### Verifying constraints
 
 In Python 3.11, the decorator `verify` was added to the module `enum`.
-Like `verify`, it's a decorator for enumeration classes and it can be used to enforce a number of restrictions on the enumeration that is decorated.
+Like `unique`, it's a decorator for enumeration classes and it can be used to enforce a number of restrictions on the enumeration that is decorated.
 
 The decorator `verify` works with the following options:
 
@@ -512,21 +541,78 @@ from enum import Flag, verify, CONTINUOUS
 class MyFlag(Flag):
     C = 4
     E = 16
-
-"""Output:
+```
+```pycon
 ValueError: invalid flag 'MyFlag': missing values 8
-"""
 ```
 
 
-<!-- (TODO) #### Examples with `verify(NAMED_FLAGS)`
+#### Examples with `verify(NAMED_FLAGS)`
 
 To better understand the role of `NAMED_FLAGS`, first you need to understand that flag enumerations allow you to define aliases directly in the enumeration.
-Read [the previous section on flags with aliases](#flags-with-aliases) if you need a refresher. -->
+Read [the previous section on flags with aliases](#flags-with-aliases) if you need a refresher.
+
+When using `NAMED_FLAGS` you are only allowed to create aliases that are composed of members.
+
+Going back to [the flag `Colour` defined before](#colour-enum), imagine a scenario where you forget to define the member `Colour.GREEN`:
+
+```py
+from enum import Flag
+
+class Colour(Flag):
+    BLACK = 0
+    RED = 1   # <- GREEN should go
+    BLUE = 4  # <- between these.
+    WHITE = 7
+```
+
+The alias `WHITE` still works, and it's composed of the flags `Colour.RED`, `Colour.BLUE`, and `Colour(2)`, since there is no concrete member with the value `2`:
+
+```py
+print(purple in Colour.WHITE)  # True
+print(Colour.WHITE ^ purple)  # Colour(2)
+```
+
+If you use the constraint `NAMED_FLAGS`, creation of the flag `Colour` would fail because the alias `WHITE` uses `Colour(2)`, which is _not_ a named flag:
+
+```py
+from enum import Flag, verify, NAMED_FLAGS
+
+@verify(NAMED_FLAGS)
+class Colour(Flag):
+    BLACK = 0
+    RED = 1   # <- GREEN should go
+    BLUE = 4  # <- between these.
+    WHITE = 7
+```
+```pycon
+ValueError: invalid Flag 'Colour': alias WHITE is missing value 0x2 [use enum.show_flag_values(value) for details]
+```
 
 
-<!-- (TODO) ### Global enumeration members -->
+### Global enumeration members
 
+Another useful decorator that the module `enum` provides is `global_enum`, which uses dark magic[^2] to export the enumeration members to the global scope.
+This works with any enumeration, and the snippet below shows it used in a flag enumeration:
+
+[^2]: It's not really dark magic. It's just code.
+
+```py
+from enum import Flag, auto, global_enum
+
+@global_enum
+class Colour(Flag):
+    RED = 1
+    GREEN = 2
+    BLUE = 4
+
+print(BLUE == Colour.BLUE)  # True
+```
+
+This decorator was added in Python 3.11, so make sure you're running that version of Python or try implementing it yourself if you're not!
+That would be quite an exercise!
+
+! If you're using this in a package, you might want to add these global names to the list `__all__`.
 
 ## What was left out
 
@@ -535,6 +621,7 @@ In a way, I tried to show you the “20% of the tools that will take care of 80%
 But I left out a lot of interesting things:
 
  - the decorators `member` and `nonmember` that can be used to force something to be (or not to be) a member of the enumeration;
+ - the enumeration `FlagBoundary` that lets you customise the behaviour of flag enumerations when dealing with values that are out of the range of the flag;
  - the metaclass `EnumMeta` which is used by all enumeration classes and that allow you to do things like `Enumeration[MEMBER_NAME]`;
  - the helper class `EnumDict`, which is a subclass of `dict` used by the internals of enumerations;
  - the class `ReprEnum`, used by `StrEnum` and `IntEnum`, that makes it more convenient to mix in other types with enumerations;
