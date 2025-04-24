@@ -8,9 +8,9 @@ taxonomy:
     category: review
     review-tag:
       - newsletter
-published: false
+      - newsletter-drops
+published: true
 ---
 
 I thought that I was familiar w/ unpacking but TIL about unpacking generators.
-
-Also, the graphic depiction of the code is simply awesome.
+Also, the graphic depictions of the code are simply awesome.
