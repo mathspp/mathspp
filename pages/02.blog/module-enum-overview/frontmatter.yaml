@@ -1,0 +1,17 @@
+date: 24-04-2025 13:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This article gives an overview of the tools available in the module enum and how to use them."
+    og:image: "https://mathspp.com/blog/module-enum-overview/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/module-enum-overview/thumbnail.webp"
+references:
+  - "Python 3 docs, `enum`, [http://docs.python.org/3/library/enum](http://docs.python.org/3/library/enum) [last accessed 24-04-2025];"
+slug: "module-enum-overview"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - modules
+        - programming
+        - python
+title: Module enum overview

@@ -5606,5 +5606,19 @@
       "loc": 0,
       "words": 197
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/module-enum-overview": {
+    "timestamp": 1745494875.4190369,
+    "tags": [
+      "modules",
+      "programming",
+      "python"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 32,
+      "loc": 224,
+      "words": 2048
+    }
   }
 }
