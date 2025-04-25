@@ -12,4 +12,4 @@ taxonomy:
 published: true
 ---
 
-Love the short to the point code snippets. Then you really bring it home w/ graphics. Just awesome.
+Love the short to the point code snippets. Then you really bring it home with graphics. Just awesome.
