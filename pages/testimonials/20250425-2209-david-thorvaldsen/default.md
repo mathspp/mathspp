@@ -1,5 +1,5 @@
 ---
-company_and_title: AI/ML Data Scientist @ Caterpillar Inc.
+company_and_title: AI/ML Data Scientist @ Caterpillar Inc. and <a href="/drops>Python drops</a> subscriber
 date: "2025-04-25 22:09"
 name: David Thorvaldsen
 # link:
@@ -8,7 +8,8 @@ taxonomy:
     category: review
     review-tag:
       - newsletter
-published: false
+      - newsletter-drops
+published: true
 ---
 
 I really enjoy your Python drops! So much new exposure to what's possible with the language!
