@@ -12,5 +12,4 @@ taxonomy:
 published: true
 ---
 
-I thought that I was familiar w/ unpacking but TIL about unpacking generators.
-Also, the graphic depictions of the code are simply awesome.
+Love the short to the point code snippets. Then you really bring it home w/ graphics. Just awesome.
