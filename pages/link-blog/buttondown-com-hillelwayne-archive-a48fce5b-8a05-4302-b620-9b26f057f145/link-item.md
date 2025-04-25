@@ -36,7 +36,7 @@ score([A|As], [K|Ks], N) :-
     dif(A, K), score(As, Ks, N).
 ```
 
-I think the three terms `score(...)` set up some sort of predicates that Prolog can evaluate to true or false, and the first one is the base case: for an empty answer sheet and for a test with no answers, the score is 0.
+I think the three terms `score(...)` set up some sort of predicates that Prolog can evaluate to true or false, and the first one is the base case: for an empty answer sheet and for a test with no questions, the score is 0.
 
 Then, this line:
 
