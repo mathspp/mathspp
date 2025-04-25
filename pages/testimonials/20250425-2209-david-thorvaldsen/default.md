@@ -1,8 +1,7 @@
 ---
-company_and_title: AI/ML Data Scientist @ Caterpillar Inc. and <a href="/drops>Python drops</a> subscriber
+company_and_title: 'AI/ML Data Scientist @ Caterpillar Inc., <a href="/drops>Python drops</a> subscriber'
 date: "2025-04-25 22:09"
 name: David Thorvaldsen
-# link:
 social: https://www.linkedin.com/in/david-thorvaldsen/
 taxonomy:
     category: review
