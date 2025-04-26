@@ -19,15 +19,15 @@
   },
   "programming": {
     "articles": 296,
-    "code_snippets": 3707,
-    "loc": 35814,
-    "words": 361675
+    "code_snippets": 3708,
+    "loc": 35820,
+    "words": 361658
   },
   "python": {
     "articles": 279,
-    "code_snippets": 3577,
-    "loc": 34663,
-    "words": 347374
+    "code_snippets": 3578,
+    "loc": 34669,
+    "words": 347357
   },
   "algorithms": {
     "articles": 24,
@@ -319,9 +319,9 @@
   },
   "modules": {
     "articles": 12,
-    "code_snippets": 172,
-    "loc": 1501,
-    "words": 12254
+    "code_snippets": 173,
+    "loc": 1507,
+    "words": 12237
   },
   "probability": {
     "articles": 4,
@@ -565,9 +565,9 @@
   },
   "__all": {
     "articles": 399,
-    "code_snippets": 3824,
-    "loc": 36818,
-    "words": 437012
+    "code_snippets": 3825,
+    "loc": 36824,
+    "words": 436995
   },
   "fp": {
     "articles": 3,
