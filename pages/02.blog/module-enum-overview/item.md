@@ -16,7 +16,7 @@ This article provides an overview of the module `enum` and the tools it provides
 The article is structured in four sections, ordered from the most fundamental and commonly-useful tools of the module `enum` to the most rarely-needed tools:
 
  1. The [first section covers the absolute bare minimum to work with enumerations, the class `Enum` and `auto`](#how-to-create-enumerations-with-enum-and-auto).
- 2. The [second section covers string enumerations with `StrEnum`, a very common type of specialise enumeration](#string-enumerations).
+ 2. The [second section covers string enumerations with `StrEnum`, a very common type of specialised enumeration](#string-enumerations).
  3. The [third section covers specialised enumeration types](#other-specialised-enumeration-types).
  4. The [fourth and final section covers convenience tools that the module provides](#convenience-tools).
 
@@ -139,7 +139,7 @@ This might feel like a bad deal because you're typing more but `auto` is more ro
 When numbering options by hand you might accidentally skip a value, repeat a value, or forget to update the values when you delete/reorder members.
 With `auto`, none of that happens.
 
-`auto` will assign a unique integer for each member, starting at `1` and increasing successively:
+`auto` will assign a unique integer for each member, typically starting at `1` and increasing successively:
 
 ```py
 print(Weekday.SUNDAY.value)  # 1
@@ -404,11 +404,14 @@ class Colour(Flag):
     BLUE = 4
 ```
 
-Given these three flags, you may want to create aliases for `BLACK` (the absence of colour) and `WHITE` (a combination of all colours):
+Given these three flags, you may want to create aliases for common flag combinations, like:
+
+ - a combination of all colour flags, which would make sense to call `white` (the colour white is `(255, 255, 255)` in RGB); and
+ - the absence of all colour flags, which would make sense to call `black` (the colour black is `(0, 0, 0)` in RGB).
 
 ```py
-BLACK = Colour(0)
-WHITE = Colour.RED | Colour.GREEN | Colour.BLUE  # or Colour(7)
+black = Colour(0)
+white = Colour.RED | Colour.GREEN | Colour.BLUE  # or Colour(7)
 ```
 
 In the snippet above, the instantiation `Colour(0)` is the alias for “no flags set”, which is what you'd get if you intersected two disjoin sets of flags, for example:
@@ -417,15 +420,16 @@ In the snippet above, the instantiation `Colour(0)` is the alias for “no flags
 print(Colour.RED & Colour.GREEN)  # Colour(0)
 ```
 
-The alias `WHITE` has the numeric value `7`, because it's what you get if you combine the values `1`, `2`, and `4`, respectively from the members `RED`, `GREEN`, and `BLUE`:
+The alias `white` has the numeric value `7`, because it's what you get if you combine the values `1`, `2`, and `4`, respectively from the members `RED`, `GREEN`, and `BLUE`:
 
 ```py
-print(WHITE.value)  # 7
+print(white.value)  # 7
 ```
 
-If you're going to be using these two aliases a lot, it may make sense to define them within the enumeration:
+This allows you to give names to flag combinations, or masks, that you will be using a lot.
+But, if you are going to be using these aliases a lot, then it may make sense to define them within the enumeration:
 
-```py { #colour-enum }
+``` {.py #colour-enum }
 class Colour(Flag):
     BLACK = 0
     RED = 1
