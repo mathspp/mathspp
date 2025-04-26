@@ -429,7 +429,7 @@ print(white.value)  # 7
 This allows you to give names to flag combinations, or masks, that you will be using a lot.
 But, if you are going to be using these aliases a lot, then it may make sense to define them within the enumeration:
 
-``` {.py #colour-enum }
+``` {.py #colour-enum}
 class Colour(Flag):
     BLACK = 0
     RED = 1
