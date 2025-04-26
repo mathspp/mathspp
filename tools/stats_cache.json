@@ -5608,7 +5608,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/module-enum-overview": {
-    "timestamp": 1745656578.7587116,
+    "timestamp": 1745656913.363796,
     "tags": [
       "modules",
       "programming",
@@ -5617,8 +5617,8 @@
     "stats": {
       "articles": 1,
       "code_snippets": 42,
-      "loc": 258,
-      "words": 2412
+      "loc": 262,
+      "words": 2430
     }
   }
 }

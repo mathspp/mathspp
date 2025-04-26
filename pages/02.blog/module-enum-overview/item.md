@@ -528,8 +528,8 @@ ValueError: invalid enum 'NumsHole': missing values 5
 """
 ```
 
-For flag enumerations, the verification `CONTINUOUS` will only check for powers of two.
-As such, the flag enumeration `MyFlag` shown below passes the verification, even though no members are associated with the values `5`, `6`, or `7`:
+For flag enumerations, the verification `CONTINUOUS` will only concern itself with checking if no intermediate power of two is left unassigned.
+As such, the flag enumeration `MyFlag` shown below passes the verification, even though no members are associated with the values `5`, `6`, or `7`, nor for any integer between `8` and `16`:
 
 ```py
 from enum import Flag, verify, CONTINUOUS
@@ -538,6 +538,7 @@ from enum import Flag, verify, CONTINUOUS
 class MyFlag(Flag):
     C = 4
     D = 8
+    E = 16
 ```
 
 However, the flag enumeration `MyFlagHole` from the next snippet doesn't pass verification because the value `8` ($2^3$) is missing between `4` ($2^2$) and `16` ($2^4$).
@@ -548,6 +549,8 @@ from enum import Flag, verify, CONTINUOUS
 @verify(CONTINUOUS)
 class MyFlag(Flag):
     C = 4
+    WHAT = 5
+    DOUBLE_WHAT = 10
     E = 16
 ```
 ```pycon
@@ -562,7 +565,7 @@ Read [the previous section on flags with aliases](#flags-with-aliases) if you ne
 
 When using `NAMED_FLAGS` you are only allowed to create aliases that are composed of members.
 
-Going back to [the flag `Colour` defined before](#colour-enum), imagine a scenario where you forget to define the member `Colour.GREEN`:
+Going back to [the flag `Colour` defined before](#enum-colour), imagine a scenario where you forget to define the member `Colour.GREEN`:
 
 ```py
 from enum import Flag
@@ -577,6 +580,7 @@ class Colour(Flag):
 The alias `WHITE` still works, and it's composed of the flags `Colour.RED`, `Colour.BLUE`, and `Colour(2)`, since there is no concrete member with the value `2`:
 
 ```py
+purple = Colour.RED | Colour.BLUE
 print(purple in Colour.WHITE)  # True
 print(Colour.WHITE ^ purple)  # Colour(2)
 ```
@@ -600,7 +604,7 @@ ValueError: invalid Flag 'Colour': alias WHITE is missing value 0x2 [use enum.sh
 
 ### Global enumeration members
 
-Another useful decorator that the module `enum` provides is `global_enum`, which uses dark magic[^2] to export the enumeration members to the global scope.
+Another useful decorator that the module `enum` provides is `global_enum`, which uses dark magic[^2] to inject the enumeration members into the namespace of the module.
 This works with any enumeration, and the snippet below shows it used in a flag enumeration:
 
 [^2]: It's not really dark magic. It's just code.
@@ -621,6 +625,7 @@ This decorator was added in Python 3.11, so make sure you're running that versio
 That would be quite an exercise!
 
 ! If you're using this in a package, you might want to add these global names to the list `__all__`.
+
 
 ## What was left out
 
