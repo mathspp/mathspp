@@ -10,9 +10,9 @@ content:
           - "_short-intros"
 metadata:
     author: "Rodrigo Girão Serrão"
-    description: "Trainings and courses to help you become a better and more efficient Python programmer."
-    og:title: "Training"
-    title: Training
+    description: "Corporate trainings to make your team better and more efficient Python programmers."
+    og:title: "Trainings"
+    title: Trainings
 onpage_menu: false
-title: Training
+title: Trainings
 ---
