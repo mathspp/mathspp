@@ -4,5 +4,6 @@ hero_classes: "parallax text-light hero-large overlay-dark-gradient" # see https
 hero_image: hero.webp
 ---
 
-# Trainings
+# Corporate trainings
 
+## Training better and more efficient Python programmers
