@@ -29,7 +29,7 @@ title: "Modules blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">12</th>
-            <th style="text-align: center;">12,251</th>
+            <th style="text-align: center;">12,222</th>
             <th style="text-align: center;">1,511</th>
         </tr>
     </thead>
