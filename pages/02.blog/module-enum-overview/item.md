@@ -56,10 +56,10 @@ It's because of situations like this that enumerations exist:
  - you can specify that a parameter expects values from an enumeration, letting you narrow down the values that static type checking will accept; and
  - in the worst case scenario, the enumeration itself documents the valid values in a readable way.
 
-To create an enumeration, you inherit from the class `Enum` from the module `enum`[^1].
+To create an enumeration, you inherit[^1] from the class `Enum` from the module `enum`.
 Then, you create a class variable for each different value that you want to use:
 
-[^1]: Technically speaking, you can also create enumerations programmatically in a functional way, but IDE support for those is limited (if not non-existent) and the `class`-based approach is preferred.
+[^1]: Technically speaking, you can also create enumerations programmatically in a functional way, but IDE support for those is limited (if not non-existent) and the class-based approach is preferred.
 
 ```py
 from enum import Enum
