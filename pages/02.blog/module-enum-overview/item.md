@@ -57,7 +57,7 @@ It's because of situations like this that enumerations exist:
  - in the worst case scenario, the enumeration itself documents the valid values in a readable way.
 
 In Python, you create an enumeration by defining a class.
-Your class must inherit from `enum.Enum`, and then you create a class variable for each different value that you want to use:
+Your class must inherit from `enum.Enum`, and then you add a class variable for each different value that you want to use:
 
 
 ```py
@@ -73,6 +73,8 @@ def get_temperature(city, unit):
 print(get_temperature("Lisbon", TempUnit.CELSIUS))  # 18.0
 print(get_temperature("Lisbon", TempUnit.FAHRENHEIT))  # 64.4
 ```
+
+(Technically speaking, you can also create enumerations programmatically, but the class-based approach is preferred because it is much more readable and easier to work with.)
 
 The enumeration members are the singleton values that you can use.
 In this case, they're `TempUnit.CELSIUS` and `TempUnit.FAHRENHEIT`.
