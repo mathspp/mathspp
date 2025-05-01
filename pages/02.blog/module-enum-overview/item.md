@@ -58,6 +58,7 @@ It's because of situations like this that enumerations exist:
 
 To create an enumeration, you inherit[^1] from the class `enum.Enum`.
 [^1]: This is a footnote.
+
 Then, you create a class variable for each different value that you want to use:
 
 
