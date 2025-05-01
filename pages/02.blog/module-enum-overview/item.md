@@ -56,6 +56,8 @@ It's because of situations like this that enumerations exist:
  - you can specify that a parameter expects values from an enumeration, letting you narrow down the values that static type checking will accept; and
  - in the worst case scenario, the enumeration itself documents the valid values in a readable way.
 
+...
+
 To create an enumeration, you inherit[^creation-footnote] from the class `enum.Enum`.
 Then, you create a class variable for each different value that you want to use:
 
