@@ -56,10 +56,10 @@ It's because of situations like this that enumerations exist:
  - you can specify that a parameter expects values from an enumeration, letting you narrow down the values that static type checking will accept; and
  - in the worst case scenario, the enumeration itself documents the valid values in a readable way.
 
-To create an enumeration[^22], you inherit from the class `enum.Enum`.
+To create an enumeration[^2], you inherit from the class `enum.Enum`.
 Then, you create a class variable for each different value that you want to use:
 
-[^22]: This is a footnote.
+[^2]: This is a footnote.
 
 
 ```py
@@ -605,10 +605,10 @@ ValueError: invalid Flag 'Colour': alias WHITE is missing value 0x2 [use enum.sh
 
 ### Global enumeration members
 
-Another useful decorator that the module `enum` provides is `global_enum`, which uses dark magic[^2] to inject the enumeration members into the namespace of the module.
+Another useful decorator that the module `enum` provides is `global_enum`, which uses dark magic[^3] to inject the enumeration members into the namespace of the module.
 This works with any enumeration, and the snippet below shows it used in a flag enumeration:
 
-[^2]: It's not really dark magic. It's just code.
+[^3]: It's not really dark magic. It's just code.
 
 ```py
 from enum import Flag, auto, global_enum
