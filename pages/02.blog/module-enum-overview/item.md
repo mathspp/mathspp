@@ -147,6 +147,18 @@ print(Weekday.SUNDAY.value)  # 1
 print(Weekday.SATURDAY.value)  # 7
 ```
 
+Another great use-case for `auto` is when you are not interested in the concrete value of the member.
+For example, in the snippet below, the values of the members `Direction.LEFT` and `Direction.RIGHT` are completely irrelevant:
+
+```py
+def move(x, direction):
+    if direction == Direction.LEFT:
+        return x + 1
+    elif direction == Direction.RIGHT:
+        return x - 1
+    else:
+        raise ValueError(f"Unknown {direction = }.")
+```
 
 ### Enumeration niceties
 

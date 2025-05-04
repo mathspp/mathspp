@@ -1,0 +1,19 @@
+date: 04-05-2025 09:34
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned you can use uv to install CLI tools with extra dependencies."
+    og:image: "https://mathspp.com/blog/cli-tools-with-extra-dependencies/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/cli-tools-with-extra-dependencies/thumbnail.webp"
+references: []
+routes:
+    aliases:
+        - "/blog/til/122"
+slug: "cli-tools-with-extra-dependencies"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - productivity
+      - python
+      - uv
+title: "TIL #122 – CLI tools with extra dependencies"
+visible: false

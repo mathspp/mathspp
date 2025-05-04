@@ -1,9 +1,9 @@
 {
   "__all": {
-    "articles": 399,
-    "code_snippets": 3825,
-    "loc": 36828,
-    "words": 437012
+    "articles": 400,
+    "code_snippets": 3826,
+    "loc": 36835,
+    "words": 437199
   },
   "bpci": {
     "articles": 10,
@@ -25,15 +25,15 @@
   },
   "programming": {
     "articles": 296,
-    "code_snippets": 3708,
-    "loc": 35824,
-    "words": 361675
+    "code_snippets": 3709,
+    "loc": 35831,
+    "words": 361710
   },
   "python": {
-    "articles": 279,
-    "code_snippets": 3578,
-    "loc": 34673,
-    "words": 347374
+    "articles": 280,
+    "code_snippets": 3579,
+    "loc": 34680,
+    "words": 347561
   },
   "algorithms": {
     "articles": 24,
@@ -198,10 +198,10 @@
     "words": 6426
   },
   "productivity": {
-    "articles": 24,
+    "articles": 25,
     "code_snippets": 147,
     "loc": 1487,
-    "words": 16308
+    "words": 16460
   },
   "logic": {
     "articles": 34,
@@ -216,10 +216,10 @@
     "words": 2630
   },
   "uv": {
-    "articles": 4,
+    "articles": 5,
     "code_snippets": 26,
     "loc": 88,
-    "words": 2464
+    "words": 2616
   },
   "opinion": {
     "articles": 4,
@@ -343,9 +343,9 @@
   },
   "modules": {
     "articles": 12,
-    "code_snippets": 173,
-    "loc": 1511,
-    "words": 12254
+    "code_snippets": 174,
+    "loc": 1518,
+    "words": 12289
   },
   "probability": {
     "articles": 4,
