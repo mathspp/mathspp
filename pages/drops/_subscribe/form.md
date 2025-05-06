@@ -1,5 +1,6 @@
 ---
 title: Subscribe
+class: offset-box
 
 form:
     name: subscribe
