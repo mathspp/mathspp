@@ -61,6 +61,7 @@ class NewsletterSubscriberPlugin extends Plugin
 
         // Load the bearer token from the plugin config
         $token = $this->config->get('plugins.newsletter-subscriber.token');
+        $this->grav['log']->info("token is $token");
 
         $payload = json_encode(['email' => $email]);
 
