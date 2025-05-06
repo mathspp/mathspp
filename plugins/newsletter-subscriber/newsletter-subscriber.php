@@ -54,10 +54,7 @@ class NewsletterSubscriberPlugin extends Plugin
         }
 
         $form = $event['form'];
-
         $pub_id = $form->value('publication_id');
-        $this->grav['log']->info("Using pub ID {$pub_id}");
-
         $email = $form->value('email');
 
         // Load the bearer token from the plugin config
