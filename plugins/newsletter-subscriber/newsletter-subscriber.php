@@ -49,22 +49,26 @@ class NewsletterSubscriberPlugin extends Plugin
     public function onFormProcessed(Event $event): void
     {
         $action = $event['action'];
-
         if ($action !== 'newsletter-subscriber') {
             return;
         }
 
+        $pub_id = $page->header()->publication_id ?? null;
+        if ($pub_id === null) {
+            return;
+        }
+        $this->grav['log']->info("Using pub ID {$pub_id}");
+
         $form = $event['form'];
 
         $email = $form->value('email');
-        $this->grav['log']->info("Triggered with {$email}");
 
         // Load the bearer token from the plugin config
         $token = $this->config->get('plugins.newsletter-subscriber.token');
 
         $payload = json_encode(['email' => $email, 'reactivate_existing' => true]);
 
-        $ch = curl_init('https://api.beehiiv.com/v2/publications/pub_fe58688a-209b-4a1b-b7c1-83c0c0e8fee5/subscriptions');
+        $ch = curl_init("https://api.beehiiv.com/v2/publications/{$pub_id}/subscriptions");
         curl_setopt_array($ch, [
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_POST => true,
