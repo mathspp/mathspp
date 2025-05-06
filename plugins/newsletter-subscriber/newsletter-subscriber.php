@@ -61,9 +61,8 @@ class NewsletterSubscriberPlugin extends Plugin
 
         // Load the bearer token from the plugin config
         $token = $this->config->get('plugins.newsletter-subscriber.token');
-        $this->grav['log']->info("token is $token");
 
-        $payload = json_encode(['email' => $email]);
+        $payload = json_encode(['email' => $email, 'reactivate_existing' => true]);
 
         $ch = curl_init('https://api.beehiiv.com/v2/publications/pub_fe58688a-209b-4a1b-b7c1-83c0c0e8fee5/subscriptions');
         curl_setopt_array($ch, [
