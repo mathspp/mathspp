@@ -53,13 +53,10 @@ class NewsletterSubscriberPlugin extends Plugin
             return;
         }
 
-        $pub_id = $page->header()->publication_id ?? null;
-        if ($pub_id === null) {
-            return;
-        }
-        $this->grav['log']->info("Using pub ID {$pub_id}");
-
         $form = $event['form'];
+
+        $pub_id = $form->value('publication_id');
+        $this->grav['log']->info("Using pub ID {$pub_id}");
 
         $email = $form->value('email');
 
