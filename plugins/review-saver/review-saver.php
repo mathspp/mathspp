@@ -16,6 +16,11 @@ class ReviewSaverPlugin extends Plugin
 
     public function onFormProcessed(Event $event): void
     {
+        $action = $event['action'];
+        if ($action !== 'newsletter-subscriber') {
+            return;
+        }
+
         // Get form data
         $form = $event['form'];
         $data = $form->value();

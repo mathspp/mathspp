@@ -48,6 +48,12 @@ class NewsletterSubscriberPlugin extends Plugin
 
     public function onFormProcessed(Event $event): void
     {
+        $action = $event['action'];
+
+        if ($action !== 'newsletter-subscriber') {
+            return;
+        }
+
         $form = $event['form'];
 
         $email = $form->value('email');
