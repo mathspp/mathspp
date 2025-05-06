@@ -34,6 +34,7 @@ form:
     process:
         captcha: true
         newsletter-subscriber: true
+        display: thanks-for-subscribing
 ---
 
 ## Subscribe
