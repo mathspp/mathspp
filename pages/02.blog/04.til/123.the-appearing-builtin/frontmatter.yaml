@@ -1,0 +1,16 @@
+date: 06-05-2025 22:45
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned that the module `builtins` grows dynamically in the REPL."
+    og:image: "https://mathspp.com/blog/the-appearing-builtin/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/the-appearing-builtin/thumbnail.webp"
+references: []
+routes:
+    aliases:
+        - "/blog/til/123"
+slug: "the-appearing-builtin"
+taxonomy:
+    category: [blogpost, til]
+    tag: []
+title: "TIL #123 – The appearing built-in"
+visible: false
