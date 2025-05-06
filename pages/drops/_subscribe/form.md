@@ -14,6 +14,7 @@ form:
           type: honeypot
 
         email:
+          display_label: false
           autocomplete: true
           placeholder: Your best email address
           type: email

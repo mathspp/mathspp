@@ -5,7 +5,10 @@ class: offset-box
 ## Become smarter about Python
 
 Get a short, actionable Python tip each day.
-Subscribe below to become smarter about Python:
+Tips are short (under 100 words) and they're also sent as a flashcard, ideal if you're a visual learner.
 
-<iframe src="https://embeds.beehiiv.com/5d8e5d78-3d6e-46d4-b5c7-b7c8d1b409e6?slim=true" class="dark-theme-only" data-test-id="beehiiv-embed" height="52" width="70%" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>
-<iframe src="https://embeds.beehiiv.com/3e604996-a8ed-4265-be41-4ab2b315b0f5?slim=true" class="light-theme-only" data-test-id="beehiiv-embed" height="52" width="70%" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>
+Subscribe below:
+
+<div style="display:flex; justify-content:center;">
+    <a href="#subscribe" target="_blank" class="btn" style="margin: 0 .3em 0 .3em;">Get daily tips</a>
+</div>
