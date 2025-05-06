@@ -30,17 +30,6 @@ class NewsletterSubscriberPlugin extends Plugin
             ]
         ];
     }
-
-    /**
-     * Composer autoload
-     *
-     * @return ClassLoader
-     */
-    public function autoload(): ClassLoader
-    {
-        return require __DIR__ . '/vendor/autoload.php';
-    }
-
     /**
      * Initialize the plugin
      */
@@ -62,6 +51,7 @@ class NewsletterSubscriberPlugin extends Plugin
         $form = $event['form'];
 
         $email = $form->value('email');
+        $this->grav['log']->info("Triggered with {$email}");
 
         // Load the bearer token from the plugin config
         $token = $this->config->get('plugins.newsletter-subscriber.token');
