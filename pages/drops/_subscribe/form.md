@@ -1,6 +1,5 @@
 ---
 title: Subscribe
-class: offset-box
 
 form:
     name: subscribe
@@ -15,8 +14,8 @@ form:
           type: honeypot
 
         email:
-          label: Your email
           autocomplete: true
+          placeholder: Your best email address
           type: email
           validate:
             required: true
