@@ -1,0 +1,25 @@
+{
+  "name": "rodrigogiraoserrao/newsletter-subscriber",
+  "type": "grav-plugin",
+  "description": "Subscribe to Beehiiv newsletters via Grav forms.",
+  "version": "1.0.0",
+  "keywords": ["plugin"],
+  "homepage": "https://github.com/rodrigogiraoserrao/grav-plugin-newsletter-subscriber",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Rodrigo Girão Serrão",
+      "email": "rodrigo@mathspp.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Grav\\Plugin\\NewsletterSubscriber\\": "classes/"
+    },
+    "classmap":  ["newsletter-subscriber.php"]
+  }
+}

@@ -1,0 +1,36 @@
+name: Newsletter Subscriber
+slug: newsletter-subscriber
+type: plugin
+version: 0.1.0
+description: Subscribe to Beehiiv newsletters via Grav forms.
+icon: plug
+author:
+  name: Rodrigo Girão Serrão
+  email: rodrigo@mathspp.com
+homepage: https://github.com/rodrigogiraoserrao/grav-plugin-newsletter-subscriber
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com/rodrigogiraoserrao/grav-plugin-newsletter-subscriber/issues
+docs: https://github.com/rodrigogiraoserrao/grav-plugin-newsletter-subscriber/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    text_var:
+      type: text
+      label: PLUGIN_NEWSLETTER_SUBSCRIBER.TEXT_VARIABLE
+      help: PLUGIN_NEWSLETTER_SUBSCRIBER.TEXT_VARIABLE_HELP
