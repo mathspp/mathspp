@@ -3,6 +3,8 @@ namespace Grav\Plugin;
 
 use Composer\Autoload\ClassLoader;
 use Grav\Common\Plugin;
+use RocketTheme\Toolbox\Event\Event;
+
 
 /**
  * Class NewsletterSubscriberPlugin
@@ -24,8 +26,6 @@ class NewsletterSubscriberPlugin extends Plugin
     {
         return [
             'onPluginsInitialized' => [
-                // Uncomment following line when plugin requires Grav < 1.7
-                // ['autoload', 100000],
                 ['onPluginsInitialized', 0]
             ]
         ];
@@ -53,7 +53,40 @@ class NewsletterSubscriberPlugin extends Plugin
 
         // Enable the main events we are interested in
         $this->enable([
-            // Put your main events here
+            'onFormProcessed' => ['onFormProcessed', 0]
         ]);
+    }
+
+    public function onFormProcessed(Event $event): void
+    {
+        $form = $event['form'];
+
+        $email = $form->value('email');
+
+        // Load the bearer token from the plugin config
+        $token = $this->config->get('plugins.newsletter-subscriber.token');
+
+        $payload = json_encode(['email' => $email]);
+
+        $ch = curl_init('https://api.beehiiv.com/v2/publications/pub_fe58688a-209b-4a1b-b7c1-83c0c0e8fee5/subscriptions');
+        curl_setopt_array($ch, [
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_POST => true,
+            CURLOPT_HTTPHEADER => [
+                'Content-Type: application/json',
+                "Authorization: Bearer $token"
+            ],
+            CURLOPT_POSTFIELDS => $payload,
+        ]);
+
+        $response = curl_exec($ch);
+        $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
+        if ($response === false || $status >= 400) {
+            // Log or handle the error
+            $this->grav['log']->error("API submission failed: " . curl_error($ch));
+        }
+
+        curl_close($ch);
     }
 }
