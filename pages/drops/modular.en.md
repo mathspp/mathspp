@@ -10,6 +10,7 @@ content:
           - "_tips"
           - "_refer"
           - "_book"
+          - "_subscribe"
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "Python drops 🐍💧 newsletter."
