@@ -5,7 +5,6 @@ process:
 
 publication_id: pub_fe58688a-209b-4a1b-b7c1-83c0c0e8fee5
 form:
-    action: /drops
     process:
         captcha: true
         newsletter-subscriber: true
