@@ -1,12 +1,12 @@
 ---
-title: "Wait! Just one more thing..."
+title: "Wait! One more thing..."
 ---
 
 # Python drops 🐍💧
 
-## Wait! Just one more thing...
+## Wait! One more thing...
 
-For your safety, you have to **confirm your subscription** to the newsletter.
+For your safety and to prevent SPAM, you have to **confirm your subscription** to the newsletter.
 Without doing this, you **will not** receive your drops of Python knowledge.
 
 ## What to expect
@@ -30,7 +30,8 @@ Open it and click the big “confirm” button.
 
 (The email might have landed on your SPAM folder...)
 
-## See you soon!
+## See you soon 👋
+
+### Rodrigo
 
 ![A headshot of Rodrigo Girão Serrão, the author of the Python drops newsletter.](theme://images/rodrigo_circle_256.webp)
-
