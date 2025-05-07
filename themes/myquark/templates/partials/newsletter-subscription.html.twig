@@ -26,13 +26,4 @@
   {# {{ form_field('captcha', { field: { name: 'g-recaptcha', recaptcha_site_key: config.plugins.form.recaptcha.site_key } }) }} #}
 
   {# Grav Form plugin will process the form according to page.header.form.process automatically #}
-
-  {% if form is defined and form.message %}
-  <p
-    class="{{ form.status == 'success' ? 'text-success' : 'text-error' }}"
-    style="color: {{ form.status == 'success' ? 'var(--accent)' : 'var(--tx-2)' }};"
-  >
-    {{ form.message }}
-  </p>
-{% endif %}
 </form>
