@@ -367,6 +367,13 @@ blockquote {
     background: var(--tx);
 }
 
+.btn-center {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Background colour for blog tags. */
 .label.label-secondary,
 .label.label-primary,
