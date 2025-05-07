@@ -9,8 +9,9 @@ form:
     action: /drops
     process:
         # captcha: true
-        newsletter-subscriber: true
-        display: thanks-for-subscribing
+        message: "Done!"
+        # newsletter-subscriber: true
+        # display: thanks-for-subscribing
 ---
 
 ## Become smarter about Python
