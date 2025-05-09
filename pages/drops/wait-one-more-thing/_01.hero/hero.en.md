@@ -6,5 +6,5 @@ hero_image: theme://images/common_hero.webp
 
 # Python drops 🐍💧
 
-## Wait! One more thing...
+## Wait! One more thing... 👇
 
