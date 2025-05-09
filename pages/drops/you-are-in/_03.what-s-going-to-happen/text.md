@@ -1,7 +1,3 @@
----
-class: offset-box
----
-
 ## What's going to happen
 
 Expect one daily email (during weekdays) with a tip that is:
