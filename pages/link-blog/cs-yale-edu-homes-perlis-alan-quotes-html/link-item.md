@@ -4,7 +4,7 @@ date: 06-05-2025 13:34
 link: https://www.cs.yale.edu/homes/perlis-alan/quotes.html
 taxonomy:
     category: link
-title: "Perlisisms - "Epigrams in Programming" by Alan J. Perlis"
+title: 'Perlisisms - "Epigrams in Programming" by Alan J. Perlis'
 # via:
 ---
 
