@@ -4,7 +4,5 @@ hero_classes: "parallax text-light hero-large overlay-dark-gradient" # see https
 hero_image: theme://images/common_hero.webp
 ---
 
-# Python drops 🐍💧
-
-## Wait! One more thing... 👇
+# Wait! One more thing... 👇
 
