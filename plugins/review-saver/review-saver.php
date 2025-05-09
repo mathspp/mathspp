@@ -18,6 +18,7 @@ class ReviewSaverPlugin extends Plugin
     {
         $action = $event['action'];
         if ($action !== 'review-saver') {
+            $this->grav['log']->info("action was {$action}");
             return;
         }
 
