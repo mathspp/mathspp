@@ -1,5 +1,5 @@
 ---
-title: Email sent
+title: Testimonial written!
 cache_enable: false
 process:
     twig: true
