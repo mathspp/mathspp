@@ -1,4 +1,4 @@
-## What to expect
+## What to expect going forward
 
 After confirming, expect one daily email (during weekdays, Monday through Friday) at around 2pm Lisbon time.
 Each email contains a tip that is:
