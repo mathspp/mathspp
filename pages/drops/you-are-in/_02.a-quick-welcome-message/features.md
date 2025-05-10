@@ -9,4 +9,5 @@ class: offset-box
   A video of Rodrigo Girão Serrão welcoming the Python drops subscribers.
 </video>
 
-<i id="to-start" class="pulse fa fa-angle-down"></i>
+After watching that 1-minute video, I have a little something for you.
+It's not much, but it should be helpful. 👇
