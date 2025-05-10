@@ -1,5 +1,5 @@
 ---
-company_and_title: mathspp insider reader
+company_and_title: <a href="/insider">mathspp insider</a> subscriber
 date: "2025-05-10 10:48"
 name: Jan-Willem
 # link:
