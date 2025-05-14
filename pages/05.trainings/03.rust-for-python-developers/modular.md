@@ -7,9 +7,9 @@ content:
         dir: asc
 metadata:
     author: "Rodrigo Girão Serrão"
-    description: "Advanced iteration Python course"
-    og:title: "Advanced iteration"
-    title: Advanced iteration
+    description: "Rust for Python developers course"
+    og:title: "Rust for Python developers"
+    title: Rust for Python developers
 onpage_menu: false
-title: Advanced iteration
+title: Rust for Python developers
 ---

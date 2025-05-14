@@ -7,9 +7,9 @@ content:
         dir: asc
 metadata:
     author: "Rodrigo Girão Serrão"
-    description: "Advanced iteration Python course"
-    og:title: "Advanced iteration"
-    title: Advanced iteration
+    description: "Python for scripting and automation course"
+    og:title: "Python for scripting and automation"
+    title: Python for scripting and automation
 onpage_menu: false
-title: Advanced iteration
+title: Python for scripting and automation
 ---
