@@ -1,0 +1,18 @@
+date: 14-05-2025 10:25
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This article shows the small script I use to automatically push code changes while live coding in talks or classes, improved with uv."
+    og:image: "https://mathspp.com/blog/automatically-pushing-code-changes-during-live-coding-with-uv/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/automatically-pushing-code-changes-during-live-coding-with-uv/thumbnail.webp"
+references: []
+slug: "automatically-pushing-code-changes-during-live-coding-with-uv"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - git
+        - productivity
+        - programming
+        - python
+        - uv
+title: Automatically pushing code changes during live coding with uv

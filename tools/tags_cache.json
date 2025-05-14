@@ -1,9 +1,9 @@
 {
   "__all": {
-    "articles": 401,
-    "code_snippets": 3832,
-    "loc": 36874,
-    "words": 437500
+    "articles": 402,
+    "code_snippets": 3835,
+    "loc": 36922,
+    "words": 437812
   },
   "bpci": {
     "articles": 10,
@@ -24,16 +24,16 @@
     "words": 35302
   },
   "programming": {
-    "articles": 296,
-    "code_snippets": 3709,
-    "loc": 35831,
-    "words": 361710
+    "articles": 297,
+    "code_snippets": 3712,
+    "loc": 35879,
+    "words": 362022
   },
   "python": {
-    "articles": 280,
-    "code_snippets": 3579,
-    "loc": 34680,
-    "words": 347561
+    "articles": 281,
+    "code_snippets": 3582,
+    "loc": 34728,
+    "words": 347873
   },
   "algorithms": {
     "articles": 24,
@@ -198,10 +198,10 @@
     "words": 6426
   },
   "productivity": {
-    "articles": 25,
-    "code_snippets": 147,
-    "loc": 1487,
-    "words": 16460
+    "articles": 26,
+    "code_snippets": 150,
+    "loc": 1535,
+    "words": 16772
   },
   "logic": {
     "articles": 34,
@@ -216,10 +216,10 @@
     "words": 2630
   },
   "uv": {
-    "articles": 5,
-    "code_snippets": 26,
-    "loc": 88,
-    "words": 2616
+    "articles": 6,
+    "code_snippets": 29,
+    "loc": 136,
+    "words": 2928
   },
   "opinion": {
     "articles": 4,
@@ -317,6 +317,12 @@
     "loc": 407,
     "words": 4426
   },
+  "git": {
+    "articles": 9,
+    "code_snippets": 20,
+    "loc": 166,
+    "words": 2638
+  },
   "optimisation": {
     "articles": 6,
     "code_snippets": 33,
@@ -412,12 +418,6 @@
     "code_snippets": 0,
     "loc": 0,
     "words": 625
-  },
-  "git": {
-    "articles": 8,
-    "code_snippets": 17,
-    "loc": 118,
-    "words": 2326
   },
   "brainfuck": {
     "articles": 1,

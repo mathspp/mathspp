@@ -5644,5 +5644,21 @@
       "loc": 39,
       "words": 301
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/automatically-pushing-code-changes-during-live-coding-with-uv": {
+    "timestamp": 1747235435.4191787,
+    "tags": [
+      "git",
+      "productivity",
+      "programming",
+      "python",
+      "uv"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 3,
+      "loc": 48,
+      "words": 312
+    }
   }
 }

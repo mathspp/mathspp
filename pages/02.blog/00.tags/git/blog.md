@@ -28,9 +28,9 @@ title: "Git blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">8</th>
-            <th style="text-align: center;">2,326</th>
-            <th style="text-align: center;">118</th>
+            <th style="text-align: center;">9</th>
+            <th style="text-align: center;">2,638</th>
+            <th style="text-align: center;">166</th>
         </tr>
     </thead>
     <tbody>
