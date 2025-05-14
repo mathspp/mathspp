@@ -21,13 +21,13 @@
     "articles": 297,
     "code_snippets": 3712,
     "loc": 35879,
-    "words": 362022
+    "words": 362017
   },
   "python": {
     "articles": 281,
     "code_snippets": 3582,
     "loc": 34728,
-    "words": 347873
+    "words": 347868
   },
   "algorithms": {
     "articles": 24,
@@ -183,7 +183,7 @@
     "articles": 26,
     "code_snippets": 150,
     "loc": 1535,
-    "words": 16772
+    "words": 16767
   },
   "logic": {
     "articles": 34,
@@ -393,7 +393,7 @@
     "articles": 9,
     "code_snippets": 20,
     "loc": 166,
-    "words": 2638
+    "words": 2633
   },
   "brainfuck": {
     "articles": 1,
@@ -543,7 +543,7 @@
     "articles": 6,
     "code_snippets": 29,
     "loc": 136,
-    "words": 2928
+    "words": 2923
   },
   "javascript": {
     "articles": 3,
@@ -567,7 +567,7 @@
     "articles": 402,
     "code_snippets": 3835,
     "loc": 36922,
-    "words": 437812
+    "words": 437807
   },
   "fp": {
     "articles": 3,

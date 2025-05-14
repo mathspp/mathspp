@@ -82,5 +82,5 @@ if __name__ == "__main__":
 ```
 
 This makes it so that I can put `gitsync.py` in a directory that's in my PATH, and then use it from anywhere.
-Now, when I'm teaching, I just run `gitsync.py &` and that starts syncing my code to the repo I'm on in the background!
+Now, when I'm teaching, I just run `gitsync.py &` and that starts syncing my code in the background.
 Pretty cool!
