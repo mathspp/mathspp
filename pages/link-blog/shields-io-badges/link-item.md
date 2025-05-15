@@ -10,8 +10,5 @@ title: "Static Badge | Shields.io"
 
 The shields.io website is the provider of all those badges you see online, typically on GitHub README files and profiles:
 
-![Static Badge](https://img.shields.io/badge/Python%20version-3.14-blue?logo=python&logoColor=white)
-![Static Badge](https://img.shields.io/badge/website-mathspp.com-white)
-![Static Badge](https://img.shields.io/badge/build-passing-green)
-![Static Badge](https://img.shields.io/badge/tests-failing-red)
+![Static Badge](https://img.shields.io/badge/Python%20version-3.14-blue?logo=python&logoColor=white) ![Static Badge](https://img.shields.io/badge/website-mathspp.com-white) ![Static Badge](https://img.shields.io/badge/build-passing-green) ![Static Badge](https://img.shields.io/badge/tests-failing-red)
 
