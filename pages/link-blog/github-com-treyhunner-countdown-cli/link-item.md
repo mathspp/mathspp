@@ -8,7 +8,7 @@ title: "GitHub - treyhunner/countdown-cli: Full-screen countdown timer, centered
 # via:
 ---
 
-This Python package by Trey Hunner can be used from the CLI to display a basic countdown timer in the terminal window.
+This Python package by Trey Hunner can be used from the command line to display a basic countdown timer in the terminal window.
 Installing it with `uv tool install countdown-cli`, I got the `countdown` command that I can run with `countdown 50s`, or `countdown 5m`, or `countdown 3m30s`:
 
 ![Screenshot of a terminal displaying 00:45 with thick ASCII art.](cd_screenshot.webp "00:45 countdown in the terminal.")
