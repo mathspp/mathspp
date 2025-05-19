@@ -4,7 +4,7 @@ date: 19-05-2025 07:27
 link: https://davepeck.org/2025/04/11/pythons-new-t-strings/
 taxonomy:
     category: link
-title: "Python's new t-strings | "
+title: "Python's new t-strings"
 # via:
 ---
 
