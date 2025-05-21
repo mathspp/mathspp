@@ -11,6 +11,9 @@ routes:
 slug: "the-appearing-builtin"
 taxonomy:
     category: [blogpost, til]
-    tag: []
+    tag:
+        - programming
+        - python
+        - repl
 title: "TIL #123 – The appearing built-in"
 visible: false

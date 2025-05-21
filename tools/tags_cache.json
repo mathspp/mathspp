@@ -24,16 +24,16 @@
     "words": 35302
   },
   "programming": {
-    "articles": 297,
-    "code_snippets": 3712,
-    "loc": 35879,
-    "words": 362017
+    "articles": 298,
+    "code_snippets": 3718,
+    "loc": 35918,
+    "words": 362318
   },
   "python": {
-    "articles": 282,
-    "code_snippets": 3582,
-    "loc": 34728,
-    "words": 349673
+    "articles": 283,
+    "code_snippets": 3588,
+    "loc": 34767,
+    "words": 349974
   },
   "algorithms": {
     "articles": 24,
@@ -509,6 +509,12 @@
     "loc": 92,
     "words": 726
   },
+  "repl": {
+    "articles": 3,
+    "code_snippets": 6,
+    "loc": 39,
+    "words": 718
+  },
   "pytest": {
     "articles": 5,
     "code_snippets": 30,
@@ -538,12 +544,6 @@
     "code_snippets": 2,
     "loc": 6,
     "words": 543
-  },
-  "repl": {
-    "articles": 2,
-    "code_snippets": 0,
-    "loc": 0,
-    "words": 417
   },
   "hypothesis": {
     "articles": 1,

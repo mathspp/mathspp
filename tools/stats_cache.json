@@ -5636,8 +5636,12 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/123.the-appearing-builtin": {
-    "timestamp": 1746568704.2287955,
-    "tags": [],
+    "timestamp": 1747840961.7830608,
+    "tags": [
+      "programming",
+      "python",
+      "repl"
+    ],
     "stats": {
       "articles": 1,
       "code_snippets": 6,
