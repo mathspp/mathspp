@@ -27,7 +27,7 @@
     "articles": 283,
     "code_snippets": 3588,
     "loc": 34767,
-    "words": 349974
+    "words": 350083
   },
   "algorithms": {
     "articles": 24,
@@ -201,7 +201,7 @@
     "articles": 5,
     "code_snippets": 10,
     "loc": 363,
-    "words": 9484
+    "words": 9593
   },
   "geometry": {
     "articles": 17,
@@ -567,7 +567,7 @@
     "articles": 404,
     "code_snippets": 3843,
     "loc": 36953,
-    "words": 440324
+    "words": 440433
   },
   "fp": {
     "articles": 3,
@@ -597,6 +597,6 @@
     "articles": 1,
     "code_snippets": 0,
     "loc": 0,
-    "words": 1805
+    "words": 1914
   }
 }

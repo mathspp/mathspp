@@ -66,6 +66,21 @@ On my last night in the US I had dinner with some fellow volunteers and organise
 ![A picture of 7 people around a square table, mostly EuroPython volunteers and organisers.](_ep_dinner.webp "Some EuroPython folks having a good time.")
 
 
+## Award ceremony
+
+On the last day there was an award ceremony.
+The PSF handed out a number of awards:
+
+ - [Outstanding PyLady Awards](https://kit.pyladies.com/en/latest/global/award.html)
+ - [Community Service Awards](https://www.python.org/community/awards/psf-awards/)
+ - [Distinguished Service Awards](https://www.python.org/community/awards/psf-distinguished-awards/)
+
+I was surprised to find myself moved by the ceremony, hearing about the contributions from everyone that was called on stage.
+It's humbling to see how much devotion, time, and work, so many people have put into this community that I get to be a part of.
+
+These awards require folks to be nominated, so from now on I will be actively thinking about people I could nominate for these awards.
+
+
 ## Keynotes
 
 Keynotes this year were very good, in my opinion.
@@ -78,9 +93,9 @@ Because from her colleagues' remarks, she understood they already knew how to us
 And, instead of teaching her, they just thought it was funny that she spent her nights like that!
 
 Teaching others empowers them.
-Whenever you have the chance, teach.
+Whenever you have the chance, teach!
 
-I also related a lot to Lynn Root's keynote.
+On a slightly less depressive note, I also related a lot to Lynn Root's keynote.
 Among other things, Lynn talked about the importance of play, and shared an anecdote of [a crow that was filmed going down a snowy roof with a plastic lid over and over again](https://www.youtube.com/watch?v=L9mrTdYhOHg) just for the heck of it.
 
 I was also particularly fond of a marvelous quote she shared:

@@ -29,7 +29,7 @@ title: "Opinion blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">5</th>
-            <th style="text-align: center;">9,484</th>
+            <th style="text-align: center;">9,593</th>
             <th style="text-align: center;">363</th>
         </tr>
     </thead>
