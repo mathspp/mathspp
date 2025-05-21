@@ -1,9 +1,9 @@
 {
   "__all": {
-    "articles": 402,
-    "code_snippets": 3835,
-    "loc": 36922,
-    "words": 437807
+    "articles": 404,
+    "code_snippets": 3843,
+    "loc": 36953,
+    "words": 440324
   },
   "bpci": {
     "articles": 10,
@@ -30,10 +30,10 @@
     "words": 362017
   },
   "python": {
-    "articles": 281,
+    "articles": 282,
     "code_snippets": 3582,
     "loc": 34728,
-    "words": 347868
+    "words": 349673
   },
   "algorithms": {
     "articles": 24,
@@ -222,10 +222,10 @@
     "words": 2923
   },
   "opinion": {
-    "articles": 4,
+    "articles": 5,
     "code_snippets": 10,
     "loc": 363,
-    "words": 7679
+    "words": 9484
   },
   "geometry": {
     "articles": 17,
@@ -418,6 +418,12 @@
     "code_snippets": 0,
     "loc": 0,
     "words": 625
+  },
+  "conferences": {
+    "articles": 1,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 1805
   },
   "brainfuck": {
     "articles": 1,

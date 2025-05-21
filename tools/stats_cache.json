@@ -5660,5 +5660,29 @@
       "loc": 48,
       "words": 307
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/personal-highlights-of-pycon-us-2025": {
+    "timestamp": 1747840844.5225744,
+    "tags": [
+      "conferences",
+      "opinion",
+      "python"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 0,
+      "loc": 0,
+      "words": 1805
+    }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/how-to-create-a-python-package-in-2025": {
+    "timestamp": 1747693255.5988834,
+    "tags": [],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 8,
+      "loc": 31,
+      "words": 712
+    }
   }
 }

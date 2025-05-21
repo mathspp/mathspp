@@ -105,6 +105,7 @@ TAG_DESCRIPTIONS:
   compilers: "Implementing or using (parts of) compilers"
   computation theory: "The field of computation theory"
   concurrency: "The subject of concurrency"
+  conferences: "Conferences"
   data science: "The field of data science, including example applications and algorithm implementations"
   data structures: "Implementation and use cases of data structures"
   diophantine equations: "Diophantine equations"
