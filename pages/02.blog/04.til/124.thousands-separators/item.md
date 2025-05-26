@@ -11,15 +11,15 @@ You can add commas, underscores, or a locale-appropriate separator, using the sp
 ```py
 bignum = 123541241234
 
-print(f"Big money ${x:,}")
+print(f"Big money ${bignum:,}")
 # Big money $123,541,241,234
 
 
-print(f"Big money ${x:_}")
+print(f"Big money ${bignum:_}")
 # Big money $123_541_241_234
 
 
-print(f"Big money ${x:n}")
+print(f"Big money ${bignum:n}")
 # Big money $123541241234
 ```
 
