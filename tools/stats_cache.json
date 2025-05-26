@@ -5688,5 +5688,18 @@
       "loc": 31,
       "words": 712
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/124.thousands-separators": {
+    "timestamp": 1748269938.3520699,
+    "tags": [
+      "programming",
+      "python"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 3,
+      "loc": 20,
+      "words": 78
+    }
   }
 }

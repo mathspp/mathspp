@@ -1,0 +1,19 @@
+date: 26-05-2025 15:25
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to set different thousands separators using string formatting."
+    og:image: "https://mathspp.com/blog/thousands-separators/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/thousands-separators/thumbnail.webp"
+references:
+  - "Python 3.13 Documentation, Format Specification Mini-Language <https://docs.python.org/3/library/string.html#formatspec> [last accessed 26-05-2025];"
+routes:
+    aliases:
+        - "/blog/til/124"
+slug: "thousands-separators"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - python
+title: "TIL #124 – Thousands separators"
+visible: false
