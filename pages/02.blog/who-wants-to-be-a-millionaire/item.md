@@ -16,7 +16,7 @@ At EuroPython 2024 I did a lightning talk where I presented a “Who wants to be
 This is an easy one to get you started.
 
 <div class="quiz-question" data-correct="a">
-  <div class="question-text"><p>What's the output of <code>print("Hello, world!")</code></p></div>
+  <div class="question-text"><p>What's the output of <code>print("Hello, world!")</code>?</p></div>
   <ul class="choices">
     <li data-option="a">Hello, world!</li>
     <li data-option="b">Hello world!</li>
