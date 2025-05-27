@@ -8,10 +8,11 @@ taxonomy:
     category: review
     review-tag:
       - book
-published: false
+      - book-comprehending-comprehensions
+published: true
 ---
 
-Your list comprehensions book is really good.
+Your [list comprehensions book](/books#comprehending-comprehensions) is really good.
 I liked the way you make the reader think about what the code they have been writing and how some things are better as list comprehensions.
 I also liked how you gradually increase the difficulty from a simple to a complex scenario.
 
