@@ -2,8 +2,8 @@ Play this short Python quiz to test your Python knowledge!
 
 ===
 
-<script src="theme://js/quiz.js"></script>
-<link rel="stylesheet" href="theme://css/quiz-custom.css">
+<script src="/user/themes/myquark/js/quiz.js"></script>
+<link rel="stylesheet" href="/user/themes/myquark/css/quiz-custom.css">
 
 
 # Who wants to be a millionaire?
