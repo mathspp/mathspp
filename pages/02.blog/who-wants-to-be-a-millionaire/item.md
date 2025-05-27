@@ -157,7 +157,7 @@ The final question is pretty much impossible unless you've been doing Python for
 
 <div class="quiz-question" data-correct="d">
   <div class="question-text">What does the following Python 2 code output?</div>
-  <div><pre><code class="language-py hljs language-python">print`3<3`[~3]</code></pre>
+  <div><pre><code class="language-py hljs language-python">print`3&lt;3`[~3]</code></pre>
   <ul class="choices">
     <li data-option="a"><code>SyntaxError</code></li>
     <li data-option="b">42</li>
