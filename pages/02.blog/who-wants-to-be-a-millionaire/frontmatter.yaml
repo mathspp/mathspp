@@ -1,0 +1,15 @@
+date: 27-05-2025 17:15
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Play this short Python quiz to test your Python knowledge!"
+    og:image: "https://mathspp.com/blog/who-wants-to-be-a-millionaire/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/who-wants-to-be-a-millionaire/thumbnail.webp"
+references: []
+slug: "who-wants-to-be-a-millionaire"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+      - python
+      - quiz
+title: Who wants to be a millionaire?

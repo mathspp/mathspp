@@ -163,6 +163,7 @@ TAG_DESCRIPTIONS:
   pygame: "Articles that use the Python module pygame to create games, visualisations, and more"
   pytest: "The Python testing module Pytest"
   python: "The Python programming language, tutorials, and more"
+  quiz: "Quizzes"
   random walks: "The generation, and applications, of random walks"
   rationals: "The set of rational numbers"
   recursion: "The mathematical and computer science concept of recursion"

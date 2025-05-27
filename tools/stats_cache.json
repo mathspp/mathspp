@@ -5701,5 +5701,18 @@
       "loc": 20,
       "words": 78
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/who-wants-to-be-a-millionaire": {
+    "timestamp": 1748363491.2923381,
+    "tags": [
+      "python",
+      "quiz"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 1,
+      "loc": -1,
+      "words": 217
+    }
   }
 }
