@@ -114,7 +114,7 @@ At EuroPython 2024 I did a lightning talk where I presented a “Who wants to be
 This is an easy one to get you started.
 
 <div class="quiz-question" data-correct="a">
-  <div class="question-text">What's the output of <code>print("Hello, world!")</code></div>
+  <div class="question-text"><p>What's the output of <code>print("Hello, world!")</code></p></div>
   <ul class="choices">
     <li data-option="a">Hello, world!</li>
     <li data-option="b">Hello world!</li>
@@ -129,7 +129,7 @@ This is an easy one to get you started.
 
 
 <div class="quiz-question" data-correct="c">
-  <div class="question-text">How many soft keywords does Python 3.13 have?</div>
+  <div class="question-text"><p>How many soft keywords does Python 3.13 have?</p></div>
   <ul class="choices">
     <li data-option="a">0</li>
     <li data-option="b">2</li>
@@ -143,7 +143,7 @@ This is an easy one to get you started.
 ## Question 3
 
 <div class="quiz-question" data-correct="a">
-  <div class="question-text">How many times does the Python 3.13 glossary use the word “dunder”?</div>
+  <div class="question-text"><p>How many times does the Python 3.13 glossary use the word “dunder”?</p></div>
   <ul class="choices">
     <li data-option="a">0</li>
     <li data-option="b">2</li>
@@ -159,8 +159,8 @@ This is an easy one to get you started.
 The final question is pretty much impossible unless you've been doing Python for quite a while...
 
 <div class="quiz-question" data-correct="d">
-  <div class="question-text">What does the following Python 2 code output?</div>
-  <div><pre><code class="language-py hljs language-python">print`3&lt;3`[~3]</code></pre>
+  <div class="question-text"><p>What does the following Python 2 code output?</p></div>
+  <pre><code class="language-py hljs language-python">print`3&lt;3`[~3]</code></pre>
   <ul class="choices">
     <li data-option="a"><code>SyntaxError</code></li>
     <li data-option="b">42</li>

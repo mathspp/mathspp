@@ -27,7 +27,7 @@
     "articles": 285,
     "code_snippets": 3592,
     "loc": 34786,
-    "words": 350582
+    "words": 350581
   },
   "algorithms": {
     "articles": 24,
@@ -567,7 +567,7 @@
     "articles": 406,
     "code_snippets": 3847,
     "loc": 36972,
-    "words": 440937
+    "words": 440936
   },
   "fp": {
     "articles": 3,
@@ -603,6 +603,6 @@
     "articles": 1,
     "code_snippets": 1,
     "loc": -1,
-    "words": 421
+    "words": 420
   }
 }
