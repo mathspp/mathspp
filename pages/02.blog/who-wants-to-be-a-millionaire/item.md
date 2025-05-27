@@ -23,7 +23,7 @@ This is an easy one to get you started.
     <li data-option="c">Hello world</li>
     <li data-option="d">Hello world!!</li>
   </ul>
-  <div class="feedback"></div>
+  <p class="feedback"></p>
 </div>
 
 
@@ -38,7 +38,7 @@ This is an easy one to get you started.
     <li data-option="c">4</li>
     <li data-option="d">8</li>
   </ul>
-  <div class="feedback"></div>
+  <p class="feedback"></p>
 </div>
 
 
@@ -52,7 +52,7 @@ This is an easy one to get you started.
     <li data-option="c">15</li>
     <li data-option="d">42</li>
   </ul>
-  <div class="feedback"></div>
+  <p class="feedback"></p>
 </div>
 
 
@@ -69,5 +69,5 @@ The final question is pretty much impossible unless you've been doing Python for
     <li data-option="c">3</li>
     <li data-option="d">a</li>
   </ul>
-  <div class="feedback"></div>
+  <p class="feedback"></p>
 </div>
