@@ -2,6 +2,104 @@ Play this short Python quiz to test your Python knowledge!
 
 ===
 
+<script>
+document.querySelectorAll('.quiz-question').forEach(q => {
+  const correct = q.dataset.correct;
+  const choices = q.querySelectorAll('li');
+  const feedback = q.querySelector('.feedback');
+
+  choices.forEach(choice => {
+    choice.addEventListener('click', () => {
+      if (q.classList.contains('answered')) return;
+
+      const selected = choice.dataset.option;
+
+      q.classList.add('answered');
+
+      if (selected === correct) {
+        choice.classList.add('correct');
+        feedback.textContent = '✅ Correct!';
+      } else {
+        choice.classList.add('wrong');
+        feedback.textContent = '❌ Wrong. Correct answer: ' +
+          q.querySelector(`li[data-option="${correct}"]`).textContent;
+        q.querySelector(`li[data-option="${correct}"]`).classList.add('correct');
+      }
+    });
+  });
+});
+</script>
+
+<style>
+.quiz-question {
+  --bg: #f9f9f9;
+  --fg: #222;
+  --accent: var(--bl);
+  --correct: var(--gr);
+  --wrong: var(--re);
+
+  background: var(--bg);
+  color: var(--fg);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-family: system-ui, sans-serif;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.quiz-question .question-text {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.quiz-question ul.choices {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quiz-question ul.choices li {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s, border 0.3s;
+}
+
+.quiz-question ul.choices li:hover {
+  background: #eef7ff;
+  border-color: var(--accent);
+}
+
+.quiz-question ul.choices li.correct {
+  background: var(--correct);
+  color: white;
+  border-color: var(--correct);
+}
+
+.quiz-question ul.choices li.wrong {
+  background: var(--wrong);
+  color: white;
+  border-color: var(--wrong);
+}
+
+.quiz-question .feedback {
+  margin-top: 0.75rem;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.quiz-question.answered .feedback {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+
 
 # Who wants to be a millionaire?
 
