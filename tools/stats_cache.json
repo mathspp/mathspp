@@ -5703,7 +5703,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/who-wants-to-be-a-millionaire": {
-    "timestamp": 1748365315.570383,
+    "timestamp": 1748365981.0251417,
     "tags": [
       "python",
       "quiz"
@@ -5713,6 +5713,19 @@
       "code_snippets": 1,
       "loc": -1,
       "words": 221
+    }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/pycon-italy-2025-quiz": {
+    "timestamp": 1748369712.3264003,
+    "tags": [
+      "python",
+      "quiz"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 1,
+      "loc": 5,
+      "words": 633
     }
   }
 }
