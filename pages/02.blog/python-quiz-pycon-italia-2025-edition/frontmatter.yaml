@@ -3,14 +3,14 @@ publish_date: 30-05-2025 20:00
 metadata:
     author: Rodrigo Girão Serrão
     description: "Answer this quiz to test your knowledge about the Python language, community, andd the 2025 edition of PyCon Italy!"
-    og:image: "https://mathspp.com/blog/pycon-italy-2025-quiz/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/pycon-italy-2025-quiz/thumbnail.webp"
+    og:image: "https://mathspp.com/blog/python-quiz-pycon-italia-2025-edition/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/python-quiz-pycon-italia-2025-edition/thumbnail.webp"
 references: []
-slug: "pycon-italy-2025-quiz"
+slug: "python-quiz-pycon-italia-2025-edition"
 taxonomy:
     category:
         - blogpost
     tag:
       - python
       - quiz
-title: PyCon Italy 2025 quiz
+title: "Python quiz: PyCon Italia 2025 edition"

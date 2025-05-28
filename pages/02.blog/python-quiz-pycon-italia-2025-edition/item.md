@@ -35,7 +35,7 @@ I'd like to give an awesome shoutout to the PyCon Italy organizers who went with
 
 
 <div class="quiz-question" data-correct="a">
-  <div class="question-text"><p>Python's logo alludes to snakes, but what's the inspiration for Python's name?</p></div>
+  <div class="question-text"><p>The Python logo alludes to snakes, but what's the source of inspiration for Python's name?</p></div>
   <ul class="choices">
     <li data-option="a">A comedy troupe</li>
     <li data-option="b">A Dutch heavy-metal band</li>
@@ -46,25 +46,25 @@ I'd like to give an awesome shoutout to the PyCon Italy organizers who went with
 </div>
 
 
-<div class="quiz-question" data-correct="c">
-  <div class="question-text"><p>On the 27th of May, how many commits did Python's repository have?</p></div>
+<div class="quiz-question" data-correct="b">
+  <div class="question-text"><p>What is the date of the oldest commit in the Python repo?</p></div>
   <ul class="choices">
-    <li data-option="a">42</li>
-    <li data-option="b">99,346</li>
-    <li data-option="c">127,263</li>
-    <li data-option="d">158,952</li>
+    <li data-option="a">Circa 300 AC</li>
+    <li data-option="b">Aug 9, 1990</li>
+    <li data-option="c">Oct 16, 2000</li>
+    <li data-option="d">Jan 1, 2020</li>
   </ul>
   <p class="feedback"></p>
 </div>
 
 
-<div class="quiz-question" data-correct="d">
-  <div class="question-text"><p>On the 27th of May, how many contributors did Python's repo have?</p></div>
+<div class="quiz-question" data-correct="b">
+  <div class="question-text"><p>Who is the most recent Python core developer?</p></div>
   <ul class="choices">
-    <li data-option="a">42</li>
-    <li data-option="b">2,873</li>
-    <li data-option="c">2,945</li>
-    <li data-option="d">3,082</li>
+    <li data-option="a">Bénédikt Tran</li>
+    <li data-option="b">Diego Russo</li>
+    <li data-option="c">Matt Page</li>
+    <li data-option="d">Savannah Bailey</li>
   </ul>
   <p class="feedback"></p>
 </div>
@@ -85,17 +85,17 @@ I'd like to give an awesome shoutout to the PyCon Italy organizers who went with
 <div class="quiz-question" data-correct="c">
   <div class="question-text"><p>How many built-in “functions” does Python's documentation list?</p></div>
   <ul class="choices">
-    <li data-option="a">58</li>
-    <li data-option="b">65</li>
+    <li data-option="a">42</li>
+    <li data-option="b">53</li>
     <li data-option="c">71</li>
-    <li data-option="d">76</li>
+    <li data-option="d">99</li>
   </ul>
   <p class="feedback"></p>
 </div>
 
 
 <div class="quiz-question" data-correct="c" markdown="1">
-  <div class="question-text"><p>What's the output of the following code?</p></div>
+  <div class="question-text"><p>What's the output you get if you run this code in a fresh REPL session?</p></div>
 
 ```pycon
 >>> import builtins
@@ -108,8 +108,8 @@ I'd like to give an awesome shoutout to the PyCon Italy organizers who went with
   <ul class="choices">
     <li data-option="a">158</li>
     <li data-option="b">159</li>
-    <li data-option="c">160</li>
-    <li data-option="d">An exception is raised</li>
+    <li data-option="c">RuntimeError</li>
+    <li data-option="d">ValueError</li>
   </ul>
   <p class="feedback"></p>
 </div>
@@ -131,12 +131,12 @@ I'd like to give an awesome shoutout to the PyCon Italy organizers who went with
 
 
 <div class="quiz-question" data-correct="b">
-  <div class="question-text"><p>In what Italian city was PyCon Italy 2024 held?</p></div>
+  <div class="question-text"><p>Approximately how many core developers does Python have (past & present)?</p></div>
   <ul class="choices">
-    <li data-option="a">Bologna</li>
-    <li data-option="b">Firenze / Florence</li>
-    <li data-option="c">Pisa</li>
-    <li data-option="d">Roma / Rome</li>
+    <li data-option="a">50</li>
+    <li data-option="b">100</li>
+    <li data-option="c">200</li>
+    <li data-option="d">400</li>
   </ul>
   <p class="feedback"></p>
 </div>
@@ -155,36 +155,12 @@ I'd like to give an awesome shoutout to the PyCon Italy organizers who went with
 
 
 <div class="quiz-question" data-correct="b">
-  <div class="question-text"><p>On the 27th of May, how many stars did Python's repo have?</p></div>
-  <ul class="choices">
-    <li data-option="a">59,452</li>
-    <li data-option="b">67,215</li>
-    <li data-option="c">73,734</li>
-    <li data-option="d">79,945</li>
-  </ul>
-  <p class="feedback"></p>
-</div>
-
-
-<div class="quiz-question" data-correct="b">
-  <div class="question-text"><p>What's the URL for Python's GitHub repository?</p></div>
-  <ul class="choices">
-    <li data-option="a">github.com/python/python</li>
-    <li data-option="b">github.com/python/cpython</li>
-    <li data-option="c">github.com/cpython/python</li>
-    <li data-option="d">github.com/cpython/cpython</li>
-  </ul>
-  <p class="feedback"></p>
-</div>
-
-
-<div class="quiz-question" data-correct="d">
   <div class="question-text"><p>Which of these is not a real Python package listed on PyPI?</p></div>
   <ul class="choices">
-    <li data-option="a">pizza</li>
-    <li data-option="b">tagliatelle</li>
-    <li data-option="c">lasagna</li>
-    <li data-option="d">piadina</li>
+    <li data-option="a">lasagna</li>
+    <li data-option="b">piadina</li>
+    <li data-option="c">pizza</li>
+    <li data-option="d">tagliatelle</li>
   </ul>
   <p class="feedback"></p>
 </div>
@@ -195,7 +171,7 @@ I'd like to give an awesome shoutout to the PyCon Italy organizers who went with
   <ul class="choices">
     <li data-option="a">anext</li>
     <li data-option="b">ascii</li>
-    <li data-option="c">oct</li>
+    <li data-option="c">compile</li>
     <li data-option="d">reduce</li>
   </ul>
   <p class="feedback"></p>
@@ -203,7 +179,7 @@ I'd like to give an awesome shoutout to the PyCon Italy organizers who went with
 
 
 <div class="quiz-question" data-correct="b">
-  <div class="question-text"><p>What's the length of the Python list <code>[""''', ''', ''" , "]</code>?</p></div>
+  <div class="question-text"><p>What's the length of the Python list <code>[""''', ,''', ','" , "]</code>?</p></div>
   <ul class="choices">
     <li data-option="a">1</li>
     <li data-option="b">2</li>
@@ -221,6 +197,54 @@ I'd like to give an awesome shoutout to the PyCon Italy organizers who went with
     <li data-option="b">dropwhile</li>
     <li data-option="c">starmap</li>
     <li data-option="d">tee</li>
+  </ul>
+  <p class="feedback"></p>
+</div>
+
+
+<div class="quiz-question" data-correct="a" markdown="1">
+  <div class="question-text"><p>What's the output of running this code?</p></div>
+
+```py
+x = 1234.5678
+print(round(x, -2))
+```
+
+  <ul class="choices">
+    <li data-option="a">1200.0</li>
+    <li data-option="b">1234.56</li>
+    <li data-option="c">1234.57</li>
+    <li data-option="d">ValueError</li>
+  </ul>
+  <p class="feedback"></p>
+</div>
+
+
+<div class="quiz-question" data-correct="a" markdown="1">
+  <div class="question-text"><p>True or false? Python code is compiled before being interpreted...</p></div>
+  <ul class="choices">
+    <li data-option="a">True</li>
+    <li data-option="b">False</li>
+  </ul>
+  <p class="feedback"></p>
+</div>
+
+
+<div class="quiz-question" data-correct="a" markdown="1">
+  <div class="question-text"><p>True or false? The Boolean type is a subclass of the integer type...</p></div>
+  <ul class="choices">
+    <li data-option="a">True</li>
+    <li data-option="b">False</li>
+  </ul>
+  <p class="feedback"></p>
+</div>
+
+
+<div class="quiz-question" data-correct="" markdown="1">
+  <div class="question-text"><p>True or false? All iterators are also iterables...</p></div>
+  <ul class="choices">
+    <li data-option="a">True</li>
+    <li data-option="b">False</li>
   </ul>
   <p class="feedback"></p>
 </div>
