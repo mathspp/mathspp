@@ -99,15 +99,7 @@ I'd like to give an awesome shoutout to the PyCon Italy organizers who went with
 
 <div class="quiz-question" data-correct="b">
   <div class="question-text"><p>What's the output you get if you run this code in a fresh REPL session?</p></div>
-  <div markdown="1">
-```pycon
-&gt;&gt;&gt; import builtins
-&gt;&gt;&gt; len(dir(builtins))
-159
-&gt;&gt;&gt; len(dir(builtins))
-???
-```
-  </div>
+  <img src="_builtins.webp" />
   <ul class="choices">
     <li data-option="a">159</li>
     <li data-option="b">160</li>

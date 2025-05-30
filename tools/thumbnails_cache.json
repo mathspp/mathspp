@@ -25,8 +25,8 @@
   },
   "python": {
     "articles": 287,
-    "code_snippets": 3621,
-    "loc": 34959,
+    "code_snippets": 3620,
+    "loc": 34954,
     "words": 353413
   },
   "algorithms": {
@@ -565,8 +565,8 @@
   },
   "__all": {
     "articles": 408,
-    "code_snippets": 3876,
-    "loc": 37145,
+    "code_snippets": 3875,
+    "loc": 37140,
     "words": 443768
   },
   "fp": {
@@ -601,8 +601,8 @@
   },
   "quiz": {
     "articles": 2,
-    "code_snippets": 3,
-    "loc": 6,
+    "code_snippets": 2,
+    "loc": 1,
     "words": 922
   }
 }
