@@ -28,9 +28,9 @@ title: "Dunder methods blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">14</th>
-            <th style="text-align: center;">22,155</th>
-            <th style="text-align: center;">3,615</th>
+            <th style="text-align: center;">15</th>
+            <th style="text-align: center;">24,485</th>
+            <th style="text-align: center;">3,781</th>
         </tr>
     </thead>
     <tbody>

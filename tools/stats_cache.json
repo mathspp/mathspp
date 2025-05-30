@@ -5740,5 +5740,20 @@
       "loc": 7,
       "words": 694
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/dipping-my-toes-in-metaprogramming": {
+    "timestamp": 1748607652.0033395,
+    "tags": [
+      "dunder methods",
+      "metaprogramming",
+      "programming",
+      "python"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 27,
+      "loc": 166,
+      "words": 2330
+    }
   }
 }

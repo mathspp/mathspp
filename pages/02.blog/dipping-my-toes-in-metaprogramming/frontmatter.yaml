@@ -1,0 +1,18 @@
+date: 30-05-2025 11:48
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Dip your toes in metaprogramming and learn about `__init__`'s big brother, the dunder method `__new__`."
+    og:image: "https://mathspp.com/blog/dipping-my-toes-in-metaprogramming/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/dipping-my-toes-in-metaprogramming/thumbnail.webp"
+references:
+  - "“Customising object creation with `__new__`”, mathspp blog, <https://mathspp.com/blog/customising-object-creation-with-__new__> [last accessed 30-05-2025];"
+slug: "dipping-my-toes-in-metaprogramming"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+      - dunder methods
+      - metaprogramming
+      - programming
+      - python
+title: Dipping my toes in metaprogramming

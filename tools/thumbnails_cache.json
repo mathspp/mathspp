@@ -18,16 +18,16 @@
     "words": 35302
   },
   "programming": {
-    "articles": 299,
-    "code_snippets": 3721,
-    "loc": 35938,
-    "words": 362396
+    "articles": 300,
+    "code_snippets": 3748,
+    "loc": 36104,
+    "words": 364726
   },
   "python": {
-    "articles": 286,
-    "code_snippets": 3594,
-    "loc": 34793,
-    "words": 351076
+    "articles": 287,
+    "code_snippets": 3621,
+    "loc": 34959,
+    "words": 353406
   },
   "algorithms": {
     "articles": 24,
@@ -84,10 +84,10 @@
     "words": 1411
   },
   "dunder methods": {
-    "articles": 14,
-    "code_snippets": 287,
-    "loc": 3615,
-    "words": 22155
+    "articles": 15,
+    "code_snippets": 314,
+    "loc": 3781,
+    "words": 24485
   },
   "oop": {
     "articles": 5,
@@ -240,10 +240,10 @@
     "words": 14109
   },
   "metaprogramming": {
-    "articles": 2,
-    "code_snippets": 16,
-    "loc": 170,
-    "words": 1356
+    "articles": 3,
+    "code_snippets": 43,
+    "loc": 336,
+    "words": 3686
   },
   "computation theory": {
     "articles": 2,
@@ -564,10 +564,10 @@
     "words": 430
   },
   "__all": {
-    "articles": 407,
-    "code_snippets": 3849,
-    "loc": 36979,
-    "words": 441431
+    "articles": 408,
+    "code_snippets": 3876,
+    "loc": 37145,
+    "words": 443761
   },
   "fp": {
     "articles": 3,
