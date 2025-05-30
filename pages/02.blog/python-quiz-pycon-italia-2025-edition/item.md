@@ -94,7 +94,7 @@ I'd like to give an awesome shoutout to the PyCon Italy organizers who went with
 </div>
 
 
-<div class="quiz-question" data-correct="c" markdown="1">
+<div class="quiz-question" data-correct="b" markdown="1">
   <div class="question-text"><p>What's the output you get if you run this code in a fresh REPL session?</p></div>
 
 ```pycon
@@ -106,8 +106,8 @@ I'd like to give an awesome shoutout to the PyCon Italy organizers who went with
 ```
 
   <ul class="choices">
-    <li data-option="a">158</li>
-    <li data-option="b">159</li>
+    <li data-option="a">159</li>
+    <li data-option="b">160</li>
     <li data-option="c">RuntimeError</li>
     <li data-option="d">ValueError</li>
   </ul>
