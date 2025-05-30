@@ -99,7 +99,9 @@ I'd like to give an awesome shoutout to the PyCon Italy organizers who went with
 
 <div class="quiz-question" data-correct="b">
   <div class="question-text"><p>What's the output you get if you run this code in a fresh REPL session?</p></div>
-  <img src="_builtins.webp" alt="Image containing a snippet of code that contains the following code: >>> import builtins; >>> len(dir(builtins)); 159; >>> len(dir(builtins)); ???" />
+
+  ![Image containing a snippet of code that contains the following code: >>> import builtins; >>> len(dir(builtins)); 159; >>> len(dir(builtins)); ???](_builtins.webp)
+
   <ul class="choices">
     <li data-option="a">159</li>
     <li data-option="b">160</li>
