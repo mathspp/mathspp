@@ -2,6 +2,9 @@ Answer this quiz to test your knowledge about the Python language, community, an
 
 ===
 
+<script src="/user/themes/myquark/js/quiz.js"></script>
+<link rel="stylesheet" href="/user/themes/myquark/css/quiz-custom.css">
+
 
 # PyCon Italy 2025 quiz
 

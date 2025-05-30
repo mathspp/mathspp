@@ -3,7 +3,7 @@
     "articles": 408,
     "code_snippets": 3876,
     "loc": 37145,
-    "words": 443761
+    "words": 443766
   },
   "bpci": {
     "articles": 10,
@@ -33,7 +33,7 @@
     "articles": 287,
     "code_snippets": 3621,
     "loc": 34959,
-    "words": 353406
+    "words": 353411
   },
   "algorithms": {
     "articles": 24,
@@ -339,7 +339,7 @@
     "articles": 2,
     "code_snippets": 3,
     "loc": 6,
-    "words": 915
+    "words": 920
   },
   "rust": {
     "articles": 3,

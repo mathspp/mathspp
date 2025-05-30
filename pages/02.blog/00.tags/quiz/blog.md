@@ -29,7 +29,7 @@ title: "Quiz blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">2</th>
-            <th style="text-align: center;">915</th>
+            <th style="text-align: center;">920</th>
             <th style="text-align: center;">6</th>
         </tr>
     </thead>
