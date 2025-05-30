@@ -84,7 +84,7 @@ def factorial(n):
 _factorial_cache = {}
 def cached_factorial(n):
     if n not in _factorial_cache:
-        _factorial_cache = factorial(n)
+        _factorial_cache[n] = factorial(n)
     return _factorial_cache[n]
 ```
 
