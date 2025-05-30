@@ -97,9 +97,9 @@ I'd like to give an awesome shoutout to the PyCon Italy organizers who went with
 </div>
 
 
-<div class="quiz-question" data-correct="b" markdown="1">
+<div class="quiz-question" data-correct="b">
   <div class="question-text"><p>What's the output you get if you run this code in a fresh REPL session?</p></div>
-
+  <div markdown="1">
 ```pycon
 >>> import builtins
 >>> len(dir(builtins))
@@ -107,7 +107,7 @@ I'd like to give an awesome shoutout to the PyCon Italy organizers who went with
 >>> len(dir(builtins))
 ???
 ```
-
+  </div>
   <ul class="choices">
     <li data-option="a">159</li>
     <li data-option="b">160</li>
