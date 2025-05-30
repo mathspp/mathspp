@@ -5,7 +5,21 @@ metadata:
     description: "Answer this quiz to test your knowledge about the Python language, community, andd the 2025 edition of PyCon Italy!"
     og:image: "https://mathspp.com/blog/python-quiz-pycon-italia-2025-edition/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/python-quiz-pycon-italia-2025-edition/thumbnail.webp"
-references: []
+references:
+  - "Python General FAQ, Why is it called Python? <https://docs.python.org/3/faq/general.html#why-is-it-called-python> [last accessed 30-05-2025];"
+  - "CPython commit history <https://github.com/python/cpython/commits/> [last accessed 30-05-2025];"
+  - "Python Developer's Guide, Developer log <https://devguide.python.org/core-developers/developer-log/> [last accessed 30-05-2025];"
+  - "Python 3.13 Documentation, Built-in functions <https://docs.python.org/3/library/functions.html> [last accessed 30-05-2025];"
+  - "mathspp blog, The appearing built-in <https://mathspp.com/blog/til/the-appearing-builtin> [last accessed 30-05-2025];"
+  - "Package `regex` on PyPI <https://pypi.org/project/regex/> [last accessed 30-05-2025];"
+  - "Package `lasagna` on PyPI <https://pypi.org/project/lasagna/> [last accessed 30-05-2025];"
+  - "Package `pizza` on PyPI <https://pypi.org/project/pizza/> [last accessed 30-05-2025];"
+  - "Package `tagliatelle` on PyPI <https://pypi.org/project/tagliatelle/> [last accessed 30-05-2025];"
+  - "Python 3.13 Documentation, `functools.reduce` <https://docs.python.org/3/library/functools.html#functools.reduce> [last accessed 30-05-2025];"
+  - "Python 3.13 Documentation, `itertools.tee` <https://docs.python.org/3/library/itertools.html#itertools.tee> [last accessed 30-05-2025];"
+  - "Python 3.13 Documentation, Built-in functions, `compile` <https://docs.python.org/3/library/functions.html#compile> [last accessed 30-05-2025];"
+  - "Python 3.13 Documentation, Built-in types, `bool` <https://docs.python.org/3/library/stdtypes.html#boolean-type-bool> [last accessed 30-05-2025];"
+  - "Python 3.13 Documentation, Built-in types, Iterator types <https://docs.python.org/3/library/stdtypes.html#typeiter> [last accessed 30-05-2025];"
 slug: "python-quiz-pycon-italia-2025-edition"
 taxonomy:
     category:
