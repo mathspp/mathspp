@@ -101,10 +101,10 @@ I'd like to give an awesome shoutout to the PyCon Italy organizers who went with
   <div class="question-text"><p>What's the output you get if you run this code in a fresh REPL session?</p></div>
   <div markdown="1">
 ```pycon
->>> import builtins
->>> len(dir(builtins))
+&gt;&gt;&gt; import builtins
+&gt;&gt;&gt; len(dir(builtins))
 159
->>> len(dir(builtins))
+&gt;&gt;&gt; len(dir(builtins))
 ???
 ```
   </div>
