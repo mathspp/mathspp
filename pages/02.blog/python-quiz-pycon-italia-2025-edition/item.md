@@ -179,6 +179,11 @@ I'd like to give an awesome shoutout to the PyCon Italy organizers who went with
 
 <div class="quiz-question" data-correct="b">
   <div class="question-text"><p>What's the length of the Python list <code>[""''', ,''', ','" , "]</code>?</p></div>
+
+  <div markdown="1">
+  ![Image containing a snippet of code that contains the following code: \[""''', ,''', ','" , "\]](_list.webp)
+  </div>
+
   <ul class="choices">
     <li data-option="a">1</li>
     <li data-option="b">2</li>
