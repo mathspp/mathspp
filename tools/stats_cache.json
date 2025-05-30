@@ -5729,16 +5729,16 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/python-quiz-pycon-italia-2025-edition": {
-    "timestamp": 1748636324.3038688,
+    "timestamp": 1748636393.2114177,
     "tags": [
       "python",
       "quiz"
     ],
     "stats": {
       "articles": 1,
-      "code_snippets": 1,
-      "loc": 2,
-      "words": 740
+      "code_snippets": 0,
+      "loc": 0,
+      "words": 759
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/dipping-my-toes-in-metaprogramming": {

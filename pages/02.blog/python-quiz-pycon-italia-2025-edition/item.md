@@ -209,10 +209,9 @@ I'd like to give an awesome shoutout to the PyCon Italy organizers who went with
 <div class="quiz-question" data-correct="a" markdown="1">
   <div class="question-text"><p>What's the output of running this code?</p></div>
 
-```py
-x = 1234.5678
-print(round(x, -2))
-```
+  <div markdown="1">
+  ![Image containing a snippet of code that contains the following code: x = 1234.5678; print(round(x, -2))](_round.webp)
+  </div>
 
   <ul class="choices">
     <li data-option="a">1200.0</li>
