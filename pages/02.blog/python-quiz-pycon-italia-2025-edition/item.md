@@ -243,7 +243,7 @@ I'd like to give an awesome shoutout to the PyCon Italy organizers who went with
 </div>
 
 
-<div class="quiz-question" data-correct="" markdown="1">
+<div class="quiz-question" data-correct="a" markdown="1">
   <div class="question-text"><p>True or false? All iterators are also iterables...</p></div>
   <ul class="choices">
     <li data-option="a">True</li>
