@@ -24,10 +24,10 @@
     "words": 364726
   },
   "python": {
-    "articles": 287,
-    "code_snippets": 3619,
-    "loc": 34952,
-    "words": 353471
+    "articles": 288,
+    "code_snippets": 3620,
+    "loc": 34957,
+    "words": 355836
   },
   "algorithms": {
     "articles": 24,
@@ -198,10 +198,10 @@
     "words": 2630
   },
   "opinion": {
-    "articles": 5,
-    "code_snippets": 10,
-    "loc": 363,
-    "words": 9593
+    "articles": 6,
+    "code_snippets": 11,
+    "loc": 368,
+    "words": 11958
   },
   "geometry": {
     "articles": 17,
@@ -564,10 +564,10 @@
     "words": 430
   },
   "__all": {
-    "articles": 408,
-    "code_snippets": 3874,
-    "loc": 37138,
-    "words": 443826
+    "articles": 409,
+    "code_snippets": 3875,
+    "loc": 37143,
+    "words": 446191
   },
   "fp": {
     "articles": 3,
@@ -594,10 +594,10 @@
     "words": 518
   },
   "conferences": {
-    "articles": 1,
-    "code_snippets": 0,
-    "loc": 0,
-    "words": 1914
+    "articles": 2,
+    "code_snippets": 1,
+    "loc": 5,
+    "words": 4279
   },
   "quiz": {
     "articles": 2,
