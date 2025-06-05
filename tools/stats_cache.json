@@ -5666,7 +5666,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/personal-highlights-of-pycon-us-2025": {
-    "timestamp": 1747842243.1310868,
+    "timestamp": 1749051344.9836037,
     "tags": [
       "conferences",
       "opinion",
@@ -5754,6 +5754,20 @@
       "code_snippets": 27,
       "loc": 166,
       "words": 2330
+    }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/personal-highlights-of-pycon-italy-2025": {
+    "timestamp": 1749145784.0958376,
+    "tags": [
+      "conferences",
+      "opinion",
+      "python"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 1,
+      "loc": 5,
+      "words": 2365
     }
   }
 }

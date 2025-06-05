@@ -28,9 +28,9 @@ title: "Opinion blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">5</th>
-            <th style="text-align: center;">9,593</th>
-            <th style="text-align: center;">363</th>
+            <th style="text-align: center;">6</th>
+            <th style="text-align: center;">11,958</th>
+            <th style="text-align: center;">368</th>
         </tr>
     </thead>
     <tbody>
