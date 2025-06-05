@@ -187,8 +187,3 @@ I am very grateful for having been welcomed into this community for two years in
 I already have the dates on my calendar!
 
 ![Photo of the closing session slide where PyCon Italy 2026 dates are announced as 27-30 May.](_2026_dates.webp "Dates for PyCon Italy 2026.")
-
-
----
-The Python documentary: I got some of it, but not a lot, and was moved by the reactions of folks being interviewed + ppl in the room
-PyCon Italy is my favourite community
