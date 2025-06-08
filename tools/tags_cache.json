@@ -1,9 +1,9 @@
 {
   "__all": {
-    "articles": 409,
-    "code_snippets": 3875,
-    "loc": 37143,
-    "words": 446157
+    "articles": 410,
+    "code_snippets": 3882,
+    "loc": 37204,
+    "words": 446586
   },
   "bpci": {
     "articles": 10,
@@ -24,16 +24,16 @@
     "words": 35302
   },
   "programming": {
-    "articles": 300,
-    "code_snippets": 3748,
-    "loc": 36104,
-    "words": 364726
+    "articles": 301,
+    "code_snippets": 3755,
+    "loc": 36165,
+    "words": 365155
   },
   "python": {
-    "articles": 288,
-    "code_snippets": 3620,
-    "loc": 34957,
-    "words": 355802
+    "articles": 289,
+    "code_snippets": 3627,
+    "loc": 35018,
+    "words": 356231
   },
   "algorithms": {
     "articles": 24,
@@ -150,10 +150,10 @@
     "words": 16277
   },
   "slice of life": {
-    "articles": 12,
-    "code_snippets": 73,
-    "loc": 1027,
-    "words": 11631
+    "articles": 13,
+    "code_snippets": 80,
+    "loc": 1088,
+    "words": 12060
   },
   "graphs": {
     "articles": 7,
@@ -402,10 +402,10 @@
     "words": 7878
   },
   "regex": {
-    "articles": 4,
-    "code_snippets": 10,
-    "loc": 95,
-    "words": 1471
+    "articles": 5,
+    "code_snippets": 17,
+    "loc": 156,
+    "words": 1900
   },
   "random walks": {
     "articles": 1,

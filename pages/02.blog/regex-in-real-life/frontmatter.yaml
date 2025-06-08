@@ -1,0 +1,17 @@
+date: 08-06-2025 17:34
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This article shows how I have used regex in real life for all sorts of tasks."
+    og:image: "https://mathspp.com/blog/regex-in-real-life/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/regex-in-real-life/thumbnail.webp"
+references: []
+slug: "regex-in-real-life"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+      - regex
+      - python
+      - programming
+      - slice of life
+title: Regex in real life

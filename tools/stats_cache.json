@@ -5769,5 +5769,20 @@
       "loc": 5,
       "words": 2331
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/regex-in-real-life": {
+    "timestamp": 1749401584.5209596,
+    "tags": [
+      "regex",
+      "python",
+      "programming",
+      "slice of life"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 7,
+      "loc": 61,
+      "words": 429
+    }
   }
 }
