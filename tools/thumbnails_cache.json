@@ -21,13 +21,13 @@
     "articles": 301,
     "code_snippets": 3755,
     "loc": 36165,
-    "words": 365155
+    "words": 365173
   },
   "python": {
     "articles": 289,
     "code_snippets": 3627,
     "loc": 35018,
-    "words": 356231
+    "words": 356249
   },
   "algorithms": {
     "articles": 24,
@@ -177,7 +177,7 @@
     "articles": 13,
     "code_snippets": 80,
     "loc": 1088,
-    "words": 12060
+    "words": 12078
   },
   "productivity": {
     "articles": 26,
@@ -363,7 +363,7 @@
     "articles": 5,
     "code_snippets": 17,
     "loc": 156,
-    "words": 1900
+    "words": 1918
   },
   "random walks": {
     "articles": 1,
@@ -567,7 +567,7 @@
     "articles": 410,
     "code_snippets": 3882,
     "loc": 37204,
-    "words": 446586
+    "words": 446604
   },
   "fp": {
     "articles": 3,

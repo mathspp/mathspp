@@ -29,7 +29,7 @@ title: "Regex blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">5</th>
-            <th style="text-align: center;">1,900</th>
+            <th style="text-align: center;">1,918</th>
             <th style="text-align: center;">156</th>
         </tr>
     </thead>
