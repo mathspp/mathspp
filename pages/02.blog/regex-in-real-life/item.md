@@ -32,7 +32,7 @@ I want to check each file `tip.md` and extract the tip number and title.
 
 As an example, this is what the file `0003_type_unions_with_pipe/tip.md` looks like:
 
-```md
+```txt
 ---
 themes:
     - "typing/type hints"
