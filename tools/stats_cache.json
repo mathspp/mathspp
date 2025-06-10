@@ -3375,7 +3375,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/conditional-expressions": {
-    "timestamp": 1737199480.2586045,
+    "timestamp": 1749493114.2514756,
     "tags": [
       "programming",
       "python"
@@ -3383,8 +3383,8 @@
     "stats": {
       "articles": 1,
       "code_snippets": 46,
-      "loc": 219,
-      "words": 2637
+      "loc": 217,
+      "words": 2624
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/decorators": {
@@ -5771,7 +5771,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/regex-in-real-life": {
-    "timestamp": 1749401623.0841966,
+    "timestamp": 1749567922.2932794,
     "tags": [
       "regex",
       "python",

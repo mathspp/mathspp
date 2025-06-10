@@ -64,16 +64,17 @@ Therefore, if it can go inside a `print` call, it is an expression:
 ```py
 >>> print(3 + 4 * 5)
 23
+```
+
+As another example, the keyword `pass` defines a statement and therefore cannot be used inside `print`:
+
+```py
 >>> print(pass)
   File "<stdin>", line 1
     print(pass)
           ^
 SyntaxError: invalid syntax
 ```
-
-The syntactic error here is that the statement `pass` cannot go inside the `print` function,
-because the `print` function wants to print _something_,
-and `pass` gives nothing.
 
 
 ## Conditions
@@ -82,6 +83,7 @@ We are very used to using `if` statements to run pieces of code when certain _co
 Rewording that, a condition can dictate what piece(s) of code run.
 
 In conditional expressions, we will use a condition to change the value to which the expression evaluates.
+
 Wait, isn't this the same as an `if` statement?
 No!
 Statements and expressions are _not_ the same thing.
@@ -150,12 +152,6 @@ anatomy presented above.
 | `expr_if_true` | `condition` | `expr_if_false`|
 | :- | :- | :- |
 | `"Mathspp".lower()` | `pow(3, 27, 10) > 5` | `"Oh boy."` |
-
-For reference:
-```py
->>> pow(3, 27, 10)
-7
-```
 
 
 ## Reading a conditional expression
