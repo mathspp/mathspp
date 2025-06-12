@@ -1,6 +1,5 @@
 ---
 title: Python drops
-template: hero-landing
 header:
   class: hero
   image: /user/themes/myquark/images/common_hero.webp  # Optional background image used by base Quark hero
