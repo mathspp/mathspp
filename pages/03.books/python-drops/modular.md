@@ -6,6 +6,7 @@ content:
         custom:
           - "_hero"
           - "_what-you-get"
+          - "_why-did-i-write-this-book"
           - "_dont-buy-this-book-if"
           - "_buy-this-book-if"
           - "_what-you-learn"
