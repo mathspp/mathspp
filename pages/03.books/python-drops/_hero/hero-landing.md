@@ -3,7 +3,7 @@ title: Python drops
 class: hero hero-fullscreen text-light parallax overlay-dark-gradient
 image: /user/themes/myquark/images/common_hero.webp
 headline: "Become smarter about Python in less than 100 words"
-subheadline: "Short, actioanble, powerful tips to sharpen your code."
+subheadline: "Short, actionable, powerful tips to sharpen your code."
 book_cover: "_mockup.webp"
 cta:
     text: "Become smarter about Python"
