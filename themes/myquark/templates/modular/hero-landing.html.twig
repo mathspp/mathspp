@@ -72,7 +72,7 @@
 
     {% if page.header.book_cover %}
       <div class="hero-image">
-        <img src="{{ url('theme://images/' ~ page.header.book_cover) }}" alt="Book cover">
+        <img src="{{ url(page.header.book_cover) }}" alt="Book cover">
       </div>
     {% endif %}
   </div>
