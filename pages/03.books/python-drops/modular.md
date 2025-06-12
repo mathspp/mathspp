@@ -6,8 +6,8 @@ content:
         custom:
           - "_hero"
           - "_what-you-get"
-          - "_dont-buy-this-book"
-          - "_buy-this-book"
+          - "_dont-buy-this-book-if"
+          - "_buy-this-book-if"
           - "_what-you-learn"
           - "_sneak-peek"
           - "_what-readers-say"
