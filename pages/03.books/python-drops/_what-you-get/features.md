@@ -10,4 +10,4 @@ class: offset-box
 
 ### Diagrams with code examples for each tip.
 
-### Free bi-weekly updates with 10 new tips.
+### 10 new tips every two weeks.
