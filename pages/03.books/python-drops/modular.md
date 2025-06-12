@@ -6,6 +6,7 @@ content:
         custom:
           - "_hero"
           - "_what-you-get"
+          - "_dont-buy-this-book"
           - "_buy"
 metadata:
     author: "Rodrigo Girão Serrão"

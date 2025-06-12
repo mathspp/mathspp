@@ -4,10 +4,10 @@ class: offset-box
 
 ## What you get
 
-An ebook (PDF + EPUB) with 68+ Python tips.
+68+ short, actionable Python tips.
 
-Short, actionable, and to the point: no fluff.
+An ebook with no fluff in PDF + EPUB formats.
 
-Diagrams with code examples and explanations for each tip.
+Diagrams with code examples for each tip.
 
-Weekly/bi-weekly free updates with new tips.
+Free updates with new tips (bi-weekly).
