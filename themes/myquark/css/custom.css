@@ -377,7 +377,7 @@ blockquote {
 .cta-btn,
 .cta-button {
     font-size: 200%;
-    padding: 0.75rem 1.5rem;
+    padding: 0.5rem 1.5rem !important;
     height: auto;
 }
 
