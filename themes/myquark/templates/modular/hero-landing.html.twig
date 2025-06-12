@@ -1,67 +1,69 @@
-{% extends 'modular/hero.html.twig' %}
+<style>
+.hero-landing {
+  padding: 4rem 1rem;
+  background-color: #fdfdfd;
+  border-bottom: 1px solid #ddd;
+}
 
-{% block content %}
-  <style>
-    .hero-flex {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        gap: 2rem;
-    }
+.hero-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
 
-    .hero-text {
-        flex: 1 1 50%;
-        min-width: 280px;
-    }
+.hero-text {
+  flex: 1 1 50%;
+  min-width: 280px;
+}
 
-    .hero-text h1 {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-    }
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
 
-    .subheadline {
-        font-size: 1.25rem;
-        color: #666;
-        margin-bottom: 1.5rem;
-    }
+.hero-text .subheadline {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: #666;
+}
 
-    .cta-button {
-        font-size: 1.1rem;
-        padding: 0.75rem 1.5rem;
-    }
+.cta-button {
+  font-size: 1.1rem;
+  padding: 0.75rem 1.5rem;
+}
 
-    .cta-subtext {
-        font-size: 0.9rem;
-        color: #888;
-        margin-top: 0.5rem;
-    }
+.cta-subtext {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 0.5rem;
+}
 
-    .hero-image {
-        flex: 1 1 40%;
-        text-align: center;
-    }
+.hero-image {
+  flex: 1 1 40%;
+  text-align: center;
+}
 
-    .hero-image img {
-        max-width: 100%;
-        height: auto;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    }
-  </style>
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+</style>
 
+<div class="modular-row hero-landing {{ page.header.class }}">
   <div class="container hero-flex">
     <div class="hero-text">
       {% if page.header.headline %}
         <h1>{{ page.header.headline }}</h1>
       {% endif %}
-
       {% if page.header.subheadline %}
         <p class="subheadline">{{ page.header.subheadline }}</p>
       {% endif %}
-
       {% if page.header.cta %}
         <a class="button cta-button" href="{{ page.header.cta.url }}">{{ page.header.cta.text }}</a>
-
         {% if page.header.cta.subtext %}
           <p class="cta-subtext">{{ page.header.cta.subtext }}</p>
         {% endif %}
@@ -74,4 +76,4 @@
       </div>
     {% endif %}
   </div>
-{% endblock %}
+</div>
