@@ -72,8 +72,10 @@
 
     {% if page.header.book_cover %}
       <div class="hero-image">
-        <img src="{{ url(page.header.book_cover) }}" alt="Book cover">
+        <img src="{{ page.media[page.header.book_cover].url }}" alt="Book cover">
       </div>
     {% endif %}
+
+    <i id="to-start" class="pulse fa fa-angle-down"></i>
   </div>
 </div>
