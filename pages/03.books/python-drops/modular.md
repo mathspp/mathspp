@@ -5,6 +5,8 @@ content:
     order:
         custom:
           - "_hero"
+          - "_what-you-get"
+          - "_buy"
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "The “Python drops” ebook contains short, actionable Python tips."
