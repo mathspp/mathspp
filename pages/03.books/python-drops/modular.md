@@ -7,7 +7,12 @@ content:
           - "_hero"
           - "_what-you-get"
           - "_dont-buy-this-book"
+          - "_sneak-peek"
+          - "_what-readers-say"
           - "_buy"
+          # - "_faq"
+          - "_about-the-author"
+          - "_final-cta"
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "The “Python drops” ebook contains short, actionable Python tips."
