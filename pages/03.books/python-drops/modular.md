@@ -7,6 +7,7 @@ content:
           - "_hero"
           - "_what-you-get"
           - "_dont-buy-this-book"
+          - "_buy-this-book"
           - "_what-you-learn"
           - "_sneak-peek"
           - "_what-readers-say"
