@@ -6,5 +6,6 @@
 </div>
 <br />
 
-The book becomes more expensive when more tips are added.
-New tips are added bi-weekly and when you buy you get updates for free.
+ - **Instant download** – e-book in PDF & EPUB formats
+ - **Bonus PDF** – all diagrams compiled into a set of flashcards
+ - **Free updates** – the book is updated with new tips every two weeks, which makes it more expensive
