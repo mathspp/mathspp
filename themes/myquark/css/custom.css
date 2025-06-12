@@ -374,6 +374,12 @@ blockquote {
     margin-right: auto;
 }
 
+.buy-btn {
+    font-size: 200%;
+    padding: 0.4em;
+    height: auto;
+}
+
 /* Background colour for blog tags. */
 .label.label-secondary,
 .label.label-primary,
