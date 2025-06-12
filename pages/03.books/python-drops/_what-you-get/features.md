@@ -1,3 +1,7 @@
+---
+class: offset-box
+---
+
 ## What you get
 
 - An ebook (PDF + EPUB) with 68+ Python tips.
