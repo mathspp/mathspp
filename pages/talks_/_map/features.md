@@ -966,14 +966,34 @@ class: offset-box
  <circle cx="1798.2" cy="719.3" id="2">
  </circle>
 
-<g class="map-pin talk-pin" transform="scale(3) translate(342 41)" fill-opacity="70%">
+<g class="map-pin talk-pin" transform="scale(3) translate(337 53)" fill-opacity="70%">
+<path d="M18 9C18 13.7462 14.2456 18.4924 12.6765 20.2688C12.3109 20.6827 11.6891 20.6827 11.3235 20.2688C9.75444 18.4924 6 13.7462 6 9C6 7 7.5 3 12 3C16.5 3 18 7 18 9Z" stroke="var(--bg)" stroke-linejoin="round"></path>
+<title>A tour of the module itertools – PyCon Italy 2025</title>
+</g>
+
+<g class="map-pin talk-pin" transform="scale(3) translate(338 52)" fill-opacity="70%">
+<path d="M18 9C18 13.7462 14.2456 18.4924 12.6765 20.2688C12.3109 20.6827 11.6891 20.6827 11.3235 20.2688C9.75444 18.4924 6 13.7462 6 9C6 7 7.5 3 12 3C16.5 3 18 7 18 9Z" stroke="var(--bg)" stroke-linejoin="round"></path>
+<title>Dipping my toes in metaprogramming – PyCon Italy 2025</title>
+</g>
+
+<g class="map-pin talk-pin" transform="scale(3) translate(342 40)" fill-opacity="70%">
 <path d="M18 9C18 13.7462 14.2456 18.4924 12.6765 20.2688C12.3109 20.6827 11.6891 20.6827 11.3235 20.2688C9.75444 18.4924 6 13.7462 6 9C6 7 7.5 3 12 3C16.5 3 18 7 18 9Z" stroke="var(--bg)" stroke-linejoin="round"></path>
 <title>Reinventing the itertools wheel for fun and profit – EuroPython 2024</title>
 </g>
 
-<g class="map-pin talk-pin" transform="scale(3) translate(341 40)" fill-opacity="70%">
+<g class="map-pin talk-pin" transform="scale(3) translate(341 41)" fill-opacity="70%">
 <path d="M18 9C18 13.7462 14.2456 18.4924 12.6765 20.2688C12.3109 20.6827 11.6891 20.6827 11.3235 20.2688C9.75444 18.4924 6 13.7462 6 9C6 7 7.5 3 12 3C16.5 3 18 7 18 9Z" stroke="var(--bg)" stroke-linejoin="round"></path>
 <title>Animations from first principles – EuroPython 2024</title>
+</g>
+
+<g class="map-pin talk-pin" transform="scale(3) translate(336 56)" fill-opacity="70%">
+<path d="M18 9C18 13.7462 14.2456 18.4924 12.6765 20.2688C12.3109 20.6827 11.6891 20.6827 11.3235 20.2688C9.75444 18.4924 6 13.7462 6 9C6 7 7.5 3 12 3C16.5 3 18 7 18 9Z" stroke="var(--bg)" stroke-linejoin="round"></path>
+<title>503 days working full-time on FOSS: lessons learned – PyCon Italy 2024</title>
+</g>
+
+<g class="map-pin talk-pin" transform="scale(3) translate(337 55)" fill-opacity="70%">
+<path d="M18 9C18 13.7462 14.2456 18.4924 12.6765 20.2688C12.3109 20.6827 11.6891 20.6827 11.3235 20.2688C9.75444 18.4924 6 13.7462 6 9C6 7 7.5 3 12 3C16.5 3 18 7 18 9Z" stroke="var(--bg)" stroke-linejoin="round"></path>
+<title>Descriptors made easy – PyCon Italy 2024</title>
 </g>
 
 <g class="map-pin talk-pin" transform="scale(3) translate(303 60)" fill-opacity="70%">
