@@ -1009,7 +1009,8 @@ class: offset-box
 </svg>
 
 
-
+Map by simplemaps.
+Pin locations are only accurate up to the country they are placed in.
 
 
 <script src="https://unpkg.com/@popperjs/core@2"></script>
@@ -1024,3 +1025,5 @@ class: offset-box
     arrow: true,
   });
 </script>
+
+
