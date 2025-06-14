@@ -987,6 +987,7 @@ class: offset-box
 
 <g class="map-pin remote-talk-pin" transform="scale(2) translate(709 205)">
 <path d="M18 9C18 13.7462 14.2456 18.4924 12.6765 20.2688C12.3109 20.6827 11.6891 20.6827 11.3235 20.2688C9.75444 18.4924 6 13.7462 6 9C6 7 7.5 3 12 3C16.5 3 18 7 18 9Z" stroke="var(--bg)" stroke-linejoin="round"></path>
+<title>PyCon Sri Lanka 2022</title>
 </g>
 
 </svg>
