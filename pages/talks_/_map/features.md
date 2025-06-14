@@ -3,20 +3,6 @@ class: offset-box
 ---
 
 
-<script src="https://unpkg.com/@popperjs/core@2"></script>
-<script src="https://unpkg.com/tippy.js@6"></script>
-<script>
-  tippy('.map-pin', {
-    content(reference) {
-      return reference.querySelector('title').textContent;
-    },
-    allowHTML: true,
-    animation: 'scale',
-    arrow: true,
-  });
-</script>
-
-
 
 <style>
 .talked-at, .talked-at-remote {
@@ -991,3 +977,20 @@ class: offset-box
 </g>
 
 </svg>
+
+
+
+
+
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script>
+  tippy('.map-pin', {
+    content(reference) {
+      return reference.querySelector('title').textContent;
+    },
+    allowHTML: true,
+    animation: 'scale',
+    arrow: true,
+  });
+</script>
