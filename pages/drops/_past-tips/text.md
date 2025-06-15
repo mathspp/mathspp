@@ -1,7 +1,5 @@
 ## Past tips
 
-This is a list of all past tips (last updated 8th June, 2025):
-
 <ol reversed>
     <li>Slicing generators for debugging</li>
     <li>Structural pattern matching with dictionaries</li>

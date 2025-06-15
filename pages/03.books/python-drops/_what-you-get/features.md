@@ -4,9 +4,9 @@ class: offset-box
 
 ## What you get
 
-### 68+ short, actionable Python tips.
+### 73+ short, actionable Python tips.
 
-### An ebook with no fluff in PDF + EPUB formats.
+### Ebook with no fluff.
 
 ### Diagrams with code examples for each tip.
 
