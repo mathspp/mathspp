@@ -3,6 +3,11 @@
 This is a list of all past tips (last updated 8th June, 2025):
 
 <ol reversed>
+    <li>Slicing generators for debugging</li>
+    <li>Structural pattern matching with dictionaries</li>
+    <li>File discovery by name pattern</li>
+    <li>Extract assignments from conditionals</li>
+    <li>Regex multiline flag</li>
     <li>Split strings in two halves</li>
     <li>Generator recipe</li>
     <li>Concatenate files from handlers</li>
