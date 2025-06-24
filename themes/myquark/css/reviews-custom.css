@@ -49,7 +49,7 @@
 }
 
 .review-meta p {
-    text-align: right;
+    text-align: right !important;
 }
 
 .review-link {
