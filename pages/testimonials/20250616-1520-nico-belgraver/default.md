@@ -1,5 +1,5 @@
 ---
-company_and_title: NavApp
+company_and_title: NavApp, <a href="/drops">Python drops</a> subscriber
 date: "2025-06-16 15:20"
 name: Nico Belgraver
 # link:
@@ -8,7 +8,8 @@ taxonomy:
     category: review
     review-tag:
       - newsletter
-published: false
+      - newsletter-drops
+published: true
 ---
 
 Quality and fun. Highly recommended!
