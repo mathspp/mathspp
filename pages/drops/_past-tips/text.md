@@ -1,6 +1,16 @@
 ## Past tips
 
 <ol reversed>
+    <li>Extracting text data into a dict</li>
+    <li>Verbose regular expressions</li>
+    <li>Structural validation and homogenisation</li>
+    <li>Bulk renaming files</li>
+    <li>Typing overloads</li>
+    <li>Undoable iterator with value history</li>
+    <li>Match an exact dictionary structure</li>
+    <li>Built-in <code>next</code> with a default value</li>
+    <li>Match the structure of custom objects</li>
+    <li>Peek at an iterable</li>
     <li>Slicing generators for debugging</li>
     <li>Structural pattern matching with dictionaries</li>
     <li>File discovery by name pattern</li>
