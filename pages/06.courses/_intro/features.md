@@ -9,6 +9,6 @@ Upcoming dates:
 
 | Course | Dates |
 | :- | :- |
-| [Intermediate Python course](#intermediate-python-course) | 8th – 12th September |
+| [Intermediate Python course](#intermediate-python-course) | 1st – 5th September |
 
 I also offer [corporate trainings for teams, both remote and in-person](/training).
