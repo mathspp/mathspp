@@ -8,8 +8,9 @@ taxonomy:
     category: review
     review-tag:
       - book
+
       - book-pydonts
 published: true
 ---
 
-Excellent book, what I've read so far looks excellent, the explanations are very clear and the topics are very interesting.
+[Excellent book](/books/pydonts), what I've read so far looks excellent, the explanations are very clear and the topics are very interesting.
