@@ -1,5 +1,5 @@
 ---
-company_and_title: 
+company_and_title: <a href="/drops">Python drops</a> subscriber
 date: "2025-06-30 18:54"
 name: Andrew Hartung
 # link:
@@ -8,7 +8,8 @@ taxonomy:
     category: review
     review-tag:
       - newsletter
-published: false
+      - newsletter-drops
+published: true
 ---
 
 The diagrams are always so well done they don't even need supporting text. 
