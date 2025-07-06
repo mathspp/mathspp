@@ -29,7 +29,7 @@ title: "Vscode blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">6</th>
-            <th style="text-align: center;">2,090</th>
+            <th style="text-align: center;">2,094</th>
             <th style="text-align: center;">53</th>
         </tr>
     </thead>

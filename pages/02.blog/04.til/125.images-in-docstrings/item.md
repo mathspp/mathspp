@@ -42,6 +42,8 @@ When I used it in my other file and hovered over its name, I saw the GIF animati
 
 This is pretty hilarious but a reasonable use case might be to include diagrams for complex functions...
 
+## Try it yourself!
+
 Give it a go yourself!
 Open an arbitrary Python file and paste this code in:
 

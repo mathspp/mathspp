@@ -3,7 +3,7 @@
     "articles": 411,
     "code_snippets": 3885,
     "loc": 37215,
-    "words": 446922
+    "words": 446926
   },
   "bpci": {
     "articles": 10,
@@ -201,7 +201,7 @@
     "articles": 27,
     "code_snippets": 153,
     "loc": 1548,
-    "words": 17098
+    "words": 17102
   },
   "metaprogramming": {
     "articles": 3,
@@ -447,7 +447,7 @@
     "articles": 6,
     "code_snippets": 8,
     "loc": 53,
-    "words": 2090
+    "words": 2094
   },
   "fp": {
     "articles": 3,

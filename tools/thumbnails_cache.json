@@ -183,7 +183,7 @@
     "articles": 27,
     "code_snippets": 153,
     "loc": 1548,
-    "words": 17098
+    "words": 17102
   },
   "logic": {
     "articles": 34,
@@ -417,7 +417,7 @@
     "articles": 6,
     "code_snippets": 8,
     "loc": 53,
-    "words": 2090
+    "words": 2094
   },
   "haskell": {
     "articles": 2,
@@ -567,7 +567,7 @@
     "articles": 411,
     "code_snippets": 3885,
     "loc": 37215,
-    "words": 446922
+    "words": 446926
   },
   "fp": {
     "articles": 3,
