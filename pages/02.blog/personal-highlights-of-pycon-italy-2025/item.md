@@ -77,7 +77,7 @@ And then Sarah showed a picture of a talk given by someone with a disability whe
 
 ![A screenshot of Sarah's keynote as seen on the livestream. In the current slide you can see a picture of a speaker in front of their own slide, which reads “nothing about us without us”.](_nothing_about_us_without_us.webp "Sarah's keynote.")
 
-In the Q&A section I asked how I could include people with disabilities in the process of trying to make my website more accessible, and Sarah gave a brilliant suggestion: I should add an accessilibity statement to make it clear that I care and I should also add contact details so that others can provide feedback easily.
+In the Q&A section I asked how I could include people with disabilities in the process of trying to make my website more accessible, and Sarah gave a brilliant suggestion: I should add an [accessilibity statement](/about/accessibility-statement) to make it clear that I care and I should also add contact details so that others can provide feedback easily.
 
 I am still processing Nicholas's keynote but Nicholas also shared something that stuck with me.
 Nicholas talked a lot about how we must pay attention to the way we interact with others, with the world, and with software.

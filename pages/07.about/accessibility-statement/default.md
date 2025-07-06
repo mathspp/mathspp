@@ -17,3 +17,5 @@ I am absolutely sure there are other things, big and small, that I could impleme
 But I don't know what those things are, and that's why I need your help.
 [Please, reach out to me and educate me](/contact-me?subject=Accessibility%20improvements), so that I can improve things for everyone.
 I look forward to your input and I welcome the input of everyone who has first-hand experience with this class of issues or difficulties.
+
+You can [reach out to me by filling out a form](/contact-me?subject=Accessibility%20improvements) or by writing directly to my email, [rodrigo@mathspp.com](mailto:rodrigo@mathspp.com).
