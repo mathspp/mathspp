@@ -1,0 +1,19 @@
+date: 06-07-2025 17:44
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned you can embed images in your module docstrings and they'll be rendered in the tooltips inside your IDE."
+    og:image: "https://mathspp.com/blog/images-in-docstrings/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/images-in-docstrings/thumbnail.webp"
+references:
+  - "User “MACE!!!” on BlueSky, <https://bsky.app/profile/physicssux.bsky.social/post/3lt4rudnbyc2v> [last accessed 06-07-2025];"
+routes:
+    aliases:
+        - "/blog/til/125"
+slug: "images-in-docstrings"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - productivity
+      - vscode
+title: "TIL #125 – Images in docstrings"
+visible: false

@@ -180,10 +180,10 @@
     "words": 12078
   },
   "productivity": {
-    "articles": 26,
-    "code_snippets": 150,
-    "loc": 1535,
-    "words": 16767
+    "articles": 27,
+    "code_snippets": 152,
+    "loc": 1543,
+    "words": 17069
   },
   "logic": {
     "articles": 34,
@@ -414,10 +414,10 @@
     "words": 3315
   },
   "vscode": {
-    "articles": 5,
-    "code_snippets": 5,
-    "loc": 40,
-    "words": 1759
+    "articles": 6,
+    "code_snippets": 7,
+    "loc": 48,
+    "words": 2061
   },
   "haskell": {
     "articles": 2,
@@ -564,10 +564,10 @@
     "words": 430
   },
   "__all": {
-    "articles": 410,
-    "code_snippets": 3882,
-    "loc": 37202,
-    "words": 446591
+    "articles": 411,
+    "code_snippets": 3884,
+    "loc": 37210,
+    "words": 446893
   },
   "fp": {
     "articles": 3,

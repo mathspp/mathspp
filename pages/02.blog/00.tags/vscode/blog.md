@@ -14,10 +14,10 @@ hero_image_url: /user/themes/myquark/images/common_hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 metadata:
     author: Rodrigo Girão Serrão
-    description: "All of the mathspp blog articles about vscode."
-    og:description: "All of the mathspp blog articles about vscode."
-    og:image: "https://mathspp.com/blog/tags/vscode/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/vscode/thumbnail.webp"
+    description: "All of the mathspp blog articles about Vscode."
+    og:description: "All of the mathspp blog articles about Vscode."
+    og:image: "https://mathspp.com/blog/tags/Vscode/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/Vscode/thumbnail.webp"
 title: "Vscode blog articles"
 ---
 
@@ -28,9 +28,9 @@ title: "Vscode blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">5</th>
-            <th style="text-align: center;">1,759</th>
-            <th style="text-align: center;">40</th>
+            <th style="text-align: center;">6</th>
+            <th style="text-align: center;">2,061</th>
+            <th style="text-align: center;">48</th>
         </tr>
     </thead>
     <tbody>
