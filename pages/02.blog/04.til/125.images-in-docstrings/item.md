@@ -23,7 +23,7 @@ When I hovered over the import line, the tooltip showed my face:
 
 ![Screenshot of VS Code showing a tooltip with the documentation for the module myproj that shows a static picture of my face.](_face.webp "A VS Code tooltip showing an image.")
 
-This also works with GIFs, instead of plain images, as long as you're pointing to a URL on the Internet.
+This works with GIFs and plain images, as long as you're pointing to a URL on the Internet.
 (It looks like it doesn't work with local files).
 It also works on other objects that can be documented with docstrings...
 For example, it also works with functions.
@@ -41,5 +41,18 @@ When I used it in my other file and hovered over its name, I saw the GIF animati
 ![Screenshot of VS Code showing a tooltip with the documentation for the function myproj.two that includes a GIF of two celebreties, with the one on the right saying the word “two” while lifting their pointer and middle fingers in the typical gesture to represent the number two.](_two.webp "A VS Code tooltip showing a GIF.")
 
 This is pretty hilarious but a reasonable use case might be to include diagrams for complex functions...
+
+Give it a go yourself!
+Open an arbitrary Python file and paste this code in:
+
+```py
+def two():
+    """![](https://mathspp.com/blog/til/images-in-docstrings/_two.gif)"""
+    return 2
+
+print(two())
+```
+
+Hover over the `two()` in the last line and you should see the “TWO!” GIF playing.
 
 [Hats off to “MACE!!!” who indirectly showed me this on BlueSky](https://bsky.app/profile/physicssux.bsky.social/post/3lt4rudnbyc2v).

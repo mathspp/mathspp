@@ -181,9 +181,9 @@
   },
   "productivity": {
     "articles": 27,
-    "code_snippets": 152,
-    "loc": 1543,
-    "words": 17069
+    "code_snippets": 153,
+    "loc": 1548,
+    "words": 17098
   },
   "logic": {
     "articles": 34,
@@ -415,9 +415,9 @@
   },
   "vscode": {
     "articles": 6,
-    "code_snippets": 7,
-    "loc": 48,
-    "words": 2061
+    "code_snippets": 8,
+    "loc": 53,
+    "words": 2090
   },
   "haskell": {
     "articles": 2,
@@ -565,9 +565,9 @@
   },
   "__all": {
     "articles": 411,
-    "code_snippets": 3884,
-    "loc": 37210,
-    "words": 446893
+    "code_snippets": 3885,
+    "loc": 37215,
+    "words": 446922
   },
   "fp": {
     "articles": 3,
