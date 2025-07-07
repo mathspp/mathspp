@@ -1,6 +1,11 @@
 ## Past tips
 
 <ol reversed>
+    <li>Constrained generics</li>
+    <li>Caching sets and frozen sets</li>
+    <li>File modes</li>
+    <li>Add lists together, fast</li>
+    <li>Generics syntax</li>
     <li>Extracting text data into a dict</li>
     <li>Verbose regular expressions</li>
     <li>Structural validation and homogenisation</li>
