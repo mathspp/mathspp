@@ -1178,7 +1178,7 @@ Pin locations are only accurate up to the country they are placed in.
 <script>
   tippy('.map-pin', {
     content(reference) {
-      return reference.querySelector('title').textContent;
+      return reference.parentNode.querySelector('title').textContent;
     },
     allowHTML: true,
     animation: 'scale',
