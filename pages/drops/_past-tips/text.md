@@ -1,6 +1,11 @@
 ## Past tips
 
 <ol reversed>
+    <li>Non-local variables</li>
+    <li>Temporary directories</li>
+    <li>Timestamp file names</li>
+    <li>Preserving decorated function metadata</li>
+    <li>Natural alphabetical sorting</li>
     <li>Constrained generics</li>
     <li>Caching sets and frozen sets</li>
     <li>File modes</li>
