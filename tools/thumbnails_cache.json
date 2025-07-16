@@ -24,10 +24,10 @@
     "words": 365160
   },
   "python": {
-    "articles": 289,
+    "articles": 290,
     "code_snippets": 3627,
     "loc": 35016,
-    "words": 356236
+    "words": 356614
   },
   "algorithms": {
     "articles": 24,
@@ -564,10 +564,10 @@
     "words": 430
   },
   "__all": {
-    "articles": 411,
+    "articles": 412,
     "code_snippets": 3885,
     "loc": 37215,
-    "words": 446926
+    "words": 447304
   },
   "fp": {
     "articles": 3,
@@ -600,9 +600,9 @@
     "words": 4245
   },
   "quiz": {
-    "articles": 2,
+    "articles": 3,
     "code_snippets": 1,
     "loc": -1,
-    "words": 980
+    "words": 1358
   }
 }

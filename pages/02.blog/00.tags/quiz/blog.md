@@ -28,8 +28,8 @@ title: "Quiz blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">2</th>
-            <th style="text-align: center;">980</th>
+            <th style="text-align: center;">3</th>
+            <th style="text-align: center;">1,358</th>
             
         </tr>
     </thead>
