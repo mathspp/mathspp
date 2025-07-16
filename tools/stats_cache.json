@@ -5799,16 +5799,16 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/python-quiz-europython-2025-edition": {
-    "timestamp": 1752697996.3837688,
+    "timestamp": 1752700444.3932338,
     "tags": [
       "python",
       "quiz"
     ],
     "stats": {
       "articles": 1,
-      "code_snippets": 0,
-      "loc": 0,
-      "words": 378
+      "code_snippets": 4,
+      "loc": 20,
+      "words": 816
     }
   }
 }

@@ -6,9 +6,12 @@ metadata:
     og:image: "https://mathspp.com/blog/python-quiz-europython-2025-edition/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/python-quiz-europython-2025-edition/thumbnail.webp"
 references:
+  - "EuroPython 2025 summits, <https://ep2025.europython.eu/sessions/?type=Summit> [last accessed 16-07-2025];"
   - "Python General FAQ, Why is it called Python? <https://docs.python.org/3/faq/general.html#why-is-it-called-python> [last accessed 15-07-2025];"
   - "Python Developer's Guide, Developer log <https://devguide.python.org/core-developers/developer-log/> [last accessed 15-07-2025];"
+  - "PEP 641 – Relaxing Grammar Restrictions on Decorators <https://peps.python.org/pep-0614/> [last accessed 16-07-2025];"
   - "mathspp blog, The appearing built-in <https://mathspp.com/blog/til/the-appearing-builtin> [last accessed 15-07-2025];"
+  - "mathspp blog, underscore is a soft keyword <https://mathspp.com/blog/til/underscore-is-a-soft-keyword> [last accessed 16-07-2025];"
 slug: "python-quiz-europython-2025-edition"
 taxonomy:
     category:

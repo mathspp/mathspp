@@ -126,3 +126,86 @@ A couple of PyCharm vouchers were also raffled among the participating players.
   </ul>
   <p class="feedback"></p>
 </div>
+
+
+## Explanations
+
+### Question 4 – standard library modules
+
+`__future__` is a module from the standard library that allows you to write “future statements”.
+Although it interacts with funky special cases in the compiler, there _is_ a module named `__future__` you can import.
+
+The module `this` will print the Zen of Python and the module `antigravity` is an Easter Egg related to [xkcd comic 353](https://xkcd.com/353/).
+
+You can verify all these by opening a 3.13 REPL and typing `import ???`.
+`dataclass`, however, was just a play on the fact that the well-known module from the standard library is called `dataclasses`.
+
+### Question 6 – Python keywords
+
+Python 3.13 has four _soft_ keywords: `case`, `match`, `type`, ... and `_`!
+Soft keywords are keywords that are only keywords in specific statements and can be used as regular variables elsewhere, and `_` is a soft keyword in the context of `case _:` as a catch-all pattern while [`type` is a soft keyword used for type aliases](/blog/til/type-statement-and-type-aliases).
+
+`finally` is a keyword used in error handling.
+
+This means `throw` can't be a Python keyword.
+
+In any instance, you can verify this with the module `keyword` from the standard library:
+
+```py
+import keyword
+
+assert "_" in keyword.softkwlist
+assert "type" in keyword.softkwlist
+assert "finally" in keyword.kwlist
+assert "throw" not in (keyword.kwlist + keyword.softkwlist)
+```
+
+
+### Question 7 – crazy decorators
+
+The question asks what's the output of this code:
+
+```py
+@lambda fn: lambda x: ...
+def what(the):
+    return 2 * the
+
+print(what(10))
+```
+
+The at sign `@` syntax for decorators was extended in Python 3.9 so that any valid Python expression can be used as a decorator.
+So, this is valid syntax, even though it broke my syntax highlighter.
+
+`@lambda fn: (...)` is the decorator and the decorator returns `lambda x: ...`, which is the function that replaces the function `what`, which can be safely ignored.
+The function returned, `lambda x: ...`, is a function that accepts a single argument and always returns the ellipsis `...`.
+When `what(10)` is called, the `10` is passed as an argument to `lambda x: ...` which returns `...`.
+
+The object `...` is printed and its string representation is `Ellipsis`, so that's the output you get.
+
+
+### Question 8 – REPL session
+
+The question asks what's the output of this code if ran in a fresh REPL session:
+
+```py
+>>> import builtins
+>>> len(dir(builtins))
+159
+>>> len(dir(builtins))
+???
+```
+
+In the REPL, [the underscore `_` allows you to recover the result of the previous expression](/blog/pydonts/usages-of-underscore#recovering-last-result-in-the-session).
+So, when you first check for `len(dir(builtins))`, you get the result `159` and that also gets saved in the underscore `_` name...
+
+As it turns out, this underscore `_` name doesn't go in the globals but in the built-ins:
+
+```py
+>>> "_" in globals()
+False
+>>> "_" in dir(builtins)
+True
+```
+
+But `_` wasn't available in the beginning, so it got added afterwards, which means the length of the number of names available in `builtins` grew by 1.
+That's how you go from 159 to 160.
