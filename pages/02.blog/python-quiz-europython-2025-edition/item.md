@@ -61,10 +61,10 @@ A couple of PyCharm vouchers were also raffled among the participating players.
 <div class="quiz-question" data-correct="c">
   <div class="question-text"><p>Which of these is not a module from the standard library?</p></div>
   <ul class="choices">
-    <li data-option="a">`__future__`</li>
-    <li data-option="b">`antigravity`</li>
-    <li data-option="c">`dataclass`</li>
-    <li data-option="d">`this`</li>
+    <li data-option="a"><code>__future__</code></li>
+    <li data-option="b"><code>antigravity</code></li>
+    <li data-option="c"><code>dataclass</code></li>
+    <li data-option="d"><code>this</code></li>
   </ul>
   <p class="feedback"></p>
 </div>
@@ -85,10 +85,10 @@ A couple of PyCharm vouchers were also raffled among the participating players.
 <div class="quiz-question" data-correct="c">
   <div class="question-text"><p>Which of the following is not a Python keyword?</p></div>
   <ul class="choices">
-    <li data-option="a">`_`</li>
-    <li data-option="b">`finally`</li>
-    <li data-option="c">`throw`</li>
-    <li data-option="d">`type`</li>
+    <li data-option="a"><code>_</code></li>
+    <li data-option="b"><code>finally</code></li>
+    <li data-option="c"><code>throw</code></li>
+    <li data-option="d"><code>type</code></li>
   </ul>
   <p class="feedback"></p>
 </div>
@@ -102,10 +102,10 @@ A couple of PyCharm vouchers were also raffled among the participating players.
   </div>
 
   <ul class="choices">
-    <li data-option="a">`...`</li>
+    <li data-option="a"><code>...</code></li>
     <li data-option="b">20</li>
     <li data-option="c">Ellipsis</li>
-    <li data-option="d">Nothing; you get a `SyntaxError`</li>
+    <li data-option="d">Nothing; you get a <code>SyntaxError</code></li>
   </ul>
   <p class="feedback"></p>
 </div>
@@ -121,8 +121,8 @@ A couple of PyCharm vouchers were also raffled among the participating players.
   <ul class="choices">
     <li data-option="a">159</li>
     <li data-option="b">160</li>
-    <li data-option="c">`RuntimeError`</li>
-    <li data-option="d">`ValueError`</li>
+    <li data-option="c"><code>RuntimeError</code></li>
+    <li data-option="d"><code>ValueError</code></li>
   </ul>
   <p class="feedback"></p>
 </div>
