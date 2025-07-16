@@ -1,0 +1,19 @@
+date: 16-07-2025 18:14
+publish_date: 16-07-2025 20:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Answer this quiz to test your knowledge about the Python language, community, andd the 2025 edition of EuroPython!"
+    og:image: "https://mathspp.com/blog/python-quiz-europython-2025-edition/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/python-quiz-europython-2025-edition/thumbnail.webp"
+references:
+  - "Python General FAQ, Why is it called Python? <https://docs.python.org/3/faq/general.html#why-is-it-called-python> [last accessed 15-07-2025];"
+  - "Python Developer's Guide, Developer log <https://devguide.python.org/core-developers/developer-log/> [last accessed 15-07-2025];"
+  - "mathspp blog, The appearing built-in <https://mathspp.com/blog/til/the-appearing-builtin> [last accessed 15-07-2025];"
+slug: "python-quiz-europython-2025-edition"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+      - python
+      - quiz
+title: "Python quiz: EuroPython 2025 edition"

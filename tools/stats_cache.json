@@ -3388,7 +3388,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/decorators": {
-    "timestamp": 1748637454.10561,
+    "timestamp": 1752067145.139773,
     "tags": [
       "fp",
       "programming",
@@ -5796,6 +5796,19 @@
       "code_snippets": 3,
       "loc": 13,
       "words": 335
+    }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/python-quiz-europython-2025-edition": {
+    "timestamp": 1752697849.1731668,
+    "tags": [
+      "python",
+      "quiz"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 0,
+      "loc": 0,
+      "words": 378
     }
   }
 }
