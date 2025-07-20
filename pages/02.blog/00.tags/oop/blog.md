@@ -29,7 +29,7 @@ title: "Oop blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">6</th>
-            <th style="text-align: center;">10,670</th>
+            <th style="text-align: center;">10,682</th>
             <th style="text-align: center;">1,511</th>
         </tr>
     </thead>

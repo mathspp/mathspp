@@ -40,3 +40,5 @@ x.__class__ = B
 print(type(x))  # <class '__main__.B'> !?
 print(x.mult(10))  # 420
 ```
+
+I learned this in a cool lightning talk given at EuroPython 2025!
