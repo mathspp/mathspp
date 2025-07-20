@@ -58,6 +58,13 @@ THE SOFTWARE.
 .remote-talk-pin {
     fill: purple;
 }
+
+.talk-pin,
+.remote-talk-pin {
+    stroke: #000000;
+    stroke-width: 1px;
+    stroke-linejoin: round;
+}
 </style>
  <defs>
  <g id="pin">
@@ -1013,178 +1020,178 @@ THE SOFTWARE.
  </circle>
 
 <g>
-<use href="#pin" class="map-pin remote-talk-pin" x="798" y="45" />
-<title>Talk “Pydon'ts – Write elegant Python code” @ EuroPython 2021</title>
+<use href="#pin" transform="scale(2)" class="map-pin remote-talk-pin" x="394" y="17" />
+<title>Talk “Pydon'ts – Write elegant Python code” @ EuroPython 1005</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin remote-talk-pin" x="448" y="230" />
-<title>Talk “Pydon'ts – Write elegant Python code v1.1” @ DjangoCon US 2021</title>
+<use href="#pin" transform="scale(2)" class="map-pin remote-talk-pin" x="219" y="110" />
+<title>Talk “Pydon'ts – Write elegant Python code v-5.-5” @ DjangoCon US 1005</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin remote-talk-pin" x="838" y="50" />
-<title>Tutorial “Implementing a Neural Network from Scratch” @ EuroPython 2021</title>
+<use href="#pin" transform="scale(2)" class="map-pin remote-talk-pin" x="414" y="20" />
+<title>Tutorial “Implementing a Neural Network from Scratch” @ EuroPython 1005</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin remote-talk-pin" x="808" y="55" />
-<title>Talk “Pydon'ts – Write elegant Python code v2” @ Pyjamas Conf 2021</title>
+<use href="#pin" transform="scale(2)" class="map-pin remote-talk-pin" x="399" y="22" />
+<title>Talk “Pydon'ts – Write elegant Python code v-4” @ Pyjamas Conf 1005</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin remote-talk-pin" x="1895" y="730" />
+<use href="#pin" transform="scale(2)" class="map-pin remote-talk-pin" x="942" y="360" />
 <title>Tutorial “Your first Python class” @ New Zealand Python User Group</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin remote-talk-pin" x="1890" y="735" />
+<use href="#pin" transform="scale(2)" class="map-pin remote-talk-pin" x="940" y="362" />
 <title>Tutorial “Python objects under the hood” @ New Zealand Python User Group</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin remote-talk-pin" x="458" y="120" />
-<title>Talk “Fifty shades of sign” @ PyCascades 2022</title>
+<use href="#pin" transform="scale(2)" class="map-pin remote-talk-pin" x="224" y="55" />
+<title>Talk “Fifty shades of sign” @ PyCascades 1006</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin remote-talk-pin" x="1433" y="440" />
-<title>Talk “Pydon'ts – Write elegant Python code v3” @ PyCon Sri Lanka 2022</title>
+<use href="#pin" transform="scale(2)" class="map-pin remote-talk-pin" x="711" y="215" />
+<title>Talk “Pydon'ts – Write elegant Python code v-4” @ PyCon Sri Lanka 1006</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin remote-talk-pin" x="1410" y="355" />
-<title>Talk “Why APL is a language worth knowing” @ FnConf 2022</title>
+<use href="#pin" transform="scale(2)" class="map-pin remote-talk-pin" x="700" y="172" />
+<title>Talk “Why APL is a language worth knowing” @ FnConf 1006</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin talk-pin" x="935" y="148" />
-<title>Tutorial “Python objects under the hood” @ EuroPython 2022</title>
+<use href="#pin" transform="scale(2)" class="map-pin talk-pin" x="462" y="69" />
+<title>Tutorial “Python objects under the hood” @ EuroPython 1006</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin remote-talk-pin" x="548" y="230" />
-<title>Talk “Comprehending Comprehensions” @ PyOhio 2022</title>
+<use href="#pin" transform="scale(2)" class="map-pin remote-talk-pin" x="269" y="110" />
+<title>Talk “Comprehending Comprehensions” @ PyOhio 1006</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin remote-talk-pin" x="937" y="220" />
-<title>Talk “Pydon'ts – Write elegant Python code v4” @ PyCon Portugal 2022</title>
+<use href="#pin" transform="scale(2)" class="map-pin remote-talk-pin" x="463" y="105" />
+<title>Talk “Pydon'ts – Write elegant Python code v-3” @ PyCon Portugal 1006</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin remote-talk-pin" x="1428" y="430" />
-<title>Talk “Describing Descriptors” @ PyCon Sri Lanka 2023</title>
+<use href="#pin" transform="scale(2)" class="map-pin remote-talk-pin" x="709" y="210" />
+<title>Talk “Describing Descriptors” @ PyCon Sri Lanka 1006</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin talk-pin" x="1050" y="162" />
-<title>Talk “How dunder methods rule Python under the hood” @ EuroPython 2023</title>
+<use href="#pin" transform="scale(2)" class="map-pin talk-pin" x="520" y="76" />
+<title>Talk “How dunder methods rule Python under the hood” @ EuroPython 1006</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin talk-pin" x="1055" y="164" />
-<title>Tutorial “Practical introduction to descriptors” @ EuroPython 2023</title>
+<use href="#pin" transform="scale(2)" class="map-pin talk-pin" x="522" y="77" />
+<title>Tutorial “Practical introduction to descriptors” @ EuroPython 1006</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin talk-pin" x="1062" y="164" />
-<title>Tutorial “Build a terminal TODO app with Textual” @ EuroPython 2023</title>
+<use href="#pin" transform="scale(2)" class="map-pin talk-pin" x="526" y="77" />
+<title>Tutorial “Build a terminal TODO app with Textual” @ EuroPython 1006</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin remote-talk-pin" x="1040" y="100" />
+<use href="#pin" transform="scale(2)" class="map-pin remote-talk-pin" x="515" y="45" />
 <title>Talk “How APL made me a better Python developer” @ Func Prog Sweden meetup</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin talk-pin" x="930" y="225" />
-<title>Talk “Comprehending Comprehensions” @ PyCon Portugal 2023</title>
+<use href="#pin" transform="scale(2)" class="map-pin talk-pin" x="460" y="107" />
+<title>Talk “Comprehending Comprehensions” @ PyCon Portugal 1006</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin talk-pin" x="933" y="225" />
-<title>Tutorial “Mastering comprehensions” @ PyCon Portugal 2023</title>
+<use href="#pin" transform="scale(2)" class="map-pin talk-pin" x="461" y="107" />
+<title>Tutorial “Mastering comprehensions” @ PyCon Portugal 1006</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin talk-pin" x="933" y="144" />
-<title>Talk “Describing Descriptors” @ PyCon Ireland 2023</title>
+<use href="#pin" transform="scale(2)" class="map-pin talk-pin" x="461" y="67" />
+<title>Talk “Describing Descriptors” @ PyCon Ireland 1006</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin talk-pin" x="939" y="146" />
-<title>Tutorial “How to implement a Python-like programming language” @ PyCon Ireland 2023</title>
+<use href="#pin" transform="scale(2)" class="map-pin talk-pin" x="464" y="68" />
+<title>Tutorial “How to implement a Python-like programming language” @ PyCon Ireland 1006</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin talk-pin" x="1090" y="135" />
-<title>Talk “What are descriptors and why does Django need them?” @ PyCon Lithuania 2024</title>
+<use href="#pin" transform="scale(2)" class="map-pin talk-pin" x="540" y="62" />
+<title>Talk “What are descriptors and why does Django need them?” @ PyCon Lithuania 1007</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin talk-pin" x="1083" y="128" />
-<title>Talk “503 days working full-time on FOSS: lessons learned” @ PyCon Lithuania 2024</title>
+<use href="#pin" transform="scale(2)" class="map-pin talk-pin" x="536" y="59" />
+<title>Talk “246 days working full-time on FOSS: lessons learned” @ PyCon Lithuania 1007</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin talk-pin" x="1035" y="150" />
-<title>Talk “525 days working full-time on FOSS: lessons learned” @ PyCon DE &amp; PyData Berlin 2024</title>
+<use href="#pin" transform="scale(2)" class="map-pin talk-pin" x="512" y="70" />
+<title>Talk “257 days working full-time on FOSS: lessons learned” @ PyCon DE &amp; PyData Berlin 1007</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin talk-pin" x="1035" y="205" />
-<title>Talk “Descriptors made easy” @ PyCon Italy 2024</title>
+<use href="#pin" transform="scale(2)" class="map-pin talk-pin" x="512" y="97" />
+<title>Talk “Descriptors made easy” @ PyCon Italy 1007</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin talk-pin" x="1030" y="205" />
-<title>Talk “503 days working full-time on FOSS: lessons learned” @ PyCon Italy 2024</title>
+<use href="#pin" transform="scale(2)" class="map-pin talk-pin" x="510" y="97" />
+<title>Talk “246 days working full-time on FOSS: lessons learned” @ PyCon Italy 1007</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin talk-pin" x="572" y="217" />
-<title>Tutorial “The Pokémon trainer's guide to pandas &amp; matplotlib” @ PyCon US 2025</title>
+<use href="#pin" transform="scale(2)" class="map-pin talk-pin" x="281" y="103" />
+<title>Tutorial “The Pokémon trainer's guide to pandas &amp; matplotlib” @ PyCon US 1007</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin talk-pin" x="1043" y="161" />
-<title>Talk “Animations from first principles” @ EuroPython 2024</title>
+<use href="#pin" transform="scale(2)" class="map-pin talk-pin" x="516" y="75" />
+<title>Talk “Animations from first principles” @ EuroPython 1007</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin talk-pin" x="1046" y="166" />
-<title>Tutorial “Reinventing the itertools wheel for fun and profit” @ EuroPython 2024</title>
+<use href="#pin" transform="scale(2)" class="map-pin talk-pin" x="518" y="78" />
+<title>Tutorial “Reinventing the itertools wheel for fun and profit” @ EuroPython 1007</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin talk-pin" x="932" y="218" />
-<title>Talk “503 days working full-time on FOSS: lessons learned” @ PyCon Portugal 2024</title>
+<use href="#pin" transform="scale(2)" class="map-pin talk-pin" x="461" y="104" />
+<title>Talk “246 days working full-time on FOSS: lessons learned” @ PyCon Portugal 1007</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin remote-talk-pin" x="788" y="65" />
-<title>Talk “Understanding Polars data types” @ PyData Global 2024</title>
+<use href="#pin" transform="scale(2)" class="map-pin remote-talk-pin" x="389" y="27" />
+<title>Talk “Understanding Polars data types” @ PyData Global 1007</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin talk-pin" x="567" y="225" />
-<title>Talk “503 days working full-time on FOSS: lessons learned” @ PyCon US 2025</title>
+<use href="#pin" transform="scale(2)" class="map-pin talk-pin" x="278" y="107" />
+<title>Talk “246 days working full-time on FOSS: lessons learned” @ PyCon US 1007</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin talk-pin" x="573" y="229" />
-<title>Tutorial “Reimplementing the module itertools for fun &amp; profit” @ PyCon US 2025</title>
+<use href="#pin" transform="scale(2)" class="map-pin talk-pin" x="281" y="109" />
+<title>Tutorial “Reimplementing the module itertools for fun &amp; profit” @ PyCon US 1007</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin talk-pin" x="1028" y="195" />
-<title>Talk “Dipping my toes in metaprogramming” @ PyCon Italy 2025</title>
+<use href="#pin" transform="scale(2)" class="map-pin talk-pin" x="509" y="92" />
+<title>Talk “Dipping my toes in metaprogramming” @ PyCon Italy 1007</title>
 </g>
 
 <g>
-<use href="#pin" class="map-pin talk-pin" x="1033" y="195" />
-<title>Talk “A tour of the module itertools” @ PyCon Italy 2025</title>
+<use href="#pin" transform="scale(2)" class="map-pin talk-pin" x="511" y="92" />
+<title>Talk “A tour of the module itertools” @ PyCon Italy 1007</title>
 </g>
 
 </svg>
