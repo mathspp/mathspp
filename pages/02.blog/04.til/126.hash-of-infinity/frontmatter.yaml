@@ -1,0 +1,20 @@
+date: 20-07-2025 22:18
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned about a Python Easter  Egg hidden in the hash of two special float values."
+    og:image: "https://mathspp.com/blog/hash-of-infinity/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/hash-of-infinity/thumbnail.webp"
+references: []
+routes:
+    aliases:
+        - "/blog/til/126"
+slug: "hash-of-infinity"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - algorithms
+      - mathematics
+      - python
+      - programming
+title: "TIL #126 – Hash of infinity"
+visible: false

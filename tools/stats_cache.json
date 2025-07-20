@@ -5810,5 +5810,48 @@
       "loc": 20,
       "words": 816
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/personal-highlights-of-europython-2025": {
+    "timestamp": 1753043107.1020124,
+    "tags": [
+      "conferences",
+      "opinion",
+      "python"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 0,
+      "loc": 0,
+      "words": 65
+    }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/127.dynamically-changing-the-type": {
+    "timestamp": 1753043622.739069,
+    "tags": [
+      "oop",
+      "programming",
+      "python"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 4,
+      "loc": 14,
+      "words": 108
+    }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/126.hash-of-infinity": {
+    "timestamp": 1753043054.7746549,
+    "tags": [
+      "algorithms",
+      "mathematics",
+      "python",
+      "programming"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 2,
+      "loc": 8,
+      "words": 82
+    }
   }
 }

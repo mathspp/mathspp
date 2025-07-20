@@ -1,9 +1,9 @@
 {
   "__all": {
-    "articles": 412,
-    "code_snippets": 3889,
-    "loc": 37235,
-    "words": 447742
+    "articles": 415,
+    "code_snippets": 3895,
+    "loc": 37257,
+    "words": 447997
   },
   "bpci": {
     "articles": 10,
@@ -24,22 +24,22 @@
     "words": 35302
   },
   "programming": {
-    "articles": 301,
-    "code_snippets": 3755,
-    "loc": 36163,
-    "words": 365160
+    "articles": 303,
+    "code_snippets": 3761,
+    "loc": 36185,
+    "words": 365350
   },
   "python": {
-    "articles": 290,
-    "code_snippets": 3631,
-    "loc": 35036,
-    "words": 357052
+    "articles": 293,
+    "code_snippets": 3637,
+    "loc": 35058,
+    "words": 357307
   },
   "algorithms": {
-    "articles": 24,
-    "code_snippets": 246,
-    "loc": 2984,
-    "words": 28449
+    "articles": 25,
+    "code_snippets": 248,
+    "loc": 2992,
+    "words": 28531
   },
   "llm": {
     "articles": 5,
@@ -72,10 +72,10 @@
     "words": 6484
   },
   "mathematics": {
-    "articles": 121,
-    "code_snippets": 447,
-    "loc": 4441,
-    "words": 108995
+    "articles": 122,
+    "code_snippets": 449,
+    "loc": 4449,
+    "words": 109077
   },
   "number theory": {
     "articles": 8,
@@ -96,10 +96,10 @@
     "words": 24485
   },
   "oop": {
-    "articles": 5,
-    "code_snippets": 147,
-    "loc": 1497,
-    "words": 10562
+    "articles": 6,
+    "code_snippets": 151,
+    "loc": 1511,
+    "words": 10670
   },
   "textual": {
     "articles": 5,
@@ -221,17 +221,23 @@
     "loc": 127,
     "words": 2630
   },
+  "conferences": {
+    "articles": 3,
+    "code_snippets": 1,
+    "loc": 5,
+    "words": 4310
+  },
+  "opinion": {
+    "articles": 7,
+    "code_snippets": 11,
+    "loc": 368,
+    "words": 11989
+  },
   "uv": {
     "articles": 6,
     "code_snippets": 29,
     "loc": 136,
     "words": 2923
-  },
-  "opinion": {
-    "articles": 6,
-    "code_snippets": 11,
-    "loc": 368,
-    "words": 11924
   },
   "geometry": {
     "articles": 17,
@@ -286,12 +292,6 @@
     "code_snippets": 8,
     "loc": 140,
     "words": 1102
-  },
-  "conferences": {
-    "articles": 2,
-    "code_snippets": 1,
-    "loc": 5,
-    "words": 4245
   },
   "automatons": {
     "articles": 2,

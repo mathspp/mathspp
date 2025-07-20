@@ -28,9 +28,9 @@ title: "Programming blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">301</th>
-            <th style="text-align: center;">365,160</th>
-            <th style="text-align: center;">36,163</th>
+            <th style="text-align: center;">303</th>
+            <th style="text-align: center;">365,350</th>
+            <th style="text-align: center;">36,185</th>
         </tr>
     </thead>
     <tbody>
