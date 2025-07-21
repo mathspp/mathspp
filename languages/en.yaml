@@ -2,7 +2,7 @@ RANDOM_SENTENCES:
  # sentences whose # I need to be fixed
  - "<a href='/random-sentences#2'>Sentence #2</a> is false!"
  - "<a href='/random-sentences#1'>Sentence #1</a> is true!"
- # intra-site links
+ # --
  - "(You should c|C)heck out <a href='/blog/regex-printer'>this</a>( awesome)? blog post!+"
  - "Have you ever heard of a <a href='/blog/problems/quarrel-in-the-shire'>maths problem based on Lord of The Rings characters</a>?"
  - "I can't dance but <a href='/blog/problems/a-dancing-triangle'>this</a> triangle sure can!"
@@ -11,27 +11,22 @@ RANDOM_SENTENCES:
  - "Contribute with random sentences <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://github.com/RojerGS/mathspp/blob/master/languages/en.yaml'>here</a>!"
  - "You can use the <a href='/texpaste'>TeX Paste</a> tool to share LaTeX/MathJax equations across the internet."
  - "Feel like exercising your brain? Have a go at one of the <a href='/blog/problems'>problems</a> I have for you."
- # socials
  - "If you like this project, please take the time to give me your feedback! Click the @ below to send me an email."
- - "You can <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://www.facebook.com/mathspp'>like the mathspp page on Facebook</a> so you never miss an update!"
- - "If you <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://twitter.com/@mathsppblog'>follow @mathsppblog on Twitter</a> you will never miss an update!"
+ - "<a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://x.com/@mathsppblog'>Follow @mathsppblog on X/Twitter</a>!"
  - "Whenever I create something new, I share it with my mailing list of loyal readers. You can <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://mathspp.com/subscribe'>subscribe it</a> too!"
  - "<a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://www.instagram.com/mathsppblog/'>Follow @mathsppblog on Instagram</a> to keep up to date with the project!"
- # trivia
  - "The closest thing there is to a Nobel Prize in mathematics is <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://en.wikipedia.org/wiki/Fields_Medal#:~:text=has%20been%20described%20as%20the%20mathematician's%20Nobel%20Prize'>the Fields medal</a>."
  - "The mathematician <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://en.wikipedia.org/wiki/Évariste_Galois'>Évariste Galois</a> died at the age of 20 but not before solving a problem that had been standing for 350 years."
  - "There are seven mathematics problems called <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://en.wikipedia.org/wiki/Millennium_Prize_Problems'>Millenium Prize Problems</a>, each with a $1,000,000 bounty."
  - "Russian mathematician Grigori Perelman <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://en.wikipedia.org/wiki/Grigori_Perelman#Fields_Medal_and_Millennium_Prize'>declined a $1,000,000 prize</a> after solving one of the seven <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://en.wikipedia.org/wiki/Millennium_Prize_Problems'>Millenium Prize Problems</a>."
  - "The number 1 is <i>not</i> a prime number."
  - "Number 73 is a number packed with interesting properties."
- # funny
  - "There's 10 types of people in the world, those who know binary and those who don't."
- - "I hypothesize that somewhere on Earth, someone is reading this sentence."
+ - "I hypothesize that, somewhere on Earth, someone is reading this sentence."
  - "If there is a 50% chance something will go wrong, then 9 times out of 10 it will."
  - "Think of a number between 1 and 10. Multiply it by 9 and subtract 1. Now close your eyes. It got dark, didn't it?"
  - "There are two types of people in the world. Those who can extrapolate when information is missing."
  - "The 2 hardest problems in programming are naming, cache invalidation, and off-by-one errors."
- # misc
  - "<a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://tio.run/##K6gsycjPM/7/v6AoM69EQymjpKSg2EpfPzexJKO4oEAvOT9XSfP/fwA'><code>print(\"https://mathspp.com\")</code></a>"
  - "<a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://tio.run/##HYpBCoBADAMfVJoXhHyk7EEFQQQPgu@v2Z3DEMLs73Y953fc3VGZypJCOSEHba@hhPxbQEQUNGjmxmoT5Gocdf8'><code>+[-->-[>>+>-----<<]<--<---]>-.>>>+.>>..+++[.>]<<<<.+++.------.<<-.>>>>+.</code></a>"
  - "<a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://tio.run/##SyzI0U2pTMzJT////1Hf1EdtE4BkaXKxgtGjjhmPupaCyJ69h1YoPGqbbK6g8ahr0aPeLY96VzzqWqwDpA5vB7GBajoXaSo86u0DKlQ3MDAwNDA0hJAIygBEARnqOkAlIAZE3BDOBFMgjYYgJTAtCP1QRRAe2BQkg@EmwuyBmQ5E6v//AwA'><code>⎕←⎕ucs 2∘⊥∘⌽¨ ↓7 (⊢⍴⍨⊣,⍨÷⍨∘≢) ⍎¨ '0001011001011100101110000111110', '0111010111011110101111010101101', '1100001100101110001011110011100', '0011100001110111010110001111110111011011'</code></a>"
@@ -48,11 +43,9 @@ RANDOM_SENTENCES:
  - "At <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://codegolf.stackexchange.com'>codegolf.stackexchange.com</a>, smaller is better."
  - "Tunnel excavation involves lots of boring mathematics."
  - "Maths is everywhere<sup><a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://xkcd.com/285/'>[citation needed]</a></sup>."
-# "thank you" notes
  - "Thank you <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://github.com/abrudz'>@abrudz</a> for helping me style this."
  - "Thank you <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://github.com/pineman'>@pineman</a> for having hosted and managed my site for so long!"
  - "Thank you <a class='external-link no-image' rel='nofollow noopener noreferrer' target='_blank' href='https://www.youtube.com/channel/UC5RV_s1Jh-jQI4HfexEIb2Q'>MathGurl</a> for having inspired me so much."
-# untranslatable
  - "Are monsters good at maths? Not really, unless you Count Dracula."
  - "What do you call dudes who love maths? Algebros."
  - "Why didn't sin and tan go to the party? Just cos."
