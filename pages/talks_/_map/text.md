@@ -1176,7 +1176,7 @@
 </g>
 
 <g>
-<use href="#pin" class="map-pin talk-pin" x="1050" y="170" />
+<use href="#pin" class="map-pin talk-pin" x="1054" y="168" />
 <title>Talk “A tour of the module itertools” @ EuroPython 2025</title>
 </g>
 
