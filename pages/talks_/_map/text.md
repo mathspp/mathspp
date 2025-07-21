@@ -1,6 +1,6 @@
 <svg baseprofile="tiny" fill="var(--bg)" stroke="var(--tx)" stroke-linecap="round" stroke-linejoin="round" stroke-width=".6" version="1.2" viewbox="0 0 2000 857" xmlns="http://www.w3.org/2000/svg">
 <style>
-/* In-person talks: */
+/* Countries where I've given in-person talks: */
 #PT, /* Portugal */
 #DE, /* Germany */
 #CZ, /* Czech Republick */
@@ -12,7 +12,7 @@
     fill: var(--tx);
 }
 
-/* Remote talks: */
+/* Countries where I've only ever given remote talks: */
 #IN, /* India */
 #LK, /* Sri Lanka */
 #SE, /* Sweden */
@@ -37,11 +37,11 @@
     stroke-linejoin: round;
 }
 </style>
- <defs>
+<defs>
  <g id="pin">
     <path d="M18 9C18 13.7462 14.2456 18.4924 12.6765 20.2688C12.3109 20.6827 11.6891 20.6827 11.3235 20.2688C9.75444 18.4924 6 13.7462 6 9C6 7 7.5 3 12 3C16.5 3 18 7 18 9Z" stroke="var(--bg)" stroke-linejoin="round"></path>
 </g>
- </defs>
+</defs>
 
  <path d="M1383 261.6l1.5 1.8-2.9 0.8-2.4 1.1-5.9 0.8-5.3 1.3-2.4 2.8 1.9 2.7 1.4 3.2-2 2.7 0.8 2.5-0.9 2.3-5.2-0.2 3.1 4.2-3.1 1.7-1.4 3.8 1.1 3.9-1.8 1.8-2.1-0.6-4 0.9-0.2 1.7-4.1 0-2.3 3.7 0.8 5.4-6.6 2.7-3.9-0.6-0.9 1.4-3.4-0.8-5.3 1-9.6-3.3 3.9-5.8-1.1-4.1-4.3-1.1-1.2-4.1-2.7-5.1 1.6-3.5-2.5-1 0.5-4.7 0.6-8 5.9 2.5 3.9-0.9 0.4-2.9 4-0.9 2.6-2-0.2-5.1 4.2-1.3 0.3-2.2 2.9 1.7 1.6 0.2 3 0 4.3 1.4 1.8 0.7 3.4-2 2.1 1.2 0.9-2.9 3.2 0.1 0.6-0.9-0.2-2.6 1.7-2.2 3.3 1.4-0.1 2 1.7 0.3 0.9 5.4 2.7 2.1 1.5-1.4 2.2-0.6 2.5-2.9 3.8 0.5 5.4 0z" id="AF" name="Afghanistan">
  </path>

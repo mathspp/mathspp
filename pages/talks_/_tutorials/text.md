@@ -11,8 +11,8 @@
 | 18-07-2023 | EuroPython 2023 | [Practical introduction to descriptors](https://ep2023.europython.eu/session/practical-introduction-to-descriptors) | [Link](https://mathspp.com/blog/pydonts/describing-descriptors) |
 | 17-07-2023 | EuroPython 2023 | [Build a terminal TODO app with Textual](https://ep2023.europython.eu/session/build-a-terminal-todo-app-with-textual) | [Link](https://mathspp.com/blog/textual-for-beginners) |
 | 12-07-2022 | EuroPython 2022 | [Python objects under the hood](https://ep2022.europython.eu/session/python-objects-under-the-hood) | [Link](https://mathspp.com/blog/pydonts/dunder-methods) |
-| 15-12-2021 | New Zealand Python User Group | Python objects under the hood [Link](https://mathspp.com/blog/pydonts/dunder-methods) |
-| 15-12-2021 | New Zealand Python User Group | Your first Python class - |
+| 15-12-2021 | New Zealand Python User Group | Python objects under the hood | [Link](https://mathspp.com/blog/pydonts/dunder-methods) |
+| 15-12-2021 | New Zealand Python User Group | Your first Python class | - |
 | 27-07-2021 | EuroPython 2021 | [Implementing a Neural Network from Scratch](https://ep2021.europython.eu/talks/4hDJyV5-implementing-a-neural-network-from-scratch/) | [Link](https://mathspp.com/blog/tag:nnfwp) |
 
 [^1]: You can [watch this session on YouTube](https://www.youtube.com/watch?v=M4CGalfUj0E).
