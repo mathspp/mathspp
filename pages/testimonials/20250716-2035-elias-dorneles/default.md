@@ -1,5 +1,5 @@
 ---
-company_and_title: 
+company_and_title: <a href="/drops">Python drops</a> subscriber
 date: "2025-07-16 20:35"
 name: Elias Dorneles
 # link:
@@ -8,7 +8,8 @@ taxonomy:
     category: review
     review-tag:
       - newsletter
-published: false
+      - newsletter-drops
+published: true
 ---
 
 I very much enjoy receiving Rodrigo's Python tips on my email.
