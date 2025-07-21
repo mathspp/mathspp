@@ -7,11 +7,7 @@
 #LT, /* Lithuania */
 #IE, /* Ireland */
 .USA,
-.Italy
-{
-    fill: var(--ui);
-}
-
+.Italy,
 /* Countries where I've only ever given remote talks: */
 #IN, /* India */
 #LK, /* Sri Lanka */
@@ -20,6 +16,10 @@
 .NewZealand
 {
     fill: var(--ui);
+
+    &:hover {
+        fill: var(--tx);
+    }
 }
 
 .talk-pin {
