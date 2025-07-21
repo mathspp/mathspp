@@ -1,4 +1,33 @@
-<svg baseprofile="tiny" fill="var(--bg)" stroke="var(--tx)" stroke-linecap="round" stroke-linejoin="round" stroke-width=".6" version="1.2" viewbox="0 0 2000 857" xmlns="http://www.w3.org/2000/svg" style="position: absolute; left: 0; width:100vw">
+
+<!--
+*************Map created by Simplemaps.com********************		
+*************Attribution is highly appreciated!***************
+*************http://simplemaps.com****************************
+
+The MIT License (MIT)
+
+Copyright (c) 2020 Pareto Softare, LLC DBA Simplemaps.com
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+-->
+<svg baseprofile="tiny" fill="var(--bg)" stroke="var(--tx)" stroke-linecap="round" stroke-linejoin="round" stroke-width=".6" version="1.2" viewbox="0 0 2000 857" xmlns="http://www.w3.org/2000/svg">
  <style>
 /* In-person talks: */
 #PT, /* Portugal */
@@ -9,7 +38,7 @@
 .USA,
 .Italy
 {
-    fill: var(--tx);
+    fill: blue;
 }
 
 /* Remote talks: */
@@ -19,15 +48,15 @@
 .Canada,
 .NewZealand
 {
-    fill: var(--tx);
+    fill: darkblue;
 }
 
 .talk-pin {
-    fill: var(--accent);
+    fill: red;
 }
 
 .remote-talk-pin {
-    fill: var(--accent-2);
+    fill: purple;
 }
 
 .talk-pin,
@@ -1166,18 +1195,3 @@
 </g>
 
 </svg>
-
-<script src="https://unpkg.com/@popperjs/core@2"></script>
-<script src="https://unpkg.com/tippy.js@6"></script>
-<script>
-  tippy('.map-pin', {
-    content(reference) {
-      return reference.parentNode.querySelector('title').textContent;
-    },
-    allowHTML: true,
-    animation: 'scale',
-    arrow: true,
-  });
-</script>
-
-

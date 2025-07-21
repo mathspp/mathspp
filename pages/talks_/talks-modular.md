@@ -10,7 +10,9 @@ content:
           - "_talks"
           - "_tutorials"
           - "_lightning-talks"
+          - "_map_intro"
           - "_map"
+          - "_map_outro"
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "Overview of all the talks I have given and other public speaking appearances."
