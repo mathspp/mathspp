@@ -1,5 +1,8 @@
 ## 🎙️ Talks
 
+This table lists the talks I've given at Python conferences and meetups.
+Whenever possible, I include a link to the original session page, to the recording of the talk, and to the main reference I used when creating the talk.
+
 | Date | Conference | Talk title | Watch | Reference |
 | :- | :- | :- | :- | :- |
 | 17-07-2025 | EuroPython 2025 | [A tour of the module `itertools`](https://ep2025.europython.eu/session/a-tour-of-the-module-itertools) | TBA | [Blog article](https://mathspp.com/blog/module-itertools-overview) |
@@ -17,10 +20,10 @@
 | 12-11-2023 | PyCon Ireland 2023 | [Describing Descriptors](http://pycon.ie/pycon-2023/schedule/) | [YouTube](https://www.youtube.com/watch?v=eXkBfRqJ2f8) | [Blog article](https://mathspp.com/blog/pydonts/describing-descriptors) |
 | 08-09-2023 | PyCon Portugal 2023 | [Comprehending comprehensions](https://pretalx.evolutio.pt/pycon-pt-2023/talk/FMZMGP/) | [YouTube](https://www.youtube.com/watch?v=5fGrtPP_4G0) | [Book](https://mathspp.com/comprehending-comprehensions) |
 | 15-08-2023 | Func Prog Sweden meetup | [How APL made me a better Python developer](https://www.meetup.com/func-prog-sweden/events/294451071/) | [YouTube](https://youtu.be/tDy-to9fgaw?t=140) | [Link](https://mathspp.com/blog/what-learning-apl-taught-me-about-python) |
-| 20-07-2023 | EuroPython 2023 | [You DON'T know comprehensions](https://ep2023.europython.eu/session/you-dont-know-comprehensions) | - | [Book](https://mathspp.com/comprehending-comprehensions) |
+| 20-07-2023 | EuroPython 2023 | [You DON'T know comprehensions](https://ep2023.europython.eu/session/you-dont-know-comprehensions) [^2] | - | [Book](https://mathspp.com/comprehending-comprehensions) |
 | 20-07-2023 | EuroPython 2023 | [How dunder methods rule Python under the hood](https://ep2023.europython.eu/session/how-dunder-methods-rule-python-under-the-hood) | [YouTube](https://mathspp.com/talks#how-dunder-methods-rule-python-under-the-hood) | [Link](https://mathspp.com/blog/pydonts/dunder-methods) |
 | 25-05-2023 | PyCon Sri Lanka 2023 | [Describing Descriptors](https://pycon.lk/#agenda) | [YouTube](https://www.youtube.com/watch?v=zCtyQS-c4dg&t=98s) | [Link](https://mathspp.com/blog/pydonts/describing-descriptors) |
-| 24-09-2022 | PyCon Portugal 2022 | Pydon'ts – Write elegant Python code v4[^1] | [YouTube](https://youtu.be/ETg64K32Okc) | - |
+| 24-09-2022 | PyCon Portugal 2022 | Pydon'ts – Write elegant Python code v4 [^1] | [YouTube](https://youtu.be/ETg64K32Okc) | - |
 | 30-07-2022 | PyOhio 2022 | [Comprehending Comprehensions](https://www.pyohio.org/2022/program/talks/comprehending-comprehensions) | [YouTube](https://www.youtube.com/watch?v=ScsElLE_Pak) | [Book](https://gum.co/comprehending-comprehensions) |
 | 25-03-2022 | FnConf 2022 | [Why APL is a language worth knowing](https://confengine.com/conferences/functional-conf-2022/proposal/16278/why-apl-is-a-language-worth-knowing) | [YouTube](https://www.youtube.com/watch?v=j-qlYcIl61o) | [Link](https://mathspp.com/blog/why-apl-is-a-language-worth-knowing) |
 | 22-02-2022 | PyCon Sri Lanka 2022 | [Pydon'ts – Write elegant Python code v3](https://pycon.lk/2022/#agenda) | [YouTube](https://youtu.be/Bdunek7Q8Ss?t=90) | [Link](https://mathspp.com/blog/enumerate-from-first-principles) |
@@ -30,3 +33,4 @@
 | 28-07-2021 | EuroPython 2021 | [Pydon'ts – Write elegant Python code](https://ep2021.europython.eu/talks/Bz5dtEe-pydonts/) | [YouTube](https://www.youtube.com/watch?v=Vjq89-spPOk) | - |
 
 [^1]: I was scheduled to present at around 2pm but had a family emergency and couldn't make it to the conference. I recorded my talk after the conference and shared it online.
+[^2]: Technically speaking, this was a poster presentation and not a talk.

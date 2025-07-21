@@ -1,5 +1,7 @@
 ## ⚡ Lightning talks
 
+Lightning talks are one of my favourite parts of all the Python conferences I go to and this table contains the lightning talks I've given at different conferences over the years.
+
 | Date | Conference | Talk title | Watch | Reference |
 | :- | :- | :- | :- | :- |
 | 29-05-2025 | PyCon Italia 2025 | What the partial? | [YouTube](https://youtu.be/LpGW2Wwxlug?t=85) | [Blog article](https://mathspp.com/blog/functools-partial) |

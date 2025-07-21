@@ -1061,6 +1061,11 @@
 </g>
 
 <g>
+<use href="#pin" class="map-pin talk-pin" x="1052" y="164" />
+<title>Poster presentation “You DON'T know comprehensions” @ EuroPython 2023</title>
+</g>
+
+<g>
 <use href="#pin" class="map-pin talk-pin" x="1055" y="164" />
 <title>Tutorial “Practical introduction to descriptors” @ EuroPython 2023</title>
 </g>

@@ -1,5 +1,3 @@
 ## Speaking all over the world
 
-The map below shows the distribution of my talks over the world.
-(The map isn't complete yet.)
-
+The map below shows the distribution of my talks and tutorials (but not the lightning talks!) over the world.
