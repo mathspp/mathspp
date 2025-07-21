@@ -7,6 +7,7 @@ content:
         custom:
           - "_hero"
           - "_intro"
+          - "_talks"
           - "_map"
 metadata:
     author: "Rodrigo Girão Serrão"
