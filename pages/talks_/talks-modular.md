@@ -8,6 +8,8 @@ content:
           - "_hero"
           - "_intro"
           - "_talks"
+          - "_tutorials"
+          - "_lightning-talks"
           - "_map"
 metadata:
     author: "Rodrigo Girão Serrão"

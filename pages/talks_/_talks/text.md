@@ -1,6 +1,6 @@
 ## 🎙️ Talks
 
-| Date | Conference | Talk title | Recording | Written version |
+| Date | Conference | Talk title | Watch | Reference |
 | :- | :- | :- | :- | :- |
 | 17-07-2025 | EuroPython 2025 | [A tour of the module `itertools`](https://ep2025.europython.eu/session/a-tour-of-the-module-itertools) | TBA | [Blog article](https://mathspp.com/blog/module-itertools-overview) |
 | 31-05-2025 | PyCon Italia 2025 | [A tour of the module `itertools`](https://2025.pycon.it/en/event/a-tour-of-the-module-itertools) | TBA | [Blog article](https://mathspp.com/blog/module-itertools-overview) |
