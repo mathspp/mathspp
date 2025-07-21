@@ -1,3 +1,20 @@
 # Talks & tutorials
 
-## 26 talks, 12 tutorials, 29 events, 12 countries
+<table class="stats-table">
+    <thead>
+        <tr>
+            <th style="text-align: center;">26</th>
+            <th style="text-align: center;">12</th>
+            <th style="text-align: center;">29</th>
+            <th style="text-align: center;">12</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: center;">talks</td>
+            <td style="text-align: center;">tutorials</td>
+            <td style="text-align: center;">events</td>
+            <td style="text-align: center;">countries</td>
+        </tr>
+    </tbody>
+</table>
