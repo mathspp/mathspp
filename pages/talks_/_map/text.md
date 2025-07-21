@@ -992,47 +992,47 @@
 
 <g>
 <use href="#pin" class="map-pin remote-talk-pin" x="798" y="45" />
-<title>Talk “Pydon'ts – Write elegant Python code” @ EuroPython 2021</title>
+<title>Remote talk “Pydon'ts – Write elegant Python code” @ EuroPython 2021</title>
 </g>
 
 <g>
 <use href="#pin" class="map-pin remote-talk-pin" x="448" y="230" />
-<title>Talk “Pydon'ts – Write elegant Python code v1.1” @ DjangoCon US 2021</title>
+<title>Remote talk “Pydon'ts – Write elegant Python code v1.1” @ DjangoCon US 2021</title>
 </g>
 
 <g>
 <use href="#pin" class="map-pin remote-talk-pin" x="838" y="50" />
-<title>Tutorial “Implementing a Neural Network from Scratch” @ EuroPython 2021</title>
+<title>Remote tutorial “Implementing a Neural Network from Scratch” @ EuroPython 2021</title>
 </g>
 
 <g>
 <use href="#pin" class="map-pin remote-talk-pin" x="808" y="55" />
-<title>Talk “Pydon'ts – Write elegant Python code v2” @ Pyjamas Conf 2021</title>
+<title>Remote talk “Pydon'ts – Write elegant Python code v2” @ Pyjamas Conf 2021</title>
 </g>
 
 <g>
 <use href="#pin" class="map-pin remote-talk-pin" x="1895" y="730" />
-<title>Tutorial “Your first Python class” @ New Zealand Python User Group</title>
+<title>Remote tutorial “Your first Python class” @ New Zealand Python User Group</title>
 </g>
 
 <g>
 <use href="#pin" class="map-pin remote-talk-pin" x="1890" y="735" />
-<title>Tutorial “Python objects under the hood” @ New Zealand Python User Group</title>
+<title>Remote tutorial “Python objects under the hood” @ New Zealand Python User Group</title>
 </g>
 
 <g>
 <use href="#pin" class="map-pin remote-talk-pin" x="458" y="120" />
-<title>Talk “Fifty shades of sign” @ PyCascades 2022</title>
+<title>Remote talk “Fifty shades of sign” @ PyCascades 2022</title>
 </g>
 
 <g>
 <use href="#pin" class="map-pin remote-talk-pin" x="1433" y="440" />
-<title>Talk “Pydon'ts – Write elegant Python code v3” @ PyCon Sri Lanka 2022</title>
+<title>Remote talk “Pydon'ts – Write elegant Python code v3” @ PyCon Sri Lanka 2022</title>
 </g>
 
 <g>
 <use href="#pin" class="map-pin remote-talk-pin" x="1410" y="355" />
-<title>Talk “Why APL is a language worth knowing” @ FnConf 2022</title>
+<title>Remote talk “Why APL is a language worth knowing” @ FnConf 2022</title>
 </g>
 
 <g>
@@ -1042,17 +1042,17 @@
 
 <g>
 <use href="#pin" class="map-pin remote-talk-pin" x="548" y="230" />
-<title>Talk “Comprehending Comprehensions” @ PyOhio 2022</title>
+<title>Remote talk “Comprehending Comprehensions” @ PyOhio 2022</title>
 </g>
 
 <g>
 <use href="#pin" class="map-pin remote-talk-pin" x="937" y="220" />
-<title>Talk “Pydon'ts – Write elegant Python code v4” @ PyCon Portugal 2022</title>
+<title>Remote talk “Pydon'ts – Write elegant Python code v4” @ PyCon Portugal 2022</title>
 </g>
 
 <g>
 <use href="#pin" class="map-pin remote-talk-pin" x="1428" y="430" />
-<title>Talk “Describing Descriptors” @ PyCon Sri Lanka 2023</title>
+<title>Remote talk “Describing Descriptors” @ PyCon Sri Lanka 2023</title>
 </g>
 
 <g>
@@ -1072,7 +1072,7 @@
 
 <g>
 <use href="#pin" class="map-pin remote-talk-pin" x="1040" y="100" />
-<title>Talk “How APL made me a better Python developer” @ Func Prog Sweden meetup</title>
+<title>Remote talk “How APL made me a better Python developer” @ Func Prog Sweden meetup</title>
 </g>
 
 <g>
@@ -1142,7 +1142,7 @@
 
 <g>
 <use href="#pin" class="map-pin remote-talk-pin" x="788" y="65" />
-<title>Talk “Understanding Polars data types” @ PyData Global 2024</title>
+<title>Remote talk “Understanding Polars data types” @ PyData Global 2024</title>
 </g>
 
 <g>
