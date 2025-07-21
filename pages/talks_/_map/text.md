@@ -1,3 +1,8 @@
+## Speaking all over the world
+
+The map below shows the distribution of my talks over the world.
+(The map isn't complete yet.)
+
 <svg baseprofile="tiny" fill="var(--bg)" stroke="var(--tx)" stroke-linecap="round" stroke-linejoin="round" stroke-width=".6" version="1.2" viewbox="0 0 2000 857" xmlns="http://www.w3.org/2000/svg">
  <style>
 /* In-person talks: */
@@ -9,7 +14,7 @@
 .USA,
 .Italy
 {
-    fill: blue;
+    fill: var(--tx);
 }
 
 /* Remote talks: */
@@ -19,15 +24,15 @@
 .Canada,
 .NewZealand
 {
-    fill: darkblue;
+    fill: var(--tx);
 }
 
 .talk-pin {
-    fill: red;
+    fill: var(--accent);
 }
 
 .remote-talk-pin {
-    fill: purple;
+    fill: var(--accent-2);
 }
 
 .talk-pin,
@@ -1167,11 +1172,8 @@
 
 </svg>
 
-
-
-
 Map by simplemaps.
-Pin locations reflect the country the talk was in.
+Pin locations are only accurate up to the country they're placed in.
 
 
 <script src="https://unpkg.com/@popperjs/core@2"></script>
