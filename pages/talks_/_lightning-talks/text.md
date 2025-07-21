@@ -1,6 +1,6 @@
 ## ⚡ Lightning talks
 
-| Date | Conference | Talk title | Watch | Written version |
+| Date | Conference | Talk title | Watch | Reference |
 | :- | :- | :- | :- | :- |
 | 29-05-2025 | PyCon Italia 2025 | What the partial? | [YouTube](https://youtu.be/LpGW2Wwxlug?t=85) | [Blog article](https://mathspp.com/blog/functools-partial) |
 | 16-05-2025 | PyCon US 2025 | [Meta lightning talk](https://us.pycon.org/2025/schedule/presentation/168/) | [YouTube](https://youtu.be/Uuhu-F05A7k?t=125) | - |
