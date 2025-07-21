@@ -1,4 +1,4 @@
-<svg baseprofile="tiny" fill="var(--bg)" stroke="var(--tx)" stroke-linecap="round" stroke-linejoin="round" stroke-width=".6" version="1.2" viewbox="0 0 2000 857" xmlns="http://www.w3.org/2000/svg">
+<svg baseprofile="tiny" fill="var(--bg)" stroke="var(--tx)" stroke-linecap="round" stroke-linejoin="round" stroke-width=".6" version="1.2" viewbox="0 0 2000 857" xmlns="http://www.w3.org/2000/svg" style="position: absolute; left: 0; width:100vw">
 <style>
 /* In-person talks: */
 #PT, /* Portugal */
