@@ -9,7 +9,7 @@
 .USA,
 .Italy
 {
-    fill: var(--tx);
+    fill: var(--accent);
 }
 
 /* Countries where I've only ever given remote talks: */
@@ -19,15 +19,15 @@
 .Canada,
 .NewZealand
 {
-    fill: var(--tx);
-}
-
-.talk-pin {
     fill: var(--accent);
 }
 
+.talk-pin {
+    fill: var(--tx);
+}
+
 .remote-talk-pin {
-    fill: var(--accent-2);
+    fill: var(--tx);
 }
 
 .talk-pin,
