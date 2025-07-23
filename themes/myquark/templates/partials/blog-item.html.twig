@@ -2,10 +2,11 @@
 
 {% if not hero_image_name %}
     <div class="content-title text-center">
-        {% include 'partials/blog/title.html.twig' with {title_level: 'h2'} %}
+        {% include 'partials/blog/title.html.twig' with {title_level: 'h1'} %}
         {% if page.header.subtitle %}
-        <h3 >{{ page.header.subtitle }}</h3>
+        <h2>{{ page.header.subtitle }}</h2>
         {% endif %}
+        {{ page.summary|raw }}
         {% include 'partials/blog/date.html.twig' %}
         {% if page.header.updated %}
             {% include 'partials/blog/last-edited.html.twig' %}
@@ -14,7 +15,6 @@
     </div>
 {% endif %}
     <div class="e-content">
-        {{ page.summary|raw }}
         {% include 'partials/blog/announcement.html.twig' %}
         {{ page.content|slice(page.summary|length)|raw }}
         {% include 'partials/blog/call-to-action.html.twig' %}
