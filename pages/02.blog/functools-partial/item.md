@@ -2,9 +2,6 @@ This article teaches you how to use `functools.partial`, how it works, and when 
 
 ===
 
-
-# `functools.partial`
-
 ## What is `functools.partial`?
 
 `functools.partial` is a tool from the standard module `functools` that allows you to curry positional and keyword arguments in functions.
