@@ -2,9 +2,6 @@ The function `random.shuffle` relies on the mutability of the argument and mutab
 
 ===
 
-
-# Mutability and `random.shuffle`
-
 The function `random.shuffle` shuffles its argument in place, which means it relies on the mutability of the argument.
 This can introduce bugs if care is not taken.
 Consider the snippet of code that follows:

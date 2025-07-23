@@ -5,7 +5,7 @@ Can you show that perfect compression is impossible?
 ![](thumbnail.png "Photo by Rui Matayoshi on Unsplash.")
 
 
-# Problem statement
+## Problem statement
 
 Compression is great: it is what lets you take that giant folder you have and reduce its size to save some memory on your laptop.
 Of course, you only do these compressions happily because you know you don't lose information when you compress things.
@@ -37,7 +37,7 @@ but maybe the mechanism fails on `AAAAAA` because it “compresses” it into `a
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
@@ -48,7 +48,7 @@ Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
 
 
-# Solution
+## Solution
 
 Let's assume that there _is_ a perfect compression algorithm.
 For the empty sequence, what does this algorithm do?

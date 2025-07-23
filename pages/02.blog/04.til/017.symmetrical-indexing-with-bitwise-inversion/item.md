@@ -7,7 +7,7 @@ Today I learned about the symmetry in indexing from the beginning and end of a l
 ![The text “~i” inside a pair of square brackets in front of a highly geometrical building.](thumbnail.webp)
 
 
-# Negative indexing
+## Negative indexing
 
 As you might be aware of, Python allows indexing with negative indices:
 
@@ -39,7 +39,7 @@ By looking at the correspondences above,
 we can see that the positive index `n` pairs up with the index `-n - 1`.
 
 
-# Bitwise invert
+## Bitwise invert
 
 Python has a couple of bitwise operations, one of them being bitwise invert `~`.
 Bitwise invert `~n` is defined as `-(n+1)`:
@@ -60,7 +60,7 @@ Bitwise invert `~n` is defined as `-(n+1)`:
 Now, maybe you can see where I'm going with this, but `-(n+1)` simplifies to `-n - 1`.
 
 
-# Symmetrical indexing with bitwise inversion
+## Symmetrical indexing with bitwise inversion
 
 If we put these two pieces of knowledge together,
 we can see how we can use bitwise inversion `~` to index symmetrically from the beginning

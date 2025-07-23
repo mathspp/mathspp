@@ -11,7 +11,7 @@ Today I learned about the built-in function `vars` in Python.
 ![Example usage of `vars` in the Python REPL.](thumbnail.webp)
 
 
-# `vars`
+## `vars`
 
 Python has a bunch of built-in functions.
 Like, a lot!

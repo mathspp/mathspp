@@ -5,7 +5,7 @@ The Zen of Python says “there should be one -- and preferably only one -- obvi
 ![](thumbnail.png "My speaker card for the PyCascades conference.")
 
 
-# Preamble
+## Preamble
 
 This article is the written version of my talk entitled “50 shades of `sign`”
 that I gave for the 2022 edition of the [PyCascades][pycascades] conference.
@@ -14,7 +14,7 @@ The slide deck can be found in [this GitHub repository][talk-gh]
 and the recording can be watched [on YouTube][talk-yt].
 
 
-# 50 shades of `sign`
+## 50 shades of `sign`
 
 The other day I was writing some maths-adjacent code for an algorithm,
 and at some point I needed the function `sign`.

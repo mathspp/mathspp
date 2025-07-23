@@ -10,7 +10,7 @@ Figure out the number I'm thinking of with a single question!
 
 ![The numbers 1, 2, and 3, in a picture.](thumbnail.png "Cropped from a photograph by Charlie Wollborg on Unsplash.")
 
-# Problem statement
+## Problem statement
 
 I'm thinking of a number amongst 1, 2, and 3.
 You are allowed to ask me a single question, to which I will truthfully answer
@@ -25,7 +25,7 @@ If you need any clarification whatsoever, feel free to ask in the comment sectio
 (I originally found this puzzle on [Reddit][reddit-source].)
 
 
-# Solvers
+## Solvers
 
 Know how to solve this?
 Be the first to join the list of solvers by [emailing me][email] your solution!
@@ -52,7 +52,7 @@ who sent me their correct solutions:
 Join the list of solvers by [emailing me][email] your solution!
 
 
-# Solution
+## Solution
 
 **Lots** of people sent in their solutions and I was very pleased
 with the amount of different solutions people came up with!

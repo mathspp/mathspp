@@ -15,7 +15,7 @@ Once again I bring you a problem alongside my proposed solution. If you find any
 <!-- ^ -->
 
 
-# Problem statement
+## Problem statement
 
 The Shire is a lovely place where $N$ Hobbits live in perfect harmony. Or at least they lived, until a Hobbit decided to become an outside decorator and convinced some of his friends to paint their front doors with a very _fashionable_ purple (all doors were yellow before that preposterous change).
 
@@ -34,7 +34,7 @@ If you need any clarification whatsoever, feel free to ask in the comment sectio
 !!!! **Hint**: look for a "semi-invariant"; a quantity that can only change in a certain way, which allows you to verify that Gandalf will rest eventually.
 
 
-# Solution
+## Solution
 
 Gandalf's task always has an end. To see why, imagine the $N$ Hobbits represented as dots, and every two Hobbits are connected by a line. That line is green if they are friendly towards each other (their front doors have the same colour) and red if their front doors have different colours. Now count the number of red lines in that representation and call it $R_0$, where the $0$ indicates the number of visits Gandalf has already paid to the Hobbits. If Gandalf already visited $t$ Hobbits, let $R_t$ denote the number of red lines in the representation I defined earlier.
 
@@ -46,7 +46,7 @@ It should be fairly easy to see that we have $R_{t+1} \leq R_t$. This is true be
 Either way, we can see that another complete round of visits by Gandalf would change nothing, and thus Gandalf can now rest.
 
 
-# Bonus question
+## Bonus question
 
 Is there a value of $N > 1$ and a colour configuration such that the second bullet point happens?
 That is, Gandalf's visits become irrelevant at some point but not all Hobbits are friends with each other?

@@ -3,7 +3,7 @@ This is the story of how I started contributing to open source and, in particula
 ===
 
 
-# Preamble
+## Preamble
 
 I am trying to get my feet wet in the world of open source.
 While I have a couple of contributions under my belt,
@@ -12,7 +12,7 @@ So, I decided to reach out to [Will McGugan][will] and ask if Will knew of any s
 Will suggested I take a look at [issue #2073][gh-2073] of `rich`, so that's what I am going to be doing.
 
 
-# Setting up the environment
+## Setting up the environment
 
 The first thing I do to start work is clone the repository into my machine:
 
@@ -41,7 +41,7 @@ poetry shell
 Now, I have an environment where I can play with the current version of `rich` and where I can make sure I understand the issue before I try to fix it.
 
 
-# Understanding issue 2073
+## Understanding issue 2073
 
 The next step in making my contribution is making sure I understand the issue I am handling.
 
@@ -151,7 +151,7 @@ And this output looks a bit misaligned.
 I am not sure if the solution would be to have the output be:
 
 ```py
-# Possible output:
+## Possible output:
 >>> pprint(d)
 {'foo': 'bar', 'zeroes': array([[0., 0., 0., 0.],
                          │      [0., 0., 0., 0.],
@@ -188,7 +188,7 @@ and I might make educated guess that turn out to be wrong.
 We'll see!)
 
 
-# Testing my hypothesis
+## Testing my hypothesis
 
 To check if I am not completely wrong here,
 I'll create a very simple class that has a multi-line representation.
@@ -241,7 +241,7 @@ First, with my wide terminal:
 
 ```py
 >>> d = {"foo": "bar", "mr": MR(3), 42: 73}
-# Wide terminal
+## Wide terminal
 >>> pprint(d)
 {'foo': 'bar', 'mr': X   | line 0
 │   | line 1
@@ -255,7 +255,7 @@ but the pair `42: 73` looks really awkward when in the same line as the third li
 If I make my terminal shorter, the output is a bit less awkward:
 
 ```py
-# Thin terminal
+## Thin terminal
 >>> pprint(d)
 {
 │   'foo': 'bar',
@@ -271,7 +271,7 @@ Now the output looks less awkward, but the `repr` for `MR(3)` is still misaligne
 So, what would we want the output to look like in these cases?
 
 
-# Expected behaviour
+## Expected behaviour
 
 If you identify a bug, that's because the program you are running didn't run the way you expected...
 So, that always begs the question: what **did** you expect?
@@ -406,7 +406,7 @@ In that case, maybe we could get away with inlining everything:
 
 ```py
 >>> d = {"foo": "bar", 42: 73, "mr": MR(3)}
-# Wide terminal
+## Wide terminal
 >>> pprint(d)
 {'foo': 'bar', 42: 73, 'mr': X   | line 0
                                  | line 1
@@ -424,7 +424,7 @@ This is what we have, so far, on how the output of multi-line representations sh
 Now that we have decided what we want to do, it is time to start taking care of it!
 
 
-# Test the expected behaviour
+## Test the expected behaviour
 
 Rich is thoroughly tested, which means I will have to write a couple of tests that make sure my change(s) work as expected.
 So, one thing I could do (following TDD – test driven development) is write some tests that check the behaviours outlined above.
@@ -460,7 +460,7 @@ So, I decided to open the REPL and see what `pretty_repr` does:
 ```py
 >>> help(pretty_repr)
 Help on function pretty_repr in module rich.pretty:
-# ...
+## ...
     Prettify repr string by expanding on to new lines to fit within a given width.
 ```
 
@@ -497,7 +497,7 @@ git checkout -b 2073-multiline-repr
 ```
 
 
-## Test against `pretty_repr`
+### Test against `pretty_repr`
 
 The first thing I did was create two dummy classes that don't do much,
 other than having a `repr` that spans multiple lines.
@@ -509,7 +509,7 @@ Other tests define functions in-line, but those are all different from test to t
 Here are the two classes I defined:
 
 ```py
-# Define two simples classes used when testing multi-line repr-related things.
+## Define two simples classes used when testing multi-line repr-related things.
 class L2:
     def __repr__(self):
         return "X v\n  ^"
@@ -684,7 +684,7 @@ First, I want to discover where those vertical guidelines get added.
 Now, we can either do that, or we can start fixing `pretty_repr` to return the appropriate pretty representations.
 
 
-# Tracing through the code
+## Tracing through the code
 
 Having written some tests that `pretty_repr` is supposed to pass,
 now I need to go and find how the function `pretty_repr` works.
@@ -761,7 +761,7 @@ So, it seems like the list `lines` will be holding the lines that we want to pri
  They all pair nicely with what is being done to the variable `line`:
 
 ```py
-# ...
+## ...
 if line.expandable and not line.expanded:
     if expand_all or not line.check_length(max_width):
         ... = line.expand(indent_size)
@@ -827,7 +827,7 @@ So, it might be that I need to change the way instances of `_Line` are converted
 Next up? Messing with the code.
 
 
-# Messing with the code
+## Messing with the code
 
 The first thing I did was to go to the end of the code,
 where you can find the conditional statement `if __name__ == "__main__":`,
@@ -862,7 +862,7 @@ python -m rich.pretty
 to play around with my changes quickly.
 
 
-## Indentation
+### Indentation
 
 Let's see if we can fix the indentation of the successive lines,
 and we'll handle whatever issues pop up along the way.
@@ -1055,7 +1055,7 @@ we get the correct output:
 ```
 
 
-## Automatic expansion
+### Automatic expansion
 
 It seems like the indentation is fixed,
 but I only got the indentation right because I forced `pretty_repr` to expand everything.

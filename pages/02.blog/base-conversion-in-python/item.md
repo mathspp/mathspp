@@ -6,8 +6,6 @@ This article shows how to do base conversions in Python with the built-in int, h
 <script async src="https://unpkg.com/@antonz/codapi@0.12.2/dist/snippet.js"></script>
 
 
-# Base conversion in Python
-
 In this article I'll assume you know what a number base is and how there are multiple number bases.
 My focus will be on showing you the tools that Python provides to work with multiple number bases, an in particular with the binary, octal, decimal, and hexadecimal, number bases.
 

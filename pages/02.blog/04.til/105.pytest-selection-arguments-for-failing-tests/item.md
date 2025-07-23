@@ -3,7 +3,7 @@ Today I learned about 5 useful pytest options that let me control what tests to 
 ===
 
 
-# pytest selection arguments for failing tests
+## pytest selection arguments for failing tests
 
 Florian Bruhin shared a pytest tip on X / Twitter the other day regarding command line options that pytest accepts and that control how pytest handles failed tests.
 He shared the following _very_ illustrative diagram:
@@ -13,7 +13,7 @@ He shared the following _very_ illustrative diagram:
 I think the diagram is so good that I could essentially stop the article here and we all would've understood the options.
 But I'll be just a little bit more verbose and explain how each option works.
 
-## `--maxfail`
+### `--maxfail`
 
 Create the following file `test.py` with 4 failing tests:
 
@@ -43,7 +43,7 @@ FAILED test.py::test_2 - assert False
 ```
 
 
-## `--stepwise`
+### `--stepwise`
 
 The option `--stepwise` stop at each failure and every time you rerun, it picks up from where it left off.
 Starting with the file from the previous example, if you run `pytest test.py --stepwise`, we stop immediately at the first failure:
@@ -101,7 +101,7 @@ FAILED test.py::test_3 - assert False
 
 Now, if we clear the pytest cache with `rm -rf .pytest_cache` and rerun with `pytest test.py --stepwise`, we see that we run the first three tests, stopping at `test_3` because that test is still failing.
 
-## `--new-first`
+### `--new-first`
 
 At this point, even though we have a couple of failing tests, let us add a new (passing) test:
 
@@ -119,7 +119,7 @@ test.py::test_1 PASSED                   [ 40%]
 test.py::test_2 PASSED                   [ 60%]
 test.py::test_3 FAILED                   [ 80%]
 test.py::test_4 FAILED                   [100%]
-# ...
+## ...
 ```
 
 Note that `test_5` is shown first, at the top of the list.
@@ -128,7 +128,7 @@ If we rerun the tests now, regardless of whether we use `--new-first` or not, th
 ```
 ❯ pytest test.py -vv --new-first
 ============= test session starts ==============
-# ...
+## ...
 
 test.py::test_1 PASSED                   [ 20%]
 test.py::test_2 PASSED                   [ 40%]
@@ -137,7 +137,7 @@ test.py::test_4 FAILED                   [ 80%]
 test.py::test_5 PASSED                   [100%]
 ```
 
-## `--last-failed`
+### `--last-failed`
 
 The option `--last-failed` will rerun only the tests that failed in the previous test session.
 At this point, those would be `test_3` and `test_4`:
@@ -145,19 +145,19 @@ At this point, those would be `test_3` and `test_4`:
 ```
 ❯ pytest test.py --last-failed -vv
 ============= test session starts ==============
-# ...
+## ...
 collected 5 items / 3 deselected / 2 selected
 run-last-failure: rerun previous 2 failures
 
 test.py::test_3 FAILED                   [ 50%]
 test.py::test_4 FAILED                   [100%]
-# ...
+## ...
 ======= 2 failed, 3 deselected in 0.04s ========
 ```
 
 This option is useful if your test suite is long and you just want to quickly iterate on an attempt to fix a specific bug that is being caught by a test.
 
-## `--failed-first`
+### `--failed-first`
 
 Lastly, the option `--failed-first` is similar to the option `--last-failed` but instead of running only the test that failed, it starts by running the tests that failed previously and then runs all other tests.
 I'd say this is particularly helpful after you've got the failing tests to pass with `--last-failed` and you just want to make sure you didn't break anything else in other tests.
@@ -167,7 +167,7 @@ While we still have our two failing tests, running `pytest test.py --failed-firs
 ```
 ❯ pytest test.py --failed-first -vv
 ============= test session starts ==============
-# ...
+## ...
 run-last-failure: rerun previous 2 failures first
 
 test.py::test_3 FAILED                   [ 20%]
@@ -176,11 +176,11 @@ test.py::test_1 PASSED                   [ 60%]
 test.py::test_2 PASSED                   [ 80%]
 test.py::test_5 PASSED                   [100%]
 
-# ...
+## ...
 ========= 2 failed, 3 passed in 0.04s ==========
 ```
 
-## Learn more
+### Learn more
 
 If you want to learn more about pytest I definitely suggest you keep a close look on Florian <https://bruhin.software>.
 He does corporate pytest trainings, pytest workshops and talks at conferences, and more.

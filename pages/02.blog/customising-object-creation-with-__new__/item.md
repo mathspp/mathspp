@@ -2,8 +2,6 @@ The dunder method `__new__` is used to customise object creation and is a core s
 
 ===
 
-# Customising object creation with `__new__`
-
 The [dunder method](/blog/pydonts/dunder-methods) `__new__` is a static method that creates new instances of your class and, therefore, can be used to customise that process.
 
 The dunder methods `__init__` and `__new__` can look quite similar at first sight.

@@ -4,7 +4,7 @@ This short reference article shows how to stream data from a Flask web app to HT
 
 ![](thumbnail.webp)
 
-# Introduction
+## Introduction
 
 I have been trying to create a web app with [Flask] and [HTMX] that updates the page periodically with data streamed from the Flask backend.
 The [Flask documentation suggests that this should be possible][flask-streaming] if the response wraps a generator function and they show this example:
@@ -25,7 +25,7 @@ I joined the HTMX Discord and I was told this is because HTMX buffers the comple
 So, I went looking for other options and I found server-side events.
 
 
-# How to stream data from Flask to HTMX in real-time
+## How to stream data from Flask to HTMX in real-time
 
 To be able to stream data back to HTMX and have it update in real-time, the original request needs to connect to SSE with the appropriate HTMX tags.
 
@@ -102,7 +102,7 @@ The second paragraph should update every second with an increasing counter.
 The button “Pong” below is to show that the Flask app still works and clicking the Ping / Pong buttons should POST a request to Flask that returns the other button.
 
 
-# Start streaming on request
+## Start streaming on request
 
 The example below connects as soon as the page loads but you may want to use SSE to stream data back from a specific request, instead of on page load.
 
@@ -176,7 +176,7 @@ if __name__ == "__main__":
 ```
 
 
-# Disclaimer
+## Disclaimer
 
 I am not an expert in Flask/HTMX/web development, so these examples are here for my reference;
 I cannot guarantee that they abide by web development best practices or anything of the sort.

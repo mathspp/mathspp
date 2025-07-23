@@ -4,7 +4,7 @@ Today I learned how to do custom JSON decoding in Python with the module `json`.
 
 ![A solid background with an arrow going from a JSON logo into the Python logo.](thumbnail.webp)
 
-# How to decode Python objects as JSON
+## How to decode Python objects as JSON
 
 The module `json` is your go-to tool whenever you need to work with JSON data in Python.
 Much like you have the methods `json.dump` and `json.dumps` to turn Python objects into JSON,
@@ -41,7 +41,7 @@ so we need to **specify our custom decodings** when appropriate.
 But first, let us take a look at what the module `json` does in its default decoding.
 
 
-# Default JSON decoding into Python objects
+## Default JSON decoding into Python objects
 
 According to [the `json` docs][json],
 this is what the default decoding does:
@@ -62,7 +62,7 @@ anything that is not on the right column,
 you need to **implement a custom JSON decoder**.
 
 
-# Custom JSON decoding into arbitrary Python objects
+## Custom JSON decoding into arbitrary Python objects
 
 We have two mechanisms that let us do custom JSON decoding.
 By taking a look at the [`json.load` documentation][json-load],
@@ -140,8 +140,8 @@ json_string = """[
     }
 ]"""
 
-# Use the object hook when calling `json.loads`.
-# --------------------------------vvvvvvvvvvvvvvvvvvvvvvv
+## Use the object hook when calling `json.loads`.
+## --------------------------------vvvvvvvvvvvvvvvvvvvvvvv
 my_list = json.loads(json_string, object_hook=object_hook)
 print(my_list)
 ```

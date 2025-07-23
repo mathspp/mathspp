@@ -4,7 +4,7 @@ Today I learned how to write the Quicksort algorithm in a weird functional style
 
 ![](thumbnail.webp "")
 
-# Functional programming (sort of)
+## Functional programming (sort of)
 
 Here is a short preamble:
 in my local university, maths students are taught programming in Python.
@@ -44,7 +44,7 @@ So, for you, the reader, the task will be as follows:
 using these arbitrary restrictions, can you implement Quicksort?
 
 
-# Quicksort
+## Quicksort
 
 [Quicksort][Quicksort] is a sorting algorithm that works as follows:
 
@@ -82,14 +82,14 @@ So, the question is: how do we implement Quicksort in this funky functional styl
 Well, I thought about it for a while, because a desperate student asked me to...
 
 
-# How to implement Quicksort in functional programming?
+## How to implement Quicksort in functional programming?
 
 Here is what I did to implement Quicksort in this funky functional style:
 
 ```py
 from functools import reduce
 
-# We need the `fixedpoint` definition:
+## We need the `fixedpoint` definition:
 def fixedpoint(f, x):
     """Applies `f` successively until the result doesn't change."""
     x_ = f(x)

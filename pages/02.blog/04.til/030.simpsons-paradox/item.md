@@ -5,13 +5,13 @@ Today I learned about Simpson's paradox in statistics.
 ![The Simpson's chalkboard gag with Bart Simpson writing “The Simpson's paradox isn't mine” repeatedly on a chalkboard.](thumbnail.webp "The Simpson's chalkboard gag reading “The Simpson's paradox isn't mine”.")
 
 
-# What is the Simpson's paradox?
+## What is the Simpson's paradox?
 
 The Simpson's paradox arises when the trends shown by several groups of data disappear, or reverse!,
 when the groups are combined.
 
 
-# Example of Simpson's paradox
+## Example of Simpson's paradox
 
 Let me show you a good example taken from [the Wikipedia][wiki-simpson-paradox-example].
 

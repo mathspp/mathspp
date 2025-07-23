@@ -16,7 +16,7 @@ more elegant code.
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 Last time we went over [sequence indexing][pydont-sequence-indexing] in Python
 to cover the basics for our next topic of discussion: sequence slicing.
@@ -60,7 +60,7 @@ right now.
 !!! I had to further divide the next Pydon't in two.
 
 
-# Slicing syntax
+## Slicing syntax
 
 Slicing in Python is the act of accessing a sequence of elements that are
 extracted from successive positions of a larger sequence.
@@ -133,7 +133,7 @@ define `s` as the string `"Slicing is easy!"`,
 and work out a couple of slices for yourself.
 
 
-# What to slice?
+## What to slice?
 
 Just in case it wasn't clear earlier, here are just some of the things
 that you can slice in Python:
@@ -154,7 +154,7 @@ However, we will be using string examples for most of the Pydon't,
 just for the sake of consistency.
 
 
-# Slicing from the beginning
+## Slicing from the beginning
 
 Now assume that we wanted to extract `"Slicing"` from our string.
 
@@ -199,7 +199,7 @@ the whole beginning of the string, stopping at the position you indicate.
 ![](_slicing_slicing_gradient.svg "A pictorial representation of omitting the first value of a slice in Python.")
 
 
-# Slicing until the end
+## Slicing until the end
 
 Similarly to omitting the start point,
 you can omit the end point of your slice.
@@ -223,7 +223,7 @@ length of the sequence, but that adds too much visual noise:
 ```
 
 
-# Slicing with negative indices
+## Slicing with negative indices
 
 If you've read my previous Pydon't,
 you will have seen how indexing works with negative indices.
@@ -260,7 +260,7 @@ solution but also – and most importantly – with the slice syntax:
 'icing'
 ```
 
-# Slicing and `range`
+## Slicing and `range`
 
 At this point you should start to notice a pattern,
 and that is that the parameters you insert in your slices
@@ -273,7 +273,7 @@ try thinking about the slice in this way, with the `range`.
 It might help you.
 
 
-# Idiomatic slicing patterns
+## Idiomatic slicing patterns
 
 Now that you have taken a look at some basic slicing with positive
 and negative indices,
@@ -308,7 +308,7 @@ Go ahead...
 Here is what the slicing patterns mean.
 
 
-## `s[n:]`
+### `s[n:]`
 
 If `n` is not negative (so `0` or more), then
 `s[n:]` means “skip the first `n` elements of `s`”:
@@ -324,7 +324,7 @@ If `n` is not negative (so `0` or more), then
 ```
 
 
-## `s[-n:]`
+### `s[-n:]`
 
 If `n` is **positive** (so `1` or more), then
 `s[-n:]` means “the last `n` elements of `s`”:
@@ -351,7 +351,7 @@ If `n` is **positive** (so `1` or more), then
 ! ```
 
 
-## `s[:n]`
+### `s[:n]`
 
 If `n` is not negative (so `0` or more), then
 `s[:n]` can be read as “the first `n` elements of `s`”:
@@ -367,7 +367,7 @@ If `n` is not negative (so `0` or more), then
 ```
 
 
-## `s[:-n]`
+### `s[:-n]`
 
 Finally, if `n` is positive (so `1` or more), then
 `s[:-n]` means “drop the last `n` elements of `s`”:
@@ -387,7 +387,7 @@ Finally, if `n` is positive (so `1` or more), then
 ! and we should be looking at the previous idiom.
 
 
-## Summary
+### Summary
 
 Here is a short summary with the four slicing patterns next to each other:
 
@@ -405,7 +405,7 @@ Here is a short summary with the four slicing patterns next to each other:
 ```
 
 
-# Empty slices
+## Empty slices
 
 Something worthy of note that may confuse some but not others,
 is the fact that if you get your start and end points mixed up,
@@ -437,7 +437,7 @@ that the end point is relative to an index that is _to the left_
 of the start point.
 
 
-# More empty slices
+## More empty slices
 
 Another really interesting thing about slicing is that if you
 use numbers that are _too high_ or _too low_, slicing still works
@@ -459,9 +459,9 @@ an empty string when `s = "Slicing is easy!"`:
 This segues nicely into the first common usage pattern of slices.
 
 
-# Examples in code
+## Examples in code
 
-## Ensuring at most `n` elements
+### Ensuring at most `n` elements
 
 Imagine someone is writing a spellchecker, and they have a function
 that takes a misspelled word and returns the top 5 closest
@@ -504,7 +504,7 @@ Above, we have seen four different idioms, so just keep those
 in mind with working with sequences!
 
 
-## Start of a string
+### Start of a string
 
 Slicing is great, I hope I already convinced you of that,
 but slicing is not the answer to all of your problems!
@@ -570,7 +570,7 @@ to see if `line` starts with the `prefix` given as argument.
 !!! method.
 
 
-## Removing prefixes and suffixes
+### Removing prefixes and suffixes
 
 Similar to the example from above, another
 common usage pattern for slices is to remove prefixes or suffixes
@@ -641,7 +641,7 @@ StackOverflow has amazing answers... that get outdated,
 so always pay attention to the most voted answers, but also
 the most recent ones, those could contain the more modern approaches.
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this Pydon't, for you, on a silver platter:
 

@@ -2,7 +2,7 @@ When will these two clocks synchronise again?
 
 ===
 
-# Problem statement
+## Problem statement
 
 You have two digital clocks.
 One of them just displays the hours and minutes in the format HH:MM while the other is a stopwatch that displays minutes and seconds in the format MM:SS.
@@ -15,7 +15,7 @@ And how often does that happen?
 !!! Give it some thought!
 
 
-# Solution
+## Solution
 
 The two clocks will have matching displays again at 01:01:01, then again at 02:02:02, 03:03:03, 04:04:04, ..., 23:23:23, so this happens 24 times per day.
 
@@ -26,6 +26,6 @@ To recap, the two clocks have displays in the format HH:MM and MM:SS and we alre
 This means that for the two displays to display the same thing, we must have HH = MM = SS, which happens at 00:00:00, 01:01:01, ..., up to 23:23:23.
 
 
-## Bonus question
+### Bonus question
 
 What if the stopwatch wraps around at 99:59 instead of 59:59?

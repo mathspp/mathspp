@@ -3,7 +3,7 @@ Today I learned how to use `rich` for beautiful tracebacks in the REPL and how t
 ===
 
 
-# How to make your tracebacks more beautiful
+## How to make your tracebacks more beautiful
 
 The module [`rich`][rich] comes with an option that lets you modify the way your tracebacks are printed in the REPL.
 In order to use it, you only need to install the traceback handler that comes with `rich`.
@@ -51,7 +51,7 @@ If you install `traceback` in your console, the output is now much more beautifu
 ![Screenshot of the same `ZeroDivisionError`, but this time the screenshot has helpful syntax colouring that makes it easier to read. The syntax colouring was done by `rich.traceback`.](_traceback_installed.webp "Screenshot of a `ZeroDivisionError` handled by `rich.traceback`.")
 
 
-# How to use `rich` for logging exceptions
+## How to use `rich` for logging exceptions
 
 Yesterday I wrote about how you can [use `rich` for beautiful logging][til-rich-logging].
 Today I learned that you can also make it so that the exception logging has the nice colours of `rich.traceback`!
@@ -72,7 +72,7 @@ logging.basicConfig(
     handlers=[RichHandler(rich_tracebacks=True)],  # <- not sets rich_tracebacks
 )
 
-# ...
+## ...
 ```
 
 Before the modification, running the program would generate logging output that contains a pretty plain Python exception.

@@ -4,7 +4,7 @@ This reference article teaches you the things you'll need to write your thesis o
 
 !["The thumbnail image of a blog article that provides a working introduction to LaTeX, as well as a reference to common things you may want to do with LaTeX when writing a report, an article, a masters thesis, or a PhD thesis."](thumbnail.webp)
 
-# Introduction
+## Introduction
 
 I wrote this terse article as a reference for my “Introduction to LaTeX” workshop, where I teach the basic building blocks of LaTeX to students who want to use LaTeX for their reports, articles, and thesis.
 
@@ -39,7 +39,7 @@ It also has a comprehensive learning centre with many articles from which you ca
 But, above all, you can use Overleaf without having to install anything in your computer, so I think it is a friendly way to get started.
 
 
-# Creating a new LaTeX document
+## Creating a new LaTeX document
 
 To get started, we create a new LaTeX document in Overleaf.
 When you hit the “New Project” button, it will show you a dropdown with a bunch of templates for you to choose from.
@@ -61,12 +61,12 @@ Delete everything in the middle column and type this out by hand:
 
 These three lines **must** be present for you to have a valid LaTeX document.
 
-## `documentclass`
+### `documentclass`
 
 The very first line – `\documentclass{article}` – is a _command_ that tells LaTeX what type of document you are creating.
 There are various built-in options, but `article` is always a safe choice for a simple document.
 
-## `begin` and `end`
+### `begin` and `end`
 
 Next, we see two lines that are related: `\begin{document}` and `\end{document}`.
 The `\begin` and `\end` commands are used to create an _environment_.
@@ -77,7 +77,7 @@ So, we need the two commands `\begin{document}` and `\end{document}` to tell LaT
 
 Later, in this article, you will also learn about environments that let you add equations, formulas, images, tables, and more.
 
-## Your first LaTeX compilation
+### Your first LaTeX compilation
 
 Now, **between** the `begin` and `end` commands, go ahead and write a sentence.
 For example, write “Houses are buildings where people live.”.
@@ -97,7 +97,7 @@ Houses are buildings where people live.
 Next, hit the green button “Recompile” and see Overleaf update the right column with a preview of your _compiled_ document.
 The _compilation_ process is the process through which LaTeX reads your document, processes everything you have written, and creates a PDF with the desired output.
 
-## Commands in LaTeX
+### Commands in LaTeX
 
 _Commands_, in LaTeX, are things you write that start with the backslash `\` and have a special meaning to LaTeX.
 For example,
@@ -114,13 +114,13 @@ Thus, the line `\begin{document}` is a LaTeX command (`begin`) with the argument
 !!! If you are familiar with programming, this is similar to functions and arguments.
 
 
-# The anatomy of a LaTeX document
+## The anatomy of a LaTeX document
 
-## Document body
+### Document body
 
 The document body, which is the region delimited by `\begin{document}` and `\end{document}`, is the region where you write your content and it is where you work most of the time.
 
-## Document header
+### Document header
 
 The header of a LaTeX document is everything that comes between the `\documentclass` and the body.
 The command `\documentclass` must at the very start of the document, and you can give additional instructions to LaTeX by writing more commands before the body begins.
@@ -146,7 +146,7 @@ Houses are buildings where people live.
 After you make this change, recompile your document.
 Notice that **nothing** changed in the PDF output.
 
-## LaTeX comments
+### LaTeX comments
 
 The character `%` has a special meaning in LaTeX: it creates a comment.
 Because LaTeX relies on commands and environments to let the user create complex output, sometimes it is useful to use comments to leave helpful notes that facilitate interpreting the LaTeX document.
@@ -154,7 +154,7 @@ Because LaTeX relies on commands and environments to let the user create complex
 Therefore, lines that start with `%` are completely ignored by LaTeX and you can write what you please in them.
 
 
-# Sectioning your document
+## Sectioning your document
 
 There are three commands that let you create sections, subsections, and sub-subsections in your document.
 These commands are, in no particular order, `\subsection`, `\section`, and `\subsubsection`.
@@ -162,7 +162,7 @@ I will let you figure out which is which!
 
 Each of these commands accepts a single argument, which is the name of the ((sub-)sub)section you are creating.
 
-## Create a section with `\section`
+### Create a section with `\section`
 
 The command `\section` can be used to create a section.
 The example below creates two sections:
@@ -187,7 +187,7 @@ Houses are buildings where people live.
 
 Create those two sections and recompile your document.
 
-## Create a subsection with `\subsection`
+### Create a subsection with `\subsection`
 
 The command `\subsection` can be used to create a subsection.
 Go ahead and create two subsections, one named “Private rooms” and the other named “Common rooms”, both of which are after the “Divisions” section header.
@@ -221,7 +221,7 @@ Go ahead and reorder the two subsections, recompile your document, and notice ho
 
 Now, fix the order again, so that “Private rooms” shows up first.
 
-## Create a sub-subsection with `\subsubsection`
+### Create a sub-subsection with `\subsubsection`
 
 The command `\subsubsection` can be used to create a sub-subsection.
 Go ahead and create five sub-subsections.
@@ -264,7 +264,7 @@ Sub-subsections are likely to be the most fine-grained sectioning you will need 
 (Hint, the next level is **not** `\subsubsubsection`!)
 
 
-# Line changes and paragraphs
+## Line changes and paragraphs
 
 Although we have several sections in our document, we have a single paragraph of text.
 Go to each section, subsection, and sub-subsection and make sure to write a sentence about that section title.
@@ -316,7 +316,7 @@ The dining room is where people have their meals together.
 \end{document}
 ```
 
-## Line changes for new sentences
+### Line changes for new sentences
 
 !!! When writing a paragraph, I suggest you write each sentence on a single line.
 !!! LaTeX will recognise this as a single paragraph and it makes it easier for you to find the sentence you are looking for in a big document.
@@ -336,7 +336,7 @@ Writing each sentence in its own line does **not** make LaTeX write sentences in
 Instead, LaTeX will collect everything into a single paragraph.
 
 
-## Creating a new paragraph
+### Creating a new paragraph
 
 If you want to start a new paragraph, leave an **empty** line between the last sentence of the old paragraph and the new sentence of the next paragraph.
 The example below will compile into two paragraphs:
@@ -354,7 +354,7 @@ A building that contains multiple stories where multiple people live is usually 
 ```
 
 
-## Spacing in the LaTeX document
+### Spacing in the LaTeX document
 
 !!! As your LaTeX document grows, I suggest you keep some blank lines around key commands to make it easier for you to navigate your document.
 
@@ -422,9 +422,9 @@ For such a short document, this may not make a huge difference, but you will tha
 !!! You may prefer a different number of lines or you may want to handle things in an entirely different way.
 !!! That is absolutely up to you!
 
-# Add a table of contents
+## Add a table of contents
 
-## `\tableofcontents`
+### `\tableofcontents`
 
 Creating a table of contents is as simple as adding the command `\tableofcontents` in the same place where you want the table of contents to show up.
 Usually, this is right after the document begins:
@@ -440,7 +440,7 @@ Usually, this is right after the document begins:
 % ...
 ```
 
-## Table of contents on its own page
+### Table of contents on its own page
 
 If you want the table of contents to appear on its own page, without the document contents immediately after, you can use the command `\clearpage` to clear the remainder of the page, like so:
 
@@ -462,7 +462,7 @@ If you want the table of contents to appear on its own page, without the documen
 [Learn more about the table of contents here](https://www.overleaf.com/learn/latex/Table_of_contents).
 
 
-# Creating references to your content
+## Creating references to your content
 
 Throughout your document you may want to reference things you have already written, or things that you will show later.
 For example, you may want to point users to a future section or to a previous image.
@@ -474,7 +474,7 @@ To create a reference, you need two things:
  2. a reference command.
 
 
-## Adding a label with `\label`
+### Adding a label with `\label`
 
 A label is created with the command `\label{...}` and accepts one argument: the name of the label.
 Think of it like an actual label you would put in a box for storage: you want the label to reflect what's in the box.
@@ -507,7 +507,7 @@ A bedroom is where a person sleeps.
 Labels can be used after anything that LaTeX adds an automatic number to, so we can already use them with sections, subsections, and sub-subsections.
 
 
-## Reference a label with `\ref`
+### Reference a label with `\ref`
 
 After you added a label, you can point to it with the command `\ref`, which accepts as argument the name of the label you want to add.
 
@@ -529,7 +529,7 @@ Recompile the document and notice that LaTeX automatically inserts the correct n
 That is why you should use labels and references instead of writing the numbers out yourself.
 
 
-# Adding automatic links to references with `hyperref`
+## Adding automatic links to references with `hyperref`
 
 To add automatic links to your document, you can use the package `hyperref`.
 To “use a package” means going into the header of your document and using the command `\usepackage` to load the package.
@@ -563,24 +563,24 @@ This is customisable, but you can also easily turn it off with:
 The `[hidelinks]` is an _option_ that lets the package to not add boxes around the links.
 
 
-# Styling your text
+## Styling your text
 
-## Bold
+### Bold
 
 To write text in boldface, use the command `\textbf` and give it as argument the text you want to be in bold.
 
 
-## Italic
+### Italic
 
 To write text in italic use the command `\textit` and give it as argument the text you want to be italicised.
 
 
-## Coloured text
+### Coloured text
 
 To write text in a different colour use the command `\textcolor` and give it as arguments the colour and the text.
 For this, you need the package `xcolor` which provides the command `\textcolor`, as well as a series of predefined colours.
 
-## Example of a styled sentence
+### Example of a styled sentence
 
 The example sentence contains all styles we just mentioned:
 
@@ -602,12 +602,12 @@ A building that \textcolor{red}{contains multiple stories} where \textcolor{blue
 ```
 
 
-# Add a bibliography
+## Add a bibliography
 
 When writing a scientific document, you will need to add a bibliography.
 
 
-## Create the bibliography file
+### Create the bibliography file
 
 There are many advanced and complex bibliography management systems.
 We will stick to a simple one.
@@ -615,7 +615,7 @@ We will stick to a simple one.
 On the left column, create a new file and call it `my_bibliography.bib`.
 
 
-## Populate the bibliography
+### Populate the bibliography
 
 The bibliography file is populated with the references to the articles, books, papers, and other resources, that you want to cite.
 
@@ -656,7 +656,7 @@ It generated this for me:
 Put that in your `my_bibliography.bib` file.
 
 
-## Inserting the bibliography
+### Inserting the bibliography
 
 To insert the bibliography in your document, use the command `\bibliograph` and use as argument the name of your file (without the `.bib` extension).
 
@@ -681,7 +681,7 @@ That is because the bibliography will only show the items that you **actively** 
 
 !!! I am pretty sure this is the standard behaviour in scientific publications, but I am also sure you can customise this behaviour and show all of the items in the bibliography.
 
-## Citing an item with `\cite`
+### Citing an item with `\cite`
 
 To cite an item from your bibliography, just use the command `\cite` with the citation key as the argument.
 The citation key is the label name of that bibliographic item, and it should be the first thing inside the curly braces `{}` in your item.
@@ -715,7 +715,7 @@ Recompile, and behold!
 Still, nothing happens!
 
 
-## Setting the style of the bibliography
+### Setting the style of the bibliography
 
 To display a bibliography, you also have to set its style.
 There are many styles available, but we will go with the plain one for this article:
@@ -735,12 +735,12 @@ Now, the bibliography should show its only item.
 [Learn more about managing a bibliography here](https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex).
 
 
-# Add a glossary
+## Add a glossary
 
 Similarly, you can add a glossary if you intend on using many acronyms or unfamiliar terms.
 
 
-## Import the package and prepare the glossary
+### Import the package and prepare the glossary
 
 To use a glossary in your document, you need to add the package `glossaries` to the header and use the command `\makeglossaries` to tell LaTeX you will define glossary entries.
 
@@ -758,7 +758,7 @@ To use a glossary in your document, you need to add the package `glossaries` to 
 ```
 
 
-## Add acronym entries
+### Add acronym entries
 
 To add glossary acronym entries, use the command `\newacronym` that takes **three** arguments:
 
@@ -779,7 +779,7 @@ Here are three examples you can add to the header, immediately under `\makegloss
 ```
 
 
-## Add glossary entries
+### Add glossary entries
 
 Similarly, to add a glossary entry, just use the command `\newglossaryentry` that takes two arguments:
 
@@ -804,7 +804,7 @@ Here is an example you can add under the acronyms you already defined.
 ```
 
 
-## Use entries
+### Use entries
 
 To use glossary entries, the simplest command is `\gls` which takes the label name of the entry.
 `\Gls` is like `\gls`, but will capitalise the first letter of the entry.
@@ -826,7 +826,7 @@ The \gls{tldr} is that a \gls{house} is cool.
 ```
 
 
-## Print the glossary
+### Print the glossary
 
 Finally, to print the glossary, we can use the command `\printglossaries`, for example at the end of the document:
 
@@ -843,13 +843,13 @@ Finally, to print the glossary, we can use the command `\printglossaries`, for e
 ```
 
 
-## Customising the glossary
+### Customising the glossary
 
 The glossary can be customised further to your preferences.
 You can [read more about the glossary here](https://www.overleaf.com/learn/latex/Glossaries).
 
 
-# Multi-file documents
+## Multi-file documents
 
 When creating large documents, it can be helpful to split your sections into different files.
 For that, go ahead and create two files:
@@ -939,7 +939,7 @@ Now, delete the sections from your file `main.tex` and write this instead:
 ```
 
 
-# Mathematical formulas and equations
+## Mathematical formulas and equations
 
 To add maths inline with your text, use a dollar sign before and a dollar sign after the numbers/formulas.
 Here is an example:
@@ -961,12 +961,12 @@ Use something like [Detexify](http://detexify.kirelabs.org/classify.html) to lea
 The results also show what packages you might need for those symbols.
 
 
-## Superscript
+### Superscript
 
 As a general piece of advice, many symbols expect superscript content or content on top of that, and you can do that with `^`.
 
 
-## Subscript
+### Subscript
 
 Similarly, you can put content under a symbol, or in subscript, with `_`.
 
@@ -986,7 +986,7 @@ You can also write it as $\sum_{i=1}^{4} 12 = 18$, in a convoluted way.
 Notice that we use the curly braces `{}` to group together the things that go into subscript and the things that go into superscript, otherwise LaTeX would only put a single character in each place.
 
 
-## Equations
+### Equations
 
 To create a full equation that is displayed in the centre of the text, use the environment `equation`:
 
@@ -1005,7 +1005,7 @@ If an apartment holds $4$ people, a building with $12$ apartments holds $4 \time
 ```
 
 
-## Multi-line, aligned equations
+### Multi-line, aligned equations
 
 Use the environment `align` for multi-line equations with alignment:
 
@@ -1033,12 +1033,12 @@ The symbol `&` determines where the vertical alignment goes and the double backs
 You cannot use `\\` inside a regular environment `equation` to change aligns.
 
 
-## Build your equations online
+### Build your equations online
 
 You can use an online LaTeX equation editor like [this one](https://latex.codecogs.com/eqneditor/editor.php) to edit your equations by using a friendlier interface, while you are still getting used to the commands.
 
 
-## Referencing your equations
+### Referencing your equations
 
 Most mathematical environments (like `equation` and `align`) will give a number to your equation.
 If you use `\label`, those can be referenced with the command `\eqref`.
@@ -1059,9 +1059,9 @@ This is written out explicitly in equation \eqref{eq:42}.
 ```
 
 
-# Inserting images into your document
+## Inserting images into your document
 
-## Uploading the image
+### Uploading the image
 
 The first thing you need to do if you want to insert an image into your LaTeX document is to tell Overleaf about it.
 This means you need to upload the image into Overleaf.
@@ -1074,7 +1074,7 @@ If you don't have a picture you would like to upload, you can go ahead and use [
 !!! This will make it easier to organise everything in your project.
 
 
-## The `graphicx` package
+### The `graphicx` package
 
 The next thing you need is to use the package that is appropriate for images: `graphicx`.
 
@@ -1098,7 +1098,7 @@ Here is my updated `main.tex`:
 ```
 
 
-## The `figure` environment
+### The `figure` environment
 
 Next, go to where you want to add your image and create the environment `figure`.
 
@@ -1126,7 +1126,7 @@ If you are using Overleaf, it might have filled in some lines for you.
 We'll go over those now, but we will write them by ourselves.
 
 
-## The command `includegraphics`
+### The command `includegraphics`
 
 There is a command, called `includegraphics`, that is responsible for inserting the image into the document.
 We can use that command inside the environment `figure`.
@@ -1149,14 +1149,14 @@ You are free to align the command `\includegraphics` (and the commands that foll
 However, it is my personal recommendation that you indent LaTeX code inside other environments.
 
 
-## Adjusting the size of your image
+### Adjusting the size of your image
 
 There are many ways in which you can adjust the size of your image.
 The two most common ones are `scale` and `width`.
 These options can go inside the square brackets `[]` after the name of the command (`includegraphics`) and before the curly braces.
 
 
-### Scale
+#### Scale
 
 For example, this code would insert the image with 10% the size:
 
@@ -1171,7 +1171,7 @@ For example, this code would insert the image with 10% the size:
 ```
 
 
-### Width
+#### Width
 
 Alternatively, you can specify the width you want the image to have.
 You can specify this as a value in centimetres `cm`, millimetres `mm`, `em`, pixels `px`, among other units.
@@ -1192,7 +1192,7 @@ Thus, the code below inserts the image and rescales it so that its width becomes
 Notice that `\linewidth` is _not_ the horizontal length of the page but rather the length of the region where LaTeX will write (so, that's the length of the page minus the margins).
 
 
-## Centring your image
+### Centring your image
 
 After rescaling your image, you can centre it with the command `\centering`:
 
@@ -1208,7 +1208,7 @@ After rescaling your image, you can centre it with the command `\centering`:
 ```
 
 
-## Adding a caption to your image
+### Adding a caption to your image
 
 The next thing you need to do is use the command `\caption` to add a caption to your image.
 The command `\caption` is what will _assign a figure number_ to your image and it is what will allow you to reference your image later.
@@ -1230,7 +1230,7 @@ Here is a simple caption:
 The command `\caption` must come after the included image.
 
 
-## Adding a label to your image
+### Adding a label to your image
 
 After adding a caption you can add a label that _must_ come _after_ the caption:
 
@@ -1255,7 +1255,7 @@ Just take a look at Figure \ref{fig:thumbnail}, isn't that a lovely figure?
 !!! This forces me to give decent names to my images and makes it easier to create the label because I don't have to waste time thinking “what would be a good name for this label?”.
 
 
-# Controlling image positioning
+## Controlling image positioning
 
 In LaTeX, environments like figures and tables (which you will learn about next) tend to “float” away from the place you put them in.
 This is intentional and this functionality aims to waste as little whitespace as possible.
@@ -1263,7 +1263,7 @@ This is intentional and this functionality aims to waste as little whitespace as
 This is something you can learn to live with, as it is typically a good thing, but sometimes you may want to control the positioning of your figures and tables.
 
 
-## The package `float`
+### The package `float`
 
 If you want to tell LaTeX where to place your figures, you will want to use the package `float`.
 You can remember this is the package to use because you want to prevent your figures from “floating” away.
@@ -1279,7 +1279,7 @@ You can remember this is the package to use because you want to prevent your fig
 ```
 
 
-## Place the image HERE!
+### Place the image HERE!
 
 If you want LaTeX to place the image _exactly_ where you added it, you can use the option `H` (for Here) in the environment `figure`.
 This option goes after the command `\begin{figure}[H]`:
@@ -1300,7 +1300,7 @@ This option goes after the command `\begin{figure}[H]`:
 You can [learn more about image (and table) placement here](https://www.overleaf.com/learn/latex/Positioning_images_and_tables).
 
 
-# Creating LaTeX tables
+## Creating LaTeX tables
 
 To create LaTeX tables, my suggested approach is that you use an online service like [this one](https://www.tablesgenerator.com) to create your tables in a graphical editor and then just copy and paste the LaTeX code that that service generates.
 
@@ -1326,13 +1326,13 @@ This is an example table generated by the service I linked:
 You can [learn more about tables here](https://www.overleaf.com/learn/latex/Tables) but I explain the basics below.
 
 
-## The environments `table` and `tabular`
+### The environments `table` and `tabular`
 
 The environment `table` is akin to the environment `figure` but for tables.
 The environment `tabular` delimits the area where you write the data for the table.
 
 
-## Specifying the size of your table
+### Specifying the size of your table
 
 When you create a table the only thing you need to do is tell the `tabular` environment how many columns your table has.
 You do that via an argument to the environment `tabular`.
@@ -1348,12 +1348,12 @@ Each letter corresponds to a column and the letter specifies how the column is a
 As for the number of rows, you do not have to specify them upfront.
 
 
-## Separating items in your table
+### Separating items in your table
 
 Inside your environment `tabular` you use the symbol `&` to separate items in the same row and you use the double backslash `\\` to move to a new row.
 
 
-## Centring a table
+### Centring a table
 
 Just like a `figure` environment, `table` can also be centred:
 
@@ -1374,7 +1374,7 @@ Just like a `figure` environment, `table` can also be centred:
 ```
 
 
-## Captioning and referencing tables
+### Captioning and referencing tables
 
 A table can and should be captioned with the command `\caption`, which means you can then add a label to your table to enable cross-referencing it:
 
@@ -1399,14 +1399,14 @@ See Table \ref{tab:types of rooms} to check some types of rooms.
 ```
 
 
-## Awesome tables with `booktabs`
+### Awesome tables with `booktabs`
 
 Once you are comfortable with creating a couple of tables I suggest that you look up the package `booktabs`.
 With very little effort you can create professional-looking tables.
 In particular, I am a big fan of [this quick guide](https://people.inf.ethz.ch/markusp/teaching/guides/guide-tables.pdf).
 
 
-# Inserting listings of code
+## Inserting listings of code
 
 Again, there are many resources out there that teach you about handling code inside your LaTeX file, like [this one](https://www.overleaf.com/learn/latex/Code_listing).
 I want to show you the most common case (or what _should_ be the most common case): including code from a file into your LaTeX document.
@@ -1415,7 +1415,7 @@ I want to show you the most common case (or what _should_ be the most common cas
 ! If we link the LaTeX project that that code file, you can update your code all you want and your report/thesis/document will stay up to date.
 
 
-## The package `listings`
+### The package `listings`
 
 The package we will be using for this is `listings`:
 
@@ -1430,7 +1430,7 @@ The package we will be using for this is `listings`:
 ```
 
 
-## The command `\lstinputlisting`
+### The command `\lstinputlisting`
 
 The command `\lstinputlisting` expects a path to your code file and will import it into your project.
 For Overleaf, we will need to update the code file.
@@ -1464,7 +1464,7 @@ def fibonacci(n: int) -> int:
 ```
 
 
-## Captioning your listing
+### Captioning your listing
 
 To add a caption to your listing, use the option `caption`:
 
@@ -1481,7 +1481,7 @@ To add a caption to your listing, use the option `caption`:
 We write the caption inside `{}` otherwise LaTeX will think the caption is just the first word you write.
 
 
-## Labelling and referencing your listings
+### Labelling and referencing your listings
 
 Similarly, the option `label` can be used to specify the label you can use to refer to a specific listing of code:
 
@@ -1498,7 +1498,7 @@ I show some code in the Listing \ref{lst:mycode}.
 ```
 
 
-# Adding reference tables
+## Adding reference tables
 
 On top of a table of contents (which lists all sections, subsections, and sub-subsections), you may want to add a reference table of
 
@@ -1509,22 +1509,22 @@ On top of a table of contents (which lists all sections, subsections, and sub-su
 Those all have aptly named commands:
 
 
-## `\listoffigures`
+### `\listoffigures`
 
 The command `\listoffigures` will generate a list with all your figures.
 
 
-## `\listoftables`
+### `\listoftables`
 
 The command `\listoftables` will generate a list with all your tables.
 
 
-## `\lstlistoflistings`
+### `\lstlistoflistings`
 
 The command `\lstlistoflistings` (from the package `listings`) will generate a list with all your code listings.
 
 
-# Conclusion
+## Conclusion
 
 This was the reference article I use for my LaTeX workshops.
 Typically, I don't have time to go through _every single section_ of this article.

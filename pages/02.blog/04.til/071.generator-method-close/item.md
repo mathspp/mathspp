@@ -2,7 +2,7 @@ Today I learned about the generator method `close`.
 
 ===
 
-# The generator method `close`
+## The generator method `close`
 
 Python generators have a method called `close` that “closes” the generator.
 Closing the generator means that if you call `next` on it again, it will raise `StopIteration`, which is essentially the same as if the generator had been exhausted completely.
@@ -26,7 +26,7 @@ Here is a trivial example that shows this method in use:
 I learned this from [a poster session I attended at EuroPython 2023](https://ep2023.europython.eu/session/what-are-you-yield-from) by Maxim Danilov.
 
 
-# An infinite loop `for` that is cancellable
+## An infinite loop `for` that is cancellable
 
 In his poster session, Maxim proposed a really interesting pattern with an infinite loop `for` that could easily get “cancelled” by calling the method `close` on the infinite generator.
 Maxim said there were examples in the standard library where this example could be interesting, but sadly I don't remember exactly where he said we could do it.

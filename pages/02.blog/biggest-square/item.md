@@ -2,8 +2,6 @@ How can you find the biggest free square in a 2D map with obstacles?
 
 ===
 
-# Biggest square
-
 ## Problem statement
 
 I just got a call from the President of Portugal.

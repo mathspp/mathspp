@@ -5,7 +5,7 @@ Today I learned how to draw a Bézier curve with the De Casteljau's algorithm.
 ![A GIF animation of a Bézier curve being drawn in a Python program that uses pygame to draw the curve and provide user interaction.](_bezier.gif "An animated Bézier curve.")
 
 
-# How to draw a Bézier curve
+## How to draw a Bézier curve
 
 Today I learned that there is a straightforward way to draw Bézier curves and I wrote a small Python program to test this out.
 

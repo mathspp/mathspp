@@ -3,8 +3,6 @@ This article outlines how I use a pre-commit hook and cog to keep my blog stats 
 ===
 
 
-# Automatic site updates with cog and pre-commit
-
 Some months ago I introduced some [basic stats in my blog](/blog) that show how many articles I've published, along with how many words and lines of code those articles contain.
 I [wrote an article explaining how I wrote a script that gathers these blog stats for me](/blog/adding-stats-to-my-blog) but that's a script I still need to run and then manually update the stats.
 

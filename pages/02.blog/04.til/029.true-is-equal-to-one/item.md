@@ -7,7 +7,7 @@ Today I learned that `True` is equal to 1 and `False` is equal to 0.
 ![A Python REPL showing that `True` is equal to 1 and that `False` is equal to 0.](thumbnail.webp)
 
 
-# Booleans are a subclass of `int`
+## Booleans are a subclass of `int`
 
 In Python, Booleans are a subclass of integers:
 
@@ -53,7 +53,7 @@ means that integers can also be converted to Booleans:
 True
 >>> bool(0)
 False
-# And other integers (and floats) can be converted to `True`:
+## And other integers (and floats) can be converted to `True`:
 >>> bool(73)
 True
 >>> bool(0.5)
@@ -74,7 +74,7 @@ True
 As to whether `True` and `False` being interpretable as integers is useful or not: it is.
 
 
-# When to use Booleans as integers in Python?
+## When to use Booleans as integers in Python?
 
 Booleans can be interpreted as integers, for example,
 to count objects that satisfy a given property,

@@ -5,7 +5,7 @@ Today I learned how to install the starship cross-shell prompt on Windows for th
 ![A screenshot of my PowerShell starship prompt after I learned how to install the starship cross-shell prompt on my Windows machine.](thumbnail.webp "A screenshot of my PowerShell starship prompt.")
 
 
-# What is starship?
+## What is starship?
 
 [Starship] is a cross-shell prompt that is highly customisable and looks really cool.
 The prompt of a shell is that bit that you can typically find on the left of the place where you write commands.
@@ -14,7 +14,7 @@ In most shells, the default prompt just shows the path you are in
 but starship gives you an enhanced prompt that you can customise greatly!
 
 
-# How to install starship on Windows for PowerShell
+## How to install starship on Windows for PowerShell
 
 Here is what I did to get starship on my PowerShell.
 
@@ -47,9 +47,9 @@ When you open the script, scroll to the bottom,
 and add the command that runs starship:
 
 ```powershell
-# Tell starship where its config is:
+## Tell starship where its config is:
 $ENV:STARSHIP_CONFIG = "$HOME\.starship\config.toml"
-# Start starship:
+## Start starship:
 Invoke-Expression (&$HOME\.starship\starship init powershell)
 ```
 

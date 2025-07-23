@@ -29,7 +29,7 @@ title: "APL blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">16</th>
-            <th style="text-align: center;">31,110</th>
+            <th style="text-align: center;">31,106</th>
             <th style="text-align: center;">2,672</th>
         </tr>
     </thead>

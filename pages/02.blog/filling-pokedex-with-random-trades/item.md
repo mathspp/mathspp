@@ -12,7 +12,7 @@ your *complete* Pokédex by only performing random trades.
 
 ![A picture of a trade happening inside Pokémon Home](thumbnail.jpg)
 
-# Objective
+## Objective
 
 The objective of this blog post is to take a look at how one computes
 the average time it takes for a random event to happen.
@@ -35,7 +35,7 @@ the theoretical solution;
  - and you will have learned a couple of tricks to compute these summations.
 
 
-# Pokémon games and the Pokédex
+## Pokémon games and the Pokédex
 
 This brief section aims at introducing you to the world of Pokémon.
 I will explain the very basics of the game, enough so that you understand
@@ -65,7 +65,7 @@ access to new Pokémon was through trading, but in such a way that you had **no*
 control whatsoever on the Pokémon you would be receiving.
 
 
-# Formulating the problem
+## Formulating the problem
 
 We wish to see the average number of trades it would take before we got to see
 all 898 Pokémon that exist at the time of writing.
@@ -78,7 +78,7 @@ but doesn't necessarily hold,
 for example it is clear in the "Wonder Trade" system of Pokémon Home that some Pokémon
 appear much more frequently than others.)
 
-## Abstracting it from the context
+### Abstracting it from the context
 
 If we strip the problem of its *"superfluous"* details (from the mathematical
 point of view), then what we want to know is the estimated value of the number
@@ -88,7 +88,7 @@ assuming all events are equally likely.
 In here, the outcomes refer to "receiving a specific Pokémon" and we only consider 897
 of those because there's one Pokémon we don't need to receive: the one we start with.
 
-# Formulating the solution
+## Formulating the solution
 
 In tackling probability problems like this,
 it is often useful to try and break it down into several parts,
@@ -96,7 +96,7 @@ so that we have smaller subproblems that are easier to deal with.
 Then, we perform the computations we need for each of the subproblems and in the end
 we combine everything in the appropriate way.
 
-## Breaking it down
+### Breaking it down
 
 For this particular problem,
 thinking about how many trades we need in order to find all 898 Pokémon
@@ -130,7 +130,7 @@ Now we just need to compute the terms to the right of the equality above,
 and trust me:
 these are much simpler to compute when compared to the original problem.
 
-## Meeting a new Pokémon
+### Meeting a new Pokémon
 
 Let $T(n)$ represent *"the time it takes to meet a new Pokémon,
 assuming we've seen $n$ different Pokémon so far"*.
@@ -158,7 +158,7 @@ and we need to make more random trades before getting a new Pokémon.
 This means that computing $T(n)$ is also accomplished by breaking this
 problem into smaller problems and tackling those.
 
-## Breaking it down... again?
+### Breaking it down... again?
 
 In fact, notice that meeting a new Pokémon after having seen $n$ different Pokémon
 can happen in a variety of ways:
@@ -171,7 +171,7 @@ can happen in a variety of ways:
 If we manage to compute each of the probabilities above,
 then we can use the definition of *expected value* to compute $T(n)$.
 
-### Expected value
+#### Expected value
 
 Remember that the *expected value* of something is equal to a sum
 (or an infinite sum, a *summation*):
@@ -207,7 +207,7 @@ and that happens with a probability $(1 - p(n))^{k-1}p(n)$ -
 the first $k-1$ trades reveal repeated Pokémon and the $k$<sup>th</sup> one reveals a new one.
  - ...
 
-## The time it takes to meet a new Pokémon
+### The time it takes to meet a new Pokémon
 
 If we take the train of thought that I laid out above, and if we write a summation
 with all possible numbers of trades we might need to meet a new Pokémon and if,
@@ -232,7 +232,7 @@ $$
 T(n) = \frac{1}{p(n)}
 $$
 
-## The time it takes to meet all Pokémon
+### The time it takes to meet all Pokémon
 
 Previously we have seen that our problem was reduced to computing
 
@@ -265,13 +265,13 @@ $$
 And there you have it!
 
 
-# Trading 6624 times
+## Trading 6624 times
 
 On average, you need to make roughly $6624$ random trades until you can meet
 all $898$ different Pokémon there exist!
 
 
-# Auxiliary calculations
+## Auxiliary calculations
 
 Now I'll show you the auxiliary calculations I performed to achieve at the final
 result.
@@ -304,7 +304,7 @@ I just want you to have the bigger picture:
  - look at the sum of those terms and get a closed formula for that;
  - differentiate the formula so we get a formula for the original terms.
 
-## Derivation of the formula
+### Derivation of the formula
 
 I will try to be fairly careful with all the intermediate steps but if you
 just want the main idea, you can [fast-forward](#fast-forward).
@@ -430,7 +430,7 @@ summations and the derivatives, but sometimes you just don't have the time
 and you know things will work out.
 When that is the case, you may want to skip a few steps (at your own risk!):
 
-## Fast-forward
+### Fast-forward
 
 If we are to fast-forward past some intermediate steps that usually won't be
 problematic, we could've gone like this:

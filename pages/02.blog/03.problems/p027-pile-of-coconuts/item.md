@@ -15,7 +15,7 @@ How many coconuts were there in the beginning..?
 ![A photograph of some coconuts, courtesy of user "zibik" from unsplash.com.](thumbnail.jpg)
 
 
-# Problem statement
+## Problem statement
 
 A group of five sailors and a monkey wash ashore on a desert island.
 After the initial shock subsided, they decided the best thing to do was to gather
@@ -48,7 +48,7 @@ for this to be possible?
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solution
+## Solution
 
 The problem of determining the amount of coconuts that the sailors gathered
 can be tackled with a bit of modular arithmetic.
@@ -171,7 +171,7 @@ Do you prefer problems with more or with less calculations?
 Let me know in the comment section below.
 
 
-## Code
+### Code
 
 I also ran some basic Python code in a REPL session to double-check my solution.
 Here's the session code:

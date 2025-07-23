@@ -5,7 +5,7 @@ Learn about the dunder method `__init__`, responsible for initialising class ins
 ![A blank cube being passed to the dunder method `__init__` and coming out fully initialised, represented by a scrambled Rubik's cube.](thumbnail.webp "Background photo by Олександр К on Unsplash")
 
 
-# Introduction
+## Introduction
 
 The [dunder method][dunder-methods] `__init__` is probably the first dunder method that Python programmers learn about.
 When you first start defining your own classes, you are taught that you need to initialise your objects inside this crazy magic method called `__init__`,
@@ -21,7 +21,7 @@ In what follows, I will try to demystify what `__init__` does and how it works.
 <!--^-->
 
 
-# What is `__init__` for?
+## What is `__init__` for?
 
 **The dunder method `__init__` is the method of your class that is responsible for initialising your object upon creation.**
 Just like the diagram above hints at, your method `__init__` receives a fresh new instance of your class,
@@ -39,7 +39,7 @@ Thus, to create a new instance of `Client`, you would need to pass in the name a
 class Client:
     # ...
 
-# Create two clients:
+## Create two clients:
 alice = Client("Alice", "alice@example.com")
 bob = Client("Bob", "bob@example.com")
 ```
@@ -60,7 +60,7 @@ Obviously, the dunder method `__init__` will receive the string name and the str
 but there is one extra piece of information that `__init__` will receive and that will actually come first.
 
 
-# `self`
+## `self`
 
 The extra piece of information that `__init__` receives is the _object_ that `__init__` is actually initialising!
 
@@ -96,11 +96,11 @@ class Client:
         self.name = name
         self.email = email
 
-# Create two clients:
+## Create two clients:
 alice = Client("Alice", "alice@example.com")
-# Creating the client Alice with email alice@example.com.
+## Creating the client Alice with email alice@example.com.
 bob = Client("Bob", "bob@example.com")
-# Creating the client Bob with email bob@example.com.
+## Creating the client Bob with email bob@example.com.
 ```
 
 Notice that the prints inside `__init__` were triggered but we **did not** call the method `__init__` explicitly.
@@ -122,14 +122,14 @@ class Client:
         print(email_body)
 
 alice = Client("Alice", "alice@example.com")
-# Creating the client Alice with email alice@example.com
+## Creating the client Alice with email alice@example.com
 alice.send_email("We need to schedule a meeting!")
-# To: Alice <alice@example.com>
-# We need to schedule a meeting!
+## To: Alice <alice@example.com>
+## We need to schedule a meeting!
 ```
 
 
-# Introductory `__init__` exercises
+## Introductory `__init__` exercises
 
 Here are a few exercises to help you come to grips with `__init__`.
 
@@ -147,7 +147,7 @@ Here are a few exercises to help you come to grips with `__init__`.
 If some of the exercises are not clear, be sure to let me know, so that I can improve the wording!
 
 
-# `__init__` and inheritance
+## `__init__` and inheritance
 
 Sometimes, our classes inherit from other classes,
 which means we get to reuse some of the behaviour they already define.
@@ -216,7 +216,7 @@ and only then the subclass**.
 In the exercises that follow, you will find a situation where ordering matters.
 
 
-# `__init__` and inheritance exercises
+## `__init__` and inheritance exercises
 
  6. Create a class `Point` that is the parent class of `Point2D`:
     1. `Point` accepts a single argument: an iterable (a list or a tuple, for example) with numbers and saves it in a tuple attribute.

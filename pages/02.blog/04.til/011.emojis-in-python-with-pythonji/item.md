@@ -11,7 +11,7 @@ Today I learned that you can use emojis as variable names in Python if you use `
 ![Snippet of Python code written with emojis.](thumbnail.webp)
 
 
-# Can you use emojis in Python?
+## Can you use emojis in Python?
 
 No!
 At the time of writing, emojis are not valid Python identifiers.

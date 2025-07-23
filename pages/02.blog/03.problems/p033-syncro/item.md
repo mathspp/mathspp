@@ -11,7 +11,7 @@ In how many moves can you do it?
 ![](thumbnail.webp)
 
 
-# Problem statement
+## Problem statement
 
 Look at the image above.
 There are four “flowers”, each one with four “petals”.
@@ -35,7 +35,7 @@ number of steps possible.
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Syncro
+## Syncro
 
 Syncro is a desktop/mobile game developed by some friends of mine, and the objective
 of the game is the same as that of this problem, except the game itself has several
@@ -47,7 +47,7 @@ levels.
 If you complete the game, you can even end up in the [hall of fame][hof]!
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
@@ -59,7 +59,7 @@ who sent me their correct solutions:
 (The list is in no particular order.)
 
 
-# Solution
+## Solution
 
 This problem is really hard to solve without a visual representation of what is going on,
 so let me remind you of what the problem looks like:

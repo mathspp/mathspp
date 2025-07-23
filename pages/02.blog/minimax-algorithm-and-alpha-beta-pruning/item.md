@@ -5,7 +5,7 @@ This article will teach you about the minimax algorithm and alpha-beta pruning, 
 ![](thumbnail.png "Photo by Faye Cornish on Unsplash")
 
 
-# Introduction
+## Introduction
 
 This article aims at providing the reader with an introduction to the minimax search algorithm,
 and to alpha-beta pruning – an optimisation over that same algorithm.
@@ -36,7 +36,7 @@ Therefore, the language I will be using will also revolve around that:
 So, without further ado, let's start!
 
 
-# Prior knowledge
+## Prior knowledge
 
 Like I just said, I am a complete beginner at this topic.
 The only things I have done are as follows:
@@ -49,7 +49,7 @@ If you have the time and patience to watch both,
 then start with [this one][yt-2nd-recommended] and only then watch [this][yt-recommended].
 
 
-# The minimax algorithm
+## The minimax algorithm
 
 The minimax algorithm is the algorithm around which this whole article revolves,
 so it is best if we take some time to really understand it.
@@ -152,7 +152,7 @@ Now I understand that:
 Thus, the obvious choice is to go with the move on the left.
 
 
-# Tree structure abstraction
+## Tree structure abstraction
 
 In order to practise what we are still trying to grasp about the minimax algorithm,
 we will implement it.
@@ -190,7 +190,7 @@ This corresponds to:
 This is the structure that we want to work with.
 
 
-# Minimax dummy implementation
+## Minimax dummy implementation
 
 In order to solidify our knowledge, let's make a dummy implementation of the minimax algorithm.
 
@@ -288,7 +288,7 @@ print(minimax(tree, False))
 ```
 
 
-# A better minimax
+## A better minimax
 
 The dummy minimax algorithm we implemented above worked on trees with a very specific structure.
 Now we will try to make it slightly more generic,
@@ -411,7 +411,7 @@ print(minimax(tree, False))     # 5
 ```
 
 
-# Alpha-beta pruning rationale
+## Alpha-beta pruning rationale
 
 Now that we have a basic understanding of the minimax algorithm,
 let's introduce the alpha-beta pruning optimisation.
@@ -486,7 +486,7 @@ And, in doing this, you managed to completely ignore a portion of the tree:
 _This_ is the essence of alpha-beta pruning!
 
 
-# Challenges
+## Challenges
 
 The intuitive explanation of alpha-beta pruning is, well,
 fairly intuitive.
@@ -598,7 +598,7 @@ then the restrictions of the problem statement would be satisfied:
 ![](_ab_pruning_exercise2_4.webp "The left terminal containing a hypothetical value of 6.")
 
 
-# Alpha and beta
+## Alpha and beta
 
 These two exercises we just did had us thinking about the algorithm
 in an interesting way:
@@ -650,7 +650,7 @@ option that a minimiser node has found so far.
 When a maximiser node finds its value above $\beta$, we can stop.
 
 
-# Implementing alpha-beta pruning
+## Implementing alpha-beta pruning
 
 The first step to implementing alpha-beta pruning is modifying
 the `minimax` algorithm so that it also accepts values
@@ -776,7 +776,7 @@ With this in place, printing the `tree` above should result in this:
 
 ```py
 print(tree)
-# Tree(Tree(Tree(T(3), T(4)), Tree(T(8), Tree(T(-2), T(10)), T(5))), T(7))
+## Tree(Tree(Tree(T(3), T(4)), Tree(T(8), Tree(T(-2), T(10)), T(5))), T(7))
 ```
 
 Now, we add a `print(tree)` statement at the top of the `pruning` algorithm.
@@ -820,7 +820,7 @@ The tree `Tree(T(-2), T(5))` was also never visited, as expected.
 Amazing!
 
 
-# Refactoring the alpha-beta pruning implementation
+## Refactoring the alpha-beta pruning implementation
 
 The algorithm is working just fine,
 but it doesn't look as good as it could!
@@ -896,9 +896,9 @@ def pruning(tree, maximising_player, alpha=float("-inf"), beta=float("+inf")):
 ```
 
 
-# Conclusion
+## Conclusion
 
-## Overview
+### Overview
 
 In this article, you:
 
@@ -912,7 +912,7 @@ In this article, you:
  - implemented the alpha-beta pruning algorithm; and
  - verified that your implementation is able to prune irrelevant search paths.
 
-## Next steps
+### Next steps
 
 We implemented alpha-beta pruning over explicit trees,
 but I said I wanted to use this to play games.

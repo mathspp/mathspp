@@ -3,7 +3,7 @@ Today I learned how to detect collisions between circles and rectangles with 100
 ===
 
 
-# Circle vs rectangle collision detection
+## Circle vs rectangle collision detection
 
 In a [JavaScript tutorial I published recently](/blog/javascript-2d-scrolling-game-tutorial), the game that I presented included some very basic collision detection between a circle and a rectangle, and it used the circle's bounding box.
 This meant that the collision detection sucked if the circle was close to the corners of the rectangle.

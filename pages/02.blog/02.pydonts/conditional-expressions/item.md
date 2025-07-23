@@ -16,7 +16,7 @@ This Pydon't will teach you how to use Python's conditional expressions.
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 Conditional expressions are what Python has closest to what is called a “ternary operator” in other languages.
 
@@ -34,14 +34,14 @@ In this Pydon't, you will:
 <!--^-->
 
 
-# What is a conditional expression?
+## What is a conditional expression?
 
 A conditional expression in Python is an expression
 (in other words, a piece of code that evaluates to a result)
 whose value depends on a condition.
 
 
-## Expressions and statements
+### Expressions and statements
 
 To make it clearer, here is an example of a Python expression:
 
@@ -77,7 +77,7 @@ SyntaxError: invalid syntax
 ```
 
 
-## Conditions
+### Conditions
 
 We are very used to using `if` statements to run pieces of code when certain _conditions_ are met.
 Rewording that, a condition can dictate what piece(s) of code run.
@@ -89,7 +89,7 @@ No!
 Statements and expressions are _not_ the same thing.
 
 
-## Syntax
+### Syntax
 
 Instead of beating around the bush, let me just show you the anatomy of a conditional expression:
 
@@ -117,7 +117,7 @@ _other_ conditional expressions!
 Keep reading for that 😉)
 
 
-## Examples of conditional expressions
+### Examples of conditional expressions
 
 Here are a couple of simple examples,
 broken down according to the `expr_if_true`, `condition`, and `expr_if_false`
@@ -154,7 +154,7 @@ anatomy presented above.
 | `"Mathspp".lower()` | `pow(3, 27, 10) > 5` | `"Oh boy."` |
 
 
-## Reading a conditional expression
+### Reading a conditional expression
 
 While the conditional expression presents the operands in an order
 that may throw some of you off,
@@ -176,7 +176,7 @@ or
 
 With this out of the way, ...
 
-## Does Python have a ternary operator?
+### Does Python have a ternary operator?
 
 Many languages have a ternary operator that looks like `condition ? expr_if_true : expr_if_false`.
 Python does not have such a ternary operator, but conditional expressions are similar.
@@ -186,7 +186,7 @@ but they are syntactically different because they use keywords (instead of `?` a
 and because the order of the operands is different.
 
 
-# Rationale
+## Rationale
 
 The rationale behind conditional expressions is simple to understand:
 programmers are often faced with a situation where they have to pick one of two values.
@@ -198,7 +198,7 @@ typically inside an `if: ... else: ...` block,
 that might be a good use-case for a conditional expression.
 
 
-## Examples with `if` statements
+### Examples with `if` statements
 
 Here are some simple functions that show that:
 
@@ -238,7 +238,7 @@ evaluates to `True`.
 If it doesn't, they return a different value.
 
 
-## Refactored examples
+### Refactored examples
 
 Can you refactor the functions above to use conditional expressions?
 Here is one possible refactoring for each:
@@ -264,7 +264,7 @@ it now reads as
  > “return `x` if `x` is positive, otherwise return `-x`.”
 
 
-# Short-circuiting
+## Short-circuiting
 
 You may be familiar with [Boolean short-circuiting][pydont-boolean-short-circuiting],
 in which case you might be pleased to know that conditional expressions
@@ -350,9 +350,9 @@ On the flip side, when `x` is _not_ an integer, `chr(x)` never runs.
 This is a very useful subtlety!
 
 
-# Conditional expressions and `if` statements
+## Conditional expressions and `if` statements
 
-## Equivalence to `if`
+### Equivalence to `if`
 
 This has been implicit throughout the article,
 but I'll write it down explicitly now for the sake of clarity.
@@ -378,7 +378,7 @@ And that close relationship is that of equivalence.
 The two pieces of code are exactly equivalent.
 
 
-## Equivalence to `if`-`elif`-`else` blocks
+### Equivalence to `if`-`elif`-`else` blocks
 
 Given the equivalence between conditional expressions and `if: ... else: ...` blocks,
 it is natural to wonder whether there is some equivalent to the `elif` statement
@@ -515,7 +515,7 @@ return 0 if x == 0 else 1 if x > 0 else -1
 ```
 
 
-## Non-equivalence to function wrapper
+### Non-equivalence to function wrapper
 
 Because of the equivalence I just showed,
 many people may then believe that conditional expressions
@@ -567,7 +567,7 @@ and the second argument evaluates to `"A"`,
 but the third argument raises an error!
 
 
-# Precedence
+## Precedence
 
 Conditional expressions are the expressions with lowest precedence,
 [according to the documentation][docs-precedence].
@@ -646,7 +646,7 @@ the `+` “pulled” the neighbouring `10` and it's the whole
 evaluates to Truthy.
 
 
-# Conditional expressions that evaluate to Booleans
+## Conditional expressions that evaluate to Booleans
 
 Before showing good usage examples of conditional expressions,
 let me just go ahead and show you something you should _avoid_
@@ -708,7 +708,7 @@ is when assigning default values to variables.
 Some of these default values can be assigned with [Boolean short-circuiting][pydont-boolean-short-circuiting-defaults], using the `or` operator.
 
 
-# Examples in code
+## Examples in code
 
 Here are a couple of examples where conditional expressions shine.
 
@@ -719,7 +719,7 @@ That's because the rationale behind conditional expressions is simple:
 pick between two values.
 
 
-## The dictionary `.get` method
+### The dictionary `.get` method
 
 The [`collections`][collections-chainmap] has a `ChainMap` class.
 This can be used to chain several dictionaries together, as I've shown in a tweet in the past:
@@ -761,7 +761,7 @@ otherwise return the default value!
 Just that.
 
 
-## Resolving paths
+### Resolving paths
 
 The module `pathlib` is great when you need to deal with paths.
 One of the functionalities provided is the `.resolve` method,
@@ -801,7 +801,7 @@ If the path is absolute, then there is no need for a base,
 because it is already there.
 
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this Pydon't, for you, on a silver platter:
 

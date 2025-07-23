@@ -11,7 +11,7 @@ This post's format will be a bit different from the usual and the first of a ser
 <!-- ^ -->
 
 
-# Problem statement
+## Problem statement
 
 Let $[ABC]$ be any triangle. We now define a transformation of the triangle which moves one vertex and leaves the other two unchanged.
 To apply a transformation, start by picking the vertex you want to move.
@@ -28,7 +28,7 @@ How/why?
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solution
+## Solution
 
 The answer to the question is _no_, one cannot apply the transformation a given number of times and get to a triangle with sides that are twice the original size. To see why, we will show that the area of the triangle remains unchanged when you apply the transformation. If we do that and if we realize that doubling up the lengths of the sides makes the area four times bigger, then we conclude that we cannot create the triangle we wished.
 

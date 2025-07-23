@@ -2,9 +2,9 @@ Today I learned how to rename a git branch from the CLI.
 
 ===
 
-# Rename a git branch
+## Rename a git branch
 
-## How to rename a local git branch
+### How to rename a local git branch
 
 To rename a _local_ git branch, you can use the command `git branch` with the option `-m`.
 
@@ -20,7 +20,7 @@ If you are in another branch, you can do
 git branch -m old-name new-name
 ```
 
-## How to rename a remote git branch
+### How to rename a remote git branch
 
 If you want to rename a remote git branch, you can just delete the old branch and push the new one.
 

@@ -22,14 +22,14 @@ _ = setInterval(
 )
 </py-script>
 
-# What is PyScript?
+## What is PyScript?
 
 In case you missed, yesterday I learned about [PyScript][pyscript-til],
 a tool that allows you to use Python inside your HTML!
 In other words, PyScript enables you to run Python on the client side.
 
 
-# How to use JavaScript functions in PyScript?
+## How to use JavaScript functions in PyScript?
 
 In order to use JavaScript functions in PyScript, you can import them from the available `js` module.
 For example, to use `console.log` from within PyScript, you just type `from js import console` in your PyScript tag.
@@ -49,7 +49,7 @@ you will find the message `Hey there, from 'console.log' inside PyScript!` in th
 Let me show another example that is slightly more involved.
 
 
-# Running a Python function periodically with `setInterval`
+## Running a Python function periodically with `setInterval`
 
 JavaScript has a function `setInterval` that lets you run a function periodically.
 If we write `from js import setInterval`, that function becomes available to us.

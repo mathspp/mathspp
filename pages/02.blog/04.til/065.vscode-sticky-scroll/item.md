@@ -4,7 +4,7 @@ Today I learned how to use VS Code's sticky scroll feature.
 
 ![A screenshot of the VS Code 1.70 sticky scroll feature.](_screenshot.webp "A screenshot of the VS Code 1.70 sticky scroll feature.")
 
-# VS Code sticky scroll
+## VS Code sticky scroll
 
 VS Code's sticky scroll feature will stick the nested structure of your code to the top of your editor.
 

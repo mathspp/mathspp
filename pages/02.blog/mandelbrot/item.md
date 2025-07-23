@@ -2,8 +2,6 @@ I have always liked the concept of fractal. They are very beautiful, they have a
 
 ===
 
-# Fractals and the Mandelbrot set
-
 ![A rendering of the Mandelbrot set](./thumbnail.webp)
 
 Despite being fond of fractals, I had never understood them because I didn't know how to mathematically define one.

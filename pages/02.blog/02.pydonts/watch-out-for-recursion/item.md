@@ -18,7 +18,7 @@ altogether.
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)
 
-# Introduction
+## Introduction
 
 In this Pydon't I am going to talk a little bit about when and why
 recursion might not be the best strategy to solve a problem.
@@ -34,13 +34,13 @@ or to say that recursion sucks.
 I *really* like recursion and I find it very elegant.
 
 
-# Watch out for recursion
+## Watch out for recursion
 
 Now that you know what is the purpose of this Pydon't,
 let me mention some things that can influence the suitability
 of recursion to solve problems.
 
-## `RecursionError`
+### `RecursionError`
 
 The first thing we will discuss is the infamous recursion depth limit
 that Python enforces.
@@ -118,7 +118,7 @@ Hence, if your function is such that it will be constantly trying to recurse
 more than the recursion depth allowed, you might want to consider a different
 solution to your problem.
 
-## No tail recursion elimination
+### No tail recursion elimination
 
 In some programming languages, the factorial function shown above
 could be tweaked -- so as to perform a tail call -- and that would
@@ -158,7 +158,7 @@ but you won't get speed gains for it.
 However, it is very easy to remove the recursion of a tail recursive function,
 and I will show you how to do it [in the examples below](#more-on-tail-recursion).
 
-## Branching overlap
+### Branching overlap
 
 Another thing to take into account when considering a recursive solution
 to a problem is:
@@ -201,7 +201,7 @@ If your function is more involved, then the time you waste on recalculations
 can become unbearable.
 
 
-## Depth-first versus breadth-first
+### Depth-first versus breadth-first
 
 Something else to take into consideration when writing recursive solutions
 to your problems is that recursive solutions are inherently depth-first in nature,
@@ -232,13 +232,13 @@ Breadth-First Search (BFS) you first explore the level you are at, and only then
 go a level deeper.
 
 
-# Examples in code
+## Examples in code
 
 I will now show some recursive code that can incur in some of the problems
 mentioned above, and will also share non-recursive versions of those same
 pieces of code.
 
-## Factorials
+### Factorials
 
 The toy example of the factorial is great because it lends itself to countless
 different implementations, and the ideas that these implementations exhibit
@@ -305,14 +305,14 @@ def factorial(n):
 If you are solving a problem and come up with different solutions,
 don't be afraid to try them out.
 
-## More on tail recursion
+### More on tail recursion
 
 Let me show you a couple of simple recursive functions,
 their tail recursive equivalents and then their non-recursive counterparts.
 I will show you the generic transformation, so that you too can rewrite any
 tail recursive function as an imperative one with ease.
 
-### List sum
+#### List sum
 
 You can implement your own `sum` recursively:
 
@@ -353,7 +353,7 @@ except now you assign them explicitly; and
 Of course there are simpler implementations for the `sum`, the point here is that
 this transformation is *generic* and *always works*.
 
-### Sorting a list
+#### Sorting a list
 
 Here is another example where we sort a list with selection sort.
 First, “regular” recursion:
@@ -398,7 +398,7 @@ def selection_sort(l):
     return partial
 ```
 
-## Traversing (a directory)
+### Traversing (a directory)
 
 The Depth-first versus Breadth-first distinction is more likely to pop
 up when you have to *traverse* something.
@@ -460,9 +460,9 @@ uses the `paths_to_process` list to keep track of the, well, paths that still
 have to be processed, which mimics recursion without actually having to recurse.
 
 
-## Keeping branching in check
+### Keeping branching in check
 
-### Overlaps
+#### Overlaps
 
 When your recursive function branches out a lot, and those branches overlap,
 you can save some computational effort by saving the values you computed so far.
@@ -514,7 +514,7 @@ print(computation_count)   # 9
 
 This shows that saving partial results can really pay off!
 
-### Writing recursive branching as loops
+#### Writing recursive branching as loops
 
 To show you how you can rewrite a recursive, branching function as a function
 that uses `while` loops we will take a look at another sorting algorithm,
@@ -616,7 +616,7 @@ the code looks:
 even though this last implementation is imperative, it is a direct translation of
 a recursive implementation and so it may not look as good as it could!
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this article, for you, on a silver platter:
 
@@ -640,7 +640,7 @@ If you liked this Pydon't be sure to leave a reaction below and share this with 
 Also, [don't forget to subscribe to the newsletter][subscribe] so you don't miss
 a single Pydon't!
 
-# References
+## References
 
  - Stack Overflow, “What is the maximum recursion depth in Python,
 and how to increase it?”,

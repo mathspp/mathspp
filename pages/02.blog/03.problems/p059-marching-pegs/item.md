@@ -8,7 +8,7 @@ How can you swap the coloured pegs if they can only march forward?
 ![](thumbnail.png "Photo of the game that inspired this post.")
 
 
-# Problem statement
+## Problem statement
 
 Imagine seven round slots:
 
@@ -63,7 +63,7 @@ This problem is based off of the puzzle you can see in the thumbnail picture,
 which you can play at [Icon Park's Museum of Illusions][museum-illusions].
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
@@ -78,7 +78,7 @@ Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
 
 
-# Solution
+## Solution
 
 To solve this problem, my best suggestion is to go one move at a time,
 and to try and think ahead 2 or 3 moves each time you are about to do something.

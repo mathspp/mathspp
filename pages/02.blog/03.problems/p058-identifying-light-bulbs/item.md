@@ -5,7 +5,7 @@ Please help me identify these 100 light bulbs by turning ON and OFF their switch
 ![](thumbnail.png "Photo by Juan Carlos Becerra on Unsplash.")
 
 
-# Problem statement
+## Problem statement
 
 I have a very peculiar room in my house.
 It's a simple room that doesn't have much decoration.
@@ -30,7 +30,7 @@ If you need any clarification whatsoever, feel free to ask in the comment sectio
 This problem was adapted from [here][source] and is licensed under [CC BY-SA 3.0][cc-by-sa-3].
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
@@ -51,7 +51,7 @@ Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
 
 
-# Solution
+## Solution
 
 We can devise a strategy that identifies $2^n$ light bulbs in $n$ trips making use of binary.
 

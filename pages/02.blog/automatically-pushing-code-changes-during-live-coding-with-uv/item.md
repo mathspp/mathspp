@@ -3,8 +3,6 @@ This article shows the small script I use to automatically push code changes whi
 ===
 
 
-# Automatically pushing code changes during live coding with uv
-
 One year ago I [wrote a short TIL article where I showed how I automatically push code changes while I'm live-coding](/blog/til/automatically-push-code-changes-during-live-coding).
 The code I shared looked like this:
 

@@ -6,7 +6,7 @@ Two realtors discuss who's netting the award for highest average commission, but
 ![](thumbnail.png "Photo by Dillon Kydd on Unsplash.")
 
 
-# Problem statement
+## Problem statement
 
 Alice and Bob are two realtors that work at the same premium real estate agency, WSH.
 Because WSH really wants to focus on selling premium properties,
@@ -36,7 +36,7 @@ Or is there a scenario in which Alice gets the prize?
 !!! Give it some thought!
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
@@ -48,7 +48,7 @@ Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
 
 
-# Solution
+## Solution
 
 Bob is wrong because there is a scenario in which Alice can win the award...
 Even though Bob had the highest average commission both in 2020 and 2021.

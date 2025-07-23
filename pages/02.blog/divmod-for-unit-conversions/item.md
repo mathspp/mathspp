@@ -3,8 +3,6 @@ This article shows how to use the Python built-in `divmod` for unit conversions.
 ===
 
 
-# `divmod` for unit conversions
-
 The built-in `divmod` is the built-in that tells me that 45813 seconds is the same as 12 hours, 43 minutes, and 33 seconds.
 But how?
 

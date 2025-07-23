@@ -2,7 +2,7 @@ This is a short and practical tutorial that guides you on how to work with case-
 
 ===
 
-# What is case insensitivity?
+## What is case insensitivity?
 
 Case-insensitivity is what allows you to do string operations without having to worry about whether characters are upper case or lower case.
 
@@ -23,7 +23,7 @@ In other words, you may not want the possibility of having three different users
 So,
 
 
-# How to work with case-insensitive strings in Python?
+## How to work with case-insensitive strings in Python?
 
 Suppose you want to create a check for new email users:
 a user can only create a new address if that address is different from all other existing addresses.
@@ -59,7 +59,7 @@ assert not is_new_email("mary@gmail.com")
 ```
 
 
-## Don't use `str.lower` for caseless comparison
+### Don't use `str.lower` for caseless comparison
 
 If your answer was to write something along the lines of `if user.lower() == address.lower():`, then you made a mistake.
 It is a very honest mistake, though, and I will explain why I say that is a mistake.
@@ -117,7 +117,7 @@ Prints characters such as:
 383 ſ
 496 ǰ
 837 ͅ
-# and many more...
+## and many more...
 """
 ```
 
@@ -126,7 +126,7 @@ These interesting characters can cause quite some trouble!
 Of course, you can restrict email addresses to only be composed of ASCII characters (the ones in `string.ascii_lowercase`) but you can't always run away from your problems by restricting the valid letters!
 
 
-## Don't use `str.upper` for caseless comparison
+### Don't use `str.upper` for caseless comparison
 
 For a pretty similar reason, you shouldn't be using `str.upper` when you want to do caseless comparison.
 So, the answer to the challenge above was _not_ `if user.upper() == address.upper():` because of a similar reason.
@@ -152,7 +152,7 @@ Prints these characters:
 ```
 
 
-## How to do caseless comparison in Python
+### How to do caseless comparison in Python
 
 The method `str.casefold` is the method that you want to use when you need to do caseless, or case-insensitive, comparisons in Python.
 This method is similar to the method `str.lower`, but it does some extra normalisation to prevent the issues we have seen above.
@@ -193,7 +193,7 @@ Now that we know how to use `str.casefold`, we can do some really interesting th
 For example, we can build [case-insensitive dictionaries][caseless-dict] or [case-insensitive sets][caseless-set]
 
 
-# How to implement a case-insensitive dictionary in Python
+## How to implement a case-insensitive dictionary in Python
 
 To implement a case-insensitive dictionary in Python, we need to use the string method `str.casefold` whenever we are setting, getting, or deleting a key from the dictionary.
 
@@ -284,7 +284,7 @@ print(d)  # {'straße': "STREET"}
 ```
 
 
-# How to implement a case-insensitive set in Python
+## How to implement a case-insensitive set in Python
 
 To implement a case-insensitive dictionary in Python, we need to use the string method `str.casefold` whenever we manipulate elements of the set, for example:
 
@@ -448,7 +448,7 @@ Similarly, we wouldn't be able to iterate over instances of `CaseInsensitiveSet2
 All in all, I just want you to be mindful of the different implications of each alternative.
 
 
-# Conclusion
+## Conclusion
 
 To conclude, the string method `str.casefold` exists to allow you to do case-insensitive operations and to work in caseless scenarios.
 In particular, working with the string methods `str.lower` or `str.upper` may fail if you are working with characters other than the ASCII letters.

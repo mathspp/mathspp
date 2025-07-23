@@ -3,8 +3,6 @@ This article gives an overview of the tools available in the module `enum` and h
 ===
 
 
-# Module `enum` overview
-
 ## Introduction
 
 The standard library module `enum` is used to create enumerations, objects that make it convenient to work with groups of related constant values.

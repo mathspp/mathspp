@@ -3,8 +3,6 @@ This article shows how I made a secret Santa draw with Python.
 ===
 
 
-# Secret Santa draw with Python
-
 Today I needed to make a Secret Santa draw for my whole family.
 There are lots of services online that do this for you, but they require giving those services the emails of my family members who will then be mercilessly spammed by said services...
 

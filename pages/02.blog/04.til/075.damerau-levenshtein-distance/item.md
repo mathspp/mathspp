@@ -3,9 +3,9 @@ Today I learned about the Damerau-Levenshtein distance used on strings in the fi
 ===
 
 
-# Damerau-Levenshtein distance
+## Damerau-Levenshtein distance
 
-## Intuitive definition
+### Intuitive definition
 
 The Damerau-Levenshtein distance is an algorithm that you can use to determine how similar two strings are to each other.
 This algorithm works in quite an intuitive way, and I like to think of it like this:
@@ -39,7 +39,7 @@ Here are some concrete examples, assuming `dl` computes the DL distance:
 ```
 
 
-## Recursive definition
+### Recursive definition
 
 The DL distance can be defined recursively in a “straightforward way” once you realise how to translate the math into English (or whatever your native language is!).
 
@@ -65,7 +65,7 @@ The $1_{a_i \neq b_j}$ translates into `int(a[i] != b[j])`, which is 1 if the tw
 We can turn the math into code as seen below.
 
 
-## Recursive implementation of the Damerau-Levenshtein distance in Python
+### Recursive implementation of the Damerau-Levenshtein distance in Python
 
 ```py
 from functools import lru_cache

@@ -2,7 +2,7 @@ Today I learned how to skip tests on Microsoft Windows in `pytest`.
 
 ===
 
-# `pytest.mark.skip`
+## `pytest.mark.skip`
 
 In `pytest`, you can skip a specific test by using the decorator `pytest.mark.skip`.
 
@@ -24,7 +24,7 @@ However, the decorator `pytest.mark.skip` will _always_ skip your test.
 Sometimes, you only want to skip under certain circumstances.
 
 
-# How to conditionally skip a test in `pytest`?
+## How to conditionally skip a test in `pytest`?
 
 If you want to skip a `pytest` test conditionally, you need to use the decorator `pytest.mark.skipif`.
 
@@ -58,7 +58,7 @@ We can do a similar thing if we only want a test to run under Windows.
 Or if we do _not_ want a test to run under Windows.
 
 
-# How to skip a test on Microsoft Windows
+## How to skip a test on Microsoft Windows
 
 If you want to skip a test if you are running on Windows, you would mark it with `skipif` and then you check if the platform is Windows.
 
@@ -75,7 +75,7 @@ def test_something_not_on_windows():
     assert ...
 ```
 
-# How to skip a whole test file
+## How to skip a whole test file
 
 If you want to skip a whole test file, you can assign the result of `skipif` to the global variable `pytestmark`.
 For example, the file below would only run its tests if you were running on Windows and specifically with Python 3.10:
@@ -99,7 +99,7 @@ def test_three():
 ```
 
 
-# Why would you skip some tests?
+## Why would you skip some tests?
 
 There are several plausible reasons why you'd want to skip a couple of tests in “real life”.
 

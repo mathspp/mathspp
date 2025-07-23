@@ -5,7 +5,7 @@ This is a short tutorial on how to use modal screens with Textual.
 
 ! This tutorial was written with/for [Textual] 0.24.1.
 
-# Introduction
+## Introduction
 
 This short tutorial will teach you how to use modal screens in [Textual].
 
@@ -16,9 +16,9 @@ As a quick example, here is [my TODO app][todo-blog] showing a modal to confirm 
 ![](./_todo_with_modal.webp)
 
 
-# Building a modal screen
+## Building a modal screen
 
-## Inheriting from `ModalScreen`
+### Inheriting from `ModalScreen`
 
 The first modal screen we will build is the exit screen from the demo above.
 A modal screen needs to inherit from `ModalScreen`, so that is the first thing we need to do:
@@ -32,7 +32,7 @@ class ExitScreen(ModalScreen):
 ```
 
 
-## Composing the screen
+### Composing the screen
 
 Next, we need to compose the children widgets that we will need in this screen.
 We need a label and two buttons, so let us yield them:
@@ -77,7 +77,7 @@ This already runs, although it doesn't do much:
 ![](./_modal_demo_1.webp)
 
 
-## Wiring up the modal
+### Wiring up the modal
 
 A modal screen is just like a regular screen in terms of its functioning, so we can wire the buttons in the usual way:
 
@@ -131,9 +131,9 @@ Now, our modal screen works _although_ it does _not_ look like a modal screen:
 We will style the screen next.
 
 
-## Styling the modal screen
+### Styling the modal screen
 
-### Make it look like a modal
+#### Make it look like a modal
 
 The first thing we will do is make the modal screen _look_ like a modal screen.
 To do this, we will wrap all the children of the modal screen in a container so that we can align them in the middle of the modal screen.
@@ -227,16 +227,16 @@ This creates a modal screen that looks like this:
 This already looks quite good!
 
 
-### Styling tip
+#### Styling tip
 
 When you are writing CSS for your apps, screens, components, etc, my suggestion is that you always use the [live editing][textual-docs-live-editing] features of Textual.
 
 In the above, I just added the CSS into the attribute `DEFAULT_CSS` because I already knew what CSS I wanted to add.
 
 
-# Getting a result from a modal
+## Getting a result from a modal
 
-## Creating the modal
+### Creating the modal
 
 Now that we have seen how to create a modal, I will show you how to get a result back from the modal.
 For example, if your modal asks for some user input, how can you get that input back?
@@ -314,7 +314,7 @@ if __name__ == "__main__":
 Now we can answer the question: how can we get the input value back?
 
 
-## Dismissing a modal with a result
+### Dismissing a modal with a result
 
 To get a result out of a modal screen, we need to call the method `dismiss` with the result as an argument.
 We want to do this when the input is submitted, so we can do it in an event handler:
@@ -334,7 +334,7 @@ Open the model, writing something, and then press <kbd>Enter</kbd>.
 This will close your modal screen but it won't do anything with the result.
 
 
-## Handling a modal result with a callback
+### Handling a modal result with a callback
 
 To _handle_ the result of the modal screen, we need to pass a callback when we push the modal screen in the first place.
 For our dummy app, let us write the input value to the text log, so we can write a callback that accepts the result string and writes it:
@@ -369,7 +369,7 @@ You can do this as many times as you want:
 ![](./_modal_result_demo.webp)
 
 
-# Conclusion
+## Conclusion
 
 This short tutorial showed you how to use modal screens, how to create them and dismiss them, and how to get results back into the app.
 

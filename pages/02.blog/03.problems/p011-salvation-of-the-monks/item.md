@@ -3,7 +3,7 @@ How can 2018 monks find eternal peace?
 ===
 
 
-# Problem statement
+## Problem statement
 
 On an island far from the bad, vain, and consumerist habits of today's societies, live $2018$ silent monks.
 Among other things, the monks renounced vanity and thus they never saw themselves on the mirror nor on any other reflecting surface.
@@ -20,7 +20,7 @@ Depending on the number $k$ of monks with blue eyes ($k > 0$), will the monks sa
 In how many days?
 
 
-# Solution
+## Solution
 
 To arrive at the solution, we start with a small number of monks with blue eyes and keep extending the train of thought to increasing values of $k$.
 Let us start with $k = 1$.

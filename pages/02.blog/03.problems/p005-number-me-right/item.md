@@ -10,7 +10,7 @@ This problem is a really interesting problem I solved two times. The first time 
 ===
 
 
-# Problem statement
+## Problem statement
 
 Take a chessboard and extend it indefinitely upwards and to the right. In the bottom leftmost corner you put a $0$. For every other cell, you insert the smallest non-negative integer that hasn't been used neither in the same row, to the left of the cell, nor in the same column, below it. So, for example, the first row will have the numbers $0, 1, 2, 3, \cdots$. What is the number that appears in the $1997$th row, $2018$th column?
 
@@ -19,7 +19,7 @@ Take a chessboard and extend it indefinitely upwards and to the right. In the bo
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solution
+## Solution
 
 The key here is to understand the way in which the board is filled. When I first solved the problem I started by filling a board on my own, to get a feel for the rules imposed. Doing so should make clear that, for example,
 

@@ -5,7 +5,7 @@ Today I learned how to use the function `pandas.show_versions` to get system dia
 ![A picture of panda (the mammal) with the words "pandas" and "show_versions()" written.](thumbnail.webp "Background photo by Elena Loshina on Unsplash.")
 
 
-# What is the pandas function `show_versions` for?
+## What is the pandas function `show_versions` for?
 
 The function `pandas.show_versions` is a very useful function when you need to get some information about your system and/or the versions of installed packages that are related to pandas.
 
@@ -102,7 +102,7 @@ In conclusion, you would typically use the function `show_versions` if you were 
 `show_versions` isn't the kind of function you will actually use in your data analysis work.
 
 
-# How to check the pandas version?
+## How to check the pandas version?
 
 If you want to check the version of your pandas installation you can use the function `pandas.show_versions`,
 but you can also **import pandas and then check the dunder attribute `__version__`**:

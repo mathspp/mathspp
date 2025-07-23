@@ -6,13 +6,13 @@ Today's problem is really easy to state and doesn't require advanced techniques 
 After you know the solution, you can reverse the question and it will sound like a very intriguing riddle you can ask your friends.
 
 
-# Problem statement
+## Problem statement
 
 Assume that the minute and hour hands of your clock are overlapping.
 How long will it take for that to happen again?
 
 
-# Solution
+## Solution
 
 It is quite easy to come up with the solution for the problem if we think the right way.
 In fact, this can be solved with equations involving angles but we won't follow that path.
@@ -39,6 +39,6 @@ Thus, over the course of 12h they overlapped exactly 11 times, meaning we only h
 Reversing the question, one can ask _"what happens every hour, five minutes and twenty-seven seconds?"_, which sounds like a very interesting riddle!
 
 
-# Bonus question
+## Bonus question
 
 What's the answer for the same question, but with the hours/seconds or minutes/seconds hands:

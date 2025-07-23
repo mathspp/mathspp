@@ -8,7 +8,7 @@ Learn how to use properties to add dynamic behaviour to your attributes.
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 Properties, defined via the `property` built-in, are a Python feature that lets you add dynamic behaviour behind what is typically a static interface: an attribute.
 Properties also have other benefits and use cases, and we will cover them here.
@@ -30,14 +30,14 @@ In this Pydon't, you will
 <!--^-->
 
 
-# What is a property?
+## What is a property?
 
 A property is an attribute that is computed dynamically.
 That's it.
 And you will understand what this means in a jiffy!
 
 
-## The problem
+### The problem
 
 This is a class `Person` with three vanilla attributes:
 
@@ -62,7 +62,7 @@ I'll give you a hint:
 'John Doe'
 >>> john.last = "Smith"
 >>> john.name
-# ?
+## ?
 ```
 
 When you implement `name` as a regular attribute, it can go out of sync when you change the attributes upon which `name` depended on.
@@ -134,7 +134,7 @@ However, it serves as an excellent starting point for our discussion!
 How can we replace this “getter method” with a property?
 
 
-## An elegant solution
+### An elegant solution
 
 The Pythonic solution to this problem of computing an attribute dynamically – because the name of a person is essentially just an attribute of a person – comes in the form of properties!
 
@@ -165,9 +165,9 @@ Congratulations!
 You just wrote your first property!
 
 
-# Common property use cases
+## Common property use cases
 
-## Dynamic attribute computation
+### Dynamic attribute computation
 
 As we have seen before, properties are excellent for when you want to have an attribute that depends dynamically on something else.
 For the example above, the attribute `Person.name` depended on two other attributes:
@@ -241,7 +241,7 @@ You will find many such usages of `@property` there.
 For example, `path.name` is a property:
 
 ```py
-# datetime.py, Python 3.11
+## datetime.py, Python 3.11
 class PurePath(object):
     # ...
 
@@ -283,7 +283,7 @@ If you get it right, you should be able to use the class `Colour` like so:
 ```
 
 
-## When should I use a property?
+### When should I use a property?
 
 There is no hard rule for when you should use a property attribute versus a getter method.
 There seems to be some consensus, however, on some indicators of times when it might be a good idea to use a property:
@@ -300,7 +300,7 @@ Don't be afraid to try them out, and rest assured that it is not the end of the 
 On top of the rules of thumb listed above, if you realise you need any of the functionalities that will be listed next, then that might be an excellent indicator of your need for a property.
 
 
-## Read-only attributes
+### Read-only attributes
 
 One thing that we haven't noted is that the properties that we have defined so far cannot be assigned to.
 Let us go back to the `Person` class with a `name` property:
@@ -360,7 +360,7 @@ However, if they still choose to change the underlying private attributes, they 
 This pattern for read-only attributes can also be found in the standard library, for example in the class `Fraction` of the module `fractions`:
 
 ```py
-# fractions.py, Python 3.11
+## fractions.py, Python 3.11
 
 class Fraction(numbers.Rational):
     # ...
@@ -394,9 +394,9 @@ Fraction(3, 2)
 ```
 
 
-# Properties with setters
+## Properties with setters
 
-## The setter decorator
+### The setter decorator
 
 So far, we have used properties only to read attributes from objects.
 However, properties can also be used to provide more control over how we _set_ attributes.
@@ -456,7 +456,7 @@ The module `urllib` from the standard library also follows a similar pattern.
 The object `Request` contains a property `full_url` that can be set via a property setter:
 
 ```py
-# urllib/request.py, Python 3.11
+## urllib/request.py, Python 3.11
 class Request:
     # ...
 
@@ -490,7 +490,7 @@ The setter should make this interaction possible:
 ```
 
 
-## What is the error message “property of object has no setter”?
+### What is the error message “property of object has no setter”?
 
 To conclude this discussion on property setters, let us go back to the `AttributeError` exception that was raised when we first tried to set the value of `name` to something else:
 
@@ -512,7 +512,7 @@ If you are messing with your own code, it probably means you forgot to define th
 If you are using a module you installed, it probably means you are dealing with an attribute that is supposed to be read-only.
 
 
-# Property deleters
+## Property deleters
 
 Property attributes can have one more functionality associated with them, and that's the third behaviour that is associated with general attributes.
 In fact, attributes can be:
@@ -580,7 +580,7 @@ For example, if you use other private attributes to cache information about your
 As an example, we can take a look at the `Request.full_url` property from the module `urllib` again:
 
 ```py
-# urllib/request.py, Python 3.11
+## urllib/request.py, Python 3.11
 class Request:
     # ...
 
@@ -602,7 +602,7 @@ Notice how the deleter cleans up the attributes `_full_url` _and_ `fragment`, wh
 The `selector`, which is also cleared inside the deleter, was set inside the call to `_parse`.
 
 
-# The property descriptor
+## The property descriptor
 
 Before we conclude this Pydon't, let us take a look at the nature of the built-in `property`.
 We have used `property` as a decorator, so far, but is `property` really a decorator..?
@@ -610,7 +610,7 @@ We have used `property` as a decorator, so far, but is `property` really a decor
 [The documentation][property-docs] shows the built-in `property` used in a different way:
 
 ```py
-# Pasted from the docs.
+## Pasted from the docs.
 class C:
     def __init__(self):
         self._x = None
@@ -630,7 +630,7 @@ class C:
 The definition of the property attribute `x`, seen above, is equivalent to the definition seen below, which uses the syntax we saw before:
 
 ```py
-# Using the syntax we have seen.
+## Using the syntax we have seen.
 class C:
     def __init__(self):
         self._x = None
@@ -653,7 +653,7 @@ Well, it is not entirely equivalent.
 The first definition, pasted from the docs, defines methods that can be used directly:
 
 ```pycon
-# Using C from the docs.
+## Using C from the docs.
 >>> c = C()
 >>> c.setx(3)
 >>> c.getx()
@@ -663,7 +663,7 @@ The first definition, pasted from the docs, defines methods that can be used dir
 As a real-life example of this behaviour, the module `calendar` does something similar:
 
 ```py
-# calendar.py, Python 3.11
+## calendar.py, Python 3.11
 class Calendar(object):
     """
     Base calendar class. This class doesn't do any formatting. It simply
@@ -694,7 +694,7 @@ It may sound insane the first time you hear about it, but it is all thanks to _d
 Descriptors are a really neat topic that will be covered next!
 
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this Pydon't, for you, on a silver platter:
 

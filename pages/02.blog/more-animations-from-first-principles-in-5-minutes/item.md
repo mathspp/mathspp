@@ -8,8 +8,6 @@ Create a zooming animation from first principles in Python. In 5 minutes. Kind o
 </video>
 
 
-# (More) Animations from first principles (in 5 minutes)
-
 This is a follow-up to my recent article called [“Animations from first principles (in 5 minutes)”](/blog/animations-from-first-principles-in-5-minutes).
 In that article, we created a simple animation with Python and pygame.
 

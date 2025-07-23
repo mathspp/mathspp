@@ -2,7 +2,7 @@ Today I learned how to get the size of the terminal your code is running on.
 
 ===
 
-# Get terminal size
+## Get terminal size
 
 The module `shutil` has a method `.get_terminal_size` that you can use to get the terminal size you're running on.
 For example, I stretched out my terminal, made it very short, and ran this code:

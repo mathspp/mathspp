@@ -14,7 +14,7 @@ Let's settle this once and for all!
 ![A $7 \times 10$ grid with small, coloured squares.](thumbnail.webp)
 
 
-# Problem statement
+## Problem statement
 
 The image above is a colourful grid that has $7$ rows and $10$ columns.
 How many squares are hiding in that grid?
@@ -34,7 +34,7 @@ How many squares are there in this smaller $3 \times 3$ grid?
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solution
+## Solution
 
 Let's count the squares in this 7 by 10 grid:
 

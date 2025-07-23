@@ -4,7 +4,7 @@ Today I learned about the DARPA network challenge and the power of referral syst
 
 ![A red balloon held by a hand.](thumbnail.png "Photo by Blake Cheek on Unsplash")
 
-# DARPA network challenge
+## DARPA network challenge
 
 The DARPA network challenge was a challenge that took place in 2009 in the United States.
 
@@ -17,7 +17,7 @@ Its purpose was to study the effect that Internet and social networking could ha
 
 The challenge had an associated pecuniary prize worth $40,000.
 
-# Winning strategy
+## Winning strategy
 
 The challenge was won by an MIT team who employed a networking referral strategy:
 each of the 10 balloons was defined to be worth \$4,000 (total prize divided by total number of balloons).

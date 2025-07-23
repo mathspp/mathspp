@@ -12,7 +12,7 @@ Two friends were bored and decided to play a game... a mathematical game with a 
 
 <!-- ^ -->
 
-# Problem statement
+## Problem statement
 
 John and Mary have a bag full of integer numbers. In fact, the bag has $10^{10^{10}}$ integers, each written on a plastic card, and the sum of all the $10^{10^{10}}$ integers in the bag is $0$. In turns, Mary and John are going to play with the bag by doing the following:
 
@@ -28,7 +28,7 @@ Is there any initial number configuration and/or set of moves for which it is po
 !!!! **Hint**: look for an invariant of the game! That is, find a property of the game that does _not_ change when Mary and John play it.
 
 
-# Solution
+## Solution
 
 (If you spot a mistake in my solution _please_ let me know in the comments below.)
 

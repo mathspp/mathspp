@@ -4,7 +4,7 @@ This is an overview of those tools.
 ===
 
 
-# Introduction
+## Introduction
 
 All Python developers should know about the module `collections`.
 The module `collections` contains many useful tools that can make you a much more productive programmer.
@@ -20,7 +20,7 @@ The module `collections` also provides the tools `OrderedDict`, `UserDict`, `Use
 but we will not cover them in this short article.
 
 
-# `namedtuple`
+## `namedtuple`
 
 The `namedtuple` is like a factory of tuples.
 You can use it to define new "types of tuples" for which the values have names.
@@ -29,29 +29,29 @@ The documentation example is quite good:
 
 ```pycon
 >>> from collections import namedtuple
-# Basic example
+## Basic example
 >>> Point = namedtuple('Point', ['x', 'y'])
 
-# instantiate with positional or keyword arguments
+## instantiate with positional or keyword arguments
 >>> p = Point(11, y=22)
 
-# indexable like the plain tuple (11, 22)
+## indexable like the plain tuple (11, 22)
 >>> p[0] + p[1]
 33
-# unpack like a regular tuple
+## unpack like a regular tuple
 >>> x, y = p
 >>> x, y
 (11, 22)
 
-# fields also accessible by name
+## fields also accessible by name
 >>> p.x + p.y
 33
-# readable __repr__ with a name=value style
+## readable __repr__ with a name=value style
 >>> p
 Point(x=11, y=22)
 ```
 
-# `deque`
+## `deque`
 
 The collection `deque` is like a doubly-linked list.
 When using a `deque`, you can append and pop elements from both ends, fast.
@@ -89,7 +89,7 @@ deque([4, 3, 0, 1])
 You can learn how to use the data structure `deque` by reading [this tutorial](/blog/python-deque-tutorial), which includes 7 usage examples.
 
 
-# `ChainMap`
+## `ChainMap`
 
 The `ChainMap` does exactly what it says on its name:
 it chains multiple mappings (think of dictionaries) without having to explicitly merge them.
@@ -104,16 +104,16 @@ With a `ChainMap`, I can combine them easily:
 ```pycon
 >>> from collections import ChainMap
 
-# Default and user configurations:
+## Default and user configurations:
 >>> default = {"user": None, "has_twitter": False}
 >>> rodrigo = {"user": "@mathsppblog"}
 
-# Merge to create global config:
+## Merge to create global config:
 >>> config = ChainMap(rodrigo, default)
 >>> config["user"]  # First dict (rodrigo) has precedence.
 '@mathsppblog'
 
-# Not available in `rodrigo`, fetch from `default`
+## Not available in `rodrigo`, fetch from `default`
 >>> config["has_twitter"]
 False
 
@@ -134,7 +134,7 @@ This may not be what you want all the time.
 Thankfully, you can still update the dictionaries separately and the changes will be reflected on the `ChainMap` object!
 
 
-# `Counter`
+## `Counter`
 
 The `Counter` is one of my favourites from the standard library!
 The `Counter` is like a dictionary that counts elements from what you feed it.
@@ -178,7 +178,7 @@ Counters also have a default value of `0` for values that have never been found.
 ```
 
 
-# `defaultdict`
+## `defaultdict`
 
 The `defaultdict` also has a very revealing name:
 it is a dictionary with a default value.
@@ -218,7 +218,7 @@ Notice how the `for` loop contains a single expression `people_by_country[countr
 That is because `defaultdict` will call `list()` in that case to create an empty list for us!
 
 
-# Conclusion
+## Conclusion
 
 Hopefully, this article gave you an overview of some of the useful tools that the module `collections` contains:
 

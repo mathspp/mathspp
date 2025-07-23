@@ -3,13 +3,13 @@ Today I learned about context variables from the module `contextvars` and how to
 ===
 
 
-# Context variables
+## Context variables
 
 I was doing some work on [Textual], the project I work on for my job, and I came across the module `contextvars`.
 Textual uses `contextvars.ContextVar` in a couple of places and so I decided to write this article to explore how they work.
 
 
-## What's the point of context variables?
+### What's the point of context variables?
 
 Context variables can store data that is available across different function calls without having to pass them as arguments.
 They are particularly useful in asynchronous code.
@@ -20,7 +20,7 @@ Another alternative would be creating global variables, but I'm guessing that wo
 I personally don't know, but if global variables worked just fine, I'm sure we wouldn't have a module just for this.
 
 
-## Creating a context variable
+### Creating a context variable
 
 To create a context variable, you use `ContextVar` from the module `contextvars`.
 To set and get the value of the variable, you use the methods `.set` and `.get`, respectively:
@@ -38,7 +38,7 @@ As per the documentation, context variables should be declared at the top level 
 In practice, this means you should be careful and never _create_ context variables inside methods or functions.
 
 
-### Default value
+#### Default value
 
 A context variable can also be created with a default value:
 
@@ -53,7 +53,7 @@ print(name.get())  # Rodrigo
 This value is used if you try to get a variable before setting it first.
 
 
-### Default value for `.get`
+#### Default value for `.get`
 
 Finally, the method `.get` also accepts a default value, similar to the method `dict.get`:
 
@@ -92,7 +92,7 @@ name = ContextVar("name")
 print(name.get())  # LookupError
 ```
 
-## Context variables are available across function calls
+### Context variables are available across function calls
 
 As I mentioned previously, a context variable can be accessed from functions and its value will be available:
 
@@ -112,7 +112,7 @@ print_name()  # Rodrigo
 ```
 
 
-## Different contexts for context variables
+### Different contexts for context variables
 
 Context variables become more useful when the code is such that you might get different _contexts_ in which the variable is being used.
 When that is the case, the variable keeps track of its state for each context.
@@ -133,7 +133,7 @@ import asyncio
 from contextvars import ContextVar
 
 
-# Create a context variable.
+## Create a context variable.
 number = ContextVar("number", default=0)
 
 
@@ -185,14 +185,14 @@ This shows that _using a coroutine doesn't automatically create a new context_.
 However, _creating a task creates a new context_.
 
 
-## Context variables and mutable values
+### Context variables and mutable values
 
 The final exploration that I made has to do with mutable values.
 If a context variable is set to a mutable value and I mutate that value, does the context variable reflect that change?
 I guess that it does, but I wanted to be sure, so I ran a couple of experiments.
 
 
-### Mutable values in a single context
+#### Mutable values in a single context
 
 The first experiment that I ran contained a single context.
 If I have a mutable value (a list) and I get it, and then mutate it (by appending to it), does the change reflect in the context variable?
@@ -215,7 +215,7 @@ This raises a more interesting question:
 if I have a mutable value that I access from within a different context and mutate it, does the change get reflected on the other context?
 
 
-### Mutable values across multiple contexts
+#### Mutable values across multiple contexts
 
 The code below is a modification of the previous example with multiple contexts.
 This time, instead of a single number we'll have a list (of numbers), and instead of using `.set`, we'll append to the list of numbers.
@@ -273,7 +273,7 @@ As you can see, appending the `42` in a different context made the change visibl
 You have to be _very_ careful with this!
 
 
-## Conclusion
+### Conclusion
 
 Context variables look like a very powerful and flexible tool that obviously comes with some interesting associated caveats.
 

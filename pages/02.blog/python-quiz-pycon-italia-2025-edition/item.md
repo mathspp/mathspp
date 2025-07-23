@@ -6,8 +6,6 @@ Answer this quiz to test your knowledge about the Python language, community, an
 <link rel="stylesheet" href="/user/themes/myquark/css/quiz-custom.css">
 
 
-# PyCon Italy 2025 quiz
-
 These are the questions asked during the PyCon Italy 2025 quiz.
 They will test your knowledge of the Python language, the community, and of PyCon Italy 2025.
 (Unless explicitly stated, questions refer to CPython 3.13 and “today” refers to the 30th of May of 2025.)

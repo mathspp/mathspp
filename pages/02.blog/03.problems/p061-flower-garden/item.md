@@ -6,7 +6,7 @@ Three mathematicians discuss a beautiful flower garden and the coloured flowers 
 ![](thumbnail.png "Photo by Norikio Yamamoto on Unsplash.")
 
 
-# Problem statement
+## Problem statement
 
 Three mathematicians were discussing a beautiful flower garden.
 The first mathematician said:
@@ -35,7 +35,7 @@ Is the third mathematician right? Or wrong? Why?
 This problem is from the amazing [book “To Mock a Mockingbird”][mock-mockingbird] by the mathematician Raymond Smullyan.[^1]
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
@@ -49,7 +49,7 @@ Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
 
 
-# Solution
+## Solution
 
 The third mathematician is right.
 

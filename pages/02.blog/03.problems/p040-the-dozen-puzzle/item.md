@@ -12,7 +12,7 @@ Can you figure out everyone's numbers?
 
 ![](thumbnail.png "Photo by Kelly Neil on Unsplash")
 
-# Problem statement
+## Problem statement
 
 Three friends, Alice, Bob, and Charlie, are assigned three different
 positive whole numbers by their fourth friend, Diane.
@@ -32,7 +32,7 @@ What were Alice's, Bob's, and Charlie's numbers?
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
@@ -46,7 +46,7 @@ who sent me their correct solutions:
 Join the list of solvers by [emailing me][email] your solution!
 
 
-# Solution
+## Solution
 
 For Bob to know Alice's and Charlie's numbers,
 Bob's number must be big enough so that Charlie's number doesn't have much wiggle room.

@@ -11,7 +11,7 @@ I find the problem in this post rather fun to think about because it is a proble
 ![A picture showing a possible game move](beans.webp)
 
 
-# Problem statement
+## Problem statement
 
 Suppose you have two stacks of beans, one with $19$ and another with $20$.
 John and Mary are going to play a game with those beans: each turn, one of them takes $2n$ beans from one of the stacks and puts $n$ beans on the other stack, where $n$ is at least $1$.
@@ -39,7 +39,7 @@ The computer goes second by default but you can change that by writing a `1` in 
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solution
+## Solution
 
 We will show that John has a winning strategy.
 Instead of just proving it, I will try to recreate the train of thought it took me to get there.

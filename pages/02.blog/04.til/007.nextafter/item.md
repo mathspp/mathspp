@@ -13,7 +13,7 @@ Today I learned about the `math.nextafter` method.
 ![Code snippet showing the `nextafter` method.](thumbnail.webp)
 
 
-# `math.nextafter`
+## `math.nextafter`
 
 0 is a neat number, isn't it?
 

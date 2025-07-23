@@ -5,7 +5,7 @@ Today I learned how to use the package `rich` by Will McGugan.
 ![](thumbnail.webp)
 
 
-# `rich`
+## `rich`
 
 The package `rich` is a Python package created by [Will McGugan][will].
 Honestly, I think it's my favourite 3rd-party package,
@@ -23,7 +23,7 @@ Just [take a peek at the docs][rich-docs].
 so you can take a look at its code and learn a ton while doing so.
 
 
-# How to install `rich`
+## How to install `rich`
 
 `rich` is on PyPI and installing it is straightforward:
 
@@ -34,9 +34,9 @@ python -m pip install rich
 Now I'll show you some of the cool things you can do with `rich`.
 
 
-# `rich.print`
+## `rich.print`
 
-## Styling your print statements
+### Styling your print statements
 
 `rich` has a function called `print` that works exactly like the built-in `print`...
 Except it does much more!
@@ -59,7 +59,7 @@ Here is a screenshot for you:
 ![The message "Hello world!" output three times, once in red and green, the second time underlined, and the third time with black text on a white background.](_rich_print.webp "Terminal output of styled print statements.")
 
 
-## Pretty printing Python objects
+### Pretty printing Python objects
 
 The `print` function from `rich` also does pretty-printing of your Python objects, by default.
 For example, here is the example output from printing `locals()`:
@@ -70,7 +70,7 @@ This does syntax highlighting for your Python objects, which is great,
 because the colours encode information, making it easier for your brain to extract the information it needs.
 
 
-## Persistent highlighting in the REPL
+### Persistent highlighting in the REPL
 
 If you enjoy the syntax highlighting of your objects in the REPL, you can make it more “permanent” with the following code:
 
@@ -99,7 +99,7 @@ Here is a screenshot of the REPL output:
 ![The session output before and after running `pretty.install()`; the first output is all white on black and the second output has syntax highlighting.](_rich_pretty_install.webp)
 
 
-# `rich.inspect`
+## `rich.inspect`
 
 I hope you are familiar with the built-in `help`, because if you are, you probably love it.
 Then, let me introduce you to `rich.inspect`, which is like `help` on strong steroids!

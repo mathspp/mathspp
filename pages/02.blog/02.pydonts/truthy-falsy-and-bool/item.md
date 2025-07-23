@@ -19,7 +19,7 @@ objects if you define the `__bool__` dunder method.
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)
 
-# “Truthy” and “Falsy”
+## “Truthy” and “Falsy”
 
 Quoting the Python documentation,
 
@@ -110,7 +110,7 @@ or sequences (types of objects for which it generally makes sense to use `len` o
 are considered Falsy when they are empty, i.e., when they have length equal to zero.
 But there is one more case that gives a Falsy value:
 
-# The `__bool__` dunder method
+## The `__bool__` dunder method
 
  - An object has a Falsy value (that is, is interpreted as `False`) if
 it defines a `__bool__` method that returns `False`.
@@ -166,11 +166,11 @@ apply!
 ! Finally, if that also fails, Python defaults to giving a Truthy
 ! value to the object.
 
-# Remarks
+## Remarks
 
 Now a couple of remarks about the functioning of Truthy and Falsy values.
 
-## A note about containers with falsy objects
+### A note about containers with falsy objects
 
 We said that things like the empty list, zero,
 and the empty dictionary are Falsy.
@@ -191,7 +191,7 @@ True
 True
 ```
 
-## A note about checking for `None`
+### A note about checking for `None`
 
 As mentioned above, `None` is Falsy:
 
@@ -258,7 +258,7 @@ do not rely on the Truthy/Falsy value of the return value.
 Instead, check explicitly if the return value is `None` or not:
 
 ```py
-# Use                       # Avoid
+## Use                       # Avoid
 if returned is None:        # if not returned:
     # ...                   #     # ...
 if returned is not None:    # if returned:
@@ -267,13 +267,13 @@ if returned is not None:    # if returned:
 
 This recommendation is to avoid problems like the one outlined above.
 
-# Examples in code
+## Examples in code
 
 Now I will show you some examples of places where using the Truthy
 and Falsy values of Python objects allows you to write more Pythonic
 code.
 
-## 2D point
+### 2D point
 
 Let us implement a simple class to represent points in a 2D plane,
 which could be an image, a plot or something else.
@@ -283,7 +283,7 @@ so that the origin (the point `Point2D(0, 0)`) is Falsy and all other
 points are Truthy:
 
 ```py
-# From https://mathspp.com/blog/pydonts/pydont-confuse-str-and-repr
+## From https://mathspp.com/blog/pydonts/pydont-confuse-str-and-repr
 class Point2D:
     """A class to represent points in a 2D space."""
 
@@ -316,7 +316,7 @@ We want the `Point2D` to be Falsy when `self.x` is `0` and
 if any of `self.x` or `self.y` are Truthy (that is,
 different from `0`)!
 
-## Handling error codes or error messages
+### Handling error codes or error messages
 
 It is quite common for functions to return “error codes”:
 integers that encode specific things that did not go quite right,
@@ -337,14 +337,14 @@ return_value, error_code = some_nice_function()
 if error_code:
     # Something went wrong, act accordingly.
 
-# Alternatively, something like:
+## Alternatively, something like:
 return_value, error_msg = some_other_nice_function()
 if error_msg:
     print(error_msg)
     # Something went wrong, act accordingly.
 ```
 
-## Processing data
+### Processing data
 
 It is also very common to use Truthy and Falsy values to measure
 if there is still data to be processed.
@@ -356,7 +356,7 @@ we saw a `while` loop vaguely similar to this one:
 input_lines = []
 while (s := input()):
     input_lines.append(s)
-# No more lines to read.
+## No more lines to read.
 print(len(input_lines))
 ```
 
@@ -404,7 +404,7 @@ notice the `while` statement, and then the `if: ... else: ...`
 block that either prints something, or extends the `paths_to_process` list.
 
 
-# Conclusion
+## Conclusion
 
  - Python's Truthy and Falsy values allow you to rewrite common
 conditions in a way that is more readable and, therefore, Pythonic.
@@ -419,7 +419,7 @@ If you liked this Pydon't be sure to leave a reaction below and share this with 
 Also, [don't forget to subscribe to the newsletter][subscribe] so you don't miss
 a single Pydon't!
 
-# References
+## References
 
  - Python 3 Documentation, The Python Language Reference, Data model, __bool__, [https://docs.python.org/3/reference/datamodel.html#object.__bool__](https://docs.python.org/3/reference/datamodel.html#object.__bool__).
  - Python 3 Documentation, The Python Standard Library, Truth Value Testing, [https://docs.python.org/3/library/stdtypes.html#truth-value-testing](https://docs.python.org/3/library/stdtypes.html#truth-value-testing).

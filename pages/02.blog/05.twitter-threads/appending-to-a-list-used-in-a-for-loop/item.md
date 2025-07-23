@@ -19,7 +19,7 @@ Join me as we explore what happens when you keep appending to a list you are goi
 ===
 
 
-# Appending to a list used in a `for` loop
+## Appending to a list used in a `for` loop
 
 Yesterday I posted a Python 🐍 code snippet with a major typo 👇
 

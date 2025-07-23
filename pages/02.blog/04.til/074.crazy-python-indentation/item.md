@@ -3,7 +3,7 @@ Today I learned that indentation in Python can be quite crazy.
 ===
 
 
-# Python indentation
+## Python indentation
 
 In Python, we use indentation to determine where code blocks start and end.
 Turns out, Python is very lax about indentation.
@@ -14,7 +14,7 @@ This is a quick overview of the crazy things I found.
 ! That doesn't mean you _should_ do them!
 
 
-## How I thought indentation worked
+### How I thought indentation worked
 
 I thought that, in Python, you had to be pretty consistent with your indentation.
 I thought you needed to:
@@ -25,7 +25,7 @@ I thought you needed to:
 Oh, was I wrong...
 
 
-## Inconsistent depth
+### Inconsistent depth
 
 First of all, it looks like your indentation depth can vary from block to block.
 For example, if you paste the code below into a Python file and run it, it will work without any issues:
@@ -105,7 +105,7 @@ I want to say that it gets worse, but this is pretty bad already.
 Now, let me show you what we can do with tabs and spaces.
 
 
-## Mixing tabs and spaces together
+### Mixing tabs and spaces together
 
 As it turns out, you can also mix tabs and spaces when indenting.
 You can do whatever you want, as long as each single level is preserved throughout the block.

@@ -5,7 +5,7 @@ Today I learned that the length of the terms of the “look-and-say” sequence 
 ![Graphical representation of the constant that determines the growth rate of the length of the terms of the look-and-say sequence, Conway's Constant.](thumbnail.webp "Graphical representation of Conway's Constant.")
 
 
-# What is the look-and-say sequence?
+## What is the look-and-say sequence?
 
 The look-and-say sequence is a numerical sequence that starts with `1`,
 `11`, `21`, `1211`, `111221`.
@@ -30,7 +30,7 @@ And the next:
 So, the next term would be `13112221`.
 
 
-# Conway's Constant
+## Conway's Constant
 
 What I just learned is that the length of the next term is, on average,
 $1.303577269\cdots$ times larger than the length of the previous term.

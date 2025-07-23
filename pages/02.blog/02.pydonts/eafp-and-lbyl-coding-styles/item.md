@@ -16,7 +16,7 @@ instead of an `if` statement to prevent the error.
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)
 
-# EAFP and LBYL
+## EAFP and LBYL
 
 "EAFP" is an acronym that stands for "Easier to Ask for Forgiveness than Permission",
 a coding practice that is more or less the opposite of the "LBYL", which stands for
@@ -70,12 +70,12 @@ Traceback (most recent call last):
 ValueError: invalid literal for int() with base 10: 'asdf'
 ```
 
-# EAFP instead of LBYL?
+## EAFP instead of LBYL?
 
 Writing code that follows the EAFP style can be advantageous in several situations,
 and I will present them now.
 
-## Avoid redundancy
+### Avoid redundancy
 
 Sometimes, coding with EAFP in mind allows you to avoid redundancy in your code.
 Imagine you have a dictionary from which you want to extract a value associated
@@ -126,7 +126,7 @@ print(d.get(key, None))
 Try running the code above and type in keys that don't exist in your dictionary `d`.
 Notice that `None` gets printed in those cases.
 
-## EAFP can be faster
+### EAFP can be faster
 
 If failing is expected to happen not very often, then EAFP is faster:
 you just run a piece of code (your operation) instead of two
@@ -168,7 +168,7 @@ The LBYL approach took almost twice the time.
 If you can make it so that the operation fails very rarely, then you are saving
 time by using a EAFP approach.
 
-## LBYL may still fail
+### LBYL may still fail
 
 When interacting with the environment, for example with the Internet or with the OS,
 in between the time it takes for you to do your safety check and then perform the
@@ -218,7 +218,7 @@ The `else` in the `try` block above ensures you only run the code that processes
 `contents` if you are able to read the file.
 (I'll write a Pydon't about this, don't worry!)
 
-## Catch many types of fails
+### Catch many types of fails
 
 If you are trying to perform a complex operation that might fail in several ways,
 it might be easier to just enumerate the exceptions that might be raised instead
@@ -275,7 +275,7 @@ is still an integer that `int` can convert!
 Or what if the user types `"000"`? This still evaluates to `0`...
 I hope you get my point by now.
 
-# Conclusion
+## Conclusion
 
 EAFP code is a very good alternative to LBYL code, even being superior in
 various alternatives, like the ones I mentioned above.
@@ -295,7 +295,7 @@ Share with all of us by writing it in the comments below!
 Also, [don't forget to subscribe to the newsletter][subscribe] so you don't miss
 a single Pydon't!
 
-# References
+## References
 
  - PEP 463 -- Exception-catching expressions, [https://www.python.org/dev/peps/pep-0463/](https://www.python.org/dev/peps/pep-0463/)
  - Python 3 Documentation, The Python Standard Library, Debugging and Profiling, `timeit`, [https://docs.python.org/3/library/timeit.html][timeit].

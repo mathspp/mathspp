@@ -3,8 +3,6 @@ In the 7th part of [this series][series-link] of building a Python compiler and 
 ===
 
 
-# Building a Python compiler and interpreter – 07 if
-
 This is the 7th article of the [“Building a Python compiler and interpreter” series][series-link], so make sure you've gone through the first six articles before tackling this one!
 
 The code that serves as a starting point for this article is [the tag v0.6.0 of the code in this GitHub repository](https://github.com/mathspp/building-a-python-compiler-and-interpreter/tree/v0.6.0).

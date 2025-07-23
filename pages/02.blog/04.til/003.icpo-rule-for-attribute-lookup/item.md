@@ -13,7 +13,7 @@ Today I learned about the ICPO rule for attribute lookup in Python.
 ![](thumbnail.webp)
 
 
-# ICPO rule for attribute lookup
+## ICPO rule for attribute lookup
 
 How does Python do attribute lookup when dealing with objects?
 

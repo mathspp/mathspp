@@ -5,7 +5,7 @@ Join me as I create a simulation that tries to test an Elo-based rating system f
 ![Screenshot of a Python Streamlit web app.](thumbnail.webp "Screenshot of the simulation web app.")
 
 
-# Introduction
+## Introduction
 
 In this article, I will tell you about a simulation that I built.
 This simulation is built around a rating system that is based off of the [Elo rating system][Elo],
@@ -19,7 +19,7 @@ to host the Streamlit web app that you can play with live, [here][streamlit-app]
 The screenshot above also refers to the same Streamlit web app.
 
 
-# Elo-based rating system for quizzes
+## Elo-based rating system for quizzes
 
 What I'm trying to do is design a decent rating system for a quiz app.
 The idea is that the quiz questions will have a rating,
@@ -50,7 +50,7 @@ Of course, the simulation will represent a simplification of reality:
  - if the simulation shows good behaviour, then _maybe_ the system will work in real life.
 
 
-# Updating the rating
+## Updating the rating
 
 The key thing that I need is the formula to update the rating when two players face each other off.
 If we scroll the Wikipedia article to the section that mentions the mathematical details,
@@ -117,7 +117,7 @@ S_B &= 1 - S_A
 $$
 
 
-# Implementing rating changes
+## Implementing rating changes
 
 Now that we have the mathematical formulas that drive the rating changes,
 we can write some code that implements these mechanics.
@@ -165,7 +165,7 @@ if __name__ == "__main__":
 This provides the basic functionality, but we still need some other things to drive the simulation.
 
 
-# Player archetypes
+## Player archetypes
 
 For the simulation to run, we need to simulate the way in which players answer the questions.
 For that, we will create some player archetypes:
@@ -256,7 +256,7 @@ Really, we can just let our imagination go wild.
 Here are a couple of archetypes I came up with:
 
 ```py
-# ...
+## ...
 
 class AlwaysRight(Player):
     """A player that gets all questions correctly."""
@@ -295,7 +295,7 @@ the ratings of the questions they are answering.
 This will certainly influence the results we get.
 
 
-# Running the simulation
+## Running the simulation
 
 Now that we have some code to represent players and questions, we want to create the simulation.
 Let's start with something basic:
@@ -353,7 +353,7 @@ if a player has a rating much higher than that of a question and then answers th
 the player rating increases only slightly, and the rating of the question decreases only slightly.
 
 
-# Shuffling answering order
+## Shuffling answering order
 
 The first thing we can do to make the simulation a bit more interesting is shuffle the order in which the players answer the questions.
 In order to do that, we will associate each player with a queue of questions that they have to answer,
@@ -363,8 +363,8 @@ Each player's list will be shuffled, and so will the order in which players answ
 First, here is the method I mentioned for the players:
 
 ```py
-# player.py
-# ...
+## player.py
+## ...
 
 class Player(RatedEntity, ABC):
     """Represents a player with an Elo rating.
@@ -389,8 +389,8 @@ Now that players need a list of questions,
 we need to modify the simulation code to pass that queue in when creating the player:
 
 ```py
-# simulation.py
-# ...
+## simulation.py
+## ...
 
 questions = [Question(INITIAL_Q_RATING) for _ in range(QUESTIONS)]
 players = []
@@ -405,8 +405,8 @@ otherwise the mutability of lists would bite us and every player would have the 
 After creating these questions and these players, we need to start the simulation:
 
 ```py
-# simulation.py
-# ...
+## simulation.py
+## ...
 
 while players:
     idx = random.randint(0, len(players) - 1)
@@ -421,7 +421,7 @@ Then, we just check if the player is done answering all their questions.
 Now, what do we plot?
 
 
-# Plotting useful information
+## Plotting useful information
 
 Well, it never really made much sense to plot the final rating of each question.
 
@@ -430,8 +430,8 @@ not just the final results.
 What we can do is plot the min/max question/player ratings every once in a while:
 
 ```py
-# simulation.py
-# ...
+## simulation.py
+## ...
 
 questions = [Question(INITIAL_Q_RATING) for _ in range(QUESTIONS)]
 players = []
@@ -474,7 +474,7 @@ this is what I got:
 ![A screenshot of a Python web app built with streamlit, containing a simulation of an Elo-based rating system.](_simulation_demo_v2.webp "Screenshot of the Streamlit app.")
 
 
-# Finer control over player archetypes
+## Finer control over player archetypes
 
 Now that our simulation prints some useful information,
 let's add more control over the types of players present in the simulation.
@@ -496,7 +496,7 @@ from player import (
 
 PLAYER_COUNT_TEMPLATE = "Total players: {:>4}"
 
-# Sliders about ratings and number of questions...
+## Sliders about ratings and number of questions...
 
 player_count_label = st.text(PLAYER_COUNT_TEMPLATE.format("??"))
 player_archetypes = [AlwaysRight, AlwaysMid, AlwaysWrong, UsuallyRight, UsuallyWrong]
@@ -567,7 +567,7 @@ Here is an animated GIF of the final simulation app:
 !!! and you can play around with the simulation, online, [here][streamlit-app].
 
 
-# Different players answer different questions
+## Different players answer different questions
 
 Ok, I am so happy with where I've gotten that I want to add a final change:
 I want different players to answer different questions.
@@ -648,9 +648,9 @@ def main():
 ```
 
 
-# Conclusion
+## Conclusion
 
-## Simulation
+### Simulation
 
 The simulation I ran was pretty simple,
 but it shows that it doesn't look likely that player/question ratings will go wild
@@ -664,7 +664,7 @@ Another possible add-on would be that of introducing new questions and new playe
 This mimics new players signing up for the quiz and new questions being added to the quiz.
 
 
-## Streamlit
+### Streamlit
 
 I am also very pleased with Streamlit.
 I had never used Streamlit, apart from its basic “Getting Started” that I covered in [this TIL][streamlit-til],

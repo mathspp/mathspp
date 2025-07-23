@@ -13,7 +13,7 @@ Today I learned that Python generators can return a value.
 ![Code showing a generator that returns a value.](thumbnail.webp)
 
 
-# Generators
+## Generators
 
 Generators are interesting Python objects that produce a series of values,
 but one by one.
@@ -26,7 +26,7 @@ Here is the tweet that prompted this discovery:
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/Python?src=hash&amp;ref_src=twsrc%5Etfw">#Python</a> pop quiz: Is this code valid? If so, what does it do?<br><br>def f():<br> yield 10<br> return 20<br><br>g = f()<br>print(next(g))<br>print(next(g))</p>&mdash; Raymond Hettinger (@raymondh) <a href="https://twitter.com/raymondh/status/1446191250470735878?ref_src=twsrc%5Etfw">October 7, 2021</a></blockquote>
 
 
-# Returning from a generator
+## Returning from a generator
 
 When you use a `return` inside a generator,
 the generator will have that returned information in its `StopIteration`

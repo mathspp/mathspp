@@ -2,7 +2,7 @@ Today I learned how to create a VS Code extension to do custom syntax highlighti
 
 ===
 
-# Textual CSS
+## Textual CSS
 
 At my day job, developing [Textual], I have been [tasked with writing a VS Code extension that does proper syntax colouring of Textual CSS][gh-issue].
 
@@ -22,7 +22,7 @@ For example, the selectors `#input` and `.some-class` are highlighted but the se
 Furthermore, Textual CSS has rules that regular CSS doesn't, and that is why `border` is a different colour than `tint`.
 
 
-# Writing a VS Code extension
+## Writing a VS Code extension
 
 After getting started with VS Code's guide on [writing your first extension](https://code.visualstudio.com/api/get-started/your-first-extension), I found [a guide specific to creating extensions that do custom syntax highlighting](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide).
 

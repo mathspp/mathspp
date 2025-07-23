@@ -13,7 +13,7 @@ Who will win?
 ![A chess knight](thumbnail.jpg "Photo by Piotr Makowski on Unsplash")
 
 
-# Problem statement
+## Problem statement
 
 Alice and Bob will play a special game of “chess”.
 Alice will take the knight and place it in some square of the chessboard, any square she likes.
@@ -46,7 +46,7 @@ If you need any clarification whatsoever, feel free to ask in the comment sectio
 This problem was posed to me by a university colleague that plays a lot of chess!
 
 
-# Solution
+## Solution
 
 We will show that Bob (the second player) can always win the game.
 To do that, we will follow a very simple strategy: we show that,

@@ -5,7 +5,7 @@ Let me show you characteristics of APL that will influence your understanding of
 ![A quote by Alan J. Perlis that reads “A language that doesn't affect the way you think about programming, is not worth knowing.” on a light background, with a quote symbol at the top and Alan Perlis's signature at the bottom right.](thumbnail.webp "“A language that doesn't affect the way you think about programming, is not worth knowing.”, by Alan J. Perlis.")
 
 
-# Why APL is a language worth knowing
+## Why APL is a language worth knowing
 
 [Alan Perlis][alan-perlis], the computer scientist recipient of the first [Turing award][turing-award], wrote
 
@@ -21,7 +21,7 @@ In particular, I will be drawing from my own experiences with APL and Python to 
 !!! The talk slides are available [here][gh-talks] and I'll link to the YouTube recording ASAP.
 
 
-## Background
+### Background
 
 I started writing Python code in 2012 and that is the programming language I am most fluent in.
 Before Python, I had written code in other languages such as Visual Basic, JavaScript, and C,
@@ -42,7 +42,7 @@ As you will soon find out, APL has had such a notorious impact in my programming
 Therefore, it is only natural that APL has been the language that provided more enlightening moments for me.
 
 
-## Disclaimer
+### Disclaimer
 
 Of course, all evidence I am sharing is drawn from my own programming experience and is subjective.
 Thus, my examples should not be taken as definite proof that (Python) programmers will get the same benefits as I did from learning APL.
@@ -60,7 +60,7 @@ Because of that, I spent a lot of time reflecting and trying to come up with con
 That ought to make for a more compelling conversation than the hypothetical scenario from above.
 
 
-## Prerequisites
+### Prerequisites
 
 While I will be talking about APL a lot, I will not assume that you know APL:
 I will explain just about enough for you to follow along.
@@ -69,7 +69,7 @@ You also don't need to know Python, but you are expected to be familiar with one
 I need you to be comfortable with variables, conditional statements, and loops.
 
 
-# What is APL?
+## What is APL?
 
 In short, [APL] is an array-oriented programming language whose natural and concise syntax lets you develop shorter programs while thinking more about the problem you are trying to solve than how to express it to a computer.
 
@@ -123,7 +123,7 @@ meaning `10 - 5 - 2` is equivalent to `10 - (5 - 2)` and the result is `7`:
 ```
 
 
-# APL and list comprehensions
+## APL and list comprehensions
 
 I want to start by talking about list comprehensions,
 the syntactic constructs (available in some programming languages) that make it easier to create new lists based on existing lists.
@@ -131,7 +131,7 @@ the syntactic constructs (available in some programming languages) that make it 
 I want to show you how APL made it easier for me to understand list comprehensions and to use them effectively.
 
 
-## Scalar functions in APL
+### Scalar functions in APL
 
 In APL, everything is an array and all arrays are composed of scalars,
 which ties with the fact that in APL many of its built-ins are said to be _scalar_.
@@ -249,7 +249,7 @@ And the function _residue_ `|`, which other languages represent by `%`, `mod`, e
 ! Python's `n % m` is equivalent to APL's `m|n`.
 
 
-## List comprehensions express data transformations
+### List comprehensions express data transformations
 
 List comprehensions are a syntactical construct of some programming languages whose objective is to make it easier for you to create new lists (or similar structures) out of existing lists (or similar structures).
 
@@ -371,7 +371,7 @@ when building the new list.
 We will visit this pattern after talking about Boolean values in APL.
 
 
-# APL and Boolean values
+## APL and Boolean values
 
 Boolean values are the two values that a language uses to represent the two logical values “true” and “false”.
 Many popular languages use (a variation of) those two words to represent the two Boolean values.
@@ -379,7 +379,7 @@ For instance, both Python and Haskell use `True` and `False`,
 while Java and JavaScript use `true` and `false`.
 
 
-## It's all zeroes and ones
+### It's all zeroes and ones
 
 However, there are languages that do _not_ have dedicated Boolean values.
 APL is one such language.
@@ -405,18 +405,18 @@ Therefore, APL users tend to use alternative constructs and formulations to writ
 For example, we will see that multiplications and exponentiations can often be used to emulate choices and filters.
 
 
-## Data-driven conditionals
+### Data-driven conditionals
 
-### What are data-driven conditionals?
+#### What are data-driven conditionals?
 
 Data-driven conditionals are expressions that have different values, depending on a condition.
 However, data-driven conditionals use the _data_ itself to compute the correct values,
 instead of using a branching syntactic construct like an `if` statement.
 
 
-### Examples
+#### Examples
 
-#### US car rental
+##### US car rental
 
 Consider a situation where a person is travelling to the United States of America and wishes to rent a car.
 In the US, it is customary for rent-a-car companies to charge variable fees depending on whether the renter is younger than 25 or not.
@@ -527,7 +527,7 @@ We can look at it as:
  2. there's a $300 surcharge if you are 24 or younger.
 
 
-#### Discounted articles
+##### Discounted articles
 
 As another example, consider a situation where we have a series of articles and their respective prices:
 
@@ -601,7 +601,7 @@ And while these data-driven conditionals might not have immediate translations t
 I claim that being able to reason about these expressions is helpful and makes your brain more flexible.
 
 
-### List comprehensions revisited
+#### List comprehensions revisited
 
 These data-driven conditionals are great because they adapt really well to the situation where we are handling multiple values instead of a single one.
 For example, for the US car rental example, we handled one age and one set of days.
@@ -680,7 +680,7 @@ This might not be the best example as far as motivation for why you would do thi
 but the APL tendency for flat, array-oriented code can be really helpful!
 
 
-# Filtering list comprehensions
+## Filtering list comprehensions
 
 Like I said earlier, knowing APL made me more comfortable with list comprehensions in Python.
 However, so far we have only looked at list comprehensions that use _all_ the data that comes from the original list.
@@ -700,12 +700,12 @@ How would you do that?
 Using a loop, that would mean adding an `if` statement:
 
 ```py
-# Square all numbers:
+## Square all numbers:
 squares = []
 for num in numbers:
     squares.append(num ** 2)
 
-# Square even numbers:
+## Square even numbers:
 squares = []
 for num in numbers:
     if (num % 2) == 0:
@@ -795,7 +795,7 @@ It's not that list comprehensions really do the work in these two different phas
 it's just that it became easier to digest!
 
 
-# Counting over a predicate
+## Counting over a predicate
 
 Previously I mentioned that I first realised APL was influencing my (Python) thinking when I wrote a specific piece of code.
 
@@ -856,7 +856,7 @@ count = sum(pred(value) for value in my_list)
 ```
 
 
-# Conclusion
+## Conclusion
 
 In this article I outlined some of the aspects of my (Python) programming experience that were greatly affected by my APL knowledge,
 but it goes without saying that there are multiple other concepts that I am more comfortable with after looking at them from the APL perspective.

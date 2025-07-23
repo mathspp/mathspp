@@ -4,7 +4,7 @@ Can you help these kids trick or treat their entire neighbourhood in this Hallow
 
 ![A pumpkin patch with Halloween-themed carved pumpkins.](thumbnail.png "Photo by Taylor Rooney on Unsplash.")
 
-# Problem statement
+## Problem statement
 
 It's Halloween night.
 Jack, Frank, and their 98 friends are getting ready to trick or treat their entire neighbourhood.
@@ -26,7 +26,7 @@ What is the probability that Frank will go trick-or-treating at the house he was
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
@@ -40,7 +40,7 @@ Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
 
 
-# Solution
+## Solution
 
 This problem is very neat, in my opinion.
 That's because there is a very neat solution that does not involve many calculations.

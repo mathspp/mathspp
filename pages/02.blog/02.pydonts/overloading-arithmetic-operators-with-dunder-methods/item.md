@@ -4,7 +4,7 @@ This article shows you how to overload the arithmetic operators in Python with d
 
 ![](thumbnail.webp)
 
-# Introduction
+## Introduction
 
 Python lets you override the arithmetic operators like `+` for addition or `*` for multiplication through [dunder methods][dunder-methods].
 [Dunder methods][dunder-methods] are special methods whose name starts and ends with a double underscore (hence, “dunder”), and some [dunder methods][dunder-methods] are specific to arithmetic operations.
@@ -47,7 +47,7 @@ After we introduce all the concepts and mechanics that Python uses to handle bin
 <!--^-->
 
 
-# The example we will be using
+## The example we will be using
 
 The example we will be using throughout this article will be that of a `Vector`.
 A `Vector` will be a class for geometrical vectors, like vectors in 2D, or 3D, and it will provide operations to deal with vectors.
@@ -101,7 +101,7 @@ Then, we will move along to the binary arithmetic operations.
 Good luck! 🐍🚀
 
 
-# Your first arithmetic dunder method
+## Your first arithmetic dunder method
 
 Take a look at this piece of code:
 
@@ -179,7 +179,7 @@ This was your first arithmetic dunder method! 🎉
 Now, we'll implement the remaining unary arithmetic operations.
 
 
-# The dunder methods for the unary arithmetic operations
+## The dunder methods for the unary arithmetic operations
 
 There are four unary arithmetic operations for a vector `v`:
 
@@ -191,12 +191,12 @@ There are four unary arithmetic operations for a vector `v`:
 These four dunder methods are all unary, which means the only argument they take is `self`, which is going to be the instance of `Vector` that they need to operate on.
 
 
-## The dunder method `__neg__` for negation
+### The dunder method `__neg__` for negation
 
 This one was already implemented above!
 
 
-## The dunder method `__pos__`
+### The dunder method `__pos__`
 
 When used on integers and floats, `__pos__` acts as a no-op:
 
@@ -231,7 +231,7 @@ if __name__ == "__main__":
 ```
 
 
-## The dunder method `__abs__` for the absolute value
+### The dunder method `__abs__` for the absolute value
 
 The dunder method `__abs__` is called when we use the built-in `abs`.
 
@@ -259,7 +259,7 @@ if __name__ == "__main__":
 ```
 
 
-## The dunder method `__invert__` for inversion
+### The dunder method `__invert__` for inversion
 
 The dunder method `__invert__` is called when the unary arithmetic operation `~` is used.
 For integers, this operation is based on binary.
@@ -325,7 +325,7 @@ You can read [this Wikipedia article](https://en.wikipedia.org/wiki/Orthogonalit
 This will also make more sense when we implement the dunder method `__matmul__`, later.
 
 
-## Unary arithmetic operations summary
+### Unary arithmetic operations summary
 
 If you got to this point, it means you have implemented all unary arithmetic operations.
 Good job! 🚀
@@ -374,7 +374,7 @@ class Vector:
 ```
 
 
-# The dunder methods for binary arithmetic operations
+## The dunder methods for binary arithmetic operations
 
 Up until now, we dealt with _unary_ operators.
 This means that the operator expected a _single_ object to work with.
@@ -383,7 +383,7 @@ As we delve into _binary_ operators, the dunder methods we will implement will t
 This will be explained right away, as we start implementing addition.
 
 
-# Addition and the dunder method `__add__`
+## Addition and the dunder method `__add__`
 
 To implement addition between our `Vector` instances we need to implement the dunder method `__add__`.
 When Python finds an expression like `a + b`, Python will try to run `a.__add__(b)`, which is why we can use the dunder method `__add__` to implement addition for our objects.
@@ -428,7 +428,7 @@ if __name__ == "__main__":
 This is all it takes to implement a dunder method.
 
 
-# Adding validation to your dunder methods
+## Adding validation to your dunder methods
 
 Now, the implementation we provided above is pretty barebones.
 For example, it is going to raise an interesting error if we try to add a vector to an integer:
@@ -478,9 +478,9 @@ How do we raise this error?
 You might think of actually raising the error yourself, with `raise TypeError(...)`, but there is a built-in mechanism that does this.
 
 
-# Using `NotImplemented` to flag operations you don't support
+## Using `NotImplemented` to flag operations you don't support
 
-## The built-in constant `NotImplemented`
+### The built-in constant `NotImplemented`
 
 When there is a combination of arguments that you do not have support for, you need to return the built-in constant `NotImplemented`.
 
@@ -523,7 +523,7 @@ NotImplemented
 ```
 
 
-## The difference between `NotImplemented` and `NotImplementedError`
+### The difference between `NotImplemented` and `NotImplementedError`
 
 The two built-ins `NotImplemented` and `NotImplementedError` may look similar, but they have very distinct use cases.
 
@@ -567,7 +567,7 @@ print(rect.perimeter()) # 16
 !!! Python has more complete mechanisms to handle abstract base classes (called interfaces, in other languages), but this small example illustrates the point.
 
 
-# Extending your dunder method to more types
+## Extending your dunder method to more types
 
 Before taking this little tangent about the difference between `NotImplemented` and `NotImplementedError`, we saw that our vectors cannot be added to integers.
 However, we wish to extend our implementation of `Vector` to handle integer and float addition.
@@ -684,7 +684,7 @@ Well, obviously because `__add__` never got called.
 Let me explain:
 
 
-# Reflected dunder methods
+## Reflected dunder methods
 
 To be precise, when your arithmetic dunder method returns `NotImplemented`, it tells Python that that specific method call failed.
 For example, when `Vector.__add__` returns `NotImplemented`, it tells Python that the class `Vector` does not know how to add vectors with whatever was in the argument `other`.
@@ -720,9 +720,9 @@ _Some_ examples of reflected dunder methods include:
 So, all things considered, if we want to be able to write expressions like `3 + Vector(1, 2)`, we need to implement the dunder method `Vector.__radd__`.
 
 
-# Implementing reflected dunder methods
+## Implementing reflected dunder methods
 
-## Commutative operations
+### Commutative operations
 
 For our example, `Vector(1, 2) + 3` is supposed to return the same value as `3 + Vector(1, 2)`, so we can implement `__radd__` in terms of `__add__`:
 
@@ -763,7 +763,7 @@ This would still work.
 Give it a try.
 
 
-## Non-commutative operations
+### Non-commutative operations
 
 Not all arithmetic operations are commutative.
 In fact, even addition isn't _always_ commutative!
@@ -782,7 +782,7 @@ When the operation isn't commutative, you have to implement the reflected dunder
 You will see examples of this throughout this article.
 
 
-## `NotImplemented` in reflected dunder methods
+### `NotImplemented` in reflected dunder methods
 
 Reverse dunder methods should _also_ return `NotImplemented` when the operation isn't defined for certain types of other arguments.
 
@@ -860,7 +860,7 @@ TypeError: can only concatenate list (not "Vector") to list
 ```
 
 
-## Reflected dunder methods and subclasses
+### Reflected dunder methods and subclasses
 
 There is another situation in which reflected dunder methods come in handy, and that is when the right operand is from a subclass of the left operand.
 Let me explain.
@@ -960,7 +960,7 @@ To conclude, in an expression `a + b`, the call `b.__radd__(a)` will happen if:
  2. the type of `b` is a subclass of the type of `a`, in which case `b.__radd__(a)` is called _before_ `a.__add__(b)`.
 
 
-# Augmented arithmetic assignment
+## Augmented arithmetic assignment
 
 In Python, we can write things like `counter += 1` and `multiplier *= 2`.
 This is called augmented assignment and there are dunder methods used to implement this behaviour.
@@ -1037,7 +1037,7 @@ Another thing to note is that even though we are modifying `self`, we still need
 (Which is `self`.)
 
 
-# Full implementation of all arithmetic dunder methods
+## Full implementation of all arithmetic dunder methods
 
 In this section, we will take all of the knowledge from the previous sections and provide an example class that provides a full implementation of all the arithmetic operators and respective dunder methods:
 
@@ -1056,12 +1056,12 @@ In this section, we will take all of the knowledge from the previous sections an
  - [bitwise or `|`](#bitwise-or-and-the-operator)
 
 
-## Subtraction and the operator `-`
+### Subtraction and the operator `-`
 
 The binary operator `-` is the binary operator for subtraction.
 It is common for addition and subtraction to be closely related and, when they are, you _can_ exploit those relationships.
 
-### Example of the dunder methods `__sub__`, `__rsub__`, and `__isub__` for subtraction
+#### Example of the dunder methods `__sub__`, `__rsub__`, and `__isub__` for subtraction
 
 For plain subtraction, we can realise that `a - b` is just `a + (-b)`, and we already implemented the unary negation operator (with the dunder method `__neg__`), so we can use that shortcut:
 
@@ -1141,12 +1141,12 @@ Vector(-1, 0) 4372225424
 ```
 
 
-## Multiplication and the operator `*`
+### Multiplication and the operator `*`
 
 The binary operator `*` is the operator for multiplication.
 Multiplying a vector with another number will produce a second vector whose coordinates have all been multiplied by that single number.
 
-### Example of the dunder methods `__mul__`, `__rmul__`, and `__imul__` for multiplication
+#### Example of the dunder methods `__mul__`, `__rmul__`, and `__imul__` for multiplication
 
 ```py
 class Vector:
@@ -1215,7 +1215,7 @@ Vector(10, 20) 4301232784
 ```
 
 
-## Division and the operator `/`
+### Division and the operator `/`
 
 Given that addition, subtraction, and multiplication, are called `__add__`, `__sub__`, and `__mul__`, respectively, one might assume that division is called `__div__`.
 However, `/` is called `__truediv__`.
@@ -1224,7 +1224,7 @@ That is to disambiguate from `//`, which is then called `__floordiv__`.
 For division, we will say that a vector can be divided by a number or vice-versa.
 In both cases, we will just take the number and map the division out across all coordinates of the vector.
 
-### Example of the dunder methods `__truediv__`, `__rtruediv__`, and `__itruediv__` for division
+#### Example of the dunder methods `__truediv__`, `__rtruediv__`, and `__itruediv__` for division
 
 ```py
 class Vector:
@@ -1267,14 +1267,14 @@ Vector(0.1, 0.2, 0.3, 0.4)
 ```
 
 
-## Floor division and the operator `//`
+### Floor division and the operator `//`
 
 Floor division is `//` and its dunder method is `__floordiv__`, not to be confused with `__truediv__` for the operation of division `/`.
 
 Much like with regular division, we will say that a vector can be divided by a number or vice-versa.
 In both cases, we will just take the number and map the division out across all coordinates of the vector.
 
-### Example of the dunder methods `__floordiv__`, `__rfloordiv__`, and `__ifloordiv__` for division
+#### Example of the dunder methods `__floordiv__`, `__rfloordiv__`, and `__ifloordiv__` for division
 
 The implementation below was essentially copied and pasted from the implementation of `__truediv__` above, except I replaced the operation `/` with `//`...
 
@@ -1319,12 +1319,12 @@ Vector(0, 1, 2, 2)
 ```
 
 
-## Modulo and the operator `%`
+### Modulo and the operator `%`
 
 The binary operator `%` is the operator for modulo.
 To keep in line with other operators, using modulo between a number and a vector will apply the operation element-wise.
 
-### Example of the dunder methods `__mod__`, `__rmod__`, and `__imod__` for modulo
+#### Example of the dunder methods `__mod__`, `__rmod__`, and `__imod__` for modulo
 
 ```py
 class Vector:
@@ -1367,12 +1367,12 @@ Vector(9, 2, 3, 4)
 ```
 
 
-## Divmod and the built-in function `divmod`
+### Divmod and the built-in function `divmod`
 
 The built-in function `divmod` puts together the operators `/` (division) and `%` (modulo).
 The function call `divmod(x, y)` should be equivalent to `(x / y, x % y)`, so that is the behaviour we implement.
 
-### Example of the dunder methods `__divmod__` and `__rdivmod__` for divmod
+#### Example of the dunder methods `__divmod__` and `__rdivmod__` for divmod
 
 Notice that there is no in-place/augmented operator `__idivmod__` for us to implement because we cannot write the augmented operator `divmod=`.
 That does not make any sense in Python.
@@ -1407,7 +1407,7 @@ The code above produces the following output:
 
 
 
-## Exponentation and the operator `**` and built-in function `pow`
+### Exponentation and the operator `**` and built-in function `pow`
 
 The operation of exponentiation can be expressed both via the binary operator `**` and the built-in function `pow`.
 The operator `**` takes the left operand and raises it to the power of the right operand.
@@ -1416,7 +1416,7 @@ The built-in function `pow` does a similar thing, except that `pow` takes an opt
 For the implementation, we will allow either the left or right arguments of `**` to be vectors, but the other one must be a number.
 Furthermore, the only value that is acceptable as the optional third argument is a number.
 
-### Example of the dunder methods `__pow__`, `__rpow__`, and `__ipow__` for modulo
+#### Example of the dunder methods `__pow__`, `__rpow__`, and `__ipow__` for modulo
 
 ```py
 class Vector:
@@ -1465,7 +1465,7 @@ Vector(100, 10000)
 ```
 
 
-## Matrix multiplication and the operator `@`
+### Matrix multiplication and the operator `@`
 
 The binary operator `@` is the operator for matrix multiplication.
 At the time of writing, `@` isn't used for any operations in vanilla Python but it is used in places like NumPy, where matrix multiplication is a common operation.
@@ -1484,7 +1484,7 @@ However, this behaviour is in line with vanilla Python:
 [0, 0, 0]
 ```
 
-### Example of the dunder methods `__matmul__`, `__rmatmul__`, and `__imatmul__` for modulo
+#### Example of the dunder methods `__matmul__`, `__rmatmul__`, and `__imatmul__` for modulo
 
 For matrix multiplication, the only thing we support is matrix multiplication between two vectors.
 Because of that, we do not need to implement `__rmatmul__`.
@@ -1524,7 +1524,7 @@ The code above produces the following output:
 ```
 
 
-## Bitwise left shift and the operator `<<`
+### Bitwise left shift and the operator `<<`
 
 The binary operator `<<` is the bitewise left shift operator.
 (It is called _bitewise_ because it operates on bits of integers.)
@@ -1544,7 +1544,7 @@ Vector(2, 3, 4, 1)
 Vector(3, 4, 1, 2)
 ```
 
-### Example of the dunder methods `__lshift__`, `__rlshift__`, and `__ilshift__` for bitwise left shift
+#### Example of the dunder methods `__lshift__`, `__rlshift__`, and `__ilshift__` for bitwise left shift
 
 ```py
 class Vector:
@@ -1589,7 +1589,7 @@ Vector(3, 4, 1, 2)
 ```
 
 
-## Bitwise right shift and the operator `>>`
+### Bitwise right shift and the operator `>>`
 
 The binary operator `>>` is the bitewise right shift operator.
 
@@ -1607,7 +1607,7 @@ Vector(4, 1, 2, 3)
 Vector(3, 4, 1, 2)
 ```
 
-### Example of the dunder methods `__rshift__`, `__rrshift__`, and `__irshift__` for bitwise right shift
+#### Example of the dunder methods `__rshift__`, `__rrshift__`, and `__irshift__` for bitwise right shift
 
 The implementation of the bitwise right shift is very similar to the implementation of the bitwise left shift and we use negative indices and slicing to get the shifting behaviour.
 
@@ -1656,7 +1656,7 @@ Vector(3, 4, 1, 2)
 ```
 
 
-## Bitwise and and the operator `&`
+### Bitwise and and the operator `&`
 
 The binary operator `&` is the bitewise "and" operator, _not_ to be confused with the keyword `and` that operates on Boolean values.
 We will use the bitwise and operator to implement concatenation of vectors, like so:
@@ -1666,7 +1666,7 @@ We will use the bitwise and operator to implement concatenation of vectors, like
 Vector(1, 2, 3, 4)
 ```
 
-### Example of the dunder methods `__and__`, `__rand__`, and `__iand__` for bitwise and
+#### Example of the dunder methods `__and__`, `__rand__`, and `__iand__` for bitwise and
 
 Because we only defined the operator `&` between instances of vectors, there is nothing we need to do inside `__rand__`.
 So, we provide an empty implementation that just returns `NotImplemented` so that we can show we didn't forget `__rand__`, but at the same time to say that it won't do anything for an expression `x & v`, where `x` is of a type other than `Vector`.
@@ -1707,7 +1707,7 @@ Vector(1, 2, 3, 4, 5, 6)
 ```
 
 
-## Bitwise exclusive or (xor) and the operator `^`
+### Bitwise exclusive or (xor) and the operator `^`
 
 The binary operator `^` is the bitewise exclusive "or" operator.
 We will use the bitwise exclusive or operator to implement an operation between numbers and vectors.
@@ -1731,7 +1731,7 @@ Vector(1, 0, 0)
 Vector(1, 0, 0)
 ```
 
-### Example of the dunder methods `__xor__`, `__rxor__`, and `__ixor__` for bitwise exclusive or (xor)
+#### Example of the dunder methods `__xor__`, `__rxor__`, and `__ixor__` for bitwise exclusive or (xor)
 
 ```py
 def sign(x):
@@ -1792,7 +1792,7 @@ Vector(1, 0, 0)
 ```
 
 
-## Bitwise or and the operator `|`
+### Bitwise or and the operator `|`
 
 The binary operator `|` is the bitewise "or" operator.
 We will use the bitwise or operator to determine whether the left vector operand is a multiple of the right vector operand.
@@ -1814,7 +1814,7 @@ Here are some examples:
 None
 ```
 
-### Example of the dunder methods `__or__`, `__ror__`, and `__ior__` for bitwise or
+#### Example of the dunder methods `__or__`, `__ror__`, and `__ior__` for bitwise or
 
 The bitwise or only operates between vectors, so there is no behaviour that we can implement inside `__ror__`.
 For that reason, we just return `NotImplemented`.
@@ -1864,7 +1864,7 @@ None
 ```
 
 
-## Full implementation of the class `Vector`
+### Full implementation of the class `Vector`
 
 If you want to see the full implementation of the class `Vector`, go ahead and take a look below.
 
@@ -2295,7 +2295,7 @@ if __name__ == "__main__":
 </details>
 
 
-# Exercises
+## Exercises
 
  1. Modify the implementations of `+` and `-` so that a `ValueError` is raised when the two vectors being added/subtracted do not have the same length.
  2. Modify the implementation of the operator `*` so that we can also multiply vectors together.
@@ -2306,7 +2306,7 @@ if __name__ == "__main__":
  5. Experiment with implementing `__imatmul__` and `__ior__` and see if the fact that those two methods return numbers instead of vectors breaks expressions like `v1 |= v2` and `v1 @= v2`.
 
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this Pydon't, for you, on a silver platter:
 

@@ -12,7 +12,7 @@ How will you do that?
 
 ![](thumbnail.webp "Satellite view of Kaliningrad, Russia.")
 
-# Problem statement
+## Problem statement
 
 If you like solving riddles and puzzles, it is likely that you have
 already encountered this puzzle.
@@ -49,7 +49,7 @@ is what this place was called when a famous mathematician first
 dwelled on this problem.
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
@@ -57,7 +57,7 @@ who sent me their correct solutions:
  - Attila K., (Hungary)
 
 
-# Solution
+## Solution
 
 There are seven distinct bridges that we want to traverse,
 so we know the shortest path has to go over seven bridges, minimum.

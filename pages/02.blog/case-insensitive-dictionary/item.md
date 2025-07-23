@@ -2,7 +2,7 @@ How do you implement a case-insensitive (or caseless) dictionary? In this articl
 
 ===
 
-# Introduction
+## Introduction
 
 In a recent article, I showed why you should use the string method `casefold` when working with case-insensitive strings.
 In that article, I also presented [a basic implementation of a case-insensitive dictionary][casefold-article-dict].
@@ -38,7 +38,7 @@ The issues that we will find all revolve around what the example above shows.
 Although we implemented the three main dunder methods that let you add / access / delete keys from a dictionary, the other dictionary methods will not use the dunder methods to perform their operations.
 
 
-# Case-insensitive dictionary inheriting from `dict`
+## Case-insensitive dictionary inheriting from `dict`
 
 If we wanted to implement a case-insensitive dictionary that inherits from `dict` directly, we would have to provide implementations of most of the `dict` methods in terms of the three dunder methods that we already have.
 

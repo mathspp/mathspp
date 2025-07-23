@@ -13,7 +13,7 @@ Today I learned strings can also be unpacked in Python.
 ![Code snippet showing how to unpack strings.](thumbnail.webp)
 
 
-# String unpacking
+## String unpacking
 
 I've written a couple of Pydon't articles about unpacking before,
 namely [one about unpacking with starred assignments][pydont-unpacking],

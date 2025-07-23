@@ -29,7 +29,7 @@ title: "Bpci blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">10</th>
-            <th style="text-align: center;">22,827</th>
+            <th style="text-align: center;">22,727</th>
             <th style="text-align: center;">4,540</th>
         </tr>
     </thead>

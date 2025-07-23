@@ -15,7 +15,7 @@ Pydon't unpack with slices, prefer starred assignment instead.
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)
 
-# Starred Assignment
+## Starred Assignment
 
 It is fairly common to have a list or another iterable that you want to split
 in the first element and then the *rest*.
@@ -103,11 +103,11 @@ By making use of starred assignment, we can easily get the first three words of 
 'sentence with many words.'
 ```
 
-# Examples in code
+## Examples in code
 
 Here are a couple of examples in some actual code, to give more context.
 
-## `reduce` from `functools`
+### `reduce` from `functools`
 
 Imagine you wanted to implement a function akin to the `reduce` function from
 `functools` (you can reads its documentation [here][reduce]).
@@ -148,7 +148,7 @@ unpack the list into an item to be used now and the rest to be used later.
 
 Another similar example, but with the starred name in the beginning, follows.
 
-## Credit card check digit
+### Credit card check digit
 
 The [Luhn Algorithm][luhn] is used to compute a check digit for things like credit
 card numbers or bank accounts.
@@ -170,7 +170,7 @@ def verify_check_digit(digits):
         weight = 3 - weight # 2 -> 1 and 1 -> 2
     return (9 * acc % 10) == check_digit
 
-# Example from Wikipedia.
+## Example from Wikipedia.
 print(verify_check_digit([7, 9, 9, 2, 7, 3, 9, 8, 7, 1, 3])) # True
 ```
 
@@ -193,7 +193,7 @@ def verify_check_digit(digits):
         weight = 3 - weight # 2 -> 1 and 1 -> 2
     return (9 * acc % 10) == digits[-1]
 
-# Example from Wikipedia.
+## Example from Wikipedia.
 print(verify_check_digit([7, 9, 9, 2, 7, 3, 9, 8, 7, 1, 3])) # True
 ```
 
@@ -217,7 +217,7 @@ Comment below a nice use case you found for starred assignments!
 Also, [don't forget to subscribe to the newsletter][subscribe] so you don't miss
 a single Pydon't!
 
-# References
+## References
 
  - PEP 3132 -- Extended Iterable Unpacking, [https://www.python.org/dev/peps/pep-3132/][pep3132]
  - Python 3.9.1 Documentation, The Python Standard Library, Functional Programming Modules, `functools`, [https://docs.python.org/3/library/functools.html#functools.reduce][reduce] [consulted on the 12th of January of 2021].

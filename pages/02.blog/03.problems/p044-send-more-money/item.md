@@ -10,7 +10,7 @@ Can you solve this simple-looking arithmetic challenge?
 
 ![A piece of paper where one can read "SEND + MORE = MONEY".](thumbnail.png)
 
-# Problem statement
+## Problem statement
 
 The image above represents an arithmetic calculation:
 
@@ -27,7 +27,7 @@ Can you figure out the numeric value of each word?
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
@@ -42,7 +42,7 @@ who sent me their correct solutions:
 Join the list of solvers by [emailing me][email] your solution!
 
 
-# Solution
+## Solution
 
 SEND and MORE are two 4-digit numbers that are both 9999 or less.
 That means that their sum is 19998 or less.

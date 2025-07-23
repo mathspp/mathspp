@@ -3,8 +3,6 @@ The built-in function max in Python is broken and this article explains why, dra
 ===
 
 
-# `max` is broken
-
 ## The default values
 
 Did you ever notice that in Python, you have:

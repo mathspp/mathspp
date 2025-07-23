@@ -14,7 +14,7 @@ Today is the day! Today is the day we take our [APL][apl-wiki] programs and inte
 
 Just to get us started, here are two ASTs, two Awfully Sketched Trees.
 
-# Recap
+## Recap
 
 If you recall, in the [last blog post][previous] of the series (which was also the first!) we created a simple program that took a basic [APL][apl-wiki] expression (APL is a really cool array-oriented programming language), tokenized it and then parsed it into an AST, an Abstract Syntax Tree.
 
@@ -23,7 +23,7 @@ With that program, we can turn an expression like `5 6 -⍨ ÷1 2`
  - into a list of tokens like `[Token(EOF, None), Token(INTEGER, 5), Token(INTEGER, 6), Token(MINUS, -), Token(COMMUTE, ⍨), Token(DIVIDE, ÷), Token(INTEGER, 1), Token(INTEGER, 2)]`
  - and into an AST like `MOp(⍨ Dyad(- A([S(5), S(6)]) Monad(÷ A([S(1), S(2)]))))`
 
-# Today
+## Today
 
 Today we are going to:
 
@@ -54,7 +54,7 @@ I challenge you to modify the AST nodes and the parser yourself to produce trees
 
 ![Comparison of old and new ASTs for a monadic function application.](./monadic_example.webp)
 
-## The code
+### The code
 
 [![](https://img.shields.io/github/stars/RojerGS/RGSPL?style=social)][rgspl-repo]
 
@@ -64,7 +64,7 @@ The whole code for this project is hosted in [this][rgspl-repo] GitHub repo and 
 
 Now that we got this out of the way, lets dive right into the changes for today.
 
-# Updated grammar
+## Updated grammar
 
 Because we want to support assignments and multiple consecutive statements (separated by the diamond `⋄` glyph) we will start by taking a look at the new grammar:
 
@@ -84,7 +84,7 @@ The main differences are in:
  - the new `program` definition that now consists of a `statement_list` followed by an `EOF` token, where the statement list is exactly that, a list of statements separated by `⋄`;
  - the `statement` rule was modified to include assignments as a special type of statement, which is a `←` followed by an `ID` token, used for variables.
 
-# Changing the `Token` class
+## Changing the `Token` class
 
 To implement these differences, first things first we need to update our tokens in the `Token` class; let us also take this opportunity to reorder our tokens in an attempt to organize them into sensible groups:
 
@@ -136,7 +136,7 @@ class Token:
     ID_CHARS = "_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 ```
 
-# Updating the `Tokenizer`
+## Updating the `Tokenizer`
 
 After defining our new tokens we need to tell the `Tokenizer` when to create them. Here comes _another_ thing I decided to do differently. Variable names can start with letters and then include numbers, e.g. `var1`, `s46sx` and `_1d` are all valid variable names... and with my tokenizer working backwards, upon reaching the `1` in `var1` I would have to peek at the following characters to decide whether to tokenize a number or a variable name. For this reason, I changed the `Tokenizer` to start at the beginning of the string and in the end just reverse the list of tokens.
 
@@ -181,13 +181,13 @@ class Tokenizer:
 
 Because we also allow for numbers in our variables, as we included the numbers `"0123456789"` in `Token.ID_CHARS`, we only check if the current character is in `Token.ID_CHARS` _after_ checking if the current character is a number. This allows for numbers to match first, which is what we want because a variable cannot start with a number.
 
-# Changes to the `ASTNode` subclasses
+## Changes to the `ASTNode` subclasses
 
-## Utility change to `ASTNode`
+### Utility change to `ASTNode`
 
 For the sake of brevity we define the `AST.__repr__` method as `self.__str__` and leave `AST.__str__` undefined; then for each `ASTNode` subclass we only have to define the magic method `__str__` as we get the `__repr__` for free with inheritance.
 
-## New `ASTNode` subclasses
+### New `ASTNode` subclasses
 
 From the updated grammar, both from the new functionalities and the changes I had to make because I changed my mind about the old grammar, we need to modify these `ASTNode` subclasses:
 
@@ -299,7 +299,7 @@ class Statements(ASTNode):
 
 Congratulations on making it this far into the post! Now we are left with checking the changes our `Parser` class underwent and then interpreting our programs! Yeah!
 
-# Parsing the new grammar
+## Parsing the new grammar
 
 On top of some small edits needed to accommodate the changes I introduced in the grammar when I changed the way `Monad`/`Dyad` nodes are created, these are the main updates we need to do in the `Parser` class:
 
@@ -451,7 +451,7 @@ Well, that was a lot of work... If you only read the code, maybe not for you... 
 
 And now on to the moment we have all been waiting for... We will take these abstract syntax trees and actually interpret them!
 
-# Visitor pattern
+## Visitor pattern
 
 One thing I learned from reading the original [lsbasi] series was what the [Visitor pattern] is. In short, the visitor pattern allows me to modularize two different things that often come together: first I create an object with a helpful structure and _then_ I apply an algorithm to that structure instead of doing both at the same time.
 
@@ -699,7 +699,7 @@ class Interpreter(NodeVisitor):
 
 And that is it! Congrats on making it this far! Lets take our new interpreter for a ride.
 
-# Experimenting
+## Experimenting
 
 You can either download the code from the [GitHub repo][rgspl2] or finish your code with this utility `if` statement (just be sure to `import argparse` in the beginning of your file):
 
@@ -764,13 +764,13 @@ Now you can fire up your favourite interpreter and write `./rgspl.py --repl` and
 
 If the verbose output annoys you, you may want to set `debug=False` :)
 
-# Exercises
+## Exercises
 
 For the next blog post I want you to implement some more of APL's primitive built-ins. For practice, why don't you tackle primitives like `*`, `○`, `|`, the comparison functions `<≤=≥>≠` and the boolean functions `∨∧⍱⍲`? Have a go at them! Do not forget to make them scalar!
 
 I also want you to have a look at [Ruslan's 7th post][ruslan-7] and check out his code for the small utility he wrote to generate images from AST trees (search the text for _"To help you visualize ASTs"_). It is an excellent way for you to practice your visitor pattern skills: implement that utility for these APL trees we have.
 
-# Where we are heading to
+## Where we are heading to
 
 In future posts here are some of the things that will be covered:
 
@@ -786,7 +786,7 @@ These are some of the things I want to tackle next but having those complete doe
 
 See you next time ;)
 
-# The series
+## The series
 
 This is a series that I am working slowly but steadily on.
 Feel free to ping me in the comments or over email

@@ -3,7 +3,7 @@ Today I learned how to create co-authored commits on GitHub.
 ===
 
 
-# Co-authored commits
+## Co-authored commits
 
 On GitHub, co-authored commits allow you to add two or more people as the authors of a commit, effectively marking that commit as a contribution done by multiple users.
 When a commit has co-authors, GitHub displays those multiple authors next to the commit, as shown in the image below:
@@ -11,7 +11,7 @@ When a commit has co-authors, GitHub displays those multiple authors next to the
 ![Screenshot of a commit on GitHub that shows two profile pictures next to the commit, the two authors of the commit, instead of the usual single profile picture.](_commit.webp "A commit with two authors.")
 
 
-## Adding a co-author
+### Adding a co-author
 
 To add co-authors to a commit, the extended commit message should end with a `Co-authored-by` line, that looks like this:
 
@@ -23,7 +23,7 @@ If you use the co-author's GitHub email, then the commit will count as a contrib
 To find the author's GitHub email, either ask them, or figure the email out on your own.
 
 
-## Finding a GitHub email
+### Finding a GitHub email
 
 To find the email someone uses on GitHub, start by finding a commit they made (for example, open their repositories and open a random commit in one of their repositories).
 That will give you a link that ends with a long commit hash.

@@ -14,7 +14,6 @@
     </div>
 {% endif %}
     <div class="e-content">
-        {{ page.summary|raw }}
         {% include 'partials/blog/announcement.html.twig' %}
         {{ page.content|slice(page.summary|length)|raw }}
         {% include 'partials/blog/call-to-action.html.twig' %}

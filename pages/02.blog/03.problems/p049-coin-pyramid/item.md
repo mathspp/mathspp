@@ -4,7 +4,7 @@ Can you make the pyramid point the other way by moving only three coins?
 
 ![10 coins laid in a pyramid, with the tip to the right.](thumbnail.webp "10 coin pyramid.")
 
-# Problem statement
+## Problem statement
 
 The image above shows a pyramid composed of 10 coins:
 4 coins, then 3, then 2, then 1.
@@ -43,7 +43,7 @@ If you need any clarification whatsoever, feel free to ask in the comment sectio
 This problem was shared by a solver of a previous problem, so thank _you_!
 
 
-# Solvers
+## Solvers
 
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
@@ -78,7 +78,7 @@ Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
 
 
-# Solution
+## Solution
 
 It is easier to _show_ you the solution than it is to explain it to you,
 but what you want to do is take the three corner coins and “move them to the opposite side”:

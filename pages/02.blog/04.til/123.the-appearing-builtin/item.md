@@ -3,12 +3,12 @@ Today I learned that the module `builtins` grows dynamically in the REPL.
 ===
 
 
-# The appearing built-in
+## The appearing built-in
 
 After [some back and forth on BlueSky](https://bsky.app/profile/klaus.seistrup.dk/post/3loj3oimjj42n), I tripped on some funky behaviour in the REPL:
 
 ```pycon
-# Fresh new REPL, Python 3.13:
+## Fresh new REPL, Python 3.13:
 >>> import builtins
 >>> len(dir(builtins))
 159
@@ -24,7 +24,7 @@ Why did the module `builtins` grow in size between the two calculations?!
 I restarted the REPL and tried something else:
 
 ```pycon
-# Fresh new REPL, Python 3.13:
+## Fresh new REPL, Python 3.13:
 >>> import builtins
 >>> print(dir(builtins))
 [ ... ]
@@ -63,7 +63,7 @@ I am not entirely sure, but my guess is that this special `_` isn't a regular va
 You can assign to `_` and it will “overwrite” the other value:
 
 ```pycon
-# Fresh new REPL:
+## Fresh new REPL:
 >>> 1 + 2
 3
 >>> _
@@ -78,7 +78,7 @@ It's actually shadowing the other one!
 Here's proof:
 
 ```pycon
-# Fresh new REPL:
+## Fresh new REPL:
 >>> 1 + 2
 3
 >>> _

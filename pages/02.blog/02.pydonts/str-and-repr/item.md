@@ -17,7 +17,7 @@ dunder methods with these two use cases in mind.
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)
 
-# `str` and `repr`
+## `str` and `repr`
 
 Python has two built-in mechanisms that allow you to convert an object to a string,
 so that you can look at it and print it.
@@ -66,7 +66,7 @@ as you can see by looking at [PEP 3140][pep3140] and at the following session:
 True
 ```
 
-# The `__str__` and `__repr__` dunder methods
+## The `__str__` and `__repr__` dunder methods
 
 When you are defining your own classes in Python you will probably want to specify how
 your objects should look when printed, given that the default behaviour in Python
@@ -129,9 +129,9 @@ A
 A
 ```
 
-# Examples in code
+## Examples in code
 
-## `datetime`
+### `datetime`
 
 Python's `datetime` module supplies classes for manipulating dates and times.
 A simple date could be created like so:
@@ -165,7 +165,7 @@ Notice that from its `str` we can't even tell that we were dealing with a
 `datetime.datetime` object.
 
 
-## 2D point
+### 2D point
 
 An example custom usage of the `__str__` and `__repr__` dunder methods could come
 into play if you were to implement a simple class that represents 2D points,
@@ -202,7 +202,7 @@ the standard `(x, y)` representation of a 2D point.
 During debugging, the `Point2D` prefix is useful because it helps you distinguish
 between a tuple and a custom `Point2D` instance.
 
-# Conclusion
+## Conclusion
 
 When implementing custom classes you will probably want to give a custom implementation
 of the `__repr__` dunder method, and also a `__str__` if you need your instances to
@@ -218,7 +218,7 @@ If you liked this Pydon't be sure to leave a reaction below and share this with 
 Also, [don't forget to subscribe to the newsletter][subscribe] so you don't miss
 a single Pydon't!
 
-# References
+## References
 
  - Python 3 Documentation, The Python Language Reference, Data model, __repr__ and __str__, [https://docs.python.org/3/reference/datamodel.html#object.__repr__](https://docs.python.org/3/reference/datamodel.html#object.__repr__).
  - Python 3 Documentation, The Python Standard Library, Built-in Functions, [https://docs.python.org/3/library/functions.html](https://docs.python.org/3/library/functions.html).

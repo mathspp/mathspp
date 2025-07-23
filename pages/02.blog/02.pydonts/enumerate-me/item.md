@@ -17,7 +17,7 @@ with `for` loops.
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 Following up on last week's [Pydon't about `zip`][pydont-zip],
 today we are talking about `enumerate`.
@@ -35,7 +35,7 @@ In this article you will
  - see some nice examples of code using `enumerate`.
 
 
-# How `enumerate` works
+## How `enumerate` works
 
 Python newcomers are usually exposed to this type of `for` loop very early on:
 
@@ -101,7 +101,7 @@ but the Pythonic way of doing so is by using the built-in `enumerate`:
 ```
 
 
-# Optional `start` argument
+## Optional `start` argument
 
 The `enumerate` function can also accept an optional argument that specifies
 the first index it returns.
@@ -136,7 +136,7 @@ to use `enumerate` with a negative integer as the optional argument?
 Comment down below if you come up with something nice!
 
 
-# Unpacking when iterating
+## Unpacking when iterating
 
 The `enumerate` function produces a lazy generator, which means the
 items you iterate over only become available as you need them.
@@ -177,7 +177,7 @@ for tup in enumerate("abc"):
 ```
 
 
-## Deep unpacking
+### Deep unpacking
 
 Things can get even more interesting when you use `enumerate`,
 for example, on a `zip`:
@@ -230,12 +230,12 @@ What we do is use deep unpacking to access all these values directly:
 ! go ahead and take a look at my [Pydon't about unpacking][pydont-unpacking].
 
 
-# Examples in code
+## Examples in code
 
 Now you will see some usages of `enumerate` in _real_ Python code.
 
 
-## Vanilla `enumerate`
+### Vanilla `enumerate`
 
 I took a look at the Python Standard Library and by and large the
 most common usage of `enumerate` is just a vanilla `enumerate(iter)`
@@ -312,9 +312,9 @@ Running this script should throw a `ValueError` at your face,
 that should go away when you put a blank space there.
 
 
-## Using the optional argument
+### Using the optional argument
 
-### Line numbers in docstring tests
+#### Line numbers in docstring tests
 
 If you were paying attention,
 maybe you noticed that the `enumerate` usage of the previous example
@@ -356,7 +356,7 @@ class DocTestParser:
 ```
 
 
-### Counting days of the week
+#### Counting days of the week
 
 Definitely not as frequent as the plain `enumerate(iter)` usage,
 but there were also quite some places that made use of the optional
@@ -455,7 +455,7 @@ which is `self.firstweekday`, to sync up the days of the month to what
 the `Calendar` sees as the first day of the week.
 
 
-## Filtering the indices
+### Filtering the indices
 
 A really neat usage of `enumerate` I found while probing the Python Standard Library
 was to filter a list in search for the indices of the elements that satisfy a certain
@@ -498,7 +498,7 @@ we can clearly see that `indices` is collecting the indices of the
 elements in `compiler_so` that start with `"-isysroot"`.
 
 
-## Making the most out of the tuples
+### Making the most out of the tuples
 
 Another interesting usage of the `enumerate` function I found was to create
 dictionaries directly.
@@ -545,7 +545,7 @@ so this is what the result could look like:
 ```
 
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this article, for you, on a silver platter:
 

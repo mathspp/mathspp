@@ -3,7 +3,7 @@ Today I learned you can use uv to install CLI tools with extra dependencies.
 ===
 
 
-# CLI tools with extra dependencies
+## CLI tools with extra dependencies
 
 You can use `uv` to install CLI tools in isolated virtual environments.
 E.g., `uv tool install black` installs `black` in an isolated venv.

@@ -11,7 +11,7 @@ This is an algorithmic puzzle where you just have to turn some coins.
 ![](thumbnail.png "Photo by Michael Longmire on Unsplash.")
 
 
-# Problem statement
+## Problem statement
 
 You are inside a dark room, sitting at a table.
 The table in front of you is covered with coins, which you can feel,
@@ -38,7 +38,7 @@ This problem was shared by @TodiLiju, who comments these “problem”
 posts from time to time.
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to
 
@@ -47,7 +47,7 @@ Congratulations to the ones that solved this problem correctly and, in particula
 for sending in a correct solution.
 
 
-# Solution
+## Solution
 
 Because there are so many things that we don't know about the
 coins, when we start, and because of how little we control

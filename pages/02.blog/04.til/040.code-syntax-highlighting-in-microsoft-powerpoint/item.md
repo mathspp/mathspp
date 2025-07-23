@@ -2,7 +2,7 @@ Learn how to do code syntax highlighting in PowerPoint!
 
 ===
 
-# How to do code syntax highlighting in Microsoft PowerPoint
+## How to do code syntax highlighting in Microsoft PowerPoint
 
 The basic technique I use to do syntax highlighting for my talk slides has two steps:
 
@@ -13,7 +13,7 @@ I use this technique a lot when I'm preparing my talks!
 For an example of a whole presentation built with this technique you can check [this slide deck][slide-deck].
 
 
-# Step-by-step instructions
+## Step-by-step instructions
 
 To make it easier to follow, you can find here the step-by-step instructions.
 At the bottom of the page you'll also find an animated GIF showing you how I do this.

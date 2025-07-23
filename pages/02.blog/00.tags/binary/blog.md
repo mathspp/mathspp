@@ -29,7 +29,7 @@ title: "Binary blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">9</th>
-            <th style="text-align: center;">6,822</th>
+            <th style="text-align: center;">6,808</th>
             <th style="text-align: center;">135</th>
         </tr>
     </thead>

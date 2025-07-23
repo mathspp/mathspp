@@ -14,7 +14,7 @@ In this Pydon't you'll learn how to make the best use possible of the Python REP
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 The REPL is an amazing tool that every Python programmer should really know and appreciate!
 Not only that, but you stand to gain a lot if you get used to using it and if you learn
@@ -36,7 +36,7 @@ In this Pydon't, you will:
 <!--^-->
 
 
-# REPL
+## REPL
 
 Read. Evaluate. Print. Loop.
 
@@ -62,7 +62,7 @@ are likely to differ from what I show here, but it's still the REPL.
 (By the way, if you ever need to leave the REPL, just call the `exit()` function.)
 
 
-# Just fire up the REPL
+## Just fire up the REPL
 
 The REPL is, hands-down, one of your best friends when you are writing Python code.
 Having a REPL to play around with just makes it much easier to learn the language.
@@ -85,9 +85,9 @@ Write code in it.
 As soon as you become familiar with it, you'll love it and thank me for that.
 
 
-# REPL mechanics
+## REPL mechanics
 
-## Basic input and output
+### Basic input and output
 
 The REPL generally contains a `>>>` in the beginning of the line, to the left of your cursor.
 You can type code in front of that prompt and press Enter.
@@ -98,7 +98,7 @@ When you press Enter, the code is evaluated and you are presented with the resul
 6
 ```
 
-## Multiline input
+### Multiline input
 
 The REPL also accepts code that spans multiple lines, like `if` statements,
 `for` loops, function definitions with `def`, etc.
@@ -126,7 +126,7 @@ Hello, world!
 ```
 
 
-## Pasting into the REPL
+### Pasting into the REPL
 
 Pasting into the REPL should work without any problem.
 
@@ -169,7 +169,7 @@ This happens because the REPL finds a blank line
 and thinks we tried to conclude the definition of the function.
 
 
-## Implicit printing of results
+### Implicit printing of results
 
 One last thing you should know about the REPL is that it implicitly “prints”
 the results of the expressions you type.
@@ -204,7 +204,7 @@ gives two different results.
 Just be mindful of that.
 
 
-## No printing, or `None`
+### No printing, or `None`
 
 In particular, if the expression you wrote evaluates to `None`,
 then nothing gets printed.
@@ -237,7 +237,7 @@ then those functions will not show anything in the REPL:
 ```
 
 
-## Repeated imports
+### Repeated imports
 
 Sometimes it is useful to use the REPL to quickly import a function you just defined.
 Then you test the function out and then proceed to changing it in the source file.
@@ -306,7 +306,7 @@ Exiting the REPL and opening it again may be the cleanest way to reload your imp
 in those situations.
 
 
-## REPL history
+### REPL history
 
 I'll be honest with you, I'm not entirely sure if what I'm about to describe
 is a feature of the Python REPL or of all the command lines I have worked with
@@ -319,7 +319,7 @@ What's super cool is that the REPL remembers this history of expressions,
 even if you exit the REPL, _as long as you don't close the terminal_.
 
 
-# The last result
+## The last result
 
 If you read my [Pydon't about the usages of underscore][pydont-underscores-last-repl-result]
 you might know this already,
@@ -360,7 +360,7 @@ If you want to get back the magical behaviour of `_` holding the result of the l
 just delete `_` with `del _`.
 
 
-# Getting help from within the REPL
+## Getting help from within the REPL
 
 Another great feature that is often underappreciated is the built-in help system.
 If you need to take a look at a quick reference for a built-in function,
@@ -425,7 +425,7 @@ stored in the docstring.
 ! so you don't miss it!
 
 
-# Tips for quick hacks
+## Tips for quick hacks
 
 The Python REPL is amazing when you need to flesh an idea out,
 as it allows you to quickly test some code, tweak it,
@@ -436,7 +436,7 @@ However, sometimes it helps to know about a couple of little tricks
 that you can employ to help you make the most out of your REPL.
 
 
-## Semicolons
+### Semicolons
 
 Yes, **really**.
 
@@ -525,7 +525,7 @@ Now I can move on to the next step, knowing that a mistake now won't be costly:
 I can reset everything by going up to the line with all the intermediate steps and run that single line.
 
 
-## Not changing lines
+### Not changing lines
 
 When you want to define a simple multiline block, you can often get away
 with inlining what comes after the colon.
@@ -569,7 +569,7 @@ you can even combine this with semicolons:
 ```
 
 
-## Import, test, loop
+### Import, test, loop
 
 If you are writing some code and want to take it for a spin –
 just to make sure it makes sense –
@@ -583,7 +583,7 @@ enter it again, and then with a couple of up-arrow presses you get your setup co
 and are ready to play with it again.
 
 
-# Other tools
+## Other tools
 
 I try to stick to vanilla Python as much as possible when writing these Pydon'ts, for one simple reason:
 the world of vanilla Python is huge and, for most developers, has lots of untapped potential.
@@ -592,7 +592,7 @@ However, I believe I would be doing you a disservice if I didn't mention two too
 that can really improve your experience in/with the REPL.
 
 
-## Rich
+### Rich
 
  > “Rich is a Python library for rich text and beautiful formatting in the terminal.”
 
@@ -609,7 +609,7 @@ Running this in your REPL will change your life.
 With these two lines, Rich will pretty-print your variables and even include highlighting.
 
 
-## IPython
+### IPython
 
 [IPython][ipython] is a command shell for interactive computing in multiple programming languages,
 originally developed for the Python programming language.
@@ -622,7 +622,7 @@ It is beyond the scope of this Pydon't to tell you all about IPython,
 but it is something I had to mention (even though I personally don't use it).
 
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this Pydon't, for you, on a silver platter:
 

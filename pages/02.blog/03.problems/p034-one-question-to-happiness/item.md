@@ -12,7 +12,7 @@ How can you pick the correct one?
 ![](thumbnail.png "Photo by Hans Eiskonen on Unsplash.")
 
 
-# Problem statement
+## Problem statement
 
 Today's problem is a classical one.
 If you solve lots of logic puzzles and riddles then it is likely
@@ -32,7 +32,7 @@ What question should you ask in order to determine the correct door?
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
@@ -43,7 +43,7 @@ who sent me their correct solutions:
 (The list is in no particular order.)
 
 
-# Solution
+## Solution
 
 I am yet to meet someone who can walk me through their thought process
 while they solve this for the first time,

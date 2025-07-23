@@ -3,7 +3,7 @@ You can use the Python built-in function `iter` with two arguments to create an 
 ===
 
 
-# Making an iterator out of a function
+## Making an iterator out of a function
 
 Today I (re)learned that the built-in function `iter` has a variant with two arguments that lets you turn any 0-argument function into an iterator.
 The version `iter(function, value)` will create an iterator that returns the successive return values of calling `function` until one of them matches `value`, at which point the iterator is done.
@@ -44,7 +44,7 @@ for die_roll in iter(roll, 6):
 ```
 
 
-## Python model of the built-in `iter` with two arguments
+### Python model of the built-in `iter` with two arguments
 
 The built-in `iter` with two arguments is more or less equivalent to this generator function:
 
@@ -55,6 +55,6 @@ def iter(func, target_value):
 ```
 
 
-## More examples of using `iter` with two arguments
+### More examples of using `iter` with two arguments
 
 If you come up with more example usages of `iter` with two arguments, please comment below (or [reach out to me](/contact)) so I can add them here!

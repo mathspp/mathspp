@@ -4,7 +4,7 @@ There's 100 drawers and 100 shuffled balls. Can you find the one I choose?
 
 This post contains a problem that haunted me for a couple of years. I had it lingering in my brain for a long time and it felt quite challenging... then I presented it to a friend of mine one night, and the morning after I had a text from him saying he had cracked it! So kudos to him! I only got to the answer after he gave me a hint...
 
-# Problem statement
+## Problem statement
 
 You and a friend are outside a room guarded by a sphinx.
 The sphinx tells you that inside the room there are 100 drawers, numbered from $1$ to $100$, where each drawer contains one of a hundred balls (also numbered from $1$ to $100$).
@@ -21,7 +21,7 @@ What is the strategy that you and your friend should follow that maximizes the p
 
 !!! Hint: checking $50$ drawers at random gives you $50%$ probability of winning.
 
-# Solution
+## Solution
 
 There is a strategy that guarantees that you will be able to find the ball that the sphinx picks.
 Take one more moment to think it through, now that you know for a fact that there is a perfect strategy.

@@ -5,7 +5,7 @@ How do you create a Python package? How do you set up automated testing and code
 ![The back of a delivery truck stuffed with cardboard packages, piled on top of each other.](thumbnail.png "Photo by Claudio Schwarz on Unsplash.")
 
 
-# How to create a Python package?
+## How to create a Python package?
 
 In order to create a Python package, you need to write the code that implements the functionality you want to put in your package,
 and then you need to publish it to [PyPI].
@@ -30,7 +30,7 @@ If you notice I am doing something wrong, _do_ let me know!
 ! it should be enough to read up until the section “[Write tests](#write-tests)”.
 
 
-# What is the package for?
+## What is the package for?
 
 Typically, if you are creating a Python package, that's either because you have some code you would like to share with others,
 or because you have an _idea_ for something you would like to share.
@@ -39,7 +39,7 @@ In my case, I want to package the [custom JSON encoder and decoder][custom-json]
 which allows you to [extend the JSON standard][custom-json-extend-standard].
 
 
-# Set up dependency management
+## Set up dependency management
 
 I will start by setting up the dependency management of my package, and I will use [Poetry].
 The reason I'm going for [Poetry] in this article is because I see a lot of other packages using it successfully,
@@ -50,7 +50,7 @@ and I try to mimic that.
 They use [Poetry], so I'll do the same.)
 
 
-## Pick a name
+### Pick a name
 
 [Naming matters][pydont-naming-matters] **a lot** in programming.
 You do not need a definitive name for your package at this point, but I know I want my package to be called `extendedjson`,
@@ -59,7 +59,7 @@ so I can actually start creating everything with the correct name.
 When picking a name for your package, make sure to head over to [PyPI] and check if it is available!
 
 
-## Initialise the project with Poetry
+### Initialise the project with Poetry
 
 Go ahead and create a folder with your package name.
 That's `extendedjson` for me.
@@ -126,7 +126,7 @@ but you can check [Poetry]'s documentation on how to add more dependencies,
 or you can keep reading and I'll show you how in a second.
 
 
-# Set up a repository
+## Set up a repository
 
 Now that we have the file structure set up, I will initialise a GitHub repository to host the code:
 
@@ -143,7 +143,7 @@ And we're live!
 The [`extendedjson` repository][extendedjson-repo] is up!
 
 
-## Set up some pre-commit hooks
+### Set up some pre-commit hooks
 
 The next thing we are doing is setting up some commit hooks.
 This is just an extra step I'm taking because it helps keep things homogeneous.
@@ -171,8 +171,8 @@ and we just set it up how we want.
 This is how my `.pre-commit-config.yaml` file looks like:
 
 ```yaml
-# See https://pre-commit.com for more information
-# See https://pre-commit.com/hooks.html for more hooks
+## See https://pre-commit.com for more information
+## See https://pre-commit.com/hooks.html for more hooks
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.0.1
@@ -214,7 +214,7 @@ git push
 ```
 
 
-# Add a license
+## Add a license
 
 Woops! Maybe I should have done this sooner, but I don't think it is too far down the road for me to do this now!
 For this project, I am going with the permissive MIT license,
@@ -224,13 +224,13 @@ Adding the MIT license can be done from the repository webpage,
 so I will do just that and then I'll actually pull the license into the local repository.
 
 
-# Test uploading the package
+## Test uploading the package
 
 Now I will try to upload the stub package to the **test** PyPI repository, https://test.pypi.org.
 This lets everyone test their packaging/publishing workflows without messing with the real repository.
 
 
-## Configure the test repository
+### Configure the test repository
 
 First, we tell Poetry about this test repository:
 
@@ -241,7 +241,7 @@ poetry config repositories.testpypi https://test.pypi.org/legacy/
 This makes it so that Poetry is aware of that repository, which we called `testpypi`.
 
 
-## Get an API key
+### Get an API key
 
 Next up, we need to get an API key so that Poetry can actually push to the `testpypi` repository.
 For that, you need to [create an account on TestPyPI](https://test.pypi.org/account/register/) and then create a new API key under your account settings.
@@ -253,7 +253,7 @@ poetry config http-basic.testpypi __token__ pypi-your-api-token-here
 ```
 
 
-## Build and upload your package
+### Build and upload your package
 
 The step immediately before uploading your package is building it!
 After building the package, you can try uploading it to TestPyPI:
@@ -269,7 +269,7 @@ your package should be [live on TestPyPI](https://test.pypi.org/project/extended
 ![Screenshot of TestPyPI where it is visible that a stub for `extendedjson` was successfully uploaded.](_testpypi.webp "Screenshot of `extendedjson` uploaded to TestPyPI.")
 
 
-## Ignore the build products
+### Ignore the build products
 
 When you build your package, a folder `dist` is created,
 and that's where you can find the things that Poetry built for you.
@@ -277,19 +277,19 @@ and that's where you can find the things that Poetry built for you.
 We don't want to push these to GitHub, so we'll go ahead and add the folder `dist` to the `.gitignore` file.
 
 
-# Populate the real package
+## Populate the real package
 
 The next thing we are going to do is to actually populate the package with the actual code,
 and then publish it to the real [PyPI] repository.
 
 
-## Add the code
+### Add the code
 
 So, I will start by grabbing my [custom JSON encoder and decoder mechanism][custom-json],
 and put it in the `extendedjson/__init__.py` file.
 
 
-## Changelog management
+### Changelog management
 
 Next, I want to record this change in a changelog, so I will add one more development dependency, [scriv].
 Scriv is a command-line tool for helping developers maintain useful changelogs.
@@ -315,13 +315,13 @@ Scriv will now create a small file where I'm supposed to jot down the changes I 
 In my case, it's just this:
 
 ```md
-### Added
+#### Added
 
 - Classes `ExtendedEncoder` and `ExtendedDecoder` to allow extension of the JSON format.
 ```
 
 
-## Committing everything
+### Committing everything
 
 At this point there is a lot that needs to be committed:
 
@@ -333,12 +333,12 @@ git commit -m "Add ExtendedEncoder and ExtendedDecoder."
 ```
 
 
-# Publish the real package
+## Publish the real package
 
 Now that we have real code to distribute, we can publish it to the real PyPI repository!
 
 
-## Configure PyPI
+### Configure PyPI
 
 Because Poetry is built with Python in mind, configuring PyPI is a tad easier than TestPyPI.
 Simply go to your [PyPI] account (create one if needed!),
@@ -350,7 +350,7 @@ poetry config pypi-token.pypi pypi-your-token-here
 ```
 
 
-## Build and publish
+### Build and publish
 
 Now we can publish our code, but we **must build it first**,
 which we do with the flag `--build`:
@@ -365,7 +365,7 @@ Now you can [get `extendedjson` from PyPI][extendedjson-pypi]!
 !["A screenshot of the `extendedjson` page on PyPI, showing it was successfully uploaded."](_pypi.webp "A screenshot of the `extendedjson` page on PyPI.")
 
 
-## Do a victory lap
+### Do a victory lap
 
 After uploading a new project to PyPI for the first time, I always like doing a small victory lap...
 
@@ -373,7 +373,7 @@ I just install the module, import it, exit Python, and then uninstall it:
 
 ```bash
 λ python -m pip install extendedjson
-# ...
+## ...
 
 λ python
 Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)] on win32
@@ -398,12 +398,12 @@ Proceed (Y/n)? y
 !["A screenshot of a terminal window showing `extendedjson` being used inside a Python REPL."](_extendedjson_repl.webp "`extendedjson` being used in the REPL.")
 
 
-# Publish a release
+## Publish a release
 
 Let's prepare a GitHub release for version 0.1.0.
 
 
-## Prepare the release
+### Prepare the release
 
 I'll start by putting _some_ info on the README file, which is currently empty.
 I'll also let Poetry know that the package information is in there, by specifying
@@ -428,7 +428,7 @@ Then, I'll take the short sentence from the README file and make it the reposito
 And I'll also add some subject tags.
 
 
-## Tag the commit history
+### Tag the commit history
 
 After all these nice changes are into place and committed,
 let's tag the commit history to say that _this_ point in time is version 0.1.0:
@@ -443,14 +443,14 @@ I tried using the command `scriv github-release` to do the release for me,
 but something wasn't working, so I made the release manually.
 
 
-## Publish the release
+### Publish the release
 
 After you create a tag, it is very straightforward to create a release!
 Just go to the `/tags` page in your repository and click the three dots next to your tag:
 it will have an option to create a release out of that tag.
 
 
-# Write tests
+## Write tests
 
 Some may say I should have done this sooner, but let's write tests for our code.
 Poetry already created a directory `tests` for us,
@@ -483,9 +483,9 @@ tests\test_extendedjson.py .....                                 [100%]
 After adding tests, we commit them and prepare a patch release for version 0.1.1.
 
 
-# Automating testing, linting, formatting, and everything
+## Automating testing, linting, formatting, and everything
 
-## Understanding tox
+### Understanding tox
 
 [tox] is a tool that aims to automate and standardise testing in Python,
 and it is a tool that I want to set up to automate a lot of tasks:
@@ -545,7 +545,7 @@ which differs from the procedure that Poetry follows.
 So, `isolated_build = True` probably tells tox that building will be handled by another tool/in some other way.
 
 
-## A simple tox configuration
+### A simple tox configuration
 
 For a very first try, I created a simple file `tox.ini` with just a couple of dependencies:
 
@@ -568,7 +568,7 @@ and it will check that the code is well-formatted and it will run the tests.
 That's it.
 
 
-## Running tox
+### Running tox
 
 To run tox, I can either run everything with the simple command
 
@@ -592,7 +592,7 @@ you should see a couple of success messages at the end:
 
 ```bash
 λ tox
-# ...
+## ...
   py38: commands succeeded
   py39: commands succeeded
   py310: commands succeeded
@@ -600,7 +600,7 @@ you should see a couple of success messages at the end:
 ```
 
 
-## Expanding the tox configuration
+### Expanding the tox configuration
 
 Now that I've seen how tox works, I feel more confident in expanding the configuration:
 
@@ -633,7 +633,7 @@ Running tox now blows right in my face, because pylint says my code quality is j
 Well, that sucks!
 
 
-# Improving code quality
+## Improving code quality
 
 There is no point in automating all these tests and checks if then we ignore the output,
 so let's improve the code quality of the package.
@@ -655,7 +655,7 @@ and now tox is all happy again:
 
 ```bash
 λ tox
-# ...
+## ...
   py38: commands succeeded
   py39: commands succeeded
   py310: commands succeeded
@@ -663,7 +663,7 @@ and now tox is all happy again:
 ```
 
 
-# Code coverage
+## Code coverage
 
 Now I want to setup code coverage!
 I hope this is easy enough...
@@ -688,7 +688,7 @@ but I used the two arguments you can see above to tweak the execution:
  which is more fine-grained than just checking which statements run.
 
 
-## Running coverage.py with tox
+### Running coverage.py with tox
 
 For this test run of coverage.py, I ran everything locally and by hand.
 What I want to do now is to have tox run coverage.py for me.
@@ -719,7 +719,7 @@ Or am I using tox simply for the fact that it does automate the code coverage re
 Either way, I only have 85% code coverage right now, so let's work on improving that.
 
 
-## 100% code coverage
+### 100% code coverage
 
 To achieve 100% code coverage I need to make sure that each statement in my code runs at least once when the tests run.
 At this point, this just means that I need to write a couple of tests for which encoding and decoding fails,
@@ -732,7 +732,7 @@ This is not terribly difficult to do, which means I eventually got to 100% code 
 Having done that, now is a good time to make a new minor release (0.1.2) that contains full code coverage.
 
 
-## Forcing 100% code coverage
+### Forcing 100% code coverage
 
 Right now, tox will run code coverage and it will build the coverage report,
 but it will succeed, regardless of the coverage percentage achieved.
@@ -746,7 +746,7 @@ This means tox would say you failed.
 To configure tox in this way, just modify your coverage report command:
 
 ```ini
-# ...
+## ...
 
 commands =
     # ...
@@ -758,7 +758,7 @@ Right now, I'm not sure if I'll set tox to fail when the code coverage is under 
 so I'll leave this alone for now.
 
 
-# CI/CD with GitHub Actions
+## CI/CD with GitHub Actions
 
 GitHub Actions is a service that GitHub provides that lets you run your workflows in the cloud.
 For example, linting your code and running the tests.
@@ -766,7 +766,7 @@ What is more, these _actions_ that you run can be customised to trigger at speci
 for example, when we push code to the main branch or when people make pull requests against that branch.
 
 
-## Running linters and tests
+### Running linters and tests
 
 GitHub Actions are defined by YAML files that live in the directory `.github/workflows`,
 so we are going to go ahead and create the file `.github/workflows/build.yaml`.
@@ -780,7 +780,7 @@ By cross-referencing some sources, I came up with the YAML file you can find bel
 I will go over what everything means in just a second.
 
 ```yaml
-# .github/workflows/build.yaml
+## .github/workflows/build.yaml
 name: extendedjson CI
 
 on:
@@ -944,17 +944,17 @@ which just specifies the operating system (and version) that the host machine is
 You should check [the GitHub Actions documentation][gh-actions-docs] for more information on all of this.
 
 
-## Integrating with Codecov
+### Integrating with Codecov
 
 After setting up the initial version of CI, I noticed my checks were passing but I only had 77% code coverage.
 So, I ended up setting coverage.py to fail when my coverage isn't 100%.
 I did that by going to the file `tox.ini` and adding `--fail-under 100` to the command `coverage report -m`:
 
 ```ini
-# ...
+## ...
 
 [testenv]
-# ...
+## ...
 commands =
     # ...
     coverage report -m --fail-under 100
@@ -967,7 +967,7 @@ and then I just need to modify my workflow YAML file to upload the coverage data
 This needs to happen _after_ tox has run:
 
 ```yaml
-# ...
+## ...
 jobs:
   build:
     # ...
@@ -996,7 +996,7 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
-# ...
+## ...
 ```
 
 By adding `workflow-dispatch:`, we make it possible to rerun a workflow that completed successfully.
@@ -1007,10 +1007,10 @@ And it was not! Codecov was not finding the coverage report because I wasn't wri
 All I had to do was add a `coverage xml` command to the file `tox.ini`:
 
 ```ini
-# ...
+## ...
 
 [testenv]
-# ...
+## ...
 commands =
     # ...
     coverage xml
@@ -1021,7 +1021,7 @@ After this was fixed, Codecov worked perfectly and commented my PR saying my cov
 ![A screenshot of my GitHub pull request with an automatic comment by Codecov with a simple coverage report stating I have 100% code coverage.](_codecov_comment.webp "Codecov automatically comments with a coverage report.")
 
 
-## Publishing to PyPI automatically
+### Publishing to PyPI automatically
 
 The final step in this endeavour is publishing automatically to PyPI every time we make a new release.
 There are actions that publish Python packages to PyPI for us,
@@ -1087,7 +1087,7 @@ Then, when I create the `0.1.3` release, GitHub should publish to PyPI for me...
 Which it did!
 
 
-# README badges
+## README badges
 
 To conclude this endeavour, let us finish up by adding nice badges to the README file!
 This is what we are adding:
@@ -1098,7 +1098,7 @@ To add these badges, all we need to do is add links to some images that are auto
 Here is the change to the README file:
 
 ```md
-# extendedjson
+## extendedjson
 
  > Easily extend JSON to encode and decode arbitrary Python objects.
 
@@ -1128,7 +1128,7 @@ If you go to [shields.io][shields] you can find _hundreds_ of different badges t
 Just have fun selecting all the appropriate badges you want to add!
 
 
-# Tidying up
+## Tidying up
 
 At this point, I published this article and it got some attention on Twitter,
 which meant I got **lots** of good suggestions for improvements!
@@ -1136,7 +1136,7 @@ which meant I got **lots** of good suggestions for improvements!
 Here are the implementations of some of those suggestions.
 
 
-## Modifying the code layout to use `src`
+### Modifying the code layout to use `src`
 
 As it turns out, it is a good idea to have your source code one level deeper,
 inside a folder `src`.
@@ -1151,12 +1151,12 @@ Just go to the file `pyproject.toml` and change this setting:
 
 ```toml
 [tool.scriv]
-# ...
+## ...
 version = "literal: src/extendedjson/__init__.py: __version__"
 ```
 
 
-## Running linting in tox through pre-commit
+### Running linting in tox through pre-commit
 
 Another thing that was suggested to me was deduplicating some effort.
 As of now, pre-commit runs some linting and then tox reruns all the linting for all the Python environments.
@@ -1170,8 +1170,8 @@ This can be fixed if we choose to run linting through pre-commit.
 First, I need to set up pre-commit to use all the linters I care about:
 
 ```yaml
-# See https://pre-commit.com for more information
-# See https://pre-commit.com/hooks.html for more hooks
+## See https://pre-commit.com for more information
+## See https://pre-commit.com/hooks.html for more hooks
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.0.1
@@ -1250,7 +1250,7 @@ Then, we tell tox to run the environment `linting` when GitHub actions runs Pyth
 (We need to add `linting` to _some_ Python version, otherwise linting doesn't run.)
 
 
-## Check coverage only once
+### Check coverage only once
 
 Now that we went through all the effort of not triplicating the linting,
 might as well not triplicate the code coverage reports as well.
@@ -1275,7 +1275,7 @@ We need to fix this, for example, by changing the `coverage xml` command so that
 
 ```ini
 [testenv:coverage]
-# ...
+## ...
 commands =
     # ...
     coverage xml -o {toxinidir}/coverage.xml
@@ -1294,7 +1294,7 @@ envlist =
     # ...
     coverage
 
-# ...
+## ...
 
 [gh-actions]
 python =
@@ -1307,7 +1307,7 @@ Finally, we add a condition to the file `build.yaml` in the step that uploads co
 
 ```yaml
 name: extendedjson CI
-# ...
+## ...
 
 jobs:
   build:
@@ -1324,7 +1324,7 @@ jobs:
 ```
 
 
-# Wrap up
+## Wrap up
 
 That is it for now.
 Throughout this article, we

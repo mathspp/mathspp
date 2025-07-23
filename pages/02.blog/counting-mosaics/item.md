@@ -5,7 +5,7 @@ This is a short article on how I quickly used APL to verify my combinatorics cal
 ![An image of two 3 by 3 grids with coloured cells](thumbnail.webp)
 
 
-# Preamble
+## Preamble
 
 A local university runs a weekly challenge with mathematical problems
 for everyone to solve.
@@ -37,7 +37,7 @@ solution had a problem.
  4. I'll work a bit more on the APL code to make it cleaner.
 
 
-# My initial solution
+## My initial solution
 
 The text that follows was my initial solution to the problem I described above.
 As a challenge for you, try to find the flaws in my reasoning/calculations.
@@ -170,7 +170,7 @@ But at that point, I didn't know that.
 (Did you find the mistake(s) already?)
 
 
-# Verifying the solution with APL
+## Verifying the solution with APL
 
 At this point, I wanted to make sure I knew what I was doing.
 For that matter, I just opened my APL interpreter and quickly
@@ -182,7 +182,7 @@ exclude the ones which do not satisfy the restriction where
 adjacent squares must have different colours,
 and count the valid ones.
 
-## Generating all possible mosaics
+### Generating all possible mosaics
 
 Generating all possible mosaics was a walk in the park.
 
@@ -278,7 +278,7 @@ Now that we have all the $3^9 = 19683$ boards,
 we just need to count those that are valid.
 
 
-## Checking for board validity
+### Checking for board validity
 
 Using windowed reductions with the equal function (`=`)
 we can easily check if adjacent squares have the same colour:
@@ -299,7 +299,7 @@ we can easily check if adjacent squares have the same colour:
 ```
 
 
-## Counting valid boards
+### Counting valid boards
 
 We just need to apply this check to all the boards.
 Once more, we can use the rank operator (`⍤`) to apply a function
@@ -331,7 +331,7 @@ if I had made a mistake in my program.
 After some time, I thought “what if it's my calculations that are wrong?”.
 
 
-# The mistake in the maths solution
+## The mistake in the maths solution
 
 When I looked at my calculations again, I noticed the blunder I had made:
 
@@ -380,7 +380,7 @@ As it turns out, it's easy to get those with APL:
 ```
 
 
-# Polishing the APL
+## Polishing the APL
 
 After all this, I decided to go back to my APL code and see if I could polish it.
 

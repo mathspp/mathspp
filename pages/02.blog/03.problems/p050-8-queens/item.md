@@ -4,7 +4,7 @@ In how many ways can you place 8 queens on a chessboard?
 
 ![A chessboard seen from above with a queen in the centre and lines showing the positions under attack.](thumbnail.webp "Chess queen and attacked positions on a photo by Nick Fewings on Unsplash.")
 
-# Problem statement
+## Problem statement
 
 The image above shows you what positions a single queen attacks on a chessboard:
 all positions in the same vertical, horizontal, and diagonal lines.
@@ -20,7 +20,7 @@ Don't worry, the next one will be a harder variant of this puzzle.
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
@@ -37,7 +37,7 @@ Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
 
 
-# Solution
+## Solution
 
 Here is an example placement of 8 queens on a chessboard:
 

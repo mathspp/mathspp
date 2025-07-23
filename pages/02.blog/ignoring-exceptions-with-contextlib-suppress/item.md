@@ -5,8 +5,6 @@ You can ignore exceptions with `contextlib.suppress` and in this article I show 
 !!! This article was first published in my newsletter.
 !!! [Subscribe to the newsletter here](/subscribe) for Python tips sent directly to your inbox.
 
-# Ignoring exceptions with `contextlib.suppress`
-
 Sometimes you want to run some code that you know might raise an exception and you're not worried about the exception.
 You just want to ignore it, if it's the case.
 

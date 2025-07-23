@@ -9,7 +9,7 @@ In fact, you use descriptors every day and you don't even know it.
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 Descriptors are a piece of the Python world that many will declare as “obscure”, “dark magic”, or “too complex to bother learning”.
 I will show you that this is _not_ true.
@@ -41,7 +41,7 @@ In this Pydon't, you will
 <!--^-->
 
 
-# The problem that descriptors solve
+## The problem that descriptors solve
 
 Consider the implementation of the class `Colour` below, which contains a `hex` attribute for the hexadecimal representation of the colour:
 
@@ -104,15 +104,15 @@ By using a class, we can write a single descriptor that we can use for the attri
 Let us see how.
 
 
-# Your first descriptor
+## Your first descriptor
 
-## What is a descriptor?
+### What is a descriptor?
 
 Strictly speaking, a descriptor is a class that follows the [descriptor protocol](#descriptor-protocol).
 In practical terms, a descriptor is a class that you can use to customise attribute access, setting attributes, and other related things.
 
 
-## Implementing a descriptor
+### Implementing a descriptor
 
 Let me show you the code for your very first descriptor, the `ColourComponent` descriptor for the example above, and then I will explain what is going on:
 
@@ -199,7 +199,7 @@ This shows that the essence of descriptors, and the essence of the dunder method
 This function call gives you all the freedom in the world to do whatever you want before returning the actual value of the attribute.
 
 
-## Dunder method `__get__`
+### Dunder method `__get__`
 
 We have already seen that the dunder method `__get__` is called automatically by Python when the attribute is accessed.
 That's because the responsibility of the method `__get__` _is_ to compute and return the _value_ of the attribute.
@@ -279,9 +279,9 @@ Now you know that it is via the arguments `obj` and `cls` that the dunder method
 There is a limitation, however, and I will put that limitation in evidence by giving you an exercise.
 
 
-# Accessing the name of the original attribute
+## Accessing the name of the original attribute
 
-## Using a descriptor to implement getters for private attributes
+### Using a descriptor to implement getters for private attributes
 
 Consider the class `Person` that follows:
 
@@ -329,9 +329,9 @@ Here, we need to access a private attribute whose name depends on the attribute 
 So, how can the descriptor know whether we are trying to access `first` or `last`?
 
 
-## The dunder method `__set_name__`
+### The dunder method `__set_name__`
 
-### How does the dunder method `__set_name__` work?
+#### How does the dunder method `__set_name__` work?
 
 When a descriptor is first created and assigned to an attribute, Python will try to call a dunder method called `__set_name__` whose sole purpose is to tell the descriptor what is its name in the original object.
 
@@ -376,7 +376,7 @@ As you can see, the dunder method `__set_name__` is responsible for much of the 
 It is common for a descriptor to have a dunder method `__set_name__` that stores the original `name` argument and also computes one or more auxiliary names for related attributes that the original owner also contains.
 
 
-### The built-ins `getattr`, `setattr`, and `delattr`
+#### The built-ins `getattr`, `setattr`, and `delattr`
 
 When using `__set_name__`, you will likely have to use the built-ins `getattr` (seen above), `setattr`, and `delattr`.
 In the example above, we already used `getattr`.
@@ -415,7 +415,7 @@ So, in essence, these methods are used for the usual attribute operations, but t
  - `delattr(obj, "attr")` is the same as `del obj.attr`.
 
 
-### `__set_name__` and descriptors created after class initialisation
+#### `__set_name__` and descriptors created after class initialisation
 
 The method `__set_name__` is called automatically as a step of class initialisation.
 That is, it is when the class `Person` above is being created that Python looks at `first` and `last`, sees they are instances of `PrivateAttrGetter`, and decides to call their methods `__set_name__`.
@@ -436,7 +436,7 @@ If you create a descriptor after the fact, like this, you need to call `__set_na
 To be able to do that, you need to know how to [access the descriptor object](#accessing-the-descriptor-objects), which you'll learn in a later section.
 
 
-### `__set_name__` isn't a descriptor thing
+#### `__set_name__` isn't a descriptor thing
 
 The final thing to know about the dunder method `__set_name__` is that it is not exclusively a descriptor thing.
 If you have any other class that implements the dunder method `__set_name__`, it will be called when you assign it to a class variable:
@@ -453,12 +453,12 @@ class MyClass:
 ```
 
 
-# Descriptor exercises
+## Descriptor exercises
 
 Before we proceed, let me share a couple of challenges where the objective is for you to implement descriptors.
 
 
-## Name descriptor for a class `Person`
+### Name descriptor for a class `Person`
 
 Consider yet another implementation of a class `Person`:
 
@@ -480,7 +480,7 @@ Implement the descriptor `NameDescriptor` so that the attribute `name` returns t
 For comparison, try doing the same thing [with the built-in `property`][properties-pydont].
 
 
-## Filesystem directory inspection
+### Filesystem directory inspection
 
 Consider the class `Directory` below that contains an attribute called `nfiles`.
 Implement the descriptor `NFilesDescriptor` that accesses the attribute `path` and determines how many files the directory pointed to by `path` contains:
@@ -501,7 +501,7 @@ print(home.nfiles)  # Some integer here, for me it was 19.
 For comparison, try doing the same thing [with the built-in `property`][properties-pydont].
 
 
-## Attribute access counter
+### Attribute access counter
 
 Implement a descriptor `AttributeAccessCounter` that has an internal counter that keeps track of how many times each attribute has been accessed.
 (You can print the counter every time the attribute is accessed, for example.)
@@ -542,9 +542,9 @@ print(red.hex)  # Counter should be at 4 here.
 ```
 
 
-# Descriptor protocol
+## Descriptor protocol
 
-## What is the descriptor protocol?
+### What is the descriptor protocol?
 
 The descriptor protocol is what Python uses to determine if a class is actually a descriptor.
 If your class implements _any_ of the dunder methods `__get__`, `__set__`, or `__delete__`, then it abides by the descriptor protocol and it is a descriptor.
@@ -555,14 +555,14 @@ The dunder method `__get__` is part of the descriptor protocol and [we already c
 We will talk about the methods `__set__` and `__delete__` now.
 
 
-## `__set_name__` is not part of the descriptor protocol
+### `__set_name__` is not part of the descriptor protocol
 
 The dunder method `__set_name__` is _not_ part of the descriptor protocol, which means that having the dunder method `__set_name__` does not make it a descriptor.
 
 In other words, [`__set_name__` is not a descriptor thing](#__set_name__-isnt-a-descriptor-thing), it's just a convenience method used with descriptors.
 
 
-## A quick tangent about properties
+### A quick tangent about properties
 
 I am not sure if you figured this out already, but have you noticed how the three dunder methods that make up the descriptor protocol match the three methods you can implement in a property?
 
@@ -573,19 +573,19 @@ I am not sure if you figured this out already, but have you noticed how the thre
 It is _not_ a coincidence that there is this relationship and by the end of this Pydon't you will understand even better where this comes from.
 
 
-# The dunder method `__set__`
+## The dunder method `__set__`
 
 So far, we have seen how descriptors let you access data, but descriptors can also be used to set data.
 In order to do this, your descriptor needs to implement the dunder method `__set__`.
 
 
-## What is the dunder method `__set__`?
+### What is the dunder method `__set__`?
 
 If an attribute `obj.x` is a descriptor, writing `obj.x = value` will try to call the dunder method `__set__` on the descriptor.
 The dunder method `__set__` is then responsible for doing whatever is needed to save the new value.
 
 
-## Descriptor `__set__` example
+### Descriptor `__set__` example
 
 As an example of how the dunder method `__set__` might work, let us go back to our `Colour` example:
 
@@ -636,7 +636,7 @@ We use `f"{value:02X}"` to convert the integer value into a hexadecimal number (
 Furthermore, that hexadecimal value is aligned inside a field of length `2` with leading zeroes `0`.
 
 
-## `__set__` and `__set_name__`
+### `__set__` and `__set_name__`
 
 The example descriptor `ColourComponent` knew that it had to access the attribute `hex` of the original `Colour` object, regardless of whether we were setting the attribute `r`, `g`, or `b`.
 
@@ -646,7 +646,7 @@ In that case, don't forget to implement the dunder method `__set_name__`.
 We will see an example of this now.
 
 
-## Keeping an attribute value history with a descriptor
+### Keeping an attribute value history with a descriptor
 
 In this subsection we will see a more advanced example of a descriptor that uses `__get__`, `__set__`, and `__set_name__`, to add a value history to attributes.
 With our descriptor, we will be able to get and set the value of our attribute, but also check its past values and undo a change.
@@ -778,7 +778,7 @@ We define the method `undo` inside the descriptor so that it has access to the d
 Then, inside `__get__` we use `functools.partial` to bind the object that owns the descriptor to the method `undo` so that `undo` can be called directly with `obj.attr.undo()` or, in our example, `c.x.undo()`.
 
 
-## Dunder method `__set__` challenge
+### Dunder method `__set__` challenge
 
 Above, you implemented a descriptor `AttributeAccessCounter`.
 Now, modify it so that you also count how many times the attribute is set.
@@ -788,7 +788,7 @@ Make two versions for this:
  2. count the number of assignments separately from the number of accesses.
 
 
-# Accessing the descriptor objects
+## Accessing the descriptor objects
 
 Here is a very dumb descriptor example that doesn't do much:
 
@@ -851,7 +851,7 @@ Notice that both `c.x` and `MyClass.x` triggered the dunder method `__get__`.
 So, how do you get hold of the actual descriptor object?
 
 
-## `vars`
+### `vars`
 
 In order to be able to access the descriptor itself, without Python trying to call `__get__` automatically, you have to access the `__dict__` attribute of the class.
 A user-friendly way of doing this is via [the built-in `vars`][til-vars]:
@@ -879,7 +879,7 @@ Now you know!
 If you need to do dynamic things with your descriptor object, you can access it with the built-in `vars`.
 
 
-## Escape route inside `__get__`
+### Escape route inside `__get__`
 
 Another alternative to using `vars`, that you might see often, is to short-circuit the implementation of `__get__` to return the descriptor object when it is accessed from the class.
 
@@ -913,7 +913,7 @@ print(MyClass.x)
 This shortcut with `if obj is None` isn't always possible, though.
 
 
-# Built-in descriptors
+## Built-in descriptors
 
 There are three built-in "functions" that are actually descriptors, and those are
 
@@ -924,7 +924,7 @@ There are three built-in "functions" that are actually descriptors, and those ar
 In this section we show three descriptors that implement these built-ins.
 The implementations shown are _not_ faithful replicas of the built-ins but they serve an educational purpose and should help you understand better how descriptors and the built-ins listed above work.
 
-## The decorator syntactic sugar and descriptor assignment
+### The decorator syntactic sugar and descriptor assignment
 
 The key idea that will be relevant when implementing `staticmethod`, `classmethod`, _and_ `property`, is how the syntactic sugar for applying a decorator (with the at sign `@`) relates to the way a descriptor is created.
 
@@ -971,9 +971,9 @@ Then, the descriptor can save that function as an attribute and use it later.
 Let us put this pattern into practice.
 
 
-## Implementing `staticmethod` in Python
+### Implementing `staticmethod` in Python
 
-### What does `staticmethod` do?
+#### What does `staticmethod` do?
 
 Before trying to implement `staticmethod`, we need to know what it does.
 If you don't know what `staticmethod` does yet, you can [check the docs][staticmethod-docs] or you can check the code example below for a quick reminder.
@@ -998,7 +998,7 @@ my_object.foo(42)
 # Arg is 42
 ```
 
-### `staticmethod` descriptor
+#### `staticmethod` descriptor
 
 To implement our `staticmethod` descriptor, we start by creating the dunder method `__init__`.
 Inside `__init__` we save the function being decorated:
@@ -1045,9 +1045,9 @@ What may be surprising here is that we did not need to do anything to _prevent_ 
 In other words, we did not actively prevent `self` from being passed to the function.
 
 
-## Implementing `classmethod` in Python
+### Implementing `classmethod` in Python
 
-### What does `classmethod` do?
+#### What does `classmethod` do?
 
 Before trying to implement `classmethod`, we need to know what it does.
 [Check the docs][classmethod-docs] or see the code example below for a quick reminder.
@@ -1080,7 +1080,7 @@ MyClass.class_method(16)
 ```
 
 
-### `classmethod` descriptor
+#### `classmethod` descriptor
 
 Implementing a descriptor to emulate the `classmethod` built-in is very similar to what we did [for the `staticmethod` descriptor](#staticmethod-descriptor).
 However, instead of returning the function unchanged, we add the class as the first argument:
@@ -1101,12 +1101,12 @@ By using `functools.partial` we bind the argument `cls` to the function that is 
 ! The implementation `classmethod_` above is just a model of how the built-in `classmethod` could be implemented in Python and there are “convoluted” edge cases in which `classmethod_` and `classmethod` have different behaviours.
 
 
-## Implementing `property` in Python
+### Implementing `property` in Python
 
 To implement the built-in `property` in Python we have to do a bit more work than for `staticmethod` and `classmethod`.
 
 
-### What does `property` do?
+#### What does `property` do?
 
 The built-in `property` allows you to turn methods into getters, setters, and deleters, for attributes.
 [This Pydon't explains `property` in detail][properties-pydont], so take a look at that if you are not familiarised with properties.
@@ -1137,7 +1137,7 @@ print("_value" in vars(my_object))  # False after deletion
 ```
 
 
-### `property` descriptor
+#### `property` descriptor
 
 I think it is simpler to start off the `property` descriptor by implementing the dunder method `__init__` in a simpler form, which also happens to match the least-used form of `property`.
 
@@ -1361,13 +1361,13 @@ Have fun experimenting with your `property` model!
 !!! It looks a bit funky, but if you look hard enough you will find the similarities between the two.
 
 
-# Methods and descriptors
+## Methods and descriptors
 
 The (almost) final thing I'd like to write about is the relationship between descriptors and methods.
 Loosely speaking, a method is a function defined inside a class that receives a first argument `self` automatically.
 
 
-## A descriptor for methods
+### A descriptor for methods
 
 In Python, behind the scenes, functions use a descriptor to implement the behaviour of methods!
 
@@ -1428,7 +1428,7 @@ The descriptor `Method` above models how Python passes `self` as the first argum
 Of course, this isn't the exact code that is written in Python, but the point here is that Python _uses_ descriptors in something as fundamental as method access.
 
 
-## Functions are descriptors
+### Functions are descriptors
 
 Now, here is the _really_ cool twist.
 Functions, in Python, _are_ descriptors!
@@ -1562,7 +1562,7 @@ my_object.method(73, 42)
 ```
 
 
-# Data and non-data descriptors
+## Data and non-data descriptors
 
 As you recall, [the descriptor protocol](#descriptor-protocol) is defined by three methods:
 
@@ -1588,7 +1588,7 @@ The distinction is easy:
 Being a (non-)data descriptor impacts the precedence of attribute accessing and setting/deleting, as I explain next.
 
 
-## Non-data descriptors
+### Non-data descriptors
 
 A non-data descriptor is a descriptor that _only_ implements `__get__`.
 
@@ -1658,7 +1658,7 @@ print(my_object.v)    # 73
 When working with data descriptors, the precedence is different, as you will see now.
 
 
-## Data descriptors
+### Data descriptors
 
 Data descriptors are descriptors that implement either the dunder method `__set__` or `__delete__`, regardless of whether they implement the dunder method `__get__`.
 
@@ -1769,7 +1769,7 @@ print(my_object.attr)   # '__get__'
 The built-in `property` is a good example of a data descriptor.
 
 
-# Complete descriptor example: attribute validation
+## Complete descriptor example: attribute validation
 
 In this section we will implement a complete descriptor that is an excellent example use case for descriptors:
 a validation descriptor.
@@ -1848,7 +1848,7 @@ For your benefit, here are some ideas of further validators you can try to imple
  - any other predicates you may come up with...
 
 
-# Descriptors in the standard library
+## Descriptors in the standard library
 
 To close this off, I want to point you to some descriptors out there in the standard library that you can go study if you want to.
 
@@ -1865,7 +1865,7 @@ In the standard library you can also find a descriptor that pretty much mimics t
 This is `DynamicClassAttribute` from the module `types`, which is used by a custom `property` defined inside the module `enum`.
 
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this Pydon't, for you, on a silver platter:
 

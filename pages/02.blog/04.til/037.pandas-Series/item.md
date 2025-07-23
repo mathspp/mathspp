@@ -5,7 +5,7 @@ Today I learned about the fundamental pandas data type `Series`.
 ![A picture of panda (the mammal) with the words "pandas" and "Series" written.](thumbnail.webp "Background photo by Elena Loshina on Unsplash.")
 
 
-# What is a pandas `Series`?
+## What is a pandas `Series`?
 
 A `Series` is one of the fundamental data types in pandas and is a one-dimensional container for data.
 `Series` are also indexable, either through integer indices (like the `list` or `tuple` built-in types),
@@ -34,7 +34,7 @@ and the second column shows the data.
 that you can often imagine as a _column_ in a table of data.
 
 
-# How to define the labels of a pandas `Series`?
+## How to define the labels of a pandas `Series`?
 
 If you want to change the labels associated with your data,
 you can use the argument `index` when creating a `Series`:
@@ -54,7 +54,7 @@ That's the most straightforward way to do it.
 Probably, there are others!
 
 
-# Non-unique `Series` labels
+## Non-unique `Series` labels
 
 On top of the ability to support arbitrary (hashable) values for the labels of its values,
 a `Series` does _not_ need unique labels.

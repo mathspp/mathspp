@@ -9,7 +9,7 @@ Today we are visiting a specific instance of a well-known _basic_ mathematics ga
 ![A picture of a wall with a 24 in it](24.jpg "Photo by Kadir Celep on Unsplash")
 
 
-# Problem statement
+## Problem statement
 
 The "24 Game" is usually played with four different numbers from $1$ to $9$, for example drawn randomly out of a small deck with those numbers. For this blog post, you can forget about all that, I picked very specific numbers for you.
 
@@ -29,14 +29,14 @@ An example valid expression would be $(3+3)\times (8+8)$ except this is not the 
 I heard of this from the same friend who told me about the ["Fold the alphabet"][fold the alphabet] problem.
 
 
-## Hint
+### Hint
 
 Do _not_ read the hint if you haven't spent some time thinking about the problem yet!
 
 !!!! The intermediate steps do _not_ have to evaluate to integer numbers.
 
 
-# Solution
+## Solution
 
 There really is no point in sugar coating this for you, the solution is the expression $8 \div (3 - 8\div 3)$. Quite ingenious, isn't it?
 

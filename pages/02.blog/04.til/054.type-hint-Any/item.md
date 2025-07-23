@@ -2,7 +2,7 @@ Today I learned about the type hint `Any` and its bidirectional compatibility wi
 
 ===
 
-# Type hint `Any`
+## Type hint `Any`
 
 The special type `Any` provided in the module `typing` is a type that matches _all_ Python objects.
 The documentation says that `Any` is compatible with all other types and all other types are compatible with `Any`.
@@ -77,7 +77,7 @@ After all, we have that:
  - the function call `g("Hello, world!")` is also ok because the argument is of type `str` and the function `g` expects an argument of type `Any`. The type `str` is compatible with `Any`, so this function call is ok.
 
 
-## What is `Any` used for?
+### What is `Any` used for?
 
 So, why is `Any` useful if it gives you total freedom and doesn't seem to do anything for you?
 `Any` is useful for gradually adding types to an untyped codebase.

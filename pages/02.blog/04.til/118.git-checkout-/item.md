@@ -3,7 +3,7 @@ Today I learned how to quickly switch back and forth between two different git b
 ===
 
 
-# git checkout -
+## git checkout -
 
 Suppose you're in a git branch called `fix-1523-very-important-high-priority` to fix issue 1523 that is very important and high priority.
 Then, you checkout the main branch to pull the most recent changes, or something like that, with `git checkout main`.

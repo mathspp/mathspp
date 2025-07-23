@@ -5,7 +5,7 @@ Today I learned that you can build web apps with Python using streamlit.
 ![](thumbnail.webp "The streamlit logo")
 
 
-# Streamlit
+## Streamlit
 
 [Streamlit][streamlit] is, according to their website,
 “the fastest way to build and share data apps”.
@@ -16,7 +16,7 @@ but I did go through their “getting started” guide in just a few minutes.
 With just a bit of code:
 
 ```py
-# uber.py
+## uber.py
 
 import streamlit as st
 import pandas as pd

@@ -4,7 +4,7 @@ Running Python inside ChatGPT shows some amazing capabilities that ChatGPT has t
 
 ![Blurred screenshot of my conversation with ChatGPT where ChatGPT simulates an interactive Python REPL.](thumbnail.webp)
 
-# Simulating the Python REPL inside ChatGPT
+## Simulating the Python REPL inside ChatGPT
 
 Lately, I have been reading some interesting articles about [ChatGPT](https://chat.openai.com).
 In one, [someone invented a new language and had ChatGPT speak it](https://maximumeffort.substack.com/p/i-taught-chatgpt-to-invent-a-language).
@@ -43,7 +43,7 @@ If you just want to go ahead and start playing with ChatGPT yourself, here are t
 ![A short transcript of a conversation with ChatGPT where ChatGPT is prompted to simulate a Python REPL and also reply to English prompts.](_preview2.webp)
 
 
-# Transcripts
+## Transcripts
 
 This section will contain the transcripts from conversations between me and ChatGPT.
 
@@ -57,7 +57,7 @@ My comments will show up as regular text, just like this.
 
 Let's start.
 
-## Conversation #1
+### Conversation #1
 
 > I want you to simulate a Python interpreter. I will write Python code and your reply will be the REPL prompt, followed by my input, and then the result below. Write no explanations, unless a line ends with #?. If a line ends with #?, add an explanation of the result to your response.
 > 
@@ -274,7 +274,7 @@ At this point, I gave up on this session because I couldn't get ChatGPT to stop 
 I restarted the conversation and tried a new prompt.
 
 
-## Conversation #2
+### Conversation #2
 
 > I want you to simulate a Python interpreter. I will write Python code and your reply will be the REPL prompt, followed by my input, and then the result below. Your reply should be only the prompt, my input, and the result.
 > Never reply with anything other than the requested.
@@ -416,7 +416,7 @@ At this point I wondered if part of the difficulty arose from the fact that I wa
 Once more, ChatGPT gets that we are still doing a similar thing as before.
 It just gave the wrong results, because this time the results should start at 21 and go up to 37.
 
-## Conversation #3
+### Conversation #3
 
 > I want you to act as a Python REPL. My input will be the REPL input and you will display my input with the correct output > inside a single code block.
 > 
@@ -678,7 +678,7 @@ Now, I tried telling ChatGPT to not explain code and it just decided to create a
 At this point, my next request timed out so I had to start a new conversation.
 
 
-## Conversation #4
+### Conversation #4
 
 > I want you to act as a Python REPL. My input will be the REPL input and you will display the prompt, my input with the correct output inside a single code block.
 > 
@@ -939,7 +939,7 @@ This result is also correct!
 Sadly, I timed out again.
 
 
-## Conversation #5
+### Conversation #5
 
 This conversation shows a shorter and simpler prompt to which ChatGPT reacts decently:
 
@@ -982,7 +982,7 @@ Either way, I was running out of ideas for things to test ChatGPT on.
 I thought of only one more:
 
 
-## Conversation 6
+### Conversation 6
 
 > I want you to act as a Python REPL. My input will be the REPL input and you will display the prompt, my input with the correct output inside a single code block.
 > 

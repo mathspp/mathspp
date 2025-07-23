@@ -13,7 +13,7 @@ Today I learned that the `.join` method in Python is a two-pass algorithm, and t
 ![Code showing that joining list comprehensions is faster than joining generator expressions.](thumbnail.webp)
 
 
-# Context
+## Context
 
 My talk at EuroPython 2021 was finally [uploaded to YouTube][europython2021-talk-yt].
 I got really excited about this, so I decided to share it on Twitter:
@@ -37,7 +37,7 @@ def myfunc(a):
 
     return "".join(empty)
 
-# ---
+## ---
 >>> myfunc("Hello, world!")
 'HeLlO, wOrLd!'
 >>> myfunc("Spongebob.")
@@ -55,7 +55,7 @@ def alternate_casing(text):
 ```
 
 
-# `.join`
+## `.join`
 
 In a feedback tweet, someone said that I could've removed the `[]` of the list comprehension.
 That would, instead, define a generator expression,

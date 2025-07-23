@@ -2,7 +2,7 @@ Today I learned you can have invisible variables in Python.
 
 ===
 
-# What characters can you use in Python variable names?
+## What characters can you use in Python variable names?
 
 The exact definition of what characters are valid can be found in [the Python docs][valid-characters], but a broad definition could be "all characters that can be used in written languages".
 

@@ -3,8 +3,6 @@ This article outlines the steps I follow to prepare my technical talks, includin
 ===
 
 
-# How I prepare a technical talk
-
 I have a lot of fun giving talks at conferences.
 I am not the best speaker ever and I am far from being a prestiged speaker.
 However, I have had enough positive feedback from enough talks to claim with some confidence that I am a decent speaker.

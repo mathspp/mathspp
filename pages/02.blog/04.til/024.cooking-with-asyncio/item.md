@@ -7,9 +7,9 @@ Today I learned how to cook with `asyncio` and async code in Python.
 ![](thumbnail.png "Photo by Michael Browning on Unsplash.")
 
 
-# Async code in Python
+## Async code in Python
 
-## Preamble
+### Preamble
 
 I started learning about async code, the keywords `async` and `await`,
 coroutines, the module `asyncio`, etc, a couple of days ago.
@@ -25,7 +25,7 @@ For reference, here is the original thread:
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I just came up with the perfect analogy to help you understand asyncio in Python 🐍<br><br>You can thank me later 😊<br><br>Buckle up 🚀 <a href="https://t.co/SQNjGUOkuF">pic.twitter.com/SQNjGUOkuF</a></p>&mdash; Rodrigo 🐍📝 (@mathsppblog) <a href="https://twitter.com/mathsppblog/status/1484237419494838272?ref_src=twsrc%5Etfw">January 20, 2022</a></blockquote>
 
 
-## A cooking analogy
+### A cooking analogy
 
 I just came up with the perfect analogy to help you understand asyncio in Python 🐍
 
@@ -279,7 +279,7 @@ Finally, to get the program going, we need to call `asyncio.run`, which takes a 
 It is essentially equivalent to the moment you walk up to me and say: Rodrigo, go in the kitchen and starting preparing lunch.
 
 ```py
-# ...
+## ...
 
 async def lunch():
     print("Preparing lunch.")
@@ -387,7 +387,7 @@ Eating after 10 min of prep time.
 I'm just being smarter about managing my time.
 
 
-## Conclusions
+### Conclusions
 
 Some conclusions:
 

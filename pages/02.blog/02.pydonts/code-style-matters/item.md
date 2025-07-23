@@ -14,7 +14,7 @@ In this Pydon't I talk about Python style and I go over some tools you can use t
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 The overall style of your code can have a great impact
 on the readability of your code.
@@ -38,9 +38,9 @@ I hope you still find it useful!
 <!--^-->
 
 
-# Code style
+## Code style
 
-## Consistency
+### Consistency
 
 Humans are creatures of habit.
 From the fact that the first leg that goes into your trousers is always the same,
@@ -81,7 +81,7 @@ That's if you are working alone; in a project, it is a good idea to decide on
 a particular style beforehand.
 
 
-## Whitespace matters
+### Whitespace matters
 
 When I'm teaching Python, I often do some sort of live coding,
 where I explain things and type examples,
@@ -141,16 +141,16 @@ And just roll with that.
 Easier than trying to change everything all at once.
 
 
-# Tools for your tool belt
+## Tools for your tool belt
 
 On a happier note,
 there are _many_ tools you can use that help you format your code
 and keep it neat and tidy.
 
 
-## Auto-formatters
+### Auto-formatters
 
-### `black`
+#### `black`
 
 A class of tools that you can use is what are known as (auto-)formatters,
 of which `black` is a prime example (see their repo [here][black]).
@@ -198,7 +198,7 @@ python -m pip install black
 There are many tools like `black` out there;
 another common option is `pycodestyle`.
 
-#### `pycodestyle`
+##### `pycodestyle`
 
 `pycodestyle` checks if your style is similar to what PEP 8 recommends.
 In fact, `pycodestyle` used to be called `pep8`,
@@ -243,7 +243,7 @@ you can configure them to ignore types of errors, or ignore sections of your cod
 Just go read their documentation!
 
 
-## Level up (aka linters)
+### Level up (aka linters)
 
 (Auto-)Formatters are helpful, but there are other tools out there that have even more potential: linters.
 
@@ -317,7 +317,7 @@ python -m pip install pylint
 
 
 
-# Conclusion
+## Conclusion
 
 As far as these tools are concerned,
 I suggest you pick something that is fairly consensual for your personal projects,

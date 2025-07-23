@@ -3,7 +3,7 @@ I used an LLM to write a countdown timer and I have mixed feelings about the res
 ===
 
 
-# Using an LLM to write a countdown timer
+## Using an LLM to write a countdown timer
 
 In this article I will tell you the short story of how I used an LLM to write a simple countdown timer for me.
 I will show you the code, what went well, and what went wrong.
@@ -19,7 +19,7 @@ And it will then display a countdown timer like the GIF below shows:
 ![A GIF showing a countdown timer from 02:59 to 02:56. The background is white and the time is shown in black.](_timer_demo.gif "The countdown timer.")
 
 
-## First iteration
+### First iteration
 
 To get the first iteration of the code, here is the prompt I gave to GPT-4o:
 
@@ -34,19 +34,19 @@ import sys
 import pygame
 from pygame.locals import QUIT, KEYDOWN, K_SPACE
 
-# Initialize pygame
+## Initialize pygame
 pygame.init()
 
-# Screen dimensions and colors
+## Screen dimensions and colors
 SCREEN_WIDTH, SCREEN_HEIGHT = 400, 200
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 
-# Fonts and other settings
+## Fonts and other settings
 FONT = pygame.font.Font(None, 80)
 FPS = 60
 
-# Parse command-line argument for the timer duration
+## Parse command-line argument for the timer duration
 if len(sys.argv) != 2 or not sys.argv[1].isdigit():
     print("Usage: python countdown.py <minutes>")
     sys.exit(1)
@@ -54,11 +54,11 @@ if len(sys.argv) != 2 or not sys.argv[1].isdigit():
 minutes = int(sys.argv[1])
 seconds = minutes * 60
 
-# Set up the display
+## Set up the display
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Countdown Timer")
 
-# Clock for controlling the frame rate
+## Clock for controlling the frame rate
 clock = pygame.time.Clock()
 
 running = True
@@ -90,7 +90,7 @@ while running:
     # Cap the frame rate
     clock.tick(FPS)
 
-# Quit pygame
+## Quit pygame
 pygame.quit()
 ```
 
@@ -101,7 +101,7 @@ I pressed <kbd>SPACE</kbd> and the countdown increased by 1 minute.
 Everything looked fine.
 
 
-## Adding a new feature
+### Adding a new feature
 
 After this first iteration I wanted to change the code so that, after the countdown was finished, the background and foreground colours flipped each second.
 This is what I typed:
@@ -118,19 +118,19 @@ import sys
 import pygame
 from pygame.locals import QUIT, KEYDOWN, K_SPACE
 
-# Initialize pygame
+## Initialize pygame
 pygame.init()
 
-# Screen dimensions and colors
+## Screen dimensions and colors
 SCREEN_WIDTH, SCREEN_HEIGHT = 400, 200
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 
-# Fonts and other settings
+## Fonts and other settings
 FONT = pygame.font.Font(None, 80)
 FPS = 60
 
-# Parse command-line argument for the timer duration
+## Parse command-line argument for the timer duration
 if len(sys.argv) != 2 or not sys.argv[1].isdigit():
     print("Usage: python countdown.py <minutes>")
     sys.exit(1)
@@ -138,11 +138,11 @@ if len(sys.argv) != 2 or not sys.argv[1].isdigit():
 minutes = int(sys.argv[1])
 seconds = minutes * 60
 
-# Set up the display
+## Set up the display
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Countdown Timer")
 
-# Clock for controlling the frame rate
+## Clock for controlling the frame rate
 clock = pygame.time.Clock()
 
 reverse_colors = False  # <-- NEW
@@ -191,7 +191,7 @@ while running:
     # Cap the frame rate
     clock.tick(FPS)
 
-# Quit pygame
+## Quit pygame
 pygame.quit()
 ```
 
@@ -203,20 +203,20 @@ I wanted to see what this looked like, so I let a timer get to 0 and then I see 
 ![The countdown timer displaying the time -1:59.](_timer_done_wrong.webp "The countdown displaying -1:59")
 
 
-## Poor timekeeping
+### Poor timekeeping
 
 At this point I decided I should take a better look at what the code was doing.
 I quickly realised that the code was doing something funny to keep track of time.
 At each frame, the code runs this:
 
 ```py
-# ...
+## ...
 
-# Timer logic
+## Timer logic
 if seconds > 0:
     seconds -= 1 / FPS
 
-# ...
+## ...
 ```
 
 I looked around and noticed that the variable `seconds` was initialised to the total number of seconds that the timer would have to run for.
@@ -231,7 +231,7 @@ For multiple reasons!
 To fix this, I prompted the LLM to keep track of time in a saner way.
 
 
-## Better timekeeping
+### Better timekeeping
 
 This is my prompt:
 
@@ -252,19 +252,19 @@ import pygame
 import time
 from pygame.locals import QUIT, KEYDOWN, K_SPACE
 
-# Initialize pygame
+## Initialize pygame
 pygame.init()
 
-# Screen dimensions and colors
+## Screen dimensions and colors
 SCREEN_WIDTH, SCREEN_HEIGHT = 400, 200
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 
-# Fonts and other settings
+## Fonts and other settings
 FONT = pygame.font.Font(None, 80)
 FPS = 60
 
-# Parse command-line argument for the timer duration
+## Parse command-line argument for the timer duration
 if len(sys.argv) != 2 or not sys.argv[1].isdigit():
     print("Usage: python countdown.py <minutes>")
     sys.exit(1)
@@ -273,11 +273,11 @@ minutes = int(sys.argv[1])
 remaining_time = minutes * 60
 end_time = time.time() + remaining_time
 
-# Set up the display
+## Set up the display
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Countdown Timer")
 
-# Clock for controlling the frame rate
+## Clock for controlling the frame rate
 clock = pygame.time.Clock()
 
 reverse_colors = False
@@ -327,7 +327,7 @@ while running:
     # Cap the frame rate
     clock.tick(FPS)
 
-# Quit pygame
+## Quit pygame
 pygame.quit()
 ```
 
@@ -339,7 +339,7 @@ And yet, the code still looked awkward.
 For example, consider this check in the code to determine whether the timer is done or not:
 
 ```py
-# ...
+## ...
 while running:
     # Event handling
     for event in pygame.event.get():
@@ -362,7 +362,7 @@ Doesn't it feel super awkward to compute the variable `current_time`, which is t
 I'd expect the conditional statement to look something like this:
 
 ```py
-# ...
+## ...
 while running:
     # Event handling
     for event in pygame.event.get():
@@ -382,7 +382,7 @@ That would be something sensible to do...
 (Let's not talk about the fact that the output still uses `1 / FPS` to determine when to reverse background and foreground colours.)
 
 
-## Final modifications by hand
+### Final modifications by hand
 
 At this point I got a bit annoyed and decided to tweak a couple of things by hand.
 First, I added support for two types of input:
@@ -393,12 +393,12 @@ First, I added support for two types of input:
 This required modifying the lines of code that checked `sys.argv` for the argument:
 
 ```py
-# Parse command-line argument for the timer duration
+## Parse command-line argument for the timer duration
 if len(sys.argv) != 2:  # Modified the condition and the print v
     print("Usage: python countdown.py <minutes(:seconds)?>")
     sys.exit(1)
 
-# Handle a possibly-absent ":xx"
+## Handle a possibly-absent ":xx"
 minutes, _, seconds = sys.argv[1].partition(":")
 remaining_time = int(minutes) * 60 + int(seconds or "0")
 end_time = time.time() + remaining_time
@@ -413,7 +413,7 @@ To make it so that a 3 minute timer shows the time 03:00 for a second and for th
 I also had to fix an edge case where I pressed <kbd>SPACE</kbd> after the timer had finished and while the colours were reversed, which would restart the timer with the wrong colours.
 
 
-## Full source code for the countdown timer
+### Full source code for the countdown timer
 
 In case you're curious, I included the final code for the countdown timer below.
 You can also [get the code from here](./cd.py).
@@ -427,19 +427,19 @@ import pygame
 import time
 from pygame.locals import QUIT, KEYDOWN, K_SPACE
 
-# Initialize pygame
+## Initialize pygame
 pygame.init()
 
-# Screen dimensions and colors
+## Screen dimensions and colors
 SCREEN_WIDTH, SCREEN_HEIGHT = 400, 200
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 
-# Fonts and other settings
+## Fonts and other settings
 FONT = pygame.font.Font(None, 80)
 FPS = 60
 
-# Parse command-line argument for the timer duration
+## Parse command-line argument for the timer duration
 if len(sys.argv) != 2:
     print("Usage: python countdown.py <minutes(:seconds)?>")
     sys.exit(1)
@@ -448,11 +448,11 @@ minutes, _, seconds = sys.argv[1].partition(":")
 remaining_time = 1 + int(minutes) * 60 + int(seconds or "0")
 end_time = time.time() + remaining_time
 
-# Set up the display
+## Set up the display
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Countdown Timer")
 
-# Clock for controlling the frame rate
+## Clock for controlling the frame rate
 clock = pygame.time.Clock()
 
 reverse_colors = False
@@ -500,14 +500,14 @@ while running:
     # Cap the frame rate
     clock.tick(FPS)
 
-# Quit pygame
+## Quit pygame
 pygame.quit()
 ```
 
 </details>
 
 
-## Conclusion
+### Conclusion
 
 All in all, using an LLM (GPT-4o in this instance) was a great way to get a lot of boilerplate out of the way and to get something that almost worked fine.
 Still, I had to prompt it a couple of times to fix issues and very odd design decisions, and in the end it turned out to be easier to add the finishing touches myself.

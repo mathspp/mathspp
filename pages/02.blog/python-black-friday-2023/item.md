@@ -4,8 +4,6 @@ This article lists the best 2023 Black Friday deals for Python developers.
 
 ![](thumbnail.webp)
 
-# Python Black Friday 2023
-
 This article lists Black Friday deals for Python developers, from books and courses, to tools and other things.
 
 If you find a deal that's not listed here, just comment below or [email it to me](mailto:rodrigo@mathspp.com).

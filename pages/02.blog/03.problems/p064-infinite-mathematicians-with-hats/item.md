@@ -2,7 +2,7 @@ How can an infinite number of mathematicians figure out their own hat colours?
 
 ===
 
-# Problem statement
+## Problem statement
 
 An infinite number of mathematicians are standing in a line.
 In a couple of minutes, a disruption in the space-time continuum will cause a black or white hat to appear on the head of each mathematician.
@@ -13,7 +13,7 @@ What's the strategy that the mathematicians must agree on, before hand, so that 
 !!! Give it some thought!
 
 
-# Solution
+## Solution
 
 When we look at each matematician's hat we can create a sequence of $0$s and $1$s.
 For example, if everyone has a white hat except for the first three mathematicians, then we would have the sequence $(1,1,1,0,0,\cdots)$.

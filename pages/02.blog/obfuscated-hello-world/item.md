@@ -7,7 +7,7 @@ This is the most obfuscated “Hello, world!” program I have ever seen!
 ![A really weird code snippet that contains code that is supposed to print “Hello, world!”.](thumbnail.webp "A weird code snippet that allegedly prints “Hello, world!”.")
 
 
-# The code
+## The code
 
 Here is a monstrous piece of Python code:
 
@@ -33,7 +33,7 @@ taking the spot from [this very obscure “Hello, world!” Python program][obsc
 that I wrote about yesterday.
 
 
-# Background
+## Background
 
 I will explain this program _assuming you've read the article about this simpler version_:
 
@@ -59,7 +59,7 @@ If you would like a step-by-step explanation of how the simpler version works,
 you can find it [here][obscure-hello-world].
 
 
-# Understanding the source
+## Understanding the source
 
 The version we want to study now is mostly the same as the simpler one,
 apart from a few changes:
@@ -75,7 +75,7 @@ class _(list):  # <- now inheriting from `list`
         # The return was empty:
         return "Spam, spam, spam, ..."
 
-# ...
+## ...
 ```
 
 I started by trying to remove docstring from the class and by making the `return` the empty string again,
@@ -100,10 +100,10 @@ Then, I looked at the property definition.
 It is quite similar to the previous one, apart from what follows the `lambda _: ...`:
 
 ```py
-# old v
+## old v
 property(lambda _:        print        (__))
 property(lambda _: eval(_[0][___::___])(__))
-# new ^
+## new ^
 ```
 
 So, it looks like `eval(_[0][___::___])` is supposed to be replacing `print`...
@@ -112,10 +112,10 @@ But how?
 If we look at the decorator, we can see it also looks similar:
 
 ```py
-# old v
+## old v
 @lambda _: _()
 @lambda _: _(__ for _, __ in _.__dict__.items() if -len(_) > ___)
-# new ^
+## new ^
 ```
 
 The difference is that we build an instance of the class with an argument,
@@ -192,14 +192,14 @@ If you come up with an even crazier “Hello, world!” program,
 feel free to comment it below or send it to me [on Twitter][twitter], for example.
 
 
-# The short explanation
+## The short explanation
 
 The short explanation is that the `lambda` decorator is creating a list whose only element is the docstring of the class.
 Then, with some funky slicing, we use that string to build the string `"print"` and then `eval` it into the `print` function,
 which then prints the formatting specification as the simpler version of this program.
 
 
-# Source
+## Source
 
 The program we studied was not authored by me.
 In fact, it was sent to me in the comment section of [a Reddit post][reddit-source]

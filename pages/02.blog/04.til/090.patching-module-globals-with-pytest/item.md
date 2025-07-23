@@ -4,18 +4,18 @@ This is what I ended up with.
 ===
 
 
-# Patching module globals with `pytest`
+## Patching module globals with `pytest`
 
 Suppose you have a small project that has an April Fool's joke set up:
 
 ```py
-# constants.py
+## constants.py
 
 APRIL_FOOLS = False
 ```
 
 ```py
-# useful_code.py
+## useful_code.py
 
 from constants import APRIL_FOOLS
 
@@ -31,7 +31,7 @@ Now, suppose you want to test your April Fool's joke with `pytest`.
 One thing I found online was that you could use the fixture `monkeypatch` and its method `setattr`, something like this:
 
 ```py
-# test_useful_code.py
+## test_useful_code.py
 
 import pytest
 
@@ -60,7 +60,7 @@ After banging my head against the wall for a while, I realised I could tweak my 
 All I had to do was use `constants.APRIL_FOOLS` instead of using `APRIL_FOOLS` directly:
 
 ```py
-# useful_code.py
+## useful_code.py
 
 import constants
 

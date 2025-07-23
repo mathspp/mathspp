@@ -9,12 +9,12 @@ $n$ mathematicians with numbered party hats gather around in a circle... It is a
 ![00-hats.jpg](00-hats.jpg)
 
 
-# Foreword
+## Foreword
 
 I was challenged to solve this problem by Roger Hui, who wrote about it in [an article][roger-article] a couple of years ago.
 
 
-# Problem statement
+## Problem statement
 
 Assume $n$ mathematicians are in a circle, each mathematician with a hat in its head and facing the other $n-1$ mathematicians. Each hat will be given a number from $0$ to $n-1$ and every mathematician will be able to see the numbers on the hats of all the other mathematicians. Of course no one will be able to see/know its own number. (In case you haven't understood yet, numbers can show up repeated.)
 
@@ -27,7 +27,7 @@ Your task is to find out what is the strategy that the mathematicians must emplo
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solution
+## Solution
 
 The answer is really interesting and can be formulated in mathematical terms in a rather simple way; after that I will walk you through what the mathematical formulation means with some doodles I drew.
 
@@ -38,7 +38,7 @@ $g_i + \sum_{j \neq i} a_j \equiv i \hspace{0.5cm} \text{mod } n$
 What follows from here is that if $k \equiv \sum_i a_i \text{ mod } n$, then the $k$th mathematician will get its guess right and all other mathematicians will fail.
 
 
-## Why it works (mathematically)
+### Why it works (mathematically)
 
 Let $a_i, g_i$ be as above and let $k = \sum_i a_i \text{ mod } n$. Notice how
 
@@ -51,7 +51,7 @@ $g_k = \sum_{j} a_j - \sum_{j \neq k} a_j = a_k \hspace{0.5cm} \text{mod } n,$
 hence the $k$th mathematician will guess correctly.
 
 
-## Explanation of the solution
+### Explanation of the solution
 
 Let us take $n = 5$ and number the mathematicians from $0$ to $4$, starting from the top and going in the clockwise direction. The numbers inside the circles represent the numbers in the hats, that I distributed [randomly][xkcd-random].
 
@@ -79,7 +79,7 @@ Just for the sake of completeness, can you tell what mathematicians $3$ and $4$ 
 ![all-hats.webp](all-hats.webp)
 
 
-## A piece of code for you to play with
+### A piece of code for you to play with
 
 I wrote a small piece of [APL](https://aplwiki.com) code so you can check for yourself which mathematician writes down its number correctly, just follow [this link][tio] and change the numbers in the last line to whatever you like, then hit the arrow on the top to run the code:
 

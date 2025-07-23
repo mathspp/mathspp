@@ -2,7 +2,7 @@ Today I learned how to use the VS Code debugger in code from “other” modules
 
 ===
 
-# Debugging other modules in VS Code
+## Debugging other modules in VS Code
 
 Sometimes you may want to use the VS Code debugger and also trace into code from “other” modules, 3rd party modules you are using.
 To do this, you need to disable the option `justMyCode`, which you must set to `false`:

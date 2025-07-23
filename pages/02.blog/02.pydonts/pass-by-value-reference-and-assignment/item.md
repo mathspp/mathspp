@@ -13,7 +13,7 @@ They're passed by assignment.
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 Many traditional programming languages employ either one of two models
 when passing arguments to functions:
@@ -40,7 +40,7 @@ In this Pydon't, you will:
 <!--^-->
 
 
-# Is Python pass-by-value?
+## Is Python pass-by-value?
 
 In the pass-by-value model, when you call a function with a set of arguments,
 the data is copied into the function.
@@ -59,7 +59,7 @@ def foo(x):
 a = 3
 foo(a)
 print(a)
-# 3
+## 3
 ```
 
 This looks like the pass-by-value model because we gave it a 3,
@@ -78,7 +78,7 @@ def clearly_not_pass_by_value(my_list):
 l = [1, 2, 3]
 clearly_not_pass_by_value(l)
 print(l)
-# [42, 2, 3]
+## [42, 2, 3]
 ```
 
 As we can see, the list `l`, that was defined outside of the function,
@@ -86,7 +86,7 @@ changed after calling the function `clearly_not_pass_by_value`.
 Hence, Python does not use a pass-by-value model.
 
 
-# Is Python pass-by-reference?
+## Is Python pass-by-reference?
 
 In a true pass-by-reference model,
 the called function gets access to the variables of the callee!
@@ -102,7 +102,7 @@ def not_pass_by_reference(my_list):
 l = [1, 2, 3]
 not_pass_by_reference(l)
 print(l)
-# [1, 2, 3]
+## [1, 2, 3]
 ```
 
 If Python used a pass-by-reference model,
@@ -162,14 +162,14 @@ had a different value.
 You can't do anything like this in Python.
 
 
-# Python object model
+## Python object model
 
 To really understand the way Python behaves when calling functions,
 it's best if we first understand what Python objects are,
 and how to characterise them.
 
 
-## The three characteristics of objects
+### The three characteristics of objects
 
 In Python, _everything_ is an object, and each object is characterised
 by three things:
@@ -194,7 +194,7 @@ As we can see above, `id` is the built-in function you use to query the identity
 and `type` is the built-in function you use to query the type of an object.
 
 
-## (Im)mutability
+### (Im)mutability
 
 The (im)mutability of an object depends on its type.
 In other words, (im)mutability is a characteristic of types,
@@ -283,7 +283,7 @@ As a reference,
 `list`, `set`, and `dict` are the most common types of mutable objects.
 
 
-## Variable names as labels
+### Variable names as labels
 
 Another important thing to understand is that a variable name has very little to do with the object itself.
 
@@ -319,7 +319,7 @@ Therefore, we conclude that `foo`, `bar`, `baz`, and `obj`,
 are variable names that all refer to the same object.
 
 
-## The operator `is`
+### The operator `is`
 
 This is exactly what the operator `is` does:
 it checks if the two objects are the _same_.
@@ -350,7 +350,7 @@ When two siblings are perfect twins, they look identical.
 However, they _are_ different people!
 
 
-## `is not`
+### `is not`
 
 Just as a side note, but an important one,
 you should be aware of the operator `is not`.
@@ -362,7 +362,7 @@ you put a `not` in front of it:
 n = 5
 if not isinstance(n, str):
     print("n is not a string.")
-# n is not a string.
+## n is not a string.
 ```
 
 So, if you wanted to check if two variables point to different objects,
@@ -387,7 +387,7 @@ Python does a similar thing for the `in` operator, providing a `not in` operator
 How cool is that?!
 
 
-## Assignment as nicknaming
+### Assignment as nicknaming
 
 If we keep pushing this metaphor forward,
 assigning variables is just like giving a new nickname to someone.
@@ -423,7 +423,7 @@ Why?
 Because they all pointed at the _same_ list object.
 
 
-# Python is pass-by-assignment
+## Python is pass-by-assignment
 
 Having laid out all of this, we are now ready to understand how Python
 passes arguments to functions.
@@ -434,7 +434,7 @@ In essence, each parameter now becomes a _new_ nickname to the objects
 that were given in.
 
 
-## Immutable arguments
+### Immutable arguments
 
 If we pass in immutable arguments,
 then we have _no_ way of modifying the arguments themselves.
@@ -465,7 +465,7 @@ It is now pointing at that `3`!
 
 
 
-## Mutable arguments
+### Mutable arguments
 
 On the other hand, mutable arguments _can_ be changed.
 We can modify their internal contents.
@@ -492,7 +492,7 @@ Do you understand what I'm trying to say?
 If not, drop a comment below and I'll try to help.
 
 
-## Beware when calling functions
+### Beware when calling functions
 
 This goes to show you should be careful when defining your functions.
 If your function expects mutable arguments, you should do one of the two:
@@ -511,9 +511,9 @@ In those cases, you might think about doing a copy of the argument
 In those cases, mutating the argument might be the only sensible choice.
 
 
-# Making copies
+## Making copies
 
-## Shallow vs deep copies
+### Shallow vs deep copies
 
 “Copying an object” means creating a second object that has a different identity
 (therefore, is a _different_ object) but that has the same contents.
@@ -522,7 +522,7 @@ while also preserving the first object.
 
 When copying objects, there are a couple of nuances that should be discussed.
 
-### Copying immutable objects
+#### Copying immutable objects
 
 The first thing that needs to be said is that, for immutable objects,
 it does not make sense to talk about copies.
@@ -534,7 +534,7 @@ you can just do a second assignment and work on it:
 ```py
 string = "Hello, world!"
 string_ = string
-# Do stuff with `string_` now...
+## Do stuff with `string_` now...
 ```
 
 Or, sometimes, you can just call methods and other functions directly
@@ -543,12 +543,12 @@ on the original, because the original is not going anywhere:
 ```py
 string = "Hello, world!"
 print(string.lower())
-# After calling `.lower`, `string` is still "Hello, world!"
+## After calling `.lower`, `string` is still "Hello, world!"
 ```
 
 So, we only need to worry about mutable objects.
 
-### Shallow copy
+#### Shallow copy
 
 Many mutable objects can contain, themselves, mutable objects.
 Because of that, two types of copies exist:
@@ -618,7 +618,7 @@ It's the (inner) contents of the object to which we are pointing that changed.
 Sometimes, we don't want this to happen:
 sometimes, we don't want mutable objects to share inner mutable objects.
 
-### Common shallow copy techniques
+#### Common shallow copy techniques
 
 When working with lists, it is common to use slicing to produce a shallow
 copy of a list:
@@ -656,7 +656,7 @@ And here is an example with a list inside a dictionary:
 {42: 73, 'list': [999]}
 ```
 
-### Deep copy
+#### Deep copy
 
 When you want to copy an object “thoroughly”,
 and you don't want the copy to share references to inner objects,
@@ -698,7 +698,7 @@ Sadly, the `list_deepcopy` method I implemented isn't very robust,
 nor versatile, but the Python Standard Library has got us covered!
 
 
-## The module `copy` and the method `deepcopy`
+### The module `copy` and the method `deepcopy`
 
 The module [`copy`][copy] is exactly what we need.
 The module provides two useful functions:
@@ -720,13 +720,13 @@ you only need to implement `__copy__` and `__deepcopy__`, respectively!
 It's a great module, in my opinion.
 
 
-# Examples in code
+## Examples in code
 
 Now that we have gone deep into the theory – pun intended –,
 it is time to show you some actual code that plays with these concepts.
 
 
-## Mutable default arguments
+### Mutable default arguments
 
 Let's start with a Twitter favourite:
 
@@ -808,7 +808,7 @@ With this implementation, the function now works as expected:
 ```
 
 
-## `is not None`
+### `is not None`
 
 Searching through the Python Standard Library shows that
 the `is not` operator is used a bit over 5,000 times.
@@ -823,7 +823,7 @@ it checks if `x` is `None` or not.
 Here is a simple example usage of that, from the [`argparse`][argparse] module to create command line interfaces:
 
 ```py
-# From Lib/argparse.py from Python 3.9
+## From Lib/argparse.py from Python 3.9
 class HelpFormatter(object):
     # ...
 
@@ -847,7 +847,7 @@ In other words, if a section's parent `is not None`, then we want to indent it.
 Notice how my English matches the code exactly!
 
 
-## Deep copy of the system environment
+### Deep copy of the system environment
 
 The method `copy.deepcopy` is used a couple of times in the standard library,
 and here I'd like to show an example usage where a dictionary is copied.
@@ -865,7 +865,7 @@ Here are a couple of examples from my (Windows) machine:
 'C:\\Users\\rodri\\AppData\\Roaming'
 >>> os.environ["systemdrive"]
 'C:'
-# Use list(os.environ.keys()) for a list of your environment variables.
+## Use list(os.environ.keys()) for a list of your environment variables.
 ```
 
 The module [`http.server`][http-server] provides some classes
@@ -891,7 +891,7 @@ But that doesn't mean we can't infer parts of it:
 Here is the code:
 
 ```py
-# From Lib/http/server.py in Python 3.9
+## From Lib/http/server.py in Python 3.9
 class CGIHTTPRequestHandler(SimpleHTTPRequestHandler):
     # ...
 
@@ -920,7 +920,7 @@ As we can see, we copied the environment and defined some variables.
 Finally, we created a new subprocess that gets the modified environment.
 
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this Pydon't, for you, on a silver platter:
 
@@ -946,7 +946,7 @@ This Pydon't showed you that:
  - you can implement `__copy__` and `__deepcopy__` if you want your own objects to be copiable.
 
 
-## See also
+### See also
 
 If you prefer video content, you can check [this YouTube video][jacob-yt-video],
 which was inspired by this article.

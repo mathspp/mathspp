@@ -3,9 +3,9 @@ Today I learned how to use Hypothesis to do confident code refactoring.
 ===
 
 
-# Hypothesis for code refactoring
+## Hypothesis for code refactoring
 
-## What is Hypothesis?
+### What is Hypothesis?
 
 [Hypothesis] is a Python library that you can use when testing your code.
 In a nutshell, Hypothesis will generate test cases automatically for you.
@@ -17,7 +17,7 @@ One of the cool things about Hypothesis is that you can use it when you are refa
 Let me give you a concrete example.
 
 
-## Code refactoring
+### Code refactoring
 
 Recently I played a bit with the [Damerau-Levenshtein distance](/blog/til/damerau-levenshtein-distance) and I implemented it in Python.
 The code (taken from [this TIL article](/blog/til/damerau-levenshtein-distance)) looked like this:
@@ -86,14 +86,14 @@ Do the two functions compute the same thing?
 Enter: Hypothesis!
 
 
-## Verifying a code refactor with Hypothesis
+### Verifying a code refactor with Hypothesis
 
 Because Hypothesis generates random test cases for you, what you can do is create a test where Hypothesis generates two random strings, we feed the two strings to the two alternative implementations, and then we check if they return the same result!
 
 In essence, if `dl` and `dl2` are the two functions, you just need to write this:
 
 ```py
-# dl.py
+## dl.py
 from functools import lru_cache
 
 from hypothesis import given

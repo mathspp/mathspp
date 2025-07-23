@@ -14,7 +14,7 @@ This Pydon't will teach you the basics of list comprehensions in Python.
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 List comprehensions are, hands down,
 one of my favourite Python features.
@@ -44,7 +44,7 @@ that you can get for free [from here][gumroad-cheatsheet].
 <!--^-->
 
 
-# What is a list comprehension?
+## What is a list comprehension?
 
 A list comprehension is a Python expression that builds a list.
 That's it, really.
@@ -56,7 +56,7 @@ If you come from a functional language, have a strong mathematical background, o
 For people who already know Python, list comprehensions are best understood when compared to a `for` loop, so let me show you that.
 
 
-# A loop that builds a list
+## A loop that builds a list
 
 Consider the loop below.
 It builds a list called `squares` which contains the first square numbers:
@@ -98,7 +98,7 @@ The animation below shows how this process works in the general case:
   You can see it at this URL: https://snappify.com/embed/8f4e27cc-bdda-42d5-a818-38673dab5ce6.
 </video>
 
-## Exercises: practice rewriting `for` loops as list comprehensions
+### Exercises: practice rewriting `for` loops as list comprehensions
 
 Practice makes perfect, so I have a couple of loops for you to practice on.
 Go ahead and convert the loops below into list comprehensions.
@@ -135,7 +135,7 @@ for word in words:
 If you want +250 exercises on list comprehensions and all related concepts, check out my book “[Comprehending Comprehensions][comps-book]”.
 
 
-# Filtering data in a list comprehension
+## Filtering data in a list comprehension
 
 The list comprehensions we have covered so far let you build a new list by transforming data from a source iterable.
 However, list comprehensions also allow you to filter data so that the new list only transforms _some_ of the data that comes from the source iterable.
@@ -193,7 +193,7 @@ To recap, here’s how you transform a `for` loop with an `if` statement into a 
 </video>
 
 
-## More exercises
+### More exercises
 
 Go ahead and convert the loops below into list comprehensions to practice.
 
@@ -229,7 +229,7 @@ for word in words:
 If you want +250 exercises on list comprehensions and related concepts, check out my book “[Comprehending Comprehensions][comps-book]”.
 
 
-# List comprehensions from first principles
+## List comprehensions from first principles
 
 In this section, I present list comprehensions as a construct that has merit on its own rather than something derived from a common `for` loop pattern.
 To present list comprehensions “from first principles”, I will draw comparisons from standard mathematical notation.
@@ -311,7 +311,7 @@ This is useful if your list comprehension becomes long.
 In fact, this is so useful that many linters will do it for you.
 
 
-# Full anatomy of a list comprehension
+## Full anatomy of a list comprehension
 
 As you've seen, the anatomy of a list comprehension is dictated by three components enclosed in square brackets `[]`:
 
@@ -381,7 +381,7 @@ List comprehensions should be kept simple and with a relatively small number of 
 For most people, that's just one data source and one data filter (one `for` and one `if`) or two data sources and no data filters (two `for` and zero `if`).
 
 
-# Advantages of list comprehensions
+## Advantages of list comprehensions
 
 The main advantages of using list comprehensions over the equivalent nested structures are
 
@@ -393,14 +393,14 @@ The main advantages of using list comprehensions over the equivalent nested stru
 Let’s briefly explore all the advantages listed above but keep in mind that **the main advantage of a list comprehension is its readability**.
 
 
-## Speed
+### Speed
 
 List comprehensions are faster than the equivalent loops when we're not dealing with trivial cases because of the internals of CPython.
 When we have a loop, Python needs to keep going back and forth between C and Python itself to do the looping and computing the elements to append to the new list.
 List comprehensions are implemented in such a way that we don't need to do this, and because there's less back-and-forth, list comprehensions are slightly faster than the equivalent loop structures.
 
 
-## Conciseness
+### Conciseness
 
 The animations above have shown that, quite literally, you have to delete code from a loop to turn it into a list comprehension.
 Thus, a list comprehension is objectively shorter than the equivalent loop.
@@ -410,7 +410,7 @@ This goes against the beliefs of some, who will proudly show their lengthy list 
 If you find such a person, it becomes your job to teach them that list comprehensions _can_ be made to span across multiple lines and that that often improves its readability at _no_ cost.
 
 
-## Purity
+### Purity
 
 “Purity” here is meant in the functional programming sense, or in the mathematical sense.
 When a `for` loop runs, it has a side-effect:
@@ -438,7 +438,7 @@ Because the construct of a list comprehension does not have side effects by natu
 List comprehensions should be used solely for the purpose of creating new lists by transforming data from other iterables.
 
 
-## Readability
+### Readability
 
 Although readability is a subjective matter, there is something objective to be said about the readability of list comprehensions.
 List comprehensions, by definition, show the data transformation that they employ at the very beginning.
@@ -473,7 +473,7 @@ That's it.
 This, together with the fact that list comprehensions have less code than the equivalent loop, is the reason that many people feel that list comprehensions are readable.
 
 
-# Examples in code
+## Examples in code
 
 List comprehensions are _not_ a drop-in replacement for every single loop.
 List comprehensions are useful when you are building a list out of an existing iterable.
@@ -481,9 +481,9 @@ List comprehensions are useful when you are building a list out of an existing i
 I have a few examples below that show good and bad list comprehension use cases from real-world code.
 If you want more examples and +250 exercises, check my book “[Comprehending Comprehensions][comps-book]”!
 
-## Good use cases
+### Good use cases
 
-### Simple list comprehension
+#### Simple list comprehension
 
 ```py
 # Lib/email/quoprimime.py in Python 3.11
@@ -501,7 +501,7 @@ You may or may not need a second to process the string formatting `'=%02X' % c`,
 Might as well just see that upfront, so you can spend your brain power on what really matters (understanding the formatting).
 
 
-### Flattening a list of lists
+#### Flattening a list of lists
 
 It is perfectly acceptable to use list comprehensions with two loops, and a great example of such a list comprehension is this:
 
@@ -516,7 +516,7 @@ This is a very common pattern!
 Just bear in mind that there is another tool in the standard library that does a similar thing and that may be better, depending on your use case: [`itertools.chain`](http://docs.python.org/3/library/itertools.html#itertools.chain).
 
 
-### Filtering one iterable with another one
+#### Filtering one iterable with another one
 
 ```py
 # Lib/_pydecimal.py in Python 3.11
@@ -527,7 +527,7 @@ This list comprehension shows another pattern that is quite common, in which we 
 In this case, we are actually getting keys and values from a dictionary, but this is also commonly done by putting together two iterables with [the built-in `zip`][pydont-zip].
 
 
-### Initialising data
+#### Initialising data
 
 This example comes from the [Textual][textual] code base:
 
@@ -549,7 +549,7 @@ colour = [randint(0, 255) for _ in range(3)]
 The key here is the `_` inside the loop, which is an [idiom that shows we don't care about the value of the current iteration][pydont-underscores], because we are doing the same thing over and over again.
 
 
-### A simple loop and a simple filter
+#### A simple loop and a simple filter
 
 This one has a bit more context, and it came from an interaction I had on Twitter.
 While scrolling through Twitter, I found someone writing a little Python script to interact with Amazon Web Services to get IP prefixes for different services. (Whatever that means.)
@@ -595,12 +595,12 @@ Now, if you were paying attention, you'll notice that I broke my own personal pr
 The list comprehension above was split across two different lines instead of three.
 That's because my personal preferences and my knowledge evolved with time!
 
-## Bad use cases
+### Bad use cases
 
 Let me also show you some examples of bad list comprehensions because list comprehensions aren't something that can replace all of your loops.
 
 
-### Initialising another list
+#### Initialising another list
 
 This is something I see beginners do surprisingly often, so I thought I'd get this out of the way right now:
 
@@ -628,7 +628,7 @@ print(some_list)  # [None, None, None, None, None, None, None, None, None, None]
 
 The reason we get a bunch of `None` values inside `some_list` is because that's the return value of the method `append`.
 
-### Side effects
+#### Side effects
 
 The case above was a very specific version of the bad example I'm showing, which is when the list comprehension has side effects.
 In the example below, that's a call to the `print` function:
@@ -650,7 +650,7 @@ List comprehensions can't replace every single `for` loop!
 They're just meant as a tool to build lists.
 
 
-### Replacing built-ins
+#### Replacing built-ins
 
 Another bad use case for list comprehensions is when we're trying to replace some built-in.
 A common one is this:
@@ -671,7 +671,7 @@ Another built-in you may end up reinventing is `reversed`.
 There is also a lot to be said about the built-ins `map` and `filter`, but I will leave that for a follow-up article on the more advanced bits of list comprehensions.
 
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this Pydon't, for you, on a silver platter:
 

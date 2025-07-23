@@ -11,7 +11,7 @@ Alice and Bob are going to be locked away separately and their faith depends on 
 ![A coin half buried in the sand.](coin-in-sand.jpg "Photo by Mark Normand from FreeImages")
 
 
-# Problem statement
+## Problem statement
 
 Alice and Bob are going to be incarcerated separately. Everyday at 12h, prison guard Charles meets Alice and prison guard Daniel meets Bob. Each prison guard takes his own prison guard coin out of their pocket (a coin with heads and tails, but not necessarily a fair coin) and tosses it, showing the result to the prisoner in front of him. Then, each prisoner tries to guess what the outcome of their friend's coin toss was. That is, Alice sees the outcome of Charles's coin toss and tries to guess what outcome Bob saw from Daniel's coin toss, and vice-versa. If *any* of the prisoners gets it right, both are set free.
 
@@ -22,7 +22,7 @@ What is the best strategy that Alice and Bob can agree upon, so that they are re
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solution
+## Solution
 
 There is a perfect strategy that allows for Alice and Bob to escape prison on their first day of predicting the coin tosses. If you tried solving the problem but struggled, give it another go with this hint. Look for a perfect strategy, because it exists.
 

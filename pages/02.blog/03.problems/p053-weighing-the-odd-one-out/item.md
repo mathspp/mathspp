@@ -4,7 +4,7 @@ Can you find the fake ball by weighing it?
 
 ![](thumbnail.webp "Photo by AlSimonov on Getty Images.")
 
-# Problem statement
+## Problem statement
 
 You have 12 balls, 11 of which are identical and weigh exactly the same.
 The 12th ball _looks_ like all the others, but it is fake, and is either lighter or heavier.
@@ -17,7 +17,7 @@ Also, the scale is so rusty it will stop working soon and you can only use it th
 This problem was proposed by Attila, a fellow solver from previous problems.
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
@@ -29,7 +29,7 @@ Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
 
 
-# Solution
+## Solution
 
 I'm risking stating the obvious, but I'll say it:
 to solve this problem, we want each weighing to give _as much information_ as possible!
@@ -53,7 +53,7 @@ During the remainder of the solution, we'll use
  - `H` to represent a ball that may be the correct one, or the fake one and heavier; and
  - `L` to represent a ball that may be the correct one, or the fake one and lighter.
 
-## The first weighing leaves the scale balanced
+### The first weighing leaves the scale balanced
 
 If the scale is balanced, the 4 balls off the scale contain the fake one.
 We pick 3 of those up, and we weigh them against 3 balls from the group of 8:
@@ -92,7 +92,7 @@ So, this covers the case where the original weighing was balanced.
 Let's now cover the case where the original weighing is unbalanced.
 
 
-## The first weighing leaves the scale unbalanced
+### The first weighing leaves the scale unbalanced
 
 If the scale is unbalanced, we have 4 balls that may be real or the fake one and lighter;
 and we have 4 balls that may be real, or the fake one and heavier:

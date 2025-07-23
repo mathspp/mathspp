@@ -13,7 +13,7 @@ Today I learned how to do ceiling division in Python just with `//`.
 ![](thumbnail.webp)
 
 
-# Floor division `//`
+## Floor division `//`
 
 I recently published a tweet telling people about the floor division operator in Python, `//`:
 

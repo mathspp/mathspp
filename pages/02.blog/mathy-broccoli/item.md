@@ -3,8 +3,6 @@ This post shows how fractals occur naturally in broccoli, one of my favourite ve
 ===
 
 
-# Mathy broccoli
-
 This post is about showing you how mathematics is beautiful and how it occurs naturally in the world around us. In two previous posts ([here](https://mathspp.com/blog/julia-set) and [here](https://mathspp.com/blog/mandelbrot-set)), I talked about fractals. Today, I am going to do the same thing — except now, I will use broccoli as the example instead of some weird set on the complex plane!
 
 Here's an image with two broccoli poorly edited into the image:

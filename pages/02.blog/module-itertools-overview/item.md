@@ -3,8 +3,6 @@ This article briefly describes the iterators available in the Python module iter
 ===
 
 
-# Module `itertools` overview
-
 The Python module `itertools` contains 20 tools that every Python developer should be aware of.
 We divide the iterators from the module `itertools` in 5 categories to make it easier to learn them and we also present a short list of the generally most useful ones.
 

@@ -3,7 +3,7 @@ Today I learned that you can dynamically change the type of an object in Python.
 ===
 
 
-# Dynamically changing the type
+## Dynamically changing the type
 
 An object's type can be checked by using the built-in `type`:
 

@@ -5,7 +5,7 @@ This tutorial will introduce beginners to the many features that Textual offers 
 ![Two screenshots of a TODO app built with Textual, which is the end result you get if you follow along this Textual tutorial for beginners.](_shots.webp "A TODO app in Textual.")
 
 
-# Introduction
+## Introduction
 
 This tutorial will teach you the basics that you need to use [Textual] to build terminal user interfaces (TUIs).
 
@@ -15,7 +15,7 @@ In case you don't know what Textual is, go ahead and read the description below.
 Otherwise, let's get building!
 
 
-## What is Textual?
+### What is Textual?
 
 [Textual] is a Python framework that lets users build applications that run directly in the terminal.
 Quoting the [Textual] documentation, some of the advantages of using Textual to build applications include:
@@ -29,7 +29,7 @@ Quoting the [Textual] documentation, some of the advantages of using Textual to 
  - Open source: Textual is licensed under MIT.
 
 
-# Setup
+## Setup
 
 To get ready for this tutorial, create a new folder, create a new virtual environment, and install Textual!
 
@@ -61,7 +61,7 @@ To quit the app, press <kbd>Ctrl</kbd> + <kbd>C</kbd>.
 ! Check the [Textual docs][textual-docs] for updated information and [join the Textual Discord][textual-discord] to talk to us.
 
 
-# Your first Textual app
+## Your first Textual app
 
 Textual lets you build TUIs – terminal user interfaces.
 These are programs that provide an interface for the user to interact with, but they run inside the terminal.
@@ -94,7 +94,7 @@ It does _nothing_, but it is running!
 To exit your app, press <kbd>Ctrl</kbd> + <kbd>C</kbd>.
 
 
-# Showing widgets on the screen
+## Showing widgets on the screen
 
 For your app to do something useful, you will want to add _widgets_ to it.
 Widgets are the interface elements that the user interacts with and that you can use to convey information to the user.
@@ -111,7 +111,7 @@ Textual has an [extensive widget library][textual-widget-gallery] that includes:
  - etc.
 
 
-## Composing widgets
+### Composing widgets
 
 Now I will show you how to use widgets in your apps.
 We will start by adding a header and a button to our app.
@@ -144,7 +144,7 @@ If you run this app, you should see an app with a header with the title “MyApp
 ![A Textual app showcasing how to use Textual widgets with the method compose. The app shows a header and a button.](_first_widgets.webp "An app with two widgets.")
 
 
-## Customising widgets upon instantiation
+### Customising widgets upon instantiation
 
 Many widgets can be customised when they are instantiated.
 For example, the header can be set to show a clock with the current time and a button can have a non-default text:
@@ -168,7 +168,7 @@ If you run the app now, you will see a clock in the upper right corner and you w
 ![A Textual app with two widgets showing how widgets can be customised when they are instantiated. The app shows a header with a clock and a button with custom text.](_customised_widgets.webp "Customised header and button widgets.")
 
 
-## Adding inputs to your app
+### Adding inputs to your app
 
 !!! Go to the [Textual widgets reference][textual-widgets] and figure out how to include an input field in your app.
 !!! Customise it so that it has some placeholder text saying “Name:”.
@@ -199,9 +199,9 @@ This app looks like this:
 Try swapping the lines `yield Button(...)` and `yield Input(...)` to see what difference that makes.
 
 
-# Compound widgets
+## Compound widgets
 
-## Rationale
+### Rationale
 
 When building applications, it is common to group some fundamental widgets to create a more complex widget that has a particular significance in your app.
 For example, we can modify the previous application to include a label next to the input field:
@@ -254,7 +254,7 @@ As we notice the pattern, we may extract it and implement a widget called `Label
 When we put together two or more widgets to create a more complex widget, we say we build a compound widget.
 
 
-## Defining a compound widget
+### Defining a compound widget
 
 Compound widgets are regular widgets, but instead of having to implement their functionality from scratch, you can use other widgets as a starting point.
 To do this, you need to create the class that is going to represent your compound widget.
@@ -287,7 +287,7 @@ class LabelledInput(Widget):
 ```
 
 
-## Using a compound widget
+### Using a compound widget
 
 Compound widgets are used like any other widget.
 For instance, you can yield it inside the method `compose` of your app:
@@ -364,7 +364,7 @@ This app now has the look that we expected:
 Try playing around with the value in front of `height:` to see how the look of the app changes when that value changes.
 
 
-## Customising a compound widget upon instantiation
+### Customising a compound widget upon instantiation
 
 Like all other widgets, compound widgets can also be customised upon instantiation.
 Given that a compound widget contains sub-widgets, it is common for some of the customisation options of said sub-widgets to be exposed by the compound widget itself.
@@ -372,7 +372,7 @@ Given that a compound widget contains sub-widgets, it is common for some of the 
 For our `LabelledInput` example, we will let the user customise the text inside the label:
 
 ```py
-# ...
+## ...
 
 class LabelledInput(Widget):
     DEFAULT_CSS = """
@@ -434,7 +434,7 @@ This application looks like this:
 ![A Textual application that uses several compound widgets to make up its interface.](_compound_app.webp "App with multiple compound widgets.")
 
 
-# Key bindings and actions
+## Key bindings and actions
 
 In Textual, you can _bind_ key presses to methods in your application.
 To “bind” a key press means that you can automatically call a given method when the user presses a certain key or a set of keys.
@@ -444,7 +444,7 @@ Textual allows such bindings via _actions_.
 More precisely, via _action methods_.
 
 
-## Action methods
+### Action methods
 
 Action methods are regular app methods that follow a naming convention.
 An action method should start with `action_`.
@@ -466,7 +466,7 @@ The action method `action_ring_a_bell` implicitly defines an action called `ring
 Now, we need to tell Textual that the action `ring_a_bell` should be triggered when the user presses the key <kbd>B</kbd>.
 
 
-## Declaring a binding
+### Declaring a binding
 
 Applications have a class variable `BINDINGS` that can be used to bind keys to actions.
 In its simplest form, the class variable `BINDINGS` is a list of tuples, each tuple declaring a binding.
@@ -493,7 +493,7 @@ Take a moment to celebrate!
 Turn the volume of your computer up and hit the key <kbd>B</kbd> repeatedly!
 
 
-## Action naming
+### Action naming
 
 Just to be clear, Textual does not care about the specific name that you give to your action.
 The only thing that Textual needs is for you to be consistent across the declaration of the class variable `BINDINGS` and the name of your action method.
@@ -515,7 +515,7 @@ MyApp().run()
 ```
 
 
-## Display actions in the footer
+### Display actions in the footer
 
 In order to let the user know which key bindings are available, Textual provides the widget `Footer`.
 The widget `Footer` will show the key bindings at the bottom of your application.
@@ -550,7 +550,7 @@ The image below shows what the footer looks like:
 ![A Textual app that shows a key binding in the widget footer after the binding was updated with a description.](_bindings_footer.webp "A footer showing a binding.")
 
 
-# Dynamic widget creation
+## Dynamic widget creation
 
 So far, the only widgets we had in our apps were instantiated inside the method `compose`.
 However, widgets can also be added dynamically to your app.
@@ -582,9 +582,9 @@ If you run this application and press <kbd>B</kbd> a couple of times, you should
 ![A Textual app that contains many widgets that were added dynamically thanks to the usage of the application method `mount`.](_added_widgets.webp "An app with labels added dynamically.")
 
 
-# Build your first TODO app prototype
+## Build your first TODO app prototype
 
-## Quick recap
+### Quick recap
 
 Take a moment to stretch, you already learned a lot!
 Here is a quick recap of the things you already know:
@@ -601,7 +601,7 @@ Here is a quick recap of the things you already know:
  - you can dynamically add a widget to an app with the app method `mount`.
 
 
-## Challenge
+### Challenge
 
 I want to challenge you to take everything you learned so far and create your first prototype of the TODO app we will be creating.
 
@@ -618,7 +618,7 @@ If you follow all the requirements, run your app, and press <kbd>N</kbd> a coupl
 ![A first prototype of a Textual TODO app that has a key binding that dynamically adds a compound widget to the app.](_todo_01.webp "The first prototype of the app.")
 
 
-## Code for the first prototype
+### Code for the first prototype
 
 There are multiple ways to implement an application that behaves as defined above.
 The code below is my proposal:
@@ -656,7 +656,7 @@ TodoApp().run()
 ```
 
 
-# Layout containers
+## Layout containers
 
 One thing that you probably noticed already is that all the widgets we have been creating and composing are getting stacked vertically.
 However, there are times when we would prefer widgets stacked horizontally.
@@ -693,9 +693,9 @@ The image below shows this:
 ![A Textual application that makes use of a horizontal container to change the layout of widgets on the screen.](_horizontal_container.webp "Two labels inside a container.")
 
 
-# Messages and message handling
+## Messages and message handling
 
-## What are Textual messages?
+### What are Textual messages?
 
 Messages are how Textual notifies the app that something occurred.
 For example, when the user presses a button, Textual issues a message for that.
@@ -713,7 +713,7 @@ For example, if you [open the widget `Button` reference](https://textual.textual
 What is left is knowing how to _handle_ such messages.
 
 
-## Handler methods
+### Handler methods
 
 When a message is _posted_ – such as the message `Button.Pressed` when the user presses a button – Textual will look for a special method called a _handler method_.
 Such a _handler method_ is a regular Python method with a special naming convention.
@@ -743,7 +743,7 @@ Try running your app and pressing the button.
 You should hear a bell.
 
 
-## Handler method naming
+### Handler method naming
 
 A handler method is any method that follows this naming convention:
 
@@ -781,7 +781,7 @@ MyApp().run()
 ```
 
 
-# Custom messages
+## Custom messages
 
 You can also create custom messages by inheriting from `textual.message.Message`.
 Custom messages are especially useful when you create your own (compound) widgets.
@@ -790,7 +790,7 @@ Messages are the correct way for widgets to communicate with the app.
 Thus, if we want to be able to edit and dismiss TODO items, we will need custom messages for that.
 
 
-## Create a message
+### Create a message
 
 Creating a message can be as simple as _just_ inheriting from `Message`:
 
@@ -806,7 +806,7 @@ The code above defines a new message `Ring`.
 Now, we need to see how to use this message.
 
 
-## Posting a message
+### Posting a message
 
 In Textual, we talk about _posting messages_, which essentially means that widgets and apps get notified of things.
 If you have a message that you would like to propagate, you can call the method `post_message` on the widget/app that should receive the notification.
@@ -835,7 +835,7 @@ MyApp().run()
 ```
 
 
-## Handling custom messages
+### Handling custom messages
 
 You can handle custom messages in the same way as you would handle a built-in message.
 All you need to do is follow the naming convention.
@@ -868,7 +868,7 @@ MyApp().run()
 ```
 
 
-## Custom messages inside compound widgets
+### Custom messages inside compound widgets
 
 When compound widgets need custom messages, those are typically defined inside the widget, much like the message `Pressed` for buttons is actually defined inside `Button`.
 
@@ -887,7 +887,7 @@ class RingerWidget(Widget):
 By doing so, the handler method for the message `RingerWidget.Ring` now becomes `on_ringer_widget_ring`.
 
 
-# Self-removing widget
+## Self-removing widget
 
 Much like you can add widgets dynamically to your application, you can also remove them.
 To do this, all you need to do is call the method `remove` on the widget.
@@ -941,12 +941,12 @@ By using a custom message, you give the app a chance to react to the deletion re
 For example, you may need to perform some cleanup before/after deleting the widget.
 
 
-# Reactive attributes
+## Reactive attributes
 
 A _reactive attribute_ is a Textual mechanism that lets you _react_ to attribute changes.
 
 
-## Automatic UI updates
+### Automatic UI updates
 
 For example, the app below rings a bell whenever the attribute `counter` is increased.
 To do this, we define `counter` at the class level as a `reactive` instance and we implement a special method:
@@ -1018,7 +1018,7 @@ If you run this app and you press the button repeatedly, you will see the value 
 ![A Textual app that uses a reactive attribute to dynamically update a label.](_reactive_label_update.gif "Label updates powered by a reactive attribute.")
 
 
-## Reactive attribute lifecycle
+### Reactive attribute lifecycle
 
 Reactives warrant a warning, though.
 Watch methods of reactive attributes will often interact with other widgets, possibly other reactive attributes, etc.
@@ -1055,7 +1055,7 @@ MyApp().run()
 ```
 
 
-# Decorator `on`
+## Decorator `on`
 
 The decorator `on` is a convenience decorator that you can use to declare arbitrary message handlers that don't follow the message handling naming convention.
 
@@ -1100,7 +1100,7 @@ For such a simple use case, the decorator `on` isn't particularly advantageous w
 However, there is another scenario in which the decorator `on` becomes an excellent alternative.
 
 
-## Motivation for the decorator `on`
+### Motivation for the decorator `on`
 
 We want to extend the previous app to include buttons that increment the counter by 10 and by 100.
 We can add those buttons to the app easily:
@@ -1140,12 +1140,12 @@ However, regardless of the button you press, the counter only increases by 1:
 We need to be able to tell the buttons apart and then we need to increment the counter accordingly.
 
 
-## Widget identifiers
+### Widget identifiers
 
 To tell the buttons apart, we can assign a unique identifier to each one of them:
 
 ```py
-# ...
+## ...
 
 class MyApp(App):
     counter = reactive(0)
@@ -1157,13 +1157,13 @@ class MyApp(App):
         yield Button("+10", id="ten")
         yield Button("+100", id="hundred")
 
-# ...
+## ...
 ```
 
 Then, we can use the optional parameter of the decorator `on` to specify that a given method should only be called if we get a message `Button.Pressed` from the button with the given identifier:
 
 ```py
-# ...
+## ...
 
 class MyApp(App):
     counter = reactive(0)
@@ -1187,14 +1187,14 @@ class MyApp(App):
     def plus_hundred(self):
         self.counter += 100
 
-# ...
+## ...
 ```
 
 Notice that, to filter the buttons by their identifier inside the decorator `on`, we need to prefix the identifier with the character `#`.
 There is a reason for this and that reason should become clear when you learn about [Textual CSS](#textual-css).
 
 
-# Modal screens
+## Modal screens
 
 A Textual screen is like a page in your application.
 Different screens can have different purposes.
@@ -1204,7 +1204,7 @@ In our TODO app, we are going to have the main screen that shows all the pending
 We will use modal screens for this because, if I'm being honest, modal screens look really cool.
 
 
-## Creating a modal screen
+### Creating a modal screen
 
 Creating a modal screen is essentially like creating a compound widget or an app:
 you need to create a class that inherits from `textual.screen.ModalScreen` and then you use the method `compose` to determine what widgets go up on that screen.
@@ -1223,7 +1223,7 @@ class MyModalScreen(ModalScreen):
 ```
 
 
-## Showing a modal screen
+### Showing a modal screen
 
 Custom screens are used when you _push_ them with the method `push_screen`.
 The method `push_screen` will push its argument screen on top of the current interface.
@@ -1259,7 +1259,7 @@ After the modal is pushed, this is what the application looks like:
 ![A Textual application showing a modal screen that looks a bit clunky because it hasn't been styled yet.](_ugly_modal.webp "Your first modal screen.")
 
 
-## Styling the modal appropriately
+### Styling the modal appropriately
 
 Above I wrote the following: “modal screens look cool”.
 However, the modal screen I just showed doesn't look that good, but that's straightforward to fix.
@@ -1289,7 +1289,7 @@ It doesn't look great _yet_, but we can already see that what makes the modal sc
 ![A Textual modal screen whose transparent background allows one to see the interface that is under the active modal screen.](_modal_screen.webp "A Textual modal screen.")
 
 
-## Exiting a modal screen
+### Exiting a modal screen
 
 The main way in which you can exit a modal screen is via the `dismiss` method.
 In our modal screen class, we can add a handler method for the message `Button.Pressed` and we can dismiss the screen inside that method:
@@ -1318,7 +1318,7 @@ class MyModalScreen(ModalScreen):
 If you run the app now, you can open the modal screen and then you can dismiss it to get back to your application.
 
 
-## Screen callback
+### Screen callback
 
 The final thing you need to learn about (modal) screens is that they can return results via a callback system.
 When you push the screen to the stack with the method `push_screen`, you can provide an additional argument that is a callback function.
@@ -1365,9 +1365,9 @@ MyApp().run()
 ```
 
 
-# Enhance your TODO app prototype
+## Enhance your TODO app prototype
 
-## Quick recap
+### Quick recap
 
 Get up, take a little stroll, and give your eyes and brain a rest.
 That was plenty of information!
@@ -1387,7 +1387,7 @@ Over the past sections, you learned about:
  - getting values from a screen by using a screen callback.
 
 
-## Second challenge
+### Second challenge
 
 Now, I want you to take the things you just learned, and use them to improve the prototype you have from the first challenge.
 Bear in mind that the features I will ask you to add to the app do not require many lines of code but they will also not be trivial to implement if you are just starting out with Textual!
@@ -1406,7 +1406,7 @@ So, here are the features I would like for you to add to your app:
  - add two reactives to the TODO item, one for the description and another for the due date, so that updating those will in turn update the labels in the widget;
 
 
-## Code for the second iteration
+### Code for the second iteration
 
 A possible implementation of an app as defined above follows:
 
@@ -1526,7 +1526,7 @@ TodoApp().run()
 ```
 
 
-# `textual-dev`
+## `textual-dev`
 
 In preparation for the feature you will learn next, Textual CSS, it is recommended that you install the _Textual devtools_.
 The Textual devtools include a command `textual` that contains many helpful tools for developers writing Textual applications.
@@ -1536,7 +1536,7 @@ After you install `textual-dev`, make sure it worked by running `textual --versi
 The output should be a version number equal to or above `0.29.0`, which is the current version at the time of writing.
 
 
-# Textual CSS
+## Textual CSS
 
 Textual CSS is a feature that I teased a couple of times already and that is fundamental if you want your app to look good.
 Based on the browser CSS, Textual CSS is a language that allows you to customise the look of your app.
@@ -1545,7 +1545,7 @@ Textual supports dozens of styles, so the purpose of this section is not to go o
 This section will show you how to use Textual CSS and you are then free to browse the [Textual styles reference][textual-styles-reference] to learn about all the styles available and their usage.
 
 
-## Adding CSS to elements
+### Adding CSS to elements
 
 _Most_ of the time, and especially if you are starting out, the best way to add CSS to your app, your screens, and your custom widgets, is via an external CSS file.
 Then, you hook the external CSS file to your app via the class variable `CSS_PATH`.
@@ -1573,7 +1573,7 @@ MyApp().run()
 Now, it is just a matter of knowing how the Textual CSS syntax works and you are good to go!
 
 
-## Textual CSS syntax
+### Textual CSS syntax
 
 A Textual CSS file is composed of rule blocks.
 Each rule block is composed of:
@@ -1603,7 +1603,7 @@ You should see a red label:
 ![A Textual application with a label that was styled using Textual CSS stored in an external file](_css.webp "A label styled with Textual CSS.")
 
 
-## Hot reloading
+### Hot reloading
 
 After having installed `textual-dev`, you got access to a command `textual` that has a subcommand `run`.
 The command `textual run` can be used to run your Textual applications as per usual.
@@ -1620,7 +1620,7 @@ The GIF below shows some of these changes.
 ![A GIF showing that changes in the external CSS file get reflected in the app immediately because of the hot reloading feature of `textual run --dev`.](_css_live.gif "Demo of the CSS hot reloading.")
 
 
-## Basic selectors
+### Basic selectors
 
 To learn more about selectors, we'll start by defining an app with some labels:
 
@@ -1653,7 +1653,7 @@ Label {
 Running the app, the three labels should have a red background.
 
 
-### Type selectors
+#### Type selectors
 
 The word `Label` in the CSS file is a CSS selector that targets all widgets that are instances of `Label`.
 In our app, that's the three widgets there.
@@ -1663,7 +1663,7 @@ So, for example, `Label` in the CSS file could be replaced by `Widget`, which wi
 Fix this by changing it back to `Label`.
 
 
-### Class selectors
+#### Class selectors
 
 In Textual, we can use the parameter `classes` when creating a widget to add information to it regarding how it should be styled.
 The same CSS class can be applied across different widgets of different types, which can help ensure a consistent look across your app.
@@ -1685,7 +1685,7 @@ If you save the CSS, your app should now have two labels with a blue background:
 This also shows that CSS rules have different levels of precedence, and a class rule has precedence over a regular type rule.
 
 
-### Identifier selectors
+#### Identifier selectors
 
 Finally, Textual CSS can also use a widget's identifier to target that widget specifically.
 For example, if you change the CSS file to include a third block, you will see that the bottom label will now have a green background:
@@ -1711,7 +1711,7 @@ With these three rules in place, the app looks like this:
 ![A Textual app with three differently-coloured labels that showcase the basic Textual CSS selectors and their precedence rules.](_css_selectors.webp "Labels coloured via Textual CSS.")
 
 
-## CSS selectors in other Textual features
+### CSS selectors in other Textual features
 
 CSS selectors are used by other Textual features.
 For example, we already saw that the decorator `on` uses selectors to further filter when to use certain message handlers.
@@ -1720,7 +1720,7 @@ I just didn't tell you explicitly we were using CSS selectors.
 Another feature you are learning next, [querying](#querying), also uses CSS selectors.
 
 
-## Combining selectors
+### Combining selectors
 
 Selectors can be further combined to target more specific widgets:
 
@@ -1746,13 +1746,13 @@ Label.blue_bg {
 ```
 
 
-# Querying
+## Querying
 
 Querying is a way in which you can access your app's widgets from within other methods.
 You can access a single widget or you can access a group of (related) widgets and then work on those.
 
 
-## Single-result queries
+### Single-result queries
 
 We can consider a simple app that asks the user for its name:
 
@@ -1806,7 +1806,7 @@ So far, we had been saving explicit references to all widgets we cared about as 
 Now, you can get to them with `query_one`.
 
 
-## Querying multiple widgets
+### Querying multiple widgets
 
 Sometimes, your application will have more than one widget that matches the query.
 When that is the case, using `query_one` will raise an error.
@@ -1840,13 +1840,13 @@ MyApp().run()
 ```
 
 
-# Workers
+## Workers
 
 Workers are a life-changing feature that you will want to use for any app that uses some form of concurrency.
 In complex apps that interact with many external APIs, you will probably want to use workers.
 
 
-## The issue
+### The issue
 
 There are also simpler cases where workers are really useful, for example when loading lots of data into your app.
 If you are not careful, you might write a loading method that _blocks_ the interface while it is loading, which will make it look like it froze!
@@ -1857,7 +1857,7 @@ While it is unlikely that you will add enough TODO items to your app that loadin
 Consider the application below that reads a file and creates a label for each line on the fly:
 
 ```py
-# import time
+## import time
 
 from textual.app import App
 from textual.widgets import Button, Input, Label
@@ -1888,13 +1888,13 @@ What is more, you won't even be able to interact with the input field or the oth
 To see this in action, it suffices to add a call to `time.sleep(2)` inside the loop `for line in f:` and you will see the app frozen.
 
 
-## The decorator `work`
+### The decorator `work`
 
 The decorator `work` will use a thread to circumvent this problem.
 While the details of the inner workings are beyond my knowledge right now, I can tell you that fixing our loading is trivial:
 
 ```py
-# import time
+## import time
 
 from textual import work
 from textual.app import App
@@ -1940,7 +1940,7 @@ While there are two second intervals between each new label appearance, the rema
 ![A Textual application using workers to perform a long operation while keeping the application responsive.](_workers.gif "A responsive UI while performing a slow task.")
 
 
-# `on_mount`
+## `on_mount`
 
 Still thinking about the same problem, there will be times where you want to trigger a load action “as soon as possible” without the user having to intervene.
 When that is the case, you will likely want to consider using the handler method `on_mount`.
@@ -1951,7 +1951,7 @@ Thus, inside the handler `on_mount` is the earliest moment at which you know the
 In an example similar to the previous one, if your data comes from a fixed source (for example, a specific file), you can call the load method from inside `on_mount`:
 
 ```py
-# import time
+## import time
 
 from textual import work
 from textual.app import App
@@ -1976,7 +1976,7 @@ MyApp().run()
 This is _usually_ better than loading the data inside `__init__`, for example, because when something is initialised it doesn't mean it will be composed anytime soon, so we might be wasting resources if we start loading the data right away.
 
 
-# Finish your TODO app
+## Finish your TODO app
 
 This was the third and final stretch, where you learned about features such as Textual CSS, hot reloading, querying, workers, and the event `Mount`.
 Now, I'd like you to use this knowledge to polish your TODO app:
@@ -1996,7 +1996,7 @@ In case you are not very imaginative, you _can_ try to make your app look like m
 !!! To style the modal screen, it may also help to put all of the widgets inside a plain `textual.containers.Container`.
 
 
-# Final code
+## Final code
 
 The final code for the app amounts to 130 lines of awesomeness:
 
@@ -2189,7 +2189,7 @@ TodoItemDetailsScreen > Container {
 ```
 
 
-# Further challenges
+## Further challenges
 
 To conclude this tutorial, I'd like to leave you with a couple more challenges for you to tackle.
 None of these are extremely difficult from the technical point of view, but they will require some thinking and you will also probably have to look around in the documentation for missing pieces of the puzzle.

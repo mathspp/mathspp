@@ -3,7 +3,7 @@ Today I learned that Polars allows non-strict vertical concatenation of datafram
 ===
 
 
-# Implicit casting in dataframe concatenation
+## Implicit casting in dataframe concatenation
 
 Polars dataframes have an associated schema, a piece of metadata that describes the columns and their types:
 
@@ -18,7 +18,7 @@ close_family = pl.DataFrame(
 )
 
 print(close_family.schema)
-# Schema({'name': String, 'age': Int64})
+## Schema({'name': String, 'age': Int64})
 ```
 
 By default, Polars uses the type `pl.Int64` when a column contains integers.
@@ -36,7 +36,7 @@ extended_family = pl.DataFrame(
 )
 
 print(extended_family.schema)
-# Schema({'name': String, 'age': UInt8})
+## Schema({'name': String, 'age': UInt8})
 ```
 
 Now, if I try to use `pl.concat` to concatenate these two vertically, Polars complains because the columns `age` in both dataframes have different types:

@@ -2,7 +2,7 @@ Can you prove that there are arbitrarily many primes in arbitrarily big interval
 
 ===
 
-# Problem statement
+## Problem statement
 
 The problem statement asks you to prove that for _any_ positive integer number $k$ you can think of,
 there will be a certain lower bound $n_0$ (that depends on $k$) such that for _any_ integer $n \geq n_0$,
@@ -36,7 +36,7 @@ I am just saying that once you do, you will realise the solution was not very co
  - they become scarcer and scarcer the further you go down the number line.
 
 
-# Solvers
+## Solvers
 
 Congratulations 🎉 to everyone who managed to solve this problem:
 Congratulations to you if you managed to solve this problem correctly! 
@@ -48,7 +48,7 @@ If _you_ managed to solve this problem, you can [add your name to the list][add-
 You can also [email me][email] your solution and we can discuss it.
 
 
-# Solution
+## Solution
 
 A thing I like about this problem is that not only can you prove that interesting statement about the prime numbers, but you can also determine exactly what the lower bound $n_0$ is.
 

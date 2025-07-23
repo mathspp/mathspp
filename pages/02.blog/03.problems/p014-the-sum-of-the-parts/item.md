@@ -5,7 +5,7 @@ Split the numbers 0, 1, ..., 15 into two sets with sum interesting properties!
 I got the idea for this problem after attending the [Recreational Maths Colloquium VI](http://ludicum.org/ev/rm/19), where I heard about the [Thue-Morse sequence](https://en.wikipedia.org/wiki/Thue%E2%80%93Morse_sequence) for the first time in my life.
 
 
-# Problem statement
+## Problem statement
 
 Given the integers $0, 1, \cdots, 15$, find a way to split them into two sets $A$ and $B$ such that
 
@@ -14,7 +14,7 @@ $$\sum_{a \in A} a^k = \sum_{b \in B} b^k,\quad k = 0,\cdots,3$$
 where we define $0^0 = 1$.
 
 
-# Solution
+## Solution
 
 This problem is trivial if we know what we are looking for; if not, I would assume this can only be solved by _very resilient people_ or by those with the help of a computer.
 Notice that the restriction above, for $k = 0$, just tells us that the sets $A$ and $B$ have the same number of elements.
@@ -39,7 +39,7 @@ $$
 $$
 
 
-# Bonus question
+## Bonus question
 
 Find a partition of $0, 1, \cdots, 31$ into $A$ and $B$ with
 

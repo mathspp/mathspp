@@ -3,8 +3,6 @@ This article explains why a user would need to use enums in their code and shows
 ===
 
 
-# Why use enums?
-
 ## What are enums and why do you need them?
 
 Let me show you with a clear example.

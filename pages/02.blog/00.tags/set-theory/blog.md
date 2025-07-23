@@ -14,10 +14,10 @@ hero_image_url: /user/themes/myquark/images/common_hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 metadata:
     author: Rodrigo Girão Serrão
-    description: "All of the mathspp blog articles about set theory."
-    og:description: "All of the mathspp blog articles about set theory."
-    og:image: "https://mathspp.com/blog/tags/set-theory/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/set-theory/thumbnail.webp"
+    description: "All of the mathspp blog articles about Set theory."
+    og:description: "All of the mathspp blog articles about Set theory."
+    og:image: "https://mathspp.com/blog/tags/Set-theory/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/Set-theory/thumbnail.webp"
 title: "Set theory blog articles"
 ---
 
@@ -29,7 +29,7 @@ title: "Set theory blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">1</th>
-            <th style="text-align: center;">107</th>
+            <th style="text-align: center;">104</th>
             
         </tr>
     </thead>

@@ -3,8 +3,6 @@ You can use generators to simplify nested loops and make it easier to break out 
 ===
 
 
-# Breaking out of nested loops with generators
-
 The keyword `break` is used to break out of the enclosing loop.
 So, if you have a nested loop like the one shown below, how can you break out of the _two_ loops as soon as you find the number 3?
 

@@ -11,7 +11,7 @@ of algorithm used to enable a neural network to learn.
 ![A nice image with blue and purple lights.](_thumbnail.png "Original photo by JJ Ying on Unsplash.")
 
 
-# Purpose of this article
+## Purpose of this article
 
 In this article we will be deriving and implementing the backpropagation algorithm.
 That is, we will be performing the necessary calculations in order to see
@@ -27,7 +27,7 @@ empirically that it is working.
 !!! [at the previous article][part2].
 
 
-# Preamble
+## Preamble
 
 I will try my best to write an intuitive explanation of what really happens under the hood,
 and at the same time I will include all the mathematics needed to formalise what is really going on.
@@ -40,7 +40,7 @@ and you will be able to check I didn't make any mistakes if you check the mathem
 First things first, we need to understand _why_ we need an algorithm like backpropagation.
 
 
-# Why is backpropagation needed?
+## Why is backpropagation needed?
 
 A neural network contains _many_ weights and bias which affect the output of the network when you feed it some input.
 The whole idea of the neural network model is that
@@ -58,7 +58,7 @@ The whole idea of the neural network model is that
 The backpropagation algorithm is an algorithm you can use to make these small improvements *in an efficient way*.
 
 
-# Setup
+## Setup
 
 Let us start by defining exactly what we are working with, so that there are no mix-ups.
 
@@ -91,7 +91,7 @@ class NeuralNetwork:
 How we set this forward pass up is highly relevant because it will greatly impact the specific details of the algorithm.
 
 
-# Propagation of effects
+## Propagation of effects
 
 After the forward pass is complete we will want to see by how much the network got the answer wrong.
 We do this by measuring the loss with `net._loss_function.loss`.
@@ -142,7 +142,7 @@ because in order to know how a layer influences the loss, you first need to know
 !!!! Taking the partial derivative of $L$ with respect to $W_0$ will involve many more chain rules than if you take the partial derivative of $L$ with respect to $W_{n-1}$.
 
 
-# Matrix calculus
+## Matrix calculus
 
 One thing that is noteworthy is that everything becomes much easier if we write the algorithm in terms of operations with matrices, instead of only being allowed to write sums and products of real numbers.
 
@@ -153,7 +153,7 @@ If you, or someone else, want to know the specific equation for a specific weigh
 !!!! Calculus becomes a little bit more subtle if you are computing derivatives of vectorial or matrix functions, but more often than not you can get away with applying the usual rules you are used to, as long as you make sure the shapes of the terms involved match.
 
 
-# The algorithm
+## The algorithm
 
 So now that we know that we really need to work our way backwards, we just need to find out a couple more things before we can really implement the method.
 The two other things we need to know are:
@@ -200,7 +200,7 @@ These assignments aren't strictly needed, but they will make the remainder
 of the article lighter to follow.
 
 
-## First step
+### First step
 
 Recall the formula for the loss, if written with the weights and biases from the last layer:
 
@@ -241,7 +241,7 @@ get away with plain multiplication.
 !!!! Do _not_ forget that you are dealing with vectors and matrices, so you need to be careful with the shapes.
 
 
-## Next step
+### Next step
 
 Now that we know how to quantify the way `xs[n-1]`, `Ws[n-1]`, and `bs[n-1]` influence the loss (because we just computed `dxs[n-1]`, `dMs[n-1]` and `dbs[n-1]`), it is time to quantify how `xs[n-2]`, `Ws[n-2]` and `bs[n-2]` influence the loss.
 
@@ -287,7 +287,7 @@ dWs[n-2] = np.dot(dbs[n-2], xs[n-2].T)
 !!!! Once again, if you don't trust me just find the partial derivatives of $h(x, W, b) = L(f_{n-1}(W_{n-1}f_{n-2}(Wx + b) + b_{n-1}), t)$.
 
 
-## The general step
+### The general step
 
 I won't spell out another step for you, so I hope you understood by now that the next iteration will be
 
@@ -342,7 +342,7 @@ I, for one, have derived them repeatedly over the years, as I keep forgetting ho
 Hopefully this was the last time I did it!
 Next time I will be checking this article instead of doing all the work all over again.
 
-# Training a network
+## Training a network
 
 With the backpropagation algorithm we now get access to the derivatives of the loss
 with respect to the weight matrices and with respect to the bias vectors.
@@ -473,17 +473,17 @@ But now we have reached a point where we can actually use the network for
 interesting things, so for this demo let us create a separate file.
 
 
-# Distinguishing the quadrant of the points
+## Distinguishing the quadrant of the points
 
 In a file [`examples/quadrants.py`][gh-quadrants] I wrote the following code:
 
 ```py
 import sys, pathlib
-# (Ugly) workaround to enable importing from parent folder without too much hassle.
+## (Ugly) workaround to enable importing from parent folder without too much hassle.
 sys.path.append(str(pathlib.Path(__file__).parent.parent))
 
 from nn import NeuralNetwork, Layer, LeakyReLU, MSELoss
-# import matplotlib.pyplot as plt
+## import matplotlib.pyplot as plt
 import numpy as np
 
 def col(a):
@@ -543,7 +543,7 @@ and the next figure shows the network already distinguishes many points.
 ![](_quadrants_pos.webp "After training the network can distinguish many points.")
 
 
-# Wrap-up & current code
+## Wrap-up & current code
 
 At this point, the implementation of the network should take up about 110
 lines of code of your main file, plus two dozen more for a small demo
@@ -560,7 +560,7 @@ to recognise handwritten digits in small images!
 Stay tuned for that.
 
 
-# The series
+## The series
 
 These are all the articles in this series:
 

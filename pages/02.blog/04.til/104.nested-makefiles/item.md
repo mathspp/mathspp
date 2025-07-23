@@ -3,7 +3,7 @@ Today I learned how to call a makefile from within another makefile.
 ===
 
 
-# Nested makefiles
+## Nested makefiles
 
 I like to use [make](https://www.gnu.org/software/make/manual/make.html) and makefiles on my projects and today I needed to call a makefile from within another makefile...
 I was pretty sure there was a “proper” way to do it, so I went ahead and looked it up.

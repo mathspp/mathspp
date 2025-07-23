@@ -2,9 +2,6 @@ This tutorial shows how to use a simple genetic algorithm to deduce physics form
 
 ===
 
-
-# Deducing physics formulas with genetic algorithms
-
 ## What's a genetic algorithm?
 
 A genetic algorithm is an algorithm that borrows ideas from Darwin's theory of evolution to find solutions to optimisation problems.

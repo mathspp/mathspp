@@ -6,8 +6,6 @@ Play this short Python quiz to test your Python knowledge!
 <link rel="stylesheet" href="/user/themes/myquark/css/quiz-custom.css">
 
 
-# Who wants to be a millionaire?
-
 At EuroPython 2024 I did a lightning talk where I presented a “Who wants to be a millionaire?” Python quiz.
 [There was a whole performance going on during the lightning talk](https://www.youtube.com/watch?v=6SckLDU_X6M), but the questions themselves were very interesting and I'm sharing them here so that you can test your Python knowledge!
 

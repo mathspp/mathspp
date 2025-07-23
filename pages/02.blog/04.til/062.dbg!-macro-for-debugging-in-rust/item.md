@@ -2,7 +2,7 @@ Today I learned why I should use the `dbg!` macro instead of the `println!` macr
 
 ===
 
-# What is the `dbg!` macro in Rust?
+## What is the `dbg!` macro in Rust?
 
 The `dgb!` macro is a macro that is similar to `println!` but that is designed specifically for debugging.
 Not only does it print the values you pass it, but it also adds a tag with the name of the file and the line from where the macro was called.
@@ -40,7 +40,7 @@ This shows:
 
 ```bash
 ❯ cargo run
-# ...
+## ...
 [src/main.rs:2] 3 + 3 = 6
 ```
 
@@ -57,7 +57,7 @@ Shows:
 
 ```bash
 ❯ cargo run
-# ...
+## ...
 [src/main.rs:3] x = 3
 ```
 

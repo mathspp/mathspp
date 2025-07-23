@@ -5,7 +5,7 @@
 ![](thumbnail.png "Photo by Dallas Reedy on Unsplash.")
 
 
-# Problem statement
+## Problem statement
 
 You are in a horse racing track, and you have 25 mechanical horses in front of you.
 They are programmed to race around the track in a pre-programmed time that is _always_ the same,
@@ -23,7 +23,7 @@ What is the minimum number of races you need to figure out what are the top 3 fa
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
@@ -37,7 +37,7 @@ Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
 
 
-# Solution
+## Solution
 
 There is a way to find the fastest three horses with seven races only.
 To show that 7 is the _minimum_ number of races needed,
@@ -50,7 +50,7 @@ Typically, finding a solution in seven races is easier to do than to show it is 
 so we will start with the easier thing and show how seven races work.
 
 
-## Seven races works
+### Seven races works
 
 Here is how you can find the three fastest horses with only seven races.
 
@@ -119,7 +119,7 @@ which means they can't be in the top 3.
 In other words, these are the only five horses that may be the 2nd fastest and the 3rd fastest.
 
 
-## Six races doesn't work
+### Six races doesn't work
 
 If you are reading this, it is because I forgot to write this part of the proof 🤦.
 If you could be so kind as to drop me a short email reminding me of this, I would _greatly_ appreciate it!

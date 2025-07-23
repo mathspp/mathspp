@@ -5,7 +5,7 @@ Join me in solving the word game Wordle in (Dyalog) APL.
 ![](thumbnail.webp "A screenshot of a session of Wordle I played.")
 
 
-# Introduction
+## Introduction
 
 [Wordle] is a conceptually simple game that you can play online.
 (For those of you who know it, it's like [Mastermind] (the board game),
@@ -36,7 +36,7 @@ Again, recall that:
  - the gray squares around “a” and “v” tell you that “a” and “v” are not in the secret word.
 
 
-# Objective
+## Objective
 
 What we want to do is write an [APL] program that helps us play Wordle.
 (I have written [a similar article][wordle-python] in the past, but using Python.)
@@ -65,7 +65,7 @@ Here are a couple of examples:
 Take a second to make sure you understand all of the scores above.
 
 
-# Getting some data
+## Getting some data
 
 The first thing we will do is [grab a list of words][word-list] to play with.
 If I'm not mistaken, the list I linked to is a free list of the Scrabble dictionary.
@@ -75,7 +75,7 @@ If I'm not mistaken, the list I linked to is a free list of the Scrabble diction
 Now that we have some data, let's get started!
 
 
-# Loading the data
+## Loading the data
 
 First thing we want to do is load the data into the APL session,
 which we can do with the `⎕NGET` function:
@@ -137,7 +137,7 @@ abaca
 ```
 
 
-# Scoring a word
+## Scoring a word
 
 Now, we want to write a function `Score` that
 
@@ -149,7 +149,7 @@ Now, we want to write a function `Score` that
    - a `0` means a wrong letter.
 
 
-## Correct letters in the correct spot
+### Correct letters in the correct spot
 
 Figuring out the correct letters in the correct spot is easy:
 
@@ -176,7 +176,7 @@ This can also be reformulated tacitly:
 ```
 
 
-## Correct letters in the incorrect spot
+### Correct letters in the incorrect spot
 
 Figuring out the correct letters in the incorrect spot is slightly harder than what one might think.
 At first glance, one might think that _membership_ `∊` is enough.
@@ -320,7 +320,7 @@ Thus, the function `Score` becomes:
 ```
 
 
-# Filtering words that match a score
+## Filtering words that match a score
 
 The next function we want to implement is the function `Filter`.
 This function will take three pieces of information:
@@ -365,7 +365,7 @@ abyss
 acari
 ```
 
-## Correct letters in correct places
+### Correct letters in correct places
 
 The first thing we are going to do is make sure that we only keep the words that have the correct letters in the correct places.
 How can we do this?
@@ -422,7 +422,7 @@ acari
 ```
 
 
-## Correct letters in incorrect places still in incorrect places
+### Correct letters in incorrect places still in incorrect places
 
 The next thing we want to do is get rid of all the words that keep the correct letters in their incorrect places.
 
@@ -498,7 +498,7 @@ By doing this check, we make it easier on ourselves to check if the correct lett
 This will become clearer as we dive into the next subsection.
 
 
-## Correct letters in other places
+### Correct letters in other places
 
 The next step is checking that the letters that are correct but in incorrect places still show up in the word.
 How can we do that?
@@ -541,7 +541,7 @@ acari
 ```
 
 
-## Remove incorrect letters
+### Remove incorrect letters
 
 The final step is making sure that the words that we select do not contain any of the letters that we already know shouldn't be there.
 For example, if the guess were `'aargh'` and the score were `2 1 0 0 0`,
@@ -599,7 +599,7 @@ abyss
 ```
 
 
-## Final function
+### Final function
 
 If we put everything together, here is the function `Filter`:
 
@@ -646,7 +646,7 @@ By doing so and then running the function `Filter` with some inputs,
 you will be able to spot the kinds of mistakes that the function does when it skips one step.
 
 
-# Conclusion
+## Conclusion
 
 This article showed you how you can use APL to help you solve Wordle.
 I suspected APL was a great language for this task because APL is array-oriented,

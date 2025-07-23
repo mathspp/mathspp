@@ -15,7 +15,7 @@ This Pydon't walks you through the usages of the
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 In this Pydon't we will take a look at the `__name__` attribute.
 If you Google it, you will find a ton of results explaining _one_
@@ -35,7 +35,7 @@ In this Pydon't, you will:
 <!--^-->
 
 
-# What is `__name__`?
+## What is `__name__`?
 
 `__name__` is a special attribute in Python.
 It is special because it is a dunder attribute,
@@ -51,7 +51,7 @@ while the other result talks about `__main__` as an attribute
 to built-in object types.
 
 
-# The module attribute `__name__`
+## The module attribute `__name__`
 
 The most commonly known use case for `__name__` is as a module attribute,
 when using `__name__` to create “main” functions in Python.
@@ -192,7 +192,7 @@ if __name__ == "__main__":
 ```
 
 
-# `__name__` as an object type attribute
+## `__name__` as an object type attribute
 
 There is another Pythonic use case for the `__name__` attribute,
 another common usage pattern that employs `__name__`.
@@ -334,7 +334,7 @@ Sometimes this is useful, for example when you need to copy some
 metadata from one object to another.
 
 
-# Examples in code
+## Examples in code
 
 I showed you what is the meaning that the `__name__` attribute
 has, both as a module attribute and as an attribute of type objects,
@@ -343,7 +343,7 @@ I will be drawing my examples from the Python Standard Library,
 as per usual.
 
 
-## Defining a command line interface to the module code
+### Defining a command line interface to the module code
 
 If you take a look at the [`calendar`][calendar] module,
 you will find functions to deal with calendars in various ways.
@@ -388,9 +388,9 @@ a little over a fifth of the files...
 So this really is a common pattern in Python!
 
 
-## Pretty error messages
+### Pretty error messages
 
-### Deleting from an enum
+#### Deleting from an enum
 
 Like I mentioned before, if you want to get the name of the type
 of an object, `type(obj).__name__` is likely to be the way to go
@@ -462,7 +462,7 @@ So we could get its `__name__` directly and produce a pretty
 error message, or at least as pretty as error messages go.
 
 
-### Doing argument validation
+#### Doing argument validation
 
 Another similar use case can be found in the [`fractions`][fractions]
 module.
@@ -566,7 +566,7 @@ it appeared 138 times in 74 different `.py` files.
 The specific `cls.__name__` pattern also showed up a handful of times.
 
 
-## Logging convention
+### Logging convention
 
 For the final code example I will be showing you a common convention
 that is practised when using the [`logging`][logging] module
@@ -614,7 +614,7 @@ in the documentation and that is why this pattern is used approximately
 the `getLogger` function in the Python Standard Library.)
 
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this Pydon't, for you, on a silver platter:
 

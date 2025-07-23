@@ -2,14 +2,14 @@ Today I learned how to create xkcd-style plots in Python with matplotlib.
 
 ===
 
-# xkcd plots
+## xkcd plots
 
 A friend of mine showed me how to create [xkcd]-style plots in Python with matplotlib, and they look great:
 
 ![A matplotlib plot created with the style of xkcd.](_sin.webp "A sinusoidal wave in the style of xkcd.")
 
 
-# How to create an xkcd plot in Python?
+## How to create an xkcd plot in Python?
 
 You can set the style of a plot to follow the xkcd style by using `matplotlib.pyplot.xkcd`.
 You can use it as a context manager to set the style of a specific plot, as the example below shows.
@@ -32,14 +32,14 @@ I tried adding the xkcd style to a series of different plots I got directly from
 If you find something for which the style does not work, add a comment below so I can update this article.
 
 
-# More plots in the style of xkcd
+## More plots in the style of xkcd
 
 Here you can find some more plots in the style of xkcd, followed by the accompanying code that was taken almost verbatim from the references.
 
 ![A matplotlib plot in the style of xkcd that shows two waves in 3D.](_wave_superposition.webp "Two waves in the style of xkcd.")
 
 ```py
-# Two waves in the style of xkcd.
+## Two waves in the style of xkcd.
 import matplotlib.pyplot as plt
 from numpy import cos, linspace, sin
 
@@ -58,7 +58,7 @@ with plt.xkcd():
 ![A matplotlib plot in the style of xkcd that shows the superposition of multiple waves in 3D.](_many_waves.webp "Superposition of multiple waves in the style of xkcd.")
 
 ```py
-# Superposition of multiple waves in the style of xkcd.
+## Superposition of multiple waves in the style of xkcd.
 from matplotlib.collections import PolyCollection
 import matplotlib.pyplot as plt
 import numpy as np
@@ -89,14 +89,14 @@ plt.show()
 ![A 3D surface plot in the style of xkcd using matplotlib.](_surface.webp "Surface plot in the style of xkcd.")
 
 ```py
-# Surface plot in the style of xkcd.
+## Surface plot in the style of xkcd.
 from matplotlib import cbook
 from matplotlib import cm
 from matplotlib.colors import LightSource
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Load and format data
+## Load and format data
 dem = cbook.get_sample_data('jacksboro_fault_dem.npz', np_load=True)
 z = dem['elevation']
 nrows, ncols = z.shape
@@ -107,13 +107,13 @@ x, y = np.meshgrid(x, y)
 region = np.s_[5:50, 5:50]
 x, y, z = x[region], y[region], z[region]
 
-# Set up plot
+## Set up plot
 plt.xkcd()
 fig, ax = plt.subplots(subplot_kw=dict(projection='3d'))
 
 ls = LightSource(270, 45)
-# To use a custom hillshading mode, override the built-in shading and pass
-# in the rgb colors of the shaded surface calculated from "shade".
+## To use a custom hillshading mode, override the built-in shading and pass
+## in the rgb colors of the shaded surface calculated from "shade".
 rgb = ls.shade(z, cmap=cm.gist_earth, vert_exag=0.1, blend_mode='soft')
 surf = ax.plot_surface(x, y, z, rstride=1, cstride=1, facecolors=rgb,
                        linewidth=0, antialiased=False, shade=False)
@@ -124,7 +124,7 @@ plt.show()
 ```
 
 
-# How to turn off xkcd style?
+## How to turn off xkcd style?
 
 If you call `plt.xkcd()` as a regular function, all plots that follow will use the xkcd style.
 If you want to disable that style for other plots, just call `matplotlib.pyplot.rcdefaults` before constructing the next plot.

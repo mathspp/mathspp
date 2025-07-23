@@ -29,7 +29,7 @@ title: "Generators blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">6</th>
-            <th style="text-align: center;">2,813</th>
+            <th style="text-align: center;">2,804</th>
             <th style="text-align: center;">494</th>
         </tr>
     </thead>

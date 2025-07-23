@@ -10,7 +10,7 @@ Can you draw 4 triangles in this 5 by 5 grid, covering all dots?
 
 ![](thumbnail.png)
 
-# Problem statement
+## Problem statement
 
 Your challenge is to draw 4 triangles in a regular 5 by 5 grid.
 Of course, there are some restrictions:
@@ -27,7 +27,7 @@ If you need any clarification whatsoever, feel free to ask in the comment sectio
 I originally found this puzzle in the [Puzzling Stack Exchange][source] website.
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
@@ -45,7 +45,7 @@ who sent me their correct solutions:
 Join the list of solvers by [emailing me][email] your solution!
 
 
-# Solution
+## Solution
 
 There are many different solutions to this problem.
 

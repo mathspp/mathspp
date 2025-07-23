@@ -3,7 +3,7 @@ Today I learned about the Python 3.12 type statement you can use to create type 
 ===
 
 
-# `type` statement and type aliases
+## `type` statement and type aliases
 
 Python 3.12 introduced the soft keyword `type`, which is used in the `type` statement to create type aliases.
 The `type` statement offers a more convenient [and powerful](#forward-references) way of creating type aliases and it supersedes `typing.TypeAlias`.
@@ -32,7 +32,7 @@ Point: TypeAlias = tuple[float, float]
 So, why do we care about the `type` statement?
 
 
-## Forward references
+### Forward references
 
 One of the advantages of the `type` statement is that it supports forward referencing without having to quote the names of the types you are refering to.
 This is possible because the type value is lazily evaluated.
@@ -67,7 +67,7 @@ D: TypeAlias = list[str]
 ```
 
 
-## Generic type aliases
+### Generic type aliases
 
 Type aliases can also be made generic.
 For example, the linked list could be a linked list of any kind of value we want, not just integers.

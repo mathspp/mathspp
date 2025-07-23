@@ -3,8 +3,6 @@ In this article I show how I wrote a parser to parse TXRX files into a more mana
 ===
 
 
-# Parsing TXRX files in Python
-
 In the [Python community](https://skool.com/python) that I am creating, a friend of mine mentioned he was trying to write a parser for TXRX files.
 I like parsers, so I offered to help with that task and this article is a short overview of what I did and how I did it.
 

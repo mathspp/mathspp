@@ -8,8 +8,6 @@ With a couple of loops and a bit of maths you can create a rotating spiral.
   A video animation of a colourful rotating spiral that keeps expanding and contracting and changing colour.
 </video>
 
-# Animating a rotating spiral
-
 Following up on the concepts covered in my previous article [“Animations from first principles in 5 minutes”](/blog/animations-from-first-principles-in-5-minutes) and [“More animations from first principles in 5 minutes”](/blog/more-animations-from-first-principles-in-5-minutes), in this article we will create the animation you can see above.
 
 We start by modifying the parametrisation of the circle to create a spiral:

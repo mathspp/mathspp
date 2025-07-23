@@ -3,7 +3,7 @@ Today I learned about multi-channel transposed convolutions.
 ===
 
 
-# Multi-channel transposed convolution
+## Multi-channel transposed convolution
 
 [After having learned about transposed convolutions][til-033],
 I needed to see if I could understand how these convolutions work when they have multiple input and output channels.
@@ -153,7 +153,7 @@ From the fact that we got two `True`s,
 we can see that the output channels _are_ computed independently.
 
 
-# Multi-channel transposed convolution in APL
+## Multi-channel transposed convolution in APL
 
 Building on the transposed convolution model from [the previous article][til-033],
 I decided to build a model for multi-channel transposed convolution as well.
@@ -218,7 +218,7 @@ Hooray!
 Seems like we got it right!
 
 
-# Another multi-channel transposed convolution in APL
+## Another multi-channel transposed convolution in APL
 
 Working with Aaron Hsu on this,
 he sent me an implementation of upsampling through these transposed convolutions,

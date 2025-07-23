@@ -14,10 +14,10 @@ hero_image_url: /user/themes/myquark/images/common_hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 metadata:
     author: Rodrigo Girão Serrão
-    description: "All of the mathspp blog articles about matplotlib."
-    og:description: "All of the mathspp blog articles about matplotlib."
-    og:image: "https://mathspp.com/blog/tags/matplotlib/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/matplotlib/thumbnail.webp"
+    description: "All of the mathspp blog articles about Matplotlib."
+    og:description: "All of the mathspp blog articles about Matplotlib."
+    og:image: "https://mathspp.com/blog/tags/Matplotlib/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/Matplotlib/thumbnail.webp"
 title: "Matplotlib blog articles"
 ---
 
@@ -29,7 +29,7 @@ title: "Matplotlib blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">1</th>
-            <th style="text-align: center;">11,287</th>
+            <th style="text-align: center;">11,280</th>
             <th style="text-align: center;">488</th>
         </tr>
     </thead>

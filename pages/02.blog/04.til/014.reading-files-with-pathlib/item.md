@@ -7,7 +7,7 @@ Today I learned you can use `pathlib` to read the contents of a file.
 ![](thumbnail.png "Photo by Mr Cup / Fabien Barral on Unsplash")
 
 
-# Reading files with `pathlib`
+## Reading files with `pathlib`
 
 [`pathlib`][pathlib] is an amazing module from the Python 3 Standard Library.
 

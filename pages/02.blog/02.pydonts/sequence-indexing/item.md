@@ -14,7 +14,7 @@ A short article with all you need to know about sequence indexing in Python – 
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 Sequences in Python, like strings, lists, and tuples, are objects that
 support indexing: a fairly simple operation that we can use to access specific elements.
@@ -29,7 +29,7 @@ In this article you will:
  - learn a couple of tricks and things to avoid when indexing;
 
 
-# Sequence indexing
+## Sequence indexing
 
 First and foremost, I am talking about _sequence indexing_ here to distinguish the type
 of indexing you do to access the values of a dictionary, where you use _keys_ to index
@@ -82,7 +82,7 @@ Each element gets the index associated with the bar immediately to its left:
 ![](_indexing_arrow.svg "Same string with the arrows connecting the indices to their elements.")
 
 
-# Maximum legal index and index errors
+## Maximum legal index and index errors
 
 Because indices start at 0, the last legal index to a sequence is the index that is equal
 to the length of the sequence, _minus_ one:
@@ -105,7 +105,7 @@ Python will raise an `IndexError`, warning you about your
 usage of an integer that is too large for that specific indexing operation.
 
 
-# Negative indices
+## Negative indices
 
 If the last legal index is the length of the sequence minus 1,
 then there is an obvious way to access the last item of a sequence:
@@ -177,7 +177,7 @@ And a couple of examples:
 'I'
 ```
 
-# Indexing idioms
+## Indexing idioms
 
 Having seen the basic syntax for indexing,
 there are a couple of indices that would be helpful
@@ -192,7 +192,7 @@ without having to think about them:
 | `s[-2]` | | Second to last element of `s` |
 
 
-# To index or not to index?
+## To index or not to index?
 
 Just a quick note on something that I trip over every
 now and then.
@@ -217,17 +217,17 @@ Traceback (most recent call last):
 TypeError: 'enumerate' object is not subscriptable
 >>> z = zip(l)
 >>> z[3]
-# ...
+## ...
 TypeError: 'zip' object is not subscriptable
 >>> m = map(str, l)
 >>> m[3]
-# ...
+## ...
 TypeError: 'map' object is not subscriptable
 ```
 
-# Best practices in code
+## Best practices in code
 
-## A looping pattern with `range`
+### A looping pattern with `range`
 
 Because of the way both `range` and indices work,
 one can understand that `range(len(s))` will generate
@@ -315,7 +315,7 @@ then be my guest and use `range(len(s))`!
 ! so go check that if you haven't.
 
 
-## Large expressions as indices
+### Large expressions as indices
 
 When you are dealing with sequences and with indices
 for those sequences, you may end up needing to perform some
@@ -381,7 +381,7 @@ at hands and consider using an intermediate variable
 with a descriptive name.
 
 
-## Unpacking with indexing
+### Unpacking with indexing
 
 You will find yourself often working with small groups of data,
 for example pairs of things that you keep together in a small
@@ -470,7 +470,7 @@ function was not being properly used.
 !!! to read my articles on [unpacking with starred assignments][pydont-starred-unpack]
 !!! and on [deep-unpacking][pydont-deep-unpacking].
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this article, for you, on a silver platter:
 

@@ -10,7 +10,7 @@ our neural network framework to recognise handwritten digits.
 ![A nice image with blue and purple lights.](_thumbnail.png "Original photo by JJ Ying on Unsplash.")
 
 
-# Purpose of this article
+## Purpose of this article
 
 The purpose of this article is to take the neural network
 framework you built in the previous three articles and apply it
@@ -35,7 +35,7 @@ network that is able to recognise the digit in an image
 !!! [at the previous article][part3].
 
 
-# Getting the data
+## Getting the data
 
 In the world of machine learning, the MNIST dataset is very well-known
 and it is common to play around with this dataset when you are experimenting
@@ -62,7 +62,7 @@ the greyscale levels of the original image, which
 was 28 by 28 pixels.
 
 
-# Creating a new file
+## Creating a new file
 
 Because you are done with *implementing* the network and are now going
 to *use* it, it makes sense to create a new file for this little
@@ -70,7 +70,7 @@ project, so go ahead and create a `mnist.py` file next to your file
 containing the neural network implementation.
 
 
-# Reading the data in
+## Reading the data in
 
 The first thing we want to do is take a look at the data,
 so let's go ahead and create a simple function to read it in
@@ -102,7 +102,7 @@ to allow us to further control how `csv` will read the data in
 and how NumPy will convert the data into an actual array.
 
 
-# Basic data inspection
+## Basic data inspection
 
 After you are done with implementing that `load_data` function,
 go to your Python REPL and take it for a spin:
@@ -152,7 +152,7 @@ We printed the very first row, if you change the `0` in `data[0, 1+idx]`
 to another integer, you will print another MNIST image.
 
 
-# Building the network
+## Building the network
 
 If we want to create a network that recognises handwritten digits,
 before being able to train the network we need to actually build one.
@@ -212,7 +212,7 @@ will work just fine:
 
 ```py
 import sys, pathlib
-# (Ugly) workaround to enable importing from parent folder without too much hassle.
+## (Ugly) workaround to enable importing from parent folder without too much hassle.
 sys.path.append(str(pathlib.Path(__file__).parent.parent))
 
 from nn import NeuralNetwork, Layer, LeakyReLU, MSELoss
@@ -230,7 +230,7 @@ from our neural network implementation, which I assumed was in
 a file named `nn`.
 
 
-# Testing the network
+## Testing the network
 
 Now that we have a network, the first thing we can do is test
 the network to see what is the accuracy of a fresh network.
@@ -290,7 +290,7 @@ def test(net, test_data):
 and so it evaluates to `True` only when `i` is a multiple of `1000`.
 
 
-# Putting everything together
+## Putting everything together
 
 If we put all the bits and pieces from this article together,
 and if we use `pathlib` to make sure we create the correct
@@ -299,7 +299,7 @@ this is what we have so far:
 
 ```py
 import sys, pathlib
-# (Ugly) workaround to enable importing from parent folder without too much hassle.
+## (Ugly) workaround to enable importing from parent folder without too much hassle.
 sys.path.append(str(pathlib.Path(__file__).parent.parent))
 
 import csv
@@ -360,7 +360,7 @@ The `0.1028` is 10.28%, which is in line with the accuracy we expected.
 Now, all there is left to do is train the network.
 
 
-# Training the network
+## Training the network
 
 Training the network is pretty similar to testing it,
 except that instead of comparing the network output to the correct answer
@@ -369,7 +369,7 @@ we need to feed the network with the vector we expected the network
 to output.
 
 
-## Building the expected output
+### Building the expected output
 
 For each row of the training data, we have information for the digit
 that the row actually represents, but we need to build the target
@@ -405,7 +405,7 @@ array([[0.],
 ! and probabilities need to lie in the range $[0, 1]$.
 
 
-## Implementing training
+### Implementing training
 
 Now that we know how to build the target column vector, we can implement
 our `train` function:
@@ -429,7 +429,7 @@ def train(net, train_data):
 ```
 
 
-## Adding training to the script
+### Adding training to the script
 
 Now that we have all the functions that we need, we can actually
 refactor our code ever so slightly to perform the network creation,
@@ -485,7 +485,7 @@ setup (number of layers, respective input and output sizes,
 respective activation functions, loss function and learning rate).
 
 
-# Code & next steps
+## Code & next steps
 
 You can find all the code for this series in [this GitHub repository][gh-nnfwp] and
 the code that corresponds to the end of this article is available [under the tag v1.1][gh-nnfwp-v1_1].
@@ -505,7 +505,7 @@ input and output sizes, the parameter of the `LeakyReLU` (we have been
 using the default value), and the learning rate of the network.
 
 
-# The series
+## The series
 
 These are all the articles in this series:
 

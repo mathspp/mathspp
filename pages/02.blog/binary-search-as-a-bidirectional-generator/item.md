@@ -2,9 +2,6 @@ This article proposes an implementation of an ergonomic binary search algorithm 
 
 ===
 
-
-# Binary search as a bidirectional generator
-
 Python generators can be bidirectional and in this article I will use this feature to try to implement the [binary search](https://en.wikipedia.org/wiki/Binary_search) algorithm in an ergonomic way.
 To this end, I'll write a bidirectional generator that implements the binary search algorithm independent of any use cases.
 This means the resulting generator can be used ergonomically whenever a binary search needs to be employed.

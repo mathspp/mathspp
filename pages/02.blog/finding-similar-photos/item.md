@@ -5,7 +5,7 @@ Go through the complete code for a Python project that consists in finding simil
 ![](thumbnail.webp)
 
 
-# Introduction
+## Introduction
 
 The photo gallery on my phone is consistently packed with photos that all look (pretty much) the same.
 Going through batches of photos and looking for near-duplicates is boring, so I thought I would try to use some maths and some Python to help me find images that are very close to one another.
@@ -17,15 +17,15 @@ For example, I would like my program to determine that the first two photos in t
 This short tutorial will go through the (surprisingly little) code I wrote as an experiment.
 
 
-# Tooling
+## Tooling
 
 This short project makes use of the [pillow] imaging library for Python and **does not** use any machine learning.
 To determine our near-duplicate photos, we will be using rudimentary image processing techniques.
 
 
-# GitHub repository
+## GitHub repository
 
-## Code
+### Code
 
 The code for this project can be found in the [“Finding similar images” GitHub repo][gh-repo].
 Feel free to star the repository and fork it to play around with the code.
@@ -36,14 +36,14 @@ To get started using the code,
  2. run `poetry install` to install the [pillow] dependency (or install it by hand, if you must); and
  3. run `python src/similarity.py`.
 
-## Images
+### Images
 
 The repository also includes two folders `seagulls` and `dublin` with some _real_ photographs I took,
 respectively of a seagull and from Dublin.
 We can use these photographs to test our code.
 
 
-# Algorithm to determine similarity
+## Algorithm to determine similarity
 
 In order to determine if two images are near duplicates of each other, we need to come up with a simple algorithm to do so.
 In this project, we will follow this approach:
@@ -59,14 +59,14 @@ Ready?
 Let's get started.
 
 
-# Setting up everything
+## Setting up everything
 
 To go through this tutorial, you can [clone the repository][gh-repo] and use poetry to install the dependencies with `poetry install`.
 If you can't be bothered with that, you'll need at least the folders `seagulls` and `dublin` from that repository.
 Then, go ahead and create your file `src/similarity.py`:
 
 ```py
-# src/similarity.py
+## src/similarity.py
 from PIL import Image
 
 
@@ -92,7 +92,7 @@ If it didn't, make sure you have pillow installed (you can follow the instructio
 !!! Otherwise, you'll have to use slightly different paths in your code.
 
 
-# Resizing the images
+## Resizing the images
 
 Why do we start by resizing the images into 16 by 16 “thumbnails”?
 The idea is that we consider small sections that are likely to represent the same objects/entities.
@@ -118,7 +118,7 @@ These colours represent the objects that were being shown in the photo, but with
 To do the resize, we only need to use the built-in method `Image.resize` that pillow gives us access to:
 
 ```py
-# image_similarity.py
+## image_similarity.py
 from PIL import Image
 
 
@@ -133,7 +133,7 @@ That is as simple as that.
 You can give it a go on one of your images:
 
 ```py
-# image_similarity.py
+## image_similarity.py
 from PIL import Image
 
 
@@ -159,7 +159,7 @@ summarise(seagull).resize((512, 512), resample=Image.Resampling.BOX).show()
 so it becomes easier to see the result.
 
 
-# Determining the average pixel difference
+## Determining the average pixel difference
 
 Now that we have our images summarised, we need to find a way of computing their difference.
 In other words, given two images, how different are they?
@@ -192,7 +192,7 @@ After we compute the difference for each pixel in the three channels, we find th
 The code looks like this:
 
 ```py
-# image_similarity.py
+## image_similarity.py
 from itertools import product
 
 from PIL import Image, ImageChops
@@ -270,7 +270,7 @@ If that value is small (for example, below 7%), then we will say that the two im
 To try this function out, add this `if` statement at the bottom of your script:
 
 ```py
-# image_similarity.py
+## image_similarity.py
 
 from itertools import product
 
@@ -301,7 +301,7 @@ If you run this code, you should get the output below, or something quite simila
 ```
 
 
-# Finding similar images in a directory
+## Finding similar images in a directory
 
 The final touch to our simple script is the entry point that will take the path to a directory and will compare all images to each other, to determine what duplicates we can delete.
 
@@ -316,7 +316,7 @@ Such a function will
 The function `explore_directory` looks like this:
 
 ```py
-# image_similarity.py
+## image_similarity.py
 
 from itertools import product
 from pathlib import Path
@@ -396,7 +396,7 @@ After we are done going through the directory, we print all the similar images w
 In this article, I went with `0.07` because that looked like a good value.
 
 
-# Find near-duplicate photos
+## Find near-duplicate photos
 
 Now that you have finished your [script `image_similarity.py`][gh-repo] by adding the three functions we've seen,
 
@@ -409,7 +409,7 @@ you can run your code in a directory with photographs.
 My suggestion is that you start with the directory with the seagulls:
 
 ```py
-# image_similarity.py
+## image_similarity.py
 
 ...
 
@@ -448,7 +448,7 @@ Near-duplicates found:
 ```
 
 
-# Conclusion
+## Conclusion
 
 That is it for this article!
 

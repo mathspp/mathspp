@@ -4,7 +4,7 @@ Learn how to write your first Python module in Rust.
 
 ![](thumbnail.webp)
 
-# Introduction
+## Introduction
 
 I'm not going to open with a long-winded introduction explaining why Rust is so awesome and great.
 I don't know if it is or not.
@@ -12,7 +12,7 @@ I just hear a lot about Rust and I wanted to try and write a Python module in Ru
 So, I did!
 
 
-# Set up
+## Set up
 
 To follow this tutorial, you need to start by installing Rust.
 You can head over to [rust-lang.org](https://www.rust-lang.org/tools/install) and follow the installation instructions there.
@@ -40,7 +40,7 @@ You can actually see it already works by running the command `maturin develop` a
 
 ```bash
 $ maturin develop
-# lots of progress output as maturin runs the compilation...
+## lots of progress output as maturin runs the compilation...
 $ python
 >>> import rust_factorial
 >>> rust_factorial.sum_as_string(5, 20)
@@ -50,7 +50,7 @@ $ python
 Now, let us write our own Rust code.
 
 
-# A factorial function in Rust
+## A factorial function in Rust
 
 As my first attempt at writing some Rust code, I decided to write the factorial function.
 Between some educated guesses and compiler errors, I managed to put this together:

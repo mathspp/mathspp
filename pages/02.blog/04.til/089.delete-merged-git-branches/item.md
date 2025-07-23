@@ -3,7 +3,7 @@ Today I learned how to automatically delete local git branches that have been me
 ===
 
 
-# Delete merged git branches
+## Delete merged git branches
 
 Today I ran the command `git branch` and I got scared when I saw the amount of results I got:
 
@@ -26,7 +26,7 @@ I had about 40 branches on me!
 However, most of them had been merged already and I wanted to get rid of them.
 
 
-## A ChatGPT solution
+### A ChatGPT solution
 
 I was aware of two commands that I suspected could be used as the main ingredients:
 
@@ -55,7 +55,7 @@ Then, [I asked on X](https://twitter.com/mathsppblog/status/1727283644493095309)
 I explicitly tagged [Adam Johnson, the author of “Boost Your Git DX”][boost-git-dx] and a contributor to git, and I got some interesting replies.
 
 
-## A human solution
+### A human solution
 
 When I got feedback by more experienced users, they suggested a more robust version of the command.
 They gave me essentially two equivalent versions, so I'll show you just one:

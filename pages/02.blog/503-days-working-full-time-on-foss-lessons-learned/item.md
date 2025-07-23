@@ -2,8 +2,6 @@ This article shares some of the lessons I learned from working full-time on a FO
 
 ===
 
-# 503 days working full-time on FOSS: lessons learned
-
 From the 14th of November of 2022 to the 31st of March of 2024 I worked full-time on a FOSS project.
 This article is an account of some of the things that I learned during those 503 days.
 

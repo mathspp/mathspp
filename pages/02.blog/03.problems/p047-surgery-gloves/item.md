@@ -4,7 +4,7 @@ How can two doctors operate two patients with only two pairs of latex gloves?!
 
 ![A picture of a doctor wearing latex gloves.](thumbnail.png "Photo by Jafar Ahmed on Unsplash.")
 
-# Problem statement
+## Problem statement
 
 Alice and Bob are a bit sick,
 and they need to undergo surgery.
@@ -31,7 +31,7 @@ My uncle told me this puzzle a _long_ time ago!
 I had a blast solving it!
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
@@ -47,7 +47,7 @@ who sent me their correct solutions:
 Join the list of solvers by [emailing me][email] your solution!
 
 
-# Solution
+## Solution
 
 The solution for this is as follows:
 

@@ -5,7 +5,7 @@ Can you cover all of the rational numbers in [0, 1] with tiny intervals?
 This problem was inspired by an awesome video by [3blue1brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw).
 
 
-# Problem statement
+## Problem statement
 
 For a given $\epsilon > 0$, is there a way for you to cover all the rational numbers in the interval $[0, 1]$ with small intervals $I_k$, such that the sum of the lengths of the intervals $I_k$ is less than or equal to $\epsilon$?
 
@@ -14,7 +14,7 @@ In other words (with almost no words), for what values of $\epsilon > 0$ is ther
 $$\left(\mathbb{Q}\cap [0,1]\right) \subseteq \left(\cup_k I_k \right) \wedge \sum_k |I_k| < \epsilon$$
 
 
-# Solution
+## Solution
 
 Such a family of intervals always exists, for any value of $\epsilon > 0$.
 We start by noticing that the rational numbers in the interval $[0, 1]$ are countably many, which means I can order them as $q_1, q_2, q_3, \cdots$.

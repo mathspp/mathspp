@@ -11,7 +11,7 @@ Today I learned about an algorithm that Python uses to sort out inheritance.
 ![](_thumbnail.svg "From the Wiki article on C3 linearisation, by H2power, shared under the CC BY-SA 4.0 license.")
 
 
-# C3 linearisation algorithm
+## C3 linearisation algorithm
 
 Take the following piece of code,
 which defines a series of classes where hierarchical dependencies

@@ -3,7 +3,7 @@ Today I learned that if you suppress the exception `KeyboardInterrupt` then your
 ===
 
 
-# Interrupting scripts without tracebacks
+## Interrupting scripts without tracebacks
 
 The module `contextlib` provides a context manager called `suppress` that you can use to suppress an exception of the given type for the code within its body.
 Writing

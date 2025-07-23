@@ -16,7 +16,7 @@ functionality to write more expressive code.
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 In this Pydon't we will take a closer look at how `and` and `or` really
 work and at a couple of really neat things you can do because of the
@@ -39,7 +39,7 @@ quick reminder of how this works, go ahead and read the
 !!! You can get all the Pydon'ts as a [free ebook with over +400 pages and hundreds of tips](/books/pydonts). [Download the ebook “Pydon'ts – write elegant Python code” here](/books/pydonts).
 <!--^-->
 
-# Return values of the `and` and `or` operators
+## Return values of the `and` and `or` operators
 
 If we [take a look at the docs][docs-and-or-not],
 here is how `or` is defined:
@@ -118,7 +118,7 @@ Take your time to explore this for a bit,
 just like we explored `x or y` above.
 
 
-# Short-circuiting
+## Short-circuiting
 
 You might be asking why this distinction is relevant.
 It is mostly relevant because of the following property:
@@ -134,9 +134,9 @@ and not necessarily a Boolean, means we can do some really neat things
 with them.
 
 
-## `or`
+### `or`
 
-### `False or y`
+#### `False or y`
 
 `or` evaluates to `True` if any of its operands is truthy.
 If the left operand to `or` is `False` (or falsy, for that matter)
@@ -175,7 +175,7 @@ if the left operand to `or` is `False` or falsy, then we _need_
 to look at the right operand to determine the value of the `or`.
 
 
-### `True or y`
+#### `True or y`
 
 On the other hand, if the left operand to `or` is `True`,
 we do not need to take a look at `y` because we already know
@@ -207,7 +207,7 @@ Notice that, in the second example, `p` only did one print
 because it never reached the `p(3)`.
 
 
-### Short-circuiting of `or` expressions
+#### Short-circuiting of `or` expressions
 
 Now we tie everything together.
 If the left operand to `or` is `False` or falsy, we know that
@@ -218,11 +218,11 @@ On the other hand, if the left operand is `True` or truthy,
 even evaluating the right operand.
 
 
-## `and`
+### `and`
 
 We now do a similar survey, but for `and`.
 
-### `False and y`
+#### `False and y`
 
 `and` gives `True` if _both_ its operands are `True`.
 Therefore, if we have an expression like
@@ -284,7 +284,7 @@ Inside `p` with arg=0
 ```
 
 
-### `True and y`
+#### `True and y`
 
 Now, I invite you to take a moment to work through the same reasoning,
 but with expressions of the form `True and y`.
@@ -294,7 +294,7 @@ because the left operand being `True`, or any other truthy value,
 doesn't give `and` enough information.
 
 
-### Short-circuiting of `and` expressions
+#### Short-circuiting of `and` expressions
 
 Now we tie everything together.
 If the left operand to `and` is `False` or falsy,
@@ -305,7 +305,7 @@ On the other hand, if the left operand to `and` is `True`,
 then `and` will evaluate the right operand and return its value.
 
 
-# Short-circuiting in plain English
+## Short-circuiting in plain English
 
 Instead of memorising rules about what sides get evaluated when,
 just remember that both `and` and `or` will evaluate as many
@@ -319,7 +319,7 @@ If you understand that, then it is just a matter of you knowing
 how `and` and `or` work from the Boolean perspective.
 
 
-# `all` and `any`
+## `all` and `any`
 
 The built-in functions `all` and `any` _also_ short-circuit,
 as they are simple extensions of the behaviours provided by
@@ -348,7 +348,7 @@ Can you write an implementation of `any` that is similar to the
 above implementation of `all` and that also short-circuits?
 
 
-# Short-circuiting in chained comparisons
+## Short-circuiting in chained comparisons
 
 A [previous Pydon't][chaining-comparisons-pydont] has shown you
 that comparison operators can be chained arbitrarily,
@@ -367,13 +367,13 @@ False
 ```
 
 
-# Examples in code
+## Examples in code
 
 Now that we have taken a look at how all of these things work,
 we will see how to put them to good use in actual code.
 
 
-## Short-circuit to save time
+### Short-circuit to save time
 
 One of the most basic usages of short-circuiting is to save time.
 When you have a `while` loop or an `if` statement with multiple
@@ -382,7 +382,7 @@ the slower ones, as that might save you some time if the result
 of the first expression ends up short-circuiting.
 
 
-### Conditionally creating a text file
+#### Conditionally creating a text file
 
 Consider this example that should help me get my point across:
 imagine you are writing a function that
@@ -416,7 +416,7 @@ need to bother the operating system with asking if the file
 exists or not.
 
 
-### Conditionally checking if a string matches a regular expression
+#### Conditionally checking if a string matches a regular expression
 
 Now let me show you a real example of an `if` statement that uses
 short-circuiting in this way, saving some time.
@@ -508,13 +508,13 @@ at an earlier stage, but this is just a small example that shows how
 short-circuiting can be helpful.
 
 
-## Short-circuit to flatten `if` statements
+### Short-circuit to flatten `if` statements
 
 Short-circuiting can, and should, be used to keep `if` statements
 as flat as possible.
 
 
-### Conditional validation
+#### Conditional validation
 
 A typical usage pattern is when we want to do some validation
 if certain conditions are met.
@@ -560,7 +560,7 @@ This is exactly what short-circuiting is useful for!
 Only running the second part of a Boolean expression if it is relevant!
 
 
-### Checking preconditions before expression
+#### Checking preconditions before expression
 
 Another typical usage pattern shows up when you have something you need
 to check, for example you need to check if a variable `names` is a list
@@ -709,9 +709,9 @@ many Boolean conditions, you need to be careful when checking
 specific configurations of what is `True` and what is `False`.
 
 
-## Define default values
+### Define default values
 
-### How it works
+#### How it works
 
 If you've been skimming this article, just pay attention to this section right here.
 This, right here, is my favourite use of short-circuiting.
@@ -739,7 +739,7 @@ Because it evaluates the right operand, it is the right
 value that is returned, and `"there"` is assigned to `greet`.
 
 
-### Ensuring a list is not empty
+#### Ensuring a list is not empty
 
 Now that we've seen how this mechanism to assign default values
 works, let us take a look at a couple of usage examples
@@ -787,7 +787,7 @@ at its right operand, returning `[{}]`:
 this produces a list with a single dictionary that has nothing inside.
 
 
-### Default value for a mutable argument
+#### Default value for a mutable argument
 
 I'll share another example with you, now.
 This example might look like the same as the one above,
@@ -846,7 +846,7 @@ that started out as an empty list but keeps growing.
 ! so be sure to [subscribe] to not miss that future Pydon't.
 
 
-## Find witnesses in a sequence of items
+### Find witnesses in a sequence of items
 
 As the final usage example of short-circuiting, I'll share something
 really neat with you.
@@ -907,7 +907,7 @@ if any(is_odd(witness := item) for item in items):
 Isn't this neat?
 
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this Pydon't, for you, on a silver platter:
 

@@ -5,7 +5,7 @@ We discuss the look-and-say sequence, its behaviour, variations of it, and a Pyt
 ![A screenshot of a Numberphile video on the look-and-say sequence displaying the first terms of the look-and-say sequence.](thumbnail.webp "The first few terms of the look-and-say sequence.")
 
 
-# What is the look-and-say sequence?
+## What is the look-and-say sequence?
 
 The look-and-say sequence is a numerical sequence that typically starts with 1 and then has the following terms:
 
@@ -40,7 +40,7 @@ So, the look-and-say sequence is often associated with the sequence that starts 
 but the rule makes sense in other contexts as well.
 
 
-# Conway's constant
+## Conway's constant
 
 A couple of days ago [I learned][til-look-and-say-growth] that [John Conway][jc] was able to determine by how much all these sequences grow!
 As you progress through the sequence, the length of the previous term is supposed to be $\approx 30\%$ greater than the length of the previous term.
@@ -57,7 +57,7 @@ Can you figure out which one?
 !!! You can find the answer below.
 
 
-# Python implementation
+## Python implementation
 
 After [talking about this sequence on Twitter][twitter-seq], I wrote a Python function that applies the look-and-say rule to a list of digits.
 So, before you keep reading, can you implement such a function?
@@ -98,7 +98,7 @@ Here are some examples to show how `groupby` works:
 Notice how the keys are the unique consecutive elements:
 
 ```py
-# The keys are the unique elements:
+## The keys are the unique elements:
 >>> [k for k, _ in groupby("AAABAADDDCC")]
 ['A', 'B', 'A', 'D', 'C']
 ```
@@ -106,11 +106,11 @@ Notice how the keys are the unique consecutive elements:
 If we don't convert groups to lists first, we can't get the length of the group:
 
 ```py
-# The groups are iterables with the consecutive elements:
+## The groups are iterables with the consecutive elements:
 >>> [list(g) for _, g in groupby("AAABAADDDCC")]
 [['A', 'A', 'A'], ['B'], ['A', 'A'], ['D', 'D', 'D'], ['C', 'C']]
 
-# We can compute the length of a group:
+## We can compute the length of a group:
 >>> [len(list(g)) for _, g in groupby("AAABAADDDCC")]
 [3, 1, 2, 3, 2]
 ```
@@ -118,7 +118,7 @@ If we don't convert groups to lists first, we can't get the length of the group:
 And we can obviously pair the lengths of the groups with the keys themselves:
 
 ```py
-# We can pair keys and length of groups to count elements:
+## We can pair keys and length of groups to count elements:
 >>> [(len(list(g)), k) for k, g in groupby("AAABAADDDCC")]
 [(3, 'A'), (1, 'B'), (2, 'A'), (3, 'D'), (2, 'C')]
 ```
@@ -200,7 +200,7 @@ What if I couldn't convert my number (or my digits) to strings?
 How would I do the conversions then?
 
 
-# The exception to Conway's constant
+## The exception to Conway's constant
 
 The only seed that creates a look-and-say sequence that doesn't grow according to Conway's constant is the seed 22.
 Why?
@@ -220,7 +220,7 @@ Now, what's really impressive is that _all other sequences_ grow at the rate det
 That's what is _really_ impressive.
 
 
-# Estimating Conway's constant
+## Estimating Conway's constant
 
 Another thing you can try doing is picking a seed,
 computing successive elements,

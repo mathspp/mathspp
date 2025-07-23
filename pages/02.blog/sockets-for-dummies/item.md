@@ -7,7 +7,7 @@ Dive into the world of socket programming with this Python tutorial that assumes
 ![A picture of a phone and a laptop, showing that the phone managed to use Python to send data into the laptop through sockets, one of the experiments done in this Python tutorial that serves as an introduction to sockets and networking.](thumbnail.png "Phone and laptop communicating through sockets.")
 
 
-# Motivation and starting point
+## Motivation and starting point
 
 I need to learn about socket programming for work.
 I was tasked with maintaining a project ([Py'n'APL][pynapl]) that revolves around sockets,
@@ -26,7 +26,7 @@ My generic game plan is to read enough about sockets so that:
  - I can make use of sockets in my Python programs to have them communicate with each other.
 
 
-## Learning in public
+### Learning in public
 
 At the same time I learn about socket programming _and_ write this article,
 I will be sharing my almost-real-time findings, ideas, and experiments, on Twitter.
@@ -36,7 +36,7 @@ that I wrote while learning about socket programming in public:
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Today, I&#39;m spending the day learning in public about socket programming (in Python 🐍).<br><br>My starting point is this:<br><br>“I think sockets are like tunnels/roads that allow different programs to talk to each other directly.”<br><br>This 🧵 will evolve as I learn and experiment 👇</p>&mdash; Rodrigo 🐍📝 (@mathsppblog) <a href="https://twitter.com/mathsppblog/status/1478321570892320768?ref_src=twsrc%5Etfw">January 4, 2022</a></blockquote>
 
 
-# Client and server sockets
+## Client and server sockets
 
 The first step in my journey to understanding socket programming is going through the
 “Socket Programming HOWTO” available in the Python docs, and that you can read [here][socket-programming-howto].
@@ -67,7 +67,7 @@ So, perhaps the server socket is in charge of accepting the connections,
 but then it also uses a client socket to _send_ the pages that were requested?
 
 
-# Creating a server socket
+## Creating a server socket
 
 Further reading shows how we can create a server socket and a client socket,
 although they do nothing.
@@ -76,7 +76,7 @@ Go ahead and open your Python REPL.
 In it, type this:
 
 ```py
-# REPL 1
+## REPL 1
 >>> import socket
 >>> server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 >>> server.bind(("localhost", 7342))
@@ -151,14 +151,14 @@ Because no one is trying to connect to our random host and port, the code hangs:
 it's waiting for a socket to connect!
 
 
-# Connecting to the server through your browser
+## Connecting to the server through your browser
 
 After creating the server, I had a glimpse of inspiration!
 I opened my browser and I typed `localhost:7342`; I suggest you do the same.
 When you do that, your server code is no longer hanging, and you get to inspect the `client_socket`:
 
 ```py
-# (client_socket, address) = server.accept() <- this is no longer hanging.
+## (client_socket, address) = server.accept() <- this is no longer hanging.
 >>> client_socket
 <socket.socket fd=580, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7342), raddr=('127.0.0.1', 61896)>
 ```
@@ -238,7 +238,7 @@ So, we did manage to connect to our server, we just didn't do anything useful wi
 Yet!
 
 
-# Reading (receiving) incoming data
+## Reading (receiving) incoming data
 
 At this point, I went to take a shower, and was left thinking about this little experiment...
 And then it hit me: perhaps we need to _read_ the actual request _first_, and _then_ we reply with the data!
@@ -364,7 +364,7 @@ because it is low-level, the two endpoints (the server and the client) have to a
 on the format that the messages take.
 
 
-# HTTP response format
+## HTTP response format
 
 As I was [writing about this on Twitter][twitter-thread],
 [someone replied][twitter-html-response] with the bare minimum I needed to include in the message
@@ -430,7 +430,7 @@ This also seems to be working on Chrome (for me, at least),
 so let's call this the first major win of this article!
 
 
-# Creating a client socket
+## Creating a client socket
 
 The [HOWTO][socket-programming-howto] also shows how to create a client socket from scratch,
 so maybe we could do just that.
@@ -438,9 +438,9 @@ so maybe we could do just that.
 The code in the [HOWTO][socket-programming-howto] is just two lines and a couple of comments:
 
 ```py
-# create an INET, STREAMing socket
+## create an INET, STREAMing socket
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-# now connect to the web server on port 80 - the normal http port
+## now connect to the web server on port 80 - the normal http port
 s.connect(("www.python.org", 80))
 ```
 
@@ -599,7 +599,7 @@ Next up, let's connect our own server socket to our own client socket, and have 
 This should be a walk in the park, after using sockets to communicate with browsers and the Internet.
 
 
-# Using sockets to communicate between two Python instances
+## Using sockets to communicate between two Python instances
 
 In order to do this, let's open two Python terminals,
 and put them side by side.
@@ -618,7 +618,7 @@ To create the server, we
  - accept an incoming connection:
 
 ```py
-# (SERVER)
+## (SERVER)
 >>> import socket
 >>> server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 >>> server.bind(("localhost", 7342))  # 1
@@ -631,7 +631,7 @@ At this point, the code hangs because we are waiting for a client to connect.
 To create a client, we do the exact same first step, but then we connect to the host and port:
 
 ```py
-# (CLIENT)
+## (CLIENT)
 >>> import socket
 >>> client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 >>> client.connect(("localhost", 7342))  # 4
@@ -653,7 +653,7 @@ message with some data, which the server will give back in reverse.
 Sending the data means calling the method `.send`:
 
 ```py
-# (CLIENT)
+## (CLIENT)
 >>> client.send(b"Hello, world!")  # 5
 13
 ```
@@ -669,7 +669,7 @@ the reversed data.
 Here is the code that implements the steps described:
 
 ```py
-# (SERVER)
+## (SERVER)
 >>> data = client.recv(1024)
 >>> print(data.decode("utf8"))
 Hello, world!
@@ -683,7 +683,7 @@ While this is happening, the client side is waiting to receive a message back,
 which we can receive and print:
 
 ```py
-# (CLIENT)
+## (CLIENT)
 >>> back = client.recv(1024)
 >>> print(back.decode("utf8"))
 !dlrow ,olleH
@@ -699,14 +699,14 @@ So, here is our verification that the server side was indeed closed,
 after which we close our end of the connection too:
 
 ```py
-# (CLIENT)
+## (CLIENT)
 >>> client.recv(1024)
 b''
 >>> client.close()
 ```
 
 
-# Using sockets to communicate between your phone and your laptop
+## Using sockets to communicate between your phone and your laptop
 
 Sockets can also be used between different devices.
 This is obvious, actually: your browser connects to web servers
@@ -725,7 +725,7 @@ Instead, we want to bind the server to a name that allows the computer to be fou
 by _other_ devices on the same network:
 
 ```py
-# (SERVER DEVICE)
+## (SERVER DEVICE)
 >>> import socket
 >>> server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 >>> server.bind((socket.gethostname(), 7342))
@@ -752,7 +752,7 @@ For other operating systems, you'll have to look it up...
 Now that that's done, I grabbed my second device, opened Python, and created a client server:
 
 ```py
-# (CLIENT DEVICE)
+## (CLIENT DEVICE)
 >>> import socket
 >>> client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 >>> client.connect(("LAPTOP-LOVP26AI", 7342))
@@ -765,7 +765,7 @@ how can you figure that out?
 Just use `socket.gethostname`!
 
 ```py
-# (SERVER DEVICE)
+## (SERVER DEVICE)
 >>> socket.gethostname()
 'LAPTOP-LOVP26AI'
 ```
@@ -777,7 +777,7 @@ All that is left is sending a message from one device to the other!
 I took my phone and sent the message `"Hey there, Rodrigo's laptop."`:
 
 ```py
-# (CLIENT DEVICE)
+## (CLIENT DEVICE)
 >>> client.send(b"Hey there, Rodrigo's laptop.")
 28
 ```
@@ -799,7 +799,7 @@ I rejoiced when I saw the message appear on my laptop!
 It's a great feeling when you tinker with things and get them to work!
 
 
-# What server sockets really do
+## What server sockets really do
 
 At this point, we've seen enough to start understanding what server sockets really do and,
 on top of that, understand a statement made early in the [HOWTO][socket-programming-howto]:
@@ -826,7 +826,7 @@ with the socket that wanted to reach out to the service.
 At least, that's my understanding of it!
 
 
-# Protocol to send/receive messages
+## Protocol to send/receive messages
 
 After having played a bit with sockets, we start to realise that sockets
 don't really tell us when they are done receiving a given message.
@@ -849,7 +849,7 @@ we are left waiting for an inbound connection.
 >>> server.bind(("localhost", 7342))
 >>> server.listen()
 >>> client, addr = server.accept()
-# Cursor stays here, because there is no one to connect!
+## Cursor stays here, because there is no one to connect!
 ```
 
 And when the connection does come,
@@ -874,7 +874,7 @@ What if the message had a fixed length?!
 That way, we know we have to read exactly a specific number of bytes to get a full message!
 
 
-## Fixed-length messages
+### Fixed-length messages
 
 If we opt for having messages with a fixed length,
 then we need to pick a character to pad the end of the message,
@@ -883,16 +883,16 @@ and then get rid of it.
 Here's a snippet showcasing the basic idea behind this way of sending and receiving messages:
 
 ```py
-# (CLIENT)
+## (CLIENT)
 >>> LENGTH = 30
 >>> msg = b"Hello, world!"
 >>> padding = b"#" * (LENGTH - len(msg))
 >>> client.send(msg + padding)
 30
 
-# ---
+## ---
 
-# (SERVER)
+## (SERVER)
 >>> LENGTH = 30
 >>> msg_recvd = b""
 >>> while len(msg_recvd) < LENGTH:
@@ -912,7 +912,7 @@ However, if we do manage to come up with such a character,
 then we can try doing something else:
 instead of using it to _pad_ the messages sent, use it to _delimit the ends of the messages_.
 
-## Delimited messages
+### Delimited messages
 
 In delimited messages, you pick a character (or a sequence of characters) that won't show up in the body of a message,
 and you keep calling the method `.recv` until you can find the delimiter in your received message.
@@ -920,15 +920,15 @@ and you keep calling the method `.recv` until you can find the delimiter in your
 Something like this:
 
 ```py
-# (CLIENT)
+## (CLIENT)
 >>> DELIM = b"#*#"
 >>> msg = b"Hello, world!"
 >>> client.send(msg + DELIM)
 16
 
-# ---
+## ---
 
-# (SERVER)
+## (SERVER)
 >>> msg_recvd = b""
 >>> DELIM = b"#*#"
 >>> while not msg_recvd.endswith(DELIM):
@@ -947,8 +947,8 @@ Instead, we should check if the delimiter is present at all,
 and not necessarily at the end:
 
 ```py
-# ...
-# (SERVER)
+## ...
+## (SERVER)
 >>> msg_recvd = b""
 >>> DELIM = b"#*#"
 >>> while DELIM not in msg_recvd:
@@ -971,7 +971,7 @@ specially because a delimiter that works in a given context may not work in anot
 
 Thus, it would be interesting if we found another, better, solution.
 
-## Length indication
+### Length indication
 
 Another possibility is for the message itself to start with an indication of its length.
 If we do that, we first read the length of the message,
@@ -987,8 +987,8 @@ For the example below, I opted for a fixed-length length indication
 (five bytes, in this case):
 
 ```py
-# Length indication at beginning
-# (CLIENT)
+## Length indication at beginning
+## (CLIENT)
 >>> msg = b"Hello, world"
 >>> length = str(len(msg)).zfill(5).encode("utf8")
 >>> length
@@ -998,9 +998,9 @@ b'00012'
 >>> client.send(msg)
 12
 
-# ---
+## ---
 
-# (SERVER)
+## (SERVER)
 >>> length = int(client.recv(5).decode("utf8"))
 >>> msg_recvd = b""
 >>> while len(msg_recvd) < length:
@@ -1026,7 +1026,7 @@ Now, if you are paying attention, you'll notice that in the Internet experiments
 neither the browser nor the web server used any of these three methods...
 So, what did they do?
 
-## Sending and closing
+### Sending and closing
 
 In the HTTP protocol, they go another route!
 They signal the end of the message by closing the connection.
@@ -1041,16 +1041,16 @@ It seems to me this way of doing things is better for one-off exchanges.
 To operate in this way, you can do something like the following:
 
 ```py
-# Send and close.
-# (CLIENT)
+## Send and close.
+## (CLIENT)
 >>> msg = b"Hello, world!"
 >>> client.send(msg)
 13
 >>> client.close()
 
-# ---
+## ---
 
-# (SERVER)
+## (SERVER)
 >>> len_recvd, msg_recvd = -1, b""
 >>> while len_recvd != 0:
 ...     recvd = client.recv(10)
@@ -1062,7 +1062,7 @@ b'Hello, world!'
 ```
 
 
-# Sending in a loop
+## Sending in a loop
 
 The previous section showed four ways in which you can define conversations between two end points
 that make use of sockets to transfer data back and forth.
@@ -1088,7 +1088,7 @@ def send(socket, msg):
 ```
 
 
-# Closing sockets and shutting down
+## Closing sockets and shutting down
 
 When you are done with sockets, you are supposed to shut them down and then close them.
 To do that, you get two methods:
@@ -1118,7 +1118,7 @@ you can shut down by saying that you won't be receiving any more data,
 but leaving it on the table that you might still send more data.
 
 
-# Conclusion and next steps
+## Conclusion and next steps
 
 I feel like I already have some knowledge of how sockets work,
 so now is a good time to conclude this first exploration of sockets,

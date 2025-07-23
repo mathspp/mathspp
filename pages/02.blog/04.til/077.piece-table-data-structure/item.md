@@ -3,7 +3,7 @@ Today I learned about the piece table data structure.
 ===
 
 
-# Piece table
+## Piece table
 
 A piece table is a data structure commonly used in text editors.
 It is similar to a linked list, but instead of each node containing one single item (a character), each node contains a span of the data (a substring).
@@ -43,7 +43,7 @@ pt.replace(1, 5, "n existing")  # "An existing word: herald"
 ```
 
 
-## Python implementation of a piece table
+### Python implementation of a piece table
 
 I provide a toy implementation below.
 To reduce the amount of work I had to do, I decided to implement `insert` and `delete` at the expense of `replace`.

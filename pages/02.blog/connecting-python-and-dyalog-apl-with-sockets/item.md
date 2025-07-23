@@ -4,7 +4,7 @@ This article shows how to communicate between Python and Dyalog APL through the 
 
 ![](thumbnail.webp)
 
-# Introduction
+## Introduction
 
 Programs communicate with each other all the time.
 For example, your browser communicated with my server to retrieve this article.
@@ -18,7 +18,7 @@ This article will show how to communicate between Python and [Dyalog APL][dyalog
 Both `sockets` for Python and Conga for Dyalog APL come with their respective systems by default, so that should make things easier for us.
 
 
-# How to create a socket server in Python
+## How to create a socket server in Python
 
 Thanks to some investigation I did some months ago and [an article I wrote about `sockets`][sockets-python], we can see that it doesn't take much code to create a socket server in Python.
 
@@ -44,7 +44,7 @@ If all went well, running that line of code should make your interpreter hang, w
 Let's see how to connect from the APL side
 
 
-# How to create a client socket in Dyalog APL
+## How to create a client socket in Dyalog APL
 
 To work with sockets in Dyalog APL we need to load the Conga workspace, or we can just copy the namespace `DRC` in:
 
@@ -85,7 +85,7 @@ When the client socket connects to the Python server, the statement `client, add
 This means that `client` is now the client socket that can communicate with Dyalog APL.
 
 
-# Sending messages from Dyalog APL to Python
+## Sending messages from Dyalog APL to Python
 
 Now that we have a connection between Dyalog and APL, we can use the function `DRC.Send` on the Dyalog side to send messages to Python.
 
@@ -105,13 +105,13 @@ Again, if the first integer of the result is a `0`, that means sending worked ou
 Now, if we head over to the Python side, we can receive that message:
 
 ```py
-# From the Python side:
+## From the Python side:
 >>> client.recv(1024)
 b'Hello, Python, from the Dyalog side.'
 ```
 
 
-# Receiving messages from Python in Dyalog APL
+## Receiving messages from Python in Dyalog APL
 
 Receiving a message in Dyalog APL is also simple.
 The function `DRC.Wait` accepts a name of a socket and will attempt to wait for a message from that socket.
@@ -135,7 +135,7 @@ You can increase the timeout limit by providing the number of milliseconds as th
 This should give you plenty of time to go to the Python REPL and send a message through there:
 
 ```py
-# From the Python side:
+## From the Python side:
 >>> client.send(b"Hello Dyalog, from the Python side.")
 35
 ```
@@ -159,7 +159,7 @@ The remaining three values are:
  - the message that was received.
 
 
-# How to create a socket server in Dyalog APL
+## How to create a socket server in Dyalog APL
 
 Before we conclude this article, let us see how we could establish a similar connection but with the socket server on the Dyalog APL side.
 

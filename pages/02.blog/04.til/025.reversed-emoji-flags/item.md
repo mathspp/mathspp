@@ -7,7 +7,7 @@ Today I learned that the reverse of some flag emoji are other flags!
 ![](thumbnail.webp "The reverse of some emoji flags.")
 
 
-# Reversing emoji
+## Reversing emoji
 
 I'm used to getting nerd-sniped by Will McGugan on Twitter,
 and recently he asked, on Twitter,
@@ -47,7 +47,7 @@ Notice how the colour moves out of the middle hand:
 '👍🏾👍👍'
 ```
 
-# Flag emoji
+## Flag emoji
 
 Another person, replying to Will, figured out that the emoji flags were actually represented by a 2-letter country code.
 So, when reversing, some flags would start spelling a 2-letter country code from _a different country_,

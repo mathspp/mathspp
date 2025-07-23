@@ -2,7 +2,7 @@ Today I learned how to create nested git repositories through the `submodules` c
 
 ===
 
-# The problem
+## The problem
 
 I'm working on my [Textual tutorial for EuroPython 2023](https://ep2023.europython.eu/session/build-a-terminal-todo-app-with-textual) and I am saving all the tutorial materials (code, slides, instructions, etc) in a GitHub repository under my company's organisation.
 
@@ -13,7 +13,7 @@ So, I thought “Wouldn't it be nice if I could nest git repositories and just l
 As it turns out, you _can_ nest git repositories!
 
 
-# How do you nest two repositories?
+## How do you nest two repositories?
 
 To nest a repository inside another one, you use the command `git submodule add`.
 When you add the nested repository, that git refers to as a “submodule”, you need to specify the URL of the original repository, so that git can point to it.
@@ -22,20 +22,20 @@ Suppose that you have two repositories, `parent` and `child`, and you want to ne
 Here is how you could do this:
 
 ```bash
-# Open the `parent` folder.
+## Open the `parent` folder.
 ~:$ cd parent
 
-# Clone the `child` inside the parent.
-# This will create a folder `child` inside `parent`.
-# (The child sub-repo can be inside a folder with a different name.)
+## Clone the `child` inside the parent.
+## This will create a folder `child` inside `parent`.
+## (The child sub-repo can be inside a folder with a different name.)
 ~/parent:$ git clone https://github.com/xxx/child
 
-# Add that folder as a submodule linked to a repo at a given URL.
-# (This creates a new file `.gitmodules`.)
+## Add that folder as a submodule linked to a repo at a given URL.
+## (This creates a new file `.gitmodules`.)
 ~/parent:$ git submodule add https://github.com/xxx/child child
-#             repository URL ^    local path for the repo ^^^^^
+##             repository URL ^    local path for the repo ^^^^^
 
-# Commit & push the submodule.
+## Commit & push the submodule.
 ~/parent:$ git commit -m "Add child submodule."
 ~/parent:$ git push
 ```

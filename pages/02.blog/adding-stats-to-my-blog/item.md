@@ -4,8 +4,6 @@ This explains how I added stats to my blog page.
 
 ![Screenshot of my blog page where it shows three stats – total number of articles, lines of code written, and words.](_stats.png "Screenshot of the blog page.")
 
-# Adding stats to my blog
-
 I recently added some basic statistics to my blog, as the image above shows.
 These statistics include the total number of articles published, the number of lines of code written, and the number of words written.
 

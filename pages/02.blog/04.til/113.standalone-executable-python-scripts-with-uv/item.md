@@ -3,7 +3,7 @@ Today I learned how to create standalone Python scripts with uv.
 ===
 
 
-# Standalone Python scripts with uv
+## Standalone Python scripts with uv
 
 I picked up uv a couple of weeks ago and I am absolutely amazed by everything that I can do with it.
 I [created a Python countdown timer](/blog/using-an-llm-to-write-a-countdown-timer) and I wanted to make it an executable I could use on my system.
@@ -20,7 +20,7 @@ The source code for this timer [can be found in a different article I wrote](/bl
 
 Now that you also have the code, here are the steps:
 
-## Use uv to manage script dependencies
+### Use uv to manage script dependencies
 
 If the code is saved in the file `cd.py`, you can use uv to add a dependency to that file:
 
@@ -32,35 +32,35 @@ Updated `cd.py`
 uv will promptly say it updated your file, which should now have some comments in the beginning:
 
 ```py
-# /// script
-# requires-python = ">=3.13"
-# dependencies = [
-#     "pygame",
-# ]
-# ///
+## /// script
+## requires-python = ">=3.13"
+## dependencies = [
+##     "pygame",
+## ]
+## ///
 ```
 
 This lets uv run your script in a self-contained way.
 If you run the script with `uv run cd.py`, then uv will install pygame in an isolated environment and then it will run your countdown timer.
 
-## Add a uv shebang to the script
+### Add a uv shebang to the script
 
 The next thing we will do is add a uv shebang to the script so that we can use it as an executable and to defer to uv for execution.
 To do this, we add a new line at the very top of the script `cd.py`:
 
 ```py
 #!/usr/bin/env -S uv run
-# /// script
-# requires-python = ">=3.13"
-# dependencies = [
-#     "pygame",
-# ]
-# ///
+## /// script
+## requires-python = ">=3.13"
+## dependencies = [
+##     "pygame",
+## ]
+## ///
 ```
 
 I [link-blogged about this shebang before](/link-blog/simonwillison-net-2024-aug-21-usrbinenv-uv-run) and I'm really happy I got to use it today.
 
-## Make the script executable
+### Make the script executable
 
 The next step is to make your script executable:
 
@@ -80,7 +80,7 @@ Now, I can run my countdown timer from anywhere I want:
 cd.py 3  # Start a 3-minute countdown.
 ```
 
-## Bonus: run the timer from the Internet
+### Bonus: run the timer from the Internet
 
 I hosted the code for the timer on my website as well, at this URL: https://mathspp.com/blog/using-an-llm-to-write-a-countdown-timer/cd.py
 

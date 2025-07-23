@@ -17,7 +17,7 @@ This article explores situations for which `match` isn't the answer.
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 Structural pattern matching is coming to Python, and while it may look
 like a plain switch statement like many other languages have,
@@ -36,7 +36,7 @@ to read my [“Pattern matching tutorial for Pythonic code”][pm-tutorial-pydon
 ! Python 3.10 and play with it.
 
 
-# There should be only one obvious way to do it
+## There should be only one obvious way to do it
 
 As per [the Zen of Python][zp-pydont],
 
@@ -59,7 +59,7 @@ Of course, this is much easier to understand with code so there will be
 plenty of code examples along the way.
 
 
-# A short and sweet `if` statement
+## A short and sweet `if` statement
 
 The [Collatz conjecture][collatz] is a mathematical conjecture that says
 that the following function terminates for any positive integer given
@@ -112,7 +112,7 @@ When you only have a couple of options and you are checking for explicit equalit
 a short and sweet `if` statement is most likely the way to go.
 
 
-# Be smart(er)
+## Be smart(er)
 
 Sometimes you will feel like you have to list a series of cases
 and corresponding values, so that you can map one to the other.
@@ -186,9 +186,9 @@ out as a `match` doesn't tell you much about why each input maps to
 each output either way, so why not make it short and sweet?
 
 
-# Basic mappings
+## Basic mappings
 
-## Getting from dictionaries
+### Getting from dictionaries
 
 There are many cases in which you just want to take a value in
 and map it to something else.
@@ -222,7 +222,7 @@ def prefix(tree):
 
 print(prefix(ast.parse("1 + 2 + 3", mode="eval")))     # + + 1 2 3
 print(prefix(ast.parse("2**3 + 6", mode="eval"))       # + * 2 3 6
-# Final one prints '- + 1 * 2 3 / 5 7', take a moment to grok it.
+## Final one prints '- + 1 * 2 3 / 5 7', take a moment to grok it.
 print(prefix(ast.parse("1 + 2*3 - 5/7", mode="eval")))
 ```
 
@@ -263,7 +263,7 @@ def prefix(tree):
 
 print(prefix(ast.parse("1 + 2 + 3", mode="eval")))     # + + 1 2 3
 print(prefix(ast.parse("2**3 + 6", mode="eval"))       # + * 2 3 6
-# Final one prints '- + 1 * 2 3 / 5 7', take a moment to grok it.
+## Final one prints '- + 1 * 2 3 / 5 7', take a moment to grok it.
 print(prefix(ast.parse("1 + 2*3 - 5/7", mode="eval")))
 ```
 
@@ -297,7 +297,7 @@ if the dictionary hasn't listed every single possible value
 or in case you want to have a fallback value.
 
 
-## `getattr`
+### `getattr`
 
 Another useful mechanism that we have available is the [`getattr`][pydocs-getattr] function,
 which is part of a trio of Python built-in functions:
@@ -400,7 +400,7 @@ Speaking of knowing your tools, the last use case in this article for which
 `match` is a bad alternative is related to calling different functions
 when your data has different types.
 
-## Single-dispatch generic functions
+### Single-dispatch generic functions
 
 If you have programming experience in a programming language like Java,
 you will be familiar with the concept of overloading a function:
@@ -489,7 +489,7 @@ spend as many lines decorating as in defining the actual subfunctions,
 but this shows you the pattern that you can now be on the lookout for.
 You can read more about `singledispatch` [in the docs][pydocs-singledispatch].
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this article, for you, on a silver platter:
 

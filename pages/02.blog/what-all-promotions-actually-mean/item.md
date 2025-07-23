@@ -37,7 +37,7 @@ convert them to the “X% off” promotion for some specific values.
  - Loyalty cards / stamp cards / point systems
 
 
-# “X% off”
+## “X% off”
 
 The first type of promotion that I will cover is the one that is easier to grasp, in my opinion.
 It is the “X% off” type of promotions that we are all accustomed to:
@@ -52,7 +52,7 @@ For example:
  - A “70% off” tag means that, for every $100$€ you were about to spend, you get to save $70$.
 
 
-# How To Calculate How Much I Save With A Promotion
+## How To Calculate How Much I Save With A Promotion
 
 There is a simple train of thought that allows you to understand how much money each
 promotion actually saves you, and that is the train of thought I will be using throughout
@@ -70,7 +70,7 @@ things you will get for free.
 gives the percentage that promotion saves you.
 
 
-# “X for the price of Y”
+## “X for the price of Y”
 
 This type of promotion is common in places like supermarkets, where we can buy
 X copies of the same product, but only pay Y of them.
@@ -88,7 +88,7 @@ $100 \times (1 / 3) \approx 33\%$ discount.
 $100 \times (2 / 5) = 40\%$ discount.
 
 
-# “Buy X, we offer the cheapest Y”
+## “Buy X, we offer the cheapest Y”
 
 This type of promotion is really similar to the “X for the price of Y”,
 and allows us to buy different products, whereas the previous one is usually for you
@@ -119,7 +119,7 @@ the X items you want, that will give you the equivalent percentage discount.
 More often than not, it will be significantly lower than the best case scenario.
 
 
-# “X% off in the second item”
+## “X% off in the second item”
 
 This promotion is also very similar to the one before, except that instead of getting the
 cheapest item for free, you are getting a discount on it.
@@ -142,7 +142,7 @@ For example:
 Just like in the case above, if your items have different prices, your total discount gets diluted.
 
 
-# “Plus X% for free” / “Plus X for free”
+## “Plus X% for free” / “Plus X for free”
 
 I see this promotion again and again in cereal packages, packs of yogurts, and the like in supermarkets.
 This is usually seen in a packaging of some sort, claiming that the package got
@@ -185,7 +185,7 @@ the three packs in the original package, instead of having you look at the free 
 of the whole package you are now buying.
 
 
-# “Get X% cash back in a card/for later/when you come back”
+## “Get X% cash back in a card/for later/when you come back”
 
 This is a classical type of "deferred" discount in which you get a percentage of
 the money you spent back, to discount in a later purchase.
@@ -206,7 +206,7 @@ for your next purchase, then you will get a discount of, at most,
 $100 \times (10 + (100 + 10)) \approx 9\%$.
 
 
-# “Get X€ for a purchase above Y€”
+## “Get X€ for a purchase above Y€”
 
 If someone just hands you a coupon that says “Get X€ for a purchase above Y€”,
 then you can get the equivalent discount by multiplying $100$ by X divided by Y.
@@ -222,7 +222,7 @@ $100 \times (10 / (20 + 30)) = 20\%$ discount, much less than what it looked lik
 at first.
 
 
-# Loyalty cards / stamp cards / point systems
+## Loyalty cards / stamp cards / point systems
 
 The promotions I am thinking about in this section are the ones along the lines of
 “every menu awards you a stamp, after $10$ stamps we offer you a menu for free”.

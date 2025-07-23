@@ -7,7 +7,7 @@ Today I learned the basics of socket programming (in Python).
 ![A tunnel, alluding to my intuitive understanding of what a socket is.](thumbnail.png "Photo by Tom Dahm on Unsplash")
 
 
-# Sockets
+## Sockets
 
 When the day started, I had _very little knowledge_ about sockets.
 My intuitive understanding was that they were like tunnels that allowed
@@ -44,7 +44,7 @@ To create the server, we
  - accept an incoming connection:
 
 ```py
-# (SERVER)
+## (SERVER)
 >>> import socket
 >>> server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 >>> server.bind(("localhost", 7342))  # 1
@@ -57,7 +57,7 @@ At this point, the code hangs because we are waiting for a client to connect.
 To create a client, we do the exact same first step, but then we connect to the host and port:
 
 ```py
-# (CLIENT)
+## (CLIENT)
 >>> import socket
 >>> client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 >>> client.connect(("localhost", 7342))  # 4
@@ -79,7 +79,7 @@ message with some data, which the server will give back in reverse.
 Sending the data means calling the method `.send`:
 
 ```py
-# (CLIENT)
+## (CLIENT)
 >>> client.send(b"Hello, world!")  # 5
 13
 ```
@@ -95,7 +95,7 @@ the reversed data.
 Here is the code that implements the steps described:
 
 ```py
-# (SERVER)
+## (SERVER)
 >>> data = client.recv(1024)
 >>> print(data.decode("utf8"))
 Hello, world!
@@ -109,7 +109,7 @@ While this is happening, the client side is waiting to receive a message back,
 which we can receive and print:
 
 ```py
-# (CLIENT)
+## (CLIENT)
 >>> back = client.recv(1024)
 >>> print(back.decode("utf8"))
 !dlrow ,olleH
@@ -125,7 +125,7 @@ So, here is our verification that the server side was indeed closed,
 after which we close our end of the connection too:
 
 ```py
-# (CLIENT)
+## (CLIENT)
 >>> client.recv(1024)
 b''
 >>> client.close()

@@ -9,7 +9,7 @@ In this blog post we will go over some significant changes, from implementing AP
 ===
 
 
-# Recap
+## Recap
 
 In the last two blog posts we wrote a simple Python program that tokenizes basic [APL][apl-wiki] expressions, then parses and interprets them. We introduced some functions, like `+-×÷` and the operator `⍨`.
 
@@ -19,7 +19,7 @@ The program from [part 2][previous] takes an expression like `5 6 -⍨ ÷1 2` an
  - then into an AST like `MOp(⍨ Dyad(- A([S(5), S(6)]) Monad(÷ A([S(1), S(2)]))))`
  - and finally evaluates it to `¯4 ¯5.5`.
 
-# Today
+## Today
 
 Today we are going to:
 
@@ -31,7 +31,7 @@ Today we are going to:
 Also, from now on I want to reduce the time between consecutive posts so I will write blog posts after less changes to the interpreter.
 This will also mean the posts become smaller and easier to read.
 
-## The code
+### The code
 
 [![](https://img.shields.io/github/stars/RojerGS/RGSPL?style=social)][rgspl-repo]
 
@@ -46,10 +46,10 @@ Now that we got this out of the way, let's dive right into the changes for today
 Let us start with simpler changes like introducing complex numbers, allowing for variable names to contain digits, a couple of helper methods in our parser and moving functions/monadic operators/dyadic operators to their own files to keep everything sort of organised.
 
 
-# Simpler changes
+## Simpler changes
 
 
-## Updated grammar
+### Updated grammar
 
 We needed to update our grammar to include dyadic operators (introduced today!), complex numbers and some new functions and operators.
 Here is how the grammar looks now:
@@ -72,7 +72,7 @@ The changes to the grammar will be explained in the relevant sections of this po
 The most notable changes are the addition of the `COMPLEX` token to the `scalar` rule, the inclusion of `dop`s in the `function` rule and the new `dop` rule itself, and the renaming of the `array` rule to `vector`.
 
 
-## Variable names can contain digits
+### Variable names can contain digits
 
 In APL variable names can contain plenty of interesting characters, like the accented latin letters or digits.
 While the possibility of having accented letters in the name of a variable isn't very common in programming languages, digits are common and we will add support for those.
@@ -87,7 +87,7 @@ class Token:
 ```
 
 
-## Complex numbers as a data type
+### Complex numbers as a data type
 
 Today we also want to enrich our basic data types with complex numbers, which in APL are signaled with `J`.
 For example, `0J1` is the imaginary unit $i$.
@@ -184,7 +184,7 @@ class Parser:
 ```
 
 
-## Comments in the source code
+### Comments in the source code
 
 Allowing for comments in the code is also a trivial change away.
 We just need the tokenizer to recognise the comment lamps `⍝` and ignore the rest of the line.
@@ -240,7 +240,7 @@ class Token:
 This will be properly tested when we implement the functionality to have `rgspl.py` run code from a source file.
 
 
-## Move things to their own files
+### Move things to their own files
 
 As our interpreter grows and we add support for more APL functions and operators, our source code will obviously increase.
 To help keep everything more manageable I decided to move functions to their own `functions.py` file.
@@ -301,7 +301,7 @@ You can see above that, much like functions take named arguments `alpha` and `om
 I think we already dealt with pretty much every minor change.
 Now we can handle the implementation of an appropriate array model.
 
-# Array model
+## Array model
 
 By "array model" I mean the way the interpreter will deal with arrays, the way they are stored in memory, the way they are created and manipulated by the built-in functions, etc.
 
@@ -348,7 +348,7 @@ To be introduced next, characters are also scalars.
 But anything can be made a scalar and used inside other arrays. The monadic _Enclose_ primitive (`⊂`) is used to turn its right argument into a scalar and we will see shortly how it works.
 
 
-## Everything is an array
+### Everything is an array
 
 Everything has a shape (even if the shape is empty) and everything is an array in APL, so we can start off our implementation with a generic class that will hold all APL arrays, which I named in a not-so-imaginative-way as `APLArray`:
 
@@ -381,7 +381,7 @@ If `array.shape` is a non-empty list, then `array.data` is a list with `math.pro
 E.g., if `array.shape` is `[2, 3, 4]` then `array.data` is a list with $2 \times 3 \times 4 = 24$ items.
 
 
-## Instancing arrays
+### Instancing arrays
 
 Now that we know how to represent arrays we need to create them.
 The first thing I did for clarity was to rename the AST node `A` to `V`, as things we type are actually not more than vectors, because we can't type matrices or any other higher-rank arrays directly:
@@ -420,7 +420,7 @@ And that is it!
 Now we just have to make sure that our functions know how to handle `APLArray` instances as arguments.
 
 
-# Updating scalar functions
+## Updating scalar functions
 
 The first class of functions we are going to update are the scalar functions.
 For those, we had two decorators named `monadic_permeate` and `dyadic_permeate` that automatically "mapped" our function over the argument(s).
@@ -657,7 +657,7 @@ If you look closely enough, you will see that the `neq` and `without` functions 
 The non-scalar `_unique_mask` and `_without` will be explained now.
 
 
-# New functions
+## New functions
 
 Besides reworking scalar functions, we also have to retouch the non-scalar functions that were already included.
 In this blog post I also introduce a couple of new functions.
@@ -671,7 +671,7 @@ As of now, these are the functions that RGSPL has support for:
 Only `⍳` was already available, but I rewrote it to make it clearer and compliant with the new array model.
 In the process of such rewrite I also created an auxiliary function `_encode` which will come in handy later on, when we implement `⊤`.
 
-## Left and right tacks
+### Left and right tacks
 
 `⊢` and `⊣` are very uninteresting, implementation-wise:
 
@@ -683,7 +683,7 @@ def left_tack(*, alpha=None, omega):
     return alpha if alpha is not None else omega
 ```
 
-## Enclose
+### Enclose
 
 Monadic `⊂` isn't particularly challenging, but it was an interesting function to add because it allows us to test our array model. Monadic `⊂` is _Enclose_, a function that takes any array and turns it into a scalar, unless said array is a simple scalar.
 
@@ -700,7 +700,7 @@ def lshoe(*, alpha=None, omega):
         raise NotImplementedError("Partitioned Enclose not implemented yet.")
 ```
 
-## Index Generator
+### Index Generator
 
 The new implementation for monadic `⍳` has about the same size as the old one, except now most of the code is to check that the argument satisfies all the restrictions it should.
 
@@ -762,7 +762,7 @@ def iota(*, alpha=None, omega):
         raise NotImplementedError("Index Of not implemented yet.")
 ```
 
-## Without
+### Without
 
 Without is another function that is very simple to implement.
 One only has to be careful to handle correctly the distinction between scalar and non-scalar arguments.
@@ -786,7 +786,7 @@ def _without(*, alpha=None, omega):
     return APLArray([len(newdata)], newdata)
 ```
 
-## Unique Mask
+### Unique Mask
 
 Implementing Unique Mask is an interesting exercise because it introduces the notion of major cells.
 A major cell of an array is a sub array with rank one lower than the original array.
@@ -845,7 +845,7 @@ def neq(*, alpha=None, omega):
 ```
 
 
-# Dyadic operators
+## Dyadic operators
 
 Dyadic operators are just what their name suggests... Operators that expect *two* operands.
 In Dyalog APL the operands can be arrays or functions (in general) but as of now only functions can be used as operands.
@@ -978,7 +978,7 @@ class Interpreter(NodeVisitor):
 ```
 
 
-## Operator chain binding
+### Operator chain binding
 
 Now that we have dyadic operators in our APL implementation, it is important to disambiguate the expression `f∘g∘h`.
 Is this `f∘(g∘h)` or `(f∘g)∘h`?
@@ -1071,7 +1071,7 @@ class Parser:
 And that is it! Congratulations on adding support for dyadic operators to your APL interpreter!
 
 
-# New monadic operator
+## New monadic operator
 
 Also a new addition for today's post, while not much in line with what was already done, is the monadic operator Each `¨` (*diaeresis* is the name of the symbol).
 `f¨` is similar to a function that maps `f` along its argument(s). For example, `⍳¨ 1 2 3` is the same as `(⍳ 1)(⍳ 2)(⍳ 3)`.
@@ -1112,7 +1112,7 @@ We just start by computing the shape of the result, and then use that knowledge 
 After the loop, we just have to check if the final result is supposed to be a scalar or not, and we return everything.
 
 
-# Basic testing
+## Basic testing
 
 Another thing that is useful and that maybe I should have added earlier, is automated testing.
 It is nice to have some automated tests for our interpreter (and maybe I should also add tests for the tokenizer/parser?) to help ensure we are not breaking things as we move them around.
@@ -1149,7 +1149,7 @@ To start off, notice the distinction between the `test` and `raw_data_test` func
 `raw_data_test` is for when I want to check if a piece of code gives a specific Python object as result, for example as in
 
 ```py
-# Test simple scalars on their own.
+## Test simple scalars on their own.
 raw_data_test("5", S(5))
 raw_data_test("¯2", S(-2))
 raw_data_test("123456", S(123456))
@@ -1169,7 +1169,7 @@ This is preferable for more involved tests because writing out the explicit `APL
 Here are the *only* `test` tests I included already:
 
 ```py
-# Test nesting of scalars
+## Test nesting of scalars
 test("⊂1", "1")
 test("⊂⊂1", "1")
 test("⊂⊂⊂¯3.5", "¯3.5")
@@ -1180,7 +1180,7 @@ This is an exercise for both you and me:
 add more extensive testing to cover what the interpreter is supposed to be able to do already.
 
 
-# Exercises
+## Exercises
 
 Solving exercises is a great way to help consolidate knowledge, so I do suggest you finish the ones I list here.
 Do not worry, these aren't just for you.
@@ -1200,7 +1200,7 @@ So without further ado, here's what you could be doing to make sure you understa
 Of course, you could also have a swing at whatever APL feature is missing right now (which is most of them, really) and/or at other things that I have been putting some thought to already, listed in the next section.
 
 
-# Where we are heading to
+## Where we are heading to
 
 In future posts here are some of the things that will be covered:
 
@@ -1223,7 +1223,7 @@ See you next time ;)
 P.S.: have any questions or suggestions? Be sure to leave them in the comment section below!
 
 
-# The series
+## The series
 
 This is a series that I am working slowly but steadily on.
 Feel free to ping me in the comments or over email

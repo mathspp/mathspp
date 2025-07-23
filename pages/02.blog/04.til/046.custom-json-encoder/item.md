@@ -4,7 +4,7 @@ Today I learned how to do custom JSON encoding in Python with the module `json`.
 
 ![A solid background with an arrow going from the Python logo to a JSON logo.](thumbnail.webp)
 
-# How to encode Python objects as JSON
+## How to encode Python objects as JSON
 
 In Python, we use the module `json` whenever we need to work with JSON data.
 This module makes it very easy to do so,
@@ -59,7 +59,7 @@ TypeError: Object of type complex is not JSON serializable
 So, what can the module `json` handle?
 
 
-# Default JSON conversion of Python objects
+## Default JSON conversion of Python objects
 
 According to [the `json` docs][json],
 these are the types supported by default:
@@ -78,7 +78,7 @@ If you want to convert anything that is not on the left column of that table,
 you need to implement your own custom JSON encoder.
 
 
-# Custom JSON encoding of Python objects
+## Custom JSON encoding of Python objects
 
 If you want to do custom JSON encoding of Python objects that are not included in the table above,
 you will need to subclass `json.JSONEncoder` and you will need to override the method `.default`.

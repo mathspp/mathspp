@@ -11,7 +11,7 @@ digits from the MNIST dataset.
 ![A nice image with blue and purple lights.](thumbnail.png "Original photo by JJ Ying on Unsplash.")
 
 
-# Purpose of this article
+## Purpose of this article
 
 The purpose of this article is to go over the code
 we have written so far and, in particular, the code
@@ -24,7 +24,7 @@ to some subtleties I overlooked in the previous articles.
 !!! This article will build upon [v1.1][gh-nnfwp-v1_1] of that code.
 
 
-# Interpreting outputs as probabilities
+## Interpreting outputs as probabilities
 
 In the [article where we classified handwritten digits][part4]
 there was a point in which we had to create the target
@@ -120,7 +120,7 @@ script and replace the activation function you are using in your final
 layer:
 
 ```py
-# ...
+## ...
 
 if __name__ == "__main__":
     layers = [
@@ -133,7 +133,7 @@ if __name__ == "__main__":
 ```
 
 
-# Appropriate loss function
+## Appropriate loss function
 
 The loss function is the function that we use to measure
 how well the network behaves: we give some input to the network
@@ -151,7 +151,7 @@ In particular, depending on the type of task we are performing,
 some loss functions are more suitable than others.
 
 
-## Mean squared error
+### Mean squared error
 
 Recognising handwritten digits is a classification task,
 which means that given some input, we want to find out the class
@@ -220,7 +220,7 @@ activation function that punishes classification mistakes
 in a harsher way.
 
 
-## Alternative loss function
+### Alternative loss function
 
 If you know of a loss function that you would prefer to
 use at this point, go right ahead and implement it.
@@ -311,7 +311,7 @@ def train(net, train_data):
 ```
 
 
-# Incorporating the changes
+## Incorporating the changes
 
 Now that we have the tools to fix these inconsistencies,
 we can experiment with them.
@@ -380,7 +380,7 @@ where we will essentially try to compress a neural network
 into a smaller network.
 
 
-# The series
+## The series
 
 These are all the articles in this series:
 

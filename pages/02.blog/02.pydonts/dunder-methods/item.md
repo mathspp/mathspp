@@ -9,7 +9,7 @@ to help you understand what they are and what they are for.
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 Python is a language that has a rich set of built-in functions and operators that work really well with the built-in types.
 For example, the operator `+` works on numbers, as addition, but it also works on strings, lists, and tuples, as concatenation:
@@ -43,7 +43,7 @@ In this Pydon't, you will
 <!--^-->
 
 
-# What are dunder methods?
+## What are dunder methods?
 
 In Python, **dunder methods are methods that allow instances of a class to interact with the built-in functions and operators** of the language.
 The word “dunder” comes from “double underscore”, because the names of dunder methods start and end with two underscores,
@@ -58,7 +58,7 @@ They are just called implicitly by the language, at specific times that are well
 and that depend on the dunder method in question.
 
 
-## The dunder method everyone knows
+### The dunder method everyone knows
 
 If you have defined classes in Python, you are bound to have crossed paths with a dunder method: `__init__`.
 **The dunder method `__init__` is responsible for _initialising_ your instance of the class**,
@@ -89,7 +89,7 @@ and yet, you did not call the method `__init__` directly!
 The dunder method `__init__` was called implicitly by the language when you created your instance of a square.
 
 
-## Why do dunder methods start and end with two underscores?
+### Why do dunder methods start and end with two underscores?
 
 The two underscores in the beginning and end of the name of a dunder method do not have any special significance.
 In other words, the fact that the method name starts and ends with two underscores, in and of itself, does nothing special.
@@ -124,7 +124,7 @@ All in all, dunder methods are just like any other method you have implemented,
 with the small exception that dunder methods can be called implicitly by the language.
 
 
-## Operator overloading in Python and dunder methods
+### Operator overloading in Python and dunder methods
 
 All Python operators, like `+`, `==`, and `in`,
 rely on dunder methods to implement their behaviour.
@@ -156,7 +156,7 @@ So, if you were to create your own type of container,
 you could implement the dunder method `__contains__` to make sure that your containers could be on the right-hand side of an expression with the operator `in`.
 
 
-# List of dunder methods and their interactions
+## List of dunder methods and their interactions
 
 As we have seen, dunder methods are (typically) called implicitly by the language...
 But when?
@@ -253,7 +253,7 @@ nor does it imply a level of difficulty in understanding the methods.
 [^3]: this dunder method also has a “in-place” version, with the same name but prefixed by an `"i"`, and that is called for augmented assignment with the given operator. See `__iadd__` above.
 
 
-# Exploring a dunder method
+## Exploring a dunder method
 
 Whenever I learn about a new dunder method,
 the first thing I do is to play around with it.
@@ -268,7 +268,7 @@ I will show you how I follow these steps with a practical example,
 the dunder method `__missing__`.
 
 
-## What is the dunder method for?
+### What is the dunder method for?
 
 What is the dunder method `__missing__` for?
 The [documentation for the dunder method `__missing__` reads](https://docs.python.org/3/reference/datamodel.html#object.__missing__):
@@ -279,7 +279,7 @@ In other words, the dunder method `__missing__` is only relevant for subclasses 
 and it is called whenever we cannot find a given key in the dictionary.
 
 
-## How to trigger the dunder method?
+### How to trigger the dunder method?
 
 In what situations, that I can recreate, does the dunder method `__missing__` get called?
 
@@ -318,7 +318,7 @@ my_dict[1]  # Prints: Missing key = 1
 ```
 
 
-## Using the dunder method in a useful situation
+### Using the dunder method in a useful situation
 
 Now that we have a clearer picture of when `__missing__` comes into play,
 we can use it for something useful.
@@ -382,7 +382,7 @@ print(olympic_medals["me"])  # 0
 ```
 
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this Pydon't, for you, on a silver platter:
 

@@ -3,8 +3,6 @@ This article shows how I have used regex in real life for all sorts of tasks.
 ===
 
 
-# Regex in real life
-
 I love keeping track of real-life examples of the usage of certain features and regex is one of those things, so in this article you will find real-life examples of how/where I used regular expressions to do all sorts of tasks.
 
 As I use regex in new and interesting ways, I will update this article to include those examples.

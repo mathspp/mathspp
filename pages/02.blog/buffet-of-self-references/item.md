@@ -12,7 +12,7 @@ as we go over some interesting self-referential concepts and objects.
 ![](thumbnail.webp "")
 
 
-# Introduction
+## Introduction
 
 This article was brought to life by all of the readers that
 [sponsored my work][sponsor].
@@ -26,7 +26,7 @@ However, I won't go into too much detail about the things
 I present here.
 
 
-# The impossible collection
+## The impossible collection
 
 To kick things off, I'd like to tell you a true story about
 an uncle of mine.
@@ -71,9 +71,9 @@ about all the funny things that happen
 when objects reference themselves.
 
 
-# Brain-twisting paradoxes
+## Brain-twisting paradoxes
 
-## Liar's paradox
+### Liar's paradox
 
 Along the lines of the funny things that happen when self-reference
 comes into play, let me share a very entertaining paradox with you:
@@ -104,7 +104,7 @@ On that Wikipedia page you can find some ways to solve the paradox,
 put forward by different people.
 
 
-## Russel's paradox
+### Russel's paradox
 
 Another interesting paradox, [Russel's paradox][russels-paradox],
 shook mathematics for some time.
@@ -131,7 +131,7 @@ be contained in itself.
 Hence, a paradox!
 
 
-# Recursive definitions
+## Recursive definitions
 
 Recursion is a beautiful thing, in my opinion.
 There is a certain elegance to being able to define something in terms
@@ -148,7 +148,7 @@ $$
 $$
 
 
-## Sierpiński triangle
+### Sierpiński triangle
 
 However, if we do this right, we can define some really neat
 things recursively.
@@ -176,7 +176,7 @@ where zooming in on it allows you to see the original object
 again.
 
 
-## Mandelbrot set
+### Mandelbrot set
 
 The Mandelbrot set, about which [I wrote a couple of times][blog-fractals], also has this property, even though
 the definition of the set itself is not recursive.
@@ -187,7 +187,7 @@ from time to time, the original structure reveals itself:
 ![](_mandelbrot_zoom.webp "By 'Simpsons contributor', via Wikimedia Commons.")
 
 
-# Quines
+## Quines
 
 A [quine] is a computer program that takes no input and produces
 its own source code as output.

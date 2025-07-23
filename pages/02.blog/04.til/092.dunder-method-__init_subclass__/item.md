@@ -3,7 +3,7 @@ Today I learned how to use the dunder method `__init_subclass__` to be notified 
 ===
 
 
-# `__init_subclass__`
+## `__init_subclass__`
 
 The [dunder method](/blog/pydonts/dunder-methods) `__init_subclass__` is a class method that Python runs when a subclass of that class is instantiated.
 The snippet below sums it all:
@@ -39,11 +39,11 @@ class Parent:
 class A(Parent, kwarg1=73, kwarg2=True):
     pass
 
-# Output: Subclass A created with {'kwarg1': 73, 'kwarg2': True}
+## Output: Subclass A created with {'kwarg1': 73, 'kwarg2': True}
 ```
 
 
-## Metaprogramming with `__init_subclass__`
+### Metaprogramming with `__init_subclass__`
 
 The point of the dunder method `__init_subclass__` is that a parent class can modify its child classes when they are being created, thus enabling metaprogramming.
 For example, I needed to use `__init_subclass__` in [Textual](http://github.com/textualize/textual) to make sure that all subclasses of a particular class, named `Widget`, had a name that starts with an upper case letter or with an underscore `_`.

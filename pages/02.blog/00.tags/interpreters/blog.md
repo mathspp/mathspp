@@ -29,7 +29,7 @@ title: "Interpreters blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">16</th>
-            <th style="text-align: center;">35,302</th>
+            <th style="text-align: center;">35,212</th>
             <th style="text-align: center;">5,986</th>
         </tr>
     </thead>

@@ -3,7 +3,7 @@ Today I learned how to use the Polars function `pl.date_range` to create date se
 ===
 
 
-# Date sequences in Polars
+## Date sequences in Polars
 
 Polars provides a function `polars.date_range` that is able to produce date sequences with calendar-aware intervals.
 For example, I'm writing this article on the 10th of December.

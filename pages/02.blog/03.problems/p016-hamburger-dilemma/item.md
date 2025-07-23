@@ -17,12 +17,12 @@ How can I be sure that for my dinner I will only have half of a regular burger a
 (As sad as it might be, this is a true story...)
 
 
-# Problem statement
+## Problem statement
 
 Given 4 perfectly identical, indistinguishable hamburgers (2 regular burgers and 2 AS burgers), how can I come up with a way of serving them, such that I am able to guarantee that on my plate I have exactly half of a regular burger and exactly half of an AS burger?
 
 
-# Solution
+## Solution
 
 Slice each hamburger in four. Serve yourself a quarter of each hamburger.
 Now you have half of a regular burger on your plate and half of an AS burger.

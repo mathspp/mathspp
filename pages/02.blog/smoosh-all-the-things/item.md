@@ -9,8 +9,7 @@ If you prefer, you can watch the recording of my presentation:
 
 Here is the written version of this talk:
 
-
-# Quiz time
+## Quiz time
 
 Can you please tell me the result of the expression that follows?
 

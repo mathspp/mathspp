@@ -6,7 +6,7 @@ This is that type of problem that can be phrased as a riddle that you can tell e
 Of course, some people will try to think it through while other people will just ask you for the solution.
 
 
-# Problem statement
+## Problem statement
 
 Suppose you are in a circular train, i.e. a train where the first carriage is connected to the last carriage.
 Suppose, furthermore, that all carriages are identical and that you have no way to tell them apart.
@@ -27,7 +27,7 @@ To sum up, the main characteristics of this riddle are:
 The solution must be purely logical and not rely on loopholes, items you "happen to have with you", or other shenanigans.
 
 
-# Solution
+## Solution
 
 You start off in some carriage that I will call $c_0$, pick a direction - that I will call "forward" - and you make sure the light bulb is on.
 The point of calling that carriage $c_0$ is to say that the next carriage is $c_1$, the one after is $c_2$, and so on up until the last carriage.
@@ -42,7 +42,7 @@ This will create a sequence $k_1, k_2, \cdots$ of carriages that were turned on 
 ![An animation illustrating the process described above.](_train_solution.gif "Animation of the solving process for 4 carriages.")
 
 
-# Bonus question
+## Bonus question
 
 Can you find a solution that is more efficient?
 

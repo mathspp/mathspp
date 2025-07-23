@@ -14,9 +14,9 @@ output.write(now)
 </py-script>
 
 
-# PyScript
+## PyScript
 
-## Run Python in Your HTML
+### Run Python in Your HTML
 
 Today I learned about [PyScript], a tool that lets you run Python from within your HTML!
 

@@ -20,7 +20,7 @@ your code, how to name your variables, etc., the [Zen of Python] provides you
 with the guidelines that you should follow when thinking about (Python) code
 and when designing a program.
 
-# Zen of Python
+## Zen of Python
 
 You can read the [Zen of Python] by executing `import this` in your REPL, which
 should print the following text:
@@ -77,7 +77,7 @@ Writing code is the same: chances are, the first thing you write can be greatly
 improved upon.
 
 
-# What does the Zen of Python mean?
+## What does the Zen of Python mean?
 
 Sometimes, saying what something _is not_ is as important,
 or even more important,
@@ -95,7 +95,7 @@ It just means we see things differently.
 If you would like to engage in thoughtful discussion about the Zen of Python, or about any particular guideline, just scroll down to the bottom of the page and leave a comment there!
 
 
-## Beautiful is better than ugly
+### Beautiful is better than ugly
 
 [Adapted from my Twitter thread.][tt-beautiful]
 
@@ -133,7 +133,7 @@ and the more equipped you will be to understand what's elegant code.
 Ultimately, your sense for elegant code or your ability to judge your code by its aesthetics develops when you write code but, most importantly, when you read code.
 
 
-## Explicit is better than implicit
+### Explicit is better than implicit
 
 The Zen of Python 🐍 says
 “Explicit is better than implicit.”
@@ -145,11 +145,11 @@ For example, suppose you want to sum a list of numbers.
 Which of the two snippets below do you prefer?
 
 ```py
-# Using `sum`.
+## Using `sum`.
 my_list = [...]
 list_sum = sum(my_list)
 
-# Using a `for` loop.
+## Using a `for` loop.
 my_list = [...]
 list_sum = 0
 for number in my_list:
@@ -178,7 +178,7 @@ Even if others around you don't know it...
 In fact, if others don't know it, _now_ is probably a good time to learn about it!
 
 
-# Conclusion
+## Conclusion
 
 This Pydon't was more of a “meta” Pydon't, with subjective advice on how to code.
 This might seem useless to you at first, but the more you dwell on it the more
@@ -194,7 +194,7 @@ If you liked this Pydon't be sure to leave a reaction below and share this with 
 Also, [don't forget to subscribe to the newsletter][subscribe] so you don't miss
 a single Pydon't!
 
-# References
+## References
 
  - PEP 20 -- The Zen of Python, [https://www.python.org/dev/peps/pep-0020/](https://www.python.org/dev/peps/pep-0020/)
  - "The Way of Python" mailing thread, [https://groups.google.com/g/comp.lang.python/c/B_VxeTBClM0/m/L8W9KlsiriUJ](https://groups.google.com/g/comp.lang.python/c/B_VxeTBClM0/m/L8W9KlsiriUJ)

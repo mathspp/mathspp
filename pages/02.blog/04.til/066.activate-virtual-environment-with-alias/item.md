@@ -2,7 +2,7 @@ Today I learned how to create an alias to activate my Python virtual environment
 
 ===
 
-# Shell aliases
+## Shell aliases
 
 All[^1] shells allow you to create aliases, which essentially act as shortcuts for commands you type often.
 How you create an alias differs from shell to shell, but it is common to have a configuration file in which you type something like:
@@ -12,7 +12,7 @@ alias command="long or annoying command you want to create the alias for"
 ```
 
 
-# Activate a virtual environment with an alias
+## Activate a virtual environment with an alias
 
 I usually create Python virtual environments with the command `python -m venv .venv`, which means I type the command `source .venv/bin/activate` to activate the virtual environment many times.
 

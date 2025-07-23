@@ -14,7 +14,7 @@ In this Pydon't you will learn the Python string methods `translate` and `maketr
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 The strings methods `str.translate` and `str.maketrans` might be some of the
 lesser known string methods in Python.
@@ -38,7 +38,7 @@ In this Pydon't, you will:
 <!--^-->
 
 
-# `str.translate`
+## `str.translate`
 
 The `str.translate` method is much unknown, but not because it is difficult to understand.
 It's just underappreciated,
@@ -71,7 +71,7 @@ In case you don't know it, here is what `str.replace` looks like:
 ```
 
 
-## Character code points
+### Character code points
 
 Computers work with zeroes and ones, binary –
 that's something we've all heard someone say at some point in our lives.
@@ -129,7 +129,7 @@ integer corresponding to its Unicode code point.
 ! in the case of Python.
 
 
-## Translation dictionaries
+### Translation dictionaries
 
 Now that we know about the code points of characters,
 we can learn how to use the method `str.translate`,
@@ -190,7 +190,7 @@ Hence, the translation works as follows:
  - characters that are mapped to `None` are removed.
 
 
-# Non-equivalence to `str.replace`
+## Non-equivalence to `str.replace`
 
 Some of you might be thinking that I'm just being silly,
 making a huge fuss about `str.translate`,
@@ -278,7 +278,7 @@ to making a series of successive calls to `str.replace`,
 because `str.replace` might jumble the successive transformations.
 
 
-# Generic translation tables
+## Generic translation tables
 
 The method `str.translate` accepts a “translation table”,
 but that table does _not_ need to be a dictionary.
@@ -344,7 +344,7 @@ I don't have to type all of the alphabet again:
 ```
 
 
-# `str.maketrans`
+## `str.maketrans`
 
 Having seen the generic form of translation tables,
 it is time to introduce `str.translate`'s best friend,
@@ -358,7 +358,7 @@ that can be used with `str.translate`.
 so let's break them down for you.
 
 
-## Single argument
+### Single argument
 
 The version of `str.maketrans` that only accepts one argument has
 the purpose of making it simpler for us, users,
@@ -402,7 +402,7 @@ For this to work, we need to use `str.maketrans`:
 ```
 
 
-## Two arguments
+### Two arguments
 
 If you look at the example I just showed,
 we see that we did a very specific type of translation:
@@ -441,7 +441,7 @@ a colour and made sure all the letters were upper case.
 done that with the method `str.upper`.)
 
 
-## The third argument
+### The third argument
 
 Finally, the third argument to `str.maketrans` is simply
 a string of all the characters that should be mapped to `None` or,
@@ -457,7 +457,7 @@ Here is a little example:
 ```
 
 
-# Examples in code
+## Examples in code
 
 Now that you have been introduce to the string methods `str.translate`
 and `str.maketrans`,
@@ -469,7 +469,7 @@ These code examples should help you understand how the two
 methods are used in the real world.
 
 
-## Caesar cipher
+### Caesar cipher
 
 [I wrote on Twitter][twitter-caesar-challenge],
 asking people for their most Pythonic implementation of the Caesar cipher.
@@ -528,7 +528,7 @@ exactly the Caesar cipher that I defined in the beginning:
 ```
 
 
-## Sanitising file names
+### Sanitising file names
 
 The Python Standard Library provides a module to work with ZIP archives,
 and that module is called [`zipfile`][zipfile].
@@ -544,7 +544,7 @@ It's a piece of code using `str.maketrans` and `str.translate`!
 Here it is:
 
 ```py
-# In Lib/zipfile.py in Python 3.9.2
+## In Lib/zipfile.py in Python 3.9.2
 
 class ZipFile:
     # ...
@@ -583,7 +583,7 @@ This shows a straightforward usage of both `str.maketrans`
 and `str.translate`.
 
 
-## Whitespace munging
+### Whitespace munging
 
 (I didn't know, so I Googled it: “to munge” means to manipulate data.)
 
@@ -598,7 +598,7 @@ we replace all sorts of funky whitespace characters with a simple blank space.
 Here is how this is done:
 
 ```py
-# In Lib/textwrap.py from Python 3.9.2
+## In Lib/textwrap.py from Python 3.9.2
 
 _whitespace = '\t\n\x0b\x0c\r '
 
@@ -632,7 +632,7 @@ so that it uses `str.maketrans` instead?
 It should be similar to the code from the previous example.
 
 
-## Default replacement
+### Default replacement
 
 If we peek at the source code for [IDLE], the IDE that ships with Python,
 we can also find a usage of the method `str.translate`,
@@ -688,7 +688,7 @@ by default.
 Now that the idea was introduced, here is the code:
 
 ```py
-# In Lib/idlelib/pyparse.py from Python 3.9.2
+## In Lib/idlelib/pyparse.py from Python 3.9.2
 
 class ParseMap(dict):
     # [comments omitted for brevity]
@@ -744,7 +744,7 @@ xxxxx)
 ```
 
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this Pydon't, for you, on a silver platter:
 

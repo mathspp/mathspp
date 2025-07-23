@@ -100,7 +100,7 @@ In this problem you have to devise a strategy to beat the computer in a "guess t
 ![A question mark in a neon light](thumbnail.jpg "Photo by Emily Morter on Unsplash")
 
 
-# Problem statement
+## Problem statement
 
 I want you to play a little game with the computer.
 The computer is going to think of a polynomial with non-negative, integer coefficients.
@@ -156,7 +156,7 @@ If you need any clarification whatsoever, feel free to ask in the comment sectio
 This problem was brought to my attention by [MathGurl].
 
 
-# Solution
+## Solution
 
 The best strategy works for *any* polynomial in just $2$ steps.
 
@@ -197,7 +197,7 @@ I'll walk you through a couple of examples to make it clear for you.
 If you've understood by now, feel free to skip to the bottom of the blog post to show your appreciation for this post,
 either by leaving an emoji reaction or by commenting the post!
 
-## Worked examples
+### Worked examples
 
 **Example 1**: suppose $p(n) = x^3$.
 

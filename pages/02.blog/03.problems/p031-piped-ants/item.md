@@ -11,7 +11,7 @@ How long will it take them to escape?
 ![](thumbnail.png "Photo by Lorenz Lippert on Unsplash.")
 
 
-# Problem statement
+## Problem statement
 
 Suppose you have a very thin pipe.
 The pipe is the exact width of an ant, so that ants
@@ -30,7 +30,7 @@ What is the shortest amount of time that ensures all ants have left the pipe?
 !!! Give it some thought!
 
 
-# Solution
+## Solution
 
 This problem may look quite confusing if you try to imagine all the interactions/bumps
 there might be between an arbitrary number of ants inside the pipe.

@@ -13,7 +13,7 @@ Today I learned that files can _also_ be unpacked in Python.
 ![Code snippet showing how to unpack strings.](thumbnail.webp)
 
 
-# File unpacking
+## File unpacking
 
 [After learning that strings can be unpacked in Python][til-005],
 I shared the short article on Twitter.

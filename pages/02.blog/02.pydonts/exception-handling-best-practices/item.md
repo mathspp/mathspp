@@ -8,7 +8,7 @@ Learn how to use exception handling in Python effectively with the `try` block a
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 
 
@@ -85,7 +85,7 @@ Importance of exception handling in writing robust code.
 
 
 
-# Bare except clause
+## Bare except clause
 
 except statement
 The except is used to indicate what error(s) you can handle and how to handle them.
@@ -108,7 +108,7 @@ Now, if the user tried pressing Ctrl + C to stop the program while we were waiti
 
 
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this Pydon't, for you, on a silver platter:
 

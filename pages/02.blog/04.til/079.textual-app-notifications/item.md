@@ -3,7 +3,7 @@ Today I learned how to create app notifications in Textual.
 ===
 
 
-# Textual app notifications
+## Textual app notifications
 
 ![Textual application that shows a demo of Textual app notifications with different levels of severity.](_animation.webp "Textual app notifications.")
 

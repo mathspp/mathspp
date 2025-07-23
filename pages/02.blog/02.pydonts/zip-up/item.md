@@ -17,7 +17,7 @@ have you considered using `zip`?
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 One of the things I appreciate most about Python, when compared to other programming
 languages, is its `for` loops.
@@ -32,7 +32,7 @@ In this article you will
  - see some nice usage examples of `zip`.
 
 
-# How `zip` works
+## How `zip` works
 
 In a simple `for` loop, you generally have an iterator `it` and you just write
 something like
@@ -141,7 +141,7 @@ and that can be read as
  > “For each `first` and `last` [name] in the lists `firsts` and `lasts`...”
 
 
-# Zip is lazy
+## Zip is lazy
 
 One thing to keep in mind is that `zip` doesn't create the tuples immediately.
 `zip` is lazy, and that means it will only compute the tuples when you ask
@@ -170,7 +170,7 @@ TypeError: object of type 'zip' has no len()
 ```
 
 
-# Three is a crowd
+## Three is a crowd
 
 We have seen `zip` with two arguments, but `zip` can take an arbitrary
 number of iterators and will produce a tuple of the appropriate size:
@@ -195,7 +195,7 @@ number of iterators and will produce a tuple of the appropriate size:
 ('Sir', 'Charles', 'G.', 'Evans')
 ```
 
-# Mismatched lengths
+## Mismatched lengths
 
 `zip` will _always_ return a tuple with as many elements as the arguments
 it received, so what happens if one of the iterators is shorter than the others?
@@ -247,7 +247,7 @@ then it is a good idea to always set `strict=True`, because that will help you
 catch bugs in your code.
 
 
-# Create a dictionary with `zip`
+## Create a dictionary with `zip`
 
 You can create dictionaries in Python by feeding key-value pairs
 to the `dict` function, which means `zip` is a prime way of
@@ -261,12 +261,12 @@ and all the values in another iterator:
 {'Anna': 'Smith', 'Bob': 'Doe', 'Charles': 'Evans'}
 ```
 
-# Examples in code
+## Examples in code
 
 Now you will see some usages of `zip` in actual Python code.
 
 
-## Snake game
+### Snake game
 
 A friend of mine is learning Python and he started creating a replica
 of the game of Snake.
@@ -282,11 +282,11 @@ and the position the image should go to.
 Here are the loops he wrote before and after knowing about `zip`.
 
 ```py
-# Before:
+## Before:
 for i in range(len(lvlpictures)):
     self.surface.blit(lvlpictures[i], (self.buttons[i][0]+2,self.buttons[i][1]+2))
 
-# Then he learned about `zip`:
+## Then he learned about `zip`:
 for pic, btn in zip(lvlpictures, self.buttons):
     self.surface.blit(pic, (btn[0] + 2, btn[1] + 2))
 ```
@@ -298,7 +298,7 @@ keyword argument, because he expects `lvlpictures` and `self.buttons`
 to have the same length.
 
 
-## Matching paths
+### Matching paths
 
 If you are not aware of it, then you might be interested in knowing
 that Python has a module named [`pathlib`][pathlib] that provides
@@ -385,7 +385,7 @@ because it may happen that the path and the pattern have a different
 number of parts, and that is perfectly fine.
 
 
-## Writing a CSV file
+### Writing a CSV file
 
 The Python Standard Library comes with a module, [`csv`][csv], to read and write CSV files.
 Among other things,
@@ -438,7 +438,7 @@ Therefore, the `writeheader` function just needs to create this dictionary
 and can then defer the actual _writing_ to the `writerow` function.
 
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this article, for you, on a silver platter:
 

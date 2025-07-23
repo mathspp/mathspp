@@ -1,6 +1,6 @@
 {
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/building-a-python-compiler-and-interpreter-04-arithmetic": {
-    "timestamp": 1739482926.9426806,
+    "timestamp": 1753281293.621757,
     "tags": [
       "bpci",
       "compilers",
@@ -12,11 +12,11 @@
       "articles": 1,
       "code_snippets": 47,
       "loc": 743,
-      "words": 2498
+      "words": 2488
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/smoosh-all-the-things": {
-    "timestamp": 1681290754.4233303,
+    "timestamp": 1753281849.4824224,
     "tags": [
       "programming",
       "python"
@@ -29,7 +29,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/longest-unique-substring": {
-    "timestamp": 1711155871.800724,
+    "timestamp": 1753281543.9716609,
     "tags": [
       "algorithms",
       "programming",
@@ -39,11 +39,11 @@
       "articles": 1,
       "code_snippets": 11,
       "loc": 133,
-      "words": 1370
+      "words": 1366
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/running-python-inside-chatgpt": {
-    "timestamp": 1739273859.0390482,
+    "timestamp": 1753281783.1069584,
     "tags": [
       "llm",
       "machine learning",
@@ -87,7 +87,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/consecutive-integers-are-coprime": {
-    "timestamp": 1723486195.3748305,
+    "timestamp": 1753281351.501393,
     "tags": [
       "mathematics",
       "number theory",
@@ -101,7 +101,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/case-insensitive-string-class": {
-    "timestamp": 1721829488.4954417,
+    "timestamp": 1753281331.637833,
     "tags": [
       "dunder methods",
       "oop",
@@ -112,11 +112,11 @@
       "articles": 1,
       "code_snippets": 5,
       "loc": 97,
-      "words": 473
+      "words": 469
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/the-most-obscure-hello-world": {
-    "timestamp": 1681290754.4276567,
+    "timestamp": 1753281891.2783086,
     "tags": [
       "programming",
       "python"
@@ -129,7 +129,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/textual-how-to-use-modal-screens": {
-    "timestamp": 1683742250.0988798,
+    "timestamp": 1753281883.0740998,
     "tags": [
       "programming",
       "python",
@@ -143,7 +143,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/elo-rating-system-simulation": {
-    "timestamp": 1681290754.4290054,
+    "timestamp": 1753281430.1319525,
     "tags": [
       "chess",
       "mathematics",
@@ -160,7 +160,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/connecting-python-and-dyalog-apl-with-sockets": {
-    "timestamp": 1681290754.4297872,
+    "timestamp": 1753281346.2563446,
     "tags": [
       "apl",
       "networking",
@@ -192,7 +192,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/building-a-python-compiler-and-interpreter-08-booleans": {
-    "timestamp": 1739482926.93818,
+    "timestamp": 1753281311.8014102,
     "tags": [
       "bpci",
       "compilers",
@@ -204,11 +204,11 @@
       "articles": 1,
       "code_snippets": 24,
       "loc": 356,
-      "words": 1004
+      "words": 994
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/learn-pandas-and-matplotlib-with-pokemon": {
-    "timestamp": 1715352223.3410342,
+    "timestamp": 1753281534.1284232,
     "tags": [
       "data science",
       "matplotlib",
@@ -220,11 +220,11 @@
       "articles": 1,
       "code_snippets": 104,
       "loc": 488,
-      "words": 11287
+      "words": 11280
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/obfuscated-hello-world": {
-    "timestamp": 1681290754.4314466,
+    "timestamp": 1753281680.1666086,
     "tags": [
       "programming",
       "python"
@@ -237,7 +237,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/why-use-enums": {
-    "timestamp": 1700836694.8018603,
+    "timestamp": 1753281943.7137375,
     "tags": [
       "code review",
       "programming",
@@ -247,11 +247,11 @@
       "articles": 1,
       "code_snippets": 2,
       "loc": 27,
-      "words": 433
+      "words": 429
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/hold-my-parentheses": {
-    "timestamp": 1712142655.3976204,
+    "timestamp": 1753281468.363935,
     "tags": [
       "algorithms",
       "apl",
@@ -262,11 +262,11 @@
       "articles": 1,
       "code_snippets": 12,
       "loc": 106,
-      "words": 454
+      "words": 450
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/converting-raw-images-into-jpeg": {
-    "timestamp": 1700727348.8848655,
+    "timestamp": 1753281361.1144385,
     "tags": [
       "programming",
       "python",
@@ -281,7 +281,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/building-a-python-compiler-and-interpreter-03-visitor-pattern": {
-    "timestamp": 1739482926.9242916,
+    "timestamp": 1753281280.4526656,
     "tags": [
       "bpci",
       "compilers",
@@ -293,11 +293,11 @@
       "articles": 1,
       "code_snippets": 30,
       "loc": 394,
-      "words": 2707
+      "words": 2696
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/chatgpt-for-quick-prototyping": {
-    "timestamp": 1739273843.33532,
+    "timestamp": 1753281338.2754085,
     "tags": [
       "llm",
       "productivity"
@@ -310,7 +310,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/look-and-say-sequence": {
-    "timestamp": 1681290754.4343944,
+    "timestamp": 1753281546.5383027,
     "tags": [
       "logic",
       "mathematics",
@@ -326,7 +326,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/what-all-promotions-actually-mean": {
-    "timestamp": 1723655765.4161644,
+    "timestamp": 1753281914.021774,
     "tags": [
       "mathematics",
       "slice of life"
@@ -339,7 +339,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/write-your-thesis-in-latex": {
-    "timestamp": 1710867026.8781364,
+    "timestamp": 1753281953.4490137,
     "tags": [
       "productivity"
     ],
@@ -365,7 +365,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/a-tutorial-is-not-a-long-talk": {
-    "timestamp": 1712324134.784768,
+    "timestamp": 1753281105.0388246,
     "tags": [
       "opinion"
     ],
@@ -373,11 +373,11 @@
       "articles": 1,
       "code_snippets": 0,
       "loc": 0,
-      "words": 371
+      "words": 363
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/your-first-recurrent-neural-network": {
-    "timestamp": 1698750329.9163835,
+    "timestamp": 1753281961.5055544,
     "tags": [
       "machine learning",
       "mathematics",
@@ -392,7 +392,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/animations-from-first-principles-in-5-minutes": {
-    "timestamp": 1694277433.2918377,
+    "timestamp": 1753281167.258664,
     "tags": [
       "geometry",
       "mathematics",
@@ -405,11 +405,11 @@
       "articles": 1,
       "code_snippets": 15,
       "loc": 172,
-      "words": 1681
+      "words": 1673
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/advent-of-code-sonar-sweep-analysis": {
-    "timestamp": 1681290754.4383512,
+    "timestamp": 1753281128.868283,
     "tags": [
       "algorithms",
       "mathematics",
@@ -420,11 +420,11 @@
       "articles": 1,
       "code_snippets": 47,
       "loc": 337,
-      "words": 3281
+      "words": 3278
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/base-conversion-in-python": {
-    "timestamp": 1706208150.7491264,
+    "timestamp": 1753281212.0393417,
     "tags": [
       "binary",
       "mathematics",
@@ -436,11 +436,11 @@
       "articles": 1,
       "code_snippets": 14,
       "loc": 95,
-      "words": 1057
+      "words": 1052
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/how-to-work-with-case-insensitive-strings": {
-    "timestamp": 1681290754.438973,
+    "timestamp": 1753281490.6295846,
     "tags": [
       "dunder methods",
       "programming",
@@ -454,7 +454,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/reverse-engineering-the-chronospatial-computer": {
-    "timestamp": 1736768334.1060224,
+    "timestamp": 1753281773.6627252,
     "tags": [
       "algorithms",
       "mathematics",
@@ -467,11 +467,11 @@
       "articles": 1,
       "code_snippets": 15,
       "loc": 125,
-      "words": 2538
+      "words": 2533
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/building-a-python-compiler-and-interpreter-02-numbers": {
-    "timestamp": 1739482926.9242194,
+    "timestamp": 1753281274.1299326,
     "tags": [
       "bpci",
       "programming",
@@ -481,11 +481,11 @@
       "articles": 1,
       "code_snippets": 31,
       "loc": 326,
-      "words": 1869
+      "words": 1859
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/neural-networks-fundamentals-with-python-network-loss": {
-    "timestamp": 1723486195.3806326,
+    "timestamp": 1753281662.8149166,
     "tags": [
       "machine learning",
       "mathematics",
@@ -502,7 +502,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/single-line-calculator": {
-    "timestamp": 1700304166.1103477,
+    "timestamp": 1753281803.9025607,
     "tags": [
       "programming",
       "python"
@@ -511,11 +511,11 @@
       "articles": 1,
       "code_snippets": 17,
       "loc": 165,
-      "words": 827
+      "words": 824
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/chatroom-server-tutorial": {
-    "timestamp": 1681290754.4404566,
+    "timestamp": 1753281341.3890073,
     "tags": [
       "networking",
       "programming",
@@ -529,7 +529,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/customising-object-creation-with-__new__": {
-    "timestamp": 1721841447.5157733,
+    "timestamp": 1753281378.1613076,
     "tags": [
       "dunder methods",
       "metaprogramming",
@@ -541,7 +541,7 @@
       "articles": 1,
       "code_snippets": 13,
       "loc": 128,
-      "words": 1180
+      "words": 1174
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/kleene-recursion": {
@@ -559,7 +559,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/streaming-data-from-flask-to-htmx-using-server-side-events": {
-    "timestamp": 1683125926.3182235,
+    "timestamp": 1753281866.7786658,
     "tags": [
       "flask",
       "programming",
@@ -574,7 +574,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/sockets-for-dummies": {
-    "timestamp": 1683236431.8109257,
+    "timestamp": 1753281853.602052,
     "tags": [
       "networking",
       "programming",
@@ -588,7 +588,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/building-a-python-compiler-and-interpreter-07-if": {
-    "timestamp": 1739482926.9243143,
+    "timestamp": 1753281307.442327,
     "tags": [
       "bpci",
       "compilers",
@@ -600,11 +600,11 @@
       "articles": 1,
       "code_snippets": 42,
       "loc": 630,
-      "words": 2752
+      "words": 2742
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/counting-passwords-with-automatons": {
-    "timestamp": 1723486195.3751965,
+    "timestamp": 1753281369.900349,
     "tags": [
       "automatons",
       "combinatorics",
@@ -616,11 +616,11 @@
       "articles": 1,
       "code_snippets": 22,
       "loc": 258,
-      "words": 4000
+      "words": 3995
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/n-queens-problem": {
-    "timestamp": 1739899219.1642878,
+    "timestamp": 1753281648.8071349,
     "tags": [
       "algorithms",
       "combinatorics",
@@ -633,7 +633,7 @@
       "articles": 1,
       "code_snippets": 6,
       "loc": 58,
-      "words": 895
+      "words": 891
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/water-buckets": {
@@ -654,7 +654,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/case-insensitive-dictionary": {
-    "timestamp": 1681290754.4456244,
+    "timestamp": 1753281326.5654852,
     "tags": [
       "dunder methods",
       "oop",
@@ -683,7 +683,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/sets-as-dictionaries-with-no-values": {
-    "timestamp": 1715182205.613439,
+    "timestamp": 1753281795.5840309,
     "tags": [
       "dunder methods",
       "programming",
@@ -693,11 +693,11 @@
       "articles": 1,
       "code_snippets": 9,
       "loc": 393,
-      "words": 1328
+      "words": 1321
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/irrational-rationality": {
-    "timestamp": 1723654247.3999026,
+    "timestamp": 1753281510.7000527,
     "tags": [
       "arithmetic",
       "rationals",
@@ -707,7 +707,7 @@
       "articles": 1,
       "code_snippets": 0,
       "loc": 0,
-      "words": 104
+      "words": 101
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/24-game": {
@@ -727,7 +727,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/mandelbrot": {
-    "timestamp": 1723486195.3788984,
+    "timestamp": 1753281567.1792796,
     "tags": [
       "mathematics",
       "programming",
@@ -740,11 +740,11 @@
       "articles": 1,
       "code_snippets": 4,
       "loc": 106,
-      "words": 521
+      "words": 515
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/50-shades-of-sign": {
-    "timestamp": 1699314398.4100182,
+    "timestamp": 1753281065.7836444,
     "tags": [
       "code review",
       "mathematics",
@@ -759,7 +759,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/building-a-python-compiler-and-interpreter": {
-    "timestamp": 1699123140.8076072,
+    "timestamp": 1753281265.2636433,
     "tags": [
       "bpci",
       "compilers",
@@ -771,7 +771,7 @@
       "articles": 1,
       "code_snippets": 59,
       "loc": 624,
-      "words": 5291
+      "words": 5284
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/2020-apl-competition": {
@@ -788,7 +788,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/how-i-prepare-a-technical-talk": {
-    "timestamp": 1727717160.3834038,
+    "timestamp": 1753281473.7189698,
     "tags": [
       "opinion"
     ],
@@ -796,11 +796,11 @@
       "articles": 1,
       "code_snippets": 0,
       "loc": 0,
-      "words": 2084
+      "words": 2077
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/mutability-and-random-shuffle": {
-    "timestamp": 1724779492.901279,
+    "timestamp": 1753281635.6837945,
     "tags": [
       "code review",
       "programming",
@@ -810,11 +810,11 @@
       "articles": 1,
       "code_snippets": 5,
       "loc": 56,
-      "words": 265
+      "words": 261
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/deducing-physics-formulas-with-genetic-algorithms": {
-    "timestamp": 1709296447.7122867,
+    "timestamp": 1753281386.6371946,
     "tags": [
       "algorithms",
       "optimisation",
@@ -826,11 +826,11 @@
       "articles": 1,
       "code_snippets": 29,
       "loc": 355,
-      "words": 2591
+      "words": 2584
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/subsets-of-a-set": {
-    "timestamp": 1723486195.3834226,
+    "timestamp": 1753281981.6737838,
     "tags": [
       "binary",
       "mathematics",
@@ -840,11 +840,11 @@
       "articles": 1,
       "code_snippets": 0,
       "loc": 0,
-      "words": 107
+      "words": 104
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/write-a-python-module-in-rust": {
-    "timestamp": 1683151938.0293067,
+    "timestamp": 1753281951.4293673,
     "tags": [
       "programming",
       "python",
@@ -858,7 +858,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/neural-networks-fundamentals-with-python-subtleties": {
-    "timestamp": 1723486195.381404,
+    "timestamp": 1753281666.3079948,
     "tags": [
       "machine learning",
       "mathematics",
@@ -875,7 +875,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/lsbasi-apl-part1": {
-    "timestamp": 1723486195.3776448,
+    "timestamp": 1753281550.6451786,
     "tags": [
       "apl",
       "programming",
@@ -891,7 +891,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/textual-tutorial-build-a-todo-app-in-python": {
-    "timestamp": 1681290754.4517095,
+    "timestamp": 1753281885.6499226,
     "tags": [
       "programming",
       "python",
@@ -905,7 +905,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/module-pathlib-overview": {
-    "timestamp": 1692742188.768734,
+    "timestamp": 1753281621.8789895,
     "tags": [
       "modules",
       "programming",
@@ -915,11 +915,11 @@
       "articles": 1,
       "code_snippets": 11,
       "loc": 53,
-      "words": 946
+      "words": 942
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/enumerate-from-first-principles": {
-    "timestamp": 1681290754.4523394,
+    "timestamp": 1753281437.1015742,
     "tags": [
       "code review",
       "programming",
@@ -933,7 +933,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/max-is-broken": {
-    "timestamp": 1704414687.2459633,
+    "timestamp": 1753281590.9830995,
     "tags": [
       "mathematics",
       "programming",
@@ -943,11 +943,11 @@
       "articles": 1,
       "code_snippets": 4,
       "loc": 9,
-      "words": 458
+      "words": 454
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/filling-pokedex-with-random-trades": {
-    "timestamp": 1723486195.376198,
+    "timestamp": 1753281438.692726,
     "tags": [
       "mathematics",
       "probability"
@@ -960,7 +960,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/building-a-python-compiler-and-interpreter-05-statements": {
-    "timestamp": 1739482926.9241748,
+    "timestamp": 1753281297.522716,
     "tags": [
       "bpci",
       "compilers",
@@ -972,7 +972,7 @@
       "articles": 1,
       "code_snippets": 24,
       "loc": 315,
-      "words": 1719
+      "words": 1709
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/random-walks-diophantine-equations": {
@@ -994,7 +994,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/parsing-txrx-files-in-python": {
-    "timestamp": 1731601672.4670336,
+    "timestamp": 1753281712.3982856,
     "tags": [
       "parsers",
       "programming",
@@ -1002,13 +1002,13 @@
     ],
     "stats": {
       "articles": 1,
-      "code_snippets": 17,
-      "loc": 318,
-      "words": 1873
+      "code_snippets": 18,
+      "loc": 768,
+      "words": 123
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/itertools-batched": {
-    "timestamp": 1697569092.3583653,
+    "timestamp": 1753281520.765916,
     "tags": [
       "dunder methods",
       "generators",
@@ -1020,11 +1020,11 @@
       "articles": 1,
       "code_snippets": 17,
       "loc": 201,
-      "words": 1077
+      "words": 1075
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/solving-bridge-repair-in-4ms-with-python": {
-    "timestamp": 1733606770.6110487,
+    "timestamp": 1753281858.8421595,
     "tags": [
       "algorithms",
       "mathematics",
@@ -1036,11 +1036,11 @@
       "articles": 1,
       "code_snippets": 5,
       "loc": 93,
-      "words": 868
+      "words": 860
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/contributing-to-open-source-rich-2073": {
-    "timestamp": 1681290754.4537153,
+    "timestamp": 1753281359.2145517,
     "tags": [
       "open source",
       "programming",
@@ -1054,7 +1054,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/neural-networks-fundamentals-with-python-intro": {
-    "timestamp": 1723486195.3799684,
+    "timestamp": 1753281660.6000736,
     "tags": [
       "machine learning",
       "mathematics",
@@ -1071,7 +1071,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/dynamic-string-replacements-with-regex": {
-    "timestamp": 1704922795.5068228,
+    "timestamp": 1753281423.7751918,
     "tags": [
       "programming",
       "python",
@@ -1082,7 +1082,7 @@
       "articles": 1,
       "code_snippets": 6,
       "loc": 73,
-      "words": 442
+      "words": 436
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/common-proof-methods": {
@@ -1098,7 +1098,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/secret-santa-draw-with-python": {
-    "timestamp": 1701606864.82919,
+    "timestamp": 1753281789.2675595,
     "tags": [
       "programming",
       "python",
@@ -1109,11 +1109,11 @@
       "articles": 1,
       "code_snippets": 9,
       "loc": 93,
-      "words": 975
+      "words": 969
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/object-initialisation-with-__init__": {
-    "timestamp": 1694594495.9494073,
+    "timestamp": 1753281706.0542698,
     "tags": [
       "dunder methods",
       "programming",
@@ -1127,7 +1127,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/503-days-working-full-time-on-foss-lessons-learned": {
-    "timestamp": 1712321579.035476,
+    "timestamp": 1753281076.1914892,
     "tags": [
       "open source",
       "opinion",
@@ -1137,7 +1137,7 @@
       "articles": 1,
       "code_snippets": 1,
       "loc": 13,
-      "words": 4079
+      "words": 4070
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/minesweeper-remake": {
@@ -1156,7 +1156,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/counting-mosaics": {
-    "timestamp": 1681290754.4590392,
+    "timestamp": 1753281361.8489141,
     "tags": [
       "apl",
       "combinatorics",
@@ -1171,7 +1171,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/textual-for-beginners": {
-    "timestamp": 1709029891.14393,
+    "timestamp": 1753281881.154425,
     "tags": [
       "programming",
       "python",
@@ -1185,7 +1185,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/solving-wordle-with-apl": {
-    "timestamp": 1681290754.4618788,
+    "timestamp": 1753281863.4486544,
     "tags": [
       "apl",
       "game",
@@ -1200,7 +1200,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/more-animations-from-first-principles-in-5-minutes": {
-    "timestamp": 1694250857.140137,
+    "timestamp": 1753281628.837388,
     "tags": [
       "fractals",
       "geometry",
@@ -1215,11 +1215,11 @@
       "articles": 1,
       "code_snippets": 12,
       "loc": 149,
-      "words": 1134
+      "words": 1125
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/building-a-python-compiler-and-interpreter-09-short-circuiting": {
-    "timestamp": 1739482926.924232,
+    "timestamp": 1753281316.6325927,
     "tags": [
       "bpci",
       "compilers",
@@ -1231,7 +1231,7 @@
       "articles": 1,
       "code_snippets": 22,
       "loc": 371,
-      "words": 1897
+      "words": 1887
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/birthday-bet": {
@@ -1249,7 +1249,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/module-itertools-overview": {
-    "timestamp": 1721818550.7063951,
+    "timestamp": 1753281616.557056,
     "tags": [
       "modules",
       "programming",
@@ -1259,7 +1259,7 @@
       "articles": 1,
       "code_snippets": 29,
       "loc": 312,
-      "words": 1754
+      "words": 1750
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/random-walk-simulations": {
@@ -1298,7 +1298,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/ascii-rain-scroll-art": {
-    "timestamp": 1716546350.518548,
+    "timestamp": 1753281175.0112782,
     "tags": [
       "programming",
       "python",
@@ -1309,11 +1309,11 @@
       "articles": 1,
       "code_snippets": 7,
       "loc": 55,
-      "words": 462
+      "words": 457
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/module-collections-overview": {
-    "timestamp": 1710431015.517548,
+    "timestamp": 1753281599.0274544,
     "tags": [
       "modules",
       "programming",
@@ -1327,7 +1327,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/divmod-for-unit-conversions": {
-    "timestamp": 1701112533.6651344,
+    "timestamp": 1753281400.6487556,
     "tags": [
       "arithmetic",
       "mathematics",
@@ -1338,11 +1338,11 @@
       "articles": 1,
       "code_snippets": 5,
       "loc": 32,
-      "words": 586
+      "words": 581
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/minimax-algorithm-and-alpha-beta-pruning": {
-    "timestamp": 1681290754.499888,
+    "timestamp": 1753281597.8625941,
     "tags": [
       "algorithms",
       "artificial intelligence",
@@ -1360,7 +1360,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/building-a-python-compiler-and-interpreter-06-variables": {
-    "timestamp": 1739482926.9242074,
+    "timestamp": 1753281302.9034686,
     "tags": [
       "bpci",
       "compilers",
@@ -1372,11 +1372,11 @@
       "articles": 1,
       "code_snippets": 55,
       "loc": 608,
-      "words": 2017
+      "words": 2007
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/neural-networks-fundamentals-with-python-mnist": {
-    "timestamp": 1723486195.3802693,
+    "timestamp": 1753281661.4882717,
     "tags": [
       "machine learning",
       "mathematics",
@@ -1393,7 +1393,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/buffet-of-self-references": {
-    "timestamp": 1723486195.3740494,
+    "timestamp": 1753281250.9852862,
     "tags": [
       "fractals",
       "logic",
@@ -1407,7 +1407,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/why-apl-is-a-language-worth-knowing": {
-    "timestamp": 1681290754.502964,
+    "timestamp": 1753281936.840801,
     "tags": [
       "apl",
       "programming",
@@ -1437,7 +1437,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/automatic-site-updates-with-cog-and-pre-commit": {
-    "timestamp": 1739273871.950256,
+    "timestamp": 1753281201.2762344,
     "tags": [
       "git",
       "llm",
@@ -1451,11 +1451,11 @@
       "articles": 1,
       "code_snippets": 3,
       "loc": 32,
-      "words": 565
+      "words": 557
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/what-is-args-and-how-do-you-use-it": {
-    "timestamp": 1701356705.0937073,
+    "timestamp": 1753281924.2310252,
     "tags": [
       "programming",
       "python"
@@ -1464,11 +1464,11 @@
       "articles": 1,
       "code_snippets": 6,
       "loc": 48,
-      "words": 413
+      "words": 403
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/animating-a-tree-fractal": {
-    "timestamp": 1736768314.6715384,
+    "timestamp": 1753281156.8523262,
     "tags": [
       "fractals",
       "mathematics",
@@ -1482,11 +1482,11 @@
       "articles": 1,
       "code_snippets": 5,
       "loc": 150,
-      "words": 676
+      "words": 671
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/finding-similar-photos": {
-    "timestamp": 1700727366.9009159,
+    "timestamp": 1753281445.1584113,
     "tags": [
       "image processing",
       "mathematics",
@@ -1502,7 +1502,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/solving-wordle-with-python": {
-    "timestamp": 1681290754.537593,
+    "timestamp": 1753281865.141159,
     "tags": [
       "game",
       "logic",
@@ -1517,7 +1517,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/functools-cmp_to_key": {
-    "timestamp": 1737493527.0659733,
+    "timestamp": 1753281451.195698,
     "tags": [
       "algorithms",
       "programming",
@@ -1527,11 +1527,11 @@
       "articles": 1,
       "code_snippets": 10,
       "loc": 98,
-      "words": 889
+      "words": 887
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/python-black-friday-2023": {
-    "timestamp": 1700819160.1467855,
+    "timestamp": 1753281744.4459147,
     "tags": [
       "python"
     ],
@@ -1539,11 +1539,11 @@
       "articles": 1,
       "code_snippets": 0,
       "loc": 0,
-      "words": 483
+      "words": 478
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/finding-and-fixing-over-10000-bugs-on-github": {
-    "timestamp": 1681290754.5383668,
+    "timestamp": 1753281441.9562914,
     "tags": [
       "programming",
       "python"
@@ -1556,7 +1556,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/what-learning-apl-taught-me-about-python": {
-    "timestamp": 1692915280.2103336,
+    "timestamp": 1753281927.6254702,
     "tags": [
       "apl",
       "programming",
@@ -1570,7 +1570,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/writing-interpreter-in-15-loc": {
-    "timestamp": 1723486195.3845675,
+    "timestamp": 1753281957.764181,
     "tags": [
       "brainfuck",
       "interpreters",
@@ -1585,7 +1585,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/maximising-product-fixed-sum": {
-    "timestamp": 1723486195.3791308,
+    "timestamp": 1753281595.8690786,
     "tags": [
       "mathematics",
       "optimisation"
@@ -1594,7 +1594,7 @@
       "articles": 1,
       "code_snippets": 0,
       "loc": 0,
-      "words": 116
+      "words": 113
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/optimal-points-in-sphere": {
@@ -1615,7 +1615,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/custom-json-encoder-and-decoder": {
-    "timestamp": 1681290754.5408769,
+    "timestamp": 1753281373.460594,
     "tags": [
       "json",
       "programming",
@@ -1629,7 +1629,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/adding-stats-to-my-blog": {
-    "timestamp": 1700727308.3033578,
+    "timestamp": 1753281118.1832893,
     "tags": [
       "programming",
       "python",
@@ -1639,11 +1639,11 @@
       "articles": 1,
       "code_snippets": 11,
       "loc": 61,
-      "words": 907
+      "words": 901
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/neural-networks-fundamentals-with-python-student-teacher": {
-    "timestamp": 1723486195.3809583,
+    "timestamp": 1753281664.7682657,
     "tags": [
       "machine learning",
       "nnfwp",
@@ -1674,7 +1674,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/breaking-out-of-nested-loops-with-generators": {
-    "timestamp": 1719408322.2720258,
+    "timestamp": 1753281244.2734182,
     "tags": [
       "programming",
       "python"
@@ -1683,11 +1683,11 @@
       "articles": 1,
       "code_snippets": 5,
       "loc": 42,
-      "words": 319
+      "words": 311
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/neural-networks-fundamentals-with-python-backpropagation": {
-    "timestamp": 1723486195.3796382,
+    "timestamp": 1753281659.6558404,
     "tags": [
       "machine learning",
       "mathematics",
@@ -1704,7 +1704,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/lsbasi-apl-part3": {
-    "timestamp": 1723654251.2043552,
+    "timestamp": 1753281553.1111555,
     "tags": [
       "apl",
       "programming",
@@ -1720,7 +1720,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/vscode-shortcuts-for-efficient-python-programmers": {
-    "timestamp": 1682544028.964051,
+    "timestamp": 1753281910.805157,
     "tags": [
       "productivity",
       "programming",
@@ -1735,7 +1735,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/animating-a-rotating-spiral": {
-    "timestamp": 1720597120.4866657,
+    "timestamp": 1753281147.3025944,
     "tags": [
       "geometry",
       "mathematics",
@@ -1748,11 +1748,11 @@
       "articles": 1,
       "code_snippets": 5,
       "loc": 98,
-      "words": 252
+      "words": 247
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/biggest-square": {
-    "timestamp": 1708629688.8536017,
+    "timestamp": 1753281225.032056,
     "tags": [
       "algorithms",
       "combinatorics",
@@ -1763,11 +1763,11 @@
       "articles": 1,
       "code_snippets": 20,
       "loc": 143,
-      "words": 900
+      "words": 897
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/functools-partial": {
-    "timestamp": 1753280080.8144288,
+    "timestamp": 1753280123.2533176,
     "tags": [
       "fp",
       "modules",
@@ -1782,7 +1782,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/lsbasi-apl-part4": {
-    "timestamp": 1723654255.5361273,
+    "timestamp": 1753281555.2755008,
     "tags": [
       "apl",
       "interpreters",
@@ -1798,7 +1798,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/all-functions-return-something": {
-    "timestamp": 1690670659.3887963,
+    "timestamp": 1753281139.3609433,
     "tags": [
       "compilers",
       "programming",
@@ -1812,7 +1812,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/in-conversation-rodrigo-and-stephen-on-analogies": {
-    "timestamp": 1700560910.1561923,
+    "timestamp": 1753281506.6917024,
     "tags": [
       "programming",
       "python"
@@ -1825,7 +1825,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/manipulate-boolean-values-with-conditions": {
-    "timestamp": 1701165827.3795063,
+    "timestamp": 1753281575.047289,
     "tags": [
       "code review",
       "programming",
@@ -1835,11 +1835,11 @@
       "articles": 1,
       "code_snippets": 8,
       "loc": 71,
-      "words": 430
+      "words": 424
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/python-deque-tutorial": {
-    "timestamp": 1709316014.7163756,
+    "timestamp": 1753281751.2323618,
     "tags": [
       "modules",
       "programming",
@@ -1849,7 +1849,7 @@
       "articles": 1,
       "code_snippets": 29,
       "loc": 258,
-      "words": 2282
+      "words": 2278
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/egyptian-multiplication": {
@@ -1868,7 +1868,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/how-to-create-a-python-package-in-2022": {
-    "timestamp": 1739898142.9031243,
+    "timestamp": 1753281476.8045006,
     "tags": [
       "programming",
       "python"
@@ -1895,7 +1895,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/lsbasi-apl-part2": {
-    "timestamp": 1723486195.3778398,
+    "timestamp": 1753281551.632269,
     "tags": [
       "apl",
       "programming",
@@ -1911,7 +1911,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/teaching-the-worlds-largest-programming-lesson": {
-    "timestamp": 1728926650.133939,
+    "timestamp": 1753281876.721402,
     "tags": [
       "algorithms",
       "programming",
@@ -1921,7 +1921,7 @@
       "articles": 1,
       "code_snippets": 23,
       "loc": 119,
-      "words": 2190
+      "words": 2183
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/05.twitter-threads/recursion-analogies": {
@@ -1992,7 +1992,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/05.twitter-threads/finding-a-receipt-recursively": {
-    "timestamp": 1723313429.1664205,
+    "timestamp": 1753280972.2907956,
     "tags": [
       "programming",
       "python",
@@ -2006,7 +2006,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/05.twitter-threads/why-use-isinstance-instead-of-type": {
-    "timestamp": 1723313429.1714368,
+    "timestamp": 1753281005.1485457,
     "tags": [
       "programming",
       "python"
@@ -2322,7 +2322,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/05.twitter-threads/appending-to-a-list-used-in-a-for-loop": {
-    "timestamp": 1723313429.16522,
+    "timestamp": 1753280949.3176248,
     "tags": [
       "programming",
       "python"
@@ -2348,7 +2348,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p056-tennis-tournament": {
-    "timestamp": 1723313428.9674323,
+    "timestamp": 1753280769.2805197,
     "tags": [
       "combinatorics",
       "mathematics"
@@ -2361,7 +2361,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p019-fold-the-alphabet": {
-    "timestamp": 1723486195.361783,
+    "timestamp": 1753280754.6091628,
     "tags": [
       "geometry",
       "origami",
@@ -2375,7 +2375,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p041-canyon-crossing": {
-    "timestamp": 1723486195.3678603,
+    "timestamp": 1753280761.7745366,
     "tags": [
       "logic",
       "mathematics",
@@ -2389,7 +2389,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p064-infinite-mathematicians-with-hats": {
-    "timestamp": 1723313428.9897392,
+    "timestamp": 1753280772.406865,
     "tags": [
       "logic",
       "mathematics",
@@ -2403,7 +2403,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p007-binary-multiples": {
-    "timestamp": 1723486195.361028,
+    "timestamp": 1753280744.5743606,
     "tags": [
       "mathematics",
       "modular arithmetic",
@@ -2417,7 +2417,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p022-coprimes-in-the-crowd": {
-    "timestamp": 1723486195.3624678,
+    "timestamp": 1753280755.6004248,
     "tags": [
       "mathematics",
       "number theory",
@@ -2431,7 +2431,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p045-1-2-3": {
-    "timestamp": 1723486195.3690622,
+    "timestamp": 1753280764.1900234,
     "tags": [
       "logic",
       "mathematics"
@@ -2444,7 +2444,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p035-unknown-coin-sides": {
-    "timestamp": 1723486195.3661852,
+    "timestamp": 1753280759.6825223,
     "tags": [
       "combinatorics",
       "mathematics"
@@ -2457,7 +2457,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p059-marching-pegs": {
-    "timestamp": 1723313428.9785683,
+    "timestamp": 1753280770.782624,
     "tags": [
       "logic",
       "mathematics"
@@ -2470,7 +2470,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p048-trick-or-treat": {
-    "timestamp": 1723313428.9227533,
+    "timestamp": 1753280765.1349297,
     "tags": [
       "combinatorics",
       "logic",
@@ -2485,7 +2485,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p006-stacks-of-beans": {
-    "timestamp": 1723486195.3607526,
+    "timestamp": 1753280744.1116345,
     "tags": [
       "game theory",
       "mathematics"
@@ -2498,7 +2498,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p008-cutting-squares": {
-    "timestamp": 1723313428.806842,
+    "timestamp": 1753280745.5923533,
     "tags": [
       "geometry",
       "induction",
@@ -2513,7 +2513,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p039-rope-timer": {
-    "timestamp": 1723486195.3672652,
+    "timestamp": 1753280761.0415692,
     "tags": [
       "logic",
       "mathematics"
@@ -2526,7 +2526,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p057-how-to-find-the-circle-centre": {
-    "timestamp": 1723313428.9699848,
+    "timestamp": 1753280769.8003426,
     "tags": [
       "geometry",
       "mathematics"
@@ -2539,7 +2539,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p009-greedy-pirates": {
-    "timestamp": 1723313428.8081214,
+    "timestamp": 1753280746.1396415,
     "tags": [
       "game theory",
       "induction",
@@ -2554,7 +2554,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p040-the-dozen-puzzle": {
-    "timestamp": 1723486195.3675594,
+    "timestamp": 1753280761.415408,
     "tags": [
       "combinatorics",
       "logic",
@@ -2568,7 +2568,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p024-hats-in-a-line": {
-    "timestamp": 1723486195.3631606,
+    "timestamp": 1753280756.1852992,
     "tags": [
       "mathematics",
       "game theory",
@@ -2582,7 +2582,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p014-the-sum-of-the-parts": {
-    "timestamp": 1723313428.8143337,
+    "timestamp": 1753280749.4567323,
     "tags": [
       "combinatorics",
       "mathematics",
@@ -2596,7 +2596,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p033-syncro": {
-    "timestamp": 1723486195.3656454,
+    "timestamp": 1753280759.0071266,
     "tags": [
       "automatons",
       "combinatorics",
@@ -2611,7 +2611,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p002-a-bag-full-of-numbers": {
-    "timestamp": 1723486195.3593674,
+    "timestamp": 1753280741.092627,
     "tags": [
       "invariants",
       "mathematics",
@@ -2625,7 +2625,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p054-imperfect-compression": {
-    "timestamp": 1723313428.9633143,
+    "timestamp": 1753280768.1691535,
     "tags": [
       "combinatorics",
       "induction",
@@ -2640,7 +2640,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p016-hamburger-dilemma": {
-    "timestamp": 1723313428.8177664,
+    "timestamp": 1753280750.9872785,
     "tags": [
       "logic",
       "mathematics",
@@ -2654,7 +2654,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p025-knights-tour": {
-    "timestamp": 1723486195.3635104,
+    "timestamp": 1753280756.498003,
     "tags": [
       "chess",
       "game theory"
@@ -2667,7 +2667,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p049-coin-pyramid": {
-    "timestamp": 1723313428.9274063,
+    "timestamp": 1753280765.4072278,
     "tags": [
       "geometry",
       "mathematics"
@@ -2680,7 +2680,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p031-piped-ants": {
-    "timestamp": 1723486195.3652396,
+    "timestamp": 1753280758.306312,
     "tags": [
       "combinatorics",
       "invariants",
@@ -2694,7 +2694,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p011-salvation-of-the-monks": {
-    "timestamp": 1723313428.810302,
+    "timestamp": 1753280747.547179,
     "tags": [
       "induction",
       "logic",
@@ -2708,7 +2708,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p004-solvability-of-the-water-buckets": {
-    "timestamp": 1723486195.3599207,
+    "timestamp": 1753280743.045582,
     "tags": [
       "invariants",
       "mathematics",
@@ -2722,7 +2722,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p066-regex-crossword": {
-    "timestamp": 1724776375.083026,
+    "timestamp": 1753280773.1606932,
     "tags": [
       "mathematics",
       "regex"
@@ -2735,7 +2735,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p046-triangle-grid": {
-    "timestamp": 1723486195.369181,
+    "timestamp": 1753280764.4979172,
     "tags": [
       "geometry",
       "mathematics"
@@ -2748,7 +2748,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p053-weighing-the-odd-one-out": {
-    "timestamp": 1723313428.9621515,
+    "timestamp": 1753280767.0695653,
     "tags": [
       "logic",
       "mathematics"
@@ -2761,7 +2761,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p026-counting-squares": {
-    "timestamp": 1723486195.3639593,
+    "timestamp": 1753280756.765055,
     "tags": [
       "combinatorics",
       "geometry",
@@ -2775,7 +2775,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p055-horse-racing": {
-    "timestamp": 1723313428.966158,
+    "timestamp": 1753280768.517078,
     "tags": [
       "logic",
       "mathematics"
@@ -2788,7 +2788,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p062-sliding-coins": {
-    "timestamp": 1723655252.1093388,
+    "timestamp": 1753280771.7233362,
     "tags": [
       "invariants",
       "logic",
@@ -2802,7 +2802,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p013-circular-train": {
-    "timestamp": 1723313428.8136127,
+    "timestamp": 1753280749.0016394,
     "tags": [
       "algorithms",
       "logic",
@@ -2816,7 +2816,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p015-cover-me-not": {
-    "timestamp": 1723313428.815087,
+    "timestamp": 1753280749.9648755,
     "tags": [
       "mathematics"
     ],
@@ -2828,7 +2828,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p037-game-of-coins": {
-    "timestamp": 1723486195.3667145,
+    "timestamp": 1753280760.3640418,
     "tags": [
       "game theory",
       "geometry",
@@ -2842,7 +2842,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p020-make-24-with-3-3-8-8": {
-    "timestamp": 1723486195.3619716,
+    "timestamp": 1753280755.0191867,
     "tags": [
       "arithmetic",
       "mathematics"
@@ -2855,7 +2855,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p012-it-is-just-a-matter-of-time": {
-    "timestamp": 1723313428.8114736,
+    "timestamp": 1753280748.13732,
     "tags": [
       "logic",
       "mathematics",
@@ -2869,7 +2869,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p034-one-question-to-happiness": {
-    "timestamp": 1723486195.36592,
+    "timestamp": 1753280759.339536,
     "tags": [
       "logic",
       "mathematics"
@@ -2882,7 +2882,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p005-number-me-right": {
-    "timestamp": 1723486195.3603132,
+    "timestamp": 1753280743.5673213,
     "tags": [
       "binary",
       "induction",
@@ -2896,7 +2896,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p051-queens-and-knights": {
-    "timestamp": 1723313428.960757,
+    "timestamp": 1753280766.306813,
     "tags": [
       "chess",
       "combinatorics",
@@ -2910,7 +2910,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p043-rubiks-cube-scrambling": {
-    "timestamp": 1723486195.3685653,
+    "timestamp": 1753280762.7314985,
     "tags": [
       "combinatorics",
       "group theory",
@@ -2925,7 +2925,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p063-arbitrarily-many-primes-in-arbitrarily-big-intervals": {
-    "timestamp": 1723313428.9881198,
+    "timestamp": 1753280772.0648234,
     "tags": [
       "logic",
       "mathematics",
@@ -2940,7 +2940,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p003-quarrel-in-the-shire": {
-    "timestamp": 1723486195.3597102,
+    "timestamp": 1753280742.0018349,
     "tags": [
       "invariants",
       "mathematics",
@@ -2954,7 +2954,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p060-realtor-commissions": {
-    "timestamp": 1723313428.9794445,
+    "timestamp": 1753280771.0768933,
     "tags": [
       "logic",
       "mathematics"
@@ -2967,7 +2967,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p032-restaurant-roundtable": {
-    "timestamp": 1723486195.3653512,
+    "timestamp": 1753280758.6821969,
     "tags": [
       "combinatorics",
       "mathematics",
@@ -2981,7 +2981,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p065-clock-synchronisation": {
-    "timestamp": 1723313428.9910123,
+    "timestamp": 1753280772.820564,
     "tags": [
       "mathematics"
     ],
@@ -2993,7 +2993,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p010-alice-and-the-maths-hatter": {
-    "timestamp": 1723313428.8090415,
+    "timestamp": 1753280746.9765449,
     "tags": [
       "logic",
       "mathematics",
@@ -3007,7 +3007,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p050-8-queens": {
-    "timestamp": 1723313428.9446466,
+    "timestamp": 1753280765.969396,
     "tags": [
       "chess",
       "combinatorics",
@@ -3021,7 +3021,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p058-identifying-light-bulbs": {
-    "timestamp": 1723313428.9766722,
+    "timestamp": 1753280770.4507425,
     "tags": [
       "binary",
       "logic",
@@ -3035,7 +3035,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p061-flower-garden": {
-    "timestamp": 1723313428.982111,
+    "timestamp": 1753280771.398,
     "tags": [
       "logic",
       "mathematics"
@@ -3048,7 +3048,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p030-efficiency-at-the-beach": {
-    "timestamp": 1723486195.3650045,
+    "timestamp": 1753280757.9908452,
     "tags": [
       "geometry",
       "mathematics",
@@ -3062,7 +3062,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p042-mine-captcha": {
-    "timestamp": 1723486195.3681366,
+    "timestamp": 1753280762.1659539,
     "tags": [
       "game",
       "logic",
@@ -3076,7 +3076,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p052-tiling-a-chessboard": {
-    "timestamp": 1723313428.9617398,
+    "timestamp": 1753280766.6745899,
     "tags": [
       "chess",
       "combinatorics",
@@ -3090,7 +3090,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p027-pile-of-coconuts": {
-    "timestamp": 1723486195.3641925,
+    "timestamp": 1753280757.0824232,
     "tags": [
       "mathematics",
       "modular arithmetic"
@@ -3103,7 +3103,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p017-shuffle-me-around": {
-    "timestamp": 1723313428.8185382,
+    "timestamp": 1753280751.3655193,
     "tags": [
       "combinatorics",
       "logic",
@@ -3117,7 +3117,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p047-surgery-gloves": {
-    "timestamp": 1723313428.9219518,
+    "timestamp": 1753280764.8241315,
     "tags": [
       "logic"
     ],
@@ -3129,7 +3129,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p044-send-more-money": {
-    "timestamp": 1748277798.9626634,
+    "timestamp": 1753280763.8336813,
     "tags": [
       "arithmetic",
       "logic",
@@ -3143,7 +3143,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p018-circle-of-hats": {
-    "timestamp": 1723486195.361507,
+    "timestamp": 1753280753.2025924,
     "tags": [
       "mathematics",
       "modular arithmetic",
@@ -3157,7 +3157,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p023-guess-the-polynomial": {
-    "timestamp": 1723486195.3628705,
+    "timestamp": 1753280755.8912477,
     "tags": [
       "mathematics",
       "polynomials",
@@ -3172,7 +3172,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p021-predicting-coin-tosses": {
-    "timestamp": 1723486195.3622694,
+    "timestamp": 1753280755.3321805,
     "tags": [
       "probability",
       "algorithms",
@@ -3186,7 +3186,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p001-a-dancing-triangle": {
-    "timestamp": 1723486195.359046,
+    "timestamp": 1753280740.035377,
     "tags": [
       "geometry",
       "invariants",
@@ -3200,7 +3200,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p036-huge-tiny-triangle": {
-    "timestamp": 1723486195.36645,
+    "timestamp": 1753280760.02341,
     "tags": [
       "geometry",
       "invariants",
@@ -3214,7 +3214,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p029-hidden-key-2": {
-    "timestamp": 1723486195.364755,
+    "timestamp": 1753280757.7062564,
     "tags": [
       "binary",
       "combinatorics",
@@ -3228,7 +3228,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p028-hidden-key": {
-    "timestamp": 1723486195.3644552,
+    "timestamp": 1753280757.384858,
     "tags": [
       "binary",
       "combinatorics",
@@ -3242,7 +3242,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p038-bridges-of-konigsberg": {
-    "timestamp": 1723486195.3670049,
+    "timestamp": 1753280760.6898232,
     "tags": [
       "graphs",
       "mathematics",
@@ -3256,7 +3256,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/eafp-and-lbyl-coding-styles": {
-    "timestamp": 1723486195.3517857,
+    "timestamp": 1753280518.4576943,
     "tags": [
       "programming",
       "python"
@@ -3269,7 +3269,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/str-and-repr": {
-    "timestamp": 1723486195.3560183,
+    "timestamp": 1753280715.787895,
     "tags": [
       "programming",
       "python"
@@ -3282,7 +3282,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/the-power-of-reduce": {
-    "timestamp": 1737199480.2597644,
+    "timestamp": 1753280723.5606494,
     "tags": [
       "fp",
       "programming",
@@ -3296,7 +3296,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/unpacking-with-starred-assignments": {
-    "timestamp": 1723486195.3576503,
+    "timestamp": 1753280726.8332255,
     "tags": [
       "programming",
       "python"
@@ -3309,7 +3309,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/dunder-methods": {
-    "timestamp": 1737199480.258758,
+    "timestamp": 1753280507.3778172,
     "tags": [
       "dunder methods",
       "programming",
@@ -3323,7 +3323,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/inner-workings-of-sequence-slicing": {
-    "timestamp": 1723486195.35264,
+    "timestamp": 1753280582.2978683,
     "tags": [
       "programming",
       "python"
@@ -3336,7 +3336,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/string-formatting-comparison": {
-    "timestamp": 1723315536.2569158,
+    "timestamp": 1753280717.7552364,
     "tags": [
       "programming",
       "python"
@@ -3349,7 +3349,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/enumerate-me": {
-    "timestamp": 1723486195.3519864,
+    "timestamp": 1753280533.3284,
     "tags": [
       "programming",
       "python"
@@ -3362,7 +3362,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/string-translate-and-maketrans-methods": {
-    "timestamp": 1737199480.2595015,
+    "timestamp": 1753280719.1367288,
     "tags": [
       "programming",
       "python"
@@ -3375,7 +3375,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/conditional-expressions": {
-    "timestamp": 1749493114.2514756,
+    "timestamp": 1753280388.1047435,
     "tags": [
       "programming",
       "python"
@@ -3388,7 +3388,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/decorators": {
-    "timestamp": 1752067145.139773,
+    "timestamp": 1753282044.9039254,
     "tags": [
       "fp",
       "programming",
@@ -3398,11 +3398,11 @@
       "articles": 1,
       "code_snippets": 61,
       "loc": 569,
-      "words": 4697
+      "words": 4695
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/zip-up": {
-    "timestamp": 1723486195.358698,
+    "timestamp": 1753280735.6175103,
     "tags": [
       "programming",
       "python"
@@ -3415,7 +3415,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/list-comprehensions-101": {
-    "timestamp": 1737199480.2589064,
+    "timestamp": 1753280601.0938394,
     "tags": [
       "programming",
       "python"
@@ -3428,7 +3428,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/code-style-matters": {
-    "timestamp": 1737199480.2585304,
+    "timestamp": 1753280372.7061,
     "tags": [
       "programming",
       "python"
@@ -3441,7 +3441,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/usages-of-underscore": {
-    "timestamp": 1737199480.2598624,
+    "timestamp": 1753280727.9131408,
     "tags": [
       "programming",
       "python"
@@ -3454,7 +3454,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/boolean-short-circuiting": {
-    "timestamp": 1737199480.2583637,
+    "timestamp": 1753280322.428171,
     "tags": [
       "programming",
       "python"
@@ -3467,7 +3467,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/watch-out-for-recursion": {
-    "timestamp": 1723486195.358303,
+    "timestamp": 1753280729.1676736,
     "tags": [
       "programming",
       "python"
@@ -3480,7 +3480,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/idiomatic-sequence-slicing": {
-    "timestamp": 1723486195.3522635,
+    "timestamp": 1753280569.523391,
     "tags": [
       "programming",
       "python"
@@ -3493,7 +3493,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/naming-matters": {
-    "timestamp": 1737199480.2591884,
+    "timestamp": 1753280651.224612,
     "tags": [
       "programming",
       "python"
@@ -3506,7 +3506,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/properties": {
-    "timestamp": 1737199480.2593493,
+    "timestamp": 1753280686.504213,
     "tags": [
       "oop",
       "programming",
@@ -3520,7 +3520,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/pass-by-value-reference-and-assignment": {
-    "timestamp": 1723315536.247714,
+    "timestamp": 1753280682.7221198,
     "tags": [
       "programming",
       "python"
@@ -3533,7 +3533,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/chaining-comparison-operators": {
-    "timestamp": 1723486195.3494525,
+    "timestamp": 1753280355.3114557,
     "tags": [
       "programming",
       "python"
@@ -3546,7 +3546,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/overloading-arithmetic-operators-with-dunder-methods": {
-    "timestamp": 1737485438.7004473,
+    "timestamp": 1753280670.50084,
     "tags": [
       "arithmetic",
       "dunder methods",
@@ -3561,7 +3561,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/name-dunder-attribute": {
-    "timestamp": 1737199480.2591143,
+    "timestamp": 1753280631.0720782,
     "tags": [
       "programming",
       "python"
@@ -3574,7 +3574,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/pydont-manifesto": {
-    "timestamp": 1723486195.3547695,
+    "timestamp": 1753280699.63489,
     "tags": [
       "programming",
       "python"
@@ -3587,7 +3587,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/set-and-frozenset": {
-    "timestamp": 1737199480.2594244,
+    "timestamp": 1753280713.91799,
     "tags": [
       "programming",
       "python"
@@ -3600,7 +3600,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/truthy-falsy-and-bool": {
-    "timestamp": 1723486195.3574138,
+    "timestamp": 1753280725.2541475,
     "tags": [
       "programming",
       "python"
@@ -3613,7 +3613,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/why-mastering-python-is-impossible": {
-    "timestamp": 1737199480.259984,
+    "timestamp": 1753280734.1886094,
     "tags": [
       "programming",
       "python"
@@ -3626,7 +3626,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/structural-pattern-matching-tutorial": {
-    "timestamp": 1723486195.3568718,
+    "timestamp": 1753280722.0046287,
     "tags": [
       "programming",
       "python"
@@ -3639,7 +3639,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/bite-sized-refactoring": {
-    "timestamp": 1737199480.258269,
+    "timestamp": 1753280262.1704311,
     "tags": [
       "programming",
       "python"
@@ -3652,7 +3652,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/assignment-expressions-and-the-walrus-operator": {
-    "timestamp": 1723486195.3470643,
+    "timestamp": 1753280247.9144113,
     "tags": [
       "programming",
       "python"
@@ -3665,7 +3665,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/sequence-indexing": {
-    "timestamp": 1723486195.355229,
+    "timestamp": 1753280701.9702075,
     "tags": [
       "programming",
       "python"
@@ -3678,7 +3678,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/pydont-disrespect-the-zen-of-python": {
-    "timestamp": 1723486195.354612,
+    "timestamp": 1753280689.192926,
     "tags": [
       "programming",
       "python"
@@ -3691,7 +3691,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/mastering-sequence-slicing": {
-    "timestamp": 1723486195.3534844,
+    "timestamp": 1753280620.580306,
     "tags": [
       "programming",
       "python"
@@ -3704,7 +3704,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/boost-your-productivity-with-the-repl": {
-    "timestamp": 1737199480.258438,
+    "timestamp": 1753280347.3742704,
     "tags": [
       "productivity",
       "programming",
@@ -3718,7 +3718,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/deep-unpacking": {
-    "timestamp": 1723486195.3507235,
+    "timestamp": 1753280444.8970888,
     "tags": [
       "programming",
       "python"
@@ -3731,7 +3731,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/does-elegance-matter": {
-    "timestamp": 1723486195.3514104,
+    "timestamp": 1753280494.6348164,
     "tags": [
       "programming",
       "python"
@@ -3744,7 +3744,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/structural-pattern-matching-anti-patterns": {
-    "timestamp": 1723486195.3566465,
+    "timestamp": 1753280720.5205905,
     "tags": [
       "programming",
       "python"
@@ -3757,7 +3757,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/describing-descriptors": {
-    "timestamp": 1737199480.2586825,
+    "timestamp": 1753280487.6828747,
     "tags": [
       "dunder methods",
       "oop",
@@ -3772,7 +3772,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/039.how-to-install-starship-on-windows": {
-    "timestamp": 1723313429.0402393,
+    "timestamp": 1753280896.1032174,
     "tags": [
       "programming"
     ],
@@ -3784,7 +3784,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/086.run-custom-code-on-python-start-up": {
-    "timestamp": 1723313429.1142683,
+    "timestamp": 1753280912.845025,
     "tags": [
       "productivity",
       "programming",
@@ -3798,7 +3798,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/062.dbg!-macro-for-debugging-in-rust": {
-    "timestamp": 1723313429.0917351,
+    "timestamp": 1753280904.788683,
     "tags": [
       "programming",
       "rust"
@@ -3811,7 +3811,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/014.reading-files-with-pathlib": {
-    "timestamp": 1723313428.9990985,
+    "timestamp": 1753280887.3870509,
     "tags": [
       "programming",
       "python"
@@ -3824,7 +3824,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/097.get-terminal-size": {
-    "timestamp": 1723313429.124237,
+    "timestamp": 1753280916.478481,
     "tags": [
       "programming",
       "python"
@@ -3837,7 +3837,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/040.code-syntax-highlighting-in-microsoft-powerpoint": {
-    "timestamp": 1723313429.0473785,
+    "timestamp": 1753280896.5508256,
     "tags": [
       "programming"
     ],
@@ -3849,7 +3849,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/017.symmetrical-indexing-with-bitwise-inversion": {
-    "timestamp": 1723313429.002535,
+    "timestamp": 1753280888.4575403,
     "tags": [
       "binary",
       "mathematics",
@@ -3864,7 +3864,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/066.activate-virtual-environment-with-alias": {
-    "timestamp": 1723313429.0954912,
+    "timestamp": 1753280906.4631321,
     "tags": [
       "productivity",
       "programming"
@@ -3877,7 +3877,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/069.generator-membership-testing": {
-    "timestamp": 1723313429.0972757,
+    "timestamp": 1753280909.5194762,
     "tags": [
       "generators",
       "programming",
@@ -3891,7 +3891,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/021.spouges-formula": {
-    "timestamp": 1723313429.0083506,
+    "timestamp": 1753280890.6393514,
     "tags": [
       "apl",
       "mathematics",
@@ -3905,7 +3905,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/072.read-bytecode-from-a-pyc-file": {
-    "timestamp": 1723313429.0991654,
+    "timestamp": 1753280910.0446537,
     "tags": [
       "compilers",
       "programming",
@@ -3919,7 +3919,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/027.get-rich-with-python": {
-    "timestamp": 1723313429.0176384,
+    "timestamp": 1753280892.2779362,
     "tags": [
       "programming",
       "python"
@@ -3932,7 +3932,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/100.making-an-iterator-out-of-a-function": {
-    "timestamp": 1723313429.128843,
+    "timestamp": 1753280917.2368934,
     "tags": [
       "programming",
       "python"
@@ -3945,7 +3945,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/006.file-unpacking": {
-    "timestamp": 1723486195.3709533,
+    "timestamp": 1753280884.1622422,
     "tags": [
       "programming",
       "python"
@@ -3958,7 +3958,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/110.hash-of-1-is-2": {
-    "timestamp": 1736896468.0579395,
+    "timestamp": 1753280919.4959166,
     "tags": [
       "algorithms",
       "python",
@@ -3972,7 +3972,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/002.fake-chess-ai": {
-    "timestamp": 1723486195.3699803,
+    "timestamp": 1753280883.144951,
     "tags": [
       "chess",
       "machine learning"
@@ -3985,7 +3985,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/085.negative-zero": {
-    "timestamp": 1723313429.113542,
+    "timestamp": 1753280912.5951753,
     "tags": [
       "floats",
       "mathematics",
@@ -4000,7 +4000,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/015.darpa-network-challenge": {
-    "timestamp": 1723655452.2325234,
+    "timestamp": 1753280887.6800442,
     "tags": [
       "graphs",
       "mathematics"
@@ -4013,7 +4013,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/096.automatically-push-code-changes-during-live-coding": {
-    "timestamp": 1723313429.1228979,
+    "timestamp": 1753280916.2362995,
     "tags": [
       "git",
       "modules",
@@ -4028,7 +4028,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/064.open-recursion": {
-    "timestamp": 1723313429.093937,
+    "timestamp": 1753280906.0023336,
     "tags": [
       "programming",
       "python",
@@ -4042,7 +4042,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/056.invisible-variables": {
-    "timestamp": 1723313429.0701935,
+    "timestamp": 1753280902.558983,
     "tags": [
       "programming",
       "python"
@@ -4055,7 +4055,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/090.patching-module-globals-with-pytest": {
-    "timestamp": 1723313429.1162043,
+    "timestamp": 1753280913.8374848,
     "tags": [
       "programming",
       "pytest",
@@ -4070,7 +4070,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/009.vars": {
-    "timestamp": 1723313428.9966092,
+    "timestamp": 1753280885.605017,
     "tags": [
       "programming",
       "python"
@@ -4083,7 +4083,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/075.damerau-levenshtein-distance": {
-    "timestamp": 1723313429.1017137,
+    "timestamp": 1753280910.5777063,
     "tags": [
       "algorithms",
       "programming",
@@ -4097,7 +4097,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/038.look-and-say-sequence-growth": {
-    "timestamp": 1723313429.0393596,
+    "timestamp": 1753280895.795709,
     "tags": [
       "logic",
       "mathematics",
@@ -4111,7 +4111,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/094.pytest.raises-parameter-match": {
-    "timestamp": 1723313429.120804,
+    "timestamp": 1753280915.7708828,
     "tags": [
       "modules",
       "programming",
@@ -4127,7 +4127,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/065.vscode-sticky-scroll": {
-    "timestamp": 1723313429.0950003,
+    "timestamp": 1753280906.2283676,
     "tags": [
       "productivity",
       "programming",
@@ -4141,7 +4141,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/047.custom-json-decoder": {
-    "timestamp": 1723313429.0583386,
+    "timestamp": 1753280899.0390399,
     "tags": [
       "json",
       "programming",
@@ -4155,7 +4155,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/036.pandas-show-versions": {
-    "timestamp": 1723313429.0264533,
+    "timestamp": 1753280895.1369631,
     "tags": [
       "pandas",
       "programming",
@@ -4169,7 +4169,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/089.delete-merged-git-branches": {
-    "timestamp": 1723313429.1154175,
+    "timestamp": 1753280913.5873256,
     "tags": [
       "git",
       "productivity"
@@ -4182,7 +4182,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/060.rename-a-git-branch": {
-    "timestamp": 1723313429.0832453,
+    "timestamp": 1753280904.221134,
     "tags": [
       "git",
       "productivity"
@@ -4195,7 +4195,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/024.cooking-with-asyncio": {
-    "timestamp": 1723313429.0113742,
+    "timestamp": 1753280891.5953515,
     "tags": [
       "concurrency",
       "programming",
@@ -4209,7 +4209,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/026.web-apps-with-streamlit": {
-    "timestamp": 1723313429.0164046,
+    "timestamp": 1753280892.0540109,
     "tags": [
       "programming",
       "python"
@@ -4222,7 +4222,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/106.asyncio-gather": {
-    "timestamp": 1730763938.057982,
+    "timestamp": 1753280918.6127346,
     "tags": [
       "concurrency",
       "programming",
@@ -4236,7 +4236,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/001.ceiling-division-in-python": {
-    "timestamp": 1723486195.3696964,
+    "timestamp": 1753280882.814853,
     "tags": [
       "arithmetic",
       "mathematics",
@@ -4251,7 +4251,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/035.run-black-formatter-on-pre-commit": {
-    "timestamp": 1723313429.0237424,
+    "timestamp": 1753280894.8299918,
     "tags": [
       "programming",
       "python"
@@ -4264,7 +4264,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/050.add-a-suggestion": {
-    "timestamp": 1723313429.062364,
+    "timestamp": 1753280900.2117796,
     "tags": [
       "github"
     ],
@@ -4276,7 +4276,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/103.debugging-the-new-python-repl-with-trace-and-pyrepl-trace": {
-    "timestamp": 1723313429.163652,
+    "timestamp": 1753280917.903404,
     "tags": [
       "programming",
       "python",
@@ -4290,7 +4290,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/104.nested-makefiles": {
-    "timestamp": 1727282089.091053,
+    "timestamp": 1753280918.1544826,
     "tags": [
       "productivity",
       "programming"
@@ -4303,7 +4303,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/048.custom-json-decoder-part-2": {
-    "timestamp": 1723313429.0588593,
+    "timestamp": 1753280899.6112099,
     "tags": [
       "json",
       "programming",
@@ -4317,7 +4317,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/019.sockets": {
-    "timestamp": 1723313429.0068314,
+    "timestamp": 1753280889.465983,
     "tags": [
       "networking",
       "programming",
@@ -4331,7 +4331,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/034.multi-channel-transposed-convolution": {
-    "timestamp": 1723313429.023311,
+    "timestamp": 1753280894.4910133,
     "tags": [
       "apl",
       "machine learning",
@@ -4346,7 +4346,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/076.hypothesis-for-code-refactoring": {
-    "timestamp": 1723313429.1022222,
+    "timestamp": 1753280910.770091,
     "tags": [
       "hypothesis",
       "programming",
@@ -4361,7 +4361,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/074.crazy-python-indentation": {
-    "timestamp": 1723313429.1011596,
+    "timestamp": 1753280910.3948905,
     "tags": [
       "programming",
       "python"
@@ -4374,7 +4374,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/046.custom-json-encoder": {
-    "timestamp": 1723313429.0579357,
+    "timestamp": 1753280898.6334476,
     "tags": [
       "json",
       "programming",
@@ -4388,7 +4388,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/082.20-million-lines-of-python-code": {
-    "timestamp": 1723313429.111159,
+    "timestamp": 1753280911.9614127,
     "tags": [
       "programming",
       "python"
@@ -4401,7 +4401,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/025.reversed-emoji-flags": {
-    "timestamp": 1723313429.0136936,
+    "timestamp": 1753280891.8291574,
     "tags": [
       "programming",
       "python"
@@ -4414,7 +4414,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/054.type-hint-Any": {
-    "timestamp": 1723656348.573887,
+    "timestamp": 1753280901.2622235,
     "tags": [
       "programming",
       "python",
@@ -4428,7 +4428,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/013.dunder-method-__eq__": {
-    "timestamp": 1723313428.9981003,
+    "timestamp": 1753280887.1302392,
     "tags": [
       "programming",
       "python"
@@ -4441,7 +4441,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/059.skip-list-data-structure": {
-    "timestamp": 1723313429.0799472,
+    "timestamp": 1753280903.9096053,
     "tags": [
       "algorithms",
       "data structures",
@@ -4456,7 +4456,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/037.pandas-Series": {
-    "timestamp": 1723313429.0320916,
+    "timestamp": 1753280895.416317,
     "tags": [
       "pandas",
       "programming",
@@ -4470,7 +4470,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/087.underscore-is-a-soft-keyword": {
-    "timestamp": 1723313429.1146986,
+    "timestamp": 1753280913.0867403,
     "tags": [
       "parsers",
       "programming",
@@ -4484,7 +4484,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/043.rich-traceback-and-exception-logging": {
-    "timestamp": 1723313429.0565112,
+    "timestamp": 1753280897.5548239,
     "tags": [
       "programming",
       "python"
@@ -4497,7 +4497,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/099.order-values-of-dictionary-by-iterable-of-keys-with-operator.itemgetter": {
-    "timestamp": 1723313429.1278377,
+    "timestamp": 1753280916.995139,
     "tags": [
       "programming",
       "python"
@@ -4510,7 +4510,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/093.operator.methodcaller": {
-    "timestamp": 1723313429.119693,
+    "timestamp": 1753280914.5792325,
     "tags": [
       "modules",
       "programming",
@@ -4524,7 +4524,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/055.xkcd-plots": {
-    "timestamp": 1723313429.067324,
+    "timestamp": 1753280901.7094395,
     "tags": [
       "programming",
       "python"
@@ -4537,7 +4537,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/105.pytest-selection-arguments-for-failing-tests": {
-    "timestamp": 1744728286.9595778,
+    "timestamp": 1753280918.3709755,
     "tags": [
       "productivity",
       "programming",
@@ -4552,7 +4552,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/029.true-is-equal-to-one": {
-    "timestamp": 1723313429.019741,
+    "timestamp": 1753280892.7028737,
     "tags": [
       "programming",
       "python"
@@ -4565,7 +4565,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/030.simpsons-paradox": {
-    "timestamp": 1723313429.0200665,
+    "timestamp": 1753280892.945519,
     "tags": [
       "mathematics",
       "statistics"
@@ -4578,7 +4578,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/098.git-alias-for-quick-commit-and-push": {
-    "timestamp": 1723313429.1268895,
+    "timestamp": 1753280916.7456279,
     "tags": [
       "git",
       "productivity"
@@ -4591,7 +4591,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/010.generator-return": {
-    "timestamp": 1723313428.9970226,
+    "timestamp": 1753280886.0294003,
     "tags": [
       "generators",
       "programming",
@@ -4605,7 +4605,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/111.interrupting-scripts-without-tracebacks": {
-    "timestamp": 1737159013.8516974,
+    "timestamp": 1753280919.7292416,
     "tags": [
       "programming",
       "python",
@@ -4619,7 +4619,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/052.deleting-a-file-with-pathlib": {
-    "timestamp": 1723313429.0642583,
+    "timestamp": 1753280900.722195,
     "tags": [
       "programming",
       "python"
@@ -4632,7 +4632,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/070.writing-and-running-tests-in-rust": {
-    "timestamp": 1723313429.0979226,
+    "timestamp": 1753280909.6947777,
     "tags": [
       "programming",
       "rust"
@@ -4645,7 +4645,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/016.quicksort-in-functional-programming": {
-    "timestamp": 1723313429.0019853,
+    "timestamp": 1753280888.0538945,
     "tags": [
       "programming",
       "python"
@@ -4658,7 +4658,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/068.nested-git-repositories": {
-    "timestamp": 1723313429.0967517,
+    "timestamp": 1753280909.3118026,
     "tags": [
       "git",
       "productivity"
@@ -4671,7 +4671,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/101.difference-between-__getattr__-and-__getattribute__": {
-    "timestamp": 1723313429.1298358,
+    "timestamp": 1753280917.4445074,
     "tags": [
       "programming",
       "python"
@@ -4684,7 +4684,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/051.herons-formula": {
-    "timestamp": 1723313429.06315,
+    "timestamp": 1753280900.437112,
     "tags": [
       "geometry",
       "mathematics"
@@ -4697,7 +4697,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/095.better-test-parametrisation-in-pytest": {
-    "timestamp": 1723313429.121747,
+    "timestamp": 1753280916.01179,
     "tags": [
       "modules",
       "productivity",
@@ -4714,7 +4714,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/022.python-module-selectors": {
-    "timestamp": 1723313429.0104084,
+    "timestamp": 1753280890.8702674,
     "tags": [
       "networking",
       "programming",
@@ -4728,7 +4728,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/071.generator-method-close": {
-    "timestamp": 1723313429.0983512,
+    "timestamp": 1753280909.8704035,
     "tags": [
       "generators",
       "programming",
@@ -4742,7 +4742,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/003.icpo-rule-for-attribute-lookup": {
-    "timestamp": 1723486195.370211,
+    "timestamp": 1753280883.395262,
     "tags": [
       "programming",
       "python"
@@ -4755,7 +4755,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/023.how-to-use-namedtuple": {
-    "timestamp": 1723313429.0107942,
+    "timestamp": 1753280891.344501,
     "tags": [
       "programming",
       "python"
@@ -4768,7 +4768,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/063.skip-tests-on-microsoft-windows": {
-    "timestamp": 1723313429.0932825,
+    "timestamp": 1753280905.11948,
     "tags": [
       "modules",
       "programming",
@@ -4783,7 +4783,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/045.using-javascript-functions-in-pyscript": {
-    "timestamp": 1723313429.057481,
+    "timestamp": 1753280898.228467,
     "tags": [
       "javascript",
       "programming",
@@ -4798,7 +4798,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/109.unpacking-kwargs-with-custom-objects": {
-    "timestamp": 1736088478.3847935,
+    "timestamp": 1753280919.2533407,
     "tags": [
       "dunder methods",
       "python",
@@ -4812,7 +4812,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/049.edit-multiple-file-locations-in-vscode": {
-    "timestamp": 1723313429.060797,
+    "timestamp": 1753280899.9813895,
     "tags": [
       "json",
       "programming",
@@ -4827,7 +4827,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/092.dunder-method-__init_subclass__": {
-    "timestamp": 1723313429.1186247,
+    "timestamp": 1753280914.320209,
     "tags": [
       "dunder methods",
       "metaprogramming",
@@ -4842,7 +4842,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/077.piece-table-data-structure": {
-    "timestamp": 1723313429.1030798,
+    "timestamp": 1753280910.9452443,
     "tags": [
       "algorithms",
       "data structures",
@@ -4857,7 +4857,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/073.customise-the-repl-on-start-up": {
-    "timestamp": 1723313429.0995557,
+    "timestamp": 1753280910.2204542,
     "tags": [
       "productivity",
       "programming",
@@ -4871,7 +4871,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/088.pythons-soft-keywords": {
-    "timestamp": 1723313429.1150775,
+    "timestamp": 1753280913.3540034,
     "tags": [
       "parsers",
       "programming",
@@ -4885,7 +4885,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/018.suppressing-errors-with-contextlib": {
-    "timestamp": 1723313429.0044444,
+    "timestamp": 1753280888.7712972,
     "tags": [
       "programming",
       "python"
@@ -4898,7 +4898,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/020.open-0": {
-    "timestamp": 1723313429.0080087,
+    "timestamp": 1753280890.107365,
     "tags": [
       "programming",
       "python"
@@ -4911,7 +4911,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/102.ctrl-left-and-ctrl-right-not-working-in-the-python-repl-on-macos": {
-    "timestamp": 1723313429.155954,
+    "timestamp": 1753280917.6621995,
     "tags": [
       "programming",
       "python",
@@ -4925,7 +4925,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/004.c3-linearisation": {
-    "timestamp": 1723486195.3704805,
+    "timestamp": 1753280883.6813788,
     "tags": [
       "algorithms",
       "programming",
@@ -4939,7 +4939,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/091.issue-user-warnings": {
-    "timestamp": 1723313429.117488,
+    "timestamp": 1753280914.069175,
     "tags": [
       "programming",
       "python"
@@ -4952,7 +4952,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/107.automatically-activating-virtual-environments": {
-    "timestamp": 1739273876.4595094,
+    "timestamp": 1753280918.8210044,
     "tags": [
       "llm",
       "productivity",
@@ -4967,7 +4967,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/033.transposed-convolution": {
-    "timestamp": 1723313429.022935,
+    "timestamp": 1753280893.9874163,
     "tags": [
       "apl",
       "machine learning",
@@ -4982,7 +4982,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/041.how-to-commit-part-of-a-file-with-git": {
-    "timestamp": 1723313429.0483673,
+    "timestamp": 1753280896.8866775,
     "tags": [
       "programming"
     ],
@@ -4994,7 +4994,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/057.optimising-images-for-the-web": {
-    "timestamp": 1723313429.0747743,
+    "timestamp": 1753280902.9470785,
     "tags": [
       "programming",
       "python",
@@ -5008,7 +5008,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/031.understanding-svg-viewbox": {
-    "timestamp": 1723313429.0219486,
+    "timestamp": 1753280893.2711565,
     "tags": [
       "programming"
     ],
@@ -5020,7 +5020,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/078.context-variables": {
-    "timestamp": 1723313429.1040769,
+    "timestamp": 1753280911.129151,
     "tags": [
       "concurrency",
       "programming",
@@ -5034,7 +5034,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/067.vscode-extension-for-custom-syntax-highlighting": {
-    "timestamp": 1723313429.096274,
+    "timestamp": 1753280909.101952,
     "tags": [
       "textual",
       "vscode"
@@ -5047,7 +5047,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/008.two-pass-join": {
-    "timestamp": 1723486195.3713186,
+    "timestamp": 1753280885.3237998,
     "tags": [
       "algorithms",
       "programming",
@@ -5061,7 +5061,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/012.at-operator-for-matrix-multiplication": {
-    "timestamp": 1723313428.9977233,
+    "timestamp": 1753280886.6453068,
     "tags": [
       "mathematics",
       "numpy",
@@ -5076,7 +5076,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/079.textual-app-notifications": {
-    "timestamp": 1723313429.104807,
+    "timestamp": 1753280911.3364995,
     "tags": [
       "programming",
       "python",
@@ -5090,7 +5090,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/028.disassemble-python": {
-    "timestamp": 1723313429.0180676,
+    "timestamp": 1753280892.5033865,
     "tags": [
       "interpreters",
       "programming",
@@ -5104,7 +5104,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/011.emojis-in-python-with-pythonji": {
-    "timestamp": 1723313428.9974215,
+    "timestamp": 1753280886.336781,
     "tags": [
       "programming",
       "python"
@@ -5117,7 +5117,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/044.pyscript": {
-    "timestamp": 1723313429.0570312,
+    "timestamp": 1753280897.903761,
     "tags": [
       "programming",
       "python",
@@ -5131,7 +5131,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/081.find-commits-that-affected-a-file": {
-    "timestamp": 1723313429.1103594,
+    "timestamp": 1753280911.7450411,
     "tags": [
       "git",
       "productivity",
@@ -5145,7 +5145,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/083.sentinel-value-for-default-arguments": {
-    "timestamp": 1723313429.1124911,
+    "timestamp": 1753280912.1780274,
     "tags": [
       "programming",
       "python",
@@ -5159,7 +5159,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/032.tsne-for-dimensionality-reduction": {
-    "timestamp": 1723313429.0223086,
+    "timestamp": 1753280893.653523,
     "tags": [
       "mathematics",
       "visualisation"
@@ -5172,7 +5172,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/053.precision-of-python-floats": {
-    "timestamp": 1723313429.0658472,
+    "timestamp": 1753280901.001038,
     "tags": [
       "floats",
       "mathematics",
@@ -5188,7 +5188,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/007.nextafter": {
-    "timestamp": 1723486195.3710907,
+    "timestamp": 1753280884.421605,
     "tags": [
       "arithmetic",
       "mathematics",
@@ -5203,7 +5203,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/080.how-to-draw-a-bezier-curve": {
-    "timestamp": 1723313429.109881,
+    "timestamp": 1753280911.536446,
     "tags": [
       "mathematics",
       "programming",
@@ -5219,7 +5219,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/061.debugging-other-modules-in-vscode": {
-    "timestamp": 1723313429.0903192,
+    "timestamp": 1753280904.5284605,
     "tags": [
       "programming",
       "python",
@@ -5233,7 +5233,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/058.do-not-cache-generators": {
-    "timestamp": 1723313429.0790057,
+    "timestamp": 1753280903.5116017,
     "tags": [
       "generators",
       "optimisation",
@@ -5248,7 +5248,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/108.date-sequences-in-polars": {
-    "timestamp": 1733856099.2535675,
+    "timestamp": 1753280919.0281632,
     "tags": [
       "polars",
       "programming",
@@ -5262,7 +5262,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/005.string-unpacking": {
-    "timestamp": 1723486195.370772,
+    "timestamp": 1753280883.9289744,
     "tags": [
       "programming",
       "python"
@@ -5275,7 +5275,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/084.type-statement-and-type-aliases": {
-    "timestamp": 1723313429.1129127,
+    "timestamp": 1753280912.3790367,
     "tags": [
       "programming",
       "python",
@@ -5289,7 +5289,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/042.how-to-do-beautiful-console-logging": {
-    "timestamp": 1723313429.0551045,
+    "timestamp": 1753280897.2462015,
     "tags": [
       "programming",
       "python"
@@ -5302,7 +5302,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/using-an-llm-to-write-a-countdown-timer": {
-    "timestamp": 1737828358.5943131,
+    "timestamp": 1753281895.6674042,
     "tags": [
       "llm",
       "opinion",
@@ -5320,7 +5320,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/112.re-match-groupdict": {
-    "timestamp": 1737554694.6782486,
+    "timestamp": 1753280919.953074,
     "tags": [
       "programming",
       "python",
@@ -5334,7 +5334,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/113.standalone-executable-python-scripts-with-uv": {
-    "timestamp": 1737579543.218597,
+    "timestamp": 1753280920.1708462,
     "tags": [
       "programming",
       "python",
@@ -5349,7 +5349,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/114.implicit-casting-in-dataframe-concatenation": {
-    "timestamp": 1737659627.4824367,
+    "timestamp": 1753280920.3793557,
     "tags": [
       "polars",
       "programming",
@@ -5363,7 +5363,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/115.nested-easter-eggs": {
-    "timestamp": 1737830390.9086876,
+    "timestamp": 1753280920.5870173,
     "tags": [
       "python"
     ],
@@ -5375,7 +5375,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/116.run-commands-inside-jupyter-notebooks": {
-    "timestamp": 1738078403.2542202,
+    "timestamp": 1753280920.7794564,
     "tags": [
       "productivity",
       "programming"
@@ -5388,7 +5388,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/ignoring-exceptions-with-contextlib-suppress": {
-    "timestamp": 1739273554.1558175,
+    "timestamp": 1753281500.3698635,
     "tags": [
       "programming",
       "python"
@@ -5397,11 +5397,11 @@
       "articles": 1,
       "code_snippets": 5,
       "loc": 26,
-      "words": 616
+      "words": 611
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/using-uv-to-build-and-install-python-cli-apps": {
-    "timestamp": 1739897565.2818723,
+    "timestamp": 1753281904.1821954,
     "tags": [
       "programming",
       "python",
@@ -5412,11 +5412,11 @@
       "articles": 1,
       "code_snippets": 16,
       "loc": 66,
-      "words": 1602
+      "words": 1592
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/building-a-python-compiler-and-interpreter-10-elif-and-else": {
-    "timestamp": 1739483463.9659066,
+    "timestamp": 1753281320.9807487,
     "tags": [
       "bpci",
       "compilers",
@@ -5428,11 +5428,11 @@
       "articles": 1,
       "code_snippets": 15,
       "loc": 173,
-      "words": 1073
+      "words": 1061
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/context-managers-with-contextlib-contextmanager": {
-    "timestamp": 1740672326.0200388,
+    "timestamp": 1753281356.4827006,
     "tags": [
       "dunder methods",
       "programming",
@@ -5446,7 +5446,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/verifying-tautologies-with-haskell": {
-    "timestamp": 1739633130.3741617,
+    "timestamp": 1753281908.3781297,
     "tags": [
       "haskell",
       "logic",
@@ -5456,11 +5456,11 @@
       "articles": 1,
       "code_snippets": 0,
       "loc": 0,
-      "words": 632
+      "words": 627
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/the-formula-that-plots-itself": {
-    "timestamp": 1739635890.4329312,
+    "timestamp": 1753281976.265075,
     "tags": [
       "binary",
       "mathematics",
@@ -5475,11 +5475,11 @@
       "articles": 1,
       "code_snippets": 0,
       "loc": 0,
-      "words": 653
+      "words": 647
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/mathy-broccoli": {
-    "timestamp": 1739636363.3289404,
+    "timestamp": 1753281586.4992561,
     "tags": [
       "fractals",
       "geometry",
@@ -5490,11 +5490,11 @@
       "articles": 1,
       "code_snippets": 0,
       "loc": 0,
-      "words": 518
+      "words": 515
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/beating-linkedin-queens-with-python": {
-    "timestamp": 1741181173.5222678,
+    "timestamp": 1753281218.731743,
     "tags": [
       "algorithms",
       "image processing",
@@ -5507,11 +5507,11 @@
       "articles": 1,
       "code_snippets": 25,
       "loc": 574,
-      "words": 2028
+      "words": 2022
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/117.publishing-a-python-package-with-uv": {
-    "timestamp": 1740596419.4846194,
+    "timestamp": 1753280920.9780352,
     "tags": [
       "productivity",
       "programming",
@@ -5526,7 +5526,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/118.git-checkout-": {
-    "timestamp": 1740596743.5585043,
+    "timestamp": 1753280921.16191,
     "tags": [
       "git",
       "productivity"
@@ -5539,7 +5539,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/119.coauthored-commits": {
-    "timestamp": 1740676710.0622392,
+    "timestamp": 1753280921.3452966,
     "tags": [
       "github"
     ],
@@ -5551,7 +5551,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/javascript-2d-scrolling-game-tutorial": {
-    "timestamp": 1740786206.3236792,
+    "timestamp": 1753281528.630524,
     "tags": [
       "game",
       "javascript",
@@ -5561,11 +5561,11 @@
       "articles": 1,
       "code_snippets": 33,
       "loc": 425,
-      "words": 5306
+      "words": 5300
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/binary-search-as-a-bidirectional-generator": {
-    "timestamp": 1741015297.037512,
+    "timestamp": 1753281231.3128211,
     "tags": [
       "algorithms",
       "generators",
@@ -5576,11 +5576,11 @@
       "articles": 1,
       "code_snippets": 6,
       "loc": 144,
-      "words": 856
+      "words": 849
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/120.circle-vs-rectangle-collision-detection": {
-    "timestamp": 1744894736.6057153,
+    "timestamp": 1753280921.5196824,
     "tags": [
       "geometry",
       "javascript",
@@ -5594,7 +5594,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/121.use-pip-directly-from-a-uv-virtual-environment": {
-    "timestamp": 1741793709.660472,
+    "timestamp": 1753280921.6957357,
     "tags": [
       "productivity",
       "python",
@@ -5608,7 +5608,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/module-enum-overview": {
-    "timestamp": 1746121399.7467237,
+    "timestamp": 1753281606.5877275,
     "tags": [
       "modules",
       "programming",
@@ -5618,11 +5618,11 @@
       "articles": 1,
       "code_snippets": 43,
       "loc": 269,
-      "words": 2464
+      "words": 2460
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/122.cli-tools-with-extra-dependencies": {
-    "timestamp": 1746348455.1417592,
+    "timestamp": 1753280921.870104,
     "tags": [
       "productivity",
       "python",
@@ -5636,7 +5636,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/123.the-appearing-builtin": {
-    "timestamp": 1747840961.7830608,
+    "timestamp": 1753280922.037892,
     "tags": [
       "programming",
       "python",
@@ -5650,7 +5650,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/automatically-pushing-code-changes-during-live-coding-with-uv": {
-    "timestamp": 1747235810.101031,
+    "timestamp": 1753281193.7225242,
     "tags": [
       "git",
       "productivity",
@@ -5662,11 +5662,11 @@
       "articles": 1,
       "code_snippets": 3,
       "loc": 48,
-      "words": 307
+      "words": 297
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/personal-highlights-of-pycon-us-2025": {
-    "timestamp": 1749051344.9836037,
+    "timestamp": 1753281739.9512372,
     "tags": [
       "conferences",
       "opinion",
@@ -5676,21 +5676,21 @@
       "articles": 1,
       "code_snippets": 0,
       "loc": 0,
-      "words": 1914
+      "words": 1907
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/how-to-create-a-python-package-in-2025": {
-    "timestamp": 1747693255.5988834,
+    "timestamp": 1753281482.1872365,
     "tags": [],
     "stats": {
       "articles": 1,
       "code_snippets": 8,
       "loc": 31,
-      "words": 712
+      "words": 703
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/124.thousands-separators": {
-    "timestamp": 1748270119.1157174,
+    "timestamp": 1753280922.2203674,
     "tags": [
       "programming",
       "python"
@@ -5703,7 +5703,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/who-wants-to-be-a-millionaire": {
-    "timestamp": 1748632668.9341586,
+    "timestamp": 1753281931.6617723,
     "tags": [
       "python",
       "quiz"
@@ -5712,7 +5712,7 @@
       "articles": 1,
       "code_snippets": 1,
       "loc": -1,
-      "words": 221
+      "words": 214
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/pycon-italy-2025-quiz": {
@@ -5729,7 +5729,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/python-quiz-pycon-italia-2025-edition": {
-    "timestamp": 1748698338.580494,
+    "timestamp": 1753281763.2803016,
     "tags": [
       "python",
       "quiz"
@@ -5738,11 +5738,11 @@
       "articles": 1,
       "code_snippets": 0,
       "loc": 0,
-      "words": 759
+      "words": 754
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/dipping-my-toes-in-metaprogramming": {
-    "timestamp": 1748607715.141945,
+    "timestamp": 1753281394.0681112,
     "tags": [
       "dunder methods",
       "metaprogramming",
@@ -5753,11 +5753,11 @@
       "articles": 1,
       "code_snippets": 27,
       "loc": 166,
-      "words": 2330
+      "words": 2324
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/personal-highlights-of-pycon-italy-2025": {
-    "timestamp": 1751822805.5239565,
+    "timestamp": 1753281736.0950718,
     "tags": [
       "conferences",
       "opinion",
@@ -5767,11 +5767,11 @@
       "articles": 1,
       "code_snippets": 1,
       "loc": 5,
-      "words": 2331
+      "words": 2324
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/regex-in-real-life": {
-    "timestamp": 1749567998.8132873,
+    "timestamp": 1753281769.5546944,
     "tags": [
       "regex",
       "python",
@@ -5782,11 +5782,11 @@
       "articles": 1,
       "code_snippets": 7,
       "loc": 61,
-      "words": 447
+      "words": 442
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/125.images-in-docstrings": {
-    "timestamp": 1751821257.4966018,
+    "timestamp": 1753280922.394929,
     "tags": [
       "productivity",
       "vscode"
@@ -5799,7 +5799,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/python-quiz-europython-2025-edition": {
-    "timestamp": 1752700444.3932338,
+    "timestamp": 1753281759.5622678,
     "tags": [
       "python",
       "quiz"
@@ -5808,11 +5808,11 @@
       "articles": 1,
       "code_snippets": 4,
       "loc": 20,
-      "words": 816
+      "words": 812
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/personal-highlights-of-europython-2025": {
-    "timestamp": 1753043876.9060068,
+    "timestamp": 1753281725.5871835,
     "tags": [
       "conferences",
       "opinion",
@@ -5822,11 +5822,11 @@
       "articles": 1,
       "code_snippets": 0,
       "loc": 0,
-      "words": 64
+      "words": 58
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/127.dynamically-changing-the-type": {
-    "timestamp": 1753043671.5431366,
+    "timestamp": 1753280922.7457247,
     "tags": [
       "oop",
       "programming",
@@ -5840,7 +5840,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/126.hash-of-infinity": {
-    "timestamp": 1753043054.7746549,
+    "timestamp": 1753280922.563113,
     "tags": [
       "algorithms",
       "mathematics",
@@ -5855,7 +5855,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/128.matching-prefixes-and-suffixes-with-regex": {
-    "timestamp": 1753273761.4683335,
+    "timestamp": 1753280926.6774874,
     "tags": [],
     "stats": {
       "articles": 1,

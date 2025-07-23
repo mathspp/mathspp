@@ -2,7 +2,7 @@ Today I learned what precision Python floats have.
 
 ===
 
-# Precision of Python floats
+## Precision of Python floats
 
 Python floats are IEEE 754 double-precision binary floating-point numbers,
 commonly referred to as “doubles”, and take up 64 bits.

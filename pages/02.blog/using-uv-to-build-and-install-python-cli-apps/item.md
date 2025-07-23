@@ -2,8 +2,6 @@ This practical tutorial shows how to use uv to build and install custom Python C
 
 ===
 
-# Using uv to build and install Python CLI apps
-
 I find myself writing Python scripts that automate certain parts of my work or life and then I want to turn them into commands in my system.
 This short tutorial will show you how I do that using uv.
 

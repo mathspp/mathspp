@@ -3,7 +3,7 @@ Today I learned how to issue user warnings like DeprecationWarnings or SyntaxWar
 ===
 
 
-# Issue user warnings
+## Issue user warnings
 
 Every once in a while I see a `DeprecationWarning` when I'm doing some coding.
 Last time I saw it, I think it was in some `pandas` code in my [pandas and matplotlib tutorial with Pokémon](/blog/learn-pandas-and-matplotlib-with-pokemon).
@@ -48,13 +48,13 @@ That's because, by default, equal warnings are suppressed.
 What you can do is reset the warnings:
 
 ```pycon
-# Only 1:
+## Only 1:
 >>> for _ in range(5):
 ...     warnings.warn("Warning in a loop")
 ...
 <stdin>:2: UserWarning: Warning in a loop
 
-# All 5 warnings:
+## All 5 warnings:
 >>> for _ in range(5):
 ...     warnings.resetwarnings()
 ...     warnings.warn("Warning in a loop")

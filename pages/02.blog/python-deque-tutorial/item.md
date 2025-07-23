@@ -2,8 +2,6 @@ This tutorial teaches how to work with the Python data structure `collections.de
 
 ===
 
-# Python `deque` tutorial
-
 If you already know how to manipulate a `deque`, feel free to [skip to the example use cases](#deque-examples)!
 
 ## What is a `deque`?

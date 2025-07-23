@@ -4,7 +4,7 @@ This article explains how to extend the JSON format by using a custom encoder an
 
 ![There is a blurry background that looks like a tunnel, but in front of that you can find the JSON and the Python logos, with two arrows pointing in each direction, giving a sense of interchangeability.](thumbnail.webp)
 
-# Custom JSON encoder and decoder
+## Custom JSON encoder and decoder
 
 The Python module `json` allows you to work with the JSON data format.
 In previous articles,
@@ -18,7 +18,7 @@ My goal is to define a mechanism through which you can easily define small, atom
 and to have them all operate together.
 
 
-# Extending the JSON format
+## Extending the JSON format
 
 I think it will be easier to understand what I want to achieve if I show you how I want the end product to look like.
 
@@ -52,7 +52,7 @@ The point, here, is that I want to make it as easy as possible to extend the JSO
 simply by providing the encoders and the decoders for each new type you want to be able to handle.
 
 
-# Automatically recognising non-standard JSON
+## Automatically recognising non-standard JSON
 
 The main issue I have to struggle with is in defining the mechanism that will allow the custom JSON decoder to recognise that certain JSON objects should actually be parsed into something else.
 For example, in the previous [article about custom JSON decoding][til-json-decoder],
@@ -102,13 +102,13 @@ We have two options here:
 I will go with the second option.
 
 
-# Adapting the JSON format to be injective
+## Adapting the JSON format to be injective
 
 The strategy that I will implement will revolve around using (JSON) dictionaries to encode our new arbitrary types,
 together with the usage of a special key to disambiguate between the non-standard encodings and native Python dictionaries that were unlucky enough to look like something else.
 
 
-## Special key
+### Special key
 
 Let us say that the special key will be something like `"__extended_json_type__"`.
 Thus, whenever we encode a non-standard object into JSON, we have to annotate the resulting dictionary with that key.
@@ -141,7 +141,7 @@ By providing the key `"__extended_json_type__"`, the decoder will know this was 
 Except...
 
 
-## Native dictionaries with the special key
+### Native dictionaries with the special key
 
 Suppose that, _for some annoying reason_,
 you have the following Python dictionary:
@@ -163,7 +163,7 @@ The special key also makes it _less likely_ for collisions to happen,
 although it does not get rid of them entirely.
 
 
-# Implementing the encoding mechanism
+## Implementing the encoding mechanism
 
 At this point, I already have a pretty clear picture of what I have to do, and how, so let me show you the code and walk you through it.
 
@@ -205,7 +205,7 @@ If something isn't clear, feel free to ask for further clarifications!
 The decoding mechanism follows a similar approach, as I will show you next.
 
 
-# Implementing the decoding mechanism
+## Implementing the decoding mechanism
 
 Here is the code for the decoding mechanism:
 
@@ -244,7 +244,7 @@ Now that we have defined the encoding and decoding mechanisms,
 we can extend the JSON standard with, for example, complex numbers and Python `range` objects:
 
 
-# Extending JSON with complex numbers and `range` objects
+## Extending JSON with complex numbers and `range` objects
 
 Assuming you have the definitions of `ExtendedEncoder` and `ExtendedDecoder`,
 this is how you could extend JSON to support complex numbers and `range` objects:
@@ -294,13 +294,13 @@ Obviously, you can also go back to retrieve the original data:
 ```py
 decoded = json.loads(json_data, cls=MyDecoder)
 print(decoded)
-# {'hey': (1+2j), 'there': range(1, 10, 3), '!': False}
+## {'hey': (1+2j), 'there': range(1, 10, 3), '!': False}
 ```
 
 And that's it!
 
 
-# Conclusion
+## Conclusion
 
 The classes `ExtendedEncoder` and `ExtendedDecoder` provide a convenient way of extending the JSON standard:
 

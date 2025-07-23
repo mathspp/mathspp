@@ -3,7 +3,7 @@ Today I learned you can embed images in your module docstrings and they'll be re
 ===
 
 
-# Images in docstrings
+## Images in docstrings
 
 [As it turns out](https://bsky.app/profile/physicssux.bsky.social/post/3lt4rudnbyc2v), VS Code (and likely other editors, too) render docstrings as Markdown.
 That means you can add images to your docstrings using Markdown syntax and they will be rendered.
@@ -42,7 +42,7 @@ When I used it in my other file and hovered over its name, I saw the GIF animati
 
 This is pretty hilarious but a reasonable use case might be to include diagrams for complex functions...
 
-## Try it yourself!
+### Try it yourself!
 
 Give it a go yourself!
 Open an arbitrary Python file and paste this code in:

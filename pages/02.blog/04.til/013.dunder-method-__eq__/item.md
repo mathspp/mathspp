@@ -7,9 +7,9 @@ Today I learned how the rich comparison protocol and, in particular, how __eq__ 
 ![](thumbnail.webp "Photo by Михаил Секацкий on Unsplash")
 
 
-# Rich comparison
+## Rich comparison
 
-## Prelude
+### Prelude
 
 The rich comparisons are just the comparison operators we are used to:
 `<`, `<=`, `==`, `>=`, `>`, and `!=`.
@@ -78,7 +78,7 @@ Now, obviously the built-in types won't be able to compare themselves to your cu
 but your objects can implement `__eq__` and that will suffice!
 
 
-## Comparisons return Booleans and methods return `NotImplemented`
+### Comparisons return Booleans and methods return `NotImplemented`
 
 All of the above makes a lot of sense.
 At least, it made to me.
@@ -112,7 +112,7 @@ After [reading the docs on rich comparisons][docs] a couple of times
 I eventually ended up staring at [the C code that solves my conundrum][C-code-solution]:
 
 
-## `==` is special-cased
+### `==` is special-cased
 
 `==` and `!=` never fail.
 What this means is that they _always_ return a Boolean value!

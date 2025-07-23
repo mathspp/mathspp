@@ -3,7 +3,7 @@ Learn how I used Python in my daily life to convert 5,000 RAW images into the JP
 ===
 
 
-# Introduction
+## Introduction
 
 I have a folder with 4,902 RAW images and I want to convert them into the format JPEG to make it easier to share them with friends and family.
 

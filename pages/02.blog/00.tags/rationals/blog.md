@@ -14,10 +14,10 @@ hero_image_url: /user/themes/myquark/images/common_hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 metadata:
     author: Rodrigo Girão Serrão
-    description: "All of the mathspp blog articles about rationals."
-    og:description: "All of the mathspp blog articles about rationals."
-    og:image: "https://mathspp.com/blog/tags/rationals/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/rationals/thumbnail.webp"
+    description: "All of the mathspp blog articles about Rationals."
+    og:description: "All of the mathspp blog articles about Rationals."
+    og:image: "https://mathspp.com/blog/tags/Rationals/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/Rationals/thumbnail.webp"
 title: "Rationals blog articles"
 ---
 
@@ -29,7 +29,7 @@ title: "Rationals blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">1</th>
-            <th style="text-align: center;">104</th>
+            <th style="text-align: center;">101</th>
             
         </tr>
     </thead>

@@ -19,7 +19,7 @@ in Python 3.10.
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)
 
-# Introduction
+## Introduction
 
 In this Pydon't we will go over deep unpacking:
  - what it is;
@@ -30,12 +30,12 @@ In this Pydon't we will go over deep unpacking:
 Learning about deep unpacking will be **very** helpful in order to pave the road
 for [structural matching][pep-634], a feature to be introduced in Python 3.10.
 
-# Assignments
+## Assignments
 
 Before showing you how deep unpacking works,
 let's have a quick look at two other nice features about Python's assignments.
 
-## Multiple assignment
+### Multiple assignment
 
 In Python, multiple assignment is what allows you to write things like
 
@@ -62,7 +62,7 @@ or
 With multiple assignment you can assign, well, multiple variables at the same time,
 provided the right-hand side has as many items as the left-hand side expects.
 
-## Starred assignment
+### Starred assignment
 
 Starred assignment, that I covered in depth in [this Pydon't][pydont-starred-assignment],
 allows you to write things like
@@ -86,7 +86,7 @@ With starred assignment you can tell Python that you are not sure how many
 items the right-hand side will have, but all of them can be stored
 in a single place.
 
-## Deep unpacking
+### Deep unpacking
 
 Deep unpacking, or nested unpacking, is similar to multiple assignment in a sense.
 Multiple assignment allows you to match the length of an iterable,
@@ -167,7 +167,7 @@ next to the value it is getting, it becomes very clear what values go where:
 !!! This was removed with [PEP 3113][pep-3113].
 
 
-## In loops
+### In loops
 
 Deep unpacking can also be used in the implicit assignments of `for` loops,
 it doesn't have to be in explicit assignments with an equals sign!
@@ -179,9 +179,9 @@ and can help you test your code for some errors and bugs.
 
 Nothing better than showing you some code, so you can see for yourself.
 
-# Examples in code
+## Examples in code
 
-## Increasing expressiveness
+### Increasing expressiveness
 
 Given the RGB values of a colour, you can apply a basic formula to convert it to greyscale,
 which weighs the R, G, and B components differently.
@@ -256,7 +256,7 @@ greyscales = [
 print(greyscales)  # [246.8, 224.68, 109.45]
 ```
 
-## Catching bugs
+### Catching bugs
 
 I said earlier that deep unpacking can also help you find bugs in your code.
 It is not hard to believe that the `colours` list of the previous example
@@ -317,7 +317,7 @@ you will find the bug!
 All in all, deep unpacking (or the chance to use it) isn't something you come across
 very often, but when you do, it is nice knowing how to use it to your advantage.
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this article, for you, on a silver platter:
 
@@ -336,7 +336,7 @@ If you liked this Pydon't be sure to leave a reaction below and share this with 
 Also, [don't forget to subscribe to the newsletter][subscribe] so you don't miss
 a single Pydon't!
 
-# References
+## References
 
  - PEP 634 -- Structural Pattern Matching: Specification, [https://www.python.org/dev/peps/pep-0634/][pep-634];
  - PEP 3113 -- Removal of Tuple Parameter Unpacking, [https://www.python.org/dev/peps/pep-3113/][pep-3113];

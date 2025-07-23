@@ -10,7 +10,7 @@ Can you find a really large triangle that is also really tiny?
 
 ![](thumbnail.webp)
 
-# Problem statement
+## Problem statement
 
 Does there exist a triangle that has an area larger than the Earth's surface
 (approximately 510 million km²)
@@ -23,7 +23,7 @@ I saw this problem in the Facebook page of [a group of maths students from a loc
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solution
+## Solution
 
 Yes! There exists such a triangle.
 

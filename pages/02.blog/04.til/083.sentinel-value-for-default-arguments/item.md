@@ -3,9 +3,9 @@ Today I learned how to create a sentinel value to use as a default argument in a
 ===
 
 
-# Sentinel value for default arguments
+## Sentinel value for default arguments
 
-## Context
+### Context
 
 Today at work I had a problem.
 I was working on a progress bar that [Textual] has:
@@ -43,7 +43,7 @@ For example, if you create a progress bar `pb` and then call `pb.update(total=10
 What's the problem, then?
 
 
-## Using another default value instead of `None`
+### Using another default value instead of `None`
 
 The default value for `total` is `None`, but the truth is that I also want to be able to set `total` to `None`, because that turns the progress bar into its indeterminate/pulsing state.
 So, how can I do this?
@@ -88,7 +88,7 @@ And I want to have the code typed correctly, if possible.
 So, how do we solve this?
 
 
-## Using `object` as the default value
+### Using `object` as the default value
 
 My next thought went to using `object` as the default value.
 So, something like this:
@@ -141,7 +141,7 @@ And I got it to work with a bit of help!
 But it was way more complicated than the solution I'm about to present next.
 
 
-## Create a sentinel class
+### Create a sentinel class
 
 A simple solution that satisfies the type-checker involves creating an empty sentinel class!
 Then, you create an instance of that class and use it as the default value for the parameters.

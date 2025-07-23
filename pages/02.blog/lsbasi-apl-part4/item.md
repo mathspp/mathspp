@@ -15,7 +15,7 @@ to write about and I realised I did _way_ too much to fit in a single blog post.
 So while RGSPL v0.4 is out, I'm going to split it in a couple of blog posts.
 You can see all the changes from v0.3 to v0.4 [here][changes].
 
-# Today
+## Today
 
 The RGSPL v0.4 is essentially v0.3 plus the exercises of the previous blog post,
 and that represents plenty of changes and additions to our code base.
@@ -27,7 +27,7 @@ In this article we will only cover a few:
  - implement the shape and reshape functions (monadic and dyadic `⍴`); and
  - implement the atop operator `⍤`.
 
-## Next time
+### Next time
 
 Here are the changes we still have to go through in the next blog posts.
 
@@ -42,7 +42,7 @@ Here are the changes we still have to go through in the next blog posts.
  - implement the Boolean functions `∧∨⍲⍱`;
  - implement the encode and decode functions `⊤⊥`;
 
-## The code
+### The code
 
 [![](https://img.shields.io/github/stars/RojerGS/RGSPL?style=social)][rgspl-repo]
 
@@ -53,7 +53,7 @@ and the code for this specific blog post is [the release v0.4][rgspl4].
 
 ---
 
-# Testing
+## Testing
 
 Unit testing is a really important thing for several reasons, for example
 it provides an automated way to test your code
@@ -168,9 +168,9 @@ In writing tests for the tokenizer I immediately started finding
 bugs and errors, so let's cover those changes next.
 
 
-# `Token` and `Tokenizer` tweaks
+## `Token` and `Tokenizer` tweaks
 
-## Parsing numbers with empty integer part
+### Parsing numbers with empty integer part
 
 The bug that I found was that some decimal numbers were not being tokenized appropriately.
 For example, `.3` is a valid decimal in APL but my tokenizer didn't support it.
@@ -208,7 +208,7 @@ class Tokenizer:
         self.error("Could not parse the next token...")
 ```
 
-## Comparing tokens and grouping them
+### Comparing tokens and grouping them
 
 Because of the unit tests we need a way to check if two `Token` objects
 are the same, so I had to implement the `__eq__` dunder method
@@ -231,7 +231,7 @@ I just didn't have a constant list to refer to:
 ```py
 ARRAY_TOKENS = [INTEGER, FLOAT, COMPLEX, ID]
 
-# ...
+## ...
 class Parser:
     # ...
     def parse_statement(self):
@@ -264,7 +264,7 @@ class Parser:
 ```
 
 
-# Toggling debugging information
+## Toggling debugging information
 
 I quickly grew tired of having the interpreter always print to my face
 the debugging information that I get when I have the keyword
@@ -290,7 +290,7 @@ if __name__ == "__main__":
             print(Interpreter(Parser(Tokenizer(expr), debug=args.debug)).interpret())           # ← ditto
 ```
 
-# Shape and reshape functions
+## Shape and reshape functions
 
 The _shape_ and _reshape_ functions are, respectively, the monadic and dyadic cases
 of the primitive `⍴`.
@@ -339,7 +339,7 @@ def rho(*, alpha=None, omega):
         return APLArray(shape, data)
 ```
 
-# Atop operator
+## Atop operator
 
 Even simpler than the _shape_ and _reshape_ functions is the _atop_ operator `⍤`.
 `⍤` is very similar to `∘` and `⍥` which are already implemented, so it really is a breeze
@@ -361,7 +361,7 @@ def atop(*, aalpha, oomega):
     return derived
 ```
 
-# The series
+## The series
 
 This is a series that I am working slowly but steadily on.
 Feel free to ping me in the comments or over email

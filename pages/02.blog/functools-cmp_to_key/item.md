@@ -2,9 +2,6 @@ In this article I explore `functools.cmp_to_key` and propose a possible implemen
 
 ===
 
-
-# `functools.cmp_to_key`
-
 The [module `functools` provides a function `cmp_to_key`](https://docs.python.org/3/library/functools.html#functools.cmp_to_key) whose documentation says
 
  > “Transform an old-style comparison function to a key function. Used with tools that accept key functions (such as `sorted()`, `min()`, `max()`, [...]) [...]

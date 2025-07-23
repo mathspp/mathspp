@@ -29,7 +29,7 @@ title: "Git blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">9</th>
-            <th style="text-align: center;">2,633</th>
+            <th style="text-align: center;">2,615</th>
             <th style="text-align: center;">166</th>
         </tr>
     </thead>

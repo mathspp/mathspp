@@ -14,7 +14,7 @@ In this Pydon't you'll learn the importance of using good names and I'll give so
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 Names are like real estate in our brains.
 They are labels we give to things, concepts, ideas, objects,
@@ -38,7 +38,7 @@ In this Pydon't, you will:
 <!--^-->
 
 
-# Naming conventions
+## Naming conventions
 
 When we talk about names, there are two things that need to be discussed.
 One of them is the actual name that you give to things,
@@ -69,7 +69,7 @@ it tells you what the underscores do for you if in the
 beginning and/or end of a name.
 
 
-# PEP 8 recommendations
+## PEP 8 recommendations
 
 [PEP 8][pep8] is a document – a Python Enhancement Proposal –
 that contains a style guide for Python, and it is the most widely
@@ -85,7 +85,7 @@ Remember that being consistent is more important than
 following the PEP 8 guide.
 
 
-## PascalCase
+### PascalCase
 
 You can find the PascalCase convention often on classes.
 That is the most common use case for this convention.
@@ -130,7 +130,7 @@ include exceptions – which shouldn't surprise you
 because exceptions come from classes –,
 and type variables.
 
-## snake_case
+### snake_case
 
 The snake_case naming convention is the bread and butter
 of naming in Python.
@@ -163,7 +163,7 @@ So, for example, you cannot have a variable called `for`,
 but you could call it `for_`.
 
 
-## CAPS_LOCK_WITH_UNDERSCORES
+### CAPS_LOCK_WITH_UNDERSCORES
 
 This naming convention, that might look a bit clunky
 to you, is actually used to represent global constants.
@@ -187,12 +187,12 @@ LOG_FILE = "logs/app.log"
 ```
 
 
-# Standard names
+## Standard names
 
 There are a few cases where certain names are the golden standard
 in those situations.
 
-## `self`
+### `self`
 
 A great example of that is the name of the first argument to instance methods.
 The first argument of such a method is always `self`.
@@ -239,7 +239,7 @@ Ok, let's not get fundamental here,
 it's just a matter of respecting the one Python convention
 that is probably the most widely used.
 
-## `cls`
+### `cls`
 
 In a similar setting, `cls` is the widely accepted name for class methods.
 
@@ -266,7 +266,7 @@ we are creating a dictionary (or, in other words, an instance of the class `dict
 in a different way from what is the usual way.
 
 
-# Verbosity
+## Verbosity
 
 Having discussed some of the most widely spread conventions when dealing with names in Python,
 I will now share my experience regarding good naming principles.
@@ -315,7 +315,7 @@ and only use it far down the file, or even in other files or modules,
 then it is probably best if you use a longer, more descriptive name.
 
 
-## One-char names
+### One-char names
 
 At one of the ends of the spectrum are one-character names.
 One-character names consist of a letter, either uppercase or lowercase,
@@ -389,7 +389,7 @@ For example, `idx` instead of `i` makes it clearer that we are talking about an 
 and `char` instead of `c` makes it clearer that we are talking about a character.
 
 
-## Abbreviations
+### Abbreviations
 
 Abbreviations need to be used sparingly.
 They might make sense if it is a widely recognise abbreviation...
@@ -441,7 +441,7 @@ is a perfectly acceptable name for the consecutive elements of `data_sets`,
 as that name only lives inside the list comprehension.
 
 
-## Sentences
+### Sentences
 
 Rather than having names like
 
@@ -490,7 +490,7 @@ when using calling your function.
 Nowadays, IDEs will show the docstring of the functions we are calling in our code.
 
 
-# Picking a name
+## Picking a name
 
 When picking the actual name for whatever it is that you need to name,
 remember to:
@@ -538,7 +538,7 @@ something when the value itself is something else.
 I'll show you an example of this by the end of the Pydon't.
 
 
-## Naming functions and methods
+### Naming functions and methods
 
 A guideline that is specific for functions/methods
 is that they should be named with verbs.
@@ -547,7 +547,7 @@ when called and makes it clear that things _happen_
 when the function/method is called.
 
 
-## Naming variables
+### Naming variables
 
 Similarly, variables are better named with nouns,
 when they refer to entities.
@@ -583,7 +583,7 @@ and thus we are writing our code in a way that is similar to natural
 languages.
 
 
-# Context is key
+## Context is key
 
 This has been mentioned heavily throughout this Pydon't,
 but I want it to be highlighted even more,
@@ -626,7 +626,7 @@ See?
 Context is key.
 
 
-# Practical example
+## Practical example
 
 In [my Pydon'ts talk][pydonts-talk] and in the
 [Pydon't about refactoring][pydont-refactor],
@@ -688,7 +688,7 @@ def alternate_casing(text):
 ```
 
 
-## `myfunc` is now `alternate_casing`
+### `myfunc` is now `alternate_casing`
 
 `myfunc` was a generic name for a function and it gave you
 no information whatsoever as to what the function did.
@@ -708,7 +708,7 @@ That implementation detail is better suited for the docstring
 of the function.
 
 
-## `a` is now `text`
+### `a` is now `text`
 
 Our function accepts a generic string as input.
 There is nothing particularly special or interesting
@@ -718,7 +718,7 @@ I opted for `text` because it gives off the feeling that we will
 be working with human-readable strings.
 
 
-## `empty` is now `letters`
+### `empty` is now `letters`
 
 The variable name `empty` here is a great counter-example
 of one of the guidelines presented before.
@@ -740,7 +740,7 @@ after all, we put all characters in there, not just the letters.
 What name would you use, then?
 
 
-## `i` is now `idx`
+### `i` is now `idx`
 
 `i` is a very typical name for an index and I don't think there
 was anything wrong with it.
@@ -748,7 +748,7 @@ I have a personal preference for the 110% explicit `idx` for an index,
 and that is why I went with it.
 
 
-# Conclusion
+## Conclusion
 
 Having gone through this Pydon't,
 you might be thinking that most of the guidelines

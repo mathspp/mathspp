@@ -16,7 +16,7 @@ This Pydon't will teach you how to use the `set` and `frozenset` Python built-in
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 Python contains a handful of built-in types,
 among which you can find integers, lists, strings, etc...
@@ -38,13 +38,13 @@ In this Pydon't, you will:
 !!! You can get all the Pydon'ts as a [free ebook with over +400 pages and hundreds of tips](/books/pydonts). [Download the ebook “Pydon'ts – write elegant Python code” here](/books/pydonts).
 <!--^-->
 
-# (Mathematical) sets
+## (Mathematical) sets
 
 A set is simply a collection of unique items where order doesn't matter.
 Whenever I have to think of sets, I think of shopping carts.
 
 
-## No ordering
+### No ordering
 
 If you go shopping, and you take a shopping cart with you,
 the order in which you put the items in the shopping cart doesn't matter.
@@ -88,7 +88,7 @@ True
 ```
 
 
-## Uniqueness
+### Uniqueness
 
 Another key property of (mathematical) sets is that there are no duplicate elements.
 It's more or less as if someone told you to go buy cheese,
@@ -110,16 +110,16 @@ Here's proof that Python does the same:
 ```
 
 
-# (Common) Operations on sets
+## (Common) Operations on sets
 
 Sets define many methods, like [the docs][docs-sets] will tell you.
 
 
-## Creation
+### Creation
 
 There are three main ways to create a set.
 
-### Explicit `{}` notation
+#### Explicit `{}` notation
 
 Using the `{}` notation, you write out the elements of the set inside braces
 in a comma-separated list:
@@ -138,7 +138,7 @@ By the way, you *cannot* use `{}` to create an empty set!
 To create empty sets, you need the next method.
 
 
-### Calling `set` on an iterable
+#### Calling `set` on an iterable
 
 You can call the built-in function `set` on any iterable to create a set
 out of the elements of that iterable.
@@ -158,7 +158,7 @@ of the string, not a set containing the whole string:
 >>> {"mississippi"}
 {'mississippi'}
 
-# ↑ different ↓
+## ↑ different ↓
 >>> set("mississippi")
 {'s', 'i', 'p', 'm'}
 ```
@@ -166,7 +166,7 @@ of the string, not a set containing the whole string:
 Calling `set()` by itself will produce an empty set.
 
 
-### Set comprehensions
+#### Set comprehensions
 
 Using `{}`, one can also write what's called a set comprehension.
 Set comprehensions are _very_ similar to list comprehensions,
@@ -196,7 +196,7 @@ And secondly, a set comprehension with two nested `for` loops:
 ! in order to not miss that upcoming Pydon't!
 
 
-## Operations on a single set
+### Operations on a single set
 
 Many common operations are done on/with a single set, namely:
 
@@ -234,7 +234,7 @@ False
 ```
 
 
-## Iteration
+### Iteration
 
 I often relate sets with lists (and tuples).
 Sets are similar to lists with unique elements,
@@ -262,7 +262,7 @@ TypeError: 'set' object is not subscriptable
 ```
 
 
-## Computations with multiple sets
+### Computations with multiple sets
 
 When you have multiple sets (two, or more) you may need
 to do other sorts of operations.
@@ -323,9 +323,9 @@ The corresponding method calls can accept an arbitrary iterator,
 whereas the operator-based versions expect sets.
 
 
-# Differences between `set` and `frozenset`
+## Differences between `set` and `frozenset`
 
-## Creation
+### Creation
 
 While you can create a set with the built-in `set`
 or through the `{}` notation,
@@ -344,7 +344,7 @@ frozenset({'cheese', 'milk', 'chocolate'})
 frozenset({'cheese', 'milk', 'chocolate'})
 ```
 
-## Mutability
+### Mutability
 
 Sets are mutable.
 Sets are said to be mutable because they can change, that's what “mutable” means in English.
@@ -384,7 +384,7 @@ whereas tuples are immutable
 nor can you assign directly to indices):
 
 ```py
-# Lists are mutable:
+## Lists are mutable:
 >>> l = [0, 1, 2]
 >>> l[0] = 73
 >>> l.pop()
@@ -393,7 +393,7 @@ nor can you assign directly to indices):
 >>> l
 [73, 1, 42]
 
-# Tuples are immutable:
+## Tuples are immutable:
 >>> t = (0, 1, 2)
 >>> t[0] = 73
 Traceback (most recent call last):
@@ -409,7 +409,7 @@ AttributeError: 'tuple' object has no attribute 'append'
 ```
 
 
-## To be (hashable) or not to be
+### To be (hashable) or not to be
 
 An object that is hashable is an object for which a hash can be computed,
 hence, hash-_able_.
@@ -462,7 +462,7 @@ TypeError: unhashable type: 'set'
 ```
 
 
-# What are sets used for?
+## What are sets used for?
 
 Quoting [directly from the docs](https://docs.python.org/3/reference/datamodel.html#the-standard-type-hierarchy),
 
@@ -485,13 +485,13 @@ that wrote the pieces of code I will be showing you,
 showcasing good usages of `set`.
 
 
-# Examples in code
+## Examples in code
 
 The examples that follow are my attempts at showing you good usages of
 the built-in types `set` and `frozenset`.
 
 
-## Fast membership checking with `set`
+### Fast membership checking with `set`
 
 The module [`argparse`][argparse] is a built-in module that allows you
 to create command line interfaces.
@@ -500,7 +500,7 @@ The main class, the argument parser `ArgumentParser`,
 contains the following snippet of code:
 
 ```py
-# In Lib/argparse.py from Python 3.9.2
+## In Lib/argparse.py from Python 3.9.2
 class ArgumentParser(_AttributeHolder, _ActionsContainer):
     # ...
     def _parse_known_args(self, arg_strings, namespace):
@@ -559,7 +559,7 @@ then we throw an error!
 Later down the road, we can also find the following:
 
 ```py
-# In Lib/argparse.py from Python 3.9.2
+## In Lib/argparse.py from Python 3.9.2
 class ArgumentParser(_AttributeHolder, _ActionsContainer):
     # ...
     def _parse_known_args(self, arg_strings, namespace):
@@ -594,14 +594,14 @@ After that, if there are any actions in the list `required_actions`,
 then we let the user know that they forgot some things.
 
 
-## Unconditional set addition
+### Unconditional set addition
 
 There is one other neat detail about the previous example, that I'd like to highlight.
 
 Let me show you the snippet that matters:
 
 ```py
-# In Lib/argparse.py from Python 3.9.2
+## In Lib/argparse.py from Python 3.9.2
 class ArgumentParser(_AttributeHolder, _ActionsContainer):
     # ...
     def _parse_known_args(self, arg_strings, namespace):
@@ -619,7 +619,7 @@ but `action` might already be in the set `seen_actions`.
 To make this clear, modify `take_action` to include a `print`:
 
 ```py
-# In Lib/argparse.py from Python 3.9.2
+## In Lib/argparse.py from Python 3.9.2
 class ArgumentParser(_AttributeHolder, _ActionsContainer):
     # ...
     def _parse_known_args(self, arg_strings, namespace):
@@ -656,7 +656,7 @@ Shouldn't we check if an action has been added before adding it?
 Something like
 
 ```py
-# In Lib/argparse.py from Python 3.9.2
+## In Lib/argparse.py from Python 3.9.2
 class ArgumentParser(_AttributeHolder, _ActionsContainer):
     # ...
     def _parse_known_args(self, arg_strings, namespace):
@@ -679,7 +679,7 @@ so you don't have to be worried enforcing it.
 In that sense, this is a great example usage of sets.
 
 
-## Fast membership checking with `frozenset`
+### Fast membership checking with `frozenset`
 
 In the example above, we saw that the sets we were working with
 would grow as the program progressed.
@@ -692,21 +692,21 @@ Why?
 Because using `frozenset` makes it crystal clear that the set is fixed.
 
 ```py
-# In Lib/idlelib/hyperparser.py from Python 3.9.2
+## In Lib/idlelib/hyperparser.py from Python 3.9.2
 
 import string
 
-# ...
+## ...
 
-# all ASCII chars that may be in an identifier
+## all ASCII chars that may be in an identifier
 _ASCII_ID_CHARS = frozenset(string.ascii_letters + string.digits + "_")
-# all ASCII chars that may be the first char of an identifier
+## all ASCII chars that may be the first char of an identifier
 _ASCII_ID_FIRST_CHARS = frozenset(string.ascii_letters + "_")
 
-# lookup table for whether 7-bit ASCII chars are valid in a Python identifier
+## lookup table for whether 7-bit ASCII chars are valid in a Python identifier
 _IS_ASCII_ID_CHAR = [(chr(x) in _ASCII_ID_CHARS) for x in range(128)]
-# lookup table for whether 7-bit ASCII chars are valid as the first
-# char in a Python identifier
+## lookup table for whether 7-bit ASCII chars are valid as the first
+## char in a Python identifier
 _IS_ASCII_ID_FIRST_CHAR = \
     [(chr(x) in _ASCII_ID_FIRST_CHARS) for x in range(128)]
 ```
@@ -722,7 +722,7 @@ So there you have it!
 One more usage of sets for fast membership checking.
 
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this Pydon't, for you, on a silver platter:
 

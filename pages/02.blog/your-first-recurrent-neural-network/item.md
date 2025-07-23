@@ -3,7 +3,7 @@ In this introductory tutorial, you will build a recurrent neural network (RNN) w
 ===
 
 
-# Introduction
+## Introduction
 
 This tutorial will introduce you to [PyTorch][pytorch] and recurrent neural networks (RNNs).
 In this tutorial, you will use the module PyTorch to implement a recurrent neural network that will accept a name, character by character, and will output the language of that name.
@@ -20,7 +20,7 @@ The tutorial you are reading is an adaptation of [this brilliant PyTorch tutoria
 My changes and adaptations include some minor tweaks to the structure of the tutorial and, most notably, updating the source code to a more idiomatic and modern version of Python.
 
 
-# Why recurrent neural networks?
+## Why recurrent neural networks?
 
 Recurrent neural networks are a type of neural network that is suitable for processing streams of information, like the successive characters of a name.
 Other networks like fully-connected networks or convolutional neural networks expect an input of a fixed size, which may be hard to come by when dealing with things that have variable lengths.
@@ -30,14 +30,14 @@ Different names have different lengths, so it would be harder to solve this task
 It _could_ be done, but recurrent neural networks are a much more natural fit for this type of problem.
 
 
-# Setting up
+## Setting up
 
 To follow this tutorial, you need to have [PyTorch] installed on your machine or you can use an online service like [Google Colaboratory](https://colab.research.google.com).
 
 If you are following along locally, go ahead and create a folder for this tutorial.
 
 
-# Getting the data
+## Getting the data
 
 The data is in a directory that contains 18 files, each with the name of a natural language, like English or Portuguese.
 Go ahead and [download the compressed directory][data].
@@ -45,7 +45,7 @@ Go ahead and [download the compressed directory][data].
 Then, extract it to the folder `names` in your local folder, or upload the extracted folder `names` to whatever online service you are using.
 
 
-# Reading the data in
+## Reading the data in
 
 The data contain some names with accented letters and, for the sake of simplicity, we want to get rid of them.
 To that end, we will use a function `unicode_to_ascii` that will convert a name string into a simple string that only contains ASCII characters.
@@ -150,7 +150,7 @@ We can see that there are a couple of languages for which we do not have many di
 We will not worry too much about it, but in a real-life setting, this type of imbalance might need to be addressed explicitly.
 
 
-# Converting names into tensors
+## Converting names into tensors
 
 A recurrent neural network (or any other type of network, for that matter) expects a tensor as input.
 In other words, we cannot feed a literal string like `"Rodrigo"` to the network.
@@ -176,17 +176,17 @@ print(char_to_tensor("b"))
 print(char_to_tensor("f"))
 
 """
-#       a   b   c   d   e   f...
+##       a   b   c   d   e   f...
 tensor([1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
         0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
         0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
         0., 0., 0., 0., 0., 0., 0., 0., 0.])
-#       a   b   c   d   e   f...
+##       a   b   c   d   e   f...
 tensor([0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
         0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
         0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
         0., 0., 0., 0., 0., 0., 0., 0., 0.])
-#       a   b   c   d   e   f...
+##       a   b   c   d   e   f...
 tensor([0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
         0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
         0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
@@ -206,7 +206,7 @@ def name_to_tensor(name):
 ```
 
 
-# Creating the RNN architecture
+## Creating the RNN architecture
 
 The next step is creating the RNN architecture we will be working with.
 In this introductory tutorial, we will start by building a simpler network architecture that exposes some of its inner workings.
@@ -257,7 +257,7 @@ class RNN(nn.Module):
         return torch.zeros(self.hidden_size)
 ```
 
-## The hidden state
+### The hidden state
 
 The key to understanding how recurrent neural networks handle sequences lies in understanding the usefulness of the tensor `hidden`.
 The tensor `hidden` represents some hidden state that the recurrent neural network will update as we feed it successive characters from the same name.
@@ -294,7 +294,7 @@ However, we do not care about the final value of `hidden`, because we have no us
 Conversely, we do not care about the intermediate values of `output`; we only care about the final value because that is the final prediction of the network.
 
 
-## The logarithmic softmax layer
+### The logarithmic softmax layer
 
 The final logarithmic softmax layer is used to facilitate the interpretation of the network results.
 After going through a log softmax layer, the values in our output tensor will be negative integers.
@@ -304,13 +304,13 @@ In other words, given an output value, the best guess of the network corresponds
 If for a given name the network was **absolutely** sure of the correct language, one position of the tensor `output` would have a number like `-0.00001`, which is very close to 0.
 
 
-# Preparing for training
+## Preparing for training
 
 Now that we have the data and the network, it is time to train the network.
 To do that, we need a couple of utility functions.
 
 
-## Interpreting the output
+### Interpreting the output
 
 The first one is `language_from_output`, which we use to interpret the output of the network.
 As we have seen in the example before, the network produces an output vector with 18 negative values.
@@ -328,7 +328,7 @@ print(language_from_output(output))  # ('Scottish', 14)
 ```
 
 
-## Testing and training data
+### Testing and training data
 
 The other thing we need to do before training the network is split the data into
 
@@ -376,7 +376,7 @@ language = 'German', name = 'Rosenberger'
 ```
 
 
-## Single training pass
+### Single training pass
 
 The final utility function we will implement is the function `train`, which accepts the network, the name tensor, and the expected output, and trains the network on that example.
 The function `train` will make use of two global variables:
@@ -413,7 +413,7 @@ Unlike the [“Neural Networks Fundamentals With Python” series][nnfwp], we do
 PyTorch keeps track of the internal calculations that happened in the successive forward passes and then is able to automatically calculate the gradients for all of the network parameters.
 Then, we go through the parameters of the network and tweak them ever so slightly, as in the standard gradient descent algorithm.
 
-# Training the network
+## Training the network
 
 To train the network, all we have to do is give it many training examples!
 
@@ -437,7 +437,7 @@ N_ITERS = 50000
 PRINT_EVERY = 5000
 LOG_EVERY = 1000
 
-# Keep track of losses for plotting.
+## Keep track of losses for plotting.
 current_loss = 0
 all_losses = []
 
@@ -503,7 +503,7 @@ with plt.xkcd():
 The loss plot (shown above) looks good, but how does the network perform on completely new data?
 
 
-# Evaluating the network
+## Evaluating the network
 
 To evaluate the network, we will create a confusion matrix.
 We can do this by going through all of the available testing examples and making note of what the network thinks is the language of that given name.
@@ -529,10 +529,10 @@ So, we disable gradient tracking inside `evaluate_test`.
 After defining that function, we can build our confusion matrix:
 
 ```py
-# Empty confusion matrix:
+## Empty confusion matrix:
 confusion = torch.zeros(n_languages, n_languages)
 
-# Go through all examples and see how the network does.
+## Go through all examples and see how the network does.
 correct = 0
 for language, names in testing.items():
     lang_idx = languages.index(language)
@@ -551,7 +551,7 @@ for language, names in testing.items():
 
 total_examples = sum(len(names) for names in testing.values())
 print(f"Overall accuracy is {100 * correct / total_examples:.2f}%")
-# Overall accuracy is 51.99%
+## Overall accuracy is 51.99%
 ```
 
 As we can see, the overall accuracy was a bit over 50%.
@@ -563,11 +563,11 @@ After populating the confusion matrix, we can plot it:
 ```py
 from matplotlib import ticker
 
-# Normalise by dividing every row by its sum.
+## Normalise by dividing every row by its sum.
 for row in confusion:
     row /= row.sum()
 
-# Set up plot.
+## Set up plot.
 with plt.xkcd():
     fig = plt.figure()
     ax = fig.add_subplot(111)
@@ -596,7 +596,7 @@ The confusion matrix also allows one to see the type of mistakes that the networ
 For example, looking at the Portuguese row, we can see that off of the main diagonal, the brighter squares are in the Italian and Spanish columns, which means that the network thought some Portuguese names were Spanish or Italian.
 This is the type of mistake that a Human could make, given that Portuguese, Spanish, and Italian, share the same roots in Latin.
 
-# Running the network on user input
+## Running the network on user input
 
 The final bit of code we will write is to run the network on user input:
 the user types a name and the network prints its best guess.
@@ -614,7 +614,7 @@ while name := input(" >> "):
 ```
 
 
-# Conclusion
+## Conclusion
 
 Throughout this tutorial, you:
 

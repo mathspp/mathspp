@@ -216,7 +216,7 @@ pre:hover > div > i.clipboard-icon {
 </style>
 
 
-# Creating quick prototypes
+## Creating quick prototypes
 
 [ChatGPT] is a large language model developed by OpenAI that has taken the world by storm.
 I have been playing around with ChatGPT a lot and I can say, confidently, that it has made me much more productive.
@@ -230,7 +230,7 @@ If you find any issues with these features, feel free to reach out to me or to c
 Your help is much appreciated!
 
 
-## Share on selection
+### Share on selection
 
 As an example, go ahead and select a sentence in this article.
 You should see a pop-up that invites you to share your selection over some social media platforms.
@@ -246,7 +246,7 @@ Things that I needed to change included the way we compute the location of the p
 The pop-up is still far from perfect, but I really appreciate the fact that now I have something that I can play with.
 
 
-## Copy code in code blocks
+### Copy code in code blocks
 
 Another feature I have wanted to add to my blog for a while is an icon in code blocks that allow copying and pasting the code inside them.
 
@@ -270,7 +270,7 @@ def fibonacci(n):
 This one is closer to the final state I would like, but I would still like to add some form of visual confirmation that the code was successfully copied.
 
 
-# Tips for working with ChatGPT
+## Tips for working with ChatGPT
 
 I would like to share some brief tips on working with ChatGPT for prototyping:
 

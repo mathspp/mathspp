@@ -15,7 +15,7 @@ Use `:=` to flatten a sequence of nested `if`s or to reuse partial computations.
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)
 
-# Walrus operator and assignment expressions
+## Walrus operator and assignment expressions
 
 The walrus operator is written as `:=` (a colon and an equality sign) and was first
 introduced in Python 3.8.
@@ -78,11 +78,11 @@ However, good uses of assignment expressions can
  - make it more readable/expressive, and
  - make your code shorter.
 
-# Examples in code
+## Examples in code
 
 Here are a couple of examples of good usages of assignment expressions.
 
-## Controlling a while loop with initialisation
+### Controlling a while loop with initialisation
 
 Consider the following `while` loop:
 
@@ -110,7 +110,7 @@ This not only makes the code shorter, but it makes it more expressive, by making
 blatantly clear that it is the user input provided by `input()` that is controlling
 the `while` loop.
 
-## Reducing visual noise
+### Reducing visual noise
 
 Say you want to count the number of trailing zeroes in an integer.
 An easy way to do so would be to convert the integer to a string, find its length,
@@ -139,7 +139,7 @@ The function above can be read as “*return the length of the string `s` you ge
 doesn't hurt the readability of the function and, in my opinion, improves it.
 Feel free to disagree, of course, as this is not an objective matter.
 
-## Reuse computations in list comprehensions
+### Reuse computations in list comprehensions
 
 Suppose you are writing a list comprehension with an `if` filter,
 but the filter test in the
@@ -187,7 +187,7 @@ the first alternative first computes the *whole* list of factorials,
 whereas the second alternative only computes the factorials as they are needed.
 (I'll write more about this in a later Pydon't, [subscribe] so you don't miss it!)
 
-## Flattening related logic
+### Flattening related logic
 
 Imagine you reach a point in your code where you need to pick an operation to do to
 your data, and you have a series of things you would like to try.
@@ -231,7 +231,7 @@ else:
     print("No info found...")
 ```
 
-# Conclusion
+## Conclusion
 
 Assignment expressions allow the binding of a name to a part of an expression,
 which can be used to great benefit in clarifying the flow of some programs or
@@ -247,7 +247,7 @@ If you liked this Pydon't be sure to leave a reaction below and share this with 
 Also, [don't forget to subscribe to the newsletter][subscribe] so you don't miss
 a single Pydon't!
 
-# References
+## References
 
  - Python 3 Documentation, What's New in Python, What's new in Python 3.8 - Assignment expressions, [https://docs.python.org/3/whatsnew/3.8.html#assignment-expressions](https://docs.python.org/3/whatsnew/3.8.html#assignment-expressions).
  - PEP 572 -- Assignment Expressions, [https://www.python.org/dev/peps/pep-0572][pep572].

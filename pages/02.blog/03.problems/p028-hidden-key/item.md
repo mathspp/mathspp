@@ -12,7 +12,7 @@ Can you use the coins to let your friend know where the key is hiding?
 ![A photograph of a key, by Aneta Pawlik on Unsplash.](thumbnail.jpg)
 
 
-# Problem statement
+## Problem statement
 
 You and your best friend are locked in jail for no reason at all, but you are
 given the opportunity to escape.
@@ -35,7 +35,7 @@ your friend can always find the key?
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solution
+## Solution
 
 There are multiple solutions to this problem, but the most simple and elegant one (that I know of) is as follows:
 flip a coin, so that the box with the key is under a coin whose face

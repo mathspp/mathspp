@@ -2,9 +2,6 @@ In the second part of [this series][series-link] of building a Python compiler a
 
 ===
 
-
-# Building a Python compiler and interpreter – 02 numbers
-
 This is the second article of the [“Building a Python compiler and interpreter” series][series-link], so make sure you've gone through the first article before tackling this one.
 
 The code that serves as a starting point for this article is [the tag v0.1.0 of the code in this GitHub repository](https://github.com/mathspp/building-a-python-compiler-and-interpreter/tree/v0.1.0).

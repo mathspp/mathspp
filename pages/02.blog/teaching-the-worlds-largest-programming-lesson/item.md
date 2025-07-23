@@ -3,8 +3,6 @@ This article goes over the content I taught at the world's largest programming l
 ===
 
 
-# Teaching the world's largest programming lesson
-
 On the 12th of October of 2024 I was part of an attempt to break the Guinness World Record of the largest programming lesson in the world.
 The previous record was at 724 students and we managed to surpass it by giving a programming lesson to 1668 students.
 This incredible lesson was organised by [Magma Studio](https://magmastudio.pt), a company I worked at (and whose partners take random ideas I get waaaay too seriously) and [Instituto Superior Técnico](https://tecnico.ulisboa.pt/en/), my _alma mater_.

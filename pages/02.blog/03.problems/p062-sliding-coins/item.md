@@ -6,7 +6,7 @@ Can you align all of the coins on the right edge of the board?
 ![](_setup.webp "Diagram of the coin positions for the problem.")
 
 
-# Problem statement
+## Problem statement
 
 The diagram above shows a 3 by 4 grid with 3 coins, one per row and one per column,
 such that the rightmost column of the grid is empty.
@@ -37,7 +37,7 @@ and add another two coins along the diagonal?
 This is an adaptation of a problem from the [book “Algorithmic Puzzles”][algorithmic-puzzles-amazon] by Anany Levitin and Maria Levitin.[^1]
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
@@ -48,7 +48,7 @@ Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
 
 
-# Solution
+## Solution
 
 You can move all coins to the right in 3 moves:
 

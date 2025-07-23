@@ -12,7 +12,7 @@ ourselves to implement the backpropagation algorithm.
 ![A nice image with blue and purple lights.](_thumbnail.png "Original photo by JJ Ying on Unsplash.")
 
 
-# Purpose of this article
+## Purpose of this article
 
 In this article we want to create a class that represents a generic neural network,
 which will build up on the `Layer` class we created [in the first article][part1]
@@ -32,7 +32,7 @@ concept we need if we want our neural network to *learn*.
 !!! [at the previous article][part1].
 
 
-# Neural network as a chain of layers
+## Neural network as a chain of layers
 
 In the [previous article][part1] we implemented a `Layer` class and then proceeded
 to show how several layer instances could be chained as long as their input
@@ -130,7 +130,7 @@ The example network above takes 2 inputs and transforms them into
 the two layers are incompatible with each other.
 
 
-# Assessing performance
+## Assessing performance
 
 When we are trying to get a neural network to learn how to do something,
 for example when we want a network to learn how to recognise handwritten
@@ -214,7 +214,7 @@ that this is just us preparing for what comes next:
 teaching a neural network to do something.
 
 
-# Teaching a neural network..?
+## Teaching a neural network..?
 
 How do neural networks learn?
 The really short answer is:
@@ -275,7 +275,7 @@ in order to compute these derivatives, we will need to know how to differentiate
 the activation functions and the loss function we use.
 
 
-## Differentiating the Leaky ReLU
+### Differentiating the Leaky ReLU
 
 The Leaky ReLU is a function built from two other linear functions, and those are
 easy to differentiate from the mathematical point of view.
@@ -315,7 +315,7 @@ array([0.1, 0.1, 1. , 1. ])
 ```
 
 
-## Differentiating the MSE Loss
+### Differentiating the MSE Loss
 
 The MSE Loss is a quadratic function, which is also fairly easy to differentiate.
 The subtlety here lies in understanding that our MSE Loss function takes two inputs,
@@ -365,7 +365,7 @@ array([0.5, 1. , 1.5, 2. ])
 ```
 
 
-# Keeping derivatives together with their functions
+## Keeping derivatives together with their functions
 
 We have coded the derivatives of the Leaky ReLU and the MSE, because those
 are the activation and loss functions we have been using.
@@ -458,7 +458,7 @@ class NeuralNetwork:
 ```
 
 
-# New demo
+## New demo
 
 With all these changes, we should create a new short demo for our network:
 
@@ -489,7 +489,7 @@ Output is: [[-0.02405259]]
 Loss is: 0.0005785269049728341
 ```
 
-# Current code
+## Current code
 
 As of now, I have a file that spans for 106 lines.
 You can find all the code for this series in [this GitHub repository][gh-nnfwp].
@@ -500,7 +500,7 @@ in what is usually referred to as the *backpropagation algorithm*, which is the 
 that allows networks to “learn”.
 That will be a math-y and lengthy article, for just a few lines of code in the end...
 
-# The series
+## The series
 
 These are all the articles in this series:
 

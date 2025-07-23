@@ -3,8 +3,6 @@ This post gives you the code to mess around with "Tupper's self-referential form
 ===
 
 
-# The formula that plots itself
-
 By the end of this blog post, I hope that you know how to make mathematical drawings and why the number
 
 $$

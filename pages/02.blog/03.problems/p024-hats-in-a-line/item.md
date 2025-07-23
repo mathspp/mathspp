@@ -12,7 +12,7 @@ colours. How many people can guess their colour correctly?
 ![A picture with a couple of people in a line, with different-coloured hats](thumbnail.webp)
 
 
-# Problem statement
+## Problem statement
 
 Some people, let's say $n$ people, are standing in a line.
 (Of course they are
@@ -50,7 +50,7 @@ If you need any clarification whatsoever, feel free to ask in the comment sectio
 This problem was posed to me by my friend [LeafarCoder].
 
 
-# Solution
+## Solution
 
 Let us say there's $n$ people standing in the line.
 We will show that the best strategy always saves $n - 1$ people and that the

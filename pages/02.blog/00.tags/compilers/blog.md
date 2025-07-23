@@ -29,7 +29,7 @@ title: "Compilers blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">11</th>
-            <th style="text-align: center;">22,279</th>
+            <th style="text-align: center;">22,189</th>
             <th style="text-align: center;">4,353</th>
         </tr>
     </thead>

@@ -3,7 +3,7 @@ Learning programming in APL taught me many new things about Python and this arti
 ===
 
 
-# What learning APL taught me about Python
+## What learning APL taught me about Python
 
 In the past, I've written an article where I share some areas in which my Python programming was heavily influenced by learning APL.
 You can read this article here: [“Why APL is a language worth knowing”][apl-worth-knowing].
@@ -14,7 +14,7 @@ It is likely that I am not fully aware of all the repercussions that APL had on 
 So, without further ado, let me tell you what APL taught me about Python.
 
 
-# The LOC that changed everything
+## The LOC that changed everything
 
 There is one line of code (LOC) that changed everything!
 Figuratively speaking.
@@ -50,7 +50,7 @@ It is not that magical.
 But, curiously enough, it encapsulates plenty of things that APL taught me about Python, so let me tell you all about them.
 
 
-# Stating the obvious
+## Stating the obvious
 
 Now, the remainder of this article might seem like I will be stating the obvious over and over and over and over.
 That may be the case.
@@ -64,7 +64,7 @@ And yet, it allows you to prove non-obvious things, like the fact that there can
 (If you're intrigued by that, take a stab at [this problem about imperfect compression](/blog/problems/imperfect-compression).)
 
 
-# Reductions are everywhere
+## Reductions are everywhere
 
 The first thing I want to look at is the built-in `sum` itself.
 What if I told you that `sum` is very closely related to six other Python built-ins and functions?
@@ -85,7 +85,7 @@ There is also a 5 minute talk in which I explain this concept and you can watch 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YeH7CwruEUs" title="Smoosh all the things | Lightning talk at EuroPython 2022 by Rodrigo Girão Serrão" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
-# Boolean values, 0/1, and data-driven conditionals
+## Boolean values, 0/1, and data-driven conditionals
 
 Another big thing that APL made me realise is that the Boolean values `True`/`False` and the integers `1`/`0` are tightly connected.
 
@@ -200,7 +200,7 @@ All in all, the way APL handles Boolean values helped me understand the relation
 If you are interested, go ahead and learn more about [APL and Boolean values](/blog/why-apl-is-a-language-worth-knowing#apl-and-boolean-values).
 
 
-# Scalar functions and list comprehensions
+## Scalar functions and list comprehensions
 
 In case you haven't noticed, I am partially obsessed with list comprehensions.
 I even [wrote a book with +200 exercises about list comprehensions](/comprehending-comprehensions) and related concepts, like set/dictionay comprehensions and generator expressions.
@@ -274,7 +274,7 @@ If you are curious about APL's scalar functions and how they relate to list comp
 In practice, I talked about scalar functions and list comprehensions, but the rationale applies equally to set and dictionary comprehensions, as well as generator expressions, which is what we'll be using in the next section.
 
 
-# An idiom to put everything together
+## An idiom to put everything together
 
 So, I realised that APL led me to understand that `sum` and many other built-ins are just specialised reductions.
 This let me establish connections between functions and algorithms that I didn't know were connected.
@@ -324,7 +324,7 @@ How cool is this?
 I like this idiom a lot and I use it often in my own Python code!
 
 
-# Conclusion
+## Conclusion
 
 All in all, learning APL was a terrific experience because it forced me to think about programming in new ways and, as a result, it also influenced the way I think about programming in the other languages that I already knew, namely Python.
 If you have similar stories of how learning one language changed the way you wrote code in another, share them with me!

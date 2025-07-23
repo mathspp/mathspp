@@ -2,7 +2,7 @@ Today I learned how to use `\b` and `\B` to match prefixes and suffixes with reg
 
 ===
 
-# Matching prefixes and suffixes with regular expressions
+## Matching prefixes and suffixes with regular expressions
 
 The special characters `\b` and `\B` go hand in hand in regular expressions:
 

@@ -2,7 +2,7 @@ Today I learned how to create git aliases in my `.gitconfig` file.
 
 ===
 
-# Git alias for quick commit & push
+## Git alias for quick commit & push
 
 Today I learned (or was reminded, really) that you can create aliases for `git` commands.
 For example, for this blog I often run these two commands in sequence:

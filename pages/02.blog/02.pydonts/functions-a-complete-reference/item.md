@@ -4,8 +4,6 @@ This article serves as a complete reference for all the non-trivial things you s
 
 ![](thumbnail.webp)
 
-# Functions: a complete reference
-
 There is a lot to learn about functions after you learn how to define a function.
 In fact, knowing how to use the keyword `def` is just the first step, really.
 I will walk you through the remaining steps in this article.

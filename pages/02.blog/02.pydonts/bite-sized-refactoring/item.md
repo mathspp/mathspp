@@ -16,7 +16,7 @@ so that it doesn't become too overwhelming.
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 Refactoring code is the act of going through your code and
 changing bits and pieces, generally with the objective of
@@ -38,7 +38,7 @@ In this Pydon't, you will:
 <!--^-->
 
 
-# Refactoring
+## Refactoring
 
  > REFACTOR – verb
  >
@@ -65,7 +65,7 @@ code and really comprehend it, pattern recognition skills,
 critical thinking, amongst others.
 
 
-## Ability to read code and really comprehend it
+### Ability to read code and really comprehend it
 
 If you change a piece of code without understanding it,
 you are much more likely to break it.
@@ -74,7 +74,7 @@ you should do your best to try and _really_ comprehend what the code
 is doing and how it does it.
 
 
-## Pattern recognition skills
+### Pattern recognition skills
 
 One of the things that you should be looking out for,
 when refactoring code,
@@ -93,7 +93,7 @@ Beware that this becomes much easier to do _after_
 you have really understood the code.
 
 
-## Critical thinking
+### Critical thinking
 
 When reading code you wish to refactor,
 you will invariably find pieces of code that look like they shouldn't
@@ -118,13 +118,13 @@ Code is a mutable thing, so make sure to facilitate the life
 of your future self by writing elegant code that is easy to read.
 
 
-# What to refactor?
+## What to refactor?
 
 I am sure that people with different life experiences will answer
 differently to this question,
 the only thing I can do is share my point of view on the subject.
 
-## Refactor often...
+### Refactor often...
 
 ... or at least create the conditions for that.
 
@@ -151,7 +151,7 @@ much to gain from it, so make sure to write your code in a way
 that will allow you, or someone else, to refactor it later.
 
 
-## Refactor little by little
+### Refactor little by little
 
 Of course there should be a balance between refactoring
 code that already exists and writing new code for new features, etc.
@@ -170,7 +170,7 @@ one or more files at the same time.
 Just refactor “a little”, regardless of what that means to you.
 
 
-# Case study
+## Case study
 
 Now I will go in-depth into a short Python function that was written
 by a beginner and [shared to Reddit][case-study]
@@ -188,7 +188,7 @@ Write a function that changes the casing of its letters:
 Go ahead and try solving this task.
 
 
-## Starting point
+### Starting point
 
 The piece of code that was shared on the Internet was the following:
 
@@ -204,7 +204,7 @@ def myfunc(a):
     return "".join(empty)
 ```
 
-## Automatic style formatting
+### Automatic style formatting
 
 The very first step you can take towards writing code that is as
 elegant as possible is running an auto formatter.
@@ -243,7 +243,7 @@ Also, recall that critical thinking is very important.
 Sometimes it is best to ignore the style guide completely.
 
 
-## Naming
+### Naming
 
 Names are very important, and naming your functions and variables
 correctly is crucial.
@@ -296,7 +296,7 @@ Instead, by naming it `letters`,
 we specify what will be stored in there.
 
 
-## Traversing data and indices
+### Traversing data and indices
 
 Python has some really good capabilities to deal with `for` loops,
 and one of the tools that we are given is the `enumerate` built-in.
@@ -331,7 +331,7 @@ understand that to mean “in this loop I need both the indices
 and the data I'm traversing”.
 
 
-## Nest only what is needed
+### Nest only what is needed
 
 In Python, indentation indicates code nesting,
 which indicates dependence.
@@ -404,7 +404,7 @@ but sometimes better code takes up more space.
 However...
 
 
-## Conditional assignment and conditional expressions
+### Conditional assignment and conditional expressions
 
 Having factored out the `.append()` to outside of the `if`
 makes it blatantly clear that the `if` statement is only
@@ -434,7 +434,7 @@ def alternate_casing(text):
 ```
 
 
-## Truthy and Falsy
+### Truthy and Falsy
 
 The next step concerns itself with simplifying the condition
 of the `if` statement.
@@ -466,7 +466,7 @@ point in having an extra blank line separating the return statement,
 so I decided to put everything together.
 
 
-## List comprehensions versus appending
+### List comprehensions versus appending
 
 One thing that you can also learn to spot is when you are building
 a list by calling `.append()` on it successively.
@@ -485,7 +485,7 @@ def alternate_casing(text):
 ```
 
 
-## Avoid long lines
+### Avoid long lines
 
 The problem with the list comprehension above is that
 now we have a really long line of code.
@@ -531,7 +531,7 @@ def alternate_casing(text):
 ```
 
 
-## Auxiliary variables
+### Auxiliary variables
 
 Once again, auxiliary variables aren't always needed.
 Whether you have the broken up list comprehension or the one
@@ -554,7 +554,7 @@ def alternate_casing(text):
 ```
 
 
-## Redundant list comprehensions
+### Redundant list comprehensions
 
 We have come so far, but there is one final thing we can do,
 and that is related to how we can get rid of the `[]` of the list comprehension.
@@ -587,7 +587,7 @@ you can often omit the `[]` altogether to switch to a generator expression.
 !!! so be sure to [subscribe] so you don't miss it!
 
 
-## Final comparison
+### Final comparison
 
 For your reference, here is the code we started with:
 
@@ -631,7 +631,7 @@ It is ok to do incremental changes, and maybe even preferable:
 incremental changes are easier to manage and easier to reason about.
 
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this Pydon't, for you, on a silver platter:
 

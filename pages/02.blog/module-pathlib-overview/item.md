@@ -3,8 +3,6 @@ Learn some of the most common and useful features of the `pathlib` module that a
 ===
 
 
-# Module `pathlib` overview
-
 ## Introduction
 
 The module `pathlib` is one of my favourite modules from the standard library.

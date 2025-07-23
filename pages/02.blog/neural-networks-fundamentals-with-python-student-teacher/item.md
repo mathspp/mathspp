@@ -11,7 +11,7 @@ where one network will learn directly from the other.
 ![A nice image with blue and purple lights.](thumbnail.png "Original photo by JJ Ying on Unsplash.")
 
 
-# Purpose of this article
+## Purpose of this article
 
 The purpose of this article is to try and perform an experiment
 that is called the “student-teacher” experiment,
@@ -34,7 +34,7 @@ maybe take a look at [this survey][student-teacher-survey].
 !!! This article will build upon [v1.2][gh-nnfwp-v1_2] of that code.
 
 
-# The layout of the experiment
+## The layout of the experiment
 
 Let me explain to you how the “student-teacher” experiment works,
 and why we bother doing it.
@@ -72,7 +72,7 @@ Here are the detailed steps of how this experiment works:
 Let us do this experiment together, with the MNIST data.
 
 
-# Benchmarking the student
+## Benchmarking the student
 
 Before we begin, let me share a thought with you.
 Critical thinking is _very_ important.
@@ -101,7 +101,7 @@ when compared with a network of the same size but that was training with the con
 Let's start!
 
 
-## Creating the student
+### Creating the student
 
 Let's go ahead and copy our `examples/mnist.py` file into `examples/mnist_small.py`,
 where we will have pretty much the same code, but with a very small network.
@@ -117,7 +117,7 @@ For the activation function, let's stick with the `LeakyReLU`
 because we've seen [previously][nnfwp-subtleties] that that's a more suitable loss function:
 
 ```py
-# In examples/mnist_small.py
+## In examples/mnist_small.py
 
 if __name__ == "__main__":
     layers = [
@@ -132,7 +132,7 @@ function is adapted accordingly!
 but for the `CrossEntropyLoss` we only need to give it information about the correct digit.)
 
 ```py
-# In examples/mnist_small.py
+## In examples/mnist_small.py
 
 def train(net, train_data):
     for i, train_row in enumerate(train_data):
@@ -149,7 +149,7 @@ I ran the `examples/mnist_small.py` file and got this output:
  > python examples/mnist_small.py
 NNFwP\examples\mnistdata\mnist_test.csv...
 Done.
-# [...]
+## [...]
 Accuracy is 8.39%       # <- initial accuracy of the random net
 NNFwP\examples\mnistdata\mnist_train.csv...
 Done.
@@ -161,12 +161,12 @@ NNFwP\nn.py:71: RuntimeWarning: overflow encountered in exp
   d = np.exp(values)/np.sum(np.exp(values))
 NNFwP\nn.py:71: RuntimeWarning: invalid value encountered in true_divide
   d = np.exp(values)/np.sum(np.exp(values))
-# [...]
+## [...]
 Accuracy is 9.80%       # <- final accuracy after training
 ```
 
 
-## Runtime warnings
+### Runtime warnings
 
 I didn't expect a perfect net, but I trained the network with the whole dataset,
 and I only got 9.8% accuracy..?
@@ -227,7 +227,7 @@ So, all in all, we can see we have a problem.
 What is it?
 
 
-## Rescaling the input
+### Rescaling the input
 
 The problem is that we are giving numbers that are too large as the network input.
 We were able to get away with it in the first MNIST experiment because we were lucky, essentially.
@@ -263,7 +263,7 @@ All we have to do is tweak the `test` and `train` functions
 to divide the input vectors by 255:
 
 ```py
-# In examples/mnist_small.py
+## In examples/mnist_small.py
 
 def test(net, test_data):
     correct = 0
@@ -288,7 +288,7 @@ def train(net, train_data):
         net.train(to_col(train_row[1:])/255, train_row[0])      # <-- divide by 255 here
 ```
 
-## Re-running the student
+### Re-running the student
 
 After fixing these issues,
 we can run our code again and see what is the accuracy that this
@@ -302,9 +302,9 @@ As we proceed into the “student-teacher” experiment,
 let us see if we can improve this or, at least, create a student with the same level of accuracy.
 
 
-# The experiment
+## The experiment
 
-## Step 1 – the teacher network
+### Step 1 – the teacher network
 
 Now that we have had a go at creating a small network
 and have established the benchmark accuracy for the student network,
@@ -323,9 +323,9 @@ then all we need to do to complete the first step
 is to create the full teacher network and train it:
 
 ```py
-# In examples/teacher_student.py
+## In examples/teacher_student.py
 
-# [...]
+## [...]
 
 if __name__ == "__main__":
     layers = [
@@ -358,7 +358,7 @@ I tend to get an accuracy around 85% or slightly higher.
 !!! Usually through a first guess and then tuning through repeated experimentation.
 
 
-## Step 2 – create the student
+### Step 2 – create the student
 
 Creating the student just entails initialising a new network,
 much like we have done above for the benchmarking.
@@ -379,9 +379,9 @@ Here are some students to begin with:
 
 
 ```py
-# In examples/teacher_student.py
+## In examples/teacher_student.py
 
-# [...]
+## [...]
 
 if __name__ == "__main__":
     layers = [
@@ -408,7 +408,7 @@ We will start by looking for a learning rate that looks promising.
 By the way, don't forget to import all of the loss functions that you need!
 
 
-## Step 3 – train the student
+### Step 3 – train the student
 
 We have create a teacher, that we know how to train,
 and we have a number of students that are eager to learn,
@@ -424,7 +424,7 @@ This training process is not what is implemented in the `train` function,
 so let us create another function to help us with this training:
 
 ```py
-# In examples/teacher_student.py
+## In examples/teacher_student.py
 
 def train_students(teacher, students, train_data):
     for i, train_row in enumerate(train_data):
@@ -440,12 +440,12 @@ def train_students(teacher, students, train_data):
 Now we just need to call this function after we train the teacher model.
 
 
-## Step 4 – test the students
+### Step 4 – test the students
 
 Finally, all we have to do is test all our students after we train them:
 
 ```py
-# In examples/teacher_student.py
+## In examples/teacher_student.py
 
 if __name__ == "__main__":
     # [...]
@@ -499,7 +499,7 @@ Make sure that you also defined the function `train_students`,
 and you are ready to run your experiment!
 
 
-## First run
+### First run
 
 If you are _anything_ like me, the first couple of times you run your file,
 you have to fix typos and missing imports, etc.
@@ -507,7 +507,7 @@ After those were sorted out, here is what my code printed in the end:
 
 ```bash
  > python examples/teacher_student.py
-# [...]
+## [...]
 [82.0, 82.72, 82.62, 82.28999999999999, 69.39999999999999, 36.55]
 Teacher accuracy had been 86.69%
 ```
@@ -558,7 +558,7 @@ in particular the files [`examples/mnist_small.py`][gh-nnfwp-mnist_small]
 and [`examples/teacher_student.py`][gh-nnfwp-teacher_student].
 
 
-# The series
+## The series
 
 These are all the articles in this series:
 

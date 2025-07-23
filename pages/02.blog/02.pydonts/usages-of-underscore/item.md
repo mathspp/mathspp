@@ -16,7 +16,7 @@ more idiomatic code with them.
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 In this Pydon't we will take a look at all the use cases there are
 for `_` in Python.
@@ -43,7 +43,7 @@ In this Pydon't, you will:
 <!--^-->
 
 
-# Recovering last result in the session
+## Recovering last result in the session
 
 Have you ever called a slow function in the Python session and then lost the return
 value because you forgot to assign it to a variable?
@@ -95,9 +95,9 @@ returned result:
 ```
 
 
-# Prefixes and suffixes for variable names
+## Prefixes and suffixes for variable names
 
-## Single underscore as a suffix
+### Single underscore as a suffix
 
 As you know, some words have a special meaning in Python,
 and are therefore dubbed as keywords.
@@ -139,7 +139,7 @@ with Python and that is implemented fully in Python) you can find
 this function:
 
 ```py
-# From Lib/idlelib/help.py in Python 3.9.2
+## From Lib/idlelib/help.py in Python 3.9.2
 def handle_starttag(self, tag, attrs):
     "Handle starttags in help.html."
     class_ = ''
@@ -157,7 +157,7 @@ that we use to define, well, classes...
 And that's why we use `class_` here!
 
 
-## Single underscore as prefix
+### Single underscore as prefix
 
 While the usage of a single underscore as a suffix was more or less
 a convention, the usage of a single underscore as a prefix is both
@@ -269,7 +269,7 @@ those functions with leading underscores.
 Go ahead and write the following in your `onlineshop.py` file:
 
 ```py
-# onlineshop.py
+## onlineshop.py
 def _valid_discount(discount):
     return 0 <= discount <= 1
 
@@ -387,7 +387,7 @@ This `__all__` variable is the perfect segue into the next
 subsection:
 
 
-## Leading and trailing double underscores
+### Leading and trailing double underscores
 
 In Python, a name that starts and ends with double underscores
 is a name that has internal relevance to Python.
@@ -435,7 +435,7 @@ meaning that often has to do with the default Python behaviour.
 ! collisions with future changes/additions to the Python language!
 
 
-## Double leading underscore
+### Double leading underscore
 
 In this subsection we will take a look at what happens when you
 use a double underscore in the beginning of a name.
@@ -453,7 +453,7 @@ Modify the `onlineshop.py` file so that our code
 now belongs to a class called `OnlineShop`:
 
 ```py
-# onlineshop.py
+## onlineshop.py
 class OnlineShop:
     __prices = {
         "jeans": 20,
@@ -550,7 +550,7 @@ It is highly likely that you won't have the need to use double leading
 underscores in your code, but I couldn't just ignore this use case!
 
 
-# Underscore as a sink
+## Underscore as a sink
 
 One of my favourite use cases for the underscore is when we use
 the underscore as the target for an assignment.
@@ -576,7 +576,7 @@ do _not_ care about)
 is useful in _other_ situations.
 
 
-## Unpacking
+### Unpacking
 
 I have written at length about unpacking in other Pydon'ts:
 
@@ -669,7 +669,7 @@ and at the same time only access the value(s) that matter:
 ```
 
 
-## Iterating independently of the iteration number
+### Iterating independently of the iteration number
 
 Another similar use case shows up when you need to iterate with a `for` loop,
 but you really do _not_ care about the iteration number you are in.
@@ -701,7 +701,7 @@ But the point is that using `_` as a sink is a _convention_
 to make the semantics of your programs more clear.
 
 
-# Matching everything in the new match statement
+## Matching everything in the new match statement
 
 The new `match` statement is coming in Python 3.10,
 and [there is _much_ to look forward to][pydont-match].
@@ -711,7 +711,7 @@ used in the new `match` statement as the wildcard that matches
 “anything else”:
 
 ```py
-# Needs Python 3.10 to run
+## Needs Python 3.10 to run
 >>> v = 10
 >>> match v:
 ...     case 0:
@@ -755,7 +755,7 @@ to the original value, then you need to use a valid target name:
 ```
 
 
-# String localisation
+## String localisation
 
 Another niche use case for the underscore, but that I find absolutely lovely,
 is for when you need to localise your programs.
@@ -818,7 +818,7 @@ from gettext import gettext as _, ngettext
 And I realised they were setting `_` as an alias for `gettext`.
 
 
-# Improve number readability
+## Improve number readability
 
 The final use case for underscores that we will discuss has to do with
 improving the readability of numbers.
@@ -884,7 +884,7 @@ value of a colour:
 ```
 
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this Pydon't, for you, on a silver platter:
 

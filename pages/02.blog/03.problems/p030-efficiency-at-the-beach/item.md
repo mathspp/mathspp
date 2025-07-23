@@ -14,7 +14,7 @@ What is the most efficient way to do this?
 ![](thumbnail.png "Edited version of Alex Perez's photo on Unsplash")
 
 
-# Problem statement
+## Problem statement
 
 The problem statement is just like you read above.
 You are on the sand and need to go to another place on the sand,
@@ -31,7 +31,7 @@ How do you pick your path so that you walk as little as possible
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
@@ -45,7 +45,7 @@ who sent me their correct solutions:
 (The list is in no particular order.)
 
 
-# Solution
+## Solution
 
 The easiest way to formulate the solution is as follows:
 

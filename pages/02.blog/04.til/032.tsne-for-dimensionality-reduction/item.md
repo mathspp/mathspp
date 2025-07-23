@@ -3,7 +3,7 @@ Today I learned about t-SNE for dimensionality reduction.
 ===
 
 
-# t-SNE
+## t-SNE
 
 t-SNE (t-distributed Stochastic Neighbourhood Embedding) is a nice statistical method
 that can be used to visualise high-dimensional data in a smaller number of dimensions.

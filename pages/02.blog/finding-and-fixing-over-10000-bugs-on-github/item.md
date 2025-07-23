@@ -2,7 +2,7 @@ Learn how I found over +10,000 bugs in Python code all over GitHub and how all t
 
 ===
 
-# Finding the bugs
+## Finding the bugs
 
 Yesterday, or two days ago, I was sitting down at my desk and doing some Python work.
 Then, all of a sudden, I thought “No... It can't be... Can it?”...
@@ -24,13 +24,13 @@ Isn't that a shame?
 Of all the intricacies and subtleties of Python, your code will be buggy because you forgot a letter?
 
 
-# Fixing the bugs with the `string` constants
+## Fixing the bugs with the `string` constants
 
 The Python module `string` contains many useful constants that you can use.
 Here are some of them:
 
 
-## ASCII letters in Python
+### ASCII letters in Python
 
 If you need the 26 ASCII letters in Python, consider using the constants from the module `string`.
 Use `ascii_lowercase` for the lowercase letters, `ascii_uppercase` for the uppercase letters, and `ascii_letters` for the lowercase and uppercase letters combined:
@@ -46,7 +46,7 @@ Use `ascii_lowercase` for the lowercase letters, `ascii_uppercase` for the upper
 ```
 
 
-## `string` constants for digits
+### `string` constants for digits
 
 The module `string` also contains three constants that contain the digits of numbers written in the decimal, hexadecimal, and octal systems:
 
@@ -61,7 +61,7 @@ The module `string` also contains three constants that contain the digits of num
 ```
 
 
-## Other useful `string` constants
+### Other useful `string` constants
 
 Just for the sake of completeness, let me tell you that the module `string` also has constants that contain all whitespace characters, all ASCII punctuation characters, and then a constant with _all_ the ASCII characters that are printable:
 

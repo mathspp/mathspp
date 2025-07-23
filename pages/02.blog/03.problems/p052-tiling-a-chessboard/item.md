@@ -4,7 +4,7 @@ Can you tile a chessboard with two missing squares?
 
 ![](thumbnail.webp "A chessboard with two domino tiles on top of it.")
 
-# Problem statement
+## Problem statement
 
 If you remove two opposite corners of a chessboard,
 can you still tile it with 2 x 1 rectangles?
@@ -12,7 +12,7 @@ can you still tile it with 2 x 1 rectangles?
 In other words, can you cover a whole chessboard with 2 x 1 domino tiles while leaving two opposite corners uncovered and without overlapping domino tiles?
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
@@ -25,7 +25,7 @@ Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
 
 
-# Solution
+## Solution
 
 It is _impossible_ to do this and the proof follows.
 

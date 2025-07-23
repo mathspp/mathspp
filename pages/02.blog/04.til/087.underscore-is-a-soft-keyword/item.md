@@ -3,13 +3,13 @@ Today I learned that the underscore `_` is a soft keyword in Python.
 ===
 
 
-# Underscore is a soft keyword
+## Underscore is a soft keyword
 
 I've written about [the multiple usages of the underscore `_` in Python](/blog/pydonts/usages-of-underscore) and in that article I write about the fact that the underscore is idiomatically used to assign a value we don't care about.
 Something like this:
 
 ```py
-# Suppose we have a colour like `colour = ("red", (255, 0, 0))`
+## Suppose we have a colour like `colour = ("red", (255, 0, 0))`
 colour_name, _ = colour
 ```
 

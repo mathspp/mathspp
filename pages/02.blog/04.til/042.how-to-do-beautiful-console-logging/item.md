@@ -3,7 +3,7 @@ Today I learned how you can do beautiful console logging by using the module `ri
 ===
 
 
-# How to do beautiful console logging
+## How to do beautiful console logging
 
 The standard way to do logging in Python is by using the module `logging` that comes in the standard library.
 To do beautiful console logging with very little effort you just need to use the [`rich`][rich] package.
@@ -24,7 +24,7 @@ log.info("Hello, World!")
 ```
 
 
-# Example of logging with `rich` and `RichHandler`
+## Example of logging with `rich` and `RichHandler`
 
 Using the setup code above, I wrote a little script:
 

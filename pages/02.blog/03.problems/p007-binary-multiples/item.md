@@ -9,7 +9,7 @@ Is it true that every integer you can think of has a multiple written out only w
 ![A screenshot of a black screen with some white 0s and 1s](binary_img.jpg)
 
 
-# Problem statement
+## Problem statement
 
 Let $k \in \mathbb{Z}$ be an integer. Is there an integer $n$ such that $n$ is a multiple of $k$ and $n$ only has $0$s and $1$s in its decimal expansion?
 
@@ -20,7 +20,7 @@ As an example, if $k = 2$ we could have $n = 10$.
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solution
+## Solution
 
 The answer is _yes_, any integer $k$ has a "binary multiple" $n$. To show this is true, we will build $n$ starting from $k$.
 
@@ -54,7 +54,7 @@ Thus $n = c_j - c_i$ is a "binary multiple" of $k$.
 If $k$ is negative, we repeat the above for $-k$. If $k = 0$, then $n = 0$.
 
 
-## Example
+### Example
 
 If $k = 4$ we consider $c_1 = 1$, $c_2 = 11$, $c_3 = 111$, $c_4 = 1111$ and realize none of these numbers is a multiple of $4$.
 

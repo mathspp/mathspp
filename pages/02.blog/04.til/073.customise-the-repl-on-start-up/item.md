@@ -3,7 +3,7 @@ Today I learned how to customise the Python REPL on start-up.
 ===
 
 
-# How to customise the Python REPL on start-up
+## How to customise the Python REPL on start-up
 
 Customising the Python REPL on start-up allows you to run custom code whenever you open the Python REPL.
 Typically, people use this to import modules they use commonly or define functions that they use a lot.
@@ -16,7 +16,7 @@ To customise the Python REPL, you need two things:
 Then, when the REPL starts, it will look at the environment variable `PYTHONSTARTUP` and if it is set to something, it will run the Python code in that file.
 
 
-## Example `.pythonrc` file
+### Example `.pythonrc` file
 
 My `.pythonrc` file is very simple and looks like this:
 
@@ -42,7 +42,7 @@ Additionally, it uses `rich.pretty` to install automatic pretty-printing in the 
 If you want to have the same `.pythonrc` file, just be sure to install `rich` with `python -m pip install rich`.
 
 
-## Setting the environment variable `PYTHONSTARTUP`
+### Setting the environment variable `PYTHONSTARTUP`
 
 To set your environment variable `PYTHONSTARTUP` to point to your `.pythonrc` file, you can run the command
 
@@ -62,7 +62,7 @@ For example, when my shell starts, it runs the commands found in the file `~/.zs
 So, if I add the line `export PYTHONSTARTUP=/path/to/your/file/.pythonrc` to my file `~/.zshrc`, then `python` will always know where to find the file `.pythonrc`.
 
 
-## Backup your `.pythonrc` file
+### Backup your `.pythonrc` file
 
 I first heard of the `.pythonrc` file when reading [Adam Johnson's “Boost Your Git DX”][boost-git-dx][^1], where Adam suggests that configuration files like these (as long as they don't have sensitive data, like credentials) could be kept in a GitHub repository.
 Then, you just create a symlink from the typical location `~/.pythonrc` to the versioned file in your repository.
@@ -70,7 +70,7 @@ Then, you just create a symlink from the typical location `~/.pythonrc` to the v
 This way, when you change computers, you have all your configurations ready to be cloned from the repo and they're easier to setup on your new machine.
 
 
-## Customise Python on start-up
+### Customise Python on start-up
 
 If you want to customise Python on start-up, and not just the REPL, you can read my short article on [running custom code on Python start-up](/blog/til/run-custom-code-on-python-start-up).
 

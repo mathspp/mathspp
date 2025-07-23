@@ -2,8 +2,6 @@ This article shows how to solve the N queens problem in 20 lines of code.
 
 ===
 
-# N queens problem
-
 ## The problem for N = 10
 
 (You can [skip to the solution](#the-solution) or just [see the code](#the-code).)

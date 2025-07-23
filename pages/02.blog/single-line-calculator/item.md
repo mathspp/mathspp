@@ -3,8 +3,6 @@ Let us implement a calculator in ONE line of code.
 ===
 
 
-# Single-line calculator
-
 A while back ago I saw someone on the Internet [sharing a GUI calculator they had written in 17 lines of code][reddit-post].
 They were pretty happy that the calculator was _only_ 17 lines of code, and so I thought: can I make it shorter?
 Turns out you can!

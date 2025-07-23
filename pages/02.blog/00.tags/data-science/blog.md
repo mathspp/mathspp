@@ -14,10 +14,10 @@ hero_image_url: /user/themes/myquark/images/common_hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 metadata:
     author: Rodrigo Girão Serrão
-    description: "All of the mathspp blog articles about data science."
-    og:description: "All of the mathspp blog articles about data science."
-    og:image: "https://mathspp.com/blog/tags/data-science/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/data-science/thumbnail.webp"
+    description: "All of the mathspp blog articles about Data science."
+    og:description: "All of the mathspp blog articles about Data science."
+    og:image: "https://mathspp.com/blog/tags/Data-science/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/Data-science/thumbnail.webp"
 title: "Data science blog articles"
 ---
 
@@ -29,7 +29,7 @@ title: "Data science blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">1</th>
-            <th style="text-align: center;">11,287</th>
+            <th style="text-align: center;">11,280</th>
             <th style="text-align: center;">488</th>
         </tr>
     </thead>

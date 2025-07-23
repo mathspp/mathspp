@@ -3,7 +3,7 @@ How can a greedy pirate captain keep his treasure to himself?
 ===
 
 
-# Problem statement
+## Problem statement
 
 Captain Jack Girão was the most feared pirate of the 15th century.
 He was accompanied by 9 toothless pirates and they pillaged every ship that sailed their seas.
@@ -22,7 +22,7 @@ Gold distribution among perfectly logical and democratic pirates follows these r
 What distribution should Captain Jack Girão propose in order to maximize his own profits and to keep his life?
 
 
-# Solution
+## Solution
 
 If the crew is composed of 10 pirates in total, a proposal needs at least 5 votes to be accepted.
 We can assume Captain Jack Girão never votes against himself, meaning we only need to ensure 4 more votes.

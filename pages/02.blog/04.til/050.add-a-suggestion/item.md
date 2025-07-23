@@ -4,7 +4,7 @@ Today I learned that you can add suggestions directly when reviewing pull reques
 
 ![A blurred GitHub pull request review on the background and the icon of the “add a suggestion” feature focused in the foreground.](thumbnail.webp)
 
-# Add a suggestion in a GitHub pull request review
+## Add a suggestion in a GitHub pull request review
 
 When you are reviewing a pull request on GitHub, you can add comments to one or multiple lines at a time,
 but you can also leave a direct suggestion that makes it extremely convenient for the other person to make the change that you want to see implemented.

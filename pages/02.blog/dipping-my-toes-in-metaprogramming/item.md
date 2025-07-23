@@ -3,8 +3,6 @@ Dip your toes in metaprogramming and learn about `__init__`'s big brother, the d
 ===
 
 
-# Dipping my toes in metaprogramming
-
 This is the written version of [my PyCon Italy 2025 talk](https://2025.pycon.it/en/event/dipping-my-toes-in-metaprogramming), which serves as a trial run for myself and as supporting material for folks who attended the talk, or who couldn't attend but are interested in reading about it.
 
 ## Cold opening

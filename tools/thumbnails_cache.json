@@ -3,37 +3,37 @@
     "articles": 10,
     "code_snippets": 349,
     "loc": 4540,
-    "words": 22827
+    "words": 22727
   },
   "compilers": {
     "articles": 11,
     "code_snippets": 336,
     "loc": 4353,
-    "words": 22279
+    "words": 22189
   },
   "interpreters": {
     "articles": 16,
     "code_snippets": 408,
     "loc": 5986,
-    "words": 35302
+    "words": 35212
   },
   "programming": {
     "articles": 303,
-    "code_snippets": 3761,
-    "loc": 36185,
-    "words": 365370
+    "code_snippets": 3762,
+    "loc": 36635,
+    "words": 363245
   },
   "python": {
     "articles": 293,
-    "code_snippets": 3637,
-    "loc": 35058,
-    "words": 357326
+    "code_snippets": 3638,
+    "loc": 35508,
+    "words": 355162
   },
   "algorithms": {
     "articles": 25,
     "code_snippets": 248,
     "loc": 2992,
-    "words": 28531
+    "words": 28471
   },
   "chatgpt": {
     "articles": 4,
@@ -51,25 +51,25 @@
     "articles": 8,
     "code_snippets": 82,
     "loc": 916,
-    "words": 12006
+    "words": 12000
   },
   "pygame": {
     "articles": 14,
     "code_snippets": 51,
     "loc": 1147,
-    "words": 8077
+    "words": 8038
   },
   "scripting": {
     "articles": 9,
     "code_snippets": 54,
     "loc": 658,
-    "words": 6484
+    "words": 6460
   },
   "mathematics": {
     "articles": 122,
     "code_snippets": 449,
     "loc": 4449,
-    "words": 109077
+    "words": 108994
   },
   "number theory": {
     "articles": 8,
@@ -87,13 +87,13 @@
     "articles": 15,
     "code_snippets": 314,
     "loc": 3781,
-    "words": 24485
+    "words": 24460
   },
   "oop": {
     "articles": 6,
     "code_snippets": 151,
     "loc": 1511,
-    "words": 10682
+    "words": 10672
   },
   "textual": {
     "articles": 5,
@@ -111,7 +111,7 @@
     "articles": 4,
     "code_snippets": 40,
     "loc": 700,
-    "words": 5317
+    "words": 5310
   },
   "streamlit": {
     "articles": 1,
@@ -123,7 +123,7 @@
     "articles": 16,
     "code_snippets": 254,
     "loc": 2672,
-    "words": 31110
+    "words": 31106
   },
   "networking": {
     "articles": 5,
@@ -141,55 +141,55 @@
     "articles": 3,
     "code_snippets": 43,
     "loc": 746,
-    "words": 4607
+    "words": 4601
   },
   "visualisation": {
     "articles": 16,
     "code_snippets": 58,
     "loc": 915,
-    "words": 9409
+    "words": 9362
   },
   "data science": {
     "articles": 1,
     "code_snippets": 104,
     "loc": 488,
-    "words": 11287
+    "words": 11280
   },
   "matplotlib": {
     "articles": 1,
     "code_snippets": 104,
     "loc": 488,
-    "words": 11287
+    "words": 11280
   },
   "pandas": {
     "articles": 3,
     "code_snippets": 113,
     "loc": 587,
-    "words": 11831
+    "words": 11824
   },
   "code review": {
     "articles": 9,
     "code_snippets": 135,
     "loc": 666,
-    "words": 10340
+    "words": 10326
   },
   "slice of life": {
     "articles": 13,
     "code_snippets": 80,
     "loc": 1088,
-    "words": 12078
+    "words": 12038
   },
   "productivity": {
     "articles": 27,
     "code_snippets": 153,
     "loc": 1548,
-    "words": 17102
+    "words": 17084
   },
   "logic": {
     "articles": 34,
     "code_snippets": 89,
     "loc": 737,
-    "words": 28292
+    "words": 28283
   },
   "sequences": {
     "articles": 5,
@@ -201,31 +201,31 @@
     "articles": 7,
     "code_snippets": 11,
     "loc": 368,
-    "words": 11988
+    "words": 11944
   },
   "geometry": {
     "articles": 17,
     "code_snippets": 34,
     "loc": 427,
-    "words": 10398
+    "words": 10373
   },
   "binary": {
     "articles": 9,
     "code_snippets": 19,
     "loc": 135,
-    "words": 6822
+    "words": 6808
   },
   "modular arithmetic": {
     "articles": 7,
     "code_snippets": 31,
     "loc": 242,
-    "words": 7418
+    "words": 7402
   },
   "recursion": {
     "articles": 12,
     "code_snippets": 106,
     "loc": 1516,
-    "words": 16277
+    "words": 16234
   },
   "nnfwp": {
     "articles": 6,
@@ -243,7 +243,7 @@
     "articles": 3,
     "code_snippets": 43,
     "loc": 336,
-    "words": 3686
+    "words": 3674
   },
   "computation theory": {
     "articles": 2,
@@ -267,43 +267,43 @@
     "articles": 2,
     "code_snippets": 22,
     "loc": 258,
-    "words": 4836
+    "words": 4831
   },
   "combinatorics": {
     "articles": 21,
     "code_snippets": 68,
     "loc": 635,
-    "words": 19319
+    "words": 19307
   },
   "arithmetic": {
     "articles": 8,
     "code_snippets": 123,
     "loc": 1487,
-    "words": 9677
+    "words": 9669
   },
   "rationals": {
     "articles": 1,
     "code_snippets": 0,
     "loc": 0,
-    "words": 104
+    "words": 101
   },
   "fractals": {
     "articles": 6,
     "code_snippets": 22,
     "loc": 407,
-    "words": 4426
+    "words": 4403
   },
   "optimisation": {
     "articles": 6,
     "code_snippets": 33,
     "loc": 392,
-    "words": 4444
+    "words": 4434
   },
   "set theory": {
     "articles": 1,
     "code_snippets": 0,
     "loc": 0,
-    "words": 107
+    "words": 104
   },
   "rust": {
     "articles": 3,
@@ -321,7 +321,7 @@
     "articles": 12,
     "code_snippets": 174,
     "loc": 1518,
-    "words": 12297
+    "words": 12279
   },
   "probability": {
     "articles": 4,
@@ -343,27 +343,27 @@
   },
   "parsers": {
     "articles": 4,
-    "code_snippets": 24,
-    "loc": 363,
-    "words": 3211
+    "code_snippets": 25,
+    "loc": 813,
+    "words": 1461
   },
   "generators": {
     "articles": 6,
     "code_snippets": 40,
     "loc": 494,
-    "words": 2813
+    "words": 2804
   },
   "open source": {
     "articles": 2,
     "code_snippets": 65,
     "loc": 574,
-    "words": 7878
+    "words": 7869
   },
   "regex": {
     "articles": 5,
     "code_snippets": 17,
     "loc": 156,
-    "words": 1918
+    "words": 1907
   },
   "random walks": {
     "articles": 1,
@@ -375,7 +375,7 @@
     "articles": 1,
     "code_snippets": 7,
     "loc": 55,
-    "words": 462
+    "words": 457
   },
   "artificial intelligence": {
     "articles": 1,
@@ -393,7 +393,7 @@
     "articles": 9,
     "code_snippets": 20,
     "loc": 166,
-    "words": 2633
+    "words": 2615
   },
   "brainfuck": {
     "articles": 1,
@@ -405,7 +405,7 @@
     "articles": 5,
     "code_snippets": 109,
     "loc": 809,
-    "words": 6771
+    "words": 6763
   },
   "json": {
     "articles": 5,
@@ -423,7 +423,7 @@
     "articles": 2,
     "code_snippets": 0,
     "loc": 0,
-    "words": 872
+    "words": 867
   },
   "origami": {
     "articles": 1,
@@ -543,13 +543,13 @@
     "articles": 6,
     "code_snippets": 29,
     "loc": 136,
-    "words": 2923
+    "words": 2903
   },
   "javascript": {
     "articles": 3,
     "code_snippets": 35,
     "loc": 447,
-    "words": 6426
+    "words": 6420
   },
   "shell": {
     "articles": 1,
@@ -565,15 +565,15 @@
   },
   "__all": {
     "articles": 416,
-    "code_snippets": 3895,
-    "loc": 37257,
-    "words": 448255
+    "code_snippets": 3896,
+    "loc": 37707,
+    "words": 446044
   },
   "fp": {
     "articles": 3,
     "code_snippets": 108,
     "loc": 821,
-    "words": 9371
+    "words": 9369
   },
   "modular arithmetics": {
     "articles": 1,
@@ -597,12 +597,12 @@
     "articles": 3,
     "code_snippets": 1,
     "loc": 5,
-    "words": 4309
+    "words": 4289
   },
   "quiz": {
     "articles": 3,
     "code_snippets": 5,
     "loc": 19,
-    "words": 1796
+    "words": 1780
   }
 }

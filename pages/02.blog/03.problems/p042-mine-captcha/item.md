@@ -10,7 +10,7 @@ Can you solve this little minesweeper puzzle?
 
 ![4 by 4 minesweeper grid containing, from left to right, top to bottom: 2, gray, 1, gray, gray, gray, 3, gray, 3, gray, gray, gray, gray, 1, gray, 1](thumbnail.webp)
 
-# Problem statement
+## Problem statement
 
 The [xkcd] website published its cartoon [#2496][source], containing a minesweeper grid,
 and that is the problem for this post:
@@ -35,7 +35,7 @@ You can play minesweeper online or you can play [my minesweeper remake][mineswee
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
@@ -49,7 +49,7 @@ who sent me their correct solutions:
 Join the list of solvers by [emailing me][email] your solution!
 
 
-# Solution
+## Solution
 
 Let's look for the mines together!
 

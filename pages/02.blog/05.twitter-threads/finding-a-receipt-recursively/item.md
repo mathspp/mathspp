@@ -138,8 +138,8 @@ My function takes a stack of receipts (a list of receipts) and another receipt a
 Here it is, with lots of comments:
 
 ```py
-# Write a function that looks for a receipt.
-# Returns True if it finds it, False otherwise.
+## Write a function that looks for a receipt.
+## Returns True if it finds it, False otherwise.
 def find_receipt(stack_of_receipts, receipt):
     # Do we have a stack so small, we can do everything by ourselves?
     if len(stack_of_receipts) == 1:
@@ -187,7 +187,7 @@ If you enjoyed this thread, follow me [@mathsppblog][mathsppblog]!
 Also, [retweet this thread](https://twitter.com/intent/tweet?text=https://twitter.com/mathsppblog/status/1522683659362385922) so others learn too! 😉
 
 
-# Conclusion
+## Conclusion
 
 If a problem can be split into subproblems and the subproblems are similar to the original problem...
 Then recursion might be appropriate!

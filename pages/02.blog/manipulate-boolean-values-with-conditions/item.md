@@ -3,8 +3,6 @@ In this article I explore a common code smell related to conditionals and Boolea
 ===
 
 
-# Manipulate Boolean values with conditions
-
 ## The code smell with `return`
 
 Consider the function `is_even` shown below.

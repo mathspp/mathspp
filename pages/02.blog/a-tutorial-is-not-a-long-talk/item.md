@@ -2,8 +2,6 @@ In this opinion piece the author expresses his views on what makes a good (Pytho
 
 ===
 
-# A tutorial is not a long talk
-
 ![A meme that shows Bart Simpson at detention in school, writing the sentence "a tutorial is not a long talk" on a chalkboard repeatedly.](thumbnail.webp "Bart Simpson internalising the message of this opinion piece.")
 
 

@@ -10,7 +10,7 @@ Can you turn the table to get two or more orders right?
 ![](thumbnail.webp "A scheme of a possible configuration of the wrong orders.")
 
 
-# Problem statement
+## Problem statement
 
 An arbitrary number of people are people sitting down, around a round table,
 waiting for their orders.
@@ -24,7 +24,7 @@ you are not colour-blind (sorry if you are :/).
 !!! Give it some thought...
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 that submitted correct solutions:
@@ -37,7 +37,7 @@ that submitted correct solutions:
 (The list is in no particular order.)
 
 
-# Solution
+## Solution
 
 I received some really interesting solutions and I'll be sharing a paraphrasing
 of the one I think is the most elegant.

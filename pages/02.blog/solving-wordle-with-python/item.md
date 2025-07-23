@@ -5,7 +5,7 @@ In this article we try to crack Wordle, a variation of mastermind played with (E
 ![](thumbnail.webp "A screenshot of a session of Wordle I played.")
 
 
-# Introduction
+## Introduction
 
 [Wordle] is a conceptually simple game that you can play online.
 (For those of you who know it, it's like [Mastermind] (the board game),
@@ -35,7 +35,7 @@ By the way, I am only doing this because I was “nerd snipped” by [Will McGug
 ([this][will-nerd-snipe] is the tweet at fault).
 
 
-# How to play Wordle?
+## How to play Wordle?
 
 The very first step in writing a program that plays a game – Wordle, in this instance –
 is determining the _algorithm_ used to play the game.
@@ -59,12 +59,12 @@ I kept playing familiar words (like “doses” and “swiss”) to look for oth
 A computer won't struggle with this, so this is the strategy we will follow.
 
 
-# TL;DR:
+## TL;DR:
 
 If all you care about is the code, you can get it from [here][gh-code].
 
 
-# Getting the data
+## Getting the data
 
 The first step in writing a program that plays Wordle for us is fetching a (big) list of English words.
 I was lucky enough that [Will][will-mcgugan] had a [list handy][word-list],
@@ -73,7 +73,7 @@ from a free list of Scrabble words, or something like that.
 (If you are on a Unix system, you may also get away with just using the [`words`][unix-words] file.)
 
 
-# Scoring a word
+## Scoring a word
 
 The next step is figuring out how to represent the information regarding which letters go where.
 In the game itself, we have a colour-coded representation.
@@ -177,16 +177,16 @@ preventing characters from being double-counted as `PRESENT`:
 ```py
 >>> score("chess", "swiss")
 [<Tip.ABSENT: 0>, <Tip.ABSENT: 0>, <Tip.ABSENT: 0>, <Tip.CORRECT: 2>, <Tip.CORRECT: 2>]
-# ^ first "s" is no longer flagged as being present.
+## ^ first "s" is no longer flagged as being present.
 
 >>> score("chess", "eexss")
 [<Tip.PRESENT: 1>, <Tip.ABSENT: 0>, <Tip.ABSENT: 0>, <Tip.CORRECT: 2>, <Tip.CORRECT: 2>]
-# ^ first "e" is present
-# but the second one ^ isn't, because "chess" only has one "e".
+## ^ first "e" is present
+## but the second one ^ isn't, because "chess" only has one "e".
 ```
 
 
-# Filtering words that match a score
+## Filtering words that match a score
 
 After we score the guess with regards to the secret word, we need to update our list of possible words.
 To do that, we go through the list of words and remove all the words that:
@@ -217,19 +217,19 @@ containing all the words that can _still_ be the correct word.
 Make sure that your `filter_words` function passes these tests:
 
 ```py
-# The first "a" is correct, so it should be kept.
+## The first "a" is correct, so it should be kept.
 >>> filter_words(["abe", "ace"], "ark", score("a??", "ark"))
 ['abe', 'ace']
 
-# "b" isn't present in the correct word, so "abe" should be dropped.
+## "b" isn't present in the correct word, so "abe" should be dropped.
 >>> filter_words(["abe", "ace"], "abi", score("a??", "abi"))
 ['ace']
 
-# Guess has two "a" and correct word only has one, so "aazz" should be excluded.
+## Guess has two "a" and correct word only has one, so "aazz" should be excluded.
 >>> filter_words(["aazz"], "xxaa", score("azzz", "xxaa"))
 []
 
-# Secret word has one "a" and it's not in the two last positions.
+## Secret word has one "a" and it's not in the two last positions.
 >>> filter_words(["azzz", "zazz", "zzaz", "zzza"], "xxaa", score("azzz", "xxaa"))
 ['azzz', 'zazz']
 ```
@@ -268,7 +268,7 @@ def filter_words(words, guess, score):
 ```
 
 
-# Playing the game against the computer
+## Playing the game against the computer
 
 Now that the computer can filter the list of words down, we can play the game!
 
@@ -351,7 +351,7 @@ The secret word must be 'chess'!
 ```
 
 
-# Using the computer as help to play the game
+## Using the computer as help to play the game
 
 To have the computer help you, we can modify the code a bit.
 Instead of asking for the secret word, the computer will suggest a guess;
@@ -462,7 +462,7 @@ The secret word must be 'truss'!
 ```
 
 
-# Playing Wordle online
+## Playing Wordle online
 
 If all you want is a small program that helps you beat the [online version][wordle] of Wordle,
 then you can condense the code we have seen, and drop some of the generality,

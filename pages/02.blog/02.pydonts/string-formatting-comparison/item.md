@@ -10,7 +10,7 @@ This article compares the three main string formatting methods in Python and sug
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 The [Zen of Python][zen] says that
 
@@ -34,7 +34,7 @@ In this Pydon't, you will:
 <!--^-->
 
 
-# String formatting rationale
+## String formatting rationale
 
 Let's pretend, for a second, that Python had zero ways of doing string formatting.
 
@@ -50,7 +50,7 @@ Here is a possible solution:
 def language_rocks(language):
     return language + " rocks!"
 
-# ---
+## ---
 >>> language_rocks("Python")
 'Python rocks!'
 ```
@@ -73,7 +73,7 @@ def language_info(language, users_estimate):
         " has around " + str(users_estimate) + " users?!"
     )
 
-# ---
+## ---
 >>> language_info("Python", 10)
 'Python rocks! Did you know that Python has around 10 users?!'
 ```
@@ -87,7 +87,7 @@ This is what string formatting is for:
 it's meant to make your life easier when you need to put information inside strings.
 
 
-# Three string formatting methods
+## Three string formatting methods
 
 Now that we've established that string formatting is useful,
 let's take a look at the three main ways of doing string formatting in Python.
@@ -95,20 +95,20 @@ let's take a look at the three main ways of doing string formatting in Python.
 First, here is how you would refactor the function above:
 
 ```py
-# Using C-style string formatting:
+## Using C-style string formatting:
 def language_info_cstyle(language, users_estimate):
     return (
         "%s rocks! Did you know that %s has around %d users?!" %
         (language, language, users_estimate)
     )
 
-# Using the Python 3 `.format` method from strings:
+## Using the Python 3 `.format` method from strings:
 def language_info_format(language, users_estimate):
     return "{} rocks! Did you know that {} has around {} users?!".format(
         language, language, users_estimate
     )
 
-# Using f-strings, from Python 3.6+:
+## Using f-strings, from Python 3.6+:
 def language_info_fstring(language, users_estimate):
     return (
         f"{language} rocks! Did you know that {language}" +
@@ -123,7 +123,7 @@ All three functions above behave in the same way.
  3. `language_info_fstring` uses the new f-strings, which were introduced in [PEP 498][pep498] for Python 3.6+.
 
 
-## C-style formatting
+### C-style formatting
 
 The C-style formatting, which is the one that has been around the longest,
 is characterised by a series of percent signs (`"%"`) that show up in the template strings.
@@ -139,7 +139,7 @@ on the left you put the template string,
 and on the right you put all the pieces of information you need to pass in.
 
 
-## String method `.format`
+### String method `.format`
 
 The string method `.format` is, like the name suggests, _a method of the string type_.
 This means that you typically have a format string and, when you get access to the missing pieces of information,
@@ -151,7 +151,7 @@ It is also common to find that the method `.format` is called where/when
 the string literal is defined.
 
 
-## Literal string interpolation, or f-strings
+### Literal string interpolation, or f-strings
 
 Literal string interpolation is the process through which you interpolate
 values into strings.
@@ -194,7 +194,7 @@ After this series of comparisons, we will give some suggestions
 as to what type of formatting to use, and when.
 
 
-# Value conversion
+## Value conversion
 
 When we do string formatting,
 the objects that we want to format into the template string need to be
@@ -228,7 +228,7 @@ With that class defined, the three following strings are the same:
 
 f"{Data()!s} {Data()!r}"
 
-# Result is 'str repr'
+## Result is 'str repr'
 ```
 
 With C-style formatting we use `"%s"` and `"%r"` to distinguish
@@ -236,7 +236,7 @@ from the regular string version of the object or its representation.
 The two more modern methods do the distinction with the `!s` and `!r` flags.
 
 
-# Alignment
+## Alignment
 
 When we need to format many values across many lines,
 for example to display a table-like piece of output,
@@ -252,7 +252,7 @@ lang = "Python"
 
 f"{lang:<10}"
 
-# Result is 'Python    '
+## Result is 'Python    '
 ```
 
 The C-style aligns on the right, by default, whereas `.format` and f-strings
@@ -275,7 +275,7 @@ to align the output in the centre:
 "{:^10}".format(lang)
 f"{lang:^10}"
 
-# Result is '  Python  '
+## Result is '  Python  '
 ```
 
 To right align, use `>` for the modern methods, or use nothing at all
@@ -289,7 +289,7 @@ and the tip of the arrow points to the alignment direction:
 <!--^-->
 
 
-# Named placeholders
+## Named placeholders
 
 For longer strings, or strings with many slots to be filled in,
 it may be helpful to include placeholder strings,
@@ -306,11 +306,11 @@ name, age = "John", 73
 
 f"{name} is {age} years old."
 
-# Result is 'John is 73 years old.'
+## Result is 'John is 73 years old.'
 ```
 
 
-# Accessing nested data structures
+## Accessing nested data structures
 
 Let's look at the example above again,
 but let's imagine that the name and age were actually stored in a dictionary.
@@ -324,12 +324,12 @@ data = {"name": "John", "age": 73}
 "%(name)s is %(age)d years old." % data
 
 "{data[name]} is {data[age]} years old.".format(data=data)
-# or
+## or
 "{name} is {age} years old.".format(**data)
 
 f"{data['name']} is {data['age']} years old."
 
-# Result is 'John is 73 years old.'
+## Result is 'John is 73 years old.'
 ```
 
 The first usage of the string method `.format` shows an interesting
@@ -349,11 +349,11 @@ ce = ConvolutedExample()
 
 f"Name is: {ce.values[0]['name']}"
 
-# Result is 'Name is: Charles'
+## Result is 'Name is: Charles'
 ```
 
 
-# Parametrised formatting
+## Parametrised formatting
 
 Sometimes, you want to do some string formatting,
 but the exact formatting you do is dynamic:
@@ -400,7 +400,7 @@ This is where parametrising the format specification comes in handy:
 
 ```py
 data = [("Toyota", "Japanese"), ("Ford", "USA"), ("Lamborghini", "Italy")]
-# Compute brand width and country width needed for formatting.
+## Compute brand width and country width needed for formatting.
 bw = 1 + max(len(brand) for brand, _ in data)
 cw = 1 + max(len(country) for _, country in data)
 
@@ -431,11 +431,11 @@ value = 2.7182
 
 f"{month:.{prec}} = {value:.{prec}f}"
 
-# Result is 'Nov = 2.718'
+## Result is 'Nov = 2.718'
 ```
 
 
-# Custom formatting
+## Custom formatting
 
 Finally, the string method `.format` and f-strings allow you to define
 how your own custom objects should be formatted,
@@ -460,7 +460,7 @@ Of course, when possible, you would want to implement a format specification
 that matches the [built-in format spec][builtin-format-spec].
 
 
-# Examples in code
+## Examples in code
 
 As the little snippets of code above have shown you,
 there is hardly any reason to be using the old string formatting style.
@@ -473,7 +473,7 @@ Now, I will show you some usage patterns and I will help you figure
 out what type of string formatting works best in those cases.
 
 
-## Plain formatting
+### Plain formatting
 
 F-strings are very, very good.
 They are short to type, they have good locality properties
@@ -483,16 +483,16 @@ and they are fast.
 For all your plain formatting needs, prefer f-strings over the method `.format`:
 
 ```py
-# Some random variables:
+## Some random variables:
 name, age, w = "John", 73, 10
 
-# ✅ Prefer...
+## ✅ Prefer...
 f"{name!s} {name!r}"
 f"{name:<10}"
 f"{name} is {age} years old."
 f"{name:^{w}}"
 
-# ❌ ... over `.format`
+## ❌ ... over `.format`
 "{!s} {!r}".format(name, name)
 "{:<10}".format(name)
 "{name} is {age} years old.".format(name=name, age=age)
@@ -500,7 +500,7 @@ f"{name:^{w}}"
 ```
 
 
-## Data in a dictionary
+### Data in a dictionary
 
 If all your formatting data is already in a dictionary,
 then using the string method `.format` might be the best way to go.
@@ -514,10 +514,10 @@ using f-strings is much more verbose when compared to the usage of `**` in `.for
 ```py
 data = {"name": "John", "age": 73}
 
-# This is nice:
+## This is nice:
 "{name} is {age} years old.".format(**data)
 
-# This is cumbersome:
+## This is cumbersome:
 f"{data['name']} is {data['age']} years old."
 ```
 
@@ -525,7 +525,7 @@ In the example above, we see that the `.format` example exhibits the usual local
 that f-strings tend to benefit from!
 
 
-## Deferred formatting
+### Deferred formatting
 
 If you need to create your formatting string first,
 and only format it later,
@@ -548,7 +548,7 @@ name = input(" your name >> ")
 get_greeting(lang).format(name)
 ```
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this Pydon't, for you, on a silver platter:
 

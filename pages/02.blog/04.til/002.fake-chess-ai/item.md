@@ -13,7 +13,7 @@ Today I learned about a fake chess-playing AI from the 1700s.
 ![](thumbnail.png "A copper engraving of the Turk, from the Wikipedia article.")
 
 
-# Mechanical Turk
+## Mechanical Turk
 
 The [Mechanical Turk][mech-turk] was a device that was said to be an automaton capable of playing chess,
 defeating many players around the world.

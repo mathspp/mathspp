@@ -3,7 +3,7 @@ Today I learned how to allow my custom objects to be unpacked into keyword argum
 ===
 
 
-# Unpacking kwargs with custom objects
+## Unpacking kwargs with custom objects
 
 If you have a dictionary, you can use the `**` syntax to unpack its keys and values.
 For example, you can use that to merge two dictionaries:

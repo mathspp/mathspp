@@ -3,8 +3,6 @@ This article lists all of the new keyboard shortcuts that you can use in the new
 ===
 
 
-# New keyboard shortcuts in the Python 3.13 REPL
-
 Python 3.13 has a new and improved REPL that has many new useful features, like basic syntax highlighting, improved support for pasting code, and multiline editing.
 The new REPL also comes with many keyboard shortcuts that you can use to increase your productivity and overall just make your life easier.
 

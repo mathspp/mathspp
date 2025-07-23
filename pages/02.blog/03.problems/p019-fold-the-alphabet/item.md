@@ -11,7 +11,7 @@ Take out a piece of paper and a pencil, I am going to ask you to write some lett
 ![A picture of some paper sheets folded in a nice pattern](aaa.jpg "Photo by Thomas Renaud on Unsplash")
 
 
-# Setup
+## Setup
 
 Seriously though, please take out a piece of paper and lay it out horizontally (or in "landscape mode", were the piece of paper a mobile device).
 
@@ -24,7 +24,7 @@ In the end, you should have your piece of paper creased like this:
 Except that your creases should be nicely centered, unlike the drawing I made... Oh well!
 
 
-# Problem statement
+## Problem statement
 
 Now the challenge is the following: I am going to ask you to write the letters `ABCDEFGH` in the rectangles you created and I need you to fold the piece of paper in such a way that,
 
@@ -36,17 +36,17 @@ The only restriction is that you can't cut your sheet of paper! The point is to 
 There are going to be three levels, corresponding to three different letter layouts in the rectangles you creased. Start with level 1, write down the letters and try to fold the paper correctly. When you get it right, erase the letters and write down the letters for level 2, and then for level 3! Good luck!
 
 
-## Level 1
+### Level 1
 
 ![Left to right, top to bottom the letters are ADEH / BCFG](lvl1.webp "ADEH / BCFG")
 
 
-## Level 2
+### Level 2
 
 ![Left to right, top to bottom the letters are AHGD / BCFE](lvl2.webp "AHGD / BCFE")
 
 
-## Level 3
+### Level 3
 
 ![Left to right, top to bottom the letters are AHBG / DECF](lvl3.webp "AHBG / DECF")
 
@@ -59,15 +59,15 @@ There are going to be three levels, corresponding to three different letter layo
 I heard of these from a friend and he learned about this problem by watching [this YouTube video](https://www.youtube.com/watch?v=GpClxF41ugg).
 
 
-# Solution
+## Solution
 
 
-## Level 1
+### Level 1
 
 For this one, all you had to do was fold the paper along the horizontal line and then fold the resulting piece of paper like a concertina.
 
 
-## Level 2
+### Level 2
 
 This one is much harder to explain in words so I made some more drawings and made some markings on the sheet of paper:
 
@@ -92,7 +92,7 @@ Now this is how you go about it:
 _Voilà!_
 
 
-## Level 3
+### Level 3
 
 In my opinion this one is easier to understand how it is going to work but it is much harder to do without ruining the piece of paper! Lets get to it!
 

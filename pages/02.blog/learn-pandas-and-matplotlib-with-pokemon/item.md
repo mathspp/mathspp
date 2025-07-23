@@ -3,8 +3,6 @@ This tutorial uses Pokémon to introduce readers to data science with pandas and
 ===
 
 
-# Learn pandas and matplotlib with Pokémon
-
 This tutorial will teach you the basics of data science with pandas and matplotlib with Pokémon as an example.
 We will use Pokémon data from the first 8 generations to learn what are pandas series and dataframes, what's categorical data and how broadcasting works, and more.
 We'll also use matplotlib to learn about line and bar plots, scatter plots, and violin plots, all while studying the strengths and weaknesses of Pokémon.

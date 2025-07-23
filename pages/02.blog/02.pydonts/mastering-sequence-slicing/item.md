@@ -16,7 +16,7 @@ slice assignment, and slice deletion.
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 In [the previous Pydon't][pydont-sequence-slicing] we looked at using
 sequence slicing to manipulate sequences, such as strings or lists.
@@ -37,14 +37,14 @@ we will finish off the subject of slicing sequences with:
  - seeing how to implement slicing for your custom objects.
 
 
-# Slicing step
+## Slicing step
 
 The next stop in your journey to mastering slicing in Python
 is knowing about the lesser-used third parameter in the slice syntax:
 the step.
 
 
-## Just the step
+### Just the step
 
 The step is a third integer that you can add to your slicing syntax
 that allows you to pick _evenly spaced_ elements from the sequence.
@@ -81,7 +81,7 @@ Once again, notice that the `step` parameter in slicing is closely related
 to the third (optional) argument that the built-in `range` function accepts.
 
 
-## Start, stop and step
+### Start, stop and step
 
 When you also specify start and stop positions, Python will first figure
 out the section of the sequence that is encompassed by the start and stop
@@ -147,7 +147,7 @@ This is why we get
 'inie'
 ```
 
-## Unit and empty steps
+### Unit and empty steps
 
 Much like with the start and stop parameters, the step parameter can be omitted.
 This is what we do when we write a slice of the form `[start:stop]`:
@@ -176,7 +176,7 @@ Here is just one example:
 !!! When the third argument isn't specified, it is taken to be 1 by default.
 
 
-## Negative step
+### Negative step
 
 We have seen how a positive step parameter behaves,
 now we will see how a negative one does.
@@ -308,7 +308,7 @@ it should become clearer why the slice is empty:
 ```
 
 
-## Reversing and then skipping
+### Reversing and then skipping
 
 Another possible way to get you more comfortable with these
 negative steps is if you notice the relationship between
@@ -342,7 +342,7 @@ and that the step parameter is only then used to skip elements:
 ```
 
 
-## Zero
+### Zero
 
 For the sake of completeness,
 let's just briefly mention what happens if you use 0 as the step parameter,
@@ -361,7 +361,7 @@ Using 0 as the step gives a `ValueError`,
 and that is all there is to it.
 
 
-## Recommendations
+### Recommendations
 
 !!! Did you know that the Python Standard Library (PSL) has around
 !!! 6000 usages of sequence slicing, but less than
@@ -449,7 +449,7 @@ does in fact reverse a sequence while skipping the first element:
 '!ysae si gnicil'
 ```
 
-# Sequence copying
+## Sequence copying
 
 Having taken a look at many different ways to slice and dice sequences,
 it is now time to mention a very important nuance about sequence slicing:
@@ -498,7 +498,7 @@ sequences is as follows:
 ```
 
 
-# Manipulating mutable sequences
+## Manipulating mutable sequences
 
 Let us continue down this journey of mastering sequence slicing.
 So far we have been using slices to extract parts of our sequences,
@@ -510,7 +510,7 @@ but slices can also be used to manipulate the contents of our sequences!
 ! Prime examples of _mutable_ sequences are lists, and prime examples
 ! of _immutable_ sequences are strings.
 
-## Slice assignment
+### Slice assignment
 
 Say that `l` is a list.
 We are used to “regular” assignment,
@@ -662,7 +662,7 @@ but knowing about it means that when you do, you will be able to write
 that piece of code beautifully.
 
 
-## Slice deletion
+### Slice deletion
 
 If you can assign to slices, what happens if you assign the empty list `[]` to a slice?
 
@@ -686,7 +686,7 @@ for the same effect:
 ```
 
 
-# More idiomatic slicing
+## More idiomatic slicing
 
 Now that we have learned some more cool features on sequence slicing,
 it is time to see how these features are better used and how they
@@ -700,7 +700,7 @@ to read character by character, but now you grasp words as a whole.
 With enough practice, these idiomatic pieces of code become recognisable as a whole as well.
 
 
-## Even positions and odd positions
+### Even positions and odd positions
 
 A simple slice that you may want to keep on the back of your mind is the slice that lets you
 access all the elements in the even positions of a sequence.
@@ -722,7 +722,7 @@ l[1::2]
 ```
 
 
-## `s[::-1]`
+### `s[::-1]`
 
 A slice with no start and stop parameters and a `-1` in the step is a very common slicing pattern.
 In fact, there are approximately 100 of these slices in the Python Standard Library,
@@ -745,7 +745,7 @@ This function takes a sequence and allows you to iterate over the sequence in _r
 without paying the extra memory cost of actually copying the whole sequence.
 
 
-## `l[:]` or `l[::]`
+### `l[:]` or `l[::]`
 
 If a slice makes a copy, that means that a slice is a very clean way to copy a sequence!
 The slices `[:]` and `[::]` select whole sequences, so those are primes ways to copy
@@ -780,7 +780,7 @@ So `l[:]` and `l[::]` should be read as “a copy of `l`”.
 This idiom also explains the thumbnail image in the beginning of the article.
 
 
-## `del l[:]`
+### `del l[:]`
 
 Another idiom that makes use of the slice `[:]`, but with something extra,
 is the idiom to delete the contents of a list.
@@ -865,7 +865,7 @@ Just remember, `l[:] = []` and `del l[:]` can be read as “delete the _contents
 
 
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this Pydon't, for you, on a silver platter:
 

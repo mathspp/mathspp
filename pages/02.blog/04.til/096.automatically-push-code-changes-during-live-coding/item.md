@@ -2,7 +2,7 @@ Today I learned how to automatically push code changes while I'm doing live codi
 
 ===
 
-# Automatically push code changes during live coding
+## Automatically push code changes during live coding
 
 When I'm doing live coding during tutorials / workshops / webinars, I often want to push the code I'm writing to GitHub so that participants have a way to fetch my work in case they fall behind.
 I don't want to have to do this manually every time I write some code, so I wrote a short script that does this automatically for me.

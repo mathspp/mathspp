@@ -2,8 +2,6 @@ How can you find the longest substring that contains only unique characters?
 
 ===
 
-# Longest unique substring
-
 In this article I'll share a coding challenge with you.
 Then, I'll analyse different approaches to solving this problem, talking about the advantages and disadvantages of each one in terms of efficiency and code quality.
 

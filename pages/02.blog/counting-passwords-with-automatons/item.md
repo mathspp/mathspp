@@ -9,8 +9,6 @@ In this article we use (finite state) automatons to count
 
 ===
 
-# Counting passwords with automatons
-
 ## Counting is easy
 
 At one point or another in your maths education you were asked all

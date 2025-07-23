@@ -3,7 +3,7 @@ ALL Python functions return something and this article explains how and why.
 ===
 
 
-# Does `print` return something?
+## Does `print` return something?
 
 Does the built-in `print` return something when you call it?
 It doesn't!..
@@ -35,7 +35,7 @@ But that's not quite true.
 And the reason why it _looks_ true is because of the way the REPL handles a certain value...
 
 
-# The value `None` in the REPL
+## The value `None` in the REPL
 
 Open the REPL, type `None`, and press <kbd>Enter</kbd>.
 What do you expect to see?
@@ -73,7 +73,7 @@ So, we are now aware that the value `None` is handled differently inside the REP
 Now, this is going to be a very important piece of information for what comes next.
 
 
-# All functions return something
+## All functions return something
 
 The truth of the matter is that _**ALL**_ functions return _something_.
 And the ones that look like they don't?
@@ -109,7 +109,7 @@ See, maybe `print` and `append` end with `return None`, right?
 So, what if you write a function that doesn't have `return None` at the end?
 
 
-# No-return functions return `None`
+## No-return functions return `None`
 
 Let me define an empty function:
 
@@ -212,7 +212,7 @@ Take a look at the very end of the list of instructions to find the `return None
 ```
 
 
-# Why do all functions return something?
+## Why do all functions return something?
 
 ! The explanation that follows is an _educated guess_ based on my experience.
 
@@ -256,7 +256,7 @@ And that's it.
 After all, [the Zen of Python][zen-of-python] says “Special cases aren't special enough to break the rules.”.
 
 
-# Conclusion
+## Conclusion
 
 Now you know that all Python functions return something:
 

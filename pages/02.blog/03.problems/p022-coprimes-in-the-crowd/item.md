@@ -11,7 +11,7 @@ This simple problem is an example of a very interesting phenomenon: if you have 
 ![A crowd of people, photo by Rob Curran on Unsplash](crowd.jpg)
 
 
-# Problem statement
+## Problem statement
 
 Let $n \geq 2$ be an integer. Then, consider the integers
 
@@ -28,7 +28,7 @@ In other words, show that there's two of those $n$ numbers that are coprime.
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solution
+## Solution
 
 The solution is a simple application of the pigeonhole principle.
 

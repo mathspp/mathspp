@@ -14,10 +14,10 @@ hero_image_url: /user/themes/myquark/images/common_hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 metadata:
     author: Rodrigo Girão Serrão
-    description: "All of the mathspp blog articles about parsers."
-    og:description: "All of the mathspp blog articles about parsers."
-    og:image: "https://mathspp.com/blog/tags/parsers/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/parsers/thumbnail.webp"
+    description: "All of the mathspp blog articles about Parsers."
+    og:description: "All of the mathspp blog articles about Parsers."
+    og:image: "https://mathspp.com/blog/tags/Parsers/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/Parsers/thumbnail.webp"
 title: "Parsers blog articles"
 ---
 
@@ -29,8 +29,8 @@ title: "Parsers blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">4</th>
-            <th style="text-align: center;">3,211</th>
-            <th style="text-align: center;">363</th>
+            <th style="text-align: center;">1,461</th>
+            <th style="text-align: center;">813</th>
         </tr>
     </thead>
     <tbody>

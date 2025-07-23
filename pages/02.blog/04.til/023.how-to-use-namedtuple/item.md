@@ -5,7 +5,7 @@ Today I learned how to use the `namedtuple` from the module `collections`.
 ![The Python import statement that allows us to use the Python module `selectors`.](thumbnail.webp)
 
 
-# `namedtuple`
+## `namedtuple`
 
 The module [`collections`][collections] is a gold mine of useful Python tools,
 and one of those tools is the `namedtuple`.
@@ -43,7 +43,7 @@ class Person:
 This also works, but that's also more work!
 
 
-# How to create a `namedtuple`
+## How to create a `namedtuple`
 
 So, how do you create a `namedtuple`?
 After the appropriate imports, you just need to call the factory function `namedtuple`:

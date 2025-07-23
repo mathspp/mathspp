@@ -3,7 +3,7 @@ Today I learned how I can use the method 'groupdict' from a regex match to get a
 ===
 
 
-# `re.Match.groupdict`
+## `re.Match.groupdict`
 
 Python regular expressions support named groups, which are introduced with the flag `?P<name>`:
 

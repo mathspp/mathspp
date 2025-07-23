@@ -3,14 +3,14 @@ Given some paper squares, can you slice them and then glue them back together to
 ===
 
 
-# Problem statement
+## Problem statement
 
 Given $n$ squares of side lengths $a_1, a_2, \cdots, a_n$, is it possible to cut them in a way that the cut pieces can be rearranged into a single, larger square with no holes or no overlapping pieces?
 
 You can actually try this out with paper squares and a pair of scissors!
 
 
-# Solution
+## Solution
 
 The first step is to recognize it suffices to prove the statement for two squares.
 That is, given two squares of side lengths $a$ and $b$, it is always possible to cut them into pieces and rearrange those pieces to create a single square.

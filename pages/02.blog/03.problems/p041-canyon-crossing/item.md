@@ -13,7 +13,7 @@ What's the order in which they should cross?
 
 ![](thumbnail.png "Photo by Danika Perkinson on Unsplash")
 
-# Problem statement
+## Problem statement
 
 4 friends are doing some trekking by night,
 when they hit a rope bridge that they need to cross.
@@ -34,7 +34,7 @@ How can they do that if they each take 1, 2, 5, and 10 minutes to cross the brid
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
@@ -47,7 +47,7 @@ who sent me their correct solutions:
 Join the list of solvers by [emailing me][email] your solution!
 
 
-# Solution
+## Solution
 
 If you follow what is called a greedy approach, you will get to the following answer: 19 minutes.
 

@@ -3,7 +3,7 @@ Today I learned that I can use the percent sign to run commands from inside Jupy
 ===
 
 
-# Run commands inside Jupyter notebooks
+## Run commands inside Jupyter notebooks
 
 If you are running a Jupyter notebook you can use the percent sign `%` to run “magic commands”, namely shell commands you already probably use.
 
@@ -45,7 +45,7 @@ So, if I run `%load writer.py`, then the source code of the file `writer.py` is 
 After running `%load writer.py` in a cell, the cell turns into this:
 
 ```py
-# %load writer.py
+## %load writer.py
 from itertools import count
 
 for number in range(100):

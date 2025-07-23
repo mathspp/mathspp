@@ -3,8 +3,6 @@ This article explains what `*args` means in Python and how to use it in your own
 ===
 
 
-# What is `*args` and how do you use it?
-
 You probably know the built-in function `max`.
 What does it do?
 You give it some values, and it returns the largest one.

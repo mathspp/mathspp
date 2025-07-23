@@ -5,7 +5,7 @@ Today I learned that the module `contextlib` provides with a context manager to 
 ![Bottom half of a face in grayscale doing a “shush” gesture.](thumbnail.png "Photo by Kristina Flour on Unsplash.")
 
 
-# `contextlib`
+## `contextlib`
 
 The module [`contextlib`][contextlib] contains many utilities to deal with context managers.
 In particular, it contains some useful context managers.
@@ -38,7 +38,7 @@ When we want to try to do something and want do nothing in case it fails,
 the context manager `suppress` is great because it reduces the boilerplate you have to write.
 
 
-# Code examples
+## Code examples
 
 As an example, consider a function that deletes a key from a dictionary.
 If you try to delete a key from a dictionary that doesn't contain that key,
@@ -58,7 +58,7 @@ def dictionary_key_delete(a_dict, key):
     if key in a_dict:
         del a_dict[key]
 
-# or
+## or
 
 def dictionary_key_delete(a_dict, key):
     try:
@@ -90,19 +90,19 @@ The only issue is that the method throws a `ValueError` if the element is not in
 We can work around this in several ways:
 
 ```py
-# (LBYL) Look before you leap:
+## (LBYL) Look before you leap:
 def remove_from_list(a_list, element):
     if element in a_list:
         a_list.remove(element)
 
-# (EAFP) Easier to ask forgiveness than permission:
+## (EAFP) Easier to ask forgiveness than permission:
 def remove_from_list(a_list, element):
     try:
         a_list.remove(element)
     except ValueError:
         pass
 
-# Also EAFP but more concise:
+## Also EAFP but more concise:
 from contextlib import suppress
 def remove_from_list(a_list, element):
     with suppress(ValueError):

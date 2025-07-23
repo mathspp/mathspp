@@ -7,7 +7,7 @@ In this article we go over the most obscure “Hello, world!” Python program I
 ![A really weird code snippet that contains code that is supposed to print “Hello, world!”.](thumbnail.webp "A weird code snippet that allegedly prints “Hello, world!”.")
 
 
-# The code
+## The code
 
 In this article we are going to be unravelling this monstrous piece of Python code:
 
@@ -35,9 +35,9 @@ This explanation/walkthrough might be a bit confusing because I will be narratin
 That's why I will also include a clearer explanation of what is going on, assuming you already understand all the components.
 
 
-# Walking through the code
+## Walking through the code
 
-## Renaming
+### Renaming
 
 The first thing I need to do, to understand what is going on, is to give more reasonable names to things.
 
@@ -92,7 +92,7 @@ C.prop
 ```
 
 
-## Decorated class definition
+### Decorated class definition
 
 Python decorators are insanely powerful and,
 to be honest, one of my favourite language features!
@@ -170,7 +170,7 @@ C_obj.prop
 ```
 
 
-## Annotated function definition
+### Annotated function definition
 
 Now that we have defined a class,
 we define our function `_` with
@@ -250,7 +250,7 @@ class MyList(list):
 
 lst = MyList([1, 2, 3])
 print(lst.length)
-# 3
+## 3
 ```
 
 In the example above, we used `@property`, but the `@` is just syntactic sugar.
@@ -261,7 +261,7 @@ The lambda function, in turn, prints the value of `fmt` when called.
 Finally, we return `""` because the dunder method `__format__` must return a string.
 
 
-## The final touch
+### The final touch
 
 To wrap everything up, the program ends with `C_instance.prop`,
 thus accessing the attribute `prop` of `C_instance`.
@@ -277,7 +277,7 @@ which was `"Hello, world!"`, so that is what is printed.
 And that is how the most obfuscated “Hello, world!” program works!
 
 
-# The short explanation
+## The short explanation
 
 For someone who understands all of the pieces of the puzzle involved,
 a much shorter explanation can be given.
@@ -288,7 +288,7 @@ This ends up creating a property that prints the original format specification (
 Finally, the program concludes by accessing that same property, triggering the call.
 
 
-# Source
+## Source
 
 This short blog post was written as an expanded version of a Twitter thread I posted which,
 in turn, depended on a tweet posted by Ned Batchelder.

@@ -14,7 +14,7 @@ Does elegance matter when writing computer programs..?
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 At the time of writing this article, I am finishing the preparation
 of [my Python conference talk “Pydon'ts”][pydonts-europython] at [EuroPython].
@@ -30,7 +30,7 @@ In this Pydon't I will share with you _why_ this is important.
 !!! to help support the “Pydon'ts” series of articles 💪.
 <!--^-->
 
-# Beware, opinions ahead
+## Beware, opinions ahead
 
 Idiomatic code, readable code, “Pythonic” code, elegant code,
 these are all subjective things.
@@ -48,7 +48,7 @@ for you if you can't stand the fact that other people might think
 differently from you 🙂.
 
 
-# Elegance is not a dispensable luxury
+## Elegance is not a dispensable luxury
 
 Let me be honest with you:
 when I was preparing my talk, and preparing this Pydon't,
@@ -89,7 +89,7 @@ because they force you to write beginner-level code:
 which is code that only uses the most basic tools in the language.
 
 
-# Don't write that, that's unreadable
+## Don't write that, that's unreadable
 
 Think about whether or not you have been in this situation before,
 or have witnessed it:
@@ -151,7 +151,7 @@ and that is why most people don't even bother.
 Please, don't be like most people.
 
 
-# The right tool for the job
+## The right tool for the job
 
 To back me up, I have the words of legendary [Tim Peters][tim-peters],
 the author of [The Zen of Python][pydont-zen-of-python].
@@ -209,7 +209,7 @@ By opposition, writing elegant and Pythonic code will make it
  - faster;
 
 
-# Optimise for rewrite
+## Optimise for rewrite
 
 At this point I am assuming that you are interested in this notion
 of continuous learning –
@@ -240,7 +240,7 @@ or would you rather write code that everyone (including your future self)
 is scared of going near to?
 
 
-# Conclusion
+## Conclusion
 
 Part of the elegance in your Python programs will come naturally
 from learning about the features that Python has to offer,

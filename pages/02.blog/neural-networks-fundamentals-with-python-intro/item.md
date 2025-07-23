@@ -11,7 +11,7 @@ and some code to serve as backbone for the remainder of the series.
 ![A nice image with blue and purple lights.](thumbnail.png "Photo by JJ Ying on Unsplash.")
 
 
-# Purpose of the series
+## Purpose of the series
 
 In this short series I will be guiding you on how to implement a neural network
 from scratch, so that you really understand how they work.
@@ -35,7 +35,7 @@ models actually work, and one of the best ways to understand how something works
 is by dissecting it, studying it and assembling it yourself.
 
 
-## Knowledge pre-requisites
+### Knowledge pre-requisites
 
 When it comes to programming, I will assume you are comfortable with the basic
 concepts of Python.
@@ -63,7 +63,7 @@ Feel free to skip the formal calculations if you are in a rush, but bear in mind
 that going through those is one of the things that really helps the knowledge sink in.
 
 
-# Purpose of this article
+## Purpose of this article
 
 In this article we will be setting up for the remainder of the series.
 First, I will be covering what needs to be installed.
@@ -74,7 +74,7 @@ implement: we will be modelling and initialising layers, the backbone of any neu
 !!! can be found in [this GitHub repository][gh-nnfwp].
 
 
-# Software needed
+## Software needed
 
 In order to follow along you will need to have Python 3 installed
 (I will be running all my code in Python 3.9, which is my main installation
@@ -99,7 +99,7 @@ I know that can be frustrating, but don't forget that Google exists for this typ
 of situation.
 
 
-# First lines of code
+## First lines of code
 
 Whenever I am doing a project, I usually spend a bit of time thinking about
 the components I am going to need and how they will interact.
@@ -114,7 +114,7 @@ to play with right from the get-go.
 But what is a layer in a neural network?
 
 
-# Neurons and layers
+## Neurons and layers
 
 A neural network can be thought of as a very basic emulation of the human brain.
 I am no neurologist, but from my understanding our neurons are connected to each other
@@ -231,7 +231,7 @@ and these bias vectors in order to model a layer in a neural network,
 so let us get that off the way.
 
 
-# Initialising weight matrices and bias vectors
+## Initialising weight matrices and bias vectors
 
 In order to create the weight matrices and the bias vectors we just need to know
 their dimensions, so we can define two functions
@@ -301,7 +301,7 @@ def create_bias_vector(length):
 ```
 
 
-# Updating neuron states
+## Updating neuron states
 
 Now that we have the weights and the bias that model the connections between
 different layers, we can actually see what it looks like to give some input
@@ -350,7 +350,7 @@ array([[-0.06766244],
 ```
 
 
-# Modelling layers
+## Modelling layers
 
 We now have some of the building blocks in order to get a layer working,
 so another simple thing we could do is actually put them together.
@@ -425,7 +425,7 @@ One of the times I ran it, I got
 ```
 
 
-# Wrap-up & current code
+## Wrap-up & current code
 
 Now that we have the backbone for the neural network in place,
 we can take a look at what we have coded so far and insert the docstring comments
@@ -442,7 +442,7 @@ It doesn't look like much, but on the other hand we have advanced quite a lot.
 In the next article we will be aggregating layers in a class for a neural network
 and we will be looking at how neural networks learn.
 
-# The series
+## The series
 
 These are all the articles in this series:
 

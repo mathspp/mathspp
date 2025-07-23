@@ -11,7 +11,7 @@ will it solve itself?
 
 ![A scrambled Rubik's cube.](thumbnail.png "Photo by Serg Antonov on Unsplash.")
 
-# Problem statement
+## Problem statement
 
 A Rubik's cube is a toy like the one you can see in the picture above.
 It's a 3 by 3 by 3 cube, where each face has one of six colours.
@@ -59,7 +59,7 @@ Why?
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
@@ -69,10 +69,10 @@ who sent me their correct solutions:
 Join the list of solvers by [emailing me][email] your solution!
 
 
-# Solution
+## Solution
 
 
-## Solution with group theory
+### Solution with group theory
 
 If you are comfortable with the basics of group theory,
 the proof can be stated succinctly.
@@ -98,7 +98,7 @@ $$
 This shows that $M^{m - n}$ (where $m - n \geq 0$) is the solved cube.
 
 
-## Overview of less math-y solution
+### Overview of less math-y solution
 
 Here is the generic overview of the solution we will produce together:
 
@@ -109,7 +109,7 @@ Here is the generic overview of the solution we will produce together:
  4. we conclude that an earlier position was the cube solved again.
 
 
-## Pigeonhole principle
+### Pigeonhole principle
 
 Let's start from the beginning.
 
@@ -140,7 +140,7 @@ Now we know that if we keep shuffling the cube repeatedly,
 we eventually end up in a repeated position.
 
 
-## Move notation
+### Move notation
 
 Before we move on, I need to introduce something that
 will make my life easier when explaining the solution,
@@ -200,9 +200,9 @@ through letters of the alphabet.
 If you really want to, you can google more information on this notation.
 
 
-## Scrambling move
+### Scrambling move
 
-### $M$
+#### $M$
 
 The problem statement says specifically (and that is a very important detail)
 that we shuffle the cube by repeating the same movements over and over again.
@@ -215,7 +215,7 @@ let's now use $M$ to denote the set of moves that are being repeated over and ov
 I want you to forget that $M$ is composed of smaller steps.
 I want you to think of $M$ as a single movement that transforms your cube.
 
-### Exponent notation
+#### Exponent notation
 
 Now we do something with $M$.
 We use $M^n$ to say that we have done the movement $M$ exactly $n$ times.
@@ -231,7 +231,7 @@ This notation is going to make it easier for more to explain my solution,
 so take your time.
 
 
-## Equal positions
+### Equal positions
 
 Now we'll reason about the different cube states in these positions:
 
@@ -254,7 +254,7 @@ $$
 and we know that $M^n = M^m$.
 
 
-## Un-scrambling
+### Un-scrambling
 
 The next thing we want to take a look at is the fact that the
 move $M$ can be undone.
@@ -287,7 +287,7 @@ It's exactly the same position, $M^n$ and $M^m$ just represent different names f
 So, if we apply the same set of moves to both representations, we should end up again at the same position.
 
 
-## Un-scrambling and algebraic manipulations
+### Un-scrambling and algebraic manipulations
 
 So, what if we apply the moves $M^{-n}$ to both cubes?
 They look the same in the beginning, so they have to look the same in the end:
@@ -324,7 +324,7 @@ Therefore, we can rewrite $M^m M^{-n}$ as $M^{m - n}$,
 which we can substitute back into the expression we had before.
 
 
-## Eureka!
+### Eureka!
 
 $$
 M^0 = M^m M^{-n} \implies M^0 = M^{m - n} ~ .

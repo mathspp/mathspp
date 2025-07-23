@@ -12,7 +12,7 @@ Can you tackle this one?
 ![Two keys.](thumbnail.webp "Original photograph from Aneta Pawlik on Unsplash.")
 
 
-# Problem statement
+## Problem statement
 
 You and your best friend are locked in jail for no reason at all, but you are
 given the opportunity to escape.
@@ -36,7 +36,7 @@ If you need any clarification whatsoever, feel free to ask in the comment sectio
 
 
 
-# Solution
+## Solution
 
 The solution I will be sharing is not the original solution I thought of,
 I decided to share with you the solution that someone [posted][reddit-sol]

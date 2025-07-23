@@ -4,7 +4,7 @@ How many queens and knights can you place on a chessboard?
 
 ![A white chess queen and black chess knight's silhouettes against the sun.](thumbnail.webp "Photo by ᴊᴀᴄʜʏᴍ ᴍɪᴄʜᴀʟ on Unsplash.")
 
-# Problem statement
+## Problem statement
 
 This is a harder variant of the [8 queens][8-queens] problem.
 As a warm-up for _this_ problem, consider solving that one first!
@@ -33,7 +33,7 @@ This problem was brought to my attention by the late [Roger Hui][roger-hui],
 so let my sharing this problem be a small tribute to him.
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
@@ -45,7 +45,7 @@ Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
 
 
-# Solution
+## Solution
 
 We can start by showing that it is impossible to have 6 queens and 6 knights on the board.
 

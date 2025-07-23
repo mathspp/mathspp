@@ -5,7 +5,7 @@ Can you find the centre of the circle with just five lines?
 ![](thumbnail.webp "Photo by Luis Eusebio on Unsplash.")
 
 
-# Problem statement
+## Problem statement
 
 Suppose you have a circle, like the one in the figure below.
 At your disposal, you have a compass, a straightedge
@@ -23,7 +23,7 @@ and every time you use the straightedge counts as another line.)
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
@@ -40,13 +40,13 @@ Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
 
 
-# Solution
+## Solution
 
 There are many ways in which the centre of the circle can be found!
 However, doing that with just 5 lines is the challenge.
 
 
-## Deductive reasoning
+### Deductive reasoning
 
 Recall that the centre of the circle is the point that is at the same distance of all the points in the circumference.
 So, if you draw _any_ chord and then draw its bisector, you know that bisector will go through the centre of the circle (point A in the figure):
@@ -85,7 +85,7 @@ By making use of those 3 circles we can draw 2 bisectors which intersect at the 
 That makes up for a total of 5 lines.
 
 
-## Animated solution
+### Animated solution
 
 Here is a GIF of the solution:
 

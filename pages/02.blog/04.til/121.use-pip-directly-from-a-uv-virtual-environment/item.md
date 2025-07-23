@@ -3,7 +3,7 @@ Today I learned how to use uv to escape uv and go back to using venv and pip for
 ===
 
 
-# Use pip directly from a uv virtual environment
+## Use pip directly from a uv virtual environment
 
 uv comes with the subcommands `uv venv` and `uv pip` that let you use your `venv` + `pip` workflows, with the commands you already know, while benefiting from the speed of uv.
 However, I have a specific project in which I need to be able to use `pip` directly from the virtual environment that uv created.

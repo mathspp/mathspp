@@ -2,8 +2,6 @@ Explore unusual Python features to solve the problem of determining whether an e
 
 ===
 
-# Hold my parentheses
-
 Given a string representing a parenthesised expression like `"(3*(x+42)"`, how can we figure out if the expression is correctly parenthesised?
 
 In this article I want to explore a solution that doesn't look like your usual piece of Python code.

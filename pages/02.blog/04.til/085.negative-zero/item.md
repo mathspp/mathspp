@@ -3,7 +3,7 @@ Today I learned that Python and other programming languages have negative zero, 
 ===
 
 
-# Negative zero `-0.0`
+## Negative zero `-0.0`
 
 If you open your Python REPL and type `-0` in, you get `0` back:
 
@@ -79,7 +79,7 @@ for _ in range(20):
     print(x)
 
 """
-# ...
+## ...
 1e-260
 1e-280
 1e-300
@@ -92,7 +92,7 @@ for _ in range(20):
 ```
 
 
-## Use cases for negative zero
+### Use cases for negative zero
 
 [Someone on Twitter](https://x.com/somacdivad/status/1711877395739709453) mentioned that they've seen this used in a chemistry paper.
 The appearance of a `-0.0` indicated that a very small number was rounded to `0` from a negative number, but in that particular context (of the chemistry paper), that indicated that a specific chemical process had occurred.
@@ -103,7 +103,7 @@ So, if for some reason you have a list that is typed as `list[float]` and you wa
 If you know of another practical use case for negative zero, comment below and I'll add it to this article!
 
 
-## Distinguish `0.0` from `-0.0`
+### Distinguish `0.0` from `-0.0`
 
 Because `0.0 == -0.0`, one way I could think of to distinguish negative zero from “regular” zero is by converting it to a string and comparing the signs of the number.
 

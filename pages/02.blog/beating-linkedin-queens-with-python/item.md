@@ -3,8 +3,6 @@ This is a short account of how I wrote a program that solves all LQueens puzzles
 ===
 
 
-# Beating LinkedIn “Queens” with Python
-
 About a year ago LinkedIn started publishing a daily logic puzzle called “Queens”.
 This puzzle is a crossover between the [queen-placing puzzle from chess](/blog/problems/8-queens) and Sudoku, and takes place in a square grid with a number of heterogeneous coloured regions, as the image below demonstrates:
 

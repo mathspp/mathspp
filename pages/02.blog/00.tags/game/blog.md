@@ -29,7 +29,7 @@ title: "Game blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">8</th>
-            <th style="text-align: center;">12,006</th>
+            <th style="text-align: center;">12,000</th>
             <th style="text-align: center;">916</th>
         </tr>
     </thead>

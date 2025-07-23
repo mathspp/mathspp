@@ -7,8 +7,6 @@ Create animations from first principles and morph between different figures with
   A video animation of a colourful circle morphing into a figure eight and back, animated with a Python and pygame script.
 </video>
 
-# Animations from first principles (in 5 minutes)
-
 Let me guide you through creating your first animation.
 We'll be using Python and `pygame`, so make sure you install it in your preferred way, and make sure it was installed properly:
 

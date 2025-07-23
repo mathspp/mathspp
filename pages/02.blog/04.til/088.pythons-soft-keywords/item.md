@@ -3,7 +3,7 @@ Today I learned how many soft keywords Python has and what they are.
 ===
 
 
-# Python's soft keywords
+## Python's soft keywords
 
 Python 3.12 has 4 soft keywords:
 
@@ -15,7 +15,7 @@ Python 3.12 has 4 soft keywords:
 In older versions of Python (I _think_ Python 3.5 and 3.6), `async` and `await` were soft keywords too, but that's no longer the case.
 
 
-## What are soft keywords?
+### What are soft keywords?
 
 Loosely speaking, soft keywords are keywords that can be assigned to, in opposition to hard keywords that can never be assigned to.
 
@@ -25,7 +25,7 @@ No matter what you do, `if` will always be used to represent the beginning of a 
 On the other hand, a keyword like `match` is a soft keyword because you can use it for structural pattern matching, but it's also a legal variable name elsewhere: `match = re.match(...)` works perfectly well.
 
 
-## How to determine all of Python's soft keywords?
+### How to determine all of Python's soft keywords?
 
 !!!! EDIT: After sharing my original method and posting this article on X, Pablo Galindo Salgado – a Python core dev – [pointed out I could've simply done the following](https://x.com/pyblogsal/status/1723690831318577591):
 !!!! 

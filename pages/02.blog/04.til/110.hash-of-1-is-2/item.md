@@ -3,7 +3,7 @@ Today I learned that the hash of an integer is the integer itself, except for `-
 ===
 
 
-# Hash of `-1` is `-2`
+## Hash of `-1` is `-2`
 
 The hash of a value is a numeric “signature” assigned to that value used in data structures like dictionaries and sets.
 Among other interpretations, a hash is supposed to be a quick way to check if two objects are different.

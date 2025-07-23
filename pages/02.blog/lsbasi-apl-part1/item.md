@@ -10,7 +10,7 @@ Let's build a simple [APL][apl-wiki] interpreter! APL is an array-oriented progr
 ![A black and white doodle of a person in front of a computer.](./lsbasi-apl-part1-bg.webp)
 
 
-# Foreword
+## Foreword
 
 First and foremost, let me give credit to Ruslan Spivak's [Let's build a simple interpreter][lsbasi] blog post series on building a Pascal interpreter. I first read the beginning of the series a couple of years ago and ended up [creating the Roj programming language][roj-blog]; this time I am going over the series again but with the purpose of building an interpreter for APL which is fairly distinct from Pascal.
 
@@ -23,19 +23,19 @@ I am writing an APL interpreter and writing about it because
 For those of you who know the LSBASI series, the numbering in my LSBASI series is _not_ going to match Spivak's. This is because in this interpreter I need to worry about things Spivak did not have to and vice-versa, because APL and Pascal have so distinct characteristics in some aspects. On the other hand, the beginning is fairly similar and this post will present work that matches roughly what Spivak has by halfway of his [8th blog post][lsbasi-part8].
 
 
-## The code
+### The code
 
 [![](https://img.shields.io/github/stars/RojerGS/RGSPL?style=social)](https://github.com/RodrigoGiraoSerrao/RGSPL)
 
 The code for this project is available at [this GitHub repo][rgspl-repo] so go ahead and star it ;) The source code for this part is just the [rgspl1.py][rgspl1] file: you can download it in order to try it out.
 
 
-# What we are aiming for
+## What we are aiming for
 
 This blog post series will follow along my journey of building an APL interpreter and that is the end goal! To have a fully functional APL interpreter written in Python! That is going to be a lot of work ;)
 
 
-# Today's goal
+## Today's goal
 
 In this blog post we will go through the basics to kickstart this project; in particular, we want to be able to parse simple APL statements with:
 
@@ -45,7 +45,7 @@ In this blog post we will go through the basics to kickstart this project; in pa
  4. parenthesized expressions;
 
 
-# Tokenizing
+## Tokenizing
 
 The first thing we need to do is take some APL source code and split it into tokens, getting rid of things we don't need - like whitespace - and finding what each character represents. For example, we look for numbers and decide if those are integers or floats or look at APL glyphs and attach them to their names.
 
@@ -211,7 +211,7 @@ With the code above, the expression `5 -⍨ ¯2.3` would get tokenized into `[To
 and then paste it into the read-eval-print-loop you get when you run the script.
 
 
-# Finding structure in the `Token` list
+## Finding structure in the `Token` list
 
 Now that we have all the tokens, we want to represent them in a more structured way. For that purpose we will build what is called an Abstract Syntax Tree (check Spivak's [7th LSBASI post][lsbasi-part7]).
 
@@ -470,7 +470,7 @@ With all these methods we can finally parse a very simple APL program into an AS
 With the link above you can see the expression `×⍨ 4.5 - (4 ¯3 5.6)` getting parsed into `MOp(⍨ Monad(× Dyad(- S(4.5) A([S(4), S(-3), S(5.6)]))))`. Note that the `A`s stand for arrays and the `S`s stand for scalars.
 
 
-# For the next blog post
+## For the next blog post
 
 In the next blog post we will
 
@@ -478,7 +478,7 @@ In the next blog post we will
  - implement assignment of scalars/arrays;
  - allow for several statements split by `⋄`.
 
-# Exercises
+## Exercises
 
 To practice your programming skills and to make sure you really understand what is going on, I suggest you try changing the `Tokenizer` and the `Parser` classes to also handle the functions `⌈` and `⌊`.
 
@@ -486,7 +486,7 @@ If you are feeling brave enough you can also try and implement the changes for t
 
 See you next time!
 
-# The series
+## The series
 
 This is a series that I am working slowly but steadily on.
 Feel free to ping me in the comments or over email

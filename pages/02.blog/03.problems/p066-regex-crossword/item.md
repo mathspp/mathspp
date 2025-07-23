@@ -2,7 +2,7 @@ Can you solve this crossword where all hints are regular expressions?
 
 ===
 
-# Problem statement
+## Problem statement
 
 ![Puzzle in the shape of an hexagonal tiled region where cells are supposed to be filled in with characters from the alphabet according to hints given as regular expressions.](_puzzle.webp "The regex crossword puzzle grid.")
 
@@ -25,7 +25,7 @@ You can also use [the site regex101](https://regex101.com) to help you check wha
 !!! Give it some thought!
 
 
-# Solution
+## Solution
 
 In the spirit of the puzzle hunting community, I will not share my solved grid here.
 If you need help, feel free to [email me](mailto:rodrigo@mathspp.com) and we can talk it over.

@@ -2,7 +2,7 @@ Today I learned how to write and run tests in the Rust programming language.
 
 ===
 
-# Writing a test in Rust
+## Writing a test in Rust
 
 I'm attending [a Rust tutorial at EuroPython 2023](https://ep2023.europython.eu/session/write-your-first-web-api-with-rust) and I just learned how to write and run tests in Rust.
 Turns out it is quite straightforward!
@@ -73,7 +73,7 @@ fn is_adult_is_false_for_kids() {
 ```
 
 
-# How to run your Rust tests
+## How to run your Rust tests
 
 To run your Rust tests, you just use the command `cargo test`.
 That's it!

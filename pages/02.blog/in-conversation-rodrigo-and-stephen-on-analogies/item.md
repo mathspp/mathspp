@@ -6,7 +6,7 @@ A conversation between Rodrigo Girão Serrão and Stephen Gruppetta on analogies
 !!! You can also read this article on [Stephen's substack](https://thepythoncodingstack.substack.com/p/in-conversation-rodrigo-and-stephen-on-analogies).
 
 
-# Discussing Analogies
+## Discussing Analogies
 
 *Rodrigo and Stephen love to use analogies. They had a virtual chat about this topic. Here's that conversation*
 
@@ -54,17 +54,17 @@ For example, I had never thought about using the box/label analogy to explain th
 When working with strings, it may be difficult to see this in action because strings are immutable, but the typical list example always blows the minds of my students:
 
 ```py
-# Create a box called "first_list" and store three numbers there.
+## Create a box called "first_list" and store three numbers there.
 >>> first_list = [1, 2, 3]
 
-# Create a second box called "second_list" with the same elements.
+## Create a second box called "second_list" with the same elements.
 >>> second_list = first_list
 
-# Modify the contents of the first box:
+## Modify the contents of the first box:
 >>> first_list.append(4)
 >>> first_list[0] = 999
 
-# What?! The second box also changed?
+## What?! The second box also changed?
 >>> second_list
 [999, 2, 3, 4]
 ```

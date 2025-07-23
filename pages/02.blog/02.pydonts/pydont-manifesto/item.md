@@ -12,7 +12,7 @@ Pydon'ts will help you write more Pythonic code.
 ![The Python logo with some construction work barriers in front of it.](thumbnail.webp)
 
 
-# Purpose
+## Purpose
 
 The aim of this "*Pydon't*" series is to provide a series of programming tips
 for Python programmers that will help them take their Python programming to the next level.
@@ -20,7 +20,7 @@ This goal will be achieved by showing “bad” Python code,
 and then comparing it to better, more Pythonic, alternatives.
 
 
-# Who for
+## Who for
 
 Pydon'ts are useful to Python programmers that are looking to improve their Python skills.
 Above all, they are aimed at developers who are willing to put in the effort to improve.
@@ -36,14 +36,14 @@ be sure to [subscribe to my newsletter][subscribe],
 so that you get access to all the Python knowledge I put out there.
 
 
-# How many Pydon'ts will there be?
+## How many Pydon'ts will there be?
 
 As of the beginning of 2022, there are over 25 Pydon'ts that have been published,
 and at least a dozen more are still to come,
 covering topics such as iterables, generators, decorators, OOP, and dunder methods.
 
 
-# Format
+## Format
 
 All the Pydon'ts follow roughly the same structure:
 
@@ -54,7 +54,7 @@ All the Pydon'ts follow roughly the same structure:
  5. Links to references and resources for further reading.
 
 
-# Book
+## Book
 
 The Pydon'ts have been compiled into a free ebook that you can get online,
 [here][pydonts-book].

@@ -5,7 +5,7 @@ Today I learned how to run the black Python code formatter as a pre-commit hook 
 ![A picture of a hook from a construction crane.](thumbnail.png "Photo by Grace To on Unsplash.")
 
 
-# Pre-commit hooks
+## Pre-commit hooks
 
 Pre-commit hooks are scripts that git runs _right before_ you commit something.
 The idea is that you will install scripts that help verify that,
@@ -24,7 +24,7 @@ For example, they can be Python scripts with a shebang,
 making them executable as well.
 
 
-# Formatting Python code with `black`
+## Formatting Python code with `black`
 
 If you want to make sure your Python project has its code formatted according to `black`'s recommendatitons,
 you can define your pre-commit hook to run `black` on your code _before_ the code is committed!

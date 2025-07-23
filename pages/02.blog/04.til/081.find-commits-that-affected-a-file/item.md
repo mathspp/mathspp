@@ -3,14 +3,14 @@ Today I learned how to find the commits that affected a specific file with `git 
 ===
 
 
-# Find commits that affected a file
+## Find commits that affected a file
 
 When using git, you can use the command `git log` to show a log of all commits (I like `git log --oneline` to show a terser log).
 
 What I learned today is that using the command `git log -- path/to/file` will filter the logs to only show commits that affected that file.
 
 
-## Practical example
+### Practical example
 
 I was looking at [commit 1b61a95](https://github.com/Textualize/textual/blob/1b61a95c7025160cbbcb74cf9562a3b057afd3e6/tests/test_table.py) of the [Textual](https://github.com/textualize/textual) repository, which created a file `tests/test_table.py` with a test that I cared about.
 

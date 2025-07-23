@@ -13,7 +13,7 @@ How do you do it?
 ![](thumbnail.png "Photo of an hourglass by Aron Visuals on Unsplash.")
 
 
-# Problem statement
+## Problem statement
 
 You are given two magic ropes and a lighter.
 The ropes are magic because you are told they burn in a weird way:
@@ -33,7 +33,7 @@ Given two magic ropes like this, how do you use them to measure 45 minutes?
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who already sent me their correct solutions:
@@ -53,7 +53,7 @@ who already sent me their correct solutions:
 [Email me][email] your solution to get your name (or an alias) featured in here!
 
 
-# Solution
+## Solution
 
 I find this problem to be really interesting!
 The fact is that it looks like there is not much that we can do,

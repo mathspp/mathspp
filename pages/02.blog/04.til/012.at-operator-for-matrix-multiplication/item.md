@@ -13,7 +13,7 @@ Today I learned that Python 3.5+ supports the operator `@` for matrix multiplica
 ![Snippet of Python code using `@` with `numpy`.](thumbnail.webp)
 
 
-# At operator `@`
+## At operator `@`
 
 [Since Python 3.5][release-notes-35], Python has the infix operator `@`.
 This operator was introduced with [PEP 465][pep465] to be used in matrix multiplication.
@@ -34,7 +34,7 @@ The error _is not_ the fact that `@` is an invalid operator!
 So cool!
 
 
-# Matrix multiplication in `numpy` with `@`
+## Matrix multiplication in `numpy` with `@`
 
 If you have `numpy` at hand, you can check `@` works,
 because `numpy` arrays added support to be used with `@`:
@@ -55,7 +55,7 @@ array([[0.89431673, 0.57949659, 0.59470797],
 ! Read about it in [this Pydon't][pydont-underscore-repl].
 
 
-# Using `@` with custom classes/types
+## Using `@` with custom classes/types
 
 If you want your own objects to add support for `@`,
 all you have to do is implement the dunder methods `__matmul__` and `__rmatmul__`:

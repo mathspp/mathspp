@@ -3,7 +3,7 @@ Today I learned how to fix an issue with <kbd>Ctrl</kbd>+<kbd>left</kbd> and <kb
 ===
 
 
-# <kbd>Ctrl</kbd>+<kbd>left</kbd> and <kbd>Ctrl</kbd>+<kbd>right</kbd> not working in the Python REPL on MacOS
+## <kbd>Ctrl</kbd>+<kbd>left</kbd> and <kbd>Ctrl</kbd>+<kbd>right</kbd> not working in the Python REPL on MacOS
 
 The (new) Python REPL (3.13+) has _many_ useful keyboard shortcuts and two of them are <kbd>Ctrl</kbd>+<kbd>left</kbd> and <kbd>Ctrl</kbd>+<kbd>right</kbd>, which are used to navigate the cursor by skipping to the beginning/end of words, as the GIT below shows:
 

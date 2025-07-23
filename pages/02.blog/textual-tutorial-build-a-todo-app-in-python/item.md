@@ -3,7 +3,7 @@ Learn how to build a simple TODO app in Python with this step-by-step Textual tu
 ===
 
 
-# Introduction
+## Introduction
 
 In this tutorial, I will show you to build a TODO app with [Textual], a Python framework for terminal user interfaces.
 The TODO app will look like this:
@@ -17,7 +17,7 @@ In case you don't know what Textual is, go ahead and read the description below.
 Otherwise, let's get building!
 
 
-## What is Textual?
+### What is Textual?
 
 [Textual] is a Python framework that lets users build applications that run directly in the terminal.
 Quoting the [Textual] website, some of the advantages of using Textual to build applications include:
@@ -31,7 +31,7 @@ Quoting the [Textual] website, some of the advantages of using Textual to build 
  - Open source: Textual is licensed under MIT.
 
 
-## Get the code
+### Get the code
 
 The code for this app can be found in the [textual-todo GitHub repository][textual-todo].
 Feel free to star the repository and fork it to play around with the code.
@@ -39,14 +39,14 @@ Feel free to star the repository and fork it to play around with the code.
 You can also just install the app with `python -m pip install textual-todo` and run it with `todo`!
 
 
-## Getting up to speed
+### Getting up to speed
 
 This tutorial assumes you already know the _essentials_ about Textual.
 If you are a complete newcomer to Textual, I recommend you take a look at the [Textual tutorial][textual-tutorial] before diving into this article.
 The Textual tutorial should teach you everything you need to follow along with this one! 😉
 
 
-# TODO app architecture
+## TODO app architecture
 
 Our TODO app will have the following features:
 
@@ -79,9 +79,9 @@ So, we will build:
 Our TODO app will build on top of these widgets.
 
 
-# `EditableText`
+## `EditableText`
 
-## Structuring your compound widget
+### Structuring your compound widget
 
 The `EditableText` widget is a widget that contains a label to display text.
 If the "edit" button is pressed, the label is switched out and the user sees an input field to edit the text.
@@ -98,7 +98,7 @@ Below, you can find the skeleton for our widget `EditableText`.
 We inherit from `Static`, instead of from `Widget`, because `Static` does some extra work for us, like caching the rendering.
 
 ```py
-# editabletext.py
+## editabletext.py
 from textual.app import App, ComposeResult
 from textual.widgets import Button, Input, Label, Static
 
@@ -134,7 +134,7 @@ Running this app produces the following output:
 !!! That is what I used to generate all the outputs you will see in this tutorial.
 
 
-## Enabling the styling of your compound widget
+### Enabling the styling of your compound widget
 
 When you create a compound widget, and especially if you have reusability in mind, you need to set up your widget in such a way that it can be styled by users.
 This may entail documenting well the specific widgets that make up your compound widget or it may include using semantic classes that identify the purpose of the sub-widgets.
@@ -149,7 +149,7 @@ After adding the classes to our widgets, we can style them.
 After adding a couple of semantic classes and setting the class variable `DEFAULT_CSS`, `EditableText` looks like this:
 
 ```py
-# editabletext.py
+## editabletext.py
 from textual.app import App, ComposeResult
 from textual.widgets import Button, Input, Label, Static
 
@@ -221,7 +221,7 @@ Running this example will generate output that is significantly different from l
 ![](_editable_text_styled.svg "The styled `EditableText` widget.)
 
 
-## Wiring the components together
+### Wiring the components together
 
 We have our four components laid out and styled but we still need to wire them in order to implement the kind of behaviour we want.
 
@@ -235,7 +235,7 @@ To that end, we will do the following modifications:
 The modified code looks like this:
 
 ```py
-# editabletext.py
+## editabletext.py
 from textual.app import App, ComposeResult
 from textual.widgets import Button, Input, Label, Static
 
@@ -365,7 +365,7 @@ Here is what that looks like:
 ![](_editable_text_edited.svg)
 
 
-## Communicating with the compound widget
+### Communicating with the compound widget
 
 When you need to communicate with the compound widget, for example, to manipulate its state, you should try to do that through methods or reactive attributes documented for that effect.
 
@@ -376,7 +376,7 @@ In our `EditableText` example, we have two "public" methods that users are welco
 For an example use case, we will create a small app that uses some `EditableText` widgets and we will use `switch_to_edit_mode` to ensure all `EditableText` instances are ready to be edited when the app launches:
 
 ```py
-# name_app.py
+## name_app.py
 from textual.app import App, ComposeResult
 from textual.widgets import Label
 
@@ -412,7 +412,7 @@ As a result, running this app will show the three `EditableText` widgets in edit
 In the output above, you know the three `EditableText` widgets are in edit mode because you can see the placeholder text in the internal `Input` widgets and because the button that is being shown is the emoji ✅ to confirm changes.
 
 
-## Posting custom messages
+### Posting custom messages
 
 A compound widget provides public methods and (reactive) attributes for the user to interact with it.
 In the reverse direction, for the compound widget to interact with the user, it must define and post custom messages.
@@ -575,7 +575,7 @@ Now that we have custom event handling, we can extend the previous example app t
 This is the extended version of that example:
 
 ```py
-# name_app.py
+## name_app.py
 from textual.app import App, ComposeResult
 from textual.widgets import Label, TextLog
 
@@ -621,7 +621,7 @@ After running the app above, typing my first name, and changing the first `Edita
 ![](_editable_text_name_app_events.svg "App handling custom events.")
 
 
-# `DatePicker`
+## `DatePicker`
 
 Now, we are going to implement a `DatePicker` widget at the expense of the widget `EditableText`, but users of the widget `DatePicker` do not need to know that.
 This means that we do not want the messages `EditableText.Display` and `EditableText.Edit` to be posted when using a `DatePicker`.
@@ -631,7 +631,7 @@ First, we start by providing a property `date` that parses the date text into a 
 Then, when we receive a message `Display` or `Edit` from the superclass (because the user started editing the date or because the user is done editing the date), we prevent it from bubbling with the method `.stop` and post our custom `DatePicker` messages instead:
 
 ```py
-# datepicker.py
+## datepicker.py
 from __future__ import annotations
 
 import datetime as dt
@@ -697,7 +697,7 @@ On top of doing this custom message handling, we also:
 Here is the modified code:
 
 ```py
-# datepicker.py
+## datepicker.py
 from __future__ import annotations
 
 import datetime as dt
@@ -767,12 +767,12 @@ class DatePicker(EditableText):
 !!! When creating a widget by inheriting from another widget, be sure to determine whether or not you want the super class's messages to be available to be handled by other apps.
 
 
-# Showcasing `EditableText` and `DatePicker`
+## Showcasing `EditableText` and `DatePicker`
 
 A short app can show both widgets we built so far next to each other:
 
 ```py
-# editables_app.py
+## editables_app.py
 from textual.app import App, ComposeResult
 
 from datepicker import DatePicker
@@ -797,7 +797,7 @@ After switching both widgets to edit mode, the app looks like this:
 ![](_editables_app.svg "Visual differences between `EditableText` and `DatePicker`.")
 
 
-# `TodoItem`
+## `TodoItem`
 
 The implementation of `TodoItem` puts together an `EditableText`, a `DatePicker`, and some other built-in widgets to build a more complex compound widget.
 This implementation shows the same techniques discussed previously, namely:
@@ -818,7 +818,7 @@ We want to build a widget that looks like this:
 ![](_todo_item_preview.svg "The preview of the `TodoItem` widget.")
 
 
-## Composing the components
+### Composing the components
 
 The first thing that we need to do is create all of the pieces that make up the `TodoItem`:
 
@@ -834,7 +834,7 @@ The code below shows the skeleton for the `TodoItem`.
 In it, we also add some classes that will make it easier to style the `TodoItem` correctly:
 
 ```py
-# todoitem.py
+## todoitem.py
 from __future__ import annotations
 
 from textual.app import ComposeResult
@@ -899,7 +899,7 @@ At this point, the `TodoItem` looks terrible because we still have to tell Textu
 To fix this, we use the classes we added above to style the `TodoItem` appropriately.
 
 
-## Adding CSS to the `TodoItem`
+### Adding CSS to the `TodoItem`
 
 This is the Textual CSS that is going to be the `DEFAULT_CSS` for the `TodoItem`.
 
@@ -966,7 +966,7 @@ This was the result of a lot of experimentation and tinkering, so you would **no
 When I am styling my widgets, I often create a simple app that just displays one such widget:
 
 ```py
-# todo_item_demo.py
+## todo_item_demo.py
 from textual.app import App, ComposeResult
 
 from todoitem import TodoItem
@@ -990,7 +990,7 @@ By using the switch `--dev`, Textual will reload the CSS every time you save it,
 !!! Use `textual run --dev myapp.py` to run your app if you want Textual to look for changes in your CSS files.
 
 
-## Custom messages
+### Custom messages
 
 Next up is creating our custom messages for the `TodoItem`.
 Remember that custom messages are typically used to signal relevant events.
@@ -1045,7 +1045,7 @@ class TodoItem(Static):
 ```
 
 
-## Adding access to the due date
+### Adding access to the due date
 
 The `TodoItem` contains a `DatePicker` that is supposed to supply the due date.
 Thus, we need to create an interface at the `TodoItem`-level to access the due date, which is currently held in an internal part of the `TodoItem`.
@@ -1089,7 +1089,7 @@ class TodoItem(Static):
         return self._cached_date
 ```
 
-## Collapse the details
+### Collapse the details
 
 Up next, we will add the functionality that hides extra details when the small button on the left, `_show_more`, is clicked.
 For this, we only need two things:
@@ -1164,7 +1164,7 @@ And the collapsed state:
 ![](_todo_item_collapsed.svg "A TODO item in its collapsed state.")
 
 
-## Changing the status message
+### Changing the status message
 
 The next thing we will do is provide an interface for the user to change the status message.
 The status message is a label to the left of the due date and it will show important information.
@@ -1226,7 +1226,7 @@ class TodoItem(Static):
 ```
 
 
-## Handling date selection
+### Handling date selection
 
 We will add a bit of CSS to style the `TodoItem` when a date is selected.
 We will add a coloured border around the `TodoItem` depending on whether the due date has already passed, the due date is in the present day, or the due date is in the future.
@@ -1295,7 +1295,7 @@ Here is what an app looks like if it has three `TodoItem`, each with a different
 ![](_todo_item_styles.svg "Three different styles for the `TodoItem`.")
 
 
-## Handling date clearance
+### Handling date clearance
 
 Similarly, if the due date is cleared, we need to update the internal status of the `TodoItem`:
 
@@ -1325,7 +1325,7 @@ class TodoItem(Static):
 ```
 
 
-## Marking an item as done
+### Marking an item as done
 
 To conclude, we just need to post the message `TodoItem.Done` when the switch is toggled:
 
@@ -1342,7 +1342,7 @@ class TodoItem(Static):
 Now that we have this powerful widget `TodoItem`, we can build our TODO app! 🎉
 
 
-# TODO App
+## TODO App
 
 Our application will allow creating new TODO items, sorting them by due date, and checking them off as complete.
 
@@ -1357,13 +1357,13 @@ Let us build this step by step.
 ! In fact, you are encouraged to do that!
 
 
-## App structure
+### App structure
 
 We can start with a minimal skeleton that prepares the app to hold `TodoItem` widgets.
 We do this by creating an empty container and yielding it.
 
 ```py
-# todo.py
+## todo.py
 from __future__ import annotations
 
 from textual.app import App, ComposeResult
@@ -1393,7 +1393,7 @@ if __name__ == "__main__":
 Running this app won't do much, but it _works_.
 
 
-## Adding new items
+### Adding new items
 
 The first obvious feature we want is the ability to add items.
 We will do this by [creating a binding][textual-bindings] on the letter `N`, so that pressing it creates a new item.
@@ -1428,7 +1428,7 @@ class TODOApp(App[None]):
 ```
 
 
-## Deleting completed items
+### Deleting completed items
 
 Even simpler than adding new items is deleting the ones that are marked as completed:
 
@@ -1446,7 +1446,7 @@ class TODOApp(App[None]):
 ```
 
 
-## Sorting by date
+### Sorting by date
 
 The next thing we are doing is not completely trivial, which is sorting the items by date.
 To keep things simpler, we will use handlers to figure out when the due date on a specific item changes, and we will use insertion sorting to keep it in the correct place:
@@ -1483,7 +1483,7 @@ class TODOApp(App[None]):
 ```
 
 
-## Bindings to expand and collapse all
+### Bindings to expand and collapse all
 
 We will add two other actions to expand or collapse all the items in the app.
 These will be bindings with two corresponding action methods:
@@ -1510,19 +1510,19 @@ class TODOApp(App[None]):
 ```
 
 
-## Data persistence
+### Data persistence
 
 Finally, we need to implement methods to save and retrieve the information about each TODO item from a file.
 For the sake of simplicity, we will keep everything inside an array in a JSON file, where each TODO item is a dictionary with its due date and description.
 
 
-### Initial data
+#### Initial data
 
 To be able to read the TODO items from a JSON file, we will modify the `TodoItem`, `DatePicker`, and `EditableText`, to accept default values when instantiating.
 We start with `EditableText`:
 
 ```py
-# editabletext.py
+## editabletext.py
 class EditableText(Static):
     # ...
 
@@ -1618,14 +1618,14 @@ class TodoItem(Static):
 ```
 
 
-### Loading data from the file
+#### Loading data from the file
 
 After setting all of this in place, we can read the data from our JSON file after mounting the app.
 Notice that we won't be fussed if the file doesn't exist.
 We will just create it later when saving the data.
 
 ```py
-# todo.py
+## todo.py
 import json
 
 DATA_FILE = "items.json"
@@ -1680,12 +1680,12 @@ So, we have to do these two things by hand.
 To sort the item, we just have to add `self._sort_todo_item(new_todo)` after mounting the new item.
 
 
-### Styling items on load
+#### Styling items on load
 
 To add styling, we will update the `TodoItem` to provide a method `TodoItem.update_style` that updates its style:
 
 ```py
-# todoitem.py
+## todoitem.py
 class TodoItem(Static):
     # ...
 
@@ -1745,7 +1745,7 @@ After these two additions, the items look correct when opening the app:
 ![](_todo_reading.svg "App initialised with JSON data.")
 
 
-### Saving data on change
+#### Saving data on change
 
 On top of loading the data when opening the app, we want to save the data when there are changes to the items.
 This can happen in a couple of situations:
@@ -1780,7 +1780,7 @@ class TODOApp(App[None]):
 After implementing this method, we just need to sprinkle it everywhere:
 
 ```py
-# todo.py
+## todo.py
 
 from editabletext import EditableText
 
@@ -1809,7 +1809,7 @@ class TODOApp(App[None]):
 ```
 
 
-## Fixing a funny bug
+### Fixing a funny bug
 
 Lastly, before concluding this tutorial, we will fix a funny bug that you may have encountered while playing with your app.
 If you collapse or expand an item, it may interfere with the surrounding items:
@@ -1819,7 +1819,7 @@ If you collapse or expand an item, it may interfere with the surrounding items:
 To fix this, all we have to do is ask the `TodoItem` to refresh its layout when we collapse it or expand it:
 
 ```py
-# todoitem.py
+## todoitem.py
 class TodoItem(Static):
     # ...
 
@@ -1837,7 +1837,7 @@ class TodoItem(Static):
 ```
 
 
-# Conclusion
+## Conclusion
 
 That is it for this tutorial.
 If you have come this far, well done! 🎉
@@ -1862,7 +1862,7 @@ If you want to keep playing with the app, then, by all means: go for it!
 I added a couple of suggestions for improvements you can make, on top of all other changes or features you might want to implement!
 
 
-# Improvements and exercises
+## Improvements and exercises
 
 During this tutorial, we developed a couple of custom compound widgets.
 We tried to make them reusable by implementing public interfaces that apps can use to interact with them and by defining custom messages that they can use to interact with the apps.

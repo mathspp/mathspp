@@ -2,7 +2,7 @@ Today I learned what open recursion is and how to leverage it.
 
 ===
 
-# Open recursion
+## Open recursion
 
 Open recursion is a technique in which two methods of an object call each other recursively.
 The power of this technique resides in the fact that the two methods can be implemented independently.
@@ -37,7 +37,7 @@ Now, this example is pretty silly.
 Are there good uses for open recursion?
 
 
-# Using open recursion in interpretation of programs
+## Using open recursion in interpretation of programs
 
 Going over [“Essentials of Compilation, An Incremental Approach in Python”](https://github.com/IUCompilerCourse/Essentials-of-Compilation), we create a simple interpreter in Chapter 1 that can handle additions and subtractions of integers, along with a couple of other things.
 

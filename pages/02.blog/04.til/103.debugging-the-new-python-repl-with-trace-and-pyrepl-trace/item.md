@@ -3,7 +3,7 @@ Today I learned how to debug the new Python REPL with `_pyrepl.trace` and the en
 ===
 
 
-# Debugging the new Python REPL with `trace` and `PYREPL_TRACE`
+## Debugging the new Python REPL with `trace` and `PYREPL_TRACE`
 
 As of Python 3.13, the Python REPL is written _in Python_.
 This means that if you are debugging the REPL and add a call to `print` in the code for the REPL, and then run the REPL, the debugging prints will show up in the REPL, in the middle of the thing you are trying to debug.

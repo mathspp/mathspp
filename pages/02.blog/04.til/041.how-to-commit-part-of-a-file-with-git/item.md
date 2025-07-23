@@ -3,7 +3,7 @@ Here is how you can commit only part of a file with git.
 ===
 
 
-# How to commit only part of a file with git?
+## How to commit only part of a file with git?
 
 If you are using git, you are probably aware that the command `git add` takes a file name argument and then stages that file for committing.
 If you use the command option `--patch`, then you can add only some of your changes for staging.
@@ -33,7 +33,7 @@ The options I use the most are:
 But there are more options.
 
 
-# "Stage this hunk" options
+## "Stage this hunk" options
 
 If you type `?` in front of the interactive staging prompt, you get a short description of each option:
 
@@ -54,14 +54,14 @@ e - manually edit the current hunk
 ```
 
 
-# How to split a git hunk?
+## How to split a git hunk?
 
 If git presents you with a hunk that is too big (i.e., that contains some changes that you want to add and other changes that you don't want to add), you can use the option `s` to split the current hunk into smaller hunks.
 Like I said above, after the `y` and `n` options, the option `s` to split a hunk is the option that I use the most!
 It's just too handy!
 
 
-# Further reading
+## Further reading
 
 You can check the git documentation centre to read more about [interactive staging][git-interactive-staging].
 

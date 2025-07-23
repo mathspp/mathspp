@@ -16,7 +16,7 @@ in the `functools` module.
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 In this Pydon't I'll talk about `reduce`, a function that used
 to be a built-in function and that was moved to the `functools`
@@ -38,7 +38,7 @@ In this Pydon't, you will:
 <!--^-->
 
 
-# How `reduce` works
+## How `reduce` works
 
 `reduce` is a tool that is typically associated with functional programming,
 which is a programming paradigm that I feel sometimes is underappreciated.
@@ -124,9 +124,9 @@ def sum(iterable, start=0):     # def reduce(function, iterable, initial_value):
 Can you see how they are the same thing?
 
 
-# The rabbit hole of the built-in reductions
+## The rabbit hole of the built-in reductions
 
-## Some built-ins
+### Some built-ins
 
 Now that we have seen that `sum` is a reduction,
 what other built-in functions are reductions?
@@ -167,7 +167,7 @@ Given that it is worth adding _five_ specialised reductions
 to the built-ins...
 
 
-## Other common reductions
+### Other common reductions
 
 And there is more, of course.
 If we use `operator.mul` (for multiplication),
@@ -206,7 +206,7 @@ I am _just_ trying to show you how these patterns are so common
 and appear in so many places, even if you don't notice them.
 
 
-# Why bother?
+## Why bother?
 
 Why should you bother with knowing that `reduce` exists,
 and how it works?
@@ -236,7 +236,7 @@ to learn about `reduce` and to understand how it relates
 to all these other built-in functions.
 
 
-# Far-fetched reductions
+## Far-fetched reductions
 
 The reductions above were reductions that are more “normal”,
 but we can do all kinds of interesting things with `reduce`!
@@ -247,7 +247,7 @@ This section contains some reductions that are – well, how to put
 this nicely..? – that are not necessarily suitable for production.
 
 
-## First and last
+### First and last
 
 Here's is a little amusing exercise for you.
 Can you write a reduction that, given an iterable,
@@ -298,7 +298,7 @@ Feel free to leave your opinions in the comments below.
 _I_ actually like the `reduce` alternative.
 
 
-## Creating built-in types
+### Creating built-in types
 
 Another couple of reductions I wouldn't recommend for production
 are the replacements for `dict`, `list`, `set`, and `tuple`.
@@ -320,9 +320,9 @@ as reductions.
 Again, not that I recommend that.
 
 
-# The identity element...
+## The identity element...
 
-## ...or lack thereof
+### ...or lack thereof
 
 We have seen some reductions already and, if you were brave enough,
 you even took a sneak peek at some crazy reductions in the previous section.
@@ -373,7 +373,7 @@ the iterable is empty, and therefore you should use it when it might
 happen that you pass an empty iterable into `reduce`.
 
 
-## What is the identity element
+### What is the identity element
 
 So, if you cannot be 101% sure your iterable is not going to be empty,
 how do you decide what value to use in the third argument to `reduce`?
@@ -475,7 +475,7 @@ I honestly don't know!
 !!! to add `float("-inf")` to the mix.
 
 
-## The identity element doesn't always exist
+### The identity element doesn't always exist
 
 There are some operations that look like sensible reductions
 but that just _don't_ have an identity element.
@@ -492,7 +492,7 @@ or you need to wrap your reduction with an `if`-statement or a
 to help you understand which one to choose).
 
 
-# Why some people dislike `reduce`
+## Why some people dislike `reduce`
 
 If `reduce` is such a powerful tool,
 why was it moved from the built-ins into `functools`?
@@ -518,7 +518,7 @@ of how `reduce` should be used in the wild, and build these
 bitter feelings for such wonderful tools.
 
 
-# Examples in code
+## Examples in code
 
 I looked for usages of `reduce` in the Python Standard Library and I didn't
 find many, but I found one usage pattern (in two different places) and I just
@@ -530,7 +530,7 @@ are pervasive in our code and, whether you like it or not,
 you are using reductions in your own code.
 
 
-## Reaching inside nested dictionaries
+### Reaching inside nested dictionaries
 
 In case you want to take a look at the original pattern,
 you can find it in the `importlib.metadata.EntryPoint.load` function,
@@ -585,7 +585,7 @@ and that is `dict.get`:
 Isn't this neat?
 
 
-## Reaching inside nested classes
+### Reaching inside nested classes
 
 Similarly, we can use this pattern to programmatically access
 class attributes that are deeply nested.
@@ -622,7 +622,7 @@ Well, instead of using `dict.get`, we can use `getattr`:
 ! to stay tuned.
 
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this Pydon't, for you, on a silver platter:
 

@@ -3,7 +3,7 @@ How can 4 friends guess their own hat colours?
 ===
 
 
-# Problem statement
+## Problem statement
 
 Alice and her friends Bob, Charles, and Diana, were captured by the Maths Hatter.
 The Maths Hatter took Alice and locked her away.
@@ -24,7 +24,7 @@ After doing this, the Maths Hatter said he'd release them all if any one of the 
 Can the four friends save themselves?
 
 
-# Solution
+## Solution
 
 Either Charles and Diana have hats of the same colour, or not.
 If their hats are of the same colour (say they are both black), then Bob can see two black hats and will be able to deduce his own hat has to be white (just like Alice's).

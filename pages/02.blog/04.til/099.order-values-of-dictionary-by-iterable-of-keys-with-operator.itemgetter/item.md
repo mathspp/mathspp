@@ -2,7 +2,7 @@ Today I learned how to order the values of a dictionary according to an iterable
 
 ===
 
-# Order values of dictionary by iterable of keys with `operator.itemgetter`
+## Order values of dictionary by iterable of keys with `operator.itemgetter`
 
 Today I needed to order the values of a dictionary according to another iterable that contained keys of that same dictionary.
 For example, given the dictionary `{"a": 1, "b": 2, "c": 3}` and the iterable `"cab"`, I want the result `[3, 1, 2]`.

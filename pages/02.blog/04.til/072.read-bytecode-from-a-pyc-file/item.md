@@ -3,7 +3,7 @@ Today I learned how to read the bytecode from a file of compiled Python bytecode
 ===
 
 
-# How to read bytecode from a `.pyc` file
+## How to read bytecode from a `.pyc` file
 
 If you have a `.pyc` file, you can use the modules `dis` and `marshal` from the standard library to get the corresponding bytecode:
 
@@ -20,7 +20,7 @@ dis.dis(loaded)
 ```
 
 
-# Example
+## Example
 
 Suppose that you have a file `fibonacci.py` with the following code:
 

@@ -29,7 +29,7 @@ title: "Modular arithmetic blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">7</th>
-            <th style="text-align: center;">7,418</th>
+            <th style="text-align: center;">7,402</th>
             <th style="text-align: center;">242</th>
         </tr>
     </thead>

@@ -3,8 +3,6 @@ In this article I share my personal highlights of the 2025 edition of the PyCon 
 ===
 
 
-# Personal highlights of PyCon US 2025
-
 This year was the second time I went to PyCon US and that would have not been possible without the help of the [PyCon US travel grants](https://us.pycon.org/2025/attend/travel-grants/).
 So, first and foremost, thank you to PyCon US for the opportunity!
 Next, I'd like to express my heartfelt appreciation for _everyone_ involved in making the conference possible, especially the volunteers and organisers.

@@ -2,8 +2,6 @@ This article shows how you can create a case-insensitive string class using some
 
 ===
 
-# Case-insensitive string class
-
 In this article we want to implement a case-insensitive string class, that we will call `CIStr`, such that the comparisons between an instance of `CIStr` and a regular string, or between two `CIStr` instances, are done in a case-insensitive way.
 
 Here are two examples of what we're looking for:

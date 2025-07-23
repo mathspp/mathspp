@@ -11,7 +11,7 @@ Who will emerge victorious?
 
 ![](thumbnail.png "Photo by 𝓴𝓘𝓡𝓚 𝕝𝔸𝕀 on Unsplash.")
 
-# Problem statement
+## Problem statement
 
 Alice and Bob sit across each other at a circular table.
 They will now play the “game of coins”!
@@ -32,13 +32,13 @@ And what strategy would that be?
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly.
 Because no one sent me their solution in time, I cannot list any winners for this time.
 
 
-# Solution
+## Solution
 
 Alice can win the game, because she is the first player.
 Her winning strategy is easy:

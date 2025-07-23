@@ -16,7 +16,7 @@ showing the best use cases for the `match` statement.
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 Structural pattern matching is coming to Python, and while it may look
 like a plain switch statement like many other languages have,
@@ -38,7 +38,7 @@ I also summarised the contents of this article in a cheatsheet
 that you can get for free [from here][gumroad-cheatsheet].
 
 
-# Structural pattern matching Python could already do
+## Structural pattern matching Python could already do
 
 Structural pattern matching isn't completely new in Python.
 For a long time now, we have been able to do things like
@@ -76,7 +76,7 @@ The `match` statement will use ideas from both starred assignments
 and deep unpacking, so knowing how to use them is going to be helpful.
 
 
-# Your first `match` statement
+## Your first `match` statement
 
 For your first match statement, let's implement the factorial function.
 A factorial function is a textbook example when introducing people to recursion,
@@ -119,7 +119,7 @@ so it is acting more or less like the `else` of
 the first definition.
 
 
-# Pattern matching the basic structure
+## Pattern matching the basic structure
 
 While `match` statements can be used like plain `if` statements,
 as you have seen above, they really shine when you are dealing
@@ -143,13 +143,13 @@ def normalise_colour_info(colour):
             raise ValueError("Unknown colour info.")
     return (name, (r, g, b, a))
 
-# Prints ('', (240, 248, 255, 0))
+## Prints ('', (240, 248, 255, 0))
 print(normalise_colour_info((240, 248, 255)))
-# Prints ('', (240, 248, 255, 0))
+## Prints ('', (240, 248, 255, 0))
 print(normalise_colour_info((240, 248, 255, 0)))
-# Prints ('AliceBlue', (240, 248, 255, 0))
+## Prints ('AliceBlue', (240, 248, 255, 0))
 print(normalise_colour_info(("AliceBlue", (240, 248, 255))))
-# Prints ('AliceBlue', (240, 248, 255, 0.3))
+## Prints ('AliceBlue', (240, 248, 255, 0.3))
 print(normalise_colour_info(("AliceBlue", (240, 248, 255, 0.3))))
 ```
 
@@ -216,16 +216,16 @@ def normalise_colour_info(colour):
             raise ValueError("Unknown colour info.")
     return (name, (r, g, b, a)))
 
-# Prints ('AliceBlue', (240, 248, 255, 0))
+## Prints ('AliceBlue', (240, 248, 255, 0))
 print(normalise_colour_info(("AliceBlue", (240, 248, 255))))
-# Raises # ValueError: Unknown colour info.
+## Raises # ValueError: Unknown colour info.
 print(normalise_colour_info2(("Red", (255, 0, "0"))))
 ```
 
 How do you reproduce all this validation with `if` statements..?
 
 
-# Matching the structure of objects
+## Matching the structure of objects
 
 Structural pattern matching can also be used to match the
 structure of class instances.
@@ -278,18 +278,18 @@ def describe_point(point):
 
     return "The point is " + desc
 
-# Prints "The point is at the origin"
+## Prints "The point is at the origin"
 print(describe_point(Point2D(0, 0)))
-# Prints "The point is in the horizontal axis, at x = 3"
+## Prints "The point is in the horizontal axis, at x = 3"
 print(describe_point(Point2D(3, 0)))
-# Prints "# The point is along the x = -y line, with x = 3 and y = -3"
+## Prints "# The point is along the x = -y line, with x = 3 and y = -3"
 print(describe_point(Point2D(3, -3)))
-# Prints "# The point is at (1, 2)"
+## Prints "# The point is at (1, 2)"
 print(describe_point(Point2D(1, 2)))
 ```
 
 
-# `__match_args__`
+## `__match_args__`
 
 Now, I don't know if you noticed, but didn't all the `x=` and `y=`
 in the code snippet above annoy you?
@@ -325,20 +325,20 @@ def describe_point(point):
 
     return "The point is " + desc
 
-# Prints "The point is at the origin"
+## Prints "The point is at the origin"
 print(describe_point(Point2D(0, 0)))
-# Prints "The point is in the horizontal axis, at x = 3"
+## Prints "The point is in the horizontal axis, at x = 3"
 print(describe_point(Point2D(3, 0)))
-# Prints "# The point is at (1, 2)"
+## Prints "# The point is at (1, 2)"
 print(describe_point(Point2D(1, 2)))
 ```
 
 
-# Wildcards
+## Wildcards
 
 Another cool thing you can do when matching things is to use wildcards.
 
-## Asterisk `*`
+### Asterisk `*`
 
 Much like you can do things like
 
@@ -399,7 +399,7 @@ remainder of the sequence, as we are only using `x`, `y`, and `z` to match
 in the beginning of the sequence.
 
 
-## Plain dictionary matching
+### Plain dictionary matching
 
 Similarly, we can use `**` to match the remainder of a dictionary.
 But first, let us see what is the behaviour when matching dictionaries:
@@ -409,7 +409,7 @@ d = {0: "oi", 1: "uno"}
 match d:
     case {0: "oi"}:
         print("yeah.")
-# prints yeah.
+## prints yeah.
 ```
 
 While `d` has a key `1` with a value `"uno"`, and that is not specified
@@ -420,7 +420,7 @@ dictionary has are ignored.
 This is unlike matching with lists or tuples, where the match has to be
 perfect if no wildcard is mentioned.
 
-## Double asterisk `**`
+### Double asterisk `**`
 
 However, if you want to know what the original dictionary had that was
 not specified in the match, you can use a `**` wildcard:
@@ -430,7 +430,7 @@ d = {0: "oi", 1: "uno"}
 match d:
     case {0: "oi", **remainder}:
         print(remainder)
-# prints {1: 'uno'}
+## prints {1: 'uno'}
 ```
 
 Finally, you can use this to your advantage if you want to match a dictionary
@@ -443,7 +443,7 @@ match d:
         print("Single key in the dictionary")
     case {0: "oi"}:
         print("Has key 0 and extra stuff.")
-# Has key 0 and extra stuff.
+## Has key 0 and extra stuff.
 ```
 
 You can also use variables to match the values of given keys:
@@ -453,11 +453,11 @@ d = {0: "oi", 1: "uno"}
 match d:
     case {0: zero_val, 1: one_val}:
         print(f"0 mapped to {zero_val} and 1 to {one_val}")
-# 0 mapped to oi and 1 to uno
+## 0 mapped to oi and 1 to uno
 ```
 
 
-# Naming sub-patterns
+## Naming sub-patterns
 
 Sometimes you may want to match against a more structured pattern,
 but then give a name to a part of the pattern, or to the whole thing,
@@ -524,7 +524,7 @@ print(act("Go asdfasdf"))    # I can't go that way...
 ```
 
 
-# Traversing recursive structures
+## Traversing recursive structures
 
 Another type of situation in which structural pattern matching
 is expected to succeed quite well is in handling recursive
@@ -567,11 +567,11 @@ def prefix(tree):
 
 print(prefix(ast.parse("1 + 2 + 3", mode="eval")))     # + + 1 2 3
 print(prefix(ast.parse("2**3 + 6", mode="eval"))       # + * 2 3 6
-# Prints '- + 1 * 2 3 / 5 7', take a moment to digest this one.
+## Prints '- + 1 * 2 3 / 5 7', take a moment to digest this one.
 print(prefix(ast.parse("1 + 2*3 - 5/7", mode="eval")))
 ```
 
-## Careful with the hype
+### Careful with the hype
 
 Now, here is a word of caution: `match` isn't the best solution always.
 Looking up to the prefix notation example above, perhaps there are better ways to
@@ -611,11 +611,11 @@ def prefix(tree):
 
 print(prefix(ast.parse("1 + 2 + 3", mode="eval")))     # + + 1 2 3
 print(prefix(ast.parse("2*3 + 6", mode="eval"))        # + * 2 3 6
-# Prints '- + 1 * 2 3 / 5 7', take a moment to digest this one.
+## Prints '- + 1 * 2 3 / 5 7', take a moment to digest this one.
 print(prefix(ast.parse("1 + 2*3 - 5/7", mode="eval")))
 ```
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this article, for you, on a silver platter:
 

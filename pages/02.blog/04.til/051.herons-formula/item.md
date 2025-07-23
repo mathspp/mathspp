@@ -4,7 +4,7 @@ Today I (re)learned Heron's formula to compute the area of a triangle from its t
 
 ![A blurred image of two triangles with many arbitrary mathematical formulas floating in front of them, and the words “Heron's formula” in big white letters in the centre.](thumbnail.webp)
 
-# Heron's formula
+## Heron's formula
 
 Heron's formula is a formula that lets you compute the _area_ of a triangle from the lengths of its three sides $a$, $b$, and $c$:
 
@@ -15,7 +15,7 @@ $$
 The value $s$ is the semi-perimeter of the triangle, which is half the perimeter, $\frac{a + b + c}{2}$.
 
 
-# Proof of Heron's formula
+## Proof of Heron's formula
 
 Heron's formula is not too hard to prove.
 You can prove it algebraically by considering an arbitrary triangle that is subdivided into two smaller right triangles by the height of one side.

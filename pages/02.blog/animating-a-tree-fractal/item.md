@@ -3,8 +3,6 @@ This article walks through the code used to animate a tree fractal.
 ===
 
 
-# Animating a tree fractal
-
 I really enjoy fractals and for the longest time I've been meaning to draw the classical tree fractal that starts with the main trunk which then successively splits into two branches, that themselves can be seen as the full tree.
 
 Today I quickly put together the code to do this and then I animated the rotation of the tree to make sure it's easy to see the self-similarity of the tree.

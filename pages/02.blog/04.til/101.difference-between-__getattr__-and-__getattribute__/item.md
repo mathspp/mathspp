@@ -3,7 +3,7 @@ Today I learned the difference between `__getattr__` and `__getattribute__`.
 ===
 
 
-# `__getattr__` vs `__getattribute__`
+## `__getattr__` vs `__getattribute__`
 
 Today I attended a tutorial at EuroPython 2024 where the speaker showed a key difference between the [dunder methods](/blog/pydonts/dunder-methods) `__getattr__` and `__getattribute__`:
 

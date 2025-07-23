@@ -3,8 +3,6 @@ Solving “Bridge Repair”, from day 7 of Advent of Code 2024, in 4ms with Pyth
 ===
 
 
-# Solving “Bridge Repair” in 4ms with Python
-
 Today I solved the problem from [Advent of Code 2024, day 7](https://adventofcode.com/2024/day/7) in 4ms using Python.
 My first solution used brute-force and ran in 15 seconds.
 It was very easy to implement and I got the job done quite quickly.

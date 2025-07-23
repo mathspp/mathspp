@@ -2,7 +2,7 @@ Today I learned about the skip list data structure.
 
 ===
 
-# Skip list
+## Skip list
 
 The skip list is a data structure that is similar to a linked list with “skip lanes”.
 These “skip lanes” are used to provide faster _average_ lookup and insertion times, which become $O(\log n)$ instead of $O(n)$, if you have a sorted linked list of $n$ elements.
@@ -14,7 +14,7 @@ The diagram below (taken from [the Wikipedia article on the skip list][source]) 
 The diagram shows the head of the list, which stores information about the first node in each skip lane, and then the sequence of nodes with their links in the different skip lanes.
 
 
-# Implementation of a skip list in Python
+## Implementation of a skip list in Python
 
 I found this a very cool data structure so I decided to implement it in Python.
 The code below is a simple implementation that provides iteration over the list and provides adding elements to the list.

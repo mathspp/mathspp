@@ -2,8 +2,6 @@ Learn how `batched` from the module `itertools` works, example use cases, and ho
 
 ===
 
-# `itertools.batched`
-
 The module `itertools` introduced a new tool called `batched` in Python 3.12.
 `itertools.batched` lets you iterate over an iterable by going over portions of that iterable – or batches – that all have the same size, except possibly for the last one.
 Some [example use cases](#example-use-cases) include batching API requests or batching data processing.

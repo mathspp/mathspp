@@ -3,8 +3,6 @@ In this article I share my personal highlights of PyCon Italy 2025, including st
 ===
 
 
-# Personal highlights of PyCon Italy 2025
-
 PyCon Italy is one of my favourite Python conferences.
 There is just something about the warmth of the community that is unmatched by other conferences I've been at!
 This year was the second time I attended and I want to thank the organisers for helping me attend the conference.

@@ -3,8 +3,6 @@ This tutorial walks you through implementing a 2D scrolling game in JavaScript.
 ===
 
 
-# JavaScript 2D scrolling game tutorial
-
 This JavaScript tutorial is for people who know programming (for example, in Python) but have no JavaScript knowledge.
 In this tutorial we will build a 2D scrolling game where the player (a red ball) will jump to avoid obstacles (black rectangles) that come toward the player at increasing speeds.
 

@@ -5,7 +5,7 @@ Today I learned how to disassemble Python code with the module `dis`.
 ![A photo of some gears, a metaphor to how the Python standard module `dis` works and the fact that it allows us to disassemble Python code, letting us understand how Python runs our code under the hood.](thumbnail.png "Photo by Laura Ockel on Unsplash.")
 
 
-# What is the module `dis` in Python?
+## What is the module `dis` in Python?
 
 According to [the documentation][dis-docs], the module `dis`
 
@@ -25,7 +25,7 @@ I'll just assume you are familiar enough with these ideas for me to explain what
 In particular, I'll focus on the function `dis.dis`.
 
 
-# The function `dis.dis`
+## The function `dis.dis`
 
 The function `dis.dis` accepts a variety of different objects, and then disassembles them for us,
 showing us what their bytecode looks like.
@@ -55,7 +55,7 @@ By using the function `dis.dis`, we can, for example, realise that these three f
   4           0 LOAD_CONST               1 (3)
               2 RETURN_VALUE
 
-# ---
+## ---
 
 >>> def foo():
 ...     return 3
@@ -64,7 +64,7 @@ By using the function `dis.dis`, we can, for example, realise that these three f
   2           0 LOAD_CONST               1 (3)
               2 RETURN_VALUE
 
-# ---
+## ---
 
 >>> def foo(): return 3
 ... 
@@ -103,7 +103,7 @@ In fact, we can compare the output from `dis.dis` with what we get if we disasse
   4           0 LOAD_CONST               1 (3)
               2 RETURN_VALUE
 
-# ---
+## ---
 
 >>> def goo():
 ...     1
@@ -118,7 +118,7 @@ In fact, we can compare the output from `dis.dis` with what we get if we disasse
 Notice how the printed bytecode looks exactly the same!
 So yeah, it really looks like Python is completely ignoring the `1` and the `2` in there.
 
-# Constant folding
+## Constant folding
 
 With the function `dis.dis` we can also realise that CPython does some constant folding when compiling the Python code into bytecode!
 What does this mean?

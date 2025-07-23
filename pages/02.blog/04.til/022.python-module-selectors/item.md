@@ -5,7 +5,7 @@ Today I learned about the Python module `selectors` to manage multiple socket co
 ![The Python import statement that allows us to use the Python module `selectors`.](thumbnail.webp)
 
 
-# `selectors`
+## `selectors`
 
 Following up on some of [my recent efforts to learn socket programming][sockets-for-dummies],
 I learned about the Python module `selectors`.
@@ -19,7 +19,7 @@ For example, for the server socket, this means that the call to `accept` won't r
 Try pasting this code in a script and run it:
 
 ```py
-# server.py
+## server.py
 import socket
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -52,17 +52,17 @@ For example, here is how you can use the module `selectors` to only
 try accepting a connection to the server socket when one is ready:
 
 ```py
-# server.py
+## server.py
 
 import selectors
 import socket
 
-# Set up the server
+## Set up the server
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind(("localhost", 7342))
 server.listen()
 
-# Set up the selectors "bag of sockets"
+## Set up the selectors "bag of sockets"
 selector = selectors.DefaultSelector()
 selector.register(server, selectors.EVENT_READ)
 
@@ -87,7 +87,7 @@ proving that the code is not hanging because of the call to `accept`:
 ![GIF that proves that the Python module `selectors` allows multiplexing between sockets.](_selectors_accept_doesnt_block.gif)
 
 
-# Registering with a callback
+## Registering with a callback
 
 There are many, _many_ details I didn't cover about the module `selectors` and the things that are actually happening in that code.
 You can take a look [at the documentation][selectors-docs] for more information.
@@ -106,7 +106,7 @@ is to register a socket with a callback that will then handle that socket's even
 Here is an example, associating the server socket with a callback that accepts connections:
 
 ```py
-# server.py
+## server.py
 
 import selectors
 import socket
@@ -117,12 +117,12 @@ def accept_connection(server):
     server.accept()
     print("Accepted.")
 
-# Set up the server
+## Set up the server
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind(("localhost", 7342))
 server.listen()
 
-# Set up the selectors "bag of sockets"
+## Set up the selectors "bag of sockets"
 selector = selectors.DefaultSelector()
 selector.register(server, selectors.EVENT_READ, accept_connection)
 

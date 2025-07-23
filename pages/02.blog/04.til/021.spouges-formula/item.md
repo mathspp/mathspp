@@ -5,7 +5,7 @@ Today I learned about Spouge's formula to approximate the factorial.
 ![](thumbnail.png "Photo by Scott Graham on Unsplash (cropped).")
 
 
-# Spouge's formula
+## Spouge's formula
 
 Spouge's formula allows one to approximate the value of the gamma function.
 In case you don't know, the gamma function is like a generalisation of the factorial.
@@ -74,7 +74,7 @@ I'll leave it as an exercise for you, the reader,
 to implement this approximation in your favourite programming language.
 
 
-# Spouge's formula in APL
+## Spouge's formula in APL
 
 In APL, (and disregarding the accuracy issues) it can look something like this:
 

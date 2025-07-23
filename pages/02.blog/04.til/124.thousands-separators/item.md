@@ -3,7 +3,7 @@ Today I learned how to set different thousands separators using string formattin
 ===
 
 
-# Thousands separators
+## Thousands separators
 
 When doing string formatting with big integers, you may want to include thousands separators to make numbers easier to read.
 You can add commas, underscores, or a locale-appropriate separator, using the specifiers `,`, `_`, or `n`, respectively:
@@ -12,15 +12,15 @@ You can add commas, underscores, or a locale-appropriate separator, using the sp
 bignum = 123541241234
 
 print(f"Big money ${bignum:,}")
-# Big money $123,541,241,234
+## Big money $123,541,241,234
 
 
 print(f"Big money ${bignum:_}")
-# Big money $123_541_241_234
+## Big money $123_541_241_234
 
 
 print(f"Big money ${bignum:n}")
-# Big money $123541241234
+## Big money $123541241234
 ```
 
 When you specify that you are printing binary (`b`), octal (`o`), or hexadecimal digits (`x`/`X`), `_` can be used to insert underscores every four digits:

@@ -7,7 +7,7 @@ Let me tell you why it is impossible to truly master Python, but also show you h
 ![A rocky trail heading up a hill.](thumbnail.png "Photo by Migle Siauciulyte on Unsplash.")
 
 
-# Introduction
+## Introduction
 
 [It has been said][wiki-outliers] that you need 10,000 hours to master a skill.
 I won't dispute if that's true or not.
@@ -28,7 +28,7 @@ to support my claims.
 <!--^-->
 
 
-# “to master”, verb
+## “to master”, verb
 
 Here's the [dictionary definition][dict-master] of the verb “to master”:
 
@@ -39,7 +39,7 @@ there are two levels at which I believe one cannot master Python;
 I'll lay both of them down now.
 
 
-## Python is an evolving language
+### Python is an evolving language
 
 The Python language is an evolving language: it isn't a finished product.
 As such, it keeps growing:
@@ -57,7 +57,7 @@ This is something I believe in, but it is also almost a philosophical point of v
 There is also a practical side to this argument.
 
 
-## Python is just too big
+### Python is just too big
 
 Not only does the language keep changing,
 one can argue that the Python language is already too big for you to be able to master it.
@@ -119,9 +119,9 @@ However, being vaguely aware of them, will!
 (Just for the fun of it, you can read my short article on [how big Python is][big-python].)
 
 
-# How to get as close to mastering Python as possible
+## How to get as close to mastering Python as possible
 
-## Getting exposure
+### Getting exposure
 
 A good programmer uses the right tool for the job,
 but you can only use the right tools if you know they exist,
@@ -160,7 +160,7 @@ I would recommend that you find a way of learning Python
 that is not simply by following these ad-hoc methods.
 
 
-## Documentation
+### Documentation
 
 Are you familiar with Python's documentation?
 It's at a URL that is easy to remember: <https://docs.python.org>.
@@ -181,7 +181,7 @@ Here are a couple of pages I like to visit often:
  - [the page](https://docs.python.org/3/reference/datamodel.html) about the data model (that's where you can find out about most of the dunder names);
 
 
-## `dir` and `help`
+### `dir` and `help`
 
 Another great way of finding more things to learn revolves around going to the REPL
 and making use of two great functions: `dir` and `help`.
@@ -234,7 +234,7 @@ Without any filtering, I'm sure `dir` will show you things you don't know yet:
 ```
 
 
-## Teach
+### Teach
 
 I hear this a lot, but maybe you don't, so let me break it to you:
 teaching someone actually improves your understanding of the thing you are teaching.
@@ -265,7 +265,7 @@ Here are a couple of examples:
  - [Reddit's /r/learnpython](https://reddit.com/r/learnpython/);
 
 
-## Read source code
+### Read source code
 
 This is, _hands down_, one of the most underappreciated skills a programmer needs to have:
 knowing how to read code is a skill that you also need to practise!
@@ -283,7 +283,7 @@ If I'm not mistaken, most of Python's standard library is written _in Python_.
 Go [take a look][cpython-gh].
 
 
-## Get acquainted with the Standard Library
+### Get acquainted with the Standard Library
 
 Again, being a programmer is all about using the right tools for the job.
 Did you know the Python Standard Library has more than 249 modules?
@@ -302,7 +302,7 @@ What about `random`? `pathlib`?
 These are just some of the _really_ useful modules that you could learn more about!
 
 
-## Find out about more Python packages
+### Find out about more Python packages
 
 Not only can you work on getting more acquainted with Python's Standard Library,
 but you can also try to get more acquainted with any number of Python packages out there!
@@ -317,7 +317,7 @@ If you've got no ideas of modules to look at,
 you can always [search PyPI][pypi-search] or [explore GitHub][gh-explore-python].
 
 
-## Learn OTHER languages
+### Learn OTHER languages
 
 This might seem paradoxical, but learning _other_ languages can boost your Python skills.
 I am speaking from experience; I have _felt_ this.
@@ -369,7 +369,7 @@ It is non-technical and a light read – a great first step into learning a
 _completely new language_.
 
 
-# Anecdote with string methods
+## Anecdote with string methods
 
 I am, by no means, a Python expert.
 I have a lot of fun with Python, learning it and teaching it,
@@ -404,7 +404,7 @@ else to learn about Python.
 I even built my Pyjamas Conf 2021 talk around this!
 
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this Pydon't, for you, on a silver platter:
 

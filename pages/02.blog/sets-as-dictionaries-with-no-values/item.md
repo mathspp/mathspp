@@ -3,8 +3,6 @@ This article shows how to implement the set built-in at the expense of a diction
 ===
 
 
-# Sets as dictionaries with no values
-
 A set is a built-in container data type in Python that provides fast lookup and insertion.
 In exchange for that speed, sets are unordered, only hold unique elements, and its elements must be hashable.
 These characteristics are similar to those of dictionary keys[^1] and this shows that a set can actually be implemented as a dictionary with no values.

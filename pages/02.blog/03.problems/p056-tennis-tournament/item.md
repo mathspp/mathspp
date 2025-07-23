@@ -5,7 +5,7 @@ How many matches does it take to find the winner of a tennis tournament?
 ![](thumbnail.png "Photo by Valentin Balan on Unsplash.")
 
 
-# Problem statement
+## Problem statement
 
 Suppose that $n$ players are going to play in a tennis tournament.
 The players will be randomly assigned to [brackets](https://en.wikipedia.org/wiki/Bracket_(tournament)),
@@ -22,7 +22,7 @@ how many matches are needed to determine the winner of the tournament?
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solvers
+## Solvers
 
 Congratulations to the ones that solved this problem correctly and, in particular, to the ones
 who sent me their correct solutions:
@@ -43,7 +43,7 @@ Know how to solve this?
 Join the list of solvers by [emailing me][email] your solution!
 
 
-# Solution
+## Solution
 
 There is a nice intuitive solution to this problem that means you don't need to do any calculations whatsoever!
 

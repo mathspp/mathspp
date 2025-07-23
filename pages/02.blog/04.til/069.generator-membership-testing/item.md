@@ -2,7 +2,7 @@ Today I learned that generators support membership testing with the operator `in
 
 ===
 
-# Generator membership testing
+## Generator membership testing
 
 Membership testing in Python boils down to using the operator `in`, as the REPL session excerpt shows:
 
@@ -32,7 +32,7 @@ print(42 in gen)  # True
 ```
 
 
-# Gotchas of generator membership testing
+## Gotchas of generator membership testing
 
 What I immediately realised afterwards is that you need to be very careful about membership testing with generators.
 For example, consider the generator function from before:
@@ -115,11 +115,11 @@ Other than that small challenge, that's it for now! [Stay tuned][subscribe] and 
 ...
 >>> gen = generator()
 >>> 3 in gen
-# ???
+## ???
 >>> 1 in gen
-# ???
+## ???
 >>> 2 in gen
-# ???
+## ???
 ```
 
 That's it for now! [Stay tuned][subscribe] and I'll see you around!

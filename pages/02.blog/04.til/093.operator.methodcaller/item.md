@@ -3,7 +3,7 @@ Today I learned how to use the function `operator.methodcaller`.
 ===
 
 
-# `operator.methodcaller`
+## `operator.methodcaller`
 
 The function `methodcaller` from the module `operator` is similar to the functions `itemgetter` and `attrgetter`.
 Its only required argument is a string with the name of a method and its return value is a function that calls the specified method on the given object.

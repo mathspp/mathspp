@@ -14,10 +14,10 @@ hero_image_url: /user/themes/myquark/images/common_hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 metadata:
     author: Rodrigo Girão Serrão
-    description: "All of the mathspp blog articles about simulation."
-    og:description: "All of the mathspp blog articles about simulation."
-    og:image: "https://mathspp.com/blog/tags/simulation/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/simulation/thumbnail.webp"
+    description: "All of the mathspp blog articles about Simulation."
+    og:description: "All of the mathspp blog articles about Simulation."
+    og:image: "https://mathspp.com/blog/tags/Simulation/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/Simulation/thumbnail.webp"
 title: "Simulation blog articles"
 ---
 
@@ -29,7 +29,7 @@ title: "Simulation blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">4</th>
-            <th style="text-align: center;">5,317</th>
+            <th style="text-align: center;">5,310</th>
             <th style="text-align: center;">700</th>
         </tr>
     </thead>

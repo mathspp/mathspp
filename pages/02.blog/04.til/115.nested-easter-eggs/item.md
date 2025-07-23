@@ -3,7 +3,7 @@ Today I learned that Python has nested Easter eggs in the standard library.
 ===
 
 
-# Nested Easter eggs
+## Nested Easter eggs
 
 If you open the Python REPL and type `import antigravity` or if you put that in a script and then run it, Python will open your browser and take you to <https://xkcd.com/353/>, where you can find the following comic:
 

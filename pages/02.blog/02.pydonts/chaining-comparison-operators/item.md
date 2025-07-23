@@ -14,7 +14,7 @@ Learn the ins and outs of comparison operator chaining, and especially the cases
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 In this Pydon't we will go over the chaining of comparison operators:
 
@@ -23,7 +23,7 @@ In this Pydon't we will go over the chaining of comparison operators:
  - weird cases to avoid.
 
 
-# Chaining of comparison operators
+## Chaining of comparison operators
 
 One of the things I enjoy about Python is that some of its features make so much sense
 that you don't even notice that you are using a feature until someone points out
@@ -76,13 +76,13 @@ all same
 !!! `a < b < c < d < e` checks if you have a strictly increasing sequence.
 
 
-# Pitfalls
+## Pitfalls
 
 Even though this feature looks very sensible, there are a couple of pitfalls you have to
 look out for.
 
 
-## Non-transitive operators
+### Non-transitive operators
 
 We saw above that we can use `a == b == c` to check if `a`, `b` and `c` are all the same.
 How would you check if they are all different?
@@ -111,7 +111,7 @@ If `a == b` and `b == c` then
 it is also true that `a == c`.
 
 
-## Non-constant expressions or side-effects
+### Non-constant expressions or side-effects
 
 Recall that in a chaining of comparisons, like `a < b < c`, the expression `b` in the middle is only
 evaluated _once_, whereas if you were to write the expanded expression, `a < b and b < c`,
@@ -161,7 +161,7 @@ ehh
 Of course that `1 < f() < 0` should never be `True`, so this just shows that
 the chained comparison and the unfolded one aren't always equivalent.
 
-# Ugly chains
+## Ugly chains
 
 This feature looks really natural, but some particular cases aren't so great.
 This is a fairly subjective matter, but I personally don't love chains where
@@ -214,9 +214,9 @@ The one who wrote `a in l == True`
 probably meant `(a in l) == True`, but that is also the same as `a in l`.
 
 
-# Examples in code
+## Examples in code
 
-## Inequality chain
+### Inequality chain
 
 Having a simple utility function that ensures that a given value is between two bounds
 becomes really simple, e.g.
@@ -237,7 +237,7 @@ def ensure_within(value, bounds):
     return m <= value <= M
 ```
 
-## Equality chain
+### Equality chain
 
 Straight from Python's [`enum`][enum] module, we can find a helper function
 (that is not exposed to the user), that reads as follows:
@@ -277,7 +277,7 @@ False
 False
 ```
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this article, for you, on a silver platter:
 
@@ -296,7 +296,7 @@ If you liked this Pydon't be sure to leave a reaction below and share this with 
 Also, [don't forget to subscribe to the newsletter][subscribe] so you don't miss
 a single Pydon't!
 
-# References
+## References
 
  - Python 3 Documentation, The Python Language Reference
 [https://docs.python.org/3/reference/expressions.html#comparisons](https://docs.python.org/3/reference/expressions.html#comparisons);

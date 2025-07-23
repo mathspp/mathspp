@@ -2,7 +2,7 @@ Today I learned not to cache generators.
 
 ===
 
-# Do not cache generators
+## Do not cache generators
 
 I was [optimising all images on my blog](/blog/til/optimising-images-for-the-web) and I noticed my script was not working correctly.
 It was skipping some images...
@@ -67,7 +67,7 @@ for square in squares_to_3:
 new_squares_to_3 = squares(3)
 print(new_squares_to_3 is squares_to_3)  # True, they are the SAME object.
 
-# Hence, "new" squares_to_3 has actually been traversed:
+## Hence, "new" squares_to_3 has actually been traversed:
 print(next(new_squares_to_3, None))  # None, there is no next element.
 ```
 

@@ -14,7 +14,7 @@ In [this post](/blog/water-buckets) I talked about the riddle of the water bucke
 
 <!-- ^ -->
 
-# Problem statement
+## Problem statement
 
 You have $n$ buckets, each bucket with capacity for $c_i$ litres of water, $i = 1, \cdots, n$. You want to manipulate the buckets in such a way that one of them holds exactly $t$ litres of water, knowing that the only moves you can do are:
 
@@ -31,7 +31,7 @@ For example, if the buckets have capacities $4$ and $6$ and $t = 3$, then you ca
 If you need any clarification whatsoever, feel free to ask in the comment section below.
 
 
-# Solution
+## Solution
 
 A possible solution is to consider a clever invariant that applies to the amount of water that each bucket is holding at any point in time. To make this easier, let's call $d$ to the greatest common divisor of the $c_i$, $i = 1, \cdots, n$ ($d = \gcd(c_1, \cdots, c_n)$). Let's also say the amount of water in bucket $i$ is $w_i$. We will show that, regardless of the moves we make, $w_i$ is _always_ a multiple of $d$ for all $i$ (which we write $d | w_i$ for _"$d$ divides $w_i$"_).
 

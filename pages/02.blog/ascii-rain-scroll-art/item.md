@@ -2,8 +2,6 @@ Using ASCII characters we can create a simple rain animation in the terminal.
 
 ===
 
-# ASCII rain scroll art
-
 “Scroll art” is a term I've heard used to refer to images or animations made out of ASCII characters.
 In this short article we'll go over the code necessary to create this raining animation:
 

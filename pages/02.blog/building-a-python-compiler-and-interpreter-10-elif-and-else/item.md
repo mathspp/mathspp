@@ -3,8 +3,6 @@ The 10th article of [this series][series-link] adds support for `elif` and `else
 ===
 
 
-# Building a Python compiler and interpreter – 10 `elif` and `else`
-
 This is the 10th article of the [“Building a Python compiler and interpreter” series][series-link], so make sure you've gone through the first nine articles before tackling this one!
 
 The code that serves as a starting point for this article is [the tag v0.9.0 of the code in this GitHub repository](https://github.com/mathspp/building-a-python-compiler-and-interpreter/tree/v0.9.0).

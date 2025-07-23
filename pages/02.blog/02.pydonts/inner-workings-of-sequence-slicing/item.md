@@ -17,7 +17,7 @@ from the built-in `slice` type to the dunder method
 [Pydon't Manifesto][manifesto].)
 
 
-# Introduction
+## Introduction
 
 We have written two Pydon'ts already on sequence slicing:
 
@@ -38,7 +38,7 @@ can really help you take your Python slicing skills to the next level.
 
 Without further ado, let us begin!
 
-# The `slice` class
+## The `slice` class
 
 I don't know if you know this, but Python has, in its amazing documentation,
 a [section devoted to its built-in functions][docs-builtin-functions].
@@ -62,7 +62,7 @@ Python uses these `slice` objects when we write things like `s[2::3]`!
 But first, let us explore the `slice` objects a bit more.
 
 
-## Slicing parameters
+### Slicing parameters
 
 If we read the docs, or if we play around with the `slice` built-in enough,
 we find out that this object stores the slicing parameters that
@@ -93,7 +93,7 @@ AttributeError: readonly attribute
 ```
 
 
-## Relationship with `range`
+### Relationship with `range`
 
 Another really important thing here lies in noting that this relationship that [I tried
 to make apparent][slice-range-relationship], between slicing and sets of indices specified by `range`,
@@ -117,7 +117,7 @@ li  s
 ```
 
 
-## Explicit slices instead of colons
+### Explicit slices instead of colons
 
 We have seen that we can create explicit `slice` objects, but can we use them..?
 Of course we can!
@@ -153,7 +153,7 @@ that would go between the two colons.
 ! This is also why you shouldn't name your strings `str` or your integers `int`.
 
 
-# Getting items from sequences
+## Getting items from sequences
 
 We have seen that `slice` objects can be used to extract slices
 from sequences in the same way as when we use the syntactic sugar
@@ -246,7 +246,7 @@ objects if you implement the `__getitem__` method for your own objects.
 I will show you an example of this below.
 
 
-# Setting items, deleting items, and container emulation
+## Setting items, deleting items, and container emulation
 
 In the Pydon't about [mastering sequence slicing][mastering-sequence-slicing]
 we also saw how to do slicing assignment and how to delete
@@ -259,7 +259,7 @@ more about these methods or if you are looking at implementing
 custom classes that emulate built-in container types.
 
 
-# Comma-separated indices and slices
+## Comma-separated indices and slices
 
 I would like to point out another cool thing that you can find
 if you dig “deep” enough in the documentation (see [here][slices-grammar]),
@@ -320,7 +320,7 @@ and now we will go through a couple of examples in code
 where these things could be helpful.
 
 
-# Examples in code
+## Examples in code
 
 Bear in mind that it is likely that you won't be using explicit
 `slice` objects in your day-to-day code.
@@ -334,7 +334,7 @@ with you, I did not understand why they were being used!
 (Do let me know if you can explain to me what is happening there!)
 
 
-## `itertools.islice`
+### `itertools.islice`
 
 The first example we will be using is from the `itertools` module's
 `islice` function.
@@ -432,7 +432,7 @@ to their correct positions, because you can read the parameters
 off of a `slice` object.
 
 
-## Custom arithmetic and geometric sequences
+### Custom arithmetic and geometric sequences
 
 In this example I will be showing you a simple example
 implementation of a custom object that supports slicing.
@@ -542,7 +542,7 @@ define indexing and slicing into your own objects.
 !!! You can find this simple implementation [on GitHub][geometric-prog-gh],
 !!! in case you need it.
 
-# Conclusion
+## Conclusion
 
 Here's the main takeaway of this Pydon't, for you, on a silver platter:
 

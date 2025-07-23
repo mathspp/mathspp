@@ -5,7 +5,7 @@ Create a simple chatroom server in Python by following along this tutorial serie
 ![](thumbnail.png "Photo by Jason Leung on Unsplash.")
 
 
-# Introduction
+## Introduction
 
 I started learning about sockets and network programming very recently,
 and my knowledge is still very limited.
@@ -24,7 +24,7 @@ If you have suggestions, leave a comment below or [reach out to me directly][abo
 !!! The code lives in [this GitHub repository][sockchat-gh].
 
 
-## Pre-requisites
+### Pre-requisites
 
 The pre-requisites for following along this tutorial are a basic understanding of sockets,
 how to use them in Python, and an intermediate knowledge of Python.
@@ -40,7 +40,7 @@ If you find yourself struggling with something regarding the Python langauge its
 you can always take a look at my [Pydon'ts series][pydonts].
 
 
-## Roadmap
+### Roadmap
 
 When I am preparing to build something, I always think of a high-level roadmap to follow.
 Not only that, but I tend to do the plan in a very specific way:
@@ -84,7 +84,7 @@ Let's complete these initial steps without worrying too much about doing everyth
 First, you and I will worry about getting the main functionality done, and _then_ we will polish everything we can.
 
 
-# Creating the server class
+## Creating the server class
 
 The first thing we will do is create a `ChatServer` class that will represent the chatroom server.
 We'll do this in a file called `server.py`, and this is the initial structure that this class will have:
@@ -203,7 +203,7 @@ That's it, our very first step is done!
 !!! This is the code at [v0.0.1 of the GitHub repository](https://github.com/mathspp/sockchat/tree/v0.0.1).
 
 
-# Receiving messages from clients
+## Receiving messages from clients
 
 Now that the server is up and running, we want clients to be able to send messages to the server.
 For that to be possible, we need to figure out when each client is ready to be read from.
@@ -226,7 +226,7 @@ If you want to deal with the blocking nature of the `recv` calls, you are welcom
 I'll be sticking with this one.
 
 
-## Using `selectors` to manage multiple sockets
+### Using `selectors` to manage multiple sockets
 
 The rationale behind the module `selectors` is simple.
 You take all sockets that you care about, and you put them in a bag.
@@ -439,7 +439,7 @@ How cool is that?
 !!! This is the code at [v0.0.2 of the GitHub repository](https://github.com/mathspp/sockchat/tree/v0.0.2).
 
 
-# Creating a client class to connect and send messages
+## Creating a client class to connect and send messages
 
 Now that the server seems to be running decently enough,
 we will create a class to represent the clients that connect to the chat server.
@@ -455,7 +455,7 @@ In order to implement this behaviour,
 we can get away with this structure:
 
 ```py
-# client.py
+## client.py
 
 class ChatClient:
     def __init__(self, host, port):
@@ -525,7 +525,7 @@ letting me play with what I'm building at every step of the way.
 !!! This is the code at [v0.0.3 of the GitHub repository](https://github.com/mathspp/sockchat/tree/v0.0.3).
 
 
-# Broadcasting messages to other clients
+## Broadcasting messages to other clients
 
 The fourth and final milestone is upon us!
 We need to enable actual communication between the several clients,
@@ -757,7 +757,7 @@ that show up even when only one client is connected:
 Let's focus on fixing these two issues.
 
 
-## Echoing back to the same client
+### Echoing back to the same client
 
 The first thing we will do is fix the issue where a client receives its own messages back.
 
@@ -807,7 +807,7 @@ connected to the same server:
 Obviously, we want to fix this.
 
 
-## Issues with the prompt
+### Issues with the prompt
 
 There are many ways in which we can fix this,
 some will make for a better-looking interface than others.
@@ -842,7 +842,7 @@ That's it, the second major issue has been fixed!
 !!! This is the code at [v0.0.4 of the GitHub repository](https://github.com/mathspp/sockchat/tree/v0.0.4).
 
 
-# Follow-up challenges
+## Follow-up challenges
 
 We have finished the implementation of a _very basic_ chatroom server.
 However, we cut a fair amount of corners:

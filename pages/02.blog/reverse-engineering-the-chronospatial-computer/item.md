@@ -3,8 +3,6 @@ Reverse-engineering the program from “Chronospatial Computer”, day 17 of Adv
 ===
 
 
-# Reverse-engineering the “Chronospatial Computer”
-
 The “Chronospatial Computer” is from [Advent of Code 2024, day 17](https://adventofcode.com/2024/day/17), a problem that entertained me for a couple of hours.
 
 ## Parsing the input

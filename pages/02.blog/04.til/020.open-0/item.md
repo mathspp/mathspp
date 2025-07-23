@@ -5,7 +5,7 @@ Today I learned you can read from stdin with `open(0)`.
 ![The code `open(0)  # ?!` in a good-looking thumbnail.](thumbnail.webp)
 
 
-# Opening a file
+## Opening a file
 
 In Python, we typically use the function `open` to open a file and read from it.
 In particular, the construct

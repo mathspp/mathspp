@@ -5,7 +5,7 @@ Today I understood how the `viewBox` of SVGs really works.
 ![](thumbnail.webp)
 
 
-# SVG
+## SVG
 
 SVG stands for Scalable Vector Graphics and it is an XML-based language
 that you can use to describe two-dimensional vector graphics.
@@ -22,7 +22,7 @@ Because the geometrical shapes you define in SVG do not depend on resolution/zoo
 they are just mathematical objects.
 
 
-# SVG of the alphabet
+## SVG of the alphabet
 
 There is another project I am working on,
 and I needed image versions of the uppercase letters of the latin alphabet.
@@ -48,7 +48,7 @@ Then, I realised I could probably use the attribute `viewBox` of the SVG to put 
 but only display the letter I care about.
 
 
-# What is the `viewBox` in an SVG
+## What is the `viewBox` in an SVG
 
 The attribute `viewBox` is an attribute that defines the portion of the SVG that we are looking at.
 In my case, I want to draw the whole alphabet in the SVG,
@@ -146,7 +146,7 @@ Thus, by fiddling with the `viewBox`,
 I can have the SVG display the letter I want.
 
 
-# Making it more precise
+## Making it more precise
 
 To make this even more precise,
 I needed to switch to a monospaced font

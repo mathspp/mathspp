@@ -2,14 +2,14 @@ Today I learned how to use named tuples to improve readability and flexibility o
 
 ===
 
-# Better test parametrisation in pytest
+## Better test parametrisation in pytest
 
 Today I attended a [pytest tutorial](https://pretalx.com/pyconde-pydata-2024/talk/DSFWRC/) at [PyCon DE 2024](https://2024.pycon.de) and I learned a couple of really neat tricks to improve parametrised tests.
 
 Let's take a look at them!
 
 
-## Stacking the `parametrize` mark
+### Stacking the `parametrize` mark
 
 One quick tip is that you can stack `parametrize` to run all permutations of different parameters.
 
@@ -43,7 +43,7 @@ With this pattern you cannot specify a test output for each single test, so this
 For tests where you must specify the expected result but you also want to test all permutations of certain parameters, you can use the REPL and `itertools.product` to programmatically generate all the tests instead of having to write them down by hand.
 
 
-## Parametrising with named tuples
+### Parametrising with named tuples
 
 You can add a lot of flexibility and readability in your parametrised tests if you use named tuples[^1].
 Instead of listing tuples with plenty of different values, we can create a named tuple to wrap around those tuples, which then lets us use named parameters _and_ default arguments in our parametrisation cases!

@@ -2,7 +2,7 @@ Today I learned how to optimise my website images for the web and I automated th
 
 ===
 
-# Image optimisation
+## Image optimisation
 
 Up until today, most of the images on this website and on this blog were PNG files.
 I also had some JPGs here and there, but I had mostly PNG files.
@@ -15,15 +15,15 @@ I optimised all my images and converted most of them to WEBP files...
 But I didn't want to do it by hand, obviously, so I looked for tools to help me out.
 
 
-# CLI tool for image optimisation
+## CLI tool for image optimisation
 
 The first thing I looked for was a CLI tool that would allow me to optimise my images, and I found [optimizt].
 This was great because optimizt allows me to compress the files I already had, it lets me pick whether I want the compression to be lossless or not, and it lets me convert image files to WEBP.
 
 
-# Optimising images
+## Optimising images
 
-## Lossless compression
+### Lossless compression
 
 I started by compressing all of my images losslessly but I preserved their extensions.
 This was done with the command
@@ -38,7 +38,7 @@ Optimizt compressed 372 images in total and it saved me an average of 20% for ea
 This was merged in [a huge PR](https://github.com/mathspp/mathspp/pull/151).
 
 
-## Convert to WEBP
+### Convert to WEBP
 
 After compressing everything losslessly, I decided to convert everything to WEBP.
 The way optimizt does this is by looking for images and creating new WEBP images out of those.

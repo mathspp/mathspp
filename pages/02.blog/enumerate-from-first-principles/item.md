@@ -5,7 +5,7 @@ In this article we reimplement the built-in `enumerate` in the best way possible
 !["A Python code snippet showing the built-in `enumerate` applied to the string 'rod' and with the optional argument `start`."](thumbnail.webp)
 
 
-# Preamble
+## Preamble
 
 In this article, we will use Python to reimplement the built-in `enumerate`.
 We will start with a rough solution that doesn't really cut it,
@@ -30,7 +30,7 @@ After you work through this article, you will:
 !!! The talk slides are available [here][gh-talks] and the YouTube recording is [here][yt-talk].
 
 
-# Introduction
+## Introduction
 
 Imagine you have a string:
 
@@ -113,7 +113,7 @@ We will start with a simple model of `enumerate` that we will refactor bit by bi
 fixing its behaviour and improving the quality of its code.
 
 
-# A first stab
+## A first stab
 
 Before writing our very first reimplementation of the built-in `enumerate`,
 it might be a good idea to actually _see_ what it is that `enumerate` produces.
@@ -197,7 +197,7 @@ In order to understand why,
 we need to talk about generators.
 
 
-# Lazy generators
+## Lazy generators
 
 Quick!
 What Python code would produce the following list:
@@ -338,7 +338,7 @@ like `enumerate` does,
 but we still have an inaccurate implementation.
 
 
-# Optional parameter `start`
+## Optional parameter `start`
 
 The next thing that needs to be done is to make sure that `enumerate_` has all the features that the built-in `enumerate` has.
 In this case, that means we need to implement the optional parameter `start`,
@@ -390,7 +390,7 @@ No!
 Let's see if we can improve this piece of code.
 
 
-# Bookkeeping the indices
+## Bookkeeping the indices
 
 When I am looking at a piece of code that I want to refactor,
 one of the things I look out for is code that isn't algorithmically relevant,
@@ -505,7 +505,7 @@ in the sense that we want to traverse both at the same time.
 However, now we will see that the right instinct led to the wrong execution.
 
 
-# Iterables, not sequences
+## Iterables, not sequences
 
 Notice how `enumerate_` already works with many different types of iterables:
 
@@ -590,7 +590,7 @@ and then yields consecutive numbers after that!
 But when should it stop..?
 
 
-# Not all good things need to end
+## Not all good things need to end
 
 We ran into an issue because we tried to specify when `range` stopped,
 so we need to work around that issue.
@@ -687,7 +687,7 @@ In other words,
 whereas `gen_indices` only needs to know its starting point.
 
 
-# Bookkeeping the indices, again...
+## Bookkeeping the indices, again...
 
 
 We just introduced five more lines of code,
@@ -814,7 +814,7 @@ So, if we had the right instinct but the wrong execution,
 what would the right execution look like..?
 
 
-# The right tool for the job
+## The right tool for the job
 
 Python is a huge language, especially because its standard library is immense,
 so I often go digging there when I suspect I am trying to implement something absurdly simple.
@@ -836,7 +836,7 @@ That's it: `itertools.count` is _the_ tool for the job:
 >>> help(count)
 ```
 ```
-# ...
+## ...
  |  Equivalent to:
  |      def count(firstval=0, step=1):
  |          x = firstval
@@ -875,7 +875,7 @@ By using the right tool for the job you write more expressive code,
 and knowing how to harness the power of the Python Standard Library is a must-have skill for Python programmers.
 
 
-# Yielding from another iterable
+## Yielding from another iterable
 
 Now that we are no longer being sidetracked by the generator for the indices,
 we can take a closer look at the `for` loop that we have implemented.
@@ -931,7 +931,7 @@ This pattern is so common that there is a keyword for that!
 Isn't this cool?
 
 
-# Challenge: <class 'enumerate'>
+## Challenge: <class 'enumerate'>
 
 Before we conclude, I would like you to turn your attention to another detail.
 If you look closely, Python says that `enumerate` is a class:
@@ -956,7 +956,7 @@ Can we implement `enumerate_` as a class that produces objects that are lazy ite
 Yeah, we absolutely can, but that would be a topic for a whole other article/talk!
 
 
-# Conclusion
+## Conclusion
 
 We've gone through half a dozen dummy reimplementations of the built-in `enumerate`,
 which allowed us to take a look at

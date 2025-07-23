@@ -3,7 +3,7 @@ Today I learned how to publish a Python package to PyPI with uv.
 ===
 
 
-# Publishing a Python package with uv
+## Publishing a Python package with uv
 
 Publishing a package to PyPI with uv was quite simple.
 All I had to do was read the documentation with the steps provided and I was done in less than 2 minutes.

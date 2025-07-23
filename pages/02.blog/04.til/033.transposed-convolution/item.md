@@ -3,7 +3,7 @@ Today I learned about the transposed convolution transformation in CNNs.
 ===
 
 
-# Transposed convolution
+## Transposed convolution
 
 I am currently working on a project based off of the architecture of the u-net neural network of [this paper][unet-paper].
 I struggled to understand how the upsampling was being done,
@@ -100,14 +100,14 @@ It means we got it right!
 So...
 
 
-# How can you do upsampling with a transposed convolution?
+## How can you do upsampling with a transposed convolution?
 
 If you want to do upsampling by an integer factor of `n`,
 you can use a transposed convolution with a kernel size of `n` by `n`,
 with stride `n`, and with no padding.
 
 
-# Transposed convolution in APL
+## Transposed convolution in APL
 
 Just for the fun of it,
 I even implemented a transposed convolution in APL.

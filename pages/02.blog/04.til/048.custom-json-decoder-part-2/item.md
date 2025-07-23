@@ -4,7 +4,7 @@ Today I finished learning how to use a custom JSON decoder to convert JSON to ar
 
 ![A solid background with an arrow pointing to some faded gears behind the words “JSON Decoder”, which then have an arrow pointing to the Python logo.](thumbnail.webp)
 
-# Asymmetry suggests other alternatives
+## Asymmetry suggests other alternatives
 
 In the two previous TIL articles,
 I wrote briefly about how to [use a custom JSON encoder][til-json-encoder]
@@ -31,7 +31,7 @@ which allows us to decode JSON into arbitrary Python objects.
 Let us see how to do that.
 
 
-# `json.JSONDecoder`
+## `json.JSONDecoder`
 
 The documentation doesn't tell you much about [how to use `json.JSONDecoder`][json-JSONDecoder],
 so I will share with you what I could piece together.
@@ -65,7 +65,7 @@ my_object = json.loads(json_data, cls=MyJSONDecoder)
 ```
 
 
-# Defining a custom decoder class
+## Defining a custom decoder class
 
 With the blueprint above in mind, let us go back to the example of decoding complex numbers.
 
@@ -110,7 +110,7 @@ print(c)  # (1+2j)
 All in all, the main difference between this and the strategy outlined in the [previous article about custom JSON decoding][til-json-decoder] is that we wrap our object hook in a subclass of `json.JSONDecoder`.
 
 
-# Conclusion
+## Conclusion
 
 If you want to do custom JSON decoding, you will always need to implement a hook.
 The easiest way is to implement an object hook that takes JSON dictionaries and tries to parse them into something else.

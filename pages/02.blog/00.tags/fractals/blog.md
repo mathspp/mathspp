@@ -29,7 +29,7 @@ title: "Fractals blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">6</th>
-            <th style="text-align: center;">4,426</th>
+            <th style="text-align: center;">4,403</th>
             <th style="text-align: center;">407</th>
         </tr>
     </thead>

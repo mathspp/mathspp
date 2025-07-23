@@ -3,8 +3,6 @@ This post gives the source code for a small Haskell program that finds if a form
 ===
 
 
-# Verifying tautologies with Haskell
-
 A [tautology](https://en.wikipedia.org/wiki/Tautology_(logic)) is a formula that is true regardless of the logical value we attribute to the variables it contains. For example, the propositional formula $P \vee \neg P$ is **always** true, regardless of $P$ being true or false. But not every tautology is as simple as the one I just showed. For example, showing that
 
 $$
