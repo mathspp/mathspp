@@ -5812,7 +5812,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/personal-highlights-of-europython-2025": {
-    "timestamp": 1753043107.1020124,
+    "timestamp": 1753043876.9060068,
     "tags": [
       "conferences",
       "opinion",
@@ -5822,7 +5822,7 @@
       "articles": 1,
       "code_snippets": 0,
       "loc": 0,
-      "words": 65
+      "words": 64
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/127.dynamically-changing-the-type": {
@@ -5852,6 +5852,16 @@
       "code_snippets": 2,
       "loc": 8,
       "words": 82
+    }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/128.matching-prefixes-and-suffixes-with-regex": {
+    "timestamp": 1753273625.1908324,
+    "tags": [],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 0,
+      "loc": 0,
+      "words": 236
     }
   }
 }

@@ -1,0 +1,16 @@
+date: 23-07-2025 13:17
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to use \\b and \\B to match prefixes and suffixes with regex."
+    og:image: "https://mathspp.com/blog/matching-prefixes-and-suffixes-with-regex/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/matching-prefixes-and-suffixes-with-regex/thumbnail.webp"
+references: []
+routes:
+    aliases:
+        - "/blog/til/128"
+slug: "matching-prefixes-and-suffixes-with-regex"
+taxonomy:
+    category: [blogpost, til]
+    tag: []
+title: "TIL #128 – Matching prefixes and suffixes with regex"
+visible: false
