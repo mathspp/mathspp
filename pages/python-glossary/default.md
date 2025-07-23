@@ -86,7 +86,7 @@ An attribute that is defined directly on the class and not on the instances.
 
 ### currying
 
-A technique from functional programming in which arguments can be passed to functions one at a time.
+A technique from [functional programming](#functional-programming){.glossary} in which arguments can be passed to functions one at a time.
 In a sense, it’s the ability to pre-apply some arguments of a function, creating another function that expects the remaining arguments.
 
 
