@@ -6,36 +6,37 @@
 
 - A
   - [annotation](#annotation){.glossary}
-  - [anonymous function](#anonymous-function)
-  - [attribute](#attribute)
+  - [anonymous function](#anonymous-function){.glossary}
+  - [attribute](#attribute){.glossary}
 - B
-  - [base class](#base-class)
-  - [Boolean](#boolean)
-  - [bytecode](#bytecode)
+  - [base class](#base-class){.glossary}
+  - [Boolean](#boolean){.glossary}
+  - [bytecode](#bytecode){.glossary}
 - C
-  - [callable](#callable)
-  - [class](#class)
-  - [class attribute](#class-attribute)
-  - [currying](#currying)
+  - [callable](#callable){.glossary}
+  - [class](#class){.glossary}
+  - [class attribute](#class-attribute){.glossary}
+  - [currying](#currying){.glossary}
 - D
-  - [decorator](#decorator)
+  - [decorator](#decorator){.glossary}
 - E
-  - [expression](#expression)
+  - [expression](#expression){.glossary}
 - F
-  - [functional programming](#functional-programming)
+  - [functional programming](#functional-programming){.glossary}
 - G
-  - [global (variable)](#global-variable)
+  - [global (variable)](#global-variable){.glossary}
 - L
-  - [literal](#literal)
+  - [literal](#literal){.glossary}
 - P
-  - [predicate function](#predicate-function)
+  - [predicate function](#predicate-function){.glossary}
 
 
 ## A
 
 ### annotation
 
-A syntactic feature of Python that lets you add arbitrary metadata to variables, function parameters, and function return values. Often used for type hinting. See also: type hints.
+A syntactic feature of Python that lets you add arbitrary metadata to variables, function parameters, and function return values.
+Often used for type hinting. See also: [type hints](#type-hints){.glossary}.
 
 ### anonymous function
 
@@ -43,7 +44,9 @@ A function expression defined by the keyword `lambda`.
 
 ### attribute
 
-A variable that is associated with an object. Typically, you access attributes with dot notation: `person.name` accesses the attribute `name` on the object `person`. See also: class attribute.
+A variable that is associated with an object.
+Typically, you access attributes with dot notation: `person.name` accesses the attribute `name` on the object `person`.
+See also: [class attribute](#class-attribute){.glossary}.
 
 
 ## B
@@ -58,7 +61,9 @@ A value that is either `True` or `False`.
 
 ### bytecode
 
-Lower-level representation of Python programs that the Python interpreter executes to run your programs. When you run a program, your code is first translated (compiled) into bytecode. See the module `dis` for more information.
+Lower-level representation of Python programs that the Python interpreter executes to run your programs.
+When you run a program, your code is first translated (compiled) into bytecode.
+See the module `dis` for more information.
 
 
 ## C
@@ -73,7 +78,7 @@ You can create your own callable objects by defining `__call__` in the class.
 
 A piece of code that defines a “blueprint” to create objects of that type.
 The class defines the information each individual instance holds (the attributes) and the operations you can perform on them (the methods).
-See also: attribute, method.
+See also: [attribute](#attribute){.glossary}, [method](#method){.glossary}.
 
 ### class attribute
 
@@ -81,32 +86,42 @@ An attribute that is defined directly on the class and not on the instances.
 
 ### currying
 
-A technique from functional programming in which arguments can be passed to functions one at a time. In a sense, it’s the ability to pre-apply some arguments of a function, creating another function that expects the remaining arguments.
+A technique from functional programming in which arguments can be passed to functions one at a time.
+In a sense, it’s the ability to pre-apply some arguments of a function, creating another function that expects the remaining arguments.
 
 
 ## D
 
 ### decorator
 
-Generally, a higher-order function that adds useful functionality to a function, when that functionality is unrelated to the original purpose of the function. For example, `functools.cache` is a decorator that adds caching — a useful functionality— to functions. A decorator can be an arbitrary callable, and not just a function, and it can be applied to classes as well as functions.
+Generally, a higher-order function that adds useful functionality to a function, when that functionality is unrelated to the original purpose of the function.
+For example, `functools.cache` is a decorator that adds caching — a useful functionality — to functions.
+A decorator can be an arbitrary callable, and not just a function, and it can be applied to classes as well as functions.
 
 ### docstring
 
-Short for “documentation string”. A triple-quoted string that provides documentation for an object of interest. Docstrings are defined as regular triple-quoted strings that Python interprets as docstrings when placed immediately below a definition, e.g., immediately below the signature of a function.
+Short for “documentation string”.
+A string that provides documentation for an object of interest.
+Docstrings are often defined as triple-quoted strings that Python interprets as docstrings when placed immediately below a definition, e.g., immediately below the signature of a function.
 
 
 ## E
 
 ### expression
 
-A piece of code that evaluates to a concrete value. Not to be confused with a statement. Examples of expressions include arithmetic operations, comparisons, literals of the built-in types, conditional expressions, and list comprehensions. Examples of statements, which are not expressions, include assignments, conditional statements (`if`/`elif`/`else`), and function or class definitions with `def`/`class`. See also: statement.
+A piece of code that evaluates to a concrete value.
+Not to be confused with a statement.
+Examples of expressions include arithmetic operations, comparisons, literals of the built-in types, conditional expressions, and list comprehensions.
+Examples of statements, which are not expressions, include assignments, conditional statements (`if`/`elif`/`else`), and function or class definitions with `def`/`class`.
+See also: [statement](#statement){.glossary}.
 
 
 ## F
 
 ### functional programming
 
-A programming paradigm that favours the use of pure functions, composability, stateless programs, higher-order functions, and more. Other ideas typically associated with functional programming include recursion, point-free programming, and currying.
+A programming paradigm that favours the use of pure functions, composability, stateless programs, higher-order functions, and more.
+Other ideas typically associated with functional programming include recursion, point-free programming, and [currying](#currying){.glossary}.
 
 
 ## G
