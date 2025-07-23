@@ -1,5 +1,7 @@
 # Python glossary
 
+[Add a new entry to the glossary][edit-glossary]!
+
 ## Index
 
 - A
@@ -8,6 +10,7 @@
   - [attribute](#attribute)
 - B
   - [base class](#base-class)
+  - [Boolean](#boolean)
   - [bytecode](#bytecode)
 - C
   - [callable](#callable)
@@ -24,6 +27,8 @@
   - [global (variable)](#global-variable)
 - L
   - [literal](#literal)
+- P
+  - [predicate function](#predicate-function)
 
 
 ## A
@@ -47,6 +52,10 @@ A variable that is associated with an object. Typically, you access attributes w
 
 The base class, or base classes, of a class `C`, are all the classes that the class `C` inherits from.
 
+### Boolean
+
+A value that is either `True` or `False`.
+
 ### bytecode
 
 Lower-level representation of Python programs that the Python interpreter executes to run your programs. When you run a program, your code is first translated (compiled) into bytecode. See the module `dis` for more information.
@@ -56,11 +65,15 @@ Lower-level representation of Python programs that the Python interpreter execut
 
 ### callable
 
-An object that behaves like a function, in the sense that you can use parenthesis `()` to trigger some behaviour of that object. Functions and classes are the most common callables. You can create your own callable objects by defining `__call__` in the class.
+An object that behaves like a function, in the sense that you can use parenthesis `()` to trigger some behaviour of that object.
+Functions and classes are the most common callables.
+You can create your own callable objects by defining `__call__` in the class.
 
 ### class
 
-A piece of code that defines a “blueprint” to create objects of that type. The class defines the information each individual instance holds (the attributes) and the operations you can perform on them (the methods). See also: attribute, method.
+A piece of code that defines a “blueprint” to create objects of that type.
+The class defines the information each individual instance holds (the attributes) and the operations you can perform on them (the methods).
+See also: attribute, method.
 
 ### class attribute
 
@@ -100,11 +113,27 @@ A programming paradigm that favours the use of pure functions, composability, st
 
 ### global (variable)
 
-A variable or value that is defined in the outer scope of a file, and is therefore accessible from within all functions in that file. Usage of global variables is typically frowned upon unless when to define global constants, which are then defined in all uppercase variables, e.g., `DEFAULT_SEARCH_ENGINE = "google"`.
+A variable or value that is defined in the outer scope of a file, and is therefore accessible from within all functions in that file.
+Usage of global variables is typically frowned upon unless when to define global constants, which are then defined in all uppercase variables, e.g., `DEFAULT_SEARCH_ENGINE = "google"`.
 
 
 ## L
 
 ### literal
 
-A piece of code that spells out a value of a built-in type. For example, `"Hello, world!"` is a string literal, `12.34` is a float literal, and `[True, {}]` is a list literal with two other literals inside.
+A piece of code that spells out a value of a built-in type.
+For example, `"Hello, world!"` is a string literal, `12.34` is a float literal, and `[True, {}]` is a list literal with two other literals inside.
+
+
+## P
+
+### predicate function
+
+A function that returns a Boolean value.
+You can think of a predicate function `p(arg1, ...)` as a function that checks the value of a condition.
+
+[Add a new entry to the glossary][edit-glossary]!
+
+
+
+[edit-glossary]: https://github.com/mathspp/mathspp/edit/master/pages/python-glossary/default.md
