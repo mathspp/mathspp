@@ -8,6 +8,9 @@
         {% endif %}
         {% include 'partials/blog/date.html.twig' %}
         {% include 'partials/blog/taxonomy.html.twig' %}
+        {% if page.updated %}
+            {% include 'partials/blog/last-edited.html.twig' %}
+        {% endif %}
     </div>
 {% endif %}
     <div class="e-content">
