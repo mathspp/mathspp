@@ -1,6 +1,13 @@
 ## Past tips
 
 <ol reversed>
+    <li>Filtering Truthy values</li>
+    <li>Readable object names</li>
+    <li>Custom containment checks</li>
+    <li>Match word boundaries</li>
+    <li>Common <code>__hash__</code> implementation</li>
+    <li>Docstring <code>__doc__</code> attribute</li>
+    <li>Dynamic width string formatting</li>
     <li>Non-local variables</li>
     <li>Temporary directories</li>
     <li>Timestamp file names</li>
