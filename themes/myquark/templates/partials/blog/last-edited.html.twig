@@ -1,4 +1,4 @@
-{% set modified = header_var("updated")|defined(page.header.modified_date) %}
+{% set modified = header_var("updated")|defined(page.modifiedDate()) %}
 <span class="blog-date">
     <time class="dt-published" datetime="{{ modified|date("c") }}">
         , last edited <i class="fa fa-eraser"></i> {{ modified|date(system.pages.dateformat.short) }}
