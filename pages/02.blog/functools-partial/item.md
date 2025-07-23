@@ -365,6 +365,7 @@ As an exercise, use each one of these `partial` objects.
 | `reduce` | `partial(reduce, operator.or_)` | `any` built-in[^4] |
 | `range` | `partial(range, 1)` | Natural counting |
 | `enumerate` | `partial(enumerate, start=1)` | Natural enumeration |
+| `filter` | `partial(filter, None)` | Skip Falsy values |
 
 
 If you come up with other interesting examples of `partial`, feel free to comment them below or to email me and I might add them here!
