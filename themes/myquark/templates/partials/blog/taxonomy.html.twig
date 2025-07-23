@@ -1,6 +1,6 @@
 {% if page.taxonomy.tag %}
 <span class="tags">
-    {% for tag in page.taxonomy.tag %}
+    {% for tag in page.taxonomy.tag|sort %}
     <a class="label label-rounded {{ label_style ?: 'label-secondary' }} p-category" href="/blog/tags/{{ tag }}">{{ tag }}</a>
     {% endfor %}
 </span>
