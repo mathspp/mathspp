@@ -13,7 +13,7 @@ For these two characters, the default “word characters” are alphanumeric cha
 
 By combining `\b` and `\B` at the beginning or end of a pattern, you get to match standalone words, prefixes, suffixes, and infixes!
 
-The table below shows some examples of sentences that all contain the substring `"legal"`.
+The table below shows some examples of sentences that all contain the substring `"legal"` along the rows.
 The columns show whether different patterns that use the special characters `\b` and `\B` would match against those sentences.
 
 | | `r"legal"` | `r"\blegal\b"` | `r"\blegal\B"` | `r"\Blegal\b"` | `r"\Blegal\B"` |
