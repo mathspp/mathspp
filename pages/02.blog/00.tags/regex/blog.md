@@ -28,8 +28,8 @@ title: "Regex blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">5</th>
-            <th style="text-align: center;">1,907</th>
+            <th style="text-align: center;">6</th>
+            <th style="text-align: center;">2,146</th>
             <th style="text-align: center;">156</th>
         </tr>
     </thead>

@@ -5855,8 +5855,12 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/128.matching-prefixes-and-suffixes-with-regex": {
-    "timestamp": 1753280926.6774874,
-    "tags": [],
+    "timestamp": 1753282191.1481423,
+    "tags": [
+      "regex",
+      "programming",
+      "python"
+    ],
     "stats": {
       "articles": 1,
       "code_snippets": 0,

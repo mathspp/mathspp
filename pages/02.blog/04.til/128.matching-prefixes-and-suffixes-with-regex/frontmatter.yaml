@@ -11,6 +11,9 @@ routes:
 slug: "matching-prefixes-and-suffixes-with-regex"
 taxonomy:
     category: [blogpost, til]
-    tag: []
+    tag:
+      - regex
+      - programming
+      - python
 title: "TIL #128 – Matching prefixes and suffixes with regex"
 visible: false

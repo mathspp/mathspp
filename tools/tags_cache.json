@@ -24,16 +24,16 @@
     "words": 35212
   },
   "programming": {
-    "articles": 303,
+    "articles": 304,
     "code_snippets": 3762,
     "loc": 36635,
-    "words": 363245
+    "words": 363484
   },
   "python": {
-    "articles": 293,
+    "articles": 294,
     "code_snippets": 3638,
     "loc": 35508,
-    "words": 355162
+    "words": 355401
   },
   "algorithms": {
     "articles": 25,
@@ -402,10 +402,10 @@
     "words": 7869
   },
   "regex": {
-    "articles": 5,
+    "articles": 6,
     "code_snippets": 17,
     "loc": 156,
-    "words": 1907
+    "words": 2146
   },
   "random walks": {
     "articles": 1,
