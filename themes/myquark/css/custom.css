@@ -672,7 +672,7 @@ a.glossary::after {
     /* Space between text and icon */
     font-size: 0.8em;
     /* Adjust icon size if needed */
-    color: var(--bl);
+    color: var(--accent-2);
     /* Optional: set the icon color */
     vertical-align: middle;
     /* Align the icon with the text */
