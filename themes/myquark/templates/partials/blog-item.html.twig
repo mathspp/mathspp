@@ -7,7 +7,7 @@
         <h3 >{{ page.header.subtitle }}</h3>
         {% endif %}
         {% include 'partials/blog/date.html.twig' %}
-        {% if page.header.updated or page.modified() > page.date() %}
+        {% if page.header.updated %}
             {% include 'partials/blog/last-edited.html.twig' %}
         {% endif %}
         {% include 'partials/blog/taxonomy.html.twig' %}
