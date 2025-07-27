@@ -10,6 +10,7 @@ taxonomy:
     category:
         - blogpost
     tag:
+      - conferences
       - opinion
       - python
 title: PyCon Portugal 2025 programme mafia
