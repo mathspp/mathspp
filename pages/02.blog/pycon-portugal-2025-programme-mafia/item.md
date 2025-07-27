@@ -1,4 +1,4 @@
-The PyCon Portugal 2025 programme appears to be dominated by a mafia of a few speakerrs... Let me explain!
+The PyCon Portugal 2025 programme appears to be dominated by a mafia of a few speakers... Let me explain!
 
 ===
 
@@ -101,4 +101,4 @@ For the upcoming years, I will try to do a couple of things differently and hope
 
 With that said, I hope to see you next year, at PyCon Portugal 2026, in a location yet to be announced!
 
-![Selfie showing, from left to right, Rodrigo, Cristián, Maria José, Pablo, and Anže, around a circular table, waiting for dinner.](_mafia.webp "From left to right, Rodrigo, Cristián, Maria José, Pablo, and Anže.")
+![Selfie showing, from left to right, Rodrigo, Cristián, Maria José, Pablo, and Anže, around a circular table, waiting for dinner.](_mafia.webp "From left to right, Rodrigo, Cristián, Maria José, Pablo, and Anže, part of the PyCon PT programme mafia.")
