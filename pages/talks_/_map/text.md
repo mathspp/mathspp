@@ -1188,6 +1188,21 @@
 <title>Talk “A tour of the module itertools” @ EuroPython 2025</title>
 </g>
 
+<g>
+<use href="#pin" class="map-pin talk-pin" x="934" y="230" />
+<title>Talk “A tour of the module itertools” @ PyCon Portugal 2025</title>
+</g>
+
+<g>
+<use href="#pin" class="map-pin talk-pin" x="936" y="232" />
+<title>Tutorial “The Pokémon trainer's guide to Polars” @ PyCon Portugal 2025</title>
+</g>
+
+<g>
+<use href="#pin" class="map-pin talk-pin" x="932" y="235" />
+<title>Tutorial “Advanced decorators – classes &amp; decorators” @ PyCon Portugal 2025</title>
+</g>
+
 </svg>
 
 <script src="https://unpkg.com/@popperjs/core@2"></script>

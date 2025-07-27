@@ -5,6 +5,7 @@ Whenever possible, I include a link to the original session page, to the recordi
 
 | Date | Conference | Talk title | Watch | Reference |
 | :- | :- | :- | :- | :- |
+| 24-07-2025 | PyCon Portugal 2025 | [A tour of the module `itertools`](https://pretalx.evolutio.pt/pycon-portugal-2025/talk/GLYSA7/) | TBA | [Blog](https://mathspp.com/blog/module-itertools-overview) |
 | 17-07-2025 | EuroPython 2025 | [A tour of the module `itertools`](https://ep2025.europython.eu/session/a-tour-of-the-module-itertools) | TBA | [Blog article](https://mathspp.com/blog/module-itertools-overview) |
 | 31-05-2025 | PyCon Italia 2025 | [A tour of the module `itertools`](https://2025.pycon.it/en/event/a-tour-of-the-module-itertools) | TBA | [Blog article](https://mathspp.com/blog/module-itertools-overview) |
 | 30-05-2025 | PyCon Italia 2025 | [Dipping my toes in metaprogramming](https://2025.pycon.it/en/event/dipping-my-toes-in-metaprogramming) | TBA | [Blog article](https://mathspp.com/blog/dipping-my-toes-in-metaprogramming) |

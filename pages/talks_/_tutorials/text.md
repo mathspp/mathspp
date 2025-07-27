@@ -5,6 +5,8 @@ Whenever possible, I include a link to the original session page and to the main
 
 | Date | Conference | Tutorial title | Reference |
 | :- | :- | :- | :- |
+| 26-07-2025 | PyCon Portugal 2025 | [The Pokémon trainer's guide to Polars](https://pretalx.evolutio.pt/pycon-portugal-2025/talk/HAD3VX/) | - | - |
+| 26-07-2025 | PyCon Portugal 2025 | [Advanced decorators – decorators & classes](https://pretalx.evolutio.pt/pycon-portugal-2025/talk/EMWGJK/) | - | [Online course](https://decorators.mathspp.com) |
 | 14-07-2025 | EuroPython 2025 | [Mastering decorators](https://ep2025.europython.eu/session/mastering-decorators-the-cherry-on-top-of-your-functions) | [Online course](https://decorators.mathspp.com) |
 | 15-05-2025 | PyCon US 2025 | [Reimplementing the module `itertools` for fun & profit](https://us.pycon.org/2025/schedule/presentation/93/) | [“The little book of `itertools`”](https://mathspp.com/books/the-little-book-of-itertools) |
 | 08-07-2024 | EuroPython 2024 | [Reinventing the `itertools` wheel for fun and profit](https://ep2024.europython.eu/session/reinventing-the-itertools-wheel-for-fun-and-profit) | [“The little book of `itertools`”](https://mathspp.com/books/the-little-book-of-itertools) |
