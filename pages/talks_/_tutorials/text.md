@@ -1,7 +1,7 @@
 ## ✏️ Tutorials
 
 This table lists the tutorials I've given at Python conferences and meetups.
-Whenever possible, I include a link to the original session page and to the main reference I used when creating the talk.
+You can also find links to the written references, when available.
 
 | Date | Conference | Tutorial title | Reference |
 | :- | :- | :- | :- |

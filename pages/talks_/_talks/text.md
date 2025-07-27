@@ -1,7 +1,7 @@
 ## 🎙️ Talks
 
 This table lists the talks I've given at Python conferences and meetups.
-Whenever possible, I include a link to the original session page, to the recording of the talk, and to the main reference I used when creating the talk.
+You can also find links to the recording or written references, when available.
 
 | Date | Conference | Talk title | Watch | Reference |
 | :- | :- | :- | :- | :- |
