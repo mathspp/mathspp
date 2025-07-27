@@ -28,8 +28,8 @@ title: "Opinion blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">7</th>
-            <th style="text-align: center;">11,944</th>
+            <th style="text-align: center;">8</th>
+            <th style="text-align: center;">13,009</th>
             <th style="text-align: center;">368</th>
         </tr>
     </thead>
