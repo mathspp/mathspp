@@ -6,7 +6,7 @@ I spend hours distilling the patterns and idioms they use, so that I can share t
 You can get access to that distilled knowledge, in bite-sized drops of knowledge, without the fuss:
 
 <div style="display:flex; justify-content:center;">
-<a href="https://gumroad.com/l/python-drops?wanted=true" target="_blank" class="cta-btn btn" style="margin: 0 .3em 0 .3em;">Buy ($12)</a>
+<a href="https://gumroad.com/l/python-drops?wanted=true" target="_blank" class="cta-btn btn" style="margin: 0 .3em 0 .3em;">Buy ($15)</a>
 </div>
 <br />
 

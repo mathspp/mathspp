@@ -2,7 +2,9 @@
 
 <div style="display:flex; justify-content:center;">
 <a onclick="return false;" href="" target="_blank" class="cta-btn btn" style="margin: 0 .3em 0 .3em; text-decoration: line-through">Buy ($9)</a>
-<a href="https://gumroad.com/l/python-drops?wanted=true" target="_blank" class="cta-btn btn" style="margin: 0 .3em 0 .3em;">Buy ($12)</a>
+<div style="display:flex; justify-content:center;">
+<a onclick="return false;" href="" target="_blank" class="cta-btn btn" style="margin: 0 .3em 0 .3em; text-decoration: line-through">Buy ($12)</a>
+<a href="https://gumroad.com/l/python-drops?wanted=true" target="_blank" class="cta-btn btn" style="margin: 0 .3em 0 .3em;">Buy ($15)</a>
 </div>
 <br />
 
