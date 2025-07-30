@@ -8,6 +8,7 @@
 </div>
 <br />
 
+
  - **Instant download** – e-book in PDF & EPUB formats.
  - **Bonus PDF** – all diagrams compiled into a set of flashcards.
  - **Free updates** – the book is updated with new tips every two weeks, which makes it more expensive.
