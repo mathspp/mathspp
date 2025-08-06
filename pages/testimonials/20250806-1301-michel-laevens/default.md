@@ -1,5 +1,5 @@
 ---
-company_and_title: <a href="/books/python-drops">Python drops</a> reader
+company_and_title: <a href="/books/python-drops">Python drops book</a> reader
 date: "2025-08-06 13:01"
 name: Michel Laevens
 # link:
