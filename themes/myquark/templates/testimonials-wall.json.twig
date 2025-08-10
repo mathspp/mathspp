@@ -1,0 +1,32 @@
+{# limit/offset with sensible defaults #}
+{% set limit  = (uri.query('limit')  ?: 10)|int %}
+{% set offset = (uri.query('offset') ?: 0)|int %}
+
+{# Optional tag filtering: ?tags=tag1,tag2 #}
+{% set query_tags_str = uri.query('tags')|default('') %}
+{% set query_tags = query_tags_str ? query_tags_str|split(',') : [] %}
+
+{# If this page also has header review-tags, prefer those unless the request explicitly passed ?tags=... #}
+{% set header_tags = header_var("review-tags") | defined([]) %}
+{% set effective_tags = query_tags|length > 0 ? query_tags : header_tags %}
+
+{# Build collection matching the page templates #}
+{% if effective_tags|length > 0 %}
+  {% set all = taxonomy.findTaxonomy({"category": "review"})
+    | filter(p => (p.taxonomy()["review-tag"]|default([])) | filter(tag => tag in effective_tags) | length > 0)
+    | sort | reverse %}
+{% else %}
+  {% set all = taxonomy.findTaxonomy({"category": "review"}) | sort | reverse %}
+{% endif %}
+
+{% set slice = all.slice(offset, limit) %}
+{% set has_more = (offset + limit) < (all|length) %}
+
+{# Render HTML chunk via your existing card partial #}
+{% set html %}
+  {% for review in slice %}
+    {% include 'partials/review-card.html.twig' with { review: review } %}
+  {% endfor %}
+{% endset %}
+
+{{ { html: html, has_more: has_more }|json_encode|raw }}
