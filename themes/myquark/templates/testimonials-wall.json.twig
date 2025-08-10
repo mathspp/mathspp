@@ -2,6 +2,10 @@
 {% set limit  = (uri.query('limit')  ?: 10)|int %}
 {% set offset = (uri.query('offset') ?: 0)|int %}
 
+{# TEMP for debugging #}
+{{ {seen_limit: uri.query('limit'), seen_offset: uri.query('offset')}|json_encode|raw }}
+
+
 {# Optional tag filtering: ?tags=tag1,tag2 #}
 {% set query_tags_str = uri.query('tags')|default('') %}
 {% set query_tags = query_tags_str ? query_tags_str|split(',') : [] %}
