@@ -8,5 +8,6 @@
 {# Your dynamic payload here #}
 {{ {
   "now": date().timestamp,
-  "status": "ok"
+  "status": "ok",
+  "limit": uri.param("limit")
 }|json_encode|raw }}
