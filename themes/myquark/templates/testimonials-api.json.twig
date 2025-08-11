@@ -43,9 +43,7 @@
   total: total,
   offset: offset,
   limit: limit,
-  has_more: (offset + returned) < total,
-  time: date().timestamp,
-  stuff: uri.query('offset')
+  has_more: (offset + returned) < total
 } %}
 
 {# ---- output JSON -------------------------------------------------------- #}
