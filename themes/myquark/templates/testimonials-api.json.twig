@@ -1,0 +1,47 @@
+{# Ensure JSON output #}
+{% set headers = { 'Content-Type': 'application/json; charset=utf-8' } %}
+{% do grav.response.headers.set('Content-Type', headers['Content-Type']) %}
+
+{# ---- read & sanitize query params -------------------------------------- #}
+{% set limit  = (uri.param('limit')  | default(12)) | int %}
+{% set offset = (uri.param('offset') | default(0))  | int %}
+{% if limit < 1 %}{% set limit = 1 %}{% endif %}
+{% if limit > 100 %}{% set limit = 100 %}{% endif %}
+{% if offset < 0 %}{% set offset = 0 %}{% endif %}
+
+{# Accept comma-separated review-tag list in query #}
+{% set tags_csv = uri.param('review-tag') | default('') %}
+{% set filter_tags = tags_csv ? tags_csv|split(',')|map(t => t|trim)|filter(t => t|length > 0) : [] %}
+
+{# ---- build filtered collection ----------------------------------------- #}
+{% set all = taxonomy.findTaxonomy({'category': 'review'}) %}
+{% if filter_tags|length > 0 %}
+  {% set all = all
+    | filter(p => (p.taxonomy()['review-tag'] ?? []) | filter(t => t in filter_tags) | length > 0)
+  %}
+{% endif %}
+{% set all = all | sort | reverse %}
+{% set total = all|length %}
+
+{# ---- slice the requested window ---------------------------------------- #}
+{% set batch = all | slice(offset, limit) %}
+{% set returned = batch|length %}
+
+{# ---- render each card into HTML strings -------------------------------- #}
+{% set items = [] %}
+{% for review in batch %}
+  {% set html %}
+    {% include 'partials/review-card.html.twig' with { review: review } %}
+  {% endset %}
+  {% set items = items|merge([ html ]) %}
+{% endfor %}
+
+{# ---- response payload --------------------------------------------------- #}
+{
+  "items": {{ items|json_encode(constant('JSON_UNESCAPED_SLASHES'))|raw }},
+  "count": {{ returned }},
+  "total": {{ total }},
+  "offset": {{ offset }},
+  "limit": {{ limit }},
+  "has_more": {{ (offset + returned) < total ? 'true' : 'false' }}
+}
