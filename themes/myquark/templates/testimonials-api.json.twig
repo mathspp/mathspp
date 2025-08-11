@@ -36,12 +36,15 @@
   {% set items = items|merge([ html ]) %}
 {% endfor %}
 
-{# ---- response payload --------------------------------------------------- #}
-{{ {
-  "items": {{ items|json_encode(constant('JSON_UNESCAPED_SLASHES'))|raw }},
-  "count": {{ returned }},
-  "total": {{ total }},
-  "offset": {{ offset }},
-  "limit": {{ limit }},
-  "has_more": {{ (offset + returned) < total ? 'true' : 'false' }}
-}|json_encode|raw }}
+{# ---- build response object --------------------------------------------- #}
+{% set payload = {
+  items: items,
+  count: returned,
+  total: total,
+  offset: offset,
+  limit: limit,
+  has_more: (offset + returned) < total
+} %}
+
+{# ---- output JSON -------------------------------------------------------- #}
+{{ payload|json_encode|raw }}
