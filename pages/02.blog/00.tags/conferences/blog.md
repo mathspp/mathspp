@@ -29,7 +29,7 @@ title: "Conferences blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">4</th>
-            <th style="text-align: center;">5,361</th>
+            <th style="text-align: center;">8,111</th>
             <th style="text-align: center;">5</th>
         </tr>
     </thead>
