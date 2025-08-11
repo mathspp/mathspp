@@ -1,0 +1,12 @@
+{# user/themes/yourtheme/templates/json.json.twig #}
+{% do header('Content-Type', 'application/json; charset=utf-8') %}
+{# Strong no-cache directives #}
+{% do header('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0') %}
+{% do header('Pragma', 'no-cache') %}
+{% do header('Expires', '0') %}
+
+{# Your dynamic payload here #}
+{{ {
+  "now": date().timestamp,
+  "status": "ok"
+}|json_encode|raw }}
