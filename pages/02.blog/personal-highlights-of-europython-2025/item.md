@@ -10,7 +10,8 @@ The conference is genuinely fun, the community is very welcoming, and the organi
 
 ![A picture of the Prague Congress Centre at the end of a foot bridge.](_venue.webp "The EuroPython 2023, 2024, and 2025, venue.")
 
-Walking up to the venue on the first day to check-in and get your badge is a really joyful feeling, and if you combine that with the fact that EuroPython 2023, 2024, and 2025, were in the same venue/city, and you get this warm fuzzy feeling of familiarity.
+Walking up to the venue on the first day to check-in and get your badge is a really joyful feeling.
+Combined that with the fact that EuroPython 2023, 2024, and 2025, were in the same venue/city, I got this warm fuzzy feeling of familiarity as I arrived on Monday morning.
 
 
 ## Badge stickers
@@ -20,11 +21,11 @@ But also, to provide useful information to others meeting you for the first time
 
 ![A picture of my EuroPython 2025 badge. In it, you can read my name (Rodrigo Girão Serrão) and affiliation (mathspp.com), but custom stickers provide further information, like my pronouns (he/him), the fact that I'm happy to hug friends, the fact that I have a tutorial, I'm an EuroPython organiser, and I'm participating in the snacks exchange.](_badge.webp "My badge with some customisation stickers.")
 
-This year, EuroPython prepared badges with dedicated spots to paste stickers and they also created a bunch of useful informational stickers that all had the same shape.
+This year, EuroPython prepared badges with dedicated spots to put stickers and they also created a bunch of useful informational stickers that all had the same shape.
 The stickers provided included:
 
  - pronoun stickers for he/him, she/her, and they/them;
- - social interaction indicators for folks who prefer social distancing, elbow bumps, handshakes, and hugs;
+ - social interaction indicators for folks who prefer social distancing, elbow bumps, handshakes, or hugs;
  - speaker and tutor stickers;
  - volunteer and organiser stickers;
  - stickers for core developers;
@@ -59,9 +60,9 @@ This year, I did lots of stuff at the conference:
  - I gave a tutorial and a talk ([more on that below](#speaking-at-europython-2025));
  - organised and co-hosted a [Python language and community quiz](/blog/python-quiz-europython-2025-edition);
  - showed up on stage a couple of times to give info and make announcements;
- - reviewed, selected, and ran, the lightning talks;
+ - reviewed, selected, and ran, the [lightning talks](#poetry-music-and-mascots-at-the-lightning-talks);
  - co-hosted a panel about a Python documentary; and
- - co-organised the sprints weekend.
+ - co-organised the [sprints weekend](#sprints-weekend).
 
 All of this work[^1] had some interesting consequences...
 
@@ -80,7 +81,7 @@ There are 100+ organisers and on-site volunteers that make the conference happen
 I got some visibility because I was on stage a couple of times, and I think that's why people thanked me explicitly, but there are so many folks who devoted so much of their time and energy to the conference...
 Even as I'm writing this, 4 weeks _after_ the conference, there are many volunteers still hard at work processing financial aid refunds, working on publishing the talk videos, and more.
 
-Next year, you should also volunteer at EuroPython 2025!
+Next year, you should also volunteer!
 
 
 ## Speaking at EuroPython 2025
@@ -89,14 +90,13 @@ This year I also gave a tutorial and a talk at the conference.
 
 ![A picture taken from the back of a full room with people at their computers attending my decorators tutorial.](_tutorial.webp "The room for my decorators tutorial was packed!")
 
-My [decorators tutorial](https://decorators.mathspp.com) was scheduled at the same time as some other very interesting tutorials, some of them by speakers who already have some reputation, so I was afraid I wouldn't have a lot of participants.
+My [decorators tutorial](https://decorators.mathspp.com), on Monday afternoon, was scheduled at the same time as some other very interesting tutorials, some of them by speakers who already have some reputation, so I was afraid I wouldn't have a lot of participants.
 I was overjoyed to be wrong, as the room for my tutorial was packed!
 
 After the tutorial I got some brilliant reviews and a couple of participants walked up to me and said they really enjoyed it.
 That made my day.
 
-My tutorial was on Monday afternoon.
-Wednesday night we got a last-minute talk cancellation for 10:30 the next morning, so I happily volunteered to cover that slot with a talk about `itertools`.
+Two days later, Wednesday night, we got a last-minute talk cancellation for 10:30 the next morning, so I happily volunteered to cover that slot with a talk about `itertools`.
 Because it was a last-minute cancellation, and because this year's website had a pretty strong cache policy, it was not easy to let folks know that there would be a different talk happening at 10:30.
 
 In fact, when I got to the room and noticed someone sitting close to the front a full **20 minutes** before the talk, I double-checked with them if they were aware that the talk had been changed.
@@ -129,6 +129,7 @@ Some of my highlights include Moisés's music performance with other musicians s
 
 But my personal favourite this year was a lightning talk that explored the issues with floating-point inaccuracies, and possible solutions, recited as a poem.
 What I find particularly amusing is how Nora, who was a first-time speaker, said she was very nervous but ended up giving such a memorable lightning talk.
+Nora's slides were beautifully illustrated with her main character, Pinocchia, and a handful of animations that played perfectly in sink with the verses that Nora was reciting.
 
 
 ## A tutorial, a talk, and two keynotes
@@ -148,10 +149,11 @@ It's always good to listen to people with strong opinions because they'll make y
 One takeaway for me is that “simple” and “easy” aren't the same thing, and while you should strive for the former, you should be wary of the latter.
 (Watch the talk.)
 
-I also watched to keynotes that resonated a lot with me and from which I learned a lot: Savannah's and Sebastián's.
+I also watched two keynotes that resonated a lot with me and from which I learned a lot: Savannah's and Sebastián's.
 
 Savannah became a Python core developer less than a year ago and she shared part of her story during the keynote.
 I found Savannah's keynote inspiring because she tells us that you can be afraid and _still_ do the thing you're afraid of, and that's how she started contributing to Python.
+Hopefully, this keynote plus another conversation I had with Pablo Galindo Salgado – another core developer – will be the things that pushed me over the edge to start contributing to Python myself.
 
 Sebastián – @tiangolo online, creator of FastAPI, Typer, and more – also shared his story and he shared some lessons he learned about creating software that others enjoy using.
 My main takeaway from his keynote was what he calls the “bus ticket factor”.
@@ -213,11 +215,14 @@ To help with directing folks to the correct locations, I drew a map of the sprin
 
 ![A map of the sprints venue, showing where different projects and events are taking place. The map is very basic but informative.](_sprints_plan.webp "The locations of the different sprints projects.")
 
+As someone remarked, note how the location of the “Arrow” project didn't fit the map, and thus I had to use an arrow to point in the direction of the location of the “Arrow” project.
+
 This year, the sprints were in a different venue from the last two years.
-In the past, we had hosted the sprints at a university and we got different classrooms for the different sprints.
-This time, everything happened in a space that was open.
+In the past, we had hosted the sprints at a university and we got different classrooms for the different sprints projects.
+This time, everything happened in a space that was much more open, split across two levels.
 The overall feedback I got was that people enjoyed it more because it felt more communal, instead of everyone being separated from everyone else.
 
 The sprints venue got quieter and calmer as the weekend passed, as folks progressively left the conference to return to their lives.
 Come Sunday afternoon, I helped pack everything, I kicked people out of the sprints venue, I had dinner with a random group of friendly folks, and suddenly the conference was over!
+
 I can't wait for next year!
