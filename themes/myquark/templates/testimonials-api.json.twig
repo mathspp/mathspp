@@ -43,8 +43,10 @@
   total: total,
   offset: offset,
   limit: limit,
-  has_more: (offset + returned) < total
+  has_more: (offset + returned) < total,
+  time: date().timestamp
 } %}
 
 {# ---- output JSON -------------------------------------------------------- #}
 {{ payload|json_encode|raw }}
+
