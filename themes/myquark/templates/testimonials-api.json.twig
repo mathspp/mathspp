@@ -3,14 +3,14 @@
 {% do grav.response.headers.set('Content-Type', headers['Content-Type']) %}
 
 {# ---- read & sanitize query params -------------------------------------- #}
-{% set limit  = (uri.param('limit')  | default(10)) | int %}
-{% set offset = (uri.param('offset') | default(0))  | int %}
+{% set limit  = (uri.query('limit')  | default(10)) | int %}
+{% set offset = (uri.query('offset') | default(0))  | int %}
 {% if limit < 1 %}{% set limit = 1 %}{% endif %}
 {% if limit > 100 %}{% set limit = 100 %}{% endif %}
 {% if offset < 0 %}{% set offset = 0 %}{% endif %}
 
 {# Accept comma-separated review-tag list in query #}
-{% set tags_csv = uri.param('review-tag') | default('') %}
+{% set tags_csv = uri.query('review-tag') | default('') %}
 {% set filter_tags = tags_csv ? tags_csv|split(',')|map(t => t|trim)|filter(t => t|length > 0) : [] %}
 
 {# ---- build filtered collection ----------------------------------------- #}
