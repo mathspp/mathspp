@@ -3,7 +3,7 @@
 {% do grav.response.headers.set('Content-Type', headers['Content-Type']) %}
 
 {# ---- read & sanitize query params -------------------------------------- #}
-{% set limit  = (uri.param('limit')  | default(12)) | int %}
+{% set limit  = (uri.param('limit')  | default(10)) | int %}
 {% set offset = (uri.param('offset') | default(0))  | int %}
 {% if limit < 1 %}{% set limit = 1 %}{% endif %}
 {% if limit > 100 %}{% set limit = 100 %}{% endif %}
