@@ -9,5 +9,5 @@
 {{ {
   "now": date().timestamp,
   "status": "ok",
-  "limit": uri.param("limit")
+  "limit": uri.query("limit")
 }|json_encode|raw }}
