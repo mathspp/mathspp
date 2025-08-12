@@ -53,7 +53,7 @@
   var btn    = document.getElementById('reviews-load-more');
   var loader = document.getElementById('reviews-loader');
 
-  // Bricklayer
+  // Init Bricklayer
   var bricklayer = new Bricklayer(wall);
 
   if (!btn) return;
@@ -76,6 +76,53 @@
     return tpl.content.firstElementChild;
   }
 
+  function getColumns() {
+    return wall.querySelectorAll('.bricklayer-column');
+  }
+
+  function shortestColumn(columns) {
+    var minCol = null;
+    var minH = Infinity;
+    columns.forEach ? columns.forEach(check) : Array.prototype.forEach.call(columns, check);
+    function check(col) {
+      var h = col.getBoundingClientRect().height;
+      if (h < minH) { minH = h; minCol = col; }
+    }
+    return minCol || wall; // fallback to wall pre-init
+  }
+
+  // Append a single card respecting Bricklayer's columns
+  function appendCard(node) {
+    // Prefer official API if present
+    if (bricklayer && typeof bricklayer.append === 'function') {
+      bricklayer.append(node);
+      return;
+    }
+    // Fallback: manual column placement
+    var cols = getColumns();
+    if (cols.length) {
+      shortestColumn(cols).appendChild(node);
+    } else {
+      // If columns not created yet (edge case), just append to wall
+      wall.appendChild(node);
+    }
+  }
+
+  // Optional: after images load, nudge layout
+  function onImagesLoad(el, cb) {
+    var imgs = el.querySelectorAll('img');
+    if (!imgs.length) { cb(); return; }
+    var remaining = imgs.length;
+    imgs.forEach ? imgs.forEach(doneOrWait) : Array.prototype.forEach.call(imgs, doneOrWait);
+    function doneOrWait(img) {
+      if (img.complete) { if (--remaining === 0) cb(); }
+      else {
+        img.addEventListener('load', function () { if (--remaining === 0) cb(); });
+        img.addEventListener('error', function () { if (--remaining === 0) cb(); });
+      }
+    }
+  }
+
   btn.addEventListener('click', async function () {
     var limit  = parseInt(btn.dataset.limit || '10', 10);
     var offset = parseInt(btn.dataset.offset || '0', 10);
@@ -92,22 +139,40 @@
       if (!res.ok) throw new Error('Failed to load more testimonials');
       const data = await res.json();
 
+      var fragment = document.createDocumentFragment();
+      var appendedCount = 0;
+
       if (Array.isArray(data.items)) {
         data.items.forEach(function (html) {
           var node = htmlStringToNode(html);
           if (node) {
-            wall.appendChild(node);
+            // queue in fragment first (for image load hook), then append to columns
+            fragment.appendChild(node);
+            appendedCount += 1;
           }
         });
-        if (typeof bricklayer.redraw === 'function') {
-          bricklayer.redraw();
-        }
       }
 
-      var added = parseInt(data.count || 0, 10);
-      btn.dataset.offset = String(offset + added);
+      // Wait for images to settle, then distribute items to columns
+      onImagesLoad(fragment, function () {
+        // Move children out of fragment and into columns one by one
+        while (fragment.firstChild) {
+          appendCard(fragment.firstChild);
+        }
+        // Try to trigger a layout pass if API available
+        if (bricklayer && typeof bricklayer.redraw === 'function') {
+          bricklayer.redraw();
+        } else {
+          // Nudge layout by triggering a resize event as a last resort
+          window.dispatchEvent(new Event('resize'));
+        }
+      });
 
-      if (!data.has_more || added === 0) {
+      // Update offset
+      btn.dataset.offset = String(offset + (data.count || appendedCount));
+
+      // Hide button if no more
+      if (!data.has_more || (data.count || appendedCount) === 0) {
         btn.style.display = 'none';
       }
     } catch (err) {
