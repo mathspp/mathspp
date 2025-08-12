@@ -128,8 +128,12 @@ Lightning talks are always one of my favourite sessions of a Python conference, 
 Some of my highlights include Moisés's music performance with other musicians scattered through the audience and an overview of the worst and best Olympic mascots by Emma.
 
 But my personal favourite this year was a lightning talk that explored the issues with floating-point inaccuracies, and possible solutions, recited as a poem.
+The title of the talk was “Pynocchia - Tales of Floating Off by just a... bit”.
+
+![A picture from the EuroPython main stage with a single speaker behind the podium. The slide shows a joyful Pynocchia wooden girl between two snippets of Python code showing two instances of odd behaviour of Python floats.](_nora.webp "Nora presenting “Pynocchia - Tales of Floating Off by just a... bit”.")
+
 What I find particularly amusing is how Nora, who was a first-time speaker, said she was very nervous but ended up giving such a memorable lightning talk.
-Nora's slides were beautifully illustrated with her main character, Pinocchia, and a handful of animations that played perfectly in sink with the verses that Nora was reciting.
+Nora's slides were beautifully illustrated with her main character, Pynocchia, and a handful of animations that played perfectly in sync with the verses that Nora was reciting.
 
 
 ## A tutorial, a talk, and two keynotes
