@@ -1,6 +1,18 @@
 ## Past tips
 
 <ol reversed>
+    <li>Two-dimensional range</li>
+    <li>Type hints that refer to functions</li>
+    <li>Non-greedy regex quantifiers</li>
+    <li>Add typing to decorators</li>
+    <li>Dynamic module attribute look-up</li>
+    <li><code>map</code>'s keyword argument <code>strict</code></li>
+    <li>Custom <code>enum</code> search behaviour</li>
+    <li>Dunder method <code>__missing__</code></li>
+    <li>AST parsing</li>
+    <li>Typing <code>*args</code> and <code>**kwargs</code></li>
+    <li>methods <code>__str__</code> and <code>__repr__</code></li>
+    <li>Pretty-printing nested data structures</li>
     <li>Filtering Truthy values</li>
     <li>Readable object names</li>
     <li>Custom containment checks</li>

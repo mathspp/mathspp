@@ -4,7 +4,7 @@ class: offset-box
 
 ## What you get
 
-### 100+ short, actionable Python tips.
+### 112+ short, actionable Python tips.
 
 ### Ebook with no fluff.
 
