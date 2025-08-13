@@ -20,9 +20,9 @@ Explore the counterintuitive world of probabilities you get into when you flip a
 
 <script>
     class CoinArea {
-        constructor(width, height) {
+        constructor(width, height, angle = 45) {
             this.scene = new THREE.Scene();
-            this.camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
+            this.camera = new THREE.PerspectiveCamera(angle, width / height, 0.1, 1000);
             this.camera.position.z = 10;
 
             this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
@@ -91,8 +91,8 @@ Explore the counterintuitive world of probabilities you get into when you flip a
     }
 
     class Coin {
-        constructor(x = 0) {
-            this.radius = 2;
+        constructor(x = 0, y = 0, radius = 2) {
+            this.radius = radius;
             this.thickness = 0.3;
             this.segments = 64;
 
@@ -100,6 +100,7 @@ Explore the counterintuitive world of probabilities you get into when you flip a
             this.coin = new THREE.Mesh(this.geometry, coinMaterials);
             this.coin.rotation.x = Math.PI / 2;
             this.coin.position.x = x;
+            this.coin.position.y = y;
 
             this.targetRotations = [0, 0, 0];
         }
@@ -167,15 +168,14 @@ Explore the counterintuitive world of probabilities you get into when you flip a
         coinArea1.addCoin(new Coin(0));
         coinArea1.renderScene();
 
-        /*
-        coinArea2 = new CoinArea(400, 200);
+        coinArea2 = new CoinArea(400, 200, 60);
         coinArea2.addToContainer(document.getElementById('container2'));
-
-        coinArea2.addCoin(new Coin(-5));
-        coinArea2.addCoin(new Coin(0));
-        coinArea2.addCoin(new Coin(5));
+        [-5, -2.5, 0, 2.5, 5].forEach((x) => {
+            [-2.5, 0, 2.5].forEach((y) => {
+                coinArea2.addCoin(new Coin(x, y, 1));
+            })
+        })
         coinArea2.renderScene();
-        */
     }
 
     function callback1() {
@@ -216,11 +216,21 @@ Heads or tails?
 <span id="span1_1">Flip the coin above.</span>
 
 
-## What are the odds?
+## Balanced coin flip results
 
-What were the odds of calling the flip above correctly?
+What was the probability that you'd be able to guess the coin flip above correctly?
 If the coin is fair, it's 50%, right?
 That means that the result “heads” is as likely to show up as “tails”.
 
 But wait...
 So far, 100% of the flips resulted in <span id="span1_2">(flip the coin above!)</span>, while 0% of the flips resulted in <span id="span1_3">(flip the coin above!)</span>.
+This seems pretty far from the 50% / 50% split!
+
+That's because you only flipped the coin _once_.
+If you flip the coin a whole lot more, the split of the results between “heads” and “tails” will converge to the expected 50% / 50% split:
+
+
+<div id="interactive2" style="text-align:center">
+<div id="container2"></div>
+<button class="btn" onclick="interactive2(true)">Flip coins</button>
+</div>
