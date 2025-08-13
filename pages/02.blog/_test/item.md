@@ -214,6 +214,11 @@ Explore the counterintuitive world of probabilities you get into when you flip a
                 tails_tally
             )
             tails_tally_el.innerHTML = tails_tally;
+
+            const total_flips = tails_tally + heads_tally;
+            document.getElementById("interactive2_per_heads").innerHTML = (heads_tally / total_flips).toFixed(2);
+            document.getElementById("interactive2_per_tails").innerHTML = (tails_tally / total_flips).toFixed(2);
+            document.getElementById("interactive2_caption").innerHTML = `Tally after ${total_flips} flips.`;
         });
     }
 </script>
@@ -251,9 +256,9 @@ If you flip the coin a whole lot more, the split of the results between “heads
 
 <div id="interactive2" style="text-align:center">
 <div id="container2"></div>
-<button class="btn" onclick="interactive2()">Flip coins</button>
+<button class="btn" onclick="interactive2()">Flip 32 coins</button>
 <table id="interactive2_tally">
-    <caption>Coin flipping results tally.</caption>
+    <caption id="interactive2_caption">Tally after 0 flips.</caption>
     <thead><tr>
         <th>Heads</th>
         <th>Tails</th>
@@ -262,5 +267,9 @@ If you flip the coin a whole lot more, the split of the results between “heads
         <td id="interactive2_tally_heads">0</td>
         <td id="interactive2_tally_tails">0</td>
     </tr></tbody>
+    <tfoot><tr>
+        <td id="interactive2_per_heads">0.00%</td>
+        <td id="interactive2_per_tails">0.00%</td>
+    </tr></tfoot>
 </table>
 </div>
