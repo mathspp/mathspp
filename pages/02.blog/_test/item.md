@@ -210,7 +210,7 @@ Explore the counterintuitive world of probabilities you get into when you flip a
     function interactive1(guess) {
         // Delete the two guess buttons.
         document.querySelectorAll("#interactive1 > button").forEach((el) => el.remove());
-        coinArea1.flipCoins(duration = 1000, callback = (result) => {
+        coinArea1.flipCoins({callback = (result) => {
             result = result[0];
             let result_name = result ? "heads" : "tails";
             let guess_name = guess ? "heads" : "tails";
@@ -227,7 +227,7 @@ Explore the counterintuitive world of probabilities you get into when you flip a
             document.getElementById("interactive2_per_heads").innerHTML = `${(100 * Number(result)).toFixed(2)}%`;
             document.getElementById("interactive2_per_tails").innerHTML = `${(100 * Number(!result)).toFixed(2)}%`;
             document.getElementById("interactive2_caption").innerHTML = `Tally after 1 flip:`;
-        });
+        }});
     }
 
     function interactive2(turns) {
