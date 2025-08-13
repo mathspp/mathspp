@@ -5,17 +5,6 @@ Explore the counterintuitive world of probabilities you get into when you flip a
 <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
 
 <style>
-    body {
-        margin: 0;
-        background: #f0f0f0;
-        font-family: sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-    }
-
     canvas {
         display: block;
     }
