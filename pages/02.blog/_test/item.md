@@ -195,6 +195,13 @@ Explore the counterintuitive world of probabilities you get into when you flip a
 
             document.getElementById("span1_2").innerHTML = result_name;
             document.getElementById("span1_3").innerHTML = (!result) ? "heads" : "tails";
+
+            // Pre-fill table from the next section.
+            document.getElementById("interactive2_tally_heads").innerHTML = Number(result);
+            document.getElementById("interactive2_tally_tails").innerHTML = Number(!result);
+            document.getElementById("interactive2_per_heads").innerHTML = `${Number(result).toFixed(2)}%`;
+            document.getElementById("interactive2_per_tails").innerHTML = `${Number(!result).toFixed(2)}%`;
+            document.getElementById("interactive2_caption").innerHTML = `Tally after 1 flip:`;
         });
     }
 
@@ -216,9 +223,9 @@ Explore the counterintuitive world of probabilities you get into when you flip a
             tails_tally_el.innerHTML = tails_tally;
 
             const total_flips = tails_tally + heads_tally;
-            document.getElementById("interactive2_per_heads").innerHTML = (heads_tally / total_flips).toFixed(2);
-            document.getElementById("interactive2_per_tails").innerHTML = (tails_tally / total_flips).toFixed(2);
-            document.getElementById("interactive2_caption").innerHTML = `Tally after ${total_flips} flips.`;
+            document.getElementById("interactive2_per_heads").innerHTML = `${(100 * heads_tally / total_flips).toFixed(2)}%`;
+            document.getElementById("interactive2_per_tails").innerHTML = `${(100 * tails_tally / total_flips).toFixed(2)}%`;
+            document.getElementById("interactive2_caption").innerHTML = `Tally after ${total_flips} flips:`;
         });
     }
 </script>
@@ -257,8 +264,11 @@ If you flip the coin a whole lot more, the split of the results between “heads
 <div id="interactive2" style="text-align:center">
 <div id="container2"></div>
 <button class="btn" onclick="interactive2()">Flip 32 coins</button>
+</div>
+
+<span id="interactive2_caption">Tally after 0 flips:</span>
+
 <table id="interactive2_tally">
-    <caption id="interactive2_caption">Tally after 0 flips.</caption>
     <thead><tr>
         <th>Heads</th>
         <th>Tails</th>
@@ -272,4 +282,3 @@ If you flip the coin a whole lot more, the split of the results between “heads
         <td id="interactive2_per_tails">0.00%</td>
     </tr></tfoot>
 </table>
-</div>

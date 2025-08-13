@@ -29,7 +29,7 @@ title: "Probability blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">5</th>
-            <th style="text-align: center;">5,973</th>
+            <th style="text-align: center;">6,002</th>
             
         </tr>
     </thead>
