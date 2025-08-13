@@ -14,10 +14,10 @@ hero_image_url: /user/themes/myquark/images/common_hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 metadata:
     author: Rodrigo Girão Serrão
-    description: "All of the mathspp blog articles about probability."
-    og:description: "All of the mathspp blog articles about probability."
-    og:image: "https://mathspp.com/blog/tags/probability/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/probability/thumbnail.webp"
+    description: "All of the mathspp blog articles about Probability."
+    og:description: "All of the mathspp blog articles about Probability."
+    og:image: "https://mathspp.com/blog/tags/Probability/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/Probability/thumbnail.webp"
 title: "Probability blog articles"
 ---
 
@@ -28,8 +28,8 @@ title: "Probability blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">4</th>
-            <th style="text-align: center;">5,090</th>
+            <th style="text-align: center;">5</th>
+            <th style="text-align: center;">5,623</th>
             
         </tr>
     </thead>

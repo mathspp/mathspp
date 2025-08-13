@@ -5907,5 +5907,19 @@
       "loc": 0,
       "words": 1072
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/_test": {
+    "timestamp": 1755104485.8771653,
+    "tags": [
+      "mathematics",
+      "visualisation",
+      "probability"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 0,
+      "loc": 0,
+      "words": 533
+    }
   }
 }

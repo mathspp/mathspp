@@ -66,10 +66,10 @@
     "words": 6460
   },
   "mathematics": {
-    "articles": 122,
+    "articles": 123,
     "code_snippets": 449,
     "loc": 4449,
-    "words": 108994
+    "words": 109527
   },
   "number theory": {
     "articles": 8,
@@ -144,10 +144,10 @@
     "words": 4601
   },
   "visualisation": {
-    "articles": 16,
+    "articles": 17,
     "code_snippets": 58,
     "loc": 915,
-    "words": 9362
+    "words": 9895
   },
   "data science": {
     "articles": 1,
@@ -324,10 +324,10 @@
     "words": 12279
   },
   "probability": {
-    "articles": 4,
+    "articles": 5,
     "code_snippets": 0,
     "loc": 0,
-    "words": 5090
+    "words": 5623
   },
   "diophantine equations": {
     "articles": 1,
@@ -564,10 +564,10 @@
     "words": 430
   },
   "__all": {
-    "articles": 417,
+    "articles": 418,
     "code_snippets": 3896,
     "loc": 37707,
-    "words": 450032
+    "words": 450565
   },
   "fp": {
     "articles": 3,
