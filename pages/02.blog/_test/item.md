@@ -277,7 +277,7 @@ What do you call?
 
 What was the probability that you'd be able to guess the coin flip above correctly?
 If the coin is fair, it's 50%, right?
-That means that the result <span class="heads"></span> is as likely to show up as “tails”.
+That means that the result <span class="heads"></span> is as likely to show up as <span class="tails" />.
 
 But wait...
 So far, 100% of the flips resulted in <span id="span1_2">(flip the coin above!)</span>, while 0% of the flips resulted in <span id="span1_3">(flip the coin above!)</span>.

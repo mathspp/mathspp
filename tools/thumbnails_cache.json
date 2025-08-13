@@ -69,7 +69,7 @@
     "articles": 123,
     "code_snippets": 449,
     "loc": 4449,
-    "words": 109955
+    "words": 109957
   },
   "number theory": {
     "articles": 8,
@@ -147,7 +147,7 @@
     "articles": 17,
     "code_snippets": 58,
     "loc": 915,
-    "words": 10323
+    "words": 10325
   },
   "data science": {
     "articles": 1,
@@ -327,7 +327,7 @@
     "articles": 5,
     "code_snippets": 0,
     "loc": 0,
-    "words": 6051
+    "words": 6053
   },
   "diophantine equations": {
     "articles": 1,
@@ -567,7 +567,7 @@
     "articles": 418,
     "code_snippets": 3896,
     "loc": 37707,
-    "words": 450993
+    "words": 450995
   },
   "fp": {
     "articles": 3,
