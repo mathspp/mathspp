@@ -170,7 +170,7 @@ Explore the counterintuitive world of probabilities you get into when you flip a
 
         coinArea2 = new CoinArea(400, 200, angle=7, z=100);
         coinArea2.addToContainer(document.getElementById('container2'));
-        [-7.5, -5, -2.5, 0, 2.5, 5, 7.5].forEach((x) => {
+        [-8.75, -6.25, -3.75, -1.25, 1.25, 3.75, 6.25, 8.75].forEach((x) => {
             [-3.75, -1.25, 1.25, 3.75].forEach((y) => {
                 coinArea2.addCoin(new Coin(x, y, 1));
             })
