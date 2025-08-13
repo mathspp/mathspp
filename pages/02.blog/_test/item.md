@@ -232,6 +232,8 @@ Explore the counterintuitive world of probabilities you get into when you flip a
 
     function interactive2(turns) {
         const _duration = Math.round(1000 / turns);
+        if (turns > 10) _duration = 2 * _duration;
+        if (turns > 100) _duration = 2 * _duration;
         let flips_left = turns;
 
         function triggerFlip() {
