@@ -1,5 +1,5 @@
 ---
-title: API test
+title: Testimonials JSON API
 # Turn off Grav page cache for this route
 cache_enable: false
 expires: 0

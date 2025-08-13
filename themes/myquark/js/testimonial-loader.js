@@ -52,7 +52,7 @@ function appendCard(node) {
 
     // Let layout settle, then flip animation class
     requestAnimationFrame(function () {
-        node.classList.add('review-card--visible');
+        node.classList.remove('review-card--incoming');
     });
 }
 
