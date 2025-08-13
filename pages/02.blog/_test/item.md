@@ -233,7 +233,7 @@ Explore the counterintuitive world of probabilities you get into when you flip a
 
     function interactive2(turns) {
         const _duration = Math.round(1000 / turns);
-        for (let i = 0; i < turns; ++i) {
+        for (let i = 0; i < turns; i++) {
             coinArea2.flipCoins(duration = _duration, callback = (results) => {
                 const heads_tally_el = document.getElementById("interactive2_tally_heads");
                 let heads_tally = parseInt(heads_tally_el.innerHTML) || 0;
