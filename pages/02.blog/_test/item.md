@@ -180,7 +180,7 @@ Explore the counterintuitive world of probabilities you get into when you flip a
 
     function callback1() {
         document.getElementById("span1").innerHTML = "Oi.";
-        document.querySelector("#interactive1 > button").remove();
+        document.querySelectorAll("#interactive1 > button").remove();
     }
 
 </script>
