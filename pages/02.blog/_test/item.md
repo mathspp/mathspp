@@ -199,7 +199,22 @@ Explore the counterintuitive world of probabilities you get into when you flip a
     }
 
     function interactive2() {
-        coinArea2.flipCoins();
+        coinArea2.flipCoins((results) => {
+            const heads_tally_el = document.getElementById("interactive2_tally_heads");
+            let heads_tally = parseInt(heads_tally_el.innerHTML) || 0;
+            heads_tally = results.reduce(
+                (acc, result) => acc + result,
+                heads_tally
+            )
+            heads_tally_el.innerHTML = heads_tally;
+            const tails_tally_el = document.getElementById("interactive2_tally_tails");
+            let tails_tally = parseInt(tails_tally_el.innerHTML) || 0;
+            tails_tally = results.reduce(
+                (acc, result) => acc + !result,
+                tails_tally
+            )
+            tails_tally_el.innerHTML = tails_tally;
+        });
     }
 </script>
 
@@ -237,4 +252,15 @@ If you flip the coin a whole lot more, the split of the results between “heads
 <div id="interactive2" style="text-align:center">
 <div id="container2"></div>
 <button class="btn" onclick="interactive2()">Flip coins</button>
+<table id="interactive2_tally">
+    <caption>Coin flipping results tally.</caption>
+    <thead><tr>
+        <th>Heads</th>
+        <th>Tails</th>
+    </tr></thead>
+    <tbody><tr>
+        <td id="interactive2_tally_heads">0</td>
+        <td id="interactive2_tally_tails">0</td>
+    </tr></tbody>
+</table>
 </div>
