@@ -129,8 +129,8 @@ Explore the counterintuitive world of probabilities you get into when you flip a
         }
     }
 
-    headTexture = loader.load('./heads.svg', onTextureLoad);
-    tailTexture = loader.load('./tails.svg', onTextureLoad);
+    headTexture = loader.load('/blog/_test/heads.svg', onTextureLoad);
+    tailTexture = loader.load('/blog/_test/tails.svg', onTextureLoad);
 
     [headTexture, tailTexture].forEach(tex => {
         tex.rotation = Math.PI / 2;
