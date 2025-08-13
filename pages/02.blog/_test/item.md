@@ -184,4 +184,4 @@ Heads or tails?
 
 
 <div id="container1"></div>
-<button onclick="coinArea1.flipCoins()">Flip coin</button>
+<button class="btn" onclick="coinArea1.flipCoins()">Flip coin</button>
