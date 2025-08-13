@@ -17,28 +17,28 @@ Explore the counterintuitive world of probabilities you get into when you flip a
         cursor: pointer;
     }
 
-    .heads::after {
+    .heads::after,
+    .tails::after {
         content: "";
         display: inline-block;
-        width: 1em;
-        height: 2em;
-        background-image: url('/blog/_test/heads.svg');
+        width: 1.2em;
+        height: 1.5em;
         background-size: contain;
         background-repeat: no-repeat;
         margin-left: 0.25em;
         vertical-align: middle;
     }
-
+    .heads::before {
+        content: "Heads";
+    }
+    .heads::after {
+        background-image: url('/blog/_test/heads.svg');
+    }
+    .tails::before {
+        content: "Tails";
+    }
     .tails::after {
-        content: "";
-        display: inline-block;
-        width: 1em;
-        height: 2em;
         background-image: url('/blog/_test/tails.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin-left: 0.25em;
-        vertical-align: middle;
     }
 </style>
 
@@ -261,7 +261,7 @@ Explore the counterintuitive world of probabilities you get into when you flip a
 
 The coin below is a fair coin and I want to flip it.
 What do you call?
-<span class="heads">Heads</span> or tails?
+<span class="heads"></span> or <span class="tails"></span>?
 
 
 <div id="interactive1" style="text-align:center">
@@ -277,7 +277,7 @@ What do you call?
 
 What was the probability that you'd be able to guess the coin flip above correctly?
 If the coin is fair, it's 50%, right?
-That means that the result “heads” is as likely to show up as “tails”.
+That means that the result <span class="heads"></span> is as likely to show up as “tails”.
 
 But wait...
 So far, 100% of the flips resulted in <span id="span1_2">(flip the coin above!)</span>, while 0% of the flips resulted in <span id="span1_3">(flip the coin above!)</span>.
