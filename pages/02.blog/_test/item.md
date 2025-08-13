@@ -210,7 +210,7 @@ Explore the counterintuitive world of probabilities you get into when you flip a
     function interactive1(guess) {
         // Delete the two guess buttons.
         document.querySelectorAll("#interactive1 > button").forEach((el) => el.remove());
-        coinArea1.flipCoins(callback = (result) => {
+        coinArea1.flipCoins(duration = 1000, callback = (result) => {
             result = result[0];
             let result_name = result ? "heads" : "tails";
             let guess_name = guess ? "heads" : "tails";
