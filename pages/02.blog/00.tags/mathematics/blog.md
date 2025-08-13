@@ -29,7 +29,7 @@ title: "Mathematics blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">123</th>
-            <th style="text-align: center;">109,680</th>
+            <th style="text-align: center;">109,683</th>
             <th style="text-align: center;">4,449</th>
         </tr>
     </thead>

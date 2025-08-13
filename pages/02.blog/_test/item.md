@@ -186,6 +186,7 @@ Explore the counterintuitive world of probabilities you get into when you flip a
         // Delete the two guess buttons.
         document.querySelectorAll("#interactive1 > button").forEach((el) => el.remove());
         coinArea1.flipCoins((result) => {
+            result = result[0];
             let result_name = result ? "heads" : "tails";
             let guess_name = guess ? "heads" : "tails";
             let result_span = document.getElementById("span1_1");
