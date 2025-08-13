@@ -7,6 +7,7 @@ Explore the counterintuitive world of probabilities you get into when you flip a
 <style>
     canvas {
         display: block;
+        margin: auto;
     }
 
     button {
