@@ -18,15 +18,27 @@ Explore the counterintuitive world of probabilities you get into when you flip a
     }
 
     .heads::after {
-    content: "";
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    background-image: url('/blog/_test/heads.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: 0.25em;
-    vertical-align: middle;
+        content: "";
+        display: inline-block;
+        width: 1em;
+        height: 2em;
+        background-image: url('/blog/_test/heads.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: 0.25em;
+        vertical-align: middle;
+    }
+
+    .tails::after {
+        content: "";
+        display: inline-block;
+        width: 1em;
+        height: 2em;
+        background-image: url('/blog/_test/tails.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: 0.25em;
+        vertical-align: middle;
     }
 </style>
 
