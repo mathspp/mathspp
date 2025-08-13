@@ -199,8 +199,8 @@ Explore the counterintuitive world of probabilities you get into when you flip a
             // Pre-fill table from the next section.
             document.getElementById("interactive2_tally_heads").innerHTML = Number(result);
             document.getElementById("interactive2_tally_tails").innerHTML = Number(!result);
-            document.getElementById("interactive2_per_heads").innerHTML = `${Number(result).toFixed(2)}%`;
-            document.getElementById("interactive2_per_tails").innerHTML = `${Number(!result).toFixed(2)}%`;
+            document.getElementById("interactive2_per_heads").innerHTML = `${(100 * Number(result)).toFixed(2)}%`;
+            document.getElementById("interactive2_per_tails").innerHTML = `${(100 * Number(!result)).toFixed(2)}%`;
             document.getElementById("interactive2_caption").innerHTML = `Tally after 1 flip:`;
         });
     }
