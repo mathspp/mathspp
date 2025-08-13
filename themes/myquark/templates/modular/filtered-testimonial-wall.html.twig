@@ -37,7 +37,8 @@
                 class="btn"
                 data-limit="{{ limit }}"
                 data-offset="{{ limit }}"
-                data-tags="{{ tags_to_filter|join(',')|e('html_attr') }}">
+                data-tags="{{ tags_to_filter|join(',')|e('html_attr') }}"
+                style="margin-bottom: 1em;">
           Load more
         </button>
         <div id="reviews-loader" class="loading" style="display:none;"></div>
