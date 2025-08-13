@@ -193,7 +193,7 @@ Explore the counterintuitive world of probabilities you get into when you flip a
             else result_span.innerHTML = `Wooops, you called ${guess_name} but got ${result_name}...`;
 
             document.getElementById("span1_2").innerHTML = result_name;
-            document.getElementById("span1_3").innerHTML = !result ? "heads" : "tails";
+            document.getElementById("span1_3").innerHTML = (!result) ? "heads" : "tails";
         });
     }
 </script>
