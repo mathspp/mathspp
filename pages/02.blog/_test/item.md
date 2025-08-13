@@ -219,8 +219,8 @@ Explore the counterintuitive world of probabilities you get into when you flip a
             if (result === guess) result_span.innerHTML = `Good guess, you called ${result_name} correctly!`;
             else result_span.innerHTML = `Wooops, you called ${guess_name} but got ${result_name}...`;
 
-            document.getElementById("span1_2").innerHTML = result_name;
-            document.getElementById("span1_3").innerHTML = (!result) ? "heads" : "tails";
+            document.getElementById("span1_2").innerHTML = 100 * Number(result);
+            document.getElementById("span1_3").innerHTML = 100 * Number(!result);
 
             // Pre-fill table from the next section.
             document.getElementById("interactive2_tally_heads").innerHTML = Number(result);
@@ -261,7 +261,7 @@ Explore the counterintuitive world of probabilities you get into when you flip a
 
 The coin below is a fair coin and I want to flip it.
 What do you call?
-<span class="heads"></span> or <span class="tails"></span>?
+<span class="heads" /> or <span class="tails" />?
 
 
 <div id="interactive1" style="text-align:center">
@@ -277,14 +277,13 @@ What do you call?
 
 What was the probability that you'd be able to guess the coin flip above correctly?
 If the coin is fair, it's 50%, right?
-That means that the result <span class="heads"></span> is as likely to show up as <span class="tails" />.
+That means that the result <span class="heads" /> is as likely to show up as <span class="tails" />.
 
 But wait...
-So far, 100% of the flips resulted in <span id="span1_2">(flip the coin above!)</span>, while 0% of the flips resulted in <span id="span1_3">(flip the coin above!)</span>.
-This seems pretty far from the 50% / 50% split!
+So far, <span id="span1_2">(flip the coin above!)</span>% of the flips resulted in <span class="heads" />, while <span id="span1_3">(flip the coin above!)</span>% of the flips resulted in <span class="tails" />.
 
 That's because you only flipped the coin _once_.
-If you flip the coin a whole lot more, the split of the results between “heads” and “tails” will converge to the expected 50% / 50% split:
+If you flip the coin a whole lot more, the split of the results between <span class="heads" /> and <span class="tails" /> will converge to the expected 50% / 50% split:
 
 
 <div id="interactive2" style="text-align:center">
