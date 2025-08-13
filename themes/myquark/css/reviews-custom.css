@@ -66,3 +66,21 @@
         color: var(--flexoki-white);
     }
 }
+
+/* prevents jank when we adjust scroll instantly */
+html.preserve-scroll-now {
+    scroll-behavior: auto !important;
+}
+
+/* slide-in for new cards; pure transform so no relayout */
+.review-card--incoming {
+    opacity: 0;
+    transform: translateY(12px);
+    will-change: transform, opacity;
+    transition: opacity 200ms ease-out, transform 200ms ease-out;
+}
+
+.review-card--incoming.review-card--visible {
+    opacity: 1;
+    transform: none;
+}

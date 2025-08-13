@@ -92,59 +92,93 @@
 
   // Append a single card respecting Bricklayer's columns
   function appendCard(node) {
+    // Tag incoming node for animation
+    node.classList.add('review-card--incoming');
+
     if (bricklayer && typeof bricklayer.append === 'function') {
       bricklayer.append(node);
-      return;
-    }
-    var cols = getColumns();
-    if (cols.length) {
-      shortestColumn(cols).appendChild(node);
     } else {
-      wall.appendChild(node);
+      var cols = getColumns();
+      if (cols.length) shortestColumn(cols).appendChild(node);
+      else wall.appendChild(node);
     }
+
+    // Let layout settle, then flip animation class
+    requestAnimationFrame(function () {
+      node.classList.add('review-card--visible');
+    });
   }
 
-  // Wait for images inside a container/fragment, then cb
+  // Wait for images in a fragment (or element) to finish (or be cached)
   function onImagesLoad(el, cb) {
     var imgs = el.querySelectorAll ? el.querySelectorAll('img') : [];
     if (!imgs.length) { cb(); return; }
     var remaining = imgs.length;
+    function done() { if (--remaining === 0) cb(); }
     (imgs.forEach ? imgs : Array.prototype.slice.call(imgs)).forEach(function (img) {
-      if (img.complete) { if (--remaining === 0) cb(); }
+      if (img.complete) done();
       else {
-        img.addEventListener('load',  function () { if (--remaining === 0) cb(); });
-        img.addEventListener('error', function () { if (--remaining === 0) cb(); });
+        img.addEventListener('load', done, { once: true });
+        img.addEventListener('error', done, { once: true });
       }
     });
   }
 
-  // Keep the button anchored visually across layout changes
-  function withScrollAnchor(anchorEl, work) {
-    var beforeTop = anchorEl.getBoundingClientRect().top;
-    work(function done() {
-      // wait for layout to settle (one or two frames)
-      requestAnimationFrame(function () {
-        requestAnimationFrame(function () {
-          var afterTop = anchorEl.getBoundingClientRect().top;
-          var delta = afterTop - beforeTop;
-          if (delta !== 0) {
-            window.scrollBy(0, delta);
-          }
-        });
-      });
+  // Find a stable anchor: last fully visible card (or last child of shortest column)
+  function pickAnchor() {
+    var cols = getColumns();
+    var candidates = [];
+    (cols.length ? cols : [wall]).forEach ? cols.forEach(pushLast) : Array.prototype.forEach.call(cols, pushLast);
+    function pushLast(col) {
+      if (!col.lastElementChild) return;
+      candidates.push(col.lastElementChild);
+    }
+    // Prefer the one closest to the bottom but still visible
+    var viewportH = window.innerHeight || document.documentElement.clientHeight;
+    var best = null;
+    var bestBottom = -Infinity;
+    candidates.forEach(function (el) {
+      var r = el.getBoundingClientRect();
+      if (r.top < viewportH && r.bottom > 0) {
+        if (r.bottom > bestBottom) { bestBottom = r.bottom; best = el; }
+      }
+    });
+    return best || candidates[candidates.length - 1] || null;
+  }
+
+  // Run a DOM mutation while preserving the anchor's on-screen position (no flicker)
+  function preserveScrollDuring(mutator) {
+    var anchor = pickAnchor();
+    if (!anchor) { mutator(); return; }
+
+    // Measure before
+    var beforeTop = anchor.getBoundingClientRect().top;
+
+    // Force instant scroll behavior during the operation (avoid CSS smooth)
+    document.documentElement.classList.add('preserve-scroll-now');
+
+    // Mutate DOM
+    mutator();
+
+    // After layout changes, in the same frame adjust scroll by delta
+    requestAnimationFrame(function () {
+      var afterTop = anchor.getBoundingClientRect().top;
+      var delta = afterTop - beforeTop;
+      if (delta !== 0) {
+        window.scrollBy(0, delta);
+      }
+      // Clean up asap
+      document.documentElement.classList.remove('preserve-scroll-now');
     });
   }
 
-  btn.addEventListener('click', async function (ev) {
-    ev.preventDefault();
-
+  btn.addEventListener('click', async function () {
     var limit  = parseInt(btn.dataset.limit || '10', 10);
     var offset = parseInt(btn.dataset.offset || '0', 10);
     var tags   = btn.dataset.tags || '';
 
-    // show a tiny loader without shifting layout (avoid jumps)
     btn.disabled = true;
-    if (loader) loader.style.visibility = 'visible';
+    if (loader) loader.style.display = '';
 
     try {
       const res = await fetch(buildUrl(limit, offset, tags), {
@@ -154,6 +188,7 @@
       if (!res.ok) throw new Error('Failed to load more testimonials');
       const data = await res.json();
 
+      // Prepare nodes in a fragment
       var fragment = document.createDocumentFragment();
       var appendedCount = 0;
 
@@ -167,18 +202,16 @@
         });
       }
 
-      // Anchor scroll at the button while we mutate & reflow
-      withScrollAnchor(btn, function (done) {
-        onImagesLoad(fragment, function () {
-          // Move children out of fragment and into columns one by one
+      // Wait for images in the new nodes (so layout is stable)
+      onImagesLoad(fragment, function () {
+        preserveScrollDuring(function () {
+          // Move children out of fragment and into the Bricklayer columns
           while (fragment.firstChild) {
             appendCard(fragment.firstChild);
           }
-          // Ask Bricklayer to reflow if possible
           if (bricklayer && typeof bricklayer.redraw === 'function') {
             bricklayer.redraw();
           }
-          done();
         });
       });
 
@@ -194,7 +227,7 @@
       btn.textContent = 'Try again';
       btn.disabled = false;
     } finally {
-      if (loader) loader.style.visibility = 'hidden';
+      if (loader) loader.style.display = 'none';
       if (btn && btn.style.display !== 'none') btn.disabled = false;
     }
   });
