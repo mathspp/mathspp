@@ -16,7 +16,21 @@ Explore the counterintuitive world of probabilities you get into when you flip a
         font-size: 1rem;
         cursor: pointer;
     }
+
+    .heads::after {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-image: url('/blog/_test/heads.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 0.25em;
+    vertical-align: middle;
+    }
 </style>
+
+<span class="icon-after">Hello</span>
 
 <script>
     class CoinArea {
@@ -235,7 +249,7 @@ Explore the counterintuitive world of probabilities you get into when you flip a
 
 The coin below is a fair coin and I want to flip it.
 What do you call?
-Heads or tails?
+<span class="heads">Heads</span> or tails?
 
 
 <div id="interactive1" style="text-align:center">
