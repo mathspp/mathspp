@@ -267,9 +267,9 @@ Explore the counterintuitive world of probabilities you get into when you flip a
         triggerFlip();
 
         if (turns == 1) {
-            document.getElementById("interactive2_btn_320").style.display = "block";
+            document.getElementById("interactive2_btn_320").style.visibility = "visible";
         } else if (turns == 10) {
-            document.getElementById("interactive2_btn_3200").style.display = "block";
+            document.getElementById("interactive2_btn_3200").style.visibility = "visible";
         }
     }
 </script>
