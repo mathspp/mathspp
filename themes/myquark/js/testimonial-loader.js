@@ -5,8 +5,6 @@ var loader = document.getElementById('reviews-loader');
 // Init Bricklayer
 var bricklayer = new Bricklayer(wall);
 
-if (!btn) return;
-
 var API_URL = 'https://mathspp.com/api/testimonials.json';
 
 function buildUrl(limit, offset, tagsCSV) {
