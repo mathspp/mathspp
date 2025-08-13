@@ -185,10 +185,15 @@ Explore the counterintuitive world of probabilities you get into when you flip a
     function interactive1(guess) {
         // Delete the two guess buttons.
         document.querySelectorAll("#interactive1 > button").forEach((el) => el.remove());
-        let result_span = document.getElementById("span1");
         coinArea1.flipCoins((result) => {
-            if (result === guess) result_span.innerHTML = "Good guess, you called it correctly!";
-            else result_span.innerHTML = "Wooops, you got it wrong...";
+            let result_name = result ? "heads" : "tails";
+            let guess_name = guess ? "heads" : "tails";
+            let result_span = document.getElementById("span1_1");
+            if (result === guess) result_span.innerHTML = `Good guess, you called ${result_name} correctly!`;
+            else result_span.innerHTML = `Wooops, you called ${guess_name} but got ${result_name}...`;
+
+            document.getElementById("span1_2").innerHTML = result_name;
+            document.getElementById("span1_3").innerHTML = !result ? "heads" : "tails";
         });
     }
 </script>
@@ -207,4 +212,14 @@ Heads or tails?
 <button class="btn" onclick="interactive1(false)">Tails</button>
 </div>
 
-<span id="span1">Flip the coin above.</span>
+<span id="span1_1">Flip the coin above.</span>
+
+
+## What are the odds?
+
+What were the odds of calling the flip above correctly?
+If the coin is fair, it's 50%, right?
+That means that the result “heads” is as likely to show up as “tails”.
+
+But wait...
+So far, 100% of the flips resulted in <span id="span1_2">(flip the coin above!)</span>, while 0% of the flips resulted in <span id="span1_3">(flip the coin above!)</span>.
