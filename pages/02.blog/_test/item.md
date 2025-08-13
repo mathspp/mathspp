@@ -20,10 +20,10 @@ Explore the counterintuitive world of probabilities you get into when you flip a
 
 <script>
     class CoinArea {
-        constructor(width, height, angle = 45) {
+        constructor(width, height, angle = 45, z = 10) {
             this.scene = new THREE.Scene();
             this.camera = new THREE.PerspectiveCamera(angle, width / height, 0.1, 1000);
-            this.camera.position.z = 10;
+            this.camera.position.z = z;
 
             this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
             this.renderer.setSize(width, height);
@@ -168,7 +168,7 @@ Explore the counterintuitive world of probabilities you get into when you flip a
         coinArea1.addCoin(new Coin(0));
         coinArea1.renderScene();
 
-        coinArea2 = new CoinArea(400, 200, 60);
+        coinArea2 = new CoinArea(400, 200, angle=7, z=100);
         coinArea2.addToContainer(document.getElementById('container2'));
         [-7.5, -5, -2.5, 0, 2.5, 5, 7.5].forEach((x) => {
             [-3.75, -1.25, 1.25, 3.75].forEach((y) => {
