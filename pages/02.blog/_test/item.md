@@ -180,9 +180,17 @@ Explore the counterintuitive world of probabilities you get into when you flip a
 
     function callback1() {
         document.getElementById("span1").innerHTML = "Oi.";
-        document.querySelectorAll("#interactive1 > button").remove();
     }
 
+    function interactive1(guess) {
+        // Delete the two guess buttons.
+        document.querySelectorAll("#interactive1 > button").forEach((el) => el.remove());
+        let result_span = document.getElementById("span1");
+        coinArea1.flipCoins((result) => {
+            if (result === guess) result_span.innerHTML = "Good guess, you called it correctly!";
+            else result_span.innerHTML = "Wooops, you got it wrong...";
+        });
+    }
 </script>
 
 
@@ -195,8 +203,8 @@ Heads or tails?
 
 <div id="interactive1" style="text-align:center">
 <div id="container1"></div>
-<button class="btn" onclick="coinArea1.flipCoins(callback1)">Heads</button>
-<button class="btn" onclick="coinArea1.flipCoins(callback1)">Tails</button>
+<button class="btn" onclick="interactive1(true)">Heads</button>
+<button class="btn" onclick="interactive1(false)">Tails</button>
 </div>
 
-<span id="span1"></span>
+<span id="span1">Flip the coin above.</span>
