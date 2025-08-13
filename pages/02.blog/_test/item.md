@@ -307,8 +307,8 @@ If you flip the coin a whole lot more, the split of the results between <span cl
 <div id="interactive2" style="text-align:center">
 <div id="container2"></div>
 <button class="btn" onclick="interactive2(1)">Flip 32 coins</button>
-<button id="interactive2_btn_320" style="display: none;" class="btn" onclick="interactive2(10)">Flip 320 coins</button>
-<button id="interactive2_btn_3200" style="display: none;" class="btn" onclick="interactive2(100)">Flip 3200 coins</button>
+<button id="interactive2_btn_320" style="visibility: hidden;" class="btn" onclick="interactive2(10)">Flip 320 coins</button>
+<button id="interactive2_btn_3200" style="visibility: hidden;" class="btn" onclick="interactive2(100)">Flip 3200 coins</button>
 </div>
 
 <span id="interactive2_caption">Tally after 0 flips:</span>
