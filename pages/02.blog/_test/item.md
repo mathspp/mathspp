@@ -197,6 +197,10 @@ Explore the counterintuitive world of probabilities you get into when you flip a
             document.getElementById("span1_3").innerHTML = (!result) ? "heads" : "tails";
         });
     }
+
+    function interactive2() {
+        coinArea2.flipCoins();
+    }
 </script>
 
 
@@ -232,5 +236,5 @@ If you flip the coin a whole lot more, the split of the results between “heads
 
 <div id="interactive2" style="text-align:center">
 <div id="container2"></div>
-<button class="btn" onclick="interactive2(true)">Flip coins</button>
+<button class="btn" onclick="interactive2()">Flip coins</button>
 </div>
