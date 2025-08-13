@@ -103,7 +103,6 @@ Explore the counterintuitive world of probabilities you get into when you flip a
         }
 
         animationCallback() { // Called when the flip animation is done.
-            console.log(`Flipping done, results were ${this.flipResults}.`)
             if (this.callback) this.callback(this.flipResults);
             this.isAnimating = false;
             this.flipResults = null;
@@ -235,7 +234,10 @@ Explore the counterintuitive world of probabilities you get into when you flip a
         const _duration = Math.round(1000 / turns);
         let flips_left = turns;
 
-        function flipCallback() {
+        function triggerFlip() {
+            if (flips_left <= 0) return;
+
+            flips_left--;
             coinArea2.flipCoins(duration = _duration, callback = (results) => {
                 const heads_tally_el = document.getElementById("interactive2_tally_heads");
                 let heads_tally = parseInt(heads_tally_el.innerHTML) || 0;
@@ -256,13 +258,12 @@ Explore the counterintuitive world of probabilities you get into when you flip a
                 document.getElementById("interactive2_per_heads").innerHTML = `${(100 * heads_tally / total_flips).toFixed(2)}%`;
                 document.getElementById("interactive2_per_tails").innerHTML = `${(100 * tails_tally / total_flips).toFixed(2)}%`;
                 document.getElementById("interactive2_caption").innerHTML = `Tally after ${total_flips} flips:`;
-            });
-            flips_left--;
-            console.log(flips_left);
 
-            if (flips_left > 0) window.requestAnimationFrame(flipCallback);
+                triggerFlip();
+            });
         }
-        window.requestAnimationFrame(flipCallback);
+        triggerFlip();
+
     }
 </script>
 
