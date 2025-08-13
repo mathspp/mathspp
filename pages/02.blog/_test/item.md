@@ -178,8 +178,7 @@ Explore the counterintuitive world of probabilities you get into when you flip a
 
 ## Heads or tails?
 
-Suppose you have a fair coin.
-Let's flip it.
+The coin below is a fair coin and I want to flip it.
 What do you call?
 Heads or tails?
 
