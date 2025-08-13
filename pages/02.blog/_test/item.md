@@ -36,6 +36,7 @@ Explore the counterintuitive world of probabilities you get into when you flip a
             this.isAnimating = false;
             this.flipResults = null;
             this.animationStart = null;
+            this.callback = null;
         }
 
         addToContainer(container) {
@@ -47,8 +48,9 @@ Explore the counterintuitive world of probabilities you get into when you flip a
             this.scene.add(coin.coin);
         }
 
-        flipCoins() {
+        flipCoins(callback) {
             if (this.isAnimating) return;
+            this.callback = callback;
 
             this.isAnimating = true;
             this.animationStart = performance.now();
@@ -76,9 +78,11 @@ Explore the counterintuitive world of probabilities you get into when you flip a
 
         animationCallback() { // Called when the flip animation is done.
             console.log(`Flipping done, results were ${this.flipResults}.`)
+            if (this.callback) this.callback(this.flipResults);
             this.isAnimating = false;
             this.flipResults = null;
             this.animationStart = null;
+            this.callback = null;
         }
 
         renderScene() {
@@ -174,6 +178,10 @@ Explore the counterintuitive world of probabilities you get into when you flip a
         */
     }
 
+    function callback1() {
+        document.getElementById("span1").innerHTML = "Oi.";
+    }
+
 </script>
 
 
@@ -186,5 +194,7 @@ Heads or tails?
 
 <div style="text-align:center">
 <div id="container1"></div>
-<button class="btn" onclick="coinArea1.flipCoins()">Flip coin</button>
+<button class="btn" onclick="coinArea1.flipCoins(callback1)">Flip coin</button>
 </div>
+
+<span id="span1"></span>
