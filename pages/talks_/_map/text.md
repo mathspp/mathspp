@@ -1,4 +1,10 @@
-<svg baseprofile="tiny" fill="var(--bg)" stroke="var(--tx)" stroke-linecap="round" stroke-linejoin="round" stroke-width=".6" version="1.2" viewbox="0 0 2000 857" xmlns="http://www.w3.org/2000/svg">
+<style>
+section.container:has(div > div > svg#talks-map) {
+    max-width: unset;
+}
+</style>
+
+<svg id="talks-map" baseprofile="tiny" fill="var(--bg)" stroke="var(--tx)" stroke-linecap="round" stroke-linejoin="round" stroke-width=".6" version="1.2" viewbox="0 0 2000 857" xmlns="http://www.w3.org/2000/svg">
 <style>
 /* Countries where I've given in-person talks: */
 #PT, /* Portugal */
