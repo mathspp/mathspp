@@ -74,7 +74,7 @@ Explore the counterintuitive world of probabilities you get into when you flip a
             this.scene.add(coin.coin);
         }
 
-        flipCoins(duration = 1000, callback = (results) => {}) {
+        flipCoins({duration = 1000, callback = (results) => {}} = {}) {
             if (this.isAnimating) return;
             this.callback = callback;
             this.duration = duration;
@@ -240,7 +240,7 @@ Explore the counterintuitive world of probabilities you get into when you flip a
             if (flips_left <= 0) return;
 
             flips_left--;
-            coinArea2.flipCoins(duration = _duration, callback = (results) => {
+            coinArea2.flipCoins({duration: _duration, callback: (results) => {
                 const heads_tally_el = document.getElementById("interactive2_tally_heads");
                 let heads_tally = parseInt(heads_tally_el.innerHTML) || 0;
                 heads_tally = results.reduce(
@@ -262,7 +262,7 @@ Explore the counterintuitive world of probabilities you get into when you flip a
                 document.getElementById("interactive2_caption").innerHTML = `Tally after ${total_flips} flips:`;
 
                 window.requestAnimationFrame(triggerFlip);
-            });
+            }});
         }
         triggerFlip();
 
