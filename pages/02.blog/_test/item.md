@@ -259,7 +259,7 @@ Explore the counterintuitive world of probabilities you get into when you flip a
                 document.getElementById("interactive2_per_tails").innerHTML = `${(100 * tails_tally / total_flips).toFixed(2)}%`;
                 document.getElementById("interactive2_caption").innerHTML = `Tally after ${total_flips} flips:`;
 
-                triggerFlip();
+                window.requestAnimationFrame(triggerFlip);
             });
         }
         triggerFlip();
