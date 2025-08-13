@@ -180,6 +180,7 @@ Explore the counterintuitive world of probabilities you get into when you flip a
 
     function callback1() {
         document.getElementById("span1").innerHTML = "Oi.";
+        document.querySelector("#interactive1 > button").delete();
     }
 
 </script>
@@ -192,7 +193,7 @@ What do you call?
 Heads or tails?
 
 
-<div style="text-align:center">
+<div id="interactive1" style="text-align:center">
 <div id="container1"></div>
 <button class="btn" onclick="coinArea1.flipCoins(callback1)">Flip coin</button>
 </div>
