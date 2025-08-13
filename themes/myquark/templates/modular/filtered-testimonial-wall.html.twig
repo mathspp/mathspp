@@ -34,11 +34,11 @@
     {% if total_count > limit %}
       <div class="text-center mt-2">
         <button id="reviews-load-more"
-                class="btn btn-primary"
+                class="btn"
                 data-limit="{{ limit }}"
                 data-offset="{{ limit }}"
                 data-tags="{{ tags_to_filter|join(',')|e('html_attr') }}">
-          Show more
+          Load more
         </button>
         <div id="reviews-loader" class="loading" style="display:none;"></div>
       </div>
@@ -83,53 +83,68 @@
   function shortestColumn(columns) {
     var minCol = null;
     var minH = Infinity;
-    columns.forEach ? columns.forEach(check) : Array.prototype.forEach.call(columns, check);
-    function check(col) {
+    (columns.forEach ? columns : Array.prototype.slice.call(columns)).forEach(function (col) {
       var h = col.getBoundingClientRect().height;
       if (h < minH) { minH = h; minCol = col; }
-    }
-    return minCol || wall; // fallback to wall pre-init
+    });
+    return minCol || wall; // fallback pre-init
   }
 
   // Append a single card respecting Bricklayer's columns
   function appendCard(node) {
-    // Prefer official API if present
     if (bricklayer && typeof bricklayer.append === 'function') {
       bricklayer.append(node);
       return;
     }
-    // Fallback: manual column placement
     var cols = getColumns();
     if (cols.length) {
       shortestColumn(cols).appendChild(node);
     } else {
-      // If columns not created yet (edge case), just append to wall
       wall.appendChild(node);
     }
   }
 
-  // Optional: after images load, nudge layout
+  // Wait for images inside a container/fragment, then cb
   function onImagesLoad(el, cb) {
-    var imgs = el.querySelectorAll('img');
+    var imgs = el.querySelectorAll ? el.querySelectorAll('img') : [];
     if (!imgs.length) { cb(); return; }
     var remaining = imgs.length;
-    imgs.forEach ? imgs.forEach(doneOrWait) : Array.prototype.forEach.call(imgs, doneOrWait);
-    function doneOrWait(img) {
+    (imgs.forEach ? imgs : Array.prototype.slice.call(imgs)).forEach(function (img) {
       if (img.complete) { if (--remaining === 0) cb(); }
       else {
-        img.addEventListener('load', function () { if (--remaining === 0) cb(); });
+        img.addEventListener('load',  function () { if (--remaining === 0) cb(); });
         img.addEventListener('error', function () { if (--remaining === 0) cb(); });
       }
-    }
+    });
   }
 
-  btn.addEventListener('click', async function () {
+  // Keep the button anchored visually across layout changes
+  function withScrollAnchor(anchorEl, work) {
+    var beforeTop = anchorEl.getBoundingClientRect().top;
+    work(function done() {
+      // wait for layout to settle (one or two frames)
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          var afterTop = anchorEl.getBoundingClientRect().top;
+          var delta = afterTop - beforeTop;
+          if (delta !== 0) {
+            window.scrollBy(0, delta);
+          }
+        });
+      });
+    });
+  }
+
+  btn.addEventListener('click', async function (ev) {
+    ev.preventDefault();
+
     var limit  = parseInt(btn.dataset.limit || '10', 10);
     var offset = parseInt(btn.dataset.offset || '0', 10);
     var tags   = btn.dataset.tags || '';
 
+    // show a tiny loader without shifting layout (avoid jumps)
     btn.disabled = true;
-    if (loader) loader.style.display = '';
+    if (loader) loader.style.visibility = 'visible';
 
     try {
       const res = await fetch(buildUrl(limit, offset, tags), {
@@ -146,26 +161,25 @@
         data.items.forEach(function (html) {
           var node = htmlStringToNode(html);
           if (node) {
-            // queue in fragment first (for image load hook), then append to columns
             fragment.appendChild(node);
             appendedCount += 1;
           }
         });
       }
 
-      // Wait for images to settle, then distribute items to columns
-      onImagesLoad(fragment, function () {
-        // Move children out of fragment and into columns one by one
-        while (fragment.firstChild) {
-          appendCard(fragment.firstChild);
-        }
-        // Try to trigger a layout pass if API available
-        if (bricklayer && typeof bricklayer.redraw === 'function') {
-          bricklayer.redraw();
-        } else {
-          // Nudge layout by triggering a resize event as a last resort
-          window.dispatchEvent(new Event('resize'));
-        }
+      // Anchor scroll at the button while we mutate & reflow
+      withScrollAnchor(btn, function (done) {
+        onImagesLoad(fragment, function () {
+          // Move children out of fragment and into columns one by one
+          while (fragment.firstChild) {
+            appendCard(fragment.firstChild);
+          }
+          // Ask Bricklayer to reflow if possible
+          if (bricklayer && typeof bricklayer.redraw === 'function') {
+            bricklayer.redraw();
+          }
+          done();
+        });
       });
 
       // Update offset
@@ -180,7 +194,7 @@
       btn.textContent = 'Try again';
       btn.disabled = false;
     } finally {
-      if (loader) loader.style.display = 'none';
+      if (loader) loader.style.visibility = 'hidden';
       if (btn && btn.style.display !== 'none') btn.disabled = false;
     }
   });
