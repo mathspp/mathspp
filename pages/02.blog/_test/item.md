@@ -74,9 +74,10 @@ Explore the counterintuitive world of probabilities you get into when you flip a
             this.scene.add(coin.coin);
         }
 
-        flipCoins(callback) {
+        flipCoins(duration = 1000, callback = (results) => {}) {
             if (this.isAnimating) return;
             this.callback = callback;
+            this.duration = duration;
 
             this.isAnimating = true;
             this.animationStart = performance.now();
@@ -90,8 +91,7 @@ Explore the counterintuitive world of probabilities you get into when you flip a
         animateFlips(time) {
             if (!this.isAnimating) return;
 
-            const duration = 1000;  // ms
-            const progress = Math.min((time - this.animationStart) / duration, 1);
+            const progress = Math.min((time - this.animationStart) / this.duration, 1);
             this.coins.forEach((coin) => coin.animateFlip(progress));
 
             this.renderScene();
@@ -211,7 +211,7 @@ Explore the counterintuitive world of probabilities you get into when you flip a
     function interactive1(guess) {
         // Delete the two guess buttons.
         document.querySelectorAll("#interactive1 > button").forEach((el) => el.remove());
-        coinArea1.flipCoins((result) => {
+        coinArea1.flipCoins(callback = (result) => {
             result = result[0];
             let result_name = result ? "heads" : "tails";
             let guess_name = guess ? "heads" : "tails";
@@ -231,28 +231,31 @@ Explore the counterintuitive world of probabilities you get into when you flip a
         });
     }
 
-    function interactive2() {
-        coinArea2.flipCoins((results) => {
-            const heads_tally_el = document.getElementById("interactive2_tally_heads");
-            let heads_tally = parseInt(heads_tally_el.innerHTML) || 0;
-            heads_tally = results.reduce(
-                (acc, result) => acc + result,
-                heads_tally
-            )
-            heads_tally_el.innerHTML = heads_tally;
-            const tails_tally_el = document.getElementById("interactive2_tally_tails");
-            let tails_tally = parseInt(tails_tally_el.innerHTML) || 0;
-            tails_tally = results.reduce(
-                (acc, result) => acc + !result,
-                tails_tally
-            )
-            tails_tally_el.innerHTML = tails_tally;
+    function interactive2(turns) {
+        const duration = Math.round(1000 / turns);
+        for (let i = 0; i < turns; ++i) {
+            coinArea2.flipCoins(duration = duration, callback = (results) => {
+                const heads_tally_el = document.getElementById("interactive2_tally_heads");
+                let heads_tally = parseInt(heads_tally_el.innerHTML) || 0;
+                heads_tally = results.reduce(
+                    (acc, result) => acc + result,
+                    heads_tally
+                )
+                heads_tally_el.innerHTML = heads_tally;
+                const tails_tally_el = document.getElementById("interactive2_tally_tails");
+                let tails_tally = parseInt(tails_tally_el.innerHTML) || 0;
+                tails_tally = results.reduce(
+                    (acc, result) => acc + !result,
+                    tails_tally
+                )
+                tails_tally_el.innerHTML = tails_tally;
 
-            const total_flips = tails_tally + heads_tally;
-            document.getElementById("interactive2_per_heads").innerHTML = `${(100 * heads_tally / total_flips).toFixed(2)}%`;
-            document.getElementById("interactive2_per_tails").innerHTML = `${(100 * tails_tally / total_flips).toFixed(2)}%`;
-            document.getElementById("interactive2_caption").innerHTML = `Tally after ${total_flips} flips:`;
-        });
+                const total_flips = tails_tally + heads_tally;
+                document.getElementById("interactive2_per_heads").innerHTML = `${(100 * heads_tally / total_flips).toFixed(2)}%`;
+                document.getElementById("interactive2_per_tails").innerHTML = `${(100 * tails_tally / total_flips).toFixed(2)}%`;
+                document.getElementById("interactive2_caption").innerHTML = `Tally after ${total_flips} flips:`;
+            });
+        }
     }
 </script>
 
@@ -288,7 +291,9 @@ If you flip the coin a whole lot more, the split of the results between <span cl
 
 <div id="interactive2" style="text-align:center">
 <div id="container2"></div>
-<button class="btn" onclick="interactive2()">Flip 32 coins</button>
+<button class="btn" onclick="interactive2(1)">Flip 32 coins</button>
+<button class="btn" onclick="interactive2(10)">Flip 320 coins</button>
+<button class="btn" onclick="interactive2(100)">Flip 3200 coins</button>
 </div>
 
 <span id="interactive2_caption">Tally after 0 flips:</span>
