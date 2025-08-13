@@ -258,6 +258,7 @@ Explore the counterintuitive world of probabilities you get into when you flip a
                 document.getElementById("interactive2_caption").innerHTML = `Tally after ${total_flips} flips:`;
             });
             flips_left--;
+            console.log(flips_left);
 
             if (flips_left > 0) window.requestAnimationFrame(flipCallback);
         }
