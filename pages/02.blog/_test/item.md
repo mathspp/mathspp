@@ -183,5 +183,7 @@ What do you call?
 Heads or tails?
 
 
+<div style="text-align:center">
 <div id="container1"></div>
 <button class="btn" onclick="coinArea1.flipCoins()">Flip coin</button>
+</div>
