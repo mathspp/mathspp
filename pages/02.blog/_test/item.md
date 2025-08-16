@@ -288,7 +288,7 @@ What do you call?
 <button class="btn" onclick="interactive1(false)">Tails</button>
 </div>
 
-<span id="span1_1">Flip the coin above.</span>
+<span id="span1_1">Flip the coin above!</span>
 
 
 ## Balanced coin flip results
@@ -313,7 +313,7 @@ If you flip the coin a whole lot more, the split of the results between <span cl
 
 <span id="interactive2_caption">Tally after 0 flips:</span>
 
-<table id="interactive2_tally">
+<table id="interactive2_tally" style="font-variant-numeric: tabular-nums;">
     <thead><tr>
         <th>Heads</th>
         <th>Tails</th>
@@ -327,3 +327,6 @@ If you flip the coin a whole lot more, the split of the results between <span cl
         <td id="interactive2_per_tails">0.00%</td>
     </tr></tfoot>
 </table>
+
+The more you play with the coins above, the closer the percentages will balance out;
+[it's a numbers game](https://en.wikipedia.org/wiki/Law_of_large_numbers).
