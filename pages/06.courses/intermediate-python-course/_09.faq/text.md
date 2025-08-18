@@ -1,6 +1,35 @@
 ## Frequently asked questions (FAQ)
 
 <details markdown="1">
+<summary><h3>Can I expense this course with my company?</h3></summary>
+Many companies have training/self-development budgets for developers to use to improve their skills by taking courses, buying technical books, and more.
+To figure out if your company will pay for this course, you will have to ask them.
+
+Here is an email template you can use to ask your company to pay for you to take this course:
+
+**Subject**: Request for Training Expense Approval – Intermediate Python Course
+
+ > Dear [Manager’s Name],
+ > 
+ > I hope you’re doing well. I’d like to request approval to enroll in the **Intermediate Python Course** offered by <mathspp.com>. This course is designed to strengthen practical Python skills for intermediate developers, covering topics such as typing, generators, packaging, and asynchronous programming.
+ > 
+ > The course includes live sessions, exercises, and opportunities for discussion, which I believe will directly support my growth as a developer and help me apply advanced Python techniques in our projects. By improving my skills in areas like code quality, maintainability, and project structure, I expect to be able to contribute more effectively to our team’s technical goals.
+ > 
+ >  - **Course name**: Intermediate Python Course
+ >  - **Provider**: <mathspp.com>
+ >  - **Format**: Live cohort-based (4h/day for a week) with offline exercises and forum discussions
+ >  - **Cost**: $490
+ >  - **Dates**: [insert dates you're considering]
+ > 
+ > I believe this course will be a valuable investment in my professional development, and in turn, will benefit the team and company through more efficient coding practices and deeper technical knowledge.
+ > 
+ > Please let me know if I can provide any additional information to help with the decision. Thank you for considering this request.
+ > 
+ > Best regards,
+ > [Your name]
+</details>
+
+<details markdown="1">
 <summary><h3>At what time will the live sessions take place?</h3></summary>
 
 The live sessions take place from 3pm to 5pm and 7pm to 9pm, UTC time.
