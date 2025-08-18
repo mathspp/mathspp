@@ -1,6 +1,14 @@
 ## Past tips
 
 <ol reversed>
+    <li>All equal</li>
+    <li>Efficiently extending a list</li>
+    <li>Safely overriding methods</li>
+    <li>Dictionary creation idiom</li>
+    <li>Send data into generators</li>
+    <li>Double leading underscore</li>
+    <li><code>dict.fromkeys</code></li>
+    <li>Constant variables</li>
     <li>Two-dimensional range</li>
     <li>Type hints that refer to functions</li>
     <li>Non-greedy regex quantifiers</li>
