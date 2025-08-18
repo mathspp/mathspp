@@ -2,6 +2,7 @@
 
 - **Next dates**:
    - 1st – 5th September
+   - 8th – 12th December
 - **Price**: $490
 - **Limited spots available**
 
