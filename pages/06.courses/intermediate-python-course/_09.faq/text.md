@@ -12,7 +12,7 @@ Here is an email template you can use to ask your company to pay for you to take
 <blockquote markdown="1">
 Dear [Manager’s Name],
 
-I hope you’re doing well. I’d like to request approval to enroll in the **Intermediate Python Course** offered by [mathspp.com](https://mathspp.com). This course is designed to strengthen practical Python skills for intermediate developers, covering topics such as typing, generators, packaging, and asynchronous programming.
+I hope you’re doing well. I’d like to request approval to enroll in the **Intermediate Python Course** offered by [mathspp.com](https://mathspp.com). This course is designed to strengthen practical Python skills for intermediate developers, covering topics such as typing, generators, packaging, and advanced OOP patterns.
 
 The course includes live sessions, exercises, and opportunities for discussion, which I believe will directly support my growth as a developer and help me apply advanced Python techniques in our projects. By improving my skills in areas like code quality, maintainability, and project structure, I expect to be able to contribute more effectively to our team’s technical goals.
 
