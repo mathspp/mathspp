@@ -7,7 +7,7 @@ By reading this article you will understand what `functools.Placeholder` is for 
 
 ## Partial function application
 
-The new `Placeholder` singleton only makes sense in the context of `functools.partial`, so in order to understand `Placeholder` you will need to [understand how `functools.partial` works and how to use it](/blog/functools-partial).
+The new `Placeholder`, added in Python 3.14, only makes sense in the context of `functools.partial`, so in order to understand `Placeholder` you will need to [understand how `functools.partial` works and how to use it](/blog/functools-partial).
 
 In a nutshell, `partial` allows you to perform partial function application, by “freezing” arguments to functions.
 
@@ -108,7 +108,7 @@ And that's what `functools.Placeholder` does.
 
 ## Using `functools.Placeholder` to reserve a place for an argument
 
-The singleton `Placeholder` can be used exactly for this: to reserve a place for a positional argument that will only be filled later.
+The new `Placeholder` can be used exactly for this: to reserve a place for a positional argument that will only be filled later.
 Using Python 3.14 (or later), you can write this code:
 
 ```py
@@ -128,6 +128,9 @@ remove_punctuation = partial(str.translate, Placeholder, _table)  # <--
 ```
 
 When you call `remove_punctuation(string)`, `partial` sees that you used a `Placeholder` earlier and it puts the string in that place, turning it into `str.translate(string, _table)`.
+
+Note that `Placeholder` is not a class you need to instantiate.
+Instead, it's a singleton (like `None`, for example) that you use directly whenever you need it.
 
 
 ## Making `Placeholder` a bit more ergonomic
