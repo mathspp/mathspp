@@ -7,8 +7,8 @@ metadata:
 references: []
 slug: "counterintuitive-coin-flips"
 taxonomy:
-    category:
-        - blogpost
+    # category:
+    #     - blogpost
     tag:
       - mathematics
       - visualisation
