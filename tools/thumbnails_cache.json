@@ -18,16 +18,16 @@
     "words": 35212
   },
   "programming": {
-    "articles": 304,
-    "code_snippets": 3762,
-    "loc": 36635,
-    "words": 363484
+    "articles": 305,
+    "code_snippets": 3763,
+    "loc": 36636,
+    "words": 363665
   },
   "python": {
-    "articles": 295,
-    "code_snippets": 3638,
-    "loc": 35508,
-    "words": 359389
+    "articles": 296,
+    "code_snippets": 3639,
+    "loc": 35509,
+    "words": 359570
   },
   "algorithms": {
     "articles": 25,
@@ -180,10 +180,10 @@
     "words": 12038
   },
   "productivity": {
-    "articles": 27,
-    "code_snippets": 153,
-    "loc": 1548,
-    "words": 17084
+    "articles": 28,
+    "code_snippets": 154,
+    "loc": 1549,
+    "words": 17265
   },
   "logic": {
     "articles": 34,
@@ -540,10 +540,10 @@
     "words": 388
   },
   "uv": {
-    "articles": 6,
-    "code_snippets": 29,
-    "loc": 136,
-    "words": 2903
+    "articles": 7,
+    "code_snippets": 30,
+    "loc": 137,
+    "words": 3084
   },
   "javascript": {
     "articles": 3,
@@ -564,10 +564,10 @@
     "words": 430
   },
   "__all": {
-    "articles": 419,
-    "code_snippets": 3899,
-    "loc": 37735,
-    "words": 451238
+    "articles": 420,
+    "code_snippets": 3900,
+    "loc": 37736,
+    "words": 451419
   },
   "fp": {
     "articles": 3,
