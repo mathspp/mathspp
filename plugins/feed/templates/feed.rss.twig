@@ -26,7 +26,7 @@
             <description>
                 <![CDATA[
                 {% if banner %}
-                {{ banner.cropZoom(1200,800).html|absolute_url|raw }}
+                {{ banner.cropZoom(800,400).html|absolute_url|raw }}
                 {% endif %}
                 {{ item.content|safe_truncate_html(collection.params.length)|raw }}
                 ]]>
