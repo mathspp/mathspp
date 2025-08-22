@@ -10,9 +10,9 @@
     {% set tag_description_name = 'TAG_DESCRIPTIONS.' ~ tax %}
     {% set tag_description = tag_description_name|t %}
     {% if tag_description_name != tag_description %}
-    <li><a href="/blog/tag{{ config.system.param_sep }}{{ tax }}">{{ tax }}</a>: {{ tag_description }}</li>
+    <li><a href="/blog/tags/{{ tax }}">{{ tax }}</a>: {{ tag_description }}</li>
     {% else %}
-    <li><a href="/blog/tag{{ config.system.param_sep }}{{ tax }}">{{ tax }}</a></li>
+    <li><a href="/blog/tags/{{ tax }}">{{ tax }}</a></li>
     {% endif %}
 {% endfor %}
 </ul>
