@@ -1,9 +1,9 @@
 {
   "__all": {
-    "articles": 420,
-    "code_snippets": 3900,
-    "loc": 37736,
-    "words": 451419
+    "articles": 421,
+    "code_snippets": 3911,
+    "loc": 37777,
+    "words": 452097
   },
   "bpci": {
     "articles": 10,
@@ -24,16 +24,16 @@
     "words": 35212
   },
   "programming": {
-    "articles": 305,
-    "code_snippets": 3763,
-    "loc": 36636,
-    "words": 363665
+    "articles": 306,
+    "code_snippets": 3774,
+    "loc": 36677,
+    "words": 364343
   },
   "python": {
-    "articles": 296,
-    "code_snippets": 3639,
-    "loc": 35509,
-    "words": 359570
+    "articles": 297,
+    "code_snippets": 3650,
+    "loc": 35550,
+    "words": 360248
   },
   "algorithms": {
     "articles": 25,
@@ -407,6 +407,12 @@
     "loc": 156,
     "words": 2146
   },
+  "fp": {
+    "articles": 4,
+    "code_snippets": 119,
+    "loc": 862,
+    "words": 10047
+  },
   "random walks": {
     "articles": 1,
     "code_snippets": 0,
@@ -448,12 +454,6 @@
     "code_snippets": 8,
     "loc": 53,
     "words": 2094
-  },
-  "fp": {
-    "articles": 3,
-    "code_snippets": 108,
-    "loc": 821,
-    "words": 9369
   },
   "origami": {
     "articles": 1,

@@ -1,0 +1,18 @@
+date: 22-08-2025 21:21
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Learn how to use `functools.Placeholder`, new in Python 3.14, with a real-life example."
+    og:image: "https://mathspp.com/blog/how-to-use-functools-placeholder/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/how-to-use-functools-placeholder/thumbnail.webp"
+references:
+  - "`functools.partial`, <https://mathspp.com/blog/functools-partial> [last accessed 22-08-2025];"
+  - "What's new in Python 3.14, <https://docs.python.org/3.14/whatsnew/3.14.html> [last accessed 22-08-2025];"
+slug: "how-to-use-functools-placeholder"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+      - python
+      - programming
+      - fp
+title: "`functools.Placeholder`"

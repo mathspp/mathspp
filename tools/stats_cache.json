@@ -5946,5 +5946,19 @@
       "loc": 1,
       "words": 181
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/functools-placeholder": {
+    "timestamp": 1755896637.7520938,
+    "tags": [
+      "python",
+      "programming",
+      "fp"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 11,
+      "loc": 41,
+      "words": 678
+    }
   }
 }

@@ -28,9 +28,9 @@ title: "Fp blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">3</th>
-            <th style="text-align: center;">9,369</th>
-            <th style="text-align: center;">821</th>
+            <th style="text-align: center;">4</th>
+            <th style="text-align: center;">10,047</th>
+            <th style="text-align: center;">862</th>
         </tr>
     </thead>
     <tbody>
