@@ -1,3 +1,0 @@
-- You're looking for a passive read without any hands‑on exercises.
-- You don't enjoy debugging or exploring multiple solutions to the same problem.
-- You want a simple reference of Python syntax rather than a problem‑oriented workbook.

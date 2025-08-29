@@ -1,3 +1,0 @@
-I've always loved puzzles – the kinds that make you sit back, think hard and then smile when the solution clicks.  Over the years I've shared many of these on my blog, but I wanted to bring them together in one place for fellow puzzle lovers.
-
-*Puzzles, riddles & problems* is the result: a curated selection of brain teasers that require nothing more than clear reasoning (and occasionally a dash of high‑school maths).  It's a book you can dip into whenever you have a few minutes and want to challenge yourself or amuse a friend.

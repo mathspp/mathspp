@@ -1,3 +1,0 @@
-- You're looking for programming exercises or coding challenges.
-- You don't enjoy logic puzzles or riddles and prefer straight‑to‑the‑point tutorials.
-- You want a step‑by‑step guide to a specific topic rather than a collection of problems to ponder.

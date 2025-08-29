@@ -1,3 +1,0 @@
-Some years ago I set out to implement a neural network from scratch.  My first attempt failed miserably and left me feeling frustrated.  Undeterred, I returned to the problem later, armed with a better understanding of the mathematics and the patience to work through the details.  That time it worked, and it was amazing!
-
-I wrote *Neural network fundamentals with Python* to help you skip the painful trial and error and experience that same excitement.  This book distils what I learned into a clear, friendly guide that walks you through building your own networks and playing with them.  My hope is that by the time you finish, you'll not only have a working neural network but also the confidence to explore the rich world of machine learning and deep learning.

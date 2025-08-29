@@ -1,3 +1,0 @@
-- You want to demystify neural networks and understand how they work under the hood.
-- You enjoy learning by building and experimenting with code.
-- You're curious about machine learning and want a gentle, hands‑on introduction.
