@@ -1,0 +1,3 @@
+I wrote *Comprehending Comprehensions* because comprehensions are one of Python's most powerful and underutilised features.  Many programmers spend years looping their way through lists and dictionaries without realising that a more elegant alternative exists.  
+
+My goal with this book is to demystify comprehensions, show you why they are so elegant, and give you the tools to use them confidently.  Drawing inspiration from the array‑oriented language APL, I present a fresh perspective that will sharpen your programming intuition and help you write clearer, more declarative code.

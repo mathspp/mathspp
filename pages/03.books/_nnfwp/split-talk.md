@@ -8,6 +8,7 @@ Well, I did, and that is why I tried implementing one.
 And I failed.
 Some years later, I tried again, and it worked!
 And it was amazing!
+
 Now, I just want to help _you_ do it yourself, so that you can take a peek
 behind the curtains of this world of machine learning, deep learning,
 and all those buzzwords.
@@ -18,7 +19,7 @@ machine learning tasks.
 We will also play around with them and do all sorts of really interesting machine learning
 and deep learning experiments.
 
-The book explains you the things that are needed, step-by-step,
+The book explains you the things that are needed, step‑by‑step,
 and gives you a reference implementation [that you can find on GitHub][gh-nnfwp].
 
 By the time you are done with the book, you will have at your disposal
@@ -29,9 +30,10 @@ deep learning.
 By the way, if you are unsure whether or not this book is for you,
 you can always read its chapters for free [on my blog](/blog/tag:nnfwp).
 
-<div style="display:flex; justify-content:center;">
-<a href="https://gumroad.com/l/swTNl?wanted=true" target="_blank" class="btn" style="margin-right: 1em;">Buy for $9</a>
-</div>
+  
+  Buy for $9 
+  [Learn more](/books/neural-network-fundamentals-with-python)
+  
 
 [gh-nnfwp]: https://github.com/mathspp/nnfwp
 

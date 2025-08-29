@@ -1,0 +1,3 @@
+- You already reach for comprehensions naturally and rarely write explicit loops.
+- You're just after a quick reference rather than a hands‑on workbook with exercises.
+- You aren't interested in rethinking how you approach problems or exploring new paradigms like those inspired by APL.

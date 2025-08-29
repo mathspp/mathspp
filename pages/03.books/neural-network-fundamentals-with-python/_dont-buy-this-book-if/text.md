@@ -1,0 +1,3 @@
+- You're looking for a purely theoretical treatise on neural networks without code.
+- You want a high‑level overview of machine learning without getting your hands dirty.
+- You aren't interested in mathematics or coding and prefer a completely abstract description of deep learning.

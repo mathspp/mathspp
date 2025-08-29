@@ -1,0 +1,3 @@
+- You love solving puzzles and want to practise your Python skills.
+- You want to learn how experienced developers approach problems and compare different coding styles.
+- You're preparing for coding interviews or just enjoy stretching your brain.

@@ -1,0 +1,3 @@
+- You love puzzles, riddles and brain teasers that make you think.
+- You enjoy sharing interesting problems with friends or students.
+- You're looking for a fun way to exercise your logical reasoning skills.

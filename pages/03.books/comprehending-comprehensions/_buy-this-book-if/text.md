@@ -1,0 +1,3 @@
+- You want to truly understand Python's comprehension syntax and semantics.
+- You enjoy learning through doing and appreciate a large set of exercises.
+- You'd like to explore a different way of thinking about iteration and data transformation.

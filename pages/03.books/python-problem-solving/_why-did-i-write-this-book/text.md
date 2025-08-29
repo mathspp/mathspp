@@ -1,0 +1,3 @@
+When I first ran my Python problem‑solving bootcamp in December 2021, I wanted participants to practise real problems and think critically about their solutions.  The materials from that bootcamp evolved into this book.
+
+With every edition of the bootcamp I refine the challenges and deepen the analyses.  The result is a collection of problems and discussions that capture how experienced developers think, debug and refactor.  My goal is to give you a safe space to get your hands dirty, make mistakes and learn from them.
