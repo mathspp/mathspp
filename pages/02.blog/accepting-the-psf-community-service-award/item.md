@@ -43,7 +43,7 @@ I am not particularly good with feelings[^1] so I have a really hard time findin
 
 So, as I continue to write about Python online, share Python with everyone I cross paths with, and invest more and more time into EuroPython and PyCon Portugal, I felt an incredible sense of validation when I received the PSF email saying I was receiving the Community Service Award.
 I don't know if this is weird to say or not, but I felt understood and validated.
-I felt like the award validated my passion for the community and the time I devoted for the community.
+I felt like the award validated my passion for the community and the time I devoted to the community.
 I think that's it.
 
 ### Honoured
@@ -54,11 +54,18 @@ If you [open the page that lists previous recipients of the awards](https://www.
 I am humbled as I go through the list and read the names of the people that got the award before me.
 Some of the names I recognise instantly.
 Some of the names are completely new to me.
-But what all names have in common is that they have made very significant contributions to the Python community.
+But what everyone has in common is that they have made very significant contributions to the Python community.
 
 I don't think I am insignificant.
 I honestly believe I have had, and continue to have, a net positive impact on the community.
 But damn, my contributions feel insignificant next to the others! 😄
+
+### Thankful
+
+And yet, however insignificant my contributions may be next to the contributions of the others on that page – or next to folks who aren't even on that page _yet_ –, someone went through the trouble of emailing the PSF saying I should receive the award.
+And the board voted on it and agreed.
+
+So, thank you to the person who nominated me; thank you to the PSF board for this incredible recognition; thank you to everyone who's crossed paths with me and who inspired me to contribute to the **community**!
 
 
 ## What now?
