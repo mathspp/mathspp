@@ -1,0 +1,16 @@
+date: 30-08-2025 14:54
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "I am truly honoured to have been awarded a PSF Community Service Award in Q2 of 2025."
+    og:image: "https://mathspp.com/blog/accepting-the-psf-community-service-award/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/accepting-the-psf-community-service-award/thumbnail.webp"
+references:
+  - "PSF Community Service Awards <https://www.python.org/community/awards/psf-awards/> [last accessed 30-08-2025];"
+slug: "accepting-the-psf-community-service-award"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+      - opinion
+      - python
+title: Accepting the PSF Community Service Award
