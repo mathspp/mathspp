@@ -54,11 +54,13 @@ Usage: my-script.py deploy [ARGS] [OPTIONS]
 
 Deploy code to an environment.
 
-╭─ Parameters ────────────────────────────────────────────────────────────────────────────────────╮
-│ *  ENV --env            Environment to deploy to. [choices: dev, staging, prod] [required]      │
-│    REPLICAS --replicas  Number of workers to spin up. [choices: default, performance] [default: │
-│                         default]                                                                │
-╰─────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭─ Parameters ──────────────────────────────────────────────────╮
+│ *  ENV --env            Environment to deploy to. [choices:   │
+│                         dev, staging, prod] [required]        │
+│    REPLICAS --replicas  Number of workers to spin up.         │
+│                         [choices: default, performance]       │
+│                         [default: default]                    │
+╰───────────────────────────────────────────────────────────────╯
 
 $ my-script deploy staging
 Deploying to staging with 10 replicas.
@@ -70,9 +72,10 @@ $ my-script deploy staging performance
 Deploying to staging with 20 replicas.
 
 $ my-script deploy nonexistent-env
-╭─ Error ────────────────────────────────────────────────────────────────────────────────────────────╮
-│ Error converting value "nonexistent-env" to typing.Literal['dev', 'staging', 'prod'] for "--env".  │
-╰────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭─ Error ───────────────────────────────────────────────────────╮
+│ Invalid value for "ENV": unable to convert "nonexistent-env"  │
+│ into one of {'dev', 'staging', 'prod'}.                       │
+╰───────────────────────────────────────────────────────────────╯
 
 $ my-script --version
 0.0.0
