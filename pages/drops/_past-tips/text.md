@@ -1,6 +1,11 @@
 ## Past tips
 
 <ol reversed>
+    <li>Enforce positional arguments</li>
+    <li>Operate on two lists of numbers</li>
+    <li>Using properties</li>
+    <li>Ignore exceptions</li>
+    <li>Paginate results</li>
     <li>All equal</li>
     <li>Efficiently extending a list</li>
     <li>Safely overriding methods</li>
