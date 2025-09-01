@@ -2,7 +2,7 @@
 
 - **Next dates**:
    - 1st – 5th September
-   - 8th – 12th December
+   - 12th – 16th January 2026
 - **Price**: $490
 - **Limited spots available**
 
