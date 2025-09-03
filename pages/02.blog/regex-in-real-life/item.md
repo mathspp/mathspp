@@ -8,6 +8,38 @@ I love keeping track of real-life examples of the usage of certain features and 
 As I use regex in new and interesting ways, I will update this article to include those examples.
 
 
+## Mass-reformatting hints to some exercises
+
+I was working on some exercises for [my intermediate Python course](/courses/intermediate-python-course) and they all had this format:
+
+```markdown
+#### Exercise ?
+Problem statement goes here.
+
+*Hint: exercise hint goes here.*
+```
+
+I wanted to reformat this so that the hints weren't shown by default, so I wanted to have this:
+
+```markdown
+#### Exercise ?
+Problem statement goes here.
+
+<details>
+<summary>Hint:</summary>
+
+Exercise hint goes here.
+
+</details>
+```
+
+I could easily search for `\*Hint: (.*)\*`, giving me all the lines with hints, and just as easily I could replace that with the `<details>`/`<summary>` tags...
+But then I would still have hundreds of lines to fix, because the first line of the problem hint was in lowercase in the original text and I wanted it uppercase now, since the hint is now a standalone sentence...
+
+Thankfully, [VS Code allows you to do search & replace operations that modify the casing of the matches](/blog/til/change-casing-in-search-and-replace), so that's what I ended up doing.
+I didn't even need to bring out Python to do this. 😅
+
+
 ## Compiling a numbered list of tip titles
 
 For [my newsletter Python drops 🐍💧](/drops), I keep a list of all previous tips titles so that people can see what they're missing out on.

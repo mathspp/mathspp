@@ -29,8 +29,8 @@ title: "Slice of life blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">13</th>
-            <th style="text-align: center;">12,038</th>
-            <th style="text-align: center;">1,088</th>
+            <th style="text-align: center;">12,183</th>
+            <th style="text-align: center;">1,101</th>
         </tr>
     </thead>
     <tbody>

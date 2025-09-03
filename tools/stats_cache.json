@@ -5771,7 +5771,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/regex-in-real-life": {
-    "timestamp": 1753281769.5546944,
+    "timestamp": 1756858719.2488642,
     "tags": [
       "regex",
       "python",
@@ -5780,9 +5780,9 @@
     ],
     "stats": {
       "articles": 1,
-      "code_snippets": 7,
-      "loc": 61,
-      "words": 442
+      "code_snippets": 9,
+      "loc": 74,
+      "words": 587
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/125.images-in-docstrings": {
