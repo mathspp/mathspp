@@ -5973,5 +5973,20 @@
       "loc": 0,
       "words": 803
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/131.change-casing-in-search--replace": {
+    "timestamp": 1756858068.5840306,
+    "tags": [
+      "regex",
+      "productivity",
+      "vscode",
+      "python"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 2,
+      "loc": 19,
+      "words": 336
+    }
   }
 }

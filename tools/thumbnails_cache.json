@@ -24,10 +24,10 @@
     "words": 364373
   },
   "python": {
-    "articles": 298,
-    "code_snippets": 3650,
-    "loc": 35550,
-    "words": 361081
+    "articles": 299,
+    "code_snippets": 3652,
+    "loc": 35569,
+    "words": 361417
   },
   "algorithms": {
     "articles": 25,
@@ -180,10 +180,10 @@
     "words": 12038
   },
   "productivity": {
-    "articles": 28,
-    "code_snippets": 154,
-    "loc": 1549,
-    "words": 17265
+    "articles": 29,
+    "code_snippets": 156,
+    "loc": 1568,
+    "words": 17601
   },
   "logic": {
     "articles": 34,
@@ -360,10 +360,10 @@
     "words": 7869
   },
   "regex": {
-    "articles": 6,
-    "code_snippets": 17,
-    "loc": 156,
-    "words": 2146
+    "articles": 7,
+    "code_snippets": 19,
+    "loc": 175,
+    "words": 2482
   },
   "random walks": {
     "articles": 1,
@@ -414,10 +414,10 @@
     "words": 3315
   },
   "vscode": {
-    "articles": 6,
-    "code_snippets": 8,
-    "loc": 53,
-    "words": 2094
+    "articles": 7,
+    "code_snippets": 10,
+    "loc": 72,
+    "words": 2430
   },
   "haskell": {
     "articles": 2,
@@ -564,10 +564,10 @@
     "words": 430
   },
   "__all": {
-    "articles": 422,
-    "code_snippets": 3911,
-    "loc": 37777,
-    "words": 452930
+    "articles": 423,
+    "code_snippets": 3913,
+    "loc": 37796,
+    "words": 453266
   },
   "fp": {
     "articles": 4,

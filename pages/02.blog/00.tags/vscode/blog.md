@@ -28,9 +28,9 @@ title: "Vscode blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">6</th>
-            <th style="text-align: center;">2,094</th>
-            <th style="text-align: center;">53</th>
+            <th style="text-align: center;">7</th>
+            <th style="text-align: center;">2,430</th>
+            <th style="text-align: center;">72</th>
         </tr>
     </thead>
     <tbody>

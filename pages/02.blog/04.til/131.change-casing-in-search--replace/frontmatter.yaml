@@ -1,0 +1,20 @@
+date: 03-09-2025 00:51
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned you can change the casing of matched groups when doing a search & replace in VS Code with regex."
+    og:image: "https://mathspp.com/blog/change-casing-in-search--replace/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/change-casing-in-search--replace/thumbnail.webp"
+references: []
+routes:
+    aliases:
+        - "/blog/til/131"
+slug: "change-casing-in-search--replace"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - regex
+      - productivity
+      - vscode
+      - python
+title: "TIL #131 – Change casing in search & replace"
+visible: false
