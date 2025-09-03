@@ -35,17 +35,17 @@ First, you can't use the string methods `upper` and `lower` directly for `\U` an
 You also have to pick the string apart to implement the `\u` and `\l`:
 
 ```py
-def all_upper(match):
+def all_upper(match):  # \U
     return match.group(0).upper()
 
-def first_upper(match):
+def first_upper(match):  # \u
     s = match.group(0)
     return s[0].upper() + s[1:]
 
-def all_lower(match):
+def all_lower(match):  # \L
     return match.group(0).lower()
 
-def first_lower(match):
+def first_lower(match):  # \l
     s = match.group(0)
     return s[0].lower() + s[1:]
 ```
