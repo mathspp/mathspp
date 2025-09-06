@@ -83,7 +83,7 @@ class TestCaseParam(NamedTuple):
     flag2: bool = False
 
 @pytest.mark.parametrize(
-    ["tc"],
+    ["a", "b", "op", "result", "flag1", "flag2"],
     [
         TestCaseParam(10, 15, "+", 25),
         TestCaseParam(10, 15, "-", -5),
@@ -92,8 +92,8 @@ class TestCaseParam(NamedTuple):
         TestCaseParam(5, 0, "/", None, flag2=True),
     ]
 )
-def test_something(tc):  # <-- Now we only accept the named tuple.
-    # do stuff with tc.a, tc.b, tc.op, ...
+def test_something(a, b, op, result, flag1, flag2):
+    # do stuff with a, b, op, ...
     ...
 ```
 
