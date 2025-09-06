@@ -74,7 +74,7 @@ If you create a named tuple, you could use the names of the parameters to help d
 from typing import NamedTuple
 import pytest
 
-class TestCaseParam(NamedTuple):
+class CaseParam(NamedTuple):
     a: int
     b: int
     op: str
@@ -85,11 +85,11 @@ class TestCaseParam(NamedTuple):
 @pytest.mark.parametrize(
     ["a", "b", "op", "result", "flag1", "flag2"],
     [
-        TestCaseParam(10, 15, "+", 25),
-        TestCaseParam(10, 15, "-", -5),
-        TestCaseParam(3, 18, "*", 54, flag1=False),
-        TestCaseParam(18, 3, "/", 6),
-        TestCaseParam(5, 0, "/", None, flag2=True),
+        CaseParam(10, 15, "+", 25),
+        CaseParam(10, 15, "-", -5),
+        CaseParam(3, 18, "*", 54, flag1=False),
+        CaseParam(18, 3, "/", 6),
+        CaseParam(5, 0, "/", None, flag2=True),
     ]
 )
 def test_something(a, b, op, result, flag1, flag2):
