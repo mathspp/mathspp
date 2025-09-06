@@ -6,7 +6,7 @@ Cheatsheet with the most common and useful uv commands to manage projects and de
 This cheatsheet lists the most commonly used commands and should be more than enough for you to get started using uv.
 For more advanced use cases, check [the uv docs](https://docs.astral.sh/uv/) and its guides.
 
-!!! Written with 0.8.15.
+!!! Written for uv version 0.8.15.
 
 
 ## Creating projects 🧱
@@ -63,9 +63,9 @@ For more advanced use cases, check [the uv docs](https://docs.astral.sh/uv/) and
 | `uv tool upgrade ruff` | Upgrade the `ruff` tool |
 | `uv tool upgrade --all` | Upgrade all tools |
 | `uv tool uninstall ruff` | Uninstall `ruff` |
-| `uv tool install -e .`[^1] | Install the current packageable project in editable mode |
+| `uv tool install -e .`[^2] | Install the current packageable project in editable mode |
 
-[^1]: If your project provides a CLI, for example, this makes the CLI globally available on your computer. Making it editable with `-e` means that if you update your code, you don't have to reinstall explicitly.
+[^2]: If your project provides a CLI, for example, this makes the CLI globally available on your computer. Making it editable with `-e` means that if you update your code, you don't have to reinstall explicitly.
 
 
 ## Working with scripts 📜
