@@ -1,0 +1,17 @@
+date: 06-09-2025 19:36
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Cheatsheet with the most common and useful uv commands to manage projects and dependencies, publish projects, manage tools, and more."
+    og:image: "https://mathspp.com/blog/uv-cheatsheet/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/uv-cheatsheet/thumbnail.webp"
+references:
+  - "uv documentation, <https://docs.astral.sh/uv/> [last accessed 06-09-2025];"
+slug: "uv-cheatsheet"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+      - programming
+      - python
+      - uv
+title: uv cheatsheet
