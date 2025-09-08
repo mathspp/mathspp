@@ -2,7 +2,6 @@
 
 | Cohort | Price | |
 | - | -: | - |
-| 1st – 5th September | $490 | <a href="https://mathspp.gumroad.com/l/intermediate-python-course?wanted=true&variant=Cohort:+1st+%E2%80%93+5th+September" target="_blank" class="btn">Sign up</a> |
 | 12th – 16th January | $490 | <a href="https://mathspp.gumroad.com/l/intermediate-python-course?wanted=true&variant=Cohort:+12th+%E2%80%93+16th+January" target="_blank" class="btn">Sign up</a> |
 
 

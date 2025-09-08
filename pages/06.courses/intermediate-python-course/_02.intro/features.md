@@ -13,7 +13,6 @@ You'll learn how to code like a fluent Python developer by leveraging powerful t
 
 | Start | End |
 | | |
-| 1st Sep | 5th Sep |
 | 8th Dec | 12th Dec |
 
 <div style="display:flex; justify-content:center;">
