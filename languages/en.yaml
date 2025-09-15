@@ -73,12 +73,12 @@ THEME_MY_QUARK:
 
 FOOTER:
   ICON_TITLES:
-    YOUTUBE: Subscribe to the YouTube channel
-    INSIDER: Join the mathspp insider community
-    DROPS: Check out Python drops
-    BLUESKY: Follow @mathsppblog on BlueSky
-    TWITTER: Follow @mathsppblog on X/Twitter
-    EMAIL: Email me
+    YOUTUBE: "Subscribe to the YouTube channel"
+    INSIDER: "Subscribe to the weekly mathspp insider 🐍🚀 newsletter"
+    DROPS: "Get a daily drop of Python knowledge 🐍💧"
+    BLUESKY: "Follow @mathspp.com on BlueSky"
+    TWITTER: "Follow @mathsppblog on X/Twitter"
+    EMAIL: "Email me"
 
 TAG_DESCRIPTIONS:
   algorithms: "Implementation and use cases for computer science algorithms"
@@ -177,3 +177,4 @@ TAG_DESCRIPTIONS:
   visualisation: "Articles that feature visualisations of algorithms, simulations, and others"
   vscode: "The usage of Visual Studio Code"
   web development: "Web development"
+
