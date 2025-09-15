@@ -73,15 +73,12 @@ THEME_MY_QUARK:
 
 FOOTER:
   ICON_TITLES:
-    SPONSOR: "Sponsor this project"
-    TWITCH: "Follow me on Twitch for programming streams"
     YOUTUBE: "Subscribe to the YouTube channel"
-    GITHUB: Star the blog content and contribute on GitHub
-    FACEBOOK: Like mathspp on Facebook
-    TWITTER: Follow @mathsppblog on Twitter
-    INSTAGRAM: Follow @mathsppblog on Instagram
-    NEWSLETTER: Subscribe to the newsletter
-    EMAIL: Email me at rodrigo(at)mathspp(dot)com
+    INSIDER: "Subscribe to the weekly mathspp insider 🐍🚀 newsletter"
+    DROPS: "Get a daily drop of Python knowledge 🐍💧"
+    BLUESKY: "Follow @mathspp.com on BlueSky"
+    TWITTER: "Follow @mathsppblog on X/Twitter"
+    EMAIL: "Email me"
 
 TAG_DESCRIPTIONS:
   algorithms: "Implementation and use cases for computer science algorithms"
@@ -180,3 +177,4 @@ TAG_DESCRIPTIONS:
   visualisation: "Articles that feature visualisations of algorithms, simulations, and others"
   vscode: "The usage of Visual Studio Code"
   web development: "Web development"
+
