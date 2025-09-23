@@ -14,5 +14,11 @@ That said, you’re always in control: if at any point you feel the newsletter i
 
 Your email will never be shared or sold, and it will only ever be used to send you the [mathspp insider newsletter](https://mathspp.com/insider).
 
-Thank you for trusting me with your learning,
-— Rodrigo ![Rodrigo's headshot](theme://images/rodrigo_circle_256.webp?classes=img-responsive,img-rounded,float-right)
+<div style="overflow:auto; margin-top:1.5em;">
+  <div style="float:right; margin-left:1em;" markdown="1">
+
+![Rodrigo's headshot](theme://images/rodrigo_circle_256.webp?classes=img-responsive img-rounded){style="max-width:120px;"}
+
+  </div>
+  <p>Thank you for trusting me with your learning,<br>— Rodrigo</p>
+</div>
