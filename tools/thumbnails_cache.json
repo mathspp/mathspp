@@ -66,10 +66,10 @@
     "words": 6460
   },
   "mathematics": {
-    "articles": 123,
+    "articles": 124,
     "code_snippets": 449,
     "loc": 4449,
-    "words": 110059
+    "words": 110212
   },
   "number theory": {
     "articles": 8,
@@ -270,10 +270,10 @@
     "words": 4831
   },
   "combinatorics": {
-    "articles": 21,
+    "articles": 22,
     "code_snippets": 68,
     "loc": 635,
-    "words": 19307
+    "words": 19460
   },
   "arithmetic": {
     "articles": 8,
@@ -444,10 +444,10 @@
     "words": 5937
   },
   "induction": {
-    "articles": 5,
+    "articles": 6,
     "code_snippets": 0,
     "loc": 0,
-    "words": 4461
+    "words": 4614
   },
   "invariants": {
     "articles": 7,
@@ -564,10 +564,10 @@
     "words": 430
   },
   "__all": {
-    "articles": 424,
+    "articles": 425,
     "code_snippets": 3915,
     "loc": 37809,
-    "words": 454322
+    "words": 454475
   },
   "fp": {
     "articles": 4,
@@ -604,5 +604,11 @@
     "code_snippets": 5,
     "loc": 19,
     "words": 1780
+  },
+  "arithmetics": {
+    "articles": 1,
+    "code_snippets": 0,
+    "loc": 0,
+    "words": 153
   }
 }
