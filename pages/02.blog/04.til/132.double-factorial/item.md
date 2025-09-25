@@ -13,11 +13,13 @@ When reading about it in a book authored by a friend of mine, the identity $(2n)
 For $n = 1$, we have $2!! = 2 = 2^1 \times 1!$, which is true.
 Now, assuming the identity holds up to $n$, we show it holds for $n + 1$:
 
-$$\begin{align}
+$$
+\begin{align}
 (2(n + 1))!! &= (2(n + 1)) \times (2n)!! \\
 &= (2(n + 1)) \times 2^n n! \\
 &= (n + 1) \times 2^{n + 1} n! \\
 &= 2^{n + 1} (n + 1)!
-\end{align}$$
+\end{align}
+$$
 
 Done!

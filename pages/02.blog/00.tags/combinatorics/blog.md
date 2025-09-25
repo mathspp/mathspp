@@ -29,7 +29,7 @@ title: "Combinatorics blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">22</th>
-            <th style="text-align: center;">19,460</th>
+            <th style="text-align: center;">19,462</th>
             <th style="text-align: center;">635</th>
         </tr>
     </thead>

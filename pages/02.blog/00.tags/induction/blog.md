@@ -29,7 +29,7 @@ title: "Induction blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">6</th>
-            <th style="text-align: center;">4,614</th>
+            <th style="text-align: center;">4,616</th>
             
         </tr>
     </thead>

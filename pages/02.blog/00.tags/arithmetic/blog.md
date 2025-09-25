@@ -29,7 +29,7 @@ title: "Arithmetic blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">9</th>
-            <th style="text-align: center;">9,822</th>
+            <th style="text-align: center;">9,824</th>
             <th style="text-align: center;">1,487</th>
         </tr>
     </thead>

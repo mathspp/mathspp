@@ -3,7 +3,7 @@
     "articles": 425,
     "code_snippets": 3915,
     "loc": 37809,
-    "words": 454475
+    "words": 454477
   },
   "bpci": {
     "articles": 10,
@@ -75,7 +75,7 @@
     "articles": 124,
     "code_snippets": 449,
     "loc": 4449,
-    "words": 110212
+    "words": 110214
   },
   "number theory": {
     "articles": 8,
@@ -309,13 +309,13 @@
     "articles": 22,
     "code_snippets": 68,
     "loc": 635,
-    "words": 19460
+    "words": 19462
   },
   "arithmetic": {
     "articles": 9,
     "code_snippets": 123,
     "loc": 1487,
-    "words": 9822
+    "words": 9824
   },
   "rationals": {
     "articles": 1,
@@ -477,7 +477,7 @@
     "articles": 6,
     "code_snippets": 0,
     "loc": 0,
-    "words": 4614
+    "words": 4616
   },
   "invariants": {
     "articles": 7,
