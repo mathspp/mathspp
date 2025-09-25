@@ -1,7 +1,7 @@
 # Black Python Devs
 
 You can use the code `BLACKPYTHONDEVS` to get 10% off all ebooks, cheatsheets, and most courses, that I offer.
-When you use that code, you're also indirectly donating 20% of the value of your purchase to [Black Python Devs](https://blackpythondevs.com), a non-profit “helping build communities for Black Pythonistas around the world”.
+When you use that code, you're also donating 20% of the value of your purchase to [Black Python Devs](https://blackpythondevs.com), a non-profit “helping build communities for Black Pythonistas around the world”.
 
 
 ## Best-sellers
