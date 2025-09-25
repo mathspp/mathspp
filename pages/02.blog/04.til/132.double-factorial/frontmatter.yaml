@@ -14,7 +14,7 @@ taxonomy:
     category: [blogpost, til]
     tag:
       - combinatorics
-      - arithmetics
+      - arithmetic
       - induction
       - mathematics
 title: "TIL #132 – Double factorial"

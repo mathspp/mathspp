@@ -312,10 +312,10 @@
     "words": 19460
   },
   "arithmetic": {
-    "articles": 8,
+    "articles": 9,
     "code_snippets": 123,
     "loc": 1487,
-    "words": 9669
+    "words": 9822
   },
   "rationals": {
     "articles": 1,
@@ -538,12 +538,6 @@
     "code_snippets": 10,
     "loc": 77,
     "words": 430
-  },
-  "arithmetics": {
-    "articles": 1,
-    "code_snippets": 0,
-    "loc": 0,
-    "words": 153
   },
   "concurrency": {
     "articles": 3,
