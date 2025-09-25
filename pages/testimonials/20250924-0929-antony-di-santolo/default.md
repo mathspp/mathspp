@@ -1,5 +1,5 @@
 ---
-company_and_title: 
+company_and_title: "<a href='https://mathspp.com/pydonts'>Pydon'ts</a> reader"
 date: "2025-09-24 09:29"
 name: Antony Di Santolo
 # link:
@@ -8,7 +8,8 @@ taxonomy:
     category: review
     review-tag:
       - book
-published: false
+      - book-pydonts
+published: true
 ---
 
-I started my self-taught coding with python 2.5. My scripts' variable names were "a, aa, aaa...". I realised I needed to discipline my naming convention when colleagues adding new features to my scripts were unable to understand the code. PyDon'ts corrected that. It brought the need for simplicity and clarity that I was lacking. It's my desktop companion now.
+I started my self-taught coding with Python 2.5. My scripts' variable names were "a, aa, aaa...". I realised I needed to discipline my naming convention when colleagues adding new features to my scripts were unable to understand the code. PyDon'ts corrected that. It brought the need for simplicity and clarity that I was lacking. It's my desktop companion now.
