@@ -1,9 +1,9 @@
 {
   "__all": {
-    "articles": 425,
+    "articles": 426,
     "code_snippets": 3915,
     "loc": 37809,
-    "words": 454477
+    "words": 454586
   },
   "bpci": {
     "articles": 10,
@@ -72,10 +72,10 @@
     "words": 6460
   },
   "mathematics": {
-    "articles": 124,
+    "articles": 125,
     "code_snippets": 449,
     "loc": 4449,
-    "words": 110214
+    "words": 110323
   },
   "number theory": {
     "articles": 8,
@@ -246,10 +246,10 @@
     "words": 3995
   },
   "geometry": {
-    "articles": 17,
+    "articles": 18,
     "code_snippets": 34,
     "loc": 427,
-    "words": 10373
+    "words": 10482
   },
   "haskell": {
     "articles": 2,
