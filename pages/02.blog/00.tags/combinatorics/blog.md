@@ -28,8 +28,8 @@ title: "Combinatorics blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">21</th>
-            <th style="text-align: center;">19,307</th>
+            <th style="text-align: center;">22</th>
+            <th style="text-align: center;">19,460</th>
             <th style="text-align: center;">635</th>
         </tr>
     </thead>

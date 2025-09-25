@@ -6017,5 +6017,20 @@
       "loc": 0,
       "words": 911
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/132.double-factorial": {
+    "timestamp": 1758797960.2843912,
+    "tags": [
+      "combinatorics",
+      "arithmetic",
+      "induction",
+      "mathematics"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 0,
+      "loc": 0,
+      "words": 153
+    }
   }
 }

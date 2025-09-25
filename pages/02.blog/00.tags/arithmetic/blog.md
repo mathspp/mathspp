@@ -28,8 +28,8 @@ title: "Arithmetic blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">8</th>
-            <th style="text-align: center;">9,669</th>
+            <th style="text-align: center;">9</th>
+            <th style="text-align: center;">9,822</th>
             <th style="text-align: center;">1,487</th>
         </tr>
     </thead>

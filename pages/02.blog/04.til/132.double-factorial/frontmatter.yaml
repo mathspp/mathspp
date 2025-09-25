@@ -1,0 +1,21 @@
+date: 25-09-2025 11:47
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned about the double factorial."
+    og:image: "https://mathspp.com/blog/double-factorial/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/double-factorial/thumbnail.webp"
+references:
+  - "Wikipedia, double factorial <https://en.wikipedia.org/wiki/Double_factorial> [last accessed 25-09-2025];"
+routes:
+    aliases:
+        - "/blog/til/132"
+slug: "double-factorial"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - combinatorics
+      - arithmetic
+      - induction
+      - mathematics
+title: "TIL #132 – Double factorial"
+visible: false
