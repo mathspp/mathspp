@@ -1,5 +1,5 @@
 ---
-company_and_title: "<a href='https://mathspp.com/pydonts'>Pydon'ts</a> reader"
+company_and_title: "<a href='https://mathspp.com/books/pydonts'>Pydon'ts</a> reader"
 date: "2025-09-24 09:29"
 name: Antony Di Santolo
 # link:
