@@ -1,3 +1,9 @@
+---
+metadata:
+    description: "Learn a couple of tips to use ChatGPT effectively to write Python code in this sample of the mathspp insider weekly newsletter."
+title: How to use ChatGPT for Python code
+---
+
 # 🐍🚀 how to use ChatGPT for Python code
 
  > This is a past issue of the [mathspp insider 🐍🚀](/insider) newsletter. [Subscribe to the mathspp insider 🐍🚀](/insider#subscribe) to get weekly Python deep dives like this one on your inbox!
@@ -9,8 +15,6 @@ The other day I was giving a Polars training and I needed a countdown timer so p
 I asked ChatGPT for a Python + pygame script that showed a countdown timer and I got something quite decent:
 
 ![A GIF of a basic black and white timer counting down.](_timer_demo.gif)
-
-GIF animation of a black countdown timer going from 02:59 to 02:56 in a white background.
 
 I skimmed through the code and it looked good, so I was quite happy about it.
 

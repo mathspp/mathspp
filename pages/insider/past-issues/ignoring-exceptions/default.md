@@ -1,3 +1,9 @@
+---
+metadata:
+    description: "Learn to declare type relationships in functions and why that would be relevant in this sample of the mathspp insider weekly newsletter."
+title: Ignoring exceptions
+---
+
 # 🐍🚀 ignoring exceptions
 
  > This is a past issue of the [mathspp insider 🐍🚀](/insider) newsletter. [Subscribe to the mathspp insider 🐍🚀](/insider#subscribe) to get weekly Python deep dives like this one on your inbox!

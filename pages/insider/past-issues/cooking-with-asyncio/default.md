@@ -1,3 +1,9 @@
+---
+metadata:
+    description: "Learn a cooking analogy to help you understand and reason about asynchronous programming in this sample of the mathspp insider weekly newsletter."
+title: Cooking with asyncio
+---
+
 # 🐍🚀 cooking with asyncio
 
  > This is a past issue of the [mathspp insider 🐍🚀](/insider) newsletter. [Subscribe to the mathspp insider 🐍🚀](/insider#subscribe) to get weekly Python deep dives like this one on your inbox!

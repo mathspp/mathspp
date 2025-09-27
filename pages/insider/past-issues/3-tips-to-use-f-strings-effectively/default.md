@@ -1,3 +1,9 @@
+---
+metadata:
+    description: "Learn 3 tips to use f-strings effectively in this sample of the mathspp insider weekly newsletter."
+title: 3 tips to use f-strings effectively
+---
+
 # 🐍🚀 3 tips to use f-strings effectively
 
  > This is a past issue of the [mathspp insider 🐍🚀](/insider) newsletter. [Subscribe to the mathspp insider 🐍🚀](/insider#subscribe) to get weekly Python deep dives like this one on your inbox!

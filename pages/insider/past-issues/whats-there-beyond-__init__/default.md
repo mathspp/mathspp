@@ -1,3 +1,9 @@
+---
+metadata:
+    description: "Learn about `__init__`'s big brother, the dunder method `__new__`, in this sample of the mathspp insider weekly newsletter."
+title: What's there beyond __init__?
+---
+
 # 🐍🚀 what's there beyond `__init__`?
 
  > This is a past issue of the [mathspp insider 🐍🚀](/insider) newsletter. [Subscribe to the mathspp insider 🐍🚀](/insider#subscribe) to get weekly Python deep dives like this one on your inbox!
