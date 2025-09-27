@@ -17,8 +17,8 @@ An impeccable pose, worthy of a Queen.
 Times ten.
 
 They looked rigid and cold, wearing their white and black dresses.
-But if you looked carefully enough, they also looked…
-They looked… hopeful!
+But if you looked carefully enough, they also looked...
+They looked... hopeful!
 They believed I would be able to help them.
 
 I wasn’t feeling confident and Queen #8 picked up on that, so she decided to recap what they needed:

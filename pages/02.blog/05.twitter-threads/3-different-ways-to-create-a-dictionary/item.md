@@ -121,7 +121,7 @@ It's exactly the same object used over and over:
 
 These are just 3 ways of creating a Python dictionary.
 Soon, I'll send out a Mathspp Insider article talking about all the ways in which you can create dictionaries in Python 🐍
-Join to keep learning: <https://insider.mathspp.com>
+Join to keep learning: <https://mathspp.com/insider>
 
 
 ## Summary

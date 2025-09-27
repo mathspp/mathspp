@@ -12,7 +12,7 @@ However, most people start by downloading my free book “[Pydon'ts – write el
 If you get that book and join +16,000 others in becoming a [mathspp insider][insider], your Python code will improve so much that you won't even recognise it.
 
 [pydonts]: /pydonts
-[insider]: https://insider.mathspp.com
+[insider]: https://mathspp.com/insider
 [Twitter]: https://twitter.com/mathsppblog
 [LinkedIn]: https://linkedin.com/in/rodrigo-girão-serrão
 [email]: /contact-me

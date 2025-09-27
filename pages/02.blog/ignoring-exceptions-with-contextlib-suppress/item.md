@@ -84,7 +84,7 @@ Ignoring it.
 This makes it easier to read the code.
 Period.
 
-That’s why you’ll want to use `contextlib.suppress` instead of `try: … except: pass`.
+That’s why you’ll want to use `contextlib.suppress` instead of `try: ... except: pass`.
 
 
 ## A generic example use case
