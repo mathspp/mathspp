@@ -5,16 +5,16 @@
 ## The mental model for understanding asynchronous programming
 
 I came up with a cool analogy to help me understand the point of asynchronous programming and the role that the module `asyncio` plays in it.
-Now, I’m sharing it with you in the hopes that it helps you too!
+Now, I'm sharing it with you in the hopes that it helps you too!
 
-## Here’s what I had for lunch
+## Here's what I had for lunch
 
 Today I had pasta, meatloaf, and avocado, for lunch.
 The meatloaf was in the fridge, so I only had to reheat it.
 The avocado needed peeling.
-And I had to cook pasta because I didn’t have any pasta that was already cooked and I don’t eat raw pasta.
+And I had to cook pasta because I didn't have any pasta that was already cooked and I don't eat raw pasta.
 
-Here’s how I prepped my lunch:
+Here's how I prepped my lunch:
 
 ## An inefficient lunch prep
 
@@ -38,12 +38,12 @@ In the end, how much time did it take me to prep my lunch?
 
 A full 15 minutes.
 
-Pretty inefficient, given that I stared at a pot of pasta for 10 minutes…
+Pretty inefficient, given that I stared at a pot of pasta for 10 minutes...
 
 ## My lunch prep in code
 
 You can encode this process of prepping my lunch into code.
-I’ll write one function per thing I had to prepare, and then call those functions one by one, in order, to get those parts of my meal ready.
+I'll write one function per thing I had to prepare, and then call those functions one by one, in order, to get those parts of my meal ready.
 
 ```python
 import time
@@ -101,31 +101,31 @@ Here we go.
 
 I start by cooking the pasta in the pot.
 
-When the pasta is starting to cook, I tell you: hey, I’m **waiting*- for the pasta.
+When the pasta is starting to cook, I tell you: hey, I'm **waiting*- for the pasta.
 What can I do in the meantime?
 
 You look around and say: go take care of the meatloat.
 
 I put the meatloaf in the microwave.
 
-When the microwave starts going, I tell you: hey, I’m **waiting*- for the meatloaf.
+When the microwave starts going, I tell you: hey, I'm **waiting*- for the meatloaf.
 What can I do in the meantime?
 
 You look around and say: go take care of the avocado.
 
-I peel and slice the avocado. When I’m done, I let you know.
+I peel and slice the avocado. When I'm done, I let you know.
 What now?
 
 You tell me to go check on the pasta.
 
-The pasta is still cooking, so I ask you: hey, I’m still **waiting*- for the pasta.
+The pasta is still cooking, so I ask you: hey, I'm still **waiting*- for the pasta.
 What can I do in the meantime?
 
 You tell me to check on the meatloaf.
 
 I walk up to the microwave and the meatloaf just finished heating up, so I serve it on my plate next to the avocado.
 
-I let you know I’m free again, so you just tell me to wait for the pasta, since it’s the only thing left.
+I let you know I'm free again, so you just tell me to wait for the pasta, since it's the only thing left.
 
 When the pasta is done, I serve it and I eat.
 
@@ -141,7 +141,7 @@ Whenever I needed to wait for something out of my control, YOU told me to do som
 
 Those are the two ingredients you need to use the module `asyncio`:
 
- - tasks that take time but don’t depend on you; and
+ - tasks that take time but don't depend on you; and
  - something to manage where you spend time while waiting for those tasks.
 
 How can you take the previous piece of code and rewrite it following this model?
@@ -152,13 +152,13 @@ When I was cooking the pasta and heating the meatloaf, I had times where I was d
 
 When those moments happened, I **notified*- you that I was waiting.
 
-That “notification” is very important, because it’s what told you I was ready to work on something else.
+That “notification” is very important, because it's what told you I was ready to work on something else.
 
 In async code, you do this “notification” with the keyword `await`.
 
-You’re saying “I’m awaiting for something outside of my control, please give me something useful to do”.
+You're saying “I'm awaiting for something outside of my control, please give me something useful to do”.
 
-Here’s what the functions `cook_pasta` and `heat_meatloaf` could look like:
+Here's what the functions `cook_pasta` and `heat_meatloaf` could look like:
 
 ```python
 import asyncio
@@ -221,7 +221,7 @@ We have a series of tasks that we want to switch back and forth from, right? It'
 
 So, we use `asyncio.gather` to literally gather all those tasks together, and let the event loop (you, the manager) switch the focus back and forth.
 
-That’s what `lunch` now does:
+That's what `lunch` now does:
 
 ```python
 async def lunch():
@@ -238,7 +238,7 @@ async def lunch():
 
 ## Running a coroutine
 
-But `lunch` is also a coroutine and if you call it, it doesn’t really “run” in the sense that you want it.
+But `lunch` is also a coroutine and if you call it, it doesn't really “run” in the sense that you want it.
 
 You need to use `asyncio.run` to take a coroutine and kick things off.
 
@@ -304,11 +304,11 @@ Pasta ready.
 10 min of prep time.
 ```
 
-That’s because `asyncio` helped me be smarter about my lunch prep!
+That's because `asyncio` helped me be smarter about my lunch prep!
 
 ## Takeaways
 
-Here’s some key conclusions:
+Here's some key conclusions:
 
  - `async def` defines coroutine functions
  - coroutine functions build coroutines
@@ -316,6 +316,9 @@ Here’s some key conclusions:
  - with `await`, you can do something useful while waiting for something else to finish
  - the expression `await obj` only works if `obj` is awaitable
 
----
+## Enjoyed reading?
 
-> This is a past issue of the [mathspp insider 🐍🚀](/insider) newsletter. [Subscribe to the mathspp insider 🐍🚀](/insider#subscribe) to get weekly Python deep dives like this one on your inbox!
+This is a past issue of the [mathspp insider 🐍🚀](/insider) newsletter.
+Subscribe to the mathspp insider 🐍🚀 to get weekly Python deep dives like this one on your inbox:
+
+[Join mathspp insider 🐍🚀](?classes=btn,btn-lg,btn-center#subscribe)
