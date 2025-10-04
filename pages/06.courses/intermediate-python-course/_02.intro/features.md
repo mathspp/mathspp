@@ -13,7 +13,7 @@ You'll learn how to code like a fluent Python developer by leveraging powerful t
 
 | Start | End |
 | | |
-| 8th Dec | 12th Dec |
+| 12th Jan 2026 | 16 Jan 2026 |
 
 <div style="display:flex; justify-content:center;">
 <a href="#sign-up" class="btn" style="margin-right: 1em;">Secure your spot!</a>
