@@ -6045,5 +6045,18 @@
       "loc": 0,
       "words": 109
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/134.-alignment-in-string-formatting": {
+    "timestamp": 1759590700.6573238,
+    "tags": [
+      "python",
+      "programming"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 4,
+      "loc": 14,
+      "words": 173
+    }
   }
 }
