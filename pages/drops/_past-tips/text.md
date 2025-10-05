@@ -1,6 +1,30 @@
 ## Past tips
 
 <ol reversed>
+    <li><code>NotImplementedError</code></li>
+    <li>Set operations with operators</li>
+    <li>String formatting field alignment</li>
+    <li>Cycling over an iterable</li>
+    <li><code>NotImplemented</code></li>
+    <li>Safe random tokens</li>
+    <li>Decimals</li>
+    <li>Using fractions</li>
+    <li>Regex matches across newlines</li>
+    <li>Compute partial sums with <code>accumulate</code></li>
+    <li>Reduce boilerplate with dataclasses</li>
+    <li>Alternative constructors as class methods</li>
+    <li>Read-only attributes</li>
+    <li>Strict batching</li>
+    <li>Class and instance attributes</li>
+    <li>Invertible flags</li>
+    <li>Find files in a directory</li>
+    <li>Efficiently count characters in a string</li>
+    <li>Efficiently count words in a string</li>
+    <li>Make numbers more readable</li>
+    <li>Prevent subclassing/overriding</li>
+    <li><code>pairwise</code> generalisation</li>
+    <li>Remove punctuation functionally</li>
+    <li>Integer literals in multiple bases</li>
     <li>Enforce positional arguments</li>
     <li>Operate on two lists of numbers</li>
     <li>Using properties</li>
