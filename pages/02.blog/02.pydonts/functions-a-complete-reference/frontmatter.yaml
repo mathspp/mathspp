@@ -1,7 +1,7 @@
-date: 23-11-2024 23:00
+date: 06-10-2025 09:00
 metadata:
     author: Rodrigo Girão Serrão
-    description: "This article serves as a complete reference for all the non-trivial things you should know about Python functions."
+    description: "This article is a complete reference for all things related to functions in Python"
     og:image: "https://mathspp.com/blog/pydonts/functions-a-complete-reference/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/pydonts/functions-a-complete-reference/thumbnail.webp"
 references:
