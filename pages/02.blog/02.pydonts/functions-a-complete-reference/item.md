@@ -170,6 +170,9 @@ When you want to add these behaviours that are _orthogonal_ to the original obje
 
 ## The function signature
 
+When well-written, the function signature tells you everything you need to know about the function!
+This section will cover a couple of patterns that allow you to make the most out of the single most important line of a function.
+
 ### `*args` and `**kwargs`
 
 Built-in functions like `max` accept a variable number of positional arguments:
@@ -345,19 +348,19 @@ def foo() -> "This is another annotation":
 
 Within the context of type checking and type annotations, the annotations after the parameters are used to indicate the type of each parameter and the annotation after the function signature is used to annotate the type of the function return value.
 
-For example, below you can find [the built-in function `hash` and its type annotations](https://github.com/python/typeshed/blob/7ab6620c0f37e07486a2944460f477336c925618/stdlib/builtins.pyi#L1454):
+For example, [the built-in function `hash` is annotated like this](https://github.com/python/typeshed/blob/7ab6620c0f37e07486a2944460f477336c925618/stdlib/builtins.pyi#L1454):
 
 ```py
 def hash(obj: object, /) -> int:
     ...
 ```
 
-The type annotations say that the built-in `hash` accepts any object (which is generic on purpose) and returns an integer result.
+The type annotations say that the built-in `hash` accepts any object as an argument (which is generic on purpose) and returns an integer result.
 
 
 ### The signature object
 
-Python is usually known for its introspection capabilities, and the module `inspect` provides a function `signature` you can use if you need to retrieve information about the signature of a function.
+Python is usually known for its introspection capabilities, and the module `inspect` provides a function `signature` you can use if you need information about the signature of a function.
 
 Here is an example that gives you an idea of the information you can access with `inspect.signature`:
 
@@ -410,21 +413,21 @@ Order your function parameters by how likely the caller is to change them.
 Parameters that are more likely to remain the same across function calls go first, and parameters that are more likely to change across function calls go last.
 
 For example, the Portuguese government has a platform where I can check all of the receipts I have issued as a trainer during a specific time period.
-They are likely to have an endpoint, somewhere, that accepts a taxpayer number, a time interval start date, and a time interval end date, and the endpoint retrieves all of the receipts for that taxpayer within that timeframe.
+The government is likely to have an endpoint that accepts a taxpayer number and a time interval, and the endpoint retrieves all of the receipts for that taxpayer within that timeframe.
 
 Their endpoint was either defined as:
 
 ```py
 #                  vvvvvvvv
-def fetch_receipts(taxpayer, start_date, end_date):
+def fetch_receipts(taxpayer, time_interval):
     ...
 ```
 
 or
 
 ```py
-#                                        vvvvvvvv
-def fetch_receipts(start_date, end_date, taxpayer):
+#                                 vvvvvvvv
+def fetch_receipts(time_interval, taxpayer):
     ...
 ```
 
@@ -432,7 +435,7 @@ According to my recommendation, the first signature is better.
 Why?
 It is much more common to have a user log in and fetch receipts for different time frames than it is for a group of users to log in, one at a time, to fetch receipts from the exact same time frame.
 
-Opting for `fetch_receipts(taxpayer, start_date, end_date)` is not only more sensible, but also more practical, for example, [when using partial function application](#partial-function-application).
+Opting for `fetch_receipts(taxpayer, time_interval)` is not only more sensible, but also more practical, for example, [when using partial function application](#partial-function-application).
 
 
 ### Parameters versus arguments
@@ -440,7 +443,7 @@ Opting for `fetch_receipts(taxpayer, start_date, end_date)` is not only more sen
 To close the section about the function signature, I just wanted to [put my pedantic hat on again](#ordering-the-parameters) and shine a light on the fact that “argument” and “parameter” are two different words that mean two different things, although most people use these terms interchangeably.
 
 An _argument_ is a concrete value that is passed into a function when you call a function.
-For example, you can say “the built-in function accepts all types of arguments, not just strings”.
+For example, you can say “the built-in function `print` accepts all types of arguments, not just strings”.
 
 A _parameter_ is a formal variable defined in the function signature.
 For example, you can say the function `add` shown below has two parameters called `a` and `b`:
@@ -496,16 +499,16 @@ If you need to use statements, such as assignment, error handling, conditional s
 
 Constructs that are valid inside anonymous functions include
 
-- [conditional expressions](/blog/pydonts/conditional-expressions);
-- standard arithmetic and comparison operations;
-- calling other functions or methods;
-- [list comprehensions](/blog/pydonts/list-comprehensions-101);
-- [assignment expressions](/blog/pydonts/assignment-expressions-and-the-walrus-operator);
-- and more.
+ - [conditional expressions](/blog/pydonts/conditional-expressions);
+ - arithmetic and comparison operations;
+ - functioncalls;
+ - [list comprehensions](/blog/pydonts/list-comprehensions-101);
+ - [assignment expressions](/blog/pydonts/assignment-expressions-and-the-walrus-operator);
+ - and more.
 
 As a direct consequence of this, you _cannot_ write an anonymous function with an empty body because the keyword `pass` defines a statement.
 The “best” you can do, from a readability point of view, is to define the function with an ellipsis in its body: `lambda x: ...`.
-That may look like an empty anonymous function to you, but this is a regular anonymous function:
+That may look like an empty anonymous function to you, but this is a regular anonymous function returning the value `...`:
 
 ```py
 print(
@@ -522,21 +525,16 @@ The definition of the signature of an anonymous function does not require the pa
 So, the functions below all have valid signatures:
 
 ```py
-lambda: ...  # Takes no arguments.
+lambda: ...          # Takes no arguments.
 lambda a, b, c: ...  # Takes 3 arguments.
-lambda *args: ...  # Takes an arbitrary number of arguments.
+lambda x, y=3: ...   # `y` has a default value.
 
-lambda x, y=3: ...  # `y` has a default value.
-lambda **kwargs: ...  # Takes arbitrary keyword arguments.
+lambda *args: ...     # Takes an arbitrary number of positional arguments.
+lambda **kwargs: ...  # Takes an arbitrary number of keyword arguments.
 
-lambda x, y, *args, debug, **kwargs: ...  # Takes 2 positional arguments
-# `x` and `y`, 0 or more extra positional arguments, a keyword-only argument
-# called `debug`, and 0 or more extra keyword arguments.
-
-lambda x, y, /: ...  # `x` and `y` are positional-only arguments.
-lambda *, x, y: ...  # `x` and `y` are keyword-only arguments.
-lambda x, /, y, *, z: ...  # `x` is positional-only, `y` can be whatever you want,
-# and `z` is keyword-only.
+lambda x, y, /: ...        # Positional-only.
+lambda *, x, y: ...        # Keyword-only.
+lambda x, /, y, *, z: ...  # `x` is positional-only, `y` is both, `z` is keyword-only.
 ```
 
 
@@ -575,7 +573,7 @@ And much more!
 The built-ins `sorted`, `max`, and `min`, accept a keyword argument `key` that turns these three built-ins into three versatile built-ins.
 The keyword argument `key` is supposed to be a function that gets applied to the values you passed to `sorted`/`max`/`min`, and the values that the key function returns are the values that the built-ins `sorted`/`max`/`min` rely on to compute the ordering.
 
-As an illustrative example, let us take the function `max`.
+As an illustrative example, take the function `max`.
 By itself, you think of it as a function that accepts numbers and returns the largest number.
 If you're creative enough, you can realise that it will also accept a bunch of strings and return the one that shows up later in the dictionary:
 
@@ -607,33 +605,33 @@ print(max(
 ))  # rhinoceros
 ```
 
-The example with `key` and `max` is a pretty concrete example, but it should help you realise that you can pass functions around as arguments to other functions.
+The example with `key` and `max` should help you realise that you can pass functions around as arguments to other functions.
 To take it a step further, you can do the same thing with methods.
-For example, suppose you want to reuse `max` to find the last string in a list of strings:
+For example, suppose you want to use `sorted` to sort a list of strings alphabetically:
 
 ```py
-print(max(
-    ["ZEBRA", "ant"]
-))  # ant
+print(sorted(
+    ["ZEBRA", "horse", "ant"]
+))  # ['ZEBRA', 'ant', 'horse']
 ```
 
 Casing matters when performing string comparisons, so [you'll want to use the method `casefold` to perform case-insensitive string comparison](/blog/how-to-work-with-case-insensitive-strings):
 
 ```py
-print(max(
-    ["ZEBRA", "ant"],
-    key=lambda string: string.casefold()
-))  # ZEBRA
+print(sorted(
+    ["ZEBRA", "horse", "ant"],
+    key=lambda string: string.casefold(),
+))  # ['ant', 'horse', 'ZEBRA']
 ```
 
 Except, again, you can use the method directly.
 If `s` is a string, `s.casefold()` is the same thing as `str.casefold(s)`, so you can pass `str.casefold` directly to `key`:
 
 ```py
-print(max(
-    ["ZEBRA", "ant"],
-    key=str.casefold
-))  # ZEBRA
+print(sorted(
+    ["ZEBRA", "horse", "ant"],
+    key=str.casefold,
+))  # ['ant', 'horse', 'ZEBRA']
 ```
 
 
@@ -692,9 +690,10 @@ Which of these is farther away from the point `(0, 0)`?
 By using the built-in `max` and an anonymous function, you can determine that:
 
 ```py
-print(
-    max(points, key=lambda p: p[0] ** 2 + p[1] ** 2)
-)  # (4, 0)
+print(max(
+    points,
+    key=lambda p: p[0] ** 2 + p[1] ** 2,
+))  # (4, 0)
 ```
 
 
@@ -769,11 +768,12 @@ When you return the function `inner` from the function `outer`, Python creates a
 In fact, you can inspect this closure through the dunder attribute `__closure__`:
 
 ```py
-print(inner_function.__closure__)  # (<cell at 0x103e62e30: int object at 0x104ea0db8>,)
+print(inner_function.__closure__)
+# (<cell at 0x103e62e30: int object at 0x104ea0db8>,)
 print(inner_function.__closure__[0].cell_contents)  # 73
 ```
 
-As you can see, in Python, a closure takes the form of a tuple of “cells”, where each cell holds the value of one of the enclosing variables that the function will need to access.
+As you can see, in Python, a closure takes the form of a tuple of “cells” where each cell holds the value of one of the enclosing variables that the function will need to access.
 In the case of the function `inner_function`, that's only the variable `x` that has the value `73`.
 
 For most functions, the dunder attribute `__closure__` is set to `None` because most functions don't have closures:
@@ -794,7 +794,7 @@ That's what the next section is for, where you will learn about [decorators](#de
 A decorator is a function that enhances other functions with functionality that is useful but that, at the same time, is independent from the main purpose of the function to be enhanced.
 
 Suppose you are developing a program that traverses a website looking for broken links.
-You might need a function that accepts a URL and returns all the links found on that page:
+You need a function that accepts a URL and returns all the links found on that page:
 
 ```py
 def get_links(url):
@@ -803,7 +803,7 @@ def get_links(url):
     return links
 ```
 
-You might need to call this several times during a short interval, so you realise it might be worth caching the results so you don't keep fetching the same page over and over:
+You need to call this several times during a short interval, so you realise it is worth caching the results so you don't keep fetching the same page over and over:
 
 ```py
 _links_cache = {}  # Maps URLs to lists of links.
@@ -817,19 +817,22 @@ def get_links(url):
 
 The cache works, but [you've polluted the logic of your function with something that doesn't belong there](#what-goes-into-a-function-and-what-doesnt): caching.
 The job of your function was to fetch links from a URL, and that's it.
-On top of that, if you want to add caching to other functions, you will have to modify the functions again, and yet the logic will be very similar.
+On top of that, if you want to add caching to other functions, you will have to modify those functions, and you'll end up writing duplicate caching logic.
 
 That's when decorators come into play: a decorator allows you to factor out this logic so that you can apply it repeatedly and independently to multiple functions.
-In practical terms, decorators tend to be functions that accept a function to decorate (the function to be enhanced) and then define an inner function that implements some useful functionality around the function to be decorated:
+In practical terms, a decorator is a function that accepts a function to decorate (the function to be enhanced) and then defines an inner function that implements some useful functionality around the function to be decorated:
 
 ```py
 def cache(function):
     _cache = {}
+
     def cached_function(*args):
         if args not in _cache:
             result = function(*args)
             _cache[args] = result
+
         return _cache[args]
+
     return cached_function
 ```
 
@@ -874,7 +877,7 @@ print(double(3))  # 6
 ```
 
 There is a lot more to decorators than just this, so [read this article if you'd like to learn more about decorators](/blog/pydonts/decorators).
-Remember that the key idea is that [a decorator is a **reusable function**][^1] that allows you to enhance other functions with functionality that is useful but orthogonal to the original purpose of the function.
+Remember that the key idea is that a decorator is a **reusable function**[^1] that allows you to enhance other functions with functionality that is useful but orthogonal to the original purpose of the function.
 
 [^1]: If you read the section “[Not all functions are functions](#not-all-functions-are-functions)” you may realise that it's enough for a decorator to be a callable.
 Decorators may also accept callables that aren't functions and they may return callables that aren't functions.
@@ -953,11 +956,11 @@ On top of regular functions and generator functions, there is another type of fu
 An asynchronous function, also called a coroutine function, is a function that's defined with `async def`:
 
 ```py
-async def coroutine():
+async def coro_func():
     pass
 
-print(coroutine)    # <function coroutine at 0x103e6b1c0>
-print(coroutine())  # <coroutine object coroutine at 0x103dc9900>
+print(coro_func)    # <function coro_func at 0x103e6b1c0>
+print(coro_func())  # <coroutine object coro_func at 0x103dc9900>
 ```
 
 Asynchronous functions are used in asynchronous programming to define coroutines, which are objects whose execution can be paused and resumed at different times, allowing you to switch back and forth between multiple coroutines.
@@ -975,13 +978,14 @@ async def print_after(msg, seconds):
     print(msg)
 ```
 
-Asynchronous functions return coroutines, not results.
+Calling an asynchronous function doesn't “run” the function in the usual way.
+Instead, it produces a coroutine.
 That's why calling `print_after("Hello, world!", 1)` will not automatically print the string `"Hello, world!"` after waiting for a second.
 
 The function `print_after`, defined above, also uses the special keyword `await`.
 You can think of it as a keyword that facilitates the coordination between multiple coroutines, since it is what allows execution to switch back and forth between coroutines.
 
-If you inspect the code below, you will see that `"scheduled before"` is scheduled first, but the program prints it last:
+If you look at the code below, you will see that `"scheduled before"` is scheduled first, but if you run the program, that string is printed last:
 
 ```py
 import asyncio
@@ -1043,14 +1047,15 @@ len_sort = lambda items: sorted(items, key=len)
 
 This is called **partial function application**: you already specified some of the arguments that your function will accept, and you'll pass in the rest of the arguments later.
 This allows you to take generic functions and specialise them for repeated use.
+In this example, you are specialising the built-in `sorted` to create a function that sorts values by length.
 
 
 ### How to do partial function application in Python
 
 Python provides tools that are designed specifically with partial function application in mind, and the main tool for that is `functools.partial`.
-`functools.partial` is preferred over defining your own function with `def` or your own anonymous function because it conveys the intent of partial function application in a clearer manner, it supports introspection, and it provides other niceties.
+`functools.partial` is preferred over defining your own function with `def` or your own anonymous function because it conveys the intent of partial function application in a clearer manner and it supports introspection, along with other niceties.
 
-Using `functools.partial`, the example with `sorted(..., key=len)` would be written as
+Using `functools.partial`, the example with `sorted(..., key=len)` becomes
 
 ```py
 from functools import partial
@@ -1103,7 +1108,7 @@ You use the built-ins `str` and `int` to convert integers to strings and vice ve
 It doesn't matter that these are classes and not functions.
 
 Understanding the distinction will help you understand the Python language a bit better, though.
-The page with the “built-in functions” lists some classes because they are _callables_, just like functions.
+The page with the “built-in functions” lists some classes because they are _callables_, the main behaviour you associate with the idea of a function.
 Classes and functions can be used with the parentheses `()` to get them to perform some action or computation, and that is the behaviour that you care about.
 
 As long as `range` remains a callable and its behaviour stays unchanged, it doesn't matter what type of callable it is.
@@ -1111,9 +1116,9 @@ You won't care or be affected if someone modifies the Python source code to make
 
 This is an example of duck typing in action.
 If it quacks like a duck, it must be a duck...
-In this case, if it is a callable like a function, it must be a function...
+In this case, if it is a callable like a function, use it like a function!
 
-In fact, Python provides a function `callable` that allows you to check if a given object is callable, and naturally, that returns `True` for all the “built-in functions”, regardless of whether they are functions or classes:
+Python even provides a function `callable` that allows you to check if a given object is callable, and naturally, that returns `True` for all the “built-in functions”, regardless of whether they are functions or classes:
 
 ```py
 print(callable(print))  # True
@@ -1169,7 +1174,7 @@ print(callable(nn))  # True
 
 ## Summary
 
-You've seen everything functions can do and everything you can do with functions, so let's recap the key takeaways:
+You've seen everything you can do with functions, so let's recap the key takeaways:
 
  - a function should [do one thing and should do it well](#what-goes-into-a-function-and-what-doesnt);
  - if you want to enhance a function with functionality that isn't directly tied to the function, you should [use a decorator](#decorators);
