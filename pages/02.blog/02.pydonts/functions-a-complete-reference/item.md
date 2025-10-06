@@ -39,7 +39,7 @@ Feel free to skim through this article to see everything that is covered here an
 ## What goes into a function and what doesn't
 
 Do not overcrowd your functions with logic for four or five different things.
-A function should do a single thing and it should do it well.
+A function should do a single thing, and it should do it well.
 And the name of the function should clearly tell you what your function does.
 
 If you are unsure about whether some piece of code should be a single function or multiple functions, I think it's best to err on the side of too many functions.
@@ -146,7 +146,7 @@ def process_order(order):
     write_receipt(order)
 ```
 
-Now that the code is split into more modular functions it becomes much easier to make changes to the code.
+Now that the code is split into more modular functions, it becomes much easier to make changes to the code.
 For example, the logic to apply discounts is still suboptimal.
 Maybe it makes more sense to have a dictionary with the items that currently have a sale and compute the new prices from that:
 
@@ -180,7 +180,7 @@ Note, however, that you can argue that the function `process_order` _still_ does
 The difference is that the function `process_order` is just the “driver” of your program now, since it takes some input but then passes everything along to all of the steps (subfunctions) required to process an order.
 
 Sometimes, you want to add code to a function that is helpful to the developer or the user, but that is not directly related to the original goal of the function.
-For example, you may want to add logging to a function, or a cache, or profiling.
+For example, you may want to add logging to a function, a cache, or profiling.
 When you want to add these behaviours that are _orthogonal_ to the original objective of the function, you will want to [use a decorator](#decorators).
 
 
@@ -239,7 +239,7 @@ f(a=1, b=2, c=3, d=4)  # 1 2 {'c': 3, 'd': 4}
 Like with `*args`, `**kwargs` is a convention that we follow in the Python world.
 The parameter can have any other name, as long as it has the two asterisks on its left.
 
-`*args` and `**kwargs` can be present in the same function signature but the variable positional arguments must always come first.
+`*args` and `**kwargs` can be present in the same function signature, but the variable positional arguments must always come first.
 When it comes to ordering parameters, it is also worth mentioning that `*args` must come after all other positional arguments and `**kwargs` must be the last parameter of your function signature.
 
 
@@ -257,7 +257,7 @@ print(f(1, b=2))  # 3
 print(f(a=1, b=2))  # TypeError
 ```
 
-You will not need to use the forward slash `/` in the parameter list very often, but it's mostly useful when the names of the parameters are not meaningful and it's the position that is relevant.
+You will not need to use the forward slash `/` in the parameter list very often, but it's mostly useful when the names of the parameters are not meaningful, and it's the position that is relevant.
 
 You can do a similar thing to force some parameters to accept only arguments by keyword.
 If you include an asterisk `*` in the parameter list of a function signature, all parameters to the right of the asterisk will only accept keyword arguments:
@@ -283,7 +283,7 @@ print(pow(2, 32) % 997)  # 966
 print(pow(2, 32, 997))  # 966
 ```
 
-The reason `pow` has the third parameter `mod` is because there is an efficient algorithm to compute expressions like `(base ** exp) % mod`, and writing `pow(base, exp) % mod` does not make use of that algorithm.
+The reason `pow` has the third parameter `mod` is that there is an efficient algorithm to compute expressions like `(base ** exp) % mod`, and writing `pow(base, exp) % mod` does not make use of that algorithm.
 To increase the readability of function calls like `pow(2, 32, 997)`, you could've defined the function `pow` like this:
 
 ```py
@@ -293,7 +293,7 @@ def pow_(base, exp, *, mod=None):
 print(pow_(2, 32, mod=997))  # 966
 ```
 
-In the snippet above, the function call becomes clearer because you were forced to use the parameter name when passing the argument `997` in.
+In the snippet above, the function call becomes clearer because you were forced to use the parameter name when passing in the argument `997`.
 
 
 ### Mutable default arguments
@@ -414,7 +414,7 @@ I wanted to share a rule of thumb that can help you determine how to order the p
 Talking about the “correct ordering of your function parameters” is a bit of a pedantic discussion to have, but sometimes it makes things easier when you're using things like [closures](#closures) or [partial functions](#partial-function-application), which we'll cover later.
 
 Order your function parameters by how likely the caller is to change them.
-Parameters that are more likely to remain the same across function calls go first and parameters that are more likely to change across function calls go last.
+Parameters that are more likely to remain the same across function calls go first, and parameters that are more likely to change across function calls go last.
 
 For example, the Portuguese government has a platform where I can check all of the receipts I have issued as a trainer during a specific time period.
 They are likely to have an endpoint, somewhere, that accepts a taxpayer number, a time interval start date, and a time interval end date, and the endpoint retrieves all of the receipts for that taxpayer within that timeframe.
@@ -439,7 +439,7 @@ According to my recommendation, the first signature is better.
 Why?
 It is much more common to have a user log in and fetch receipts for different time frames than it is for a group of users to log in, one at a time, to fetch receipts from the exact same time frame.
 
-Opting for `fetch_receipts(taxpayer, start_date, end_date)` is not only more sensible, but also more practical, for example [when using partial function application](#partial-function-application).
+Opting for `fetch_receipts(taxpayer, start_date, end_date)` is not only more sensible, but also more practical, for example, [when using partial function application](#partial-function-application).
 
 
 ### Parameters versus arguments
@@ -474,16 +474,16 @@ print(clip(17, 0, 10))  # 10
 ```
 
 I'm talking about “binding that function to the name `clip`” because the function object is an entity that exists outside of the name.
-The name is just a way to refer to it and you can change it:
+The name is just a way to refer to it, and you can change it:
 
 ```py
 other_name = clip
 print(other_name(17, 0, 10))  # 10
 ```
 
-It's the same function and the same underlying code but with a different name.
+It's the same function and the same underlying code, but with a different name.
 
-However, there are some situations in which it is useful to have something lighter that doesn't require a statement nor a name.
+However, there are some situations in which it is useful to have something lighter that doesn't require a statement or a name.
 That is what the keyword `lambda` is for.
 By using the keyword `lambda`, you can write an expression that evaluates to a function.
 
@@ -493,8 +493,8 @@ Just like the expression `1 + 4` evaluates to the integer `5`, the expression `l
 print(lambda x: x + 1)  # <function <lambda> at 0x1051efc40>
 ```
 
-Since the code `lambda x: x + 1` _is_ a function (the whole thing), you can use parenthesis to call it.
-However, if you write `lambda x: x + 1()`, Python will think you are trying to call `1`, so you need to wrap the anonymous function in parenthesis, too:
+Since the code `lambda x: x + 1` _is_ a function (the whole thing), you can use parentheses to call it.
+However, if you write `lambda x: x + 1()`, Python will think you are trying to call `1`, so you need to wrap the anonymous function in parentheses, too:
 
 ```py
 print(
@@ -532,9 +532,9 @@ print(
 
 ### The signature of an anonymous function
 
-What you learned about function signatures, namely [the usage of `*args` and `**kwargs`](#args-and-kwargs), the [issue with mutable default arguments](#mutable-default-arguments), and how to define [positional-only and keyword-only parameters](#positional-only-and-keyword-only-arguments), also apply to the signature of an anonymous function.
+What you learned about function signatures, namely [the usage of `*args` and `**kwargs`](#args-and-kwargs), the [issue with mutable default arguments](#mutable-default-arguments), and how to define [positional-only and keyword-only parameters](#positional-only-and-keyword-only-arguments), also applies to the signature of an anonymous function.
 
-The definition of the signature of an anonymous function does not require the parenthesis around the parameter list, but everything else is the same.
+The definition of the signature of an anonymous function does not require the parentheses around the parameter list, but everything else is the same.
 So, the functions below all have valid signatures:
 
 ```py
@@ -564,7 +564,7 @@ To understand how (anonymous) functions can be used within higher-order function
 
 ## Functions as objects
 
-Python is far from being a perfect language, but if there is something I like about Python is its consistency.
+Python is far from being a perfect language, but one thing I like about Python is its consistency.
 In Python, everything is an object.
 And when I say everything, I mean _everything_.
 Ok, everything except keywords.
@@ -770,7 +770,7 @@ inner_function = outer()
 print(inner_function.__name__)  # inner
 ```
 
-If you run the function `inner_function`, do you see the number `73` printed on the screen or do you get an error?
+If you run the function `inner_function`, do you see the number `73` printed on the screen, or do you get an error?
 
 Because of closures, the function `inner_function` still works:
 
@@ -801,7 +801,7 @@ def no_closure():
 print(no_closure.__closure__)  # None
 ```
 
-The example with the functions `outer` and `inner` shows you a closure in action, but doesn't really explain why closures are useful nor does it give you a good example of a closure being used for something useful.
+The example with the functions `outer` and `inner` shows you a closure in action, but doesn't really explain why closures are useful, nor does it give you a good example of a closure being used for something useful.
 However, closures are very important for [decorators](#decorators), the subject of the next section.
 
 
@@ -862,7 +862,7 @@ def get_links(url):
 get_links = cache(get_links)  # `get_links` now has a cache.
 ```
 
-Most of the time, you'll want to apply a decorator as soon as you define a function, and for that you can use the special syntax that uses the at sign `@`.
+Most of the time, you'll want to apply a decorator as soon as you define a function, and for that, you can use the special syntax that uses the at sign `@`.
 The at sign `@` is only syntactic sugar, though, so the previous snippet is equivalent to the one below:
 
 ```py
@@ -885,7 +885,7 @@ def double(x):
 
 # First call takes ~2 seconds:
 print(double(3))  # 6
-# Since the result is cached, next call is instantaneous:
+# Since the result is cached, the next call is instantaneous:
 print(double(3))  # 6
 ```
 
@@ -903,10 +903,10 @@ def gf():
     yield 0
 ```
 
-But what does `yield` do and what's the point?
+But what does `yield` do, and what's the point?
 
 I like to think of the keyword `yield` as a “temporary return”.
-You can use the keyword `yield` to return values to the caller of the function, but instead of exiting the function for good, the keyword `yield` pauses the function and you can resume its execution later.
+You can use the keyword `yield` to return values to the caller of the function, but instead of exiting the function for good, the keyword `yield` pauses the function, and you can resume its execution later.
 
 Consider the function `return123`:
 
@@ -917,7 +917,7 @@ def return123():
     return 3
 ```
 
-If you call this function, you get the value `1` and there is no way to ever get to the value `2`.
+If you call this function, you get the value `1`, and there is no way to ever get to the value `2`.
 However, if you replace the keyword `return` with the keyword `yield`, you can iterate over the multiple usages of the keyword `yield` to access the values `1`, `2`, and `3`:
 
 ```py
@@ -933,13 +933,13 @@ for value in yield123():
 # 3
 ```
 
-The reason you can iterate over the values is because a generator function (like `yield123`) produces a generator object, which is an iterable:
+The reason you can iterate over the values is that a generator function (like `yield123`) produces a generator object, which is an iterable:
 
 ```py
 print(yield123())  # <generator object yield123 at 0x103dc9fc0>
 ```
 
-When you write `for value in yield123()` you're iterating over this generator object, not over the generator function directly.
+When you write `for value in yield123()`, you're iterating over this generator object, not over the generator function directly.
 So, a generator function is just a convenient way of defining iterables.
 
 The good thing about generator functions is that you can write code that is as complex or as simple as you'd like, and you can use that to generate values that you care about.
@@ -973,7 +973,7 @@ print(coroutine)    # <function coroutine at 0x103e6b1c0>
 print(coroutine())  # <coroutine object coroutine at 0x103dc9900>
 ```
 
-Asynchronous functions are used in asynchronous programming to define coroutines, which are objects whose execution can be paused and resumed at different times, allowing you to switch back and forth multiple different coroutines.
+Asynchronous functions are used in asynchronous programming to define coroutines, which are objects whose execution can be paused and resumed at different times, allowing you to switch back and forth between multiple coroutines.
 
 (If “objects that can be paused and resumed at different times” sounds like generators, then well spotted!
 In the past, coroutines were defined using the generator function syntax when the `async`/`await` keywords were not supported.)
@@ -1004,7 +1004,7 @@ asyncio.run(main())
 # scheduled before
 ```
 
-To learn more about the world of asynchronous programming I recommend that you [read this cooking analogy that explains the asynchronous programming model and how coroutines fit into it](/blog/til/cooking-with-asyncio).
+To learn more about the world of asynchronous programming, I recommend that you [read this cooking analogy that explains the asynchronous programming model and how coroutines fit into it](/blog/til/cooking-with-asyncio).
 
 
 ## Partial function application
@@ -1048,13 +1048,13 @@ Maybe you even considered using an [anonymous function](#anonymous-functions) fo
 len_sort = lambda items: sorted(items, key=len)
 ```
 
-This is called **partial function application**: you already specified some of the arguments that your function will accept and you'll pass in the rest of the arguments later.
+This is called **partial function application**: you already specified some of the arguments that your function will accept, and you'll pass in the rest of the arguments later.
 
 
 ### How to do partial function application in Python
 
 Python provides tools that are designed specifically with partial function application in mind, and the main tool for that is `functools.partial`.
-`functools.partial` is preferred over defining your own function with `def` or your own anonymous function because it conveys the intent of partial function application in a clearer manner, because it supports introspection, and because it provides other niceties.
+`functools.partial` is preferred over defining your own function with `def` or your own anonymous function because it conveys the intent of partial function application in a clearer manner, it supports introspection, and it provides other niceties.
 
 Using `functools.partial`, the example with `sorted(..., key=len)` would be written as
 
@@ -1101,26 +1101,26 @@ Is this distinction important?
 
 ### Callables versus functions
 
-Well yes, but actually no.
+Well, yes, but actually no.
 
 In practice, the distinction does not matter.
 You use the built-ins `range`, `enumerate`, or `zip`, as if they were functions.
 You typically call them and use their results immediately in a `for` loop, for example.
-You use the built-ins `str` and `int` to convert integers to strings and vice-versa.
+You use the built-ins `str` and `int` to convert integers to strings and vice versa.
 It doesn't really matter that these are classes and not functions.
 
 However, understanding the distinction will help you understand the Python language a bit better.
 The page with the “built-in functions” lists some classes because they are _callables_, just like functions.
-Classes and functions can be used with the parenthesis `()` to get them to perform some action or computation, and that is the behaviour that you care about.
+Classes and functions can be used with the parentheses `()` to get them to perform some action or computation, and that is the behaviour that you care about.
 
-If someone modifies the Python source code to make `range` a function instead of a class, you won't really care about it as long as the behaviour stays the same and you can still use `range` with the parenthesis, like `range(10, 100, 2)`.
+If someone modifies the Python source code to make `range` a function instead of a class, you won't really care about it as long as the behaviour stays the same and you can still use `range` with the parentheses, like `range(10, 100, 2)`.
 In other words, as long as `range` remains a callable and its behaviour stays unchanged, it doesn't matter what type of callable it is: a function, a class, or something else entirely.
 
 This is an example of duck typing in action.
 If it quacks like a duck, it must be a duck...
 In this case, if it is a callable like a function, it must be a function...
 
-In fact, Python provides a function `callable` that allows you to check if a given object is callable, and naturally that returns `True` for all the “built-in functions”, regardless of whether they are functions or classes:
+In fact, Python provides a function `callable` that allows you to check if a given object is callable, and naturally, that returns `True` for all the “built-in functions”, regardless of whether they are functions or classes:
 
 ```py
 print(callable(print))  # True
@@ -1147,7 +1147,7 @@ plus_5 = make_adder(5)
 print(plus_5(10))  # 15
 ```
 
-The first argument of `Callable` is a list of the types of the arguments of the callable and the second argument is the return type.
+The first argument of `Callable` is a list of the types of the arguments of the callable, and the second argument is the return type.
 For example, `Callable[[int, str], bool]` is a callable that accepts an integer and a string and returns a Boolean.
 
 
@@ -1206,3 +1206,4 @@ This Pydon't showed you that:
 If you liked this Pydon't be sure to leave a reaction below and share this with your friends and fellow Pythonistas.
 Also, [don't forget to subscribe to the newsletter][subscribe] so you don't miss a single Pydon't!
 <!-- ^ -->
+
