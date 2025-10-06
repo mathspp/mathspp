@@ -8,18 +8,16 @@ You will fix that by reading this article.
 Knowing how to use the keyword `def` is just the first step towards knowing how to define and use functions in Python.
 As such, this Pydon't covers everything else there is to learn:
 
- - How to structure and organise functions.
- - How to work with a function signature, including parameter order, `*args` and `**kwargs`, and the special characters `*` and `/`.
- - What anonymous functions are, how to define them with the keyword `lambda`, and when to use them.
- - What it means for functions to be objects and how to leverage that in your code.
- - How closures seem to defy a fundamental rule of scoping in Python.
- - How to leverage closures to create the decorator pattern.
- - What the keyword `yield` is and what generator functions are.
- - What the keyword `async` is and what asynchronous functions are.
- - How partial function application allows you to create new functions from existing functions.
- - How the term “function” is overloaded and how you can create your own objects that behave like functions.
-
-Feel free to skim through this article to see everything that is covered here and then bookmark it to use it as a reference for whenever you have questions later, or for when you forget something about functions.
+ - [How to structure and organise functions](#what-goes-into-a-function-and-what-doesnt).
+ - [How to work with a function signature](#the-function-signature), including [parameter order](#ordering-the-parameters), [`*args` and `**kwargs`](#args-and-kwargs), and [the special syntax introduced by `*` and `/`](#positional-only-and-keyword-only-arguments).
+ - [What anonymous functions are](#anonymous-functions), how to define them with the keyword `lambda`, and [when to use them](#use-case-rule-of-thumb).
+ - [What it means for functions to be objects](#functions-as-objects) and how to leverage that in your code.
+ - [How closures seem to defy a fundamental rule of scoping in Python](#closures).
+ - [How to leverage closures to create the decorator pattern](#decorators).
+ - [What the keyword `yield` is and what generator functions are](#generator-functions).
+ - [What the keyword `async` is and what asynchronous functions are](#asynchronous-functions).
+ - [How partial function application allows you to create new functions from existing functions](#partial-function-application).
+ - [How the term “function” is overloaded](#not-all-functions-are-functions) and how you can [create your own objects that behave like functions](#creating-your-own-callables).
 
 <!--v-->
 !!! Bookmark this reference for later or download the [“Pydon'ts – write elegant Python code”](/books/pydonts) ebook for free.
