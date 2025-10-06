@@ -18,16 +18,16 @@
     "words": 35212
   },
   "programming": {
-    "articles": 308,
-    "code_snippets": 3780,
-    "loc": 36704,
-    "words": 365602
+    "articles": 309,
+    "code_snippets": 3854,
+    "loc": 37131,
+    "words": 371450
   },
   "python": {
-    "articles": 301,
-    "code_snippets": 3658,
-    "loc": 35596,
-    "words": 362646
+    "articles": 302,
+    "code_snippets": 3732,
+    "loc": 36023,
+    "words": 368494
   },
   "algorithms": {
     "articles": 25,
@@ -564,16 +564,16 @@
     "words": 430
   },
   "__all": {
-    "articles": 427,
-    "code_snippets": 3919,
-    "loc": 37823,
-    "words": 454759
+    "articles": 428,
+    "code_snippets": 3993,
+    "loc": 38250,
+    "words": 460607
   },
   "fp": {
-    "articles": 4,
-    "code_snippets": 119,
-    "loc": 862,
-    "words": 10077
+    "articles": 5,
+    "code_snippets": 193,
+    "loc": 1289,
+    "words": 15925
   },
   "modular arithmetics": {
     "articles": 1,
