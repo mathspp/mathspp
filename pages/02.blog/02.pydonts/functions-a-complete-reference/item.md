@@ -2,53 +2,41 @@ This article serves as a complete reference for all the non-trivial things you s
 
 ===
 
-![](thumbnail.webp)
+Functions are the basic building block of any Python program you write, and yet, many developers don't leverage their full potential.
+You will fix that by reading this article.
 
-There is a lot to learn about functions after you learn how to define a function.
-In fact, knowing how to use the keyword `def` is just the first step, really.
+Knowing how to use the keyword `def` is just the first step towards knowing how to define and use functions in Python.
+As such, this Pydon't covers everything else there is to learn:
 
-As such, in this Pydon't, you will learn:
-
- - what should go into a function and what shouldn't;
- - a good heuristic to help you order your parameters;
- - the difference between parameters and arguments;
- - how to force a function to accept positional-only and/or argument-only arguments;
- - that you can inspect a function signature dynamically;
- - how to avoid mutability issues with default arguments;
- - to define functions that accept arbitrary numbers of positional and/or keyword arguments;
- - about anonymous functions and the keyword `lambda`;
- - to leverage the fact that functions are objects in their own right;
- - how closures preserve enclosing variables alive for functions to access them;
- - that decorators allow you to enhance multiple functions with the same functionality;
- - about the keyword `yield` and generator functions;
- - about the keywords `async` and `await` and coroutine functions;
- - how some functions get new meanings when you fix some of their arguments;
- - what partial function application is and how `functools.partial` is relevant for that;
- - that some built-in functions aren't really functions;
- - the distinction between a function and a callable;
- - about the type `Callable` and how to use it for functions; and
- - how to create your own callables.
+ - How to structure and organise functions.
+ - How to work with a function signature, including parameter order, `*args` and `**kwargs`, and the special characters `*` and `/`.
+ - What anonymous functions are, how to define them with the keyword `lambda`, and when to use them.
+ - What it means for functions to be objects and how to leverage that in your code.
+ - How closures seem to defy a fundamental rule of scoping in Python.
+ - How to leverage closures to create the decorator pattern.
+ - What the keyword `yield` is and what generator functions are.
+ - What the keyword `async` is and what asynchronous functions are.
+ - How partial function application allows you to create new functions from existing functions.
+ - How the term “function” is overloaded and how you can create your own objects that behave like functions.
 
 Feel free to skim through this article to see everything that is covered here and then bookmark it to use it as a reference for whenever you have questions later, or for when you forget something about functions.
 
 <!--v-->
-!!! You can get all the Pydon'ts as a [free ebook with over +400 pages and hundreds of tips](/books/pydonts). [Download the ebook “Pydon'ts – write elegant Python code” here](/books/pydonts).
+!!! Bookmark this reference for later or download the [“Pydon'ts – write elegant Python code”](/books/pydonts) ebook for free.
+!!! The ebook contains this chapter and many others, including hundreds of tips to help you write better Python code.
+!!! [Download the ebook “Pydon'ts – write elegant Python code” here](/books/pydonts).
 <!--^-->
 
 
 ## What goes into a function and what doesn't
 
 Do not overcrowd your functions with logic for four or five different things.
-A function should do a single thing, and it should do it well.
-And the name of the function should clearly tell you what your function does.
+A function should do a single thing, and it should do it well, and the name of the function should clearly tell you what your function does.
 
-If you are unsure about whether some piece of code should be a single function or multiple functions, I think it's best to err on the side of too many functions.
+If you are unsure about whether some piece of code should be a single function or multiple functions, it's best to err on the side of too many functions.
 That is because a function is a modular piece of code, and the smaller your functions are, the easier it is to compose them together to create more complex behaviours.
 
-Now I am going to illustrate the point with an exaggerated example.
-Hopefully, the exaggeration helps you understand the point I want to make.
-
-Consider the function `process_order` defined below.
+Consider the function `process_order` defined below, an exaggerated example that breaks these best practices to make the point clearer.
 While it is not incredibly long, it does too many things:
 
 ```py
@@ -97,13 +85,13 @@ If you run this code, the file `receipt.txt` will look like this:
 ```
 
 Suppose that the week changes and the products on sale are different.
-It is going to be a bit painful to find the code that computes the discounts.
-And, to be completely honest, the current logic is terrible.
-Maybe you should store discounted products somewhere and compute the discounted prices with the help of that information?
+The current discount logic is terrible and it's buried inside somewhere in the function `process_order`, so finding it and updating it will be painful.
 
-If you split the function `process_order` into modular subfunctions, this becomes simpler:
+If you split the function `process_order` into modular subfunctions, it becomes easier to find the logic you care about:
 
 ```py
+# ✅ Refactored for clarity: broken up into smaller functions.
+
 def validate_order(order):
     for item, quantity, price in order:
         if quantity <= 0:
@@ -146,9 +134,9 @@ def process_order(order):
     write_receipt(order)
 ```
 
-Now that the code is split into more modular functions, it becomes much easier to make changes to the code.
-For example, the logic to apply discounts is still suboptimal.
-Maybe it makes more sense to have a dictionary with the items that currently have a sale and compute the new prices from that:
+Now that the code is split into more modular functions, it's easier to change the code.
+For example, the current discount logic is terrible because it hardcodes the discounts in the function.
+It makes more sense to have a dictionary with the items that currently have a sale and compute the new prices from that:
 
 ```py
 # ...
@@ -168,20 +156,18 @@ def apply_discounts(order):
 # ...
 ```
 
-What if the receipt should be printed in a different format?
-All you have to do is change the function `write_receipt` and all other functions can stay the same.
-You get the point.
+Making this focused change is easy because you only have to update a single, independent function.
+If other requirements change – what if the receipt must be printed in a different format? –, then all you have to do is find the appropriate function and update it.
+Everything else stays untouched.
 
-The example I showed you was of a function that was doing too many things that go towards the same goal.
-Here, the example was processing an order.
 By splitting the different steps into smaller subfunctions, it becomes easier to update those steps when the requirements of your program change.
 
 Note, however, that you can argue that the function `process_order` _still_ does too many things, since it's validating the order, applying the discounts, and writing the receipt.
-The difference is that the function `process_order` is just the “driver” of your program now, since it takes some input but then passes everything along to all of the steps (subfunctions) required to process an order.
+Before, the function `process_order` contained all the code that did those things, but now it's just the “driver” of your program, passing the responsibility of computing the different steps to different functions.
 
 Sometimes, you want to add code to a function that is helpful to the developer or the user, but that is not directly related to the original goal of the function.
 For example, you may want to add logging to a function, a cache, or profiling.
-When you want to add these behaviours that are _orthogonal_ to the original objective of the function, you will want to [use a decorator](#decorators).
+When you want to add these behaviours that are _orthogonal_ to the original objective of the function, you will want to [use a decorator](#decorators), something you'll learn about later.
 
 
 ## The function signature
@@ -245,7 +231,7 @@ When it comes to ordering parameters, it is also worth mentioning that `*args` m
 
 ### Positional-only and keyword-only arguments
 
-If you want to write a function signature for which one or more parameters can only be used as positional parameters, then you might use a forward slash `/` in the signature, as if it were a parameter.
+If you want to write a function signature for which one or more parameters can only be used as positional parameters, then you might use a forward slash `/` in the signature.
 All parameters to the left of the forward slash are automatically positional-only:
 
 ```py
@@ -257,10 +243,10 @@ print(f(1, b=2))  # 3
 print(f(a=1, b=2))  # TypeError
 ```
 
-You will not need to use the forward slash `/` in the parameter list very often, but it's mostly useful when the names of the parameters are not meaningful, and it's the position that is relevant.
+This syntactic feature is most useful when the names of the parameters are not meaningful and it is their position that is relevant.
 
-You can do a similar thing to force some parameters to accept only arguments by keyword.
-If you include an asterisk `*` in the parameter list of a function signature, all parameters to the right of the asterisk will only accept keyword arguments:
+You can do a similar thing to force parameters to be keyword-only.
+If you include an asterisk `*` in the parameter list of a function signature, all parameters to the right of the asterisk `*` become keyword-only:
 
 ```py
 def f(a, *, b):
@@ -271,8 +257,7 @@ print(f(1, b=2))  # 3
 print(f(1, 2))  # TypeError
 ```
 
-Using `*` in your parameter list is more common than using `/`.
-A good use case for `*` is when your function has some parameters that modify or configure the main purpose of your function.
+A good use case for `*` is when your function has parameters that act as modifiers or configuration options.
 When that is the case, forcing those parameters to be keyword-only helps document the function call.
 
 For example, the built-in function `pow` has three parameters:
@@ -283,7 +268,7 @@ print(pow(2, 32) % 997)  # 966
 print(pow(2, 32, 997))  # 966
 ```
 
-The reason `pow` has the third parameter `mod` is that there is an efficient algorithm to compute expressions like `(base ** exp) % mod`, and writing `pow(base, exp) % mod` does not make use of that algorithm.
+`pow` accepts the third parameter `mod` because there is an efficient algorithm to compute expressions like `(base ** exp) % mod`, and writing `pow(base, exp) % mod` does not leverage that algorithm.
 To increase the readability of function calls like `pow(2, 32, 997)`, you could've defined the function `pow` like this:
 
 ```py
@@ -326,7 +311,17 @@ default_list = put_in_list.__defaults__[0]
 print(default_list is my_list)  # True
 ```
 
-So, whenever you call `put_in_list` without specifying a list, the list that is used by default is always the same list, which is the one that you can access from the dunder attribute `__defaults__`.
+Whenever you call `put_in_list` without specifying a list, the list that is used by default is always the same list, which is the one that you can access from the dunder attribute `__defaults__`.
+
+The most common way to fix this is by using `None` as the default and then checking for it in the function:
+
+```py
+def put_in_list(value, list_to_put_into=None):
+    if list_to_put_into is None:
+        list_to_put_into = []
+    list_to_put_into.append(value)
+    return list_to_put_into
+```
 
 
 ### (Type) annotations
@@ -359,14 +354,14 @@ def hash(obj: object, /) -> int:
     ...
 ```
 
-The type annotations say that the built-in `hash` accepts any object (which is very generic on purpose) and returns an integer result.
+The type annotations say that the built-in `hash` accepts any object (which is generic on purpose) and returns an integer result.
 
 
 ### The signature object
 
 Python is usually known for its introspection capabilities, and the module `inspect` provides a function `signature` you can use if you need to retrieve information about the signature of a function.
 
-This isn't something you would use very commonly, so here is an example that gives you an idea of the information you can access with `inspect.signature`:
+Here is an example that gives you an idea of the information you can access with `inspect.signature`:
 
 ```py
 from inspect import signature
@@ -405,7 +400,7 @@ print(sig.parameters["sep"].kind)  # POSITIONAL_OR_KEYWORD
 print(sig.parameters["sep"].default == " ")  # True
 ```
 
-You can [read the documentation](https://docs.python.org/3/library/inspect.html#inspect.signature) or [the PEP that introduced `inspect.signature`](https://peps.python.org/pep-0362/) for more information.
+This isn't something you will use often, but if you need it, you can [read the documentation](https://docs.python.org/3/library/inspect.html#inspect.signature) or [the PEP that introduced `inspect.signature`](https://peps.python.org/pep-0362/) for more information.
 
 
 ### Ordering the parameters
@@ -457,7 +452,7 @@ def add(a, b):
     return a + b
 ```
 
-Knowing this distinction won't make or break your career as a Python developer, but I think it's important to be aware of these nuances, so that your understanding of the Python language and of programming in general advances.
+Knowing this distinction won't make or break your career as a Python developer, but it's important to be aware of these nuances, so that your understanding of the Python language and of programming in general advances.
 
 
 ## Anonymous functions
@@ -474,27 +469,18 @@ print(clip(17, 0, 10))  # 10
 ```
 
 I'm talking about “binding that function to the name `clip`” because the function object is an entity that exists outside of the name.
-The name is just a way to refer to it, and you can change it:
-
-```py
-other_name = clip
-print(other_name(17, 0, 10))  # 10
-```
-
-It's the same function and the same underlying code, but with a different name.
-
-However, there are some situations in which it is useful to have something lighter that doesn't require a statement or a name.
+In fact, there are situations in which you need a function object, but you don't need the ceremony of defining it with the keyword `def` and giving it a name.
 That is what the keyword `lambda` is for.
-By using the keyword `lambda`, you can write an expression that evaluates to a function.
 
+By using the keyword `lambda`, you can write an expression that evaluates to a function.
 Just like the expression `1 + 4` evaluates to the integer `5`, the expression `lambda x: x + 1` evaluates to the function that accepts an argument `x` and returns `x + 1`:
 
 ```py
 print(lambda x: x + 1)  # <function <lambda> at 0x1051efc40>
 ```
 
-Since the code `lambda x: x + 1` _is_ a function (the whole thing), you can use parentheses to call it.
-However, if you write `lambda x: x + 1()`, Python will think you are trying to call `1`, so you need to wrap the anonymous function in parentheses, too:
+Since the code `lambda x: x + 1` _is_ a function, you can use parentheses to call it, as long as you place the parentheses correctly.
+If you write `lambda x: x + 1()`, Python will think you are trying to call `1`, so you need to wrap the anonymous function in parentheses:
 
 ```py
 print(
@@ -559,7 +545,7 @@ lambda x, /, y, *, z: ...  # `x` is positional-only, `y` can be whatever you wan
 ### Use-case rule of thumb
 
 As a good rule of thumb, you'll want to use anonymous functions to create one-off functions to be used within higher-order functions.
-To understand how (anonymous) functions can be used within higher-order functions, you'll want to read about [using functions as objects](#functions-as-objects).
+To understand how (anonymous) functions can be used within higher-order functions, you'll want to read about [using functions as objects](#functions-as-objects), which is what comes next.
 
 
 ## Functions as objects
@@ -588,7 +574,7 @@ And much more!
 
 ### Don't wrap functions in anonymous functions
 
-The built-ins `sorted`, `max`, and `min`, accept a keyword argument `key` that turns these three built-ins into three very versatile built-ins.
+The built-ins `sorted`, `max`, and `min`, accept a keyword argument `key` that turns these three built-ins into three versatile built-ins.
 The keyword argument `key` is supposed to be a function that gets applied to the values you passed to `sorted`/`max`/`min`, and the values that the key function returns are the values that the built-ins `sorted`/`max`/`min` rely on to compute the ordering.
 
 As an illustrative example, let us take the function `max`.
@@ -732,7 +718,7 @@ print_x()  # 73
 ```
 
 Closures create an exception to this rule.
-A closure is like a bubble that keeps variables from a function alive, but only in a very specific scenario.
+A closure is like a bubble that keeps variables from a function alive, but only in a specific scenario.
 Consider the snippet of code below, where the function `outer` defines a function called `inner` and then calls it:
 
 ```py
@@ -757,7 +743,7 @@ def outer():
 outer()  # 73
 ```
 
-Now, [because functions are objects](#functions-as-objects), if the function `outer` returns the function `inner` instead of calling it, suddenly the function `inner` will be referencing a variable `x` that was defined in the enclosing scope of `outer`, but it will try to access it long after the function `outer` is done for:
+[Because functions are objects](#functions-as-objects), if the function `outer` returns the function `inner` instead of calling it, suddenly the function `inner` will be referencing a variable `x` that was defined in the enclosing scope of `outer`, but it will try to access it long after the function `outer` is done for:
 
 ```py
 def outer():
@@ -801,8 +787,8 @@ def no_closure():
 print(no_closure.__closure__)  # None
 ```
 
-The example with the functions `outer` and `inner` shows you a closure in action, but doesn't really explain why closures are useful, nor does it give you a good example of a closure being used for something useful.
-However, closures are very important for [decorators](#decorators), the subject of the next section.
+The example with the functions `outer` and `inner` shows you a closure in action, but doesn't explain why closures are useful, nor does it give you a good example of a closure being used for something useful.
+That's what the next section is for, where you will learn about [decorators](#decorators).
 
 
 ## Decorators
@@ -831,7 +817,7 @@ def get_links(url):
     return _links_cache[url]
 ```
 
-The cache works, but now [you've polluted the logic of your function with something that doesn't belong there](#what-goes-into-a-function-and-what-doesnt): caching.
+The cache works, but [you've polluted the logic of your function with something that doesn't belong there](#what-goes-into-a-function-and-what-doesnt): caching.
 The job of your function was to fetch links from a URL, and that's it.
 On top of that, if you want to add caching to other functions, you will have to modify the functions again, and yet the logic will be very similar.
 
@@ -889,8 +875,11 @@ print(double(3))  # 6
 print(double(3))  # 6
 ```
 
-There is much more to decorators than just this, so [read this article if you'd like to learn more about decorators](/blog/pydonts/decorators).
-However, the key idea is that a decorator is a **reusable function** that allows you to enhance other functions with functionality that is useful but orthogonal to the original purpose of the function.
+There is a lot more to decorators than just this, so [read this article if you'd like to learn more about decorators](/blog/pydonts/decorators).
+Remember that the key idea is that [a decorator is a **reusable function**][^1] that allows you to enhance other functions with functionality that is useful but orthogonal to the original purpose of the function.
+
+[^1]: If you read the section “[Not all functions are functions](#not-all-functions-are-functions)” you may realise that it's enough for a decorator to be a callable.
+Decorators may also accept callables that aren't functions and they may return callables that aren't functions.
 
 
 ## Generator functions
@@ -978,7 +967,7 @@ Asynchronous functions are used in asynchronous programming to define coroutines
 (If “objects that can be paused and resumed at different times” sounds like generators, then well spotted!
 In the past, coroutines were defined using the generator function syntax when the `async`/`await` keywords were not supported.)
 
-The snippet below shows an asynchronous function `print_after` that is defined with the keyword `async` and that uses the keyword `await`:
+The snippet below shows an asynchronous function `print_after` that is defined with the keyword `async`:
 
 ```py
 import asyncio
@@ -988,7 +977,13 @@ async def print_after(msg, seconds):
     print(msg)
 ```
 
-The keyword `await` is what specifies the points inside the coroutine where execution of the coroutine can be switched to run another coroutine, and that's what allows the code below to print `"scheduled after"` before printing `"scheduled before"`:
+Asynchronous functions return coroutines, not results.
+That's why calling `print_after("Hello, world!", 1)` will not automatically print the string `"Hello, world!"` after waiting for a second.
+
+The function `print_after`, defined above, also uses the special keyword `await`.
+You can think of it as a keyword that facilitates the coordination between multiple coroutines, since it is what allows execution to switch back and forth between coroutines.
+
+If you inspect the code below, you will see that `"scheduled before"` is scheduled first, but the program prints it last:
 
 ```py
 import asyncio
@@ -1004,7 +999,7 @@ asyncio.run(main())
 # scheduled before
 ```
 
-To learn more about the world of asynchronous programming, I recommend that you [read this cooking analogy that explains the asynchronous programming model and how coroutines fit into it](/blog/til/cooking-with-asyncio).
+To learn more about the world of asynchronous programming, and to understand what the keyword `await` is doing, I recommend that you [read this cooking analogy that explains the asynchronous programming model and how coroutines fit into it](/blog/til/cooking-with-asyncio).
 
 
 ## Partial function application
@@ -1026,12 +1021,12 @@ fruits = ["banana", "apple", "pear"]
 print(sorted(fruits, key=len))  # ['pear', 'apple', 'banana']
 ```
 
-This shows how different functions can give new meanings to these built-ins by virtue of the keyword parameter `key`.
+This shows how the parameter `key` can be used to give a new meaning to these built-ins.
 
 
 ### Freezing the argument `key`
 
-Now, suppose you wanted to sort many lists by the length of their items.
+Suppose you wanted to sort many lists by the length of their items.
 You could create a small function for that purpose:
 
 ```py
@@ -1049,6 +1044,7 @@ len_sort = lambda items: sorted(items, key=len)
 ```
 
 This is called **partial function application**: you already specified some of the arguments that your function will accept, and you'll pass in the rest of the arguments later.
+This allows you to take generic functions and specialise them for repeated use.
 
 
 ### How to do partial function application in Python
@@ -1092,8 +1088,7 @@ print(type(enumerate))  # <class 'type'>
 print(type(range))      # <class 'type'>
 ```
 
-And there are more.
-There are more of these so-called “built-in functions” that are really classes, not functions.
+And there are more of these so-called “built-in functions” that are classes, not functions.
 
 But...
 Is this distinction important?
@@ -1107,14 +1102,14 @@ In practice, the distinction does not matter.
 You use the built-ins `range`, `enumerate`, or `zip`, as if they were functions.
 You typically call them and use their results immediately in a `for` loop, for example.
 You use the built-ins `str` and `int` to convert integers to strings and vice versa.
-It doesn't really matter that these are classes and not functions.
+It doesn't matter that these are classes and not functions.
 
-However, understanding the distinction will help you understand the Python language a bit better.
+Understanding the distinction will help you understand the Python language a bit better, though.
 The page with the “built-in functions” lists some classes because they are _callables_, just like functions.
 Classes and functions can be used with the parentheses `()` to get them to perform some action or computation, and that is the behaviour that you care about.
 
-If someone modifies the Python source code to make `range` a function instead of a class, you won't really care about it as long as the behaviour stays the same and you can still use `range` with the parentheses, like `range(10, 100, 2)`.
-In other words, as long as `range` remains a callable and its behaviour stays unchanged, it doesn't matter what type of callable it is: a function, a class, or something else entirely.
+As long as `range` remains a callable and its behaviour stays unchanged, it doesn't matter what type of callable it is.
+You won't care or be affected if someone modifies the Python source code to make `range` a function instead of a class.
 
 This is an example of duck typing in action.
 If it quacks like a duck, it must be a duck...
@@ -1169,14 +1164,14 @@ By defining it this way, a neural network `nn` can be used as `nn(input)` to pro
 The dunder method `NeuralNetwork.__call__` makes instances of the type `NeuralNetwork` callables:
 
 ```py
-nn = NeuralNetwork
+nn = NeuralNetwork()
 print(callable(nn))  # True
 ```
 
 
 ## Summary
 
-This Pydon't showed you that:
+You've seen everything functions can do and everything you can do with functions, so let's recap the key takeaways:
 
  - a function should [do one thing and should do it well](#what-goes-into-a-function-and-what-doesnt);
  - if you want to enhance a function with functionality that isn't directly tied to the function, you should [use a decorator](#decorators);
@@ -1184,9 +1179,9 @@ This Pydon't showed you that:
  - the [parameters of a function are the formal variables you write in the function signature when you define a function](#parameters-versus-arguments);
  - as a good rule of thumb, [parameters that are more likely to be changed across multiple function calls should come later in the function signature](#ordering-the-parameters);
  - the [asterisk `*` can be used in the parameter list to force any parameter that comes after it to be keyword-only](#positional-only-and-keyword-only-arguments);
- - the [asterisk `*` can also be used to write a function that accepts an arbitrary number of positional arguments](#args-and-kwargs);
  - the [forward slash `/` can be used in the parameter list to force any parameter that comes before it to be positional-only](#positional-only-and-keyword-only-arguments);
- - the [forward slash `/` can also be used to write a function that accepts an arbitrary number of keyword arguments](#args-and-kwargs);
+ - you can [use `*args` and `**kwargs` to accept an arbitrary number of positional or keyword arguments](#args-and-kwargs), respectively;
+ - the [asterisk `*` can also be used to write a function that accepts an arbitrary number of positional arguments](#args-and-kwargs);
  - the [module `inspect` can be used to inspect a function's signature](#the-signature-object);
  - default arguments are evaluated when the function is defined and, because of that, [you shouldn't use mutable objects as default arguments](#mutable-default-arguments);
  - [the keyword `lambda` can be used to write expressions that define lightweight functions](#anonymous-functions);
@@ -1203,7 +1198,7 @@ This Pydon't showed you that:
  - you can [use the dunder method `__call__` to create your own callables](#creating-your-own-callables).
 
 <!-- v -->
-If you liked this Pydon't be sure to leave a reaction below and share this with your friends and fellow Pythonistas.
-Also, [don't forget to subscribe to the newsletter][subscribe] so you don't miss a single Pydon't!
+If you found this Pydon't useful, check out the [“Pydon'ts – write elegant Python code”](/books/pydonts) ebook.
+It's a free ebook that contains dozens of chapters that teach you to write better Python code.
+[Download the ebook “Pydon'ts – write elegant Python code” here](/books/pydonts).
 <!-- ^ -->
-
