@@ -95,7 +95,6 @@ For more advanced use cases, check [the uv docs](https://docs.astral.sh/uv/) and
 | `uv run --python 3.X python` | Run Python 3.X |
 | `uv python upgrade` | Upgrade your Python versions |
 | `uv python pin 3.X` | Pin to a specific Python version |
-| `uv python pin 3.X --global` | Pin globally |
 
 
 ## For old timers who don't learn new tricks 👴👵
