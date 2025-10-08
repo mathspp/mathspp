@@ -80,6 +80,9 @@ For more advanced use cases, check [the uv docs](https://docs.astral.sh/uv/) and
 | `uv run --python 3.X myscript.py` | Run the script with the given Python version |
 | `uv run --with click myscript.py` | Run the script along with the `click` dependency |
 
+!!! Make your script executable and add the uv shebang at the very first line of the script: `#!/usr/bin/env -S uv run`.
+!!! This way, you can run your script directly as `./myscript.py` instead of having to write `uv run myscript.py`.
+
 
 ## Manage Python versions 🐍
 
