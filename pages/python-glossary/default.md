@@ -7,6 +7,7 @@
 - A
   - [annotation](#annotation){.glossary}
   - [anonymous function](#anonymous-function){.glossary}
+  - [argument](#argument){.glossary}
   - [attribute](#attribute){.glossary}
 - B
   - [base class](#base-class){.glossary}
@@ -28,6 +29,7 @@
 - L
   - [literal](#literal){.glossary}
 - P
+  - [parameter](#parameter){.glossary}
   - [predicate function](#predicate-function){.glossary}
 
 
@@ -41,6 +43,12 @@ Often used for type hinting. See also: [type hints](#type-hints){.glossary}.
 ### anonymous function
 
 A function expression defined by the keyword `lambda`.
+
+### argument
+
+A value that is passed into a function call.
+For example, in the call `print("Hello, world")`, the function `print` received a single argument: the string `"Hello, world"`.
+See also: [parameter](#parameter){.glossary}.
 
 ### attribute
 
@@ -141,6 +149,12 @@ For example, `"Hello, world!"` is a string literal, `12.34` is a float literal, 
 
 
 ## P
+
+### parameter
+
+The parameters of a function are the formal variables listed in the function signature.
+For example, the function signature `def f(a, b, c): ...` lists three parameters named `a`, `b`, and `c`.
+See also: [argument](#argument){.glossary}.
 
 ### predicate function
 
