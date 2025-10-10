@@ -8,8 +8,6 @@ For more advanced use cases, check [the uv docs](https://docs.astral.sh/uv/) and
 
 !!! Last updated for uv version 0.9.0.
 
-![A4 cheatsheet with the content from this blog post shown in light, dark, and high-contrast themes.](_uv-cheatsheets.webp "Downloadable cheatsheet.")
-
 [Download this cheatsheet](https://gumroad.com/l/cheatsheet-uv?classes=btn,btn-lg,btn-center)
 
 
@@ -124,5 +122,6 @@ For more advanced use cases, check [the uv docs](https://docs.astral.sh/uv/) and
 | `uv self update` | Update uv version |
 | `uv self version` | Check uv version |
 
+![A4 cheatsheet with the content from this blog post shown in light, dark, and high-contrast themes.](_uv-cheatsheets.webp "Downloadable cheatsheet.")
 
 [Download this cheatsheet](https://gumroad.com/l/cheatsheet-uv?classes=btn,btn-lg,btn-center)
