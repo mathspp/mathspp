@@ -8,6 +8,10 @@ For more advanced use cases, check [the uv docs](https://docs.astral.sh/uv/) and
 
 !!! Last updated for uv version 0.9.0.
 
+![A4 cheatsheet with the content from this blog post in a dark theme.](_uv-cheatsheet-dark.webp?classes=dark-theme-only "Downloadable cheatsheet.")
+
+![A4 cheatsheet with the content from this blog post in a light theme.](_uv-cheatsheet-light.webp?classes=light-theme-only "Downloadable cheatsheet.")
+
 [Download this cheatsheet](https://gumroad.com/l/cheatsheet-uv?classes=btn,btn-lg,btn-center)
 
 
