@@ -6,7 +6,9 @@ Cheatsheet with the most common and useful uv commands to manage projects and de
 This cheatsheet lists the most commonly used commands and should be more than enough for you to get started using uv.
 For more advanced use cases, check [the uv docs](https://docs.astral.sh/uv/) and its guides.
 
-!!! Written for uv version 0.8.15.
+!!! Last updated for uv version 0.9.0.
+
+![Download this cheatsheet](https://gumroad.com/l/cheatsheet-uv?classes=btn,btn-lg,btn-center)
 
 
 ## Creating projects 🧱
@@ -119,3 +121,6 @@ For more advanced use cases, check [the uv docs](https://docs.astral.sh/uv/) and
 | `uv help cmd` | See the help for the command `cmd` |
 | `uv self update` | Update uv version |
 | `uv self version` | Check uv version |
+
+
+![Download this cheatsheet](https://gumroad.com/l/cheatsheet-uv?classes=btn,btn-lg,btn-center)
