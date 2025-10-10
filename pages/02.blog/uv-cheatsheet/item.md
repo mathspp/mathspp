@@ -8,7 +8,7 @@ For more advanced use cases, check [the uv docs](https://docs.astral.sh/uv/) and
 
 !!! Last updated for uv version 0.9.0.
 
-![Download this cheatsheet](https://gumroad.com/l/cheatsheet-uv?classes=btn,btn-lg,btn-center)
+[Download this cheatsheet](https://gumroad.com/l/cheatsheet-uv?classes=btn,btn-lg,btn-center)
 
 
 ## Creating projects 🧱
@@ -123,4 +123,4 @@ For more advanced use cases, check [the uv docs](https://docs.astral.sh/uv/) and
 | `uv self version` | Check uv version |
 
 
-![Download this cheatsheet](https://gumroad.com/l/cheatsheet-uv?classes=btn,btn-lg,btn-center)
+[Download this cheatsheet](https://gumroad.com/l/cheatsheet-uv?classes=btn,btn-lg,btn-center)
