@@ -23,6 +23,8 @@ For more advanced use cases, check [the uv docs](https://docs.astral.sh/uv/) and
 | `uv init --lib --package ...` | Initialise a packageable library (code you import) |
 | `uv init --python 3.X ...`[^1] | Use Python 3.X for your project |
 
+![Section of the cheatsheet about creating projects shown as a diagram. Contains the same content as the table above.](_light-creating-projects.svg)
+
 [^1]: The `--python 3.X` option is transversal to almost everything in uv.
 
 
@@ -40,7 +42,7 @@ For more advanced use cases, check [the uv docs](https://docs.astral.sh/uv/) and
 | `uv tree` | See the project dependencies tree |
 | `uv lock --upgrade` | Upgrade the dependencies' versions |
 
-![](_light-managing-dependencies.svg)
+![Section of the cheatsheet about managing project dependencies shown as a diagram. Contains the same content as the table above.](_light-managing-dependencies.svg)
 
 
 ## Project lifecycle management 🔄
@@ -54,6 +56,8 @@ For more advanced use cases, check [the uv docs](https://docs.astral.sh/uv/) and
 | `uv version --bump minor --bump beta` | Bump minor version into a beta (e.g., `1.0.0 -> 1.1.0b1` or `1.1.0b1 -> 1.1.0b2`) |
 | `uv version --bump rc` | Bump version into release candidate (e.g., `1.1.0b1 -> 1.1.0rc1` or `1.1.0rc1 -> 1.1.0rc2`) |
 | `uv version --bump stable` | Turn into a stable version (e.g., `1.1.0rc1 -> 1.1.0`) |
+
+![Section of the cheatsheet about managing project lifecycle shown as a diagram. Contains the same content as the table above.](_light-project-lifecycle.svg)
 
 
 ## Managing tools ⚒️
@@ -70,6 +74,8 @@ For more advanced use cases, check [the uv docs](https://docs.astral.sh/uv/) and
 | `uv tool upgrade --all` | Upgrade all tools |
 | `uv tool uninstall ruff` | Uninstall `ruff` |
 | `uv tool install -e .`[^2] | Install the current packageable project in editable mode |
+
+![Section of the cheatsheet about managing tools shown as a diagram. Contains the same content as the table above.](_light-tools.svg)
 
 [^2]: If your project provides a CLI, for example, this makes the CLI globally available on your computer. Making it editable with `-e` means that if you update your code, you don't have to reinstall explicitly.
 
@@ -89,6 +95,8 @@ For more advanced use cases, check [the uv docs](https://docs.astral.sh/uv/) and
 !!! Make your script executable and add the uv shebang at the very first line of the script: `#!/usr/bin/env -S uv run`.
 !!! This way, you can run your script directly as `./myscript.py` instead of having to write `uv run myscript.py`.
 
+![Section of the cheatsheet about working with scripts shown as a diagram. Contains the same content as the table above.](_light-working-with-scripts.svg)
+
 
 ## Manage Python versions 🐍
 
@@ -102,6 +110,8 @@ For more advanced use cases, check [the uv docs](https://docs.astral.sh/uv/) and
 | `uv python upgrade` | Upgrade your Python versions |
 | `uv python pin 3.X` | Pin to a specific Python version |
 
+![Section of the cheatsheet about managing Python installations shown as a diagram. Contains the same content as the table above.](_light-python-management.svg)
+
 
 ## For old timers who don't learn new tricks 👴👵
 
@@ -110,12 +120,16 @@ For more advanced use cases, check [the uv docs](https://docs.astral.sh/uv/) and
 | `uv venv path/to/.venv` | Create a virtual environment at `path/to/.venv` |
 | `uv pip` | pip's interface with uv's speed ⚡️ |
 
+![Section of the cheatsheet about uv's interface for `pip` and `venv` shown as a diagram. Contains the same content as the table above.](_light-for-old-timers.svg)
+
 
 ## Miscellaneous commands ✨
 
 | | |
 | - | - |
 | `uv format` | Format your code with Ruff |
+
+![Section of the cheatsheet about miscellaneous commands shown as a diagram. Contains the same content as the table above.](_light-miscellaneous.svg)
 
 
 ## Meta commands 🪞
@@ -125,6 +139,8 @@ For more advanced use cases, check [the uv docs](https://docs.astral.sh/uv/) and
 | `uv help cmd` | See the help for the command `cmd` |
 | `uv self update` | Update uv version |
 | `uv self version` | Check uv version |
+
+![Section of the cheatsheet about meta commands shown as a diagram. Contains the same content as the table above.](_light-meta-commands.svg)
 
 
 [Download this cheatsheet](https://gumroad.com/l/cheatsheet-uv?classes=btn,btn-lg,btn-center)
