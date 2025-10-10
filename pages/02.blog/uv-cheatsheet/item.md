@@ -23,8 +23,6 @@ For more advanced use cases, check [the uv docs](https://docs.astral.sh/uv/) and
 | `uv init --lib --package ...` | Initialise a packageable library (code you import) |
 | `uv init --python 3.X ...`[^1] | Use Python 3.X for your project |
 
-![](_light-creating-projects.webp)
-
 [^1]: The `--python 3.X` option is transversal to almost everything in uv.
 
 
@@ -42,7 +40,7 @@ For more advanced use cases, check [the uv docs](https://docs.astral.sh/uv/) and
 | `uv tree` | See the project dependencies tree |
 | `uv lock --upgrade` | Upgrade the dependencies' versions |
 
-![](_light-project-dependencies.webp)
+![](_light-managing-dependencies.svg)
 
 
 ## Project lifecycle management 🔄
