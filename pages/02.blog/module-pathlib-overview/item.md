@@ -140,6 +140,60 @@ There are three such methods:
  - `with_suffix`: change the suffix (extension) of a path.
 
 
+### Copying and moving
+
+To copy or move a file/directory, you can use the methods
+
+ - `copy` & `copy_into`
+ - `move` & `move_into`
+
+To demonstrate `copy` and `copy_into`, suppose your current working directory is `base` and the file tree looks like this:
+
+```
+📂 base/
+   📂 other/
+   📜 myfile.txt
+```
+
+If you run
+
+```py
+from pathlib import Path
+
+Path("myfile.txt").copy("myfile2.txt")
+```
+
+you will create a copy of `myfile.txt` named `myfile2.txt` next to the original file:
+
+```
+📂 base/
+   📂 other/
+   📜 myfile.txt
+   📜 myfile2.txt
+```
+
+However, if instead you run the snippet
+
+```py
+from pathlib import Path
+
+Path("myfile.txt").copy_into("other")
+```
+
+then the file `myfile.txt` is copied, with the same name, into the folder `other`:
+
+```
+📂 base/
+   📂 other/
+      📜 myfile.txt
+   📜 myfile.txt
+```
+
+The methods `copy` and `copy_into` accept strings or `pathlib.Path` objects, although these two examples used strings, and the methods `move` and `move_into` are analogous.
+
+! Python 3.14+ only!
+
+
 ### Renaming files and folders
 
 If you want to rename a file or a folder, you can use the method `rename`.

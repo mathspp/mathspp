@@ -1,9 +1,9 @@
 {
   "__all": {
     "articles": 428,
-    "code_snippets": 3993,
-    "loc": 38250,
-    "words": 460674
+    "code_snippets": 3998,
+    "loc": 38267,
+    "words": 460782
   },
   "bpci": {
     "articles": 10,
@@ -25,15 +25,15 @@
   },
   "programming": {
     "articles": 309,
-    "code_snippets": 3854,
-    "loc": 37131,
-    "words": 371517
+    "code_snippets": 3859,
+    "loc": 37148,
+    "words": 371625
   },
   "python": {
     "articles": 302,
-    "code_snippets": 3732,
-    "loc": 36023,
-    "words": 368561
+    "code_snippets": 3737,
+    "loc": 36040,
+    "words": 368669
   },
   "algorithms": {
     "articles": 25,
@@ -367,9 +367,9 @@
   },
   "modules": {
     "articles": 12,
-    "code_snippets": 174,
-    "loc": 1518,
-    "words": 12279
+    "code_snippets": 179,
+    "loc": 1535,
+    "words": 12387
   },
   "diophantine equations": {
     "articles": 1,
