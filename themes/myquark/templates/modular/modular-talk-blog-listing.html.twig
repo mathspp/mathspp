@@ -1,0 +1,30 @@
+{% set grid_size = theme_var('grid-size') %}
+{% set date_format = page.header.date_format ?: grav.config.system.pages.dateformat.short ?: 'Y-m-d' %}
+{# Use the collection defined in this modular section's frontmatter #}
+{% set collection = page.collection() %}
+
+<section class="section modular-text {{ page.header.class}}">
+    <section class="talk-blog-listing container {{ grid_size }}">
+
+    {% if page.header.title %}
+        <h2 class="mb-2">{{ page.header.title }}</h2>
+    {% endif %}
+
+    {% if collection|length %}
+        <div class="columns">
+        {% for item in collection %}
+            <div class="column col-12 col-sm-6 col-md-4 mb-2">
+            {% include 'partials/talk-listing-item.html.twig' with {
+                item: item,
+                date_format: date_format
+            } %}
+            </div>
+        {% endfor %}
+        </div>
+    {% else %}
+        <p class="text-gray">No entries found.</p>
+    {% endif %}
+
+
+    </section>
+</section>

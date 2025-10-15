@@ -1,0 +1,30 @@
+{# templates/partials/talk-listing-item.html.twig #}
+{% set event = item.header.event ?? 'Unknown event' %}
+{% set show_date = item.date is defined and item.date %}
+
+<article class="card">
+  <div class="card-header">
+    <div class="card-title h5">
+      <a href="{{ item.url }}">{{ item.title }}</a>
+    </div>
+    {% if event %}
+      <div class="card-subtitle text-gray">
+        {{ event }}
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="card-body">
+    {# If you ever want a short description/excerpt, you could show it here:
+       {{ item.summary|raw }} or {{ item.header.description }}
+       For now we keep it minimal as requested. #}
+  </div>
+
+  <div class="card-footer">
+    {% if show_date %}
+      <small class="text-gray">
+        {{ item.date|date(date_format) }}
+      </small>
+    {% endif %}
+  </div>
+</article>
