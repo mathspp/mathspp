@@ -1,7 +1,7 @@
 ---
 title: "Implementing a Neural Network from Scratch"
 event: "EuroPython 2021"
-date: 2021-07-27
+date: 27-07-2021
 taxonomy:
     category: tutorials
 reference: "https://mathspp.com/blog/tag:nnfwp"
