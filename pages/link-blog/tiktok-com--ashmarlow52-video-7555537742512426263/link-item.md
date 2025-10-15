@@ -8,6 +8,8 @@ title: "Mathematical magic trick with cards"
 # via:
 ---
 
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@ashmarlow52/video/7555537742512426263" data-video-id="7555537742512426263" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@ashmarlow52" href="https://www.tiktok.com/@ashmarlow52?refer=embed">@ashmarlow52</a> Show your friends this trick!<a title="tutorialestiktok" target="_blank" href="https://www.tiktok.com/tag/tutorialestiktok?refer=embed">#tutorialestiktok</a> <a title="xyzabcfyp" target="_blank" href="https://www.tiktok.com/tag/xyzabcfyp?refer=embed">#xyzabcfyp</a> <a title="tiktokviral" target="_blank" href="https://www.tiktok.com/tag/tiktokviral?refer=embed">#tiktokviral</a> <a title="tutorial" target="_blank" href="https://www.tiktok.com/tag/tutorial?refer=embed">#tutorial</a> <a title="trickschallenge" target="_blank" href="https://www.tiktok.com/tag/trickschallenge?refer=embed">#trickschallenge</a> <a target="_blank" title="♬ original sound  - Ash Marlow" href="https://www.tiktok.com/music/original-sound-Ash-Marlow-7555537771297803030?refer=embed">♬ original sound  - Ash Marlow</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+
 My brother sent me this video of a nice magic card trick and asked me to figure out the maths behind it.
 
 If you can't/don't want to watch the video, it works like this:
