@@ -10,21 +10,29 @@
         <h2 class="mb-2">{{ page.header.title }}</h2>
     {% endif %}
 
-    {% if collection|length %}
-        <div class="columns">
-        {% for item in collection %}
-            <div class="column col-12 col-sm-6 col-md-4 mb-2">
-            {% include 'partials/talk-listing-item.html.twig' with {
-                item: item,
-                date_format: date_format
-            } %}
-            </div>
-        {% endfor %}
-        </div>
-    {% else %}
-        <p class="text-gray">No entries found.</p>
+    {% if show_breadcrumbs and config.plugins.breadcrumbs.enabled %}
+        {% include 'partials/breadcrumbs.html.twig' %}
     {% endif %}
 
+    {% embed 'partials/layout.html.twig' with {blog: page, show_sidebar: false} %}
+        {% block item %}
+            <div class="bricklayer">
+            {% for child in collection %}
+                {% include 'partials/talk-list-item.html.twig' with {blog: page, page: child} %}
+            {% endfor %}
+            </div>
+
+        {% endblock %}
+
+        {% block sidebar %}
+            {% include 'partials/sidebar.html.twig' %}
+        {% endblock %}
+    {% endembed %}
+
+    <script>
+        //Bricklayer
+        var bricklayer = new Bricklayer(document.querySelector('.bricklayer'))
+    </script>
 
     </section>
 </section>
