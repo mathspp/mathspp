@@ -24,6 +24,8 @@ class UseBricklayerPlugin extends Plugin
     {
         return [
             'onPluginsInitialized' => ['onPluginsInitialized', 0],
+            // We use onPageInitialized to merge per-page config _before_ we decide to enable hooks.
+            'onPageInitialized'    => ['onPageInitialized', 0],
         ];
     }
 
@@ -48,22 +50,47 @@ class UseBricklayerPlugin extends Plugin
         }
 
         $this->grav['log']->info('[use-bricklayer] Plugin booted (onPluginsInitialized)');
+    }
 
-        // Respect config merged with per-page overrides
-        if (!$this->config->get('plugins.use-bricklayer.active')) {
-            $route = "bananas";
-            $this->grav['log']->info(
-                sprintf('[use-bricklayer] Skipping %s because not active.', $route)
-            );
+    public function onPageInitialized(): void
+    {
+        if ($this->isAdmin()) {
             return;
         }
 
-        // Only add assets when rendering the site
+        $page = $this->grav['page'];
+        $route = $page ? $page->route() : '(no page)';
+
+        // Merge global + per-page config; result goes into plugins.use-bricklayer.*
+        // This enables per-page frontmatter overrides under:
+        // plugins:
+        //   use-bricklayer:
+        //     enabled: true
+        $merged = $this->mergeConfig($page);
+        $this->config->set('plugins.use-bricklayer', $merged);
+
+        $enabled = (bool) $merged['enabled'] ?? false;
+
+        $this->grav['log']->info(sprintf(
+            '[use-bricklayer] onPageInitialized route="%s" enabled=%s',
+            $route,
+            $enabled ? 'true' : 'false'
+        ));
+        if ($this->grav['config']->get('system.debugger.enabled')) {
+            $this->grav['debugger']->addMessage(
+                sprintf('[use-bricklayer] route="%s" enabled=%s', $route, $enabled ? 'true' : 'false')
+            );
+        }
+
+        if (!$enabled) {
+            // Don’t register site-variable hook if we’re not enabled for this request.
+            return;
+        }
+
+        // Now that we know it's enabled for this page, register the assets hook.
         $this->enable([
             'onTwigSiteVariables' => ['onTwigSiteVariables', 0],
         ]);
-
-        $this->grav['log']->info('[use-bricklayer] onTwigSiteVariables enabled');
     }
 
     public function onTwigSiteVariables(): void
