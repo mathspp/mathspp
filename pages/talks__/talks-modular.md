@@ -14,7 +14,7 @@ metadata:
 onpage_menu: false
 plugins:
     use-bricklayer:
-        enabled: true
+        active: true
 sitemap:
     ignore: true
     lastmod: '15-10-2025 15:51'

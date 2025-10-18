@@ -52,7 +52,7 @@ class UseBricklayerPlugin extends Plugin
         }
 
         // Respect config merged with per-page overrides
-        if (!$this->config->get('plugins.use-bricklayer.enabled')) {
+        if (!$this->config->get('plugins.use-bricklayer.active')) {
             return;
         }
 
