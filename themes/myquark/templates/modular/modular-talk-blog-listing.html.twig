@@ -16,7 +16,7 @@
 
     {% embed 'partials/layout.html.twig' with {blog: page, show_sidebar: false} %}
         {% block item %}
-            <div class="{{ bricklayer_unique_class }}">
+            <div class="bricklayer {{ bricklayer_unique_class }}">
             {% for child in collection %}
                 {% include 'partials/talk-list-item.html.twig' with {blog: page, page: child} %}
             {% endfor %}
