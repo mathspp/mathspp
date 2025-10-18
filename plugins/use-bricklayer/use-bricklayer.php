@@ -52,7 +52,7 @@ class UseBricklayerPlugin extends Plugin
         // Respect config merged with per-page overrides
         if (!$this->config->get('plugins.use-bricklayer.active')) {
             $page = $this->grav['page'];
-            $route = $page ? $page->route() : '(no page)';
+            $route = "bananas";
             $this->grav['log']->info(
                 sprintf('[use-bricklayer] Skipping %s because not active.', $route)
             );
