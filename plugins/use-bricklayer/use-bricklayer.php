@@ -70,7 +70,7 @@ class UseBricklayerPlugin extends Plugin
         $assets->addCss('theme://css/bricklayer.css');
 
         // JS (polyfill first, then Bricklayer)
-        $assets->addJs('theme://js/scopedQuerySelectorShim.min.js', ['group' => 'bottom', 'loading' => 'defer']);
-        $assets->addJs('theme://js/bricklayer.min.js', ['group' => 'bottom', 'loading' => 'defer']);
+        $assets->addJs('theme://js/scopedQuerySelectorShim.min.js');
+        $assets->addJs('theme://js/bricklayer.min.js');
     }
 }
