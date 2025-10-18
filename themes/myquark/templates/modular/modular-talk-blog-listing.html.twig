@@ -2,16 +2,9 @@
 {# Use the collection defined in this modular section's frontmatter #}
 {% set collection = page.collection() %}
 
-{% block stylesheets %}
-    {% do assets.addCss('theme://css/bricklayer.css') %}
-    {{ parent() }}
-{% endblock %}
-
-{% block javascripts %}
-    {{ parent() }}
-    {% do assets.add('theme://js/bricklayer.min.js') %}
-    {% do assets.add('theme://js/scopedQuerySelectorShim.min.js') %}
-{% endblock %}
+{% do assets.addCss('theme://css/bricklayer.css') %}
+{% do assets.add('theme://js/bricklayer.min.js') %}
+{% do assets.add('theme://js/scopedQuerySelectorShim.min.js') %}
 
 <section class="section modular-text {{ page.header.class }}">
     <section class="blog-listing container {{ grid_size }}">
