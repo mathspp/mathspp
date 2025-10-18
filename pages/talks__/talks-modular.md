@@ -13,7 +13,7 @@ metadata:
     title: Talks
 onpage_menu: false
 use-bricklayer:
-    enabled: true
+    active: true
 sitemap:
     ignore: true
     lastmod: '15-10-2025 15:51'
