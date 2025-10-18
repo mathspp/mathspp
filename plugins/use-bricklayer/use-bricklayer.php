@@ -48,8 +48,6 @@ class UseBricklayerPlugin extends Plugin
         if ($this->isAdmin()) {
             return;
         }
-
-        $this->grav['log']->info('[use-bricklayer] Plugin booted (onPluginsInitialized)');
     }
 
     public function onPageInitialized(): void
@@ -59,23 +57,15 @@ class UseBricklayerPlugin extends Plugin
         }
 
         $page = $this->grav['page'];
-        $route = $page ? $page->route() : '(no page)';
 
         // Merge global + per-page config; result goes into plugins.use-bricklayer.*
         // This enables per-page frontmatter overrides under:
-        // plugins:
-        //   use-bricklayer:
-        //     active: true
+        // use-bricklayer:
+        //   active: true
         $merged = $this->mergeConfig($page);
         $this->config->set('plugins.use-bricklayer', $merged);
 
         $active = (bool) $merged['active'] ?? false;
-
-        $this->grav['log']->info(sprintf(
-            '[use-bricklayer] onPageInitialized route="%s" active=%s',
-            $route,
-            $active ? 'true' : 'false'
-        ));
 
         if (!$active) {
             // Don’t register site-variable hook if we’re not enabled for this request.
@@ -91,8 +81,6 @@ class UseBricklayerPlugin extends Plugin
     public function onTwigSiteVariables(): void
     {
         $assets = $this->grav['assets'];
-
-        $this->grav['log']->info('[use-bricklayer] in onTwigSiteVariables.');
 
         // CSS
         $assets->addCss('theme://css/bricklayer.css');
