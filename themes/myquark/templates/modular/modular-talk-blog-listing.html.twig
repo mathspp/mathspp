@@ -2,10 +2,6 @@
 {# Use the collection defined in this modular section's frontmatter #}
 {% set collection = page.collection() %}
 
-{% do assets.addCss('theme://css/bricklayer.css') %}
-{% do assets.add('theme://js/bricklayer.min.js') %}
-{% do assets.add('theme://js/scopedQuerySelectorShim.min.js') %}
-
 <section class="section modular-text blog-3-col {{ page.header.class }}">
     <section class="blog-listing container {{ grid_size }}">
 
