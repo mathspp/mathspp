@@ -32,11 +32,11 @@ form:
         type: bool
     active:
       type: toggle
-      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      label: "Globally activated?"
       highlight: 1
       default: 0
       options:
-        1: PLUGIN_ADMIN.ACTIVE
-        0: PLUGIN_ADMIN.INACTIVE
+        1: Active
+        0: Inactive
       validate:
         type: bool
