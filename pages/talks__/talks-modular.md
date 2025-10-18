@@ -18,6 +18,8 @@ plugins:
 sitemap:
     ignore: true
     lastmod: '15-10-2025 15:51'
+use-bricklayer:
+    active: true
 ---
 
 This page gathers all my conference appearances in one place. Scroll down to

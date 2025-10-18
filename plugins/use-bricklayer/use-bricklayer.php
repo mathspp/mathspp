@@ -23,11 +23,7 @@ class UseBricklayerPlugin extends Plugin
     public static function getSubscribedEvents(): array
     {
         return [
-            'onPluginsInitialized' => [
-                // Uncomment following line when plugin requires Grav < 1.7
-                // ['autoload', 100000],
-                ['onPluginsInitialized', 0]
-            ]
+            'onPluginsInitialized' => ['onPluginsInitialized', 0],
         ];
     }
 
@@ -51,9 +47,32 @@ class UseBricklayerPlugin extends Plugin
             return;
         }
 
-        // Enable the main events we are interested in
+        $this->grav['log']->info('[use-bricklayer] Plugin booted (onPluginsInitialized)');
+
+        // Respect config merged with per-page overrides
+        if (!$this->config->get('plugins.use-bricklayer.active')) {
+            return;
+        }
+
+        // Only add assets when rendering the site
         $this->enable([
-            // Put your main events here
+            'onTwigSiteVariables' => ['onTwigSiteVariables', 0],
         ]);
+
+        $this->grav['log']->info('[use-bricklayer] onTwigSiteVariables enabled');
+    }
+
+    public function onTwigSiteVariables(): void
+    {
+        $assets = $this->grav['assets'];
+
+        $this->grav['log']->info('[use-bricklayer] in onTwigSiteVariables.');
+
+        // CSS
+        $assets->addCss('theme://css/bricklayer.css');
+
+        // JS (polyfill first, then Bricklayer)
+        $assets->addJs('theme://js/scopedQuerySelectorShim.min.js');
+        $assets->addJs('theme://js/bricklayer.min.js');
     }
 }
