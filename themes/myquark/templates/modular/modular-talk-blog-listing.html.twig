@@ -1,6 +1,7 @@
 {% set grid_size = theme_var('grid-size') %}
 {# Use the collection defined in this modular section's frontmatter #}
 {% set collection = page.collection() %}
+{% set bricklayer_unique_class = 'bricklayer' ~ page.slug %}
 
 <section class="section modular-text blog-3-col {{ page.header.class }}">
     <section class="blog-listing container {{ grid_size }}">
@@ -15,7 +16,7 @@
 
     {% embed 'partials/layout.html.twig' with {blog: page, show_sidebar: false} %}
         {% block item %}
-            <div class="bricklayer">
+            <div class="{{ bricklayer_unique_class }}">
             {% for child in collection %}
                 {% include 'partials/talk-list-item.html.twig' with {blog: page, page: child} %}
             {% endfor %}
@@ -30,7 +31,7 @@
 
     <script>
         //Bricklayer
-        var bricklayer = new Bricklayer(document.querySelector('.bricklayer'))
+        var bricklayer = new Bricklayer(document.querySelector('{{ bricklayer_unique_class }}'))
     </script>
 
     </section>
