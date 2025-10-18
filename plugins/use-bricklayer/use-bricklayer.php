@@ -65,24 +65,19 @@ class UseBricklayerPlugin extends Plugin
         // This enables per-page frontmatter overrides under:
         // plugins:
         //   use-bricklayer:
-        //     enabled: true
+        //     active: true
         $merged = $this->mergeConfig($page);
         $this->config->set('plugins.use-bricklayer', $merged);
 
-        $enabled = (bool) $merged['enabled'] ?? false;
+        $active = (bool) $merged['active'] ?? false;
 
         $this->grav['log']->info(sprintf(
-            '[use-bricklayer] onPageInitialized route="%s" enabled=%s',
+            '[use-bricklayer] onPageInitialized route="%s" active=%s',
             $route,
-            $enabled ? 'true' : 'false'
+            $active ? 'true' : 'false'
         ));
-        if ($this->grav['config']->get('system.debugger.enabled')) {
-            $this->grav['debugger']->addMessage(
-                sprintf('[use-bricklayer] route="%s" enabled=%s', $route, $enabled ? 'true' : 'false')
-            );
-        }
 
-        if (!$enabled) {
+        if (!$active) {
             // Don’t register site-variable hook if we’re not enabled for this request.
             return;
         }
