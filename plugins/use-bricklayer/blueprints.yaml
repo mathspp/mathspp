@@ -1,0 +1,36 @@
+name: Use Bricklayer
+slug: use-bricklayer
+type: plugin
+version: 0.1.0
+description: Adds bricklayer-related assets to pages.
+icon: plug
+author:
+  name: Rodrigo Girao Serrao
+  email: rodrigo@mathspp.com
+homepage: https://github.com/rodrigo-girao-serrao/grav-plugin-use-bricklayer
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com/rodrigo-girao-serrao/grav-plugin-use-bricklayer/issues
+docs: https://github.com/rodrigo-girao-serrao/grav-plugin-use-bricklayer/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    text_var:
+      type: text
+      label: PLUGIN_USE_BRICKLAYER.TEXT_VARIABLE
+      help: PLUGIN_USE_BRICKLAYER.TEXT_VARIABLE_HELP

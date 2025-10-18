@@ -1,0 +1,25 @@
+{
+  "name": "rodrigo-girao-serrao/use-bricklayer",
+  "type": "grav-plugin",
+  "description": "Adds bricklayer-related assets to pages.",
+  "version": "1.0.0",
+  "keywords": ["plugin"],
+  "homepage": "https://github.com/rodrigo-girao-serrao/grav-plugin-use-bricklayer",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Rodrigo Girao Serrao",
+      "email": "rodrigo@mathspp.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Grav\\Plugin\\UseBricklayer\\": "classes/"
+    },
+    "classmap":  ["use-bricklayer.php"]
+  }
+}
