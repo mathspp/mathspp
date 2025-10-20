@@ -7,7 +7,7 @@ content:
           - "_hero"
           - "_intro"
           - "_testimonials"
-          - "_sample-articles"
+          - "_best-issues"
           - "_subscribe"
 metadata:
     author: "Rodrigo Girão Serrão"

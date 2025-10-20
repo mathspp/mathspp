@@ -327,4 +327,4 @@ Here's some key conclusions:
 This is a past issue of the [mathspp insider 🐍🚀](/insider) newsletter.
 Subscribe to the mathspp insider 🐍🚀 to get weekly Python deep dives like this one on your inbox:
 
-[Join mathspp insider 🐍🚀](?classes=btn,btn-lg,btn-center#subscribe)
+[Join mathspp insider 🐍🚀](/insider?classes=btn,btn-lg,btn-center#subscribe)
