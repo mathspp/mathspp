@@ -17,7 +17,6 @@
         <h3>
             <a href="{{ page.url }}">{{ page.header.title }}</a>
         </h3>
-        <br />
         <h4>{{ page.header.event }}</h4>
         </div>
     </div>
@@ -28,6 +27,43 @@
         {% for cat in page.taxonomy.category %}
         <a class="label label-rounded {{ label_style ?: 'label-secondary' }} p-category" href="{{ blog.url|rtrim('/') }}/topic{{ config.system.param_sep }}{{ topic }}#body-wrapper">{{ topic }}</a>
         {% endfor %}
+    </span>
+    <span class="talk-links">
+        {% if page.header.event_link %}
+            <a href="{{ page.header.event_link }}">
+            <i class="fas fa-external-link-alt"></i>
+            </a>
+        {% else %}
+            <i class="fas fa-external-link-alt disabled"></i>
+        {% endif %} •
+        {% if page.header.watch %}
+            <a href="{{ page.header.watch }}">
+            <i class="fab fa-youtube"></i>
+            </a>
+        {% else %}
+            <i class="fab fa-youtube disabled"></i>
+        {% endif %} •
+        {% if page.header.main_reference %}
+            <a href="{{ page.header.main_reference }}">
+            <i class="fas fa-book-open"></i>
+            </a>
+        {% else %}
+            <i class="fas fa-book-open disabled"></i>
+        {% endif %} •
+        {% if page.header.slides_pdf %}
+            <a href="{{ page.header.slides_pdf }}">
+            <i class="fas fa-file-pdf"></i>
+            </a>
+        {% else %}
+            <i class="fas fa-file-pdf disabled"></i>
+        {% endif %} •
+        {% if page.header.resources %}
+            <a href="{{ page.header.resources }}">
+            <i class="fas fa-paperclip"></i>
+            </a>
+        {% else %}
+            <i class="fas fa-paperclip disabled"></i>
+        {% endif %}
     </span>
     {% endif %}
 

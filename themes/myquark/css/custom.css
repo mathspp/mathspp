@@ -751,4 +751,11 @@ form span.required {
             margin-top: 0;
         }
     }
+
+    .talk-links {
+        display: inline-flex;
+        gap: 0.25em;
+        align-items: center;
+        color: var(--tx);
+    }
 }

@@ -5,6 +5,11 @@ date: 23-10-2021
 taxonomy:
     category: talks
 watch: "https://www.youtube.com/watch?v=s6dJab2qwkg"
+
+# event_link: xxx
+# main_reference: xxx
+# resources: xxx
+# slides_pdf: xxx
 ---
 
 Part of the Pydon'ts series on writing more elegant Python code.  Each version builds on the previous by showing new idiomatic patterns and refactorings.
