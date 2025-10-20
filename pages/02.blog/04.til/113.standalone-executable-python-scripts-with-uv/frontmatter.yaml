@@ -2,8 +2,8 @@ date: 22-01-2025 20:44
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned how to create standalone executable Python scripts with uv."
-    og:image: "https://mathspp.com/blog/standalone-executable-python-scripts-with-uv/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/standalone-executable-python-scripts-with-uv/thumbnail.webp"
+    og:image: "https://mathspp.com/blog/til/standalone-executable-python-scripts-with-uv/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/standalone-executable-python-scripts-with-uv/thumbnail.webp"
 references: []
 routes:
     aliases:

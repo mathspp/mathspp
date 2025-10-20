@@ -2,8 +2,8 @@ date: 28-01-2025 15:09
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned that I can use the percent sign to run commands from inside Jupyter notebooks."
-    og:image: "https://mathspp.com/blog/run-commands-inside-jupyter-notebooks/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/run-commands-inside-jupyter-notebooks/thumbnail.webp"
+    og:image: "https://mathspp.com/blog/til/run-commands-inside-jupyter-notebooks/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/run-commands-inside-jupyter-notebooks/thumbnail.webp"
 references: []
 routes:
     aliases:

@@ -2,8 +2,8 @@ date: 04-10-2025 16:01
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned how to use the equals sign to align numbers when doing string formatting in Python."
-    og:image: "https://mathspp.com/blog/-alignment-in-string-formatting/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/-alignment-in-string-formatting/thumbnail.webp"
+    og:image: "https://mathspp.com/blog/til/-alignment-in-string-formatting/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/-alignment-in-string-formatting/thumbnail.webp"
 references:
   - "Python 3 Docs, string – Common string operations, Form String Syntax <https://docs.python.org/3/library/string.html#format-specification-mini-language> [last accessed 04-10-2025];"
 routes:

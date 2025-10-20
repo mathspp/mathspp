@@ -2,8 +2,8 @@ date: 19-11-2024 18:22
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned how to use shell scripting to activate my virtual environment automatically when I change directories."
-    og:image: "https://mathspp.com/blog/automatically-activating-virtual-environments/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/automatically-activating-virtual-environments/thumbnail.webp"
+    og:image: "https://mathspp.com/blog/til/automatically-activating-virtual-environments/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/automatically-activating-virtual-environments/thumbnail.webp"
 references: []
 routes:
     aliases:

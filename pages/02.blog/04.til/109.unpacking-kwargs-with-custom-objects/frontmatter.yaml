@@ -2,8 +2,8 @@ date: 05-01-2025 14:34
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned how to allow my custom objects to be unpacked into keyword arguments like '**kwargs'."
-    og:image: "https://mathspp.com/blog/unpacking-kwargs-with-custom-objects/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/unpacking-kwargs-with-custom-objects/thumbnail.webp"
+    og:image: "https://mathspp.com/blog/til/unpacking-kwargs-with-custom-objects/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/unpacking-kwargs-with-custom-objects/thumbnail.webp"
 references:
     - "“Duck Typing in Python”, [https://www.pythonmorsels.com/duck-typing/](https://www.pythonmorsels.com/duck-typing/) [last accessed 05-01-2025]"
 routes:

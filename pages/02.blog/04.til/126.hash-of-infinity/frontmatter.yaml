@@ -2,8 +2,8 @@ date: 20-07-2025 22:18
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned about a Python Easter  Egg hidden in the hash of two special float values."
-    og:image: "https://mathspp.com/blog/hash-of-infinity/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/hash-of-infinity/thumbnail.webp"
+    og:image: "https://mathspp.com/blog/til/hash-of-infinity/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/hash-of-infinity/thumbnail.webp"
 references: []
 routes:
     aliases:

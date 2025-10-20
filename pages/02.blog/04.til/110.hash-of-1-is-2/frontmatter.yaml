@@ -2,8 +2,8 @@ date: 15-01-2025 00:02
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned that the hash of an integer is the integer itself, except for -21. The hash of -1 is -2."
-    og:image: "https://mathspp.com/blog/hash-of-1-is-2/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/hash-of-1-is-2/thumbnail.webp"
+    og:image: "https://mathspp.com/blog/til/hash-of-1-is-2/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/hash-of-1-is-2/thumbnail.webp"
 references: []
 routes:
     aliases:

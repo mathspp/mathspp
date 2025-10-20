@@ -2,8 +2,8 @@ date: 14-08-2025 11:56
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned you can specify a custom value when using the class method dict.fromkeys."
-    og:image: "https://mathspp.com/blog/custom-value-in-dictfromkeys/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/custom-value-in-dictfromkeys/thumbnail.webp"
+    og:image: "https://mathspp.com/blog/til/custom-value-in-dictfromkeys/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/custom-value-in-dictfromkeys/thumbnail.webp"
 references: []
 routes:
     aliases:

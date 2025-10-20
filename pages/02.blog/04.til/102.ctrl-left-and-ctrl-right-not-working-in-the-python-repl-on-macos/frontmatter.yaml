@@ -2,8 +2,8 @@ date: 13-07-2024 18:00
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned how to fix an issue with Ctrl+left and Ctrl+right not working in the new Python REPL on MacOS."
-    og:image: "https://mathspp.com/blog/ctrl-left-and-ctrl-right-not-working-in-the-python-repl-on-macos/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/ctrl-left-and-ctrl-right-not-working-in-the-python-repl-on-macos/thumbnail.webp"
+    og:image: "https://mathspp.com/blog/til/ctrl-left-and-ctrl-right-not-working-in-the-python-repl-on-macos/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/ctrl-left-and-ctrl-right-not-working-in-the-python-repl-on-macos/thumbnail.webp"
 routes:
     aliases:
         - "/blog/til/102"

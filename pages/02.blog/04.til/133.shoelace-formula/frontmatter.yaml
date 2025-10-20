@@ -2,8 +2,8 @@ date: 25-09-2025 12:16
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned about the shoelace formula to compute the area of arbitrary simple polygons."
-    og:image: "https://mathspp.com/blog/shoelace-formula/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/shoelace-formula/thumbnail.webp"
+    og:image: "https://mathspp.com/blog/til/shoelace-formula/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/shoelace-formula/thumbnail.webp"
 references:
   - "Wikipedia, “Shoelace formula” <https://en.wikipedia.org/wiki/Shoelace_formula> [last accessed 25-09-2025];"
 routes:

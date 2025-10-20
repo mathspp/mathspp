@@ -2,8 +2,8 @@ date: 04-11-2024 23:36
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned about the behaviour of `asyncio.gather`."
-    og:image: "https://mathspp.com/blog/asyncio-gather/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/asyncio-gather/thumbnail.webp"
+    og:image: "https://mathspp.com/blog/til/asyncio-gather/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/asyncio-gather/thumbnail.webp"
 references:
   - "Python 3 Documentation, `asyncio`, Coroutines and Tasks, `asyncio.gather`, <https://docs.python.org/3/library/asyncio-task.html#asyncio.gather> [last accessed 4-11-2024]"
 routes:

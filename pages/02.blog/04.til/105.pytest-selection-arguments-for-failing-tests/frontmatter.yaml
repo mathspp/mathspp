@@ -2,8 +2,8 @@ date: 19-10-2024 07:55
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned about 5 useful pytest options that let me control what tests to run with respect to failing tests."
-    og:image: "https://mathspp.com/blog/pytest-selection-arguments-for-failing-tests/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/pytest-selection-arguments-for-failing-tests/thumbnail.webp"
+    og:image: "https://mathspp.com/blog/til/pytest-selection-arguments-for-failing-tests/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/pytest-selection-arguments-for-failing-tests/thumbnail.webp"
 references:
     - "Florian Bruhin's talk “Property based testing with Hypothesis”, <https://github.com/The-Compiler/hypothesis-talk> [last accessed 19-10-2024];"
     - "Florian Bruhin on Twitter / X, <https://x.com/the_compiler/status/1846266160607908276> [last accessed 19-10-2024];"

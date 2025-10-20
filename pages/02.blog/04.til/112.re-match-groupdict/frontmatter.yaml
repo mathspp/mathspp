@@ -2,8 +2,8 @@ date: 22-01-2025 13:56
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned how I can use the method 'groupdict' from a regex match to get a dictionary with all named groups."
-    og:image: "https://mathspp.com/blog/re-match-groupdict/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/re-match-groupdict/thumbnail.webp"
+    og:image: "https://mathspp.com/blog/til/re-match-groupdict/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/re-match-groupdict/thumbnail.webp"
 references: []
 routes:
     aliases:

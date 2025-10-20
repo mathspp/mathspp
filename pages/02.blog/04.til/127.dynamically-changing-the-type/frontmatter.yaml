@@ -2,8 +2,8 @@ date: 20-07-2025 22:27
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned that you can dynamically change the type of an object in Python."
-    og:image: "https://mathspp.com/blog/dynamically-changing-the-type/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/dynamically-changing-the-type/thumbnail.webp"
+    og:image: "https://mathspp.com/blog/til/dynamically-changing-the-type/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/dynamically-changing-the-type/thumbnail.webp"
 references: []
 routes:
     aliases:

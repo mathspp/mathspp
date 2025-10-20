@@ -2,8 +2,8 @@ date: 23-01-2025 18:06
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned that Polars allows non-strict vertical concatenation of dataframes with the parameter `how='vertical'`."
-    og:image: "https://mathspp.com/blog/implicit-casting-in-dataframe-concatenation/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/implicit-casting-in-dataframe-concatenation/thumbnail.webp"
+    og:image: "https://mathspp.com/blog/til/implicit-casting-in-dataframe-concatenation/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/implicit-casting-in-dataframe-concatenation/thumbnail.webp"
 references: []
 routes:
     aliases:
