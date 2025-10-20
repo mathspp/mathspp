@@ -738,3 +738,17 @@ form span.required {
 [data-theme="dark"] .light-theme-only {
     display: none;
 }
+
+.card {
+    .card-title {
+        h3 {
+            font-size: 1rem;
+            margin-top: .2rem;
+        }
+
+        h4 {
+            font-size: 0.8rem;
+            margin-top: 0;
+        }
+    }
+}
