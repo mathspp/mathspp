@@ -4,6 +4,10 @@ event: "DjangoCon US 2021"
 date: 23-10-2021
 taxonomy:
     category: talks
+    tags:
+        - "DjangoCon US"
+        - "US"
+        - "2021"
 watch: "https://www.youtube.com/watch?v=s6dJab2qwkg"
 
 # event_link: xxx
