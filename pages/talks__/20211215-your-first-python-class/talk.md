@@ -1,7 +1,7 @@
 ---
 title: "Your first Python class"
 event: "New Zealand Python User Group"
-event_date: 15-12-2021
+date: 15-12-2021
 taxonomy:
     category: tutorials
 ---
