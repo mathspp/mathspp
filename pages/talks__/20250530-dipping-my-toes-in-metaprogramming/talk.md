@@ -1,7 +1,6 @@
 ---
-date: 21-10-2025 08:17
+date: 30-05-2025
 event: "PyCon Italia 2025"
-event_date: 30-05-2025
 event_link: https://2025.pycon.it/en/event/dipping-my-toes-in-metaprogramming
 main_reference: https://mathspp.com/blog/dipping-my-toes-in-metaprogramming
 resources: https://github.com/mathspp/talks/tree/main/20250530_pycon_italia_dipping-my-toes-in-metaprogramming
