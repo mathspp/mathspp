@@ -28,6 +28,7 @@
         <a class="label label-rounded {{ label_style ?: 'label-secondary' }} p-category" href="{{ blog.url|rtrim('/') }}/topic{{ config.system.param_sep }}{{ topic }}#body-wrapper">{{ topic }}</a>
         {% endfor %}
     </span>
+    {% endif %}
     <span class="talk-links">
         {% if page.header.event_link %}
             <a href="{{ page.header.event_link }}">
@@ -65,7 +66,6 @@
             <i class="fas fa-paperclip disabled"></i>
         {% endif %}
     </span>
-    {% endif %}
 
     </div>
 </div>

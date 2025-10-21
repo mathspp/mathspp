@@ -757,5 +757,13 @@ form span.required {
         gap: 0.25em;
         align-items: center;
         color: var(--tx);
+
+        a>i {
+            color: var(--accent);
+        }
+
+        i.disabled {
+            color: var(--tx-3);
+        }
     }
 }

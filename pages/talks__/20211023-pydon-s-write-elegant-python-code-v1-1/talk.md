@@ -12,4 +12,5 @@ watch: "https://www.youtube.com/watch?v=s6dJab2qwkg"
 # slides_pdf: xxx
 ---
 
-Part of the Pydon'ts series on writing more elegant Python code.  Each version builds on the previous by showing new idiomatic patterns and refactorings.
+Part of the Pydon'ts series on writing more elegant Python code.
+Each version builds on the previous by showing new idiomatic patterns and refactorings.
