@@ -32,38 +32,38 @@
     <span class="talk-links">
         {% if page.header.event_link %}
             <a href="{{ page.header.event_link }}">
-            <i class="fas fa-external-link-alt"></i>
+            <i class="fas fa-external-link-alt" title="Event page"></i>
             </a>
         {% else %}
-            <i class="fas fa-external-link-alt disabled"></i>
+            <i class="fas fa-external-link-alt disabled" title="Event page"></i>
         {% endif %} •
         {% if page.header.watch %}
             <a href="{{ page.header.watch }}">
-            <i class="fab fa-youtube"></i>
+            <i class="fab fa-youtube" title="Watch online"></i>
             </a>
         {% else %}
-            <i class="fab fa-youtube disabled"></i>
+            <i class="fab fa-youtube disabled" title="Watch online"></i>
         {% endif %} •
         {% if page.header.main_reference %}
             <a href="{{ page.header.main_reference }}">
-            <i class="fas fa-book-open"></i>
+            <i class="fas fa-book-open" title="Main reference (blog post, book, ...)"></i>
             </a>
         {% else %}
-            <i class="fas fa-book-open disabled"></i>
+            <i class="fas fa-book-open disabled" title="Main reference (blog post, book, ...)"></i>
         {% endif %} •
         {% if page.header.slides_pdf %}
             <a href="{{ page.header.slides_pdf }}">
-            <i class="fas fa-file-pdf"></i>
+            <i class="fas fa-file-pdf" title="Slides (PDF)"></i>
             </a>
         {% else %}
-            <i class="fas fa-file-pdf disabled"></i>
+            <i class="fas fa-file-pdf disabled" title="Slides (PDF)"></i>
         {% endif %} •
         {% if page.header.resources %}
             <a href="{{ page.header.resources }}">
-            <i class="fas fa-paperclip"></i>
+            <i class="fas fa-paperclip" title="Talk resources (code, images, ...)"></i>
             </a>
         {% else %}
-            <i class="fas fa-paperclip disabled"></i>
+            <i class="fas fa-paperclip disabled" title="Talk resources (code, images, ...)"></i>
         {% endif %}
     </span>
 
