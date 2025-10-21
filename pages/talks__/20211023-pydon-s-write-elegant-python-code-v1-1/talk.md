@@ -1,7 +1,7 @@
 ---
 title: "Pydon's – Write elegant Python code v1.1"
 event: "DjangoCon US 2021"
-date: 23-10-2021
+event_date: 23-10-2021
 taxonomy:
     category: talks
     tags:

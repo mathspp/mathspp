@@ -1,7 +1,7 @@
 ---
 title: "Pydon's – Write elegant Python code v2"
 event: "Pyjamas Conf 2021"
-date: 04-12-2021
+event_date: 04-12-2021
 taxonomy:
     category: talks
 ---

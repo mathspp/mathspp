@@ -1,7 +1,7 @@
 ---
 title: "Python objects under the hood"
 event: "New Zealand Python User Group"
-date: 15-12-2021
+event_date: 15-12-2021
 taxonomy:
     category: tutorials
 reference: "https://mathspp.com/blog/pydonts/dunder-methods"
