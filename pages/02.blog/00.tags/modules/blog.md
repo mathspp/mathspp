@@ -28,9 +28,9 @@ title: "Modules blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">12</th>
-            <th style="text-align: center;">12,387</th>
-            <th style="text-align: center;">1,535</th>
+            <th style="text-align: center;">13</th>
+            <th style="text-align: center;">12,819</th>
+            <th style="text-align: center;">1,574</th>
         </tr>
     </thead>
     <tbody>

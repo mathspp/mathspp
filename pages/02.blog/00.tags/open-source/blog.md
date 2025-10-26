@@ -28,9 +28,9 @@ title: "Open source blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">2</th>
-            <th style="text-align: center;">7,869</th>
-            <th style="text-align: center;">574</th>
+            <th style="text-align: center;">3</th>
+            <th style="text-align: center;">8,090</th>
+            <th style="text-align: center;">589</th>
         </tr>
     </thead>
     <tbody>

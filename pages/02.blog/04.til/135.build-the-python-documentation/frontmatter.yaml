@@ -1,0 +1,18 @@
+date: 26-10-2025 14:44
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to build the Python documentation to preview changes I wanted to make."
+    og:image: "https://mathspp.com/blog/til/build-the-python-documentation/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/build-the-python-documentation/thumbnail.webp"
+references: []
+routes:
+    aliases:
+        - "/blog/til/135"
+slug: "build-the-python-documentation"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - python
+      - open source
+title: "TIL #135 – Build the Python documentation"
+visible: false
