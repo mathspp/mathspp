@@ -39,4 +39,4 @@ I went above and beyond, capitalising the sentences and adding a full stop to th
 
 In the end, the “See also” callout was looking better:
 
-![“See also” callout with elements that are neatly aligned and with better-looking punctuation and capitalisation.](_bad.webp "What a work of art.")
+![“See also” callout with elements that are neatly aligned and with better-looking punctuation and capitalisation.](_good.webp "What a work of art.")
