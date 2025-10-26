@@ -1,6 +1,21 @@
 ## Past tips
 
 <ol reversed>
+    <li>Chaining comparison operators</li>
+    <li>Remote interactive debugging</li>
+    <li>Check for <code>None</code> functionally</li>
+    <li>min-heaps and max-heaps</li>
+    <li>Parse dates from strings</li>
+    <li>Error handling with multiple types</li>
+    <li>Grouping digits in the fractional part</li>
+    <li><code>asyncio</code> introspection</li>
+    <li>Custom t-string processing</li>
+    <li><code>json</code> CLI</li>
+    <li>Compression algorithms</li>
+    <li>Forward references in annotations</li>
+    <li>Find similar words</li>
+    <li>copy files</li>
+    <li>Colour in the REPL</li>
     <li><code>NotImplementedError</code></li>
     <li>Set operations with operators</li>
     <li>String formatting field alignment</li>
