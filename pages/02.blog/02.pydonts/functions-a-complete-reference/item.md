@@ -8,7 +8,7 @@ You will fix that by reading this article.
 Knowing how to use the keyword `def` is just the first step towards knowing how to define and use functions in Python.
 As such, this Pydon't covers everything else there is to learn:
 
- - [How to structure and organise functions](#what-goes-into-a-function-and-what-doesnt).
+ - [How to structure and organise functions](#what-goes-into-a-function-and-what-doesn-t).
  - [How to work with a function signature](#the-function-signature), including [parameter order](#ordering-the-parameters), [`*args` and `**kwargs`](#args-and-kwargs), and [the special syntax introduced by `*` and `/`](#positional-only-and-keyword-only-arguments).
  - [What anonymous functions are](#anonymous-functions), how to define them with the keyword `lambda`, and [when to use them](#use-case-rule-of-thumb).
  - [What it means for functions to be objects](#functions-as-objects) and how to leverage that in your code.
@@ -1176,7 +1176,7 @@ print(callable(nn))  # True
 
 You've seen everything you can do with functions, so let's recap the key takeaways:
 
- - a function should [do one thing and should do it well](#what-goes-into-a-function-and-what-doesnt);
+ - a function should [do one thing and should do it well](#what-goes-into-a-function-and-what-doesn-t);
  - if you want to enhance a function with functionality that isn't directly tied to the function, you should [use a decorator](#decorators);
  - the [arguments of a function are the values you pass into the function when you call it](#parameters-versus-arguments);
  - the [parameters of a function are the formal variables you write in the function signature when you define a function](#parameters-versus-arguments);
@@ -1190,7 +1190,7 @@ You've seen everything you can do with functions, so let's recap the key takeawa
  - [the keyword `lambda` can be used to write expressions that define lightweight functions](#anonymous-functions);
  - [functions defined with `def` are objects](#functions-as-objects), [and so are `lambda` functions](#anonymous-functions-as-objects), meaning they can be passed as arguments to functions, returned from functions, and more;
  - [a closure](#closures) preserves variables from the enclosing scope alive when a function returns another function and the returned function accesses variables from the function that just exited;
- - you can [access a function's closure through the dunder attribute `__closure__`](#the-dunder-attribute-__closure__);
+ - you can [access a function's closure through the dunder attribute `__closure__`](#the-dunder-attribute-closure);
  - the keyword `yield` is used to define [generator functions](#generator-functions);
  - and the keyword `async` is used to define [asynchronous functions](#asynchronous-functions), which in turn may use the keyword `await`;
  - [partial function application](#partial-function-application) is the practice of freezing some arguments in a function call;
