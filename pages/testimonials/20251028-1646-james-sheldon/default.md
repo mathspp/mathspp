@@ -8,7 +8,7 @@ taxonomy:
     category: review
     review-tag:
       - newsletter
-      - newsletter drops
+      - newsletter-drops
 published: true
 ---
 
