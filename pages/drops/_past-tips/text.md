@@ -1,6 +1,11 @@
 ## Past tips
 
 <ol reversed>
+    <li>Oxford comma</li>
+    <li>Truthy and Falsy</li>
+    <li>Private members</li>
+    <li><code>strftime</code> vs <code>strptime</code></li>
+    <li>Controlled string splitting</li>
     <li>Chaining comparison operators</li>
     <li>Remote interactive debugging</li>
     <li>Check for <code>None</code> functionally</li>
