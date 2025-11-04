@@ -18,16 +18,16 @@
     "words": 35212
   },
   "programming": {
-    "articles": 310,
-    "code_snippets": 3864,
-    "loc": 37187,
-    "words": 372057
+    "articles": 311,
+    "code_snippets": 3896,
+    "loc": 37352,
+    "words": 375889
   },
   "python": {
-    "articles": 304,
-    "code_snippets": 3743,
-    "loc": 36094,
-    "words": 369322
+    "articles": 305,
+    "code_snippets": 3775,
+    "loc": 36259,
+    "words": 373154
   },
   "algorithms": {
     "articles": 25,
@@ -198,10 +198,10 @@
     "words": 2630
   },
   "opinion": {
-    "articles": 9,
-    "code_snippets": 11,
-    "loc": 368,
-    "words": 16735
+    "articles": 10,
+    "code_snippets": 43,
+    "loc": 533,
+    "words": 20567
   },
   "geometry": {
     "articles": 18,
@@ -565,9 +565,9 @@
   },
   "__all": {
     "articles": 431,
-    "code_snippets": 4024,
-    "loc": 38431,
-    "words": 463548
+    "code_snippets": 4036,
+    "loc": 38486,
+    "words": 465267
   },
   "fp": {
     "articles": 5,

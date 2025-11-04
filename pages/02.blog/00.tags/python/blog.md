@@ -28,9 +28,9 @@ title: "Python blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">304</th>
-            <th style="text-align: center;">369,322</th>
-            <th style="text-align: center;">36,094</th>
+            <th style="text-align: center;">305</th>
+            <th style="text-align: center;">373,154</th>
+            <th style="text-align: center;">36,259</th>
         </tr>
     </thead>
     <tbody>
