@@ -144,9 +144,9 @@ with zstd.open("compressed_by_zstd", "wt") as f:
 
 Note that you're opening the file with the mode set to `"wt"`, where the `"w"` stands for “write” and the `"t"` stands for “text mode”.
 
-! For the **built-in** function `open`, the default behaviour is to open files in text mode.
-! That's why you can often get away with using `"w"` or `"r"` to write and read text, respectively.
-! When using the functions `open` from the compression modules, the default is to open the file in binary mode, not in text mode.
+!!! For the **built-in** function `open`, the default behaviour is to open files in text mode.
+!!! That's why you can often get away with using `"w"` or `"r"` to write and read text, respectively.
+!!! When using the functions `open` from the compression modules, the default is to open the file in binary mode, not in text mode.
 
 By the way, if you check the size of the file you just created (for example, with the command `stat -f "%z"`), you'll see that it's only 33 bytes:
 
@@ -237,7 +237,7 @@ ratio = len(result) / bytes_processed
 print(f"{100 * ratio:>.2f}%")  # 0.56%
 ```
 
-!! When you call `.compress`, the compressed data that is returned doesn't necessarily represent the compression of everything you passed in, which is why there might be some data left when you call `.flush` at the end.
+! When you call `.compress`, the compressed data that is returned doesn't necessarily represent the compression of everything you passed in, which is why there might be some data left when you call `.flush` at the end.
 
 This compressed data could be written to a file, perhaps:
 
@@ -246,8 +246,8 @@ with open("compressed.zstd", "wb") as f:
     f.write(result)
 ```
 
-! Most of the compression modules provide tools that are more appropriate and convenient when working with files.
-! Here, we just use the file as the source of chunks of data so you can see how the (de)compression objects work.
+!!! Most of the compression modules provide tools that are more appropriate and convenient when working with files.
+!!! Here, we just use the file as the source of chunks of data so you can see how the (de)compression objects work.
 
 
 ### Decompressing data incrementally
@@ -273,8 +273,8 @@ print("Incremental decompression completed successfully!")
 The `assert` ensures that the decompressed data matches the original data from the incoming data stream.
 If you see the printed message, incremental decompression worked just fine!
 
-! Most of the compression modules provide tools that are more appropriate and convenient when working with files, as you saw above.
-! Here, we just use the file as the source of chunks of data so you can see how the (de)compression objects work.
+!!! Most of the compression modules provide tools that are more appropriate and convenient when working with files, as you saw above.
+!!! Here, we just use the file as the source of chunks of data so you can see how the (de)compression objects work.
 
 
 ## Advanced compression options, scenarios, and more
