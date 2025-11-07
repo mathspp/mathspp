@@ -3256,7 +3256,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/eafp-and-lbyl-coding-styles": {
-    "timestamp": 1762511809.452549,
+    "timestamp": 1762559707.9765196,
     "tags": [
       "programming",
       "python"
@@ -3269,7 +3269,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/str-and-repr": {
-    "timestamp": 1762511809.4565425,
+    "timestamp": 1762559707.9801548,
     "tags": [
       "programming",
       "python"
@@ -3296,7 +3296,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/unpacking-with-starred-assignments": {
-    "timestamp": 1762511809.4579554,
+    "timestamp": 1762559707.9816425,
     "tags": [
       "programming",
       "python"
@@ -3309,7 +3309,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/dunder-methods": {
-    "timestamp": 1762511809.452289,
+    "timestamp": 1762559707.9755516,
     "tags": [
       "dunder methods",
       "programming",
@@ -3336,7 +3336,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/string-formatting-comparison": {
-    "timestamp": 1762511809.4567223,
+    "timestamp": 1762559707.9804394,
     "tags": [
       "programming",
       "python"
@@ -3349,7 +3349,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/enumerate-me": {
-    "timestamp": 1762511809.4527867,
+    "timestamp": 1762559707.976707,
     "tags": [
       "programming",
       "python"
@@ -3362,7 +3362,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/string-translate-and-maketrans-methods": {
-    "timestamp": 1762511809.4569497,
+    "timestamp": 1762559707.9806225,
     "tags": [
       "programming",
       "python"
@@ -3375,7 +3375,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/conditional-expressions": {
-    "timestamp": 1762511809.4509904,
+    "timestamp": 1762559707.9740248,
     "tags": [
       "programming",
       "python"
@@ -3388,7 +3388,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/decorators": {
-    "timestamp": 1762511809.4514875,
+    "timestamp": 1762559707.9744189,
     "tags": [
       "fp",
       "programming",
@@ -3402,7 +3402,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/zip-up": {
-    "timestamp": 1762511809.4583719,
+    "timestamp": 1762559707.9823625,
     "tags": [
       "programming",
       "python"
@@ -3415,7 +3415,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/list-comprehensions-101": {
-    "timestamp": 1762511809.4534826,
+    "timestamp": 1762559707.9773414,
     "tags": [
       "programming",
       "python"
@@ -3428,7 +3428,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/code-style-matters": {
-    "timestamp": 1762511809.4507973,
+    "timestamp": 1762559707.9737022,
     "tags": [
       "programming",
       "python"
@@ -3467,7 +3467,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/watch-out-for-recursion": {
-    "timestamp": 1762511809.458137,
+    "timestamp": 1762559707.9819012,
     "tags": [
       "programming",
       "python"
@@ -3480,7 +3480,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/idiomatic-sequence-slicing": {
-    "timestamp": 1762511809.453225,
+    "timestamp": 1762559707.977095,
     "tags": [
       "programming",
       "python"
@@ -3493,7 +3493,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/naming-matters": {
-    "timestamp": 1762511809.4538796,
+    "timestamp": 1762559707.9779198,
     "tags": [
       "programming",
       "python"
@@ -3506,7 +3506,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/properties": {
-    "timestamp": 1762511809.4550843,
+    "timestamp": 1762559707.978789,
     "tags": [
       "oop",
       "programming",
@@ -3520,7 +3520,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/pass-by-value-reference-and-assignment": {
-    "timestamp": 1762511809.4548702,
+    "timestamp": 1762559707.9785802,
     "tags": [
       "programming",
       "python"
@@ -3533,7 +3533,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/chaining-comparison-operators": {
-    "timestamp": 1762511809.4504623,
+    "timestamp": 1762559707.9734895,
     "tags": [
       "programming",
       "python"
@@ -3546,7 +3546,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/overloading-arithmetic-operators-with-dunder-methods": {
-    "timestamp": 1762511809.4544396,
+    "timestamp": 1762559707.978277,
     "tags": [
       "arithmetic",
       "dunder methods",
@@ -3574,7 +3574,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/pydont-manifesto": {
-    "timestamp": 1762511809.4555721,
+    "timestamp": 1762559707.9794502,
     "tags": [
       "programming",
       "python"
@@ -3587,7 +3587,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/set-and-frozenset": {
-    "timestamp": 1762511809.4561226,
+    "timestamp": 1762559707.9798503,
     "tags": [
       "programming",
       "python"
@@ -3600,7 +3600,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/truthy-falsy-and-bool": {
-    "timestamp": 1762511809.4577367,
+    "timestamp": 1762559707.9814386,
     "tags": [
       "programming",
       "python"
@@ -3626,7 +3626,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/structural-pattern-matching-tutorial": {
-    "timestamp": 1762511809.4575086,
+    "timestamp": 1762559707.9811738,
     "tags": [
       "programming",
       "python"
@@ -3665,7 +3665,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/sequence-indexing": {
-    "timestamp": 1762511809.4559236,
+    "timestamp": 1762559707.9796777,
     "tags": [
       "programming",
       "python"
@@ -3678,7 +3678,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/pydont-disrespect-the-zen-of-python": {
-    "timestamp": 1762511809.455366,
+    "timestamp": 1762559707.9791698,
     "tags": [
       "programming",
       "python"
@@ -3691,7 +3691,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/mastering-sequence-slicing": {
-    "timestamp": 1762511809.4536848,
+    "timestamp": 1762559707.977704,
     "tags": [
       "programming",
       "python"
@@ -3704,7 +3704,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/boost-your-productivity-with-the-repl": {
-    "timestamp": 1762511809.449684,
+    "timestamp": 1762559707.9731095,
     "tags": [
       "productivity",
       "programming",
@@ -3718,7 +3718,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/deep-unpacking": {
-    "timestamp": 1762511809.451777,
+    "timestamp": 1762559707.9749491,
     "tags": [
       "programming",
       "python"
@@ -3744,7 +3744,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/structural-pattern-matching-anti-patterns": {
-    "timestamp": 1762511809.457139,
+    "timestamp": 1762559707.9809165,
     "tags": [
       "programming",
       "python"
@@ -3757,7 +3757,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/describing-descriptors": {
-    "timestamp": 1762511809.4520538,
+    "timestamp": 1762559707.9753036,
     "tags": [
       "dunder methods",
       "oop",
@@ -6084,7 +6084,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/module-compression-overview": {
-    "timestamp": 1762384274.7842953,
+    "timestamp": 1762559691.9517906,
     "tags": [
       "modules",
       "programming",
@@ -6092,9 +6092,9 @@
     ],
     "stats": {
       "articles": 1,
-      "code_snippets": 9,
-      "loc": 57,
-      "words": 818
+      "code_snippets": 13,
+      "loc": 88,
+      "words": 1315
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/135.build-the-python-documentation": {
