@@ -241,7 +241,9 @@ But for me to help you understand this, I need to tell you about a project I was
 I am working with some biologists and they need to model the animal kingdom in a class hierarchy.
 Inspired by their own field of work, I started by creating a superclass `Animal` and then three subclasses: `Mammal`, `Fish`, and `Bird`:
 
-![Hierarchy diagram that shows the classes Mammal, Fish, and Bird, inheriting from the class Animal.](_protocols_base.webp)
+
+![Hierarchy diagram that shows the classes Mammal, Fish, and Bird, inheriting from the class Animal.](_protocols_base.webp?classes=light-theme-only)
+![Hierarchy diagram that shows the classes Mammal, Fish, and Bird, inheriting from the class Animal.](_protocols_base_dark.webp?classes=dark-theme-only)
 
 After deciding on that hierarchy, I started writing down some methods that each class had, and I ended up with this:
 
@@ -255,7 +257,8 @@ Almost all birds can also walk and run despite not being mammals, and some birds
 And there are mammals that don't walk at all, like whales!
 As you can see, there are all sorts of inconsistencies here:
 
-![Hierarchy diagram that shows Mammal, Fish, and Bird, inheriting from Animal, together with Bat and Whale inheriting from Mammal, Shark and Flying Fish inheriting from Fish, and Ostrich and Penguin inheriting from Bird.](_protocols_full.webp)
+![Hierarchy diagram that shows Mammal, Fish, and Bird, inheriting from Animal, together with Bat and Whale inheriting from Mammal, Shark and Flying Fish inheriting from Fish, and Ostrich and Penguin inheriting from Bird.](_protocols_full.webp?classes=light-theme-only)
+![Hierarchy diagram that shows Mammal, Fish, and Bird, inheriting from Animal, together with Bat and Whale inheriting from Mammal, Shark and Flying Fish inheriting from Fish, and Ostrich and Penguin inheriting from Bird.](_protocols_full_dark.webp?classes=dark-theme-only)
 
 I was cursing Mother Nature when I realised it wasn't her problem.
 I was trying to model animals in the wrong way!
@@ -268,7 +271,8 @@ But when it comes to their _behaviours_ and the way they move around, whether by
 These behaviours are _independent_ of the class hierarchy, so they must be defined independently from the hierarchy.
 And that's what protocols are for:
 
-![Hierarchy diagram that shows Mammal, Fish, and Bird, inheriting from Animal, together with Bat and Whale inheriting from Mammal, Shark and Flying Fish inheriting from Fish, and Ostrich and Penguin inheriting from Bird. Each animal species is coloured with up to three colours: brown, blue, and gray, respectively for animals that walk on land, swim, and fly. For example, the penguin is blue and brown because it can swim and it can walk on land.](_protocols_distribution-2.webp)
+![Hierarchy diagram that shows Mammal, Fish, and Bird, inheriting from Animal, together with Bat and Whale inheriting from Mammal, Shark and Flying Fish inheriting from Fish, and Ostrich and Penguin inheriting from Bird. Each animal species is coloured with up to three colours: brown, blue, and gray, respectively for animals that walk on land, swim, and fly. For example, the penguin is blue and brown because it can swim and it can walk on land.](_protocols_distribution.webp?classes=light-theme-only)
+![Hierarchy diagram that shows Mammal, Fish, and Bird, inheriting from Animal, together with Bat and Whale inheriting from Mammal, Shark and Flying Fish inheriting from Fish, and Ostrich and Penguin inheriting from Bird. Each animal species is coloured with up to three colours: brown, blue, and gray, respectively for animals that walk on land, swim, and fly. For example, the penguin is blue and brown because it can swim and it can walk on land.](_protocols_distribution_dark.webp?classes=dark-theme-only)
 
 Instead of assuming all fish must swim and only fish can swim, I define a protocol for “swimmers”.
 Any animal that _can_ swim _is_ a swimmer.
