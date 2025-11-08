@@ -1,6 +1,5 @@
 ---
 title: Python Vault
-template: python-vault
 menu: Python Vault
 ---
 

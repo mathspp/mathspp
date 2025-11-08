@@ -5,6 +5,11 @@
     {{ parent() }}
 {% endblock %}
 
+{% block javascripts %}
+    {{ parent() }}
+    {% do assets.addJs('theme://js/python-vault.js', { group: 'bottom', loading: 'defer' }) %}
+{% endblock %}
+
 {% block content %}
     <section class="python-vault">
         <header class="python-vault__header">
@@ -44,7 +49,3 @@
     </section>
 {% endblock %}
 
-{% block bottom %}
-    {{ parent() }}
-    {% do assets.addJs('theme://js/python-vault.js', { group: 'bottom', loading: 'defer' }) %}
-{% endblock %}
