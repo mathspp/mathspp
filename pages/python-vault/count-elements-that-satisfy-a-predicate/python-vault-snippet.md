@@ -8,7 +8,6 @@ taxonomy:
     - sum
     - predicate
     - idiom
-    - duck typing
 python_version: '3'
 ---
 

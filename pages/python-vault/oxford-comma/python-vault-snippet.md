@@ -9,7 +9,7 @@ python_version: '3'
 
 The function `oxford_comma` turns a list of strings into a Human-readable enumeration that separates elements with commas and the final element with the word “and” using the Oxford comma style.
 
-You can also use [structural pattern matching](/blog/pydonts/structural-pattern-matching-tutorial) to match on the structure of the input list:
+You can also use [structural pattern matching](/blog/pydonts/structural-pattern-matching-tutorial) in Python 3.10+ to match on the structure of the input list:
 
 ```py
 def oxford_comma(strings):
