@@ -1,0 +1,17 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block stylesheets %}
+    {% do assets.addCss('theme://css/python-vault.css') %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+    <section class="python-vault python-vault--single">
+        {% include 'partials/python-vault/snippet-card.html.twig' with { snippet: page, is_list: false } %}
+    </section>
+{% endblock %}
+
+{% block bottom %}
+    {{ parent() }}
+    {% do assets.addJs('theme://js/python-vault.js', { group: 'bottom', loading: 'defer' }) %}
+{% endblock %}
