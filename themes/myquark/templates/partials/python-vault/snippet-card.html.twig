@@ -6,7 +6,8 @@
         {% set code_medium = medium %}
     {% endfor %}
 {% endif %}
-{% set code_content = code_medium ? code_medium.content : '' %}
+{% set code_source = code_medium ?: snippet %}
+{% set code_content = python_vault_snippet_code(code_source)|trim %}
 {% set code_block_id = 'python-vault-code-' ~ snippet.slug %}
 {% set snippet_tags = snippet.taxonomy['snippet-tags']|default([]) %}
 {% set search_source = (snippet.title ~ ' ' ~ snippet_tags|join(' ') ~ ' ' ~ snippet.content|striptags)|lower|replace({'\n': ' '}) %}
@@ -21,8 +22,8 @@
             {% endif %}
         </{{ heading_tag }}>
 
-        <div class="python-vault__snippet-meta">
-            {% if snippet_tags %}
+        {% if snippet_tags %}
+            <div class="python-vault__snippet-meta">
                 <ul class="python-vault__tags">
                     {% for tag in snippet_tags %}
                         <li>
@@ -30,18 +31,24 @@
                         </li>
                     {% endfor %}
                 </ul>
-            {% endif %}
-
-            {% if snippet.header.python_version %}
-                <span class="python-vault__badge" title="Minimum Python version">Python {{ snippet.header.python_version }}</span>
-            {% endif %}
-        </div>
+            </div>
+        {% endif %}
     </header>
 
     {% if code_content %}
         <div class="python-vault__code">
-            <pre><code id="{{ code_block_id }}" class="language-python">{{ code_content|trim|e }}</code></pre>
-            <button type="button" class="python-vault__copy" data-copy-target="#{{ code_block_id }}">Copy code</button>
+            <pre><code id="{{ code_block_id }}" class="language-python">{{ code_content|e }}</code></pre>
+        </div>
+    {% endif %}
+
+    {% if code_content or snippet.header.python_version %}
+        <div class="python-vault__actions">
+            {% if code_content %}
+                <button type="button" class="python-vault__copy" data-copy-target="#{{ code_block_id }}">Copy code</button>
+            {% endif %}
+            {% if snippet.header.python_version %}
+                <span class="python-vault__badge" title="Minimum Python version">Python {{ snippet.header.python_version }}</span>
+            {% endif %}
         </div>
     {% endif %}
 

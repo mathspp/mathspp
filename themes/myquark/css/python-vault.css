@@ -63,11 +63,12 @@
     border-radius: 1rem;
     padding: 1.5rem;
     box-shadow: 0 0.5rem 1rem -0.75rem rgba(0, 0, 0, 0.4);
+    font-size: 0.95rem;
 }
 
 .python-vault__snippet-title {
-    font-size: clamp(1.5rem, 2vw + 1rem, 2.25rem);
-    margin: 0 0 0.75rem;
+    font-size: clamp(1.25rem, 2vw + 0.75rem, 1.8rem);
+    margin: 0 0 0.65rem;
 }
 
 .python-vault__snippet-title a {
@@ -86,7 +87,7 @@
     flex-wrap: wrap;
     gap: 0.5rem 1rem;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 .python-vault__tags {
@@ -104,7 +105,7 @@
     padding: 0.35rem 0.9rem;
     background-color: var(--accent);
     color: var(--bg);
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
@@ -122,14 +123,14 @@
     padding: 0.35rem 0.75rem;
     border-radius: 999px;
     background-color: var(--ui);
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 600;
     color: var(--tx-2);
 }
 
 .python-vault__code {
     position: relative;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .python-vault__code pre {
@@ -141,16 +142,21 @@
     border: 1px solid var(--ui-2);
 }
 
+.python-vault__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 0 1rem;
+}
+
 .python-vault__copy {
-    position: absolute;
-    top: 0.75rem;
-    right: 0.75rem;
     border: none;
     border-radius: 0.5rem;
     background-color: var(--accent);
     color: var(--bg);
     padding: 0.35rem 0.75rem;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
@@ -162,17 +168,12 @@
 }
 
 .python-vault__description {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: var(--tx-2);
 }
 
 @media (max-width: 48rem) {
     .python-vault {
         padding: 0;
-    }
-
-    .python-vault__copy {
-        position: static;
-        margin-top: 0.75rem;
     }
 }
