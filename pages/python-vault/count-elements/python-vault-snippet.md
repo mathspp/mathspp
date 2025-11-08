@@ -1,6 +1,5 @@
 ---
 title: Count elements that satisfy a predicate
-template: python-vault-snippet
 taxonomy:
   snippet-tags:
     - generators
