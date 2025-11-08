@@ -1,5 +1,5 @@
 {% extends 'partials/base.html.twig' %}
-{% set hero_image_url = header_var('hero_image_url', [page])|defined('') %}
+{% set hero_image_url = header_var('hero_image', [page])|defined('') %}
 {% set python_vault_hero_image = page.media.images[page.header.hero_image] ?: page.media.images|first %}
 {% set has_python_vault_hero = hero_image_url != '' or python_vault_hero_image is not empty %}
 {% set python_vault_hero_content %}
