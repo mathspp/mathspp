@@ -53,8 +53,14 @@
     {% endif %}
 
     {% if snippet.content %}
+        {% set content_split = snippet.content|split('</p>', 2) %}
+        {% set first_paragraph = content_split[0] %}
+        {% if '</p>' in snippet.content %}
+            {% set first_paragraph = first_paragraph ~ '</p>' %}
+        {% endif %}
+
         <div class="python-vault__description">
-            {{ snippet.content|raw }}
+            {{ first_paragraph|raw }}
         </div>
     {% endif %}
 </article>

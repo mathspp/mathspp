@@ -6,9 +6,21 @@
 {% endblock %}
 
 {% block content %}
+    {% set content_split = page.content|split('</p>', 2) %}
+    {% set additional_content = '' %}
+    {% if content_split|length > 1 %}
+        {% set additional_content = content_split[1] %}
+    {% endif %}
+
     <section class="python-vault python-vault--single">
         {% include 'partials/python-vault/snippet-card.html.twig' with { snippet: page, is_list: false } %}
     </section>
+
+    {% if additional_content %}
+        <div class="python-vault__additional-content">
+            {{ additional_content|raw }}
+        </div>
+    {% endif %}
 {% endblock %}
 
 {% block bottom %}
