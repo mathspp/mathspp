@@ -1,4 +1,24 @@
 {% extends 'partials/base.html.twig' %}
+{% set hero_image_url = header_var('hero_image_url', [page])|defined('') %}
+{% set python_vault_hero_image = page.media.images[page.header.hero_image] ?: page.media.images|first %}
+{% set has_python_vault_hero = hero_image_url != '' or python_vault_hero_image is not empty %}
+{% set python_vault_hero_content %}
+    <h1>{{ page.title }}</h1>
+    {% if page.content %}
+        {{ page.content|raw }}
+    {% endif %}
+{% endset %}
+
+{% block hero %}
+    {% if has_python_vault_hero %}
+        {% include 'partials/hero.html.twig' with {
+            id: 'python-vault-hero',
+            content: python_vault_hero_content,
+            hero_image_url: hero_image_url,
+            hero_image: python_vault_hero_image
+        } %}
+    {% endif %}
+{% endblock %}
 
 {% block stylesheets %}
     {% do assets.addCss('theme://css/python-vault.css') %}
@@ -12,14 +32,16 @@
 
 {% block content %}
     <section class="python-vault">
-        <header class="python-vault__header">
-            <h1>{{ page.title }}</h1>
-            {% if page.content %}
-                <div class="python-vault__intro">
-                    {{ page.content|raw }}
-                </div>
-            {% endif %}
-        </header>
+        {% if not has_python_vault_hero %}
+            <header class="python-vault__header">
+                <h1>{{ page.title }}</h1>
+                {% if page.content %}
+                    <div class="python-vault__intro">
+                        {{ page.content|raw }}
+                    </div>
+                {% endif %}
+            </header>
+        {% endif %}
 
         <div class="python-vault__controls">
             <label for="python-vault-search" class="python-vault__search-label">Search snippets</label>
