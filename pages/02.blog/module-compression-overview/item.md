@@ -7,8 +7,8 @@ This article will teach you how to use the package `compression`, **new in Pytho
 You will learn how to
 
  - compress and decompress data directly;
- - how to write and read from compressed files;
- - how to compress and decompress data incrementally;
+ - write and read from compressed files;
+ - compress and decompress data incrementally;
  - you'll also learn what compression algorithms are available to you and which ones are available in Python versions earlier than 3.14.
 
 
