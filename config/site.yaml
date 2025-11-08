@@ -7,6 +7,7 @@ taxonomies:
   - category
   - tag
   - topic
+  - snippet-tags
 metadata:
   description: 'The mathspp website is home to some very interesting content about mathematics and programming.'
   author: 'Rodrigo Girão Serrão'

@@ -1,0 +1,50 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block stylesheets %}
+    {% do assets.addCss('theme://css/python-vault.css') %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+    <section class="python-vault">
+        <header class="python-vault__header">
+            <h1>{{ page.title }}</h1>
+            {% if page.content %}
+                <div class="python-vault__intro">
+                    {{ page.content|raw }}
+                </div>
+            {% endif %}
+        </header>
+
+        <div class="python-vault__controls">
+            <label for="python-vault-search" class="python-vault__search-label">Search snippets</label>
+            <div class="python-vault__search-group">
+                <input type="search"
+                       id="python-vault-search"
+                       class="python-vault__search-input"
+                       placeholder="Search by description or tag..."
+                       autocomplete="off"
+                       data-python-vault-search>
+                <button type="button"
+                        class="python-vault__copy-results"
+                        data-python-vault-copy-results>
+                    Copy URL to these results
+                </button>
+            </div>
+        </div>
+
+        <p class="python-vault__no-results" data-python-vault-no-results hidden>No snippets match your search yet.</p>
+
+        <div class="python-vault__list">
+            {% set snippets = page.collection({ items: '@self.children', order: { by: 'title', dir: 'asc' } }) %}
+            {% for snippet in snippets %}
+                {% include 'partials/python-vault/snippet-card.html.twig' with { snippet: snippet, is_list: true } %}
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}
+
+{% block bottom %}
+    {{ parent() }}
+    {% do assets.addJs('theme://js/python-vault.js', { group: 'bottom', loading: 'defer' }) %}
+{% endblock %}
