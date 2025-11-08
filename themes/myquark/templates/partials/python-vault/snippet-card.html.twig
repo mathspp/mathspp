@@ -1,0 +1,53 @@
+{% set is_list = is_list|default(false) %}
+{% set heading_tag = is_list ? 'h2' : 'h1' %}
+{% set code_medium = snippet.media['snippet.py'] ?? null %}
+{% if code_medium is null %}
+    {% for medium in snippet.media.files if medium.extension == 'py' %}
+        {% set code_medium = medium %}
+    {% endfor %}
+{% endif %}
+{% set code_content = code_medium ? code_medium.content : '' %}
+{% set code_block_id = 'python-vault-code-' ~ snippet.slug %}
+{% set snippet_tags = snippet.taxonomy['snippet-tags']|default([]) %}
+{% set search_source = (snippet.title ~ ' ' ~ snippet_tags|join(' ') ~ ' ' ~ snippet.content|striptags)|lower|replace({'\n': ' '}) %}
+
+<article class="python-vault__snippet" data-python-vault-card data-search-text="{{ search_source|e('html_attr') }}">
+    <header class="python-vault__snippet-header">
+        <{{ heading_tag }} class="python-vault__snippet-title">
+            {% if is_list %}
+                <a href="{{ snippet.url }}">{{ snippet.title }}</a>
+            {% else %}
+                {{ snippet.title }}
+            {% endif %}
+        </{{ heading_tag }}>
+
+        <div class="python-vault__snippet-meta">
+            {% if snippet_tags %}
+                <ul class="python-vault__tags">
+                    {% for tag in snippet_tags %}
+                        <li>
+                            <button type="button" class="python-vault__tag" data-python-vault-tag="{{ tag }}" aria-label="Search for the '{{ tag }}' snippet tag">{{ tag }}</button>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+
+            {% if snippet.header.python_version %}
+                <span class="python-vault__badge" title="Minimum Python version">Python {{ snippet.header.python_version }}</span>
+            {% endif %}
+        </div>
+    </header>
+
+    {% if code_content %}
+        <div class="python-vault__code">
+            <pre><code id="{{ code_block_id }}" class="language-python">{{ code_content|trim|e }}</code></pre>
+            <button type="button" class="python-vault__copy" data-copy-target="#{{ code_block_id }}">Copy code</button>
+        </div>
+    {% endif %}
+
+    {% if snippet.content %}
+        <div class="python-vault__description">
+            {{ snippet.content|raw }}
+        </div>
+    {% endif %}
+</article>
