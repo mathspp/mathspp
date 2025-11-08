@@ -18,12 +18,19 @@
 
         <div class="python-vault__controls">
             <label for="python-vault-search" class="python-vault__search-label">Search snippets</label>
-            <input type="search"
-                   id="python-vault-search"
-                   class="python-vault__search-input"
-                   placeholder="Search by description or tag..."
-                   autocomplete="off"
-                   data-python-vault-search>
+            <div class="python-vault__search-group">
+                <input type="search"
+                       id="python-vault-search"
+                       class="python-vault__search-input"
+                       placeholder="Search by description or tag..."
+                       autocomplete="off"
+                       data-python-vault-search>
+                <button type="button"
+                        class="python-vault__copy-results"
+                        data-python-vault-copy-results>
+                    Copy URL to these results
+                </button>
+            </div>
         </div>
 
         <p class="python-vault__no-results" data-python-vault-no-results hidden>No snippets match your search yet.</p>
