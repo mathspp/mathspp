@@ -1,0 +1,22 @@
+date: 07-11-2025 23:55
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "A high-level overview of how to use the module compression, new in Python 3.14."
+    og:image: "https://mathspp.com/blog/module-compression-overview/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/module-compression-overview/thumbnail.webp"
+references:
+  - "Python 3 Documentation, The Python Standard Library, The `compression` package, <https://docs.python.org/3/library/compression.html> [last accessed 07-11-2025];"
+  - "Python 3 Documentation, The Python Standard Library, The `bz2` package, <https://docs.python.org/3/library/bz2.html> [last accessed 07-11-2025];"
+  - "Python 3 Documentation, The Python Standard Library, The `lzma` package, <https://docs.python.org/3/library/lzma.html> [last accessed 07-11-2025];"
+  - "Python 3 Documentation, The Python Standard Library, The `gzip` package, <https://docs.python.org/3/library/gzip.html> [last accessed 07-11-2025];"
+  - "Python 3 Documentation, The Python Standard Library, The `zlib` package, <https://docs.python.org/3/library/zlib.html> [last accessed 07-11-2025];"
+  - "Python 3 Documentation, The Python Standard Library, The `compression.zstd` package, <https://docs.python.org/3/library/compression.zstd.html> [last accessed 07-11-2025];"
+slug: "module-compression-overview"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+      - modules
+      - programming
+      - python
+title: Module compression overview
