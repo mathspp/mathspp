@@ -1,5 +1,5 @@
 body_classes: header-dark header-transparent
 hero_classes: "parallax text-light hero-large overlay-dark-gradient"
-hero_image_url: theme://images/common_hero.webp
+hero_image_url: '/user/themes/myquark/images/common_hero.webp'
 menu: Python Vault
 title: Python Vault
