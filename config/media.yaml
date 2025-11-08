@@ -1,7 +1,0 @@
-py:
-  type: file
-  mime: text/x-python
-  image: false
-  audio: false
-  video: false
-  document: false
