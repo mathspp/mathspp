@@ -201,22 +201,6 @@
     margin: 0px 0px 1rem;
 }
 
-.python-vault__copy {
-    border: medium;
-    border-radius: 0.5rem;
-    background-color: var(--accent);
-    color: var(--bg);
-    padding: 0.35rem 0.75rem;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-.python-vault__copy:hover,
-.python-vault__copy:focus {
-    background-color: var(--accent-2);
-    outline: currentcolor;
-}
-
 .python-vault__description {
     color: var(--tx);
 }

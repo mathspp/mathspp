@@ -48,7 +48,7 @@
     {% if code_content or snippet.header.python_version %}
         <div class="python-vault__actions">
             {% if code_content %}
-                <button type="button" class="python-vault__copy" data-copy-target="#{{ code_block_id }}">Copy code</button>
+                <button type="button" class="button" data-copy-target="#{{ code_block_id }}">Copy code</button>
             {% endif %}
             {% if snippet.header.python_version %}
                 <span class="python-vault__badge" title="Minimum Python version">Python {{ snippet.header.python_version }}</span>
