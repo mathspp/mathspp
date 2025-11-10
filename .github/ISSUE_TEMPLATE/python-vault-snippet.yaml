@@ -58,7 +58,6 @@ body:
       label: Minimum Python version (optional)
       description: The earliest Python version this snippet supports.
       options:
-        - Any
         - 3.14
         - 3.13
         - 3.12
