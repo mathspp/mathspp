@@ -351,20 +351,24 @@ blockquote {
 /* Background colour for button classes like the "Random Article" button or the "Subscribe the newsletter". */
 .button,
 .btn {
+    border-radius: 0.5rem;
     color: var(--accent);
     background: var(--bg);
     border: .05rem solid var(--accent);
+    transition: transform 0.2s ease;
 }
 
 .btn:hover,
 .button:hover {
     background: var(--bg-2);
+    transform: translateY(-2px);
 }
 
 .btn:focus,
 .button:focus {
     color: var(--bg);
     background: var(--tx);
+    transform: translateY(-2px);
 }
 
 .btn-center {
