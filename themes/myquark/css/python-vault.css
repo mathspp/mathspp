@@ -117,12 +117,13 @@
 
 .python-vault__snippet-suggester {
     display: inline-block;
-    margin-right: 0.5rem;
-    font-size: 0.65rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--tx);
-    opacity: 0.85;
+    margin-left: 0.4rem;
+    font-size: 30%;
+    color: var(--tx-2);
+}
+
+.python-vault__snippet-suggester:hover {
+    text-decoration: underline;
 }
 
 .python-vault__snippet-title a {

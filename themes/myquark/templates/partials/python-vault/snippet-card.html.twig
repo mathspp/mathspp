@@ -16,13 +16,13 @@
 <article class="python-vault__snippet" data-python-vault-card data-search-text="{{ search_source|e('html_attr') }}">
     <header class="python-vault__snippet-header">
         <{{ heading_tag }} class="python-vault__snippet-title">
-            {% if suggested_by %}
-                <span class="python-vault__snippet-suggester">suggested by {{ suggested_by }}</span>
-            {% endif %}
             {% if is_list %}
                 <a href="{{ snippet.url }}">{{ snippet.title }}</a>
             {% else %}
                 {{ snippet.title }}
+            {% endif %}
+            {% if suggested_by %}
+                <span class="python-vault__snippet-suggester">suggested by {{ suggested_by }}</span>
             {% endif %}
         </{{ heading_tag }}>
 
