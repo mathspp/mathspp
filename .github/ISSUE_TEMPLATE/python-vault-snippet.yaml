@@ -1,0 +1,91 @@
+name: "💡 Python Vault Snippet"
+description: Suggest a reusable Python snippet for the Python Vault.
+title: "[Snippet]: "
+labels: ["python-vault"]
+assignees:
+  - rodrigogiraoserrao
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing to the **Python Vault**!  
+        Please provide a short description and the snippet code.  
+        Optional fields help with discoverability and proper attribution.
+
+  - type: input
+    id: snippet-title
+    attributes:
+      label: Snippet title (optional)
+      description: A short title for this snippet.
+      placeholder: e.g. "Chunk an iterable into N-sized pieces"
+    validations:
+      required: false
+
+  - type: textarea
+    id: snippet-description
+    attributes:
+      label: Description
+      description: A short paragraph describing what the snippet does and when to use it.
+      placeholder: Explain the problem it solves, any caveats, and usage context.
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: snippet-code
+    attributes:
+      label: Snippet (code)
+      description: Paste only the Python code for the snippet.
+      render: python
+      placeholder: |
+        def chunked(iterable, n):
+            ...
+    validations:
+      required: true
+
+  - type: input
+    id: snippet-tags
+    attributes:
+      label: Tags (optional)
+      description: Comma-separated list of tags to help others find this snippet.
+      placeholder: e.g. "itertools, parsing, cli"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: min-python
+    attributes:
+      label: Minimum Python version (optional)
+      description: The earliest Python version this snippet supports.
+      options:
+        - Any
+        - 3.14
+        - 3.13
+        - 3.12
+        - 3.11
+        - 3.10
+        - 3.9
+        - 3.8
+        - "I don't know"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: attribution-preference
+    attributes:
+      label: Do you want to be credited for this snippet?
+      description: Choose whether you'd like your name or nickname displayed when this snippet is published.
+      options:
+        - "Yes, please credit me"
+        - "No, I'd prefer to remain anonymous"
+    validations:
+      required: true
+
+  - type: input
+    id: attribution-name
+    attributes:
+      label: Attribution name or nickname (optional)
+      description: If you selected to be credited, under what name/nickname should we attribute you?
+      placeholder: e.g. "JaneDoe", "JD", or your full name
+    validations:
+      required: false
