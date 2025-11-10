@@ -1,6 +1,11 @@
 ## Past tips
 
 <ol reversed>
+    <li>Moving average</li>
+    <li>Using a list as a stack</li>
+    <li>Title case</li>
+    <li>Creating temporary files</li>
+    <li><code>assert</code> statements with custom message</li>
     <li>Oxford comma</li>
     <li>Truthy and Falsy</li>
     <li>Private members</li>
