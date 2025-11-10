@@ -1,4 +1,5 @@
 {% extends 'partials/base.html.twig' %}
+{% set python_vault_add_snippet_url = 'https://github.com/mathspp/mathspp/issues/new/choose' %}
 {% set hero_image_url = header_var('hero_image_url', [page])|defined('') %}
 {% set python_vault_hero_image = page.media.images[page.header.hero_image] ?: page.media.images|first %}
 {% set has_python_vault_hero = hero_image_url != '' or python_vault_hero_image is not empty %}
@@ -7,6 +8,9 @@
     {% if page.content %}
         {{ page.content|raw }}
     {% endif %}
+    <div class="python-vault__cta python-vault__cta--hero">
+        {% include 'partials/python-vault/add-snippet-button.html.twig' with { url: python_vault_add_snippet_url } %}
+    </div>
 {% endset %}
 
 {% block hero %}
@@ -40,6 +44,9 @@
                         {{ page.content|raw }}
                     </div>
                 {% endif %}
+                <div class="python-vault__cta">
+                    {% include 'partials/python-vault/add-snippet-button.html.twig' with { url: python_vault_add_snippet_url } %}
+                </div>
             </header>
         {% endif %}
 
@@ -67,6 +74,10 @@
             {% for snippet in snippets %}
                 {% include 'partials/python-vault/snippet-card.html.twig' with { snippet: snippet, is_list: true } %}
             {% endfor %}
+        </div>
+
+        <div class="python-vault__cta python-vault__cta--list-bottom">
+            {% include 'partials/python-vault/add-snippet-button.html.twig' with { url: python_vault_add_snippet_url } %}
         </div>
     </section>
 {% endblock %}
