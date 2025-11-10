@@ -1,6 +1,6 @@
-name: "💡 Python Vault Snippet"
+name: "Suggest Python Vault snippet 💡"
 description: Suggest a reusable Python snippet for the Python Vault.
-title: "[Snippet]: "
+title: "Python Vault snippet suggestion"
 labels: ["python-vault"]
 assignees:
   - rodrigogiraoserrao
