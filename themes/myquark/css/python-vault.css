@@ -16,6 +16,42 @@
     color: var(--tx);
 }
 
+.python-vault__cta {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.python-vault__cta--hero {
+    margin-top: 2.5rem;
+}
+
+.python-vault__cta--list-bottom,
+.python-vault__cta--page-bottom {
+    margin-top: 3rem;
+}
+
+.python-vault__add-snippet-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    border: medium;
+    background-color: var(--accent);
+    color: var(--bg);
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.python-vault__add-snippet-button:hover,
+.python-vault__add-snippet-button:focus {
+    background-color: var(--accent-2);
+    transform: translateY(-1px);
+    outline: currentColor;
+}
+
 .python-vault__controls {
     margin-bottom: 1.5rem;
 }
@@ -99,6 +135,16 @@
 .python-vault__snippet-title {
     margin: 0px;
 
+}
+
+.python-vault__snippet-suggester {
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--tx);
+    opacity: 0.85;
 }
 
 .python-vault__snippet-title a {

@@ -11,10 +11,14 @@
 {% set code_block_id = 'python-vault-code-' ~ snippet.slug %}
 {% set snippet_tags = snippet.taxonomy['snippet-tags']|default([]) %}
 {% set search_source = (snippet.title ~ ' ' ~ snippet_tags|join(' ') ~ ' ' ~ snippet.content|striptags)|lower|replace({'\n': ' '}) %}
+{% set suggested_by = attribute(snippet.header, 'suggested-by')|default(null) %}
 
 <article class="python-vault__snippet" data-python-vault-card data-search-text="{{ search_source|e('html_attr') }}">
     <header class="python-vault__snippet-header">
         <{{ heading_tag }} class="python-vault__snippet-title">
+            {% if suggested_by %}
+                <span class="python-vault__snippet-suggester">suggested by {{ suggested_by }}</span>
+            {% endif %}
             {% if is_list %}
                 <a href="{{ snippet.url }}">{{ snippet.title }}</a>
             {% else %}
