@@ -285,43 +285,124 @@ In the snippet above, the function call becomes clearer because you were forced 
 ### Mutable default arguments
 
 A common gotcha with Python functions is using mutable values as default arguments.
-
-When you define a default value for an argument, that value is evaluated only once when the function is defined, which means the same value is used whenever the function is called.
-If that value is mutable, weird things can happen:
+To see what the problem is, consider a function `send_notification` that can communicate with the user through different channels.
+For critical messages, the user is notified directly:
 
 ```py
-def put_in_list(value, list_to_put_into=[]):
-    list_to_put_into.append(value)
-    return list_to_put_into
+def send_notification(message, config={"critical": False, "channels": []}):
+    # If there was an error, ensure it's critical:
+    if message.startswith("error: "):
+        config["critical"] = True
+        config["channels"].append("direct")
 
-my_list = put_in_list(3)  # Put 3 in a new list.
-print(my_list)  # [3]
-my_list = put_in_list(4, my_list)  # Put 4 in that list.
-print(my_list)  # [3, 4]
-
-new_list = put_in_list(5)  # Put 5 in a new list.
-print(new_list)  # [3, 4, 5] ?!
-print(my_list)  # [3, 4, 5] ?!
+    if config["critical"]:
+        print(f"CRITICAL: {message}")
+    else:
+        print(message)
+    # ...
 ```
 
-This happens because default arguments are evaluated once, when the function is first defined, and then become associated with your function:
+This function seems to be working fine:
 
-```py
-print(put_in_list.__defaults__)  # ([3, 4, 5],)
-default_list = put_in_list.__defaults__[0]
-print(default_list is my_list)  # True
+```pycon
+>>> send_notification("new login detected", {"critical": True})
+CRITICAL: new login detected
+>>> send_notification("hi!")
+hi!
 ```
 
-Whenever you call `put_in_list` without specifying a list, the list that is used by default is always the same list, which is the one that you can access from the dunder attribute `__defaults__`.
+Now, suppose the function `send_notification` auto-detects a critical message:
 
-The most common way to fix this is by using `None` as the default and then checking for it in the function:
+```pycon
+>>> send_notification("error: can't reset password")
+CRITICAL: error: can't reset password
+```
+
+The next time you call `send_notification` without specifying an explicit dictionary `config`, something interesting happens:
+
+```pycon
+>>> send_notification("hi!")
+CRITICAL: hi!
+```
+
+This time, the harmless message “hi!” was tagged as critical!
+What happened?
+
+This happens because default arguments are evaluated once, when the function is first defined, and then become associated with your function for the lifetime of your function.
+This means that, whenever you call the function `send_notification` without specifying the second argument, the same dictionary gets reused across function calls.
+
+If you **redefine the function** to print the id of the dictionary `config`, you can understand why things go wrong:
 
 ```py
-def put_in_list(value, list_to_put_into=None):
-    if list_to_put_into is None:
-        list_to_put_into = []
-    list_to_put_into.append(value)
-    return list_to_put_into
+def send_notification(message, config={"critical": False, "channels": []}):
+    print(id(config))
+
+    # If there was an error, ensure it's critical:
+    if message.startswith("error: "):
+        config["critical"] = True
+        config["channels"].append("direct")
+
+    if config["critical"]:
+        print(f"CRITICAL: {message}")
+    else:
+        print(message)
+    # ...
+```
+
+Now, you can replay the previous calls:
+
+```pycon
+>>> send_notification("new login detected", {"critical": True})
+4312406016
+CRITICAL: new login detected
+>>> send_notification("hi!")
+4312352448
+hi!
+```
+
+This still looks fine, but note how you can dig into the function `send_notification` to access the dictionary with the id `4312352448`:
+
+```pycon
+>>> send_notification.__defaults__
+({'critical': False, 'channels': ['direct']},)
+>>> config_dict = send_notification.__defaults__[0]
+>>> print(id(config_dict))
+4312352448
+```
+
+Now, call the function `send_notification` again:
+
+```pycon
+>>> send_notification("error: can't reset password")
+4312352448
+CRITICAL: error: can't reset password
+```
+
+If you look closely, the dictionary used _also_ had the id `4312352448`...
+But inside the function, the key `"critical"` was set to `True`...
+And you can see that:
+
+```pycon
+>>> config_dict["critical"]
+True
+```
+
+Now, whenever the function `send_notification` is called without a second argument, the dictionary `config` will have `"critical"` set to `True` by default:
+
+```pycon
+>>> send_notification("hi!")
+4312352448
+CRITICAL: hi!
+```
+
+The most common way to deal with this pattern is by using `None` as the default and then swapping it in for the value you need inside the function:
+
+```py
+def send_notification(message, config=None):
+    if config is None:
+        config = {"critical": False, "channels": []}
+
+    # ...
 ```
 
 
