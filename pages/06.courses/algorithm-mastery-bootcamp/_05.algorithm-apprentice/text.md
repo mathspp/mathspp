@@ -16,5 +16,5 @@ As an “**Algorithm Apprentice**”, you get access to all of these perks:
  - Lifetime access to the recordings of the 29 sessions.
  - And more!
 
-The 5 preparation sessions alone are worth $200+, so don't sit this one out!
-And if you're one of the first to join, you get an **exclusive early bird bonus** worth another $50+:
+The 5 preparation sessions alone are worth \$200+, so don't sit this one out!
+And if you're one of the first to join, you get an **exclusive early bird bonus** worth another \$50+:
