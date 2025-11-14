@@ -1,5 +1,6 @@
 ---
 image_align: right
+mathjax: false
 ---
 
 ## Algorithm Apprentice

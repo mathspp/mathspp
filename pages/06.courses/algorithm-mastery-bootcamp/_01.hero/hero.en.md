@@ -5,4 +5,3 @@ hero_image: theme://images/common_hero.webp
 ---
 
 # Algorithm Mastery bootcamp
-
