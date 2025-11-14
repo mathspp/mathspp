@@ -9,7 +9,7 @@ Upcoming dates:
 
 | Course | Dates |
 | :- | :- |
-| _To be announced_ | December 2025 |
+| [Algorithm Mastery bootcamp](#algorithm-mastery-bootcamp) | 1st – 12th December 2025 |
 | [Intermediate Python course](#intermediate-python-course) | 12th – 16th January 2026 |
 
 I also offer [corporate trainings for teams, both remote and in-person](/training).
