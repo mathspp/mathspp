@@ -29,8 +29,8 @@ title: "Fp blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">5</th>
-            <th style="text-align: center;">16,072</th>
-            <th style="text-align: center;">1,325</th>
+            <th style="text-align: center;">16,484</th>
+            <th style="text-align: center;">1,384</th>
         </tr>
     </thead>
     <tbody>

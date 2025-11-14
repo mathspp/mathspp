@@ -10,6 +10,7 @@ As such, this Pydon't covers everything else there is to learn:
 
  - [How to structure and organise functions](#what-goes-into-a-function-and-what-doesn-t).
  - [How to work with a function signature](#the-function-signature), including [parameter order](#ordering-the-parameters), [`*args` and `**kwargs`](#args-and-kwargs), and [the special syntax introduced by `*` and `/`](#positional-only-and-keyword-only-arguments).
+ - [Best practices to document a function](#documenting-functions-with-docstrings).
  - [What anonymous functions are](#anonymous-functions), how to define them with the keyword `lambda`, and [when to use them](#use-case-rule-of-thumb).
  - [What it means for functions to be objects](#functions-as-objects) and how to leverage that in your code.
  - [How closures seem to defy a fundamental rule of scoping in Python](#closures).
@@ -493,14 +494,14 @@ Talking about the “correct ordering of your function parameters” is a bit of
 Order your function parameters by how likely the caller is to change them.
 Parameters that are more likely to remain the same across function calls go first, and parameters that are more likely to change across function calls go last.
 
-For example, the Portuguese government has a platform where I can check all of the receipts I have issued as a trainer during a specific time period.
-The government is likely to have an endpoint that accepts a taxpayer number and a time interval, and the endpoint retrieves all of the receipts for that taxpayer within that timeframe.
+For example, the Portuguese government has a platform where I can check all of the invoices I have issued as a trainer during a specific time period.
+The government is likely to have an endpoint that accepts a taxpayer number and a time interval, and the endpoint retrieves all of the invoices for that taxpayer within that timeframe.
 
 Their endpoint was either defined as:
 
 ```py
 #                  vvvvvvvv
-def fetch_receipts(taxpayer, time_interval):
+def fetch_invoices(taxpayer, time_interval):
     ...
 ```
 
@@ -508,15 +509,15 @@ or
 
 ```py
 #                                 vvvvvvvv
-def fetch_receipts(time_interval, taxpayer):
+def fetch_invoices(time_interval, taxpayer):
     ...
 ```
 
 According to my recommendation, the first signature is better.
 Why?
-It is much more common to have a user log in and fetch receipts for different time frames than it is for a group of users to log in, one at a time, to fetch receipts from the exact same time frame.
+It is much more common to have a user log in and fetch invoices for different time frames than it is for a group of users to log in, one at a time, to fetch invoices from the exact same time frame.
 
-Opting for `fetch_receipts(taxpayer, time_interval)` is not only more sensible, but also more practical, for example, [when using partial function application](#partial-function-application).
+Opting for `fetch_invoices(taxpayer, time_interval)` is not only more sensible, but also more practical, for example, [when using partial function application](#partial-function-application).
 
 
 ### Parameters versus arguments
@@ -527,14 +528,124 @@ An _argument_ is a concrete value that is passed into a function when you call a
 For example, you can say “the built-in function `print` accepts all types of arguments, not just strings”.
 
 A _parameter_ is a formal variable defined in the function signature.
-For example, you can say the function `add` shown below has two parameters called `a` and `b`:
+For example, you can say the function `fetch_invoices` shown below has two parameters called `taxpayer` and `time_interval`:
 
 ```py
-def add(a, b):
-    return a + b
+def fetch_invoices(taxpayer, time_interval):
+    ...
 ```
 
 Knowing this distinction won't make or break your career as a Python developer, but it's important to be aware of these nuances, so that your understanding of the Python language and of programming in general advances.
+
+
+## Documenting functions with docstrings
+
+A function signature should be followed by a special string called a “docstring”, which stands for “documentation string”.
+The documentation string should contain a description of what the function does, how to use it, and any additional context that is important for people using the function.
+
+
+### Docstring format
+
+At the very least, all functions should have a one-sentence docstring describing what the function does:
+
+```py
+def fetch_invoices(taxpayer, time_interval):
+    """Gets all invoices emitted by the given taxpayer during the given interval."""
+    ...
+```
+
+Docstrings are usually written with triple quotes because it's common for them to span over multiple lines to include more context about the function and its usage, as the example below demonstrates:
+
+```py
+def fetch_invoices(taxpayer, time_interval):
+    """Gets all invoices emitted by the given taxpayer during the given interval.
+    
+    The interval is considered to be inclusive, so invoices emitted on the start
+    or end date of the interval are also included. All invoices are included,
+    regardless of their status (paid, pending, canceled, etc).
+
+    Args:
+        taxpayer: A valid Portuguese 9-digit taxpayer number.
+        time_interval: A pair of valid dates, with the second date being on or after
+            the first date.
+
+    Returns:
+        A list with all invoices emitted during that time interval.
+    """
+    ...
+```
+
+The docstring shown above contains a one-sentence summary of the function behaviour, additional context regarding the behaviour of the function, a section with information about the arguments that must be passed into the function, and a section describing the return value of the function.
+This example follows the [Google style guide for docstrings](https://google.github.io/styleguide/pyguide.html#383-functions-and-methods), which is one of many styles available.
+You are welcome to use whatever style fits your codebase best, but at the very least you should try to include a one-sentence description of your function in a docstring.
+
+
+### The benefits of docstrings
+
+Using a docstring to document your function is not the same thing as using single-line comments with `#`.
+When Python finds a string immediately after the signature of a function, it treats that string as a docstring and attaches that string to the function object.
+You can access a function's docstring via the dunder attribute `__doc__`:
+
+```py
+print(fetch_receipts.__doc__)
+```
+```txt
+Gets all invoices emitted by the given taxpayer during the given interval.
+
+The interval is considered to be inclusive, so invoices emitted on the start
+or end date of the interval are also included. All invoices are included,
+regardless of their status (paid, pending, canceled, etc).
+
+Args:
+    taxpayer: A valid Portuguese 9-digit taxpayer number.
+    time_interval: A pair of valid dates, with the second date being on or after
+        the first date.
+
+Returns: A list with all invoices emitted during that time interval.
+
+```
+
+You don't generally access the dunder attribute `__doc__` directly, but the built-in function `help` uses it when displaying help about your function.
+If you call `help` on the function `fetch_invoices`, the docstring is used to populate the help text:
+
+```pycon
+>>> help(fetch_invoices)
+Help on function fetch_invoices in module __main__:
+
+fetch_invoices(taxpayer, time_interval)
+    Gets all invoices emitted by the given taxpayer during the given interval.
+
+    The interval is considered to be inclusive, so invoices emitted on the start
+    or end date of the interval are also included. All invoices are included,
+    regardless of their status (paid, pending, canceled, etc).
+
+    Args:
+        taxpayer: A valid Portuguese 9-digit taxpayer number.
+        time_interval: A pair of valid dates, with the second date being on or after
+            the first date.
+
+    Returns: A list with all invoices emitted during that time interval.
+```
+
+Most IDEs will also show a function's docstring when providing auto-completion help or when you hover over the name of the function.
+The screenshot below shows the tooltip that VS Code displays when I hover over the name of the function `fetch_receipts` at a call site:
+
+![Screenshot showing the tooltip that VS Code displays when I hover over the name of the function `fetch_receipts` at a call site.](_vs_code_tooltip.webp "VS Code tooltip showing the docstring.")
+
+All of these features leverage a function's docstring and wouldn't work if you used regular comments with the character `#` instead:
+
+```py
+def fetch_invoices_no_docstring(taxpayer, time_interval):
+    # Gets all invoices emitted by the given taxpayer during the given interval.
+    #
+    # The interval is considered to be inclusive, so invoices emitted on the start
+    # or end date of the interval are also included. All invoices are included,
+    # regardless of their status (paid, pending, canceled, etc).
+    # ...
+    ...
+
+print(fetch_invoices_no_docstring.__doc__)  # None
+```
 
 
 ## Anonymous functions
@@ -1268,6 +1379,7 @@ You've seen everything you can do with functions, so let's recap the key takeawa
  - the [asterisk `*` can also be used to write a function that accepts an arbitrary number of positional arguments](#args-and-kwargs);
  - the [module `inspect` can be used to inspect a function's signature](#the-signature-object);
  - default arguments are evaluated when the function is defined and, because of that, [you shouldn't use mutable objects as default arguments](#mutable-default-arguments);
+ - the function header should be followed by a [triple-quoted string, called a docstring, documenting the function behaviour](#documenting-functions-with-docstrings);
  - [the keyword `lambda` can be used to write expressions that define lightweight functions](#anonymous-functions);
  - [functions defined with `def` are objects](#functions-as-objects), [and so are `lambda` functions](#anonymous-functions-as-objects), meaning they can be passed as arguments to functions, returned from functions, and more;
  - [a closure](#closures) preserves variables from the enclosing scope alive when a function returns another function and the returned function accesses variables from the function that just exited;

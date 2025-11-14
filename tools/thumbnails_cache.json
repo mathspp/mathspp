@@ -19,15 +19,15 @@
   },
   "programming": {
     "articles": 311,
-    "code_snippets": 3912,
-    "loc": 37437,
-    "words": 377027
+    "code_snippets": 3918,
+    "loc": 37496,
+    "words": 377439
   },
   "python": {
     "articles": 305,
-    "code_snippets": 3791,
-    "loc": 36344,
-    "words": 374292
+    "code_snippets": 3797,
+    "loc": 36403,
+    "words": 374704
   },
   "algorithms": {
     "articles": 25,
@@ -565,15 +565,15 @@
   },
   "__all": {
     "articles": 431,
-    "code_snippets": 4052,
-    "loc": 38571,
-    "words": 466405
+    "code_snippets": 4058,
+    "loc": 38630,
+    "words": 466817
   },
   "fp": {
     "articles": 5,
-    "code_snippets": 201,
-    "loc": 1325,
-    "words": 16072
+    "code_snippets": 207,
+    "loc": 1384,
+    "words": 16484
   },
   "modular arithmetics": {
     "articles": 1,
