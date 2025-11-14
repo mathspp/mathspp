@@ -5,6 +5,8 @@ content:
     order:
         by: default
         dir: asc
+mathjax:
+    active: false
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "Algorithm Mastery bootcamp, an intense problem-solving bootcamp running between the 1st and 12th of December 2025."
