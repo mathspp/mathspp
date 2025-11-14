@@ -1,4 +1,4 @@
-# Intermediate Python course
+## Intermediate Python course
 
 - **Next dates**:
    - 12th – 16th January 2026

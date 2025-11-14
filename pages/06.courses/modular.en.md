@@ -6,6 +6,7 @@ content:
         custom:
           - "_hero"
           - "_intro"
+          - "_algorithm-mastery-bootcamp"
           - "_intermediate-python-course"
           - "_stay-updated"
           - "_contact-me"

@@ -1,4 +1,4 @@
-# Stay updated
+## Stay updated
 
 To stay updated and learn about new courses as soon as they're launched, [join the mathspp insider 🐍🚀 mailing list](/insider).
 I send weekly emails with Python knowledge and that's where I'll share information about new courses:

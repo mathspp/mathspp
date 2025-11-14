@@ -1,4 +1,4 @@
-# Questions?
+## Questions?
 
 Do you have any questions regarding any of the courses?
 Are you unsure whether a course is suitable for you?
