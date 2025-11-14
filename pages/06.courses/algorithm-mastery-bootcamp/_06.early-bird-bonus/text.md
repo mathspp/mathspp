@@ -11,4 +11,4 @@ As an early bird joiner, you get access to a free early bird bonus that increase
 </div>
 <br />
 
-However, if you're serious about upskilling, developing your self-sufficiency as a Python programmer, and deeping your understanding of Python best practices, algorithms, and data structures, you can also join as an “**Algorithm Master**”:
+However, if you're serious about upskilling, developing your self-sufficiency as a Python programmer, and deepening your understanding of Python best practices, algorithms, and data structures, you can also join as an “**Algorithm Master**”:
