@@ -797,7 +797,6 @@ summary::after {
     content: "▸";
     transition: transform 0.2s ease;
     margin-left: 0.5rem;
-    font-size: 0.9rem;
 }
 
 details[open] summary::after {
