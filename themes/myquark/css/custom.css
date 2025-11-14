@@ -771,3 +771,49 @@ form span.required {
         }
     }
 }
+
+details {
+    background: var(--faq-bg);
+    border: 1px solid var(--tx);
+    border-radius: 0.4rem;
+    padding: 0.2rem 0.5rem;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem 0;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::after {
+    content: "▸";
+    transition: transform 0.2s ease;
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+}
+
+details[open] summary::after {
+    transform: rotate(90deg);
+}
+
+summary:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+details>*:not(summary) {
+    padding: 0.6rem 0 0.2rem 0;
+}
+
+details[open] {
+    border-color: var(--accent);
+    background: var(--bg-2);
+}
