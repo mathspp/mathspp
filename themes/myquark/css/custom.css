@@ -816,3 +816,7 @@ details[open] {
     border-color: var(--accent);
     background: var(--bg-2);
 }
+
+details[open]>summary {
+    padding-bottom: 1rem;
+}
