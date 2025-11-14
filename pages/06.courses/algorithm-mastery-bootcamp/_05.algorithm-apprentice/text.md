@@ -18,4 +18,10 @@ As an “**Algorithm Apprentice**”, you get access to all of these perks:
  - And more!
 
 The 5 preparation sessions alone are worth $200+, so don't sit this one out!
+
+<div style="display:flex; justify-content:center;">
+<a href="https://mathspp.gumroad.com/l/algorithm-mastery-bootcamp-2025?wanted=true&variant=Early+bird+%F0%9F%90%9B%3A+Algorithm+apprentice+%F0%9F%8E%AF+%2B+free+bonus+%F0%9F%92%B8" class="btn">Become an “<strong>Algorithm Apprentice</strong>”</a>
+</div>
+<br />
+
 And if you're one of the first to join, you get an **exclusive early bird bonus** worth another $50+:

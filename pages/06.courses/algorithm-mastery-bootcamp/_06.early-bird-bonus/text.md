@@ -7,7 +7,7 @@ As an early bird joiner, you get access to a free early bird bonus that increase
  - Video walkthroughs of the solutions for the 48 preparation challenges.
 
 <div style="display:flex; justify-content:center;">
-<a href="https://mathspp.gumroad.com/l/algorithm-mastery-bootcamp-2025?wanted=true&variant=Early+bird+%F0%9F%90%9B%3A+Algorithm+apprentice+%F0%9F%8E%AF+%2B+free+bonus+%F0%9F%92%B8" class="btn">Become an “<strong>Algorithm Apprentice</strong>”</a>
+<a href="https://mathspp.gumroad.com/l/algorithm-mastery-bootcamp-2025?wanted=true&variant=Early+bird+%F0%9F%90%9B%3A+Algorithm+apprentice+%F0%9F%8E%AF+%2B+free+bonus+%F0%9F%92%B8" class="btn">Grab your <strong>free</strong> bonus</a>
 </div>
 <br />
 
