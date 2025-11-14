@@ -2,7 +2,6 @@ Learn how to use properties to add dynamic behaviour to your attributes.
 
 ===
 
-![A code snippet with the definition of a Python class and a property called “name”.](thumbnail.webp)
 
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)

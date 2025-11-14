@@ -2,7 +2,6 @@ This article teaches the decorator pattern in Python, why it exists, how to use 
 
 ===
 
-![](thumbnail.webp)
 
 The decorator pattern is a functional pattern that Python developers leverage to write more modular and composable functions.
 In this Pydon't, you will learn exactly why the decorator pattern matters, how to use it, and when to use it.

@@ -2,7 +2,6 @@ This article shows you how to overload the arithmetic operators in Python with d
 
 ===
 
-![](thumbnail.webp)
 
 ## Introduction
 

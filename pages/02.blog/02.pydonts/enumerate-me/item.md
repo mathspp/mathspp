@@ -11,7 +11,6 @@ with `for` loops.
 
 ===
 
-![A Python code snippet showing a basic use of `enumerate`](thumbnail.webp)
 
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)

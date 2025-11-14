@@ -3,7 +3,6 @@ In fact, you use descriptors every day and you don't even know it.
 
 ===
 
-![A code snippet with the skeleton definition of a descriptor.](thumbnail.webp)
 
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)

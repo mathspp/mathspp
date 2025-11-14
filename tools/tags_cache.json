@@ -3,7 +3,7 @@
     "articles": 431,
     "code_snippets": 4058,
     "loc": 38630,
-    "words": 466817
+    "words": 466534
   },
   "bpci": {
     "articles": 10,
@@ -27,13 +27,13 @@
     "articles": 311,
     "code_snippets": 3918,
     "loc": 37496,
-    "words": 377439
+    "words": 377156
   },
   "python": {
     "articles": 305,
     "code_snippets": 3797,
     "loc": 36403,
-    "words": 374704
+    "words": 374421
   },
   "algorithms": {
     "articles": 25,
@@ -93,13 +93,13 @@
     "articles": 15,
     "code_snippets": 314,
     "loc": 3781,
-    "words": 24460
+    "words": 24430
   },
   "oop": {
     "articles": 6,
     "code_snippets": 151,
     "loc": 1511,
-    "words": 10672
+    "words": 10647
   },
   "textual": {
     "articles": 5,
@@ -207,7 +207,7 @@
     "articles": 29,
     "code_snippets": 156,
     "loc": 1568,
-    "words": 17601
+    "words": 17590
   },
   "metaprogramming": {
     "articles": 3,
@@ -315,7 +315,7 @@
     "articles": 9,
     "code_snippets": 123,
     "loc": 1487,
-    "words": 9824
+    "words": 9823
   },
   "rationals": {
     "articles": 1,
@@ -411,7 +411,7 @@
     "articles": 5,
     "code_snippets": 207,
     "loc": 1384,
-    "words": 16484
+    "words": 16483
   },
   "random walks": {
     "articles": 1,

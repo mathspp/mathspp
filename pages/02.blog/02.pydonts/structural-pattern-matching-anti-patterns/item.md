@@ -11,7 +11,6 @@ This article explores situations for which `match` isn't the answer.
 
 ===
 
-![A Python code snippet showing a structural pattern matching anti-pattern.](thumbnail.webp)
 
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)

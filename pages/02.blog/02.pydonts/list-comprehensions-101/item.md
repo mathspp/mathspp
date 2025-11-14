@@ -8,7 +8,6 @@ This Pydon't will teach you the basics of list comprehensions in Python.
 
 ===
 
-![The anatomy of a list comprehension.](thumbnail.webp)
 
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)

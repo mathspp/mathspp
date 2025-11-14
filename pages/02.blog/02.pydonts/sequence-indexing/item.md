@@ -8,7 +8,6 @@ A short article with all you need to know about sequence indexing in Python – 
 
 ===
 
-![](thumbnail.webp)
 
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)

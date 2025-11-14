@@ -9,7 +9,6 @@ Pydon'ts will help you write more Pythonic code.
 
 ===
 
-![The Python logo with some construction work barriers in front of it.](thumbnail.webp)
 
 
 ## Purpose
