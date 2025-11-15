@@ -12,6 +12,11 @@
 {% set snippet_tags = snippet.taxonomy['snippet-tags']|default([]) %}
 {% set search_source = (snippet.title ~ ' ' ~ snippet_tags|join(' ') ~ ' ' ~ snippet.content|striptags)|lower|replace({'\n': ' '}) %}
 {% set suggested_by = attribute(snippet.header, 'suggested-by')|default(null) %}
+{% set snippet_route = snippet.route|trim('/') %}
+{% set github_edit_base = 'https://github.com/mathspp/mathspp/edit/main/' %}
+{% set snippet_repo_path = snippet_route ? 'pages/' ~ snippet_route : null %}
+{% set edit_code_url = snippet_repo_path ? github_edit_base ~ snippet_repo_path ~ '/snippet.py' : null %}
+{% set edit_description_url = snippet_repo_path ? github_edit_base ~ snippet_repo_path ~ '/python-vault-snippet.md' : null %}
 
 <article class="python-vault__snippet" data-python-vault-card data-search-text="{{ search_source|e('html_attr') }}">
     <header class="python-vault__snippet-header">
@@ -45,10 +50,16 @@
         </div>
     {% endif %}
 
-    {% if code_content or snippet.header.python_version %}
+    {% if code_content or snippet.header.python_version or snippet_repo_path %}
         <div class="python-vault__actions">
             {% if code_content %}
                 <button type="button" class="button" data-copy-target="#{{ code_block_id }}">Copy code</button>
+            {% endif %}
+            {% if edit_code_url %}
+                <a class="button" href="{{ edit_code_url }}" target="_blank" rel="noopener noreferrer">Edit code</a>
+            {% endif %}
+            {% if edit_description_url %}
+                <a class="button" href="{{ edit_description_url }}" target="_blank" rel="noopener noreferrer">Edit description</a>
             {% endif %}
             {% if snippet.header.python_version %}
                 <span class="python-vault__badge" title="Minimum Python version">Python {{ snippet.header.python_version }}</span>
