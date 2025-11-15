@@ -13,7 +13,7 @@
 {% set search_source = (snippet.title ~ ' ' ~ snippet_tags|join(' ') ~ ' ' ~ snippet.content|striptags)|lower|replace({'\n': ' '}) %}
 {% set suggested_by = attribute(snippet.header, 'suggested-by')|default(null) %}
 {% set snippet_route = snippet.route|trim('/') %}
-{% set github_edit_base = 'https://github.com/mathspp/mathspp/edit/main/' %}
+{% set github_edit_base = 'https://github.com/mathspp/mathspp/edit/master/' %}
 {% set snippet_repo_path = snippet_route ? 'pages/' ~ snippet_route : null %}
 {% set edit_code_url = snippet_repo_path ? github_edit_base ~ snippet_repo_path ~ '/snippet.py' : null %}
 {% set edit_description_url = snippet_repo_path ? github_edit_base ~ snippet_repo_path ~ '/python-vault-snippet.md' : null %}
