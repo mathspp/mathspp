@@ -12,6 +12,7 @@ Learn how to implement and use the floodfill algorithm in Python.
 
 <py-script>
 import asyncio
+import collections
 import random
 
 from pyscript import display
@@ -72,11 +73,10 @@ async def fill_bitmap(bitmap, x, y):
     def draw_pixel(x, y):
         ctx.fillRect(x, y, 1, 1)
 
-    pixel_stack = [(x, y)]
+    pixels = collections.deque([(x, y)])
     seen = set()
-    print("About to start", pixel_stack, seen)
-    while pixel_stack:
-        nx, ny = pixel_stack.pop()
+    while pixels:
+        nx, ny = pixels.pop()
         seen.add((nx, ny))
         draw_pixel(nx, ny)
         for dx, dy in _neighbours:
@@ -84,7 +84,7 @@ async def fill_bitmap(bitmap, x, y):
             if x_ &lt; 0 or x_ &gt;= 320 or y_ &lt; 0 or y_ &gt;= 320 or (x_, y_) in seen:
                 continue
             if bitmap[y_][x_] == 0:
-                pixel_stack.append((x_, y_))
+                pixels.appendleft((x_, y_))
         await asyncio.sleep(0.0001)
 
 # Run the drawing when the page / PyScript is ready
