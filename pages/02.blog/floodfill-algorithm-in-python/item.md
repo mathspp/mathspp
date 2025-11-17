@@ -15,6 +15,7 @@ import asyncio
 import random
 
 from pyscript import display
+from pyodide.ffi import create_proxy
 import js
 from js import fetch
 
@@ -99,6 +100,7 @@ async def on_canvas_click(event):
     # Call the Python function
     await fill_bitmap(bitmap, x, y)
 
+proxied_on_canvas_click = create_proxy(on_canvas_click)
 # Attach event listener
-canvas.addEventListener("click", on_canvas_click)
+canvas.addEventListener("click", proxied_on_canvas_click)
 </py-script>
