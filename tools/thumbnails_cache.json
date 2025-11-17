@@ -18,22 +18,22 @@
     "words": 35212
   },
   "programming": {
-    "articles": 311,
+    "articles": 312,
     "code_snippets": 3918,
     "loc": 37496,
-    "words": 377156
+    "words": 377168
   },
   "python": {
-    "articles": 305,
+    "articles": 306,
     "code_snippets": 3797,
     "loc": 36403,
-    "words": 374421
+    "words": 374433
   },
   "algorithms": {
-    "articles": 25,
+    "articles": 26,
     "code_snippets": 248,
     "loc": 2992,
-    "words": 28471
+    "words": 28483
   },
   "chatgpt": {
     "articles": 4,
@@ -564,10 +564,10 @@
     "words": 430
   },
   "__all": {
-    "articles": 432,
+    "articles": 433,
     "code_snippets": 4067,
     "loc": 38668,
-    "words": 466913
+    "words": 466925
   },
   "fp": {
     "articles": 5,

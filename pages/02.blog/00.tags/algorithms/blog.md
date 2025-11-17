@@ -28,8 +28,8 @@ title: "Algorithms blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">25</th>
-            <th style="text-align: center;">28,471</th>
+            <th style="text-align: center;">26</th>
+            <th style="text-align: center;">28,483</th>
             <th style="text-align: center;">2,992</th>
         </tr>
     </thead>

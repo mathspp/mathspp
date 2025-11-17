@@ -281,5 +281,5 @@ This wraps it up!
 At the time of writing, this is the best solution I'm aware of.
 If you come up with a better solution or if you'd like me to add a different solution to this analysis, feel free to write a comment below.
 
-This approach of solving a single coding challenge and then presenting and analysing different solutions is the core idea of my [problem-solving bootcamp](/pythonbootcamp).
-The next edition starts in April, so be sure to [check it out](/pythonbootcamp) and sign up if you want to become a better programmer that writes efficient and idiomatic Python code.
+This approach of solving a single coding challenge and then presenting and analysing different solutions is the core idea of my [problem-solving bootcamp](/courses/algorithm-mastery-bootcamp).
+The next edition starts in April, so be sure to [check it out](/courses/algorithm-mastery-bootcamp) and sign up if you want to become a better programmer that writes efficient and idiomatic Python code.
