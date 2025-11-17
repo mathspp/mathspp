@@ -107,6 +107,8 @@ async def fill_bitmap(bitmap, x, y):
                 pixels.appendleft((x_, y_))
         await asyncio.sleep(0.0001)
 
+is_running = False
+
 def get_event_coords(event):
     """Return (clientX, clientY) for mouse/pointer/touch events."""
     # PointerEvent / MouseEvent: clientX/clientY directly available
