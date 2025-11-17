@@ -101,7 +101,7 @@ async def on_canvas_click(event):
     y = event.clientY - rect.top
 
     # Call the Python function
-    await fill_bitmap(bitmap, x, y)
+    await fill_bitmap(bitmap, x // PIXEL_SIZE, y // PIXEL_SIZE)
 
 proxied_on_canvas_click = create_proxy(on_canvas_click)
 # Attach event listener
