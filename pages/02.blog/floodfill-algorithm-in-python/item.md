@@ -492,14 +492,14 @@ But there's nothing like seeing it in action.
 The widget below lets you step through the floodfill algorithm as it fills the middle region of the grid that's seen below:
 
 
-<canvas id="ff-grid" width="200" height="120"></canvas>
+<canvas id="ff-grid" width="600" height="360"></canvas>
 
 <py-script>
 import js
 from pyodide.ffi import create_proxy  # you'll likely use this later
 
 # --- configuration ----------------------------------------------------
-CELL_SIZE = 20
+CELL_SIZE = 60
 GRID = [
     [0, 0, 0, 0, 1, 0, 1, 0, 0, 0],
     [0, 0, 0, 1, 1, 0, 1, 0, 0, 0],
@@ -512,8 +512,8 @@ GRID = [
 ROWS = len(GRID)
 COLS = len(GRID[0])
 
-CANVAS_WIDTH = COLS * CELL_SIZE   # 10 * 20 = 200
-CANVAS_HEIGHT = ROWS * CELL_SIZE  #  6 * 20 = 120
+CANVAS_WIDTH = COLS * CELL_SIZE
+CANVAS_HEIGHT = ROWS * CELL_SIZE
 
 # Read CSS custom properties from :root
 root = js.document.documentElement
@@ -522,6 +522,7 @@ computed = js.window.getComputedStyle(root)
 BG_COLOR = computed.getPropertyValue("--bg").strip()
 FG_COLOR = computed.getPropertyValue("--tx").strip()
 UI_COLOR = computed.getPropertyValue("--ui").strip()
+AC_COLOR = computed.getPropertyValue("--accent").strip()
 
 # --- drawing helpers --------------------------------------------------
 def draw_cells(ctx):
