@@ -168,8 +168,8 @@ draw_bitmap(bitmap)
 
 proxied_on_canvas_press = create_proxy(on_canvas_press)
 # Attach event listener
-canvas.addEventListener("pointerdown", proxied_on_canvas_press)
-canvas.addEventListener("touchstart", proxied_on_canvas_press)
+bitmap.addEventListener("pointerdown", proxied_on_canvas_press)
+bitmap.addEventListener("touchstart", proxied_on_canvas_press)
 </py-script>
 <br />
 
