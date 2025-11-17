@@ -543,16 +543,16 @@ def draw_gridlines(ctx):
     ctx.lineWidth = 3
 
     # vertical lines
-    for c in range(1, COLS + 1):
-        x = c * CELL_SIZE
+    for c in range(COLS + 1):
+        x = c * CELL_SIZE - 1
         ctx.beginPath()
         ctx.moveTo(x, 0)
         ctx.lineTo(x, CANVAS_HEIGHT)
         ctx.stroke()
 
     # horizontal lines
-    for r in range(1, ROWS + 1):
-        y = r * CELL_SIZE
+    for r in range(ROWS + 1):
+        y = r * CELL_SIZE - 1
         ctx.beginPath()
         ctx.moveTo(0, y)
         ctx.lineTo(CANVAS_WIDTH, y)
