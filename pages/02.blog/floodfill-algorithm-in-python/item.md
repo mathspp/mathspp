@@ -14,6 +14,19 @@ Go ahead, try it!
 
 <canvas id="bitmap" width="320" height="320" style="display: block; margin: 0 auto;"></canvas>
 
+<script>
+const canvas = document.getElementById("bitmap");
+const ctx = canvas.getContext("2d");
+ctx.fillStyle = "var(--bg)";
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+ctx.fillStyle = "var(--accent)";
+ctx.font = "24px sans-serif";
+ctx.textAlign = "center";
+ctx.textBaseline = "middle";
+ctx.fillText("Loading…", canvas.width / 2, canvas.height / 2);
+
+</script>
+
 <py-script>
 IMG_WIDTH = 160
 IMG_HEIGHT = 160
