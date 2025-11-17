@@ -74,16 +74,16 @@ async def fill_bitmap(bitmap, x, y):
         ctx.fillRect(x, y, 1, 1)
 
     pixels = collections.deque([(x, y)])
-    seen = set()
+    seen = set((x, y))
     while pixels:
         nx, ny = pixels.pop()
-        seen.add((nx, ny))
         draw_pixel(nx, ny)
         for dx, dy in _neighbours:
             x_, y_ = nx + dx, ny + dy
             if x_ &lt; 0 or x_ &gt;= 320 or y_ &lt; 0 or y_ &gt;= 320 or (x_, y_) in seen:
                 continue
             if bitmap[y_][x_] == 0:
+                seen.add((nx, ny))
                 pixels.appendleft((x_, y_))
         await asyncio.sleep(0.0001)
 
