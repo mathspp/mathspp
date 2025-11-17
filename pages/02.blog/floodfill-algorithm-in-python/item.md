@@ -540,7 +540,7 @@ def draw_cells(ctx):
 
 def draw_gridlines(ctx):
     ctx.strokeStyle = UI_COLOR
-    ctx.lineWidth = 3
+    ctx.lineWidth = 4
 
     # vertical lines
     for c in range(1, COLS + 1):
