@@ -83,7 +83,7 @@ async def fill_bitmap(bitmap, x, y):
             if x_ &lt; 0 or x_ &gt;= 320 or y_ &lt; 0 or y_ &gt;= 320 or (x_, y_) in seen:
                 continue
             if bitmap[y_][x_] == 0:
-                seen.add((nx, ny))
+                seen.add((x_, y_))
                 pixels.appendleft((x_, y_))
         await asyncio.sleep(0.0001)
 
