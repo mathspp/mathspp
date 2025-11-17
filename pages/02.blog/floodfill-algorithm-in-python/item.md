@@ -130,6 +130,7 @@ async def on_canvas_click(event):
 proxied_on_canvas_click = create_proxy(on_canvas_click)
 # Attach event listener
 canvas.addEventListener("pointerdown", proxied_on_canvas_click)
+canvas.addEventListener("touchstart", proxied_on_canvas_click)
 </py-script>
 <br />
 
@@ -147,3 +148,5 @@ And the floodfill algorithm is the algorithm that allows you to implement this b
 
 
 ## Implementing the floodfill algorithm
+
+The floodfill algorithm does not have a lot of moving parts and, because it can be visualised as paint filling up a region of a drawing, it is a great stepping stone for someone looking to learn more about graph algorithms.

@@ -15,4 +15,5 @@ taxonomy:
       - algorithms
       - pyscript
       - visualisation
+      - graphs
 title: Floodfill algorithm in Python
