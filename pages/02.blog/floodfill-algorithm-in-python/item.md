@@ -17,14 +17,19 @@ Go ahead, try it!
 <script>
 const canvas = document.getElementById("bitmap");
 const ctx = canvas.getContext("2d");
-ctx.fillStyle = "var(--bg)";
+
+// Get computed values of CSS variables
+const styles = getComputedStyle(document.documentElement);
+const bg = styles.getPropertyValue("--bg").trim();
+const fg = styles.getPropertyValue("--fg").trim();
+
+ctx.fillStyle = bg;
 ctx.fillRect(0, 0, canvas.width, canvas.height);
-ctx.fillStyle = "var(--fg)";
+ctx.fillStyle = fg;
 ctx.font = "24px sans-serif";
 ctx.textAlign = "center";
 ctx.textBaseline = "middle";
 ctx.fillText("Loading…", canvas.width / 2, canvas.height / 2);
-
 </script>
 
 <py-script>
