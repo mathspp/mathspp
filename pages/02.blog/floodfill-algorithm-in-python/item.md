@@ -78,7 +78,7 @@ async def fill_bitmap(bitmap, x, y):
         draw_pixel(x, y)
         for dx, dy in _neighbours:
             x_, y_ = nx + dx, ny + dy
-            if x_ < 0 or x_ >= 320 or y_ < 0 or y_ >= 320 or (x_, y_) in seen:
+            if x_ &lt; 0 or x_ &gt;= 320 or y_ &lt; 0 or y_ &gt;= 320 or (x_, y_) in seen:
                 continue
             if bitmap[y][x] == 0:
                 pixel_stack.append((x_, y_))
