@@ -74,7 +74,7 @@ async def fill_bitmap(bitmap, x, y):
 
     pixel_stack = [(x, y)]
     seen = set()
-    print("About to start")
+    print("About to start", pixel_stack, seen)
     while pixel_stack:
         nx, ny = pixel_stack.pop()
         seen.append((nx, ny))
