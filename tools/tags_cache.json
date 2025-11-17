@@ -2,8 +2,8 @@
   "__all": {
     "articles": 433,
     "code_snippets": 4081,
-    "loc": 38842,
-    "words": 468516
+    "loc": 38850,
+    "words": 468524
   },
   "bpci": {
     "articles": 10,
@@ -26,20 +26,20 @@
   "programming": {
     "articles": 312,
     "code_snippets": 3932,
-    "loc": 37670,
-    "words": 378759
+    "loc": 37678,
+    "words": 378767
   },
   "python": {
     "articles": 306,
     "code_snippets": 3811,
-    "loc": 36577,
-    "words": 376024
+    "loc": 36585,
+    "words": 376032
   },
   "algorithms": {
     "articles": 26,
     "code_snippets": 262,
-    "loc": 3166,
-    "words": 30070
+    "loc": 3174,
+    "words": 30078
   },
   "llm": {
     "articles": 5,
@@ -158,14 +158,14 @@
   "graphs": {
     "articles": 8,
     "code_snippets": 36,
-    "loc": 387,
-    "words": 10069
+    "loc": 395,
+    "words": 10077
   },
   "visualisation": {
     "articles": 18,
     "code_snippets": 72,
-    "loc": 1089,
-    "words": 12026
+    "loc": 1097,
+    "words": 12034
   },
   "data science": {
     "articles": 1,
@@ -248,8 +248,8 @@
   "pyscript": {
     "articles": 1,
     "code_snippets": 14,
-    "loc": 174,
-    "words": 1599
+    "loc": 182,
+    "words": 1607
   },
   "geometry": {
     "articles": 18,

@@ -389,11 +389,15 @@ def floodfill(walls, x, y):
         for dx, dy in neighbour_offsets:
             nx, ny = tx + dx, ty + dy
 
-            if nx < 0 or nx >= WIDTH or ny < 0 or ny >= HEIGHT or walls[ny][nx]:
+            if (
+                nx < 0 or nx >= WIDTH
+                or ny < 0 or ny >= HEIGHT
+                or walls[ny][nx]
+            ):
                 continue
 
-            if (nx, ny) not in painted:
-                to_paint.append((nx, ny))
+            if (nx, ny) not in painted:    # <--
+                to_paint.append((nx, ny))  # <--
 ```
 
 That's it!
@@ -453,7 +457,7 @@ def floodfill(walls, x, y):
     HEIGHT = len(walls)
     WIDTH = len(walls[0])
 
-    tracked = set((x, y))  # <--
+    tracked = set((x, y))  # <-- The starting point starts in the set.
     to_paint = [(x, y)]
     while to_paint:
         this_pixel = to_paint.pop()
@@ -462,10 +466,17 @@ def floodfill(walls, x, y):
         for dx, dy in neighbour_offsets:
             nx, ny = tx + dx, ty + dy
 
-            if nx < 0 or nx >= WIDTH or ny < 0 or ny >= HEIGHT or walls[ny][nx]:
+            if (
+                nx < 0 or nx >= WIDTH
+                or ny < 0 or ny >= HEIGHT
+                or walls[ny][nx]
+            ):
                 continue
 
-            if (nx, ny) not in tracked:
-                tracked.add((nx, ny))  # <--
+            if (nx, ny) not in tracked:  # <--
+                tracked.add((nx, ny))    # <-- Add it to the set right away.
                 to_paint.append((nx, ny))
 ```
+
+
+## Visualising the floodfill algorithm step by step
