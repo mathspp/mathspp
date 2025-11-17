@@ -62,6 +62,7 @@ def draw_bitmap(bitmap):
 _neighbours = [(1, 0), (-1, 0), (0, 1), (0, -1)]
 
 async def fill_bitmap(bitmap, x, y):
+    print("Inside fill_bitmap")
     if bitmap[y][x] == 1:
         return
 
@@ -73,6 +74,7 @@ async def fill_bitmap(bitmap, x, y):
 
     pixel_stack = [(x, y)]
     seen = set()
+    print("About to start")
     while pixel_stack:
         nx, ny = pixel_stack.pop()
         seen.append((nx, ny))
