@@ -11,6 +11,9 @@ Learn how to implement and use the floodfill algorithm in Python.
 <canvas id="bitmap" width="320" height="320"></canvas>
 
 <py-script>
+import asyncio
+import random
+
 from pyscript import display
 import js
 from js import fetch
@@ -33,9 +36,7 @@ async def load_bitmap(url: str) -> list[list[int]]:
             bitmap.append(row)
     return bitmap
 
-async def draw_bitmap():
-    bitmap = await load_bitmap(URL)
-
+def draw_bitmap(bitmap):
     # Get canvas and context
     canvas = js.document.getElementById("bitmap")
     ctx = canvas.getContext("2d")
@@ -49,10 +50,6 @@ async def draw_bitmap():
 
     pixel_size = 1
 
-    # Optionally adjust canvas size to match bitmap exactly
-    canvas.width = cols * pixel_size
-    canvas.height = rows * pixel_size
-
     for y, row in enumerate(bitmap):
         for x, value in enumerate(row):
             if value == 1:
@@ -62,5 +59,46 @@ async def draw_bitmap():
             ctx.fillRect(x * pixel_size, y * pixel_size, pixel_size, pixel_size)
 
 # Run the drawing when the page / PyScript is ready
-await draw_bitmap()
+bitmap = await load_bitmap(URL)
+draw_bitmap(bitmap)
+
+canvas = js.document.getElementById("bitmap")
+
+async def on_canvas_click(event):
+    # Compute canvas-relative coordinates
+    rect = canvas.getBoundingClientRect()
+    x = event.clientX - rect.left
+    y = event.clientY - rect.top
+
+    # Call the Python function
+    await fill_bitmap(bitmap, x, y)
+
+# Attach event listener
+canvas.addEventListener("click", on_canvas_click)
+
+_neighbours = [(1, 0), (-1, 0), (0, 1), (0, -1)]
+
+async def fill_bitmap(bitmap, x, y):
+    if bitmap[y][x] == 1:
+        return
+
+    ctx = canvas.getContext("2d")
+    colour = tuple(random.randint(0, 255) for _ in range(3))
+    ctx.fillStyle = colour
+    def draw_pixel(x, y):
+        ctx.fillRect(x, y, 1, 1)
+
+    pixel_stack = [(x, y)]
+    seen = set()
+    while pixel_stack:
+        nx, ny = pixel_stack.pop()
+        seen.append((nx, ny))
+        draw_pixel(x, y)
+        for dx, dy in _neighbours:
+            x_, y_ = nx + dx, ny + dy
+            if x_ < 0 or x_ >= 320 or y_ < 0 or y_ >= 320 or (x_, y_) in seen:
+                continue
+            if bitmap[y][x] == 0:
+                pixel_stack.append((x_, y_))
+        await asyncio.sleep(0.01)
 </py-script>
