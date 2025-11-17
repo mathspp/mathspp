@@ -11,6 +11,10 @@ Learn how to implement and use the floodfill algorithm in Python.
 <canvas id="bitmap" width="320" height="320"></canvas>
 
 <py-script>
+IMG_WIDTH = 160
+IMG_HEIGHT = 160
+PIXEL_SIZE = 2
+
 import asyncio
 import collections
 import random
@@ -32,7 +36,6 @@ async def load_bitmap(url: str) -> list[list[int]]:
         line = line.strip()
         if not line:
             continue
-        # Line is like "0010101" -> [0,0,1,0,1,0,1]
         row = [int(ch) for ch in line if ch in "01"]
         if row:
             bitmap.append(row)
@@ -50,15 +53,13 @@ def draw_bitmap(bitmap):
         print("Empty bitmap!")
         return
 
-    pixel_size = 1
-
     for y, row in enumerate(bitmap):
         for x, value in enumerate(row):
             if value == 1:
                 ctx.fillStyle = "black"
             else:
                 ctx.fillStyle = "white"
-            ctx.fillRect(x * pixel_size, y * pixel_size, pixel_size, pixel_size)
+            ctx.fillRect(x * PIXEL_SIZE, y * PIXEL_SIZE, PIXEL_SIZE, PIXEL_SIZE)
 
 _neighbours = [(1, 0), (-1, 0), (0, 1), (0, -1)]
 
@@ -71,7 +72,7 @@ async def fill_bitmap(bitmap, x, y):
     r, g, b = (random.randint(0, 255) for _ in range(3))
     ctx.fillStyle = f"rgb({r}, {g}, {b})"
     def draw_pixel(x, y):
-        ctx.fillRect(x, y, 1, 1)
+        ctx.fillRect(x * PIXEL_SIZE, y * PIXEL_SIZE, PIXEL_SIZE, PIXEL_SIZE)
 
     pixels = collections.deque([(x, y)])
     seen = set((x, y))
@@ -80,7 +81,7 @@ async def fill_bitmap(bitmap, x, y):
         draw_pixel(nx, ny)
         for dx, dy in _neighbours:
             x_, y_ = nx + dx, ny + dy
-            if x_ &lt; 0 or x_ &gt;= 320 or y_ &lt; 0 or y_ &gt;= 320 or (x_, y_) in seen:
+            if x_ &lt; 0 or x_ &gt;= IMG_WIDTH or y_ &lt; 0 or y_ &gt;= IMG_HEIGHT or (x_, y_) in seen:
                 continue
             if bitmap[y_][x_] == 0:
                 seen.add((x_, y_))
