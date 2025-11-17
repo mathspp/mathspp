@@ -44,16 +44,6 @@ from js import fetch
 canvas = js.document.getElementById("bitmap")
 ctx = canvas.getContext("2d")
 
-def show_loading():
-    ctx.fillStyle = "white"
-    ctx.fillRect(0, 0, canvas.width, canvas.height)
-    ctx.fillStyle = "black"
-    ctx.font = "24px sans-serif"
-    ctx.textAlign = "center"
-    ctx.textBaseline = "middle"
-    ctx.fillText("Loading…", canvas.width // 2, canvas.height // 2)
-show_loading()  # Set the canvas.
-
 URL = "/blog/floodfill-algorithm-in-python/_python.txt"
 
 async def load_bitmap(url: str) -> list[list[int]]:
