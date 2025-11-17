@@ -30,7 +30,7 @@ that such code wouldn't work in other languages.
 One such example is comparison chaining!
 Look at this snippet of code and tell me if it doesn't look natural:
 
-```py
+```pycon
 >>> a = 1
 >>> b = 2
 >>> c = 3
@@ -52,7 +52,7 @@ behaviour.
 Another example usage is for when you want to make sure that three
 values are all the same:
 
-```py
+```pycon
 >>> a = b = 1
 >>> c = 2
 >>> if a == b == c:
@@ -90,7 +90,7 @@ If you thought about `a != b != c`, then you just fell into the first pitfall!
 
 Look at this code:
 
-```py
+```pycon
 >>> a = c = 1
 >>> b = 2
 >>> if a != b != c:
@@ -121,7 +121,7 @@ then the two expressions are not equivalent and you should think about what you 
 
 This snippet shows the difference in number of evaluations of the expression in the middle:
 
-```py
+```pycon
 >>> def f():
 ...     print("hey")
 ...     return 3
@@ -142,7 +142,7 @@ done
 This snippet shows that an expression like `1 < f() < 0` can actually evaluate to `True`
 when it is unfolded:
 
-```py
+```pycon
 >>> l = [-2, 2]
 >>> def f():
 ...     global l
@@ -155,6 +155,7 @@ ehh
 ```
 
 ! The syntax `l[::-1]` is a “slice” that reverses a list.
+! You can [learn more about this pattern in this article](/blog/pydonts/mastering-sequence-slicing).
 ! I'll be writing about list slicing soon, so [stay tuned][subscribe] for that!
 
 Of course that `1 < f() < 0` should never be `True`, so this just shows that
@@ -191,7 +192,7 @@ In Python, `is`, `is not`, `in`, and `not in` are comparison operators, so you c
 also chain them with the other operators.
 This creates weird situations like
 
-```py
+```pycon
 >>> a = 3
 >>> l = [3, 5]
 >>> if a in l == True:
@@ -265,7 +266,7 @@ This function checks if a string is from a “dunder” method or not.
 The first thing the code does is check if the beginning and the ending
 of the string are the same and equal to `"__"`:
 
-```py
+```pycon
 >>> _is_dunder("__str__")
 True
 >>> _is_dunder("__bool__")

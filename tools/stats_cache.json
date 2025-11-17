@@ -409,7 +409,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/advent-of-code-sonar-sweep-analysis": {
-    "timestamp": 1753281128.868283,
+    "timestamp": 1763399137.18369,
     "tags": [
       "algorithms",
       "mathematics",
@@ -1531,7 +1531,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/python-black-friday-2023": {
-    "timestamp": 1753281744.4459147,
+    "timestamp": 1763399159.6422632,
     "tags": [
       "python"
     ],
@@ -1752,7 +1752,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/biggest-square": {
-    "timestamp": 1753281225.032056,
+    "timestamp": 1763399145.9746275,
     "tags": [
       "algorithms",
       "combinatorics",
@@ -3454,7 +3454,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/boolean-short-circuiting": {
-    "timestamp": 1763399052.8617237,
+    "timestamp": 1763399053.7481673,
     "tags": [
       "programming",
       "python"
@@ -3533,7 +3533,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/chaining-comparison-operators": {
-    "timestamp": 1763399052.8630831,
+    "timestamp": 1763399053.7483895,
     "tags": [
       "programming",
       "python"
@@ -3542,7 +3542,7 @@
       "articles": 1,
       "code_snippets": 10,
       "loc": 78,
-      "words": 1299
+      "words": 1310
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/overloading-arithmetic-operators-with-dunder-methods": {
@@ -3704,7 +3704,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/boost-your-productivity-with-the-repl": {
-    "timestamp": 1763399052.8627546,
+    "timestamp": 1763399053.748262,
     "tags": [
       "productivity",
       "programming",
@@ -3714,7 +3714,7 @@
       "articles": 1,
       "code_snippets": 29,
       "loc": 141,
-      "words": 2858
+      "words": 2851
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/deep-unpacking": {
@@ -4885,7 +4885,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/018.suppressing-errors-with-contextlib": {
-    "timestamp": 1753280888.7712972,
+    "timestamp": 1763399123.4524837,
     "tags": [
       "programming",
       "python"

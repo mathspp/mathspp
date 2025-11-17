@@ -4,8 +4,8 @@ This article is an in-depth analysis of Python solutions to the â€œSonar Sweepâ€
 
 ![](thumbnail.webp "Advent of Code submarine sticker.")
 
-The analysis that follows pertains to the first day of the [Python Problem-Solving Bootcamp](https://mathspp.com/pythonbootcamp).
-Follow [this link](https://mathspp.com/pythonbootcamp) if you'd like to participate in the bootcamp:
+The analysis that follows pertains to the first day of the [Python Problem-Solving Bootcamp](https://mathspp.com/courses/algorithm-mastery-bootcamp).
+Follow [this link](https://mathspp.com/courses/algorithm-mastery-bootcamp) if you'd like to participate in the bootcamp:
 
  - to be a part of a community of highly-motivated individuals solving Advent of Code together; and
  - to receive notebooks like these with the analysis of the problems tackled.

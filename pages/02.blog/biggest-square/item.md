@@ -294,7 +294,7 @@ if __name__ == "__main__":
 
 If you run the whole thing with the input map shown above, you'll get the expected output.
 
-This is the type of problem that you have to solve when you join the [Python problem-solving bootcamp](/pythonbootcamp), except that in the bootcamp I provide an in-depth analysis of different solutions instead of providing just one solution.
+This is the type of problem that you have to solve when you join the [Python problem-solving bootcamp](/courses/algorithm-mastery-bootcamp), except that in the bootcamp I provide an in-depth analysis of different solutions instead of providing just one solution.
 If you come up with a different solution, comment it below!
 
 

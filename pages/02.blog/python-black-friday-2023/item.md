@@ -11,12 +11,12 @@ If you find a deal that's not listed here, just comment below or [email it to me
 
 ## Sponsored deal
 
-[![](_bootcamp.webp)](/pythonbootcamp)
+[![](_bootcamp.webp)](/courses/algorithm-mastery-bootcamp)
 
-The [Python Problem-Solving Bootcamp](/pythonbootcamp) is 40% off for Black Friday.
+The [Python Problem-Solving Bootcamp](/courses/algorithm-mastery-bootcamp) is 40% off for Black Friday.
 It'll be a 21-day intensive bootcamp dedicated to solving problems with Python while learning about Python features and modules that will help you write better, cleaner code in your day-to-day.
 
-You can learn more about the Python Problem-Solving Bootcamp [here](/pythonbootcamp).
+You can learn more about the Python Problem-Solving Bootcamp [here](/courses/algorithm-mastery-bootcamp).
 
 
 ## Books

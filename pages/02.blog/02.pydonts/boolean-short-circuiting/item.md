@@ -153,7 +153,7 @@ will have the value of `y` in it,
 and in an `if` statement or in a `while` loop,
 it will evaluate the body of the construct only if `y` is truthy:
 
-```py
+```pycon
 >>> y = 5   # truthy value.
 >>> if False or y:
 ...     print("Got in!")
@@ -193,7 +193,7 @@ def p(arg):
 Now we can use `p` to take a look at the things that Python
 evaluates when trying to determine the value of `x or y`:
 
-```py
+```pycon
 >>> p(False) or p(3)
 Inside `p` with arg=False
 Inside `p` with arg=3
@@ -235,7 +235,7 @@ do we need to know what `y` is in order to figure out what `val` is?
 No, we do not, because regardless of whether `y` is `True` or
 `False`, `val` is always `False`:
 
-```py
+```pycon
 >>> False and True
 False
 >>> False and False
@@ -268,7 +268,7 @@ never returns `y`.
 If we consider any left operand that can be `False` or falsy,
 we see that `and` will never look at the right operand:
 
-```py
+```pycon
 >>> p([]) and True  # [] is falsy
 Inside `p` with arg=[]
 []
@@ -358,7 +358,7 @@ evaluated once, to prevent wasting resources.
 Therefore, because we are also using an `and` in the background,
 chained comparisons can also short-circuit:
 
-```py
+```pycon
 # 1 > 2 is False, so there's no need to look at p(2) < p(3)
 >>> p(1) > p(2) < p(3)
 Inside `p` with arg=1

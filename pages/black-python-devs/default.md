@@ -7,7 +7,7 @@ When you use that code, you're also donating 20% of the value of your purchase t
 ## Best-sellers
 
  - [“All books” bundle 🚀](https://mathspp.gumroad.com/l/all-books-bundle/blackpythondevs) – a bundle with all my ebooks that also gives you free access to books that I publish in the future
- - [“Python Problem-Solving Bootcamp”](https://mathspp.gumroad.com/l/pythonbootcamp/blackpythondevs) – a bootcamp that focuses on improving your Python fluency through algorithmic coding challenges
+ - [“Algorithm Mastery Bootcamp”](https://mathspp.gumroad.com/l/algorithm-mastery-bootcamp-2025/blackpythondevs) – a bootcamp that focuses on improving your Python fluency through algorithmic coding challenges
 
 
 You can go to <https://store.mathspp.com> to browse through all available offers.

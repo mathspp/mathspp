@@ -118,6 +118,6 @@ That's it for now! [Stay tuned][subscribe] and I'll see you around!
 
 [subscribe]: /subscribe
 [eafp]: /blog/pydonts/eafp-and-lbyl-coding-styles
-[bootcamp]: /pythonbootcamp
+[bootcamp]: /courses/algorithm-mastery-bootcamp
 [contextlib]: https://docs.python.org/3/library/contextlib.html
 [loicteixeira]: https://twitter.com/loicteixeira

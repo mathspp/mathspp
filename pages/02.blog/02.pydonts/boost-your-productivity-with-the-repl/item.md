@@ -92,7 +92,7 @@ The REPL generally contains a `>>>` in the beginning of the line, to the left of
 You can type code in front of that prompt and press Enter.
 When you press Enter, the code is evaluated and you are presented with the result:
 
-```py
+```pycon
 >>> 3 + 3
 6
 ```
@@ -104,7 +104,7 @@ The REPL also accepts code that spans multiple lines, like `if` statements,
 
 In order to do those, just start typing your Python code regularly:
 
-```py
+```pycon
 >>> if True:
 ```
 
@@ -116,7 +116,7 @@ The `...` tells you that this is the _continuation_ of what you started above.
 In order to tell Python you are done with the multiline code blocks
 is by pressing Enter on an empty line with the continuation prompt `...`:
 
-```py
+```pycon
 >>> if True:
 ...     print("Hello, world!")
 ...
@@ -151,7 +151,7 @@ def double(x):
 Copying the code above and pasting it into the session,
 you will end up with a session log like this:
 
-```py
+```pycon
 >>> def double(x):
 ... 
   File "<stdin>", line 2
@@ -181,7 +181,7 @@ If you explicitly `print` something, then what you get is the result of calling 
 I wrote a [very detailed Pydon't][pydont-str-and-repr] explaining the differences between the two,
 so let me just _show_ you how things are different:
 
-```py
+```pycon
 # Define a string.
 >>> s = "Hello\nworld!"
 # Print its `str` and `repr` values:
@@ -211,7 +211,7 @@ then nothing gets printed.
 The easiest way to see this is if you just type `None` in the REPL.
 Nothing gets displayed; contrast that with what happens if you just type `3`:
 
-```py
+```pycon
 >>> None
 >>> 3
 3
@@ -221,7 +221,7 @@ If you call a function that doesn't have an explicit return value,
 or that returns `None` explicitly,
 then those functions will not show anything in the REPL:
 
-```py
+```pycon
 >>> def explicit_None_return():
 ...     # Return None explicitly.
 ...     return None
@@ -256,14 +256,14 @@ Just that.
 
 Now open the REPL:
 
-```py
+```pycon
 >>> import hello
 Being imported!
 ```
 
 Now try modifying the string inside the `print`, and re-import the module:
 
-```py
+```pycon
 >>> import hello
 Being imported!
 # Modify the file, then import again:
@@ -285,7 +285,7 @@ That's why some of the tips for quick hacks I'll share below are so helpful.
 !!! is to use `importlib.reload(module)` in Python 3.4+.
 !!! In our example, you could use `importlib.reload(hello)`:
 
-```py
+```pycon
 >>> import hello
 Being imported
 >>> import importlib            # Use `imp` from Python 3.0 to Python 3.3
@@ -327,7 +327,7 @@ if you want to use it and forgot to assign.
 
 Here is a silly example:
 
-```py
+```pycon
 >>> 3 + 6
 9
 >>> _ + 10
@@ -345,7 +345,7 @@ Of course `_` is a valid variable name in and out of itself,
 so you can still use it as a variable name.
 If you do, however, then `_` will stop reflecting the result of the last expression:
 
-```py
+```pycon
 >>> _ = 0
 >>> _
 0
@@ -365,7 +365,7 @@ Another great feature that is often underappreciated is the built-in help system
 If you need to take a look at a quick reference for a built-in function,
 for example, because you forgot what the arguments are, just use `help`!
 
-```py
+```pycon
 >>> help(sum)
 Help on built-in function sum in module builtins:
 
@@ -384,7 +384,7 @@ about _your_ own code, provided you document it well enough.
 
 Here is the result of calling `help` on a function defined by you:
 
-```py
+```pycon
 >>> def my_function(a, b=3, c=4):
 ...     return a + b + c
 ... 
@@ -402,7 +402,7 @@ default values and all!
 
 To get more information from `help` you need to document your function with a docstring:
 
-```py
+```pycon
 >>> def my_function(a, b=3, c=4):
 ...     """Return the sum of the three arguments."""
 ...     return a + b + c
@@ -419,9 +419,7 @@ my_function(a, b=3, c=4)
 Now you can see that the `help` function also gives you the information
 stored in the docstring.
 
-! I'll be writing a Pydon't about docstrings soon.
-! Be sure to [subscribe to my newsletter][subscribe]
-! so you don't miss it!
+! You can learn more about documenting functions with docstrings in [the Pydon't dedicated to functions](/blog/pydonts/functions-a-complete-reference#documenting-functions-with-docstrings).
 
 
 ## Tips for quick hacks
@@ -441,7 +439,7 @@ Yes, **really**.
 
 Python supports semicolons to separate statements:
 
-```py
+```pycon
 >>> a = 3; b = a + 56; print(a * b)
 177
 ```
@@ -480,13 +478,13 @@ a list of names according to a list of ages.
 
 Instead of two separate assignments, I put them on the same line with `;`:
 
-```py
+```pycon
 >>> names = ["John", "Anna", "Bill"]; ages = [20, 40, 30]
 ```
 
 I could have written
 
-```py
+```pycon
 >>> names, ages = ["John", "Anna", "Bill"], [20, 40, 30]
 ```
 
@@ -495,7 +493,7 @@ in separate lines when it comes time to write the real code down.
 
 Then, I will try to see how to put the ages and names together in pairs:
 
-```py
+```pycon
 >>> [(age, name) for name, age in zip(names, ages)]
 [(20, 'John'), (40, 'Anna'), (30, 'Bill')]
 ```
@@ -503,7 +501,7 @@ Then, I will try to see how to put the ages and names together in pairs:
 However, at this point I realise I'm being redundant and I can just use `zip`
 if I reverse the order of the arguments:
 
-```py
+```pycon
 >>> list(zip(ages, names))
 [(20, 'John'), (40, 'Anna'), (30, 'Bill')]
 ```
@@ -512,7 +510,7 @@ Now that I'm happy with how I've paired names and ages together,
 I use the arrow keys to go back to the line with the assignment.
 Then, I use a semicolon to add the new piece of code I worked out:
 
-```py
+```pycon
 >>> names = ["John", "Anna", "Bill"]; ages = [20, 40, 30]; info_pairs = zip(ages, names)
 ```
 
@@ -531,7 +529,7 @@ with inlining what comes after the colon.
 
 For example, instead of
 
-```py
+```pycon
 >>> for i in range(3):
 ...     print(i)
 ...
@@ -542,7 +540,7 @@ For example, instead of
 
 you can write
 
-```py
+```pycon
 >>> for i in range(3): print(i)
 ...
 0
@@ -556,7 +554,7 @@ it makes it more convenient to go up and down the REPL history.
 If you really want to push the boundaries,
 you can even combine this with semicolons:
 
-```py
+```pycon
 >>> i = 1
 >>> while i < 30: print(i); i *= 2
 ...
@@ -599,7 +597,7 @@ that can really improve your experience in/with the REPL.
 You can read the documentation and the examples to get up to speed with Rich's capabilities,
 but I want to focus on a very specific one, in particular:
 
-```py
+```pycon
 >>> from rich import pretty
 >>> pretty.install()
 ```
