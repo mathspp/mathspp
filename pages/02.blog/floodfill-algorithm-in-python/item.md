@@ -492,7 +492,7 @@ But there's nothing like seeing it in action.
 The widget below lets you step through the floodfill algorithm as it fills the middle region of the grid that's seen below:
 
 
-<canvas id="ff-grid" width="600" height="360"></canvas>
+<canvas id="ff-grid" width="600" height="360" style="display: block; margin: 0 auto;"></canvas>
 
 <py-script>
 import js
