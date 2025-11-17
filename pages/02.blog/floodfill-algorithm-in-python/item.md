@@ -26,10 +26,10 @@ const fg = styles.getPropertyValue("--accent").trim();
 ctx.fillStyle = bg;
 ctx.fillRect(0, 0, canvas.width, canvas.height);
 ctx.fillStyle = fg;
-ctx.font = "24px sans-serif";
+ctx.font = "Atkinson Hyperlegible";
 ctx.textAlign = "center";
 ctx.textBaseline = "middle";
-ctx.fillText("Loading…", canvas.width / 2, canvas.height / 2);
+ctx.fillText("Loading...", canvas.width / 2, canvas.height / 2);
 </script>
 
 <py-script>
