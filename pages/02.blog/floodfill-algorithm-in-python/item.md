@@ -12,7 +12,7 @@ Click the image below to randomly colour the region you click.
 
 Go ahead, try it!
 
-<canvas id="bitmap" width="320" height="320" style="display: block; margin: 0 auto; touch-action: none;"></canvas>
+<canvas id="bitmap" width="320" height="320" style="display: block; margin: 0 auto;"></canvas>
 
 <script>
 const canvas = document.getElementById("bitmap");
