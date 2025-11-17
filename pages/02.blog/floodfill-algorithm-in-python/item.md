@@ -519,9 +519,9 @@ CANVAS_HEIGHT = ROWS * CELL_SIZE  #  6 * 20 = 120
 root = js.document.documentElement
 computed = js.window.getComputedStyle(root)
 
-BG_COLOR = computed.getPropertyValue("--bg").strip() or "#ffffff"
-FG_COLOR = computed.getPropertyValue("--fg").strip() or "#000000"
-UI_COLOR = computed.getPropertyValue("--ui").strip() or "#888888"
+BG_COLOR = computed.getPropertyValue("--bg").strip()
+FG_COLOR = computed.getPropertyValue("--tx").strip()
+UI_COLOR = computed.getPropertyValue("--ui").strip()
 
 # --- drawing helpers --------------------------------------------------
 def draw_cells(ctx):
@@ -542,7 +542,7 @@ def draw_gridlines(ctx):
     ctx.lineWidth = 1
 
     # vertical lines
-    for c in range(COLS + 1):
+    for c in range(1, COLS + 1):
         x = c * CELL_SIZE + 0.5  # half-pixel for crisp lines
         ctx.beginPath()
         ctx.moveTo(x, 0)
@@ -550,7 +550,7 @@ def draw_gridlines(ctx):
         ctx.stroke()
 
     # horizontal lines
-    for r in range(ROWS + 1):
+    for r in range(1, ROWS + 1):
         y = r * CELL_SIZE + 0.5
         ctx.beginPath()
         ctx.moveTo(0, y)
