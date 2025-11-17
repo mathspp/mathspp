@@ -77,9 +77,8 @@ async def fill_bitmap(bitmap, x, y):
     print("About to start", pixel_stack, seen)
     while pixel_stack:
         nx, ny = pixel_stack.pop()
-        print(f"processing {nx} {ny}")
         seen.add((nx, ny))
-        draw_pixel(x, y)
+        draw_pixel(nx, ny)
         for dx, dy in _neighbours:
             x_, y_ = nx + dx, ny + dy
             if x_ &lt; 0 or x_ &gt;= 320 or y_ &lt; 0 or y_ &gt;= 320 or (x_, y_) in seen:
