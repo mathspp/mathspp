@@ -21,7 +21,7 @@ const ctx = canvas.getContext("2d");
 // Get computed values of CSS variables
 const styles = getComputedStyle(document.documentElement);
 const bg = styles.getPropertyValue("--bg").trim();
-const fg = styles.getPropertyValue("--fg").trim();
+const fg = styles.getPropertyValue("--accent").trim();
 
 ctx.fillStyle = bg;
 ctx.fillRect(0, 0, canvas.width, canvas.height);
