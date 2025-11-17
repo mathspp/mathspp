@@ -1,0 +1,16 @@
+date: 17-11-2025 16:49
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Learn how to implement and use the floodfill algorithm in Python."
+    og:image: "https://mathspp.com/blog/floodfill-algorithm-in-python/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/floodfill-algorithm-in-python/thumbnail.webp"
+references: []
+slug: "floodfill-algorithm-in-python"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+      - python
+      - programming
+      - algorithms
+title: Floodfill algorithm in Python
