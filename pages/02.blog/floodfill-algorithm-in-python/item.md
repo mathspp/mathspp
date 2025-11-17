@@ -11,7 +11,7 @@ Learn how to implement and use the floodfill algorithm in Python.
 Click the image below to change the colour of a region.
 Click anywhere.
 
-<canvas id="bitmap" width="320" height="320" style="display: block; margin: 0 auto;"></canvas>
+<canvas id="bitmap" width="320" height="320" style="display: block; margin: 0 auto; background-image: url('/blog/floodfill-algorithm-in-python');"></canvas>
 
 <py-script>
 IMG_WIDTH = 160
@@ -62,6 +62,7 @@ def draw_bitmap(bitmap):
             else:
                 ctx.fillStyle = "white"
             ctx.fillRect(x * PIXEL_SIZE, y * PIXEL_SIZE, PIXEL_SIZE, PIXEL_SIZE)
+    canvas.style.backgroundImage = ""  # Clear “thumbnail preview”.
 
 _neighbours = [(1, 0), (-1, 0), (0, 1), (0, -1)]
 
