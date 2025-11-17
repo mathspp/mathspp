@@ -62,10 +62,6 @@ async def load_bitmap(url: str) -> list[list[int]]:
     return bitmap
 
 def draw_bitmap(bitmap):
-    # Get canvas and context
-    canvas = js.document.getElementById("bitmap")
-    ctx = canvas.getContext("2d")
-
     rows = len(bitmap)
     cols = len(bitmap[0]) if rows > 0 else 0
 
@@ -79,7 +75,6 @@ def draw_bitmap(bitmap):
             else:
                 ctx.fillStyle = "white"
             ctx.fillRect(x * PIXEL_SIZE, y * PIXEL_SIZE, PIXEL_SIZE, PIXEL_SIZE)
-    canvas.style.backgroundImage = ""  # Clear “thumbnail preview”.
 
 _neighbours = [(1, 0), (-1, 0), (0, 1), (0, -1)]
 
