@@ -163,6 +163,9 @@ async def on_canvas_press(event):
         # Ensure the flag is always reset, even if something raises
         is_running = False
 
+bitmap = await load_bitmap(URL)
+draw_bitmap(bitmap)
+
 proxied_on_canvas_press = create_proxy(on_canvas_press)
 # Attach event listener
 canvas.addEventListener("pointerdown", proxied_on_canvas_press)
