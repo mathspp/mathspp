@@ -168,8 +168,8 @@ draw_bitmap(bitmap)
 
 proxied_on_canvas_press = create_proxy(on_canvas_press)
 # Attach event listener
-bitmap.addEventListener("pointerdown", proxied_on_canvas_press)
-bitmap.addEventListener("touchstart", proxied_on_canvas_press)
+canvas.addEventListener("pointerdown", proxied_on_canvas_press)
+canvas.addEventListener("touchstart", proxied_on_canvas_press)
 </py-script>
 <br />
 
@@ -515,14 +515,6 @@ COLS = len(GRID[0])
 CANVAS_WIDTH = COLS * CELL_SIZE   # 10 * 20 = 200
 CANVAS_HEIGHT = ROWS * CELL_SIZE  #  6 * 20 = 120
 
-# --- canvas + colours -------------------------------------------------
-canvas = js.document.getElementById("ff-grid")
-ctx = canvas.getContext("2d")
-
-# Ensure canvas has the correct internal size
-canvas.width = CANVAS_WIDTH
-canvas.height = CANVAS_HEIGHT
-
 # Read CSS custom properties from :root
 root = js.document.documentElement
 computed = js.window.getComputedStyle(root)
@@ -532,7 +524,7 @@ FG_COLOR = computed.getPropertyValue("--fg").strip() or "#000000"
 UI_COLOR = computed.getPropertyValue("--ui").strip() or "#888888"
 
 # --- drawing helpers --------------------------------------------------
-def draw_cells():
+def draw_cells(ctx):
     for row in range(ROWS):
         for col in range(COLS):
             value = GRID[row][col]
@@ -545,7 +537,7 @@ def draw_cells():
                 CELL_SIZE,
             )
 
-def draw_gridlines():
+def draw_gridlines(ctx):
     ctx.strokeStyle = UI_COLOR
     ctx.lineWidth = 1
 
@@ -566,8 +558,14 @@ def draw_gridlines():
         ctx.stroke()
 
 def draw_grid():
-    draw_cells()
-    draw_gridlines()
+    canvas = js.document.getElementById("ff-grid")
+    ctx = canvas.getContext("2d")
+    # Ensure canvas has the correct internal size
+    canvas.width = CANVAS_WIDTH
+    canvas.height = CANVAS_HEIGHT
+
+    draw_cells(ctx)
+    draw_gridlines(ctx)
 
 # initial draw
 draw_grid()
