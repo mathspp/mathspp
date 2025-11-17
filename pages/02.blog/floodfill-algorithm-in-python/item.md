@@ -2,8 +2,8 @@ Learn how to implement and use the floodfill algorithm in Python.
 
 ===
 
-<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+<link rel="stylesheet" href="https://pyscript.net/releases/2025.11.1/core.css" />
+<script defer src="https://pyscript.net/releases/2025.11.1/core.js"></script>
 
 
 ## What is the floodfill algorithm?
