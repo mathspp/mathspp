@@ -77,7 +77,7 @@ async def fill_bitmap(bitmap, x, y):
     print("About to start", pixel_stack, seen)
     while pixel_stack:
         nx, ny = pixel_stack.pop()
-        seen.append((nx, ny))
+        seen.add((nx, ny))
         draw_pixel(x, y)
         for dx, dy in _neighbours:
             x_, y_ = nx + dx, ny + dy
