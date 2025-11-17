@@ -186,26 +186,286 @@ And the floodfill algorithm is the algorithm that allows you to implement this b
  2. remain constrained inside a region.
 
 
-## Implementing the floodfill algorithm
+## Understanding the floodfill algorithm
 
 The floodfill algorithm does not have a lot of moving parts and, because it can be visualised as paint filling up a region of a drawing, it is a great stepping stone for someone looking to learn more about graph algorithms.
-The floodfill algorithm that is used to paint the Python logo looks like this:
+Now, you'll understand how it works in the context of painting the Python logo.
+
+The algorithm is called with a starting position (the place you clicked), and you also need a way to tell what parts of the image are “walls” (the black lines) or the empty regions:
 
 ```py
-import collections
+def floodfill(walls, x, y):
+    pass
+```
 
-async def fill_bitmap(bitmap, x, y):
-    pixels = collections.deque([(x, y)])
-    seen = set((x, y))
-    while pixels:
-        nx, ny = pixels.pop()
-        draw_pixel(nx, ny)
-        for dx, dy in _neighbours:
-            x_, y_ = nx + dx, ny + dy
-            if x_ <= 0 or x_ >= IMG_WIDTH or y_ < 0 or y_ >= IMG_HEIGHT or (x_, y_) in seen:
+If you clicked a wall, you don't want to do anything to the image:
+
+```py
+def floodfill(walls, x, y):
+    if walls[y][x]:
+        return
+```
+
+In here, you can assume that `walls` is a list of lists, where each list represents a row of the image.
+So, the first piece of code checks if you clicked a wall, because you don't want to change the colour of walls.
+
+Next, you need a way to represent the growing region of colour, and that's represented by a growing collection of all of the pixels you already painted.
+To make it very efficient, you can use a set instead of a list, and this set starts empty because you haven't painted anything yet:
+
+```py
+def floodfill(walls, x, y):
+    if walls[y][x]:
+        return
+
+    painted = set()  # <--
+```
+
+You also need another collection to keep track of all the points you still need to paint.
+In the beginning, you already know you _have_ to paint your starting point:
+
+```py
+def floodfill(walls, x, y):
+    if walls[y][x]:
+        return
+
+    painted = set()
+    to_paint = [(x, y)]  # <--
+```
+
+Now comes the fun part, which is the `while` loop that ensures your painted region keeps growing to fill in every empty spot!
+You want to write a loop that runs _while_ there are pixels _to be painted_:
+
+```py
+def floodfill(walls, x, y):
+    if walls[y][x]:
+        return
+
+    painted = set()
+    to_paint = [(x, y)]
+    while to_paint:  # <--
+        ...          # <--
+```
+
+Inside this loop you need to do four things:
+
+ 1. get a new pixel to process from the list of pixels to process;
+ 2. paint the pixel you're processing now;
+ 3. mark this pixel as having been painted; and
+ 4. find if the neighbours of the current pixel must be painted also.
+
+To do the first thing, you can just pop from the list `to_paint`:
+
+```py
+def floodfill(walls, x, y):
+    if walls[y][x]:
+        return
+
+    painted = set()
+    to_paint = [(x, y)]
+    while to_paint:
+        this = to_paint.pop()  # <--
+```
+
+To paint this pixel, you can assume you have an auxiliary function that does that:
+
+```py
+def draw_pixel(p): pass  # Do-nothing; just so the code works.
+
+def floodfill(walls, x, y):
+    if walls[y][x]:
+        return
+
+    painted = set()
+    to_paint = [(x, y)]
+    while to_paint:
+        this_pixel = to_paint.pop()
+        draw_pixel(this_pixel)  # <--
+```
+
+And now that your pixel has been painted, you can mark it as having been painted:
+
+```py
+
+def draw_pixel(p): pass  # Do-nothing; just so the code works.
+
+def floodfill(walls, x, y):
+    if walls[y][x]:
+        return
+
+    painted = set()
+    to_paint = [(x, y)]
+    while to_paint:
+        this_pixel = to_paint.pop()
+        draw_pixel(this_pixel)
+        painted.add(this_pixel)  # <--
+```
+
+The fourth and final step is the most important one, though: “find if the neighbours of the current pixel must be painted also”.
+
+One of my favourite ways of looking at the neighbours of a pixel is realising that the neighbours of a pixel have coordinates that are _very similar_ to the original pixel; all I have to do is add or subtract 1 from either coordinate, as the diagram below shows:
+
+![Diagram showing that the pixels next to a pixel have the same coordinates, up to a plus/minus 1 on one of the coordinates.](_grid_neighbours.excalidraw.webp "Neighbours of a pixel.")
+
+To represent this, I usually create a list with the small offsets and then use a loop to go through the offsets and modify the coordinates of the base pixel:
+
+```py
+neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]  # <--
+
+def draw_pixel(p): pass  # Do-nothing; just so the code works.
+
+def floodfill(walls, x, y):
+    if walls[y][x]:
+        return
+
+    painted = set()
+    to_paint = [(x, y)]
+    while to_paint:
+        this_pixel = to_paint.pop()
+        draw_pixel(this_pixel)
+        painted.add(this_pixel)
+        tx, ty = this_pixel               # <--
+        for dx, dy in neighbour_offsets:  # <--
+            nx, ny = tx + dx, ty + dy     # <--
+```
+
+The coordinates `tx, ty` represent the pixel you just painted; the offsets `dx, dy` represent the small jump you need to take from the base pixel to a neighbouring pixel; and the coordinates `nx, ny` represent the coordinates of the neighbour pixel.
+
+For each of the neighbours, you need to check if that's still inside the grid and, if it is, if it's a wall or an empty space.
+If the neighbour is outside of the grid or a wall, you don't want to do anything with that neighbour and you skip to the next one:
+
+```py
+neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
+
+def draw_pixel(p): pass  # Do-nothing; just so the code works.
+
+def floodfill(walls, x, y):
+    if walls[y][x]:
+        return
+
+    HEIGHT = len(walls)
+    WIDTH = len(walls[0])
+
+    painted = set()
+    to_paint = [(x, y)]
+    while to_paint:
+        this_pixel = to_paint.pop()
+        draw_pixel(this_pixel)
+        painted.add(this_pixel)
+        tx, ty = this_pixel
+        for dx, dy in neighbour_offsets:
+            nx, ny = tx + dx, ty + dy
+
+            if (
+                nx < 0 or nx >= WIDTH  # Is nx too big/small?
+                or ny < 0 or ny >= HEIGHT  # Is ny too big/small?
+                or walls[ny][nx]  # Is this a wall?
+            ):
                 continue
-            if bitmap[y_][x_] == 0:
-                seen.add((x_, y_))
-                pixels.appendleft((x_, y_))
-        await asyncio.sleep(0.0001)
+```
+
+If the neighbour pixel is a valid pixel that is _not_ a wall, then you can add it to the list of pixels to paint next!
+As long as this pixel hasn't been painted yet, of course:
+
+```py
+neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
+
+def draw_pixel(p): pass  # Do-nothing; just so the code works.
+
+def floodfill(walls, x, y):
+    if walls[y][x]:
+        return
+
+    HEIGHT = len(walls)
+    WIDTH = len(walls[0])
+
+    painted = set()
+    to_paint = [(x, y)]
+    while to_paint:
+        print(to_paint)
+        this_pixel = to_paint.pop()
+        draw_pixel(this_pixel)
+        painted.add(this_pixel)
+        tx, ty = this_pixel
+        for dx, dy in neighbour_offsets:
+            nx, ny = tx + dx, ty + dy
+
+            if nx < 0 or nx >= WIDTH or ny < 0 or ny >= HEIGHT or walls[ny][nx]:
+                continue
+
+            if (nx, ny) not in painted:
+                to_paint.append((nx, ny))
+```
+
+That's it!
+This is enough to use the floodfill algorithm and this is _very_ close to what I actually used to paint the Python logo above.
+
+
+## Optimising the floodfill algorithm to avoid duplicated work
+
+There is a key difference between the algorithm I'm using to paint the Python logo and the algorithm you just used, and it has to do with the role that the set `painted` has.
+The main objective of the set `painted` is to avoid wasting time painting the same pixel more than once, but what you _really_ want is to not waste any time whatsoever.
+
+If you modify the function `floodfill` to add a couple of calls to `print` and if you call it with a small grid, you will find that you can end up with duplicated points in the list `to_paint`:
+
+```py
+neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
+
+def draw_pixel(p): pass  # Do-nothing; just so the code works.
+
+def floodfill(walls, x, y):
+    # ...
+
+    painted = set()
+    to_paint = [(x, y)]
+    while to_paint:
+        print(to_paint)  # <--
+        # ...
+
+
+grid = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+floodfill(grid, 1, 1)
+```
+```txt
+[(1, 1)]
+[(2, 1), (1, 2), (0, 1), (1, 0)]
+[(2, 1), (1, 2), (0, 1), (2, 0), (0, 0)]
+[(2, 1), (1, 2), (0, 1), (2, 0), (0, 1)]
+# ...
+```
+
+The first four lines of output are shown above and the fourth line of output has the pixel `(0, 1)` repeated in the third and fifth positions.
+This means we'll process this pixel twice.
+For this small 3 x 3 grid, this isn't a big problem...
+But for big grids, these overlaps will be costly and waste a lot of your time.
+
+Instead of keeping track of the pixels that have been painted already, you can keep track of the pixels that you already queued up for painting.
+This means you add a new pixel to the set _at the same time_ as you add it to the list of pixels to paint:
+
+```py
+neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
+
+def draw_pixel(p): pass  # Do-nothing; just so the code works.
+
+def floodfill(walls, x, y):
+    if walls[y][x]:
+        return
+
+    HEIGHT = len(walls)
+    WIDTH = len(walls[0])
+
+    tracked = set((x, y))  # <--
+    to_paint = [(x, y)]
+    while to_paint:
+        this_pixel = to_paint.pop()
+        draw_pixel(this_pixel)
+        tx, ty = this_pixel
+        for dx, dy in neighbour_offsets:
+            nx, ny = tx + dx, ty + dy
+
+            if nx < 0 or nx >= WIDTH or ny < 0 or ny >= HEIGHT or walls[ny][nx]:
+                continue
+
+            if (nx, ny) not in tracked:
+                tracked.add((nx, ny))  # <--
+                to_paint.append((nx, ny))
 ```
