@@ -191,14 +191,20 @@ And the floodfill algorithm is the algorithm that allows you to implement this b
 The floodfill algorithm does not have a lot of moving parts and, because it can be visualised as paint filling up a region of a drawing, it is a great stepping stone for someone looking to learn more about graph algorithms.
 Now, you'll understand how it works in the context of painting the Python logo.
 
-The algorithm is called with a starting position (the place you clicked), and you also need a way to tell what parts of the image are “walls” (the black lines) or the empty regions:
+The algorithm will be implemented as a function `floodfill` with two arguments:
+
+ 1. a grid representing the locations of the walls; and
+ 2. the `x` and `y` coordinates of the starting point (the place you clicked).
 
 ```py
 def floodfill(walls, x, y):
     pass
 ```
 
-If you clicked a wall, you don't want to do anything to the image:
+Ok, I lied.
+The function has three arguments, really.
+
+If the position you click is a wall, you don't want to do anything and you return from the function right away:
 
 ```py
 def floodfill(walls, x, y):
@@ -480,3 +486,89 @@ def floodfill(walls, x, y):
 
 
 ## Visualising the floodfill algorithm step by step
+
+Hopefull you understood the prose that explains the algorithm...
+But there's nothing like seeing it in action.
+The widget below lets you step through the floodfill algorithm as it fills the middle region of the grid that's seen below:
+
+
+<canvas id="ff-grid" width="200" height="120"></canvas>
+
+<py-script>
+import js
+from pyodide.ffi import create_proxy  # you'll likely use this later
+
+# --- configuration ----------------------------------------------------
+CELL_SIZE = 20
+GRID = [
+    [0, 0, 0, 0, 1, 0, 1, 0, 0, 0],
+    [0, 0, 0, 1, 1, 0, 1, 0, 0, 0],
+    [0, 0, 1, 1, 1, 0, 1, 1, 0, 0],
+    [1, 1, 1, 0, 0, 0, 0, 1, 1, 0],
+    [1, 1, 0, 0, 0, 0, 0, 0, 1, 0],
+    [1, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+]
+
+ROWS = len(GRID)
+COLS = len(GRID[0])
+
+CANVAS_WIDTH = COLS * CELL_SIZE   # 10 * 20 = 200
+CANVAS_HEIGHT = ROWS * CELL_SIZE  #  6 * 20 = 120
+
+# --- canvas + colours -------------------------------------------------
+canvas = js.document.getElementById("ff-grid")
+ctx = canvas.getContext("2d")
+
+# Ensure canvas has the correct internal size
+canvas.width = CANVAS_WIDTH
+canvas.height = CANVAS_HEIGHT
+
+# Read CSS custom properties from :root
+root = js.document.documentElement
+computed = js.window.getComputedStyle(root)
+
+BG_COLOR = computed.getPropertyValue("--bg").strip() or "#ffffff"
+FG_COLOR = computed.getPropertyValue("--fg").strip() or "#000000"
+UI_COLOR = computed.getPropertyValue("--ui").strip() or "#888888"
+
+# --- drawing helpers --------------------------------------------------
+def draw_cells():
+    for row in range(ROWS):
+        for col in range(COLS):
+            value = GRID[row][col]
+            color = BG_COLOR if value == 0 else FG_COLOR
+            ctx.fillStyle = color
+            ctx.fillRect(
+                col * CELL_SIZE,
+                row * CELL_SIZE,
+                CELL_SIZE,
+                CELL_SIZE,
+            )
+
+def draw_gridlines():
+    ctx.strokeStyle = UI_COLOR
+    ctx.lineWidth = 1
+
+    # vertical lines
+    for c in range(COLS + 1):
+        x = c * CELL_SIZE + 0.5  # half-pixel for crisp lines
+        ctx.beginPath()
+        ctx.moveTo(x, 0)
+        ctx.lineTo(x, CANVAS_HEIGHT)
+        ctx.stroke()
+
+    # horizontal lines
+    for r in range(ROWS + 1):
+        y = r * CELL_SIZE + 0.5
+        ctx.beginPath()
+        ctx.moveTo(0, y)
+        ctx.lineTo(CANVAS_WIDTH, y)
+        ctx.stroke()
+
+def draw_grid():
+    draw_cells()
+    draw_gridlines()
+
+# initial draw
+draw_grid()
+</py-script>
