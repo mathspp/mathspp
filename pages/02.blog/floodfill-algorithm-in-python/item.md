@@ -85,7 +85,7 @@ async def fill_bitmap(bitmap, x, y):
                 continue
             if bitmap[y_][x_] == 0:
                 pixel_stack.append((x_, y_))
-        await asyncio.sleep(0.01)
+        await asyncio.sleep(0.0001)
 
 # Run the drawing when the page / PyScript is ready
 bitmap = await load_bitmap(URL)
