@@ -94,7 +94,13 @@ draw_bitmap(bitmap)
 
 canvas = js.document.getElementById("bitmap")
 
+is_running = False
 async def on_canvas_click(event):
+    global is_running
+    if is_running:
+        return
+    is_running = True
+
     # Compute canvas-relative coordinates
     rect = canvas.getBoundingClientRect()
     x = event.clientX - rect.left
@@ -102,6 +108,7 @@ async def on_canvas_click(event):
 
     # Call the Python function
     await fill_bitmap(bitmap, x // PIXEL_SIZE, y // PIXEL_SIZE)
+    is_running = False
 
 proxied_on_canvas_click = create_proxy(on_canvas_click)
 # Attach event listener
