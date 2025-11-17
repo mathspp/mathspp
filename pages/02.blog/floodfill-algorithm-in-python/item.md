@@ -12,7 +12,7 @@ Click the image below to randomly colour the region you click.
 
 Go ahead, try it!
 
-<canvas id="bitmap" width="320" height="320" style="display: block; margin: 0 auto; background-image: url('/blog/floodfill-algorithm-in-python/_python.jpeg'); background-size: 100% 100%; background-repeat: 'no-repeat';"></canvas>
+<canvas id="bitmap" width="320" height="320" style="display: block; margin: 0 auto;"></canvas>
 
 <py-script>
 IMG_WIDTH = 160
