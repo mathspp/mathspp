@@ -6137,7 +6137,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/floodfill-algorithm-in-python": {
-    "timestamp": 1763405059.1336803,
+    "timestamp": 1763405310.044336,
     "tags": [
       "python",
       "programming",
@@ -6148,9 +6148,9 @@
     ],
     "stats": {
       "articles": 1,
-      "code_snippets": 0,
-      "loc": 0,
-      "words": 622
+      "code_snippets": 1,
+      "loc": 16,
+      "words": 771
     }
   }
 }

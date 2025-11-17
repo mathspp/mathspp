@@ -107,30 +107,64 @@ async def fill_bitmap(bitmap, x, y):
                 pixels.appendleft((x_, y_))
         await asyncio.sleep(0.0001)
 
-# Run the drawing when the page / PyScript is ready
-bitmap = await load_bitmap(URL)
-draw_bitmap(bitmap)
+def get_event_coords(event):
+    """Return (clientX, clientY) for mouse/pointer/touch events."""
+    # PointerEvent / MouseEvent: clientX/clientY directly available
+    if hasattr(event, "clientX") and hasattr(event, "clientY") and event.clientX is not None:
+        return event.clientX, event.clientY
 
-is_running = False
-async def on_canvas_click(event):
+    # TouchEvent: use the first touch point
+    if hasattr(event, "touches") and event.touches.length > 0:
+        touch = event.touches.item(0)
+        return touch.clientX, touch.clientY
+
+    # Fallback: try changedTouches
+    if hasattr(event, "changedTouches") and event.changedTouches.length > 0:
+        touch = event.changedTouches.item(0)
+        return touch.clientX, touch.clientY
+
+    return None, None
+
+async def on_canvas_press(event):
     global is_running
+
     if is_running:
         return
+
     is_running = True
+    try:
+        # Avoid scrolling / zooming taking over on touch
+        if hasattr(event, "preventDefault"):
+            event.preventDefault()
 
-    # Compute canvas-relative coordinates
-    rect = canvas.getBoundingClientRect()
-    x = event.clientX - rect.left
-    y = event.clientY - rect.top
+        clientX, clientY = get_event_coords(event)
+        if clientX is None:
+            # Could not read coordinates; bail out gracefully
+            return
 
-    # Call the Python function
-    await fill_bitmap(bitmap, x // PIXEL_SIZE, y // PIXEL_SIZE)
-    is_running = False
+        rect = canvas.getBoundingClientRect()
 
-proxied_on_canvas_click = create_proxy(on_canvas_click)
+        # Account for CSS scaling: map from displayed size to canvas units
+        scale_x = canvas.width / rect.width
+        scale_y = canvas.height / rect.height
+
+        x_canvas = (clientX - rect.left) * scale_x
+        y_canvas = (clientY - rect.top) * scale_y
+
+        x_idx = int(x_canvas // PIXEL_SIZE)
+        y_idx = int(y_canvas // PIXEL_SIZE)
+
+        # Bounds check just to be safe
+        if 0 <= x_idx < IMG_WIDTH and 0 <= y_idx < IMG_HEIGHT:
+            await fill_bitmap(bitmap, x_idx, y_idx)
+    finally:
+        # Ensure the flag is always reset, even if something raises
+        is_running = False
+
+proxied_on_canvas_press = create_proxy(on_canvas_press)
 # Attach event listener
-canvas.addEventListener("pointerdown", proxied_on_canvas_click)
-canvas.addEventListener("touchstart", proxied_on_canvas_click)
+canvas.addEventListener("pointerdown", proxied_on_canvas_press)
+canvas.addEventListener("touchstart", proxied_on_canvas_press)
 </py-script>
 <br />
 
@@ -150,3 +184,23 @@ And the floodfill algorithm is the algorithm that allows you to implement this b
 ## Implementing the floodfill algorithm
 
 The floodfill algorithm does not have a lot of moving parts and, because it can be visualised as paint filling up a region of a drawing, it is a great stepping stone for someone looking to learn more about graph algorithms.
+The floodfill algorithm that is used to paint the Python logo looks like this:
+
+```py
+import collections
+
+async def fill_bitmap(bitmap, x, y):
+    pixels = collections.deque([(x, y)])
+    seen = set((x, y))
+    while pixels:
+        nx, ny = pixels.pop()
+        draw_pixel(nx, ny)
+        for dx, dy in _neighbours:
+            x_, y_ = nx + dx, ny + dy
+            if x_ <= 0 or x_ >= IMG_WIDTH or y_ < 0 or y_ >= IMG_HEIGHT or (x_, y_) in seen:
+                continue
+            if bitmap[y_][x_] == 0:
+                seen.add((x_, y_))
+                pixels.appendleft((x_, y_))
+        await asyncio.sleep(0.0001)
+```
