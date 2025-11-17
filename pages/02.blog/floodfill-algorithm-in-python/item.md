@@ -67,7 +67,7 @@ async def fill_bitmap(bitmap, x, y):
         return
 
     ctx = canvas.getContext("2d")
-    r, g, b = random.randint(0, 255) for _ in range(3)
+    r, g, b = (random.randint(0, 255) for _ in range(3))
     ctx.fillStyle = f"rgb({r}, {g}, {b})"
     def draw_pixel(x, y):
         ctx.fillRect(x, y, 1, 1)
@@ -77,6 +77,7 @@ async def fill_bitmap(bitmap, x, y):
     print("About to start", pixel_stack, seen)
     while pixel_stack:
         nx, ny = pixel_stack.pop()
+        print(f"processing {nx} {ny}")
         seen.add((nx, ny))
         draw_pixel(x, y)
         for dx, dy in _neighbours:
