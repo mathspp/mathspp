@@ -58,24 +58,6 @@ def draw_bitmap(bitmap):
                 ctx.fillStyle = "white"
             ctx.fillRect(x * pixel_size, y * pixel_size, pixel_size, pixel_size)
 
-# Run the drawing when the page / PyScript is ready
-bitmap = await load_bitmap(URL)
-draw_bitmap(bitmap)
-
-canvas = js.document.getElementById("bitmap")
-
-async def on_canvas_click(event):
-    # Compute canvas-relative coordinates
-    rect = canvas.getBoundingClientRect()
-    x = event.clientX - rect.left
-    y = event.clientY - rect.top
-
-    # Call the Python function
-    await fill_bitmap(bitmap, x, y)
-
-# Attach event listener
-canvas.addEventListener("click", on_canvas_click)
-
 _neighbours = [(1, 0), (-1, 0), (0, 1), (0, -1)]
 
 async def fill_bitmap(bitmap, x, y):
@@ -101,4 +83,22 @@ async def fill_bitmap(bitmap, x, y):
             if bitmap[y][x] == 0:
                 pixel_stack.append((x_, y_))
         await asyncio.sleep(0.01)
+
+# Run the drawing when the page / PyScript is ready
+bitmap = await load_bitmap(URL)
+draw_bitmap(bitmap)
+
+canvas = js.document.getElementById("bitmap")
+
+async def on_canvas_click(event):
+    # Compute canvas-relative coordinates
+    rect = canvas.getBoundingClientRect()
+    x = event.clientX - rect.left
+    y = event.clientY - rect.top
+
+    # Call the Python function
+    await fill_bitmap(bitmap, x, y)
+
+# Attach event listener
+canvas.addEventListener("click", on_canvas_click)
 </py-script>
