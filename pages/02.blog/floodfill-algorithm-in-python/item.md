@@ -68,7 +68,7 @@ async def fill_bitmap(bitmap, x, y):
 
     ctx = canvas.getContext("2d")
     colour = tuple(random.randint(0, 255) for _ in range(3))
-    ctx.fillStyle = "red"
+    ctx.fillStyle = colour
     def draw_pixel(x, y):
         ctx.fillRect(x, y, 1, 1)
 
@@ -83,7 +83,7 @@ async def fill_bitmap(bitmap, x, y):
             x_, y_ = nx + dx, ny + dy
             if x_ &lt; 0 or x_ &gt;= 320 or y_ &lt; 0 or y_ &gt;= 320 or (x_, y_) in seen:
                 continue
-            if bitmap[y][x] == 0:
+            if bitmap[y_][x_] == 0:
                 pixel_stack.append((x_, y_))
         await asyncio.sleep(0.01)
 
