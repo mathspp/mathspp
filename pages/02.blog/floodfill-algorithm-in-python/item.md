@@ -8,7 +8,10 @@ Learn how to implement and use the floodfill algorithm in Python.
 
 ## What is the floodfill algorithm?
 
-<canvas id="bitmap" width="320" height="320"></canvas>
+Click the image below to change the colour of a region.
+Click anywhere.
+
+<canvas id="bitmap" width="320" height="320" style="display: block; margin: 0 auto;"></canvas>
 
 <py-script>
 IMG_WIDTH = 160
@@ -50,7 +53,6 @@ def draw_bitmap(bitmap):
     cols = len(bitmap[0]) if rows > 0 else 0
 
     if rows == 0 or cols == 0:
-        print("Empty bitmap!")
         return
 
     for y, row in enumerate(bitmap):
@@ -64,7 +66,6 @@ def draw_bitmap(bitmap):
 _neighbours = [(1, 0), (-1, 0), (0, 1), (0, -1)]
 
 async def fill_bitmap(bitmap, x, y):
-    print("Inside fill_bitmap")
     if bitmap[y][x] == 1:
         return
 
