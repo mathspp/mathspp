@@ -67,8 +67,8 @@ async def fill_bitmap(bitmap, x, y):
         return
 
     ctx = canvas.getContext("2d")
-    colour = tuple(random.randint(0, 255) for _ in range(3))
-    ctx.fillStyle = colour
+    r, g, b = random.randint(0, 255) for _ in range(3)
+    ctx.fillStyle = f"rgb({r}, {g}, {b})"
     def draw_pixel(x, y):
         ctx.fillRect(x, y, 1, 1)
 
