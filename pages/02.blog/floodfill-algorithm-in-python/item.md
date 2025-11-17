@@ -19,7 +19,7 @@ const canvas = document.getElementById("bitmap");
 const ctx = canvas.getContext("2d");
 ctx.fillStyle = "var(--bg)";
 ctx.fillRect(0, 0, canvas.width, canvas.height);
-ctx.fillStyle = "var(--accent)";
+ctx.fillStyle = "var(--fg)";
 ctx.font = "24px sans-serif";
 ctx.textAlign = "center";
 ctx.textBaseline = "middle";
