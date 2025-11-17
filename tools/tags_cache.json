@@ -1,9 +1,9 @@
 {
   "__all": {
-    "articles": 431,
-    "code_snippets": 4058,
-    "loc": 38630,
-    "words": 466534
+    "articles": 432,
+    "code_snippets": 4067,
+    "loc": 38668,
+    "words": 466913
   },
   "bpci": {
     "articles": 10,
@@ -204,10 +204,10 @@
     "words": 6155
   },
   "productivity": {
-    "articles": 29,
-    "code_snippets": 156,
-    "loc": 1568,
-    "words": 17590
+    "articles": 30,
+    "code_snippets": 165,
+    "loc": 1606,
+    "words": 17969
   },
   "metaprogramming": {
     "articles": 3,

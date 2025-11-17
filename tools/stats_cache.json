@@ -3454,7 +3454,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/boolean-short-circuiting": {
-    "timestamp": 1753280322.428171,
+    "timestamp": 1763378406.9595733,
     "tags": [
       "programming",
       "python"
@@ -3533,7 +3533,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/chaining-comparison-operators": {
-    "timestamp": 1763119042.782504,
+    "timestamp": 1763378406.9607017,
     "tags": [
       "programming",
       "python"
@@ -3704,7 +3704,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/boost-your-productivity-with-the-repl": {
-    "timestamp": 1763119042.7823758,
+    "timestamp": 1763378406.9603922,
     "tags": [
       "productivity",
       "programming",
@@ -6122,6 +6122,18 @@
       "code_snippets": 32,
       "loc": 165,
       "words": 3955
+    }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/136.publish-an-epub-book-with-jupyter-book": {
+    "timestamp": 1763378388.954945,
+    "tags": [
+      "productivity"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 9,
+      "loc": 38,
+      "words": 379
     }
   }
 }

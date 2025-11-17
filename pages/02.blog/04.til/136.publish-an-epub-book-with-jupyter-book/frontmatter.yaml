@@ -1,0 +1,18 @@
+date: 17-11-2025 11:01
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to set the configurations of my Jupyter Book to build my book in the EPUB format."
+    og:image: "https://mathspp.com/blog/til/publish-an-epub-book-with-jupyter-book/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/publish-an-epub-book-with-jupyter-book/thumbnail.webp"
+references:
+  - "ChatGPT interaction, <https://chatgpt.com/share/691b0095-6c4c-8005-a696-d827ec60efc7>"
+routes:
+    aliases:
+        - "/blog/til/136"
+slug: "publish-an-epub-book-with-jupyter-book"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - productivity
+title: "TIL #136 – Publish an EPUB book with Jupyter Book"
+visible: false
