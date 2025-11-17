@@ -12,7 +12,7 @@ Click the image below to randomly colour the region you click.
 
 Go ahead, try it!
 
-<canvas id="bitmap" width="320" height="320" style="display: block; margin: 0 auto;"></canvas>
+<canvas id="bitmap" width="320" height="320" style="display: block; margin: 0 auto; touch-action: none;"></canvas>
 
 <script>
 const canvas = document.getElementById("bitmap");
@@ -131,6 +131,7 @@ proxied_on_canvas_click = create_proxy(on_canvas_click)
 # Attach event listener
 canvas.addEventListener("pointerdown", proxied_on_canvas_click)
 </py-script>
+<br />
 
 
 If you click the image, you will see colour spread out from the place you clicked, filling in the region you clicked on.

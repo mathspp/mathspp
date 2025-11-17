@@ -29,7 +29,7 @@ title: "Algorithms blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">26</th>
-            <th style="text-align: center;">29,043</th>
+            <th style="text-align: center;">29,047</th>
             <th style="text-align: center;">2,992</th>
         </tr>
     </thead>
