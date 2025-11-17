@@ -129,5 +129,17 @@ async def on_canvas_click(event):
 
 proxied_on_canvas_click = create_proxy(on_canvas_click)
 # Attach event listener
-canvas.addEventListener("click", proxied_on_canvas_click)
+canvas.addEventListener("pointerdown", proxied_on_canvas_click)
 </py-script>
+
+
+If you click the image, you will see colour spread out from the place you clicked, filling in the region you clicked on.
+If you click one of the eyes of the snakes, the eye fills pretty quickly and you can barely see it...
+If you click one of the snakes, you can see the colour spread to fill the entire snake...
+And if you click the outside area, you see the colour spread in weird ways, going around the snakes and into the tight corners between the two snakes.
+
+But regardless of where you click, you see that the colour spreading will always stay _inside_ the region you clicked.
+And the floodfill algorithm is the algorithm that allows you to implement this behaviour:
+
+ 1. spread out from the starting point; but
+ 2. remain constrained inside a region.

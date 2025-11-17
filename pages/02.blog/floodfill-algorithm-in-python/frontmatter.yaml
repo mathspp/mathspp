@@ -13,4 +13,6 @@ taxonomy:
       - python
       - programming
       - algorithms
+      - pyscript
+      - visualisation
 title: Floodfill algorithm in Python

@@ -28,8 +28,8 @@ title: "Visualisation blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">17</th>
-            <th style="text-align: center;">10,427</th>
+            <th style="text-align: center;">18</th>
+            <th style="text-align: center;">10,999</th>
             <th style="text-align: center;">915</th>
         </tr>
     </thead>
