@@ -114,12 +114,12 @@ def get_event_coords(event):
         return event.clientX, event.clientY
 
     # TouchEvent: use the first touch point
-    if hasattr(event, "touches") and event.touches.length > 0:
+    if hasattr(event, "touches") and event.touches.length &gt; 0:
         touch = event.touches.item(0)
         return touch.clientX, touch.clientY
 
     # Fallback: try changedTouches
-    if hasattr(event, "changedTouches") and event.changedTouches.length > 0:
+    if hasattr(event, "changedTouches") and event.changedTouches.length &gt; 0:
         touch = event.changedTouches.item(0)
         return touch.clientX, touch.clientY
 
@@ -155,7 +155,7 @@ async def on_canvas_press(event):
         y_idx = int(y_canvas // PIXEL_SIZE)
 
         # Bounds check just to be safe
-        if 0 <= x_idx < IMG_WIDTH and 0 <= y_idx < IMG_HEIGHT:
+        if 0 &lt;= x_idx &lt; IMG_WIDTH and 0 &lt;= y_idx &lt; IMG_HEIGHT:
             await fill_bitmap(bitmap, x_idx, y_idx)
     finally:
         # Ensure the flag is always reset, even if something raises
