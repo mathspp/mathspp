@@ -24,7 +24,7 @@ from pyodide.ffi import create_proxy
 import js
 from js import fetch
 
-URL = "https://mathspp.com/blog/floodfill-algorithm-in-python/_python.txt"
+URL = "/blog/floodfill-algorithm-in-python/_python.txt"
 
 async def load_bitmap(url: str) -> list[list[int]]:
     # Fetch the text file from the URL
