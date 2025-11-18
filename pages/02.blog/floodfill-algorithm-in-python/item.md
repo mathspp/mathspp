@@ -633,10 +633,10 @@ class Animation:
                     continue
 
                 if (nx, ny) not in self.tracked:
-                    yield f"Tracking and setting neighbour to paint later."
                     self.tracked.add((nx, ny))
                     self.to_paint.append((nx, ny))
                     self.draw_cell(nx, ny, AC2_COLOR)
+                    yield f"Tracked and set neighbour to paint later."
 
 # initial draw
 draw_grid()
