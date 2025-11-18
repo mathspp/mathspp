@@ -500,7 +500,7 @@ The widget below lets you step through the floodfill algorithm as it fills the m
   <span style="color: var(--accent-2);">█</span> <code>to_paint</code>:&nbsp;
   <code id="ff-grid-to_paint-values"></code>
 </p>
-<canvas id="ff-grid" width="627" height="375" style="display: block; margin: 0 auto;"></canvas>
+<canvas id="ff-grid" width="690" height="438" style="display: block; margin: 0 auto;"></canvas>
 <p id="ff-grid-status">Press “Next” to visualise the floodfill algorithm.</p>
 <div style="display:flex; justify-content:center; gap: 1em;">
 <button id="reset" class="button">Reset</button>
@@ -519,12 +519,13 @@ from pyodide.ffi import create_proxy  # you'll likely use this later
 CELL_SIZE = 60
 GRID_LINE_WIDTH = 3
 GRID = [
-    [0, 0, 0, 0, 1, 0, 1, 0, 0, 0],
-    [0, 0, 0, 1, 1, 0, 1, 0, 0, 0],
-    [0, 0, 1, 1, 1, 0, 1, 1, 0, 0],
-    [1, 1, 1, 0, 0, 0, 0, 1, 1, 0],
-    [1, 1, 0, 0, 0, 0, 0, 0, 1, 0],
-    [1, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+    [0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0],
+    [0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0],
+    [0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0],
+    [1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0],
+    [1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+    [1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
 ]
 START = (5, 3)
 
