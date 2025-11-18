@@ -606,8 +606,8 @@ class Animation:
                 nx, ny = tx + dx, ty + dy
 
                 if (
-                    nx < 0 or nx >= COLS
-                    or ny < 0 or ny >= ROWS
+                    nx &lt; 0 or nx &gt;= COLS
+                    or ny &lt; 0 or ny &gt;= ROWS
                     or GRID[ny][nx]
                 ):
                     continue
