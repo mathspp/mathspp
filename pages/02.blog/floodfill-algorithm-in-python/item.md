@@ -540,8 +540,8 @@ def draw_cells(ctx):
             color = BG_COLOR if value == 0 else FG_COLOR
             ctx.fillStyle = color
             ctx.fillRect(
-                col * CELL_SIZE + (c + 1) * GRID_LINE_WIDTH,
-                row * CELL_SIZE + (r + 1) * GRID_LINE_WIDTH,
+                col * CELL_SIZE + (col + 1) * GRID_LINE_WIDTH,
+                row * CELL_SIZE + (row + 1) * GRID_LINE_WIDTH,
                 CELL_SIZE,
                 CELL_SIZE,
             )
