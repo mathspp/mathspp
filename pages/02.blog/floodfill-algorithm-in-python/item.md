@@ -540,21 +540,22 @@ def draw_cells(ctx):
             )
 
 def draw_gridlines(ctx):
-    ctx.strokeStyle = UI_COLOR
     ctx.lineWidth = 3
     ctx.fillStyle = UI_COLOR
 
     # vertical lines
     for c in range(COLS + 1):
-        x = c * CELL_SIZE + (c - 1) * GRID_LINE_WIDTH
-        ctx.beginPath()
-        ctx.moveTo(x, 0)
-        ctx.lineTo(x, CANVAS_HEIGHT)
-        ctx.stroke()
+        x = c * (CELL_SIZE + GRID_LINE_WIDTH)
+        ctx.fillRect(
+            x,
+            0,
+            GRID_LINE_WIDTH,
+            CANVAS_HEIGHT,
+        )
 
     # horizontal lines
     for r in range(ROWS + 2):
-        y = r * CELL_SIZE + r * GRID_LINE_WIDTH
+        y = r * (CELL_SIZE + GRID_LINE_WIDTH)
         ctx.fillRect(
             0,
             y,
