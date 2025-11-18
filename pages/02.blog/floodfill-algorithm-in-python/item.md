@@ -492,7 +492,8 @@ def floodfill(walls, x, y):
 
 Hopefull you understood the prose that explains the algorithm...
 But there's nothing like seeing it in action.
-The widget below lets you step through the floodfill algorithm as it fills the middle region of the grid that's seen below:
+The widget below lets you step through the floodfill algorithm as it tries to paint the middle region in pink.
+The cells shown in purple are cells that have been added to the list `to_paint`, but haven't been painted yet.
 
 
 <p>
@@ -501,7 +502,7 @@ The widget below lets you step through the floodfill algorithm as it fills the m
   <code id="ff-grid-to_paint-values"></code>
 </p>
 <canvas id="ff-grid" width="690" height="438" style="display: block; margin: 0 auto;"></canvas>
-<p id="ff-grid-status">Press “Next” to visualise the floodfill algorithm.</p>
+<p id="ff-grid-status">Starting the floodfill algorithm from the centre square. Press “Next”.</p>
 <div style="display:flex; justify-content:center; gap: 1em;">
 <button id="reset" class="button">Reset</button>
 <button id="next" class="button">Next</button>
@@ -544,6 +545,7 @@ FG_COLOR = computed.getPropertyValue("--tx").strip()
 UI_COLOR = computed.getPropertyValue("--ui").strip()
 AC_COLOR = computed.getPropertyValue("--accent").strip()
 AC2_COLOR = computed.getPropertyValue("--accent-2").strip()
+RE_COLOR = computed.getPropertyValue("--re").strip()
 
 # --- drawing helpers --------------------------------------------------
 def draw_cells(ctx):
@@ -601,6 +603,25 @@ class Animation:
         self.to_paint = []
         self.animation_ff = None
 
+    def mark_cell(self, x, y):
+        self.ctx.strokeStyle = RE_COLOR
+        cx = x * (CELL_SIZE + GRID_LINE_WIDTH) + CELL_SIZE // 2
+        cy = y * (CELL_SIZE + GRID_LINE_WIDTH) + CELL_SIZE // 2
+        self.ctx.beginPath()
+        self.ctx.arc(cx, cy, CELL_SIZE // 5, 0, 2 * js.Math.PI)
+        self.ctx.stroke()
+
+    def clear_cell(self, x, y):
+        if (x, y) in self.to_paint:
+            colour = AC2_COLOR
+        elif (x, y) in self.tracked:
+            colour = AC_COLOR
+        elif GRID[y][x]:
+            colour = FG_COLOR
+        else:
+            colour = BG_COLOR
+        self.draw_cell(x, y, colour)
+
     def draw_cell(self, x, y, colour):
         self.ctx.fillStyle = colour
         self.ctx.fillRect(
@@ -612,7 +633,7 @@ class Animation:
 
     def start(self):
         draw_grid()
-        self.status_p.innerHTML = "Press “Next”."
+        self.status_p.innerHTML = "Starting the floodfill algorithm from the centre square. Press “Next”."
         self.tracked = {START}
         self.to_paint = [START]
         self.draw_cell(*START, AC2_COLOR)
@@ -642,6 +663,8 @@ class Animation:
             self.sync_to_paint()
             print(f"Processing {this_pixel = }")
             tx, ty = this_pixel
+            self.mark_cell(x, y)
+            yield f"Will now process {this_pixel}."
             self.draw_cell(tx, ty, AC_COLOR)
             yield f"Just drew {tx} {ty}"
 
