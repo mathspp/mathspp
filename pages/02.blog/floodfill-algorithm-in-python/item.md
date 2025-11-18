@@ -637,7 +637,8 @@ draw_grid()
 animator = Animation(js.document.getElementById("ff-grid").getContext("2d"))
 
 proxied_start = create_proxy(lambda evt: animator.start())
-js.document.getElementById("reset").addEventListener("click", proxied_draw_grid)
+js.document.getElementById("reset").addEventListener("click", proxied_start)
+
 proxied_animation_step = create_proxy(lambda evt: animator.animation_step())
 js.document.getElementById("next").addEventListener("click", proxied_animation_step)
 </py-script>
