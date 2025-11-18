@@ -15,21 +15,24 @@ Go ahead, try it!
 <canvas id="bitmap" width="320" height="320" style="display: block; margin: 0 auto;"></canvas>
 
 <script>
-const canvas = document.getElementById("bitmap");
-const ctx = canvas.getContext("2d");
+function set_canvas_loading(canvas) {
+    let ctx = canvas.getContext("2d");
 
-// Get computed values of CSS variables
-const styles = getComputedStyle(document.documentElement);
-const bg = styles.getPropertyValue("--bg").trim();
-const fg = styles.getPropertyValue("--accent").trim();
+    // Get computed values of CSS variables
+    const styles = getComputedStyle(document.documentElement);
+    const bg = styles.getPropertyValue("--bg").trim();
+    const fg = styles.getPropertyValue("--accent").trim();
 
-ctx.fillStyle = bg;
-ctx.fillRect(0, 0, canvas.width, canvas.height);
-ctx.fillStyle = fg;
-ctx.font = "36px Atkinson Hyperlegible";
-ctx.textAlign = "center";
-ctx.textBaseline = "middle";
-ctx.fillText("Loading...", canvas.width / 2, canvas.height / 2);
+    ctx.fillStyle = bg;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = fg;
+    ctx.font = "36px Atkinson Hyperlegible";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillText("Loading...", canvas.width / 2, canvas.height / 2);
+}
+
+set_canvas_loading(document.getElementById("bitmap"));
 </script>
 
 <py-script>
@@ -494,6 +497,10 @@ The widget below lets you step through the floodfill algorithm as it fills the m
 
 <canvas id="ff-grid" width="627" height="375" style="display: block; margin: 0 auto;"></canvas>
 
+<script>
+set_canvas_loading(document.getElementById("ff-grid"))
+</script>
+
 <py-script>
 import js
 from pyodide.ffi import create_proxy  # you'll likely use this later
@@ -576,7 +583,7 @@ def draw_grid():
 # initial draw
 #draw_grid()
 
-proxied_draw_grid = proxy(draw_grid)
+proxied_draw_grid = create_proxy(draw_grid)
 document.getElementById("reset").addEventListener("onclick", proxied_draw_grid)
 </py-script>
 
