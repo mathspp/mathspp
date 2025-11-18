@@ -663,7 +663,7 @@ class Animation:
             self.sync_to_paint()
             print(f"Processing {this_pixel = }")
             tx, ty = this_pixel
-            self.mark_cell(x, y)
+            self.mark_cell(tx, ty)
             yield f"Will now process {this_pixel}."
             self.draw_cell(tx, ty, AC_COLOR)
             yield f"Just drew {tx} {ty}"
