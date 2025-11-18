@@ -584,7 +584,7 @@ def draw_grid():
 #draw_grid()
 
 proxied_draw_grid = create_proxy(draw_grid)
-js.document.getElementById("reset").addEventListener("onclick", proxied_draw_grid)
+js.document.getElementById("reset").addEventListener("click", proxied_draw_grid)
 </py-script>
 
 <div style="display:flex; justify-content:center;">
