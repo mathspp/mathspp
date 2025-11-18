@@ -586,6 +586,7 @@ class Animation:
         self.ctx = ctx
         self.tracked = {START}
         self.to_paint = [START]
+        self.animation_ff = None
 
     def draw_cell(self, x, y, colour):
         self.ctx.fillStyle = colour
@@ -601,6 +602,8 @@ class Animation:
         self.animation_ff = self.floodfill()
 
     def animation_step(self):
+        if self.animation_ff is None:
+            self.start()
         try:
             msg = next(self.animation_ff)
         except StopIteration:
