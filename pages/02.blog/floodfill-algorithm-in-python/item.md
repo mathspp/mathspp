@@ -601,6 +601,7 @@ class Animation:
 
     def start(self):
         draw_grid()
+        self.status_p.innerHTML = "Press “Next”."
         self.tracked = {START}
         self.to_paint = [START]
         self.animation_ff = self.floodfill()
@@ -654,8 +655,7 @@ js.document.getElementById("reset").addEventListener("click", proxied_start)
 proxied_animation_step = create_proxy(lambda evt: animator.animation_step())
 js.document.getElementById("next").addEventListener("click", proxied_animation_step)
 </py-script>
-<br />
-<p id="ff-grid-status"></p>
+<p id="ff-grid-status">Press “Next” to visualise the floodfill algorithm.</p>
 <div style="display:flex; justify-content:center; gap: 1em;">
 <button id="reset" class="button">Reset</button>
 <button id="next" class="button">Next</button>
