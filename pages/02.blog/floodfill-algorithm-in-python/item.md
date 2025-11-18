@@ -586,7 +586,7 @@ class Animation:
         self.tracked = {START}
         self.to_paint = [START]
 
-    def draw_cell(x, y, colour):
+    def draw_cell(self, x, y, colour):
         ctx.fillStyle = colour
         ctx.fillRect(
             x * CELL_SIZE + (x + 1) * GRID_LINE_WIDTH,
