@@ -699,6 +699,7 @@ class Animation:
                     yield f"Tracked and set neighbour to paint later."
                 else:
                     yield f"Skipped because it was tracked already!"
+            self.clear_cell(tx, ty)
 
 animator = Animation(
     js.document.getElementById("ff-grid").getContext("2d"),
