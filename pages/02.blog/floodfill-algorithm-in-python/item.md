@@ -553,7 +553,7 @@ def draw_gridlines(ctx):
 
     # horizontal lines
     for r in range(ROWS + 1):
-        y = r * CELL_SIZE + (r + 1) * GRID_LINE_WIDTH
+        y = r * CELL_SIZE + r * GRID_LINE_WIDTH + GRID_LINE_WIDTH // 2
         ctx.beginPath()
         ctx.moveTo(0, y)
         ctx.lineTo(CANVAS_WIDTH, y)
