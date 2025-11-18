@@ -497,7 +497,7 @@ The cells shown in purple are cells that have been added to the list `to_paint`,
 
 
 <p>
-  <span style="color: var(--accent);">█</span> <code>tracked</code>;&nbsp;
+  <span style="color: var(--accent);">█</span><span style="color: var(--accent-2);">█</span> <code>tracked</code>;&nbsp;
   <code id="ff-grid-tracked-values"></code>
 </p>
 <p>
