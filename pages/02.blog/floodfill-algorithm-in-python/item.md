@@ -640,6 +640,7 @@ class Animation:
 
                 if nx &lt; 0 or nx &gt;= COLS or ny &lt; 0 or ny &gt;= ROWS:
                     yield f"Will skip this “neighbour” because it's outside the grid."
+                    continue
                 elif GRID[ny][nx]:
                     yield f"Will skip this neighbour because it's a wall!"
                     continue
