@@ -605,7 +605,12 @@ class Animation:
         self.tracked = {START}
         self.to_paint = [START]
         self.draw_cell(*START, AC2_COLOR)
+        self.sync_to_paint()
         self.animation_ff = self.floodfill()
+
+    def sync_to_paint(self):
+        elem = js.document.getElementById("ff-grid-to_paint-values")
+        elem.innerHTML = ", ".join(map(str, self.to_paint))
 
     def animation_step(self):
         if self.animation_ff is None:
@@ -623,6 +628,7 @@ class Animation:
 
         while self.to_paint:
             this_pixel = self.to_paint.pop()
+            self.sync_to_paint()
             print(f"Processing {this_pixel = }")
             tx, ty = this_pixel
             self.draw_cell(tx, ty, AC_COLOR)
@@ -639,11 +645,9 @@ class Animation:
                 if (nx, ny) not in self.tracked:
                     self.tracked.add((nx, ny))
                     self.to_paint.append((nx, ny))
+                    self.sync_to_paint()
                     self.draw_cell(nx, ny, AC2_COLOR)
                     yield f"Tracked and set neighbour to paint later."
-
-# initial draw
-draw_grid()
 
 animator = Animation(
     js.document.getElementById("ff-grid").getContext("2d"),
@@ -655,8 +659,16 @@ js.document.getElementById("reset").addEventListener("click", proxied_start)
 
 proxied_animation_step = create_proxy(lambda evt: animator.animation_step())
 js.document.getElementById("next").addEventListener("click", proxied_animation_step)
+
+# Initial reset
+animator.start()
 </py-script>
 <p id="ff-grid-status">Press “Next” to visualise the floodfill algorithm.</p>
+<p>
+  <span style="color: var(--accent);">█</span> <code>tracked</code>;&nbsp;
+  <span style="color: var(--accent-2);">█</span> <code>to_paint</code>:&nbsp;
+  <code id="ff-grid-to_paint-values"></code>
+</p>
 <div style="display:flex; justify-content:center; gap: 1em;">
 <button id="reset" class="button">Reset</button>
 <button id="next" class="button">Next</button>
