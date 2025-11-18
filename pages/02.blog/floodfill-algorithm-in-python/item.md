@@ -638,8 +638,10 @@ class Animation:
                 nx, ny = tx + dx, ty + dy
                 yield f"Will process neighbour {nx} {ny}"
 
-                if nx &lt; 0 or nx &gt;= COLS or ny &lt; 0 or ny &gt;= ROWS or GRID[ny][nx]:
-                    yield f"Will skip!"
+                if nx &lt; 0 or nx &gt;= COLS or ny &lt; 0 or ny &gt;= ROWS:
+                    yield f"Will skip this “neighbour” because it's outside the grid."
+                elif GRID[ny][nx]:
+                    yield f"Will skip this neighbour because it's a wall!"
                     continue
 
                 if (nx, ny) not in self.tracked:
@@ -648,6 +650,8 @@ class Animation:
                     self.sync_to_paint()
                     self.draw_cell(nx, ny, AC2_COLOR)
                     yield f"Tracked and set neighbour to paint later."
+                else:
+                    yield f"Skipped because it was tracked already!"
 
 animator = Animation(
     js.document.getElementById("ff-grid").getContext("2d"),
