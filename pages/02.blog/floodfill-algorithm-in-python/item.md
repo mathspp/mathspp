@@ -596,6 +596,17 @@ class Animation:
             CELL_SIZE,
         )
 
+    def start(self):
+        draw_grid()
+        self.animation_ff = self.floodfill()
+
+    def animation_step(self):
+        try:
+            msg = next(self.animation_ff)
+        except StopIteration:
+            msg = "Done"
+        print(msg)
+
     def floodfill(self):
         print("starting ff")
         neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
@@ -605,25 +616,30 @@ class Animation:
             print(f"Processing {this_pixel = }")
             tx, ty = this_pixel
             self.draw_cell(tx, ty, AC_COLOR)
+            yield f"Just drew {tx} {ty}"
+
             for dx, dy in neighbour_offsets:
                 nx, ny = tx + dx, ty + dy
+                yield f"Will process neighbour {nx} {ny}"
 
                 if nx &lt; 0 or nx &gt;= COLS or ny &lt; 0 or ny &gt;= ROWS or GRID[ny][nx]:
+                    yield f"Will skip!"
                     continue
 
                 if (nx, ny) not in self.tracked:
+                    yield f"Tracking and setting neighbour to paint later."
                     self.tracked.add((nx, ny))
                     self.to_paint.append((nx, ny))
 
 # initial draw
 draw_grid()
 
-proxied_draw_grid = create_proxy(lambda evt: draw_grid())
-js.document.getElementById("reset").addEventListener("click", proxied_draw_grid)
-
 animator = Animation(js.document.getElementById("ff-grid").getContext("2d"))
-proxied_ff = create_proxy(lambda evt: animator.floodfill())
-js.document.getElementById("next").addEventListener("click", proxied_ff)
+
+proxied_start = create_proxy(lambda evt: animator.start())
+js.document.getElementById("reset").addEventListener("click", proxied_draw_grid)
+proxied_animation_step = create_proxy(lambda evt: animator.animation_step())
+js.document.getElementById("next").addEventListener("click", proxied_animation_step)
 </py-script>
 
 <div style="display:flex; justify-content:center;">
