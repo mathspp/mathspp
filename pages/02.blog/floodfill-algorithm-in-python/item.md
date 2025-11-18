@@ -604,6 +604,7 @@ class Animation:
         self.status_p.innerHTML = "Press “Next”."
         self.tracked = {START}
         self.to_paint = [START]
+        self.draw_cell(*START, AC2_COLOR)
         self.animation_ff = self.floodfill()
 
     def animation_step(self):
