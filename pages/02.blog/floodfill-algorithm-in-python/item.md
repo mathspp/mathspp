@@ -495,7 +495,17 @@ But there's nothing like seeing it in action.
 The widget below lets you step through the floodfill algorithm as it fills the middle region of the grid that's seen below:
 
 
+<p>
+  <span style="color: var(--accent);">█</span> <code>tracked</code>;&nbsp;
+  <span style="color: var(--accent-2);">█</span> <code>to_paint</code>:&nbsp;
+  <code id="ff-grid-to_paint-values"></code>
+</p>
 <canvas id="ff-grid" width="627" height="375" style="display: block; margin: 0 auto;"></canvas>
+<p id="ff-grid-status">Press “Next” to visualise the floodfill algorithm.</p>
+<div style="display:flex; justify-content:center; gap: 1em;">
+<button id="reset" class="button">Reset</button>
+<button id="next" class="button">Next</button>
+</div>
 
 <script>
 set_canvas_loading(document.getElementById("ff-grid"))
@@ -668,13 +678,3 @@ js.document.getElementById("next").addEventListener("click", proxied_animation_s
 # Initial reset
 animator.start()
 </py-script>
-<p id="ff-grid-status">Press “Next” to visualise the floodfill algorithm.</p>
-<p>
-  <span style="color: var(--accent);">█</span> <code>tracked</code>;&nbsp;
-  <span style="color: var(--accent-2);">█</span> <code>to_paint</code>:&nbsp;
-  <code id="ff-grid-to_paint-values"></code>
-</p>
-<div style="display:flex; justify-content:center; gap: 1em;">
-<button id="reset" class="button">Reset</button>
-<button id="next" class="button">Next</button>
-</div>
