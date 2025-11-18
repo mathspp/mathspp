@@ -657,6 +657,12 @@ class Animation:
     def floodfill(self):
         print("starting ff")
         neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
+        neighbour_msgs = {
+            (1, 0): "Checking the cell on the right...",
+            (-1, 0): "Checking the cell on the left...",
+            (0, 1): "Checking the cell below...",
+            (0, -1): "Checking the cell above...",
+        }
 
         while self.to_paint:
             this_pixel = self.to_paint.pop()
@@ -666,17 +672,23 @@ class Animation:
             self.mark_cell(tx, ty)
             yield f"Will now process {this_pixel}."
             self.draw_cell(tx, ty, AC_COLOR)
-            yield f"Just drew {tx} {ty}"
+            self.mark_cell(tx, ty)
+            yield f"The cell {this_pixel} has now been coloured. Now, we check its neighbours."
 
             for dx, dy in neighbour_offsets:
                 nx, ny = tx + dx, ty + dy
-                yield f"Will process neighbour {nx} {ny}"
+
+                # Produce nice message about neighbour to process.
+                if not (nx &lt; 0 or nx &gt;= COLS or ny &lt; 0 or ny &gt;= ROWS):
+                    self.mark_cell(nx, ny)
+                yield neighbour_msgs[(dx, dy)]
 
                 if nx &lt; 0 or nx &gt;= COLS or ny &lt; 0 or ny &gt;= ROWS:
-                    yield f"Will skip this “neighbour” because it's outside the grid."
+                    yield f"... oh wait, there's no cell there because the grid ends here."
                     continue
                 elif GRID[ny][nx]:
                     yield f"Will skip this neighbour because it's a wall!"
+                    self.clear_cell(nx, ny)
                     continue
 
                 if (nx, ny) not in self.tracked:
