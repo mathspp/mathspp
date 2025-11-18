@@ -640,6 +640,7 @@ class Animation:
         self.tracked = {START}
         self.to_paint = [START]
         self.draw_cell(*START, AC2_COLOR)
+        self.sync_tracked()
         self.sync_to_paint()
         self.animation_ff = self.floodfill()
 
@@ -702,6 +703,7 @@ class Animation:
                     self.tracked.add((nx, ny))
                     self.to_paint.append((nx, ny))
                     self.sync_to_paint()
+                    self.sync_tracked()
                     self.draw_cell(nx, ny, AC2_COLOR)
                     yield f"Tracked and set neighbour to paint later."
                 else:
