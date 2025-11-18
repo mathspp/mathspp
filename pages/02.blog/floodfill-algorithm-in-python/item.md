@@ -619,7 +619,9 @@ draw_grid()
 
 proxied_draw_grid = create_proxy(lambda evt: draw_grid())
 js.document.getElementById("reset").addEventListener("click", proxied_draw_grid)
-proxied_ff = create_proxy(lambda evt: Animation().floodfill)
+
+animator = Animation()
+proxied_ff = create_proxy(lambda evt: animator.floodfill)
 js.document.getElementById("next").addEventListener("click", proxied_ff)
 </py-script>
 
