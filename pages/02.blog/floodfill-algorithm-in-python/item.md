@@ -583,8 +583,9 @@ def draw_grid():
     draw_gridlines(ctx)
 
 class Animation:
-    def __init__(self, ctx):
+    def __init__(self, ctx, status_p):
         self.ctx = ctx
+        self.status_p = status_p
         self.tracked = set()
         self.to_paint = []
         self.animation_ff = None
@@ -611,6 +612,7 @@ class Animation:
             msg = next(self.animation_ff)
         except StopIteration:
             msg = "Done"
+        self.status_p.innerHTML = msg
         print(msg)
 
     def floodfill(self):
@@ -641,7 +643,10 @@ class Animation:
 # initial draw
 draw_grid()
 
-animator = Animation(js.document.getElementById("ff-grid").getContext("2d"))
+animator = Animation(
+    js.document.getElementById("ff-grid").getContext("2d"),
+    js.document.getElementById("ff-grid-status"),
+)
 
 proxied_start = create_proxy(lambda evt: animator.start())
 js.document.getElementById("reset").addEventListener("click", proxied_start)
@@ -649,8 +654,11 @@ js.document.getElementById("reset").addEventListener("click", proxied_start)
 proxied_animation_step = create_proxy(lambda evt: animator.animation_step())
 js.document.getElementById("next").addEventListener("click", proxied_animation_step)
 </py-script>
+<br />
 
-<div style="display:flex; justify-content:center;">
+<p id="ff-grid-status"></p>
+
+<div style="display:flex; justify-content:center; gap: 1em;">
 <button id="reset" class="button">Reset</button>
 <button id="next" class="button">Next</button>
 </div>
