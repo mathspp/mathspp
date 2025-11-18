@@ -617,7 +617,7 @@ class Animation:
 # initial draw
 draw_grid()
 
-proxied_draw_grid = create_proxy(lambda evt: draw_grid())
+proxied_draw_grid = create_proxy(lambda evt: print("click") or draw_grid())
 js.document.getElementById("reset").addEventListener("click", proxied_draw_grid)
 
 animator = Animation()
