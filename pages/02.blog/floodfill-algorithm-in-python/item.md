@@ -584,8 +584,8 @@ def draw_grid():
 class Animation:
     def __init__(self, ctx):
         self.ctx = ctx
-        self.tracked = {START}
-        self.to_paint = [START]
+        self.tracked = set()
+        self.to_paint = []
         self.animation_ff = None
 
     def draw_cell(self, x, y, colour):
@@ -599,6 +599,8 @@ class Animation:
 
     def start(self):
         draw_grid()
+        self.tracked = {START}
+        self.to_paint = [START]
         self.animation_ff = self.floodfill()
 
     def animation_step(self):
