@@ -707,6 +707,7 @@ class Animation:
                     self.draw_cell(nx, ny, AC2_COLOR)
                     yield f"Tracked and set neighbour to paint later."
                 else:
+                    self.clear_cell(nx, ny)
                     yield f"Skipped because it was tracked already!"
             self.clear_cell(tx, ty)
 
