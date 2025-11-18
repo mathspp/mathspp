@@ -498,6 +498,9 @@ The cells shown in purple are cells that have been added to the list `to_paint`,
 
 <p>
   <span style="color: var(--accent);">█</span> <code>tracked</code>;&nbsp;
+  <code id="ff-grid-tracked-values"></code>
+</p>
+<p>
   <span style="color: var(--accent-2);">█</span> <code>to_paint</code>:&nbsp;
   <code id="ff-grid-to_paint-values"></code>
 </p>
@@ -643,6 +646,10 @@ class Animation:
     def sync_to_paint(self):
         elem = js.document.getElementById("ff-grid-to_paint-values")
         elem.innerHTML = ", ".join(map(str, self.to_paint))
+
+    def sync_tracked(self):
+        elem = js.document.getElementById("ff-grid-tracked-values")
+        elem.innerHTML = ", ".join(map(str, self.tracked))
 
     def animation_step(self):
         if self.animation_ff is None:
