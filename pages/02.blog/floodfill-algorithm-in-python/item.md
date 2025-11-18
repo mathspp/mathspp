@@ -574,5 +574,13 @@ def draw_grid():
     draw_gridlines(ctx)
 
 # initial draw
-draw_grid()
+#draw_grid()
+
+proxied_draw_grid = proxy(draw_grid)
+document.getElementById("reset").addEventListener("onclick", proxied_draw_grid)
 </py-script>
+
+<div style="display:flex; justify-content:center;">
+<button id="reset" class="button">Reset</button>
+<button id="next" class="button">Next</button>
+</div>
