@@ -605,15 +605,11 @@ class Animation:
             for dx, dy in neighbour_offsets:
                 nx, ny = tx + dx, ty + dy
 
-                if (
-                    nx &lt; 0 or nx &gt;= COLS
-                    or ny &lt; 0 or ny &gt;= ROWS
-                    or GRID[ny][nx]
-                ):
+                if nx &lt; 0 or nx &gt;= COLS or ny &lt; 0 or ny &gt;= ROWS or GRID[ny][nx]:
                     continue
 
-                if (nx, ny) not in self.tracked:  # <--
-                    self.tracked.add((nx, ny))    # <-- Add it to the set right away.
+                if (nx, ny) not in self.tracked:
+                    self.tracked.add((nx, ny))
                     self.to_paint.append((nx, ny))
 
 # initial draw
