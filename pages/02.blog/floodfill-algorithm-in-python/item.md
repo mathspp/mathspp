@@ -597,7 +597,7 @@ class Animation:
             CELL_SIZE,
         )
 
-    def floodfill(x, y):
+    def floodfill(self):
         while self.to_paint:
             this_pixel = self.to_paint.pop()
             tx, ty = this_pixel
@@ -617,7 +617,7 @@ draw_grid()
 
 proxied_draw_grid = create_proxy(lambda evt: draw_grid())
 js.document.getElementById("reset").addEventListener("click", proxied_draw_grid)
-proxied_ff = create_proxy(Animation().floodfill)
+proxied_ff = create_proxy(lambda evt: Animation().floodfill)
 js.document.getElementById("next").addEventListener("click", proxied_ff)
 </py-script>
 
