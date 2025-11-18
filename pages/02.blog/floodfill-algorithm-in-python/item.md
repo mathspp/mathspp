@@ -492,7 +492,7 @@ But there's nothing like seeing it in action.
 The widget below lets you step through the floodfill algorithm as it fills the middle region of the grid that's seen below:
 
 
-<canvas id="ff-grid" width="600" height="360" style="display: block; margin: 0 auto;"></canvas>
+<canvas id="ff-grid" width="627" height="375" style="display: block; margin: 0 auto;"></canvas>
 
 <py-script>
 import js
@@ -500,6 +500,7 @@ from pyodide.ffi import create_proxy  # you'll likely use this later
 
 # --- configuration ----------------------------------------------------
 CELL_SIZE = 60
+GRID_LINE_WIDTH = 3
 GRID = [
     [0, 0, 0, 0, 1, 0, 1, 0, 0, 0],
     [0, 0, 0, 1, 1, 0, 1, 0, 0, 0],
@@ -512,8 +513,8 @@ GRID = [
 ROWS = len(GRID)
 COLS = len(GRID[0])
 
-CANVAS_WIDTH = COLS * CELL_SIZE
-CANVAS_HEIGHT = ROWS * CELL_SIZE
+CANVAS_WIDTH = COLS * CELL_SIZE + (COLS - 1) * GRID_LINE_WIDTH
+CANVAS_HEIGHT = ROWS * CELL_SIZE + (ROWS - 1) * GRID_LINE_WIDTH
 
 # Read CSS custom properties from :root
 root = js.document.documentElement
@@ -532,8 +533,8 @@ def draw_cells(ctx):
             color = BG_COLOR if value == 0 else FG_COLOR
             ctx.fillStyle = color
             ctx.fillRect(
-                col * CELL_SIZE,
-                row * CELL_SIZE,
+                col * (CELL_SIZE + GRID_LINE_WIDTH),
+                row * (CELL_SIZE + GRID_LINE_WIDTH),
                 CELL_SIZE,
                 CELL_SIZE,
             )
@@ -544,7 +545,7 @@ def draw_gridlines(ctx):
 
     # vertical lines
     for c in range(COLS + 1):
-        x = c * CELL_SIZE - (c > 0)
+        x = c * CELL_SIZE + (c - 1) * GRID_LINE_WIDTH
         ctx.beginPath()
         ctx.moveTo(x, 0)
         ctx.lineTo(x, CANVAS_HEIGHT)
@@ -552,7 +553,7 @@ def draw_gridlines(ctx):
 
     # horizontal lines
     for r in range(ROWS + 1):
-        y = r * CELL_SIZE - (r > 0)
+        y = r * CELL_SIZE + (r - 1) * GRID_LINE_WIDTH
         ctx.beginPath()
         ctx.moveTo(0, y)
         ctx.lineTo(CANVAS_WIDTH, y)
