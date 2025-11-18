@@ -603,7 +603,7 @@ class Animation:
             this_pixel = self.to_paint.pop()
             print(f"Processing {this_pixel = }")
             tx, ty = this_pixel
-            draw_cell(tx, ty, AC_COLOR)
+            self.draw_cell(tx, ty, AC_COLOR)
             for dx, dy in neighbour_offsets:
                 nx, ny = tx + dx, ty + dy
 
@@ -615,7 +615,7 @@ class Animation:
                     self.to_paint.append((nx, ny))
 
 # initial draw
-# draw_grid()
+draw_grid()
 
 proxied_draw_grid = create_proxy(lambda evt: draw_grid())
 js.document.getElementById("reset").addEventListener("click", proxied_draw_grid)
