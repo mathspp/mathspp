@@ -605,10 +605,10 @@ class Animation:
 
     def mark_cell(self, x, y):
         self.ctx.strokeStyle = RE_COLOR
-        cx = x * (CELL_SIZE + GRID_LINE_WIDTH) + CELL_SIZE // 2
-        cy = y * (CELL_SIZE + GRID_LINE_WIDTH) + CELL_SIZE // 2
+        cx = x * CELL_SIZE + (x + 1) * GRID_LINE_WIDTH + CELL_SIZE // 2
+        cy = y * CELL_SIZE + (y + 1) * GRID_LINE_WIDTH + CELL_SIZE // 2
         self.ctx.beginPath()
-        self.ctx.arc(cx, cy, CELL_SIZE // 5, 0, 2 * js.Math.PI)
+        self.ctx.arc(cx, cy, 3 * CELL_SIZE // 10, 0, 2 * js.Math.PI)
         self.ctx.stroke()
 
     def clear_cell(self, x, y):
