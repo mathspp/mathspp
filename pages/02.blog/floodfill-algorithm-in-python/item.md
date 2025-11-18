@@ -596,10 +596,12 @@ class Animation:
         )
 
     def floodfill(self):
+        print("starting ff")
         neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
 
         while self.to_paint:
             this_pixel = self.to_paint.pop()
+            print(f"Processing {this_pixel = }")
             tx, ty = this_pixel
             draw_cell(tx, ty, AC_COLOR)
             for dx, dy in neighbour_offsets:
