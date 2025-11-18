@@ -586,8 +586,6 @@ class Animation:
         self.tracked = {START}
         self.to_paint = [START]
 
-        neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
-
     def draw_cell(x, y, colour):
         ctx.fillStyle = colour
         ctx.fillRect(
@@ -598,6 +596,8 @@ class Animation:
         )
 
     def floodfill(self):
+        neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
+
         while self.to_paint:
             this_pixel = self.to_paint.pop()
             tx, ty = this_pixel
