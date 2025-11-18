@@ -532,6 +532,7 @@ BG_COLOR = computed.getPropertyValue("--bg").strip()
 FG_COLOR = computed.getPropertyValue("--tx").strip()
 UI_COLOR = computed.getPropertyValue("--ui").strip()
 AC_COLOR = computed.getPropertyValue("--accent").strip()
+AC2_COLOR = computed.getPropertyValue("--accent-2").strip()
 
 # --- drawing helpers --------------------------------------------------
 def draw_cells(ctx):
@@ -635,6 +636,7 @@ class Animation:
                     yield f"Tracking and setting neighbour to paint later."
                     self.tracked.add((nx, ny))
                     self.to_paint.append((nx, ny))
+                    self.draw_cell(nx, ny, AC2_COLOR)
 
 # initial draw
 draw_grid()
