@@ -542,6 +542,7 @@ def draw_cells(ctx):
 def draw_gridlines(ctx):
     ctx.strokeStyle = UI_COLOR
     ctx.lineWidth = 3
+    ctx.fillStyle = UI_COLOR
 
     # vertical lines
     for c in range(COLS + 1):
@@ -552,12 +553,14 @@ def draw_gridlines(ctx):
         ctx.stroke()
 
     # horizontal lines
-    for r in range(ROWS + 1):
-        y = r * CELL_SIZE + r * GRID_LINE_WIDTH + (GRID_LINE_WIDTH + 1) // 2
-        ctx.beginPath()
-        ctx.moveTo(0, y)
-        ctx.lineTo(CANVAS_WIDTH, y)
-        ctx.stroke()
+    for r in range(ROWS + 2):
+        y = r * CELL_SIZE + r * GRID_LINE_WIDTH
+        ctx.fillRect(
+            0,
+            y,
+            CANVAS_WIDTH,
+            GRID_LINE_WIDTH,
+        )
 
 def draw_grid():
     canvas = js.document.getElementById("ff-grid")
