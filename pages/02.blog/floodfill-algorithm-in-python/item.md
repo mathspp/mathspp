@@ -513,8 +513,8 @@ GRID = [
 ROWS = len(GRID)
 COLS = len(GRID[0])
 
-CANVAS_WIDTH = COLS * CELL_SIZE + (COLS - 1) * GRID_LINE_WIDTH
-CANVAS_HEIGHT = ROWS * CELL_SIZE + (ROWS - 1) * GRID_LINE_WIDTH
+CANVAS_WIDTH = COLS * CELL_SIZE + (COLS + 1) * GRID_LINE_WIDTH
+CANVAS_HEIGHT = ROWS * CELL_SIZE + (ROWS + 1) * GRID_LINE_WIDTH
 
 # Read CSS custom properties from :root
 root = js.document.documentElement
