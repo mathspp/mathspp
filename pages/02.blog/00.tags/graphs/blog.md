@@ -29,7 +29,7 @@ title: "Graphs blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">8</th>
-            <th style="text-align: center;">10,409</th>
+            <th style="text-align: center;">10,435</th>
             <th style="text-align: center;">395</th>
         </tr>
     </thead>

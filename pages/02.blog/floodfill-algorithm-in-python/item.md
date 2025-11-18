@@ -533,8 +533,8 @@ def draw_cells(ctx):
             color = BG_COLOR if value == 0 else FG_COLOR
             ctx.fillStyle = color
             ctx.fillRect(
-                col * (CELL_SIZE + GRID_LINE_WIDTH),
-                row * (CELL_SIZE + GRID_LINE_WIDTH),
+                col * CELL_SIZE + (c + 1) * GRID_LINE_WIDTH,
+                row * CELL_SIZE + (r + 1) * GRID_LINE_WIDTH,
                 CELL_SIZE,
                 CELL_SIZE,
             )
@@ -543,8 +543,9 @@ def draw_gridlines(ctx):
     ctx.lineWidth = 3
     ctx.fillStyle = UI_COLOR
 
-    # vertical lines
-    for c in range(COLS + 1):
+    # I'm drawing the lines as rectangles because it's easier to control
+    # the position of the corners of the “thick lines” this way.
+    for c in range(COLS + 2):
         x = c * (CELL_SIZE + GRID_LINE_WIDTH)
         ctx.fillRect(
             x,
@@ -553,7 +554,6 @@ def draw_gridlines(ctx):
             CANVAS_HEIGHT,
         )
 
-    # horizontal lines
     for r in range(ROWS + 2):
         y = r * (CELL_SIZE + GRID_LINE_WIDTH)
         ctx.fillRect(
