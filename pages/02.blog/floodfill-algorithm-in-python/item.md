@@ -516,6 +516,7 @@ GRID = [
     [1, 1, 0, 0, 0, 0, 0, 0, 1, 0],
     [1, 0, 0, 0, 0, 0, 0, 0, 1, 0],
 ]
+START = (5, 3)
 
 ROWS = len(GRID)
 COLS = len(GRID[0])
@@ -580,11 +581,48 @@ def draw_grid():
     draw_cells(ctx)
     draw_gridlines(ctx)
 
+class Animation:
+    def __init__(self):
+        self.tracked = {START}
+        self.to_paint = [START]
+
+        neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
+
+    def draw_cell(x, y, colour):
+        ctx.fillStyle = colour
+        ctx.fillRect(
+            x * CELL_SIZE + (x + 1) * GRID_LINE_WIDTH,
+            y * CELL_SIZE + (y + 1) * GRID_LINE_WIDTH,
+            CELL_SIZE,
+            CELL_SIZE,
+        )
+
+    def floodfill(x, y):
+        while self.to_paint:
+            this_pixel = self.to_paint.pop()
+            tx, ty = this_pixel
+            draw_cell(tx, ty, AC_COLOR)
+            for dx, dy in neighbour_offsets:
+                nx, ny = tx + dx, ty + dy
+
+                if (
+                    nx < 0 or nx >= COLS
+                    or ny < 0 or ny >= ROWS
+                    or GRID[ny][nx]
+                ):
+                    continue
+
+                if (nx, ny) not in self.tracked:  # <--
+                    self.tracked.add((nx, ny))    # <-- Add it to the set right away.
+                    self.to_paint.append((nx, ny))
+
 # initial draw
-#draw_grid()
+draw_grid()
 
 proxied_draw_grid = create_proxy(lambda evt: draw_grid())
 js.document.getElementById("reset").addEventListener("click", proxied_draw_grid)
+proxied_ff = create_proxy(Animation().floodfill)
+js.document.getElementById("next").addEventListener("click", proxied_ff)
 </py-script>
 
 <div style="display:flex; justify-content:center;">
