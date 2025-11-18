@@ -582,13 +582,14 @@ def draw_grid():
     draw_gridlines(ctx)
 
 class Animation:
-    def __init__(self):
+    def __init__(self, ctx):
+        self.ctx = ctx
         self.tracked = {START}
         self.to_paint = [START]
 
     def draw_cell(self, x, y, colour):
-        ctx.fillStyle = colour
-        ctx.fillRect(
+        self.ctx.fillStyle = colour
+        self.ctx.fillRect(
             x * CELL_SIZE + (x + 1) * GRID_LINE_WIDTH,
             y * CELL_SIZE + (y + 1) * GRID_LINE_WIDTH,
             CELL_SIZE,
@@ -620,7 +621,7 @@ draw_grid()
 proxied_draw_grid = create_proxy(lambda evt: draw_grid())
 js.document.getElementById("reset").addEventListener("click", proxied_draw_grid)
 
-animator = Animation()
+animator = Animation(js.document.getElementById("next").getContext("2d"))
 proxied_ff = create_proxy(lambda evt: animator.floodfill())
 js.document.getElementById("next").addEventListener("click", proxied_ff)
 </py-script>
