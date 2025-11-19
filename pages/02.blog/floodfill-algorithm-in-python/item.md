@@ -548,7 +548,13 @@ FG_COLOR = computed.getPropertyValue("--tx").strip()
 UI_COLOR = computed.getPropertyValue("--ui").strip()
 AC_COLOR = computed.getPropertyValue("--accent").strip()
 AC2_COLOR = computed.getPropertyValue("--accent-2").strip()
-RE_COLOR = computed.getPropertyValue("--re").strip()
+CONTRAST = {
+    BG_COLOR: FG_COLOR,
+    FG_COLOR: BG_COLOR,
+    UI_COLOR: FG_COLOR,
+    AC_COLOR: FG_COLOR,
+    AC2_COLOR: FG_COLOR,
+}
 
 # --- drawing helpers --------------------------------------------------
 def draw_cells(ctx):
@@ -606,8 +612,19 @@ class Animation:
         self.to_paint = []
         self.animation_ff = None
 
+    def current_cell_color(self, x, y):
+        if GRID[y][x]:
+            return FG_COLOR
+        elif (x, y) in self.to_paint:
+            return AC2_COLOR
+        elif (x, y) in self.tracked:
+            return AC_COLOR
+        else:
+            return BG_COLOR
+
     def mark_cell(self, x, y):
-        self.ctx.strokeStyle = RE_COLOR
+        cell_colour = self.current_cell_colour(x, y)
+        self.ctx.strokeStyle = CONTRAST[cell_colour]
         cx = x * CELL_SIZE + (x + 1) * GRID_LINE_WIDTH + CELL_SIZE // 2
         cy = y * CELL_SIZE + (y + 1) * GRID_LINE_WIDTH + CELL_SIZE // 2
         self.ctx.beginPath()
@@ -629,15 +646,7 @@ class Animation:
         self.ctx.stroke()
 
     def clear_cell(self, x, y):
-        if (x, y) in self.to_paint:
-            colour = AC2_COLOR
-        elif (x, y) in self.tracked:
-            colour = AC_COLOR
-        elif GRID[y][x]:
-            colour = FG_COLOR
-        else:
-            colour = BG_COLOR
-        self.draw_cell(x, y, colour)
+        self.draw_cell(x, y, self.current_cell_colour(x, y))
 
     def draw_cell(self, x, y, colour):
         self.ctx.fillStyle = colour
@@ -693,7 +702,7 @@ class Animation:
             self.mark_cell(tx, ty)
             yield f"Will now process {this_pixel}."
             self.draw_cell(tx, ty, AC_COLOR)
-            self.mark_cell(tx, ty)
+            self.mark_cell_x(tx, ty)
             yield f"The cell {this_pixel} has now been coloured. Now, we check its neighbours."
 
             for dx, dy in neighbour_offsets:
