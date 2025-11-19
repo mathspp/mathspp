@@ -707,7 +707,10 @@ class Animation:
             self.status_p.innerHTML = msg
             print(msg)
             await asyncio.wait(
-                [asyncio.sleep(1), self.stop_autoplaying.wait()],
+                [
+                    asyncio.create_task(asyncio.sleep(1)),
+                    asyncio.create_task(self.stop_autoplaying.wait()),
+                ],
                 return_when=asyncio.FIRST_COMPLETED,
             )
             if self.stop_autoplaying.is_set():
