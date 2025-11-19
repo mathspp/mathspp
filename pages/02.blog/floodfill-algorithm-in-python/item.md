@@ -779,5 +779,5 @@ proxied_autoplay = create_proxy(animator.autoplay)
 js.document.getElementById("autoplay").addEventListener("click", proxied_autoplay)
 
 # Initial reset
-await animator._start()
+animator._start()
 </py-script>
