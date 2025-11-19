@@ -614,6 +614,20 @@ class Animation:
         self.ctx.arc(cx, cy, 3 * CELL_SIZE // 10, 0, 2 * js.Math.PI)
         self.ctx.stroke()
 
+    def mark_cell_x(self, x, y):
+        """Draw an X on top of this accented cell."""
+        self.ctx.strokeStyle = FG_COLOR
+        xl = x * CELL_SIZE + (x + 1) * GRID_LINE_WIDTH + CELL_SIZE // 4
+        xr = x * CELL_SIZE + (x + 1) * GRID_LINE_WIDTH + CELL_SIZE // 4 * 3
+        yt = y * CELL_SIZE + (y + 1) * GRID_LINE_WIDTH + CELL_SIZE // 4
+        yb = y * CELL_SIZE + (y + 1) * GRID_LINE_WIDTH + CELL_SIZE // 4 * 3
+        self.ctx.moveTo(xl, yt)
+        self.ctx.lineTo(xr, yb)
+        self.ctx.stroke()
+        self.ctx.moveTo(xl, yb)
+        self.ctx.lineTo(xr, yt)
+        self.ctx.stroke()
+
     def clear_cell(self, x, y):
         if (x, y) in self.to_paint:
             colour = AC2_COLOR
@@ -677,7 +691,7 @@ class Animation:
             self.sync_to_paint()
             print(f"Processing {this_pixel = }")
             tx, ty = this_pixel
-            self.mark_cell(tx, ty)
+            self.mark_cell_x(tx, ty)
             yield f"Will now process {this_pixel}."
             self.draw_cell(tx, ty, AC_COLOR)
             self.mark_cell(tx, ty)
