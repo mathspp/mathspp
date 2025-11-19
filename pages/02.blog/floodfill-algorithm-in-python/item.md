@@ -688,6 +688,8 @@ class Animation:
         elem.innerHTML = ", ".join(map(str, self.tracked))
 
     def animation_step(self):
+        if self.autoplaying:
+            return
         if self.animation_ff is None:
             self.start()
         try:
@@ -698,6 +700,7 @@ class Animation:
         print(msg)
 
     async def autoplay(self, _evt):
+        self.autoplaying = True
         await self._autoplay()
 
     async def _autoplay(self):
