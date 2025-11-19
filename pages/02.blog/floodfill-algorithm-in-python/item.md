@@ -758,7 +758,7 @@ proxied_animation_step = create_proxy(lambda evt: animator.animation_step())
 js.document.getElementById("next").addEventListener("click", proxied_animation_step)
 
 proxied_autoplay = create_proxy(lambda evt: animator.autoplay())
-js.document.getElementById("autoplay").addEventListenever("click", proxied_autoplay)
+js.document.getElementById("autoplay").addEventListener("click", proxied_autoplay)
 
 # Initial reset
 animator.start()
