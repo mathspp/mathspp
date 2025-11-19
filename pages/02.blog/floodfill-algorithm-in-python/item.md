@@ -633,6 +633,7 @@ class Animation:
 
     def mark_cell_x(self, x, y):
         """Draw an X on top of this cell."""
+        self.ctx.beginPath()
         self.ctx.strokeStyle = CONTRAST[self.current_cell_colour(x, y)]
         xl = x * CELL_SIZE + (x + 1) * GRID_LINE_WIDTH + CELL_SIZE // 4
         xr = x * CELL_SIZE + (x + 1) * GRID_LINE_WIDTH + CELL_SIZE // 4 * 3
@@ -702,7 +703,7 @@ class Animation:
             self.mark_cell(tx, ty)
             yield f"Will now process {this_pixel}."
             self.draw_cell(tx, ty, AC_COLOR)
-            # self.mark_cell_x(tx, ty)
+            self.mark_cell_x(tx, ty)
             yield f"The cell {this_pixel} has now been coloured. Now, we check its neighbours."
 
             for dx, dy in neighbour_offsets:
