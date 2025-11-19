@@ -702,7 +702,7 @@ class Animation:
             self.mark_cell(tx, ty)
             yield f"Will now process {this_pixel}."
             self.draw_cell(tx, ty, AC_COLOR)
-            self.mark_cell_x(tx, ty)
+            # self.mark_cell_x(tx, ty)
             yield f"The cell {this_pixel} has now been coloured. Now, we check its neighbours."
 
             for dx, dy in neighbour_offsets:
