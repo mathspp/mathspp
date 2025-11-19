@@ -709,6 +709,7 @@ class Animation:
             await asyncio.wait(
                 asyncio.sleep(1),
                 self.stop_autoplaying.wait(),
+                return_when=asyncio.FIRST_COMPLETED,
             )
             if self.stop_autoplaying.is_set():
                 self.stop_autoplaying.unset()
