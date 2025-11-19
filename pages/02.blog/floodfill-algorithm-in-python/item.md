@@ -667,7 +667,7 @@ class Animation:
         if self.autoplaying:
             self.stop_autoplaying.set()
             await asyncio.sleep(0)  # Give the loop a chance to cancell the running autoplay
-        self.start()
+        self._start()
 
     def _start(self):
         draw_grid()
