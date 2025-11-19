@@ -717,7 +717,7 @@ class Animation:
                 return_when=asyncio.FIRST_COMPLETED,
             )
             if self.stop_autoplaying.is_set():
-                self.stop_autoplaying.unset()
+                self.stop_autoplaying.clear()
                 self.autoplaying = False
                 break
 
