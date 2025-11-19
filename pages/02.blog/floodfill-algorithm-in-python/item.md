@@ -689,9 +689,8 @@ class Animation:
         while self.to_paint:
             this_pixel = self.to_paint.pop()
             self.sync_to_paint()
-            print(f"Processing {this_pixel = }")
             tx, ty = this_pixel
-            self.mark_cell_x(tx, ty)
+            self.mark_cell(tx, ty)
             yield f"Will now process {this_pixel}."
             self.draw_cell(tx, ty, AC_COLOR)
             self.mark_cell(tx, ty)
