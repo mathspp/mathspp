@@ -690,6 +690,9 @@ class Animation:
         print(msg)
 
     async def autoplay(self):
+        await self._autoplay()
+
+    async def _autoplay(self):
         if self.animation_ff is None:
             self.start()
         for msg in self.animation_ff:
