@@ -632,8 +632,8 @@ class Animation:
         self.ctx.stroke()
 
     def mark_cell_x(self, x, y):
-        """Draw an X on top of this accented cell."""
-        self.ctx.strokeStyle = FG_COLOR
+        """Draw an X on top of this cell."""
+        self.ctx.strokeStyle = CONTRAST[self.current_cell_colour(x, y)]
         xl = x * CELL_SIZE + (x + 1) * GRID_LINE_WIDTH + CELL_SIZE // 4
         xr = x * CELL_SIZE + (x + 1) * GRID_LINE_WIDTH + CELL_SIZE // 4 * 3
         yt = y * CELL_SIZE + (y + 1) * GRID_LINE_WIDTH + CELL_SIZE // 4
