@@ -614,6 +614,8 @@ class Animation:
         self.tracked = set()
         self.to_paint = []
         self.animation_ff = None
+        self.autoplaying = False
+        self.stop_autoplaying = asyncio.Event()
 
     def current_cell_colour(self, x, y):
         if GRID[y][x]:
@@ -661,7 +663,13 @@ class Animation:
             CELL_SIZE,
         )
 
-    def start(self):
+    async def start(self, _evt):
+        if self.autoplaying:
+            self.stop_autoplaying.set()
+            await asyncio.sleep(0)  # Give the loop a chance to cancell the running autoplay
+        self.start()
+
+    def _start(self):
         draw_grid()
         self.status_p.innerHTML = "Starting the floodfill algorithm from the centre square. Press “Next”."
         self.tracked = {START}
@@ -698,7 +706,14 @@ class Animation:
         for msg in self.animation_ff:
             self.status_p.innerHTML = msg
             print(msg)
-            await asyncio.sleep(1)
+            await asyncio.wait(
+                asyncio.sleep(1),
+                self.stop_autoplaying.wait(),
+            )
+            if self.stop_autoplaying.is_set():
+                self.stop_autoplaying.unset()
+                self.autoplaying = False
+                break
 
     def floodfill(self):
         print("starting ff")
@@ -754,7 +769,7 @@ animator = Animation(
     js.document.getElementById("ff-grid-status"),
 )
 
-proxied_start = create_proxy(lambda evt: animator.start())
+proxied_start = create_proxy(animator.start)
 js.document.getElementById("reset").addEventListener("click", proxied_start)
 
 proxied_animation_step = create_proxy(lambda evt: animator.animation_step())
@@ -764,5 +779,5 @@ proxied_autoplay = create_proxy(animator.autoplay)
 js.document.getElementById("autoplay").addEventListener("click", proxied_autoplay)
 
 # Initial reset
-animator.start()
+await animator._start()
 </py-script>
