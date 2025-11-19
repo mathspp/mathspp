@@ -509,6 +509,7 @@ The cells shown in purple are cells that have been added to the list `to_paint`,
 <div style="display:flex; justify-content:center; gap: 1em;">
 <button id="reset" class="button">Reset</button>
 <button id="next" class="button">Next</button>
+<button id="autoplay" class="button">Auto-play</button>
 </div>
 
 <script>
@@ -516,6 +517,8 @@ set_canvas_loading(document.getElementById("ff-grid"))
 </script>
 
 <py-script>
+import asyncio
+
 import js
 from pyodide.ffi import create_proxy  # you'll likely use this later
 
@@ -686,6 +689,14 @@ class Animation:
         self.status_p.innerHTML = msg
         print(msg)
 
+    async def autoplay(self):
+        if self.animation_ff is None:
+            self.start()
+        for msg in self.animation_ff:
+            self.status_p.innerHTML = msg
+            print(msg)
+            await asyncio.sleep(1)
+
     def floodfill(self):
         print("starting ff")
         neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
@@ -733,6 +744,7 @@ class Animation:
                     self.clear_cell(nx, ny)
                     yield f"Skipped because it was tracked already!"
             self.clear_cell(tx, ty)
+        yield f"We're done because there are no more cells to paint!"
 
 animator = Animation(
     js.document.getElementById("ff-grid").getContext("2d"),
@@ -744,6 +756,9 @@ js.document.getElementById("reset").addEventListener("click", proxied_start)
 
 proxied_animation_step = create_proxy(lambda evt: animator.animation_step())
 js.document.getElementById("next").addEventListener("click", proxied_animation_step)
+
+proxied_autoplay = create_proxy(lambda evt: animator.autoplay())
+js.document.getElementById("autoplay").addEventListenever("click", proxied_autoplay)
 
 # Initial reset
 animator.start()
