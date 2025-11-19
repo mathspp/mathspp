@@ -612,7 +612,7 @@ class Animation:
         self.to_paint = []
         self.animation_ff = None
 
-    def current_cell_color(self, x, y):
+    def current_cell_colour(self, x, y):
         if GRID[y][x]:
             return FG_COLOR
         elif (x, y) in self.to_paint:
