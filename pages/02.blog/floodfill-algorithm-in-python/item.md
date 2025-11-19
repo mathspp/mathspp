@@ -689,7 +689,7 @@ class Animation:
         self.status_p.innerHTML = msg
         print(msg)
 
-    async def autoplay(self):
+    async def autoplay(self, _evt):
         await self._autoplay()
 
     async def _autoplay(self):
@@ -760,7 +760,7 @@ js.document.getElementById("reset").addEventListener("click", proxied_start)
 proxied_animation_step = create_proxy(lambda evt: animator.animation_step())
 js.document.getElementById("next").addEventListener("click", proxied_animation_step)
 
-proxied_autoplay = create_proxy(lambda evt: animator.autoplay())
+proxied_autoplay = create_proxy(animator.autoplay)
 js.document.getElementById("autoplay").addEventListener("click", proxied_autoplay)
 
 # Initial reset
