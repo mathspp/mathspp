@@ -171,6 +171,7 @@ class FF3Animation:
             self.draw_cell(x, y, region_colour)
 
         # mark all cells as painted (including the start cell)
+        print("Updating ")
         self.painted.update(tracked)
 
     async def run_all_regions(self):
@@ -180,16 +181,16 @@ class FF3Animation:
         ff3_draw_grid()
 
         try:
-            for col in range(FF3_COLS):
-                for row in range(FF3_ROWS):
+            for y in range(FF3_ROWS):
+                for x in range(FF3_COLS):
                     print("@@@")
-                    print(col, row)
+                    print(x, y)
                     print(self.painted)
-                    print((col, row) in self.painted)
+                    print((x, y) in self.painted)
                     print("@@@")
-                    if (col, row) in self.painted or FF3_GRID[row][col]:
+                    if (x, y) in self.painted or FF3_GRID[y][x]:
                         continue
-                    next_start = (row, col)
+                    next_start = (x, y)
                     self.region_count += 1
                     region_colour = next(REGION_COLOURS)
                     self.status_p.innerHTML = (
