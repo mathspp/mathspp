@@ -22,14 +22,14 @@ title: "Pyscript blog articles"
 ---
 
 
-# “PYSCRIPT” tag
+# Visualisations and other articles with PyScript
 
 
 <table class="stats-table">
     <thead>
         <tr>
             <th style="text-align: center;">1</th>
-            <th style="text-align: center;">5,715</th>
+            <th style="text-align: center;">5,748</th>
             <th style="text-align: center;">205</th>
         </tr>
     </thead>

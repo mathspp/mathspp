@@ -5,6 +5,10 @@ Learn how to implement and use the floodfill algorithm in Python.
 <link rel="stylesheet" href="https://pyscript.net/releases/2025.11.1/core.css" />
 <script defer type="module" src="https://pyscript.net/releases/2025.11.1/core.js"></script>
 
+! This article includes some interactive elements that I developed with PyScript – Python in the browser.
+! It may take a second to load the demos.
+! Thank you for your patience!
+
 
 ## What is the floodfill algorithm?
 
