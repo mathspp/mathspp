@@ -588,7 +588,7 @@ class Animation:
     def _start(self):
         draw_grid()
         self.status_p.innerHTML = "Starting the floodfill algorithm from the centre square. Press “Next”."
-        self.painted = {}
+        self.painted = set()
         self.to_paint = [START]
         self.draw_cell(*START, AC2_COLOR)
         self.sync_painted()
