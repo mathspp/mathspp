@@ -1102,9 +1102,6 @@ if the floodfill algorithm doesn't reach a certain point, the exit can't go ther
 Click any empty cell of the maze below and see what portion of the maze you can fill.
 For example, if you start in the bottom left of the maze, can you go all the way up to the top right corner of the maze?
 
-```
-
-```
 
 <p id="ff2-grid-legend">
   <span style="color: var(--accent);">█</span> processed;&nbsp;
@@ -1378,7 +1375,7 @@ js.document.getElementById("ff2-reset-button").addEventListener("click", reset_p
 
 # initial draw
 draw_grid()
-&lt;/py-script&gt;
+</py-script>
 
 
 ### Counting regions
