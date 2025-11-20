@@ -528,7 +528,7 @@ class Animation:
     def __init__(self, ctx, status_p):
         self.ctx = ctx
         self.status_p = status_p
-        self.tracked = set()
+        self.painted = set()
         self.to_paint = []
         self.animation_ff = None
         self.autoplaying = False
@@ -539,7 +539,7 @@ class Animation:
             return FG_COLOR
         elif (x, y) in self.to_paint:
             return AC2_COLOR
-        elif (x, y) in self.tracked:
+        elif (x, y) in self.painted:
             return AC_COLOR
         else:
             return BG_COLOR
