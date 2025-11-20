@@ -1637,7 +1637,7 @@ js.document.getElementById("ff3-count-button").addEventListener("click", ff3_cou
 ff3_reset_proxy = create_proxy(ff3_handle_reset_click)
 js.document.getElementById("ff3-reset-button").addEventListener("click", ff3_reset_proxy)
 </py-script>
-
+<br />
 
 The code below represents this algorithm:
 
