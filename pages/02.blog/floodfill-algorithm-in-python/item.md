@@ -1127,9 +1127,9 @@ import js
 from pyodide.ffi import create_proxy
 
 # --- configuration ----------------------------------------------------
-CELL_SIZE = 20
-GRID_LINE_WIDTH = 2
-GRID = [
+FF2_CELL_SIZE = 20
+FF2_GRID_LINE_WIDTH = 2
+FF2_GRID = [
     [1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0],
     [0,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,0,1,0,0,0],
     [0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0],
@@ -1146,11 +1146,11 @@ GRID = [
     [0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,0,0],
 ]
 
-ROWS = len(GRID)
-COLS = len(GRID[0])
+FF2_ROWS = len(FF2_GRID)
+FF2_COLS = len(FF2_GRID[0])
 
-CANVAS_WIDTH = COLS * CELL_SIZE + (COLS + 1) * GRID_LINE_WIDTH
-CANVAS_HEIGHT = ROWS * CELL_SIZE + (ROWS + 1) * GRID_LINE_WIDTH
+FF2_CANVAS_WIDTH = FF2_COLS * FF2_CELL_SIZE + (FF2_COLS + 1) * FF2_GRID_LINE_WIDTH
+FF2_CANVAS_HEIGHT = FF2_ROWS * FF2_CELL_SIZE + (FF2_ROWS + 1) * FF2_GRID_LINE_WIDTH
 
 # Read CSS custom properties from :root
 root = js.document.documentElement
@@ -1170,52 +1170,52 @@ CONTRAST = {
 }
 
 # --- drawing helpers --------------------------------------------------
-def draw_cells(ctx):
-    for row in range(ROWS):
-        for col in range(COLS):
-            value = GRID[row][col]
+def ff2_draw_cells(ctx):
+    for row in range(FF2_ROWS):
+        for col in range(FF2_COLS):
+            value = FF2_GRID[row][col]
             color = BG_COLOR if value == 0 else FG_COLOR
             ctx.fillStyle = color
             ctx.fillRect(
-                col * CELL_SIZE + (col + 1) * GRID_LINE_WIDTH,
-                row * CELL_SIZE + (row + 1) * GRID_LINE_WIDTH,
-                CELL_SIZE,
-                CELL_SIZE,
+                col * FF2_CELL_SIZE + (col + 1) * FF2_GRID_LINE_WIDTH,
+                row * FF2_CELL_SIZE + (row + 1) * FF2_GRID_LINE_WIDTH,
+                FF2_CELL_SIZE,
+                FF2_CELL_SIZE,
             )
 
-def draw_gridlines(ctx):
-    ctx.lineWidth = GRID_LINE_WIDTH
+def ff2_draw_gridlines(ctx):
+    ctx.lineWidth = FF2_GRID_LINE_WIDTH
     ctx.fillStyle = UI_COLOR
 
-    for c in range(COLS + 2):
-        x = c * (CELL_SIZE + GRID_LINE_WIDTH)
+    for c in range(FF2_COLS + 2):
+        x = c * (FF2_CELL_SIZE + FF2_GRID_LINE_WIDTH)
         ctx.fillRect(
             x,
             0,
-            GRID_LINE_WIDTH,
-            CANVAS_HEIGHT,
+            FF2_GRID_LINE_WIDTH,
+            FF2_CANVAS_HEIGHT,
         )
 
-    for r in range(ROWS + 2):
-        y = r * (CELL_SIZE + GRID_LINE_WIDTH)
+    for r in range(FF2_ROWS + 2):
+        y = r * (FF2_CELL_SIZE + FF2_GRID_LINE_WIDTH)
         ctx.fillRect(
             0,
             y,
-            CANVAS_WIDTH,
-            GRID_LINE_WIDTH,
+            FF2_CANVAS_WIDTH,
+            FF2_GRID_LINE_WIDTH,
         )
 
-def draw_grid():
+def ff2_draw_grid():
     canvas = js.document.getElementById("ff2-grid-canvas")
     ctx = canvas.getContext("2d")
-    canvas.width = CANVAS_WIDTH
-    canvas.height = CANVAS_HEIGHT
+    canvas.width = FF2_CANVAS_WIDTH
+    canvas.height = FF2_CANVAS_HEIGHT
 
-    draw_cells(ctx)
-    draw_gridlines(ctx)
+    ff2_draw_cells(ctx)
+    ff2_draw_gridlines(ctx)
 
 # --- animation --------------------------------------------------------
-class Animation:
+class FF2Animation:
     def __init__(self, ctx, status_p):
         self.ctx = ctx
         self.status_p = status_p
@@ -1223,7 +1223,7 @@ class Animation:
         self.current_task = None
 
     def current_cell_colour(self, x, y):
-        if GRID[y][x]:
+        if FF2_GRID[y][x]:
             return FG_COLOR
         else:
             return BG_COLOR
@@ -1231,10 +1231,10 @@ class Animation:
     def draw_cell(self, x, y, colour):
         self.ctx.fillStyle = colour
         self.ctx.fillRect(
-            x * CELL_SIZE + (x + 1) * GRID_LINE_WIDTH,
-            y * CELL_SIZE + (y + 1) * GRID_LINE_WIDTH,
-            CELL_SIZE,
-            CELL_SIZE,
+            x * FF2_CELL_SIZE + (x + 1) * FF2_GRID_LINE_WIDTH,
+            y * FF2_CELL_SIZE + (y + 1) * FF2_GRID_LINE_WIDTH,
+            FF2_CELL_SIZE,
+            FF2_CELL_SIZE,
         )
 
     def reset(self):
@@ -1242,7 +1242,7 @@ class Animation:
             self.current_task.cancel()
             self.current_task = None
         self.running = False
-        draw_grid()
+        ff2_draw_grid()
         self.status_p.innerHTML = "Click an empty cell to start the floodfill."
 
     async def floodfill_from(self, start):
@@ -1267,7 +1267,7 @@ class Animation:
                     nx, ny = x + dx, y + dy
                     if nx &lt; 0 or nx &gt;= COLS or ny &lt; 0 or ny &gt;= ROWS:
                         continue
-                    if GRID[ny][nx]:
+                    if FF2_GRID[ny][nx]:
                         continue
                     if (nx, ny) in tracked:
                         continue
@@ -1289,25 +1289,25 @@ class Animation:
         if self.running:
             # do not interrupt an ongoing floodfill
             return
-        if GRID[y][x]:
+        if FF2_GRID[y][x]:
             # clicked on a wall; ignore
             return
 
         # reset grid and start from the clicked cell
-        draw_grid()
+        ff2_draw_grid()
         self.status_p.innerHTML = f"Floodfilling from ({x}, {y})."
         self.current_task = asyncio.create_task(self.floodfill_from((x, y)))
 
 # --- helpers ----------------------------------------------------------
-def canvas_coords_to_cell(x, y):
+def ff2_canvas_coords_to_cell(x, y):
     # convert canvas pixel coordinates to grid indices or return None
     # subtract initial grid line
-    x_local = x - GRID_LINE_WIDTH
-    y_local = y - GRID_LINE_WIDTH
+    x_local = x - FF2_GRID_LINE_WIDTH
+    y_local = y - FF2_GRID_LINE_WIDTH
     if x_local &lt; 0 or y_local &lt; 0:
         return None
 
-    cell_span = CELL_SIZE + GRID_LINE_WIDTH
+    cell_span = FF2_CELL_SIZE + FF2_GRID_LINE_WIDTH
 
     col, x_off = divmod(x_local, cell_span)
     row, y_off = divmod(y_local, cell_span)
@@ -1322,13 +1322,12 @@ def canvas_coords_to_cell(x, y):
     return int(col), int(row)
 
 # --- setup ------------------------------------------------------------
-canvas2 = js.document.getElementById("ff2-grid-canvas")
-status_p = js.document.getElementById("ff2-grid-status")
+ff2_canvas = js.document.getElementById("ff2-grid-canvas")
 
-animator = Animation(canvas2.getContext("2d"), status_p)
+animator2 = FF2Animation(ff2_canvas.getContext("2d"), js.document.getElementById("ff2-grid-status"))
 
-def handle_canvas_click(evt):
-    if animator.running:
+def ff2_handle_canvas_click(evt):
+    if animator2.running:
         # ignore clicks while floodfill is running
         return
 
@@ -1336,25 +1335,25 @@ def handle_canvas_click(evt):
     x = evt.clientX - rect.left
     y = evt.clientY - rect.top
 
-    cell = canvas_coords_to_cell(x, y)
+    cell = ff2_canvas_coords_to_cell(x, y)
     if cell is None:
         return
 
     cx, cy = cell
-    animator.start_from_cell(cx, cy)
+    animator2.start_from_cell(cx, cy)
 
 def handle_reset_click(evt):
-    animator.reset()
+    animator2.reset()
 
 # attach event listeners
-canvas_click_proxy = create_proxy(handle_canvas_click)
-canvas.addEventListener("click", canvas_click_proxy)
+ff2_canvas_click_proxy = create_proxy(ff2_handle_canvas_click)
+ff2_canvas.addEventListener("click", ff2_canvas_click_proxy)
 
-reset_proxy = create_proxy(handle_reset_click)
-js.document.getElementById("ff2-reset-button").addEventListener("click", reset_proxy)
+ff2_reset_proxy = create_proxy(handle_reset_click)
+js.document.getElementById("ff2-reset-button").addEventListener("click", ff2_reset_proxy)
 
 # initial draw
-draw_grid()
+ff2_draw_grid()
 </py-script>
 
 
