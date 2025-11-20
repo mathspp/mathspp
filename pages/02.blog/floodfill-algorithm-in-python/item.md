@@ -1322,10 +1322,10 @@ def canvas_coords_to_cell(x, y):
     return int(col), int(row)
 
 # --- setup ------------------------------------------------------------
-canvas = js.document.getElementById("ff2-grid-canvas")
+canvas2 = js.document.getElementById("ff2-grid-canvas")
 status_p = js.document.getElementById("ff2-grid-status")
 
-animator = Animation(canvas.getContext("2d"), status_p)
+animator = Animation(canvas2.getContext("2d"), status_p)
 
 def handle_canvas_click(evt):
     if animator.running:
