@@ -514,7 +514,7 @@ def draw_gridlines(ctx):
         )
 
 def draw_grid():
-    canvas = js.document.getElementById("ff-grid")
+    canvas = js.document.getElementById("slow-ff-grid")
     ctx = canvas.getContext("2d")
     # Ensure canvas has the correct internal size
     canvas.width = CANVAS_WIDTH
