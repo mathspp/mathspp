@@ -1499,7 +1499,6 @@ def ff3_draw_grid():
 
     ff3_draw_cells(ctx)
     ff3_draw_gridlines(ctx)
-    return ctx
 
 # --- animation --------------------------------------------------------
 class FF3Animation:
@@ -1606,10 +1605,9 @@ class FF3Animation:
 
 # --- setup ------------------------------------------------------------
 ff3_canvas = js.document.getElementById("ff3-grid-canvas")
-ctx = ff3_canvas.getContext("2d")
-ctx = ff3_draw_grid()
+ff3_draw_grid()
 
-animator3 = FF3Animation(ctx, js.document.getElementById("ff3-grid-status"))
+animator3 = FF3Animation(ff3_canvas.getContext("2d"), js.document.getElementById("ff3-grid-status"))
 
 def ff3_handle_count_click(evt):
     animator3.start_count()
