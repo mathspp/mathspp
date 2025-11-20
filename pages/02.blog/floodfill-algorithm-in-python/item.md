@@ -1579,6 +1579,11 @@ class FF3Animation:
         try:
             for col in range(FF3_COLS):
                 for row in range(FF3_ROWS):
+                    print("@@@")
+                    print(col, row)
+                    print(self.painted)
+                    print((col, row) in self.painted)
+                    print("@@@")
                     if (col, row) in self.painted or FF3_GRID[row][col]:
                         continue
                     next_start = (row, col)
@@ -1621,6 +1626,7 @@ js.document.getElementById("ff3-count-button").addEventListener("click", ff3_cou
 
 ff3_reset_proxy = create_proxy(ff3_handle_reset_click)
 js.document.getElementById("ff3-reset-button").addEventListener("click", ff3_reset_proxy)
+
 </py-script>
 
 
