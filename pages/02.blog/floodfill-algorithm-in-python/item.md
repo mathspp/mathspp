@@ -1086,3 +1086,303 @@ js.document.getElementById("autoplay").addEventListener("click", proxied_autopla
 # Initial reset
 animator._start()
 </py-script>
+
+
+## Example applications of the floodfill algorithm
+
+This section shows a couple of practical applications of the floodfill algorithm.
+
+
+### Connectedness
+
+If you have a maze, you can use the floodfill algorithm to check where the maze exit could go based on your starting point.
+All you have to do is start the floodfill algorithm at your maze entrance and then you can place an exit in any point reached by the floodfill algorithm;
+if the floodfill algorithm doesn't reach a certain point, the exit can't go there.
+
+Click any empty cell of the maze below and see what portion of the maze you can fill.
+For example, if you start in the bottom left of the maze, can you go all the way up to the top right corner of the maze?
+
+```
+
+```
+
+<p id="ff2-grid-legend">
+  <span style="color: var(--accent);">█</span> processed;&nbsp;
+  <span style="color: var(--accent-2);">█</span> queued
+</p>
+
+<canvas id="ff2-grid-canvas" width="690" height="438" style="display: block; margin: 0 auto;"></canvas>
+
+<p id="ff2-grid-status">Click an empty cell to start the floodfill.</p>
+
+<div style="display:flex; justify-content:center; gap: 1em;">
+  <button id="ff2-reset-button" class="button">Reset</button>
+</div>
+
+<script>
+  set_canvas_loading(document.getElementById("ff2-grid-canvas"))
+</script>
+
+<py-script>
+import asyncio
+
+import js
+from pyodide.ffi import create_proxy
+
+# --- configuration ----------------------------------------------------
+CELL_SIZE = 20
+GRID_LINE_WIDTH = 2
+GRID = [
+    [0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0],
+    [0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0],
+    [0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0],
+    [1,1,1,1,0,1,1,1,0,1,1,1,1,1,0,1,1,1,0,1,0],
+    [0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0],
+    [0,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,0,1,1,1],
+    [0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0],
+    [0,1,0,1,1,1,1,1,0,1,1,1,1,0,1,0,1,1,1,1,0],
+    [0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0],
+    [0,1,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,0,0,1,0],
+]
+
+ROWS = len(GRID)
+COLS = len(GRID[0])
+
+CANVAS_WIDTH = COLS * CELL_SIZE + (COLS + 1) * GRID_LINE_WIDTH
+CANVAS_HEIGHT = ROWS * CELL_SIZE + (ROWS + 1) * GRID_LINE_WIDTH
+
+# Read CSS custom properties from :root
+root = js.document.documentElement
+computed = js.window.getComputedStyle(root)
+
+BG_COLOR = computed.getPropertyValue("--bg").strip()
+FG_COLOR = computed.getPropertyValue("--tx").strip()
+UI_COLOR = computed.getPropertyValue("--ui").strip()
+AC_COLOR = computed.getPropertyValue("--accent").strip()
+AC2_COLOR = computed.getPropertyValue("--accent-2").strip()
+CONTRAST = {
+    BG_COLOR: FG_COLOR,
+    FG_COLOR: BG_COLOR,
+    UI_COLOR: FG_COLOR,
+    AC_COLOR: FG_COLOR,
+    AC2_COLOR: FG_COLOR,
+}
+
+# --- drawing helpers --------------------------------------------------
+def draw_cells(ctx):
+    for row in range(ROWS):
+        for col in range(COLS):
+            value = GRID[row][col]
+            color = BG_COLOR if value == 0 else FG_COLOR
+            ctx.fillStyle = color
+            ctx.fillRect(
+                col * CELL_SIZE + (col + 1) * GRID_LINE_WIDTH,
+                row * CELL_SIZE + (row + 1) * GRID_LINE_WIDTH,
+                CELL_SIZE,
+                CELL_SIZE,
+            )
+
+def draw_gridlines(ctx):
+    ctx.lineWidth = GRID_LINE_WIDTH
+    ctx.fillStyle = UI_COLOR
+
+    for c in range(COLS + 2):
+        x = c * (CELL_SIZE + GRID_LINE_WIDTH)
+        ctx.fillRect(
+            x,
+            0,
+            GRID_LINE_WIDTH,
+            CANVAS_HEIGHT,
+        )
+
+    for r in range(ROWS + 2):
+        y = r * (CELL_SIZE + GRID_LINE_WIDTH)
+        ctx.fillRect(
+            0,
+            y,
+            CANVAS_WIDTH,
+            GRID_LINE_WIDTH,
+        )
+
+def draw_grid():
+    canvas = js.document.getElementById("ff2-grid-canvas")
+    ctx = canvas.getContext("2d")
+    canvas.width = CANVAS_WIDTH
+    canvas.height = CANVAS_HEIGHT
+
+    draw_cells(ctx)
+    draw_gridlines(ctx)
+
+# --- animation --------------------------------------------------------
+class Animation:
+    def __init__(self, ctx, status_p):
+        self.ctx = ctx
+        self.status_p = status_p
+        self.running = False
+        self.current_task = None
+
+    def current_cell_colour(self, x, y):
+        if GRID[y][x]:
+            return FG_COLOR
+        else:
+            return BG_COLOR
+
+    def mark_cell(self, x, y, radius_factor=3/10):
+        cell_colour = self.current_cell_colour(x, y)
+        self.ctx.strokeStyle = CONTRAST[cell_colour]
+        cx = x * CELL_SIZE + (x + 1) * GRID_LINE_WIDTH + CELL_SIZE // 2
+        cy = y * CELL_SIZE + (y + 1) * GRID_LINE_WIDTH + CELL_SIZE // 2
+        self.ctx.beginPath()
+        self.ctx.arc(cx, cy, int(radius_factor * CELL_SIZE), 0, 2 * js.Math.PI)
+        self.ctx.stroke()
+
+    def mark_cell_x(self, x, y):
+        self.ctx.beginPath()
+        self.ctx.strokeStyle = CONTRAST[self.current_cell_colour(x, y)]
+        xl = x * CELL_SIZE + (x + 1) * GRID_LINE_WIDTH + CELL_SIZE // 4
+        xr = x * CELL_SIZE + (x + 1) * GRID_LINE_WIDTH + CELL_SIZE // 4 * 3
+        yt = y * CELL_SIZE + (y + 1) * GRID_LINE_WIDTH + CELL_SIZE // 4
+        yb = y * CELL_SIZE + (y + 1) * GRID_LINE_WIDTH + CELL_SIZE // 4 * 3
+        self.ctx.moveTo(xl, yt)
+        self.ctx.lineTo(xr, yb)
+        self.ctx.stroke()
+        self.ctx.moveTo(xl, yb)
+        self.ctx.lineTo(xr, yt)
+        self.ctx.stroke()
+
+    def draw_cell(self, x, y, colour):
+        self.ctx.fillStyle = colour
+        self.ctx.fillRect(
+            x * CELL_SIZE + (x + 1) * GRID_LINE_WIDTH,
+            y * CELL_SIZE + (y + 1) * GRID_LINE_WIDTH,
+            CELL_SIZE,
+            CELL_SIZE,
+        )
+
+    def reset(self):
+        if self.current_task is not None:
+            self.current_task.cancel()
+            self.current_task = None
+        self.running = False
+        draw_grid()
+        self.status_p.innerHTML = "Click an empty cell to start the floodfill."
+
+    async def floodfill_from(self, start):
+        self.running = True
+        try:
+            neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
+            stack = [start]
+            tracked = {start}
+
+            sx, sy = start
+            # start cell as queued
+            self.draw_cell(sx, sy, AC2_COLOR)
+
+            while stack:
+                x, y = stack.pop()
+
+                # mark as being processed
+                self.draw_cell(x, y, AC_COLOR)
+                self.mark_cell_x(x, y)
+                await asyncio.sleep(0.1)
+
+                for dx, dy in neighbour_offsets:
+                    nx, ny = x + dx, y + dy
+                    if nx < 0 or nx >= COLS or ny < 0 or ny >= ROWS:
+                        continue
+                    if GRID[ny][nx]:
+                        continue
+                    if (nx, ny) in tracked:
+                        continue
+
+                    tracked.add((nx, ny))
+                    stack.append((nx, ny))
+                    # queued cell
+                    self.draw_cell(nx, ny, AC2_COLOR)
+
+                await asyncio.sleep(0.05)
+        except asyncio.CancelledError:
+            pass
+        finally:
+            self.running = False
+            self.current_task = None
+            self.status_p.innerHTML = "Floodfill finished. Click an empty cell or Reset."
+
+    def start_from_cell(self, x, y):
+        if self.running:
+            # do not interrupt an ongoing floodfill
+            return
+        if GRID[y][x]:
+            # clicked on a wall; ignore
+            return
+
+        # reset grid and start from the clicked cell
+        draw_grid()
+        self.status_p.innerHTML = f"Floodfilling from ({x}, {y})."
+        self.current_task = asyncio.create_task(self.floodfill_from((x, y)))
+
+# --- helpers ----------------------------------------------------------
+def canvas_coords_to_cell(x, y):
+    # convert canvas pixel coordinates to grid indices or return None
+    # subtract initial grid line
+    x_local = x - GRID_LINE_WIDTH
+    y_local = y - GRID_LINE_WIDTH
+    if x_local < 0 or y_local < 0:
+        return None
+
+    cell_span = CELL_SIZE + GRID_LINE_WIDTH
+
+    col, x_off = divmod(x_local, cell_span)
+    row, y_off = divmod(y_local, cell_span)
+
+    if col < 0 or col >= COLS or row < 0 or row >= ROWS:
+        return None
+
+    # ignore clicks on grid lines
+    if x_off >= CELL_SIZE or y_off >= CELL_SIZE:
+        return None
+
+    return int(col), int(row)
+
+# --- setup ------------------------------------------------------------
+canvas = js.document.getElementById("ff2-grid-canvas")
+status_p = js.document.getElementById("ff2-grid-status")
+
+animator = Animation(canvas.getContext("2d"), status_p)
+
+def handle_canvas_click(evt):
+    if animator.running:
+        # ignore clicks while floodfill is running
+        return
+
+    rect = evt.target.getBoundingClientRect()
+    x = evt.clientX - rect.left
+    y = evt.clientY - rect.top
+
+    cell = canvas_coords_to_cell(x, y)
+    if cell is None:
+        return
+
+    cx, cy = cell
+    animator.start_from_cell(cx, cy)
+
+def handle_reset_click(evt):
+    animator.reset()
+
+# attach event listeners
+canvas_click_proxy = create_proxy(handle_canvas_click)
+canvas.addEventListener("click", canvas_click_proxy)
+
+reset_proxy = create_proxy(handle_reset_click)
+js.document.getElementById("ff2-reset-button").addEventListener("click", reset_proxy)
+
+# initial draw
+draw_grid()
+</py-script>
+
+
+### Counting regions
+
+### Spreading
+
+### Connectedness
