@@ -513,7 +513,7 @@ def draw_gridlines(ctx):
             GRID_LINE_WIDTH,
         )
 
-def draw_grid():
+def draw_grid1():
     canvas = js.document.getElementById("slow-ff-grid")
     ctx = canvas.getContext("2d")
     # Ensure canvas has the correct internal size
@@ -586,7 +586,7 @@ class Animation:
         self._start()
 
     def _start(self):
-        draw_grid()
+        draw_grid1()
         self.status_p.innerHTML = "Starting the floodfill algorithm from the centre square. Press “Next”."
         self.painted = set()
         self.to_paint = [START]
