@@ -1131,13 +1131,13 @@ FF2_CELL_SIZE = 20
 FF2_GRID_LINE_WIDTH = 2
 FF2_GRID = [
     [1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0],
-    [0,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,0,1,0],
+    [1,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,0,1,0],
     [0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,1,0,0,0,1,0,0,0,0,1,0,0,0],
     [1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1],
     [0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0],
     [0,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1],
     [0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0],
-    [1,0,1,1,1,0,0,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1],
+    [1,0,1,1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1],
     [0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0],
     [0,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1],
     [0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0],
@@ -1378,7 +1378,7 @@ In order to achieve this,
 <p id="ff3-grid-legend">
   <span style="color: var(--accent);">█</span> processed;&nbsp;
   <span style="color: var(--accent-2);">█</span> queued;&nbsp;
-  <span style="color: var(--re);">█</span><span style="color: var(--bl);">█</span><span style="color: var(--gr);">█</span><span style="color: var(--or);">█</span> disconnected regions
+  <span style="color: var(--re);">█</span><span style="color: var(--bl);">█</span><span style="color: var(--gr);">█</span><span style="color: var(--ye);">█</span><span style="color: var(--or);">█</span> regions
 </p>
 
 <canvas id="ff3-grid-canvas" width="464" height="222" style="display: block; margin: 0 auto;"></canvas>
@@ -1406,13 +1406,13 @@ FF3_CELL_SIZE = 20
 FF3_GRID_LINE_WIDTH = 2
 FF3_GRID = [
     [1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0],
-    [0,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,0,1,0],
+    [1,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,0,1,0],
     [0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,1,0,0,0,1,0,0,0,0,1,0,0,0],
     [1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1],
     [0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0],
     [0,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1],
     [0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0],
-    [1,0,1,1,1,0,0,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1],
+    [1,0,1,1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1],
     [0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0],
     [0,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1],
     [0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0],
@@ -1439,6 +1439,7 @@ AC2_COLOR = computed.getPropertyValue("--accent-2").strip()
 RE_COLOR = computed.getPropertyValue("--re").strip()
 BL_COLOR = computed.getPropertyValue("--bl").strip()
 GR_COLOR = computed.getPropertyValue("--gr").strip()
+YE_COLOR = computed.getPropertyValue("--ye").strip()
 OR_COLOR = computed.getPropertyValue("--or").strip()
 
 CONTRAST = {
@@ -1450,10 +1451,11 @@ CONTRAST = {
     RE_COLOR: FG_COLOR,
     BL_COLOR: FG_COLOR,
     GR_COLOR: FG_COLOR,
+    YE_COLOR: FG_COLOR,
     OR_COLOR: FG_COLOR,
 }
 
-REGION_COLOURS = itertools.cycle([RE_COLOR, BL_COLOR, GR_COLOR, OR_COLOR])
+REGION_COLOURS = itertools.cycle([RE_COLOR, BL_COLOR, GR_COLOR, YE_COLOR, OR_COLOR])
 
 # --- drawing helpers --------------------------------------------------
 def ff3_draw_cells(ctx):
