@@ -1579,7 +1579,7 @@ class FF3Animation:
         try:
             for col in range(FF3_COLS):
                 for row in range(FF3_ROWS):
-                    if (col, row) in self.painted:
+                    if (col, row) in self.painted or FF3_GRID[row][col]:
                         continue
                     next_start = (row, col)
                     self.region_count += 1
