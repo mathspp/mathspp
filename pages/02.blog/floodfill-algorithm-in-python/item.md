@@ -686,22 +686,22 @@ class Animation:
             self.clear_cell(tx, ty)
         yield f"We're done because there are no more cells to paint!"
 
-animator = Animation(
+animator1 = Animation(
     js.document.getElementById("slow-ff-grid").getContext("2d"),
     js.document.getElementById("slow-ff-grid-status"),
 )
 
-proxied_start = create_proxy(animator.start)
+proxied_start = create_proxy(animator1.start)
 js.document.getElementById("slow-reset").addEventListener("click", proxied_start)
 
-proxied_animation_step = create_proxy(lambda evt: animator.animation_step())
+proxied_animation_step = create_proxy(lambda evt: animator1.animation_step())
 js.document.getElementById("slow-next").addEventListener("click", proxied_animation_step)
 
-proxied_autoplay = create_proxy(animator.autoplay)
+proxied_autoplay = create_proxy(animator1.autoplay)
 js.document.getElementById("slow-autoplay").addEventListener("click", proxied_autoplay)
 
 # Initial reset
-animator._start()
+animator1._start()
 </py-script>
 
 
