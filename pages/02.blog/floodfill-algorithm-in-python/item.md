@@ -591,7 +591,7 @@ class Animation:
         self.painted = {}
         self.to_paint = [START]
         self.draw_cell(*START, AC2_COLOR)
-        self.sync_tracked()
+        self.sync_painted()
         self.sync_to_paint()
         self.animation_ff = self.floodfill()
 
