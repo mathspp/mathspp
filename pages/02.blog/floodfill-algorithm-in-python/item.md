@@ -1093,7 +1093,7 @@ animator._start()
 This section shows a couple of practical applications of the floodfill algorithm.
 
 
-### Connectedness
+### Is a maze solvable?
 
 If you have a maze, you can use the floodfill algorithm to check where the maze exit could go based on your starting point.
 All you have to do is start the floodfill algorithm at your maze entrance and then you can place an exit in any point reached by the floodfill algorithm;
@@ -1356,8 +1356,300 @@ js.document.getElementById("ff2-reset-button").addEventListener("click", ff2_res
 ff2_draw_grid()
 </py-script>
 
+I love mazes, but checking if a maze is solvable isn't your typical programmer task.
+But the maze is just a simple way of understanding this application of the floodfill algorithm.
+Instead of checking if a maze is solvable, you can apply this algorithm in the same way to check if you can go from one place to another in your city by bus:
+your “cells” are bus stops and the “neighbours” of a bus stop are all the stops you can get to by taking a bus there.
 
-### Counting regions
+
+### Counting disconnected regions
+
+The maze above isn't fully connected.
+Starting from the bottom left corner of the maze, there are some corridors you can't get to...
+But how many such regions are there?
+
+With a bit of effort, you may conclude that there are 4 independent regions.
+But how can you use the floodfill algorithm to figure that out?
+What if instead of a small maze, you had a huge grid and you didn't want to count the regions by hand?
+
+In order to achieve this, 
+
+
+<p id="ff3-grid-legend">
+  <span style="color: var(--accent);">█</span> processed;&nbsp;
+  <span style="color: var(--accent-2);">█</span> queued;&nbsp;
+  <span style="color: var(--re);">█</span> region 1;&nbsp;
+  <span style="color: var(--bl);">█</span> region 2;&nbsp;
+  <span style="color: var(--gr);">█</span> region 3;&nbsp;
+  <span style="color: var(--or);">█</span> region 4
+</p>
+
+<canvas id="ff3-grid-canvas" width="464" height="222" style="display: block; margin: 0 auto;"></canvas>
+
+<p id="ff3-grid-status">Click “Count regions” to start the demo.</p>
+
+<div style="display:flex; justify-content:center; gap: 1em;">
+  <button id="ff3-count-button" class="button">Count regions</button>
+  <button id="ff3-reset-button" class="button">Reset</button>
+</div>
+
+<script>
+  set_canvas_loading(document.getElementById("ff3-grid-canvas"))
+</script>
+
+<py-script>
+import asyncio
+
+import js
+from pyodide.ffi import create_proxy
+
+# --- configuration ----------------------------------------------------
+FF3_CELL_SIZE = 20
+FF3_GRID_LINE_WIDTH = 2
+FF3_GRID = [
+    [1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0],
+    [0,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,0,1,0],
+    [0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,1,0,0,0,1,0,0,0,0,1,0,0,0],
+    [1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1],
+    [0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0],
+    [0,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1],
+    [0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0],
+    [1,0,1,1,1,0,0,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1],
+    [0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0],
+    [0,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1],
+    [0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0],
+    [1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1],
+    [0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0],
+    [0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1],
+]
+
+FF3_ROWS = len(FF3_GRID)
+FF3_COLS = len(FF3_GRID[0])
+
+FF3_CANVAS_WIDTH = FF3_COLS * FF3_CELL_SIZE + (FF3_COLS + 1) * FF3_GRID_LINE_WIDTH
+FF3_CANVAS_HEIGHT = FF3_ROWS * FF3_CELL_SIZE + (FF3_ROWS + 1) * FF3_GRID_LINE_WIDTH
+
+# Read CSS custom properties from :root
+root = js.document.documentElement
+computed = js.window.getComputedStyle(root)
+
+BG_COLOR = computed.getPropertyValue("--bg").strip()
+FG_COLOR = computed.getPropertyValue("--tx").strip()
+UI_COLOR = computed.getPropertyValue("--ui").strip()
+AC_COLOR = computed.getPropertyValue("--accent").strip()
+AC2_COLOR = computed.getPropertyValue("--accent-2").strip()
+RE_COLOR = computed.getPropertyValue("--re").strip()
+BL_COLOR = computed.getPropertyValue("--bl").strip()
+GR_COLOR = computed.getPropertyValue("--gr").strip()
+OR_COLOR = computed.getPropertyValue("--or").strip()
+
+CONTRAST = {
+    BG_COLOR: FG_COLOR,
+    FG_COLOR: BG_COLOR,
+    UI_COLOR: FG_COLOR,
+    AC_COLOR: FG_COLOR,
+    AC2_COLOR: FG_COLOR,
+    RE_COLOR: FG_COLOR,
+    BL_COLOR: FG_COLOR,
+    GR_COLOR: FG_COLOR,
+    OR_COLOR: FG_COLOR,
+}
+
+REGION_COLOURS = [RE_COLOR, BL_COLOR, GR_COLOR, OR_COLOR]
+
+# --- drawing helpers --------------------------------------------------
+def ff3_draw_cells(ctx):
+    for row in range(FF3_ROWS):
+        for col in range(FF3_COLS):
+            value = FF3_GRID[row][col]
+            color = FG_COLOR if value else BG_COLOR
+            ctx.fillStyle = color
+            ctx.fillRect(
+                col * FF3_CELL_SIZE + (col + 1) * FF3_GRID_LINE_WIDTH,
+                row * FF3_CELL_SIZE + (row + 1) * FF3_GRID_LINE_WIDTH,
+                FF3_CELL_SIZE,
+                FF3_CELL_SIZE,
+            )
+
+def ff3_draw_gridlines(ctx):
+    ctx.lineWidth = FF3_GRID_LINE_WIDTH
+    ctx.fillStyle = UI_COLOR
+
+    for c in range(FF3_COLS + 2):
+        x = c * (FF3_CELL_SIZE + FF3_GRID_LINE_WIDTH)
+        ctx.fillRect(
+            x,
+            0,
+            FF3_GRID_LINE_WIDTH,
+            FF3_CANVAS_HEIGHT,
+        )
+
+    for r in range(FF3_ROWS + 2):
+        y = r * (FF3_CELL_SIZE + FF3_GRID_LINE_WIDTH)
+        ctx.fillRect(
+            0,
+            y,
+            FF3_CANVAS_WIDTH,
+            FF3_GRID_LINE_WIDTH,
+        )
+
+def ff3_draw_grid():
+    canvas = js.document.getElementById("ff3-grid-canvas")
+    ctx = canvas.getContext("2d")
+    canvas.width = FF3_CANVAS_WIDTH
+    canvas.height = FF3_CANVAS_HEIGHT
+
+    ff3_draw_cells(ctx)
+    ff3_draw_gridlines(ctx)
+    return ctx
+
+# --- animation --------------------------------------------------------
+class FF3Animation:
+    def __init__(self, ctx, status_p):
+        self.ctx = ctx
+        self.status_p = status_p
+        self.running = False
+        self.current_task = None
+        self.painted = set()  # cells already assigned to a region
+        self.region_count = 0
+
+    def draw_cell(self, x, y, colour):
+        self.ctx.fillStyle = colour
+        self.ctx.fillRect(
+            x * FF3_CELL_SIZE + (x + 1) * FF3_GRID_LINE_WIDTH,
+            y * FF3_CELL_SIZE + (y + 1) * FF3_GRID_LINE_WIDTH,
+            FF3_CELL_SIZE,
+            FF3_CELL_SIZE,
+        )
+
+    def reset(self):
+        if self.current_task is not None:
+            self.current_task.cancel()
+            self.current_task = None
+        self.running = False
+        self.painted.clear()
+        self.region_count = 0
+        ff3_draw_grid()
+        self.status_p.innerHTML = "Click “Count regions” to start the demo."
+
+    async def floodfill_region(self, start, region_colour):
+        neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
+        stack = [start]
+        tracked = {start}
+        region_cells = {start}
+
+        sx, sy = start
+        base_value = FF3_GRID[sy][sx]
+
+        # start cell as queued (pink-ish)
+        self.draw_cell(sx, sy, AC2_COLOR)
+
+        while stack:
+            x, y = stack.pop()
+
+            # mark as being processed
+            self.draw_cell(x, y, AC_COLOR)
+            await asyncio.sleep(0.05)
+
+            for dx, dy in neighbour_offsets:
+                nx, ny = x + dx, y + dy
+                if nx < 0 or nx >= FF3_COLS or ny < 0 or ny >= FF3_ROWS:
+                    continue
+                if (nx, ny) in tracked or (nx, ny) in self.painted:
+                    continue
+                if FF3_GRID[ny][nx] != base_value:
+                    continue
+
+                tracked.add((nx, ny))
+                stack.append((nx, ny))
+                region_cells.add((nx, ny))
+                # queued cell
+                self.draw_cell(nx, ny, AC2_COLOR)
+
+            await asyncio.sleep(0.02)
+
+        # repaint region cells with region colour, except the starting cell
+        for (x, y) in region_cells:
+            if (x, y) == start:
+                continue
+            self.draw_cell(x, y, region_colour)
+
+        # mark all cells as painted (including the start cell)
+        self.painted.update(region_cells)
+
+    async def run_all_regions(self):
+        self.running = True
+        self.painted.clear()
+        self.region_count = 0
+        ff3_draw_grid()
+
+        try:
+            # first region: explicitly start at top-left corner (0, 0)
+            start = (0, 0)
+            self.region_count += 1
+            region_colour = REGION_COLOURS[(self.region_count - 1) % len(REGION_COLOURS)]
+            self.status_p.innerHTML = f"Region {self.region_count}: starting at {start}."
+            await self.floodfill_region(start, region_colour)
+            await asyncio.sleep(0.1)
+
+            # subsequent regions: right-to-left, top-to-bottom over all cells
+            while True:
+                next_start = None
+                for row in range(FF3_ROWS):
+                    for col in range(FF3_COLS - 1, -1, -1):
+                        if (col, row) in self.painted:
+                            continue
+                        next_start = (col, row)
+                        break
+                    if next_start is not None:
+                        break
+
+                if next_start is None:
+                    break  # whole grid covered
+
+                self.region_count += 1
+                region_colour = REGION_COLOURS[(self.region_count - 1) % len(REGION_COLOURS)]
+                self.status_p.innerHTML = (
+                    f"Region {self.region_count}: starting at {next_start}."
+                )
+                await self.floodfill_region(next_start, region_colour)
+                await asyncio.sleep(0.1)
+
+            self.status_p.innerHTML = f"Finished. {self.region_count} regions."
+        except asyncio.CancelledError:
+            self.status_p.innerHTML = "Cancelled."
+        finally:
+            self.running = False
+            self.current_task = None
+
+    def start_count(self):
+        if self.running:
+            return
+        self.status_p.innerHTML = "Running region floodfills..."
+        self.current_task = asyncio.create_task(self.run_all_regions())
+
+# --- setup ------------------------------------------------------------
+ff3_canvas = js.document.getElementById("ff3-grid-canvas")
+ctx = ff3_canvas.getContext("2d")
+ctx = ff3_draw_grid()
+
+animator3 = FF3Animation(ctx, js.document.getElementById("ff3-grid-status"))
+
+def ff3_handle_count_click(evt):
+    animator3.start_count()
+
+def ff3_handle_reset_click(evt):
+    animator3.reset()
+
+# attach event listeners
+ff3_count_proxy = create_proxy(ff3_handle_count_click)
+js.document.getElementById("ff3-count-button").addEventListener("click", ff3_count_proxy)
+
+ff3_reset_proxy = create_proxy(ff3_handle_reset_click)
+js.document.getElementById("ff3-reset-button").addEventListener("click", ff3_reset_proxy)
+</py-script>
+
+
 
 ### Spreading
 
