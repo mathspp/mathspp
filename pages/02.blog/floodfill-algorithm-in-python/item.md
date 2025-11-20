@@ -1265,7 +1265,7 @@ class FF2Animation:
 
                 for dx, dy in neighbour_offsets:
                     nx, ny = x + dx, y + dy
-                    if nx &lt; 0 or nx &gt;= COLS or ny &lt; 0 or ny &gt;= ROWS:
+                    if nx &lt; 0 or nx &gt;= FF2_COLS or ny &lt; 0 or ny &gt;= FF2_ROWS:
                         continue
                     if FF2_GRID[ny][nx]:
                         continue
@@ -1312,11 +1312,11 @@ def ff2_canvas_coords_to_cell(x, y):
     col, x_off = divmod(x_local, cell_span)
     row, y_off = divmod(y_local, cell_span)
 
-    if col &lt; 0 or col &gt;= COLS or row &lt; 0 or row &gt;= ROWS:
+    if col &lt; 0 or col &gt;= FF2_COLS or row &lt; 0 or row &gt;= FF2_ROWS:
         return None
 
     # ignore clicks on grid lines
-    if x_off &gt;= CELL_SIZE or y_off &gt;= CELL_SIZE:
+    if x_off &gt;= FF2_CELL_SIZE or y_off &gt;= FF2_CELL_SIZE:
         return None
 
     return int(col), int(row)
