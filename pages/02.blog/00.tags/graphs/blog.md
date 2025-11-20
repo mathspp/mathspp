@@ -29,8 +29,8 @@ title: "Graphs blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">8</th>
-            <th style="text-align: center;">11,147</th>
-            <th style="text-align: center;">395</th>
+            <th style="text-align: center;">12,152</th>
+            <th style="text-align: center;">394</th>
         </tr>
     </thead>
     <tbody>

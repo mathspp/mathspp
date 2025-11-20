@@ -192,12 +192,12 @@ And the floodfill algorithm is the algorithm that allows you to implement this b
 ## Understanding the floodfill algorithm
 
 The floodfill algorithm does not have a lot of moving parts and, because it can be visualised as paint filling up a region of a drawing, it is a great stepping stone for someone looking to learn more about graph algorithms.
-Now, you'll understand how it works in the context of painting the Python logo.
+Now, you'll understand how it works and how to implement it.
 
-The algorithm will be implemented as a function `floodfill` with two arguments:
+The algorithm will be implemented as a function `floodfill` with three arguments:
 
- 1. a grid representing the locations of the walls; and
- 2. the `x` and `y` coordinates of the starting point (the place you clicked).
+ - a grid representing the locations of the walls; and
+ - the `x` and `y` coordinates of the starting point (the place you clicked).
 
 ```py
 def floodfill(walls, x, y):
@@ -390,7 +390,6 @@ def floodfill(walls, x, y):
     painted = set()
     to_paint = [(x, y)]
     while to_paint:
-        print(to_paint)
         this_pixel = to_paint.pop()
         draw_pixel(this_pixel)
         painted.add(this_pixel)
@@ -411,6 +410,300 @@ def floodfill(walls, x, y):
 
 That's it!
 This is enough to use the floodfill algorithm and this is _very_ close to what I actually used to paint the Python logo above.
+Below, you can see an interactive demo of this algorithm in action in a much smaller grid:
+
+<p>
+  <span style="color: var(--accent);">█</span><span style="color: var(--accent-2);">█</span> <code>tracked</code>;&nbsp;
+  <code id="slow-ff-grid-tracked-values"></code>
+</p>
+<p>
+  <span style="color: var(--accent-2);">█</span> <code>to_paint</code>:&nbsp;
+  <code id="slow-ff-grid-to_paint-values"></code>
+</p>
+<canvas id="slow-ff-grid" width="690" height="438" style="display: block; margin: 0 auto;"></canvas>
+<p id="slow-ff-grid-status">Starting the floodfill algorithm from the centre square. Press “Next”.</p>
+<div style="display:flex; justify-content:center; gap: 1em;">
+<button id="slow-reset" class="button">Reset</button>
+<button id="slow-next" class="button">Next</button>
+<button id="slow-autoplay" class="button">Auto-play</button>
+</div>
+
+<script>
+set_canvas_loading(document.getElementById("slow-ff-grid"))
+</script>
+
+<py-script>
+import asyncio
+
+import js
+from pyodide.ffi import create_proxy  # you'll likely use this later
+
+# --- configuration ----------------------------------------------------
+CELL_SIZE = 60
+GRID_LINE_WIDTH = 3
+GRID = [
+    [0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0],
+    [0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0],
+    [0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0],
+    [1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0],
+    [1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+    [1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+]
+START = (5, 3)
+
+ROWS = len(GRID)
+COLS = len(GRID[0])
+
+CANVAS_WIDTH = COLS * CELL_SIZE + (COLS + 1) * GRID_LINE_WIDTH
+CANVAS_HEIGHT = ROWS * CELL_SIZE + (ROWS + 1) * GRID_LINE_WIDTH
+
+# Read CSS custom properties from :root
+root = js.document.documentElement
+computed = js.window.getComputedStyle(root)
+
+BG_COLOR = computed.getPropertyValue("--bg").strip()
+FG_COLOR = computed.getPropertyValue("--tx").strip()
+UI_COLOR = computed.getPropertyValue("--ui").strip()
+AC_COLOR = computed.getPropertyValue("--accent").strip()
+AC2_COLOR = computed.getPropertyValue("--accent-2").strip()
+CONTRAST = {
+    BG_COLOR: FG_COLOR,
+    FG_COLOR: BG_COLOR,
+    UI_COLOR: FG_COLOR,
+    AC_COLOR: FG_COLOR,
+    AC2_COLOR: FG_COLOR,
+}
+
+# --- drawing helpers --------------------------------------------------
+def draw_cells(ctx):
+    for row in range(ROWS):
+        for col in range(COLS):
+            value = GRID[row][col]
+            color = BG_COLOR if value == 0 else FG_COLOR
+            ctx.fillStyle = color
+            ctx.fillRect(
+                col * CELL_SIZE + (col + 1) * GRID_LINE_WIDTH,
+                row * CELL_SIZE + (row + 1) * GRID_LINE_WIDTH,
+                CELL_SIZE,
+                CELL_SIZE,
+            )
+
+def draw_gridlines(ctx):
+    ctx.lineWidth = 3
+    ctx.fillStyle = UI_COLOR
+
+    # I'm drawing the lines as rectangles because it's easier to control
+    # the position of the corners of the “thick lines” this way.
+    for c in range(COLS + 2):
+        x = c * (CELL_SIZE + GRID_LINE_WIDTH)
+        ctx.fillRect(
+            x,
+            0,
+            GRID_LINE_WIDTH,
+            CANVAS_HEIGHT,
+        )
+
+    for r in range(ROWS + 2):
+        y = r * (CELL_SIZE + GRID_LINE_WIDTH)
+        ctx.fillRect(
+            0,
+            y,
+            CANVAS_WIDTH,
+            GRID_LINE_WIDTH,
+        )
+
+def draw_grid():
+    canvas = js.document.getElementById("ff-grid")
+    ctx = canvas.getContext("2d")
+    # Ensure canvas has the correct internal size
+    canvas.width = CANVAS_WIDTH
+    canvas.height = CANVAS_HEIGHT
+
+    draw_cells(ctx)
+    draw_gridlines(ctx)
+
+class Animation:
+    def __init__(self, ctx, status_p):
+        self.ctx = ctx
+        self.status_p = status_p
+        self.tracked = set()
+        self.to_paint = []
+        self.animation_ff = None
+        self.autoplaying = False
+        self.stop_autoplaying = asyncio.Event()
+
+    def current_cell_colour(self, x, y):
+        if GRID[y][x]:
+            return FG_COLOR
+        elif (x, y) in self.to_paint:
+            return AC2_COLOR
+        elif (x, y) in self.tracked:
+            return AC_COLOR
+        else:
+            return BG_COLOR
+
+    def mark_cell(self, x, y):
+        cell_colour = self.current_cell_colour(x, y)
+        self.ctx.strokeStyle = CONTRAST[cell_colour]
+        cx = x * CELL_SIZE + (x + 1) * GRID_LINE_WIDTH + CELL_SIZE // 2
+        cy = y * CELL_SIZE + (y + 1) * GRID_LINE_WIDTH + CELL_SIZE // 2
+        self.ctx.beginPath()
+        self.ctx.arc(cx, cy, 3 * CELL_SIZE // 10, 0, 2 * js.Math.PI)
+        self.ctx.stroke()
+
+    def mark_cell_x(self, x, y):
+        """Draw an X on top of this cell."""
+        self.ctx.beginPath()
+        self.ctx.strokeStyle = CONTRAST[self.current_cell_colour(x, y)]
+        xl = x * CELL_SIZE + (x + 1) * GRID_LINE_WIDTH + CELL_SIZE // 4
+        xr = x * CELL_SIZE + (x + 1) * GRID_LINE_WIDTH + CELL_SIZE // 4 * 3
+        yt = y * CELL_SIZE + (y + 1) * GRID_LINE_WIDTH + CELL_SIZE // 4
+        yb = y * CELL_SIZE + (y + 1) * GRID_LINE_WIDTH + CELL_SIZE // 4 * 3
+        self.ctx.moveTo(xl, yt)
+        self.ctx.lineTo(xr, yb)
+        self.ctx.stroke()
+        self.ctx.moveTo(xl, yb)
+        self.ctx.lineTo(xr, yt)
+        self.ctx.stroke()
+
+    def clear_cell(self, x, y):
+        self.draw_cell(x, y, self.current_cell_colour(x, y))
+
+    def draw_cell(self, x, y, colour):
+        self.ctx.fillStyle = colour
+        self.ctx.fillRect(
+            x * CELL_SIZE + (x + 1) * GRID_LINE_WIDTH,
+            y * CELL_SIZE + (y + 1) * GRID_LINE_WIDTH,
+            CELL_SIZE,
+            CELL_SIZE,
+        )
+
+    async def start(self, _evt):
+        if self.autoplaying:
+            self.stop_autoplaying.set()
+            await asyncio.sleep(0)  # Give the loop a chance to cancell the running autoplay
+        self._start()
+
+    def _start(self):
+        draw_grid()
+        self.status_p.innerHTML = "Starting the floodfill algorithm from the centre square. Press “Next”."
+        self.painted = {}
+        self.to_paint = [START]
+        self.draw_cell(*START, AC2_COLOR)
+        self.sync_tracked()
+        self.sync_to_paint()
+        self.animation_ff = self.floodfill()
+
+    def sync_to_paint(self):
+        elem = js.document.getElementById("ff-grid-to_paint-values")
+        elem.innerHTML = ", ".join(map(str, self.to_paint))
+
+    def sync_painted(self):
+        elem = js.document.getElementById("ff-grid-tracked-values")
+        elem.innerHTML = ", ".join(map(str, self.painted))
+
+    def animation_step(self):
+        if self.autoplaying:
+            return
+        if self.animation_ff is None:
+            self.start()
+        try:
+            msg = next(self.animation_ff)
+        except StopIteration:
+            msg = "Done"
+        self.status_p.innerHTML = msg
+        print(msg)
+
+    async def autoplay(self, _evt):
+        self.autoplaying = True
+        await self._autoplay()
+
+    async def _autoplay(self):
+        if self.animation_ff is None:
+            self.start()
+        for msg in self.animation_ff:
+            self.status_p.innerHTML = msg
+            print(msg)
+            await asyncio.wait(
+                [
+                    asyncio.create_task(asyncio.sleep(1)),
+                    asyncio.create_task(self.stop_autoplaying.wait()),
+                ],
+                return_when=asyncio.FIRST_COMPLETED,
+            )
+            if self.stop_autoplaying.is_set():
+                self.stop_autoplaying.clear()
+                self.autoplaying = False
+                break
+
+    def floodfill(self):
+        print("starting ff")
+        neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
+        neighbour_msgs = {
+            (1, 0): "Checking the cell on the right...",
+            (-1, 0): "Checking the cell on the left...",
+            (0, 1): "Checking the cell below...",
+            (0, -1): "Checking the cell above...",
+        }
+
+        while self.to_paint:
+            this_pixel = self.to_paint.pop()
+            self.painted.add(this_pixel)
+            self.sync_painted()
+            self.sync_to_paint()
+            tx, ty = this_pixel
+            self.mark_cell(tx, ty)
+            yield f"Will now process {this_pixel}."
+            self.draw_cell(tx, ty, AC_COLOR)
+            self.mark_cell_x(tx, ty)
+            yield f"The cell {this_pixel} has now been coloured. Now, we check its neighbours."
+
+            for dx, dy in neighbour_offsets:
+                nx, ny = tx + dx, ty + dy
+
+                # Produce nice message about neighbour to process.
+                if not (nx &lt; 0 or nx &gt;= COLS or ny &lt; 0 or ny &gt;= ROWS):
+                    self.mark_cell(nx, ny)
+                yield neighbour_msgs[(dx, dy)]
+
+                if nx &lt; 0 or nx &gt;= COLS or ny &lt; 0 or ny &gt;= ROWS:
+                    yield f"... oh wait, there's no cell there because the grid ends here."
+                    continue
+                elif GRID[ny][nx]:
+                    yield f"Will skip this neighbour because it's a wall!"
+                    self.clear_cell(nx, ny)
+                    continue
+
+                if (nx, ny) not in self.painted:
+                    self.to_paint.append((nx, ny))
+                    self.sync_to_paint()
+                    self.draw_cell(nx, ny, AC2_COLOR)
+                    yield f"Tracked and set neighbour to paint later."
+                else:
+                    self.clear_cell(nx, ny)
+                    yield f"Skipped because it was painted already!"
+            self.clear_cell(tx, ty)
+        yield f"We're done because there are no more cells to paint!"
+
+animator = Animation(
+    js.document.getElementById("slow-ff-grid").getContext("2d"),
+    js.document.getElementById("slow-ff-grid-status"),
+)
+
+proxied_start = create_proxy(animator.start)
+js.document.getElementById("slow-reset").addEventListener("click", proxied_start)
+
+proxied_animation_step = create_proxy(lambda evt: animator.animation_step())
+js.document.getElementById("slow-next").addEventListener("click", proxied_animation_step)
+
+proxied_autoplay = create_proxy(animator.autoplay)
+js.document.getElementById("slow-autoplay").addEventListener("click", proxied_autoplay)
+
+# Initial reset
+animator._start()
+</py-script>
+
 
 
 ## Optimising the floodfill algorithm to avoid duplicated work
