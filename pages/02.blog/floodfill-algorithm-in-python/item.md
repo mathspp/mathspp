@@ -1261,7 +1261,7 @@ class FF2Animation:
 
                 # mark as being processed
                 self.draw_cell(x, y, AC_COLOR)
-                await asyncio.sleep(0.1)
+                await asyncio.sleep(0.5)
 
                 for dx, dy in neighbour_offsets:
                     nx, ny = x + dx, y + dy
@@ -1277,7 +1277,7 @@ class FF2Animation:
                     # queued cell
                     self.draw_cell(nx, ny, AC2_COLOR)
 
-                await asyncio.sleep(0.05)
+                await asyncio.sleep(0.02)
         except asyncio.CancelledError:
             pass
         finally:
