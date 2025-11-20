@@ -410,7 +410,8 @@ def floodfill(walls, x, y):
 
 That's it!
 This is enough to use the floodfill algorithm and this is _very_ close to what I actually used to paint the Python logo above.
-Below, you can see an interactive demo of this algorithm in action in a much smaller grid:
+Below, you can see an interactive demo of this algorithm in action in a much smaller grid.
+Try clicking “next” a couple of times or hitting the “auto-play” button to see the algorithm run step by step:
 
 <p>
   <span style="color: var(--accent);">█</span><span style="color: var(--accent-2);">█</span> <code>tracked</code>;&nbsp;
@@ -627,7 +628,7 @@ class Animation:
             print(msg)
             await asyncio.wait(
                 [
-                    asyncio.create_task(asyncio.sleep(1)),
+                    asyncio.create_task(asyncio.sleep(.25)),
                     asyncio.create_task(self.stop_autoplaying.wait()),
                 ],
                 return_when=asyncio.FIRST_COMPLETED,
