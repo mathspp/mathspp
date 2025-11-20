@@ -8,7 +8,7 @@ taxonomy:
     category: review
     review-tag:
       - talk
-published: false
+published: true
 ---
 
 As a host of a Python user group, I hope to find speakers who can speak well about a topic they care about.
