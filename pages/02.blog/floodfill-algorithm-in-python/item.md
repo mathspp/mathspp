@@ -410,12 +410,12 @@ def floodfill(walls, x, y):
 
 That's it!
 This is enough to use the floodfill algorithm and this is _very_ close to what I actually used to paint the Python logo above.
-Below, you can see an interactive demo of this algorithm in action in a much smaller grid.
-Try clicking “next” a couple of times or hitting the “auto-play” button to see the algorithm run step by step:
+Below, you can find an interactive demo of this algorithm in action, which is trying to fill the centre region with pink.
+Play the algorithm step by step until you're comfortable with its behaviour and then click “auto-play” to see the pink region fill up completely...
 
 <p>
-  <span style="color: var(--accent);">█</span><span style="color: var(--accent-2);">█</span> <code>tracked</code>;&nbsp;
-  <code id="slow-ff-grid-tracked-values"></code>
+  <span style="color: var(--accent);">█</span> <code>painted</code>;&nbsp;
+  <code id="slow-ff-grid-painted-values"></code>
 </p>
 <p>
   <span style="color: var(--accent-2);">█</span> <code>to_paint</code>:&nbsp;
@@ -597,11 +597,13 @@ class Animation:
         self.animation_ff = self.floodfill()
 
     def sync_to_paint(self):
-        elem = js.document.getElementById("ff-grid-to_paint-values")
+        for x, y in self.to_paint:
+            self.draw_cell(x, y, AC2_COLOR)
+        elem = js.document.getElementById("slow-ff-grid-to_paint-values")
         elem.innerHTML = ", ".join(map(str, self.to_paint))
 
     def sync_painted(self):
-        elem = js.document.getElementById("ff-grid-tracked-values")
+        elem = js.document.getElementById("slow-ff-grid-painted-values")
         elem.innerHTML = ", ".join(map(str, self.painted))
 
     def animation_step(self):
@@ -706,11 +708,14 @@ animator1._start()
 </py-script>
 
 
+Wait, did you see that?
+Did you notice how, at the end, some of the pink cells turned purple again and you had to paint them more than once?!
+
 
 ## Optimising the floodfill algorithm to avoid duplicated work
 
 There is a key difference between the algorithm I'm using to paint the Python logo and the algorithm you just used, and it has to do with the role that the set `painted` has.
-The main objective of the set `painted` is to avoid wasting time painting the same pixel more than once, but what you _really_ want is to not waste any time whatsoever.
+The main objective of the set `painted` is to avoid wasting time painting the same pixel more than once, but that doesn't prevent the same pixel to be added to the list `to_paint` twice!
 
 If you modify the function `floodfill` to add a couple of calls to `print` and if you call it with a small grid, you will find that you can end up with duplicated points in the list `to_paint`:
 
@@ -760,7 +765,7 @@ def floodfill(walls, x, y):
     HEIGHT = len(walls)
     WIDTH = len(walls[0])
 
-    tracked = set((x, y))  # <-- The starting point starts in the set.
+    tracked = {(x, y)}  # <-- The starting point starts in the set.
     to_paint = [(x, y)]
     while to_paint:
         this_pixel = to_paint.pop()
@@ -786,7 +791,7 @@ def floodfill(walls, x, y):
 
 Hopefull you understood the prose that explains the algorithm...
 But there's nothing like seeing it in action.
-The widget below lets you step through the floodfill algorithm as it tries to paint the middle region in pink.
+The demo below lets you step through the floodfill algorithm as it tries to paint the middle region in pink.
 The cells shown in purple are cells that have been added to the list `to_paint`, but haven't been painted yet.
 
 
