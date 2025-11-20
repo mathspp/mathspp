@@ -152,6 +152,7 @@ TAG_DESCRIPTIONS:
   productivity: "Using Python, coding, and tools, to increase your productivity"
   programming: "Articles that include code in some form"
   pygame: "Articles that use the Python module pygame to create games, visualisations, and more"
+  pyscript: "Visualisations and other articles with PyScript"
   pytest: "The Python testing module Pytest"
   python: "The Python programming language, tutorials, and more"
   quiz: "Quizzes"
