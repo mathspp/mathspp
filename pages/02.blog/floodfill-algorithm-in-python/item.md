@@ -1378,10 +1378,7 @@ In order to achieve this,
 <p id="ff3-grid-legend">
   <span style="color: var(--accent);">█</span> processed;&nbsp;
   <span style="color: var(--accent-2);">█</span> queued;&nbsp;
-  <span style="color: var(--re);">█</span> region 1;&nbsp;
-  <span style="color: var(--bl);">█</span> region 2;&nbsp;
-  <span style="color: var(--gr);">█</span> region 3;&nbsp;
-  <span style="color: var(--or);">█</span> region 4
+  <span style="color: var(--re);">█</span><span style="color: var(--bl);">█</span><span style="color: var(--gr);">█</span><span style="color: var(--or);">█</span> disconnected regions
 </p>
 
 <canvas id="ff3-grid-canvas" width="464" height="222" style="display: block; margin: 0 auto;"></canvas>
@@ -1399,6 +1396,7 @@ In order to achieve this,
 
 <py-script>
 import asyncio
+import itertools
 
 import js
 from pyodide.ffi import create_proxy
@@ -1455,7 +1453,7 @@ CONTRAST = {
     OR_COLOR: FG_COLOR,
 }
 
-REGION_COLOURS = [RE_COLOR, BL_COLOR, GR_COLOR, OR_COLOR]
+REGION_COLOURS = itertools.cycle([RE_COLOR, BL_COLOR, GR_COLOR, OR_COLOR])
 
 # --- drawing helpers --------------------------------------------------
 def ff3_draw_cells(ctx):
@@ -1536,12 +1534,9 @@ class FF3Animation:
         neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
         stack = [start]
         tracked = {start}
-        region_cells = {start}
 
         sx, sy = start
-        base_value = FF3_GRID[sy][sx]
 
-        # start cell as queued (pink-ish)
         self.draw_cell(sx, sy, AC2_COLOR)
 
         while stack:
@@ -1555,27 +1550,26 @@ class FF3Animation:
                 nx, ny = x + dx, y + dy
                 if nx &lt; 0 or nx &gt;= FF3_COLS or ny &lt; 0 or ny &gt;= FF3_ROWS:
                     continue
-                if (nx, ny) in tracked or (nx, ny) in self.painted:
+                if (nx, ny) in tracked:
                     continue
-                if FF3_GRID[ny][nx] != base_value:
+                if FF3_GRID[ny][nx]:
                     continue
 
                 tracked.add((nx, ny))
                 stack.append((nx, ny))
-                region_cells.add((nx, ny))
                 # queued cell
                 self.draw_cell(nx, ny, AC2_COLOR)
 
             await asyncio.sleep(0.02)
 
         # repaint region cells with region colour, except the starting cell
-        for (x, y) in region_cells:
+        for (x, y) in tracked:
             if (x, y) == start:
                 continue
             self.draw_cell(x, y, region_colour)
 
         # mark all cells as painted (including the start cell)
-        self.painted.update(region_cells)
+        self.painted.update(tracked)
 
     async def run_all_regions(self):
         self.running = True
@@ -1584,38 +1578,20 @@ class FF3Animation:
         ff3_draw_grid()
 
         try:
-            # first region: explicitly start at top-left corner (0, 0)
-            start = (0, 0)
-            self.region_count += 1
-            region_colour = REGION_COLOURS[(self.region_count - 1) % len(REGION_COLOURS)]
-            self.status_p.innerHTML = f"Region {self.region_count}: starting at {start}."
-            await self.floodfill_region(start, region_colour)
-            await asyncio.sleep(0.1)
-
-            # subsequent regions: right-to-left, top-to-bottom over all cells
-            while True:
-                next_start = None
+            for col in range(FF3_COLS):
                 for row in range(FF3_ROWS):
-                    for col in range(FF3_COLS - 1, -1, -1):
-                        if (col, row) in self.painted:
-                            continue
-                        next_start = (col, row)
-                        break
-                    if next_start is not None:
-                        break
+                    if (col, row) in self.painted:
+                        continue
+                    next_start = (row, col)
+                    self.region_count += 1
+                    region_colour = next(REGION_COLOURS)
+                    self.status_p.innerHTML = (
+                        f"Region {self.region_count}: starting at {next_start}."
+                    )
+                    await self.floodfill_region(next_start, region_colour)
+                    await asyncio.sleep(0.1)
 
-                if next_start is None:
-                    break  # whole grid covered
-
-                self.region_count += 1
-                region_colour = REGION_COLOURS[(self.region_count - 1) % len(REGION_COLOURS)]
-                self.status_p.innerHTML = (
-                    f"Region {self.region_count}: starting at {next_start}."
-                )
-                await self.floodfill_region(next_start, region_colour)
-                await asyncio.sleep(0.1)
-
-            self.status_p.innerHTML = f"Finished. {self.region_count} regions."
+            self.status_p.innerHTML = f"Finished. Found {self.region_count} disconnected regions."
         except asyncio.CancelledError:
             self.status_p.innerHTML = "Cancelled."
         finally:
