@@ -1553,7 +1553,7 @@ class FF3Animation:
 
             for dx, dy in neighbour_offsets:
                 nx, ny = x + dx, y + dy
-                if nx < 0 or nx >= FF3_COLS or ny < 0 or ny >= FF3_ROWS:
+                if nx &lt; 0 or nx &gt;= FF3_COLS or ny &lt; 0 or ny &gt;= FF3_ROWS:
                     continue
                 if (nx, ny) in tracked or (nx, ny) in self.painted:
                     continue
