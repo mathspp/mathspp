@@ -1288,7 +1288,7 @@ class Animation:
 
                 for dx, dy in neighbour_offsets:
                     nx, ny = x + dx, y + dy
-                    if nx < 0 or nx >= COLS or ny < 0 or ny >= ROWS:
+                    if nx &lt; 0 or nx &gt;= COLS or ny &lt; 0 or ny &gt;= ROWS:
                         continue
                     if GRID[ny][nx]:
                         continue
@@ -1327,7 +1327,7 @@ def canvas_coords_to_cell(x, y):
     # subtract initial grid line
     x_local = x - GRID_LINE_WIDTH
     y_local = y - GRID_LINE_WIDTH
-    if x_local < 0 or y_local < 0:
+    if x_local &lt; 0 or y_local &lt; 0:
         return None
 
     cell_span = CELL_SIZE + GRID_LINE_WIDTH
@@ -1335,11 +1335,11 @@ def canvas_coords_to_cell(x, y):
     col, x_off = divmod(x_local, cell_span)
     row, y_off = divmod(y_local, cell_span)
 
-    if col < 0 or col >= COLS or row < 0 or row >= ROWS:
+    if col &lt; 0 or col &gt;= COLS or row &lt; 0 or row &gt;= ROWS:
         return None
 
     # ignore clicks on grid lines
-    if x_off >= CELL_SIZE or y_off >= CELL_SIZE:
+    if x_off &gt;= CELL_SIZE or y_off &gt;= CELL_SIZE:
         return None
 
     return int(col), int(row)
@@ -1378,7 +1378,7 @@ js.document.getElementById("ff2-reset-button").addEventListener("click", reset_p
 
 # initial draw
 draw_grid()
-</py-script>
+&lt;/py-script&gt;
 
 
 ### Counting regions
