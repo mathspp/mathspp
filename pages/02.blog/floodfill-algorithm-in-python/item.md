@@ -1368,12 +1368,19 @@ The maze above isn't fully connected.
 Starting from the bottom left corner of the maze, there are some corridors you can't get to...
 But how many such regions are there?
 
-With a bit of effort, you may conclude that there are 4 independent regions.
+With a bit of effort, you may conclude that there are 5 independent regions.
+Regions that are disconnected from each other.
 But how can you use the floodfill algorithm to figure that out?
 What if instead of a small maze, you had a huge grid and you didn't want to count the regions by hand?
 
-In order to achieve this, 
+In order to achieve this, you can apply the floodfill algorithm successively:
 
+ 1. start by looking for a cell that hasn't been covered yet;
+ 2. apply the floodfill algorithm from the cell found in 1 until it finishes;
+ 3. mark all cells that were filled as “covered”; and
+ 4. go back to 1 until you cover all cells.
+
+You can see this in action in the demo below:
 
 <p id="ff3-grid-legend">
   <span style="color: var(--accent);">█</span> processed;&nbsp;
@@ -1631,6 +1638,35 @@ ff3_reset_proxy = create_proxy(ff3_handle_reset_click)
 js.document.getElementById("ff3-reset-button").addEventListener("click", ff3_reset_proxy)
 </py-script>
 
+
+The code below represents this algorithm:
+
+```py
+neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
+
+def count_regions(walls):
+    HEIGHT = len(walls)
+    WIDTH = len(walls[0])
+
+    covered = set()
+    regions = 0
+    for x in range(WIDTH):
+        for y in range(HEIGHT):
+            if walls[y][x]:  # We don't care about walls.
+                continue
+            if (x, y) in covered:  # This was covered already, skip.
+                continue
+            regions += 1
+            region_cells = floodfill(walls, x, y)
+            covered.update(region_cells)
+
+    return regions
+
+def floodfill(walls, x, y):
+    # Everything else is the same...
+    # ... but you add this line:
+    return tracked  # <-- VERY IMPORTANT :D
+```
 
 
 ### Spreading
