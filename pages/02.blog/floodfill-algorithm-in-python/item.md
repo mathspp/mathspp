@@ -1669,6 +1669,25 @@ def floodfill(walls, x, y):
 ```
 
 
-### Spreading
+### Simulating a flow spreading on a surface
 
-### Connectedness
+You can also use the floodfill algorithm to create a basic simulation of a flow spreading on a surface.
+It won't be physically accurate, but it will look _pretty cool_ given the amount of effort you have to put in...
+And trust me, I did [numerical simulations for 2D and 3D flows and it's not easy](https://www.researchgate.net/publication/353654805_Fundamental_solutions_for_the_Stokes_equations_Numerical_applications_for_2D_and_3D_flows).
+
+! I'm still working on the interactive demo for this section.
+! Check back in 24 hours!
+
+
+## Conclusion
+
+This article showed you the main visual interpretation of the floodfill algorithm, as you used it to colour the Python logo in random colours.
+You saw what the algorithm looks like in code, you stepped through it, and you learned about a minor tweak you can make to the algorithm to make it much more efficient.
+
+In this article you also saw how you can use the floodfill algorithm to perform real-life tasks like
+
+ - checking whether a grid is connected or not (when you checked where you could get to inside the maze);
+ - segmenting an image (counting the number of disconnected regions in the maze); and
+ - simulating a flow spreading on a surface.
+
+This is a very important stepping stone in understanding some classical and _fundamental_ Computer Science algorithms, and I can't wait to see you apply this algorithm in your code and experiments!
