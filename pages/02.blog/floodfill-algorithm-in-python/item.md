@@ -1108,7 +1108,7 @@ For example, if you start in the bottom left of the maze, can you go all the way
   <span style="color: var(--accent-2);">█</span> queued
 </p>
 
-<canvas id="ff2-grid-canvas" width="690" height="438" style="display: block; margin: 0 auto;"></canvas>
+<canvas id="ff2-grid-canvas" width="464" height="222" style="display: block; margin: 0 auto;"></canvas>
 
 <p id="ff2-grid-status">Click an empty cell to start the floodfill.</p>
 
@@ -1130,16 +1130,20 @@ from pyodide.ffi import create_proxy
 CELL_SIZE = 20
 GRID_LINE_WIDTH = 2
 GRID = [
-    [0,1,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0],
-    [0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0],
-    [0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0],
-    [1,1,1,1,0,1,1,1,0,1,1,1,1,1,0,1,1,1,0,1,0],
-    [0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0],
-    [0,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,0,1,1,1],
-    [0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0],
-    [0,1,0,1,1,1,1,1,0,1,1,1,1,0,1,0,1,1,1,1,0],
-    [0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0],
-    [0,1,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,0,0,1,0],
+    [1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0],
+    [0,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,0,1,0,0,0],
+    [0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0],
+    [1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,0,0],
+    [0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0],
+    [0,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,0,0],
+    [0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0],
+    [1,1,1,1,1,0,0,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,0],
+    [0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0],
+    [0,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,0,0],
+    [0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0],
+    [1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,0,0],
+    [0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0],
+    [0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,0,0],
 ]
 
 ROWS = len(GRID)
@@ -1224,29 +1228,6 @@ class Animation:
         else:
             return BG_COLOR
 
-    def mark_cell(self, x, y, radius_factor=3/10):
-        cell_colour = self.current_cell_colour(x, y)
-        self.ctx.strokeStyle = CONTRAST[cell_colour]
-        cx = x * CELL_SIZE + (x + 1) * GRID_LINE_WIDTH + CELL_SIZE // 2
-        cy = y * CELL_SIZE + (y + 1) * GRID_LINE_WIDTH + CELL_SIZE // 2
-        self.ctx.beginPath()
-        self.ctx.arc(cx, cy, int(radius_factor * CELL_SIZE), 0, 2 * js.Math.PI)
-        self.ctx.stroke()
-
-    def mark_cell_x(self, x, y):
-        self.ctx.beginPath()
-        self.ctx.strokeStyle = CONTRAST[self.current_cell_colour(x, y)]
-        xl = x * CELL_SIZE + (x + 1) * GRID_LINE_WIDTH + CELL_SIZE // 4
-        xr = x * CELL_SIZE + (x + 1) * GRID_LINE_WIDTH + CELL_SIZE // 4 * 3
-        yt = y * CELL_SIZE + (y + 1) * GRID_LINE_WIDTH + CELL_SIZE // 4
-        yb = y * CELL_SIZE + (y + 1) * GRID_LINE_WIDTH + CELL_SIZE // 4 * 3
-        self.ctx.moveTo(xl, yt)
-        self.ctx.lineTo(xr, yb)
-        self.ctx.stroke()
-        self.ctx.moveTo(xl, yb)
-        self.ctx.lineTo(xr, yt)
-        self.ctx.stroke()
-
     def draw_cell(self, x, y, colour):
         self.ctx.fillStyle = colour
         self.ctx.fillRect(
@@ -1280,7 +1261,6 @@ class Animation:
 
                 # mark as being processed
                 self.draw_cell(x, y, AC_COLOR)
-                self.mark_cell_x(x, y)
                 await asyncio.sleep(0.1)
 
                 for dx, dy in neighbour_offsets:
@@ -1303,7 +1283,7 @@ class Animation:
         finally:
             self.running = False
             self.current_task = None
-            self.status_p.innerHTML = "Floodfill finished. Click an empty cell or Reset."
+            self.status_p.innerHTML = "Floodfill finished. Click any cell or Reset."
 
     def start_from_cell(self, x, y):
         if self.running:
