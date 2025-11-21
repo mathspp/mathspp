@@ -1758,6 +1758,8 @@ def ff4_draw_grid():
     ff4_draw_cells(ctx)
     ff4_draw_gridlines(ctx)
     ff4_draw_cell(ctx, 1, 0, AC2_COLOUR)
+
+ff4_draw_grid()
 </py-script>
 
 
