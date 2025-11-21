@@ -6,6 +6,8 @@ Learn how to implement and use the floodfill algorithm in Python.
 <script defer type="module" src="https://pyscript.net/releases/2025.11.1/core.js"></script>
 
 <py-script>
+import js
+
 root = js.document.documentElement
 computed = js.window.getComputedStyle(root)
 
