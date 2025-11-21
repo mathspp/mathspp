@@ -3718,7 +3718,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/deep-unpacking": {
-    "timestamp": 1763767135.7251773,
+    "timestamp": 1763767230.752193,
     "tags": [
       "programming",
       "python"
@@ -6137,7 +6137,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/floodfill-algorithm-in-python": {
-    "timestamp": 1763767120.5648863,
+    "timestamp": 1763767228.0611517,
     "tags": [
       "python",
       "programming",
@@ -6150,7 +6150,7 @@
       "articles": 1,
       "code_snippets": 16,
       "loc": 237,
-      "words": 7251
+      "words": 7263
     }
   }
 }
