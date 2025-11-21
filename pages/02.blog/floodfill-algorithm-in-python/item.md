@@ -1960,6 +1960,7 @@ class FF7Animation:
                         continue
                     next_fringe.add((nx, ny))
 
+            tracked.update(next_fringe)
             for cell in next_fringe:
                 self.draw_cell(*cell, AC2_COLOR)
 
