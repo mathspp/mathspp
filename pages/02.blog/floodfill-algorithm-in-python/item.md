@@ -1757,9 +1757,36 @@ def ff4_draw_grid():
 
     ff4_draw_cells(ctx)
     ff4_draw_gridlines(ctx)
-    ff4_draw_cell(ctx, 1, 0, AC2_COLOUR)
+    ff4_draw_cell(ctx, 1, 0, AC2_COLOR)
 
 ff4_draw_grid()
+</py-script>
+<br />
+
+Then, you expand the fringe to include all points that are the neighbours of the previous point:
+
+
+<p>
+  <span style="color: var(--accent);">█</span> processed <code>(1, 0)</code>;&nbsp;
+  <span style="color: var(--accent-2);">█</span> fringe: <code>(0, 0), (2, 0), (1, 1)</code>
+</p>
+<canvas id="ff5-grid-canvas" width="381" height="255" style="display: block; margin: 0 auto;"></canvas>
+
+<py-script>
+def ff5_draw_grid():
+    canvas = js.document.getElementById("ff5-grid-canvas")
+    ctx = canvas.getContext("2d")
+    canvas.width = FF4_CANVAS_WIDTH
+    canvas.height = FF4_CANVAS_HEIGHT
+
+    ff4_draw_cells(ctx)
+    ff4_draw_gridlines(ctx)
+    ff4_draw_cell(ctx, 1, 0, AC_COLOR)
+    ff4_draw_cell(ctx, 0, 0, AC2_COLOR)
+    ff4_draw_cell(ctx, 2, 0, AC2_COLOR)
+    ff4_draw_cell(ctx, 1, 1, AC2_COLOR)
+
+ff5_draw_grid()
 </py-script>
 
 
