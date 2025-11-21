@@ -29,8 +29,8 @@ title: "Algorithms blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">26</th>
-            <th style="text-align: center;">35,285</th>
-            <th style="text-align: center;">3,197</th>
+            <th style="text-align: center;">35,545</th>
+            <th style="text-align: center;">3,229</th>
         </tr>
     </thead>
     <tbody>

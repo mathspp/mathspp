@@ -29,8 +29,8 @@ title: "Pyscript blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">1</th>
-            <th style="text-align: center;">6,814</th>
-            <th style="text-align: center;">205</th>
+            <th style="text-align: center;">7,074</th>
+            <th style="text-align: center;">237</th>
         </tr>
     </thead>
     <tbody>

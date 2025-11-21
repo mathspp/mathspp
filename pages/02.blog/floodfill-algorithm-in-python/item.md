@@ -5,6 +5,11 @@ Learn how to implement and use the floodfill algorithm in Python.
 <link rel="stylesheet" href="https://pyscript.net/releases/2025.11.1/core.css" />
 <script defer type="module" src="https://pyscript.net/releases/2025.11.1/core.js"></script>
 
+In this article you will learn about the floodfill algorithm.
+You will learn the intuitive explanation of the algorithm, how it can be used to colour regions in images, and how to implement it in Python.
+You will also see three example applications of the floodfill algorithm, with interactive demos and code.
+
+By the time you are finished reading this article, you will be able to apply the floodfill algorithm in your own projects and modify it or tweak it according to your needs and preferences.
 
 ## What is the floodfill algorithm?
 
@@ -84,7 +89,7 @@ def draw_bitmap(bitmap):
                 ctx.fillStyle = "white"
             ctx.fillRect(x * PIXEL_SIZE, y * PIXEL_SIZE, PIXEL_SIZE, PIXEL_SIZE)
 
-_neighbours = [(1, 0), (-1, 0), (0, 1), (0, -1)]
+_neighbours = [(1, 0), (-1, 0), (0, 1), (0, -1))
 
 async def fill_bitmap(bitmap, x, y):
     if bitmap[y][x] == 1:
@@ -315,10 +320,10 @@ One of my favourite ways of looking at the neighbours of a pixel is realising th
 
 ![Diagram showing that the pixels next to a pixel have the same coordinates, up to a plus/minus 1 on one of the coordinates.](_grid_neighbours.excalidraw.webp "Neighbours of a pixel.")
 
-To represent this, I usually create a list with the small offsets and then use a loop to go through the offsets and modify the coordinates of the base pixel:
+To represent this, I usually create a tuple with the small offsets and then use a loop to go through the offsets and modify the coordinates of the base pixel:
 
 ```py
-neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]  # <--
+_NEIGHBOUR_OFFSETS = ((+1, 0), (0, +1), (-1, 0), (0, -1))  # <-)
 
 def draw_pixel(p): pass  # Do-nothing; just so the code works.
 
@@ -332,9 +337,9 @@ def floodfill(walls, x, y):
         this_pixel = to_paint.pop()
         draw_pixel(this_pixel)
         painted.add(this_pixel)
-        tx, ty = this_pixel               # <--
-        for dx, dy in neighbour_offsets:  # <--
-            nx, ny = tx + dx, ty + dy     # <--
+        tx, ty = this_pixel                # <--
+        for dx, dy in _NEIGHBOUR_OFFSETS:  # <--
+            nx, ny = tx + dx, ty + dy      # <--
 ```
 
 The coordinates `tx, ty` represent the pixel you just painted; the offsets `dx, dy` represent the small jump you need to take from the base pixel to a neighbouring pixel; and the coordinates `nx, ny` represent the coordinates of the neighbour pixel.
@@ -343,7 +348,7 @@ For each of the neighbours, you need to check if that's still inside the grid an
 If the neighbour is outside of the grid or a wall, you don't want to do anything with that neighbour and you skip to the next one:
 
 ```py
-neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
+_NEIGHBOUR_OFFSETS = ((+1, 0), (0, +1), (-1, 0), (0, -1))
 
 def draw_pixel(p): pass  # Do-nothing; just so the code works.
 
@@ -361,7 +366,7 @@ def floodfill(walls, x, y):
         draw_pixel(this_pixel)
         painted.add(this_pixel)
         tx, ty = this_pixel
-        for dx, dy in neighbour_offsets:
+        for dx, dy in _NEIGHBOUR_OFFSETS:
             nx, ny = tx + dx, ty + dy
 
             if (
@@ -376,7 +381,7 @@ If the neighbour pixel is a valid pixel that is _not_ a wall, then you can add i
 As long as this pixel hasn't been painted yet, of course:
 
 ```py
-neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
+_NEIGHBOUR_OFFSETS = ((+1, 0), (0, +1), (-1, 0), (0, -1))
 
 def draw_pixel(p): pass  # Do-nothing; just so the code works.
 
@@ -394,7 +399,7 @@ def floodfill(walls, x, y):
         draw_pixel(this_pixel)
         painted.add(this_pixel)
         tx, ty = this_pixel
-        for dx, dy in neighbour_offsets:
+        for dx, dy in _NEIGHBOUR_OFFSETS:
             nx, ny = tx + dx, ty + dy
 
             if (
@@ -642,7 +647,7 @@ class Animation:
 
     def floodfill(self):
         print("starting ff")
-        neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
+        _NEIGHBOUR_OFFSETS = ((+1, 0), (0, +1), (-1, 0), (0, -1))
         neighbour_msgs = {
             (1, 0): "Checking the cell on the right...",
             (-1, 0): "Checking the cell on the left...",
@@ -662,7 +667,7 @@ class Animation:
             self.mark_cell_x(tx, ty)
             yield f"The cell {this_pixel} has now been coloured. Now, we check its neighbours."
 
-            for dx, dy in neighbour_offsets:
+            for dx, dy in _NEIGHBOUR_OFFSETS:
                 nx, ny = tx + dx, ty + dy
 
                 # Produce nice message about neighbour to process.
@@ -720,7 +725,7 @@ The main objective of the set `painted` is to avoid wasting time painting the sa
 If you modify the function `floodfill` to add a couple of calls to `print` and if you call it with a small grid, you will find that you can end up with duplicated points in the list `to_paint`:
 
 ```py
-neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
+_NEIGHBOUR_OFFSETS = ((+1, 0), (0, +1), (-1, 0), (0, -1))
 
 def draw_pixel(p): pass  # Do-nothing; just so the code works.
 
@@ -754,7 +759,7 @@ Instead of keeping track of the pixels that have been painted already, you can k
 This means you add a new pixel to the set _at the same time_ as you add it to the list of pixels to paint:
 
 ```py
-neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
+_NEIGHBOUR_OFFSETS = ((+1, 0), (0, +1), (-1, 0), (0, -1))
 
 def draw_pixel(p): pass  # Do-nothing; just so the code works.
 
@@ -771,7 +776,7 @@ def floodfill(walls, x, y):
         this_pixel = to_paint.pop()
         draw_pixel(this_pixel)
         tx, ty = this_pixel
-        for dx, dy in neighbour_offsets:
+        for dx, dy in _NEIGHBOUR_OFFSETS:
             nx, ny = tx + dx, ty + dy
 
             if (
@@ -1022,7 +1027,7 @@ class Animation:
 
     def floodfill(self):
         print("starting ff")
-        neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
+        _NEIGHBOUR_OFFSETS = ((+1, 0), (0, +1), (-1, 0), (0, -1))
         neighbour_msgs = {
             (1, 0): "Checking the cell on the right...",
             (-1, 0): "Checking the cell on the left...",
@@ -1040,7 +1045,7 @@ class Animation:
             self.mark_cell_x(tx, ty)
             yield f"The cell {this_pixel} has now been coloured. Now, we check its neighbours."
 
-            for dx, dy in neighbour_offsets:
+            for dx, dy in _NEIGHBOUR_OFFSETS:
                 nx, ny = tx + dx, ty + dy
 
                 # Produce nice message about neighbour to process.
@@ -1248,7 +1253,7 @@ class FF2Animation:
     async def floodfill_from(self, start):
         self.running = True
         try:
-            neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
+            _NEIGHBOUR_OFFSETS = ((+1, 0), (0, +1), (-1, 0), (0, -1))
             stack = [start]
             tracked = {start}
 
@@ -1263,7 +1268,7 @@ class FF2Animation:
                 self.draw_cell(x, y, AC_COLOR)
                 await asyncio.sleep(0.05)
 
-                for dx, dy in neighbour_offsets:
+                for dx, dy in _NEIGHBOUR_OFFSETS:
                     nx, ny = x + dx, y + dy
                     if nx &lt; 0 or nx &gt;= FF2_COLS or ny &lt; 0 or ny &gt;= FF2_ROWS:
                         continue
@@ -1539,7 +1544,7 @@ class FF3Animation:
         self.status_p.innerHTML = "Click “Count regions” to start the demo."
 
     async def floodfill_region(self, start, region_colour):
-        neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
+        _NEIGHBOUR_OFFSETS = ((+1, 0), (0, +1), (-1, 0), (0, -1))
         stack = [start]
         tracked = {start}
 
@@ -1554,7 +1559,7 @@ class FF3Animation:
             self.draw_cell(x, y, AC_COLOR)
             await asyncio.sleep(0.05)
 
-            for dx, dy in neighbour_offsets:
+            for dx, dy in _NEIGHBOUR_OFFSETS:
                 nx, ny = x + dx, y + dy
                 if nx &lt; 0 or nx &gt;= FF3_COLS or ny &lt; 0 or ny &gt;= FF3_ROWS:
                     continue
@@ -1642,7 +1647,7 @@ js.document.getElementById("ff3-reset-button").addEventListener("click", ff3_res
 The code below represents this algorithm:
 
 ```py
-neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
+_NEIGHBOUR_OFFSETS = ((+1, 0), (0, +1), (-1, 0), (0, -1))
 
 def count_regions(walls):
     HEIGHT = len(walls)
@@ -1659,6 +1664,7 @@ def count_regions(walls):
             regions += 1
             region_cells = floodfill(walls, x, y)
             covered.update(region_cells)
+            ...  # (1) Process this region.
 
     return regions
 
@@ -1667,6 +1673,9 @@ def floodfill(walls, x, y):
     # ... but you add this line:
     return tracked  # <-- VERY IMPORTANT :D
 ```
+
+The code above represents the main mechanic of the algorithm.
+Depending on what you want to do with the regions, you may want to keep a list of all different regions or, for the demo above, I would paint each new region in a new colour in the line of code marked with `(1)`.
 
 
 ### Simulating a fluid spreading on a surface
@@ -1940,7 +1949,7 @@ class FF7Animation:
         self.status_p.innerHTML = "Click any empty cell to start spreading the fluid."
 
     async def floodfill_with_fringe(self, start):
-        neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
+        _NEIGHBOUR_OFFSETS = ((+1, 0), (0, +1), (-1, 0), (0, -1))
         fringe = {start}
         tracked = {start}
 
@@ -1950,7 +1959,7 @@ class FF7Animation:
             next_fringe = set()
             for x, y in fringe:
                 self.draw_cell(x, y, AC_COLOR)
-                for dx, dy in neighbour_offsets:
+                for dx, dy in _NEIGHBOUR_OFFSETS:
                     nx, ny = x + dx, y + dy
                     if nx &lt; 0 or nx &gt;= FF7_COLS or ny &lt; 0 or ny &gt;= FF7_ROWS:
                         continue
@@ -2039,6 +2048,45 @@ ff7_canvas.addEventListener("click", ff7_click_proxy)
 ff7_reset_proxy = create_proxy(ff7_handle_reset_click)
 js.document.getElementById("ff7-reset-button").addEventListener("click", ff7_reset_proxy)
 </py-script>
+
+The code for this modified version of the floodfill algorithm is very similar to the original one, but this time you are processing multiple cells in one go.
+
+```py
+_NEIGHBOUR_OFFSETS = ((+1, 0), (0, +1), (-1, 0), (0, -1))
+
+async def floodfill_with_fringe(walls, start):
+    HEIGHT = len(walls)
+    WIDTH = len(walls[0])
+
+    fringe = {start}
+    tracked = {start}
+
+    while fringe:
+        next_fringe = set()
+        for x, y in fringe:
+            ...  # (1) Mark the cell (x, y) as having been processed.
+            for dx, dy in _NEIGHBOUR_OFFSETS:
+                nx, ny = x + dx, y + dy
+                if (
+                    nx < 0 or nx >= WIDTH
+                    or ny < 0 or ny >= HEIGHT
+                    or walls[ny][nx]
+                ):
+                    continue
+                if (nx, ny) in tracked:
+                    continue
+
+                next_fringe.add((nx, ny))
+
+        tracked.update(next_fringe)
+        for x, y in next_fringe:
+            ...  # (2) Mark the cell (x, y) as being in the fringe.
+
+        fringe = next_fringe
+```
+
+Depending on what you will do with the cells, you can add code to process the cells as they are added to the fringe for the first time or as they are moved from the fringe to the set of cells that has been completely processed.
+In the simulation above, I use the line `(1)` to change the colour of purple cells to pink (to mark they are no longer in the fringe) and I use the line `(2)` to paint the cells that were just added to the fringe in purple.
 
 
 ## Conclusion
