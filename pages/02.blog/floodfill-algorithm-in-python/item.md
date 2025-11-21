@@ -2020,8 +2020,7 @@ def ff7_handle_canvas_click(evt):
     if cell is None:
         return
 
-    cx, cy = cell
-    animator7.start_from_cell(cx, cy)
+    animator7.start(cell)
 
 
 ff7_canvas = js.document.getElementById("ff7-grid-canvas")
