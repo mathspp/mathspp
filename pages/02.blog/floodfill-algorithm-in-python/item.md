@@ -5,10 +5,6 @@ Learn how to implement and use the floodfill algorithm in Python.
 <link rel="stylesheet" href="https://pyscript.net/releases/2025.11.1/core.css" />
 <script defer type="module" src="https://pyscript.net/releases/2025.11.1/core.js"></script>
 
-! This article includes some interactive elements that I developed with PyScript – Python in the browser.
-! It may take a second to load the demos.
-! Thank you for your patience!
-
 
 ## What is the floodfill algorithm?
 
@@ -1673,11 +1669,97 @@ def floodfill(walls, x, y):
 ```
 
 
-### Simulating a flow spreading on a surface
+### Simulating a fluid spreading on a surface
 
-You can also use the floodfill algorithm to create a basic simulation of a flow spreading on a surface.
+You can also use the floodfill algorithm to create a basic simulation of a fluid spreading on a surface.
 It won't be physically accurate, but it will look _pretty cool_ given the amount of effort you have to put in...
 And trust me, I did [numerical simulations for 2D and 3D flows and it's not easy](https://www.researchgate.net/publication/353654805_Fundamental_solutions_for_the_Stokes_equations_Numerical_applications_for_2D_and_3D_flows).
+
+To apply the floodfill algorithm in this context, all you do is change the way in which cells are added to the list `to_paint` and the order in which they are processed.
+Instead of working one cell at a time, you are going to keep a set that represents the “fringe” of the fluid.
+(This starts off as a single cell.)
+Then, all the cells that are neighbours of any cell in the fringe are added to the list `to_paint` and they become the fringe for the next iteration.
+
+In the beginning, you have a single point in the fringe:
+
+<p>
+  <span style="color: var(--accent);">█</span> processed;&nbsp;
+  <span style="color: var(--accent-2);">█</span> fringe: <code>(1, 0)</code>
+</p>
+<canvas id="ff4-grid-canvas" width="381" height="255" style="display: block; margin: 0 auto;"></canvas>
+
+<py-script>
+FF4_CELL_SIZE = 60
+FF4_GRID_LINE_WIDTH = 3
+FF4_GRID = [
+    [0,0,0,0,0,0],
+    [0,0,0,1,1,0],
+    [0,0,0,1,1,0],
+    [0,0,0,0,0,0],
+]
+
+FF4_ROWS = len(FF4_GRID)
+FF4_COLS = len(FF4_GRID[0])
+
+FF4_CANVAS_WIDTH = FF4_COLS * FF4_CELL_SIZE + (FF4_COLS + 1) * FF4_GRID_LINE_WIDTH
+FF4_CANVAS_HEIGHT = FF4_ROWS * FF4_CELL_SIZE + (FF4_ROWS + 1) * FF4_GRID_LINE_WIDTH
+
+
+def ff4_draw_cells(ctx):
+    for row in range(FF4_ROWS):
+        for col in range(FF4_COLS):
+            value = FF4_GRID[row][col]
+            color = BG_COLOR if value == 0 else FG_COLOR
+            ctx.fillStyle = color
+            ctx.fillRect(
+                col * FF4_CELL_SIZE + (col + 1) * FF4_GRID_LINE_WIDTH,
+                row * FF4_CELL_SIZE + (row + 1) * FF4_GRID_LINE_WIDTH,
+                FF4_CELL_SIZE,
+                FF4_CELL_SIZE,
+            )
+
+def ff4_draw_gridlines(ctx):
+    ctx.lineWidth = FF4_GRID_LINE_WIDTH
+    ctx.fillStyle = UI_COLOR
+
+    for c in range(FF4_COLS + 2):
+        x = c * (FF4_CELL_SIZE + FF4_GRID_LINE_WIDTH)
+        ctx.fillRect(
+            x,
+            0,
+            FF4_GRID_LINE_WIDTH,
+            FF4_CANVAS_HEIGHT,
+        )
+
+    for r in range(FF4_ROWS + 2):
+        y = r * (FF4_CELL_SIZE + FF4_GRID_LINE_WIDTH)
+        ctx.fillRect(
+            0,
+            y,
+            FF4_CANVAS_WIDTH,
+            FF4_GRID_LINE_WIDTH,
+        )
+
+def ff4_draw_cell(ctx, x, y, colour):
+    ctx.fillStyle = colour
+    ctx.fillRect(
+        x * FF4_CELL_SIZE + (x + 1) * FF4_GRID_LINE_WIDTH,
+        y * FF4_CELL_SIZE + (y + 1) * FF4_GRID_LINE_WIDTH,
+        CELL_SIZE,
+        CELL_SIZE,
+    )
+
+def ff4_draw_grid():
+    canvas = js.document.getElementById("ff4-grid-canvas")
+    ctx = canvas.getContext("2d")
+    canvas.width = FF4_CANVAS_WIDTH
+    canvas.height = FF4_CANVAS_HEIGHT
+
+    ff4_draw_cells(ctx)
+    ff4_draw_gridlines(ctx)
+    ff4_draw_cell(ctx, 1, 0, AC2_COLOUR)
+</py-script>
+
 
 ! I'm still working on the interactive demo for this section.
 ! Check back in 24 hours!
