@@ -1944,7 +1944,7 @@ class FF7Animation:
         fringe = {start}
         tracked = {start}
 
-        self.draw_cell(sx, sy, AC2_COLOR)
+        self.draw_cell(*start, AC2_COLOR)
 
         while fringe:
             next_fringe = set()
