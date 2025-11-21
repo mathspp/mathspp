@@ -2033,7 +2033,7 @@ def ff7_handle_reset_click(evt):
     animator7.reset()
 
 ff7_click_proxy = create_proxy(ff7_handle_canvas_click)
-ff7_canvas.addEventListenever("click", ff7_click_proxy)
+ff7_canvas.addEventListener("click", ff7_click_proxy)
 
 ff7_reset_proxy = create_proxy(ff7_handle_reset_click)
 js.document.getElementById("ff7-reset-button").addEventListener("click", ff7_reset_proxy)
