@@ -89,11 +89,11 @@ def draw_bitmap(bitmap):
                 ctx.fillStyle = "white"
             ctx.fillRect(x * PIXEL_SIZE, y * PIXEL_SIZE, PIXEL_SIZE, PIXEL_SIZE)
 
-_neighbours = [(1, 0), (-1, 0), (0, 1), (0, -1))
-
 async def fill_bitmap(bitmap, x, y):
     if bitmap[y][x] == 1:
         return
+
+    _neighbours = ((1, 0), (-1, 0), (0, 1), (0, -1))
 
     ctx = canvas.getContext("2d")
     r, g, b = (random.randint(0, 255) for _ in range(3))
