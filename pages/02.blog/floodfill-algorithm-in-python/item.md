@@ -1948,9 +1948,10 @@ class FF7Animation:
 
         while fringe:
             next_fringe = set()
-            for cell in fringe:
-                self.draw_cell(*cell, AC_COLOR)
+            for x, y in fringe:
+                self.draw_cell(x, y, AC_COLOR)
                 for dx, dy in neighbour_offsets:
+                    nx, ny = x + dx, y + dy
                     if nx &lt; 0 or nx &gt;= FF7_COLS or ny &lt; 0 or ny &gt;= FF7_ROWS:
                         continue
                     if (nx, ny) in tracked:
