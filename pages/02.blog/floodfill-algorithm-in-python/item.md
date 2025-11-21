@@ -1683,7 +1683,7 @@ Then, all the cells that are neighbours of any cell in the fringe are added to t
 In the beginning, you have a single point in the fringe:
 
 <p>
-  <span style="color: var(--accent);">█</span> processed;&nbsp;
+  <span style="color: var(--accent);">█</span> processed:&nbsp;
   <span style="color: var(--accent-2);">█</span> fringe: <code>(1, 0)</code>
 </p>
 <canvas id="ff4-grid-canvas" width="381" height="255" style="display: block; margin: 0 auto;"></canvas>
@@ -1766,7 +1766,7 @@ ff4_draw_grid()
 Then, you expand the fringe to include all points that are the neighbours of the previous point:
 
 <p>
-  <span style="color: var(--accent);">█</span> processed <code>(1, 0)</code>;&nbsp;
+  <span style="color: var(--accent);">█</span> processed: <code>(1, 0)</code>;&nbsp;
   <span style="color: var(--accent-2);">█</span> fringe: <code>(0, 0), (2, 0), (1, 1)</code>
 </p>
 <canvas id="ff5-grid-canvas" width="381" height="255" style="display: block; margin: 0 auto;"></canvas>
@@ -1795,7 +1795,7 @@ At this iteration, the fringe is starting to hug an obstacle, and subsequent ite
 The next iteration looks like this:
 
 <p>
-  <span style="color: var(--accent);">█</span> processed <code>(1, 0), (0, 0), (2, 0), (1, 1)</code>;&nbsp;
+  <span style="color: var(--accent);">█</span> processed: <code>(1, 0), (0, 0), (2, 0), (1, 1)</code>;&nbsp;
   <span style="color: var(--accent-2);">█</span> fringe: <code>(0, 1), (1, 2), (2, 1), (3, 0)</code>
 </p>
 <canvas id="ff6-grid-canvas" width="381" height="255" style="display: block; margin: 0 auto;"></canvas>
@@ -2039,10 +2039,6 @@ ff7_canvas.addEventListener("click", ff7_click_proxy)
 ff7_reset_proxy = create_proxy(ff7_handle_reset_click)
 js.document.getElementById("ff7-reset-button").addEventListener("click", ff7_reset_proxy)
 </py-script>
-
-
-! I'm still working on the interactive demo for this section.
-! Check back in 24 hours!
 
 
 ## Conclusion
