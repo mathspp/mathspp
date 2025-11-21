@@ -1822,6 +1822,223 @@ ff6_draw_grid()
 </py-script>
 <br />
 
+By repeating this process until the grid is fully covered, you get a nice spreading effect.
+Here's the same logic, but applied to an interactive demo with a larger grid:
+
+
+<p id="ff7-grid-legend">
+  <span style="color: var(--accent);">█</span> processed;&nbsp;
+  <span style="color: var(--accent-2);">█</span> fringe
+</p>
+
+<canvas id="ff7-grid-canvas" width="464" height="222" style="display: block; margin: 0 auto;"></canvas>
+
+<p id="ff7-grid-status">Click any empty cell to start spreading the fluid.</p>
+
+<div style="display:flex; justify-content:center; gap: 1em;">
+  <button id="ff7-reset-button" class="button">Reset</button>
+</div>
+
+<script>
+  set_canvas_loading(document.getElementById("ff7-grid-canvas"))
+</script>
+
+<py-script>
+FF7_CELL_SIZE = 20
+FF7_GRID_LINE_WIDTH = 2
+FF7_GRID = [
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0],
+    [0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0],
+    [0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,1,0,0,1,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0],
+    [0,0,0,0,0,1,0,0,1,0,0,1,1,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0],
+    [0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0],
+    [0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0],
+    [0,0,1,1,0,0,1,1,0,0,0,0,1,1,1,1,1,0,0,0,0,0,1,0,0,0,0,0,0],
+    [0,0,1,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0],
+    [0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0],
+    [0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1],
+]
+
+FF7_ROWS = len(FF3_GRID)
+FF7_COLS = len(FF3_GRID[0])
+
+FF7_CANVAS_WIDTH = FF7_COLS * FF7_CELL_SIZE + (FF7_COLS + 1) * FF7_GRID_LINE_WIDTH
+FF7_CANVAS_HEIGHT = FF7_ROWS * FF7_CELL_SIZE + (FF7_ROWS + 1) * FF7_GRID_LINE_WIDTH
+
+# --- drawing helpers --------------------------------------------------
+def ff7_draw_cells(ctx):
+    for row in range(FF7_ROWS):
+        for col in range(FF7_COLS):
+            value = FF7_GRID[row][col]
+            color = FG_COLOR if value else BG_COLOR
+            ctx.fillStyle = color
+            ctx.fillRect(
+                col * FF7_CELL_SIZE + (col + 1) * FF7_GRID_LINE_WIDTH,
+                row * FF7_CELL_SIZE + (row + 1) * FF7_GRID_LINE_WIDTH,
+                FF7_CELL_SIZE,
+                FF7_CELL_SIZE,
+            )
+
+def ff7_draw_gridlines(ctx):
+    ctx.lineWidth = FF7_GRID_LINE_WIDTH
+    ctx.fillStyle = UI_COLOR
+
+    for c in range(FF7_COLS + 2):
+        x = c * (FF7_CELL_SIZE + FF7_GRID_LINE_WIDTH)
+        ctx.fillRect(
+            x,
+            0,
+            FF7_GRID_LINE_WIDTH,
+            FF7_CANVAS_HEIGHT,
+        )
+
+    for r in range(FF7_ROWS + 2):
+        y = r * (FF7_CELL_SIZE + FF7_GRID_LINE_WIDTH)
+        ctx.fillRect(
+            0,
+            y,
+            FF7_CANVAS_WIDTH,
+            FF7_GRID_LINE_WIDTH,
+        )
+
+def ff7_draw_grid():
+    canvas = js.document.getElementById("ff7-grid-canvas")
+    ctx = canvas.getContext("2d")
+    canvas.width = FF7_CANVAS_WIDTH
+    canvas.height = FF7_CANVAS_HEIGHT
+
+    ff7_draw_cells(ctx)
+    ff7_draw_gridlines(ctx)
+
+# --- animation --------------------------------------------------------
+class FF7Animation:
+    def __init__(self, ctx, status_p):
+        self.ctx = ctx
+        self.status_p = status_p
+        self.running = False
+        self.current_task = None
+
+    def draw_cell(self, x, y, colour):
+        self.ctx.fillStyle = colour
+        self.ctx.fillRect(
+            x * FF7_CELL_SIZE + (x + 1) * FF7_GRID_LINE_WIDTH,
+            y * FF7_CELL_SIZE + (y + 1) * FF7_GRID_LINE_WIDTH,
+            FF7_CELL_SIZE,
+            FF7_CELL_SIZE,
+        )
+
+    def reset(self):
+        if self.current_task is not None:
+            self.current_task.cancel()
+            self.current_task = None
+        self.running = False
+        ff7_draw_grid()
+        self.status_p.innerHTML = "Click any empty cell to start spreading the fluid."
+
+    async def floodfill_with_fringe(self, start):
+        neighbour_offsets = [(+1, 0), (0, +1), (-1, 0), (0, -1)]
+        fringe = {start}
+        tracked = {start}
+
+        self.draw_cell(sx, sy, AC2_COLOR)
+
+        while fringe:
+            next_fringe = set()
+            for cell in fringe:
+                self.draw_cell(*cell, AC_COLOR)
+                for dx, dy in neighbour_offsets:
+                    if nx &lt; 0 or nx &gt;= FF7_COLS or ny &lt; 0 or ny &gt;= FF7_ROWS:
+                        continue
+                    if (nx, ny) in tracked:
+                        continue
+                    if FF7_GRID[ny][nx]:
+                        continue
+                    next_fringe.add((nx, ny))
+
+            for cell in next_fringe:
+                self.draw_cell(*cell, AC2_COLOR)
+
+            fringe = next_fringe
+
+            await asyncio.sleep(.75)
+
+
+    async def run(self, starting_cell):
+        self.running = True
+        ff7_draw_grid()
+
+        try:
+            await self.floodfill_with_fringe(starting_cell)
+            self.status_p.innerHTML = f"Finished."
+        except asyncio.CancelledError:
+            self.status_p.innerHTML = "Cancelled."
+        finally:
+            self.running = False
+            self.current_task = None
+
+    def start(self, starting_cell):
+        if self.running:
+            return
+        self.status_p.innerHTML = "Running the demo..."
+        self.current_task = asyncio.create_task(self.run(starting_cell))
+
+# --- setup ------------------------------------------------------------
+def ff7_canvas_coords_to_cell(x, y):
+    x_local = x - FF7_GRID_LINE_WIDTH
+    y_local = y - FF7_GRID_LINE_WIDTH
+    if x_local &lt; 0 or y_local &lt; 0:
+        return None
+
+    cell_span = FF7_CELL_SIZE + FF7_GRID_LINE_WIDTH
+
+    col, x_off = divmod(x_local, cell_span)
+    row, y_off = divmod(y_local, cell_span)
+
+    if col &lt; 0 or col &gt;= FF7_COLS or row &lt; 0 or row &gt;= FF7_ROWS:
+        return None
+
+    # ignore clicks on grid lines
+    if x_off &gt;= FF7_CELL_SIZE or y_off &gt;= FF7_CELL_SIZE:
+        return None
+
+    return int(col), int(row)
+
+def ff7_handle_canvas_click(evt):
+    if animator7.running:
+        # ignore clicks while floodfill is running
+        return
+
+    rect = evt.target.getBoundingClientRect()
+    x = evt.clientX - rect.left
+    y = evt.clientY - rect.top
+
+    cell = ff7_canvas_coords_to_cell(x, y)
+    if cell is None:
+        return
+
+    cx, cy = cell
+    animator7.start_from_cell(cx, cy)
+
+
+ff7_canvas = js.document.getElementById("ff7-grid-canvas")
+ff7_draw_grid()
+
+animator7 = FF7Animation(ff7_canvas.getContext("2d"), js.document.getElementById("ff7-grid-status"))
+
+def ff7_handle_reset_click(evt):
+    animator7.reset()
+
+ff7_click_proxy = create_proxy(ff7_handle_canvas_click)
+ff7_canvas.addEventListenever("click", ff7_click_proxy)
+
+ff7_reset_proxy = create_proxy(ff7_handle_reset_click)
+js.document.getElementById("ff7-reset-button").addEventListener("click", ff7_reset_proxy)
+</py-script>
+
 
 ! I'm still working on the interactive demo for this section.
 ! Check back in 24 hours!
