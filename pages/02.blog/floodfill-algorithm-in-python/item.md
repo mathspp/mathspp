@@ -1801,8 +1801,8 @@ The next iteration looks like this:
 <canvas id="ff6-grid-canvas" width="381" height="255" style="display: block; margin: 0 auto;"></canvas>
 
 <py-script>
-def ff5_draw_grid():
-    canvas = js.document.getElementById("ff5-grid-canvas")
+def ff6_draw_grid():
+    canvas = js.document.getElementById("ff6-grid-canvas")
     ctx = canvas.getContext("2d")
     canvas.width = FF4_CANVAS_WIDTH
     canvas.height = FF4_CANVAS_HEIGHT
@@ -1818,7 +1818,7 @@ def ff5_draw_grid():
     ff4_draw_cell(ctx, 2, 1, AC2_COLOR)
     ff4_draw_cell(ctx, 3, 0, AC2_COLOR)
 
-ff5_draw_grid()
+ff6_draw_grid()
 </py-script>
 <br />
 
