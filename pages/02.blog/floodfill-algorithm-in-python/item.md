@@ -102,7 +102,7 @@ def draw_bitmap(bitmap):
             if value == 1:
                 ctx.fillStyle = BG_COLOR
             else:
-                ctx.fillStyle = FG_COLORs
+                ctx.fillStyle = FG_COLOR
             ctx.fillRect(x * PIXEL_SIZE, y * PIXEL_SIZE, PIXEL_SIZE, PIXEL_SIZE)
 
 async def fill_bitmap(bitmap, x, y):
