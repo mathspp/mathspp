@@ -57,4 +57,4 @@ def iter(func, target_value):
 
 ### More examples of using `iter` with two arguments
 
-If you come up with more example usages of `iter` with two arguments, please comment below (or [reach out to me](/contact)) so I can add them here!
+If you come up with more example usages of `iter` with two arguments, please comment below (or [reach out to me](/contact-me)) so I can add them here!

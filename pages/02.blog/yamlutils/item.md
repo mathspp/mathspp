@@ -25,8 +25,8 @@ The `item` files contain the blog post itself, and the extension `.en.md` or `.p
 
 For most of it, these things do not depend on the language the user is viewing the page on, for example I keep the slug the same for the English and Portuguese versions, cf.
 
- - [https://mathspp.com/en/blog/yamlutils](https://mathspp.com/en/blog/yamlutils)
- - [https://mathspp.com/pt/blog/yamlutils](https://mathspp.com/pt/blog/yamlutils)
+ - `https://mathspp.com/en/blog/yamlutils`
+ - `https://mathspp.com/pt/blog/yamlutils`
 
 Those headers that are the same, regardless of the language, are kept in the `frontmatter.yaml` file, which looks something like this:
 

@@ -69,7 +69,7 @@
     "articles": 125,
     "code_snippets": 449,
     "loc": 4449,
-    "words": 110323
+    "words": 110321
   },
   "number theory": {
     "articles": 8,
@@ -135,7 +135,7 @@
     "articles": 8,
     "code_snippets": 38,
     "loc": 450,
-    "words": 15596
+    "words": 15594
   },
   "image processing": {
     "articles": 3,
@@ -471,7 +471,7 @@
     "articles": 1,
     "code_snippets": 0,
     "loc": 0,
-    "words": 786
+    "words": 784
   },
   "numerical analysis": {
     "articles": 2,
@@ -567,7 +567,7 @@
     "articles": 433,
     "code_snippets": 4083,
     "loc": 38905,
-    "words": 474043
+    "words": 474041
   },
   "fp": {
     "articles": 5,

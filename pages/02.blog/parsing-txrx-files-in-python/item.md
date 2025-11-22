@@ -10,7 +10,7 @@ I like parsers, so I offered to help with that task and this article is a short 
 ## TXRX files
 
 First and foremost, I have no idea what TXRX files are.
-My friend sent me [one sample TXRX file](sample.txrx) for me to play around with, and I will include it here for you to take a look at the data as well:
+My friend sent me one sample TXRX file for me to play around with, and I will include it here for you to take a look at the data as well:
 
 <details>
 <summary>Sample TXRX file contents</summary>

@@ -3,7 +3,7 @@ Learn how to find text patterns and replace them with dynamic content using rege
 ===
 
 
-The other day I was working on [my problems book](https://mathspp.gumroad.com/l/problems) and I needed to update a markdown file to number the headings.
+The other day I was working on [my problems book](https://mathspp.gumroad.com/l/puzzles-riddles-problems) and I needed to update a markdown file to number the headings.
 In short, I had a markdown file like this:
 
 ```md

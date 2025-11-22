@@ -2,7 +2,7 @@ Split the numbers 0, 1, ..., 15 into two sets with sum interesting properties!
 
 ===
 
-I got the idea for this problem after attending the [Recreational Maths Colloquium VI](http://ludicum.org/ev/rm/19), where I heard about the [Thue-Morse sequence](https://en.wikipedia.org/wiki/Thue%E2%80%93Morse_sequence) for the first time in my life.
+I got the idea for this problem after attending the [Recreational Maths Colloquium VI](https://ludicum.org/rmc-vi-2019/), where I heard about the [Thue-Morse sequence](https://en.wikipedia.org/wiki/Thue%E2%80%93Morse_sequence) for the first time in my life.
 
 
 ## Problem statement

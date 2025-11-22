@@ -40,7 +40,7 @@ You can learn more about the Python Problem-Solving Bootcamp [here](/courses/alg
 
  - All of [Matt Harrison's courses are 20% off](https://store.metasnake.com), most notably his pandas courses; no code needed.
 
- - All of [Reuven Lerner's courses and bundles are 40% off](https://lernerpython.com/bfcm-2023/), including Intro Python & Advanced Python, pandas and NumPy courses, and more.
+ - All of [Reuven Lerner's courses and bundles are 40% off](https://lernerpython.com/), including Intro Python & Advanced Python, pandas and NumPy courses, and more.
 
 
 ## Memberships

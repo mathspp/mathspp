@@ -113,7 +113,7 @@ Here is an example of such a path:
 ![](_shortest_path.webp "An example of a shortest path to visit all seven bridges at least once.")
 
 This is actually one of the problems I solve with the participants
-in my [workshop on recreational maths][ws-recreational-maths]
+in my workshop on recreational maths
 and I have to tell you: it is always fun to explore the mathematics
 behind such a misleading puzzle!
 
@@ -127,5 +127,4 @@ problems sent straight to your inbox and to add your reaction below.
 
 [email]: mailto:rodrigo@mathspp.com?subject=Solution%20to%20{{ page.title|regex_replace(['/ /'], ['%20']) }}
 [subscribe]: https://mathspp.com/subscribe
-[ws-recreational-maths]: /education/workshops/recreational-mathematics
 [euler-path]: https://en.wikipedia.org/wiki/Eulerian_path#Properties

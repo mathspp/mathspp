@@ -73,7 +73,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/yamlutils": {
-    "timestamp": 1723486195.3847404,
+    "timestamp": 1763800220.0844064,
     "tags": [
       "programming",
       "python",
@@ -559,7 +559,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/streaming-data-from-flask-to-htmx-using-server-side-events": {
-    "timestamp": 1753281866.7786658,
+    "timestamp": 1763800142.633706,
     "tags": [
       "flask",
       "programming",
@@ -683,7 +683,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/sets-as-dictionaries-with-no-values": {
-    "timestamp": 1753281795.5840309,
+    "timestamp": 1763800338.0790806,
     "tags": [
       "dunder methods",
       "programming",
@@ -994,7 +994,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/parsing-txrx-files-in-python": {
-    "timestamp": 1753281712.3982856,
+    "timestamp": 1763799765.6696746,
     "tags": [
       "parsers",
       "programming",
@@ -1071,7 +1071,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/dynamic-string-replacements-with-regex": {
-    "timestamp": 1753281423.7751918,
+    "timestamp": 1763799897.1205685,
     "tags": [
       "programming",
       "python",
@@ -1531,7 +1531,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/python-black-friday-2023": {
-    "timestamp": 1763399159.6422632,
+    "timestamp": 1763799832.333366,
     "tags": [
       "python"
     ],
@@ -1868,7 +1868,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/how-to-create-a-python-package-in-2022": {
-    "timestamp": 1753281476.8045006,
+    "timestamp": 1763800076.2638557,
     "tags": [
       "programming",
       "python"
@@ -2582,7 +2582,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p014-the-sum-of-the-parts": {
-    "timestamp": 1753280749.4567323,
+    "timestamp": 1763800308.8489556,
     "tags": [
       "combinatorics",
       "mathematics",
@@ -3242,7 +3242,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p038-bridges-of-konigsberg": {
-    "timestamp": 1753280760.6898232,
+    "timestamp": 1763800166.3558981,
     "tags": [
       "graphs",
       "mathematics",
@@ -3252,7 +3252,7 @@
       "articles": 1,
       "code_snippets": 0,
       "loc": 0,
-      "words": 786
+      "words": 784
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/eafp-and-lbyl-coding-styles": {
@@ -3718,7 +3718,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/deep-unpacking": {
-    "timestamp": 1763767851.3000436,
+    "timestamp": 1763800400.9292903,
     "tags": [
       "programming",
       "python"
@@ -3932,7 +3932,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/100.making-an-iterator-out-of-a-function": {
-    "timestamp": 1760992473.2516224,
+    "timestamp": 1763799968.3416696,
     "tags": [
       "programming",
       "python"
@@ -6137,7 +6137,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/floodfill-algorithm-in-python": {
-    "timestamp": 1763767849.0247061,
+    "timestamp": 1763799348.2529047,
     "tags": [
       "python",
       "programming",

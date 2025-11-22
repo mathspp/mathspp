@@ -52,7 +52,7 @@ Next up, we'll implement methods to add and remove elements from the set.
 
 ### Constructive / destructive methods
 
-As you can see from [my set cheatsheet](https://gumroad.com/l/cheatsheet_sets), sets provide the following methods to add/remove elements:
+As you can see from [my set cheatsheet](https://gumroad.com/l/cheatsheet-sets), sets provide the following methods to add/remove elements:
 
  - `add` – adds one element to the set;
  - `update` – adds all elements from an iterable to the set;
