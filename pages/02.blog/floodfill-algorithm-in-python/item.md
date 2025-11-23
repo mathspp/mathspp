@@ -48,7 +48,7 @@ Click the image below to randomly colour the region you click.
 
 Go ahead, try it!
 
-<canvas id="bitmap" width="320" height="320" style="display: block; margin: 0 auto;"></canvas>
+<canvas id="bitmap" width="320" height="320" style="display: block; margin: 0 auto; max-width: 100%; height: auto;"></canvas>
 
 <script>
 function set_canvas_loading(canvas) {
@@ -466,7 +466,7 @@ Play the algorithm step by step until you're comfortable with its behaviour and 
   <span style="color: var(--accent-2);">█</span> <code>to_paint</code>:&nbsp;
   <code id="slow-ff-grid-to_paint-values"></code>
 </p>
-<canvas id="slow-ff-grid" width="690" height="438" style="display: block; margin: 0 auto;"></canvas>
+<canvas id="slow-ff-grid" width="690" height="438" style="display: block; margin: 0 auto; max-width: 100%; height: auto;"></canvas>
 <p id="slow-ff-grid-status">Starting the floodfill algorithm from the centre square. Press “Next”.</p>
 <div style="display:flex; justify-content:center; gap: 1em;">
 <button id="slow-reset" class="button">Reset</button>
@@ -832,7 +832,7 @@ The cells shown in purple are cells that have been added to the list `to_paint`,
   <span style="color: var(--accent-2);">█</span> <code>to_paint</code>:&nbsp;
   <code id="ff-grid-to_paint-values"></code>
 </p>
-<canvas id="ff-grid" width="690" height="438" style="display: block; margin: 0 auto;"></canvas>
+<canvas id="ff-grid" width="690" height="438" style="display: block; margin: 0 auto; max-width: 100%; height: auto;"></canvas>
 <p id="ff-grid-status">Starting the floodfill algorithm from the centre square. Press “Next”.</p>
 <div style="display:flex; justify-content:center; gap: 1em;">
 <button id="reset" class="button">Reset</button>
@@ -1121,7 +1121,7 @@ For example, if you start in the bottom left of the maze, can you go all the way
   <span style="color: var(--accent-2);">█</span> queued
 </p>
 
-<canvas id="ff2-grid-canvas" width="464" height="222" style="display: block; margin: 0 auto;"></canvas>
+<canvas id="ff2-grid-canvas" width="464" height="222" style="display: block; margin: 0 auto; max-width: 100%; height: auto;"></canvas>
 
 <p id="ff2-grid-status">Click an empty cell to start the floodfill.</p>
 
@@ -1328,8 +1328,8 @@ def ff2_handle_canvas_click(evt):
         return
 
     rect = evt.target.getBoundingClientRect()
-    x = evt.clientX - rect.left
-    y = evt.clientY - rect.top
+    x = (evt.clientX - rect.left) * (ff2_canvas.width / rect.width)
+    y = (evt.clientY - rect.top) * (ff2_canvas.height / rect.height)
 
     cell = ff2_canvas_coords_to_cell(x, y)
     if cell is None:
@@ -1384,7 +1384,7 @@ You can see this in action in the demo below:
   <span style="color: var(--re);">█</span><span style="color: var(--bl);">█</span><span style="color: var(--gr);">█</span><span style="color: var(--ye);">█</span><span style="color: var(--or);">█</span> regions
 </p>
 
-<canvas id="ff3-grid-canvas" width="464" height="222" style="display: block; margin: 0 auto;"></canvas>
+<canvas id="ff3-grid-canvas" width="464" height="222" style="display: block; margin: 0 auto; max-width: 100%; height: auto;"></canvas>
 
 <p id="ff3-grid-status">Click “Count regions” to start the demo.</p>
 
@@ -1658,7 +1658,7 @@ In the beginning, you have a single point in the fringe:
   <span style="color: var(--accent);">█</span> processed:&nbsp;
   <span style="color: var(--accent-2);">█</span> fringe: <code>(1, 0)</code>
 </p>
-<canvas id="ff4-grid-canvas" width="381" height="255" style="display: block; margin: 0 auto;"></canvas>
+<canvas id="ff4-grid-canvas" width="381" height="255" style="display: block; margin: 0 auto; max-width: 100%; height: auto;"></canvas>
 
 <py-script>
 FF4_CELL_SIZE = 60
@@ -1741,7 +1741,7 @@ Then, you expand the fringe to include all points that are the neighbours of the
   <span style="color: var(--accent);">█</span> processed: <code>(1, 0)</code>;&nbsp;
   <span style="color: var(--accent-2);">█</span> fringe: <code>(0, 0), (2, 0), (1, 1)</code>
 </p>
-<canvas id="ff5-grid-canvas" width="381" height="255" style="display: block; margin: 0 auto;"></canvas>
+<canvas id="ff5-grid-canvas" width="381" height="255" style="display: block; margin: 0 auto; max-width: 100%; height: auto;"></canvas>
 
 <py-script>
 def ff5_draw_grid():
@@ -1770,7 +1770,7 @@ The next iteration looks like this:
   <span style="color: var(--accent);">█</span> processed: <code>(1, 0), (0, 0), (2, 0), (1, 1)</code>;&nbsp;
   <span style="color: var(--accent-2);">█</span> fringe: <code>(0, 1), (1, 2), (2, 1), (3, 0)</code>
 </p>
-<canvas id="ff6-grid-canvas" width="381" height="255" style="display: block; margin: 0 auto;"></canvas>
+<canvas id="ff6-grid-canvas" width="381" height="255" style="display: block; margin: 0 auto; max-width: 100%; height: auto;"></canvas>
 
 <py-script>
 def ff6_draw_grid():
@@ -1803,7 +1803,7 @@ Here's the same logic, but applied to an interactive demo with a larger grid:
   <span style="color: var(--accent-2);">█</span> fringe
 </p>
 
-<canvas id="ff7-grid-canvas" width="464" height="222" style="display: block; margin: 0 auto;"></canvas>
+<canvas id="ff7-grid-canvas" width="464" height="222" style="display: block; margin: 0 auto; max-width: 100%; height: auto;"></canvas>
 
 <p id="ff7-grid-status">Click any empty cell to start spreading the fluid.</p>
 
@@ -1987,8 +1987,8 @@ def ff7_handle_canvas_click(evt):
         return
 
     rect = evt.target.getBoundingClientRect()
-    x = evt.clientX - rect.left
-    y = evt.clientY - rect.top
+    x = (evt.clientX - rect.left) / (ff7_canvas.width / rect.width)
+    y = (evt.clientY - rect.top) / (ff7_canvas.height / rect.height)
 
     cell = ff7_canvas_coords_to_cell(x, y)
     if cell is None:
