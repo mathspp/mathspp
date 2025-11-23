@@ -1987,8 +1987,8 @@ def ff7_handle_canvas_click(evt):
         return
 
     rect = evt.target.getBoundingClientRect()
-    x = (evt.clientX - rect.left) / (ff7_canvas.width / rect.width)
-    y = (evt.clientY - rect.top) / (ff7_canvas.height / rect.height)
+    x = (evt.clientX - rect.left) * (ff7_canvas.width / rect.width)
+    y = (evt.clientY - rect.top) * (ff7_canvas.height / rect.height)
 
     cell = ff7_canvas_coords_to_cell(x, y)
     if cell is None:
