@@ -4,16 +4,11 @@ metadata:
 title: "Deep unpacking | Pydon't 🐍"
 ---
 
-Deep unpacking (or nested unpacking) provides a more powerful way for you to
-write assignments in your code.
-Deep unpacking can be used to improve the readability of your code and help
-protect you against unexpected bugs.
-Learning about deep unpacking will also be very important in order to make
-the most out of the [structural matching][pep-634] feature that is to be introduced
-in Python 3.10.
+Learn about deep unpacking, a powerful way to write assignments in your code that protects you against unexpected bugs and that you'll rely on heavily when using the [structural pattern matching](/blog/pydonts/structural-pattern-matching-tutorial) feature that was introduced in Python 3.10.
 
 ===
 
+Deep, or structural, unpacking is a powerful way to write assignments in your code that improves the readability of your code, protects you against unexpected bugs, and that you'll rely on heavily when using the [structural pattern matching](/blog/pydonts/structural-pattern-matching-tutorial) feature that was introduced in Python 3.10.
 
 (If you are new here and have no idea what a Pydon't is, you may want to read the
 [Pydon't Manifesto][manifesto].)
@@ -27,7 +22,7 @@ In this Pydon't we will go over deep unpacking:
  - how to use it to help debug your code.
 
 Learning about deep unpacking will be **very** helpful in order to pave the road
-for [structural matching][pep-634], a feature to be introduced in Python 3.10.
+for [structural matching][pep-634], a feature introduced in Python 3.10.
 
 ## Assignments
 
