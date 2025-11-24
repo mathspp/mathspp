@@ -1,0 +1,19 @@
+date: 23-11-2025 23:34
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to inline SVGs in Jupyter notebooks in two simple steps."
+    og:image: "https://mathspp.com/blog/til/inline-svgs-in-jupyter-notebooks/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/inline-svgs-in-jupyter-notebooks/thumbnail.webp"
+references:
+    - "“inlining SVG image in a markdown cell” Stack Overflow question, <https://stackoverflow.com/a/44323948/2828287> [last accessed 24-11-2025];"
+routes:
+    aliases:
+        - "/blog/til/137"
+slug: "inline-svgs-in-jupyter-notebooks"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - python
+      - programming
+title: "TIL #137 – Inline SVGs in Jupyter notebooks"
+visible: false
