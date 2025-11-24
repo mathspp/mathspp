@@ -30,10 +30,10 @@
     "words": 384591
   },
   "python": {
-    "articles": 307,
+    "articles": 306,
     "code_snippets": 3813,
     "loc": 36640,
-    "words": 381856
+    "words": 381618
   },
   "algorithms": {
     "articles": 26,
@@ -204,10 +204,10 @@
     "words": 6155
   },
   "productivity": {
-    "articles": 30,
+    "articles": 31,
     "code_snippets": 165,
     "loc": 1606,
-    "words": 17962
+    "words": 18200
   },
   "metaprogramming": {
     "articles": 3,

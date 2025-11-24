@@ -13,7 +13,7 @@ slug: "inline-svgs-in-jupyter-notebooks"
 taxonomy:
     category: [blogpost, til]
     tag:
-      - python
+      - productivity
       - programming
 title: "TIL #137 – Inline SVGs in Jupyter notebooks"
 visible: false
