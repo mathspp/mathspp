@@ -1,0 +1,16 @@
+date: 24-11-2025 19:36
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "In this article you will learn about itertools.pairwise, how to use it, and how to generalise it."
+    og:image: "https://mathspp.com/blog/generalising-itertools-pairwise/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/generalising-itertools-pairwise/thumbnail.webp"
+references: []
+slug: "generalising-itertools-pairwise"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+      - programming
+      - python
+      - algorithms
+title: Generalising itertools.pairwise
