@@ -206,7 +206,7 @@ In this section we'll go through some examples of use cases for the `deque` data
  - how to [get the last item that satisfies a predicate](#get-last-item-that-satisfies-a-predicate);
  - how to [fully consume an iterator](#fully-consume-an-iterator);
  - how to [compute a moving average](#compute-moving-average);
- - how to [implement `itertools.pairwise`](#implement-itertoolspairwise);
+ - how to [implement `itertools.pairwise`](#implement-itertools-pairwise);
  - how to [save a sized action history](#save-undoredo-history); and
  - how to [buffer intermediate results inside an iterator-like object](#buffer-for-iterator-like-intermediate-results).
 

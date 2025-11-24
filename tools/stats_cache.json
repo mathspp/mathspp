@@ -1839,7 +1839,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/python-deque-tutorial": {
-    "timestamp": 1753281751.2323618,
+    "timestamp": 1764013662.2531981,
     "tags": [
       "modules",
       "programming",
@@ -6164,6 +6164,20 @@
       "code_snippets": 0,
       "loc": 0,
       "words": 238
+    }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/generalising-itertools-pairwise": {
+    "timestamp": 1764014991.675606,
+    "tags": [
+      "programming",
+      "python",
+      "algorithms"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 10,
+      "loc": 62,
+      "words": 587
     }
   }
 }

@@ -18,22 +18,22 @@
     "words": 35212
   },
   "programming": {
-    "articles": 313,
-    "code_snippets": 3934,
-    "loc": 37733,
-    "words": 384591
+    "articles": 314,
+    "code_snippets": 3944,
+    "loc": 37795,
+    "words": 385178
   },
   "python": {
-    "articles": 306,
-    "code_snippets": 3813,
-    "loc": 36640,
-    "words": 381618
+    "articles": 307,
+    "code_snippets": 3823,
+    "loc": 36702,
+    "words": 382205
   },
   "algorithms": {
-    "articles": 26,
-    "code_snippets": 264,
-    "loc": 3229,
-    "words": 35649
+    "articles": 27,
+    "code_snippets": 274,
+    "loc": 3291,
+    "words": 36236
   },
   "chatgpt": {
     "articles": 4,
@@ -564,10 +564,10 @@
     "words": 430
   },
   "__all": {
-    "articles": 434,
-    "code_snippets": 4083,
-    "loc": 38905,
-    "words": 474346
+    "articles": 435,
+    "code_snippets": 4093,
+    "loc": 38967,
+    "words": 474933
   },
   "fp": {
     "articles": 5,
