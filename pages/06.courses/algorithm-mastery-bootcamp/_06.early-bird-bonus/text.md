@@ -7,7 +7,7 @@ As an early bird joiner, you get access to a free early bird bonus that increase
  - Video walkthroughs of the solutions for the 48 preparation challenges.
 
 <div style="display:flex; justify-content:center;">
-<a class="btn"><strikethrough>Grab your <strong>free</strong> bonus</strikethrough></a>
+<a class="btn"><s>Grab your <strong>free</strong> bonus</s></a>
 </div>
 <br />
 
