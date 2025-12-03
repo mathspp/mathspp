@@ -149,12 +149,29 @@ from itertools import pairwise
 
 def nwise(iterable, n):
     if n == 1:
-        yield from iter(iterable)
+        yield from ((value,) for value in iterable)
         return
 
     for (head, *_), tail in pairwise(nwise(iterable, n - 1)):
         yield (head, *tail)
 ```
+
+The base case, for `n == 1`, returns 1-item tuples because we want to be able to unpack the recursive results in the `for` loop with `(head, *_)`.
+If you don't want to allow the argument `n == 1`, you can use `n == 2` as the base case with `pairwise`:
+
+```py
+from itertools import pairwise
+
+def nwise(iterable, n):
+    if n == 2:
+        yield from pairwise(iterable)
+        return
+
+    for (head, *_), tail in pairwise(nwise(iterable, n - 1)):
+        yield (head, *tail)
+```
+
+This might look more natural.
 
 
 ## Conclusion

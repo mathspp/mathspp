@@ -6167,7 +6167,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/generalising-itertools-pairwise": {
-    "timestamp": 1764014991.675606,
+    "timestamp": 1764752800.1606655,
     "tags": [
       "programming",
       "python",
@@ -6175,9 +6175,9 @@
     ],
     "stats": {
       "articles": 1,
-      "code_snippets": 10,
-      "loc": 62,
-      "words": 587
+      "code_snippets": 11,
+      "loc": 71,
+      "words": 643
     }
   }
 }
