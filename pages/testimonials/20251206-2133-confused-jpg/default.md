@@ -1,5 +1,5 @@
 ---
-company_and_title: 
+company_and_title: <a href="/insider">mathspp insider</a> subscriber
 date: "2025-12-06 21:33"
 name: confused.jpg
 # link:
@@ -8,7 +8,8 @@ taxonomy:
     category: review
     review-tag:
       - newsletter
-published: false
+      - newsletter-insider
+published: true
 ---
 
 Reading the newsletter is a nice way to get new ideas or insights into features I've never/rarely seen before.
