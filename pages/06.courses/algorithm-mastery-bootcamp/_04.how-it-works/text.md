@@ -1,9 +1,9 @@
 ## How it works
 
-TL;DR: You solve two problems per day, from December 1st through December 12th.
-The problems get harder as the days go by and the final problems are always challenging.
+TL;DR: You solve two problems per week, from January 5th through March 27th.
+The problems get harder as the weeks go by and the final problems are always challenging.
 
-Each day, you get a new programming challenge that you try to solve with Python.
+Each week, you get a new programming challenge that you try to solve with Python.
 When you solve it, you automatically unlock a new, harder problem.
 
 The second problem is similar to the first problem but forces you to be more careful about your code: if you solved problem 1 with spaghetti code, that won't work for problem 2!

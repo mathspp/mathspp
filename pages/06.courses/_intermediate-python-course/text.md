@@ -1,7 +1,7 @@
 ## Intermediate Python course
 
 - **Next dates**:
-   - 12th – 16th January 2026
+   - 26th – 30th January 2026
 - **Price**: $490
 - **Limited spots available**
 

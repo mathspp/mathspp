@@ -4,11 +4,11 @@ image_align: left
 
 ## Algorithm Mastery bootcamp
 
-- **Dates**: 1st – 12th December 2025
-- **Price**: Starting from $69
+- **Dates**: 5th January – 27th March
+- **Price**: $69 for full access; $349 for individual coaching and code reviews
 
-This intensive bootcamp is aimed at helping you gain confidence in your programming skills through 12 days of problem-solving while you're immersed in our community.
-By joining, you'll improve your knowledge of software best practices, the Python language, Computer Science algorithms and data structures, and you'll gain self-sufficiency to stop relying on LLMs for all your code.
+This intensive bootcamp is aimed at helping you gain confidence in your programming skills through 12 weeks of problem-solving while you're immersed in our community.
+By joining, you'll improve your knowledge of Python best practices, the Python language, Computer Science algorithms and data structures, and you'll gain self-sufficiency to stop relying on LLMs for all your code.
 
 
 <div style="display:flex; justify-content:center;">

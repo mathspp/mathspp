@@ -7,12 +7,6 @@ That's fair. Send me an email to rodrigo@mathspp.com with your expected availabi
 </details>
 
 <details markdown="1">
-<summary>Will you have a Black Friday sale?</summary>
-
-No. We're starting the prep sessions before the Black Friday. I don't want you to start one step behind because you waited for a sale!
-</details>
-
-<details markdown="1">
 <summary>Do you offer special pricing for groups?</summary>
 
 Yes. If you want to enroll with your team or with a group of friends (3 or more people), email me to rodrigo@mathspp.com with the number of participants and I'll send you a discount code.
@@ -74,13 +68,7 @@ Best regards,
 <details markdown="1">
 <summary>Where are the problems taken from?</summary>
 
-The problems will be sourced from the Advent of Code 2025 event, which means we'll be solving problems no one has solved before. This keeps the bootcamp exciting and engaging, as we're all working together to write the best solutions possible.
-</details>
-
-<details markdown="1">
-<summary>I thought Advent of Code lasted 25 days!</summary>
-
-Starting this year, Advent of Code will only go from the 1st of December through the 12th. This is excellent for us because it allows us to have a very intense and focused two weeks of growth.
+The problems will be sourced from the Advent of Code 2025 event.
 </details>
 
 <details markdown="1">

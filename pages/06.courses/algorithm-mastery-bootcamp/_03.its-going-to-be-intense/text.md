@@ -3,11 +3,10 @@
 This bootcamp is designed to be **intense**.
 To make the most ouf of this experience, you'll need to:
 
- - solve two programming challenges per day, which might require spending time debugging your own code and double-checking and triple-checking the problem statement to see if you didn't miss anything;
+ - solve two programming challenges per week, which might require spending time debugging your own code and double-checking and triple-checking the problem statement to see if you didn't miss anything;
  - read alternative solutions written by other participants to improve your understanding of the problem and possible solutions;
- - help your fellow members of the exclusive bootcamp community;
- - attend the solution walkthrough live session, where I am live coding my solution to the problem; and
- - attend the exclusive solution-analysis live session, where we work together to understand multiple different approaches to the same problem, figure out why some algorithms are better than others, and possibly discuss solutions shared by members of the community.
+ - help your fellow members of the exclusive bootcamp community; and
+ - watch the solution walkthroughs, where I am live coding one possible solution to the problem.
 
 You don't need to do any of this.
 You can paste the problem into ChatGPT and the code might just work...
