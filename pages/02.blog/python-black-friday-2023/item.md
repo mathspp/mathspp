@@ -51,7 +51,7 @@ You can learn more about the Python Problem-Solving Bootcamp [here](/courses/alg
 
  - [Python Morsels](https://www.pythonmorsels.com/lifetime-access-sale/) (by Trey Hunner) lifetime access for the price of a 2-year subscription, no code needed.
 
- - Reuven Lerner's [new membership offer is 25% off](https://lernerpython.com/bfcm-2023/) for the first 100 members.
+ - Reuven Lerner's [new membership offer is 25% off](https://lernerpython.com/) for the first 100 members.
 
 
 ## Miscellanious
