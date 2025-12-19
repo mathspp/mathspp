@@ -49,7 +49,7 @@ The problem is that for a long time I didn't use the `frontmatter.yaml` file to 
 
 Being a scripting language, Python excels at this type of tasks. I realized I could easily write a Python script that would traverse my blog directory, looking for pairs of `.pt.md` and `.en.md` pages, finding the headers those pages have in common, and then updating the corresponding `frontmatter.yaml` (or creating a new one if needed).
 
-That is how my little [YAMLUtils] project was born. The [`yamlutils.py`][yamlutils.py] script takes a folder path as a command line argument (and optionally a `-r` flag to traverse the directories recursively) and then does what I just described, merging all the YAML headers it can. I used it on my blog with `python yamlutils.py pages/ -r` and you can see what it did [in this commit](https://github.com/RodrigoGiraoSerrao/mathspp/commit/7ba80b086d6987ed819c872432ef1eafc1f1b023). Imagine having to do all that by hand!
+That is how my little [YAMLUtils] project was born. The [`yamlutils.py`][yamlutils.py] script takes a folder path as a command line argument (and optionally a `-r` flag to traverse the directories recursively) and then does what I just described, merging all the YAML headers it can. I used it on my blog with `python yamlutils.py pages/ -r` and you can see what it did [in this commit](https://github.com/mathspp/mathspp/commit/7ba80b086d6987ed819c872432ef1eafc1f1b023). Imagine having to do all that by hand!
 
 More specifically, my script looks at the path you specified (and recurses if you set `-r`) and then, for each folder:
 
