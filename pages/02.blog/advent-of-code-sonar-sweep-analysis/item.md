@@ -239,7 +239,7 @@ After all, we have a single sequence at hands!
 As it turns out, the both patterns of “this item & the next one” and “this item & the previous one” are easily written with `zip`.
 We just have to remember that, if `seq` is a sequence, then `seq[1:]` means “drop the first element” and `seq[:-1]` means “drop the last element”:
 
-![](res/zip_pairwise.png)
+!["Diagram showing how zip can be used to implement pairwise."](_zip_pairwise.webp)
 
 
 ```python
@@ -279,7 +279,7 @@ You can pick any other two names you prefer, or use `for prev, next_ in ...`.
 To simplify things a bit, especially when doing a similar thing with three or more iterables, we can actually omit the slices that are cutting from the end, because `zip` stops as soon as one iterable stops.
 In other words, we don't need to specify `depths[:-1]`:
 
-![](res/zip_stops_shortest.png)
+!["Diagram showing how zip works in this context."](_zip_stops_shortest.webp)
 
 With that in mind, we can remove the extra slice:
 

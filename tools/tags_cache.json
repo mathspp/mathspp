@@ -3,7 +3,7 @@
     "articles": 434,
     "code_snippets": 4086,
     "loc": 38945,
-    "words": 474286
+    "words": 474302
   },
   "bpci": {
     "articles": 10,
@@ -27,19 +27,19 @@
     "articles": 314,
     "code_snippets": 3945,
     "loc": 37804,
-    "words": 385234
+    "words": 385250
   },
   "python": {
     "articles": 307,
     "code_snippets": 3824,
     "loc": 36711,
-    "words": 382261
+    "words": 382277
   },
   "algorithms": {
     "articles": 27,
     "code_snippets": 275,
     "loc": 3300,
-    "words": 36292
+    "words": 36308
   },
   "llm": {
     "articles": 5,
@@ -75,7 +75,7 @@
     "articles": 125,
     "code_snippets": 449,
     "loc": 4449,
-    "words": 110321
+    "words": 110337
   },
   "number theory": {
     "articles": 8,
