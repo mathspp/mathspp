@@ -29,8 +29,8 @@ A program that takes a formula and tries to see if it is satisfiable is a SAT so
 
 ## The formula you are checking
 
-You need an example formula to use as an example...
-You can start with something small, with three variables:
+You need a formula to use as an example...
+You can start with something small, like this:
 
 ```py
 formula = Or([
@@ -153,7 +153,45 @@ Finally, you zip the variable names and the potential values together to create 
 
 This is what gets passed to the function `evaluate`, which will check if the given assignment satisfies the formula or not.
 
+## Grabbing all variable names
+
+Before being able to run your SAT solver, you still need to define the function `varnames`.
+
+This function accepts a formula to traverse it and find all the variables being used in the formula.
+
+Once more, you'll use recursion and structural pattern matching:
+
+```py
+def varnames(formula: Formula) -> list[str]:
+    names: set[str] = set()
+
+    def fetch_names(formula: Formula) -> None:
+        match formula:
+            case Var(name):
+                names.add(name)
+            case Or(exprs) | And(exprs):
+                for expr in exprs:
+                    fetch_names(expr)
+            case Not(expr):
+                fetch_names(expr)
+            case _:
+                raise RuntimeError
+    fetch_names(formula)
+
+    return list(names)
+```
+
+By defining the set `names` inside `varnames` but outside `fetch_names` you get to use it as a nonlocal inside the function `fetch_names`.
+
+You could also pass a set or list of names up and down the recursive calls but I figured this was cleaner.
+
+The reason you're using a set is to make it easier to deal with duplicate variable names...
+
+The set does everything and in the end you only have the unique variable names.
+
 ## Running the SAT solver
+
+Now that you have all the pieces, you can run your SAT solver.
 
 If you run the SAT solver on your formula, you will get one of the many possible assignments that work:
 
