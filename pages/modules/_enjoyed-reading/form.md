@@ -34,7 +34,7 @@ form:
     process:
         captcha: true
         newsletter-subscriber: true
-        display: /insider/wait-one-more-thing
+        redirect: /insider/wait-one-more-thing
 ---
 
 ## Enjoyed reading? 🐍🚀
