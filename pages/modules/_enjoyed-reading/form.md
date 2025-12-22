@@ -39,4 +39,4 @@ form:
 
 ## Enjoyed reading? 🐍🚀
 
-Enter your email address and I'll send you one Python deep dive like this every week.
+Enter your best email address and I'll send you one Python deep dive like this every week.
