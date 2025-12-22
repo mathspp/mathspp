@@ -2,7 +2,7 @@
 date: 22-12-2025
 metadata:
     description: "Learn how to write your own SAT solver in Python in this sample of the mathspp insider weekly newsletter."
-title: Dark computer science “translation”
+title: SAT solver
 
 process:
   twig: true
@@ -302,6 +302,28 @@ Took me a minute!
 What you can do, which is much better, is to write a function that accepts a graph (maybe the node names and a list of edges) and automatically builds the formula that represents the 3-colouring problem.
 
 Give this a go and send me your code when you're done!
+
+## What's the point..?
+
+Well, but what was the point of this whole thing?
+
+For one, you looked at a lot of useful Python features and constructs like dataclasses, structural pattern matching, recursion, and more.
+
+But this can also be the key to solving the P vs NP problem.
+
+Your SAT solver uses brute force...
+
+But if you, or _someone_, is able to write a SAT solver that uses an efficient algorithm...
+
+Then, that person would win one million dollars and solve one of the most well-known problems in mathematics and computer science!
+
+That's because SAT is NP-complete, remember?
+
+That means every NP problem can be written as a SAT problem.
+
+And if you have an efficient algorithm for SAT, you show that the SAT problem is actually a P problem...
+
+But if all NP problems can become a SAT problem, then all NP problems are actually P problems!
 
 ## Enjoyed reading? 🐍🚀
 
