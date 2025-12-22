@@ -34,7 +34,7 @@ form:
     process:
         captcha: true
         newsletter-subscriber: true
-        display: wait-one-more-thing
+        display: /insider/wait-one-more-thing
 ---
 
 ## Enjoyed reading? 🐍🚀
