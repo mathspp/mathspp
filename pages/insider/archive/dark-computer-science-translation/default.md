@@ -1,14 +1,15 @@
 ---
+date: 15-12-2025
 metadata:
-    description: "Learn to declare type relationships in functions and why that would be relevant in this sample of the mathspp insider weekly newsletter."
-title: One million dollars
+    description: "Learn about the one-million dollars P vs NP problem, the concept of NP-completeness, and the SAT problem, in this sample of the mathspp insider weekly newsletter."
+title: Dark computer science “translation”
 
 process:
   twig: true
 cache_enable: false
 ---
 
-# 🐍🚀 one million dollars
+# 🐍🚀 dark computer science “translation”
 
  > This is a past issue of the [mathspp insider 🐍🚀](/insider) newsletter. [Subscribe to the mathspp insider 🐍🚀](/insider#subscribe) to get weekly Python deep dives like this one on your inbox!
 
