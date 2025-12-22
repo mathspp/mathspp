@@ -68,7 +68,7 @@ That’s what I’m going to show now.
 
 Take a look at the graph below:
 
-![Graph with four nodes A B C D. Edges between AB, AC, AD, and BC.]
+![Graph with four nodes A B C D. Edges between AB, AC, AD, and BC.](_graph.webp)
 
 Can you paint the nodes A, B, C, and D, with **three colours only** (red, green, blue), such that no two nodes that are connected share the same colour?
 
