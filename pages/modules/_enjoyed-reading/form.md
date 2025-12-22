@@ -16,7 +16,7 @@ form:
         email:
           display_label: false
           autocomplete: true
-          placeholder: Your best email address
+          placeholder: Your bst email address
           type: email
           validate:
             required: true
