@@ -14,4 +14,4 @@ cache_enable: false
 
 ## the text goes here!
 
-{% include "forms/form.html.twig" with {form: forms( {route: '/modules/_enjoyed-reading'} ) } %}
+{% include "forms/form.html.twig" with {form: forms( {route: '/insider/_subscribe'} ) } %}
