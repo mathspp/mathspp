@@ -28,9 +28,9 @@ title: "Llm blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">5</th>
-            <th style="text-align: center;">6,763</th>
-            <th style="text-align: center;">809</th>
+            <th style="text-align: center;">6</th>
+            <th style="text-align: center;">7,258</th>
+            <th style="text-align: center;">819</th>
         </tr>
     </thead>
     <tbody>

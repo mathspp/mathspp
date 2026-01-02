@@ -180,10 +180,10 @@
     "words": 12183
   },
   "productivity": {
-    "articles": 31,
-    "code_snippets": 165,
-    "loc": 1606,
-    "words": 18200
+    "articles": 32,
+    "code_snippets": 170,
+    "loc": 1616,
+    "words": 18695
   },
   "logic": {
     "articles": 34,
@@ -402,10 +402,10 @@
     "words": 2443
   },
   "llm": {
-    "articles": 5,
-    "code_snippets": 109,
-    "loc": 809,
-    "words": 6763
+    "articles": 6,
+    "code_snippets": 114,
+    "loc": 819,
+    "words": 7258
   },
   "json": {
     "articles": 5,
@@ -564,10 +564,10 @@
     "words": 430
   },
   "__all": {
-    "articles": 434,
-    "code_snippets": 4086,
-    "loc": 38945,
-    "words": 474302
+    "articles": 435,
+    "code_snippets": 4091,
+    "loc": 38955,
+    "words": 474797
   },
   "fp": {
     "articles": 5,

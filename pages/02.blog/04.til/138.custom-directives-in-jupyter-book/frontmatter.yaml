@@ -1,0 +1,18 @@
+date: 02-01-2026 22:22
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to create and register a simple Sphinx extension to use as a custom directive in a Jupyter Book project."
+    og:image: "https://mathspp.com/blog/til/custom-directives-in-jupyter-book/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/custom-directives-in-jupyter-book/thumbnail.webp"
+references: []
+routes:
+    aliases:
+        - "/blog/til/138"
+slug: "custom-directives-in-jupyter-book"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - productivity
+      - llm
+title: "TIL #138 – Custom directives in Jupyter Book"
+visible: false
