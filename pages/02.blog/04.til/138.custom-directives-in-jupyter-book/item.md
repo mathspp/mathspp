@@ -16,7 +16,7 @@ With the help of ChatGPT I was able to quickly whip up a Sphinx extension that d
 After a bit of back and forth and some manual tweaks, this is the directive I ended up with:
 
 <details markdown="1">
-<summary><code>mypy_directive.py</code></summary>
+<summary><code>_ext/mypy_directive.py</code></summary>
 
 
     """
@@ -119,6 +119,8 @@ sphinx:
   extra_extensions:
     - mypy_directive
 ```
+
+This assumes the code `mypy_directive.py` lives inside `_ext` in the root of my project directory.
 
 I find LLMs to be great for this sort of stuff.
 Without the help of ChatGPT I _could_ still do this but it would take me _so_ much time to research and figure out how to do it that I would either waste hours on this or not do it at all!
