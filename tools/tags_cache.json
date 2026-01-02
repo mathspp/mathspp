@@ -1,9 +1,9 @@
 {
   "__all": {
     "articles": 435,
-    "code_snippets": 4091,
-    "loc": 38956,
-    "words": 474797
+    "code_snippets": 4090,
+    "loc": 38953,
+    "words": 474798
   },
   "bpci": {
     "articles": 10,
@@ -43,9 +43,9 @@
   },
   "llm": {
     "articles": 6,
-    "code_snippets": 114,
-    "loc": 820,
-    "words": 7258
+    "code_snippets": 113,
+    "loc": 817,
+    "words": 7259
   },
   "machine learning": {
     "articles": 11,
@@ -205,9 +205,9 @@
   },
   "productivity": {
     "articles": 32,
-    "code_snippets": 170,
-    "loc": 1617,
-    "words": 18695
+    "code_snippets": 169,
+    "loc": 1614,
+    "words": 18696
   },
   "metaprogramming": {
     "articles": 3,

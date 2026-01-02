@@ -4,13 +4,10 @@ Today I learned how to create and register a simple Sphinx extension to use as a
 
 I wanted to create a custom directive that I could use in a [Jupyter Book](https://jupyterbook.org/v1/start/overview.html) project that would look like this:
 
-````markdown
-Some prose goes here.
+    Some prose goes here.
 
-```{mypy} snippet.py
-```
-
-````
+    ```{mypy} snippet.py
+    ```
 
 Then, the directive `{mypy}` would run mypy against the file `snippet.py` and include the mypy output in the book.
 
