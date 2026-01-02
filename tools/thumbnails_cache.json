@@ -182,7 +182,7 @@
   "productivity": {
     "articles": 32,
     "code_snippets": 168,
-    "loc": 1693,
+    "loc": 1692,
     "words": 18443
   },
   "logic": {
@@ -404,7 +404,7 @@
   "llm": {
     "articles": 6,
     "code_snippets": 112,
-    "loc": 896,
+    "loc": 895,
     "words": 7006
   },
   "json": {
@@ -566,7 +566,7 @@
   "__all": {
     "articles": 435,
     "code_snippets": 4089,
-    "loc": 39032,
+    "loc": 39031,
     "words": 474545
   },
   "fp": {

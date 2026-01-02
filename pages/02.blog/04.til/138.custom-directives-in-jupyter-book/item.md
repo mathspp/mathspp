@@ -107,7 +107,6 @@ After a bit of back and forth and some manual tweaks, this is the directive I en
         app.add_directive("mypy", MypyDirective)
         return {"version": "0.1", "parallel_read_safe": True, "parallel_write_safe": True}
 
-
 </details>
 
 To be able to use it, I had to tweak the book configuration to tell it where to find my extension:
