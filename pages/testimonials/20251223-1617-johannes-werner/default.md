@@ -8,7 +8,8 @@ taxonomy:
     category: review
     review-tag:
       - talk
-published: false
+published: true
 ---
 
-I saw one Rodrigo's Europython talk about itertools online and this is the best overview of this library I have seen so far. I believe that itertools is one of these libraries that every Python developer should be familiar with and Rodrigo's engaging and motivating presentation style was really enjoyful.
+I saw one Rodrigo's Europython talk about `itertools` online and this is the best overview of this library I have seen so far.
+I believe that `itertools` is one of these libraries that every Python developer should be familiar with and Rodrigo's engaging and motivating presentation style was really enjoyful.
