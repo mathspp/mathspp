@@ -18,95 +18,95 @@ After a bit of back and forth and some manual tweaks, this is the directive I en
 <details markdown="1">
 <summary><code>mypy_directive.py</code></summary>
 
-````py
-"""
-Creates a Sphinx directive {mypy} that runs mypy on the given file and includes the output.
-When used as ```{mypy} script.py in a file called `xx.some-chapter.md`, this directive
-will try to find the file in `snippets/some-chapter/script.py`.
-If the file argument contains slashes, it is interpreted as an absolute path.
-"""
 
-from __future__ import annotations
-
-import subprocess
-from pathlib import Path
-from typing import Any, List
-
-from docutils import nodes
-from sphinx.util.docutils import SphinxDirective
-
-
-class MypyDirective(SphinxDirective):
     """
-    Usage (MyST):
-        ```{mypy} path/to/file.py
-        :flags: --strict --show-error-codes
-        ```
+    Creates a Sphinx directive {mypy} that runs mypy on the given file and includes the output.
+    When used as ```{mypy} script.py in a file called `xx.some-chapter.md`, this directive
+    will try to find the file in `snippets/some-chapter/script.py`.
+    If the file argument contains slashes, it is interpreted as an absolute path.
     """
 
-    required_arguments = 1  # the file path
-    optional_arguments = 0
-    has_content = False
+    from __future__ import annotations
 
-    option_spec = {
-        "flags": lambda s: s,  # pass extra mypy CLI flags as a single string
-    }
+    import subprocess
+    from pathlib import Path
+    from typing import Any, List
 
-    def run(self) -> List[nodes.Node]:
-        script_arg = self.arguments[0]
-        env = self.env
-
-        # Get current document filename (e.g. "given-chapter")
-        # env.docname is like "chapters/given-chapter" (no extension)
-        _, _, chapter_name = Path(env.docname).name.partition(".")
-
-        # If the user passed just "script.py", infer snippets/<chapter>/<script.py>.
-        # If they passed a path with a slash, treat it as explicit.
-        if "/" not in script_arg and "\\" not in script_arg:
-            inferred_rel = str(Path("snippets") / chapter_name / script_arg)
-        else:
-            inferred_rel = script_arg
-
-        # Sphinx helper: resolve filenames relative to doc, and track dependencies
-        _, abs_path_str = env.relfn2path(inferred_rel)
-        abs_path = Path(abs_path_str)
-
-        # Ensure rebuilds happen when the file changes
-        env.note_dependency(str(abs_path))
-
-        if not abs_path.exists():
-            msg = f"[mypy] File not found: {abs_path}"
-            return [nodes.literal_block(text=msg)]
-
-        flags = self.options.get("flags", "").strip()
-        cmd: list[str] = ["mypy", str(abs_path)]
-        if flags:
-            cmd.extend(flags.split())
-
-        proc = subprocess.run(
-            cmd,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.STDOUT,
-            text=True,
-            cwd=abs_path.parent,
-        )
-
-        output = proc.stdout.rstrip()
-        if not output:
-            output = "[mypy] (no output)"
-
-        output = f"$ mypy {abs_path.name}\n" + output
-
-        # Render as a literal block (monospace). “language” here is just for CSS/classes.
-        block = nodes.literal_block(output, output)
-        block["language"] = "text"
-        return [block]
+    from docutils import nodes
+    from sphinx.util.docutils import SphinxDirective
 
 
-def setup(app: Any) -> dict[str, Any]:
-    app.add_directive("mypy", MypyDirective)
-    return {"version": "0.1", "parallel_read_safe": True, "parallel_write_safe": True}
-````
+    class MypyDirective(SphinxDirective):
+        """
+        Usage (MyST):
+            ```{mypy} path/to/file.py
+            :flags: --strict --show-error-codes
+            ```
+        """
+
+        required_arguments = 1  # the file path
+        optional_arguments = 0
+        has_content = False
+
+        option_spec = {
+            "flags": lambda s: s,  # pass extra mypy CLI flags as a single string
+        }
+
+        def run(self) -> List[nodes.Node]:
+            script_arg = self.arguments[0]
+            env = self.env
+
+            # Get current document filename (e.g. "given-chapter")
+            # env.docname is like "chapters/given-chapter" (no extension)
+            _, _, chapter_name = Path(env.docname).name.partition(".")
+
+            # If the user passed just "script.py", infer snippets/<chapter>/<script.py>.
+            # If they passed a path with a slash, treat it as explicit.
+            if "/" not in script_arg and "\\" not in script_arg:
+                inferred_rel = str(Path("snippets") / chapter_name / script_arg)
+            else:
+                inferred_rel = script_arg
+
+            # Sphinx helper: resolve filenames relative to doc, and track dependencies
+            _, abs_path_str = env.relfn2path(inferred_rel)
+            abs_path = Path(abs_path_str)
+
+            # Ensure rebuilds happen when the file changes
+            env.note_dependency(str(abs_path))
+
+            if not abs_path.exists():
+                msg = f"[mypy] File not found: {abs_path}"
+                return [nodes.literal_block(text=msg)]
+
+            flags = self.options.get("flags", "").strip()
+            cmd: list[str] = ["mypy", str(abs_path)]
+            if flags:
+                cmd.extend(flags.split())
+
+            proc = subprocess.run(
+                cmd,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                text=True,
+                cwd=abs_path.parent,
+            )
+
+            output = proc.stdout.rstrip()
+            if not output:
+                output = "[mypy] (no output)"
+
+            output = f"$ mypy {abs_path.name}\n" + output
+
+            # Render as a literal block (monospace). “language” here is just for CSS/classes.
+            block = nodes.literal_block(output, output)
+            block["language"] = "text"
+            return [block]
+
+
+    def setup(app: Any) -> dict[str, Any]:
+        app.add_directive("mypy", MypyDirective)
+        return {"version": "0.1", "parallel_read_safe": True, "parallel_write_safe": True}
+
 
 </details>
 

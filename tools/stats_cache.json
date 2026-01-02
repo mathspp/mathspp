@@ -6181,16 +6181,16 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/138.custom-directives-in-jupyter-book": {
-    "timestamp": 1767393329.4271858,
+    "timestamp": 1767393406.3186297,
     "tags": [
       "productivity",
       "llm"
     ],
     "stats": {
       "articles": 1,
-      "code_snippets": 4,
-      "loc": 8,
-      "words": 496
+      "code_snippets": 3,
+      "loc": 87,
+      "words": 243
     }
   }
 }
