@@ -2,7 +2,7 @@
   "__all": {
     "articles": 435,
     "code_snippets": 4091,
-    "loc": 38955,
+    "loc": 38956,
     "words": 474797
   },
   "bpci": {
@@ -44,7 +44,7 @@
   "llm": {
     "articles": 6,
     "code_snippets": 114,
-    "loc": 819,
+    "loc": 820,
     "words": 7258
   },
   "machine learning": {
@@ -206,7 +206,7 @@
   "productivity": {
     "articles": 32,
     "code_snippets": 170,
-    "loc": 1616,
+    "loc": 1617,
     "words": 18695
   },
   "metaprogramming": {

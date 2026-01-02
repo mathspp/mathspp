@@ -9,6 +9,7 @@ Some prose goes here.
 
 ```{mypy} snippet.py
 ```
+
 ````
 
 Then, the directive `{mypy}` would run mypy against the file `snippet.py` and include the mypy output in the book.
