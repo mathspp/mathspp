@@ -33,7 +33,7 @@ form:
     buttons:
         submit:
           type: submit
-          value: Submit
+          value: Take your Python to the next level 🐍🚀
 
     process:
         captcha: true
@@ -41,7 +41,7 @@ form:
         display: /insider/wait-one-more-thing
 ---
 
-## Improve with weekly deep dives 🐍🚀
+## Improve with weekly deep dives 
 
 Get a weekly Python deep dive and take your Python skills to the next level.
 
