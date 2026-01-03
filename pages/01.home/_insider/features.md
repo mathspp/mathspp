@@ -41,9 +41,7 @@ form:
         display: /insider/wait-one-more-thing
 ---
 
-## Improve with weekly deep dives 
-
-Get a weekly Python deep dive and take your Python skills to the next level.
+## Improve with weekly Python deep dives 
 
 {% include "forms/form.html.twig" with {form: forms("subscribe")} %}
 
