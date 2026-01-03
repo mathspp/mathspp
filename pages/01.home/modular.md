@@ -13,11 +13,6 @@ metadata:
     twitter:image: "https://mathspp.com/thumbnail.webp"
 onpage_menu: false
 visible: false
-plugins:
-  anchors:
-    enabled: false
-    active: false
-anchors:
-    enabled: false
+page-toc:
     active: false
 ---
