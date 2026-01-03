@@ -33,7 +33,7 @@ form:
     buttons:
         submit:
           type: submit
-          value: Take your Python to the next level 🐍🚀
+          value: Subscribe & take my Python to the next level 🐍🚀
 
     process:
         captcha: true
