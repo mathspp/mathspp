@@ -5,8 +5,7 @@ content:
     order:
         custom:
           - "_hero"
-          - "_welcome-video"
-          - "_how_can_i_help"
+          - "_insider"
           - "_testimonials"
 metadata:
     author: "Rodrigo Girão Serrão"
