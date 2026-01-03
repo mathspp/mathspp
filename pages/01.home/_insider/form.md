@@ -37,6 +37,6 @@ form:
         display: /insider/wait-one-more-thing
 ---
 
-## Become a mathspp insider 🐍🚀
+## Improve with weekly deep dives 🐍🚀
 
 Get a weekly Python deep dive and take your Python skills to the next level.
