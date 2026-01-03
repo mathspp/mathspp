@@ -17,4 +17,7 @@ plugins:
   anchors:
     enabled: false
     active: false
+anchors:
+    enabled: false
+    active: false
 ---
