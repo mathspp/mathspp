@@ -3,6 +3,7 @@ title: Subscribe
 process:
     twig: true
 cache_enable: false
+class: offset-box
 
 form:
     name: subscribe
