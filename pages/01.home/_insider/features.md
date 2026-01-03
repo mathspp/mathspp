@@ -46,3 +46,10 @@ form:
 Get a weekly Python deep dive and take your Python skills to the next level.
 
 {% include "forms/form.html.twig" with {form: forms("subscribe")} %}
+
+<style>
+form[name="subscribe"] {
+    max-width: 70%;
+    margin: auto;
+}
+</style>
