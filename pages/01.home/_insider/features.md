@@ -1,5 +1,8 @@
 ---
 title: Subscribe
+process:
+    twig: true
+cache_enable: false
 
 form:
     name: subscribe
@@ -40,3 +43,5 @@ form:
 ## Improve with weekly deep dives 🐍🚀
 
 Get a weekly Python deep dive and take your Python skills to the next level.
+
+{% include "forms/form.html.twig" with {form: forms("subscribe")} %}
