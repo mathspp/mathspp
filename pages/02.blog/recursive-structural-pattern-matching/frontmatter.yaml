@@ -1,0 +1,16 @@
+date: 08-01-2026 16:22
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Learn how to use structural pattern matching (the match statement) to work recursively through tree-like structures."
+    og:image: "https://mathspp.com/blog/recursive-structural-pattern-matching/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/recursive-structural-pattern-matching/thumbnail.webp"
+references: []
+slug: "recursive-structural-pattern-matching"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+      - python
+      - programming
+      - recursion
+title: Recursive structural pattern matching

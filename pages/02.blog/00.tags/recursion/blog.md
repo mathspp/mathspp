@@ -28,9 +28,9 @@ title: "Recursion blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">12</th>
-            <th style="text-align: center;">16,234</th>
-            <th style="text-align: center;">1,516</th>
+            <th style="text-align: center;">13</th>
+            <th style="text-align: center;">17,324</th>
+            <th style="text-align: center;">1,745</th>
         </tr>
     </thead>
     <tbody>

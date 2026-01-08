@@ -3533,7 +3533,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/chaining-comparison-operators": {
-    "timestamp": 1763399053.7483895,
+    "timestamp": 1767450713.9636376,
     "tags": [
       "programming",
       "python"
@@ -6191,6 +6191,20 @@
       "code_snippets": 3,
       "loc": 86,
       "words": 258
+    }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/recursive-structural-pattern-matching": {
+    "timestamp": 1767896093.351701,
+    "tags": [
+      "python",
+      "programming",
+      "recursion"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 21,
+      "loc": 229,
+      "words": 1090
     }
   }
 }
