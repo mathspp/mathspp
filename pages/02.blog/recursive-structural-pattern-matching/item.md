@@ -99,11 +99,12 @@ def evaluate(expression: Expr, assignments: dict[str, bool]) -> bool:
         ...
 ```
 
-The call `evaluate(Var("A"), {"A": True})` will no produce the value `True`.
+The call `evaluate(Var("A"), {"A": True})` will now produce the value `True`.
 
 To implement the evaluation of `And` and `Or` formulas, you can use a variable to capture the attribute `exprs` and then use the built-ins `and` and `any`, respectively, to evaluate the subexpressions.
 
-It is at this point that the recursion comes in, since the subexpressions contained in `exprs` are, themselves, expressions of the type `Expr`, thus you can reuse the function `evaluate` to evaluate them:
+It is at this point that the recursion comes in, since the subexpressions contained in `exprs` are, themselves, expressions of the type `Expr`.
+This means you can reuse the function `evaluate` to evaluate them:
 
 ```py
 def evaluate(expression: Expr, assignments: dict[str, bool]) -> bool:
@@ -136,7 +137,7 @@ print(evaluate(expr, assignments))  # True
 ```
 
 Next up, and to conclude the evaluation of expressions, you have to implement the evaluation of `Not` formulas.
-(How would you do it..?)
+To evaluate an expression of the type `Not(expr)`, you just have to negate the evaluation of the subexpression `expr`:
 
 ```py
 def evaluate(expression: Expr, assignments: dict[str, bool]) -> bool:
@@ -155,12 +156,10 @@ def evaluate(expression: Expr, assignments: dict[str, bool]) -> bool:
             )
 ```
 
-To evaluate an expression of the type `Not(expr)`, you just have to negate the evaluation of the subexpression `expr`, as is done above.
-
 
 ## Pretty-printing formulas
 
-Suppose you're working a larger expression now.
+Suppose you're working with a larger expression now.
 Something like this:
 
 ```py
@@ -188,7 +187,7 @@ print(large_expr)
 Or(exprs=[Not(expr=And(exprs=[Var(name='v01'), Not(expr=Var(name='v02'))])), Or(exprs=[Var(name='v03'), Not(expr=Var(name='v04'))])])
 ```
 
-Can you use recursive structural pattern matching to write a function `pretty_print` that produces output that is formatted similarly to how the formula is written above?
+Can you use recursive structural pattern matching to write a function `pretty_print` that produces output that is formatted with indentation to make it easier to read the structure of the expression?
 
 The technique will be very similar to what you did above.
 You're going to start by matching the argument and then creating a `case` statement for each subclass or `Expr`:
@@ -289,6 +288,9 @@ def pretty_print(expression: Expr, depth: int = 0) -> None:
 
 If you try pretty printing the expression `large_expr`, you can see you're closer:
 
+```py
+pretty_print(large_expr)
+```
 ```text
 Or([
     Not(
@@ -339,6 +341,9 @@ def pretty_print(expression: Expr, depth: int = 0, tc: str = "") -> None:
 
 If you try this function out again, you get the correct output:
 
+```py
+pretty_print(large_expr)
+```
 ```text
 Or([
     Not(
@@ -359,7 +364,7 @@ Or([
 ```
 
 Strictly speaking, this doesn't match the original code 100%.
-That's because the original code kept the negations of variables in a single line, as `Not(Var(xxx))`, whereas the current implementation of `pretty_print` always splits the `Not`.
+That's because the original code kept the negations of variables in a single line, as `Not(Var(xxx))`, whereas the current implementation of `pretty_print` always splits the `Not` across 3+ lines.
 
 If you wanted to special-case this particular pattern, you could create a more specific pattern as a `case` statement:
 
@@ -379,6 +384,9 @@ def pretty_print(expression: Expr, depth: int = 0, tc: str = "") -> None:
 
 There you go, now the negations of variables are inlined:
 
+```py
+pretty_print(large_expr)
+```
 ```text
 Or([
     Not(

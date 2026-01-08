@@ -19,15 +19,15 @@
   },
   "programming": {
     "articles": 315,
-    "code_snippets": 3966,
-    "loc": 38033,
-    "words": 386340
+    "code_snippets": 3969,
+    "loc": 38036,
+    "words": 386341
   },
   "python": {
     "articles": 308,
-    "code_snippets": 3845,
-    "loc": 36940,
-    "words": 383367
+    "code_snippets": 3848,
+    "loc": 36943,
+    "words": 383368
   },
   "algorithms": {
     "articles": 27,
@@ -223,9 +223,9 @@
   },
   "recursion": {
     "articles": 13,
-    "code_snippets": 127,
-    "loc": 1745,
-    "words": 17324
+    "code_snippets": 130,
+    "loc": 1748,
+    "words": 17325
   },
   "nnfwp": {
     "articles": 6,
@@ -565,9 +565,9 @@
   },
   "__all": {
     "articles": 436,
-    "code_snippets": 4110,
-    "loc": 39260,
-    "words": 475650
+    "code_snippets": 4113,
+    "loc": 39263,
+    "words": 475651
   },
   "fp": {
     "articles": 5,

@@ -29,8 +29,8 @@ title: "Recursion blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">13</th>
-            <th style="text-align: center;">17,324</th>
-            <th style="text-align: center;">1,745</th>
+            <th style="text-align: center;">17,325</th>
+            <th style="text-align: center;">1,748</th>
         </tr>
     </thead>
     <tbody>

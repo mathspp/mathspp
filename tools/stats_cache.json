@@ -6194,7 +6194,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/recursive-structural-pattern-matching": {
-    "timestamp": 1767896093.351701,
+    "timestamp": 1767896609.3482242,
     "tags": [
       "python",
       "programming",
@@ -6202,9 +6202,9 @@
     ],
     "stats": {
       "articles": 1,
-      "code_snippets": 21,
-      "loc": 229,
-      "words": 1090
+      "code_snippets": 24,
+      "loc": 232,
+      "words": 1091
     }
   }
 }
