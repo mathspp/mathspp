@@ -43,6 +43,7 @@
     {% do assets.addJs('theme://js/site.js', {group:'bottom'}) %}
     {# {% do assets.addJs('theme://js/anchors.js', {group:'bottom'}) %} #}
     {# Do not enable Font Awesome SVG by default. {% do assets.addJs('theme://js/all.min.js', {group:'bottom'}) %} #}
+    {% do assets.addJs('theme://js/code_blocks_clipboard.js', {group:'bottom'}) %}
 {% endblock %}
 
 {% block assets deferred %}
