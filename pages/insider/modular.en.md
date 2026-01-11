@@ -1,9 +1,7 @@
 ---
 body_classes: "header-dark header-transparent landing-page"
 content:
-    items:
-        - "_hero"
-        - "_intro"
+    items: "@self.modular"
     order:
         custom:
           - "_hero"
