@@ -1,14 +1,13 @@
 ---
-body_classes: "header-dark header-transparent"
+body_classes: "header-dark header-transparent landing-page"
 content:
-    items: "@self.modular"
+    items:
+        - "_hero"
+        - "_intro"
     order:
         custom:
           - "_hero"
           - "_intro"
-          - "_testimonials"
-          - "_best-issues"
-          - "_subscribe"
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "mathspp insider 🐍🚀 is a weekly newsletter with Python deep dives delivered straight to your inbox."
