@@ -43,8 +43,7 @@ form:
 
 ## Improve with weekly Python 🐍 deep dives 🚀
 
-Receive a thoughtful Python deep dive every week.
-Each issue unpacks a single topic with analogies, diagrams, and code examples so you can write clearer, faster, and more idiomatic code.
+Each issue unpacks a topic with analogies, diagrams, and code examples so you can write clearer, faster, and more idiomatic code.
 
 {% include "forms/form.html.twig" with {form: forms("subscribe")} %}
 
