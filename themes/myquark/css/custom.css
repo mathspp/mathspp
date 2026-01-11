@@ -821,7 +821,7 @@ details[open]>summary {
     padding-bottom: 1rem;
 }
 
-landing-page #header,
-landing-page #footer {
+.landing-page #header,
+.landing-page #footer {
     display: none !important;
 }
