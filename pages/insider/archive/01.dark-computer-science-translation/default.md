@@ -198,4 +198,4 @@ Email me your code when you’re done!
 
 Get a Python deep dive 🐍🚀 every Monday by dropping your best email address below:
 
-{% include "forms/form.html.twig" with {form: forms( {route: '/insider/_subscribe'} ) } %}
+{% include "forms/form.html.twig" with {form: forms( {route: '/insider/_intro'} ) } %}
