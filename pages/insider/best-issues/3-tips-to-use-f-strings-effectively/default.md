@@ -6,7 +6,7 @@ title: 3 tips to use f-strings effectively
 
 # 🐍🚀 3 tips to use f-strings effectively
 
- > This is a past issue of the [mathspp insider 🐍🚀](/insider) newsletter. [Subscribe to the mathspp insider 🐍🚀](/insider#subscribe) to get weekly Python deep dives like this one on your inbox!
+ > This is a past issue of the [mathspp insider 🐍🚀](/insider) newsletter. [Subscribe to the mathspp insider 🐍🚀](/insider) to get weekly Python deep dives like this one on your inbox!
 
 ## 3 tips for f-strings
 

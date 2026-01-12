@@ -6,7 +6,7 @@ title: What's there beyond __init__?
 
 # 🐍🚀 what's there beyond `__init__`?
 
- > This is a past issue of the [mathspp insider 🐍🚀](/insider) newsletter. [Subscribe to the mathspp insider 🐍🚀](/insider#subscribe) to get weekly Python deep dives like this one on your inbox!
+ > This is a past issue of the [mathspp insider 🐍🚀](/insider) newsletter. [Subscribe to the mathspp insider 🐍🚀](/insider) to get weekly Python deep dives like this one on your inbox!
 
 ## `__init__` is just a method
 

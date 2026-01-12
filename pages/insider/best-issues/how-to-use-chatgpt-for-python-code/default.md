@@ -6,7 +6,7 @@ title: How to use ChatGPT for Python code
 
 # 🐍🚀 how to use ChatGPT for Python code
 
- > This is a past issue of the [mathspp insider 🐍🚀](/insider) newsletter. [Subscribe to the mathspp insider 🐍🚀](/insider#subscribe) to get weekly Python deep dives like this one on your inbox!
+ > This is a past issue of the [mathspp insider 🐍🚀](/insider) newsletter. [Subscribe to the mathspp insider 🐍🚀](/insider) to get weekly Python deep dives like this one on your inbox!
 
 ## The countdown timer
 
