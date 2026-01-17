@@ -6,7 +6,7 @@ Cheatsheet with the most common and useful uv commands to manage projects and de
 This cheatsheet lists the most commonly used commands and should be more than enough for you to get started using uv.
 For more advanced use cases, check [the uv docs](https://docs.astral.sh/uv/) and its guides.
 
-!!! Last updated for uv version 0.9.0.
+!!! Last updated for uv version 0.9.26.
 
 [Download this cheatsheet](https://gumroad.com/l/cheatsheet-uv?classes=btn,btn-lg,btn-center)
 
