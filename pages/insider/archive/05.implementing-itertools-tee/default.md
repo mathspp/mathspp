@@ -237,11 +237,10 @@ As an example, you can use `tee` to implement `itertools.pairwise`.
 Can you do it?
 
 
-
 ## Full source code
 
 <details markdown=1>
-<summary>Full source code for the implementation of <code>tee</code></summary>
+<summary>Full source code for the implementation of tee.</summary>
 
 
 ```py
