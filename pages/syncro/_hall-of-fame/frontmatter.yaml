@@ -218,6 +218,7 @@ hof:
   - "Luis Antunes Cabral, Lisboa (Portugal) <i class='fas fa-star'></i>"
   - "Rafael Marques (Portugal)"
   - "Arthur Belchior, Pato de Minas (Brasil)"
+  - "Tiago Couraceiro, Porto (Portugal) <i class='fas fa-star'></i>"
 process:
   twig: true
 twig_first: true
