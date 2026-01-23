@@ -1,6 +1,6 @@
 ## What you'll learn
 
-When you finish the course you will be able to
+The course revolves around some core concepts that you'll learn about and practice throughout the week:
 
  - **better looping**: write code that is more time- and memory-efficient by leveraging generators and better looping techniques;
  - **standard library**: code idiomatically by leveraging the most useful tools already available to you;
