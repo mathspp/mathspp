@@ -2,14 +2,12 @@
 class: offset-box
 ---
 
-## Overcome plateaus to keep growing your skills
+> “I learned more in one week than I could have learned in multiple weeks teaching myself.” — Kiel, past student
 
-You’ve mastered the basics – now it’s time to go further.
-If you can write small functions, scripts, and simple programs but struggle with larger, more complex projects, this practical and hands-on course is for you.
+> “One of the most useful things I learned wasn’t just what was taught, but how problems were approached.
+> This was one of the best learning experiences I’ve had. It was absolutely worth the time and financial investment.” — Mike, past student
 
-You'll learn how to code like a fluent Python developer by leveraging powerful tools, best practices, and workflows, that boost developer productivity and code efficiency and readability.
-
-**Next cohorts**:
+**Next cohort**:
 
 | Start | End |
 | | |
