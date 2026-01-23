@@ -5,5 +5,3 @@ hero_image: theme://images/common_hero.webp
 ---
 
 # Learn to write professional-level Python with confidence in 1 week
-
-![](_testimonials.webp)
