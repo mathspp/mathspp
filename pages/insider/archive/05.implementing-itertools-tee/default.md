@@ -2,7 +2,7 @@
 date: 19-01-2025
 metadata:
     description: "Learn how to implement itertools.tee efficiently using deques as buffers."
-title: Breaking a fundamental law of Python
+title: Implementing itertools.tee
 
 process:
   twig: true
