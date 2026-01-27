@@ -41,9 +41,7 @@ form:
         display: /insider/wait-one-more-thing
 ---
 
-## Improve with weekly Python 🐍 deep dives 🚀
-
-Each issue unpacks a topic with analogies, diagrams, and code examples so you can write clearer, faster, and more idiomatic code.
+## Get a weekly Python 🐍 deep dive 🚀 breaking down a complex Python topic, read by 10,000+ from Apple, Amazon, Microsoft, and more
 
 {% include "forms/form.html.twig" with {form: forms("subscribe")} %}
 

@@ -8,9 +8,9 @@ content:
           - "_intro"
 metadata:
     author: "Rodrigo Girão Serrão"
-    description: "mathspp insider 🐍🚀 is a weekly newsletter with Python deep dives delivered straight to your inbox."
-    og:title: "mathspp insider 🐍🚀 newsletter"
-    title: mathspp insider 🐍🚀 newsletter
+    description: "Become the smartest Python 🐍 developer in the room 🚀"
+    og:title: "mathspp insider 🐍🚀"
+    title: mathspp insider 🐍🚀
 onpage_menu: false
-title: mathspp insider 🐍🚀 newsletter
+title: mathspp insider 🐍🚀
 ---
