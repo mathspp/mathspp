@@ -363,6 +363,7 @@ As an exercise, use each one of these `partial` objects.
 | `range` | `partial(range, 1)` | Natural counting |
 | `enumerate` | `partial(enumerate, start=1)` | Natural enumeration |
 | `filter` | `partial(filter, None)` | Skip Falsy values |
+| `deque`[^5] | `partial(deque, maxlen=0)` | Fully consume an iterator |
 
 
 If you come up with other interesting examples of `partial`, feel free to comment them below or to email me and I might add them here!
@@ -371,3 +372,4 @@ If you come up with other interesting examples of `partial`, feel free to commen
 [^2]: The `partial` application is not equivalent to `prod` because `prod([])` gives `1` and the `partial` application will error.
 [^3]: The `partial` application is not equivalent to `all` because `all([])` gives `True` and the `partial` application will error. Furthermore, `all` will [short-circuit](/blog/pydonts/boolean-short-circuiting#all-and-any) and the `partial` application won't.
 [^4]: The `partial` application is not equivalent to `any` because `any([])` gives `False` and the `partial` application will error. Furthermore, `any` will [short-circuit](/blog/pydonts/boolean-short-circuiting#all-and-any) and the `partial` application won't.
+[^5]: [`deque` from the module `collections`](/blog/python-deque-tutorial)

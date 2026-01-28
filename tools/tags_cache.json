@@ -3,7 +3,7 @@
     "articles": 436,
     "code_snippets": 4113,
     "loc": 39263,
-    "words": 475651
+    "words": 475668
   },
   "bpci": {
     "articles": 10,
@@ -27,13 +27,13 @@
     "articles": 315,
     "code_snippets": 3969,
     "loc": 38036,
-    "words": 386341
+    "words": 386358
   },
   "python": {
     "articles": 308,
     "code_snippets": 3848,
     "loc": 36943,
-    "words": 383368
+    "words": 383385
   },
   "algorithms": {
     "articles": 27,
@@ -375,7 +375,7 @@
     "articles": 13,
     "code_snippets": 192,
     "loc": 1623,
-    "words": 13698
+    "words": 13715
   },
   "diophantine equations": {
     "articles": 1,
@@ -417,7 +417,7 @@
     "articles": 5,
     "code_snippets": 207,
     "loc": 1384,
-    "words": 16483
+    "words": 16500
   },
   "random walks": {
     "articles": 1,
