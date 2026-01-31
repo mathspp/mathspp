@@ -45,7 +45,7 @@ form:
 
 # Become the smartest Python 🐍 developer in the room 🚀
 
-## Get a weekly Python deep dive breaking down a complex Python topic
+## Get a _free_ weekly Python deep dive breaking down a complex Python topic
 
 {% include "forms/form.html.twig" with {form: forms("subscribe")} %}
 
@@ -55,5 +55,9 @@ Read by 10,000+ from Apple, Amazon, Microsoft, Bank of America, and more
 form[name="subscribe"] {
     max-width: 70%;
     margin: auto;
+}
+
+h2 {
+    font-size: 70%;
 }
 </style>
