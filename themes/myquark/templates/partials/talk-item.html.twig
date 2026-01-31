@@ -1,0 +1,51 @@
+<div class="content-item h-entry">
+
+<div class="content-title text-center">
+    <h1 class="p-name mt-1"><a href="{{ page.url }}" class="u-url">{{ page.title }}</a></h1>
+    <h2>{{ page.header.event }}</h2>
+    {% if page.header.subtitle %}
+    <h3 >{{ page.header.subtitle }}</h3>
+    {% endif %}
+    {% include 'partials/blog/date.html.twig' %}
+    <span class="talk-links">
+        {% if page.header.event_link %}
+            <a href="{{ page.header.event_link }}">
+            <i class="fas fa-external-link-alt" title="Event page"></i>
+            </a>
+        {% else %}
+            <i class="fas fa-external-link-alt disabled" title="Event page"></i>
+        {% endif %} •
+        {% if page.header.watch %}
+            <a href="{{ page.header.watch }}">
+            <i class="fab fa-youtube" title="Watch online"></i>
+            </a>
+        {% else %}
+            <i class="fab fa-youtube disabled" title="Watch online"></i>
+        {% endif %} •
+        {% if page.header.main_reference %}
+            <a href="{{ page.header.main_reference }}">
+            <i class="fas fa-book-open" title="Main reference (blog post, book, ...)"></i>
+            </a>
+        {% else %}
+            <i class="fas fa-book-open disabled" title="Main reference (blog post, book, ...)"></i>
+        {% endif %} •
+        {% if page.header.slides_pdf %}
+            <a href="{{ page.header.slides_pdf }}">
+            <i class="fas fa-file-pdf" title="Slides (PDF)"></i>
+            </a>
+        {% else %}
+            <i class="fas fa-file-pdf disabled" title="Slides (PDF)"></i>
+        {% endif %} •
+        {% if page.header.resources %}
+            <a href="{{ page.header.resources }}">
+            <i class="fas fa-paperclip" title="Talk resources (code, images, ...)"></i>
+            </a>
+        {% else %}
+            <i class="fas fa-paperclip disabled" title="Talk resources (code, images, ...)"></i>
+        {% endif %}
+    </span>
+</div>
+
+<div class="e-content">
+    {{ page.content|raw }}
+</div>

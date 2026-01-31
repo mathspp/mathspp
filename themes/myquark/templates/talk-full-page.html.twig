@@ -1,0 +1,26 @@
+{% extends 'partials/base.html.twig' %}
+{% set show_breadcrumbs = header_var('show_breadcrumbs', [page])|defined(true) %}
+{% set show_sidebar = false %}
+
+{% block body %}
+
+<section id="body-wrapper" class="section blog-listing">
+    <section class="container {{ grid_size }}">
+
+        {% if show_breadcrumbs and config.plugins.breadcrumbs.enabled %}
+            {% include 'partials/breadcrumbs.html.twig' %}
+        {% endif %}
+
+        {% embed 'partials/layout.html.twig' %}
+            {% block item %}
+                {% include 'partials/talk-item.html.twig' %}
+            {% endblock %}
+        {% endembed %}
+        
+
+    </section>
+
+
+</section>
+
+{% endblock %}
