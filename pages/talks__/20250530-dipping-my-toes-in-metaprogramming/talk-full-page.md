@@ -13,6 +13,7 @@ taxonomy:
         - "2025"
 title: "Dipping my toes in metaprogramming"
 watch: https://www.youtube.com/watch?v=BFb3MhAKK5U
+youtube_embed: https://www.youtube.com/embed/BFb3MhAKK5U?si=Sz9AyQDdG1h3zENL
 ---
 
 ## Abstract
