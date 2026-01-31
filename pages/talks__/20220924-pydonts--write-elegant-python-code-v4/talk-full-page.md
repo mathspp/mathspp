@@ -8,9 +8,9 @@ slides_pdf: https://github.com/mathspp/talks/tree/main/20220924_pycon_portugal_p
 taxonomy:
     category: talks
     tags:
-        - "event name"
-        - "country / remote"
-        - "year"
+        - "PyCon Portugal"
+        - "remote"
+        - "2022"
 title: "Pydon'ts - Write elegant Python code v4"
 watch: https://youtu.be/ETg64K32Okc
 youtube_embed: https://www.youtube.com/embed/ETg64K32Okc?si=d8K4BdLaQBwb8Jxi
