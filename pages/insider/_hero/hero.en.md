@@ -35,7 +35,7 @@ form:
     buttons:
         submit:
           type: submit
-          value: Subscribe 🐍🚀
+          value: Subscribe for free 🐍🚀
 
     process:
         captcha: true
