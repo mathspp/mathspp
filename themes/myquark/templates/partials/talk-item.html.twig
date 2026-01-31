@@ -11,7 +11,9 @@
 
 <div class="e-content">
     <ul>
+        {% if page.header.event_link %}
         <li> <i class="fas fa-external-link-alt"></i> <a href="{{ page.header.event_link }}">Event link</a> </li>
+        {% endif %}
 
         {% if page.header.watch %}
         <li> <i class="fab fa-youtube"></i> <a href="{{ page.header.watch }}">Watch online</a> </li>
