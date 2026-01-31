@@ -1,6 +1,6 @@
 ---
 title: 'mathspp insider 🐍🚀'
-hero_classes: 'parallax text-light hero-fullscreen overlay-dark-gradient'
+hero_classes: 'text-light hero-fullscreen overlay-dark-gradient'
 hero_image: 'theme://images/common_hero.webp'
 
 process:
@@ -59,5 +59,9 @@ form[name="subscribe"] {
 
 h2 {
     font-size: 70%;
+}
+
+#to-start {
+    display: none;
 }
 </style>
