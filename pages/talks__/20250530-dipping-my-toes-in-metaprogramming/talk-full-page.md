@@ -15,8 +15,6 @@ title: "Dipping my toes in metaprogramming"
 watch: https://www.youtube.com/watch?v=BFb3MhAKK5U
 ---
 
-# Dipping my toes in metaprogramming – PyCon Italia 2025
-
 ## Abstract
 
 Everyone knows the dunder method `__init__`.
