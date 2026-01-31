@@ -12,8 +12,6 @@ metadata:
     description: 'Overview of all the talks, tutorials and lightning talks I have given and other public speaking appearances.'
     title: Talks
 onpage_menu: false
-use-bricklayer:
-    active: true
 sitemap:
     ignore: true
     lastmod: '15-10-2025 15:51'
