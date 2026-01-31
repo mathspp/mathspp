@@ -61,7 +61,7 @@ h2 {
     font-size: 70%;
 }
 
-#to-start {
+.hero #to-start {
     display: none;
 }
 </style>
