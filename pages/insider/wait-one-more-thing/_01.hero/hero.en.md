@@ -6,3 +6,4 @@ hero_image: theme://images/common_hero.webp
 
 # Wait! One more thing... 👇
 
+<script>plausible("mathspp insider landing page signup");</script>
