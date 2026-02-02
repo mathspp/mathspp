@@ -34,7 +34,7 @@ Best regards,
 <details markdown="1">
 <summary><h3>At what time will the live sessions take place?</h3></summary>
 
-The live sessions take place from 3pm to 5pm and 7pm to 9pm, UTC time.
+The live sessions take place from 2pm to 4pm UTC time on Tuesdays and Thursdays.
 </details>
 
 <details markdown="1">
@@ -57,7 +57,9 @@ The type of people who will benefit the most from this course include people who
 
 You will make the most of this course if you have time to attend the live sessions and work on the assignments between live sessions.
 If you don't set aside time to learn you will never make visible progress.
-So, expect a challenging but fun couple of days.
+So, expect a challenging but fun couple of weeks.
+
+You'll need 4h/week for the live sessions and about 2–4h/week for the exercises.
 </details>
 
 <details markdown="1">

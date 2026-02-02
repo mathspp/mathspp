@@ -15,7 +15,7 @@ class: offset-box
 
 | Start | End |
 | | |
-| 26th Jan 2026 | 30th Jan 2026 |
+| 2nd March 2026 | 3rd April 2026 |
 
 <div style="display:flex; justify-content:center;">
 <a href="#sign-up" class="btn" style="margin-right: 1em;">Secure your spot!</a>
