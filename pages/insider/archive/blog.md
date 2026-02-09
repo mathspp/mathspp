@@ -5,7 +5,7 @@ cache_enable: false
 
 body_classes: "header-dark header-transparent"
 content:
-    items: self.children
+    items: '@self.children'
     limit: 20
     order:
         by: date
@@ -14,5 +14,9 @@ content:
 hero_image: hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 ---
+
+# Become the smartest Python 🐍 developer in the room 🚀
+
+## Get a _free_ weekly Python deep dive breaking down a complex Python topic
 
 {% include "forms/form.html.twig" with {form: forms( {route: "/insider"} )} %}
