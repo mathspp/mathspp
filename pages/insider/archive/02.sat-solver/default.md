@@ -1,7 +1,10 @@
 ---
 date: 22-12-2025
 metadata:
+    author: Rodrigo Girão Serrão
     description: "Learn how to write your own SAT solver in Python in this sample of the mathspp insider weekly newsletter."
+    og:image: "https://mathspp.com/insider/archive/sat-solver/thumbnail.webp"
+    twitter:image: "https://mathspp.com/insider/archive/sat-solver/thumbnail.webp"
 title: SAT solver
 
 process:

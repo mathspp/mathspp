@@ -1,7 +1,10 @@
 ---
 date: 26-01-2025
 metadata:
+    author: Rodrigo Girão Serrão
     description: "Learn how itertools.tee can be used in the real world."
+    og:image: "https://mathspp.com/insider/archiveusing-tee-in-the-real-world/thumbnail.webp"
+    twitter:image: "https://mathspp.com/insider/archiveusing-tee-in-the-real-world/thumbnail.webp"
 title: Using tee in the real world
 
 process:

@@ -1,7 +1,10 @@
 ---
 date: 12-01-2025
 metadata:
+    author: Rodrigo Girão Serrão
     description: "Learn how `itertools.tee` seems to break a fundamental law of Python and how its behaviour is actually legal."
+    og:image: "https://mathspp.com/insider/archive/breaking-a-fundamental-law-of-python/thumbnail.webp"
+    twitter:image: "https://mathspp.com/insider/archive/breaking-a-fundamental-law-of-python/thumbnail.webp"
 title: Breaking a fundamental law of Python
 
 process:

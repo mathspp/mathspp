@@ -1,7 +1,10 @@
 ---
 date: 19-01-2025
 metadata:
+    author: Rodrigo Girão Serrão
     description: "Learn how to implement itertools.tee efficiently using deques as buffers."
+    og:image: "https://mathspp.com/insider/archive/implementing-itertools-tee/thumbnail.webp"
+    twitter:image: "https://mathspp.com/insider/archive/implementing-itertools-tee/thumbnail.webp"
 title: Implementing itertools.tee
 
 process:

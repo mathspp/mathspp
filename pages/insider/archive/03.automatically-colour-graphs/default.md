@@ -1,7 +1,10 @@
 ---
 date: 05-01-2025
 metadata:
+    author: Rodrigo Girão Serrão
     description: "Learn how to dynamically turn a graph into the corresponding SAT formula for the 3-colouring problem."
+    og:image: "https://mathspp.com/insider/archive/automatically-colour-graphs/thumbnail.webp"
+    twitter:image: "https://mathspp.com/insider/archive/automatically-colour-graphs/thumbnail.webp"
 title: Automatically colour graphs
 
 process:

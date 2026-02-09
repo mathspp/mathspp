@@ -1,7 +1,10 @@
 ---
 date: 02-02-2026
 metadata:
+    author: Rodrigo Girão Serrão
     description: "Crash course on uv and how to use it to manage scripts."
+    og:image: "https://mathspp.com/insider/archive/uv-crash-course-scripts/thumbnail.webp"
+    twitter:image: "https://mathspp.com/insider/archive/uv-crash-course-scripts/thumbnail.webp"
 title: "uv crash course: scripts"
 
 process:

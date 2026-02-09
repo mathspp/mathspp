@@ -1,7 +1,10 @@
 ---
 date: 15-12-2025
 metadata:
+    author: Rodrigo Girão Serrão
     description: "Learn about the one-million dollars P vs NP problem, the concept of NP-completeness, and the SAT problem, in this sample of the mathspp insider weekly newsletter."
+    og:image: "https://mathspp.com/insider/archive/dark-computer-science-translation/thumbnail.webp"
+    twitter:image: "https://mathspp.com/insider/archive/dark-computer-science-translation/thumbnail.webp"
 title: Dark computer science “translation”
 
 process:
