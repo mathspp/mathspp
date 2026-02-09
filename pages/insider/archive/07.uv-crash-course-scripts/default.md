@@ -16,7 +16,7 @@ cache_enable: false
 
 ## What's uv?
 
-If you don't know what uv is, then you have been leaving under a rock!
+If you don't know what uv is, then you have been living under a rock!
 
 But kidding aside, uv is an “extremely fast Python package and project manager, written in Rust.”
 
