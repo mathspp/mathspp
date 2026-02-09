@@ -10,7 +10,7 @@
             {% include 'partials/blog/date.html.twig' %}
         </div>
         <div class="card-title">
-            <h6><a href="{{ page.url }}">{{ page.title }}</a></h6>
+        {% include 'partials/blog/title.html.twig' with {title_level: 'h5'} %}
         </div>
     </div>
 </div>
