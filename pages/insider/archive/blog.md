@@ -13,6 +13,7 @@ content:
     pagination: true
 hero_image: hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
+show_sidebar: false
 ---
 
 # Become the smartest Python 🐍 developer in the room 🚀
