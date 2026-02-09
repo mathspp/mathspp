@@ -2,6 +2,7 @@
 process:
     twig: true
 cache_enable: false
+template: insider-archive
 
 body_classes: "header-dark header-transparent"
 content:

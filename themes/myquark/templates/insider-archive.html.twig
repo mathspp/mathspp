@@ -1,0 +1,37 @@
+{% extends 'partials/base.html.twig' %}
+{% set hero_image_url = header_var("hero_image_url", [page])|defined("") %}
+{% set blog_image = page.media.images[page.header.hero_image] ?: page.media.images|first %}
+{% set collection = page.collection() %}
+{% set blog = page.find(header_var('blog_url')|defined(theme_var('blog-page'))) %}
+{% set show_breadcrumbs = header_var('show_breadcrumbs', [page, blog])|defined(true) %}
+{% set show_pagination = header_var('show_pagination', [page, blog])|defined(true) %}
+
+{% block hero %}
+    {% include 'partials/hero.html.twig' with {id: 'insider-archive-hero', content: page.content, hero_image_url: hero_image_url, hero_image: blog_image} %}
+{% endblock %}
+
+{% block body %}
+    <section id="body-wrapper" class="section blog-listing insider-archive-listing">
+        <section class="container {{ grid_size }}">
+
+        {% if show_breadcrumbs and config.plugins.breadcrumbs.enabled %}
+            {% include 'partials/breadcrumbs.html.twig' %}
+        {% endif %}
+
+        <div class="columns">
+            {% for child in collection %}
+                <div class="column col-4 col-md-6 col-sm-12">
+                    {% include 'partials/insider-archive-card.html.twig' with {page: child} %}
+                </div>
+            {% endfor %}
+        </div>
+
+        {% if show_pagination and config.plugins.pagination.enabled and collection.params.pagination %}
+            <div id="listing-footer">
+                {% include 'partials/pagination.html.twig' with {base_url: page.url, pagination: collection.params.pagination} %}
+            </div>
+        {% endif %}
+
+        </section>
+    </section>
+{% endblock %}
