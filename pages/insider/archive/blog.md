@@ -7,7 +7,7 @@ template: insider-archive
 body_classes: "header-dark header-transparent"
 content:
     items: '@self.children'
-    limit: 5
+    limit: 20
     order:
         by: date
         dir: desc
