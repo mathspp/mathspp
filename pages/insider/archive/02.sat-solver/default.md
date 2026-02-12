@@ -330,6 +330,6 @@ But if all NP problems can become a SAT problem, then all NP problems are actual
 
 ## Enjoyed reading? 🐍🚀
 
-Get a Python deep dive 🐍🚀 every Monday by dropping your best email address below:
+Get a _free_ Python deep dive 🐍🚀 every Monday by dropping your best email address below:
 
-{% include "forms/form.html.twig" with {form: forms( {route: '/insider/_intro'} ) } %}
+{% include "forms/form.html.twig" with {form: forms( {route: '/insider/_hero'} ) } %}
