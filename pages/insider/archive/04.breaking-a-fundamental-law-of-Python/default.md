@@ -1,5 +1,5 @@
 ---
-date: 12-01-2025
+date: 12-01-2026
 metadata:
     author: Rodrigo Girão Serrão
     description: "Learn how `itertools.tee` seems to break a fundamental law of Python and how its behaviour is actually legal."

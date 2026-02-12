@@ -1,5 +1,5 @@
 ---
-date: 19-01-2025
+date: 19-01-2026
 metadata:
     author: Rodrigo Girão Serrão
     description: "Learn how to implement itertools.tee efficiently using deques as buffers."

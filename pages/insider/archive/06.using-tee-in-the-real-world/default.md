@@ -1,5 +1,5 @@
 ---
-date: 26-01-2025
+date: 26-01-2026
 metadata:
     author: Rodrigo Girão Serrão
     description: "Learn how itertools.tee can be used in the real world."

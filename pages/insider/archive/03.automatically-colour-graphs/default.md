@@ -1,5 +1,5 @@
 ---
-date: 05-01-2025
+date: 05-01-2026
 metadata:
     author: Rodrigo Girão Serrão
     description: "Learn how to dynamically turn a graph into the corresponding SAT formula for the 3-colouring problem."
