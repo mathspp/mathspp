@@ -2,6 +2,7 @@
 company_and_title: <a href="/courses/intermediate-python-course">Intermediate Python course</a> student
 date: "2025-12-04 11:51"
 name: Soumen
+star_rating: 5
 # link:
 social: 
 taxonomy:

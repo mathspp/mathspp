@@ -31,6 +31,7 @@ class ReviewSaverPlugin extends Plugin
         $object = $data['object'] ?? 'other';
         $testimonial = $data['testimonial'] ?? '';
         $social = $data['social'] ?? '';
+        $star_rating = $data['star_rating'] ?? '';
 
         if (trim($testimonial) === '') {
             $this->grav['log']->info("Skipping review creation for {$name}");
@@ -50,6 +51,7 @@ class ReviewSaverPlugin extends Plugin
             'object' => $object,
             'testimonial' => $testimonial,
             'social' => $social,
+            'star_rating' => $star_rating,
         ]);
 
         // Create the new page
@@ -96,5 +98,4 @@ class ReviewSaverPlugin extends Plugin
     }
     
 }
-
 
