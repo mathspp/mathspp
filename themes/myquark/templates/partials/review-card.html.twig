@@ -40,13 +40,14 @@
             <img width="60" height="60" class="reviewer-photo" src="{{ review.media.images|first.url }}" alt="{{ review.header.name }}">
         {% endif %}
         <p class="reviewer-details">
+        —
         {% if review.header.social %}
             <a href="{{ review.header.social }}" target="_blank"><span class="reviewer-name">{{ review.header.name }}</span></a>
         {% else %}
             <span class="reviewer-name">{{ review.header.name }}</span>
         {% endif %}
         {% if review.header.company_and_title %}
-            <span class="reviewer-company">{{ review.header.company_and_title }}</span>
+            <span class="reviewer-company">, {{ review.header.company_and_title }}</span>
         {% endif %}
         {% if review.header.link %}
             <a class="review-link" href="{{ review.header.link }}" target="_blank"><i class="fa fa-external-link"></i></a>

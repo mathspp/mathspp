@@ -83,7 +83,7 @@
 
 .reviewer-name,
 .reviewer-company {
-    display: block;
+    display: inline;
 }
 
 .reviewer-company {
