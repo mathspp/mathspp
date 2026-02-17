@@ -1,51 +1,52 @@
 <div class="review-card">
-    <div class="review-content">
-        {% set star_rating_raw = review.header.star_rating ?? null %}
-        {% set star_rating = star_rating_raw is not null ? (star_rating_raw + 0) : null %}
-        {% set star_rating_twice = star_rating is not null ? (star_rating * 2) : null %}
-        {% set has_legal_star_rating = star_rating is not null
-            and star_rating >= 0
-            and star_rating <= 5
-            and star_rating_twice == (star_rating_twice|round(0, 'floor')) %}
-        {% set full_stars = has_legal_star_rating ? (star_rating|round(0, 'floor')) : 0 %}
-        {% set half_stars = has_legal_star_rating and (star_rating - full_stars) == 0.5 ? 1 : 0 %}
-        {% set empty_stars = has_legal_star_rating ? (5 - full_stars - half_stars) : 0 %}
+    {% set star_rating_raw = review.header.star_rating ?? null %}
+    {% set star_rating = star_rating_raw is not null ? (star_rating_raw + 0) : null %}
+    {% set star_rating_twice = star_rating is not null ? (star_rating * 2) : null %}
+    {% set has_legal_star_rating = star_rating is not null
+        and star_rating >= 0
+        and star_rating <= 5
+        and star_rating_twice == (star_rating_twice|round(0, 'floor')) %}
+    {% set full_stars = has_legal_star_rating ? (star_rating|round(0, 'floor')) : 0 %}
+    {% set half_stars = has_legal_star_rating and (star_rating - full_stars) == 0.5 ? 1 : 0 %}
+    {% set empty_stars = has_legal_star_rating ? (5 - full_stars - half_stars) : 0 %}
 
+    {% if has_legal_star_rating %}
         <div class="review-header">
-            {% if review.media.images|length > 0 %}
-                <img width="60" height="60" class="reviewer-photo" src="{{ review.media.images|first.url }}" alt="{{ review.header.name }}">
-            {% endif %}
-            {% if has_legal_star_rating %}
-                <div class="review-stars" aria-label="{{ star_rating }} out of 5 stars">
-                    {% if full_stars > 0 %}
-                        {% for _ in 1..full_stars %}
-                            <i class="fas fa-star review-star review-star-full" aria-hidden="true"></i>
-                        {% endfor %}
-                    {% endif %}
-                    {% if half_stars > 0 %}
-                        {% for _ in 1..half_stars %}
-                            <i class="fas fa-star-half-at fa-star-half-alt review-star review-star-half" aria-hidden="true"></i>
-                        {% endfor %}
-                    {% endif %}
-                    {% if empty_stars > 0 %}
-                        {% for _ in 1..empty_stars %}
-                            <i class="far fa-star review-star review-star-empty" aria-hidden="true"></i>
-                        {% endfor %}
-                    {% endif %}
-                </div>
-            {% endif %}
+            <div class="review-stars" aria-label="{{ star_rating }} out of 5 stars">
+                {% if full_stars > 0 %}
+                    {% for _ in 1..full_stars %}
+                        <i class="fas fa-star review-star review-star-full" aria-hidden="true"></i>
+                    {% endfor %}
+                {% endif %}
+                {% if half_stars > 0 %}
+                    {% for _ in 1..half_stars %}
+                        <i class="fas fa-star-half-at fa-star-half-alt review-star review-star-half" aria-hidden="true"></i>
+                    {% endfor %}
+                {% endif %}
+                {% if empty_stars > 0 %}
+                    {% for _ in 1..empty_stars %}
+                        <i class="far fa-star review-star review-star-empty" aria-hidden="true"></i>
+                    {% endfor %}
+                {% endif %}
+            </div>
         </div>
+    {% endif %}
+
+    <div class="review-content">
         {{ review.content }}
     </div>
     <div class="review-meta">
-        <p>
+        {% if review.media.images|length > 0 %}
+            <img width="60" height="60" class="reviewer-photo" src="{{ review.media.images|first.url }}" alt="{{ review.header.name }}">
+        {% endif %}
+        <p class="reviewer-details">
         {% if review.header.social %}
-        — <a href="{{ review.header.social }}" target="_blank"><span class="reviewer-name">{{ review.header.name }}</span></a>
+            <a href="{{ review.header.social }}" target="_blank"><span class="reviewer-name">{{ review.header.name }}</span></a>
         {% else %}
-        — <span class="reviewer-name">{{ review.header.name }}</span>
+            <span class="reviewer-name">{{ review.header.name }}</span>
         {% endif %}
         {% if review.header.company_and_title %}
-            <span class="reviewer-company">– {{ review.header.company_and_title }}</span>
+            <span class="reviewer-company">{{ review.header.company_and_title }}</span>
         {% endif %}
         {% if review.header.link %}
             <a class="review-link" href="{{ review.header.link }}" target="_blank"><i class="fa fa-external-link"></i></a>

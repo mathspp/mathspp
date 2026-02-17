@@ -31,17 +31,18 @@
     border-radius: 50%;
     object-fit: cover;
     flex: 0 0 auto;
-    margin-right: 15px;
+    margin-right: 12px;
 }
 
 .review-content {
     text-align: left;
     overflow: hidden;
+    margin-bottom: 12px;
 }
 
 .review-header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 10px;
 }
 
@@ -57,7 +58,7 @@
 
 .review-star-full,
 .review-star-half {
-    color: var(--ye);
+    color: var(--accent);
 }
 
 .review-star-empty {
@@ -66,19 +67,34 @@
 
 .review-meta {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-end;
     font-size: 0.9em;
 }
 
 .review-meta p {
     text-align: right !important;
+    margin: 0;
+}
+
+.reviewer-details {
+    margin-left: auto !important;
+}
+
+.reviewer-name,
+.reviewer-company {
+    display: block;
+}
+
+.reviewer-company {
+    color: var(--tx-2);
 }
 
 .review-link {
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s;
+    margin-left: 6px;
 }
 
 .review-content span {
