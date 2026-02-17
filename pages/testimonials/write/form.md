@@ -32,11 +32,10 @@ form:
             required: true
 
         star_rating:
-          label: Star rating (0 to 5)
+          label: Rating (0 to 5)
           type: number
           min: 0
           max: 5
-          step: 0.5
           validate:
             required: true
 
