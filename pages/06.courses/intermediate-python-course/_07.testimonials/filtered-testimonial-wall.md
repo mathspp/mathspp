@@ -1,6 +1,7 @@
 ---
 review-tags:
   - favourite
+  - intermediate-python-course
 ---
 
 

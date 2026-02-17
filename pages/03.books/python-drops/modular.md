@@ -13,7 +13,6 @@ content:
           - "_sneak-peek"
           - "_what-readers-say"
           - "_buy"
-          # - "_faq"
           - "_about-the-author"
           - "_final-cta"
 metadata:
