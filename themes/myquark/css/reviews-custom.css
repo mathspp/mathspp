@@ -30,13 +30,38 @@
 .reviewer-photo {
     border-radius: 50%;
     object-fit: cover;
-    float: left;
+    flex: 0 0 auto;
     margin-right: 15px;
 }
 
 .review-content {
     text-align: left;
     overflow: hidden;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review-stars {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.review-star {
+    font-size: 1rem;
+}
+
+.review-star-full,
+.review-star-half {
+    color: var(--ye);
+}
+
+.review-star-empty {
+    color: var(--tx-3);
 }
 
 .review-meta {
