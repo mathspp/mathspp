@@ -2,6 +2,7 @@
 company_and_title: IT consultant, <a href="https://mathspp.com/courses/intermediate-python-course">Intermediate Python course</a> student
 date: "2026-02-17 20:53"
 name: Roger Costandi
+star_rating: 5
 # link:
 social: 
 taxonomy:

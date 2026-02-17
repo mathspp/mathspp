@@ -2,6 +2,7 @@
 company_and_title: <a href="https://mathspp.com/courses/intermediate-python-course">Intermediate Python course</a> student
 date: "2026-02-17 21:18"
 name: Youn Noh
+star_rating: 4
 # link:
 social: 
 taxonomy:

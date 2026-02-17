@@ -2,6 +2,7 @@
 company_and_title: Engineering Manager, <a href="https://mathspp.com/courses/intermediate-python-course">Intermediate Python course</a> student
 date: "2026-02-01 17:52"
 name: Satish
+star_rating: 5
 # link:
 social: 
 taxonomy:
