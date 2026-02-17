@@ -8,7 +8,8 @@ taxonomy:
     category: review
     review-tag:
       - course
-published: false
+      - intermediate-python-course
+published: true
 ---
 
 I attended Rodrigo's Intermediate Python course last week and had the most excellent time.
