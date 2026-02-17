@@ -1,5 +1,5 @@
 ---
-company_and_title: IT consultant
+company_and_title: IT consultant, <a href="https://mathspp.com/courses/intermediate-python-course">intermediate Python course</a> student
 date: "2026-02-17 20:53"
 name: Roger Costandi
 # link:
@@ -8,7 +8,8 @@ taxonomy:
     category: review
     review-tag:
       - course
-published: false
+      - intermediate-python-course
+published: true
 ---
 
 It was really a fun and very fruitful time! I had no doubts about the quality and usefulness of your course before joining, but it revealed to be really over the top. I learned more things than I thought was possible in such a limited time frame.
