@@ -4,7 +4,7 @@ event: "Pyjamas Conf 2021"
 # event_link: xxx
 main_reference: https://mathspp.com/books/pydonts
 resources: https://github.com/mathspp/talks/tree/main/20211204_pyjamas_pydonts_2
-slides_pdf: https://github.com/mathspp/talks/tree/main/20211204_pyjamas_pydonts_2/slide_deck.pdf
+slides_pdf: https://github.com/mathspp/talks/tree/main/20211204_pyjamas_pydonts_2/slides.pdf
 taxonomy:
     category: talks
     tags:

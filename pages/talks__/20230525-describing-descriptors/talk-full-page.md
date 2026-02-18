@@ -4,7 +4,7 @@ event: "PyCon Sri Lanka 2023"
 # event_link: xxx
 main_reference: https://mathspp.com/blog/pydonts/describing-descriptors
 resources: https://github.com/mathspp/talks/tree/main/20230525_pycon_srilanka_describing_descriptors
-slides_pdf: https://github.com/mathspp/talks/tree/main/20230525_pycon_srilanka_describing_descriptors/slide_deck.pdf
+slides_pdf: https://github.com/mathspp/talks/tree/main/20230525_pycon_srilanka_describing_descriptors/slides.pdf
 taxonomy:
     category: talks
     tags:

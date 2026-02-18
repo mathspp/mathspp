@@ -9,7 +9,7 @@ In this lightning talk, I show how `functools.reduce` is such an important funct
  - When: 14th of July, 2022
  - Written version of the talk: [blog article](/blog/smoosh-all-the-things)
  - Video recording: [view on YouTube](https://youtu.be/YeH7CwruEUs) or below
- - Slide deck: [link](https://github.com/mathspp/talks/blob/main/20220714_smoosh_all_the_things/slide_deck.pdf)
+ - Slide deck: [link](https://github.com/mathspp/talks/blob/main/20220714_smoosh_all_the_things/slides.pdf)
 
 
 <div style="text-align:center">

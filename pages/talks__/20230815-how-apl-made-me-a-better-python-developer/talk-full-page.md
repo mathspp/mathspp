@@ -4,7 +4,7 @@ event: "Func Prog Sweden meetup"
 event_link: https://www.meetup.com/func-prog-sweden/events/294451071/
 main_reference: https://mathspp.com/blog/what-learning-apl-taught-me-about-python
 resources: https://github.com/mathspp/talks/tree/main/20230815_how-apl-made-me-a-better-python-developer
-slides_pdf: https://github.com/mathspp/talks/tree/main/20230815_how-apl-made-me-a-better-python-developer/slide_deck.pdf
+slides_pdf: https://github.com/mathspp/talks/tree/main/20230815_how-apl-made-me-a-better-python-developer/slides.pdf
 taxonomy:
     category: talks
     tags:

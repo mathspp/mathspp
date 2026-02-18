@@ -4,7 +4,7 @@ event: "EuroPython 2021"
 event_link: https://ep2021.europython.eu/talks/Bz5dtEe-pydonts/
 main_reference: https://mathspp.com/books/pydonts
 resources: https://github.com/mathspp/talks/blob/main/20210728_europython_pydonts
-slides_pdf: https://github.com/mathspp/talks/blob/main/20210728_europython_pydonts/slide_deck.pdf
+slides_pdf: https://github.com/mathspp/talks/blob/main/20210728_europython_pydonts/slides.pdf
 taxonomy:
     category: talks
     tags:

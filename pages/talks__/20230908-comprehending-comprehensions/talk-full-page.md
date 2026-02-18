@@ -4,7 +4,7 @@ event: "PyCon Portugal 2023"
 event_link: https://pretalx.evolutio.pt/pycon-pt-2023/talk/FMZMGP/
 main_reference: https://mathspp.com/comprehending-comprehensions
 resources: https://github.com/mathspp/talks/tree/main/20230908_comprehending-comprehensions
-slides_pdf: https://github.com/mathspp/talks/tree/main/20230908_comprehending-comprehensions/slide_deck.pdf
+slides_pdf: https://github.com/mathspp/talks/tree/main/20230908_comprehending-comprehensions/slides.pdf
 taxonomy:
     category: talks
     tags:

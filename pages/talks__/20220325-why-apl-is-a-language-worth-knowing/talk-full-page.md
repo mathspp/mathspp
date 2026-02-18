@@ -4,7 +4,7 @@ event: "FnConf 2022"
 event_link: https://confengine.com/conferences/functional-conf-2022/proposal/16278/why-apl-is-a-language-worth-knowing
 main_reference: https://mathspp.com/blog/why-apl-is-a-language-worth-knowing
 resources: https://github.com/mathspp/talks/tree/main/20220325_fnconf_why_apl_is_a_language_worth_knowing
-slides_pdf: https://github.com/mathspp/talks/tree/main/20220325_fnconf_why_apl_is_a_language_worth_knowing/slide_deck.pdf
+slides_pdf: https://github.com/mathspp/talks/tree/main/20220325_fnconf_why_apl_is_a_language_worth_knowing/slides.pdf
 taxonomy:
     category: talks
     tags:

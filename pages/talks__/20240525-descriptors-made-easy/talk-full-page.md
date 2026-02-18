@@ -4,7 +4,7 @@ event: "PyCon Italia 2024"
 event_link: https://2024.pycon.it/en/event/descriptors-made-easy
 main_reference: https://mathspp.com/blog/pydonts/describing-descriptors
 resources: https://github.com/mathspp/talks/tree/main/20240523_pycon-italy-descriptors-made-easy
-slides_pdf: https://github.com/mathspp/talks/tree/main/20240523_pycon-italy-descriptors-made-easy/slide_deck.pdf
+slides_pdf: https://github.com/mathspp/talks/tree/main/20240523_pycon-italy-descriptors-made-easy/slides.pdf
 taxonomy:
     category: talks
     tags:

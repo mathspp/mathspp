@@ -4,7 +4,7 @@ event: "PyCascades 2022"
 event_link: https://2022.pycascades.com/program/schedule/
 main_reference: https://mathspp.com/blog/50-shades-of-sign
 resources: https://github.com/mathspp/talks/tree/main/20220206_pycascades
-slides_pdf: https://github.com/mathspp/talks/tree/main/20220206_pycascades/slide_deck.pdf
+slides_pdf: https://github.com/mathspp/talks/tree/main/20220206_pycascades/slides.pdf
 taxonomy:
     category: talks
     tags:

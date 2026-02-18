@@ -4,7 +4,7 @@ event: "EuroPython 2023"
 event_link: https://ep2023.europython.eu/session/how-dunder-methods-rule-python-under-the-hood
 main_reference: https://mathspp.com/blog/pydonts/dunder-methods
 resources: https://github.com/mathspp/talks/tree/main/20230720-how_dunder_methods_rule_python_under_the_hood
-slides_pdf: https://github.com/mathspp/talks/tree/main/20230720-how_dunder_methods_rule_python_under_the_hood/slide_deck.pdf
+slides_pdf: https://github.com/mathspp/talks/tree/main/20230720-how_dunder_methods_rule_python_under_the_hood/slides.pdf
 taxonomy:
     category: talks
     tags:

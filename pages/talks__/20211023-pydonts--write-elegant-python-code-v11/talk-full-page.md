@@ -4,7 +4,7 @@ event: "DjangoCon US 2021"
 event_link: https://2021.djangocon.us/talks/pydon-ts-write-elegant-python-code-v1-1/
 main_reference: https://mathspp.com/books/pydonts
 resources: https://github.com/mathspp/talks/tree/main/20211023_djangoconus_pydonts
-slides_pdf: https://github.com/mathspp/talks/tree/main/20211023_djangoconus_pydonts/slide_deck.pdf
+slides_pdf: https://github.com/mathspp/talks/tree/main/20211023_djangoconus_pydonts/slides.pdf
 taxonomy:
     category: talks
     tags:

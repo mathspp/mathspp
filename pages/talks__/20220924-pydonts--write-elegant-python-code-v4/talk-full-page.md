@@ -4,7 +4,7 @@ event: "PyCon Portugal 2022"
 # event_link: xxx
 main_reference: https://mathspp.com/books/pydonts
 resources: https://github.com/mathspp/talks/tree/main/20220924_pycon_portugal_pydonts_4
-slides_pdf: https://github.com/mathspp/talks/tree/main/20220924_pycon_portugal_pydonts_4/slide_deck.pdf
+slides_pdf: https://github.com/mathspp/talks/tree/main/20220924_pycon_portugal_pydonts_4/slides.pdf
 taxonomy:
     category: talks
     tags:

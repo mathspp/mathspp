@@ -46,7 +46,7 @@ Finally, just because I can, here is the whole process in an animated GIF:
 ![Animated GIF showing the process of preparing code with syntax highlighting in Microsoft PowerPoint.](_animation.gif "Animated process.")
 
 
-[slide-deck]: https://github.com/mathspp/talks/blob/main/20220325_fnconf_why_apl_is_a_language_worth_knowing/slide_deck.pdf
+[slide-deck]: https://github.com/mathspp/talks/blob/main/20220325_fnconf_why_apl_is_a_language_worth_knowing/slides.pdf
 
 That's it for now! [Stay tuned][subscribe] and I'll see you around!
 

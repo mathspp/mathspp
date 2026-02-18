@@ -4,7 +4,7 @@ event: "PyCon Sri Lanka 2022"
 # event_link: xxx
 main_reference: https://mathspp.com/blog/enumerate-from-first-principles
 resources: https://github.com/mathspp/talks/tree/main/20220222_pycon_srilanka_pydonts_3
-slides_pdf: https://github.com/mathspp/talks/tree/main/20220222_pycon_srilanka_pydonts_3/slide_deck.pdf
+slides_pdf: https://github.com/mathspp/talks/tree/main/20220222_pycon_srilanka_pydonts_3/slides.pdf
 taxonomy:
     category: talks
     tags:

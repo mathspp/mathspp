@@ -4,7 +4,7 @@ event: "PyCon DE & PyData 2024"
 event_link: https://pretalx.com/pyconde-pydata-2024/talk/ZMC9FU/
 main_reference: https://mathspp.com/blog/503-days-working-full-time-on-foss-lessons-learned
 resources: https://github.com/mathspp/talks/tree/main/20240424_pycon_de_525_working_on_foss_lessons_learned
-slides_pdf: https://github.com/mathspp/talks/tree/main/20240424_pycon_de_525_working_on_foss_lessons_learned/slide_deck.pdf
+slides_pdf: https://github.com/mathspp/talks/tree/main/20240424_pycon_de_525_working_on_foss_lessons_learned/slides.pdf
 taxonomy:
     category: talks
     tags:

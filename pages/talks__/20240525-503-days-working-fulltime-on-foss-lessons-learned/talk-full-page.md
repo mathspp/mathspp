@@ -4,7 +4,7 @@ event: "PyCon Italia 2024"
 event_link: https://2024.pycon.it/en/event/503-days-working-full-time-on-foss-lessons-learned
 main_reference: https://mathspp.com/blog/503-days-working-full-time-on-foss-lessons-learned
 resources: https://github.com/mathspp/talks/tree/main/20240525_pycon-italy-503-days-working-full-time-on-foss-lessons-learned
-slides_pdf: https://github.com/mathspp/talks/tree/main/20240525_pycon-italy-503-days-working-full-time-on-foss-lessons-learned/slide_deck.pdf
+slides_pdf: https://github.com/mathspp/talks/tree/main/20240525_pycon-italy-503-days-working-full-time-on-foss-lessons-learned/slides.pdf
 taxonomy:
     category: talks
     tags:

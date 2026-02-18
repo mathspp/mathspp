@@ -9,7 +9,7 @@ In this Python talk, I continuously refactored a piece of code by using Python f
  - When: 22nd of February, 2022
  - Written version of the talk: [blog article](/blog/enumerate-from-first-principles)
  - Video recording: [view on YouTube](https://youtu.be/Bdunek7Q8Ss) or below
- - Slide deck: [link](https://github.com/mathspp/talks/blob/main/20220222_pycon_srilanka_pydonts_3/slide_deck.pdf)
+ - Slide deck: [link](https://github.com/mathspp/talks/blob/main/20220222_pycon_srilanka_pydonts_3/slides.pdf)
 
 <div style="text-align:center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Bdunek7Q8Ss?start=94" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

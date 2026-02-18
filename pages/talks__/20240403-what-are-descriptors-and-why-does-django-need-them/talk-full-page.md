@@ -4,7 +4,7 @@ event: "PyCon Lithuania 2024"
 event_link: https://pretalx.com/pycon-lithuania-2024/talk/TNUNGF/
 main_reference: https://mathspp.com/blog/pydonts/describing-descriptors
 resources: https://github.com/mathspp/talks/tree/main/20240403_pycon_lithuania_descriptors_in_django
-slides_pdf: https://github.com/mathspp/talks/tree/main/20240403_pycon_lithuania_descriptors_in_django/slide_deck.pdf
+slides_pdf: https://github.com/mathspp/talks/tree/main/20240403_pycon_lithuania_descriptors_in_django/slides.pdf
 taxonomy:
     category: talks
     tags:

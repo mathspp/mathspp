@@ -4,7 +4,7 @@ event: "PyOhio 2022"
 event_link: https://www.pyohio.org/2022/program/talks/comprehending-comprehensions
 main_reference: https://gum.co/comprehending-comprehensions
 resources: https://github.com/mathspp/talks/tree/main/20220730_comprehending_comprehensions
-slides_pdf: https://github.com/mathspp/talks/tree/main/20220730_comprehending_comprehensions/slide_deck.pdf
+slides_pdf: https://github.com/mathspp/talks/tree/main/20220730_comprehending_comprehensions/slides.pdf
 taxonomy:
     category: talks
     tags:

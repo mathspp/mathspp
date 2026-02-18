@@ -10,7 +10,7 @@ In this Python talk, I introduce descriptors and show they are not black magic.
  - When: 25th of May, 2023
  - Written version of the talk: [blog article][article]
  - Video recording: [YouTube](https://www.youtube.com/watch?v=zCtyQS-c4dg)
- - Slide deck: [link](https://github.com/mathspp/talks/blob/main/20230525_pycon_srilanka_describing_descriptors/slide_deck.pdf)
+ - Slide deck: [link](https://github.com/mathspp/talks/blob/main/20230525_pycon_srilanka_describing_descriptors/slides.pdf)
 
 [article]: https://mathspp.com/blog/pydonts/describing-descriptors
 
