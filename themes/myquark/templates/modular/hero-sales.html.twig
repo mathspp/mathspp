@@ -1,0 +1,233 @@
+{# user/themes/myquark/templates/modular/hero-sales.html.twig #}
+{% set h = page.header %}
+{% set bg = h.background_image ?? null %}
+{% set proof = h.social_proof ?? {} %}
+{% set proof_img = proof.image ?? null %}
+
+{# Rating logic #}
+{% set rating = proof.rating ?? null %}
+{% set rating_count = proof.rating_count ?? null %}
+
+{% if rating %}
+  {% set full_stars = rating|round(0, 'floor') %}
+  {% set decimal = rating - full_stars %}
+  {% set half_star = decimal >= 0.25 and decimal < 0.75 ? 1 : 0 %}
+  {% if decimal >= 0.75 %}
+    {% set full_stars = full_stars + 1 %}
+  {% endif %}
+  {% set empty_stars = 5 - full_stars - half_star %}
+{% endif %}
+
+<style>
+.hero-sales {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-sales__overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--hero-overlay, rgba(0,0,0,.45));
+  pointer-events: none;
+}
+
+.hero-sales__container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 3vw, 2.5rem);
+  padding: clamp(2rem, 6vh, 4rem) clamp(1rem, 4vw, 2.5rem);
+}
+
+.hero-sales__left,
+.hero-sales__right {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.hero-sales__left {
+  max-width: 48rem;
+}
+
+.hero-sales__audience {
+  display: inline-block;
+  padding: .35rem .75rem;
+  border-radius: 999px;
+  font-size: .95rem;
+  background: rgba(255,255,255,.12);
+  color: var(--fg, #fff);
+  border: 1px solid rgba(255,255,255,.18);
+  margin-bottom: 1rem;
+}
+
+.hero-sales__headline {
+  margin: 0 0 1rem 0;
+  font-size: clamp(2rem, 4.2vw, 3.25rem);
+  line-height: 1.08;
+  color: var(--fg, #fff);
+}
+
+.hero-sales__authority {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.1rem;
+  color: rgba(255,255,255,.9);
+  max-width: 42rem;
+}
+
+.hero-sales__ctaRow {
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+}
+
+.hero-sales__proofCard {
+  margin: 0;
+  padding: 1.25rem;
+  border-radius: 16px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.14);
+  backdrop-filter: blur(8px);
+}
+
+.hero-sales__rating {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: .75rem;
+  font-size: 1rem;
+  color: rgba(255,255,255,.95);
+}
+
+.hero-sales__stars i {
+  margin-right: 2px;
+  color: #f5c518; /* typical rating gold */
+}
+
+.hero-sales__ratingCount {
+  font-size: .9rem;
+  color: rgba(255,255,255,.75);
+}
+
+.hero-sales__proofImg {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.hero-sales__proofQuote {
+  margin: .9rem 0 0 0;
+  color: rgba(255,255,255,.92);
+}
+
+.hero-sales__proofAttribution {
+  margin: .5rem 0 0 0;
+  font-size: .95rem;
+  color: rgba(255,255,255,.78);
+}
+
+@media (max-width: 840px) {
+  .hero-sales__container {
+    flex-direction: column;
+  }
+}
+</style>
+
+<section
+  class="section modular-hero modular-row hero-sales {{ h.class|default('') }}"
+  {% if bg and page.media[bg] %}style="background-image:url('{{ page.media[bg].url }}');"{% endif %}
+>
+  <div class="hero-sales__overlay"></div>
+
+  <section class="container grid-xl hero-sales__container">
+    <div class="hero-sales__left">
+
+      {% if h.audience_callout %}
+        <div class="hero-sales__audience">
+          {{ h.audience_callout }}
+        </div>
+      {% endif %}
+
+      {% if h.promise_headline %}
+        <h1 class="hero-sales__headline">
+          {{ h.promise_headline }}
+        </h1>
+      {% endif %}
+
+      {% if h.authority_line %}
+        <p class="hero-sales__authority">
+          {{ h.authority_line|markdown }}
+        </p>
+      {% endif %}
+
+      {% if h.cta and h.cta.url and h.cta.text %}
+        <div class="hero-sales__ctaRow">
+          <a class="button cta-button" href="{{ h.cta.url }}">
+            {{ h.cta.text }}
+          </a>
+        </div>
+      {% endif %}
+    </div>
+
+    {% if proof_img and page.media[proof_img] %}
+      <div class="hero-sales__right">
+        <figure class="hero-sales__proofCard">
+
+          {# ⭐ Average rating line #}
+          {% if rating %}
+            <div class="hero-sales__rating">
+              <div class="hero-sales__stars">
+                {% for i in 1..full_stars %}
+                  <i class="fas fa-star"></i>
+                {% endfor %}
+
+                {% if half_star %}
+                  <i class="fas fa-star-half-at"></i>
+                {% endif %}
+
+                {% for i in 1..empty_stars %}
+                  <i class="far fa-star"></i>
+                {% endfor %}
+              </div>
+
+              <div>
+                <strong>{{ rating|number_format(1) }}/5</strong>
+                {% if rating_count %}
+                  <span class="hero-sales__ratingCount">
+                    ({{ rating_count }} students)
+                  </span>
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+
+          <img
+            class="hero-sales__proofImg"
+            src="{{ page.media[proof_img].url }}"
+            alt="{{ proof.alt|default('Testimonial')|e }}"
+            loading="lazy"
+            decoding="async"
+          />
+
+          {% if proof.quote %}
+            <blockquote class="hero-sales__proofQuote">
+              {{ proof.quote|markdown }}
+            </blockquote>
+          {% endif %}
+
+          {% if proof.attribution %}
+            <figcaption class="hero-sales__proofAttribution">
+              {{ proof.attribution|markdown }}
+            </figcaption>
+          {% endif %}
+
+        </figure>
+      </div>
+    {% endif %}
+  </section>
+</section>
