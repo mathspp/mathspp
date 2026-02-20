@@ -1,7 +1,3 @@
----
-class: offset-box
----
-
 **Next cohort**:
 
 | Start | End |
