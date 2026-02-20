@@ -190,9 +190,11 @@
                   <i class="fas fa-star-half-at"></i>
                 {% endif %}
 
-                {% for i in 1..empty_stars %}
-                  <i class="far fa-star"></i>
-                {% endfor %}
+                {% if empty_stars >= 1 %}
+                    {% for i in 1..empty_stars %}
+                    <i class="far fa-star"></i>
+                    {% endfor %}
+                {% endif %}
               </div>
 
               <div>
