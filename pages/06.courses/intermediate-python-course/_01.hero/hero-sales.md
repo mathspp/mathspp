@@ -8,9 +8,9 @@ promise_headline: "Become the Python dev others trust to solve real-world proble
 authority_line: "Master the same tools, mental models, and techniques I used while working full-time on popular open-source Python projects with a combined 90,000 GitHub stars."
 
 cta:
-  text: "Secure Your Spot in the Cohort"
+  text: "Secure your spot in the cohort"
   url: "#sign-up"
-  # subtext: "Limited seats · Starts next week"
+  subtext: "Limited seats"
 
 social_proof:
   rating: 4.9
