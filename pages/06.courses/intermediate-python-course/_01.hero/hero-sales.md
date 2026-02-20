@@ -17,6 +17,6 @@ social_proof:
   rating_count: 10
   image: _colby.webp
   alt: "Screenshot of Colby's flattering testimonial"
-  quote: "I wasn't even sure I qualified as “intermediate” before. Now I feel confident that I am."
+  # quote: "I wasn't even sure I qualified as “intermediate” before. Now I feel confident that I am."
   attribution: "Colby Thrash"
 ---
