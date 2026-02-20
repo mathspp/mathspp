@@ -4,7 +4,7 @@ class: hero--dark
 background_image: theme://images/common_hero.webp
 
 audience_callout: "For Pythonistas ashamed of their own code from 3 months ago"
-promise_headline: "Become the Python developer others trust to solve real-world problems"
+promise_headline: "Become the Python dev others trust to solve real-world problems"
 authority_line: "Master the same tools, mental models, and techniques I used while working full-time on popular open-source Python projects with a combined 90,000 GitHub stars."
 
 cta:
