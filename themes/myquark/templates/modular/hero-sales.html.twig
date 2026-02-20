@@ -199,9 +199,13 @@
 
               <div>
                 <strong>{{ rating|number_format(1) }}/5</strong>
-                {% if rating_count %}
+                {% if rating_count and rating_count >= 20 %}
                   <span class="hero-sales__ratingCount">
                     ({{ rating_count }} students)
+                  </span>
+                {% else %}
+                  <span class="hero-sales__ratingCount">
+                    (average rating from past students)
                   </span>
                 {% endif %}
               </div>
