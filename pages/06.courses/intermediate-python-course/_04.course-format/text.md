@@ -3,7 +3,7 @@
 You will have a total of 20 hours of live sessions where you learn about new tools and concepts.
 Then, you will have assignments to practice the tools and concepts you learned between live sessions.
 
-Each live session lasts 2 hours and you have 2 per week.
+Each live session lasts 2 hours and you have 2 per week: Tuesday and Thursday, 3–5pm UTC.
 
 
 ## Supporting material

@@ -34,7 +34,7 @@ Best regards,
 <details markdown="1">
 <summary><h3>At what time will the live sessions take place?</h3></summary>
 
-The live sessions take place from 2pm to 4pm UTC time on Tuesdays and Thursdays.
+The live sessions take place from 3pm to 5pm UTC time on Tuesdays and Thursdays.
 </details>
 
 <details markdown="1">
