@@ -3,7 +3,7 @@ process:
     twig: true
 ---
 
-## Turn your Python code into professional code in 5 weeks
+## Start writing professional code in 5 weeks
 
 Join dozens of others who are writing more efficient code with more confidence.
 
@@ -34,7 +34,7 @@ Join dozens of others who are writing more efficient code with more confidence.
         star_rating: 5,
         name: 'Marina',
     },
-    content: '<p>I come from a data science background without a formal computer science education, and this course helped me better understand how to write clearer, more structured code and follow functional programming principles. It challenged me to rethink how I approach coding and gave me a better foundation to improve.</p>',
+    content: '<p>I come from a data science background <span>without a formal computer science education</span>, and this course helped me better understand how to write clearer, more structured code and follow functional programming principles. It challenged me to rethink how I approach coding and gave me a better foundation to improve.</p>',
     media: {
         images: [
         { url: '/user/pages/testimonials/20260217-2117-marina/profile.webp' }
@@ -63,6 +63,6 @@ Join dozens of others who are writing more efficient code with more confidence.
 
 ## Join the March cohort
 
-<div style="display:flex; justify-content:center; font-size: 150%;">
+<div style="display:flex; justify-content:center; font-size: 200%;">
 <a href="https://mathspp.gumroad.com/l/intermediate-python-course?wanted=true&variant=Cohort%3A+2nd+March+%E2%80%94+3rd+April" class="btn" style="margin-right: 1em;">Secure your spot!</a>
 </div>
