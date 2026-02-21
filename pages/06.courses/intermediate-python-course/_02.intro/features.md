@@ -63,6 +63,6 @@ Join dozens of others who are writing more efficient code with more confidence.
 
 ## Join the March cohort
 
-<div style="display:flex; justify-content:center; font-size: 200%;">
-<a href="https://mathspp.gumroad.com/l/intermediate-python-course?wanted=true&variant=Cohort%3A+2nd+March+%E2%80%94+3rd+April" class="btn cta-btn" style="margin-right: 1em;">Secure your spot!</a>
+<div style="display:flex; justify-content:center;">
+<a href="https://mathspp.gumroad.com/l/intermediate-python-course?wanted=true&variant=Cohort%3A+2nd+March+%E2%80%94+3rd+April" class="btn cta-btn">Secure your spot!</a>
 </div>
