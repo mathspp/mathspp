@@ -1,3 +1,10 @@
+# v1.8.1
+## 08/28/2025
+
+1. [](#bugfix)
+   * Fixed an issue with error thrown during `bin/plugin error log` commands [#46](https://github.com/getgrav/grav-plugin-error/issues/46)
+   * Fixed output issue not showing all messages with log CLI command
+
 # v1.8.0
 ## 09/07/2021
 

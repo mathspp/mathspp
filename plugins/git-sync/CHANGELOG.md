@@ -1,3 +1,29 @@
+# v3.2.0
+## 12/29/2025
+
+1. [](#improved)
+    * Improved PHP 8.4 compatibility
+1. [](#bugfix)
+    * Fix issue with saving reporting problems with `Folders`.
+
+# v3.1.0
+## 12/03/2025
+
+1. [](#new)
+    * Added sync direction configuration to enable one-way (pull only) synchronization [#224](https://github.com/trilbymedia/grav-plugin-git-sync/pull/224)
+1. [](#improved)
+    * Fixed git pull command for modern git versions by adding `--ff` flag [#246](https://github.com/trilbymedia/grav-plugin-git-sync/pull/246)
+    * Removed unnecessary `config->reload()` call in `onAdminAfterSave` event
+
+# v3.0.0
+## 10/19/2025
+
+1. [](#improved)
+    * Grav 1.8 support
+    * Use `{$var}` instead of `${var}` causing deprecation notices
+    * Prevent accepting webhooks when they are disabled in config [#216](https://github.com/trilbymedia/grav-plugin-git-sync/issues/216)
+    * Updated FAQ link to discussion
+
 # v2.3.2
 ## 06/03/2021
 

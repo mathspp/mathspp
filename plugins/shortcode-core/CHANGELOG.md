@@ -1,3 +1,16 @@
+# v5.3.1
+## 12/23/2025
+
+1. [](#new)
+    * Added a new `resetStates()` method to clear memory manually
+    * Added new `shortcode_force_frontend` twig variable to force frontend processing
+
+# v5.3.0
+## 08/25/2025
+
+1. [](#new)
+    * Editor Pro (upcoming premium plugin) support for all core shortcodes
+
 # v5.2.1
 ## 01/06/2025
 

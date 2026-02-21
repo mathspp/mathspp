@@ -1,3 +1,38 @@
+# v1.10.49.3
+## 01/27/2026
+
+1. [](#improved)
+    * Support new `licensing.getgrav.org` server for premium downloads
+
+# v1.10.49.2
+## 12/29/2025
+
+1. [](#improved)
+    * Added fallback autoloader to handle class location changes during upgrades
+    * Lazy-load WhiteLabel and ScssCompiler to avoid loading scssphp during upgrades
+    * Use sendJsonResponse() to exit early after package install/reinstall tasks
+
+# v1.10.49.1
+## 09/03/2025
+
+1. [](#bugfix)
+    * Fixed several JS issues with Notifications and Scheduler
+
+# v1.10.49
+## 08/25/2025
+
+1. [](#new)
+    * Upgraded to very latest FontAwesome 7.0 with custom ForkAwesome Shim
+    * Support for enhanced Scheduler in admin
+    * PHP 8.4 compatibility
+1. [](#improved)
+    * Vendor libraries updated
+    * Added translations for Fetchpriority Trait [#2436](https://github.com/getgrav/grav-plugin-admin/pull/2346)
+    * Other various missing langs strings added to 'english' translation
+1. [](#bugfix)
+    * Fix `force_ssl` use schema instead of server var [#2435](https://github.com/getgrav/grav-plugin-admin/pull/2345)
+    * Fix for fully turning off notifications JS
+
 # v1.10.48
 ## 10/28/2024
 
