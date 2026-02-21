@@ -3,7 +3,7 @@ title: Intermediate Python course
 class: hero--dark
 background_image: theme://images/common_hero.webp
 
-audience_callout: "For Pythonistas ashamed of their own code from 3 months ago"
+audience_callout: "For Pythonistas who know there's room to improve"
 promise_headline: "Become the Python dev others trust to solve real-world problems"
 authority_line: "Master the same tools, mental models, and techniques I used while working full-time on popular open-source Python projects with a combined 90,000 GitHub stars."
 
