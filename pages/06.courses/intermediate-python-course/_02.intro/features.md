@@ -24,11 +24,6 @@ Join dozens of others who are writing more efficient code with more confidence.
     gap: 1.25rem;
   }
 }
-
-/* Optional: keep cards visually consistent in a grid */
-.review-cards-grid .review-card {
-  height: 100%;
-}
 </style>
 
 <div class="review-cards-grid">
