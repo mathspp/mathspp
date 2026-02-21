@@ -1,6 +1,7 @@
 ---
 process:
     twig: true
+twig_first: true
 ---
 
 ## Turn your Python code into professional code
