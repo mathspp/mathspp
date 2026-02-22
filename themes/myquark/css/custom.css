@@ -826,3 +826,8 @@ details[open]>summary {
 .landing-page .mobile-menu {
     display: none !important;
 }
+
+span.accent {
+    color: var(--accent-2);
+    text-decoration: underline;
+}
