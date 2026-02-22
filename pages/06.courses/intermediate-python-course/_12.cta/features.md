@@ -26,8 +26,8 @@ process:
 {% include 'partials/review-card.html.twig' with {
     review: {
     header: {
-        star_rating: 4,
-        name: 'Youn Noh',
+        star_rating: 5,
+        name: 'Soumen',
     },
     content: '<p>The most exciting part for me was typing, a very interesting module to explore further.</p>',
     media: {
@@ -44,7 +44,7 @@ process:
         star_rating: 5,
         name: 'Michael Dahlberg',
     },
-    content: '<p>I learned something I did not know on each day. [...] Modularity was something I knew about but I really learned some fantastic rules on how to apply it. [...] This was one of those rare classes that I came away feeling like I learned WAY more about any of the given topics than I thought I already knew .</p>',
+    content: '<p>I learned something I did not know on each day. [...] Modularity was something I knew about but I really learned some fantastic rules on how to apply it. [...] This was one of those rare classes that I came away feeling like I learned WAY more about any of the given topics than I thought I already knew.</p>',
     media: {
         images: [
         { url: '/user/pages/testimonials/20260217-2116-michael-dahlberg/profile.webp' }
