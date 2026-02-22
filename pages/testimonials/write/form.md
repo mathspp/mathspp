@@ -34,6 +34,7 @@ form:
         star_rating:
           label: Rating (0 to 5)
           type: number
+          default: 5
           min: 0
           max: 5
           validate:
