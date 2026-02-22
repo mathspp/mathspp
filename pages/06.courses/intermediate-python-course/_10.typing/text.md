@@ -1,3 +1,7 @@
+---
+image_align: left
+---
+
 ## Catch bugs in your code without running it
 
 **Increase the robustness** of your codebase by using type hints and a static type checker to catch bugs in your programs _without_ even having to run your code.
