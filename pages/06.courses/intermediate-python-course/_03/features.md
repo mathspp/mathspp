@@ -1,3 +1,3 @@
 ## I spent thousands of hours doing research and writing Python in production to create this 5-week cohort.
 
-## Learn the same tools and techniques professional devs use, faster.
+## Learn the same tools and techniques professional devs use, but _faster_.
