@@ -1,3 +1,3 @@
-## I spent thousands of hours doing research and writing Python in production
+## I spent thousands of hours doing research and writing Python in production to create this 5-week cohort.
 
-## The most important tools and techniques were boiled down to this 5-week cohort
+## Learn the same tools and techniques professional devs use, faster.
