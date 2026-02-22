@@ -8,7 +8,7 @@
 ### Week 2 — Modularity & composability
 
 - **Session 3**, 10th March 3–5pm UTC: write more modular and composable code with the single responsibility principle and decorators.
-- **Session 4**, 12th March 3–5pm UTC: write OOP code more effectively by understanding the trade off between using composition and inheritance.
+- **Session 4**, 12th March 3–5pm UTC: write OOP code more effectively by understanding the trade-off between using composition and inheritance.
 
 ### Week 3 — Standard library
 
