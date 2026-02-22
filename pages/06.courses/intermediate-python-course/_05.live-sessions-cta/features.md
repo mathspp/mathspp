@@ -29,7 +29,7 @@ process:
         star_rating: 5,
         name: 'Kiel Haymon',
     },
-    content: '<p>Learning in an interactive manner is helpful and the most effective to me. Also being able to ask questions and get them resolved in real time is very beneficial.</p>',
+    content: "<p>Learning in an interactive manner is helpful and the most effective to me. Also being able to ask questions and get them resolved in real time is very beneficial.</p>",
     media: {
         images: [
         { url: '/user/pages/testimonials/20260217-2118-kiel-haymon/profile.webp' }
@@ -44,7 +44,7 @@ process:
         star_rating: 5,
         name: 'Yoga',
     },
-    content: '<p> I like your teaching style, and I think you make topics approachable and engaging. I learned things that were not necessarily the core point of the material by watching you work through rough code and answer questions. It is useful to hear questions from others in the course who have different experience levels or perspectives. It's also just more fun to work together in real time rather than on my own.</p>',
+    content: "<p>I like your teaching style, and I think you make topics approachable and engaging. I learned things that were not necessarily the core point of the material by watching you work through rough code and answer questions. It is useful to hear questions from others in the course who have different experience levels or perspectives. It's also just more fun to work together in real time rather than on my own.</p>",
     media: {
         images: [
         { url: '/user/pages/testimonials/20260217-2119-colby-thrash/profile.webp' }
