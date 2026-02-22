@@ -828,6 +828,8 @@ details[open]>summary {
 }
 
 span.accent {
-    color: var(--accent-2);
-    text-decoration: underline;
+    color: var(--flexoki-white);
+    background-color: var(--pu);
+    padding: 2px 4px;
+    border-radius: 4px;
 }
