@@ -6,4 +6,4 @@ limit: 20
 ---
 
 
-## This could be you
+## Why you can trust my teaching:
