@@ -1,6 +1,6 @@
 ## Write modular and composable code
 
-Design code that is easy to test and reason about, and that you can reuse in your project and across projects.
+Design code that you can reuse across your project, reducing the amount of duplicated code, duplicated logic, and duplicated structure in your codebase.
 
 - **Streamline your functions**: apply the single-responsibility principle to write functions that are modular, easy to test and reason about, and that you can apply across multiple scenarios and contexts.
 - **Abstract away orthogonal behaviour**: use decorators to abstract useful logic into components you can easily apply to other functions and classes in your codebase without having to repeat yourself over and over and over and over again. (See what I did there?)
