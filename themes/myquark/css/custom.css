@@ -291,7 +291,7 @@ label {
     the "feature" texts under icons in the workshops page,
     elements specifically aligned to the centre,
     and paragraphs inside divs where we specifically want centre alignment. */
-body p:not(#footer p, .hero p, .feature-content p, .text-center, div.text-center p) {
+body p:not(#footer p, .hero p, .feature-content p, .text-center, div.text-center p, .modular-features p) {
     text-align: justify;
 }
 
