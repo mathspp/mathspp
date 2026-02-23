@@ -6,8 +6,8 @@ content:
         custom:
           - "_hero"
           - "_intro"
-          - "_algorithm-mastery-bootcamp"
           - "_intermediate-python-course"
+          - "_algorithm-mastery-bootcamp"
           - "_stay-updated"
           - "_contact-me"
 metadata:
