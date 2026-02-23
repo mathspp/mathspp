@@ -9,7 +9,7 @@ authority_line: "Master the same tools, mental models, and techniques I used whi
 
 cta:
   text: "Secure your spot in the cohort"
-  url: "#sign-up"
+  url: "https://mathspp.gumroad.com/l/intermediate-python-course?wanted=true&variant=Cohort%3A+2nd+March+%E2%80%94+3rd+April"
   subtext: "Limited seats"
 
 social_proof:
