@@ -35,3 +35,4 @@
 <div style="display:flex; justify-content:center;">
 <a href="https://mathspp.gumroad.com/l/intermediate-python-course?wanted=true&variant=Cohort%3A+2nd+March+%E2%80%94+3rd+April" class="btn cta-btn">Secure your spot for $490</a>
 </div>
+<br />
