@@ -3,20 +3,18 @@
 <style>
 .fa-check-list {
     list-style: none;
-    padding-left: 0;
 }
 
 .fa-check-list li {
     position: relative;
-    padding-left: 1.75rem; /* space for icon */
 }
 
 .fa-check-list li::before {
     content: "\f058"; /* Unicode for fa-check-circle */
     font-family: "Font Awesome 5 Free";
     font-weight: 400; /* 400 = Regular (far) */
-    position: absolute;
-    left: 0;
+    position: relative;
+    left: -.4em;
     top: 0.15em;
 
     color: var(--accent);
@@ -28,7 +26,7 @@
   <li>10 live sessions ($490 value)</li>
   <li>Lifetime access to all cohort recordings ($190 value)</li>
   <li>46 exercise sheets ($414 value)</li>
-  <li>Free access to _all_ cohort reruns ($490+ value)</li>
+  <li>Free access to all cohort reruns ($490+ value)</li>
   <li>Personalised support during the cohort ($1,000+ value)</li>
   <li>Lifetime access to alumni community ($200+ value)</li>
   <li>30-day, 100% money-back guarantee</li>
