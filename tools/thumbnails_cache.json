@@ -18,22 +18,22 @@
     "words": 35212
   },
   "programming": {
-    "articles": 315,
-    "code_snippets": 3969,
-    "loc": 38036,
-    "words": 386372
+    "articles": 316,
+    "code_snippets": 3986,
+    "loc": 38103,
+    "words": 387343
   },
   "python": {
-    "articles": 308,
-    "code_snippets": 3848,
-    "loc": 36943,
-    "words": 383399
+    "articles": 309,
+    "code_snippets": 3865,
+    "loc": 37010,
+    "words": 384370
   },
   "algorithms": {
-    "articles": 27,
-    "code_snippets": 275,
-    "loc": 3300,
-    "words": 36308
+    "articles": 28,
+    "code_snippets": 292,
+    "loc": 3367,
+    "words": 37279
   },
   "chatgpt": {
     "articles": 4,
@@ -360,10 +360,10 @@
     "words": 8090
   },
   "regex": {
-    "articles": 7,
-    "code_snippets": 21,
-    "loc": 188,
-    "words": 2627
+    "articles": 8,
+    "code_snippets": 38,
+    "loc": 255,
+    "words": 3598
   },
   "random walks": {
     "articles": 1,
@@ -564,10 +564,10 @@
     "words": 430
   },
   "__all": {
-    "articles": 436,
-    "code_snippets": 4113,
-    "loc": 39263,
-    "words": 475682
+    "articles": 437,
+    "code_snippets": 4130,
+    "loc": 39330,
+    "words": 476653
   },
   "fp": {
     "articles": 5,

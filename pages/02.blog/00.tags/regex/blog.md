@@ -28,9 +28,9 @@ title: "Regex blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">7</th>
-            <th style="text-align: center;">2,627</th>
-            <th style="text-align: center;">188</th>
+            <th style="text-align: center;">8</th>
+            <th style="text-align: center;">3,598</th>
+            <th style="text-align: center;">255</th>
         </tr>
     </thead>
     <tbody>

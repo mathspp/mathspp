@@ -1,0 +1,17 @@
+date: 02-03-2026 13:39
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Learn how to remove extra spaces from a string using regex, string splitting, a fixed point, and itertools.groupby."
+    og:image: "https://mathspp.com/blog/remove-extra-spaces/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/remove-extra-spaces/thumbnail.webp"
+references: []
+slug: "remove-extra-spaces"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+      - programming
+      - python
+      - algorithms
+      - regex
+title: Remove extra spaces
