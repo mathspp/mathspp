@@ -5923,8 +5923,11 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/129.custom-value-in-dictfromkeys": {
-    "timestamp": 1772462917.4760706,
-    "tags": [],
+    "timestamp": 1772462918.4191432,
+    "tags": [
+      "python",
+      "programming"
+    ],
     "stats": {
       "articles": 1,
       "code_snippets": 3,
@@ -6220,6 +6223,20 @@
       "code_snippets": 17,
       "loc": 67,
       "words": 977
+    }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/139.multiline-input-in-the-repl": {
+    "timestamp": 1772464870.7557633,
+    "tags": [
+      "repl",
+      "programming",
+      "python"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 3,
+      "loc": 20,
+      "words": 153
     }
   }
 }

@@ -1,0 +1,19 @@
+date: 02-03-2026 15:15
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to do multiline input in the REPL using an uncommon combination of arguments for the built-in open."
+    og:image: "https://mathspp.com/blog/til/multiline-input-in-the-repl/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/multiline-input-in-the-repl/thumbnail.webp"
+references: []
+routes:
+    aliases:
+        - "/blog/til/139"
+slug: "multiline-input-in-the-repl"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - repl
+      - programming
+      - python
+title: "TIL #139 – Multiline input in the REPL"
+visible: false

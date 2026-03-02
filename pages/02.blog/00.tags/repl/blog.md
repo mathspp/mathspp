@@ -28,9 +28,9 @@ title: "Repl blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">3</th>
-            <th style="text-align: center;">718</th>
-            <th style="text-align: center;">39</th>
+            <th style="text-align: center;">4</th>
+            <th style="text-align: center;">871</th>
+            <th style="text-align: center;">59</th>
         </tr>
     </thead>
     <tbody>

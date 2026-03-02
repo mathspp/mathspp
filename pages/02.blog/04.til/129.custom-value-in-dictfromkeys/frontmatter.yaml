@@ -11,6 +11,8 @@ routes:
 slug: "custom-value-in-dictfromkeys"
 taxonomy:
     category: [blogpost, til]
-    tag: []
+    tag:
+      - python
+      - programming
 title: "TIL #129 – Custom value in dict.fromkeys"
 visible: false
