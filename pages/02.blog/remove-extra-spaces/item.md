@@ -111,8 +111,8 @@ def fixedpoint(f, x):
 ```
 
 Having factored out the fixed point logic, you can create a function that replaces two spaces by a single space.
-Since that just means freezing the two arguments in the string method `replace`, it might sound like a job for an anonymous function...
-But it's also an opportunity to [use `functools.partial` and `functools.Placeholder`](/blog/functools-partial):
+Since that just means freezing the two arguments in the string method `replace`, it might sound like a job for an anonymous function.
+However, in situations like this I prefer to [use `functools.partial` (and `functools.Placeholder`)](/blog/functools-partial):
 
 ```py
 from functools import partial, Placeholder as _P
