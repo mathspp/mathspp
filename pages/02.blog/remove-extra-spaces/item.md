@@ -204,7 +204,7 @@ You just learned about four different ways in which you can remove extra spaces 
 By default, use the first solution with the module `re`, doing `re.sub("  +", " ", string)`.
 If removing leading and trailing spaces is fine, the solution using the string method `split` is also appropriate.
 
-If you want to exercise your Python skills, there are also solutions using fixed points and `itertools.groupby` that looks really cool but that end up being too verbose for this task.
+If you want to exercise your Python skills, there are also solutions using fixed points and `itertools.groupby` that look cool but that end up being too verbose for this task.
 
 For your reference, the table below summarises the behaviour of each solution you learned about:
 

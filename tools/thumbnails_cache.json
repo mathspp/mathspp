@@ -21,19 +21,19 @@
     "articles": 316,
     "code_snippets": 3986,
     "loc": 38103,
-    "words": 387350
+    "words": 387349
   },
   "python": {
     "articles": 309,
     "code_snippets": 3865,
     "loc": 37010,
-    "words": 384377
+    "words": 384376
   },
   "algorithms": {
     "articles": 28,
     "code_snippets": 292,
     "loc": 3367,
-    "words": 37286
+    "words": 37285
   },
   "chatgpt": {
     "articles": 4,
@@ -363,7 +363,7 @@
     "articles": 8,
     "code_snippets": 38,
     "loc": 255,
-    "words": 3605
+    "words": 3604
   },
   "random walks": {
     "articles": 1,
@@ -567,7 +567,7 @@
     "articles": 437,
     "code_snippets": 4130,
     "loc": 39330,
-    "words": 476660
+    "words": 476659
   },
   "fp": {
     "articles": 5,

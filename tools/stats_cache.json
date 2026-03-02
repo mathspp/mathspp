@@ -5923,7 +5923,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/129.custom-value-in-dictfromkeys": {
-    "timestamp": 1772461945.585993,
+    "timestamp": 1772462917.4760706,
     "tags": [],
     "stats": {
       "articles": 1,
@@ -6208,7 +6208,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/remove-extra-spaces": {
-    "timestamp": 1772461942.4338496,
+    "timestamp": 1772462905.734913,
     "tags": [
       "programming",
       "python",
@@ -6219,7 +6219,7 @@
       "articles": 1,
       "code_snippets": 17,
       "loc": 67,
-      "words": 978
+      "words": 977
     }
   }
 }
