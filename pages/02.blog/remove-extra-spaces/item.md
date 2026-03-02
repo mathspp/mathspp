@@ -23,11 +23,11 @@ The best solution for this task, which is both readable and performant, uses the
 import re
 
 def remove_extra_spaces(string):
-    return re.sub("  +", " ", string)
+    return re.sub(" {2,}", " ", string)
 ```
 
 The function `sub` can be used to **sub**stitute a pattern for a replacement you specify.
-The pattern `"  +"` finds runs of 2 or more consecutive spaces and replaces them with a single space.
+The pattern `" {2,}"` finds runs of 2 or more consecutive spaces and replaces them with a single space.
 
 ## String splitting
 
@@ -201,7 +201,7 @@ def remove_extra_spaces(string):
 ## Summary
 
 You just learned about four different ways in which you can remove extra spaces from a string.
-By default, use the first solution with the module `re`, doing `re.sub("  +", " ", string)`.
+By default, use the first solution with the module `re`, doing `re.sub(" {2,}", " ", string)`.
 If removing leading and trailing spaces is fine, the solution using the string method `split` is also appropriate.
 
 If you want to exercise your Python skills, there are also solutions using fixed points and `itertools.groupby` that look cool but that end up being too verbose for this task.
