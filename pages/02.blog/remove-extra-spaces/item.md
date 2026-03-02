@@ -209,7 +209,7 @@ If you want to exercise your Python skills, there are also solutions using fixed
 For your reference, the table below summarises the behaviour of each solution you learned about:
 
 | Method | Usable | Preserves leading/trailing whitespace | Recommended | Interesting |
-| | :-: | :-: | :-: | :-: |
+| :- | :-: | :-: | :-: | :-: |
 | `re.sub` | ✓ | ✓ | ✓ | X |
 | string splitting | ✓ | X | ✓ | X |
 | fixed point | ✓ | ✓ | X | ✓ |
