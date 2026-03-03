@@ -1,0 +1,21 @@
+date: 03-03-2026 16:16
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to install jupyter properly while using uv to manage tools."
+    og:image: "https://mathspp.com/blog/til/install-jupyter-with-uv/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/install-jupyter-with-uv/thumbnail.webp"
+references:
+  - "Using uv with Jupyter, uv docs, <https://docs.astral.sh/uv/guides/integration/jupyter/> [last accessed 03-03-2026];"
+routes:
+    aliases:
+        - "/blog/til/140"
+slug: "install-jupyter-with-uv"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - python
+      - programming
+      - uv
+      - productivity
+title: "TIL #140 – Install Jupyter with uv"
+visible: false

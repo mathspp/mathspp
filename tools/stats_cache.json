@@ -6238,5 +6238,20 @@
       "loc": 20,
       "words": 153
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/140.install-jupyter-with-uv": {
+    "timestamp": 1772557527.6341853,
+    "tags": [
+      "python",
+      "programming",
+      "uv",
+      "productivity"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 4,
+      "loc": 9,
+      "words": 256
+    }
   }
 }
