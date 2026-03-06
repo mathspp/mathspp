@@ -11,7 +11,7 @@ taxonomy:
         - "PyCon Italia"
         - "Italy"
         - "2025"
-title: "A tour of the module `itertools`"
+title: "A tour of the module itertools"
 watch: https://www.youtube.com/watch?v=3vqZHkZ-hHA
 youtube_embed: https://www.youtube.com/embed/3vqZHkZ-hHA?si=KyzzZR36CUh6ZSBw
 ---

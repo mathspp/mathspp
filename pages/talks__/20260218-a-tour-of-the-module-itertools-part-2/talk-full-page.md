@@ -12,7 +12,7 @@ taxonomy:
         - "remote"
         - "Sweden"
         - "2026"
-title: "A tour of the module `itertools`, part 2"
+title: "A tour of the module itertools, part 2"
 watch: https://youtu.be/xTBnUBDf4EM
 youtube_embed: https://www.youtube.com/embed/xTBnUBDf4EM
 ---

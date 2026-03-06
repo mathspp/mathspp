@@ -11,7 +11,7 @@ taxonomy:
         - "Germany"
         - "remote"
         - "2026"
-title: "The paradox of `itertools.tee`"
+title: "The paradox of itertools.tee"
 watch: https://youtu.be/7tYGPC-yzjE
 youtube_embed: https://www.youtube.com/embed/7tYGPC-yzjE
 ---

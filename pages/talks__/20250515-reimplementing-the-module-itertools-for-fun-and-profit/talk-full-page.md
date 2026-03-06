@@ -11,7 +11,7 @@ taxonomy:
         - "PyCon US"
         - "USA"
         - "2025"
-title: "Reimplementing the module `itertools` for fun & profit"
+title: "Reimplementing the module itertools for fun & profit"
 ---
 
 ## Description

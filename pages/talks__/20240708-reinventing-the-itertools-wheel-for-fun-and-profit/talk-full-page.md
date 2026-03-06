@@ -10,7 +10,7 @@ taxonomy:
         - "EuroPython"
         - "Czech Republic"
         - "2024"
-title: "Reinventing the `itertools` wheel for fun and profit"
+title: "Reinventing the itertools wheel for fun and profit"
 ---
 
 ## Abstract

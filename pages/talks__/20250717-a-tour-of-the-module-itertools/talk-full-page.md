@@ -11,7 +11,7 @@ taxonomy:
         - "EuroPython"
         - "Czech Republic"
         - "2025"
-title: "A tour of the module `itertools`"
+title: "A tour of the module itertools"
 watch: https://www.youtube.com/watch?v=cRpFjodM6TI
 youtube_embed: https://www.youtube.com/embed/cRpFjodM6TI?si=X0xL6Yrg4UzWA_Wa
 ---
