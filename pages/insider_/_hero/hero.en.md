@@ -39,8 +39,7 @@ form:
 
     process:
         captcha: true
-        newsletter-subscriber: true
-        redirect: '/_insider/wait?email={{ form.value.email }}'
+        redirect: '/insider_/wait?email={{ form.value.email }}'
 ---
 
 # Become the smartest Python 🐍 developer in the room 🚀
