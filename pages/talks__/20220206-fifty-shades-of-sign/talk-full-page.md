@@ -11,7 +11,7 @@ taxonomy:
         - "PyCascades"
         - "remote"
         - "2022"
-title: "Fifty shades of sign"
+title: "Fifty shades of `sign`"
 watch: https://www.youtube.com/watch?v=FkE-HrxSFCM
 youtube_embed: https://www.youtube.com/embed/FkE-HrxSFCM?si=lDgecUgYxGTW-mEe
 ---

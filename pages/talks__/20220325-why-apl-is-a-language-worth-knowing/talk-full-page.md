@@ -9,6 +9,7 @@ taxonomy:
     category: talks
     tags:
         - "FnConf"
+        - "India"
         - "remote"
         - "2022"
 title: "Why APL is a language worth knowing"

@@ -9,6 +9,7 @@ taxonomy:
     category: talks
     tags:
         - "PyOhio"
+        - "USA"
         - "remote"
         - "2022"
 title: "Comprehending Comprehensions"

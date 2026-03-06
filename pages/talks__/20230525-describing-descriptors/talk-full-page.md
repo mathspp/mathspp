@@ -9,6 +9,7 @@ taxonomy:
     category: talks
     tags:
         - "PyCon Sri Lanka"
+        - "Sri Lanka"
         - "remote"
         - "2023"
 title: "Describing Descriptors"

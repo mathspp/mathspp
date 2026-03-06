@@ -8,8 +8,9 @@ slides_pdf: https://github.com/mathspp/talks/tree/main/20211023_djangoconus_pydo
 taxonomy:
     category: talks
     tags:
-        - "DjangoCon"
-        - "US"
+        - "DjangoCon US"
+        - "USA"
+        - "remote"
         - "2021"
 title: "Pydon'ts - Write elegant Python code v1.1"
 watch: https://www.youtube.com/watch?v=s6dJab2qwkg

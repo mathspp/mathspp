@@ -11,7 +11,7 @@ taxonomy:
         - "Pyjamas Conf"
         - "remote"
         - "2021"
-title: "Pydon'ts - Write elegant Python code"
+title: "Pydon'ts - Write elegant Python code v2"
 # watch: xxx
 # youtube_embed: xxx
 ---

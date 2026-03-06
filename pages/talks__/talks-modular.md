@@ -7,6 +7,7 @@ content:
         custom:
             - _hero
             - _talks
+            - _tutorials
 metadata:
     author: 'Rodrigo Girão Serrão'
     description: 'Overview of all the talks, tutorials and lightning talks I have given and other public speaking appearances.'

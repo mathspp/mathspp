@@ -9,6 +9,7 @@ taxonomy:
     category: talks
     tags:
         - "Func Prog Sweden meetup"
+        - "Sweden"
         - "remote"
         - "2023"
 title: "How APL made me a better Python developer"

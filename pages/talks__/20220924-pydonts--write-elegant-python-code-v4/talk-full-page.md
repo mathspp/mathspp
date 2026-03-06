@@ -9,6 +9,7 @@ taxonomy:
     category: talks
     tags:
         - "PyCon Portugal"
+        - "Portugal"
         - "remote"
         - "2022"
 title: "Pydon'ts - Write elegant Python code v4"
