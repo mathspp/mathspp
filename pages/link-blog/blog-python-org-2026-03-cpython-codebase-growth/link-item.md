@@ -5,7 +5,7 @@ link: https://blog.python.org/2026/03/cpython-codebase-growth/
 taxonomy:
     category: link
 title: "CPython: 36 Years of Source Code"
-https://www.linkedin.com/posts/hugovk_cpython-36-years-of-source-code-python-share-7436476172428926976-C8-D
+via: https://www.linkedin.com/posts/hugovk_cpython-36-years-of-source-code-python-share-7436476172428926976-C8-D
 ---
 
 Stan Ulbrych produced this neat SVG showing the growth of the CPython repo over the past 36 years:
