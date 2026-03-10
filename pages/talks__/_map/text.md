@@ -1116,6 +1116,12 @@ section.container:has(div > div > svg#talks-map) {
 </g>
 
 <g>
+<use href="#pin" class="map-pin remote-talk-pin" x="1888" y="740" />
+<title>Remote tutorial “Terminal-based user interfaces (TUIs) with ease using Textual” @ New Zealand Python User Group</title>
+<title>Remote tutorial “More Textual” @ New Zealand Python User Group</title>
+</g>
+
+<g>
 <use href="#pin" class="map-pin talk-pin" x="1090" y="135" />
 <title>Talk “What are descriptors and why does Django need them?” @ PyCon Lithuania 2024</title>
 </g>
@@ -1131,6 +1137,11 @@ section.container:has(div > div > svg#talks-map) {
 </g>
 
 <g>
+<use href="#pin" class="map-pin talk-pin" x="572" y="217" />
+<title>Tutorial “The Pokémon trainer's guide to pandas &amp; matplotlib” @ PyCon US 2024</title>
+</g>
+
+<g>
 <use href="#pin" class="map-pin talk-pin" x="1035" y="205" />
 <title>Talk “Descriptors made easy” @ PyCon Italy 2024</title>
 </g>
@@ -1138,11 +1149,6 @@ section.container:has(div > div > svg#talks-map) {
 <g>
 <use href="#pin" class="map-pin talk-pin" x="1030" y="205" />
 <title>Talk “503 days working full-time on FOSS: lessons learned” @ PyCon Italy 2024</title>
-</g>
-
-<g>
-<use href="#pin" class="map-pin talk-pin" x="572" y="217" />
-<title>Tutorial “The Pokémon trainer's guide to pandas &amp; matplotlib” @ PyCon US 2025</title>
 </g>
 
 <g>
