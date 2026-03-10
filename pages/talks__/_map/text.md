@@ -1223,7 +1223,9 @@ section.container:has(div > div > svg#talks-map) {
 <script>
   tippy('.map-pin', {
     content(reference) {
-      return reference.parentNode.querySelector('title').textContent;
+      return Array.from(
+        reference.parentNode.querySelectorAll('title')
+      ).map(el => el.textContent).join("\n");
     },
     allowHTML: true,
     animation: 'scale',
