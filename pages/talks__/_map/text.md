@@ -43,6 +43,11 @@ section.container:has(div > div > svg#talks-map) {
     stroke-width: 1px;
     stroke-linejoin: round;
 }
+
+.map-pin {
+    width: 36px;
+    height: 36px;
+}
 </style>
 <defs>
   <symbol id="pin" viewBox="0 0 24 24">
