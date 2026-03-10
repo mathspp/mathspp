@@ -8,6 +8,7 @@ content:
             - _hero
             - _talks
             - _tutorials
+            - _lightning-talks
 metadata:
     author: 'Rodrigo Girão Serrão'
     description: 'Overview of all the talks, tutorials and lightning talks I have given and other public speaking appearances.'
@@ -19,8 +20,3 @@ sitemap:
 use-bricklayer:
     active: true
 ---
-
-This page gathers all my conference appearances in one place. Scroll down to
-explore the different sections, or use the hero cards above to jump straight
-to talks, tutorials or lightning talks. Each card opens a detailed page
-containing abstracts, slides, references and other goodies.
