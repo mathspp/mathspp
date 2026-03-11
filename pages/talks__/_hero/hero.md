@@ -6,9 +6,11 @@ section.container:has(.talks-hero-stage) {
 }
 
 .talks-hero-stage {
+    box-sizing: border-box;
     position: relative;
     display: grid;
     place-items: center;
+    height: 100vh;
     min-height: 100vh;
     padding: 5rem 1rem 3rem;
     overflow: hidden;
@@ -26,7 +28,7 @@ section.container:has(.talks-hero-stage) {
 .talks-hero-map svg#talks-map {
     width: min(100%, 112rem);
     max-width: 100%;
-    max-height: min(100vh - 2rem, calc(100vw * 857 / 1800));
+    max-height: min(calc(100vh - 8rem), calc(100vw * 857 / 1800));
     height: auto;
 }
 
@@ -58,7 +60,7 @@ section.container:has(.talks-hero-stage) {
     }
 
     .talks-hero-map svg#talks-map {
-        max-height: min(100vh - 1rem, calc(100vw * 857 / 1800));
+        max-height: min(calc(100vh - 6rem), calc(100vw * 857 / 1800));
     }
 
     .talks-hero-content {
