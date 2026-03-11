@@ -1,32 +1,12 @@
 <style>
-.talks-map-shell {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-#talks-map {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.modular-hero.has-background-module .hero-background-module,
-.modular-hero.has-background-module .hero-background-module .talks-map-shell {
-    width: 100%;
-    height: 100%;
-}
-
-.modular-hero.has-background-module .hero-background-module #talks-map {
-    width: 100%;
-    height: 100%;
-    pointer-events: auto;
+section.container:has(div > div > svg#talks-map) {
+    max-width: unset;
 }
 </style>
 
 <!-- Full map viewBox is 0 0 2000 857 but I'm “zooming in”. -->
-<div class="talks-map-shell">
-<svg id="talks-map" baseprofile="tiny" fill="var(--bg)" preserveAspectRatio="xMidYMid slice" stroke="var(--tx)" stroke-linecap="round" stroke-linejoin="round" stroke-width=".6" version="1.2" viewbox="150 0 1800 857" xmlns="http://www.w3.org/2000/svg">
+<svg id="talks-map" baseprofile="tiny" fill="var(--bg)" stroke="var(--tx)" stroke-linecap="round" stroke-linejoin=
+"round" stroke-width=".6" version="1.2" viewbox="150 0 1800 857" xmlns="http://www.w3.org/2000/svg">
 <style>
 /* Countries where I've given in-person talks: */
 #PT, /* Portugal */
@@ -1240,7 +1220,6 @@
 </g>
 
 </svg>
-</div>
 
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
