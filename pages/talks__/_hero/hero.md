@@ -42,8 +42,6 @@ section.hero.hero-fullscreen {
     width: min(100%, 40rem);
     padding: 1.5rem;
     text-align: center;
-    background: color-mix(in srgb, var(--bg) 36%, transparent);
-    backdrop-filter: blur(0.35rem);
 }
 
 .talks-hero-content h1 {
