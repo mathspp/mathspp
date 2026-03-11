@@ -6,10 +6,10 @@ content:
         by: custom
         custom:
             - _hero
-            - _map-intro
             - _talks
             - _tutorials
             - _lightning-talks
+            - _map-credits
 metadata:
     author: 'Rodrigo Girão Serrão'
     description: 'Overview of all the talks, tutorials and lightning talks I have given and other public speaking appearances.'
