@@ -1,1 +1,0 @@
-## Python talks and tutorials
