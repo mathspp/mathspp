@@ -23,13 +23,20 @@
     overflow: hidden;
 }
 
+.modular-hero.has-background-module.hero-fullscreen {
+    min-height: calc(100vh - 4rem);
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
+}
+
 .modular-hero.has-background-module .hero-background-module {
     position: absolute;
-    inset: 0;
+    inset: 4rem 0 0;
     z-index: 0;
 }
 
 .modular-hero.has-background-module .image-overlay {
+    inset: 4rem 0 0;
     z-index: 1;
     pointer-events: none;
 }
@@ -38,5 +45,9 @@
 .modular-hero.has-background-module > #to-start {
     position: relative;
     z-index: 2;
+}
+
+.modular-hero.has-background-module > #to-start {
+    bottom: 1rem;
 }
 </style>
