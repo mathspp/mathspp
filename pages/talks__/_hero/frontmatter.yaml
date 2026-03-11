@@ -1,3 +1,4 @@
-hero_classes: "parallax text-light hero-large overlay-dark-gradient"
+hero_background_module: "_map"
+hero_classes: "text-light hero-fullscreen overlay-dark-gradient"
 hero_image: theme://images/common_hero.webp
 title: Talks

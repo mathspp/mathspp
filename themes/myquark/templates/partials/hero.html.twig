@@ -1,5 +1,12 @@
 {% set image_url = hero_image_url != "" ? hero_image_url : hero_image.url %}
-<section id="{{ id }}" class="section modular-hero hero {{ page.header.hero_classes }} {{ page.header.background.parallax ? 'parallax' : '' }}" {% if image_url %}style="background-image: url('{{ image_url }}');"{% endif %}>
+{% set hero_background_module = (page.header.hero_background_module and page.parent) ? page.parent.find(page.parent.route ~ '/' ~ page.header.hero_background_module) : null %}
+
+<section id="{{ id }}" class="section modular-hero hero {{ page.header.hero_classes }} {{ page.header.background.parallax ? 'parallax' : '' }} {{ hero_background_module ? 'has-background-module' : '' }}" {% if image_url %}style="background-image: url('{{ image_url }}');"{% endif %}>
+    {% if hero_background_module %}
+    <div class="hero-background-module">
+        {{ hero_background_module.content|raw }}
+    </div>
+    {% endif %}
     <div class="image-overlay"></div>
     <section class="container {{ grid_size }}" style="text-align: {{ page.header.hero_align|default('center') }}">
         {{ content|raw }}
