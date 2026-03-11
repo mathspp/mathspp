@@ -5,6 +5,10 @@ section.container:has(.talks-hero-stage) {
     padding: 0;
 }
 
+section.hero.hero-fullscreen {
+    max-height: 100vh;
+}
+
 .talks-hero-stage {
     box-sizing: border-box;
     position: relative;
