@@ -7,7 +7,6 @@ content:
         custom:
             - _hero
             - _map-intro
-            - _map
             - _talks
             - _tutorials
             - _lightning-talks
