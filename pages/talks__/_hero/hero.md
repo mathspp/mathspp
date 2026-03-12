@@ -1317,8 +1317,8 @@ section.hero.hero-fullscreen {
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">45</th>
-            <th style="text-align: center;">34</th>
+            <th style="text-align: center;">46</th>
+            <th style="text-align: center;">35</th>
             <th style="text-align: center;">12</th>
         </tr>
     </thead>
