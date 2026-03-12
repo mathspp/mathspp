@@ -6,6 +6,7 @@ content:
         by: custom
         custom:
             - _hero
+            - _intro
             - _talks
             - _tutorials
             - _lightning-talks
