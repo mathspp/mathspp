@@ -1,0 +1,19 @@
+date: 13-03-2026 14:38
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to inspect a lazy import object in Python 3.15."
+    og:image: "https://mathspp.com/blog/til/inspect-a-lazy-import/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/inspect-a-lazy-import/thumbnail.webp"
+references:
+  - "PEP 810, Explicit lazy imports, <https://peps.python.org/pep-0810/#reification> [last accessed 13-03-2026];"
+routes:
+    aliases:
+        - "/blog/til/141"
+slug: "inspect-a-lazy-import"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - python
+title: "TIL #141 – Inspect a lazy import"
+visible: false

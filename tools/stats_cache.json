@@ -6253,5 +6253,18 @@
       "loc": 9,
       "words": 256
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/141.inspect-a-lazy-import": {
+    "timestamp": 1773413582.6328595,
+    "tags": [
+      "programming",
+      "python"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 4,
+      "loc": 14,
+      "words": 139
+    }
   }
 }
