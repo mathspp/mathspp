@@ -3,8 +3,11 @@ See an animation of a trapezoid innscribed in a circle, built with some maths an
 ===
 
 
+## The animation
+
 My brother asked for my help to build an animation of a trapezoid inscribed in a circle that kept changing his shape.
-With [a bit of maths](/blog/til/cyclic-quadrilateral) and the help of ChatGPT for the UI, here's what I came up with:
+With [a bit of maths](/blog/til/cyclic-quadrilateral) and the help of ChatGPT for the UI, you can see the animation below.
+Under the animation you can find a control panel that allows you to tweak some animation parameters, and under that you can find a brief explanation of how the animation works.
 
 <style>
   .cyclic-trapezoid-embed {
@@ -40,7 +43,6 @@ With [a bit of maths](/blog/til/cyclic-quadrilateral) and the help of ChatGPT fo
   .cyclic-trapezoid-embed .ctp-ui {
     margin-top: 16px;
     width: 100%;
-    padding: 14px;
     border-radius: 14px;
     background: var(--ctp-panel-bg);
     color: var(--ctp-text);
@@ -48,11 +50,38 @@ With [a bit of maths](/blog/til/cyclic-quadrilateral) and the help of ChatGPT fo
     backdrop-filter: blur(8px);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
     font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    overflow: hidden;
   }
 
-  .cyclic-trapezoid-embed .ctp-ui h1 {
-    margin: 0 0 12px;
+  .cyclic-trapezoid-embed .ctp-summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 14px;
     font-size: 18px;
+    font-weight: 700;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cyclic-trapezoid-embed .ctp-summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .cyclic-trapezoid-embed .ctp-summary::after {
+    content: "▾";
+    font-size: 16px;
+    line-height: 1;
+    transition: transform 0.2s ease;
+  }
+
+  .cyclic-trapezoid-embed .ctp-ui:not([open]) .ctp-summary::after {
+    transform: rotate(-90deg);
+  }
+
+  .cyclic-trapezoid-embed .ctp-ui-content {
+    padding: 0 14px 14px;
   }
 
   .cyclic-trapezoid-embed fieldset {
@@ -163,117 +192,119 @@ With [a bit of maths](/blog/til/cyclic-quadrilateral) and the help of ChatGPT fo
     <canvas id="ctp-canvas"></canvas>
   </div>
 
-  <div class="ctp-ui">
-    <h1>Cyclic trapezoid controls</h1>
+  <details class="ctp-ui">
+    <summary class="ctp-summary">Cyclic trapezoid controls</summary>
 
-    <fieldset>
-      <legend>Colour</legend>
+    <div class="ctp-ui-content">
+      <fieldset>
+        <legend>Colour</legend>
 
-      <div class="control">
-        <label for="ctp-bgColor">Background colour</label>
-        <input id="ctp-bgColor" type="color" value="#0b1020" />
+        <div class="control">
+          <label for="ctp-bgColor">Background colour</label>
+          <input id="ctp-bgColor" type="color" value="#0b1020" />
+        </div>
+
+        <div class="control">
+          <label for="ctp-circleColor">Circle colour</label>
+          <input id="ctp-circleColor" type="color" value="#94a3b8" />
+        </div>
+
+        <div class="control">
+          <label for="ctp-pointColor">Points colour</label>
+          <input id="ctp-pointColor" type="color" value="#f8fafc" />
+        </div>
+
+        <div class="control">
+          <label for="ctp-parallelColor">Parallel sides colour</label>
+          <input id="ctp-parallelColor" type="color" value="#fbbf24" />
+        </div>
+
+        <div class="control">
+          <label for="ctp-nonParallelColor">Non-parallel sides colour</label>
+          <input id="ctp-nonParallelColor" type="color" value="#60a5fa" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Point A</legend>
+
+        <div class="row">
+          <label for="ctp-aPeriod">Period</label>
+          <div class="value" id="ctp-aPeriodValue"></div>
+        </div>
+        <input id="ctp-aPeriod" type="range" min="2" max="60" step="0.1" value="11" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Point B</legend>
+
+        <div class="row">
+          <label for="ctp-bMax">Max angle</label>
+          <div class="value" id="ctp-bMaxValue"></div>
+        </div>
+        <input id="ctp-bMax" type="range" min="15" max="180" step="1" value="90" />
+
+        <div class="row">
+          <label for="ctp-bPeriod">Period</label>
+          <div class="value" id="ctp-bPeriodValue"></div>
+        </div>
+        <input id="ctp-bPeriod" type="range" min="2" max="60" step="0.1" value="7" />
+
+        <div class="row">
+          <label for="ctp-bPhase">Phase</label>
+          <div class="value" id="ctp-bPhaseValue"></div>
+        </div>
+        <input id="ctp-bPhase" type="range" min="0" max="360" step="1" value="0" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Point D</legend>
+
+        <div class="row">
+          <label for="ctp-dMax">Max angle</label>
+          <div class="value" id="ctp-dMaxValue"></div>
+        </div>
+        <input id="ctp-dMax" type="range" min="15" max="180" step="1" value="90" />
+
+        <div class="row">
+          <label for="ctp-dPeriod">Period</label>
+          <div class="value" id="ctp-dPeriodValue"></div>
+        </div>
+        <input id="ctp-dPeriod" type="range" min="2" max="60" step="0.1" value="5" />
+
+        <div class="row">
+          <label for="ctp-dPhase">Phase</label>
+          <div class="value" id="ctp-dPhaseValue"></div>
+        </div>
+        <input id="ctp-dPhase" type="range" min="0" max="360" step="1" value="60" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Global</legend>
+
+        <div class="row">
+          <label for="ctp-radius">Circle radius</label>
+          <div class="value" id="ctp-radiusValue"></div>
+        </div>
+        <input id="ctp-radius" type="range" min="0.1" max="0.48" step="0.01" value="0.35" />
+
+        <div class="row">
+          <label for="ctp-speed">Global animation speed</label>
+          <div class="value" id="ctp-speedValue"></div>
+        </div>
+        <input id="ctp-speed" type="range" min="0" max="4" step="0.01" value="1" />
+      </fieldset>
+
+      <div class="buttons">
+        <button id="ctp-resetTime" type="button">Reset animation time</button>
       </div>
 
-      <div class="control">
-        <label for="ctp-circleColor">Circle colour</label>
-        <input id="ctp-circleColor" type="color" value="#94a3b8" />
+      <div class="hint">
+        Point C is computed from the cyclic trapezoid rule:
+        <code>angleC = alpha + angleB + angleD</code>.
       </div>
-
-      <div class="control">
-        <label for="ctp-pointColor">Points colour</label>
-        <input id="ctp-pointColor" type="color" value="#f8fafc" />
-      </div>
-
-      <div class="control">
-        <label for="ctp-parallelColor">Parallel sides colour</label>
-        <input id="ctp-parallelColor" type="color" value="#fbbf24" />
-      </div>
-
-      <div class="control">
-        <label for="ctp-nonParallelColor">Non-parallel sides colour</label>
-        <input id="ctp-nonParallelColor" type="color" value="#60a5fa" />
-      </div>
-    </fieldset>
-
-    <fieldset>
-      <legend>Point A</legend>
-
-      <div class="row">
-        <label for="ctp-aPeriod">Period</label>
-        <div class="value" id="ctp-aPeriodValue"></div>
-      </div>
-      <input id="ctp-aPeriod" type="range" min="2" max="60" step="0.1" value="11" />
-    </fieldset>
-
-    <fieldset>
-      <legend>Point B</legend>
-
-      <div class="row">
-        <label for="ctp-bMax">Max angle</label>
-        <div class="value" id="ctp-bMaxValue"></div>
-      </div>
-      <input id="ctp-bMax" type="range" min="15" max="90" step="1" value="90" />
-
-      <div class="row">
-        <label for="ctp-bPeriod">Period</label>
-        <div class="value" id="ctp-bPeriodValue"></div>
-      </div>
-      <input id="ctp-bPeriod" type="range" min="2" max="60" step="0.1" value="7" />
-
-      <div class="row">
-        <label for="ctp-bPhase">Phase</label>
-        <div class="value" id="ctp-bPhaseValue"></div>
-      </div>
-      <input id="ctp-bPhase" type="range" min="0" max="360" step="1" value="0" />
-    </fieldset>
-
-    <fieldset>
-      <legend>Point D</legend>
-
-      <div class="row">
-        <label for="ctp-dMax">Max angle</label>
-        <div class="value" id="ctp-dMaxValue"></div>
-      </div>
-      <input id="ctp-dMax" type="range" min="15" max="90" step="1" value="90" />
-
-      <div class="row">
-        <label for="ctp-dPeriod">Period</label>
-        <div class="value" id="ctp-dPeriodValue"></div>
-      </div>
-      <input id="ctp-dPeriod" type="range" min="2" max="60" step="0.1" value="5" />
-
-      <div class="row">
-        <label for="ctp-dPhase">Phase</label>
-        <div class="value" id="ctp-dPhaseValue"></div>
-      </div>
-      <input id="ctp-dPhase" type="range" min="0" max="360" step="1" value="60" />
-    </fieldset>
-
-    <fieldset>
-      <legend>Global</legend>
-
-      <div class="row">
-        <label for="ctp-radius">Circle radius</label>
-        <div class="value" id="ctp-radiusValue"></div>
-      </div>
-      <input id="ctp-radius" type="range" min="0.1" max="0.48" step="0.01" value="0.35" />
-
-      <div class="row">
-        <label for="ctp-speed">Global animation speed</label>
-        <div class="value" id="ctp-speedValue"></div>
-      </div>
-      <input id="ctp-speed" type="range" min="0" max="4" step="0.01" value="1" />
-    </fieldset>
-
-    <div class="buttons">
-      <button id="ctp-resetTime" type="button">Reset animation time</button>
     </div>
-
-    <div class="hint">
-      Point C is computed from the cyclic trapezoid rule:
-      <code>angleC = alpha + angleB + angleD</code>.
-    </div>
-  </div>
+  </details>
 </div>
 
 <script>
@@ -399,7 +430,7 @@ With [a bit of maths](/blog/til/cyclic-quadrilateral) and the help of ChatGPT fo
   }
 
   function radToPiText(rad) {
-    return `${(rad / Math.PI).toFixed(3)}\u03B1`;
+    return `${(rad / Math.PI).toFixed(3)}\u03C0`;
   }
 
   function secondsText(x) {
@@ -554,3 +585,30 @@ With [a bit of maths](/blog/til/cyclic-quadrilateral) and the help of ChatGPT fo
   });
 })();
 </script>
+
+
+##  How it works
+
+The first thing I determined was that one of the points might as well move at a constant speed around the circle, to induce some movement, but without being too crazy.
+Can you look at the animation and figure out which of the four points is the one that moves around at a constant speed?
+
+It's point $A$.
+
+Since the trapezoid $ABCD$ was supposed to be inscribed in a circle of centre $O$, I thought it was probably a good idea to define the position of point $A$ in terms of the angle $\alpha$ that the radius $OA$ makes with the radius that goes through $P$, if $P$ is the point $(1, 0)$.
+
+After a bit of back and forth, and some doodling, I ended up defining the positions of $B$ and $D$ in terms of the angles that $OB$ and $OD$ make with $OA$.
+This means that animating the points $B$ and $D$ is a matter of animating those angles.
+Animating the angles is better than animating the positions of the points because it's easier to parametrise a single angle than it is to parametrise two coordinates.
+
+The angle that defines points $B$ and $D$ is given by a function of the form
+
+$$
+\frac{\theta_{m} + \theta_{M}}{2} + \left(\theta_{M} - \theta_{m}\right) \cos\left(2\pi \cdot t / \rho + \phi\right)
+$$
+
+ - $\theta_{m}$ and $\theta_{M}$ are the minimum and maximum attainable angles, respectively;
+ - $\rho$ is the period of the animation of the angles; and
+ - $\phi$ is the phase of the animation.
+
+If points $B$ and $D$ have the exact same values for all four parameters, the animation doesn't look any fun.
+To create a sense of pleasing chaos, you want the periods and the phases for points $B$ and $D$ to be different, even if the minimum and maximum angles are the same.
