@@ -1,0 +1,19 @@
+date: 14-03-2026 14:58
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned that cyclic quadrilaterals have supplementary opposite angles."
+    og:image: "https://mathspp.com/blog/til/cyclic-quadrilateral/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/cyclic-quadrilateral/thumbnail.webp"
+references:
+  - "Cyclic quadrilateral, Wikipedia, <https://en.wikipedia.org/wiki/Cyclic_quadrilateral#Supplementary_angles> [last accessed 14-03-2026];"
+routes:
+    aliases:
+        - "/blog/til/142"
+slug: "cyclic-quadrilateral"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - mathematics
+      - geometry
+title: "TIL #142 – Cyclic quadrilateral"
+visible: false

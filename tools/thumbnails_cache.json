@@ -66,10 +66,10 @@
     "words": 6460
   },
   "mathematics": {
-    "articles": 125,
+    "articles": 126,
     "code_snippets": 449,
     "loc": 4449,
-    "words": 110337
+    "words": 110424
   },
   "number theory": {
     "articles": 8,
@@ -204,10 +204,10 @@
     "words": 20690
   },
   "geometry": {
-    "articles": 18,
+    "articles": 19,
     "code_snippets": 34,
     "loc": 427,
-    "words": 10482
+    "words": 10569
   },
   "binary": {
     "articles": 9,
@@ -564,10 +564,10 @@
     "words": 430
   },
   "__all": {
-    "articles": 440,
+    "articles": 441,
     "code_snippets": 4141,
     "loc": 39373,
-    "words": 477207
+    "words": 477294
   },
   "fp": {
     "articles": 5,
