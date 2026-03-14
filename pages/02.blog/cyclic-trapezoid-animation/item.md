@@ -399,7 +399,7 @@ With [a bit of maths](/blog/til/cyclic-quadrilateral) and the help of ChatGPT fo
   }
 
   function radToPiText(rad) {
-    return `${(rad / Math.PI).toFixed(3)}π`;
+    return `${(rad / Math.PI).toFixed(3)}\u03B1`;
   }
 
   function secondsText(x) {
@@ -465,7 +465,7 @@ With [a bit of maths](/blog/til/cyclic-quadrilateral) and the help of ChatGPT fo
     const y = height - 92;
     ctx.font = "14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace";
     ctx.fillStyle = hexToRgba(controls.pointColor.value, 0.9);
-    ctx.fillText(`α = ${radToPiText(((alpha % TAU) + TAU) % TAU)}`, x, y);
+    ctx.fillText(`\u03B1 = ${radToPiText(((alpha % TAU) + TAU) % TAU)}`, x, y);
     ctx.fillText(`angleB = ${radToPiText(beta)}`, x, y + 22);
     ctx.fillText(`angleD = ${radToPiText(delta)}`, x, y + 44);
     ctx.fillText(`angleC = ${radToPiText(beta + delta)}`, x, y + 66);
