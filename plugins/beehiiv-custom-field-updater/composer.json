@@ -1,0 +1,25 @@
+{
+  "name": "rodrigogiraoserrao/beehiiv-custom-field-updater",
+  "type": "grav-plugin",
+  "description": "This plugin updates custom fields of a beehiiv subscriber after the user fills a form.",
+  "version": "1.0.0",
+  "keywords": ["plugin"],
+  "homepage": "https://github.com/rodrigogiraoserrao/grav-plugin-beehiiv-custom-field-updater",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Rodrigo Girao Serrao",
+      "email": "rodrigo@mathspp.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Grav\\Plugin\\BeehiivCustomFieldUpdater\\": "classes/"
+    },
+    "classmap":  ["beehiiv-custom-field-updater.php"]
+  }
+}
