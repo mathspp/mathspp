@@ -69,17 +69,6 @@ Under the animation you can find a control panel that allows you to tweak some a
     display: none;
   }
 
-  .cyclic-trapezoid-embed .ctp-summary::after {
-    content: "▾";
-    font-size: 16px;
-    line-height: 1;
-    transition: transform 0.2s ease;
-  }
-
-  .cyclic-trapezoid-embed .ctp-ui:not([open]) .ctp-summary::after {
-    transform: rotate(-90deg);
-  }
-
   .cyclic-trapezoid-embed .ctp-ui-content {
     padding: 0 14px 14px;
   }
@@ -603,9 +592,10 @@ Animating the angles is better than animating the positions of the points becaus
 The angle that defines points $B$ and $D$ is given by a function of the form
 
 $$
-\frac{\theta_{m} + \theta_{M}}{2} + \left(\theta_{M} - \theta_{m}\right) \cos\left(2\pi \cdot t / \rho + \phi\right)
+\frac{\theta_{m} + \theta_{M}}{2} + \left(\theta_{M} - \theta_{m}\right) \cos\left(\frac{2\pi t}{\rho} + \phi\right)
 $$
 
+ - $t$ is the time elapsed during the animation;
  - $\theta_{m}$ and $\theta_{M}$ are the minimum and maximum attainable angles, respectively;
  - $\rho$ is the period of the animation of the angles; and
  - $\phi$ is the phase of the animation.
