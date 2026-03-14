@@ -1,0 +1,17 @@
+date: 14-03-2026 15:51
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "See an animation of a trapezoid innscribed in a circle, built with some maths and the help of an LLM."
+    og:image: "https://mathspp.com/blog/cyclic-trapezoid-animation/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/cyclic-trapezoid-animation/thumbnail.webp"
+references: []
+slug: "cyclic-trapezoid-animation"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+      - mathematics
+      - geometry
+      - visualisation
+      - llm
+title: Cyclic trapezoid animation

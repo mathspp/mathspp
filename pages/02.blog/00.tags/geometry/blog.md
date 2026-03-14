@@ -28,8 +28,8 @@ title: "Geometry blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">19</th>
-            <th style="text-align: center;">10,569</th>
+            <th style="text-align: center;">20</th>
+            <th style="text-align: center;">12,088</th>
             <th style="text-align: center;">427</th>
         </tr>
     </thead>

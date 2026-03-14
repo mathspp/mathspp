@@ -1,9 +1,9 @@
 {
   "__all": {
-    "articles": 441,
+    "articles": 442,
     "code_snippets": 4141,
     "loc": 39373,
-    "words": 477294
+    "words": 478813
   },
   "bpci": {
     "articles": 10,
@@ -42,10 +42,10 @@
     "words": 37285
   },
   "llm": {
-    "articles": 6,
+    "articles": 7,
     "code_snippets": 112,
     "loc": 895,
-    "words": 7021
+    "words": 8540
   },
   "machine learning": {
     "articles": 11,
@@ -72,10 +72,10 @@
     "words": 6460
   },
   "mathematics": {
-    "articles": 126,
+    "articles": 127,
     "code_snippets": 449,
     "loc": 4449,
-    "words": 110424
+    "words": 111943
   },
   "number theory": {
     "articles": 8,
@@ -162,10 +162,10 @@
     "words": 15646
   },
   "visualisation": {
-    "articles": 18,
+    "articles": 19,
     "code_snippets": 74,
     "loc": 1152,
-    "words": 17605
+    "words": 19124
   },
   "data science": {
     "articles": 1,
@@ -258,10 +258,10 @@
     "words": 7178
   },
   "geometry": {
-    "articles": 19,
+    "articles": 20,
     "code_snippets": 34,
     "loc": 427,
-    "words": 10569
+    "words": 12088
   },
   "haskell": {
     "articles": 2,

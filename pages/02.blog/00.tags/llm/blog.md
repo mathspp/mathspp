@@ -28,8 +28,8 @@ title: "Llm blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">6</th>
-            <th style="text-align: center;">7,021</th>
+            <th style="text-align: center;">7</th>
+            <th style="text-align: center;">8,540</th>
             <th style="text-align: center;">895</th>
         </tr>
     </thead>
