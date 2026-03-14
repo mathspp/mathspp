@@ -29,7 +29,7 @@ title: "Geometry blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">20</th>
-            <th style="text-align: center;">12,465</th>
+            <th style="text-align: center;">12,557</th>
             <th style="text-align: center;">427</th>
         </tr>
     </thead>

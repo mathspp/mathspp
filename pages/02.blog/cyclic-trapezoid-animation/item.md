@@ -253,7 +253,7 @@ Under the animation you can find a control panel that allows you to tweak some a
           <label for="ctp-dMax">Max angle</label>
           <div class="value" id="ctp-dMaxValue"></div>
         </div>
-        <input id="ctp-dMax" type="range" min="15" max="180" step="1" value="90" />
+        <input id="ctp-dMax" type="range" min="15" max="180" step="1" value="165" />
 
         <div class="row">
           <label for="ctp-dPeriod">Period</label>
@@ -428,12 +428,12 @@ Under the animation you can find a control panel that allows you to tweak some a
 
   function updateValueLabels() {
     controls.aPeriodValue.textContent = secondsText(controls.aPeriod.value);
-    controls.bMaxValue.textContent = `${controls.bMax.value}°`;
+    controls.bMaxValue.textContent = `${controls.bMax.value}\u00B0`;
     controls.bPeriodValue.textContent = secondsText(controls.bPeriod.value);
-    controls.bPhaseValue.textContent = `${controls.bPhase.value}°`;
-    controls.dMaxValue.textContent = `${controls.dMax.value}°`;
+    controls.bPhaseValue.textContent = `${controls.bPhase.value}\u00B0`;
+    controls.dMaxValue.textContent = `${controls.dMax.value}\u00B0`;
     controls.dPeriodValue.textContent = secondsText(controls.dPeriod.value);
-    controls.dPhaseValue.textContent = `${controls.dPhase.value}°`;
+    controls.dPhaseValue.textContent = `${controls.dPhase.value}\u00B0`;
     controls.radiusValue.textContent = `${Math.round(Number(controls.radius.value) * 100)}% min(canvas)`;
     controls.speedValue.textContent = `${Number(controls.speed.value).toFixed(2)}×`;
   }
@@ -589,7 +589,7 @@ After a bit of back and forth, and some doodling, I ended up defining the positi
 This means that animating the points $B$ and $D$ is a matter of animating those angles.
 Animating the angles is better than animating the positions of the points because it's easier to parametrise a single angle than it is to parametrise two coordinates.
 
-The angle that defines points $B$ and $D$ is given by a function of the form
+The angle that defines points $B$ and $D$, with respect to $\alpha$, is given by a function of the form
 
 $$
 \frac{\theta_{m} + \theta_{M}}{2} + \left(\theta_{M} - \theta_{m}\right) \cos\left(\frac{2\pi t}{\rho} + \phi\right)
@@ -602,3 +602,8 @@ $$
 
 If points $B$ and $D$ have the exact same values for all four parameters, the animation doesn't look any fun.
 To create a sense of pleasing chaos, you want the periods and the phases for points $B$ and $D$ to be different, even if the minimum and maximum angles are the same.
+
+So, two different functions produce two angles $\delta_{B}$ and $\delta_{D}$ and the positions of $B$ and $D$ are given by $\alpha + \delta_{B}$ and $\alpha - \delta_{D}$, respectively.
+
+Once you have points $A$, $B$, and $D$, the position of point $C$ is completely determined.
+Instead of having to do some annoying calculations with positions and parallel lines, you can leverage the fact that the cyclic trapezoid has supplementary opposite angles to conclude that the position of point $C$ is given by the angle $\alpha + \delta_{B} + \delta_{D}$.
