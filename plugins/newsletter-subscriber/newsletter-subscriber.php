@@ -82,7 +82,7 @@ class NewsletterSubscriberPlugin extends Plugin
             $this->grav['log']->error("API submission failed: " . curl_error($ch));
         } else {
             // Save email in Grav session for later reuse
-            $this->grav['session']->set('newsletter_subscriber.email', $email);
+            $this->grav['session']->__set('newsletter_subscriber.email', $email);
         }
 
         curl_close($ch);
