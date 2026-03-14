@@ -6,7 +6,7 @@ See an animation of a trapezoid innscribed in a circle, built with some maths an
 ## The animation
 
 My brother asked for my help to build an animation of a trapezoid inscribed in a circle that kept changing his shape.
-With [a bit of maths](/blog/til/cyclic-quadrilateral) and the help of ChatGPT for the UI, you can see the animation below.
+With [a bit of maths](/blog/til/cyclic-quadrilateral) and the help of ChatGPT for the UI, I created the animation you can see below.
 Under the animation you can find a control panel that allows you to tweak some animation parameters, and under that you can find a brief explanation of how the animation works.
 
 <style>

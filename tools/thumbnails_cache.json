@@ -69,7 +69,7 @@
     "articles": 127,
     "code_snippets": 449,
     "loc": 4449,
-    "words": 112412
+    "words": 112414
   },
   "number theory": {
     "articles": 8,
@@ -147,7 +147,7 @@
     "articles": 19,
     "code_snippets": 74,
     "loc": 1152,
-    "words": 19593
+    "words": 19595
   },
   "data science": {
     "articles": 1,
@@ -207,7 +207,7 @@
     "articles": 20,
     "code_snippets": 34,
     "loc": 427,
-    "words": 12557
+    "words": 12559
   },
   "binary": {
     "articles": 9,
@@ -405,7 +405,7 @@
     "articles": 7,
     "code_snippets": 112,
     "loc": 895,
-    "words": 9009
+    "words": 9011
   },
   "json": {
     "articles": 5,
@@ -567,7 +567,7 @@
     "articles": 442,
     "code_snippets": 4141,
     "loc": 39373,
-    "words": 479282
+    "words": 479284
   },
   "fp": {
     "articles": 5,

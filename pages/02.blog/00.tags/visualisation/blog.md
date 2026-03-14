@@ -29,7 +29,7 @@ title: "Visualisation blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">19</th>
-            <th style="text-align: center;">19,593</th>
+            <th style="text-align: center;">19,595</th>
             <th style="text-align: center;">1,152</th>
         </tr>
     </thead>
