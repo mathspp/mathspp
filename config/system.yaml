@@ -180,7 +180,7 @@ session:
   uniqueness: path
   secure: false
   httponly: true
-  samesite: Lax
+  samesite: Strict
   split: true
   domain: null
   path: null

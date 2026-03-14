@@ -1,15 +1,15 @@
-title: Mathspp
+title: mathspp
 default_lang: en
 author:
   name: 'Rodrigo Girão Serrão'
-  email: mathspp@mathspp.com
+  email: rodrigo@mathspp.com
 taxonomies:
   - category
   - tag
   - topic
   - snippet-tags
 metadata:
-  description: 'The mathspp website is home to some very interesting content about mathematics and programming.'
+  description: 'Take your Python skills to the next level.'
   author: 'Rodrigo Girão Serrão'
 summary:
   enabled: true
