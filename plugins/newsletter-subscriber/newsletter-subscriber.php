@@ -57,6 +57,7 @@ class NewsletterSubscriberPlugin extends Plugin
         $pub_id = $form->value('publication_id');
         $email = $form->value('email');
 
+
         // Load the bearer token from the plugin config
         $token = $this->config->get('plugins.newsletter-subscriber.token');
 
@@ -79,6 +80,9 @@ class NewsletterSubscriberPlugin extends Plugin
         if ($response === false || $status >= 400) {
             // Log or handle the error
             $this->grav['log']->error("API submission failed: " . curl_error($ch));
+        } else {
+            // Save email in Grav session for later reuse
+            $this->grav['session']->set('newsletter_subscriber.email', $email);
         }
 
         curl_close($ch);
