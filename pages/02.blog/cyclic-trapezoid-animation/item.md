@@ -583,7 +583,7 @@ Can you look at the animation and figure out which of the four points is the one
 
 It's point $A$.
 
-Since the trapezoid $ABCD$ was supposed to be inscribed in a circle of centre $O$, I thought it was probably a good idea to define the position of point $A$ in terms of the angle $\alpha$ that the radius $OA$ makes with the radius that goes through $P$, if $P$ is the point $(1, 0)$.
+Since the trapezoid $ABCD$ was supposed to be inscribed in a circle of centre $O = (0, 0)$, I thought it was probably a good idea to define the position of point $A$ in terms of the angle $\alpha$ that the radius $OA$ makes with the radius that goes through $P$, if $P$ is the point $(1, 0)$.
 
 After a bit of back and forth, and some doodling, I ended up defining the positions of $B$ and $D$ in terms of the angles that $OB$ and $OD$ make with $OA$.
 This means that animating the points $B$ and $D$ is a matter of animating those angles.
@@ -603,7 +603,7 @@ $$
 If points $B$ and $D$ have the exact same values for all four parameters, the animation doesn't look any fun.
 To create a sense of pleasing chaos, you want the periods and the phases for points $B$ and $D$ to be different, even if the minimum and maximum angles are the same.
 
-So, two different functions produce two angles $\delta_{B}$ and $\delta_{D}$ and the positions of $B$ and $D$ are given by $\alpha + \delta_{B}$ and $\alpha - \delta_{D}$, respectively.
+So, two different functions produce two angles $\Delta_{B}$ and $\Delta_{D}$ and the positions of $B$ and $D$ are given by $\alpha + \Delta_{B}$ and $\alpha - \Delta_{D}$, respectively.
 
 Once you have points $A$, $B$, and $D$, the position of point $C$ is completely determined.
-Instead of having to do some annoying calculations with positions and parallel lines, you can leverage the fact that the cyclic trapezoid has supplementary opposite angles to conclude that the position of point $C$ is given by the angle $\alpha + \delta_{B} + \delta_{D}$.
+Instead of having to do some annoying calculations with positions and parallel lines, you can leverage the fact that the cyclic trapezoid has supplementary opposite angles to conclude that the position of point $C$ is given by the angle $\alpha + \Delta_{B} + \Delta_{D}$.
