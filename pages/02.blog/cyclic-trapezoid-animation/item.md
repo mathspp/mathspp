@@ -231,7 +231,7 @@ Under the animation you can find a control panel that allows you to tweak some a
           <label for="ctp-bMax">Max angle</label>
           <div class="value" id="ctp-bMaxValue"></div>
         </div>
-        <input id="ctp-bMax" type="range" min="15" max="180" step="1" value="90" />
+        <input id="ctp-bMax" type="range" min="15" max="180" step="1" value="165" />
 
         <div class="row">
           <label for="ctp-bPeriod">Period</label>
@@ -253,7 +253,7 @@ Under the animation you can find a control panel that allows you to tweak some a
           <label for="ctp-dMax">Max angle</label>
           <div class="value" id="ctp-dMaxValue"></div>
         </div>
-        <input id="ctp-dMax" type="range" min="15" max="180" step="1" value="165" />
+        <input id="ctp-dMax" type="range" min="15" max="180" step="1" value="90" />
 
         <div class="row">
           <label for="ctp-dPeriod">Period</label>
