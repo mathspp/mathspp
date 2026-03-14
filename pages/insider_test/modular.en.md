@@ -12,4 +12,5 @@ metadata:
     title: mathspp insider 🐍🚀
 onpage_menu: false
 title: mathspp insider 🐍🚀
+published: false
 ---
