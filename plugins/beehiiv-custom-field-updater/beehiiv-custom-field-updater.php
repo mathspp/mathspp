@@ -45,7 +45,7 @@ class BeehiivCustomFieldUpdaterPlugin extends Plugin
         $email = $this->grav['session']->__get('newsletter_subscriber.email');
 
         if (!$publicationId || !$token || !$email) {
-            $this->grav['log']->error('BeehiivCustomFieldUpdater: missing publication ID, token, or subscriber email.');
+            $this->grav['log']->error("BeehiivCustomFieldUpdater: bad publication ID ({$pub_id}), token, or subscriber email ({$email}).");
             return;
         }
 
