@@ -40,7 +40,7 @@ form:
     process:
         captcha: true
         newsletter-subscriber: true
-        display: /insider/wait-one-more-thing
+        display: /insider_test/wait-one-more-thing
 ---
 
 # Become the smartest Python 🐍 developer in the room 🚀
