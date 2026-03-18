@@ -1,6 +1,82 @@
 ## Past tips
 
 <ol reversed>
+    <li>Post initialisation in data classes</li>
+    <li>Recursive structural pattern matching</li>
+    <li>Unpacking inside comprehensions</li>
+    <li>Lazy imports</li>
+    <li>Custom hashable objects</li>
+    <li><code>frozendict</code></li>
+    <li>Flexible string splitting</li>
+    <li>Split text into words</li>
+    <li>Read custom objects from CSV</li>
+    <li>Multiline input in the REPL</li>
+    <li>Open standard input</li>
+    <li>Collapse runs of consecutive spaces</li>
+    <li>Fixed point</li>
+    <li><code>__eq__</code></li>
+    <li>at (<code>@</code>) operator</li>
+    <li><code>vars</code> and <code>dir</code></li>
+    <li><code>join</code> with a comprehension</li>
+    <li>Tracking generator expression progress</li>
+    <li><code>map</code> to simplify loops</li>
+    <li>Built-ins <code>any</code> and <code>all</code></li>
+    <li>Addition isn't commutative</li>
+    <li>Split file header from the body</li>
+    <li>Filter with a predicate</li>
+    <li>Chaining conditional expressions</li>
+    <li>Reductions on empty iterables</li>
+    <li>Protocols and bounded type variables</li>
+    <li>Clamp</li>
+    <li>Protocols</li>
+    <li>Command line arguments</li>
+    <li>Generalise <code>pairwise</code> with <code>tee</code></li>
+    <li>Orderable dataclasses</li>
+    <li>Print to standard error</li>
+    <li>Pretty dumping JSON</li>
+    <li>Parse JSON string into object</li>
+    <li>Setting the exit code</li>
+    <li>Implementing <code>pairwise</code> with <code>tee</code></li>
+    <li><code>reveal_type</code></li>
+    <li>Expanding regex matches</li>
+    <li>Patterns in <code>glob</code> search</li>
+    <li><code>TypeAlias</code> vs <code>NewType</code></li>
+    <li>Convert data to a JSON string</li>
+    <li><code>itertools.tee</code> splits iterators</li>
+    <li><code>itertools.pairwise</code></li>
+    <li>Regex groups with default values</li>
+    <li><code>typing.Self</code></li>
+    <li>Parse, don't validate</li>
+    <li>Reading and writing JSON</li>
+    <li>Cached properties</li>
+    <li>Base64 encoding</li>
+    <li>Check if a number is a power of 2</li>
+    <li>One-shot data compression</li>
+    <li><code>typing.NewType</code></li>
+    <li>Data class with default mutable value</li>
+    <li>Fully consume an iterator</li>
+    <li>Drop into a debugger</li>
+    <li>ID generator</li>
+    <li>Type-safe dictionaries</li>
+    <li>Typing generators</li>
+    <li>Break from nested loops</li>
+    <li>Frozen dataclasses</li>
+    <li>Use set operations with dictionary keys</li>
+    <li>Create pairs</li>
+    <li>Read file lines until a separator</li>
+    <li>Anatomy of a list comprehension</li>
+    <li>Assigning to list slices</li>
+    <li>Slicing mnemonic</li>
+    <li><code>accumulate</code> with a custom function</li>
+    <li>Deprecation warnings</li>
+    <li>Field default factory</li>
+    <li>Priority queues</li>
+    <li>Fast exponentiation</li>
+    <li>Immutable dataclasses</li>
+    <li>Remove indentation from multiline strings</li>
+    <li><code>nwise</code></li>
+    <li>Express permutations recursively</li>
+    <li>Split from both sides</li>
     <li>Moving average</li>
     <li>Using a list as a stack</li>
     <li>Title case</li>
