@@ -57,7 +57,7 @@ class NewsletterSubscriberPlugin extends Plugin
         $pub_id = $form->value('publication_id');
         $email = $form->value('email');
         // Save email in Grav session for later reuse
-        $this->grav['session']->__set('newsletter_subscriber.email', $email);
+        $this->grav['session']->__set('newsletter_subscriber_email', $email);
 
         // Load the bearer token from the plugin config
         $token = $this->config->get('plugins.newsletter-subscriber.token');
