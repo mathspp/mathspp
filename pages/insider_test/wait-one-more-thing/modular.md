@@ -5,6 +5,7 @@ content:
     order:
         custom:
           - "_hero"
+          - "_form"
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "mathspp insider 🐍🚀 newsletter."
