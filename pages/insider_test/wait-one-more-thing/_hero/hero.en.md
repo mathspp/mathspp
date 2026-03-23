@@ -37,7 +37,8 @@ form:
         usage:
           label: "How do you use Python?"
           display_label: true
-          type: checkboxes
+          type: select
+          multiple: true
           options:
             professional: "I am a professional Python programmer"
             job: "I use Python to help me get my job done"
