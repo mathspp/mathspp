@@ -5,4 +5,3 @@ hero_image: 'theme://images/common_hero.webp'
 ---
 
 # Wait! 🤚 Your subscription isn't completed yet.
-

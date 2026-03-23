@@ -132,6 +132,7 @@ class BeehiivCustomFieldUpdaterPlugin extends Plugin
 
             if ($beehiivCustomFieldName) {
                 $value = $form->value($fieldName);
+                $value = $this->normaliseFieldValue($value, $definition);
 
                 if ($value !== null) {
                     $customFields[] = [
@@ -150,5 +151,31 @@ class BeehiivCustomFieldUpdaterPlugin extends Plugin
         }
 
         return $customFields;
+    }
+
+    private function normaliseFieldValue($value, array $definition)
+    {
+        if ($value === null) {
+            return null;
+        }
+
+        if (!isset($definition['options']) || !is_array($definition['options'])) {
+            return $value;
+        }
+
+        $options = $definition['options'];
+
+        // Single-choice fields like select/radio
+        if (!is_array($value)) {
+            return $options[$value] ?? $value;
+        }
+
+        // Multi-choice fields like checkboxes/select[multiple]
+        $mapped = [];
+        foreach ($value as $item) {
+            $mapped[] = $options[$item] ?? $item;
+        }
+
+        return $mapped;
     }
 }
