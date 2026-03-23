@@ -89,7 +89,7 @@ form:
           attributes:
             custom_field: "sign_up_survey.biggest_roadblock"
 
-        why-interests:
+        biggest-learning-goal:
           label: "6. What's the most important thing you've been meaning to or are trying to learn?"
           display_label: true
           type: textarea
