@@ -41,7 +41,7 @@ class BeehiivCustomFieldUpdaterPlugin extends Plugin
         $form = $event['form'];
 
         $publication = $form->value('publication');
-        $publicationId = $this->config->get('newsletter-publications.insider')
+        $publicationId = $this->config->get('newsletter-publications.insider');
         $token = $this->config->get('plugins.beehiiv-custom-field-updater.token');
         $email = $this->grav['session']->__get('newsletter_subscriber_email');
 
