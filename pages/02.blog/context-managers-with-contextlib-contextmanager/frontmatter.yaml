@@ -1,0 +1,17 @@
+date: 12-02-2025 14:37
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Dive into the inner workings of contextlib.contextmanager, a tool to create context managers that can also be used as decorators."
+    og:image: "https://mathspp.com/blog/context-managers-with-contextlib-contextmanager/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/context-managers-with-contextlib-contextmanager/thumbnail.webp"
+references:
+  - "Python 3 Documentation, Python Standard Library, `contextlib.contextmanager` [https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager](https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager) [last accessed 12-02-2025];"
+slug: "context-managers-with-contextlib-contextmanager"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - dunder methods
+        - programming
+        - python
+title: Context managers with contextlib.contextmanager

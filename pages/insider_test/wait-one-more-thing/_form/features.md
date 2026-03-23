@@ -9,10 +9,6 @@ form:
     name: sign-up-survey
 
     fields:
-        publication_id:
-          type: hidden
-          default: pub_303dfe56-7a7e-4827-ac7c-6cc52785917a
-
         honeypot:
           label: Honeypot
           type: honeypot
