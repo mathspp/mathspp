@@ -19,6 +19,17 @@ form:
           label: Honeypot
           type: honeypot
 
+        python-level:
+          label: "Whats your current Python level?"
+          display_label: true
+          type: radio
+          default: beginner
+          options:
+            beginner: "Beginner programmer (just starting out in Python and programming in general)"
+            intermediate: "Intermediate (I'm productive with the language)"
+            advanced: "Advanced (LOTS of experience)"
+            experienced-beginner: "Experienced beginner (new to Python but with considerable experience in other languages)"
+
         extra-info:
           label: "Extra info"
           display_label: true
