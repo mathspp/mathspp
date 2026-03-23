@@ -20,7 +20,7 @@ form:
           type: honeypot
 
         python-level:
-          label: "What's your current Python level?"
+          label: "1. What's your current Python level?"
           display_label: true
           type: select
           default: beginner
@@ -35,10 +35,9 @@ form:
             custom_field: "sign_up_survey.python_level"
 
         usage:
-          label: "How do you use Python?"
+          label: "2. How do you use Python?"
           display_label: true
-          type: select
-          multiple: true
+          type: checkboxes
           options:
             professional: "I am a professional Python programmer"
             job: "I use Python to help me get my job done"
@@ -49,7 +48,7 @@ form:
             custom_field: "sign_up_survey.python_use_cases"
 
         interests:
-          label: "What topics are you interested in learning more about?"
+          label: "3. What topics are you interested in learning more about?"
           display_label: true
           type: checkboxes
           options:
@@ -67,7 +66,7 @@ form:
             custom_field: "sign_up_survey.interests"
 
         why-interests:
-          label: "Why are you interested in the topics you picked above?"
+          label: "4. Why are you interested in the topics you picked above?"
           display_label: true
           type: text
           validate:
@@ -77,7 +76,7 @@ form:
           maxlength: 999
 
         roadblock:
-          label: "What's the #1 roadblock you hit when trying to grow your skills?"
+          label: "5. What's the #1 roadblock you hit when trying to grow your skills?"
           display_label: true
           type: select
           default: time
@@ -92,7 +91,7 @@ form:
             custom_field: "sign_up_survey.biggest_roadblock"
 
         why-interests:
-          label: "What's the most important thing you've been meaning to or are trying to learn?"
+          label: "6. What's the most important thing you've been meaning to or are trying to learn?"
           display_label: true
           type: text
           validate:
@@ -102,7 +101,7 @@ form:
           maxlength: 999
 
         extra-info:
-          label: "Is there anything else you'd like to share so I can help you achieve your Python objectives?"
+          label: "7. Is there anything else you'd like to share so I can help you achieve your Python objectives?"
           display_label: true
           type: text
           validate:
