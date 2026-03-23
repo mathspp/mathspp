@@ -1,5 +1,5 @@
 ---
-body_classes: "header-dark header-transparent"
+body_classes: "header-dark header-transparent hero-large"
 content:
     items: "@self.modular"
     order:
