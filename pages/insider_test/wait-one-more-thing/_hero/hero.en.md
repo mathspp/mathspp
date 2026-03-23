@@ -22,7 +22,9 @@ form:
         python-level:
           label: "Whats your current Python level?"
           display_label: true
-          type: radio
+          type: select
+          size: long
+          classes: fancy
           default: beginner
           options:
             beginner: "Beginner programmer (just starting out in Python and programming in general)"
