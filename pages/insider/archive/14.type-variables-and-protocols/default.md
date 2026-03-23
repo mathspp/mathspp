@@ -2,7 +2,7 @@
 date: 23-03-2026 18:49
 metadata:
     author: Rodrigo Girão Serrão
-    description: "Learn how to bind type variables to protocols."
+    description: "Learn about bound type variables and their main use case."
     og:image: "https://mathspp.com/insider/archive/type-variables-and-protocols/thumbnail.webp"
     twitter:image: "https://mathspp.com/insider/archive/type-variables-and-protocols/thumbnail.webp"
 title: "Type variables and protocols"
