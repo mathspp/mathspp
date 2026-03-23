@@ -68,11 +68,12 @@ form:
         why-interests:
           label: "4. Why are you interested in the topics you picked above?"
           display_label: true
-          type: text
+          type: textarea
           validate:
             required: true
           attributes:
             custom_field: "sign_up_survey.interests_explanation"
+          minlength: 3
           maxlength: 999
 
         roadblock:
@@ -93,21 +94,23 @@ form:
         why-interests:
           label: "6. What's the most important thing you've been meaning to or are trying to learn?"
           display_label: true
-          type: text
+          type: textarea
           validate:
             required: true
           attributes:
             custom_field: "sign_up_survey.biggest_learning_goal"
+          minlength: 3
           maxlength: 999
 
         extra-info:
           label: "7. Is there anything else you'd like to share so I can help you achieve your Python objectives?"
           display_label: true
-          type: text
+          type: textarea
           validate:
             required: true
           attributes:
             custom_field: "sign_up_survey.extra_info"
+          minlength: 3
           maxlength: 999
 
         g-recaptcha-response:
