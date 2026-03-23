@@ -20,27 +20,95 @@ form:
           type: honeypot
 
         python-level:
-          label: "Whats your current Python level?"
+          label: "What's your current Python level?"
           display_label: true
           type: select
-          size: long
-          classes: fancy
           default: beginner
           options:
             beginner: "Beginner programmer (just starting out in Python and programming in general)"
             intermediate: "Intermediate (I'm productive with the language)"
             advanced: "Advanced (LOTS of experience)"
             experienced-beginner: "Experienced beginner (new to Python but with considerable experience in other languages)"
+          validate:
+            required: true
+          attributes:
+            custom_field: "sign_up_survey.python_level"
+
+        usage:
+          label: "How do you use Python?"
+          display_label: true
+          type: checkboxes
+          options:
+            professional: "I am a professional Python programmer"
+            job: "I use Python to help me get my job done"
+            hobby: "I'm a hobbyist Python programmer"
+          validate:
+            required: true
+          attributes:
+            custom_field: "sign_up_survey.python_use_cases"
+
+        interests:
+          label: "What topics are you interested in learning more about?"
+          display_label: true
+          type: checkboxes
+          options:
+            core: "Core Python syntax and principles"
+            stdlib: "Standard library"
+            llms: "Agentic coding / LLMs"
+            tooling: "Tooling & productivity (e.g., uv)"
+            typing: "Typing"
+            web: "Web development"
+            ds: "Data science"
+            cs: "Computer science"
+          validate:
+            required: true
+          attributes:
+            custom_field: "sign_up_survey.interests"
+
+        why-interests:
+          label: "Why are you interested in the topics you picked above?"
+          display_label: true
+          type: text
+          validate:
+            required: true
+          attributes:
+            custom_field: "sign_up_survey.interests_explanation"
+          maxlength: 999
+
+        roadblock:
+          label: "What's the #1 roadblock you hit when trying to grow your skills?"
+          display_label: true
+          type: select
+          default: time
+          options:
+            time: "Not enough time to learn"
+            llms: "Uncertainty because of LLMs"
+            sticking: "Nothing sticks after I “learn”"
+            path: "I don't have a clear path forward"
+          validate:
+            required: true
+          attributes:
+            custom_field: "sign_up_survey.biggest_roadblock"
+
+        why-interests:
+          label: "What's the most important thing you've been meaning to or are trying to learn?"
+          display_label: true
+          type: text
+          validate:
+            required: true
+          attributes:
+            custom_field: "sign_up_survey.biggest_learning_goal"
+          maxlength: 999
 
         extra-info:
-          label: "Extra info"
+          label: "Is there anything else you'd like to share so I can help you achieve your Python objectives?"
           display_label: true
           type: text
           validate:
             required: true
           attributes:
             custom_field: "sign_up_survey.extra_info"
-          maxlength: 255
+          maxlength: 999
 
         g-recaptcha-response:
           label: Captcha
