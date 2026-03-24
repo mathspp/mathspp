@@ -1,9 +1,9 @@
 {
   "__all": {
-    "articles": 443,
-    "code_snippets": 4141,
-    "loc": 39373,
-    "words": 479788
+    "articles": 442,
+    "code_snippets": 4137,
+    "loc": 39354,
+    "words": 479485
   },
   "bpci": {
     "articles": 10,
@@ -24,16 +24,16 @@
     "words": 35212
   },
   "programming": {
-    "articles": 321,
-    "code_snippets": 4000,
-    "loc": 38174,
-    "words": 388539
+    "articles": 320,
+    "code_snippets": 3996,
+    "loc": 38155,
+    "words": 388236
   },
   "python": {
-    "articles": 314,
-    "code_snippets": 3879,
-    "loc": 37081,
-    "words": 385566
+    "articles": 313,
+    "code_snippets": 3875,
+    "loc": 37062,
+    "words": 385263
   },
   "algorithms": {
     "articles": 28,
@@ -90,10 +90,10 @@
     "words": 1411
   },
   "dunder methods": {
-    "articles": 15,
-    "code_snippets": 314,
-    "loc": 3781,
-    "words": 24430
+    "articles": 14,
+    "code_snippets": 310,
+    "loc": 3762,
+    "words": 24127
   },
   "oop": {
     "articles": 6,
