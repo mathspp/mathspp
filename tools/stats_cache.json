@@ -6294,5 +6294,20 @@
       "loc": 0,
       "words": 1993
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/ask-the-llm-to-write-code-for-it": {
+    "timestamp": 1774362556.699721,
+    "tags": [
+      "python",
+      "programming",
+      "llm",
+      "slice of life"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 0,
+      "loc": 0,
+      "words": 501
+    }
   }
 }

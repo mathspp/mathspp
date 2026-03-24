@@ -18,16 +18,16 @@
     "words": 35212
   },
   "programming": {
-    "articles": 320,
+    "articles": 321,
     "code_snippets": 4000,
     "loc": 38174,
-    "words": 388038
+    "words": 388539
   },
   "python": {
-    "articles": 313,
+    "articles": 314,
     "code_snippets": 3879,
     "loc": 37081,
-    "words": 385065
+    "words": 385566
   },
   "algorithms": {
     "articles": 28,
@@ -174,10 +174,10 @@
     "words": 10326
   },
   "slice of life": {
-    "articles": 13,
+    "articles": 14,
     "code_snippets": 82,
     "loc": 1101,
-    "words": 12183
+    "words": 12684
   },
   "productivity": {
     "articles": 33,
@@ -402,10 +402,10 @@
     "words": 2443
   },
   "llm": {
-    "articles": 7,
+    "articles": 8,
     "code_snippets": 112,
     "loc": 895,
-    "words": 9014
+    "words": 9515
   },
   "json": {
     "articles": 5,
@@ -564,10 +564,10 @@
     "words": 430
   },
   "__all": {
-    "articles": 442,
+    "articles": 443,
     "code_snippets": 4141,
     "loc": 39373,
-    "words": 479287
+    "words": 479788
   },
   "fp": {
     "articles": 5,

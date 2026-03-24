@@ -1,0 +1,18 @@
+date: 24-03-2026 14:16
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This article covers a useful LLM pattern where you ask the LLM to write code to solve a problem instead of asking it to solve the problem directly."
+    og:image: "https://mathspp.com/blog/ask-the-llm-to-write-code-for-it/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/ask-the-llm-to-write-code-for-it/thumbnail.webp"
+references:
+  - "“Can you prompt LLMs to admit when they don't know the answer?”, <https://www.linkedin.com/pulse/can-you-prompt-llms-admit-when-dont-know-answer-anthony-shaw-7gjbc/>, [last accessed 24-03-2026];"
+slug: "ask-the-llm-to-write-code-for-it"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+      - python
+      - programming
+      - llm
+      - slice of life
+title: Ask the LLM to write code for it
