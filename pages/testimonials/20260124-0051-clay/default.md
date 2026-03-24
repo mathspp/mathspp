@@ -1,5 +1,5 @@
 ---
-company_and_title: 
+company_and_title: <a href="https://mathspp.com/books/pydonts">Pydon'ts</a> reader
 date: "2026-01-24 00:51"
 name: Clay
 # link:
@@ -8,7 +8,8 @@ taxonomy:
     category: review
     review-tag:
       - book
-published: false
+      - book-pydonts
+published: true
 ---
 
 Pydont's is an exceptional one-of-a-kind Python learning tool. And Rodrigo is an excellent communicator. 
