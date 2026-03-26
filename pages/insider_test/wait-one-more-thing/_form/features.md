@@ -121,6 +121,17 @@ form:
         captcha: true
         beehiiv-custom-field-updater:
           publication: "insider"
+        email:
+          -
+            subject: "Survey response"
+            body: |
+                "Python level: {{ form.value.python-level }}"
+                "How do you use Python? {{ form.value.usage }}"
+                "Topics of interest: {{ form.value.interests }}"
+                "Why? {{ form.value.why-interests }}"
+                "#1 roadblock: {{ form.value.roadblock }}"
+                "Biggest learning goal: {{ form.value.biggest-learning-goal }}"
+                "Any extra info? {{ form.value.extra-info }}"
         display: /insider_test/you-are-in
 ---
 
