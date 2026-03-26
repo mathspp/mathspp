@@ -32,7 +32,7 @@ form:
           value: Become smarter about Python
 
     process:
-        #captcha: true
+        captcha: true
         newsletter-subscriber:
           publication: "drops"
         display: wait-one-more-thing
