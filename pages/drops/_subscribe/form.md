@@ -9,10 +9,6 @@ form:
     name: subscribe
 
     fields:
-        publication_id:
-          type: hidden
-          default: pub_fe58688a-209b-4a1b-b7c1-83c0c0e8fee5
-
         honeypot:
           label: Honeypot
           type: honeypot
@@ -33,10 +29,10 @@ form:
     buttons:
         submit:
           type: submit
-          value: Submit
+          value: Become smarter about Python
 
     process:
-        captcha: true
+        #captcha: true
         #newsletter-subscriber:
         #  publication: "insider"
         display: wait-one-more-thing
