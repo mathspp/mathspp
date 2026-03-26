@@ -1,6 +1,10 @@
 ---
 title: Subscribe
 
+process:
+    twig: true
+cache_enable: false
+
 form:
     name: subscribe
 
