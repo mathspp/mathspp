@@ -57,7 +57,7 @@ class NewsletterSubscriberPlugin extends Plugin
         $params = $event['params'];
 
         $publication = $params['publication'] ?? 'insider';
-        $publicationId = $this->config->get("newsletter-publications.{$publication}");
+        $pub_id = $this->config->get("newsletter-publications.{$publication}");
         $email = $form->value('email');
         // Save email in Grav session for later reuse
         $this->grav['session']->__set('newsletter_subscriber_email', $email);
