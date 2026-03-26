@@ -33,8 +33,8 @@ form:
 
     process:
         #captcha: true
-        #newsletter-subscriber:
-        #  publication: "insider"
+        newsletter-subscriber:
+          publication: "insider"
         display: wait-one-more-thing
 ---
 
