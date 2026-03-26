@@ -33,7 +33,8 @@ form:
 
     process:
         captcha: true
-        newsletter-subscriber: true
+        newsletter-subscriber:
+          publication: "drops"
         display: wait-one-more-thing
 ---
 
