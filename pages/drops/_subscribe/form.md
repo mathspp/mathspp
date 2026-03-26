@@ -34,7 +34,7 @@ form:
     process:
         captcha: true
         newsletter-subscriber:
-          publication: "drops"
+          publication: "insider"
         display: wait-one-more-thing
 ---
 
