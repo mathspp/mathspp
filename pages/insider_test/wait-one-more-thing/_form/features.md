@@ -119,7 +119,8 @@ form:
 
     process:
         captcha: true
-        beehiiv-custom-field-updater: true
+        beehiiv-custom-field-updater:
+          publication: "insider"
         display: /insider_test/you-are-in
 ---
 
