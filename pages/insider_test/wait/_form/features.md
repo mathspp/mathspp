@@ -17,7 +17,6 @@ form:
           label: "1. What's your current Python level?"
           display_label: true
           type: select
-          default: beginner
           options:
             beginner: "Beginner programmer (just starting out in Python and programming in general)"
             intermediate: "Intermediate (I'm productive with the language)"
@@ -74,7 +73,6 @@ form:
           label: "5. What's the #1 roadblock you hit when trying to grow your skills?"
           display_label: true
           type: select
-          default: time
           options:
             time: "Not enough time to learn"
             llms: "Uncertainty because of LLMs"
@@ -115,7 +113,7 @@ form:
     buttons:
         submit:
           type: submit
-          value: Subscribe for free 🐍🚀
+          value: Complete subscription 🐍🚀
 
     process:
         captcha: true

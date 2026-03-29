@@ -11,10 +11,6 @@ form:
     name: subscribe
 
     fields:
-        publication_id:
-          type: hidden
-          default: pub_303dfe56-7a7e-4827-ac7c-6cc52785917a
-
         honeypot:
           label: Honeypot
           type: honeypot
@@ -39,8 +35,9 @@ form:
 
     process:
         captcha: true
-        newsletter-subscriber: true
-        display: /insider_test/wait-one-more-thing
+        newsletter-subscriber:
+          publication: insider
+        display: /insider_test/wait
 ---
 
 # Become the smartest Python 🐍 developer in the room 🚀
