@@ -1,22 +1,15 @@
 ---
-body_classes: "header-dark header-transparent"
+body_classes: "landing-page"
 content:
     items: "@self.modular"
     order:
         custom:
           - "_hero"
-          - "_intro"
-          - "_testimonials"
-          - "_flashcards"
-          - "_past-tips"
-          - "_refer"
-          - "_book"
-          - "_subscribe"
 metadata:
     author: "Rodrigo Girão Serrão"
-    description: "Python drops 🐍💧 newsletter."
+    description: "Get better at Python in just two minutes per day by getting a free daily drop of Python knowledge."
     og:title: "Python drops 🐍💧 newsletter"
     title: Python drops 🐍💧 newsletter
 onpage_menu: false
-title: Python drops 🐍💧 newsletter
+title: Python drops 🐍💧
 ---
