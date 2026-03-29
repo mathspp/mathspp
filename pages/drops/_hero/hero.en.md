@@ -40,7 +40,7 @@ form:
         display: /drops/wait-one-more-thing
 ---
 
-# Better Python in 2 minutes per day
+# Write better Python in 2 minutes per day
 
 ## Get a _free_ daily drop 💧 of Python 🐍 knowledge
 
