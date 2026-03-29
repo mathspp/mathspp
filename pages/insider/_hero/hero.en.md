@@ -37,7 +37,7 @@ form:
         captcha: true
         newsletter-subscriber:
           publication: insider
-        display: /insider_test/wait
+        display: /insider/wait
 ---
 
 # Become the smartest Python 🐍 developer in the room 🚀

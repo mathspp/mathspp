@@ -123,7 +123,7 @@ form:
           -
             subject: "Survey response"
             body: "{% include 'forms/data.html.twig' %}"
-        display: /insider_test/you-are-in
+        display: /insider/you-are-in
 ---
 
 {% include "forms/form.html.twig" with {form: forms("sign-up-survey")} %}
