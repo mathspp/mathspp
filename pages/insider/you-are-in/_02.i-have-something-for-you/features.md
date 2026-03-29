@@ -1,3 +1,7 @@
+---
+class: offset-box
+---
+
 ## I have something for you
 
 By now, you should have received a welcome email in your inbox.
