@@ -1,5 +1,5 @@
 ---
-classes: offset-box
+class: offset-box
 
 process:
     twig: true
