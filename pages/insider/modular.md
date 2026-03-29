@@ -8,6 +8,7 @@ content:
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "Become the smartest Python 🐍 developer in the room 🚀"
+    og:description: "Become the smartest Python 🐍 developer in the room 🚀"
     og:title: "mathspp insider 🐍🚀"
     title: mathspp insider 🐍🚀
 onpage_menu: false
