@@ -57,6 +57,7 @@ class NewsletterSubscriberPlugin extends Plugin
         $params = $event['params'];
 
         $publication = $params['publication'] ?? 'insider';
+        $utm_source = $params['utm_source'] ?? 'direct';
         $pub_id = $this->config->get("newsletter-publications.{$publication}");
         $email = $form->value('email');
         // Save email in Grav session for later reuse
@@ -65,10 +66,15 @@ class NewsletterSubscriberPlugin extends Plugin
         // Load the bearer token from the shared config
         $token = $this->config->get('newsletter-publications.token');
 
+        $base_payload = [
+            'email' => $email,
+            'reactivate_existing' => true,
+            'utm_source' => utm_source,
+        ];
         if ($params['automations'] ?? null) {
-            $payload = json_encode(['email' => $email, 'reactivate_existing' => true, 'automation_ids' => $params['automations']]);
+            $payload = json_encode(array_merge($base_payload, ['automation_ids' => $params['automations']]));
         } else {
-            $payload = json_encode(['email' => $email, 'reactivate_existing' => true, 'send_welcome_email' => true]);
+            $payload = json_encode(array_merge($base_payload, ['send_welcome_email' => true]));
         }
 
         $ch = curl_init("https://api.beehiiv.com/v2/publications/{$pub_id}/subscriptions");
