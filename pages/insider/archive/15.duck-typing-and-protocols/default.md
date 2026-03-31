@@ -259,7 +259,7 @@ Or not really?
 
 Reply to let me know your questions and your thoughts.
 
-This is important for “The little book of typing”, the book I'm currently writing.
+This is important for “The little book of typing”, the book I'm currently writing. :)
 
 ## Enjoyed reading? 🐍🚀
 
