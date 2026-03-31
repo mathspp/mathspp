@@ -43,11 +43,11 @@ form:
 
 # Fast Python development with uv
 
-## Free 4-email crash course
+## Free 4-day email crash course
 
-{% include "forms/form.html.twig" with {form: forms("subscribe")} %}
+{% include "forms/form.html.twig" with {form: forms("enroll")} %}
 
-Learn how to use uv to supercharge your Python workflows
+Learn how to use uv to supercharge your Python workflows.
 
 <style>
 form[name="subscribe"] {
