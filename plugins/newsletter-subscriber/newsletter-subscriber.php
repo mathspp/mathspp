@@ -69,7 +69,7 @@ class NewsletterSubscriberPlugin extends Plugin
         $base_payload = [
             'email' => $email,
             'reactivate_existing' => true,
-            'utm_source' => utm_source,
+            'utm_source' => $utm_source,
         ];
         if ($params['automations'] ?? null) {
             $payload = json_encode(array_merge($base_payload, ['automation_ids' => $params['automations']]));
