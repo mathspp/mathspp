@@ -66,9 +66,9 @@ class NewsletterSubscriberPlugin extends Plugin
         $token = $this->config->get('newsletter-publications.token');
 
         if ($params['automations'] ?? null) {
-            $payload = json_encode(['email' => $email, 'reactivate_existing' => true, 'send_welcome_email' => true]);
-        } else {
             $payload = json_encode(['email' => $email, 'reactivate_existing' => true, 'automation_ids' => $params['automations']]);
+        } else {
+            $payload = json_encode(['email' => $email, 'reactivate_existing' => true, 'send_welcome_email' => true]);
         }
 
         $ch = curl_init("https://api.beehiiv.com/v2/publications/{$pub_id}/subscriptions");
