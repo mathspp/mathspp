@@ -50,7 +50,7 @@ form:
 Learn how to use uv to supercharge your Python workflows.
 
 <style>
-form[name="subscribe"] {
+form[name="enroll"] {
     max-width: 70%;
     margin: auto;
 }
