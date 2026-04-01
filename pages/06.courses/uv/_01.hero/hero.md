@@ -42,7 +42,7 @@ form:
             - "aut_e5f88d3c-f6ea-46e6-b3b7-1b9da6c2b23c"
 ---
 
-# The “Fast Python development **playbook**”
+# The “Fast Python development playbook”
 
 ## How to supercharge your developer experience in just 4 days with uv
 
