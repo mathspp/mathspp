@@ -61,4 +61,8 @@ h2 {
 .hero #to-start {
     display: none;
 }
+
+.container {
+    max-width: max(70%, 976px);
+}
 </style>
