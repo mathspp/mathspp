@@ -42,13 +42,11 @@ form:
             - "aut_e5f88d3c-f6ea-46e6-b3b7-1b9da6c2b23c"
 ---
 
-# Fast Python development with uv
+# The “Fast Python development **playbook**”
 
-## Free 4-day email crash course
+## How to supercharge your Python workflows in 4 days with uv
 
 {% include "forms/form.html.twig" with {form: forms("enroll")} %}
-
-Learn how to use uv to supercharge your Python workflows.
 
 <style>
 form[name="enroll"] {
