@@ -46,7 +46,7 @@ form:
 
 ## Improve your Python developer experience with uv in just 4 days
 
-Simplify your workflows, avoid script dependency hell and polluted Python installations, and more, in this _free_ email crash course.
+Simplify your workflows, unify all your tooling needs into a single command, and get _more_ done with _less_ effort in this _free_ email course.
 
 {% include "forms/form.html.twig" with {form: forms("enroll")} %}
 
