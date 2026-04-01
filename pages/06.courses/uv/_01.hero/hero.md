@@ -44,11 +44,11 @@ form:
 
 # Fast Python development playbook
 
-## Improve your Python developer experience in just 4 days with uv
-
-{% include "forms/form.html.twig" with {form: forms("enroll")} %}
+## Improve your Python developer experience with uv in just 4 days
 
 Learn how to use uv to manage scripts, tools and executables, projects, and more, in this free email crash course.
+
+{% include "forms/form.html.twig" with {form: forms("enroll")} %}
 
 <style>
 form[name="enroll"] {
