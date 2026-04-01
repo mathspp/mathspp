@@ -46,7 +46,7 @@ form:
 
 ## Improve your Python developer experience with uv in just 4 days
 
-Learn how to use uv to manage scripts, tools and executables, projects, and more, in this free email crash course.
+Simplify your workflows, avoid script dependency hell and polluted Python installations, and more, in this _free_ email crash course.
 
 {% include "forms/form.html.twig" with {form: forms("enroll")} %}
 
