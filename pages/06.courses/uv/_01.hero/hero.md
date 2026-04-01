@@ -1,5 +1,5 @@
 ---
-title: 'Fast Python development with uv'
+title: 'Fast Python development playbook'
 hero_classes: 'text-light hero-fullscreen overlay-dark-gradient'
 hero_image: 'theme://images/common_hero.webp'
 
