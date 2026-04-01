@@ -1,0 +1,8 @@
+---
+hero_classes: "parallax text-light hero-large overlay-dark-gradient" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
+hero_image: theme://images/common_hero.webp
+---
+
+# You're in! 🐍🚀
+
+## Get ready to supercharge your Python developer experience with uv

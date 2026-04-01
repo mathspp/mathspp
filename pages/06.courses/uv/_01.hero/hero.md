@@ -40,6 +40,7 @@ form:
           utm_source: "email-course-uv"
           automations:
             - "aut_e5f88d3c-f6ea-46e6-b3b7-1b9da6c2b23c"
+        display: you-are-in
 ---
 
 # Fast Python development playbook
