@@ -48,6 +48,8 @@ form:
 
 {% include "forms/form.html.twig" with {form: forms("enroll")} %}
 
+Learn how to use uv to manage scripts, tools and executables, projects, and more, in this free email crash course.
+
 <style>
 form[name="enroll"] {
     max-width: 70%;
