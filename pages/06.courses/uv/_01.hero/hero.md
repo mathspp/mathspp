@@ -44,7 +44,7 @@ form:
 
 # The “Fast Python development **playbook**”
 
-## How to supercharge your Python workflows in 4 days with uv
+## How to supercharge your developer experience in just 4 days with uv
 
 {% include "forms/form.html.twig" with {form: forms("enroll")} %}
 
@@ -62,7 +62,7 @@ h2 {
     display: none;
 }
 
-.container {
+.container.grid-lg {
     max-width: max(70%, 976px);
 }
 </style>
