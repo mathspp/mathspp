@@ -1,0 +1,16 @@
+date: 03-04-2026 13:41
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Learn how objects are automatically iterable if you implement integer indexing."
+    og:image: "https://mathspp.com/blog/indexable-iterables/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/indexable-iterables/thumbnail.webp"
+references: []
+slug: "indexable-iterables"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+      - python
+      - programming
+      - dunder methods
+title: Indexable iterables

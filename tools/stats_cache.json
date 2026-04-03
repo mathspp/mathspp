@@ -6309,5 +6309,19 @@
       "loc": 0,
       "words": 501
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/indexable-iterables": {
+    "timestamp": 1775221760.9580867,
+    "tags": [
+      "python",
+      "programming",
+      "dunder methods"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 7,
+      "loc": 49,
+      "words": 463
+    }
   }
 }
