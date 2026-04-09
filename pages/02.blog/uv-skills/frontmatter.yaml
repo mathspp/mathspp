@@ -2,10 +2,10 @@ date: 09-04-2026 14:19
 metadata:
     author: Rodrigo Girão Serrão
     description: "This article shares two skills you can add to your coding agents so they use uv workflows."
-    og:image: "https://mathspp.com/blog/uv-skills-for-coding-agents/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/uv-skills-for-coding-agents/thumbnail.webp"
+    og:image: "https://mathspp.com/blog/uv-skills/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/uv-skills/thumbnail.webp"
 references: []
-slug: "uv-skills-for-coding-agents"
+slug: "uv-skills"
 taxonomy:
     category:
         - blogpost
