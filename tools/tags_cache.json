@@ -30,10 +30,10 @@
     "words": 389006
   },
   "python": {
-    "articles": 315,
-    "code_snippets": 3885,
-    "loc": 37200,
-    "words": 386033
+    "articles": 316,
+    "code_snippets": 3888,
+    "loc": 37202,
+    "words": 386272
   },
   "LLM": {
     "articles": 1,
@@ -348,10 +348,10 @@
     "words": 4403
   },
   "quiz": {
-    "articles": 3,
-    "code_snippets": 5,
-    "loc": 19,
-    "words": 1780
+    "articles": 4,
+    "code_snippets": 8,
+    "loc": 21,
+    "words": 2019
   },
   "git": {
     "articles": 9,

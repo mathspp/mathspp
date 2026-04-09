@@ -28,9 +28,9 @@ title: "Quiz blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">3</th>
-            <th style="text-align: center;">1,780</th>
-            <th style="text-align: center;">19</th>
+            <th style="text-align: center;">4</th>
+            <th style="text-align: center;">2,019</th>
+            <th style="text-align: center;">21</th>
         </tr>
     </thead>
     <tbody>

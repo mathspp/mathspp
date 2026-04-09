@@ -6340,8 +6340,11 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/who-wants-to-be-a-millionaire-iterables-edition": {
-    "timestamp": 1775766286.6386244,
-    "tags": [],
+    "timestamp": 1775766316.1696746,
+    "tags": [
+      "python",
+      "quiz"
+    ],
     "stats": {
       "articles": 1,
       "code_snippets": 3,

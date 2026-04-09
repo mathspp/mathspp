@@ -9,5 +9,7 @@ slug: "who-wants-to-be-a-millionaire-iterables-edition"
 taxonomy:
     category:
         - blogpost
-    tag: []
+    tag:
+      - python
+      - quiz
 title: "Who wants to be a millionaire: iterables edition"
