@@ -47,7 +47,7 @@ print(type(squares))</code></pre>
 ## Question 3
 
 <div class="quiz-question" data-correct="a">
-  <div class="question-text"><p>Out of the 20, how many objects in `itertools` are iterables?</p></div>
+  <div class="question-text"><p>Out of the 20, how many objects in <code>itertools</code> are iterables?</p></div>
   <ul class="choices">
     <li data-option="a">19</li>
     <li data-option="b">20</li>
@@ -60,7 +60,6 @@ print(type(squares))</code></pre>
 
 ## Question 4
 
-The final question is pretty much impossible unless you've been doing Python for quite a while...
 
 <div class="quiz-question" data-correct="d">
   <div class="question-text"><p>What is the output of the following Python program?</p></div>
