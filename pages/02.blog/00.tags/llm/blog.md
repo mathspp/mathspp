@@ -22,20 +22,20 @@ title: "Llm blog articles"
 ---
 
 
-# Usages of ChatGPT and other LLMs
+# “LLM” tag
 
 
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">8</th>
-            <th style="text-align: center;">9,515</th>
-            <th style="text-align: center;">895</th>
+            <th style="text-align: center;">1</th>
+            <th style="text-align: center;">307</th>
+            <th style="text-align: center;">89</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td style="text-align: center;">articles</td>
+            <td style="text-align: center;">article</td>
             <td style="text-align: center;">words</td>
             <td style="text-align: center;">lines of code</td>
         </tr>

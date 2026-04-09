@@ -3533,7 +3533,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/chaining-comparison-operators": {
-    "timestamp": 1768155314.3849485,
+    "timestamp": 1775237011.600445,
     "tags": [
       "programming",
       "python"
@@ -6311,7 +6311,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/indexable-iterables": {
-    "timestamp": 1775221760.9580867,
+    "timestamp": 1775221797.3471627,
     "tags": [
       "python",
       "programming",
@@ -6322,6 +6322,21 @@
       "code_snippets": 7,
       "loc": 49,
       "words": 463
+    }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/uv-skills": {
+    "timestamp": 1775734273.065949,
+    "tags": [
+      "python",
+      "programming",
+      "LLM",
+      "uv"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 3,
+      "loc": 89,
+      "words": 307
     }
   }
 }
