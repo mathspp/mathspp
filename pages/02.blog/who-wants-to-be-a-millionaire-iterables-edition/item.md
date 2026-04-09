@@ -13,6 +13,7 @@ This article includes only the four questions, the options presented, and a basi
 ## Question 1
 
 This is an easy one to get you started.
+It makes more sense if you watch the _performance_ of the lightning talk.
 
 <div class="quiz-question" data-correct="a">
   <div class="question-text"><p>What is the output of the following Python program?</p></div>
@@ -29,7 +30,6 @@ This is an easy one to get you started.
 
 ## Question 2
 
-
 <div class="quiz-question" data-correct="a">
   <div class="question-text"><p>What is the output of the following Python program?</p></div>
   <pre><code class="language-py hljs language-python">squares = (x ** 2 for x in range(3))
@@ -45,6 +45,9 @@ print(type(squares))</code></pre>
 
 
 ## Question 3
+
+This was a reference to the talk I'd given earlier today, where I talked about `tee`.
+The only object in `itertools` that is not an iterable.
 
 <div class="quiz-question" data-correct="a">
   <div class="question-text"><p>Out of the 20, how many objects in <code>itertools</code> are iterables?</p></div>

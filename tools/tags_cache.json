@@ -3,7 +3,7 @@
     "articles": 445,
     "code_snippets": 4150,
     "loc": 39494,
-    "words": 480478
+    "words": 480517
   },
   "bpci": {
     "articles": 10,
@@ -33,7 +33,7 @@
     "articles": 316,
     "code_snippets": 3888,
     "loc": 37202,
-    "words": 386256
+    "words": 386295
   },
   "LLM": {
     "articles": 1,
@@ -351,7 +351,7 @@
     "articles": 4,
     "code_snippets": 8,
     "loc": 21,
-    "words": 2003
+    "words": 2042
   },
   "git": {
     "articles": 9,
