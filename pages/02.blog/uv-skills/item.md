@@ -16,8 +16,8 @@ _Installing_ a skill usually just means dropping a Markdown file in the correct 
 
 Here are the two skills for you to download:
 
- 1. [Skill for `python-via-uv`](./blog/uv-skills/SKILL-python-via-uv.md)
- 2. [Skill for `uv-script-workflow`](./blog/uv-skills/SKILL-uv-script-workflow.md)
+ 1. [Skill for `python-via-uv`](./blog/uv-skills/SKILL-python-via-uv.txt)
+ 2. [Skill for `uv-script-workflow`](./blog/uv-skills/SKILL-uv-script-workflow.txt)
 
 I also included the skills verbatim here, for your convenience:
 
