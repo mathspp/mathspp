@@ -1,0 +1,13 @@
+date: 09-04-2026 23:17
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Play this short quiz to test your Python knowledge!"
+    og:image: "https://mathspp.com/blog/who-wants-to-be-a-millionaire-iterables-edition/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/who-wants-to-be-a-millionaire-iterables-edition/thumbnail.webp"
+references: []
+slug: "who-wants-to-be-a-millionaire-iterables-edition"
+taxonomy:
+    category:
+        - blogpost
+    tag: []
+title: "Who wants to be a millionaire: iterables edition"
