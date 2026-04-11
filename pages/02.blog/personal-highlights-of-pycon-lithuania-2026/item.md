@@ -26,17 +26,17 @@ There was _always_ something for you to do.
 
 The city tour is a brilliant idea and I wonder why more conferences don't do it:
 
- - **sightseeing**: participants get to know a bit more of the city that's hosting the conference
- - **networking**: participants get the chance to talk to each other in a relaxed and informal environment
- - **cheap**: hiring a tour guide is typically fairly cheap, especially when compared to organising a full-blown social event in a dedicated venue and with dedicated catering
+ - Participants get to know a bit more of the city that's hosting the conference.
+ - Participants get the chance to talk to each other in a relaxed and informal environment.
+ - Hiring a tour guide is typically fairly cheap, especially when compared to organising a full-blown social event in a dedicated venue and with dedicated catering.
 
 I had taken the city tour last time I had been at PyCon Lithuania and taking it again was not a mistake.
-Here's our group at the end of the tour, immediately before the speakers' dinner:
+<!-- Here's our group at the end of the tour, immediately before the speakers' dinner:
 
-<!-- ![Some PyCon Lithuania speakers smile at the camera in front of Gediminas's castle.](_tour.webp "Some PyCon Lithuania speakers at the city tour.") -->
+![Some PyCon Lithuania speakers smile at the camera in front of Gediminas's castle.](_tour.webp "Some PyCon Lithuania speakers at the city tour.") -->
 
-The conference organisers even made sure that the city tour ended close to the location of the speakers' dinner and at the time the dinner started.
-Another small detail that was very well arranged.
+The conference organisers even made sure that the city tour ended close to the location of the speakers' dinner _and_ that the tour ended at the same time as the dinner started.
+Another small detail that was carefully planned.
 
 The atmosphere of the restaurant was very pleasant and the staff there was helpful and kind, so we had a wonderful night.
 At some point, at our table, we noticed that the folks at the other two tables were projecting something on a big screen.
@@ -122,7 +122,7 @@ My favourite keynote was Piotr's “[Computer Vision, Meet Sports](https://pycon
 ![A screenshot from a YouTube video where you see basketball players segmented and a top-down view of the court with the positions of the players being tracked.](_basketball.webp "Tracking and segmentation of basketball players.")
 
 The screenshot above is from one of [Piotr's YouTube videos](https://www.youtube.com/watch?v=yGQb9KkvQ1Q).
-In the talk (and in the video linked) Piotr walked us through the many challenges faced when trying to segment players, track them, segment them, and classify their role throughout the game and each play.
+In the talk (and in the video linked) Piotr walked us through the many challenges faced when trying to segment players, track them, identify them, and classify their role throughout the game and each play.
 Piotr also told us about the models and techniques used to solve those challenges.
 It was a very interesting technical keynote.
 
