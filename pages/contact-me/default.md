@@ -2,7 +2,7 @@
 title: Contact Form
 routes:
   aliases:
-    - contact
+    - "/contact"
 
 form:
     name: contact
