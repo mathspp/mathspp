@@ -24,10 +24,10 @@
     "words": 389006
   },
   "python": {
-    "articles": 316,
+    "articles": 317,
     "code_snippets": 3888,
     "loc": 37202,
-    "words": 386295
+    "words": 387904
   },
   "algorithms": {
     "articles": 28,
@@ -198,10 +198,10 @@
     "words": 2630
   },
   "opinion": {
-    "articles": 10,
+    "articles": 11,
     "code_snippets": 43,
     "loc": 533,
-    "words": 20690
+    "words": 22299
   },
   "geometry": {
     "articles": 20,
@@ -564,10 +564,10 @@
     "words": 430
   },
   "__all": {
-    "articles": 445,
+    "articles": 446,
     "code_snippets": 4150,
     "loc": 39494,
-    "words": 480517
+    "words": 482126
   },
   "fp": {
     "articles": 5,
@@ -594,10 +594,10 @@
     "words": 518
   },
   "conferences": {
-    "articles": 4,
+    "articles": 5,
     "code_snippets": 1,
     "loc": 5,
-    "words": 8277
+    "words": 9886
   },
   "quiz": {
     "articles": 4,

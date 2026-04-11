@@ -28,8 +28,8 @@ title: "Conferences blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">4</th>
-            <th style="text-align: center;">8,277</th>
+            <th style="text-align: center;">5</th>
+            <th style="text-align: center;">9,886</th>
             <th style="text-align: center;">5</th>
         </tr>
     </thead>
