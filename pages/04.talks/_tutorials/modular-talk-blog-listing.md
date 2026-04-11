@@ -9,4 +9,3 @@ content:
 ---
 
 If you would like me to give any of my conference tutorials at your company, [reach out to me](/contact-me).
-All tutorials can be adapted.
