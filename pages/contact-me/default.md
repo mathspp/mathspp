@@ -1,7 +1,8 @@
 ---
 title: Contact Form
 routes:
-  - contact
+  aliases:
+    - contact
 
 form:
     name: contact
