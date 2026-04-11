@@ -1,5 +1,7 @@
 ---
 title: Contact Form
+routes:
+  - contact
 
 form:
     name: contact
