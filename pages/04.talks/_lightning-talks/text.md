@@ -5,6 +5,8 @@ This table lists most of the lightning talks I've given at conferences over the 
 
 | Date | Conference | Talk title | Watch | Reference |
 | :- | :- | :- | :- | :- |
+| 10-04-2026 | PyCon Lithuania 2026 | What the Python? | TBA |
+| 08-04-2026 | PyCon Lithuania 2026 | Who wants to be a millionaire: iterables edition | TBA |
 | 24-07-2025 | PyCon Portugal 2025 | What the Python? | [YouTube](https://youtu.be/QxfdLDyCypI) | - |
 | 29-05-2025 | PyCon Italia 2025 | What the partial? | [YouTube](https://youtu.be/LpGW2Wwxlug?t=85) | [Blog](https://mathspp.com/blog/functools-partial) |
 | 16-05-2025 | PyCon US 2025 | [Meta lightning talk](https://us.pycon.org/2025/schedule/presentation/168/) | [YouTube](https://youtu.be/Uuhu-F05A7k?t=125) | - |
