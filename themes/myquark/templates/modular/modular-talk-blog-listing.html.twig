@@ -14,6 +14,8 @@
         {% include 'partials/breadcrumbs.html.twig' %}
     {% endif %}
 
+    {{ page.content|raw }}
+
     {% embed 'partials/layout.html.twig' with {blog: page, show_sidebar: false} %}
         {% block item %}
             <div class="bricklayer {{ bricklayer_unique_class }}">
