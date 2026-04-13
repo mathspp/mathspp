@@ -31,9 +31,9 @@ The city tour is a brilliant idea and I wonder why more conferences don't do it:
  - Hiring a tour guide is typically fairly cheap, especially when compared to organising a full-blown social event in a dedicated venue and with dedicated catering.
 
 I had taken the city tour last time I had been at PyCon Lithuania and taking it again was not a mistake.
-<!-- Here's our group at the end of the tour, immediately before the speakers' dinner:
+Here's our group at the end of the tour, immediately before the speakers' dinner:
 
-![Some PyCon Lithuania speakers smile at the camera in front of Gediminas's castle.](_tour.webp "Some PyCon Lithuania speakers at the city tour.") -->
+![Some PyCon Lithuania speakers smile at the camera in front of Gediminas's castle.](_tour.webp "Some PyCon Lithuania speakers at the city tour.")
 
 The conference organisers even made sure that the city tour ended close to the location of the speakers' dinner _and_ that the tour ended at the same time as the dinner started.
 Another small detail that was carefully planned.
