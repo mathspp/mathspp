@@ -9,6 +9,6 @@ Upcoming dates:
 
 | Course | Dates |
 | :- | :- |
-| [Intermediate Python course](#intermediate-python-course) | 2nd March — 3rd April (5 weeks) |
+| [Intermediate Python course](#intermediate-python-course) | 5th May – 4th June (5 weeks) |
 
 I also offer [corporate trainings for teams, both remote and in-person](/training).

@@ -1,6 +1,19 @@
 ## Frequently asked questions (FAQ)
 
 <details markdown="1">
+<summary><h3>Are sessions recorded?</h3></summary>
+
+All sessions are recorded and you get access to the recordings forever.
+</details>
+
+<details markdown="1">
+<summary><h3>How does the lifetime access to future cohorts work?</h3></summary>
+
+Whenever a new cohort is scheduled, I email past students asking if they'd like to enroll again _for free_.
+If you do, you're treated as any other cohort student.
+</details>
+
+<details markdown="1">
 <summary><h3>Can I expense this course with my company?</h3></summary>
 Many companies have training/self-development budgets for developers to use to improve their skills by taking courses, buying technical books, and more.
 To figure out if your company will pay for this course, you will have to ask them.
@@ -34,7 +47,7 @@ Best regards,
 <details markdown="1">
 <summary><h3>At what time will the live sessions take place?</h3></summary>
 
-The live sessions take place from 3pm to 5pm UTC time on Tuesdays and Thursdays.
+The live sessions take place from 2pm to 4pm UTC time on Tuesdays and Thursdays.
 </details>
 
 <details markdown="1">

@@ -59,5 +59,5 @@ process:
 ## Join the March cohort
 
 <div style="display:flex; justify-content:center;">
-<a href="https://mathspp.gumroad.com/l/intermediate-python-course?wanted=true&variant=Cohort%3A+2nd+March+%E2%80%94+3rd+April" class="btn cta-btn">Secure your spot!</a>
+<a href="https://mathspp.gumroad.com/l/intermediate-python-course?wanted=true&variant=Cohort%3A+5th+May+%E2%80%93+4th+June" class="btn cta-btn">Secure your spot!</a>
 </div>
