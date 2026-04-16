@@ -10,7 +10,7 @@ authority_line: "Master the same tools, mental models, and techniques I used whi
 cta:
   text: "Join the next cohort: 5th May – 4th June"
   url: "https://mathspp.gumroad.com/l/intermediate-python-course?wanted=true&variant=Cohort%3A+5th+May+%E2%80%93+4th+June"
-  subtext: "Limited to 16 students"
+  subtext: "Limited to 16 students — 30-day 100% money back guarantee"
 
 social_proof:
   rating: 4.9
