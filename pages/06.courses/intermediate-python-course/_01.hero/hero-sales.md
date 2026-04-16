@@ -3,9 +3,9 @@ title: Intermediate Python course
 class: hero--dark
 background_image: theme://images/common_hero.webp
 
-audience_callout: "The 5-week learning sprint that'll get you a promotion"
-promise_headline: "Become the Python dev others trust to solve real-world problems in just 5 weeks"
-authority_line: "Master the same tools, mental models, and techniques I used while working full-time on popular open-source Python projects with a combined 90,000 GitHub stars."
+audience_callout: "Turn your Python skills into better opportunities"
+promise_headline: "Unlock higher-impact roles in 5 weeks by improving your Python skills"
+authority_line: "Build the confidence and technical depth to contribute at a higher level, get noticed by your team, and position yourself for promotions, new roles, or better offers."
 
 cta:
   text: "Join the next cohort: 5th May – 4th June"
