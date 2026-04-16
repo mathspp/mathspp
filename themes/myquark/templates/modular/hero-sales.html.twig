@@ -79,12 +79,21 @@
 
 .hero-sales__ctaRow {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: .75rem;
   flex-wrap: wrap;
 }
 
 .hero-sales__ctaRow .cta-button {
     margin: auto;
+}
+
+.hero-sales__ctaSubtext {
+  margin: 0;
+  font-size: .95rem;
+  color: rgba(255,255,255,.82);
+  text-align: center;
 }
 
 .hero-sales__proofCard {
@@ -170,6 +179,11 @@
           <a class="button cta-button" href="{{ h.cta.url }}">
             {{ h.cta.text }}
           </a>
+          {% if h.cta.subtext %}
+            <p class="hero-sales__ctaSubtext">
+              {{ h.cta.subtext }}
+            </p>
+          {% endif %}
         </div>
       {% endif %}
     </div>
