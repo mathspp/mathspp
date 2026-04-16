@@ -4,7 +4,7 @@ class: hero--dark
 background_image: theme://images/common_hero.webp
 
 audience_callout: "Turn your Python skills into better opportunities"
-promise_headline: "Unlock higher-impact roles in 5 weeks by improving your Python skills"
+promise_headline: "Unlock higher-impact roles in just 5 weeks by improving your Python skills"
 authority_line: "Build the confidence and technical depth to contribute at a higher level, get noticed by your team, and position yourself for promotions, new roles, or better offers."
 
 cta:
