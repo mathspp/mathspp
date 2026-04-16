@@ -15,7 +15,7 @@ cta:
 social_proof:
   rating: 4.9
   # rating_count: 11
-  image: _colby.webp
+  image: _marina.webp
   alt: "Screenshot of Colby's flattering testimonial"
   # quote: "I wasn't even sure I qualified as “intermediate” before. Now I feel confident that I am."
   # attribution: "Colby Thrash"
