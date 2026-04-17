@@ -7,7 +7,12 @@ And <span class="accent">make no progress</span>.
 You're missing a cohort of other students.
 You need to exchange ideas with other devs with the same struggles as you.
 
-## Stop consuming content <span class="accent">passively</span>
+## You're <span class="accent">bleeding</span> opportunities
 
-Learn in an engaging environment with no boring slides, only live-coding.
-Solve hands-on exercises _during the live sessions_ to verify your understanding.
+If your skills stay the same, you're getting _worse_.
+
+This cohort gets you back on track.
+Learn from engaging live sessions and practice with the exercises you'll be given.
+
+You'll learn and apply better workflows, techniques, and patterns.
+This knowledge you're lacking might be the difference between getting that promotion or role.
