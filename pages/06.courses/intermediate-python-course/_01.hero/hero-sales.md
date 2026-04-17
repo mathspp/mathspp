@@ -10,7 +10,7 @@ authority_line: "Build the confidence and technical depth to contribute at a hig
 cta:
   text: "Join the next cohort: 5th May – 4th June"
   url: "https://mathspp.gumroad.com/l/intermediate-python-course?wanted=true&variant=Cohort%3A+5th+May+%E2%80%93+4th+June"
-  subtext: "Limited to 16 students — 30-day 100% money back guarantee"
+  subtext: "Only 16 spots left • 30-day 100% money back guarantee"
 
 social_proof:
   rating: 4.9
