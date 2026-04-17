@@ -1,14 +1,16 @@
 {% set grid_size = theme_var('grid-size') %}
 {% set column_delimiter = page.header.column_delimiter|default('\n===\n') %}
 {% set columns = page.rawMarkdown|split(column_delimiter, 2) %}
+{% set left_classes = page.header.left_classes|default('') %}
+{% set right_classes = page.header.right_classes|default('') %}
 
 <section class="section modular-text {{ page.header.class}}">
     <section class="container {{ grid_size }}">
         <div class="columns two-columns">
-            <div class="column col-6 col-md-12">
+            <div class="column col-6 col-md-12 left-col {{ left_classes }}">
                 {{ columns[0]|default('')|trim|markdown|raw }}
             </div>
-            <div class="column col-6 col-md-12">
+            <div class="column col-6 col-md-12 right-col {{ right_classes}} ">
                 {{ columns[1]|default('')|trim|markdown|raw }}
             </div>
         </div>
