@@ -23,7 +23,7 @@
 }
 
 .fa-check-list.cross li::before {
-    content: "\f057"; /* Unicode for fa-check-circle */
+    content: "\f057"; /* Unicode for fa-times-circle */
     color: var(--re);
 }
 </style>
