@@ -1,4 +1,4 @@
-## Upcoming sessions
+## Session schedule
 
 ### Week 1 — Better looping
 
