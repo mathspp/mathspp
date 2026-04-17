@@ -23,7 +23,6 @@
 </style>
 
 <ul class="fa-check-list">
-
   <li>10 engaging live sessions (20 hours)</li>
   <li>Lifetime access to all cohort recordings</li>
   <li>Hundreds of hours of practice with 46 exercise sheets</li>
@@ -32,5 +31,4 @@
   <li>Personalised, 1-on-1 support during the cohort</li>
   <li>Lifetime access to cohort/alumni community</li>
   <li>The “What the Python?” guarantee: 30-day, 100% money-back guarantee if you're not happy with the course</li>
-
 </ul>
