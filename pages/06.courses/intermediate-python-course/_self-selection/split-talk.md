@@ -37,7 +37,6 @@
 </ul>
 
 ===
-
 ## Who this is not for
 
 <ul class="fa-check-list cross">
