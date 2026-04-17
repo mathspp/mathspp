@@ -3,7 +3,7 @@ title: Intermediate Python course
 class: hero--dark
 background_image: theme://images/common_hero.webp
 
-audience_callout: "Turn your Python skills into better opportunities"
+audience_callout: "For professionals using Python daily but who know there's room to improve"
 promise_headline: "Unlock higher-impact roles in just 5 weeks by improving your Python skills"
 authority_line: "Build the confidence and technical depth to contribute at a higher level, get noticed by your team, and position yourself for promotions, new roles, or better offers."
 
