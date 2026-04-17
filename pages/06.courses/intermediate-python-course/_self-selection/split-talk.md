@@ -14,16 +14,17 @@
     left: -.4em;
     top: 0.15em;
 
-    color: var(--accent);
     font-size: 1rem;
 }
 
 .fa-check-list.check li::before {
     content: "\f058"; /* Unicode for fa-check-circle */
+    color: var(--gr);
 }
 
 .fa-check-list.cross li::before {
     content: "\f057"; /* Unicode for fa-check-circle */
+    color: var(--re);
 }
 </style>
 
