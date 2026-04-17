@@ -1,4 +1,4 @@
-## You feel stuck and your code is always a mess.
+## You feel stuck and your code is always a mess
 
 You watch YouTube videos, read blog posts, and maybe even bought a course or two.
 
