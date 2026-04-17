@@ -36,8 +36,7 @@
   <li>Hardcore hobbyists who want to take the next step</li>
 </ul>
 
-===
-## Who this is not for
+===## Who this is not for
 
 <ul class="fa-check-list cross">
   <li>Beginner programmers</li>
