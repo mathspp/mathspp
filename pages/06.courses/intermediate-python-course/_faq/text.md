@@ -1,6 +1,14 @@
 ## Frequently asked questions (FAQ)
 
 <details markdown="1">
+<summary><h3>Why do I have to apply for the cohort?</h3></summary>
+You have to apply for the cohort [so we can chat](https://app.cal.eu/mathspp/ipc-discovery) to figure out if the cohort is an appropriate next step for you.
+
+During our short live call, we'll talk about your Python level, how you use Python, and what your objectives are.
+Based on your goals and your context, I'll recommend a path forward, which may or may not include enrolling in the cohort.
+</details>
+
+<details markdown="1">
 <summary><h3>Are sessions recorded?</h3></summary>
 
 All sessions are recorded and you get access to the recordings forever.

@@ -9,7 +9,7 @@ authority_line: "Build the confidence and technical depth to contribute at a hig
 
 cta:
   text: "Apply for the next cohort"
-  url: "https://mathspp.gumroad.com/l/intermediate-python-course?wanted=true&variant=Cohort%3A+5th+May+%E2%80%93+4th+June"
+  url: "https://app.cal.eu/mathspp/ipc-discovery"
   subtext: "Only 16 spots left • 5th May – 4th June • 30-day 100% money back guarantee"
 
 social_proof:
