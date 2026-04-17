@@ -8,9 +8,9 @@ promise_headline: "Unlock higher-impact roles in just 5 weeks by upgrading your 
 authority_line: "Build the confidence and technical depth to contribute at a higher level, get noticed by your team, and position yourself for promotions, new roles, or better offers."
 
 cta:
-  text: "Join the next cohort: 5th May – 4th June"
+  text: "Apply for the next cohort"
   url: "https://mathspp.gumroad.com/l/intermediate-python-course?wanted=true&variant=Cohort%3A+5th+May+%E2%80%93+4th+June"
-  subtext: "Only 16 spots left • 30-day 100% money back guarantee"
+  subtext: "Only 16 spots left • 5th May – 4th June • 30-day 100% money back guarantee"
 
 social_proof:
   rating: 4.9
