@@ -13,7 +13,7 @@ content:
             - _live-sessions-cta
             - _packages
             - _better-looping
-            - _08.cta
+            - _generators-cta
             - _decorators
             - _typing
             - _dataclasses

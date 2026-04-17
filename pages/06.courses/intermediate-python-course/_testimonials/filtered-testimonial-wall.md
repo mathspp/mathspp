@@ -6,4 +6,4 @@ limit: 20
 ---
 
 
-## Why you can trust my teaching:
+## What past students have to say
