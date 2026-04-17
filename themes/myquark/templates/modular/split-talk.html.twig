@@ -16,16 +16,16 @@
         {% endif %}
         <div class="columns {{ align }}">
             <div class="column col-6 col-md-12">
-                {{ splits[0]|trim|raw }}
+                {{ splits[0]|raw|trim }}
             </div>
             <div class="column col-6 col-md-12">
-                {{ splits[1]|trim|raw }}
+                {{ splits[1]|raw|trim }}
             </div>
         </div>
 
         {% if splits|length == 3 %}
         <div class="text-center">
-            {{ splits[2]|trim|raw }}
+            {{ splits[2]|raw|trim }}
         </div>
         {% endif %}
 
