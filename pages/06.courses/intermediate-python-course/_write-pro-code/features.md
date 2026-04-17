@@ -8,7 +8,7 @@ process:
 Join dozens of past students who already
 
  - got better job offers after the course
- - developed internal projects and tools that brought them notoriety
+ - developed internal projects and tools that brought them more notoriety
  - simplified their workflows with the techniques learned during the course
  - are writing more efficient code with more confidence
 
