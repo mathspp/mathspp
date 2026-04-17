@@ -1,4 +1,4 @@
-## Enroll now
+## Apply for the cohort now
 
 There are only <span class="accent">16 spots per cohort</span> and they're filled on a first-come, first-served basis.
 
