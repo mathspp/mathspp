@@ -5,24 +5,24 @@ content:
     order:
         by: custom
         custom:
-            - _01.hero
+            - _hero
             - _self-selection
-            - _02
-            - _03
-            - _04.alternatives
-            - _05.live-sessions-cta
-            - _06.packages
-            - _07.better-looping
+            - _write-pro-code
+            - _research
+            - _alternatives
+            - _live-sessions-cta
+            - _packages
+            - _better-looping
             - _08.cta
-            - _09.decorators
-            - _10.typing
-            - _11.dataclasses
+            - _decorators
+            - _typing
+            - _dataclasses
             - _12.cta
-            - _35.testimonials
-            - _36.whoami
-            - _37.sessions
-            - _38.final-cta
-            - _39.faq
+            - _testimonials
+            - _whoami
+            - _sessions
+            - _final-cta
+            - _faq
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "Intermediate Python course."

@@ -2,6 +2,6 @@
 image: user://themes/myquark/images/rodrigo_circle_256.webp
 ---
 
-## Whoami
+## Meet your instructor
 
 [content-inject path="/modules/_formal-bio" /]
