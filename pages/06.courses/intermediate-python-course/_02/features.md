@@ -5,7 +5,11 @@ process:
 
 ## Start writing professional code in 5 weeks
 
-Join dozens of others who are writing more efficient code with more confidence.
+Join dozens of past students who already
+
+ - got better job offers after the course
+ - developed internal projects and tools that brought them notoriety
+ - are writing more efficient code with more confidence
 
 
 <style>
