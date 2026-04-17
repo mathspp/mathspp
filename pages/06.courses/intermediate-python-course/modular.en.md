@@ -19,7 +19,7 @@ content:
             - _dataclasses
             - _12.cta
             - _testimonials
-            - _whoami
+            - _meet-your-instructor
             - _sessions
             - _final-cta
             - _faq
