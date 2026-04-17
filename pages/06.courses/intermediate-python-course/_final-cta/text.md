@@ -1,38 +1,9 @@
-## What you get ($2,784+ value)
-
-<style>
-.fa-check-list {
-    list-style: none;
-}
-
-.fa-check-list li {
-    position: relative;
-}
-
-.fa-check-list li::before {
-    content: "\f058"; /* Unicode for fa-check-circle */
-    font-family: "Font Awesome 5 Free";
-    font-weight: 400; /* 400 = Regular (far) */
-    position: relative;
-    left: -.4em;
-    top: 0.15em;
-
-    color: var(--accent);
-    font-size: 1rem;
-}
-</style>
-
-<ul class="fa-check-list">
-  <li>10 live sessions ($490 value)</li>
-  <li>Lifetime access to all cohort recordings ($190 value)</li>
-  <li>46 exercise sheets ($414 value)</li>
-  <li>Free access to all cohort reruns ($490+ value)</li>
-  <li>Personalised support during the cohort ($1,000+ value)</li>
-  <li>Lifetime access to alumni community ($200+ value)</li>
-  <li>30-day, 100% money-back guarantee</li>
-</ul>
-
 <div style="display:flex; justify-content:center;">
 <a href="https://mathspp.gumroad.com/l/intermediate-python-course?wanted=true&variant=Cohort%3A+5th+May+%E2%80%93+4th+June" class="btn cta-btn">Secure your spot for $490</a>
 </div>
 <br />
+
+## The “What the Python?!” guarantee
+
+If you're not fully satisfied with the cohort, you have a 30-day 100% money-back guarantee.
+No questions asked.

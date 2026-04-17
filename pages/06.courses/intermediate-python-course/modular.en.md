@@ -21,6 +21,7 @@ content:
             - _testimonials
             - _meet-your-instructor
             - _sessions
+            - _what-you-get
             - _final-cta
             - _faq
 metadata:
