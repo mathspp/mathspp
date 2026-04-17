@@ -47,7 +47,6 @@
   <li>A beginner programmer who is still learning basic Python syntax</li>
   <li>A very advanced developer (e.g., writing frameworks, playing with CPython internals)</li>
   <li>Looking for a purely self-paced course</li>
-  <li>Someone who's not willing to put in the time to practice by solving exercises</li>
   <li>Expecting results without putting in any work during the 5 weeks</li>
   <li>Using LLMs and don't care about the code they're producing</li>
 </ul>
