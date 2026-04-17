@@ -28,25 +28,25 @@
 }
 </style>
 
-## This is for you if you're a
+## This is for you
 
 <ul class="fa-check-list check">
-  <li>Scientist, data engineer, or another type of professional who uses Python as a tool to get their job done</li>
-  <li>Coder who works in multi-language environments and that wishes to write better, Pythonic code</li>
-  <li>QA/testing engineer, or similar, who wishes to transition into developer roles</li>
-  <li>Self-taught programmer who never learned proper engineering best practices</li>
-  <li>Aspiring developer who wants to strengthen their fundamentals before job interviews</li>
-  <li>Using LLMs to help you write code but you don't understand what they're doing</li>
+  <li>Scientists, data engineers, and other professionals, who use Python as a tool to get their jobs done</li>
+  <li>Coders who work in multi-language environments and that wish to write better, Pythonic code</li>
+  <li>QA/testing engineers, or similar, who wish to transition into developer roles</li>
+  <li>Self-taught programmers who never learned proper engineering best practices</li>
+  <li>Aspiring developers who want to strengthen their fundamentals before job interviews</li>
+  <li>You're using LLMs to help you write code but you don't understand what they're doing</li>
 </ul>
 
 ===
 
-## This is NOT for you if you're
+## This is NOT for you
 
 <ul class="fa-check-list cross">
-  <li>A beginner programmer who is still learning basic Python syntax</li>
-  <li>A very advanced developer (e.g., writing frameworks, playing with CPython internals)</li>
+  <li>Beginner programmers who are still learning basic Python syntax</li>
+  <li>Very advanced developers (e.g., writing frameworks, playing with CPython internals)</li>
   <li>Looking for a purely self-paced course</li>
   <li>Expecting results without putting in any work during the 5 weeks</li>
-  <li>Using LLMs and don't care about the code they're producing</li>
+  <li>You're using LLMs and are happy not understanding what they're doing</li>
 </ul>
