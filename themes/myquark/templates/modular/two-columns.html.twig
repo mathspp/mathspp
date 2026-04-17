@@ -1,0 +1,16 @@
+{% set grid_size = theme_var('grid-size') %}
+{% set column_delimiter = page.header.column_delimiter|default('\n===\n') %}
+{% set columns = page.rawMarkdown|split(column_delimiter, 2) %}
+
+<section class="section modular-text {{ page.header.class}}">
+    <section class="container {{ grid_size }}">
+        <div class="columns two-columns">
+            <div class="column col-6 col-md-12">
+                {{ columns[0]|default('')|trim|markdown|raw }}
+            </div>
+            <div class="column col-6 col-md-12">
+                {{ columns[1]|default('')|trim|markdown|raw }}
+            </div>
+        </div>
+    </section>
+</section>
