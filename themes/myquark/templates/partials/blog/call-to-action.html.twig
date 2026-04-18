@@ -22,7 +22,7 @@
     {% endset %}
 
     {% if markdown_cta|trim %}
-        {{ markdown_cta|markdown }}
+        {{ markdown_cta|trim|markdown }}
     {% else %}
         {% include html_templates ignore missing %}
     {% endif %}
