@@ -2,7 +2,6 @@
 
 - **Next dates**:
    - 5th May – 4th June
-- **Price**: $490
 - **Limited spots available**
 
 This course is for all developers who can write small functions, programs, and scripts, but struggle to create or maintain larger and more complex projects.
@@ -10,6 +9,6 @@ This course will focus on equipping you with all the tools that a fluent Python 
 
 
 <div style="display:flex; justify-content:center;">
-<a href="/courses/intermediate-python-course#what-you-get-2-784-value" class="btn" style="margin-right: 1em;">Secure your spot!</a>
+<a href="/courses/intermediate-python-course#apply-for-the-cohort" class="btn" style="margin-right: 1em;">Apply for the cohort</a>
 <a href="/courses/intermediate-python-course" class="btn" style="margin-left: 1em;">Learn more</a>
 </div>
