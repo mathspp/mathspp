@@ -3,7 +3,7 @@ process:
     twig: true
 ---
 
-## Start writing professional code in 5 weeks
+## From non-CS to confident dev in 5 weeks
 
 Join dozens of past students who already
 
@@ -52,12 +52,12 @@ Join dozens of past students who already
     review: {
     header: {
         star_rating: 5,
-        name: 'Michael Dahlberg',
+        name: 'Colby Thrash',
     },
-    content: '<p>One of the most valuable things I learned wasn’t just specific tools, but a new way to think about Python — as a set of building blocks you can assemble to solve problems. It was absolutely worth the financial and time investment.</p>',
+    content: '<p>I don’t have as much computer science background as it sounded like some others had, but I felt like I was able to follow the material. <span>It gave me more confidence in my programming skills</span>.</p>',
     media: {
         images: [
-        { url: '/user/pages/testimonials/20260217-2116-michael-dahlberg/profile.webp' }
+        { url: '/user/pages/testimonials/20260217-2119-colby-thrash/profile.webp' }
         ]
     }
     }
