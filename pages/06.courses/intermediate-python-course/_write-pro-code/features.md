@@ -39,7 +39,7 @@ Join dozens of past students who already
         star_rating: 5,
         name: 'Marina, data scientist',
     },
-    content: '<p>I come from a data science background <span>without a formal computer science education</span>, and this course helped me better understand how to write clearer, more structured code and follow functional programming principles. It challenged me to rethink how I approach coding and gave me a better foundation to improve.</p>',
+    content: '<p>I come from a data science background <span>without a formal computer science education</span>, and this course helped me better understand how to write clearer, more structured code. It challenged me to rethink how I approach coding and gave me a better foundation to improve.</p>',
     media: {
         images: [
         { url: '/user/pages/testimonials/20260217-2117-marina/profile.webp' }
@@ -66,5 +66,5 @@ Join dozens of past students who already
 </div>
 
 <div style="display:flex; justify-content:center;">
-<a href="https://mathspp.gumroad.com/l/intermediate-python-course?wanted=true&variant=Cohort%3A+5th+May+%E2%80%93+4th+June" class="btn cta-btn">Secure your spot!</a>
+<a href="https://app.cal.eu/mathspp/ipc-discovery" class="btn cta-btn">Apply for the cohort</a>
 </div>
