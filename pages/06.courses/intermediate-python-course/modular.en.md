@@ -9,7 +9,6 @@ content:
             - _self-selection
             - _write-pro-code
             - _research
-            - _alternatives
             - _live-sessions-cta
             - _packages
             - _better-looping

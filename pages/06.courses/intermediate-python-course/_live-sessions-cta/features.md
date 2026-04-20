@@ -3,6 +3,27 @@ process:
     twig: true
 ---
 
+## You feel stuck and your code is always a mess
+
+You watch YouTube videos, read blog posts, and maybe even bought a course or two.
+
+And <span class="accent">make no progress</span>.
+
+## You're <span class="accent">bleeding</span> opportunities
+
+If your skills stay the same, you're getting _worse_.
+
+This cohort gets you back on track.
+
+## Go from solo-struggles to realtime mentorship
+
+You're missing a cohort of other students.
+
+You need to exchange ideas with other devs with the same struggles as you.
+
+You need to <span class="accent">learn live, in realtime, asking questions and getting answers right then and there</span>.
+
+
 <style>
 /* Container for the two review cards */
 .review-cards-grid {
@@ -27,9 +48,9 @@ process:
     review: {
     header: {
         star_rating: 5,
-        name: 'Kiel Haymon',
+        name: 'Kiel Haymon, got a job after the cohort',
     },
-    content: "<p>Learning in an interactive manner is helpful and the most effective to me. Also being able to ask questions and get them resolved in real time is very beneficial.</p>",
+    content: "<p><span>Learning in an interactive manner is the most effective to me</span>. Also being able to ask questions and get them resolved in real time is very beneficial.</p>",
     media: {
         images: [
         { url: '/user/pages/testimonials/20260217-2118-kiel-haymon/profile.webp' }
@@ -44,10 +65,10 @@ process:
         star_rating: 5,
         name: 'Yoga',
     },
-    content: "<p>I like your teaching style, and I think you make topics approachable and engaging. I learned things that were not necessarily the core point of the material by watching you work through rough code and answer questions. It is useful to hear questions from others in the course who have different experience levels or perspectives. It's also just more fun to work together in real time rather than on my own.</p>",
+    content: "<p>We're really fortunate to have you put on these sessions. It's not always easy to find mentors that can communicate difficult things simply. And it's not always easy to find mentors to meet you where you are at.</p>",
     media: {
         images: [
-        { url: '/user/pages/testimonials/20260217-2119-colby-thrash/profile.webp' }
+        { url: '/user/pages/testimonials/20260222-1615-yoga/profile.webp' }
         ]
     }
     }
