@@ -65,7 +65,7 @@ You need to learn live, in realtime, asking questions and getting answers right 
         star_rating: 5,
         name: 'Yoga',
     },
-    content: "<p>We're really fortunate to have you put on these sessions. It's not always easy to find mentors that can communicate difficult things simply. And it's not always easy to find mentors to meet you where you are at.</p>",
+    content: "<p>We're really fortunate to have you put on these sessions. <span>It's not always easy to find mentors that can communicate difficult things simply</span>. And it's not always easy to find mentors to meet you where you are at.</p>",
     media: {
         images: [
         { url: '/user/pages/testimonials/20260222-1615-yoga/profile.webp' }
