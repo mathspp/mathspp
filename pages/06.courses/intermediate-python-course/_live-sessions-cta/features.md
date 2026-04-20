@@ -76,9 +76,6 @@ You need to learn live, in realtime, asking questions and getting answers right 
 
 </div>
 
-
-## Join the next cohort
-
 <div style="display:flex; justify-content:center;">
 <a href="https://app.cal.eu/mathspp/ipc-discovery" class="btn cta-btn">Apply for the cohort</a>
 </div>
