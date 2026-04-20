@@ -3,7 +3,7 @@ process:
     twig: true
 ---
 
-## From non-CS to confident dev in 5 weeks
+## From non-CS background to confident dev in 5 weeks
 
 Join dozens of past students who already
 
@@ -37,7 +37,7 @@ Join dozens of past students who already
     review: {
     header: {
         star_rating: 5,
-        name: 'Marina',
+        name: 'Marina, data scientist',
     },
     content: '<p>I come from a data science background <span>without a formal computer science education</span>, and this course helped me better understand how to write clearer, more structured code and follow functional programming principles. It challenged me to rethink how I approach coding and gave me a better foundation to improve.</p>',
     media: {
@@ -52,7 +52,7 @@ Join dozens of past students who already
     review: {
     header: {
         star_rating: 5,
-        name: 'Colby Thrash',
+        name: 'Colby Thrash, hydrologist',
     },
     content: '<p>I don’t have as much computer science background as it sounded like some others had, but I felt like I was able to follow the material. <span>It gave me more confidence in my programming skills</span>.</p>',
     media: {
