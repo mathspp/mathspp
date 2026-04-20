@@ -7,9 +7,9 @@ process:
 
 You watch YouTube videos, read blog posts, and maybe even bought a course or two.
 
-And <span class="accent">make no progress</span>.
+And make no progress.
 
-## You're <span class="accent">bleeding</span> opportunities
+## You're bleeding opportunities
 
 If your skills stay the same, you're getting _worse_.
 
@@ -21,7 +21,7 @@ You're missing a cohort of other students.
 
 You need to exchange ideas with other devs with the same struggles as you.
 
-You need to <span class="accent">learn live, in realtime, asking questions and getting answers right then and there</span>.
+You need to learn live, in realtime, asking questions and getting answers right then and there.
 
 
 <style>
