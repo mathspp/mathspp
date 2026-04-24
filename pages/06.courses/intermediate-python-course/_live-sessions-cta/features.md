@@ -9,12 +9,6 @@ You watch YouTube videos, read blog posts, and maybe even bought a course or two
 
 And make no progress.
 
-## You're bleeding opportunities
-
-If your skills stay the same, you're getting _worse_.
-
-This cohort gets you back on track.
-
 ## Go from solo-struggles to realtime mentorship
 
 You're missing a cohort of other students.
