@@ -10,7 +10,7 @@ authority_line: "Build the confidence and technical depth to contribute at a hig
 cta:
   text: "Apply for the next cohort"
   url: "https://app.cal.eu/mathspp/ipc-discovery"
-  subtext: "Only 16 spots left • 5th May – 4th June • 30-day 100% money back guarantee"
+  subtext: "Only 16 spots available • 5th May – 4th June • 30-day 100% money back guarantee"
 
 social_proof:
   rating: 4.9
