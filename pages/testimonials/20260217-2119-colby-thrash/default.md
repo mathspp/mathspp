@@ -1,5 +1,5 @@
 ---
-company_and_title: <a href="https://mathspp.com/courses/intermediate-python-course">Intermediate Python course</a> student
+company_and_title: hydrologist, <a href="https://mathspp.com/courses/intermediate-python-course">Intermediate Python course</a> student
 date: "2026-02-17 21:19"
 name: Colby Thrash
 star_rating: 5
