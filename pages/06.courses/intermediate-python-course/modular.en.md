@@ -10,9 +10,9 @@ content:
             - _write-pro-code
             - _research
             - _live-sessions-cta
+            - _messy-to-pythonic-cta
             - _packages
             - _better-looping
-            - _generators-cta
             - _decorators
             - _typing
             - _dataclasses

@@ -3,6 +3,9 @@ process:
     twig: true
 ---
 
+## Your code works but doesn't look <span class="accent">Pythonic</span>
+
+
 <style>
 /* Container for the two review cards */
 .review-cards-grid {
@@ -54,9 +57,6 @@ process:
 } %}
 
 </div>
-
-
-## Join the next cohort
 
 <div style="display:flex; justify-content:center;">
 <a href="https://app.cal.eu/mathspp/ipc-discovery" class="btn cta-btn">Apply for the cohort</a>
