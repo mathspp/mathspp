@@ -1,0 +1,18 @@
+date: 27-04-2026 17:18
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Learn how to work around the Python machinery to resolve an explicit lazy import manually."
+    og:image: "https://mathspp.com/blog/til/resolve-a-lazy-import-manually/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/resolve-a-lazy-import-manually/thumbnail.webp"
+references: []
+routes:
+    aliases:
+        - "/blog/til/143"
+slug: "resolve-a-lazy-import-manually"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - python
+title: "TIL #143 – Resolve a lazy import manually"
+visible: false
