@@ -2,10 +2,10 @@
 
 <details markdown="1">
 <summary><h3>How much does the course cost?</h3></summary>
-The base cost is $490 (USD).
+The base cost is \$490 (USD).
 But the course has purchasing parity pricing (PPP) enabled, so you might get _up to 50%_ discount based on the cost of living and local currency of where you are located.
 (This requires you to use a payment method from the same country you're located in, to prevent fraud.)
-For example, the course costs approximately $300 in Portugal, my country.
+For example, the course costs approximately \$300 in Portugal, my country.
 
 If you are a student or are unemployed, you are eligible for an additional discount; just [contact me](/contact-me?subject=Unemployment/student%20discount%20for%20the%20intermediate%20Python%20course) and we'll sort you out.
 
