@@ -1,6 +1,21 @@
 ## Frequently asked questions (FAQ)
 
 <details markdown="1">
+<summary><h3>How much does the course cost?</h3></summary>
+The base cost is $490 (USD).
+But the course has purchasing parity pricing (PPP) enabled, so you might get _up to 50%_ discount based on the cost of living and local currency of where you are located.
+(This requires you to use a payment method from the same country you're located in, to prevent fraud.)
+For example, the course costs approximately $300 in Portugal, my country.
+
+If you are a student or are unemployed, you are eligible for an additional discount; just [contact me](/contact-me?subject=Unemployment/student%20discount%20for%20the%20intermediate%20Python%20course) and we'll sort you out.
+
+**Please note**: purchase parity pricing (PPP) is for individuals who are paying for their own course.
+If your company is paying for you to take this course, please remove the PPP discount during checkout.
+</details>
+
+</details>
+
+<details markdown="1">
 <summary><h3>Why do I have to apply for the cohort?</h3></summary>
 You have to apply for the cohort [so we can chat](https://app.cal.eu/mathspp/ipc-discovery) to figure out if the cohort is an appropriate next step for you.
 
@@ -81,16 +96,4 @@ If you don't set aside time to learn you will never make visible progress.
 So, expect a challenging but fun couple of weeks.
 
 You'll need 4h/week for the live sessions and about 2–4h/week for the exercises.
-</details>
-
-<details markdown="1">
-<summary><h3>Are there any discounts?</h3></summary>
-
-The course has purchasing parity pricing (PPP) enabled, so you might get a discount based on the cost of living and local currency of where you are located.
-(This requires you to use a payment method from the same country you're located in, to prevent fraud.)
-
-**Please note**: purchase parity pricing (PPP) is for individuals who are paying for their own course.
-If your company is paying for you to take this course, please remove the PPP discount during checkout.
-
-If you are a student or are unemployed, you are eligible for an additional discount; just [contact me](/contact-me?subject=Unemployment/student%20discount%20for%20the%20intermediate%20Python%20course) and we'll sort you out.
 </details>

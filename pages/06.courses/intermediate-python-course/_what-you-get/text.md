@@ -22,6 +22,8 @@
 }
 </style>
 
+For [just $490](#how-much-does-the-course-cost), you get:
+
 <ul class="fa-check-list">
   <li>10 engaging live sessions (20 hours)</li>
   <li>Lifetime access to all cohort recordings</li>
