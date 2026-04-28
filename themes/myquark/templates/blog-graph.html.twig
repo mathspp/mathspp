@@ -1,0 +1,55 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% do assets.addCss('theme://css/blog-graph.css') %}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {% do assets.addJs('theme://js/cytoscape.min.js', {group:'bottom'}) %}
+    {% do assets.addJs('theme://js/blog-graph.js', {group:'bottom'}) %}
+{% endblock %}
+
+{% block body_classes %}{{ body_classes }} blog-graph-page{% endblock %}
+
+{% block body %}
+<section id="body-wrapper" class="blog-graph-shell">
+    <div
+        class="blog-graph"
+        data-graph-url="{{ page.url }}/blog-graph.json"
+        data-site-url="{{ uri.rootUrl(true) }}"
+    >
+        <aside class="blog-graph-controls" aria-label="Graph controls">
+            <div class="blog-graph-search">
+                <label for="blog-graph-search">Search</label>
+                <input id="blog-graph-search" type="search" placeholder="Article or tag" autocomplete="off">
+            </div>
+
+            <div class="blog-graph-control-group" aria-label="Node types">
+                <span>Nodes</span>
+                <label><input type="checkbox" data-filter="node" value="article" checked> Articles</label>
+                <label><input type="checkbox" data-filter="node" value="tag" checked> Tags</label>
+            </div>
+
+            <div class="blog-graph-control-group" aria-label="Edge types">
+                <span>Edges</span>
+                <label><input type="checkbox" data-filter="edge" value="internal-link" checked> Links</label>
+                <label><input type="checkbox" data-filter="edge" value="tag" checked> Tags</label>
+            </div>
+
+            <button class="blog-graph-reset" type="button">Reset layout</button>
+
+            <div class="blog-graph-selection" aria-live="polite">
+                <strong>Blog graph</strong>
+                <span>Loading articles, tags, and links.</span>
+            </div>
+        </aside>
+
+        <main class="blog-graph-stage" aria-label="Blog graph explorer">
+            <div id="blog-graph-canvas"></div>
+            <div class="blog-graph-status" role="status">Loading graph...</div>
+        </main>
+    </div>
+</section>
+{% endblock %}
