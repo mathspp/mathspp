@@ -11,8 +11,8 @@
   const search = root.querySelector("#blog-graph-search");
   const resetButton = root.querySelector(".blog-graph-reset");
   const selection = root.querySelector(".blog-graph-selection");
+  const panelToggle = root.querySelector(".blog-graph-panel-toggle");
   const nodeFilters = Array.from(root.querySelectorAll('[data-filter="node"]'));
-  const edgeFilters = Array.from(root.querySelectorAll('[data-filter="edge"]'));
 
   const graphUrl = root.dataset.graphUrl;
   const siteUrl = (root.dataset.siteUrl || "").replace(/\/$/, "");
@@ -69,7 +69,6 @@
     }
 
     const visibleNodeTypes = selectedValues(nodeFilters);
-    const visibleEdgeTypes = selectedValues(edgeFilters);
     const query = search.value.trim().toLowerCase();
 
     cy.batch(function () {
@@ -80,7 +79,6 @@
 
       cy.edges().forEach(function (edge) {
         const visible =
-          visibleEdgeTypes.has(edge.data("type")) &&
           edge.source().style("display") !== "none" &&
           edge.target().style("display") !== "none";
         edge.style("display", visible ? "element" : "none");
@@ -115,6 +113,15 @@
       cy.elements().filter((element) => element.visible()).addClass("dimmed");
       neighborhood.removeClass("dimmed").addClass("focused-neighborhood");
     });
+  }
+
+  function setPanelCollapsed(collapsed) {
+    root.classList.toggle("is-panel-collapsed", collapsed);
+    panelToggle.setAttribute("aria-expanded", String(!collapsed));
+    panelToggle.setAttribute("title", collapsed ? "Expand controls" : "Collapse controls");
+    panelToggle.querySelector(".blog-graph-panel-toggle-text").textContent = collapsed
+      ? "Graph controls"
+      : "Controls";
   }
 
   function layoutBox() {
@@ -357,12 +364,22 @@
     updateSelection(null);
   });
 
-  nodeFilters.concat(edgeFilters).forEach(function (input) {
+  nodeFilters.forEach(function (input) {
     input.addEventListener("change", function () {
       clearFocus();
       applyFilters();
       runLayout();
     });
+  });
+
+  panelToggle.addEventListener("click", function () {
+    setPanelCollapsed(!root.classList.contains("is-panel-collapsed"));
+    if (cy) {
+      window.setTimeout(function () {
+        cy.resize();
+        cy.fit(cy.elements().filter((element) => element.visible()), 64);
+      }, 190);
+    }
   });
 
   resetButton.addEventListener("click", function () {

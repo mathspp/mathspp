@@ -20,29 +20,36 @@
         data-graph-url="{{ page.url }}/blog-graph.json"
         data-site-url="{{ uri.rootUrl(true) }}"
     >
-        <aside class="blog-graph-controls" aria-label="Graph controls">
-            <div class="blog-graph-search">
-                <label for="blog-graph-search">Search</label>
-                <input id="blog-graph-search" type="search" placeholder="Article or tag" autocomplete="off">
-            </div>
+        <aside class="blog-graph-controls" id="blog-graph-controls" aria-label="Graph controls">
+            <button
+                class="blog-graph-panel-toggle"
+                type="button"
+                aria-controls="blog-graph-controls"
+                aria-expanded="true"
+                title="Collapse controls"
+            >
+                <span class="blog-graph-panel-toggle-icon" aria-hidden="true"></span>
+                <span class="blog-graph-panel-toggle-text">Controls</span>
+            </button>
 
-            <div class="blog-graph-control-group" aria-label="Node types">
-                <span>Nodes</span>
-                <label><input type="checkbox" data-filter="node" value="article" checked> Articles</label>
-                <label><input type="checkbox" data-filter="node" value="tag"> Tags</label>
-            </div>
+            <div class="blog-graph-panel-content">
+                <div class="blog-graph-search">
+                    <label for="blog-graph-search">Search</label>
+                    <input id="blog-graph-search" type="search" placeholder="Article or tag" autocomplete="off">
+                </div>
 
-            <div class="blog-graph-control-group" aria-label="Edge types">
-                <span>Edges</span>
-                <label><input type="checkbox" data-filter="edge" value="internal-link" checked> Links</label>
-                <label><input type="checkbox" data-filter="edge" value="tag"> Tags</label>
-            </div>
+                <div class="blog-graph-control-group" aria-label="Node types">
+                    <span>Nodes</span>
+                    <label><input type="checkbox" data-filter="node" value="article" checked> Articles</label>
+                    <label><input type="checkbox" data-filter="node" value="tag"> Tags</label>
+                </div>
 
-            <button class="blog-graph-reset" type="button">Reset layout</button>
+                <button class="blog-graph-reset" type="button">Reset layout</button>
 
-            <div class="blog-graph-selection" aria-live="polite">
-                <strong>Blog graph</strong>
-                <span>Loading articles, tags, and links.</span>
+                <div class="blog-graph-selection" aria-live="polite">
+                    <strong>Blog graph</strong>
+                    <span>Loading articles, tags, and links.</span>
+                </div>
             </div>
         </aside>
 

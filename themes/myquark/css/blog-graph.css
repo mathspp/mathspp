@@ -11,6 +11,11 @@
   max-width: 96rem;
   min-height: calc(100vh - 6rem);
   margin: 0 auto;
+  transition: grid-template-columns .18s ease;
+}
+
+.blog-graph.is-panel-collapsed {
+  grid-template-columns: 3rem minmax(0, 1fr);
 }
 
 .blog-graph-controls {
@@ -24,6 +29,62 @@
   background: var(--bg);
   color: var(--tx);
   box-shadow: 0 12px 32px color-mix(in srgb, var(--flexoki-black) 12%, transparent);
+}
+
+.blog-graph-panel-toggle {
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+  min-height: 2.1rem;
+  border: 1px solid var(--ui-2);
+  border-radius: 6px;
+  padding: .35rem .5rem;
+  background: var(--bg-2);
+  color: var(--tx);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.blog-graph-panel-toggle:hover,
+.blog-graph-panel-toggle:focus {
+  border-color: var(--accent);
+}
+
+.blog-graph-panel-toggle-icon {
+  display: inline-block;
+  width: .55rem;
+  height: .55rem;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(225deg);
+}
+
+.blog-graph-panel-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: .9rem;
+  min-width: 0;
+}
+
+.blog-graph.is-panel-collapsed .blog-graph-controls {
+  align-items: center;
+  padding: .55rem;
+}
+
+.blog-graph.is-panel-collapsed .blog-graph-panel-toggle {
+  justify-content: center;
+  width: 100%;
+  padding: .35rem 0;
+}
+
+.blog-graph.is-panel-collapsed .blog-graph-panel-toggle-icon {
+  transform: rotate(45deg);
+}
+
+.blog-graph.is-panel-collapsed .blog-graph-panel-toggle-text,
+.blog-graph.is-panel-collapsed .blog-graph-panel-content {
+  display: none;
 }
 
 .blog-graph-search,
@@ -138,11 +199,34 @@
     min-height: calc(100vh - 4.5rem);
   }
 
+  .blog-graph.is-panel-collapsed {
+    grid-template-columns: 1fr;
+  }
+
   .blog-graph-controls {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: .65rem;
     padding: .75rem;
+  }
+
+  .blog-graph-panel-toggle {
+    grid-column: 1 / -1;
+    justify-content: space-between;
+  }
+
+  .blog-graph.is-panel-collapsed .blog-graph-controls {
+    display: block;
+    padding: .5rem;
+  }
+
+  .blog-graph.is-panel-collapsed .blog-graph-panel-toggle {
+    justify-content: space-between;
+    padding: .35rem .5rem;
+  }
+
+  .blog-graph.is-panel-collapsed .blog-graph-panel-toggle-text {
+    display: inline;
   }
 
   .blog-graph-search,
