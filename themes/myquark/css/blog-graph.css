@@ -1,7 +1,7 @@
 .blog-graph-page #body-wrapper.blog-graph-shell {
   min-height: calc(100vh - 4rem);
   padding: 4.25rem 1rem 1rem;
-  background: #f4f7f8;
+  background: var(--bg-2);
 }
 
 .blog-graph {
@@ -19,11 +19,11 @@
   gap: .9rem;
   align-self: stretch;
   padding: 1rem;
-  border: 1px solid #d4dde2;
+  border: 1px solid var(--ui-2);
   border-radius: 8px;
-  background: #ffffff;
-  color: #20272b;
-  box-shadow: 0 12px 32px rgba(32, 39, 43, .08);
+  background: var(--bg);
+  color: var(--tx);
+  box-shadow: 0 12px 32px color-mix(in srgb, var(--flexoki-black) 12%, transparent);
 }
 
 .blog-graph-search,
@@ -38,17 +38,17 @@
   font-weight: 700;
   letter-spacing: 0;
   text-transform: uppercase;
-  color: #5d6870;
+  color: var(--tx-2);
 }
 
 .blog-graph-search input {
   width: 100%;
   min-height: 2.1rem;
-  border: 1px solid #c7d2d9;
+  border: 1px solid var(--ui-2);
   border-radius: 6px;
   padding: .4rem .55rem;
-  background: #fff;
-  color: #20272b;
+  background: var(--bg);
+  color: var(--tx);
 }
 
 .blog-graph-control-group label {
@@ -64,15 +64,15 @@
   min-height: 2.1rem;
   border: 0;
   border-radius: 6px;
-  background: #2e5f73;
-  color: #fff;
+  background: var(--accent);
+  color: var(--bg);
   font-weight: 700;
   cursor: pointer;
 }
 
 .blog-graph-reset:hover,
 .blog-graph-reset:focus {
-  background: #244d5e;
+  background: var(--accent-2);
 }
 
 .blog-graph-selection {
@@ -80,7 +80,7 @@
   gap: .35rem;
   min-height: 8rem;
   margin-top: auto;
-  border-top: 1px solid #dce4e8;
+  border-top: 1px solid var(--ui);
   padding-top: .85rem;
   font-size: .82rem;
   line-height: 1.35;
@@ -91,7 +91,7 @@
 }
 
 .blog-graph-selection a {
-  color: #2e5f73;
+  color: var(--accent);
   font-weight: 700;
 }
 
@@ -99,10 +99,10 @@
   position: relative;
   overflow: hidden;
   min-height: calc(100vh - 6rem);
-  border: 1px solid #d4dde2;
+  border: 1px solid var(--ui-2);
   border-radius: 8px;
-  background: #ffffff;
-  box-shadow: 0 12px 32px rgba(32, 39, 43, .08);
+  background: var(--bg);
+  box-shadow: 0 12px 32px color-mix(in srgb, var(--flexoki-black) 12%, transparent);
 }
 
 #blog-graph-canvas {
@@ -118,8 +118,8 @@
   max-width: min(24rem, calc(100% - 1.5rem));
   border-radius: 6px;
   padding: .4rem .55rem;
-  background: rgba(32, 39, 43, .84);
-  color: #fff;
+  background: color-mix(in srgb, var(--tx) 88%, transparent);
+  color: var(--bg);
   font-size: .78rem;
   pointer-events: none;
 }

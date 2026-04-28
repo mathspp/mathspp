@@ -23,6 +23,15 @@
     status.textContent = message || "";
   }
 
+  function themeColor(name) {
+    const probe = document.createElement("span");
+    probe.style.color = `var(${name})`;
+    root.appendChild(probe);
+    const color = getComputedStyle(probe).color;
+    probe.remove();
+    return color;
+  }
+
   function selectedValues(inputs) {
     return new Set(inputs.filter((input) => input.checked).map((input) => input.value));
   }
@@ -80,22 +89,141 @@
 
     const visibleArticles = cy.nodes('[type = "article"]').filter((node) => node.visible()).length;
     const visibleTags = cy.nodes('[type = "tag"]').filter((node) => node.visible()).length;
+    const visibleElements = cy.elements().filter((element) => element.visible());
+    if (visibleElements.length) {
+      cy.fit(visibleElements, 64);
+    }
     setStatus(`${visibleArticles} articles and ${visibleTags} tags visible.`);
   }
 
+  function layoutBox() {
+    const width = Math.max(canvas.clientWidth * 3.2, 3000);
+    const height = Math.max(canvas.clientHeight * 3.2, 2200);
+    return { x1: 0, y1: 0, w: width, h: height };
+  }
+
   function runLayout() {
-    cy.layout({
+    const visibleElements = cy.elements().filter((element) => element.visible());
+    visibleElements.layout({
       name: "cose",
-      animate: true,
-      animationDuration: 450,
+      animate: "end",
+      animationDuration: 500,
       fit: true,
-      padding: 36,
-      nodeRepulsion: 6500,
-      idealEdgeLength: 120,
-      edgeElasticity: 80,
-      gravity: 0.22,
-      numIter: 900,
+      padding: 64,
+      randomize: true,
+      componentSpacing: 160,
+      nodeOverlap: 48,
+      nodeRepulsion: 520000,
+      idealEdgeLength: 190,
+      edgeElasticity: 45,
+      nestingFactor: 0.12,
+      gravity: 0.04,
+      numIter: 1800,
+      initialTemp: 900,
+      coolingFactor: 0.94,
+      minTemp: 1,
+      boundingBox: layoutBox(),
     }).run();
+  }
+
+  function buildColors() {
+    return {
+      bg: themeColor("--bg"),
+      tx: themeColor("--tx"),
+      tx2: themeColor("--tx-2"),
+      accent2: themeColor("--accent-2"),
+      blue: themeColor("--bl"),
+      cyan: themeColor("--cy"),
+      yellow: themeColor("--ye"),
+      red: themeColor("--re"),
+    };
+  }
+
+  function graphStyles(colors) {
+    return [
+      {
+        selector: "node",
+        style: {
+          label: "data(label)",
+          "font-size": 10,
+          "text-max-width": 120,
+          "text-wrap": "wrap",
+          "text-valign": "bottom",
+          "text-halign": "center",
+          "text-margin-y": 7,
+          "min-zoomed-font-size": 8,
+          color: colors.tx,
+          "text-background-color": colors.bg,
+          "text-background-opacity": 0.72,
+          "text-background-padding": 2,
+          "background-color": colors.cyan,
+          "border-color": colors.bg,
+          "border-width": 2,
+          width: 22,
+          height: 22,
+        },
+      },
+      {
+        selector: 'node[type = "article"]',
+        style: {
+          shape: "round-rectangle",
+          width: 34,
+          height: 18,
+          "background-color": colors.blue,
+        },
+      },
+      {
+        selector: 'node[type = "tag"]',
+        style: {
+          shape: "ellipse",
+          width: 20,
+          height: 20,
+          "background-color": colors.yellow,
+        },
+      },
+      {
+        selector: "edge",
+        style: {
+          width: 1,
+          "curve-style": "bezier",
+          "target-arrow-shape": "triangle",
+          "target-arrow-color": colors.tx2,
+          "line-color": colors.tx2,
+          opacity: 0.42,
+        },
+      },
+      {
+        selector: 'edge[type = "tag"]',
+        style: {
+          "target-arrow-shape": "none",
+          "line-color": colors.yellow,
+          width: 0.75,
+          opacity: 0.16,
+        },
+      },
+      {
+        selector: 'edge[type = "internal-link"]',
+        style: {
+          "line-color": colors.accent2,
+          "target-arrow-color": colors.accent2,
+          opacity: 0.5,
+        },
+      },
+      {
+        selector: "node:selected",
+        style: {
+          "border-color": colors.red,
+          "border-width": 4,
+        },
+      },
+      {
+        selector: "edge:selected",
+        style: {
+          width: 3,
+          opacity: 1,
+        },
+      },
+    ];
   }
 
   function updateSelection(data) {
@@ -125,6 +253,7 @@
 
   function initCytoscape(data) {
     graph = data;
+
     cy = cytoscape({
       container: canvas,
       elements: {
@@ -132,87 +261,11 @@
         edges: graph.edges,
       },
       minZoom: 0.08,
-      maxZoom: 3,
-      wheelSensitivity: 0.18,
-      style: [
-        {
-          selector: "node",
-          style: {
-            label: "data(label)",
-            "font-size": 10,
-            "text-max-width": 120,
-            "text-wrap": "wrap",
-            "text-valign": "bottom",
-            "text-halign": "center",
-            "text-margin-y": 5,
-            color: "#20272b",
-            "background-color": "#8fb7a8",
-            "border-color": "#ffffff",
-            "border-width": 2,
-            width: 28,
-            height: 28,
-          },
-        },
-        {
-          selector: 'node[type = "article"]',
-          style: {
-            shape: "round-rectangle",
-            width: 42,
-            height: 24,
-            "background-color": "#2e5f73",
-          },
-        },
-        {
-          selector: 'node[type = "tag"]',
-          style: {
-            shape: "ellipse",
-            width: 24,
-            height: 24,
-            "background-color": "#d59a3d",
-          },
-        },
-        {
-          selector: "edge",
-          style: {
-            width: 1.25,
-            "curve-style": "bezier",
-            "target-arrow-shape": "triangle",
-            "target-arrow-color": "#6f756f",
-            "line-color": "#6f756f",
-            opacity: 0.55,
-          },
-        },
-        {
-          selector: 'edge[type = "tag"]',
-          style: {
-            "target-arrow-shape": "none",
-            "line-color": "#d59a3d",
-            opacity: 0.28,
-          },
-        },
-        {
-          selector: 'edge[type = "internal-link"]',
-          style: {
-            "line-color": "#2e5f73",
-            "target-arrow-color": "#2e5f73",
-            opacity: 0.62,
-          },
-        },
-        {
-          selector: "node:selected",
-          style: {
-            "border-color": "#b64b3a",
-            "border-width": 4,
-          },
-        },
-        {
-          selector: "edge:selected",
-          style: {
-            width: 3,
-            opacity: 1,
-          },
-        },
-      ],
+      maxZoom: 4,
+      wheelSensitivity: 0.14,
+      hideEdgesOnViewport: true,
+      textureOnViewport: true,
+      style: graphStyles(buildColors()),
     });
 
     cy.on("tap", "node", function (event) {
@@ -230,9 +283,16 @@
       }
     });
 
-    runLayout();
     applyFilters();
+    runLayout();
     updateSelection(null);
+
+    new MutationObserver(function () {
+      cy.style().fromJson(graphStyles(buildColors())).update();
+    }).observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"],
+    });
   }
 
   fetch(graphUrl)
@@ -247,9 +307,13 @@
       setStatus(`Could not load graph data: ${error.message}`);
     });
 
-  [search].concat(nodeFilters, edgeFilters).forEach(function (input) {
-    input.addEventListener("input", applyFilters);
-    input.addEventListener("change", applyFilters);
+  search.addEventListener("input", applyFilters);
+
+  nodeFilters.concat(edgeFilters).forEach(function (input) {
+    input.addEventListener("change", function () {
+      applyFilters();
+      runLayout();
+    });
   });
 
   resetButton.addEventListener("click", function () {
