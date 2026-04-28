@@ -96,6 +96,27 @@
     setStatus(`${visibleArticles} articles and ${visibleTags} tags visible.`);
   }
 
+  function clearFocus() {
+    if (!cy) {
+      return;
+    }
+    cy.elements().removeClass("dimmed focused-neighborhood");
+  }
+
+  function focusNeighborhood(node) {
+    const visibleEdges = node.connectedEdges().filter((edge) => edge.visible());
+    const neighborhood = node
+      .union(visibleEdges)
+      .union(visibleEdges.connectedNodes())
+      .filter((element) => element.visible());
+
+    cy.batch(function () {
+      clearFocus();
+      cy.elements().filter((element) => element.visible()).addClass("dimmed");
+      neighborhood.removeClass("dimmed").addClass("focused-neighborhood");
+    });
+  }
+
   function layoutBox() {
     const width = Math.max(canvas.clientWidth * 3.2, 3000);
     const height = Math.max(canvas.clientHeight * 3.2, 2200);
@@ -217,6 +238,26 @@
         },
       },
       {
+        selector: ".dimmed",
+        style: {
+          opacity: 0.25,
+          "text-opacity": 0.25,
+        },
+      },
+      {
+        selector: "edge.dimmed",
+        style: {
+          opacity: 0.12,
+        },
+      },
+      {
+        selector: ".focused-neighborhood",
+        style: {
+          opacity: 1,
+          "text-opacity": 1,
+        },
+      },
+      {
         selector: "edge:selected",
         style: {
           width: 3,
@@ -269,7 +310,9 @@
     });
 
     cy.on("tap", "node", function (event) {
-      updateSelection(event.target.data());
+      const node = event.target;
+      focusNeighborhood(node);
+      updateSelection(node.data());
     });
     cy.on("dbltap", "node", function (event) {
       const url = absoluteUrl(event.target.data("url"));
@@ -279,6 +322,7 @@
     });
     cy.on("tap", function (event) {
       if (event.target === cy) {
+        clearFocus();
         updateSelection(null);
       }
     });
@@ -307,10 +351,15 @@
       setStatus(`Could not load graph data: ${error.message}`);
     });
 
-  search.addEventListener("input", applyFilters);
+  search.addEventListener("input", function () {
+    clearFocus();
+    applyFilters();
+    updateSelection(null);
+  });
 
   nodeFilters.concat(edgeFilters).forEach(function (input) {
     input.addEventListener("change", function () {
+      clearFocus();
       applyFilters();
       runLayout();
     });
@@ -318,6 +367,7 @@
 
   resetButton.addEventListener("click", function () {
     if (cy) {
+      clearFocus();
       applyFilters();
       runLayout();
     }
