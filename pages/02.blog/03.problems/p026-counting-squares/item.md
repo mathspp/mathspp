@@ -133,4 +133,4 @@ Let me know in the comments how it goes!
 problems sent straight to your inbox and to add your reaction below.
 
 [subscribe]: https://mathspp.com/subscribe
-[sol]: ../../solutions/{{ page.slug }}
+

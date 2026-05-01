@@ -82,4 +82,4 @@ follow the instructions above, except we start by swapping all occurrences of
 problems sent straight to your inbox and to add your reaction below.
 
 [subscribe]: https://mathspp.com/subscribe
-[sol]: ../../solutions/{{ page.slug }}
+

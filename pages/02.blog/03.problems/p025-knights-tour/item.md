@@ -104,5 +104,5 @@ You can test out this strategy by playing against the computer [here][game].
 [Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly
 problems sent straight to your inbox and to add your reaction below.
 
-[sol]: ../../solutions/{{ page.slug }}
+
 [subscribe]: https://mathspp.com/subscribe

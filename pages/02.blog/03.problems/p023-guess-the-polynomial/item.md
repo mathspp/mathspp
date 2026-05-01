@@ -235,5 +235,5 @@ you can always [ask WolframAlpha][wa-convert].
 problems sent straight to your inbox and to add your reaction below.
 
 [MathGurl]: https://www.youtube.com/channel/UC5RV_s1Jh-jQI4HfexEIb2Q
-[sol]: ../../solutions/{{ page.slug }}
+
 [subscribe]: https://mathspp.com/subscribe

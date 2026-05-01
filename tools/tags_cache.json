@@ -3,7 +3,7 @@
     "articles": 449,
     "code_snippets": 4159,
     "loc": 39535,
-    "words": 484612
+    "words": 484568
   },
   "bpci": {
     "articles": 10,
@@ -69,7 +69,7 @@
     "articles": 8,
     "code_snippets": 82,
     "loc": 916,
-    "words": 12000
+    "words": 11996
   },
   "pygame": {
     "articles": 14,
@@ -87,13 +87,13 @@
     "articles": 127,
     "code_snippets": 449,
     "loc": 4449,
-    "words": 112417
+    "words": 112377
   },
   "number theory": {
     "articles": 8,
     "code_snippets": 0,
     "loc": 0,
-    "words": 4408
+    "words": 4404
   },
   "primes": {
     "articles": 3,
@@ -123,7 +123,7 @@
     "articles": 6,
     "code_snippets": 12,
     "loc": 355,
-    "words": 4495
+    "words": 4491
   },
   "simulation": {
     "articles": 4,
@@ -171,7 +171,7 @@
     "articles": 8,
     "code_snippets": 38,
     "loc": 450,
-    "words": 15646
+    "words": 15642
   },
   "visualisation": {
     "articles": 19,
@@ -237,7 +237,7 @@
     "articles": 34,
     "code_snippets": 89,
     "loc": 737,
-    "words": 28283
+    "words": 28279
   },
   "sequences": {
     "articles": 5,
@@ -267,7 +267,7 @@
     "articles": 20,
     "code_snippets": 34,
     "loc": 427,
-    "words": 12562
+    "words": 12554
   },
   "haskell": {
     "articles": 2,
@@ -279,13 +279,13 @@
     "articles": 9,
     "code_snippets": 19,
     "loc": 135,
-    "words": 6808
+    "words": 6796
   },
   "modular arithmetic": {
     "articles": 7,
     "code_snippets": 31,
     "loc": 242,
-    "words": 7402
+    "words": 7398
   },
   "nnfwp": {
     "articles": 6,
@@ -321,13 +321,13 @@
     "articles": 2,
     "code_snippets": 22,
     "loc": 258,
-    "words": 4831
+    "words": 4827
   },
   "combinatorics": {
     "articles": 22,
     "code_snippets": 68,
     "loc": 635,
-    "words": 19462
+    "words": 19442
   },
   "arithmetic": {
     "articles": 9,
@@ -363,7 +363,7 @@
     "articles": 6,
     "code_snippets": 33,
     "loc": 392,
-    "words": 4434
+    "words": 4430
   },
   "set theory": {
     "articles": 1,
@@ -483,7 +483,7 @@
     "articles": 6,
     "code_snippets": 0,
     "loc": 0,
-    "words": 5937
+    "words": 5929
   },
   "induction": {
     "articles": 6,
@@ -495,7 +495,7 @@
     "articles": 7,
     "code_snippets": 3,
     "loc": 25,
-    "words": 3616
+    "words": 3612
   },
   "group theory": {
     "articles": 1,
@@ -507,7 +507,7 @@
     "articles": 1,
     "code_snippets": 0,
     "loc": 0,
-    "words": 1203
+    "words": 1199
   },
   "topology": {
     "articles": 1,

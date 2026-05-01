@@ -193,6 +193,6 @@ I hope my explanation was clear!
 [Don't forget to subscribe to the newsletter][subscribe] to get bi-weekly
 problems sent straight to your inbox and to add your reaction below.
 
-[sol]: ../../solutions/{{ page.slug }}
+
 [subscribe]: https://mathspp.com/subscribe
 [LeafarCoder]: https://github.com/LeafarCoder

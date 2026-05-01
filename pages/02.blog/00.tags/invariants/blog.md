@@ -14,10 +14,10 @@ hero_image_url: /user/themes/myquark/images/common_hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 metadata:
     author: Rodrigo Girão Serrão
-    description: "All of the mathspp blog articles about invariants."
-    og:description: "All of the mathspp blog articles about invariants."
-    og:image: "https://mathspp.com/blog/tags/invariants/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/invariants/thumbnail.webp"
+    description: "All of the mathspp blog articles about Invariants."
+    og:description: "All of the mathspp blog articles about Invariants."
+    og:image: "https://mathspp.com/blog/tags/Invariants/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/Invariants/thumbnail.webp"
 title: "Invariants blog articles"
 ---
 
@@ -29,7 +29,7 @@ title: "Invariants blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">7</th>
-            <th style="text-align: center;">3,616</th>
+            <th style="text-align: center;">3,612</th>
             <th style="text-align: center;">25</th>
         </tr>
     </thead>

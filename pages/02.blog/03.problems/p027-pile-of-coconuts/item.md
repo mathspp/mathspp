@@ -194,4 +194,4 @@ Here's the session code:
 ```
 
 [subscribe]: https://mathspp.com/subscribe
-[sol]: ../../solutions/{{ page.slug }}
+

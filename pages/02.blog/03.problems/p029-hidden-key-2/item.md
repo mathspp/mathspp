@@ -105,5 +105,5 @@ then we flip the coin of the top left box.
 problems sent straight to your inbox and to add your reaction below.
 
 [subscribe]: https://mathspp.com/subscribe
-[sol]: ../../solutions/{{ page.slug }}
+
 [p28]: /blog/problems/hidden-key

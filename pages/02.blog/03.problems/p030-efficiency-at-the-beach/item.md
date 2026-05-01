@@ -69,5 +69,5 @@ problems sent straight to your inbox and to add your reaction below.
 
 [email]: mailto:rodrigo@mathspp.com?subject=Solution%20to%20{{ page.title|regex_replace(['/ /'], ['%20']) }}
 [subscribe]: https://mathspp.com/subscribe
-[sol]: ../../solutions/{{ page.slug }}
+
 
