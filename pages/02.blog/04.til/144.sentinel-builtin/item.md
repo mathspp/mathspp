@@ -12,7 +12,7 @@ Python 3.15 ships with a new built-in `sentinel` that can be used to create new 
 MISSING
 ```
 
-Before this PEP, the most common sentinel idiom used the built-in `object`:
+Before this built-in was added, the most common sentinel idiom used the built-in `object`:
 
 ```py
 MISSING = object()

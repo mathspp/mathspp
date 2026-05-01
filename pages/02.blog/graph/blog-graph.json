@@ -1482,6 +1482,14 @@
     },
     {
       "data": {
+        "id": "internal-link:article:hidden-key-2->article:hidden-key",
+        "source": "article:hidden-key-2",
+        "target": "article:hidden-key",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
         "id": "internal-link:article:hold-my-parentheses-light-now-with-zero-sugar->article:dunder-methods",
         "source": "article:hold-my-parentheses-light-now-with-zero-sugar",
         "target": "article:dunder-methods",
@@ -1778,9 +1786,97 @@
     },
     {
       "data": {
+        "id": "internal-link:article:lsbasi-apl-part1->article:lsbasi-apl-part2",
+        "source": "article:lsbasi-apl-part1",
+        "target": "article:lsbasi-apl-part2",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:lsbasi-apl-part1->article:lsbasi-apl-part3",
+        "source": "article:lsbasi-apl-part1",
+        "target": "article:lsbasi-apl-part3",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:lsbasi-apl-part1->article:lsbasi-apl-part4",
+        "source": "article:lsbasi-apl-part1",
+        "target": "article:lsbasi-apl-part4",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
         "id": "internal-link:article:lsbasi-apl-part2->article:lsbasi-apl-part1",
         "source": "article:lsbasi-apl-part2",
         "target": "article:lsbasi-apl-part1",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:lsbasi-apl-part2->article:lsbasi-apl-part3",
+        "source": "article:lsbasi-apl-part2",
+        "target": "article:lsbasi-apl-part3",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:lsbasi-apl-part2->article:lsbasi-apl-part4",
+        "source": "article:lsbasi-apl-part2",
+        "target": "article:lsbasi-apl-part4",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:lsbasi-apl-part3->article:lsbasi-apl-part1",
+        "source": "article:lsbasi-apl-part3",
+        "target": "article:lsbasi-apl-part1",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:lsbasi-apl-part3->article:lsbasi-apl-part2",
+        "source": "article:lsbasi-apl-part3",
+        "target": "article:lsbasi-apl-part2",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:lsbasi-apl-part3->article:lsbasi-apl-part4",
+        "source": "article:lsbasi-apl-part3",
+        "target": "article:lsbasi-apl-part4",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:lsbasi-apl-part4->article:lsbasi-apl-part1",
+        "source": "article:lsbasi-apl-part4",
+        "target": "article:lsbasi-apl-part1",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:lsbasi-apl-part4->article:lsbasi-apl-part2",
+        "source": "article:lsbasi-apl-part4",
+        "target": "article:lsbasi-apl-part2",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:lsbasi-apl-part4->article:lsbasi-apl-part3",
+        "source": "article:lsbasi-apl-part4",
+        "target": "article:lsbasi-apl-part3",
         "type": "internal-link"
       }
     },
@@ -2477,6 +2573,14 @@
         "id": "internal-link:article:secret-santa-draw-with-python->article:list-comprehensions-101",
         "source": "article:secret-santa-draw-with-python",
         "target": "article:list-comprehensions-101",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:sentinel-builtin->article:str-and-repr",
+        "source": "article:sentinel-builtin",
+        "target": "article:str-and-repr",
         "type": "internal-link"
       }
     },
@@ -12058,6 +12162,22 @@
     },
     {
       "data": {
+        "id": "tag:article:sentinel-builtin->tag:programming",
+        "source": "article:sentinel-builtin",
+        "target": "tag:programming",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:sentinel-builtin->tag:python",
+        "source": "article:sentinel-builtin",
+        "target": "tag:python",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
         "id": "tag:article:sentinel-value-for-default-arguments->tag:programming",
         "source": "article:sentinel-value-for-default-arguments",
         "target": "tag:programming",
@@ -14033,7 +14153,7 @@
       }
     }
   ],
-  "generated_at": "2026-04-28T16:44:07+00:00",
+  "generated_at": "2026-05-01T19:18:49+00:00",
   "nodes": [
     {
       "data": {
@@ -17939,6 +18059,21 @@
     },
     {
       "data": {
+        "date": "01-05-2026 19:49",
+        "id": "article:sentinel-builtin",
+        "label": "TIL #144 \u2013 Sentinel built-in",
+        "slug": "sentinel-builtin",
+        "tags": [
+          "programming",
+          "python"
+        ],
+        "title": "TIL #144 \u2013 Sentinel built-in",
+        "type": "article",
+        "url": "/blog/til/sentinel-builtin"
+      }
+    },
+    {
+      "data": {
         "date": "26-08-2022",
         "id": "article:3-different-ways-to-create-a-dictionary",
         "label": "3 different ways to create a dictionary",
@@ -21582,18 +21717,18 @@
     },
     {
       "data": {
-        "id": "tag:llm",
-        "label": "llm",
-        "tag": "llm",
+        "id": "tag:LLM",
+        "label": "LLM",
+        "tag": "LLM",
         "type": "tag",
         "url": "/blog/tags/llm"
       }
     },
     {
       "data": {
-        "id": "tag:LLM",
-        "label": "LLM",
-        "tag": "LLM",
+        "id": "tag:llm",
+        "label": "llm",
+        "tag": "llm",
         "type": "tag",
         "url": "/blog/tags/llm"
       }
@@ -22105,9 +22240,9 @@
   ],
   "site": "https://mathspp.com",
   "stats": {
-    "articles": 447,
-    "internal_links": 380,
-    "tag_edges": 1374,
+    "articles": 448,
+    "internal_links": 393,
+    "tag_edges": 1376,
     "tags": 98
   }
 }
