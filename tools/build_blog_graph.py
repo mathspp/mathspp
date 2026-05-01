@@ -13,6 +13,7 @@ import json
 import tempfile
 from dataclasses import dataclass
 from datetime import datetime, timezone
+from math import sqrt
 from pathlib import Path
 from urllib.parse import unquote, urlparse
 
@@ -175,6 +176,42 @@ def tag_url(tag: str) -> str:
     return "/blog/tags/" + tag.lower().replace(" ", "-")
 
 
+def node_size_for_degree(degree: int) -> int:
+    return min(78, round(18 + sqrt(degree) * 5.5))
+
+
+def annotate_node_degrees(nodes: list[dict], edges: list[dict]) -> None:
+    degrees = {node["data"]["id"]: 0 for node in nodes}
+    internal_link_degrees = {node["data"]["id"]: 0 for node in nodes}
+    tag_degrees = {node["data"]["id"]: 0 for node in nodes}
+
+    for edge in edges:
+        edge_data = edge["data"]
+        source = edge_data["source"]
+        target = edge_data["target"]
+        edge_type = edge_data["type"]
+        degrees[source] += 1
+        degrees[target] += 1
+        if edge_type == "internal-link":
+            internal_link_degrees[source] += 1
+            internal_link_degrees[target] += 1
+        elif edge_type == "tag":
+            tag_degrees[source] += 1
+            tag_degrees[target] += 1
+
+    for node in nodes:
+        node_data = node["data"]
+        node_id = node_data["id"]
+        degree = degrees[node_id]
+        node_size = node_size_for_degree(degree)
+        node_data["degree"] = degree
+        node_data["internal_link_degree"] = internal_link_degrees[node_id]
+        node_data["tag_degree"] = tag_degrees[node_id]
+        node_data["size"] = node_size
+        node_data["width"] = round(node_size * 1.45) if node_data["type"] == "article" else node_size
+        node_data["height"] = node_size
+
+
 def build_graph(blog_folder: Path = BLOG_FOLDER) -> dict:
     articles = find_articles(blog_folder)
     articles_by_url = {}
@@ -258,11 +295,14 @@ def build_graph(blog_folder: Path = BLOG_FOLDER) -> dict:
             }
             edges_by_id[edge["data"]["id"]] = edge
 
+    edges = sorted(edges_by_id.values(), key=lambda edge: edge["data"]["id"])
+    annotate_node_degrees(nodes, edges)
+
     graph = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "site": SITE_ORIGIN,
         "nodes": nodes,
-        "edges": sorted(edges_by_id.values(), key=lambda edge: edge["data"]["id"]),
+        "edges": edges,
         "stats": {
             "articles": len(articles),
             "tags": len(tags),
@@ -373,7 +413,12 @@ def run_self_tests() -> None:
         internal_targets = {edge["data"]["target"] for edge in internal_edges}
         assert internal_targets == {"article:target", "article:canonical-target"}
         assert all(edge["data"]["source"] == "article:source" for edge in internal_edges)
-        assert "article:draft" not in {node["data"]["id"] for node in graph["nodes"]}
+        nodes_by_id = {node["data"]["id"]: node for node in graph["nodes"]}
+        assert "article:draft" not in nodes_by_id
+        assert nodes_by_id["article:source"]["data"]["degree"] == 4
+        assert nodes_by_id["article:source"]["data"]["internal_link_degree"] == 2
+        assert nodes_by_id["article:source"]["data"]["tag_degree"] == 2
+        assert nodes_by_id["article:source"]["data"]["size"] > nodes_by_id["article:target"]["data"]["size"]
 
 
 def parse_args() -> argparse.Namespace:

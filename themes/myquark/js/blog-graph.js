@@ -187,16 +187,14 @@
           "background-color": colors.cyan,
           "border-color": colors.bg,
           "border-width": 2,
-          width: 22,
-          height: 22,
+          width: "data(width)",
+          height: "data(height)",
         },
       },
       {
         selector: 'node[type = "article"]',
         style: {
           shape: "round-rectangle",
-          width: 34,
-          height: 18,
           "background-color": colors.blue,
         },
       },
@@ -204,8 +202,6 @@
         selector: 'node[type = "tag"]',
         style: {
           shape: "ellipse",
-          width: 20,
-          height: 20,
           "background-color": colors.yellow,
         },
       },
