@@ -28,14 +28,14 @@ title: "Matplotlib blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">1</th>
-            <th style="text-align: center;">11,280</th>
-            <th style="text-align: center;">488</th>
+            <th style="text-align: center;">2</th>
+            <th style="text-align: center;">11,625</th>
+            <th style="text-align: center;">567</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td style="text-align: center;">article</td>
+            <td style="text-align: center;">articles</td>
             <td style="text-align: center;">words</td>
             <td style="text-align: center;">lines of code</td>
         </tr>

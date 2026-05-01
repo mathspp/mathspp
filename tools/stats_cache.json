@@ -4524,10 +4524,11 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/055.xkcd-plots": {
-    "timestamp": 1753280901.7094395,
+    "timestamp": 1777664908.3052495,
     "tags": [
       "programming",
-      "python"
+      "python",
+      "matplotlib"
     ],
     "stats": {
       "articles": 1,

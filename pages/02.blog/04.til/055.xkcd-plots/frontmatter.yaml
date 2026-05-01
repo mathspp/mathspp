@@ -16,5 +16,6 @@ taxonomy:
     tag:
       - programming
       - python
+      - matplotlib
 title: "TIL #055 – xkcd plots"
 visible: false

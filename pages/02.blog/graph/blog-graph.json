@@ -14066,6 +14066,14 @@
     },
     {
       "data": {
+        "id": "tag:article:xkcd-plots->tag:matplotlib",
+        "source": "article:xkcd-plots",
+        "target": "tag:matplotlib",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
         "id": "tag:article:xkcd-plots->tag:programming",
         "source": "article:xkcd-plots",
         "target": "tag:programming",
@@ -14153,7 +14161,7 @@
       }
     }
   ],
-  "generated_at": "2026-05-01T19:44:35+00:00",
+  "generated_at": "2026-05-01T19:48:44+00:00",
   "nodes": [
     {
       "data": {
@@ -17608,22 +17616,23 @@
     {
       "data": {
         "date": "03-03-2023",
-        "degree": 2,
-        "height": 26,
+        "degree": 3,
+        "height": 28,
         "id": "article:xkcd-plots",
         "internal_link_degree": 0,
         "label": "TIL #055 \u2013 xkcd plots",
-        "size": 26,
+        "size": 28,
         "slug": "xkcd-plots",
-        "tag_degree": 2,
+        "tag_degree": 3,
         "tags": [
           "programming",
-          "python"
+          "python",
+          "matplotlib"
         ],
         "title": "TIL #055 \u2013 xkcd plots",
         "type": "article",
         "url": "/blog/til/xkcd-plots",
-        "width": 38
+        "width": 41
       }
     },
     {
@@ -24645,21 +24654,6 @@
     },
     {
       "data": {
-        "degree": 8,
-        "height": 34,
-        "id": "tag:llm",
-        "internal_link_degree": 0,
-        "label": "llm",
-        "size": 34,
-        "tag": "llm",
-        "tag_degree": 8,
-        "type": "tag",
-        "url": "/blog/tags/llm",
-        "width": 34
-      }
-    },
-    {
-      "data": {
         "degree": 1,
         "height": 24,
         "id": "tag:LLM",
@@ -24671,6 +24665,21 @@
         "type": "tag",
         "url": "/blog/tags/llm",
         "width": 24
+      }
+    },
+    {
+      "data": {
+        "degree": 8,
+        "height": 34,
+        "id": "tag:llm",
+        "internal_link_degree": 0,
+        "label": "llm",
+        "size": 34,
+        "tag": "llm",
+        "tag_degree": 8,
+        "type": "tag",
+        "url": "/blog/tags/llm",
+        "width": 34
       }
     },
     {
@@ -24750,17 +24759,17 @@
     },
     {
       "data": {
-        "degree": 1,
-        "height": 24,
+        "degree": 2,
+        "height": 26,
         "id": "tag:matplotlib",
         "internal_link_degree": 0,
         "label": "matplotlib",
-        "size": 24,
+        "size": 26,
         "tag": "matplotlib",
-        "tag_degree": 1,
+        "tag_degree": 2,
         "type": "tag",
         "url": "/blog/tags/matplotlib",
-        "width": 24
+        "width": 26
       }
     },
     {
@@ -25518,7 +25527,7 @@
   "stats": {
     "articles": 448,
     "internal_links": 393,
-    "tag_edges": 1376,
+    "tag_edges": 1377,
     "tags": 98
   }
 }
