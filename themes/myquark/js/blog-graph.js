@@ -264,13 +264,6 @@
           "text-opacity": 1,
         },
       },
-      {
-        selector: "edge:selected",
-        style: {
-          width: 3,
-          opacity: 1,
-        },
-      },
     ];
   }
 
@@ -315,6 +308,7 @@
       textureOnViewport: true,
       style: graphStyles(buildColors()),
     });
+    cy.edges().unselectify();
 
     cy.on("tap", "node", function (event) {
       const node = event.target;
