@@ -29,3 +29,12 @@ repos:
         files: '^pages/02\.blog/.*item.*$|^pages/02\.blog/.*frontmatter.*$'
         stages: [pre-commit]
         pass_filenames: false
+
+      - id: build-blog-graph
+        name: Build blog graph
+        description: "Regenerates the blog graph data when blog posts or frontmatter change."
+        entry: bash -c "uv run tools/build_blog_graph.py && git add pages/02.blog/graph/blog-graph.json"
+        language: system
+        files: '^pages/02\.blog/.*item.*$|^pages/02\.blog/.*frontmatter.*$'
+        stages: [pre-commit]
+        pass_filenames: false
