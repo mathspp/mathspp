@@ -3,7 +3,7 @@
     "articles": 449,
     "code_snippets": 4159,
     "loc": 39535,
-    "words": 484568
+    "words": 484688
   },
   "bpci": {
     "articles": 10,
@@ -21,19 +21,19 @@
     "articles": 16,
     "code_snippets": 408,
     "loc": 5986,
-    "words": 35212
+    "words": 35332
   },
   "programming": {
     "articles": 325,
     "code_snippets": 4015,
     "loc": 38334,
-    "words": 391492
+    "words": 391612
   },
   "python": {
     "articles": 320,
     "code_snippets": 3897,
     "loc": 37243,
-    "words": 390390
+    "words": 390510
   },
   "LLM": {
     "articles": 1,
@@ -141,7 +141,7 @@
     "articles": 16,
     "code_snippets": 254,
     "loc": 2672,
-    "words": 31106
+    "words": 31226
   },
   "networking": {
     "articles": 5,
@@ -381,7 +381,7 @@
     "articles": 4,
     "code_snippets": 71,
     "loc": 1651,
-    "words": 10889
+    "words": 11009
   },
   "modules": {
     "articles": 13,

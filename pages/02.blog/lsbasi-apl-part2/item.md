@@ -793,14 +793,13 @@ Feel free to ping me in the comments or over email
 if you'd like an estimate of when the next article is being published :)
 Until then, here is a list with all the articles in the series:
 
-<ul>
-{% for post in taxonomy.findTaxonomy({"tag": ["lsbasi-apl"]}) %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
+ 1. [Let's build a simple interpreter for APL - part 1](/blog/lsbasi-apl-part1)
+ 2. [Let's build a simple interpreter for APL - part 2](/blog/lsbasi-apl-part2)
+ 3. [Let's build a simple interpreter for APL - part 3 - the array model](/blog/lsbasi-apl-part3)
+ 4. [Let's build a simple interpreter for APL - part 4](/blog/lsbasi-apl-part4)
 
 
-[previous]: https://mathspp.com/blog/lsbasi-apl-part1
+[previous]: /blog/lsbasi-apl-part1
 [apl-wiki]: https://aplwiki.com/
 [apl-wiki-op]: https://aplwiki.com/wiki/Operator
 [apl-wiki-trains]: https://aplwiki.com/wiki/Tacit_programming#Trains

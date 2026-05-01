@@ -1230,18 +1230,17 @@ Feel free to ping me in the comments or over email
 if you'd like an estimate of when the next article is being published :)
 Until then, here is a list with all the articles in the series:
 
-<ul>
-{% for post in taxonomy.findTaxonomy({"tag": ["lsbasi-apl"]}) %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
+ 1. [Let's build a simple interpreter for APL - part 1](/blog/lsbasi-apl-part1)
+ 2. [Let's build a simple interpreter for APL - part 2](/blog/lsbasi-apl-part2)
+ 3. [Let's build a simple interpreter for APL - part 3 - the array model](/blog/lsbasi-apl-part3)
+ 4. [Let's build a simple interpreter for APL - part 4](/blog/lsbasi-apl-part4)
 
 
 [changes]: https://github.com/RodrigoGiraoSerrao/RGSPL/compare/v0.2...v0.3
 [testing]: https://github.com/RodrigoGiraoSerrao/RGSPL/blob/v0.3/testing.py
 
 [rgspl3]: https://github.com/RodrigoGiraoSerrao/RGSPL/releases/tag/v0.3
-[previous]: ../lsbasi-apl-part2
+[previous]: /blog/lsbasi-apl-part2
 [rgspl-repo]: https://github.com/RodrigoGiraoSerrao/RGSPL
 [lsbasi]: https://ruslanspivak.com/lsbasi-part1/
 

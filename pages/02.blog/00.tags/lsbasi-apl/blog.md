@@ -14,10 +14,10 @@ hero_image_url: /user/themes/myquark/images/common_hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 metadata:
     author: Rodrigo Girão Serrão
-    description: "All of the mathspp blog articles about lsbasi-apl."
-    og:description: "All of the mathspp blog articles about lsbasi-apl."
-    og:image: "https://mathspp.com/blog/tags/lsbasi-apl/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/lsbasi-apl/thumbnail.webp"
+    description: "All of the mathspp blog articles about Lsbasi-apl."
+    og:description: "All of the mathspp blog articles about Lsbasi-apl."
+    og:image: "https://mathspp.com/blog/tags/Lsbasi-apl/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/Lsbasi-apl/thumbnail.webp"
 title: "Lsbasi-apl blog articles"
 ---
 
@@ -29,7 +29,7 @@ title: "Lsbasi-apl blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">4</th>
-            <th style="text-align: center;">10,889</th>
+            <th style="text-align: center;">11,009</th>
             <th style="text-align: center;">1,651</th>
         </tr>
     </thead>
