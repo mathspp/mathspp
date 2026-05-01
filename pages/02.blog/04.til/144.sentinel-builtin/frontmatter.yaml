@@ -1,0 +1,19 @@
+date: 01-05-2026 19:49
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned Python 3.15 will get a new sentinel built-in."
+    og:image: "https://mathspp.com/blog/til/sentinel-builtin/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/sentinel-builtin/thumbnail.webp"
+references:
+  - "PEP 661, Sentinel Values, <https://peps.python.org/pep-0661/> [last visited 01-05-2026];"
+routes:
+    aliases:
+        - "/blog/til/144"
+slug: "sentinel-builtin"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - programming
+      - python
+title: "TIL #144 – Sentinel built-in"
+visible: false

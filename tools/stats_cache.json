@@ -6367,7 +6367,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/explicit-lazy-imports": {
-    "timestamp": 1777137604.4217913,
+    "timestamp": 1777307772.353123,
     "tags": [
       "programming",
       "python"
@@ -6376,7 +6376,7 @@
       "articles": 1,
       "code_snippets": 2,
       "loc": 18,
-      "words": 2116
+      "words": 2124
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/143.resolve-a-lazy-import-manually": {
@@ -6390,6 +6390,19 @@
       "code_snippets": 5,
       "loc": 14,
       "words": 190
+    }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/144.sentinel-builtin": {
+    "timestamp": 1777661954.9047704,
+    "tags": [
+      "programming",
+      "python"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 2,
+      "loc": 9,
+      "words": 172
     }
   }
 }
