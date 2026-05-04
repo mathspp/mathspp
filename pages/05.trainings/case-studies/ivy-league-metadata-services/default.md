@@ -16,6 +16,8 @@ As the hiring manager summarised,
 
  > “From my perspective, it was definitely a good investment on multiple levels [...].” (T.T.)
 
+[Book a discovery call](https://app.cal.eu/mathspp/python-chat?classes=btn)
+
 ## The client
 
 The training was delivered to a metadata services-focused team within a large academic institution, alongside members of a second, collaborating team.
@@ -107,6 +109,6 @@ This case study demonstrates the impact of **adaptive, customised training**, st
 Even in a fully online setting, the training delivered measurable satisfaction, observable behaviour changes, and lasting team-level improvements.
 
 If your team has mixed experience levels, lacks shared practices or vocabulary, or needs practical, immediately applicable Python skills, then a customised, hands-on training can rapidly align your team and deliver real-world impact.
-[Book a discovery call](https://app.cal.eu/mathspp/python-chat) to **discuss your and your team's Python needs** or reach out to us [in writing](/contact-me).
+[Book a discovery call](https://app.cal.eu/mathspp/python-chat) to **discuss your and your team's Python needs** or [reach out to us in writing](/contact-me).
 
 [Book a discovery call](https://app.cal.eu/mathspp/python-chat?classes=btn)
