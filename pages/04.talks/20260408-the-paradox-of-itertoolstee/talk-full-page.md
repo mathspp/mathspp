@@ -8,12 +8,12 @@ slides_pdf: https://github.com/mathspp/talks/blob/main/20260408_pycon_lithuania_
 taxonomy:
     category: talks
     tags:
-        - "event name"
-        - "country / remote"
-        - "year"
+        - "PyCon Lithuania"
+        - "Lithuania"
+        - "2026"
 title: "The paradox of itertools.tee"
-# watch: xxx
-# youtube_embed: xxx
+watch: https://www.youtube.com/watch?v=yU23-EaKuC4
+youtube_embed: https://www.youtube.com/embed/yU23-EaKuC4
 ---
 
 ## Abstract

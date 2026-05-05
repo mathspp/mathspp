@@ -8,12 +8,12 @@ slides_pdf: https://github.com/mathspp/talks/blob/main/20260409_pycon_lithuania_
 taxonomy:
     category: talks
     tags:
-        - "event name"
-        - "country / remote"
-        - "year"
+        - "PyCon Lithuania"
+        - "Lithuania"
+        - "2026"
 title: "And now for something completely different"
-# watch: xxx
-# youtube_embed: xxx
+watch: https://www.youtube.com/watch?v=nu6vQi7EPOE
+youtube_embed: https://www.youtube.com/embed/nu6vQi7EPOE
 ---
 
 ## Abstract
