@@ -103,13 +103,13 @@ class ImageCaptionsPlugin extends Plugin
     protected function processFigures($content)
     {
         // Check for empty content
-        if (strlen($content) === 0) {
+        if (strlen((string) $content) === 0) {
             return '';
         }
 
         $document = new Document($content);
 
-        $scope = trim($this->grav['config']->get('plugins.image-captions.scope'));
+        $scope = trim((string) $this->grav['config']->get('plugins.image-captions.scope'));
         $figure_class = $this->grav['config']->get('plugins.image-captions.figure_class', '');
         $figcaption_class = $this->grav['config']->get('plugins.image-captions.figcaption_class', '');
         $source = $this->grav['config']->get('plugins.image-captions.source');
@@ -126,7 +126,7 @@ class ImageCaptionsPlugin extends Plugin
                     $figure_classes = [$figure_class];
 
                     // If there are any `caption-*` classes on the image, add them to the figure
-                    $image_classes = explode(' ', $image->getAttribute('class'));
+                    $image_classes = explode(' ', (string) $image->getAttribute('class'));
                     foreach ($image_classes as $class) {
                         if (preg_match('/^(caption-|figure-).*/', $class)) {
                             $figure_classes[] = $class;
@@ -161,7 +161,7 @@ class ImageCaptionsPlugin extends Plugin
     private function cleanupTags($html)
     {
         // remove html/body tags
-        $html = preg_replace('#<html><body>#', '', $html);
+        $html = preg_replace('#<html><body>#', '', (string) $html);
         $html = preg_replace('#</body></html>#', '', $html);
 
         // remove whitespace

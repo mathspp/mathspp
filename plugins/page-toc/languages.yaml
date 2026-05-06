@@ -1,3 +1,6 @@
+ru:
+  PLUGIN_PAGE_TOC:
+    TABLE_OF_CONTENTS: Содержание
 de:
   PLUGIN_PAGE_TOC:
     TABLE_OF_CONTENTS: Inhaltsverzeichnis
@@ -117,4 +120,7 @@ es:
     SLUG_PREFIX_HELP: 'Un prefijo usado delante de los slugs generados'
     PAGE_ANCHORS_SECTION: 'Configuración de enlaces ancla de Página'
     COPY_TO_CLIPBOARD: 'Copiar al Portapapeles'
+ca:
+  PLUGIN_PAGE_TOC:
+    TABLE_OF_CONTENTS: "Taula de Continguts"
 

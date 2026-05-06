@@ -1,5 +1,5 @@
 name: Archives
-version: 2.0.3.1
+version: 2.0.4
 type: plugin
 slug: archives
 description: The **Archives** plugin creates links for pages grouped by month/year
@@ -13,6 +13,10 @@ demo: http://demo.getgrav.org/blog-skeleton
 keywords: archives, plugin, blog, month, year, date, navigation, history
 bugs: https://github.com/getgrav/grav-plugin-archives/issues
 license: MIT
+
+compatibility:
+  grav: ['1.7', '2.0']
+
 dependencies:
     - { name: grav, version: '>=1.6.0' }
 
@@ -115,12 +119,11 @@ form:
         desc: Descending
 
     filters:
-      type: textarea
-      yaml: true
+      type: array
       label: Filter
-      placeholder: "page@: '/blog'"
-      validate:
-        type: yaml
+      placeholder_key: 'page@'
+      placeholder_value: '/blog'
+      help: "Key-value pairs forwarded to the page collection (e.g. <code>page@: /blog</code>, <code>category: blog</code>). Combined per the <em>Filter Combinator</em> below."
 
     filter_combinator:
       type: select
@@ -149,12 +152,11 @@ form:
           validate:
             required: true
         .filters:
-          type: textarea
-          yaml: true
+          type: array
           label: Filter
-          placeholder: "page@: '/blog'"
-          validate:
-            type: yaml
+          placeholder_key: 'page@'
+          placeholder_value: '/blog'
+          help: "Key-value pairs forwarded to the page collection. Overrides the default Filter when set on a route."
         .filter_combinator:
           type: select
           size: medium

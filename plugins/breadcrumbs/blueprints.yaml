@@ -1,7 +1,7 @@
 name: Breadcrumbs
 type: plugin
 slug: breadcrumbs
-version: 1.6.2
+version: 1.6.3
 description: The **Breadcrumbs** plugin provides a simple method to display the depth of your content/navigation structure.
 icon: caret-square-o-right
 author:
@@ -13,6 +13,9 @@ demo: http://demo.getgrav.org/blog-skeleton
 keywords: breadcrumbs, plugin, navigation, depth
 bugs: https://github.com/getgrav/grav-plugin-breadcrumbs/issues
 license: MIT
+compatibility:
+  grav: ['1.7', '2.0']
+
 dependencies:
   - { name: grav, version: '>=1.6.0' }
 

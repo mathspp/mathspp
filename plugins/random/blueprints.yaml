@@ -1,5 +1,5 @@
 name: Random
-version: 1.5.0
+version: 1.5.1
 description: Allows to randomly select a page from a collection of pages. Flexible **filters** provide maximum reconfigurability.
 icon: refresh
 author:
@@ -11,6 +11,9 @@ demo: http://demo.getgrav.org/blog-skeleton
 keywords: random, plugin, blog, pages
 bugs: https://github.com/getgrav/grav-plugin-random/issues
 license: MIT
+
+compatibility:
+  grav: ['1.7', '2.0']
 
 form:
   validation: strict

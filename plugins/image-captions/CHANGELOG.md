@@ -1,3 +1,10 @@
+# v2.1.1
+## 04/29/2026
+
+1. [](#bugfix)
+    * Patched bundled `imangazaliev/didom` for PHP 8.4 compatibility — implicitly nullable parameters in `Document::load()` and `Element::attributes()` now use the explicit `?type` syntax. Removes the deprecation notice on PHP 8.4.
+    * Fixed PHP 8.1+ deprecation notice — explicit string casts where `null` was being passed to string-typed function arguments.
+
 # v2.1.0
 ## 05/08/2023
 

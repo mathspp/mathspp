@@ -1,7 +1,7 @@
 name: Feed
 type: plugin
 slug: feed
-version: 1.10.0
+version: 1.10.1
 description: The **Feed** plugin is a simple yet powerful add-on that lets you view a Grav Collection as **JSON**, **RSS** or **Atom** news feed.
 icon: rss
 author:
@@ -13,6 +13,9 @@ demo: http://demo.getgrav.org/blog-skeleton
 keywords: feed, plugin, rss, atom, collection, json
 bugs: https://github.com/getgrav/grav-plugin-feed/issues
 license: MIT
+compatibility:
+  grav: ['1.7', '2.0']
+
 dependencies:
   - { name: grav, version: '>=1.6.0' }
 

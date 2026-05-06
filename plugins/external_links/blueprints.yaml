@@ -1,7 +1,7 @@
 name: 'External Links'
 type: plugin
 slug: external_links
-version: '1.6.3'
+version: '1.6.4'
 description: 'This plugin adds small icons to external and mailto links, informing users the link will take them to a new site or open their email client.'
 icon: 'external-link'
 author:
@@ -13,8 +13,11 @@ docs: 'https://github.com/hibbitts-design/grav-plugin-external-links/blob/master
 bugs: 'https://github.com/hibbitts-design/grav-plugin-external-links/issues'
 license: 'MIT/GPL'
 
+compatibility:
+  grav: ['1.7', '2.0']
+
 dependencies:
-  - { name: grav, version: ">=1.6" }
+  - { name: grav, version: ">=1.7" }
 
 form:
   validation: strict

@@ -62,6 +62,7 @@ class PageTOCPlugin extends Plugin
         if ($this->isAdmin()) {
             $this->enable([
                 'onBlueprintCreated' => ['onBlueprintCreated', 0],
+                'onTwigTemplatePaths' => ['onTwigTemplatePaths', 0],
             ]);
             return;
         }

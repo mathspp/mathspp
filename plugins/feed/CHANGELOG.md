@@ -1,3 +1,16 @@
+# v1.10.1
+## 05/01/2026
+
+1. [](#improved)
+    * Added 1.7|2.0 compatibility flags
+
+# v1.11.0
+## mm/dd/2023
+
+1. [](#new)
+   * Added new `onFeedCollectionProcessed()` event to modify the collection as needed.
+   * Added ability to use custom `feed: template:` in YAML frontmatter configuration without a collection defined
+
 # v1.10.0
 ## 09/26/2023
 

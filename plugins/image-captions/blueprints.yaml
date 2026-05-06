@@ -1,5 +1,5 @@
 name: Image Captions
-version: 2.1.0
+version: 2.1.1
 type: plugin
 slug: image-captions
 description: "Looks for images with defined title attribute and converts them to fig-captions."
@@ -12,6 +12,9 @@ keywords: image, caption, figure, figcaption, grav, plugin
 bugs: https://github.com/trilbymedia/grav-plugin-image-captions/issues
 docs: https://github.com/trilbymedia/grav-plugin-image-captions/blob/develop/README.md
 license: MIT
+
+compatibility:
+  grav: ['1.7', '2.0']
 
 form:
   validation: strict

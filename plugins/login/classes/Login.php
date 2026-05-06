@@ -19,6 +19,7 @@ use Grav\Common\Language\LanguageCodes;
 use Grav\Common\Page\Interfaces\PageInterface;
 use Grav\Common\Page\Page;
 use Grav\Common\Page\Pages;
+use Grav\Common\Security;
 use Grav\Common\Session;
 use Grav\Common\User\Interfaces\UserCollectionInterface;
 use Grav\Common\User\Interfaces\UserInterface;
@@ -349,8 +350,13 @@ class Login
         $isIPv4 = filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4);
         $ipKey = $isIPv4 ? $ip : Utils::getSubnet($ip, $this->grav['config']->get('plugins.login.ipv6_subnet_size'));
 
-        // Pseudonymization of the IP
-        return sha1($ipKey . $this->grav['config']->get('security.salt'));
+        // Pseudonymization of the IP. Grav 2.0 moved the HMAC key out of Config
+        // (GHSA-3f29-pqwf-v4j4); fall back to the legacy key on Grav 1.7.
+        $key = method_exists(Security::class, 'getNonceKey')
+            ? Security::getNonceKey()
+            : (string) $this->grav['config']->get('security.salt');
+
+        return sha1($ipKey . $key);
     }
 
     /**
@@ -532,6 +538,29 @@ class Login
     }
 
     /**
+     * Handle the email to login user by one-time link.
+     *
+     * @param UserInterface $user
+     * @param string $token
+     * @return bool True if the action was performed.
+     * @throws \RuntimeException
+     */
+    public function sendMagicLoginEmail(UserInterface $user, string $token)
+    {
+        if (empty($user->email)) {
+            throw new \RuntimeException($this->language->translate('PLUGIN_LOGIN.USER_NEEDS_EMAIL_FIELD'));
+        }
+
+        try {
+            Email::sendMagicLoginEmail($user, $token);
+        } catch (\Exception $e) {
+            throw new \RuntimeException($this->language->translate('PLUGIN_LOGIN.EMAIL_SENDING_FAILURE'));
+        }
+
+        return true;
+    }
+
+    /**
      * Gets and sets the RememberMe class
      *
      * @param  mixed $var A rememberMe instance to set
@@ -558,9 +587,13 @@ class Login
             $this->rememberMe->setExpireTime($timeout);
 
             // Hardening cookies with user-agent and random salt or
-            // fallback to use system based cache key
+            // fallback to use system based cache key. Grav 2.0 moved the HMAC key
+            // out of Config (GHSA-3f29-pqwf-v4j4); use it when available.
             $server_agent = $_SERVER['HTTP_USER_AGENT'] ?? 'unknown';
-            $data = $server_agent . $config->get('security.salt', $this->grav['cache']->getKey());
+            $saltKey = method_exists(Security::class, 'getNonceKey')
+                ? Security::getNonceKey()
+                : (string) $config->get('security.salt', $this->grav['cache']->getKey());
+            $data = $server_agent . $saltKey;
             $this->rememberMe->setSalt(hash('sha512', $data));
 
             // Set cookie with correct base path of Grav install
@@ -609,6 +642,10 @@ class Login
                 case 'pw_resets':
                     $maxCount = $this->grav['config']->get('plugins.login.max_pw_resets_count', 2);
                     $interval = $this->grav['config']->get('plugins.login.max_pw_resets_interval', 60);
+                    break;
+                case 'magic_links':
+                    $maxCount = $this->grav['config']->get('plugins.login.magic_link.max_requests_count', 3);
+                    $interval = $this->grav['config']->get('plugins.login.magic_link.max_requests_interval', 60);
                     break;
             }
             $this->rateLimiters[$context] = new RateLimiter($context, $maxCount, $interval);
@@ -680,8 +717,8 @@ class Login
     /**
      * Get route to a given login page.
      *
-     * @param string $type Use one of: login, activate, forgot, reset, profile, unauthorized, after_login, after_logout,
-     *                     register, after_registration, after_activation
+     * @param string $type Use one of: login, activate, forgot, reset, magic, magic_login, profile, unauthorized,
+     *                     after_login, after_logout, register, after_registration, after_activation
      * @param bool|null $enabled
      * @return string|null Returns route or null if the route has been disabled.
      */
@@ -694,6 +731,8 @@ class Login
             case 'activate':
             case 'forgot':
             case 'reset':
+            case 'magic':
+            case 'magic_login':
             case 'profile':
                 $route = $this->config->get('plugins.login.route_' . $type);
                 break;

@@ -1,3 +1,10 @@
+# v2.0.4
+## 04/29/2026
+
+1. [](#bugfix)
+    * Fixed `Filter` and per-page `Filter` settings rendering as `[object Object]` under Admin 2.0. Switched the field type from `textarea + yaml: true` to `array` — better UX (add/remove rows directly), works on both Admin 1.x and 2.0, and matches the actual data model (flat key-value).
+    * Fixed date format breaking the output in `partials/archives-year.html.twig`
+
 # v2.0.3.1
 ## 05/16/2024
 

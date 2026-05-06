@@ -1,3 +1,15 @@
+# v5.0.1
+## 04/17/2026
+
+1. [](improved)
+    * Fixed compatiblity
+
+# v5.0.0
+## 04/17/2026
+
+1. [](#new)
+    * Added Grav 2.0 / Admin 2.0 support
+
 # v4.2.2
 ## 12/10/2025
 
