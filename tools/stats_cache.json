@@ -6009,7 +6009,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/uv-cheatsheet": {
-    "timestamp": 1773069113.1272242,
+    "timestamp": 1778083736.6334789,
     "tags": [
       "programming",
       "python",
@@ -6368,16 +6368,16 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/explicit-lazy-imports": {
-    "timestamp": 1777307772.353123,
+    "timestamp": 1778002870.7689612,
     "tags": [
       "programming",
       "python"
     ],
     "stats": {
       "articles": 1,
-      "code_snippets": 2,
-      "loc": 18,
-      "words": 2124
+      "code_snippets": 3,
+      "loc": 20,
+      "words": 2146
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/143.resolve-a-lazy-import-manually": {
