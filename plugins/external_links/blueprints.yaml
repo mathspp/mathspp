@@ -1,12 +1,13 @@
 name: 'External Links'
 type: plugin
 slug: external_links
-version: '1.6.4'
+version: '1.6.5'
 description: 'This plugin adds small icons to external and mailto links, informing users the link will take them to a new site or open their email client.'
 icon: 'external-link'
 author:
-  name: 'Hibbitts Design'
-  email: 'hello@hibbittsdesign.org'
+    name: 'HibbittsDesign.org'
+    email: hello@hibbittsdesign.org
+    url: 'https://hibbittsdesign.org'
 homepage: 'https://github.com/hibbitts-design/grav-plugin-external-links'
 keywords: ['external', 'links', 'filter', 'formatter', 'plugin']
 docs: 'https://github.com/hibbitts-design/grav-plugin-external-links/blob/master/README.md'

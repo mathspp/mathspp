@@ -1,6 +1,6 @@
 # [![Grav External Links Plugin](assets/logo.png)][project]
 
-[![Release](https://img.shields.io/github/release/sommerregen/grav-plugin-external-links.svg)][project] [![Issues](https://img.shields.io/github/issues/sommerregen/grav-plugin-external-links.svg)][issues] [![Dual license](https://img.shields.io/badge/dual%20license-MIT%2FGPL-blue.svg)](LICENSE "License")
+[![Release](https://img.shields.io/github/release/hibbitts-design/grav-plugin-external-links.svg)][project] [![Issues](https://img.shields.io/github/issues/hibbitts-design/grav-plugin-external-links.svg)][issues] [![Dual license](https://img.shields.io/badge/dual%20license-MIT%2FGPL-blue.svg)](LICENSE "License")
 
 > This plugin adds small icons to external and mailto links, informing users the link will take them to a new site or open their email client.
 
