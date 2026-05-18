@@ -3,65 +3,53 @@
  * Dracula: https://draculatheme.com
  */
 
-/*
-
-Dracula Theme v1.2.0
-
-https://github.com/zenorocha/dracula-theme
-
-Copyright 2015, All rights reserved
-
-Code licensed under the MIT license
-http://zenorocha.mit-license.org
-
-@author Éverton Ribeiro <nuxlli@gmail.com>
-@author Zeno Rocha <hi@zenorocha.com>
-
-*/
-
 .hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 0.5em;
-  background: var(--bg-2);
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: var(--bg-2);
 }
 
-.hljs-keyword,
+.hljs-built_in,
 .hljs-selector-tag,
-.hljs-literal,
 .hljs-section,
 .hljs-link {
-  color: var(--cy);
+    color: var(--cy);
 }
 
-.hljs-function .hljs-keyword {
-  color: var(--ma);
+.hljs-keyword {
+    color: var(--ma);
 }
 
 .hljs,
 .hljs-subst {
-  color: var(--tx);
+    color: var(--tx);
+}
+
+.hljs-title,
+.hljs-attr,
+.hljs-meta-keyword {
+    font-style: italic;
+    color: var(--gr);
 }
 
 .hljs-string,
-.hljs-title,
+.hljs-meta,
 .hljs-name,
 .hljs-type,
-.hljs-attribute,
 .hljs-symbol,
 .hljs-bullet,
 .hljs-addition,
 .hljs-variable,
 .hljs-template-tag,
 .hljs-template-variable {
-  color: var(--ye);
+    color: var(--ye);
 }
 
 .hljs-comment,
 .hljs-quote,
-.hljs-deletion,
-.hljs-meta {
-  color: var(--tx-2);
+.hljs-deletion {
+    color: var(--tx-2);
 }
 
 .hljs-keyword,
@@ -73,9 +61,14 @@ http://zenorocha.mit-license.org
 .hljs-type,
 .hljs-name,
 .hljs-strong {
-  font-weight: bold;
+    font-weight: bold;
+}
+
+.hljs-literal,
+.hljs-number {
+    color: var(--bl);
 }
 
 .hljs-emphasis {
-  font-style: italic;
+    font-style: italic;
 }
