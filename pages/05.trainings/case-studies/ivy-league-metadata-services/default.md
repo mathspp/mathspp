@@ -14,9 +14,10 @@ The results of the four days of training, comprised of interactive instruction t
 
 As the hiring manager summarised,
 
- > “From my perspective, it was definitely a good investment on multiple levels [...].” (T.T.)
+ > “From my perspective, it was definitely an excellent investment on multiple levels.” — hiring manager
 
 [Book a discovery call](https://app.cal.eu/mathspp/python-chat?classes=btn)
+
 
 ## The client
 
@@ -49,15 +50,15 @@ These main topics were identified by working closely with the client and represe
 Having an **adaptive curriculum** rather than a rigid syllabus meant that the content was tailored to the team's needs beforehand and it allowed the content to be adjusted dynamically throughout the week based on participant feedback and observed difficulty.
 This proved to be key, since the first day ended up being less successful due to a mismatch between the expected fluency of the participants and their actual fluency.
 Due to the dynamic nature of the curriculum, difficulty was rebalanced immediately, the pacing was adjusted, and the practical exercises were aligned more closely with the real level of the participants.
-When asked what aspects of the training they found most valuable, one participant indicated our “adaptability, flexibility, [...], and quick wits” (W.N.).
+When asked what aspects of the training they found most valuable, one participant indicated our “adaptability, flexibility, [...], and quick wits”.
 
 After this adjustment, we saw that participants engaged actively, the sessions became highly interactive, and the learning process was driven by questions and discussions.
-At the end of the training, participants noted that “interactivity” (T.W.) or “the live questions and answers” (D.C.) were the parts of the training that were the most valuable.
+At the end of the training, participants noted that “interactivity” or “the live questions and answers” were the parts of the training that were the most valuable.
 
 The end of the training was designed to have a **high-impact final session**, where participants built and published a Python package and then installed and ran successfully the packages published by the others.
 This provided a breakthrough moment where participants turned abstract concepts — like project management and packaging — into something tangible and usable:
 
- > “People had an **aha moment** when they were able to publish their project and run it... That worked for everyone.” (T.T.)
+ > “People had an **aha moment** when they were able to publish their project and run it... That worked for everyone.” — hiring manager
 
 ## Results
 
@@ -73,7 +74,7 @@ Participants self-reported an **increase in their confidence**, allowing them to
 **Every participant** was able to describe how they'll apply what they learned during the training to their daily work.
 When interviewed 4 months after the training, the hiring manager reported
 
- > “I see greater confidence; the ability to take on new challenges.” (T.T.)
+ > “I see greater confidence; the ability to take on new challenges.”
 
 ### Internal knowledge sharing
 
@@ -85,7 +86,7 @@ This indicates **retention of knowledge**, **confidence** in teaching others, an
 From a management perspective, the training created a shared baseline of concepts and vocabulary, making it easier to set expectations and to discuss technical work, as well as reducing the uncertainty that stems from the varied backgrounds of the team members.
 Quoting the hiring manager,
 
- > “Just being in the same room walking incrementally through this set of lessons was very valuable. As a manager, it puts me at ease, in the sense that I can set my expectations more accurately because I know what everyone has been exposed to.” (T.T.)
+ > “Just being in the same room walking incrementally through this set of lessons was very valuable. As a manager, it puts me at ease, in the sense that I can set my expectations more accurately because I know what everyone has been exposed to.” — hiring manager
 
 ### Long-term value
 
@@ -101,7 +102,7 @@ Based on the feedback provided by the participants after the training, the key t
 
 **All** but one participant immediately showed interest in further advanced sessions and during the follow-up interview the hiring manager said
 
- > “I would definitely be interested in pursuing something like that again.” (T.T.)
+ > “I would definitely be interested in pursuing something like that again.” — hiring manager
 
 ## Conclusion
 
