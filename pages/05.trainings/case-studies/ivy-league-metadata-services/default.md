@@ -74,7 +74,7 @@ Participants self-reported an **increase in their confidence**, allowing them to
 **Every participant** was able to describe how they'll apply what they learned during the training to their daily work.
 When interviewed 4 months after the training, the hiring manager reported
 
- > “I see greater confidence; the ability to take on new challenges.”
+ > “I see greater confidence; the ability to take on new challenges.” — hiring manager
 
 ### Internal knowledge sharing
 
