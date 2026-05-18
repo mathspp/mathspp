@@ -1,4 +1,4 @@
-# How a 4-Day Python training unified a cross-functional team
+# How a 4-day Python training unified a cross-functional team
 
 ## Executive summary
 
