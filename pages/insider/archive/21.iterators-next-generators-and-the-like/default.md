@@ -24,9 +24,9 @@ Every time we meet, we add the event to the meetup website, so we keep a history
 
 They most recent events have titles that look like this:
 
- - #08 PyLM Meetup at Técnico
- - #07 PyLM Meetup at Técnico
- - #06 PyLM Meetup at Técnico
+ - 08 PyLM Meetup at Técnico
+ - 07 PyLM Meetup at Técnico
+ - 06 PyLM Meetup at Técnico
  - ...
 
 As you can see, we keep track of a counter for each meetup.
