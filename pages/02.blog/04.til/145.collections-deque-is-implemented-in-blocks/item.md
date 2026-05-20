@@ -22,6 +22,7 @@ class Node:
 
 class deque:
     first_node: Node | None
+    last_node: Node | None
     ...
 ```
 
