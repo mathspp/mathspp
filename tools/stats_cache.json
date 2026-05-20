@@ -6417,12 +6417,12 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/145.collections-deque-is-implemented-in-blocks": {
-    "timestamp": 1779267130.7605138,
+    "timestamp": 1779267238.19429,
     "tags": [],
     "stats": {
       "articles": 1,
       "code_snippets": 3,
-      "loc": 81,
+      "loc": 82,
       "words": 343
     }
   }

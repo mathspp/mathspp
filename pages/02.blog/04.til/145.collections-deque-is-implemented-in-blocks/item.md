@@ -109,6 +109,7 @@ class deque:
                 # Disconnect the two:
                 self.right_block.left_link = None
                 new_right.right_link = None
+                # Set the previous block as the new rightmost block:
                 self.right_block = new_right
                 self.right_index = BLOCKLEN - 1
             # If not, the deque is empty. Recentre the last block.
