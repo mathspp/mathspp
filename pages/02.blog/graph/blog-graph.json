@@ -794,6 +794,14 @@
     },
     {
       "data": {
+        "id": "internal-link:article:collectionsdeque-is-implemented-in-blocks->article:python-deque-tutorial",
+        "source": "article:collectionsdeque-is-implemented-in-blocks",
+        "target": "article:python-deque-tutorial",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
         "id": "internal-link:article:common-proof-methods->article:irrational-rationality",
         "source": "article:common-proof-methods",
         "target": "article:irrational-rationality",
@@ -14161,7 +14169,7 @@
       }
     }
   ],
-  "generated_at": "2026-05-06T16:09:25+00:00",
+  "generated_at": "2026-05-20T08:50:42+00:00",
   "nodes": [
     {
       "data": {
@@ -19583,6 +19591,24 @@
     },
     {
       "data": {
+        "date": "20-05-2026 09:25",
+        "degree": 1,
+        "height": 24,
+        "id": "article:collectionsdeque-is-implemented-in-blocks",
+        "internal_link_degree": 1,
+        "label": "TIL #145 \u2013 collections.deque is implemented in blocks",
+        "size": 24,
+        "slug": "collectionsdeque-is-implemented-in-blocks",
+        "tag_degree": 0,
+        "tags": [],
+        "title": "TIL #145 \u2013 collections.deque is implemented in blocks",
+        "type": "article",
+        "url": "/blog/til/collectionsdeque-is-implemented-in-blocks",
+        "width": 35
+      }
+    },
+    {
+      "data": {
         "date": "26-08-2022",
         "degree": 3,
         "height": 28,
@@ -22989,12 +23015,12 @@
     {
       "data": {
         "date": "18-01-2024 19:00",
-        "degree": 11,
-        "height": 36,
+        "degree": 12,
+        "height": 37,
         "id": "article:python-deque-tutorial",
-        "internal_link_degree": 8,
+        "internal_link_degree": 9,
         "label": "Python deque tutorial",
-        "size": 36,
+        "size": 37,
         "slug": "python-deque-tutorial",
         "tag_degree": 3,
         "tags": [
@@ -23005,7 +23031,7 @@
         "title": "Python deque tutorial",
         "type": "article",
         "url": "/blog/python-deque-tutorial",
-        "width": 52
+        "width": 54
       }
     },
     {
@@ -24654,21 +24680,6 @@
     },
     {
       "data": {
-        "degree": 8,
-        "height": 34,
-        "id": "tag:llm",
-        "internal_link_degree": 0,
-        "label": "llm",
-        "size": 34,
-        "tag": "llm",
-        "tag_degree": 8,
-        "type": "tag",
-        "url": "/blog/tags/llm",
-        "width": 34
-      }
-    },
-    {
-      "data": {
         "degree": 1,
         "height": 24,
         "id": "tag:LLM",
@@ -24680,6 +24691,21 @@
         "type": "tag",
         "url": "/blog/tags/llm",
         "width": 24
+      }
+    },
+    {
+      "data": {
+        "degree": 8,
+        "height": 34,
+        "id": "tag:llm",
+        "internal_link_degree": 0,
+        "label": "llm",
+        "size": 34,
+        "tag": "llm",
+        "tag_degree": 8,
+        "type": "tag",
+        "url": "/blog/tags/llm",
+        "width": 34
       }
     },
     {
@@ -25525,8 +25551,8 @@
   ],
   "site": "https://mathspp.com",
   "stats": {
-    "articles": 448,
-    "internal_links": 393,
+    "articles": 449,
+    "internal_links": 394,
     "tag_edges": 1377,
     "tags": 98
   }
