@@ -2,13 +2,13 @@ date: 20-05-2026 09:25
 metadata:
     author: Rodrigo Girão Serrão
     description: "Today I learned that collections.deque is implemented as a doubly-linked list of blocks."
-    og:image: "https://mathspp.com/blog/til/collectionsdeque-is-implemented-in-blocks/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/til/collectionsdeque-is-implemented-in-blocks/thumbnail.webp"
+    og:image: "https://mathspp.com/blog/til/collections-deque-is-implemented-in-blocks/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/collections-deque-is-implemented-in-blocks/thumbnail.webp"
 references: []
 routes:
     aliases:
         - "/blog/til/145"
-slug: "collectionsdeque-is-implemented-in-blocks"
+slug: "collections-deque-is-implemented-in-blocks"
 taxonomy:
     category: [blogpost, til]
     tag: []

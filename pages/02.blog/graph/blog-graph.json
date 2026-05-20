@@ -794,8 +794,8 @@
     },
     {
       "data": {
-        "id": "internal-link:article:collectionsdeque-is-implemented-in-blocks->article:python-deque-tutorial",
-        "source": "article:collectionsdeque-is-implemented-in-blocks",
+        "id": "internal-link:article:collections-deque-is-implemented-in-blocks->article:python-deque-tutorial",
+        "source": "article:collections-deque-is-implemented-in-blocks",
         "target": "article:python-deque-tutorial",
         "type": "internal-link"
       }
@@ -14169,7 +14169,7 @@
       }
     }
   ],
-  "generated_at": "2026-05-20T08:50:42+00:00",
+  "generated_at": "2026-05-20T08:51:29+00:00",
   "nodes": [
     {
       "data": {
@@ -19594,16 +19594,16 @@
         "date": "20-05-2026 09:25",
         "degree": 1,
         "height": 24,
-        "id": "article:collectionsdeque-is-implemented-in-blocks",
+        "id": "article:collections-deque-is-implemented-in-blocks",
         "internal_link_degree": 1,
         "label": "TIL #145 \u2013 collections.deque is implemented in blocks",
         "size": 24,
-        "slug": "collectionsdeque-is-implemented-in-blocks",
+        "slug": "collections-deque-is-implemented-in-blocks",
         "tag_degree": 0,
         "tags": [],
         "title": "TIL #145 \u2013 collections.deque is implemented in blocks",
         "type": "article",
-        "url": "/blog/til/collectionsdeque-is-implemented-in-blocks",
+        "url": "/blog/til/collections-deque-is-implemented-in-blocks",
         "width": 35
       }
     },
