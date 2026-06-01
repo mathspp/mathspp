@@ -115,7 +115,7 @@ Your main function looks like this:
 
 ```py
 def main():
-    URL = "https://mathspp.com"
+    URL = "https://example.com"
     seen = {URL}
 
     to_crawl = Queue()
@@ -168,7 +168,7 @@ So, you need to modify your function `main` to wait for the queue to have zero t
 
 ```py
 def main():
-    URL = "https://mathspp.com"
+    URL = "https://example.com"
     seen = {URL}
 
     to_crawl = Queue()
@@ -243,7 +243,7 @@ To safeguard the modification of the set `seen`, you create and share a lock acr
 
 ```py
 def main():
-    URL = "https://mathspp.com"
+    URL = "https://example.com"
     seen = {URL}
 
     to_crawl = Queue()
