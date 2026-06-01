@@ -178,111 +178,108 @@ So you don't really need a lock there.
 
 ## Full code
 
-<details markdown=1>
-<summary>Full source code.</summary>
+??? Full source code.
 
-```py
-# /// script
-# requires-python = "&gt;=3.14"
-# dependencies = [
-#     "beautifulsoup4>=4.14.3",
-#     "httpx>=0.28.1",
-# ]
-# ///
+    ```py
+    # /// script
+    # requires-python = "&gt;=3.14"
+    # dependencies = [
+    #     "beautifulsoup4>=4.14.3",
+    #     "httpx>=0.28.1",
+    # ]
+    # ///
 
-import asyncio
-import random
-from urllib.parse import urljoin, urlparse, urldefrag
+    import asyncio
+    import random
+    from urllib.parse import urljoin, urlparse, urldefrag
 
-from bs4 import BeautifulSoup
-import httpx
-
-
-async def get_links(client: httpx.AsyncClient, url: str) -> set[str]:
-    try:
-        response = await client.get(url, timeout=10)
-        response.raise_for_status()
-    except httpx.HTTPError as e:
-        print(e)
-        return set()
-
-    soup = BeautifulSoup(response.text, "html.parser")
-
-    base_domain = urlparse(url).netloc
-    links: set[str] = set()
-
-    for link in soup.find_all("a", href=True):
-        href = link["href"]
-
-        # Convert relative URLs to absolute URLs and drop any anchors
-        absolute_url, _ = urldefrag(urljoin(url, href))
-
-        # Keep only links from the same domain
-        if urlparse(absolute_url).netloc == base_domain and "blog" not in absolute_url:
-            links.add(absolute_url)
-
-    return links
+    from bs4 import BeautifulSoup
+    import httpx
 
 
-async def worker(
-    wid: int,
-    client: httpx.AsyncClient,
-    seen: set[str],
-    to_crawl: asyncio.Queue[str],
-) -> None:
-    while True:
+    async def get_links(client: httpx.AsyncClient, url: str) -> set[str]:
         try:
-            url = await to_crawl.get()
-        except asyncio.QueueShutDown:
-            print(f"Shutting down worker {wid}.")
-            break
+            response = await client.get(url, timeout=10)
+            response.raise_for_status()
+        except httpx.HTTPError as e:
+            print(e)
+            return set()
 
-        try:
-            await asyncio.sleep(1 + 0.5 * random.random())
-            print(f"{wid:02} Getting from {url}.")
+        soup = BeautifulSoup(response.text, "html.parser")
 
-            links = await get_links(client, url)
+        base_domain = urlparse(url).netloc
+        links: set[str] = set()
 
-            new_links = links - seen
-            seen.update(new_links)
+        for link in soup.find_all("a", href=True):
+            href = link["href"]
 
-            for link in new_links:
-                if "blog" not in link and "talk" not in link:
-                    await to_crawl.put(link)
-        finally:
-            to_crawl.task_done()
+            # Convert relative URLs to absolute URLs and drop any anchors
+            absolute_url, _ = urldefrag(urljoin(url, href))
+
+            # Keep only links from the same domain
+            if urlparse(absolute_url).netloc == base_domain and "blog" not in absolute_url:
+                links.add(absolute_url)
+
+        return links
 
 
-async def main():
-    URL = "https://mathspp.com"
-    seen = {URL}
+    async def worker(
+        wid: int,
+        client: httpx.AsyncClient,
+        seen: set[str],
+        to_crawl: asyncio.Queue[str],
+    ) -> None:
+        while True:
+            try:
+                url = await to_crawl.get()
+            except asyncio.QueueShutDown:
+                print(f"Shutting down worker {wid}.")
+                break
 
-    to_crawl = asyncio.Queue()
-    await to_crawl.put(URL)
+            try:
+                await asyncio.sleep(1 + 0.5 * random.random())
+                print(f"{wid:02} Getting from {url}.")
 
-    lock = asyncio.Lock()
+                links = await get_links(client, url)
 
-    tasks = []
-    async with (
-        asyncio.TaskGroup() as tg,
-        httpx.AsyncClient() as client,
-    ):
-        for wid in range(16):
-            tasks.append(
-                tg.create_task(
-                    worker(wid, client, seen, to_crawl, lock)
+                new_links = links - seen
+                seen.update(new_links)
+
+                for link in new_links:
+                    if "blog" not in link and "talk" not in link:
+                        await to_crawl.put(link)
+            finally:
+                to_crawl.task_done()
+
+
+    async def main():
+        URL = "https://mathspp.com"
+        seen = {URL}
+
+        to_crawl = asyncio.Queue()
+        await to_crawl.put(URL)
+
+        lock = asyncio.Lock()
+
+        tasks = []
+        async with (
+            asyncio.TaskGroup() as tg,
+            httpx.AsyncClient() as client,
+        ):
+            for wid in range(16):
+                tasks.append(
+                    tg.create_task(
+                        worker(wid, client, seen, to_crawl, lock)
+                    )
                 )
-            )
 
-        await to_crawl.join()
-        to_crawl.shutdown()
+            await to_crawl.join()
+            to_crawl.shutdown()
 
 
-if __name__ == "__main__":
-    asyncio.run(main())
-```
-
-</details>
+    if __name__ == "__main__":
+        asyncio.run(main())
+    ```
 
 ## Enjoyed reading? 🐍🚀
 
