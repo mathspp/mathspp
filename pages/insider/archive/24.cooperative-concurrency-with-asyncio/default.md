@@ -178,8 +178,8 @@ So you don't really need a lock there.
 
 ## Full code
 
-<summary markdown=1>
-<details>Full source code.</details>
+<details markdown=1>
+<summary>Full source code.</summary>
 
 ```py
 # /// script
@@ -281,6 +281,8 @@ async def main():
 if __name__ == "__main__":
     asyncio.run(main())
 ```
+
+</details>
 
 ## Enjoyed reading? 🐍🚀
 
