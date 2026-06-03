@@ -9,5 +9,6 @@ taxonomy:
     category:
         - blogpost
     tag:
+        - conferences
         - opinion
 title: How I prepare a technical talk

@@ -4354,6 +4354,14 @@
     },
     {
       "data": {
+        "id": "tag:article:a-tutorial-is-not-a-long-talk->tag:conferences",
+        "source": "article:a-tutorial-is-not-a-long-talk",
+        "target": "tag:conferences",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
         "id": "tag:article:a-tutorial-is-not-a-long-talk->tag:opinion",
         "source": "article:a-tutorial-is-not-a-long-talk",
         "target": "tag:opinion",
@@ -8389,6 +8397,14 @@
         "id": "tag:article:how-are-strings-ordered-in-python->tag:python",
         "source": "article:how-are-strings-ordered-in-python",
         "target": "tag:python",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:how-i-prepare-a-technical-talk->tag:conferences",
+        "source": "article:how-i-prepare-a-technical-talk",
+        "target": "tag:conferences",
         "type": "tag"
       }
     },
@@ -14169,7 +14185,7 @@
       }
     }
   ],
-  "generated_at": "2026-05-20T08:54:04+00:00",
+  "generated_at": "2026-06-03T15:59:18+00:00",
   "nodes": [
     {
       "data": {
@@ -20423,21 +20439,22 @@
     {
       "data": {
         "date": "05-04-2024",
-        "degree": 1,
-        "height": 24,
+        "degree": 2,
+        "height": 26,
         "id": "article:a-tutorial-is-not-a-long-talk",
         "internal_link_degree": 0,
         "label": "A tutorial is not a long talk",
-        "size": 24,
+        "size": 26,
         "slug": "a-tutorial-is-not-a-long-talk",
-        "tag_degree": 1,
+        "tag_degree": 2,
         "tags": [
+          "conferences",
           "opinion"
         ],
         "title": "A tutorial is not a long talk",
         "type": "article",
         "url": "/blog/a-tutorial-is-not-a-long-talk",
-        "width": 35
+        "width": 38
       }
     },
     {
@@ -21846,21 +21863,22 @@
     {
       "data": {
         "date": "25-09-2024 23:00",
-        "degree": 1,
-        "height": 24,
+        "degree": 2,
+        "height": 26,
         "id": "article:how-i-prepare-a-technical-talk",
         "internal_link_degree": 0,
         "label": "How I prepare a technical talk",
-        "size": 24,
+        "size": 26,
         "slug": "how-i-prepare-a-technical-talk",
-        "tag_degree": 1,
+        "tag_degree": 2,
         "tags": [
+          "conferences",
           "opinion"
         ],
         "title": "How I prepare a technical talk",
         "type": "article",
         "url": "/blog/how-i-prepare-a-technical-talk",
-        "width": 35
+        "width": 38
       }
     },
     {
@@ -24290,17 +24308,17 @@
     },
     {
       "data": {
-        "degree": 5,
-        "height": 30,
+        "degree": 7,
+        "height": 33,
         "id": "tag:conferences",
         "internal_link_degree": 0,
         "label": "conferences",
-        "size": 30,
+        "size": 33,
         "tag": "conferences",
-        "tag_degree": 5,
+        "tag_degree": 7,
         "type": "tag",
         "url": "/blog/tags/conferences",
-        "width": 30
+        "width": 33
       }
     },
     {
@@ -25553,7 +25571,7 @@
   "stats": {
     "articles": 449,
     "internal_links": 394,
-    "tag_edges": 1377,
+    "tag_edges": 1379,
     "tags": 98
   }
 }
