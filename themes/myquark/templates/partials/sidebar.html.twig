@@ -44,10 +44,13 @@
 </div>
 <br />
 <div class="sidebar-content">
+    <!--
     <details>
     <summary>{{ 'THEME_QUARK.SIDEBAR.REMAINING_TAGS.SUMMARY'|t }}</summary>
         {% include 'partials/taxonomylist_remaining.html.twig' with {'base_url':new_base_url, 'taxonomy':'tag', 'top_tags':top_tags} %}
     </details>
+    -->
+    <a class="btn" href="/blog/tags">See all tags</a>
 </div>
 {% endif %}
 
