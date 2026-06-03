@@ -178,8 +178,7 @@ So you don't really need a lock there.
 
 ## Full code
 
-<details markdown=1>
-<summary>Full source code.</summary>
+!> Full source code.
 
 ```py
 # /// script
@@ -260,8 +259,6 @@ async def main():
     to_crawl = asyncio.Queue()
     await to_crawl.put(URL)
 
-    lock = asyncio.Lock()
-
     tasks = []
     async with (
         asyncio.TaskGroup() as tg,
@@ -270,7 +267,7 @@ async def main():
         for wid in range(16):
             tasks.append(
                 tg.create_task(
-                    worker(wid, client, seen, to_crawl, lock)
+                    worker(wid, client, seen, to_crawl)
                 )
             )
 
@@ -281,8 +278,7 @@ async def main():
 if __name__ == "__main__":
     asyncio.run(main())
 ```
-
-</details>
+!@
 
 ## Enjoyed reading? 🐍🚀
 
