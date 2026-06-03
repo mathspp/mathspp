@@ -1,0 +1,24 @@
+{% if config.plugins['markdown-details'].a11y %}
+<div class="{{ config.plugins['markdown-details'].base_class }} js-details" data-expanded="true">
+    <{{ titleTag }} class="{{ config.plugins['markdown-details'].title_class }}">
+        <button class="{{ config.plugins['markdown-details'].trigger_class }}" aria-expanded="true">
+            {{ titleText }}
+        </button>
+    </{{ titleTag }}>
+
+    <div class="{{ config.plugins['markdown-details'].content_class }}">
+        {{ content|markdown|raw}}
+    </div>
+</div>
+{% else %}
+<details class="{{ config.plugins['markdown-details'].base_class }}">
+    <summary class="{{ config.plugins['markdown-details'].trigger_class }}">
+        <{{ titleTag }} class="{{ config.plugins['markdown-details'].title_class }}">
+        {{ titleText }}
+        </{{ titleTag }}>
+    </summary>
+    <div class="{{ config.plugins['markdown-details'].content_class }}">
+        {{ content|markdown|raw}}
+    </div>
+</details>
+{% endif %}

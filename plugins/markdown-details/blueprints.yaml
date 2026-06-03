@@ -1,0 +1,94 @@
+name: Markdown Details
+slug: markdown-details
+type: plugin
+version: 2.0.0
+description: Adds the ability to render collapsible sections in Markdown
+icon: caret-square-o-down
+author:
+  name: Sebastian Laube
+  email: bitstarr@users.noreply.github.com
+homepage: https://github.com/bitstarr/grav-plugin-markdown-details
+keywords: markdown, details, summary, collapsible, a11y, accessability
+bugs: https://github.com/bitstarr/grav-plugin-markdown-details/issues
+docs: https://github.com/bitstarr/grav-plugin-markdown-details/blob/main/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    built_in_css:
+      type: toggle
+      label: PLUGIN_MARKDOWN_DETAILS.BUILT_IN_CSS
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    built_in_js:
+      type: toggle
+      label: PLUGIN_MARKDOWN_DETAILS.BUILT_IN_JS
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    a11y:
+      type: toggle
+      label: PLUGIN_MARKDOWN_DETAILS.A11Y_MARKUP
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    default_title_tag:
+      type: text
+      label: PLUGIN_MARKDOWN_DETAILS.TITLE_TAG
+      validate:
+        required: true
+
+    base_class:
+      type: text
+      label: PLUGIN_MARKDOWN_DETAILS.CSS_CONTAINER_CLASSES
+      validate:
+        required: true
+
+    title_class:
+      type: text
+      label: PLUGIN_MARKDOWN_DETAILS.CSS_TITLE_CLASSES
+      validate:
+        required: true
+
+    trigger_class:
+      type: text
+      label: PLUGIN_MARKDOWN_DETAILS.CSS_TRIGGER_CLASSES
+      validate:
+        required: true
+
+    content_class:
+      type: text
+      label: PLUGIN_MARKDOWN_DETAILS.CSS_CONTENT_CLASSES
+      validate:
+        required: true

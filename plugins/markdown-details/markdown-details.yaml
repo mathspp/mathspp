@@ -1,0 +1,9 @@
+enabled: true
+built_in_css: true
+built_in_js: true
+a11y: false
+base_class: details
+title_class: details__title
+trigger_class: details__trigger
+content_class: details__content
+default_title_tag: h2

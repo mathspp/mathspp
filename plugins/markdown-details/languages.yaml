@@ -1,0 +1,21 @@
+en:
+  PLUGIN_MARKDOWN_DETAILS:
+    BUILT_IN_CSS: Use built in CSS
+    A11Y_MARKUP: Use a more accessable markup instead of details/summary
+    BUILT_IN_JS: Use built in JavaScript (for accessable markup only)
+    TITLE_TAG: Default HTML tag for the title
+    CSS_CONTAINER_CLASSES: CSS classes for the containing element
+    CSS_TITLE_CLASSES: CSS classes for the title element (summary text)
+    CSS_TRIGGER_CLASSES: CSS classes for the trigger element (button)
+    CSS_CONTENT_CLASSES: CSS classes for the content container
+
+de:
+  PLUGIN_MARKDOWN_DETAILS:
+    BUILT_IN_CSS: Mitgliefertes CSS verwenden
+    A11Y_MARKUP: Verwende barriereärmeres Markup statt details/summary
+    BUILT_IN_JS: Mitgliefertes JavScript verwenden (bei barrierearmen Markup)
+    TITLE_TAG: Standard HTML Tag für den Titel
+    CSS_CONTAINER_CLASSES: CSS Klassen für das umgebende Element
+    CSS_TITLE_CLASSES: CSS Klassen für den Titel (summary Text)
+    CSS_TRIGGER_CLASSES: CSS Klassen für das Trigger-Element (button)
+    CSS_CONTENT_CLASSES: CSS Klassen für den Inhaltsblock
