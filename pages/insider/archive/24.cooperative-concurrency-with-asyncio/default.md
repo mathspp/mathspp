@@ -182,7 +182,7 @@ So you don't really need a lock there.
 
 ```py
 # /// script
-# requires-python = "&gt;=3.14"
+# requires-python = ">=3.14"
 # dependencies = [
 #     "beautifulsoup4>=4.14.3",
 #     "httpx>=0.28.1",
