@@ -1234,10 +1234,12 @@ By using the Claude API, you were able to create a coding agent that
  - provides five tools that the agent can use to read, write, and execute code
 
 If you ignore the function definitions, all your code fits in _under_ 100 lines of code, which is pretty impressive.
+You can get the full agent code [from this GitHub repository](https://github.com/mathspp/coding-agent-tutorial).
+
 To keep exploring the world of coding agents, there are three natural directions in which you can take your agent:
 
  1. learn about the [Anthropic-provided tools](https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-reference), that you can leverage to create a coding agent that's even more robust
  2. implement [response streaming](https://platform.claude.com/docs/en/cli-sdks-libraries/sdks/python#streaming-responses) to allow the agent to provide longer responses and to use more tools
  3. improve the agent UI, for example by using `rich` to add colours to the output or by using `textual` to add a TUI to the agent
 
-You can get the full agent code [from this GitHub repository](https://github.com/mathspp/coding-agent-tutorial).
+
