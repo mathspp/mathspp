@@ -14010,6 +14010,30 @@
     },
     {
       "data": {
+        "id": "tag:article:write-a-coding-agent-from-first-principles->tag:llms",
+        "source": "article:write-a-coding-agent-from-first-principles",
+        "target": "tag:llms",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:write-a-coding-agent-from-first-principles->tag:programming",
+        "source": "article:write-a-coding-agent-from-first-principles",
+        "target": "tag:programming",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:write-a-coding-agent-from-first-principles->tag:python",
+        "source": "article:write-a-coding-agent-from-first-principles",
+        "target": "tag:python",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
         "id": "tag:article:write-a-python-module-in-rust->tag:programming",
         "source": "article:write-a-python-module-in-rust",
         "target": "tag:programming",
@@ -14185,7 +14209,7 @@
       }
     }
   ],
-  "generated_at": "2026-06-03T15:59:18+00:00",
+  "generated_at": "2026-06-22T18:34:04+00:00",
   "nodes": [
     {
       "data": {
@@ -23988,6 +24012,28 @@
     },
     {
       "data": {
+        "date": "22-06-2026 14:32",
+        "degree": 3,
+        "height": 28,
+        "id": "article:write-a-coding-agent-from-first-principles",
+        "internal_link_degree": 0,
+        "label": "Write a coding agent from first principles",
+        "size": 28,
+        "slug": "write-a-coding-agent-from-first-principles",
+        "tag_degree": 3,
+        "tags": [
+          "python",
+          "programming",
+          "llms"
+        ],
+        "title": "Write a coding agent from first principles",
+        "type": "article",
+        "url": "/blog/write-a-coding-agent-from-first-principles",
+        "width": 41
+      }
+    },
+    {
+      "data": {
         "date": "03-05-2023",
         "degree": 3,
         "height": 28,
@@ -24728,6 +24774,21 @@
     },
     {
       "data": {
+        "degree": 1,
+        "height": 24,
+        "id": "tag:llms",
+        "internal_link_degree": 0,
+        "label": "llms",
+        "size": 24,
+        "tag": "llms",
+        "tag_degree": 1,
+        "type": "tag",
+        "url": "/blog/tags/llms",
+        "width": 24
+      }
+    },
+    {
+      "data": {
         "degree": 34,
         "height": 50,
         "id": "tag:logic",
@@ -25133,14 +25194,14 @@
     },
     {
       "data": {
-        "degree": 325,
+        "degree": 326,
         "height": 78,
         "id": "tag:programming",
         "internal_link_degree": 0,
         "label": "programming",
         "size": 78,
         "tag": "programming",
-        "tag_degree": 325,
+        "tag_degree": 326,
         "type": "tag",
         "url": "/blog/tags/programming",
         "width": 78
@@ -25193,14 +25254,14 @@
     },
     {
       "data": {
-        "degree": 320,
+        "degree": 321,
         "height": 78,
         "id": "tag:python",
         "internal_link_degree": 0,
         "label": "python",
         "size": 78,
         "tag": "python",
-        "tag_degree": 320,
+        "tag_degree": 321,
         "type": "tag",
         "url": "/blog/tags/python",
         "width": 78
@@ -25569,9 +25630,9 @@
   ],
   "site": "https://mathspp.com",
   "stats": {
-    "articles": 449,
+    "articles": 450,
     "internal_links": 394,
-    "tag_edges": 1379,
-    "tags": 98
+    "tag_edges": 1382,
+    "tags": 99
   }
 }

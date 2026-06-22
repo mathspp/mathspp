@@ -1,0 +1,18 @@
+date: 22-06-2026 14:32
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Learn how to write a coding agent in Python in this tutorial that teaches how to interact with an LLM through an API, how to manage the context, and how to do tool calling."
+    og:image: "https://mathspp.com/blog/write-a-coding-agent-from-first-principles/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/write-a-coding-agent-from-first-principles/thumbnail.webp"
+references:
+  - "Define tools, Claude Documentation, <https://platform.claude.com/docs/en/agents-and-tools/tool-use/define-tools> [last accessed 22-06-2026];"
+  - "Handle tool calls, Claude Documentation, <https://platform.claude.com/docs/en/agents-and-tools/tool-use/handle-tool-calls> [last accessed 22-06-2026];"
+slug: "write-a-coding-agent-from-first-principles"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+      - python
+      - programming
+      - llms
+title: Write a coding agent from first principles

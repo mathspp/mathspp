@@ -6427,5 +6427,19 @@
       "loc": 82,
       "words": 343
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/write-a-coding-agent-from-first-principles": {
+    "timestamp": 1782153182.50329,
+    "tags": [
+      "python",
+      "programming",
+      "llms"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 41,
+      "loc": 675,
+      "words": 4737
+    }
   }
 }
