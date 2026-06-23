@@ -1,4 +1,4 @@
-Learn how to write a coding agent in Python in this tutorial that teaches how to interact with an LLM through an API, how to manage the context, and how to do tool calling.
+Learn how to write a coding agent in this Python tutorial that teaches how to interact with an LLM through an API, how to manage the conversation context, and how to do tool calling.
 
 ===
 
@@ -1241,5 +1241,3 @@ To keep exploring the world of coding agents, there are three natural directions
  1. learn about the [Anthropic-provided tools](https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-reference), that you can leverage to create a coding agent that's even more robust
  2. implement [response streaming](https://platform.claude.com/docs/en/cli-sdks-libraries/sdks/python#streaming-responses) to allow the agent to provide longer responses and to use more tools
  3. improve the agent UI, for example by using `rich` to add colours to the output or by using `textual` to add a TUI to the agent
-
-
