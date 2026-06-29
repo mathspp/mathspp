@@ -5,14 +5,14 @@ metadata:
     description: "Learn how Python powers iterators and what generators have to do with this."
     og:image: "https://mathspp.com/insider/archive/iterators-next-generators-and-the-like/thumbnail.webp"
     twitter:image: "https://mathspp.com/insider/archive/iterators-next-generators-and-the-like/thumbnail.webp"
-title: "iterators, next, generators, and the like"
+title: "Iterators, next, generators, and the like"
 
 process:
   twig: true
 cache_enable: false
 ---
 
-# 🐍🚀 iterators, next, generators, and the like
+# 🐍🚀 Iterators, next, generators, and the like
 
  > This is a past issue of the [mathspp insider 🐍🚀](/insider) newsletter. [Subscribe to the mathspp insider 🐍🚀](/insider) to get weekly Python deep dives like this one on your inbox!
 

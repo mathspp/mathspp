@@ -5,14 +5,14 @@ metadata:
     description: "Learn about the new built-in coming to Python 3.15: the frozendict."
     og:image: "https://mathspp.com/insider/archive/new-builtin-type-frozendict/thumbnail.webp"
     twitter:image: "https://mathspp.com/insider/archive/new-builtin-type-frozendict/thumbnail.webp"
-title: "new built-in type: frozendict"
+title: "New built-in type: frozendict"
 
 process:
   twig: true
 cache_enable: false
 ---
 
-# 🐍🚀 new built-in type: frozendict
+# 🐍🚀 New built-in type: frozendict
 
  > This is a past issue of the [mathspp insider 🐍🚀](/insider) newsletter. [Subscribe to the mathspp insider 🐍🚀](/insider) to get weekly Python deep dives like this one on your inbox!
 
