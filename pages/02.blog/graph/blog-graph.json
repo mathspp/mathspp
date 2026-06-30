@@ -3146,6 +3146,22 @@
     },
     {
       "data": {
+        "id": "internal-link:article:write-a-coding-agent-from-first-principles-better-tools->article:decorators",
+        "source": "article:write-a-coding-agent-from-first-principles-better-tools",
+        "target": "article:decorators",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:write-a-coding-agent-from-first-principles-better-tools->article:write-a-coding-agent-from-first-principles",
+        "source": "article:write-a-coding-agent-from-first-principles-better-tools",
+        "target": "article:write-a-coding-agent-from-first-principles",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
         "id": "internal-link:article:zip-up->article:pydont-manifesto",
         "source": "article:zip-up",
         "target": "article:pydont-manifesto",
@@ -14034,6 +14050,30 @@
     },
     {
       "data": {
+        "id": "tag:article:write-a-coding-agent-from-first-principles-better-tools->tag:llms",
+        "source": "article:write-a-coding-agent-from-first-principles-better-tools",
+        "target": "tag:llms",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:write-a-coding-agent-from-first-principles-better-tools->tag:programming",
+        "source": "article:write-a-coding-agent-from-first-principles-better-tools",
+        "target": "tag:programming",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:write-a-coding-agent-from-first-principles-better-tools->tag:python",
+        "source": "article:write-a-coding-agent-from-first-principles-better-tools",
+        "target": "tag:python",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
         "id": "tag:article:write-a-python-module-in-rust->tag:programming",
         "source": "article:write-a-python-module-in-rust",
         "target": "tag:programming",
@@ -14209,7 +14249,7 @@
       }
     }
   ],
-  "generated_at": "2026-06-23T21:26:33+00:00",
+  "generated_at": "2026-06-30T14:25:12+00:00",
   "nodes": [
     {
       "data": {
@@ -14362,12 +14402,12 @@
     {
       "data": {
         "date": "21-01-2025 18:11",
-        "degree": 10,
-        "height": 35,
+        "degree": 11,
+        "height": 36,
         "id": "article:decorators",
-        "internal_link_degree": 7,
+        "internal_link_degree": 8,
         "label": "Decorators | Pydon't \ud83d\udc0d",
-        "size": 35,
+        "size": 36,
         "slug": "decorators",
         "tag_degree": 3,
         "tags": [
@@ -14378,7 +14418,7 @@
         "title": "Decorators | Pydon't \ud83d\udc0d",
         "type": "article",
         "url": "/blog/pydonts/decorators",
-        "width": 51
+        "width": 52
       }
     },
     {
@@ -24013,12 +24053,12 @@
     {
       "data": {
         "date": "22-06-2026 14:32",
-        "degree": 3,
-        "height": 28,
+        "degree": 4,
+        "height": 29,
         "id": "article:write-a-coding-agent-from-first-principles",
-        "internal_link_degree": 0,
+        "internal_link_degree": 1,
         "label": "Write a coding agent from first principles",
-        "size": 28,
+        "size": 29,
         "slug": "write-a-coding-agent-from-first-principles",
         "tag_degree": 3,
         "tags": [
@@ -24029,7 +24069,29 @@
         "title": "Write a coding agent from first principles",
         "type": "article",
         "url": "/blog/write-a-coding-agent-from-first-principles",
-        "width": 41
+        "width": 42
+      }
+    },
+    {
+      "data": {
+        "date": "24-06-2026 20:00",
+        "degree": 5,
+        "height": 30,
+        "id": "article:write-a-coding-agent-from-first-principles-better-tools",
+        "internal_link_degree": 2,
+        "label": "Write a coding agent from first principles: better tools",
+        "size": 30,
+        "slug": "write-a-coding-agent-from-first-principles-better-tools",
+        "tag_degree": 3,
+        "tags": [
+          "llms",
+          "programming",
+          "python"
+        ],
+        "title": "Write a coding agent from first principles: better tools",
+        "type": "article",
+        "url": "/blog/write-a-coding-agent-from-first-principles-better-tools",
+        "width": 44
       }
     },
     {
@@ -24774,17 +24836,17 @@
     },
     {
       "data": {
-        "degree": 1,
-        "height": 24,
+        "degree": 2,
+        "height": 26,
         "id": "tag:llms",
         "internal_link_degree": 0,
         "label": "llms",
-        "size": 24,
+        "size": 26,
         "tag": "llms",
-        "tag_degree": 1,
+        "tag_degree": 2,
         "type": "tag",
         "url": "/blog/tags/llms",
-        "width": 24
+        "width": 26
       }
     },
     {
@@ -25194,14 +25256,14 @@
     },
     {
       "data": {
-        "degree": 326,
+        "degree": 327,
         "height": 78,
         "id": "tag:programming",
         "internal_link_degree": 0,
         "label": "programming",
         "size": 78,
         "tag": "programming",
-        "tag_degree": 326,
+        "tag_degree": 327,
         "type": "tag",
         "url": "/blog/tags/programming",
         "width": 78
@@ -25254,14 +25316,14 @@
     },
     {
       "data": {
-        "degree": 321,
+        "degree": 322,
         "height": 78,
         "id": "tag:python",
         "internal_link_degree": 0,
         "label": "python",
         "size": 78,
         "tag": "python",
-        "tag_degree": 321,
+        "tag_degree": 322,
         "type": "tag",
         "url": "/blog/tags/python",
         "width": 78
@@ -25630,9 +25692,9 @@
   ],
   "site": "https://mathspp.com",
   "stats": {
-    "articles": 450,
-    "internal_links": 394,
-    "tag_edges": 1382,
+    "articles": 451,
+    "internal_links": 396,
+    "tag_edges": 1385,
     "tags": 99
   }
 }

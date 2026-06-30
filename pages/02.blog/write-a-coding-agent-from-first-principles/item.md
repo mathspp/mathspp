@@ -31,7 +31,7 @@ That starts now.
 
 ## Project set up
 
-To set your project up, start by using uv to create a packageable app project[^2]:
+To set your project up, start by using uv to create a packageable app project:[^2]
 
 [^2]: Learn more about how speed up your Python workflows with uv in [this free 4-day uv email course](/courses/uv).
 
