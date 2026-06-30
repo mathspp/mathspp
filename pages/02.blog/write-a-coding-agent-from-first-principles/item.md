@@ -12,7 +12,7 @@ By doing so, you'll understand how coding agents work under the hood.
 To be able to follow this tutorial, you'll need
 
  - **prior Python experience**: this tutorial is not suitable for people who don't have programming experience
- - **a valid Claude API key**: you can get a Claude API key in [the Claude Console dashboard](https://platform.claude.com/dashboard)[^1]
+ - **a valid Claude API key**: you can get a Claude API key in [the Claude Console dashboard](https://platform.claude.com/dashboard) [^1]
  - **uv**: to manage the project you'll be working on
 
 [^1]: I went through the steps in this tutorial multiple times while drafting the article, rehearsing live sessions, teaching tutorials, and more, and my spending is always under 20 cents.
