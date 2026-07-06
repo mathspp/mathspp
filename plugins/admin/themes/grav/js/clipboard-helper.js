@@ -32,7 +32,7 @@ window.GravClipboard = {
             var originalHTML = buttonElement.innerHTML;
             
             // Show success feedback
-            buttonElement.innerHTML = '<i class="fas fa-check"></i> Copied!';
+            buttonElement.innerHTML = '<i class="fa fa-check"></i> Copied!';
             
             // Restore original content after delay
             setTimeout(function() {

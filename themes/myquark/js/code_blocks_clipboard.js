@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
             range.selectNodeContents(block);
             navigator.clipboard.writeText(block.textContent);
 
-            icon.classList.replace("fa-copy", "fa-check");
+            icon.classList.replace("far fa-copy", "fas fa-check");
             setTimeout(() => {
-                icon.classList.replace("fa-check", "fa-copy");
+                icon.classList.replace("fas fa-check", "far fa-copy");
             }, 2000);
         });
 
