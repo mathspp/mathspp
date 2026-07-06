@@ -101,7 +101,7 @@ Then, a static type checker can let you know whether you're trying to access the
 
 To create a `TypedDict`, you create a class that inherits from `TypedDict`.
 
-The, you list the keys as class variables with a type hint that indicate the type of the corresponding value.
+Then, you list the keys as class variables with a type hint that indicates the type of the corresponding value.
 
 For the newsletter issue dictionary, you'd write something like
 
