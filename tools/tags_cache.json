@@ -48,22 +48,16 @@
     "words": 4628
   },
   "llms": {
-    "articles": 2,
-    "code_snippets": 86,
-    "loc": 1230,
-    "words": 8923
+    "articles": 9,
+    "code_snippets": 197,
+    "loc": 2117,
+    "words": 17302
   },
   "algorithms": {
     "articles": 28,
     "code_snippets": 292,
     "loc": 3367,
     "words": 37285
-  },
-  "llm": {
-    "articles": 8,
-    "code_snippets": 112,
-    "loc": 895,
-    "words": 9515
   },
   "machine learning": {
     "articles": 11,
@@ -220,6 +214,12 @@
     "code_snippets": 0,
     "loc": 0,
     "words": 6155
+  },
+  "llm": {
+    "articles": 1,
+    "code_snippets": 1,
+    "loc": 8,
+    "words": 1136
   },
   "productivity": {
     "articles": 33,

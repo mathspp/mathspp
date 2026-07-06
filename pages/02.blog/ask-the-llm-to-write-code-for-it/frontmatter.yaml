@@ -13,6 +13,6 @@ taxonomy:
     tag:
       - python
       - programming
-      - llm
+      - llms
       - slice of life
 title: Ask the LLM to write code for it

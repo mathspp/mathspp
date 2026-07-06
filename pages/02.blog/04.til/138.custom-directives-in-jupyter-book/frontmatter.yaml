@@ -13,6 +13,6 @@ taxonomy:
     category: [blogpost, til]
     tag:
       - productivity
-      - llm
+      - llms
 title: "TIL #138 – Custom directives in Jupyter Book"
 visible: false

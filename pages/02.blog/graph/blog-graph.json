@@ -4762,9 +4762,9 @@
     },
     {
       "data": {
-        "id": "tag:article:ask-the-llm-to-write-code-for-it->tag:llm",
+        "id": "tag:article:ask-the-llm-to-write-code-for-it->tag:llms",
         "source": "article:ask-the-llm-to-write-code-for-it",
-        "target": "tag:llm",
+        "target": "tag:llms",
         "type": "tag"
       }
     },
@@ -4842,9 +4842,9 @@
     },
     {
       "data": {
-        "id": "tag:article:automatic-site-updates-with-cog-and-pre-commit->tag:llm",
+        "id": "tag:article:automatic-site-updates-with-cog-and-pre-commit->tag:llms",
         "source": "article:automatic-site-updates-with-cog-and-pre-commit",
-        "target": "tag:llm",
+        "target": "tag:llms",
         "type": "tag"
       }
     },
@@ -4890,9 +4890,9 @@
     },
     {
       "data": {
-        "id": "tag:article:automatically-activating-virtual-environments->tag:llm",
+        "id": "tag:article:automatically-activating-virtual-environments->tag:llms",
         "source": "article:automatically-activating-virtual-environments",
-        "target": "tag:llm",
+        "target": "tag:llms",
         "type": "tag"
       }
     },
@@ -6514,9 +6514,9 @@
     },
     {
       "data": {
-        "id": "tag:article:custom-directives-in-jupyter-book->tag:llm",
+        "id": "tag:article:custom-directives-in-jupyter-book->tag:llms",
         "source": "article:custom-directives-in-jupyter-book",
-        "target": "tag:llm",
+        "target": "tag:llms",
         "type": "tag"
       }
     },
@@ -6762,9 +6762,9 @@
     },
     {
       "data": {
-        "id": "tag:article:cyclic-trapezoid-animation->tag:llm",
+        "id": "tag:article:cyclic-trapezoid-animation->tag:llms",
         "source": "article:cyclic-trapezoid-animation",
-        "target": "tag:llm",
+        "target": "tag:llms",
         "type": "tag"
       }
     },
@@ -12090,9 +12090,9 @@
     },
     {
       "data": {
-        "id": "tag:article:running-python-inside-chatgpt->tag:llm",
+        "id": "tag:article:running-python-inside-chatgpt->tag:llms",
         "source": "article:running-python-inside-chatgpt",
-        "target": "tag:llm",
+        "target": "tag:llms",
         "type": "tag"
       }
     },
@@ -13490,9 +13490,9 @@
     },
     {
       "data": {
-        "id": "tag:article:using-an-llm-to-write-a-countdown-timer->tag:llm",
+        "id": "tag:article:using-an-llm-to-write-a-countdown-timer->tag:llms",
         "source": "article:using-an-llm-to-write-a-countdown-timer",
-        "target": "tag:llm",
+        "target": "tag:llms",
         "type": "tag"
       }
     },
@@ -14249,7 +14249,7 @@
       }
     }
   ],
-  "generated_at": "2026-07-06T14:12:49+00:00",
+  "generated_at": "2026-07-06T14:16:40+00:00",
   "nodes": [
     {
       "data": {
@@ -18857,7 +18857,7 @@
         "slug": "automatically-activating-virtual-environments",
         "tag_degree": 4,
         "tags": [
-          "llm",
+          "llms",
           "productivity",
           "python",
           "shell"
@@ -19532,7 +19532,7 @@
         "tag_degree": 2,
         "tags": [
           "productivity",
-          "llm"
+          "llms"
         ],
         "title": "TIL #138 \u2013 Custom directives in Jupyter Book",
         "type": "article",
@@ -20722,7 +20722,7 @@
         "tags": [
           "python",
           "programming",
-          "llm",
+          "llms",
           "slice of life"
         ],
         "title": "Ask the LLM to write code for it",
@@ -20744,7 +20744,7 @@
         "tag_degree": 7,
         "tags": [
           "git",
-          "llm",
+          "llms",
           "productivity",
           "programming",
           "python",
@@ -21507,7 +21507,7 @@
           "mathematics",
           "geometry",
           "visualisation",
-          "llm"
+          "llms"
         ],
         "title": "Cyclic trapezoid animation",
         "type": "article",
@@ -23339,7 +23339,7 @@
         "slug": "running-python-inside-chatgpt",
         "tag_degree": 4,
         "tags": [
-          "llm",
+          "llms",
           "machine learning",
           "programming",
           "python"
@@ -23748,7 +23748,7 @@
         "slug": "using-an-llm-to-write-a-countdown-timer",
         "tag_degree": 7,
         "tags": [
-          "llm",
+          "llms",
           "opinion",
           "productivity",
           "programming",
@@ -24808,6 +24808,21 @@
       "data": {
         "degree": 1,
         "height": 24,
+        "id": "tag:llm",
+        "internal_link_degree": 0,
+        "label": "llm",
+        "size": 24,
+        "tag": "llm",
+        "tag_degree": 1,
+        "type": "tag",
+        "url": "/blog/tags/llm",
+        "width": 24
+      }
+    },
+    {
+      "data": {
+        "degree": 1,
+        "height": 24,
         "id": "tag:LLM",
         "internal_link_degree": 0,
         "label": "LLM",
@@ -24821,32 +24836,17 @@
     },
     {
       "data": {
-        "degree": 8,
+        "degree": 9,
         "height": 34,
-        "id": "tag:llm",
-        "internal_link_degree": 0,
-        "label": "llm",
-        "size": 34,
-        "tag": "llm",
-        "tag_degree": 8,
-        "type": "tag",
-        "url": "/blog/tags/llm",
-        "width": 34
-      }
-    },
-    {
-      "data": {
-        "degree": 2,
-        "height": 26,
         "id": "tag:llms",
         "internal_link_degree": 0,
         "label": "llms",
-        "size": 26,
+        "size": 34,
         "tag": "llms",
-        "tag_degree": 2,
+        "tag_degree": 9,
         "type": "tag",
         "url": "/blog/tags/llms",
-        "width": 26
+        "width": 34
       }
     },
     {

@@ -43,9 +43,9 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/running-python-inside-chatgpt": {
-    "timestamp": 1753281783.1069584,
+    "timestamp": 1783347288.6588194,
     "tags": [
-      "llm",
+      "llms",
       "machine learning",
       "programming",
       "python"
@@ -1439,10 +1439,10 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/automatic-site-updates-with-cog-and-pre-commit": {
-    "timestamp": 1753281201.2762344,
+    "timestamp": 1783347292.2648375,
     "tags": [
       "git",
-      "llm",
+      "llms",
       "productivity",
       "programming",
       "python",
@@ -4955,9 +4955,9 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/107.automatically-activating-virtual-environments": {
-    "timestamp": 1760992473.2553732,
+    "timestamp": 1783347300.8288321,
     "tags": [
-      "llm",
+      "llms",
       "productivity",
       "python",
       "shell"
@@ -5305,9 +5305,9 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/using-an-llm-to-write-a-countdown-timer": {
-    "timestamp": 1753281895.6674042,
+    "timestamp": 1783347279.5333507,
     "tags": [
-      "llm",
+      "llms",
       "opinion",
       "productivity",
       "programming",
@@ -6187,10 +6187,10 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/138.custom-directives-in-jupyter-book": {
-    "timestamp": 1767393530.1833851,
+    "timestamp": 1783347298.0185652,
     "tags": [
       "productivity",
-      "llm"
+      "llms"
     ],
     "stats": {
       "articles": 1,
@@ -6284,12 +6284,12 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/cyclic-trapezoid-animation": {
-    "timestamp": 1773506102.4502857,
+    "timestamp": 1783347285.4790452,
     "tags": [
       "mathematics",
       "geometry",
       "visualisation",
-      "llm"
+      "llms"
     ],
     "stats": {
       "articles": 1,
@@ -6299,11 +6299,11 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/ask-the-llm-to-write-code-for-it": {
-    "timestamp": 1774362556.699721,
+    "timestamp": 1783347295.5653155,
     "tags": [
       "python",
       "programming",
-      "llm",
+      "llms",
       "slice of life"
     ],
     "stats": {

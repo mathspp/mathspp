@@ -402,10 +402,10 @@
     "words": 2443
   },
   "llm": {
-    "articles": 8,
-    "code_snippets": 112,
-    "loc": 895,
-    "words": 9515
+    "articles": 1,
+    "code_snippets": 1,
+    "loc": 8,
+    "words": 1136
   },
   "json": {
     "articles": 5,
@@ -624,9 +624,9 @@
     "words": 307
   },
   "llms": {
-    "articles": 2,
-    "code_snippets": 86,
-    "loc": 1230,
-    "words": 8923
+    "articles": 9,
+    "code_snippets": 197,
+    "loc": 2117,
+    "words": 17302
   }
 }
