@@ -15,9 +15,11 @@ document.addEventListener("DOMContentLoaded", function () {
             range.selectNodeContents(block);
             navigator.clipboard.writeText(block.textContent);
 
-            icon.classList.replace("far fa-copy", "fas fa-check");
+            icon.classList.replace("fa-copy", "fa-check");
+            icon.classList.replace("far", "fas");
             setTimeout(() => {
-                icon.classList.replace("fas fa-check", "far fa-copy");
+                icon.classList.replace("fa-check", "fa-copy");
+                icon.classList.replace("fas", "far");
             }, 2000);
         });
 
