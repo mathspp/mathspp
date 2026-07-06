@@ -48,10 +48,10 @@
     "words": 4628
   },
   "llms": {
-    "articles": 9,
-    "code_snippets": 197,
-    "loc": 2117,
-    "words": 17302
+    "articles": 10,
+    "code_snippets": 198,
+    "loc": 2125,
+    "words": 18438
   },
   "algorithms": {
     "articles": 28,
@@ -214,12 +214,6 @@
     "code_snippets": 0,
     "loc": 0,
     "words": 6155
-  },
-  "llm": {
-    "articles": 1,
-    "code_snippets": 1,
-    "loc": 8,
-    "words": 1136
   },
   "productivity": {
     "articles": 33,

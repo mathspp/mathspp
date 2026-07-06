@@ -5930,9 +5930,9 @@
     },
     {
       "data": {
-        "id": "tag:article:chatgpt-for-quick-prototyping->tag:llm",
+        "id": "tag:article:chatgpt-for-quick-prototyping->tag:llms",
         "source": "article:chatgpt-for-quick-prototyping",
-        "target": "tag:llm",
+        "target": "tag:llms",
         "type": "tag"
       }
     },
@@ -14249,7 +14249,7 @@
       }
     }
   ],
-  "generated_at": "2026-07-06T14:16:40+00:00",
+  "generated_at": "2026-07-06T14:18:18+00:00",
   "nodes": [
     {
       "data": {
@@ -21237,7 +21237,7 @@
         "slug": "chatgpt-for-quick-prototyping",
         "tag_degree": 2,
         "tags": [
-          "llm",
+          "llms",
           "productivity"
         ],
         "title": "ChatGPT for quick prototyping",
@@ -24808,21 +24808,6 @@
       "data": {
         "degree": 1,
         "height": 24,
-        "id": "tag:llm",
-        "internal_link_degree": 0,
-        "label": "llm",
-        "size": 24,
-        "tag": "llm",
-        "tag_degree": 1,
-        "type": "tag",
-        "url": "/blog/tags/llm",
-        "width": 24
-      }
-    },
-    {
-      "data": {
-        "degree": 1,
-        "height": 24,
         "id": "tag:LLM",
         "internal_link_degree": 0,
         "label": "LLM",
@@ -24836,17 +24821,17 @@
     },
     {
       "data": {
-        "degree": 9,
-        "height": 34,
+        "degree": 10,
+        "height": 35,
         "id": "tag:llms",
         "internal_link_degree": 0,
         "label": "llms",
-        "size": 34,
+        "size": 35,
         "tag": "llms",
-        "tag_degree": 9,
+        "tag_degree": 10,
         "type": "tag",
         "url": "/blog/tags/llms",
-        "width": 34
+        "width": 35
       }
     },
     {
@@ -25695,6 +25680,6 @@
     "articles": 451,
     "internal_links": 396,
     "tag_edges": 1385,
-    "tags": 99
+    "tags": 98
   }
 }
