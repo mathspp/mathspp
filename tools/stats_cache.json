@@ -6443,7 +6443,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/write-a-coding-agent-from-first-principles-better-tools": {
-    "timestamp": 1782829506.4899812,
+    "timestamp": 1783347152.0201714,
     "tags": [
       "llms",
       "programming",
@@ -6451,9 +6451,9 @@
     ],
     "stats": {
       "articles": 1,
-      "code_snippets": 41,
-      "loc": 461,
-      "words": 3624
+      "code_snippets": 45,
+      "loc": 555,
+      "words": 4185
     }
   }
 }

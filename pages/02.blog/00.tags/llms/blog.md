@@ -4,7 +4,7 @@ anchors:
 body_classes: "header-dark header-transparent"
 content:
     items:
-        "@taxonomy": {"category": "blogpost", "tag": "python"}
+        "@taxonomy": {"category": "blogpost", "tag": "llms"}
     limit: 20
     order:
         by: date
@@ -14,23 +14,23 @@ hero_image_url: /user/themes/myquark/images/common_hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 metadata:
     author: Rodrigo Girão Serrão
-    description: "All of the mathspp blog articles about Python."
-    og:description: "All of the mathspp blog articles about Python."
-    og:image: "https://mathspp.com/blog/tags/Python/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/Python/thumbnail.webp"
-title: "Python blog articles"
+    description: "All of the mathspp blog articles about Llms."
+    og:description: "All of the mathspp blog articles about Llms."
+    og:image: "https://mathspp.com/blog/tags/Llms/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/Llms/thumbnail.webp"
+title: "Llms blog articles"
 ---
 
 
-# The Python programming language, tutorials, and more
+# “LLMS” tag
 
 
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">322</th>
-            <th style="text-align: center;">399,457</th>
-            <th style="text-align: center;">38,475</th>
+            <th style="text-align: center;">2</th>
+            <th style="text-align: center;">8,923</th>
+            <th style="text-align: center;">1,230</th>
         </tr>
     </thead>
     <tbody>

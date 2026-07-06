@@ -19,15 +19,15 @@
   },
   "programming": {
     "articles": 327,
-    "code_snippets": 4098,
-    "loc": 39472,
-    "words": 399998
+    "code_snippets": 4102,
+    "loc": 39566,
+    "words": 400559
   },
   "python": {
     "articles": 322,
-    "code_snippets": 3980,
-    "loc": 38381,
-    "words": 398896
+    "code_snippets": 3984,
+    "loc": 38475,
+    "words": 399457
   },
   "algorithms": {
     "articles": 28,
@@ -565,9 +565,9 @@
   },
   "__all": {
     "articles": 452,
-    "code_snippets": 4245,
-    "loc": 40755,
-    "words": 493417
+    "code_snippets": 4249,
+    "loc": 40849,
+    "words": 493978
   },
   "fp": {
     "articles": 5,
@@ -625,8 +625,8 @@
   },
   "llms": {
     "articles": 2,
-    "code_snippets": 82,
-    "loc": 1136,
-    "words": 8362
+    "code_snippets": 86,
+    "loc": 1230,
+    "words": 8923
   }
 }

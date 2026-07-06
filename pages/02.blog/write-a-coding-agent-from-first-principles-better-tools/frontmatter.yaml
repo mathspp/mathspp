@@ -1,0 +1,19 @@
+date: 06-07-2026 15:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Improve the capabilities of your agent by providing it with better tools."
+    og:image: "https://mathspp.com/blog/write-a-coding-agent-from-first-principles-better-tools/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/write-a-coding-agent-from-first-principles-better-tools/thumbnail.webp"
+references:
+  - "Tool reference, Claude API Docs, <https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-reference> [last accessed 24-06-2026];"
+  - "Text editor tool, API Docs, <https://platform.claude.com/docs/en/agents-and-tools/tool-use/text-editor-tool> [last accessed 24-06-2026];"
+  - "Bash tool, API Docs, <https://platform.claude.com/docs/en/agents-and-tools/tool-use/bash-tool> [last accessed 24-06-2026];"
+slug: "write-a-coding-agent-from-first-principles-better-tools"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+      - llms
+      - programming
+      - python
+title: "Write a coding agent from first principles: better tools"
