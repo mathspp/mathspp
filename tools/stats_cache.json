@@ -6429,7 +6429,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/write-a-coding-agent-from-first-principles": {
-    "timestamp": 1783410986.491659,
+    "timestamp": 1783411093.5877433,
     "tags": [
       "python",
       "programming",
@@ -6439,11 +6439,11 @@
       "articles": 1,
       "code_snippets": 41,
       "loc": 675,
-      "words": 4772
+      "words": 4805
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/write-a-coding-agent-from-first-principles-better-tools": {
-    "timestamp": 1783410980.9218147,
+    "timestamp": 1783411111.4739742,
     "tags": [
       "llms",
       "programming",
@@ -6453,7 +6453,7 @@
       "articles": 1,
       "code_snippets": 45,
       "loc": 555,
-      "words": 4239
+      "words": 4272
     }
   }
 }

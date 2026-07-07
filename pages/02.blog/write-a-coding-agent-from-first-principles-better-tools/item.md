@@ -141,6 +141,9 @@ If the tool use wants to use the command `create`, you'll get a tool use that lo
 For this command, and the others that follow, the function that implements the tool is going to work with the dictionary `"input"`.
 The file path is in the key `"path"` and the string contents are in the key `"file_text"`.
 
+!!!! This tutorial [has an accompanying GitHub repo](https://github.com/mathspp/coding-agent-tutorial).
+!!!! At each exercise, you'll be linked to a point in the history of the repo that contains all the code _up to that exercise_.
+
 !!! **Exercise**: define a function `view` that accepts the dictionary `"input"` and implements the command `create`.
 !!! Work on this for up to 10 minutes and then keep reading.
 !!! [Companion repo checkpoint](https://github.com/mathspp/coding-agent-tutorial/tree/part-2-before-create-exercise).

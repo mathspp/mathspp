@@ -143,6 +143,9 @@ If you get an error complaining about your authentication/API key, make sure you
 
 Now that you can get a joke from an LLM, can you get a second one?
 
+!!!! This tutorial [has an accompanying GitHub repo](https://github.com/mathspp/coding-agent-tutorial).
+!!!! At each exercise, you'll be linked to a point in the history of the repo that contains all the code _up to that exercise_.
+
 !!! **Exercise**: improve your agent by letting the user type its message, instead of hardcoding “Tell me a joke.”, and use a loop to make it a conversation.
 !!! Work on this for 15 minutes, maximum, and then keep reading.
 !!! [Companion repo checkpoint](https://github.com/mathspp/coding-agent-tutorial/tree/part-1-before-conversation-exercise).
