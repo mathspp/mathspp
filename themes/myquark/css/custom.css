@@ -468,6 +468,10 @@ a:hover {
     box-shadow: 0 10px 45px -9px var(--ui);
 }
 
+.notices {
+    margin-right: 20px;
+}
+
 .notices.blue {
     border-left-color: var(--bl);
     background: var(--bg-2);
