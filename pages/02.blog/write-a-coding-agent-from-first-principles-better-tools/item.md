@@ -143,6 +143,7 @@ The file path is in the key `"path"` and the string contents are in the key `"fi
 
 !!! **Exercise**: define a function `view` that accepts the dictionary `"input"` and implements the command `create`.
 !!! Work on this for up to 10 minutes and then keep reading.
+!!! [Companion repo checkpoint](https://github.com/mathspp/coding-agent-tutorial/tree/part-2-before-create-exercise).
 
 To implement this function, you can use the module `pathlib` to create an object `pathlib.Path` and then use the method `.write_text` to write the text you're given into the file:
 
@@ -207,6 +208,7 @@ An example tool use block for the command `str_replace` looks like this:
 
 !!! **Exercise**: implement the function `str_replace` that accepts the dictionary `"input"` and handles the tool use.
 !!! Spend up to 10 minutes on this and then keep reading.
+!!! [Companion repo checkpoint](https://github.com/mathspp/coding-agent-tutorial/tree/part-2-before-replace-exercise).
 
 The string built-in type provides the method `replace` that is the most appropriate tool for this task.
 If you're thinking about using the module `re` for regex replacements, you're overthinking this.
@@ -308,6 +310,7 @@ An example tool use block that _includes_ the optional view range looks like thi
 
 !!! **Exercise**: implement the function `view` that accepts the dictionary `"input"` and handles the tool use.
 !!! Spend up to 10 minutes on this and then keep reading.
+!!! [Companion repo checkpoint](https://github.com/mathspp/coding-agent-tutorial/tree/part-2-before-view-exercise).
 
 My suggestion is that you start by _not_ handling the optional key `"view_range"`, which means your code for the function `view` can look more or less like this:
 
@@ -444,6 +447,7 @@ def is_prime(n):
 
 !!! **Exercise**: implement the function `insert` that accepts the dictionary `"input"` and handles the tool use.
 !!! Spend up to 15 minutes on this and then keep reading.
+!!! [Companion repo checkpoint](https://github.com/mathspp/coding-agent-tutorial/tree/part-2-before-insert-exercise).
 
 The first step is splitting both the text file and the text to be inserted into lines with the string method `.splitlines(keepends=True)`.
 You want `keepends=True` for the same reasons mentioned when you implemented the command `view`.
@@ -499,6 +503,7 @@ For instance, you may want to restrict editing access so that the agent can only
 !!! If it's not, return an error message saying the agent doesn't have access to that directory.
 !!! If you don't know how to create decorators, write the check explicitly inside one of the functions and then copy and paste it into the other functions.
 !!! Work on this for up to 20 minutes and then keep reading.
+!!! [Companion repo checkpoint](https://github.com/mathspp/coding-agent-tutorial/tree/part-2-before-workspace-exercise).
 
 If `path` is an arbitrary path and `cwd` is the current working directory, you can check if `path` is _under_ `cwd` by writing `cwd in path.parents`.
 Using that, the check inside a function would look like this:
@@ -565,6 +570,7 @@ In other words, before the agent makes an insertion or a string replacement, cre
 !!! The copy should be timestamped with the current date and time.
 !!! If you don't know how to create decorators, write the backup logic explicitly inside one of the functions and then copy and paste it into the other function.
 !!! Work on this for up to 20 minutes and then keep reading.
+!!! [Companion repo checkpoint](https://github.com/mathspp/coding-agent-tutorial/tree/part-2-before-backup-exercise).
 
 Using the module `datetime` (as `dt`), you can create a timestamp with `dt.datetime.now().strftime("%y%m%d-%H%M%S")`.
 You can use that timestamp, together with the method `.with_name` from path objects, and the function `shutil.copy2`, to make the backup.
@@ -607,6 +613,7 @@ Now, you need to apply this decorator to the functions `str_replace` and `insert
 !!! **Exercise**: the order in which decorators are applied _is_ relevant.
 !!! Figure out the correct order in which `@make_path_backup` and `@only_within_cwd` must be applied.
 !!! Work on this for up to 10 minutes and then keep reading.
+!!! [Companion repo checkpoint](https://github.com/mathspp/coding-agent-tutorial/tree/part-2-before-decorator-order-exercise).
 
 For the functions `str_replace` and `insert` you want the two actions to happen in the correct order:
 
@@ -659,6 +666,7 @@ To implement a bash session with persistence, you're going to create a class `Ba
 
 !!! **Exercise**: implement the class `BashSession` described above.
 !!! Work on this for up to 30 minutes and then keep reading.
+!!! [Companion repo checkpoint](https://github.com/mathspp/coding-agent-tutorial/tree/part-2-before-bash-session-exercise).
 
 ! **Hint**: when running a command in `BashSession.run`, send `"echo __DONE__\n"` to the bash subprocess _after_ the original command.
 ! When reading output, you know you're done if you see the string `"__DONE__\n"`.
@@ -828,6 +836,7 @@ Anthropic's models might request to use the bash tool in two different ways:
 
 !!! **Exercise**: using the class `BashSession` you implemented earlier, handle the bash tool use requests.
 !!! Work on this for 10 minutes maximum and then keep reading.
+!!! [Companion repo checkpoint](https://github.com/mathspp/coding-agent-tutorial/tree/part-2-before-bash-handling-exercise).
 
 An instance of the class `BashSession` has an associated subprocess running, so there's no point in creating the instance before it's needed.
 Instead, you set a variable `bash_session` to `None` and instantiate the class `BashSession` only when required:
@@ -877,6 +886,7 @@ Additionally, you can also ensure that the total length of the output string tha
 
 !!! **Exercise**: limit the amount of output that you have to work with after running a bash command by restricting the total number of output lines.
 !!! Work on this for 10 minutes and then keep reading.
+!!! [Companion repo checkpoint](https://github.com/mathspp/coding-agent-tutorial/tree/part-2-before-truncation-exercise).
 
 To limit the number of lines of output returned by the bash session you can't just stop getting output from the bash subprocess if you hit the limit.
 Instead, you have to get all lines of output until you find the marker that says you're done and _then_ you truncate your output.
@@ -913,6 +923,7 @@ You want to make sure your agent doesn't run any dangerous commands, so you need
 !!! **Exercise**: add a guardrail that asks the user for permission every time the agent wants to run a command.
 !!! Give the user the option to mark the command as safe to run always, so that that command is automatically allowed during the same chat session.
 !!! Work on this for 10 minutes and then keep reading.
+!!! [Companion repo checkpoint](https://github.com/mathspp/coding-agent-tutorial/tree/part-2-before-approval-exercise).
 
 You're starting to develop a few things around the concept of a persistent bash session, so you can separate the core bash session — responsible for running commands and getting their output — from everything else around it that's related to the bash tool.
 This means taking a step back and factoring the method `_truncate_output` out of the class `BashSession`:
@@ -1056,7 +1067,7 @@ In this tutorial, you improved your agent by:
 
 In doing so, your agent became much more robust and consistent because it can use powerful tools the models were specifically trained on.
 
-Sitting at roughly 300 lines of code (100 for the agentic loop and command management, 100 for the text editor tool, and 100 for the bash session and tool manager), you can get the full agent code [from this GitHub repository](https://github.com/mathspp/coding-agent-tutorial).
+Sitting at roughly 300 lines of code (100 for the agentic loop and command management, 100 for the text editor tool, and 100 for the bash session and tool manager), you can get the full agent code [from this GitHub repository](https://github.com/mathspp/coding-agent-tutorial) and this tutorial stops [at the tag “part 2 complete”](https://github.com/mathspp/coding-agent-tutorial/tree/part-2-complete).
 
 To keep exploring the world of coding agents, here are possible follow-up tasks:
 

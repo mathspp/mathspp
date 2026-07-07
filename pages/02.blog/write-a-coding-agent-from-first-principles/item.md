@@ -145,6 +145,7 @@ Now that you can get a joke from an LLM, can you get a second one?
 
 !!! **Exercise**: improve your agent by letting the user type its message, instead of hardcoding “Tell me a joke.”, and use a loop to make it a conversation.
 !!! Work on this for 15 minutes, maximum, and then keep reading.
+!!! [Companion repo checkpoint](https://github.com/mathspp/coding-agent-tutorial/tree/part-1-before-conversation-exercise).
 
 ## The context of a conversation
 
@@ -288,6 +289,7 @@ An obvious candidate for your first command is the command `/exit` or `/quit` to
 !!!  - writing `/help` should list all the available commands
 !!!  - writing anything else that starts with `/` should complain about an unrecognised command
 !!! Work on this for 10 minutes and then keep reading.
+!!! [Companion repo checkpoint](https://github.com/mathspp/coding-agent-tutorial/tree/part-1-before-commands-exercise).
 
 To implement user commands, you must intercept the user input before it's sent to Claude.
 That happens right after you get the user input:
@@ -428,6 +430,7 @@ Now, it's up to you to run the Python function that the LLM requested, and then 
 
 !!! **Exercise**: update your agent to recognise a tool call, extract the file path, read the file, and then send the contents back to the LLM.
 !!! Work on this for 15 minutes and then keep reading.
+!!! [Companion repo checkpoint](https://github.com/mathspp/coding-agent-tutorial/tree/part-1-before-tool-calls-exercise).
 
 ### Handling tool calls
 
@@ -597,6 +600,7 @@ If not, proceed to the next section.
 !!! **Exercise**: create and define a tool `ls` that lists the contents of a directory.
 !!! Make sure instructions for how to use that tool are provided to the LLM and handle calls to the tool `ls`.
 !!! Use your agent and try to trigger the tool call `ls`.
+!!! [Companion repo checkpoint](https://github.com/mathspp/coding-agent-tutorial/tree/part-1-before-ls-exercise).
 
 ### Tool schema definition
 
@@ -753,6 +757,7 @@ After asking the model to solve the riddle for you, getting the tool use, and co
 !!! **Exercise**: using the examples above to guide you, handle the tool use blocks from your agent.
 !!! When you're done, you should be able to solve the riddle in `riddle.txt` through the tool `read`.
 !!! Work on this for up to 20 minutes and then keep reading.
+!!! [Companion repo checkpoint](https://github.com/mathspp/coding-agent-tutorial/tree/part-1-before-tool-blocks-exercise).
 
 ### Working with tool use blocks
 
@@ -937,6 +942,7 @@ To turn your agent into a _coding agent_ you'll want to define a couple of new t
 
 !!! **Exercise**: implement the four tools listed above and test each one of them by triggering the respective tool calls in your agent.
 !!! For the tool `bash`, you'll want to look at the module `subprocess`.
+!!! [Companion repo checkpoint](https://github.com/mathspp/coding-agent-tutorial/tree/part-1-before-coding-tools-exercise).
 
 ### Running bash commands
 
@@ -1234,7 +1240,7 @@ By using the Claude API, you were able to create a coding agent that
  - provides five tools that the agent can use to read, write, and execute code
 
 If you ignore the function definitions, all your code fits in _under_ 100 lines of code, which is pretty impressive.
-You can get the full agent code [from this GitHub repository](https://github.com/mathspp/coding-agent-tutorial).
+You can get the full agent code [from this GitHub repository](https://github.com/mathspp/coding-agent-tutorial), and this article stops [at the tag “part 1 complete”](https://github.com/mathspp/coding-agent-tutorial/tree/part-1-complete).
 
 To keep exploring the world of coding agents, there are three natural directions in which you can take your agent:
 
