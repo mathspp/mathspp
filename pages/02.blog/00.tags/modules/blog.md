@@ -28,8 +28,8 @@ title: "Modules blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">13</th>
-            <th style="text-align: center;">13,715</th>
+            <th style="text-align: center;">14</th>
+            <th style="text-align: center;">14,727</th>
             <th style="text-align: center;">1,623</th>
         </tr>
     </thead>

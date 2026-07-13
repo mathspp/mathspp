@@ -13,4 +13,5 @@ taxonomy:
       - programming
       - python
       - algorithms
+      - itertools
 title: Generalising itertools.pairwise

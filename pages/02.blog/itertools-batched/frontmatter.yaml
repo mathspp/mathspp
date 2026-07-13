@@ -17,4 +17,5 @@ taxonomy:
         - modules
         - programming
         - python
+        - itertools
 title: itertools.batched

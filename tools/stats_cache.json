@@ -1010,13 +1010,14 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/itertools-batched": {
-    "timestamp": 1753281520.765916,
+    "timestamp": 1783953069.3163328,
     "tags": [
       "dunder methods",
       "generators",
       "modules",
       "programming",
-      "python"
+      "python",
+      "itertools"
     ],
     "stats": {
       "articles": 1,
@@ -1251,11 +1252,12 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/module-itertools-overview": {
-    "timestamp": 1753281616.557056,
+    "timestamp": 1783953086.315236,
     "tags": [
       "modules",
       "programming",
-      "python"
+      "python",
+      "itertools"
     ],
     "stats": {
       "articles": 1,
@@ -6173,11 +6175,12 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/generalising-itertools-pairwise": {
-    "timestamp": 1764752800.1606655,
+    "timestamp": 1783953052.669069,
     "tags": [
       "programming",
       "python",
-      "algorithms"
+      "algorithms",
+      "itertools"
     ],
     "stats": {
       "articles": 1,
@@ -6443,7 +6446,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/write-a-coding-agent-from-first-principles-better-tools": {
-    "timestamp": 1783411111.4739742,
+    "timestamp": 1783411230.9059365,
     "tags": [
       "llms",
       "programming",
@@ -6454,6 +6457,31 @@
       "code_snippets": 45,
       "loc": 555,
       "words": 4272
+    }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/python-quiz-europython-2026-edition": {
+    "timestamp": 1783948805.1657906,
+    "tags": [],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 2,
+      "loc": 10,
+      "words": 399
+    }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/itertools-cheatsheet": {
+    "timestamp": 1783953099.7302856,
+    "tags": [
+      "python",
+      "programming",
+      "itertools",
+      "modules"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 0,
+      "loc": 0,
+      "words": 1012
     }
   }
 }
