@@ -120,6 +120,7 @@ TAG_DESCRIPTIONS:
   induction: "The mathematical concept of induction"
   interpreters: "Implementing and playing with interpreters"
   invariants: "The mathematical concept of invariants"
+  itertools: "The module from the Python standard library"
   javascript: "The programming language JavaScript"
   json: "The data format JSON"
   llm: "Usages of ChatGPT and other LLMs"
