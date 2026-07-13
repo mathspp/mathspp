@@ -1,0 +1,17 @@
+date: 13-07-2026 16:28
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Cheatsheet with visual diagrams that explain how the iterables from itertools work."
+    og:image: "https://mathspp.com/blog/itertools-cheatsheet/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/itertools-cheatsheet/thumbnail.webp"
+references: []
+slug: "itertools-cheatsheet"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+      - python
+      - programming
+      - itertools
+      - modules
+title: itertools cheatsheet
