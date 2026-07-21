@@ -124,6 +124,20 @@ Since we were celebrating 25 years of EuroPython at EuroPython 2026, some questi
   <p class="feedback"></p>
 </div>
 
+<div class="quiz-question" data-correct="11309">
+  <div class="question-text"><p>By the way, speaking of commits, do you still remember how many commits Guido van Rossum made?</p></div>
+
+  <div markdown="1">
+  ![A screenshot of Guido's contribution graph without any numbers.](_guido.webp)
+  </div>
+
+  <form class="exact-answer" novalidate>
+    <input type="number" inputmode="numeric" required>
+    <button type="submit">Check</button>
+  </form>
+  <p class="feedback"></p>
+</div>
+
 <div class="quiz-question" data-correct="a">
   <div class="question-text"><p>What does the following cursed Python 2 code print?</p></div>
 
