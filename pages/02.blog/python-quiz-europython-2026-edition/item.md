@@ -55,7 +55,7 @@ Since we were celebrating 25 years of EuroPython at EuroPython 2026, some questi
 </div>
 
 <div class="quiz-question" data-correct="c">
-  <div class="question-text"><p>The Python repo has over 130,000 commits made by more than 3,500 contributors over the past 35+ years. The Python core developers are the people with permissions to commit directly to the CPython GitHub repo and plenty of them were at the conference. Out of the following 4 core devs, who are all at this conference, who's made the fewest commits?</p></div>
+  <div class="question-text"><p>The Python repo has over 130,000 commits made by more than 3,500 contributors over the past 35+ years. The Python core developers are the people with permissions to commit directly to the CPython GitHub repo and plenty of them were at the conference. Out of the following 4 core devs, who were all at the conference, who's made the fewest commits?</p></div>
 
   <ul class="choices">
     <li data-option="a">Guido van Rossum, the creator of Python</li>
@@ -66,15 +66,15 @@ Since we were celebrating 25 years of EuroPython at EuroPython 2026, some questi
   <p class="feedback"></p>
 </div>
 
-<div class="quiz-question" data-correct="a">
+<div class="quiz-question" data-correct="11309">
   <div class="question-text"><p>Speaking of commits, how many commits did Guido van Rossum make?</p></div>
 
   <div markdown="1">
   ![A screenshot of Guido's contribution graph without any numbers.](_guido.webp)
   </div>
 
-  <form>
-    <input type="number" min="11309" max="11309" required>
+  <form class="exact-answer" novalidate>
+    <input type="number" inputmode="numeric" required>
     <button type="submit">Check</button>
   </form>
   <p class="feedback"></p>
