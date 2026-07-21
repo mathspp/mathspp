@@ -2,6 +2,9 @@ Replay the EuroPython 2026 Python quiz.
 
 ===
 
+<script src="/user/themes/myquark/js/quiz.js"></script>
+<link rel="stylesheet" href="/user/themes/myquark/css/quiz-custom.css">
+
 These are the questions asked during [the EuroPython 2026 quiz](https://ep2026.europython.eu/session/python-quiz).
 They will test your knowledge of the Python language, the community, and of EuroPython 2026.
 Since we were celebrating 25 years of EuroPython at EuroPython 2026, some questions also touched on that theme.
