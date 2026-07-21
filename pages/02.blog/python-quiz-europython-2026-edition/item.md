@@ -228,7 +228,12 @@ The problem is that the generator has been exhausted already, so you're summing 
 
 In short, [don't cache generators](/blog/til/do-not-cache-generators).
 
-### Question 9 — cursed Python 2 code
+### Question 9 — Guido's commits... again!
+
+During the conference, around 20–25% of the participants got the answer right the second time around.
+That's pretty impressive, considering the quiz was very fast-paced.
+
+### Question 10 — cursed Python 2 code
 
 The expression `3<3` evaluates to `False` and the backticks, in Python 2, are the same using the built-in `repr`.
 So, `repr(3<3)` is the string `"False"`.
