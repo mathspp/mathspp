@@ -2386,6 +2386,22 @@
     },
     {
       "data": {
+        "id": "internal-link:article:python-quiz-europython-2026-edition->article:base-conversion-in-python",
+        "source": "article:python-quiz-europython-2026-edition",
+        "target": "article:base-conversion-in-python",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:python-quiz-europython-2026-edition->article:do-not-cache-generators",
+        "source": "article:python-quiz-europython-2026-edition",
+        "target": "article:do-not-cache-generators",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
         "id": "internal-link:article:pythons-soft-keywords->article:structural-pattern-matching-tutorial",
         "source": "article:pythons-soft-keywords",
         "target": "article:structural-pattern-matching-tutorial",
@@ -11482,6 +11498,14 @@
     },
     {
       "data": {
+        "id": "tag:article:python-quiz-europython-2025-edition->tag:conferences",
+        "source": "article:python-quiz-europython-2025-edition",
+        "target": "tag:conferences",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
         "id": "tag:article:python-quiz-europython-2025-edition->tag:python",
         "source": "article:python-quiz-europython-2025-edition",
         "target": "tag:python",
@@ -11492,6 +11516,30 @@
       "data": {
         "id": "tag:article:python-quiz-europython-2025-edition->tag:quiz",
         "source": "article:python-quiz-europython-2025-edition",
+        "target": "tag:quiz",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:python-quiz-europython-2026-edition->tag:conferences",
+        "source": "article:python-quiz-europython-2026-edition",
+        "target": "tag:conferences",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:python-quiz-europython-2026-edition->tag:python",
+        "source": "article:python-quiz-europython-2026-edition",
+        "target": "tag:python",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:python-quiz-europython-2026-edition->tag:quiz",
+        "source": "article:python-quiz-europython-2026-edition",
         "target": "tag:quiz",
         "type": "tag"
       }
@@ -14305,7 +14353,7 @@
       }
     }
   ],
-  "generated_at": "2026-07-13T14:43:03+00:00",
+  "generated_at": "2026-07-21T16:01:10+00:00",
   "nodes": [
     {
       "data": {
@@ -17825,12 +17873,12 @@
     {
       "data": {
         "date": "12-04-2023 10:30",
-        "degree": 5,
-        "height": 30,
+        "degree": 6,
+        "height": 31,
         "id": "article:do-not-cache-generators",
-        "internal_link_degree": 1,
+        "internal_link_degree": 2,
         "label": "TIL #058 \u2013 do not cache generators",
-        "size": 30,
+        "size": 31,
         "slug": "do-not-cache-generators",
         "tag_degree": 4,
         "tags": [
@@ -17842,7 +17890,7 @@
         "title": "TIL #058 \u2013 do not cache generators",
         "type": "article",
         "url": "/blog/til/do-not-cache-generators",
-        "width": 44
+        "width": 45
       }
     },
     {
@@ -20840,12 +20888,12 @@
     {
       "data": {
         "date": "07-01-2024 10:00",
-        "degree": 7,
-        "height": 33,
+        "degree": 8,
+        "height": 34,
         "id": "article:base-conversion-in-python",
-        "internal_link_degree": 2,
+        "internal_link_degree": 3,
         "label": "Base conversion in Python",
-        "size": 33,
+        "size": 34,
         "slug": "base-conversion-in-python",
         "tag_degree": 5,
         "tags": [
@@ -20858,7 +20906,7 @@
         "title": "Base conversion in Python",
         "type": "article",
         "url": "/blog/base-conversion-in-python",
-        "width": 48
+        "width": 49
       }
     },
     {
@@ -23201,40 +23249,45 @@
     {
       "data": {
         "date": "16-07-2025 18:14",
-        "degree": 5,
-        "height": 30,
+        "degree": 6,
+        "height": 31,
         "id": "article:python-quiz-europython-2025-edition",
         "internal_link_degree": 3,
         "label": "Python quiz: EuroPython 2025 edition",
-        "size": 30,
+        "size": 31,
         "slug": "python-quiz-europython-2025-edition",
-        "tag_degree": 2,
+        "tag_degree": 3,
         "tags": [
+          "conferences",
           "python",
           "quiz"
         ],
         "title": "Python quiz: EuroPython 2025 edition",
         "type": "article",
         "url": "/blog/python-quiz-europython-2025-edition",
-        "width": 44
+        "width": 45
       }
     },
     {
       "data": {
-        "date": "11-07-2026 13:39",
-        "degree": 0,
-        "height": 18,
-        "id": "article:python-quizeuropython-2026-edition",
-        "internal_link_degree": 0,
-        "label": "Python quiz:\\EuroPython 2026 edition",
-        "size": 18,
-        "slug": "python-quizeuropython-2026-edition",
-        "tag_degree": 0,
-        "tags": [],
-        "title": "Python quiz:\\EuroPython 2026 edition",
+        "date": "21-07-2026 17:00",
+        "degree": 5,
+        "height": 30,
+        "id": "article:python-quiz-europython-2026-edition",
+        "internal_link_degree": 2,
+        "label": "Python quiz: EuroPython 2026 edition",
+        "size": 30,
+        "slug": "python-quiz-europython-2026-edition",
+        "tag_degree": 3,
+        "tags": [
+          "conferences",
+          "python",
+          "quiz"
+        ],
+        "title": "Python quiz: EuroPython 2026 edition",
         "type": "article",
-        "url": "/blog/python-quizeuropython-2026-edition",
-        "width": 26
+        "url": "/blog/python-quiz-europython-2026-edition",
+        "width": 44
       }
     },
     {
@@ -24516,17 +24569,17 @@
     },
     {
       "data": {
-        "degree": 7,
-        "height": 33,
+        "degree": 9,
+        "height": 34,
         "id": "tag:conferences",
         "internal_link_degree": 0,
         "label": "conferences",
-        "size": 33,
+        "size": 34,
         "tag": "conferences",
-        "tag_degree": 7,
+        "tag_degree": 9,
         "type": "tag",
         "url": "/blog/tags/conferences",
-        "width": 33
+        "width": 34
       }
     },
     {
@@ -25416,14 +25469,14 @@
     },
     {
       "data": {
-        "degree": 323,
+        "degree": 324,
         "height": 78,
         "id": "tag:python",
         "internal_link_degree": 0,
         "label": "python",
         "size": 78,
         "tag": "python",
-        "tag_degree": 323,
+        "tag_degree": 324,
         "type": "tag",
         "url": "/blog/tags/python",
         "width": 78
@@ -25431,17 +25484,17 @@
     },
     {
       "data": {
-        "degree": 4,
-        "height": 29,
+        "degree": 5,
+        "height": 30,
         "id": "tag:quiz",
         "internal_link_degree": 0,
         "label": "quiz",
-        "size": 29,
+        "size": 30,
         "tag": "quiz",
-        "tag_degree": 4,
+        "tag_degree": 5,
         "type": "tag",
         "url": "/blog/tags/quiz",
-        "width": 29
+        "width": 30
       }
     },
     {
@@ -25793,8 +25846,8 @@
   "site": "https://mathspp.com",
   "stats": {
     "articles": 453,
-    "internal_links": 396,
-    "tag_edges": 1392,
+    "internal_links": 398,
+    "tag_edges": 1396,
     "tags": 99
   }
 }

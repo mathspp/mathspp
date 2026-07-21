@@ -17,6 +17,7 @@ taxonomy:
     category:
         - blogpost
     tag:
+      - conferences
       - python
       - quiz
 title: "Python quiz: EuroPython 2025 edition"

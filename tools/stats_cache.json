@@ -5804,8 +5804,9 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/python-quiz-europython-2025-edition": {
-    "timestamp": 1753281759.5622678,
+    "timestamp": 1784648507.0938463,
     "tags": [
+      "conferences",
       "python",
       "quiz"
     ],
@@ -6460,13 +6461,17 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/python-quiz-europython-2026-edition": {
-    "timestamp": 1783948805.1657906,
-    "tags": [],
+    "timestamp": 1784649660.6006715,
+    "tags": [
+      "conferences",
+      "python",
+      "quiz"
+    ],
     "stats": {
       "articles": 1,
-      "code_snippets": 2,
-      "loc": 10,
-      "words": 399
+      "code_snippets": 0,
+      "loc": 0,
+      "words": 1090
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/itertools-cheatsheet": {

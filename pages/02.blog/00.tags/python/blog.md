@@ -28,8 +28,8 @@ title: "Python blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">323</th>
-            <th style="text-align: center;">399,666</th>
+            <th style="text-align: center;">324</th>
+            <th style="text-align: center;">400,756</th>
             <th style="text-align: center;">38,475</th>
         </tr>
     </thead>

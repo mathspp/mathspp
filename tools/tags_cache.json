@@ -1,9 +1,9 @@
 {
   "__all": {
     "articles": 454,
-    "code_snippets": 4251,
-    "loc": 40859,
-    "words": 494586
+    "code_snippets": 4249,
+    "loc": 40849,
+    "words": 495277
   },
   "bpci": {
     "articles": 10,
@@ -30,10 +30,10 @@
     "words": 400768
   },
   "python": {
-    "articles": 323,
+    "articles": 324,
     "code_snippets": 3984,
     "loc": 38475,
-    "words": 399666
+    "words": 400756
   },
   "LLM": {
     "articles": 1,
@@ -246,10 +246,10 @@
     "words": 2630
   },
   "conferences": {
-    "articles": 7,
-    "code_snippets": 1,
-    "loc": 5,
-    "words": 12326
+    "articles": 9,
+    "code_snippets": 5,
+    "loc": 25,
+    "words": 14228
   },
   "opinion": {
     "articles": 11,
@@ -286,6 +286,12 @@
     "code_snippets": 31,
     "loc": 242,
     "words": 7398
+  },
+  "quiz": {
+    "articles": 5,
+    "code_snippets": 8,
+    "loc": 21,
+    "words": 3132
   },
   "nnfwp": {
     "articles": 6,
@@ -346,12 +352,6 @@
     "code_snippets": 22,
     "loc": 407,
     "words": 4403
-  },
-  "quiz": {
-    "articles": 4,
-    "code_snippets": 8,
-    "loc": 21,
-    "words": 2042
   },
   "git": {
     "articles": 9,

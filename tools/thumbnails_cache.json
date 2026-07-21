@@ -24,10 +24,10 @@
     "words": 400768
   },
   "python": {
-    "articles": 323,
+    "articles": 324,
     "code_snippets": 3984,
     "loc": 38475,
-    "words": 399666
+    "words": 400756
   },
   "algorithms": {
     "articles": 28,
@@ -565,9 +565,9 @@
   },
   "__all": {
     "articles": 454,
-    "code_snippets": 4251,
-    "loc": 40859,
-    "words": 494586
+    "code_snippets": 4249,
+    "loc": 40849,
+    "words": 495277
   },
   "fp": {
     "articles": 5,
@@ -594,16 +594,16 @@
     "words": 518
   },
   "conferences": {
-    "articles": 7,
-    "code_snippets": 1,
-    "loc": 5,
-    "words": 12326
+    "articles": 9,
+    "code_snippets": 5,
+    "loc": 25,
+    "words": 14228
   },
   "quiz": {
-    "articles": 4,
+    "articles": 5,
     "code_snippets": 8,
     "loc": 21,
-    "words": 2042
+    "words": 3132
   },
   "arithmetics": {
     "articles": 1,

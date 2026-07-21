@@ -1,0 +1,16 @@
+date: 21-07-2026 17:00
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Replay the EuroPython 2026 Python quiz."
+    og:image: "https://mathspp.com/blog/python-quiz-europython-2026-edition/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/python-quiz-europython-2026-edition/thumbnail.webp"
+references: []
+slug: "python-quiz-europython-2026-edition"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+      - conferences
+      - python
+      - quiz
+title: "Python quiz: EuroPython 2026 edition"

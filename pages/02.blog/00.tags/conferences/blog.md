@@ -28,9 +28,9 @@ title: "Conferences blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">7</th>
-            <th style="text-align: center;">12,326</th>
-            <th style="text-align: center;">5</th>
+            <th style="text-align: center;">9</th>
+            <th style="text-align: center;">14,228</th>
+            <th style="text-align: center;">25</th>
         </tr>
     </thead>
     <tbody>
