@@ -29,7 +29,7 @@ title: "Itertools blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">4</th>
-            <th style="text-align: center;">3,523</th>
+            <th style="text-align: center;">3,914</th>
             <th style="text-align: center;">584</th>
         </tr>
     </thead>

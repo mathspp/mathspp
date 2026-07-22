@@ -3,7 +3,7 @@
     "articles": 454,
     "code_snippets": 4249,
     "loc": 40849,
-    "words": 495361
+    "words": 495752
   },
   "bpci": {
     "articles": 10,
@@ -27,13 +27,13 @@
     "articles": 328,
     "code_snippets": 4102,
     "loc": 39566,
-    "words": 400768
+    "words": 401159
   },
   "python": {
     "articles": 324,
     "code_snippets": 3984,
     "loc": 38475,
-    "words": 400840
+    "words": 401231
   },
   "LLM": {
     "articles": 1,
@@ -387,7 +387,7 @@
     "articles": 14,
     "code_snippets": 192,
     "loc": 1623,
-    "words": 13770
+    "words": 14161
   },
   "diophantine equations": {
     "articles": 1,
@@ -417,7 +417,7 @@
     "articles": 4,
     "code_snippets": 57,
     "loc": 584,
-    "words": 3523
+    "words": 3914
   },
   "open source": {
     "articles": 3,
