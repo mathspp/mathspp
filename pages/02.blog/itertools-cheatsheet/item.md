@@ -14,23 +14,6 @@ This cheatsheet contains diagrams that explain how the iterables from the module
 
 ---
 
-## Filtering
-
-### `filterfalse`
-
-![Visual diagram explaining how filterfalse works.](_filterfalse_dark_bg.webp?classes=dark-theme-only)
-![Visual diagram explaining how filterfalse works.](_filterfalse_light_bg.webp?classes=light-theme-only)
-
-### `takewhile` & `dropwhile`
-
-![Visual diagram explaining how takewhile and dropwhile work.](_takewhile_dropwhile_dark_bg.webp?classes=dark-theme-only)
-![Visual diagram explaining how takewhile and dropwhile work.](_takewhile_dropwhile_light_bg.webp?classes=light-theme-only)
-
-### `compress`
-
-![Visual diagram explaining how compress works.](_compress_dark_bg.webp?classes=dark-theme-only)
-![Visual diagram explaining how compress works.](_compress_light_bg.webp?classes=light-theme-only)
-
 ## Reshaping
 
 ### `batched`
@@ -58,6 +41,23 @@ This cheatsheet contains diagrams that explain how the iterables from the module
 ![Visual diagram explaining how groupby works.](_groupby_dark_bg.webp?classes=dark-theme-only)
 ![Visual diagram explaining how groupby works.](_groupby_light_bg.webp?classes=light-theme-only)
 
+## Filtering
+
+### `filterfalse`
+
+![Visual diagram explaining how filterfalse works.](_filterfalse_dark_bg.webp?classes=dark-theme-only)
+![Visual diagram explaining how filterfalse works.](_filterfalse_light_bg.webp?classes=light-theme-only)
+
+### `takewhile` & `dropwhile`
+
+![Visual diagram explaining how takewhile and dropwhile work.](_takewhile_dropwhile_dark_bg.webp?classes=dark-theme-only)
+![Visual diagram explaining how takewhile and dropwhile work.](_takewhile_dropwhile_light_bg.webp?classes=light-theme-only)
+
+### `compress`
+
+![Visual diagram explaining how compress works.](_compress_dark_bg.webp?classes=dark-theme-only)
+![Visual diagram explaining how compress works.](_compress_light_bg.webp?classes=light-theme-only)
+
 ## Infinite
 
 ### `repeat`
@@ -74,6 +74,30 @@ This cheatsheet contains diagrams that explain how the iterables from the module
 
 ![Visual diagram explaining how count works.](_count_dark_bg.webp?classes=dark-theme-only)
 ![Visual diagram explaining how count works.](_count_light_bg.webp?classes=light-theme-only)
+
+## Complementary
+
+### `zip_longest`
+
+![Visual diagram explaining how zip_longest works.](_zip_longest_dark_bg.webp?classes=dark-theme-only)
+![Visual diagram explaining how zip_longest works.](_zip_longest_light_bg.webp?classes=light-theme-only)
+
+### `starmap`
+
+![Visual diagram explaining how starmap works.](_starmap_dark_bg.webp?classes=dark-theme-only)
+![Visual diagram explaining how starmap works.](_starmap_light_bg.webp?classes=light-theme-only)
+
+### `accumulate`
+
+![Visual diagram explaining how accumulate works.](_accumulate_dark_bg.webp?classes=dark-theme-only)
+![Visual diagram explaining how accumulate works.](_accumulate_light_bg.webp?classes=light-theme-only)
+
+By default, `accumulate` uses addition as its operation.
+The magic in using `functools.reduce` and `itertools.accumulate` well is in realising the function that combines elements can be an arbitrary function of two arguments.
+For example, you can imagine you're a painter and you're going to mix the colours in your palette:
+
+![Visual diagram explaining how accumulate works.](_accumulate_mix_dark_bg.webp?classes=dark-theme-only)
+![Visual diagram explaining how accumulate works.](_accumulate_mix_light_bg.webp?classes=light-theme-only)
 
 ## Combinatorial
 
@@ -101,30 +125,6 @@ When you want to compute the product of an iterable with itself two or more time
 
 ![Visual diagram explaining how combinations_with_replacement works.](_combinations_with_replacement_dark_bg.webp?classes=dark-theme-only)
 ![Visual diagram explaining how combinations_with_replacement works.](_combinations_with_replacement_light_bg.webp?classes=light-theme-only)
-
-## Complementary
-
-### `zip_longest`
-
-![Visual diagram explaining how zip_longest works.](_zip_longest_dark_bg.webp?classes=dark-theme-only)
-![Visual diagram explaining how zip_longest works.](_zip_longest_light_bg.webp?classes=light-theme-only)
-
-### `starmap`
-
-![Visual diagram explaining how starmap works.](_starmap_dark_bg.webp?classes=dark-theme-only)
-![Visual diagram explaining how starmap works.](_starmap_light_bg.webp?classes=light-theme-only)
-
-### `accumulate`
-
-![Visual diagram explaining how accumulate works.](_accumulate_dark_bg.webp?classes=dark-theme-only)
-![Visual diagram explaining how accumulate works.](_accumulate_light_bg.webp?classes=light-theme-only)
-
-By default, `accumulate` uses addition as its operation.
-The magic in using `functools.reduce` and `itertools.accumulate` well is in realising the function that combines elements can be an arbitrary function of two arguments.
-For example, you can imagine you're a painter and you're going to mix the colours in your palette:
-
-![Visual diagram explaining how accumulate works.](_accumulate_mix_dark_bg.webp?classes=dark-theme-only)
-![Visual diagram explaining how accumulate works.](_accumulate_mix_light_bg.webp?classes=light-theme-only)
 
 ---
 
