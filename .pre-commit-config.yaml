@@ -3,6 +3,14 @@ fail_fast: true
 repos:
   - repo: local
     hooks:
+      - id: validate-blog-metadata
+        name: Validate blog SEO metadata
+        description: "Validates required article metadata and injects deterministic defaults."
+        entry: uv run tools/validate_blog_metadata.py
+        language: system
+        files: '^pages/02\.blog/.*item.*\.md$|^pages/02\.blog/.*/frontmatter\.yaml$'
+        stages: [pre-commit]
+
       - id: compute-blog-stats
         name: Compute blog stats
         description: "Computes summary statistics across blog posts and tags."
