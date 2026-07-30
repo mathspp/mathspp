@@ -19,7 +19,7 @@ social_pages:
     twitter:
       enabled: true
       type: summary_large_image
-      username: '@mathsppblog'
+      username: mathsppblog
     facebook:
       opengraph:
         enabled: true

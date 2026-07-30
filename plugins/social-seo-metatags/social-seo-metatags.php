@@ -430,7 +430,10 @@ class SocialSEOMetaTagsPlugin extends Plugin
           $locale = "fr_FR";
           break;
         case "en":
-          $locale = "en_EN";
+          $locale = "en_US";
+          break;
+        case "pt":
+          $locale = "pt_PT";
           break;
       }
 
