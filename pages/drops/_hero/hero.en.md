@@ -3,55 +3,17 @@ title: 'Python drops 🐍💧'
 hero_classes: 'text-light hero-fullscreen overlay-dark-gradient'
 hero_image: 'theme://images/common_hero.webp'
 
-process:
-    twig: true
-cache_enable: false
-
-form:
-    name: subscribe
-
-    fields:
-        honeypot:
-          label: Honeypot
-          type: honeypot
-
-        email:
-          display_label: false
-          autocomplete: true
-          placeholder: Your best email address
-          type: email
-          validate:
-            required: true
-
-        g-recaptcha-response:
-          label: Captcha
-          type: captcha
-          recaptcha_not_validated: 'Captcha not valid!'
-
-    buttons:
-        submit:
-          type: submit
-          value: Subscribe for free 🐍💧
-
-    process:
-        captcha: true
-        newsletter-subscriber:
-          publication: drops
-        display: /drops/wait-one-more-thing
 ---
 
-# Write better Python in 2 minutes per day
+# Python drops archive 🐍💧
 
-## Get a _free_ daily drop 💧 of Python 🐍 knowledge
+## The Python drops newsletter is no longer published, but its tips are still here for you to explore.
 
-{% include "forms/form.html.twig" with {form: forms("subscribe")} %}
+For new Python insights delivered to your inbox, join the weekly [mathspp insider 🐍🚀](/insider).
+
+<a href="/insider" class="cta-btn btn">Subscribe to the mathspp insider 🐍🚀</a>
 
 <style>
-form[name="subscribe"] {
-    max-width: 70%;
-    margin: auto;
-}
-
 h2 {
     font-size: 70%;
 }

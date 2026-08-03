@@ -7,7 +7,7 @@ content:
           - "_hero"
 metadata:
     author: "Rodrigo Girão Serrão"
-    description: "Write better Python in just two minutes per day by getting a free daily drop of Python knowledge."
+    description: "Browse the archive of the Python drops newsletter and join the mathspp insider for new weekly Python insights."
     og:title: "Python drops 🐍💧 newsletter"
     title: Python drops 🐍💧 newsletter
 onpage_menu: false
