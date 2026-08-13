@@ -15,7 +15,7 @@
 }
 
 .python-playground__status {
-    color: #66758c;
+    color: var(--ui);
     font-size: 0.85rem;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .python-playground__output.is-error {
-    color: #ffb3b3;
+    color: var(--re);
 }
 
 @media (max-width: 600px) {

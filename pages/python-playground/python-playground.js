@@ -70,7 +70,7 @@
 
     function getWorker() {
         if (!worker) {
-            const pythonWorker = new Worker("/python/python-worker.js?v=2", { type: "module" });
+            const pythonWorker = new Worker("/python-playground/python-worker.js?v=2", { type: "module" });
             worker = pythonWorker;
             pythonWorker.addEventListener("message", ({ data }) => {
                 if (data.run !== activeRun) return;

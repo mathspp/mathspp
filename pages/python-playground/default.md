@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/codemirror.min.css">
-<link rel="stylesheet" href="/python/codemirror-flexoki.css?v=1">
-<link rel="stylesheet" href="/python/python-playground.css?v=4">
+<link rel="stylesheet" href="/python-playground/codemirror-flexoki.css?v=1">
+<link rel="stylesheet" href="/python-playground/python-playground.css?v=4">
 
 # Python Playground
 
@@ -37,4 +37,4 @@ print(fibonacci(10))</textarea>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/codemirror.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/mode/python/python.min.js"></script>
-<script src="/python/python-playground.js?v=7"></script>
+<script src="/python-playground/python-playground.js?v=7"></script>
