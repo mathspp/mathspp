@@ -1,0 +1,73 @@
+.python-playground {
+    margin: 1.5rem 0;
+}
+
+.python-playground__toolbar,
+.python-playground__output-heading {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.python-playground__toolbar {
+    margin-bottom: 0.75rem;
+}
+
+.python-playground__toolbar select {
+    background: var(--body-background, #fff);
+    border: 1px solid #bcc3ce;
+    border-radius: 0.1rem;
+    color: inherit;
+    height: 1.8rem;
+    padding: 0 0.4rem;
+}
+
+.python-playground__status {
+    color: #66758c;
+    font-size: 0.85rem;
+}
+
+.python-playground__label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.35rem;
+}
+
+.python-playground .CodeMirror {
+    border: 1px solid #3b4351;
+    border-radius: 0.2rem;
+    font-family: "FiraCode Nerd Font Mono", monospace;
+    font-size: 0.9rem;
+    height: min(55vh, 32rem);
+    line-height: 1.5;
+}
+
+.python-playground__output-heading {
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.python-playground__output {
+    background: #191919;
+    border-radius: 0.2rem;
+    color: #e7e9ed;
+    min-height: 6rem;
+    overflow: auto;
+    padding: 0.8rem;
+    white-space: pre-wrap;
+}
+
+.python-playground__output.is-error {
+    color: #ffb3b3;
+}
+
+@media (max-width: 600px) {
+    .python-playground__toolbar > * {
+        flex: 1 1 auto;
+    }
+
+    .python-playground__status {
+        flex-basis: 100%;
+    }
+}
