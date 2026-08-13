@@ -2,8 +2,7 @@
     "use strict";
 
     const codeTextarea = document.getElementById("python-code");
-    const editorContainer = document.getElementById("python-editor-container");
-    if (!codeTextarea || !editorContainer || typeof CodeMirror === "undefined") {
+    if (!codeTextarea || typeof CodeMirror === "undefined") {
         return;
     }
 
@@ -25,10 +24,6 @@
         theme: "flexoki",
         viewportMargin: Infinity,
     });
-
-    if (typeof ResizeObserver !== "undefined") {
-        new ResizeObserver(() => { editor.refresh(); }).observe(editorContainer);
-    }
 
     function encodeBytes(bytes) {
         let binary = "";

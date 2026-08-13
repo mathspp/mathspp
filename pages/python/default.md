@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/codemirror.min.css">
 <link rel="stylesheet" href="/python/codemirror-flexoki.css?v=1">
-<link rel="stylesheet" href="/python/python-playground.css?v=3">
+<link rel="stylesheet" href="/python/python-playground.css?v=4">
 
 # Python Playground
 
@@ -16,8 +16,7 @@ Write Python 3.14, run it entirely in your browser with Pyodide, and share it wi
     </div>
 
     <label class="python-playground__label" for="python-code">Python code</label>
-    <div class="python-playground__editor" id="python-editor-container">
-        <textarea id="python-code" name="python-code" spellcheck="false">from functools import cache
+    <textarea id="python-code" name="python-code" spellcheck="false">from functools import cache
 
 @cache
 def fibonacci(n: int) -> int:
@@ -26,7 +25,6 @@ def fibonacci(n: int) -> int:
     return fibonacci(n - 1) + fibonacci(n - 2)
 
 print(fibonacci(10))</textarea>
-    </div>
 
     <div class="python-playground__output-heading">
         <strong>Output</strong>
@@ -39,4 +37,4 @@ print(fibonacci(10))</textarea>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/codemirror.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/mode/python/python.min.js"></script>
-<script src="/python/python-playground.js?v=6"></script>
+<script src="/python/python-playground.js?v=7"></script>

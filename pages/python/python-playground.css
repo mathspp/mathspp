@@ -25,20 +25,12 @@
     margin-bottom: 0.35rem;
 }
 
-.python-playground__editor {
-    height: calc(16.2rem + 8px);
-    min-height: calc(8.1rem + 8px);
-    overflow: hidden;
-    resize: vertical;
-}
-
-.python-playground__editor .CodeMirror {
+.python-playground .CodeMirror {
     border: 1px solid var(--ui-3);
     border-radius: 0.2rem;
-    box-sizing: border-box;
     font-family: "FiraCode Nerd Font Mono", monospace;
     font-size: 0.9rem;
-    height: 100%;
+    height: calc(21.6rem + 8px);
     line-height: 1.5;
 }
 
