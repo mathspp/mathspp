@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/codemirror.min.css">
 <link rel="stylesheet" href="/python/codemirror-flexoki.css?v=1">
-<link rel="stylesheet" href="/python/python-playground.css">
+<link rel="stylesheet" href="/python/python-playground.css?v=2">
 
 # Python Playground
 

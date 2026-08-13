@@ -30,8 +30,10 @@
     border-radius: 0.2rem;
     font-family: "FiraCode Nerd Font Mono", monospace;
     font-size: 0.9rem;
-    height: min(55vh, 32rem);
+    height: calc(18em + 8px);
     line-height: 1.5;
+    min-height: calc(9em + 8px);
+    resize: vertical;
 }
 
 .python-playground__output-heading {
