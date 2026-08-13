@@ -11,7 +11,7 @@ Write Python 3.14, run it entirely in your browser with Pyodide, and share it wi
         <button type="button" id="run-python" class="btn">Run code</button>
         <button type="button" id="stop-python" class="btn" disabled>Stop</button>
         <button type="button" id="copy-permalink" class="btn">Copy permalink</button>
-        <span id="runtime-status" class="python-playground__status" role="status" aria-live="polite">Python 3.14 runtime not loaded</span>
+        <span id="runtime-status" class="python-playground__status" role="status" aria-live="polite">Python 3.14 — ready to run</span>
     </div>
 
     <label class="python-playground__label" for="python-code">Python code</label>
@@ -28,4 +28,4 @@ Write Python 3.14, run it entirely in your browser with Pyodide, and share it wi
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/codemirror.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/mode/python/python.min.js"></script>
-<script src="/python/python-playground.js"></script>
+<script src="/python/python-playground.js?v=2"></script>

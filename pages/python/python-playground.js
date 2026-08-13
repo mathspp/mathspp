@@ -78,7 +78,7 @@
 
     function getWorker() {
         if (!worker) {
-            const pythonWorker = new Worker("/python/python-worker.js");
+            const pythonWorker = new Worker("/python/python-worker.js?v=2", { type: "module" });
             worker = pythonWorker;
             pythonWorker.addEventListener("message", ({ data }) => {
                 if (data.run !== activeRun) return;
@@ -90,6 +90,10 @@
                     output.classList.add("is-error");
                     output.textContent += `${data.text}\n`;
                     status.textContent = "Run failed";
+                    if (data.resetWorker) {
+                        discardWorker();
+                        finishRun();
+                    }
                 } else if (data.type === "done") {
                     finishRun();
                 }

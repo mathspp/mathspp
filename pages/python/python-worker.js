@@ -1,13 +1,14 @@
 "use strict";
 
 const pyodideIndexURL = "https://cdn.jsdelivr.net/pyodide/v314.0.4/full/";
+const pyodideScriptURL = "https://cdn.jsdelivr.net/pyodide/v314.0.4/full/pyodide.js";
 let pyodideRuntime;
 let pyodideScriptLoaded = false;
 let runtimePromise;
 
 async function initializeRuntime() {
     if (!pyodideScriptLoaded) {
-        importScripts("https://cdn.jsdelivr.net/pyodide/v314.0.4/full/pyodide.js");
+        await import(pyodideScriptURL);
         pyodideScriptLoaded = true;
     }
     return self.loadPyodide({ indexURL: pyodideIndexURL });
@@ -34,9 +35,20 @@ self.addEventListener("message", async ({ data }) => {
         self.postMessage({ ...details, run: data.run, type });
     };
 
+    send("status", { text: "Loading Python 3.14…" });
+
+    let pyodide;
     try {
-        send("status", { text: "Loading Python 3.14…" });
-        const pyodide = await getRuntime();
+        pyodide = await getRuntime();
+    } catch (error) {
+        send("error", {
+            resetWorker: true,
+            text: error.message || String(error),
+        });
+        return;
+    }
+
+    try {
         pyodide.setStdout({ batched: (text) => { send("output", { text }); } });
         pyodide.setStderr({ batched: (text) => { send("output", { text }); } });
         send("status", { text: "Running Python 3.14…" });
