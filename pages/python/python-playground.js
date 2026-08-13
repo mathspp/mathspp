@@ -8,6 +8,7 @@
 
     const runButton = document.getElementById("run-python");
     const stopButton = document.getElementById("stop-python");
+    const copyCodeButton = document.getElementById("copy-code");
     const permalinkButton = document.getElementById("copy-permalink");
     const clearButton = document.getElementById("clear-output");
     const output = document.getElementById("python-output");
@@ -37,31 +38,22 @@
         return Uint8Array.from(binary, (character) => character.charCodeAt(0));
     }
 
-    async function encodeCode(code) {
-        let bytes = new TextEncoder().encode(code);
-        let format = "raw";
-        if (typeof CompressionStream !== "undefined" && typeof DecompressionStream !== "undefined") {
-            const stream = new Blob([bytes]).stream().pipeThrough(new CompressionStream("gzip"));
-            bytes = new Uint8Array(await new Response(stream).arrayBuffer());
-            format = "gzip";
-        }
-        return `${format}.${encodeBytes(bytes)}`;
+    function encodeCode(code) {
+        return encodeBytes(new TextEncoder().encode(code));
     }
 
-    async function decodeCode(value) {
-        const separator = value.indexOf(".");
-        const format = separator === -1 ? "raw" : value.slice(0, separator);
-        let bytes = decodeBytes(separator === -1 ? value : value.slice(separator + 1));
-        if (format === "gzip") {
-            if (typeof DecompressionStream === "undefined") {
-                throw new Error("This browser cannot decompress the shared code.");
-            }
-            const stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream("gzip"));
-            bytes = new Uint8Array(await new Response(stream).arrayBuffer());
-        } else if (format !== "raw") {
-            throw new Error("Unknown permalink format.");
-        }
-        return new TextDecoder().decode(bytes);
+    function decodeCode(value) {
+        const encodedCode = value.startsWith("raw.") ? value.slice(4) : value;
+        return new TextDecoder().decode(decodeBytes(encodedCode));
+    }
+
+    function showPermalinkTooltip(message) {
+        permalinkButton.classList.add("tooltip", "tooltip-bottom");
+        permalinkButton.dataset.tooltip = message;
+        window.setTimeout(() => {
+            permalinkButton.classList.remove("tooltip", "tooltip-bottom");
+            delete permalinkButton.dataset.tooltip;
+        }, 3000);
     }
 
     function finishRun() {
@@ -141,17 +133,26 @@
         finishRun();
     }
 
+    async function copyCode() {
+        try {
+            await navigator.clipboard.writeText(editor.getValue());
+            copyCodeButton.textContent = "Copied!";
+        } catch (_) {
+            copyCodeButton.textContent = "Copy failed";
+            status.textContent = "Could not copy the code.";
+        }
+        window.setTimeout(() => { copyCodeButton.textContent = "Copy code"; }, 2000);
+    }
+
     async function copyPermalink() {
         const url = new URL(window.location.href);
         try {
             const fragment = new URLSearchParams(url.hash.slice(1));
-            fragment.set("code", await encodeCode(editor.getValue()));
+            fragment.set("code", encodeCode(editor.getValue()));
             url.searchParams.delete("code");
             url.hash = fragment.toString();
             if (url.toString().length > maxPermalinkLength) {
-                permalinkButton.textContent = "Code too long";
-                status.textContent = "This program is too large for a safe permalink.";
-                window.setTimeout(() => { permalinkButton.textContent = "Copy permalink"; }, 2000);
+                showPermalinkTooltip("This code is too long for a permalink.");
                 return;
             }
             window.history.replaceState({}, "", url);
@@ -167,13 +168,16 @@
     const fragmentCode = new URLSearchParams(window.location.hash.slice(1)).get("code");
     const sharedCode = fragmentCode || new URLSearchParams(window.location.search).get("code");
     if (sharedCode !== null) {
-        decodeCode(sharedCode)
-            .then((code) => { editor.setValue(code); })
-            .catch(() => { status.textContent = "The permalink contains invalid code."; });
+        try {
+            editor.setValue(decodeCode(sharedCode));
+        } catch (_) {
+            status.textContent = "The permalink contains invalid code.";
+        }
     }
 
     runButton.addEventListener("click", runCode);
     stopButton.addEventListener("click", stopCode);
+    copyCodeButton.addEventListener("click", copyCode);
     permalinkButton.addEventListener("click", copyPermalink);
     clearButton.addEventListener("click", () => {
         output.textContent = "";

@@ -8,14 +8,23 @@ Write Python 3.14, run it entirely in your browser with Pyodide, and share it wi
 
 <div class="python-playground" id="python-playground">
     <div class="python-playground__toolbar" role="toolbar" aria-label="Python playground controls">
-        <button type="button" id="run-python" class="btn">Run code</button>
+        <button type="button" id="run-python" class="btn tooltip tooltip-bottom" data-tooltip="Run code (Ctrl/Cmd + Enter)">Run code</button>
         <button type="button" id="stop-python" class="btn" disabled>Stop</button>
+        <button type="button" id="copy-code" class="btn">Copy code</button>
         <button type="button" id="copy-permalink" class="btn">Copy permalink</button>
         <span id="runtime-status" class="python-playground__status" role="status" aria-live="polite">Python 3.14 — ready to run</span>
     </div>
 
     <label class="python-playground__label" for="python-code">Python code</label>
-    <textarea id="python-code" name="python-code" spellcheck="false">print("Hello from Python!")</textarea>
+    <textarea id="python-code" name="python-code" spellcheck="false">from functools import cache
+
+@cache
+def fibonacci(n: int) -> int:
+    if n &lt;= 1:
+        return n
+    return fibonacci(n - 1) + fibonacci(n - 2)
+
+print(fibonacci(10))</textarea>
 
     <div class="python-playground__output-heading">
         <strong>Output</strong>
@@ -28,4 +37,4 @@ Write Python 3.14, run it entirely in your browser with Pyodide, and share it wi
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/codemirror.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/mode/python/python.min.js"></script>
-<script src="/python/python-playground.js?v=3"></script>
+<script src="/python/python-playground.js?v=5"></script>
