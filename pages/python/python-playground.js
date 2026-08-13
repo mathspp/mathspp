@@ -20,7 +20,7 @@
         indentUnit: 4,
         lineNumbers: true,
         mode: "python",
-        theme: "material-darker",
+        theme: "flexoki",
         viewportMargin: Infinity,
     });
 

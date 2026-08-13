@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/codemirror.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/theme/material-darker.min.css">
+<link rel="stylesheet" href="/python/codemirror-flexoki.css?v=1">
 <link rel="stylesheet" href="/python/python-playground.css">
 
 # Python Playground
@@ -28,4 +28,4 @@ Write Python 3.14, run it entirely in your browser with Pyodide, and share it wi
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/codemirror.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/mode/python/python.min.js"></script>
-<script src="/python/python-playground.js?v=2"></script>
+<script src="/python/python-playground.js?v=3"></script>

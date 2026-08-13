@@ -1,0 +1,108 @@
+/* CodeMirror theme based on plugins/highlight/css/flexoki.css. */
+
+.cm-s-flexoki.CodeMirror {
+    background: var(--bg-2);
+    color: var(--tx);
+}
+
+.cm-s-flexoki .CodeMirror-gutters {
+    background: var(--bg-2);
+    border-right: 1px solid var(--ui);
+}
+
+.cm-s-flexoki .CodeMirror-guttermarker,
+.cm-s-flexoki .CodeMirror-guttermarker-subtle,
+.cm-s-flexoki .CodeMirror-linenumber {
+    color: var(--tx-2);
+}
+
+.cm-s-flexoki .CodeMirror-cursor {
+    border-left: 1px solid var(--accent);
+}
+
+.cm-s-flexoki div.CodeMirror-selected,
+.cm-s-flexoki.CodeMirror-focused div.CodeMirror-selected,
+.cm-s-flexoki .CodeMirror-line::selection,
+.cm-s-flexoki .CodeMirror-line > span::selection,
+.cm-s-flexoki .CodeMirror-line > span > span::selection,
+.cm-s-flexoki .CodeMirror-line::-moz-selection,
+.cm-s-flexoki .CodeMirror-line > span::-moz-selection,
+.cm-s-flexoki .CodeMirror-line > span > span::-moz-selection {
+    background: var(--ui-2);
+}
+
+.cm-s-flexoki .CodeMirror-activeline-background {
+    background: var(--ui);
+}
+
+.cm-s-flexoki .cm-builtin,
+.cm-s-flexoki .cm-link {
+    color: var(--cy);
+}
+
+.cm-s-flexoki .cm-keyword {
+    color: var(--ma);
+    font-weight: bold;
+}
+
+.cm-s-flexoki .cm-def,
+.cm-s-flexoki .cm-attribute,
+.cm-s-flexoki .cm-property {
+    color: var(--gr);
+    font-style: italic;
+}
+
+.cm-s-flexoki .cm-def {
+    font-weight: bold;
+}
+
+.cm-s-flexoki .cm-string,
+.cm-s-flexoki .cm-string-2,
+.cm-s-flexoki .cm-meta,
+.cm-s-flexoki .cm-variable,
+.cm-s-flexoki .cm-variable-2,
+.cm-s-flexoki .cm-variable-3,
+.cm-s-flexoki .cm-type {
+    color: var(--ye);
+}
+
+.cm-s-flexoki .cm-type {
+    font-weight: bold;
+}
+
+.cm-s-flexoki .cm-comment,
+.cm-s-flexoki .cm-quote {
+    color: var(--tx-2);
+}
+
+.cm-s-flexoki .cm-atom,
+.cm-s-flexoki .cm-number {
+    color: var(--bl);
+}
+
+.cm-s-flexoki .cm-operator,
+.cm-s-flexoki .cm-bracket,
+.cm-s-flexoki .cm-punctuation {
+    color: var(--tx);
+}
+
+.cm-s-flexoki .cm-tag,
+.cm-s-flexoki .cm-qualifier {
+    color: var(--ma);
+}
+
+.cm-s-flexoki .cm-error,
+.cm-s-flexoki .cm-invalidchar {
+    background: var(--re);
+    color: var(--flexoki-white);
+}
+
+.cm-s-flexoki .CodeMirror-matchingbracket {
+    background: var(--ui-3);
+    color: var(--tx) !important;
+    font-weight: bold;
+}
+
+.cm-s-flexoki .CodeMirror-nonmatchingbracket {
+    color: var(--re) !important;
+}
