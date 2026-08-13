@@ -1,0 +1,9 @@
+anchors:
+    active: false
+date: 13-08-2026
+mathjax: false
+menu: Python Playground
+metadata:
+    author: Rodrigo Girão Serrão
+    description: Write and run Python in your browser, then share the code with a permalink.
+title: Python Playground
