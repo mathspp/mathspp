@@ -27,7 +27,7 @@ def fibonacci(n: int) -> int:
 print(fibonacci(10))</textarea>
 
     <div class="python-playground__output-heading">
-        <strong>Output</strong>
+        <label class="python-playground__label" for="python-output">Output</label>
         <button type="button" id="clear-output" class="btn btn-sm">Clear</button>
     </div>
     <pre id="python-output" class="python-playground__output" aria-live="polite" aria-label="Python output"></pre>
