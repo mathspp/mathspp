@@ -35,6 +35,6 @@ print(fibonacci(10))</textarea>
 
 <noscript>This playground needs JavaScript to load CodeMirror and run Python in your browser.</noscript>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/codemirror.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/mode/python/python.min.js"></script>
-<script src="/python-playground/python-playground.js?v=7"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/codemirror.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.18/mode/python/python.min.js"></script>
+<script defer src="/python-playground/python-playground.js?v=7"></script>
