@@ -14,15 +14,6 @@
     margin-bottom: 0.75rem;
 }
 
-.python-playground__toolbar select {
-    background: var(--body-background, #fff);
-    border: 1px solid #bcc3ce;
-    border-radius: 0.1rem;
-    color: inherit;
-    height: 1.8rem;
-    padding: 0 0.4rem;
-}
-
 .python-playground__status {
     color: #66758c;
     font-size: 0.85rem;
