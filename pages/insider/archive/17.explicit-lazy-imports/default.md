@@ -159,4 +159,4 @@ So, if you have any questions about explicit lazy imports let me know and I'll a
 
 Get a Python deep dive 🐍🚀 every Monday by dropping your best email address below:
 
-{% include "forms/form.html.twig" with {form: forms( {route: '/insider/_intro'} ) } %}
+{% include "forms/form.html.twig" with {form: forms( {route: '/insider/_hero'} ) } %}

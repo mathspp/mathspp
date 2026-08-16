@@ -128,4 +128,4 @@ In Python 2, what does that code output?
 
 Get a Python deep dive 🐍🚀 every Monday by dropping your best email address below:
 
-{% include "forms/form.html.twig" with {form: forms( {route: '/insider/_intro'} ) } %}
+{% include "forms/form.html.twig" with {form: forms( {route: '/insider/_hero'} ) } %}

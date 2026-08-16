@@ -158,4 +158,4 @@ Next week you'll learn about keys that may or may not be required, you'll learn 
 
 Get a Python deep dive 🐍🚀 every Monday by dropping your best email address below:
 
-{% include "forms/form.html.twig" with {form: forms( {route: '/insider/_intro'} ) } %}
+{% include "forms/form.html.twig" with {form: forms( {route: '/insider/_hero'} ) } %}

@@ -221,4 +221,4 @@ Let's talk about them next week.
 
 Get a Python deep dive 🐍🚀 every Monday by dropping your best email address below:
 
-{% include "forms/form.html.twig" with {form: forms( {route: '/insider/_intro'} ) } %}
+{% include "forms/form.html.twig" with {form: forms( {route: '/insider/_hero'} ) } %}
