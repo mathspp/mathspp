@@ -5747,7 +5747,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/dipping-my-toes-in-metaprogramming": {
-    "timestamp": 1753281394.0681112,
+    "timestamp": 1785591975.9840055,
     "tags": [
       "dunder methods",
       "metaprogramming",
@@ -5776,7 +5776,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/regex-in-real-life": {
-    "timestamp": 1756858719.2488642,
+    "timestamp": 1785591975.984204,
     "tags": [
       "regex",
       "python",
@@ -5861,7 +5861,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/128.matching-prefixes-and-suffixes-with-regex": {
-    "timestamp": 1760992473.294008,
+    "timestamp": 1785591975.9836564,
     "tags": [
       "regex",
       "programming",
@@ -6487,6 +6487,20 @@
       "code_snippets": 0,
       "loc": 0,
       "words": 446
+    }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/why-oop-exists": {
+    "timestamp": 1787756656.4319108,
+    "tags": [
+      "python",
+      "programming",
+      "oop"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 30,
+      "loc": 186,
+      "words": 3888
     }
   }
 }

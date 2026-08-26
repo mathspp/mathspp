@@ -1,0 +1,19 @@
+date: 26-08-2026 16:01
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Learn the fundamental principles behind OOP and how that connects to the Python syntax for class definition."
+    og:image: "https://mathspp.com/blog/why-oop-exists/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/why-oop-exists/thumbnail.webp"
+references:
+  - "[mathspp insider](/insider) issue “Why OOP exists”, <https://mathspp.com/insider/archive/why-oop-exists>"
+  - "[mathspp insider](/insider) issue “Objects in OOP”, <https://mathspp.com/insider/archive/objects-in-oop>"
+  - "[mathspp insider](/insider) issue “Classes create namespaces”, <https://mathspp.com/insider/archive/classes-create-namespaces>"
+slug: "why-oop-exists"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+      - python
+      - programming
+      - oop
+title: Why OOP exists

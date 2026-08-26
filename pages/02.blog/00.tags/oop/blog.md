@@ -28,9 +28,9 @@ title: "Oop blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">6</th>
-            <th style="text-align: center;">10,647</th>
-            <th style="text-align: center;">1,511</th>
+            <th style="text-align: center;">7</th>
+            <th style="text-align: center;">14,535</th>
+            <th style="text-align: center;">1,697</th>
         </tr>
     </thead>
     <tbody>

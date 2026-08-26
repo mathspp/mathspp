@@ -3162,6 +3162,46 @@
     },
     {
       "data": {
+        "id": "internal-link:article:why-oop-exists->article:describing-descriptors",
+        "source": "article:why-oop-exists",
+        "target": "article:describing-descriptors",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:why-oop-exists->article:dunder-methods",
+        "source": "article:why-oop-exists",
+        "target": "article:dunder-methods",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:why-oop-exists->article:how-to-work-with-case-insensitive-strings",
+        "source": "article:why-oop-exists",
+        "target": "article:how-to-work-with-case-insensitive-strings",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:why-oop-exists->article:list-comprehensions-101",
+        "source": "article:why-oop-exists",
+        "target": "article:list-comprehensions-101",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:why-oop-exists->article:properties",
+        "source": "article:why-oop-exists",
+        "target": "article:properties",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
         "id": "internal-link:article:write-a-coding-agent-from-first-principles-better-tools->article:decorators",
         "source": "article:write-a-coding-agent-from-first-principles-better-tools",
         "target": "article:decorators",
@@ -14074,6 +14114,30 @@
     },
     {
       "data": {
+        "id": "tag:article:why-oop-exists->tag:oop",
+        "source": "article:why-oop-exists",
+        "target": "tag:oop",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:why-oop-exists->tag:programming",
+        "source": "article:why-oop-exists",
+        "target": "tag:programming",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:why-oop-exists->tag:python",
+        "source": "article:why-oop-exists",
+        "target": "tag:python",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
         "id": "tag:article:why-should-i-use-virtual-environments->tag:programming",
         "source": "article:why-should-i-use-virtual-environments",
         "target": "tag:programming",
@@ -14353,7 +14417,7 @@
       }
     }
   ],
-  "generated_at": "2026-07-22T16:06:47+00:00",
+  "generated_at": "2026-08-26T15:04:29+00:00",
   "nodes": [
     {
       "data": {
@@ -14549,10 +14613,10 @@
     {
       "data": {
         "date": "13-06-2023",
-        "degree": 8,
+        "degree": 9,
         "height": 34,
         "id": "article:describing-descriptors",
-        "internal_link_degree": 4,
+        "internal_link_degree": 5,
         "label": "Describing Descriptors | Pydon't \ud83d\udc0d",
         "size": 34,
         "slug": "describing-descriptors",
@@ -14593,12 +14657,12 @@
     {
       "data": {
         "date": "09-07-2022",
-        "degree": 28,
-        "height": 47,
+        "degree": 29,
+        "height": 48,
         "id": "article:dunder-methods",
-        "internal_link_degree": 25,
+        "internal_link_degree": 26,
         "label": "Dunder methods | Pydon't \ud83d\udc0d",
-        "size": 47,
+        "size": 48,
         "slug": "dunder-methods",
         "tag_degree": 3,
         "tags": [
@@ -14609,7 +14673,7 @@
         "title": "Dunder methods | Pydon't \ud83d\udc0d",
         "type": "article",
         "url": "/blog/pydonts/dunder-methods",
-        "width": 68
+        "width": 70
       }
     },
     {
@@ -14721,12 +14785,12 @@
     {
       "data": {
         "date": "24-09-2021 7:00pm",
-        "degree": 28,
-        "height": 47,
+        "degree": 29,
+        "height": 48,
         "id": "article:list-comprehensions-101",
-        "internal_link_degree": 26,
+        "internal_link_degree": 27,
         "label": "List comprehensions 101 | Pydon't \ud83d\udc0d",
-        "size": 47,
+        "size": 48,
         "slug": "list-comprehensions-101",
         "tag_degree": 2,
         "tags": [
@@ -14736,7 +14800,7 @@
         "title": "List comprehensions 101 | Pydon't \ud83d\udc0d",
         "type": "article",
         "url": "/blog/pydonts/list-comprehensions-101",
-        "width": 68
+        "width": 70
       }
     },
     {
@@ -14849,12 +14913,12 @@
     {
       "data": {
         "date": "14-05-2023",
-        "degree": 7,
-        "height": 33,
+        "degree": 8,
+        "height": 34,
         "id": "article:properties",
-        "internal_link_degree": 4,
+        "internal_link_degree": 5,
         "label": "Properties | Pydon't \ud83d\udc0d",
-        "size": 33,
+        "size": 34,
         "slug": "properties",
         "tag_degree": 3,
         "tags": [
@@ -14865,7 +14929,7 @@
         "title": "Properties | Pydon't \ud83d\udc0d",
         "type": "article",
         "url": "/blog/pydonts/properties",
-        "width": 48
+        "width": 49
       }
     },
     {
@@ -22074,10 +22138,10 @@
     {
       "data": {
         "date": "21-01-2023",
-        "degree": 8,
+        "degree": 9,
         "height": 34,
         "id": "article:how-to-work-with-case-insensitive-strings",
-        "internal_link_degree": 5,
+        "internal_link_degree": 6,
         "label": "How to work with case-insensitive strings",
         "size": 34,
         "slug": "how-to-work-with-case-insensitive-strings",
@@ -24183,6 +24247,28 @@
     },
     {
       "data": {
+        "date": "26-08-2026 16:01",
+        "degree": 8,
+        "height": 34,
+        "id": "article:why-oop-exists",
+        "internal_link_degree": 5,
+        "label": "Why OOP exists",
+        "size": 34,
+        "slug": "why-oop-exists",
+        "tag_degree": 3,
+        "tags": [
+          "python",
+          "programming",
+          "oop"
+        ],
+        "title": "Why OOP exists",
+        "type": "article",
+        "url": "/blog/why-oop-exists",
+        "width": 49
+      }
+    },
+    {
+      "data": {
         "date": "24-11-2023 12:00",
         "degree": 3,
         "height": 28,
@@ -25214,17 +25300,17 @@
     },
     {
       "data": {
-        "degree": 6,
-        "height": 31,
+        "degree": 7,
+        "height": 33,
         "id": "tag:oop",
         "internal_link_degree": 0,
         "label": "oop",
-        "size": 31,
+        "size": 33,
         "tag": "oop",
-        "tag_degree": 6,
+        "tag_degree": 7,
         "type": "tag",
         "url": "/blog/tags/oop",
-        "width": 31
+        "width": 33
       }
     },
     {
@@ -25409,14 +25495,14 @@
     },
     {
       "data": {
-        "degree": 328,
+        "degree": 329,
         "height": 78,
         "id": "tag:programming",
         "internal_link_degree": 0,
         "label": "programming",
         "size": 78,
         "tag": "programming",
-        "tag_degree": 328,
+        "tag_degree": 329,
         "type": "tag",
         "url": "/blog/tags/programming",
         "width": 78
@@ -25469,14 +25555,14 @@
     },
     {
       "data": {
-        "degree": 324,
+        "degree": 325,
         "height": 78,
         "id": "tag:python",
         "internal_link_degree": 0,
         "label": "python",
         "size": 78,
         "tag": "python",
-        "tag_degree": 324,
+        "tag_degree": 325,
         "type": "tag",
         "url": "/blog/tags/python",
         "width": 78
@@ -25845,9 +25931,9 @@
   ],
   "site": "https://mathspp.com",
   "stats": {
-    "articles": 453,
-    "internal_links": 398,
-    "tag_edges": 1396,
+    "articles": 454,
+    "internal_links": 403,
+    "tag_edges": 1399,
     "tags": 99
   }
 }
