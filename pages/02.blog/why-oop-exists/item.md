@@ -193,7 +193,7 @@ After implementing `author_initialise`, all other functions follow:
 
 ```py
 def author_name(author):
-    return f"{author[0]} {author[1]}
+    return f"{author[0]} {author[1]}"
 
 def author_birth_year(author):
     return author[2]
