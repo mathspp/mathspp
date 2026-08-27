@@ -1,3 +1,36 @@
+# v5.0.6
+## 08/17/2026
+
+1. [](#bugfix)
+    * Email addresses with a stray space around them are no longer thrown away, so a `from`, `to`, `cc`, `bcc` or `reply_to` setting that ends in a space keeps working instead of failing with a confusing "An email must have a From or a Sender header" error.
+    * An address setting containing nothing but spaces now tells you that address needs configuring, rather than failing later with that same confusing error.
+
+# v5.0.5
+## 08/05/2026
+
+1. [](#bugfix)
+    * [security] On Grav 2.0, email settings can no longer read your site, system or theme configuration directly, which was a way around the restriction added in 5.0.4 that already stopped them reading it through `config` ([GHSA-p597-crqc-m349](https://github.com/getgrav/grav/security/advisories/GHSA-p597-crqc-m349)). Requires Grav 2.0.16 or later, which is also where the underlying protection for email settings lives.
+
+# v5.0.4
+## 08/04/2026
+
+1. [](#bugfix)
+    * [security] On Grav 2.0, Twig in a form's email settings now runs under Grav's content sandbox, so someone who can only edit pages can no longer use an email action to run commands on the server ([GHSA-gh8j-q67c-j53f](https://github.com/getgrav/grav/security/advisories/GHSA-gh8j-q67c-j53f)). Requires Grav 2.0.16 or later.
+    * Email settings can still read your site configuration and this plugin's own address settings, so `{{ config.site.emails.sales }}` and `{{ config.plugins.email.to }}` keep working, but they can no longer read your mail server password or any other plugin's settings.
+    * Grav 1.7 has no Twig content sandbox, so email settings behave there exactly as they did before, and the plugin still runs on the PHP versions that line supports.
+
+# v5.0.3
+## 06/14/2026
+
+1. [](#improved)
+    * Email templates that fail to render (a Twig syntax error, or an unresolved include or extends) are now logged to the email and Grav logs instead of failing silently, so a broken template is much easier to track down.
+
+# v5.0.2
+## 06/08/2026
+
+1. [](#improved)
+    * Button links in HTML emails now keep their white text in email clients that force their own link color, by targeting the `a.btn-primary` and `a.btn-secondary` selectors with `!important`.
+
 # v5.0.1
 ## 04/17/2026
 

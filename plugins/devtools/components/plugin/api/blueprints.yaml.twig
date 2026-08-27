@@ -1,0 +1,37 @@
+{% set githubid = component.author.githubid ?: component.author.name|hyphenize -%}
+name: {{ component.name|titleize }}
+slug: {{ component.name|hyphenize }}
+type: plugin
+version: 0.1.0
+description: {{ component.description }}
+icon: plug
+author:
+  name: {{ component.author.name }}
+  email: {{ component.author.email }}
+homepage: https://github.com/{{ githubid }}/grav-plugin-{{ component.name|hyphenize }}
+demo: http://demo.yoursite.com
+keywords: grav, plugin, api, admin-next
+bugs: https://github.com/{{ githubid }}/grav-plugin-{{ component.name|hyphenize }}/issues
+docs: https://github.com/{{ githubid }}/grav-plugin-{{ component.name|hyphenize }}/blob/develop/README.md
+license: MIT
+
+compatibility:
+  grav: [{% for v in component.target.compatibility %}'{{ v }}'{% if not loop.last %}, {% endif %}{% endfor %}]
+
+dependencies:
+  - { name: grav, version: '>={{ component.target.grav_dep|default('2.0.0') }}' }
+  - { name: api, version: '>=1.0.0' }
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool

@@ -1,3 +1,52 @@
+# v3.4.8
+## 08/27/2026
+
+1. [](#new)
+    * The plugin's settings can now be translated, and ship in English and Spanish. They render translated in both the Grav 1.7 admin and Admin 2. Thanks to @pmoreno-rodriguez for the translations [#258](https://github.com/trilbymedia/grav-plugin-git-sync/pull/258).
+
+1. [](#bugfix)
+    * The Git Sync panel on the Plugins page now uses the site's language instead of always showing English.
+
+# v3.4.7
+## 08/24/2026
+
+1. [](#bugfix)
+    * Fixed content being deleted from disk when a folder was removed from the sync list. Git Sync now stops tracking that folder properly, so a reset, a sync or a webhook pull leaves it alone instead of clearing it out [#257](https://github.com/trilbymedia/grav-plugin-git-sync/issues/257).
+
+# v3.4.6
+## 08/13/2026
+
+1. [](#bugfix)
+    * Fixed Git Sync's own settings never being recognised when saved from Admin Next, which left the repository password stored unencrypted and skipped remote/committer setup on the initial save [#255](https://github.com/trilbymedia/grav-plugin-git-sync/issues/255).
+    * Fixed saves to config, accounts, themes and other data areas not matching the tracked folder list when they come from Admin Next, so those changes are now committed like their admin-classic equivalents.
+
+# v3.4.5
+## 07/28/2026
+
+1. [](#bugfix)
+    * Fixed `{{pageTitle}}` and `{{pageRoute}}` in the commit message coming out as `NO TITLE FOUND` / `NO ROUTE FOUND` when saving from Admin Next [#254](https://github.com/trilbymedia/grav-plugin-git-sync/issues/254).
+    * Fixed the committer falling back to `GitSync` instead of the logged-in account when "Use Grav User Name" or "Use Grav User Full Name" is selected and the save comes from Admin Next.
+    * Page title and route are now also picked up on delete and media changes, not just page saves.
+
+# v3.4.4
+## 06/30/2026
+
+1. [](#bugfix)
+    * The default branch is now `main` instead of `master` throughout — the setup Wizard (every hosting service, including "All others"), the Local Branch / Remote Branch settings fields, and the API defaults — matching the current default branch on GitHub, modern GitLab (14.0+), and Bitbucket Cloud. Previously the Wizard silently pre-filled `master` for GitLab and Bitbucket, which caused `git fetch origin master` to fail with `couldn't find remote ref master` on a freshly created repo [#251](https://github.com/trilbymedia/grav-plugin-git-sync/issues/251).
+    * `hasRemote()` now performs a genuine, quiet existence check (`git remote`) rather than running `remote get-url <name>` and relying on a thrown error. With command logging enabled this no longer writes a misleading `error: No such remote` line every time a remote hasn't been added yet.
+
+# v3.4.3
+## 06/01/2026
+
+1. [](#bugfix)
+    * Fixed commits failing with `fatal: empty ident name (for <…>) not allowed` when the committer name resolved to an empty string — for example a blank **Committer Name** field, or "Use Grav User Full Name" selected for an admin account with no full name set. Blank names/emails now fall back to the `GitSync` / `git-sync@trilby.media` defaults [#249](https://github.com/trilbymedia/grav-plugin-git-sync/issues/249).
+
+# v3.4.2
+## 05/29/2026
+
+1. [](#bugfix)
+    * **The Git Sync sidebar entry and the toolbar Synchronize button are now hidden from users who lack any Git Sync permission**, matching how admin-classic gates the same menu. The items only appear for users with one of `api.git-sync`, `api.git-sync.read`, `api.git-sync.write`, or `api.git-sync.admin` (or super-admins). Requires grav-plugin-api ≥ 1.0.0-rc.11. Fixes [getgrav/grav-plugin-admin2#23](https://github.com/getgrav/grav-plugin-admin2/issues/23).
+
 # v3.4.1
 ## 05/07/2026
 

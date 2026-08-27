@@ -1,0 +1,66 @@
+{% set extension = config.theme.production ? '.min' : '' %}
+<!DOCTYPE html>
+<html lang="{{ (grav.language.getActive ?: grav.config.site.default_lang)|e }}" data-theme="{{ config.theme.daisyui_theme|default('light')|e }}">
+<head>
+    {% block head %}
+        <meta charset="utf-8" />
+        <title>{% if header.title %}{{ header.title|e }} | {% endif %}{{ site.title|e }}</title>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% include 'partials/metadata.html.twig' %}
+
+        <link rel="icon" type="image/png" href="{{ url('theme://images/logo.png')|e }}" />
+        <link rel="canonical" href="{{ page.url(true, true)|e }}" />
+    {% endblock head %}
+
+    {% block stylesheets %}
+        {% do assets.addCss('theme://dist/css/site' ~ extension ~ '.css', 98) %}
+    {% endblock %}
+
+    {% block javascripts %}
+        {% do assets.addJs('theme://js/main' ~ extension ~ '.js', 98) %}
+    {% endblock %}
+
+    {% block assets deferred %}
+    {{ assets.css()|raw }}
+    {{ assets.js()|raw }}
+    {% endblock %}
+</head>
+<body id="top" class="min-h-screen flex flex-col {{ page.header.body_classes|e }} {{ config.theme.production ?: 'debug-screens' }}">
+
+{% block header %}
+    <header class="navbar bg-base-200">
+        <div class="navbar-start">
+            <a class="btn btn-ghost text-xl" href="{{ home_url|e }}">{{ config.site.title|e }}</a>
+        </div>
+        {% block header_navigation %}
+            <nav class="navbar-end">
+                {% include 'partials/navigation.html.twig' %}
+            </nav>
+        {% endblock %}
+    </header>
+{% endblock %}
+
+{% block body %}
+    <main class="flex-1">
+        <div class="container mx-auto px-4 py-8 prose max-w-none">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+{% endblock %}
+
+{% block footer %}
+    <footer class="footer footer-center bg-base-200 text-base-content p-4">
+        <aside>
+            <p><a class="link link-hover" href="https://getgrav.org">Grav</a> theme by <a class="link link-hover" href="https://trilby.media">Trilby Media, LLC</a>.</p>
+        </aside>
+    </footer>
+{% endblock %}
+
+{% block bottom %}
+    {{ assets.js('bottom')|raw }}
+{% endblock %}
+
+</body>
+</html>

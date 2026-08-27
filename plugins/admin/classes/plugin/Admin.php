@@ -502,7 +502,10 @@ class Admin
             $root = '';
         }
 
-        $pattern = '`^((' . preg_quote($root, '`') . ')?(/[^/]+)?)' . preg_quote($base, '`') . '`ui';
+        // Match the base only at a path-segment boundary (followed by `/` or end of
+        // string) so a page route like `/pages/administration` is not mistaken for an
+        // existing `/admin` path just because the folder name starts with "admin".
+        $pattern = '`^((' . preg_quote($root, '`') . ')?(/[^/]+)?)' . preg_quote($base, '`') . '(?=/|$)`ui';
         // Check if we already have an admin path: /admin, /en/admin, /root/admin or /root/en/admin.
         if (preg_match($pattern, $redirect)) {
             $redirect = preg_replace('|^' . preg_quote($root, '|') . '|', '', $redirect);
@@ -1730,9 +1733,17 @@ class Admin
 //            $body = Response::get('http://localhost/notifications.json?' . time());
             $notifications = json_decode($body, true);
 
+            // The remote feed can hand back an empty body, an HTML error page,
+            // or otherwise invalid JSON, all of which decode to a non-array.
+            // Guard so PHP 8 doesn't fatal on usort()/array_reverse() being
+            // passed null instead of an array.
+            if (!is_array($notifications)) {
+                $notifications = [];
+            }
+
             // Sort by date
             usort($notifications, function ($a, $b) {
-                return strcmp($a['date'], $b['date']);
+                return strcmp($a['date'] ?? '', $b['date'] ?? '');
             });
 
             // Reverse order and create a new array

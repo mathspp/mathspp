@@ -1,4 +1,10 @@
-# v2.0.
+# v2.0.1
+## 2026-07-10
+
+1. [](#new)
+   * Added Grav 2.0 compatibility 
+  
+# v2.0.0
 ## 2021-05-13
 
 1. [](#improved)

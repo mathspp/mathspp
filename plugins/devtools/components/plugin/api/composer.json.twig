@@ -1,0 +1,26 @@
+{% set githubid = component.author.githubid ?: component.author.name|hyphenize -%}
+{
+  "name": "{{ githubid|lower }}/{{ component.name|hyphenize }}",
+  "type": "grav-plugin",
+  "description": "{{ component.description }}",
+  "version": "1.0.0",
+  "keywords": ["plugin", "api", "admin-next"],
+  "homepage": "https://github.com/{{ githubid }}/grav-plugin-{{ component.name|hyphenize }}",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "{{ component.author.name }}",
+      "email": "{{ component.author.email }}",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">={{ component.target.php_min|default('8.3.0') }}"
+  },
+  "autoload": {
+    "psr-4": {
+      "Grav\\Plugin\\{{ component.name|camelize }}\\": "classes/"
+    },
+    "classmap": ["{{ component.name|hyphenize }}.php"]
+  }
+}

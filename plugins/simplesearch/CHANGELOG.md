@@ -1,3 +1,16 @@
+# v2.3.3
+## 08/27/2026
+
+1. [](#bugfix)
+    * Fixed searching page headers failing with a 500 error when a header held anything other than plain text or a plain list, which another plugin can put there. Thanks to @nerdyjan for the report and the fix ([#209](https://github.com/getgrav/grav-plugin-simplesearch/issues/209)).
+    * Fixed the ignored header keys being skipped entirely on sites using Flex pages, which quietly searched the page title, form definitions and other fields that are meant to be left out.
+
+# v2.3.2
+## 07/20/2026
+
+1. [](#bugfix)
+    * Accent-insensitive search now works regardless of the server's locale, so accented and unaccented spellings match each other in languages beyond Western European ([#207](https://github.com/getgrav/grav-plugin-simplesearch/issues/207)).
+
 # v2.3.1
 ## 05/01/2026
 

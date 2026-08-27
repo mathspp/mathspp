@@ -53,3 +53,7 @@ ca:
   PLUGIN_ERROR:
     ERROR: "Error"
     ERROR_MESSAGE: "Ups. Sembla que aquesta pàgina no existeix."
+es:
+  PLUGIN_ERROR:
+    ERROR: "Error"
+    ERROR_MESSAGE: "Ups. Parece que esta página no existe."

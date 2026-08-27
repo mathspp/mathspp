@@ -1,0 +1,53 @@
+{% set githubid = component.author.githubid ?: component.author.name|hyphenize -%}
+name: {{ component.name|titleize }}
+slug: {{ component.name|hyphenize }}
+type: theme
+version: 0.1.0
+description: {{ component.description }}
+icon: paint-brush
+author:
+  name: {{ component.author.name }}
+  email: {{ component.author.email }}
+homepage: https://github.com/{{ githubid }}/grav-theme-{{ component.name|hyphenize }}
+demo: http://demo.yoursite.com
+keywords: grav, theme, etc
+bugs: https://github.com/{{ githubid }}/grav-theme-{{ component.name|hyphenize }}/issues
+readme: https://github.com/{{ githubid }}/grav-theme-{{ component.name|hyphenize }}/blob/develop/README.md
+license: MIT
+
+compatibility:
+  grav: [{% for v in component.target.compatibility %}'{{ v }}'{% if not loop.last %}, {% endif %}{% endfor %}]
+
+dependencies:
+  - { name: grav, version: '>={{ component.target.grav_dep|default('2.0.0') }}' }
+
+form:
+    validation: loose
+    fields:
+        dropdown.enabled:
+            type: toggle
+            label: Dropdown in Menu
+            highlight: 1
+            default: 1
+            options:
+                1: PLUGIN_ADMIN.ENABLED
+                0: PLUGIN_ADMIN.DISABLED
+            validate:
+                type: bool
+        production:
+            type: toggle
+            label: Production Mode
+            highlight: 1
+            default: 1
+            options:
+                1: PLUGIN_ADMIN.ENABLED
+                0: PLUGIN_ADMIN.DISABLED
+            validate:
+                type: bool
+        daisyui_theme:
+            type: select
+            label: daisyUI Theme
+            default: light
+            options:
+                light: Light
+                dark: Dark

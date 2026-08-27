@@ -2,7 +2,9 @@
 namespace Grav\Plugin\GitSync;
 
 use Grav\Common\Grav;
+use Grav\Common\Page\Interfaces\PageInterface;
 use Grav\Common\Plugin;
+use Grav\Common\User\Interfaces\UserInterface;
 use Grav\Common\Utils;
 use http\Exception\RuntimeException;
 use RocketTheme\Toolbox\File\File;
@@ -21,6 +23,8 @@ class GitSync extends Git
     protected $config;
     /** @var string */
     protected $repositoryPath;
+    /** @var PageInterface|null Page behind the change being committed, if any */
+    protected $page;
 
     /** @var string|null */
     private $user;
@@ -149,8 +153,11 @@ class GitSync extends Git
     public function setUser($name = null, $email = null)
     {
         $gitConfig = $this->getConfig('git', []) ?? [];
-        $name = $name ?: ($gitConfig['name'] ?? 'GitSync');
-        $email = $email ?: ($gitConfig['email'] ?? 'git-sync@trilby.media');
+        // Fall back to defaults when the config value is missing OR an empty
+        // string — `??` alone leaves a blank name/email in place, which makes
+        // git reject the commit with "fatal: empty ident name ... not allowed".
+        $name = $name ?: (($gitConfig['name'] ?? '') ?: 'GitSync');
+        $email = $email ?: (($gitConfig['email'] ?? '') ?: 'git-sync@trilby.media');
         $privateKey = $this->getGitConfig('private_key', null);
 
         $this->execute("config user.name \"{$name}\"");
@@ -173,27 +180,105 @@ class GitSync extends Git
     {
         $name = $this->getRemote('name', $name);
 
-        try {
-            /** @var string $version */
-            $version = Helper::isGitInstalled(true);
-            // remote get-url 'name' supported from 2.7.0 and above
-            if (version_compare($version, '2.7.0', '>=')) {
-                $command = "remote get-url \"{$name}\"";
-            } else {
-                $command = "config --get remote.{$name}.url";
-            }
+        // List the configured remotes and check for membership. `git remote`
+        // exits 0 even when there are none, so this stays a genuine existence
+        // check. The previous approach ran `remote get-url <name>` non-quiet and
+        // relied on the resulting error being thrown and caught — which, with
+        // logging enabled, wrote a misleading "error: No such remote" line every
+        // time a remote simply hadn't been added yet.
+        $remotes = array_map('trim', $this->execute('remote', true));
 
-            $this->execute($command);
-        } catch (\Exception $e) {
-            return false;
+        return in_array($name, $remotes, true);
+    }
+
+    /**
+     * Stop tracking folders that are no longer in the sync list, leaving them
+     * untouched on disk.
+     *
+     * The repository root is `user/` (see `$repositoryPath`), and sparse-checkout
+     * is what narrows the working tree down to the configured folders. A path
+     * still recorded in HEAD but no longer matched by the sparse patterns is one
+     * git considers "must not exist in the working tree", so the next `pull` or
+     * `reset --hard HEAD` deletes it from disk — the folder itself included.
+     * Removing `pages` from the sync list therefore wiped `user/pages` off the
+     * filesystem and took the site down with it (#257).
+     *
+     * Dropping those paths from the index first puts them out of git's reach, so
+     * no later sync or reset can touch them.
+     *
+     * @param array $folders the folders that should remain tracked
+     * @return void
+     */
+    protected function pruneUnsyncedFolders(array $folders)
+    {
+        // Nothing is tracked before the first commit. This has to be checked
+        // separately rather than by looking for empty `ls-tree` output, because
+        // `execute()` folds stderr into its return value -- on a repository with
+        // no commits `ls-tree` yields "fatal: Not a valid object name HEAD",
+        // which would otherwise read as a tracked folder called exactly that.
+        // `rev-parse --quiet` prints nothing at all when HEAD is unborn.
+        if (!array_filter(array_map('trim', $this->execute('rev-parse --quiet --verify HEAD', true)))) {
+            return;
         }
 
-        return true;
+        // Top-level trees recorded in HEAD. HEAD rather than the index because
+        // that is what `reset --hard` rebuilds the working tree from, and
+        // top-level only because that is the granularity `folders:` works at --
+        // listing every tracked file would mean reading the whole page tree.
+        $tracked = array_filter(array_map('trim', $this->execute('ls-tree -d --name-only HEAD', true)));
+        if (!$tracked) {
+            return;
+        }
+
+        // A nested entry such as `pages/blog` keeps the whole `pages` tree in
+        // play, so compare on the first path segment.
+        $keep = [];
+        foreach ($folders as $folder) {
+            $folder = trim(str_replace('\\', '/', (string) $folder), '/');
+            if ($folder !== '') {
+                $keep[explode('/', $folder)[0]] = true;
+            }
+        }
+
+        $stale = array_values(array_filter($tracked, static function ($folder) use ($keep) {
+            return !isset($keep[$folder]);
+        }));
+
+        if (!$stale) {
+            return;
+        }
+
+        foreach ($stale as $folder) {
+            $this->execute('rm -r --cached --ignore-unmatch ' . escapeshellarg($folder), true);
+        }
+
+        // The removal has to be committed: `reset --hard HEAD` rebuilds the index
+        // from HEAD, so a merely staged removal would protect nothing. The
+        // committer is pinned inline because `setUser()` has not necessarily run
+        // yet at this point in the save. Same fallbacks as `setUser()`, empty
+        // string included -- git rejects a commit with a blank ident.
+        $gitConfig = $this->getConfig('git', []) ?? [];
+        $name = ($gitConfig['name'] ?? '') ?: 'GitSync';
+        $email = ($gitConfig['email'] ?? '') ?: 'git-sync@trilby.media';
+        $message = '(Grav GitSync) Stopped tracking ' . implode(', ', $stale)
+            . ' after removal from the sync list';
+
+        $this->execute(
+            '-c ' . escapeshellarg('user.name=' . $name)
+            . ' -c ' . escapeshellarg('user.email=' . $email)
+            . ' commit -m ' . escapeshellarg($message),
+            true
+        );
     }
 
     public function enableSparseCheckout()
     {
         $folders = $this->config['folders'] ?? ['pages'];
+
+        // Must run before the new patterns are written, while HEAD still
+        // reflects what the previous folder list was tracking.
+        $this->pruneUnsyncedFolders($folders);
+
         $this->execute('config core.sparsecheckout true');
 
         $sparse = [];
@@ -289,6 +374,88 @@ class GitSync extends Git
     }
 
     /**
+     * Remember the page behind the current save / delete / media change so the
+     * commit message placeholders can be filled from the object itself.
+     *
+     * Admin-classic submits a page save as a form POST (`data[header][title]`,
+     * `data[route]`), but admin-next saves through the API plugin with a JSON
+     * body in a completely different shape, so scraping the request alone
+     * yields "NO TITLE FOUND" / "NO ROUTE FOUND" (#254). Every save/delete/media
+     * event carries the page object regardless of which admin fired it.
+     *
+     * @param PageInterface|object|null $page
+     */
+    public function setPage($page = null): void
+    {
+        $this->page = $page instanceof PageInterface ? $page : null;
+    }
+
+    /**
+     * Title and route of the page being committed, if it can be determined.
+     *
+     * Prefers the page object captured from the save event, then falls back to
+     * the request body — admin-classic's `data.*` shape first, then the flat
+     * keys the API plugin's page endpoints use.
+     *
+     * @return array{0: string|null, 1: string|null}
+     */
+    protected function getPageContext(): array
+    {
+        $title = null;
+        $route = null;
+
+        if ($this->page !== null) {
+            $title = $this->page->title();
+            $route = $this->page->rawRoute() ?: $this->page->route();
+        }
+
+        if (!$title || !$route) {
+            $uri = $this->grav['uri'];
+            $title = $title ?: ($uri->post('data.header.title') ?: $uri->post('header.title') ?: $uri->post('title'));
+            $route = $route ?: ($uri->post('data.route') ?: $uri->post('route'));
+        }
+
+        return [is_string($title) ? $title : null, is_string($route) ? $route : null];
+    }
+
+    /**
+     * The Grav user behind the current change, for the `gravuser` / `gravfull`
+     * committer options.
+     *
+     * Under admin-next the request is authenticated by the API plugin (API key,
+     * JWT or session passthrough) and the resulting account hangs off the admin
+     * proxy — it is not necessarily on the session, and `$grav['user']` may
+     * still be the guest. Try each source in turn and take the first one that
+     * actually names a user.
+     *
+     * @return UserInterface|null
+     */
+    protected function getGravUser()
+    {
+        $candidates = [];
+
+        $admin = $this->grav['admin'] ?? null;
+        if ($admin !== null && isset($admin->user)) {
+            $candidates[] = $admin->user;
+        }
+
+        $session = isset($this->grav['session']) ? $this->grav['session'] : null;
+        if ($session !== null && isset($session->user)) {
+            $candidates[] = $session->user;
+        }
+
+        $candidates[] = $this->grav['user'] ?? null;
+
+        foreach ($candidates as $candidate) {
+            if ($candidate instanceof UserInterface && ($candidate->username ?? '') !== '') {
+                return $candidate;
+            }
+        }
+
+        return null;
+    }
+
+    /**
      * @param string $message
      * @return string[]
      */
@@ -303,10 +470,7 @@ class GitSync extends Git
         $config = $this->getConfig('git', null);
         $message = $config['message'] ?? $message;
 
-        // get Page Title and Route from Post
-        $uri = $this->grav['uri'];
-        $page_title = $uri->post('data.header.title');
-        $page_route = $uri->post('data.route');
+        [$page_title, $page_route] = $this->getPageContext();
 
         $pageTitle = $page_title ?: 'NO TITLE FOUND';
         $pageRoute = $page_route ?: 'NO ROUTE FOUND';
@@ -323,12 +487,14 @@ class GitSync extends Git
                 $email = $gitConfig['email'] ?? 'git-sync@trilby.media';
                 break;
             case 'gravuser':
-                $user = $this->grav['session']->user->username ?? 'GitSync';
-                $email = $this->grav['session']->user->email ?? 'git-sync@trilby.media';
+                $gravUser = $this->getGravUser();
+                $user = $gravUser->username ?? 'GitSync';
+                $email = $gravUser->email ?? 'git-sync@trilby.media';
                 break;
             case 'gravfull':
-                $user = $this->grav['session']->user->fullname ?? 'GitSync';
-                $email = $this->grav['session']->user->email ?? 'git-sync@trilby.media';
+                $gravUser = $this->getGravUser();
+                $user = $gravUser->fullname ?? 'GitSync';
+                $email = $gravUser->email ?? 'git-sync@trilby.media';
                 break;
             case 'gituser':
             default:
@@ -336,6 +502,12 @@ class GitSync extends Git
                 $email = $gitConfig['email'] ?? 'git-sync@trilby.media';
                 break;
         }
+
+        // Guard against empty values from any source (e.g. a Grav user with no
+        // full name set, or a blank committer field) — an empty author name
+        // triggers git's "fatal: empty ident name ... not allowed".
+        $user = $user ?: 'GitSync';
+        $email = $email ?: 'git-sync@trilby.media';
 
         $author = $user . ' <' . $email . '>';
         $author = '--author="' . $author . '"';

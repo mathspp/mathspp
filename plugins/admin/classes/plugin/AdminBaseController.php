@@ -513,12 +513,37 @@ class AdminBaseController
     protected function dataPermissions()
     {
         $type        = $this->view;
+        $route       = $this->route;
         $permissions = ['admin.super'];
+
+        // The Tools views are aliases for config scopes: onAdminData() rewrites
+        // `tools/scheduler` to `config/scheduler` and `tools` / `tools/backups`
+        // to `config/backups` before the object is saved. Authorizing against the
+        // raw `tools` view sent those saves down the `default` branch below, where
+        // the free-form `admin.configuration.tools` string resolves true for
+        // anyone holding the inheritable `admin.configuration` — re-opening the
+        // GHSA-wx62 scheduler-job RCE through the alias. Resolve the alias first so
+        // the `config` branch applies the super-only carve-out to the scope that
+        // is actually written (GHSA-gxxc-pcrx-22fr).
+        if ($type === 'tools' && in_array($route, [null, '', 'scheduler', 'backups'], true)) {
+            $type  = 'config';
+            $route = $route ?: 'backups';
+        }
 
         switch ($type) {
             case 'config':
-                $type = $this->route ?: 'system';
-                $permissions[] = 'admin.configuration.' . $type;
+                $type = $route ?: 'system';
+                // Tool-managed, execution/security-sensitive config scopes must not be
+                // reachable through the inheritable admin.configuration.* permission. The
+                // scheduler scope writes custom_jobs[].command, which the scheduler feeds
+                // straight into a Symfony Process, so a non-super "configuration admin"
+                // could otherwise escalate to arbitrary command execution (GHSA-wx62).
+                // Leaving only 'admin.super' makes these scopes super-only, matching the
+                // Scheduler tool's own gating. (authorize() checks admin.super when it is
+                // the sole permission in the list.)
+                if (!in_array($type, ['scheduler', 'backups'], true)) {
+                    $permissions[] = 'admin.configuration.' . $type;
+                }
                 break;
             case 'plugins':
                 $permissions[] = 'admin.plugins';
@@ -1082,8 +1107,13 @@ class AdminBaseController
 
             $fileParts = Utils::pathinfo($filename);
 
+            // The extension was the one part left unescaped here, and the pattern
+            // was unanchored, so a name could match as a suffix of a longer one.
+            $regex_pattern = '/^(?:' . preg_quote((string)($fileParts['filename'] ?? ''), '/')
+                . '@\d+x\.' . preg_quote((string)($fileParts['extension'] ?? ''), '/')
+                . '(?:\.meta\.yaml)?|' . preg_quote($fileParts['basename'], '/') . '\.meta\.yaml)$/';
+
             foreach (scandir($fileParts['dirname']) as $file) {
-                $regex_pattern = '/' . preg_quote($fileParts['filename'], '/') . "@\d+x\." . $fileParts['extension'] . "(?:\.meta\.yaml)?$|" . preg_quote($fileParts['basename'], '/') . "\.meta\.yaml$/";
                 if (preg_match($regex_pattern, $file)) {
                     $path = $fileParts['dirname'] . '/' . $file;
                     @unlink($path);

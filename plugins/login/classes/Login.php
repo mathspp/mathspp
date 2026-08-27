@@ -93,6 +93,48 @@ class Login
     }
 
     /**
+     * Whether the current session user is logged in, optionally narrowed to a
+     * permission and/or group. Shared by the `authenticated()` Twig function
+     * and the `[authenticated]` / `[guest]` shortcodes:
+     *
+     *     $grav['login']->isAuthenticated()                  logged in at all
+     *     $grav['login']->isAuthenticated('admin.super')     logged in + authorized
+     *     $grav['login']->isAuthenticated(null, 'editors')   logged in + in group
+     *
+     * `permission` and `group` each accept a single value or a list, and match
+     * if the user satisfies any one of them. When both are given the user must
+     * satisfy both.
+     *
+     * @param string|array|null $permission Permission action(s) to authorize.
+     * @param string|array|null $group      Group name(s) the user must be in.
+     */
+    public function isAuthenticated($permission = null, $group = null): bool
+    {
+        $user = $this->grav['user'] ?? null;
+        if (!$user instanceof UserInterface || !$user->authenticated) {
+            return false;
+        }
+
+        // Group membership: pass if the user is in any of the named groups.
+        if ($group !== null && !array_intersect((array)$group, (array)$user->get('groups', []))) {
+            return false;
+        }
+
+        // Permission: pass if the user is authorized for any of the actions.
+        if ($permission !== null) {
+            foreach ((array)$permission as $action) {
+                if ($user->authorize((string)$action) === true) {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * Login user.
      *
      * @param array $credentials    Login credentials, eg: ['username' => '', 'password' => '']
@@ -316,7 +358,11 @@ class Login
     {
         $ipKey = $this->getIpKey($ip);
         $rateLimiter = $this->getRateLimiter('login_attempts');
-        $rateLimiter->registerRateLimitedAction($ipKey, 'ip')->registerRateLimitedAction($username);
+        // Link the IP counter to the username so an administrator unlocking the
+        // account can clear the IP side too, which is what the check below hits
+        // first.
+        $rateLimiter->registerRateLimitedAction($ipKey, 'ip', ['username' => $username])
+            ->registerRateLimitedAction($username);
 
         // Check rate limit for both IP and user, but allow each IP a single try even if user is already rate limited.
         $attempts = \count($rateLimiter->getAttempts($ipKey, 'ip'));
@@ -336,6 +382,140 @@ class Login
         $ipKey = $this->getIpKey($ip);
         $rateLimiter = $this->getRateLimiter('login_attempts');
         $rateLimiter->resetRateLimit($ipKey, 'ip')->resetRateLimit($username);
+    }
+
+    /**
+     * The rate limiter contexts an administrator can clear on someone's behalf.
+     *
+     * @return array<int, string>
+     */
+    public static function getRateLimitContexts(): array
+    {
+        return ['login_attempts', 'twofa_attempts', 'pw_resets', 'magic_links', 'token_attempts', 'registrations'];
+    }
+
+    /**
+     * Every account currently locked out of logging in.
+     *
+     * Mirrors checkLoginRateLimit(): an account counts as locked when its own
+     * counter is over the limit, or when an IP it has been tried from is. The
+     * whole set is resolved in one sweep of the index so that listing N accounts
+     * costs one pass, not N.
+     *
+     * @return array<string, array{attempts: int, last: int|null, by_ip: bool}> Keyed by username.
+     */
+    public function getLockedAccounts(): array
+    {
+        $rateLimiter = $this->getRateLimiter('login_attempts');
+
+        $locked = [];
+        foreach ($rateLimiter->getRegisteredKeys(null, true) as $entry) {
+            if ($entry['type'] === 'username') {
+                $existing = $locked[$entry['key']] ?? ['attempts' => 0, 'last' => null, 'by_ip' => false];
+                $locked[$entry['key']] = [
+                    'attempts' => max($existing['attempts'], $entry['attempts']),
+                    'last' => max($existing['last'], $entry['last']),
+                    'by_ip' => $existing['by_ip'],
+                ];
+                continue;
+            }
+
+            // A limited IP locks out every account tried from it.
+            foreach (array_keys($entry['links']['username'] ?? []) as $username) {
+                $existing = $locked[$username] ?? ['attempts' => 0, 'last' => null, 'by_ip' => false];
+                $locked[$username] = [
+                    'attempts' => max($existing['attempts'], $entry['attempts']),
+                    'last' => max($existing['last'], $entry['last']),
+                    'by_ip' => true,
+                ];
+            }
+        }
+
+        return $locked;
+    }
+
+    /**
+     * Is this account currently locked out of logging in?
+     *
+     * @param string $username
+     * @return bool
+     */
+    public function isAccountLocked(string $username): bool
+    {
+        return $username !== '' && isset($this->getLockedAccounts()[$username]);
+    }
+
+    /**
+     * Clear every rate limit standing against an account, across all contexts.
+     *
+     * @param string $username
+     * @return int Number of counters that existed and were cleared.
+     */
+    public function unlockUser(string $username): int
+    {
+        if ($username === '') {
+            return 0;
+        }
+
+        $cleared = 0;
+        foreach (static::getRateLimitContexts() as $context) {
+            $cleared += $this->getRateLimiter($context)->resetRelatedRateLimits($username);
+        }
+
+        return $cleared;
+    }
+
+    /**
+     * Clear every rate limit registered against an IP address, across all contexts.
+     *
+     * @param string $ip
+     * @return int Number of counters that existed and were cleared.
+     */
+    public function unlockIp(string $ip): int
+    {
+        if ($ip === '') {
+            return 0;
+        }
+
+        $ipKey = $this->getIpKey($ip);
+
+        $cleared = 0;
+        foreach (static::getRateLimitContexts() as $context) {
+            $cleared += $this->getRateLimiter($context)->resetRelatedRateLimits($ipKey, 'ip');
+        }
+
+        return $cleared;
+    }
+
+    /**
+     * Wipe every rate limiter counter in every context.
+     *
+     * @return void
+     */
+    public function unlockAll(): void
+    {
+        foreach (static::getRateLimitContexts() as $context) {
+            $this->getRateLimiter($context)->resetAllRateLimits();
+        }
+    }
+
+    /**
+     * Every key currently registered with a rate limiter, keyed by context.
+     *
+     * @param bool $limitedOnly Only include keys that are currently over the limit.
+     * @return array<string, array<int, array<string, mixed>>>
+     */
+    public function getRateLimitedKeys(bool $limitedOnly = true): array
+    {
+        $out = [];
+        foreach (static::getRateLimitContexts() as $context) {
+            $entries = $this->getRateLimiter($context)->getRegisteredKeys(null, $limitedOnly);
+            if ($entries) {
+                $out[$context] = $entries;
+            }
+        }
+
+        return $out;
     }
 
     /**
@@ -518,6 +698,33 @@ class Login
     }
 
     /**
+     * Tell the owner of an address that someone tried to register with it.
+     *
+     * Sent instead of telling the person at the registration form that the
+     * address is taken (GHSA-crh8-xm27-j9g9). A delivery failure must not
+     * change what that person sees, so it is logged rather than thrown.
+     *
+     * @param UserInterface $user
+     * @return bool True if the action was performed.
+     */
+    public function sendAlreadyRegisteredEmail(UserInterface $user)
+    {
+        if (empty($user->email)) {
+            return false;
+        }
+
+        try {
+            Email::sendAlreadyRegisteredEmail($user);
+        } catch (\Exception $e) {
+            $this->grav['log']->error('plugin.login: could not send already-registered notice: ' . $e->getMessage());
+
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * Handle the email to invite user.
      *
      * @param Invitation $invitation
@@ -642,6 +849,23 @@ class Login
                 case 'pw_resets':
                     $maxCount = $this->grav['config']->get('plugins.login.max_pw_resets_count', 2);
                     $interval = $this->grav['config']->get('plugins.login.max_pw_resets_interval', 60);
+                    break;
+                case 'token_attempts':
+                    $maxCount = $this->grav['config']->get('plugins.login.max_token_attempts_count', 5);
+                    $interval = $this->grav['config']->get('plugins.login.max_token_attempts_interval', 60);
+                    break;
+                case 'twofa_attempts':
+                    // The 2FA code is six digits with three valid windows, so the
+                    // throttle IS the second factor's boundary, not depth behind
+                    // it. It needs its own counter: login_attempts is cleared the
+                    // moment the password verifies, which is exactly what an
+                    // attacker re-doing the password to get a fresh challenge does.
+                    $maxCount = $this->grav['config']->get('plugins.login.max_twofa_count', 5);
+                    $interval = $this->grav['config']->get('plugins.login.max_twofa_interval', 10);
+                    break;
+                case 'registrations':
+                    $maxCount = $this->grav['config']->get('plugins.login.user_registration.max_attempts_count', 10);
+                    $interval = $this->grav['config']->get('plugins.login.user_registration.max_attempts_interval', 60);
                     break;
                 case 'magic_links':
                     $maxCount = $this->grav['config']->get('plugins.login.magic_link.max_requests_count', 3);

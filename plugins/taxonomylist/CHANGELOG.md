@@ -1,3 +1,17 @@
+# v1.4.3
+## 07/17/2026
+
+1. [](#bugfix)
+    * Child page tags are now sorted by frequency so themes show the most-used tags first [#219](https://github.com/getgrav/grav-theme-quark/issues/219)
+
+# v1.4.2
+## 06/11/2026
+
+1. [](#new)
+    * Added opt-in `respect_access` option to filter the site-wide taxonomy list by the current visitor's page access [#44](https://github.com/getgrav/grav-plugin-taxonomylist/issues/44)
+2. [](#improved)
+    * Child page taxonomy now respects page `access` rules, so restricted pages no longer leak their tags to unauthorized visitors [#44](https://github.com/getgrav/grav-plugin-taxonomylist/issues/44)
+
 # v1.4.1
 ## 05/01/2026
 

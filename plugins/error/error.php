@@ -78,14 +78,34 @@ class ErrorPlugin extends Plugin
         /** @var Pages $pages */
         $pages = $this->grav['pages'];
 
-        // Try to load user error page.
+        // Try to load user error page. Passing `$all = true` is deliberate: a
+        // custom error page is normally `routable: false`, so the routable check
+        // has to be skipped. The trade-off is that a folder holding no page file
+        // at all (say it only contains a stray `500.html.php`) still comes back
+        // as a contentless stub, which would then win over the built-in page
+        // below and render blank -- with a 200 status, since the stub has no
+        // frontmatter to set one. `isPage()` is what separates a real page from a
+        // bare directory in both the regular and the Flex page engines;
+        // `exists()` additionally catches a file deleted after indexing. (#49)
         $page = $pages->dispatch($this->config->get('plugins.error.routes.404', '/error'), true);
-        if (!$page) {
+        if (!$page || !$page->isPage() || !$page->exists()) {
             // If none provided use built in error page.
+            $language = $this->grav['language'];
             $page = new Page;
             $page->init(new \SplFileInfo(__DIR__ . '/pages/error.md'));
-            $page->title($this->grav['language']->translate('PLUGIN_ERROR.ERROR') . ' ' . $page->header()->http_response_code);
+            $page->title($language->translate('PLUGIN_ERROR.ERROR') . ' ' . $page->header()->http_response_code);
 
+            // The page body uses a [translate] shortcode for the message, the
+            // safe in-content replacement for Twig (Grav 2 disables Twig in
+            // content by default — #47). Shortcode Core normally renders it, but
+            // the 404 is the last line of defense and must never show a raw tag,
+            // so if Shortcode Core isn't available we supply the translated
+            // message directly. Custom page content still takes precedence.
+            $shortcodesAvailable = $this->config->get('plugins.shortcode-core.enabled');
+            $isDefaultBody = strpos((string) $page->rawMarkdown(), '[translate]') !== false;
+            if (!$shortcodesAvailable && $isDefaultBody) {
+                $page->content($language->translate('PLUGIN_ERROR.ERROR_MESSAGE'));
+            }
         }
 
         // Login page may not have the correct Cache-Control header set, force no-store for the proxies.

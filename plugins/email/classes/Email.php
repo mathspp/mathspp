@@ -6,6 +6,7 @@ use Grav\Common\Grav;
 use Grav\Common\Utils;
 use Grav\Common\Language\Language;
 use Grav\Common\Markdown\Parsedown;
+use Grav\Common\Twig\Sandbox\SandboxConfig;
 use Grav\Common\Twig\Twig;
 use Grav\Framework\Form\Interfaces\FormInterface;
 use \Monolog\Logger;
@@ -21,9 +22,30 @@ use Symfony\Component\Mailer\Mailer;
 use Symfony\Component\Mailer\Transport;
 use Symfony\Component\Mailer\Transport\TransportInterface;
 use Symfony\Component\Mime\Address;
+use Twig\Extension\SandboxExtension;
 
 class Email
 {
+    /**
+     * Keys under `plugins.email` that email parameter Twig may read as
+     * `config.plugins.email.*`. Addresses and formatting only, deliberately
+     * no `mailer`, so transport credentials are not reachable. Covers both the
+     * string and array forms an address setting can take.
+     */
+    private const PARAM_CONFIG_KEYS = [
+        'to', 'to_name', 'from', 'from_name', 'cc', 'cc_name', 'bcc', 'bcc_name',
+        'reply_to', 'reply_to_name', 'charset', 'content_type',
+    ];
+
+    /**
+     * Filters allowed for email parameters on top of the content sandbox
+     * allowlist. `raw` is required by the documented
+     * `{{ config.site.emails.sales|raw }}` idiom: autoescape would turn a
+     * `My Name <me@example.com>` address into `&lt;`, which the transport
+     * rejects. Harmless here because the output is an email, not a DOM.
+     */
+    private const PARAM_EXTRA_FILTERS = ['raw'];
+
     /** @var Mailer */
     protected $mailer;
 
@@ -188,6 +210,15 @@ class Email
             }
         }
 
+        // Trim the address parameters up front so a value that is nothing but whitespace is
+        // caught by the checks below, rather than passing them and failing much later with
+        // an unhelpful "email must have a From or a Sender header" from the mailer.
+        foreach (['to', 'from', 'cc', 'bcc', 'reply_to'] as $address_key) {
+            if (isset($params[$address_key]) && is_string($params[$address_key])) {
+                $params[$address_key] = trim($params[$address_key]);
+            }
+        }
+
         if (!$params['to']) {
             throw new \RuntimeException($language->translate('PLUGIN_EMAIL.PLEASE_CONFIGURE_A_TO_ADDRESS'));
         }
@@ -322,17 +353,20 @@ class Email
     protected function createAddress($data): ?Address
     {
         if (is_string($data)) {
+            // Trim before matching, or a trailing space defeats the anchored pattern and the
+            // whole "Name <address>" string gets treated as the address itself.
+            $data = trim($data);
             preg_match('/^(.*)\<(.*)\>$/', $data, $matches);
             if (isset($matches[2])) {
-                $email = trim($matches[2]);
-                $name = trim($matches[1]);
+                $email = $matches[2];
+                $name = $matches[1];
             } else {
                 $email = $data;
                 $name = '';
             }
         } elseif (Utils::isAssoc($data)) {
             $first_key = array_key_first($data);
-            if (filter_var($first_key, FILTER_VALIDATE_EMAIL)) {
+            if ($this->isValidEmail($first_key)) {
                 $email = $first_key;
                 $name = $data[$first_key];
             } else {
@@ -343,6 +377,12 @@ class Email
             $email = $data[0] ?? '';
             $name = $data[1] ?? '';
         }
+
+        // Addresses routinely arrive with stray whitespace: a trailing space left in a YAML
+        // value, or a space after a comma in a list. Trim before validating, otherwise the
+        // address is dropped below and the message goes out missing that header entirely.
+        $email = is_string($email) ? trim($email) : '';
+        $name = is_string($name) ? trim($name) : '';
 
         // Skip empty or invalid email addresses
         if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -382,6 +422,14 @@ class Email
     }
 
     /**
+     * Render the email action's parameters (subject, body, recipients, ...) as
+     * Twig.
+     *
+     * These are NOT operator-only configuration. A page's
+     * `form.process.email.*` front matter is authorable by anyone with
+     * page-write access, so every string here is editor content and is
+     * rendered under the Twig content sandbox. (GHSA-gh8j-q67c-j53f)
+     *
      * @param array $params
      * @param array $vars
      * @return array
@@ -394,10 +442,23 @@ class Email
         // Add twig vars to the context
         $vars += $twig->twig_vars;
 
+        // On Grav 2.0 the sandbox replaces `config` with a facade that denies
+        // everything unless the operator opted into config access, which would
+        // break the documented `{{ config.site.emails.sales }}` and
+        // `{{ config.plugins.email.to }}` idioms. Supply the narrow slice those
+        // idioms need instead; the sandbox leaves a caller-supplied `config`
+        // alone.
+        //
+        // Grav 1.7 has no Twig content sandbox, so nothing replaces `config`
+        // there and narrowing it ourselves would only take away access those
+        // sites already have. Leave 1.7 exactly as it was.
+        if ($this->sandboxAvailable()) {
+            $vars['config'] = $this->buildParamConfig();
+            $vars = $this->filterParamVars($vars);
+        }
+
         array_walk_recursive($params, function(&$value) use ($twig, $vars) {
             if (is_string($value)) {
-                // Process Twig strings WITHOUT security filtering
-                // Email params come from trusted YAML config, not user input
                 $value = $this->processTwigString($twig, $value, $vars);
             }
         });
@@ -405,8 +466,114 @@ class Email
     }
 
     /**
-     * Process a Twig string without security filtering.
-     * Used for trusted email configuration strings.
+     * Is Grav's Twig content sandbox available and switched on?
+     *
+     * True on Grav 2.0 with `security.twig_sandbox.enabled`, false on Grav 1.7,
+     * which has no content sandbox at all, and false when an operator has
+     * turned it off. When false this plugin renders email parameters exactly
+     * as it always has, which is also why the 1.7 line is out of scope for
+     * GHSA-gh8j-q67c-j53f: reaching those parameters there needs a
+     * publisher-level account.
+     *
+     * @return bool
+     */
+    protected function sandboxAvailable(): bool
+    {
+        if (!class_exists(SandboxExtension::class) || !class_exists(SandboxConfig::class)) {
+            return false;
+        }
+
+        $twig = Grav::instance()['twig'];
+
+        return isset($twig->twig) && $twig->twig->hasExtension(SandboxExtension::class);
+    }
+
+    /**
+     * The `config` value exposed to email parameter Twig.
+     *
+     * A plain array, not the real Config, holding only what email parameters
+     * legitimately read: the site configuration (where operators keep their own
+     * addresses, e.g. `site.emails.sales`) and this plugin's own address
+     * fields. Everything else is simply absent: `system.*`, other plugins, and
+     * this plugin's own mailer credentials.
+     *
+     * The site subtree is read through {@see SandboxConfig} so that
+     * `security.twig_sandbox.config_denied_paths` is honoured here too: an
+     * operator who parks secrets under, say, `site.integrations` and denies
+     * that path gets it redacted in email parameters as well.
+     *
+     * @return array
+     */
+    protected function buildParamConfig(): array
+    {
+        /** @var Config $config */
+        $config = Grav::instance()['config'];
+
+        $denied = (array) $config->get('security.twig_sandbox.config_denied_paths', []);
+        $filtered = new SandboxConfig($config, $denied);
+
+        $email = [];
+        foreach (self::PARAM_CONFIG_KEYS as $key) {
+            $value = $config->get('plugins.email.' . $key);
+            if ($value !== null) {
+                $email[$key] = $value;
+            }
+        }
+
+        return [
+            'site' => $filtered->get('site', []),
+            'plugins' => ['email' => $email],
+        ];
+    }
+
+    /**
+     * Filter the raw `system`, `site` and `theme` variables inherited from
+     * `Twig::$twig_vars`.
+     *
+     * Narrowing `config` is not enough on its own. Those three are also
+     * exposed as top-level variables, they are plain PHP arrays, and Twig's
+     * sandbox has no jurisdiction over array key access, so
+     * `{{ system.cache.redis.password }}` in a form's `process.email.subject`
+     * renders the live value no matter how strict the policy is
+     * (GHSA-p597-crqc-m349).
+     *
+     * Grav 2.0.16 does this for page content and `@Var:` strings inside
+     * `Twig::processPage()` / `processString()`. This render calls
+     * `$twig->twig->render()` directly, so it has to apply the same filter
+     * itself, driven by the same `security.twig_sandbox.config_denied_paths`
+     * list so operators only maintain one.
+     *
+     * @param array $vars
+     * @return array
+     */
+    protected function filterParamVars(array $vars): array
+    {
+        /** @var Config $config */
+        $config = Grav::instance()['config'];
+
+        $filter = new SandboxConfig(
+            $config,
+            (array) $config->get('security.twig_sandbox.config_denied_paths', [])
+        );
+
+        foreach (['system', 'site', 'theme'] as $key) {
+            if (array_key_exists($key, $vars)) {
+                $vars[$key] = $filter->get($key, []);
+            }
+        }
+
+        return $vars;
+    }
+
+    /**
+     * Render a single email parameter string under the Twig content sandbox.
+     *
+     * The template is registered as `@EmailVar:`, which GravSourcePolicy
+     * sandboxes. Keeping that distinct name matters: Twig caches compiled
+     * templates by name and runs the sandbox tag/filter check once per compiled
+     * template, so sharing the `@Var:` namespace used by page content would let
+     * a string compiled here keep the relaxed policy below when the same string
+     * is later rendered as page content.
      *
      * @param Twig $twig
      * @param string $string
@@ -420,6 +587,23 @@ class Email
             return $string;
         }
 
+        $sandbox = null;
+        $policy = null;
+
+        if ($this->sandboxAvailable()) {
+            $sandbox = $twig->twig->getExtension(SandboxExtension::class);
+            $policy = $sandbox->getSecurityPolicy();
+        }
+
+        if ($sandbox && $policy) {
+            // Same restrictions as page content, plus the filters an email
+            // needs in order to emit an unescaped address. Restored in the
+            // finally below: this mutates the one shared SandboxExtension, so
+            // an escaping exception must not leave the relaxed policy live for
+            // the rest of the request.
+            $sandbox->setSecurityPolicy(new EmailParamPolicy($policy, self::PARAM_EXTRA_FILTERS));
+        }
+
         try {
             // Use Grav's setTemplate method which uses the loaderArray
             $name = '@EmailVar:' . md5($string);
@@ -427,7 +611,25 @@ class Email
 
             return $twig->twig->render($name, $vars);
         } catch (\Exception $e) {
+            // A trusted email string (body, subject, recipient, etc.) failed to
+            // render. This is almost always a Twig syntax error or an
+            // unresolved {% extends %}/{% include %} in the template. We keep
+            // sending so one bad string doesn't block the whole notification,
+            // but the failure used to be completely silent, which made it very
+            // hard to trace (the raw, unrendered Twig just dropped into the
+            // email). Log it loudly to both the email log and the main Grav log
+            // with the Twig error and a snippet of the offending string.
+            $snippet = strlen($string) > 200 ? substr($string, 0, 200) . '…' : $string;
+            $report = sprintf('Twig render failed, sending raw string: %s | source: %s', $e->getMessage(), $snippet);
+
+            $this->log->error($report);
+            Grav::instance()['log']->error('plugin-email: ' . $report);
+
             return $string;
+        } finally {
+            if ($sandbox && $policy) {
+                $sandbox->setSecurityPolicy($policy);
+            }
         }
     }
 
@@ -561,7 +763,7 @@ class Email
 
     protected function isValidEmail($email): bool
     {
-        return is_string($email) && filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
+        return is_string($email) && filter_var(trim($email), FILTER_VALIDATE_EMAIL) !== false;
     }
 
     /**

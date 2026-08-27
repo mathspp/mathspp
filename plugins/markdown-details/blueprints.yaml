@@ -1,7 +1,7 @@
 name: Markdown Details
 slug: markdown-details
 type: plugin
-version: 2.0.0
+version: 2.0.1
 description: Adds the ability to render collapsible sections in Markdown
 icon: caret-square-o-down
 author:
@@ -15,6 +15,11 @@ license: MIT
 
 dependencies:
   - { name: grav, version: '>=1.6.0' }
+
+compatibility:
+  grav:
+    - '1.7'
+    - '2.0'
 
 form:
   validation: loose

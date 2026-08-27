@@ -99,6 +99,12 @@ The simplest way to create a new user is to simply run the `bin/plugin login new
 |`change-pass`||Changes password of the specified user (User file must exist)
 || [ -u, --user=USER ]               | The username.                                                   |
 || [ -p, --password=PASSWORD ]       | The new password. Ensure the password respects Grav's password policy. **Note that this option is not recommended because the password will be visible by users listing the processes.** |
+|||
+|`unlock-user`||Clears the temporary lockout applied after too many failed logins (see [Login Lockouts](#login-lockouts))
+|| [ -l, --list ]                    | List the lockouts currently in effect and exit.                 |
+|| [ -u, --user=USER ]               | Unlock this username, along with the IP counters it tripped.    |
+|| [ -i, --ip=IP ]                   | Unlock this IP address.                                         |
+|| [ -a, --all ]                     | Clear every lockout on the site.                                |
 
 
 ### CLI Example
@@ -149,6 +155,53 @@ access:
 ```
 
 >> Note: the username is based on the name of the YAML file.
+
+# Login Lockouts
+
+After `max_login_count` failed login attempts, the plugin temporarily blocks further attempts for `max_login_interval` minutes. Two counters are kept: one against the username and one against the IP address the attempts came from, and either one being over the limit is enough to block a login. Both live in the cache, under `cache/login/`, so nothing on the account itself records that it is locked.
+
+Lockouts expire on their own, but you can clear one early either from the admin or from the command line. The command line is the way in when the lockout is keeping *you* out of the site.
+
+### Seeing who is locked out
+
+```
+> bin/plugin login unlock-user --list
+
+login_attempts
+--------------
+
+ ------------------- ---------- --------------------- -------------------
+  Locked              Attempts   Last attempt          Accounts tried
+ ------------------- ---------- --------------------- -------------------
+  IP (df2c0757…)      8          2026-07-30 10:24:49   joeuser
+  joeuser             8          2026-07-30 10:24:49   -
+ ------------------- ---------- --------------------- -------------------
+```
+
+IP addresses are stored hashed rather than in the clear, so the listing shows a short fingerprint plus the accounts that were tried from it. Pass the real address to `--ip` and the command will hash it for you.
+
+### Clearing a lockout
+
+```
+> bin/plugin login unlock-user -u joeuser
+ [OK] Unlocked "joeuser" (cleared 2 counters).
+```
+
+Unlocking by username also clears the IP counters that account tripped, which is normally what you want: clearing the username alone leaves the IP counter in place and the user still blocked. To clear an address on its own, use `-i`:
+
+```
+> bin/plugin login unlock-user -i 203.0.113.4
+```
+
+And to wipe every lockout on the site, across failed logins, password resets and magic-link requests:
+
+```
+> bin/plugin login unlock-user --all
+```
+
+### From the admin
+
+In Grav 2.0's admin, the Users list (table view) has a **Lockout** column marking any account that is currently blocked, and a padlock button in the row's actions to clear it. Clearing a lockout requires the `api.users.write` permission.
 
 # Default Configuration
 
@@ -244,6 +297,43 @@ Because the admin user contains an `admin.login: true` reference he will be able
 ## Create Private Areas
 
 Enabling the setting "Use parent access rules" (`parent_acl` in login.yaml) allows you to create private areas where you set the access level on the parent page, and all the subpages inherit that requirement.
+
+## Checking the logged-in user in Twig
+
+The plugin registers an `authenticated()` Twig function so you can show or hide parts of a page depending on whether the visitor is logged in, and optionally on their permissions or groups:
+
+```twig
+{% if authenticated() %}
+    Welcome back!
+{% else %}
+    Please <a href="/login">log in</a>.
+{% endif %}
+```
+
+Pass a permission as the first argument to also require that the user is authorized for it, or a group with the `group` named argument to require membership. Each accepts a single value or a list and matches if the user satisfies any one of them; pass both to require both:
+
+```twig
+{% if authenticated('admin.super') %} ... {% endif %}
+{% if authenticated(['admin.login', 'admin.pages']) %} ... {% endif %}
+{% if authenticated(group='editors') %} ... {% endif %}
+{% if authenticated('admin.pages', group='editors') %} ... {% endif %}
+```
+
+Unlike reading `grav.user` directly, `authenticated()` works inside page content on Grav 2, where the Twig content sandbox blocks the `grav.user` object. For pure permission checks you can also use Grav's built-in [`authorize()`](https://learn.getgrav.org/themes/twig-tags#authorize) function, which is allowed in the sandbox as well.
+
+### Shortcode equivalents
+
+If the [Shortcode Core](https://github.com/getgrav/grav-plugin-shortcode-core) plugin is installed, the same checks are available as shortcodes, which is handy when Twig in content is left disabled:
+
+```
+[authenticated]Only logged-in visitors see this.[/authenticated]
+[authenticated=admin.super]Supers only.[/authenticated]
+[authenticated permission="admin.login,admin.pages"]...[/authenticated]
+[authenticated group="editors"]...[/authenticated]
+[guest]Please [log in](/login).[/guest]
+```
+
+`[authenticated]` shows its content only when the checks pass, and `[guest]` is the inverse, shown only when no one is logged in. The `permission` and `group` parameters accept a single value or a comma-separated list and match any one of them; pass both to require both. These shortcodes are registered only when Shortcode Core is present, so the Login plugin does not depend on it.
 
 # Login Page
 
