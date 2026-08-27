@@ -52,7 +52,7 @@
     "exports-loader": "^3.1.0",
     "imports-loader": "^3.1.1",
     "json-loader": "^0.5.7",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "style-loader": "^3.3.1",
     "terser-webpack-plugin": "^5.3.1",
     "webpack": "^5.68.0",
