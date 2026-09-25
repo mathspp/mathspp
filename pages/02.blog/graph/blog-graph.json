@@ -13690,6 +13690,38 @@
     },
     {
       "data": {
+        "id": "tag:article:using-maturin-through-uv->tag:programming",
+        "source": "article:using-maturin-through-uv",
+        "target": "tag:programming",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:using-maturin-through-uv->tag:python",
+        "source": "article:using-maturin-through-uv",
+        "target": "tag:python",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:using-maturin-through-uv->tag:rust",
+        "source": "article:using-maturin-through-uv",
+        "target": "tag:rust",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:using-maturin-through-uv->tag:uv",
+        "source": "article:using-maturin-through-uv",
+        "target": "tag:uv",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
         "id": "tag:article:using-uv-to-build-and-install-python-cli-apps->tag:programming",
         "source": "article:using-uv-to-build-and-install-python-cli-apps",
         "target": "tag:programming",
@@ -14417,7 +14449,7 @@
       }
     }
   ],
-  "generated_at": "2026-08-27T17:20:53+00:00",
+  "generated_at": "2026-09-25T14:59:34+00:00",
   "nodes": [
     {
       "data": {
@@ -19853,6 +19885,29 @@
         "type": "article",
         "url": "/blog/til/collections-deque-is-implemented-in-blocks",
         "width": 35
+      }
+    },
+    {
+      "data": {
+        "date": "25-09-2026 10:34",
+        "degree": 4,
+        "height": 29,
+        "id": "article:using-maturin-through-uv",
+        "internal_link_degree": 0,
+        "label": "TIL #146 \u2013 Using maturin through uv",
+        "size": 29,
+        "slug": "using-maturin-through-uv",
+        "tag_degree": 4,
+        "tags": [
+          "python",
+          "uv",
+          "rust",
+          "programming"
+        ],
+        "title": "TIL #146 \u2013 Using maturin through uv",
+        "type": "article",
+        "url": "/blog/til/using-maturin-through-uv",
+        "width": 42
       }
     },
     {
@@ -25495,14 +25550,14 @@
     },
     {
       "data": {
-        "degree": 329,
+        "degree": 330,
         "height": 78,
         "id": "tag:programming",
         "internal_link_degree": 0,
         "label": "programming",
         "size": 78,
         "tag": "programming",
-        "tag_degree": 329,
+        "tag_degree": 330,
         "type": "tag",
         "url": "/blog/tags/programming",
         "width": 78
@@ -25555,14 +25610,14 @@
     },
     {
       "data": {
-        "degree": 325,
+        "degree": 326,
         "height": 78,
         "id": "tag:python",
         "internal_link_degree": 0,
         "label": "python",
         "size": 78,
         "tag": "python",
-        "tag_degree": 325,
+        "tag_degree": 326,
         "type": "tag",
         "url": "/blog/tags/python",
         "width": 78
@@ -25660,17 +25715,17 @@
     },
     {
       "data": {
-        "degree": 3,
-        "height": 28,
+        "degree": 4,
+        "height": 29,
         "id": "tag:rust",
         "internal_link_degree": 0,
         "label": "rust",
-        "size": 28,
+        "size": 29,
         "tag": "rust",
-        "tag_degree": 3,
+        "tag_degree": 4,
         "type": "tag",
         "url": "/blog/tags/rust",
-        "width": 28
+        "width": 29
       }
     },
     {
@@ -25870,17 +25925,17 @@
     },
     {
       "data": {
-        "degree": 10,
-        "height": 35,
+        "degree": 11,
+        "height": 36,
         "id": "tag:uv",
         "internal_link_degree": 0,
         "label": "uv",
-        "size": 35,
+        "size": 36,
         "tag": "uv",
-        "tag_degree": 10,
+        "tag_degree": 11,
         "type": "tag",
         "url": "/blog/tags/uv",
-        "width": 35
+        "width": 36
       }
     },
     {
@@ -25931,9 +25986,9 @@
   ],
   "site": "https://mathspp.com",
   "stats": {
-    "articles": 454,
+    "articles": 455,
     "internal_links": 403,
-    "tag_edges": 1399,
+    "tag_edges": 1403,
     "tags": 99
   }
 }
