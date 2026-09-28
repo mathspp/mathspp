@@ -1,0 +1,20 @@
+date: 25-09-2026 10:34
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Today I learned how to setup a Rust project that can be called from Python with PyO3 and maturin through uv."
+    og:image: "https://mathspp.com/blog/til/using-maturin-through-uv/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/til/using-maturin-through-uv/thumbnail.webp"
+references: []
+routes:
+    aliases:
+        - "/blog/til/146"
+slug: "using-maturin-through-uv"
+taxonomy:
+    category: [blogpost, til]
+    tag:
+      - python
+      - uv
+      - rust
+      - programming
+title: "TIL #146 – Using maturin through uv"
+visible: false

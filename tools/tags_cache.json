@@ -1,9 +1,9 @@
 {
   "__all": {
-    "articles": 455,
-    "code_snippets": 4279,
-    "loc": 41035,
-    "words": 499640
+    "articles": 456,
+    "code_snippets": 4291,
+    "loc": 41090,
+    "words": 500089
   },
   "bpci": {
     "articles": 10,
@@ -24,16 +24,16 @@
     "words": 35332
   },
   "programming": {
-    "articles": 329,
-    "code_snippets": 4132,
-    "loc": 39752,
-    "words": 405047
+    "articles": 330,
+    "code_snippets": 4144,
+    "loc": 39807,
+    "words": 405496
   },
   "python": {
-    "articles": 325,
-    "code_snippets": 4014,
-    "loc": 38661,
-    "words": 405119
+    "articles": 326,
+    "code_snippets": 4026,
+    "loc": 38716,
+    "words": 405568
   },
   "LLM": {
     "articles": 1,
@@ -42,10 +42,10 @@
     "words": 307
   },
   "uv": {
-    "articles": 10,
-    "code_snippets": 37,
-    "loc": 235,
-    "words": 4628
+    "articles": 11,
+    "code_snippets": 49,
+    "loc": 290,
+    "words": 5077
   },
   "llms": {
     "articles": 10,
@@ -372,10 +372,10 @@
     "words": 104
   },
   "rust": {
-    "articles": 3,
-    "code_snippets": 16,
-    "loc": 131,
-    "words": 928
+    "articles": 4,
+    "code_snippets": 28,
+    "loc": 186,
+    "words": 1377
   },
   "lsbasi-apl": {
     "articles": 4,
