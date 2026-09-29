@@ -14,7 +14,6 @@ content:
           - "_workshop-access-bundle"
           - "_intermediate-python-course"
           - "_algorithm-mastery-bootcamp"
-          - "_october-workshops"
           - "_stay-updated"
           - "_contact-me"
 metadata:
