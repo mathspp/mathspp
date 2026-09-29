@@ -12,5 +12,5 @@ Learn practical techniques for prototyping, development, testing, and more. This
 19 October 2026 · 3:00–6:30 pm UTC · $49
 
 <div style="display:flex; justify-content:center;">
-<a href="https://mathspp.gumroad.com/l/rszlpi" class="btn">Get your workshop ticket</a>
+<a href="https://mathspp.gumroad.com/l/rszlpi" class="btn">Sign-up for the workshop</a>
 </div>

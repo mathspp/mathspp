@@ -12,5 +12,5 @@ Explore descriptors, `__new__`, metaclasses, and more through hands-on live codi
 14 October 2026 · 3:00–6:30 pm UTC · $49
 
 <div style="display:flex; justify-content:center;">
-<a href="https://mathspp.gumroad.com/l/qendc" class="btn">Get your workshop ticket</a>
+<a href="https://mathspp.gumroad.com/l/qendc" class="btn">Sign-up for the workshop</a>
 </div>

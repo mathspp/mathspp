@@ -18,5 +18,5 @@ Get access to all five live, hands-on workshops and their recordings. Each sessi
 October 2026 · $99
 
 <div style="display:flex; justify-content:center;">
-<a href="https://mathspp.gumroad.com/l/ynvfqh" class="btn">Get the workshop bundle</a>
+<a href="https://mathspp.gumroad.com/l/ynvfqh" class="btn">Sign-up for the workshop</a>
 </div>
