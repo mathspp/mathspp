@@ -12,6 +12,12 @@ use SebastianBergmann\Git\Git;
 
 class GitSync extends Git
 {
+    /** @var string marks the start of the rules Git Sync manages in `.gitignore` */
+    public const IGNORE_BEGIN = '# BEGIN Grav GitSync';
+
+    /** @var string marks the end of the rules Git Sync manages in `.gitignore` */
+    public const IGNORE_END = '# END Grav GitSync';
+
     /** @var static */
     static public $instance;
 
@@ -30,6 +36,8 @@ class GitSync extends Git
     private $user;
     /** @var string|null */
     private $password;
+    /** @var bool true while the remote URL in `.git/config` carries the password */
+    private $credentialsInRemote = false;
 
     public function __construct()
     {
@@ -125,7 +133,11 @@ class GitSync extends Git
         }
 
         $branch = $branch ? '"' . $branch . '"' : '';
-        return $this->execute("ls-remote \"{$url}\" {$branch}");
+        // Same reason as in withAuthenticatedRemote(): a password in the URL would
+        // be handed to any credential helper configured on the server.
+        $helper = Helper::hasEmbeddedPassword($url) ? '-c credential.helper= ' : '';
+
+        return $this->execute("{$helper}ls-remote \"{$url}\" {$branch}");
     }
 
     /**
@@ -192,6 +204,148 @@ class GitSync extends Git
     }
 
     /**
+     * Put the generated ignore rules into an existing `.gitignore` without
+     * disturbing anything else in it.
+     *
+     * The repository root is `user/`, which is an ordinary git repository the site
+     * owner may well manage themselves, so the file can carry rules that have
+     * nothing to do with Git Sync. It used to be written wholesale, which threw
+     * those away -- and because the file sits at the root, `add('.')` committed and
+     * pushed the replacement, so they were lost for every clone (#263).
+     *
+     * Our rules live between two markers. On a later save only that region is
+     * rewritten. A file from a release that predates the markers is adopted whole
+     * when every line in it is one we could have written, and otherwise kept and
+     * appended to -- erring towards leaving something in place we are not certain
+     * about.
+     *
+     * @param string $existing current file contents, empty when there is no file
+     * @param array $ignore the generated rules
+     * @return string
+     */
+    protected function mergeIgnoreFile($existing, array $ignore)
+    {
+        $block = implode("\r\n", array_merge([self::IGNORE_BEGIN], $ignore, [self::IGNORE_END]));
+
+        if (trim($existing) === '') {
+            return $block;
+        }
+
+        $begin = strpos($existing, self::IGNORE_BEGIN);
+        $end = strpos($existing, self::IGNORE_END);
+
+        if ($begin !== false && $end !== false && $end > $begin) {
+            return substr($existing, 0, $begin) . $block . substr($existing, $end + strlen(self::IGNORE_END));
+        }
+
+        // No markers: either a file we wrote before they existed, or the user's own.
+        $lines = array_filter(array_map('trim', preg_split('/\R/', $existing) ?: []));
+        $known = array_flip($ignore);
+        foreach ($lines as $line) {
+            if ($line === '/*' || isset($known[$line]) || strpos($line, '!/') === 0) {
+                continue;
+            }
+
+            // Something we would never have written. Keep the file and add to it.
+            return rtrim($existing, "\r\n") . "\r\n\r\n" . $block;
+        }
+
+        return $block;
+    }
+
+    /**
+     * Top-level trees recorded in HEAD.
+     *
+     * HEAD rather than the index because that is what `reset --hard` rebuilds the
+     * working tree from, and top-level only because that is the granularity
+     * `folders:` works at -- listing every tracked file would mean reading the
+     * whole page tree.
+     *
+     * Nothing is tracked before the first commit. That has to be checked separately
+     * rather than by looking for empty `ls-tree` output, because `execute()` folds
+     * stderr into its return value -- on a repository with no commits `ls-tree`
+     * yields "fatal: Not a valid object name HEAD", which would otherwise read as a
+     * tracked folder called exactly that. `rev-parse --quiet` prints nothing at all
+     * when HEAD is unborn.
+     *
+     * @return array
+     */
+    protected function getTrackedFolders()
+    {
+        if (!array_filter(array_map('trim', $this->execute('rev-parse --quiet --verify HEAD', true)))) {
+            return [];
+        }
+
+        return array_values(array_filter(array_map('trim', $this->execute('ls-tree -d --name-only HEAD', true))));
+    }
+
+    /**
+     * The folder list Git Sync narrowed this repository down to on the last save,
+     * keyed by first path segment.
+     *
+     * Kept in the repository's own git config rather than derived from
+     * `.git/info/sparse-checkout`, because the patterns now also carry folders Git
+     * Sync does not manage -- reading them back would make those look like ours on
+     * the next save, which is the bug this exists to prevent. Local to the clone and
+     * never pushed.
+     *
+     * An install upgrading from a release that did not record it has no key yet, so
+     * fall back to the sparse patterns once: for those installs the patterns are
+     * exactly the managed list, and the value is written back on this save.
+     *
+     * @return array
+     */
+    protected function getManagedFolders()
+    {
+        $recorded = trim(implode('', $this->execute('config --local --get gitsync.folders', true)));
+
+        if ($recorded !== '' && strpos($recorded, 'error:') === false && strpos($recorded, 'fatal:') === false) {
+            return $this->firstSegments(explode(',', $recorded));
+        }
+
+        $file = rtrim($this->repositoryPath, '/') . '/.git/info/sparse-checkout';
+        if (!is_file($file)) {
+            return [];
+        }
+
+        $patterns = array_filter(array_map('trim', (array) file($file)));
+
+        return $this->firstSegments(array_map(static function ($pattern) {
+            return rtrim($pattern, '*');
+        }, $patterns));
+    }
+
+    /**
+     * Record the folder list Git Sync is managing from this save onwards.
+     *
+     * @param array $folders
+     * @return void
+     */
+    protected function setManagedFolders(array $folders)
+    {
+        $this->execute('config --local gitsync.folders ' . escapeshellarg(implode(',', $folders)), true);
+    }
+
+    /**
+     * Reduce folder paths to the set of their first path segments.
+     *
+     * @param array $folders
+     * @return array
+     */
+    protected function firstSegments(array $folders)
+    {
+        $segments = [];
+        foreach ($folders as $folder) {
+            $folder = trim(str_replace('\\', '/', (string) $folder), '/');
+            if ($folder !== '') {
+                $segments[explode('/', $folder)[0]] = true;
+            }
+        }
+
+        return $segments;
+    }
+
+    /**
      * Stop tracking folders that are no longer in the sync list, leaving them
      * untouched on disk.
      *
@@ -206,26 +360,28 @@ class GitSync extends Git
      * Dropping those paths from the index first puts them out of git's reach, so
      * no later sync or reset can touch them.
      *
+     * Only folders Git Sync itself was tracking are candidates. A repository root
+     * is an ordinary git repository and can legitimately hold anything alongside
+     * the folders in the sync list -- `docs`, `.github`, editor directories -- and
+     * those were never Git Sync's to remove. Comparing HEAD against the sync list
+     * alone could not tell one apart from a folder just de-listed, so connecting to
+     * an existing repository untracked them and pushed the removal, taking them off
+     * the remote and out of every other clone (#262).
+     *
      * @param array $folders the folders that should remain tracked
+     * @param array $previous the folders Git Sync was tracking before this save,
+     *                        keyed by first path segment; empty when unknown
      * @return void
      */
-    protected function pruneUnsyncedFolders(array $folders)
+    protected function pruneUnsyncedFolders(array $folders, array $previous)
     {
-        // Nothing is tracked before the first commit. This has to be checked
-        // separately rather than by looking for empty `ls-tree` output, because
-        // `execute()` folds stderr into its return value -- on a repository with
-        // no commits `ls-tree` yields "fatal: Not a valid object name HEAD",
-        // which would otherwise read as a tracked folder called exactly that.
-        // `rev-parse --quiet` prints nothing at all when HEAD is unborn.
-        if (!array_filter(array_map('trim', $this->execute('rev-parse --quiet --verify HEAD', true)))) {
+        // No record of a previous list means Git Sync has never narrowed this
+        // repository down, so nothing here was ever ours to untrack.
+        if (!$previous) {
             return;
         }
 
-        // Top-level trees recorded in HEAD. HEAD rather than the index because
-        // that is what `reset --hard` rebuilds the working tree from, and
-        // top-level only because that is the granularity `folders:` works at --
-        // listing every tracked file would mean reading the whole page tree.
-        $tracked = array_filter(array_map('trim', $this->execute('ls-tree -d --name-only HEAD', true)));
+        $tracked = $this->getTrackedFolders();
         if (!$tracked) {
             return;
         }
@@ -240,8 +396,12 @@ class GitSync extends Git
             }
         }
 
-        $stale = array_values(array_filter($tracked, static function ($folder) use ($keep) {
-            return !isset($keep[$folder]);
+        // Prune only what the previous list tracked and the new one drops. Note
+        // `rm --cached` is deliberately left without `--sparse`: git refuses to touch
+        // index entries outside the active sparse patterns, which is a second line of
+        // defence against untracking someone else's folders.
+        $stale = array_values(array_filter($tracked, static function ($folder) use ($keep, $previous) {
+            return isset($previous[$folder]) && !isset($keep[$folder]);
         }));
 
         if (!$stale) {
@@ -261,7 +421,7 @@ class GitSync extends Git
         $name = ($gitConfig['name'] ?? '') ?: 'GitSync';
         $email = ($gitConfig['email'] ?? '') ?: 'git-sync@trilby.media';
         $message = '(Grav GitSync) Stopped tracking ' . implode(', ', $stale)
-            . ' after removal from the sync list';
+            . ' after removal from the sync list (files left on disk)';
 
         $this->execute(
             '-c ' . escapeshellarg('user.name=' . $name)
@@ -275,14 +435,24 @@ class GitSync extends Git
     {
         $folders = $this->config['folders'] ?? ['pages'];
 
-        // Must run before the new patterns are written, while HEAD still
-        // reflects what the previous folder list was tracking.
-        $this->pruneUnsyncedFolders($folders);
+        // Must be read before the new list is recorded, and the prune must run
+        // before the new patterns are written, while HEAD still reflects what the
+        // previous folder list was tracking.
+        $previous = $this->getManagedFolders();
+
+        $this->pruneUnsyncedFolders($folders, $previous);
 
         $this->execute('config core.sparsecheckout true');
 
+        // A tracked folder Git Sync does not manage still has to match a pattern.
+        // Sparse checkout reads anything unmatched as "must not exist in the working
+        // tree", so leaving it out deleted it from disk on the next pull or reset --
+        // the same way de-listing a folder used to (#257), but aimed at folders
+        // nobody asked us to handle (#262).
+        $unmanaged = array_diff($this->getTrackedFolders(), array_keys($this->firstSegments($folders)));
+
         $sparse = [];
-        foreach ($folders as $folder) {
+        foreach (array_merge($folders, $unmanaged) as $folder) {
             $sparse[] = $folder . '/';
             $sparse[] = $folder . '/*';
         }
@@ -290,6 +460,10 @@ class GitSync extends Git
         $file = File::instance(rtrim($this->repositoryPath, '/') . '/.git/info/sparse-checkout');
         $file->save(implode("\r\n", $sparse));
         $file->free();
+
+        // From here on this is the list we own, and the only one a later save may
+        // prune against.
+        $this->setManagedFolders($folders);
 
         $ignore = ['/*'];
         foreach ($folders as $folder) {
@@ -312,11 +486,12 @@ class GitSync extends Git
             }
         }
 
-        $ignoreEntries = explode("\n", $this->getGitConfig('ignore', ''));
+        $ignoreEntries = array_filter(array_map('trim', explode("\n", $this->getGitConfig('ignore', ''))));
         $ignore = array_merge($ignore, $ignoreEntries);
 
-        $file = File::instance(rtrim($this->repositoryPath, '/') . '/.gitignore');
-        $file->save(implode("\r\n", $ignore));
+        $path = rtrim($this->repositoryPath, '/') . '/.gitignore';
+        $file = File::instance($path);
+        $file->save($this->mergeIgnoreFile(is_file($path) ? (string) file_get_contents($path) : '', $ignore));
         $file->free();
     }
 
@@ -509,8 +684,7 @@ class GitSync extends Git
         $user = $user ?: 'GitSync';
         $email = $email ?: 'git-sync@trilby.media';
 
-        $author = $user . ' <' . $email . '>';
-        $author = '--author="' . $author . '"';
+        $author = escapeshellarg('--author=' . $user . ' <' . $email . '>');
         $message .= ' from ' . $user;
         $this->add();
 
@@ -574,17 +748,68 @@ class GitSync extends Git
     {
         $name = $this->getRemote('name', $name);
         $branch = $this->getRemote('branch', $branch);
-        $this->addRemote(null, null, true);
 
-        $this->fetch($name, $branch);
-        $this->pull($name, $branch);
-        if ($this->grav['config']->get('plugins.git-sync.sync.direction', 'both') == 'both') {
-            $this->push($name, $branch);
-        }
-
-        $this->addRemote();
+        $this->withAuthenticatedRemote(function () use ($name, $branch) {
+            $this->fetch($name, $branch);
+            $this->pull($name, $branch);
+            if ($this->grav['config']->get('plugins.git-sync.sync.direction', 'both') == 'both') {
+                $this->push($name, $branch);
+            }
+        });
 
         return true;
+    }
+
+    /**
+     * Run commands against the remote with the stored credentials in its URL,
+     * and take them back out of `.git/config` however those commands end.
+     *
+     * fetch / pull / push only see the credentials if the authenticated URL is
+     * written into the repository config, which puts the password there in
+     * cleartext. It used to be removed only after a clean run, so an unreachable
+     * remote, a rejected push or an expired token left it on disk until the next
+     * successful sync (#265).
+     *
+     * Credential helpers are switched off for the duration too. Once credentials
+     * taken from a URL work, git hands them to every configured helper, so a
+     * `store` or `cache` helper on the server kept its own copy of the password
+     * outside the repository, even when the sync succeeded.
+     *
+     * @param callable $callback
+     * @return mixed whatever the callback returns
+     */
+    public function withAuthenticatedRemote(callable $callback)
+    {
+        $this->addRemote(null, null, true);
+        $this->credentialsInRemote = (string) $this->password !== '';
+
+        try {
+            $result = $callback();
+        } catch (\Throwable $e) {
+            try {
+                $this->removeCredentialsFromRemote();
+            } catch (\Throwable $restore) {
+                // The failure that got us here is the one to report.
+                $this->grav['log']->error('gitsync: could not remove the credentials from the remote URL: ' . $restore->getMessage());
+            }
+
+            throw $e;
+        }
+
+        $this->removeCredentialsFromRemote();
+
+        return $result;
+    }
+
+    /**
+     * Point the remote back at the plain repository URL.
+     *
+     * @return void
+     */
+    private function removeCredentialsFromRemote()
+    {
+        $this->credentialsInRemote = false;
+        $this->addRemote();
     }
 
     /**
@@ -636,6 +861,12 @@ class GitSync extends Git
             $bin = Helper::getGitBinary($this->getGitConfig('bin', 'git'));
             /** @var string $version */
             $version = Helper::isGitInstalled(true);
+
+            // An empty helper resets the list, so no helper sees the password
+            // while it is in the remote URL (see withAuthenticatedRemote()).
+            if ($this->credentialsInRemote) {
+                $command = '-c credential.helper= ' . $command;
+            }
 
             // -C <path> supported from 1.8.5 and above
             if (version_compare($version, '1.8.5', '>=')) {

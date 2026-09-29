@@ -1,3 +1,40 @@
+# v3.4.13
+## 09/17/2026
+
+1. [](#bugfix)
+    * **[security] A user's name and email address are now passed to Git as data, never as part of the command.** The commit author was assembled into the command line with only its outer quotes, so a full name containing the right punctuation could run commands on the server as the web user. Thanks to @AlpetGexha
+    * **[security] Webhook secrets are now compared in constant time, and only recognized signature algorithms are accepted.** The GitHub signature header was also split apart without checking its shape, so a malformed header could error instead of being rejected. Thanks to @AlpetGexha
+    * Disabling automatic sync on save now also applies to Flex objects and configuration saves, so automatic sync can be fully disabled. Saving Git Sync settings still configures the repository. [#266](https://github.com/trilbymedia/grav-plugin-git-sync/issues/266)
+
+# v3.4.12
+## 09/10/2026
+
+1. [](#bugfix)
+    * Your repository password is no longer left in plain text in `user/.git/config` when a sync fails. It used to stay there until the next successful sync. Thanks to @onetrev [#265](https://github.com/trilbymedia/grav-plugin-git-sync/issues/265)
+    * A Git credential helper set up on the server no longer keeps its own copy of the Git Sync password after a sync or a connection test
+    * With logging turned on, the connection test no longer writes the password it is checking to the log
+    * An API key limited to specific permissions can no longer read or change Git Sync settings unless it was given Git Sync access, even when the account that created it is a super admin
+
+# v3.4.11
+## 09/03/2026
+
+1. [](#bugfix)
+    * Your own rules in `user/.gitignore` are kept when Git Sync settings are saved. Git Sync's rules now sit in a marked block and everything outside it is left alone, where previously the whole file was replaced and the replacement pushed [#263](https://github.com/trilbymedia/grav-plugin-git-sync/issues/263)
+
+# v3.4.10
+## 09/03/2026
+
+1. [](#bugfix)
+    * Fixed Git Sync removing a repository's other top-level folders from the remote when it was first connected. Only folders you had Git Sync syncing and then removed from the list are untracked now, and anything else in the repository is left alone on disk and on the remote. Thanks to @onetrev [#262](https://github.com/trilbymedia/grav-plugin-git-sync/issues/262)
+    * A folder the repository tracks but Git Sync does not sync is no longer deleted from your own copy on the next pull or reset
+
+# v3.4.9
+## 09/02/2026
+
+1. [](#new)
+    * `media` is now offered in the Folders to Sync list, in the settings form and in the setup Wizard. Files uploaded on Admin 2's Media page live in `user/media`, which was not one of the folders you could pick, so they never reached the remote and went missing on the live site. Existing sites are unchanged until you tick the new option. Thanks to @onetrev [#261](https://github.com/trilbymedia/grav-plugin-git-sync/issues/261)
+    * The setup Wizard is now translated too, and follows the site's language without a reload. Thanks to @pmoreno-rodriguez [#260](https://github.com/trilbymedia/grav-plugin-git-sync/pull/260)
+
 # v3.4.8
 ## 08/27/2026
 
