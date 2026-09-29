@@ -12,5 +12,5 @@ Learn the tooling behind production Python.
 Learn `uv`, linting, pre-commits, packaging, CI/CD, and more. This is a hands-on, live-coding workshop with a 30-minute break and recording access.
 
 <div style="display:flex; justify-content:center;">
-<a href="https://mathspp.gumroad.com/l/modern-python-projects" class="btn">Get your workshop ticket</a>
+<a href="https://mathspp.gumroad.com/l/zwfry" class="btn">Get your workshop ticket</a>
 </div>

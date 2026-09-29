@@ -12,5 +12,5 @@ Uncover the black magic that governs Python.
 Explore descriptors, `__new__`, metaclasses, and more through hands-on live coding. The workshop includes a 30-minute break and recording access.
 
 <div style="display:flex; justify-content:center;">
-<a href="https://mathspp.gumroad.com/l/metaprogramming-101" class="btn">Get your workshop ticket</a>
+<a href="https://mathspp.gumroad.com/l/qendc" class="btn">Get your workshop ticket</a>
 </div>

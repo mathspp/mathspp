@@ -12,5 +12,5 @@ Make efficient and responsible use of coding agents.
 Learn practical techniques for prototyping, development, testing, and more. This is a hands-on, live-coding workshop with a 30-minute break and recording access.
 
 <div style="display:flex; justify-content:center;">
-<a href="https://mathspp.gumroad.com/l/engineering-with-coding-agents" class="btn">Get your workshop ticket</a>
+<a href="https://mathspp.gumroad.com/l/rszlpi" class="btn">Get your workshop ticket</a>
 </div>
