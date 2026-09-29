@@ -1,3 +1,8 @@
+---
+image_align: left
+menu: Modern Python projects
+---
+
 ## Learn the tooling behind production Python
 
 **15 October 2026 · 3:00–6:30 pm UTC · $49**

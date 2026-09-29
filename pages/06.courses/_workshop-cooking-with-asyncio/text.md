@@ -1,3 +1,8 @@
+---
+image_align: left
+menu: Cooking with asyncio
+---
+
 ## Write concurrent Python code
 
 **9 October 2026 · 3:00–6:30 pm UTC · $49**

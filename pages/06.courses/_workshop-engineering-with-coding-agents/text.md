@@ -1,3 +1,8 @@
+---
+image_align: left
+menu: Engineering with coding agents
+---
+
 ## Make efficient and responsible use of coding agents
 
 **19 October 2026 · 3:00–6:30 pm UTC · $49**

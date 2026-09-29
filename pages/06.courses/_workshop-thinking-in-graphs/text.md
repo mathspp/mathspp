@@ -1,3 +1,8 @@
+---
+image_align: left
+menu: Thinking in graphs
+---
+
 ## Master a fundamental computer science data structure
 
 **12 October 2026 · 3:00–6:30 pm UTC · $49**

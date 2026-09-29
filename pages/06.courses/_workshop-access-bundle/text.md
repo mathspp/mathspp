@@ -1,3 +1,8 @@
+---
+image_align: left
+menu: October workshop access bundle
+---
+
 ## Join all five workshops
 
 **October 2026 · $99**
