@@ -3,7 +3,9 @@ image_align: left
 menu: October workshop access bundle
 ---
 
-## Join all five workshops
+## October 2026 live workshops
+
+Join all five workshops.
 
 **October 2026 · $99**
 
@@ -15,4 +17,6 @@ Get access to all five live, hands-on workshops and their recordings. Each sessi
 - 15 October: Modern Python projects
 - 19 October: Engineering with coding agents
 
+<div style="display:flex; justify-content:center;">
 <a href="https://mathspp.gumroad.com/l/october-workshop-bundle" class="btn">Get the workshop bundle</a>
+</div>
