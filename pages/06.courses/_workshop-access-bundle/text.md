@@ -7,8 +7,6 @@ menu: October workshop access bundle
 
 Join all five workshops.
 
-**October 2026 · $99**
-
 Get access to all five live, hands-on workshops and their recordings. Each session runs from 3:00 pm to 6:30 pm UTC, including a 30-minute break.
 
 - 9 October: Cooking with asyncio
@@ -20,3 +18,5 @@ Get access to all five live, hands-on workshops and their recordings. Each sessi
 <div style="display:flex; justify-content:center;">
 <a href="https://mathspp.gumroad.com/l/ynvfqh" class="btn">Get the workshop bundle</a>
 </div>
+
+October 2026 · $99
