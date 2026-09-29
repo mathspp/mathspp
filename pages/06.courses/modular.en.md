@@ -5,6 +5,12 @@ content:
     order:
         custom:
           - "_hero"
+          - "_workshop-cooking-with-asyncio"
+          - "_workshop-thinking-in-graphs"
+          - "_workshop-metaprogramming-101"
+          - "_workshop-modern-python-projects"
+          - "_workshop-engineering-with-coding-agents"
+          - "_workshop-access-bundle"
           - "_intro"
           - "_intermediate-python-course"
           - "_algorithm-mastery-bootcamp"

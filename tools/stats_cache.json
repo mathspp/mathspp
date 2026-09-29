@@ -6502,5 +6502,20 @@
       "loc": 186,
       "words": 3888
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/146.using-maturin-through-uv": {
+    "timestamp": 1790348358.089392,
+    "tags": [
+      "python",
+      "uv",
+      "rust",
+      "programming"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 12,
+      "loc": 55,
+      "words": 449
+    }
   }
 }
