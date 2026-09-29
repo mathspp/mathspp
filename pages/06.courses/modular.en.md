@@ -8,6 +8,7 @@ content:
           - "_intro"
           - "_intermediate-python-course"
           - "_algorithm-mastery-bootcamp"
+          - "_october-workshops"
           - "_stay-updated"
           - "_contact-me"
 metadata:
