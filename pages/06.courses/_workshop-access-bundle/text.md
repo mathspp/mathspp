@@ -15,8 +15,8 @@ Get access to all five live, hands-on workshops and their recordings. Each sessi
 - 15 October: Modern Python projects
 - 19 October: Engineering with coding agents
 
+October 2026 · $99
+
 <div style="display:flex; justify-content:center;">
 <a href="https://mathspp.gumroad.com/l/ynvfqh" class="btn">Get the workshop bundle</a>
 </div>
-
-October 2026 · $99
