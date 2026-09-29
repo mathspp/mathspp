@@ -1,5 +1,5 @@
 ---
-image_align: left
+image_align: right
 menu: Modern Python projects
 ---
 

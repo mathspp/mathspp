@@ -1,5 +1,5 @@
 ---
-image_align: left
+image_align: right
 menu: October workshop access bundle
 ---
 
