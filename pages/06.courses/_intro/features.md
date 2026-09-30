@@ -13,5 +13,6 @@ Anyone can sign-up.
 | [Modern Python projects](#modern-python-projects) | 15 October | $49 |
 | [Engineering with coding agents](#engineering-with-coding-agents) | 19 October | $49 |
 | [All five workshops](#october-workshop-access-bundle) | — | $99 |
+| [Intermediate Python course](#intermediate-python-course) | TBA | $499 |
 
 I also offer [corporate trainings for teams, both remote and in-person](/training).

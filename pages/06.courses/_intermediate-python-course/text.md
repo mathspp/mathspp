@@ -5,7 +5,7 @@ image_align: left
 ## Intermediate Python course
 
 - **Next dates**:
-   - 5th May – 4th June
+   - TBA
 - **Limited spots available**
 
 This course is for all developers who can write small functions, programs, and scripts, but struggle to create or maintain larger and more complex projects.
