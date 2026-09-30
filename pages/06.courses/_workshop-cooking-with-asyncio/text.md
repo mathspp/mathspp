@@ -1,6 +1,5 @@
 ---
 image_align: left
-menu: Cooking with asyncio
 ---
 
 ## Cooking with asyncio

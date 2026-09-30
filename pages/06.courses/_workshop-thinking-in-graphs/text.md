@@ -1,6 +1,5 @@
 ---
 image_align: right
-menu: Thinking in graphs
 ---
 
 ## Thinking in graphs

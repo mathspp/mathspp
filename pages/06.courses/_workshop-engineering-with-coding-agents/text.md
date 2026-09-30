@@ -1,6 +1,5 @@
 ---
 image_align: left
-menu: Engineering with coding agents
 ---
 
 ## Engineering with coding agents

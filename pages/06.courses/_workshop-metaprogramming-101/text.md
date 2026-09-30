@@ -1,6 +1,5 @@
 ---
 image_align: left
-menu: Metaprogramming 101
 ---
 
 ## Metaprogramming 101

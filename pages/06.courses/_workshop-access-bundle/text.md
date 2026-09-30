@@ -1,6 +1,5 @@
 ---
 image_align: right
-menu: October workshop access bundle
 ---
 
 ## October 2026 live workshops
