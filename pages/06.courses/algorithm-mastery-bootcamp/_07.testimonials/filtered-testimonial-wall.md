@@ -1,6 +1,0 @@
----
-review-tags:
-  - favourite
----
-
-## Testimonials
