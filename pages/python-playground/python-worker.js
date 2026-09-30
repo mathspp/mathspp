@@ -35,7 +35,7 @@ self.addEventListener("message", async ({ data }) => {
         self.postMessage({ ...details, run: data.run, type });
     };
 
-    send("status", { text: "Loading Python 3.14…" });
+    send("status", { text: "Loading Python 3.15..." });
 
     let pyodide;
     try {
@@ -51,13 +51,13 @@ self.addEventListener("message", async ({ data }) => {
     try {
         pyodide.setStdout({ batched: (text) => { send("output", { text }); } });
         pyodide.setStderr({ batched: (text) => { send("output", { text }); } });
-        send("status", { text: "Running Python 3.14…" });
+        send("status", { text: "Running Python 3.15..." });
         const result = await pyodide.runPythonAsync(data.code);
         if (result !== undefined) {
             send("output", { text: result.toString() });
             if (result.destroy) result.destroy();
         }
-        send("status", { text: "Ready — Python 3.14" });
+        send("status", { text: "Ready — Python 3.15" });
     } catch (error) {
         send("error", { text: error.message || String(error) });
     } finally {

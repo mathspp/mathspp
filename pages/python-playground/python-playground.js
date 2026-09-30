@@ -111,7 +111,7 @@
         stopButton.disabled = false;
         output.classList.remove("is-error");
         output.textContent = "";
-        status.textContent = "Loading Python 3.14…";
+        status.textContent = "Loading Python 3.15...";
         try {
             getWorker().postMessage({ code: editor.getValue(), run: activeRun, type: "run" });
         } catch (error) {
@@ -129,7 +129,7 @@
         activeRun += 1;
         discardWorker();
         output.textContent += "Execution stopped.\n";
-        status.textContent = "Stopped — Python 3.14";
+        status.textContent = "Stopped — Python 3.15";
         finishRun();
     }
 
