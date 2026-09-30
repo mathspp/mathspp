@@ -1,3 +1,7 @@
+---
+image_align: left
+---
+
 ## Intermediate Python course
 
 - **Next dates**:
