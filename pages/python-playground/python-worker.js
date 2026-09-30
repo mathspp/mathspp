@@ -1,7 +1,7 @@
 "use strict";
 
-const pyodideIndexURL = "https://cdn.jsdelivr.net/pyodide/v314.0.4/full/";
-const pyodideScriptURL = "https://cdn.jsdelivr.net/pyodide/v314.0.4/full/pyodide.js";
+const pyodideIndexURL = "https://cdn.jsdelivr.net/pyodide/v315.0.0a2/full/";
+const pyodideScriptURL = "https://cdn.jsdelivr.net/pyodide/v315.0.0a2/full/pyodide.js";
 let pyodideRuntime;
 let pyodideScriptLoaded = false;
 let runtimePromise;
