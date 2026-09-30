@@ -13,6 +13,7 @@ content:
           - "_workshop-engineering-with-coding-agents"
           - "_workshop-access-bundle"
           - "_intermediate-python-course"
+          - "_uv-email-course"
           - "_stay-updated"
           - "_contact-me"
 metadata:
