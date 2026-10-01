@@ -6,7 +6,7 @@ class: offset-box
 
 | Topic | Link |
 | :- | :- |
-| **Overview of the new 3.15 features** | Thu Oct 1 |
+| **The most exciting 3.15 features** | Thu Oct 1 |
 | Lazy imports | Coming Oct 2 |
 | New built-in type `sentinel` | Coming Oct 5 |
 | New built-in type `frozendict` | Coming Oct 6 |
