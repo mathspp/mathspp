@@ -1,3 +1,7 @@
+---
+image_align: left
+---
+
 ## Want to go deeper?
 
 If your team needs help getting up to speed with modern Python, I offer custom [corporate trainings](/trainings).
