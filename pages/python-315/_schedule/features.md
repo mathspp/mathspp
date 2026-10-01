@@ -1,3 +1,7 @@
+---
+class: offset-box
+---
+
 ## Schedule for the 15 days of Python 3.15
 
 | Day | Topic |
