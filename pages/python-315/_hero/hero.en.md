@@ -45,7 +45,7 @@ form:
 
 # 15 days of Python 3.15 🐍🚀
 
-## Learn the new features that matter through examples
+## Learn the new 3.15 features that matter through examples
 
 I'm going through the most important new features in Python 3.15, focusing on practical examples with clear explanations.
 
