@@ -48,10 +48,11 @@ form:
 ## Learn the new features that matter through examples
 
 I'm going through the most important new features in Python 3.15, focusing on practical examples with clear explanations.
+Subscribe to get one short email every weekday with that day's Python 3.15 article.
 
 {% include "forms/form.html.twig" with {form: forms("enroll")} %}
 
-Get one short email every weekday with that day's Python 3.15 article.
+For Python developers who don't want to sift through the changelog or read every PEP.
 
 <style>
 form[name="enroll"] {
