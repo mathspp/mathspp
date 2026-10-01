@@ -5,6 +5,7 @@ content:
     order:
         custom:
           - "_hero"
+          - "_schedule"
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "Learn about the Python 3.15 🐍 features that matter 🚀"
