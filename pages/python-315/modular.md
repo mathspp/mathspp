@@ -7,6 +7,8 @@ content:
           - "_hero"
           - "_schedule"
           - "_repeated-cta"
+          - "_workshop-link"
+          - "_short-bio"
 metadata:
     author: "Rodrigo Girão Serrão"
     description: "Learn about the Python 3.15 🐍 features that matter 🚀"
