@@ -55,10 +55,6 @@ form[name="enroll"] {
     margin: auto;
 }
 
-h2 {
-    font-size: 70%;
-}
-
 .hero #to-start {
     display: none;
 }

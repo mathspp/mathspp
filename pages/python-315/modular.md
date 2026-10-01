@@ -1,5 +1,4 @@
 ---
-body_classes: "landing-page"
 content:
     items: "@self.modular"
     order:
