@@ -5,7 +5,7 @@ class: offset-box
 ## Schedule for the 15 days of Python 3.15
 
 | Day | Topic |
-| | |
+| :- | :- |
 | Thu Oct 1 | Overview of the new features |
 | Fri Oct 2 | Lazy imports |
 | Mon Oct 5 | New built-in type `sentinel` |
