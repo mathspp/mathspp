@@ -1,6 +1,6 @@
 ---
 title: "15 days of Python 3.15"
-hero_classes: 'text-light hero-fullscreen overlay-dark-gradient'
+hero_classes: 'text-light hero-large overlay-dark-gradient'
 hero_image: 'theme://images/common_hero.webp'
 
 process:
