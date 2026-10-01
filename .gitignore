@@ -3,3 +3,6 @@ book-*
 .DS_Store
 .venv
 __pycache__
+mathspp-replica
+*.py
+full-site-graph.json
