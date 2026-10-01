@@ -52,8 +52,6 @@ Subscribe to get one short email every weekday with that day's Python 3.15 artic
 
 {% include "forms/form.html.twig" with {form: forms("enroll")} %}
 
-For Python developers who don't want to sift through the changelog or read every PEP.
-
 <style>
 form[name="enroll"] {
     max-width: 70%;
