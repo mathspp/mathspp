@@ -31,7 +31,7 @@ form:
     buttons:
         submit:
           type: submit
-          value: "Learn about Python 3.15 🐍🚀"
+          value: "Get the Python 3.15 emails 🐍🚀"
 
     process:
         captcha: true
@@ -47,7 +47,11 @@ form:
 
 ## Learn the new features that matter through examples
 
+I'm going through the most important new features in Python 3.15, focusing on practical examples with clear explanations.
+
 {% include "forms/form.html.twig" with {form: forms("enroll")} %}
+
+Get one short email every weekday with that day's Python 3.15 article.
 
 <style>
 form[name="enroll"] {
