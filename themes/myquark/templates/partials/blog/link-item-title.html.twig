@@ -1,0 +1,5 @@
+{% if link_item.header.dead %}
+    <span class="link-title">{{ link_item.title }}</span> <span class="dead-link" title="The original URL no longer works.">(dead link)</span>
+{% else %}
+    <a class="link-title" href="{{ link_item.header.link }}" target="_blank">{{ link_item.title }}</a>
+{% endif %}

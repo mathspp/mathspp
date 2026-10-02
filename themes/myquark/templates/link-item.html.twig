@@ -5,6 +5,11 @@ Includes breadcrumbs and navigation arrows.
 
 {% extends 'partials/base.html.twig' %}
 
+{% block stylesheets %}
+    {% do assets.addCss('theme://css/link-blog-custom.css') %}
+    {{ parent() }}
+{% endblock %}
+
 {% block body %}
 
 <section id="body-wrapper" class="section blog-listing">
@@ -16,7 +21,7 @@ Includes breadcrumbs and navigation arrows.
             {# Link Item Content #}
             <div class="link-header">
                 <h1>
-                    <a class="link-title" href="{{ page.header.link }}" target="_blank">{{ page.title }}</a>
+                    {% include 'partials/blog/link-item-title.html.twig' with { link_item: page } %}
                 </h1>
                 <h2>
                     {% if page.header.author %}

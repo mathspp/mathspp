@@ -6,6 +6,7 @@ taxonomy:
     category: link
 title: "Three problems"
 # via:
+dead: true
 ---
 
 In this article David shows how to use parser combinators and lambda functions to define a small but powerful set of parsers that are highly modular and composable.

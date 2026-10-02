@@ -11,7 +11,7 @@ It can also include arbitrary Markdown content.
 
 <div class="link-item">
     <div class="link-header">
-        <p><a class="link-title" href="{{ link_item.header.link }}" target="_blank">{{ link_item.title }}</a>
+        <p>{% include 'partials/blog/link-item-title.html.twig' with { link_item: link_item } %}
         {% if link_item.header.via %}
             <a class="link-via" href="{{ link_item.header.via }}" target="_blank">(via)</a>
         {% endif %}
