@@ -10,7 +10,7 @@ This cheatsheet contains diagrams that explain how the iterables from the module
 
 ![A4 itertools cheatsheet shown in light and dark themes.](_cheatsheets-dark-front.webp?classes=light-theme-only)
 
-[Download this cheatsheet](https://gumroad.com/l/itertools-uv?classes=btn,btn-lg,btn-center)
+[Download this cheatsheet](https://gumroad.com/l/cheatsheet-itertools?classes=btn,btn-lg,btn-center)
 
 ---
 
@@ -134,4 +134,4 @@ When you want to compute the product of an iterable with itself two or more time
 
 ![A4 itertools cheatsheet shown in light and dark themes.](_cheatsheets-dark-front.webp?classes=light-theme-only)
 
-[Download this cheatsheet](https://gumroad.com/l/itertools-uv?classes=btn,btn-lg,btn-center)
+[Download this cheatsheet](https://gumroad.com/l/cheatsheet-itertools?classes=btn,btn-lg,btn-center)

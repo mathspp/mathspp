@@ -1,7 +1,7 @@
 ---
 date: 09-04-2026
 event: "PyCon Lithuania 2026"
-event_link: https://pycon.lt/2026/talks/ZCZFLH
+event_link: https://pycon.lt/2026/talks/and-now-for-something-completely-different-zczflh
 main_reference: https://mathspp.com/blog/a-generator-duck-typing-and-a-branchless-conditional-walk-into-a-bar
 resources: https://github.com/mathspp/talks/tree/main/20260409_pycon_lithuania_and-now-for-something-completely-different
 slides_pdf: https://github.com/mathspp/talks/blob/main/20260409_pycon_lithuania_and-now-for-something-completely-different/slides.pdf

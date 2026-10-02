@@ -1,6 +1,7 @@
 date: 20-09-2021
 metadata:
     author: Rodrigo Girão Serrão
+    description: "Today I learned about an algorithm that Python uses to sort out inheritance."
     og:image: https://mathspp.com/blog/til/004/thumbnail.webp
     twitter:image: https://mathspp.com/blog/til/004/thumbnail.webp
 slug: "004"
@@ -10,4 +11,5 @@ taxonomy:
       - algorithms
       - programming
       - python
+title: "TIL #004 – C3 linearisation"
 visible: false

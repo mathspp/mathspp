@@ -1,9 +1,3 @@
----
-title: "TIL #004 – C3 linearisation"
-metadata:
-    description: "Today I learned about an algorithm that Python uses to sort out inheritance."
----
-
 Today I learned about an algorithm that Python uses to sort out inheritance.
 
 ===
@@ -113,7 +107,7 @@ or we could just ask Python for the linearised hierarchy:
 This shows that we first look things up on `Z`, then on `K1`, then on `K2`, ...
 
 This linearised hierarchy is built by a straightforward algorithm called the “C3 linearisation algorithm”,
-that you can [find on Wikipedia][wiki].
+that you can [find in the Python documentation][wiki].
 
 The algorithm isn't that complicated (the description is in the link above)
 and I might actually implement it in Python in the near future, just for fun.
@@ -129,6 +123,6 @@ That's it for now! [Stay tuned][subscribe] and I'll see you around!
 [subscribe]: /subscribe
 [til003]: /blog/til/003
 [str-and-repr]: /blog/pydonts/str-and-repr
-[wiki]: https://en.wikipedia.org/wiki/C3_linearization
+[wiki]: https://docs.python.org/3/howto/mro.html
 [blog-article]: https://blog.peterlamut.com/2018/11/04/python-attribute-lookup-explained-in-detail
 [twitter]: https://twitter.com/mathsppblog

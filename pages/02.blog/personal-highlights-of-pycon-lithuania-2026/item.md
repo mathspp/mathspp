@@ -111,13 +111,13 @@ He told me that maybe one day you'll be able to submit to the CFP through his pa
 I had a talk about `itertools.tee` scheduled for the first day and ended up giving a second talk to cover for a last-minute cancellation on the second day about generators, duck typing, and branchless conditionals.
 [The slide decks and reference materials are already available](/talks) and I'll link to the YouTube videos when they go up.
 
-My favourite talk was Piotr Migdał's “[Vibe reverse engineering of old games and new hardware](https://pycon.lt/2026/talks/HLCPZ9)”.
+My favourite talk was Piotr Migdał's “[Vibe reverse engineering of old games and new hardware](https://pycon.lt/2026/talks/vibe-reverse-engineering-of-old-games-and-new-hardware-hlcpz9)”.
 With the help of LLMs, Piotr went from reverse-engineering and replicating old games to hacking the LED display of his backpack.
 
 The keynotes were also very interesting.
-The [closing keynote of the conference, by Geoffrey Huntley](https://pycon.lt/2026/talks/H3RL3Q), was a bit too gloomy for my personal taste, but left me “pondering the ponderoos” about LLMs and the future of programming.
+The [closing keynote of the conference, by Geoffrey Huntley](https://pycon.lt/2026/talks/software-development-now-costs-less-than-minimum-wage-h3rl3q), was a bit too gloomy for my personal taste, but left me “pondering the ponderoos” about LLMs and the future of programming.
 
-My favourite keynote was Piotr's “[Computer Vision, Meet Sports](https://pycon.lt/2026/talks/VCZ7VK)”, where Piotr showed how he applied all sorts of computer vision models and techniques to analyse games of basketball:
+My favourite keynote was Piotr's “[Computer Vision, Meet Sports](https://pycon.lt/2026/talks/computer-vision-meet-sports-vcz7vk)”, where Piotr showed how he applied all sorts of computer vision models and techniques to analyse games of basketball:
 
 ![A screenshot from a YouTube video where you see basketball players segmented and a top-down view of the court with the positions of the players being tracked.](_basketball.webp "Tracking and segmentation of basketball players.")
 

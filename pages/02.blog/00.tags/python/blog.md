@@ -16,8 +16,8 @@ metadata:
     author: Rodrigo Girão Serrão
     description: "All of the mathspp blog articles about Python."
     og:description: "All of the mathspp blog articles about Python."
-    og:image: "https://mathspp.com/blog/tags/Python/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/Python/thumbnail.webp"
+    og:image: "https://mathspp.com/blog/tags/python/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/python/thumbnail.webp"
 title: "Python blog articles"
 ---
 
@@ -29,7 +29,7 @@ title: "Python blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">326</th>
-            <th style="text-align: center;">405,568</th>
+            <th style="text-align: center;">405,570</th>
             <th style="text-align: center;">38,716</th>
         </tr>
     </thead>

@@ -3,8 +3,8 @@ date: 18-02-2026
 event: "Stockholm Python User Group"
 event_link: https://www.meetup.com/pysthlm/events/313323945/
 main_reference: https://mathspp.com/blog/module-itertools-overview
-resources: https://github.com/mathspp/talks/tree/main/20260212_stockholm_pug_a-tour-of-the-module-itertools
-slides_pdf: https://github.com/mathspp/talks/blob/main/20260212_stockholm_pug_a-tour-of-the-module-itertools/slides.pdf
+resources: https://github.com/mathspp/talks/tree/main/20260218_stockholm_pug_a-tour-of-the-module-itertools
+slides_pdf: https://github.com/mathspp/talks/blob/main/20260218_stockholm_pug_a-tour-of-the-module-itertools/slides.pdf
 taxonomy:
     category: talks
     tags:

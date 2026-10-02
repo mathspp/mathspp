@@ -17,11 +17,6 @@ summary:
   size: 300
   delimiter: '==='
 redirects:
-  /utils: 'https://localhost:8888'
-  '/workshops/(.*)': '/trainings[301]'
-  '/education/(.*)': '/trainings/$1[301]'
-  /education: '/trainings[301]'
-  '/blog/solutions/(.*)': '/blog/problems/$1#solution[301]'
   /github: 'https://github.com/mathspp'
   /twitch: 'https://twitch.tv/mathsppblog'
   /pt/twitch: 'https://mathspp.com/twitch'

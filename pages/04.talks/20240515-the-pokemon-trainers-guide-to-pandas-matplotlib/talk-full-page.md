@@ -2,7 +2,7 @@
 date: 15-05-2024
 event: "PyCon US 2024"
 event_link: https://us.pycon.org/2024/schedule/presentation/102/
-main_reference: https://mathspp.gumroad.com/l/little-book-pandas-matplotlib
+main_reference: https://mathspp.gumroad.com/l/the-little-book-of-pandas-and-matplotlib/
 resources: https://github.com/mathspp/talks/tree/main/20240515_pycon-us-the-pokemon-trainers-guide-to-pandas-and-matplotlib
 slides_pdf: https://github.com/mathspp/talks/blob/main/20240515_pycon-us-the-pokemon-trainers-guide-to-pandas-and-matplotlib/slides.pdf
 taxonomy:

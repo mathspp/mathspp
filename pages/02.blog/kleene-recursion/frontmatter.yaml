@@ -6,3 +6,11 @@ taxonomy:
       - mathematics
       - recursion
       - computation theory
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "On recursive functions and Kleene's approach"
+    og:image: https://mathspp.com/blog/kleene-recursion/thumbnail.webp
+    twitter:image: https://mathspp.com/blog/kleene-recursion/thumbnail.webp
+    title: "On recursive functions and Kleene's approach"
+    og:title: "On recursive functions and Kleene's approach"
+title: "On recursive functions and Kleene's approach"

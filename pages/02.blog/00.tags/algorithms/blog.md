@@ -16,8 +16,8 @@ metadata:
     author: Rodrigo Girão Serrão
     description: "All of the mathspp blog articles about Algorithms."
     og:description: "All of the mathspp blog articles about Algorithms."
-    og:image: "https://mathspp.com/blog/tags/Algorithms/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/Algorithms/thumbnail.webp"
+    og:image: "https://mathspp.com/blog/tags/algorithms/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/algorithms/thumbnail.webp"
 title: "Algorithms blog articles"
 ---
 
@@ -29,7 +29,7 @@ title: "Algorithms blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">28</th>
-            <th style="text-align: center;">37,285</th>
+            <th style="text-align: center;">37,287</th>
             <th style="text-align: center;">3,367</th>
         </tr>
     </thead>
