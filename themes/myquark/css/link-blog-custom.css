@@ -4,7 +4,7 @@
 }
 
 .dead-link {
-    font-size: 0.5em;
+    font-size: max(0.5em, 10pt);
     font-weight: normal;
     opacity: 0.75;
     overflow-wrap: anywhere;
