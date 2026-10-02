@@ -43,6 +43,7 @@ TITLE_FONT = ImageFont.truetype(TITLE_FONT_PATH, 100)  # Adjust font size as nee
 
 CAPITALISATION_OVERRIDES = {
     "Apl": "APL",
+    "Llms": "LLMs",
     "Uv": "uv",
     "Mathspp blog": "mathspp blog",
 }
@@ -65,10 +66,13 @@ def build_main_blog(context):
 
 
 def build_blog_for_tag(folder, template, tag, context, description):
+    tag_slug = tag.replace(" ", "-")
     tag = tag.capitalize()
     tag = CAPITALISATION_OVERRIDES.get(tag, tag)
     title_text = f"{tag} blog articles"
-    text = template.render(context, tag=tag, description=description, title=title_text)
+    text = template.render(
+        context, tag=tag, tag_slug=tag_slug, description=description, title=title_text
+    )
     (folder / "blog.md").write_text(text)
 
 

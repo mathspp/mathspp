@@ -18,9 +18,9 @@ summary:
   delimiter: '==='
 redirects:
   /utils: 'https://localhost:8888'
-  '/workshops/(.*)': '/training[301]'
-  '/education/(.*)': '/training/$1[301]'
-  /education: '/training[301]'
+  '/workshops/(.*)': '/trainings[301]'
+  '/education/(.*)': '/trainings/$1[301]'
+  /education: '/trainings[301]'
   '/blog/solutions/(.*)': '/blog/problems/$1#solution[301]'
   /github: 'https://github.com/mathspp'
   /twitch: 'https://twitch.tv/mathsppblog'

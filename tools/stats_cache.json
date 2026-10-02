@@ -1130,7 +1130,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/503-days-working-full-time-on-foss-lessons-learned": {
-    "timestamp": 1753281076.1914892,
+    "timestamp": 1790956000.2705746,
     "tags": [
       "open source",
       "opinion",
@@ -6332,11 +6332,11 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/uv-skills": {
-    "timestamp": 1776525191.6609538,
+    "timestamp": 1790957004.4172173,
     "tags": [
       "python",
       "programming",
-      "LLM",
+      "llms",
       "uv"
     ],
     "stats": {
@@ -6516,6 +6516,16 @@
       "code_snippets": 12,
       "loc": 55,
       "words": 449
+    }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/the-5-most-exciting-new-features-of-python-315": {
+    "timestamp": 1790957072.4058878,
+    "tags": [],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 0,
+      "loc": 0,
+      "words": 27
     }
   }
 }

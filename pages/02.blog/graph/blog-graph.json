@@ -13778,9 +13778,9 @@
     },
     {
       "data": {
-        "id": "tag:article:uv-skills->tag:LLM",
+        "id": "tag:article:uv-skills->tag:llms",
         "source": "article:uv-skills",
-        "target": "tag:LLM",
+        "target": "tag:llms",
         "type": "tag"
       }
     },
@@ -14449,7 +14449,7 @@
       }
     }
   ],
-  "generated_at": "2026-09-25T14:59:34+00:00",
+  "generated_at": "2026-10-02T16:05:01+00:00",
   "nodes": [
     {
       "data": {
@@ -23962,6 +23962,24 @@
     },
     {
       "data": {
+        "date": "01-10-2026 16:15",
+        "degree": 0,
+        "height": 18,
+        "id": "article:the-5-most-exciting-new-features-of-python-315",
+        "internal_link_degree": 0,
+        "label": "The 5 most exciting new features of Python 3.15",
+        "size": 18,
+        "slug": "the-5-most-exciting-new-features-of-python-315",
+        "tag_degree": 0,
+        "tags": [],
+        "title": "The 5 most exciting new features of Python 3.15",
+        "type": "article",
+        "url": "/blog/the-5-most-exciting-new-features-of-python-315",
+        "width": 26
+      }
+    },
+    {
+      "data": {
         "date": "24-04-2019 15:32",
         "degree": 8,
         "height": 34,
@@ -24093,7 +24111,7 @@
         "tags": [
           "python",
           "programming",
-          "LLM",
+          "llms",
           "uv"
         ],
         "title": "uv skills for coding agents",
@@ -25115,32 +25133,17 @@
     },
     {
       "data": {
-        "degree": 1,
-        "height": 24,
-        "id": "tag:LLM",
-        "internal_link_degree": 0,
-        "label": "LLM",
-        "size": 24,
-        "tag": "LLM",
-        "tag_degree": 1,
-        "type": "tag",
-        "url": "/blog/tags/llm",
-        "width": 24
-      }
-    },
-    {
-      "data": {
-        "degree": 10,
-        "height": 35,
+        "degree": 11,
+        "height": 36,
         "id": "tag:llms",
         "internal_link_degree": 0,
         "label": "llms",
-        "size": 35,
+        "size": 36,
         "tag": "llms",
-        "tag_degree": 10,
+        "tag_degree": 11,
         "type": "tag",
         "url": "/blog/tags/llms",
-        "width": 35
+        "width": 36
       }
     },
     {
@@ -25986,9 +25989,9 @@
   ],
   "site": "https://mathspp.com",
   "stats": {
-    "articles": 455,
+    "articles": 456,
     "internal_links": 403,
     "tag_edges": 1403,
-    "tags": 99
+    "tags": 98
   }
 }

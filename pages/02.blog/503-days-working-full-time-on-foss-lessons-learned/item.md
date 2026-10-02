@@ -395,6 +395,6 @@ I will also be devoting more time to writing books and teaching Python online, s
 [Rich]: https://github.com/textualize/rich
 [Textual]: https://github.com/textualize/textual
 [email]: mailto:rodrigo@mathspp.com
-[training]: /training
+[training]: /trainings
 [books]: /books
 [twitter]: https://x.com/mathsppblog

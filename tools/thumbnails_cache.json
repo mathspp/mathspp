@@ -564,10 +564,10 @@
     "words": 430
   },
   "__all": {
-    "articles": 456,
+    "articles": 457,
     "code_snippets": 4291,
     "loc": 41090,
-    "words": 500089
+    "words": 500116
   },
   "fp": {
     "articles": 5,
@@ -617,22 +617,16 @@
     "loc": 237,
     "words": 7178
   },
-  "LLM": {
-    "articles": 1,
-    "code_snippets": 3,
-    "loc": 89,
-    "words": 307
-  },
-  "llms": {
-    "articles": 10,
-    "code_snippets": 198,
-    "loc": 2125,
-    "words": 18592
-  },
   "itertools": {
     "articles": 4,
     "code_snippets": 57,
     "loc": 584,
     "words": 3914
+  },
+  "llms": {
+    "articles": 11,
+    "code_snippets": 201,
+    "loc": 2214,
+    "words": 18899
   }
 }

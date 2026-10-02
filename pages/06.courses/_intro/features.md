@@ -16,4 +16,4 @@ Anyone can sign-up.
 | [Intermediate Python course](#intermediate-python-course) | TBA | $499 |
 | [Free uv email course](#free-uv-email-course) | Enroll any time | Free |
 
-I also offer [corporate trainings for teams, both remote and in-person](/training).
+I also offer [corporate trainings for teams, both remote and in-person](/trainings).

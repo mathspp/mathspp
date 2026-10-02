@@ -16,8 +16,8 @@ metadata:
     author: Rodrigo Girão Serrão
     description: "All of the mathspp blog articles about {{ tag }}."
     og:description: "All of the mathspp blog articles about {{ tag }}."
-    og:image: "https://mathspp.com/blog/tags/{{ tag.replace(" ", "-") }}/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/{{ tag.replace(" ", "-") }}/thumbnail.webp"
+    og:image: "https://mathspp.com/blog/tags/{{ tag_slug }}/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/{{ tag_slug }}/thumbnail.webp"
 title: "{{ title }}"
 ---
 
