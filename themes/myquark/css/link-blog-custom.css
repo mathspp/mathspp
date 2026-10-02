@@ -4,11 +4,8 @@
 }
 
 .dead-link {
-    font-size: 0.8em;
+    font-size: 0.5em;
     font-weight: normal;
     opacity: 0.75;
-}
-
-.dead-link-url {
     overflow-wrap: anywhere;
 }
