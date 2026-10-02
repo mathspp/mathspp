@@ -12,7 +12,7 @@ Anyone can sign-up.
 | [Metaprogramming 101 workshop](#metaprogramming-101) | 14 October | $49 |
 | [Modern Python projects workshop](#modern-python-projects) | 15 October | $49 |
 | [Engineering with coding agents workshop](#engineering-with-coding-agents) | 19 October | $49 |
-| [October workshop full pass](#october-workshop-access-bundle) | — | $99 |
+| [October workshop full pass](#october-2026-live-workshops) | — | $99 |
 | [Intermediate Python course](#intermediate-python-course) | TBA | $499 |
 | [Free uv email course](#free-uv-email-course) | Enroll any time | Free |
 
