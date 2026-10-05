@@ -6,18 +6,18 @@ class: offset-box
 
 | Topic | Link |
 | :- | :- |
-| **Top 5 most exciting 3.15 features** | Thu Oct 8 |
-| Lazy imports | Coming Oct 9 |
-| New built-in type `sentinel` | Coming Oct 12 |
-| New built-in type `frozendict` | Coming Oct 13 |
-| Unpacking inside comprehensions | Coming Oct 14 |
-| Startup config files | Coming Oct 15 |
-| Python 3.15 DX improvements | Coming Oct 16 |
-| Tachyon: new sampling profiler | Coming Oct 19 |
-| New package `profiling` | Coming Oct 20 |
-| `TypedDict` with extra items | Coming Oct 21 |
-| Typing improvements in 3.15 | Coming Oct 22 |
-| Standard library niceties | Coming Oct 23 |
-| Generators and threading | Coming Oct 26 |
-| The new `abi3t` | Coming Oct 27 |
-| 3.15 roundup | Coming Oct 28 |
+| **Top 5 most exciting 3.15 features** | Thu Oct 9 |
+| Lazy imports | Coming Oct 12 |
+| New built-in type `sentinel` | Coming Oct 13 |
+| New built-in type `frozendict` | Coming Oct 14 |
+| Unpacking inside comprehensions | Coming Oct 15 |
+| Startup config files | Coming Oct 16 |
+| Python 3.15 DX improvements | Coming Oct 19 |
+| Tachyon: new sampling profiler | Coming Oct 20 |
+| New package `profiling` | Coming Oct 21 |
+| `TypedDict` with extra items | Coming Oct 22 |
+| Typing improvements in 3.15 | Coming Oct 23 |
+| Standard library niceties | Coming Oct 26 |
+| Generators and threading | Coming Oct 27 |
+| The new `abi3t` | Coming Oct 28 |
+| 3.15 roundup | Coming Oct 29 |
