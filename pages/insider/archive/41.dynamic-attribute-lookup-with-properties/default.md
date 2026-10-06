@@ -163,7 +163,7 @@ class Person:
 
     @property  # <-- add the `property` built-in
     def name(self):
-        return f"{first} {last}"
+        return f"{self.first} {self.last}"
 ```
 
 After these three steps (one of which was done already) you have an attribute that can be computed dynamically.
