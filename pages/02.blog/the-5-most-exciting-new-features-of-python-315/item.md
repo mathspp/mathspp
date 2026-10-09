@@ -103,6 +103,8 @@ This means you can use instances of `frozendict` as dictionary keys or as set el
 has_cool_features = {version_info: True}
 ```
 
+You can [play with `frozendict` online here](https://mathspp.com/python-playground#code=dmVyc2lvbl9pbmZvID0gZnJvemVuZGljdCh7Im1ham9yIjogMywgIm1pbm9yIjogMTUsICJwYXRjaCI6IDB9KQoKcHJpbnQodmVyc2lvbl9pbmZvKSAgIyBmcm96ZW5kaWN0KHsnbWFqb3InOiAzLCAnbWlub3InOiAxNSwgJ3BhdGNoJzogMH0pCgojIE5ldyBrZXkvdmFsdWUgcGFpcjoKdmVyc2lvbl9pbmZvWyJuZXh0X21pbm9yIl0gPSAxNgojIFR5cGVFcnJvcjogJ2Zyb3plbmRpY3QnIG9iamVjdCBkb2VzIG5vdCBzdXBwb3J0IGl0ZW0gYXNzaWdubWVudAo).
+
 ## New built-in `sentinel`
 
 The new built-in `sentinel`, defined in [PEP 661](https://peps.python.org/pep-0661/), can be used to create named placeholder values that have that can't be mistaken for any of the appropriate values you want to accept.
@@ -133,6 +135,8 @@ Two of the benefits of these dedicated sentinel values is that their string repr
 def find_and_return[V](haystack: Iterable[V], predicate: Callable[[V], bool]) -> V | NOTHING:
     ...
 ```
+
+You can [play with `sentinel` online here](https://mathspp.com/python-playground#code=Tk9USElORyA9IHNlbnRpbmVsKCJOT1RISU5HIikKCmRlZiBmaW5kX2FuZF9yZXR1cm5bVl0oaGF5c3RhY2s6IEl0ZXJhYmxlW1ZdLCBwcmVkaWNhdGU6IENhbGxhYmxlW1tWXSwgYm9vbF0pIC0-IFYgfCBOT1RISU5HOgogICAgZm9yIHZhbHVlIGluIGhheXN0YWNrOgogICAgICAgIGlmIHByZWRpY2F0ZSh2YWx1ZSk6CiAgICAgICAgICAgIHJldHVybiB2YWx1ZQogICAgcmV0dXJuIE5PVEhJTkcKCiMgRmluZCBhIHN0cmluZwppc19zdHIgPSBsYW1iZGEgdjogaXNpbnN0YW5jZSh2LCBzdHIpCnByaW50KGZpbmRfYW5kX3JldHVybihyYW5nZSgxMCksIGlzX3N0cikpCgojIEZpbmQgYSBzdHJpbmcKcHJpbnQoZmluZF9hbmRfcmV0dXJuKFszLCBUcnVlLCAiaGV5Il0sIGlzX3N0cikp).
 
 ## Unpacking inside comprehensions
 
@@ -167,6 +171,8 @@ flat = [
 print(flat)  # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
+You can [play with unpacking inside comprehensions online here](https://mathspp.com/python-playground#code=bmVzdGVkID0gWwogICAgKDEsIDIsIDMpLAogICAgWzQsIDVdLAogICAgWzZdLAogICAgKDcsIDgsIDkpCl0KCmZsYXQgPSBbKnN1YiBmb3Igc3ViIGluIG5lc3RlZF0KcHJpbnQoZmxhdCkgICMgWzEsIDIsIDMsIDQsIDUsIDYsIDcsIDgsIDldCgpkaWN0cyA9IFsKICAgIHsibWFqb3IiOiAzLCAibWlub3IiOiAxNH0sCiAgICB7Im1pbm9yIjogMTUsICJwYXRjaCI6IDB9LAogICAgeyJtYWpvciI6IDR9LApdCgpvbmVfZGljdCA9IHsqKmQgZm9yIGQgaW4gZGljdHN9CnByaW50KG9uZV9kaWN0KQ).
+
 ## Tachyon, a new sampling profiler
 
 Tachyon is a new high-frequency **sampling profiler** introduced in [PEP 799](https://peps.python.org/pep-0799/).
@@ -193,6 +199,12 @@ To attach to process `12345`, you'd run the command
 ```bash
 % python -m profiling.sampling attach 12345
 ```
+
+## How to play with 3.15
+
+If you have `uv` installed, you can use the option `--python 3.15` to tell uv to use Python 3.15.
+
+You can also use [this interactive Python playground](/python-playground).
 
 ## Python 3.15 brings much more to the table
 

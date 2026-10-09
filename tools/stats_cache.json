@@ -1633,7 +1633,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/adding-stats-to-my-blog": {
-    "timestamp": 1791554442.3733673,
+    "timestamp": 1791568481.354082,
     "tags": [
       "programming",
       "python",
@@ -2914,7 +2914,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p043-rubiks-cube-scrambling": {
-    "timestamp": 1791554442.348136,
+    "timestamp": 1791568481.31165,
     "tags": [
       "combinatorics",
       "group theory",
@@ -6519,7 +6519,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/the-5-most-exciting-new-features-of-python-315": {
-    "timestamp": 1791554421.2705936,
+    "timestamp": 1791568460.9674067,
     "tags": [
       "python",
       "programming"
@@ -6528,7 +6528,7 @@
       "articles": 1,
       "code_snippets": 13,
       "loc": 58,
-      "words": 922
+      "words": 978
     }
   }
 }
