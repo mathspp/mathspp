@@ -8,6 +8,7 @@
     or `partials/blog/ctas/some-name.html.twig`.
 #}
 {% if cta_name != "none" %}
+    {{ <p>cta_name</p> }}
     {% set markdown_templates = [
         "partials/blog/ctas/" ~ cta_name ~ ".md.twig",
         "partials/blog/ctas/default.md.twig",
