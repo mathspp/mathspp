@@ -15,6 +15,8 @@ metadata:
     og:description: "Learn about the Python 3.15 🐍 features that matter 🚀"
     og:title: "15 days of Python 3.15 🐍🚀"
     title: "15 days of Python 3.15 🐍🚀"
+    og:image: "https://mathspp.com/python-315/thumbnail.webp"
+    twitter:image: "https://mathspp.com/python-315/thumbnail.webp"
 onpage_menu: false
 title: "15 days of Python 3.15 🐍🚀"
 ---
