@@ -1,0 +1,20 @@
+date: 09-10-2026 14:15
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This article explains the 5 best new features of Python 3.15 with clear examples and explanations."
+    og:image: "https://mathspp.com/blog/the-5-most-exciting-new-features-of-python-315/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/the-5-most-exciting-new-features-of-python-315/thumbnail.webp"
+references: []
+slug: "the-5-most-exciting-new-features-of-python-315"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - python
+        - programming
+title: The 5 most exciting new features of Python 3.15
+
+# While the 3.15 campaign is ongoing:
+process:
+  twig: true
+cache_enable: false

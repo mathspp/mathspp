@@ -13186,6 +13186,22 @@
     },
     {
       "data": {
+        "id": "tag:article:the-5-most-exciting-new-features-of-python-315->tag:programming",
+        "source": "article:the-5-most-exciting-new-features-of-python-315",
+        "target": "tag:programming",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:the-5-most-exciting-new-features-of-python-315->tag:python",
+        "source": "article:the-5-most-exciting-new-features-of-python-315",
+        "target": "tag:python",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
         "id": "tag:article:the-appearing-builtin->tag:programming",
         "source": "article:the-appearing-builtin",
         "target": "tag:programming",
@@ -14449,7 +14465,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-02T17:33:10+00:00",
+  "generated_at": "2026-10-09T13:34:21+00:00",
   "nodes": [
     {
       "data": {
@@ -23962,20 +23978,23 @@
     },
     {
       "data": {
-        "date": "01-10-2026 16:15",
-        "degree": 0,
-        "height": 18,
+        "date": "09-10-2026 14:15",
+        "degree": 2,
+        "height": 26,
         "id": "article:the-5-most-exciting-new-features-of-python-315",
         "internal_link_degree": 0,
         "label": "The 5 most exciting new features of Python 3.15",
-        "size": 18,
+        "size": 26,
         "slug": "the-5-most-exciting-new-features-of-python-315",
-        "tag_degree": 0,
-        "tags": [],
+        "tag_degree": 2,
+        "tags": [
+          "python",
+          "programming"
+        ],
         "title": "The 5 most exciting new features of Python 3.15",
         "type": "article",
         "url": "/blog/the-5-most-exciting-new-features-of-python-315",
-        "width": 26
+        "width": 38
       }
     },
     {
@@ -25553,14 +25572,14 @@
     },
     {
       "data": {
-        "degree": 330,
+        "degree": 331,
         "height": 78,
         "id": "tag:programming",
         "internal_link_degree": 0,
         "label": "programming",
         "size": 78,
         "tag": "programming",
-        "tag_degree": 330,
+        "tag_degree": 331,
         "type": "tag",
         "url": "/blog/tags/programming",
         "width": 78
@@ -25613,14 +25632,14 @@
     },
     {
       "data": {
-        "degree": 326,
+        "degree": 327,
         "height": 78,
         "id": "tag:python",
         "internal_link_degree": 0,
         "label": "python",
         "size": 78,
         "tag": "python",
-        "tag_degree": 326,
+        "tag_degree": 327,
         "type": "tag",
         "url": "/blog/tags/python",
         "width": 78
@@ -25991,7 +26010,7 @@
   "stats": {
     "articles": 456,
     "internal_links": 403,
-    "tag_edges": 1403,
+    "tag_edges": 1405,
     "tags": 98
   }
 }
