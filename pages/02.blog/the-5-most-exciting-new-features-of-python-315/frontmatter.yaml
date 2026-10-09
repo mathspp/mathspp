@@ -51,4 +51,4 @@ form:
           utm_source: "python-315-campaign"
           automations:
             - "aut_68fbf21d-5f08-41d8-a9eb-7e960ce07ac1"
-        display: you-are-in
+        display: "/python-315/you-are-in"
