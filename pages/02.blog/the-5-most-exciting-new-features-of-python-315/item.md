@@ -22,7 +22,7 @@ Explained clearly and with examples so you don't have to sift through the change
 
 Subscribe to receive this free email series:
 
-{% include "forms/form.html.twig" with {form: forms( {route: '/python-315/_hero'} ) } %}
+{% include "forms/form.html.twig" with {form: forms("enroll")} %}
 
 If you want, you can also [check the schedule](/python-315) of the upcoming emails.
 
@@ -202,4 +202,4 @@ For 15 days, I'll explain a new Python 3.15 feature every day.
 
 You can subscribe below to receive the emails directly in your inbox:
 
-{% include "forms/form.html.twig" with {form: forms( {route: '/python-315/_hero'} ) } %}
+{% include "forms/form.html.twig" with {form: forms("enroll")} %}
