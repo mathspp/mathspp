@@ -200,4 +200,6 @@ From package startup configuration files, to improved developer experience, typi
 If you want to learn more about what's new in Python 3.15, [take a look at the “15 days of Python 3.15” series](/python-315) I'm running.
 For 15 days, I'll explain a new Python 3.15 feature every day.
 
-[Get the free 3.15 email series](/python-315?classes=btn)
+Get the free 3.15 email series:
+
+{% include "forms/form.html.twig" with {form: forms("enroll_bottom")} %}

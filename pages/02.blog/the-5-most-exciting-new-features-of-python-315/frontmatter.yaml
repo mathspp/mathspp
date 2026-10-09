@@ -19,37 +19,42 @@ cta: "none"
 process:
   twig: true
 cache_enable: false
-form:
-    name: enroll
+forms:
+    enroll: &enrollment_form
+        name: enroll
 
-    fields:
-        honeypot:
-          label: Honeypot
-          type: honeypot
+        fields:
+            honeypot:
+              label: Honeypot
+              type: honeypot
 
-        email:
-          display_label: false
-          autocomplete: true
-          placeholder: Your best email address
-          type: email
-          validate:
-            required: true
+            email:
+              display_label: false
+              autocomplete: true
+              placeholder: Your best email address
+              type: email
+              validate:
+                required: true
 
-        g-recaptcha-response:
-          label: Captcha
-          type: captcha
-          recaptcha_not_validated: 'Captcha not valid!'
+            g-recaptcha-response:
+              label: Captcha
+              type: captcha
+              recaptcha_not_validated: 'Captcha not valid!'
 
-    buttons:
-        submit:
-          type: submit
-          value: "Get the Python 3.15 emails 🐍🚀"
+        buttons:
+            submit:
+              type: submit
+              value: "Get the Python 3.15 emails 🐍🚀"
 
-    process:
-        captcha: true
-        newsletter-subscriber:
-          publication: insider
-          utm_source: "python-315-campaign"
-          automations:
-            - "aut_68fbf21d-5f08-41d8-a9eb-7e960ce07ac1"
-        display: "/python-315/you-are-in"
+        process:
+            captcha: true
+            newsletter-subscriber:
+              publication: insider
+              utm_source: "python-315-campaign"
+              automations:
+                - "aut_68fbf21d-5f08-41d8-a9eb-7e960ce07ac1"
+            display: "/python-315/you-are-in"
+
+    enroll_bottom:
+        <<: *enrollment_form
+        name: enroll_bottom
