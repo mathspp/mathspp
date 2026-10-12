@@ -1633,7 +1633,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/adding-stats-to-my-blog": {
-    "timestamp": 1791568654.1151085,
+    "timestamp": 1791822099.7383106,
     "tags": [
       "programming",
       "python",
@@ -2914,7 +2914,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p043-rubiks-cube-scrambling": {
-    "timestamp": 1791568654.0790882,
+    "timestamp": 1791822099.7067246,
     "tags": [
       "combinatorics",
       "group theory",
@@ -6374,16 +6374,16 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/explicit-lazy-imports": {
-    "timestamp": 1778002870.7689612,
+    "timestamp": 1791822067.8826728,
     "tags": [
-      "programming",
-      "python"
+      "python",
+      "programming"
     ],
     "stats": {
       "articles": 1,
-      "code_snippets": 3,
-      "loc": 20,
-      "words": 2146
+      "code_snippets": 13,
+      "loc": 80,
+      "words": 1158
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/143.resolve-a-lazy-import-manually": {

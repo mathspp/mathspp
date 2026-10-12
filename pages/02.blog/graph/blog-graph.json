@@ -14465,7 +14465,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-09T17:57:37+00:00",
+  "generated_at": "2026-10-12T16:21:43+00:00",
   "nodes": [
     {
       "data": {
@@ -21919,7 +21919,7 @@
     },
     {
       "data": {
-        "date": "21-04-2026 14:29",
+        "date": "12-10-2026 14:46",
         "degree": 2,
         "height": 26,
         "id": "article:explicit-lazy-imports",
@@ -21929,8 +21929,8 @@
         "slug": "explicit-lazy-imports",
         "tag_degree": 2,
         "tags": [
-          "programming",
-          "python"
+          "python",
+          "programming"
         ],
         "title": "Explicit lazy imports",
         "type": "article",
