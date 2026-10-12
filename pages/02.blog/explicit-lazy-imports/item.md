@@ -13,12 +13,12 @@ lazy from pathlib import Path
 
 The module `json` is imported normally, but `math` and `Path` are imported lazily.
 
-If an import is lazy, the module will only be loaded when it is neeed instead of being loaded when Python encounters the import statement.
+If an import is lazy, the module will only be loaded when it is needed instead of being loaded immediately when Python encounters the import statement.
 This article explains how to use lazy imports and how to write backwards-compatible code with these features.
 
 ## 15 days of Python 3.15
 
-To celebrate the release of Python 3.15, over the next 15 business days I'll be writing about a new 3.15 feature every day.
+To [celebrate the release of Python 3.15](/python-315), over the next 15 business days I'll be writing about a new 3.15 feature every day.
 Explained clearly and with examples so you don't have to sift through the changelog.
 
 Subscribe to receive this free email series:

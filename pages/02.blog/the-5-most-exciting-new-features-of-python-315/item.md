@@ -17,7 +17,7 @@ By the end of this article you'll have a clear picture of some of the new cool f
 
 ## 15 days of Python 3.15
 
-To celebrate the release of Python 3.15, over the next 15 business days I'll be writing about a new 3.15 feature every day.
+To [celebrate the release of Python 3.15](/python-315), over the next 15 business days I'll be writing about a new 3.15 feature every day.
 Explained clearly and with examples so you don't have to sift through the changelog.
 
 Subscribe to receive this free email series:
