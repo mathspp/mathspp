@@ -34,12 +34,11 @@ That means that when Python finds a statement `import some_module` it looks for 
 In turn, that file might import other modules that will run at that point in time, and this branching can be arbitrarily deep.
 
 Since Python files usually collect all imports at the top, this means that you may spend an arbitrarily long amount of time taking care of your imports even before your start running your own code.
-And in some situations, you won't even need your imports.
+If there are situations where you won't even end up _needing_ those imports, that's a huge waste of time!
 
-Imagine a CLI that needs to import some heavy dependencies.
-Maybe the dependencies perform network authentication, for example.
-And that can take a bit.
-But if you only run the command `my_cli --help`, you don't want to wait for the authentication to finish (or fail!) before you get your help message.
+Imagine a CLI that needs to import some dependencies that are slow to import.
+Maybe the dependencies perform network authentication, which can take a bit.
+If you only run the command `my_cli --help`, you don't want to wait for the authentication to finish (or fail!) before you get your help message.
 
 By using a lazy import, you can make sure that the dependencies are only loaded _when_ they are needed and _if_ they are needed.
 
@@ -89,7 +88,9 @@ from json import dump, load
 import pathlib
 ```
 
-In Python 3.15+, the modules `math` and `pathlib` are loaded regularly but the module `json` will be loaded lazily.
+In Python 3.15+, `math` is loaded regularly because it's imported before `__lazy_modules__` is defined and `pathlib` is imported regularly because it's _not_ in `__lazy_modules__`.
+`json` is loaded lazily because it's listed in `__lazy_modules__`.
+
 In Python 3.14 or earlier, the variable `__lazy_modules__` is ignored and all three modules are loaded regularly.
 
 You can verify this with a more complete snippet of code:
@@ -111,8 +112,9 @@ print("json" in sys.modules)
 print("pathlib" in sys.modules)
 ```
 
-The check `"module_name" in sys.modules` checks if the module was already loaded.
-In Python 3.15+ the code prints `True`/`False`/`True` but in Python 3.14 or earlier it prints `True` three times.
+The code `"module_name" in sys.modules` checks if the module was already loaded.
+The code prints `True`/`False`/`True` in Python 3.15+.
+In Python 3.14 or earlier, it prints `True` three times.
 
 If you have uv (0.13.0+) installed, copy the snippet of code above and check it with
 
@@ -130,45 +132,44 @@ True
 ## Handling errors with lazy imports
 
 Deferring the loading of a module might also defer the occurrence of an exception.
-As a simple example, suppose you misspelled the name of a module:
+As a simple example, suppose you misspelled the name of a function:
 
 ```py
-lazy import jsom  # M instead of N
+lazy from json import load_json  # should just be `load`
 ```
 
 Since the module will be loaded lazily, you won't see the corresponding exception until the module is used.
 
-Suppose you use the module later:
+Suppose you use the function later:
 
 ```py
-lazy import jsom
+lazy from json import load_json
 
 # ---
 
-data = {}  # Some dictionary to write.
-with open("myfile.txt", "w") as f:
-    jsom.dump(f, data)
+with open("payload.json", "r") as f:
+    data = load_json(f)
 ```
 
-When Python tries to resolve the import `jsom`, it realises you made a mistake.
-Python only noticed it in the line `jsom.dump(...)` but the mistake comes from the line `lazy import jsom`, so Python shows both lines in the traceback:
+When Python tries to resolve the import, it realises you made a mistake.
+Python only noticed it in the line `load_json(...)` but the mistake comes from the line `lazy from json import load_json`, so Python shows both lines in the traceback:
 
 ```py
 Traceback (most recent call last):
-  File "lazy.py", line 1, in <module>
-    lazy import jsom
-ImportError: lazy import of 'jsom' raised an exception during resolution
+  File "json_import.py", line 1, in <module>
+    lazy from json import load_json
+ImportError: lazy import of 'json.load_json' raised an exception during resolution
 
 The above exception was the direct cause of the following exception:
 
 Traceback (most recent call last):
-  File "lazy.py", line 7, in <module>
-    jsom.dump(f, data)
-    ^^^^
-ModuleNotFoundError: No module named 'jsom'. Did you mean: 'json'?
+  File "json_import.py", line 6, in <module>
+    data = load_json(f)
+           ^^^^^^^^^
+ImportError: cannot import name 'load_json' from 'json'
 ```
 
-The bottom of the traceback presents the real error, which is that the module `jsom` doesn't exist.
+The bottom of the traceback presents the real error, which is that the module `json` doesn't have a function `load_json`.
 Immediately above, the `ImportError` shows you the lazy import that delayed the exception.
 
 ## Other considerations
