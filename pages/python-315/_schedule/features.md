@@ -7,7 +7,7 @@ class: offset-box
 | Topic | Link |
 | :- | :- |
 | Top 5 most exciting 3.15 features | [Read now](https://mathspp.com/blog/the-5-most-exciting-new-features-of-python-315) |
-| **Lazy imports** | [Read now](/blog/explicit-lazy-imports) |
+| **>> Lazy imports** | [Read now](/blog/explicit-lazy-imports) |
 | New built-in type `sentinel` | Tomorrow! |
 | New built-in type `frozendict` | Coming Oct 14 |
 | Unpacking inside comprehensions | Coming Oct 15 |
