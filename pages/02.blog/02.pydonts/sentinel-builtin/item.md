@@ -102,7 +102,7 @@ Then, the function will either return a value of type `V` (if it finds one) or `
 
 As another example of where sentinels could be used, consider the following code from the open source project [Textual](https://github.com/Textualize/textual/):
 
-````py
+```py
 class UnusedParameter:
     """Helper type for a parameter that isn't specified in a method call."""
 
@@ -124,18 +124,16 @@ class ProgressBar(Widget, can_focus=False):
         """Update the progress bar with the given options.
 
         Example:
-            ```py
             progress_bar.update(
                 total=200,  # Set new total to 200 steps.
                 progress=50,  # Set the progress to 50 (out of 200).
             )
-            ```
         """
 
         current_time = self._clock.time
         if not isinstance(total, UnusedParameter):
             ...
-````
+```
 
 The method `ProgressBar.update` updates the status of a progress bar.
 For example, calling `update(total=None)` changes the type of progress bar to be of an indeterminate type.
@@ -149,7 +147,7 @@ The workaround, before Python 3.15 introduced `sentinel`, was to create a dedica
 
 With Python 3.15 and the new built-in `sentinel`, the code becomes:
 
-````py
+```py
 NOTHING = sentinel("NOTHING")
 
 class ProgressBar(Widget, can_focus=False):
@@ -169,7 +167,7 @@ class ProgressBar(Widget, can_focus=False):
         current_time = self._clock.time
         if total is not NOTHING:
             ...
-````
+```
 
 ---
 

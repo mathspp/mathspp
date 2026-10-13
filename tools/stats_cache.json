@@ -6532,16 +6532,16 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/sentinel-builtin": {
-    "timestamp": 1791903983.6791365,
+    "timestamp": 1791904557.925498,
     "tags": [
       "python",
       "programming"
     ],
     "stats": {
       "articles": 1,
-      "code_snippets": 10,
-      "loc": 75,
-      "words": 665
+      "code_snippets": 9,
+      "loc": 79,
+      "words": 642
     }
   }
 }
