@@ -9,7 +9,7 @@ references:
 routes:
     aliases:
         - "/blog/til/144"
-slug: "sentinel-builtin"
+slug: "til-sentinel-builtin"
 taxonomy:
     category: [blogpost, til]
     tag:
