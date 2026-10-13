@@ -98,7 +98,7 @@ def find[V](iterable: Iterable[V], predicate: Callable[[V], bool]) -> V | NOTHIN
 The snippet above defines the function `find` as accepting an iterable of values of a given type `V`.
 Then, the function will either return a value of type `V` (if it finds one) or `NOTHING`, which is the sentinel.
 
-## Sentinels in code
+## Real-world example from Textual
 
 As another example of where sentinels could be used, consider the following code from the open source project [Textual](https://github.com/Textualize/textual/):
 
@@ -109,7 +109,7 @@ class UnusedParameter:
 UNUSED = UnusedParameter()
 """Sentinel for method signatures."""
 
-class ProgressBar(Widget, can_focus=False):
+class ProgressBar(Widget):
     """A progress bar widget."""
 
     ...
@@ -130,14 +130,13 @@ class ProgressBar(Widget, can_focus=False):
             )
         """
 
-        current_time = self._clock.time
         if not isinstance(total, UnusedParameter):
             ...
 ```
 
 The method `ProgressBar.update` updates the status of a progress bar.
-For example, calling `update(total=None)` changes the type of progress bar to be of an indeterminate type.
-Since `None` is a valid argument value, it can't be used as the default for the argument `total`.
+For example, calling `update(total=None)` changes the type of progress bar to be one of those that constantly update, showing that the UI isn't frozen.
+Since `None` is a valid argument value for `total`, it can't be used as the default.
 
 Since Textual is fully typed, using `object()` as the default value was also impossible.
 To use `object()`, the type of `total` would have to become `total: None | float | object`.
@@ -150,7 +149,7 @@ With Python 3.15 and the new built-in `sentinel`, the code becomes:
 ```py
 NOTHING = sentinel("NOTHING")
 
-class ProgressBar(Widget, can_focus=False):
+class ProgressBar(Widget):
     """A progress bar widget."""
 
     ...
@@ -164,12 +163,12 @@ class ProgressBar(Widget, can_focus=False):
     ) -> None:
         """Update the progress bar with the given options."""
 
-        current_time = self._clock.time
         if total is not NOTHING:
             ...
 ```
 
----
+This new version of the code is much more straightforward, since the intent is clear from the beginning.
+The code inside the method `update` itself also becomes cleaner, although that's not visible in the excerpt of code shared.
 
 ## Python 3.15 brings much more to the table
 
