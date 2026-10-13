@@ -1,9 +1,9 @@
 {
   "__all": {
     "articles": 458,
-    "code_snippets": 4323,
-    "loc": 41284,
-    "words": 500794
+    "code_snippets": 4324,
+    "loc": 41285,
+    "words": 500953
   },
   "bpci": {
     "articles": 10,
@@ -25,15 +25,15 @@
   },
   "programming": {
     "articles": 332,
-    "code_snippets": 4176,
-    "loc": 40001,
-    "words": 406201
+    "code_snippets": 4177,
+    "loc": 40002,
+    "words": 406360
   },
   "python": {
     "articles": 328,
-    "code_snippets": 4058,
-    "loc": 38910,
-    "words": 406273
+    "code_snippets": 4059,
+    "loc": 38911,
+    "words": 406432
   },
   "llms": {
     "articles": 11,

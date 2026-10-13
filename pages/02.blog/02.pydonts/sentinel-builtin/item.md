@@ -170,6 +170,26 @@ class ProgressBar(Widget):
 This new version of the code is much more straightforward, since the intent is clear from the beginning.
 The code inside the method `update` itself also becomes cleaner, although that's not visible in the excerpt of code shared.
 
+## Multiple sentinel values
+
+It is possible to create multiple sentinel values by calling the built-in `sentinel` repeatedly.
+In some contexts, this is necessary to distinguish between different placeholders in different contexts.
+
+If you're defining multiple placeholders, they should have different names.
+Sentinels with the same name will create confusion, since they're considered different by the `is` check while they look the same since they have the same name.
+
+```py
+print(sentinel("NOTHING") is sentinel("NOTHING"))  # False
+```
+
+The snippet above shows that it's possible to create two sentinels with the same name but they'll be considered different.
+If they're assigned to variables of the same name, in different contexts, this will likely generate confusion.
+
+## Prefer `None` where possible
+
+The new built-in `sentinel` was added to cover the cases where the built-in `None` can't be used as a placeholder.
+Thus, the current consensus is that you should still default to using `None` as a placeholder when that's possible, and reach for `sentinel` when `None` can't be used.
+
 ## Python 3.15 brings much more to the table
 
 From the two new built-ins `frozendict` and `sentinel`, to lazy imports, package startup configuration files, typing improvements, or more colour everywhere, Python 3.15 has a lot more to offer.
