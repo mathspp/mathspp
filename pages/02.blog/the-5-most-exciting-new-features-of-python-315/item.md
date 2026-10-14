@@ -107,7 +107,7 @@ You can [play with `frozendict` online here](https://mathspp.com/python-playgrou
 
 ## New built-in `sentinel`
 
-The new built-in `sentinel`, defined in [PEP 661](https://peps.python.org/pep-0661/), can be used to create named placeholder values that have that can't be mistaken for any of the appropriate values you want to accept.
+The new built-in `sentinel`, defined in [PEP 661](https://peps.python.org/pep-0661/), can be used to create named placeholder values that can't be mistaken for any of the other values you want to accept.
 
 You can create a new sentinel value by calling the built-in `sentinel` and passing it a name:
 
@@ -121,7 +121,7 @@ def find_and_return(haystack, predicate):
     return NOTHING
 ```
 
-The snippet above creates a sentinel called `NOT_FOUND` and uses it as the default return value of the function `find_and_return`.
+The snippet above creates a sentinel called `NOTHING` and uses it as the default return value of the function `find_and_return`.
 The sentinel can be checked for with `is` when the function is called:
 
 ```py

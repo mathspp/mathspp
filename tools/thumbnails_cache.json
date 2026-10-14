@@ -21,13 +21,13 @@
     "articles": 333,
     "code_snippets": 4197,
     "loc": 40119,
-    "words": 407467
+    "words": 407465
   },
   "python": {
     "articles": 329,
     "code_snippets": 4079,
     "loc": 39028,
-    "words": 407539
+    "words": 407537
   },
   "algorithms": {
     "articles": 28,
@@ -567,7 +567,7 @@
     "articles": 459,
     "code_snippets": 4344,
     "loc": 41402,
-    "words": 502060
+    "words": 502058
   },
   "fp": {
     "articles": 5,
