@@ -300,6 +300,17 @@ print(
 In comparisons between `frozendict` instances and mutable dictionaries, the mutability is disregarded.
 If the items match, regardless of order, the two mappings are considered equal.
 
+## Adoption guidelines for library maintainers
+
+If you're using Python 3.15+, prefer `frozendict` over `dict` always, except if you explicitly need to mutate the mapping you're creating.
+
+If you're using Python 3.14 or earlier, you can't use `frozendict` directly.
+But if you're using type hints, start using the protocol `collections.abc.Mapping` instead of `dict` in your functions.
+
+Many functions accept arguments of type `dict[K, V]` but they don't need to _mutate_ the argument dictionary.
+If your function doesn't need to mutate the dictionary, swap the type hint with `collections.abc.Mapping`.
+This means your code will be “forward-compatible” with users of Python 3.15+ and their type checkers won’t annoy them for using your code.
+
 ## Python 3.15 brings much more to the table
 
 From the two new built-ins `frozendict` and `sentinel`, to lazy imports, package startup configuration files, typing improvements, or more colour everywhere, Python 3.15 has a lot more to offer.
