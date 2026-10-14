@@ -1,6 +1,7 @@
 date: 22-08-2021
 metadata:
     author: Rodrigo Girão Serrão
+    description: "This problem explores what happens when you try to scramble a Rubik's cube systematically."
     og:image: https://mathspp.com/blog/problems/rubiks-cube-scrambling/thumbnail.png
     twitter:image: https://mathspp.com/blog/problems/rubiks-cube-scrambling/thumbnail.png
 process:
@@ -15,4 +16,5 @@ taxonomy:
       - group theory
       - logic
       - mathematics
+title: "Problem #043 – Rubik's cube scrambling"
 twig_first: true

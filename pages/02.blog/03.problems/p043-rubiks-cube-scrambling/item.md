@@ -1,9 +1,3 @@
----
-title: "Problem #043 – Rubik's cube scrambling"
-metadata:
-    description: "This problem explores what happens when you try to scramble a Rubik's cube systematically."
----
-
 If I scramble a Rubik's cube for long enough,
 will it solve itself?
 
@@ -42,13 +36,13 @@ a cube by repeating the same set of steps.
 First, here is an excerpt of the process, showing the set of steps I do repeatedly.
 If you look closely, you can see that I only do two movements:
 
-![](_rubiks_scrambling_slow.gif)
+![](_rubiks_scrambling_slow.webp)
 
 Now, here is a sped up version from start to finish.
 (It took me around 3 minutes total to get back to the beginning
 through repeated scrambling!)
 
-![](_rubiks_scrambling.gif)
+![](_rubiks_scrambling.webp)
 
 I started out with a solved cube and ended up with a solved cube.
 
