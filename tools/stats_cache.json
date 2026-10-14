@@ -1633,7 +1633,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/adding-stats-to-my-blog": {
-    "timestamp": 1791983757.5017803,
+    "timestamp": 1791984349.2255478,
     "tags": [
       "programming",
       "python",
@@ -2914,7 +2914,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/03.problems/p043-rubiks-cube-scrambling": {
-    "timestamp": 1791984009.0090623,
+    "timestamp": 1791984349.2000072,
     "tags": [
       "combinatorics",
       "group theory",
@@ -6532,7 +6532,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/sentinel-builtin": {
-    "timestamp": 1791905513.7472181,
+    "timestamp": 1791984800.8475287,
     "tags": [
       "python",
       "programming"
@@ -6542,6 +6542,19 @@
       "code_snippets": 10,
       "loc": 78,
       "words": 845
+    }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/frozendict-builtin": {
+    "timestamp": 1791988887.8700042,
+    "tags": [
+      "python",
+      "programming"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 20,
+      "loc": 117,
+      "words": 1107
     }
   }
 }

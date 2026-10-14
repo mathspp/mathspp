@@ -1,0 +1,62 @@
+date: 14-10-2026 14:29
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Learn how to use the frozendict built-in from Python 3.15 to create and manipulate immutable dictionaries."
+    og:image: "https://mathspp.com/blog/frozendict-builtin/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/frozendict-builtin/thumbnail.webp"
+references:
+    - "PEP 814 Add frozendict built-in type, <https://peps.python.org/pep-0814> [last consulted on 14-10-2026];"
+slug: "frozendict-builtin"
+taxonomy:
+    category:
+        - blogpost
+        - pydont
+    tag:
+        - python
+        - programming
+title: frozendict built-in
+
+# While the 3.15 campaign is ongoing:
+cta: "none"
+process:
+  twig: true
+cache_enable: false
+forms:
+    enroll: &enrollment_form
+        name: enroll
+
+        fields:
+            honeypot:
+              label: Honeypot
+              type: honeypot
+
+            email:
+              display_label: false
+              autocomplete: true
+              placeholder: Your best email address
+              type: email
+              validate:
+                required: true
+
+            g-recaptcha-response:
+              label: Captcha
+              type: captcha
+              recaptcha_not_validated: 'Captcha not valid!'
+
+        buttons:
+            submit:
+              type: submit
+              value: "Get the Python 3.15 emails 🐍🚀"
+
+        process:
+            captcha: true
+            newsletter-subscriber:
+              publication: insider
+              utm_source: "python-315-campaign"
+              automations:
+                - "aut_68fbf21d-5f08-41d8-a9eb-7e960ce07ac1"
+            display: "/python-315/you-are-in"
+
+    enroll_bottom:
+        <<: *enrollment_form
+        name: enroll_bottom

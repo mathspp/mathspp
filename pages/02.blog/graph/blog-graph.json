@@ -7882,6 +7882,22 @@
     },
     {
       "data": {
+        "id": "tag:article:frozendict-builtin->tag:programming",
+        "source": "article:frozendict-builtin",
+        "target": "tag:programming",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:frozendict-builtin->tag:python",
+        "source": "article:frozendict-builtin",
+        "target": "tag:python",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
         "id": "tag:article:full-slice->tag:programming",
         "source": "article:full-slice",
         "target": "tag:programming",
@@ -14481,7 +14497,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-14T13:20:18+00:00",
+  "generated_at": "2026-10-14T14:42:06+00:00",
   "nodes": [
     {
       "data": {
@@ -14784,6 +14800,27 @@
     },
     {
       "data": {
+        "date": "14-10-2026 14:29",
+        "degree": 2,
+        "height": 26,
+        "id": "article:frozendict-builtin",
+        "internal_link_degree": 0,
+        "label": "frozendict built-in",
+        "size": 26,
+        "slug": "frozendict-builtin",
+        "tag_degree": 2,
+        "tags": [
+          "python",
+          "programming"
+        ],
+        "title": "frozendict built-in",
+        "type": "article",
+        "url": "/blog/pydonts/frozendict-builtin",
+        "width": 38
+      }
+    },
+    {
+      "data": {
         "date": "06-10-2025 09:00",
         "degree": 13,
         "height": 38,
@@ -15045,7 +15082,7 @@
         "height": 26,
         "id": "article:sentinel-builtin",
         "internal_link_degree": 0,
-        "label": "Sentinel built-in",
+        "label": "sentinel built-in",
         "size": 26,
         "slug": "sentinel-builtin",
         "tag_degree": 2,
@@ -15053,7 +15090,7 @@
           "python",
           "programming"
         ],
-        "title": "Sentinel built-in",
+        "title": "sentinel built-in",
         "type": "article",
         "url": "/blog/pydonts/sentinel-builtin",
         "width": 38
@@ -25609,14 +25646,14 @@
     },
     {
       "data": {
-        "degree": 332,
+        "degree": 333,
         "height": 78,
         "id": "tag:programming",
         "internal_link_degree": 0,
         "label": "programming",
         "size": 78,
         "tag": "programming",
-        "tag_degree": 332,
+        "tag_degree": 333,
         "type": "tag",
         "url": "/blog/tags/programming",
         "width": 78
@@ -25669,14 +25706,14 @@
     },
     {
       "data": {
-        "degree": 328,
+        "degree": 329,
         "height": 78,
         "id": "tag:python",
         "internal_link_degree": 0,
         "label": "python",
         "size": 78,
         "tag": "python",
-        "tag_degree": 328,
+        "tag_degree": 329,
         "type": "tag",
         "url": "/blog/tags/python",
         "width": 78
@@ -26045,9 +26082,9 @@
   ],
   "site": "https://mathspp.com",
   "stats": {
-    "articles": 457,
+    "articles": 458,
     "internal_links": 403,
-    "tag_edges": 1407,
+    "tag_edges": 1409,
     "tags": 98
   }
 }
