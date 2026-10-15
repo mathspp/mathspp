@@ -9,8 +9,8 @@ class: offset-box
 | Top 5 most exciting 3.15 features | [Read now](https://mathspp.com/blog/the-5-most-exciting-new-features-of-python-315) |
 | Lazy imports | [Read now](/blog/explicit-lazy-imports) |
 | New built-in type `sentinel` | [Read now](/blog/pydonts/sentinel-builtin) |
-| **>> New built-in type `frozendict`** | [Read now](/blog/pydonts/frozendict-builtin) |
-| Unpacking inside comprehensions | Tomorrow! |
+| New built-in type `frozendict` | [Read now](/blog/pydonts/frozendict-builtin) |
+| **>> Unpacking inside comprehensions** | Coming soon... |
 | Startup config files | Coming Oct 16 |
 | Python 3.15 DX improvements | Coming Oct 19 |
 | Tachyon: new sampling profiler | Coming Oct 20 |
