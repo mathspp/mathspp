@@ -6556,5 +6556,18 @@
       "loc": 117,
       "words": 1218
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/unpacking-inside-comprehensions": {
+    "timestamp": 1792145669.9105918,
+    "tags": [
+      "python",
+      "programming"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 18,
+      "loc": 82,
+      "words": 716
+    }
   }
 }

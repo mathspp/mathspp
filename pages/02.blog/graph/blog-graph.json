@@ -2970,6 +2970,14 @@
     },
     {
       "data": {
+        "id": "internal-link:article:unpacking-inside-comprehensions->article:list-comprehensions-101",
+        "source": "article:unpacking-inside-comprehensions",
+        "target": "article:list-comprehensions-101",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
         "id": "internal-link:article:unpacking-kwargs-with-custom-objects->article:dunder-methods",
         "source": "article:unpacking-kwargs-with-custom-objects",
         "target": "article:dunder-methods",
@@ -13602,6 +13610,22 @@
     },
     {
       "data": {
+        "id": "tag:article:unpacking-inside-comprehensions->tag:programming",
+        "source": "article:unpacking-inside-comprehensions",
+        "target": "tag:programming",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:unpacking-inside-comprehensions->tag:python",
+        "source": "article:unpacking-inside-comprehensions",
+        "target": "tag:python",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
         "id": "tag:article:unpacking-kwargs-with-custom-objects->tag:dunder methods",
         "source": "article:unpacking-kwargs-with-custom-objects",
         "target": "tag:dunder methods",
@@ -14497,7 +14521,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-14T18:20:37+00:00",
+  "generated_at": "2026-10-16T10:14:42+00:00",
   "nodes": [
     {
       "data": {
@@ -14886,10 +14910,10 @@
     {
       "data": {
         "date": "24-09-2021 7:00pm",
-        "degree": 29,
+        "degree": 30,
         "height": 48,
         "id": "article:list-comprehensions-101",
-        "internal_link_degree": 27,
+        "internal_link_degree": 28,
         "label": "List comprehensions 101 | Pydon't \ud83d\udc0d",
         "size": 48,
         "slug": "list-comprehensions-101",
@@ -24121,6 +24145,27 @@
     },
     {
       "data": {
+        "date": "15-10-2026 17:14",
+        "degree": 3,
+        "height": 28,
+        "id": "article:unpacking-inside-comprehensions",
+        "internal_link_degree": 1,
+        "label": "Unpacking inside comprehensions",
+        "size": 28,
+        "slug": "unpacking-inside-comprehensions",
+        "tag_degree": 2,
+        "tags": [
+          "python",
+          "programming"
+        ],
+        "title": "Unpacking inside comprehensions",
+        "type": "article",
+        "url": "/blog/unpacking-inside-comprehensions",
+        "width": 41
+      }
+    },
+    {
+      "data": {
         "date": "22-01-2025 19:50",
         "degree": 8,
         "height": 34,
@@ -25646,14 +25691,14 @@
     },
     {
       "data": {
-        "degree": 333,
+        "degree": 334,
         "height": 78,
         "id": "tag:programming",
         "internal_link_degree": 0,
         "label": "programming",
         "size": 78,
         "tag": "programming",
-        "tag_degree": 333,
+        "tag_degree": 334,
         "type": "tag",
         "url": "/blog/tags/programming",
         "width": 78
@@ -25706,14 +25751,14 @@
     },
     {
       "data": {
-        "degree": 329,
+        "degree": 330,
         "height": 78,
         "id": "tag:python",
         "internal_link_degree": 0,
         "label": "python",
         "size": 78,
         "tag": "python",
-        "tag_degree": 329,
+        "tag_degree": 330,
         "type": "tag",
         "url": "/blog/tags/python",
         "width": 78
@@ -26082,9 +26127,9 @@
   ],
   "site": "https://mathspp.com",
   "stats": {
-    "articles": 458,
-    "internal_links": 403,
-    "tag_edges": 1409,
+    "articles": 459,
+    "internal_links": 404,
+    "tag_edges": 1411,
     "tags": 98
   }
 }
