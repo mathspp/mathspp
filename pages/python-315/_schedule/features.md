@@ -10,8 +10,8 @@ class: offset-box
 | Lazy imports | [Read now](/blog/explicit-lazy-imports) |
 | New built-in type `sentinel` | [Read now](/blog/pydonts/sentinel-builtin) |
 | New built-in type `frozendict` | [Read now](/blog/pydonts/frozendict-builtin) |
-| **>> Unpacking inside comprehensions** | Coming soon... |
-| Startup config files | Coming Oct 16 |
+| Unpacking inside comprehensions | [Read now](/blog/unpacking-inside-comprehensions) |
+| **>> Startup config files** | Soon... |
 | Python 3.15 DX improvements | Coming Oct 19 |
 | Tachyon: new sampling profiler | Coming Oct 20 |
 | New package `profiling` | Coming Oct 21 |
