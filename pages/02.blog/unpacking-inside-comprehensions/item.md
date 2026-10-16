@@ -2,8 +2,7 @@ Learn how to use the unpacking operator inside list comprehensions.
 
 ===
 
-[List comprehensions](/blog/pydonts/list-comprehensions-101) got upgraded in Python 3.15.
-Starting with Python 3.15, you can use the asterisk `*` to unpack inside list comprehensions:
+Starting with Python 3.15, you can use the asterisk `*` to unpack inside [list comprehensions](/blog/pydonts/list-comprehensions-101):
 
 ```py
 nested = [[0, 1, 2], [3, 4], [], [5, 6, 7]]
@@ -93,7 +92,7 @@ for word in words:
 print(characters)  # {'e', 'r', 'h', 'o', 'l', 'w', 'd'}
 ```
 
-Using `set.update` inside a `for` loop is aking to using `list.extend` inside a `for` loop, and it's a cue that you may want to use unpacking inside a set comprehension:
+Using `set.update` inside a `for` loop is akin to using `list.extend` inside a `for` loop, and it's a cue that you may want to use unpacking inside a set comprehension:
 
 ```py
 words = ["hello", "world"]
@@ -135,7 +134,7 @@ This section will cover a few examples from the standard library where you could
 
 ### Ignoring names in `shutil`
 
-First, the module `shutil` has a function that creates a list of ignored names out of a series of patterns:
+The module `shutil` has a function that creates a list of ignored names out of a series of patterns:
 
 ```py
 # shutil.py
@@ -157,7 +156,17 @@ return {
 
 ### Computing slots in `dataclasses`
 
-Unpacking inside comprehensions can be seen as a form of flattening, which is an operation that is also achievable by `itertools.chain.from_iterable`:
+The module `dataclasses` has a snippet of code that computes slots that a dataclass will inherit:
+
+```py
+inherited_slots = set(
+    itertools.chain.from_iterable(map(_get_slots, cls.__mro__[1:-1]))
+)
+```
+
+The usage of `itertools.chain.from_iterable` allows flattening the iterable of slots produced by `map(_get_slots, cls.__mro__[1:-1])`, and that's then wrapped in `set` to build a set of all the inherited slots.
+
+To help understand the snippet above, the code below shows how `chain.from_iterable` can be used to flatten a nested iterable:
 
 ```py
 from itertools import chain
@@ -167,9 +176,8 @@ flattened = list(chain.from_iterable(nested))
 print(flattened)  # [0, 1, 2, 3, 4, 5, 6, 7]
 ```
 
-The advantage of using `chain.from_iterable` is that it's lazy, so if you only need to flatten a structure to iterate over its nested elements, it's best to use `chain.from_iterable`.
-
-However, in scenarios like the one below, the call to `chain.from_iterable` is just an intermediate step:
+The advantage of using `chain.from_iterable` is that it's lazy, so if you need to iterate over the elements of nested iterables, it's best to use `chain.from_iterable`.
+However, in scenarios like the one in `dataclasses`, the call to `chain.from_iterable` is just an intermediate step, since you take the chain and transform it to a set:
 
 ```py
 inherited_slots = set(
@@ -184,20 +192,11 @@ Since the laziness of `chain.from_iterable` is not being leveraged here, you can
 inherited_slots = {*_get_slots(c) for c in cls.__mro__[1:-1]}
 ```
 
+The resulting code is more elegant since it's more straightforward.
+
 ## Unpacking inside generator expressions
 
 Generator expressions also support unpacking inside them.
-For example, `chain.from_iterable` can be replaced with a generator expression:
-
-```py
-# Before:
-from itertools import chain
-chain.from_iterable(_get_slots, cls.__mro__[1:-1])  # From `dataclasses.py`
-
-# After:
-(*_get_slots(c) for c in cls.__mro__[1:-1])
-```
-
 In general, the generator expression
 
 ```py
@@ -214,6 +213,33 @@ def generator(iterable):
 
 g = generator()
 ```
+
+As another example, in Python 3.14 and earlier, `chain.from_iterable` was the most convenient way to flatten an iterable lazily.
+Now, `chain.from_iterable` can be replaced with a generator expression with unpacking:
+
+```py
+# Before:
+from itertools import chain
+chain.from_iterable(map(_get_slots, cls.__mro__[1:-1]))  # From `dataclasses.py`
+
+# After:
+(*_get_slots(c) for c in cls.__mro__[1:-1])
+```
+
+The snippet above shows a concrete example based on the `dataclasses` snippet, but ignoring the final computed set.
+In general, the call
+
+```py
+chain.from_iterable(iterable)
+```
+
+Can become
+
+```py
+(*sub for sub in iterable)
+```
+
+Using the generator expression is particularly useful if the iterable is a more complex expression, as is the case with `map(...)` in the previous example.
 
 ## Python 3.15 brings much more to the table
 
