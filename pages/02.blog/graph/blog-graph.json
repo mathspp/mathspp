@@ -12922,6 +12922,22 @@
     },
     {
       "data": {
+        "id": "tag:article:startup-configuration-files->tag:programming",
+        "source": "article:startup-configuration-files",
+        "target": "tag:programming",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:startup-configuration-files->tag:python",
+        "source": "article:startup-configuration-files",
+        "target": "tag:python",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
         "id": "tag:article:str-and-repr->tag:programming",
         "source": "article:str-and-repr",
         "target": "tag:programming",
@@ -14521,7 +14537,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-16T10:25:31+00:00",
+  "generated_at": "2026-10-19T21:26:29+00:00",
   "nodes": [
     {
       "data": {
@@ -23943,6 +23959,27 @@
     },
     {
       "data": {
+        "date": "19-10-2026 21:19",
+        "degree": 2,
+        "height": 26,
+        "id": "article:startup-configuration-files",
+        "internal_link_degree": 0,
+        "label": "Startup configuration files",
+        "size": 26,
+        "slug": "startup-configuration-files",
+        "tag_degree": 2,
+        "tags": [
+          "python",
+          "programming"
+        ],
+        "title": "Startup configuration files",
+        "type": "article",
+        "url": "/blog/startup-configuration-files",
+        "width": 38
+      }
+    },
+    {
+      "data": {
         "date": "23-03-2023",
         "degree": 4,
         "height": 29,
@@ -25691,14 +25728,14 @@
     },
     {
       "data": {
-        "degree": 334,
+        "degree": 335,
         "height": 78,
         "id": "tag:programming",
         "internal_link_degree": 0,
         "label": "programming",
         "size": 78,
         "tag": "programming",
-        "tag_degree": 334,
+        "tag_degree": 335,
         "type": "tag",
         "url": "/blog/tags/programming",
         "width": 78
@@ -25751,14 +25788,14 @@
     },
     {
       "data": {
-        "degree": 330,
+        "degree": 331,
         "height": 78,
         "id": "tag:python",
         "internal_link_degree": 0,
         "label": "python",
         "size": 78,
         "tag": "python",
-        "tag_degree": 330,
+        "tag_degree": 331,
         "type": "tag",
         "url": "/blog/tags/python",
         "width": 78
@@ -26127,9 +26164,9 @@
   ],
   "site": "https://mathspp.com",
   "stats": {
-    "articles": 459,
+    "articles": 460,
     "internal_links": 404,
-    "tag_edges": 1411,
+    "tag_edges": 1413,
     "tags": 98
   }
 }

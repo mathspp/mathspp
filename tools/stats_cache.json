@@ -6569,5 +6569,18 @@
       "loc": 87,
       "words": 840
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/startup-configuration-files": {
+    "timestamp": 1792445137.6068363,
+    "tags": [
+      "python",
+      "programming"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 1,
+      "loc": 1,
+      "words": 346
+    }
   }
 }
