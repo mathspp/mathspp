@@ -6558,7 +6558,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/unpacking-inside-comprehensions": {
-    "timestamp": 1792146323.1280935,
+    "timestamp": 1792515472.3449357,
     "tags": [
       "python",
       "programming"
@@ -6581,6 +6581,20 @@
       "code_snippets": 1,
       "loc": 1,
       "words": 346
+    }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/dx-improvements-in-python-315": {
+    "timestamp": 1792521470.4174755,
+    "tags": [
+      "python",
+      "programming",
+      "productivity"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 9,
+      "loc": 47,
+      "words": 994
     }
   }
 }

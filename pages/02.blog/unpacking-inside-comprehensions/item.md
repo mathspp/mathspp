@@ -250,4 +250,3 @@ For 15 days, I'll explain a new Python 3.15 feature every day.
 Get the free 3.15 email series:
 
 {% include "forms/form.html.twig" with {form: forms("enroll_bottom")} %}
-

@@ -1,9 +1,9 @@
 {
   "__all": {
-    "articles": 461,
-    "code_snippets": 4366,
-    "loc": 41490,
-    "words": 503355
+    "articles": 462,
+    "code_snippets": 4375,
+    "loc": 41537,
+    "words": 504349
   },
   "bpci": {
     "articles": 10,
@@ -24,16 +24,16 @@
     "words": 35332
   },
   "programming": {
-    "articles": 335,
-    "code_snippets": 4219,
-    "loc": 40207,
-    "words": 408762
+    "articles": 336,
+    "code_snippets": 4228,
+    "loc": 40254,
+    "words": 409756
   },
   "python": {
-    "articles": 331,
-    "code_snippets": 4101,
-    "loc": 39116,
-    "words": 408834
+    "articles": 332,
+    "code_snippets": 4110,
+    "loc": 39163,
+    "words": 409828
   },
   "llms": {
     "articles": 11,
@@ -112,6 +112,12 @@
     "code_snippets": 115,
     "loc": 2600,
     "words": 13722
+  },
+  "productivity": {
+    "articles": 34,
+    "code_snippets": 181,
+    "loc": 1748,
+    "words": 19708
   },
   "chess": {
     "articles": 6,
@@ -208,12 +214,6 @@
     "code_snippets": 0,
     "loc": 0,
     "words": 6155
-  },
-  "productivity": {
-    "articles": 33,
-    "code_snippets": 172,
-    "loc": 1701,
-    "words": 18714
   },
   "regex": {
     "articles": 8,

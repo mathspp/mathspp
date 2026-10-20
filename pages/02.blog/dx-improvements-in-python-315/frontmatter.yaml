@@ -1,0 +1,71 @@
+date: 20-10-2026 17:56
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Learn about the top 3 developer experience improvements from Python 3.15."
+    og:image: "https://mathspp.com/blog/dx-improvements-in-python-315/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/dx-improvements-in-python-315/thumbnail.webp"
+references:
+    - "PEP 686 Make UTF-8 mode default, <https://peps.python.org/pep-0686/> [last accessed 20-10-2026];"
+    - "CPython GitHub pull request 146407, <https://github.com/python/cpython/pull/146407> [last accessed 20-10-2026];"
+    - "CPython GitHub pull request 133382, <https://github.com/python/cpython/pull/133382> [last accessed 20-10-2026];"
+    - "CPython GitHub issue 146171, <https://github.com/python/cpython/issues/146171> [last accessed 20-10-2026];"
+    - "What's new in Python 3.15, <https://docs.python.org/3/whatsnew/3.15.html> [last accessed 20-10-2026];"
+    - "What's new in Python 3.14, <https://docs.python.org/3/whatsnew/3.14.html> [last accessed 20-10-2026];"
+    - "What's new in Python 3.13, <https://docs.python.org/3/whatsnew/3.13.html> [last accessed 20-10-2026];"
+    - "What's new in Python 3.12, <https://docs.python.org/3/whatsnew/3.12.html> [last accessed 20-10-2026];"
+    - "What's new in Python 3.11, <https://docs.python.org/3/whatsnew/3.11.html> [last accessed 20-10-2026];"
+    - "What's new in Python 3.10, <https://docs.python.org/3/whatsnew/3.10.html> [last accessed 20-10-2026];"
+slug: "dx-improvements-in-python-315"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - python
+        - programming
+        - productivity
+title: DX improvements in Python 3.15
+
+# While the 3.15 campaign is ongoing:
+cta: "none"
+process:
+  twig: true
+cache_enable: false
+forms:
+    enroll: &enrollment_form
+        name: enroll
+
+        fields:
+            honeypot:
+              label: Honeypot
+              type: honeypot
+
+            email:
+              display_label: false
+              autocomplete: true
+              placeholder: Your best email address
+              type: email
+              validate:
+                required: true
+
+            g-recaptcha-response:
+              label: Captcha
+              type: captcha
+              recaptcha_not_validated: 'Captcha not valid!'
+
+        buttons:
+            submit:
+              type: submit
+              value: "Get the Python 3.15 emails 🐍🚀"
+
+        process:
+            captcha: true
+            newsletter-subscriber:
+              publication: insider
+              utm_source: "python-315-campaign"
+              automations:
+                - "aut_68fbf21d-5f08-41d8-a9eb-7e960ce07ac1"
+            display: "/python-315/you-are-in"
+
+    enroll_bottom:
+        <<: *enrollment_form
+        name: enroll_bottom

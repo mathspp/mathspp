@@ -16,8 +16,8 @@ metadata:
     author: Rodrigo Girão Serrão
     description: "All of the mathspp blog articles about Productivity."
     og:description: "All of the mathspp blog articles about Productivity."
-    og:image: "https://mathspp.com/blog/tags/Productivity/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/Productivity/thumbnail.webp"
+    og:image: "https://mathspp.com/blog/tags/productivity/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/productivity/thumbnail.webp"
 title: "Productivity blog articles"
 ---
 
@@ -28,9 +28,9 @@ title: "Productivity blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">33</th>
-            <th style="text-align: center;">18,714</th>
-            <th style="text-align: center;">1,701</th>
+            <th style="text-align: center;">34</th>
+            <th style="text-align: center;">19,708</th>
+            <th style="text-align: center;">1,748</th>
         </tr>
     </thead>
     <tbody>

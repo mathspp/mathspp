@@ -1282,6 +1282,30 @@
     },
     {
       "data": {
+        "id": "internal-link:article:dx-improvements-in-python-315->article:frozendict-builtin",
+        "source": "article:dx-improvements-in-python-315",
+        "target": "article:frozendict-builtin",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:dx-improvements-in-python-315->article:functions-a-complete-reference",
+        "source": "article:dx-improvements-in-python-315",
+        "target": "article:functions-a-complete-reference",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:dx-improvements-in-python-315->article:set-and-frozenset",
+        "source": "article:dx-improvements-in-python-315",
+        "target": "article:set-and-frozenset",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
         "id": "internal-link:article:eafp-and-lbyl-coding-styles->article:pydont-manifesto",
         "source": "article:eafp-and-lbyl-coding-styles",
         "target": "article:pydont-manifesto",
@@ -7348,6 +7372,30 @@
       "data": {
         "id": "tag:article:dunder-methods->tag:python",
         "source": "article:dunder-methods",
+        "target": "tag:python",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:dx-improvements-in-python-315->tag:productivity",
+        "source": "article:dx-improvements-in-python-315",
+        "target": "tag:productivity",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:dx-improvements-in-python-315->tag:programming",
+        "source": "article:dx-improvements-in-python-315",
+        "target": "tag:programming",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:dx-improvements-in-python-315->tag:python",
+        "source": "article:dx-improvements-in-python-315",
         "target": "tag:python",
         "type": "tag"
       }
@@ -14537,7 +14585,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-19T21:26:29+00:00",
+  "generated_at": "2026-10-20T18:38:11+00:00",
   "nodes": [
     {
       "data": {
@@ -14841,12 +14889,12 @@
     {
       "data": {
         "date": "14-10-2026 14:29",
-        "degree": 2,
-        "height": 26,
+        "degree": 3,
+        "height": 28,
         "id": "article:frozendict-builtin",
-        "internal_link_degree": 0,
+        "internal_link_degree": 1,
         "label": "frozendict built-in",
-        "size": 26,
+        "size": 28,
         "slug": "frozendict-builtin",
         "tag_degree": 2,
         "tags": [
@@ -14856,18 +14904,18 @@
         "title": "frozendict built-in",
         "type": "article",
         "url": "/blog/pydonts/frozendict-builtin",
-        "width": 38
+        "width": 41
       }
     },
     {
       "data": {
         "date": "06-10-2025 09:00",
-        "degree": 13,
-        "height": 38,
+        "degree": 14,
+        "height": 39,
         "id": "article:functions-a-complete-reference",
-        "internal_link_degree": 10,
+        "internal_link_degree": 11,
         "label": "Functions: a complete reference | Pydon't \ud83d\udc0d",
-        "size": 38,
+        "size": 39,
         "slug": "functions-a-complete-reference",
         "tag_degree": 3,
         "tags": [
@@ -14878,7 +14926,7 @@
         "title": "Functions: a complete reference | Pydon't \ud83d\udc0d",
         "type": "article",
         "url": "/blog/pydonts/functions-a-complete-reference",
-        "width": 55
+        "width": 57
       }
     },
     {
@@ -15160,12 +15208,12 @@
     {
       "data": {
         "date": "14-09-2021",
-        "degree": 6,
-        "height": 31,
+        "degree": 7,
+        "height": 33,
         "id": "article:set-and-frozenset",
-        "internal_link_degree": 4,
+        "internal_link_degree": 5,
         "label": "set and frozenset | Pydon't \ud83d\udc0d",
-        "size": 31,
+        "size": 33,
         "slug": "set-and-frozenset",
         "tag_degree": 2,
         "tags": [
@@ -15175,7 +15223,7 @@
         "title": "set and frozenset | Pydon't \ud83d\udc0d",
         "type": "article",
         "url": "/blog/pydonts/set-and-frozenset",
-        "width": 45
+        "width": 48
       }
     },
     {
@@ -21940,6 +21988,28 @@
     },
     {
       "data": {
+        "date": "20-10-2026 17:56",
+        "degree": 6,
+        "height": 31,
+        "id": "article:dx-improvements-in-python-315",
+        "internal_link_degree": 3,
+        "label": "DX improvements in Python 3.15",
+        "size": 31,
+        "slug": "dx-improvements-in-python-315",
+        "tag_degree": 3,
+        "tags": [
+          "python",
+          "programming",
+          "productivity"
+        ],
+        "title": "DX improvements in Python 3.15",
+        "type": "article",
+        "url": "/blog/dx-improvements-in-python-315",
+        "width": 45
+      }
+    },
+    {
+      "data": {
         "date": "09-01-2024",
         "degree": 5,
         "height": 30,
@@ -25713,14 +25783,14 @@
     },
     {
       "data": {
-        "degree": 33,
+        "degree": 34,
         "height": 50,
         "id": "tag:productivity",
         "internal_link_degree": 0,
         "label": "productivity",
         "size": 50,
         "tag": "productivity",
-        "tag_degree": 33,
+        "tag_degree": 34,
         "type": "tag",
         "url": "/blog/tags/productivity",
         "width": 50
@@ -25728,14 +25798,14 @@
     },
     {
       "data": {
-        "degree": 335,
+        "degree": 336,
         "height": 78,
         "id": "tag:programming",
         "internal_link_degree": 0,
         "label": "programming",
         "size": 78,
         "tag": "programming",
-        "tag_degree": 335,
+        "tag_degree": 336,
         "type": "tag",
         "url": "/blog/tags/programming",
         "width": 78
@@ -25788,14 +25858,14 @@
     },
     {
       "data": {
-        "degree": 331,
+        "degree": 332,
         "height": 78,
         "id": "tag:python",
         "internal_link_degree": 0,
         "label": "python",
         "size": 78,
         "tag": "python",
-        "tag_degree": 331,
+        "tag_degree": 332,
         "type": "tag",
         "url": "/blog/tags/python",
         "width": 78
@@ -26164,9 +26234,9 @@
   ],
   "site": "https://mathspp.com",
   "stats": {
-    "articles": 460,
-    "internal_links": 404,
-    "tag_edges": 1413,
+    "articles": 461,
+    "internal_links": 407,
+    "tag_edges": 1416,
     "tags": 98
   }
 }
