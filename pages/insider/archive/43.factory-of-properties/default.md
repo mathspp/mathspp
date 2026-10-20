@@ -2,7 +2,7 @@
 date: 20-10-2026 12:22
 metadata:
     author: Rodrigo Girão Serrão
-    description: "Learn the basics of descriptors using an analogy with a factory of properties.""
+    description: "Learn the basics of descriptors using an analogy with a factory of properties."
     og:image: "https://mathspp.com/insider/archive/factory-of-properties/thumbnail.webp"
     twitter:image: "https://mathspp.com/insider/archive/factory-of-properties/thumbnail.webp"
 title: "Factory of properties"
