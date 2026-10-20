@@ -16,7 +16,8 @@ cache_enable: false
 
 !!! This issue explores one piece of a bigger puzzle. Read [Why OOP exists](/blog/why-oop-exists) for the complete, step-by-step journey from the core ideas of OOP to Python classes, objects, methods, `self`, and `__init__`.
 
- > This is a past issue of the [mathspp insider 🐍🚀](/insider) newsletter. [Subscribe to the mathspp insider 🐍🚀](/insider) to get weekly Python deep dives like this one on your inbox!
+ > This is a past issue of the [mathspp insider 🐍🚀](/insider) newsletter.
+ > [Subscribe to the mathspp insider 🐍🚀](/insider) to get weekly Python deep dives like this one on your inbox!
 
 ## Your class `Author`
 
