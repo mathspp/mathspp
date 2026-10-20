@@ -16,7 +16,8 @@ cache_enable: false
 
 !!! This issue explores one piece of a bigger puzzle. Read [Why OOP exists](/blog/why-oop-exists) for the complete, step-by-step journey from the core ideas of OOP to Python classes, objects, methods, and `self`.
 
- > This is a past issue of the [mathspp insider 🐍🚀](/insider) newsletter. [Subscribe to the mathspp insider 🐍🚀](/insider) to get weekly Python deep dives like this one on your inbox!
+ > This is a past issue of the [mathspp insider 🐍🚀](/insider) newsletter.
+ > [Subscribe to the mathspp insider 🐍🚀](/insider) to get weekly Python deep dives like this one on your inbox!
 
 In past weeks you learned [why OOP exists](https://mathspp.com/insider/archive/why-oop-exists), that [OOP code revolves around objects](https://mathspp.com/insider/archive/objects-in-oop) (hence the name), and that [using the keyword `class` creates a namespace](https://mathspp.com/insider/archive/classes-create-namespaces).
 
