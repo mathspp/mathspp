@@ -12,8 +12,8 @@ class: offset-box
 | New built-in type `frozendict` | [Read now](/blog/pydonts/frozendict-builtin) |
 | Unpacking inside comprehensions | [Read now](/blog/unpacking-inside-comprehensions) |
 | Startup config files | [Read now](/blog/startup-configuration-files) |
-| **>> Python 3.15 DX improvements** | [Soon...] |
-| Tachyon: new sampling profiler | Coming Oct 20 |
+| Python 3.15 DX improvements | [Read now](/blog/dx-improvements-in-python-315) |
+| **>> Tachyon: new sampling profiler** | Soon... |
 | New package `profiling` | Coming Oct 21 |
 | `TypedDict` with extra items | Coming Oct 22 |
 | Typing improvements in 3.15 | Coming Oct 23 |
