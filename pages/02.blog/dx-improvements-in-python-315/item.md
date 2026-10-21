@@ -155,7 +155,7 @@ The image above shows the result of running `python --help`, and the modules `ti
 The colour makes it easier to read the output of each tool.
 
 Another thing to keep in mind is that the module `argparse` from the standard library, that allows creating CLIs, also supports colour.
-This means that your own CLIs can be coloured if they're built with `argparse`.
+This means that your own CLI's `--help` command can be coloured if it's built with `argparse`.
 
 ## UTF-8 is now the default file encoding
 
