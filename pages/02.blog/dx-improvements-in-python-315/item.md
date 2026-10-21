@@ -149,12 +149,12 @@ In Python 3.13, with the changes to the Python REPL, folks started using more co
 In Python 3.14, syntax highlighting was added to the REPL itself and to some of the CLIs from the standard library...
 And Python 3.15 adds even more colour:
 
-![Screenshot of some terminals showing coloured CLI output in Python 3.15 below the black and white counterparts from earlier Python versions.](_colours.webp "Coloured CLI output")
+![Screenshot of some terminals showing coloured CLI output in Python 3.15](_colours.webp "Coloured CLI output")
 
-The image above shows the result of running `--help` on three Python CLIs before 3.15 and on 3.15.
-The colour helps distinguish arguments, options, flags, default values, and more.
+The image above shows the result of running `python --help`, and the modules `timeit`, `pickletools`, and `tokenize`.
+The colour makes it easier to read the output of each tool.
 
-The key point is that the module `argparse` from the standard library, that allows creating CLIs, now supports colour.
+Another thing to keep in mind is that the module `argparse` from the standard library, that allows creating CLIs, also supports colour.
 This means that your own CLIs can be coloured if they're built with `argparse`.
 
 ## UTF-8 is now the default file encoding

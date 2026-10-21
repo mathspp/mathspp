@@ -29,7 +29,7 @@ title: "Productivity blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">34</th>
-            <th style="text-align: center;">19,708</th>
+            <th style="text-align: center;">19,701</th>
             <th style="text-align: center;">1,748</th>
         </tr>
     </thead>
