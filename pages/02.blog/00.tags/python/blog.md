@@ -29,7 +29,7 @@ title: "Python blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">333</th>
-            <th style="text-align: center;">411,152</th>
+            <th style="text-align: center;">411,122</th>
             <th style="text-align: center;">39,198</th>
         </tr>
     </thead>
