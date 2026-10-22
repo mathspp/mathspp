@@ -13,8 +13,8 @@ class: offset-box
 | Unpacking inside comprehensions | [Read now](/blog/unpacking-inside-comprehensions) |
 | Startup config files | [Read now](/blog/startup-configuration-files) |
 | Python 3.15 DX improvements | [Read now](/blog/dx-improvements-in-python-315) |
-| **>> Tachyon: new sampling profiler** | Soon... |
-| New package `profiling` | Coming Oct 21 |
+| Tachyon: new sampling profiler | [Read now](/blog/tachyon-sampling-profiling-in-python) |
+| **>> New package `profiling`** | Up next! |
 | `TypedDict` with extra items | Coming Oct 22 |
 | Typing improvements in 3.15 | Coming Oct 23 |
 | Standard library niceties | Coming Oct 26 |
