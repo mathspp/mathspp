@@ -7,7 +7,6 @@ content:
           - "_hero"
           - "_schedule"
           - "_repeated-cta"
-          - "_workshop-link"
           - "_short-bio"
 metadata:
     author: "Rodrigo Girão Serrão"
