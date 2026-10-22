@@ -6596,5 +6596,19 @@
       "loc": 47,
       "words": 989
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/tachyon-sampling-profiling-in-python": {
+    "timestamp": 1792628801.871686,
+    "tags": [
+      "python",
+      "productivity",
+      "programming"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 9,
+      "loc": 35,
+      "words": 1329
+    }
   }
 }

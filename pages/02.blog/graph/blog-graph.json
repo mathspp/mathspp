@@ -13162,6 +13162,30 @@
     },
     {
       "data": {
+        "id": "tag:article:tachyon-sampling-profiling-in-python->tag:productivity",
+        "source": "article:tachyon-sampling-profiling-in-python",
+        "target": "tag:productivity",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:tachyon-sampling-profiling-in-python->tag:programming",
+        "source": "article:tachyon-sampling-profiling-in-python",
+        "target": "tag:programming",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:tachyon-sampling-profiling-in-python->tag:python",
+        "source": "article:tachyon-sampling-profiling-in-python",
+        "target": "tag:python",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
         "id": "tag:article:teaching-the-worlds-largest-programming-lesson->tag:algorithms",
         "source": "article:teaching-the-worlds-largest-programming-lesson",
         "target": "tag:algorithms",
@@ -14585,7 +14609,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-21T16:49:21+00:00",
+  "generated_at": "2026-10-22T00:26:55+00:00",
   "nodes": [
     {
       "data": {
@@ -24095,6 +24119,28 @@
     },
     {
       "data": {
+        "date": "21-10-2026 17:50",
+        "degree": 3,
+        "height": 28,
+        "id": "article:tachyon-sampling-profiling-in-python",
+        "internal_link_degree": 0,
+        "label": "Tachyon: sampling profiling in Python",
+        "size": 28,
+        "slug": "tachyon-sampling-profiling-in-python",
+        "tag_degree": 3,
+        "tags": [
+          "python",
+          "productivity",
+          "programming"
+        ],
+        "title": "Tachyon: sampling profiling in Python",
+        "type": "article",
+        "url": "/blog/tachyon-sampling-profiling-in-python",
+        "width": 41
+      }
+    },
+    {
+      "data": {
         "date": "14-10-2024 18:00",
         "degree": 3,
         "height": 28,
@@ -25783,29 +25829,29 @@
     },
     {
       "data": {
-        "degree": 34,
-        "height": 50,
+        "degree": 35,
+        "height": 51,
         "id": "tag:productivity",
         "internal_link_degree": 0,
         "label": "productivity",
-        "size": 50,
+        "size": 51,
         "tag": "productivity",
-        "tag_degree": 34,
+        "tag_degree": 35,
         "type": "tag",
         "url": "/blog/tags/productivity",
-        "width": 50
+        "width": 51
       }
     },
     {
       "data": {
-        "degree": 336,
+        "degree": 337,
         "height": 78,
         "id": "tag:programming",
         "internal_link_degree": 0,
         "label": "programming",
         "size": 78,
         "tag": "programming",
-        "tag_degree": 336,
+        "tag_degree": 337,
         "type": "tag",
         "url": "/blog/tags/programming",
         "width": 78
@@ -25858,14 +25904,14 @@
     },
     {
       "data": {
-        "degree": 332,
+        "degree": 333,
         "height": 78,
         "id": "tag:python",
         "internal_link_degree": 0,
         "label": "python",
         "size": 78,
         "tag": "python",
-        "tag_degree": 332,
+        "tag_degree": 333,
         "type": "tag",
         "url": "/blog/tags/python",
         "width": 78
@@ -26234,9 +26280,9 @@
   ],
   "site": "https://mathspp.com",
   "stats": {
-    "articles": 461,
+    "articles": 462,
     "internal_links": 407,
-    "tag_edges": 1416,
+    "tag_edges": 1419,
     "tags": 98
   }
 }
