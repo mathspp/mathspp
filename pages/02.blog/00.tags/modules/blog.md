@@ -16,8 +16,8 @@ metadata:
     author: Rodrigo Girão Serrão
     description: "All of the mathspp blog articles about Modules."
     og:description: "All of the mathspp blog articles about Modules."
-    og:image: "https://mathspp.com/blog/tags/Modules/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/Modules/thumbnail.webp"
+    og:image: "https://mathspp.com/blog/tags/modules/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/modules/thumbnail.webp"
 title: "Modules blog articles"
 ---
 
@@ -28,9 +28,9 @@ title: "Modules blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">14</th>
-            <th style="text-align: center;">14,161</th>
-            <th style="text-align: center;">1,623</th>
+            <th style="text-align: center;">15</th>
+            <th style="text-align: center;">15,337</th>
+            <th style="text-align: center;">1,635</th>
         </tr>
     </thead>
     <tbody>

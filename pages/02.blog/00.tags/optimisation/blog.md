@@ -16,8 +16,8 @@ metadata:
     author: Rodrigo Girão Serrão
     description: "All of the mathspp blog articles about Optimisation."
     og:description: "All of the mathspp blog articles about Optimisation."
-    og:image: "https://mathspp.com/blog/tags/Optimisation/thumbnail.webp"
-    twitter:image: "https://mathspp.com/blog/tags/Optimisation/thumbnail.webp"
+    og:image: "https://mathspp.com/blog/tags/optimisation/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/tags/optimisation/thumbnail.webp"
 title: "Optimisation blog articles"
 ---
 
@@ -28,9 +28,9 @@ title: "Optimisation blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">6</th>
-            <th style="text-align: center;">4,430</th>
-            <th style="text-align: center;">392</th>
+            <th style="text-align: center;">8</th>
+            <th style="text-align: center;">6,950</th>
+            <th style="text-align: center;">439</th>
         </tr>
     </thead>
     <tbody>

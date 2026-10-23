@@ -18,16 +18,16 @@
     "words": 35332
   },
   "programming": {
-    "articles": 337,
-    "code_snippets": 4237,
-    "loc": 40289,
-    "words": 411050
+    "articles": 338,
+    "code_snippets": 4241,
+    "loc": 40301,
+    "words": 412271
   },
   "python": {
-    "articles": 333,
-    "code_snippets": 4119,
-    "loc": 39198,
-    "words": 411122
+    "articles": 334,
+    "code_snippets": 4123,
+    "loc": 39210,
+    "words": 412343
   },
   "algorithms": {
     "articles": 28,
@@ -183,7 +183,7 @@
     "articles": 35,
     "code_snippets": 190,
     "loc": 1783,
-    "words": 21002
+    "words": 21047
   },
   "logic": {
     "articles": 34,
@@ -294,10 +294,10 @@
     "words": 4403
   },
   "optimisation": {
-    "articles": 6,
-    "code_snippets": 33,
-    "loc": 392,
-    "words": 4430
+    "articles": 8,
+    "code_snippets": 46,
+    "loc": 439,
+    "words": 6950
   },
   "set theory": {
     "articles": 1,
@@ -318,10 +318,10 @@
     "words": 11009
   },
   "modules": {
-    "articles": 14,
-    "code_snippets": 192,
-    "loc": 1623,
-    "words": 14161
+    "articles": 15,
+    "code_snippets": 196,
+    "loc": 1635,
+    "words": 15337
   },
   "probability": {
     "articles": 5,
@@ -564,10 +564,10 @@
     "words": 430
   },
   "__all": {
-    "articles": 463,
-    "code_snippets": 4384,
-    "loc": 41572,
-    "words": 505643
+    "articles": 464,
+    "code_snippets": 4388,
+    "loc": 41584,
+    "words": 506864
   },
   "fp": {
     "articles": 5,

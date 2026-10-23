@@ -2026,6 +2026,14 @@
     },
     {
       "data": {
+        "id": "internal-link:article:module-profiling-overview->article:tachyon-sampling-profiling-in-python",
+        "source": "article:module-profiling-overview",
+        "target": "article:tachyon-sampling-profiling-in-python",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
         "id": "internal-link:article:more-animations-from-first-principles-in-5-minutes->article:animations-from-first-principles-in-5-minutes",
         "source": "article:more-animations-from-first-principles-in-5-minutes",
         "target": "article:animations-from-first-principles-in-5-minutes",
@@ -10162,6 +10170,38 @@
     },
     {
       "data": {
+        "id": "tag:article:module-profiling-overview->tag:modules",
+        "source": "article:module-profiling-overview",
+        "target": "tag:modules",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:module-profiling-overview->tag:optimisation",
+        "source": "article:module-profiling-overview",
+        "target": "tag:optimisation",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:module-profiling-overview->tag:programming",
+        "source": "article:module-profiling-overview",
+        "target": "tag:programming",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:module-profiling-overview->tag:python",
+        "source": "article:module-profiling-overview",
+        "target": "tag:python",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
         "id": "tag:article:more-animations-from-first-principles-in-5-minutes->tag:fractals",
         "source": "article:more-animations-from-first-principles-in-5-minutes",
         "target": "tag:fractals",
@@ -13162,6 +13202,14 @@
     },
     {
       "data": {
+        "id": "tag:article:tachyon-sampling-profiling-in-python->tag:optimisation",
+        "source": "article:tachyon-sampling-profiling-in-python",
+        "target": "tag:optimisation",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
         "id": "tag:article:tachyon-sampling-profiling-in-python->tag:productivity",
         "source": "article:tachyon-sampling-profiling-in-python",
         "target": "tag:productivity",
@@ -14609,7 +14657,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-22T00:30:43+00:00",
+  "generated_at": "2026-10-23T15:21:52+00:00",
   "nodes": [
     {
       "data": {
@@ -23103,6 +23151,29 @@
     },
     {
       "data": {
+        "date": "22-10-2026 15:23",
+        "degree": 5,
+        "height": 30,
+        "id": "article:module-profiling-overview",
+        "internal_link_degree": 1,
+        "label": "Module profiling overview",
+        "size": 30,
+        "slug": "module-profiling-overview",
+        "tag_degree": 4,
+        "tags": [
+          "python",
+          "programming",
+          "optimisation",
+          "modules"
+        ],
+        "title": "Module profiling overview",
+        "type": "article",
+        "url": "/blog/module-profiling-overview",
+        "width": 44
+      }
+    },
+    {
+      "data": {
         "date": "08-09-2023 12:00",
         "degree": 13,
         "height": 38,
@@ -24120,23 +24191,24 @@
     {
       "data": {
         "date": "21-10-2026 17:50",
-        "degree": 3,
-        "height": 28,
+        "degree": 5,
+        "height": 30,
         "id": "article:tachyon-sampling-profiling-in-python",
-        "internal_link_degree": 0,
+        "internal_link_degree": 1,
         "label": "Tachyon: sampling profiling in Python",
-        "size": 28,
+        "size": 30,
         "slug": "tachyon-sampling-profiling-in-python",
-        "tag_degree": 3,
+        "tag_degree": 4,
         "tags": [
           "python",
           "productivity",
-          "programming"
+          "programming",
+          "optimisation"
         ],
         "title": "Tachyon: sampling profiling in Python",
         "type": "article",
         "url": "/blog/tachyon-sampling-profiling-in-python",
-        "width": 41
+        "width": 44
       }
     },
     {
@@ -25559,14 +25631,14 @@
     },
     {
       "data": {
-        "degree": 14,
+        "degree": 15,
         "height": 39,
         "id": "tag:modules",
         "internal_link_degree": 0,
         "label": "modules",
         "size": 39,
         "tag": "modules",
-        "tag_degree": 14,
+        "tag_degree": 15,
         "type": "tag",
         "url": "/blog/tags/modules",
         "width": 39
@@ -25694,17 +25766,17 @@
     },
     {
       "data": {
-        "degree": 6,
-        "height": 31,
+        "degree": 8,
+        "height": 34,
         "id": "tag:optimisation",
         "internal_link_degree": 0,
         "label": "optimisation",
-        "size": 31,
+        "size": 34,
         "tag": "optimisation",
-        "tag_degree": 6,
+        "tag_degree": 8,
         "type": "tag",
         "url": "/blog/tags/optimisation",
-        "width": 31
+        "width": 34
       }
     },
     {
@@ -25844,14 +25916,14 @@
     },
     {
       "data": {
-        "degree": 337,
+        "degree": 338,
         "height": 78,
         "id": "tag:programming",
         "internal_link_degree": 0,
         "label": "programming",
         "size": 78,
         "tag": "programming",
-        "tag_degree": 337,
+        "tag_degree": 338,
         "type": "tag",
         "url": "/blog/tags/programming",
         "width": 78
@@ -25904,14 +25976,14 @@
     },
     {
       "data": {
-        "degree": 333,
+        "degree": 334,
         "height": 78,
         "id": "tag:python",
         "internal_link_degree": 0,
         "label": "python",
         "size": 78,
         "tag": "python",
-        "tag_degree": 333,
+        "tag_degree": 334,
         "type": "tag",
         "url": "/blog/tags/python",
         "width": 78
@@ -26280,9 +26352,9 @@
   ],
   "site": "https://mathspp.com",
   "stats": {
-    "articles": 462,
-    "internal_links": 407,
-    "tag_edges": 1419,
+    "articles": 463,
+    "internal_links": 408,
+    "tag_edges": 1424,
     "tags": 98
   }
 }

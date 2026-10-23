@@ -1,9 +1,9 @@
 {
   "__all": {
-    "articles": 463,
-    "code_snippets": 4384,
-    "loc": 41572,
-    "words": 505643
+    "articles": 464,
+    "code_snippets": 4388,
+    "loc": 41584,
+    "words": 506864
   },
   "bpci": {
     "articles": 10,
@@ -24,16 +24,16 @@
     "words": 35332
   },
   "programming": {
-    "articles": 337,
-    "code_snippets": 4237,
-    "loc": 40289,
-    "words": 411050
+    "articles": 338,
+    "code_snippets": 4241,
+    "loc": 40301,
+    "words": 412271
   },
   "python": {
-    "articles": 333,
-    "code_snippets": 4119,
-    "loc": 39198,
-    "words": 411122
+    "articles": 334,
+    "code_snippets": 4123,
+    "loc": 39210,
+    "words": 412343
   },
   "llms": {
     "articles": 11,
@@ -117,7 +117,7 @@
     "articles": 35,
     "code_snippets": 190,
     "loc": 1783,
-    "words": 21002
+    "words": 21047
   },
   "chess": {
     "articles": 6,
@@ -257,6 +257,18 @@
     "loc": 237,
     "words": 7178
   },
+  "optimisation": {
+    "articles": 8,
+    "code_snippets": 46,
+    "loc": 439,
+    "words": 6950
+  },
+  "modules": {
+    "articles": 15,
+    "code_snippets": 196,
+    "loc": 1635,
+    "words": 15337
+  },
   "geometry": {
     "articles": 20,
     "code_snippets": 34,
@@ -353,12 +365,6 @@
     "loc": 166,
     "words": 2615
   },
-  "optimisation": {
-    "articles": 6,
-    "code_snippets": 33,
-    "loc": 392,
-    "words": 4430
-  },
   "set theory": {
     "articles": 1,
     "code_snippets": 0,
@@ -376,12 +382,6 @@
     "code_snippets": 71,
     "loc": 1651,
     "words": 11009
-  },
-  "modules": {
-    "articles": 14,
-    "code_snippets": 192,
-    "loc": 1623,
-    "words": 14161
   },
   "diophantine equations": {
     "articles": 1,

@@ -61,7 +61,9 @@ options:
 
 Alternatively, you can use it as `uv run -m profiling.sampling ...` if you're using uv.
 
-The output above shows that Tachyon has four main commands: `run`, `attach`, `dump`, and `replay`.
+Since Tachyon runs in a different process from the program you want to profile — which is how Tachyon achieves its high-frequency sampling without impacting the performance of the program it's profiling —, Tachyon is likely to require elevated permissions when you run it.
+
+The next sections cover the four main commands (`run`, `attach`, `dump`, and `replay`) that Tachyon provides.
 
 ## Using Tachyon to run a script
 
