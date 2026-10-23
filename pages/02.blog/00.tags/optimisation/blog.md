@@ -29,7 +29,7 @@ title: "Optimisation blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">8</th>
-            <th style="text-align: center;">6,950</th>
+            <th style="text-align: center;">6,957</th>
             <th style="text-align: center;">439</th>
         </tr>
     </thead>

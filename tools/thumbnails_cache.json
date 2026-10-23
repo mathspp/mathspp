@@ -21,13 +21,13 @@
     "articles": 338,
     "code_snippets": 4241,
     "loc": 40301,
-    "words": 412271
+    "words": 412278
   },
   "python": {
     "articles": 334,
     "code_snippets": 4123,
     "loc": 39210,
-    "words": 412343
+    "words": 412350
   },
   "algorithms": {
     "articles": 28,
@@ -297,7 +297,7 @@
     "articles": 8,
     "code_snippets": 46,
     "loc": 439,
-    "words": 6950
+    "words": 6957
   },
   "set theory": {
     "articles": 1,
@@ -321,7 +321,7 @@
     "articles": 15,
     "code_snippets": 196,
     "loc": 1635,
-    "words": 15337
+    "words": 15344
   },
   "probability": {
     "articles": 5,
@@ -567,7 +567,7 @@
     "articles": 464,
     "code_snippets": 4388,
     "loc": 41584,
-    "words": 506864
+    "words": 506871
   },
   "fp": {
     "articles": 5,

@@ -83,7 +83,9 @@ You should switch to the tracing profiler when you:
  - **need exact call counts**: only the tracing profiler can give you _exact_ call counts
  - **need to use the profiler programmatically**: both profilers have a CLI but only the tracing profiler can be used programmatically
  - **want to measure small performance differences**: if you're measuring small performance differences (1%–2%), the statistical nature of Tachyon might not pick those differences up
- - **want to measure micro-benchmarks**: if you want to benchmark small pieces of Python code (e.g., an expression), you'll want to use `timeit` instead of any of the profilers
+
+Additionally, you should _avoid both profilers_ if you want to measure micro-benchmarks.
+If you want to benchmark small pieces of Python code (e.g., an expression), you'll want to use `timeit` instead of any of the profilers.
 
 ## How to profile a program from the command line
 
