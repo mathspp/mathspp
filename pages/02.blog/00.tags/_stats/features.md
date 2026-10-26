@@ -7,9 +7,9 @@ class: offset-box
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">464</th>
-            <th style="text-align: center;">506,871</th>
-            <th style="text-align: center;">41,584</th>
+            <th style="text-align: center;">465</th>
+            <th style="text-align: center;">507,491</th>
+            <th style="text-align: center;">41,631</th>
         </tr>
     </thead>
     <tbody>

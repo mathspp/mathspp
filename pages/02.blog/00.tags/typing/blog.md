@@ -14,8 +14,8 @@ hero_image_url: /user/themes/myquark/images/common_hero.webp
 hero_classes: "parallax overlay-dark-gradient text-light" # see https://demo.getgrav.org/blog-skeleton/blog/hero-classes
 metadata:
     author: Rodrigo Girão Serrão
-    description: "All of the mathspp blog articles about typing."
-    og:description: "All of the mathspp blog articles about typing."
+    description: "All of the mathspp blog articles about Typing."
+    og:description: "All of the mathspp blog articles about Typing."
     og:image: "https://mathspp.com/blog/tags/typing/thumbnail.webp"
     twitter:image: "https://mathspp.com/blog/tags/typing/thumbnail.webp"
 title: "Typing blog articles"
@@ -28,9 +28,9 @@ title: "Typing blog articles"
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">3</th>
-            <th style="text-align: center;">1,469</th>
-            <th style="text-align: center;">123</th>
+            <th style="text-align: center;">4</th>
+            <th style="text-align: center;">2,089</th>
+            <th style="text-align: center;">170</th>
         </tr>
     </thead>
     <tbody>
