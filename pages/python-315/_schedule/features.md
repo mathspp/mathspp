@@ -14,9 +14,9 @@ class: offset-box
 | Startup config files | [Read now](/blog/startup-configuration-files) |
 | Python 3.15 DX improvements | [Read now](/blog/dx-improvements-in-python-315) |
 | Tachyon: new sampling profiler | [Read now](/blog/tachyon-sampling-profiling-in-python) |
-| **>> New package `profiling`** | [Read now](/blog/module-profiling-overview) |
-| `TypedDict` with extra items | Coming Oct 26 |
-| Typing improvements in 3.15 | Coming Oct 27 |
+| New package `profiling` | [Read now](/blog/module-profiling-overview) |
+| **>> `TypedDict` with extra items** | [Read now](https://mathspp.com/blog/typeddict-with-extra-items) |
+| Typing improvements in 3.15 | Soon... |
 | Standard library niceties | Coming Oct 28 |
 | Generators and threading | Coming Oct 29 |
 | The new `abi3t` | Coming Oct 30 |
