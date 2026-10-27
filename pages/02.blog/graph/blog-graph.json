@@ -2978,6 +2978,14 @@
     },
     {
       "data": {
+        "id": "internal-link:article:typing-improvements-in-python-315->article:typeddict-with-extra-items",
+        "source": "article:typing-improvements-in-python-315",
+        "target": "article:typeddict-with-extra-items",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
         "id": "internal-link:article:underscore-is-a-soft-keyword->article:deep-unpacking",
         "source": "article:underscore-is-a-soft-keyword",
         "target": "article:deep-unpacking",
@@ -13730,6 +13738,30 @@
     },
     {
       "data": {
+        "id": "tag:article:typing-improvements-in-python-315->tag:programming",
+        "source": "article:typing-improvements-in-python-315",
+        "target": "tag:programming",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:typing-improvements-in-python-315->tag:python",
+        "source": "article:typing-improvements-in-python-315",
+        "target": "tag:python",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:typing-improvements-in-python-315->tag:typing",
+        "source": "article:typing-improvements-in-python-315",
+        "target": "tag:typing",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
         "id": "tag:article:underscore-is-a-soft-keyword->tag:parsers",
         "source": "article:underscore-is-a-soft-keyword",
         "target": "tag:parsers",
@@ -14681,7 +14713,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-26T18:52:24+00:00",
+  "generated_at": "2026-10-27T16:41:51+00:00",
   "nodes": [
     {
       "data": {
@@ -24395,12 +24427,12 @@
     {
       "data": {
         "date": "26-10-2026 17:53",
-        "degree": 3,
-        "height": 28,
+        "degree": 4,
+        "height": 29,
         "id": "article:typeddict-with-extra-items",
-        "internal_link_degree": 0,
+        "internal_link_degree": 1,
         "label": "TypedDict with extra items",
-        "size": 28,
+        "size": 29,
         "slug": "typeddict-with-extra-items",
         "tag_degree": 3,
         "tags": [
@@ -24411,7 +24443,29 @@
         "title": "TypedDict with extra items",
         "type": "article",
         "url": "/blog/typeddict-with-extra-items",
-        "width": 41
+        "width": 42
+      }
+    },
+    {
+      "data": {
+        "date": "27-10-2026 11:54",
+        "degree": 4,
+        "height": 29,
+        "id": "article:typing-improvements-in-python-315",
+        "internal_link_degree": 1,
+        "label": "Typing improvements in Python 3.15",
+        "size": 29,
+        "slug": "typing-improvements-in-python-315",
+        "tag_degree": 3,
+        "tags": [
+          "python",
+          "programming",
+          "typing"
+        ],
+        "title": "Typing improvements in Python 3.15",
+        "type": "article",
+        "url": "/blog/typing-improvements-in-python-315",
+        "width": 42
       }
     },
     {
@@ -25962,14 +26016,14 @@
     },
     {
       "data": {
-        "degree": 339,
+        "degree": 340,
         "height": 78,
         "id": "tag:programming",
         "internal_link_degree": 0,
         "label": "programming",
         "size": 78,
         "tag": "programming",
-        "tag_degree": 339,
+        "tag_degree": 340,
         "type": "tag",
         "url": "/blog/tags/programming",
         "width": 78
@@ -26022,14 +26076,14 @@
     },
     {
       "data": {
-        "degree": 335,
+        "degree": 336,
         "height": 78,
         "id": "tag:python",
         "internal_link_degree": 0,
         "label": "python",
         "size": 78,
         "tag": "python",
-        "tag_degree": 335,
+        "tag_degree": 336,
         "type": "tag",
         "url": "/blog/tags/python",
         "width": 78
@@ -26322,17 +26376,17 @@
     },
     {
       "data": {
-        "degree": 4,
-        "height": 29,
+        "degree": 5,
+        "height": 30,
         "id": "tag:typing",
         "internal_link_degree": 0,
         "label": "typing",
-        "size": 29,
+        "size": 30,
         "tag": "typing",
-        "tag_degree": 4,
+        "tag_degree": 5,
         "type": "tag",
         "url": "/blog/tags/typing",
-        "width": 29
+        "width": 30
       }
     },
     {
@@ -26398,9 +26452,9 @@
   ],
   "site": "https://mathspp.com",
   "stats": {
-    "articles": 464,
-    "internal_links": 408,
-    "tag_edges": 1427,
+    "articles": 465,
+    "internal_links": 409,
+    "tag_edges": 1430,
     "tags": 98
   }
 }

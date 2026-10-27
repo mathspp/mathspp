@@ -1,9 +1,9 @@
 {
   "__all": {
-    "articles": 465,
-    "code_snippets": 4397,
-    "loc": 41631,
-    "words": 507491
+    "articles": 466,
+    "code_snippets": 4408,
+    "loc": 41685,
+    "words": 508385
   },
   "bpci": {
     "articles": 10,
@@ -24,16 +24,16 @@
     "words": 35332
   },
   "programming": {
-    "articles": 339,
-    "code_snippets": 4250,
-    "loc": 40348,
-    "words": 412898
+    "articles": 340,
+    "code_snippets": 4261,
+    "loc": 40402,
+    "words": 413792
   },
   "python": {
-    "articles": 335,
-    "code_snippets": 4132,
-    "loc": 39257,
-    "words": 412970
+    "articles": 336,
+    "code_snippets": 4143,
+    "loc": 39311,
+    "words": 413864
   },
   "llms": {
     "articles": 11,
@@ -365,6 +365,12 @@
     "loc": 166,
     "words": 2615
   },
+  "typing": {
+    "articles": 5,
+    "code_snippets": 40,
+    "loc": 224,
+    "words": 2983
+  },
   "set theory": {
     "articles": 1,
     "code_snippets": 0,
@@ -454,12 +460,6 @@
     "code_snippets": 13,
     "loc": 61,
     "words": 2443
-  },
-  "typing": {
-    "articles": 4,
-    "code_snippets": 29,
-    "loc": 170,
-    "words": 2089
   },
   "json": {
     "articles": 5,
