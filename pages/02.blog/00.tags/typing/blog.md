@@ -29,8 +29,8 @@ title: "Typing blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">5</th>
-            <th style="text-align: center;">2,983</th>
-            <th style="text-align: center;">224</th>
+            <th style="text-align: center;">2,987</th>
+            <th style="text-align: center;">226</th>
         </tr>
     </thead>
     <tbody>

@@ -20,14 +20,14 @@
   "programming": {
     "articles": 340,
     "code_snippets": 4261,
-    "loc": 40402,
-    "words": 413792
+    "loc": 40404,
+    "words": 413796
   },
   "python": {
     "articles": 336,
     "code_snippets": 4143,
-    "loc": 39311,
-    "words": 413864
+    "loc": 39313,
+    "words": 413868
   },
   "algorithms": {
     "articles": 28,
@@ -524,8 +524,8 @@
   "typing": {
     "articles": 5,
     "code_snippets": 40,
-    "loc": 224,
-    "words": 2983
+    "loc": 226,
+    "words": 2987
   },
   "data structures": {
     "articles": 2,
@@ -566,8 +566,8 @@
   "__all": {
     "articles": 466,
     "code_snippets": 4408,
-    "loc": 41685,
-    "words": 508385
+    "loc": 41687,
+    "words": 508389
   },
   "fp": {
     "articles": 5,

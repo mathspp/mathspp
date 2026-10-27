@@ -116,9 +116,11 @@ The addition of the decorator `disjoint_base` solves this issue, as classes deco
 As of Python 3.15, the [stubs for the classes `str`](https://github.com/python/typeshed/blob/d9774b31d7fb4653cf8795e0f7c10a0855caeff9/stdlib/builtins.pyi#L481) [and `int`](https://github.com/python/typeshed/blob/d9774b31d7fb4653cf8795e0f7c10a0855caeff9/stdlib/builtins.pyi#L245-L246) use `disjoint_base`:
 
 ```py
+# Stub for `str` in typeshed:
 @disjoint_base
 class str(Sequence[str]): ...
 
+# Stub for `int` in typeshed:
 @disjoint_base
 class int: ...
 ```
@@ -162,7 +164,7 @@ As an example, [PEP 747](https://peps.python.org/pep-0747/) shows the signature 
 def converter[T](typx: TypeForm[T], value: object) -> T: ...
 ```
 
-This function would accept a type form object and an arbitrary value and it would then try to convert that value to the given type:
+This function would accept a type form object and an arbitrary value and it would then try to convert that value to the given type or error if impossible:
 
 ```py
 converter("int", "42")  # 42
