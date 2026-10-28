@@ -20,4 +20,4 @@ class: offset-box
 | **>> Standard library niceties** | [Read now](/blog/4-upgrades-to-the-python-standard-library-in-315) |
 | Generators and threading | Soon... |
 | The new `abi3t` | Coming Oct 30 |
-| 3.15 roundup | Coming Oct 31 |
+| 3.15 roundup | Coming Nov 2 |
