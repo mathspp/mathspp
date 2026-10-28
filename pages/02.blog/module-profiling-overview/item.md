@@ -110,8 +110,8 @@ Instead of printing, you can write the statistics to a file by using the option 
 # Tracing profiler:
 % python -m profiling.tracing -o stats.prof myscript.py
 
-# Sampling profiler:
-% python -m profiling.sampling -o stats.prof myscript.py
+# Sampling profiler:h
+% python -m profiling.sampling -o stats.prof run myscript.py
 ```
 
 The statistics can be later read and processed by the module `pstats`:

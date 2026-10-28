@@ -3,8 +3,8 @@
 <table class="stats-table">
     <thead>
         <tr>
-            <th style="text-align: center;">466</th>
-            <th style="text-align: center;">508,389</th>
+            <th style="text-align: center;">467</th>
+            <th style="text-align: center;">508,416</th>
             <th style="text-align: center;">41,687</th>
         </tr>
     </thead>

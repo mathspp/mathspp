@@ -14713,7 +14713,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-27T16:44:23+00:00",
+  "generated_at": "2026-10-28T13:57:57+00:00",
   "nodes": [
     {
       "data": {
@@ -20942,6 +20942,24 @@
     },
     {
       "data": {
+        "date": "28-10-2026 12:10",
+        "degree": 0,
+        "height": 18,
+        "id": "article:4-upgrades-to-the-python-standard-library-in-315",
+        "internal_link_degree": 0,
+        "label": "4 upgrades to the Python standard library in 3.15",
+        "size": 18,
+        "slug": "4-upgrades-to-the-python-standard-library-in-315",
+        "tag_degree": 0,
+        "tags": [],
+        "title": "4 upgrades to the Python standard library in 3.15",
+        "type": "article",
+        "url": "/blog/4-upgrades-to-the-python-standard-library-in-315",
+        "width": 26
+      }
+    },
+    {
+      "data": {
         "date": "23-11-2023 11:00",
         "degree": 5,
         "height": 30,
@@ -26452,7 +26470,7 @@
   ],
   "site": "https://mathspp.com",
   "stats": {
-    "articles": 465,
+    "articles": 466,
     "internal_links": 409,
     "tag_edges": 1430,
     "tags": 98
