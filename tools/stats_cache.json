@@ -6613,7 +6613,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/module-profiling-overview": {
-    "timestamp": 1793195837.5797653,
+    "timestamp": 1793195908.9923215,
     "tags": [
       "python",
       "programming",
@@ -6656,13 +6656,16 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/4-upgrades-to-the-python-standard-library-in-315": {
-    "timestamp": 1793189453.285469,
-    "tags": [],
+    "timestamp": 1793199818.6686745,
+    "tags": [
+      "python",
+      "programming"
+    ],
     "stats": {
       "articles": 1,
-      "code_snippets": 0,
-      "loc": 0,
-      "words": 27
+      "code_snippets": 9,
+      "loc": 90,
+      "words": 786
     }
   }
 }

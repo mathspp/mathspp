@@ -170,6 +170,54 @@
     },
     {
       "data": {
+        "id": "internal-link:article:4-upgrades-to-the-python-standard-library-in-315->article:frozendict-builtin",
+        "source": "article:4-upgrades-to-the-python-standard-library-in-315",
+        "target": "article:frozendict-builtin",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:4-upgrades-to-the-python-standard-library-in-315->article:module-profiling-overview",
+        "source": "article:4-upgrades-to-the-python-standard-library-in-315",
+        "target": "article:module-profiling-overview",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:4-upgrades-to-the-python-standard-library-in-315->article:sentinel-builtin",
+        "source": "article:4-upgrades-to-the-python-standard-library-in-315",
+        "target": "article:sentinel-builtin",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:4-upgrades-to-the-python-standard-library-in-315->article:tachyon-sampling-profiling-in-python",
+        "source": "article:4-upgrades-to-the-python-standard-library-in-315",
+        "target": "article:tachyon-sampling-profiling-in-python",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:4-upgrades-to-the-python-standard-library-in-315->article:typeddict-with-extra-items",
+        "source": "article:4-upgrades-to-the-python-standard-library-in-315",
+        "target": "article:typeddict-with-extra-items",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:4-upgrades-to-the-python-standard-library-in-315->article:typing-improvements-in-python-315",
+        "source": "article:4-upgrades-to-the-python-standard-library-in-315",
+        "target": "article:typing-improvements-in-python-315",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
         "id": "internal-link:article:5-ways-to-flatten-a-list-of-lists->article:list-comprehensions-101",
         "source": "article:5-ways-to-flatten-a-list-of-lists",
         "target": "article:list-comprehensions-101",
@@ -4300,6 +4348,22 @@
       "data": {
         "id": "tag:article:3-ways-to-reverse-a-python-list->tag:python",
         "source": "article:3-ways-to-reverse-a-python-list",
+        "target": "tag:python",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:4-upgrades-to-the-python-standard-library-in-315->tag:programming",
+        "source": "article:4-upgrades-to-the-python-standard-library-in-315",
+        "target": "tag:programming",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:4-upgrades-to-the-python-standard-library-in-315->tag:python",
+        "source": "article:4-upgrades-to-the-python-standard-library-in-315",
         "target": "tag:python",
         "type": "tag"
       }
@@ -14713,7 +14777,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-28T13:57:57+00:00",
+  "generated_at": "2026-10-28T15:05:02+00:00",
   "nodes": [
     {
       "data": {
@@ -15017,12 +15081,12 @@
     {
       "data": {
         "date": "14-10-2026 14:29",
-        "degree": 3,
-        "height": 28,
+        "degree": 4,
+        "height": 29,
         "id": "article:frozendict-builtin",
-        "internal_link_degree": 1,
+        "internal_link_degree": 2,
         "label": "frozendict built-in",
-        "size": 28,
+        "size": 29,
         "slug": "frozendict-builtin",
         "tag_degree": 2,
         "tags": [
@@ -15032,7 +15096,7 @@
         "title": "frozendict built-in",
         "type": "article",
         "url": "/blog/pydonts/frozendict-builtin",
-        "width": 41
+        "width": 42
       }
     },
     {
@@ -15294,12 +15358,12 @@
     {
       "data": {
         "date": "13-10-2026 15:11",
-        "degree": 2,
-        "height": 26,
+        "degree": 3,
+        "height": 28,
         "id": "article:sentinel-builtin",
-        "internal_link_degree": 0,
+        "internal_link_degree": 1,
         "label": "sentinel built-in",
-        "size": 26,
+        "size": 28,
         "slug": "sentinel-builtin",
         "tag_degree": 2,
         "tags": [
@@ -15309,7 +15373,7 @@
         "title": "sentinel built-in",
         "type": "article",
         "url": "/blog/pydonts/sentinel-builtin",
-        "width": 38
+        "width": 41
       }
     },
     {
@@ -20943,19 +21007,22 @@
     {
       "data": {
         "date": "28-10-2026 12:10",
-        "degree": 0,
-        "height": 18,
+        "degree": 8,
+        "height": 34,
         "id": "article:4-upgrades-to-the-python-standard-library-in-315",
-        "internal_link_degree": 0,
+        "internal_link_degree": 6,
         "label": "4 upgrades to the Python standard library in 3.15",
-        "size": 18,
+        "size": 34,
         "slug": "4-upgrades-to-the-python-standard-library-in-315",
-        "tag_degree": 0,
-        "tags": [],
+        "tag_degree": 2,
+        "tags": [
+          "python",
+          "programming"
+        ],
         "title": "4 upgrades to the Python standard library in 3.15",
         "type": "article",
         "url": "/blog/4-upgrades-to-the-python-standard-library-in-315",
-        "width": 26
+        "width": 49
       }
     },
     {
@@ -23226,12 +23293,12 @@
     {
       "data": {
         "date": "22-10-2026 15:23",
-        "degree": 5,
-        "height": 30,
+        "degree": 6,
+        "height": 31,
         "id": "article:module-profiling-overview",
-        "internal_link_degree": 1,
+        "internal_link_degree": 2,
         "label": "Module profiling overview",
-        "size": 30,
+        "size": 31,
         "slug": "module-profiling-overview",
         "tag_degree": 4,
         "tags": [
@@ -23243,7 +23310,7 @@
         "title": "Module profiling overview",
         "type": "article",
         "url": "/blog/module-profiling-overview",
-        "width": 44
+        "width": 45
       }
     },
     {
@@ -24265,12 +24332,12 @@
     {
       "data": {
         "date": "21-10-2026 17:50",
-        "degree": 5,
-        "height": 30,
+        "degree": 6,
+        "height": 31,
         "id": "article:tachyon-sampling-profiling-in-python",
-        "internal_link_degree": 1,
+        "internal_link_degree": 2,
         "label": "Tachyon: sampling profiling in Python",
-        "size": 30,
+        "size": 31,
         "slug": "tachyon-sampling-profiling-in-python",
         "tag_degree": 4,
         "tags": [
@@ -24282,7 +24349,7 @@
         "title": "Tachyon: sampling profiling in Python",
         "type": "article",
         "url": "/blog/tachyon-sampling-profiling-in-python",
-        "width": 44
+        "width": 45
       }
     },
     {
@@ -24445,12 +24512,12 @@
     {
       "data": {
         "date": "26-10-2026 17:53",
-        "degree": 4,
-        "height": 29,
+        "degree": 5,
+        "height": 30,
         "id": "article:typeddict-with-extra-items",
-        "internal_link_degree": 1,
+        "internal_link_degree": 2,
         "label": "TypedDict with extra items",
-        "size": 29,
+        "size": 30,
         "slug": "typeddict-with-extra-items",
         "tag_degree": 3,
         "tags": [
@@ -24461,18 +24528,18 @@
         "title": "TypedDict with extra items",
         "type": "article",
         "url": "/blog/typeddict-with-extra-items",
-        "width": 42
+        "width": 44
       }
     },
     {
       "data": {
         "date": "27-10-2026 11:54",
-        "degree": 4,
-        "height": 29,
+        "degree": 5,
+        "height": 30,
         "id": "article:typing-improvements-in-python-315",
-        "internal_link_degree": 1,
+        "internal_link_degree": 2,
         "label": "Typing improvements in Python 3.15",
-        "size": 29,
+        "size": 30,
         "slug": "typing-improvements-in-python-315",
         "tag_degree": 3,
         "tags": [
@@ -24483,7 +24550,7 @@
         "title": "Typing improvements in Python 3.15",
         "type": "article",
         "url": "/blog/typing-improvements-in-python-315",
-        "width": 42
+        "width": 44
       }
     },
     {
@@ -26034,14 +26101,14 @@
     },
     {
       "data": {
-        "degree": 340,
+        "degree": 341,
         "height": 78,
         "id": "tag:programming",
         "internal_link_degree": 0,
         "label": "programming",
         "size": 78,
         "tag": "programming",
-        "tag_degree": 340,
+        "tag_degree": 341,
         "type": "tag",
         "url": "/blog/tags/programming",
         "width": 78
@@ -26094,14 +26161,14 @@
     },
     {
       "data": {
-        "degree": 336,
+        "degree": 337,
         "height": 78,
         "id": "tag:python",
         "internal_link_degree": 0,
         "label": "python",
         "size": 78,
         "tag": "python",
-        "tag_degree": 336,
+        "tag_degree": 337,
         "type": "tag",
         "url": "/blog/tags/python",
         "width": 78
@@ -26471,8 +26538,8 @@
   "site": "https://mathspp.com",
   "stats": {
     "articles": 466,
-    "internal_links": 409,
-    "tag_edges": 1430,
+    "internal_links": 415,
+    "tag_edges": 1432,
     "tags": 98
   }
 }

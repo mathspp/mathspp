@@ -1,0 +1,65 @@
+date: 28-10-2026 12:10
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "Learn about 4 of the most exciting updates made to the Python standard library in 3.15."
+    og:image: "https://mathspp.com/blog/4-upgrades-to-the-python-standard-library-in-315/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/4-upgrades-to-the-python-standard-library-in-315/thumbnail.webp"
+references:
+    - "math.integer — integer-specific mathematics functions — Python 3.15 documentation, <https://docs.python.org/3.15/library/math.integer.html>"
+    - "re – Regular expression operations — Python 3.15 documentation, <https://docs.python.org/3.15/library/re.html#re.prefixmatch>"
+    - "Coroutines and tasks — Python 3.15 documentation, <https://docs.python.org/3/library/asyncio-task.html#task-groups>"
+    - "Add an asyncio.TaskGroup.cancel method — Issue #108951 python/cpython, <https://github.com/python/cpython/issues/108951>"
+    - "json — Python 3.15 documentation, <https://docs.python.org/3/library/json.html#json.load>"
+slug: "4-upgrades-to-the-python-standard-library-in-315"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - python
+        - programming
+title: 4 upgrades to the Python standard library in 3.15
+
+# While the 3.15 campaign is ongoing:
+cta: "none"
+process:
+  twig: true
+cache_enable: false
+forms:
+    enroll: &enrollment_form
+        name: enroll
+
+        fields:
+            honeypot:
+              label: Honeypot
+              type: honeypot
+
+            email:
+              display_label: false
+              autocomplete: true
+              placeholder: Your best email address
+              type: email
+              validate:
+                required: true
+
+            g-recaptcha-response:
+              label: Captcha
+              type: captcha
+              recaptcha_not_validated: 'Captcha not valid!'
+
+        buttons:
+            submit:
+              type: submit
+              value: "Get the Python 3.15 emails 🐍🚀"
+
+        process:
+            captcha: true
+            newsletter-subscriber:
+              publication: insider
+              utm_source: "python-315-campaign"
+              automations:
+                - "aut_68fbf21d-5f08-41d8-a9eb-7e960ce07ac1"
+            display: "/python-315/you-are-in"
+
+    enroll_bottom:
+        <<: *enrollment_form
+        name: enroll_bottom
