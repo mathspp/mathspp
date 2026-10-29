@@ -17,7 +17,7 @@ class: offset-box
 | New package `profiling` | [Read now](/blog/module-profiling-overview) |
 | `TypedDict` with extra items | [Read now](/blog/typeddict-with-extra-items) |
 | Typing improvements in 3.15 | [Read now](/blog/typing-improvements-in-python-315) |
-| **>> Standard library niceties** | [Read now](/blog/4-upgrades-to-the-python-standard-library-in-315) |
-| Generators and threading | Soon... |
-| The new `abi3t` | Coming Oct 30 |
+| Standard library niceties | [Read now](/blog/4-upgrades-to-the-python-standard-library-in-315) |
+| **>> Generators and threading** | [Read now](/blog/threadsafe-iterators) |
+| The new `abi3t` | Soon... |
 | 3.15 roundup | Coming Nov 2 |

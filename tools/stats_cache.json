@@ -6667,5 +6667,19 @@
       "loc": 90,
       "words": 786
     }
+  },
+  "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/threadsafe-iterators": {
+    "timestamp": 1793298927.9524422,
+    "tags": [
+      "python",
+      "programming",
+      "concurrency"
+    ],
+    "stats": {
+      "articles": 1,
+      "code_snippets": 9,
+      "loc": 72,
+      "words": 501
+    }
   }
 }

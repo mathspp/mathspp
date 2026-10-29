@@ -18,16 +18,16 @@
     "words": 35332
   },
   "programming": {
-    "articles": 341,
-    "code_snippets": 4270,
-    "loc": 40494,
-    "words": 414582
+    "articles": 342,
+    "code_snippets": 4279,
+    "loc": 40566,
+    "words": 415083
   },
   "python": {
-    "articles": 337,
-    "code_snippets": 4152,
-    "loc": 39403,
-    "words": 414654
+    "articles": 338,
+    "code_snippets": 4161,
+    "loc": 39475,
+    "words": 415155
   },
   "algorithms": {
     "articles": 28,
@@ -498,10 +498,10 @@
     "words": 1293
   },
   "concurrency": {
-    "articles": 3,
-    "code_snippets": 21,
-    "loc": 264,
-    "words": 2623
+    "articles": 4,
+    "code_snippets": 30,
+    "loc": 336,
+    "words": 3124
   },
   "github": {
     "articles": 2,
@@ -564,10 +564,10 @@
     "words": 430
   },
   "__all": {
-    "articles": 467,
-    "code_snippets": 4417,
-    "loc": 41777,
-    "words": 509175
+    "articles": 468,
+    "code_snippets": 4426,
+    "loc": 41849,
+    "words": 509676
   },
   "fp": {
     "articles": 5,
