@@ -14801,7 +14801,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-29T18:35:47+00:00",
+  "generated_at": "2026-10-29T18:36:19+00:00",
   "nodes": [
     {
       "data": {
@@ -24540,7 +24540,7 @@
         "height": 28,
         "id": "article:threadsafe-iterators",
         "internal_link_degree": 0,
-        "label": "Thread-safe generators",
+        "label": "Thread-safe iterators",
         "size": 28,
         "slug": "threadsafe-iterators",
         "tag_degree": 3,
@@ -24549,7 +24549,7 @@
           "programming",
           "concurrency"
         ],
-        "title": "Thread-safe generators",
+        "title": "Thread-safe iterators",
         "type": "article",
         "url": "/blog/threadsafe-iterators",
         "width": 41
