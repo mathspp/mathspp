@@ -29,7 +29,7 @@ title: "Concurrency blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">4</th>
-            <th style="text-align: center;">3,124</th>
+            <th style="text-align: center;">3,129</th>
             <th style="text-align: center;">336</th>
         </tr>
     </thead>

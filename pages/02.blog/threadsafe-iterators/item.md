@@ -5,7 +5,7 @@ Learn how to write and use thread-safe iterators in Python 3.15.
 This article shows how to write and use iterators in a thread-safe manner using the new tools from Python 3.15:
 
  - `threading.serialize_iterator`
- - `synchronized_iterator`
+ - `threading.synchronized_iterator`
 
 ## 15 days of Python 3.15
 
@@ -120,11 +120,11 @@ class serialize_iterator:
             return next(self._iterator)
 ```
 
-In fact, [the real implementation](https://github.com/python/cpython/blob/03875414cb2993b609044004732b802fe73f39dd/Lib/threading.py#L849-L901) of `threading.serialize_iterator` is fairly similar.
+In fact, [the real implementation](https://github.com/python/cpython/blob/03875414cb2993b609044004732b802fe73f39dd/Lib/threading.py#L849-L901) of `threading.serialize_iterator` is fairly similar to this proof of concept.
 
 ## Thread-safe generator functions
 
-The decorator `synchronized_iterator` can be used around functions that produce iterators to serialize them automatically.
+The decorator `synchronized_iterator` can be used around functions that produce iterators to serialise them automatically.
 This is useful when used in conjunction with `itertools`, for example, or when used around a generator:
 
 ```py
@@ -142,7 +142,7 @@ def slow_counter():
 counter = slow_counter()  # <--
 ```
 
-By using `@synchronized_iterator` around the generator functino instead of using `serialize_iterator` after creating the generator iterator, `counter` is automatically thread-safe:
+By using `@synchronized_iterator` around the generator function instead of using `serialize_iterator` after creating the generator iterator, `counter` is automatically thread-safe:
 
 ```py
 t1 = threading.Thread(target=count_consumer, args=("t1", counter))

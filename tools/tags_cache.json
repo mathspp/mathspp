@@ -3,7 +3,7 @@
     "articles": 468,
     "code_snippets": 4426,
     "loc": 41849,
-    "words": 509676
+    "words": 509681
   },
   "bpci": {
     "articles": 10,
@@ -27,13 +27,13 @@
     "articles": 342,
     "code_snippets": 4279,
     "loc": 40566,
-    "words": 415083
+    "words": 415088
   },
   "python": {
     "articles": 338,
     "code_snippets": 4161,
     "loc": 39475,
-    "words": 415155
+    "words": 415160
   },
   "llms": {
     "articles": 11,
@@ -219,7 +219,7 @@
     "articles": 4,
     "code_snippets": 30,
     "loc": 336,
-    "words": 3124
+    "words": 3129
   },
   "regex": {
     "articles": 8,
