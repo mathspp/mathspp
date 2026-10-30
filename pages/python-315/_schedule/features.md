@@ -18,6 +18,6 @@ class: offset-box
 | `TypedDict` with extra items | [Read now](/blog/typeddict-with-extra-items) |
 | Typing improvements in 3.15 | [Read now](/blog/typing-improvements-in-python-315) |
 | Standard library niceties | [Read now](/blog/4-upgrades-to-the-python-standard-library-in-315) |
-| **>> Generators and threading** | [Read now](/blog/threadsafe-iterators) |
-| The new `abi3t` | Soon... |
-| 3.15 roundup | Coming Nov 2 |
+| Generators and threading | [Read now](/blog/threadsafe-iterators) |
+| **>> The new `abi3t`** | [Read now](/blog/python-abi3t-what-is-it) |
+| 3.15 roundup | Soon... |
