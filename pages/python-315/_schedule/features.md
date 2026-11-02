@@ -19,5 +19,5 @@ class: offset-box
 | Typing improvements in 3.15 | [Read now](/blog/typing-improvements-in-python-315) |
 | Standard library niceties | [Read now](/blog/4-upgrades-to-the-python-standard-library-in-315) |
 | Generators and threading | [Read now](/blog/threadsafe-iterators) |
-| **>> The new `abi3t`** | [Read now](/blog/python-abi3t-what-is-it) |
-| 3.15 roundup | Soon... |
+| The new `abi3t` | [Read now](/blog/python-abi3t-what-is-it) |
+| **>> Migrating to Python 3.15** | [Read now](/blog/migrating-to-python-315) |

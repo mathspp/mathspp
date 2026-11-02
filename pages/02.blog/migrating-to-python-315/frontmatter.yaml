@@ -1,0 +1,63 @@
+date: 02-11-2026 16:51
+metadata:
+    author: Rodrigo Girão Serrão
+    description: "This practical guide tells you what to pay attention to when migrating to Python 3.15."
+    og:image: "https://mathspp.com/blog/migrating-to-python-315/thumbnail.webp"
+    twitter:image: "https://mathspp.com/blog/migrating-to-python-315/thumbnail.webp"
+references:
+    - "What's new in Python 3.11 — <https://docs.python.org/3/whatsnew/3.11.html>"
+    - "PEP 654 — Exception Groups and except* — <https://peps.python.org/pep-0654/>"
+    - "Hello Python 3.15, goodbye 3.10, and now I can use 3.11 — <https://simonwillison.net/2026/Oct/12/python-3-15/>"
+slug: "migrating-to-python-315"
+taxonomy:
+    category:
+        - blogpost
+    tag:
+        - python
+        - programming
+title: Migrating to Python 3.15
+
+# While the 3.15 campaign is ongoing:
+cta: "none"
+process:
+  twig: true
+cache_enable: false
+forms:
+    enroll: &enrollment_form
+        name: enroll
+
+        fields:
+            honeypot:
+              label: Honeypot
+              type: honeypot
+
+            email:
+              display_label: false
+              autocomplete: true
+              placeholder: Your best email address
+              type: email
+              validate:
+                required: true
+
+            g-recaptcha-response:
+              label: Captcha
+              type: captcha
+              recaptcha_not_validated: 'Captcha not valid!'
+
+        buttons:
+            submit:
+              type: submit
+              value: "Get the Python 3.15 emails 🐍🚀"
+
+        process:
+            captcha: true
+            newsletter-subscriber:
+              publication: insider
+              utm_source: "python-315-campaign"
+              automations:
+                - "aut_68fbf21d-5f08-41d8-a9eb-7e960ce07ac1"
+            display: "/python-315/you-are-in"
+
+    enroll_bottom:
+        <<: *enrollment_form
+        name: enroll_bottom

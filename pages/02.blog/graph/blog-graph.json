@@ -2034,6 +2034,94 @@
     },
     {
       "data": {
+        "id": "internal-link:article:migrating-to-python-315->article:4-upgrades-to-the-python-standard-library-in-315",
+        "source": "article:migrating-to-python-315",
+        "target": "article:4-upgrades-to-the-python-standard-library-in-315",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:migrating-to-python-315->article:explicit-lazy-imports",
+        "source": "article:migrating-to-python-315",
+        "target": "article:explicit-lazy-imports",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:migrating-to-python-315->article:frozendict-builtin",
+        "source": "article:migrating-to-python-315",
+        "target": "article:frozendict-builtin",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:migrating-to-python-315->article:module-profiling-overview",
+        "source": "article:migrating-to-python-315",
+        "target": "article:module-profiling-overview",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:migrating-to-python-315->article:python-abi3t-what-is-it",
+        "source": "article:migrating-to-python-315",
+        "target": "article:python-abi3t-what-is-it",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:migrating-to-python-315->article:sentinel-builtin",
+        "source": "article:migrating-to-python-315",
+        "target": "article:sentinel-builtin",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:migrating-to-python-315->article:startup-configuration-files",
+        "source": "article:migrating-to-python-315",
+        "target": "article:startup-configuration-files",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:migrating-to-python-315->article:tachyon-sampling-profiling-in-python",
+        "source": "article:migrating-to-python-315",
+        "target": "article:tachyon-sampling-profiling-in-python",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:migrating-to-python-315->article:threadsafe-iterators",
+        "source": "article:migrating-to-python-315",
+        "target": "article:threadsafe-iterators",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:migrating-to-python-315->article:typing-improvements-in-python-315",
+        "source": "article:migrating-to-python-315",
+        "target": "article:typing-improvements-in-python-315",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
+        "id": "internal-link:article:migrating-to-python-315->article:unpacking-inside-comprehensions",
+        "source": "article:migrating-to-python-315",
+        "target": "article:unpacking-inside-comprehensions",
+        "type": "internal-link"
+      }
+    },
+    {
+      "data": {
         "id": "internal-link:article:minimax-algorithm-and-alpha-beta-pruning->article:conditional-expressions",
         "source": "article:minimax-algorithm-and-alpha-beta-pruning",
         "target": "article:conditional-expressions",
@@ -10002,6 +10090,22 @@
     },
     {
       "data": {
+        "id": "tag:article:migrating-to-python-315->tag:programming",
+        "source": "article:migrating-to-python-315",
+        "target": "tag:programming",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
+        "id": "tag:article:migrating-to-python-315->tag:python",
+        "source": "article:migrating-to-python-315",
+        "target": "tag:python",
+        "type": "tag"
+      }
+    },
+    {
+      "data": {
         "id": "tag:article:mine-captcha->tag:game",
         "source": "article:mine-captcha",
         "target": "tag:game",
@@ -14817,7 +14921,7 @@
       }
     }
   ],
-  "generated_at": "2026-11-02T16:43:04+00:00",
+  "generated_at": "2026-11-02T18:27:14+00:00",
   "nodes": [
     {
       "data": {
@@ -15121,12 +15225,12 @@
     {
       "data": {
         "date": "14-10-2026 14:29",
-        "degree": 4,
-        "height": 29,
+        "degree": 5,
+        "height": 30,
         "id": "article:frozendict-builtin",
-        "internal_link_degree": 2,
+        "internal_link_degree": 3,
         "label": "frozendict built-in",
-        "size": 29,
+        "size": 30,
         "slug": "frozendict-builtin",
         "tag_degree": 2,
         "tags": [
@@ -15136,7 +15240,7 @@
         "title": "frozendict built-in",
         "type": "article",
         "url": "/blog/pydonts/frozendict-builtin",
-        "width": 42
+        "width": 44
       }
     },
     {
@@ -15398,12 +15502,12 @@
     {
       "data": {
         "date": "13-10-2026 15:11",
-        "degree": 3,
-        "height": 28,
+        "degree": 4,
+        "height": 29,
         "id": "article:sentinel-builtin",
-        "internal_link_degree": 1,
+        "internal_link_degree": 2,
         "label": "sentinel built-in",
-        "size": 28,
+        "size": 29,
         "slug": "sentinel-builtin",
         "tag_degree": 2,
         "tags": [
@@ -15413,7 +15517,7 @@
         "title": "sentinel built-in",
         "type": "article",
         "url": "/blog/pydonts/sentinel-builtin",
-        "width": 41
+        "width": 42
       }
     },
     {
@@ -21047,10 +21151,10 @@
     {
       "data": {
         "date": "28-10-2026 12:10",
-        "degree": 8,
+        "degree": 9,
         "height": 34,
         "id": "article:4-upgrades-to-the-python-standard-library-in-315",
-        "internal_link_degree": 6,
+        "internal_link_degree": 7,
         "label": "4 upgrades to the Python standard library in 3.15",
         "size": 34,
         "slug": "4-upgrades-to-the-python-standard-library-in-315",
@@ -22357,12 +22461,12 @@
     {
       "data": {
         "date": "12-10-2026 14:46",
-        "degree": 2,
-        "height": 26,
+        "degree": 3,
+        "height": 28,
         "id": "article:explicit-lazy-imports",
-        "internal_link_degree": 0,
+        "internal_link_degree": 1,
         "label": "Explicit lazy imports",
-        "size": 26,
+        "size": 28,
         "slug": "explicit-lazy-imports",
         "tag_degree": 2,
         "tags": [
@@ -22372,7 +22476,7 @@
         "title": "Explicit lazy imports",
         "type": "article",
         "url": "/blog/explicit-lazy-imports",
-        "width": 38
+        "width": 41
       }
     },
     {
@@ -23172,6 +23276,27 @@
     },
     {
       "data": {
+        "date": "02-11-2026 16:51",
+        "degree": 13,
+        "height": 38,
+        "id": "article:migrating-to-python-315",
+        "internal_link_degree": 11,
+        "label": "Migrating to Python 3.15",
+        "size": 38,
+        "slug": "migrating-to-python-315",
+        "tag_degree": 2,
+        "tags": [
+          "python",
+          "programming"
+        ],
+        "title": "Migrating to Python 3.15",
+        "type": "article",
+        "url": "/blog/migrating-to-python-315",
+        "width": 55
+      }
+    },
+    {
+      "data": {
         "date": "13-10-2017",
         "degree": 4,
         "height": 29,
@@ -23333,12 +23458,12 @@
     {
       "data": {
         "date": "22-10-2026 15:23",
-        "degree": 6,
-        "height": 31,
+        "degree": 7,
+        "height": 33,
         "id": "article:module-profiling-overview",
-        "internal_link_degree": 2,
+        "internal_link_degree": 3,
         "label": "Module profiling overview",
-        "size": 31,
+        "size": 33,
         "slug": "module-profiling-overview",
         "tag_degree": 4,
         "tags": [
@@ -23350,7 +23475,7 @@
         "title": "Module profiling overview",
         "type": "article",
         "url": "/blog/module-profiling-overview",
-        "width": 45
+        "width": 48
       }
     },
     {
@@ -23802,12 +23927,12 @@
     {
       "data": {
         "date": "30-10-2026 17:27",
-        "degree": 2,
-        "height": 26,
+        "degree": 3,
+        "height": 28,
         "id": "article:python-abi3t-what-is-it",
-        "internal_link_degree": 0,
+        "internal_link_degree": 1,
         "label": "Python abi3t: what is it?",
-        "size": 26,
+        "size": 28,
         "slug": "python-abi3t-what-is-it",
         "tag_degree": 2,
         "tags": [
@@ -23817,7 +23942,7 @@
         "title": "Python abi3t: what is it?",
         "type": "article",
         "url": "/blog/python-abi3t-what-is-it",
-        "width": 38
+        "width": 41
       }
     },
     {
@@ -24327,12 +24452,12 @@
     {
       "data": {
         "date": "19-10-2026 21:19",
-        "degree": 2,
-        "height": 26,
+        "degree": 3,
+        "height": 28,
         "id": "article:startup-configuration-files",
-        "internal_link_degree": 0,
+        "internal_link_degree": 1,
         "label": "Startup configuration files",
-        "size": 26,
+        "size": 28,
         "slug": "startup-configuration-files",
         "tag_degree": 2,
         "tags": [
@@ -24342,7 +24467,7 @@
         "title": "Startup configuration files",
         "type": "article",
         "url": "/blog/startup-configuration-files",
-        "width": 38
+        "width": 41
       }
     },
     {
@@ -24393,12 +24518,12 @@
     {
       "data": {
         "date": "21-10-2026 17:50",
-        "degree": 6,
-        "height": 31,
+        "degree": 7,
+        "height": 33,
         "id": "article:tachyon-sampling-profiling-in-python",
-        "internal_link_degree": 2,
+        "internal_link_degree": 3,
         "label": "Tachyon: sampling profiling in Python",
-        "size": 31,
+        "size": 33,
         "slug": "tachyon-sampling-profiling-in-python",
         "tag_degree": 4,
         "tags": [
@@ -24410,7 +24535,7 @@
         "title": "Tachyon: sampling profiling in Python",
         "type": "article",
         "url": "/blog/tachyon-sampling-profiling-in-python",
-        "width": 45
+        "width": 48
       }
     },
     {
@@ -24573,12 +24698,12 @@
     {
       "data": {
         "date": "29-10-2026 18:09",
-        "degree": 3,
-        "height": 28,
+        "degree": 4,
+        "height": 29,
         "id": "article:threadsafe-iterators",
-        "internal_link_degree": 0,
+        "internal_link_degree": 1,
         "label": "Thread-safe iterators",
-        "size": 28,
+        "size": 29,
         "slug": "threadsafe-iterators",
         "tag_degree": 3,
         "tags": [
@@ -24589,7 +24714,7 @@
         "title": "Thread-safe iterators",
         "type": "article",
         "url": "/blog/threadsafe-iterators",
-        "width": 41
+        "width": 42
       }
     },
     {
@@ -24617,12 +24742,12 @@
     {
       "data": {
         "date": "27-10-2026 11:54",
-        "degree": 5,
-        "height": 30,
+        "degree": 6,
+        "height": 31,
         "id": "article:typing-improvements-in-python-315",
-        "internal_link_degree": 2,
+        "internal_link_degree": 3,
         "label": "Typing improvements in Python 3.15",
-        "size": 30,
+        "size": 31,
         "slug": "typing-improvements-in-python-315",
         "tag_degree": 3,
         "tags": [
@@ -24633,18 +24758,18 @@
         "title": "Typing improvements in Python 3.15",
         "type": "article",
         "url": "/blog/typing-improvements-in-python-315",
-        "width": 44
+        "width": 45
       }
     },
     {
       "data": {
         "date": "15-10-2026 17:14",
-        "degree": 3,
-        "height": 28,
+        "degree": 4,
+        "height": 29,
         "id": "article:unpacking-inside-comprehensions",
-        "internal_link_degree": 1,
+        "internal_link_degree": 2,
         "label": "Unpacking inside comprehensions",
-        "size": 28,
+        "size": 29,
         "slug": "unpacking-inside-comprehensions",
         "tag_degree": 2,
         "tags": [
@@ -24654,7 +24779,7 @@
         "title": "Unpacking inside comprehensions",
         "type": "article",
         "url": "/blog/unpacking-inside-comprehensions",
-        "width": 41
+        "width": 42
       }
     },
     {
@@ -26184,14 +26309,14 @@
     },
     {
       "data": {
-        "degree": 343,
+        "degree": 344,
         "height": 78,
         "id": "tag:programming",
         "internal_link_degree": 0,
         "label": "programming",
         "size": 78,
         "tag": "programming",
-        "tag_degree": 343,
+        "tag_degree": 344,
         "type": "tag",
         "url": "/blog/tags/programming",
         "width": 78
@@ -26244,14 +26369,14 @@
     },
     {
       "data": {
-        "degree": 339,
+        "degree": 340,
         "height": 78,
         "id": "tag:python",
         "internal_link_degree": 0,
         "label": "python",
         "size": 78,
         "tag": "python",
-        "tag_degree": 339,
+        "tag_degree": 340,
         "type": "tag",
         "url": "/blog/tags/python",
         "width": 78
@@ -26620,9 +26745,9 @@
   ],
   "site": "https://mathspp.com",
   "stats": {
-    "articles": 468,
-    "internal_links": 415,
-    "tag_edges": 1437,
+    "articles": 469,
+    "internal_links": 426,
+    "tag_edges": 1439,
     "tags": 98
   }
 }
