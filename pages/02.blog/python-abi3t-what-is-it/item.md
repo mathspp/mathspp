@@ -121,7 +121,7 @@ So, Python 3.15 introduced `abi3t`, a **stable ABI for free-threaded builds**.
 The new stable ABI for free-threaded Python was only introduced in 3.15, so it won't be compatible with 3.14.
 But in a couple of years, when the supported Python versions are 3.14 through 3.19, the wheels required will be 3 for non-free-threaded Python, 3 for Python 3.14t that's not covered by the new `abi3t`, and 3 more for free-threaded Python 3.15 through 3.19:
 
-![Matrix of future required wheels for Python 3.14 through 3.19 including free-threaded on Windows](_wheels_windows_abit.webp "Wheels needed for Python 3.15 through 3.19 on Windows")
+![Matrix of future required wheels for Python 3.14 through 3.19 including free-threaded on Windows](_wheels_windows_abit.svg "Wheels needed for Python 3.15 through 3.19 on Windows")
 
 If you didn't introduce `abi3t`, you'd need 15 wheels just for the free-threaded builds of Python.
 
