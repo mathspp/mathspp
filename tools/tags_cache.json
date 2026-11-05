@@ -3,7 +3,7 @@
     "articles": 470,
     "code_snippets": 4429,
     "loc": 41878,
-    "words": 521960
+    "words": 519666
   },
   "bpci": {
     "articles": 10,
@@ -27,13 +27,13 @@
     "articles": 344,
     "code_snippets": 4282,
     "loc": 40595,
-    "words": 427367
+    "words": 425073
   },
   "python": {
     "articles": 340,
     "code_snippets": 4164,
     "loc": 39504,
-    "words": 427439
+    "words": 425145
   },
   "llms": {
     "articles": 11,
@@ -117,7 +117,7 @@
     "articles": 35,
     "code_snippets": 190,
     "loc": 1783,
-    "words": 21047
+    "words": 20731
   },
   "chess": {
     "articles": 6,
@@ -219,7 +219,7 @@
     "articles": 4,
     "code_snippets": 30,
     "loc": 336,
-    "words": 3129
+    "words": 2971
   },
   "regex": {
     "articles": 8,
@@ -267,13 +267,13 @@
     "articles": 8,
     "code_snippets": 46,
     "loc": 439,
-    "words": 6957
+    "words": 6641
   },
   "modules": {
     "articles": 15,
     "code_snippets": 196,
     "loc": 1635,
-    "words": 15344
+    "words": 15186
   },
   "geometry": {
     "articles": 20,
@@ -375,7 +375,7 @@
     "articles": 5,
     "code_snippets": 40,
     "loc": 226,
-    "words": 2987
+    "words": 2671
   },
   "set theory": {
     "articles": 1,

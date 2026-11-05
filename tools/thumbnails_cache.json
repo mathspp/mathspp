@@ -21,13 +21,13 @@
     "articles": 344,
     "code_snippets": 4282,
     "loc": 40595,
-    "words": 427367
+    "words": 425073
   },
   "python": {
     "articles": 340,
     "code_snippets": 4164,
     "loc": 39504,
-    "words": 427439
+    "words": 425145
   },
   "algorithms": {
     "articles": 28,
@@ -183,7 +183,7 @@
     "articles": 35,
     "code_snippets": 190,
     "loc": 1783,
-    "words": 21047
+    "words": 20731
   },
   "logic": {
     "articles": 34,
@@ -297,7 +297,7 @@
     "articles": 8,
     "code_snippets": 46,
     "loc": 439,
-    "words": 6957
+    "words": 6641
   },
   "set theory": {
     "articles": 1,
@@ -321,7 +321,7 @@
     "articles": 15,
     "code_snippets": 196,
     "loc": 1635,
-    "words": 15344
+    "words": 15186
   },
   "probability": {
     "articles": 5,
@@ -501,7 +501,7 @@
     "articles": 4,
     "code_snippets": 30,
     "loc": 336,
-    "words": 3129
+    "words": 2971
   },
   "github": {
     "articles": 2,
@@ -525,7 +525,7 @@
     "articles": 5,
     "code_snippets": 40,
     "loc": 226,
-    "words": 2987
+    "words": 2671
   },
   "data structures": {
     "articles": 2,
@@ -567,7 +567,7 @@
     "articles": 470,
     "code_snippets": 4429,
     "loc": 41878,
-    "words": 521960
+    "words": 519666
   },
   "fp": {
     "articles": 5,

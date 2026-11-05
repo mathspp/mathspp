@@ -9,17 +9,6 @@ It provides a CLI that allows running and profiling scripts or attaching to runn
 
 In this article you'll learn what statistical profiling is and how to use the Tachyon CLI to identify performance bottlenecks in your code.
 
-## 15 days of Python 3.15
-
-To [celebrate the release of Python 3.15](/python-315), over the next 15 business days I'll be writing about a new 3.15 feature every day.
-Explained clearly and with examples so you don't have to sift through the changelog.
-
-Subscribe to receive this free email series:
-
-{% include "forms/form.html.twig" with {form: forms("enroll")} %}
-
-If you want, you can also [check the schedule](/python-315) of the upcoming emails.
-
 ## What is statistical profiling
 
 **Statistical profiling** is the practice of profiling your code by periodically taking snapshots of the state of your Python program.
@@ -196,13 +185,3 @@ The documentation for Tachyon includes a very clear description of situations in
  - **micro-benchmarks**: if you're trying to measure a micro-benchmark (think a short expression that is _very_ fast), you should use `timeit`
  - **small performance differences**: if you're trying to measure small performance differences (think 1%–2%), for example between two implementations of the same algorithm, Tachyon may not be able to pick those up; instead, use tracing profiling for precise measurements
  - **exact call counts**: if you need the exact call count for the functions in your code, you need something that provides _exact_ results like tracing profiling
-
-## Python 3.15 brings much more to the table
-
-From the two new built-ins `frozendict` and `sentinel`, to lazy imports, package startup configuration files, typing improvements, or more colour everywhere, Python 3.15 has a lot more to offer.
-If you want to learn more about what's new in Python 3.15, [take a look at the “15 days of Python 3.15” series](/python-315) I'm running.
-For 15 days, I'll explain a new Python 3.15 feature every day.
-
-Get the free 3.15 email series:
-
-{% include "forms/form.html.twig" with {form: forms("enroll_bottom")} %}

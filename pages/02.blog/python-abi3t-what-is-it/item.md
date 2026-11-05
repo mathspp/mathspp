@@ -4,17 +4,6 @@ Learn what the abi3t and the limited C API are and what that means for Python us
 
 This article explains what the **limited C API** and the **abi3t** are to Python developers who don't have experience with C extensions.
 
-## 15 days of Python 3.15
-
-To [celebrate the release of Python 3.15](/python-315), over the next 15 business days I'll be writing about a new 3.15 feature every day.
-Explained clearly and with examples so you don't have to sift through the changelog.
-
-Subscribe to receive this free email series:
-
-{% include "forms/form.html.twig" with {form: forms("enroll")} %}
-
-If you want, you can also [check the schedule](/python-315) of the upcoming emails.
-
 ## Python wheels
 
 A **Python wheel** is the binary file that you download from PyPI every time you “pip install” a Python package.
@@ -142,13 +131,3 @@ If you didn't introduce `abi3t`, you'd need 15 wheels just for the free-threaded
 In short, the addition of the `abi3t` stable ABI for free-threaded Python builds reduces the maintenance burden of Python packages that have C extensions.
 On the one hand, it reduces the number of build artifacts that need to be built, tested, distributed, and hosted.
 On the other hand, it also means that C extensions are automatically compatible with new Python versions as they come out.
-
-## Python 3.15 brings much more to the table
-
-From the two new built-ins `frozendict` and `sentinel`, to lazy imports, package startup configuration files, typing improvements, or more colour everywhere, Python 3.15 has a lot more to offer.
-If you want to learn more about what's new in Python 3.15, [take a look at the “15 days of Python 3.15” series](/python-315) I'm running.
-For 15 days, I'll explain a new Python 3.15 feature every day.
-
-Get the free 3.15 email series:
-
-{% include "forms/form.html.twig" with {form: forms("enroll_bottom")} %}

@@ -15,17 +15,6 @@ The dictionary literal syntax using the curly braces `{}` creates a regular dict
 
 In this article you'll learn about the characteristics of this immutable dictionary like its hashability, along with how to use this in conjunction with `dict` in typing contexts.
 
-## 15 days of Python 3.15
-
-To [celebrate the release of Python 3.15](/python-315), over the next 15 business days I'll be writing about a new 3.15 feature every day.
-Explained clearly and with examples so you don't have to sift through the changelog.
-
-Subscribe to receive this free email series:
-
-{% include "forms/form.html.twig" with {form: forms("enroll")} %}
-
-If you want, you can also [check the schedule](/python-315) of the upcoming emails.
-
 ## Creation and usage
 
 You create immutable dictionaries with the built-in `frozendict` and you can access key/value pairs with the regular dictionary syntax:
@@ -310,13 +299,3 @@ But if you're using type hints, start using the protocol `collections.abc.Mappin
 Many functions accept arguments of type `dict[K, V]` but they don't need to _mutate_ the argument dictionary.
 If your function doesn't need to mutate the dictionary, swap the type hint with `collections.abc.Mapping`.
 This means your code will be “forward-compatible” with users of Python 3.15+ and their type checkers won’t annoy them for using your code.
-
-## Python 3.15 brings much more to the table
-
-From the two new built-ins `frozendict` and `sentinel`, to lazy imports, package startup configuration files, typing improvements, or more colour everywhere, Python 3.15 has a lot more to offer.
-If you want to learn more about what's new in Python 3.15, [take a look at the “15 days of Python 3.15” series](/python-315) I'm running.
-For 15 days, I'll explain a new Python 3.15 feature every day.
-
-Get the free 3.15 email series:
-
-{% include "forms/form.html.twig" with {form: forms("enroll_bottom")} %}

@@ -29,7 +29,7 @@ title: "Typing blog articles"
     <thead>
         <tr>
             <th style="text-align: center;">5</th>
-            <th style="text-align: center;">2,987</th>
+            <th style="text-align: center;">2,671</th>
             <th style="text-align: center;">226</th>
         </tr>
     </thead>

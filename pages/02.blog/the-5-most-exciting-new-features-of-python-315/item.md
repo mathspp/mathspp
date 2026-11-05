@@ -15,17 +15,6 @@ You'll get the elevator pitch of each feature and you'll see a couple of example
 
 By the end of this article you'll have a clear picture of some of the new cool features that Python 3.15 brings to the table and you'll be excited to try them out.
 
-## 15 days of Python 3.15
-
-To [celebrate the release of Python 3.15](/python-315), over the next 15 business days I'll be writing about a new 3.15 feature every day.
-Explained clearly and with examples so you don't have to sift through the changelog.
-
-Subscribe to receive this free email series:
-
-{% include "forms/form.html.twig" with {form: forms("enroll")} %}
-
-If you want, you can also [check the schedule](/python-315) of the upcoming emails.
-
 ## Lazy imports
 
 **Explicit lazy imports**, introduced in [PEP 810](https://peps.python.org/pep-0810/), introduce the new keyword `lazy` so that you can mark an import as lazy.
@@ -205,13 +194,3 @@ To attach to process `12345`, you'd run the command
 If you have `uv` installed, you can use the option `--python 3.15` to tell uv to use Python 3.15.
 
 You can also use [this interactive Python playground](/python-playground).
-
-## Python 3.15 brings much more to the table
-
-From package startup configuration files, to improved developer experience, typing improvements, or more colour everywhere, Python 3.15 has a lot more to offer.
-If you want to learn more about what's new in Python 3.15, [take a look at the “15 days of Python 3.15” series](/python-315) I'm running.
-For 15 days, I'll explain a new Python 3.15 feature every day.
-
-Get the free 3.15 email series:
-
-{% include "forms/form.html.twig" with {form: forms("enroll_bottom")} %}

@@ -4,7 +4,7 @@
     <thead>
         <tr>
             <th style="text-align: center;">470</th>
-            <th style="text-align: center;">521,960</th>
+            <th style="text-align: center;">519,666</th>
             <th style="text-align: center;">41,878</th>
         </tr>
     </thead>

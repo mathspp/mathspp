@@ -7,17 +7,6 @@ Introduced in Python 3.15, it gives access to two different profilers: a samplin
 
 This article will present an overview of those two profilers.
 
-## 15 days of Python 3.15
-
-To [celebrate the release of Python 3.15](/python-315), over the next 15 business days I'll be writing about a new 3.15 feature every day.
-Explained clearly and with examples so you don't have to sift through the changelog.
-
-Subscribe to receive this free email series:
-
-{% include "forms/form.html.twig" with {form: forms("enroll")} %}
-
-If you want, you can also [check the schedule](/python-315) of the upcoming emails.
-
 ## Historical note
 
 Before Python 3.15, Python had a module in the standard library called `profile`.
@@ -139,13 +128,3 @@ There are a number of features that are supported by Python's profilers but that
     - ...
 
 You can [read this more complete introduction to Tachyon on my blog](/blog/tachyon-sampling-profiling-in-python), or check the documentation of the respective modules.
-
-## Python 3.15 brings much more to the table
-
-From the two new built-ins `frozendict` and `sentinel`, to lazy imports, package startup configuration files, typing improvements, or more colour everywhere, Python 3.15 has a lot more to offer.
-If you want to learn more about what's new in Python 3.15, [take a look at the “15 days of Python 3.15” series](/python-315) I'm running.
-For 15 days, I'll explain a new Python 3.15 feature every day.
-
-Get the free 3.15 email series:
-
-{% include "forms/form.html.twig" with {form: forms("enroll_bottom")} %}

@@ -5,17 +5,6 @@ This article goes over the major improvements made to the typing module in Pytho
 Since static type hinting is becoming more and more popular in the Python world, every Python release brings with it major improvements to the world of typing.
 This article goes over the main improvements made to typing in Python 3.15 like the improvements to `TypedDict`, the addition of `typing.TypeForm`, or the addition of the decorator `typing.disjoint_base`.
 
-## 15 days of Python 3.15
-
-To [celebrate the release of Python 3.15](/python-315), over the next 15 business days I'll be writing about a new 3.15 feature every day.
-Explained clearly and with examples so you don't have to sift through the changelog.
-
-Subscribe to receive this free email series:
-
-{% include "forms/form.html.twig" with {form: forms("enroll")} %}
-
-If you want, you can also [check the schedule](/python-315) of the upcoming emails.
-
 ## New class parameters for `TypedDict`
 
 Python 3.15 added two class parameters to `TypedDict`: `extra_items` and `closed`.
@@ -171,13 +160,3 @@ converter("int", "42")  # 42
 converter(bytes, "42")  # b'42'
 converter(dict[str, int], "42")  # ValueError
 ```
-
-## Python 3.15 brings much more to the table
-
-From the two new built-ins `frozendict` and `sentinel`, to lazy imports, package startup configuration files, typing improvements, or more colour everywhere, Python 3.15 has a lot more to offer.
-If you want to learn more about what's new in Python 3.15, [take a look at the “15 days of Python 3.15” series](/python-315) I'm running.
-For 15 days, I'll explain a new Python 3.15 feature every day.
-
-Get the free 3.15 email series:
-
-{% include "forms/form.html.twig" with {form: forms("enroll_bottom")} %}

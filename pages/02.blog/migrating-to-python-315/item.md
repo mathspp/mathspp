@@ -8,17 +8,6 @@ This short article walks you through the main things to keep in mind when migrat
  - **backwards-incompatible features**: features released in 3.15 that you can only start using if your project only targets Python 3.15+
  - **features that are now 100% supported**: features released in 3.11 that are now available in _all_ supported Python versions
 
-## 15 days of Python 3.15
-
-To [celebrate the release of Python 3.15](/python-315), over the next 15 business days I'll be writing about a new 3.15 feature every day.
-Explained clearly and with examples so you don't have to sift through the changelog.
-
-Subscribe to receive this free email series:
-
-{% include "forms/form.html.twig" with {form: forms("enroll")} %}
-
-If you want, you can also [check the schedule](/python-315) of the upcoming emails.
-
 ## 3.15 migration guide
 
 When a new Python version is released and you're considering adopting it, you need to think about three disjoint sets of features in the context of your project.
@@ -188,13 +177,3 @@ As the next step, go look at your project.
 If it's something you can play around with freely, upgrade to Python 3.15 and start playing around with the new Python 3.15 features.
 If not, see if you can increase the lowest supported Python version to 3.11 or 3.13 and start looking for places where the “old new features” can be useful.
 In either scenario, remember that there's new features in 3.15 that are backwards-compatible!
-
-## Python 3.15 brings much more to the table
-
-From the two new built-ins `frozendict` and `sentinel`, to lazy imports, package startup configuration files, typing improvements, or more colour everywhere, Python 3.15 has a lot more to offer.
-If you want to learn more about what's new in Python 3.15, [take a look at the “15 days of Python 3.15” series](/python-315) I'm running.
-For 15 days, I'll explain a new Python 3.15 feature every day.
-
-Get the free 3.15 email series:
-
-{% include "forms/form.html.twig" with {form: forms("enroll_bottom")} %}

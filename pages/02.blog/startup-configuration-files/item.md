@@ -32,14 +32,3 @@ Alongside that, and for backwards compatibility reasons, `.pth` files could also
 
 `import` lines in a `.pth` [represent a security risk](https://peps.python.org/pep-0829/#motivation), so [PEP 829](https://peps.python.org/pep-0829/) introduced a safer way of running custom hooks during Python interpreter start up.
 `import` lines in `.pth` files are now deprecated and Python 3.15+ also looks for `.start` files to run the listed entry points.
-
-## Python 3.15 brings much more to the table
-
-From the two new built-ins `frozendict` and `sentinel`, to lazy imports, package startup configuration files, typing improvements, or more colour everywhere, Python 3.15 has a lot more to offer.
-If you want to learn more about what's new in Python 3.15, [take a look at the “15 days of Python 3.15” series](/python-315) I'm running.
-For 15 days, I'll explain a new Python 3.15 feature every day.
-
-Get the free 3.15 email series:
-
-{% include "forms/form.html.twig" with {form: forms("enroll_bottom")} %}
-

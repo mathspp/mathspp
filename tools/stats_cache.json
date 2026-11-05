@@ -6374,7 +6374,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/explicit-lazy-imports": {
-    "timestamp": 1793901298.5484004,
+    "timestamp": 1793901401.7999828,
     "tags": [
       "python",
       "programming"
@@ -6383,7 +6383,7 @@
       "articles": 1,
       "code_snippets": 13,
       "loc": 79,
-      "words": 1185
+      "words": 1027
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/04.til/143.resolve-a-lazy-import-manually": {
@@ -6519,7 +6519,7 @@
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/the-5-most-exciting-new-features-of-python-315": {
-    "timestamp": 1793901323.3347282,
+    "timestamp": 1793901585.055226,
     "tags": [
       "python",
       "programming"
@@ -6528,11 +6528,11 @@
       "articles": 1,
       "code_snippets": 13,
       "loc": 58,
-      "words": 976
+      "words": 824
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/sentinel-builtin": {
-    "timestamp": 1793901283.9533908,
+    "timestamp": 1793901401.8000188,
     "tags": [
       "python",
       "programming"
@@ -6541,11 +6541,11 @@
       "articles": 1,
       "code_snippets": 10,
       "loc": 78,
-      "words": 845
+      "words": 687
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/02.pydonts/frozendict-builtin": {
-    "timestamp": 1793901280.250836,
+    "timestamp": 1793901401.8000367,
     "tags": [
       "python",
       "programming"
@@ -6554,11 +6554,11 @@
       "articles": 1,
       "code_snippets": 20,
       "loc": 117,
-      "words": 1218
+      "words": 1060
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/unpacking-inside-comprehensions": {
-    "timestamp": 1793901340.6251428,
+    "timestamp": 1793901401.799933,
     "tags": [
       "python",
       "programming"
@@ -6567,11 +6567,11 @@
       "articles": 1,
       "code_snippets": 21,
       "loc": 87,
-      "words": 840
+      "words": 682
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/startup-configuration-files": {
-    "timestamp": 1793901316.495417,
+    "timestamp": 1793901564.5074983,
     "tags": [
       "python",
       "programming"
@@ -6580,11 +6580,11 @@
       "articles": 1,
       "code_snippets": 1,
       "loc": 1,
-      "words": 346
+      "words": 258
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/dx-improvements-in-python-315": {
-    "timestamp": 1793901295.1817598,
+    "timestamp": 1793901401.7999315,
     "tags": [
       "python",
       "programming",
@@ -6594,11 +6594,11 @@
       "articles": 1,
       "code_snippets": 9,
       "loc": 47,
-      "words": 989
+      "words": 831
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/tachyon-sampling-profiling-in-python": {
-    "timestamp": 1793901319.8610163,
+    "timestamp": 1793901401.800003,
     "tags": [
       "python",
       "productivity",
@@ -6609,11 +6609,11 @@
       "articles": 1,
       "code_snippets": 9,
       "loc": 35,
-      "words": 1344
+      "words": 1186
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/module-profiling-overview": {
-    "timestamp": 1793901308.468176,
+    "timestamp": 1793901401.7999563,
     "tags": [
       "python",
       "programming",
@@ -6624,11 +6624,11 @@
       "articles": 1,
       "code_snippets": 4,
       "loc": 12,
-      "words": 1183
+      "words": 1025
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/typeddict-with-extra-items": {
-    "timestamp": 1793901329.721033,
+    "timestamp": 1793901401.800008,
     "tags": [
       "python",
       "programming",
@@ -6638,11 +6638,11 @@
       "articles": 1,
       "code_snippets": 9,
       "loc": 47,
-      "words": 620
+      "words": 462
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/typing-improvements-in-python-315": {
-    "timestamp": 1793901334.5621367,
+    "timestamp": 1793901401.7999854,
     "tags": [
       "python",
       "programming",
@@ -6652,11 +6652,11 @@
       "articles": 1,
       "code_snippets": 11,
       "loc": 56,
-      "words": 898
+      "words": 740
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/4-upgrades-to-the-python-standard-library-in-315": {
-    "timestamp": 1793901288.9612458,
+    "timestamp": 1793901401.799998,
     "tags": [
       "python",
       "programming"
@@ -6665,11 +6665,11 @@
       "articles": 1,
       "code_snippets": 9,
       "loc": 90,
-      "words": 786
+      "words": 628
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/threadsafe-iterators": {
-    "timestamp": 1793901326.68803,
+    "timestamp": 1793901401.7999737,
     "tags": [
       "python",
       "programming",
@@ -6679,11 +6679,11 @@
       "articles": 1,
       "code_snippets": 9,
       "loc": 72,
-      "words": 506
+      "words": 348
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/python-abi3t-what-is-it": {
-    "timestamp": 1793901311.865443,
+    "timestamp": 1793901401.8000336,
     "tags": [
       "programming",
       "python"
@@ -6692,11 +6692,11 @@
       "articles": 1,
       "code_snippets": 1,
       "loc": 8,
-      "words": 10580
+      "words": 10422
     }
   },
   "/Users/rodrigogs/Documents/mathspp/mathspp/pages/02.blog/migrating-to-python-315": {
-    "timestamp": 1793901301.7822652,
+    "timestamp": 1793901401.7954822,
     "tags": [
       "python",
       "programming"
@@ -6705,7 +6705,7 @@
       "articles": 1,
       "code_snippets": 2,
       "loc": 21,
-      "words": 1699
+      "words": 1541
     }
   }
 }

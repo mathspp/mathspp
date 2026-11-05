@@ -8,17 +8,6 @@ This article covers the top 3 improvements made to the developer experience of P
  2. more colours
  3. default UTF-8 encoding
 
-## 15 days of Python 3.15
-
-To [celebrate the release of Python 3.15](/python-315), over the next 15 business days I'll be writing about a new 3.15 feature every day.
-Explained clearly and with examples so you don't have to sift through the changelog.
-
-Subscribe to receive this free email series:
-
-{% include "forms/form.html.twig" with {form: forms("enroll")} %}
-
-If you want, you can also [check the schedule](/python-315) of the upcoming emails.
-
 ## Improved error messages
 
 Over the past few years, lots of effort has been poured into improving Python's error messages.
@@ -183,13 +172,3 @@ On the other hand, `open` on Windows would be equivalent to using `open(..., enc
 
 From Python 3.15 onward, the default encoding is always UTF-8, which is the de facto standard used (almost) everywhere else.
 This increases interoperability between OSes but also between Python and other tools.
-
-## Python 3.15 brings much more to the table
-
-From the two new built-ins `frozendict` and `sentinel`, to lazy imports, package startup configuration files, typing improvements, or more colour everywhere, Python 3.15 has a lot more to offer.
-If you want to learn more about what's new in Python 3.15, [take a look at the “15 days of Python 3.15” series](/python-315) I'm running.
-For 15 days, I'll explain a new Python 3.15 feature every day.
-
-Get the free 3.15 email series:
-
-{% include "forms/form.html.twig" with {form: forms("enroll_bottom")} %}
