@@ -21,7 +21,7 @@ If you want, you can also [check the schedule](/python-315) of the upcoming emai
 
 ## 3.15 migration guide
 
-When a new Python version is released and you're considering of adopting it, you need to think about three disjoint sets of features in the context of your project.
+When a new Python version is released and you're considering adopting it, you need to think about three disjoint sets of features in the context of your project.
 The first two are the set of new features that are backwards-compatible with other Python versions and the set of features that are _not_ backwards-compatible.
 To understand the third set of features that's relevant, take a look at the following screenshot from python.org:
 
@@ -31,7 +31,7 @@ With the release of Python 3.15, Python 3.10 officially reached end-of-life and 
 This means that Python 3.10 won't be updated anymore and Python 3.13 won't be _improved_; it'll only receive security updates.
 If you're working on projects that need to work across older Python versions, the end-of-life status of 3.10 means you can argue you only need to support 3.11 and newer.[^1]
 
-[^1]: In practice, I'm sure there's someone somewhere _**still**_ using Python 2.7, even though that's been EOF for 6 years now... But let's not talk about _those_ people.
+[^1]: In practice, I'm sure there's someone somewhere _**still**_ using Python 2.7, even though that's been EOL for 6 years now... But let's not talk about _those_ people.
 
 If a project goes from supporting Python 3.10+ to supporting 3.11+, this means that the project is now free to use whatever features were introduced in 3.11 and were not backwards compatible.
 This is the third set of features to consider.
@@ -61,9 +61,9 @@ In earlier Python versions, the list `__lazy_modules__` is just a regular Python
 
 Python 3.15 also [made some big changes to the typing front](/blog/typing-improvements-in-python-315), including [adding new behaviour to `TypedDict`](/typeddict-with-extra-items).
 
-In most cases, type hints are only used at static type checking time, so there are always to use new typing features in older Python versions.
+In most cases, type hints are only used at static type checking time, so there are always ways to use new typing features in older Python versions.
 The most common way in which new typing features are usable in projects that support older Python projects is through [the module `typing_extensions`](https://github.com/python/typing_extensions).
-When using `typing_extensions` not an option, you can also write type hints as strings.
+When using `typing_extensions` is not an option, you can also write type hints as strings.
 As long as you're using your static type checker with the most recent Python version, all should be fine.
 
 ### Better profiling
@@ -147,7 +147,7 @@ Python 3.11 introduced exception groups and the new syntax `except*`.
 The new exception group syntax using `except*` was backwards-incompatible, but it's now safe to use it.
 
 An exception group represents a group of unrelated exceptions that you want to raise and propagate together and the syntax `except*` can be used to match against parts of that exception group.
-The snippet below demonstrates the functional behaviour of this features:
+The snippet below demonstrates the functional behaviour of this feature:
 
 ```py
 def inner():
