@@ -18,6 +18,4 @@ taxonomy:
         - optimisation
 title: "Tachyon: sampling profiling in Python"
 
-
-# While the 3.15 campaign is ongoing:
-cta: "none"
+cta: "python-315"

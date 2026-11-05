@@ -15,6 +15,4 @@ taxonomy:
         - python
         - programming
 title: "sentinel built-in"
-
-# While the 3.15 campaign is ongoing:
-cta: "none"
+cta: "python-315"

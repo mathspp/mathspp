@@ -18,6 +18,4 @@ taxonomy:
         - python
         - programming
 title: 4 upgrades to the Python standard library in 3.15
-
-# While the 3.15 campaign is ongoing:
-cta: "none"
+cta: "python-315"
